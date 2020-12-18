@@ -379,7 +379,7 @@ distclean-local:	clean
 # Alt fjernes, stort set ned til cvs
 .PHONY : reallyclean
 reallyclean:	clean distclean
-	rm -Rf dato.sgml bogoversigt.sgml ophavsret.sgml linuxbog.css linuxbog.spec linuxbogurl.sgml misc aclocal.m4 bootstrap configure configure.ac install-sh Makefile.am Makefile.in missing mkinstalldirs palm-faelles/
+	rm -Rf dato.sgml bogoversigt.sgml ophavsret.sgml linuxbog.css linuxbog.spec linuxbogurl.sgml misc aclocal.m4 bootstrap configure configure.ac install-sh Makefile.am Makefile.in missing mkinstalldirs palm-faelles/ addsubmitbox
 
 #-----------------------------------------------------------------------------
 #--  Bygger SGML/XML-udgaver af alle filer i eksempler:
