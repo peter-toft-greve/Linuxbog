@@ -122,7 +122,7 @@ domænekontroller.
 ; Hvis du vil have Windows klienter med æ,ø og å
    client code page = 850
    character set = ISO8859-1
-   valid chars = æ:Æ ø:Ø å:Å
+   valid chars = æ:Æ ø:&Oslash; å:&Aring;
 
 [homes]
    comment = Home Directories
@@ -145,7 +145,7 @@ domænekontroller.
 <emphasis>Tip:</emphasis> I Windows 2000 skal man udføre kommandoen
 <command>chcp 850</command> i et terminalvindue.
 Hvis man ikke gør dette på
-Windows-maskinerne vil Samba oversætte ø:Ø forkert til o:O i stedet, da
+Windows-maskinerne vil Samba oversætte ø:&Oslash; forkert til o:O i stedet, da
 Windows 2000 <emphasis>ikke</emphasis> selv sætter codepage til 850
 men derimod til 457 selvom man sætter sin locale til dansk under
 installationen. 
@@ -675,8 +675,8 @@ senere. </para>
 <para>
 Sæt Linux-serveren til at køre named &ndash; TCP/IP-way, 
 og fortæl Windows at den skal bruge 
-Linux-serveren som navneserver (DNS). Åbn
-indstillinger-&gt;kontrolpanel-&gt;netværk. Åbn 
+Linux-serveren som navneserver (DNS). &Aring;bn
+indstillinger-&gt;kontrolpanel-&gt;netværk. &Aring;bn 
 egenskaber for TCP/IP. Under fanebladet "Gateway" tilføjes
 192.168.1.1. Under fanebladet "DNS-opsætning" aktiveres DNS, i "Vært" skrives
 maskinens navn WS1 (det skal være det samme navn som blev angivet som

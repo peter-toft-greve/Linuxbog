@@ -267,8 +267,8 @@ finde en omdøb-funktion så arket få et andet navn.
 
 <para>
 På <xref linkend="openoffice-regneark12-fig"/> er vist hvordan
-vores første regneark på "Ark 1" er blevet kaldt "År 1999" og på "Ark 2", 
-der nu er omdøbt til "År 2000" er der indsat et tilsvarende regneark, blot 
+vores første regneark på "Ark 1" er blevet kaldt "&Aring;r 1999" og på "Ark 2", 
+der nu er omdøbt til "&Aring;r 2000" er der indsat et tilsvarende regneark, blot 
 med tal for år 2000. På ark 3, som er omdøbt "Total" kan vi nu regne videre 
 med tal fra de to foregående ark. 
 </para>
@@ -277,12 +277,12 @@ med tal fra de to foregående ark.
 ark</secondary></indexterm>
 
 <para>
-Skal du bruge felt B9 fra år 1999 skriver du <literal>='År 1999'.B9</literal>.
+Skal du bruge felt B9 fra år 1999 skriver du <literal>='&Aring;r 1999'.B9</literal>.
 Tilsvarende kan felt B9 (en tilsvarende sum) fra år 2000 hentes 
 på det andet ark
-som <literal>='År 2000'.B9</literal>. Grunden til at du skal have pinger 
+som <literal>='&Aring;r 2000'.B9</literal>. Grunden til at du skal have pinger 
 rundt om 
-ark-navnene <literal>År 1999</literal> og <literal>År 2000</literal> er at 
+ark-navnene <literal>&Aring;r 1999</literal> og <literal>&Aring;r 2000</literal> er at 
 OpenOffice.org skal hjælpes lidt når der anvendes mellemrum eller danske 
 bogstaver.
 </para>
@@ -290,7 +290,7 @@ bogstaver.
 <para> 
 Endelig skal det nævnes at du på det første ark kunne have
 <literal>Total</literal>-arket og det andet og tredje ark som hhv. 
-<literal>År1999</literal> og <literal>År 2000</literal>. Arkene kan have 
+<literal>&Aring;r1999</literal> og <literal>&Aring;r 2000</literal>. Arkene kan have 
 referencer til hinanden på kryds og tværs uafhængig af rækkefølge, blot der 
 ikke er logiske fejl, hvor to felter afhænger af hinanden.
 </para>
@@ -309,7 +309,7 @@ ikke er logiske fejl, hvor to felter afhænger af hinanden.
 
 <para>
 Her skal det nu vises hvordan man fremstiller grafer af tal i regnearksdelen af
-OpenOffice.org. Eksemplet anvender tal fra arket <literal>År 2000</literal> 
+OpenOffice.org. Eksemplet anvender tal fra arket <literal>&Aring;r 2000</literal> 
 i forrige eksempel. Det første du skal gøre er at markere det område du
 vil have lavet en graf ud fra. Vælg feltet A1 og marker ned til E5. Du har nu
 de fire kvartaler for de fire personer samt navnene på personerne og 
@@ -328,7 +328,7 @@ Vælg som vist på <xref linkend="openoffice-regneark13-fig"/>
 Som vist på <xref linkend="openoffice-regneark14-fig"/> er der i feltet
 "Område" allerede valgt et dataområde der skal laves grafer ud fra.
 Ser man nærmere på hvad der står kan man godt se at det er noget med arket 
-<literal>År 2000</literal> og felterne mellem A1 og E5. Bemærk afkrydsningen
+<literal>&Aring;r 2000</literal> og felterne mellem A1 og E5. Bemærk afkrydsningen
 i felterne "Første række som etiket" og "Første kolonne som etiket", dvs. 
 at række 1 og kolonne A opfattes som tekster til akser. Du kan her trykke 
 "Næste" hvis du vil vælge graf-type eller hvis du vil have den første og bedste

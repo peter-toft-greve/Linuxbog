@@ -345,7 +345,7 @@ dem til at lave et helt dokument.
 
 <para>
 Det første vi skal vide er at alle elementer åbnes og lukkes med et mærke.
-Åbningsmærket starter med &lt; fulgt af elementets navn, eventuelle
+&Aring;bningsmærket starter med &lt; fulgt af elementets navn, eventuelle
 atributter og til sidst &gt;.  Afslutningsmærket er blot &lt;/ fulgt af elementets navn og &gt;.
 Et eksempel er <literal>&lt;command&gt;</literal>ls -l<literal>&lt;/command&gt;</literal> som markerer at strengen "<literal>ls -l</literal>" er en kommando.
 </para>
@@ -1287,7 +1287,7 @@ for chapter, section, content, appendix, index m.v. --&gt;
  &lt;COPYRIGHT&gt;
    &lt;YEAR&gt;2002&lt;/YEAR&gt;
    &lt;HOLDER&gt;Peter Toft og mange andre under
-   "ÅDL" licensen&lt;/HOLDER&gt;
+   "&Aring;DL" licensen&lt;/HOLDER&gt;
  &lt;/COPYRIGHT&gt;
 
  &lt;ABSTRACT&gt;

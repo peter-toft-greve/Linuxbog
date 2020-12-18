@@ -30,11 +30,11 @@
 <graphic fileref="fildialog.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Øverst til venstre vises stien til den aktuelle mappe, her
+<para>&Oslash;verst til venstre vises stien til den aktuelle mappe, her
         <emphasis>C:\dokumenter</emphasis>. Nedenunder vises indholdet (filer og
         undermapper) i denne mappe.</para>
 
-<para>Øverst til højre er der 5 knapper, de 2 første bruger du til at
+<para>&Oslash;verst til højre er der 5 knapper, de 2 første bruger du til at
         navigere rundt på harddisken med.</para>
 
 </listitem>

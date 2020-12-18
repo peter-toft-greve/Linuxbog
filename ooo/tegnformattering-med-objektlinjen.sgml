@@ -87,7 +87,7 @@ fileref="objektlinjefed.&magic;" scale="60"></graphic>
   </sect2> <!-- Eksempel: Fed skrift mens teksten skrives -->
 
   <sect2>
-   <title>Øvrige muligheder</title>
+   <title>&Oslash;vrige muligheder</title>
 
 <para>På samme måde bruges følgende:</para>
 
@@ -187,6 +187,6 @@ fileref="objektlinjekursiv.&magic;" scale="60"></graphic></figure>
      </para>
     </listitem>
    </itemizedlist>
-  </sect2>    <!--   Øvrige muligheder -->
+  </sect2>    <!--   &Oslash;vrige muligheder -->
  </sect1>    <!--   6.2. Tegnformatering med objektlinjen og tastaturet -->
 

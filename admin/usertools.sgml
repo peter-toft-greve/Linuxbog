@@ -687,7 +687,7 @@ rettelser.
 
 <para>
 I filen <filename>/etc/inittab</filename> angives, hvilket
-runlevel der er det forvalgte runlevel. Ønsker man f.eks. at 
+runlevel der er det forvalgte runlevel. &Oslash;nsker man f.eks. at 
 maskinen starter i runlevel 5 og ikke 3, så skal man ændre linjen
 </para>
 

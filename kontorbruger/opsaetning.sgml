@@ -41,7 +41,7 @@ installere programmet som system&shy;administratoren root.
 Log på maskine i grafisk tilstand som almindelig bruger.
 </para></listitem>
 <listitem><para>
-Åbn et konsolvindue (klik på det lille skærm-ikon nederst til venstre).
+&Aring;bn et konsolvindue (klik på det lille skærm-ikon nederst til venstre).
 </para></listitem>
 <listitem><para>
 Opret et midlertidigt katalog i dit eget hjemmekatalog med kommandoen 
@@ -176,7 +176,7 @@ OpenOffice.org.
 Log på maskine i grafisk tilstand som almindelig bruger. 
 </para></listitem>
 <listitem><para>
-Åbn et konsolvindue (klik på det lille skærm-ikon nederst til venstre). 
+&Aring;bn et konsolvindue (klik på det lille skærm-ikon nederst til venstre). 
 </para></listitem>
 <listitem><para>
 Skift til systemadministratoren "root" med kommandoen <command>su -</command> og efterfølgende angive adgangskoden. 
@@ -245,7 +245,7 @@ Log på maskine i grafisk tilstand som den bruger, der skal bruge OpenOffice.org
 </para></listitem>
 
 <listitem><para>
-Åbn et konsolvindue (klik på det lille skærm-ikon nederst til venstre). 
+&Aring;bn et konsolvindue (klik på det lille skærm-ikon nederst til venstre). 
 </para></listitem>
 
 <listitem><para>
@@ -400,7 +400,7 @@ respektive felter.
 <para>
 Dernæst vælger du fanen "Network", hvor de vigtige oplysninger skal
 skrives. Du kan i første omgang nøjes med at udfylde oplysninger i
-underfanen "Sending Mail".  Øverst skal du vælge, om du vil bruge
+underfanen "Sending Mail".  &Oslash;verst skal du vælge, om du vil bruge
 Sendmail eller din udbyders SMTP-server til at sende mail. Jeg vil
 stærkt anbefale, at du vælger at bruge din udbyders SMTP-server.
 </para>

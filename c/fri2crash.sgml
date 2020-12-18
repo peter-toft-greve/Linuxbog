@@ -1813,7 +1813,7 @@ af "modul-specifik" eller "privat". Det kan man jo bare gøre
 selv ved hjælp af #define. I så fald skal man lige huske, at
 private er et reserveret ord i C++. Man kunne måske i stedet
 anvende "privat" (uden 'e' til sidst!) eller, bedre, et ord som
-"hidden" eller ... "local"? SÅ ville der rigtig være rod i
+"hidden" eller ... "local"? S&Aring; ville der rigtig være rod i
 semantikken! Problemet er nævnt i forbindelse med revision af C
 som basis for C++, men som sagt finder private anvendelse i C++ ,
 og det er på en lidt anden måde.

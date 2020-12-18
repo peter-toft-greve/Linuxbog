@@ -616,7 +616,7 @@ bevidst ønsker at irritere ham/hende).
 <title>Egne formater</title>
 
 <para>
-Ønsker man som programmør større kontrol over hvordan datoen bliver formateret
+&Oslash;nsker man som programmør større kontrol over hvordan datoen bliver formateret
 så må man selv specificere formatet med <constant>SimpleDateFormat</constant>.
 </para>
 
@@ -700,7 +700,7 @@ lignende tabel findes også i API-dokumentationen for
   </row>
   <row>
     <entry>y</entry>
-    <entry>År</entry>
+    <entry>&Aring;r</entry>
     <entry>02, 02, 02, 2002</entry>
   </row>
   <row>
@@ -977,7 +977,7 @@ en_GB
 <title>Egne formater</title>
 
 <para>
-Ønsker man som programmør større kontrol over hvordan formateringen
+&Oslash;nsker man som programmør større kontrol over hvordan formateringen
 tager sig ud så må man selv specificere formatet med
 <constant>DecimalFormat</constant>.
 </para>

@@ -787,7 +787,7 @@ Hvor OPTIONS kan være een eller flere af
 
 <screen>
   -h, --help             Viser denne hjælp og afslutter
-  -m, --med "BØGER"      Bestemmer hvilke bøger der medtages, hvor BØGER
+  -m, --med "B&Oslash;GER"      Bestemmer hvilke bøger der medtages, hvor B&Oslash;GER
                          er en liste af bøger. Kombiner:
                          "itplatform friheden unix kontorbruger applikationer wm signatur admin sikkerhed program web c java dokumentation forsker"
   -a, --med-alle         Medtag alle (een stor bog) bogen
@@ -805,7 +805,7 @@ I det følgende vil disse argumenter blive uddybet.
 <itemizedlist mark="bullet">
 <listitem>
  <para>
---med "BØGER" argumentet, bruges til at fortælle _hvilke_ bøger du
+--med "B&Oslash;GER" argumentet, bruges til at fortælle _hvilke_ bøger du
 gerne vil have bygget på dit system. ./configure --help vil udskrive
 en liste af dem der mulige (se ovenfor). Så, hvis du f.eks. gerne vil
 have bygget de bøger der anbefales når du vil lære hvordan man bruger

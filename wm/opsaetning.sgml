@@ -195,7 +195,7 @@ Når du er tilfreds med din <filename>$HOME/.xsession</filename> kan den kopiere
 
 <para>
 Det er nemt nok at få kdm til at vise et nyt menupunkt.
-Åbn filen <filename>/etc/X11/xdm/kdmrc</filename> med en editor. (Kan ligge andre steder på
+&Aring;bn filen <filename>/etc/X11/xdm/kdmrc</filename> med en editor. (Kan ligge andre steder på
 andre distributioner).</para>
 
 <para>

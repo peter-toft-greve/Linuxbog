@@ -853,7 +853,7 @@ stedet for den gamle newsserver.
 </para>
 
 <para>
-Ønsker du automatisk hentning af nyheder hvert kvarter, kan du
+&Oslash;nsker du automatisk hentning af nyheder hvert kvarter, kan du
 yderligere tilføje denne linje i <filename>/etc/crontab</filename>
 (kun interessant hvis du har en forbindelse med fast pris):
 </para>

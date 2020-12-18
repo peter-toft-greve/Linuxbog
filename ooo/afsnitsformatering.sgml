@@ -32,7 +32,7 @@
 </sect2>    <!--   Eksempel: Centreret afsnit -->
 
 <sect2>
-  <title>Øvrige muligheder</title>
+  <title>&Oslash;vrige muligheder</title>
 
 <para>På samme måde bruges følgende:</para>
 
@@ -126,6 +126,6 @@ fileref="skaermlinealafsnit.&magic;" scale="60"></graphic>
 </listitem>
 </itemizedlist>
 
-</sect2>    <!--   Øvrige muligheder -->
+</sect2>    <!--   &Oslash;vrige muligheder -->
 </sect1>    <!--   7.2. Afsnitsformatering med objektlinjen og tastaturet -->
 

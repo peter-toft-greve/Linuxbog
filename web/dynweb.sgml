@@ -965,7 +965,7 @@ Apache returnerer "Not Found":
 </para>
 
 <para>
-Årsagen er at Apache ikke kan finde CGI-programmet.
+&Aring;rsagen er at Apache ikke kan finde CGI-programmet.
 </para>
 
 <para>
@@ -975,7 +975,7 @@ at du ikke har tilladt cgi-programmer i
 
 <para>Apache returnerer "Forbidden":</para>
 
-<para>Årsagen er, at Apache ikke kan udføre programmet.</para>
+<para>&Aring;rsagen er, at Apache ikke kan udføre programmet.</para>
 
 <para>Problemet skyldes "Option ExecCGI"  ikke er slået til for det katalog som
 CGI-programmet ligger i, dette gøres i access.conf. Alternativt kan fejlen
@@ -1062,7 +1062,7 @@ browseren.
 <para>
 Den hurtigste måde at debugge et lille program på er at indsætte
 print-linjer på passende steder i koden, gerne med en informativ
-besked om, hvad koden skal til at udføre ('Åbner forbindelse til
+besked om, hvad koden skal til at udføre ('&Aring;bner forbindelse til
 databasen...'), eller hvad den netop har konstateret ('Der blev
 angivet en e-postadresse, sender nu mail...'). (Det hænder dog, at et 
 program er blevet debugget med kortere og knap så informative beskeder,

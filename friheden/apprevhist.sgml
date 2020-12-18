@@ -131,7 +131,7 @@ Jacob Nordfalk tilføjer tekst om fejl i KDE til Mandrake 8.2.
 
 <listitem><para>
 Version 5.3 - 10. marts 2002:
-Ny licens for bogen - Åben dokumentlicens.
+Ny licens for bogen - &Aring;ben dokumentlicens.
 Peter Toft opdaterer installationsvejledning til Red Hat 7.2 og
 Jørgen Kristensen finder en smutter :)
 Stig Jensen flytter afsnit om fdisk til mere logisk sted.
@@ -220,11 +220,11 @@ Version 4.7 - 15. april 2001:
 Stig Lilander tilføjer lidt om at \* sørger for at en shell ikke
 ekspanderer *.
 Jacob Sparre Andersen har rettet sproglige fejl og pyntet på SGML-koden.
-Magnus Østergaard har skrevet mere om e-post-konvertering fra Outlook
+Magnus &Oslash;stergaard har skrevet mere om e-post-konvertering fra Outlook
 - Peter har rettet den lidt til.
 Rettelse om Mandrake 7.2 dansk installation.
 Peter Toft: Nyt om pan og GPL, Open Source og RMS.
-Magnus Østergaard om størrelsen af RAM til installation.
+Magnus &Oslash;stergaard om størrelsen af RAM til installation.
 </para></listitem>
 
 
@@ -234,7 +234,7 @@ Peter Toft: Ny URL til gnuskole-projektet.
 Carsten Svaneborg har skrevet mere om LILO og mere om Linux/Windows
 2000-installation.
 Henrik Christian Grove fandt en dum trykfejl i oversigt over bøger.
-Peter Toft og Magnus Østergaard har på opfordring fra Erling Sjørlund
+Peter Toft og Magnus &Oslash;stergaard har på opfordring fra Erling Sjørlund
 skrevet nyt afsnit om miljø-variable. Kristian Vilmann og Jesper Krogh
 bidrager. Har flyttet afsnit om pakke-formater til bogen
 "Linux - Friheden til systemadministration".
@@ -258,7 +258,7 @@ Sproglig rettelse til dette af Jørgen Ramskov.
 Har indsat reference til nye bøger.
 Troels Liebe Bentsen har opdateret flere billeder så de fylder mindre.
 Tommy Mogensen fandt en sprogbøf.
-Magnus Østergaard fandt to dårlige URL'er og lavede fine tilføjelser
+Magnus &Oslash;stergaard fandt to dårlige URL'er og lavede fine tilføjelser
 til ordlisten. 
 Jacob Sparre Andersen: Rettet nogle sproglige fejl.
 Asbjørn Laurberg: Rettet en sproglig fejl.
@@ -273,7 +273,7 @@ Jacob Sparre Andersen har igen bidraget til at få mere dansk ind i
 flere afsnit og har tilføjet flere deltaljer om at montere diske.
 Svend Erik Venstrup har bidraget med hvordan man får mus med hjul
 til at virke.
-Magnus Østergaard har lavet flere ord til ordlisten.
+Magnus &Oslash;stergaard har lavet flere ord til ordlisten.
 Kristian Vilmann har lavet flere gode tips til pine-brugere.
 Link til den nye bog "Linux - friheden til at programmere i C".
 Jacob Laursen har skrevet et helt nyt afsnit om at montere ydre enheder.
@@ -312,7 +312,7 @@ parametre).
 <listitem> <para> Version 4.1 - 20. august 2000: Claus Sørensen har
 bidraget med mange hundrede sproglige rettelser, ajourføringer og
 skrevet nyt om mcedit.  Nyt afsnit om installation af Slackware -
-skrevet af Magnus Østergaard.  Poul Petersen har nærlæst mange dele af
+skrevet af Magnus &Oslash;stergaard.  Poul Petersen har nærlæst mange dele af
 bogen og fundet nogle "gode" fejl. Jacob Sparre Andersen har
 tilsvarende rettet en stor mængde sproglige fejl.  Mindre rettelser
 fra Peter Brodersen og Daniel Pedersen.
@@ -484,7 +484,7 @@ eksempler), Anders Melchiorsen (kortere eksempel med find), Rune
 Christiansen (flere vi-kommandoer), Christian Hansen (ny reference til
 Samba bog) og Brian Ziegler (lilo zImage->bzImage), Jesper Monsted
 (smart find kommando), Frank Damgaard (nye links om diald) og Magnus
-Østergaard (.Xdefaults til mus med hjul).  </para></listitem>
+&Oslash;stergaard (.Xdefaults til mus med hjul).  </para></listitem>
 
 
 <listitem> <para> Version 3.2 - 9. april 2000: 

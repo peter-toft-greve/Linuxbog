@@ -372,11 +372,11 @@ numret på dagen i måneden. En fuldstændig liste af alle koderne kan findes me
     </row>
     <row>
       <entry>%y</entry>
-      <entry>Årsnummer (00-99)</entry>
+      <entry>&Aring;rsnummer (00-99)</entry>
     </row>
     <row>
       <entry>%Y</entry>
-      <entry>Årsnummer med 4 cifre (2000)</entry>
+      <entry>&Aring;rsnummer med 4 cifre (2000)</entry>
     </row>
   </tbody>
 </tgroup>
@@ -585,7 +585,7 @@ Det er muligt at anvende logiske udtryk i SSI. Dette minder lidt om
     </row>
     <row>
       <entry>betingelse1 &amp;&amp; betingelse2</entry>
-      <entry>Er sand hvis BÅDE betingelse1 OG betingelse2 er sande, ellers
+      <entry>Er sand hvis B&Aring;DE betingelse1 OG betingelse2 er sande, ellers
       falsk.</entry>
     </row>
     <row>

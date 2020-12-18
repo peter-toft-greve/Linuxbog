@@ -1263,7 +1263,7 @@ knappen "Nej".
 
 
 <para>
-Så er programmet installeret og nu skal vi se om det virker. Åbn en
+Så er programmet installeret og nu skal vi se om det virker. &Aring;bn en
 xterm og skriv mount /mnt/cdrom (hvis du nu har haft din computer
 slukket eller brugt andre cd-rom'er i mellemtiden (dette er lavet på
 en Linux Mandrake-maskine så hvis du bruger en anden distribution skal

@@ -99,7 +99,7 @@ Macintosh, Windows, Linux og Sun Solaris. Det anbefales at have 128 MB RAM.
 <para>
 En basisversion af JBuilder kan hentes gratis fra
 <ulink url="http://www.borland.com/jbuilder/">http://www.borland.com/jbuilder/</ulink>.
-Ønsker man adgang til de mere avancerede funktioner skal programmet købes.
+&Oslash;nsker man adgang til de mere avancerede funktioner skal programmet købes.
 </para>
 
 <para>
@@ -568,7 +568,7 @@ public class IntStack
    */
   public IntStack()
   {
-    /* Øvelse: implementer metoden sådan at
+    /* &Oslash;velse: implementer metoden sådan at
        elements og count initialiseres til
        nogle fornuftige værdier */
   }
@@ -582,7 +582,7 @@ public class IntStack
    */
   public int pop() throws java.util.EmptyStackException
   {
-    /* Øvelse: implementer metoden */
+    /* &Oslash;velse: implementer metoden */
     return -1;
   }
 
@@ -593,7 +593,7 @@ public class IntStack
    */
   public void push(int element)
   {
-    /* Øvelse: implementer metoden så stakken
+    /* &Oslash;velse: implementer metoden så stakken
        udvides såfremt den er fyldt */
   }
 
@@ -635,7 +635,7 @@ Prøv at kalde Javadoc-værktøjet med følgende argumenter
 </programlisting>
 
 <para>
-Værktøjet genererer som standard HTML-filer. Åbn
+Værktøjet genererer som standard HTML-filer. &Aring;bn
 <filename>index.html</filename> med en browser
 for at se resultatet.
 </para>

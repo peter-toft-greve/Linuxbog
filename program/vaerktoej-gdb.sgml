@@ -27,7 +27,7 @@ det uden optimering, dvs. fjern <command>-O2</command> ved oversættelse.
 </para>
 
 <para>
-Ønsker du at anvende en grafisk debugger, kan du med fordel
+&Oslash;nsker du at anvende en grafisk debugger, kan du med fordel
 installere <command>ddd</command> (Data-Display-Debugger) som giver
 en fuldt professionel grafisk brugerflade til fejlfinding i C-, C++-, Perl-, Python-,
 Java- og Fortran-kildetekst.  Specielt lækkert er at man nemt kan følge

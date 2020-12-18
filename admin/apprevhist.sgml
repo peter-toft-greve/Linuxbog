@@ -156,7 +156,7 @@ Jacob Sparre Andersen: Rettet sproglige småfejl.
 
 <listitem><para> 
 Version 2.3 - 10. marts 2002:
-Ny licens for bogen - Åben dokumentlicens.
+Ny licens for bogen - &Aring;ben dokumentlicens.
 Hanne Munkholm har skrevet en meget nyttig vejledning til håndtering
 af defekte blokke på harddisken.
 Jesper Krogh skriver mere om procmail.
@@ -252,7 +252,7 @@ Mere om kerne 2.4 problemer med at se alle hjemmesider.
 Jacob Sparre Andersen: Rettet en henvisning i wget-afsnittet på opfordring af
 Svend Erik Venstrup.
 Mindre rettelser fra Svend Erik Venstrup.
-Magnus Østergaard forbedrer teksten omkring DHCP-serveren.
+Magnus &Oslash;stergaard forbedrer teksten omkring DHCP-serveren.
 Erik Søe Sørensen retter et par fejl om kerne 2.4.
 Rasmus Laursen laver nyt afsnit om devfs (kerne 2.4-devices).
 Peter Seidler og Thorbjørn Ravn Andersen retter indhold om kerne 2.4.
@@ -316,7 +316,7 @@ mange af de nye afsnit.
 Version 1.4 - 29. december 2000:
 Flyttet afsnit om MP3 til "Linux - friheden til at vælge
 applikationer".
-Magnus Østergaard har lavet tilføjelse til DHCP-server om 
+Magnus &Oslash;stergaard har lavet tilføjelse til DHCP-server om 
 "option domain-name" og "option domain-name-servers".
 Link til den nye bog "Linux - friheden til at programmere i C".
 </para>

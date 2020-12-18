@@ -194,7 +194,7 @@ forskel fra Red Hat 9.
 <sect1 id="distro-redhat-pakker">
 <title>Installation af ekstra programmel</title>
 <para>
-Red Hat/Fedora benytter RPM pakkesystemet. Ønsker man at installere et nyt
+Red Hat/Fedora benytter RPM pakkesystemet. &Oslash;nsker man at installere et nyt
 program, kan man ofte finde en RPM pakke med det, og i så fald er
 installationen nem:
 </para>

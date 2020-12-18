@@ -42,7 +42,7 @@
 <sect2 id="ooo-brugerfladen-menuerne">
   <title>Menuerne</title>
 
-<para>Øverst findes <emphasis>menulinjen</emphasis> :</para>
+<para>&Oslash;verst findes <emphasis>menulinjen</emphasis> :</para>
 
 <figure float="1" id="fig-ooo-skaermmenulinje">
 <title>Skærm menu</title>
@@ -120,7 +120,7 @@
 <para>Under menuerne kommer <emphasis>ikonlinjerne</emphasis> , som indeholder knapper til
     nogle af de funktioner, du kan nå med menuerne samt nogle flere.</para>
 
-<para>Øverst er <emphasis>funktionslinjen</emphasis> , som er den samme uanset hvilken
+<para>&Oslash;verst er <emphasis>funktionslinjen</emphasis> , som er den samme uanset hvilken
     OpenOffice.org komponent du bruger.</para>
 
 <figure float="1" id="fig-ooo-skaermfunktionslinje2">

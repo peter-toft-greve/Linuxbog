@@ -124,7 +124,7 @@ Du kan således give alle de filnavne, der skal pakkes som det sidste
 argument, og giver du et katalognavn i listen vil dette katalog - med
 alle underkataloger - også blive pakket med. Som det ses af eksemplet
 vil programmet <command>tar</command> vise filnavne på de filer, der
-pakkes. Ønsker du ikke at se dette, skal du blot udelade option
+pakkes. &Oslash;nsker du ikke at se dette, skal du blot udelade option
 <filename>v</filename>, dvs. brug <command>tar cf TARFILNAVN.tar
 LISTE_AF_FILER</command> i stedet.
 </para>

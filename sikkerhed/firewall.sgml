@@ -21,7 +21,7 @@ for trafik ind på det lokale netværk. Hvis man uden videre
 forbinder sit lokale netværk til internettet, kan man blive 
 udsat for, at andre trænger ind på firmaets eller kollegiets
 interne computere, læser og ændrer følsomme data, får servere til
-at gå i stå osv.  Ønsker man at give adgang for beboere og
+at gå i stå osv.  &Oslash;nsker man at give adgang for beboere og
 medarbejdere til e-post og den store mængde information, man kan
 finde på internettet uden at åbne for trafik den anden vej,
 kræver det en firewall.
@@ -1296,7 +1296,7 @@ udgangspunkt kan man blot acceptere default indstillingerne.
 </para>
 
 <para>
-Ønsker man dansk tekst i sin GUI er guarddog (GPL) det klare valg.
+&Oslash;nsker man dansk tekst i sin GUI er guarddog (GPL) det klare valg.
 Gunner Poulsen har oversat til dansk, og man kan hente denne fra
 <ulink
 url="http://www.simonzone.com/software/guarddog/#download">

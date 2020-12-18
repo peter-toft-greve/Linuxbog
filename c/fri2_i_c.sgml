@@ -314,7 +314,7 @@ Tallet kan i Unix-kommandofortolker-sammenhæng læses i variabelen $?,
 som kan styre processtrømmen i et Unix-skalprogram <emphasis> (en
 shell) </emphasis>.<footnote><para> I Microsoft miljøer som
 "errorlevel", der kan bruges af if-sætninger i batch-filer.
-</para> </footnote> Øvelse: Ret, så programmet returnerer 117 og
+</para> </footnote> &Oslash;velse: Ret, så programmet returnerer 117 og
 se, om du kan udskrive systemvariablen $? med kommandoen 
 </para>
 
@@ -874,7 +874,7 @@ Ikke semikolon i #define linjen, det er <emphasis> ikke
 </para>
 
 <para>
-Øvelser for de lidt mere erfarne: Prøv at ændre programmet,
+&Oslash;velser for de lidt mere erfarne: Prøv at ændre programmet,
 så der anvendes double precision floating point variable. Prøv
 også at tilføje en kontrolberegning, som finder ud af, om der har
 været overflow. Hvis der er overflow, så skriv en fejlmeddelelse
@@ -1755,11 +1755,11 @@ int main(int argc, char *argv[])
         conv[jj] = jj;
 
     conv[134] = 'å';              /* 134 er codepage850 for å */
-    conv[143] = 'Å';              /* 143 er codepage850 for Å */
+    conv[143] = '&Aring;';              /* 143 er codepage850 for &Aring; */
     conv[145] = 'æ';
     conv[146] = 'Æ';
     conv[155] = 'ø';
-    conv[157] = 'Ø';
+    conv[157] = '&Oslash;';
     conv[130] = 'é';
     conv[144] = 'É';
                                   /* fortsæt listen efter behov */
@@ -3317,7 +3317,7 @@ fremad indenfor programmering (og logisk tænkning).
 
 
 <sect1 id="cprog-oevelser">
-<title id="OV1">Øvelser</title>
+<title id="OV1">&Oslash;velser</title>
 
 
 <para>

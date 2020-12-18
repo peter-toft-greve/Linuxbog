@@ -29,7 +29,7 @@ andre processer på systemet.</para>
 <indexterm><primary>openssl</primary><secondary>req</secondary></indexterm>
 
 <para><emphasis>Bemærk, at der pt. er begrænsninger på brugen af
-æøå ÆØÅ (og andre specialtegn) i forhold til KMD-CA. Kun a-z, A-Z og 0-9 er tilladt.</emphasis></para>
+æøå Æ&Oslash;&Aring; (og andre specialtegn) i forhold til KMD-CA. Kun a-z, A-Z og 0-9 er tilladt.</emphasis></para>
 
 <sect2>
 <title>Eksempel på forespørgselsdannelses fil</title>
@@ -221,10 +221,10 @@ Certifikatet kan bruges til enkryptering, signering eller begge dele
 Hvad skal det bruges til? [E]nkryptering, [S]ignering eller [B]egge?
 Angiv hvad certifikatet skal bruges til [e/s/B] : <userinput>B</userinput>
 
-Nogle Certifikat udstedere understøtter ikke ÆØÅ (såsom KMD) og skal
+Nogle Certifikat udstedere understøtter ikke Æ&Oslash;&Aring; (såsom KMD) og skal
 du bruge certifikatet med en sådan udsteder skal du svare J her, så
-konverteres Æ, Ø, Å, til henholdsvis Ae, Oe, Aa.
-Ønsker du at få konverteret ÆØÅ? [J/n] : <userinput>J</userinput>
+konverteres Æ, &Oslash;, &Aring;, til henholdsvis Ae, Oe, Aa.
+&Oslash;nsker du at få konverteret Æ&Oslash;&Aring;? [J/n] : <userinput>J</userinput>
 
 Det anbefales at man beskytter sin private nøgle med en adgangskode
 Indtast en sådan - bemærk at den vil blive skrevet til skærmen!
@@ -232,14 +232,14 @@ Angiv adgangskode : <userinput>abctester</userinput>
 
 Her er de informationer du indtastede.
 
-NB. Bemærk at hvis du svarede J til Konverter ÆØÅ, vil alle ÆØÅ og
+NB. Bemærk at hvis du svarede J til Konverter Æ&Oslash;&Aring;, vil alle Æ&Oslash;&Aring; og
     æøå være repræsenteret som Ae,Oe,Aa og ae, oe, aa nedenfor.
 
 Fornavn       : Anders Benjamin
 Efternavn     : Christensen
 Email         : abc@example.org
 Nøglebrug     : Digital Signature, Data Enchiperment
-Konverter ÆØÅ : J
+Konverter Æ&Oslash;&Aring; : J
 Adgangskode   : abctester
 
 Er informationerne korrekte? [J/n] : <userinput>J</userinput>

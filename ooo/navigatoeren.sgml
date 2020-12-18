@@ -22,7 +22,7 @@
 <graphic fileref="navigator.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Navigatoren giver et hurtigt overblik over dokumentets indhold. Øverst
+<para>Navigatoren giver et hurtigt overblik over dokumentets indhold. &Oslash;verst
     er alle overskrifterne (altså afsnittene med typografierne <emphasis>Overskrift
     1</emphasis> op til <emphasis>Overskrift 10</emphasis>) og nedenunder findes forskellige
     specielle elementer i et dokument, f.eks. grafik og tabeller.</para>

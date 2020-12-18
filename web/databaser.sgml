@@ -136,7 +136,7 @@ Skematisk kunne tabellerne se således ud
 <tbody>
 <row>
  <entry>2100</entry>
- <entry>København Ø</entry>
+ <entry>København &Oslash;</entry>
 </row>
 <row>
  <entry>2200</entry>
@@ -174,13 +174,13 @@ Resultatet af ovenstående ser således ud:
  <entry>DKUUG</entry> 
  <entry>Fruebjergvej 3</entry>
  <entry>2100</entry> 
- <entry>København Ø</entry>
+ <entry>København &Oslash;</entry>
 </row>
 <row>
  <entry>Niels Bohr Institutet</entry> 
  <entry>Blegdamsvej 17-21</entry>
  <entry>2100</entry> 
- <entry>København Ø</entry>
+ <entry>København &Oslash;</entry>
 </row>
 </tbody>
 </tgroup>
@@ -531,7 +531,7 @@ Eksemplet <filename>pgsql.php3</filename> bruger den tabel der blev beskrevet i 
 <programlisting>
 &lt;html&gt;&lt;head&gt;&lt;TITLE&gt;LinuxBog PostgreSQL PHP&lt;/TITLE&gt;&lt;/head&gt;
 &lt;?  // Her skiftes der fra HTML til PHP-kode med tegnet '&lt;?'
-  // Åben en forbindelse til PostgreSQL
+  // &Aring;ben en forbindelse til PostgreSQL
   // Ved ikke at angive brugernavn, er det 'nobody' der er brugeren
   $conn = pg_connect("");
   // Udfør en læsning fra tabellen 'linuxbog'
@@ -625,7 +625,7 @@ Tabellen <database>linuxbog</database> åbnes og alle poster udskrives.
 #!/usr/bin/perl
 # Inkluder DBI-modulet
 use DBI;
-# Åben en DatabaseHandle til PostgreSQL
+# &Aring;ben en DatabaseHandle til PostgreSQL
 $dbh = DBI-&gt;connect("DBI:Pg:dbname=nobody");
 # Forbered en SQL-kommando for læsning af een tabel
 $sth = $dbh-&gt;prepare("SELECT * FROM linuxbog ORDER BY kapitel");
@@ -697,7 +697,7 @@ Tabellen <database>linuxbog</database> åbnes og alle poster udskrives.
 #!/usr/bin/python
 # Inkluder fra postgresql (pg) modulet
 from pg import DB
-# Åbne en forbindelse til databasen "nobody"
+# &Aring;bne en forbindelse til databasen "nobody"
 dbc = DB("nobody")
 # Udfør SQL kommando
 dbqo = dbc.query("SELECT * FROM linuxbog ORDER BY kapitel")
@@ -1015,7 +1015,7 @@ oprettet i <xref linkend="db-mysql"/>.
 &lt;BODY&gt;
 &lt;?php  // Her skiftes der fra alm. HTML til PHP-kode
 
-$conn = mysql_connect("localhost","root","hemmeligt");  // Åben en forbindelse til MySQL
+$conn = mysql_connect("localhost","root","hemmeligt");  // &Aring;ben en forbindelse til MySQL
 
 $sql="SELECT * FROM linuxbog ORDER BY kapitel";  // Udfør en læsning fra tabellen linuxbog
 

@@ -1530,7 +1530,7 @@ localhost   IN   A   127.0.0.1
 linus       IN   A   192.168.0.1
 
 ;
-; Øvrige hostnavne afbildet til IP-adresser:
+; &Oslash;vrige hostnavne afbildet til IP-adresser:
 ;
 alan        IN   A   192.168.0.2
 richard     IN   A   192.168.0.3

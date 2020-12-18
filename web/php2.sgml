@@ -311,7 +311,7 @@ En associativ tabel er en tabel, der bruger strenge som indices, og de
 #multi-dimensional array
    $kunst=array(
          "impressionism" =&gt; 
-               array("Monet" =&gt; "Åkander",
+               array("Monet" =&gt; "&Aring;kander",
                      "Manet" =&gt; "Frokost i det Grønne"),
          "barok" =&gt;
                array("Bach"  =&gt; "Brandenburg koncerterne",
@@ -379,7 +379,7 @@ Koden "\t" betyder tabulator.</para>
 # rand(a,b) funktionen returnere et tilfældigt tal mellem a og b inklusiv.
   function AddAFish($str)
    {
-      $fisk=array("Pirana","Elektrisk Ål","Haj","Guldfisk");
+      $fisk=array("Pirana","Elektrisk &Aring;l","Haj","Guldfisk");
 
       $i=rand(0,count($fisk)-1);
       echo $str." ";

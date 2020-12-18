@@ -363,7 +363,7 @@ Anmodning: GET /xxx.html HTTP/1.1
 <orderedlist>
   <listitem><para>Læs Javadokumentationen for klassen URLConnection, og omskriv HentHjemmeside til at bruge denne klasse i stedet for selv af lave Socket-forbindelser.</para></listitem>
   <listitem><para>Lav din egen proxy. En proxy er en &quot;stråmand&quot;, der modtager en HTTP-forespørgsel og spørger videre for klienten.</para></listitem>
-  <listitem><para>Lav en virtuel opslagstavle. Den skal bestå af klasserne Opslagstavletjeneste, som udbyder tjenesten (brug port 8002), og Opslagstavleklient, som forbinder sig til tjenesten. Opslagstavletjeneste skal understøtte to former for anmodninger: 1) TILFØJ, der føjer en besked til opslagstavlen og 2) HENTALLE, der sender alle opslag til klienten.  Afprøv begge slags anmodninger fra Opslagstavleklient.</para></listitem>
+  <listitem><para>Lav en virtuel opslagstavle. Den skal bestå af klasserne Opslagstavletjeneste, som udbyder tjenesten (brug port 8002), og Opslagstavleklient, som forbinder sig til tjenesten. Opslagstavletjeneste skal understøtte to former for anmodninger: 1) TILF&Oslash;J, der føjer en besked til opslagstavlen og 2) HENTALLE, der sender alle opslag til klienten.  Afprøv begge slags anmodninger fra Opslagstavleklient.</para></listitem>
 </orderedlist>
 
 </sect1> 
