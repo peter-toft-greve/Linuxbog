@@ -27,7 +27,7 @@ targetname:=linuxbog-$(notdir $(locdirname))
 basenavn:=$(targetname)-$(version)
 
 # dato
-dato:=$(shell date +%d/%m-%Y> dato.sgml; cat dato.sgml)
+dato:=$(shell date +%F > dato.sgml ; cat dato.sgml)
 
 # Her er en liste af sgml-filer der ændres automatisk
 # badsgmlfiles=dato.sgml version.sgml magic.sgml stikord.sgml bogoversigt.sgml ophavsret.sgml
@@ -249,7 +249,7 @@ else !HAVE_PERL_IMAGE_SIZE
 	@echo "Du bør installere Perl-modulet Image:Size"
 endif !HAVE_PERL_IMAGE_SIZE
 if HAVE_TIDY
-	(cd $(targetshortname);tidy -latin1 -f err.txt -imu *html;rm -f err.txt)
+	(cd $(targetshortname) ; tidy -f /dev/null --input-encoding latin1 --output-encoding utf8 --doctype html5 -qimu -w *.html)
 else !HAVE_TIDY
 	@echo "Du bør installere tidy"
 endif !HAVE_TIDY
@@ -333,7 +333,7 @@ $(targetname)-eksempler-$(version).tar.gz : $(eksfiler)
 	if test "x$(eksfiler)" != "x" ; then \
 		rm -f $(targetname)-eksempler-$(version).tar.gz && \
 		touch $(targetname)-eksempler-$(version).tar && \
-		date +%d/%m-%Y > eksempler/BACKUPDATO && \
+		date +%F > eksempler/BACKUPDATO && \
 		(cd .. && tar cvf $(targetshortname)/$(targetname)-eksempler-$(version).tar $(targetshortname)/eksempler/BACKUPDATO) && \
 		rm -f eksempler/BACKUPDATO && \
 		find eksempler -type f | grep -v "/CVS/" | xargs -l1 -i= -r tar rvf $(targetname)-eksempler-$(version).tar = && \

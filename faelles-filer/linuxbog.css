@@ -12,17 +12,7 @@ BODY {
 /* default is x-small in Verdana, Lucida, etc... 
    has some side-effect, since this does not cover all fields :( */
 
-H1, H3, H5 { font-family: Verdana, 'Myriad Web', Helvetica, Syntax, sans-serif; 
-}
-
-H2, H4, H6 { font-family: Tahoma, 'Myriad Web', Lucida, Syntax, sans-serif; }
-
-H1 { font-size: large; }
-H2 { font-size: large;}
-H3 { font-size: medium; }
-H4 { font-size: medium; }
-H5 { font-size: small; }
-H6 { font-size: small; }
+HTML { font-family: Tahoma, Verdana, Arial, sans-serif; }
 
 A, ADDRESS, BODY, CODE, DD, DIV, EM, FORM, H1, H2, H3, H4, H5,
    H6, IMG, LI, P, SPAN, STRONG, SUB, SUP, UL, CENTER, HR, PRE {        
@@ -139,4 +129,15 @@ A.offsite {
 
 LI,DD {
    line-height:         120%;
+}
+
+TABLE {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+TH, TD {
+	border: 1px solid;
+	padding: 4px;
+	text-align: left;
 }
