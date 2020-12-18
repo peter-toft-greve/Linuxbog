@@ -235,8 +235,7 @@ html.stamp: $(dep_sgml_filer) eksempler-sgml-HTML
 	make version.sgml
 	sleep 2; ls -lo version.sgml ; test -f version.sgml || { echo "Fatal, cannot make version.sgml"; exit 105 ; } ;
 	@echo '<!ENTITY magic "png">' > magic.sgml
-	db2html -V %stylesheet%=linuxbog.css -V  %use-id-as-filename% -V  %chapter-autolabel% -V %section-autolabel% bog.sgml
-	mv bog/ $(targetshortname)
+	db2html -V %stylesheet%=linuxbog.css -V  %use-id-as-filename% -V  %chapter-autolabel% -V %section-autolabel% -o $(targetshortname) bog.sgml
 	cp linuxbog.css $(targetshortname)	
 	cp $(targetshortname)/$(targetshortname)-apprevhist.html $(targetshortname)/apprevhist.html
 if USE_SOFTLINKS
