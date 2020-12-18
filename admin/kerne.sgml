@@ -120,7 +120,7 @@ internettet.
  <para>
  <emphasis>Understøttelse af nationale tastaturer og tegnsæt</emphasis>
 Under Linux kan mange nationale tastaturer og tegnsæt anvendes.
-ISO-standarden ISO-8859-1 definerer blandt andet Latin1-tegnsættet, som 
+ISO-standarden UTF-8 definerer blandt andet Latin1-tegnsættet, som 
 indeholder de europæiske specialtegn med mere.
  </para>
 </listitem>

@@ -1407,7 +1407,7 @@ int main()
 <para>
 Dette program er så dejligt at eksperimentere med. Når vi har
 læst vores char med getchar, så kan vi gøre med den hvad vi vil,
-f.eks. konvertere den fra DOS-tegnsæt til ISO-8859-1 tegnsæt. (Se
+f.eks. konvertere den fra DOS-tegnsæt til UTF-8 tegnsæt. (Se
 nedenfor.) Men i første omgang, som her, skriver vi blot vores
 char ud nøjagtig som vi fik den ind. Hvis nu vi bruger en
 kommandolinje som nedenfor, kan vi kontrollere, at programmet
@@ -1607,7 +1607,7 @@ PROMPT $ man groff-char
 <para>
 Et filterprogram, som svarer til den normale anvendelse af ordet
 filter, er et program som kan konverterer CodePage 865
-til ISO-8859-1. Det kan gøres på forskellige måder, men eksemplet
+til UTF-8. Det kan gøres på forskellige måder, men eksemplet
 egner sig godt til at demonstrere, hvordan man "mapper" en
 datamængde over i en anden.
 </para>
@@ -3146,7 +3146,7 @@ udskiftning. Det er indenfor mulighedernes grænser.
 <para>
 Hvis vi skriver et almindeligt filteringsprogram, f.eks. et,
 som konverterer fra MIME/html characters til extended ascii eller
-rettere ISO-8859-1, så bør vi altså ikke begynde at lave tjek af
+rettere UTF-8, så bør vi altså ikke begynde at lave tjek af
 CPU-temperatur, disktilstand etc. Det hører hjemme et andet sted
 og er ikke interessant for vores filterprogram.
 </para>

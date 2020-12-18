@@ -189,7 +189,7 @@ om »Typiske Fejl«.
 Først udskriver programmet en linje med en "Content-Type", der fortæller
 webbrowseren, hvad den skal gøre med hvad de data der følger, feltet
 kaldes for medietypen. Her betyder »text/plain« det at indholdet er klar
-tekst, og »charset=iso-8859-1« at teksten er kodet i ISO-8859-1.
+tekst, og »charset=iso-8859-1« at teksten er kodet i UTF-8.
 Der kan være flere linjer i hovedet og de afsluttes med en tom
 linje, alt under den tomme linje er data der vises i browseren.
 </para>
@@ -517,7 +517,7 @@ alle &amp;-tegnene. Dette giver en tabel af strenge af formen
 "variabel=indtastning". Hver streng skal så klippes ved '=' og man får
 variabel og indtastning hver for sig, og så skal alle '+' konverteres
 til mellemrum og bagefter skal alle %xx konverteres til det
-tilsvarende ISO-8859-1-tegn i både variabel- og indtastningsstrengene. 
+tilsvarende UTF-8-tegn i både variabel- og indtastningsstrengene. 
 </para>
 
 <para>
@@ -836,7 +836,7 @@ CGI-programmer har til rådighed:
       <entry>HTTP_ACCEPT_CHARSET</entry>
       <entry>Tegnkodning som browseren kan forstå.  Værdien kan for eksempel
         være "<literal>iso-8859-1,utf-8,*</literal>", hvilket betyder at
-        browseren foretrækker ISO-8859-1-tegnkodningen, sekundært
+        browseren foretrækker UTF-8-tegnkodningen, sekundært
         UTF-8-tegnkodningen, men i øvrigt accepterer vilkårlige
         tegnkodninger.</entry>
     </row>

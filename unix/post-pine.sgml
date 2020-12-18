@@ -1,4 +1,4 @@
-<?xml encoding="ISO-8859-1" ?>
+<?xml encoding="UTF-8" ?>
 
  <sect1 id="unix-post-pine">
   <title>Pine</title>
@@ -259,7 +259,7 @@ Press Return to Compose using no role, or ^T to select a role
 
     <para>
      <emphasis>Tip:</emphasis> Under setup, skal du sætte
-     "character-set = ISO-8859-1" for at få dansk tegnsæt til at
+     "character-set = UTF-8" for at få dansk tegnsæt til at
      virke.
     </para>
 
@@ -276,7 +276,7 @@ Press Return to Compose using no role, or ^T to select a role
      <emphasis>Tip:</emphasis> Pine kender ikke noget til
      tegnkodninger, men sender som standard bare brevene direkte ud
      til terminalen bit for bit.  Hvis man for eksempel modtager breve
-     kodet med UTF-8 og ens terminal arbejder med ISO-8859-1 kan det
+     kodet med UTF-8 og ens terminal arbejder med UTF-8 kan det
      give problemer.  Man kan komme omkring det ved at lade Pine kalde
      et tegntabelomkodningsprogram, når det skal vise et brev kodet
      med en anden kodning end den terminalen forventer.  Man kan for
