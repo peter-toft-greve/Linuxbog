@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
     {
         int jj = 0;
         while(jj++ < 10)
-            printf("For %d. gang: Ih hvor vi kører\n", jj);
+            printf("For %d. gang: Ih hvor vi kÃ¸rer\n", jj);
     }
-    printf("Program %s exiter graciøst!\n", thisprog);
+    printf("Program %s exiter graciÃ¸st!\n", thisprog);
     return 0;
 }
 

@@ -7,8 +7,8 @@
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Tasten <emphasis>Delete</emphasis> sletter tegnet til <emphasis>højre</emphasis> for markøren.
-        Tasten <emphasis>Backspace</emphasis> (over <emphasis>Enter</emphasis>) sletter tegnet til <emphasis>venstre</emphasis> for markøren.</para>
+<para>Tasten <emphasis>Delete</emphasis> sletter tegnet til <emphasis>hÃ¸jre</emphasis> for markÃ¸ren.
+        Tasten <emphasis>Backspace</emphasis> (over <emphasis>Enter</emphasis>) sletter tegnet til <emphasis>venstre</emphasis> for markÃ¸ren.</para>
 
 </listitem>
 
@@ -21,21 +21,21 @@
 
   <listitem>
 
-<para>Hvis du markerer en tekst, så sletter <emphasis>Delete</emphasis> og
+<para>Hvis du markerer en tekst, sÃ¥ sletter <emphasis>Delete</emphasis> og
         <emphasis>Backspace</emphasis> hele den markerede tekst!</para>
 
 </listitem>
 
   <listitem>
 
-<para>Hvis du markerer en tekst og begynder at skrive, så slettes den
+<para>Hvis du markerer en tekst og begynder at skrive, sÃ¥ slettes den
         markerede tekst!</para>
 
 </listitem>
 
   <listitem>
 
-<para>Tasten <emphasis>Insert</emphasis> skifter mellem <emphasis>indsætning</emphasis> (ny tekst
+<para>Tasten <emphasis>Insert</emphasis> skifter mellem <emphasis>indsÃ¦tning</emphasis> (ny tekst
         skubber den gamle fremad) eller <emphasis>overskrivning</emphasis> (ny tekst
         sletter den gamle). I statuslinjen vises henholdsvis <emphasis>IND</emphasis> eller
         <emphasis>OVR</emphasis>.</para>

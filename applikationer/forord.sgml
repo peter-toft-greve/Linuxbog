@@ -21,20 +21,20 @@
 
 <para>
 Denne bog er skrevet af erfarne Linux-folk til dig, som vil i gang med
-at anvende styresystemet Linux som styresystem på en almindelig PC.
+at anvende styresystemet Linux som styresystem pÃ¥ en almindelig PC.
 </para>
 
 <para>
-Installation af Linux er dækket i en anden af SSLUG's bøger. I denne
-bog præsenteres software som tekstbehandlere, tegneprogrammer,
+Installation af Linux er dÃ¦kket i en anden af SSLUG's bÃ¸ger. I denne
+bog prÃ¦senteres software som tekstbehandlere, tegneprogrammer,
 programmer til at afspille lyd og video, spil, osv.  Der findes mange
-af denne slags programmer til Linux, men de fleste kender du næppe,
+af denne slags programmer til Linux, men de fleste kender du nÃ¦ppe,
 hvis du f.eks. kun har erfaring med Microsoft Windows.</para>
 
 <para>
-Det kan også være af interesse for dig at se nærmere på hæftet "Linux
+Det kan ogsÃ¥ vÃ¦re af interesse for dig at se nÃ¦rmere pÃ¥ hÃ¦ftet "Linux
 &ndash; tips og tricks" af Nicholas D. Wells, oversat til dansk og
-udgivet af forlaget IDG i 2001. Hæftet har mange ligheder med
+udgivet af forlaget IDG i 2001. HÃ¦ftet har mange ligheder med
 denne bog, men overlappet er ikke stort.</para>
 
 </sect1>
@@ -66,37 +66,37 @@ denne bog, men overlappet er ikke stort.</para>
 <title>Om forfatterne og bogens historie</title> 
 
 <para> Bogen startede som et bogprojekt i sommeren 1998, hvor Peter
-Toft, Kenneth Geisshirt og Snebjørn Andersen fik skrevet "Linux
-&ndash; friheden til at vælge". Bogen var i starten henvendt mod dem
-der ønskede at lære om installation af Linux, at få lidt Unix-kendskab
-og at lære noget om netværk. Bogen har altid primært været en fri
-"web-bog", der kunne læses enten i smådele eller som en helhed på
-internettet, hvor den i dag er tilgængelig på <ulink
+Toft, Kenneth Geisshirt og SnebjÃ¸rn Andersen fik skrevet "Linux
+&ndash; friheden til at vÃ¦lge". Bogen var i starten henvendt mod dem
+der Ã¸nskede at lÃ¦re om installation af Linux, at fÃ¥ lidt Unix-kendskab
+og at lÃ¦re noget om netvÃ¦rk. Bogen har altid primÃ¦rt vÃ¦ret en fri
+"web-bog", der kunne lÃ¦ses enten i smÃ¥dele eller som en helhed pÃ¥
+internettet, hvor den i dag er tilgÃ¦ngelig pÃ¥ <ulink
 url="http://&linuxbogurl;/">&linuxbogurl;</ulink>.  </para>
 
-<para>Vi, forfatterne, har anvendt Linux i flere år og har stor
-erfaring med det. Vi er medlemmer af Skåne Sjælland Linux User
-Group (SSLUG), som er en uafhængig og non-profit svensk/dansk
-organisation, der søger at udbrede kendskabet til Linux. Det er
-gratis at være medlem af SSLUG, og organisationen findes på internettet på
+<para>Vi, forfatterne, har anvendt Linux i flere Ã¥r og har stor
+erfaring med det. Vi er medlemmer af SkÃ¥ne SjÃ¦lland Linux User
+Group (SSLUG), som er en uafhÃ¦ngig og non-profit svensk/dansk
+organisation, der sÃ¸ger at udbrede kendskabet til Linux. Det er
+gratis at vÃ¦re medlem af SSLUG, og organisationen findes pÃ¥ internettet pÃ¥
 <ulink url="http://www.sslug.dk/">www.sslug.dk</ulink>.
-Vi har skrevet denne bog fordi den kunne være til glæde for andre.
+Vi har skrevet denne bog fordi den kunne vÃ¦re til glÃ¦de for andre.
 </para>
 
 <para>
-Den oprindelige bog "Linux &ndash; Friheden til at vælge" blev udgivet
-som hæfte på 96 sider fra IDG Forlag i februar 1999 med en Red Hat 5.2
-cd-rom, hvor den i lang tid lå på bestsellerlisten for edb-hæfter.  I
+Den oprindelige bog "Linux &ndash; Friheden til at vÃ¦lge" blev udgivet
+som hÃ¦fte pÃ¥ 96 sider fra IDG Forlag i februar 1999 med en Red Hat 5.2
+cd-rom, hvor den i lang tid lÃ¥ pÃ¥ bestsellerlisten for edb-hÃ¦fter.  I
 december 1999 udgav Forlaget Globe version 2.9 i bogform (med en del
-ærgerlige konverteringsfejl &ndash; se <ulink
+Ã¦rgerlige konverteringsfejl &ndash; se <ulink
 url="http://www.sslug.dk/misc/globe_fejl.html">www.sslug.dk/misc/globe_fejl.html</ulink>)
-på over 300 sider og med tre cd-rom'er (Red Hat 6.1, SuSE 6.2 og
+pÃ¥ over 300 sider og med tre cd-rom'er (Red Hat 6.1, SuSE 6.2 og
 StarOffice 5.1).  </para>
 
 <para>I juli 2000 var bogen vokset til ca. 350 sider og blev splittet
-op i flere bøger. I september 2003 var denne bog &ndash; om
+op i flere bÃ¸ger. I september 2003 var denne bog &ndash; om
 applikationer &ndash; vokset til omkring 200 sider og hele bogen var
-på over 1700 sider.Alle kan læses på <ulink
+pÃ¥ over 1700 sider.Alle kan lÃ¦ses pÃ¥ <ulink
 url="http://&linuxbogurl;/">&linuxbogurl;</ulink>. </para>
 
 
@@ -106,8 +106,8 @@ url="http://&linuxbogurl;/">&linuxbogurl;</ulink>. </para>
 </figure>
 
 <para>
-<command>Peter Toft</command> er civilingeniør og har en ph.d.-grad
-fra DTU. Han har kørt Linux dagligt siden 1994. Aktiv Linux-forfatter
+<command>Peter Toft</command> er civilingeniÃ¸r og har en ph.d.-grad
+fra DTU. Han har kÃ¸rt Linux dagligt siden 1994. Aktiv Linux-forfatter
 og foredragsholder om Linux i Danmark og Sverige. Tidligere
 bestyrelsesformand for SSLUG.  Medorganisator ved de danske
 Linux-konferencer (Linux98, Open Networks 99, LinuxForum 2000-2003 og
@@ -126,8 +126,8 @@ url="http://pto.linux.dk/">pto.linux.dk</ulink>.  </para>
 
 <para>
 <command>Mads Bondo Dydensborg</command> er datalog og forventer at
-afslutte sit ph.d. studie ved Københavns Universitet medio 2004. Han
-begyndte at anvende Linux i 1994 og har privat udelukkende kørt Linux
+afslutte sit ph.d. studie ved KÃ¸benhavns Universitet medio 2004. Han
+begyndte at anvende Linux i 1994 og har privat udelukkende kÃ¸rt Linux
 siden 1997. Aktiv inden for IT-politik og med flere forskellige Linux
 relaterede Open Source projekter, fra kernedrivere til
 videoredigeringsprogrammer. Hjemmeside <ulink
@@ -141,35 +141,35 @@ url="http://www.distlab.dk/madsdyd/">www.distlab.dk/madsdyd/</ulink>.</para>
 <!-- ============================================================ -->
 
 <sect1 id="applikationer-tak">
-<title>Vi siger tak for hjælpen</title>
+<title>Vi siger tak for hjÃ¦lpen</title>
 <para>
-Vi har haft stor glæde af mange SSLUG-medlemmers støtte, rettelser og
-forslag til forbedringer &ndash; bliv ved med det. Specielt vil vi nævne:
+Vi har haft stor glÃ¦de af mange SSLUG-medlemmers stÃ¸tte, rettelser og
+forslag til forbedringer &ndash; bliv ved med det. Specielt vil vi nÃ¦vne:
 Anders Melchiorsen,
 Anders Bruun Olsen,
 Christian Treldal,
 Claus Boje,
-Erik Søe Sørensen,
-Erling Sjørlund,
+Erik SÃ¸e SÃ¸rensen,
+Erling SjÃ¸rlund,
 Jacob Sparre Andersen,
 Jesper Harder,
 Jesper Krogh,
-Jørgen Ramskov 
+JÃ¸rgen Ramskov 
 Lars K. Schunk,
 Lars Kr. Lundin,
 Mads Sabroe,
 Mads Sejersen,
 Michael Kristensen,
-Mogens Kjær,
-Niels Mørch,
+Mogens KjÃ¦r,
+Niels MÃ¸rch,
 Ole Kofoed Hansen,
 Ole Tange,
 Peter Makholm,
 Thue Janus Kristensen,
 Stig W. Jensen,
-Søren Haagerup,
-Søren Holm
-og Claus Sørensen.
+SÃ¸ren Haagerup,
+SÃ¸ren Holm
+og Claus SÃ¸rensen.
 </para>
 
 <para>
@@ -190,13 +190,13 @@ Bent Pedersen takkes for at give lov til at bringe hans artikel om VNC.
 
 <para>
 Du kan i <xref linkend="applikationer-apprevhist"/> finde en liste over alle de
-revisioner, som bogen har været igennem. 
+revisioner, som bogen har vÃ¦ret igennem. 
 </para>
 
 <para>
-Hvis der er ord du ikke forstår, så kan <ulink
-url="http://www.whatis.com">www.whatis.com</ulink> være
-interessant. Her kan du slå mange computerord op, dog kun på engelsk.
+Hvis der er ord du ikke forstÃ¥r, sÃ¥ kan <ulink
+url="http://www.whatis.com">www.whatis.com</ulink> vÃ¦re
+interessant. Her kan du slÃ¥ mange computerord op, dog kun pÃ¥ engelsk.
 </para>
 
 </sect1>
@@ -206,26 +206,26 @@ interessant. Her kan du slå mange computerord op, dog kun på engelsk.
 <para>
 
 
-Vi vil afslutte indledningen med at nævne den anvendte typografi.
+Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
 </para>
 
 
 <itemizedlist mark="bullet" spacing="compact">
-<listitem><para>Navne på filer og kataloger er skrevet som
+<listitem><para>Navne pÃ¥ filer og kataloger er skrevet som
 <filename>foo.bar</filename></para>
 </listitem>
 
-<listitem><para>Kommandoer, du udfører ved at taste, skrives som
+<listitem><para>Kommandoer, du udfÃ¸rer ved at taste, skrives som
 <command>kommando</command></para>
 </listitem>
 
-<listitem><para>Hvis du skal trykke på en enkelt tast, skrives det
-som "tryk <keycap>F1</keycap> for hjælp".</para></listitem>
+<listitem><para>Hvis du skal trykke pÃ¥ en enkelt tast, skrives det
+som "tryk <keycap>F1</keycap> for hjÃ¦lp".</para></listitem>
 
-<listitem><para>En henvisning til en manual side, skrives således: se
+<listitem><para>En henvisning til en manual side, skrives sÃ¥ledes: se
 <citerefentry><refentrytitle>printf</refentrytitle>
 <manvolnum>3S</manvolnum></citerefentry> manualsiden. Det betyder at
-du skal køre kommandoen <command>man 3S printf</command> i en
+du skal kÃ¸re kommandoen <command>man 3S printf</command> i en
 konsol/xterminal.</para></listitem>
 
 <listitem><para>Der er flere steder i bogen, hvor vi viser, hvad

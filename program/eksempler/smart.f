@@ -4,36 +4,36 @@ C     $Id$
 C
 C     Har du nogensinde undret dig over, hvilken acceleration
 C     de vitale motordele i din bil/motorcykel/knallert/etc 
-C     udsættes for ved forskellige omdrejnings tal? 
+C     udsÃ¦ttes for ved forskellige omdrejnings tal? 
 C
-C     En undersøgelse af plejlstangs mekanismen vil være en 
+C     En undersÃ¸gelse af plejlstangs mekanismen vil vÃ¦re en 
 C     opgave, der tidligere typisk ville blive skrevet i 
 C     fortran. Idag vil det blive gjort i det programmerings 
 C     sprog, som passer den enkelte bedst.
 C
-C     Plejlstangs mekanismen omsætter den roterende bevægelse,
-C     som krumtap akselen udsættes for til stemplets bevægelse 
-C     op/ned gennem cylinderen. Som følge af dette er stemplet
-C     udsat for accelleration selvom motoren kører med konstant
-C     omdrejningstal. Det vil føre for vidt her, at gennemgå 
-C     de teoretiske overvejelser, der er nødvendige for en 
-C     tilbunds gående undersøgelse.
+C     Plejlstangs mekanismen omsÃ¦tter den roterende bevÃ¦gelse,
+C     som krumtap akselen udsÃ¦ttes for til stemplets bevÃ¦gelse 
+C     op/ned gennem cylinderen. Som fÃ¸lge af dette er stemplet
+C     udsat for accelleration selvom motoren kÃ¸rer med konstant
+C     omdrejningstal. Det vil fÃ¸re for vidt her, at gennemgÃ¥ 
+C     de teoretiske overvejelser, der er nÃ¸dvendige for en 
+C     tilbunds gÃ¥ende undersÃ¸gelse.
 C
-C     Som input til programmet, så skal brugeren indtaste værdien
+C     Som input til programmet, sÃ¥ skal brugeren indtaste vÃ¦rdien
 C     af de vigtigste variable:
 C
 C     N --> Omdrejningstal (omdr/min)
 C     R --> Krumtappens radius (m)
-C     L --> Længde af plejlstangen (m)
+C     L --> LÃ¦ngde af plejlstangen (m)
 C
-C     Som output skrives en datafil med følgende værdier:
+C     Som output skrives en datafil med fÃ¸lgende vÃ¦rdier:
 C
-C     Kolonne 1 --> Vinkel reference (løber fra 0 til 359 grader)
+C     Kolonne 1 --> Vinkel reference (lÃ¸ber fra 0 til 359 grader)
 C     Kolonne 2 --> Stemplets position (m)
 C     Kolonne 3 --> Stemplets hastighed (m/s)
-C     Kolonne 4 --> Stemplets accelleration (m/s²)
+C     Kolonne 4 --> Stemplets accelleration (m/sÂ²)
 C
-C     Data kan så vises f.eks. ved brug af gnuplot eller octave
+C     Data kan sÃ¥ vises f.eks. ved brug af gnuplot eller octave
 C
 C     Skrevet af Peter Gylling
 C     ---------------------------------------------------------------
@@ -44,35 +44,35 @@ C     ---------------------------------------------------------------
 C     -------------------------------------------------------------
 C     Det farlige ved fortran er, at der er en hel masse
 C     forud definerede variable. Dette betyder, at programmet
-C     fint kan oversættes selvom et par variable ikke er defineret.
-C     Under brug kan det derfor være vanskeligt at finde ud af,
-C     hvorfor der opstår underlige resultater.
+C     fint kan oversÃ¦ttes selvom et par variable ikke er defineret.
+C     Under brug kan det derfor vÃ¦re vanskeligt at finde ud af,
+C     hvorfor der opstÃ¥r underlige resultater.
 C
 C     Derfor benyttes her 'implicit none', der har som resultat,
-C     at ingen variable må tages fra den forud definerede liste.
+C     at ingen variable mÃ¥ tages fra den forud definerede liste.
 C     --------------------------------------------------------------
 
 
 C     Definition af variable
 C     ----------------------
 
-      integer in_unit        ! Standard læsning fra tastatur
-      integer out_unit       ! Standard skrivning til skærm
+      integer in_unit        ! Standard lÃ¦sning fra tastatur
+      integer out_unit       ! Standard skrivning til skÃ¦rm
       integer fil_out_unit   ! Standard skrivning til fil
 
-      integer i              ! Tæller 
+      integer i              ! TÃ¦ller 
       integer n_rpm          ! Omdrejnings tal (rpm)
       
       real*4 pi              ! Pi er her sat til 3.1416
       real*4 alpha           ! Vinkel reference (radianer)
       real*4 r_krum          ! Radius af krumtappen (m)
-      real*4 l_plejl         ! Længde af plejlstangen (m)
+      real*4 l_plejl         ! LÃ¦ngde af plejlstangen (m)
       real*4 w               ! Rotationshastighed (radianer/sekund)
       real*4 kvad            ! Kvadrarods udtryk 
-      real*4 data(4,360)     ! 4 kollonner af længde 360
+      real*4 data(4,360)     ! 4 kollonner af lÃ¦ngde 360
       
 
-C     Start på program
+C     Start pÃ¥ program
 C     ----------------
 
       in_unit = 5
@@ -80,7 +80,7 @@ C     ----------------
       fil_out_unit = 16
       pi = 3.1416
 
-C     Indlæsning af data fra bruger
+C     IndlÃ¦sning af data fra bruger
 C     -----------------------------
       write(out_unit,100) '>> Indtast omdrejningstal (omdr/min)' 
  100  format(3x,a)
@@ -92,17 +92,17 @@ C     -----------------------------
       write(out_unit,105) '>> '
       read(in_unit,115) r_krum
  115  format(f8.6)
-      write(out_unit,100) '>> Indtast plejlstangs længde (m)'
+      write(out_unit,100) '>> Indtast plejlstangs lÃ¦ngde (m)'
       write(out_unit,105) '>> '
       read(in_unit,115) l_plejl
 
 C     Beregning af position,hastighed,accelleration.
-C     Dette kunne ligeså godt skrives direkte ud i en fil,
+C     Dette kunne ligesÃ¥ godt skrives direkte ud i en fil,
 C     men det bliver her vist ved, at oprette en matrice 
 C     indeholdende de relevante data.
 C
-C     Som det vil kunne ses i datafilen, så er postitionen
-C     af stemplet regnet som positiv i top død punktet (TDP),
+C     Som det vil kunne ses i datafilen, sÃ¥ er postitionen
+C     af stemplet regnet som positiv i top dÃ¸d punktet (TDP),
 C     hvorfor det afstedkommer en negativ accellerations kurve
 C     samme sted.
 C     ----------------------------------------------------
@@ -126,9 +126,9 @@ C     ----------------------------------------------------
 
 C     Udskrivning af resultater til fil.
 C     Der udskrives med kommentalinier i toppen af 
-C     datafilen, så der er overblik over den.
-C     Da programmer som gnuplot og octave læser
-C     '%' tegn som starten på en kommentar linie vælges
+C     datafilen, sÃ¥ der er overblik over den.
+C     Da programmer som gnuplot og octave lÃ¦ser
+C     '%' tegn som starten pÃ¥ en kommentar linie vÃ¦lges
 C     dette tegn til at indikere kommentarer.
 C     -------------------------------------------------
 

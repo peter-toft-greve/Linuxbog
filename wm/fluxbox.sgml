@@ -15,11 +15,11 @@
  </indexterm>
 
  <para>
-  Fluxbox er efterhånden blevet en populær windowmanager.  Den ligner
+  Fluxbox er efterhÃ¥nden blevet en populÃ¦r windowmanager.  Den ligner
   som udgangspunkt <ulink
   url="http://blackboxwm.sourceforge.net/">Blackbox</ulink>, og det er
-  da også herfra en del af koden kommer. Og selve opsætningen af
-  Fluxbox har en del til fælles med Blackbox.
+  da ogsÃ¥ herfra en del af koden kommer. Og selve opsÃ¦tningen af
+  Fluxbox har en del til fÃ¦lles med Blackbox.
  </para>
 
  <sect2 id="wm-fluxbox-installation">
@@ -31,14 +31,14 @@
   </indexterm>
 
   <para>
-   Kildeteksten kan hentes på <ulink
+   Kildeteksten kan hentes pÃ¥ <ulink
    url="http://fluxbox.sourceforge.net/download.php">http://fluxbox.sourceforge.net/download.php</ulink>
   </para>
 
   <para>
-   Der er binære pakker til Debian og Slackware. Til Red Hat og
+   Der er binÃ¦re pakker til Debian og Slackware. Til Red Hat og
    Mandrake er der kildetekst-RPM-pakker.  Jeg hentede
-   kildetekst-RPM-pakken til Red Hat og fulgte beskrivelsen på <ulink
+   kildetekst-RPM-pakken til Red Hat og fulgte beskrivelsen pÃ¥ <ulink
    url="http://www.xs4all.nl/~hanb/software/fluxbox/genericrpm.html">http://www.xs4all.nl/~hanb/software/fluxbox/genericrpm.html</ulink>.
   </para>
 
@@ -62,21 +62,21 @@ exec /usr/X11R6/bin/fluxbox
   <title>Brug af Fluxbox</title>
 
   <para>
-   Fluxbox er nem at gå til. Den første gang den startes laver den
+   Fluxbox er nem at gÃ¥ til. Den fÃ¸rste gang den startes laver den
    selv kataloget <filename>$HOME/.fluxbox</filename>.
   </para>
 
   <sect3 id="wm-fluxbox-opsaetning">
-   <title>Personlige opsætningsfiler</title>
+   <title>Personlige opsÃ¦tningsfiler</title>
 
    <indexterm>
-    <primary>opsætning af</primary>
+    <primary>opsÃ¦tning af</primary>
     <secondary>Fluxbox</secondary>
    </indexterm>
 
    <para>
     <filename>$HOME/.fluxbox</filename> bruges til brugerens egen
-    opsætning af Fluxbox.  Filstrukturen under dette katalog
+    opsÃ¦tning af Fluxbox.  Filstrukturen under dette katalog
     svarer til strukturen under
     <filename>/usr/share/fluxbox</filename>, og man kan frit kopiere
     filer herfra til sit eget katalog.
@@ -96,24 +96,24 @@ exec /usr/X11R6/bin/fluxbox
     </figure>
 
     <para>
-     Det første man får lyst til at rette på er menuen.  På <xref
+     Det fÃ¸rste man fÃ¥r lyst til at rette pÃ¥ er menuen.  PÃ¥ <xref
      linkend="fluxbox-menu-fig"/> ses en tilrettet menu.  Menuen
-     fremkommer ved at trykke på højre museknap på baggrunden.  Det er
-     lettest at kopiere systemets menu-opsætning og så arbejde ud
+     fremkommer ved at trykke pÃ¥ hÃ¸jre museknap pÃ¥ baggrunden.  Det er
+     lettest at kopiere systemets menu-opsÃ¦tning og sÃ¥ arbejde ud
      fra den: <command>cp /usr/share/fluxbox/menu
      $HOME/.fluxbox/</command>
     </para>
 
     <para>
-     Formatet i menuens opsætningsfil er meget simpelt: Linjen
+     Formatet i menuens opsÃ¦tningsfil er meget simpelt: Linjen
      <filename>[exec] (Netscape)
-     {/usr/local/bin/runnetscape.sh}</filename> vil indsætte et
-     menupunkt der hedder Netscape og vil når man trykker på det kalde
+     {/usr/local/bin/runnetscape.sh}</filename> vil indsÃ¦tte et
+     menupunkt der hedder Netscape og vil nÃ¥r man trykker pÃ¥ det kalde
      kommandoen <command>/usr/local/bin/runnetscape.sh</command>
     </para>
 
     <para>
-     Der er andre muligheder også. Her er en beskrivelse taget fra
+     Der er andre muligheder ogsÃ¥. Her er en beskrivelse taget fra
      menuen i Blackbox der har samme format:
 
 <programlisting>
@@ -177,14 +177,14 @@ exec /usr/X11R6/bin/fluxbox
     </indexterm>
 
     <para>
-     Nyt udseende, eller tema om man vil, kan vælges fra menuen -&gt;
-     Fluxbox-menu -&gt; Styles. Det valgte udseende træder i kraft med
-     det samme, så man kan hurtigt prøve sig frem.
+     Nyt udseende, eller tema om man vil, kan vÃ¦lges fra menuen -&gt;
+     Fluxbox-menu -&gt; Styles. Det valgte udseende trÃ¦der i kraft med
+     det samme, sÃ¥ man kan hurtigt prÃ¸ve sig frem.
     </para>
 
     <para>
-     Jeg er dog ikke specielt begejstret for de baggrunde med små tern
-     eller farver som Fluxbox er fyldt med, så jeg kopierede
+     Jeg er dog ikke specielt begejstret for de baggrunde med smÃ¥ tern
+     eller farver som Fluxbox er fyldt med, sÃ¥ jeg kopierede
      <filename>/usr/share/fluxbox/styles/Nyz</filename> til
      <filename>$HOME/.fluxbox/styles/Vilmann</filename> og rettede
      linjen:
@@ -207,13 +207,13 @@ rootCommand:                    bsetbg grfx/motorhead.png
 
     <para>
      Stien til baggrundsbilledet er relativ til mit hjemmekatalog.
-     Hvis <command>startx</command> benyttes, vil det nok være
-     fornuftigt at indsætte fuld sti til baggrundsbilledet.
+     Hvis <command>startx</command> benyttes, vil det nok vÃ¦re
+     fornuftigt at indsÃ¦tte fuld sti til baggrundsbilledet.
     </para>
 
     <para>
-     Har man lyst til at lege mere med udseendet er der udmærket
-     dokumentation om det på <ulink
+     Har man lyst til at lege mere med udseendet er der udmÃ¦rket
+     dokumentation om det pÃ¥ <ulink
      url="http://fluxbox.sourceforge.net/">http://fluxbox.sourceforge.net/</ulink>.
     </para>
 
@@ -223,9 +223,9 @@ rootCommand:                    bsetbg grfx/motorhead.png
     </figure>
 
     <para>
-     Læg mærke til at Fluxbox kommer med egne programmer til at sætte
+     LÃ¦g mÃ¦rke til at Fluxbox kommer med egne programmer til at sÃ¦tte
      farve (<command>bsetroot</command>) eller billeder
-     (<command>bsetbg</command>) på baggrunden.
+     (<command>bsetbg</command>) pÃ¥ baggrunden.
     </para>
    </sect4>    <!--   Udseende -->
 
@@ -239,13 +239,13 @@ rootCommand:                    bsetbg grfx/motorhead.png
 
     <para>
      Fluxbox kan ligesom de fleste andre windowmanagere arbejde med
-     forskellig fokusopførsel: Menu -&gt; Fluxbox-menu -&gt; Configure
+     forskellig fokusopfÃ¸rsel: Menu -&gt; Fluxbox-menu -&gt; Configure
      -&gt; Focus Model.
     </para>
    </sect4> <!-- Fokus -->
 
    <sect4 id="wm-fluxbox-toolbar">
-    <title>Værktøjsbjælken</title>
+    <title>VÃ¦rktÃ¸jsbjÃ¦lken</title>
 
     <figure id="fluxbox-toolbar-fig" float="1">
      <title>Fluxbox' toolbar</title>
@@ -253,22 +253,22 @@ rootCommand:                    bsetbg grfx/motorhead.png
     </figure>
 
     <para>
-     Fluxbox kommer med en lille værktøjsbjælke der hovedsageligt
-     tjener til at skifte skrivebord og holde styr på minimerede
-     vinduer. Og så har den et praktisk lille ur.
+     Fluxbox kommer med en lille vÃ¦rktÃ¸jsbjÃ¦lke der hovedsageligt
+     tjener til at skifte skrivebord og holde styr pÃ¥ minimerede
+     vinduer. Og sÃ¥ har den et praktisk lille ur.
     </para>
 
     <para>
-     Ved at klikke med højre museknap på den, kan man indstille nogle
-     få men egentlig ganske velvalgte punkter. Blandt andet kan de
-     forskellige skriveborde kan navngives efter ønske og den kan
+     Ved at klikke med hÃ¸jre museknap pÃ¥ den, kan man indstille nogle
+     fÃ¥ men egentlig ganske velvalgte punkter. Blandt andet kan de
+     forskellige skriveborde kan navngives efter Ã¸nske og den kan
      placeres enten foroven eller forneden.
     </para>
 
     <para>
-     Iøvrigt er det muligt helt at lade minimerede vinduer forsvinde,
-     således at de kun kan findes frem ved klikke med midterste
-     museknap på baggrunden og derefter vælge Icons.
+     IÃ¸vrigt er det muligt helt at lade minimerede vinduer forsvinde,
+     sÃ¥ledes at de kun kan findes frem ved klikke med midterste
+     museknap pÃ¥ baggrunden og derefter vÃ¦lge Icons.
     </para>
    </sect4>   <!-- Toolbar -->
 
@@ -286,29 +286,29 @@ rootCommand:                    bsetbg grfx/motorhead.png
     </figure>
 
     <para>
-     Med Fluxbox er det muligt at gruppere vinduer ved hjælp af
-     faneblade. De grupperede vinduer deler størrelse og kan flyttes
+     Med Fluxbox er det muligt at gruppere vinduer ved hjÃ¦lp af
+     faneblade. De grupperede vinduer deler stÃ¸rrelse og kan flyttes
      sammen.
     </para>
 
     <para>
-     Faneblade kan fra- eller tilvælges fra Menu -&gt; Fluxbox-menu
+     Faneblade kan fra- eller tilvÃ¦lges fra Menu -&gt; Fluxbox-menu
      -&gt; Configure -&gt; Use Tabs.
     </para>
 
     <para>
-     Faneblade bruges som følger:
+     Faneblade bruges som fÃ¸lger:
 
      <itemizedlist mark="bullet">
       <listitem>
        <para>
-        Vælg et vindue der skal grupperes med et andet vindue
+        VÃ¦lg et vindue der skal grupperes med et andet vindue
        </para>
       </listitem>
 
       <listitem> 
        <para>
-        Med midterste museknap trækkes fanen fra første vindue over i
+        Med midterste museknap trÃ¦kkes fanen fra fÃ¸rste vindue over i
         fanen fra andet vindue.
        </para>
       </listitem>
@@ -321,8 +321,8 @@ rootCommand:                    bsetbg grfx/motorhead.png
 
       <listitem> 
        <para>
-        Hvis et vindue skal væk fra en gruppe, trækkes vinduets fane
-        (igen med midterste museknap) væk fra gruppen og slippes når
+        Hvis et vindue skal vÃ¦k fra en gruppe, trÃ¦kkes vinduets fane
+        (igen med midterste museknap) vÃ¦k fra gruppen og slippes nÃ¥r
         den er alene.
        </para>
       </listitem>
@@ -341,27 +341,27 @@ rootCommand:                    bsetbg grfx/motorhead.png
     <para>
      The Slit er et program der kan "sluge" applikationer. Ligesom
      windowmangerne AfterStep eller WindowMaker. Eller GNOME-panelet.
-     The Slit bruges til at have små overvågningsprogrammer og
-     lignende samlet på en fornuftig og pæn måde.
+     The Slit bruges til at have smÃ¥ overvÃ¥gningsprogrammer og
+     lignende samlet pÃ¥ en fornuftig og pÃ¦n mÃ¥de.
     </para>
 
     <para>
-     På <xref linkend="fluxbox-slit-fig"/> ses et eksempel på en
+     PÃ¥ <xref linkend="fluxbox-slit-fig"/> ses et eksempel pÃ¥ en
      "Slit".
     </para>
 
     <para>
-     Den består af <ulink
+     Den bestÃ¥r af <ulink
      url="http://web.wt.net/~billw/gkrellm/gkrellm.html">GKrellM</ulink>,
-     der har CPU-belastning, diskaktivitet, netværksaktivitet,
+     der har CPU-belastning, diskaktivitet, netvÃ¦rksaktivitet,
      volumen-kontrol og en hel del andre moduler indbygget, samt to
-     enkeltstående applikationer: Batteriovervågning og en overvåger
-     til det trådløse netkort.
+     enkeltstÃ¥ende applikationer: BatteriovervÃ¥gning og en overvÃ¥ger
+     til det trÃ¥dlÃ¸se netkort.
     </para>
 
     <para>
-     Applikationer der kan "sluges" af The Slit kan i vid udstrækning
-     findes på <ulink
+     Applikationer der kan "sluges" af The Slit kan i vid udstrÃ¦kning
+     findes pÃ¥ <ulink
      url="http://www.dockapps.org/">http://www.dockapps.org/</ulink>
     </para>
 
@@ -388,16 +388,16 @@ rootCommand:                    bsetbg grfx/motorhead.png
    </sect4>    <!--   The Slit -->
 
    <sect4 id="wm-fluxbox-fluxconf-fluxkeys">
-    <title>Semigrafisk opsætning: Fluxconf og Fluxkeys</title>
+    <title>Semigrafisk opsÃ¦tning: Fluxconf og Fluxkeys</title>
 
     <indexterm>
-     <primary>opsætning af</primary>
+     <primary>opsÃ¦tning af</primary>
      <secondary>Fluxbox</secondary>
     </indexterm>
 
     <para>
-     Med Fluxconf er de essentielle værdier vedrørende Toolbar og The
-     Slit samt andre ting der har med udseendet at gøre samlet i en
+     Med Fluxconf er de essentielle vÃ¦rdier vedrÃ¸rende Toolbar og The
+     Slit samt andre ting der har med udseendet at gÃ¸re samlet i en
      let og overskuelig form.
     </para>
 
@@ -412,10 +412,10 @@ rootCommand:                    bsetbg grfx/motorhead.png
       <secondary>Fluxbox</secondary>
      </indexterm>
 
-     Fluxbox understøtter selvfølgelig også tastaturgenveje.  Fluxkeys
+     Fluxbox understÃ¸tter selvfÃ¸lgelig ogsÃ¥ tastaturgenveje.  Fluxkeys
      kan generere <literal>keys</literal>-filen,
      <filename>$HOME/keys</filename>, hvis
-     man ikke har mod på at skrive den selv:
+     man ikke har mod pÃ¥ at skrive den selv:
 
      <figure id="fluxbox-fluxkeys075-fig" float="1">
       <title>fluxkeys</title>
@@ -424,8 +424,8 @@ rootCommand:                    bsetbg grfx/motorhead.png
     </para>
 
     <para>
-     Fluxconf og Fluxkeys skal hentes og oversættes selvstændigt. De
-     følger ikke med Fluxbox. Fluxconf kan findes på <ulink
+     Fluxconf og Fluxkeys skal hentes og oversÃ¦ttes selvstÃ¦ndigt. De
+     fÃ¸lger ikke med Fluxbox. Fluxconf kan findes pÃ¥ <ulink
      url="http://devaux.fabien.free.fr/flux/">http://devaux.fabien.free.fr/flux/</ulink>.
      Fluxkeys er en del af Fluxconf.
     </para>
@@ -437,14 +437,14 @@ rootCommand:                    bsetbg grfx/motorhead.png
   <title>Er Fluxbox god?</title>
 
   <para>
-   Ja. Det synes jeg. Rigtig god. Den har et stykke tid været min
+   Ja. Det synes jeg. Rigtig god. Den har et stykke tid vÃ¦ret min
    foretrukne windowmanager.
   </para>
 
   <para>
    Fluxbox bruger ikke mange systemresourcer, den er allerede fra
-   begyndelsen rigtig flot, og så er den meget nem at lave ændringer
-   i, da syntaksen i opsætningsfilerne er meget simpel.
+   begyndelsen rigtig flot, og sÃ¥ er den meget nem at lave Ã¦ndringer
+   i, da syntaksen i opsÃ¦tningsfilerne er meget simpel.
   </para>
  </sect2>
 </sect1>

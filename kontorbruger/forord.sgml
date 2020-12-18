@@ -6,37 +6,37 @@
 
 <para>
 Kontor-funktionen er blevet det store "mantra" de sidste par
-år. Microsoft Office er blevet en de-facto standard, og mange
+Ã¥r. Microsoft Office er blevet en de-facto standard, og mange
 tror at det er den eneste kontor-pakke man kan anvende.  Open
-Source-løsninger er godt på vej og for langt de fleste brugeres behov
-fuldt tilstrækkelige. Et af de bedste bud er OpenOffice.org (det
+Source-lÃ¸sninger er godt pÃ¥ vej og for langt de fleste brugeres behov
+fuldt tilstrÃ¦kkelige. Et af de bedste bud er OpenOffice.org (det
 hedder programmet), som sin rod i StarOffice fra Sun. 
 </para>
 
 <para>
-Valget i denne bog er koncentreret om OpenOffice.org installeret på
-en Linux-maskine med KDE som den grafiske desktop. Bogen vil på en
+Valget i denne bog er koncentreret om OpenOffice.org installeret pÃ¥
+en Linux-maskine med KDE som den grafiske desktop. Bogen vil pÃ¥ en
 ret kortfattet vis beskrive de vigtigste kontor-funktioner i OpenOffice.org
-(tekstbehandling, regneark og præsentation) samt de dele af KDE, som man
-kan have glæde af i dagligdagen (e-post og web-adgang).
+(tekstbehandling, regneark og prÃ¦sentation) samt de dele af KDE, som man
+kan have glÃ¦de af i dagligdagen (e-post og web-adgang).
 </para>
 
 <para>
-I <xref linkend="kontorbruger-opsaetning"/> er beskrevet hvordan man sætter
-de enkelte programmer op, men bogen er tiltænkt brugere, som ikke
-behøver at sætte sig ind i dette.
+I <xref linkend="kontorbruger-opsaetning"/> er beskrevet hvordan man sÃ¦tter
+de enkelte programmer op, men bogen er tiltÃ¦nkt brugere, som ikke
+behÃ¸ver at sÃ¦tte sig ind i dette.
 </para>
 
 <para>
 Der er en del flere muligheder for at klare kontorfunktioner end det
-som præsenteres i denne bog. Friheden til at vælge findes - og denne
-bog er alene tiltænkt som "en mulig løsning". For dem som gerne vil se
-på alternativer henvises til de andre bøger i serien.
+som prÃ¦senteres i denne bog. Friheden til at vÃ¦lge findes - og denne
+bog er alene tiltÃ¦nkt som "en mulig lÃ¸sning". For dem som gerne vil se
+pÃ¥ alternativer henvises til de andre bÃ¸ger i serien.
 </para>
 
 <para>
-Desuden er der henvisninger til andre relavente værker og vejledninger 
-fortrinvis på dansk.
+Desuden er der henvisninger til andre relavente vÃ¦rker og vejledninger 
+fortrinvis pÃ¥ dansk.
 </para>
 
 <sect1 id="kontorbruger-linuxbog-serien">
@@ -57,8 +57,8 @@ fortrinvis på dansk.
 </figure>
 
 <para>
-<command>Peter Toft</command> er civilingeniør og har en ph.d.-grad
-fra DTU. Han har kørt Linux dagligt siden 1994. Aktiv Linuxforfatter og 
+<command>Peter Toft</command> er civilingeniÃ¸r og har en ph.d.-grad
+fra DTU. Han har kÃ¸rt Linux dagligt siden 1994. Aktiv Linuxforfatter og 
 foredragsholder om Linux i Danmark og Sverige. Bestyrelsesformand for
 SSLUG. Medorganisator ved fem danske Linux-konferencer (Linux98, Open
 Networks 99, LinuxForum 2000, LinuxForum 2001 og Guadec2). 
@@ -80,11 +80,11 @@ arbejder som Account Manger og Projektleder hos ScanJour A/S.
 Jesper har oversat Eric Raymonds "Katedralen og basaren"
 (<ulink
  url="http://www.laisen.dk/opensource/cathedral-bazaar.html">http://www.laisen.dk/opensource/cathedral-bazaar.html</ulink>) - "Nybyggeri i 
-Noossfæren" (<ulink
+NoossfÃ¦ren" (<ulink
  url="http://www.laisen.dk/opensource/homesteading.html">http://www.laisen.dk/opensource/homesteading.html</ulink>) - og "Hvordan 
 man bliver hacker" (<ulink
  url="http://www.fys.ku.dk/~omic/hacker-howto.html">http://www.fys.ku.dk/~omic/hacker-howto.html</ulink>).  Desuden er 
-han Linux-redaktør på <ulink url="http://www.aod.dk">Alt om DATA</ulink>.
+han Linux-redaktÃ¸r pÃ¥ <ulink url="http://www.aod.dk">Alt om DATA</ulink>.
 Hjemmeside: <ulink  url="http://www.laisen.dk">http://www.laisen.dk</ulink>.
 </para>
 
@@ -92,11 +92,11 @@ Hjemmeside: <ulink  url="http://www.laisen.dk">http://www.laisen.dk</ulink>.
 </sect1>
 
 <sect1 id="kontorbruger-tak">
-<title>Vi siger tak for hjælpen</title>
+<title>Vi siger tak for hjÃ¦lpen</title>
 <para>
-Som forfattere har vi haft stor glæde af mange SSLUG-medlemmers
-støtte, rettelser og forslag til forbedringer - bliv ved med
-det. Specielt vil vi nævne:
+Som forfattere har vi haft stor glÃ¦de af mange SSLUG-medlemmers
+stÃ¸tte, rettelser og forslag til forbedringer - bliv ved med
+det. Specielt vil vi nÃ¦vne:
 </para>
 
 <indexterm><primary>Forfatterne</primary><secondary>SSLUG-medlemmer</secondary></indexterm>
@@ -105,13 +105,13 @@ det. Specielt vil vi nævne:
 
 
 <listitem><para> 
-Jørgen Ramskov,
-Claus Sørensen,
+JÃ¸rgen Ramskov,
+Claus SÃ¸rensen,
 Henrik Skov Midtiby,
-Erik Søe Sørensen,
-Mark Gjøl,
+Erik SÃ¸e SÃ¸rensen,
+Mark GjÃ¸l,
 Poul Petersen
-og Erling Sjørlund.
+og Erling SjÃ¸rlund.
 </para></listitem>
 
 
@@ -119,13 +119,13 @@ og Erling Sjørlund.
 
 <para>
 Du kan i <xref linkend="kontorbruger-apprevhist"/> finde en liste over alle de
-revisioner, som bogen har været igennem. 
+revisioner, som bogen har vÃ¦ret igennem. 
 </para>
 
 <para>
-Hvis du har ord du ikke forstår, så kan <ulink
-url="http://www.whatis.com">http://www.whatis.com</ulink> være
-interessant. Her kan du slå mange computerord op, dog kun på engelsk.
+Hvis du har ord du ikke forstÃ¥r, sÃ¥ kan <ulink
+url="http://www.whatis.com">http://www.whatis.com</ulink> vÃ¦re
+interessant. Her kan du slÃ¥ mange computerord op, dog kun pÃ¥ engelsk.
 </para>
 
 </sect1>
@@ -136,16 +136,16 @@ interessant. Her kan du slå mange computerord op, dog kun på engelsk.
 <indexterm><primary>Typografi</primary></indexterm>
 
 <para>
-Vi vil afslutte indledningen med at nævne den anvendte typografi.
+Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
 </para>
 
 
 <itemizedlist mark="bullet" spacing="compact">
-<listitem><para>Navne på filer og kataloger er skrevet som
+<listitem><para>Navne pÃ¥ filer og kataloger er skrevet som
 <filename>foo.bar</filename></para>
 </listitem>
 
-<listitem><para>Kommandoer, du udfører ved at taste, skrives som
+<listitem><para>Kommandoer, du udfÃ¸rer ved at taste, skrives som
 <command>help</command></para>
 </listitem>
 

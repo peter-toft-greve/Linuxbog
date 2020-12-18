@@ -2,20 +2,20 @@
 <chapter id="sslugsig">
 <title>Introduktion til sslugsig</title>
 <indexterm><primary>sslugsig</primary></indexterm>
-<indexterm><primary>Certifikat forespørgsel</primary>
+<indexterm><primary>Certifikat forespÃ¸rgsel</primary>
            <secondary>med sslugsig</secondary></indexterm>
 
 <para>Programmet "sslugsig" er et program som et medlem af SSLUG,
-Erling Sjørlund, har skrevet og stillet til rådighed.</para>
+Erling SjÃ¸rlund, har skrevet og stillet til rÃ¥dighed.</para>
 
 <sect1 id="sslugsig-maal">
-<title>Målet med sslugsig</title>
+<title>MÃ¥let med sslugsig</title>
 
 
 <para>
 Ideen med sslugsig er at give en let adgang til at oprette
-en ansøgning til KMD-CA om en personlig digital signatur. Samtidig tjener
-det som en øvelse i at udvikle og distribuere et Kylix-program. 
+en ansÃ¸gning til KMD-CA om en personlig digital signatur. Samtidig tjener
+det som en Ã¸velse i at udvikle og distribuere et Kylix-program. 
 <xref linkend="sslugsig-screendump-fig"/> viser sslugsigs hovedvindue,
 med et par felter udfyldt.
 </para>
@@ -27,67 +27,67 @@ med et par felter udfyldt.
 
 
 <para>
-sslugsig kan enten anvendes af en enkelt bruger, lidt på samme måde
+sslugsig kan enten anvendes af en enkelt bruger, lidt pÃ¥ samme mÃ¥de
 som Windows programmet omtalt i <xref linkend="signatur-baggrund"/>,
 eller installeres til brug for flere brugere. Hvis du har valgt at
-installere programmet til brug for flere brugere, skal du køre
+installere programmet til brug for flere brugere, skal du kÃ¸re
 programmet som <emphasis>root</emphasis> efter installation.
 </para>
 
 <figure id="sslugsig-screendump3-fig" float="1">
-<title>sslugsig, indtastning af domænenavn</title>
+<title>sslugsig, indtastning af domÃ¦nenavn</title>
 <graphic fileref="sslugsig-screendump3.&magic;"  scale="80"></graphic>
 </figure>
 
 <para>
-Første gang du kører programmet som <emphasis>root</emphasis>, vil det
-bede om systemets domænenavn (som vist på <xref
+FÃ¸rste gang du kÃ¸rer programmet som <emphasis>root</emphasis>, vil det
+bede om systemets domÃ¦nenavn (som vist pÃ¥ <xref
 linkend="sslugsig-screendump3-fig"/>) og gemme dette i filen
 <filename>/usr/local/etc/sslugsig.conf</filename>. Denne fil er ganske
-enkel - domainnavnet skal stå i første linje. Findes filen, vil
-sslugsig sætte login@domain.dk som emailadresse for almindelige
-brugere, findes den ikke sættes kun login@. (Her er det teksten
-domain.dk, der skal stå i filen.)
+enkel - domainnavnet skal stÃ¥ i fÃ¸rste linje. Findes filen, vil
+sslugsig sÃ¦tte login@domain.dk som emailadresse for almindelige
+brugere, findes den ikke sÃ¦ttes kun login@. (Her er det teksten
+domain.dk, der skal stÃ¥ i filen.)
 </para>
 
 <para>
- Alle felter skal udfyldes før knappen "Opret anmodning" bliver aktiv.
-Samtidigt med at dette sker, dukker en række linjer op i bunden af
-skærmbilledet, som illustreret på <xref linkend="sslugsig-screendump2-fig"/>.
+ Alle felter skal udfyldes fÃ¸r knappen "Opret anmodning" bliver aktiv.
+Samtidigt med at dette sker, dukker en rÃ¦kke linjer op i bunden af
+skÃ¦rmbilledet, som illustreret pÃ¥ <xref linkend="sslugsig-screendump2-fig"/>.
 </para>
 
 <figure id="sslugsig-screendump2-fig" float="1">
-<title>sslugsig, generering af certifikat forespørgsel</title>
+<title>sslugsig, generering af certifikat forespÃ¸rgsel</title>
 <graphic fileref="sslugsig-screendump2.&magic;"  scale="80"></graphic>
 </figure>
 
 <para>
  Linjerne i bunden viser indholder af den request.config fil, der
 dannes, og sendes som grundlag til programmet openssl. (For de
-interesserede er denne fil og fremgangsmåden dokumenteret i <xref
+interesserede er denne fil og fremgangsmÃ¥den dokumenteret i <xref
 linkend="signatur-program"/>).
 </para>
 
 <para>
-Bemærk statuslinjen i midten af skærmen. I denne linje vises
-information om de fejl og mangler, der måtte være i
-indtastningen. Eftersom KMD-CA ikke pt. understøtter danske tegn, vil
-brug af den slags medføre, at programmet viser en fejlmelding. Der er
-gjort klar til at åbne for de danske tegn, når KMD-CA (og resten af
-verden) er klar til at understøtte det.. Baggrunden for KMD-CA's
-beslutning er angiveligt, at ikke alle browsere understøtter (dvs. kan
+BemÃ¦rk statuslinjen i midten af skÃ¦rmen. I denne linje vises
+information om de fejl og mangler, der mÃ¥tte vÃ¦re i
+indtastningen. Eftersom KMD-CA ikke pt. understÃ¸tter danske tegn, vil
+brug af den slags medfÃ¸re, at programmet viser en fejlmelding. Der er
+gjort klar til at Ã¥bne for de danske tegn, nÃ¥r KMD-CA (og resten af
+verden) er klar til at understÃ¸tte det.. Baggrunden for KMD-CA's
+beslutning er angiveligt, at ikke alle browsere understÃ¸tter (dvs. kan
 fremvise indholdet af) signaturer med danske tegn.
 </para>
 
 <para>
- Et klik på "Opret anmodning" vil generere to filer som bliver gemt i
+ Et klik pÃ¥ "Opret anmodning" vil generere to filer som bliver gemt i
  et katalog ved navn <filename>.sslugsig</filename> i den aktuelle
  brugers hjemmekatalog:
 </para>
 
 <para>
  <filename>$HOME/.sslugsig/keyfile.pem</filename> er brugerens nye
-private nøgle.
+private nÃ¸gle.
 </para>
 
 <para>
@@ -99,11 +99,11 @@ skal sendes til KMD-CA's server.
 <filename>$HOME/.sslugsig/request.config</filename> betragtes som en
 midlertidig fil. Den dannes under oprettelsen af en anmodning, men
 slettes igen straks efter, da det ikke er i nogens interesse, at man
-senere kan læse adgangskoden i klar tekst.
+senere kan lÃ¦se adgangskoden i klar tekst.
 </para>
 
 <para>
-Desværre kan man ikke direkte sende sin forespørgsel til KMD-CA, det
+DesvÃ¦rre kan man ikke direkte sende sin forespÃ¸rgsel til KMD-CA, det
 skal ske via deres hjemmeside. Du kan se mere om denne proces i <xref
 linkend="request-upload"/>.
 </para>
@@ -115,15 +115,15 @@ linkend="request-upload"/>.
 <sect1 id="sslugsig-dload">
 <title>Download</title>
 <para>
- De relevante filer er opdelt i forskellige pakker, så du kan hente hvad
+ De relevante filer er opdelt i forskellige pakker, sÃ¥ du kan hente hvad
 der nu er mest behov for.
 Du kan hente alle pakker fra SSLUG's FTP-server
 (<ulink url="ftp://ftp.sslug.dk/pub/signatur/">ftp://ftp.sslug.dk/pub/signatur/</ulink>) .
-De efterfølgende henvisninger peger alle på den seneste version af pakkerne.
+De efterfÃ¸lgende henvisninger peger alle pÃ¥ den seneste version af pakkerne.
 </para>
 
 <para>
-For at installere, skal du lægge pakken i det katalog, du ønsker at placere pakken
+For at installere, skal du lÃ¦gge pakken i det katalog, du Ã¸nsker at placere pakken
 under. Forslag: <filename>/usr/local</filename>.
 </para>
 
@@ -136,37 +136,37 @@ aktuelle katalog, for eksempel <filename>/usr/local/sslugsig</filename>.
 <para>
  Der er i pakkerne to forskellige start scripts, nemlig
  <filename>signatur</filename> og <filename>startsig</filename>. Det
- første kræver at programmerne <filename>readlink</filename> og
- <filename>basename</filename> er installeret på din maskine. Så
- tillader det til gengæld, at sslugsig er installeret hvor som helst i
+ fÃ¸rste krÃ¦ver at programmerne <filename>readlink</filename> og
+ <filename>basename</filename> er installeret pÃ¥ din maskine. SÃ¥
+ tillader det til gengÃ¦ld, at sslugsig er installeret hvor som helst i
  dit filhieraki. (Programmerne <filename>readlink</filename> og
- <filename>basename</filename> er installeret på langt de fleste Linux
+ <filename>basename</filename> er installeret pÃ¥ langt de fleste Linux
  maskiner.)
 </para>
 
 <para>
-<filename>startsig</filename> er mere primitivt. Her skal du ind og redigere stierne, hvis du vælger
+<filename>startsig</filename> er mere primitivt. Her skal du ind og redigere stierne, hvis du vÃ¦lger
 at installere i et andet katalog end <filename>/usr/local/sslugsig</filename>
 </para>
 
 <para>
-Er det runtime-pakken eller pakken med alt, mangler du blot at lægge et
+Er det runtime-pakken eller pakken med alt, mangler du blot at lÃ¦gge et
 symlink ind i /usr/bin, hvor alle dine brugere kan komme til at kalde det. Dette
-gøres med kommandoen: <command> ln -sf /usr/local/sslugsig/signatur
+gÃ¸res med kommandoen: <command> ln -sf /usr/local/sslugsig/signatur
 /user/bin/signatur</command> eller evt. med <command> ln -sf /usr/local/sslugsig/startsig
 /user/bin/signatur</command>.
 </para>
 
 <para>
-Enhver bruger på systemet kan nu blot give kommandoen
+Enhver bruger pÃ¥ systemet kan nu blot give kommandoen
 <command>signatur</command>, og fylde felterne ud.
 </para>
 
 <para>
-Den første gang programmet køres, bør det ske af bruger root, idet du dermed får
+Den fÃ¸rste gang programmet kÃ¸res, bÃ¸r det ske af bruger root, idet du dermed fÃ¥r
 lejlighed til at fylde systemets domainnavn ind i filen
 <filename>/usr/local/etc</filename>. Dette vil give de andre brugere en
-meningsfuld (måske) mailadresse som standard.
+meningsfuld (mÃ¥ske) mailadresse som standard.
 </para>
 
 <para>
@@ -175,12 +175,12 @@ meningsfuld (måske) mailadresse som standard.
 </para>
 
 <para>
- Bemærk, at .rpm pakken under test på min RedHat kræver --force til slut i kommandoen, 
- altså: <command>rpm -ivf sslugsig-0.1.1-1.i386.rpm --force</command>
+ BemÃ¦rk, at .rpm pakken under test pÃ¥ min RedHat krÃ¦ver --force til slut i kommandoen, 
+ altsÃ¥: <command>rpm -ivf sslugsig-0.1.1-1.i386.rpm --force</command>
 </para>
 
 <para>
- Det kan ikke afvises, at det er fejlede eksperimenter, der forårsager dette problem.
+ Det kan ikke afvises, at det er fejlede eksperimenter, der forÃ¥rsager dette problem.
 </para>
 
 <sect2 id="sslugsig-kilde">
@@ -208,15 +208,15 @@ startscriptet.
 </para>
 
 <para>
-Her får du programmet selv, det nødvendige startscript og 
-de nødvendige lib filer, vigtige filer der ikke normalt findes på en maskine
+Her fÃ¥r du programmet selv, det nÃ¸dvendige startscript og 
+de nÃ¸dvendige lib filer, vigtige filer der ikke normalt findes pÃ¥ en maskine
 uden Kylix2 installeret.
 </para>
 
 <para>
 med denne pakke installeret under
 <filename>/usr/local/sslugsig</filename> vil alle brugere kunne danne en
-ansøgning om digitalt signatur.
+ansÃ¸gning om digitalt signatur.
 </para>
 </sect2>
 
@@ -240,7 +240,7 @@ pdf format.
 </para>
 
 <para>
-Her er simpelthen alle de filer, der indgår fra kildetekst over
+Her er simpelthen alle de filer, der indgÃ¥r fra kildetekst over
 dokumentation og libs til det kompilerede program.
 </para>
 </sect2>
@@ -252,14 +252,14 @@ dokumentation og libs til det kompilerede program.
 <sect1 id="sslugsig-place">
 <title>Installation</title>
 <para>
-Der lægges op til, at filerne placeres under
+Der lÃ¦gges op til, at filerne placeres under
 <filename>/usr/local/sslugsig</filename> hvor der er en opdeling i 3
 underkataloger: <filename>libs/, src/ og doc/ </filename>
 </para>
 
 <para>
 Under <filename>libs/</filename> placeres nogle libfiler og symlinks til
-samme. Disse filer er det sædvanligvis nødvendigt at have i netop den
+samme. Disse filer er det sÃ¦dvanligvis nÃ¸dvendigt at have i netop den
 medsendte version.
 </para>
 
@@ -270,7 +270,7 @@ du blot slette igen, hvis du ikke er interesseret i den.
 
 <para>
 <filename>doc/</filename> indeholder en lille introduktion i
-html-format, som kan gøres tilgængelig på hjemmesiden.
+html-format, som kan gÃ¸res tilgÃ¦ngelig pÃ¥ hjemmesiden.
 </para>
 </sect1>
 
@@ -281,17 +281,17 @@ html-format, som kan gøres tilgængelig på hjemmesiden.
 <sect1 id="sslugsig-omkilde">
 <title>Lidt om kildeteksten</title>
 <para>
-Kildeteksten er kommenteret, så dette afsnit er blot for at uddybe
+Kildeteksten er kommenteret, sÃ¥ dette afsnit er blot for at uddybe
 ideerne bag et par af de beslutninger, der er truffet.
 </para>
 
 <sect2 id="sslugsig-indtast">
 <title>Kontrol af indtastningen</title>
 <para>
-Indtastningen kontrolleres når et felt forlades. Kontrollen sker rent
-teknisk ved at der opbygges en fejltekst. Har denne en længde større
-end nul er der en fejl, og knappen "Opbyg anmodning" gøres passiv.
-Kontrollen omfatter følgende delemner:
+Indtastningen kontrolleres nÃ¥r et felt forlades. Kontrollen sker rent
+teknisk ved at der opbygges en fejltekst. Har denne en lÃ¦ngde stÃ¸rre
+end nul er der en fejl, og knappen "Opbyg anmodning" gÃ¸res passiv.
+Kontrollen omfatter fÃ¸lgende delemner:
 </para>
 
 <sect3 id="sslugsig-knavne">
@@ -299,8 +299,8 @@ Kontrollen omfatter følgende delemner:
 <para>
 Eftersom KMD-CA pt. ikke tillader danske tegn i navne kontrolleres de to
 navnefelters bogstaver. I praksis opsamles de illegale tegn i
-fejlteksten. Der gøres således <emphasis>ikke</emphasis> noget forsøg
-på at oversætte - stavefejl er en brugerbeslutning.
+fejlteksten. Der gÃ¸res sÃ¥ledes <emphasis>ikke</emphasis> noget forsÃ¸g
+pÃ¥ at oversÃ¦tte - stavefejl er en brugerbeslutning.
 </para>
 
 <para>
@@ -310,24 +310,24 @@ tegnkontrollen.
 </para>
 
 <para>
-Eftersom der opstår fejl i openssl, hvis der ikke er både for og
-efternavn, kontrolleres det også, at de to navnefelter har en længde
-større end nul.
+Eftersom der opstÃ¥r fejl i openssl, hvis der ikke er bÃ¥de for og
+efternavn, kontrolleres det ogsÃ¥, at de to navnefelter har en lÃ¦ngde
+stÃ¸rre end nul.
 </para>
 </sect3>
 
 <sect3 id="sslugsig-kadgang">
 <title>Kontrol af adgangskoden</title>
 <para>
- Adgangskoden skal (i dette program) være mindst 5 tegn lang. Om dette
+ Adgangskoden skal (i dette program) vÃ¦re mindst 5 tegn lang. Om dette
 er fornuftigt eller ej skal jeg ikke kunne sige, men det er ikke et
-usædvanligt krav, så der skal nok være nogle, der har fundet ud af, at
+usÃ¦dvanligt krav, sÃ¥ der skal nok vÃ¦re nogle, der har fundet ud af, at
 dette minimum er passende.
 </para>
 
 <para>
 Eftersom man ikke kan komme til at se adgangskoden senere og
-indtastningen sker skjult, skal man være i stand til at gentage koden
+indtastningen sker skjult, skal man vÃ¦re i stand til at gentage koden
 korrekt.
 </para>
 </sect3>
@@ -335,7 +335,7 @@ korrekt.
 <sect3 id="sslugsig-kemail">
 <title>Kontrol af emailadresse</title>
 <para>
-Programmet forsøger at opbygge en fornuftig emailadresse i form af
+Programmet forsÃ¸ger at opbygge en fornuftig emailadresse i form af
 loginnavn + servernavn. Det lykkes kun, hvis brugerne rent faktisk har
 deres loginnavn som mailadresse, og domainnavnet er oplyst i filen
 <filename>/usr/local/etc/sslugsig.conf</filename>.
@@ -358,7 +358,7 @@ det kontrolleres, at der overhovedet eksisterer en mailadresse.
 </figure>
 
 <para>
-Som det fremgår af <xref linkend="sslugsig-screendump4-fig"/> herover,
+Som det fremgÃ¥r af <xref linkend="sslugsig-screendump4-fig"/> herover,
 gemmes der to filer under brugerens
 <filename>$HOME/.sslugsig</filename>-katalog. 
 </para>

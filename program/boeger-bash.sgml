@@ -1,15 +1,15 @@
 <?xml encoding="UTF-8" ?>
 
 <sect2 id="boeger-bash">
- <title>Bøger om Bash</title>
+ <title>BÃ¸ger om Bash</title>
 
  <indexterm>
   <primary>Bash</primary>
-  <secondary>bøger</secondary>
+  <secondary>bÃ¸ger</secondary>
  </indexterm>
 
  <indexterm>
-  <primary>bøger</primary>
+  <primary>bÃ¸ger</primary>
   <secondary>om Bash</secondary>
  </indexterm>
 
@@ -24,7 +24,7 @@
     </para>
     <para>
      Glimrende generel introduktion til de almindeligste Unix- og
-     Linux-kommandofortolkere og -kommandoer. Findes også i en senere
+     Linux-kommandofortolkere og -kommandoer. Findes ogsÃ¥ i en senere
      udgave med titlen "Linux in a Nutshell".
     </para>
    </listitem>
@@ -33,7 +33,7 @@
     <para>
      <emphasis>Advanced Bash Scripting Guide</emphasis>,
      udgivet under Open Publication License,
-     kan fås fra The Linux Documentation Project.
+     kan fÃ¥s fra The Linux Documentation Project.
     </para>
    </listitem>
 

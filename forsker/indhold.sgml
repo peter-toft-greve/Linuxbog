@@ -15,23 +15,23 @@
     </authorgroup>
 
 
-<!--  Skal det her egentlig have en abstract-tag eller måske en forords-tag
+<!--  Skal det her egentlig have en abstract-tag eller mÃ¥ske en forords-tag
       -->
-<!--  hvis det findes sådan en?
+<!--  hvis det findes sÃ¥dan en?
       -->
-      <!-- dax: Det må vi se på senere /-->
+      <!-- dax: Det mÃ¥ vi se pÃ¥ senere /-->
 
 <copyright>
   <year>2003-2005</year>
   <holder>Forfatteren har ophavsret til bogen, men udgiver den under
-    "Åben dokumentlicens (ÅDL) - version 1.0".
+    "Ã…ben dokumentlicens (Ã…DL) - version 1.0".
   </holder>
 </copyright>
 
 <abstract>
 <para>
 Denne bog henvender sig overvejende til studerende og forskere ved
-videregående uddannelser i Danmark, som har brug for en computer til
+videregÃ¥ende uddannelser i Danmark, som har brug for en computer til
 det mest almindelige: Email, webbrowsing og tekstbehandling og den
 slags.
 </para>

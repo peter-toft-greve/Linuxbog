@@ -5,18 +5,18 @@
 <sect1 id="ooo-import-eksport">
   <title>Import/eksport</title>
 
-<para>Writer er født til at håndtere dokumenter (filer) i sit eget format
-    (filerne får endelsen .SXW) og i HTML-format.</para>
+<para>Writer er fÃ¸dt til at hÃ¥ndtere dokumenter (filer) i sit eget format
+    (filerne fÃ¥r endelsen .SXW) og i HTML-format.</para>
 
-<para>Du kan desuden <emphasis>importere</emphasis> dokumenter lavet med en lang række
+<para>Du kan desuden <emphasis>importere</emphasis> dokumenter lavet med en lang rÃ¦kke
     andre tekstbehandlingsprogrammer, bl.a. StarWriter og Microsoft Word.
-    Disse indlæses på samme måde som dokumenter lavet med Writer; de bliver
+    Disse indlÃ¦ses pÃ¥ samme mÃ¥de som dokumenter lavet med Writer; de bliver
     derefter automatisk konverteret til Writer formatet. Endvidere kan du
-    indlæse f.eks. Microsoft PowerPoint og diverse kendte billedformater.</para>
+    indlÃ¦se f.eks. Microsoft PowerPoint og diverse kendte billedformater.</para>
 
 <para>Muligheden for <emphasis>eksport</emphasis> til andre tekstbehandlingsprogrammer er
-    mere begrænset. Vælg <emphasis>Filer/Gem som</emphasis>. I fil-dialogen skal du under
-    <emphasis>filtype</emphasis> finde det format, du ønsker:</para>
+    mere begrÃ¦nset. VÃ¦lg <emphasis>Filer/Gem som</emphasis>. I fil-dialogen skal du under
+    <emphasis>filtype</emphasis> finde det format, du Ã¸nsker:</para>
 
 <itemizedlist mark="bullet">
   <listitem>
@@ -29,24 +29,24 @@
   <listitem>
 
 <para>Rich Text Format er et format som de fleste
-        tekstbehandlingsprogrammer kan indlæse. Det anbefales hvis du vil
+        tekstbehandlingsprogrammer kan indlÃ¦se. Det anbefales hvis du vil
         eksportere til et andet program end Microsoft Word.</para>
 
 </listitem>
 
   <listitem>
 
-<para>HTML er formatet til World Wide Web dokumenter og vælges hvis du
+<para>HTML er formatet til World Wide Web dokumenter og vÃ¦lges hvis du
         har et dokument i Writer format som skal konverteres til
         HTML-format.</para>
 
 </listitem>
 </itemizedlist>
 
-<para>Det er ikke sikkert at dokumentet bevarer sit udseende fuldstændigt
-    når du importerer eller eksporterer. Det kan skyldes forskellige
-    muligheder i de forskellige formater, men også at ikke alle
-    dokumentformater er fuldstændigt dokumenterede, f.eks. Microsofts
+<para>Det er ikke sikkert at dokumentet bevarer sit udseende fuldstÃ¦ndigt
+    nÃ¥r du importerer eller eksporterer. Det kan skyldes forskellige
+    muligheder i de forskellige formater, men ogsÃ¥ at ikke alle
+    dokumentformater er fuldstÃ¦ndigt dokumenterede, f.eks. Microsofts
     formater.</para>
 
 </sect1>    <!--   3.4. Import/eksport -->

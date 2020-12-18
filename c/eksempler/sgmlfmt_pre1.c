@@ -1,8 +1,8 @@
 /* sgmlfmt_pre1.c Forstadium til mini program, som checker
  * balancen i
- * sgml tags. I den nuværende skikkelse kan programmet erstatte 
- * alle "mindre-end" tegn med sgml-koden for dette, altså \&lt; - 
- * så det kan såmænd bruges til at filtrere C-programmer, der 
+ * sgml tags. I den nuvÃ¦rende skikkelse kan programmet erstatte 
+ * alle "mindre-end" tegn med sgml-koden for dette, altsÃ¥ \&lt; - 
+ * sÃ¥ det kan sÃ¥mÃ¦nd bruges til at filtrere C-programmer, der 
  * skal includeres i en sgml-tekst. */
 
 
@@ -60,10 +60,10 @@ int fillbuf()
     return (int) rv;
 }
 
-/* ch() returnerer den næste character i input stream *men* læser
- * ikke, og ændrer ikke noget i den eksisterende buffer. Det
- * svarer til at spørge "Hvad er det næste input tegn, hvis vi nu
- * gad gå videre?!"
+/* ch() returnerer den nÃ¦ste character i input stream *men* lÃ¦ser
+ * ikke, og Ã¦ndrer ikke noget i den eksisterende buffer. Det
+ * svarer til at spÃ¸rge "Hvad er det nÃ¦ste input tegn, hvis vi nu
+ * gad gÃ¥ videre?!"
  */
 
 int ch()
@@ -78,21 +78,21 @@ int nch()
 
 
 
-/* Hvis vi altid vil kunne se mere end én character fremefter, må
- * vi udskifte gch() og fillbuf() funktionerne, således at de
- * checker, hvor meget er der i bufferen, og hvis der er for få
- * (mindre end ønsket) skal de efterfylde bufferen og justere
+/* Hvis vi altid vil kunne se mere end Ã©n character fremefter, mÃ¥
+ * vi udskifte gch() og fillbuf() funktionerne, sÃ¥ledes at de
+ * checker, hvor meget er der i bufferen, og hvis der er for fÃ¥
+ * (mindre end Ã¸nsket) skal de efterfylde bufferen og justere
  * pointere.
- * Det søde ved denne implementering er imidlertid, at vi altid
- * har én character lookahead (garanteret), men hvis vi ser på et
+ * Det sÃ¸de ved denne implementering er imidlertid, at vi altid
+ * har Ã©n character lookahead (garanteret), men hvis vi ser pÃ¥ et
  * ord, kan vi se hele resten af ordet, fordi et ord ikke kan
  * krydse en liniedeling.
  */
 
 /* gch() returnerer samme som ch() men flytter pointeren en plads
  * frem. Hvis vi ved fremadrykning rammer end of line (en
- * nul-byte) må vi fylde bufferen, så ch() næste gang har et tegn
- * at kigge på.
+ * nul-byte) mÃ¥ vi fylde bufferen, sÃ¥ ch() nÃ¦ste gang har et tegn
+ * at kigge pÃ¥.
  */
 
 int gch()

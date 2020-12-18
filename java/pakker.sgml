@@ -9,7 +9,7 @@ Indhold:
   <listitem>
 
 <para>
-Forstå pakkebegrebet og nøgleordet import
+ForstÃ¥ pakkebegrebet og nÃ¸gleordet import
 </para>
 
 </listitem>
@@ -32,25 +32,25 @@ Definere egne pakker
 </itemizedlist>
 
 <para>
-Kapitlet forudsættes ikke i resten af bogen, men er ofte en
-fordel, når man skal programmere i praksis.
+Kapitlet forudsÃ¦ttes ikke i resten af bogen, men er ofte en
+fordel, nÃ¥r man skal programmere i praksis.
 </para>
 
 <para>
-Forudsætter <xref linkend="java-klasser" />, Definition af klasser.
+ForudsÃ¦tter <xref linkend="java-klasser" />, Definition af klasser.
 </para>
 
 <para>
-Når man laver større programmer (over 30-40 klasser),
-kan det være nyttigt at opdele dem i grupper. En pakke er en
-samling af klasser, der på en eller anden måde er
-beslægtede i funktion.
+NÃ¥r man laver stÃ¸rre programmer (over 30-40 klasser),
+kan det vÃ¦re nyttigt at opdele dem i grupper. En pakke er en
+samling af klasser, der pÃ¥ en eller anden mÃ¥de er
+beslÃ¦gtede i funktion.
 </para>
 
 <blockquote><para>En pakke er en samling af klasser</para></blockquote>
 
 <para>
-Javas standardbibliotek på mere end 1000 klasser er delt op
+Javas standardbibliotek pÃ¥ mere end 1000 klasser er delt op
 i ca. 30 mindre pakker.
 </para>
 
@@ -63,14 +63,14 @@ Pakker svarer til (klasse)biblioteker i C eller C++ eller
   <title>At importere klassedefinitioner</title>
 
 <para>
-Vi har set, at når vi skal benytte klasser, der ligger ud
-over de helt grundlæggende, bliver vi nødt til at
-meddele oversætteren, hvor den kan forvente at finde
+Vi har set, at nÃ¥r vi skal benytte klasser, der ligger ud
+over de helt grundlÃ¦ggende, bliver vi nÃ¸dt til at
+meddele oversÃ¦tteren, hvor den kan forvente at finde
 definitionen af klassen. Dette kaldes at importere klassen.
 </para>
 
 <para>
-Egentlig kunne vi godt helt udelade import-sætninger og
+Egentlig kunne vi godt helt udelade import-sÃ¦tninger og
 skrive det fulde pakke- og klassenavn hver gang. Hvis vi f.eks. vil
 benytte Vector-klassen, kunne vi skrive:
 </para>
@@ -82,8 +82,8 @@ benytte Vector-klassen, kunne vi skrive:
 
 
 <para>
-Det er jo lidt besværligt, og derfor kan vi vælge
-øverst i kildetekstfilen at skrive:
+Det er jo lidt besvÃ¦rligt, og derfor kan vi vÃ¦lge
+Ã¸verst i kildetekstfilen at skrive:
 </para>
 
 <screen>
@@ -92,8 +92,8 @@ import java.util.Vector;
 
 
 <para>
-Dette får oversætteren til at lede i java.util-pakken,
-hvis den møder en klasse, den ikke umiddelbart genkender. Nu
+Dette fÃ¥r oversÃ¦tteren til at lede i java.util-pakken,
+hvis den mÃ¸der en klasse, den ikke umiddelbart genkender. Nu
 kan vi skrive, som vi plejer:
 </para>
 
@@ -104,9 +104,9 @@ kan vi skrive, som vi plejer:
 
 
 <para>
-Der kan forekomme et hvilket som helst antal import-sætninger
-i en javafil. Import-sætninger skal stå først
-i filen, før klassedefinitionen. Hvis man ønsker at
+Der kan forekomme et hvilket som helst antal import-sÃ¦tninger
+i en javafil. Import-sÃ¦tninger skal stÃ¥ fÃ¸rst
+i filen, fÃ¸r klassedefinitionen. Hvis man Ã¸nsker at
 importere flere klassedefinitioner fra samme pakke kan man skrive en
 * i stedet for klassenavnet:
 </para>
@@ -118,23 +118,23 @@ import java.util.*;
 
 <para>
 Dermed importerer man samtlige klasser fra denne pakke. Det vil
-sige, at oversætteren leder denne pakke igennem, når
-den møder en klasse, den ikke umiddelbart genkender. De
-klassedefinitioner, der ikke bruges, bliver altså bare
+sige, at oversÃ¦tteren leder denne pakke igennem, nÃ¥r
+den mÃ¸der en klasse, den ikke umiddelbart genkender. De
+klassedefinitioner, der ikke bruges, bliver altsÃ¥ bare
 ignoreret.
 </para>
 
-<blockquote><para>Import af en klasse gør blot
-definitionen af klassen kendt for oversætteren - det gør
-ikke det færdige program større eller langsommere</para></blockquote>
+<blockquote><para>Import af en klasse gÃ¸r blot
+definitionen af klassen kendt for oversÃ¦tteren - det gÃ¸r
+ikke det fÃ¦rdige program stÃ¸rre eller langsommere</para></blockquote>
 </sect1>    <!--   At importere klassedefinitioner -->
 
 <sect1 id="java-pakker-standard">
   <title>Standardpakkerne</title>
 
 <para>
-I Javas indbyggede hjælpesystem kan man se de forskellige
-indbyggede pakker, der indeholder en række nyttige
+I Javas indbyggede hjÃ¦lpesystem kan man se de forskellige
+indbyggede pakker, der indeholder en rÃ¦kke nyttige
 klasser. De vigtigste standardpakker er:
 </para>
 
@@ -150,7 +150,7 @@ java.lang  grundfunktioner i sproget
   <listitem>
 
 <para>
-java.util    nyttige værktøjer, såsom Date,
+java.util    nyttige vÃ¦rktÃ¸jer, sÃ¥som Date,
   Vector og meget andet
 </para>
 
@@ -168,7 +168,7 @@ java.awt    Abstract Window Toolkit. Basal vinduesbaseret
   <listitem>
 
 <para>
-java.applet  klasser til understøttelse af appletter
+java.applet  klasser til understÃ¸ttelse af appletter
 </para>
 
 </listitem>
@@ -176,7 +176,7 @@ java.applet  klasser til understøttelse af appletter
   <listitem>
 
 <para>
-java.io    IO-funktioner, filhåndtering og datastrømme
+java.io    IO-funktioner, filhÃ¥ndtering og datastrÃ¸mme
 </para>
 
 </listitem>
@@ -184,7 +184,7 @@ java.io    IO-funktioner, filhåndtering og datastrømme
   <listitem>
 
 <para>
-java.net    netværksfaciliteter
+java.net    netvÃ¦rksfaciliteter
 </para>
 
 </listitem>
@@ -201,7 +201,7 @@ java.rmi    Remote Method Invocation - til distribuerede
   <listitem>
 
 <para>
-java.sql    databaseadgang (også kaldet JDBC)
+java.sql    databaseadgang (ogsÃ¥ kaldet JDBC)
 </para>
 
 </listitem>
@@ -209,7 +209,7 @@ java.sql    databaseadgang (også kaldet JDBC)
   <listitem>
 
 <para>
-java.text    håndtering af tekst uafhængigt af
+java.text    hÃ¥ndtering af tekst uafhÃ¦ngigt af
   sprog
 </para>
 
@@ -226,10 +226,10 @@ javax.swing  avanceret vinduesbaseret programmering
 
 <para>
 Hvorfor hedder den sidste javax? javax betyder, at sproget er
-udvidet med nogle ting, som ikke på nuværende tidspunkt
-er en del af det egentlige standardbibliotek, og som måske er
-bestemt til aldrig at blive det. Et andet eksempel på javax er
-javax.comm, som er en kommunikationspakke, der håndterer seriel
+udvidet med nogle ting, som ikke pÃ¥ nuvÃ¦rende tidspunkt
+er en del af det egentlige standardbibliotek, og som mÃ¥ske er
+bestemt til aldrig at blive det. Et andet eksempel pÃ¥ javax er
+javax.comm, som er en kommunikationspakke, der hÃ¥ndterer seriel
 og parallel transmission af data.
 </para>
 
@@ -238,14 +238,14 @@ og parallel transmission af data.
 
 <para>
 De mest basale javaklasser, eksempelvis String, ligger i pakken
-java.lang. Denne særlige pakke indeholder en masse
-grundfunktioner og importeres altid af oversætteren. Det er
-altså ikke nødvendigt at importere den eksplicit med
+java.lang. Denne sÃ¦rlige pakke indeholder en masse
+grundfunktioner og importeres altid af oversÃ¦tteren. Det er
+altsÃ¥ ikke nÃ¸dvendigt at importere den eksplicit med
 import java.lang.*;
 </para>
 
 <para>
-Af andre klasser i java.lang kan nævnes System (til f.eks.
+Af andre klasser i java.lang kan nÃ¦vnes System (til f.eks.
 System.out.println()) og Math (til f.eks. Math.random() og
 Math.sqrt()).
 </para>
@@ -253,17 +253,17 @@ Math.sqrt()).
 </sect1>    <!--   Standardpakkerne -->
 
 <sect1 id="java-pakker-filsys">
-  <title>Placering på filsystemet</title>
+  <title>Placering pÃ¥ filsystemet</title>
 
 <para>
 Hvis vi husker, at en pakke er en navngiven samling af klasser, er
-det nærliggende at tænke på, hvordan filer er
-organiseret i underkataloger på et filsystem.
+det nÃ¦rliggende at tÃ¦nke pÃ¥, hvordan filer er
+organiseret i underkataloger pÃ¥ et filsystem.
 </para>
 
-<blockquote><para>En klasse svarer til en fil på
+<blockquote><para>En klasse svarer til en fil pÃ¥
 filsystemet</para></blockquote>
-<blockquote><para>En pakke svarer til et underkatalog på
+<blockquote><para>En pakke svarer til et underkatalog pÃ¥
 filsystemet</para></blockquote>
 
 <para>
@@ -274,12 +274,12 @@ Windows som: java\util\Vector.class).
 </para>
 
 <para>
-Ofte er klasserne og katalogerne pakket sammen i et såkaldt
+Ofte er klasserne og katalogerne pakket sammen i et sÃ¥kaldt
 Java-arkiv (.jar-fil). jar-filer minder meget om zip-filer.
 </para>
 
 <para>
-Oversætteren skal kende pakkens fysiske placering i
+OversÃ¦tteren skal kende pakkens fysiske placering i
 filsystemet:
 </para>
 
@@ -311,30 +311,30 @@ I en jar-fil, som der henvises til med CLASSPATH-variablen.
 </orderedlist>
 
 <para>
-CLASSPATH-variablen er en miljøvariabel, der minder om
+CLASSPATH-variablen er en miljÃ¸variabel, der minder om
 PATH-variablen (defineret i AUTOEXEC.BAT i DOS). Den angiver de
-steder, hvor oversætteren skal lede efter klassedefinitioner.
+steder, hvor oversÃ¦tteren skal lede efter klassedefinitioner.
 </para>
-</sect1>    <!--   Placering på filsystemet -->
+</sect1>    <!--   Placering pÃ¥ filsystemet -->
 
 <sect1 id="java-pakker-egne">
   <title>At definere egne pakker</title>
 
 <para>
 Man kan definere sine egne pakker. Dette er specielt brugbart i
-større systemer, hvor man har mange klasser med beslægtede
-funktioner, for eksempel kommunikation (internetkøb med VISA
+stÃ¸rre systemer, hvor man har mange klasser med beslÃ¦gtede
+funktioner, for eksempel kommunikation (internetkÃ¸b med VISA
 eller Dankort) eller sine egne matematik- eller
 datobearbejdningspakker.
 </para>
 
 <sect2 id="java-pakker-egne-eks">
-  <title>Eksempel på brugen af egne pakker</title>
+  <title>Eksempel pÃ¥ brugen af egne pakker</title>
 
 <para>
-I følgende eksempel findes to klasser, nemlig Klasse1 og
+I fÃ¸lgende eksempel findes to klasser, nemlig Klasse1 og
 Klasse2 i en pakke (der hedder minPakke). De bruges af den
-kørbare klasse BrugPakker:
+kÃ¸rbare klasse BrugPakker:
 </para>
 
 <screen>
@@ -385,7 +385,7 @@ public class Klasse2
   }
 }
 </screen>
-</sect2>    <!--   Eksempel på brugen af egne pakker -->
+</sect2>    <!--   Eksempel pÃ¥ brugen af egne pakker -->
 
 <sect2 id="java-pakker-egne-navne">
   <title>Navngive pakker</title>
@@ -402,10 +402,10 @@ com.sybase.jdbc.SybDriver eller netscape.javascript.JSObject.
   <title>Pakke klasser i JAR-filer (Java-arkiver)</title>
 
 <para>
-Laver man sine egne pakker, ønsker man ofte at kunne
-distribuere dem til andre. De skabes med et ZIP-værktøj
+Laver man sine egne pakker, Ã¸nsker man ofte at kunne
+distribuere dem til andre. De skabes med et ZIP-vÃ¦rktÃ¸j
 som WinZip eller GnoZip til Linux eller fra kommandolinjen med jar,
-der følger med, når man installerer Java. Kommandoen jar
+der fÃ¸lger med, nÃ¥r man installerer Java. Kommandoen jar
 minder meget om UNIX' tar-kommando. Man opretter et arkiv ved at
 skrive f.eks.:
 </para>
@@ -426,13 +426,13 @@ minPakke/Klasse1.class og minPakke/Klasse2.class.
   <title>Opgaver</title>
 
 <para>
-Søg i din computer efter filer, der ender på .jar, og
-åbn dem med et program, der kan læse ZIP-komprimerede
+SÃ¸g i din computer efter filer, der ender pÃ¥ .jar, og
+Ã¥bn dem med et program, der kan lÃ¦se ZIP-komprimerede
 filer (f.eks unzip eller WinZip). Hvordan ligger filerne organiseret?
 </para>
 
 <para>
-Prøv, om du kan finde filen, der indeholder Vector-klassen.
+PrÃ¸v, om du kan finde filen, der indeholder Vector-klassen.
 </para>
 </sect1>    <!--   Opgaver -->
 </chapter>    <!--   Pakker -->

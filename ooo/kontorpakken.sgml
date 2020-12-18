@@ -24,7 +24,7 @@
 <sect2>
   <title>OpenOffice.org er en fri kontorpakke for alle.</title>
 <br>
-    <emphasis>Pakken indholder følgende elementer:</emphasis> <br>
+    <emphasis>Pakken indholder fÃ¸lgende elementer:</emphasis> <br>
 
     <itemizedlist mark="bullet">
   <listitem>
@@ -47,7 +47,7 @@
 
   <listitem>
 
-<para>Impress (præsentationsprogram).</para>
+<para>Impress (prÃ¦sentationsprogram).</para>
 
 </listitem>
 
@@ -59,58 +59,58 @@
 
   <listitem>
 
-<para>Database-modul (er under udvikling, du bliver nødt til selv at
-      installere en selvstændig database som f.eks. MySQL, PostgreSQL,
+<para>Database-modul (er under udvikling, du bliver nÃ¸dt til selv at
+      installere en selvstÃ¦ndig database som f.eks. MySQL, PostgreSQL,
       Microsoft Access, Oracle eller lignende).</para>
 
 </listitem>
 </itemizedlist>
 
-<para>I denne håndbog er det i første omgang kun writer det gælder.</para>
+<para>I denne hÃ¥ndbog er det i fÃ¸rste omgang kun writer det gÃ¦lder.</para>
 
-<para>Når det gælder funktionalitet og brug, er OpenOffice.org
-    sammenlignelig med kendte, ikke frie kontorpakke så som Microsoft
+<para>NÃ¥r det gÃ¦lder funktionalitet og brug, er OpenOffice.org
+    sammenlignelig med kendte, ikke frie kontorpakke sÃ¥ som Microsoft
     Office.</para>
 
-<para>Du kan indlæse de fleste Microsoft Office-dokumenter (Microsoft Word,
+<para>Du kan indlÃ¦se de fleste Microsoft Office-dokumenter (Microsoft Word,
 Microsoft Excel,
-    Microsoft Powerpoint) uden større problemer, ændre dem og gemme dem i
-    OpenOffice.org's eget format eller hvis ønskeligt i det oprindelige
+    Microsoft Powerpoint) uden stÃ¸rre problemer, Ã¦ndre dem og gemme dem i
+    OpenOffice.org's eget format eller hvis Ã¸nskeligt i det oprindelige
     format.</para>
 
-<para>Den største begrænsning er, at OpenOffice.org ikke kan køre
+<para>Den stÃ¸rste begrÃ¦nsning er, at OpenOffice.org ikke kan kÃ¸re
     VBA-makroerne i disse dokumenter. Men de er dog bevaret (som
-    kommentarer), så de kan bruges igen, hvis de ændrede dokumenter skal
+    kommentarer), sÃ¥ de kan bruges igen, hvis de Ã¦ndrede dokumenter skal
     benyttes under Microsoft Office igen.</para>
 
-<para>Det er faktisk noget af en præstation, da der ikke er nogen officiel
-    beskrivelse af Microsoft Office-filformater (Microsoft offentliggører dem
-    ikke). Hvis du har et Microsoft Office-dokument, som ikke åbner korrekt i
-    OpenOffice.org, så giv venligst udviklerne besked ved at sende en
-    fejlrapport til OpenOffice.orgs fejlrapporteringssystem Issuezilla. På
-    den måde kan funktionen blive forbedret.</para>
+<para>Det er faktisk noget af en prÃ¦station, da der ikke er nogen officiel
+    beskrivelse af Microsoft Office-filformater (Microsoft offentliggÃ¸rer dem
+    ikke). Hvis du har et Microsoft Office-dokument, som ikke Ã¥bner korrekt i
+    OpenOffice.org, sÃ¥ giv venligst udviklerne besked ved at sende en
+    fejlrapport til OpenOffice.orgs fejlrapporteringssystem Issuezilla. PÃ¥
+    den mÃ¥de kan funktionen blive forbedret.</para>
 
-<para>Du må også tage med i overvejelserne, at OpenOffice.org ikke er
-    "færdigt" (hvilket intet kompliceret software nogensinde vil blive). Det
-    indeholder stadig en række fejl og uhensigtsmæssigheder. Men selve
-    applikationerne (når man ser bort fra oversættelsen til dansk) er i mange
-    tilfælde udmærket til de flestes brug.</para>
+<para>Du mÃ¥ ogsÃ¥ tage med i overvejelserne, at OpenOffice.org ikke er
+    "fÃ¦rdigt" (hvilket intet kompliceret software nogensinde vil blive). Det
+    indeholder stadig en rÃ¦kke fejl og uhensigtsmÃ¦ssigheder. Men selve
+    applikationerne (nÃ¥r man ser bort fra oversÃ¦ttelsen til dansk) er i mange
+    tilfÃ¦lde udmÃ¦rket til de flestes brug.</para>
 
 <para>StarOffice 6.0 og OpenOffice.org 1.0</para>
 
-<para>Det kan være værd at overveje StafOffice 6.0, hvis det ikke er et
+<para>Det kan vÃ¦re vÃ¦rd at overveje StafOffice 6.0, hvis det ikke er et
     problem, at det koster licensafgifter. StarOffice 6.0 er nemlig i det
-    store hele baseret på den samme kildekode som OpenOffice.org 1.0.</para>
+    store hele baseret pÃ¥ den samme kildekode som OpenOffice.org 1.0.</para>
 
 <para>Forskellen mellem StarOffice 6.0 og OpenOffice.org 1.0 er, at
-    StarOffice 6.0 har nogle flere dele med f.eks. synonymordbog, begrænset
+    StarOffice 6.0 har nogle flere dele med f.eks. synonymordbog, begrÃ¦nset
     WordPerfect-filter, stort antal skabeloner, clipart og skrifttyper samt
-    database og flere funktioner til at håndtere databaser.</para>
+    database og flere funktioner til at hÃ¥ndtere databaser.</para>
 
-<para>Se mere på <ulink url="http://dk.sun.com">Sun Microsystems</ulink> danske
+<para>Se mere pÃ¥ <ulink url="http://dk.sun.com">Sun Microsystems</ulink> danske
     hjemmeside om StarOffice.</para>
 
-<ulink url="mailto:thing@openoffice.org">Søren Thing Pedersen</ulink>
+<ulink url="mailto:thing@openoffice.org">SÃ¸ren Thing Pedersen</ulink>
 
 <para>, (thing@openoffice.org).<br>
 </sect2>    <!--   OpenOffice.org er en fri kontorpakke for alle. -->

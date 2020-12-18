@@ -5,10 +5,10 @@
  *
  * Dette er den rettede version af det
  * originale "hello world" program.
- * Det kan oversættes med gcc uden
+ * Det kan oversÃ¦ttes med gcc uden
  * at der kommer fejl eller advarsler.
  *
- * Oversætter: gcc -o hello2 hello2.c
+ * OversÃ¦tter: gcc -o hello2 hello2.c
  *
  * Afvikling: ./hello2
 */

@@ -26,14 +26,14 @@
 <ulink url="http://www.linuxfromscratch.org/">Linux
 From Scratch</ulink> (LFS) er ikke en egentlig Linux-distribution,
 men derimod en omfattende bog der beskriver hvordan man bygger et
-Linux-system fra bunden. En ældre version af bogen er version 5.0 fra
-starten af november 2003; den er på ikke mindre end 289 sider.
+Linux-system fra bunden. En Ã¦ldre version af bogen er version 5.0 fra
+starten af november 2003; den er pÃ¥ ikke mindre end 289 sider.
 Version 6.0 er kommet pr. 2004-12-08.
 </para>
 
 <para>
 At bygge et Linux-system fra bunden er et ret omfattende proces som det
-vil føre alt for vidt at gennemgå her. Her følger derfor en
+vil fÃ¸re alt for vidt at gennemgÃ¥ her. Her fÃ¸lger derfor en
 anmeldelse af bogen, snarere end en gennemgang af hvordan man
 bygger og bruger et LFS-system.
 
@@ -44,26 +44,26 @@ bygger og bruger et LFS-system.
   <title>LFS &ndash; Hvorfor?</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Linux From Scratch</secondary>
   </indexterm>
 
 <para>
 Hvorfor skulle man have lyst til at bygge et Linux-system fra bunden?
-Bogen nævner et par grunde, den væsentligste grund er at lære hvordan
+Bogen nÃ¦vner et par grunde, den vÃ¦sentligste grund er at lÃ¦re hvordan
 et Linux-system er opbygget.
 </para>
 
 <para>
-Bogen påstår også at man får mere kontrol over hvordan systemet er
-skruet sammen, men de eksempler de giver på ting man får mere kontrol
+Bogen pÃ¥stÃ¥r ogsÃ¥ at man fÃ¥r mere kontrol over hvordan systemet er
+skruet sammen, men de eksempler de giver pÃ¥ ting man fÃ¥r mere kontrol
 over end med andre distributioner (katalogstruktur og
 opstartsskripts), er ting jeg alligevel ikke kan forestille mig en god
-grund til at gøre anderledes end alle andre.
+grund til at gÃ¸re anderledes end alle andre.
 </para>
 
 <para>
-Derudover nævner de at man kan lave meget små LFS-systemer, men det
+Derudover nÃ¦vner de at man kan lave meget smÃ¥ LFS-systemer, men det
 findes der adskillige specialdistributioner til.
 </para>
 
@@ -74,40 +74,40 @@ findes der adskillige specialdistributioner til.
   </indexterm>
 
 <para>
-Endelig påstår de at det skulle være mere sikkert. Argumentet er. at
-det at man oversætter alting fra kildetekst giver en mulighed for at
-gennemse kildeteksten og tilføje sikkerhedsrettelser efter behag. Jeg
-tror ikke en meter på at der er nogen der ville kunne overkomme at
-kigge særlig store dele af den kildetekst de oversætter igennem. Med
-hensyn til sikkerhedsrettelser, så har de fleste større 
-distributioner et så effektivt system til håndtering af den slags, at
-man kun sjældent vil opleve at skulle vente på at andre får lavet en
-binær pakke der lukker hullet.
+Endelig pÃ¥stÃ¥r de at det skulle vÃ¦re mere sikkert. Argumentet er. at
+det at man oversÃ¦tter alting fra kildetekst giver en mulighed for at
+gennemse kildeteksten og tilfÃ¸je sikkerhedsrettelser efter behag. Jeg
+tror ikke en meter pÃ¥ at der er nogen der ville kunne overkomme at
+kigge sÃ¦rlig store dele af den kildetekst de oversÃ¦tter igennem. Med
+hensyn til sikkerhedsrettelser, sÃ¥ har de fleste stÃ¸rre 
+distributioner et sÃ¥ effektivt system til hÃ¥ndtering af den slags, at
+man kun sjÃ¦ldent vil opleve at skulle vente pÃ¥ at andre fÃ¥r lavet en
+binÃ¦r pakke der lukker hullet.
 </para>
 
   <para>
    Hvis man har ambitioner om at lave sin egen Linux-distribution er det
-   ikke nogen dum idé at starte med LFS. Man kan måske gøre livet
-   lidt lettere ved at basere sin distribution på en anden, men
-   det er lidt sjovere (og meget mere tidrøvende) at bygge en
-   "ægte LFS". Men under alle omstændigheder skal man have en
+   ikke nogen dum idÃ© at starte med LFS. Man kan mÃ¥ske gÃ¸re livet
+   lidt lettere ved at basere sin distribution pÃ¥ en anden, men
+   det er lidt sjovere (og meget mere tidrÃ¸vende) at bygge en
+   "Ã¦gte LFS". Men under alle omstÃ¦ndigheder skal man have en
    host distribution til at starte op; derfra bootstrappes den
    nye LFS. Som host kan man bruge alt, som inderholder en
-   fungerende C-compiler og nok værktøjer til at bygge en
+   fungerende C-compiler og nok vÃ¦rktÃ¸jer til at bygge en
    LFS-toolchain.
    </para>
 
    <para>
    Bogen omtaler ikke problemer med cross-compile og bootstrap af
-   ny CPU-type, men det er skægt at tænke videre i de baner.
+   ny CPU-type, men det er skÃ¦gt at tÃ¦nke videre i de baner.
 
    <!-- /*er det ikke noget irrelevant sludder ndf? [donald]*/
-   Man skal dog være
-   opmærksom på at Linux-distributioner baseret på binære pakker bare
-   kan kopiere de vigtigste værktøjer ind fra cd/net uden tanke på
-   rækkefølgen, som LFS-bogen ellers (ganske berettiget) gør et stort
-   nummer ud af. Derudover skal man være opmærksom på at bogen slet
-   ikke beskriver hvordan man laver et medie det første boot kan ske
+   Man skal dog vÃ¦re
+   opmÃ¦rksom pÃ¥ at Linux-distributioner baseret pÃ¥ binÃ¦re pakker bare
+   kan kopiere de vigtigste vÃ¦rktÃ¸jer ind fra cd/net uden tanke pÃ¥
+   rÃ¦kkefÃ¸lgen, som LFS-bogen ellers (ganske berettiget) gÃ¸r et stort
+   nummer ud af. Derudover skal man vÃ¦re opmÃ¦rksom pÃ¥ at bogen slet
+   ikke beskriver hvordan man laver et medie det fÃ¸rste boot kan ske
    fra. 
    /-->
   </para>
@@ -119,32 +119,32 @@ binær pakke der lukker hullet.
 
 <para>
 LFS tager udgangspunkt i at man i forvejen har et fungerende
-Linux-system på maskinen, og en ubrugt partition. De første mange
-skridt udføres fra det eksisterende Linux-system.
+Linux-system pÃ¥ maskinen, og en ubrugt partition. De fÃ¸rste mange
+skridt udfÃ¸res fra det eksisterende Linux-system.
 </para>
 
 <para>
-Det første man gør, er at lave en partition og oprette et
-filsystem på den. Bogen nævner at man i dag oftere bruger et
+Det fÃ¸rste man gÃ¸r, er at lave en partition og oprette et
+filsystem pÃ¥ den. Bogen nÃ¦vner at man i dag oftere bruger et
 journaliserende filsystem, men viser alligevel kun hvordan man laver et
 ext2-filsystem. 
 </para>
 
 <para>
-Herefter skal man hente kildeteksten til en lang række pakker, der
-skal udgøre den værktøjskasse (engelsk: toolchain) man senere, fra det
+Herefter skal man hente kildeteksten til en lang rÃ¦kke pakker, der
+skal udgÃ¸re den vÃ¦rktÃ¸jskasse (engelsk: toolchain) man senere, fra det
 basale LFS-system, skal bruge til at bygge selve systemet. Det
-gennemgås grundigt hvordan man bygger hvert enkelt værktøj så de
+gennemgÃ¥s grundigt hvordan man bygger hvert enkelt vÃ¦rktÃ¸j sÃ¥ de
 senere vil spille ordentligt sammen.
 </para>
 
 <para>
-Når værktøjskassen er bygget, bruger man chroot på det katalog man vil
-have sit LFS-system i, for at skjule for programmerne i værktøjskassen at
-de kører på et andet system. Herefter skal der oprettes en masse
+NÃ¥r vÃ¦rktÃ¸jskassen er bygget, bruger man chroot pÃ¥ det katalog man vil
+have sit LFS-system i, for at skjule for programmerne i vÃ¦rktÃ¸jskassen at
+de kÃ¸rer pÃ¥ et andet system. Herefter skal der oprettes en masse
 kataloger, en <filename>passwd</filename>-fil og en helt masse
-devices. Derefter går man igang med at installere programmer og
-slutteligt sætter man sine bootskripts op, og sørger for at systemet
+devices. Derefter gÃ¥r man igang med at installere programmer og
+slutteligt sÃ¦tter man sine bootskripts op, og sÃ¸rger for at systemet
 kan boote.
 </para>
 </sect1>
@@ -165,21 +165,21 @@ indhold".
 </para>
 
 sparre:
-Jeg synes ikke det er helt så slemt. Men det er måske fordi jeg egentlig gerne
+Jeg synes ikke det er helt sÃ¥ slemt. Men det er mÃ¥ske fordi jeg egentlig gerne
 vil vide hvordan jeg kan lave min egen distribution - eventuelt med en anden
 kerne end Linux.
 -->
 
 <para>
-Jeg vil sige at man nok kan lære lidt om hvordan et Linux-system
-er sat sammen ved at læse LFS-bogen, og en hel del ved at prøve at bygge et
+Jeg vil sige at man nok kan lÃ¦re lidt om hvordan et Linux-system
+er sat sammen ved at lÃ¦se LFS-bogen, og en hel del ved at prÃ¸ve at bygge et
 system efter anvisningerne.
-Man får sikkert også et fungerende system ud af det, men det er et
-system uden noget pakkesystem, så man skal selv holde styr hvad man
+Man fÃ¥r sikkert ogsÃ¥ et fungerende system ud af det, men det er et
+system uden noget pakkesystem, sÃ¥ man skal selv holde styr hvad man
 har installeret.
-Mit gæt er at de fleste på et tidspunkt i processen, vil synes det
-sjove forsvinder, og konstatere at de har lært en masse, og opgive at
-gøre LFS-systemet "færdigt".
+Mit gÃ¦t er at de fleste pÃ¥ et tidspunkt i processen, vil synes det
+sjove forsvinder, og konstatere at de har lÃ¦rt en masse, og opgive at
+gÃ¸re LFS-systemet "fÃ¦rdigt".
 </para>
 </sect1>
 

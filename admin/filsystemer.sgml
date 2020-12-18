@@ -7,7 +7,7 @@
 <para>
 Linux bruger som standard et filsystem kaldet
 <emphasis>ext2</emphasis> (Extended file system version 2), men kan
-også læse fra og skrive til mange andre filsystemer, f.eks. FAT-baserede
+ogsÃ¥ lÃ¦se fra og skrive til mange andre filsystemer, f.eks. FAT-baserede
 filsystemer, der bruges af DOS og Windows.
 </para>
 
@@ -34,7 +34,7 @@ filsystemer, der bruges af DOS og Windows.
 <para>
 Generelt formateres et filsystem under Linux ved at benytte kommandoen
 <command>mkfs</command> (MaKe File System). Har du en uformateret
-partition (her <filename>/dev/hda5</filename>), som du ønsker at
+partition (her <filename>/dev/hda5</filename>), som du Ã¸nsker at
 formatere, sker formateringen ved at skrive (som root):
 </para>
 
@@ -44,21 +44,21 @@ formatere, sker formateringen ved at skrive (som root):
 
 <para>
 Programmet <command>mkfs</command> finder selv ud af, hvilket filsystem
-du har valgt til den ønskede partition, idet denne oplysning findes i
+du har valgt til den Ã¸nskede partition, idet denne oplysning findes i
 partitionstabellen.
 </para>
 
 <para>
-Når din computer går ned (ja, det sker, f.eks. når strømmen går), kan
-du komme ud for at dine filsystemer er i en fejlbehæftet tilstand. Det
+NÃ¥r din computer gÃ¥r ned (ja, det sker, f.eks. nÃ¥r strÃ¸mmen gÃ¥r), kan
+du komme ud for at dine filsystemer er i en fejlbehÃ¦ftet tilstand. Det
 kan dog ofte reddes af programmet <command>fsck</command> (File
 System ChecK). Faktisk
-køres dette program altid ved opstart for at sikre at alle filsystemer
+kÃ¸res dette program altid ved opstart for at sikre at alle filsystemer
 er i en god tilstand.
 </para>
 
 <para>
-Vi du køre filtjek manuelt på en ext2-partition, så kan du direkte
+Vi du kÃ¸re filtjek manuelt pÃ¥ en ext2-partition, sÃ¥ kan du direkte
 bruge <command>e2fsck</command>:
 </para>
 <indexterm><primary>fsck</primary></indexterm>
@@ -71,7 +71,7 @@ bruge <command>e2fsck</command>:
 <!-- skrevet af Hanne Munkholm http://www.linuxlab.dk/fcl/technotes/badblocks.php -->
 <!-- Senere udvidet og rettet af Jacob Sparre Andersen. -->
 <sect1 id="bad-blocks">
- <title>Defekte blokke på harddisken</title>
+ <title>Defekte blokke pÃ¥ harddisken</title>
 
  <indexterm>
   <primary>badblocks</primary>
@@ -82,7 +82,7 @@ bruge <command>e2fsck</command>:
  </indexterm>
 
  <indexterm>
-  <primary>defekte blokke på harddisk</primary>
+  <primary>defekte blokke pÃ¥ harddisk</primary>
  </indexterm>
 
  <indexterm>
@@ -91,34 +91,34 @@ bruge <command>e2fsck</command>:
  </indexterm>
 
  <para>
-  Hvis man har en harddisk med defekte blokke på så bliver man nødt
-  til at finde dem og få filsystemet til at gå uden om.  I det
-  følgende gives en vejledning i at gøre dette.
+  Hvis man har en harddisk med defekte blokke pÃ¥ sÃ¥ bliver man nÃ¸dt
+  til at finde dem og fÃ¥ filsystemet til at gÃ¥ uden om.  I det
+  fÃ¸lgende gives en vejledning i at gÃ¸re dette.
  </para>
 
  <sect2 id="starte-alternativt-system">
   <title>Starte maskinen uden om harddisken(e)</title>
 
 <indexterm><primary>rescue</primary></indexterm>
-<indexterm><primary>Hjælp &ndash; kan ikke boote</primary></indexterm>
+<indexterm><primary>HjÃ¦lp &ndash; kan ikke boote</primary></indexterm>
 
   <para>
    Hvis du har en Red Hat-cd-rom, kan du starte maskinen fra den. Det
-   kan kræve en ændring i opsætningen af din BIOS-opsætning, som vi
-   dog ikke vil komme ind på her. Når der kommer en LILO-promt frem
+   kan krÃ¦ve en Ã¦ndring i opsÃ¦tningen af din BIOS-opsÃ¦tning, som vi
+   dog ikke vil komme ind pÃ¥ her. NÃ¥r der kommer en LILO-promt frem
    skriver du: "linux rescue".
   </para>
 
   <para>
-   Redningsproceduren (eng. rescue) vil bede om at få sprog og
-   tastatur valgt &ndash; eksakt som det gøres ved en egentlig
+   Redningsproceduren (eng. rescue) vil bede om at fÃ¥ sprog og
+   tastatur valgt &ndash; eksakt som det gÃ¸res ved en egentlig
    installation. Bare rolig &ndash; det er ikke en installation vi starter
-   på. Når redningsproceduren beder om at montere rod-filsystemet
+   pÃ¥. NÃ¥r redningsproceduren beder om at montere rod-filsystemet
    under <filename>/mnt/sysimage</filename> skal der bare svares "no"
-   (nej) hvis man ikke tør mounte harddisken, og "yes" hvis man
-   kører rescue-CD'en for at redde data på harddisken eller fx.
+   (nej) hvis man ikke tÃ¸r mounte harddisken, og "yes" hvis man
+   kÃ¸rer rescue-CD'en for at redde data pÃ¥ harddisken eller fx.
    vil editere en system-konfigurationsfil, inden man genstarter
-   systemet. Man svarer et eller andet, og derefter får man en
+   systemet. Man svarer et eller andet, og derefter fÃ¥r man en
    kommandofortolker (et kommando-linie prompt. Ingen grafiske
    user-interface ting her).
   </para>
@@ -127,13 +127,13 @@ bruge <command>e2fsck</command>:
    Hvis du har en rednings-CD eller et "bootable business card" fra fx.
    <ulink url="http://lnx-bbc.org/"> lnx-bbc.org (Linux -
    Bootable Business Card projektet) </ulink> som er en CD-ROM i
-   visitkortstørrelse, kan du også boote fra fra den. Når
-   systemet er startet, får du besked om, hvad systemets
+   visitkortstÃ¸rrelse, kan du ogsÃ¥ boote fra fra den. NÃ¥r
+   systemet er startet, fÃ¥r du besked om, hvad systemets
    brugernavn (login-name eller bare login) og password
-   (adgangskode) er. På rescue CD fra <ulink
+   (adgangskode) er. PÃ¥ rescue CD fra <ulink
    url="http://www.sysresccd.org/"> http://www.sysresccd.org/
    </ulink> er der faktisk slet ikke nogen adgangskode, man er
-   logget på med det samme.
+   logget pÃ¥ med det samme.
   </para>
  </sect2>
 
@@ -142,8 +142,8 @@ bruge <command>e2fsck</command>:
 
   <para>
    En rednings-CD (rescue CD) kan give dig en liste over
-   partitioner og filsystemer på den harddisk, som er direkte
-   koblet på systemet:
+   partitioner og filsystemer pÃ¥ den harddisk, som er direkte
+   koblet pÃ¥ systemet:
   </para>
 
 <screen>
@@ -157,8 +157,8 @@ bruge <command>e2fsck</command>:
 </screen>
    
   <para>
-   Den kommando vil give dig en liste med de tilgængelige filsystemer.
-   Den kan for eksempel se sådan ud:
+   Den kommando vil give dig en liste med de tilgÃ¦ngelige filsystemer.
+   Den kan for eksempel se sÃ¥dan ud:
   </para>
 
 <screen>
@@ -172,30 +172,30 @@ bruge <command>e2fsck</command>:
 </screen>
 
   <para>
-   Nu kan du så mounte disse partitioner og arbejde på dem.
+   Nu kan du sÃ¥ mounte disse partitioner og arbejde pÃ¥ dem.
   </para>
 
   <para>
-   Hvis du er interesseret i at se filerne på et Linux filsystem,
-   så kan du mounte det som ext2, også selv om det er ext3.
-   Forskellen er, at hvis du kører fsck (File System Consistency
-   checK) så er det hurtigere, hvis man har ext3 og en gyldig
+   Hvis du er interesseret i at se filerne pÃ¥ et Linux filsystem,
+   sÃ¥ kan du mounte det som ext2, ogsÃ¥ selv om det er ext3.
+   Forskellen er, at hvis du kÃ¸rer fsck (File System Consistency
+   checK) sÃ¥ er det hurtigere, hvis man har ext3 og en gyldig
    "journal-file", som ofte ligger udenfor partitionen og oftest
    heldigvis ikke er beskadiget.
   </para>
 
   <para>
-   Hvis du kører en rescue-CD, som automatisk mounter dine
-   disk-partitioner for dig (som Knoppix kan gøre) så vil du
-   typisk være interesseret i de filsystemer, der er monterede
+   Hvis du kÃ¸rer en rescue-CD, som automatisk mounter dine
+   disk-partitioner for dig (som Knoppix kan gÃ¸re) sÃ¥ vil du
+   typisk vÃ¦re interesseret i de filsystemer, der er monterede
    som <filename>/mnt/</filename>-et-eller-andet-tal, og som er af
-   typen "ext2". Vi kan foreksempel være interesserede i filsystemet
-   på partitionen <filename>/dev/hda2</filename>.
+   typen "ext2". Vi kan foreksempel vÃ¦re interesserede i filsystemet
+   pÃ¥ partitionen <filename>/dev/hda2</filename>.
   </para>
 
   <para>
    Du kan bruge kommandoen <command>mount</command> til at
-   få oplysninger om hvilke filsystemer der er monterede (eng.: mounted):
+   fÃ¥ oplysninger om hvilke filsystemer der er monterede (eng.: mounted):
   </para>
 
 <screen>
@@ -211,11 +211,11 @@ none on /dev/pts type devpts (rw,gid=5,mode=620)
 
 <para>
    Og hvis det ikke giver nok oplysninger, kan du bruge kommandoen
-   <command>fdisk</command> til at spørge til partitioneringen af dine
+   <command>fdisk</command> til at spÃ¸rge til partitioneringen af dine
    diske. IDE-diske (det typiske i skrivebordsmaskiner) har i Linux
    navnene <filename>/dev/hd</filename>-et-eller-andet-bogstav. Et
-   linux-systems anden IDE-disk hedder således
-   <filename>/dev/hdb</filename> og du kan spørge til dens opdeling
+   linux-systems anden IDE-disk hedder sÃ¥ledes
+   <filename>/dev/hdb</filename> og du kan spÃ¸rge til dens opdeling
    med kommandoen:
 </para>
 
@@ -231,27 +231,27 @@ Units = cylinders of 1008 * 512 bytes
  </sect2>
 
  <sect2 id="finde-og-maerke-daarlige-blokke">
-  <title>Finde og mærke dårlige blokke</title>
+  <title>Finde og mÃ¦rke dÃ¥rlige blokke</title>
 <indexterm><primary>badblocks</primary></indexterm>
 <indexterm><primary>e2fsck</primary></indexterm>
 <indexterm><primary>fsck</primary></indexterm>
 <indexterm><primary>defekt harddisk</primary></indexterm>
-<indexterm><primary>fejl på harddisk</primary></indexterm>
+<indexterm><primary>fejl pÃ¥ harddisk</primary></indexterm>
 
   <para>
-   Kør nu kommandoen <command>badblocks -o /tmp/blocks
+   KÃ¸r nu kommandoen <command>badblocks -o /tmp/blocks
    /dev/hda5</command> hvor <filename>hda5</filename> erstattes af den
-   partition man ønsker at tjekke for defekte blokke, og
-   <filename>/tmp/blocks</filename> er et arbitrært valgt filnavn.
+   partition man Ã¸nsker at tjekke for defekte blokke, og
+   <filename>/tmp/blocks</filename> er et arbitrÃ¦rt valgt filnavn.
   </para>
 
   <para>
-   Ældre udgaver af programmet <command>badblocks</command> skal have
-   at vide hvor mange blokke der er på den partition der skal
-   tjekkes. Den oplysning kan man få ved at bede
-   <command>fdisk</command> om en liste med alle partitionerne på den
+   Ã†ldre udgaver af programmet <command>badblocks</command> skal have
+   at vide hvor mange blokke der er pÃ¥ den partition der skal
+   tjekkes. Den oplysning kan man fÃ¥ ved at bede
+   <command>fdisk</command> om en liste med alle partitionerne pÃ¥ den
    relevante disk. Den disk partitionen <filename>/dev/hda2</filename>
-   ligger på hedder <filename>/dev/hda</filename> (man stryger altså
+   ligger pÃ¥ hedder <filename>/dev/hda</filename> (man stryger altsÃ¥
    bare nummeret):
 
 <screen>
@@ -263,22 +263,22 @@ Units = cylinders of 1008 * 512 bytes
 ...
 </screen>
 
-   Det er tallet <literal>3152520</literal> vi er ude efter. Det føjes
+   Det er tallet <literal>3152520</literal> vi er ude efter. Det fÃ¸jes
    til som et sidste argument til <command>badblocks</command>:
 
 <screen>
 <prompt>[root@lnx-bbc ~]# </prompt><userinput>badblocks -o /tmp/blocks /dev/hda 3152520</userinput>
 </screen>
   
-   Derefter <emphasis>kan</emphasis> man læse filen med <command>cat
+   Derefter <emphasis>kan</emphasis> man lÃ¦se filen med <command>cat
    /tmp/blocks</command> for at se om der blev fundet nogle defekte
-   blokke. Hvis der ikke blev fundet nogen, så behøver man ikke at
-   fortsætte.
+   blokke. Hvis der ikke blev fundet nogen, sÃ¥ behÃ¸ver man ikke at
+   fortsÃ¦tte.
   </para>
 
   <para>
-   Hvis der blev fundet defekte blokke skal du dernæst køre kommandoen
-   <command>e2fsck -l /tmp/blocks /dev/hda5</command>.  Den indsætter
+   Hvis der blev fundet defekte blokke skal du dernÃ¦st kÃ¸re kommandoen
+   <command>e2fsck -l /tmp/blocks /dev/hda5</command>.  Den indsÃ¦tter
    listen over de defekte blokke fra <filename>/tmp/blocks</filename>
    i filsystemets liste med defekte blokke. Til sidst taster du
    "Ctrl-d" for at komme ud af kommandofortolkeren og genstarte
@@ -286,52 +286,52 @@ Units = cylinders of 1008 * 512 bytes
   </para>
 
   <para>
-   Herefter vil maskinen ikke længere prøve at bruge de defekte blokke
-   <command>badblocks</command> fandt på harddisken.  Du kan finde en
+   Herefter vil maskinen ikke lÃ¦ngere prÃ¸ve at bruge de defekte blokke
+   <command>badblocks</command> fandt pÃ¥ harddisken.  Du kan finde en
    mere information om de kommandoerne med <command>man
    badblocks</command> og <command>man e2fsck</command>.
   </para>
 
 <para>
-Se også <ulink url="http://www.redhat.com/mailing-lists/ext3-users/msg02454.html">http://www.redhat.com/mailing-lists/ext3-users/msg02454.html</ulink> for mere information om emnet.
+Se ogsÃ¥ <ulink url="http://www.redhat.com/mailing-lists/ext3-users/msg02454.html">http://www.redhat.com/mailing-lists/ext3-users/msg02454.html</ulink> for mere information om emnet.
 </para>
 
  </sect2>
 </sect1>
 
 <sect1 id="partitionstabel-vaek">
-<title>Hjælp min partitionstabel er væk</title>
+<title>HjÃ¦lp min partitionstabel er vÃ¦k</title>
 
 <para>
-Hvis man er særlig uheldig, så kan man miste sin partitionstabel ved
+Hvis man er sÃ¦rlig uheldig, sÃ¥ kan man miste sin partitionstabel ved
 et Windows-crash. Her er et par erfaringer. Skriv partitionstabellen
 (anvend <filename>fdisk /dev/hda</filename>, hvis din harddisk er
-<filename>/dev/hda</filename>) ud på papir og gem den sammen med
+<filename>/dev/hda</filename>) ud pÃ¥ papir og gem den sammen med
 udskrift af <filename>/etc/fstab</filename>. Hvis du har disse informationer
-så kan man typisk genskabe indhold af harddisken. 
+sÃ¥ kan man typisk genskabe indhold af harddisken. 
 </para> 
 
 <para>
-Hvis man ikke har styr på hvor på harddisken man havde de enkelte
-partitioner, så kan de programmer på <ulink
+Hvis man ikke har styr pÃ¥ hvor pÃ¥ harddisken man havde de enkelte
+partitioner, sÃ¥ kan de programmer pÃ¥ <ulink
 url="http://inet.uni2.dk/~svolaf/utilities.htm">http://inet.uni2.dk/~svolaf/utilities.htm</ulink>
-være af <emphasis>STOR</emphasis> gavn. Med
+vÃ¦re af <emphasis>STOR</emphasis> gavn. Med
 <filename>findext2.exe</filename> er det muligt at find
-Linux-partitioner af ext2/ext3-typen. Programmet kræver en
-DOS-diskette med en fortolker og det tager typisk et par timer at søge
+Linux-partitioner af ext2/ext3-typen. Programmet krÃ¦ver en
+DOS-diskette med en fortolker og det tager typisk et par timer at sÃ¸ge
 harddisken igennem for mulige partitioner. 
 </para>
 
 <para>
 Nedenfor er vist hvad programmet kan give af informationer. Programmet er
-kørt 29/6-2003. Dagen efter at partitionstabellen blev slettet.
-Tre linjer indikerer hvilke partitioner som er "rigtige" &ndash; bemærk datoer
-for hvornår de blev monteret og tjeket sidste gang &ndash; dagen før.
+kÃ¸rt 29/6-2003. Dagen efter at partitionstabellen blev slettet.
+Tre linjer indikerer hvilke partitioner som er "rigtige" &ndash; bemÃ¦rk datoer
+for hvornÃ¥r de blev monteret og tjeket sidste gang &ndash; dagen fÃ¸r.
 </para>
 
 <para>
 Konklusionen blev at der var tre partitioner, som skulle reddes ved at indtaste
-følgende grænser manuelt i <command>fdisk</command>.
+fÃ¸lgende grÃ¦nser manuelt i <command>fdisk</command>.
 </para>
 
 <screen>
@@ -478,8 +478,8 @@ Start cylinder: 0   End cylinder: 4864
 </screen>
 
 <para>
-Langt hurtigere er <filename>findpart.exe</filename> som også kan give
-partitionsgrænserne direkte, men den viser ikke hvornår de enkelte partitioner
+Langt hurtigere er <filename>findpart.exe</filename> som ogsÃ¥ kan give
+partitionsgrÃ¦nserne direkte, men den viser ikke hvornÃ¥r de enkelte partitioner
 blev anvendt sidst.
 </para>
 
@@ -512,13 +512,13 @@ Disk: 1   Cylinders: 4865   Heads: 255   Sectors: 63   MB: 38162
 </screen>
 
 <para>
-Det skal bemærkes at de værktøjer som er nævnt ovenfor regner start og 
+Det skal bemÃ¦rkes at de vÃ¦rktÃ¸jer som er nÃ¦vnt ovenfor regner start og 
 slut sektorer fra 0, hvor <command>fdisk</command> regner fra 1 og frem. 
-Derfor skal man trække en fra hvis man anfører de grænser i <filename>/etc/fstab</filename>.
+Derfor skal man trÃ¦kke en fra hvis man anfÃ¸rer de grÃ¦nser i <filename>/etc/fstab</filename>.
 </para>
 
 <para>
-Det kan nævnes at den rigtige partitionstabel var
+Det kan nÃ¦vnes at den rigtige partitionstabel var
 </para>
 
 <screen>
@@ -549,8 +549,8 @@ og den tilsvarende <filename>/etc/fstab</filename> var
 
 <indexterm><primary>rescue</primary></indexterm>
 <para>
-Endelig skal det nævnes at bl.a. Mandrake har en mulighed for at boote op på første
-cd-rom og vælge <emphasis>rescue</emphasis> og genskabe boot-information, hvis det
+Endelig skal det nÃ¦vnes at bl.a. Mandrake har en mulighed for at boote op pÃ¥ fÃ¸rste
+cd-rom og vÃ¦lge <emphasis>rescue</emphasis> og genskabe boot-information, hvis det
 er muligt. Dette er ikke altid muligt...
 </para>
 
@@ -585,7 +585,7 @@ Andre relevante links er <ulink url="http://www.stud.uni-hannover.de/user/76201/
 
 
 <para>
-ReiserFS er et af de nyere filsystemer til Linux, og har kun været i de
+ReiserFS er et af de nyere filsystemer til Linux, og har kun vÃ¦ret i de
 officielle kerner siden version 2.4.1.
 </para>
 
@@ -593,23 +593,23 @@ officielle kerner siden version 2.4.1.
 ReiserFS er en anden type filsystem end den der kendes fra Linux'
 ext2, og DOS/Windows' FAT-drev, idet ReiserFS er et journaliserende
 filsystem. Det betyder, at alle filer til en hver tid er
-opdaterede. Det betyder, at hvis din computer går ned pga. en
-strømafbrydelse, vil du ikke miste data. Endvidere betyder det, at de
-partitioner som er formateret ved hjælp af ReiserFS, ikke skal tjekkes
+opdaterede. Det betyder, at hvis din computer gÃ¥r ned pga. en
+strÃ¸mafbrydelse, vil du ikke miste data. Endvidere betyder det, at de
+partitioner som er formateret ved hjÃ¦lp af ReiserFS, ikke skal tjekkes
 ved opstart. Hvis du har meget store harddiske vil det betyde at du
-får en meget kortere opstartstid. Dette kan være vigtigt, hvis din
+fÃ¥r en meget kortere opstartstid. Dette kan vÃ¦re vigtigt, hvis din
 computer er server med f.eks. 100 Gb harddisk (ikke ualmindeligt i den
 virkelige serververden).
 </para>
 
 <para>
 Tidligere versioner af ReiserFS ville ikke virke med Lilo-boot fra en
-ReiserFS-partition. Det kunne løses ved at lægge
-<filename>/boot</filename> på en ext2-partition, og hvis
-<filename>/boot</filename> er en lille selvstændig partition, kan
-<filename>/</filename>-partitionen være ReiserFS-formateret.
-I de nyeste versioner af ReiserFS (november 2000) bør denne
-begrænsning være væk, blot man monterer boot-partitionen med et ekstra
+ReiserFS-partition. Det kunne lÃ¸ses ved at lÃ¦gge
+<filename>/boot</filename> pÃ¥ en ext2-partition, og hvis
+<filename>/boot</filename> er en lille selvstÃ¦ndig partition, kan
+<filename>/</filename>-partitionen vÃ¦re ReiserFS-formateret.
+I de nyeste versioner af ReiserFS (november 2000) bÃ¸r denne
+begrÃ¦nsning vÃ¦re vÃ¦k, blot man monterer boot-partitionen med et ekstra
 flag, "<literal>notail</literal>":
 </para>
 
@@ -619,24 +619,24 @@ flag, "<literal>notail</literal>":
 
 
 <para>
-ReiserFS følger med Mandrake (fra version 7.1) og SuSE (fra
-6.4) og under disse distributioner er det let at vælge
+ReiserFS fÃ¸lger med Mandrake (fra version 7.1) og SuSE (fra
+6.4) og under disse distributioner er det let at vÃ¦lge
 formatering med ReiserFS i stedet for ext2 under
 installationen.
 Men selv under andre distributioner er det ikke
-svært. Du skal sikre dig, at kernen understøtter ReiserFS som
-filsystem. Måske skal du omkonfigurere din kerne (se også <xref
-linkend="kernelcompile"/>). Det kan godt betale sig at få ReiserFS
+svÃ¦rt. Du skal sikre dig, at kernen understÃ¸tter ReiserFS som
+filsystem. MÃ¥ske skal du omkonfigurere din kerne (se ogsÃ¥ <xref
+linkend="kernelcompile"/>). Det kan godt betale sig at fÃ¥ ReiserFS
 oversat som et kernemodul. Modulsystemet vil typisk selv finde ud af,
-at modulet skal bruges, dvs. når du begynder at bruge kommandoer som
+at modulet skal bruges, dvs. nÃ¥r du begynder at bruge kommandoer som
 involverer en ReiserFS-baseret partition, vil modulet automatisk blive
-indlæst.
+indlÃ¦st.
 </para>
 
 <para>
-Først og fremmest skal du have en partition, som er tom. Du kan 
-oprette en partition til formålet. Her kan du bruge programmer som 
-<command>fdisk</command> og <command>cfdisk</command>. Når du har 
+FÃ¸rst og fremmest skal du have en partition, som er tom. Du kan 
+oprette en partition til formÃ¥let. Her kan du bruge programmer som 
+<command>fdisk</command> og <command>cfdisk</command>. NÃ¥r du har 
 en partition klar, skal du formatere den. I eksemplet benytter vi
 partitionen <filename>/dev/hda5</filename>, som vi antager allerede er 
 oprettet.
@@ -675,7 +675,7 @@ Have fun.
 </para>
 
 <para>
-Du er nu klar til at montere din partition. Følgende vil montere partitionen
+Du er nu klar til at montere din partition. FÃ¸lgende vil montere partitionen
 <filename>/dev/hda5</filename> som <filename>/home</filename>.
 </para>
 
@@ -689,7 +689,7 @@ ReiserFS version 3.5.18
 </para>
 
 <para>
-Naturligvis kan du indsætte din nye partition i filen
+Naturligvis kan du indsÃ¦tte din nye partition i filen
 <filename>/etc/fstab</filename> med typen
 <emphasis>reiserfs</emphasis>. Derved vil partitionen blive monteret
 under opstart.
@@ -702,8 +702,8 @@ under opstart.
 
 <para>
 En glimrende oversigtsartikel, der sammenligner det gamle ext2, det
-nyere ext3, ReiserFS og endelige XFS kan læses på 
-<ulink url="http://www.linuxgazette.com/issue68/dellomodarme.html">http://www.linuxgazette.com/issue68/dellomodarme.html</ulink>. En sammenligning kan findes på <ulink url="http://oregonstate.edu/~kveton/fs/"> http://oregonstate.edu/~kveton/fs/</ulink>. Se også <ulink url="http://www.namesys.com/benchmarks/benchmark-results.html">http://www.namesys.com/benchmarks/benchmark-results.html</ulink>.
+nyere ext3, ReiserFS og endelige XFS kan lÃ¦ses pÃ¥ 
+<ulink url="http://www.linuxgazette.com/issue68/dellomodarme.html">http://www.linuxgazette.com/issue68/dellomodarme.html</ulink>. En sammenligning kan findes pÃ¥ <ulink url="http://oregonstate.edu/~kveton/fs/"> http://oregonstate.edu/~kveton/fs/</ulink>. Se ogsÃ¥ <ulink url="http://www.namesys.com/benchmarks/benchmark-results.html">http://www.namesys.com/benchmarks/benchmark-results.html</ulink>.
 </para>
 </sect1>
 
@@ -719,9 +719,9 @@ nyere ext3, ReiserFS og endelige XFS kan læses på
 </indexterm>
 
 <para>
-Hvis du ønsker at flytte eksisterende ext2-partitioner over til ext3, så kan man på <ulink
+Hvis du Ã¸nsker at flytte eksisterende ext2-partitioner over til ext3, sÃ¥ kan man pÃ¥ <ulink
 url="http://www.symonds.net/~rajesh/howto/ext3/index.html">http://www.symonds.net/~rajesh/howto/ext3/index.html</ulink>
-finde en vejledning til dette. Det er egentlig nemt. Først skal man
+finde en vejledning til dette. Det er egentlig nemt. FÃ¸rst skal man
 sikre sig at ens Linux distribution er klar til ext3 - det er alle
 nyere Linux-distributioner i dag. Derefter skriver man som root
 <command>tune2fs -j /dev/hda1</command> hvis det er
@@ -732,8 +732,8 @@ til ext3 og genstarte maskinen.
 </para>
 
 <para>
-Denne øvelse kræver dog at din Linux-kerne er oversat med ext2 og ext3-understøttelse.
-Dette er tilfældet med de nyere Linux-distributioner, men pas på her.
+Denne Ã¸velse krÃ¦ver dog at din Linux-kerne er oversat med ext2 og ext3-understÃ¸ttelse.
+Dette er tilfÃ¦ldet med de nyere Linux-distributioner, men pas pÃ¥ her.
 </para>
 
 
@@ -748,14 +748,14 @@ Dette er tilfældet med de nyere Linux-distributioner, men pas på her.
 <sect2 id="hvad-er-raid">
 <title>Hvad er RAID?</title>
 <para>
-RAID er en metode til at slå flere diske sammen til én
-<emphasis>volume</emphasis> (dvs. én logisk disk); det kan gøres for
-at opnå et større brugerdrev eller for at højne sikkerheden ved
+RAID er en metode til at slÃ¥ flere diske sammen til Ã©n
+<emphasis>volume</emphasis> (dvs. Ã©n logisk disk); det kan gÃ¸res for
+at opnÃ¥ et stÃ¸rre brugerdrev eller for at hÃ¸jne sikkerheden ved
 redundans.
 </para>
 
 <para>
-Derfor er der flere måder at kombinere diske til et RAID, og man har
+Derfor er der flere mÃ¥der at kombinere diske til et RAID, og man har
 derfor vedtaget nogle RAID-levels.
 </para>
 </sect2>
@@ -764,7 +764,7 @@ derfor vedtaget nogle RAID-levels.
 <title>Forskel mellem hardware- og software-RAID</title>
 
 <para>
-RAID kan laves hardware- eller software-mæssigt. Det sikreste
+RAID kan laves hardware- eller software-mÃ¦ssigt. Det sikreste
 er via hardware eller med andre ord en RAID-controller.
 </para>
 
@@ -774,9 +774,9 @@ er via hardware eller med andre ord en RAID-controller.
 
 <para>
 Ved at lade hardwaren styre diskene og "narre" styresystemet til at
-tro at der er tale om et eller flere logiske drev, behøver man ikke at
-bekymre sig så meget om opsætning af Linux, da hardwareproducenterne
-som regel har en brugervenlig opsætningsmenu installeret i kortets
+tro at der er tale om et eller flere logiske drev, behÃ¸ver man ikke at
+bekymre sig sÃ¥ meget om opsÃ¦tning af Linux, da hardwareproducenterne
+som regel har en brugervenlig opsÃ¦tningsmenu installeret i kortets
 BIOS.
 </para>
 
@@ -798,15 +798,15 @@ benytte sig af IDE.
 </para>
 
 <para>
-Ulempen er at man så selv skal sætte RAID op.  På Linux er
-det lidt besværligt.
+Ulempen er at man sÃ¥ selv skal sÃ¦tte RAID op.  PÃ¥ Linux er
+det lidt besvÃ¦rligt.
 </para>
 </sect3>
 </sect2>
 
 
 <sect2 id="spejlet-raid">
-<title>Opsætning af spejlede diske.</title>
+<title>OpsÃ¦tning af spejlede diske.</title>
 <indexterm>
  <primary>RAID</primary>
  <secondary>spejling</secondary>
@@ -826,20 +826,20 @@ det lidt besværligt.
  <secondary>mount /dev/md0 /spejl </secondary>
 </indexterm>
 <para>
-Et disk-spejl er hvis man ønsker 2 diske som en logisk enhed,
+Et disk-spejl er hvis man Ã¸nsker 2 diske som en logisk enhed,
 hvor begge diske indeholder samme data. Sikkerheden er her at hvis en
-disk står af, så kører den anden videre.
+disk stÃ¥r af, sÃ¥ kÃ¸rer den anden videre.
 </para>
 
 <para>
-Hvis man ønsker yderligere sikkerhed, kan man benytte en ekstra
-reservedisk som vil kunne erstatte en nedbrudt disk i spejlet. På den
-måde undværer man kun sikkerheden i den tid som det tager
-RAID-softwaren at opbygge et nyt spejl på reservedisken.
+Hvis man Ã¸nsker yderligere sikkerhed, kan man benytte en ekstra
+reservedisk som vil kunne erstatte en nedbrudt disk i spejlet. PÃ¥ den
+mÃ¥de undvÃ¦rer man kun sikkerheden i den tid som det tager
+RAID-softwaren at opbygge et nyt spejl pÃ¥ reservedisken.
 </para>
 
 <sect3 id="spejlet-raid-howto">
-<title>Fremgangsmåde</title>
+<title>FremgangsmÃ¥de</title>
 
 <para>
 Start i enkeltbrugertilstand - (<command>linux s</command> ved opstart eller
@@ -847,13 +847,13 @@ Start i enkeltbrugertilstand - (<command>linux s</command> ved opstart eller
 </para>
 
 <para>
-Opret partitionen på begge diske med <command>fdisk</command>. Filsystemet
-skal være "Linux RAID autodetect". Skriv enhedens nummer ned.
+Opret partitionen pÃ¥ begge diske med <command>fdisk</command>. Filsystemet
+skal vÃ¦re "Linux RAID autodetect". Skriv enhedens nummer ned.
 </para>
 
 <para>
 Opret en <filename>/etc/raidtab</filename>-fil, med indhold som
-kunne se således ud:
+kunne se sÃ¥ledes ud:
 </para>
 
 <programlisting>
@@ -880,7 +880,7 @@ Opret filsystemet til din logiske enhed
 </para>
 
 <para> 
-Montér det logiske drev med f.eks. <command>mount /dev/md0 /spejl</command>
+MontÃ©r det logiske drev med f.eks. <command>mount /dev/md0 /spejl</command>
 </para>
 
 <para> 
@@ -901,11 +901,11 @@ none       /dev/pts    devpts  gid=5,mode=620  0 0
 
 
 <para>
-Har du tidligere haft et RAID-system sat op på diskene, skal du bruge
+Har du tidligere haft et RAID-system sat op pÃ¥ diskene, skal du bruge
 <command>mkraid --force /dev/md0</command> til at initialisere 
-diskene igen, også selvom de er slettede med fdisk. Husk dog at tage
+diskene igen, ogsÃ¥ selvom de er slettede med fdisk. Husk dog at tage
 backup (f.eks. <command>tar pcfz data.tar.gz /mount/data</command>, 
-før du anvender 
+fÃ¸r du anvender 
 <command>mkraid --force /dev/md0</command>, da RAID-diskene slettes
 derved.
 </para>
@@ -914,7 +914,7 @@ derved.
 </sect2>
 
 <sect2 id="linear-raid">
-<title>Opsætning af linear RAID</title>
+<title>OpsÃ¦tning af linear RAID</title>
 <indexterm>
  <primary>linear RAID</primary>
 </indexterm>
@@ -925,11 +925,11 @@ derved.
 
 <para>
 Betegnelsen <emphasis>Linear RAID</emphasis> betyder, at man 
-ønsker at slå flere diske sammen til én logisk
-enhed og udnytte den samlede disk kapacitet. Det giver ikke større 
-data-sikkerhed - kun større samlet plads.
-Et eksempel på en <filename>/etc/raidtab</filename>
-hvor 2 diske som slås sammen er følgende:
+Ã¸nsker at slÃ¥ flere diske sammen til Ã©n logisk
+enhed og udnytte den samlede disk kapacitet. Det giver ikke stÃ¸rre 
+data-sikkerhed - kun stÃ¸rre samlet plads.
+Et eksempel pÃ¥ en <filename>/etc/raidtab</filename>
+hvor 2 diske som slÃ¥s sammen er fÃ¸lgende:
 </para>
 
 
@@ -972,15 +972,15 @@ nr-spare-disks         0
 </indexterm>
 
 <para>
-Det er muligt at tilføje og fjerne diske fra RAID-systemet medens systemet
-kører. Det kan være en god ting, hvis filsystemet af en eller anden
-grund er gået i stykker på den ene af diskene. Det kan
+Det er muligt at tilfÃ¸je og fjerne diske fra RAID-systemet medens systemet
+kÃ¸rer. Det kan vÃ¦re en god ting, hvis filsystemet af en eller anden
+grund er gÃ¥et i stykker pÃ¥ den ene af diskene. Det kan
 ske uden at disken rent fysisk har fejlet.
 </para>
 
 
 
-<para> 
+<para>Â 
 <emphasis>Fjern disk</emphasis>
 </para>
 
@@ -993,15 +993,15 @@ F.eks. fjern disken <filename>/dev/hdd1</filename> fra RAID-systemet:
 </screen>
 
 <para>
-Nu kan man arbejde på disken med <command>fdisk</command>.
+Nu kan man arbejde pÃ¥ disken med <command>fdisk</command>.
 </para>
 
-<para> 
-<emphasis>Tilføj disk</emphasis>
+<para>Â 
+<emphasis>TilfÃ¸j disk</emphasis>
 </para>
 
 <para>
-Disken som er blevet repartitioneret, kan tages i brug således:
+Disken som er blevet repartitioneret, kan tages i brug sÃ¥ledes:
 </para>
 
 <screen>
@@ -1010,7 +1010,7 @@ Disken som er blevet repartitioneret, kan tages i brug således:
 
 <para>
 RAID-systemet vil automatisk blive opdateret, og et evt. spejl vil blive
-genopbygget medens produktionen kører, performance-nedgangen er lille
+genopbygget medens produktionen kÃ¸rer, performance-nedgangen er lille
 selv ved IDE-diske.
 </para>
 
@@ -1025,36 +1025,36 @@ selv ved IDE-diske.
 <indexterm><primary>hdparm</primary></indexterm>
 <indexterm><primary>/sbin/hdparm</primary></indexterm>
 <para>
-Har du brug for at få ekstra "tryk" på din IDE-harddisk,
-så kan du bruge <command>hdparm</command> til at tune hastigheden.
+Har du brug for at fÃ¥ ekstra "tryk" pÃ¥ din IDE-harddisk,
+sÃ¥ kan du bruge <command>hdparm</command> til at tune hastigheden.
 Her er givet de to vigtigste parametre (bruge DMA og lookahead), som
-nærmest alle nyere diske understøtter. Der kan tunes endnu mere - have
+nÃ¦rmest alle nyere diske understÃ¸tter. Der kan tunes endnu mere - have
 fun! :-)
 </para>
 
 <para>
  <indexterm>
   <primary>start af systemet</primary>
-  <secondary>kørsel af programmer ved</secondary>
+  <secondary>kÃ¸rsel af programmer ved</secondary>
  </indexterm>
 
  <indexterm>
   <primary>systemstart</primary>
-  <secondary>kørsel af programmer ved</secondary>
+  <secondary>kÃ¸rsel af programmer ved</secondary>
  </indexterm>
 
  <indexterm>
   <primary>opstart af systemet</primary>
-  <secondary>kørsel af programmer ved</secondary>
+  <secondary>kÃ¸rsel af programmer ved</secondary>
  </indexterm>
 
  <indexterm>
   <primary>boot (systemstart)</primary>
-  <secondary>kørsel af programmer ved</secondary>
+  <secondary>kÃ¸rsel af programmer ved</secondary>
  </indexterm>
 
- Når det virker fint, kan og bør du lægge kommandoerne ind i filer, der
- køres når systemet startes op. I Red Hat f.eks. i bunden af
+ NÃ¥r det virker fint, kan og bÃ¸r du lÃ¦gge kommandoerne ind i filer, der
+ kÃ¸res nÃ¥r systemet startes op. I Red Hat f.eks. i bunden af
  <filename>/etc/rc.local</filename> (SuSE
  <filename>/etc/rc.d/boot.local</filename>).
 </para>
@@ -1068,14 +1068,14 @@ fun! :-)
 </screen>
 
 <para>
-Den første og sidste kommando måler hastigheden på harddisken. Der kommer to 
-tal. Det første "buffer-cache" er reelt et mål for processor- og bushastighed, 
+Den fÃ¸rste og sidste kommando mÃ¥ler hastigheden pÃ¥ harddisken. Der kommer to 
+tal. Det fÃ¸rste "buffer-cache" er reelt et mÃ¥l for processor- og bushastighed, 
 mens det andet tal angiver I/O fra disken. 
 </para>
 
 <para>
-For de fleste diske er den standardopsætning du har fin, men får du væsentligt
-mindre på det andet tal (se ovenfor), så skal du i gang med at lege :-)
+For de fleste diske er den standardopsÃ¦tning du har fin, men fÃ¥r du vÃ¦sentligt
+mindre pÃ¥ det andet tal (se ovenfor), sÃ¥ skal du i gang med at lege :-)
 </para>
 
 <para>
@@ -1099,7 +1099,7 @@ Start med at notere hvordan dine parametre er nu (og som virker):
 
 
 <para>
-Nogle af de parametre du kan dreje på er følgende:
+Nogle af de parametre du kan dreje pÃ¥ er fÃ¸lgende:
 </para>
 
 <itemizedlist mark="bullet">
@@ -1112,21 +1112,21 @@ Nogle af de parametre du kan dreje på er følgende:
 
 <listitem>
  <para>
--m[tal] »Multiple sector«-tilstand (dvs. IDE Block Mode), er om man kan hente mere data pr. gang. De fleste chipsæt understøtter nu dette. 2, 4, 8, 16 og 32 er lovlige værdier. 16 eller 32 er nok interessant for de fleste. 
+-m[tal] Â»Multiple sectorÂ«-tilstand (dvs. IDE Block Mode), er om man kan hente mere data pr. gang. De fleste chipsÃ¦t understÃ¸tter nu dette. 2, 4, 8, 16 og 32 er lovlige vÃ¦rdier. 16 eller 32 er nok interessant for de fleste. 
  </para>
 </listitem>
 
 
 <listitem>
  <para>
--d[0|1] er tilkobling/fravalg af DMA-overførsel. Dette genkendes 
-oftest automatisk, og sættes default til -d1 hvis det er muligt.
+-d[0|1] er tilkobling/fravalg af DMA-overfÃ¸rsel. Dette genkendes 
+oftest automatisk, og sÃ¦ttes default til -d1 hvis det er muligt.
  </para>
 </listitem>
 
 <listitem> 
  <para>
--X[tilstand] sættes til højest mulige hastighed pr. default.
+-X[tilstand] sÃ¦ttes til hÃ¸jest mulige hastighed pr. default.
 Anvend -X66 for UltraDMA-tilstand 2, -X67 for UltraDMA-tilstand 3 osv. 
 Dog er UltraDMA-tilstand 3, 4 og 5 meget eksperimentelle.
  </para>
@@ -1135,9 +1135,9 @@ Dog er UltraDMA-tilstand 3, 4 og 5 meget eksperimentelle.
 <listitem> 
  <para>
 -c[0|1|2|3] E)IDE 32-bit I/O-support. 
-0 for at fravælge 32-bit I/O-support, 
-1 for at tilkoble 32-bit dataoverførsel og 
-3 for 32-bit dataoverførsel med synkronisering (mange chipsæt kræver dette. 
+0 for at fravÃ¦lge 32-bit I/O-support, 
+1 for at tilkoble 32-bit dataoverfÃ¸rsel og 
+3 for 32-bit dataoverfÃ¸rsel med synkronisering (mange chipsÃ¦t krÃ¦ver dette. 
  </para>
 </listitem>
 </itemizedlist>
@@ -1166,19 +1166,19 @@ Dog er UltraDMA-tilstand 3, 4 og 5 meget eksperimentelle.
 
 <para>
 I eksemplet giver jeg kommandoer
-som passer til de nyere Ultra DMA 66-controllere, og får derved en lidt højere hastighed.
-Målefunktionen bør dog køres en del gange før man kan få en statistisk korrekt
-vurdering af ydelsen. Du skal være opmærksom på, at du kan låse din maskine, 
+som passer til de nyere Ultra DMA 66-controllere, og fÃ¥r derved en lidt hÃ¸jere hastighed.
+MÃ¥lefunktionen bÃ¸r dog kÃ¸res en del gange fÃ¸r man kan fÃ¥ en statistisk korrekt
+vurdering af ydelsen. Du skal vÃ¦re opmÃ¦rksom pÃ¥, at du kan lÃ¥se din maskine, 
 hvis du angiver mere end hvad din maskine kan yde. I praksis ser du nok 
-et reboot hvis du går for langt. Tilføj den endelige optimale opsætning til 
-<filename>/etc/rc.local</filename> (SuSE <filename>/etc/rc.d/boot.local</filename>) eller tilsvarende opstartsfil, når du er 
-sikker på at maskinen kører godt. Se også <command>man hdparm</command>.
+et reboot hvis du gÃ¥r for langt. TilfÃ¸j den endelige optimale opsÃ¦tning til 
+<filename>/etc/rc.local</filename> (SuSE <filename>/etc/rc.d/boot.local</filename>) eller tilsvarende opstartsfil, nÃ¥r du er 
+sikker pÃ¥ at maskinen kÃ¸rer godt. Se ogsÃ¥ <command>man hdparm</command>.
 </para>
 
 <para>
-Med Red Hat kan du justere i filerne: <filename>/etc/sysconfig/harddiskhd[a-h]</filename> og så gør <filename>/etc/rc.sysinit</filename> resten ved 
-systemstart. Udfør <command>cp /etc/sysconfig/harddisks /etc/sysconfig/harddiskhdX</command>, hvor X er a, b, c osv. for hda, hdb, hdc osv.
-Der er følgende parametre: 
+Med Red Hat kan du justere i filerne: <filename>/etc/sysconfig/harddiskhd[a-h]</filename> og sÃ¥ gÃ¸r <filename>/etc/rc.sysinit</filename> resten ved 
+systemstart. UdfÃ¸r <command>cp /etc/sysconfig/harddisks /etc/sysconfig/harddiskhdX</command>, hvor X er a, b, c osv. for hda, hdb, hdc osv.
+Der er fÃ¸lgende parametre: 
 </para>
 
 <programlisting>
@@ -1200,14 +1200,14 @@ EXTRA_params= -X69
 </programlisting>
 
 <para>
-Læs også Red Hat 7.1-filen <filename>/etc/sysconfig/harddisks</filename> hvor 
-generel opsætning kan laves for alle diske.
+LÃ¦s ogsÃ¥ Red Hat 7.1-filen <filename>/etc/sysconfig/harddisks</filename> hvor 
+generel opsÃ¦tning kan laves for alle diske.
 </para>
 
 <para>
-Samme program, <command>hdparm</command>, kan bruges til at få
+Samme program, <command>hdparm</command>, kan bruges til at fÃ¥
 harddisken til at spinne ned i hastighed - f.eks. efter 5
-sekunder. Det betyder mere slid på harddisken, men din maskine
+sekunder. Det betyder mere slid pÃ¥ harddisken, men din maskine
 bliver stille. 
 </para>
 
@@ -1216,10 +1216,10 @@ bliver stille.
 </screen>
 
 <para>
-Hvis man har et eller flere programmer der jævnligt tjeker om nogle filer
-er ændret skal disse filers access-tid også opdateres jævnligt - det
-giver skrivninger til disken selvom filsystemets egentlige data ikke ændres
-(kun dets meta-data). Det kan være en god idé at montere disken via <filename>/etc/fstab</filename> noget i stil med
+Hvis man har et eller flere programmer der jÃ¦vnligt tjeker om nogle filer
+er Ã¦ndret skal disse filers access-tid ogsÃ¥ opdateres jÃ¦vnligt - det
+giver skrivninger til disken selvom filsystemets egentlige data ikke Ã¦ndres
+(kun dets meta-data). Det kan vÃ¦re en god idÃ© at montere disken via <filename>/etc/fstab</filename> noget i stil med
 </para>
 
 <programlisting>
@@ -1228,39 +1228,39 @@ giver skrivninger til disken selvom filsystemets egentlige data ikke ændres
 
 
 <para>
-Kernens IDE-driver skal understøtte det IDE-chipsæt, der anvendes af
-bundkortet, og ikke alle IDE-chipsæt er understøttet med (U)DMA. Så
-hvis en given funktion ikke tillades af <command>hdparm</command>, så
-kan det være forklaringen.
+Kernens IDE-driver skal understÃ¸tte det IDE-chipsÃ¦t, der anvendes af
+bundkortet, og ikke alle IDE-chipsÃ¦t er understÃ¸ttet med (U)DMA. SÃ¥
+hvis en given funktion ikke tillades af <command>hdparm</command>, sÃ¥
+kan det vÃ¦re forklaringen.
 </para>
 
 <para>
-<command>hdparm</command> har kun begrænset anvendelse med scsi. 
+<command>hdparm</command> har kun begrÃ¦nset anvendelse med scsi. 
 Til scsi skal man dels
-se på driveren, dvs. tilføje eventuelle modulparametre. Symbios
+se pÃ¥ driveren, dvs. tilfÃ¸je eventuelle modulparametre. Symbios
 scsi-driverne kan dog fintunes via <command>/proc/scsi</command> under
-drift. Et nyttigt grafisk værktøj til at tune scsi-diske er
-<command>scsi-config</command>, selvom der normalt ikke er så meget at
+drift. Et nyttigt grafisk vÃ¦rktÃ¸j til at tune scsi-diske er
+<command>scsi-config</command>, selvom der normalt ikke er sÃ¥ meget at
 "tune".
 </para>
 
 <para>
-Du kan måske også være interesseret i at se mere på 
+Du kan mÃ¥ske ogsÃ¥ vÃ¦re interesseret i at se mere pÃ¥ 
 <ulink url="http://www.iozone.org/">http://www.iozone.org/</ulink>
 hvor der er et program til at benchmark-teste harddisk-ydelse.
 </para>
 
 <para>
-Mere info om <command>hdparm</command> kan finds på
+Mere info om <command>hdparm</command> kan finds pÃ¥
 <ulink url="http://linux.oreillynet.com/pub/a/linux/2000/06/29/hdparm.html">http://linux.oreillynet.com/pub/a/linux/2000/06/29/hdparm.html</ulink>.
 </para>
 
 </sect1>
 
 <sect1 id="hvad-laver-hvad">
-<title>Hvilke filer har programmet åbne?</title>
+<title>Hvilke filer har programmet Ã¥bne?</title>
 
-<indexterm><primary>Fil</primary><secondary>åbne</secondary></indexterm>
+<indexterm><primary>Fil</primary><secondary>Ã¥bne</secondary></indexterm>
 <indexterm><primary>lsof</primary></indexterm>
 <indexterm><primary>Kommandooversigt</primary><secondary>lsof </secondary></indexterm>
 <indexterm><primary>/sbin/lsof</primary></indexterm>
@@ -1280,12 +1280,12 @@ Mere info om <command>hdparm</command> kan finds på
 <sect2 id="lsof">
 <title>lsof</title>
 <para>
-Ofte vil dit program have filer åbne som du måske ikke lige
+Ofte vil dit program have filer Ã¥bne som du mÃ¥ske ikke lige
 vidste. Med <command>lsof</command> kan du se hvad der sker. Vi kan
 f.eks. se hvad programmet arbejder med. Som eksempel kan vi se hvad
-der sker, når man har <command>ping</command> kørende. Først finder vi
+der sker, nÃ¥r man har <command>ping</command> kÃ¸rende. FÃ¸rst finder vi
 den <emphasis>pid</emphasis> - proces-ID - som <command>ping</command>
-kører med. Der er mindst to muligheder, enten med <command>ps
+kÃ¸rer med. Der er mindst to muligheder, enten med <command>ps
 aux</command> eller <command>pidof</command>.
 </para>
 
@@ -1309,18 +1309,18 @@ ping   9149 root mem  REG    3,5  246652  16061 /lib/libnss_files-2.1.3.so
 </screen>
 
 <para>
-Så man kan se, at programmer har fat i mange filer. Det skal nævnes at
-<command>pidof</command> kræver at SysVinit-pakken er installeret og
-stien til <command>pidof</command> varierer desværre alt efter
-Linux-distribution. Det skal også nævnes, at <command>ps aux</command>
-bruges på en Linux-maskine, mens mange andre Unix-varianter anvender
+SÃ¥ man kan se, at programmer har fat i mange filer. Det skal nÃ¦vnes at
+<command>pidof</command> krÃ¦ver at SysVinit-pakken er installeret og
+stien til <command>pidof</command> varierer desvÃ¦rre alt efter
+Linux-distribution. Det skal ogsÃ¥ nÃ¦vnes, at <command>ps aux</command>
+bruges pÃ¥ en Linux-maskine, mens mange andre Unix-varianter anvender
 <command>ps -ef</command>.
 </para>
 
 <para>
-Tilsvarende kan man have stor glæde af at kunne se, hvilke programmer
-der har filer åbne under et givet katalog i filtræet. Det er meget
-relevant ved afmontering af f.eks. cd-rom-drev. Prøv følgende:
+Tilsvarende kan man have stor glÃ¦de af at kunne se, hvilke programmer
+der har filer Ã¥bne under et givet katalog i filtrÃ¦et. Det er meget
+relevant ved afmontering af f.eks. cd-rom-drev. PrÃ¸v fÃ¸lgende:
 </para>
 
 <screen>
@@ -1343,11 +1343,11 @@ systemadministrator.
 <title>fuser</title>
 
 <para>
-Et tilsvarende nyttigt program til nogenlunde samme formål er
+Et tilsvarende nyttigt program til nogenlunde samme formÃ¥l er
 <command>/sbin/fuser DEVICE</command>. F.eks. kan man se hvilket
-proces-ID, som låser lydenheden <filename>/dev/dsp</filename> ved at skrive
+proces-ID, som lÃ¥ser lydenheden <filename>/dev/dsp</filename> ved at skrive
 <command>/sbin/fuser /dev/dsp</command>. Med <command>/sbin/fuser -k
-/dev/dsp</command> kan man endda direkte dræbe den proces som låser
+/dev/dsp</command> kan man endda direkte drÃ¦be den proces som lÃ¥ser
 enheden.
 </para>
 </sect2>
@@ -1358,7 +1358,7 @@ enheden.
 <secondary>Problem med afmontering af filsystem</secondary></indexterm>
 
 <para>
-Et alternativ til ovenstående er at anvende <filename>/proc/</filename>.
+Et alternativ til ovenstÃ¥ende er at anvende <filename>/proc/</filename>.
 Antag at man vil afmontere <filename>/usr/src/postgresql-7.2.1/</filename>
 </para>
 
@@ -1379,7 +1379,7 @@ lrwxrwxrwx 1 postgres postgres 0 Apr 30 03:49 /proc/3950/cwd -> /usr/src/postgre
 </screen>
 
 <para>
-Aha! Det er således processerne 3943 3944 3950 som låser filsystemet.
+Aha! Det er sÃ¥ledes processerne 3943 3944 3950 som lÃ¥ser filsystemet.
 </para>
 
 <screen>
@@ -1388,7 +1388,7 @@ Aha! Det er således processerne 3943 3944 3950 som låser filsystemet.
 
 
 <para>
-Nogen kunne sikkert lave et script, der gjorde dræbningen nemmere:
+Nogen kunne sikkert lave et script, der gjorde drÃ¦bningen nemmere:
 </para>
 
 <programlisting>
@@ -1409,9 +1409,9 @@ perl -e '$dir=shift; map {m:/proc/(\d+)/cwd -> $dir[/\n]: and do {print
 <indexterm><primary>fejlfinding af programmer</primary></indexterm>
 
 <para>
-Nogle gange er programmer ret dårlige til at forklare, hvorfor det gik
-galt. Kommandoen <command>strace</command> er god til at fejlsøge
-med. Det gælder specielt ved fejl som:
+Nogle gange er programmer ret dÃ¥rlige til at forklare, hvorfor det gik
+galt. Kommandoen <command>strace</command> er god til at fejlsÃ¸ge
+med. Det gÃ¦lder specielt ved fejl som:
 </para>
 
 <itemizedlist mark="bullet">
@@ -1433,16 +1433,16 @@ Access denied
 </itemizedlist>
 
 <para>
-Her vil <command>strace</command> ofte kunne give dig en idé om, hvad
-der skete lige inden fejlen indtrådte, og med lidt held kan du ud af
-dette gætte, hvad der gik galt. Måske mangler du en fil eller måske
+Her vil <command>strace</command> ofte kunne give dig en idÃ© om, hvad
+der skete lige inden fejlen indtrÃ¥dte, og med lidt held kan du ud af
+dette gÃ¦tte, hvad der gik galt. MÃ¥ske mangler du en fil eller mÃ¥ske
 bruger programmet den forkerte version af et library.
 </para>
 
 <para>
-<command>strace</command> står for system trace og viser alle de kald,
+<command>strace</command> stÃ¥r for system trace og viser alle de kald,
 der er til library-rutiner. Hvis man vil se, hvilke kald
-<command>ls</command> laver, så skriver man:
+<command>ls</command> laver, sÃ¥ skriver man:
 </para>
 
 <screen>
@@ -1450,9 +1450,9 @@ der er til library-rutiner. Hvis man vil se, hvilke kald
 </screen>
 
 <para>
-Det går hurtigt op for een, at der kommer <emphasis>ret</emphasis>
-meget output. Da problemerne ofte er fil-relateret, så kan man nøjes
-med at få vist de fil-relaterede systemkald:
+Det gÃ¥r hurtigt op for een, at der kommer <emphasis>ret</emphasis>
+meget output. Da problemerne ofte er fil-relateret, sÃ¥ kan man nÃ¸jes
+med at fÃ¥ vist de fil-relaterede systemkald:
 </para>
 
 <screen>
@@ -1461,8 +1461,8 @@ med at få vist de fil-relaterede systemkald:
 
 <para>
 Hvis programmet starter andre processer (f.eks. ved at kalde andre
-programmer), så kan man strace disse med '-ff'. Prøv at se forskellen
-på disse to:
+programmer), sÃ¥ kan man strace disse med '-ff'. PrÃ¸v at se forskellen
+pÃ¥ disse to:
 </para>
 
 <screen>
@@ -1471,7 +1471,7 @@ på disse to:
 </screen>
 
 <para>
-Hvis du strace'r programmer, der kører under X, så vil du ofte få
+Hvis du strace'r programmer, der kÃ¸rer under X, sÃ¥ vil du ofte fÃ¥
 utroligt meget output. Du kan proppe det i en fil ved at redirigere
 stderr:
 </para>
@@ -1492,7 +1492,7 @@ M-x shell
 </screen>
 
 <para>
-Herved får du mulighed for at bladre i outputtet med det samme.
+Herved fÃ¥r du mulighed for at bladre i outputtet med det samme.
 </para>
 </sect1>
 

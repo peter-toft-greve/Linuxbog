@@ -5,9 +5,9 @@
 <chapter id="ooo-oversigter">
   <title>Oversigter</title>
 
-<para>Nedenstående oversigt er lavet til StarOffice 5.2 og nogle
+<para>NedenstÃ¥ende oversigt er lavet til StarOffice 5.2 og nogle
     genvejstaster stemmer ikke overens med OpenOffice 1.0.1 og andre er der
-    ikke, jeg har foreløbig sat et % (minus) ved de taster der ikke fungerer
+    ikke, jeg har forelÃ¸big sat et % (minus) ved de taster der ikke fungerer
     i OpenOffice 1.0.1</para>
 
     
@@ -35,7 +35,7 @@ XXX Her skal vi have lavet html-tabellen om til sgml!!! (gitte)
   <row>
    <entry><emphasis>Menupunkter</emphasis></entry>
    <entry><emphasis>Ctrl-O</emphasis></entry>
-   <entry>Filer/Åbn (<emphasis>O</emphasis>pen)</entry>
+   <entry>Filer/Ã…bn (<emphasis>O</emphasis>pen)</entry>
   </row>
   <row>
    <entry></entry>
@@ -55,7 +55,7 @@ XXX Her skal vi have lavet html-tabellen om til sgml!!! (gitte)
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-G</emphasis></entry>
-   <entry>Rediger/Søg og erstat <emphasis>%</emphasis></entry>
+   <entry>Rediger/SÃ¸g og erstat <emphasis>%</emphasis></entry>
   </row>
   <row>
    <entry></entry>
@@ -70,12 +70,12 @@ XXX Her skal vi have lavet html-tabellen om til sgml!!! (gitte)
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-F12</emphasis></entry>
-   <entry>Indsæt/Tabel</entry>
+   <entry>IndsÃ¦t/Tabel</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-F2</emphasis></entry>
-   <entry>Indsæt/Felt/Andre</entry>
+   <entry>IndsÃ¦t/Felt/Andre</entry>
   </row>
   <row>
    <entry></entry>
@@ -100,22 +100,22 @@ XXX Her skal vi have lavet html-tabellen om til sgml!!! (gitte)
   <row>
    <entry>Nyt afsnit</entry>
    <entry><emphasis>Alt-Enter</emphasis></entry>
-   <entry>Nyt afsnit lige før/efter et spalteområde</entry>
+   <entry>Nyt afsnit lige fÃ¸r/efter et spalteomrÃ¥de</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Skift-Enter</emphasis></entry>
-   <entry>Indsæt tvunget linjeskift</entry>
+   <entry>IndsÃ¦t tvunget linjeskift</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-Enter</emphasis></entry>
-   <entry>Indsæt tvunget sideskift</entry>
+   <entry>IndsÃ¦t tvunget sideskift</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-Skift-Enter</emphasis></entry>
-   <entry>Indsæt tvunget spalteskift</entry>
+   <entry>IndsÃ¦t tvunget spalteskift</entry>
   </row>
   <row>
    <entry><emphasis>Markere tekst</emphasis></entry>
@@ -130,27 +130,27 @@ XXX Her skal vi have lavet html-tabellen om til sgml!!! (gitte)
   <row>
    <entry><emphasis>Slette tekst</emphasis></entry>
    <entry><emphasis>Delete</emphasis></entry>
-   <entry>Slet forlæns</entry>
+   <entry>Slet forlÃ¦ns</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Backspace</emphasis></entry>
-   <entry>Slet baglæns</entry>
+   <entry>Slet baglÃ¦ns</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-Delete</emphasis></entry>
-   <entry>Slet ord forlæns</entry>
+   <entry>Slet ord forlÃ¦ns</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-Backspace</emphasis></entry>
-   <entry>Slet ord baglæns</entry>
+   <entry>Slet ord baglÃ¦ns</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Insert</emphasis></entry>
-   <entry>Skift mellem indsætning og overskrivning</entry>
+   <entry>Skift mellem indsÃ¦tning og overskrivning</entry>
   </row>
   <row>
    <entry><emphasis>Klippebordet</emphasis></entry>
@@ -165,52 +165,52 @@ XXX Her skal vi have lavet html-tabellen om til sgml!!! (gitte)
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-V</emphasis></entry>
-   <entry>Sæt ind fra Windows klippebordet</entry>
+   <entry>SÃ¦t ind fra Windows klippebordet</entry>
   </row>
   <row>
-   <entry><emphasis>Flytte markøren</emphasis></entry>
+   <entry><emphasis>Flytte markÃ¸ren</emphasis></entry>
    <entry><emphasis>Piletaster</emphasis></entry>
-   <entry>Flyt markøren</entry>
+   <entry>Flyt markÃ¸ren</entry>
   </row>
   <row>
    <entry></entry>
-   <entry><emphasis>Ctrl-Pil højre/venstre</emphasis></entry>
-   <entry>Flyt markøren et helt ord</entry>
+   <entry><emphasis>Ctrl-Pil hÃ¸jre/venstre</emphasis></entry>
+   <entry>Flyt markÃ¸ren et helt ord</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Home</emphasis></entry>
-   <entry>Flyt markøren til linjens start</entry>
+   <entry>Flyt markÃ¸ren til linjens start</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>End</emphasis></entry>
-   <entry>Flyt markøren til linjens slutning</entry>
+   <entry>Flyt markÃ¸ren til linjens slutning</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-Home</emphasis></entry>
-   <entry>Flyt markøren til dokumentets start</entry>
+   <entry>Flyt markÃ¸ren til dokumentets start</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-End</emphasis></entry>
-   <entry>Flyt markøren til dokumentes afslutning</entry>
+   <entry>Flyt markÃ¸ren til dokumentes afslutning</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>PageUp</emphasis></entry>
-   <entry>Flyt markøren en skærmfuld op</entry>
+   <entry>Flyt markÃ¸ren en skÃ¦rmfuld op</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>PageDown</emphasis></entry>
-   <entry>Flyt markøren en skærmfuld ned</entry>
+   <entry>Flyt markÃ¸ren en skÃ¦rmfuld ned</entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Tab</emphasis></entry>
-   <entry>Flyt markøren til næste tabulatorstop</entry>
+   <entry>Flyt markÃ¸ren til nÃ¦ste tabulatorstop</entry>
   </row>
   <row>
    <entry><emphasis>Flytte afsnit</emphasis></entry>
@@ -239,12 +239,12 @@ XXX Her skal vi have lavet html-tabellen om til sgml!!! (gitte)
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-H</emphasis></entry>
-   <entry><emphasis>H</emphasis>ævet skrift <emphasis>%</emphasis></entry>
+   <entry><emphasis>H</emphasis>Ã¦vet skrift <emphasis>%</emphasis></entry>
   </row>
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-T</emphasis></entry>
-   <entry>Sænke<emphasis>t</emphasis> skrift <emphasis>%</emphasis></entry>
+   <entry>SÃ¦nke<emphasis>t</emphasis> skrift <emphasis>%</emphasis></entry>
   </row>
   <row>
    <entry><emphasis>Formatere afsnit</emphasis></entry>
@@ -259,7 +259,7 @@ XXX Her skal vi have lavet html-tabellen om til sgml!!! (gitte)
   <row>
    <entry></entry>
    <entry><emphasis>Ctrl-R</emphasis></entry>
-   <entry>Højrestillet afsnit (<emphasis>R</emphasis>ight) <emphasis>%</emphasis></entry>
+   <entry>HÃ¸jrestillet afsnit (<emphasis>R</emphasis>ight) <emphasis>%</emphasis></entry>
   </row>
   <row>
    <entry></entry>

@@ -17,19 +17,19 @@ Databaser
 <title>Databaser</title>
 <indexterm><primary>Databaser</primary></indexterm>
 <para>
-Linux er på grund af sin stabilitet et godt valg som databaseserver.
+Linux er pÃ¥ grund af sin stabilitet et godt valg som databaseserver.
 Inden for databaser er
-de facto standarden sproget SQL, hvor data kan tilgås fra tekst-,
-grafisk-, og webbaserede løsninger samtidigt.
+de facto standarden sproget SQL, hvor data kan tilgÃ¥s fra tekst-,
+grafisk-, og webbaserede lÃ¸sninger samtidigt.
 </para>
 
 <para>
-De to absolut mest brugte SQL-databaser på Linux er PostgreSQL og MySQL.
-Begge databaser udgives under en fri licens og er af høj teknisk kvalitet.
-For begge databaser gælder at du frit
-kan vælge de programmeringssprog og omgivelser du kender fra Linux.
-Perl, PHP, Python, C, Tcl/Tk, Java og foretrækker du shell-programmer, er
-det også en mulighed.
+De to absolut mest brugte SQL-databaser pÃ¥ Linux er PostgreSQL og MySQL.
+Begge databaser udgives under en fri licens og er af hÃ¸j teknisk kvalitet.
+For begge databaser gÃ¦lder at du frit
+kan vÃ¦lge de programmeringssprog og omgivelser du kender fra Linux.
+Perl, PHP, Python, C, Tcl/Tk, Java og foretrÃ¦kker du shell-programmer, er
+det ogsÃ¥ en mulighed.
 </para>
 
 <para>
@@ -43,22 +43,22 @@ og er den mest udbredte af de to databaser.
 
 <para>
 De helt store kommercielle SQL-database producenter, Oracle, Sybase, 
-Informix, IBM med DB2 og Inprise med InterBase er også kommet med en
+Informix, IBM med DB2 og Inprise med InterBase er ogsÃ¥ kommet med en
 Linux-version af deres SQL-databaser. Programmeringsmulighederne er de
-samme, så det er nemt
+samme, sÃ¥ det er nemt
 at flytte sit program den ene eller den anden vej, eller have et
-blandet miljø. Disse databaser på Linux anvendes i høj grad i
-produktionsmiljø, og i særdeleshed i udviklingsmiljø.
+blandet miljÃ¸. Disse databaser pÃ¥ Linux anvendes i hÃ¸j grad i
+produktionsmiljÃ¸, og i sÃ¦rdeleshed i udviklingsmiljÃ¸.
 </para>
 
 <indexterm><primary>Tuning</primary><secondary>Linux som databaseserver</secondary></indexterm>
 <indexterm><primary>Databaseserver</primary><secondary>Tuning af Linux</secondary></indexterm>
 <para>
-Anvender man Oracle og Linux sammen kan følgende artikler være meget interessante
+Anvender man Oracle og Linux sammen kan fÃ¸lgende artikler vÃ¦re meget interessante
 <ulink url="http://www.linuxjournal.com/article/5840">http://www.linuxjournal.com/article/5840</ulink> og
 <ulink url="http://www.linuxjournal.com/article/5841">http://www.linuxjournal.com/article/5841</ulink>,
 idet de beskriver tuning af Linux
-så ydelsen nogle gange kan komme voldsomt i vejret.
+sÃ¥ ydelsen nogle gange kan komme voldsomt i vejret.
 </para>
 
 <indexterm><primary>Access database</primary><secondary>Konvertering til MySQL</secondary></indexterm>
@@ -66,7 +66,7 @@ så ydelsen nogle gange kan komme voldsomt i vejret.
 
 <para>
 Anvender du Microsoft Access databaser og overvejer at flytte dem til
-Linux, så er følgende artikel af interesse.
+Linux, sÃ¥ er fÃ¸lgende artikel af interesse.
 <ulink url="http://www.nusphere.com/products/access2mysql.pdf">http://www.nusphere.com/products/access2mysql.pdf</ulink>.
  </para>
 
@@ -77,25 +77,25 @@ Linux, så er følgende artikel af interesse.
 
 <para>
 <acronym>SQL</acronym> er en forkortelse for Structured Query Language og er et generelt
-sprog til at tilgå data i en SQL-database.  De basale kommandoer i SQL
-er nemme at lære, så man kommer hurtigt igang med sin opgave.  Har man
-kun een tabel at arbejde med, er SQL lige så nemt at bruge som andre
-konventionelle databaser, men når man ønsker at hente data fra flere tabeller
-samtidigt, så er der rigtigt mange fordele ved SQL.  Har du prøvet at
+sprog til at tilgÃ¥ data i en SQL-database.  De basale kommandoer i SQL
+er nemme at lÃ¦re, sÃ¥ man kommer hurtigt igang med sin opgave.  Har man
+kun een tabel at arbejde med, er SQL lige sÃ¥ nemt at bruge som andre
+konventionelle databaser, men nÃ¥r man Ã¸nsker at hente data fra flere tabeller
+samtidigt, sÃ¥ er der rigtigt mange fordele ved SQL.  Har du prÃ¸vet at
 arbejde med <acronym>ASCII</acronym> filer der opdateres af flere personer
-samtidigt, så kender du til problemer som SQL-databaser løser for dig.
+samtidigt, sÃ¥ kender du til problemer som SQL-databaser lÃ¸ser for dig.
 </para>
 
 <para>
-Et nemt forståeligt eksempel med to tabeller, eller 'relationelle
+Et nemt forstÃ¥eligt eksempel med to tabeller, eller 'relationelle
 tabeller' som det retteligt hedder, er en tabel med firmaer og en
-tabel med postnumre.  For at sikre os at alle bynavne er stavet på
-samme måde, er postnummer og bynavn i en tabel for sig.  I tabellen
-med firmaer er til gengæld kun angivet postnummeret og ikke bynavnet.
+tabel med postnumre.  For at sikre os at alle bynavne er stavet pÃ¥
+samme mÃ¥de, er postnummer og bynavn i en tabel for sig.  I tabellen
+med firmaer er til gengÃ¦ld kun angivet postnummeret og ikke bynavnet.
 </para>
 
 <para>
-Skematisk kunne tabellerne se således ud
+Skematisk kunne tabellerne se sÃ¥ledes ud
 </para>
 
 <table id="db-firma">
@@ -136,26 +136,26 @@ Skematisk kunne tabellerne se således ud
 <tbody>
 <row>
  <entry>2100</entry>
- <entry>København Ø</entry>
+ <entry>KÃ¸benhavn Ã˜</entry>
 </row>
 <row>
  <entry>2200</entry>
- <entry>København N</entry>
+ <entry>KÃ¸benhavn N</entry>
 </row>
 </tbody>
 </tgroup>
 </table>
 
 <para>
-Opgaven er nu at få en liste af alle firmaer med fuld adresse.
+Opgaven er nu at fÃ¥ en liste af alle firmaer med fuld adresse.
 Der er en relation i mellem de to tabeller ved feltet
-<database>PostNr</database> og SQL-kommandoen er så:
+<database>PostNr</database> og SQL-kommandoen er sÃ¥:
 <command>SELECT FirmaNavn, Vej, Firma.PostNr, Bynavn FROM Firma, Postnumre WHERE Firma.postnr=Postnumre.PostNr</command>
-Resultatet af ovenstående ser således ud:
+Resultatet af ovenstÃ¥ende ser sÃ¥ledes ud:
 </para>
 
 <table id="db-resultat">
-<title>Søgeresultat: Firma+Postnumre</title>
+<title>SÃ¸geresultat: Firma+Postnumre</title>
 <tgroup cols="4" align="char">
 <thead><row>
  <entry>FirmaNavn</entry>
@@ -168,64 +168,64 @@ Resultatet af ovenstående ser således ud:
  <entry>Vagabondos</entry> 
  <entry>Tagensvej 100</entry>
  <entry>2200</entry> 
- <entry>København N</entry>
+ <entry>KÃ¸benhavn N</entry>
 </row>
 <row>
  <entry>DKUUG</entry> 
  <entry>Fruebjergvej 3</entry>
  <entry>2100</entry> 
- <entry>København Ø</entry>
+ <entry>KÃ¸benhavn Ã˜</entry>
 </row>
 <row>
  <entry>Niels Bohr Institutet</entry> 
  <entry>Blegdamsvej 17-21</entry>
  <entry>2100</entry> 
- <entry>København Ø</entry>
+ <entry>KÃ¸benhavn Ã˜</entry>
 </row>
 </tbody>
 </tgroup>
 </table>
 
 <para>
-Det der skete med SQL-kommandoen, var at der blev udført en 'join'
-imellem de to tabeller, således at postnumrene blev parret fra hver
+Det der skete med SQL-kommandoen, var at der blev udfÃ¸rt en 'join'
+imellem de to tabeller, sÃ¥ledes at postnumrene blev parret fra hver
 tabel.
 </para>
 
 <para>
-Dette eksempel er selvfølgelig nemt at lave med
+Dette eksempel er selvfÃ¸lgelig nemt at lave med
 <acronym>ASCII</acronym> tekst-filer,
-men prøv at forestil dig at der var tre eller flere tabeller.
+men prÃ¸v at forestil dig at der var tre eller flere tabeller.
 </para>
 
 <para>
-Det vil være for vidt at komme ind på alle de SQL-kommandoer man kan
-lave i denne bog, da der findes mange gode bøger om emnet på dansk, og
-ikke mindst på engelsk. Er bøger uden for rækkevidde, er der god hjælp
-at hente på nettet.  Se MySQL og PostgreSQL's hjælpesider.
+Det vil vÃ¦re for vidt at komme ind pÃ¥ alle de SQL-kommandoer man kan
+lave i denne bog, da der findes mange gode bÃ¸ger om emnet pÃ¥ dansk, og
+ikke mindst pÃ¥ engelsk. Er bÃ¸ger uden for rÃ¦kkevidde, er der god hjÃ¦lp
+at hente pÃ¥ nettet.  Se MySQL og PostgreSQL's hjÃ¦lpesider.
 </para>
 
 <para>
-Læsning af data er nok den mest brugte SQL-kommando, så den bliver
-lige beskrevet i korte træk.  I sin simpleste form kan man skrive
+LÃ¦sning af data er nok den mest brugte SQL-kommando, sÃ¥ den bliver
+lige beskrevet i korte trÃ¦k.  I sin simpleste form kan man skrive
 <command>SELECT * FROM Firma</command>, der giver alle felter fra
-tabellen 'Firma' i tilfældig rækkefølge.  Er det kun 'FirmaNavn' og
-'PostNr' man ønsker udskrevet, skrives <command>SELECT
-FirmaNavn,PostNr FROM Firma</command>.  Data kommer i tilfældig
-rækkefølge, så der må lige sortering på <command>SELECT
+tabellen 'Firma' i tilfÃ¦ldig rÃ¦kkefÃ¸lge.  Er det kun 'FirmaNavn' og
+'PostNr' man Ã¸nsker udskrevet, skrives <command>SELECT
+FirmaNavn,PostNr FROM Firma</command>.  Data kommer i tilfÃ¦ldig
+rÃ¦kkefÃ¸lge, sÃ¥ der mÃ¥ lige sortering pÃ¥ <command>SELECT
 FirmaNavn,PostNr FROM Firma ORDER BY PostNr</command>.
 </para>
 
 <para>
-Senere i bogen er nogle eksempler på hvordan man praktisk bruger SQL
-til noget der har med rigtige brugere at gøre.  Til disse eksempler
-anvendes følgende liste af SQL-kommandoer som basis, og listen giver
-samtidigt de mest brugte SQL-kommandoer.  Kommandoerne gør følgende:
+Senere i bogen er nogle eksempler pÃ¥ hvordan man praktisk bruger SQL
+til noget der har med rigtige brugere at gÃ¸re.  Til disse eksempler
+anvendes fÃ¸lgende liste af SQL-kommandoer som basis, og listen giver
+samtidigt de mest brugte SQL-kommandoer.  Kommandoerne gÃ¸r fÃ¸lgende:
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
 <listitem><para>Opretter en tabel med to felter</para></listitem>
-<listitem><para>Tilføjer en post til tabellen</para></listitem>
+<listitem><para>TilfÃ¸jer en post til tabellen</para></listitem>
 <listitem><para>Retter en post i tabellen</para></listitem>
 <listitem><para>Udskriver alle poster</para></listitem>
 <listitem><para>Sletter en post</para></listitem>
@@ -246,7 +246,7 @@ De viste SQL-kommandoer er helt basale og virker med alle SQL-databaser.
 </para>
 
 <para>
-Læs mere om SQL-kommandoer på
+LÃ¦s mere om SQL-kommandoer pÃ¥
 <ulink url="http://www.thomasheinen.de/courses/sql/A_SQL_Primer.htm">http://www.thomasheinen.de/courses/sql/A_SQL_Primer.htm</ulink>,
 <ulink url="http://www.sqlcourse.com/">http://www.sqlcourse.com/</ulink>
 og
@@ -265,12 +265,12 @@ og
 PostgreSQL er den mest avancerede frie SQL-database der findes
 til Linux.  PostgreSQL startede som et studieprojekt, og har udviklet
 sig til fuldt professionel database med alle de avancerede teknologier
-som kræves idag: views, triggers, stored-procedures, transactions
+som krÃ¦ves idag: views, triggers, stored-procedures, transactions
 sub-select etc.
 </para>
 
 <para>
-Installation af PostgreSQL fra en RPM-fil er den nemmeste måde at installere på.
+Installation af PostgreSQL fra en RPM-fil er den nemmeste mÃ¥de at installere pÃ¥.
 Efter installationen startes PostgreSQL.
 </para>
 
@@ -281,20 +281,20 @@ Efter installationen startes PostgreSQL.
 </screen>
 
 <para>
-En nem måde at bruge PostgreSQL fra en webserver er ved at
+En nem mÃ¥de at bruge PostgreSQL fra en webserver er ved at
 oprette en bruger med navnet <filename>nobody</filename>.
 Apache starter webserverne som brugeren <filename>nobody</filename>
-og så behøver
+og sÃ¥ behÃ¸ver
 man ikke angive adgangskoder i sine webprogrammer, idet PostgreSQL
-ser at man er <filename>nobody</filename> når man åbner en database.
+ser at man er <filename>nobody</filename> nÃ¥r man Ã¥bner en database.
 </para>
 
 <para>
-Før <filename>nobody</filename> kan få adgang skal <filename>nobody</filename>
+FÃ¸r <filename>nobody</filename> kan fÃ¥ adgang skal <filename>nobody</filename>
 oprettes som PostgreSQL bruger.
 Login som brugeren <filename>postgres</filename> og opret brugeren
 <filename>nobody</filename>.
-Kender du ikke <filename>postgres</filename> passwordet, kan det gøres således:
+Kender du ikke <filename>postgres</filename> passwordet, kan det gÃ¸res sÃ¥ledes:
 </para>
 
 <screen>
@@ -303,11 +303,11 @@ Kender du ikke <filename>postgres</filename> passwordet, kan det gøres således:
 </screen>
 
 <para>
-<filename>nobody</filename> skal også have en database.
+<filename>nobody</filename> skal ogsÃ¥ have en database.
 Login som <filename>nobody</filename>.
 Ved ikke at angive databasenavnet <database>nobody</database> er det
-default navn når <command>createdb</command> køres.
-Kender du ikke <filename>nobody</filename> passwordet, kan det gøres således:
+default navn nÃ¥r <command>createdb</command> kÃ¸res.
+Kender du ikke <filename>nobody</filename> passwordet, kan det gÃ¸res sÃ¥ledes:
 </para>
 
 <screen>
@@ -316,19 +316,19 @@ Kender du ikke <filename>nobody</filename> passwordet, kan det gøres således:
 </screen>
 
 <para>
-Databasen kan nu anvendes med de ganske få kommandoer SQL har.  Der er
-få forskelle i de forskellige SQL-databaser der findes, men du lærer
-hurtigt de få forskelle der er, hvis du skifter over til en anden
+Databasen kan nu anvendes med de ganske fÃ¥ kommandoer SQL har.  Der er
+fÃ¥ forskelle i de forskellige SQL-databaser der findes, men du lÃ¦rer
+hurtigt de fÃ¥ forskelle der er, hvis du skifter over til en anden
 database.  Her er brugt SQL-kommandoer som virker med alle de
-SQL-databaser som du vil komme i nærheden af.  Følgende liste af
-kommandoer opretter en tabel, indsætter en post, retter den samme post,
-udlæser indholdet af tabellen, sletter en post og sletter tabellen.
+SQL-databaser som du vil komme i nÃ¦rheden af.  FÃ¸lgende liste af
+kommandoer opretter en tabel, indsÃ¦tter en post, retter den samme post,
+udlÃ¦ser indholdet af tabellen, sletter en post og sletter tabellen.
 </para>
 
 <programlisting>
 -- fil: create.sql
 -- PostgreSQL/LinuxBog
--- Kør dette program:
+-- KÃ¸r dette program:
 --  psql nobody &lt; create.sql
 CREATE TABLE linuxbog(kapitel INT, titel VARCHAR(40));
 INSERT INTO linuxbog(kapitel, titel) VALUES(0, 'Indledning');
@@ -339,7 +339,7 @@ DROP TABLE linuxbog;
 </programlisting>
 
 <para>
-SQL-kommandoerne kan nemt indlæses fra en fil med kommandoen
+SQL-kommandoerne kan nemt indlÃ¦ses fra en fil med kommandoen
 </para>
 
 <screen>
@@ -348,20 +348,20 @@ SQL-kommandoerne kan nemt indlæses fra en fil med kommandoen
 
 <para>
 Hvis du lige undlader at slette posterne (DELETE) og tabellen (DROP),
-kan eksemplet bruges sammen med de efterfølgende programmer i Shell, PHP,
-Perl og Python.  Bemærk at hver linje er afsluttet med semi-kolon ';'.
+kan eksemplet bruges sammen med de efterfÃ¸lgende programmer i Shell, PHP,
+Perl og Python.  BemÃ¦rk at hver linje er afsluttet med semi-kolon ';'.
 Semi-kolon bruges kun med programmet <filename>psql</filename> og ikke
 i andre fortolkede eller oversatte sprog.
 </para>
 
 <para>
  Den interaktive SQL-fortolker, <command>psql</command>, kan anvendes til
- meget, men skal man have et rigtigt program, bør man bruge et mere generelt
- programmeringssprog end SQL og så snakke med databasen gennem et bibliotek.
+ meget, men skal man have et rigtigt program, bÃ¸r man bruge et mere generelt
+ programmeringssprog end SQL og sÃ¥ snakke med databasen gennem et bibliotek.
  Linux har et bredt udvalg af sprog der kan kommunikere med de SQL-databaser
- der findes til Linux.  Næsten alle
+ der findes til Linux.  NÃ¦sten alle
 sprog kan bruges sammen med alle databaserne.  Vi har her valgt at
-bruge PostgreSQL som basis, og vise eksempler på hvordan man anvender
+bruge PostgreSQL som basis, og vise eksempler pÃ¥ hvordan man anvender
 disse sammen med:
 </para>
 
@@ -376,19 +376,19 @@ disse sammen med:
 I <filename>/usr/doc/</filename> har du hele PostgreSQL-manualen,
 typisk her:
 <ulink url="file:/usr/share/doc/postgresql-7.4.2/html/">file:/usr/share/doc/postgresql-7.4.2/html/</ulink>.
-Har du en anden version af PostgreSQL, så start her 
+Har du en anden version af PostgreSQL, sÃ¥ start her 
 <ulink url="file:/usr/share/doc/">file:/usr/share/doc/</ulink>
 eller
-<ulink url="file:/usr/doc/">file:/usr/doc/</ulink>. Du kan også
+<ulink url="file:/usr/doc/">file:/usr/doc/</ulink>. Du kan ogsÃ¥
 bruge kommandoen <command> locate app-postgres.html </command>
 til at lokalisere stedet, hvor html-manualen er installeret.
-Desuden ligger manualen også på nettet 
+Desuden ligger manualen ogsÃ¥ pÃ¥ nettet 
 <ulink url="http://www.postgresql.org/docs/7.4/static/index.html">http://www.postgresql.org/docs/7.4/static/index.html</ulink>.
 
 </para>
 
 <para>
-PostgreSQL har sin hjemmeside på
+PostgreSQL har sin hjemmeside pÃ¥
 <ulink url="http://www.postgresql.org/">http://www.postgresql.org/</ulink>.
 </para>
 
@@ -418,10 +418,10 @@ PostgreSQL-HOWTO giver et godt overblik
 
 <para>
 Kommandofortolkerprogrammer er ikke det mest avancerede, man kan lave, men er
-alligevel særdeles anvendeligt til at man hurtigt kan
-få lavet lidt database-tilgang alligevel.
-For at køre de følgende eksempler, kræves kun at PostgreSQL er installeret.
-<command>psql</command> har en option så man kan skrive
+alligevel sÃ¦rdeles anvendeligt til at man hurtigt kan
+fÃ¥ lavet lidt database-tilgang alligevel.
+For at kÃ¸re de fÃ¸lgende eksempler, krÃ¦ves kun at PostgreSQL er installeret.
+<command>psql</command> har en option sÃ¥ man kan skrive
 <acronym>SQL</acronym>-kommandoer som parameter direkte fra kommandolinjen.
 </para>
 
@@ -431,12 +431,12 @@ For at køre de følgende eksempler, kræves kun at PostgreSQL er installeret.
 
 <para>
 En anden option giver output som HTML.
-Har du Apache installeret kan der nu laves et simpelt udtræk til web, ved at
-lægge et lille kommandofortolkerprogram i <filename>cgi-bin</filename>.
-Apache kan have dette sub-dir forskellige steder, så den nemmeste måde at
+Har du Apache installeret kan der nu laves et simpelt udtrÃ¦k til web, ved at
+lÃ¦gge et lille kommandofortolkerprogram i <filename>cgi-bin</filename>.
+Apache kan have dette sub-dir forskellige steder, sÃ¥ den nemmeste mÃ¥de at
 finde det er med kommandoen <command>locate cgi-bin</command>.
-Placér programmet <filename>pgsql.sh</filename> i <filename>cgi-bin</filename>
-og gør det kørbart med kommandoen <command>chmod +x pgsql.sh</command>.
+PlacÃ©r programmet <filename>pgsql.sh</filename> i <filename>cgi-bin</filename>
+og gÃ¸r det kÃ¸rbart med kommandoen <command>chmod +x pgsql.sh</command>.
 </para>
 
 <programlisting>
@@ -452,12 +452,12 @@ echo "&lt;/HTML&gt;"
 <para>
 CGI-programmet kan nu startes fra din browser med URL'en
 <ulink url="http://localhost/cgi-bin/pgsql.sh">http://localhost/cgi-bin/pgsql.sh</ulink>.
-Til test kan programmet også køres fra kommandolinjen:
-<command>./pgsql.sh</command> hvorved output kommer ud på skærmen.
+Til test kan programmet ogsÃ¥ kÃ¸res fra kommandolinjen:
+<command>./pgsql.sh</command> hvorved output kommer ud pÃ¥ skÃ¦rmen.
 </para>
 
 <para>
-Ovenstående SQL-kommando er nok ikke lige det du vil,
+OvenstÃ¥ende SQL-kommando er nok ikke lige det du vil,
 men nok mere noget i retning af:
 </para>
 
@@ -466,21 +466,21 @@ psql nobody -H -T "cellspacing='0'" -c "SELECT kapitel AS \"Bog kapitel\", titel
 </programlisting>
 
 <para>
-I ovenstående kommer der en pænere ramme uden om med option 
+I ovenstÃ¥ende kommer der en pÃ¦nere ramme uden om med option 
 <option>-T "cellspacing='0'"</option>.
-Så er hver kolonne angivet, f.eks. <option>kapitel</option>.
+SÃ¥ er hver kolonne angivet, f.eks. <option>kapitel</option>.
 Typisk har hver kolonne et forkortet navn, hvilket ikke ser godt ud i en tabel.
-Ved at skrive <option>AS \"Bog kapitel\"</option> får kolonnen et andet navn.
-<option>ORDER BY kapitel DESC</option> sortere på 'kapitel' og DESC gør det i modsat orden.
-<option>LIMIT 10</option> gør at der kun kommer 10 rækker,
-og <option>OFFSET 0</option> fortæller at der skal startes med række 0.
+Ved at skrive <option>AS \"Bog kapitel\"</option> fÃ¥r kolonnen et andet navn.
+<option>ORDER BY kapitel DESC</option> sortere pÃ¥ 'kapitel' og DESC gÃ¸r det i modsat orden.
+<option>LIMIT 10</option> gÃ¸r at der kun kommer 10 rÃ¦kker,
+og <option>OFFSET 0</option> fortÃ¦ller at der skal startes med rÃ¦kke 0.
 </para>
 
 <para>
-Kommandofortolkerprogrammer er gode til små simple test, men man skal nok holde sig
-fra at lave større programmer.  Muligheden er der, og det virker!  I
-de næste afsnit vises det samme eksempel i PHP, Perl og Python, som er
-bedre til at håndtere de større programmer.
+Kommandofortolkerprogrammer er gode til smÃ¥ simple test, men man skal nok holde sig
+fra at lave stÃ¸rre programmer.  Muligheden er der, og det virker!  I
+de nÃ¦ste afsnit vises det samme eksempel i PHP, Perl og Python, som er
+bedre til at hÃ¥ndtere de stÃ¸rre programmer.
 </para>
 </sect2><!-- db-pgsql-shell -->
 
@@ -497,11 +497,11 @@ Har du lidt erfaring med programmering i andre sprog, kommer du hurtigt igang me
 
 <para>
 <application>PHP</application> med <application>PostgreSQL</application> interface installeres nemmest fra RPM-filer.
-Mandrake 7.0 har modulerne færdigpakket, som kan hentes på
+Mandrake 7.0 har modulerne fÃ¦rdigpakket, som kan hentes pÃ¥
 <ulink url="http://rpmfind.net/linux/RPM/mandrake/7.0/Mandrake/RPMS/System_Environment_Daemons.html">http://rpmfind.net/linux/RPM/mandrake/7.0/Mandrake/RPMS/System_Environment_Daemons.html</ulink>.
 PHP i en nyere version kan oftest findes hos Troels Arvin
 <ulink url="http://www.fsr.ku.dk/people/troels/rpms/php/">http://www.fsr.ku.dk/people/troels/rpms/php/</ulink>.
-<application>PostgreSQL</application> har du installeret, så du skal kun hente følgende:
+<application>PostgreSQL</application> har du installeret, sÃ¥ du skal kun hente fÃ¸lgende:
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
@@ -517,7 +517,7 @@ PHP i en nyere version kan oftest findes hos Troels Arvin
 </screen>
 
 <para>
-Hvis ikke <application>Apache</application> er startet nu, så gør det.
+Hvis ikke <application>Apache</application> er startet nu, sÃ¥ gÃ¸r det.
 </para>
 
 <screen>
@@ -531,10 +531,10 @@ Eksemplet <filename>pgsql.php3</filename> bruger den tabel der blev beskrevet i 
 <programlisting>
 &lt;html&gt;&lt;head&gt;&lt;TITLE&gt;LinuxBog PostgreSQL PHP&lt;/TITLE&gt;&lt;/head&gt;
 &lt;?  // Her skiftes der fra HTML til PHP-kode med tegnet '&lt;?'
-  // Åben en forbindelse til PostgreSQL
+  // Ã…ben en forbindelse til PostgreSQL
   // Ved ikke at angive brugernavn, er det 'nobody' der er brugeren
   $conn = pg_connect("");
-  // Udfør en læsning fra tabellen 'linuxbog'
+  // UdfÃ¸r en lÃ¦sning fra tabellen 'linuxbog'
   $res = pg_exec($conn, "SELECT * FROM linuxbog ORDER BY kapitel");
   // For alle poster (linjer), udskriv indholdet
   for ($n = 0; $n &lt; pg_numrows($res); $n++ ) {
@@ -549,7 +549,7 @@ Eksemplet <filename>pgsql.php3</filename> bruger den tabel der blev beskrevet i 
 </programlisting>
 
 <para>
-Resultatet af ovenstående ser således ud i en browser
+Resultatet af ovenstÃ¥ende ser sÃ¥ledes ud i en browser
 </para>
 
 <programlisting>
@@ -557,7 +557,7 @@ Resultatet af ovenstående ser således ud i en browser
 </programlisting>
 
 <para>
-PHP er frit programmel og kan hentes på
+PHP er frit programmel og kan hentes pÃ¥
 <ulink url="http://dk.php.net/">http://dk.php.net/</ulink>.
 </para>
 </sect2><!-- db-pgsql-php -->
@@ -569,25 +569,25 @@ PHP er frit programmel og kan hentes på
 <para>
 Perl er effektivt programmeringssprog til mange ting.  Perl anvendtes
 i starten ofte til behandling af tekstfiler, men efter de mange
-år Perl har været fremme, kan man arbejde direkte med databaser.  Om
+Ã¥r Perl har vÃ¦ret fremme, kan man arbejde direkte med databaser.  Om
 det drejer sig om et kommandolinje-program eller et webprogram,
-så kan Perl klare den opgave.  
+sÃ¥ kan Perl klare den opgave.  
 </para>
 
 <para>
-Ved en normal Linux-installation får du automatisk installeret Perl.
-Der findes mange moduler til Perl, så du får ikke dem alle installeret.
-For at bruge PostgreSQL fra Perl, kræves at du installere <acronym>DBI</acronym> og <acronym>DBD-Pg</acronym>.
-Det forudsættes at PostgreSQL er installeret.
+Ved en normal Linux-installation fÃ¥r du automatisk installeret Perl.
+Der findes mange moduler til Perl, sÃ¥ du fÃ¥r ikke dem alle installeret.
+For at bruge PostgreSQL fra Perl, krÃ¦ves at du installere <acronym>DBI</acronym> og <acronym>DBD-Pg</acronym>.
+Det forudsÃ¦ttes at PostgreSQL er installeret.
 Modulerne kan hentes fra 
-<ulink url="http://sunsite.dk/CPAN/modules/by-category/07_Database_Interfaces">http://sunsite.dk/CPAN/modules/by-category/07_Database_Interfaces</ulink>. Dernæst finder du de to pakker her:
+<ulink url="http://sunsite.dk/CPAN/modules/by-category/07_Database_Interfaces">http://sunsite.dk/CPAN/modules/by-category/07_Database_Interfaces</ulink>. DernÃ¦st finder du de to pakker her:
 <indexterm><primary>Perl</primary><secondary>DBI</secondary></indexterm>
 <itemizedlist mark="bullet" spacing="compact">
 <listitem><para>/DBI/DBI-1.13.tar.gz 160KB</para></listitem>
 <listitem><para>/DBD/DBD-Pg-0.93.tar.gz 40KB</para></listitem>
 </itemizedlist>
 
-Installationen er meget nem og står beskrevet i begge pakker, men lad
+Installationen er meget nem og stÃ¥r beskrevet i begge pakker, men lad
 os lige tage den med her for en sikkerheds skyld.
 </para>
 <screen>
@@ -600,7 +600,7 @@ os lige tage den med her for en sikkerheds skyld.
 </screen>
 
 <para>
-Fremgangsmåden er næsten den samme for DBD-Pg-0.93.tar.gz.
+FremgangsmÃ¥den er nÃ¦sten den samme for DBD-Pg-0.93.tar.gz.
 </para>
 
 <screen>
@@ -615,27 +615,27 @@ Fremgangsmåden er næsten den samme for DBD-Pg-0.93.tar.gz.
 </screen>
 
 <para>
-Her er et lille eksempel i Perl der læser fra PostgreSQL.  Eksemplet
+Her er et lille eksempel i Perl der lÃ¦ser fra PostgreSQL.  Eksemplet
 bruger den tabel der blev oprettet i 
 <xref linkend="db-pgsql"/> om PostgreSQL.
-Tabellen <database>linuxbog</database> åbnes og alle poster udskrives.
+Tabellen <database>linuxbog</database> Ã¥bnes og alle poster udskrives.
 </para>
 
 <programlisting>
 #!/usr/bin/perl
 # Inkluder DBI-modulet
 use DBI;
-# Åben en DatabaseHandle til PostgreSQL
+# Ã…ben en DatabaseHandle til PostgreSQL
 $dbh = DBI-&gt;connect("DBI:Pg:dbname=nobody");
-# Forbered en SQL-kommando for læsning af een tabel
+# Forbered en SQL-kommando for lÃ¦sning af een tabel
 $sth = $dbh-&gt;prepare("SELECT * FROM linuxbog ORDER BY kapitel");
-# Udfør SQL-kommandoen
+# UdfÃ¸r SQL-kommandoen
 $sth-&gt;execute;
 # For alle poster (linjer), udskriv indholdet
 while (($kapitel,$titel) = $sth-&gt;fetchrow) {
   print "$kapitel $titel\n";
 }
-# Nedlæg StatementHandle
+# NedlÃ¦g StatementHandle
 $sth-&gt;finish;
 # Luk forbindelsen til PostgreSQL
 $dbh-&gt;disconnect;
@@ -666,19 +666,19 @@ og
 
 <para>
 Python er et af de nyere fortolkede sprog der vinder kraftigt frem.
-Dette afsnit vil kun berøre Python's forbindelse til PostgreSQL.  Du
-kan læse mere om Python i bogen <emphasis>"Linux - friheden til at
+Dette afsnit vil kun berÃ¸re Python's forbindelse til PostgreSQL.  Du
+kan lÃ¦se mere om Python i bogen <emphasis>"Linux - friheden til at
 programmere"</emphasis>.
 </para>
 
 <para>
-For at bruge Python sammen med PostgreSQL skal du først have
-installeret selve Python, og dernæst et PostgreSQL-modul til Python.
-Python kommer med de fleste distributioner og måske allerede
-installeret på din maskine. PostgreSQL-modulet findes sammen med
+For at bruge Python sammen med PostgreSQL skal du fÃ¸rst have
+installeret selve Python, og dernÃ¦st et PostgreSQL-modul til Python.
+Python kommer med de fleste distributioner og mÃ¥ske allerede
+installeret pÃ¥ din maskine. PostgreSQL-modulet findes sammen med
 PostgreSQL, f.eks. her: <ulink
 url="ftp://ftp.sunsite.dk/disk1/www.postgresql.org/pub/binary/v7.0/redhat-RPM/RPMS/redhat-6.x/">ftp://ftp.sunsite.dk/disk1/www.postgresql.org/pub/binary/v7.0/redhat-RPM/RPMS/redhat-6.x/</ulink>.
-Installationen er følgende:
+Installationen er fÃ¸lgende:
 </para>
 
 <screen>
@@ -687,19 +687,19 @@ Installationen er følgende:
 </screen>
 
 <para>
-Her er et lille eksempel i Python der læser fra PostgreSQL.  Eksemplet
+Her er et lille eksempel i Python der lÃ¦ser fra PostgreSQL.  Eksemplet
 bruger den tabel der blev oprettet i
 <xref linkend="db-pgsql"/> om PostgreSQL.
-Tabellen <database>linuxbog</database> åbnes og alle poster udskrives.
+Tabellen <database>linuxbog</database> Ã¥bnes og alle poster udskrives.
 </para>
 
 <programlisting>
 #!/usr/bin/python
 # Inkluder fra postgresql (pg) modulet
 from pg import DB
-# Åbne en forbindelse til databasen "nobody"
+# Ã…bne en forbindelse til databasen "nobody"
 dbc = DB("nobody")
-# Udfør SQL kommando
+# UdfÃ¸r SQL kommando
 dbqo = dbc.query("SELECT * FROM linuxbog ORDER BY kapitel")
 # For alle poster (linjer), udskriv kapitel og titel
 for data in dbqo.dictresult():
@@ -709,9 +709,9 @@ dbc.close()
 </programlisting>
 
 <para>
-Gem filen som <filename>pgsql.py</filename> og gør den kørbar
+Gem filen som <filename>pgsql.py</filename> og gÃ¸r den kÃ¸rbar
 med kommandoen <command>chmod +x pgsql.py</command>.
-Og prøv så programmet.
+Og prÃ¸v sÃ¥ programmet.
 </para>
 
 <screen>
@@ -719,7 +719,7 @@ Og prøv så programmet.
 </screen>
 
 <para>
-Læs mere om Python <!--i XREF linkend="python-sect1" og på--> hjemmesiden
+LÃ¦s mere om Python <!--i XREF linkend="python-sect1" og pÃ¥--> hjemmesiden
 <ulink url="http://www.python.org/">http://www.python.org/</ulink>.
 </para>
 
@@ -732,48 +732,48 @@ Læs mere om Python <!--i XREF linkend="python-sect1" og på--> hjemmesiden
 <indexterm><primary>Databaser</primary><secondary>MySQL</secondary></indexterm>
 <indexterm><primary>SQL</primary><secondary>MySQL</secondary></indexterm>
 
-<!-- af Frank M.G. Jørgensen <gajda@iname.com> -->
+<!-- af Frank M.G. JÃ¸rgensen <gajda@iname.com> -->
 
 <para>
-MySQL er et stærkt SQL-database program, som folkene bag ikke tøver
-med at udråbe som "en af de hurtigste databaser, overhovedet"
+MySQL er et stÃ¦rkt SQL-database program, som folkene bag ikke tÃ¸ver
+med at udrÃ¥be som "en af de hurtigste databaser, overhovedet"
 </para>
 
 <para>
-Siden MySQL i sommeren 2000 ændrede sine licensbetingelser, sådan at alle
+Siden MySQL i sommeren 2000 Ã¦ndrede sine licensbetingelser, sÃ¥dan at alle
 fremtidige versioner af MySQL bliver udgivet under GPL-licensen,
-er MySQL efterhånden blevet et fast indslag i alle de store Linux-distributioner.
+er MySQL efterhÃ¥nden blevet et fast indslag i alle de store Linux-distributioner.
 </para>
 
 <!-- RPM-INSTALLATION -->
 <para>
 Hos MySQL anbefaler man dog, at Mandrake-(8.x) og RedHat(7.x)-brugere installerer
-MySQL ved hjælp af rpm-pakker hentet fra MySQL's websted, da distributions-pakkerne
-er kompileret med en version af gcc, der er kendt for at være problematisk
-i forhold til MySQL. Det kan derfor have ført til fejlbehæftede rpm-pakker, og
+MySQL ved hjÃ¦lp af rpm-pakker hentet fra MySQL's websted, da distributions-pakkerne
+er kompileret med en version af gcc, der er kendt for at vÃ¦re problematisk
+i forhold til MySQL. Det kan derfor have fÃ¸rt til fejlbehÃ¦ftede rpm-pakker, og
 det sikreste er derfor at hente pakkerne hos MySQL.
 </para>
 
 <para> 
-Hvis formålet med øvelsen er at "prøvekøre" en MySQL-installation, kan der dog næppe
+Hvis formÃ¥let med Ã¸velsen er at "prÃ¸vekÃ¸re" en MySQL-installation, kan der dog nÃ¦ppe
 ske noget ved at installere pakkerne fra distributions-cd-rommen..
-Hvis du vælger, at installere fra cd-rom'en - og har plads nok - så installér blot alle
-MySQL-pakkerne, så skulle du være kørende.
+Hvis du vÃ¦lger, at installere fra cd-rom'en - og har plads nok - sÃ¥ installÃ©r blot alle
+MySQL-pakkerne, sÃ¥ skulle du vÃ¦re kÃ¸rende.
 </para>
 
 <para>
-Hvis du vælger at hente de anbefalede pakker fra nettet, kan de hentes på adressen:
+Hvis du vÃ¦lger at hente de anbefalede pakker fra nettet, kan de hentes pÃ¥ adressen:
 <ulink url="http://www.mysql.com">www.mysql.com</ulink>,
 eller fra sunsite.dk's danske spejling, <ulink
 url="http://sunsite.dk/mysql/">sunsite.dk/mysql/</ulink> De
-nyeste versioner af MySQL er udviklingsversionerne, og bør derfor
-undgås. Den version, der er benævnt "stable release", eller "recommended"
-(i skrivende stund version 3.23.49) er den du ønsker at hente.
+nyeste versioner af MySQL er udviklingsversionerne, og bÃ¸r derfor
+undgÃ¥s. Den version, der er benÃ¦vnt "stable release", eller "recommended"
+(i skrivende stund version 3.23.49) er den du Ã¸nsker at hente.
 </para>
 
 
 <para>
-For at opnå en brugbar installation skal du som minimum hente og installere følgende pakker:
+For at opnÃ¥ en brugbar installation skal du som minimum hente og installere fÃ¸lgende pakker:
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
@@ -782,8 +782,8 @@ For at opnå en brugbar installation skal du som minimum hente og installere følg
 </itemizedlist>
 
 <para>
-Når du nu er i gang, så vil følgende pakker sikkert gøre livet nemmere på lang sigt
-(de er for eksempel krævede i forbindelse med installationen af PHP med MySQL-understøttlse - læs herom senere)
+NÃ¥r du nu er i gang, sÃ¥ vil fÃ¸lgende pakker sikkert gÃ¸re livet nemmere pÃ¥ lang sigt
+(de er for eksempel krÃ¦vede i forbindelse med installationen af PHP med MySQL-understÃ¸ttlse - lÃ¦s herom senere)
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
@@ -793,7 +793,7 @@ Når du nu er i gang, så vil følgende pakker sikkert gøre livet nemmere på lang s
 
 
 <para>
-Pakkerne installeres på følgende måde
+Pakkerne installeres pÃ¥ fÃ¸lgende mÃ¥de
 </para>
 
 <screen>
@@ -808,9 +808,9 @@ Hvor X.XX.XX erstattes med versionsnummeret.
 </para>
 
 <para>
-Nu er MySQL installeret, og der er blevet skabt de relevante opstartsfiler således, at MySQL
-startes automatisk under opstart af maskinen. For at tjekke om programmet allerede kører, kan du
-prøve at indtaste
+Nu er MySQL installeret, og der er blevet skabt de relevante opstartsfiler sÃ¥ledes, at MySQL
+startes automatisk under opstart af maskinen. For at tjekke om programmet allerede kÃ¸rer, kan du
+prÃ¸ve at indtaste
 </para>
 
 <programlisting>
@@ -818,7 +818,7 @@ prøve at indtaste
 </programlisting>
 
 <para>
-Hvis du får vist versionsnummer, uptime mm., kører MySQL allerede. Hvis MySQL ikke kører, kan du
+Hvis du fÃ¥r vist versionsnummer, uptime mm., kÃ¸rer MySQL allerede. Hvis MySQL ikke kÃ¸rer, kan du
 starte den med:
 </para>
 
@@ -827,11 +827,11 @@ starte den med:
 </screen>
 
 <para>
-Nu er du parat til at gå i gang. Der er allerede under installationen
+Nu er du parat til at gÃ¥ i gang. Der er allerede under installationen
  oprettet en bruger, "root"
 (denne "root" har ikke noget med maskinens "root" at
- gøre - der er tale om MySQL's "superbruger")
-som har adgang til at foretage ændringer i databaserne.
+ gÃ¸re - der er tale om MySQL's "superbruger")
+som har adgang til at foretage Ã¦ndringer i databaserne.
 Denne bruger skal nu have et password:
 </para>
 
@@ -840,7 +840,7 @@ Denne bruger skal nu have et password:
 </screen>
 
 <para>
-Lad os nu prøve at oprette en database, som vi kalder "bog". Først starter vi klientprogrammet:
+Lad os nu prÃ¸ve at oprette en database, som vi kalder "bog". FÃ¸rst starter vi klientprogrammet:
 </para>
 
 <screen>
@@ -852,7 +852,7 @@ Nu er vi i forbindelse med MySQL og prompten skifter til en MySQL-prompt.
 </para>
 
 <para>
-Her følger så lidt (My)SQL-gymnastik. Først skal vi oprette en database
+Her fÃ¸lger sÃ¥ lidt (My)SQL-gymnastik. FÃ¸rst skal vi oprette en database
 </para>
 
 <screen>
@@ -860,7 +860,7 @@ Her følger så lidt (My)SQL-gymnastik. Først skal vi oprette en database
 </screen>
 
 <para>
-Dernæst vælger vi den nye base
+DernÃ¦st vÃ¦lger vi den nye base
 </para>
 
 <screen>
@@ -868,7 +868,7 @@ Dernæst vælger vi den nye base
 </screen>
 
 <para>
-Hvorpå vi opretter en simpel tabel i basen
+HvorpÃ¥ vi opretter en simpel tabel i basen
 </para>
 
 <screen>
@@ -877,7 +877,7 @@ Hvorpå vi opretter en simpel tabel i basen
 
 <para>
 En database uden indhold er der ikke meget sjov ved,
-så vi fylder lidt data på tabellen
+sÃ¥ vi fylder lidt data pÃ¥ tabellen
 </para>
 
 <screen>
@@ -886,7 +886,7 @@ så vi fylder lidt data på tabellen
 </screen>
 
 <para>
-Der er ikke noget "kapitel 0", så vi retter vores indtastning til "kapitel 1"
+Der er ikke noget "kapitel 0", sÃ¥ vi retter vores indtastning til "kapitel 1"
 </para>
 
 <screen>
@@ -902,7 +902,7 @@ Nu vil vi gerne se, hvilke data, der rent faktisk er i vores tabel
 </screen>
 
 <para>
-Og så sletter vi kapitel 1 (hvis du undlader at udføre de to sidste
+Og sÃ¥ sletter vi kapitel 1 (hvis du undlader at udfÃ¸re de to sidste
 trin, kan databasen bruges
 sammen med PHP-eksemplet i <xref linkend="db-mysql-php"/>.
 </para>
@@ -920,17 +920,17 @@ Og her sletter vi tabellen
 </screen>
 
 <para>
-Hvis du synes, at kommandolinje-klienten er lidt tung at danse med, så er du ikke den eneste.
-Heldigvis findes der flere alternativer. På MySQL's websted kan du
-under »download«-sektionen finde en lang liste over "contributed
-software", og på <ulink url="http://freshmeat.net">freshmeat.net</ulink>
+Hvis du synes, at kommandolinje-klienten er lidt tung at danse med, sÃ¥ er du ikke den eneste.
+Heldigvis findes der flere alternativer. PÃ¥ MySQL's websted kan du
+under Â»downloadÂ«-sektionen finde en lang liste over "contributed
+software", og pÃ¥ <ulink url="http://freshmeat.net">freshmeat.net</ulink>
 kan du ligeledes finde mange forskellige grafiske klientprogrammer. Et 
 program, der ser meget lovende ud er MySQL's eget MyCC, som i 
 skrivende stund kan hentes i en alpha-test-udgave fra MySQL's 
-»download«-sektion. Har du mod på at installere apache webserveren og PHP (se nedenfor) kan du
-hente det glimrende webbaserede program, phpMyAdmin, som gør
-livet ikke så lidt nemmere for den nye bruger (også for den
-øvede - for den sags skyld). Pakken kan
+Â»downloadÂ«-sektion. Har du mod pÃ¥ at installere apache webserveren og PHP (se nedenfor) kan du
+hente det glimrende webbaserede program, phpMyAdmin, som gÃ¸r
+livet ikke sÃ¥ lidt nemmere for den nye bruger (ogsÃ¥ for den
+Ã¸vede - for den sags skyld). Pakken kan
 hentes i forskellige komprimerede formater hos<ulink
 url="http://www.phpwizard.net/projects/phpMyAdmin/">www.phpwizard.net/projects/phpMyAdmin/ </ulink>
 </para>
@@ -939,12 +939,12 @@ url="http://www.phpwizard.net/projects/phpMyAdmin/">www.phpwizard.net/projects/p
 <para>
 MySQL er mere end blot et database program; det er en database-server.
 Det betyder, at man - hvis man er oprettet som bruger og er blevet
-tildelt de passende rettigheder - ved hjælp af et klient-program kan
-koble sig på serveren via internet, lave opslag, intaste data, ændre
+tildelt de passende rettigheder - ved hjÃ¦lp af et klient-program kan
+koble sig pÃ¥ serveren via internet, lave opslag, intaste data, Ã¦ndre
 data etc.  Disse muligheder falder udenfor dette kapitels rammer, men
-der findes et par tutorials på bl.a <ulink
+der findes et par tutorials pÃ¥ bl.a <ulink
 url="http://www.devshed.com">http://www.devshed.com</ulink>, der er
-værd at læse desangående.
+vÃ¦rd at lÃ¦se desangÃ¥ende.
 </para>
 
 <sect2 id="db-mysql-php">
@@ -956,13 +956,13 @@ værd at læse desangående.
 PHP er et fortolket sprog, der kan bruges til at skabe dynamiske
 websider. En af de helt store fordele ved PHP er evnen til at
 kommunikere med forskellige databaseprogrammer, og PHP "taler"
-usædvanlig godt med MySQL.
+usÃ¦dvanlig godt med MySQL.
 </para>
 
 <para>
-Før du kan bruge PHP, skal din webserver understøtte sproget.
-På et RedHat-system (7.x) opnås dette nemmest ved at installere
-følgende rpm-pakker fra distributions-cd-rommen:
+FÃ¸r du kan bruge PHP, skal din webserver understÃ¸tte sproget.
+PÃ¥ et RedHat-system (7.x) opnÃ¥s dette nemmest ved at installere
+fÃ¸lgende rpm-pakker fra distributions-cd-rommen:
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
@@ -986,8 +986,8 @@ Start Apache med kommandoen
 </screen>
 
 <para>
-Nu kan det ske, at Apache fortæller, at den ikke kan "determine local host...". I så fald skal
-du åbne /etc/httpd/conf/httpd.conf i din favorit-editor og finde frem til linjen
+Nu kan det ske, at Apache fortÃ¦ller, at den ikke kan "determine local host...". I sÃ¥ fald skal
+du Ã¥bne /etc/httpd/conf/httpd.conf i din favorit-editor og finde frem til linjen
 </para>
 
 <programlisting>
@@ -1000,9 +1000,9 @@ Fjern #-symbolet, gem og start Apache igen.
 
 <!-- PHP-EKSEMPEL -->
 <para>
-Her er et lille eksempel på, hvorledes Apache, PHP og MySQL kan arbejde
+Her er et lille eksempel pÃ¥, hvorledes Apache, PHP og MySQL kan arbejde
 sammen om at hente data fra en
-database i MySQL og præsentere dem på en webside.
+database i MySQL og prÃ¦sentere dem pÃ¥ en webside.
 Databasen der bruges, er basen "bog", som blev
 oprettet i <xref linkend="db-mysql"/>.
 </para>
@@ -1015,9 +1015,9 @@ oprettet i <xref linkend="db-mysql"/>.
 &lt;BODY&gt;
 &lt;?php  // Her skiftes der fra alm. HTML til PHP-kode
 
-$conn = mysql_connect("localhost","root","hemmeligt");  // Åben en forbindelse til MySQL
+$conn = mysql_connect("localhost","root","hemmeligt");  // Ã…ben en forbindelse til MySQL
 
-$sql="SELECT * FROM linuxbog ORDER BY kapitel";  // Udfør en læsning fra tabellen linuxbog
+$sql="SELECT * FROM linuxbog ORDER BY kapitel";  // UdfÃ¸r en lÃ¦sning fra tabellen linuxbog
 
 $res = mysql_db_query("bog",$sql);
 
@@ -1044,17 +1044,17 @@ mysql_close($conn);  // Luk forbindelsen
 </programlisting>
 
 <para>
-Kopier eventuelt dette eksempel, og indsæt det i et tomt dokument, som du gemmer som "test.php" i
+Kopier eventuelt dette eksempel, og indsÃ¦t det i et tomt dokument, som du gemmer som "test.php" i
 Apaches dokumentrod (/home/httpd/html/test.php). Kald filen igennem en webbrowser (http://localhost/test.php), 
 og se hvad der sker.
 </para>
 
 <para>
-Du kan læse meget mere om PHP på <ulink url="http://www.php.net">www.php.net</ulink>, og du kan
-finde tutorials og programmer på
+Du kan lÃ¦se meget mere om PHP pÃ¥ <ulink url="http://www.php.net">www.php.net</ulink>, og du kan
+finde tutorials og programmer pÃ¥
 <ulink url="http://www.devshed.com">www.devshed.com</ulink>,
 <ulink url="http://www.hotwired.com">www.hotwired.com</ulink>
-og mange, mange andre steder på nettet.
+og mange, mange andre steder pÃ¥ nettet.
 </para>
 
 </sect2><!-- db-mysql-php -->

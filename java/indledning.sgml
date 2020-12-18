@@ -3,23 +3,23 @@
 <title>Indledning</title>
 
 <sect1 id="java-indledningen">
-<title>Målgrupper</title>
+<title>MÃ¥lgrupper</title>
 
 <para>
-Denne bog er tiltænkt to målgrupper:
+Denne bog er tiltÃ¦nkt to mÃ¥lgrupper:
 </para>
 
 <itemizedlist mark="bullet">
 
 <listitem><para>
-Folk, der aldrig har prøvet at programmere før.
+Folk, der aldrig har prÃ¸vet at programmere fÃ¸r.
 Disse kan starte med <xref linkend="java-basal-prg"/>, Basal programmering og
-læse derfra.
+lÃ¦se derfra.
 </para></listitem>
 
 <listitem><para>
 Folk, der allerede kan programmere, og som har brug for
-et referenceværk, hvor man kan slå forskellige emner op, og få dem gennemgået
+et referencevÃ¦rk, hvor man kan slÃ¥ forskellige emner op, og fÃ¥ dem gennemgÃ¥et
 skridt for skridt.
 </para></listitem>
 </itemizedlist>
@@ -27,14 +27,14 @@ skridt for skridt.
 <!--
 <para>
 Der er derfor enkelte afsnit i bogen, som ikke er egnede til en
-kronologisk gennemlæsning.
+kronologisk gennemlÃ¦sning.
 </para>
 -->
 
 <para>
-Som nybegynder er det vigtigt at du forstå begreber som filsystemet og
-kommandolinjen inden du går igang med denne bog. Du kan læse om
-disse to emner i de andre Friheden til... bøger.
+Som nybegynder er det vigtigt at du forstÃ¥ begreber som filsystemet og
+kommandolinjen inden du gÃ¥r igang med denne bog. Du kan lÃ¦se om
+disse to emner i de andre Friheden til... bÃ¸ger.
 </para>
 
 </sect1>
@@ -43,23 +43,23 @@ disse to emner i de andre Friheden til... bøger.
 <title>Om bogens kilde - http://javabog.dk</title>
 
 <para>
-Størstedelen af den bog du læser i lige nu stammer egentligt fra lærebogen
+StÃ¸rstedelen af den bog du lÃ¦ser i lige nu stammer egentligt fra lÃ¦rebogen
 "Objektorienteret programmering i Java" af Jacob Nordfalk.
-Den kan findes på adressen <ulink url="http://javabog.dk/">http://javabog.dk</ulink>.
+Den kan findes pÃ¥ adressen <ulink url="http://javabog.dk/">http://javabog.dk</ulink>.
 </para>
 
 <para>
 I den trykte bog af Jacob Nordfalk findes en del ting som ikke ligger gratis
-tilgængelig på nettet, bl.a.:
+tilgÃ¦ngelig pÃ¥ nettet, bl.a.:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem><para>
-"Test dig selv"-afsnit hvor man kan tjekke om man har forstået det væsentligste.
+"Test dig selv"-afsnit hvor man kan tjekke om man har forstÃ¥et det vÃ¦sentligste.
 </para></listitem>
 
 <listitem><para>
-Resuméer der på punktform giver overblik over kapitlet.
+ResumÃ©er der pÃ¥ punktform giver overblik over kapitlet.
 </para></listitem>
 
 <listitem><para>
@@ -69,12 +69,12 @@ Avancerede afsnit med ekstra stof til dem der vil vide mere.
 
 
 <para>
-Det kan anbefales at købe den trykte bog hvis du er begynder og har brug
-for en pædagogisk lærebog.
-På hjemmesiden <ulink url="http://javabog.dk/">http://javabog.dk</ulink> kan du
-også hente programeksempler, forslag til læseplan, 
-undervisningsmateriale med ugesedler med øvelser, transparenter,
-løsningsforslag og meget andet.
+Det kan anbefales at kÃ¸be den trykte bog hvis du er begynder og har brug
+for en pÃ¦dagogisk lÃ¦rebog.
+PÃ¥ hjemmesiden <ulink url="http://javabog.dk/">http://javabog.dk</ulink> kan du
+ogsÃ¥ hente programeksempler, forslag til lÃ¦seplan, 
+undervisningsmateriale med ugesedler med Ã¸velser, transparenter,
+lÃ¸sningsforslag og meget andet.
 </para>
 </sect1>
 
@@ -84,132 +84,132 @@ løsningsforslag og meget andet.
 <indexterm><primary>Javas historien</primary></indexterm>
  
 <para>
-Der var en gang - sådan starter mange eventyr. På sin egen måde har Java også været
-et eventyr, ikke kun for SUN Micro Systems (SUN) men også for den store skare af
-udviklere der i tidens løb har taget sproget til sig på godt og ondt.
+Der var en gang - sÃ¥dan starter mange eventyr. PÃ¥ sin egen mÃ¥de har Java ogsÃ¥ vÃ¦ret
+et eventyr, ikke kun for SUN Micro Systems (SUN) men ogsÃ¥ for den store skare af
+udviklere der i tidens lÃ¸b har taget sproget til sig pÃ¥ godt og ondt.
 </para>
  
 <para>
-Tilbage i 1992 var der nogle visionære personer ansat hos SUN, der ønskede at
-definere et programmeringssprog samt et afviklingsmiljø, som kunne anvendes til
-at afvikles i små diskrete enheder. Det primære årsag til at kikke på denne
+Tilbage i 1992 var der nogle visionÃ¦re personer ansat hos SUN, der Ã¸nskede at
+definere et programmeringssprog samt et afviklingsmiljÃ¸, som kunne anvendes til
+at afvikles i smÃ¥ diskrete enheder. Det primÃ¦re Ã¥rsag til at kikke pÃ¥ denne
 opgave var, at hver gang en virksomhed skulle at udvikle en ny enhed med en
-indbygget mikroprocessor, skulle de også til at udvikle oversættere,
+indbygget mikroprocessor, skulle de ogsÃ¥ til at udvikle oversÃ¦ttere,
 operativsystem, enhedsprogrammer mv. Ud over denne relative store opgave,
-skulle de enkelte udviklere også bruge en del tid på at sætte sig ind i den
+skulle de enkelte udviklere ogsÃ¥ bruge en del tid pÃ¥ at sÃ¦tte sig ind i den
 nye hardware platform, og evt. nyt assembler sprog (C bliver typisk kun
-anvendt til større enheder med mere hukommelse og hurtigere processor).
+anvendt til stÃ¸rre enheder med mere hukommelse og hurtigere processor).
 </para>
  
 <para>
-SUN's tanke var at definere et simpelt letvægts afviklingsmiljø (virtual machine)
-som enkelt kunne implementeres på forskellige typer af processorer. Derved kunne
-udviklerne koncentrere sig om at udvikle funktionalitet i stedet for at prøve
-at forstå hvordan den underliggende arktitektur var opbygget.
+SUN's tanke var at definere et simpelt letvÃ¦gts afviklingsmiljÃ¸ (virtual machine)
+som enkelt kunne implementeres pÃ¥ forskellige typer af processorer. Derved kunne
+udviklerne koncentrere sig om at udvikle funktionalitet i stedet for at prÃ¸ve
+at forstÃ¥ hvordan den underliggende arktitektur var opbygget.
 </para>
  
 <para>
 Udviklingen af det sprog, der skulle programmeres i, tog udgangspunkt
 i C og C++, specielt mht.
-syntaks. Dette ville gøre det let for målgruppen, som typisk allerede kendte til
-især C, at komme hurtigt igang med udvikling af software.
+syntaks. Dette ville gÃ¸re det let for mÃ¥lgruppen, som typisk allerede kendte til
+isÃ¦r C, at komme hurtigt igang med udvikling af software.
 </para>
  
 <para>
-SUN's direktion besluttede at sætte en række midler af til et forskningsprojekt
-der skulle afdække mulighederne for en sådan platform. Projektet havde mange
-kodenavne, deriblandt "stealth project" og "project green". Efter et årstid
-havde gruppen fået defineret platformen og det var nu tid til at prøve tingene
+SUN's direktion besluttede at sÃ¦tte en rÃ¦kke midler af til et forskningsprojekt
+der skulle afdÃ¦kke mulighederne for en sÃ¥dan platform. Projektet havde mange
+kodenavne, deriblandt "stealth project" og "project green". Efter et Ã¥rstid
+havde gruppen fÃ¥et defineret platformen og det var nu tid til at prÃ¸ve tingene
 af i virkelighedens verden.
 </para>
  
 <para>
 Test-projektet (kendt under navnet "Star Seven") var en simpel PDA
 (Personal Digital Assistent - som PalmPilot). Projektet var en succes,
-de havde bevist at de kunne udvikle det samme produkt på væsentligt
+de havde bevist at de kunne udvikle det samme produkt pÃ¥ vÃ¦sentligt
 kortere tid end det normalt ville havde taget dem (faktor 3 i forhold
 til normalt), men SUN besluttede at sig for at markedet endnu ikke
-kunne bære et produkt af denne type (SUN skævede selvfølgelig til
-Apples PDA - Newton - som Apple, på trods af at produktet var rimelig
-modent, ikke kunne sælge).
+kunne bÃ¦re et produkt af denne type (SUN skÃ¦vede selvfÃ¸lgelig til
+Apples PDA - Newton - som Apple, pÃ¥ trods af at produktet var rimelig
+modent, ikke kunne sÃ¦lge).
 </para>
  
 <para>
 I stedet gik SUN i forhandlinger med bla. Times Warner om at implementere
-deres platform på såkaldte SetTop bokse, som er meget udbredte i bl.a. USA. Af
-ukendte årsager kunne Time Warner og SUN ikke blive enige, og aftalen
+deres platform pÃ¥ sÃ¥kaldte SetTop bokse, som er meget udbredte i bl.a. USA. Af
+ukendte Ã¥rsager kunne Time Warner og SUN ikke blive enige, og aftalen
 blev aldrig til noget.
 </para>
  
 <para>
-På det tidspunkt virkede det som om platformen ikke skulle blive til noget,
-projektet blev kørt lidt ud på et sidespor, men der blev arbejdet på
-livet løs i de små kontorer i Silicon Valley. På det tidspunkt hed
-programmeringssproget Oak - årsagen skulle efter sigende være, at James
-Gosling blev inspireret af et egetræ (eng. oak) der stod udenfor hans
-kontorvindue. Nu ville skæbnen blot at der allerede eksisterede et
+PÃ¥ det tidspunkt virkede det som om platformen ikke skulle blive til noget,
+projektet blev kÃ¸rt lidt ud pÃ¥ et sidespor, men der blev arbejdet pÃ¥
+livet lÃ¸s i de smÃ¥ kontorer i Silicon Valley. PÃ¥ det tidspunkt hed
+programmeringssproget Oak - Ã¥rsagen skulle efter sigende vÃ¦re, at James
+Gosling blev inspireret af et egetrÃ¦ (eng. oak) der stod udenfor hans
+kontorvindue. Nu ville skÃ¦bnen blot at der allerede eksisterede et
 firma der havde navnebeskyttet (trademark) navnet Oak Technologies.
-De brugte noget tid på at brainstorme omkring navnet og kom på navne som:
+De brugte noget tid pÃ¥ at brainstorme omkring navnet og kom pÃ¥ navne som:
 Silk, DNA, Aliva, Jolt, Ruby, WRL (WebRunnerLanguage), Lyric, Pepper,
-NetProse, Neon og Lingua Java (læs mere her:
+NetProse, Neon og Lingua Java (lÃ¦s mere her:
 <ulink url="http://www.javaworld.com/jw-10-1996/jw-10-javaname.html">
 http://www.javaworld.com/jw-10-1996/jw-10-javaname.html</ulink>).
 </para>
 
 <para>
 I starten af 1995 havde en af SUN's udviklere lavet en webbrowser i
-Java på en weekend (det siger nok mere om webbrowseren end om Java).
+Java pÃ¥ en weekend (det siger nok mere om webbrowseren end om Java).
 Det specielle ved denne webbrowser (senere kendt som HotJava) var
-at den kunne afvikle Java indlejret i HTML-siden, hvilket var fuldstændigt
-nyt på dette tidspunkt. HotJava blev vist frem på SUN World '95.
+at den kunne afvikle Java indlejret i HTML-siden, hvilket var fuldstÃ¦ndigt
+nyt pÃ¥ dette tidspunkt. HotJava blev vist frem pÃ¥ SUN World '95.
 Her blev det set af nogle folk fra Netscape,
-som på det tidspunkt var den altdominerende
-webbrowser på markedet, og de kunne godt lide tanken om
+som pÃ¥ det tidspunkt var den altdominerende
+webbrowser pÃ¥ markedet, og de kunne godt lide tanken om
 at kunne afvikle programkode som en del af en HTML-side. Netscape
-købte en licens af SUN til at implementere en Java virtuel maskine,
-og den første version af Netscape med Java 1.1 var version 3. Det
-blev en bragende succes. I løbet af meget kort tid spredte kendskabet
+kÃ¸bte en licens af SUN til at implementere en Java virtuel maskine,
+og den fÃ¸rste version af Netscape med Java 1.1 var version 3. Det
+blev en bragende succes. I lÃ¸bet af meget kort tid spredte kendskabet
 til Java sig og alle skulle lige pludselig til at programmere
-appletter (navnet på den slags Javaprogrammer der kan afvikles i en
+appletter (navnet pÃ¥ den slags Javaprogrammer der kan afvikles i en
 browser).
 </para>
  
 <para>
-Siden 1995 er det gået hurtigt for Java. Version 1.1.0 blev hurtigt til
-version 1.1.2 osv. På nuværende tidspunkt er den seneste 1.x version
-fra SUN version 1.1.8_008. Version 1.1.x bliver ikke længere videreudviklet
-og har startet sit sidste liv - dvs. SUN retter ikke længere andet end
+Siden 1995 er det gÃ¥et hurtigt for Java. Version 1.1.0 blev hurtigt til
+version 1.1.2 osv. PÃ¥ nuvÃ¦rende tidspunkt er den seneste 1.x version
+fra SUN version 1.1.8_008. Version 1.1.x bliver ikke lÃ¦ngere videreudviklet
+og har startet sit sidste liv - dvs. SUN retter ikke lÃ¦ngere andet end
 meget kritiske fejl (dvs. ingen).
 </para>
  
 <para>
-I starten af 1999 kom version 1.1.x's afløser - version 1.2.0. I denne version
-var der ændret på en del af arkitekturen i Java og rent markedsføringsmæssigt
-blev det kaldt "Java 2", hvilket den næste også hedder idag (Java 2 Standard
+I starten af 1999 kom version 1.1.x's aflÃ¸ser - version 1.2.0. I denne version
+var der Ã¦ndret pÃ¥ en del af arkitekturen i Java og rent markedsfÃ¸ringsmÃ¦ssigt
+blev det kaldt "Java 2", hvilket den nÃ¦ste ogsÃ¥ hedder idag (Java 2 Standard
 Edition). Den seneste version 1.2.x fra SUN er version 1.2.2_010.
 </para>
  
 <para>
 Den seneste endelige version af SUN hedder version 1.3.x (seneste 1.3.1_02)
-og i denne version er der også blevet plads til nogle nye features (dog
-ikke så mange som ved hoppet fra version 1.1.x til 1.2.x).
+og i denne version er der ogsÃ¥ blevet plads til nogle nye features (dog
+ikke sÃ¥ mange som ved hoppet fra version 1.1.x til 1.2.x).
 </para>
  
 <para>
-Den næste version af Java hedder version 1.4.0 og er i skrivende stund
-i beta 3 - dvs. næsten klar til udgivelse. Den nye version af Java er meget
-spændende mht. nye features.
+Den nÃ¦ste version af Java hedder version 1.4.0 og er i skrivende stund
+i beta 3 - dvs. nÃ¦sten klar til udgivelse. Den nye version af Java er meget
+spÃ¦ndende mht. nye features.
 </para>
  
 <para>
-SUN havde lige fra starten (1.1) valgt at lade oversætter og en version
-af den virtuelle maskine være tilgængelige gratis til nedhentning
+SUN havde lige fra starten (1.1) valgt at lade oversÃ¦tter og en version
+af den virtuelle maskine vÃ¦re tilgÃ¦ngelige gratis til nedhentning
 via internettet.
 </para>
  
 <para>
-Det er stadig gratis at hente og bruge Java til både private og
-kommecielle formål. SUN leverer Java udviklingsmiljøer til følgende
+Det er stadig gratis at hente og bruge Java til bÃ¥de private og
+kommecielle formÃ¥l. SUN leverer Java udviklingsmiljÃ¸er til fÃ¸lgende
 operativsystemer:
 </para>
  
@@ -226,10 +226,10 @@ operativsystemer:
 </itemizedlist>
 
 <para>
-Ud over disse versioner eksisterer der også et produkt der
-hedder JavaOS som bl.a. kan afvikles under DOS med DPMI-understøttelse.
+Ud over disse versioner eksisterer der ogsÃ¥ et produkt der
+hedder JavaOS som bl.a. kan afvikles under DOS med DPMI-understÃ¸ttelse.
 Denne version af Java bliver dog pt. ikke videreudviklet aktivt af SUN
-og kan ikke længere findes på deres hjemmeside.
+og kan ikke lÃ¦ngere findes pÃ¥ deres hjemmeside.
 </para>
  
 <para>
@@ -238,7 +238,7 @@ Den seneste version af Java kan hentes fra SUN Java hjemmeside:
 </para>
  
 <para>
-Ud over SUN er der en række firmaer der også implementere Java til række
+Ud over SUN er der en rÃ¦kke firmaer der ogsÃ¥ implementere Java til rÃ¦kke
 platforme. Her er listen fra SUN's hjemmeside:</para>
  
 <itemizedlist mark="bullet">
@@ -261,7 +261,7 @@ platforme. Her er listen fra SUN's hjemmeside:</para>
   <listitem><para>Windows NT (Digital Equipment Corporation)</para></listitem>
 </itemizedlist>
  
-<para>For mere information om de forskellige versioner kik på siden:
+<para>For mere information om de forskellige versioner kik pÃ¥ siden:
 <ulink url="http://java.sun.com/cgi-bin/java-ports.cgi">
 http://java.sun.com/cgi-bin/java-ports.cgi</ulink>.
 </para>
@@ -275,48 +275,48 @@ http://java.sun.com/cgi-bin/java-ports.cgi</ulink>.
 <para>
 Java afvikles igennem en virtuel maskine. En virtuel maskine er, som navnet
 antyder, virtuel - dvs. ikke eksisterende. Det, SUN har gjort, er at definere
-et afviklingsmiljø, som passer godt med den måde, Java er skruet sammen.
-Afviklingsmiljøet skjuler den underliggende platform (både hvad angår hardware
+et afviklingsmiljÃ¸, som passer godt med den mÃ¥de, Java er skruet sammen.
+AfviklingsmiljÃ¸et skjuler den underliggende platform (bÃ¥de hvad angÃ¥r hardware
 og operativ system).
 </para>
  
 <para>
-Når man oversætter et Java program sker der to ting: Programmets syntaks tjekkes,
-og der generes såkaldt mellemkode (byte-code). Mellemkoden er en mellemting
-mellem kildetekst og maskinekode (også kaldt assemblerkode). Når man oversætter et
-program i et "normalt" programmeringssprog, genereres der normalt maskinekode. Denne maskinkode kan direkte afvikles af den processor, man har valgt at oversætte til.
-Typisk den samme processor man afvikler oversætteren under, men ikke nødvendigvis.
-Dette gør at kode kun kan afvikles på den valgte processor og ikke andre.
-Man kan for eksempel ikke få glæde nye features i senere generationer af processoren.
+NÃ¥r man oversÃ¦tter et Java program sker der to ting: Programmets syntaks tjekkes,
+og der generes sÃ¥kaldt mellemkode (byte-code). Mellemkoden er en mellemting
+mellem kildetekst og maskinekode (ogsÃ¥ kaldt assemblerkode). NÃ¥r man oversÃ¦tter et
+program i et "normalt" programmeringssprog, genereres der normalt maskinekode. Denne maskinkode kan direkte afvikles af den processor, man har valgt at oversÃ¦tte til.
+Typisk den samme processor man afvikler oversÃ¦tteren under, men ikke nÃ¸dvendigvis.
+Dette gÃ¸r at kode kun kan afvikles pÃ¥ den valgte processor og ikke andre.
+Man kan for eksempel ikke fÃ¥ glÃ¦de nye features i senere generationer af processoren.
 </para>
  
 <para>
-Det den virtuelle maskine gør, er, at den fortolker den mellemkode, som er
-genereret af oversætteren. Ofte er der ikke særlig langt imellem mellemkode
-og den pågældende platforms arkitektur, dvs. for hver mellemkode instruktion
-er der meget få, eller bare en enkelt maskinekode instruktion.
+Det den virtuelle maskine gÃ¸r, er, at den fortolker den mellemkode, som er
+genereret af oversÃ¦tteren. Ofte er der ikke sÃ¦rlig langt imellem mellemkode
+og den pÃ¥gÃ¦ldende platforms arkitektur, dvs. for hver mellemkode instruktion
+er der meget fÃ¥, eller bare en enkelt maskinekode instruktion.
 </para>
  
 <para>
-Spørgsmål - "Hvorfor er der ikke nogen der har lavet en processor der kan
-forstå Java mellemkode direkte?". Der er der faktisk også nogen der har,
+SpÃ¸rgsmÃ¥l - "Hvorfor er der ikke nogen der har lavet en processor der kan
+forstÃ¥ Java mellemkode direkte?". Der er der faktisk ogsÃ¥ nogen der har,
 men processoren har ikke kunnet hamle op med mere og mere avancerede
 virtuelle maskiner som bl.a. SUN og IBM har lavet.
 </para>
  
 <para>
-Selvom der ikke er særlig langt mellem mellemkode og maskinekode, skal
-den virtuelle maskine gøre mere end bare at oversætte mellem de to typer af kode.
-Den virtuelle maskine er også ansvarlig for styring af hukommelse samt for
-grænsefladen mod det underliggende operativsystem.
+Selvom der ikke er sÃ¦rlig langt mellem mellemkode og maskinekode, skal
+den virtuelle maskine gÃ¸re mere end bare at oversÃ¦tte mellem de to typer af kode.
+Den virtuelle maskine er ogsÃ¥ ansvarlig for styring af hukommelse samt for
+grÃ¦nsefladen mod det underliggende operativsystem.
 </para>
  
 <para>
-For at få det hele til at køre lidt hurtigere har mange leverandører af
+For at fÃ¥ det hele til at kÃ¸re lidt hurtigere har mange leverandÃ¸rer af
 virtuelle maskiner udviklet en teknologi kaldet JIT - Just In Time.
 Tanken bag denne teknologi er, at lige inden kode skal afvikles, bliver det
-oversat til maskinekode på den aktuelle platform, og gemt til næste gang
-den samme kode skal oversættes. Disse oversatte dele bliver ikke gemt
+oversat til maskinekode pÃ¥ den aktuelle platform, og gemt til nÃ¦ste gang
+den samme kode skal oversÃ¦ttes. Disse oversatte dele bliver ikke gemt
 efter at den virtuelle maskine er afsluttet.
 </para>
  
@@ -324,36 +324,36 @@ efter at den virtuelle maskine er afsluttet.
 Den seneste generation af virtuelle maskiner fra SUN har kodenavnet HotSpot.
 Dette navn er meget velvalgt, da det, denne type af virtuelle maskine
 koncentrerer sig om, er de dele af koden som bliver afvikles oftes - og derfor
-også bør være dem, der bliver oversat først og bedst. Den virtuelle maskine
-foretager en såkaldt profilering af kode, hvor den gemmer information om
+ogsÃ¥ bÃ¸r vÃ¦re dem, der bliver oversat fÃ¸rst og bedst. Den virtuelle maskine
+foretager en sÃ¥kaldt profilering af kode, hvor den gemmer information om
 hvor ofte en given metode bliver kaldt, hvor lang tid den tager at afvikle
-mv. Efter at den virtuelle maskine har været startet i en periode har den
+mv. Efter at den virtuelle maskine har vÃ¦ret startet i en periode har den
 indsamlet information nok til at begynde at genere maskinekode. I og med den
-sidder med alle kort på hånden mht. det øjeblik hvor kode afvikles, kan den
-udvælge den / de funktioner, der bruges oftes, og som derfor bør oversættes
-først. Er der tale om en simpel kort metode, kan den virtuelle maskine
-vælge at indlejre kode fra funktion de steder, hvor den kaldes. Regulære funktionskald
-med overførsel af parametre erstattes således af kopier af funktionens kode.
-Dette sparer en del kostbare processor trin. Ifølge SUN er ydelsen fra
-en HotSpot virtuel maskinen meget tæt på den ydelse, man kan få fra det
+sidder med alle kort pÃ¥ hÃ¥nden mht. det Ã¸jeblik hvor kode afvikles, kan den
+udvÃ¦lge den / de funktioner, der bruges oftes, og som derfor bÃ¸r oversÃ¦ttes
+fÃ¸rst. Er der tale om en simpel kort metode, kan den virtuelle maskine
+vÃ¦lge at indlejre kode fra funktion de steder, hvor den kaldes. RegulÃ¦re funktionskald
+med overfÃ¸rsel af parametre erstattes sÃ¥ledes af kopier af funktionens kode.
+Dette sparer en del kostbare processor trin. IfÃ¸lge SUN er ydelsen fra
+en HotSpot virtuel maskinen meget tÃ¦t pÃ¥ den ydelse, man kan fÃ¥ fra det
 tilsvarende C++ program, fordi den optimering, den virtuelle maskine
-kan lave, er væsentlig bedre end den, C++ oversætteren kan foretage på
-oversættelsestidspunktet. Hvis man endvidere implementere nogle af de
+kan lave, er vÃ¦sentlig bedre end den, C++ oversÃ¦tteren kan foretage pÃ¥
+oversÃ¦ttelsestidspunktet. Hvis man endvidere implementere nogle af de
 avancerede ting fra Java (fx. garbage collector, sikre referencer mv), som
-påvirker ydelsen negativt, udkonkurerer Java med HotSpot teknologien C++
-fuldstændigt (jf. SUN).
+pÃ¥virker ydelsen negativt, udkonkurerer Java med HotSpot teknologien C++
+fuldstÃ¦ndigt (jf. SUN).
 </para>
 
 <para>
-Man kan få virtuelle Javamaskiner til næsten alle platforme, lige fra de
-store IBM mainframe systemer (OS 390), og ned til et smartcard (fx. Danmønt
-kortet). Det, som er den store forskel mellem implementeringen af Java på
-de forskellige platforme, er de runtime-biblioteker, der medfølger - selve
-mellemkoden er nøjagtig den samme.
+Man kan fÃ¥ virtuelle Javamaskiner til nÃ¦sten alle platforme, lige fra de
+store IBM mainframe systemer (OS 390), og ned til et smartcard (fx. DanmÃ¸nt
+kortet). Det, som er den store forskel mellem implementeringen af Java pÃ¥
+de forskellige platforme, er de runtime-biblioteker, der medfÃ¸lger - selve
+mellemkoden er nÃ¸jagtig den samme.
 </para>
  
 <para>
-På nuværende tidspunkt findes der:
+PÃ¥ nuvÃ¦rende tidspunkt findes der:
 </para>
  
 <itemizedlist>
@@ -369,16 +369,16 @@ På nuværende tidspunkt findes der:
  
 <para>
   Ethvert program, som f.eks. tekstbehandlingsprogram, regneark,
-  e-post, tegneprogram, spil, webserver består af nogle data
-  (f.eks. hjælpefiler og opsætningsfiler) og en samling
+  e-post, tegneprogram, spil, webserver bestÃ¥r af nogle data
+  (f.eks. hjÃ¦lpefiler og opsÃ¦tningsfiler) og en samling
   instruktioner til computeren.
 </para>
  
 <para>
-  Hver instruktion er meget simpel, og computeren udfører den
-  ubetinget, uanset om det er smart eller ej. En computer kan udføre
+  Hver instruktion er meget simpel, og computeren udfÃ¸rer den
+  ubetinget, uanset om det er smart eller ej. En computer kan udfÃ¸re
   instruktionerne ekstremt hurtigt (over 1 milliard instruktioner pr.
-  sekund), og det kan få computeren til at virke smart, selvom
+  sekund), og det kan fÃ¥ computeren til at virke smart, selvom
   instruktionerne er simple.
 </para>
  
@@ -387,20 +387,20 @@ På nuværende tidspunkt findes der:
  
 <para>
   Styresystemet er det program, som styrer computeren, og tillader
-  brugeren at bruge andre programmer. Af styresystemer kan nævnes
+  brugeren at bruge andre programmer. Af styresystemer kan nÃ¦vnes
   Linux, DOS, Windows, MacOS, OS/2, UNIX.
 </para>
  
 <para>
   Styresystemet styrer computerens hukommelse og eksterne enheder
-  som skærm, tastatur, mus, disk, printere og netværksadgang.
+  som skÃ¦rm, tastatur, mus, disk, printere og netvÃ¦rksadgang.
   Det tilbyder tjenester til programmerne, f.eks. muligheden for
-  at læse på disken eller tegne en grafisk brugergrænseflade.
+  at lÃ¦se pÃ¥ disken eller tegne en grafisk brugergrÃ¦nseflade.
 </para>
  
 <para>
-  Et program kan normalt kun køre på et bestemt styresystem.
-  Javaprogrammer kan dog køre på flere styresystemer, og de
+  Et program kan normalt kun kÃ¸re pÃ¥ et bestemt styresystem.
+  Javaprogrammer kan dog kÃ¸re pÃ¥ flere styresystemer, og de
   bruges derfor bl.a. som programmer, der automatisk hentes
   ned til brugerens web-browser, og afvikles der. Den type
   programmer kaldes appletter eller miniprogrammer.
@@ -408,91 +408,91 @@ På nuværende tidspunkt findes der:
 </sect2>    <!--   Styresystemet -->
  
 <sect2 id="java-intro-prg-hvorfor">
-<title>Hvorfor lære at programmere?</title>
+<title>Hvorfor lÃ¦re at programmere?</title>
 
 <para>
-  Det er sjovt og spændende, og kan være en kilde til
+  Det er sjovt og spÃ¦ndende, og kan vÃ¦re en kilde til
   kreativitet og leg at skabe sine egne programmer. Man kan bedre
-  forestille sig nye løsninger og produkter, og man får
-  bedre kendskab til computeres formåen og begrænsninger.
+  forestille sig nye lÃ¸sninger og produkter, og man fÃ¥r
+  bedre kendskab til computeres formÃ¥en og begrÃ¦nsninger.
 </para>
  
 <para>
-  Desuden er det et håndværk, der er efterspurgt blandt
-  IT-virksomheder og mange andre. Ved hjælp af programmering kan
-  du løse problemer, og du er dermed ikke mere afhængig
+  Desuden er det et hÃ¥ndvÃ¦rk, der er efterspurgt blandt
+  IT-virksomheder og mange andre. Ved hjÃ¦lp af programmering kan
+  du lÃ¸se problemer, og du er dermed ikke mere afhÃ¦ngig
   af, at andre laver et program, der opfylder dine behov.
 </para>
  
 <para>
   Programmering er en af datalogiens helt basale discipliner, og
-  selv om man ikke arbejder som programmør, kan kendskab til
-  programmering være en stor fordel i mange beslægtede fag.
+  selv om man ikke arbejder som programmÃ¸r, kan kendskab til
+  programmering vÃ¦re en stor fordel i mange beslÃ¦gtede fag.
 </para>
  
 <para>
-  Java er et sprog, der har stor udbredelse såvel i industrien som i
-  akademiske kredse. Det er kraftfuldt og relativt let lært.
-  Lærer du Java, har du et godt fundament til at lære
+  Java er et sprog, der har stor udbredelse sÃ¥vel i industrien som i
+  akademiske kredse. Det er kraftfuldt og relativt let lÃ¦rt.
+  LÃ¦rer du Java, har du et godt fundament til at lÃ¦re
   andre programmeringssprog.
 </para>
-</sect2>    <!--   Hvorfor lære at programmere? -->
+</sect2>    <!--   Hvorfor lÃ¦re at programmere? -->
  
 <sect2 id="java-intro-prg-eksempel">
 <title>Et simpelt program</title>
  
 <para>
   For at computeren kan arbejde, skal den have nogle instruktioner,
-  den kan følge slavisk. For at lægge to tal, som brugeren oplyser,
-  sammen kunne man forestille sig følgende opskrift:
+  den kan fÃ¸lge slavisk. For at lÃ¦gge to tal, som brugeren oplyser,
+  sammen kunne man forestille sig fÃ¸lgende opskrift:
 </para>
  
 <screen>
-  1   Skriv &quot;Indtast første tal&quot; på skærmen
-  2   Læs tal fra tastaturet
+  1   Skriv &quot;Indtast fÃ¸rste tal&quot; pÃ¥ skÃ¦rmen
+  2   LÃ¦s tal fra tastaturet
   3   Gem tal i lagerplads A
-  4   Skriv &quot;Indtast andet tal&quot; på skærmen
-  5   Læs tal fra tastaturet
+  4   Skriv &quot;Indtast andet tal&quot; pÃ¥ skÃ¦rmen
+  5   LÃ¦s tal fra tastaturet
   6   Gem tal i lagerplads B
-  7   Læg indhold af lagerplads A og indhold af lagerplads B sammen
+  7   LÃ¦g indhold af lagerplads A og indhold af lagerplads B sammen
   8   Gem resultat i lagerplads C
-  9   Skriv &quot;Summen er:&quot; på skærmen
-  10  Skriv indhold af lagerplads C på skærmen
+  9   Skriv &quot;Summen er:&quot; pÃ¥ skÃ¦rmen
+  10  Skriv indhold af lagerplads C pÃ¥ skÃ¦rmen
 </screen>
  
 <para>
   Et program minder lidt om en kogebogsopskrift, som computeren
-  følger punkt for punkt ovenfra og ned. Hvert punkt (eller
-  instruktion eller kommando) gøres færdigt, før
-  der fortsættes til næste punkt.
+  fÃ¸lger punkt for punkt ovenfra og ned. Hvert punkt (eller
+  instruktion eller kommando) gÃ¸res fÃ¦rdigt, fÃ¸r
+  der fortsÃ¦ttes til nÃ¦ste punkt.
 </para>
 
 </sect2>    <!--   Et simpelt program -->
 
 <sect2 id="java-intro-prg-hvordan">
-<title>Hvordan lærer man at programmere</title>
+<title>Hvordan lÃ¦rer man at programmere</title>
  
 <para>
-  Man lærer ikke at programmere blot ved at læse en bog. Har
-  man ikke tid til at øve sig og eksperimentere med det man
-  læser om, spilder man bare sin tid.
-  For de fleste kræver det en stor arbejdsindsats at lære
-  at programmere, og for alle tager det lang tid, før de
+  Man lÃ¦rer ikke at programmere blot ved at lÃ¦se en bog. Har
+  man ikke tid til at Ã¸ve sig og eksperimentere med det man
+  lÃ¦ser om, spilder man bare sin tid.
+  For de fleste krÃ¦ver det en stor arbejdsindsats at lÃ¦re
+  at programmere, og for alle tager det lang tid, fÃ¸r de
   bliver rigtig dygtige til det.
 </para>
  
 <blockquote>
   <para>
-    Der er kun én måde at lære at programmere på: Øv dig
+    Der er kun Ã©n mÃ¥de at lÃ¦re at programmere pÃ¥: Ã˜v dig
   </para>
 </blockquote>
  
 <para>
   Der er blevet lavet forskning, der underbygger dette. P.M. Cheney
   konkluderer,
-  at den eneste betydende faktor i produktiviteten for programmører
-  er: Erfaring. Han fandt i øvrigt forskelle i
-  produktiviteten på en faktor 25.
+  at den eneste betydende faktor i produktiviteten for programmÃ¸rer
+  er: Erfaring. Han fandt i Ã¸vrigt forskelle i
+  produktiviteten pÃ¥ en faktor 25.
 </para>
  
 <para>
@@ -503,7 +503,7 @@ På nuværende tidspunkt findes der:
   and Management, 7, 1984.
 </para>
  
-</sect2>    <!--   Hvordan lærer man at programmere -->
+</sect2>    <!--   Hvordan lÃ¦rer man at programmere -->
 </sect1>    <!--   Programmering -->
  
 <sect1 id="java-intro-prg-fordele-ulemper">
@@ -511,28 +511,28 @@ På nuværende tidspunkt findes der:
  
 <para>
   Java er et initiativ til at skabe et programmeringssprog, der kan
-  køre på flere styresystemer. Det er udviklet af Sun
+  kÃ¸re pÃ¥ flere styresystemer. Det er udviklet af Sun
   Microsystems, der i 1991 arbejdede med at designe et
   programmeringssprog, der var velegnet til at skrive programmer
   til fremtidens telefoner, fjernsyn, opvaskemaskiner og andre
-  elektroniske apparater. Sådanne programmer skal være
-  meget kompakte (begrænset hukommelseslager) og fejlsikre
-  (risikoen for, at apparatet ikke virker skal være
+  elektroniske apparater. SÃ¥danne programmer skal vÃ¦re
+  meget kompakte (begrÃ¦nset hukommelseslager) og fejlsikre
+  (risikoen for, at apparatet ikke virker skal vÃ¦re
   minimal).
 </para>
  
 <para>
   Med udviklingen af internettet blev Java samtidig meget udbredt,
-  fordi teknologien bl.a. tillader, at små programmer kan lægges
+  fordi teknologien bl.a. tillader, at smÃ¥ programmer kan lÃ¦gges
   ind i en hjemmeside (se kapitlet om appletter).
 </para>
  
 <para>
-  Det har på kort tid udviklet sig til at være
-  fremherskende på grund af dets egenskaber. Java er et
-  enkelt, objektorienteret, robust, netværksorienteret,
-  platformuafhængigt, sikkert, fortolket, højtydende,
-  flertrådet og dynamisk sprog.
+  Det har pÃ¥ kort tid udviklet sig til at vÃ¦re
+  fremherskende pÃ¥ grund af dets egenskaber. Java er et
+  enkelt, objektorienteret, robust, netvÃ¦rksorienteret,
+  platformuafhÃ¦ngigt, sikkert, fortolket, hÃ¸jtydende,
+  flertrÃ¥det og dynamisk sprog.
 </para>
 
 <sect2 id="java-intro-prg-fordele-ulemper-enkel">
@@ -540,7 +540,7 @@ På nuværende tidspunkt findes der:
  
 <para>
   Java er i forhold til andre programmeringssprog et ret enkelt sprog, og det er forholdsvis
-  nemt at programmere (specielt for C++ og C-programmører). Mange af de muligheder for at lave
+  nemt at programmere (specielt for C++ og C-programmÃ¸rer). Mange af de muligheder for at lave
   fatale fejl, der eksisterer i andre programmeringssprog, er fjernet i Java.
 </para>
 </sect2>
@@ -549,56 +549,56 @@ På nuværende tidspunkt findes der:
 <title>Objektorienteret</title>
  
 <para>
-  Samtidig kommer det med over 1000 foruddefinerede objekt-typer, som kan udføre næsten enhver
-  tænkelig opgave. Præcist hvad "objektorienteret" betyder handler denne bog om.
+  Samtidig kommer det med over 1000 foruddefinerede objekt-typer, som kan udfÃ¸re nÃ¦sten enhver
+  tÃ¦nkelig opgave. PrÃ¦cist hvad "objektorienteret" betyder handler denne bog om.
 </para>
 </sect2>
  
 <sect2 id="java-intro-prg-fordele-ulemper-platform">
-<title>Platformuafhængigt</title>
+<title>PlatformuafhÃ¦ngigt</title>
  
 <para>
-  Java er platformuafhængigt. Det vil sige, at samme program umiddelbart kan udføres på mange
+  Java er platformuafhÃ¦ngigt. Det vil sige, at samme program umiddelbart kan udfÃ¸res pÃ¥ mange
   forskellige styresystemer, f.eks. UNIX, Linux, Mac og Windows,  og processor-typer f.eks. Intel IA32, PowerPC og Alpha.
 </para>
 </sect2>
  
 <sect2 id="java-intro-prg-fordele-ulemper-net">
-<title>Netværksorienteret</title>
+<title>NetvÃ¦rksorienteret</title>
  
 <para>
-  Java har indbygget alskens netværkskommunikation (se kapitlet om netværk), og bruges meget på internettet,
-  da javaprogrammer kan køre på næsten alle platforme. Samtidig er Javaprogrammer så kompakte, at de nemt kan indlejres i en hjemmeside.
+  Java har indbygget alskens netvÃ¦rkskommunikation (se kapitlet om netvÃ¦rk), og bruges meget pÃ¥ internettet,
+  da javaprogrammer kan kÃ¸re pÃ¥ nÃ¦sten alle platforme. Samtidig er Javaprogrammer sÃ¥ kompakte, at de nemt kan indlejres i en hjemmeside.
 </para>
 </sect2>
  
 <sect2 id="java-intro-prg-fordele-ulemper-fortolket">
 <title>Fortolket</title>
 <para>
-  Kildeteksten oversættes til en standardiseret platformuafhængig kode (kaldet bytekode), som derefter udføres
-  af en javafortolker på det enkelte styresystem. Derved opnås, at man kun behøver at oversætte sin kildetekst
-  én gang. Javafortolkeren er en såkaldt virtuel maskine, der konverterer instruktionerne i bytekoden til
-  instruktioner, som det aktuelle styresystem kan forstå.
+  Kildeteksten oversÃ¦ttes til en standardiseret platformuafhÃ¦ngig kode (kaldet bytekode), som derefter udfÃ¸res
+  af en javafortolker pÃ¥ det enkelte styresystem. Derved opnÃ¥s, at man kun behÃ¸ver at oversÃ¦tte sin kildetekst
+  Ã©n gang. Javafortolkeren er en sÃ¥kaldt virtuel maskine, der konverterer instruktionerne i bytekoden til
+  instruktioner, som det aktuelle styresystem kan forstÃ¥.
 </para>
 </sect2>
  
 <sect2 id="java-intro-prg-fordele-ulemper-ydelse">
-<title>Højtydende</title>
+<title>HÃ¸jtydende</title>
  
 <para>
-  De nuværende fortolkere tillader javaprogrammer at blive udført næsten lige så hurtigt, som hvis de var
-  blevet oversat direkte til det pågældende styresystem.
-<!-- JN: det er faktisk rigtigt! Det der tager tid er når man begynder
+  De nuvÃ¦rende fortolkere tillader javaprogrammer at blive udfÃ¸rt nÃ¦sten lige sÃ¥ hurtigt, som hvis de var
+  blevet oversat direkte til det pÃ¥gÃ¦ldende styresystem.
+<!-- JN: det er faktisk rigtigt! Det der tager tid er nÃ¥r man begynder
      at bruge objekter i den store stil. -->
 </para>
 </sect2>
  
 <sect2 id="java-intro-prg-fordele-ulemper-traade">
-<title>Flertrådet</title>
+<title>FlertrÃ¥det</title>
  
 <para>
-  Java er designet til at udføre flere forskellige programdele samtidigt, og en programudførsel kan
-  blive fordelt over flere CPU'er  (se kapitlet om flertrådet programmering).
+  Java er designet til at udfÃ¸re flere forskellige programdele samtidigt, og en programudfÃ¸rsel kan
+  blive fordelt over flere CPU'er  (se kapitlet om flertrÃ¥det programmering).
 </para>
 </sect2>
 
@@ -606,10 +606,10 @@ På nuværende tidspunkt findes der:
 <title>Robust</title>
  
 <para>
-  Java er også robust; under afviklingen af et program tjekkes det, at handlingerne er tilladelige, og
-  opstår der en fejl, såsom en ønsket fil ikke kan findes, erklærer Java, at der er opstået en undtagelse.
-  I mange andre sprog vil sådanne uventede fejl føre til, at programmet stopper. I Java har man let adgang
-  til at fange og håndtere disse undtagelser, så programmet alligevel kan køre videre (se kapitlet om undtagelser).
+  Java er ogsÃ¥ robust; under afviklingen af et program tjekkes det, at handlingerne er tilladelige, og
+  opstÃ¥r der en fejl, sÃ¥som en Ã¸nsket fil ikke kan findes, erklÃ¦rer Java, at der er opstÃ¥et en undtagelse.
+  I mange andre sprog vil sÃ¥danne uventede fejl fÃ¸re til, at programmet stopper. I Java har man let adgang
+  til at fange og hÃ¥ndtere disse undtagelser, sÃ¥ programmet alligevel kan kÃ¸re videre (se kapitlet om undtagelser).
 </para>
 </sect2>
  
@@ -617,16 +617,16 @@ På nuværende tidspunkt findes der:
 <title>Sikkert</title>
  
 <para>
-  Et sikkerhedssystem tjekker al programkode og sørger for, at bl.a. hjemmesider med Java-appletter ikke
-  kan gøre ting, de ikke har lov til (f.eks. læse eller ændre i brugerens filer), uden at brugeren selv har givet tilladelse til det.</para>
+  Et sikkerhedssystem tjekker al programkode og sÃ¸rger for, at bl.a. hjemmesider med Java-appletter ikke
+  kan gÃ¸re ting, de ikke har lov til (f.eks. lÃ¦se eller Ã¦ndre i brugerens filer), uden at brugeren selv har givet tilladelse til det.</para>
 </sect2>
  
 <sect2 id="java-intro-prg-fordele-ulemper-dynamik">
 <title>Dynamisk</title>
  
 <para>
-  Java kan dynamisk (i et kørende program) indlæse ekstra programkode fra netværket og udføre den, når det er
-  nødvendigt, og der er indbygget mekanismer til at lade programmer på forskellige maskiner dele dataobjekter
+  Java kan dynamisk (i et kÃ¸rende program) indlÃ¦se ekstra programkode fra netvÃ¦rket og udfÃ¸re den, nÃ¥r det er
+  nÃ¸dvendigt, og der er indbygget mekanismer til at lade programmer pÃ¥ forskellige maskiner dele dataobjekter
   (se eksempelvis kapitlet om RMI).
 </para>
 </sect2>
@@ -635,23 +635,23 @@ På nuværende tidspunkt findes der:
 <title>Stor opbakning</title>
  
 <para>
-  Ovenstående egenskaber gør, at Java også har vundet stor udbredelse i serversystemer de seneste år, og
-  Java understøttes i dag af næsten alle større softwarefirmaer, f.eks. IBM, Oracle, Borland, Netscape.
+  OvenstÃ¥ende egenskaber gÃ¸r, at Java ogsÃ¥ har vundet stor udbredelse i serversystemer de seneste Ã¥r, og
+  Java understÃ¸ttes i dag af nÃ¦sten alle stÃ¸rre softwarefirmaer, f.eks. IBM, Oracle, Borland, Netscape.
 </para>
  
 <para>
-  Softwaregiganten Microsoft er en undtagelse. Microsoft blev i efteråret
+  Softwaregiganten Microsoft er en undtagelse. Microsoft blev i efterÃ¥ret
   2000 kendt skyldig ved domstolen i USA for ulovligt at misbruge sin
-  monopollignende magt på PC-markedet for at skade bl.a. Java.
+  monopollignende magt pÃ¥ PC-markedet for at skade bl.a. Java.
   Sagen blev naturligvis anket, og det er i skrivende stund uvist
   hvad den ender med.
 </para>
  
 <para>
-  Microsoft er ikke interesseret i, at programmerne kan udføres
+  Microsoft er ikke interesseret i, at programmerne kan udfÃ¸res
   under andre styresystemer end Windows. De har lavet deres egen udgave
-  af Java, der kun virker under Windows, og har (uden større
-  held) forsøgt at lokke programmører til at bruge den.
+  af Java, der kun virker under Windows, og har (uden stÃ¸rre
+  held) forsÃ¸gt at lokke programmÃ¸rer til at bruge den.
 </para>
 </sect2>    <!--   Stor opbakning -->
 
@@ -659,43 +659,43 @@ På nuværende tidspunkt findes der:
 <title>Svagheder ved Java</title>
  
 <para>
-  Java har også en del kritikere, især blandt de, hvis
-  forretningsmodel eller område er truet af Java.  Ikke desto
+  Java har ogsÃ¥ en del kritikere, isÃ¦r blandt de, hvis
+  forretningsmodel eller omrÃ¥de er truet af Java.  Ikke desto
   mindre er der nogle gode pointer iblandt:
 </para>
  
 <itemizedlist mark="bullet">
   <listitem>
     <para>
-      Java kræver hukommelse (RAM). Store Javaprogrammer kan kræve så meget, at de har problemer med at køre på mindre kontor-PC'ere.    </para>
+      Java krÃ¦ver hukommelse (RAM). Store Javaprogrammer kan krÃ¦ve sÃ¥ meget, at de har problemer med at kÃ¸re pÃ¥ mindre kontor-PC'ere.    </para>
   </listitem>
   <listitem>
     <para>
-      Java skal installeres på en computer, før den
+      Java skal installeres pÃ¥ en computer, fÃ¸r den
       kan afvikle javaprogrammer. Hvis man vil distribuere sit program,
-      skal man således pakke en version af Java med.
+      skal man sÃ¥ledes pakke en version af Java med.
     </para>
   </listitem>
   <listitem>
     <para>
       Sun Microsystems ejer Java, og nogle frygter, at det vil
       udvikle sig til et monopol som med Microsoft. Indtil videre har de
-      dog opført sig eksemplarisk og bl.a. frigivet hele
-      kildeteksten til Java, og derudover findes der andre uafhængige
+      dog opfÃ¸rt sig eksemplarisk og bl.a. frigivet hele
+      kildeteksten til Java, og derudover findes der andre uafhÃ¦ngige
      udgaver af Java.
    </para>
   </listitem>
   <listitem>
     <para>
-      Java satser på at være platformuafhængigt,
-      men der er alligevel små forskelle på de forskellige
-      platforme. Dette gælder specielt ved programmering af grafiske
-      brugergrænseflader. Det kræver erfaring og test at
-      sikre sig, at ens program virker tilfredsstillende på
+      Java satser pÃ¥ at vÃ¦re platformuafhÃ¦ngigt,
+      men der er alligevel smÃ¥ forskelle pÃ¥ de forskellige
+      platforme. Dette gÃ¦lder specielt ved programmering af grafiske
+      brugergrÃ¦nseflader. Det krÃ¦ver erfaring og test at
+      sikre sig, at ens program virker tilfredsstillende pÃ¥
       flere platforme. Dette er ikke kun et Java-relateret problem,
-      designere af hjemmesider har tilsvarende problemer. Java gør
-      det nemmere at skrive platformuafhængige programmer, men
-      det løser ikke alle problemer for programmøren.
+      designere af hjemmesider har tilsvarende problemer. Java gÃ¸r
+      det nemmere at skrive platformuafhÃ¦ngige programmer, men
+      det lÃ¸ser ikke alle problemer for programmÃ¸ren.
    </para>
   </listitem>
 </itemizedlist>

@@ -11,11 +11,11 @@
  </indexterm>
 
 <para>
-Puppy Linux er en lille, men lækker Linux med grafisk
-brugergrænseflade, som man nemt kan have med sig på en CD eller
-et flash-kort, og bruge hvor man er. Man kan få Puppy til cd-rom
+Puppy Linux er en lille, men lÃ¦kker Linux med grafisk
+brugergrÃ¦nseflade, som man nemt kan have med sig pÃ¥ en CD eller
+et flash-kort, og bruge hvor man er. Man kan fÃ¥ Puppy til cd-rom
 (live-Puppy), til flash kort (flash-Puppy) samt en puppy til at
-installere på harddisken (hard-Puppy). Desuden har forfatteren
+installere pÃ¥ harddisken (hard-Puppy). Desuden har forfatteren
 Barry Kauler planer om en floppy-Puppy og en zippy-Puppy, men disse
 findes ikke endnu. Vi tester her live-cd'en.
 
@@ -31,15 +31,15 @@ url="http://www.goosee.com/puppy/index.shtml">http://www.goosee.com/puppy/index.
 
 
  <sect1 id="distro-puppy-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Puppy Linux</secondary>
   </indexterm>
 
   <para>
-   Puppy Linux' målgruppe er folk der for eksempel kommer fra
+   Puppy Linux' mÃ¥lgruppe er folk der for eksempel kommer fra
    Windows-verdenen, og nemt vil i gang med Linux.
   </para>
 
@@ -58,15 +58,15 @@ url="http://www.goosee.com/puppy/index.shtml">http://www.goosee.com/puppy/index.
   </indexterm>
 
 <para>
-Puppy kræver en Pentium II med 128 MB RAM.
-Hvis man vil gemme sin opsætning fra gang til gang, kræves der
+Puppy krÃ¦ver en Pentium II med 128 MB RAM.
+Hvis man vil gemme sin opsÃ¦tning fra gang til gang, krÃ¦ves der
 desuden en ext2, ext3, vfat eller reiserfs partition med min. 128 MB fri. 
 </para>
 
 <para>
 PuppyLinux kan hentes fra <ulink url="ftp://ftp.ibiblio.org/pub/linux/distributions/puppylinux/">ftp://ftp.ibiblio.org/pub/linux/distributions/puppylinux/</ulink>.
 
-Man kan henter og brænde en cd-rom med kommandoerne
+Man kan henter og brÃ¦nde en cd-rom med kommandoerne
 <screen>
 wget --passive-ftp ftp.ibiblio.org/pub/linux/distributions/puppylinux/puppy-0.7.8/cd-puppy.iso
 cdrecord -v speed=8 dev=0,0,0 -data cd-puppy.iso
@@ -75,61 +75,61 @@ Iso imaget til version 0.7.8 fylder 42 MB.
 </para>
 
 <para>
-Boot fra cd'en. Der kommer et par fejl, f.eks. at den ikke kan indlæse
+Boot fra cd'en. Der kommer et par fejl, f.eks. at den ikke kan indlÃ¦se
 usb-storage modulet. Denne fejl er i flg. websiden kendt af udvikleren
-og vil sikkert blive rettet i næste version. 
+og vil sikkert blive rettet i nÃ¦ste version. 
 
-På mit system brokker den sig også over at der ikke er fri plads nok på
-den forreste ext3 partition, hvor den gerne vil have lov at lægge sin
+PÃ¥ mit system brokker den sig ogsÃ¥ over at der ikke er fri plads nok pÃ¥
+den forreste ext3 partition, hvor den gerne vil have lov at lÃ¦gge sin
 root-fil. Mere herom senere.
 </para>
 
 <para>
 Efter lidt tid bliver man spurgt om tastatur (us er default) og om mus
-(ps/2 er default). Så starter X op i en lav opløsning, og man kan vælge
-opløsning ved et klik med musen. Nu startes X op i den nye opløsning,
-og man er kørende.
+(ps/2 er default). SÃ¥ starter X op i en lav oplÃ¸sning, og man kan vÃ¦lge
+oplÃ¸sning ved et klik med musen. Nu startes X op i den nye oplÃ¸sning,
+og man er kÃ¸rende.
 </para>
 
 <sect2 id="distro-puppy-root">
 <title>Puppy's /root partition</title>
 <para>
-Puppy vil gerne gemme sin opsætning enten på en diskette, på
-harddisken, eller på flash-kortet i tilfælde af flash-Puppy. Så hvis det
-er muligt, opretter den en fil på et fast medie, og mounter det som
+Puppy vil gerne gemme sin opsÃ¦tning enten pÃ¥ en diskette, pÃ¥
+harddisken, eller pÃ¥ flash-kortet i tilfÃ¦lde af flash-Puppy. SÃ¥ hvis det
+er muligt, opretter den en fil pÃ¥ et fast medie, og mounter det som
 <filename>/root</filename>. Hvis ikke det er muligt, er
-<filename>/root</filename> en RAMDISK, og opsætningen går således
+<filename>/root</filename> en RAMDISK, og opsÃ¦tningen gÃ¥r sÃ¥ledes
 tabt ved reboot.
-Opsætning i <filename>/etc</filename> gemmes ved at
+OpsÃ¦tning i <filename>/etc</filename> gemmes ved at
 <filename>/etc</filename> er et symbolsk link til
-<filename>/root/.etc</filename>. Så hvis <filename>/root</filename> er
-en rigtig fil i stedet for en RAMDISK gemmes opsætning i
-<filename>/etc</filename> på denne måde.
+<filename>/root/.etc</filename>. SÃ¥ hvis <filename>/root</filename> er
+en rigtig fil i stedet for en RAMDISK gemmes opsÃ¦tning i
+<filename>/etc</filename> pÃ¥ denne mÃ¥de.
 </para>
 
 <para>
-Under første boot forsøger live-Puppy at lægge en 128 MB fil på
+Under fÃ¸rste boot forsÃ¸ger live-Puppy at lÃ¦gge en 128 MB fil pÃ¥
 harddisken den kan mounte som <filename>/root</filename>, og hvor al
-opsætning bliver gemt.
+opsÃ¦tning bliver gemt.
 </para>
 
 <para>
-Den første brugbare partition på mit system er tilfældigvis en ext3
-partition på 50 MB. Puppy forsøger at lave en 128MB fil
-<filename>pup078</filename> på denne partition, fejler, og forsøger sig
+Den fÃ¸rste brugbare partition pÃ¥ mit system er tilfÃ¦ldigvis en ext3
+partition pÃ¥ 50 MB. Puppy forsÃ¸ger at lave en 128MB fil
+<filename>pup078</filename> pÃ¥ denne partition, fejler, og forsÃ¸ger sig
 ikke med andre partitioner, ej heller diskettedrevet. Dette kan nok
-løses med at rette i opstartsfilerne, men når opsætningen ikke bliver
+lÃ¸ses med at rette i opstartsfilerne, men nÃ¥r opsÃ¦tningen ikke bliver
 gemt fordi <filename>/root</filename> er en RAM disk, er man ligevidt.
 </para>
 
 
 <para>
-Det er således svært at få lov at omkonfigurere puppy, hvis standard
+Det er sÃ¥ledes svÃ¦rt at fÃ¥ lov at omkonfigurere puppy, hvis standard
 udgaven ikke virker. Emulate3buttons virker ikke, mit netkort er ikke
-understøttet, og som sagt finder puppy ikke en partition den kan lave
-sin <filename>/root</filename> fil på. For at rette op på disse ting er
-det nødvendigt at lave en nyt cd image. Det er muligt at de to andre
-problemer kunne løses ved at rette under <filename>/etc</filename>, hvis
+understÃ¸ttet, og som sagt finder puppy ikke en partition den kan lave
+sin <filename>/root</filename> fil pÃ¥. For at rette op pÃ¥ disse ting er
+det nÃ¸dvendigt at lave en nyt cd image. Det er muligt at de to andre
+problemer kunne lÃ¸ses ved at rette under <filename>/etc</filename>, hvis
 det ikke var for <filename>/root</filename> problemet.
 </para>
 
@@ -143,13 +143,13 @@ det ikke var for <filename>/root</filename> problemet.
 <title>Brugen af Puppy Linux</title>
 
 <para>
-Puppy starter en fin fvwm95 windowmanager op. Man kører som root, uden password. Der
-er fire ikoner i nederste højre hjørne: Rox file manager, Rxvt, Gnotepad
-og Kill. Man får en menu med flere programmer ved at venstreklikke på
-skærmen eller ved at klikke på start menuen.  </para>
+Puppy starter en fin fvwm95 windowmanager op. Man kÃ¸rer som root, uden password. Der
+er fire ikoner i nederste hÃ¸jre hjÃ¸rne: Rox file manager, Rxvt, Gnotepad
+og Kill. Man fÃ¥r en menu med flere programmer ved at venstreklikke pÃ¥
+skÃ¦rmen eller ved at klikke pÃ¥ start menuen.  </para>
 
 <para>
-Konqueror er med som web browser. Der er et meget begrænset sæt
+Konqueror er med som web browser. Der er et meget begrÃ¦nset sÃ¦t
 applikationer med.
 </para>
 </sect1>
@@ -159,27 +159,27 @@ applikationer med.
 
 <para>
 Hvis man har min. 256 MB memory, hvis <filename>/root</filename> ligger
-på et varigt medie og har 36 MB fri, og hvis man har cd brænder i
+pÃ¥ et varigt medie og har 36 MB fri, og hvis man har cd brÃ¦nder i
 maskinen, kan man lave en modificeret version af sin live-Puppy cd, med
-programmet "Remaster live-Puppy CD" som man kan vælge i menuen, under
-"Utilities".  Disse krav kunne jeg ikke opfylde, så det er ikke testet.
+programmet "Remaster live-Puppy CD" som man kan vÃ¦lge i menuen, under
+"Utilities".  Disse krav kunne jeg ikke opfylde, sÃ¥ det er ikke testet.
 </para>
 
 <para>
-Dokumentationen er i øvrigt ikke  opdateret - i version 0.7.4 brugte den en
-diskette til at gemme <filename>/root</filename> på, og det er stadig den
-besked "Remaster live-Puppy CD" programmet giver, men det hjælper ikke at
-sætte en diskette i og reboote som der står. Flere steder på websiden kan
-dokumentationen heller ikke følge med.  
+Dokumentationen er i Ã¸vrigt ikke  opdateret - i version 0.7.4 brugte den en
+diskette til at gemme <filename>/root</filename> pÃ¥, og det er stadig den
+besked "Remaster live-Puppy CD" programmet giver, men det hjÃ¦lper ikke at
+sÃ¦tte en diskette i og reboote som der stÃ¥r. Flere steder pÃ¥ websiden kan
+dokumentationen heller ikke fÃ¸lge med.  
 </para>
 
-<para>En anden måde at lave en modificeret cd på er beskrevet på Puppy
+<para>En anden mÃ¥de at lave en modificeret cd pÃ¥ er beskrevet pÃ¥ Puppy
 on a CD siden:
 <ulink
 url="http://www.goosee.com/puppy/cd-puppy.htm">http://www.goosee.com/puppy/cd-puppy.htm</ulink>.
 Man skal bruge <filename>image.gz</filename> og
 <filename>vmlinuz</filename> fra den originale CD, samt filen
-<filename>isolinux.zip</filename> som kan hentes på  Puppy on a CD
+<filename>isolinux.zip</filename> som kan hentes pÃ¥  Puppy on a CD
 siden. Filerne <filename>isolinux.zip</filename> og
 <filename>image.gz</filename> udpakkes: 
 
@@ -192,7 +192,7 @@ Den udpakkede <filename>image</filename> fil er et filsystem, som kan
 mountes med kommandoen <screen>mount image -o loop /mnt</screen>
  
 Nu findes Puppy's filstruktur under <filename>/mnt</filename>, og man
-kan rette i opsætningsfiler mv. Når man er færdig, unmountes filen
+kan rette i opsÃ¦tningsfiler mv. NÃ¥r man er fÃ¦rdig, unmountes filen
 igen
 <screen>umount /mnt</screen>
 og image-filen pakkes med 
@@ -209,7 +209,7 @@ mv image.gz linux-builds
 mv isolinux.cfg linux-builds 
 mv vmlinuz linux-builds
 </screen>
-Så køres kommandoen 
+SÃ¥ kÃ¸res kommandoen 
 <screen>./makeiso</screen>
 Nu kommer der et nyt iso image der hedder cd-puppy.iso.
 
@@ -227,7 +227,7 @@ Nu kommer der et nyt iso image der hedder cd-puppy.iso.
   </indexterm>
 
 <para>
-Sød desktop der er nem at komme i gang med og nem at have med.
+SÃ¸d desktop der er nem at komme i gang med og nem at have med.
 </para>
 
 </sect1>
@@ -236,43 +236,43 @@ Sød desktop der er nem at komme i gang med og nem at have med.
 <sect1 id="distro-puppy-vurdering">
 <title>Samlet vurdering af Puppy Linux</title>
 <para>
-Puppy Linux lyder bedre end det er. Dels kræves der en, efter min
-standard, ret ny maskine, hvor det som oftest ville være en gammel
-maskine, jeg ville ønske mig at køre en "mini distro" på. Dels skal man
-være heldig for at det virker uden modifikationer.
+Puppy Linux lyder bedre end det er. Dels krÃ¦ves der en, efter min
+standard, ret ny maskine, hvor det som oftest ville vÃ¦re en gammel
+maskine, jeg ville Ã¸nske mig at kÃ¸re en "mini distro" pÃ¥. Dels skal man
+vÃ¦re heldig for at det virker uden modifikationer.
 </para>
 <para>
-For mange er det nok først brugbart når man har rettet det til med de
+For mange er det nok fÃ¸rst brugbart nÃ¥r man har rettet det til med de
 drivere man mv. har brug for.
-Så er det pludselig ikke så nemt for begyndere mere. Manglen på drivere
-og det faktum, at den lægger en permanent fil på harddisken, gør at den
-heller ikke er særlig egnet til at have med i lommen som system-cd,
+SÃ¥ er det pludselig ikke sÃ¥ nemt for begyndere mere. Manglen pÃ¥ drivere
+og det faktum, at den lÃ¦gger en permanent fil pÃ¥ harddisken, gÃ¸r at den
+heller ikke er sÃ¦rlig egnet til at have med i lommen som system-cd,
 eller som sin lille transportable desktop. Harddisk-problemet burde ikke
-være relevant med flash-Puppy, som gemmer på flash-kortet, men til
-gengæld er det nok kun ret nye maskiner, der kan boote fra sådan et.
+vÃ¦re relevant med flash-Puppy, som gemmer pÃ¥ flash-kortet, men til
+gengÃ¦ld er det nok kun ret nye maskiner, der kan boote fra sÃ¥dan et.
 </para>
 
 <para>
 Dokumentationen er mange steder fra version 0.7.4 og passer ikke mere.
 Dette kunne man tage som sjusk, men det ser mere ud som om det bare er
 fordi det er et projekt i rivende udvikling lige nu. Der er mange
-nye datoer i deres nyheder og diskussionsforum. Når projektet bliver
-mere færdigt vil dokumentationen forhåbentlig få højere prioritet, eller
-der vil være længere imellem nye udgaver, og dermed bedre tid til at
-dokumentationen kan følge med.
+nye datoer i deres nyheder og diskussionsforum. NÃ¥r projektet bliver
+mere fÃ¦rdigt vil dokumentationen forhÃ¥bentlig fÃ¥ hÃ¸jere prioritet, eller
+der vil vÃ¦re lÃ¦ngere imellem nye udgaver, og dermed bedre tid til at
+dokumentationen kan fÃ¸lge med.
 </para>
 
 <para>
-Det at puppy kun kører som root er heller ikke den mest betryggende
+Det at puppy kun kÃ¸rer som root er heller ikke den mest betryggende
 egenskab. Forfatterens kommentar er, at hvis du ikke kan lide dette, er
 Puppy Linux ikke noget for dig. 
 </para>
 
 <para>
-På dens nuværende udviklingsstadium er puppy således ikke særlig egnet
-til målgruppen, medmindre de er heldige at det virker i første forsøg.
-Man skal dog huske på at Puppy Linux kun er en version 0.78, 
-På lidt længere sigt kan den godt gå hen at udvikle sig til
+PÃ¥ dens nuvÃ¦rende udviklingsstadium er puppy sÃ¥ledes ikke sÃ¦rlig egnet
+til mÃ¥lgruppen, medmindre de er heldige at det virker i fÃ¸rste forsÃ¸g.
+Man skal dog huske pÃ¥ at Puppy Linux kun er en version 0.78, 
+PÃ¥ lidt lÃ¦ngere sigt kan den godt gÃ¥ hen at udvikle sig til
 noget ganske brugbart.  </para>
 </sect1>
 

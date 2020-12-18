@@ -60,13 +60,13 @@ alias  xtyge='xterm -T tyge  -e ssh tyge.sslug.dk'
 
 alias lynx='lynx -useragent="Any Browser, HTML 4.01" -pseudo_inlines +image_links'
 
-alias               oversæt='lynx http://babel.altavista.com/tr\?'
+alias               oversÃ¦t='lynx http://babel.altavista.com/tr\?'
 alias                  LEGO='lynx http://www.lego.com/'
 alias                AdaLRM='lynx http://www.adahome.com/rm95/'
 alias Retskrivningsordbogen='lynx http://www.dsn.dk/\?/cgi-bin/ordbog/ronet'
 alias                 Scope='lynx http://www.scope.dk/'
 alias           Rejseplanen='lynx http://www.rejseplanen.dk/bin/query.exe/mn'
-alias               Øresund='lynx http://www.dsb.dk/oeresund/koreplan.htm'
+alias               Ã˜resund='lynx http://www.dsb.dk/oeresund/koreplan.htm'
 
 #-----------------------------------------------------------------------------
 #--  Spell checking:
@@ -74,30 +74,30 @@ alias               Øresund='lynx http://www.dsb.dk/oeresund/koreplan.htm'
 if [ -x /usr/bin/aspell -a -e /usr/lib/aspell/british ]; then
    alias spell="aspell --lang=british  check"
 else
-   alias spell="ispell -d british            -C -L -b -S -w'áğèíóúæøåÁĞÍÓÚÆØÅéÉäÄöÖüÜ'"
+   alias spell="ispell -d british            -C -L -b -S -w'Ã¡Ã°Ã¨Ã­Ã³ÃºÃ¦Ã¸Ã¥ÃÃÃÃ“ÃšÃ†Ã˜Ã…Ã©Ã‰Ã¤Ã„Ã¶Ã–Ã¼Ãœ'"
 fi
 
 if [ -x /usr/bin/aspell -o -x /usr/local/bin/aspell ]; then
    alias stave="aspell --lang=dansk    check"
-   alias stava="aspell --lang=føroyskt check"
+   alias stava="aspell --lang=fÃ¸royskt check"
 else
-   alias stave="ispell -d dansk              -C -L -b -S -w'áğèíóúÁĞÍÓÚéÉäÄöÖüÜ'"
-   alias stava="ispell -d ~/.ispell/føroyskt -C -L -b -S -w'áğèíóúÁĞÍÓÚéÉäÄöÖüÜ'"
+   alias stave="ispell -d dansk              -C -L -b -S -w'Ã¡Ã°Ã¨Ã­Ã³ÃºÃÃÃÃ“ÃšÃ©Ã‰Ã¤Ã„Ã¶Ã–Ã¼Ãœ'"
+   alias stava="ispell -d ~/.ispell/fÃ¸royskt -C -L -b -S -w'Ã¡Ã°Ã¨Ã­Ã³ÃºÃÃÃÃ“ÃšÃ©Ã‰Ã¤Ã„Ã¶Ã–Ã¼Ãœ'"
 fi
 
-alias     word="echo '\!*' | ispell -d british               -a -C -L -b -S -w'áğèíóúÁĞÍÓÚéÉäÄöÖüÜæøåÆØÅ'"
-alias      ord="echo '\!*' | ispell -d dansk                 -a -C -L -b -S -w'áğèíóúÁĞÍÓÚéÉäÄöÖüÜ'\'"
+alias     word="echo '\!*' | ispell -d british               -a -C -L -b -S -w'Ã¡Ã°Ã¨Ã­Ã³ÃºÃÃÃÃ“ÃšÃ©Ã‰Ã¤Ã„Ã¶Ã–Ã¼ÃœÃ¦Ã¸Ã¥Ã†Ã˜Ã…'"
+alias      ord="echo '\!*' | ispell -d dansk                 -a -C -L -b -S -w'Ã¡Ã°Ã¨Ã­Ã³ÃºÃÃÃÃ“ÃšÃ©Ã‰Ã¤Ã„Ã¶Ã–Ã¼Ãœ'\'"
 
-if [ -e /usr/lib/ispell/føroyskt.hash ]; then
-   alias   orğ="echo '\!*' | ispell -d føroyskt           -a -C -L -b -S -w'áğèíóúÁĞÍÓÚéÉäÄöÖüÜ'\'"
+if [ -e /usr/lib/ispell/fÃ¸royskt.hash ]; then
+   alias   orÃ°="echo '\!*' | ispell -d fÃ¸royskt           -a -C -L -b -S -w'Ã¡Ã°Ã¨Ã­Ã³ÃºÃÃÃÃ“ÃšÃ©Ã‰Ã¤Ã„Ã¶Ã–Ã¼Ãœ'\'"
 else
-   alias   orğ="echo '\!*' | ispell -d ~/.ispell/føroyskt -a -C -L -b -S -w'áğèíóúÁĞÍÓÚéÉäÄöÖüÜ'\'"
+   alias   orÃ°="echo '\!*' | ispell -d ~/.ispell/fÃ¸royskt -a -C -L -b -S -w'Ã¡Ã°Ã¨Ã­Ã³ÃºÃÃÃÃ“ÃšÃ©Ã‰Ã¤Ã„Ã¶Ã–Ã¼Ãœ'\'"
 fi
 
 if [ -x /usr/bin/pospell -o -x /usr/local/bin/pospell ]; then
    alias po_spell='\pospell -n \!* -p aspell -- --lang=british  check %f'
    alias po_stave='\pospell -n \!* -p aspell -- --lang=dansk    check %f'
-   alias po_stava='\pospell -n \!* -p aspell -- --lang=føroyskt check %f'
+   alias po_stava='\pospell -n \!* -p aspell -- --lang=fÃ¸royskt check %f'
 fi
 
 #-----------------------------------------------------------------------------
@@ -109,14 +109,14 @@ alias jpeg2ps='(djpeg    | pnm2ps)'
 alias  png2ps='(pngtopnm | pnm2ps)'
 
 alias   ps2psbook="(psbook | psnup -2 | tumble)"
-alias ps2A5-hæfte="(psbook -s8 | psnup -4 )"
+alias ps2A5-hÃ¦fte="(psbook -s8 | psnup -4 )"
 
 #-----------------------------------------------------------------------------
 #--  Image processing:
 
 alias ppm2jpeg='cjpeg'
 alias  gif2png='(giftopnm | pnmtopng)'
-alias  gif2grå='(giftopnm | ppmtopgm)'
+alias  gif2grÃ¥='(giftopnm | ppmtopgm)'
 
 if [ -e ${HOME}/images/signature-43x30.pgm ]; then
    alias sign_image='pnmpaste -replace ${HOME}/images/signature-43x30.pgm -43 -30'
@@ -146,13 +146,13 @@ alias    gm-flags-fast='echo "-O3 -funroll-loops -funwind-tables -gnatn -cargs -
 #-----------------------------------------------------------------------------
 #--  Fjern overforbrug af nutids-r'er:
 
-alias nutids-r="perl -w -pe 'use strict; use locale; s/(\W(at|vil|ville|kan|kunne|skal|skulle|må|måtte) \w+)r(\W)/"'$1$3'"/gim'"
+alias nutids-r="perl -w -pe 'use strict; use locale; s/(\W(at|vil|ville|kan|kunne|skal|skulle|mÃ¥|mÃ¥tte) \w+)r(\W)/"'$1$3'"/gim'"
 
 #-----------------------------------------------------------------------------
 #--  RPM-genveje:
 
 if [ -x /usr/bin/rpm ]; then
-   alias pakkestørrelser='rpm -qa --queryformat="%10{SIZE}\t%{NAME}-%{VERSION}-%{RELEASE}\n" | sort -nr'
+   alias pakkestÃ¸rrelser='rpm -qa --queryformat="%10{SIZE}\t%{NAME}-%{VERSION}-%{RELEASE}\n" | sort -nr'
 fi
 
 #-----------------------------------------------------------------------------

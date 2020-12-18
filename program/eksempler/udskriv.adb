@@ -3,10 +3,10 @@
 
 --  2000.01.09: Skrevet om/rettet til af Jacob Sparre Andersen <sparre@nbi.dk>
 
---  Programmet er afprøvet med GNAT (GNU Ada), men bør virke med alle
---  Ada-oversættere.
+--  Programmet er afprÃ¸vet med GNAT (GNU Ada), men bÃ¸r virke med alle
+--  Ada-oversÃ¦ttere.
 --
---  Oversættelse:
+--  OversÃ¦ttelse:
 --    gnatmake udskriv -cargs -gnatv -gnati1 -gnatf -gnato
 --
 --  Afvikling:
@@ -25,7 +25,7 @@ procedure Udskriv is
 
    ---------------------------------------------------------------------------
 
-   procedure Vent_På (Tegn : in     String) is
+   procedure Vent_PÃ¥ (Tegn : in     String) is
 
       use Ada.Strings.Fixed;
       use Ada.Text_IO;
@@ -42,7 +42,7 @@ procedure Udskriv is
                           Pattern => (1 => Tast)) > 0;
       end loop;
       New_Line;
-   end Vent_På;
+   end Vent_PÃ¥;
 
    ---------------------------------------------------------------------------
 
@@ -65,7 +65,7 @@ begin
                Name => Navn,
                Mode => In_File);
 
-      Læs_Linier:
+      LÃ¦s_Linier:
          while not End_Of_File (Fil) loop
             Put (Item  => Line (Fil),
                  Width => 5);
@@ -78,19 +78,19 @@ begin
                if Is_Graphic (Tegn) then
                   Put (Item => Tegn);
                else
-                  Put (Item => "¿");
+                  Put (Item => "Â¿");
                end if;
 
-               exit Læs_Linier when End_Of_File (Fil);
+               exit LÃ¦s_Linier when End_Of_File (Fil);
             end loop;
 
             Skip_Line (File => Fil);
             New_Line;
-         end loop Læs_Linier;
+         end loop LÃ¦s_Linier;
 
          Close (File => Fil);
 
-         Vent_På ("QqNn");
+         Vent_PÃ¥ ("QqNn");
       exception
          when Name_Error =>
             Put_Line ("Filen " & Navn & " findes ikke!");

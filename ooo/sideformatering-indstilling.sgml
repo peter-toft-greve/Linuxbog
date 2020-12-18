@@ -5,7 +5,7 @@
 <sect1 id="ooo-sideformatering-indstilling">
   <title>Indstilling af sideformatering</title>
 
-<para>Indstillingerne for sideformateringen fås med
+<para>Indstillingerne for sideformateringen fÃ¥s med
     <emphasis>Formater/Side</emphasis>.</para>
 
 <sect2 id="ooo-sideformatering-indstilling-dimensioner">
@@ -16,7 +16,7 @@
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Under <emphasis>Margen</emphasis> indstilles margenstørrelsen hele vejen
+<para>Under <emphasis>Margen</emphasis> indstilles margenstÃ¸rrelsen hele vejen
         rundt.</para>
 
 </listitem>
@@ -24,23 +24,23 @@
   <listitem>
 
 <para>Under <emphasis>Papirformat</emphasis> indstilles, hvor stort papiret er
-        (normalt A4) samt om papiret skal være stående (højformat,
-        portrætformat) eller liggende (tværformat, landskabsformat).</para>
+        (normalt A4) samt om papiret skal vÃ¦re stÃ¥ende (hÃ¸jformat,
+        portrÃ¦tformat) eller liggende (tvÃ¦rformat, landskabsformat).</para>
 
 </listitem>
 
   <listitem>
 
-<para>Under <emphasis>Sidelayout</emphasis> kan du vælge <emphasis>Spejlvendt</emphasis>, hvis
-        indstillingerne for højre og venste side skal være spejlvendinger af
-        hinanden (det kan være relevant hvis du bruger begge sider af
+<para>Under <emphasis>Sidelayout</emphasis> kan du vÃ¦lge <emphasis>Spejlvendt</emphasis>, hvis
+        indstillingerne for hÃ¸jre og venste side skal vÃ¦re spejlvendinger af
+        hinanden (det kan vÃ¦re relevant hvis du bruger begge sider af
         papiret).</para>
 
 </listitem>
 </itemizedlist>
 
 <para>Den <emphasis>korrekte</emphasis> grafiske betegnelse er henholdsvis
-    <emphasis>højformat</emphasis> eller <emphasis>tværformat</emphasis>.</para>
+    <emphasis>hÃ¸jformat</emphasis> eller <emphasis>tvÃ¦rformat</emphasis>.</para>
 </sect2>    <!--   Sidens dimensioner -->
 
 <sect2 id="ooo-sideformatering-indstilling-spalter">
@@ -51,7 +51,7 @@
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Vælg antal spalter enten ved at skrive tallet eller klikke på en
+<para>VÃ¦lg antal spalter enten ved at skrive tallet eller klikke pÃ¥ en
         af ikonerne.</para>
 
 </listitem>
@@ -62,10 +62,10 @@
   <title>Sidehoved og sidefod</title>
 
 <para>Under fanebladene <emphasis>Sidehoved</emphasis> og <emphasis>Sidefod</emphasis> indstilles
-    størrelsen af sidehoved og sidefod. Boksene <emphasis>Aktiver
+    stÃ¸rrelsen af sidehoved og sidefod. Boksene <emphasis>Aktiver
     sidehoved/sidefod</emphasis> skal afkrydses for at vise sidehoved/sidefod. (Det
-    kan også gøres ved at vælge <emphasis>Indsæt/Sidehoved</emphasis> og
-    <emphasis>Indsæt/Sidefod</emphasis>).</para>
+    kan ogsÃ¥ gÃ¸res ved at vÃ¦lge <emphasis>IndsÃ¦t/Sidehoved</emphasis> og
+    <emphasis>IndsÃ¦t/Sidefod</emphasis>).</para>
 
 <para>Sidehovedet og sidefoden er inddelt i tre sektioner vha.
     tabulatorer:</para>
@@ -75,8 +75,8 @@
 <graphic fileref="sidehoved.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Det anvendes sådan: Skriv venstre del, tast <emphasis>Tab</emphasis>, skriv
-    midterdelen, tast <emphasis>Tab</emphasis>, skriv højre del.</para>
+<para>Det anvendes sÃ¥dan: Skriv venstre del, tast <emphasis>Tab</emphasis>, skriv
+    midterdelen, tast <emphasis>Tab</emphasis>, skriv hÃ¸jre del.</para>
 
 </sect2>    <!--   Sidehoved og sidefod -->
 </sect1>    <!--   10.2. Indstilling af sideformatering -->

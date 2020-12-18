@@ -2,20 +2,20 @@ C       Program eksemplet udskriv fil.
 C       af Peter Gylling <gylling@danbbs.dk>
 C       $Id$
 C 
-C       Bemærk: Programmet kan ikke stoppes ved at taste 'Q', da denne
-C       feature ligepræcis udtrykker problemet med fortran77. Det kan 
-C       ikke læse fra to enheder samtidig. Fortran77 er og bliver et
+C       BemÃ¦rk: Programmet kan ikke stoppes ved at taste 'Q', da denne
+C       feature ligeprÃ¦cis udtrykker problemet med fortran77. Det kan 
+C       ikke lÃ¦se fra to enheder samtidig. Fortran77 er og bliver et
 C       sprog, der er udviklet til numeriske beregninger af diverse
 C       naturvidenskablige problemer.
 C       
-C       Oversætter: g77 -o udskriv udskriv.f
+C       OversÃ¦tter: g77 -o udskriv udskriv.f
 C
 C       Afvikling: ./udskriv
 
         program udskriv 
         implicit none
 
-C       Erklæring af variable
+C       ErklÃ¦ring af variable
         integer i               
         integer input_unit
         integer output_unit
@@ -29,9 +29,9 @@ C       Erklæring af variable
 
 
 C       Program start
-        input_unit = 5          ! Standard læsning fra tastatur
-        output_unit = 6         ! Standard skrivning til skærm
-        file_unit = 15          ! Standard læsning fra fil
+        input_unit = 5          ! Standard lÃ¦sning fra tastatur
+        output_unit = 6         ! Standard skrivning til skÃ¦rm
+        file_unit = 15          ! Standard lÃ¦sning fra fil
 
         write(output_unit,100) '>> Indtast filnavn' 
  100    format(3x,a)
@@ -43,8 +43,8 @@ C       Program start
 C       Tjek om filen eksisterer
         inquire(file=file_name,exist=file_exist,opened=file_open)
         
-C       Hvis file_ok = TRUE, så eksisterer filen
-C       Hvis file_open = TRUE, så er filen åbnet
+C       Hvis file_ok = TRUE, sÃ¥ eksisterer filen
+C       Hvis file_open = TRUE, sÃ¥ er filen Ã¥bnet
         
         if(file_exist) then
            i = 1
@@ -55,20 +55,20 @@ C       Hvis file_open = TRUE, så er filen åbnet
            goto 400
         end if
 
-C       Filen er nu åbnet og klar til indlæsning
+C       Filen er nu Ã¥bnet og klar til indlÃ¦sning
  200    continue
         
         read(file_unit,205,end=250)  file_line
  205    format(a80)
-C       Udskrift til skærm
+C       Udskrift til skÃ¦rm
         write(output_unit,210) i,file_line
  210    format(3x,'>> ',i3,' ',a70)
 
-C       Forhøjer linietælleren
+C       ForhÃ¸jer linietÃ¦lleren
         i = i+1
         goto 200
 
-C       Afslutter udskrift på grund af 'End Of File'
+C       Afslutter udskrift pÃ¥ grund af 'End Of File'
  250    continue
         write(output_unit,405) '[EOF] --> Udskrivning afsluttes'
         close(file_unit)

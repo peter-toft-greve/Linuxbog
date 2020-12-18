@@ -3,7 +3,7 @@
   af Frank Damgaard <frank@sslug.dk>
   $Id$
 
-  Oversæt med: gcc -Wall udskriv.c -o udskriv
+  OversÃ¦t med: gcc -Wall udskriv.c -o udskriv
 
   Afvikling: ./udskriv filnavn [filnavn ...]
 
@@ -13,7 +13,7 @@
 #include <string.h>
 #include <errno.h>
 
-/* Vent på at der bliver tastet et tegn */
+/* Vent pÃ¥ at der bliver tastet et tegn */
 void wait_for(char *flere_tegn) {
   int tegn;
   while ( (tegn=getchar())!=EOF ) {
@@ -43,7 +43,7 @@ int print_file(char *filnavn, FILE *udfil) {
       fputc('\n',udfil);
       nylinie=1;
     } 
-    else fputc('¿',udfil);
+    else fputc('Â¿',udfil);
   }
   if (!nylinie) fputc('\n',udfil);
   fclose(infil);
@@ -52,7 +52,7 @@ int print_file(char *filnavn, FILE *udfil) {
 }
 
 int main ( int argc, char **argv) {
-	/* Udskriv alle filer på kommando-linien */
+	/* Udskriv alle filer pÃ¥ kommando-linien */
   for (argv++ ; --argc; argv++) {
     if (print_file(*argv, stdout)<0) break;
   }

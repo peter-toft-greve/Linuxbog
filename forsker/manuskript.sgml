@@ -2,9 +2,9 @@
 
 <!-- Friheden til at studere og forske --> 
 <!-- en begynder-bog forsamfundsfagsfolk og humanister m.fl.  --> 
-<!-- aller-første udkast -->
+<!-- aller-fÃ¸rste udkast -->
 <!-- Startdato: 1. august 2003.  -->
-<!-- Og så gik manden på barsel... -->
+<!-- Og sÃ¥ gik manden pÃ¥ barsel... -->
 
 <?xml version='1.0' encoding='UTF-8' ?>
 
@@ -14,36 +14,36 @@
 <title>Denne bog er skrevet til ... </title>
 
 <para>
-Denne bog henvender sig til studerende og forskere ved videregående
+Denne bog henvender sig til studerende og forskere ved videregÃ¥ende
 uddannelser i Danmark, som har brug for en computer til det mest
 almindelige: Email, webbrowsing og - som den del der vejer tungest -
 tekstbehandling i den tungere ende, hvor der skal skrives rapporter
 med fodnoter, indholdsfortegnelse, kildehenvisninger,
-litteraturlister, tabeller, figurer og en masse andet. Især hér er
-Linux et stærkt alternativ.
+litteraturlister, tabeller, figurer og en masse andet. IsÃ¦r hÃ©r er
+Linux et stÃ¦rkt alternativ.
 </para>
 
 <para>
-Der er et særligt fokus på uøvede brugere på samfundsvidenskabelige og
-humanistiske fag, som typisk ikke interesserer sig så meget for
+Der er et sÃ¦rligt fokus pÃ¥ uÃ¸vede brugere pÃ¥ samfundsvidenskabelige og
+humanistiske fag, som typisk ikke interesserer sig sÃ¥ meget for
 teknikken bag deres computer og som ikke bruger den til tekniske og
-tunge formål så som simulation og programmering - men som alligevel er
-mere eller midre afhængige af en computer i deres daglige arbejde.
+tunge formÃ¥l sÃ¥ som simulation og programmering - men som alligevel er
+mere eller midre afhÃ¦ngige af en computer i deres daglige arbejde.
 </para>
 
 <para>
-Der findes et hav af programmer til Linux. Bogen her forsøger at rydde
+Der findes et hav af programmer til Linux. Bogen her forsÃ¸ger at rydde
 op i junglen, og komme med nogle klare anbefalinger til dig der "bare
 vil have noget der virker". Er du nysgerrig efter at udforske mere, er
-der undervejs henvisninger til andre bøger i serien, som præsenter
-alternativer og uddybende forklaringer, så du med garanti nok skal få
+der undervejs henvisninger til andre bÃ¸ger i serien, som prÃ¦senter
+alternativer og uddybende forklaringer, sÃ¥ du med garanti nok skal fÃ¥
 stillet din nysgerrighed.
 </para>
 
 <para>
-Hvis du støder på fejl, mangler, uklarheder - eller har spørgsmål
-eller kommentarer, hører jeg meget gerne fra dig. Jeg vil meget gerne
-have ideer til forbedringer, så bogen kan blive endnu bedre og nå
+Hvis du stÃ¸der pÃ¥ fejl, mangler, uklarheder - eller har spÃ¸rgsmÃ¥l
+eller kommentarer, hÃ¸rer jeg meget gerne fra dig. Jeg vil meget gerne
+have ideer til forbedringer, sÃ¥ bogen kan blive endnu bedre og nÃ¥
 flere mennesker.
 </para>
 
@@ -57,7 +57,7 @@ august 2003.
 </chapter>
 
 
-<!-- Slut på forord             -->
+<!-- Slut pÃ¥ forord             -->
 <!-- Nu noget politisk om Linux -->
 
 
@@ -65,7 +65,7 @@ august 2003.
 <title>Vidensdeling - ideerne bag Linux</title>
 
 <para>
-NB! Hvis du vil i gang med at lære Linux i en fart, kan du roligt
+NB! Hvis du vil i gang med at lÃ¦re Linux i en fart, kan du roligt
 springe dette over.
 </para>
 
@@ -74,69 +74,69 @@ Information wants to be free....
 </para>
 
 <para>
-(...) Vidensdeling på universiteterne, mellem forskere. Samfundet
-nyder gavn af samfundets forskning. Hvorfor skal det ikke gælde inden
+(...) Vidensdeling pÃ¥ universiteterne, mellem forskere. Samfundet
+nyder gavn af samfundets forskning. Hvorfor skal det ikke gÃ¦lde inden
 for software. Alternativ produktionsform og udviklermodel, der minder
 om universitets vidensdelingsideal (...)
 </para>
 
 <para>
-På universiteterne er vi vant til at dele viden og tanker. Når vi
-skriver en opgave, starter vi som regel med at undersøge, hvad der i
+PÃ¥ universiteterne er vi vant til at dele viden og tanker. NÃ¥r vi
+skriver en opgave, starter vi som regel med at undersÃ¸ge, hvad der i
 forvejen er skrevet, hvilke teorier der er udviklet og hvad andre har
 konkluderet. Det er meget almindeligt at opbygge en teoretisk platform
-ved at trække på teorerikere, og vi citerer flittigt forfattere som
-Bourdieu, Habermas eller Wiebe Bijker. Det må vi gerne. Der findes
+ved at trÃ¦kke pÃ¥ teorerikere, og vi citerer flittigt forfattere som
+Bourdieu, Habermas eller Wiebe Bijker. Det mÃ¥ vi gerne. Der findes
 regler for, hvordan man skal citere og henvise til andres arbejde -
-men at trække på andres viden er en central del af det vi lærer på
-universitetet. Fri Software (Open Source) kan siges at bygge på denne
+men at trÃ¦kke pÃ¥ andres viden er en central del af det vi lÃ¦rer pÃ¥
+universitetet. Fri Software (Open Source) kan siges at bygge pÃ¥ denne
 tradition i forbindelse med udvikling af software.
 </para>
 
 <para>
 Helt anderledes forholdet det sig i den traditionelle
-softwarebranche. Her er udgangspunktet at man først og fremmest
-hemmeligholder sin viden, og at man dernæst pakker arbejdet ind
-patenter. I første omgang beskyttede man sit produkt, så folk skulle
+softwarebranche. Her er udgangspunktet at man fÃ¸rst og fremmest
+hemmeligholder sin viden, og at man dernÃ¦st pakker arbejdet ind
+patenter. I fÃ¸rste omgang beskyttede man sit produkt, sÃ¥ folk skulle
 betale for eksempelvis en tekstbehandler. Det minder meget om, hvordan
-man tjener penge i den fysiske verden (fx. på en havefræser), bortset
+man tjener penge i den fysiske verden (fx. pÃ¥ en havefrÃ¦ser), bortset
 fra at software kan kopieres i det uendelige ude kvalitetstab og til
-en pris meget nær nul (hvilket man ikke kan på helt samme måde med en
-havefræser)...
+en pris meget nÃ¦r nul (hvilket man ikke kan pÃ¥ helt samme mÃ¥de med en
+havefrÃ¦ser)...
 </para>
 
 <para>
-...Åben/lukket kildetekst (indsæt tekst fra min RUC-rapport om OSS)....
+...Ã…ben/lukket kildetekst (indsÃ¦t tekst fra min RUC-rapport om OSS)....
 </para>
 
-<!-- Figur: Åben og lukket kildetekst. Saks fra Janus' RUC-rapport. -->
+<!-- Figur: Ã…ben og lukket kildetekst. Saks fra Janus' RUC-rapport. -->
 
 <para>
-Men der stopper det ikke: I dag tager man ikke bare copyright på sine
-produkter; man tager typisk patent på principper og metoder som
+Men der stopper det ikke: I dag tager man ikke bare copyright pÃ¥ sine
+produkter; man tager typisk patent pÃ¥ principper og metoder som
 softwaren virker efter. Det kunne for eksempel et stykke matematik, der
-foretager en beregning - men det kunne også være princippet om
-"e-handel" (altså postordresag via internettet). Der er sågar
-udskrevet et patent på en særlig måde at lege med sin kat med en
-lommelygte (kilde!). Dermed er patenetingen inden for især software
-nået nye højder, og det er blevet en slags kapløb om, hvem der først
-får ansøgt patenter. Det er blevet svært at være programmør, for det
-er en eget ansvar at sørge for, at man ikke krænker patenter i sin
+foretager en beregning - men det kunne ogsÃ¥ vÃ¦re princippet om
+"e-handel" (altsÃ¥ postordresag via internettet). Der er sÃ¥gar
+udskrevet et patent pÃ¥ en sÃ¦rlig mÃ¥de at lege med sin kat med en
+lommelygte (kilde!). Dermed er patenetingen inden for isÃ¦r software
+nÃ¥et nye hÃ¸jder, og det er blevet en slags kaplÃ¸b om, hvem der fÃ¸rst
+fÃ¥r ansÃ¸gt patenter. Det er blevet svÃ¦rt at vÃ¦re programmÃ¸r, for det
+er en eget ansvar at sÃ¸rge for, at man ikke krÃ¦nker patenter i sin
 software
 </para>
 
 <!-- Kilder! -->
 
 <para>
-Det svarer til, at Habermas forlag sagsøger dig, hvis du enten citerer
-fra hans bøger, eller bare lader dig inspire til dit videre
+Det svarer til, at Habermas forlag sagsÃ¸ger dig, hvis du enten citerer
+fra hans bÃ¸ger, eller bare lader dig inspire til dit videre
 arbejde......
 </para>
 
 <para>
-Ideerne bag Open Source går igen i andre dele af verden,
-bl.a. forskerverdenen, som du måske selv er en del af. Foruden den
-almindeige brug af litteratur fra MIT således udviklet en særlig 'Open
+Ideerne bag Open Source gÃ¥r igen i andre dele af verden,
+bl.a. forskerverdenen, som du mÃ¥ske selv er en del af. Foruden den
+almindeige brug af litteratur fra MIT sÃ¥ledes udviklet en sÃ¦rlig 'Open
 Courseware'. (...).
 </para>
 
@@ -153,14 +153,14 @@ Ikke helt....
 <title>KDE - skrivebordet</title>
 
 <para>
-KDE står for "Kool Desktop Environment", og er et meget udbredt
-grafisk skrivebords-miljø til Linux. Det minder en del om det, du
+KDE stÃ¥r for "Kool Desktop Environment", og er et meget udbredt
+grafisk skrivebords-miljÃ¸ til Linux. Det minder en del om det, du
 allerede kender fra Windows og Mac: Et skrivebord med nogle ikoner til
 programmer og dokumenter, en start-menu som du kan starte programmer
-fra. Foruden at være et skrivebordsmiljø, definerer KDE nogle
-retlingslinjer for, hvordan et KDE-program bør se ud og opføre sig,
+fra. Foruden at vÃ¦re et skrivebordsmiljÃ¸, definerer KDE nogle
+retlingslinjer for, hvordan et KDE-program bÃ¸r se ud og opfÃ¸re sig,
 hvilket betyder at programmerne minder om hinanden og derved bliver
-letter at gå til.
+letter at gÃ¥ til.
 </para>
 
 <para>
@@ -168,8 +168,8 @@ KDE bruges bl.a. i... case. (her kommre nogle eksempler).
 </para>
 
 <para>
-I det følgende gennemgår vi kort skrivebordets opbygning og hvad du
-kan med det. Herefter går vi videre med nogle meget nyttige
+I det fÃ¸lgende gennemgÃ¥r vi kort skrivebordets opbygning og hvad du
+kan med det. Herefter gÃ¥r vi videre med nogle meget nyttige
 programmer.
 </para>
 
@@ -187,13 +187,13 @@ programmer.
  </sect1>
 
  <sect1 id="kde-hjaelp">
-  <title>Hjælpefuktionerne</title>
+  <title>HjÃ¦lpefuktionerne</title>
 
-<!-- Skærmdump af hjælpe-redningskransen -->
+<!-- SkÃ¦rmdump af hjÃ¦lpe-redningskransen -->
 <para>
-Overalt i KDE kan du få hjælp. Alle programmer har en "Hjælpe"-menu
-med en håndbog til de enkelte programmer. Prøv for eksempel at åbne Konqueror, og
-gå ind i menuen "Hjælp" -> "Konquror-håndbogen". Et nyt vindue åbner sig med en indholdsfortegnelse over de mange forskellige funktioner i Konqueror.
+Overalt i KDE kan du fÃ¥ hjÃ¦lp. Alle programmer har en "HjÃ¦lpe"-menu
+med en hÃ¥ndbog til de enkelte programmer. PrÃ¸v for eksempel at Ã¥bne Konqueror, og
+gÃ¥ ind i menuen "HjÃ¦lp" -> "Konquror-hÃ¥ndbogen". Et nyt vindue Ã¥bner sig med en indholdsfortegnelse over de mange forskellige funktioner i Konqueror.
 </para>
 
 </sect1>
@@ -216,9 +216,9 @@ bruge.
 <sect2 id="kmail-modtage-mail">
 <title>Modtage mails</title>
 <para>
-For at få Kmail til at se om der er ny mail til dig, trykker du på
+For at fÃ¥ Kmail til at se om der er ny mail til dig, trykker du pÃ¥
 knappen "Kig efter post". Det er nummer fire fra venstre, og ikonet er
-en lille kuvert med en grøn pil, der peger nedad.
+en lille kuvert med en grÃ¸n pil, der peger nedad.
 </para>
 
 </sect2>
@@ -227,7 +227,7 @@ en lille kuvert med en grøn pil, der peger nedad.
 <title>Sende og besvare mails</title>
 
 <para>
-... vedhæfte filer
+... vedhÃ¦fte filer
 </para>
 
 </sect2>
@@ -237,15 +237,15 @@ en lille kuvert med en grøn pil, der peger nedad.
 <title>Adressebogen</title>
 <para>
 Kmail har en indbygget adressebog, hvor du kan gemme navn,
-mailadresse, telefonnummer m.v. på dine venner og kollegaer. Du finder
-adresebogen i menuen "Vørktøjer" -> "Adressebog".
+mailadresse, telefonnummer m.v. pÃ¥ dine venner og kollegaer. Du finder
+adresebogen i menuen "VÃ¸rktÃ¸jer" -> "Adressebog".
 </para>
 
 <para>
-Lad os prøve at oprette en adresse. Åbn adressebogen og vælg menuen
+Lad os prÃ¸ve at oprette en adresse. Ã…bn adressebogen og vÃ¦lg menuen
 "Fil" - > "Ny kontakt" (eller tryk genvejstasten CTRL + n). Som du kan
 se er der plads til at skrive navn, adresse, mailadresse og en masse
-andet. Under fanebladet "detaljer" kan du for eksempel registrere fødselsdato,
+andet. Under fanebladet "detaljer" kan du for eksempel registrere fÃ¸dselsdato,
 og fritekst i feltet "note". Her kan du for eksempel skrive stikord om
 personen.
 </para>
@@ -255,11 +255,11 @@ personen.
 <sect2 id="kmail-sortere-og-filtre">
 <title>Organiser dine mail - opret mapper og brug dem!</title>
 <para>
-Det er praktisk at sortere sine mails, så de er lettere at
-finde. Hvordan du konkret vil gøre det afhænger meget af antaller af
+Det er praktisk at sortere sine mails, sÃ¥ de er lettere at
+finde. Hvordan du konkret vil gÃ¸re det afhÃ¦nger meget af antaller af
 mails du modtager og din temperament. For de fleste er det dog en god
-idé at have en mappe for hvert projekt man deltager i. Fx. en mappe
-hvor du gemmer mail fra din læsegruppe i en bestemt projekt-forløb, og
+idÃ© at have en mappe for hvert projekt man deltager i. Fx. en mappe
+hvor du gemmer mail fra din lÃ¦segruppe i en bestemt projekt-forlÃ¸b, og
 en mappe til foreningsaktiviter m.v.
 </para>
 </sect2>
@@ -267,23 +267,23 @@ en mappe til foreningsaktiviter m.v.
 <sect2 id="filtre">
 <title>Filtre - automatisk sortering af mail</title>
 <para>
-Hvis du abonnerer på en eller flere postlister kan du med fordel sætte
-filtre op, så Kmail automatisk sorterer dine mails og skaber større
-overskuelighed i din indbakke. Fordelen er, at din indbakke på den
-måde kun kommer til at indeholder mail som er sendt direkte til dig,
+Hvis du abonnerer pÃ¥ en eller flere postlister kan du med fordel sÃ¦tte
+filtre op, sÃ¥ Kmail automatisk sorterer dine mails og skaber stÃ¸rre
+overskuelighed i din indbakke. Fordelen er, at din indbakke pÃ¥ den
+mÃ¥de kun kommer til at indeholder mail som er sendt direkte til dig,
 mens postlister fra foreninger og institutter havner i en mappe for
-sig, som du kan læse ved lejlighed.
+sig, som du kan lÃ¦se ved lejlighed.
 </para>
 
 <para>
-I eksemplet her får vi Kmail til selv at flytte nyhedsbreve fra Ibis
-og Teknologirådet ned i mappen "nyhedsbrev", hvor vi opretter to
+I eksemplet her fÃ¥r vi Kmail til selv at flytte nyhedsbreve fra Ibis
+og TeknologirÃ¥det ned i mappen "nyhedsbrev", hvor vi opretter to
 undermapper.
 </para>
 
 <para>
-Filtre bygger på nogle regler. Mulighederne er uendelige. Du kan
-opstille et vilkårligt antal kriterier for Kmail. Du kan for eksempel få den
+Filtre bygger pÃ¥ nogle regler. Mulighederne er uendelige. Du kan
+opstille et vilkÃ¥rligt antal kriterier for Kmail. Du kan for eksempel fÃ¥ den
 til at
 </para>
 
@@ -292,7 +292,7 @@ til at
 </sect1>
 </chapter>
 
-<!-- Eksempel: Filter på liste fra groupcare          -->
+<!-- Eksempel: Filter pÃ¥ liste fra groupcare          -->
 
 <chapter id="forsker-skriv-rapporter">
 <title>Skriv rapporter og andre avancerede dokumenter</title>
@@ -302,36 +302,36 @@ til at
 
 <para>
 I bogen her er der foretaget en masse fravalg. Ideen er et at give
-læseren nogle konkrete anvisninger på, hvilke programmer der kan klare
-en given opgave. Alligvel er der eet sted, hvor der kommer bud på to
-indbyrdes meget forskellige værktøjer til at skrive tekster i.
+lÃ¦seren nogle konkrete anvisninger pÃ¥, hvilke programmer der kan klare
+en given opgave. Alligvel er der eet sted, hvor der kommer bud pÃ¥ to
+indbyrdes meget forskellige vÃ¦rktÃ¸jer til at skrive tekster i.
 </para>
 
 <para>
-Det første er OpenOffice.org, der lægger sig meget tæt op af
-MS-Office. Kender du MS-Office vil du hurtigt føle dig hjemme i
+Det fÃ¸rste er OpenOffice.org, der lÃ¦gger sig meget tÃ¦t op af
+MS-Office. Kender du MS-Office vil du hurtigt fÃ¸le dig hjemme i
 OpenOffice.org, fordi programmerne ligner hinanden. Pakken indeholder
 programmer til tekstbehandling (Writer), regneark (Calc),
-præsentationsgrafik (Impress), tegneprogram m.m. Med OpenOffice.org
+prÃ¦sentationsgrafik (Impress), tegneprogram m.m. Med OpenOffice.org
 kan du skrive og layoute alt fra festsange til avancerede
 rapporter. Hertil kommer de andre dele af office-pakken til regnskab,
-tegninger og præsentationsgrafik. OpenOffice.org er en "alt i en"'er der
+tegninger og prÃ¦sentationsgrafik. OpenOffice.org er en "alt i en"'er der
 er i konstant udvikling med en stor brugerskare.
 </para>
 
 <para>
 Alternativet er dokumentabehandleren LyX, som har en noget anderledes
 tilgang til at skrive. LyX er hverken velegnet til festsange eller
-løbesedler, og LyX kan ikke bruges til at tegne eller oprette regneark
-i. Til gengæld er LyX suverænt til at skrive videnskabelige artikler
-og rapporter med. Dets store styrke ligger dels i, at man får et
-grafisk meget flot resultat uden at skulle tænke i layout; dels at det
-er fantastisk godt til at holde styr på store rapporter med
+lÃ¸besedler, og LyX kan ikke bruges til at tegne eller oprette regneark
+i. Til gengÃ¦ld er LyX suverÃ¦nt til at skrive videnskabelige artikler
+og rapporter med. Dets store styrke ligger dels i, at man fÃ¥r et
+grafisk meget flot resultat uden at skulle tÃ¦nke i layout; dels at det
+er fantastisk godt til at holde styr pÃ¥ store rapporter med
 krydshenvisninger, fodnoter, litteraturhenvisninger, stikordregister
 m.v. For RUC'er og andre der lever store del af deres studieliv i en
-tekstbehandler og har brug for et virkelig godt værktøj til at skrive
-projekt med, er LyX bestemt værd at kigge nærmere på. Det kræver lidt
-tilvænning - men det er det hele værd.
+tekstbehandler og har brug for et virkelig godt vÃ¦rktÃ¸j til at skrive
+projekt med, er LyX bestemt vÃ¦rd at kigge nÃ¦rmere pÃ¥. Det krÃ¦ver lidt
+tilvÃ¦nning - men det er det hele vÃ¦rd.
 </para>
 </sect1>
 
@@ -348,16 +348,16 @@ dax: Placeholder
 <title>Open Office - en omfattende Office-pakke</title>
 
 <para>
-OpenOffice.org minder på mange måder om Microsoft Office. Der er tale
-om en programpakke med tekstbehandling, regnsark, præsentationsgrafik
+OpenOffice.org minder pÃ¥ mange mÃ¥der om Microsoft Office. Der er tale
+om en programpakke med tekstbehandling, regnsark, prÃ¦sentationsgrafik
 m.v, som kan udveksle dokunter med Microsofts programmer og andre. De
 vigtigste programmer er:
 </para>
 
-<!-- Hvordan formatterer jeg nedenstående i en tabel? -->
+<!-- Hvordan formatterer jeg nedenstÃ¥ende i en tabel? -->
 <!-- dax: Det er et stort arbejde, se i friheden til at
      programmere i C, filen fri2try.sgml har 2 tables 
-     Foreløbig snyder jeg groft, programexample giver almindelig
+     ForelÃ¸big snyder jeg groft, programexample giver almindelig
      skrivemaskine - layout.
 /-->
 
@@ -366,7 +366,7 @@ vigtigste programmer er:
 Funktion                        Navn            Svarer til
 Tekstbehandling                 Writer          Microsoft Word         
 Regneartk                       Calc            Microsoft Excel
-Præsentationsgrafik             Impres          Microsoft PowerPoint
+PrÃ¦sentationsgrafik             Impres          Microsoft PowerPoint
 </programlisting>
 </para>
 
@@ -377,28 +377,28 @@ rimelig nemt at blive fortrolig med programpakken.
 </para>
 
 <para>
-Open Office kan køre på Windows, Linux og Macintosh (MacOSX), som alle
-gemmer i samme dokument-format. Derfor behøver der ikke at opstå
-konverteringsproblemer mellem computerne. Alle fra læsegruppen kan
-bare installere pakken, som er gratis. Når du får behov for at
+Open Office kan kÃ¸re pÃ¥ Windows, Linux og Macintosh (MacOSX), som alle
+gemmer i samme dokument-format. Derfor behÃ¸ver der ikke at opstÃ¥
+konverteringsproblemer mellem computerne. Alle fra lÃ¦segruppen kan
+bare installere pakken, som er gratis. NÃ¥r du fÃ¥r behov for at
 udveksle dokumenter med folk der bruger MS-Office kan det i langt de
-fleste tilfælde lade sig gøre, idet OpenOffice.org er i stand til at
+fleste tilfÃ¦lde lade sig gÃ¸re, idet OpenOffice.org er i stand til at
 gemme dokumenter i de formater, MS-Office gemmer i som standard.
 </para>
 
 <para>
-I det følgende gennemgår vi kort programmerne, idet vi tager
-udgangspunkt i, at du sandsynligvis allerede har beskæftiget dig med
-tekstbehandling på universitetet.
+I det fÃ¸lgende gennemgÃ¥r vi kort programmerne, idet vi tager
+udgangspunkt i, at du sandsynligvis allerede har beskÃ¦ftiget dig med
+tekstbehandling pÃ¥ universitetet.
 </para>
 
 <sect1 id="forsker-ooo-writer">
 <title>At skrive en rapport i Writer</title>
 
 <para>
-OpenOffice.org's Writer minder på mange måder om Word fra Microsoft -
-og er nok den vigtigste del af OpenOffice.org-pakken. Det er hér de
-fleste studerende tilbringer dagen, hvad enten de læser det ene eller
+OpenOffice.org's Writer minder pÃ¥ mange mÃ¥der om Word fra Microsoft -
+og er nok den vigtigste del af OpenOffice.org-pakken. Det er hÃ©r de
+fleste studerende tilbringer dagen, hvad enten de lÃ¦ser det ene eller
 det andet fag.
 </para>
 
@@ -416,28 +416,28 @@ det andet fag.
 <!-- Figur: RUC-rapport med grafik, noter, stikord etc. -->
 
 <sect1 id="forsker-ooo-impres">
-<title>Præsentationsprogrammer Impress</title>
+<title>PrÃ¦sentationsprogrammer Impress</title>
 
 <para>
-Impress er OpenOffice.org's svar på Microsoft PowerPoint. Programmet er ikke
-kun til at lave farstrålende præentationer i farver og striber, men
-også godt, hvis du bare skal lave nogle enkelte overheads på en god,
-gammeldags transparent. Impress hjælper dig med at lave overskuelige
-overheads, så også dem nede bag i lokalet kan se, hvad der står.
+Impress er OpenOffice.org's svar pÃ¥ Microsoft PowerPoint. Programmet er ikke
+kun til at lave farstrÃ¥lende prÃ¦entationer i farver og striber, men
+ogsÃ¥ godt, hvis du bare skal lave nogle enkelte overheads pÃ¥ en god,
+gammeldags transparent. Impress hjÃ¦lper dig med at lave overskuelige
+overheads, sÃ¥ ogsÃ¥ dem nede bag i lokalet kan se, hvad der stÃ¥r.
 </para>
 
 <para>
-Impress er også velegnet til at lave forsider til projektrapporter m.v,
+Impress er ogsÃ¥ velegnet til at lave forsider til projektrapporter m.v,
 fordi man kan flytte elementerne (tekst, grafik) anderledes frit end i
 en tekstbehandler, som netop har til opgave at producere sider hvor
-teksten flyder på en bestemt måde.
+teksten flyder pÃ¥ en bestemt mÃ¥de.
 </para>
 
 <para>
-I det følgende gennemgår vi kort et eksamensoplæg fra det virkelige liv.
+I det fÃ¸lgende gennemgÃ¥r vi kort et eksamensoplÃ¦g fra det virkelige liv.
 </para>
 
-<!-- Eksempel: Janus' eksamensoplæg 2003. -->
+<!-- Eksempel: Janus' eksamensoplÃ¦g 2003. -->
 <!-- Integrere grafik.-->
 
 </sect1>
@@ -457,35 +457,35 @@ dax: Placeholder
 
 
 </chapter>
-<!-- Slut på OOo                  -->
+<!-- Slut pÃ¥ OOo                  -->
 
 
 
 
-<!-- Start på LyX! :-)            -->
+<!-- Start pÃ¥ LyX! :-)            -->
 
 <chapter id="forsker-lyx">
-<title>LyX - professionel dokumenthåndtering</title>
+<title>LyX - professionel dokumenthÃ¥ndtering</title>
 
 <!-- citat om wordprocessor og foodprocessor -->
 
 <para>
 LyX er anderledes end Word og OpenOffice Writer. LyX ligner ikke
 MS-Word, LyX er ikke velegnet til at skrive festsange eller layoute
-forsider i - men LyX er det perfekte værktøj til at skrive rapporter,
-essays og artikler i. Med LyX fokuserer du på indholdet, og lader
+forsider i - men LyX er det perfekte vÃ¦rktÃ¸j til at skrive rapporter,
+essays og artikler i. Med LyX fokuserer du pÃ¥ indholdet, og lader
 computeren tage sig af layout, litteraturlister og alt det andet
 kedelige, som maskiner er gode til.
 </para>
 
 <para>
-LyX bygger på en 'motor' til layout der heder hedder 'LaTex'. Du kender
-den måske ikke af navn, men kender det karakteristiske layout når du
-ser det. Det bruges til rigtig mange bøger og videnskabelige tidsskifter,
-som du med stor sandsynlighed har stiftet bekendskab med på studiet.
+LyX bygger pÃ¥ en 'motor' til layout der heder hedder 'LaTex'. Du kender
+den mÃ¥ske ikke af navn, men kender det karakteristiske layout nÃ¥r du
+ser det. Det bruges til rigtig mange bÃ¸ger og videnskabelige tidsskifter,
+som du med stor sandsynlighed har stiftet bekendskab med pÃ¥ studiet.
 </para>
 
-<!-- eksempel på videnskabeligt tidsskrift der bruger LaTeX -->
+<!-- eksempel pÃ¥ videnskabeligt tidsskrift der bruger LaTeX -->
 
 <sect1 id="forsker-lyx-opbygning">
 <title>LyX opbygning</title>
@@ -496,9 +496,9 @@ som du med stor sandsynlighed har stiftet bekendskab med på studiet.
 </figure>
 
 <para>
-Lyx åbner med en simpel brugerflade, hvor det overflødige skåret
-væk. Der er ikke en masse legetøj (eller nogen over-hjælpsom
-papirclips) til at forstyrre dig. I stedet går LyX lige til sagen.
+Lyx Ã¥bner med en simpel brugerflade, hvor det overflÃ¸dige skÃ¥ret
+vÃ¦k. Der er ikke en masse legetÃ¸j (eller nogen over-hjÃ¦lpsom
+papirclips) til at forstyrre dig. I stedet gÃ¥r LyX lige til sagen.
 </para>
 
 <para>
@@ -508,15 +508,15 @@ Start med at oprette et nyt dokument: "File" -> "New Document".
 <!--      figur -->
 
 <para>
-Prøv nu at trykke på mellemrumstasten og herefter nogle gange på
+PrÃ¸v nu at trykke pÃ¥ mellemrumstasten og herefter nogle gange pÃ¥
 enter. Sker der noget? Nej, vel. Og hvorfor? Fordi med LyX skal du kun
 fokusere op indholdet (teksten), og overlade layoutet til
 computeren. Det betyder at du ikke skal foretage manuelle indrykninger
-eller umotiverede linjeskift. Lad os se, hvad man så gør...
+eller umotiverede linjeskift. Lad os se, hvad man sÃ¥ gÃ¸r...
 </para>
 
 <para>
-I det følgende gennemgår vi to eksempler. Først et simpelt, hvor vi
+I det fÃ¸lgende gennemgÃ¥r vi to eksempler. FÃ¸rst et simpelt, hvor vi
 fremstiller en artikel. Derefter en rapport, komplet med
 stikorordregister, kildehenvinsinger og litteraturliste.
 </para>
@@ -524,60 +524,60 @@ stikorordregister, kildehenvinsinger og litteraturliste.
 </sect1>
 
 
-<!-- LyX - første dokument //-->
+<!-- LyX - fÃ¸rste dokument //-->
 
 <sect1 id="forsker-lyx-foerste-artikel">
-<title>Vores første LyX-dokument: En artikel</title>
+<title>Vores fÃ¸rste LyX-dokument: En artikel</title>
 
 <para>
-Hvordan fungerer LyX så? Jo, lad os prøve med et simpelt eksempel,
+Hvordan fungerer LyX sÃ¥? Jo, lad os prÃ¸ve med et simpelt eksempel,
 hvor vi fremstiller en lille artikel. Start med at oprette et nyt
 dokument med menupunktet "file" -> "new".
 </para>
 
 <para>
-Vi fortæller nu LyX, at vi vil skrive en artikel. Det gør du i
+Vi fortÃ¦ller nu LyX, at vi vil skrive en artikel. Det gÃ¸r du i
 menupunktet "layout" -> "document". Der fremkommer en dialogboks, hvor
-du kan vælge mellem en række forskellige dokumenttyper. Dit valg her
-har indflydelse på, hvordan dokumentet kommer til at se ud. De mest
-almindelige dokumenttyper er rapport og artikel, men det er også
-muligt at lave slides (præsentationsgrafik), bøger og breve m.v. Vi er
-i gang med at skrive en artikel, så du vælger "article" fra menuen og
-afslutter med at trykke på knappen "apply" og derefter "close".
+du kan vÃ¦lge mellem en rÃ¦kke forskellige dokumenttyper. Dit valg her
+har indflydelse pÃ¥, hvordan dokumentet kommer til at se ud. De mest
+almindelige dokumenttyper er rapport og artikel, men det er ogsÃ¥
+muligt at lave slides (prÃ¦sentationsgrafik), bÃ¸ger og breve m.v. Vi er
+i gang med at skrive en artikel, sÃ¥ du vÃ¦lger "article" fra menuen og
+afslutter med at trykke pÃ¥ knappen "apply" og derefter "close".
 </para>
 
-<!-- skærmdump med dialogboksen - med rød ring om der hvor man væler
+<!-- skÃ¦rmdump med dialogboksen - med rÃ¸d ring om der hvor man vÃ¦ler
 dokumenttype. //-->
 
 <para>
 Vi er nu tilbage i dokumentvinduet i LyX. Vi begynder nu at skrive
-teksten til vores artikel. Lad i første omgang være med at tænke på
-layout. Først skriver vi en overskrift efterfulgt af
+teksten til vores artikel. Lad i fÃ¸rste omgang vÃ¦re med at tÃ¦nke pÃ¥
+layout. FÃ¸rst skriver vi en overskrift efterfulgt af
 [return]. Derefter vores navn efterfulgt af ]return]. Til sidst
-skriver vi et lille abstract, som man tit gør i videnskabelige
-artikler for at gøre det lettere for læseren at finde ud af, om
+skriver vi et lille abstract, som man tit gÃ¸r i videnskabelige
+artikler for at gÃ¸re det lettere for lÃ¦seren at finde ud af, om
 artiklen er relevant.
 </para>
 
-<!-- Skærmdump af den rå tekst i LyX //-->
+<!-- SkÃ¦rmdump af den rÃ¥ tekst i LyX //-->
 
 <figure id="forsker-lyx-raa-tekst" float="1">
-<title>LyX med den rå tekst</title>
+<title>LyX med den rÃ¥ tekst</title>
 <graphic fileref="forsker-lyx-artikel-ren-tekst.&magic;" scale="40"></graphic>
 </figure>
 
 <para>
-Vi kunne vælge at skrive videre på selve brødteksten med stopper for
-en kort bemærkning for at arbejde med layout. Vi vil gerne markere
-hvad der er hvad i teksten. Start med at placere markøren et
-tilfældigt sted i overskriften ("LyX - dokumentbehandling på den gode
-måde"). Tryk derefter på typografi-vælgeren og vælg "title". LyX ved
+Vi kunne vÃ¦lge at skrive videre pÃ¥ selve brÃ¸dteksten med stopper for
+en kort bemÃ¦rkning for at arbejde med layout. Vi vil gerne markere
+hvad der er hvad i teksten. Start med at placere markÃ¸ren et
+tilfÃ¦ldigt sted i overskriften ("LyX - dokumentbehandling pÃ¥ den gode
+mÃ¥de"). Tryk derefter pÃ¥ typografi-vÃ¦lgeren og vÃ¦lg "title". LyX ved
 nu at det er en overskrift, og reagerer ved at formattere overskriften
-så den bliver større end den øvrigt tekst.
+sÃ¥ den bliver stÃ¸rre end den Ã¸vrigt tekst.
 </para>
 
 <para>
-Placer nu curseren på dit navn og vælg "author" fra
+Placer nu curseren pÃ¥ dit navn og vÃ¦lg "author" fra
 typografi-menuen. LyX centrerer navnet.
 </para>
 
@@ -588,8 +588,8 @@ passende typografier.</title>
 </figure>
 
 <para>
-Til sidst placerer du markøren på resumeet og vælger "abstract" fra
-typografi-vælgeren. LyX formatterer teksten og indsætter selv ordet
+Til sidst placerer du markÃ¸ren pÃ¥ resumeet og vÃ¦lger "abstract" fra
+typografi-vÃ¦lgeren. LyX formatterer teksten og indsÃ¦tter selv ordet
 "abstract" med en fed centrere skrift over teksten.
 </para>
 
@@ -600,28 +600,28 @@ tildelt passende typografier.</title>
 </figure>
 
 <para>
-Undervejs i arbejdet kan du hele tiden følge med i, hvordan teksten
-kommer til at se ud på tryk. Dog er det du ser i LyX ikke 100
-pct. hvad der kommer ud på papir. Hvis du er nysgerrig finder du en
+Undervejs i arbejdet kan du hele tiden fÃ¸lge med i, hvordan teksten
+kommer til at se ud pÃ¥ tryk. Dog er det du ser i LyX ikke 100
+pct. hvad der kommer ud pÃ¥ papir. Hvis du er nysgerrig finder du en
 slags "vis udskrift"-funktion i menuen "view" -> "CVI". Funktionen har
-en genvejstast: Hold control-tasten nede mens du trykker på
-"d". Funktionen kalder et program der hedder "xdvi", som åbner og
-viser det foreløbige resultat. Når du er færdig med at kigge, kan du
-lukke xDVI igen ved at trykke på "quit".
+en genvejstast: Hold control-tasten nede mens du trykker pÃ¥
+"d". Funktionen kalder et program der hedder "xdvi", som Ã¥bner og
+viser det forelÃ¸bige resultat. NÃ¥r du er fÃ¦rdig med at kigge, kan du
+lukke xDVI igen ved at trykke pÃ¥ "quit".
 </para>
 
 
 <figure id="forsker-lyx-art-dvi-lille-fig" float="1">
-<title>xDVI viser hvordan artiklen helt præcist kommer til at se ud,
-når du skriver den ud på papir eller genererer en PDF-fil</title>
+<title>xDVI viser hvordan artiklen helt prÃ¦cist kommer til at se ud,
+nÃ¥r du skriver den ud pÃ¥ papir eller genererer en PDF-fil</title>
 <graphic fileref="forsker-lyx-art-xdvi-lille.&magic;" scale="40"></graphic>
 </figure>
 
 
 <para>
-Du kan nu skrive videre på artiklen. Fremgangsmåden er den
-samme. Brødtekst hedder "standard", og inddelingerne hedder "section",
-"subsection" og "subsub-section". Lad os prøve engang.
+Du kan nu skrive videre pÃ¥ artiklen. FremgangsmÃ¥den er den
+samme. BrÃ¸dtekst hedder "standard", og inddelingerne hedder "section",
+"subsection" og "subsub-section". Lad os prÃ¸ve engang.
 </para>
 
 <figure id="forsker-lyx-artikel-alt" float="1">
@@ -630,16 +630,16 @@ samme. Brødtekst hedder "standard", og inddelingerne hedder "section",
 </figure>
 
 <para>
-Prøv til sidst at aktivere xDVI (hold control nede og tryk D, eller
-vælg det fra menueen "View"). Bemærk forskellen på, hvad du ser på
-skærmen i LyX, og hvad xDVI viser. Hvorfor der er denne forskel bliver
-tydeligt, når vi arbejder med fodnoter og andre elementer. Det komme
-vi tilbage til om lidt, når vi opbygger en rapport.
+PrÃ¸v til sidst at aktivere xDVI (hold control nede og tryk D, eller
+vÃ¦lg det fra menueen "View"). BemÃ¦rk forskellen pÃ¥, hvad du ser pÃ¥
+skÃ¦rmen i LyX, og hvad xDVI viser. Hvorfor der er denne forskel bliver
+tydeligt, nÃ¥r vi arbejder med fodnoter og andre elementer. Det komme
+vi tilbage til om lidt, nÃ¥r vi opbygger en rapport.
 </para>
 
 <figure id="forsker-lyx-artikel-dvi-output" float="1">
  <title>
-  Igen viser xDVI hvordan artiklen helt præcist kommer til at se ud på papir
+  Igen viser xDVI hvordan artiklen helt prÃ¦cist kommer til at se ud pÃ¥ papir
   eller som PDF.
  </title>
  <graphic fileref="forsker-lyx-art-xdvi-output.&magic;" scale="40"></graphic>
@@ -653,11 +653,11 @@ vi tilbage til om lidt, når vi opbygger en rapport.
 <title>Rapport-skrivning i LyX</title>
 
 <para>
-Her gennemgår vi trin for trin hvordan LyX kommer til sin ret når vi
+Her gennemgÃ¥r vi trin for trin hvordan LyX kommer til sin ret nÃ¥r vi
 skrivever en rapport. I dette eksempel kommer vi omkring de mere
 avancerede funktioner af LyX, som foruden indholdsfortegnelse og
 fodnoter omfatter stikordregister, litteraturreferencer med automatisk
-oprettelse af litteraturliste, krydsreferencer der selv holder styr på
+oprettelse af litteraturliste, krydsreferencer der selv holder styr pÃ¥
 placering af figurer og tabeller og en del andet.
 </para>
 
@@ -673,21 +673,21 @@ Som ved artiklen.
 <sect2 id="forsker-lyx-rapport-overskrifter">
 <title>Kapitel-inddelinger og overskrifter</title>
 <para>
-Bemærk at LyX selv skriver "Kapitel 1", "Kapitel 2" etc.
+BemÃ¦rk at LyX selv skriver "Kapitel 1", "Kapitel 2" etc.
 </para>
 </sect2>
 
 <sect2 id="forsker-lyx-rapport-navigation">
 <title>Naviger i rapporten</title>
 <para>
-LyX har en meget smart måde at navigere i dokumentet på, hvilket især
-er en stor lettelse i store dokumenter så som rapporter. Frem for at
+LyX har en meget smart mÃ¥de at navigere i dokumentet pÃ¥, hvilket isÃ¦r
+er en stor lettelse i store dokumenter sÃ¥ som rapporter. Frem for at
 "spole" rundt i dokumentet med piletasterne eller musen, har LyX en
-didikeret menu til formålet. Den hedder meget sigende "navigate", og
-når du trykker på den viser den rapportens opbygning i en hierkisk
-præsentation. Det gør det meget hurtigt at få et overblik over
-kapitlerne i rapporten og gør det muligt at navigere meget
-hurtigt. Prøv selv.
+didikeret menu til formÃ¥let. Den hedder meget sigende "navigate", og
+nÃ¥r du trykker pÃ¥ den viser den rapportens opbygning i en hierkisk
+prÃ¦sentation. Det gÃ¸r det meget hurtigt at fÃ¥ et overblik over
+kapitlerne i rapporten og gÃ¸r det muligt at navigere meget
+hurtigt. PrÃ¸v selv.
 </para>
 
 <figure id="forsker-rapport-nav-fig" float="1">
@@ -700,12 +700,12 @@ hurtigt. Prøv selv.
 <sect2 id="forsker-lyx-rapport-indholdsfortegnelse">
 <title>Indholdsfortegnelse</title>
 <para>
-Når du har fortalt LyX, hvilke overskrifter der findes i din rapport
-kan du få LyX til selv at generere en indholdsfortegnelse. Det gør du
+NÃ¥r du har fortalt LyX, hvilke overskrifter der findes i din rapport
+kan du fÃ¥ LyX til selv at generere en indholdsfortegnelse. Det gÃ¸r du
 ved at ...
 </para>
 <figure id="forsker-rapport-indholdsf-fig" float="1">
-<title>Feltet som viser at her indsætter LyX en indholdsfortegnelse</title>
+<title>Feltet som viser at her indsÃ¦tter LyX en indholdsfortegnelse</title>
 <graphic fileref="forsker-lyx-rapport-TOC-i-tekst-markering.&magic;" scale="40"></graphic>
 </figure>
 </sect2>
@@ -713,34 +713,34 @@ ved at ...
 <sect2 id="forsker-lyx-rapport-fodnoter">
 <title>Fodnoter</title>
 <para>
-LyX håndterer fodnoter på en lidt anderledes måde, end du måske er
+LyX hÃ¥ndterer fodnoter pÃ¥ en lidt anderledes mÃ¥de, end du mÃ¥ske er
 vant til fra MS-Word og andre almindelige
-tekstbehandlingsprogrammer. Fodnoterne er synlige i samme skærmbillede
-som brødteksten, hvilket er rart så man slipper for at skulle hoppe
-frem og tilbage i teksten for at se, hvilken brødtekst der hænger
-sammmen med fodnoten og hvad der står i den.
+tekstbehandlingsprogrammer. Fodnoterne er synlige i samme skÃ¦rmbillede
+som brÃ¸dteksten, hvilket er rart sÃ¥ man slipper for at skulle hoppe
+frem og tilbage i teksten for at se, hvilken brÃ¸dtekst der hÃ¦nger
+sammmen med fodnoten og hvad der stÃ¥r i den.
 </para>
 
 <para>
-Når man kommer fra en almindelige tekstbehandler kan det umiddelbart
-virke underligt, men det viser sig hurtigt at være meget
-behageligt. Fodnoterne står altid i rette kontekst.
+NÃ¥r man kommer fra en almindelige tekstbehandler kan det umiddelbart
+virke underligt, men det viser sig hurtigt at vÃ¦re meget
+behageligt. Fodnoterne stÃ¥r altid i rette kontekst.
 </para>
 
 <figure id="forsker-rapport-fodnote-tekst-fig" float="1">
-<title>Fodnoterne optræder altid i rette kontekst</title>
+<title>Fodnoterne optrÃ¦der altid i rette kontekst</title>
 <graphic fileref="forsker-lyx-rapport-fodnote-i-tekst.&magic;" scale="40"></graphic>
 </figure>
 
 <para>
-Hvis du har brug for at læse teksten uden fodnoter, fordi du synes de
-forstyrrer din læsning, kan du folde dem ind og ud.
+Hvis du har brug for at lÃ¦se teksten uden fodnoter, fordi du synes de
+forstyrrer din lÃ¦sning, kan du folde dem ind og ud.
 </para>
 
 <figure id="forsker-rapport-fodnote-indfolde-fig" float="1">
-<title>Fodnoten når den er "foldet ind". Fodnote-feltet er stadig
+<title>Fodnoten nÃ¥r den er "foldet ind". Fodnote-feltet er stadig
 synligt, men teksten i fodnoten er skjult. Du kan folde ind og ud ved
-at trykke på "foot"-feltet</title>
+at trykke pÃ¥ "foot"-feltet</title>
 <graphic fileref="forsker-lyx-rapport-fodnote-folder-ind.&magic;" scale="40"></graphic>
 </figure>
 </sect2>
@@ -749,15 +749,15 @@ at trykke på "foot"-feltet</title>
 <sect2 id="forsker-lyx-citat">
 <title>Citat</title>
 <para>
-Man bruger ofte citat i rapporter. Derfor har LyX også en funktion til
-netop dette formål. Til almindelige citater skal du bruge "quote" og
-til længere citater som strækker sig over mere end eet afsnit, skal du
-bruge "quotation". Begge formatterer teksten ved at rykke den ind så
+Man bruger ofte citat i rapporter. Derfor har LyX ogsÃ¥ en funktion til
+netop dette formÃ¥l. Til almindelige citater skal du bruge "quote" og
+til lÃ¦ngere citater som strÃ¦kker sig over mere end eet afsnit, skal du
+bruge "quotation". Begge formatterer teksten ved at rykke den ind sÃ¥
 man kan se, at der er tale om et citat.
 </para>
 
 <figure id="forsker-rapport-citat" float="1">
-<title>Sådan tager citater sig ud i LyX</title>
+<title>SÃ¥dan tager citater sig ud i LyX</title>
 <graphic fileref="forsker-lyx-rapport-quote.&magic;" scale="40"></graphic>
 </figure>
 </sect2>
@@ -768,21 +768,21 @@ man kan se, at der er tale om et citat.
 <sect2 id="forsker-lyx-rapport-krydsref">
 <title>Krydshenvisninger</title>
 <para>
-Krydshenvisninger gør det letteren for din læser. Hvis du eksempelvis
-præsenterer en figur og senere i rapporten refererer til den i et
-ressonement er det god skik at skrive hvilken side figuren optræder
-på. Gør man ikke det, skal læseen til at bladre tilbage og forsøge at
+Krydshenvisninger gÃ¸r det letteren for din lÃ¦ser. Hvis du eksempelvis
+prÃ¦senterer en figur og senere i rapporten refererer til den i et
+ressonement er det god skik at skrive hvilken side figuren optrÃ¦der
+pÃ¥. GÃ¸r man ikke det, skal lÃ¦seen til at bladre tilbage og forsÃ¸ge at
 huske hvor figuren er.
 </para>
 
 <para>
 Det er et stort arbejde selv at bevare overblikket over sine figurer,
-for i takt med at du skriver mere tekst, forskydes sidenumrene måske,
+for i takt med at du skriver mere tekst, forskydes sidenumrene mÃ¥ske,
 og vi har vi balleden.
 </para>
 
 <para>
-LyX klarer dette på elegant vis....
+LyX klarer dette pÃ¥ elegant vis....
 </para>
 
 </sect2>
@@ -791,8 +791,8 @@ LyX klarer dette på elegant vis....
 <title>Stikordsregister</title>
 <para>
 At lave et stikordsregister er ganske let. Du skal blot udpege de ord
-for LyX som du vil have i registret, og derefter indsætte et
-"register-mark" hvor du vil have registret, så klarer LyX resten.
+for LyX som du vil have i registret, og derefter indsÃ¦tte et
+"register-mark" hvor du vil have registret, sÃ¥ klarer LyX resten.
 </para>
 </sect2>
 
@@ -800,8 +800,8 @@ for LyX som du vil have i registret, og derefter indsætte et
 <title>Ordforklaring</title>
 
 <para>
-Ind i mellem kan det være relevant at lave en ordforklaring bag i
-rapporten. Det gør du ved at bruge typografien "list".
+Ind i mellem kan det vÃ¦re relevant at lave en ordforklaring bag i
+rapporten. Det gÃ¸r du ved at bruge typografien "list".
 </para>
 
 <figure id="forsker-rapport-ordforklaring" float="1">
@@ -817,41 +817,41 @@ rapporten. Det gør du ved at bruge typografien "list".
 
     
 <chapter id="forsker-bibtex">
-<title>BibTex - hold styr på dine litteraturhenvisninger</title>
+<title>BibTex - hold styr pÃ¥ dine litteraturhenvisninger</title>
 
 <para>
-Du kender problemet: Du er ved af færdiggøre en rapport, en artikel
-eller et essay - og skal have styr på litteraturlisten og
+Du kender problemet: Du er ved af fÃ¦rdiggÃ¸re en rapport, en artikel
+eller et essay - og skal have styr pÃ¥ litteraturlisten og
 kildehenvingerne: Har jeg nu all litteraturen med? Er henvisningerne
-korrekte? Hvornår er det nu, bogen er udgivet? Og hvad med
+korrekte? HvornÃ¥r er det nu, bogen er udgivet? Og hvad med
 notationsformen? Skriver vi "Bijker 1996, side 6', 'Bijker 1996, p. 6'
-- eller måske 'Bijker1996:6'? Den slags kan være enorm tidskrævende og
-frusterende, og risikoen for fejl er høj. Er der flere forfattere er
-den slags fejl næsten uundgåelige.
+- eller mÃ¥ske 'Bijker1996:6'? Den slags kan vÃ¦re enorm tidskrÃ¦vende og
+frusterende, og risikoen for fejl er hÃ¸j. Er der flere forfattere er
+den slags fejl nÃ¦sten uundgÃ¥elige.
 </para>
 
 <para>
-BibTex er et program til at holde styr på alle dine
-litteraturhenvisninger, og er et virkelig godt redskab til at hjælpe
-dig med at holde fokus på indeholdet, mens du overlader det til
-maskinen at gøre det grove arbejde. I lighed med LyX kræver en lille
-smule tid at sætte sig ind i, men du vil hurtigt takke dig selv, når
-du opdager at du sparer tid og undgår en masse irriterende fejl. Hvis
+BibTex er et program til at holde styr pÃ¥ alle dine
+litteraturhenvisninger, og er et virkelig godt redskab til at hjÃ¦lpe
+dig med at holde fokus pÃ¥ indeholdet, mens du overlader det til
+maskinen at gÃ¸re det grove arbejde. I lighed med LyX krÃ¦ver en lille
+smule tid at sÃ¦tte sig ind i, men du vil hurtigt takke dig selv, nÃ¥r
+du opdager at du sparer tid og undgÃ¥r en masse irriterende fejl. Hvis
 du kender programmet 'Endnote til Windows og MacOS har du en
-fornemmelse af, hvad BibTex er. Eller følger her en forklaring.
+fornemmelse af, hvad BibTex er. Eller fÃ¸lger her en forklaring.
 </para>
 
 <para>
 Kort fortalt fungerer BibTex ved, at du een gang for alle indtaster
-din litteratur i computeren. Herefter sørger maskinen for at generere
-din litteraturliste og dine kildehenvinger i teksten (fodnoterne) på
-en konsistent måde.
+din litteratur i computeren. Herefter sÃ¸rger maskinen for at generere
+din litteraturliste og dine kildehenvinger i teksten (fodnoterne) pÃ¥
+en konsistent mÃ¥de.
 </para>
 
 <para>
-Det første der skal ske er, at du indtaster oplysninger om den
+Det fÃ¸rste der skal ske er, at du indtaster oplysninger om den
 litteratur du henviser til. Vi skal oprette en lille
-bibliografi-database, en såkaldt 'bib-fil'. En måde at gøre det på er
+bibliografi-database, en sÃ¥kaldt 'bib-fil'. En mÃ¥de at gÃ¸re det pÃ¥ er
 med programmer 'Pybliographer':
 </para>
 
@@ -861,13 +861,13 @@ med programmer 'Pybliographer':
 </figure>
 
 
-<!-- Skal sættes op som nummereret liste -->
+<!-- Skal sÃ¦ttes op som nummereret liste -->
 <sect1 id="forsker-kilde">
 <title>Kogebog</title>
 <para>
 1) Tryk 'add'.
-2) Vælg hvilken type kilde der er tale om (artikel, bog etc).
-3) Udfylde felterne med oplysninger om forfatternavn, udgivelsesår etc.
+2) VÃ¦lg hvilken type kilde der er tale om (artikel, bog etc).
+3) Udfylde felterne med oplysninger om forfatternavn, udgivelsesÃ¥r etc.
 </para>
 
 <figure id="pybliographic-butler-entry" float="1">
@@ -877,21 +877,21 @@ med programmer 'Pybliographer':
 </sect1>
 
 <sect1 id="forsker-bibkonklusion">
-<title>Sværere ...</title>
+<title>SvÃ¦rere ...</title>
 <para>
-Sværere er det ikke. Fortsæt til du ikke har mere at
+SvÃ¦rere er det ikke. FortsÃ¦t til du ikke har mere at
 indtaste. Bib-filen bliver dit eget lille, personlige
-bibliotek-indeks, som du tage med dig og arbejde videre på senere, så
-hvad du taster ind nu, kommer dig til glæde næste gang du bruger
+bibliotek-indeks, som du tage med dig og arbejde videre pÃ¥ senere, sÃ¥
+hvad du taster ind nu, kommer dig til glÃ¦de nÃ¦ste gang du bruger
 litteraturen og skal henvise til den.
 </para>
 
 <para>
-Lad os nu prøve Bib-systemet i vores LyX-dokument.
+Lad os nu prÃ¸ve Bib-systemet i vores LyX-dokument.
 </para>
 
 <para>
-1) Indlæs vores test-dokument "lyx-test.lyx".
+1) IndlÃ¦s vores test-dokument "lyx-test.lyx".
 2) ...
 3) 
 </para>
@@ -899,7 +899,7 @@ Lad os nu prøve Bib-systemet i vores LyX-dokument.
 <!-- pybliographi-bijker-ref-lyx-dialog.png -->
 
 <figure id="pybliographi-bijker-ref-lyx-dialog.png" float="1">
-<title>LyX trækker oplysninger fra BibTex.</title> 
+<title>LyX trÃ¦kker oplysninger fra BibTex.</title> 
 <graphic fileref="pybliograph-bijker-ref-lyx-dialog.&magic;" scale="60"></graphic> 
 </figure>
 
@@ -910,17 +910,17 @@ Du finder en liste over de mest almindelige BiBTex-felter her:
 http://www.ecst.csuchico.edu/~jacobsd/bib/formats/bibtex.html
 </para>
 
-<!-- Hvordan inddeler man i primær og sekundær litteratur? -->
-<!-- Hvordan får man kilder ind i litteraturlisten, som ikke citeres? -->
+<!-- Hvordan inddeler man i primÃ¦r og sekundÃ¦r litteratur? -->
+<!-- Hvordan fÃ¥r man kilder ind i litteraturlisten, som ikke citeres? -->
 
 </sect1>
 </chapter>
 
-<!-- Slut på Lyx -->
+<!-- Slut pÃ¥ Lyx -->
 
 
 <chapter id="forsker-smaa-programmer">
-<title>Nyttige små-programmer</title>
+<title>Nyttige smÃ¥-programmer</title>
 
 <sect1 id="forsker-dia">
 <title>Figurer med Dia</title>
@@ -930,7 +930,7 @@ med.
 </para>
 
 <!-- Figurer, eksempler: Bijker-eksempel + Andet simpelt -->
-<!-- samfunds-eksempel, struktur/aktør (eller noget) -->
+<!-- samfunds-eksempel, struktur/aktÃ¸r (eller noget) -->
 
 
 
@@ -938,23 +938,23 @@ med.
 
 
 <sect1 id="forsker-ordbog">
-<title>Ordbøger til Linux</title>
+<title>OrdbÃ¸ger til Linux</title>
 <para>
-Ordbøger via nettet
+OrdbÃ¸ger via nettet
 </para>
 </sect1>
 
 
 <sect1 id="forsker-ktouch">
-<title>Lær blindskrift med KTouch</title>
+<title>LÃ¦r blindskrift med KTouch</title>
 <para>
-KTouch er navnet på et lille program til at lære blindskrift. Det
-fungerer på den måde, at der ruller en tekst hen over skærmen, som du
-skal skrive efter uden at kigge på tastaturet. Hastigheden afhænger
-hvor hutigt du skriver. Undervejs gør programmet opmærksom på, hvis du
-laver fejl, og skruer sværhedsgraden op. Til slut får du en opgørelse
-over dine færdigheder ift. skrivehastighed og nøjagtighed, og din
-nuværende placering ift. tidigere.
+KTouch er navnet pÃ¥ et lille program til at lÃ¦re blindskrift. Det
+fungerer pÃ¥ den mÃ¥de, at der ruller en tekst hen over skÃ¦rmen, som du
+skal skrive efter uden at kigge pÃ¥ tastaturet. Hastigheden afhÃ¦nger
+hvor hutigt du skriver. Undervejs gÃ¸r programmet opmÃ¦rksom pÃ¥, hvis du
+laver fejl, og skruer svÃ¦rhedsgraden op. Til slut fÃ¥r du en opgÃ¸relse
+over dine fÃ¦rdigheder ift. skrivehastighed og nÃ¸jagtighed, og din
+nuvÃ¦rende placering ift. tidigere.
 </para>
 
 
@@ -966,17 +966,17 @@ nuværende placering ift. tidigere.
 <chapter id="forsker-videre-med-linux">
 <title>Videre med Linux</title>
 <para>
-- Frihende til at vælge....
+- Frihende til at vÃ¦lge....
 - SSLUG og andre LUG'er
 - Mailinglister for de enkelte programmer: LyX har en velfungerende
-mailingliste. Især med engelsk god og gratis hjælp.
+mailingliste. IsÃ¦r med engelsk god og gratis hjÃ¦lp.
 - Nyhedsgrupper
 </para>
 
 </chapter>
 
 
-<!-- Slut på videre med Linux -->
+<!-- Slut pÃ¥ videre med Linux -->
 <!-- Ordforklaringer -->
 
 
@@ -987,8 +987,8 @@ mailingliste. Især med engelsk god og gratis hjælp.
 <glossterm id="BibTex">BibTex</glossterm>
 <glossdef>
 <para>
-Et system der kan holde styr på litteraturhenvisninger og oplysninger
-om bøger, rapporter, artikler m.v. Kan bruges sammen med LyX.
+Et system der kan holde styr pÃ¥ litteraturhenvisninger og oplysninger
+om bÃ¸ger, rapporter, artikler m.v. Kan bruges sammen med LyX.
 </para>
 </glossdef>
 </glossentry>
@@ -998,9 +998,9 @@ om bøger, rapporter, artikler m.v. Kan bruges sammen med LyX.
 <glossdef>
 <para>
 Linux er selve operativsystemet som normalt er skjult for brugen. Det
-er udviket af finnen Linux Torvalds. Operativsystemet sørger for at
-holde styr på alle de ting der sker i computeren og arbejder for dig
-hver gang du skriver på tastaturet, henter et dokument ind fra
+er udviket af finnen Linux Torvalds. Operativsystemet sÃ¸rger for at
+holde styr pÃ¥ alle de ting der sker i computeren og arbejder for dig
+hver gang du skriver pÃ¥ tastaturet, henter et dokument ind fra
 harddisken osv.
 </para>
 </glossdef>
@@ -1010,10 +1010,10 @@ harddisken osv.
 <glossterm id="forsker-kde-definition">KDE</glossterm>
 <glossdef>
 <para>
-KDE står for "Kool Desktop Environment", og er en af flere mulige
-grafisk brugerflade, som lægger sig oven på Linux. KDE sørger for at
+KDE stÃ¥r for "Kool Desktop Environment", og er en af flere mulige
+grafisk brugerflade, som lÃ¦gger sig oven pÃ¥ Linux. KDE sÃ¸rger for at
 du kan betjene computeren med brug af mus og kan pege og klikke,
-trække dokumenter rundt i mapper osv.
+trÃ¦kke dokumenter rundt i mapper osv.
 </para>
 </glossdef>
 </glossentry>
@@ -1022,7 +1022,7 @@ trække dokumenter rundt i mapper osv.
 <glossterm id="forsker-dotbib-definition">.bib</glossterm>
 <glossdef>
 <para>
-Filer med endelsen .bib stammer fra systemet Bibtex og indeholder informaiton om de rapporter og bøger mv. du refererer til i rapporter og artikler. Du kan redigere filerne med Pybibliographic og andre programmer.
+Filer med endelsen .bib stammer fra systemet Bibtex og indeholder informaiton om de rapporter og bÃ¸ger mv. du refererer til i rapporter og artikler. Du kan redigere filerne med Pybibliographic og andre programmer.
 </para>
 </glossdef>
 </glossentry>

@@ -6,31 +6,31 @@
   <title>Forord</title>
 
   <para>
-   Denne håndbog handler om de grundlæggende begreber og
+   Denne hÃ¥ndbog handler om de grundlÃ¦ggende begreber og
    faciliteter, som du skal kende for at kunne bruge tekstbehandling
-   effektivt &ndash; både de teoretiske og de praktiske
+   effektivt &ndash; bÃ¥de de teoretiske og de praktiske
    aspekter.
   </para>
 
   <para>
-   Det er ikke en begynderbog; det forudsættes at du kender til
-   generel brug af programmer i den grafiske brugergrænseflade på din
-   computer og at du før har prøvet at bruge et
-   tekstbehandlingsprogram, men ikke nødvendigvis OpenOffice.org eller
+   Det er ikke en begynderbog; det forudsÃ¦ttes at du kender til
+   generel brug af programmer i den grafiske brugergrÃ¦nseflade pÃ¥ din
+   computer og at du fÃ¸r har prÃ¸vet at bruge et
+   tekstbehandlingsprogram, men ikke nÃ¸dvendigvis OpenOffice.org eller
    StarOffice.
   </para>
 
   <para>
-   Derfor er bogen bygget systematisk op, i stedet for at være bygget
-   op efter den rækkefølge det er bedst at lære tekstbehandling i.
+   Derfor er bogen bygget systematisk op, i stedet for at vÃ¦re bygget
+   op efter den rÃ¦kkefÃ¸lge det er bedst at lÃ¦re tekstbehandling i.
   </para>
 
   <para>
-   Ligesom mange andre håndbøger indeholder bogen både teoretiske og
+   Ligesom mange andre hÃ¥ndbÃ¸ger indeholder bogen bÃ¥de teoretiske og
    praktiske afsnit. De teoretiske afsnit handler om generelle
-   begreber som også indgår i andre tekstbehandlingsprogrammer. De
-   praktiske afsnit fortæller så hvordan du bruger faciliteterne i
-   Writer. (Her er selvfølgelig også ligheder med andre
+   begreber som ogsÃ¥ indgÃ¥r i andre tekstbehandlingsprogrammer. De
+   praktiske afsnit fortÃ¦ller sÃ¥ hvordan du bruger faciliteterne i
+   Writer. (Her er selvfÃ¸lgelig ogsÃ¥ ligheder med andre
    tekstbehandlingsprogrammer.
   </para>
  </sect1>
@@ -55,33 +55,33 @@
   </indexterm>
 
   <para>
-   Den oprindelige håndbog er skrevet til StarOffice 5.2 af <ulink
-   url="mailto:hj@hj-gym.dk">Henrik Just</ulink>, Hjørring Gymnasium
+   Den oprindelige hÃ¥ndbog er skrevet til StarOffice 5.2 af <ulink
+   url="mailto:hj@hj-gym.dk">Henrik Just</ulink>, HjÃ¸rring Gymnasium
    og HF-kursus og tilrettet til OpenOffice.org 1.0.1 af Rolf Larsen.
   </para>
  </sect1>
 
  <sect1 id="OOO-tak">
-  <title>Vi siger tak for hjælpen</title>
+  <title>Vi siger tak for hjÃ¦lpen</title>
   
   <indexterm>
    <primary>tak</primary>
   </indexterm>
 
   <para>
-   Vi har haft stor glæde af mange SSLUG-medlemmers støtte, rettelser
+   Vi har haft stor glÃ¦de af mange SSLUG-medlemmers stÃ¸tte, rettelser
    og forslag til forbedringer - bliv ved med dette. Specielt vil vi
-   nævne:
+   nÃ¦vne:
 
    <itemizedlist  mark="bullet" spacing="compact">
     <listitem>
      <para>
-      Rolf Larsen der har tilrettet håndbogen til OpenOffice.org 1.0.1
+      Rolf Larsen der har tilrettet hÃ¥ndbogen til OpenOffice.org 1.0.1
      </para>
     </listitem>
     <listitem>
      <para>
-     Jacob Sparre Andersen og Gitte Wange der har fået lagt håndbogen ind
+     Jacob Sparre Andersen og Gitte Wange der har fÃ¥et lagt hÃ¥ndbogen ind
      i FTAV-serien.
      </para>
     </listitem>
@@ -90,14 +90,14 @@
 
   <para>
    Du kan i <xref linkend="ooo-apprevhist" /> finde en liste over alle
-   de revisioner, som bogen har været igennem.
+   de revisioner, som bogen har vÃ¦ret igennem.
   </para>
 
   <para>
-   Hvis du har ord du ikke forstår, så kan <ulink
-   url="http://www.whatis.com">http://www.whatis.com/</ulink> være
-   interessant. Her kan du slå mange computerord op dog kun på
-   engelsk.  I øvrigt kan bogens stikordsregister være interessant.
+   Hvis du har ord du ikke forstÃ¥r, sÃ¥ kan <ulink
+   url="http://www.whatis.com">http://www.whatis.com/</ulink> vÃ¦re
+   interessant. Her kan du slÃ¥ mange computerord op dog kun pÃ¥
+   engelsk.  I Ã¸vrigt kan bogens stikordsregister vÃ¦re interessant.
   </para>
  </sect1>
 
@@ -105,17 +105,17 @@
   <title>Typografi</title>
 
   <para>
-   Vi vil afslutte indledningen med at nævne den anvendte typografi.
+   Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
   </para>
 
   <itemizedlist mark="bullet" spacing="compact">
    <listitem>
-    <para>Navne på filer og kataloger skrevet som
+    <para>Navne pÃ¥ filer og kataloger skrevet som
     <filename>foo.bar</filename></para>
    </listitem>
 
    <listitem>
-    <para>Kommandoer, du udfører ved at taste, skrives som
+    <para>Kommandoer, du udfÃ¸rer ved at taste, skrives som
     <command>help</command></para>
    </listitem>
 

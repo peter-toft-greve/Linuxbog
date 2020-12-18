@@ -3,23 +3,23 @@
 
 
 <para>
-  Kapitlet forudsættes ikke i resten af bogen.
+  Kapitlet forudsÃ¦ttes ikke i resten af bogen.
 </para>
 
 <para>
-  Det forudsætter <xref linkend="java-exception" /> Undtagelser, og kendskab til databaser og SQL
+  Det forudsÃ¦tter <xref linkend="java-exception" /> Undtagelser, og kendskab til databaser og SQL
   (Structured Query Language), og at du har en fungerende database, som
-  du ønsker adgang til fra Java.
+  du Ã¸nsker adgang til fra Java.
 </para>
 
 <para>
-  Adgang til en database fra Java sker gennem et sæt klasser, der under
-  et kaldes JDBC (Java DataBase Connectivity) - en platformuafhængig
+  Adgang til en database fra Java sker gennem et sÃ¦t klasser, der under
+  et kaldes JDBC (Java DataBase Connectivity) - en platformuafhÃ¦ngig
   pendant til Microsoft ODBC (Open DataBase Connectivity).
 </para>
 
 <para>
-  Klasserne ligger i pakken java.sql, så kildetekstfiler, der arbejder
+  Klasserne ligger i pakken java.sql, sÃ¥ kildetekstfiler, der arbejder
   med databaser skal starte med:
 </para>
 
@@ -31,18 +31,18 @@
 <title>Kontakt til databasen</title>
 
 <para>
-  At få kontakt til databasen er måske det sværeste skridt. Det består
+  At fÃ¥ kontakt til databasen er mÃ¥ske det svÃ¦reste skridt. Det bestÃ¥r
   af to led:
 </para>
 
 <orderedlist>
-  <listitem><para>Indlæse driveren</para></listitem>
+  <listitem><para>IndlÃ¦se driveren</para></listitem>
   <listitem><para>Etablere forbindelsen</para></listitem>
 </orderedlist>
 
 <para>
-  Indlæsning af driveren sker ved at bede systemet indlæse den
-  pågældende klasse, der derefter registrerer sig selv i JDBC-systemets
+  IndlÃ¦sning af driveren sker ved at bede systemet indlÃ¦se den
+  pÃ¥gÃ¦ldende klasse, der derefter registrerer sig selv i JDBC-systemets
   driver-manager. Er det f.eks. en Oracle-database, skriver man
 </para>
 
@@ -53,7 +53,7 @@
 <para>
   Ofte skal man have en JAR-fil (et Java-ARkiv, en samling klasser
   pakket i zip-formatet) med en driver fra producenten. De nyeste
-  drivere kan findes på <ulink
+  drivere kan findes pÃ¥ <ulink
   url="http://www.javasoft.com/">http://www.javasoft.com</ulink> under
   JDBC.
 </para>
@@ -61,8 +61,8 @@
 <para>
   For en Oracle-database hedder filen classes12.zip og passer til en
   bestemt udgave af Oracle-databasen. Bruger man Oracle Jdeveloper, er
-  den som standard med i projektets klassesti. Ellers skal den føjes til
-  CLASSPATH (i JBuilder gøres det under Project Properties, Paths,
+  den som standard med i projektets klassesti. Ellers skal den fÃ¸jes til
+  CLASSPATH (i JBuilder gÃ¸res det under Project Properties, Paths,
   Required Libraries)
 </para>
 
@@ -76,10 +76,10 @@
 </screen>
 
 <para>
-  Første parameter er en URL til databasen. Den består af en protokol
+  FÃ¸rste parameter er en URL til databasen. Den bestÃ¥r af en protokol
   (&quot;jdbc&quot;), underprotokol (&quot;oracle&quot;) og noget mere,
-  der afhænger af underprotokollen. I dette tilfælde angiver det, at
-  databasen ligger på maskinen oracle.cv.ihk.dk port 1521 og hedder
+  der afhÃ¦nger af underprotokollen. I dette tilfÃ¦lde angiver det, at
+  databasen ligger pÃ¥ maskinen oracle.cv.ihk.dk port 1521 og hedder
   student.
 </para>
 
@@ -91,9 +91,9 @@ Anden og tredje parameter er brugernavn og adgangskode.
 <title>JDBC-ODBC-broen under Windows</title>
 
 <para>
-  Med Java under Windows følger en standard JDBC-ODBC-bro med, så man
+  Med Java under Windows fÃ¸lger en standard JDBC-ODBC-bro med, sÃ¥ man
   kan kontakte alle datakilder defineret under ODBC. Denne driver
-  indlæses med:
+  indlÃ¦ses med:
 </para>
 
 <screen>
@@ -102,9 +102,9 @@ Anden og tredje parameter er brugernavn og adgangskode.
 
 
 <para>
-  Før du kan oprette forbindelsen, skal datakilden først være oprettet
+  FÃ¸r du kan oprette forbindelsen, skal datakilden fÃ¸rst vÃ¦re oprettet
   under ODBC i Windows' Kontrolpanel. Man angiver datakildens navn (her
-  &quot;datakilde1&quot;), når forbindelsen oprettes, uden brugernavn og
+  &quot;datakilde1&quot;), nÃ¥r forbindelsen oprettes, uden brugernavn og
   adgangskode:
 </para>
 
@@ -118,9 +118,9 @@ Anden og tredje parameter er brugernavn og adgangskode.
   <title>Kommunikere med databasen</title>
 
 <para>
-  Når vi har en forbindelse, kan vi oprette et
+  NÃ¥r vi har en forbindelse, kan vi oprette et
   &quot;statement&quot;-objekt, som vi kan sende kommandoer og
-  forespørgsler til databasen med
+  forespÃ¸rgsler til databasen med
 </para>
 
 <screen>
@@ -128,7 +128,7 @@ Anden og tredje parameter er brugernavn og adgangskode.
 </screen>
 
 <para>
-  Der kan opstå forskellige undtagelser af typen SQLException, der skal
+  Der kan opstÃ¥ forskellige undtagelser af typen SQLException, der skal
   fanges.
 </para>
 
@@ -142,9 +142,9 @@ Anden og tredje parameter er brugernavn og adgangskode.
   <footnote>
     <para>
       SQL fra JDBC er normalt forpligtigende, d.v.s. en kommando kan ikke
-      fortrydes når den først er givet. I Avancered-afsnittet i slutningen
+      fortrydes nÃ¥r den fÃ¸rst er givet. I Avancered-afsnittet i slutningen
       af kapitlet vises hvordan automatisk forpligtigelse (eng.:
-      auto-commit) kan slås fra.
+      auto-commit) kan slÃ¥s fra.
     </para>
   </footnote>.
 </para>
@@ -158,7 +158,7 @@ stmt.executeUpdate(&quot;create table KUNDER (NAVN varchar(32), KREDIT float)&qu
 </screen>
 
 <para>
-  ... og indsætter et par rækker
+  ... og indsÃ¦tter et par rÃ¦kker
 </para>
 
 <screen>
@@ -167,7 +167,7 @@ stmt.executeUpdate(&quot;insert into KUNDER values('Brian', 0)&quot;);
 </screen>
 
 <para>
-  Oftest har vi data i variabler, så vi skal sætte en
+  Oftest har vi data i variabler, sÃ¥ vi skal sÃ¦tte en
   streng sammen, der giver den rigtige SQL-kommando:
 </para>
 
@@ -175,16 +175,16 @@ stmt.executeUpdate(&quot;insert into KUNDER values('Brian', 0)&quot;);
 String navn = &quot;Hans&quot;;
 int kredit = 500;
 
-<emphasis>// indsæt data fra variabler</emphasis>
+<emphasis>// indsÃ¦t data fra variabler</emphasis>
 stmt.executeUpdate(&quot;insert into KUNDER values('&quot;<emphasis>+navn+</emphasis>&quot;', &quot;<emphasis>+kredit+</emphasis>&quot;)&quot;);
 </screen>
 </sect2>    <!--   Kommandoer -->
 
 <sect2 id="java-jdbc-kom-med-db-query">
-<title>Forespørgsler</title>
+<title>ForespÃ¸rgsler</title>
 
 <para>
-  SQL-forespørgslen SELECT udføres med metoden executeQuery().
+  SQL-forespÃ¸rgslen SELECT udfÃ¸res med metoden executeQuery().
 </para>
 
 <screen>
@@ -192,8 +192,8 @@ stmt.executeUpdate(&quot;insert into KUNDER values('&quot;<emphasis>+navn+</emph
 </screen>
 
 <para>
-  Den returnerer et ResultSet-objekt, der repræsenterer svaret på
-  forespørgslen. Data hentes som vist herunder
+  Den returnerer et ResultSet-objekt, der reprÃ¦senterer svaret pÃ¥
+  forespÃ¸rgslen. Data hentes som vist herunder
 </para>
 
 <screen>
@@ -206,29 +206,29 @@ stmt.executeUpdate(&quot;insert into KUNDER values('&quot;<emphasis>+navn+</emph
 </screen>
 
 <para>
-  Man kalder altså next() for at få næste række i svaret, læser de
-  enkelte celler ud fra kolonnenavnene, hvorefter man går videre til
-  næste række med next() osv. Når next() returnerer false, er der ikke
-  flere rækker at læse.
+  Man kalder altsÃ¥ next() for at fÃ¥ nÃ¦ste rÃ¦kke i svaret, lÃ¦ser de
+  enkelte celler ud fra kolonnenavnene, hvorefter man gÃ¥r videre til
+  nÃ¦ste rÃ¦kke med next() osv. NÃ¥r next() returnerer false, er der ikke
+  flere rÃ¦kker at lÃ¦se.
 </para>
-</sect2>    <!--   Forespørgsler -->
+</sect2>    <!--   ForespÃ¸rgsler -->
 </sect1>    <!--   Kommunikere med databasen -->
 
 <sect1 id="java-jdbc-eksempel">
 <title>Samlet eksempel</title>
 
 <para>
-  Det er en god idé at indkapsle databasekommunikationen &eacute;t sted,
-  f.eks. i en klasse, sådan at resten af programmet kan fungere, selvom
-  databasens adresse eller struktur skulle ændre sig.
+  Det er en god idÃ© at indkapsle databasekommunikationen &eacute;t sted,
+  f.eks. i en klasse, sÃ¥dan at resten af programmet kan fungere, selvom
+  databasens adresse eller struktur skulle Ã¦ndre sig.
 </para>
 
 <para>
-  Ofte vil man have en klasse per tabel i databasen, sådan at et objekt
-  kommer til at svare til en række
+  Ofte vil man have en klasse per tabel i databasen, sÃ¥dan at et objekt
+  kommer til at svare til en rÃ¦kke
   <footnote>
     <para>
-      Det kommer lidt an på, i hvor høj grad basen er normaliseret.
+      Det kommer lidt an pÃ¥, i hvor hÃ¸j grad basen er normaliseret.
     </para>
   </footnote>:
 </para>
@@ -254,9 +254,9 @@ public class Kunde
 
 
 <para>
-  Klassen, der varetager forbindelsen til databasen, bør have metoder,
-  der svarer til de kommandoer og forespørgsler, resten af programmet
-  har brug for. Hvis databasen ændrer sig, er det kun denne klasse, der
+  Klassen, der varetager forbindelsen til databasen, bÃ¸r have metoder,
+  der svarer til de kommandoer og forespÃ¸rgsler, resten af programmet
+  har brug for. Hvis databasen Ã¦ndrer sig, er det kun denne klasse, der
   skal rettes.
 </para>
 
@@ -284,7 +284,7 @@ public class Databaseforbindelse
 
 <emphasis>  public void opretTestdata()</emphasis> throws SQLException
   {
-    try { <emphasis>// hvis tabellen allerede eksisterer opstår der en SQL-udtagelse</emphasis>
+    try { <emphasis>// hvis tabellen allerede eksisterer opstÃ¥r der en SQL-udtagelse</emphasis>
       stmt.executeUpdate(
         &quot;create table KUNDER (NAVN varchar(32), KREDIT float)&quot; );
     } catch (SQLException e) {
@@ -294,7 +294,7 @@ public class Databaseforbindelse
     stmt.executeUpdate(&quot;insert into KUNDER values('Brian', 0)&quot;);
   }
 
-<emphasis>  public void indsæt(Kunde k)</emphasis> throws SQLException
+<emphasis>  public void indsÃ¦t(Kunde k)</emphasis> throws SQLException
   {
     stmt.executeUpdate(&quot;insert into KUNDER (NAVN,KREDIT) values('&quot; 
       + k.navn + &quot;', &quot; + k.kredit + &quot;)&quot;);
@@ -315,15 +315,15 @@ public class Databaseforbindelse
 </screen>
 
 <para>
-  Klassen lader kalderen om at håndtere de mulige undtagelser.  Det er
-  fornuftigt, da det også er kalderen, der skal fortælle fejlen til
+  Klassen lader kalderen om at hÃ¥ndtere de mulige undtagelser.  Det er
+  fornuftigt, da det ogsÃ¥ er kalderen, der skal fortÃ¦lle fejlen til
   brugeren og evt. beslutte, om programmet skal afbrydes.
 </para>
 
 <para>
-  Her er et program, der bruger Databaseforbindelse. Først opretter det
-  forbindelsen og henter alle poster, dernæst sletter det alt og
-  indsætter en enkelt post. Hvis der opstår en fejl, udskrives
+  Her er et program, der bruger Databaseforbindelse. FÃ¸rst opretter det
+  forbindelsen og henter alle poster, dernÃ¦st sletter det alt og
+  indsÃ¦tter en enkelt post. Hvis der opstÃ¥r en fejl, udskrives
   &quot;Problem med database&quot;, og programmet afbrydes.
 </para>
 
@@ -342,7 +342,7 @@ public class BenytDatabaseforbindelse
       System.out.println(&quot;Alle data: &quot;+v);
       dbf.sletAlleData();
 
-      dbf.indsæt( new Kunde(&quot;Kurt&quot;,1000) );
+      dbf.indsÃ¦t( new Kunde(&quot;Kurt&quot;,1000) );
       System.out.println(&quot;Alle data nu: &quot;+ dbf.hentAlle());
 
     } catch(Exception e) {
@@ -365,11 +365,11 @@ Alle data nu: [Kurt: 1000.0 kr.]
 <title>Opgaver</title>
 
 <orderedlist>
-  <listitem><para>Udvid Databaseforbindelse, så den kan søge efter en kunde ud fra kundens navn (antag, at navnet er en primærnøgle så der ikke kan være flere kunder med samme navn).</para></listitem>
-  <listitem><para>Udvid Databaseforbindelse, så den kan give en liste med alle kunder med negativ kredit.</para></listitem>
-  <listitem><para>Lav et program, der holder styr på en musiksamling vha.  en database. Databasen skal have tabellen UDGIVELSER med kolonnerne år, navn, gruppe og pladeselskab. Opret en tilsvarende klasse, der repræsenterer en Udgivelse (int år, String navn, String gruppe, String pladeselskab). Lav en passende Databaseforbindelse og et (evt. grafisk) program, der arbejder med musikdatabasen.</para></listitem>
-  <listitem><para>Ret databasen i forrige opgave til at have tabellen UDGIVELSER med kolonnerne år, navn og gruppeID, tabellen GRUPPER med kolonnerne gruppeID, navn, pladeselskab. Hvordan skal Databaseforbindelse ændres? Behøves der blive ændret i resten af programmet? Hvorfor?</para></listitem>
-  <listitem><para>Udvid programmet, så hver gruppe har en genre som f.eks. rock, tekno, klassisk (tabellen GRUPPER udvides med genreID, og tabellen GENRER med kolonnerne genreID og navn oprettes).</para></listitem>
+  <listitem><para>Udvid Databaseforbindelse, sÃ¥ den kan sÃ¸ge efter en kunde ud fra kundens navn (antag, at navnet er en primÃ¦rnÃ¸gle sÃ¥ der ikke kan vÃ¦re flere kunder med samme navn).</para></listitem>
+  <listitem><para>Udvid Databaseforbindelse, sÃ¥ den kan give en liste med alle kunder med negativ kredit.</para></listitem>
+  <listitem><para>Lav et program, der holder styr pÃ¥ en musiksamling vha.  en database. Databasen skal have tabellen UDGIVELSER med kolonnerne Ã¥r, navn, gruppe og pladeselskab. Opret en tilsvarende klasse, der reprÃ¦senterer en Udgivelse (int Ã¥r, String navn, String gruppe, String pladeselskab). Lav en passende Databaseforbindelse og et (evt. grafisk) program, der arbejder med musikdatabasen.</para></listitem>
+  <listitem><para>Ret databasen i forrige opgave til at have tabellen UDGIVELSER med kolonnerne Ã¥r, navn og gruppeID, tabellen GRUPPER med kolonnerne gruppeID, navn, pladeselskab. Hvordan skal Databaseforbindelse Ã¦ndres? BehÃ¸ves der blive Ã¦ndret i resten af programmet? Hvorfor?</para></listitem>
+  <listitem><para>Udvid programmet, sÃ¥ hver gruppe har en genre som f.eks. rock, tekno, klassisk (tabellen GRUPPER udvides med genreID, og tabellen GENRER med kolonnerne genreID og navn oprettes).</para></listitem>
 </orderedlist>
 
 </sect1>    <!--   Opgaver -->

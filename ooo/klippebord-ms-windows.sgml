@@ -16,7 +16,7 @@
       Du <emphasis>klipper</emphasis> tekst ud med
       <emphasis>Rediger/Klip</emphasis> (Tastatur:
       <emphasis>Ctrl-X</emphasis>, knap <figure
-      float="1"><title>Redigér/klip</title><graphic
+      float="1"><title>RedigÃ©r/klip</title><graphic
       fileref="objektlinjeklip.&magic" scale="60"></graphic>
       </figure>). Den markerede tekst flyttes til windows
       klippebordet.
@@ -28,7 +28,7 @@
       Du <emphasis>kopierer</emphasis> tekst med
       <emphasis>Rediger/Kopier</emphasis> (Tastatur:
       <emphasis>Ctrl-C</emphasis>, knap <figure
-      float="1"><title>Redigér/kopiér</title><graphic
+      float="1"><title>RedigÃ©r/kopiÃ©r</title><graphic
       fileref="objektlinjekopier.&magic;"
       scale="60"></graphic></figure> ). Den markerede tekst kopieres
       til windows klippebordet.
@@ -37,19 +37,19 @@
 
     <listitem>
      <para>
-      Du <emphasis>indsætter</emphasis> tekst med
-      <emphasis>Rediger/Sæt ind</emphasis> (Tastatur:
-      <emphasis>Ctrl-V</emphasis>, knap <figure float="1"><title>Sæt
+      Du <emphasis>indsÃ¦tter</emphasis> tekst med
+      <emphasis>Rediger/SÃ¦t ind</emphasis> (Tastatur:
+      <emphasis>Ctrl-V</emphasis>, knap <figure float="1"><title>SÃ¦t
       ind</title><graphic fileref="objektlinjesaetind.&magic;"
       scale="60"></graphic></figure> ).  Teksten i windows
-      klippebordet sættes ind ved markøren (den slettes ikke fra
+      klippebordet sÃ¦ttes ind ved markÃ¸ren (den slettes ikke fra
       klippebordet).
      </para>
     </listitem>
    </itemizedlist>
 
    <para>
-    Du kan også bruge kontekstmenuen (højreklik).
+    Du kan ogsÃ¥ bruge kontekstmenuen (hÃ¸jreklik).
    </para>
 
    <para>

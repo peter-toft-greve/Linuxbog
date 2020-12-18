@@ -17,18 +17,18 @@
  </indexterm>
 
  <para>
-  Ruby tilhører, sammen med Perl og Python, gruppen af moderne fortolkede
+  Ruby tilhÃ¸rer, sammen med Perl og Python, gruppen af moderne fortolkede
   sprog. Fra begyndelsen er Ruby designet som et objektorienteret sprog
   og giver derfor en mere elegant oplevelse end Perls objekter, men
-  derudover minder Ruby langt hen af vejen om en pænere version af
+  derudover minder Ruby langt hen af vejen om en pÃ¦nere version af
   Perl.
  </para>
 
  <para>
   Ruby er hovedsagligt udviklet i Japan og meget af dokumentationen er
-  skrevet på japansk. Denne mangel på engelsk dokumentation har været
+  skrevet pÃ¥ japansk. Denne mangel pÃ¥ engelsk dokumentation har vÃ¦ret
   en hindring for Rubys internationale udbredelse. Dette er der ved at
-  blive rådet bod på, det kan derfor kun anbefales at se nærmere på
+  blive rÃ¥det bod pÃ¥, det kan derfor kun anbefales at se nÃ¦rmere pÃ¥
   Ruby.
  </para>
 
@@ -36,10 +36,10 @@
  <title>Hej verden!</title>
 
  <para>
-  Vi begynder med det sædvanlige eksempel. Et lille program der ikke gør
-  andet end at skrive "Hello World!" ud på skærmen. Det giver ikke meget
+  Vi begynder med det sÃ¦dvanlige eksempel. Et lille program der ikke gÃ¸r
+  andet end at skrive "Hello World!" ud pÃ¥ skÃ¦rmen. Det giver ikke meget
   indtryk af selve sproget Ruby, men viser hvordan man bruger det. Gem
-  følgende tekst som <filename>hello.rb</filename>
+  fÃ¸lgende tekst som <filename>hello.rb</filename>
  </para>
 
 <programlisting>
@@ -49,13 +49,13 @@ print "Hello World!\n"
 </programlisting>
 
  <para>
-  Programmet kan nu køres ved enten at kalde <command>ruby</command>:
+  Programmet kan nu kÃ¸res ved enten at kalde <command>ruby</command>:
 <screen>
 <prompt>linus% </prompt><userinput>ruby hello.rb</userinput>
 Hello World!
 <prompt>linux% </prompt>
 </screen>
-  eller ved at gøre scriptet udførbart og køre det direkte:
+  eller ved at gÃ¸re scriptet udfÃ¸rbart og kÃ¸re det direkte:
 <screen>
 <prompt>linux% </prompt><userinput>chmod a+x hello.rb</userinput>
 <prompt>linux% </prompt>./hello.rb
@@ -67,17 +67,17 @@ Hello World!
 </sect2>
 
 <sect2 id='mail-ruby'>
- <title>Et større eksempel</title>
+ <title>Et stÃ¸rre eksempel</title>
 
  <para>
-  For at vise et lidt større eksempel som giver en lidt større indsigt i
+  For at vise et lidt stÃ¸rre eksempel som giver en lidt stÃ¸rre indsigt i
   hvordan Ruby ser ud er her et simpelt program til afsendelse af email.
   Programmet er ret simpelt. Det beder om en afsender, en modtager og et
   emne. Derefter kan man skrive sin mail.
  </para>
 
  <para>
-  I sin fulde længde ser programmet således ud:
+  I sin fulde lÃ¦ngde ser programmet sÃ¥ledes ud:
  </para>
 
 <programlisting>
@@ -121,19 +121,19 @@ smtp.finish
 </programlisting>
 
  <para>
-  Den første linje
+  Den fÃ¸rste linje
 
 <programlisting>
 require 'net/smtp'
 </programlisting>
 
-  Fortæller at vi har brug for biblioteket der implementerer SMTP så vi
+  FortÃ¦ller at vi har brug for biblioteket der implementerer SMTP sÃ¥ vi
   kan sende mail.
  </para>
 
  <para>
-  Selvom Ruby er utypet, så skal vi have et objekt for at kunne lave
-  metodekald. Derfor bliver vi nødt til at initialiserer variablen mail
+  Selvom Ruby er utypet, sÃ¥ skal vi have et objekt for at kunne lave
+  metodekald. Derfor bliver vi nÃ¸dt til at initialiserer variablen mail
   med et streng-objekt:
  </para>
 
@@ -142,7 +142,7 @@ mail = String::new("")
 </programlisting>
 
  <para>
-  Det næste vi skal gøre er at spørge brugeren om afsenderen, modtageren
+  Det nÃ¦ste vi skal gÃ¸re er at spÃ¸rge brugeren om afsenderen, modtageren
   og emnet for mailen. Hvis brugeren trykker Ctrl-D (End Of File) skal
   programmet stoppe:
  </para>
@@ -168,21 +168,21 @@ mail &lt;&lt; "\n"
 </programlisting>
 
  <para>
-  <command>readline</command> læser en linje fra standard-ind. Hvis
+  <command>readline</command> lÃ¦ser en linje fra standard-ind. Hvis
   brugeren sender en EOF (trykker Ctrl-D) rejses end EOFError-undtagelse,
   der derfor fanges tilsidst i blokken (fra <command>rescue
   EOFError</command>).
  </para>
 
  <para>
-  &lt;&lt; er en metode på et streng-objekt. Den tilføjer en streng til
+  &lt;&lt; er en metode pÃ¥ et streng-objekt. Den tilfÃ¸jer en streng til
   objektet. <command>chomp</command>-metoden fjerner ny linje-tegnet
   sidste fra en streng.
  </para>
 
  <para>
-  Så skal vi læse selve mailen ind. Dette gøres i en
-  uendelig <command>while</command>-løkke:
+  SÃ¥ skal vi lÃ¦se selve mailen ind. Dette gÃ¸res i en
+  uendelig <command>while</command>-lÃ¸kke:
  </para>
 
 <programlisting>
@@ -197,9 +197,9 @@ end while true
 </programlisting>
 
  <para>
-  Hvis brugeren sender en EOF hopper vi ud af løkken i rescue-blokken
+  Hvis brugeren sender en EOF hopper vi ud af lÃ¸kken i rescue-blokken
   og hvis brugeren skriver en linje kun indenholdende et punktum hopper
-  vi også ud af løkken.
+  vi ogsÃ¥ ud af lÃ¸kken.
  </para>
 
  <para>
@@ -223,9 +223,9 @@ smtp.finish
  <title>One-liners i Ruby</title>
 
  <para>
-  <command>ruby</command> understøtter en række argumenter der gør det
-  lettere at skrive one-liners, altså små programmer der kan skrives på
-  en linje. Disse argumenter kendes også fra perl
+  <command>ruby</command> understÃ¸tter en rÃ¦kke argumenter der gÃ¸r det
+  lettere at skrive one-liners, altsÃ¥ smÃ¥ programmer der kan skrives pÃ¥
+  en linje. Disse argumenter kendes ogsÃ¥ fra perl
  </para>
 </sect2>
 

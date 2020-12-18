@@ -1,7 +1,7 @@
 package dk.sslug;
 
 /**
- * Denne klasse repræsenterer en simpel stak, der
+ * Denne klasse reprÃ¦senterer en simpel stak, der
  * lagrer heltal.
  *
  * @author Jonas Kongslund (jonas@kongslund.dk)
@@ -17,7 +17,7 @@ public class IntStack
    * i <code>elements[0...count-1]</code>.
    * <p>
    * Toppen af stakken er <code>count-1</code>
-   * når <code>count>0</code> og ellers udefineret.
+   * nÃ¥r <code>count>0</code> og ellers udefineret.
    *
    * @see #pop()
    * @see #push(int)
@@ -25,43 +25,43 @@ public class IntStack
   protected int[] elements;
 
   /**
-   * Standardkonstruktør for denne klasse.
+   * StandardkonstruktÃ¸r for denne klasse.
    */
   public IntStack()
   {
-    /* Øvelse: implementer metoden sådan at
+    /* Ã˜velse: implementer metoden sÃ¥dan at
        elements og count initialiseres til
-       nogle fornuftige værdier */
+       nogle fornuftige vÃ¦rdier */
   }
 
   /**
-   * Fjerner og returnerer det øverste tal på stakken.
+   * Fjerner og returnerer det Ã¸verste tal pÃ¥ stakken.
    *
-   * @return int Det øverste tal på stakken
+   * @return int Det Ã¸verste tal pÃ¥ stakken
    * @exception java.util.EmptyStackException
    *            hvis stakken er tom
    */
   public int pop() throws java.util.EmptyStackException
   {
-    /* Øvelse: implementer metoden */
+    /* Ã˜velse: implementer metoden */
     return -1;
   }
 
   /**
-   * Placerer det angivne tal øverst på stakken.
+   * Placerer det angivne tal Ã¸verst pÃ¥ stakken.
    *
-   * @param element Tallet der skal lægges på stakken
+   * @param element Tallet der skal lÃ¦gges pÃ¥ stakken
    */
   public void push(int element)
   {
-    /* Øvelse: implementer metoden så stakken
-       udvides såfremt den er fyldt */
+    /* Ã˜velse: implementer metoden sÃ¥ stakken
+       udvides sÃ¥fremt den er fyldt */
   }
 
   /**
-   * Placerer det angivne tal øverst på stakken.
+   * Placerer det angivne tal Ã¸verst pÃ¥ stakken.
    *
-   * @param element Tallet der skal lægges på stakken
+   * @param element Tallet der skal lÃ¦gges pÃ¥ stakken
    * @deprecated Siden version 1.1; Metoden er
    *   erstattet af <code>push(int)</code>.
    * @see #push(int)

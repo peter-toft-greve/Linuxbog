@@ -5,19 +5,19 @@
 
 
 <para>
-Igennem tiden har bogen "Linux - friheden til vælge itplatform" udviklet sig
-meget. Vi frigiver ofte nye versioner, når der er kommer en del
+Igennem tiden har bogen "Linux - friheden til vÃ¦lge itplatform" udviklet sig
+meget. Vi frigiver ofte nye versioner, nÃ¥r der er kommer en del
 rettelser ind, eller nye afsnit er blevet skrevet.  Kommentarer, ris
 og ros, og specielt fejl og mangler bedes sendt til <ulink
 url="mailto:linuxbog@sslug.dk">linuxbog@sslug.dk</ulink>, men er du
-medlem af SSLUG, så skriv til 
+medlem af SSLUG, sÃ¥ skriv til 
 <ulink url="mailto:sslug-bog@sslug.dk">sslug-bog@sslug.dk</ulink>. 
-Alle kan bidrage - se om tilmelding se på <ulink url="http://www.sslug.dk/tilmeld">http://www.sslug.dk/tilmeld</ulink>.
+Alle kan bidrage - se om tilmelding se pÃ¥ <ulink url="http://www.sslug.dk/tilmeld">http://www.sslug.dk/tilmeld</ulink>.
 </para>
 
 
 <para>
-Her er en liste over, hvad der er ændret i bogen.
+Her er en liste over, hvad der er Ã¦ndret i bogen.
 </para>
 
 
@@ -27,13 +27,13 @@ Her er en liste over, hvad der er ændret i bogen.
 <listitem><para>
 Version 0.7-20040605 - 5. juni 2004:
 
-Donald Axel retter sprog i forord, ændrer det meste af
-indledningen til kap.2, så det er lidt mere up-to-date, og med
-et forsøg på at tydeliggøre argumentationen. Der er dog stadig et
+Donald Axel retter sprog i forord, Ã¦ndrer det meste af
+indledningen til kap.2, sÃ¥ det er lidt mere up-to-date, og med
+et forsÃ¸g pÃ¥ at tydeliggÃ¸re argumentationen. Der er dog stadig et
 lille misforhold i formuleringen af overordnet indhold for kap.2,
-som taler om fokus på kontorplatformen, idet serversiden senere
-alligevel får sit eget (lille) afsnit. Også dette har jeg forsøgt
-at glatte lidt ud på.
+som taler om fokus pÃ¥ kontorplatformen, idet serversiden senere
+alligevel fÃ¥r sit eget (lille) afsnit. OgsÃ¥ dette har jeg forsÃ¸gt
+at glatte lidt ud pÃ¥.
 Jacob Sparre Andersen: Retter sproglige fejl.
 </para></listitem> 
 
@@ -57,30 +57,30 @@ Peter Toft: Retter en trykfejl.
 
 <listitem><para>
 Version 0.4 - 10. marts 2002:
-Ny licens for bogen - Åben dokumentlicens.
+Ny licens for bogen - Ã…ben dokumentlicens.
 Morten Christensen har skrevet en masse nyt om Groupware-funktioner.
-Peter Toft har skrevet nyt kapitel om sikkerhed og rettet SGML-koden op, så 
-den er nemmere at læse. Er igang med at skrive om programmer til Linux.
-Har flyttet afsnit om Net-banker her til bogen og ført listen ajour.
+Peter Toft har skrevet nyt kapitel om sikkerhed og rettet SGML-koden op, sÃ¥ 
+den er nemmere at lÃ¦se. Er igang med at skrive om programmer til Linux.
+Har flyttet afsnit om Net-banker her til bogen og fÃ¸rt listen ajour.
 Har skrevet mere om brugerprogrammer, flyttet lidt rundt 
 og udraderet tomme afsnit.
-Jacob Sparre Andersen: Rettet sproglige småfejl.
+Jacob Sparre Andersen: Rettet sproglige smÃ¥fejl.
 </para></listitem>
 
 
 <listitem><para>
 Version 0.3 - 21. oktober 2001:
-Michael Rasmussen: Kapitel 2 samt tilføjet Peter Toft, Hanne Munkholm
+Michael Rasmussen: Kapitel 2 samt tilfÃ¸jet Peter Toft, Hanne Munkholm
 og Morten Christensen som bidragydere.  Morten Christensen:
 PhpGroupware i kapitel 9.  
-Peter Toft; Har overført store dele af introduktionen til 
-"Linux - Friheden til at vælge" til denne bog.
+Peter Toft; Har overfÃ¸rt store dele af introduktionen til 
+"Linux - Friheden til at vÃ¦lge" til denne bog.
 </para></listitem>
 
 <listitem><para>
 Version 0.2 - 3. september 2001:
 Peter Toft: Introduktion (redigeret ud fra den tidligere bog
-"Linux - Friheden til at vælge").
+"Linux - Friheden til at vÃ¦lge").
 </para></listitem>
 
 
@@ -91,7 +91,7 @@ Michael Rasmussen: Skelet til bog.
 
 <listitem><para>
 Version 0.0 - 9. juli 2001:
-En første start.
+En fÃ¸rste start.
 </para></listitem>
 </itemizedlist>
 

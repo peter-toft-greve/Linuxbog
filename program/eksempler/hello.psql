@@ -7,8 +7,8 @@
 -- Afvikling: psql -c "select hello()"
 ----------------------------------------------------------------
 
--- De følgende linjer installerer PL/pgSQL i PostgreSQL serveren.
--- Dette skal kun gøres én gang for hver database.
+-- De fÃ¸lgende linjer installerer PL/pgSQL i PostgreSQL serveren.
+-- Dette skal kun gÃ¸res Ã©n gang for hver database.
 
 create function plpgsql_call_handler () returns opaque as
   '/usr/lib/pgsql/plpgsql.so' language 'C';
@@ -19,7 +19,7 @@ create trusted procedural language 'PLpgSQL'
 
 ----------------------------------------------------------------
 
--- Når handleren er installeret, kan egne funktioner installeres
+-- NÃ¥r handleren er installeret, kan egne funktioner installeres
 create function hello() returns text as '
   begin
     return ''Hello, world!'';

@@ -3,33 +3,33 @@
 <title>Forord</title>
 
 <para>
-Dette er en bog samlet ud fra en serie på 6 artikler om sikkerhed på
-Linux, som kan findes på
+Dette er en bog samlet ud fra en serie pÃ¥ 6 artikler om sikkerhed pÃ¥
+Linux, som kan findes pÃ¥
 <ulink url="http://www.sslug.dk/artikler/Linux_sikkerhed">http://www.sslug.dk/artikler/Linux_sikkerhed</ulink>.
 </para>
 
 
 <para>
-For få år siden var computersikkerhed et emne, de færreste behøvede at
-tænke på. Med den hastigt voksende udbredelse af internettet i dag er det
-et område, man ikke længere kan tillade sig at overse. Flere 
+For fÃ¥ Ã¥r siden var computersikkerhed et emne, de fÃ¦rreste behÃ¸vede at
+tÃ¦nke pÃ¥. Med den hastigt voksende udbredelse af internettet i dag er det
+et omrÃ¥de, man ikke lÃ¦ngere kan tillade sig at overse. Flere 
 og flere computere kobles til internettet eller et lokalnet, og kan 
-let blive ofre for ødelæggende indbrud, aflytning mm. Sikkerhed er for
-mange et emne, de ved, at de burde tænke på, men de finder det svært 
-at komme i gang med at lære et så komplekst område. 
-Da sikkerhed er et meget stort område, ved man ikke rigtig, hvor man 
-skal starte, og det virker meget svært i begyndelsen. 
-På internettet er der mange informationer at finde, men de findes spredt rundt
-omkring, og det er ikke altid let at forstå, hvor de enkelte "brikker" 
+let blive ofre for Ã¸delÃ¦ggende indbrud, aflytning mm. Sikkerhed er for
+mange et emne, de ved, at de burde tÃ¦nke pÃ¥, men de finder det svÃ¦rt 
+at komme i gang med at lÃ¦re et sÃ¥ komplekst omrÃ¥de. 
+Da sikkerhed er et meget stort omrÃ¥de, ved man ikke rigtig, hvor man 
+skal starte, og det virker meget svÃ¦rt i begyndelsen. 
+PÃ¥ internettet er der mange informationer at finde, men de findes spredt rundt
+omkring, og det er ikke altid let at forstÃ¥, hvor de enkelte "brikker" 
 passer ind i det store puslespil.  
 </para>
 
 <para>
-Vi skriver disse artikler i håb om at hjælpe andre i gang med emnet, som 
-er både spændende og til at forstå, når man først kommer i gang. Selvom
-du ikke lige nu har brug for at lære om sikkerhed, kan du alligevel være 
-interesseret i at læse videre, idet du kommer til at lære hvor meget, din 
-Linux-maskine kan på et netværk, og hvordan det kontrolleres. 
+Vi skriver disse artikler i hÃ¥b om at hjÃ¦lpe andre i gang med emnet, som 
+er bÃ¥de spÃ¦ndende og til at forstÃ¥, nÃ¥r man fÃ¸rst kommer i gang. Selvom
+du ikke lige nu har brug for at lÃ¦re om sikkerhed, kan du alligevel vÃ¦re 
+interesseret i at lÃ¦se videre, idet du kommer til at lÃ¦re hvor meget, din 
+Linux-maskine kan pÃ¥ et netvÃ¦rk, og hvordan det kontrolleres. 
 </para>
 
 <sect1 id="sikkerhed-linuxbog-serien">
@@ -47,62 +47,62 @@ Linux-maskine kan på et netværk, og hvordan det kontrolleres.
 <itemizedlist mark="bullet">
 <listitem><para>1. Introduktion til sikkerhed (<xref linkend="sikkerhed-introduktion"/>). 
 </para>
-<para>I dette kapitel ser vi nærmere på, hvordan 
-Linuxverdenen behandler sikkerhedsproblemer. Vi ser også på hvilke typer
-trusler, der findes, og nærmere på, hvor udsat dit system er for trusler
+<para>I dette kapitel ser vi nÃ¦rmere pÃ¥, hvordan 
+Linuxverdenen behandler sikkerhedsproblemer. Vi ser ogsÃ¥ pÃ¥ hvilke typer
+trusler, der findes, og nÃ¦rmere pÃ¥, hvor udsat dit system er for trusler
 imod sikkerheden.
 </para></listitem>
 
-<listitem><para>2. Services - at slå services fra og 
-begrænse adgang (<xref linkend="services"/>).
+<listitem><para>2. Services - at slÃ¥ services fra og 
+begrÃ¦nse adgang (<xref linkend="services"/>).
 </para>
 <para>Hvis du har installeret en standard Linuxmaskine, kan der allerede 
-være mange services åbne for dit netværk. Dette kan give en form for 
+vÃ¦re mange services Ã¥bne for dit netvÃ¦rk. Dette kan give en form for 
 adgang til maskinen fra nettet, f.eks. SMTP. 
-Disse udgør en potientiel risiko. På de fleste systemer er det ikke alle 
-disse services, som behøver at være åbne.
+Disse udgÃ¸r en potientiel risiko. PÃ¥ de fleste systemer er det ikke alle 
+disse services, som behÃ¸ver at vÃ¦re Ã¥bne.
 </para></listitem>
 
 <listitem><para>3. Root access - hvem, hvordan og
 hvorfor ikke? (<xref linkend="root-access"/>).
 </para>
 <para>
-På Linux findes en speciel bruger, "root", som har ubegrænset adgang 
-til hele maskinen, herunder adgang til at ødelægge alt. Vi ser på 
-hvordan og hvornår, du skal anvende root kontoen, nemlig kun når det 
-er nødvendigt. Vi ser desuden på programmer, der kører med root 
+PÃ¥ Linux findes en speciel bruger, "root", som har ubegrÃ¦nset adgang 
+til hele maskinen, herunder adgang til at Ã¸delÃ¦gge alt. Vi ser pÃ¥ 
+hvordan og hvornÃ¥r, du skal anvende root kontoen, nemlig kun nÃ¥r det 
+er nÃ¸dvendigt. Vi ser desuden pÃ¥ programmer, der kÃ¸rer med root 
 rettigheder.
 </para></listitem>
 
-<listitem><para>4. Remote login og netværksaflytning 
+<listitem><para>4. Remote login og netvÃ¦rksaflytning 
 (<xref linkend="remote-login"/>)
 </para>
 
-<para>En Linuxmaskine er født til at kommunikere via netværk. Problemet er
+<para>En Linuxmaskine er fÃ¸dt til at kommunikere via netvÃ¦rk. Problemet er
 bare, at de fleste af de programmer, man anvender, er designet med henblik
-på stabilitet og ikke sikkerhed. Derfor ser vi bl.a. på problemer med 
+pÃ¥ stabilitet og ikke sikkerhed. Derfor ser vi bl.a. pÃ¥ problemer med 
 telnet og ftp, og hvordan du kan installere og anvende sikre alternativer
-såsom ssh (secure shell).
+sÃ¥som ssh (secure shell).
 </para></listitem>
 
-<listitem><para>5. Systemovervågning, læsning af log-filer 
+<listitem><para>5. SystemovervÃ¥gning, lÃ¦sning af log-filer 
 (<xref linkend="filtjek"/>)
 </para>
 
 <para>
-Hvordan opdager du, hvis der har været nogen inde på Linuxmaskinen og
-lave slemme ting bag din ryg? Vi ser på måder at
-kunne læse mange af Linuxsystemets log-filer effektivt, og hvordan du
-sikrer dig, at systemfiler ikke er ændrede.
+Hvordan opdager du, hvis der har vÃ¦ret nogen inde pÃ¥ Linuxmaskinen og
+lave slemme ting bag din ryg? Vi ser pÃ¥ mÃ¥der at
+kunne lÃ¦se mange af Linuxsystemets log-filer effektivt, og hvordan du
+sikrer dig, at systemfiler ikke er Ã¦ndrede.
 </para></listitem>
 
 <listitem><para>6. Firewall (<xref linkend="Linux-firewalling"/>)
 </para>
 
 <para>
- Er dit netværk koblet til internettet, bør du beskytte det med en firewall
- (eng. firewall). Vi vil se på, hvad en firewall er, hvilke værktøjer du har
- til rådighed og hvordan firewallen kan sættes op.
+ Er dit netvÃ¦rk koblet til internettet, bÃ¸r du beskytte det med en firewall
+ (eng. firewall). Vi vil se pÃ¥, hvad en firewall er, hvilke vÃ¦rktÃ¸jer du har
+ til rÃ¥dighed og hvordan firewallen kan sÃ¦ttes op.
 </para></listitem>
 </itemizedlist>
 </sect1>
@@ -115,13 +115,13 @@ sikrer dig, at systemfiler ikke er ændrede.
 
 <para>
 Forfatterene til denne bog er begge interesserede Linux-brugere.
-Vi har ikke beskæftiget os specielt med netværkssikkerhed før, men 
+Vi har ikke beskÃ¦ftiget os specielt med netvÃ¦rkssikkerhed fÃ¸r, men 
 mente, at vi burde vide mere om det. Vi har sat os ind i emnet efter 
 bedste evne i processen med at skrive disse artikler, og vi vil gerne have 
-hjælp og rettelser fra læserne til at gøre artiklerne endnu bedre.
-Vi håber derfor, at eventuelle fejl er blevet opdaget og rettet før du læser
-dette, og at vi på trods af manglende ekspertise og erfaring på
-området kan beskrive de udvalgte områder korrekt. 
+hjÃ¦lp og rettelser fra lÃ¦serne til at gÃ¸re artiklerne endnu bedre.
+Vi hÃ¥ber derfor, at eventuelle fejl er blevet opdaget og rettet fÃ¸r du lÃ¦ser
+dette, og at vi pÃ¥ trods af manglende ekspertise og erfaring pÃ¥
+omrÃ¥det kan beskrive de udvalgte omrÃ¥der korrekt. 
 </para>
 
 
@@ -138,8 +138,8 @@ området kan beskrive de udvalgte områder korrekt.
 
 <para>
 Alle de emner, der beskrives i disse artikler, er noget vi har fra
-alment tilgængelige kilder: Bøger, internettet og linuxsystemet selv. Har
-du kommentarer, så skriv til os begge <ulink
+alment tilgÃ¦ngelige kilder: BÃ¸ger, internettet og linuxsystemet selv. Har
+du kommentarer, sÃ¥ skriv til os begge <ulink
 url="mailto:hanne@geekgirl.dk">Hanne Munkholm &lt;hanne@geekgirl.dk&gt;</ulink>
 og <ulink url="mailto:pto@sslug.dk">Peter Toft
 &lt;pto@sslug.dk&gt;</ulink>.
@@ -151,10 +151,10 @@ og <ulink url="mailto:pto@sslug.dk">Peter Toft
 
 
 <sect1 id="sikkerhed-tak">
-<title>Vi siger tak for hjælpen</title>
+<title>Vi siger tak for hjÃ¦lpen</title>
 <para>
-Vi har haft stor glæde af mange SSLUG-medlemmers støtte, rettelser og
-forslag til forbedringer - bliv ved med dette. Specielt vil vi nævne:
+Vi har haft stor glÃ¦de af mange SSLUG-medlemmers stÃ¸tte, rettelser og
+forslag til forbedringer - bliv ved med dette. Specielt vil vi nÃ¦vne:
 </para>
 
 <itemizedlist  mark="bullet" spacing="compact">
@@ -179,18 +179,18 @@ Claus Nielsen,
 Rune Christiansen,
 Donald Axel,
 Frank Damgaard,
-Lars Sørensen,
+Lars SÃ¸rensen,
 Johnny Ernst Nielsen,
 Henrik Christian Grove,
-Henrik Lund Kramshøj,
+Henrik Lund KramshÃ¸j,
 Mayank Sarup,
-Henrik Størner,
+Henrik StÃ¸rner,
 Tue Wennerberg,
 Ole Tange,
 Stefan Andersen,
 Kristian Vilmann,
 Ole Michaelsen,
-Kristian Støchkel,
+Kristian StÃ¸chkel,
 Jacob Sparre Andersen,
 Tomas Bertelsen,
 Rolf Therkildsen,
@@ -203,7 +203,7 @@ Torkil Zachariassen
 
 <para>
 Du kan i <xref linkend="sikkerhed-apprevhist"/> finde en liste over alle de
-revisioner, som bogen har været igennem. 
+revisioner, som bogen har vÃ¦ret igennem. 
 </para>
 
 </sect1>
@@ -211,16 +211,16 @@ revisioner, som bogen har været igennem.
 <sect1 id="sikkerhed-typografi">
 <title>Typografi</title>
 <para>
-Vi vil afslutte indledningen med at nævne den anvendte typografi.
+Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
 </para>
 
 
 <itemizedlist mark="bullet" spacing="compact">
-<listitem><para>Navne på filer og kataloger skrevet som
+<listitem><para>Navne pÃ¥ filer og kataloger skrevet som
 <filename>foo.bar</filename></para>
 </listitem>
 
-<listitem><para>Kommandoer, du udfører ved at taste, skrives som
+<listitem><para>Kommandoer, du udfÃ¸rer ved at taste, skrives som
 <command>help</command></para>
 </listitem>
 

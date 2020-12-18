@@ -5,28 +5,28 @@
 <sect1 id="ooo-grafik-formatering-generelt">
   <title>Formatering af grafik generelt</title>
 
-<para>Samtlige formateringsmuligheder for et billede fås ved at vælge
-    <emphasis>Formater/Billede</emphasis> eller dobbeltklikke på billedet.</para>
+<para>Samtlige formateringsmuligheder for et billede fÃ¥s ved at vÃ¦lge
+    <emphasis>Formater/Billede</emphasis> eller dobbeltklikke pÃ¥ billedet.</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>På fanebladet <emphasis>Type</emphasis> kan du indstillge skalering, placering
+<para>PÃ¥ fanebladet <emphasis>Type</emphasis> kan du indstillge skalering, placering
         og forankring.</para>
 
 </listitem>
 
   <listitem>
 
-<para>På fanebladet <emphasis>Ombrydning</emphasis> kan du indstille ombrydningen samt
-        afstanden mellem rammen og teksten på alle fire sider.</para>
+<para>PÃ¥ fanebladet <emphasis>Ombrydning</emphasis> kan du indstille ombrydningen samt
+        afstanden mellem rammen og teksten pÃ¥ alle fire sider.</para>
 
 </listitem>
 
   <listitem>
 
-<para>På fanebladet <emphasis>Beskær</emphasis> kan du vælge kun at vise en del af
-        grafikken. Indtast hvor meget der skal skæres af i alle fire
+<para>PÃ¥ fanebladet <emphasis>BeskÃ¦r</emphasis> kan du vÃ¦lge kun at vise en del af
+        grafikken. Indtast hvor meget der skal skÃ¦res af i alle fire
         sider.</para>
 
 </listitem>

@@ -9,9 +9,9 @@
  <indexterm><primary>Windowmanager</primary><secondary>IceWM</secondary></indexterm>
 
  <para>
-  Icewm's hjemmeside er http://www.icewm.org/, men man kan også hente
+  Icewm's hjemmeside er http://www.icewm.org/, men man kan ogsÃ¥ hente
 IceWM fra http://www.plopcrew.net/vuori/icewm/. Hvis man bruger et
-RPM-baseret ix86-system kan man nøjes med at hente pakkerne
+RPM-baseret ix86-system kan man nÃ¸jes med at hente pakkerne
 "icewm-common-1.2.0-1.noarch.rpm" og "icewm-default-1.2.0-1.i386.rpm",
 og installere dem med kommandoen: 
 
@@ -24,7 +24,7 @@ O.k.
 </para>
 
 <para>
-Alternativt kan man hente kildeteksten, pakke den ud og oversætte den med kommandoen:
+Alternativt kan man hente kildeteksten, pakke den ud og oversÃ¦tte den med kommandoen:
 
 <screen>
 <prompt>tyge@hven:~% </prompt><userinput>./configure &amp;&amp; make &amp;&amp; su -c 'make install' &amp;&amp; echo O.k.</userinput>
@@ -40,9 +40,9 @@ O.k.
 <title>Aktivere IceWM</title>
 
 <para>
-Man kan sætte IceWM til at være den windowmanager man som standard
-bruger, ved at lade filen <filename>${HOME}/.xsession</filename> bestå
-af følgende to linjer: 
+Man kan sÃ¦tte IceWM til at vÃ¦re den windowmanager man som standard
+bruger, ved at lade filen <filename>${HOME}/.xsession</filename> bestÃ¥
+af fÃ¸lgende to linjer: 
 
 <programlisting>
 #! /bin/sh
@@ -56,7 +56,7 @@ exec /usr/bin/X11/icewm
 <screen>
 <prompt>tyge@hven:~% </prompt><userinput>which icewm</userinput>
 </screen>
-    kan man se hvor icewm ligger henne på systemet.
+    kan man se hvor icewm ligger henne pÃ¥ systemet.
    </para>
   </sect2>
 
@@ -75,11 +75,11 @@ Udseende
 
 
 <sect3 id="wm-icewm-opsaetning">
-<title>Opsætningsfiler</title>
+<title>OpsÃ¦tningsfiler</title>
 
 
 <para>
-IceWM læser sin opsætning fra disse filer:
+IceWM lÃ¦ser sin opsÃ¦tning fra disse filer:
 </para>
 <itemizedlist mark="bullet">
 <listitem>
@@ -89,7 +89,7 @@ ${HOME}/.icewm (brugerens personlige tilpasning)
 </listitem>
 <listitem> 
  <para>
-/etc/X11/icewm (fælles tilpasninger for alle brugere på systemet)
+/etc/X11/icewm (fÃ¦lles tilpasninger for alle brugere pÃ¥ systemet)
  </para>
 </listitem>
 <listitem> 
@@ -101,7 +101,7 @@ ${HOME}/.icewm (brugerens personlige tilpasning)
 
 
     <para>
-     For at ændre sine indstillinger skal man oprette kataloget
+     For at Ã¦ndre sine indstillinger skal man oprette kataloget
      <filename>${HOME}/.icewm</filename>, og kopiere filerne fra
      <filename>/usr/lib/X11/icewm</filename> dertil:
 
@@ -112,8 +112,8 @@ ${HOME}/.icewm (brugerens personlige tilpasning)
     </para>
 
     <para>
-     Derefter kan man rette i filerne. Der er ikke noget grafisk værktøj til
-     formålet. 
+     Derefter kan man rette i filerne. Der er ikke noget grafisk vÃ¦rktÃ¸j til
+     formÃ¥let. 
     </para>
 
 <para>
@@ -121,7 +121,7 @@ ${HOME}/.icewm (brugerens personlige tilpasning)
 </para>
 
 <para>
-IceWM's "startknap" findes som standard nederst i skærmens venstre hjørne.
+IceWM's "startknap" findes som standard nederst i skÃ¦rmens venstre hjÃ¸rne.
 </para>
 
 <figure id="wm-icewm-fig2" float="1">
@@ -138,50 +138,50 @@ Skift mellem virtuelle skriveborde:
 </para>
 
 <para>
-I standardopsætningen har IceWM fire virtuelle skriveborde
-(repræsenteret ved de fire nummererede knapper ude mod venstre nederst
-i ovenstående skærmbillede). Man skifter mellem dem med
-Ctrl-Alt-Venstrepil og Ctrl-Alt-Højrepil.
+I standardopsÃ¦tningen har IceWM fire virtuelle skriveborde
+(reprÃ¦senteret ved de fire nummererede knapper ude mod venstre nederst
+i ovenstÃ¥ende skÃ¦rmbillede). Man skifter mellem dem med
+Ctrl-Alt-Venstrepil og Ctrl-Alt-HÃ¸jrepil.
 </para>
 
 <para>
 Flytte vinduer:
 </para>
 
-<para>Efter at have trykket Alt-F7 kan man flytte et vindue med piltasterne. Shift- og Ctrl-knapperne betyder at vinduet bliver flyttet i større ryk. Tast Enter når vinduet er kommet derhen hvor det skal.
-Ændre vinduesstørrelse:
-Med Alt-F8 kan du ændre vinduesstørrelse. (proceduren er i øvrigt som for at flytte vinduer)
+<para>Efter at have trykket Alt-F7 kan man flytte et vindue med piltasterne. Shift- og Ctrl-knapperne betyder at vinduet bliver flyttet i stÃ¸rre ryk. Tast Enter nÃ¥r vinduet er kommet derhen hvor det skal.
+Ã†ndre vinduesstÃ¸rrelse:
+Med Alt-F8 kan du Ã¦ndre vinduesstÃ¸rrelse. (proceduren er i Ã¸vrigt som for at flytte vinduer)
 Hoppe mellem vinduer: 
-Med Alt-Tab kan man hoppe mellem vinduerne på et virtuelt skrivebord. 
+Med Alt-Tab kan man hoppe mellem vinduerne pÃ¥ et virtuelt skrivebord. 
 </para>
 </sect3>
 
 <sect3 id="wm-icewm-vh">
-<title>Vindueshåndtering</title>
+<title>VindueshÃ¥ndtering</title>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
 Flytte et vindue: 
-Brug genvejstasten Alt-F7 eller træk i vinduets titelbjælke. 
+Brug genvejstasten Alt-F7 eller trÃ¦k i vinduets titelbjÃ¦lke. 
  </para>
 </listitem>
 <listitem> 
  <para>
 Minimere et vindue: 
-Brug genvejstasten Alt-F9 eller klik på ikonen med en enkelt vandret streg i vinduets titelbjælke. 
+Brug genvejstasten Alt-F9 eller klik pÃ¥ ikonen med en enkelt vandret streg i vinduets titelbjÃ¦lke. 
  </para>
 </listitem>
 <listitem>
  <para>
 Maksimere et vindue: 
-Brug genvejstasten Alt-F10 eller klik på ikonen med et rektangel i vinduets titelbjælke. 
+Brug genvejstasten Alt-F10 eller klik pÃ¥ ikonen med et rektangel i vinduets titelbjÃ¦lke. 
  </para>
 </listitem>
 <listitem> 
  <para>
-Vis et vindue på alle skriveborde: 
-Brug genvejstasten Alt-F2 til at skifte mellem at et vindue kun vises på et og vises på alle skriveborde. 
+Vis et vindue pÃ¥ alle skriveborde: 
+Brug genvejstasten Alt-F2 til at skifte mellem at et vindue kun vises pÃ¥ et og vises pÃ¥ alle skriveborde. 
  </para>
 </listitem>
 </itemizedlist>
@@ -191,7 +191,7 @@ Fokus
 </para>
 
 <para>
-Som standard er vinduesfokus i IceWM sat til ikke bare at følge musen. Det betyder at man skal klikke i et vindue eller bruge en af genvejstasterne Alt-F3, Alt-F6 eller Alt-Tab til at flytte fokus. Man kan sætte IceWM op til at fokus følger musen ved at ændre 
+Som standard er vinduesfokus i IceWM sat til ikke bare at fÃ¸lge musen. Det betyder at man skal klikke i et vindue eller bruge en af genvejstasterne Alt-F3, Alt-F6 eller Alt-Tab til at flytte fokus. Man kan sÃ¦tte IceWM op til at fokus fÃ¸lger musen ved at Ã¦ndre 
 </para>
 
 <screen>
@@ -216,7 +216,7 @@ Dokumentation:
 Hvis man installerer IceWM som en RPM-pakke vil man kunne finde
 dokumentationen i
 <filename>/usr/share/doc/icewm-common-1.2.0/icewm.html</filename>. Ellers
-kan man se på <ulink
+kan man se pÃ¥ <ulink
 url="http://www.icewm.org/index.php?page=docs">http://www.icewm.org/index.php?page=docs</ulink>.
 </para> </sect3> </sect2>
 
@@ -224,10 +224,10 @@ url="http://www.icewm.org/index.php?page=docs">http://www.icewm.org/index.php?pa
    <title>Hvad er det fede ved IceWM?</title>
 
    <para>
-    IceWM er et letvægtsprogram der ikke brænder ressourcer af på
-    unødvendigt pjat. Samtidig har det som standard stort set alle de
-    funktioner man i dag forventer af et skrivebordssystem. - Og så kan
-    man vælge at køre det med Warp 3-look. ;-)
+    IceWM er et letvÃ¦gtsprogram der ikke brÃ¦nder ressourcer af pÃ¥
+    unÃ¸dvendigt pjat. Samtidig har det som standard stort set alle de
+    funktioner man i dag forventer af et skrivebordssystem. - Og sÃ¥ kan
+    man vÃ¦lge at kÃ¸re det med Warp 3-look. ;-)
    </para>
   </sect2>
  </sect1>

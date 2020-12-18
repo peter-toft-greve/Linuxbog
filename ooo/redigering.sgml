@@ -5,27 +5,27 @@
 <chapter id="ooo-redigering">
   <title>Redigering</title>
 
-<para>Dette kapitel handler om de grundlæggende redigeringsredskaber, som
-    går mere eller mindre uændrede igen i de fleste windowsprogrammer, som
+<para>Dette kapitel handler om de grundlÃ¦ggende redigeringsredskaber, som
+    gÃ¥r mere eller mindre uÃ¦ndrede igen i de fleste windowsprogrammer, som
     arbejder med dokumenter - og i alle moduler i OpenOffice.</para>
 
-<para>Til større dokumenter er Navigatoren nyttig; den omtales i <xref linkend="ooo-navigatoeren"/>kapitel 19.</para>
+<para>Til stÃ¸rre dokumenter er Navigatoren nyttig; den omtales i <xref linkend="ooo-navigatoeren"/>kapitel 19.</para>
 
 <sect1 id="ooo-redigering-indtast">
   <title>Indtaste tekst og specialtegn</title>
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Når du skriver tekst skal du <emphasis>ikke</emphasis> selv skifte linje, det
+<para>NÃ¥r du skriver tekst skal du <emphasis>ikke</emphasis> selv skifte linje, det
         tager Writer sig af. Derimod skal du selv skifte <emphasis>afsnit</emphasis> , det
-        gøres med <emphasis>Enter</emphasis> tasten.</para>
+        gÃ¸res med <emphasis>Enter</emphasis> tasten.</para>
 
 </listitem>
 
   <listitem>
 
 <para>Hvis du alligevel vil fremtvinge linjeskift et bestemt sted tastes
-        <emphasis>Skift-Enter</emphasis>. Det kan undertiden være nyttigt.</para>
+        <emphasis>Skift-Enter</emphasis>. Det kan undertiden vÃ¦re nyttigt.</para>
 
 </listitem>
 
@@ -33,32 +33,32 @@
 
 <para>Tilsvarende kan du lave et tvungent sideskift med
         <emphasis>Ctrl-Enter</emphasis> og et spalteskift med <emphasis>Ctrl-Skift-Enter</emphasis>. Du
-        kan også bruge menupunktet <emphasis>Indsæt/Manuelt sideskift m.m.</emphasis></para>
+        kan ogsÃ¥ bruge menupunktet <emphasis>IndsÃ¦t/Manuelt sideskift m.m.</emphasis></para>
 
 </listitem>
 
   <listitem>
 
-<para>Tegn med accenttegn som f.eks. á, è, ô, ü, ñ fås ved <emphasis>først</emphasis> at taste accenttegnet (vises ikke på skærmen) og <emphasis>så</emphasis> taste
+<para>Tegn med accenttegn som f.eks. Ã¡, Ã¨, Ã´, Ã¼, Ã± fÃ¥s ved <emphasis>fÃ¸rst</emphasis> at taste accenttegnet (vises ikke pÃ¥ skÃ¦rmen) og <emphasis>sÃ¥</emphasis> taste
         bogstavet. Hvis du vil have accenttegnet i sig selv skal du taste
         accenttegnet efterfulgt af mellemrum.</para>
 
 </listitem>
 </itemizedlist>
 
-<para>Tegn som ikke findes på tastaturet kan fås sådan:</para>
+<para>Tegn som ikke findes pÃ¥ tastaturet kan fÃ¥s sÃ¥dan:</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Vælg <emphasis>Indsæt/Specialtegn</emphasis>. Klik på de ønskede tegn og vælg
+<para>VÃ¦lg <emphasis>IndsÃ¦t/Specialtegn</emphasis>. Klik pÃ¥ de Ã¸nskede tegn og vÃ¦lg
         <emphasis>OK</emphasis>.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Tast <emphasis>Alt</emphasis> plus tegnets nummer <emphasis>på det numeriske
+<para>Tast <emphasis>Alt</emphasis> plus tegnets nummer <emphasis>pÃ¥ det numeriske
         tastatur</emphasis> . Her er nogle eksempler:</para>
 
 </listitem>
@@ -117,23 +117,23 @@ XXX Skal lige have fundet ud af at lave et table i sgml (gitte)
 
 </entry>
 <entry>
-                        <para>ç</para>
+                        <para>Ã§</para>
 
 </entry>
 <entry>
-                        <para>Ç</para>
+                        <para>Ã‡</para>
 
 </entry>
 <entry>
-                        <para>¡</para>
+                        <para>Â¡</para>
 
 </entry>
 <entry>
-                        <para>¿</para>
+                        <para>Â¿</para>
 
 </entry>
 <entry>
-                        <para>ß</para>
+                        <para>ÃŸ</para>
 
 </entry>
 </row>
@@ -143,11 +143,11 @@ XXX Skal lige have fundet ud af at lave et table i sgml (gitte)
 </table>
 -->
 
-<para>Når du skriver et længere ord vil du opdage, at Writer til tider
+<para>NÃ¥r du skriver et lÃ¦ngere ord vil du opdage, at Writer til tider
     kommer med et forslag til, hvordan ordet kan afsluttes (funktionen kaldes
     ordkomplettering). Hvis forslaget ikke er korrekt skriver du blot videre,
-    hvis det kan bruges trykker du <emphasis>Enter</emphasis> og kan så fortsætte med næste
-    ord. Du kan også trykke <emphasis>Ctrl-Tab</emphasis>; så kommer Writer med sit næste
+    hvis det kan bruges trykker du <emphasis>Enter</emphasis> og kan sÃ¥ fortsÃ¦tte med nÃ¦ste
+    ord. Du kan ogsÃ¥ trykke <emphasis>Ctrl-Tab</emphasis>; sÃ¥ kommer Writer med sit nÃ¦ste
     forslag.</para>
 
  </sect1>    <!--   5.1. Indtaste tekst og specialtegn -->

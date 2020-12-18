@@ -2,14 +2,14 @@
 <title>Avancerede klasser</title>
 
 <para>
-  Dette kapitels afsnit om final på variabler forudsættes af 
+  Dette kapitels afsnit om final pÃ¥ variabler forudsÃ¦ttes af 
 <xref linkend="java-indre-klasser" />, Indre klasser.
 </para>
 
 <para>
-  Forudsætter <xref linkend="java-arv" />, Nedarvning og 
-<xref linkend="java-pakker" />, Pakker og ønske om at vide
-  mere om emner som først bliver relevante når man laver større
+  ForudsÃ¦tter <xref linkend="java-arv" />, Nedarvning og 
+<xref linkend="java-pakker" />, Pakker og Ã¸nske om at vide
+  mere om emner som fÃ¸rst bliver relevante nÃ¥r man laver stÃ¸rre
   programmer.
 </para>
 
@@ -17,16 +17,16 @@
 <title>public, protected og private</title>
 
 <para>
-  Det er vigtigt at styre adgangen til at kalde metoder og ændre på
-  variabler, i særdeleshed når programmerne bliver store. Det kan lette
+  Det er vigtigt at styre adgangen til at kalde metoder og Ã¦ndre pÃ¥
+  variabler, i sÃ¦rdeleshed nÃ¥r programmerne bliver store. Det kan lette
   overskueligheden meget hvis interne variabler, metoder og klasser er
-  skjult for programmøren.
+  skjult for programmÃ¸ren.
 </para>
 
 <para>
-  Adgang styres med nøgleordene public, protected og private.
-  Adgangskontrol ud over public/private bliver først interessant når der
-  er mange klasser og programmet spænder over flere pakker. Se eventuelt
+  Adgang styres med nÃ¸gleordene public, protected og private.
+  Adgangskontrol ud over public/private bliver fÃ¸rst interessant nÃ¥r der
+  er mange klasser og programmet spÃ¦nder over flere pakker. Se eventuelt
   kapitlet om pakker.
 </para>
 
@@ -34,14 +34,14 @@
 <title>Variabler og metoder</title>
 
 <para>
-  Variabler og metoder erklæret <emphasis>public</emphasis> er altid
-  tilgængelige, inden og uden for klassen.
+  Variabler og metoder erklÃ¦ret <emphasis>public</emphasis> er altid
+  tilgÃ¦ngelige, inden og uden for klassen.
 </para>
 
 <para>
-  Variabler og metoder erklæret <emphasis>protected</emphasis> er
-  tilgængelige for alle klasser inden for samme pakke. Klasser i andre
-  pakker kan kun få adgang, hvis de er nedarvinger.
+  Variabler og metoder erklÃ¦ret <emphasis>protected</emphasis> er
+  tilgÃ¦ngelige for alle klasser inden for samme pakke. Klasser i andre
+  pakker kan kun fÃ¥ adgang, hvis de er nedarvinger.
 </para>
 
 <para>
@@ -50,14 +50,14 @@
 </para>
 
 <para>
-  Hvis en variabel eller metode er erklæret
+  Hvis en variabel eller metode er erklÃ¦ret
   <emphasis>private</emphasis>, kan den kun benyttes inden for samme
-  klasse (og kan derfor ikke tilsidesættes med nedarvning). Det er det
+  klasse (og kan derfor ikke tilsidesÃ¦ttes med nedarvning). Det er det
   mest restriktive.
 </para>
 
 <para>
-  Adgangen kan sættes på skemaform:
+  Adgangen kan sÃ¦ttes pÃ¥ skemaform:
 </para>
 
 <table>
@@ -109,7 +109,7 @@
 </table>
 
 <para>
-  Holder man sig inden for samme pakke, er der altså ingen
+  Holder man sig inden for samme pakke, er der altsÃ¥ ingen
   forskel mellem public, protected og ingenting.
 </para>
 </sect2>    <!--   Variabler og metoder -->
@@ -118,12 +118,12 @@
 <title>Klasser</title>
 
 <para>
-  Klasser kan erklæres public eller ingenting (men ikke
+  Klasser kan erklÃ¦res public eller ingenting (men ikke
   protected eller private).
 </para>
 
 <para>
-  Klasser erklæres normalt public og er tilgængelige fra
+  Klasser erklÃ¦res normalt public og er tilgÃ¦ngelige fra
   alle pakker.
 </para>
 
@@ -135,7 +135,7 @@
 </screen>
 
 <para>
-  Undlader man public, er klassen kun tilgængelig inden for
+  Undlader man public, er klassen kun tilgÃ¦ngelig inden for
   samme pakke.
 </para>
 
@@ -147,18 +147,18 @@
 </screen>
 
 <para>
-  Man kan have flere klasser i en fil, men højst en, der er
+  Man kan have flere klasser i en fil, men hÃ¸jst en, der er
   public, og denne klasse skal hedde det samme som filnavnet.
 </para>
 </sect2>    <!--   Klasser -->
 </sect1>    <!--   public, protected og private -->
 
 <sect1 id="java-avancerede-klasser-final">
-<title>Nøgleordet final</title>
+<title>NÃ¸gleordet final</title>
 
 <para>
-  Noget, der er erklæret <emphasis>final</emphasis>, kan ikke ændres.
-  Både variabler, metoder og klasser kan erklæres
+  Noget, der er erklÃ¦ret <emphasis>final</emphasis>, kan ikke Ã¦ndres.
+  BÃ¥de variabler, metoder og klasser kan erklÃ¦res
   final.
 </para>
 
@@ -166,8 +166,8 @@
 <title>Variabler</title>
 
 <para>
-  En variabel, der er erklæret <emphasis>final</emphasis>, kan ikke ændres,
-  når den først har fået en værdi.
+  En variabel, der er erklÃ¦ret <emphasis>final</emphasis>, kan ikke Ã¦ndres,
+  nÃ¥r den fÃ¸rst har fÃ¥et en vÃ¦rdi.
 </para>
 
 <screen>
@@ -181,13 +181,13 @@ public class X
 </screen>
 
 <para>
-  Herover kan a's værdi ikke ændres i den efterfølgende
+  Herover kan a's vÃ¦rdi ikke Ã¦ndres i den efterfÃ¸lgende
   kode.
 </para>
 
 <para>
   Det kan lette overskueligheden at vide, hvilke variabler, der er
-  konstante. Desuden udføres programmet lidt hurtigere.
+  konstante. Desuden udfÃ¸res programmet lidt hurtigere.
 </para>
 
 <para>
@@ -196,7 +196,7 @@ public class X
 </para>
 
 <para>
-  final kan også bruges på lokale variabler (hvor
+  final kan ogsÃ¥ bruges pÃ¥ lokale variabler (hvor
   public, protected og private aldrig kan bruges):
 </para>
 
@@ -205,14 +205,14 @@ public class X
   {
     <emphasis>final</emphasis> Vector v = new Vector();
 
-<emphasis>    //v = new Vector();  // ulovligt! v kan ikke ændres.</emphasis>
+<emphasis>    //v = new Vector();  // ulovligt! v kan ikke Ã¦ndres.</emphasis>
 </screen>
 
 <para>
-  Bemærk: Når vi arbejder med objekter, er variablerne
-  jo referencer til objekterne. En variabel erklæret final
-  kan ikke ændres til at referere til et andet objekt, men
-  objektet kan godt få ændret sin indre tilstand, f.eks.
+  BemÃ¦rk: NÃ¥r vi arbejder med objekter, er variablerne
+  jo referencer til objekterne. En variabel erklÃ¦ret final
+  kan ikke Ã¦ndres til at referere til et andet objekt, men
+  objektet kan godt fÃ¥ Ã¦ndret sin indre tilstand, f.eks.
   gennem et metodekald:
 </para>
 
@@ -225,7 +225,7 @@ public class X
 <title>Metoder</title>
 
 <para>
-  En metode erklæret final kan ikke tilsidesættes i en
+  En metode erklÃ¦ret final kan ikke tilsidesÃ¦ttes i en
   nedarving.
 </para>
 
@@ -252,7 +252,7 @@ public class Y extends X
 </screen>
 
 <para>
-  Den virtuelle maskine kan optimere final metoder, så kald
+  Den virtuelle maskine kan optimere final metoder, sÃ¥ kald
   til dem sker en smule hurtigere.
 </para>
 </sect2>    <!--   Metoder -->
@@ -261,7 +261,7 @@ public class Y extends X
 <title>Klasser</title>
 
 <para>
-  En klasse erklæret final må man overhovedet ikke arve
+  En klasse erklÃ¦ret final mÃ¥ man overhovedet ikke arve
   fra (og alle dens metoder bliver final).
 </para>
 
@@ -280,13 +280,13 @@ public class Y extends X<emphasis>  // ulovligt! X er final</emphasis>
 }
 </screen>
 </sect2>    <!--   Klasser -->
-</sect1>    <!--   Nøgleordet final -->
+</sect1>    <!--   NÃ¸gleordet final -->
 
 <sect1 id="java-avancerede-klasser-abstract">
-<title>Nøgleordet abstract</title>
+<title>NÃ¸gleordet abstract</title>
 
 <para>
-  Noget der er erklæret <emphasis>abstract</emphasis> er ikke implementeret
+  Noget der er erklÃ¦ret <emphasis>abstract</emphasis> er ikke implementeret
   og skal defineres i en nedarvning.
 </para>
 
@@ -298,7 +298,7 @@ public class Y extends X<emphasis>  // ulovligt! X er final</emphasis>
   <title>Klasser</title>
 
 <para>
-  En abstrakt klasse erklæres således
+  En abstrakt klasse erklÃ¦res sÃ¥ledes
 </para>
 
 <screen>
@@ -345,12 +345,12 @@ public class Y extends X
 
 <para>
   Basisklasserne for IO-systemet, InputStream og OutputStream,
-  abstrakte, fordi programmøren altid skal bruge en mere
+  abstrakte, fordi programmÃ¸ren altid skal bruge en mere
   konkret klasse, f.eks. FileInputStream (se <xref linkend="java-io-txt-analyse-read-write" />).
 </para>
 
 <para>
-  Det er lovligt (og nyttigt i visse tilfælde) at have
+  Det er lovligt (og nyttigt i visse tilfÃ¦lde) at have
   variabler af en abstrakt klasse (det svarer til, at det er lovligt og
   nyttigt at have variabler af en interface-type).
 </para>
@@ -360,8 +360,8 @@ public class Y extends X
 <title>Metoder</title>
 
 <para>
-  En metode erklæret abstract har et metodehoved, men ingen
-  krop. Den kan kun erklæres i en abstrakt klasse
+  En metode erklÃ¦ret abstract har et metodehoved, men ingen
+  krop. Den kan kun erklÃ¦res i en abstrakt klasse
 </para>
 
 <screen>
@@ -372,8 +372,8 @@ public abstract class X
 </screen>
 
 <para>
-  Nedarvede klasser skal definere de abstrakte metoder (eller også
-  selv være abstrakte)
+  Nedarvede klasser skal definere de abstrakte metoder (eller ogsÃ¥
+  selv vÃ¦re abstrakte)
 </para>
 
 <screen>
@@ -386,6 +386,6 @@ public class Y extends X
 }
 </screen>
 </sect2>    <!--   Metoder -->
-</sect1>    <!--   Nøgleordet abstract -->
+</sect1>    <!--   NÃ¸gleordet abstract -->
 </chapter>    <!--   Avancerede klasser -->
 

@@ -1,4 +1,4 @@
-/* broek.c - se efter, om man får præcise resultater med en
+/* broek.c - se efter, om man fÃ¥r prÃ¦cise resultater med en
  * decimalbroek! */
 
 #include <stdio.h>

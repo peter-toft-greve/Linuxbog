@@ -15,7 +15,7 @@
  </indexterm>
 
  <para>
-  Ctwm (Claude's Tab Window Manager) er en viderebygning på twm som
+  Ctwm (Claude's Tab Window Manager) er en viderebygning pÃ¥ twm som
   kan alt det man savner i twm.
  </para>
 
@@ -25,7 +25,7 @@
    <secondary>CTWM</secondary>
   </indexterm>
 
-  Sådan ser ctwm ud:
+  SÃ¥dan ser ctwm ud:
 
   <figure id="ctwm-fig" float="1">
    <title>ctwm</title>
@@ -44,7 +44,7 @@
   <para>
    Man kan hente ctwm fra <ulink
    url="http://ctwm.dl.nu/">http://ctwm.dl.nu/</ulink>.  Den nyeste
-   version er 3.6.  Først forsøgte jeg mig med kildeteksten, men den
+   version er 3.6.  FÃ¸rst forsÃ¸gte jeg mig med kildeteksten, men den
    gav lidt problemer, derfor anbefales det at man bruger
    kildetekst-RPM-filen i stedet.
   </para>
@@ -54,7 +54,7 @@
 
    <para>
     Kildetekst-RPM-filen, <filename>ctwm-3.6-2jv.src.rpm</filename>,
-    kan på Red Hat bygges og installeres med kommandoerne:
+    kan pÃ¥ Red Hat bygges og installeres med kommandoerne:
 
 <screen>
 rpm --rebuild ctwm-3.6-2jv.src.rpm
@@ -63,7 +63,7 @@ rpm -Uvh /usr/src/redhat/RPMS/i386/ctwm-3.6-2jv.i386.rpm
    </para>
 
    <para>
-    I filen "<filename>$HOME/.xsession</filename>" indsættes:
+    I filen "<filename>$HOME/.xsession</filename>" indsÃ¦ttes:
 
 <programlisting>
 exec /usr/X11R6/bin/ctwm
@@ -84,7 +84,7 @@ tar xvzf ctwm-3.6.tar.gz
 
    <para>
     Hvis man har hentet den oprindelige kildetekst, kan man ikke
-    oversætte før man indsætter et manglende semikolon i filen
+    oversÃ¦tte fÃ¸r man indsÃ¦tter et manglende semikolon i filen
     <filename>gram.y</filename> i linje 686.
    </para>
 
@@ -101,7 +101,7 @@ wingeom_entry   : string string { AddToList (&amp;Scr->WindowGeometries, $1, $2)
    </para>
 
    <para>
-    Herefter køres kommandoerne:
+    Herefter kÃ¸res kommandoerne:
 
 <screen>
 cd ctwm-3.6
@@ -111,16 +111,16 @@ make
    </para>
 
    <para>
-    Kører man <command>make install</command> så er der brok over at
-    <literal>No rule to make target `xpm'</literal>.  Der står heller
+    KÃ¸rer man <command>make install</command> sÃ¥ er der brok over at
+    <literal>No rule to make target `xpm'</literal>.  Der stÃ¥r heller
     ikke noget om <command>make install</command> i <filename>README
-    filen</filename>.  Så jeg har valgt at beholde den i mit
+    filen</filename>.  SÃ¥ jeg har valgt at beholde den i mit
     hjemmekatalog.
    </para>
 
    <para>
     Dvs. at der i "<filename>$HOME/.xsession</filename>" kommer til at
-    stå:
+    stÃ¥:
 
 <programlisting>
 exec ctwm-3.6/ctwm
@@ -130,19 +130,19 @@ exec ctwm-3.6/ctwm
  </sect2>    <!--   Installation -->
 
  <sect2  id="wm-ctwm-opsaetning">
-  <title>Opsætningsfiler</title>
+  <title>OpsÃ¦tningsfiler</title>
 
   <indexterm>
-   <primary>opsætning af</primary>
+   <primary>opsÃ¦tning af</primary>
    <secondary>CTWM</secondary>
   </indexterm>
 
   <para>
-   Filen <filename>$HOME/.ctwmrc</filename> styrer opsætningen
+   Filen <filename>$HOME/.ctwmrc</filename> styrer opsÃ¦tningen
   </para>
 
   <para>
-   Start med at kopiere systemopsætningsfilen til dit hjemmekatalog:
+   Start med at kopiere systemopsÃ¦tningsfilen til dit hjemmekatalog:
 
 <screen>
 cp /usr/X11R6/lib/X11/twm/system.ctwmrc ~/.ctwmrc
@@ -157,13 +157,13 @@ cp /usr/X11R6/lib/X11/twm/system.ctwmrc ~/.ctwmrc
 <sect2  id="wm-ctwm-menu">
   <title>Menu</title>
 <para>
-Ved at venstreklikke på baggrunden kommer der en menu. Med default
-opsætningsfilen er der mulighed for at starte en <command>xterm</command>, genstarte
-<command>ctwm</command>, afslutte <command>ctwm</command>, og nogle få andre ting.
+Ved at venstreklikke pÃ¥ baggrunden kommer der en menu. Med default
+opsÃ¦tningsfilen er der mulighed for at starte en <command>xterm</command>, genstarte
+<command>ctwm</command>, afslutte <command>ctwm</command>, og nogle fÃ¥ andre ting.
 </para>
 
 <para>
-Man kan indsætte ting i menuen i <filename>.ctwmrc</filename>:
+Man kan indsÃ¦tte ting i menuen i <filename>.ctwmrc</filename>:
 </para>
 
 <screen>
@@ -183,7 +183,7 @@ menu "defops"
 <sect2  id="wm-ctwm-genvejstaster">
   <title>Genvejstaster</title>
 <para>
-Genvejstaster sætte let op i .ctwmrc:
+Genvejstaster sÃ¦tte let op i .ctwmrc:
 </para>
 
 <screen>
@@ -192,12 +192,12 @@ Genvejstaster sætte let op i .ctwmrc:
 </screen>
 
 <para>
-Her sættes <command>ctrl+alt+Insert</command> til at starte en <command>xterm</command> imens <command>ctrl+alt+n</command> sættes til at starte en netscape.
+Her sÃ¦ttes <command>ctrl+alt+Insert</command> til at starte en <command>xterm</command> imens <command>ctrl+alt+n</command> sÃ¦ttes til at starte en netscape.
 </para>
 
 <para>
-Se i øvrigt <command>man ctwm</command>. Hvis <command>make install</command> ikke lykkes, så
-prøv 
+Se i Ã¸vrigt <command>man ctwm</command>. Hvis <command>make install</command> ikke lykkes, sÃ¥
+prÃ¸v 
 </para>
 
 <screen>
@@ -210,22 +210,22 @@ eller se <ulink url="http://ctwm.dl.nu/manpage.html">http://ctwm.dl.nu/manpage.h
 </sect2>    <!--   Genvejstaster -->
 
 <sect2  id="wm-ctwm-vinduer">
-  <title>Vindueshåndtering</title>
+  <title>VindueshÃ¥ndtering</title>
 <para>
 Som ved twm er default, at man placerer vinduerne selv med venstre
-museknap. Man kan med det samme ændre størrelse på et vindue, ved at
-holde midterste museknap nede og trække den udenfor vinduet, og
-derefter trække vinduet til den ønskede størrelse.
+museknap. Man kan med det samme Ã¦ndre stÃ¸rrelse pÃ¥ et vindue, ved at
+holde midterste museknap nede og trÃ¦kke den udenfor vinduet, og
+derefter trÃ¦kke vinduet til den Ã¸nskede stÃ¸rrelse.
 </para>
 
 <para>
-Hvis man vil have vinduerne til at placere sig automatisk, sættes
+Hvis man vil have vinduerne til at placere sig automatisk, sÃ¦ttes
 RandomPlacement.
 </para>
 
 <para>
 Man kan default ikke skifte mellem vinduerne med <command>alt+tab</command>, men dette kan
-sættes op i <filename>.ctwmrc</filename> filen:
+sÃ¦ttes op i <filename>.ctwmrc</filename> filen:
 </para>
 
 <screen>
@@ -233,14 +233,14 @@ WindowRing
 WarpRingOnScreen
 "Tab"      = m   : all          : f.warpring "next"
 </screen>
-</sect2>    <!--   Vindueshåndtering -->
+</sect2>    <!--   VindueshÃ¥ndtering -->
 
 <sect2  id="wm-ctwm-fokus">
   <title>Fokus</title>
 <para>
 Default er <literal>Focus follows mouse</literal>. 
-<literal>Sloppy Focus</literal> - dvs. at fokus følger musen men at et vindue ikke mister
-fokus, når musen ryger ud på baggrunden - sættes med
+<literal>Sloppy Focus</literal> - dvs. at fokus fÃ¸lger musen men at et vindue ikke mister
+fokus, nÃ¥r musen ryger ud pÃ¥ baggrunden - sÃ¦ttes med
 </para>
 
 <screen>
@@ -249,14 +249,14 @@ SloppyFocus
 
 
 <para>
-Man kan tilsyneladende ikke sætte <literal>click to focus</literal>.
+Man kan tilsyneladende ikke sÃ¦tte <literal>click to focus</literal>.
 </para>
 
 <para>
 Som default er der hverkan <literal>auto raise</literal> eller
-<literal>click to raise</literal>. Men man kan sænke et vindue ved at
-midterklikke på titelbaren.  Hvis et vindue automatisk skal komme
-forrest når det får fokus sættes <literal>AutoRaise</literal>.
+<literal>click to raise</literal>. Men man kan sÃ¦nke et vindue ved at
+midterklikke pÃ¥ titelbaren.  Hvis et vindue automatisk skal komme
+forrest nÃ¥r det fÃ¥r fokus sÃ¦ttes <literal>AutoRaise</literal>.
 Og evt. 
 </para>
 
@@ -265,7 +265,7 @@ RaiseDelay 100 #100 ms
 </screen>
 
 <para>
-Hvis man ikke bryder sig om auto raise kan man sætte
+Hvis man ikke bryder sig om auto raise kan man sÃ¦tte
 </para>
 
 <screen>
@@ -277,7 +277,7 @@ i stedet for.
 </para>
 
 <para>
-Prøv også "AutoSqueeze":
+PrÃ¸v ogsÃ¥ "AutoSqueeze":
 </para>
 
 <screen>
@@ -296,9 +296,9 @@ Advarsel: Denne feature er rigtig irriterende :-)
   <title>Workspaces/virtuelle skriveborde</title>
 <para>
 Der er per default 8 workspaces, som man skifter mellem ved at klikke i
-workspace manageren. Dette kan laves om i opsætningsfilen, ligesom
-man kan sætte genvejstaster op til at skifte workspace.
-Desuden kan man kan stille på baggrundsfarver, farver i workspace
+workspace manageren. Dette kan laves om i opsÃ¦tningsfilen, ligesom
+man kan sÃ¦tte genvejstaster op til at skifte workspace.
+Desuden kan man kan stille pÃ¥ baggrundsfarver, farver i workspace
 manageren etc.
 </para>
 
@@ -339,7 +339,7 @@ Genvejstaster til at skifte mellem workspaces:
   <title>Baggrundsfarver</title>
 
 <para>
-Lad os tage én linje fra forrige afsnit som eksempel:
+Lad os tage Ã©n linje fra forrige afsnit som eksempel:
 </para>
 
 <screen>
@@ -347,31 +347,31 @@ Lad os tage én linje fra forrige afsnit som eksempel:
 </screen>
 
 <para>
-Det første "white" og "black" angiver at workspace "One" skal vises som
+Det fÃ¸rste "white" og "black" angiver at workspace "One" skal vises som
 hvid med sort tekst i workspace manageren.
 </para>
 
 <para>
 "DeepSkyBlue3" angiver baggrundsfarven i selve workspacet. Derefter kan
-man skrive en farve (e.g "white") efterfulgt af en mønster (e.g plaid)
-eller et billede (e.g. <filename>xpm:~/horse_20l.xpm</filename>). I tilfælde af et mønster
-bruges farven som den anden farve i mønsteret. 
-Hvad "white" gør i sammenhæng med et billede har jeg ikke forstået, men
-det skal være der.
+man skrive en farve (e.g "white") efterfulgt af en mÃ¸nster (e.g plaid)
+eller et billede (e.g. <filename>xpm:~/horse_20l.xpm</filename>). I tilfÃ¦lde af et mÃ¸nster
+bruges farven som den anden farve i mÃ¸nsteret. 
+Hvad "white" gÃ¸r i sammenhÃ¦ng med et billede har jeg ikke forstÃ¥et, men
+det skal vÃ¦re der.
 </para>
 </sect2>    <!--   Baggrundsfarver -->
 
 <sect2  id="wm-ctwm-workspace-manager">
   <title>Workspace manageren</title>
 <para>
-Størrelse og placering kan angives med
+StÃ¸rrelse og placering kan angives med
 </para>
 <screen>
 workspacemanagergeometry        "360x60+60-0" 4
 </screen>
 
 <para>
-"4" fortæller at der skal være 4 workspaces i hver række.
+"4" fortÃ¦ller at der skal vÃ¦re 4 workspaces i hver rÃ¦kke.
 </para>
 
 <figure id="workspacemanager-fig" float="1">
@@ -380,13 +380,13 @@ workspacemanagergeometry        "360x60+60-0" 4
 </figure>
 
 <para>
-Workspace manageren kan sættes til at vise de vinduer der er i de
+Workspace manageren kan sÃ¦ttes til at vise de vinduer der er i de
 forskellige workspaces, i stedet for at vise den farve og tekst de er
-defineret til. Prøv at trykke ctrl imens workspace manageren har fokus.
-Hvis man holder ctrl nede imens man trækker musen udenfor workspace
+defineret til. PrÃ¸v at trykke ctrl imens workspace manageren har fokus.
+Hvis man holder ctrl nede imens man trÃ¦kker musen udenfor workspace
 manageren (helt over i et andet vindue hvis man bruger <literal>sloppy focus</literal>),
-så bliver det i "map state" som det kaldes. Gentag proceduren med ctrl
-for at få det tilbage til det oprindelige udseende.
+sÃ¥ bliver det i "map state" som det kaldes. Gentag proceduren med ctrl
+for at fÃ¥ det tilbage til det oprindelige udseende.
 </para>
 
 <figure id="inmapstate-fig" float="1">
@@ -396,14 +396,14 @@ for at få det tilbage til det oprindelige udseende.
 
 
 <para> 
-Sæt <literal>StartInMapState</literal>
+SÃ¦t <literal>StartInMapState</literal>
 ind i din <filename>.ctwmrc</filename> for at starte workspace manageren i <literal>map state</literal>.
 </para>
 
 <sect3  id="wm-ctwm-temaer">
   <title>Temaer</title>
 <para>
-Der findes en håndfuld temaer til ctwm der kan hentes på:
+Der findes en hÃ¥ndfuld temaer til ctwm der kan hentes pÃ¥:
 <ulink url="http://ctwm.dl.nu/#themes">http://ctwm.dl.nu/#themes</ulink>.
 </para>
 </sect3>    <!--   Temaer -->
@@ -417,7 +417,7 @@ Der findes en håndfuld temaer til ctwm der kan hentes på:
    </indexterm>
 
    <para>
-    Dokumentation kan findes på <ulink
+    Dokumentation kan findes pÃ¥ <ulink
     url="http://ctwm.dl.nu/#docs<">http://ctwm.dl.nu/#docs</ulink>
    </para>
   </sect3>    <!--   Dokumentation -->
@@ -427,7 +427,7 @@ Der findes en håndfuld temaer til ctwm der kan hentes på:
   <title>Hvad er det fede ved ctwm?</title>
 
   <para>
-   Det virker. Ikke så meget overflødig grafik. Det er twm plus alle
+   Det virker. Ikke sÃ¥ meget overflÃ¸dig grafik. Det er twm plus alle
    de ting man savnede (undtagen click to focus.)
   </para>
  </sect2>

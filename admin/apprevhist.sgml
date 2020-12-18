@@ -6,18 +6,18 @@
 
 <para>
 Igennem tiden har bogen "Linux &ndash; friheden til systemadministration"
-udviklet sig meget. Vi frigiver ofte nye versioner, når der er kommer
+udviklet sig meget. Vi frigiver ofte nye versioner, nÃ¥r der er kommer
 en del rettelser ind, eller nye afsnit er blevet skrevet.
 Kommentarer, ris og ros, og specielt fejl og mangler bedes sendt til
 <ulink url="mailto:linuxbog@sslug.dk">linuxbog@sslug.dk</ulink>, men
-er du medlem af SSLUG så skriv til <ulink
+er du medlem af SSLUG sÃ¥ skriv til <ulink
 url="mailto:sslug-bog@sslug.dk">sslug-bog@sslug.dk</ulink>. Her er en
-liste over, hvad der er ændret i bogen.
+liste over, hvad der er Ã¦ndret i bogen.
 </para>
 
 <para>
 Denne bog er skabt ud fra
-version 3.9 af "Linux &ndash; friheden til at vælge", som blev splittet
+version 3.9 af "Linux &ndash; friheden til at vÃ¦lge", som blev splittet
 i mindre dele.
 </para>
 
@@ -26,17 +26,17 @@ i mindre dele.
 <listitem><para>
 Version 2.8.20060113 - 2006-januar-13:
 
-Donald Axel: Retter afsnit med dødt link til Linuxcare CD og
-sørger for at det bliver mere generelt rescue teknik, som vises.
+Donald Axel: Retter afsnit med dÃ¸dt link til Linuxcare CD og
+sÃ¸rger for at det bliver mere generelt rescue teknik, som vises.
 </para>
 
 <para>
-Jacob Sparre Andersen: Retter sprog. Præciseret teksten om skyggeadgangskoder.
-Donald Axel retter døde links.
+Jacob Sparre Andersen: Retter sprog. PrÃ¦ciseret teksten om skyggeadgangskoder.
+Donald Axel retter dÃ¸de links.
 </para>
 
 <para>
-Hans Schou sætter Big Sister indholdsfortegnelse og skriver afsnittet om
+Hans Schou sÃ¦tter Big Sister indholdsfortegnelse og skriver afsnittet om
 <link linkend="nagios">Nagios</link>.
 </para>
 </listitem>
@@ -44,18 +44,18 @@ Hans Schou sætter Big Sister indholdsfortegnelse og skriver afsnittet om
 <listitem><para>
 Version 2.8 - 25. januar 2004:
 
-Henrik Christian Grove tilføjer et lille afsnit om at styre hvilke
-netkort en DHCP-server lytter på.
+Henrik Christian Grove tilfÃ¸jer et lille afsnit om at styre hvilke
+netkort en DHCP-server lytter pÃ¥.
 
 Jacob Sparre Andersen: Retter sprog.
 
 Peter Toft starter nyt kapitel om test af server-funktioner.
-Tiføjer flere links om "High Availability". Retter URL-fejl fundet 
-af Esben Rugbjerg. Fjerner gamle døde links i afsnit om Samba.
+TifÃ¸jer flere links om "High Availability". Retter URL-fejl fundet 
+af Esben Rugbjerg. Fjerner gamle dÃ¸de links i afsnit om Samba.
 
-Henning Schou retter en sproglig bøf.
+Henning Schou retter en sproglig bÃ¸f.
 
-Niels Jalling fanger problem med Mailman opsætningen.
+Niels Jalling fanger problem med Mailman opsÃ¦tningen.
 
 </para></listitem>
 
@@ -63,18 +63,18 @@ Niels Jalling fanger problem med Mailman opsætningen.
 Version 2.7 - 7. oktober 2003:
 
 Henrik Grove forbedrer en reference.
-Peter Toft tilføjer nyt afsnit om hvordan man 
+Peter Toft tilfÃ¸jer nyt afsnit om hvordan man 
 redder en forsvundet partitionstabel samt nyt afsnit om mailman som anvendes
 til at lave postlister.
 
 Rasmus Terkelsen fanger en tastefejl.
 
-Jacob Sparre Andersen: Indsætter afsnit om at finde versionsoplysninger på Debian- og Red Hat-systemer. Retter nogle sproglige fejl. Udvider stikordsregistret en smule. Gjort opmærksom på at Leafnode er med i Debian.
+Jacob Sparre Andersen: IndsÃ¦tter afsnit om at finde versionsoplysninger pÃ¥ Debian- og Red Hat-systemer. Retter nogle sproglige fejl. Udvider stikordsregistret en smule. Gjort opmÃ¦rksom pÃ¥ at Leafnode er med i Debian.
 Henrik Grove retter en fejl om quotaon.
 
-Peter Toft retter et par småting og opdaterer lidt i DHCP-afsnittet grundet nye parametre.
+Peter Toft retter et par smÃ¥ting og opdaterer lidt i DHCP-afsnittet grundet nye parametre.
 
-Troels Arvin retter en "make" bøf.
+Troels Arvin retter en "make" bÃ¸f.
 
 </para></listitem>
 
@@ -83,25 +83,25 @@ Troels Arvin retter en "make" bøf.
 Version 2.6 - 6. april 2003:
 Peter Toft om test af mail-server.
 Niels Elgaard Larsen har lavet nyt afsnit om at
-få en Linux-maskine til at være stille.
+fÃ¥ en Linux-maskine til at vÃ¦re stille.
 Jacob Sparre Andersen - skrevet om <command>mknod</command>.
-Erik Søe Sørensen retter sprog.
-Keld Simonsen starter nyt kapitel om måling med MRTG.
+Erik SÃ¸e SÃ¸rensen retter sprog.
+Keld Simonsen starter nyt kapitel om mÃ¥ling med MRTG.
 </para></listitem>
 
 
 
 <listitem><para>
 Version 2.6 - 1. december 2002:
-Svante Vinther har rettet Samba-opsætning så æøå virker fra Windows-klient.
+Svante Vinther har rettet Samba-opsÃ¦tning sÃ¥ Ã¦Ã¸Ã¥ virker fra Windows-klient.
 Jacob Sparre Andersen: Skrevet mere om <command>dig</command>.
 Peter Toft: Lidt opdateret mht. SuSE. Opdatering om SMTP-forward 
 under Postfix. Mere om migrering af ext2 til ext3.
-Poul-Erik Hansen redigerer afsnit om DHCP-server og tilføjer
+Poul-Erik Hansen redigerer afsnit om DHCP-server og tilfÃ¸jer
 information om at drive mere end en DHCP-server i nettet.
 Keld Simonsen retter et par sproglige fejl.
-Claus Boje tilføjer mere information om mii-diag.
-Keld Simonsen tilføjer mere information om LTSP.
+Claus Boje tilfÃ¸jer mere information om mii-diag.
+Keld Simonsen tilfÃ¸jer mere information om LTSP.
 </para></listitem>
 
 <listitem><para>
@@ -111,29 +111,29 @@ Henrik Skov Midtiby retter en masse fejl.
 
 Jesper Norskov Kristensen retter et par fejl.
 
-Hans Schou har tilføjet noget om syslog-remote og postfix-virtual.
+Hans Schou har tilfÃ¸jet noget om syslog-remote og postfix-virtual.
 
 Jacob Sparre Andersen - Harmoniseret brugen af <command>tar</command>.
 Udbedret logiske fejl i SGML-koden. Udbygget omtalen af `badblocks`
 med lidt om Linuxcares "bootable business card" og lidt ekstra om
-hvordan man finder ud af hvad man har af filsystemer på sin maskine.
+hvordan man finder ud af hvad man har af filsystemer pÃ¥ sin maskine.
 
-Keld Simonsen tilføjer kapitel om tynde klienter - se <xref
+Keld Simonsen tilfÃ¸jer kapitel om tynde klienter - se <xref
 linkend="tynde-klienter"/>.
 
 Peter Toft: Retter "rpm --rebuild" til "rpmbuild --rebuild" efter
 input fra Red Hat. Link til www.LinuxVirtualServer.org ind. Flyttet
 afsnit om procmail til unix-bogen. Oprettet nyt kapitel om
 e-post-servere.  Har skrevet nyt afsnit om <command>at</command> til
-at køre kommandoer på givne tidspunkter - inspireret af input fra
+at kÃ¸re kommandoer pÃ¥ givne tidspunkter - inspireret af input fra
 Henrik Christian Grove.
 
-Morten Liljeberg tilføjer afsnit om exim.
+Morten Liljeberg tilfÃ¸jer afsnit om exim.
 
-Roy Sigurd Karlsbakk retter kommando til at lave RAID-opsætning.
+Roy Sigurd Karlsbakk retter kommando til at lave RAID-opsÃ¦tning.
 
-Henrik Christian Grove har påbegyndt et kapitel om netværksovervågning
-med et afsnit om opsætning af Big Sister.
+Henrik Christian Grove har pÃ¥begyndt et kapitel om netvÃ¦rksovervÃ¥gning
+med et afsnit om opsÃ¦tning af Big Sister.
 </para></listitem>
 
 <listitem><para>
@@ -143,32 +143,32 @@ se <xref linkend="chroot-dns"/>.
 Mere om lm_sensors fra Anna Jonna Armannsdottir.
 Peter Toft: Nyt afsnit om rsync - se <xref linkend="rsync"/>. 
 Link til SAMBA PDC-artikel. Har skrevet nyt om lsof, og 
-andre måder til at klare problemer med lås af filsystemer - dette er
-direkte inspireret af Ole Tange og Mogens Kjærs indlæg på sslug-misc@sslug.dk.
-Ole Tange opdaterer afsnit om Postfix og tilføjer afsnit om af 
+andre mÃ¥der til at klare problemer med lÃ¥s af filsystemer - dette er
+direkte inspireret af Ole Tange og Mogens KjÃ¦rs indlÃ¦g pÃ¥ sslug-misc@sslug.dk.
+Ole Tange opdaterer afsnit om Postfix og tilfÃ¸jer afsnit om af 
 fejlfinde programmer - se <xref linkend="fejlfinding"/>.
 Peter Toft: Ud med afsnit om ISC DHCP version 2.
 Morten Christensen har skrevet en del mere om styring af cron-jobs med crontab.
 Henrik Christian Grove har omstrukturet Sambakapitlet.
 Svend Erik Venstrup og Hans Christian Andersen fanger fejl.
-Jacob Sparre Andersen: Rettet sproglige småfejl.
+Jacob Sparre Andersen: Rettet sproglige smÃ¥fejl.
 </para></listitem>
 
 <listitem><para> 
 Version 2.3 - 10. marts 2002:
-Ny licens for bogen - Åben dokumentlicens.
-Hanne Munkholm har skrevet en meget nyttig vejledning til håndtering
-af defekte blokke på harddisken.
+Ny licens for bogen - Ã…ben dokumentlicens.
+Hanne Munkholm har skrevet en meget nyttig vejledning til hÃ¥ndtering
+af defekte blokke pÃ¥ harddisken.
 Jesper Krogh skriver mere om procmail.
-Michael Rasmussen: Tilføjet afsnit om Dynamisk DNS fra Kristian Vilmann.
+Michael Rasmussen: TilfÃ¸jet afsnit om Dynamisk DNS fra Kristian Vilmann.
 Claus Boje og Peter Toft: Mere om rpm-kommandoer.
 Rasmus Laursen retter fra insmod til modprobe.
-Peter Toft: Skrevet en del nyt om kerne-oversættelse. Tilføjet link
-til artikel om tråde og processer. Har skrevet nyt afsnit om lm_sensors
-til måling af CPU-temperatur.
-Christian Treldal tilføjelse med tar-kommandoen
+Peter Toft: Skrevet en del nyt om kerne-oversÃ¦ttelse. TilfÃ¸jet link
+til artikel om trÃ¥de og processer. Har skrevet nyt afsnit om lm_sensors
+til mÃ¥ling af CPU-temperatur.
+Christian Treldal tilfÃ¸jelse med tar-kommandoen
 En stribe nye stikord fra Svend Erik Venstrup.
-Kim Futtrup Petersen bidrager med opdaterede billeder af kerneoversættelse.
+Kim Futtrup Petersen bidrager med opdaterede billeder af kerneoversÃ¦ttelse.
 </para></listitem>
 
 
@@ -176,12 +176,12 @@ Kim Futtrup Petersen bidrager med opdaterede billeder af kerneoversættelse.
 Version 2.2 - 29. december 2001:
 Lars K. Schunk har lavet mange hundrede sproglige rettelser i
 hele bogen - en stor indsats!
-Jacob Sparre Andersen: Sproglige smårettelser.
+Jacob Sparre Andersen: Sproglige smÃ¥rettelser.
 Peter Rasmussen retter omkring xdm.
-Svend Erik Venstrup finder en dum slåfejl og masser af nye stikord.
-Peter Toft har tilføjet lidt 
+Svend Erik Venstrup finder en dum slÃ¥fejl og masser af nye stikord.
+Peter Toft har tilfÃ¸jet lidt 
 om "High Availablity", mii-tool, LDAP, date og 
-hvordan man tilføjer brugere og har 
+hvordan man tilfÃ¸jer brugere og har 
 sammen med Torkil Zachariassen skrevet nyt afsnit om styring af diskforbrug 
 med quota.
 Peter Toft inspireret af Hanne Munkholm; links til mere info om kickstart.
@@ -190,38 +190,38 @@ Peter Toft inspireret af Hanne Munkholm; links til mere info om kickstart.
 <listitem><para> 
 Version 2.1 - 21. oktober 2001:
 Peter Toft: Nyt om tidszone-valg og links til gode referencer om 
-opsætningsfilerne i <filename>/etc</filename> Nyt afsnit om DPMS.
-Lidt mere om ftp-server. Rettet op på NFS-afsnit om tilføjet nyt om 
+opsÃ¦tningsfilerne i <filename>/etc</filename> Nyt afsnit om DPMS.
+Lidt mere om ftp-server. Rettet op pÃ¥ NFS-afsnit om tilfÃ¸jet nyt om 
 "showmount". Afsnit om GPG flyttet til unix-bogen.
-Nyt afsnit om opgradering af kernen, inspireret af Mogens Kjær og Henrik 
-Størners diskussion på sslug-teknik.
-Lidt om søg-og-erstat i filer (inspireret af Kristian Vilmann).
-Kim Futtrup Petersen har tilføjet rettelse i Samba afsnit om dansk tegnsæt 
+Nyt afsnit om opgradering af kernen, inspireret af Mogens KjÃ¦r og Henrik 
+StÃ¸rners diskussion pÃ¥ sslug-teknik.
+Lidt om sÃ¸g-og-erstat i filer (inspireret af Kristian Vilmann).
+Kim Futtrup Petersen har tilfÃ¸jet rettelse i Samba afsnit om dansk tegnsÃ¦t 
 for Windows 2000.
-Henrik Størner har skrevet lidt om opstart af Linux.
+Henrik StÃ¸rner har skrevet lidt om opstart af Linux.
 Jacob Sparre Andersen: Rettet enheder til (MHz = megahertz, Mbit = megabit,
 Mb = megabyte). Rettet lidt sprog.
 Martin Egholm Nielsen fandt en dum trykfejl.
 Anna Jonna Armannsdottir har bidraget med kerne-config-fil til eksempel 
-på <filename>/usr/src/linux/.config</filename>.
+pÃ¥ <filename>/usr/src/linux/.config</filename>.
 Lars K. Schunk har lavet mange sproglige rettelser.
-Michael Lerskov Munk Nielsen har lavet en tilføjelse angående DHCP-server
-for maskine med to netkort, hvor man kun ønsker at tildele IP-adresser
-til det ene netværk.
-Leo Laursen har givet et smart procmail-filter til at afsløre 
+Michael Lerskov Munk Nielsen har lavet en tilfÃ¸jelse angÃ¥ende DHCP-server
+for maskine med to netkort, hvor man kun Ã¸nsker at tildele IP-adresser
+til det ene netvÃ¦rk.
+Leo Laursen har givet et smart procmail-filter til at afslÃ¸re 
 potentielle post-vira.
 </para></listitem>
 
 <listitem><para> 
 Version 2.0 - 11. august 2001:
-Christian Jørgensen fanger en trykfejl.
-Peter Toft: trykfejl. Har flyttet afsnit om grafiske system-værktøjer
-til "Linux - friheden til at vælge". Har opdateret afsnit om hdparm,
-så man kan få mere tryk på UDMA66 IDE-diske.
+Christian JÃ¸rgensen fanger en trykfejl.
+Peter Toft: trykfejl. Har flyttet afsnit om grafiske system-vÃ¦rktÃ¸jer
+til "Linux - friheden til at vÃ¦lge". Har opdateret afsnit om hdparm,
+sÃ¥ man kan fÃ¥ mere tryk pÃ¥ UDMA66 IDE-diske.
 Gunner Poulsen, 
 Lars Scheele Jensen og Michael Rasmussen har hjulpet til med dette.
-Henrik Størner har givet lov til at inddrage hans vejledning 
-<ulink url="http://www.sslug.dk/rpm/build.html">http://www.sslug.dk/rpm/build.html</ulink> i at bygge RPM-pakker. Peter Toft har tilføjet 
+Henrik StÃ¸rner har givet lov til at inddrage hans vejledning 
+<ulink url="http://www.sslug.dk/rpm/build.html">http://www.sslug.dk/rpm/build.html</ulink> i at bygge RPM-pakker. Peter Toft har tilfÃ¸jet 
 afsnit skrevet af Kristian Vilmann (fra sslug-teknik) 
 om at bygge RPM ud fra kilde-RPM-filer.
 </para>
@@ -231,12 +231,12 @@ om at bygge RPM ud fra kilde-RPM-filer.
 Version 1.9 - 9. juli 2001:
 Peter Toft: conf.modules -> modules.conf i kerne-afsnit. Lidt om
 dynamisk DNS/DHCP.
-Atte André Jensen: ombytning af parametre til ncftpput.
+Atte AndrÃ© Jensen: ombytning af parametre til ncftpput.
 Jesper Krogh: Nyt afsnit om NTP.
-Owen Brotherwood: Advarsel mod flere DHCP-servere i samme netværk
-tilføjet.
-E. Sjørlund tilføjer mere om fetchmail.
-Erik Søe Sørensen og Claus Hindsgaul: Sproglige ændringer.
+Owen Brotherwood: Advarsel mod flere DHCP-servere i samme netvÃ¦rk
+tilfÃ¸jet.
+E. SjÃ¸rlund tilfÃ¸jer mere om fetchmail.
+Erik SÃ¸e SÃ¸rensen og Claus Hindsgaul: Sproglige Ã¦ndringer.
 Kim Hermansen: Placering af Samba password-fil.
 Ole Tange fangede en stribe format-fejl.
 </para>
@@ -247,76 +247,76 @@ Ole Tange fangede en stribe format-fejl.
 Version 1.8 - 24. maj 2001:
 Peter Toft: Mindre rettelser i DHCP-afsnit. Rod i hvad Red Hat 7.0
 skal have.
-Erling Sjørlund retter til så leafnode under SuSE 6.4 er beskrevet bedre.
+Erling SjÃ¸rlund retter til sÃ¥ leafnode under SuSE 6.4 er beskrevet bedre.
 Mere om kerne 2.4 problemer med at se alle hjemmesider.
-Jacob Sparre Andersen: Rettet en henvisning i wget-afsnittet på opfordring af
+Jacob Sparre Andersen: Rettet en henvisning i wget-afsnittet pÃ¥ opfordring af
 Svend Erik Venstrup.
 Mindre rettelser fra Svend Erik Venstrup.
-Magnus Østergaard forbedrer teksten omkring DHCP-serveren.
-Erik Søe Sørensen retter et par fejl om kerne 2.4.
+Magnus Ã˜stergaard forbedrer teksten omkring DHCP-serveren.
+Erik SÃ¸e SÃ¸rensen retter et par fejl om kerne 2.4.
 Rasmus Laursen laver nyt afsnit om devfs (kerne 2.4-devices).
-Peter Seidler og Thorbjørn Ravn Andersen retter indhold om kerne 2.4.
+Peter Seidler og ThorbjÃ¸rn Ravn Andersen retter indhold om kerne 2.4.
 </para>
 </listitem>
 
 <listitem><para> 
 Version 1.7 - 15. april 2001:
 Peter Toft: Sproglige rettelser. Har flyttet afsnittet om slrn til
-"Linux - Friheden til at vælge".
-Smårettelser af Erik Søe Sørensen og Frank Damgaard.
-Erling Sjørlund har tilføjet lidt mere om Samba.
-Mindre eksempel på DNS er tilføjet til eksempel-filerne.
+"Linux - Friheden til at vÃ¦lge".
+SmÃ¥rettelser af Erik SÃ¸e SÃ¸rensen og Frank Damgaard.
+Erling SjÃ¸rlund har tilfÃ¸jet lidt mere om Samba.
+Mindre eksempel pÃ¥ DNS er tilfÃ¸jet til eksempel-filerne.
 </para>
 </listitem>
 
 
 <listitem><para>
 Version 1.6 - 12. marts 2001: 
-Forlaget IDG har bidraget med professionel korrekturlæsning af hele
+Forlaget IDG har bidraget med professionel korrekturlÃ¦sning af hele
 bogen, som Peter Toft har rettet op. Dette har betydet et markant
-sprogligt løft af bogen. Afsnit om pakke-formater er flyttet fra
-"Linux - Friheden til at vælge" til denne bog. Kim Futtrup Petersen
-har skrevet om nye Ximian sysadm-værktøjer - Peter Toft har
-tilsvarende skrevet om tilsvarende KDE 2.1 værktøjer. Nyt kapitel :-)
-Jørgen Ramskov og Jacob Sparre Andersen har rettet sprog.
+sprogligt lÃ¸ft af bogen. Afsnit om pakke-formater er flyttet fra
+"Linux - Friheden til at vÃ¦lge" til denne bog. Kim Futtrup Petersen
+har skrevet om nye Ximian sysadm-vÃ¦rktÃ¸jer - Peter Toft har
+tilsvarende skrevet om tilsvarende KDE 2.1 vÃ¦rktÃ¸jer. Nyt kapitel :-)
+JÃ¸rgen Ramskov og Jacob Sparre Andersen har rettet sprog.
 Carsten Svaneborg har rettet afsnit om system-opstart til.
-Claus Sørensen har lavet mange gode rettelser i netværks- og
-server-kapitlerne, samt tilføjet nyt om Midnight Commander til at
-hente fra ftp-servere.  Hans Schou har tilføjet flere stikord.  Henrik
-Christian Grove fandt en dum trykfejl i oversigt over bøger.  Kasper
-Hauge fandt en Red Hat 7.0 fejl.  Erik Søe Sørensen kom med en god
-stribe rettelser.  Kapitlet om cd-rom-brænding flyttet til "Linux -
-friheden til at vælge programmer".  
+Claus SÃ¸rensen har lavet mange gode rettelser i netvÃ¦rks- og
+server-kapitlerne, samt tilfÃ¸jet nyt om Midnight Commander til at
+hente fra ftp-servere.  Hans Schou har tilfÃ¸jet flere stikord.  Henrik
+Christian Grove fandt en dum trykfejl i oversigt over bÃ¸ger.  Kasper
+Hauge fandt en Red Hat 7.0 fejl.  Erik SÃ¸e SÃ¸rensen kom med en god
+stribe rettelser.  Kapitlet om cd-rom-brÃ¦nding flyttet til "Linux -
+friheden til at vÃ¦lge programmer".  
 </para></listitem>
 
 <listitem><para>
 Version 1.5 - 4. februar 2001: 
-Peter Toft: Ny bog om Docbook nævnt i serien. 
-Større omrokeringer af afsnit, så det blev mere logisk.
+Peter Toft: Ny bog om Docbook nÃ¦vnt i serien. 
+StÃ¸rre omrokeringer af afsnit, sÃ¥ det blev mere logisk.
 Har skrevet om proc-filsystemet og kerne 2.4. 
-Rettelser i flere omgange fra Donald Axel, Jørgen Ramskov og  Asbjørn Laurberg.
+Rettelser i flere omgange fra Donald Axel, JÃ¸rgen Ramskov og  AsbjÃ¸rn Laurberg.
 Nyt kapitel om Linux-kernen. Anvender dele fra "the
 Linux way", som er skrevet af Hanne Munkholm et al.
 Rykket TCP/IP+DNS-afsnit til hver sit nye kapitel, og firewall-afsnit
-vil senere blive integreret i bogen "Linux - Friheden til sikkerhed på internettet".
-Tommy Mogensen fandt en sprogbøf.
+vil senere blive integreret i bogen "Linux - Friheden til sikkerhed pÃ¥ internettet".
+Tommy Mogensen fandt en sprogbÃ¸f.
 Troels Liebe Bentsen forbedrer billeder.
 Poul Petersen har lavet rigtig mange sproglige opdateringer til 
-afsnittet om dørvogtere over flere omgange.
+afsnittet om dÃ¸rvogtere over flere omgange.
 Flyttet kapitel om emulatorer til applikations-bogen.
 Jacob Sparre Andersen: Rettet diverse sproglige fejl over flere omgange.
 Christian Rasmussen har rettet et par fejl op i DNS-kapitlet.
-Claus Sørensen har skrevet afsnit om Linux som ring-ind-server og 
-om sikkerhedskopiering. Claus har også lavet korrekturlæsning på 
+Claus SÃ¸rensen har skrevet afsnit om Linux som ring-ind-server og 
+om sikkerhedskopiering. Claus har ogsÃ¥ lavet korrekturlÃ¦sning pÃ¥ 
 mange af de nye afsnit.
 </para></listitem>
 
 
 <listitem> <para>
 Version 1.4 - 29. december 2000:
-Flyttet afsnit om MP3 til "Linux - friheden til at vælge
+Flyttet afsnit om MP3 til "Linux - friheden til at vÃ¦lge
 applikationer".
-Magnus Østergaard har lavet tilføjelse til DHCP-server om 
+Magnus Ã˜stergaard har lavet tilfÃ¸jelse til DHCP-server om 
 "option domain-name" og "option domain-name-servers".
 Link til den nye bog "Linux - friheden til at programmere i C".
 </para>
@@ -333,10 +333,10 @@ Christian Rasmussen har revideret hele afsnittet om TCP/IP og
 introduktionen til DNS.
 Sproglige rettelser fra Frank Damgaard.
 Ekstra om kommandoen pidof - tak til Morten Christensen, Erik
-Sørensen, Jesper Krogh, Gitte Wange, Emil S Hansen og  Jakob Hilmer.
+SÃ¸rensen, Jesper Krogh, Gitte Wange, Emil S Hansen og  Jakob Hilmer.
 Navne og servernavne er lavet om efter utallige opfordringer.
-Jesper Krogh har tilføjet mere om at brænde en cd-rom.
-Peter Frederiksen har tilføjet lidt mere om RAID.
+Jesper Krogh har tilfÃ¸jet mere om at brÃ¦nde en cd-rom.
+Peter Frederiksen har tilfÃ¸jet lidt mere om RAID.
 En bunke sproglige rettelser fra Jacob Sparre Andersen
 (bl.a. password->adgangskode).
 </para>
@@ -344,17 +344,17 @@ En bunke sproglige rettelser fra Jacob Sparre Andersen
 
 <listitem> <para>Version 1.1 - 30. august 2000: Mindre rettelse i
 Samba-afsnittet fra Michael Rasmussen.  Fejl rettet mht. hvor man kan
-hente de firewall-scripts som nævnes i teksten. Tak til Alex K også
-for fejl i RPM-fil til NFS.  Poul Petersen har lavet en lang række
-sproglige rettelser.  Nyt afsnit om at brænde cd-rom oversat af Gert
-Holtoft.  Peter Lund har filføjet lidt mere om harddisk tuning (-k1 og
+hente de firewall-scripts som nÃ¦vnes i teksten. Tak til Alex K ogsÃ¥
+for fejl i RPM-fil til NFS.  Poul Petersen har lavet en lang rÃ¦kke
+sproglige rettelser.  Nyt afsnit om at brÃ¦nde cd-rom oversat af Gert
+Holtoft.  Peter Lund har filfÃ¸jet lidt mere om harddisk tuning (-k1 og
 brug af noatime).
 </para>
 </listitem>
 
 <listitem> <para> Version 1.0 - 30. juli 2000:
 Jesper Krogh har skrevet om nyhedsserveren Leafnode og om
-nyhedslæseren slrn.
+nyhedslÃ¦seren slrn.
 Afsnittet om AppleTalk er lavet Anders Brownworth, og
 Kim Futtrup Petersen har oversat og bearbejdet teksten.
 Poul Petersen har lavet sproglige rettelser.

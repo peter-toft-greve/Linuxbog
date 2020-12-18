@@ -6,21 +6,21 @@
 <indexterm><primary>Tekstbehandling</primary><secondary>Microsoft 
 Word</secondary></indexterm>
 <para>
-Standarden inden for tekstbehandling sættes i dag af Microsoft
-Word. Det skyldes dels, at Word teknologisk set er førende på de fleste 
-områder, men især
-også, at der er så mange, der bruger Word, at Word's dokument&shy;format  
+Standarden inden for tekstbehandling sÃ¦ttes i dag af Microsoft
+Word. Det skyldes dels, at Word teknologisk set er fÃ¸rende pÃ¥ de fleste 
+omrÃ¥der, men isÃ¦r
+ogsÃ¥, at der er sÃ¥ mange, der bruger Word, at Word's dokument&shy;format  
 i praksis er en defacto-standard til udveksling af 
 tekst&shy;behandlings&shy;dokumenter.
 </para>
 
 <para>
-Netop derfor bliver et af de primære beslutnings&shy;parametre ved valget
-af et frit program til tekstbehandling, om programmet understøtter
-Words filformat. Det er selvfølgelig underordnet, hvis du lever i en
-fuldstændig fri verden, hvor alle dine venner og dine
+Netop derfor bliver et af de primÃ¦re beslutnings&shy;parametre ved valget
+af et frit program til tekstbehandling, om programmet understÃ¸tter
+Words filformat. Det er selvfÃ¸lgelig underordnet, hvis du lever i en
+fuldstÃ¦ndig fri verden, hvor alle dine venner og dine
 forretningsforbindelse sender tekst i ASCII-format, men det er jo
-trods alt de færreste af os, som gør ;o).
+trods alt de fÃ¦rreste af os, som gÃ¸r ;o).
 </para>
 
 <indexterm><primary>Tekstbehandling</primary><secondary>Forskellige
@@ -29,7 +29,7 @@ muligheder</secondary></indexterm>
 <para>
 Der er mange frie og grafiske programmer til tekstbehandling for
 eksempel KWord fra KDE og AbiWord som er en del af Gnome, som det bliver
-interessant at følge udviklingen af, men der er desværre endnu noget
+interessant at fÃ¸lge udviklingen af, men der er desvÃ¦rre endnu noget
 tid til, at disse programmer bliver relle alternativer til Microsoft
 Word.
 </para>
@@ -41,50 +41,50 @@ Word.
 <para>
 Derimod er kontorpakkerne StarOffice (closed source) og OpenOffice.org 
 (Open Source) mere interessante som direkte 
-alternativer, da de har væsentlig bedre understøttelse af Word og de 
+alternativer, da de har vÃ¦sentlig bedre understÃ¸ttelse af Word og de 
 andre kontor&shy;dokument&shy;formater fra Microsoft.
 </para>
 
 <para>
-OpenOffice.org er udviklet oven på den del af kildeteksten fra StarOffice, 
+OpenOffice.org er udviklet oven pÃ¥ den del af kildeteksten fra StarOffice, 
 som Sun havde mulighed for at frigive under Open Source i oktober 2000.
-OpenOffice.org er dobbeltlicenseret under både LGPL og SISSL, hvor den 
-sidstnævnte gør det muligt for Sun at bruge OpenOffice.org kildeteksten 
+OpenOffice.org er dobbeltlicenseret under bÃ¥de LGPL og SISSL, hvor den 
+sidstnÃ¦vnte gÃ¸r det muligt for Sun at bruge OpenOffice.org kildeteksten 
 som basis for kommende udgaver af den lukkede kontorpakke StarOffice.
 </para>
 
 <para>
-StarOffice er ikke længere gratis, men OpenOffice.org er derimod under en 
-Open Source-licens, så den vil vedblive med at være frit tilgængelig.
+StarOffice er ikke lÃ¦ngere gratis, men OpenOffice.org er derimod under en 
+Open Source-licens, sÃ¥ den vil vedblive med at vÃ¦re frit tilgÃ¦ngelig.
 </para>
 
 <para>
 OpenOffice.org og StarOffice 6.0 findes til Windows, 
 Linux/Intel, Linux/PowerPC og Solaris. 
-OpenOffice.org arbejder dog også på at få udviklet udgaver til 
-(listet efter færdighedsgrad): Mac OSX, Linux/Alpha, Linux/Arm, Irix, 
+OpenOffice.org arbejder dog ogsÃ¥ pÃ¥ at fÃ¥ udviklet udgaver til 
+(listet efter fÃ¦rdighedsgrad): Mac OSX, Linux/Alpha, Linux/Arm, Irix, 
 FreeBSD, Tru64, NetBSD/Sparc, OS/2, VMS og BeOS.</para>
 
 <para>
 Dermed har vi ikke taget stilling til det fornuftige i, at
 Word-formatet er de facto-standarden. Faktisk finder vi det
-overordentlig uheldigt, at et proprietært og lukket filformat som
-Word-formatet kan fungere som en de facto-standard, da det jo står
-Microsoft frit til enhver tid at ændre filformatet. Men sådan er den
-verden vi lever i, og OpenOffice.org er et godt bud på at omgå dette.
+overordentlig uheldigt, at et proprietÃ¦rt og lukket filformat som
+Word-formatet kan fungere som en de facto-standard, da det jo stÃ¥r
+Microsoft frit til enhver tid at Ã¦ndre filformatet. Men sÃ¥dan er den
+verden vi lever i, og OpenOffice.org er et godt bud pÃ¥ at omgÃ¥ dette.
 </para>
 
 <sect1 id="starwriter-gui">
-<title>Brugergrænseflade</title>
+<title>BrugergrÃ¦nseflade</title>
 
 <indexterm>
  <primary>Tekstbehandling</primary>
- <secondary>Brugergrænseflade</secondary> 
+ <secondary>BrugergrÃ¦nseflade</secondary> 
 </indexterm>
 
 <para>
-Det første, du bemærker, hvis du kommer til OpenOffice.org 
-med en Microsoft-baggrund, er, hvor meget brugergrænsefladen ligner den i
+Det fÃ¸rste, du bemÃ¦rker, hvis du kommer til OpenOffice.org 
+med en Microsoft-baggrund, er, hvor meget brugergrÃ¦nsefladen ligner den i
 Microsoft Office.
 </para>
 
@@ -93,15 +93,15 @@ Microsoft Office.
 <graphic fileref="OOoWriter_look.&magic;" scale="50"></graphic>
 </figure>
 
-<indexterm><primary>Tekstbehandling</primary><secondary>Værktøjeslinjer</secondary></indexterm>
+<indexterm><primary>Tekstbehandling</primary><secondary>VÃ¦rktÃ¸jeslinjer</secondary></indexterm>
 
 <para>
-Det gælder såvel for ikonerne som for de genvejstaster, som du er
+Det gÃ¦lder sÃ¥vel for ikonerne som for de genvejstaster, som du er
 vant til fra Microsoft Word.
 </para>
 
 <figure id="openoffice-toolbar-fig" float="1">
-<title>Værktøjslinje i OpenOffice.org</title>
+<title>VÃ¦rktÃ¸jslinje i OpenOffice.org</title>
 <graphic fileref="OOoWriter_toolbar.&magic;" scale="50"></graphic>
 </figure>
 
@@ -115,13 +115,13 @@ vant til fra Microsoft Word.
 </listitem>
 <listitem>
  <para>
-"Ny(t)" (Ctrl+N) Nyt tekstdokument. Hvis du holder ikonet nede, får du mulighed
- for at vælge andre typer af dokumenter for eksempel regneark.
+"Ny(t)" (Ctrl+N) Nyt tekstdokument. Hvis du holder ikonet nede, fÃ¥r du mulighed
+ for at vÃ¦lge andre typer af dokumenter for eksempel regneark.
  </para>
 </listitem>
 <listitem>
  <para>
-"Åbn fil" (Ctrl+O) Åbn et eksisterende dokument.
+"Ã…bn fil" (Ctrl+O) Ã…bn et eksisterende dokument.
  </para>
 </listitem>
 <listitem>
@@ -132,7 +132,7 @@ vant til fra Microsoft Word.
 <listitem>
  <para>
 "Udskriv fil direkte" (Ctrl+P, Enter) Udskriv dokumentet. Genvejstasten Ctrl+P
- åbner et vindue, hvor du kan for eksempel kan vælge hvordan, dokumentet skal
+ Ã¥bner et vindue, hvor du kan for eksempel kan vÃ¦lge hvordan, dokumentet skal
  udskrives.
  </para>
 </listitem>
@@ -148,18 +148,18 @@ vant til fra Microsoft Word.
 </listitem>
 <listitem>
  <para>
-"Sæt ind" (Ctrl+V) Indsæt det, som tidligere er fjernet eller markeret.
+"SÃ¦t ind" (Ctrl+V) IndsÃ¦t det, som tidligere er fjernet eller markeret.
  </para>
 </listitem>
 <listitem>
  <para>
-"Fortryd" (Ctrl+Z) Fortryd seneste handling. Hvis du holder ikonet nede, kan du vælge
+"Fortryd" (Ctrl+Z) Fortryd seneste handling. Hvis du holder ikonet nede, kan du vÃ¦lge
  hvilke handlinger (evt. flere), som du vil fortryde.
  </para>
 </listitem>
 <listitem>
  <para>
-"Gendan" (-) Genindfør fortrudte handlinger.
+"Gendan" (-) GenindfÃ¸r fortrudte handlinger.
  </para>
 </listitem>
 <listitem> 
@@ -175,22 +175,22 @@ vant til fra Microsoft Word.
 </listitem>
 <listitem> 
  <para>
-"Hyperlink-dialog" (-) Åbner dialogboks til at indsætte hyperlænker.
+"Hyperlink-dialog" (-) Ã…bner dialogboks til at indsÃ¦tte hyperlÃ¦nker.
  </para>
 </listitem>
 <listitem> 
  <para>
-<!-- Kommentar fra Claus Sørensen: 
+<!-- Kommentar fra Claus SÃ¸rensen: 
    Gallery er ikke oversat i til dansk endnu. 
 -->
-"Gallery" (-) Åbner for galleriet med illustrationer
+"Gallery" (-) Ã…bner for galleriet med illustrationer
  </para>
 </listitem>
 </itemizedlist>
 
 
 <figure id="openoffice-toolbar-format-fig" float="1">
-<title>Værktøjslinje i OpenOffice.org (fortsat)</title>
+<title>VÃ¦rktÃ¸jslinje i OpenOffice.org (fortsat)</title>
 <graphic fileref="OOoWriter_toolbar_format.&magic;" scale="50"></graphic>
 </figure>
 
@@ -222,7 +222,7 @@ vant til fra Microsoft Word.
 </listitem>
 <listitem>
  <para>
-"Højrejusteret" (Ctrl+R) Højrestil linjen eller det markede.
+"HÃ¸jrejusteret" (Ctrl+R) HÃ¸jrestil linjen eller det markede.
  </para>
 </listitem>
 <listitem>
@@ -247,22 +247,22 @@ vant til fra Microsoft Word.
 </listitem>
 <listitem>
  <para>
-"Forøg indrykning" (-) Forøg indrykning
+"ForÃ¸g indrykning" (-) ForÃ¸g indrykning
  </para>
 </listitem>
 <listitem>
  <para>
-"Tegnfarve" (-) Ændre farve på markeret tekst.
+"Tegnfarve" (-) Ã†ndre farve pÃ¥ markeret tekst.
  </para>
 </listitem>
 <listitem> 
  <para>
-"Tegnbaggrund" (-) Vælg farve på baggrunden til markeret tekst.
+"Tegnbaggrund" (-) VÃ¦lg farve pÃ¥ baggrunden til markeret tekst.
  </para>
 </listitem>
 <listitem>
  <para>
-"Afsnitsbaggrund" (-) Vælg farve på baggrunden for afsnittet.
+"Afsnitsbaggrund" (-) VÃ¦lg farve pÃ¥ baggrunden for afsnittet.
  </para>
 </listitem>
 </itemizedlist>
@@ -275,12 +275,12 @@ vant til fra Microsoft Word.
 dokument</secondary></indexterm>
 
 <para>
-Allerede når du starter OpenOffice.org op, er der et tekstdokument klar
-til at skrive i. Du bør dog altid starte med at gemme tekstdokumentet,
-så det har et navn og ligger det rigtige sted. Det gør du ved at
-klikke på ikonet "Gem dokument" (Ctrl + S). Du kan dog først klikke
-på ikonet, når du har skrevet noget tekst. Du får nu et vindue, hvor
-du kan vælge navnet på dit tekstdokument og placeringen af det i dit
+Allerede nÃ¥r du starter OpenOffice.org op, er der et tekstdokument klar
+til at skrive i. Du bÃ¸r dog altid starte med at gemme tekstdokumentet,
+sÃ¥ det har et navn og ligger det rigtige sted. Det gÃ¸r du ved at
+klikke pÃ¥ ikonet "Gem dokument" (Ctrl + S). Du kan dog fÃ¸rst klikke
+pÃ¥ ikonet, nÃ¥r du har skrevet noget tekst. Du fÃ¥r nu et vindue, hvor
+du kan vÃ¦lge navnet pÃ¥ dit tekstdokument og placeringen af det i dit
 filsystem.
 </para>
 
@@ -290,12 +290,12 @@ filsystem.
 </figure>
 
 <para>
-Du skriver navnet på dit tekstdokument i feltet "Filnavn", hvor
-markøren står. Det er tilladt at bruge mellemrum i navnet, så lad
-endelig navnet afspejle indholdet i dokumentet, så det er nemmere at
-finde det rigtige dokument, når du har mange at vælge imellem.  Det er
-også altid et godt princip at gemme et dokument rimelig tit,
-så du ikke mister data, hvis computeren pludselig skulle gå ned.
+Du skriver navnet pÃ¥ dit tekstdokument i feltet "Filnavn", hvor
+markÃ¸ren stÃ¥r. Det er tilladt at bruge mellemrum i navnet, sÃ¥ lad
+endelig navnet afspejle indholdet i dokumentet, sÃ¥ det er nemmere at
+finde det rigtige dokument, nÃ¥r du har mange at vÃ¦lge imellem.  Det er
+ogsÃ¥ altid et godt princip at gemme et dokument rimelig tit,
+sÃ¥ du ikke mister data, hvis computeren pludselig skulle gÃ¥ ned.
 </para>
 </sect1>
 
@@ -306,12 +306,12 @@ så du ikke mister data, hvis computeren pludselig skulle gå ned.
 <indexterm><primary>Grafik</primary><secondary>Tekstbehandling</secondary></indexterm>
 
 <para>
-Som forventet kan du også sætte grafik ind i dine tekstdokumenter ved
-i funktionslinjen at vælge Indsæt, Grafik (Alt+I, A). Her kan du
-vælge, om grafikken skal skannes, om du blot vil hente en
-grafikfil. Vælger du "Fra fil..." kommer det et vindue, hvor du kan
-vælge en grafikfil fra dit stisystem. Hvis du sætter fluebenet ved 
-eksempel, får du vist grafikken til højre inden du behøver at sætte 
+Som forventet kan du ogsÃ¥ sÃ¦tte grafik ind i dine tekstdokumenter ved
+i funktionslinjen at vÃ¦lge IndsÃ¦t, Grafik (Alt+I, A). Her kan du
+vÃ¦lge, om grafikken skal skannes, om du blot vil hente en
+grafikfil. VÃ¦lger du "Fra fil..." kommer det et vindue, hvor du kan
+vÃ¦lge en grafikfil fra dit stisystem. Hvis du sÃ¦tter fluebenet ved 
+eksempel, fÃ¥r du vist grafikken til hÃ¸jre inden du behÃ¸ver at sÃ¦tte 
 den ind i dokumentet.
 </para>
 
@@ -321,17 +321,17 @@ den ind i dokumentet.
 </figure>
 
 <para>
-Billedet indlejres i tekstdokumentet, og du kan nu tilpasse størrelsen
-ved at klikke på billedet og gøre det større eller mindre ved at
-trække på de små grønne firkanter i randen af billedet. Du kan også
-flytte billedet ved at klikke et vilkårlig sted på billedet og trække det
-derhen, hvor det skal være.
+Billedet indlejres i tekstdokumentet, og du kan nu tilpasse stÃ¸rrelsen
+ved at klikke pÃ¥ billedet og gÃ¸re det stÃ¸rre eller mindre ved at
+trÃ¦kke pÃ¥ de smÃ¥ grÃ¸nne firkanter i randen af billedet. Du kan ogsÃ¥
+flytte billedet ved at klikke et vilkÃ¥rlig sted pÃ¥ billedet og trÃ¦kke det
+derhen, hvor det skal vÃ¦re.
 </para>
 
-<para>Hvis du klikker på ikonet "Gallery", får
-du mulighed for at vælge mellem en lang række standardbilleder eller
+<para>Hvis du klikker pÃ¥ ikonet "Gallery", fÃ¥r
+du mulighed for at vÃ¦lge mellem en lang rÃ¦kke standardbilleder eller
 -illustrationer, der er sorteret efter emne. Disse billedfiler er i
-øvrigt gemt i stisystemet under OpenOffice.org1.0/share/gallery.
+Ã¸vrigt gemt i stisystemet under OpenOffice.org1.0/share/gallery.
 </para>
 
 
@@ -348,13 +348,13 @@ du mulighed for at vælge mellem en lang række standardbilleder eller
 <indexterm><primary>Filformater</primary><secondary>Tekstbehandling</secondary></indexterm>
 
 <para>
-OpenOffice.org har sit eget binære filformat med endelsen *.sxw til at
+OpenOffice.org har sit eget binÃ¦re filformat med endelsen *.sxw til at
 gemme tekstdokumenter i og *.stw til skabeloner. 
 Det skal du ikke regne med, at andre
-programmer til tekstbehandling kan åbne - heller ikke for eksempel
-KWord. Til gengæld kan du en lang række muligheder for at at gemme 
+programmer til tekstbehandling kan Ã¥bne - heller ikke for eksempel
+KWord. Til gengÃ¦ld kan du en lang rÃ¦kke muligheder for at at gemme 
 dine tekstdokumenter i netop
-det format, som din modtager ønsker.
+det format, som din modtager Ã¸nsker.
 </para>
 
 <figure id="openoffice-saveas-fig" float="1">
@@ -363,7 +363,7 @@ det format, som din modtager ønsker.
 </figure>
 
 <para>
-Du kan også vælge at gemme i rent tekstformat - også til DOS, Mac og Unix.
+Du kan ogsÃ¥ vÃ¦lge at gemme i rent tekstformat - ogsÃ¥ til DOS, Mac og Unix.
 </para>
 </sect1>
 
@@ -372,14 +372,14 @@ Du kan også vælge at gemme i rent tekstformat - også til DOS, Mac og Unix.
 <title>Videre med Writer (OpenOffice.org)</title>
 <para>
 Hvis du vil vide mere om tekst&shy;behandlings&shy; af 
-StarOffice/OpenOffice.org, så er der en del inspiration at hente i hæftet 
+StarOffice/OpenOffice.org, sÃ¥ er der en del inspiration at hente i hÃ¦ftet 
 "StarOffice for alle" af Helle Frederiksen, forlaget IDG.
 </para>
 
 <para>
-Henrik Just fra Hjørring Gymnasium og HF-kursus har dog også skrevet 
-"Online håndbog i tekstbehandling med StartOffice Write", som kan hentes 
-på internetadressen <ulink url="http://www.hj-gym.dk/edb/staroffice/haandbog/">http://www.hj-gym.dk/edb/staroffice/haandbog/</ulink> og 
+Henrik Just fra HjÃ¸rring Gymnasium og HF-kursus har dog ogsÃ¥ skrevet 
+"Online hÃ¥ndbog i tekstbehandling med StartOffice Write", som kan hentes 
+pÃ¥ internetadressen <ulink url="http://www.hj-gym.dk/edb/staroffice/haandbog/">http://www.hj-gym.dk/edb/staroffice/haandbog/</ulink> og 
 <ulink url="http://www.hj-gym.dk/edb/brugerkursus/">http://www.hj-gym.dk/edb/brugerkursus/</ulink>
 </para>
 
@@ -387,13 +387,13 @@ på internetadressen <ulink url="http://www.hj-gym.dk/edb/staroffice/haandbog/">h
 Den seneste danske udgave kan hentes via den uofficielle danske 
 OpenOffice.org-side 
 <ulink url="http://ooo.chbs.dk/">http://ooo.chbs.dk/</ulink>, hvor 
-der også vil være danske skabeloner, nyheder og ekstra programmer 
-til kontorpakken. Der er også mulighed for at skaffe en 
+der ogsÃ¥ vil vÃ¦re danske skabeloner, nyheder og ekstra programmer 
+til kontorpakken. Der er ogsÃ¥ mulighed for at skaffe en 
 installations-cd-rom med det meste.
 </para>
 
 <para>
-Se også <ulink url="http://da.openoffice.org/">http://da.openoffice.org/</ulink>
+Se ogsÃ¥ <ulink url="http://da.openoffice.org/">http://da.openoffice.org/</ulink>
 </para>
 
 </sect1>

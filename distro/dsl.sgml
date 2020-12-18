@@ -5,8 +5,8 @@
 <indexterm><primary>distribution</primary><secondary>Damn Small Linux</secondary></indexterm>
 <para>
 <emphasis>Damn Small Linux</emphasis> er en "hacket, kraftig nedskaleret Knoppix", dvs. 
-en live Linux-distribution, som kører direkte fra cdrom. Den kræver ikke
-den nyeste hardware, men da den er afledt af Knoppix, så har den god
+en live Linux-distribution, som kÃ¸rer direkte fra cdrom. Den krÃ¦ver ikke
+den nyeste hardware, men da den er afledt af Knoppix, sÃ¥ har den god
 hardware-genkendelse og er ret god.
 </para>
 
@@ -17,21 +17,21 @@ Hjemmesiden for Damn Small Linux er
 Herfra kan hentes den nyeste version som passer med et engelsk keyboard. For danskere kan 
 det anbefales at hente den danske version fra 
 <ulink url="http://cvs.sslug.dk/dsl_dk/">http://cvs.sslug.dk/dsl_dk/</ulink>, der
-identisk med den originale, men passer med dansk keyboard og velkomstskærmen er oversat
+identisk med den originale, men passer med dansk keyboard og velkomstskÃ¦rmen er oversat
 til dansk. Programmer i den danske Damn Small Linux er dog ikke oversat til dansk.
 </para>
 
  <sect1 id="distro-dsl-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Damn Small Linux</secondary>
   </indexterm>
 
 <para>
-Folk, der gerne vil have en ret potent Linux-distribution på en 256 MB USB-nøglering, 
-eller på en mini 8 cm cdrom må have en Damn Small Linux. En anden del-målgruppe er 
+Folk, der gerne vil have en ret potent Linux-distribution pÃ¥ en 256 MB USB-nÃ¸glering, 
+eller pÃ¥ en mini 8 cm cdrom mÃ¥ have en Damn Small Linux. En anden del-mÃ¥lgruppe er 
 folk som gerne vil have en Knoppix, men som ikke har en hardware som er hurtig nok.
 </para>
 </sect1>
@@ -45,17 +45,17 @@ folk som gerne vil have en Knoppix, men som ikke har en hardware som er hurtig n
   </indexterm>
 
 <para>
-Man starter op på en cd, vælger X-server. Man vælger mellem <literal>Xfbdev</literal> 
+Man starter op pÃ¥ en cd, vÃ¦lger X-server. Man vÃ¦lger mellem <literal>Xfbdev</literal> 
 (Framebuffer) og <literal>Xvesa</literal> (Vesa). 
-Framebufferen er standard, og man får en 1024x768 skærm. I Xvesa kan man vælge opløsning i næste menu
+Framebufferen er standard, og man fÃ¥r en 1024x768 skÃ¦rm. I Xvesa kan man vÃ¦lge oplÃ¸sning i nÃ¦ste menu
 fra VGA op til 1600x1200, og herefter antal bitplaner (reelt er det antal farver, fra 4 bit lig 16 
-farver op til 32 bit som er mange millioner farver). Man kan herefter vælge skærmfrekvens, musetype. 
-Gider man ikke svare på disse spørgsmål, så vælg <literal>Xfbdev</literal>.
+farver op til 32 bit som er mange millioner farver). Man kan herefter vÃ¦lge skÃ¦rmfrekvens, musetype. 
+Gider man ikke svare pÃ¥ disse spÃ¸rgsmÃ¥l, sÃ¥ vÃ¦lg <literal>Xfbdev</literal>.
 </para>
 
 
 <figure id="distro-dsl-figname" float="1">
-<title>Damn Small Linux opstartsskærm</title>
+<title>Damn Small Linux opstartsskÃ¦rm</title>
 <graphic fileref="dsl.&magic;" scale="60"></graphic>
 </figure>
 
@@ -66,47 +66,47 @@ Gider man ikke svare på disse spørgsmål, så vælg <literal>Xfbdev</literal>.
 <title>Brugen af Damn Small Linux</title>
 
  <para> 
-  Har man kun lidt ældre maskine og gerne vil se og prøve Linux, så kan 
+  Har man kun lidt Ã¦ldre maskine og gerne vil se og prÃ¸ve Linux, sÃ¥ kan 
   <emphasis>Damn Small Linux</emphasis> (DSL) anbefales.
-  Det er en hårdt nedbarberet Knoppix, der kun fylder ca. 50 MB. I stedet for 
-  KDE som brugergrænseflade anvendes FluxBox, som er en glimrende "letvægter".
-  En stor fordel ved DSL er at den kan ligge på en mini-cdrom (8 cm) og den starter hurtigt.
+  Det er en hÃ¥rdt nedbarberet Knoppix, der kun fylder ca. 50 MB. I stedet for 
+  KDE som brugergrÃ¦nseflade anvendes FluxBox, som er en glimrende "letvÃ¦gter".
+  En stor fordel ved DSL er at den kan ligge pÃ¥ en mini-cdrom (8 cm) og den starter hurtigt.
   Man kan altid have Damn Small Linux med.
  </para>
 
 <para>
-Når man starter DSL op så får man FluxBox windowmanageren frem i nydelig sort stil.
+NÃ¥r man starter DSL op sÃ¥ fÃ¥r man FluxBox windowmanageren frem i nydelig sort stil.
 Man har ikke Mozilla, OpenOffice.org, GNOME, KDE-programmer eller andet "stort". Som browser er der Dillo, der ligesom alle
-andre programmer kan startes med musens venstre knap på baggrunden. Som email-klient er der
-valgt Sylpheed, som på det seneste har fået mange tilhængere. Der er en VNC klient og meget andet.
+andre programmer kan startes med musens venstre knap pÃ¥ baggrunden. Som email-klient er der
+valgt Sylpheed, som pÃ¥ det seneste har fÃ¥et mange tilhÃ¦ngere. Der er en VNC klient og meget andet.
 </para>
 
 <figure id="distro-dslX1-figname" float="1">
-<title>Damn Small Linux kører Fluxbox</title>
+<title>Damn Small Linux kÃ¸rer Fluxbox</title>
 <graphic fileref="dslX1.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-Man kan "enhance" Fluxbox i opsætningsmenuen, så der kommer ikoner på baggrunden og 
-monitor på CPU-forbrug. Desktoppen er dermed mere nem at gå til, men slet ikke så 
+Man kan "enhance" Fluxbox i opsÃ¦tningsmenuen, sÃ¥ der kommer ikoner pÃ¥ baggrunden og 
+monitor pÃ¥ CPU-forbrug. Desktoppen er dermed mere nem at gÃ¥ til, men slet ikke sÃ¥ 
 stilren mere.
 </para>
 
 <figure id="distro-dslX2-figname" float="1">
-<title>Damn Small Linux hvor Fluxbox får "enhancements". I terminalvinduet (rxvt) ses
-hvordan man laver skærmskud med forsinkelse.</title>
+<title>Damn Small Linux hvor Fluxbox fÃ¥r "enhancements". I terminalvinduet (rxvt) ses
+hvordan man laver skÃ¦rmskud med forsinkelse.</title>
 <graphic fileref="dslX2.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-<emphasis>Tip:</emphasis> De test som er lavet med DSL har anvendt version 0.4.8, der både
-findes i dansk og engelsk udgave som nævnt ovenfor.
-Der er netop kommet en ny version 0.5.2 (også på dansk) - som har en <emphasis>meget</emphasis> 
+<emphasis>Tip:</emphasis> De test som er lavet med DSL har anvendt version 0.4.8, der bÃ¥de
+findes i dansk og engelsk udgave som nÃ¦vnt ovenfor.
+Der er netop kommet en ny version 0.5.2 (ogsÃ¥ pÃ¥ dansk) - som har en <emphasis>meget</emphasis> 
 smart mulighed
-for at gemme opsætningen af bl.a. den grafiske brugergrænseflade på en USB-nøglering, eller en 
+for at gemme opsÃ¦tningen af bl.a. den grafiske brugergrÃ¦nseflade pÃ¥ en USB-nÃ¸glering, eller en 
 floppydisk (alt efter hvad der er til stede). Der er en ny menu i Fluxbox, der giver denne
-mulighed. Man kan så starte DSL med "knoppix restore" for at få indlæst opsætningen. Denne kombination 
-er elegant (men vil sikkert blive overhalet af rene USB løsninger når alle kan boote på USB nøgleringe 
+mulighed. Man kan sÃ¥ starte DSL med "knoppix restore" for at fÃ¥ indlÃ¦st opsÃ¦tningen. Denne kombination 
+er elegant (men vil sikkert blive overhalet af rene USB lÃ¸sninger nÃ¥r alle kan boote pÃ¥ USB nÃ¸gleringe 
 med USB 2.0 hastighed - men det er en anden historie).
 </para>
 
@@ -119,7 +119,7 @@ med USB 2.0 hastighed - men det er en anden historie).
 <title>Samlet vurdering af Damn Small Linux</title>
 <para>
 Rigtig god, hvis man ikke har en ny hardware, eller hvis man gerne vil have at ens 
-"system-administrator" skive næsten intet fylder. Den har ikke OpenOffice.org, Mozilla
+"system-administrator" skive nÃ¦sten intet fylder. Den har ikke OpenOffice.org, Mozilla
 og lignende. Den er lille og god :)
 </para>
 </sect1>

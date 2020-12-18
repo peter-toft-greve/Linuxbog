@@ -3,7 +3,7 @@
 <!-- $Id$ -->
 <html>
 <head>
-<title>Min gæstebog</title>
+<title>Min gÃ¦stebog</title>
 </head>
 <body bgcolor="white">
 
@@ -11,7 +11,7 @@
 
   // Hent password
   require(".password.php");
-  // Åben forbindelse til databasen
+  // Ã…ben forbindelse til databasen
   $conn = pg_pconnect("dbname=$dbname user=$dbuser");
 
   $sql = "SELECT opdat,navn,email,hilsen FROM gaest ORDER BY opdat DESC";

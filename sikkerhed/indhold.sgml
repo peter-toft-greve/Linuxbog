@@ -1,5 +1,5 @@
   <bookinfo>
-    <title>Linux - Friheden til sikkerhed på internettet</title>
+    <title>Linux - Friheden til sikkerhed pÃ¥ internettet</title>
     <subtitle>Version &sikkerhed-version; - &sikkerhed-dato;</subtitle>
 
     <authorgroup>
@@ -18,14 +18,14 @@
     <copyright>
       <year>2000-2005</year>
       <holder>Hanne Munkholm og Peter Toft under
-      "Åben dokumentlicens (ÅDL) - version 1.0".</holder>
+      "Ã…ben dokumentlicens (Ã…DL) - version 1.0".</holder>
     </copyright>
 
 <abstract>
 <para>
-Dette er en bog om Linux netværkssikkerhed.
-Emner som root-adgang, netværksservices, firewalls, sikker
-netværkskommunikation bliver behandlet.
+Dette er en bog om Linux netvÃ¦rkssikkerhed.
+Emner som root-adgang, netvÃ¦rksservices, firewalls, sikker
+netvÃ¦rkskommunikation bliver behandlet.
 </para>
 </abstract>
 

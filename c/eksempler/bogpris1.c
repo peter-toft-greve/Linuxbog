@@ -1,4 +1,4 @@
-/* bogpris1.c -- en demonstration af objekt håndtering i C */
+/* bogpris1.c -- en demonstration af objekt hÃ¥ndtering i C */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,9 +11,9 @@ struct broek {
 
 /* man skal i store programmer selv huske at free'e allokeret
  * memory, ellers har man en memory leak, d.v.s. at programmets
- * RAM forbrug stiger i løbet at køretiden, uden at man egentlig
- * får noget for pengene. Det er ikke en katastrofe. Fx. sendmail
- * og nameservere genstartes somme tider blot for at afværge memory leak
+ * RAM forbrug stiger i lÃ¸bet at kÃ¸retiden, uden at man egentlig
+ * fÃ¥r noget for pengene. Det er ikke en katastrofe. Fx. sendmail
+ * og nameservere genstartes somme tider blot for at afvÃ¦rge memory leak
  * problemer.
  */
 
@@ -35,7 +35,7 @@ int broek_multiply(struct broek *result, struct broek *b1, struct broek *b2)
     result->t = b1->t * b2->t;
     result->d = b1->d * b2->d;
     /* TODO if overflow ... return 0 */
-    /* find fællesnævner / forkortelse af broek, skrives til sidst  */
+    /* find fÃ¦llesnÃ¦vner / forkortelse af broek, skrives til sidst  */
     { int x;
       int maxx = min(result->t, result->d);
         for (x = 1; x <= maxx ; ++x) {

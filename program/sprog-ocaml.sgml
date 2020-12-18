@@ -20,20 +20,20 @@
 
  <para>
   OCaml er et temmelig specielt programmeringssprog, idet det tillader at
-  man blander flere paradigmer end sædvanligt; objektorienteret, imperativt
+  man blander flere paradigmer end sÃ¦dvanligt; objektorienteret, imperativt
   og funktionsorienteret.
   ...
  </para>
 
  <sect2 id="sparres-noter-om-ocaml">
-  <title>Nogle løse noter om OCaml</title>
+  <title>Nogle lÃ¸se noter om OCaml</title>
 
   <para>
    Fra 1987.
   </para>
 
   <para>
-   Statisk typet, (men) vælger automatisk den mest generelle type
+   Statisk typet, (men) vÃ¦lger automatisk den mest generelle type
    (betydning) af et udtryk.
   </para>
 
@@ -42,20 +42,20 @@
   </para>
 
   <para>
-   Heltal regnes "modulo" $2^30$ på 32-bit-systemer og modulo $2^62$
-   på 64-bit-systemer $(2^30-1)+1 = -(2^30)$.
+   Heltal regnes "modulo" $2^30$ pÃ¥ 32-bit-systemer og modulo $2^62$
+   pÃ¥ 64-bit-systemer $(2^30-1)+1 = -(2^30)$.
   </para>
 
   <para>
    Skelner mellem "strukturel" og "fysisk" lighed ("=" og "=="). Med
    "fysisk" lighed menes der at det rent faktisk er de samme data, der
    ligger det samme sted i hukommelsen, mens "strukturel" lighed blot
-   er to forskellige variable der tilfældigvis har samme værdi. Det
-   svarer til om man ser på "A=B" eller "A'Access=B'Access" i Ada.
+   er to forskellige variable der tilfÃ¦ldigvis har samme vÃ¦rdi. Det
+   svarer til om man ser pÃ¥ "A=B" eller "A'Access=B'Access" i Ada.
   </para>
 
   <para>
-   Underforstået parallelisering i syntaksen:
+   UnderforstÃ¥et parallelisering i syntaksen:
 <programlisting>
 <!--keyword-->let<!--/keyword--> navn_1 = udtryk_1 <!--keyword-->and<!--/keyword--> navn_2 = udtryk_2 <!--keyword-->and<!--/keyword--> ... ;;
 </programlisting>
@@ -63,12 +63,12 @@
   </para>
 
   <para>
-   Prioritet: "f a b" svarer til "(f a) b". Der er desværre mange
+   Prioritet: "f a b" svarer til "(f a) b". Der er desvÃ¦rre mange
    alternative formuleringsformer. :-(
   </para>
 
   <para>
-   Bortset fra parametrene evalueres en funktion når den defineres.
+   Bortset fra parametrene evalueres en funktion nÃ¥r den defineres.
   </para>
 
   <para>

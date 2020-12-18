@@ -2,7 +2,7 @@
 <!-- $Id$ -->
 <!-- Michael Rasmussem mir@miras.org, Lars Madsen m@dsen.net og -->
 <!-- Henrik Christian Grove grove@sslug.dk -->
-<title>Linux som server i Windows-netværk (Samba)</title>
+<title>Linux som server i Windows-netvÃ¦rk (Samba)</title>
 
 <indexterm>
  <primary>Samba</primary>
@@ -19,8 +19,8 @@
 Selv om denne bog handler om Linux, skal man ikke glemme, at der findes
 andre styresystemer. Et af de mere udbredte er Windows &ndash; herunder
 wfw/95/98/NT/2000, som alle har indbygget muligheden for at
-fungere i netværk. Hvis man allerede har et lokalnet med både Linux- og
-Windows-computere, kan man med fordel kigge nærmere på Samba.
+fungere i netvÃ¦rk. Hvis man allerede har et lokalnet med bÃ¥de Linux- og
+Windows-computere, kan man med fordel kigge nÃ¦rmere pÃ¥ Samba.
 </para>
 
 <indexterm>
@@ -32,37 +32,37 @@ Samba er frit programmel, og kan dermed erhverves og bruges helt gratis. I
 Danmark kan Samba lettest hentes fra 
 <ulink url="http://mirrors.sunsite.dk/sambawww/">
 http://mirrors.sunsite.dk/sambawww</ulink> (d.v.s. dansk mirror;
-pas på, for sunsite ændrer ofte struktur og dermed url'er!)
+pas pÃ¥, for sunsite Ã¦ndrer ofte struktur og dermed url'er!)
 ellers fra home-site: <ulink url="http://www.samba.org/">http://www.samba.org/</ulink>.
 </para>
 
 <para> 
-Det som Samba først og fremmest kan tilbyde er at fungere som fil- og
-printerserver. Derudover kan Samba også fungere som Domain Controller for
+Det som Samba fÃ¸rst og fremmest kan tilbyde er at fungere som fil- og
+printerserver. Derudover kan Samba ogsÃ¥ fungere som Domain Controller for
 Windows-klienter.
 </para>
 
 <para>
 Med Samba installeret (og ikke mindst sat op) vil
-serveren kunne ses, hvis man klikker på "andre computere" (på
-engelsk: "network neighbourhood") eller på samme netværk i Windows 95/98/NT.
+serveren kunne ses, hvis man klikker pÃ¥ "andre computere" (pÃ¥
+engelsk: "network neighbourhood") eller pÃ¥ samme netvÃ¦rk i Windows 95/98/NT.
 </para>
 
 <para>
-Den letteste måde at installere eller opgradere Samba på er at
-bruge en færdigoversat pakke. Sådanne pakker kan hentes på
+Den letteste mÃ¥de at installere eller opgradere Samba pÃ¥ er at
+bruge en fÃ¦rdigoversat pakke. SÃ¥danne pakker kan hentes pÃ¥
 <ulink url="http://mirrors.sunsite.dk/samba/">
 http://mirrors.sunsite.dk/samba/
 </ulink>,
 og de findes til flere forskellige Linux-distributioner, bl.a.
 Red Hat, Caldera, Debian, Slackware og SuSE. Hvis man holder af
-at oversætte sin kildetekst selv, kan den også hentes fra
+at oversÃ¦tte sin kildetekst selv, kan den ogsÃ¥ hentes fra
 sunsite.
 </para>
 
 <para>
-Vi vil dog meget anbefale at bruge en færdigoversat pakke, og vi
-vil i eksemplet gå ud fra, at du har Red Hat installeret. Når du har
+Vi vil dog meget anbefale at bruge en fÃ¦rdigoversat pakke, og vi
+vil i eksemplet gÃ¥ ud fra, at du har Red Hat installeret. NÃ¥r du har
 hentet rpm-pakken, skriver du bare:
 <screen>
 <prompt>[root@linus /root]#</prompt> <userinput>rpm -ivh samba-*.i386.rpm</userinput>
@@ -70,29 +70,29 @@ hentet rpm-pakken, skriver du bare:
 </para>
 
 <sect1 id="Samba-Unix">
-<title>Opsætning af Samba-serveren i Linux</title>
+<title>OpsÃ¦tning af Samba-serveren i Linux</title>
 
 <para>
-Når du har fået installeret Samba-serveren, skal du have den
-sat op. Dette kan gøres på flere måder. I sædvanlig Unix-stil kan
+NÃ¥r du har fÃ¥et installeret Samba-serveren, skal du have den
+sat op. Dette kan gÃ¸res pÃ¥ flere mÃ¥der. I sÃ¦dvanlig Unix-stil kan
 man rette direkte i filen <filename>/etc/smb.conf</filename>. Denne
-fil kan virke meget skræmmende, da der er op mod 300 parametre, man
-kan sætte. Det skal du dog af to grunde ikke lade dig gå på af: For
-det første har de fleste parametre udmærkede forudvalgte værdier, så dem
-behøver man slet ikke at bekymre sig om. For det andet bliver der
-installeret en udmærket standard <filename>/etc/smb.conf</filename>,
-som virker uden de store ændringer.
+fil kan virke meget skrÃ¦mmende, da der er op mod 300 parametre, man
+kan sÃ¦tte. Det skal du dog af to grunde ikke lade dig gÃ¥ pÃ¥ af: For
+det fÃ¸rste har de fleste parametre udmÃ¦rkede forudvalgte vÃ¦rdier, sÃ¥ dem
+behÃ¸ver man slet ikke at bekymre sig om. For det andet bliver der
+installeret en udmÃ¦rket standard <filename>/etc/smb.conf</filename>,
+som virker uden de store Ã¦ndringer.
 </para>
 
 <para>
 Denne standard <filename>smb.conf</filename> er desuden meget
 velkommenteret, hvilket yderligere letter tilpasning. Her er et eksempel
-på en lille <filename>/etc/smb.conf</filename>-fil, som ud over at sætte
-Samba op som fil- og printerserver også sætter Samba op som
-domænekontroller.
+pÃ¥ en lille <filename>/etc/smb.conf</filename>-fil, som ud over at sÃ¦tte
+Samba op som fil- og printerserver ogsÃ¥ sÃ¦tter Samba op som
+domÃ¦nekontroller.
 
 <indexterm>
- <primary>Samba, opsætningsfiler (eksempler)</primary>
+ <primary>Samba, opsÃ¦tningsfiler (eksempler)</primary>
  <secondary>/etc/smb.conf [ 1 ]</secondary>
 </indexterm>
 
@@ -119,10 +119,10 @@ domænekontroller.
 
    domain master = yes
    domain logons = yes
-; Hvis du vil have Windows klienter med æ,ø og å
+; Hvis du vil have Windows klienter med Ã¦,Ã¸ og Ã¥
    client code page = 850
    character set = ISO8859-1
-   valid chars = æ:Æ ø:Ø å:Å
+   valid chars = Ã¦:Ã† Ã¸:Ã˜ Ã¥:Ã…
 
 [homes]
    comment = Home Directories
@@ -142,12 +142,12 @@ domænekontroller.
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> I Windows 2000 skal man udføre kommandoen
+<emphasis>Tip:</emphasis> I Windows 2000 skal man udfÃ¸re kommandoen
 <command>chcp 850</command> i et terminalvindue.
-Hvis man ikke gør dette på
-Windows-maskinerne vil Samba oversætte ø:Ø forkert til o:O i stedet, da
-Windows 2000 <emphasis>ikke</emphasis> selv sætter codepage til 850
-men derimod til 457 selvom man sætter sin locale til dansk under
+Hvis man ikke gÃ¸r dette pÃ¥
+Windows-maskinerne vil Samba oversÃ¦tte Ã¸:Ã˜ forkert til o:O i stedet, da
+Windows 2000 <emphasis>ikke</emphasis> selv sÃ¦tter codepage til 850
+men derimod til 457 selvom man sÃ¦tter sin locale til dansk under
 installationen. 
 </para>
 
@@ -155,79 +155,79 @@ installationen.
 <title>Tillidsforhold mellem maskinerne</title>
 
 <para>
-For at dine Windows NT/2000/XP-klienter skal få lov til at logge sig på
+For at dine Windows NT/2000/XP-klienter skal fÃ¥ lov til at logge sig pÃ¥
 Samba-serveren, skal Samba kende til dem &ndash; ikke brugerne, men de
-enkelte maskiner. Første gang en maskine tilsluttes genereres et
-ID-nummer for maskinen som serveren skal huske, til dette formål bruger
-Samba såkaldte "Machine Trust Accounts" (MTA). Med samba består sådanne
+enkelte maskiner. FÃ¸rste gang en maskine tilsluttes genereres et
+ID-nummer for maskinen som serveren skal huske, til dette formÃ¥l bruger
+Samba sÃ¥kaldte "Machine Trust Accounts" (MTA). Med samba bestÃ¥r sÃ¥danne
 af to dele:
 </para>
 
 <itemizedlist>
 <listitem>
 <para>
-En sambakonto, sædvanligvis gemt i din
+En sambakonto, sÃ¦dvanligvis gemt i din
 <filename>smbpasswd</filename>-fil. 
 </para>
 </listitem>
 <listitem>
 <para>
-En tilhørende Unix-konto, sædvanligvis gemt i
+En tilhÃ¸rende Unix-konto, sÃ¦dvanligvis gemt i
 <filename>/etc/passwd</filename>.
 </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Der er flere måder at klare oprettelsen af disse på:
+Der er flere mÃ¥der at klare oprettelsen af disse pÃ¥:
 </para>
 
 <itemizedlist>
 <listitem>
 <para>
-Man kan oprette begge dele direkte på serveren, før man slutter
-arbejdsstationerne til domænet. Det åbner en mulighed for at andre kan
-nå at tilslutte en maskine og "stjæle" kontoen. Hvis man kan overskue
-netværket eller stoler på de folk der har adgang til bygningen er dette
-næppe et problem.
+Man kan oprette begge dele direkte pÃ¥ serveren, fÃ¸r man slutter
+arbejdsstationerne til domÃ¦net. Det Ã¥bner en mulighed for at andre kan
+nÃ¥ at tilslutte en maskine og "stjÃ¦le" kontoen. Hvis man kan overskue
+netvÃ¦rket eller stoler pÃ¥ de folk der har adgang til bygningen er dette
+nÃ¦ppe et problem.
 </para>
 </listitem>
 <listitem>
 <para>
-Man kan få samba til at oprette det hele undervejs. Det kræver at root
-er oprettet som sambabruger (bemærk at root skal være den første bruger
+Man kan fÃ¥ samba til at oprette det hele undervejs. Det krÃ¦ver at root
+er oprettet som sambabruger (bemÃ¦rk at root skal vÃ¦re den fÃ¸rste bruger
 i <filename>smbpasswd</filename>-filen), men til daglig kan man jo
-deaktivere kontoen. Brug for en sikkerheds skyld også forskellige
-kodeord for root som unix- og sambabruger.  Derudover kræver det lidt
-arbejde at få lavet et script der kan klare oprettelsen af Unixkontoen.
+deaktivere kontoen. Brug for en sikkerheds skyld ogsÃ¥ forskellige
+kodeord for root som unix- og sambabruger.  Derudover krÃ¦ver det lidt
+arbejde at fÃ¥ lavet et script der kan klare oprettelsen af Unixkontoen.
 </para>
 </listitem>
 <listitem>
 <para>
-Man kan oprette Unixkontoen på forhånd, og lade samba oprette
-sambakontoen undervejs. Det kræver at root er oprettet som sambabruger
-(bemærk at root skal være den første bruger i
+Man kan oprette Unixkontoen pÃ¥ forhÃ¥nd, og lade samba oprette
+sambakontoen undervejs. Det krÃ¦ver at root er oprettet som sambabruger
+(bemÃ¦rk at root skal vÃ¦re den fÃ¸rste bruger i
 <filename>smbpasswd</filename>-filen), men til daglig kan man jo
-deaktivere kontoen. Brug for en sikkerheds skyld også forskellige
-kodeord for root som unix- og sambabruger. Til gengæld slipper man for
+deaktivere kontoen. Brug for en sikkerheds skyld ogsÃ¥ forskellige
+kodeord for root som unix- og sambabruger. Til gengÃ¦ld slipper man for
 at skriver et script til oprettelse af Unixkontoen og for at oprette
-sambakontoerne ved håndkraft.
+sambakontoerne ved hÃ¥ndkraft.
 </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Hvis windowsmaskinen hedder WS1 (hvor det sættes afhænger lidt af
-windowsversionen, men det er noget i retning af "kontrolpanel/netværk"),
-skal Unix- og sambakontoen hedde WS1$. Dette dollartegn fortæller
+Hvis windowsmaskinen hedder WS1 (hvor det sÃ¦ttes afhÃ¦nger lidt af
+windowsversionen, men det er noget i retning af "kontrolpanel/netvÃ¦rk"),
+skal Unix- og sambakontoen hedde WS1$. Dette dollartegn fortÃ¦ller
 serveren at der er tale om en maskinkonto.
 </para>
 
 <para>
 Da forfatteren ikke kan se nogen god grund til ikke at oprette
-unixkontoerne på serveren, vil vi ikke gennemgå metode 2. Lige meget
-hvilken af de to andre metoder du vil benytte skal du læse næste afsnit,
-og hvis du vil benytte metode 1 skal du også læse det næste igen.
+unixkontoerne pÃ¥ serveren, vil vi ikke gennemgÃ¥ metode 2. Lige meget
+hvilken af de to andre metoder du vil benytte skal du lÃ¦se nÃ¦ste afsnit,
+og hvis du vil benytte metode 1 skal du ogsÃ¥ lÃ¦se det nÃ¦ste igen.
 </para>
 
 <sect3 id="samba-unixkontoen">
@@ -240,7 +240,7 @@ for eksempel med en kommando i stil med <command>useradd -u 801
 </para>
 
 <para>
-Det er selvfølgelig en forudsætning af der findes en gruppe med gid 800
+Det er selvfÃ¸lgelig en forudsÃ¦tning af der findes en gruppe med gid 800
 til maskinerne. Du kan oprette gruppen med en kommando i stil med:
 <programlisting>
 groupadd -g 800 maskiner
@@ -265,17 +265,17 @@ groupadd -g 800 maskiner
 </indexterm>
 
 <para>
-Når vi har tilføjet vores Windows-klient i
-<filename>/etc/passwd</filename>, skal vi få Samba til at generere
-vores MTA. Det gøres med kommandoen
+NÃ¥r vi har tilfÃ¸jet vores Windows-klient i
+<filename>/etc/passwd</filename>, skal vi fÃ¥ Samba til at generere
+vores MTA. Det gÃ¸res med kommandoen
 <screen>
 <prompt>[root@linus /root]#</prompt> <userinput>smbpasswd -a -m WS1</userinput>
 </screen>
 </para>
 
 <para>
-Når man har afviklet <command>smbpasswd</command>, vil man kunne se
-følgende linje i filen <filename>/etc/samba/smbpasswd</filename> (hvor
+NÃ¥r man har afviklet <command>smbpasswd</command>, vil man kunne se
+fÃ¸lgende linje i filen <filename>/etc/samba/smbpasswd</filename> (hvor
 noget af linjen er forkortet):
 <programlisting>
 WS1$:801:996FE367692....05AA1BE70:[W    ]:LCT-397A3E6E
@@ -283,20 +283,20 @@ WS1$:801:996FE367692....05AA1BE70:[W    ]:LCT-397A3E6E
 </para>
 
 <para>
-N.B. Det kan være at <filename>smbpasswd</filename> ligger i
+N.B. Det kan vÃ¦re at <filename>smbpasswd</filename> ligger i
 <filename>/etc/</filename>. 
 </para>
 </sect3>
 </sect2>
 
 <sect2 id="samba-pdc">
-<title>Samba som primær domænekontroller</title>
+<title>Samba som primÃ¦r domÃ¦nekontroller</title>
 
 <para>
-Som noget nyt i version 2.x.x har man nu mulighed for at sætte Samba op som
-primær domænekontroller for et Windows-netværk med 95-, 98-, ME- og 
-NT-klienter. Det vil dog føre for vidt at komme ind på det her. 
-Hvis man har mod på at prøve, kan man finde mere
+Som noget nyt i version 2.x.x har man nu mulighed for at sÃ¦tte Samba op som
+primÃ¦r domÃ¦nekontroller for et Windows-netvÃ¦rk med 95-, 98-, ME- og 
+NT-klienter. Det vil dog fÃ¸re for vidt at komme ind pÃ¥ det her. 
+Hvis man har mod pÃ¥ at prÃ¸ve, kan man finde mere
 information her <ulink
 url="http://us1.samba.org/samba/docs/man/Samba-HOWTO-Collection/samba-pdc.html">http://us1.samba.org/samba/docs/man/Samba-HOWTO-Collection/samba-pdc.html
 </ulink>
@@ -304,7 +304,7 @@ url="http://us1.samba.org/samba/docs/man/Samba-HOWTO-Collection/samba-pdc.html">
 </para>
 
 <indexterm>
- <primary>Samba, opsætning</primary>
+ <primary>Samba, opsÃ¦tning</primary>
  <secondary>Swat (Samba Web Administration Tool)</secondary>
 </indexterm>
 </sect2>
@@ -313,9 +313,9 @@ url="http://us1.samba.org/samba/docs/man/Samba-HOWTO-Collection/samba-pdc.html">
 <sect1 id="swat">
 <title>Swat (Samba Web Administration Tool)</title>
 <para>
-Sammen med Samba kommer der også et grafisk opsætningsværktøj, der
+Sammen med Samba kommer der ogsÃ¥ et grafisk opsÃ¦tningsvÃ¦rktÃ¸j, der
 hedder <command>swat</command> (Samba Web Administration Tool).  Med
-dette værktøj er det muligt at klikke sig gennem opsætningen af Samba.
+dette vÃ¦rktÃ¸j er det muligt at klikke sig gennem opsÃ¦tningen af Samba.
 </para>
 
 <figure id="swat-fig" float="1">
@@ -324,9 +324,9 @@ dette værktøj er det muligt at klikke sig gennem opsætningen af Samba.
 </figure>
 
 <para> 
-Her ses et eksempel på, hvordan <command>swat</command> ser ud, jeg
+Her ses et eksempel pÃ¥, hvordan <command>swat</command> ser ud, jeg
 har defineret et "share" (en delt mappe), der hedder spil. I
-<filename>smb.conf</filename> ser det således ud:
+<filename>smb.conf</filename> ser det sÃ¥ledes ud:
 <programlisting>
 [spil]
   create mask =  0775
@@ -336,7 +336,7 @@ har defineret et "share" (en delt mappe), der hedder spil. I
 </para>
 
 <para>
-Hvis man bruger swat, ser det således ud: 
+Hvis man bruger swat, ser det sÃ¥ledes ud: 
 </para>
 
 <figure id="swatspil-fig" float="1">
@@ -345,38 +345,38 @@ Hvis man bruger swat, ser det således ud:
 </figure>
 
 <para>
-Her er det kun den øverste del af siden, der er taget med. Det skal bemærkes,
-at der findes en del andre indstillinger, der også kan sættes med swat. Den
-største fordel ved at benytte swat er, at man har adgang til hjælp.
+Her er det kun den Ã¸verste del af siden, der er taget med. Det skal bemÃ¦rkes,
+at der findes en del andre indstillinger, der ogsÃ¥ kan sÃ¦ttes med swat. Den
+stÃ¸rste fordel ved at benytte swat er, at man har adgang til hjÃ¦lp.
 </para>
 
 <para>
-Der findes efterhånden en del andre grafiske
-opsætningsværktøjer. 
+Der findes efterhÃ¥nden en del andre grafiske
+opsÃ¦tningsvÃ¦rktÃ¸jer. 
 <ulink url="http://mirrors.sunsite.dk/sambawww/">
 http://mirrors.sunsite.dk/sambawww/</ulink>
 indeholder en liste over disse.
 </para>
 
 <para>
-Inden man kan gå videre til at sætte klienterne i ens netværk op,
+Inden man kan gÃ¥ videre til at sÃ¦tte klienterne i ens netvÃ¦rk op,
 er der yderligere to andre ting, der skal tages stilling til. Den
-første beslutning, der skal tages er, hvorvidt man ønsker at benytte
-krypterede adgangskoder eller ej. Opsætning af dette og en diskussion
-af fordele og ulemper følger i næste afsnit. Den anden beslutning
-angår, om man vil benytte TCP/IP eller LAN-manager (Netbios) til
-navneopslag. Hvis man vælger LAN-manager-løsningen er opsætningen
-af Samba overstået på Linux-serveren, mens TCP/IP-løsningen kræver, at
-der installeres DNS på Linux-serveren.
+fÃ¸rste beslutning, der skal tages er, hvorvidt man Ã¸nsker at benytte
+krypterede adgangskoder eller ej. OpsÃ¦tning af dette og en diskussion
+af fordele og ulemper fÃ¸lger i nÃ¦ste afsnit. Den anden beslutning
+angÃ¥r, om man vil benytte TCP/IP eller LAN-manager (Netbios) til
+navneopslag. Hvis man vÃ¦lger LAN-manager-lÃ¸sningen er opsÃ¦tningen
+af Samba overstÃ¥et pÃ¥ Linux-serveren, mens TCP/IP-lÃ¸sningen krÃ¦ver, at
+der installeres DNS pÃ¥ Linux-serveren.
 </para>
 
 <para>
-Hvordan man installerer DNS på Linux, kan du læse mere om her. Se
+Hvordan man installerer DNS pÃ¥ Linux, kan du lÃ¦se mere om her. Se
 <xref linkend="dns-opsaetning"/>.
 </para>
 
 <indexterm>
- <primary>Samba, opsætning</primary>
+ <primary>Samba, opsÃ¦tning</primary>
  <secondary>Krypterede adgangskoder</secondary>
 </indexterm>
 </sect1>
@@ -388,17 +388,17 @@ Hvordan man installerer DNS på Linux, kan du læse mere om her. Se
 SMB bruger en krypteringsteknik, der ligner standard Unix-kryptering. 
 Det er dog kun tilsyneladende, at de to teknikker er ens,
 Unix-variationen sender nemlig typisk kodeordet i klar tekst over
-netværket, når man skal logge ind. SMB sender i modsætning hertil en
+netvÃ¦rket, nÃ¥r man skal logge ind. SMB sender i modsÃ¦tning hertil en
 kodet version af adgangskoden.
 </para>
 
 <para>
-Hvorvidt man vælger at bruge krypterede adgangskoder eller ej, er op til
-den enkelte at afgøre, da der er både fordele og ulemper, som listet
+Hvorvidt man vÃ¦lger at bruge krypterede adgangskoder eller ej, er op til
+den enkelte at afgÃ¸re, da der er bÃ¥de fordele og ulemper, som listet
 nedenfor. Bruger man nyere versioner af Microsoft Windows og NT vil vi dog
 anbefale at bruge kryptering, idet man slipper for at skulle
-sætte alle sine klienter op. Som det vil fremgå lidt senere, er det uhyre
-enkelt at få Samba til at benytte krypterede adgangskoder.
+sÃ¦tte alle sine klienter op. Som det vil fremgÃ¥ lidt senere, er det uhyre
+enkelt at fÃ¥ Samba til at benytte krypterede adgangskoder.
 </para>
 
 <para>
@@ -407,7 +407,7 @@ Fordele ved krypterede adgangskoder:
 
 <itemizedlist mark="bullet" spacing="compact">
 <listitem>
-<para>Sikkerhed. Adgangskoder bliver ikke sendt over netværket i klar tekst.</para>
+<para>Sikkerhed. Adgangskoder bliver ikke sendt over netvÃ¦rket i klar tekst.</para>
 </listitem>
 
 
@@ -428,33 +428,33 @@ Ulemper ved krypterede adgangskoder:
 
 <listitem>
 <para>Hvis du allerede bruger services, der sender adgangskoder i klar
-tekst (f.eks telnet og ftp), gør det ikke den store forskel, om
-SMB også gør det.</para>
+tekst (f.eks telnet og ftp), gÃ¸r det ikke den store forskel, om
+SMB ogsÃ¥ gÃ¸r det.</para>
 </listitem>
 
 </itemizedlist>
 
 <para>
-Windows 98 og Windows NT 4 (SP3 og senere) kræver som standard brug af 
+Windows 98 og Windows NT 4 (SP3 og senere) krÃ¦ver som standard brug af 
 krypterede adgangskoder. Det betyder, at du har to valg:
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
 <listitem>
-<para>Du sætter Samba til at bruge krypterede adgangskoder.
+<para>Du sÃ¦tter Samba til at bruge krypterede adgangskoder.
 </para>
 </listitem>
 <listitem>
-<para>Du ændrer Windows 98/95/NT registry, så de ikke kræver krypterede adgangskoder.
+<para>Du Ã¦ndrer Windows 98/95/NT registry, sÃ¥ de ikke krÃ¦ver krypterede adgangskoder.
 </para>
 </listitem>
 </itemizedlist>
 
 <sect2 id="Sambaconfig">
-<title>Opsætning af Samba</title>
+<title>OpsÃ¦tning af Samba</title>
 <para>
-I modsætning til tidligere er Samba i dag født til at kunne håndtere
-krypterede adgangskoder. Det eneste man skal gøre, er at tilføje følgende
+I modsÃ¦tning til tidligere er Samba i dag fÃ¸dt til at kunne hÃ¥ndtere
+krypterede adgangskoder. Det eneste man skal gÃ¸re, er at tilfÃ¸je fÃ¸lgende
 linje til [global]-sektionen i <filename>/etc/smb.conf</filename>
 <programlisting>
 encrypt password = yes
@@ -488,15 +488,15 @@ eksisterende Unix-adgangskodefil (<filename>/etc/passwd</filename>):
 I SuSE 6.3 er <filename>smbpasswd.sh</filename> placeret i kataloget
 <filename>/usr/sbin</filename>, og katalogplaceringen skal med i
 kommandoen. Desuden har filen i den distribution ikke rettigheder til
-at kunne køres, hvilke den således skal tildeles, før kommandoen udføres.
+at kunne kÃ¸res, hvilke den sÃ¥ledes skal tildeles, fÃ¸r kommandoen udfÃ¸res.
 </para>
 
 <para>
 Kommandoen opretter filen til de krypterede adgangskoder, men den opretter 
-ikke selve de krypterede adgangskoder. Uanset om du vælger, at brugerne 
+ikke selve de krypterede adgangskoder. Uanset om du vÃ¦lger, at brugerne 
 skal have samme Samba-adgangskode, som de er tildelt som brugere i dit 
 Linux-system, skal du alligevel bagefter tildele dem krypterede 
-Samba-adgangskoder ved hjælp af kommandoen <command>smbpasswd</command>.
+Samba-adgangskoder ved hjÃ¦lp af kommandoen <command>smbpasswd</command>.
 </para>
 
 <para>
@@ -507,26 +507,26 @@ adgangskode med kommandoen <command>smbpasswd</command>.
 </para>
 
 <para>
-Du bør bruge samba-1.9.18p10 eller senere (2.0.7 er pt. den seneste),
-da kryptering er slået til som standard &ndash; dette gælder i hvert fald for
-Red Hat. Bruger du andre distributioner, bør du tjekke, hvordan Samba
-er sat op. Hvis du gerne vil oversætte dit eget programmel, skal
+Du bÃ¸r bruge samba-1.9.18p10 eller senere (2.0.7 er pt. den seneste),
+da kryptering er slÃ¥et til som standard &ndash; dette gÃ¦lder i hvert fald for
+Red Hat. Bruger du andre distributioner, bÃ¸r du tjekke, hvordan Samba
+er sat op. Hvis du gerne vil oversÃ¦tte dit eget programmel, skal
 du anvende linkerflaget <filename>-lcrypt</filename> til LIBSM. 
 </para>
 </sect2>
 
 <sect2 id="SambaconfigWin">
-<title>Opsætning af Windows 98/NT</title>
+<title>OpsÃ¦tning af Windows 98/NT</title>
 
 <para>
 Som udgangspunkt er Windows sat op til at sende krypterede
-adgangskoder, så hvis man ikke ønsker kryptering, skal dette fortælles til
-Windows, da man ellers ikke vil kunne logge sig på.
+adgangskoder, sÃ¥ hvis man ikke Ã¸nsker kryptering, skal dette fortÃ¦lles til
+Windows, da man ellers ikke vil kunne logge sig pÃ¥.
 </para>
 
 <para>
-På Windows 95/98-maskiner skal følgende skrives i
-registreringsdatabasen for at få Windows til at undlade at sende
+PÃ¥ Windows 95/98-maskiner skal fÃ¸lgende skrives i
+registreringsdatabasen for at fÃ¥ Windows til at undlade at sende
 krypterede adgangskoder:
 <programlisting>
 [HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VxD\VNETSUP]
@@ -543,8 +543,8 @@ Tilsvarende for Windows NT:
 </para>
 
 <para>
-Hvis man ikke har mod på at ændre i registreringsdatabasen selv, kan
-man kopiere en af følgende filer til sin Windows-maskine og afvikle dem
+Hvis man ikke har mod pÃ¥ at Ã¦ndre i registreringsdatabasen selv, kan
+man kopiere en af fÃ¸lgende filer til sin Windows-maskine og afvikle dem
 fra <command>stifinder</command>:
 </para>
 
@@ -556,35 +556,35 @@ fra <command>stifinder</command>:
 </itemizedlist>
 
 <para>
-Hvis man afvikler dem, vil ovenstående ændringer automatisk blive tilføjet i
+Hvis man afvikler dem, vil ovenstÃ¥ende Ã¦ndringer automatisk blive tilfÃ¸jet i
 registreringsdatabasen. 
 </para>
 
 <para>
-En meget udførlig beskrivelse af brugen findes i filen 
-<filename>ENCRYPTION.txt</filename>, som følger med Samba-distributionen.
+En meget udfÃ¸rlig beskrivelse af brugen findes i filen 
+<filename>ENCRYPTION.txt</filename>, som fÃ¸lger med Samba-distributionen.
 </para>
 
 <indexterm>
- <primary>Samba, opsætning</primary>
- <secondary>Opsætning af klienterne</secondary>
+ <primary>Samba, opsÃ¦tning</primary>
+ <secondary>OpsÃ¦tning af klienterne</secondary>
 </indexterm>
 </sect2>
 </sect1>
 
 <sect1 id="configWinClient">
-<title>Opsætning af klienterne</title>
+<title>OpsÃ¦tning af klienterne</title>
 
 <para>
-Nu har du sat Samba op på Linux-serveren samt besluttet dig for,
-om du vil benytte krypterede adgangskoder eller ej, så det eneste du
-mangler, er at få Windows-klienterne til at tilslutte sig domænet. I
-det følgende afsnit vil vi anvise en løsning på dette. Der knytter sig
-følgende forudsætninger til det efterfølgende eksempel:
+Nu har du sat Samba op pÃ¥ Linux-serveren samt besluttet dig for,
+om du vil benytte krypterede adgangskoder eller ej, sÃ¥ det eneste du
+mangler, er at fÃ¥ Windows-klienterne til at tilslutte sig domÃ¦net. I
+det fÃ¸lgende afsnit vil vi anvise en lÃ¸sning pÃ¥ dette. Der knytter sig
+fÃ¸lgende forudsÃ¦tninger til det efterfÃ¸lgende eksempel:
 </para>
 
 <para>
-Maskiner i vores netværk:
+Maskiner i vores netvÃ¦rk:
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
@@ -594,7 +594,7 @@ Maskiner i vores netværk:
 </itemizedlist>
 
 <indexterm>
- <primary>Samba, opsætningsfiler (eksempler) </primary>
+ <primary>Samba, opsÃ¦tningsfiler (eksempler) </primary>
  <secondary>/etc/hosts </secondary>
 </indexterm>
 
@@ -608,7 +608,7 @@ Indhold af filen <filename>/etc/hosts</filename>:
 </para>
 
 <indexterm>
- <primary>Samba, opsætningsfiler (eksempler) </primary>
+ <primary>Samba, opsÃ¦tningsfiler (eksempler) </primary>
  <secondary>/etc/smb.conf [ 2 ]</secondary>
 </indexterm>
 
@@ -656,42 +656,42 @@ Indhold af filen <filename>/etc/smb.conf</filename>:
 </para>
 
 <para>
-For at kunne få forbindelse til Samba-serveren, kræves der en fungerende
-løsning på navneopslag. Det kan løses på 2 måder:
+For at kunne fÃ¥ forbindelse til Samba-serveren, krÃ¦ves der en fungerende
+lÃ¸sning pÃ¥ navneopslag. Det kan lÃ¸ses pÃ¥ 2 mÃ¥der:
 </para>
 
 
 <itemizedlist mark="bullet" spacing="compact">
 <listitem>
 <para>
-Hosts og Lmhosts &ndash; netbios-way (har i øvrigt suffixet .sam): I disse filer
-skal samba-serveren være nævnt. Når du har foretaget ændringerne i
-filerne, skal deres navne ændres til Hosts og Lmhosts &ndash; efternavnene
-<filename>.sam</filename> skal altså udelades. Se eksempel på disse filer
+Hosts og Lmhosts &ndash; netbios-way (har i Ã¸vrigt suffixet .sam): I disse filer
+skal samba-serveren vÃ¦re nÃ¦vnt. NÃ¥r du har foretaget Ã¦ndringerne i
+filerne, skal deres navne Ã¦ndres til Hosts og Lmhosts &ndash; efternavnene
+<filename>.sam</filename> skal altsÃ¥ udelades. Se eksempel pÃ¥ disse filer
 senere. </para> 
 </listitem>
 
 <listitem>
 <para>
-Sæt Linux-serveren til at køre named &ndash; TCP/IP-way, 
-og fortæl Windows at den skal bruge 
-Linux-serveren som navneserver (DNS). Åbn
-indstillinger-&gt;kontrolpanel-&gt;netværk. Åbn 
-egenskaber for TCP/IP. Under fanebladet "Gateway" tilføjes
-192.168.1.1. Under fanebladet "DNS-opsætning" aktiveres DNS, i "Vært" skrives
-maskinens navn WS1 (det skal være det samme navn som blev angivet som
+SÃ¦t Linux-serveren til at kÃ¸re named &ndash; TCP/IP-way, 
+og fortÃ¦l Windows at den skal bruge 
+Linux-serveren som navneserver (DNS). Ã…bn
+indstillinger-&gt;kontrolpanel-&gt;netvÃ¦rk. Ã…bn 
+egenskaber for TCP/IP. Under fanebladet "Gateway" tilfÃ¸jes
+192.168.1.1. Under fanebladet "DNS-opsÃ¦tning" aktiveres DNS, i "VÃ¦rt" skrives
+maskinens navn WS1 (det skal vÃ¦re det samme navn som blev angivet som
 "Computernavn" i fanebladet "identifikation":
-Indstillinger-&gt;kontrolpanel-&gt;netværk). "Domæne" sættes til testdomain.
-Feltet "Rækkefølge" til søgning efter navneserver tilføjes 192.168.1.1
-(hvis den står som den første, går det hurtigere).
+Indstillinger-&gt;kontrolpanel-&gt;netvÃ¦rk). "DomÃ¦ne" sÃ¦ttes til testdomain.
+Feltet "RÃ¦kkefÃ¸lge" til sÃ¸gning efter navneserver tilfÃ¸jes 192.168.1.1
+(hvis den stÃ¥r som den fÃ¸rste, gÃ¥r det hurtigere).
 </para></listitem>
 </itemizedlist>
 
 
 <para>
-DOMÆNENAVN: Workgroup/domain-navn må ikke være sammenfaldende med
-host-navnet. Hvis samba, som i vores eksempel, kører på hosten
-test.domain.net, og har følgende stående i filen:
+DOMÃ†NENAVN: Workgroup/domain-navn mÃ¥ ikke vÃ¦re sammenfaldende med
+host-navnet. Hvis samba, som i vores eksempel, kÃ¸rer pÃ¥ hosten
+test.domain.net, og har fÃ¸lgende stÃ¥ende i filen:
 <filename>/etc/hosts</filename>:
 </para>
 
@@ -704,7 +704,7 @@ test.domain.net, og har følgende stående i filen:
 </para>
 
 <para>
-er følgende navne ikke tilladte for workgroup/domain:
+er fÃ¸lgende navne ikke tilladte for workgroup/domain:
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
@@ -715,7 +715,7 @@ er følgende navne ikke tilladte for workgroup/domain:
 
 
 <para>
-Disse vil formentlig være ulovlige i sig selv, da de indeholder et
+Disse vil formentlig vÃ¦re ulovlige i sig selv, da de indeholder et
 forbudt tegn.
 </para>
 
@@ -728,7 +728,7 @@ forbudt tegn.
 </para>
 
 <para>
-I dette afsnit kommer så vores eksempel på, hvordan filerne
+I dette afsnit kommer sÃ¥ vores eksempel pÃ¥, hvordan filerne
 <filename>Hosts</filename> og <filename>Lmhosts</filename> skal se ud.
 </para>
 
@@ -736,7 +736,7 @@ I dette afsnit kommer så vores eksempel på, hvordan filerne
 <title>Hosts</title>
 
 <indexterm>
- <primary>Samba, opsætningsfiler (eksempler) </primary>
+ <primary>Samba, opsÃ¦tningsfiler (eksempler) </primary>
  <secondary>C:\windows\Hosts </secondary>
 </indexterm>
 
@@ -779,7 +779,7 @@ For Windows NT gemmes filen som
 <title>Lmhosts</title>
 
 <indexterm>
- <primary>Samba, opsætningsfiler (eksempler) </primary>
+ <primary>Samba, opsÃ¦tningsfiler (eksempler) </primary>
  <secondary>C:\windows\Lmhosts </secondary>
 </indexterm>
 
@@ -886,10 +886,10 @@ For Windows NT gemmes filen som
 
 <para>
 Ud over man-siderne og dokumentationen, som installeres i
-<filename>/usr/doc</filename>, findes der en række bøger om Samba. Den 
-første bog er ikke
-blændende godt redigeret hele vejen igennem, men er ualmindelig rar at
-have stående som opslagsværk, hvis du administrerer en server med Samba.
+<filename>/usr/doc</filename>, findes der en rÃ¦kke bÃ¸ger om Samba. Den 
+fÃ¸rste bog er ikke
+blÃ¦ndende godt redigeret hele vejen igennem, men er ualmindelig rar at
+have stÃ¥ende som opslagsvÃ¦rk, hvis du administrerer en server med Samba.
 Sidst i bogen er der et rigtig godt kapitel om fejlfinding.
 </para>
 
@@ -899,7 +899,7 @@ Windows</emphasis>, Specialized Systems Consultants, Inc., ISBN:
 1-57831-006-7, 290 sider + cd-rom.
 </para>
 <para>
-Der findes også en glimrende online-bog fra O'Reilly, som
+Der findes ogsÃ¥ en glimrende online-bog fra O'Reilly, som
 hedder "Using Samba"
 <!--
 <ulink 
@@ -918,7 +918,7 @@ Sams Publishing 1999. ISBN 0-672-31609-9.
 
 <para>
 En god og kort artikel om Samba som Domain server er at finde
-på <ulink url="http://www.freeos.com/articles/3842/">http://www.freeos.com/articles/3842/</ulink>. Se også 
+pÃ¥ <ulink url="http://www.freeos.com/articles/3842/">http://www.freeos.com/articles/3842/</ulink>. Se ogsÃ¥ 
 <ulink url="http://www.linux-mag.com/2002-02/samba_01.html">http://www.linux-mag.com/2002-02/samba_01.html</ulink>.
 </para>
 

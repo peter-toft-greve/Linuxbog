@@ -1,7 +1,7 @@
 
 /* linuxbog.css 2000 06 20 - frank@sslug.dk */
 
-/* Først lidt generelle (taget fra sslug.css) :*/
+/* FÃ¸rst lidt generelle (taget fra sslug.css) :*/
 
 BODY {  
    color:               #000000;
@@ -113,9 +113,9 @@ A.offsite {
 }
 
 
-/* Så de lidt mere specifike til Linuxbog .
+/* SÃ¥ de lidt mere specifike til Linuxbog .
    Der er ganske mange klasser der anvendes i linuxbog,
-   så de må blive tilføjet efterhånden */
+   sÃ¥ de mÃ¥ blive tilfÃ¸jet efterhÃ¥nden */
   
 .USERINPUT {
    font-family:  	monospace; 

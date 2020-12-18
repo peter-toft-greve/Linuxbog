@@ -9,7 +9,7 @@
 <sect1 id="ooo-punktopstilling-simpel">
   <title>Simpel punktopstilling</title>
 
-<para>En punktopstilling (liste) består af et antal afsnit markeret med
+<para>En punktopstilling (liste) bestÃ¥r af et antal afsnit markeret med
     punkter, som f.eks. herunder. Alternativt kan du lave en nummereret
     liste.</para>
 
@@ -17,10 +17,10 @@
   <listitem>
 
 <para>Knapperne <figure float="1" id="fig-ooo-objektlinjepunktopstilling">
-<title>Punktopstilling på objektlinie</title>
+<title>Punktopstilling pÃ¥ objektlinie</title>
 <graphic fileref="objektlinjepunktopstil.&magic;" scale="60"></graphic>
 </figure>
- sætter
+ sÃ¦tter
         og sletter nummerering/punkttegn. Tastatur: <emphasis>F12</emphasis> nummerering
         til/fra. <emphasis>Skift-F12</emphasis> punkttegn til/fra.</para>
 
@@ -28,15 +28,15 @@
 
   <listitem>
 
-<para>Når du skifter afsnit (med <emphasis>Enter</emphasis>) bliver det næste afsnit
+<para>NÃ¥r du skifter afsnit (med <emphasis>Enter</emphasis>) bliver det nÃ¦ste afsnit
         automatisk udstyret med samme nummerering/punkttegn.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Når markøren står <emphasis>umiddelbart til højre for</emphasis> punkttegnet, så
-        kan du gøre sådan:</para>
+<para>NÃ¥r markÃ¸ren stÃ¥r <emphasis>umiddelbart til hÃ¸jre for</emphasis> punkttegnet, sÃ¥
+        kan du gÃ¸re sÃ¥dan:</para>
 
 </listitem>
 
@@ -48,7 +48,7 @@
 
   <listitem>
 
-<para>Tast <emphasis>Backspace</emphasis> for at slette punkttegnet, så du har
+<para>Tast <emphasis>Backspace</emphasis> for at slette punkttegnet, sÃ¥ du har
             flere afsnit under samme punkt.</para>
 
 </listitem>
@@ -56,28 +56,28 @@
   <listitem>
 
 
-<para>Tast <emphasis>Tab</emphasis> for at gå et niveau ned, så du får et
+<para>Tast <emphasis>Tab</emphasis> for at gÃ¥ et niveau ned, sÃ¥ du fÃ¥r et
             underpunkt.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Tast <emphasis>Shift-Tab</emphasis> for at gå et niveau op.</para>
+<para>Tast <emphasis>Shift-Tab</emphasis> for at gÃ¥ et niveau op.</para>
 
 
 </listitem>
 
       <listitem>
 
-<para>Når et afsnit er udstyret med punkttegn dukker knappen
+<para>NÃ¥r et afsnit er udstyret med punkttegn dukker knappen
 <figure float="1" id="fig-ooo-objektlinieskift">
-<title>Linjeskift på objekt linien</title>
+<title>Linjeskift pÃ¥ objekt linien</title>
 <graphic fileref="objektlinjeskift.&magic;" scale="60"></graphic>
 </figure>
- op til højre i objektlinjen Her kan du
-        skifte mellem den sædvanlige objektlinje og en <emphasis>Nummereringsobjektlinje</emphasis> , hvor du finder diverse værktøjer til
-        at indstille punktopstillingen. (Den gennemgås ikke her).</para>
+ op til hÃ¸jre i objektlinjen Her kan du
+        skifte mellem den sÃ¦dvanlige objektlinje og en <emphasis>Nummereringsobjektlinje</emphasis> , hvor du finder diverse vÃ¦rktÃ¸jer til
+        at indstille punktopstillingen. (Den gennemgÃ¥s ikke her).</para>
 
 </listitem>
 </itemizedlist>

@@ -5,9 +5,9 @@
  <title>Afsnit</title>
 
  <para>
-  Dette kapitel handler om hård formatering af afsnit, f.eks.
-  linjeafstand, indrykning osv. Blød formatering med
-  afsnitstypografier gennemgås i <xref linkend="ooo-typografier"/>kapitel
+  Dette kapitel handler om hÃ¥rd formatering af afsnit, f.eks.
+  linjeafstand, indrykning osv. BlÃ¸d formatering med
+  afsnitstypografier gennemgÃ¥s i <xref linkend="ooo-typografier"/>kapitel
   8.
  </para>
     
@@ -21,11 +21,11 @@
   </para>
 
   <para>
-   Figuren viser de vigtigste størrelser:
-   <emphasis>Indrykning</emphasis> til venstre og højre (i forhold til
+   Figuren viser de vigtigste stÃ¸rrelser:
+   <emphasis>Indrykning</emphasis> til venstre og hÃ¸jre (i forhold til
    sidemargen/spaltemargen), <emphasis>afstand</emphasis> foroven og
-   forneden (i forhold til forrige/næste afsnit),
-   <emphasis>indrykning</emphasis> af første linje i afsnittet.
+   forneden (i forhold til forrige/nÃ¦ste afsnit),
+   <emphasis>indrykning</emphasis> af fÃ¸rste linje i afsnittet.
   </para>
 
   <para>
@@ -43,18 +43,18 @@
    <listitem>
     <para>
      <emphasis>Justeringen</emphasis> bestemmer hvad der skal ske med
-     de ekstra mellemrum, som programmet er nødt til at sætte ind for
-     at få linjerne til at passe med bredden af afsnittet. Afsnittet
-     kan være <emphasis>venstrestillet</emphasis> ,
-     <emphasis>højrestillet</emphasis> ,
+     de ekstra mellemrum, som programmet er nÃ¸dt til at sÃ¦tte ind for
+     at fÃ¥ linjerne til at passe med bredden af afsnittet. Afsnittet
+     kan vÃ¦re <emphasis>venstrestillet</emphasis> ,
+     <emphasis>hÃ¸jrestillet</emphasis> ,
      <emphasis>centreret</emphasis> eller med <emphasis>lige
      margener</emphasis>.
     </para>
 
     <para>
-     I det sidste tilfælde fordeles mellemrummene jævnt mellem ordene.
+     I det sidste tilfÃ¦lde fordeles mellemrummene jÃ¦vnt mellem ordene.
      Hvis du aktiverer orddeling kan du mindske behovet for ekstra
-     mellemrum, det er især vigtigt hvis du bruger lige margener. Se
+     mellemrum, det er isÃ¦r vigtigt hvis du bruger lige margener. Se
      <xref linkend="ooo-orddeling"/>kapitel 18, <xref linkend="ooo-orddeling"/>afsnit 18.4. om orddeling.
     </para>
    </listitem>
@@ -62,26 +62,26 @@
    <listitem>
     <para>
      <emphasis>Linjeafstanden</emphasis> er afstanden mellem de
-     basislinjer, som tegnene placeres på; se figuren i forrige <xref linkend="ooo-tegn-og-skriftsnit"/>kapitel.
+     basislinjer, som tegnene placeres pÃ¥; se figuren i forrige <xref linkend="ooo-tegn-og-skriftsnit"/>kapitel.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     Med <emphasis>enkelt</emphasis> linjeafstand sættes
-     linjeafstanden lig størrelsen af tegnene (f.eks. 10&nbsp;punkter
-     ved 10&nbsp;punkts skrift). Det er altså den mindst mulige
+     Med <emphasis>enkelt</emphasis> linjeafstand sÃ¦ttes
+     linjeafstanden lig stÃ¸rrelsen af tegnene (f.eks. 10&nbsp;punkter
+     ved 10&nbsp;punkts skrift). Det er altsÃ¥ den mindst mulige
      linjeafstand, hvis tegnene ikke skal overlappe. Navnet er et levn
      fra skrivemaskinens tid; faktisk giver det ikke helt mening da en
-     linjes højde jo ikke er fast.
+     linjes hÃ¸jde jo ikke er fast.
     </para>
    </listitem>
 
    <listitem>
     <para>
      Med <emphasis>halvanden</emphasis> eller
-     <emphasis>dobbelt</emphasis> linjeafstand sættes linjeafstanden
-     til 1,5 eller 2 gange så meget. (På figuren er afsnittet med
+     <emphasis>dobbelt</emphasis> linjeafstand sÃ¦ttes linjeafstanden
+     til 1,5 eller 2 gange sÃ¥ meget. (PÃ¥ figuren er afsnittet med
      halvanden linjeafstand).
     </para>
    </listitem>

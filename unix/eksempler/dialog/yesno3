@@ -1,7 +1,7 @@
 #! /bin/sh
 # Filnavn: yesno3
-if dialog --yesno "Fortsæt?" 0 0; then
-	echo "Du valgte at forsætte."
+if dialog --yesno "FortsÃ¦t?" 0 0; then
+	echo "Du valgte at forsÃ¦tte."
 else
-	echo "Du valgte IKKE at fortsætte."
+	echo "Du valgte IKKE at fortsÃ¦tte."
 fi

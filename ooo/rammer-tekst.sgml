@@ -4,46 +4,46 @@
 <chapter id="ooo-rammer-tekst">
  <title>Tekstrammer</title>
 
-<para>Dette kapitel handler om, hvordan du kan indsætte og bruge en
+<para>Dette kapitel handler om, hvordan du kan indsÃ¦tte og bruge en
     tekstramme.</para>
 
 <sect1 id="ooo-rammer-tekst-indsaet">
-  <title>Indsætte en tekstramme</title>
+  <title>IndsÃ¦tte en tekstramme</title>
 
 <para>En tekstramme fungerer ligesom et stykke grafik, men i stedet for
     grafik indeholder en tekstramme noget tekst, som du kan indtaste som
     normal tekst.</para>
 
-<para>Fremgangsmåden for at indsætte en tekstramme er sådan:</para>
+<para>FremgangsmÃ¥den for at indsÃ¦tte en tekstramme er sÃ¥dan:</para>
 
 <orderedlist>
       <listitem>
 
-<para>Placer markøren det sted i dokumentet, tekstrammen skal være. Hvis
-        du har noget tekst, som skal med, så marker det.</para>
+<para>Placer markÃ¸ren det sted i dokumentet, tekstrammen skal vÃ¦re. Hvis
+        du har noget tekst, som skal med, sÃ¥ marker det.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Vælg <emphasis>Indsæt/Ramme</emphasis>.</para>
+<para>VÃ¦lg <emphasis>IndsÃ¦t/Ramme</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Vælg f.eks. størrelse på rammen i fanebladet <emphasis>Type</emphasis>, ialt er
-        der 8 faneblade der kan vælges til formatering af en tekstramme.</para>
+<para>VÃ¦lg f.eks. stÃ¸rrelse pÃ¥ rammen i fanebladet <emphasis>Type</emphasis>, ialt er
+        der 8 faneblade der kan vÃ¦lges til formatering af en tekstramme.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Klik på <emphasis>OK</emphasis>.</para>
+<para>Klik pÃ¥ <emphasis>OK</emphasis>.</para>
 
 </listitem>
     </orderedlist>
- </sect1>    <!--   17.1. Indsætte en tekstramme -->
+ </sect1>    <!--   17.1. IndsÃ¦tte en tekstramme -->
 
 <!-- 17.2 --> &ooo-rammer-tekst-brug;
 

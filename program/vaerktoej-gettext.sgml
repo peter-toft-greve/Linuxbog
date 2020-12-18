@@ -5,35 +5,35 @@
 
  <indexterm>
   <primary>gettext</primary>
-  <secondary>forberedelse af oversættelse med</secondary>
+  <secondary>forberedelse af oversÃ¦ttelse med</secondary>
  </indexterm>
 
  <indexterm>
-  <primary>oversættelse</primary>
+  <primary>oversÃ¦ttelse</primary>
   <secondary>med gettext, forberedelse af</secondary>
  </indexterm>
 
  <indexterm>
-  <primary>forberedelse af oversættelse</primary>
+  <primary>forberedelse af oversÃ¦ttelse</primary>
   <secondary>med gettext</secondary>
  </indexterm>
 
  <para>
-  Gettext er et værktøj du bør bruge til at gøre det enkelt for andre
-  at oversætte menutekster m.m. i dine programmer til andre sprog.
+  Gettext er et vÃ¦rktÃ¸j du bÃ¸r bruge til at gÃ¸re det enkelt for andre
+  at oversÃ¦tte menutekster m.m. i dine programmer til andre sprog.
   Princippet i Gettext er at man skriver sit program med alle
-  teksterne til brugergrænsefladen på ét sprog (typisk amerikansk),
+  teksterne til brugergrÃ¦nsefladen pÃ¥ Ã©t sprog (typisk amerikansk),
   men indkapsler dem i et funktionskald til Gettext-biblioteket der
-  slår oversættelsen af teksten op i en database for det sprog
+  slÃ¥r oversÃ¦ttelsen af teksten op i en database for det sprog
   brugeren har valgt.
  </para>
 
  <example id="program-gettext-posix-shell">
-  <title>Eksempel på brug af Gettext fra et POSIX Shell-program</title>
+  <title>Eksempel pÃ¥ brug af Gettext fra et POSIX Shell-program</title>
 
   <para>
-   Selv i et POSIX Shell-program kan vi bruge Gettext til at håndtere
-   oversættelsen af de tekster brugeren skal se.  Vi bruger et
+   Selv i et POSIX Shell-program kan vi bruge Gettext til at hÃ¥ndtere
+   oversÃ¦ttelsen af de tekster brugeren skal se.  Vi bruger et
    program, `<command>hej</command>`, der bare skriver "Hej Verden."
    som eksempel:
 <programlisting>
@@ -43,48 +43,48 @@ echo "Hej Verden."
   </para>
 
   <para>
-   Det er gængs praksis at bruge amerikansk engelsk som det
-   grundlæggende sprog i programmer der skal kunne oversættes til alle
-   mulige sprog, så nu bruger vi i stedet for teksten "Hello World."
+   Det er gÃ¦ngs praksis at bruge amerikansk engelsk som det
+   grundlÃ¦ggende sprog i programmer der skal kunne oversÃ¦ttes til alle
+   mulige sprog, sÃ¥ nu bruger vi i stedet for teksten "Hello World."
    samtidig med at vi erstatter `<command>echo</command>` med
    `<command>gettext --domain eksempel -s</command>`, hvor "eksempel"
-   er navnet på en samling oversættelser og "-s" får
+   er navnet pÃ¥ en samling oversÃ¦ttelser og "-s" fÃ¥r
    `<command>gettext</command>` til at efterligne
    `<command>echo</command>`:
 <programlisting>
 #! /bin/sh
 gettext --domain eksempel -s "Hello World."
 </programlisting>
-   Hvis man bare uden videre kører dette program, skulle det gerne
-   skrive "Hello World.", da `<command>gettext</command>` når den ikke
-   kan finde filen med oversættelserne (her
+   Hvis man bare uden videre kÃ¸rer dette program, skulle det gerne
+   skrive "Hello World.", da `<command>gettext</command>` nÃ¥r den ikke
+   kan finde filen med oversÃ¦ttelserne (her
    "<filename>/usr/share/locale/da/LC_MESSAGES/eksempel.mo</filename>")
-   eller ikke kan finde teksten der skal oversættes (her "Hello
-   World.") i filen med oversættelserne, bare udskriver teksten på
-   originalsproget (som den står i programmet).
+   eller ikke kan finde teksten der skal oversÃ¦ttes (her "Hello
+   World.") i filen med oversÃ¦ttelserne, bare udskriver teksten pÃ¥
+   originalsproget (som den stÃ¥r i programmet).
   </para>
 
   <para>
-   Nu laver vi så en oversættelse af programmet til dansk.
+   Nu laver vi sÃ¥ en oversÃ¦ttelse af programmet til dansk.
    Kildeteksten er filen <filename>eksempel.da.po</filename>:
 <programlisting>
 msgid "Hello World."
 msgstr "Hej Verden."
 </programlisting>
-   Den kan vi oversætte til Gettexts interne format
+   Den kan vi oversÃ¦tte til Gettexts interne format
    ("<filename>.mo</filename>") med programmet
    `<command>msgfmt</command>`:
 <screen>
 <prompt>hven% </prompt><userinput>msgfmt --output-file=eksempel.da.mo eksempel.da.po</userinput>
 </screen>
    For at vi kan bruge den skal den helst flyttes til systemets
-   standardkatalog for danske oversættelser,
+   standardkatalog for danske oversÃ¦ttelser,
    <filename>/usr/share/locale/da/LC_MESSAGES/</filename>:
 <screen>
 <prompt>hven% </prompt><userinput>su -c 'cp eksempel.da.mo /usr/share/locale/da/LC_MESSAGES/eksempel.mo'</userinput>
 Password:
 </screen>
-   Hvis du nu stiller om til at dine programmer skal være på dansk
+   Hvis du nu stiller om til at dine programmer skal vÃ¦re pÃ¥ dansk
    (kun i den aktive kommandofortolker) vil programmet skrive "Hej
    Verden." i stedet for "Hello World.":
 <screen>
@@ -94,8 +94,8 @@ Hello World.
 <prompt>hven% </prompt><userinput>./hej</userinput>
 Hej Verden.
 </screen>
-   Vi kan selvfølgelig også stille sproget om til færøsk, men da vi
-   ikke har oversat programmet endnu, vil vi bare få teksten ud på
+   Vi kan selvfÃ¸lgelig ogsÃ¥ stille sproget om til fÃ¦rÃ¸sk, men da vi
+   ikke har oversat programmet endnu, vil vi bare fÃ¥ teksten ud pÃ¥
    originalsproget:
 <screen>
 <prompt>hven% </prompt><userinput>export LANG=fo_FO.ISO8859-1</userinput>
@@ -106,7 +106,7 @@ Hello World.
  </example>
 
  <example id="program-gettext-ada">
-  <title>Eksempel på brug af Gettext fra et Ada-program</title>
+  <title>Eksempel pÃ¥ brug af Gettext fra et Ada-program</title>
 
   <para>
    (kommer senere)
@@ -114,7 +114,7 @@ Hello World.
  </example>
 
  <example id="program-gettext-c">
-  <title>Eksempel på brug af Gettext fra et C-program</title>
+  <title>Eksempel pÃ¥ brug af Gettext fra et C-program</title>
 
   <para>
    (kommer senere)
@@ -122,9 +122,9 @@ Hello World.
  </example>
 
  <para>
-  Når et program er forberedt til oversættelse med "gettext", er det
-  næste skridt at oversætte det. Til det formål er KBabel (<ulink
+  NÃ¥r et program er forberedt til oversÃ¦ttelse med "gettext", er det
+  nÃ¦ste skridt at oversÃ¦tte det. Til det formÃ¥l er KBabel (<ulink
   url="http://www.klid.dk/dansk/kbabel.html">http://www.klid.dk/dansk/kbabel.html</ulink>)
-  nok det bedste værktøj.
+  nok det bedste vÃ¦rktÃ¸j.
  </para>
 </sect1>

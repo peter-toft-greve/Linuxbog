@@ -3,31 +3,31 @@
 
     
 <sect1 id="ooo-rammer-fra-ms-windows-clip-board">
-<title>Indsætte grafik fra windows klippebordet</title>
+<title>IndsÃ¦tte grafik fra windows klippebordet</title>
 
-<para>Vha. windows klippebordet kan du indsætte grafik fra andre
+<para>Vha. windows klippebordet kan du indsÃ¦tte grafik fra andre
     programmer:</para>
 
 <orderedlist>
       <listitem>
 
 <para>Kopier grafikken til klippebordet med det andet program. <emphasis>Eksempel</emphasis> : I din browser f.eks. Mozilla ell. Opera kan du
-        kopiere et billede ved at <emphasis>højreklikke</emphasis> på billedet og vælge
+        kopiere et billede ved at <emphasis>hÃ¸jreklikke</emphasis> pÃ¥ billedet og vÃ¦lge
         <emphasis>Kopier billede</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Derefter indsættes grafikken ligesom tekst (se under redigering),
-        dvs. enten ved at vælge <emphasis>Rediger/Sæt ind</emphasis> eller taste
+<para>Derefter indsÃ¦ttes grafikken ligesom tekst (se under redigering),
+        dvs. enten ved at vÃ¦lge <emphasis>Rediger/SÃ¦t ind</emphasis> eller taste
         <emphasis>Ctrl-V</emphasis>.</para>
 
 </listitem>
     </orderedlist>
 
-<para>Du skulle nu få et skærmbillede i stil med <xref linkend="ooo-rammer-fra-fil"/>.</para>
+<para>Du skulle nu fÃ¥ et skÃ¦rmbillede i stil med <xref linkend="ooo-rammer-fra-fil"/>.</para>
 
-</sect1>    <!--   16.3. Indsætte grafik fra windows
+</sect1>    <!--   16.3. IndsÃ¦tte grafik fra windows
     klippebordet -->
 

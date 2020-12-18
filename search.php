@@ -2,13 +2,13 @@
 <HTML>
 <HEAD>
    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
-   <TITLE>Linux - Friheden til at vælge</TITLE>
+   <TITLE>Linux - Friheden til at vÃ¦lge</TITLE>
 </HEAD>
 <BODY>
 
 <?php
    // $Id$
-   // Første version af Hans Schou.
+   // FÃ¸rste version af Hans Schou.
 
    /* top.phtml sets 
       <!--DOCTYPE ....
@@ -16,8 +16,8 @@
       ... [topmenu] ...
    */
    $htmltitle_en="SSLUG - Liberty of searching in sgml files";
-   $htmltitle_da="SSLUG - Friheden til at søge i bøger";
-   $htmltitle_sv="SSLUG - Friheden til at söke i böcker";
+   $htmltitle_da="SSLUG - Friheden til at sÃ¸ge i bÃ¸ger";
+   $htmltitle_sv="SSLUG - Friheden til at sÃ¶ke i bÃ¶cker";
    $bodyarg=" background=\"/grafix/linux-back-1.gif\" ";
    $maintain_name = "Hans Schou";       // Skriv dit navn her
    $maintain_email = "chlor@sslug.dk";  // Skriv din email adresse her
@@ -38,20 +38,20 @@
 
 ?>
 
-<img src="front.png" alt="Friheden til at skrive bøger"
+<img src="front.png" alt="Friheden til at skrive bÃ¸ger"
  align="right" width="<? echo $width ?>" height="<? echo $height ?>">
-<h1>SSLUG - Friheden til at søge i sgml/html-filer</h1>
+<h1>SSLUG - Friheden til at sÃ¸ge i sgml/html-filer</h1>
 
 <form action="<?php echo $PHP_SELF ?>" method="get">
-Søg i
+SÃ¸g i
 <input type=radio name=ml value="sg"<?php echo $ml=="sg"?" checked":"" ?>> SGML
 <input type=radio name=ml value="ht"<?php echo $ml=="ht"?" checked":"" ?>> HTML
 <br>
-Søg efter:
+SÃ¸g efter:
 <input type="text" name="q" value="<?php echo $q ?>" size="40">
 <input type="submit" name="s" value="Submit">
 <br>
-<font size="-1">Der søges med <a href="unix/bog/joker-redir-pipe.html#regexp">regulære udtryk</a> - case insentive</font>
+<font size="-1">Der sÃ¸ges med <a href="unix/bog/joker-redir-pipe.html#regexp">regulÃ¦re udtryk</a> - case insentive</font>
 </form>
 
 <?php
@@ -92,7 +92,7 @@ function searchdir( $dir, $ext, $q ) {
 }
 
 /*
- Man er doven. Vi gider kun søge i de filer der
+ Man er doven. Vi gider kun sÃ¸ge i de filer der
  ligger i de sub-dir der er i dette sub-dir.
 */
 
@@ -102,10 +102,10 @@ if ($q) {
   $d = dir(".");
   while ($dir = $d->read())
     if (is_dir($dir)) {
-      # Prøv og find nogle SGML filer
+      # PrÃ¸v og find nogle SGML filer
       if ($ml=="sg" && preg_match("|^[a-z0-9]+$|", $dir))
         $count += searchdir($dir, "sgml", $q);
-      # prøv med HTML
+      # prÃ¸v med HTML
       if ($ml=="ht" && is_dir("$dir/bog"))
         $count += searchdir("$dir/bog", "html", $q);
     }

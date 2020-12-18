@@ -9,7 +9,7 @@
    ISBN 0-13-110362-8
    side 6 i second edition.
 
-  Oversætter: gcc -o hello hello.c
+  OversÃ¦tter: gcc -o hello hello.c
 
   Afvikling: ./hello
 */

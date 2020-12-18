@@ -8,77 +8,77 @@
 
 <para>Windows-el er ikke en windowmanager i almindelig forstand, den kan
 faktisk kun bruges til at styre emacs-vinduer, men hvem har brug for
-andet? At windows-el ikke er en windowmanager betyder også at du kan
+andet? At windows-el ikke er en windowmanager betyder ogsÃ¥ at du kan
 bruge den sammen med enhver windowmanager.</para>
 
-<para>Faktisk er windows-el et forholdsvis stærkt værktøj til at styre
+<para>Faktisk er windows-el et forholdsvis stÃ¦rkt vÃ¦rktÃ¸j til at styre
 sin emacs.</para>
 
-<para>Det er nok mest brugbart i konsollen, men her er et skærmbillede af
+<para>Det er nok mest brugbart i konsollen, men her er et skÃ¦rmbillede af
 X med en <filename>.xsession</filename>-fil der kun starter en Emacs, og hvor
-windows-el så er brugt til at lave et ekstra vindue.</para>
+windows-el sÃ¥ er brugt til at lave et ekstra vindue.</para>
 
 <figure id="windows-el-hel-fig" float="1">
 <title>Windows-el</title>
 <graphic fileref="windows_el_hel.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Dem der bruger emacs <emphasis>frame</emphasis> -funktionalitet, synes måske
+<para>Dem der bruger emacs <emphasis>frame</emphasis> -funktionalitet, synes mÃ¥ske
 ikke det ser specielt imponerende ud. Men der er fordele. Man kan
 skifte mellem vinduerne med C-c <emphasis>vinduesnummer</emphasis> (man kan have 9
 vinduer), og hvis man af en eller anden grund ikke har en window
-manager (se senere) sørger emacs rent faktisk for at hæve det vindue
-der har fokus (det kan dog ikke ses på cursoren).</para>
+manager (se senere) sÃ¸rger emacs rent faktisk for at hÃ¦ve det vindue
+der har fokus (det kan dog ikke ses pÃ¥ cursoren).</para>
 
 <para>En anden rar funktion er <emphasis>See you!</emphasis> / <emphasis>Revive!</emphasis> . Ved at
-trykke C-x C, får man emacs til at gemme oplysninger om vinduernes
-placering og hvilke filer der er åbne i hvert vindue inden emacs
-afsluttes. Næste gang man starter emacs op, kan man så vælge
-trykke C-c, C-w, C-r R, så henter den de oplysninger og åbne de
+trykke C-x C, fÃ¥r man emacs til at gemme oplysninger om vinduernes
+placering og hvilke filer der er Ã¥bne i hvert vindue inden emacs
+afsluttes. NÃ¦ste gang man starter emacs op, kan man sÃ¥ vÃ¦lge
+trykke C-c, C-w, C-r R, sÃ¥ henter den de oplysninger og Ã¥bne de
 forskellige filer i de rigtige vinduer.</para>
 
 <sect2 id="wm-windows-el-no-wm">
-  <title>At undvære en windowmanager?</title>
+  <title>At undvÃ¦re en windowmanager?</title>
 
 <para>
 Faktisk kan man godt anvende X uden en windowmanager. Det eneste det
-egentlig kræver er at man fra sin <filename>.xsession</filename> starter et
-program der kan bruges til at starte andre programmer (så man har en
-chance for at få lavet noget). Et terminalemuleringsprogram efter eget
+egentlig krÃ¦ver er at man fra sin <filename>.xsession</filename> starter et
+program der kan bruges til at starte andre programmer (sÃ¥ man har en
+chance for at fÃ¥ lavet noget). Et terminalemuleringsprogram efter eget
 valg (xterm, eterm, gnome-terminal, konsole, ...) er nok det
-smarteste, men som man kan se af det foregående afsnit er emacs også
+smarteste, men som man kan se af det foregÃ¥ende afsnit er emacs ogsÃ¥
 en mulighed.</para>
 
 <sect3 id="wm-windows-el-jamen">
-  <title>Jamen, hvordan gør man så?</title>
+  <title>Jamen, hvordan gÃ¸r man sÃ¥?</title>
 
 <para>
-Fokus følger musen, så sålænge man kan se et vindue har man mulighed
+Fokus fÃ¸lger musen, sÃ¥ sÃ¥lÃ¦nge man kan se et vindue har man mulighed
 for at bruge det, i det omfang det tillader betjening via tastaturet.</para>
 
 <para>
-Det er ret klart at det vil være en fordel at vinduer ikke overlapper,
-men man kan ikke flytte vinduer eller ændre størrelse på
-dem. Løsningen på det er kun at bruge programmer der forstår
-<filename>-geometry</filename> -argumentet (det gør de fleste
-X-programmer der er et par år gamle). Syntaksen for
+Det er ret klart at det vil vÃ¦re en fordel at vinduer ikke overlapper,
+men man kan ikke flytte vinduer eller Ã¦ndre stÃ¸rrelse pÃ¥
+dem. LÃ¸sningen pÃ¥ det er kun at bruge programmer der forstÃ¥r
+<filename>-geometry</filename> -argumentet (det gÃ¸r de fleste
+X-programmer der er et par Ã¥r gamle). Syntaksen for
 <filename>-geometry</filename> -argumentet er
-<emphasis>bredde</emphasis> x <emphasis>højde</emphasis>
+<emphasis>bredde</emphasis> x <emphasis>hÃ¸jde</emphasis>
 <emphasis>+x</emphasis> <emphasis>+y</emphasis>. Man kan
 udelade enten <emphasis>bredde</emphasis> x
-<emphasis>højde</emphasis>, eller 
+<emphasis>hÃ¸jde</emphasis>, eller 
 <emphasis>+x</emphasis> <emphasis>+y</emphasis>.  Bredde
-og højde angives i tegn for programmer der tegnbaserede (f.eks. bruger
-jeg tit `xterm -geometry 80x40` for at få en xterm med 40 linjer) og
-ellers i pixels. X- og y-koordinater kan både angives med
+og hÃ¸jde angives i tegn for programmer der tegnbaserede (f.eks. bruger
+jeg tit `xterm -geometry 80x40` for at fÃ¥ en xterm med 40 linjer) og
+ellers i pixels. X- og y-koordinater kan bÃ¥de angives med
 <emphasis>+</emphasis> eller <emphasis>-</emphasis> . Hvis
 x-koordinaten er positiv angiver den hvor mange pixels fra venstre
-side af skærmen vinduets venstre kant skal placeres, og hvis den er
-negativ hvor mange pixels fra skærmens højre side vinduets højre kant
-skal placeres. Tilsvarende for y-koordinater. Man kan altså placere et
-vindue i nederste højre hjørne med <filename>-geometry -0-0</filename>.
+side af skÃ¦rmen vinduets venstre kant skal placeres, og hvis den er
+negativ hvor mange pixels fra skÃ¦rmens hÃ¸jre side vinduets hÃ¸jre kant
+skal placeres. Tilsvarende for y-koordinater. Man kan altsÃ¥ placere et
+vindue i nederste hÃ¸jre hjÃ¸rne med <filename>-geometry -0-0</filename>.
 </para> 
-</sect3> <!-- Jamen, hvordan gør man så? -->
+</sect3> <!-- Jamen, hvordan gÃ¸r man sÃ¥? -->
 </sect2>
 
 <sect2 id="wm-windows-el-fed">
@@ -86,8 +86,8 @@ vindue i nederste højre hjørne med <filename>-geometry -0-0</filename>.
 
 <para> 
 Kun hvis man ved med sikkerhed at vinduerne til de programmer man
-skal bruge kan være på skærmen samtidigt uden at overlappe. 
-Så kan det komme til at se sådan her ud:
+skal bruge kan vÃ¦re pÃ¥ skÃ¦rmen samtidigt uden at overlappe. 
+SÃ¥ kan det komme til at se sÃ¥dan her ud:
 </para>
 
 
@@ -97,9 +97,9 @@ Så kan det komme til at se sådan her ud:
 </figure>
 
 <para>Men hvis du en dag skulle komme i en situation, hvor tingene bare
-ikke virker, kan det være rart at vide. Hvis du i Gnome/KDE vælger en
-fejlsikret session, får du f.eks. en xterm og intet andet. 
-Desuden er <filename>-geometry</filename> god at kende, det er bare trist at så mange
-nyere programmer ikke forstår det.</para>
+ikke virker, kan det vÃ¦re rart at vide. Hvis du i Gnome/KDE vÃ¦lger en
+fejlsikret session, fÃ¥r du f.eks. en xterm og intet andet. 
+Desuden er <filename>-geometry</filename> god at kende, det er bare trist at sÃ¥ mange
+nyere programmer ikke forstÃ¥r det.</para>
 </sect2>
 </sect1>

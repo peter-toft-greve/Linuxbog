@@ -4,13 +4,13 @@
 
 <para>
 Igennem tiden har bogen udviklet sig
-meget. Vi frigiver ofte nye versioner, når der er kommer en del
+meget. Vi frigiver ofte nye versioner, nÃ¥r der er kommer en del
 rettelser ind, eller nye afsnit er blevet skrevet.  Kommentarer, ris
 og ros, og specielt fejl og mangler bedes sendt til <ulink
 url="mailto:linuxbog@sslug.dk">linuxbog@sslug.dk</ulink>, men er du
-medlem af SSLUG så skriv til 
+medlem af SSLUG sÃ¥ skriv til 
 <ulink url="mailto:sslug-bog@sslug.dk">sslug-bog@sslug.dk</ulink>. Her er en
-liste over, hvad der er ændret i bogen.
+liste over, hvad der er Ã¦ndret i bogen.
 </para>
 
 
@@ -19,7 +19,7 @@ liste over, hvad der er ændret i bogen.
 
 <listitem><para>
 Hans Schou har flyttet afsnittet <filename>/README</filename> ind
-i denne bog som et selvstændigt kapitel.
+i denne bog som et selvstÃ¦ndigt kapitel.
 Se <xref linkend="ftav"/>.
 </para></listitem>
 
@@ -29,25 +29,25 @@ Henrik Zederkof bidrager med oplysninger om nxml mode til Emacs,
 sekunderet af Donald Axel, som skriver om Gvim completion modes
 og syntax. 
 Jesper Laisen: Beskrivelse af &lt;img alt=""&gt; til mindre
-betydningsfulde billeder (ikoner/hjørner m.v.)
+betydningsfulde billeder (ikoner/hjÃ¸rner m.v.)
 Jacob Sparre Andersen: Forskellige sproglige fejl rettet. Strammet forordet op. Rettet HTML-eksempler til.
 </para></listitem>
 
 <listitem><para>
 Version 2.7 - 25. januar 2004:
 
-Peter Toft: Slåfejl rettet.
+Peter Toft: SlÃ¥fejl rettet.
 </para></listitem>
 
 <listitem><para>
 Version 2.6 - 7. oktober 2003:
-Mads Bondo Dydensborg har skrevet et afsnit om billedstørrelser, dpi
+Mads Bondo Dydensborg har skrevet et afsnit om billedstÃ¸rrelser, dpi
 og scale parameteren til Docbook.
-Michael Rasmussen påbegynder kapitel om WYSIWYG fremstilling af
-DocBook filer. I denne initiale udgave er tilføjet afsnittet med
+Michael Rasmussen pÃ¥begynder kapitel om WYSIWYG fremstilling af
+DocBook filer. I denne initiale udgave er tilfÃ¸jet afsnittet med
 OpenOffice.org 1.1.
-Björn Lundin har skrevet et kapitel med et praktisk eksempel på brug af Docbook/XML.
-Donald Axel skriver afsnittet om DocBook om, så det er ajour med
+BjÃ¶rn Lundin har skrevet et kapitel med et praktisk eksempel pÃ¥ brug af Docbook/XML.
+Donald Axel skriver afsnittet om DocBook om, sÃ¥ det er ajour med
 nyeste Linux-distributioner.
 Harry Jensen fanger en defekt URL.
 Jens Stavnstrup retter flere fejl op.
@@ -62,23 +62,23 @@ Erik Martin fanger et par defekte URL'er.
 
 <listitem><para>
 Version 2.4 - 1. september 2002: 
-Mads Bondo Dydensborg har tilføjet et par sætninger om tankestreger.
+Mads Bondo Dydensborg har tilfÃ¸jet et par sÃ¦tninger om tankestreger.
 </para></listitem>
 
 <listitem><para>
 Version 2.4B - 4. juli 2002: 
-Jesper Laisen tilføjer HTML-reference-afsnit - se <xref linkend="html-reference"/>.
-Jacob Sparre Andersen: Skriver videre (og om) på HTML-kapitlet.
+Jesper Laisen tilfÃ¸jer HTML-reference-afsnit - se <xref linkend="html-reference"/>.
+Jacob Sparre Andersen: Skriver videre (og om) pÃ¥ HTML-kapitlet.
 </para></listitem>
 
 
 <listitem><para>
 Version 2.3 - 14. juni 2002: 
 Tue Abrahamsen finder en defekt URL.
-Henrik Christian Grove tilføjede afsnit om at lave tabeller i LaTeX.
-Jesper Laisen tilføjer afsnit om tabeller i HTML.
-Anna Jonna Armannsdottir tilføjer mere om validering af HTML.
-Jacob Sparre Andersen: Rettet sproglige småfejl.
+Henrik Christian Grove tilfÃ¸jede afsnit om at lave tabeller i LaTeX.
+Jesper Laisen tilfÃ¸jer afsnit om tabeller i HTML.
+Anna Jonna Armannsdottir tilfÃ¸jer mere om validering af HTML.
+Jacob Sparre Andersen: Rettet sproglige smÃ¥fejl.
 Henrik Skov Midtiby rettede en stribe fejl.
 Jesper Laisen finder et par fejl.
 </para></listitem>
@@ -86,16 +86,16 @@ Jesper Laisen finder et par fejl.
 
 <listitem><para>
 Version 2.2 - 10. marts 2002: 
-Ny licens for bogen - Åben dokumentlicens.
-Peter Toft: Nye stikord, nye links - mere om opsætning.
+Ny licens for bogen - Ã…ben dokumentlicens.
+Peter Toft: Nye stikord, nye links - mere om opsÃ¦tning.
 Simon-Shlomo Poil fandt en URL-fejl.
 Stig Jensen laver et SGML-eksempel og finder fejl i 
 afsnittet om Red Hat 7.2 DocBook.
-Peter Toft reviderer DocBook teksten så fokus er på Red Hat 7.2.
+Peter Toft reviderer DocBook teksten sÃ¥ fokus er pÃ¥ Red Hat 7.2.
 Peter Toft omskriver introduktion til DocBook efter input fra
-Erling Sjørlund.
+Erling SjÃ¸rlund.
 Henrik Christian Grove har omskrevet hele kapitlet om Latex.
-Peter Toft og Jesper Laisen har påbegyndt et kapitel om at 
+Peter Toft og Jesper Laisen har pÃ¥begyndt et kapitel om at 
 skrive HTML.
 </para></listitem>
 
@@ -103,7 +103,7 @@ skrive HTML.
 <listitem><para>
 Version 2.1 - 29. december 2001: 
 Donald Axel og Philip Heede retter LaTeX-afsnittet igennem.
-Donald Axel tilføjer en masse i afsnittet om DocBook - specielt
+Donald Axel tilfÃ¸jer en masse i afsnittet om DocBook - specielt
 omkring Red Hat 7.1 og 7.2.
 Mads Sejersen har rettet en stribe fejl i DocBook-afsnittet.
 Peter Toft rettet URL til "The Not So Short Introduction To LaTeXe".
@@ -114,49 +114,49 @@ Version 2.0 - 21. oktober 2001:
 Michael Rasmussen fandt ud af at det er jade og ikke openjade man
 skal installere fra Red Hat 6.2.
 Peter Toft: 
-Bogen har fået nyt navn, så det afspejles at det er dokumentation som
+Bogen har fÃ¥et nyt navn, sÃ¥ det afspejles at det er dokumentation som
 er fokus - Nu er der kommet et Latex-kapitel ind. Det er skrevet af 
-Kristian Sørensen. Link til engelsk DocBook installationsvejledning 
+Kristian SÃ¸rensen. Link til engelsk DocBook installationsvejledning 
 indsat.
 </para></listitem>
 
 
 <listitem><para>
 Version 1.9 - 11. august 2001: 
-Søren Ulrik retter videre i installation.
+SÃ¸ren Ulrik retter videre i installation.
 </para></listitem>
 
 
 <listitem><para>
 Version 1.8 - 9. juli 2001: 
-Peter Toft: Tilføjet en henvisning til ny bog om Office. Rettet screen
+Peter Toft: TilfÃ¸jet en henvisning til ny bog om Office. Rettet screen
 til programlisting. 
 Gunner Poulsen. Rettelser til installationen.
-Søren Ulrik retter videre i installation - vigtige ændringer!!!
+SÃ¸ren Ulrik retter videre i installation - vigtige Ã¦ndringer!!!
 </para></listitem>
 
 
 <listitem><para>
 Version 1.7 - 24. maj 2001: 
-Søren Ulrik tilføjer en del om hvordan man retter DocBook-opsætningen til.
+SÃ¸ren Ulrik tilfÃ¸jer en del om hvordan man retter DocBook-opsÃ¦tningen til.
 </para></listitem>
 
 
 <listitem><para>
 Version 1.6 - 12. marts 2001: 
-Henrik Christian Grove fandt en dum trykfejl i oversigt over bøger.
-Erik Sørensen fandt nogle trykfejl.
+Henrik Christian Grove fandt en dum trykfejl i oversigt over bÃ¸ger.
+Erik SÃ¸rensen fandt nogle trykfejl.
 </para></listitem>
 
 
 <listitem><para>
 Version 1.5 - 4. februar 2001:
-Peter Toft: Flyttet fra artikel til linuxbog og ændret 
-en opsætningen noget og titel. 
-Tilføjet mere om grafik-filer.
-Tilføjet mere om footnote og sidebar.
-Tommy Mogensen fandt en sprogbøf.
-Link til Carsten Svaneborgs HTML->SGML/DocBook oversætter.
+Peter Toft: Flyttet fra artikel til linuxbog og Ã¦ndret 
+en opsÃ¦tningen noget og titel. 
+TilfÃ¸jet mere om grafik-filer.
+TilfÃ¸jet mere om footnote og sidebar.
+Tommy Mogensen fandt en sprogbÃ¸f.
+Link til Carsten Svaneborgs HTML->SGML/DocBook oversÃ¦tter.
 </para>
 </listitem>
 
@@ -164,33 +164,33 @@ Link til Carsten Svaneborgs HTML->SGML/DocBook oversætter.
 
 <listitem><para>
 Version 1.4 - 11. august 2000:
-Peter Toft: Eksempler på at oversætte dokumenter tilføjet.
+Peter Toft: Eksempler pÃ¥ at oversÃ¦tte dokumenter tilfÃ¸jet.
 Eksempel tekst med. Link til OPL og mere dokumentation.
 </para>
 </listitem>
 
 <listitem> <para> Version 1.3 - 10. august 2000:
 Peter Toft: Nyt om lister. 
-En bunke referencer til Docbook-dokumenter tilføjet.
-Lidt om begrænsninger i ID-navngivning.
+En bunke referencer til Docbook-dokumenter tilfÃ¸jet.
+Lidt om begrÃ¦nsninger i ID-navngivning.
 </para>
 </listitem>
 
 
 <listitem> <para> Version 1.2 - 8. august 2000:
 Peter Toft: Rettede fejl i kommentar.
-Tilføjet link til hjælp på nettet.
+TilfÃ¸jet link til hjÃ¦lp pÃ¥ nettet.
 </para>
 </listitem>
 
 <listitem> <para> Version 1.1 - 6. august 2000:
 Peter Toft: Har skrevet lidt videre om entities og kommentarer. 
-Har tilføjet links til artikel kildetekst.
+Har tilfÃ¸jet links til artikel kildetekst.
 </para>
 </listitem>
 
 <listitem> <para> Version 1.0 - 5. august 2000:
-Første offentlige version.
+FÃ¸rste offentlige version.
 </para>
 </listitem>
 

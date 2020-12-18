@@ -1,9 +1,9 @@
 <!-- $Id$ -->
 <appendix id="nulGUIapp">
-<title>Opsætning af det grafiske grundsystem</title>
+<title>OpsÃ¦tning af det grafiske grundsystem</title>
 <para>
-Nu følger en lille tur rundt i de filer, der anvendes af X.
-Det er sket før, at man ikke direkte kan få startet X-serveren, men
+Nu fÃ¸lger en lille tur rundt i de filer, der anvendes af X.
+Det er sket fÃ¸r, at man ikke direkte kan fÃ¥ startet X-serveren, men
 ofte kan man hurtigt finde ud af, hvad der gik galt.
 Start med:
 </para>
@@ -16,14 +16,14 @@ Start med:
 
 <para>
 Her kan du se, at X-programmet nok er installeret, og en SVGA X-server
-er installeret, svarende til det aktuelle grafikkort. På
+er installeret, svarende til det aktuelle grafikkort. PÃ¥
 <ulink url="http://www.xfree86.org">http://www.xfree86.org</ulink> kan du se,
 hvilken server der eventuelt passer til dit grafikkort.
 </para>
 
 <para>
 Findes filen <command>/usr/X11R6/bin/X</command> ikke, er X-softwaren
-ikke blevet installeret. I det tilfælde bør du overveje at køre
+ikke blevet installeret. I det tilfÃ¦lde bÃ¸r du overveje at kÃ¸re
 installationen forfra.
 </para>
 
@@ -34,10 +34,10 @@ installationen forfra.
 <indexterm><primary>X</primary></indexterm>
 <indexterm><primary>XWindow</primary></indexterm>
 <para>
-Du kan også vælge at køre et af programmerne <command>SaX</command>
+Du kan ogsÃ¥ vÃ¦lge at kÃ¸re et af programmerne <command>SaX</command>
 (kun SuSE), <command>redhat-config-xfree86</command>,
-<command>/usr/X11R6/bin/xf86config</command>, eller <command>XFdrake</command> som root for at få
-genereret en X-opsætningsfil, der gemmes i
+<command>/usr/X11R6/bin/xf86config</command>, eller <command>XFdrake</command> som root for at fÃ¥
+genereret en X-opsÃ¦tningsfil, der gemmes i
 <filename>/etc/X11/XF86Config</filename> eller
 <filename>/etc/X11/XF86Config-4</filename>. 
 I denne fil gemmes al information om monitor, grafikkort, mus, og hvilket tastatur der
@@ -45,11 +45,11 @@ anvendes.
 </para>
 
 <sect2 id="XFdrake">
-<title>XFdrake sætter det grafiske system op til Mandrake</title>
+<title>XFdrake sÃ¦tter det grafiske system op til Mandrake</title>
 <indexterm><primary>XFdrake</primary></indexterm>
 <para>
-På Mandrake er programmet <command>XFdrake</command> en nem måde at kunne
-sætte X-systemet op. Programmet startes op som root, og vil automatisk søge
+PÃ¥ Mandrake er programmet <command>XFdrake</command> en nem mÃ¥de at kunne
+sÃ¦tte X-systemet op. Programmet startes op som root, og vil automatisk sÃ¸ge
 efter grafikkortet. Langt de fleste kort vil blive detekteret korrekt.
 </para>
 </sect2>
@@ -59,19 +59,19 @@ efter grafikkortet. Langt de fleste kort vil blive detekteret korrekt.
 <indexterm><primary>xf86config</primary></indexterm>
 
 <para>
-En af de gamle "travere" til opsætning af X er
+En af de gamle "travere" til opsÃ¦tning af X er
 <command>xf86config</command>. Den har ikke en stor grad af
 brugervenlighed.
 </para>
 
 <para>
 Hvis <command>xf86config</command> anvendes til at lave en
-opsætningsfil, skal der først svares på, hvilken type din mus er, og
-hvilken tastatur-udlægning osv.  du har - dette er reelt forklaret i
-det følgende, idet <command>Xconfigurator</command> ikke er meget
+opsÃ¦tningsfil, skal der fÃ¸rst svares pÃ¥, hvilken type din mus er, og
+hvilken tastatur-udlÃ¦gning osv.  du har - dette er reelt forklaret i
+det fÃ¸lgende, idet <command>Xconfigurator</command> ikke er meget
 anderledes. Fordelen ved <command>xf86config</command> er, at dette
-program ikke automatisk søger efter hardware, og man kan således
-manuelt få sat parametre for hardwaren.
+program ikke automatisk sÃ¸ger efter hardware, og man kan sÃ¥ledes
+manuelt fÃ¥ sat parametre for hardwaren.
 </para>
 </sect2>
 </sect1>
@@ -81,17 +81,17 @@ manuelt få sat parametre for hardwaren.
 
 
 <para>
-X-opsætningsfilen findes normalt i <filename>/etc/X11</filename> med
+X-opsÃ¦tningsfilen findes normalt i <filename>/etc/X11</filename> med
 navnet <filename>XF86Config</filename> eller evt. 
 <filename>XF86Config-4</filename>.
 </para>
 
 <para>
-For de fleste er der ikke mere opsætning for at kunne vise
+For de fleste er der ikke mere opsÃ¦tning for at kunne vise
 grafikken. Men skulle det ske, at din mus eller dit tastatur ikke virker
 helt, skal du redigere <filename>XF86Config</filename> filen med
 <command>emacs</command>, <command>vi</command> eller
-<command>pico</command> som vist i det følgende. 
+<command>pico</command> som vist i det fÃ¸lgende. 
 </para>
 
 <sect2 id="XFtastatur">
@@ -101,7 +101,7 @@ helt, skal du redigere <filename>XF86Config</filename> filen med
   <indexterm><primary>tastatur</primary><secondary>dansk</secondary></indexterm>
   <indexterm><primary>dansk tastatur</primary></indexterm>
 
-  For tastaturet vil følgende linjer passe til de fleste danske
+  For tastaturet vil fÃ¸lgende linjer passe til de fleste danske
   tastaturer (en del kommentarlinjer, der begynder med
   <filename>#</filename>, er slettet):
 
@@ -132,15 +132,15 @@ EndSection
  <indexterm><primary>Mus</primary></indexterm>
 
  <para>
-  I modsætning til Windows-verdenen er det smart at købe en tre-knaps
+  I modsÃ¦tning til Windows-verdenen er det smart at kÃ¸be en tre-knaps
   mus til Linux, og evt. gerne med musehjul. Man kan godt bruge
-  to-knaps mus, men Linux kan anvende tre knapper på en meget smart
-  måde.  
+  to-knaps mus, men Linux kan anvende tre knapper pÃ¥ en meget smart
+  mÃ¥de.  
  </para>
 
-<para>Musen kan være lidt problematisk for nogle. Får du ikke fat i den
+<para>Musen kan vÃ¦re lidt problematisk for nogle. FÃ¥r du ikke fat i den
 rigtige type, kan du se det ved, at musen ofte springer rundt. Du
-skal så rette i <filename>/etc/X11/XF86Config-4</filename> i afsnittet "InputDevice", 
+skal sÃ¥ rette i <filename>/etc/X11/XF86Config-4</filename> i afsnittet "InputDevice", 
 der kan se ud som:
 </para>
 
@@ -156,17 +156,17 @@ EndSection
 </programlisting>
 
 <para>
-Vi har her med en PS/2 mus at gøre. En mus, som oftest er
+Vi har her med en PS/2 mus at gÃ¸re. En mus, som oftest er
 af typen PS/2. Har man en mus med hjul er det normalt IMPS/2. 
-Har man en to-knaps mus, må man emulere
-midterknappen ved at trykke begge knapper ned på samme tid, og de to
-udkommenterede linjer ovenfor skal så gøres aktive, dvs. du skal
+Har man en to-knaps mus, mÃ¥ man emulere
+midterknappen ved at trykke begge knapper ned pÃ¥ samme tid, og de to
+udkommenterede linjer ovenfor skal sÃ¥ gÃ¸res aktive, dvs. du skal
 fjerne <filename>#</filename>-tegnet.
 </para>
 
 <para>
-Tjek også, at du har <filename>/dev/mouse</filename> til at pege på
-den rigtige port - i dette tilfælde <filename>/dev/psaux</filename>,
+Tjek ogsÃ¥, at du har <filename>/dev/mouse</filename> til at pege pÃ¥
+den rigtige port - i dette tilfÃ¦lde <filename>/dev/psaux</filename>,
 som er PS/2-porten til mus.
 </para>
 
@@ -177,7 +177,7 @@ lrwxrwxrwx   1 root     root            5 May 15 14:37 /dev/mouse -> psaux
 </screen>
 
 <para>
-Var dette ikke tilfældet, skal du rette op på det med
+Var dette ikke tilfÃ¦ldet, skal du rette op pÃ¥ det med
 </para>
 
 <screen>
@@ -186,59 +186,59 @@ Var dette ikke tilfældet, skal du rette op på det med
 </screen>
 
 <para>
-Der er følgende lovlige protokoller, som vises ved at skrive
+Der er fÃ¸lgende lovlige protokoller, som vises ved at skrive
 <filename>man XF86Config</filename>:
 </para>
 
 
 <sect3 id="Xpad">
 <title>2 mus</title>
-<indexterm><primary>mus</primary><secondary>2 stk på samme tid</secondary></indexterm>
+<indexterm><primary>mus</primary><secondary>2 stk pÃ¥ samme tid</secondary></indexterm>
 <indexterm><primary>flere mus</primary></indexterm>
 <indexterm><primary>touchpad</primary></indexterm>
 
 <para>
-I dette afsnit ser vi på hvordan man bruger 
-2 mus/pegeenheder i X-Window eller både
-pointerknap og touchpad og ekstern mus på en bærbar computer:
+I dette afsnit ser vi pÃ¥ hvordan man bruger 
+2 mus/pegeenheder i X-Window eller bÃ¥de
+pointerknap og touchpad og ekstern mus pÃ¥ en bÃ¦rbar computer:
 </para>
 
 <para>
 
 Man kan med Linux (der jo som bekendt kan ALT !) sagtens bruge to mus
-(eller flere), eller to pegeenheder (eller flere). Det være sig en
+(eller flere), eller to pegeenheder (eller flere). Det vÃ¦re sig en
 tegneplade, touchpad, mus, musepen; ja et hvilket som helst HID (Human
-Interface Device) man har til rådighed, som Linux på forhånd
-understøtter med drivere og evt. protokoller.
+Interface Device) man har til rÃ¥dighed, som Linux pÃ¥ forhÃ¥nd
+understÃ¸tter med drivere og evt. protokoller.
 </para>
 
 <para>
-Dette er specielt relevant hvis man har en bærbar computer med både en
-pointerknap og en touchpad eller bare ønsker at bruge en mus af og til
-uden at skulle omkonfigurere musen hele tiden. man skla blot huske på,
-at man selv må finde ud af hvilke devices éns enheder sidder under, da
+Dette er specielt relevant hvis man har en bÃ¦rbar computer med bÃ¥de en
+pointerknap og en touchpad eller bare Ã¸nsker at bruge en mus af og til
+uden at skulle omkonfigurere musen hele tiden. man skla blot huske pÃ¥,
+at man selv mÃ¥ finde ud af hvilke devices Ã©ns enheder sidder under, da
 dette varierer individuelt fra computer til computer og fra enhed til
 enhed.
 </para>
 
 <para>
-For at bruge to mus under X (hér i eksemplet en PS/2 og en USB der
-begge har scroolknap/musehjul) gør man følgende:
+For at bruge to mus under X (hÃ©r i eksemplet en PS/2 og en USB der
+begge har scroolknap/musehjul) gÃ¸r man fÃ¸lgende:
 </para>
 
 <para>
 
-Man skal ændre i ét afsnit af
+Man skal Ã¦ndre i Ã©t afsnit af
 <filename>/etc/X11/XF86Config-4</filename> - nemlig afsnittet <literal>Section
 "ServerLayout"</literal>, 
-hvor man starter med at fortælle X, at man har mere end
-bare én enhed der skal kunne peges med. Hvilken opsætningsfil man
-skal ændre i afhænger af hvilken version af X-windows man har; over
+hvor man starter med at fortÃ¦lle X, at man har mere end
+bare Ã©n enhed der skal kunne peges med. Hvilken opsÃ¦tningsfil man
+skal Ã¦ndre i afhÃ¦nger af hvilken version af X-windows man har; over
 version 4.x bruger filen med 4-tallet til sidst.
 </para>
 
 <para>
-Sektionen skal med mit eget eksempel med to mus se sådan hér ud:
+Sektionen skal med mit eget eksempel med to mus se sÃ¥dan hÃ©r ud:
 </para>
 
 <programlisting>
@@ -252,11 +252,11 @@ EndSection
 </programlisting>
 
 <para> 
-Derpå skal man indsætte disse to sektioner eller ændre dem som
-vist i det følgende. Den første mus hér er en Logitech PS/2 mus (med
+DerpÃ¥ skal man indsÃ¦tte disse to sektioner eller Ã¦ndre dem som
+vist i det fÃ¸lgende. Den fÃ¸rste mus hÃ©r er en Logitech PS/2 mus (med
 scroll - derfor protokol IMPS/2) og derfor er Option "Emulate3Buttons"
 "no" sat til no da den har tre knapper. Hvis musen kun har to knapper
-sættes dette til "yes" i stedet.
+sÃ¦ttes dette til "yes" i stedet.
 </para>
 
 <programlisting>
@@ -271,16 +271,16 @@ Section "InputDevice"
 EndSection
 </programlisting>
 
-<indexterm><primary>mus</primary><secondary>opløsning</secondary></indexterm>
+<indexterm><primary>mus</primary><secondary>oplÃ¸sning</secondary></indexterm>
 <indexterm><primary>xset</primary><secondary>m</secondary></indexterm>
 
 <para>
-Den sidste mus her er en Razor Boomslang 2000 USB mouse (også med
-scroolknap). Musen har en opløsning på 2000 DPI (MEGET følsom
+Den sidste mus her er en Razor Boomslang 2000 USB mouse (ogsÃ¥ med
+scroolknap). Musen har en oplÃ¸sning pÃ¥ 2000 DPI (MEGET fÃ¸lsom
 mus). Derfor er Option "Resolution" sat til musens relevante DPI.
-En anden - måske ligeså smart - metode til at styre accellerationen
+En anden - mÃ¥ske ligesÃ¥ smart - metode til at styre accellerationen
 af musen med <command>xset m 5</command>, <command>xset m 10</command>, eller
-lignende, alt efter hvor hurtig man ønsker musen.
+lignende, alt efter hvor hurtig man Ã¸nsker musen.
 </para>
  
 <programlisting>
@@ -299,20 +299,20 @@ EndSection
 <para>
 En Razor Boomslang 2000/1000 mus eller en anden mus/pegeenhed med
 flere knapper end 3, kan eventuelt bruges med alle knapper med
-protokollen netmouseps/2 i stedet for IMPS/2. Dette skal så bare
-ændres under <literal>Option "Protocol"</literal>. 
-Da Razor Boomslang 2000 musen er så
-følsom som den er, kan den anbefales enten til folk der spiller
-ekstremt meget og derfor har brug for en meget høj præcision og hurtig
-mus, eller til folk der har et bevægelsesmæssigt handicap (som
-gigt,slidgigt og andet. Dette skyldes der ikke skal bruges særligt
-mange kræfter for, at flytte musen. Endvidere er den designet så den
-er éns på begge sider (=symmetrisk) og knapperne, samt designet gør at
-man kan slappe helt af i hånden UDEN at man aktivere nogen af
-knapperne ufrivilligt. Endvidere er den stor som næsten en halv
-mursten og derfor også nem at flytte og holde på. Eventuelt kan en
-glasplade anbefales sammen med musen, hvis man absolut ikke må/skal
-anstrenge hånden eller håndledet.
+protokollen netmouseps/2 i stedet for IMPS/2. Dette skal sÃ¥ bare
+Ã¦ndres under <literal>Option "Protocol"</literal>. 
+Da Razor Boomslang 2000 musen er sÃ¥
+fÃ¸lsom som den er, kan den anbefales enten til folk der spiller
+ekstremt meget og derfor har brug for en meget hÃ¸j prÃ¦cision og hurtig
+mus, eller til folk der har et bevÃ¦gelsesmÃ¦ssigt handicap (som
+gigt,slidgigt og andet. Dette skyldes der ikke skal bruges sÃ¦rligt
+mange krÃ¦fter for, at flytte musen. Endvidere er den designet sÃ¥ den
+er Ã©ns pÃ¥ begge sider (=symmetrisk) og knapperne, samt designet gÃ¸r at
+man kan slappe helt af i hÃ¥nden UDEN at man aktivere nogen af
+knapperne ufrivilligt. Endvidere er den stor som nÃ¦sten en halv
+mursten og derfor ogsÃ¥ nem at flytte og holde pÃ¥. Eventuelt kan en
+glasplade anbefales sammen med musen, hvis man absolut ikke mÃ¥/skal
+anstrenge hÃ¥nden eller hÃ¥ndledet.
 </para>
 </sect3>
 
@@ -321,18 +321,18 @@ anstrenge hånden eller håndledet.
 
 
 <sect2 id="XFskaerm">
-<title>Skærm</title>
+<title>SkÃ¦rm</title>
 <para>
-Med hensyn til skærm skal du finde manualen og finde data om
-"vertical sync" målt i Hz og "horizontal sync" målt i kHz.  Under
-afsnittet om "Monitor" må man ikke skrive hurtigere data,
-end skærmen kan klare. Det kan overbelaste skærmen! Har man
-skrevet, at skærmen fint kører 90 Hz, selvom det er løgn, vil man se, at
-skærmen kører med ødelagt skærmbillede lidt svarende til dårlig
-TV-justering. I samme sektion som "Monitor" står en masse modelines, som
-er mulige skærmfrekvenser, men det fører for vidt at forklare
-formatet af disse. Et eksempel skal dog lige vises - først er der en
-kommentar og dernæst parametre for den relevante tilstand:
+Med hensyn til skÃ¦rm skal du finde manualen og finde data om
+"vertical sync" mÃ¥lt i Hz og "horizontal sync" mÃ¥lt i kHz.  Under
+afsnittet om "Monitor" mÃ¥ man ikke skrive hurtigere data,
+end skÃ¦rmen kan klare. Det kan overbelaste skÃ¦rmen! Har man
+skrevet, at skÃ¦rmen fint kÃ¸rer 90 Hz, selvom det er lÃ¸gn, vil man se, at
+skÃ¦rmen kÃ¸rer med Ã¸delagt skÃ¦rmbillede lidt svarende til dÃ¥rlig
+TV-justering. I samme sektion som "Monitor" stÃ¥r en masse modelines, som
+er mulige skÃ¦rmfrekvenser, men det fÃ¸rer for vidt at forklare
+formatet af disse. Et eksempel skal dog lige vises - fÃ¸rst er der en
+kommentar og dernÃ¦st parametre for den relevante tilstand:
 </para>
 
 <para>
@@ -343,8 +343,8 @@ Modeline "1024x768"    85    1024 1032 1152 1360   768  784  787  823
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> Kan du ikke få din skærm til at køre i 16
-bitplaner (65536 farver), så skriv <command>exec X :0.0 -bpp
+<emphasis>Tip:</emphasis> Kan du ikke fÃ¥ din skÃ¦rm til at kÃ¸re i 16
+bitplaner (65536 farver), sÃ¥ skriv <command>exec X :0.0 -bpp
 16</command> i filen <filename>~/.xserverrc</filename>
 </para>
 
@@ -356,11 +356,11 @@ bitplaner (65536 farver), så skriv <command>exec X :0.0 -bpp
 
 
 <para>
-I det følgende er vist et eksempel på hvordan en opsætningsfil til
+I det fÃ¸lgende er vist et eksempel pÃ¥ hvordan en opsÃ¦tningsfil til
 XFree86 version 4 kan se ud for en Dell Latitude laptop, der kun skal
-køre 1024x768 i 16 bitplaner. 
-Bemærk at sektionen med "serverflags" betyder at den indbyggede
-X-skærmskåner ikke anvendes.
+kÃ¸re 1024x768 i 16 bitplaner. 
+BemÃ¦rk at sektionen med "serverflags" betyder at den indbyggede
+X-skÃ¦rmskÃ¥ner ikke anvendes.
 </para>
 
 <indexterm><primary>PC-projektor laptop</primary></indexterm>
@@ -370,9 +370,9 @@ X-skærmskåner ikke anvendes.
 <indexterm><primary>laptop</primary><secondary>eksternt display</secondary></indexterm>
 
 <para>
-Det kan bemærkes at for laptops kan man udkommentere de to 
+Det kan bemÃ¦rkes at for laptops kan man udkommentere de to 
 linjer med "intern_disp" og "extern_disp" for at kunne
-vise video på skærm samtidig med en PC-projektor er koblet på.
+vise video pÃ¥ skÃ¦rm samtidig med en PC-projektor er koblet pÃ¥.
 </para>
 
 <programlisting>

@@ -4,11 +4,11 @@
  <title>HTML</title>
 
  <para>
-  Det er ofte smart at skrive dokumentation i HTML, fordi HTML forstås
-  på alle platforme. Ideen med HTML er, at man skriver en fil i ren
-  tekst og tilføjer nogle mærker der afgrænser elementer i teksten med
-  bestemte typer oplysninger. Det kan for eksempel være overskrifter
-  eller henvisninger til illustrationer.  Det er vigtigt at bemærke at
+  Det er ofte smart at skrive dokumentation i HTML, fordi HTML forstÃ¥s
+  pÃ¥ alle platforme. Ideen med HTML er, at man skriver en fil i ren
+  tekst og tilfÃ¸jer nogle mÃ¦rker der afgrÃ¦nser elementer i teksten med
+  bestemte typer oplysninger. Det kan for eksempel vÃ¦re overskrifter
+  eller henvisninger til illustrationer.  Det er vigtigt at bemÃ¦rke at
   HTML principielt slet ikke beskriver <emphasis>hvordan</emphasis>
   teksten skal vises, men kun hvilken slags tekst der er tale om.
   Hvis du vil styre hvordan dine HTML-dokumenter skal vises, skal du
@@ -16,24 +16,24 @@
  </para>
 
  <para>
-  Da de fleste programmer der viser HTML (primært netlæsere) på hver
-  deres måde forsøger at kompensere for eventuelle fejl i et
-  HTML-dokument, er det vigtigt at man &mdash; inden offentliggørelsen
-  &mdash; kører sine HTML-filer gennem en egentlig HTML-syntakstjekker
+  Da de fleste programmer der viser HTML (primÃ¦rt netlÃ¦sere) pÃ¥ hver
+  deres mÃ¥de forsÃ¸ger at kompensere for eventuelle fejl i et
+  HTML-dokument, er det vigtigt at man &mdash; inden offentliggÃ¸relsen
+  &mdash; kÃ¸rer sine HTML-filer gennem en egentlig HTML-syntakstjekker
   for at sikre sig at syntaksen er korrekt og at de forskellige
-  programmer dermed ikke kommer med forskellige gæt på hvad du egentlig
+  programmer dermed ikke kommer med forskellige gÃ¦t pÃ¥ hvad du egentlig
   mente.  "HTML Tidy" er en praktisk HTML-syntakstjekker og
-  -kodepynter.  Hvis du ikke allerede har "HTML Tidy" på dit system
-  (det kan du undersøge med kommandoen <command>tidy -v</command>) bør
-  du installere det inden du fortsætter. 
+  -kodepynter.  Hvis du ikke allerede har "HTML Tidy" pÃ¥ dit system
+  (det kan du undersÃ¸ge med kommandoen <command>tidy -v</command>) bÃ¸r
+  du installere det inden du fortsÃ¦tter. 
 <!-- Se <xref
   linkend="installation-tidy"/> for en vejledning. -->
  </para>
 
  <para>
-  Der findes to typer mærker; startmærker og slutmærker.  Sammen med
-  teksten mellem mærkerne udgør et start- og et slutmærke et element.
-  Startmærker skrives med et "&lt;" efterfulgt af elementets navn,
+  Der findes to typer mÃ¦rker; startmÃ¦rker og slutmÃ¦rker.  Sammen med
+  teksten mellem mÃ¦rkerne udgÃ¸r et start- og et slutmÃ¦rke et element.
+  StartmÃ¦rker skrives med et "&lt;" efterfulgt af elementets navn,
   eventuelle atributter til elementet og et "&gt;". For eksempel:
 <programlisting>
 &lt;p&gt;
@@ -42,7 +42,7 @@
 <programlisting>
 &lt;html lang="da"&gt;
 </programlisting>
-  Slutmærker består blot af "&lt;/", elementets navn og "&gt;". For
+  SlutmÃ¦rker bestÃ¥r blot af "&lt;/", elementets navn og "&gt;". For
   eksempel:
 <programlisting>
 &lt;/p&gt;
@@ -51,15 +51,15 @@
 <programlisting>
 &lt;/html&gt;
 </programlisting>
-  Elementernes navne er ikke versalfølsomme, men de bør generelt
-  skrives med småt.
+  Elementernes navne er ikke versalfÃ¸lsomme, men de bÃ¸r generelt
+  skrives med smÃ¥t.
  </para>
 
  <para>
   Der er mange muligheder for at lave HTML. Nogle personer skriver
   HTML i en almindelig tekst-editor og har selv fuld kontrol over alle
-  detaljer. Andre skriver siderne i et grafisk værktøj såsom Netscape
-  eller Mozilla, hvor man sætter mærkerne ind via menuerne.
+  detaljer. Andre skriver siderne i et grafisk vÃ¦rktÃ¸j sÃ¥som Netscape
+  eller Mozilla, hvor man sÃ¦tter mÃ¦rkerne ind via menuerne.
  </para>
 
  <figure id="mozilla-edit-fig" float="1">
@@ -82,19 +82,19 @@
   <title>Basal HTML</title>
 
   <para>
-   Det første basale HTML-dokument (resultatet kan ses på <xref
-   linkend="mozilla-edit-fig"/>) man kan skrive kan se således ud:
+   Det fÃ¸rste basale HTML-dokument (resultatet kan ses pÃ¥ <xref
+   linkend="mozilla-edit-fig"/>) man kan skrive kan se sÃ¥ledes ud:
 <programlisting>
 &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
 	"http://www.w3.org/TR/REC-html40/loose.dtd"&gt;
 &lt;html&gt;
 &lt;head&gt;
-  &lt;title&gt;Titel på siden skrives her&lt;/title&gt;
+  &lt;title&gt;Titel pÃ¥ siden skrives her&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;h1&gt;Overskrift på siden&lt;/h1&gt;
+&lt;h1&gt;Overskrift pÃ¥ siden&lt;/h1&gt;
 &lt;p&gt;Almindelig tekst skrives efter man har afsluttet overskriften&lt;/p&gt;
-&lt;h2&gt;En sekundær overskrift på siden&lt;/h2&gt;
+&lt;h2&gt;En sekundÃ¦r overskrift pÃ¥ siden&lt;/h2&gt;
 &lt;p&gt;Almindelig tekst skrives efter man har afsluttet overskriften&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
@@ -107,14 +107,14 @@
 &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
 	"http://www.w3.org/TR/REC-html40/loose.dtd"&gt;
 </programlisting>
-   Dernæst kommer dokumenthovedet:
+   DernÃ¦st kommer dokumenthovedet:
 <programlisting>
 &lt;head&gt;
 ...
 &lt;/head&gt;
 </programlisting>
-   hvor man kan sætte information om f.eks.  titel på
-   dokumentet. Selve indholdet af siden sættes i "body"-elementet
+   hvor man kan sÃ¦tte information om f.eks.  titel pÃ¥
+   dokumentet. Selve indholdet af siden sÃ¦ttes i "body"-elementet
    mellem
 <programlisting>
 &lt;body&gt;
@@ -127,15 +127,15 @@
 <programlisting>
 &lt;h1&gt;OVERSKRIFT&lt;/h1&gt;
 </programlisting>
-   kan sætte en overskrift ind.  Typisk vises denne overskrift med en
+   kan sÃ¦tte en overskrift ind.  Typisk vises denne overskrift med en
    stor skrifttype. Der findes yderligere fem niveauer overskrifter,
-   "h2", "h3", "h4", "h5" og "h6", men i praksis bør man nok ikke gå
-   længere end til "h3" eller "h4".
+   "h2", "h3", "h4", "h5" og "h6", men i praksis bÃ¸r man nok ikke gÃ¥
+   lÃ¦ngere end til "h3" eller "h4".
   </para>
 
   <para>
    Som det vil blive forklaret i <xref linkend="validering-af-html"/>
-   så er det vigtigt at hjemmesiderne skrives uden fejl. Det kræver
+   sÃ¥ er det vigtigt at hjemmesiderne skrives uden fejl. Det krÃ¦ver
    blandt andet at dokumentet starter med en dokumenttypehenvisning. I
    dag bruger man typisk overgangsudgaven af HTML 4.0, som man kan
    henvise til med disse to linjer:
@@ -146,15 +146,15 @@
   </para>
 
   <para>
-   Den præcise definition af HTML 4.0 kan læses på <ulink
+   Den prÃ¦cise definition af HTML 4.0 kan lÃ¦ses pÃ¥ <ulink
    url="http://www.w3c.org/TR/html4/">http://www.w3c.org/TR/html4/</ulink>.
   </para>
 
   <para>
    Mange programmer der skal forestille at gemme HTML-filer har
-   desværre svært ved at sørge for at det er
+   desvÃ¦rre svÃ¦rt ved at sÃ¸rge for at det er
    <emphasis>korrekt</emphasis> HTML der bliver gemt.  Derfor
-   gennemgår vi dele af selv at skrive HTML.
+   gennemgÃ¥r vi dele af selv at skrive HTML.
   </para>
 
   <sect2 id="henvisninger-i-html">
@@ -166,35 +166,35 @@
    </indexterm>
 
    <para>
-    Hvis man ønsker at lave en henvisning (eng. "a link") til et
-    dokument, som ligger på en anden server, bruger man "a"-elementet
-    ("a" står for "anchor"). Man kan for eksempel skrive:
+    Hvis man Ã¸nsker at lave en henvisning (eng. "a link") til et
+    dokument, som ligger pÃ¥ en anden server, bruger man "a"-elementet
+    ("a" stÃ¥r for "anchor"). Man kan for eksempel skrive:
 <programlisting>
-Se mere på &lt;a href="http://www.sslug.dk/"&gt;SSLUG's hjemmeside&lt;/a&gt;
+Se mere pÃ¥ &lt;a href="http://www.sslug.dk/"&gt;SSLUG's hjemmeside&lt;/a&gt;
 </programlisting>
     hvis man vil henvise til <ulink
     url="http://www.sslug.dk/">http://www.sslug.dk/</ulink>. Teksten
-    mellem start- og slutmærkerne (i eksemplet mellem <literal>&lt;a
+    mellem start- og slutmÃ¦rkerne (i eksemplet mellem <literal>&lt;a
     href="http://www.sslug.dk/"&gt;</literal> og
-    <literal>&lt;/a&gt;</literal>) vil være den tekst netlæseren
-    fremhæver som henvisningen. Det kan for eksempel ske ved
+    <literal>&lt;/a&gt;</literal>) vil vÃ¦re den tekst netlÃ¦seren
+    fremhÃ¦ver som henvisningen. Det kan for eksempel ske ved
     understregning eller farveskift.
    </para>
 
    <para>
-    Henvisninger behøver ikke være absolutte.  Hvis man har to
+    Henvisninger behÃ¸ver ikke vÃ¦re absolutte.  Hvis man har to
     HTML-filer liggende i samme katalog kan man for eksempel blot
     bruge filnavnet (nogle gange endda uden
     "<filename>.html</filename>") som adresse:
 <programlisting>
-Jeg har også en &lt;a href="bsd.html"&gt;BSD-maskine&lt;/a&gt;.
+Jeg har ogsÃ¥ en &lt;a href="bsd.html"&gt;BSD-maskine&lt;/a&gt;.
 </programlisting>
     (her gik vi ud fra at den anden fil hed "<filename>bsd.html</filename>")
    </para>
 
    <para>
-    Hvis dokumentet ligger i et andet bibliotek på serveren skal man
-    huske at gøre opmærksom på det.
+    Hvis dokumentet ligger i et andet bibliotek pÃ¥ serveren skal man
+    huske at gÃ¸re opmÃ¦rksom pÃ¥ det.
    </para>
 
    <para>
@@ -216,7 +216,7 @@ Se mere i &lt;a href="../filnavn.html"&gt;dette dokument&lt;/a&gt;.
 
    <para>
     Hvis det dokument, som man vil henvise til, ligger i et andet
-    bibliotek på samme niveau som til ens eget dokument, skriver man
+    bibliotek pÃ¥ samme niveau som til ens eget dokument, skriver man
 <programlisting>
 Se mere i &lt;a href="../bibliotek/filnavn.html"&gt;dette 
 dokument&lt;/a&gt;.
@@ -225,25 +225,25 @@ dokument&lt;/a&gt;.
 
    <para>
     Hvis man vil lave en henvisning til et andet sted i ens eget
-    dokument, skal man både lave en henvisning samt navngive det sted,
-    som man ønsker at henvise til. Henvisningen skrives som:
+    dokument, skal man bÃ¥de lave en henvisning samt navngive det sted,
+    som man Ã¸nsker at henvise til. Henvisningen skrives som:
 <programlisting>
-Læs mere om &lt;a href="#cirkus"&gt;cirkusteltet&lt;/a&gt; senere.
+LÃ¦s mere om &lt;a href="#cirkus"&gt;cirkusteltet&lt;/a&gt; senere.
 </programlisting>
     Og man laver et sted der kan henvises til med:
 <programlisting>
-&lt;a name="cirkus"&gt;Da vi endelig kom i cirkus var teltet væltet&lt;/a&gt;
+&lt;a name="cirkus"&gt;Da vi endelig kom i cirkus var teltet vÃ¦ltet&lt;/a&gt;
 </programlisting>
    </para>
 
    <para>
-    Det er strengt taget ikke nødvendigt at et "a"-element indeholder
+    Det er strengt taget ikke nÃ¸dvendigt at et "a"-element indeholder
     tekst, hvis det kun bruges til at henvise til, men det er nok mest
     anvendeligt sammen med en overskrift:
 <programlisting>
 &lt;h2&gt;&lt;a name="bsd"&gt;Min BSD-maskine&lt;/a&gt;&lt;/h2&gt;
 </programlisting>
-    så folk kommer til starten på et afsnit, når de følger en
+    sÃ¥ folk kommer til starten pÃ¥ et afsnit, nÃ¥r de fÃ¸lger en
     henvisning.
    </para>
 
@@ -257,11 +257,11 @@ Læs mere om &lt;a href="#cirkus"&gt;cirkusteltet&lt;/a&gt; senere.
 
    <para>
     Hvis man henviser til et bestemt sted i en anden forfatters
-    dokument, skal man huske være opmærksom på, at forfatteren kan
-    finde på at ændre sin navngivning, så henvisningen ikke længere
-    virker helt som forventet.  Dette er på den anden side ikke
-    anderledes end det problem man generelt vil støde ind i, hvis man
-    henviser til materiale på internettet - det har det med pludselig
+    dokument, skal man huske vÃ¦re opmÃ¦rksom pÃ¥, at forfatteren kan
+    finde pÃ¥ at Ã¦ndre sin navngivning, sÃ¥ henvisningen ikke lÃ¦ngere
+    virker helt som forventet.  Dette er pÃ¥ den anden side ikke
+    anderledes end det problem man generelt vil stÃ¸de ind i, hvis man
+    henviser til materiale pÃ¥ internettet - det har det med pludselig
     at forsvinde.
    </para>
   </sect2>
@@ -271,36 +271,36 @@ Læs mere om &lt;a href="#cirkus"&gt;cirkusteltet&lt;/a&gt; senere.
 
    <para>
     Afsnit markeres med "p"-elementet (for "paragraph") der
-    forhåbentlig er det mest brugte HTML-element:
+    forhÃ¥bentlig er det mest brugte HTML-element:
 <programlisting>
 &lt;p&gt;
- Skåne Sjælland Linux User Group (SSLUG) er en gruppe personer med
- basis i Øresundsregionen og med fælles interesse for styresystemet
+ SkÃ¥ne SjÃ¦lland Linux User Group (SSLUG) er en gruppe personer med
+ basis i Ã˜resundsregionen og med fÃ¦lles interesse for styresystemet
  Linux.
 &lt;/p&gt;
 
 &lt;p&gt;
- SSLUG er non-profit og så vidt muligt non-økonomi. Vi eksisterer via
- fælles arbejde samt hardware donationer fra tid til anden. Vi har
- ikke noget politisk eller religiøst tilhørsforhold, og skelner ikke
- folk på race eller hudfarve. SSLUG bringer ikke reklamer, spam eller
- lignende. SSLUG vil gerne hjælpe firmaer og private med Linux, men
- har som sagt ingen kommercielle eller økonomiske interesser.
+ SSLUG er non-profit og sÃ¥ vidt muligt non-Ã¸konomi. Vi eksisterer via
+ fÃ¦lles arbejde samt hardware donationer fra tid til anden. Vi har
+ ikke noget politisk eller religiÃ¸st tilhÃ¸rsforhold, og skelner ikke
+ folk pÃ¥ race eller hudfarve. SSLUG bringer ikke reklamer, spam eller
+ lignende. SSLUG vil gerne hjÃ¦lpe firmaer og private med Linux, men
+ har som sagt ingen kommercielle eller Ã¸konomiske interesser.
 &lt;/p&gt;
 </programlisting>
    </para>
 
    <para>
-    Hvis man af en eller anden grund har behov for at vælge om et
-    afsnit skal venstrestilles, centreres eller højrestilles bruger
-    man atributten "align" med værdien "left", "center" eller "right":
+    Hvis man af en eller anden grund har behov for at vÃ¦lge om et
+    afsnit skal venstrestilles, centreres eller hÃ¸jrestilles bruger
+    man atributten "align" med vÃ¦rdien "left", "center" eller "right":
 <programlisting>
 &lt;p align="right"&gt;
- Teksten her vil blive højrestillet.
+ Teksten her vil blive hÃ¸jrestillet.
 &lt;/p&gt;
 
 &lt;p&gt;
- Mens denne vil fremstå som læseren foretrækker det (typisk
+ Mens denne vil fremstÃ¥ som lÃ¦seren foretrÃ¦kker det (typisk
  venstrestillet).
 &lt;/p&gt;
 </programlisting>
@@ -314,13 +314,13 @@ Læs mere om &lt;a href="#cirkus"&gt;cirkusteltet&lt;/a&gt; senere.
 &lt;br&gt;
 </programlisting>
     Da "br" per definition er et tomt element skal der ikke bruges et
-    slutmærke.
+    slutmÃ¦rke.
    </para>
 
    <para>
-    Tilsvarende findes det også et tomt element, der indsætter en
+    Tilsvarende findes det ogsÃ¥ et tomt element, der indsÃ¦tter en
     vandret linje.  Navnet er "hr" og det har mulighed for at man
-    bruger attributten "width" til at angive linjens længde. For
+    bruger attributten "width" til at angive linjens lÃ¦ngde. For
     eksempel vil:
 <programlisting>
 &lt;hr width="50%"&gt;
@@ -333,10 +333,10 @@ Læs mere om &lt;a href="#cirkus"&gt;cirkusteltet&lt;/a&gt; senere.
    <title>Billeder</title>
 
    <para>
-    Det er nemt at indsætte billeder i et HTML-dokument med
-    "img"-elementet. Det er dog vigtigt at være opmærksom på at
-    "img"-elementet er beregnet til såkaldt "in-line"-illustrationer,
-    som for eksempel specielle symboler der skal stå som en del af
+    Det er nemt at indsÃ¦tte billeder i et HTML-dokument med
+    "img"-elementet. Det er dog vigtigt at vÃ¦re opmÃ¦rksom pÃ¥ at
+    "img"-elementet er beregnet til sÃ¥kaldt "in-line"-illustrationer,
+    som for eksempel specielle symboler der skal stÃ¥ som en del af
     teksten:
 <programlisting>
 Han skrev en &lt;img src="/logoer/latex.png" alt="LaTeX"&gt;-brugsanvisning.
@@ -345,31 +345,31 @@ Han skrev en &lt;img src="/logoer/latex.png" alt="LaTeX"&gt;-brugsanvisning.
 
    <para>
     Hvis det er en egentlig illustration man har brug for, og den ikke
-    skal stå indlejret i den løbende tekst, bliver man nødt til at
+    skal stÃ¥ indlejret i den lÃ¸bende tekst, bliver man nÃ¸dt til at
     snyde lidt. Der er to muligheder. Den ene er at benytte sig af at
     "img"-elementet tillader at man bruger attributten "align" til at
-    højre- eller venstrestille billedet, og på den måde trække det ud
-    af den løbende tekst:
+    hÃ¸jre- eller venstrestille billedet, og pÃ¥ den mÃ¥de trÃ¦kke det ud
+    af den lÃ¸bende tekst:
 <programlisting>
 &lt;p&gt;
  &lt;img src="/billeder/tux-solskin.png"
       alt="[billede af Tux med solbriller]"
       align="right"&gt;
- Skåne Sjælland Linux User Group (SSLUG) er en gruppe personer med
- basis i Øresundsregionen og med fælles interesse for styresystemet
+ SkÃ¥ne SjÃ¦lland Linux User Group (SSLUG) er en gruppe personer med
+ basis i Ã˜resundsregionen og med fÃ¦lles interesse for styresystemet
  Linux.
 &lt;/p&gt;
 
 &lt;p&gt;
- SSLUG er non-profit og så vidt muligt non-økonomi. Vi eksisterer via
- fælles arbejde samt hardware donationer fra tid til anden. Vi har
- ikke noget politisk eller religiøst tilhørsforhold, og skelner ikke
- folk på race eller hudfarve. SSLUG bringer ikke reklamer, spam eller
- lignende. SSLUG vil gerne hjælpe firmaer og private med Linux, men
- har som sagt ingen kommercielle eller økonomiske interesser.
+ SSLUG er non-profit og sÃ¥ vidt muligt non-Ã¸konomi. Vi eksisterer via
+ fÃ¦lles arbejde samt hardware donationer fra tid til anden. Vi har
+ ikke noget politisk eller religiÃ¸st tilhÃ¸rsforhold, og skelner ikke
+ folk pÃ¥ race eller hudfarve. SSLUG bringer ikke reklamer, spam eller
+ lignende. SSLUG vil gerne hjÃ¦lpe firmaer og private med Linux, men
+ har som sagt ingen kommercielle eller Ã¸konomiske interesser.
 &lt;/p&gt;
 </programlisting>
-    Den anden er at sætte "img"-elementet alene i et "p"-element:
+    Den anden er at sÃ¦tte "img"-elementet alene i et "p"-element:
 <programlisting>
 &lt;p align="center"&gt;
  &lt;img src="/billeder/tux-solskin.png"
@@ -381,17 +381,17 @@ Han skrev en &lt;img src="/logoer/latex.png" alt="LaTeX"&gt;-brugsanvisning.
    <para>
     Attributten "alt" er den tekst der skal vises i stedet for
     billedet, hvis det af den ene eller den anden grund ikke er
-    indlæst. Af hensyn til blinde og søgemaskiner (og
-    <command>lynx</command>-brugere) bør man altså sikre sig at
-    teksten også giver mening, hvis man erstatter billederne med
-    "alt"-teksterne. Hvis billedet ikke er væsentligt (fx fordi
+    indlÃ¦st. Af hensyn til blinde og sÃ¸gemaskiner (og
+    <command>lynx</command>-brugere) bÃ¸r man altsÃ¥ sikre sig at
+    teksten ogsÃ¥ giver mening, hvis man erstatter billederne med
+    "alt"-teksterne. Hvis billedet ikke er vÃ¦sentligt (fx fordi
     det kun anvendes kosmetisk), skal attributten "alt" stadig
-    anvendes. Den skal blot være tom (alt=""), hvilket betyder,
+    anvendes. Den skal blot vÃ¦re tom (alt=""), hvilket betyder,
     at den kan ignoreres.
    </para>
 
    <para>
-    Hvis man desuden ønsker at bruge billedet som en henvisning til
+    Hvis man desuden Ã¸nsker at bruge billedet som en henvisning til
     SSLUG's hjemmeside, skal man blot kombinere de forskellige elementer:
 <programlisting>
 &lt;p align="center"&gt;
@@ -496,11 +496,11 @@ Han skrev en &lt;img src="/logoer/latex.png" alt="LaTeX"&gt;-brugsanvisning.
    </para>
 
    <para>
-    Man skal være meget påpasselig, når man indlejrer en liste i en
+    Man skal vÃ¦re meget pÃ¥passelig, nÃ¥r man indlejrer en liste i en
     anden. Det er nemt at lave fejl, og ens fejl bliver ikke altid
-    afsløret med det samme i netlæseren (en god grund til at køre sine
+    afslÃ¸ret med det samme i netlÃ¦seren (en god grund til at kÃ¸re sine
     HTML-filer gennem en syntakstjekker). Man skal altid afslutte sine
-    elementer i den modsatte rækkefølge af den, som man startede dem
+    elementer i den modsatte rÃ¦kkefÃ¸lge af den, som man startede dem
     i.
    </para>
   </sect2>
@@ -523,7 +523,7 @@ store. Her er et 2x2 skema:
 
 
 <para>
-som du laver med følgende HTML-kode:
+som du laver med fÃ¸lgende HTML-kode:
 </para>
 
 <programlisting>
@@ -541,19 +541,19 @@ som du laver med følgende HTML-kode:
 
 <para>
 &lt;table&gt; og &lt;/table&gt; omslutter hele skemaet. &lt;tr&gt; og
-&lt;/tr&gt; omslutter den enkelte række. &lt;td&gt; og &lt;/td&gt;
+&lt;/tr&gt; omslutter den enkelte rÃ¦kke. &lt;td&gt; og &lt;/td&gt;
 omslutter den enkelte celle.
 </para>
 
 <para>
-Der kan være et vilkårligt antal rækker og celler i et skema, 
-men det er en god idé at sørge for, at der er lige mange 
-celler i alle rækkerne.
+Der kan vÃ¦re et vilkÃ¥rligt antal rÃ¦kker og celler i et skema, 
+men det er en god idÃ© at sÃ¸rge for, at der er lige mange 
+celler i alle rÃ¦kkerne.
 </para>
 
 <para>
  Hvis du vil have en ramme om cellerne i skemaet, skal du bruge
- attributten border="bredde i pixels" i startmærket, &lt;table&gt;.
+ attributten border="bredde i pixels" i startmÃ¦rket, &lt;table&gt;.
 </para>
 
 
@@ -564,7 +564,7 @@ celler i alle rækkerne.
 
 
 <para>
-som du laver med følgende HTML-kode:
+som du laver med fÃ¸lgende HTML-kode:
 </para>
 
 <programlisting>
@@ -581,9 +581,9 @@ som du laver med følgende HTML-kode:
 </programlisting>
 
 <para>
-Hvis du vil have overskrifter på dine rækker og kolonner, kan du bruge
+Hvis du vil have overskrifter pÃ¥ dine rÃ¦kker og kolonner, kan du bruge
 &lt;th&gt; og &lt;/th&gt; i stedet for &lt;td&gt; og &lt;/td&gt;. Du
-kan dog opnå stort set funktionalitet med &lt;td&gt; og &lt;/td&gt;.
+kan dog opnÃ¥ stort set funktionalitet med &lt;td&gt; og &lt;/td&gt;.
 </para>
 
 
@@ -594,7 +594,7 @@ kan dog opnå stort set funktionalitet med &lt;td&gt; og &lt;/td&gt;.
 
 
 <para>
-Dette laves med følgende HTML-kode:
+Dette laves med fÃ¸lgende HTML-kode:
 </para>
 
 <programlisting>
@@ -605,12 +605,12 @@ Dette laves med følgende HTML-kode:
 	&lt;th&gt;2. kolonne&lt;/th&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-	&lt;th&gt;1. række&lt;/th&gt;
+	&lt;th&gt;1. rÃ¦kke&lt;/th&gt;
 	&lt;td&gt;1. celle&lt;/td&gt;
 	&lt;td&gt;2. celle&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-	&lt;th&gt;2. række&lt;/th&gt;
+	&lt;th&gt;2. rÃ¦kke&lt;/th&gt;
 	&lt;td&gt;3. celle&lt;/td&gt;
 	&lt;td&gt;4. celle&lt;/td&gt;
 &lt;/tr&gt;
@@ -618,9 +618,9 @@ Dette laves med følgende HTML-kode:
 </programlisting>
 
 <para>
-Du kan også lave overskrifter, der spænder over flere 
-rækker eller kolonner med attributterne colspan="antal 
-kolonner" og rowspan="antal rækker".
+Du kan ogsÃ¥ lave overskrifter, der spÃ¦nder over flere 
+rÃ¦kker eller kolonner med attributterne colspan="antal 
+kolonner" og rowspan="antal rÃ¦kker".
 </para>
 
 
@@ -631,7 +631,7 @@ kolonner" og rowspan="antal rækker".
 
 
 <para>
-Dette kan laves med følgende HTML-kode:
+Dette kan laves med fÃ¸lgende HTML-kode:
 </para>
 
 <programlisting>
@@ -642,7 +642,7 @@ Dette kan laves med følgende HTML-kode:
 &lt;/tr&gt;
 
 &lt;tr&gt;
-	&lt;th rowspan="2"&gt;Rækker&lt;/th&gt;
+	&lt;th rowspan="2"&gt;RÃ¦kker&lt;/th&gt;
 	&lt;td&gt;1. celle&lt;/td&gt;
 	&lt;td&gt;2. celle&lt;/td&gt;
 &lt;/tr&gt;
@@ -655,19 +655,19 @@ Dette kan laves med følgende HTML-kode:
 </programlisting>
 
 <para>
-Bemærk, at du skal fjerne den efterfølgende kolonne og den 
-efterfølgende række. Det er en god idé at lade rækken stå 
-tom i din HTML-kode, så du nemmere kan overskue koden. Husk 
-at din HTML-kode hurtig bliver meget kompliceret, efterhånden 
-som skemaet bliver større og større. Du kan godt lade dine 
-kolonner og rækker spænde over mere end 2 celler.
+BemÃ¦rk, at du skal fjerne den efterfÃ¸lgende kolonne og den 
+efterfÃ¸lgende rÃ¦kke. Det er en god idÃ© at lade rÃ¦kken stÃ¥ 
+tom i din HTML-kode, sÃ¥ du nemmere kan overskue koden. Husk 
+at din HTML-kode hurtig bliver meget kompliceret, efterhÃ¥nden 
+som skemaet bliver stÃ¸rre og stÃ¸rre. Du kan godt lade dine 
+kolonner og rÃ¦kker spÃ¦nde over mere end 2 celler.
 </para>
 
 <para>
-Hvis du ikke selv sørger for at bestemme bredden og højden 
-på de enkelte celler, vil browseren selv sørge for, at 
-skemaet bliver stort nok. Du kan selv bestemme størrelsen 
-med attributterne width="bredde i pixel" og height="højde 
+Hvis du ikke selv sÃ¸rger for at bestemme bredden og hÃ¸jden 
+pÃ¥ de enkelte celler, vil browseren selv sÃ¸rge for, at 
+skemaet bliver stort nok. Du kan selv bestemme stÃ¸rrelsen 
+med attributterne width="bredde i pixel" og height="hÃ¸jde 
 i pixel".
 </para>
 
@@ -678,7 +678,7 @@ i pixel".
 </figure>
 
 <para>
-som du laver med følgende HTML-kode:
+som du laver med fÃ¸lgende HTML-kode:
 </para>
 
 <programlisting>
@@ -689,7 +689,7 @@ som du laver med følgende HTML-kode:
 &lt;/tr&gt;
 
 &lt;tr&gt;
-	&lt;th rowspan="2"&gt;Rækker&lt;/th&gt;
+	&lt;th rowspan="2"&gt;RÃ¦kker&lt;/th&gt;
 	&lt;td width="100" height="40"&gt;1. celle&lt;/td&gt;
 	&lt;td width="100" height="40"&gt;2. celle&lt;/td&gt;
 &lt;/tr&gt;
@@ -702,12 +702,12 @@ som du laver med følgende HTML-kode:
 </programlisting>
 
 <para>
-Attributterne width og height er godt nok på vej ud, men du 
+Attributterne width og height er godt nok pÃ¥ vej ud, men du 
 kan ind til videre bruge dem uden problemer.
 </para>
 
 <para>
-Du kan også bestemme, om teksten skal være centreret, højre- 
+Du kan ogsÃ¥ bestemme, om teksten skal vÃ¦re centreret, hÃ¸jre- 
 venstrestillet med attributten align="center, left eller 
 right".
 </para>
@@ -719,7 +719,7 @@ right".
 </figure>
 
 <para>
-som du laver med følgende HTML-kode:
+som du laver med fÃ¸lgende HTML-kode:
 </para>
 
 <programlisting>
@@ -730,7 +730,7 @@ som du laver med følgende HTML-kode:
 &lt;/tr&gt;
 
 &lt;tr&gt;
-	&lt;th rowspan="2"&gt;Rækker&lt;/th&gt;
+	&lt;th rowspan="2"&gt;RÃ¦kker&lt;/th&gt;
 	&lt;td width="100" height="40" align="center"&gt;1. celle&lt;/td&gt;
 	&lt;td width="100" height="40" align="center"&gt;2. celle&lt;/td&gt;
 &lt;/tr&gt;
@@ -759,26 +759,26 @@ som du laver med følgende HTML-kode:
   </indexterm>
 
   <para>
-   Det er altid irriterende hvis en hjemmeside vises dårligt eller
+   Det er altid irriterende hvis en hjemmeside vises dÃ¥rligt eller
    slet ikke kan vises. Et godt trick er at bruge <ulink
    url="http://validator.w3.org/">http://validator.w3.org/</ulink> til
    at tjekke syntaksen af sine HTML-dokumenter.
   </para>
 
   <para>
-   For dem der vil til at lære at lave hjemmesider, er en syntaksvalidator et
-   fortrinligt værktøj, især fordi den udpeger enhver fejl og henviser
-   til dokumentation hvor man kan læse mere om hvordan fejlen kan
-   undgåes. Denne dokumentation er selve standarden i dens nyeste
-   version. Der findes næppe bedre muligheder for selvstudium end at
-   bruge netop denne validator og ovenikøbet får man hjemmesider af
-   højest mulig kvalitet. På denne måde kan man lave hjemmesider der
-   følger de samme standarder som browserne laves efter.
+   For dem der vil til at lÃ¦re at lave hjemmesider, er en syntaksvalidator et
+   fortrinligt vÃ¦rktÃ¸j, isÃ¦r fordi den udpeger enhver fejl og henviser
+   til dokumentation hvor man kan lÃ¦se mere om hvordan fejlen kan
+   undgÃ¥es. Denne dokumentation er selve standarden i dens nyeste
+   version. Der findes nÃ¦ppe bedre muligheder for selvstudium end at
+   bruge netop denne validator og ovenikÃ¸bet fÃ¥r man hjemmesider af
+   hÃ¸jest mulig kvalitet. PÃ¥ denne mÃ¥de kan man lave hjemmesider der
+   fÃ¸lger de samme standarder som browserne laves efter.
   </para>
 
   <para>
-   Et smart trick er at have en henvisning på hjemmesiden der peger
-   direkte på <ulink
+   Et smart trick er at have en henvisning pÃ¥ hjemmesiden der peger
+   direkte pÃ¥ <ulink
    url="http://validator.w3.org/">validator.w3.org</ulink> syntakstjek
    af siden:
 <programlisting>
@@ -788,22 +788,22 @@ som du laver med følgende HTML-kode:
     alt="Valid HTML 4.01!" height="31" width="88"&gt;&lt;/a&gt;
 &lt;/p&gt;
 </programlisting>
-   Fidusen med ovenstående stump HTML er at <ulink
+   Fidusen med ovenstÃ¥ende stump HTML er at <ulink
    url="http://validator.w3.org/">validator.w3.org</ulink> selv finder
-   ud af hvilken side du kom fra. Der er altså ikke brug for at rette
+   ud af hvilken side du kom fra. Der er altsÃ¥ ikke brug for at rette
    det til for hver enkel webside.
   </para>
 
   <para>
-   Når hjemmesiden er blevet fejlfri, får man et tilbud om en
-   skræddersyet henvisning til at lægge ind på hjemmesiden. Det tilbud
-   bør man tage imod.
+   NÃ¥r hjemmesiden er blevet fejlfri, fÃ¥r man et tilbud om en
+   skrÃ¦ddersyet henvisning til at lÃ¦gge ind pÃ¥ hjemmesiden. Det tilbud
+   bÃ¸r man tage imod.
   </para>
 
   <para>
    Alternativt kan man installere WDG HTML validator fra <ulink
    url="http://www.htmlhelp.com/tools/validator/packages/">http://www.htmlhelp.com/tools/validator/packages/</ulink>
-   - dette kræver dog typisk opdatering af flere Perl-pakker.
+   - dette krÃ¦ver dog typisk opdatering af flere Perl-pakker.
   </para>
  </sect1>
 
@@ -859,9 +859,9 @@ som du laver med følgende HTML-kode:
     <listitem>
      <para>
       "Meta"-elementer er elementer med blandede oplysninger
-      <emphasis>om</emphasis> dokumentet. Det kan for eksempel være
+      <emphasis>om</emphasis> dokumentet. Det kan for eksempel vÃ¦re
       stikord fra dokumentet:
-      <programlisting>&lt;meta name="keywords" content="SSLUG, Skåne, Sjælland, Linux, brugergruppe"&gt;</programlisting>
+      <programlisting>&lt;meta name="keywords" content="SSLUG, SkÃ¥ne, SjÃ¦lland, Linux, brugergruppe"&gt;</programlisting>
      </para>
     </listitem>
 
@@ -885,7 +885,7 @@ som du laver med følgende HTML-kode:
   &lt;meta name="description" content="Beskrivelse af dokumentet"&gt;
  &lt;/head&gt;
  &lt;body&gt;
-  Her indsættes den egentlige HTML-kode til websiden.
+  Her indsÃ¦ttes den egentlige HTML-kode til websiden.
  &lt;/body&gt;
 &lt;/html&gt;
 </programlisting>
@@ -929,7 +929,7 @@ som du laver med følgende HTML-kode:
  Dette er et afsnit.
 &lt;/p&gt;
 &lt;p&gt;
- Her kommer det næste.
+ Her kommer det nÃ¦ste.
 &lt;/p&gt;
 </programlisting>
    </para>
@@ -947,7 +947,7 @@ Eks.:
 </para>
 
 <screen>
-&lt;a href="andet dokument" target="navn på vindue"&gt;Titel på andet dokument&lt;/a&gt;
+&lt;a href="andet dokument" target="navn pÃ¥ vindue"&gt;Titel pÃ¥ andet dokument&lt;/a&gt;
 &lt;a name="ankernavn"&gt;&lt;/a&gt;
 </screen>
 </sect2>
@@ -958,7 +958,7 @@ Eks.:
 <programlisting>
 &lt;ol&gt;...&lt;/ol&gt;   Ordnet liste
 &lt;ul&gt;...&lt;/ul&gt;   Uordnet liste
-&lt;li&gt;                 Punkt på liste
+&lt;li&gt;                 Punkt pÃ¥ liste
 </programlisting>
 
  <para>
@@ -977,10 +977,10 @@ Eks.:
 <title>Formattering</title>
 
 <screen>
-&lt;em&gt;...&lt;/em&gt;          Fremhævet (sædvanligvis i kursiv)
-&lt;strong&gt;...&lt;/strong&gt;  Yderligere fremhævet (sædvanligvis i fed)
-&lt;code&gt;...&lt;/code&gt;      Kodeeksempel (sædvanligvis courier)
-&lt;kbd&gt;...&lt;/kbd&gt;        Maskinskrevet (sædvanligvis courier)
+&lt;em&gt;...&lt;/em&gt;          FremhÃ¦vet (sÃ¦dvanligvis i kursiv)
+&lt;strong&gt;...&lt;/strong&gt;  Yderligere fremhÃ¦vet (sÃ¦dvanligvis i fed)
+&lt;code&gt;...&lt;/code&gt;      Kodeeksempel (sÃ¦dvanligvis courier)
+&lt;kbd&gt;...&lt;/kbd&gt;        Maskinskrevet (sÃ¦dvanligvis courier)
 &lt;cite&gt;...&lt;/cite&gt;      Citat
 <!-- &lt;b&gt;...&lt;/b&gt;            Fed -->
 <!-- &lt;i&gt;...&lt;/i&gt;            Kursiv -->
@@ -993,7 +993,7 @@ Eks.:
 <screen>
 &lt;hr&gt;                                Vandret linje
 &lt;br&gt;                                Ombryd linje
-&lt;blockqoute&gt;...&lt;/blockqoute&gt;  Længere citat
+&lt;blockqoute&gt;...&lt;/blockqoute&gt;  LÃ¦ngere citat
 </screen>
 
 </sect2>
@@ -1002,7 +1002,7 @@ Eks.:
 <title>Billeder i HTML</title>
 
 <screen>
-&lt;img&gt;      Indsætter et billede i den løbende tekst
+&lt;img&gt;      IndsÃ¦tter et billede i den lÃ¸bende tekst
 </screen>
 
 <para>
@@ -1019,7 +1019,7 @@ Eks.:
 
 <screen>
 &lt;table&gt;&lt;/table&gt;    Tabel
-&lt;tr&gt;                     Række i tabellen
+&lt;tr&gt;                     RÃ¦kke i tabellen
 &lt;td&gt;                     Felt i celle
 </screen>
 
@@ -1040,7 +1040,7 @@ Eksempel:
 </para>
 
 <screen>
-&lt;td rowspan="2"&gt;  Felt, der fylder to rækker
+&lt;td rowspan="2"&gt;  Felt, der fylder to rÃ¦kker
 &lt;td colspan="2"&gt;  Felt, der fylder to kolonner
 &lt;tr&gt;
     &lt;td&gt;3. celle&lt;/td&gt;

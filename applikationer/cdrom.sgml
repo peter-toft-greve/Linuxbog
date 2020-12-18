@@ -1,44 +1,44 @@
 <!-- $Id$ -->
 <chapter id="cd-rom-braending">
-<title>Brænding af cd'er</title>
-<indexterm><primary>Brænde cd</primary></indexterm>
-<indexterm><primary>cd</primary><secondary>brænde</secondary></indexterm>
+<title>BrÃ¦nding af cd'er</title>
+<indexterm><primary>BrÃ¦nde cd</primary></indexterm>
+<indexterm><primary>cd</primary><secondary>brÃ¦nde</secondary></indexterm>
 
 <para>
-Linux understøtter cd-brænding på alle drev fremstillet siden 1999,
-hvor en standardisering af cd-brændere slog igennem. Desuden er en
-række ældre brændere understøttet; den fulde liste findes på adressen
+Linux understÃ¸tter cd-brÃ¦nding pÃ¥ alle drev fremstillet siden 1999,
+hvor en standardisering af cd-brÃ¦ndere slog igennem. Desuden er en
+rÃ¦kke Ã¦ldre brÃ¦ndere understÃ¸ttet; den fulde liste findes pÃ¥ adressen
 <ulink
 url="http://www.fokus.fraunhofer.de/research/cc/glone/employees/joerg.schilling/private/cdwriters-2.0.html">http://www.fokus.fraunhofer.de/research/cc/glone/employees/joerg.schilling/private/cdwriters-2.0.html</ulink>.
 </para>
 
 <para>
-De fleste moderne distributioner sørger automatisk for at der kan
-brændes cd'er, såfremt der er tilsluttet en brænder under installation
+De fleste moderne distributioner sÃ¸rger automatisk for at der kan
+brÃ¦ndes cd'er, sÃ¥fremt der er tilsluttet en brÃ¦nder under installation
 af distributionen.
 </para>
 
 <para>
-Der findes ét meget anvendt brænderprogram under Linux; det hedder
-<command>cdrecord</command> og følger med stort set alle
+Der findes Ã©t meget anvendt brÃ¦nderprogram under Linux; det hedder
+<command>cdrecord</command> og fÃ¸lger med stort set alle
 distributioner. <command>cdrecord</command> er et tekstbaseret program
-med en mængde muligheder, så det kan være lidt tungt at danse med.
-Derfor findes også en række grafiske programmer, der fungerer som
-lettilgængelige overbygninger af <command>cdrecord</command>. Nogle
+med en mÃ¦ngde muligheder, sÃ¥ det kan vÃ¦re lidt tungt at danse med.
+Derfor findes ogsÃ¥ en rÃ¦kke grafiske programmer, der fungerer som
+lettilgÃ¦ngelige overbygninger af <command>cdrecord</command>. Nogle
 meget benyttede grafiske programmer er <command>X-CD-Roast</command> og
 <command>gcombust</command>.
 </para>
 
 <para>
-Hvis ikke <command>cdrecord</command> er installeret på dit system, så
-start med at gøre dette. Så er det nemt at se om brændersystemet kører
+Hvis ikke <command>cdrecord</command> er installeret pÃ¥ dit system, sÃ¥
+start med at gÃ¸re dette. SÃ¥ er det nemt at se om brÃ¦ndersystemet kÃ¸rer
 som det skal. Ved at give kommandoen <command>cdrecord
 -scanbus</command> udskrives en liste over de drev, der er genkendt:
 </para>
 
 <screen>
 <prompt>[root@linus /]#</prompt> <userinput>cdrecord -scanbus</userinput>
-Cdrecord 2.0 (i586-mandrake-linux-gnu) Copyright (C) 1995-2002 Jörg Schilling
+Cdrecord 2.0 (i586-mandrake-linux-gnu) Copyright (C) 1995-2002 JÃ¶rg Schilling
 Linux sg driver version: 3.1.24
 Using libscg version 'schily-0.7'
 scsibus0:
@@ -53,76 +53,76 @@ scsibus0:
 </screen>
 
 <para>
-Her ses at systemet har fundet to drev. Det første er et almindeligt
-cd-rom-drev, det andet er brænderen. Det er ikke umiddelbart muligt at
-se forskel, men hvis man kender mærket på sin brænder burde man kunne
+Her ses at systemet har fundet to drev. Det fÃ¸rste er et almindeligt
+cd-rom-drev, det andet er brÃ¦nderen. Det er ikke umiddelbart muligt at
+se forskel, men hvis man kender mÃ¦rket pÃ¥ sin brÃ¦nder burde man kunne
 finde den i listen. Da <command>cdrecord</command> kan se flere drev,
-er det nødvendigt at mærke sig hvilket af dem, der skal anvendes. I
-dette tilfælde er det drevet med nummeret
-<command>0,1,0</command>. Sådan et nummer skal altid bruges når
-man vil brænde, også hvis brænderen er det eneste drev, man har i
+er det nÃ¸dvendigt at mÃ¦rke sig hvilket af dem, der skal anvendes. I
+dette tilfÃ¦lde er det drevet med nummeret
+<command>0,1,0</command>. SÃ¥dan et nummer skal altid bruges nÃ¥r
+man vil brÃ¦nde, ogsÃ¥ hvis brÃ¦nderen er det eneste drev, man har i
 maskinen.
 </para>
 
 <para>
-I det følgende vil der blive gennemgået hvad man kan gøre hvis
-ens brænder ikke umiddelbart bliver genkendt. Der vil derefter kort blive
-gennemgået en enkelt af de nemme grafiske overbygninger til
+I det fÃ¸lgende vil der blive gennemgÃ¥et hvad man kan gÃ¸re hvis
+ens brÃ¦nder ikke umiddelbart bliver genkendt. Der vil derefter kort blive
+gennemgÃ¥et en enkelt af de nemme grafiske overbygninger til
 <command>cdrecord</command>. Endelig bliver det vist hvorledes
-<command>cdrecord</command> (og et par hjælpeprogrammer)
+<command>cdrecord</command> (og et par hjÃ¦lpeprogrammer)
 benyttes fra kommandolinjen, til at lave
 cd'er med enten data, musik eller begge dele.
 </para>
 
 <para>
-Man skulle således være godt i gang med brænding efter at have læst
+Man skulle sÃ¥ledes vÃ¦re godt i gang med brÃ¦nding efter at have lÃ¦st
 dette kapitel.
-En mere detaljeret gennemgang af cd-brænding under Linux findes i
+En mere detaljeret gennemgang af cd-brÃ¦nding under Linux findes i
 <ulink
 url="http://www.tldp.org/HOWTO/CD-Writing-HOWTO.html">http://www.tldp.org/HOWTO/CD-Writing-HOWTO.html</ulink>.
-Her er især svar på mange mulige komplikationer, som ikke er dækket i
-indeværende tekst.
+Her er isÃ¦r svar pÃ¥ mange mulige komplikationer, som ikke er dÃ¦kket i
+indevÃ¦rende tekst.
 </para>
 
 
 <sect1 id="opsaetning-braender-kerne">
-<title>Opsætning af brænder på hjemmebygget kerne</title>
+<title>OpsÃ¦tning af brÃ¦nder pÃ¥ hjemmebygget kerne</title>
 
-<indexterm><primary>Brænde cd</primary><secondary>kerne-opsætning</secondary></indexterm>
+<indexterm><primary>BrÃ¦nde cd</primary><secondary>kerne-opsÃ¦tning</secondary></indexterm>
 
 <para>
 I dette afsnit beskrives hvorledes en Linux-kerne bringes til at
-genkende en brænder. Hvis brænderen allerede genkendes med kommandoen
+genkende en brÃ¦nder. Hvis brÃ¦nderen allerede genkendes med kommandoen
 <command>cdrecord -scanbus</command> som beskrevet ovenfor, kan
 dette afsnit derfor springes over. Har man imidlertid selv hentet sin
 kerne fra <ulink
 url="http://www.kernel.org">http://www.kernel.org</ulink> eller kan
-ens distribution af én eller anden grund ikke finde brænderen, så må
+ens distribution af Ã©n eller anden grund ikke finde brÃ¦nderen, sÃ¥ mÃ¥
 man selv til at rode lidt dybere.
 </para>
 
 <para>
-Programmet <command>cdrecord</command> understøtter kun SCSI-brændere. Uanset
+Programmet <command>cdrecord</command> understÃ¸tter kun SCSI-brÃ¦ndere. Uanset
 hvad, skal man derfor i indstillingerne til kernen aktivere
-SCSI-understøttelse. Dette gøres ved under "SCSI support" at aktivere
+SCSI-understÃ¸ttelse. Dette gÃ¸res ved under "SCSI support" at aktivere
 "SCSI CD-ROM support" og "SCSI generic support". Hvis dette er gjort,
-vil man på det kørende system have et bibliotek ved navn
+vil man pÃ¥ det kÃ¸rende system have et bibliotek ved navn
 <filename>/proc/scsi/</filename>.
 </para>
 
 <para>
-Hvis man ejer en SCSI-brænder, så skal man endvidere sørge for at ens
-SCSI-controller er understøttet af Linux, så virker
+Hvis man ejer en SCSI-brÃ¦nder, sÃ¥ skal man endvidere sÃ¸rge for at ens
+SCSI-controller er understÃ¸ttet af Linux, sÃ¥ virker
 <command>cdrecord</command> uden videre. Dette sker under kernens
-indstillinger for "SCSI low-level drivers", hvor man blot vælger det
+indstillinger for "SCSI low-level drivers", hvor man blot vÃ¦lger det
 SCSI-kort, man nu engang ejer.
 </para>
 
 <para>
-Har man i stedet en IDE-brænder, så skal der sættes IDE-SCSI emulering
-op, således at brænderen overfor <command>cdrecord</command> fremstår
-som en SCSI-brænder. De fleste brændere er af IDE-typen, og er man i
-tvivl hvad man har, så er det ganske sikkert en IDE-brænder.
+Har man i stedet en IDE-brÃ¦nder, sÃ¥ skal der sÃ¦ttes IDE-SCSI emulering
+op, sÃ¥ledes at brÃ¦nderen overfor <command>cdrecord</command> fremstÃ¥r
+som en SCSI-brÃ¦nder. De fleste brÃ¦ndere er af IDE-typen, og er man i
+tvivl hvad man har, sÃ¥ er det ganske sikkert en IDE-brÃ¦nder.
 </para>
 
 <sect2 id="opsaetning-ide-scsi-emulering">
@@ -132,32 +132,32 @@ tvivl hvad man har, så er det ganske sikkert en IDE-brænder.
 <indexterm><primary>SCSI</primary><secondary>IDE, emuleret med</secondary></indexterm>
 
 <para>
-For at få en IDE-brænder til at fremstå som en SCSI-brænder må man
-gøre to ting. Det første er at kernen skal oversættes med support for
+For at fÃ¥ en IDE-brÃ¦nder til at fremstÃ¥ som en SCSI-brÃ¦nder mÃ¥ man
+gÃ¸re to ting. Det fÃ¸rste er at kernen skal oversÃ¦ttes med support for
 ide-scsi, scsi-cdrom, generic scsi og ide-cd. Desuden skal den
-hidtidige IDE-understøttelse fjernes, så de to systemer ikke træder
-hinanden over tæerne.
+hidtidige IDE-understÃ¸ttelse fjernes, sÃ¥ de to systemer ikke trÃ¦der
+hinanden over tÃ¦erne.
 </para>
 
 <para>
-Det man skal være opmærksom på under kerne-oversættelsen er
+Det man skal vÃ¦re opmÃ¦rksom pÃ¥ under kerne-oversÃ¦ttelsen er
 menupunkterne "SCSI emulation support" samt "Include IDE/ATAPI CDROM
 support" under afdelingen "IDE, ATA and ATAPI Block devices", som igen
 findes under "ATA/IDE/MFM/RLL support". Disse valg er i tilgift til
 "SCSI CD-ROM support" og "SCSI generic support" som beskrevet ovenfor.
-Man kan frit vælge om tingene skal bygges direkte ind i kernen, eller
-om de skal laves som moduler. I det følgende er det dog antaget at der
+Man kan frit vÃ¦lge om tingene skal bygges direkte ind i kernen, eller
+om de skal laves som moduler. I det fÃ¸lgende er det dog antaget at der
 benyttes moduler.
 </para>
 
 <para>
-Når man har fået bygget sig en kerne med de rette elementer, skal man
-sørge for at fjerne den normale IDE-cd understøttelse. Det skal
+NÃ¥r man har fÃ¥et bygget sig en kerne med de rette elementer, skal man
+sÃ¸rge for at fjerne den normale IDE-cd understÃ¸ttelse. Det skal
 ske i opstarten af Linux, hvor man skal give parametren
-<command>hdx=ide-scsi</command>, forudsat at ens brænder har
+<command>hdx=ide-scsi</command>, forudsat at ens brÃ¦nder har
 navnet <command>hdX</command>. Hvis man er i tvivl, hvilket navn,
-brænderen har, kan man bruge følgende kommando, som vil udskrive en
-liste over de cd-drev (brænder eller ej), der er fundet af Linux:
+brÃ¦nderen har, kan man bruge fÃ¸lgende kommando, som vil udskrive en
+liste over de cd-drev (brÃ¦nder eller ej), der er fundet af Linux:
 </para>
 
 <screen>
@@ -169,16 +169,16 @@ hdd
 </screen>
 
 <para>
-I dette tilfælde er der altså to drev i maskinen, og man skal tilføje
+I dette tilfÃ¦lde er der altsÃ¥ to drev i maskinen, og man skal tilfÃ¸je
 <command>hdc=ide-scsi hdd=ide-scsi</command> som parameter til
-kernen. Dette vil give IDE-SCSI-emulering både for brænderen og for
-det normale cd-rom-drev, men det er også helt i orden; emuleringen er
-ikke forbeholdt brændere.
+kernen. Dette vil give IDE-SCSI-emulering bÃ¥de for brÃ¦nderen og for
+det normale cd-rom-drev, men det er ogsÃ¥ helt i orden; emuleringen er
+ikke forbeholdt brÃ¦ndere.
 </para>
 
 <para>
-Bruger man LILO til at starte Linux skal man ind og ændre i
-<filename>/etc/lilo.conf</filename>. Her skal man tilføje til
+Bruger man LILO til at starte Linux skal man ind og Ã¦ndre i
+<filename>/etc/lilo.conf</filename>. Her skal man tilfÃ¸je til
 en <command>append</command> linje:
 </para>
 
@@ -196,18 +196,18 @@ image=/boot/vmlinuz-2.4.17-6
 </programlisting>
 
 <para>
-I ovenstående eksempel fandtes i forvejen
-<command>append="apm=on"</command>, og vi har så udvidet med vores
+I ovenstÃ¥ende eksempel fandtes i forvejen
+<command>append="apm=on"</command>, og vi har sÃ¥ udvidet med vores
 parametre. Findes linjen ikke i forvejen, laver man den blot selv.
 </para>
 
 <para>
-Efter tilføjelsen køres <command>/sbin/lilo</command> og maskinen skal
-så genstartes for at glemme alt om IDE-drevet.
+Efter tilfÃ¸jelsen kÃ¸res <command>/sbin/lilo</command> og maskinen skal
+sÃ¥ genstartes for at glemme alt om IDE-drevet.
 </para>
 
 <para>
-Mandrake vil endda selv prøve at indsætte de nødvendige rettelser til 
+Mandrake vil endda selv prÃ¸ve at indsÃ¦tte de nÃ¸dvendige rettelser til 
 <filename>/etc/lilo.conf</filename>.
 </para>
 
@@ -225,8 +225,8 @@ title Red Hat Linux (2.4.20-18.8)
 </programlisting>
 
 <para>
-Hvis endelig man kører med <command>loadlin</command> (opstart fra
-DOS/Windows), så kan man lave en linje i
+Hvis endelig man kÃ¸rer med <command>loadlin</command> (opstart fra
+DOS/Windows), sÃ¥ kan man lave en linje i
 <command>autoexec.bat</command> med
 </para>
 
@@ -237,7 +237,7 @@ c:\linux\loadlin c:\linux\vmlinuz.244 root=/dev/hdb5 ro hdc=ide-scsi hdd=ide-scs
 <para>
 Her er <command>loadlin.exe</command> i
 <filename>c:\linux</filename>, der bruges en kerne
-<filename>vmlinuz.244</filename> med system-roden på
+<filename>vmlinuz.244</filename> med system-roden pÃ¥
 <filename>/dev/hdb5</filename> og til de to cd-drev
 <filename>hdc</filename> og <filename>hdd</filename>
 anvendes IDE-SCSI-emulering.
@@ -256,18 +256,18 @@ Efter genstart af systemet kan man nu skrive
 </screen>
 
 <para>
-Så skulle IDE-SCSI-emuleringen være i orden, og drevene være synlige
+SÃ¥ skulle IDE-SCSI-emuleringen vÃ¦re i orden, og drevene vÃ¦re synlige
 via <command>cdrecord -scanbus</command>.
 </para>
 
 <para>
-Vil man automatisere dette, så man ikke skal skrive
+Vil man automatisere dette, sÃ¥ man ikke skal skrive
 <command>modprobe</command>-linjerne efter hver genstart af maskinen,
-kan man på mange distributioner finde filen
-<filename>/etc/modules</filename>. I denne fil står navne på
-moduler, som automatisk skal indlæses ved opstart. Man kan altså
-tilføje følgende linjer og behøver så ikke huske at
-indlæse modulerne selv:
+kan man pÃ¥ mange distributioner finde filen
+<filename>/etc/modules</filename>. I denne fil stÃ¥r navne pÃ¥
+moduler, som automatisk skal indlÃ¦ses ved opstart. Man kan altsÃ¥
+tilfÃ¸je fÃ¸lgende linjer og behÃ¸ver sÃ¥ ikke huske at
+indlÃ¦se modulerne selv:
 </para>
 
 <programlisting>
@@ -276,9 +276,9 @@ ide-scsi
 </programlisting>
 
 <para>
-For at kunne bruge det drev, der er lavet IDE-SCSI-emulering på, som
-almindeligt cd-rom-drev også, skal der laves en sidste
-ændring. <filename>/dev/cdrom</filename> peger sandsynligvis på et
+For at kunne bruge det drev, der er lavet IDE-SCSI-emulering pÃ¥, som
+almindeligt cd-rom-drev ogsÃ¥, skal der laves en sidste
+Ã¦ndring. <filename>/dev/cdrom</filename> peger sandsynligvis pÃ¥ et
 IDE-cd-drev.
 </para>
 
@@ -290,12 +290,12 @@ lrwxrwxrwx    1 root     root            4 Dec 30 22:03 /dev/cdrom -> hdc
 </screen>
 
 <para>
-Eftersom der nu er lavet en IDE-SCSI-emulering, så eksisterer
-cd-drevet ikke længere på IDE-bussen på systemet, men på den emulerede
-SCSI-bus. Derfor har den også fået et nyt navn, nemlig
-<filename>/dev/scd0</filename> (tallet nul er dog afhængigt af om
-der er andre SCSI-enheder i systemet), og så skal
-<filename>/dev/cdrom</filename> også ændres til at pege det korrekte
+Eftersom der nu er lavet en IDE-SCSI-emulering, sÃ¥ eksisterer
+cd-drevet ikke lÃ¦ngere pÃ¥ IDE-bussen pÃ¥ systemet, men pÃ¥ den emulerede
+SCSI-bus. Derfor har den ogsÃ¥ fÃ¥et et nyt navn, nemlig
+<filename>/dev/scd0</filename> (tallet nul er dog afhÃ¦ngigt af om
+der er andre SCSI-enheder i systemet), og sÃ¥ skal
+<filename>/dev/cdrom</filename> ogsÃ¥ Ã¦ndres til at pege det korrekte
 sted hen.
 </para>
 
@@ -312,25 +312,25 @@ lrwxrwxrwx  1 root root 4 Dec 30 22:03 /dev/cdrom -> /dev/scd0
 
 
 <sect1 id="k3b">
-<title>k3b - nem brænding af cd-rom'er</title>
+<title>k3b - nem brÃ¦nding af cd-rom'er</title>
 <indexterm><primary>k3b</primary></indexterm>
-<indexterm><primary>cd</primary><secondary>brændeprogram, k3b</secondary></indexterm>
+<indexterm><primary>cd</primary><secondary>brÃ¦ndeprogram, k3b</secondary></indexterm>
 <para>
-Et af de nemmeste og bedste programmer til at brænde cd-rom'er er k3b, som er et KDE-program.
-Man har en nem og logisk brugergrænseflade
+Et af de nemmeste og bedste programmer til at brÃ¦nde cd-rom'er er k3b, som er et KDE-program.
+Man har en nem og logisk brugergrÃ¦nseflade
 </para>
 
 <sect2 id="k3b-opsaetning">
-<title>Opsætning af k3b</title>
+<title>OpsÃ¦tning af k3b</title>
 
 <para>
-k3b kræver at du har flere dele af KDE installeret; kdebase og kdelibs er nødvendige.
+k3b krÃ¦ver at du har flere dele af KDE installeret; kdebase og kdelibs er nÃ¸dvendige.
 Start med at installere dem. Med Mandrake er <command>urpmi k3b</command> 
-tilstrækkelig til at klare de afhængigheder.
+tilstrÃ¦kkelig til at klare de afhÃ¦ngigheder.
 </para>
 
 <para>
-Man skal først som "root" køre <command>k3bsetup</command>
+Man skal fÃ¸rst som "root" kÃ¸re <command>k3bsetup</command>
 </para>
 
 <screen>
@@ -339,7 +339,7 @@ Man skal først som "root" køre <command>k3bsetup</command>
 </screen>
 
 <para>
-Den første skærm er kun en velkomst. 
+Den fÃ¸rste skÃ¦rm er kun en velkomst. 
 </para>
 
 <figure id="k3bsetup1-fig" float="1">
@@ -348,10 +348,10 @@ Den første skærm er kun en velkomst.
 </figure>
 
 <para>
-Den næste side bør vise at du
+Den nÃ¦ste side bÃ¸r vise at du
 allerede har installeret <command>cdrdao</command>, 
 <command>cdrecord</command> og
-<command>mkisofs</command>. Er dette ikke tilfældet så gør det :)</para>
+<command>mkisofs</command>. Er dette ikke tilfÃ¦ldet sÃ¥ gÃ¸r det :)</para>
 
 
 <figure id="k3bsetup2-fig" float="1">
@@ -360,9 +360,9 @@ allerede har installeret <command>cdrdao</command>,
 </figure>
 
 <para>
-På den næste side bør din cd-rom-brænder være fundet direkte - se hvad 
+PÃ¥ den nÃ¦ste side bÃ¸r din cd-rom-brÃ¦nder vÃ¦re fundet direkte - se hvad 
 der vises under punktet "skriver". 
-Det kræver, at dit system har en SCSI-emulering (for kerne 2.4) - se 
+Det krÃ¦ver, at dit system har en SCSI-emulering (for kerne 2.4) - se 
 <xref linkend="opsaetning-ide-scsi-emulering"></xref>. 
 </para>
 
@@ -372,7 +372,7 @@ Det kræver, at dit system har en SCSI-emulering (for kerne 2.4) - se
 </figure>
 
 <para>
-Den næste side skal du blot acceptere.
+Den nÃ¦ste side skal du blot acceptere.
 </para>
 
 <figure id="k3bsetup4-fig" float="1">
@@ -381,8 +381,8 @@ Den næste side skal du blot acceptere.
 </figure>
 
 <para>
-Nu skal du tilføje hvilke brugere som kan få lov til at 
-brænde cd-rom'er.
+Nu skal du tilfÃ¸je hvilke brugere som kan fÃ¥ lov til at 
+brÃ¦nde cd-rom'er.
 </para>
 
 <figure id="k3bsetup5-fig" float="1">
@@ -391,7 +391,7 @@ brænde cd-rom'er.
 </figure>
 
 <para>
-Så er vi færdige.
+SÃ¥ er vi fÃ¦rdige.
 </para>
 
 <figure id="k3bsetup6-fig" float="1">
@@ -404,10 +404,10 @@ Så er vi færdige.
 <title>Brug af k3b</title>
 
 <para>
-Når man starter <command>k3b</command> op, så kan man 
-se ens eget filtræ til venstre med kataloger. Nederst
+NÃ¥r man starter <command>k3b</command> op, sÃ¥ kan man 
+se ens eget filtrÃ¦ til venstre med kataloger. Nederst
 vil programmet vise status for skrive-projektet.
-For at lave backup til cd-rom af en stribe kataloger, så vælg
+For at lave backup til cd-rom af en stribe kataloger, sÃ¥ vÃ¦lg
 "File"-&gt;"New Project"-&gt;"New Data Project".
 </para>
 
@@ -418,11 +418,11 @@ For at lave backup til cd-rom af en stribe kataloger, så vælg
 </figure>
 
 <para>
-Nu kan kataloger og filer hives fra toppen til midten af skærmen
+Nu kan kataloger og filer hives fra toppen til midten af skÃ¦rmen
 hvor katalog-strukturen for den endelige cd-rom er vist.
-Bemærk den grønne bar som viser hvor meget af cd-rom'en som
-er anvendt. Tryk endeligt på det lille cd-rom-ikon for at komme
-til brænder-menuen.
+BemÃ¦rk den grÃ¸nne bar som viser hvor meget af cd-rom'en som
+er anvendt. Tryk endeligt pÃ¥ det lille cd-rom-ikon for at komme
+til brÃ¦nder-menuen.
 </para>
 
 <figure id="k3b2-fig" float="1">
@@ -431,8 +431,8 @@ til brænder-menuen.
 </figure>
 
 <para>
-Trykker du "write" i øverste højre hjørne, og indsætter en 
-brændbar skive, så står du snart med en backup-cd-rom.
+Trykker du "write" i Ã¸verste hÃ¸jre hjÃ¸rne, og indsÃ¦tter en 
+brÃ¦ndbar skive, sÃ¥ stÃ¥r du snart med en backup-cd-rom.
 </para>
 
 
@@ -447,14 +447,14 @@ brændbar skive, så står du snart med en backup-cd-rom.
 <sect1 id="X-CD-Roast">
 <title>X-CD-Roast</title>
 <indexterm><primary>X-CD-Roast</primary></indexterm>
-<indexterm><primary>cd</primary><secondary>brændeprogram, X-CD-Roast</secondary></indexterm>
+<indexterm><primary>cd</primary><secondary>brÃ¦ndeprogram, X-CD-Roast</secondary></indexterm>
 
 <para>
-På <ulink
+PÃ¥ <ulink
 url="http://www.xcdroast.org">http://www.xcdroast.org</ulink> kan man
-finde X-CD-Roast. Få fat i den og installér den. Skal man kunne brænde
-cd'er uden at være root bliver man nødt til at sætte suid-bitten på
-<filename>xcdroast</filename>. Dette gøres:
+finde X-CD-Roast. FÃ¥ fat i den og installÃ©r den. Skal man kunne brÃ¦nde
+cd'er uden at vÃ¦re root bliver man nÃ¸dt til at sÃ¦tte suid-bitten pÃ¥
+<filename>xcdroast</filename>. Dette gÃ¸res:
 </para>
 
 <screen>
@@ -464,8 +464,8 @@ cd'er uden at være root bliver man nødt til at sætte suid-bitten på
 </screen>
 
 <para>
-Så skulle det være i orden. Derefter startes
-<command>xcdroast</command> hvorefter man lige skal svare på en
+SÃ¥ skulle det vÃ¦re i orden. Derefter startes
+<command>xcdroast</command> hvorefter man lige skal svare pÃ¥ en
 en ret morsom "disclaimer".
 </para>
 
@@ -476,22 +476,22 @@ en ret morsom "disclaimer".
 </figure>
 
 <para>
-Det antages nu at brænderen er sat op og virker. Det testes
-med "Setup".  Under "CD Setup" vælges brænderen som cd-writer-device,
-og speed sættes. Eksisterer brænderen ikke under dette punkt, så
-skyldes det, at brænderen enten ikke er tilsluttet ordentligt (scsi)
-eller at det er en ide-brænder som kræver en
+Det antages nu at brÃ¦nderen er sat op og virker. Det testes
+med "Setup".  Under "CD Setup" vÃ¦lges brÃ¦nderen som cd-writer-device,
+og speed sÃ¦ttes. Eksisterer brÃ¦nderen ikke under dette punkt, sÃ¥
+skyldes det, at brÃ¦nderen enten ikke er tilsluttet ordentligt (scsi)
+eller at det er en ide-brÃ¦nder som krÃ¦ver en
 ide-scsi-emuluering. Dette ses i sidste afsnit.  Under "HD Setup"
-vælges et image-mount-point (der hvor man monterer sit image).  Her kan
-man vælge, hvis man har en hel partition dedikeret til cd-images eller
+vÃ¦lges et image-mount-point (der hvor man monterer sit image).  Her kan
+man vÃ¦lge, hvis man har en hel partition dedikeret til cd-images eller
 lignende, at den skal bruge dette. Det er meget praktisk at der mindst
-er plads til en enkelt hel cd på den valgte placering. Det er på denne
-plads i filsystemet at xcdroast lægger de rippede images.  Under
-"Misc" og "Defaults", kan sættes ting som lyd, vinduernes placering,
-osv. Disse er dog ikke vigtige for brændingen. Derefter vælges "Save"
-og "Done". Nu skulle de øvrige knapper ikke være grå længere, men alle
-skulle kunne bruges.  Så afhænger det af hvad man skal brænde. Under
-"Copy Data CD" ligger alle de operationer man skal kunne bruge på en
+er plads til en enkelt hel cd pÃ¥ den valgte placering. Det er pÃ¥ denne
+plads i filsystemet at xcdroast lÃ¦gger de rippede images.  Under
+"Misc" og "Defaults", kan sÃ¦ttes ting som lyd, vinduernes placering,
+osv. Disse er dog ikke vigtige for brÃ¦ndingen. Derefter vÃ¦lges "Save"
+og "Done". Nu skulle de Ã¸vrige knapper ikke vÃ¦re grÃ¥ lÃ¦ngere, men alle
+skulle kunne bruges.  SÃ¥ afhÃ¦nger det af hvad man skal brÃ¦nde. Under
+"Copy Data CD" ligger alle de operationer man skal kunne bruge pÃ¥ en
 hel cd.
 </para>
 
@@ -506,7 +506,7 @@ hel cd.
 </figure>
 
 <para>
-Det skal lige bemærkes at X-CD-Roast bruger <filename>.raw</filename> i
+Det skal lige bemÃ¦rkes at X-CD-Roast bruger <filename>.raw</filename> i
 stedet for <filename>.iso</filename> som endelse. Dette ligger kun i
 navnet, ikke andet. Skal man derfor bruge det rippede image til noget
 hvor denne endelse er vigtig, kan man bare lave et symlink med det
@@ -528,7 +528,7 @@ drwxr-xr-x 2 root root 1024 Feb 29 20:26 tmp
 
 <para>
 Under "Copy Audio CD" er der samme features som ved data. Dette virker
-bare på audio-cd'er i stedet:
+bare pÃ¥ audio-cd'er i stedet:
 </para>
 
 <figure id="xcdroast3" float="1">
@@ -537,12 +537,12 @@ bare på audio-cd'er i stedet:
 </figure>
 
 <para>
-Skal man nu selv til at lægge et filsystem ud på cd, gøres det under punktet
-"Master CD". Under Master from/to kan man nu vælge
-den del af filsystemet man ønsker at brænde ud. Følgende valg vil lave
+Skal man nu selv til at lÃ¦gge et filsystem ud pÃ¥ cd, gÃ¸res det under punktet
+"Master CD". Under Master from/to kan man nu vÃ¦lge
+den del af filsystemet man Ã¸nsker at brÃ¦nde ud. FÃ¸lgende valg vil lave
 et master image med <filename>/home</filename> hvor
-<filename>/home/ftp</filename> ikke er på. Vælg "Master Image" og
-derefter "Write Image", så er man i gang.
+<filename>/home/ftp</filename> ikke er pÃ¥. VÃ¦lg "Master Image" og
+derefter "Write Image", sÃ¥ er man i gang.
 </para>
 
 
@@ -552,30 +552,30 @@ derefter "Write Image", så er man i gang.
 </figure>
 
 <para>
-Mere om X-CD-Roast og opsætning af brænder findes i
+Mere om X-CD-Roast og opsÃ¦tning af brÃ¦nder findes i
 <filename>/usr/local/xcdroast-0.96ex/README*</filename> eller hvor
 nu ellers <command>xcdroast</command> er installeret.
 </para>
 </sect1>
 
 <sect1 id="cdrecord">
-<title>Brænde cd med cdrecord</title>
+<title>BrÃ¦nde cd med cdrecord</title>
 <!-- Skrevet af Gert Holtoft <holtoft@get2net.dk> -->
 <indexterm><primary>cdrecord</primary></indexterm>
-<indexterm><primary>cd</primary><secondary>brændeprogram, cdrecord</secondary></indexterm>
-<indexterm><primary>Brænde cd</primary><secondary>fra kommandolinjen</secondary></indexterm>
+<indexterm><primary>cd</primary><secondary>brÃ¦ndeprogram, cdrecord</secondary></indexterm>
+<indexterm><primary>BrÃ¦nde cd</primary><secondary>fra kommandolinjen</secondary></indexterm>
 
 <para>
-Det bliver nu gennemgået, hvorledes man kan brænde en cd udelukkende
-ved hjælp af <command>cdrecord</command>, altså uden en grafisk
-overbygning. Det forudsættes at brænderen er sat op og virker. Vi kan
-derfor, som omtalt i kapitlets indledning, finde brænderens nummer ved
-hjælp af kommandoen <command>cdrecord -scanbus</command>.
+Det bliver nu gennemgÃ¥et, hvorledes man kan brÃ¦nde en cd udelukkende
+ved hjÃ¦lp af <command>cdrecord</command>, altsÃ¥ uden en grafisk
+overbygning. Det forudsÃ¦ttes at brÃ¦nderen er sat op og virker. Vi kan
+derfor, som omtalt i kapitlets indledning, finde brÃ¦nderens nummer ved
+hjÃ¦lp af kommandoen <command>cdrecord -scanbus</command>.
 </para>
 
 <screen>
 <prompt>[root@linus /]#</prompt> <userinput>cdrecord -scanbus</userinput>
-Cdrecord 2.0 (i586-mandrake-linux-gnu) Copyright (C) 1995-2002 Jörg Schilling
+Cdrecord 2.0 (i586-mandrake-linux-gnu) Copyright (C) 1995-2002 JÃ¶rg Schilling
 Linux sg driver version: 3.1.24
 Using libscg version 'schily-0.7'
 scsibus0:
@@ -590,38 +590,38 @@ scsibus0:
 </screen>
 
 <para>
-Brænderen har i dette tilfælde nummeret <command>0,1,0</command>,
-og dette nummer bruges i de følgende eksempler, hvor der angives
+BrÃ¦nderen har i dette tilfÃ¦lde nummeret <command>0,1,0</command>,
+og dette nummer bruges i de fÃ¸lgende eksempler, hvor der angives
 <command>dev=0,1,0</command>. Der skal muligvis skiftes ud med et
 andet nummer, som man selv kan finde med <command>cdrecord
 -scanbus</command>.
 </para>
 
 <sect2 id="cdrecord-braende">
-<title>Cd brændes</title>
+<title>Cd brÃ¦ndes</title>
 	
-<indexterm><primary>cdrecord</primary><secondary>brænde iso-fil</secondary></indexterm>
+<indexterm><primary>cdrecord</primary><secondary>brÃ¦nde iso-fil</secondary></indexterm>
 
-<indexterm><primary>Iso-fil</primary><secondary>brænde</secondary></indexterm>
+<indexterm><primary>Iso-fil</primary><secondary>brÃ¦nde</secondary></indexterm>
 
 <para>
-For at kunne brænde en cd skal man typisk have en såkaldt iso-fil,
-også kaldet et cd-image. En iso-fil er en samling af alle de filer, der skal
-ende på cd'en, pakket sammen i en enkelt fil. Man kan hente en del
-iso-filer på nettet; for eksempel består mange Linux-distributioner af omkring 3
-iso-filer, som man kan hente og siden brænde. Da en iso-fil indeholder
-alt det, der skal ende på en cd, vil den ofte være ret stor - op til
-de omkring 700MB, der kan være på en cd.
+For at kunne brÃ¦nde en cd skal man typisk have en sÃ¥kaldt iso-fil,
+ogsÃ¥ kaldet et cd-image. En iso-fil er en samling af alle de filer, der skal
+ende pÃ¥ cd'en, pakket sammen i en enkelt fil. Man kan hente en del
+iso-filer pÃ¥ nettet; for eksempel bestÃ¥r mange Linux-distributioner af omkring 3
+iso-filer, som man kan hente og siden brÃ¦nde. Da en iso-fil indeholder
+alt det, der skal ende pÃ¥ en cd, vil den ofte vÃ¦re ret stor - op til
+de omkring 700MB, der kan vÃ¦re pÃ¥ en cd.
 </para>
 
 <para>
-Man kan også lave sine egne iso-filer, hvor man helt selv bestemmer
-indholdet, og dermed hvad der kommer på cd'en. Mere om dette senere.
+Man kan ogsÃ¥ lave sine egne iso-filer, hvor man helt selv bestemmer
+indholdet, og dermed hvad der kommer pÃ¥ cd'en. Mere om dette senere.
 </para>
 
 <para>
-Når man har en iso-fil, man gerne vil have brændt, sker det ved hjælp
-af en kommando som følgende:
+NÃ¥r man har en iso-fil, man gerne vil have brÃ¦ndt, sker det ved hjÃ¦lp
+af en kommando som fÃ¸lgende:
 </para>
 
 <screen>
@@ -630,23 +630,23 @@ af en kommando som følgende:
 
 <para>
 Dette starter <command>cdrecord</command>, som med 16 gange hastighed
-vil bruge brænderen med nummer <command>0,1,0</command> til at
-brænde indholdet af filen <filename>iso-fil</filename>. Selve
-<filename>iso-fil</filename> kan være hvad som helst, men navnet vil
-ofte ende på <filename>.iso</filename>; eksempelvis går den første cd
+vil bruge brÃ¦nderen med nummer <command>0,1,0</command> til at
+brÃ¦nde indholdet af filen <filename>iso-fil</filename>. Selve
+<filename>iso-fil</filename> kan vÃ¦re hvad som helst, men navnet vil
+ofte ende pÃ¥ <filename>.iso</filename>; eksempelvis gÃ¥r den fÃ¸rste cd
 til en Red Hat 7.3 installation under navnet
 <filename>valhalla-i386-disc1.iso</filename>.
 </para>
 
 <para>
-Der er mange muligheder for at ændre virkemåden af
-<command>cdrecord</command>. Specielt kan det være interessant at
+Der er mange muligheder for at Ã¦ndre virkemÃ¥den af
+<command>cdrecord</command>. Specielt kan det vÃ¦re interessant at
 udvide kommandoen ovenfor med <command>-v</command>. Herved vil
-<command>cdrecord</command> fortælle lidt mere om, hvad der foregår
-under brændingen. Endvidere kan <command>-eject</command> være
-nyttig, da den bevirker at drevet spytter cd'en ud når den er brændt
-færdig. Gennem <command>man cdrecord</command> kan man læse om
-alle de øvrige muligheder.
+<command>cdrecord</command> fortÃ¦lle lidt mere om, hvad der foregÃ¥r
+under brÃ¦ndingen. Endvidere kan <command>-eject</command> vÃ¦re
+nyttig, da den bevirker at drevet spytter cd'en ud nÃ¥r den er brÃ¦ndt
+fÃ¦rdig. Gennem <command>man cdrecord</command> kan man lÃ¦se om
+alle de Ã¸vrige muligheder.
 </para>
 </sect2>
 
@@ -655,39 +655,39 @@ alle de øvrige muligheder.
 
 <indexterm><primary>Iso-fil</primary><secondary>fremstilling af</secondary></indexterm>
 <indexterm><primary>mkisofs</primary></indexterm>
-<indexterm><primary>cd</primary><secondary>brændeprogram, mkisofs</secondary></indexterm>
+<indexterm><primary>cd</primary><secondary>brÃ¦ndeprogram, mkisofs</secondary></indexterm>
 
 <para>
-Det kan være nyttigt nok at brænde iso-filer, man har hentet, men det
-er også meget rart selv at kunne bestemme indholdet af den cd, man
-brænder. For at kunne det, må man selv lave en iso-fil. Til det formål
-bruges programmet <command>mkisofs</command>, som er nært knyttet til
+Det kan vÃ¦re nyttigt nok at brÃ¦nde iso-filer, man har hentet, men det
+er ogsÃ¥ meget rart selv at kunne bestemme indholdet af den cd, man
+brÃ¦nder. For at kunne det, mÃ¥ man selv lave en iso-fil. Til det formÃ¥l
+bruges programmet <command>mkisofs</command>, som er nÃ¦rt knyttet til
 <command>cdrecord</command> - men <command>mkisofs</command> skal
 installeres som et seperat program. I <command>mkisofs</command> er
 der endnu flere indstillingsmuligheder end i
-<command>cdrecord</command>, og her gennemgås kun de mest
-grundlæggende. Alle mulighederne er beskrevet i manualen, som fås frem
+<command>cdrecord</command>, og her gennemgÃ¥s kun de mest
+grundlÃ¦ggende. Alle mulighederne er beskrevet i manualen, som fÃ¥s frem
 med kommandoen <command>man mkisofs</command>.
 </para>
 
 <para>
-Når man skal lave en iso-fil er det letteste at lave et katalog, hvor
-man samler alle de filer, man vil have brændt. Man kan så kopiere
+NÃ¥r man skal lave en iso-fil er det letteste at lave et katalog, hvor
+man samler alle de filer, man vil have brÃ¦ndt. Man kan sÃ¥ kopiere
 filer frem og tilbage, indtil man synes at der er det indhold, man
-gerne vil have på den færdige cd. I det følgende vil vi bruge
-kataloget <filename>/cd/</filename> som et sådant samlingssted.
+gerne vil have pÃ¥ den fÃ¦rdige cd. I det fÃ¸lgende vil vi bruge
+kataloget <filename>/cd/</filename> som et sÃ¥dant samlingssted.
 </para>
 
 <para>
-På en cd kan der normalt være 650MB data; nogle cd-typer kan indeholde
-lidt mere. Det er vigtigt, at man ikke forsøger at brænde mere på en
+PÃ¥ en cd kan der normalt vÃ¦re 650MB data; nogle cd-typer kan indeholde
+lidt mere. Det er vigtigt, at man ikke forsÃ¸ger at brÃ¦nde mere pÃ¥ en
 cd, end der er plads til. Derfor kan kommandoen <command>du</command>
-være til god nytte, mens man fylder <filename>/cd/</filename> op med
-data. Man får her et godt overslag på, hvor meget diskplads kataloget
+vÃ¦re til god nytte, mens man fylder <filename>/cd/</filename> op med
+data. Man fÃ¥r her et godt overslag pÃ¥, hvor meget diskplads kataloget
 bruger:
 </para>
 
-<indexterm><primary>Iso-fil</primary><secondary>forudsige størrelse</secondary></indexterm>
+<indexterm><primary>Iso-fil</primary><secondary>forudsige stÃ¸rrelse</secondary></indexterm>
 
 <screen>
 <prompt>[root@linus /]#</prompt> <userinput>du -sh /cd/</userinput>
@@ -695,16 +695,16 @@ bruger:
 </screen>
 
 <para>
-I dette tilfælde er der brugt cirka 141MB, og der er altså plads til
-omtrent yderligere 500MB. Målene skal tages med et gran salt; på grund
-af afrunding og administration forbundet med brændingen er det svært
-at sige præcis hvornår en cd er helt fyldt. Hvis man sørger for ikke
-at have mere end 620MB i sit katalog er man på den sikre side, men som
-regel vil man også have held med at klemme lidt mere ind.
+I dette tilfÃ¦lde er der brugt cirka 141MB, og der er altsÃ¥ plads til
+omtrent yderligere 500MB. MÃ¥lene skal tages med et gran salt; pÃ¥ grund
+af afrunding og administration forbundet med brÃ¦ndingen er det svÃ¦rt
+at sige prÃ¦cis hvornÃ¥r en cd er helt fyldt. Hvis man sÃ¸rger for ikke
+at have mere end 620MB i sit katalog er man pÃ¥ den sikre side, men som
+regel vil man ogsÃ¥ have held med at klemme lidt mere ind.
 </para>
 
 <para>
-Når man mener at kataloget er, som cd'en gerne skal ende med at se ud,
+NÃ¥r man mener at kataloget er, som cd'en gerne skal ende med at se ud,
 kan man lave en iso-fil som indeholder filerne i kataloget:
 </para>
 
@@ -713,26 +713,26 @@ kan man lave en iso-fil som indeholder filerne i kataloget:
 </screen>
 
 <para>
-I dette eksempel får iso-filen navnet <filename>min.iso</filename>, og
+I dette eksempel fÃ¥r iso-filen navnet <filename>min.iso</filename>, og
 den indeholder alle filerne fra <filename>/cd/</filename>. En normal
 cd indeholder kun kastrerede filnavne. Med <command>-r</command>
 angiver man at der desuden skal gemmes de fulde filnavne, i en form
-som Linux forstår. Tilsvarende betyder <command>-J</command> at
-filnavnene gemmes i fuld længde i en form, som Windows forstår. Hvis
-man på forhånd ved, at cd'en kun skal bruges på ét af
-operativsystemerne, kan man selvfølgelig undlade de fulde filnavne til
-det modsatte system. Som regel er det dog en dårlig idé, da man
-risikerer at stå i en uventet situation en skønne dag, og så har man
-pludselig kun de kastrerede filnavne til rådighed.
+som Linux forstÃ¥r. Tilsvarende betyder <command>-J</command> at
+filnavnene gemmes i fuld lÃ¦ngde i en form, som Windows forstÃ¥r. Hvis
+man pÃ¥ forhÃ¥nd ved, at cd'en kun skal bruges pÃ¥ Ã©t af
+operativsystemerne, kan man selvfÃ¸lgelig undlade de fulde filnavne til
+det modsatte system. Som regel er det dog en dÃ¥rlig idÃ©, da man
+risikerer at stÃ¥ i en uventet situation en skÃ¸nne dag, og sÃ¥ har man
+pludselig kun de kastrerede filnavne til rÃ¥dighed.
 </para>
 
 <para>
-Efter ovenstående fremgangsmåde har man en iso-fil, som kan brændes på
-den måde, der blev beskrevet i det foregående afsnit. Hvis man vil
-være helt sikker på, at indholdet er, som man forventer, kan man teste
-indholdet af iso-filen inden den brændes. Hvis man har kataloget
-<filename>/mnt/iso/</filename> kan iso-filen monteres herpå ved hjælp
-af følgende kommando:
+Efter ovenstÃ¥ende fremgangsmÃ¥de har man en iso-fil, som kan brÃ¦ndes pÃ¥
+den mÃ¥de, der blev beskrevet i det foregÃ¥ende afsnit. Hvis man vil
+vÃ¦re helt sikker pÃ¥, at indholdet er, som man forventer, kan man teste
+indholdet af iso-filen inden den brÃ¦ndes. Hvis man har kataloget
+<filename>/mnt/iso/</filename> kan iso-filen monteres herpÃ¥ ved hjÃ¦lp
+af fÃ¸lgende kommando:
 </para>
 
 <indexterm><primary>Iso-fil</primary><secondary>tjekke indhold</secondary></indexterm>
@@ -745,20 +745,20 @@ af følgende kommando:
 I <filename>/mnt/iso/</filename> kan det tjekkes at indholdet af
 iso-filen er som man forventer. Filen afmonteres igen med kommandoen
 <command>umount /mnt/iso</command>, og man er helt klar til at
-brænde. Eller man kan lave en ny iso-fil, hvis man fandt et problem
-med den første.
+brÃ¦nde. Eller man kan lave en ny iso-fil, hvis man fandt et problem
+med den fÃ¸rste.
 </para>
 
-<indexterm><primary>Iso-fil</primary><secondary>undvære ved brænding</secondary></indexterm>
+<indexterm><primary>Iso-fil</primary><secondary>undvÃ¦re ved brÃ¦nding</secondary></indexterm>
 <indexterm><primary>mkisofs</primary><secondary>direkte til cdrecord</secondary></indexterm>
 
 <para>
-Når man bliver mere vant til at lave egne cd'er, synes man nok ikke at
-det er nødvendigt at tjekke indholdet inden brænding. Man kan i sådan
-et tilfælde helt undlade at lave en iso-fil, og i stedet lade
-<command>cdrecord</command> læse sine data direkte fra
-<command>mkisofs</command>. Det sparer både lidt tid og noget plads på
-harddisken. En sådan kombineret kommando ser eksempelvis således ud:
+NÃ¥r man bliver mere vant til at lave egne cd'er, synes man nok ikke at
+det er nÃ¸dvendigt at tjekke indholdet inden brÃ¦nding. Man kan i sÃ¥dan
+et tilfÃ¦lde helt undlade at lave en iso-fil, og i stedet lade
+<command>cdrecord</command> lÃ¦se sine data direkte fra
+<command>mkisofs</command>. Det sparer bÃ¥de lidt tid og noget plads pÃ¥
+harddisken. En sÃ¥dan kombineret kommando ser eksempelvis sÃ¥ledes ud:
 </para>
 
 <screen>
@@ -766,9 +766,9 @@ harddisken. En sådan kombineret kommando ser eksempelvis således ud:
 </screen>
 
 <para>
-Bemærk her både tegnet <command>|</command>, som forbinder de to
-kommandoer, og tegnet <command>-</command>, som fortæller
-<command>cdrecord</command> at den ikke skal læse fra en fil, men blot
+BemÃ¦rk her bÃ¥de tegnet <command>|</command>, som forbinder de to
+kommandoer, og tegnet <command>-</command>, som fortÃ¦ller
+<command>cdrecord</command> at den ikke skal lÃ¦se fra en fil, men blot
 bruge de data, den modtager fra <command>mkisofs</command>. Fordi der
 ikke bruges <command>-o min.iso</command> ved
 <command>mkisofs</command> vil den heller ikke gemme i en fil, men
@@ -778,32 +778,32 @@ blot sende direkte til <command>cdrecord</command>.
 </sect2>
 
 <sect2 id="musik-cd">
-<title>Musik-cd brændes</title>
+<title>Musik-cd brÃ¦ndes</title>
 
-<indexterm><primary>audio cd</primary><secondary>brænde</secondary></indexterm>
-<indexterm><primary>cd</primary><secondary>brænde musik</secondary></indexterm>
+<indexterm><primary>audio cd</primary><secondary>brÃ¦nde</secondary></indexterm>
+<indexterm><primary>cd</primary><secondary>brÃ¦nde musik</secondary></indexterm>
 
-<indexterm><primary>cdrecord</primary><secondary>brænde musik</secondary></indexterm>
+<indexterm><primary>cdrecord</primary><secondary>brÃ¦nde musik</secondary></indexterm>
 
-<indexterm><primary>Mp3-filer</primary><secondary>brænde på cd</secondary></indexterm>
-<indexterm><primary>Ogg-filer</primary><secondary>brænde på cd</secondary></indexterm>
-<indexterm><primary>Wav-filer</primary><secondary>brænde på cd</secondary></indexterm>
+<indexterm><primary>Mp3-filer</primary><secondary>brÃ¦nde pÃ¥ cd</secondary></indexterm>
+<indexterm><primary>Ogg-filer</primary><secondary>brÃ¦nde pÃ¥ cd</secondary></indexterm>
+<indexterm><primary>Wav-filer</primary><secondary>brÃ¦nde pÃ¥ cd</secondary></indexterm>
 
 <para>
 Hvis man vil lave en cd med musik, som kan afspilles i et normalt
-stereoanlæg, skal man ikke bruge en iso-fil. I stedet skal man sørge
-for at den musik, man ønsker på sin cd, findes på harddisken i
-wav-format; der skal være én fil for hvert nummer, man vil have på den
-færdige cd.
+stereoanlÃ¦g, skal man ikke bruge en iso-fil. I stedet skal man sÃ¸rge
+for at den musik, man Ã¸nsker pÃ¥ sin cd, findes pÃ¥ harddisken i
+wav-format; der skal vÃ¦re Ã©n fil for hvert nummer, man vil have pÃ¥ den
+fÃ¦rdige cd.
 </para>
 
 <para>
 Er udgangspunktet for cd'en komprimeret musik i form af mp3-
-eller ogg-filer, skal disse derfor først laves om til wav-filer. De
+eller ogg-filer, skal disse derfor fÃ¸rst laves om til wav-filer. De
 fleste programmer til at afspille komprimerede filer har mulighed for
 at lave en wav-fil i stedet for at afspille lyden. Hvis man for
 eksempel har filen <filename>Hestevise.mp3</filename> kan den laves om
-til <filename>Hestevise.wav</filename> ved hjælp af programmet
+til <filename>Hestevise.wav</filename> ved hjÃ¦lp af programmet
 <command>mpg123</command>:
 </para>
 
@@ -812,8 +812,8 @@ til <filename>Hestevise.wav</filename> ved hjælp af programmet
 </screen>
 
 <para>
-På tilsvarende vis kan filen <filename>Ulilang.ogg</filename> laves om
-til <filename>Ulilang.wav</filename> ved hjælp af
+PÃ¥ tilsvarende vis kan filen <filename>Ulilang.ogg</filename> laves om
+til <filename>Ulilang.wav</filename> ved hjÃ¦lp af
 <command>ogg123</command>:
 </para>
 
@@ -822,22 +822,22 @@ til <filename>Ulilang.wav</filename> ved hjælp af
 </screen>
 
 <para>
-Denne konvertering til wav-filer skal gøres for hver enkelt nummer,
-der skal med på cd'en.
+Denne konvertering til wav-filer skal gÃ¸res for hver enkelt nummer,
+der skal med pÃ¥ cd'en.
 </para>
 
-<indexterm><primary>cd</primary><secondary>brændeprogram, cdparanoia</secondary></indexterm>
+<indexterm><primary>cd</primary><secondary>brÃ¦ndeprogram, cdparanoia</secondary></indexterm>
 <indexterm><primary>cdparanoia</primary></indexterm>
 
 <para>
-Ligger musikken, der skal brændes, på en musik-cd i forvejen
-(og der altså skal laves en kopi) kan det selvstændige program
-<command>cdparanoia</command> bruges til at danne de nødvendige
+Ligger musikken, der skal brÃ¦ndes, pÃ¥ en musik-cd i forvejen
+(og der altsÃ¥ skal laves en kopi) kan det selvstÃ¦ndige program
+<command>cdparanoia</command> bruges til at danne de nÃ¸dvendige
 wav-filer ud fra original cd'en. Med originalen i cd-drevet kan
-man med følgende kommando få de enkelte numre gemt i filerne
+man med fÃ¸lgende kommando fÃ¥ de enkelte numre gemt i filerne
 <filename>track01.cdda.wav</filename>,
-<filename>track02.cdda.wav</filename> og så videre. Operationen kan
-tage lang tid; dette afhænger meget af hvilken model cd-drev, der
+<filename>track02.cdda.wav</filename> og sÃ¥ videre. Operationen kan
+tage lang tid; dette afhÃ¦nger meget af hvilken model cd-drev, der
 anvendes.
 </para>
 
@@ -846,21 +846,21 @@ anvendes.
 </screen>
 
 <para>
-Hvis ikke hele cd'en skal kopieres, kan man også nøjes med at overføre
+Hvis ikke hele cd'en skal kopieres, kan man ogsÃ¥ nÃ¸jes med at overfÃ¸re
 et enkelt nummer. For eksempel kan nummer fire dannes i filen
 <filename>track04.cdda.wav</filename> med kommandoen
-<command>cdparanoia -B 4</command>. Det kan være en god idé at give
-filerne et mere sigende navn når de er blevet overført.
+<command>cdparanoia -B 4</command>. Det kan vÃ¦re en god idÃ© at give
+filerne et mere sigende navn nÃ¥r de er blevet overfÃ¸rt.
 </para>
 
-<!-- Indsæt noget om "volume normalization" her -->
+<!-- IndsÃ¦t noget om "volume normalization" her -->
 
 <para>
-Når alle de numre, der skal på musik-cd'en, ligger som wav-filer, er
-de klar til at blive brændt. Da alle filerne nu er wav-filer, er det
+NÃ¥r alle de numre, der skal pÃ¥ musik-cd'en, ligger som wav-filer, er
+de klar til at blive brÃ¦ndt. Da alle filerne nu er wav-filer, er det
 herefter ligegyldigt hvorvidt filerne oprindeligt kom fra komprimerede
 mp3- eller ogg-filer, fra en eller flere cd'ere, eller en kombination
-af det hele. Wav-filerne kan brændes til en cd med følgende kommando:
+af det hele. Wav-filerne kan brÃ¦ndes til en cd med fÃ¸lgende kommando:
 </para>
 
 <screen>
@@ -868,25 +868,25 @@ af det hele. Wav-filerne kan brændes til en cd med følgende kommando:
 </screen>
 
 <para>
-Hver enkelt musikfil, som skal med på cd'en, angives i denne
-kommando. I dette eksempel vil cd'en derfor komme til at bestå af blot
-to numre. På den færdige cd kommer numrene til at ligge i samme
-rækkefølge, som man angiver filnavnene i. Ofte er man ikke ligeglad
-med den endelige orden, og derfor må man nøje overveje den rækkefølge,
+Hver enkelt musikfil, som skal med pÃ¥ cd'en, angives i denne
+kommando. I dette eksempel vil cd'en derfor komme til at bestÃ¥ af blot
+to numre. PÃ¥ den fÃ¦rdige cd kommer numrene til at ligge i samme
+rÃ¦kkefÃ¸lge, som man angiver filnavnene i. Ofte er man ikke ligeglad
+med den endelige orden, og derfor mÃ¥ man nÃ¸je overveje den rÃ¦kkefÃ¸lge,
 man angiver wav-filerne i.
 </para>
 
 <para>
-Normalt bliver der indsat en pause på cirka to sekunder mellem hvert
-nummer på cd'en. Dette er ofte intet problem, men hvis man laver en
+Normalt bliver der indsat en pause pÃ¥ cirka to sekunder mellem hvert
+nummer pÃ¥ cd'en. Dette er ofte intet problem, men hvis man laver en
 kopi af en cd hvor de enkelte numre glider sammen, kan pausen i kopien
-være meget irriterende. Problemet gør sig især gældende ved
-live-optagelser. Pausen mellem numrene kan undgås ved at bruge "disk
-at once" brænding, hvor hele cd'en brændes i én køre, modsat normal
-"track at once" brænding, hvor de enkelte numre brændes individuelt
-og altså med en lille pause imellem.
-"Disk at once" brænding aktiveres ved hjælp af <command>-dao</command>
-og det tidligere eksempel ser så ud som følger:
+vÃ¦re meget irriterende. Problemet gÃ¸r sig isÃ¦r gÃ¦ldende ved
+live-optagelser. Pausen mellem numrene kan undgÃ¥s ved at bruge "disk
+at once" brÃ¦nding, hvor hele cd'en brÃ¦ndes i Ã©n kÃ¸re, modsat normal
+"track at once" brÃ¦nding, hvor de enkelte numre brÃ¦ndes individuelt
+og altsÃ¥ med en lille pause imellem.
+"Disk at once" brÃ¦nding aktiveres ved hjÃ¦lp af <command>-dao</command>
+og det tidligere eksempel ser sÃ¥ ud som fÃ¸lger:
 </para>
 
 <screen>
@@ -896,24 +896,24 @@ og det tidligere eksempel ser så ud som følger:
 </sect2>
 
 <sect2 id="cd-extra">
-<title>Brænding af cd med både musik og data (CD-Extra)</title>
+<title>BrÃ¦nding af cd med bÃ¥de musik og data (CD-Extra)</title>
 
-<indexterm><primary>cdrecord</primary><secondary>brænde CD-Extra</secondary></indexterm>
+<indexterm><primary>cdrecord</primary><secondary>brÃ¦nde CD-Extra</secondary></indexterm>
 
 <para>
-Man kan lave en cd, som indeholder både musik og data. Når sådan en cd
-bruges i en almindelig cd-afspiller virker den som en musik-cd, og når
+Man kan lave en cd, som indeholder bÃ¥de musik og data. NÃ¥r sÃ¥dan en cd
+bruges i en almindelig cd-afspiller virker den som en musik-cd, og nÃ¥r
 den bruges i en computer er den en data-cd. Princippet kendes fra
 kommercielle musik-cd'er, som af og til indeholder lidt ekstra guf
-hvis man sætter dem i en computer (der dog som oftest skal køre
-operativsystemet Windows). Denne måde at fremstille en cd på kaldes
-CD-Extra, og foregår i to omgange.
+hvis man sÃ¦tter dem i en computer (der dog som oftest skal kÃ¸re
+operativsystemet Windows). Denne mÃ¥de at fremstille en cd pÃ¥ kaldes
+CD-Extra, og foregÃ¥r i to omgange.
 </para>
 
 <para>
-Først laves en musik-cd som normalt, men der skal tilføjes
-<command>-multi</command> ved brændingen. Dette bevirker, at cd'en
-ikke bliver lukket, og det er derfor muligt at tilføje mere senere hen:
+FÃ¸rst laves en musik-cd som normalt, men der skal tilfÃ¸jes
+<command>-multi</command> ved brÃ¦ndingen. Dette bevirker, at cd'en
+ikke bliver lukket, og det er derfor muligt at tilfÃ¸je mere senere hen:
 </para>
 
 <screen>
@@ -921,11 +921,11 @@ ikke bliver lukket, og det er derfor muligt at tilføje mere senere hen:
 </screen>
 
 <para>
-I forlængelse af musikken skal der brændes en iso-fil. Denne iso-fil
-laves på en speciel måde, således at den ikke bliver placeret i
-starten af cd'en. Derfor må man først finde ud af, nøjagtig hvor
-musikken slutter. Det kan <command>cdrecord</command> heldigvis aflæse,
-når man har brændt første del af cd'en. Med cd'en stadig i brænderen
+I forlÃ¦ngelse af musikken skal der brÃ¦ndes en iso-fil. Denne iso-fil
+laves pÃ¥ en speciel mÃ¥de, sÃ¥ledes at den ikke bliver placeret i
+starten af cd'en. Derfor mÃ¥ man fÃ¸rst finde ud af, nÃ¸jagtig hvor
+musikken slutter. Det kan <command>cdrecord</command> heldigvis aflÃ¦se,
+nÃ¥r man har brÃ¦ndt fÃ¸rste del af cd'en. Med cd'en stadig i brÃ¦nderen
 bruger man <command>-msinfo</command>:
 </para>
 
@@ -935,9 +935,9 @@ bruger man <command>-msinfo</command>:
 </screen>
 
 <para>
-Der udskrives to tal, som udtrykker størrelsen på den allerede brændte
-del af cd'en. Man behøver ikke bekymre sig om tallenes værdi, men blot
-overføre dem direkte til <command>mkisofs</command> med
+Der udskrives to tal, som udtrykker stÃ¸rrelsen pÃ¥ den allerede brÃ¦ndte
+del af cd'en. Man behÃ¸ver ikke bekymre sig om tallenes vÃ¦rdi, men blot
+overfÃ¸re dem direkte til <command>mkisofs</command> med
 <command>-C</command> argumentet:
 </para>
 
@@ -946,9 +946,9 @@ overføre dem direkte til <command>mkisofs</command> med
 </screen>
 
 <para>
-Med <command>-C</command> bliver iso-filen fremstillet på en måde
-så den passer ind netop efter den allerede brændte musik. Filen kan
-derfor brændes som normalt, uden at den vil blive lagt oven i
+Med <command>-C</command> bliver iso-filen fremstillet pÃ¥ en mÃ¥de
+sÃ¥ den passer ind netop efter den allerede brÃ¦ndte musik. Filen kan
+derfor brÃ¦ndes som normalt, uden at den vil blive lagt oven i
 musikken:
 </para>
 
@@ -957,9 +957,9 @@ musikken:
 </screen>
 
 <para>
-Nu indeholder cd'en både musiknumrene og iso-filen, og er dermed en
-færdig CD-Extra cd. I eksemplet er tilføjet <literal>-eject</literal>
-for at cd-rom-drevet åbnes efter brændingen.
+Nu indeholder cd'en bÃ¥de musiknumrene og iso-filen, og er dermed en
+fÃ¦rdig CD-Extra cd. I eksemplet er tilfÃ¸jet <literal>-eject</literal>
+for at cd-rom-drevet Ã¥bnes efter brÃ¦ndingen.
 </para>
 
 </sect2>

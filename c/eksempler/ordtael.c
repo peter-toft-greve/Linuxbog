@@ -44,8 +44,8 @@ int main()
     return 0;
 }
 
-/* OBS: Der er lidt flere braces i ovenstående eksempel end 
- * nødvendigt, det er i håb om bedre læselighed.
+/* OBS: Der er lidt flere braces i ovenstÃ¥ende eksempel end 
+ * nÃ¸dvendigt, det er i hÃ¥b om bedre lÃ¦selighed.
  */
 
 /* end of file ordtael.c */

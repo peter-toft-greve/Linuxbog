@@ -14,9 +14,9 @@ pre {background-color: #FFE9C1}</style>
 <body>
 <h1 title="hello">html2sgml konverter</h1>
 
-<p title="hello">Programmet modtager en html fil og konvertere en række html
+<p title="hello">Programmet modtager en html fil og konvertere en rÃ¦kke html
 tags til de tilsvarende DocBook tags. Fx. laves &lt;i&gt; om til
-&lt;emphasis&gt;. Html koden checkes ikke for fejl før den konverteres, brug
+&lt;emphasis&gt;. Html koden checkes ikke for fejl fÃ¸r den konverteres, brug
 htmltidy fra www.w3.org til at checke html koden.</p>
 
 <h3>Syntax:</h3>
@@ -34,16 +34,16 @@ specificeres bruges stdout.</p>
 
 <h3>Download:</h3>
 
-<p>Hent html2sgml.pl <a href="html2sgml.pl">her</a>. Den nuværende version er
+<p>Hent html2sgml.pl <a href="html2sgml.pl">her</a>. Den nuvÃ¦rende version er
 Pi-3+0.42</p>
 
 <h3>html koder</h3>
 
 <p title="hello">Langt fra alle html tags genkendes, men kun de der har en
-semantisk ekvivalent i docbook, eller layoutmæssigt ligner dem der bruges i
+semantisk ekvivalent i docbook, eller layoutmÃ¦ssigt ligner dem der bruges i
 html versionen af linuxbogen, dem der ikke genkendes vil sendes til output
-uforandret. Alt der ligger uden før &lt;body&gt; og efter &lt;/body&gt;
-slettes, dokumentet må manuelt indsættes i en passende docbook kontekst.</p>
+uforandret. Alt der ligger uden fÃ¸r &lt;body&gt; og efter &lt;/body&gt;
+slettes, dokumentet mÃ¥ manuelt indsÃ¦ttes i en passende docbook kontekst.</p>
 
 <p></p>
 
@@ -104,7 +104,7 @@ slettes, dokumentet må manuelt indsættes i en passende docbook kontekst.</p>
     <tr>
       <td>&lt;li&gt;..&lt;/li&gt;
 
-        <p>Virker også uden &lt;/li&gt;. Paragraf tags
+        <p>Virker ogsÃ¥ uden &lt;/li&gt;. Paragraf tags
         &lt;li&gt;&lt;p&gt;..&lt;/p&gt;&lt;/li&gt; er optional.</p>
       </td>
       <td>&lt;listitem&gt;&lt;para&gt;..&lt;/para&gt;&lt;/listitem&gt;</td>
@@ -138,7 +138,7 @@ slettes, dokumentet må manuelt indsættes i en passende docbook kontekst.</p>
       <td>&lt;h2&gt; til &lt;h5&gt;</td>
       <td>&lt;sect2&gt; til &lt;sect5&gt;
 
-        <p>den tilsvarende &lt;/sectX&gt; bliver altid placeret lige før en ny
+        <p>den tilsvarende &lt;/sectX&gt; bliver altid placeret lige fÃ¸r en ny
         &lt;sectY&gt; begynder hvis  Y&lt;=X. Ditto med chapter.</p>
       </td>
     </tr>
@@ -153,7 +153,7 @@ slettes, dokumentet må manuelt indsættes i en passende docbook kontekst.</p>
 
         <p>&lt;/figure&gt;</p>
 
-        <p>Se bemærkning.</p>
+        <p>Se bemÃ¦rkning.</p>
       </td>
     </tr>
     <tr>
@@ -200,7 +200,7 @@ slettes, dokumentet må manuelt indsættes i en passende docbook kontekst.</p>
 
         <p>&lt;/table&gt;</p>
 
-        <p>Se bemærkning.</p>
+        <p>Se bemÃ¦rkning.</p>
       </td>
     </tr>
   </tbody>
@@ -209,25 +209,25 @@ slettes, dokumentet må manuelt indsættes i en passende docbook kontekst.</p>
 <p></p>
 
 <p>Billeder: Som figur id=".." bruges som default titel feltet, findes title
-ikke bruges alt feltet, og findes alt og title felterne ikke får figuren ikke
+ikke bruges alt feltet, og findes alt og title felterne ikke fÃ¥r figuren ikke
 nogen id. Som figur &lt;title&gt;..&lt;/title&gt; bruges longdesc feltet, hvis
-dette ikke findes så bruges alt feltet. Findes hverken alt eller longdesc så
-får figuren ikke nogen titel. Scale bliver altid sat til 60. (korrekt?)</p>
+dette ikke findes sÃ¥ bruges alt feltet. Findes hverken alt eller longdesc sÃ¥
+fÃ¥r figuren ikke nogen titel. Scale bliver altid sat til 60. (korrekt?)</p>
 
 <p>Tabeller: summary, caption og thead er alle optional. Ditto er
-&lt;tbody&gt;..&lt;/tbody&gt; indpakningen også optional, antallet af kolonner
-indsættes automatisk og udregnes på basis af den første række i tbody. Perl
-scriptet vil automatisk forsøger at beautyfy SMGL outputtet så det ser
-æstetisk tilfredsstillende ud. Avancerede tabeller med rowspans og colspans
-vil blive konverteret på bedste vis, hvilket uden tvivel vil producere html
+&lt;tbody&gt;..&lt;/tbody&gt; indpakningen ogsÃ¥ optional, antallet af kolonner
+indsÃ¦ttes automatisk og udregnes pÃ¥ basis af den fÃ¸rste rÃ¦kke i tbody. Perl
+scriptet vil automatisk forsÃ¸ger at beautyfy SMGL outputtet sÃ¥ det ser
+Ã¦stetisk tilfredsstillende ud. Avancerede tabeller med rowspans og colspans
+vil blive konverteret pÃ¥ bedste vis, hvilket uden tvivel vil producere html
 kode, der er forkert, perl scriptet vil crashe, harddisken smelte sammen, og
-skærmen vil eksplodere - der udskrives ikke en fejl hvis dette sker.</p>
+skÃ¦rmen vil eksplodere - der udskrives ikke en fejl hvis dette sker.</p>
 
 <p></p>
 
 <h3>Eksempler</h3>
 
-<p>Eksempel på &lt;code&gt; og &lt;strong&gt; i normal kontekst</p>
+<p>Eksempel pÃ¥ &lt;code&gt; og &lt;strong&gt; i normal kontekst</p>
 <pre>Med kommandoen &lt;code&gt;cat /etc/passwd&lt;/code&gt; vises filen
 &lt;strong&gt;/etc/passwd&lt;/strong&gt;</pre>
 
@@ -251,9 +251,9 @@ skærmen vil eksplodere - der udskrives ikke en fejl hvis dette sker.</p>
 
 <p></p>
 
-<p>Eksempel på headline handling</p>
+<p>Eksempel pÃ¥ headline handling</p>
 <pre>&lt;h1 title="kamel"&gt;dromedar&lt;/h1&gt;
-Øverste niveau
+Ã˜verste niveau
 
 &lt;h2&gt;lama&lt;a name="hund"&gt;&lt;/h2&gt;
 h2 niveau
@@ -275,7 +275,7 @@ h1 indhold.</pre>
 <p>Bliver konverteret til:</p>
 <pre>&lt;chapter id="kamel"&gt;
   &lt;title&gt;dromedar&lt;/title&gt;
-Øverste niveau
+Ã˜verste niveau
 
 
 &lt;sect2 id="hund"&gt;
@@ -373,7 +373,7 @@ h1 indhold.
 
 <p></p>
 
-<p>Nogle eksempler på tabeller, en simpel tabel:</p>
+<p>Nogle eksempler pÃ¥ tabeller, en simpel tabel:</p>
 <pre>&lt;table&gt;
 &lt;tr&gt;&lt;td&gt;Fisk&lt;/td&gt;&lt;td&gt;Fugl&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;Stej&lt;/td&gt;&lt;td&gt;And&lt;/td&gt;&lt;/tr&gt;

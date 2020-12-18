@@ -16,7 +16,7 @@ if ($HTTP_POST_VARS["tekst"]) {
 	geoip_close($gi);
 	if (!in_array($country,$allowfromcountry)) {
 		echo "<h1>FEJL</h1>\n";
-		echo "<p>Beklager, men det er ikke muligt at sende ændringer når du sidder i $country. Vi får alt for meget skidtpost, så vi er blevet nødt til at indlægge denne spærring.</p>";
+		echo "<p>Beklager, men det er ikke muligt at sende Ã¦ndringer nÃ¥r du sidder i $country. Vi fÃ¥r alt for meget skidtpost, sÃ¥ vi er blevet nÃ¸dt til at indlÃ¦gge denne spÃ¦rring.</p>";
 		echo "<p>Din tekst kan sendes til <a href=\"mailto:$mailto\">$mailto</a>:</p><pre>".$HTTP_POST_VARS["tekst"]."</pre>\n";
 	} else {
 		if (preg_match("|/([^/]+)/[^/]+/([^/]+)\.html|", $_SERVER["REQUEST_URI"], $match)) {
@@ -51,7 +51,7 @@ if ($HTTP_POST_VARS["tekst"]) {
 		);
 
 		echo "<hr><blockquote id=\"rettet\">\n";
-		echo "Følgende mail er sendt til $mailto:\n<pre>Subject: $subject\n";
+		echo "FÃ¸lgende mail er sendt til $mailto:\n<pre>Subject: $subject\n";
 		echo htmlentities($body)."</pre>\n";
 		echo "</blockquote>\n";
 	}
@@ -61,22 +61,22 @@ if ($HTTP_POST_VARS["tekst"]) {
 Her starter "/submit.inc" af Hans Schou.
 $Id$
 
-For at bruge dette script, skal du indsætte
+For at bruge dette script, skal du indsÃ¦tte
 	< ?php include($DOCUMENT_ROOT."/submit.inc") ?>
 i bunden af din .html fil.
-Dernæst skal din fil have tilføjet .php til slut i filnavnet.
+DernÃ¦st skal din fil have tilfÃ¸jet .php til slut i filnavnet.
 -->
 <hr>
 <h2>Rettelser</h2>
-<p>Har du en rettelse til denne side, så skriv den i boksen herunder.
-Din besked bliver sendt til redaktionen af <i>Friheden Til At Vælge</i>.</p>
+<p>Har du en rettelse til denne side, sÃ¥ skriv den i boksen herunder.
+Din besked bliver sendt til redaktionen af <i>Friheden Til At VÃ¦lge</i>.</p>
 <p>Dit IP-nummer er <?php echo $_SERVER["REMOTE_ADDR"] ?>.</p>
 <form action="<?php echo $_SERVER["REQUEST_URI"] ?>#rettet" method="post">
 <p>
 Eventuelt din e-mail adresse:
 <input type="text" name="email" value="<?php echo $HTTP_POST_VARS["email"] ?>">
 <br>
-(E-mail er kun nødvendig hvis du ønsker svar.)
+(E-mail er kun nÃ¸dvendig hvis du Ã¸nsker svar.)
 <br>
 Din kommentar eller rettelse:
 <br>

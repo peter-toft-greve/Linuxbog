@@ -23,7 +23,7 @@ create lin 258 allot
     open-file		( n1 n2 n3 c-addr u fam -- n1 n2 n3 fileid ior )
     if			( n1 n2 n3 fileid ior -- n1 n2 n3 fileid )
       2drop		( n1 n2 n3 fileid -- n1 n2 )
-      ." Kan ikke åbne filen "
+      ." Kan ikke Ã¥bne filen "
       over		( n1 n2 -- n1 n2 n1 )
       arg		( n1 n2 n1 -- n1 n2 c-addr u )
       type		( n1 n2 c-addr u - n1 n2 )

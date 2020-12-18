@@ -5,9 +5,9 @@
  <title>Tegn og skrifttyper</title>
 
  <para>
-  Dette kapitel handler om at lave hård formatering på tegnniveau,
-  hvor det handler om at vælge skrifttype, dvs. bestemme hvordan
-  tegnet skal se ud. Blød formatering med tegntypografier gennemgås i
+  Dette kapitel handler om at lave hÃ¥rd formatering pÃ¥ tegnniveau,
+  hvor det handler om at vÃ¦lge skrifttype, dvs. bestemme hvordan
+  tegnet skal se ud. BlÃ¸d formatering med tegntypografier gennemgÃ¥s i
   <xref linkend="ooo-typografier"/>kapitel 8.
  </para>
 
@@ -15,7 +15,7 @@
   <title>Teori: Tegn og skrifttyper</title>
 
   <para>
-   Det er nødvendigt at forstå nogle grundlæggende begreber indenfor
+   Det er nÃ¸dvendigt at forstÃ¥ nogle grundlÃ¦ggende begreber indenfor
    skrifttyper (man ser tit det engelske ord <emphasis>font</emphasis>
    i stedet).
   </para>
@@ -23,7 +23,7 @@
   <para>
    Som regel inddeles skrifttyper i <emphasis>familier</emphasis>,
    dvs. en samling af skrifttyper, som er variationer over den samme
-   form. Tre eksempler på familier er:
+   form. Tre eksempler pÃ¥ familier er:
 
    <itemizedlist mark="bullet">
     <listitem>
@@ -34,71 +34,71 @@
     <listitem>
      <para><emphasis>Arial</emphasis>: Dette er en proportional, sans
      serif skrift, dvs. uden <emphasis>serifer</emphasis>, dvs. uden
-     de små tværstreger, som findes hvor bogstavernes kurver
+     de smÃ¥ tvÃ¦rstreger, som findes hvor bogstavernes kurver
      ender.</para>
     </listitem>
 
     <listitem>
      <para>Courier: Dette er en skrift med fast bredde, dvs. alle tegn
-     har samme bredde ligesom på en skrivemaskine.</para>
+     har samme bredde ligesom pÃ¥ en skrivemaskine.</para>
     </listitem>
    </itemizedlist>
   </para>
 
   <para>
-   Indenfor en familie findes der så forskellige variationer:
+   Indenfor en familie findes der sÃ¥ forskellige variationer:
 
    <itemizedlist mark="bullet">
     <listitem>
      <para><emphasis>Formen</emphasis>. Man skelner mellem
-     <emphasis>opretstående</emphasis> tegn, som disse tegn og
+     <emphasis>opretstÃ¥ende</emphasis> tegn, som disse tegn og
      <emphasis>kursive</emphasis> tegn, som <emphasis>disse
-     tegn</emphasis>. For nogle skriftfamilier (især sans serif)
-     bruges <emphasis>skråtstillede</emphasis> bogstaver i stedet for
-     kursiv.  F.eks: <emphasis>Skråtstillede bogstaver i skrifttypen
+     tegn</emphasis>. For nogle skriftfamilier (isÃ¦r sans serif)
+     bruges <emphasis>skrÃ¥tstillede</emphasis> bogstaver i stedet for
+     kursiv.  F.eks: <emphasis>SkrÃ¥tstillede bogstaver i skrifttypen
      arial.</emphasis></para>
     </listitem>
 
     <listitem>
-     <para><emphasis>Vægten</emphasis> henviser til tykkelsen af de
-     kurver, som udgør bogstaverne. Standardtykkelsen kaldes
-     <emphasis>normal</emphasis> , som disse tegn. Hvis vægten er
-     større kan du have <emphasis>fed</emphasis> skrift, som
-     <emphasis>disse tegn</emphasis>. Nogle skriftfamilier har også
+     <para><emphasis>VÃ¦gten</emphasis> henviser til tykkelsen af de
+     kurver, som udgÃ¸r bogstaverne. Standardtykkelsen kaldes
+     <emphasis>normal</emphasis> , som disse tegn. Hvis vÃ¦gten er
+     stÃ¸rre kan du have <emphasis>fed</emphasis> skrift, som
+     <emphasis>disse tegn</emphasis>. Nogle skriftfamilier har ogsÃ¥
      <emphasis>lys</emphasis>, <emphasis>halvfed</emphasis>
      osv.</para>
     </listitem>
 
     <listitem>
      <para>
-      De forskellige karakteristikker kan kombineres, så du f.eks. får
+      De forskellige karakteristikker kan kombineres, sÃ¥ du f.eks. fÃ¥r
       fed kursiv, som disse tegn.
      </para>
     </listitem>
 
     <listitem>
      <para><emphasis>Skriftgraden</emphasis> eller
-     <emphasis>størrelsen</emphasis>  henviser til højden af
-     bogstaverne.  Størrelsen angives som regel i enheden punkter,
+     <emphasis>stÃ¸rrelsen</emphasis>  henviser til hÃ¸jden af
+     bogstaverne.  StÃ¸rrelsen angives som regel i enheden punkter,
      hvor et punkt er 0,3759&nbsp;mm. En 10&nbsp;punkts skrift er
-     altså ca. 3,8&nbsp;mm høj, men det er den samlede udstrækning fra
-     bunden af de dybeste tegn (f.eks. g) til toppen af de højeste
-     tegn (f.eks. Å). Det er vist på figuren:</para>
+     altsÃ¥ ca. 3,8&nbsp;mm hÃ¸j, men det er den samlede udstrÃ¦kning fra
+     bunden af de dybeste tegn (f.eks. g) til toppen af de hÃ¸jeste
+     tegn (f.eks. Ã…). Det er vist pÃ¥ figuren:</para>
 
      <figure float="1" id="fig-ooo-aabenraanyborg">
       <title>(noget)</title>
       <graphic fileref="aabenraanyborg.&magic;" scale="60"></graphic>
      </figure>
 
-     <para>Bemærk at bogstaverne står på en linje; den kaldes
-     <emphasis>basislinjen</emphasis> . Nogle tegn (f.eks. g) går
+     <para>BemÃ¦rk at bogstaverne stÃ¥r pÃ¥ en linje; den kaldes
+     <emphasis>basislinjen</emphasis> . Nogle tegn (f.eks. g) gÃ¥r
      under basislinjen.</para>
 
      <para>
-      Størrelsen af de små bogstaver har også stor betydning for
-      udseendet og er ikke nødvendigvis den samme for f.eks. to
-      forskellige 10 punktsskrifter. Her er vist nogle små x'er fra
-      forskellige skrifttyper med samme punktstørrelse:
+      StÃ¸rrelsen af de smÃ¥ bogstaver har ogsÃ¥ stor betydning for
+      udseendet og er ikke nÃ¸dvendigvis den samme for f.eks. to
+      forskellige 10 punktsskrifter. Her er vist nogle smÃ¥ x'er fra
+      forskellige skrifttyper med samme punktstÃ¸rrelse:
 
       <figure float="1" id="fig-ooo-xhoejder">
        <title>(noget)</title>
@@ -111,24 +111,24 @@
 
   <para>
    Ud over at bruge en bestemt skrifttype kan du bruge effekter som
-   understregning, hævet skrift osv.
+   understregning, hÃ¦vet skrift osv.
   </para>
 
   <para>
-   Utrolig mange laver den dødssynd at bruge fed og understregning
-   samtidig for at fremhæve et eller flere ord.
+   Utrolig mange laver den dÃ¸dssynd at bruge fed og understregning
+   samtidig for at fremhÃ¦ve et eller flere ord.
   </para>
 
   <para>
-   Man bruger fed for at fremhæve et ord eller sætning, og det samme
+   Man bruger fed for at fremhÃ¦ve et ord eller sÃ¦tning, og det samme
    med understregning, men- <emphasis>ikke</emphasis> samtidig, man
-   fremhæver ikke noget der <emphasis>er</emphasis> fremhævet.
+   fremhÃ¦ver ikke noget der <emphasis>er</emphasis> fremhÃ¦vet.
   </para>
 
   <para>
    Det er god tone indenfor layout ikke at bruge for mange forskellige
    skrifttyper i et dokument. Writer bruger som standard (i
-   afsnitstypografierne) kun to: Times New Roman til brødtekst og
+   afsnitstypografierne) kun to: Times New Roman til brÃ¸dtekst og
    Arial til overskrifter.
   </para>
  </sect1>    <!--   6.1. Teori: Tegn og skrifttyper -->

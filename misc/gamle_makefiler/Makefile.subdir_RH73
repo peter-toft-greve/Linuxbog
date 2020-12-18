@@ -1,7 +1,7 @@
 #
-# Vi kræver SGML DocBook 3.1
+# Vi krÃ¦ver SGML DocBook 3.1
 # ImageMagick skal installeres
-# tidy og Perl modulet Image::Size er ønskelige
+# tidy og Perl modulet Image::Size er Ã¸nskelige
 ##
 #
 # Peter Toft <pto@sslug.dk> 
@@ -23,7 +23,7 @@ version:=$(shell grep -A2 "<listitem>" apprevhist.sgml | head -n 2 | tail -n 1 |
 # dato
 dato:=$(shell date +%d/%m-%Y> dato.sgml; cat dato.sgml)
 
-# Her er en liste af sgml-filer der ændres automatisk
+# Her er en liste af sgml-filer der Ã¦ndres automatisk
 badsgmlfiles=dato.sgml version.sgml magic.sgml stikord.sgml bogoversigt.sgml ophavsret.sgml
 
 # Her er  en liste af alle sgml
@@ -61,14 +61,14 @@ all: start ekstra html pspdf palmpilot sgml eksempelbackup stop
 
 start:
 	@echo "-------------------------------------------"
-	@echo "Starter oversættelser af $(targetshortname)"
+	@echo "Starter oversÃ¦ttelser af $(targetshortname)"
 	@echo "-------------------------------------------"
 	@echo Version er $(version)
 	@echo Dato sat til $(dato)
 
 stop:
 	@echo "-------------------------------------------"
-	@echo "Slut på $(targetshortname) $(version)      "
+	@echo "Slut pÃ¥ $(targetshortname) $(version)      "
 	@echo "-------------------------------------------"
 	@echo 
 
@@ -99,7 +99,7 @@ ifneq   ("$(plucker)","")
 	cp ../misc/plucker.txt palm
 	(zip $(targetname)-$(version).palm.zip palm/*.prc palm/*.pdb palm/*txt )
 else
-	echo "Du bør installere plucker for at kunne lave palm-udgaven"
+	echo "Du bÃ¸r installere plucker for at kunne lave palm-udgaven"
 endif
 
 pakhtml: 
@@ -144,12 +144,12 @@ bog/index.html: $(sgmlfiler)
 ifeq	($(shell perl -e 'use Image::Size; print "1"' 2> /dev/null), 1)
 	(cd bog;perl ../../misc/insertimagesize)
 else
-	@echo "Du bør installere Perl-modulet Image:Size"
+	@echo "Du bÃ¸r installere Perl-modulet Image:Size"
 endif
 ifeq	($(shell if which tidy >/dev/null 2>&1; then echo -n 1; fi;), 1)
 	(cd bog;tidy -latin1 -f err.txt -imu *html;rm -f err.txt)
 else
-	@echo "Du bør installere tidy"
+	@echo "Du bÃ¸r installere tidy"
 endif
 	(cd bog;rm -f apprevhist.html;ln -sf *apprevhist.html apprevhist.html)
 	make pakhtml
@@ -176,12 +176,12 @@ bog/enfil.html: $(sgmlfiler)
 ifeq	($(shell perl -e 'use Image::Size; print "1"' 2> /dev/null), 1)
 	(cd bog1;perl ../../misc/insertimagesize)
 else
-	echo "Du bør installere Perl-modulet Image:Size"
+	echo "Du bÃ¸r installere Perl-modulet Image:Size"
 endif
 ifeq	($(shell if which tidy >/dev/null 2>&1; then echo -n 1; fi;), 1)
 	(cd bog1;tidy -f err.txt -imu *html;rm -f err.txt)
 else
-	echo "Du bør installere tidy"
+	echo "Du bÃ¸r installere tidy"
 endif
 	cp bog1/index.html bog/enfil.html
 	rm -rf bog1
@@ -274,5 +274,5 @@ ifeq ($(lokmake),Makefile_local)
 else
 	echo "Ingen lokal Makefile"
 endif
-	@echo "Færdig med clean $(targetshortname)"
+	@echo "FÃ¦rdig med clean $(targetshortname)"
 

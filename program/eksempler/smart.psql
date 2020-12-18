@@ -1,5 +1,5 @@
 -- smart.psql
--- af Björn Bergsten <bergsten@pixicore.com>
+-- af BjÃ¶rn Bergsten <bergsten@pixicore.com>
 -- & Hans Schou <chlor@sslug.dk>
 -- $Id$
 
@@ -10,12 +10,12 @@
 
 -- Dette eksempel viser hvordan man kan bruge funktioner i PostgreSQL.
 -- Anvender man forskellige programmeringssprog sammen med PostgreSQL,
--- kan det være en fordel at have nogle funktioner defineret
--- i databasen, så man altid anvender den samme funktion.
+-- kan det vÃ¦re en fordel at have nogle funktioner defineret
+-- i databasen, sÃ¥ man altid anvender den samme funktion.
 
--- I dette eksempel regnes fødselsdagen ud på baggrund af CPR-nr.
--- Idag er få født i 18XX og 20XX, men der er nogle, og det skal
--- højde for.
+-- I dette eksempel regnes fÃ¸dselsdagen ud pÃ¥ baggrund af CPR-nr.
+-- Idag er fÃ¥ fÃ¸dt i 18XX og 20XX, men der er nogle, og det skal
+-- hÃ¸jde for.
 
 -- SQL function to calculate birthdate from danish CPR number
 --drop   index CprCent_uix;

@@ -1,37 +1,37 @@
 <!-- $Id$ -->
 <chapter id="system-vedligeholdelse">
-<title>Efterfølgende installation af programmer og systemvedligeholdelse</title>
+<title>EfterfÃ¸lgende installation af programmer og systemvedligeholdelse</title>
 <indexterm><primary>RPM</primary></indexterm>
 <indexterm><primary>installation af programmer</primary></indexterm>
 <indexterm><primary>systemvedligeholdelse</primary></indexterm>
 	
 <para>
-Når du har fuldført installation af en Linux-distribution og har dit
-system til at køre, så vil du sikkert på et tidspunkt overveje at
-fjerne nogle programmer og/eller tilføje nye programpakker. I
+NÃ¥r du har fuldfÃ¸rt installation af en Linux-distribution og har dit
+system til at kÃ¸re, sÃ¥ vil du sikkert pÃ¥ et tidspunkt overveje at
+fjerne nogle programmer og/eller tilfÃ¸je nye programpakker. I
 bl.a. Red Hat, SuSE og Mandrake anvender man
 <command>rpm</command>-programmet. Det er et tekstbaseret program som
-er præsenteret i bogen "Linux - Friheden til systemadministration",
-der kan findes på 
+er prÃ¦senteret i bogen "Linux - Friheden til systemadministration",
+der kan findes pÃ¥ 
 <ulink
 url="http://&linuxbogurl;/">&linuxbogurl;</ulink>).
 Kortfattet er anvendelsen at med <command>rpm -U PAKKE.rpm</command>
 installerer eller opgraderer man filen
 <filename>PAKKE.rpm</filename>, og med <command>rpm -e PAKKE</command>
-(bemærk at der ikke tilføjes <filename>.rpm</filename> her)
+(bemÃ¦rk at der ikke tilfÃ¸jes <filename>.rpm</filename> her)
 afinstallerer <literal>PAKKE</literal>. Et godt sted at finde nye eller
-opdaterede RPM-pakker, er at begynde på 
+opdaterede RPM-pakker, er at begynde pÃ¥ 
 <ulink url="http://rpmfind.net">http://rpmfind.net</ulink> eller 
 <ulink url="http://freshmeat.net">http://freshmeat.net</ulink>.
 </para>
 
 <para>
-I de følgende afsnit ser vi nærmere på nogle af de værktøjer som
-følger med de enkelte distributioner til at installere programmer og
-lave andet systemvedligeholdelse. De grafiske opsætningsværktøjer vil
+I de fÃ¸lgende afsnit ser vi nÃ¦rmere pÃ¥ nogle af de vÃ¦rktÃ¸jer som
+fÃ¸lger med de enkelte distributioner til at installere programmer og
+lave andet systemvedligeholdelse. De grafiske opsÃ¦tningsvÃ¦rktÃ¸jer vil
 typisk bede brugeren om at indtaste root-password for at kunne starte. 
-Der er dog flere programmer du kan have glæde af at kende som 
-ikke kører på denne måde. Dem ser vi nærmere på i det første afsnit.
+Der er dog flere programmer du kan have glÃ¦de af at kende som 
+ikke kÃ¸rer pÃ¥ denne mÃ¥de. Dem ser vi nÃ¦rmere pÃ¥ i det fÃ¸rste afsnit.
 </para>
 
 <sect1 id="tekst-root-sysadm">
@@ -41,10 +41,10 @@ ikke kører på denne måde. Dem ser vi nærmere på i det første afsnit.
 
 <para>
 Selvom brugeren typisk har adgang til at starte grafiske
-system-værktøjer så vil der ofte være behov for at kunne køre
-programmer som root, for eksempel når der skal rettes i
-Apache-opsætningsfilen. Der er ofte ikke noget grafisk program til
-hjælp, og det er jo langsomt at skulle logge ud, logge ind som root,
+system-vÃ¦rktÃ¸jer sÃ¥ vil der ofte vÃ¦re behov for at kunne kÃ¸re
+programmer som root, for eksempel nÃ¥r der skal rettes i
+Apache-opsÃ¦tningsfilen. Der er ofte ikke noget grafisk program til
+hjÃ¦lp, og det er jo langsomt at skulle logge ud, logge ind som root,
 arbejde som root, logge ud, logge ind under eget bruger-ID. Specielt hvis
 man har rettet det forkerte :)
 </para>
@@ -54,12 +54,12 @@ man har rettet det forkerte :)
 <para>
 Heldigvis er der mulighed for at man kan arbejde som root, samtidig
 med at man arbejder under eget bruger-ID. Til dette anvendes
-kommandoen <command>su</command>, der står for <emphasis>switch
+kommandoen <command>su</command>, der stÃ¥r for <emphasis>switch
 user</emphasis> (og ikke "super user" som mange tror). En andet
-kommando, der er nyttig er <command>xhost +</command> som gør at andre
-kan vise grafiske vinduer på maskinen via netværket (I dette tilfælde
+kommando, der er nyttig er <command>xhost +</command> som gÃ¸r at andre
+kan vise grafiske vinduer pÃ¥ maskinen via netvÃ¦rket (I dette tilfÃ¦lde
 root fra egen maskine). Start et terminalvindue, for eksempel et xterm.  I
-KDE kan du trykke på den lille skærm med muslingeskallen (indikerer en
+KDE kan du trykke pÃ¥ den lille skÃ¦rm med muslingeskallen (indikerer en
 shell) eller du kan trykke <command>Alt-F2 xterm</command>.
 </para>
 
@@ -77,15 +77,15 @@ shell) eller du kan trykke <command>Alt-F2 xterm</command>.
 </screen>
 
 <para>
-Nu kan du starte et vilkårligt program som root, dog skal du nogen
+Nu kan du starte et vilkÃ¥rligt program som root, dog skal du nogen
 gange anvende fuld sti til programmet. Som eksempel kan du starte
-<command>emacs /etc/hosts</command> og tilføje maskiner i netværket.
+<command>emacs /etc/hosts</command> og tilfÃ¸je maskiner i netvÃ¦rket.
 Afslut emacs med <command>Ctrl-x Ctrl-c</command>.
 </para>
 
 <para>
-Det kan nævnes at kommandoen <command>su</command> kan efterfølges af
-et minus, og i så fald får man kørt root's login-filer korrekt, og dermed
+Det kan nÃ¦vnes at kommandoen <command>su</command> kan efterfÃ¸lges af
+et minus, og i sÃ¥ fald fÃ¥r man kÃ¸rt root's login-filer korrekt, og dermed
 har man sti til <filename>/sbin</filename> og <filename>/usr/sbin</filename>.
 </para>
 
@@ -99,9 +99,9 @@ har man sti til <filename>/sbin</filename> og <filename>/usr/sbin</filename>.
 <indexterm><primary>Emacs</primary><secondary>Stop</secondary></indexterm>
 
 <para>
-Man bør afslutte handlingerne som root ved at lukke det
+Man bÃ¸r afslutte handlingerne som root ved at lukke det
 terminal-vindue hvor man er root - eller i det mindste trykke
-<command>Ctrl-d</command> eller skrive <command>exit</command>, så
+<command>Ctrl-d</command> eller skrive <command>exit</command>, sÃ¥
 andre ikke misbruger de store rettigheder root har (eller at man selv
 kommer til at slette filer).
 </para>
@@ -113,14 +113,14 @@ kommer til at slette filer).
 
 <para>
 I Red Hat er de fleste grafiske systemstyringsprogrammer lavet specifik til Red Hat.
-Deres navne starter alle med <filename>redhat-</filename>. Enten kan de tilgås fra menuerne hvis
-den grafiske brugergrænseflade er startet op, eller de kan startes ved at starte et terminal-vindue
-som root og skrive <filename>redhat-</filename> og trykke på tabulator. På den måde vises alle
+Deres navne starter alle med <filename>redhat-</filename>. Enten kan de tilgÃ¥s fra menuerne hvis
+den grafiske brugergrÃ¦nseflade er startet op, eller de kan startes ved at starte et terminal-vindue
+som root og skrive <filename>redhat-</filename> og trykke pÃ¥ tabulator. PÃ¥ den mÃ¥de vises alle
 mulighederne.
 </para>
 
 <figure id="rhsndconfig-start" float="1">
-<title>Første skærmbillede i
+<title>FÃ¸rste skÃ¦rmbillede i
 <command>sndconfig</command></title>
 <graphic fileref="sndconfig-start.&magic;"  scale="50"></graphic>
 </figure>
@@ -135,35 +135,35 @@ Et par af mulighederne er
 <listitem>
  <para>
  <command>/usr/sbin/redhat-config-network</command> : Anvendes til
- at sætte netværket op.
+ at sÃ¦tte netvÃ¦rket op.
  </para>
 </listitem>
 <listitem>
  <para>
  <command>/usr/bin/redhat-config-apache</command> : Program til 
- at sætte Apache webserver op (grafisk redigering af opsætningsfilen
+ at sÃ¦tte Apache webserver op (grafisk redigering af opsÃ¦tningsfilen
  <filename>/etc/httpd/conf/httpd.conf</filename>).
 </para>
 </listitem>
 <listitem>
  <para>
- <command>/usr/bin/redhat-config-mouse</command> : Anvendes til at sætte 
+ <command>/usr/bin/redhat-config-mouse</command> : Anvendes til at sÃ¦tte 
  musen op.
 </para>
 </listitem>
 <listitem>
  <para>
- <command>/usr/bin/redhat-config-time</command> : Opsætning
- af dato, tid, tidszone, og evt. NTP (Netværks tidssynkronisering).
+ <command>/usr/bin/redhat-config-time</command> : OpsÃ¦tning
+ af dato, tid, tidszone, og evt. NTP (NetvÃ¦rks tidssynkronisering).
  </para>
 </listitem>
 <listitem>
  <para>
  <command>/usr/bin/redhat-config-services</command> : 
 Styring af start af server-funktioner.
-Som du ser, kan du konfigurere runlevel 3 til 5. Du får en liste af
-tjenester, som skal startes, når din maskine
-går ind i det givne <glossterm linkend="def-runlevel">runlevel</glossterm>,
+Som du ser, kan du konfigurere runlevel 3 til 5. Du fÃ¥r en liste af
+tjenester, som skal startes, nÃ¥r din maskine
+gÃ¥r ind i det givne <glossterm linkend="def-runlevel">runlevel</glossterm>,
 og med kryds i de enkelte bokse bestemmer du hvad der skal startes op.
 </para>
 </listitem>
@@ -181,22 +181,22 @@ og med kryds i de enkelte bokse bestemmer du hvad der skal startes op.
 <indexterm><primary>Lydkort</primary></indexterm>
 
 <para>Du starter programmet ved at taste
-<command>redhat-config-sound</command> på kommandolinjen (som root). Programmet er
-designet til at køre i tekst-tilstand, og du kan selv vælge, om du
+<command>redhat-config-sound</command> pÃ¥ kommandolinjen (som root). Programmet er
+designet til at kÃ¸re i tekst-tilstand, og du kan selv vÃ¦lge, om du
 vil benytte dig af en <command>xterm</command> eller bruge
-konsollen. Første skærmbillede ser ud som vist nedenfor.
+konsollen. FÃ¸rste skÃ¦rmbillede ser ud som vist nedenfor.
 </para>
 
 <figure id="sndconfig-start" float="1">
-<title>Første skærmbillede i
+<title>FÃ¸rste skÃ¦rmbillede i
 <command>sndconfig</command></title>
 <graphic fileref="sndconfig-start.&magic;"  scale="50"></graphic>
 </figure>
 
-<para>Du fortsætter ved at trykke på ENTER. Det næste
-skærmbillede, som du ser nedenfor, fortæller, hvilket lydkort
-<command>sndconfig</command> har fundet, i dette tilfælde et
-SoundBlaster 32 - som forventet. Du bør naturligvis tjekke, om
+<para>Du fortsÃ¦tter ved at trykke pÃ¥ ENTER. Det nÃ¦ste
+skÃ¦rmbillede, som du ser nedenfor, fortÃ¦ller, hvilket lydkort
+<command>sndconfig</command> har fundet, i dette tilfÃ¦lde et
+SoundBlaster 32 - som forventet. Du bÃ¸r naturligvis tjekke, om
 programmet finder det rigtige.
 </para>
 
@@ -205,34 +205,34 @@ programmet finder det rigtige.
 <graphic fileref="sndconfig-2.&magic;"  scale="50"></graphic>
 </figure>
 
-<para>Det tredje skærmbillede tillader, at du vælger et
-lydkort. Hvis nu <command>sndconfig</command> ikke har været i
-stand til at finde dit lydkort, kan du nu vælge det rette. Vi
-vælger naturligvis vores SoundBlaster 32 lydkort. Du kan bevæge
-markøren vha. piletasterne, og du flytter markøren ned til OK og CANCEL
-ved at trykke på TAB-tasten.
+<para>Det tredje skÃ¦rmbillede tillader, at du vÃ¦lger et
+lydkort. Hvis nu <command>sndconfig</command> ikke har vÃ¦ret i
+stand til at finde dit lydkort, kan du nu vÃ¦lge det rette. Vi
+vÃ¦lger naturligvis vores SoundBlaster 32 lydkort. Du kan bevÃ¦ge
+markÃ¸ren vha. piletasterne, og du flytter markÃ¸ren ned til OK og CANCEL
+ved at trykke pÃ¥ TAB-tasten.
 </para>
 
 <figure id="sndconfig-3" float="1">
-<title>Der vælges et lydkort</title>
+<title>Der vÃ¦lges et lydkort</title>
 <graphic fileref="sndconfig-3.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
-Det er nu tid til at vælge indstillinger for lydkortet. Her er det
-typisk lettest, hvis du kender dem på forhånd, så du ikke behøver at
-gætte dig frem. Det er reelt de samme oplysninger, som du i Microsoft
+Det er nu tid til at vÃ¦lge indstillinger for lydkortet. Her er det
+typisk lettest, hvis du kender dem pÃ¥ forhÃ¥nd, sÃ¥ du ikke behÃ¸ver at
+gÃ¦tte dig frem. Det er reelt de samme oplysninger, som du i Microsoft
 Windows 95 finder under "egenskaber for enheder".
 </para>
 
 <figure id="sndconfig-4" float="1">
-<title>Indstillinger for lydkortet vælges</title>
+<title>Indstillinger for lydkortet vÃ¦lges</title>
 <graphic fileref="sndconfig-4.&magic;"  scale="50"></graphic>
 </figure>
 
-<para>Når du har valgt de rigtige indstillinger, vil
+<para>NÃ¥r du har valgt de rigtige indstillinger, vil
 <command>sndconfig</command> afspille en kort lydsekvens for
-dig. Når du hører den, betyder det, at lydkortet er korrekt
+dig. NÃ¥r du hÃ¸rer den, betyder det, at lydkortet er korrekt
 konfigureret.
 </para>
 
@@ -241,12 +241,12 @@ konfigureret.
 <graphic fileref="sndconfig-5.&magic;"  scale="50"></graphic>
 </figure>
 
-<para>Gik det helt galt med dit lydkort, kan det være, at du ikke
+<para>Gik det helt galt med dit lydkort, kan det vÃ¦re, at du ikke
 har den rette Linux-kerne og modulerne til det. Du kan
-læse videre i de følgende afsnit om, hvordan kernen oversættes.
-Se også på <ulink
+lÃ¦se videre i de fÃ¸lgende afsnit om, hvordan kernen oversÃ¦ttes.
+Se ogsÃ¥ pÃ¥ <ulink
 url="http://www.alsa-project.org/">http://www.alsa-project.org/</ulink>
-hvis dit lydkort ikke er understøttet direkte.
+hvis dit lydkort ikke er understÃ¸ttet direkte.
 </para>
 </sect2>
 
@@ -256,71 +256,71 @@ hvis dit lydkort ikke er understøttet direkte.
 <indexterm><primary>Printer</primary></indexterm>
 <indexterm><primary>Udskrivning</primary></indexterm>
 <para>
-Skal du tilføje en printer, du kan skrive ud på, og du anvender Red
-Hat, skal du lige som "root" sætte printeren op med
-<command>printtool</command>. Det første billede du møder viser,
-hvor mange printere, der allerede er sat op. I dette tilfælde kun én.
+Skal du tilfÃ¸je en printer, du kan skrive ud pÃ¥, og du anvender Red
+Hat, skal du lige som "root" sÃ¦tte printeren op med
+<command>printtool</command>. Det fÃ¸rste billede du mÃ¸der viser,
+hvor mange printere, der allerede er sat op. I dette tilfÃ¦lde kun Ã©n.
 </para>
 
 <figure id="redhat-printer-opsaetning1-fig" float="1">
- <title>Red Hat printeropsætning</title>
+ <title>Red Hat printeropsÃ¦tning</title>
  <graphic fileref="redhat-printer-opsaetning1.&magic;"  scale="60"></graphic>
 </figure>
 
 <figure id="redhat-printer-opsaetning2-fig" float="1">
- <title>Red Hat printeropsætning</title>
+ <title>Red Hat printeropsÃ¦tning</title>
  <graphic fileref="redhat-printer-opsaetning2.&magic;"  scale="60"></graphic>
 </figure>
 
 <figure id="redhat-printer-opsaetning3-fig" float="1">
- <title>Red Hat printeropsætning</title>
+ <title>Red Hat printeropsÃ¦tning</title>
  <graphic fileref="redhat-printer-opsaetning3.&magic;"  scale="60"></graphic>
 </figure>
 
 <figure id="redhat-printer-opsaetning4-fig" float="1">
- <title>Red Hat printeropsætning</title>
+ <title>Red Hat printeropsÃ¦tning</title>
  <graphic fileref="redhat-printer-opsaetning4.&magic;"  scale="60"></graphic>
 </figure>
 
 <figure id="redhat-printer-opsaetning5-fig" float="1">
- <title>Red Hat printeropsætning</title>
+ <title>Red Hat printeropsÃ¦tning</title>
  <graphic fileref="redhat-printer-opsaetning5.&magic;"  scale="60"></graphic>
 </figure>
 
 <figure id="redhat-printer-opsaetning6-fig" float="1">
- <title>Red Hat printeropsætning</title>
+ <title>Red Hat printeropsÃ¦tning</title>
  <graphic fileref="redhat-printer-opsaetning6.&magic;"  scale="60"></graphic>
 </figure>
 
 <figure id="redhat-printer-opsaetning7-fig" float="1">
- <title>Red Hat printeropsætning</title>
+ <title>Red Hat printeropsÃ¦tning</title>
  <graphic fileref="redhat-printer-opsaetning7.&magic;"  scale="60"></graphic>
 </figure>
 
 <figure id="redhat-printer-opsaetning8-fig" float="1">
- <title>Red Hat printeropsætning</title>
+ <title>Red Hat printeropsÃ¦tning</title>
  <graphic fileref="redhat-printer-opsaetning8.&magic;"  scale="60"></graphic>
 </figure>
 
 
 <para>
-Efter at have trykket på "Ok", er du tilbage i hovedmenuen for
-printeropsætning og kan vælge at udskrive testsider. Håber det
+Efter at have trykket pÃ¥ "Ok", er du tilbage i hovedmenuen for
+printeropsÃ¦tning og kan vÃ¦lge at udskrive testsider. HÃ¥ber det
 virker.
 </para>
 
 <para>
-Nu bør for eksempel din Netscape kunne udskrive og tilsvarende din <command>gv</command> (til PostScript-filer).
+Nu bÃ¸r for eksempel din Netscape kunne udskrive og tilsvarende din <command>gv</command> (til PostScript-filer).
 Du kan udskrive tekstfiler med <command>lpr FILNAVN</command>,
-og du bør nok læse man-siderne for lpr, lprm, lpq og lpc.
+og du bÃ¸r nok lÃ¦se man-siderne for lpr, lprm, lpq og lpc.
 </para>
 
 <para>
 Til at udskrive tekstfiler, for eksempel C-kode, kan du med fordel
-installere a2ps, som laver meget pæne udskrifter, der viser kodesyntaks.
-Du finder a2ps på <ulink
+installere a2ps, som laver meget pÃ¦ne udskrifter, der viser kodesyntaks.
+Du finder a2ps pÃ¥ <ulink
 url="http://www.inf.enst.fr/~demaille/a2ps">http://www.inf.enst.fr/~demaille/a2ps</ulink>.
-Se i øvrigt <ulink
+Se i Ã¸vrigt <ulink
 url="http://www.linuxprinting.org">http://www.linuxprinting.org</ulink>
 for mere om printere og Linux.
 </para>
@@ -331,11 +331,11 @@ for mere om printere og Linux.
 <indexterm><primary>Udskrivning</primary><secondary>fra andre Linux-maskiner</secondary></indexterm>
 <para>
 Skal du skrive dokumenter ud fra en anden Linux-maskine til den
-printer, du har sat på din Linux-maskine, så bliver du nødt til at
-rette filen <filename>/etc/hosts.lpd</filename>, så den indeholder de
-maskiner, der kan skrive ud på printeren. Du kan også bruge jokertegn
+printer, du har sat pÃ¥ din Linux-maskine, sÃ¥ bliver du nÃ¸dt til at
+rette filen <filename>/etc/hosts.lpd</filename>, sÃ¥ den indeholder de
+maskiner, der kan skrive ud pÃ¥ printeren. Du kan ogsÃ¥ bruge jokertegn
 (eng. wildcards), for eksempel "*.hven.sslug.dk" for at tillade alle maskiner i
-domænet hven.sslug.dk.
+domÃ¦net hven.sslug.dk.
 </para>
 </sect3>
 
@@ -351,21 +351,21 @@ domænet hven.sslug.dk.
 
 <para>
 Med apt-get og synaptic er det muligt at installere og afinstallere
-de officielle redhat pakker og opdateringer på en nem måde, idet
-programmerne automatisk finder ud af afhængigheder og også behandler
-de afhængige pakker.  Dette kan ske automatisk over netværk.
+de officielle redhat pakker og opdateringer pÃ¥ en nem mÃ¥de, idet
+programmerne automatisk finder ud af afhÃ¦ngigheder og ogsÃ¥ behandler
+de afhÃ¦ngige pakker.  Dette kan ske automatisk over netvÃ¦rk.
 Synaptic er det grafiske program, med funktion lignende Mandrakes
-rpmdrake. På denne måde er det muligt at holde sit Red Hat-system
-opdateret på en mere gennemskuelig måde end Red Hats up2date.
+rpmdrake. PÃ¥ denne mÃ¥de er det muligt at holde sit Red Hat-system
+opdateret pÃ¥ en mere gennemskuelig mÃ¥de end Red Hats up2date.
 </para>
 
 <para>
-Det er også muligt at installere andre pakker, for eksempel fra
+Det er ogsÃ¥ muligt at installere andre pakker, for eksempel fra
 <ulink url="http://apt.freshrpms.net/">http://apt.freshrpms.net/</ulink>.
 </para>
 
 <para>
-Der er flere detaljer om dette på
+Der er flere detaljer om dette pÃ¥
 <ulink url="http://www.gnuskole.dk/bog/opdatering.html#APT-RPM">http://www.gnuskole.dk/bog/opdatering.html#APT-RPM</ulink>  og
 <ulink url="http://www.klid.dk/sw/apt-get.txt">http://www.klid.dk/sw/apt-get.txt</ulink>.
 </para>
@@ -381,13 +381,13 @@ Der er flere detaljer om dette på
 <indexterm><primary>Mandrake</primary></indexterm>
 
 <para>
-Umiddelbart efter installationen vil det være en fordel at hente de 
-opdateringer der er kommet til distributionen. De findes på:
+Umiddelbart efter installationen vil det vÃ¦re en fordel at hente de 
+opdateringer der er kommet til distributionen. De findes pÃ¥:
 <ulink url="ftp://ftp.sunet.se/pub/os/Linux/distributions/mandrake/updates/">
 ftp://ftp.sunet.se/pub/os/Linux/distributions/mandrake/updates/</ulink> hvor
 man kan hente dem selv. Dette er dog ikke at anbefale da Mandrake 
-softwaremanager med fordel kan håndtere dette. 
-Dette kan gøres på 2 måder enten grafisk gennem
+softwaremanager med fordel kan hÃ¥ndtere dette. 
+Dette kan gÃ¸res pÃ¥ 2 mÃ¥der enten grafisk gennem
 rpmdrake se <xref linkend="rpmdrake-fig"/> eller via kommandolinjen ved at 
 skrive:
 </para>
@@ -399,8 +399,8 @@ distributions/mandrake/updates/8.2/RPMS/ with ../base/hdlist.cz</userinput>
 
 
 <para>
-Så er opdateringskilderne inde i systemet 
-og der kan nu opdateres ved enten at vælge 
+SÃ¥ er opdateringskilderne inde i systemet 
+og der kan nu opdateres ved enten at vÃ¦lge 
 Mandrake Update via den grafiske rpmdrake eller ved at skrive 
 </para>
 
@@ -409,7 +409,7 @@ Mandrake Update via den grafiske rpmdrake eller ved at skrive
 </programlisting>
 
 <para>
-Så vil den selv finde ud af hvilke pakker der er installeret og hvilke der behøves opdateringer til.
+SÃ¥ vil den selv finde ud af hvilke pakker der er installeret og hvilke der behÃ¸ves opdateringer til.
 </para>
 
 <figure id="rpmdrake-fig" float="1">
@@ -419,21 +419,21 @@ Så vil den selv finde ud af hvilke pakker der er installeret og hvilke der behøv
 
 <para>
 Ligeledes er det <command>rpmdrake</command>/<command>urpmi</command>
-der benyttes til efterfølgende at installere software på systemet.
+der benyttes til efterfÃ¸lgende at installere software pÃ¥ systemet.
 </para>
 
 <para>
-For at få DVD/DivX, etc til at virke under Mandrake er alle programmer
-der af copyright/licens eller patent årsager ikke kan komme med på
-distributionens skiver samlet. Disse kan også nemt tilføjes til
-rpmdrake som kilde, se mere om det på:
+For at fÃ¥ DVD/DivX, etc til at virke under Mandrake er alle programmer
+der af copyright/licens eller patent Ã¥rsager ikke kan komme med pÃ¥
+distributionens skiver samlet. Disse kan ogsÃ¥ nemt tilfÃ¸jes til
+rpmdrake som kilde, se mere om det pÃ¥:
 <ulink url="http://plf.zarb.org">http://plf.zarb.org - Penguin Liberation Front.</ulink>
 
 </para>
 <para>
 Ydermere er der Mandrake's arkiv at OpenSource software der er bygget
-til Mandrake systemet, men der ikke var plads til på de 3 CD'er. Dette
-kaldet contribution arkivet og kan nemt tilføjes til <command>rpmdrake</command> med:
+til Mandrake systemet, men der ikke var plads til pÃ¥ de 3 CD'er. Dette
+kaldet contribution arkivet og kan nemt tilfÃ¸jes til <command>rpmdrake</command> med:
 </para>
 
 <screen>
@@ -441,7 +441,7 @@ kaldet contribution arkivet og kan nemt tilføjes til <command>rpmdrake</command>
 </screen>
 
 <para>
-Tilføjes disse giver det et total på over 3300 rpmpakker der kan
+TilfÃ¸jes disse giver det et total pÃ¥ over 3300 rpmpakker der kan
 installeres direkte gennem <command>rpmdrake</command> eller den
 tekstbaserede <command>urpmi</command>.
 </para>
@@ -457,45 +457,45 @@ tekstbaserede <command>urpmi</command>.
 </para>
 
 <para>
-Du vil blive bedt om den eller de cd-rom'er der er nødvendige for at
-installere <literal>pine</literal> i den rækkefølge som gør at alle
-afhængigheder opfyldes. Du skal således ikke selv tænke over hvilke
-biblioteker som mangler på systemet for at kunne køre
+Du vil blive bedt om den eller de cd-rom'er der er nÃ¸dvendige for at
+installere <literal>pine</literal> i den rÃ¦kkefÃ¸lge som gÃ¸r at alle
+afhÃ¦ngigheder opfyldes. Du skal sÃ¥ledes ikke selv tÃ¦nke over hvilke
+biblioteker som mangler pÃ¥ systemet for at kunne kÃ¸re
 <literal>pine</literal> - det klarer <command>urpmi</command>. Her er
 Mandrake Linux klart foran bla. Red Hat. I dagligdagen er dette
-virkelig noget man kan sætte pris på - selv for en erfaren Linux
-bruger. For nybegynderen er dette et must. Den eneste begræsning for
+virkelig noget man kan sÃ¦tte pris pÃ¥ - selv for en erfaren Linux
+bruger. For nybegynderen er dette et must. Den eneste begrÃ¦sning for
 <command>urpmi</command> er at det ikke kan anvendes for programmer
 som endnu ikke findes oversat til RPM-format til Mandrake. Dette er
-tilfældet for for eksempel OpenOffice.org.  
+tilfÃ¦ldet for for eksempel OpenOffice.org.  
 </para>
 
 <para>
-Det kan nævnes at <command>urpmi</command> er kraftigt inspireret af
+Det kan nÃ¦vnes at <command>urpmi</command> er kraftigt inspireret af
 programmet <command>apt-get</command> fra Debian Linux, hvor man 
-også har en meget nem måde at opgrade og installere programmer på.
+ogsÃ¥ har en meget nem mÃ¥de at opgrade og installere programmer pÃ¥.
 Se mere i <xref linkend="installer-debian"/>.
 </para>
 
 <indexterm><primary>urpmi.update</primary></indexterm>
 <para>
-Skulle du senere ønske at opdatere indholdet af en ftp-sites filer såsom 
-plf, så kan man køre <command>urpmi.update plf</command>.
+Skulle du senere Ã¸nske at opdatere indholdet af en ftp-sites filer sÃ¥som 
+plf, sÃ¥ kan man kÃ¸re <command>urpmi.update plf</command>.
 </para>
 
 <sect2 id="Mandrake-systemvedligeholdelse">
 <title>Systemvedligeholdelse i Mandrake</title>
 <para>
-Til den almindelige systemopsætning findes Mandrake Control
+Til den almindelige systemopsÃ¦tning findes Mandrake Control
 Center eller <command>drakconf</command>
-Det første program er <emphasis>Mandrake Control
+Det fÃ¸rste program er <emphasis>Mandrake Control
 Panel</emphasis> (eller <command>DrakConf</command>,
-hvis man vil starte programmet via en kommandolinje). Som det ses på 
-<xref linkend="DrakConf-fig"/>, så kan man styre store dele af
-maskin-opsætningen, og en særlig ting med Mandrake er, at man kan angive
+hvis man vil starte programmet via en kommandolinje). Som det ses pÃ¥ 
+<xref linkend="DrakConf-fig"/>, sÃ¥ kan man styre store dele af
+maskin-opsÃ¦tningen, og en sÃ¦rlig ting med Mandrake er, at man kan angive
 at man logger ind automatisk uden password. Dette er meget bekvemt for
-hjemmemaskinen, men bør aldrig bruges til maskiner som andre personer
-kan komme til. På <xref linkend="DrakConf-fig"/> ses printeropsætningen i 
+hjemmemaskinen, men bÃ¸r aldrig bruges til maskiner som andre personer
+kan komme til. PÃ¥ <xref linkend="DrakConf-fig"/> ses printeropsÃ¦tningen i 
 drakconf.
 </para>
 
@@ -523,57 +523,57 @@ YaST2 er langt mere end blot installationsprogrammer. De giver
 adgang til automatisk opdatering af installerede pakker via FTP fra
 SuSE, installation af andre pakker, gruppe- og brugerstyring, valg af
 brugernavn og brugerflade under X og meget mere. Under KDE kan de enkelte
-dele af YaST2 vælges enkeltvis, en ganske elegant løsning.
+dele af YaST2 vÃ¦lges enkeltvis, en ganske elegant lÃ¸sning.
 </para>
 
 
 <sect2 id="suse-printer">
-<title>Opsætning af printer under SuSE</title>
+<title>OpsÃ¦tning af printer under SuSE</title>
 
 
-<indexterm><primary>Printer</primary><secondary>Opsætning under SuSE</secondary></indexterm>
-<indexterm><primary>Udskrivning</primary><secondary>Opsætning under SuSE</secondary></indexterm>
+<indexterm><primary>Printer</primary><secondary>OpsÃ¦tning under SuSE</secondary></indexterm>
+<indexterm><primary>Udskrivning</primary><secondary>OpsÃ¦tning under SuSE</secondary></indexterm>
 
 <para>
-Du skal konfigurere din printer, inden du kan bruge den. Du vælger "Start
- application, Control Center". Når dit Control Center er startet, vælger du
+Du skal konfigurere din printer, inden du kan bruge den. Du vÃ¦lger "Start
+ application, Control Center". NÃ¥r dit Control Center er startet, vÃ¦lger du
 "YaST2 modules, Hardware, Autodetect Printers"
 </para>
 
 <figure id="suse-printer-yast2-fig" float="1">
-<title>Printerhåndtering under SuSE</title>
+<title>PrinterhÃ¥ndtering under SuSE</title>
 <graphic fileref="suse_printer_yast2.&magic;" scale="60"></graphic>
 </figure>
 
 
 <para>
-Du skal være root for at konfigurere din printer. Klik på root og
+Du skal vÃ¦re root for at konfigurere din printer. Klik pÃ¥ root og
 skriv det password, som svarer til root.
 </para>
 
 <figure id="suse-printer-runsasroot-fig" float="1">
-<title>Printerhåndtering under SuSE</title>
+<title>PrinterhÃ¥ndtering under SuSE</title>
 <graphic fileref="suse_printer_runasroot.&magic;" scale="60"></graphic>
 </figure>
 
 
 <para>
-Hvis din printer blevet genkendt under installation, vil det fremgå af
+Hvis din printer blevet genkendt under installation, vil det fremgÃ¥ af
 "Printers to configure". I feltet nedenunder kan du se, at printeren
-(en Lexmark 5700 i dette tilfælde) ikke allerede er konfigureret. Hvis
-den ikke er genkendt, kan du prøve at klikke på "Restart
-detection". Ellers klikker du på den genkendte printer og dernæst på
+(en Lexmark 5700 i dette tilfÃ¦lde) ikke allerede er konfigureret. Hvis
+den ikke er genkendt, kan du prÃ¸ve at klikke pÃ¥ "Restart
+detection". Ellers klikker du pÃ¥ den genkendte printer og dernÃ¦st pÃ¥
 "Configure".
 </para>
 
 <figure id="suse-printer-setup-fig" float="1">
-<title>Printerhåndtering under SuSE</title>
+<title>PrinterhÃ¥ndtering under SuSE</title>
 <graphic fileref="suse_printer_setup.&magic;" scale="60"></graphic>
 </figure>
 
 
 <para>
-Du kan nu vælge mellem tre former for setup:
+Du kan nu vÃ¦lge mellem tre former for setup:
 </para>
 <itemizedlist mark="bullet">
 <listitem>
@@ -594,117 +594,117 @@ Du kan nu vælge mellem tre former for setup:
 </itemizedlist>
 
 <figure id="suse-printer-configuration-fig" float="1">
-<title>Printerhåndtering under SuSE</title>
+<title>PrinterhÃ¥ndtering under SuSE</title>
 <graphic fileref="suse_printer_configuration.&magic;" scale="60"></graphic>
 </figure>
 
 
 <para>
-Hvis du ikke kender så meget til opsætning, er det nemmest blot at
-vælge "Quick automatic setup". Klik dernæst på "Next".
+Hvis du ikke kender sÃ¥ meget til opsÃ¦tning, er det nemmest blot at
+vÃ¦lge "Quick automatic setup". Klik dernÃ¦st pÃ¥ "Next".
 </para>
 
 <para>
-I "Printer overvew" kan du nu se, hvordan printeren er konfigureret. Bemærk at
-navnet på printerens kø er "lp".
+I "Printer overvew" kan du nu se, hvordan printeren er konfigureret. BemÃ¦rk at
+navnet pÃ¥ printerens kÃ¸ er "lp".
 </para>
 
 <figure id="suse-printer-overview-fig" float="1">
-<title>Printerhåndtering under SuSE</title>
+<title>PrinterhÃ¥ndtering under SuSE</title>
 <graphic fileref="suse_printer_overview.&magic;" scale="60"></graphic>
 </figure>
 
 
 <para>
-Vælg nu at udskrive en testside ved at klikke på "Test".
+VÃ¦lg nu at udskrive en testside ved at klikke pÃ¥ "Test".
 </para>
 
 <figure id="suse-printer-testpage-fig" float="1">
-<title>Printerhåndtering under SuSE</title>
+<title>PrinterhÃ¥ndtering under SuSE</title>
 <graphic fileref="suse_printer_testpage.&magic;" scale="60"></graphic>
 </figure>
 
 
 <para>
-Klik ok. Hvis testsiden kommer rigtigt ud, klikker du ok til følgende billede:
+Klik ok. Hvis testsiden kommer rigtigt ud, klikker du ok til fÃ¸lgende billede:
 </para>
 
 <figure id="suse-printer-testpage-ok-fig" float="1">
-<title>Printerhåndtering under SuSE</title>
+<title>PrinterhÃ¥ndtering under SuSE</title>
 <graphic fileref="suse_printer_testpage_ok.&magic;" scale="60"></graphic>
 </figure>
 
 
 <para>
-Din printer er nu være konfigureret, og du kan klikke på "Finish".
+Din printer er nu vÃ¦re konfigureret, og du kan klikke pÃ¥ "Finish".
 </para>
 
 <figure id="suse-printer-ok-fig" float="1">
-<title>Printerhåndtering under SuSE</title>
+<title>PrinterhÃ¥ndtering under SuSE</title>
 <graphic fileref="suse_printer_ok.&magic;" scale="60"></graphic>
 </figure>
 
 
 <para>
-Hvis du nu i nogen af de andre KDE-programmer for eksempel KMail klikker på
-print-ikonet, kan du nu se, at navnet på printerens kø - lp - er valgt.
+Hvis du nu i nogen af de andre KDE-programmer for eksempel KMail klikker pÃ¥
+print-ikonet, kan du nu se, at navnet pÃ¥ printerens kÃ¸ - lp - er valgt.
 </para>
 
 <figure id="suse-printer-print-fig" float="1">
-<title>Printerhåndtering under SuSE</title>
+<title>PrinterhÃ¥ndtering under SuSE</title>
 <graphic fileref="suse_printer_print.&magic;" scale="60"></graphic>
 </figure>
 
 
 
 <para>
-Du kan nu udskrive ved at klikke på "Ok".
+Du kan nu udskrive ved at klikke pÃ¥ "Ok".
 </para>
 
 </sect2>
 
 <sect2 id="hjael-suse">
-<title>Hjælp under SuSE</title>
+<title>HjÃ¦lp under SuSE</title>
 <para>
-Hvis man kører KDE under SuSE, så er der en meget god hjælpe-funktion 
-vist med det lille redningsbælte med menu-baren.
+Hvis man kÃ¸rer KDE under SuSE, sÃ¥ er der en meget god hjÃ¦lpe-funktion 
+vist med det lille redningsbÃ¦lte med menu-baren.
 </para>
 
 <figure id="suse-hjaelp-fig" float="1">
-<title>Hjælp under SuSE</title>
+<title>HjÃ¦lp under SuSE</title>
 <graphic fileref="SuSEhjaelp.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-Man finder først en oversigt over forskellige hjælpe-emner.
+Man finder fÃ¸rst en oversigt over forskellige hjÃ¦lpe-emner.
 </para>
 
 <figure id="suse-hjaelp1-fig" float="1">
-<title>Hjælp under SuSE</title>
+<title>HjÃ¦lp under SuSE</title>
 <graphic fileref="SuSEhjaelp1.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-Dernæst kan man nemt klikke sig ind og se hvilke pakker
+DernÃ¦st kan man nemt klikke sig ind og se hvilke pakker
 der er installeret og hvilke filer de indeholder.
 </para>
 
 <figure id="suse-hjaelp2-fig" float="1">
-<title>Hjælp under SuSE</title>
+<title>HjÃ¦lp under SuSE</title>
 <graphic fileref="SuSEhjaelp2.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-Der er også en fin hjælp til YaST2.
+Der er ogsÃ¥ en fin hjÃ¦lp til YaST2.
 </para>
 
 <figure id="suse-hjaelp3-fig" float="1">
-<title>Hjælp under SuSE</title>
+<title>HjÃ¦lp under SuSE</title>
 <graphic fileref="SuSEhjaelp3.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-Hjælpesystemet er værd at bruge tid på.
+HjÃ¦lpesystemet er vÃ¦rd at bruge tid pÃ¥.
 </para>
 
 </sect2>
@@ -713,17 +713,17 @@ Hjælpesystemet er værd at bruge tid på.
 -->
 
 <sect1 id="kde-systemadm">
-<title>KDE-værktøjer</title>
+<title>KDE-vÃ¦rktÃ¸jer</title>
 <para>
-Med de nye KDE-udgaver følger en del gode værktøjer med som en
-systemadministrator kan have glæde af. <command>KUser</command> er en
+Med de nye KDE-udgaver fÃ¸lger en del gode vÃ¦rktÃ¸jer med som en
+systemadministrator kan have glÃ¦de af. <command>KUser</command> er en
 af dem. KDE har dette i Menuen [Start] -> [System] -> [User Manager].
 </para>
 
 <para>
-Med KDE User Manager har man et nemt grafisk program til at opsætte,
-ændre og slette bruger-profiler på Linux-maskinen. Klikker man på en
-bruger kommer man direkte til brugerens opsætning. 
+Med KDE User Manager har man et nemt grafisk program til at opsÃ¦tte,
+Ã¦ndre og slette bruger-profiler pÃ¥ Linux-maskinen. Klikker man pÃ¥ en
+bruger kommer man direkte til brugerens opsÃ¦tning. 
 </para>
 
 <figure id="kuser" float="1">
@@ -733,12 +733,12 @@ bruger kommer man direkte til brugerens opsætning.
 
 
 <para>
-Med KDE følger også et godt værktøj til at holde styr på de RPM-,
+Med KDE fÃ¸lger ogsÃ¥ et godt vÃ¦rktÃ¸j til at holde styr pÃ¥ de RPM-,
 Slackware- og DEB-pakker, der er installeret. Find
 <command>KPackage</command> via [Start] -> [System] -> [Package
-Manager]. Til venstre på <xref linkend="kpackage-fig"/> ses en del af
-oversigten over de pakker som er installeret. Vælges en pakke viser
-højresiden hvad pakken indeholder og man kan få en liste over filer, som
+Manager]. Til venstre pÃ¥ <xref linkend="kpackage-fig"/> ses en del af
+oversigten over de pakker som er installeret. VÃ¦lges en pakke viser
+hÃ¸jresiden hvad pakken indeholder og man kan fÃ¥ en liste over filer, som
 pakken indeholder.
 </para>
 
@@ -750,71 +750,71 @@ pakken indeholder.
 </figure>
 
 <sect2 id="KDE-login-haandtering">
-<title>KDE 3 login håndtering</title>
+<title>KDE 3 login hÃ¥ndtering</title>
 <para>
-Det næste emne vi ser nærmere på er login-håndtering under KDE.
-Er man lidt doven vil mange sikkert gerne undgå at skulle skrive
-navn og password ved login på maskinen. Dette er jo nemt og bekvemt.
-Af hensyn til sikkerheden på maskinen bør dette kun anvendes på ens 
-egen hjemmemaskine hvor andre ikke kan komme til denne. Tænk altid på  
-hvordan din maskine kan misbruges <emphasis>før</emphasis> uheldet er
-sket. Ud over nem login ser vi på baggrundsbillede og logo på login
+Det nÃ¦ste emne vi ser nÃ¦rmere pÃ¥ er login-hÃ¥ndtering under KDE.
+Er man lidt doven vil mange sikkert gerne undgÃ¥ at skulle skrive
+navn og password ved login pÃ¥ maskinen. Dette er jo nemt og bekvemt.
+Af hensyn til sikkerheden pÃ¥ maskinen bÃ¸r dette kun anvendes pÃ¥ ens 
+egen hjemmemaskine hvor andre ikke kan komme til denne. TÃ¦nk altid pÃ¥  
+hvordan din maskine kan misbruges <emphasis>fÃ¸r</emphasis> uheldet er
+sket. Ud over nem login ser vi pÃ¥ baggrundsbillede og logo pÃ¥ login
 </para>
 
 <para>
-I det følgende er vist for SuSE 8.0. Vælg 
-[Start]->[Indstillinger]->[System]->[Login-håndtering].
+I det fÃ¸lgende er vist for SuSE 8.0. VÃ¦lg 
+[Start]->[Indstillinger]->[System]->[Login-hÃ¥ndtering].
 <!-- sudo kcmshell 'System/kdm' -->
 </para>
 
 <figure id="kde-login-fig1" float="1">
-<title>KDE login håndtering</title>
+<title>KDE login hÃ¥ndtering</title>
 <graphic fileref="kde_login1.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
-Under det første faneblad [Udseende] kan der sættes nyt logo
+Under det fÃ¸rste faneblad [Udseende] kan der sÃ¦ttes nyt logo
 for login-sessionen. Der skal laves et nyt 100x100 logo i PNG-format
-hvis man vil have samme størrelse som de indbyggede logoer.
+hvis man vil have samme stÃ¸rrelse som de indbyggede logoer.
 </para>
 
 <figure id="kde-login-fig2" float="1">
-<title>KDE login håndtering</title>
+<title>KDE login hÃ¥ndtering</title>
 <graphic fileref="kde_login2.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
-Under det tredje faneblad [Baggrund] kan man vælge nyt baggrunds-tapet.
-Vælg et logo der er stort og passer med den opløsning, der anvendes 
+Under det tredje faneblad [Baggrund] kan man vÃ¦lge nyt baggrunds-tapet.
+VÃ¦lg et logo der er stort og passer med den oplÃ¸sning, der anvendes 
 under login-sessionen.
 </para>
 
 <figure id="kde-login-fig3" float="1">
-<title>KDE login håndtering</title>
+<title>KDE login hÃ¥ndtering</title>
 <graphic fileref="kde_login3.&magic;"  scale="50"></graphic>
 </figure>
 
 <para> 
 Under fanebladet "Behagelighed" kan man under "Automatisk login"
-vælge at en bruger, her brugeren "pto" logger automatisk.
+vÃ¦lge at en bruger, her brugeren "pto" logger automatisk.
 </para>
 
 <figure id="kde-login-fig4" float="1">
-<title>KDE login håndtering</title>
+<title>KDE login hÃ¥ndtering</title>
 <graphic fileref="kde_login4.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
-Endelig kan man under fanebladet "brugere" sætte hvilke brugere
-som ikke skal vises i login-sessionen, og man også vælge 
+Endelig kan man under fanebladet "brugere" sÃ¦tte hvilke brugere
+som ikke skal vises i login-sessionen, og man ogsÃ¥ vÃ¦lge 
 logoer for de enkelte brugere, for eksempel et billede af den
-enkelte person, hvis dette ønskes. Tryk på ikonet i øverste højre 
-hjørne efter at have valgt en person. Vælg derefter den rette 
+enkelte person, hvis dette Ã¸nskes. Tryk pÃ¥ ikonet i Ã¸verste hÃ¸jre 
+hjÃ¸rne efter at have valgt en person. VÃ¦lg derefter den rette 
 grafik-fil.
 </para>
 
 <figure id="kde-login-fig5" float="1">
-<title>KDE login håndtering</title>
+<title>KDE login hÃ¥ndtering</title>
 <graphic fileref="kde_login5.&magic;"  scale="50"></graphic>
 </figure>
 
@@ -828,96 +828,96 @@ grafik-fil.
 
 <para>
 Hvis man har en eller flere printere man gerne vil bruge under Linux,
-bør man overveje at installere CUPS (Common UNIX Printing
+bÃ¸r man overveje at installere CUPS (Common UNIX Printing
 System).  Hvis man har flere arbejdsstationer og gerne vil kunne skrive
-ud fra dem alle er CUPS så afgjort det bedste valg. 
+ud fra dem alle er CUPS sÃ¥ afgjort det bedste valg. 
 </para>
 
 <sect2 id="cups-installation">
 <title>Installation</title>
 
 <para>
-Installation af CUPS er et spørgsmål om at installere de rigtige
-pakker, på et Debian system er det <filename>cupsys</filename>,
+Installation af CUPS er et spÃ¸rgsmÃ¥l om at installere de rigtige
+pakker, pÃ¥ et Debian system er det <filename>cupsys</filename>,
   <filename>cupsys-bsd</filename>
 <footnote><para>
-Egentlig er <filename>cupsys-bsd</filename> kun nødvendigt
+Egentlig er <filename>cupsys-bsd</filename> kun nÃ¸dvendigt
     hvis man er vant til
 BSD kommandoerne <command>lpr</command>, <command>lpq</command>,
 <command>lprm</command> og <command>lpc</command>, fremfor System
 V-kommandoerne <command>lp</command>, <command>cancel</command>,
 <command>lpoptions</command> og <command>lpstat</command>.
 </para></footnote>
-og <filename>cupsys-client</filename>, på RedHat 7.3 hedder den blot
+og <filename>cupsys-client</filename>, pÃ¥ RedHat 7.3 hedder den blot
 <filename>cups</filename>. 
 </para>
 
 <para>
-Før man kan bruge CUPS skal man sikre sig at man har en PPD-fil
+FÃ¸r man kan bruge CUPS skal man sikre sig at man har en PPD-fil
 (Postscript Printer Definition) til sin printer. Hvis man har en
 laserprinter er der gode chancer for at producenten enten medleverede
-en, eller at den kan findes på nettet. Hvis producenten ikke har lavet
-en PPD til printeren kan man kigge på de driverpakker distributionerne
+en, eller at den kan findes pÃ¥ nettet. Hvis producenten ikke har lavet
+en PPD til printeren kan man kigge pÃ¥ de driverpakker distributionerne
 har (Debians <filename>cupsomatic-ppd</filename>-pakke indeholder
 for eksempel over 900 PPD'er).
 </para>
 
 <para>
 Hvis man selv har fundet en PPD-fil skal man placere den i
-  <filename>/usr/share/cups/model</filename>. <!-- I hvert fald på
+  <filename>/usr/share/cups/model</filename>. <!-- I hvert fald pÃ¥
   Debian - Tjek om andre distributioner leder et andet sted -->
 </para>
 </sect2>
 
 <sect2 id="cups-konfig">
-<title>Opsætning af CUPS</title>
+<title>OpsÃ¦tning af CUPS</title>
 
 
 
 <indexterm><primary>CUPS</primary></indexterm>
 <para>
-Den letteste måde at administrere printere på i CUPS er via
-webgrænsefladen.
-Så ret din netsøger mod 
+Den letteste mÃ¥de at administrere printere pÃ¥ i CUPS er via
+webgrÃ¦nsefladen.
+SÃ¥ ret din netsÃ¸ger mod 
 <ulink url="http://127.0.0.1:631/">127.0.0.1:631</ulink>.
 Det er vigtigt at du bruger 127.0.0.1 og ikke IP-nummeret knyttet til
-et evt. netkort, for hvis du gør det vil forespørgslen se ud til at
+et evt. netkort, for hvis du gÃ¸r det vil forespÃ¸rgslen se ud til at
 komme fra det IP-nummer og CUPS er som standard sat op til kun at
 acceptere forbindelser fra 127.0.0.1.
 </para>
 
 <!-- Skriv et afsnit om at bruge Bind+Apache til at give en URL der er -->
-<!-- pænere/lettere at huske -->
+<!-- pÃ¦nere/lettere at huske -->
 
 <para>
-I webgrænsefladen kan du vælge mellem flere forskellige ting. I første
-omgang vil du nok gerne have tilføjet en printer, så klik på "Do
+I webgrÃ¦nsefladen kan du vÃ¦lge mellem flere forskellige ting. I fÃ¸rste
+omgang vil du nok gerne have tilfÃ¸jet en printer, sÃ¥ klik pÃ¥ "Do
 Administration Tasks". Nu bliver du spurgt om brugernavn og
-adgangskode, brugernavnet skal være root og kodeordet kender du kun
-selv. Klik så på "Add Printer" for at tilføje en printer. Først bliver
-du spurgt om hvilket navn du vil give printeren, hvor den står og du
-har også mulighed for at indtaste en beskrivelse, når du har udfyldt
-felterne så godt som du gider (du skal indtaste et navn, men de andre
-må godt være tomme), trykker du på "Continue". Det næste spørgsmål
+adgangskode, brugernavnet skal vÃ¦re root og kodeordet kender du kun
+selv. Klik sÃ¥ pÃ¥ "Add Printer" for at tilfÃ¸je en printer. FÃ¸rst bliver
+du spurgt om hvilket navn du vil give printeren, hvor den stÃ¥r og du
+har ogsÃ¥ mulighed for at indtaste en beskrivelse, nÃ¥r du har udfyldt
+felterne sÃ¥ godt som du gider (du skal indtaste et navn, men de andre
+mÃ¥ godt vÃ¦re tomme), trykker du pÃ¥ "Continue". Det nÃ¦ste spÃ¸rgsmÃ¥l
 handler om hvordan printeren er tilsluttet, de fleste vil nok enten
-vælge enten "Parallel Port #1" (for en printer tilsluttet
+vÃ¦lge enten "Parallel Port #1" (for en printer tilsluttet
 parallelporten) eller "LPD/LPR Host or Printer" (for en
-netværksprinter). Hvis man vælger en af netværkstilslutningerne får
-man et enkelt spørgsmål om printerens URI. Derefter skal du vælge
-først hvilket mærke og dernæst hvilken model printeren er, og så er
+netvÃ¦rksprinter). Hvis man vÃ¦lger en af netvÃ¦rkstilslutningerne fÃ¥r
+man et enkelt spÃ¸rgsmÃ¥l om printerens URI. Derefter skal du vÃ¦lge
+fÃ¸rst hvilket mÃ¦rke og dernÃ¦st hvilken model printeren er, og sÃ¥ er
 printeren oprettet.
 </para>
 
 <para>
-Når printeren er oprettet er det en god idé at vælge "Printers" i
-menuen øverst. Så kommer der en side hvor man kan se hvilke printere
-der er oprettet. Inden man klikker på "Print Test Page" for at sikre
-sig at man har fået sat printeren rigtigt op bør man lige klikke på
-"Configure Printer". Alt efter printerens model får man så mulighed
-for at stille på et antal parametre, som minimum vil man sikkert vælge
-at bruge A4-papir. Når man mener at man har konfigureret sin printer
-passende, trykker man på en af "Continue"-knapperne og vender tilbage
-til printeroversigten, og nu bør man så udskrive en testside.
+NÃ¥r printeren er oprettet er det en god idÃ© at vÃ¦lge "Printers" i
+menuen Ã¸verst. SÃ¥ kommer der en side hvor man kan se hvilke printere
+der er oprettet. Inden man klikker pÃ¥ "Print Test Page" for at sikre
+sig at man har fÃ¥et sat printeren rigtigt op bÃ¸r man lige klikke pÃ¥
+"Configure Printer". Alt efter printerens model fÃ¥r man sÃ¥ mulighed
+for at stille pÃ¥ et antal parametre, som minimum vil man sikkert vÃ¦lge
+at bruge A4-papir. NÃ¥r man mener at man har konfigureret sin printer
+passende, trykker man pÃ¥ en af "Continue"-knapperne og vender tilbage
+til printeroversigten, og nu bÃ¸r man sÃ¥ udskrive en testside.
 </para>
 </sect2>
 
@@ -928,50 +928,50 @@ til printeroversigten, og nu bør man så udskrive en testside.
 
 <para>
 Swapfiler er nu til dags et godt alternativ til swappartitioner. Den
-største fordel er at det er nemt at tilføje (og fjerne) swapplads
-efter behov. Tidligere har hastighed været et argument for at bruge
-swappartitioner fremfor swapfiler. I dag er harddiske så hurtige at
-der ikke er nogen reel forskel. Det største problem man i dag støder
-på er installationsprogrammer, der typisk ikke understøtter brugen af
-swapfiler, og nogen gange insisterer på at man laver en
+stÃ¸rste fordel er at det er nemt at tilfÃ¸je (og fjerne) swapplads
+efter behov. Tidligere har hastighed vÃ¦ret et argument for at bruge
+swappartitioner fremfor swapfiler. I dag er harddiske sÃ¥ hurtige at
+der ikke er nogen reel forskel. Det stÃ¸rste problem man i dag stÃ¸der
+pÃ¥ er installationsprogrammer, der typisk ikke understÃ¸tter brugen af
+swapfiler, og nogen gange insisterer pÃ¥ at man laver en
 swappartition.
 </para>
 
 <para>
 For at lave en swapfil skal man starte med at lave en fil af den
-ønskede størrelse, indholdet er ligegyldigt. En nem måde at lave filen
-på er med <command>dd if=/dev/zero of=/swap bs=16384
-count=16384</command> der vil lave filen /swap på 128MiB.
+Ã¸nskede stÃ¸rrelse, indholdet er ligegyldigt. En nem mÃ¥de at lave filen
+pÃ¥ er med <command>dd if=/dev/zero of=/swap bs=16384
+count=16384</command> der vil lave filen /swap pÃ¥ 128MiB.
 </para>
 
 <para>
 For at mindske sandsynligheden for at man kommer til at bruge en
-betydningsfuld fil til swap, kræver kernen at swapfiler har en
-signatur. Sådan en kan vi give vores fil fra før med kommandoen
+betydningsfuld fil til swap, krÃ¦ver kernen at swapfiler har en
+signatur. SÃ¥dan en kan vi give vores fil fra fÃ¸r med kommandoen
 <command>mkswap /swap</command>.
 </para>
 
 <para>
-Nu hvor vores swapfil er klar til brug, kan vi fortælle kernen at den
-må bruge filen som swap. Det gøres med kommandoen <command>swapon
-/swap</command>. Hvis du er sikker på at en swapfil ikke er i brug -
-eller hvis du har flere at de andre kan dække behovet - (tjek med
+Nu hvor vores swapfil er klar til brug, kan vi fortÃ¦lle kernen at den
+mÃ¥ bruge filen som swap. Det gÃ¸res med kommandoen <command>swapon
+/swap</command>. Hvis du er sikker pÃ¥ at en swapfil ikke er i brug -
+eller hvis du har flere at de andre kan dÃ¦kke behovet - (tjek med
 <command>free</command>), kan du bede kernen om at holde op med at
 bruge filen som swap med kommandoen <command>swapoff /swap</command>.
 </para>
 
-<para>For at få brugt swapfilen efter hver genstart, skal du tilføje
-følgende linje til <filename>/etc/fstab</filename>:
+<para>For at fÃ¥ brugt swapfilen efter hver genstart, skal du tilfÃ¸je
+fÃ¸lgende linje til <filename>/etc/fstab</filename>:
 <programlisting>
 /swap		none		swap	sw				0 0
 </programlisting>
 </para>
 
 <para>
-Hvis din distribution insisterede på at lave en swappartition kan du ved
-at fjerne den tilhørende linje i <filename>/etc/fstab</filename>, få
-kernen til at lade være med at bruge den for fremtiden (brug
-<command>swapoff</command> for at få kernen til at holde op med at bruge
+Hvis din distribution insisterede pÃ¥ at lave en swappartition kan du ved
+at fjerne den tilhÃ¸rende linje i <filename>/etc/fstab</filename>, fÃ¥
+kernen til at lade vÃ¦re med at bruge den for fremtiden (brug
+<command>swapoff</command> for at fÃ¥ kernen til at holde op med at bruge
 den med det samme).
 </para>
 </sect1> <!-- swapfiler -->
@@ -980,44 +980,44 @@ den med det samme).
 <title>Anvendelse af fdisk</title>
 <indexterm><primary>fdisk</primary></indexterm>
 
-<para> Hvis du har brug for at partitionere en disk på et tidspunkt
-efter installation, så er <command>fdisk</command> et stabilt værktøj.
-Skriv som "root" <command>fdisk</command> og du kan få hjælp ved at trykke
+<para> Hvis du har brug for at partitionere en disk pÃ¥ et tidspunkt
+efter installation, sÃ¥ er <command>fdisk</command> et stabilt vÃ¦rktÃ¸j.
+Skriv som "root" <command>fdisk</command> og du kan fÃ¥ hjÃ¦lp ved at trykke
 <filename>m</filename>.
 </para>
 
 <para>
-Advarsel: Hvis du ikke har forstået, hvordan diskpartitioner fungerer,
-skal du passe meget på. Kommer du til at lave ulykker med fdisk,
-kan du komme til at miste kontakten med andre partitioner på din
+Advarsel: Hvis du ikke har forstÃ¥et, hvordan diskpartitioner fungerer,
+skal du passe meget pÃ¥. Kommer du til at lave ulykker med fdisk,
+kan du komme til at miste kontakten med andre partitioner pÃ¥ din
 harddisk. Er du i tvivl, er det meget klogt, at du starter med at trykke
-<filename>p</filename> og skrive ned (ja, på papir som i gamle dage),
-hvad du får vist på skærmen.
+<filename>p</filename> og skrive ned (ja, pÃ¥ papir som i gamle dage),
+hvad du fÃ¥r vist pÃ¥ skÃ¦rmen.
 </para>
 
 
 <para>
 I <command>fdisk</command>: Tryk <filename>p</filename> for at se, hvordan din
-partitionstabel ser ud. Hvis du har været igennem <command>fips</command>,
+partitionstabel ser ud. Hvis du har vÃ¦ret igennem <command>fips</command>,
 har du en ny partition <filename>/dev/hda2</filename>, som er af typen
 "DOS 16-bit >=32M". Du skal tilsvarende have en partition
 <filename>/dev/hda1</filename> af typen "DOS 16-bit >=32M", som
-indeholder din gamle Windows-partition - tjek om størrelsen stemmer!
+indeholder din gamle Windows-partition - tjek om stÃ¸rrelsen stemmer!
 Du skal starte med at slette den ekstra partition - sikkert
 <filename>/dev/hda2</filename> - tryk <command>d</command> og 
-<command>2</command>, hvis du er sikker på, hvad du laver. 
-Ellers spørg i din nærmeste Linux-brugergruppe.</para>
+<command>2</command>, hvis du er sikker pÃ¥, hvad du laver. 
+Ellers spÃ¸rg i din nÃ¦rmeste Linux-brugergruppe.</para>
 
 <para>
 Skab mindst to nye Linux-partitioner ved at trykke
-<filename>n</filename> og partitionsnummer. Dette skal du gøre to
+<filename>n</filename> og partitionsnummer. Dette skal du gÃ¸re to
 gange med partition 2 hhv. 3 (hvis du kun har en enkelt Windows-partition i
-forvejen). Lav partition 2 stor og partition 3 på måske 40 Mb til swap.
+forvejen). Lav partition 2 stor og partition 3 pÃ¥ mÃ¥ske 40 Mb til swap.
 Default type er "Linux native". En af partitionerne (nummer 3) skal have
-ændret type til Linux swap, hvilket gøres ved at trykke
-<filename>t</filename> og vælge type 82 (Linux swap). Tryk
-<filename>p</filename> for at verificere at disken har den ønskede
-opbygning. Den simpleste partitionsopbygning er som følger (ikke
+Ã¦ndret type til Linux swap, hvilket gÃ¸res ved at trykke
+<filename>t</filename> og vÃ¦lge type 82 (Linux swap). Tryk
+<filename>p</filename> for at verificere at disken har den Ã¸nskede
+opbygning. Den simpleste partitionsopbygning er som fÃ¸lger (ikke
 alle dele af harddisken er udnyttet i eksemplet):
 </para>
 
@@ -1036,14 +1036,14 @@ Device   Boot  Begin Start   End Blocks   Id  System
 
 
 <para>
-Et eksempel på en mere avanceret partitionstabel kan være det
-følgende. Det skal bemærkes, at den fortløbende nummerering af
-partitionerne ikke er nødvendig. Desuden kan det bemærkes, at
+Et eksempel pÃ¥ en mere avanceret partitionstabel kan vÃ¦re det
+fÃ¸lgende. Det skal bemÃ¦rkes, at den fortlÃ¸bende nummerering af
+partitionerne ikke er nÃ¸dvendig. Desuden kan det bemÃ¦rkes, at
 <filename>hda1</filename> til <filename>hda4</filename>
-er numrene for primære eller udvidede partitioner, og at partitioner i
-den udvidede partition får numrene 5 og opefter. Der kan maksimalt
-være 4 partitioner, hvoraf én kan være udvidet. Linux kan i
-princippet placeres på en vilkårlig partition. Bemærk, at enkelte
+er numrene for primÃ¦re eller udvidede partitioner, og at partitioner i
+den udvidede partition fÃ¥r numrene 5 og opefter. Der kan maksimalt
+vÃ¦re 4 partitioner, hvoraf Ã©n kan vÃ¦re udvidet. Linux kan i
+princippet placeres pÃ¥ en vilkÃ¥rlig partition. BemÃ¦rk, at enkelte
 laptops bryder med dette.
 </para>
 
@@ -1066,15 +1066,15 @@ Device   Boot  Begin Start   End Blocks   Id  System
 <para> Her er to DOS-partitioner (<filename>/dev/hda1,2</filename>), tre
 Linux-partitioner (<filename>/dev/hda3,5,6</filename>) og en Linux swap-partition
  (<filename>/dev/hda7</filename>), og extended partitionstabel er
-anvendt (<filename>/dev/hda4</filename>). Du kan nøjes med at have et
-antal DOS (vfat) partitioner og så en Linux-partition, samt en Linux swap-partition.
+anvendt (<filename>/dev/hda4</filename>). Du kan nÃ¸jes med at have et
+antal DOS (vfat) partitioner og sÃ¥ en Linux-partition, samt en Linux swap-partition.
 </para>
 
 <para>
 Afslut <command>fdisk</command> med at trykke <filename>w</filename>
-for "write to disk". (Du kan i øvrigt altid afslutte uden at gemme i
+for "write to disk". (Du kan i Ã¸vrigt altid afslutte uden at gemme i
 <command>fdisk</command> ved at trykke
-<filename>q</filename>). Derefter vælges <filename>Done</filename>.
+<filename>q</filename>). Derefter vÃ¦lges <filename>Done</filename>.
 </para>
 </sect1>
 
@@ -1086,14 +1086,14 @@ for "write to disk". (Du kan i øvrigt altid afslutte uden at gemme i
 
 <para>
 En almindelig Linux-distribution kommer med en fornuftig
-samling skrifttyper som virker direkte. Man kan dog også 
-få for eksempel Windows FFT-skriftsnit til at virke under Linux.
+samling skrifttyper som virker direkte. Man kan dog ogsÃ¥ 
+fÃ¥ for eksempel Windows FFT-skriftsnit til at virke under Linux.
 </para>
 
 <para>
 Under Mandrake 9.0 kan man for eksempel nemt importere Windows-skrifttyper
 ved at starte "Mandrake Control Center" (eller <command>DrakConf</command>)
-og vælge "System"-&gt;"Fonts". Herefter vælger man som vist på billederne
+og vÃ¦lge "System"-&gt;"Fonts". Herefter vÃ¦lger man som vist pÃ¥ billederne
 at installere Windows-skrifttyper.
 </para>
 
@@ -1109,7 +1109,7 @@ at installere Windows-skrifttyper.
 
 
 <para>
-Et par referencer angående skriftyper og Linux kan findes på:
+Et par referencer angÃ¥ende skriftyper og Linux kan findes pÃ¥:
 </para>
 
 <itemizedlist mark="bullet">
@@ -1140,9 +1140,9 @@ Et par referencer angående skriftyper og Linux kan findes på:
 <indexterm><primary>modem</primary><secondary>USB</secondary></indexterm>
 <indexterm><primary>USB</primary><secondary>modem</secondary></indexterm>
 <para>
-USB modem (til alm. telefonlinjer, ISDN eller kabel) bør overholde
+USB modem (til alm. telefonlinjer, ISDN eller kabel) bÃ¸r overholde
 CSC (Communication Device Class) specifikationen, og til underklassen
-ACM (Abstract Control Model) - eller vil du ikke kunne få det til at virke 
+ACM (Abstract Control Model) - eller vil du ikke kunne fÃ¥ det til at virke 
 med Linux
 </para>
 
@@ -1150,13 +1150,13 @@ med Linux
 Du skal have fat i et kerne-modul "USB Modem (CDC ACM)".
 Det skal kunne findes om "acm.o" under dine kerne-moduler
 <filename>/lib/modules/KERNEVERSION</filename>. Med nyere
-kerne 2.4-distributioner, bør den være med.
+kerne 2.4-distributioner, bÃ¸r den vÃ¦re med.
 </para>
 
 <para>
-Hvis det ikke er gjort for dig, så skal du sætte devices op til dit USB-modem.
-Der kan sættes 32 modemer op til samme driver, men vi tager kun de fire 
-første her:
+Hvis det ikke er gjort for dig, sÃ¥ skal du sÃ¦tte devices op til dit USB-modem.
+Der kan sÃ¦ttes 32 modemer op til samme driver, men vi tager kun de fire 
+fÃ¸rste her:
 </para>
 
 <screen>
@@ -1167,8 +1167,8 @@ første her:
 </screen>
 
 <para>
-Dernæst bør man kunne anvende <filename>/dev/usb/ttyACM0</filename>
-som det første modem. Anvend <command>ln -sf /dev/usb/ttyACM0 /dev/modem</command> for at <filename>/dev/modem</filename> peger på det første USB-modem.
+DernÃ¦st bÃ¸r man kunne anvende <filename>/dev/usb/ttyACM0</filename>
+som det fÃ¸rste modem. Anvend <command>ln -sf /dev/usb/ttyACM0 /dev/modem</command> for at <filename>/dev/modem</filename> peger pÃ¥ det fÃ¸rste USB-modem.
 </para>
 </sect1>
 

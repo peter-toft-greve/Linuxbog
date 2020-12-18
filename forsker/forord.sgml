@@ -6,10 +6,10 @@
 
 
 <sect1  id="forsker-forordet">
-<title>Viden bliver ikke mindre af at blive delt - tværtimod!</title>
+<title>Viden bliver ikke mindre af at blive delt - tvÃ¦rtimod!</title>
 
 <!-- Har jeg fattet det med grafik rigtigt!? -j -->
-<!-- dax: ja det så da næsten nydeligt ud /-->
+<!-- dax: ja det sÃ¥ da nÃ¦sten nydeligt ud /-->
 
 <figure id="tux-bolivia" float="1">
 <title>Tux - linuxsamfundets maskot</title>
@@ -17,15 +17,15 @@
 </figure>
 
 
-<!-- Citater, for eksempel 'Linux er da kun for tal-nørder', 'Linux er til -->
-<!-- programmører. Vi andre bruger Word', Linux er lige så gammeldags -->
-<!-- som fra før vi fik Windows. Alt foregår med at taste kommandoer ind'.  -->
+<!-- Citater, for eksempel 'Linux er da kun for tal-nÃ¸rder', 'Linux er til -->
+<!-- programmÃ¸rer. Vi andre bruger Word', Linux er lige sÃ¥ gammeldags -->
+<!-- som fra fÃ¸r vi fik Windows. Alt foregÃ¥r med at taste kommandoer ind'.  -->
 
 <para>
 Denne bog henvender sig til studerende og forskere som er nysgerrige
-på Linux - og skal bruge en introduktion til at komme godt i
-gang. Bogen kommer omkring de værktøjer man typisk bruger som
-studerende, og viser af Linux i de fleste tilfælde helt kan erstatte
+pÃ¥ Linux - og skal bruge en introduktion til at komme godt i
+gang. Bogen kommer omkring de vÃ¦rktÃ¸jer man typisk bruger som
+studerende, og viser af Linux i de fleste tilfÃ¦lde helt kan erstatte
 Windows og MacOS til studiebrug.
 </para>
 
@@ -53,17 +53,17 @@ ets maskot. Tegnet af Larry Ewing.
 <title>Om forfatterne og bogens historie</title>
 
 <para>
-Om bogen forfatter: Janus Sandsgaard er 27 år gammel og læser
-Internationale Udviklingsstudier og Teksam på RUC. Har brugt Linux på
+Om bogen forfatter: Janus Sandsgaard er 27 Ã¥r gammel og lÃ¦ser
+Internationale Udviklingsstudier og Teksam pÃ¥ RUC. Har brugt Linux pÃ¥
 sin skrivebordscomputer det meste af tiden siden 2002.
 </para>
 </sect1>
 
 <sect1 id="forsker-tak">
-<title>Tak for hjælpen</title>
+<title>Tak for hjÃ¦lpen</title>
 
 <para>
-Tak til Peter Toft og Donald J. Axel for at hjælpe mig i gang med det
+Tak til Peter Toft og Donald J. Axel for at hjÃ¦lpe mig i gang med det
 tekniske i at udgive denne bog.
 </para>
 

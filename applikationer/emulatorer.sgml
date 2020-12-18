@@ -7,13 +7,13 @@
 <indexterm><primary>Emulator</primary><secondary>SCO</secondary></indexterm>
 
 <para>
-En emulator er et program, som gør det muligt at afvikle programmer
+En emulator er et program, som gÃ¸r det muligt at afvikle programmer
 skrevet til en anden computer eller styresystem. Vi vil i dette afsnit 
-se på en række forskellige emulatorer, som du kan benytte under Linux.
+se pÃ¥ en rÃ¦kke forskellige emulatorer, som du kan benytte under Linux.
 </para>
 
 <para>
-Med hensyn til emulatorer kan Linux køre SCO-programmer
+Med hensyn til emulatorer kan Linux kÃ¸re SCO-programmer
 (SCO er en kommerciel Unix-variant) gennem det, der hedder iBCS biblioteket
 (Intel Binary Code Standard). Dette giver adgang til en del ekstra
 kommercielle database-programmer.
@@ -21,80 +21,80 @@ kommercielle database-programmer.
 
 <para>
 Har du en kraftig (gerne 128 Mb RAM) og hurtig PC (gerne mere end 266
-MHz Pentium II), kan du <emphasis>købe</emphasis> VMware, som laver en
-emuleret processor og kobling til maskinen.  Så kan du køre dine
-Windows-programmer samtidig med, at du kører dine Linux-programmer -
-og principielt kan alle programmer køre. VMware kræver naturligvis, at
-Windows er installeret på computeren.  VMware findes på <ulink
+MHz Pentium II), kan du <emphasis>kÃ¸be</emphasis> VMware, som laver en
+emuleret processor og kobling til maskinen.  SÃ¥ kan du kÃ¸re dine
+Windows-programmer samtidig med, at du kÃ¸rer dine Linux-programmer -
+og principielt kan alle programmer kÃ¸re. VMware krÃ¦ver naturligvis, at
+Windows er installeret pÃ¥ computeren.  VMware findes pÃ¥ <ulink
 url="http://www.vmware.com">http://www.vmware.com</ulink>
 </para>
 
 
 <para>
-Et alternativ er <command>win4lin</command>, som også er på vej
-frem. Den kan købes fra <ulink
+Et alternativ er <command>win4lin</command>, som ogsÃ¥ er pÃ¥ vej
+frem. Den kan kÃ¸bes fra <ulink
 url="http://www.netraverse.com">http://www.netraverse.com</ulink>.
-Win4lin kræver umiddelbart langt færre ressourcer end VMware, men har
-også et par begrænsninger, såsom at kerne 2.4 ikke understøttes, der
+Win4lin krÃ¦ver umiddelbart langt fÃ¦rre ressourcer end VMware, men har
+ogsÃ¥ et par begrÃ¦nsninger, sÃ¥som at kerne 2.4 ikke understÃ¸ttes, der
 findes ingen "network neighborhood", man skal samba-mounte (eller nfs-mounte)
-netværksdrev, før man starter <command>win4lin</command>, og i
+netvÃ¦rksdrev, fÃ¸r man starter <command>win4lin</command>, og i
 en tabel til <command>win4lin</command> angive, hvordan drevbogstaver
-afbildes. Det vil være noget i retning af: C: afbildes til
+afbildes. Det vil vÃ¦re noget i retning af: C: afbildes til
 <filename>/home/bruger/win</filename> M: afbildes til
 <filename>/nfs/server/directory</filename> etc. Hukommelse kan
-tildeles til Windows fra 20 Mb op til max. 64 Mb.  Der er også
-begrænsninger i den grafik, der kan understøttes.
+tildeles til Windows fra 20 Mb op til max. 64 Mb.  Der er ogsÃ¥
+begrÃ¦nsninger i den grafik, der kan understÃ¸ttes.
 </para>
 
 <para>
-Hvor VMware og win4lin er kommercielle pakker, så er et frit projekt
-<command>Plex86</command> på vej. Dog er det endnu ikke anvendeligt
+Hvor VMware og win4lin er kommercielle pakker, sÃ¥ er et frit projekt
+<command>Plex86</command> pÃ¥ vej. Dog er det endnu ikke anvendeligt
 og er ekstremt langsomt.
 </para>
 
 
 <figure id="fig-win4lin" float="1">
-<title>Windows kører under Linux via win4lin</title>
+<title>Windows kÃ¸rer under Linux via win4lin</title>
 <graphic fileref="win4lin.&magic;"  scale="40"></graphic>
 </figure>
 
 
 <sect1 id="vmware">
-<title>VMware - flere maskiner i én</title>
+<title>VMware - flere maskiner i Ã©n</title>
 <indexterm><primary>VMware</primary></indexterm>
 <para>
 Du kan med programmet VMware (<ulink
-url="http://vmware.com">http://vmware.com</ulink>) sætte din maskine
-op til at køre flere styresystemer samtidigt. Du kan hente en 30-dages
+url="http://vmware.com">http://vmware.com</ulink>) sÃ¦tte din maskine
+op til at kÃ¸re flere styresystemer samtidigt. Du kan hente en 30-dages
 licens til systemet hos <ulink
 url="http://vmware.com">http://vmware.com</ulink>, (og tilsyneladende
 forny den en del gange senere, ikke mindst hvis du har en
 *.mail ;). Samme sted findes en meget fyldig og logisk opdelt
 installationsvejledning, som, efter et par dages eksperimenter, oven i
-købet er til at forstå.
+kÃ¸bet er til at forstÃ¥.
 </para>
 
 <sect2 id="vmware-fordele">
 <title>Fordele ved virtuelle maskiner</title>
 
 <para>
-Med de virtuelle maskiner opnår du flere fordele.Samme hardware til
+Med de virtuelle maskiner opnÃ¥r du flere fordele.Samme hardware til
 alle styresystemer uanset antal. Jeg har en vane med at bruge
 udrangeret udstyr i en junkmaskine til at lege med, men det er ikke
-tilfredsstillende at gå fra f.eks. 850MHz PIII til 333 MHz PII. Mulighed
-for at suspendere maskiner uden at skulle gennem en boot næste gang de
-skal bruges.Muliged for at afteste netværks-programmer uden at skulle
+tilfredsstillende at gÃ¥ fra f.eks. 850MHz PIII til 333 MHz PII. Mulighed
+for at suspendere maskiner uden at skulle gennem en boot nÃ¦ste gang de
+skal bruges.Muliged for at afteste netvÃ¦rks-programmer uden at skulle
 investere en formue i hardware.Mulighed for at lege med nye
-distributioner uden at ødelægge den kørende server.  (Der skal nok
-være flere gode grunde, men disse var nok til at få mig til lommerne).
+distributioner uden at Ã¸delÃ¦gge den kÃ¸rende server.  (Der skal nok
+vÃ¦re flere gode grunde, men disse var nok til at fÃ¥ mig til lommerne).
 </para>
 
 <para>
-Selv om du kan sætte en server op i en virtuel maskine til permanent
-brug, skal du ikke gøre dette. Virtuelle maskiner er efter min mening
-kun velegnet i forbindelser med aftestning. Selv en ældre maskine med
-en installeret server (ikke virtuel) er bedre, og så er du også fri
-for at få opsætningen på denne maskine forstyrret.
+Selv om du kan sÃ¦tte en server op i en virtuel maskine til permanent
+brug, skal du ikke gÃ¸re dette. Virtuelle maskiner er efter min mening
+kun velegnet i forbindelser med aftestning. Selv en Ã¦ldre maskine med
+en installeret server (ikke virtuel) er bedre, og sÃ¥ er du ogsÃ¥ fri
+for at fÃ¥ opsÃ¦tningen pÃ¥ denne maskine forstyrret.
 </para>
 </sect2>
 
@@ -103,9 +103,9 @@ for at få opsætningen på denne maskine forstyrret.
 <title>Hardwarekrav</title>
 
 <para>
-Det kan stærkt anbefales at afprøve programmet for at se, om det kan
-hvad man ønsker, og om ens hardware er hurtig nok til at give et
-tilfredsstillende resultat. Ens processor bør efter min mening være
+Det kan stÃ¦rkt anbefales at afprÃ¸ve programmet for at se, om det kan
+hvad man Ã¸nsker, og om ens hardware er hurtig nok til at give et
+tilfredsstillende resultat. Ens processor bÃ¸r efter min mening vÃ¦re
 CPU >= 600 MHz, RAM >=128 Mb og harddisken skal have 2-4 Gb plads
 pr. virtuel maskine.
 </para>
@@ -113,39 +113,39 @@ pr. virtuel maskine.
 </sect2>
 
 <sect2 id="vmware-vaert">
-<title>Valg af værtssystemet</title>
+<title>Valg af vÃ¦rtssystemet</title>
 
 <para>
-Ideen med programmet er, at du først installerer dit HOST-styresystem
+Ideen med programmet er, at du fÃ¸rst installerer dit HOST-styresystem
 (Linux, NT4 eller Win2K), og derefter opretter en eller flere
 virtuelle maskiner under dette HOST-system, hvori du installerer andre
 (eller samme) styresystemer. Installerer du MS eller andre
-købe-styresystemer, skal du naturligvis have licens til dem, mere
+kÃ¸be-styresystemer, skal du naturligvis have licens til dem, mere
 virtuelt er det trods alt ikke.
 </para>
 
 <para>
-Det første valg du skal gennemtænke meget grundigt er, hvilket
-styresystem der skal være på maskinen (HOST).
+Det fÃ¸rste valg du skal gennemtÃ¦nke meget grundigt er, hvilket
+styresystem der skal vÃ¦re pÃ¥ maskinen (HOST).
 </para>
 
 <para>
-Det du skal lægge vægt på her er både hvad du normalt bruger din
-maskine til, og om al din hardware (også den kommende) er understøttet
-af styresystemet. Begge grunde fik mig til at vælge W2K som HOST, da
-jeg dels primært arbejder i Delphi, og dels har en hang til mystisk
+Det du skal lÃ¦gge vÃ¦gt pÃ¥ her er bÃ¥de hvad du normalt bruger din
+maskine til, og om al din hardware (ogsÃ¥ den kommende) er understÃ¸ttet
+af styresystemet. Begge grunde fik mig til at vÃ¦lge W2K som HOST, da
+jeg dels primÃ¦rt arbejder i Delphi, og dels har en hang til mystisk
 (ofte alt for dyr) hardware.
 </para>
 
 <para>
-Den næste overvejelse er hvilke styresystemer, der skal installeres
+Den nÃ¦ste overvejelse er hvilke styresystemer, der skal installeres
 som GUEST-systemer. Her er valget langt lettere, idet du kan have alt
-der vedrører en given virtuel maskine liggende samlet i en folder ( et
+der vedrÃ¸rer en given virtuel maskine liggende samlet i en folder ( et
 dir ), som blot kan slettes, hvis du valgte noget forkert. Du kan
-naturligvis også vælge at lade den virtuelle maskine som sådan
+naturligvis ogsÃ¥ vÃ¦lge at lade den virtuelle maskine som sÃ¥dan
 overleve, og blot installere noget andet forfra. Det du risikerer ved
-fejlvalg er således blot at opsamle unyttige erfaringer, men det kan
-jo også have en værdi.
+fejlvalg er sÃ¥ledes blot at opsamle unyttige erfaringer, men det kan
+jo ogsÃ¥ have en vÃ¦rdi.
 </para>
 </sect2>
 
@@ -153,29 +153,29 @@ jo også have en værdi.
 <title>Inden installationen</title>
 
 <para>
-Det er meget vigtigt, at du starter med at installere netværksdrivere
+Det er meget vigtigt, at du starter med at installere netvÃ¦rksdrivere
 i dit HOST-system umiddelbart efter, du har installeret VMware selv,
 og inden du begynder at installere virtuelle maskiner. Har du ikke
-dette på plads, vil du hurtigt løbe ind i problemer med at kommunikere
+dette pÃ¥ plads, vil du hurtigt lÃ¸be ind i problemer med at kommunikere
 mellem systemerne. Jeg valgte at installere driveren til
-Bridget-networking, hvilket senere giver adgang til at gøre de
-virtuelle maskiner offentligt tilgængelige. Du kan som alternativ
-vælge et lukket netværk, som alene giver adgang til at kommunikere
+Bridget-networking, hvilket senere giver adgang til at gÃ¸re de
+virtuelle maskiner offentligt tilgÃ¦ngelige. Du kan som alternativ
+vÃ¦lge et lukket netvÃ¦rk, som alene giver adgang til at kommunikere
 internt mellem HOST/GUEST-systemer.
 </para>
 
 <para>
-En anden ting, der skal være på plads er skærmens farvedybde. 16 og 24
+En anden ting, der skal vÃ¦re pÃ¥ plads er skÃ¦rmens farvedybde. 16 og 24
 bit fungerer ganske enkelt ikke. 8 bit giver hurtigere maskiner rent
 grafisk, mens 32 giver flottere udseende.
 </para>
 
 <para>
-Under W2K kan det være praktisk at tilpasse den indbyggede
-DHCP-servers adresseområde. Jeg har valgt at køre alt under 192.168.1.* og
+Under W2K kan det vÃ¦re praktisk at tilpasse den indbyggede
+DHCP-servers adresseomrÃ¥de. Jeg har valgt at kÃ¸re alt under 192.168.1.* og
 har derfor tilpasset filen
-<filename>C:\WINNT\System32\vmnetdhcp.conf</filename>, så der uddeles
-adresser i det område:
+<filename>C:\WINNT\System32\vmnetdhcp.conf</filename>, sÃ¥ der uddeles
+adresser i det omrÃ¥de:
 </para>
 
 <programlisting>
@@ -188,8 +188,8 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 </programlisting>
 
 <para>
-Er det en Windows-HOST, gør det heller ingen skade at køre en
-defragmentering på harddisken, så der kommer en sammenhæng i de
+Er det en Windows-HOST, gÃ¸r det heller ingen skade at kÃ¸re en
+defragmentering pÃ¥ harddisken, sÃ¥ der kommer en sammenhÃ¦ng i de
 datafiler, de virtuelle maskiner skal "leve" i.
 </para>
 </sect2>
@@ -197,14 +197,14 @@ datafiler, de virtuelle maskiner skal "leve" i.
 <sect2 id="vmware-deling">
 <title>Deling af filer mellem styresystemerne</title>
 <para>
-Installerer du Win9x på en maskine med NT/W2K som HOST, er
+Installerer du Win9x pÃ¥ en maskine med NT/W2K som HOST, er
 delingsmulighederne via en workgroup helt som mellem de to
-styresystemer på to uafhængige maskiner.
+styresystemer pÃ¥ to uafhÃ¦ngige maskiner.
 </para>
 
 <para>
-Har du Linux med i spil, skal du sætte samba op på den, og arbejde med
-filflytning fra Windows-siden. Altså:
+Har du Linux med i spil, skal du sÃ¦tte samba op pÃ¥ den, og arbejde med
+filflytning fra Windows-siden. AltsÃ¥:
 </para>
 
 <para>
@@ -216,46 +216,46 @@ kopiere til/fra samba-"drevene".
 <para>
 <emphasis>NT/W2K-HOST + Linux-GUEST:</emphasis>
 Her skal samba igen
-ind på Linux-maskinen, og du kan fra HOST'en hente og gemme filer på
-samba-"drevene". Det vil ikke være praktisk at lave en permanent
-mapning, da Windows-maskinen jo ikke kan finde den virtuelle samba før
+ind pÃ¥ Linux-maskinen, og du kan fra HOST'en hente og gemme filer pÃ¥
+samba-"drevene". Det vil ikke vÃ¦re praktisk at lave en permanent
+mapning, da Windows-maskinen jo ikke kan finde den virtuelle samba fÃ¸r
 den er sat i gang.
 </para>
 
 <para>
-Har du en selvstændig Linux-server, kan dens samba-"drev" bruges som
-fælles drev for både HOST- og GUEST-systemerne. Dette vil være den
-foretrukne løsning for de fleste med en Linux-server, da de filer, der
-ligger på serveren jo ikke er så udsat for at gå tabt ved et
+Har du en selvstÃ¦ndig Linux-server, kan dens samba-"drev" bruges som
+fÃ¦lles drev for bÃ¥de HOST- og GUEST-systemerne. Dette vil vÃ¦re den
+foretrukne lÃ¸sning for de fleste med en Linux-server, da de filer, der
+ligger pÃ¥ serveren jo ikke er sÃ¥ udsat for at gÃ¥ tabt ved et
 systemnedbrud.
 </para>
 
 <para>
 Der er andre muligheder for fildeling, men disse forekommer mig at
-være de mest enkle at håndtere, ikke mindst fordi de allerede er
+vÃ¦re de mest enkle at hÃ¥ndtere, ikke mindst fordi de allerede er
 implementeret mellem min Linux-server og W2K-arbejdspladser.
 </para>
 
 </sect2>
 
 <sect2 id="vmware-skaerm">
-<title>Skærmopløsning</title>
+<title>SkÃ¦rmoplÃ¸sning</title>
 <para>
-Dette emne er meget hardware-afhængigt. Jeg kører med et Matrox Marvel
+Dette emne er meget hardware-afhÃ¦ngigt. Jeg kÃ¸rer med et Matrox Marvel
 G400 TV-kort som har diverse forskellige muligheder for
-opløsninger. Mit valg har været at sætte værten op til 1152x864, mens
-gæsterne kun kører i 1024x768. Det giver plads til at vise gæsterne
-i (virtuel) fuld skærm, og dog tillade overskrift og menulinje omkring
-dem. Matrox-kortet understøtter desuden virtuelle skærme, så hver af
-de virtuelle maskiner kan få sin egen skærm at brede sig i.
+oplÃ¸sninger. Mit valg har vÃ¦ret at sÃ¦tte vÃ¦rten op til 1152x864, mens
+gÃ¦sterne kun kÃ¸rer i 1024x768. Det giver plads til at vise gÃ¦sterne
+i (virtuel) fuld skÃ¦rm, og dog tillade overskrift og menulinje omkring
+dem. Matrox-kortet understÃ¸tter desuden virtuelle skÃ¦rme, sÃ¥ hver af
+de virtuelle maskiner kan fÃ¥ sin egen skÃ¦rm at brede sig i.
 </para>
 
 <para>
-Andre, nyere skærmkort tillader lignende løsninger.
+Andre, nyere skÃ¦rmkort tillader lignende lÃ¸sninger.
 </para>
 
 <para>
-Der kan opstå lidt problemer med opdateringen af skærmene i de
+Der kan opstÃ¥ lidt problemer med opdateringen af skÃ¦rmene i de
 virtuelle maskiner, men jeg tilskriver dem mere Matrox-driveren end
 VMware.
 </para>
@@ -265,29 +265,29 @@ VMware.
 <title>Reboot/Power off/Suspend</title>
 <para>
 Det er kun i forbindelse med installationer, at man har behov for at
-"slukke" for den virtuelle maskine. Normalt vælger jeg blot at
+"slukke" for den virtuelle maskine. Normalt vÃ¦lger jeg blot at
 suspendere den. Det er ganske enkelt herligt at have en fuldt
-installeret, kørende SuSE/KDE/Konqueror oppe på under 5 sekunder med
-/etc vist med et hav af små ikoner. Det tager omtrent 4 minutter at
-lave en boot på min maskine (den har SCSI), så dén med at dual-boote
+installeret, kÃ¸rende SuSE/KDE/Konqueror oppe pÃ¥ under 5 sekunder med
+/etc vist med et hav af smÃ¥ ikoner. Det tager omtrent 4 minutter at
+lave en boot pÃ¥ min maskine (den har SCSI), sÃ¥ dÃ©n med at dual-boote
 dur ganske enkelt ikke i dagligt brug.
 </para>
 
 <para>
-CTRL+ALT+DEL fanges af værten, mens CTRL+ALT+INS oversættes til en
+CTRL+ALT+DEL fanges af vÃ¦rten, mens CTRL+ALT+INS oversÃ¦ttes til en
 lokal CTRL+ALT+DEL i den af de virtuelle maskiner der har fokus. En
-både sjov og logisk løsning, som man går fejl af en del gange i
+bÃ¥de sjov og logisk lÃ¸sning, som man gÃ¥r fejl af en del gange i
 starten.
 </para>
 
 <para>
 Med W2K som HOST giver CTRL+ALT+DEL i en virtuel maskine den
-sædvanlige logout-dialog, men selv ved valg af CANCEL i denne dialog
+sÃ¦dvanlige logout-dialog, men selv ved valg af CANCEL i denne dialog
 ryger tastetrykket CTRL+ALT+DEL til den virtuelle maskine, som
-reagerer på det. Det er det man sædvanligvis er interesseret i, så det
-kan vel knapt kaldes mere end en skønhedsfejl. Kører den virtuelle
-maskine X får man her en mulighed for at fortryde, kører den i en
-tekst-konsol, går den i gang med en "reboot -n" uden videre.
+reagerer pÃ¥ det. Det er det man sÃ¦dvanligvis er interesseret i, sÃ¥ det
+kan vel knapt kaldes mere end en skÃ¸nhedsfejl. KÃ¸rer den virtuelle
+maskine X fÃ¥r man her en mulighed for at fortryde, kÃ¸rer den i en
+tekst-konsol, gÃ¥r den i gang med en "reboot -n" uden videre.
 </para>
 </sect2>
 
@@ -298,22 +298,22 @@ VMware fanger fokus enten ved et bestemt tastetryk eller ved et
 klik med musen i den virtuelle maskines vindue. Jeg har valgt kun at
 bruge musen, det fungerer overbevisende. Man slipper fri igen med
 CTRL+ALT+ESC, hvorefter fokus er placeret i HOST-maskinen. Skiftes der
-til fuldskærmstilstand er det ligeledes CTRL+ALT+ESC der skal anvendes
+til fuldskÃ¦rmstilstand er det ligeledes CTRL+ALT+ESC der skal anvendes
 for at slippe fri.
 </para>
 
 <para>
 Der er mulighed for at bestemme, hvordan maskinens ressourcer skal
-fordeles mellem de kørende virtuelle maskiner. Normalt vil det være at
-foretrække med en høj prioritet til den maskine, der har fokus, og en
-lavere til de øvrige. Ressource-prioriteringen kan ændres under drift.
+fordeles mellem de kÃ¸rende virtuelle maskiner. Normalt vil det vÃ¦re at
+foretrÃ¦kke med en hÃ¸j prioritet til den maskine, der har fokus, og en
+lavere til de Ã¸vrige. Ressource-prioriteringen kan Ã¦ndres under drift.
 </para>
 
 <para>
-Der er mulighed for at tildele større eller mindre mængder RAM til de
-virtuelle maskiner. Denne mængde kan der kun ændres på, når den
-virtuelle maskine er helt slukket (ikke under suspend, de færreste
-styresystemer kan håndtere hot-swap-RAM:).
+Der er mulighed for at tildele stÃ¸rre eller mindre mÃ¦ngder RAM til de
+virtuelle maskiner. Denne mÃ¦ngde kan der kun Ã¦ndres pÃ¥, nÃ¥r den
+virtuelle maskine er helt slukket (ikke under suspend, de fÃ¦rreste
+styresystemer kan hÃ¥ndtere hot-swap-RAM:).
 </para>
 
 <para>
@@ -325,22 +325,22 @@ flere kopier.
 <sect2 id="vmware-flere">
 <title>Flere ens virtuelle maskiner</title>
 <para>
-Hvis du har fulgt rådet i starten af dette dokument om at installere
+Hvis du har fulgt rÃ¥det i starten af dette dokument om at installere
 hver virtuel maskine i sin egen folder (katalog), kan du endog meget
-hurtigt sætte en række ens virtuelle maskiner op. Start med at
-installere den første maskine. Luk den virtuelle maskine ned (ellers
-vil kopien starte med at køre tjek på disken). Kopiér folderen med
+hurtigt sÃ¦tte en rÃ¦kke ens virtuelle maskiner op. Start med at
+installere den fÃ¸rste maskine. Luk den virtuelle maskine ned (ellers
+vil kopien starte med at kÃ¸re tjek pÃ¥ disken). KopiÃ©r folderen med
 indhold til en ny folder. Ret sti og evt. filnavne i
 <filename>.vmx</filename>-filen vha. en simpel teksteditor.
 </para>
 
 <para>
-Nu har du fået to eller flere ens virtuelle maskiner, og kan blot
-starte dem fra en ende af. Du skal dog være opmærksom på, at fysiske
+Nu har du fÃ¥et to eller flere ens virtuelle maskiner, og kan blot
+starte dem fra en ende af. Du skal dog vÃ¦re opmÃ¦rksom pÃ¥, at fysiske
 enheder og COM-porte kan give konflikt ved start af flere virtuelle
-maskiner, som alle ønsker at starte med f.eks. drev A:
-"connected". VMware løser denne konflikt ved at sætte sådanne enheder
-til ikke at være forbundet ved boot. De kan derefter aktiveres efter
+maskiner, som alle Ã¸nsker at starte med f.eks. drev A:
+"connected". VMware lÃ¸ser denne konflikt ved at sÃ¦tte sÃ¥danne enheder
+til ikke at vÃ¦re forbundet ved boot. De kan derefter aktiveres efter
 behov under drift.
 </para>
 </sect2>
@@ -354,17 +354,17 @@ behov under drift.
 <indexterm><primary>Linux-programmer under Windows</primary></indexterm>
 <para>
 Det er rent faktisk muligt at afvikle virtuelle maskiner via VNC (se
-også <xref linkend="vnc"/>). Hvis HOST'en kører vncserver + en virtuel
+ogsÃ¥ <xref linkend="vnc"/>). Hvis HOST'en kÃ¸rer vncserver + en virtuel
 maskine, kan man bearbejde den virtuelle maskine via sin
 VNC-forbindelse. Det giver dog en del mere mening at starte vncserver
-på både HOST og den/de virtuelle maskiner, da "oversættelsen" fra
-virtuel til HOST til VNC er alt for sløv.
+pÃ¥ bÃ¥de HOST og den/de virtuelle maskiner, da "oversÃ¦ttelsen" fra
+virtuel til HOST til VNC er alt for slÃ¸v.
 </para>
 
 <para>
-Altså: Installér og start vncserver på alle de virtuelle
-maskiner. Kører den virtuelle maskine Linux, kan du uden videre
-minimere den, da VNC alligevel ikke bruger det viste skærmbillede.
+AltsÃ¥: InstallÃ©r og start vncserver pÃ¥ alle de virtuelle
+maskiner. KÃ¸rer den virtuelle maskine Linux, kan du uden videre
+minimere den, da VNC alligevel ikke bruger det viste skÃ¦rmbillede.
 </para>
 
 <para>
@@ -372,56 +372,56 @@ Brug vncviewer til at vise hver enkelt maskine.
 </para>
 
 <para>
-Dette dokument skives på en bærbar maskines tastatur en stille
-sommeraften på terrassen via VNC til min normale arbejdsplads, som
-for øvrigt kører to Win98 og en enkelt SuSE 7.0 i virtuelle
-maskiner. Linux'en kører minimeret på sin HOST, men i et andet
-VNC-view på den bærbare, mens min normale Linux-server blot for en
-ordens skyld kører i et tredie view.
+Dette dokument skives pÃ¥ en bÃ¦rbar maskines tastatur en stille
+sommeraften pÃ¥ terrassen via VNC til min normale arbejdsplads, som
+for Ã¸vrigt kÃ¸rer to Win98 og en enkelt SuSE 7.0 i virtuelle
+maskiner. Linux'en kÃ¸rer minimeret pÃ¥ sin HOST, men i et andet
+VNC-view pÃ¥ den bÃ¦rbare, mens min normale Linux-server blot for en
+ordens skyld kÃ¸rer i et tredie view.
 </para>
 
 <para>
-Alle maskiner kører med en tilfredsstillende hastighed. Faktisk er
-alle en del hurtigere at arbejde på, end hvis jeg havde arbejdet
-direkte på den bærbare.
+Alle maskiner kÃ¸rer med en tilfredsstillende hastighed. Faktisk er
+alle en del hurtigere at arbejde pÃ¥, end hvis jeg havde arbejdet
+direkte pÃ¥ den bÃ¦rbare.
 </para>
 </sect2>
 
 <sect2 id="vmware-vnc-problem">
-<title>Det største problem</title>
+<title>Det stÃ¸rste problem</title>
 <para>
-Det største problem ved virtuelle maskiner er, efter min mening, at
-finde rundt i dem. Man kan opnå en del ved at lave skrivebordet
-forskelligt, både i baggrundsfarve og placering af diverse
-paneler. (Her har jeg for første gang fundet en nyttig grund til at
+Det stÃ¸rste problem ved virtuelle maskiner er, efter min mening, at
+finde rundt i dem. Man kan opnÃ¥ en del ved at lave skrivebordet
+forskelligt, bÃ¥de i baggrundsfarve og placering af diverse
+paneler. (Her har jeg for fÃ¸rste gang fundet en nyttig grund til at
 skifte baggrundsfarve;)
 </para>
 
 <para>
-Vænner man sig til aldrig at slukke, men kun "suspend'e" de virtuelle
-maskiner er meget nået mht. utilsigtet afbrydelse.
+VÃ¦nner man sig til aldrig at slukke, men kun "suspend'e" de virtuelle
+maskiner er meget nÃ¥et mht. utilsigtet afbrydelse.
 </para>
 </sect2>
 
 <sect2 id="vmware-konklusion">
 <title>Konklusion</title>
 <para>
-VMware er et af de programmer, der på trods af mange års arbejde
-indenfor EDB-området, har fået mig til at hæve et øjenbryn i
-(blaseret) begejstring. For første gang siden mit første møde med ægte
-multitasking i OS/2, er der noget der rykker. Jeg har i mange år haft
+VMware er et af de programmer, der pÃ¥ trods af mange Ã¥rs arbejde
+indenfor EDB-omrÃ¥det, har fÃ¥et mig til at hÃ¦ve et Ã¸jenbryn i
+(blaseret) begejstring. For fÃ¸rste gang siden mit fÃ¸rste mÃ¸de med Ã¦gte
+multitasking i OS/2, er der noget der rykker. Jeg har i mange Ã¥r haft
 elektronisk omskiftning mellem fire maskiner til samme
-tastatur/skærm/mus, og er vant til at kunne skifte let mellem dem, men
+tastatur/skÃ¦rm/mus, og er vant til at kunne skifte let mellem dem, men
 fleksibiliteten i at kunne se alle samtidigt, og at kunne skifte
 mellem dem med et klik er virkelig et fremskridt.
 </para>
 
 <para>
-Det sker kun en sjælden gang, at min CPU arbejder 100%. Delingen af
+Det sker kun en sjÃ¦lden gang, at min CPU arbejder 100%. Delingen af
 processorkraften mellem flere maskiner er derfor ikke noget, der i
-større grad generer. Dette, sammenholdt med den virkning at alle
+stÃ¸rre grad generer. Dette, sammenholdt med den virkning at alle
 maskiner opdateres samtidigt og gratis hver gang min HOST-maskine
-ombygges eller udvides, gør programmet særdeles interessant. Selv om
+ombygges eller udvides, gÃ¸r programmet sÃ¦rdeles interessant. Selv om
 skattefar mod- og ufrivilligt sponsorerer to trediedele af mine
 nyanskaffelser er der jo trods alt den sidste trediedel at tage hensyn
 til.
@@ -437,30 +437,30 @@ til.
 <indexterm><primary>Emulator</primary><secondary>dosemu, FreeDOS</secondary></indexterm>
 
 <para>
-Mangler du specifikke DOS-programmer under Linux, kan du få en
+Mangler du specifikke DOS-programmer under Linux, kan du fÃ¥ en
 DOS-emulator (<command>dos</command> (konsol-orienteret) og
-<command>xdos</command> (X-baseret)), således at du under Linux kan
-køre DOS-programmer. Programmet kan sågar køre grafikprogrammer
+<command>xdos</command> (X-baseret)), sÃ¥ledes at du under Linux kan
+kÃ¸re DOS-programmer. Programmet kan sÃ¥gar kÃ¸re grafikprogrammer
 (f.eks. Windows 3.1) - dog ikke nyere Win32 programmer. Du kan
-f.eks. anvende DOS-emulatoren til at køre Gyldendals Røde Ordbøger.
+f.eks. anvende DOS-emulatoren til at kÃ¸re Gyldendals RÃ¸de OrdbÃ¸ger.
 </para>
 
 <para>
-DOS-emulatoren består egentlig af to dele. Den ene del gør det muligt
-at køre DOS-programmer under Linux, mens den anden del er selve
-styresystemet DOS. Der følger en DOS ved navn FreeDOS med, men du kan
-i princippet bruge din egen, f.eks. hvis du en gang har købt DOS og
-stadig har installationsdisketterne liggende. I det følgende vil vi
+DOS-emulatoren bestÃ¥r egentlig af to dele. Den ene del gÃ¸r det muligt
+at kÃ¸re DOS-programmer under Linux, mens den anden del er selve
+styresystemet DOS. Der fÃ¸lger en DOS ved navn FreeDOS med, men du kan
+i princippet bruge din egen, f.eks. hvis du en gang har kÃ¸bt DOS og
+stadig har installationsdisketterne liggende. I det fÃ¸lgende vil vi
 dog kun benytte FreeDOS. Begge dele er indeholdt i dosemu-pakken.
 </para>
 
 <para>
-Lad det være sagt med det samme: Den version af DOS-emulatoren, som
-følger med Red Hat virker <emphasis>ikke</emphasis>. Grunden er
+Lad det vÃ¦re sagt med det samme: Den version af DOS-emulatoren, som
+fÃ¸lger med Red Hat virker <emphasis>ikke</emphasis>. Grunden er
 den simple, at Red Hat har valgt at benytte den nyeste version. Men
 denne version er for udviklere, dvs. den er fuld af fejl og
-mangler. Derfor skal du først nedgradere dit system til den stabile
-version. Nedenfor ser du, hvordan du gør det:
+mangler. Derfor skal du fÃ¸rst nedgradere dit system til den stabile
+version. Nedenfor ser du, hvordan du gÃ¸r det:
 </para>
 
 <screen>
@@ -473,9 +473,9 @@ version. Nedenfor ser du, hvordan du gør det:
 <para>
 Filen <filename>dosemu-0.99.8-1.i386.rpm</filename> kan du hente fra <ulink
 url="http://www.dosemu.org/">http://www.dosemu.org/</ulink>.
-For at få DOS-emulatoren til at virke skal du have DOS installeret.
-Nedgraderer du som anvist ovenfor, kan du let få en gratis DOS (FreeDOS). Du
-skal blot omdøbe filen <filename>hdimage.first.rpmsave</filename> i
+For at fÃ¥ DOS-emulatoren til at virke skal du have DOS installeret.
+Nedgraderer du som anvist ovenfor, kan du let fÃ¥ en gratis DOS (FreeDOS). Du
+skal blot omdÃ¸be filen <filename>hdimage.first.rpmsave</filename> i
 kataloget <filename>/var/lib/dosemu</filename> til
 <filename>hdimage.first</filename>.
 </para>
@@ -487,10 +487,10 @@ kataloget <filename>/var/lib/dosemu</filename> til
 
 <para>
 Eftersom du under DOS kan rode direkte med hardware (som du ikke kan som
-almindelig bruger under Linux), kan kun root køre
-DOS-emulatoren. Hvis du ønsker at ændre dette, skal du rette i filen
+almindelig bruger under Linux), kan kun root kÃ¸re
+DOS-emulatoren. Hvis du Ã¸nsker at Ã¦ndre dette, skal du rette i filen
 <filename>/etc/dosemu.users</filename>. Den RPM-fil, som du har
-installeret som anvist ovenfor, tillader at alle bruger den, så du skal
+installeret som anvist ovenfor, tillader at alle bruger den, sÃ¥ du skal
 ikke rette noget.
 </para>
 
@@ -499,7 +499,7 @@ Under en standard-installation af dosemu-pakken oprettes et billede
 af en harddisk. Billedet emulerer C:-drevet. Dette billede finder du
 (under Red Hat 6.0) som
 <filename>/var/lib/dosemu/hdimage.first</filename>. Det er let at
-hente og gemme filer på dette billede fra Linux. Du skal blot føje
+hente og gemme filer pÃ¥ dette billede fra Linux. Du skal blot fÃ¸je
 linjen
 <programlisting>drive g:  file="/var/lib/dosemu/hdimage" offset=8832</programlisting>
 til <filename>/etc/mtools.conf</filename>, og nu
@@ -509,7 +509,7 @@ kan du bruge <command>mcopy</command>, <command>mdir</command> osv.
 <para>
 Vil du vide mere om DOS-emulatoren, er <ulink
 url="http://www.dosemu.org">http://www.dosemu.org</ulink> et godt sted 
-at begynde. FreeDOS finder du på <ulink
+at begynde. FreeDOS finder du pÃ¥ <ulink
 url="http://www.freedos.org">http://www.freedos.org</ulink>
 </para>
 
@@ -521,46 +521,46 @@ url="http://www.freedos.org">http://www.freedos.org</ulink>
 
 <!-- Skrevet af Mikkel Maastrup -->
 <sect1 id="WINE">
-<title>Kør Windows-programmer med WINE</title>
+<title>KÃ¸r Windows-programmer med WINE</title>
 <indexterm><primary>Wine</primary></indexterm>
 <para>
-WINE står for "Wine Is Not an Emulator" og det er et program, som
-tillader dig at køre MS-DOS- og Windows-programmer under X på enhver
+WINE stÃ¥r for "Wine Is Not an Emulator" og det er et program, som
+tillader dig at kÃ¸re MS-DOS- og Windows-programmer under X pÃ¥ enhver
 Linux-distribution (og andre UNIX-systemer som f.eks. FreeBSD og
-Solaris). Der er endda nogle som er gået i gang med at portere det til
+Solaris). Der er endda nogle som er gÃ¥et i gang med at portere det til
 endnu flere operativsystemer som f.eks. BeOS. Som navnet siger er
-WINE ikke en emulator og kan derfor kun køre på de Intel x86-baserede
-computere (altså ikke på Linux-systemer til f.eks. Macintosh). Mange
-hundrede programmører har sørget for at WINE er blevet til. WINE
-sørger får at Windows-programmerne virker som om de var lavet til
-Linux. Man kan altså f.eks. klippe/klistre mellem et program der
-bliver kørt af WINE og så et "normalt" Linux program. WINE er skrevet
-i programmeringssproget C og har en frit tilgængelig kildetekst (som så
-meget andet Linux-software), og det gør bl.a. at alle kan hjælpe til
+WINE ikke en emulator og kan derfor kun kÃ¸re pÃ¥ de Intel x86-baserede
+computere (altsÃ¥ ikke pÃ¥ Linux-systemer til f.eks. Macintosh). Mange
+hundrede programmÃ¸rer har sÃ¸rget for at WINE er blevet til. WINE
+sÃ¸rger fÃ¥r at Windows-programmerne virker som om de var lavet til
+Linux. Man kan altsÃ¥ f.eks. klippe/klistre mellem et program der
+bliver kÃ¸rt af WINE og sÃ¥ et "normalt" Linux program. WINE er skrevet
+i programmeringssproget C og har en frit tilgÃ¦ngelig kildetekst (som sÃ¥
+meget andet Linux-software), og det gÃ¸r bl.a. at alle kan hjÃ¦lpe til
 med at udvide og rette i programmet.
 </para>
 
 <para>
-WINE kan faktisk køre
-Windows-programmer på Linux uden at have Windows installeret på
-computeren. Hvis man har Windows vil WINE dog være i stand til benytte
-originale systemfiler og dermed give bedre ydelse. Med WINE følger der
-også noget som kaldes Winelib hvilket gør at man kan kompilere sin
-Windows-specifikke kildetekst til Linux. Altså, hvis man har lavet et
-Windows-program og har kildeteksten, så kan man altså bare oversætte
-programmet med en C-oversætter til Linux i stedet for med en til Windows (så
-programmet dermed også virker til Linux). Det er der nogle store
+WINE kan faktisk kÃ¸re
+Windows-programmer pÃ¥ Linux uden at have Windows installeret pÃ¥
+computeren. Hvis man har Windows vil WINE dog vÃ¦re i stand til benytte
+originale systemfiler og dermed give bedre ydelse. Med WINE fÃ¸lger der
+ogsÃ¥ noget som kaldes Winelib hvilket gÃ¸r at man kan kompilere sin
+Windows-specifikke kildetekst til Linux. AltsÃ¥, hvis man har lavet et
+Windows-program og har kildeteksten, sÃ¥ kan man altsÃ¥ bare oversÃ¦tte
+programmet med en C-oversÃ¦tter til Linux i stedet for med en til Windows (sÃ¥
+programmet dermed ogsÃ¥ virker til Linux). Det er der nogle store
 firmaer der har gjort, bl.a. Corel. Alle Corels Linux-produkter
-benyttede sig altså af WINE, og det gør de vist stadig. Det er dog
-ikke perfekt så der skal ofte ekstra arbejde til at tilpasse
-programmet før det kan lade gøre.
+benyttede sig altsÃ¥ af WINE, og det gÃ¸r de vist stadig. Det er dog
+ikke perfekt sÃ¥ der skal ofte ekstra arbejde til at tilpasse
+programmet fÃ¸r det kan lade gÃ¸re.
 </para>
 
 <para>
-Wine projektet er efterhånden nået rigtigt langt med at emulere windows,
-dette gør sig netop på spilområden gældende ved at der efterhånden er en
-hel del spil der kan køres under Wine, der er samlet en lille succesliste
-på: <ulink url="http://www.3ddownloads.com/index.php3?directory=/linuxgames/">http://www.3ddownloads.com/index.php3?directory=/linuxgames/</ulink>
+Wine projektet er efterhÃ¥nden nÃ¥et rigtigt langt med at emulere windows,
+dette gÃ¸r sig netop pÃ¥ spilomrÃ¥den gÃ¦ldende ved at der efterhÃ¥nden er en
+hel del spil der kan kÃ¸res under Wine, der er samlet en lille succesliste
+pÃ¥: <ulink url="http://www.3ddownloads.com/index.php3?directory=/linuxgames/">http://www.3ddownloads.com/index.php3?directory=/linuxgames/</ulink>
 Denne inkluderer blandt andet spil som StarCraft.
 </para>
 
@@ -569,36 +569,36 @@ Denne inkluderer blandt andet spil som StarCraft.
 <title>Hvordan virker WINE?</title>
 
 <para>
-Det sørger som sagt for at man kan køre Windows-programmer, og uden at
-have Windows på computeren. Inden vi fortsætter skal vi lige se lidt
-på de såkaldte API'er. API står for "Application Program
-Interface". Når et program kører, sender det såkaldte "API calls" til
-det styresystem, som det bliver kørt på. Et program kan altså gøre brug
+Det sÃ¸rger som sagt for at man kan kÃ¸re Windows-programmer, og uden at
+have Windows pÃ¥ computeren. Inden vi fortsÃ¦tter skal vi lige se lidt
+pÃ¥ de sÃ¥kaldte API'er. API stÃ¥r for "Application Program
+Interface". NÃ¥r et program kÃ¸rer, sender det sÃ¥kaldte "API calls" til
+det styresystem, som det bliver kÃ¸rt pÃ¥. Et program kan altsÃ¥ gÃ¸re brug
 af operativsystemets API'er. F.eks. kan
-et "API call" være at skrive en fil på en harddisk eller sende output til en
+et "API call" vÃ¦re at skrive en fil pÃ¥ en harddisk eller sende output til en
 printer. Hvert operativsystem har hver deres "API calls". Det som
-WINE gør, er at gå ind og ændre Windows API'erne til Linux API'er. Så
-når et Windows-program sender en "Windows-API" gennem WINE, så modtager
+WINE gÃ¸r, er at gÃ¥ ind og Ã¦ndre Windows API'erne til Linux API'er. SÃ¥
+nÃ¥r et Windows-program sender en "Windows-API" gennem WINE, sÃ¥ modtager
 Linux en "Linux-API" der har den samme funktion som det API'en burde
-have gjort på Windows. Programmet tror altså at det kører på Windows
+have gjort pÃ¥ Windows. Programmet tror altsÃ¥ at det kÃ¸rer pÃ¥ Windows
 og Linux tror det modtager informationer fra et Linux-program. Det
-som WINE, meget enkelt forklaret gør, er at den starter to
-programmer. Det ene er et specielt program der gør at man kan starte
+som WINE, meget enkelt forklaret gÃ¸r, er at den starter to
+programmer. Det ene er et specielt program der gÃ¸r at man kan starte
 Windows-programmet og det andet er et program som omdanner Windows-API'erne
-til Linux-API'er. Det er det WINE går ud på. Altså at omdanne
-Windows' API-sæt til Linux' API-sæt. Enhver som har prøvet WINE ved
-dog at det er langt fra alle programmer, som kan køre via det. Og
-hvordan kan det være? Det er fordi Windows ikke er Open Source
-software og derfor kan ingen bare gå hen og finde Windows-API'erne i
+til Linux-API'er. Det er det WINE gÃ¥r ud pÃ¥. AltsÃ¥ at omdanne
+Windows' API-sÃ¦t til Linux' API-sÃ¦t. Enhver som har prÃ¸vet WINE ved
+dog at det er langt fra alle programmer, som kan kÃ¸re via det. Og
+hvordan kan det vÃ¦re? Det er fordi Windows ikke er Open Source
+software og derfor kan ingen bare gÃ¥ hen og finde Windows-API'erne i
 kildeteksten. Dokumentationen til Win32 API-kald er heller ikke spor
-god og er blevet kritiseret for at være ikke-eksisterende, sparsom og
-endda vildledende. WINE-folkenes arbejde er derfor mest baseret på
-gæt. Win16 og DOS API-kald skiftes ikke længere ud. Derfor vil
+god og er blevet kritiseret for at vÃ¦re ikke-eksisterende, sparsom og
+endda vildledende. WINE-folkenes arbejde er derfor mest baseret pÃ¥
+gÃ¦t. Win16 og DOS API-kald skiftes ikke lÃ¦ngere ud. Derfor vil
 langt de fleste af gamle Windows-programmer virke via WINE. Win32-kald
-skifter dog stadigvæk og hvis Microsoft introducerer et nyt
-sæt API-kald eller ændrer på dem som findes i forvejen så skal dette
-jo også tilføjes. Derfor bliver WINE formodentlig aldrig færdig. Selv
-om det startede i 1993, så er der ikke kommet en stabil version
+skifter dog stadigvÃ¦k og hvis Microsoft introducerer et nyt
+sÃ¦t API-kald eller Ã¦ndrer pÃ¥ dem som findes i forvejen sÃ¥ skal dette
+jo ogsÃ¥ tilfÃ¸jes. Derfor bliver WINE formodentlig aldrig fÃ¦rdig. Selv
+om det startede i 1993, sÃ¥ er der ikke kommet en stabil version
 endnu.
 </para>
 </sect2>
@@ -607,19 +607,19 @@ endnu.
 <title>Lidt historie</title>
 
 <para>
-WINE-projektet startede i 1993 på Usenet newsgroup'en
+WINE-projektet startede i 1993 pÃ¥ Usenet newsgroup'en
 comp.os.linux. Det var en fyr der hed Eric Youngdale som startede
 det. I 1994 blev posten som koordinator for projektet overgivet fra
-Bob Amstadt til Alexandre Julliard (som stadig sidder på
+Bob Amstadt til Alexandre Julliard (som stadig sidder pÃ¥
 posten). Grunden til at WINE-projektet blev startet var (og er stadig)
-at langt det meste software bliver udviklet til Windows. Man ønskede
-altså at have adgang til den kæmpe mængde software som er blevet lavet
-til Windows og samtidig have glæde af Linux' fordele.
+at langt det meste software bliver udviklet til Windows. Man Ã¸nskede
+altsÃ¥ at have adgang til den kÃ¦mpe mÃ¦ngde software som er blevet lavet
+til Windows og samtidig have glÃ¦de af Linux' fordele.
 </para>
 
 <para>
-WINE er stadig ikke færdig, så det er ikke alle programmer som kan
-køre via WINE. De fleste ældre programmer burde dog virke.
+WINE er stadig ikke fÃ¦rdig, sÃ¥ det er ikke alle programmer som kan
+kÃ¸re via WINE. De fleste Ã¦ldre programmer burde dog virke.
 </para>
 </sect2>
 
@@ -629,77 +629,77 @@ køre via WINE. De fleste ældre programmer burde dog virke.
 <para>
 For at installere WINE, har jeg valgt at bruge WINE Preview 3 fra
 firmaet Codeweavers. Dette er en helt normal WINE-udgave som blot er
-blevet pakket fint ind, så den nu har grafisk installation og
-opsætning.
+blevet pakket fint ind, sÃ¥ den nu har grafisk installation og
+opsÃ¦tning.
 </para>
 
 <para>
-Codeweavers WINE findes kun som .rpm-fil (på <ulink
+Codeweavers WINE findes kun som .rpm-fil (pÃ¥ <ulink
 url="ftp://ftp.codeweavers.com/pub/crossover/office/source/wine.tgz">ftp://ftp.codeweavers.com/pub/crossover/office/source/wine.tgz</ulink>). Hvis
 du bruger RedHat, Mandrake og SuSE (samt en del flere) kan du
-bruge denne udgave af WINE. Hvis du kører med en
-"ikke-rpm"-distribution, som f.eks. Debian, kan du prøve at se på
+bruge denne udgave af WINE. Hvis du kÃ¸rer med en
+"ikke-rpm"-distribution, som f.eks. Debian, kan du prÃ¸ve at se pÃ¥
 <ulink url="http://www.winehq.com">http://www.winehq.com</ulink> efter
 en Debian-version af WINE.
 </para>
 
 <para>
-Når du installerer Codeweavers WINE så burde den kunne bruge tidligere
-WINE-opsætninger og installerede Windows-programmer. Jeg er dog
-ikke sikker på om det går lige godt hver gang, selvom der indtil
-videre ikke har været nogle problemer for mig (man ved jo aldrig hvad
-der kan ske). Derfor bør du passe ekstra godt på når du installerer
+NÃ¥r du installerer Codeweavers WINE sÃ¥ burde den kunne bruge tidligere
+WINE-opsÃ¦tninger og installerede Windows-programmer. Jeg er dog
+ikke sikker pÃ¥ om det gÃ¥r lige godt hver gang, selvom der indtil
+videre ikke har vÃ¦ret nogle problemer for mig (man ved jo aldrig hvad
+der kan ske). Derfor bÃ¸r du passe ekstra godt pÃ¥ nÃ¥r du installerer
 (Codeweavers) WINE, hvis du i forvejen bruger WINE. Du kan risikere at
 bruge WINE uden at vide det. F.eks. bruger mange (hvis ikke alle) af
 Corels Linux-programmer WINE. Som sagt, er dette blot en vejledning som
-følger den metode som jeg brugte. Jeg tager derfor intet ansvar hvis
-noget skulle gå galt på din maskine. Der har dog ikke været nogle
+fÃ¸lger den metode som jeg brugte. Jeg tager derfor intet ansvar hvis
+noget skulle gÃ¥ galt pÃ¥ din maskine. Der har dog ikke vÃ¦ret nogle
 store problemer for mig indtil videre. Jeg vil i denne
-installationsvejledning fortælle hvordan du kan installere WINE. Jeg
+installationsvejledning fortÃ¦lle hvordan du kan installere WINE. Jeg
 antager at du ikke tidligere har brugt WINE, at du er logget ind som
 brugeren tyge (dette navn skal du bare erstatte med dit eget
 brugernavn), at du bruger en ".rpm-baseret" distribution og at du ikke
-har en Windows-partition på din computer. 
+har en Windows-partition pÃ¥ din computer. 
 </para>
 
 <para>
-Jeg har lavet denne vejledning på en Mandrake 8.0-distribution,
-så hvis du bruger en anden distribution end den, kan der godt være
-nogle ting som er lidt anderledes. Det skal jeg dog nok gøre dig
-opmærksom på, når det kommer.
+Jeg har lavet denne vejledning pÃ¥ en Mandrake 8.0-distribution,
+sÃ¥ hvis du bruger en anden distribution end den, kan der godt vÃ¦re
+nogle ting som er lidt anderledes. Det skal jeg dog nok gÃ¸re dig
+opmÃ¦rksom pÃ¥, nÃ¥r det kommer.
 </para>
 
 <sect3 id="wine-installation-krav">
-<title>Hvad kræver WINE af computeren?</title>
+<title>Hvad krÃ¦ver WINE af computeren?</title>
 
 <para>
-For at køre WINE skal du som minimum have en computer med en
-386-processor. Det er som sagt kun muligt at køre WINE på Intel
-x86-processorer (altså normale PC'er) og dermed IKKE på computere som
+For at kÃ¸re WINE skal du som minimum have en computer med en
+386-processor. Det er som sagt kun muligt at kÃ¸re WINE pÃ¥ Intel
+x86-processorer (altsÃ¥ normale PC'er) og dermed IKKE pÃ¥ computere som
 Macintosh.
 </para>
 
 <para>
 Et UNIX-kompatibelt operativsystem som f.eks. Linux, FreeBSD, Solaris x86. Dog
-skal man huske på at Codeweavers WINE kun kommer som .rpm-fil.
-Minimum 16 Mb ram. For virkelig at få noget ud af det, anbefales
+skal man huske pÃ¥ at Codeweavers WINE kun kommer som .rpm-fil.
+Minimum 16 Mb ram. For virkelig at fÃ¥ noget ud af det, anbefales
 minimum 64 Mb ram.
 </para>
 
 <para>
 Et X11 Window System (f.eks. XFree86). Hvis du benytter andet end
-XFree86 kan det være lidt problematisk. Hvis det er tilfældet så se på
+XFree86 kan det vÃ¦re lidt problematisk. Hvis det er tilfÃ¦ldet sÃ¥ se pÃ¥
 WINE's web-site.
 </para>
 </sect3>
 
 <sect3 id="wine-hent">
-<title>Få fat på programmet</title>
+<title>FÃ¥ fat pÃ¥ programmet</title>
 
 <para>
-På <ulink url="http://www.codeweavers.com/technology/wine/download.php">http://www.codeweavers.com/technology/wine/download.php</ulink> henter du
-pakken med WINE Preview 3 (den er på ca. 12 Mb. Altså den der hedder
-"Installable Package") og lægger den ind i tyges hjemmekatalog
+PÃ¥ <ulink url="http://www.codeweavers.com/technology/wine/download.php">http://www.codeweavers.com/technology/wine/download.php</ulink> henter du
+pakken med WINE Preview 3 (den er pÃ¥ ca. 12 Mb. AltsÃ¥ den der hedder
+"Installable Package") og lÃ¦gger den ind i tyges hjemmekatalog
 (/home/tyge).
 </para>
 </sect3>
@@ -707,31 +707,31 @@ pakken med WINE Preview 3 (den er på ca. 12 Mb. Altså den der hedder
 <sect3 id="wine-i-forvejen">
 <title>Er der WINE i forvejen?</title>
 <para>
-Først skal du finde ud af om der i forvejen ligger en version af WINE
-på din maskine. Det kan der godt gøre selv om du ikke ved det, for
+FÃ¸rst skal du finde ud af om der i forvejen ligger en version af WINE
+pÃ¥ din maskine. Det kan der godt gÃ¸re selv om du ikke ved det, for
 nogle distributioner installerer det automatisk sammen med alt det
 andet software. For at finde ud af det, skal du skrive <command>rpm -qa
-| grep wine</command> (evt. også <command>rpm -qa | grep
+| grep wine</command> (evt. ogsÃ¥ <command>rpm -qa | grep
 WINE</command>) i et terminalvindue. Hvis der er installeret en
-version af WINE i forvejen bør du få et svar som minder lidt om det
+version af WINE i forvejen bÃ¸r du fÃ¥ et svar som minder lidt om det
 her: <literal>wine-20010305-1mdk</literal>. Det er kun hvis du har en
-Mandrake-distribution at der står "mdk" til sidst. Der kan være mere end én
-pakke, hvis du f.eks. også har en programmørudgave liggende. Hvis du
-har det, bør du dog overveje om det er værd at skifte WINE ud.
+Mandrake-distribution at der stÃ¥r "mdk" til sidst. Der kan vÃ¦re mere end Ã©n
+pakke, hvis du f.eks. ogsÃ¥ har en programmÃ¸rudgave liggende. Hvis du
+har det, bÃ¸r du dog overveje om det er vÃ¦rd at skifte WINE ud.
 </para>
 
 <para>
-WINE bliver opdateret utrolig tit og en version af WINE der følger med
-din distribution kan godt være lidt gammel. Hvis du støder ind i et
-problem med den version der ligger der i forvejen, så kan det nogle
+WINE bliver opdateret utrolig tit og en version af WINE der fÃ¸lger med
+din distribution kan godt vÃ¦re lidt gammel. Hvis du stÃ¸der ind i et
+problem med den version der ligger der i forvejen, sÃ¥ kan det nogle
 gange betale sig at opdatere WINE til den nyeste version. Hvis WINE
-derimod virker fint til det formål du skal bruge det til, så er der jo
+derimod virker fint til det formÃ¥l du skal bruge det til, sÃ¥ er der jo
 ingen grund til at fjerne det.
 </para>
 
 <para>
-Hvis der intet står på skærmen efter et stykke tid så har du ikke WINE
-installeret. Hvis det ikke er installeret så spring videre til
+Hvis der intet stÃ¥r pÃ¥ skÃ¦rmen efter et stykke tid sÃ¥ har du ikke WINE
+installeret. Hvis det ikke er installeret sÃ¥ spring videre til
 "Installation"-afsnittet.
 </para>
 </sect3>
@@ -739,68 +739,68 @@ installeret. Hvis det ikke er installeret så spring videre til
 <sect3 id="wine-afinstallation">
 <title>Afinstallering</title>
 <para>
-Lad os se nærmere på hvordan man afinstaller WINE. Det gøres ved at
-logge ind som root og åbne en xterm eller åbne en xterm som ens
-normale bruger og skrive su og trykke på enter-tasten og så skrive sit
+Lad os se nÃ¦rmere pÃ¥ hvordan man afinstaller WINE. Det gÃ¸res ved at
+logge ind som root og Ã¥bne en xterm eller Ã¥bne en xterm som ens
+normale bruger og skrive su og trykke pÃ¥ enter-tasten og sÃ¥ skrive sit
 root-kodeord.
 </para>
 
 <para>
-Derefter skriver du <command>rpm -e programnavnet-fra-før</command> (i
-mit tilfælde <command>rpm -e wine-20010305-1mdk</command>). Hvis du
-har mere end én WINE-pakke så gør du bare det samme igen ved at skrive
-<command>rpm -e navnet-på-det-andet-program</command>. Nu kan du så
+Derefter skriver du <command>rpm -e programnavnet-fra-fÃ¸r</command> (i
+mit tilfÃ¦lde <command>rpm -e wine-20010305-1mdk</command>). Hvis du
+har mere end Ã©n WINE-pakke sÃ¥ gÃ¸r du bare det samme igen ved at skrive
+<command>rpm -e navnet-pÃ¥-det-andet-program</command>. Nu kan du sÃ¥
 igen skrive <command>rpm -qa | grep wine</command> (og <command>rpm
--qa | grep WINE</command>) og hvis der ingen ting kommer frem på
-skærmen (udover en ny linje i konsollen) så er du WINE-fri.
+-qa | grep WINE</command>) og hvis der ingen ting kommer frem pÃ¥
+skÃ¦rmen (udover en ny linje i konsollen) sÃ¥ er du WINE-fri.
 </para>
 </sect3>
 
 <sect3 id="wine-ny-installation">
 <title>Installation af ny WINE</title>
 <para>
-Det første du skal gøre er at
-gå ind i mappen hvor WINE-pakken ligger med kommandoen <command>cd
-/home/tyge</command> (hvis du ikke længere har root-adgang så
-skriv først <command>su</command>, og derefter dit root-kodeord, i en xterm).
-Her skriver du så <command>rpm -i
+Det fÃ¸rste du skal gÃ¸re er at
+gÃ¥ ind i mappen hvor WINE-pakken ligger med kommandoen <command>cd
+/home/tyge</command> (hvis du ikke lÃ¦ngere har root-adgang sÃ¥
+skriv fÃ¸rst <command>su</command>, og derefter dit root-kodeord, i en xterm).
+Her skriver du sÃ¥ <command>rpm -i
 codeweavers-wine-20010305-1.i386.rpm</command>. </para>
 
 <para>
-Nu kan der ske to ting. Enten installerer den perfekt eller også
-fortæller den, at den mangler nogle programmer for at kunne
+Nu kan der ske to ting. Enten installerer den perfekt eller ogsÃ¥
+fortÃ¦ller den, at den mangler nogle programmer for at kunne
 installere. Den kan f.eks. skrive at den mangler programmet iTcl eller
-xmessage eller lignende. Det er så nødvendigt at skaffe pakkerne. Hvis
-du har Mandrake 8.0 så kan du bruge deres Software Manager eller du kan
-gå på internettet og finde dem. iTcl pakkerne kan du finde på
-CodeWeavers web-site. Hvis WINE skriver at du har brug for xmessage så
+xmessage eller lignende. Det er sÃ¥ nÃ¸dvendigt at skaffe pakkerne. Hvis
+du har Mandrake 8.0 sÃ¥ kan du bruge deres Software Manager eller du kan
+gÃ¥ pÃ¥ internettet og finde dem. iTcl pakkerne kan du finde pÃ¥
+CodeWeavers web-site. Hvis WINE skriver at du har brug for xmessage sÃ¥
 skal du installere pakken X11R6-contrib eller X11R6-contribs.
 </para>
 
 <para>
-Når det så er installeret skal du logge ud af root og logge ind som
-din normale WINE-bruger. Nu skal du så sætte WINE op. Det gøres via
+NÃ¥r det sÃ¥ er installeret skal du logge ud af root og logge ind som
+din normale WINE-bruger. Nu skal du sÃ¥ sÃ¦tte WINE op. Det gÃ¸res via
 WineSetup. WineSetup kan enten startes fra systemmenuen eller fra
-konsollen, det gør ingen forskel. Hvis du vil starte det fra konsollen
-skal du bare skrive winesetup i en xterm. Så kommer der et vindue frem
-hvor der er en tegning af Tux der prøver at åbne en vin. Her vælger du
-den øverste valgmulighed. Den der hedder
-<filename>~/.wine/config</filename> (new, writable). Tryk derefter på
+konsollen, det gÃ¸r ingen forskel. Hvis du vil starte det fra konsollen
+skal du bare skrive winesetup i en xterm. SÃ¥ kommer der et vindue frem
+hvor der er en tegning af Tux der prÃ¸ver at Ã¥bne en vin. Her vÃ¦lger du
+den Ã¸verste valgmulighed. Den der hedder
+<filename>~/.wine/config</filename> (new, writable). Tryk derefter pÃ¥
 "Next &gt;&gt;".
 </para>
 
 <para>
-Nu kommer en ny ting i WINE-opsætningsprocessen
-frem. Indstillingen af Windows-mappen. Her skal du bare vælge den
-mulighed hvor der står (Create a new windows directory:
-<filename>/home/tyge/.wine/fake_windows</filename>) være. Tryk
-derefter på "Next &gt;&gt;"
+Nu kommer en ny ting i WINE-opsÃ¦tningsprocessen
+frem. Indstillingen af Windows-mappen. Her skal du bare vÃ¦lge den
+mulighed hvor der stÃ¥r (Create a new windows directory:
+<filename>/home/tyge/.wine/fake_windows</filename>) vÃ¦re. Tryk
+derefter pÃ¥ "Next &gt;&gt;"
 </para>
 
 <para>
-Nu kommer der et nyt vindue op hvori du kan sætte WINE op. I det følgende
-gennemgås systematisk hvert punkt i den venstre side af
-opsætningsvinduet: </para>
+Nu kommer der et nyt vindue op hvori du kan sÃ¦tte WINE op. I det fÃ¸lgende
+gennemgÃ¥s systematisk hvert punkt i den venstre side af
+opsÃ¦tningsvinduet: </para>
 
 <sect4 id="wine-basic">
 <title>Basic</title>
@@ -809,27 +809,27 @@ opsætningsvinduet: </para>
 <listitem>
  <para>
 <emphasis>Look & Feel</emphasis>
-Vælg hvilket styresystem dine Windows-programmer skal have udseende
-efter. Du kan vælge mellem Windows 3.1, Windows 95 eller Windows 98.
+VÃ¦lg hvilket styresystem dine Windows-programmer skal have udseende
+efter. Du kan vÃ¦lge mellem Windows 3.1, Windows 95 eller Windows 98.
  </para>
 </listitem>
 
 <listitem> 
  <para>
   <emphasis>Window Mode</emphasis>
-  Her kan du vælge hvordan programmerne der bliver kørt med WINE skal
-  optræde på dit skrivebord. Vælg mellem tre indstillinger.
+  Her kan du vÃ¦lge hvordan programmerne der bliver kÃ¸rt med WINE skal
+  optrÃ¦de pÃ¥ dit skrivebord. VÃ¦lg mellem tre indstillinger.
  </para>
 
  <itemizedlist>
   <listitem>
    <para>
 <emphasis>Managed:</emphasis> De Windows-applikationer som bliver
-kørt, bliver mere integrerede i din X-opsætning, og kommer derfor til
+kÃ¸rt, bliver mere integrerede i din X-opsÃ¦tning, og kommer derfor til
 at se flottere og mere "Linux-agtige" ud. Nogle gange kan
-Windows-programmerne og X dog ikke helt finde ud af at køre rigtigt
-sammen, så nogle gange skaber det problemer, at køre med
-"managed". Problemer som man vil kunne undgå hvis man vælger en af de
+Windows-programmerne og X dog ikke helt finde ud af at kÃ¸re rigtigt
+sammen, sÃ¥ nogle gange skaber det problemer, at kÃ¸re med
+"managed". Problemer som man vil kunne undgÃ¥ hvis man vÃ¦lger en af de
 to andre indstillinger.
    </para>
   </listitem>
@@ -837,46 +837,46 @@ to andre indstillinger.
   <listitem>
    <para>
 <emphasis>Unmanaged:</emphasis> Nu bliver programmet ikke integreret i
-din X-opsætning og ser derfor ud som det ville have gjort under
-Windows. Her er der ingen problemer med at X kan få programmet til
-ikke at køre rigtigt og derfor vil programmer der ikke kan køre som
-managed, i nogle tilfælde godt køre som unmanaged. Hvis man vælger
-denne indstilling kan man godt køre programmerne som managed uden at
-skulle konfigurere WINE igen (læs senere i denne
-instruktionsvejledning). Dette virker ikke den modsatte vej. Altså
-hvis man har valgt managed kan man ikke køre programmet som unmanaged
+din X-opsÃ¦tning og ser derfor ud som det ville have gjort under
+Windows. Her er der ingen problemer med at X kan fÃ¥ programmet til
+ikke at kÃ¸re rigtigt og derfor vil programmer der ikke kan kÃ¸re som
+managed, i nogle tilfÃ¦lde godt kÃ¸re som unmanaged. Hvis man vÃ¦lger
+denne indstilling kan man godt kÃ¸re programmerne som managed uden at
+skulle konfigurere WINE igen (lÃ¦s senere i denne
+instruktionsvejledning). Dette virker ikke den modsatte vej. AltsÃ¥
+hvis man har valgt managed kan man ikke kÃ¸re programmet som unmanaged
 uden at skulle konfigurere WINE igen.
    </para>
   </listitem>
 
   <listitem>
    <para>
-<emphasis>Desktop:</emphasis> Her får du mulighed for at åbne dine
-Windows-programmer i noget som ligner et Windows skrivebord samt den opløsning
-"skrivebordet" skal være. Det skulle efter sigende være det
+<emphasis>Desktop:</emphasis> Her fÃ¥r du mulighed for at Ã¥bne dine
+Windows-programmer i noget som ligner et Windows skrivebord samt den oplÃ¸sning
+"skrivebordet" skal vÃ¦re. Det skulle efter sigende vÃ¦re det
 udseende som flest programmer virker med. Selve "skrivebordet" ser
-"managed" ud, mens programmet der kører i skrivebordet ser "unmanaged"
-ud. Hver gang du åbner en ny applikation, åbnes der også et nyt
-skrivebord. Nogle mennesker foretrækker denne indstilling. Jeg synes
-også at den er nyttig til tider, men dog synes jeg at programmerne
+"managed" ud, mens programmet der kÃ¸rer i skrivebordet ser "unmanaged"
+ud. Hver gang du Ã¥bner en ny applikation, Ã¥bnes der ogsÃ¥ et nyt
+skrivebord. Nogle mennesker foretrÃ¦kker denne indstilling. Jeg synes
+ogsÃ¥ at den er nyttig til tider, men dog synes jeg at programmerne
 generelt kommer til at fylde for meget hvis man ser dem i
-skrivebordstilstand og normalt virker programmer fint i både unmanaged og
+skrivebordstilstand og normalt virker programmer fint i bÃ¥de unmanaged og
 managed tilstand.
    </para>
   </listitem>
  </itemizedlist>
 
 <para>
-På <xref linkend="gozdesktop-fig"/>, <xref linkend="gozmanaged-fig"/> og
+PÃ¥ <xref linkend="gozdesktop-fig"/>, <xref linkend="gozmanaged-fig"/> og
 <xref linkend="gozunmanaged-fig"/>,  kan du se tre forskellige screenshots
-hvor jeg har prøvet at køre Windows-programmet Go!Zilla via WINE under
+hvor jeg har prÃ¸vet at kÃ¸re Windows-programmet Go!Zilla via WINE under
 managed, unmanaged og desktop 640x480.
 </para>
 
 <para>
-Normalt kan man bare stoppe her ved at trykke på "Finish"-knappen. Så
-burde det være klart til brug. Hvis noget går galt, du er nørdet af
-natur eller du bare gerne vil rode lidt mere med WINE, så læs videre.
+Normalt kan man bare stoppe her ved at trykke pÃ¥ "Finish"-knappen. SÃ¥
+burde det vÃ¦re klart til brug. Hvis noget gÃ¥r galt, du er nÃ¸rdet af
+natur eller du bare gerne vil rode lidt mere med WINE, sÃ¥ lÃ¦s videre.
 </para>
 </listitem>
 </itemizedlist>
@@ -907,17 +907,17 @@ natur eller du bare gerne vil rode lidt mere med WINE, så læs videre.
         eksempel kan du angive hvor dit cd-rom-drev ligger, hvor dit
         C:-drev ligger
 osv. F.eks. betyder denne linje: "A Floppy /mnt/floppy /dev/fd0" . A =
-Windows-drevbogstav. Floppy = type hardware. /mnt/floppy = hvor på
+Windows-drevbogstav. Floppy = type hardware. /mnt/floppy = hvor pÃ¥
 Linux drevet befinder sig. <filename>/dev/fd0</filename> = hardware-stien.
 Hvis du er i tvivl om hvorvidt dine hardware-stier er indstillet korrekt
-kan du åbne en konsol og skrive <command>emacs /etc/fstab</command>
-(du skal dog passe godt på ikke at ændre noget i denne fil, da den er
-ret vigtig). F.eks. var D:-drevet på min computer
+kan du Ã¥bne en konsol og skrive <command>emacs /etc/fstab</command>
+(du skal dog passe godt pÃ¥ ikke at Ã¦ndre noget i denne fil, da den er
+ret vigtig). F.eks. var D:-drevet pÃ¥ min computer
 (<filename>/mnt/cdrom</filename>) automatisk indstillet til at have
-hardware-adressen <filename>/dev/hdd</filename> og jeg skulle så selv
-ændre det til <filename></filename>/dev/cdrom. Dette gøres ved at
-trykke på linjen for det stk. hardware man ønsker og derefter trykke
-på knappen "Edit". I det vindue som kommer frem kan man så indstille
+hardware-adressen <filename>/dev/hdd</filename> og jeg skulle sÃ¥ selv
+Ã¦ndre det til <filename></filename>/dev/cdrom. Dette gÃ¸res ved at
+trykke pÃ¥ linjen for det stk. hardware man Ã¸nsker og derefter trykke
+pÃ¥ knappen "Edit". I det vindue som kommer frem kan man sÃ¥ indstille
 det stk. hardware man har valgt.
  </para>
 
@@ -933,7 +933,7 @@ det stk. hardware man har valgt.
 <listitem> 
  <para>
 <emphasis>Paths</emphasis>
-Her kan du bare se hvor dine falske Windows-mapper (altså de mapper
+Her kan du bare se hvor dine falske Windows-mapper (altsÃ¥ de mapper
 som WINE selv laver) bliver placeret.
  </para>
 </listitem>
@@ -942,19 +942,19 @@ som WINE selv laver) bliver placeret.
 <listitem> 
 <para>
 <emphasis>Look & Feel</emphasis>
-Her kan du vælge mellem fire indstillinger:
+Her kan du vÃ¦lge mellem fire indstillinger:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
 <emphasis>Use DGA</emphasis>
-Denne indstilling sørger for at det såkaldte DirectDraw arbejder bedre
-sammen med X og det kan derfor overtage hele skærmen og køre
+Denne indstilling sÃ¸rger for at det sÃ¥kaldte DirectDraw arbejder bedre
+sammen med X og det kan derfor overtage hele skÃ¦rmen og kÃ¸re
 programmerne i "full screen" ved maksimal hastighed. Dog har brugen af
-DGA også en mindre heldig side. Hvis WINE går ned (crasher) mens det
-bruger DGA så kan det ske at computeren fuldstændig standser og det
-bliver nødvendigt at skulle genstarte computeren for at få kontrol
+DGA ogsÃ¥ en mindre heldig side. Hvis WINE gÃ¥r ned (crasher) mens det
+bruger DGA sÃ¥ kan det ske at computeren fuldstÃ¦ndig standser og det
+bliver nÃ¸dvendigt at skulle genstarte computeren for at fÃ¥ kontrol
 over den igen.
  </para>
 </listitem>
@@ -962,8 +962,8 @@ over den igen.
 <listitem> 
  <para>
 <emphasis>Use X shared memory</emphasis>
-Denne indstilling tillader programmer, som bliver kørt i WINE, at køre
-hurtigere end de normalt ville gøre i X. Dog langt fra så hurtigt som
+Denne indstilling tillader programmer, som bliver kÃ¸rt i WINE, at kÃ¸re
+hurtigere end de normalt ville gÃ¸re i X. Dog langt fra sÃ¥ hurtigt som
 hvis de brugte DGA.
  </para>
 </listitem>
@@ -971,10 +971,10 @@ hvis de brugte DGA.
 <listitem> 
  <para>
 <emphasis>DX grab</emphasis>
-Hvis man ikke bruger DGA så sørger denne indstilling for at
-musemarkøren holder sig inde i WINE-vinduet. Hvis WINE crasher mens
-man kører med DX grab så standser computeren ligesom med DGA (her kan
-man dog benytte tastaturet og derved få lukket X).
+Hvis man ikke bruger DGA sÃ¥ sÃ¸rger denne indstilling for at
+musemarkÃ¸ren holder sig inde i WINE-vinduet. Hvis WINE crasher mens
+man kÃ¸rer med DX grab sÃ¥ standser computeren ligesom med DGA (her kan
+man dog benytte tastaturet og derved fÃ¥ lukket X).
  </para>
 </listitem>
 
@@ -987,16 +987,16 @@ man dog benytte tastaturet og derved få lukket X).
 
 <emphasis>Double-buffered desktop.</emphasis> Dette har kun betydning
 hvis du bruger komandoen <command>wine --desktop</command> til at
-starte dine WINE-programmer i stedet for bare at skrive wine.    Det
-bestemmer om der skal bruges det såkaldte "double-buffered visual."
-Det er noget som de fleste OpenGL-spil skal bruge for at køre
-rigtigt. Codeweavers WINE understøtter dog ikke OpenGL, så hvis der
-skal spilles 3D-spil via WINE (f.eks. Half-Life), så skal du prøve at
-se på den "rigtige" WINE-side.
+starte dine WINE-programmer i stedet for bare at skrive wine.  Â  Det
+bestemmer om der skal bruges det sÃ¥kaldte "double-buffered visual."
+Det er noget som de fleste OpenGL-spil skal bruge for at kÃ¸re
+rigtigt. Codeweavers WINE understÃ¸tter dog ikke OpenGL, sÃ¥ hvis der
+skal spilles 3D-spil via WINE (f.eks. Half-Life), sÃ¥ skal du prÃ¸ve at
+se pÃ¥ den "rigtige" WINE-side.
 </para>
 
 <para>
-Jeg har kun valgt at have Use DGA og Use X shared memory slået til,
+Jeg har kun valgt at have Use DGA og Use X shared memory slÃ¥et til,
 men det er lidt en smagssag.
 </para>
 </listitem>
@@ -1008,19 +1008,19 @@ men det er lidt en smagssag.
 <listitem> 
  <para>
 <emphasis>DLLs</emphasis>
-.DLL-filer er Windows' systemfiler. I denne menu kan du vælge
+.DLL-filer er Windows' systemfiler. I denne menu kan du vÃ¦lge
 hvordan WINE skal forholde sig til de systemfiler som det
-understøtter. Der er tre muligheder for at vise WINE hvilke
+understÃ¸tter. Der er tre muligheder for at vise WINE hvilke
 systemfiler der skal bruges fra de forskellige steder. Der er builtin,
-native og so. Hvis du ikke har Windows så bør alle filerne stå som
+native og so. Hvis du ikke har Windows sÃ¥ bÃ¸r alle filerne stÃ¥ som
 "builtin" bortset fra nogle specielle filer. Bl.a dem der hedder noget
-med "glide", bør stå som "so". Codeweavers WINE bør dog selv
-indstille dette korrekt. "Builtin" fortæller WINE at systemfilerne
-skal findes blandt WINEs "kunstige" .DLL-filer. Altså de systemfiler
-som følger med WINE. "So"-filer bruges til programmer som har de samme
-API calls under både Windows og Linux (som f.eks. Glide). Ved at vælge
+med "glide", bÃ¸r stÃ¥ som "so". Codeweavers WINE bÃ¸r dog selv
+indstille dette korrekt. "Builtin" fortÃ¦ller WINE at systemfilerne
+skal findes blandt WINEs "kunstige" .DLL-filer. AltsÃ¥ de systemfiler
+som fÃ¸lger med WINE. "So"-filer bruges til programmer som har de samme
+API calls under bÃ¥de Windows og Linux (som f.eks. Glide). Ved at vÃ¦lge
 at filerne skal findes "native" kan man (hvis man har en version af
-Windows installeret) få WINE til at bruge Windows' systemfiler. På
+Windows installeret) fÃ¥ WINE til at bruge Windows' systemfiler. PÃ¥
 computeren hvor denne HOWTO er lavet har jeg dog ikke installeret
 Windows og beskrivelsen af native-funktionen har jeg derfor valgt at
 udelade.
@@ -1030,16 +1030,16 @@ udelade.
 <listitem> 
  <para>
 <emphasis>Ports</emphasis>
-Her kan du indstille hardware-adresserne til dine porte bag på
-computeren. Disse porte burde være rigtigt indstillede og du bør
-derfor kun rette i dem hvis det ikke virker på din computer.
+Her kan du indstille hardware-adresserne til dine porte bag pÃ¥
+computeren. Disse porte burde vÃ¦re rigtigt indstillede og du bÃ¸r
+derfor kun rette i dem hvis det ikke virker pÃ¥ din computer.
  </para>
 </listitem>
 
 <listitem> 
  <para>
 <emphasis>Registry</emphasis>
-Her bør alle valgmulighederne bare være slået til. De handler om
+Her bÃ¸r alle valgmulighederne bare vÃ¦re slÃ¥et til. De handler om
 hvor WINE kan hente og skrive sine informationer fra og til.
  </para>
 </listitem>
@@ -1047,8 +1047,8 @@ hvor WINE kan hente og skrive sine informationer fra og til.
 <listitem> 
  <para>
 <emphasis>Finish</emphasis>
-Her kan du se hvordan din WINE-opsætningsfil kommer til at se ud.
-Så er der bare tilbage at trykke på "Finish"-knappen nede i højre hjørne.
+Her kan du se hvordan din WINE-opsÃ¦tningsfil kommer til at se ud.
+SÃ¥ er der bare tilbage at trykke pÃ¥ "Finish"-knappen nede i hÃ¸jre hjÃ¸rne.
  </para>
 </listitem>
 
@@ -1056,18 +1056,18 @@ Så er der bare tilbage at trykke på "Finish"-knappen nede i højre hjørne.
 </itemizedlist>
 
 <para>
-I denne vejledning valgte vi at bruge en personlig opsætningsfil
+I denne vejledning valgte vi at bruge en personlig opsÃ¦tningsfil
 og personlig WINE-mappe. Derfor skal du konfigurere WINE for hver
 bruger inden du kan benytte WINE, med den nye bruger.
 </para>
 
 <para>
-Når man skal åbne programmer med WINE kan man normalt bare skrive wine
-eksempel.exe i en xterm eller bare dobbeltklikke på ikonet i din
-filmanager. Det er dog ikke det eneste mulighed. Man kan ændre WINEs
-indstillinger for hvert enkelt program bare ved hjælp af simple
-kommandoer. Nedenunder vil jeg fortælle om nogle af de mest
-nødvendige.
+NÃ¥r man skal Ã¥bne programmer med WINE kan man normalt bare skrive wine
+eksempel.exe i en xterm eller bare dobbeltklikke pÃ¥ ikonet i din
+filmanager. Det er dog ikke det eneste mulighed. Man kan Ã¦ndre WINEs
+indstillinger for hvert enkelt program bare ved hjÃ¦lp af simple
+kommandoer. Nedenunder vil jeg fortÃ¦lle om nogle af de mest
+nÃ¸dvendige.
 </para>
 
 
@@ -1076,18 +1076,18 @@ nødvendige.
 </screen>
 
 <para>
-Bemærk, at der skal to minus-tegn foran "desktop".
+BemÃ¦rk, at der skal to minus-tegn foran "desktop".
 </para>
 
 <para>
-Her er kan du fortælle WINE at det skal åbne Windows-programmet i sit
-eget lille skrivebord. I stedet for YYYxZZZ skal du indsætte pixlerne
-for den størrelse du ønsker vinduet skal fylde. Det er dog ikke bare
-hvilke som helst tal, men skal være de normale
-skrivebordsstørrelser. F.eks. <command>wine --desktop 800x600
-eksempel.exe</command>. Dette er især smart hvis du vil køre programmer
-der normalt fylder hele skærmen. Du kan altså få et fuldskærms-program
-til at køre i et vindue, f.eks. hvis det normalt bruger en skærmopløsning på
+Her er kan du fortÃ¦lle WINE at det skal Ã¥bne Windows-programmet i sit
+eget lille skrivebord. I stedet for YYYxZZZ skal du indsÃ¦tte pixlerne
+for den stÃ¸rrelse du Ã¸nsker vinduet skal fylde. Det er dog ikke bare
+hvilke som helst tal, men skal vÃ¦re de normale
+skrivebordsstÃ¸rrelser. F.eks. <command>wine --desktop 800x600
+eksempel.exe</command>. Dette er isÃ¦r smart hvis du vil kÃ¸re programmer
+der normalt fylder hele skÃ¦rmen. Du kan altsÃ¥ fÃ¥ et fuldskÃ¦rms-program
+til at kÃ¸re i et vindue, f.eks. hvis det normalt bruger en skÃ¦rmoplÃ¸sning pÃ¥
 1024x768 pixels. </para>
 
 <screen>
@@ -1095,14 +1095,14 @@ til at køre i et vindue, f.eks. hvis det normalt bruger en skærmopløsning på
 </screen>
 
 <para>
-Her er kan du fortælle WINE at det skal integrere programmet bedre i
-din window-manager. Dette gælder selvfølgelig kun hvis du har valgt at
-WINE normalt skal åbne programmer "unmanaged."
+Her er kan du fortÃ¦lle WINE at det skal integrere programmet bedre i
+din window-manager. Dette gÃ¦lder selvfÃ¸lgelig kun hvis du har valgt at
+WINE normalt skal Ã¥bne programmer "unmanaged."
 </para>
 
 <para>
-Hvis du vil vide mere om hvordan man starter, installerer og kører
-programmer via WINE, så læs videre i næste afsnit.
+Hvis du vil vide mere om hvordan man starter, installerer og kÃ¸rer
+programmer via WINE, sÃ¥ lÃ¦s videre i nÃ¦ste afsnit.
 </para>
 </sect4>
 </sect3>
@@ -1112,179 +1112,179 @@ programmer via WINE, så læs videre i næste afsnit.
 <title>Installere programmer under WINE</title>
 <para>
 For at installere et program via WINE er der ikke mange ting der skal
-gøres (hvis det virker). Egentlig bør du bare kunne skrive <command>wine
-et-eller-andet-program</command> for at installere og køre det, men der er dog
-alligvel nogle små ting der skal/kan gøres ud over det.
+gÃ¸res (hvis det virker). Egentlig bÃ¸r du bare kunne skrive <command>wine
+et-eller-andet-program</command> for at installere og kÃ¸re det, men der er dog
+alligvel nogle smÃ¥ ting der skal/kan gÃ¸res ud over det.
 </para>
 
 <para> 
 Her vil jeg vise hvordan man installerer spillet Caesar III via
 WINE. Det sker gennem en 13-skridts installationsprocedure som
 egentlig kun har betydning hvis du ejer spillet Caesar III. Jeg har dog
-taget det med alligvel, så du kan se hvor meget WINE faktisk ligner det
+taget det med alligvel, sÃ¥ du kan se hvor meget WINE faktisk ligner det
 rigtige Windows.
 </para>
 
 <orderedlist>
 <listitem>
  <para>
-Det første du skal gøre er at lægge din Caesar III-cd-rom i cd-rom-drevet.
+Det fÃ¸rste du skal gÃ¸re er at lÃ¦gge din Caesar III-cd-rom i cd-rom-drevet.
  </para>
 </listitem>
 
 <listitem>
  <para>
- Så skal du åbne en xterm.
+ SÃ¥ skal du Ã¥bne en xterm.
  </para>
 </listitem>
 
 <listitem>
  <para>
- Montér dit cd-rom-drev ved at skrive <command>mount
- /mnt/cdrom</command> (dette er lavet på en Linux Mandrake-maskine så
- hvis du bruger en anden distribution skal du lige tage højde for at
- dit cd-rom-drev måske ligger i en anden mappe, f.eks. på SuSE).
+ MontÃ©r dit cd-rom-drev ved at skrive <command>mount
+ /mnt/cdrom</command> (dette er lavet pÃ¥ en Linux Mandrake-maskine sÃ¥
+ hvis du bruger en anden distribution skal du lige tage hÃ¸jde for at
+ dit cd-rom-drev mÃ¥ske ligger i en anden mappe, f.eks. pÃ¥ SuSE).
  </para>
 </listitem>
 
 <listitem>
  <para>
- Gå ind i cd-rom'en ved at skrive <command>cd /mnt/cdrom</command> og
- skriv så <command>wine SETUP.EXE</command>
+ GÃ¥ ind i cd-rom'en ved at skrive <command>cd /mnt/cdrom</command> og
+ skriv sÃ¥ <command>wine SETUP.EXE</command>
  </para>
 </listitem>
 
 <listitem>
  <para>
  Nu starter programmet med at vise et stort Sierra-logo og et lille
-vindue der indikerer hvor langt programmet er nået med at indlæse
+vindue der indikerer hvor langt programmet er nÃ¥et med at indlÃ¦se
 installations-proceduren.
  </para>
 </listitem>
 
 <listitem>
  <para>
- Herefter bliver hele skærmen sort, pånær en tekst i det øvre venstre
- hjørne, hvor der med hvide bogstaver står Caesar III. Så kommer der et
- nyt vindue frem. Det hedder "Welcome" og der står bare lidt
- tekst. Tryk på knappen "Next>".
+ Herefter bliver hele skÃ¦rmen sort, pÃ¥nÃ¦r en tekst i det Ã¸vre venstre
+ hjÃ¸rne, hvor der med hvide bogstaver stÃ¥rÂ Caesar III. SÃ¥ kommer der et
+ nyt vindue frem. Det hedder "Welcome" og der stÃ¥r bare lidt
+ tekst. Tryk pÃ¥ knappen "Next>".
  </para>
 </listitem>
 
 <listitem>
  <para>
  Nu kommer der et vindue frem som hedder "Setup Type". Her kan du
-vælge hvor mange af filerne, som skal ligge på computeren og hvor mange
-den skal hente fra cd-rom'en. Du kan vælge mellem tre forskellige
+vÃ¦lge hvor mange af filerne, som skal ligge pÃ¥ computeren og hvor mange
+den skal hente fra cd-rom'en. Du kan vÃ¦lge mellem tre forskellige
 muligheder:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-Full Install - Dette kræver 542 Mb fri diskplads.
+Full Install - Dette krÃ¦ver 542 Mb fri diskplads.
  </para>
 </listitem>
 <listitem>
  <para>
-Minimum Install - Dette kræver 150 Mb fri diskplads.
+Minimum Install - Dette krÃ¦ver 150 Mb fri diskplads.
  </para>
 </listitem>
 <listitem> 
  <para>
-Standard Install - Dette kræver 330 Mb fri diskplads.
+Standard Install - Dette krÃ¦ver 330 Mb fri diskplads.
  </para>
 </listitem>
 </itemizedlist>
 
 <para>
 Jeg synes at det er rarest med "Full Install", men det er jo lidt en
-smagssag. Vælg den type du gerne vil have og tryk så på knappen
+smagssag. VÃ¦lg den type du gerne vil have og tryk sÃ¥ pÃ¥ knappen
 "Next>".
 </para>
 </listitem>
 
 <listitem>
  <para>
- Så kommer der et vindue der hedder "Choose Destination". Der er
-lidt tekst og nedenunder er der en "kasse" hvori der står hvor
-Caesar III vil blive installeret. Her plejer der at stå
+ SÃ¥ kommer der et vindue der hedder "Choose Destination". Der er
+lidt tekst og nedenunder er der en "kasse" hvori der stÃ¥r hvor
+Caesar III vil blive installeret. Her plejer der at stÃ¥
 <filename>C:\SIERRA\Caesar3</filename>.
 </para>
 
 <para>
-Hvis du hellere vil installere det i en anden folder så tryk på
-knappen "Browse..." og vælg der hvor du gerne vil have det placeret
-istedet. Til sidst trykker du bare på knappen "Next >".
+Hvis du hellere vil installere det i en anden folder sÃ¥ tryk pÃ¥
+knappen "Browse..." og vÃ¦lg der hvor du gerne vil have det placeret
+istedet. Til sidst trykker du bare pÃ¥ knappen "Next >".
  </para>
 </listitem>
 
 <listitem>
  <para>
-Så går installationen i gang og du kan se nogle vinduer som viser
-hvor langt installationen er nået. Bagved dem er der flotte
-3D-billeder fra det gamle Rom og hvis du tænder for din højttalere kan
-du høre noget romer-musik.
+SÃ¥ gÃ¥r installationen i gang og du kan se nogle vinduer som viser
+hvor langt installationen er nÃ¥et. Bagved dem er der flotte
+3D-billeder fra det gamle Rom og hvis du tÃ¦nder for din hÃ¸jttalere kan
+du hÃ¸re noget romer-musik.
  </para>
 </listitem>
 
 <listitem>
  <para>
-Når filerne er installerede bliver skærmen igen sort med Caesar
-III-teksten i venstre hjørne. Så kommer der et vindue der hedder
-"Install". Her står lidt tekst og du skal bare trykke på knappen "Ok".
+NÃ¥r filerne er installerede bliver skÃ¦rmen igen sort medÂ Caesar
+III-teksten i venstre hjÃ¸rne. SÃ¥ kommer der et vindue der hedder
+"Install". Her stÃ¥r lidt tekst og du skal bare trykke pÃ¥ knappen "Ok".
  </para>
 </listitem>
 
 <listitem>
  <para>
-Der kommer så højst sandsynligt et vindue som også hedder
-"Install". Har står der at du ikke har DirectX installeret og der
-bliver spurgt om du vil installere det. Her skal du bare trykke på
+Der kommer sÃ¥ hÃ¸jst sandsynligt et vindue som ogsÃ¥ hedder
+"Install". Har stÃ¥r der at du ikke har DirectX installeret og der
+bliver spurgt om du vil installere det. Her skal du bare trykke pÃ¥
 knappen "Nej".
  </para>
 </listitem>
 
 <listitem>
  <para>
-Det næste vindue hedder "Display Read Me". Her kan du vælge at
-læse readme-filen for Caesar III. Jeg plejer dog bare at trykke på
+Det nÃ¦ste vindue hedder "Display Read Me". Her kan du vÃ¦lge at
+lÃ¦se readme-filen for Caesar III. Jeg plejer dog bare at trykke pÃ¥
 knappen "Nej".
  </para>
 </listitem>
 
 <listitem>
  <para>
- Det sidste vindue hedder "Setup Complete". Der står nogle få
- linjer tekst og du skal bare trykke på knappen "Finish".
+ Det sidste vindue hedder "Setup Complete". Der stÃ¥r nogle fÃ¥
+ linjer tekst og du skal bare trykke pÃ¥ knappen "Finish".
  </para>
 </listitem>
 </orderedlist>
 
 
 <para>
-Så er programmet installeret og nu skal vi se om det virker. Åbn en
+SÃ¥ er programmet installeret og nu skal vi se om det virker. Ã…bn en
 xterm og skriv mount /mnt/cdrom (hvis du nu har haft din computer
-slukket eller brugt andre cd-rom'er i mellemtiden (dette er lavet på
-en Linux Mandrake-maskine så hvis du bruger en anden distribution skal
-du lige tage højde for at dit cd-rom-drev måske ligger i en anden
-mappe, f.eks. som på SuSE)). Derefter cd
-/home/tyge/.wine/fake_windows/SIERRA/Caesar3. Så langt, så godt. Nu
+slukket eller brugt andre cd-rom'er i mellemtiden (dette er lavet pÃ¥
+en Linux Mandrake-maskine sÃ¥ hvis du bruger en anden distribution skal
+du lige tage hÃ¸jde for at dit cd-rom-drev mÃ¥ske ligger i en anden
+mappe, f.eks. som pÃ¥ SuSE)). Derefter cd
+/home/tyge/.wine/fake_windows/SIERRA/Caesar3. SÃ¥ langt, sÃ¥ godt. Nu
 er det lidt forskelligt hvordan du kan starte programmet alt efter
-hvilken skærmstørrelse du har. Som du læste tidligere kan du gøre
-forskellige ting. Hvis du har en skærmopløsning på 640x480 eller
-800x600 pixels, så skal du bare starte programmet ved at skrive wine
-c3.exe. Nu burde Caesar III starte i full screen. Hvis du til gengæld har
-en skærmopløsning større end det, skal du skrive enten wine --desktop
+hvilken skÃ¦rmstÃ¸rrelse du har. Som du lÃ¦ste tidligere kan du gÃ¸re
+forskellige ting. Hvis du har en skÃ¦rmoplÃ¸sning pÃ¥ 640x480 eller
+800x600 pixels, sÃ¥ skal du bare starte programmet ved at skrive wine
+c3.exe. Nu burde Caesar III starte i full screen. Hvis du til gengÃ¦ld har
+en skÃ¦rmoplÃ¸sning stÃ¸rre end det, skal du skrive enten wine --desktop
 640x480 c3.exe eller wine --desktop 800x600 c3.exe alt efter hvor stor
-en skærmstørrelse du gerne vil have det i. Så starter Caesar III i et
-WINE-skrivebord som har størrelse efter de to tal du skrev før
-(f.eks. 640x480). Hvis du er i tvivl om, hvad du skal vælge, så kan du
-jo bare prøve begge to (dog ikke på samme tid :-).
+en skÃ¦rmstÃ¸rrelse du gerne vil have det i. SÃ¥ starter Caesar III i et
+WINE-skrivebord som har stÃ¸rrelse efter de to tal du skrev fÃ¸r
+(f.eks. 640x480). Hvis du er i tvivl om, hvad du skal vÃ¦lge, sÃ¥ kan du
+jo bare prÃ¸ve begge to (dog ikke pÃ¥ samme tid :-).
 </para>
 
 <para>
-Her kunne denne vejledning vel godt ende, men det gør den ikke. For
+Her kunne denne vejledning vel godt ende, men det gÃ¸r den ikke. For
 hvem gider egentlig skrive
 </para>
 
@@ -1295,21 +1295,21 @@ hvem gider egentlig skrive
 </programlisting>
 
 <para>
-hver gang hvis der er en nemmere metode? Faktisk kan du gøre sådan at
-Caesar III starter præcis som du vil have det, bare ved at skrive
+hver gang hvis der er en nemmere metode? Faktisk kan du gÃ¸re sÃ¥dan at
+Caesar III starter prÃ¦cis som du vil have det, bare ved at skrive
 <command>caesar3</command> i en xterm. Det er dog ikke noget som WINE
-på forhånd har gjort, næh, det er noget vi selv skal til. Det vi skal
+pÃ¥ forhÃ¥nd har gjort, nÃ¦h, det er noget vi selv skal til. Det vi skal
 lave hedder et shell-script.
 </para>
 
 <para>
-Lad os sige, at vi står i vores hjemmekatalog
-<filename>/home/tyge</filename>. Det første du skal gøre er at åbne
+Lad os sige, at vi stÃ¥r i vores hjemmekatalog
+<filename>/home/tyge</filename>. Det fÃ¸rste du skal gÃ¸re er at Ã¥bne
 din foretrukne editor og lave en fil, som hedder
-<filename>caesar3</filename>. Hvis du er i tvivl, så åbn en xterm (og
-så sørg for at du står i din hjemmekatalog) og skriv så <command>emacs
-caesar3</command>. Så kommer editoren Emacs frem og har både lavet og
-åbnet filen caesar3. Nu skal du så indtaste følgende i filen:
+<filename>caesar3</filename>. Hvis du er i tvivl, sÃ¥ Ã¥bn en xterm (og
+sÃ¥ sÃ¸rg for at du stÃ¥r i din hjemmekatalog) og skriv sÃ¥ <command>emacs
+caesar3</command>. SÃ¥ kommer editoren Emacs frem og har bÃ¥de lavet og
+Ã¥bnet filen caesar3. Nu skal du sÃ¥ indtaste fÃ¸lgende i filen:
 </para>
 
 <programlisting>
@@ -1321,7 +1321,7 @@ wine --desktop 800x600 c3.exe
 </programlisting>
 
 <para>
-Forklaringen på hvad filen gør kommer her:
+Forklaringen pÃ¥ hvad filen gÃ¸r kommer her:
 </para>
 
 <para>
@@ -1330,61 +1330,61 @@ Forklaringen på hvad filen gør kommer her:
 
 <para>
 <command>echo "Starter Caesar III"</command> - Denne linje skriver
-"Starter Caesar III" i xterm'en når den starter. Den er egentlig
-ligegyldig men det giver en flot "effekt" og så ved du også at
+"Starter Caesar III" i xterm'en nÃ¥r den starter. Den er egentlig
+ligegyldig men det giver en flot "effekt" og sÃ¥ ved du ogsÃ¥ at
 shell-scriptet faktisk er i gang.
 </para>
 
 <para>
-<command>mount /mnt/cdrom</command> - Her fortæller du dit cd-rom-drev
-at Caesar III-cd'en er i dit cd-rom-drev (dette er lavet på en Linux
-Mandrake-maskine så hvis du bruger en anden distribution skal du lige
-tage højde for at dit cd-rom-drev måske ligger i en anden mappe,
-f.eks. som på SuSE).
+<command>mount /mnt/cdrom</command> - Her fortÃ¦ller du dit cd-rom-drev
+at Caesar III-cd'en er i dit cd-rom-drev (dette er lavet pÃ¥ en Linux
+Mandrake-maskine sÃ¥ hvis du bruger en anden distribution skal du lige
+tage hÃ¸jde for at dit cd-rom-drev mÃ¥ske ligger i en anden mappe,
+f.eks. som pÃ¥ SuSE).
 </para>
 
 <para>
 <command>cd /home/tyge/.wine/fake_windows/SIERRA/Caesar3</command>
-- Dette fortæller Linux at den skal gå ind i mappen
+- Dette fortÃ¦ller Linux at den skal gÃ¥ ind i mappen
 <filename>/home/tyge/.wine/fake_windows/SIERRA/Caesar3</filename>.
 </para>
 
 <para>
-Til sidst skal du indsætte den kode du bruger til at starte Caesar
-III. Hvis du bare plejer at skrive wine c3.exe, så skriv det. Jeg bruger
+Til sidst skal du indsÃ¦tte den kode du bruger til at starte Caesar
+III. Hvis du bare plejer at skrive wine c3.exe, sÃ¥ skriv det. Jeg bruger
 linjen <command>wine --desktop 800x600 c3.exe</command>
 </para>
 
 <para>
 Nu skal du bare gemme filen og lukke editoren. Hvis du bruger Emacs
-kan du gøre det hele via tastaturet. Du trykker
-først på "Ctrl"-tasten (og holder den nede) og derefter en gang på x (eller
-skrevet kort: Ctrl-x). Tryk så Ctrl-s. Giv så slip fra "Ctrl"-tasten. Nu er
-dokumentet gemt. Tryk så først Ctrl-x og derefter Ctrl-c Så har du
+kan du gÃ¸re det hele via tastaturet. Du trykker
+fÃ¸rst pÃ¥ "Ctrl"-tasten (og holder den nede) og derefter en gang pÃ¥ x (eller
+skrevet kort: Ctrl-x). Tryk sÃ¥ Ctrl-s. Giv sÃ¥ slip fra "Ctrl"-tasten. Nu er
+dokumentet gemt. Tryk sÃ¥ fÃ¸rst Ctrl-x og derefter Ctrl-c SÃ¥ har du
 lukket det.
 </para>
 
 <para>
 Nu skal du have aktiveret dit shell-script, for Linux kan ikke bare
-starte en tekstfil. Det gør du ved at åbne en xterm og gå ind i
+starte en tekstfil. Det gÃ¸r du ved at Ã¥bne en xterm og gÃ¥ ind i
 samme mappe, som du har lavet caesar3-filen i (formodentlig i dit
-hjemmekatalog). Her skriver du så <command>chmod +x caesar3</command>
-Så er den gjort klar. Prøv nu at skrive <command>./caesar3</command> i
-en xterm og se om Caesar III starter (og om det står på skærmen). Hvis
-det gør det, så virker scriptet. Hvis det ikke virker (og det virkede
-da du startede Caesar III "manuelt"), så bør du lige kigge din kode og
+hjemmekatalog). Her skriver du sÃ¥ <command>chmod +x caesar3</command>
+SÃ¥ er den gjort klar. PrÃ¸v nu at skrive <command>./caesar3</command> i
+en xterm og se om Caesar III starter (og om det stÃ¥r pÃ¥ skÃ¦rmen). Hvis
+det gÃ¸r det, sÃ¥ virker scriptet. Hvis det ikke virker (og det virkede
+da du startede Caesar III "manuelt"), sÃ¥ bÃ¸r du lige kigge din kode og
 instruktionerne her igennem igen og lige tjekke at alt er stavet
-rigtigt. Husk at forskellen på store og små bogstaver har en
+rigtigt. Husk at forskellen pÃ¥ store og smÃ¥ bogstaver har en
 betydning!
 </para>
 
 <para>
-Nu skal det så gøres endnu nemmere. I en xterm skriver du følgende
+Nu skal det sÃ¥ gÃ¸res endnu nemmere. I en xterm skriver du fÃ¸lgende
 kommandoer:
 </para>
 
 <para>
-<command>cd /home/tyge</command> - Dette sætter dig ind i Tyges
+<command>cd /home/tyge</command> - Dette sÃ¦tter dig ind i Tyges
 hjemmekatalog
 </para>
 
@@ -1399,23 +1399,23 @@ dig root-rettigheder.
 </para>
 
 <para> 
-<command>cd /bin</command> - Dette sætter dig ind i mappen
+<command>cd /bin</command> - Dette sÃ¦tter dig ind i mappen
 <filename>/bin</filename>.  Det er her mange af Linux' kommandoer
-ligger. Når filen bliver placeret her kan den køres uden at
-fortælle filens sti. Altså kan man skrive <command>caesar3</command> 
+ligger. NÃ¥r filen bliver placeret her kan den kÃ¸res uden at
+fortÃ¦lle filens sti. AltsÃ¥ kan man skrive <command>caesar3</command> 
 i stedet for at
 skulle skrive <command>/home/tyge/caesar3</command>
 </para>
 
 <para>
 <command>chmod -R 777 caesar3</command> - Dette
-giver alle brugere fuld adgang til filen. Skriv nu <command>exit</command> - Så
+giver alle brugere fuld adgang til filen. Skriv nu <command>exit</command> - SÃ¥
 vender du tilbage til din normale bruger.
 </para>
 
 <para>
-Nu kan du så prøve at gå ind i en vilkårlig mappe og skrive
-<command>caesar3</command>. Så bør Caesar III starte, helt automatisk.
+Nu kan du sÃ¥ prÃ¸ve at gÃ¥ ind i en vilkÃ¥rlig mappe og skrive
+<command>caesar3</command>. SÃ¥ bÃ¸r Caesar III starte, helt automatisk.
 </para>
 </sect2>
 </sect1>
@@ -1430,18 +1430,18 @@ Nu kan du så prøve at gå ind i en vilkårlig mappe og skrive
  <para>
   Hvis du som denne bogs forfattere er vild med din gamle Commodore 64, er
   VICE noget for dig. VICE er en forkortelse for "Versatile Commodore 8-bit
-  Emulator" (eller måske VIC Emulator). VICE kan emulere Commodore 64,
+  Emulator" (eller mÃ¥ske VIC Emulator). VICE kan emulere Commodore 64,
   Commodore 128, VIC 20 og Commodore PET. Ud over udgaver til Linux (Unix)
   findes VICE til MS-DOS og Windows. VICE er i sandhed en alsidig emulator.
  </para>
 
 <para>
-VICE følger ikke med en standard Red Hat-distribution, men du finder
-den let på et ftp-site, f.eks. <ulink url="ftp://sunsite.auc.dk">ftp://sunsite.auc.dk</ulink> under Red
-Hat-contrib. Installationen kan drille lidt, idet VICE kræver
+VICE fÃ¸lger ikke med en standard Red Hat-distribution, men du finder
+den let pÃ¥ et ftp-site, f.eks. <ulink url="ftp://sunsite.auc.dk">ftp://sunsite.auc.dk</ulink> under Red
+Hat-contrib. Installationen kan drille lidt, idet VICE krÃ¦ver
 <filename>libstdc++</filename> version 2.9. Dette bibliotek er
-installeret ved en standard-installation, men navnet kan være
-forkert. Nedenfor ser du, hvordan du kan installere VICE - du bør
+installeret ved en standard-installation, men navnet kan vÃ¦re
+forkert. Nedenfor ser du, hvordan du kan installere VICE - du bÃ¸r
 tjekke, hvilket navn <filename>libstdc++</filename> har i
 <filename>/usr/lib</filename>.
 </para>
@@ -1455,26 +1455,26 @@ Password:
 </screen>
 
 <para>
-Efter installationen er du klar til at bruge VICE. Afhængigt af, hvilken
-Commodore-computer, du ønsker at emulere, skal du benytte et af
-følgende programmer: <command>x64</command> (Commodore 64),
+Efter installationen er du klar til at bruge VICE. AfhÃ¦ngigt af, hvilken
+Commodore-computer, du Ã¸nsker at emulere, skal du benytte et af
+fÃ¸lgende programmer: <command>x64</command> (Commodore 64),
 <command>x128</command> (Commodore 128), <command>xvic</command> (VIC
 20) eller <command>xpet</command> (PET).
 </para>
 
 <para>
-VICE kan emulere lyd og grafik samt ydre enheder, dvs. båndstationer,
-diskettestationer (Commodore 1571) og joystick. Din emulator kører i
-et selvstændigt vindue under X. Højre og venstre museknap giver dig
-menuer til at styre VICE. Bånd og disketter emuleres ved, at du har
-indholdet liggende i en fil på din harddisk. Trykker du på venstre
+VICE kan emulere lyd og grafik samt ydre enheder, dvs. bÃ¥ndstationer,
+diskettestationer (Commodore 1571) og joystick. Din emulator kÃ¸rer i
+et selvstÃ¦ndigt vindue under X. HÃ¸jre og venstre museknap giver dig
+menuer til at styre VICE. BÃ¥nd og disketter emuleres ved, at du har
+indholdet liggende i en fil pÃ¥ din harddisk. Trykker du pÃ¥ venstre
 museknap, kan du "attach a disk image" og "attach a tape image",
-dvs. du kan vælge, hvilken fil der er dit bånd eller din
-diskette. Bånd og disketter gemmes i særlige formater.
+dvs. du kan vÃ¦lge, hvilken fil der er dit bÃ¥nd eller din
+diskette. BÃ¥nd og disketter gemmes i sÃ¦rlige formater.
 </para>
 
 <para>
-Det er let at finde gamle spil til f.eks. Commodore 64 rundt om på
+Det er let at finde gamle spil til f.eks. Commodore 64 rundt om pÃ¥
 internettet. Tjek f.eks. <ulink
 url="http://www.c64.com">http://www.c64.com</ulink> som har ca. 2500
 liggende.
@@ -1491,87 +1491,87 @@ liggende.
 
 <!-- Dette afsnit er skrevet af Bent Pedersen bentriloquist@my-deja.com -->
 <para>
-VNC står for Virtual Network Computing. Kender du
-programmer som PC Anywhere eller NetOp, som begge kører på
-Windows-platformen, så har du en god idé om hvad VNC er: Et program
+VNC stÃ¥r for Virtual Network Computing. Kender du
+programmer som PC Anywhere eller NetOp, som begge kÃ¸rer pÃ¥
+Windows-platformen, sÃ¥ har du en god idÃ© om hvad VNC er: Et program
 til fjernstyring af en anden PC med grafisk brugerflade.
-Dog kører VNC over TCP/IP, og ikke
-andet. VNC består af en server-del, som kører på den maskine du ønsker
-at fjernstyre, samt en klient-del, som kører på den maskine du sidder
+Dog kÃ¸rer VNC over TCP/IP, og ikke
+andet. VNC bestÃ¥r af en server-del, som kÃ¸rer pÃ¥ den maskine du Ã¸nsker
+at fjernstyre, samt en klient-del, som kÃ¸rer pÃ¥ den maskine du sidder
 foran.
 </para>
 
-<sect2 id="vnc-ide"> <!-- Af Erling Sjørlund -->
-<title>Integration af serveren på arbejdspladsen med VNC</title>
+<sect2 id="vnc-ide"> <!-- Af Erling SjÃ¸rlund -->
+<title>Integration af serveren pÃ¥ arbejdspladsen med VNC</title>
 <para>
 Hvis du har et lille system med en Linux-server og en eller flere
-arbejdspladser med Windows, kan du med VNC få en let og effektiv adgang til
-at arbejde med serveren direkte på din arbejdsplads.
-Installér først vncserver på din Linux-server. Log ind på serveren med dit
+arbejdspladser med Windows, kan du med VNC fÃ¥ en let og effektiv adgang til
+at arbejde med serveren direkte pÃ¥ din arbejdsplads.
+InstallÃ©r fÃ¸rst vncserver pÃ¥ din Linux-server. Log ind pÃ¥ serveren med dit
 almindelige brugernavn (ikke root), og start vnc-serveren, f.eks. med :1 som
 nummer. Log ind under et andet brugernavn og start vncserver igen, her med
 :2 som nummer.
 </para>
 
 <para>
-Hvert nummer har sin egen opsætning, så du kan evt. starte en vncserver til
-hvert familiemedlem, efter at du har logget ind på serveren som vedkommende.
-Start derefter vncviewer på din arbejdsplads i et vindue, og log ind med det
-password du oplyste første gang vncserver blev startet (på Linux-serveren
+Hvert nummer har sin egen opsÃ¦tning, sÃ¥ du kan evt. starte en vncserver til
+hvert familiemedlem, efter at du har logget ind pÃ¥ serveren som vedkommende.
+Start derefter vncviewer pÃ¥ din arbejdsplads i et vindue, og log ind med det
+password du oplyste fÃ¸rste gang vncserver blev startet (pÃ¥ Linux-serveren
 under det :nummer du bruger). Det letteste er nok at bruge dens IP-nummer,
-altså f.eks. 192.168.1.1:1, hvor det sidste :1 skal svare til det nummer du gav
-på serveren.
+altsÃ¥ f.eks. 192.168.1.1:1, hvor det sidste :1 skal svare til det nummer du gav
+pÃ¥ serveren.
 </para>
 
 <para>
-Nu har du et miljø, hvor du uden videre kan veksle mellem vinduet med
+Nu har du et miljÃ¸, hvor du uden videre kan veksle mellem vinduet med
 serverens X-variant og Windows-brugerfladen. Du kan direkte klippe-klistre
-tekst mellem Linux- og Windows-programmer, og i det hele taget gøre på
+tekst mellem Linux- og Windows-programmer, og i det hele taget gÃ¸re pÃ¥
 serveren hvad din adgang tillader dig.
-Hvis du ikke har behov for at skifte bånd, cd'er, disketter eller lignende
-på din server, kan du nu parkere din server så langt væk som muligt, (f.eks. i
-kælderen, så den kan bidrage til opvarmningen af huset).
+Hvis du ikke har behov for at skifte bÃ¥nd, cd'er, disketter eller lignende
+pÃ¥ din server, kan du nu parkere din server sÃ¥ langt vÃ¦k som muligt, (f.eks. i
+kÃ¦lderen, sÃ¥ den kan bidrage til opvarmningen af huset).
 </para>
 
 <para>
-Du får nu disse fordele:
+Du fÃ¥r nu disse fordele:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-Serveren skal hverken have skærm, mus eller tastatur for at kunne anvendes
+Serveren skal hverken have skÃ¦rm, mus eller tastatur for at kunne anvendes
 fuldt ud.
  </para>
 </listitem>
 <listitem> 
  <para>
-Du kan (mere eller mindre frivilligt) lukke Windows ned på din
-arbejdsplads. Næste gang du åbner Windows+vncviewer, vil den kun vise en blå
-skærm, hvis det er den farve, du har valgt frivilligt. (Det forudsættes her,
-at du ikke sådan går rundt og lukker din server i tide og utide).
+Du kan (mere eller mindre frivilligt) lukke Windows ned pÃ¥ din
+arbejdsplads. NÃ¦ste gang du Ã¥bner Windows+vncviewer, vil den kun vise en blÃ¥
+skÃ¦rm, hvis det er den farve, du har valgt frivilligt. (Det forudsÃ¦ttes her,
+at du ikke sÃ¥dan gÃ¥r rundt og lukker din server i tide og utide).
  </para>
 </listitem>
 <listitem> 
  <para>
-Du kan arbejde sammen med din mand/kone i den samme skærm uden at skulle
-slås om tastatur, mus og overblik. I login-dialogen <!-- (Billede ind
-heromkring?) --> klikker du blot på knappen [Options], og afkrydser "Request
-shared session" nederst i venstre hjørne. Det, den ene skriver, bliver blandet
-ind i det, den anden er i gang med. Skulle I blive trætte af det, (og det kan
-ske selv i de bedste forhold), kan man naturligvis også arbejde samtidigt på
-hver sin maskine, uden at blande sig sammen. Det kræver blot, at du starter
-vncserver flere gange på Linux-serveren med hvert sit :nummer, og logger ind fra
+Du kan arbejde sammen med din mand/kone i den samme skÃ¦rm uden at skulle
+slÃ¥s om tastatur, mus og overblik. I login-dialogen <!-- (Billede ind
+heromkring?) --> klikker du blot pÃ¥ knappen [Options], og afkrydser "Request
+shared session" nederst i venstre hjÃ¸rne. Det, den ene skriver, bliver blandet
+ind i det, den anden er i gang med. Skulle I blive trÃ¦tte af det, (og det kan
+ske selv i de bedste forhold), kan man naturligvis ogsÃ¥ arbejde samtidigt pÃ¥
+hver sin maskine, uden at blande sig sammen. Det krÃ¦ver blot, at du starter
+vncserver flere gange pÃ¥ Linux-serveren med hvert sit :nummer, og logger ind fra
 arbejdspladserne med forskellige numre.  </para> </listitem>
 <listitem>
  <para>
-Har du børn med egen maskine i familien (det har man hørt om), kan du
-installere vncserver på deres maskiner, og kigge dem over skulderen, helt
-uden at de behøver at opdage det.
-På den måde slipper du for at komme alt for tæt på dem, og du ved alt hvad
-de gør uden at tale med dem først. Det hele bliver som i de gode gamle dage,
-hvor jeg er sikker på, at alle mødre havde et lignende system, der gjorde,
-at de næsten altid vidste, hvad deres børn havde gang i.
+Har du bÃ¸rn med egen maskine i familien (det har man hÃ¸rt om), kan du
+installere vncserver pÃ¥ deres maskiner, og kigge dem over skulderen, helt
+uden at de behÃ¸ver at opdage det.
+PÃ¥ den mÃ¥de slipper du for at komme alt for tÃ¦t pÃ¥ dem, og du ved alt hvad
+de gÃ¸r uden at tale med dem fÃ¸rst. Det hele bliver som i de gode gamle dage,
+hvor jeg er sikker pÃ¥, at alle mÃ¸dre havde et lignende system, der gjorde,
+at de nÃ¦sten altid vidste, hvad deres bÃ¸rn havde gang i.
  </para>
 </listitem>
 </itemizedlist>
@@ -1584,15 +1584,15 @@ at de næsten altid vidste, hvad deres børn havde gang i.
 <title>Installation af VNC</title>
 
 <para>
-For eksemplets skyld antages, at du ønsker at fjernstyre din
-Linux-maskine fra en Windows-maskine. Du skal altså hente en
-Linux-server og en Windows-klient.  Man kan også fjernbetjene en
+For eksemplets skyld antages, at du Ã¸nsker at fjernstyre din
+Linux-maskine fra en Windows-maskine. Du skal altsÃ¥ hente en
+Linux-server og en Windows-klient.  Man kan ogsÃ¥ fjernbetjene en
 Windows-maskine - selv mens andre sidder ved maskinen. Yderst smart
 til support.
 </para>
 
 <para>
-Først skal VNC-serveren hentes. Det kan gøres fra
+FÃ¸rst skal VNC-serveren hentes. Det kan gÃ¸res fra
 <!-- old:
 <ulink url="http://www.uk.research.att.com/vnc">http://www.uk.research.att.com/vnc</ulink>, 
 /-->
@@ -1600,10 +1600,10 @@ Først skal VNC-serveren hentes. Det kan gøres fra
 url="http://www.realvnc.com/">http://www.realvnc.com/</ulink>
 (Version VNC 3.3.7 eller 4.0beta)
 som er det sted hvor udviklerne
-lægger kildeteksten. Desværre kan man derfra ikke hente RPM-pakker,
-men gå til 
+lÃ¦gger kildeteksten. DesvÃ¦rre kan man derfra ikke hente RPM-pakker,
+men gÃ¥ til 
 <ulink url="http://www.rpmfind.net">http://www.rpmfind.net</ulink>
-og søg efter <emphasis>vnc-server</emphasis>.
+og sÃ¸g efter <emphasis>vnc-server</emphasis>.
 Version 3.3.3r2 eller nyere kan findes der.
 </para>
 
@@ -1619,7 +1619,7 @@ VNC-serveren skal installeres som root:
 <sect2 id="vnc-server-start">
 <title>Start en server</title>
 <para>
-vncservers man-side oplyser følgende:
+vncservers man-side oplyser fÃ¸lgende:
 </para>
 
 <programlisting>
@@ -1628,11 +1628,11 @@ vncserver [:number] [-geometry widthxheight] [-depth depth]
 </programlisting>
 
 <para>
-Der er altså mange options, men du behøver kun ganske få for at komme i gang.
+Der er altsÃ¥ mange options, men du behÃ¸ver kun ganske fÃ¥ for at komme i gang.
 </para>
 
 <para>
-Et eksempel på start af VNC-server:
+Et eksempel pÃ¥ start af VNC-server:
 </para>
 
 <screen>
@@ -1640,36 +1640,36 @@ Et eksempel på start af VNC-server:
 </screen>
 
 <para>
-hvilket betyder: Lav en ny X-desktop med størrelsen 800x600 pixels og
-8 bits pr. pixel (=256 farver) og lyt på TCP/IP 5801. 5801? Ja, for
-VNC lægger automatisk 5800 til det nummer man angiver, og bruger det
+hvilket betyder: Lav en ny X-desktop med stÃ¸rrelsen 800x600 pixels og
+8 bits pr. pixel (=256 farver) og lyt pÃ¥ TCP/IP 5801. 5801? Ja, for
+VNC lÃ¦gger automatisk 5800 til det nummer man angiver, og bruger det
 som port-nummer. 
 </para>
 
 <para>
-Du kan bruge en hvilket som helst størrelse du ønsker, også skæve
-størrelser som f.eks. 200x500, hvis du ønsker det. Vær opmærksom på,
-at jo større desktop du bruger, desto mere skal der sendes på nettet,
+Du kan bruge en hvilket som helst stÃ¸rrelse du Ã¸nsker, ogsÃ¥ skÃ¦ve
+stÃ¸rrelser som f.eks. 200x500, hvis du Ã¸nsker det. VÃ¦r opmÃ¦rksom pÃ¥,
+at jo stÃ¸rre desktop du bruger, desto mere skal der sendes pÃ¥ nettet,
 og det giver reduceret hastighed. 
-En mulig opløsning kunne være 800x600x8bpp til VNC-serveren, selv om
-den fysiske desktop kører 1024x800x16bpp. Ved at vælge denne mindre
-opløsning giver det 3,5 gange mindre trafik.
+En mulig oplÃ¸sning kunne vÃ¦re 800x600x8bpp til VNC-serveren, selv om
+den fysiske desktop kÃ¸rer 1024x800x16bpp. Ved at vÃ¦lge denne mindre
+oplÃ¸sning giver det 3,5 gange mindre trafik.
 </para>
 
 <para>
-Desuden er et baggrundsbillede også vejen til langsom hastighed, så
+Desuden er et baggrundsbillede ogsÃ¥ vejen til langsom hastighed, sÃ¥
 brug en ensfarvet baggrund i stedet for dine feriebilleder.
 </para>
 
 <para>
-Første gang du starter vncserver, skal du angive et password. Dette
-password skal du opgive, når du senere forsøger at forbinde dig til
-maskinen. Hvis du ønsker at ændre passwordet kan du blot køre
+FÃ¸rste gang du starter vncserver, skal du angive et password. Dette
+password skal du opgive, nÃ¥r du senere forsÃ¸ger at forbinde dig til
+maskinen. Hvis du Ã¸nsker at Ã¦ndre passwordet kan du blot kÃ¸re
 programmet vncpasswd.
 </para>
 
 <para>
-Når du vil lukke din VNC-server igen foregår det sådan:
+NÃ¥r du vil lukke din VNC-server igen foregÃ¥r det sÃ¥dan:
 
 </para>
 
@@ -1680,20 +1680,20 @@ Når du vil lukke din VNC-server igen foregår det sådan:
 </sect2>
 
 <sect2 id="vnc-opsaetning">
-<title>Opsætning</title>
+<title>OpsÃ¦tning</title>
 
 <para>
 Bruger du f.eks. Gnome som dekstop,
-er det en fordel at bruge en anden Window Manager når kobler op til VNC.
-Et valg kunne være IceWM der føles en lille smule hurtigere,
-og hver lille smule hastighed tæller.
+er det en fordel at bruge en anden Window Manager nÃ¥r kobler op til VNC.
+Et valg kunne vÃ¦re IceWM der fÃ¸les en lille smule hurtigere,
+og hver lille smule hastighed tÃ¦ller.
 </para>
 
 <para>
-Af dokumentationen fremgår det at <command>vncserver</command> bruger
-<filename>$HOME/.vnc/xstartup</filename> som startfil. Det er altså
-stedet, hvor sådanne ændringer skal laves.
-Et eksempel på en ændret xstartup kan se således ud:
+Af dokumentationen fremgÃ¥r det at <command>vncserver</command> bruger
+<filename>$HOME/.vnc/xstartup</filename> som startfil. Det er altsÃ¥
+stedet, hvor sÃ¥danne Ã¦ndringer skal laves.
+Et eksempel pÃ¥ en Ã¦ndret xstartup kan se sÃ¥ledes ud:
 </para>
 
 <programlisting>
@@ -1703,31 +1703,31 @@ exec icewm
 </programlisting>
 
 <para>
-Hvis du i stedet ønskede at bruge Gnome, så skulle linjen med exec
-icewm ændres til <command>exec gnome-session</command> og tilsvarende
-anvender KDE <command>exec startkde</command>. Dette kræver
-selvfølgelig, at IceWM, Gnome og/eller KDE er installeret i forvejen.
-Det kan også være at du bliver nødt til at angive hele stien til
+Hvis du i stedet Ã¸nskede at bruge Gnome, sÃ¥ skulle linjen med exec
+icewm Ã¦ndres til <command>exec gnome-session</command> og tilsvarende
+anvender KDE <command>exec startkde</command>. Dette krÃ¦ver
+selvfÃ¸lgelig, at IceWM, Gnome og/eller KDE er installeret i forvejen.
+Det kan ogsÃ¥ vÃ¦re at du bliver nÃ¸dt til at angive hele stien til
 de kommandoer der startes.
 </para>
 
 <para>
-Bemærk i øvrigt at standard window manager for VNC er
-<command>twm</command>, som vel kun de færreste ønsker at bruge.
+BemÃ¦rk i Ã¸vrigt at standard window manager for VNC er
+<command>twm</command>, som vel kun de fÃ¦rreste Ã¸nsker at bruge.
 </para>
 </sect2>
 
 <sect2 id="vnc-klienten">
 <title>Klienten</title>
 <para>
-  Der findes klienter til både Windows og Linux. Da disse er oversat specifikt
-  til det relevante system er de mindre processorkrævende. Men den smarteste
+  Der findes klienter til bÃ¥de Windows og Linux. Da disse er oversat specifikt
+  til det relevante system er de mindre processorkrÃ¦vende. Men den smarteste
   klient er dog den til Java.
 </para>
 
 <para> 
-  Har du en browser, der kan snakke Java, så gå ind
-  på: <filename>http://x.x.x.x:5801</filename>. 
+  Har du en browser, der kan snakke Java, sÃ¥ gÃ¥ ind
+  pÃ¥: <filename>http://x.x.x.x:5801</filename>. 
   Her angiver du brugernavn og adgangskode
   hvorefter du i din browser kan fjernstyre maskinen.       
 </para>
@@ -1745,34 +1745,34 @@ Bemærk i øvrigt at standard window manager for VNC er
 </sect2>
 
 <sect2 id="vnc-pas-paa">
-<title>Pas på din sikkerhed</title>
+<title>Pas pÃ¥ din sikkerhed</title>
 
 <para>
-Bemærk at <command>vncserver</command> giver brugeren af klienten de
+BemÃ¦rk at <command>vncserver</command> giver brugeren af klienten de
 samme rettigheder, som den konto der startede den.  Er du logget ind
-som "guest" når du starter <command>vncserver</command>, får alle der
-logger på via en vnc-klient "guest"-rettigheder.  Af hensyn til
-sikkerheden bør du derfor ikke starte den som root, og det er også
-klogt at huske nedlukning af vncserver, når den ikke skal bruges.
+som "guest" nÃ¥r du starter <command>vncserver</command>, fÃ¥r alle der
+logger pÃ¥ via en vnc-klient "guest"-rettigheder.  Af hensyn til
+sikkerheden bÃ¸r du derfor ikke starte den som root, og det er ogsÃ¥
+klogt at huske nedlukning af vncserver, nÃ¥r den ikke skal bruges.
  </para>
 
 <para>
-Bemærk også, at hvis du har startet vncserver direkte i en konsol på
-serveren, så bliver den ved at køre, også selv om du har forsøgt logout.
+BemÃ¦rk ogsÃ¥, at hvis du har startet vncserver direkte i en konsol pÃ¥
+serveren, sÃ¥ bliver den ved at kÃ¸re, ogsÃ¥ selv om du har forsÃ¸gt logout.
 </para>
 
 <para>
-VNC er en åbning af et potentielt sikkerhedshul - i hvertfald er
+VNC er en Ã¥bning af et potentielt sikkerhedshul - i hvertfald er
 versioner op til og med 3.3.3 slet ikke sikre, jfr. Weekly Linux
-Security Digest 2001/01/22-2001/01/28. I de ældre versioner kan man
+Security Digest 2001/01/22-2001/01/28. I de Ã¦ldre versioner kan man
 bryde ind i trafikken mellem server og klient. Generelt skal man ikke
 lukke op for services man ikke selv kan overskue konsekvenserne af, hvis man
-er koblet til et usikkert netværk.
+er koblet til et usikkert netvÃ¦rk.
 </para>
 </sect2>
 </sect1>
 
-<!--  skrevet af Mads Sabroe Jensen (sorteslyngel/på/get2net.dk) -->
+<!--  skrevet af Mads Sabroe Jensen (sorteslyngel/pÃ¥/get2net.dk) -->
 <sect1 id="psx">
 <title>Playstation emulering</title>
 <indexterm><primary>Playstation emulering</primary></indexterm>
@@ -1783,46 +1783,46 @@ er koblet til et usikkert netværk.
 
 <para>
 Hvis du gerne vil spille dine yndlings playstation spil i Linux, kan
-det sagtens lade sig gøre. Der findes tre gode Playstation emulatorer:
-PCSX, FPSe og ePSXe. Da Playstation emulering er lidt tungt at køre
-bør man have minimum en Pentium 2 maskine med et hardware acceleret
-grafikkort som for eksempel TNT 2 eller lignende. Fælles for de tre emulatorer er
-at de benytter sig af et såkaldt "plugin system". ePSXe og PCSX bruger
+det sagtens lade sig gÃ¸re. Der findes tre gode Playstation emulatorer:
+PCSX, FPSe og ePSXe. Da Playstation emulering er lidt tungt at kÃ¸re
+bÃ¸r man have minimum en Pentium 2 maskine med et hardware acceleret
+grafikkort som for eksempel TNT 2 eller lignende. FÃ¦lles for de tre emulatorer er
+at de benytter sig af et sÃ¥kaldt "plugin system". ePSXe og PCSX bruger
 det samme system og FPSe benytter sig af sit eget. Med disse plugins
-kan man for eksempel vælge at bruge en software renderer eller bruge sit nye
-grafikkort ved hjælp af en MesaGL plugin.</para>
+kan man for eksempel vÃ¦lge at bruge en software renderer eller bruge sit nye
+grafikkort ved hjÃ¦lp af en MesaGL plugin.</para>
 
 <figure id="wipeout-fig" float="1">
-<title>Wipeout spillet under Playstation emulator på Linux</title>
+<title>Wipeout spillet under Playstation emulator pÃ¥ Linux</title>
 <graphic fileref="wipeout.&magic;" scale="60"></graphic>
 </figure>
 
 <para> 
-Der findes en guide til ePSXe på
+Der findes en guide til ePSXe pÃ¥
 <ulink url="http://hjem.get2net.dk/familien_sabroe/linux.html">http://hjem.get2net.dk/familien_sabroe/linux.html</ulink>. Emulatorerne kan hentes fra
 <ulink url="http://www.ngemu.com">http://www.ngemu.com</ulink>, hvor man har lavet pakker med selve emulatoren
 og de bedste plugins. BIOS'en er dog ikke inkluderet da SONY har
-copyrighten på den.
+copyrighten pÃ¥ den.
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
 <emphasis>ePSXe</emphasis> :
-Er den mest kompatible emulator af disse tre. Den behøver dog en
+Er den mest kompatible emulator af disse tre. Den behÃ¸ver dog en
 playstation BIOS for at kunne fungere. Der findes en masse plugins til
-den, blandt andet en MesaGL plugin hvis dit grafikkort understøtter
+den, blandt andet en MesaGL plugin hvis dit grafikkort understÃ¸tter
 MesaGL.
  </para>
 </listitem>
 <listitem> 
  <para>
 <emphasis>FPSe</emphasis> :
-Var indtil version 0.08 open source. Den nuværende 0.09 version er
-ikke open source men er ellers en udmærket emulator - der mangler dog
-nogle ordentlige plugins til den da den understøtter et andet plugin
+Var indtil version 0.08 open source. Den nuvÃ¦rende 0.09 version er
+ikke open source men er ellers en udmÃ¦rket emulator - der mangler dog
+nogle ordentlige plugins til den da den understÃ¸tter et andet plugin
 system end ePSXe og PCSX. Der findes for eksempel ikke nogle plugins der
-udnytter hardware acceleret grafikkort. Den behøver desuden en
+udnytter hardware acceleret grafikkort. Den behÃ¸ver desuden en
 playstation BIOS for at kunne fungere.
  </para>
 </listitem>
@@ -1830,7 +1830,7 @@ playstation BIOS for at kunne fungere.
  <para>
 <emphasis>PCSX</emphasis> :
 Er en ganske god emulator. Den er open source og er rimlig kompatibel
-med de fleste playstation spil. Man behøver ikke en Playstation BIOS -
+med de fleste playstation spil. Man behÃ¸ver ikke en Playstation BIOS -
 dog er PCSX mest kompatibel hvis man har en. Da PCSX benytter sig af
 samme plugin system som ePSXe, findes der ligeledes en masse nyttige
 plugins til PCSX.
@@ -1842,20 +1842,20 @@ plugins til PCSX.
 <sect1 id="gameboy">
 <title>Gameboy &amp; Gameboy Advanced</title>
 <para>
-Med Visualboy Advanced er det muligt at køre Gameboy og Gameboy
+Med Visualboy Advanced er det muligt at kÃ¸re Gameboy og Gameboy
 Advanced spil i Linux. 
 </para>
 
 <para>
 Emulatoren kan hentes fra
 <ulink url="http://vba.ngemu.com/">http://vba.ngemu.com/</ulink>. Visualboy
-Advanced kræver minimum en Pentium 3 500 mhz maskine for at køre
-Gameboy advanced spil og for de ældre Gameboy spil er hardware kravene
+Advanced krÃ¦ver minimum en Pentium 3 500 mhz maskine for at kÃ¸re
+Gameboy advanced spil og for de Ã¦ldre Gameboy spil er hardware kravene
 mindre.
 </para>
 
 <figure id="gameboy-fig" float="1">
-<title>Visualboy Advanced kører Mario Cart Super Circuit</title>
+<title>Visualboy Advanced kÃ¸rer Mario Cart Super Circuit</title>
 <graphic fileref="Gameboy.&magic;" scale="60"></graphic>
 </figure>
 </sect1>
@@ -1864,14 +1864,14 @@ mindre.
 <title>Mupen64: Nintendo 64 emulator</title>
 <para>
 
-Mupen64 er en emulator der muliggør, at man kan spille Nintendo64
+Mupen64 er en emulator der muliggÃ¸r, at man kan spille Nintendo64
 spil under Linux. Den kan hentes fra <ulink url="http://mupen64.emulation64.com">http://mupen64.emulation64.com</ulink>,
 hvor der findes oversatte versioner.
 </para>
 
 <para>
-Kildekoden findes der også, hvis
-man selv har mod på at oversætte den. Emulatoren benytter sig af et
+Kildekoden findes der ogsÃ¥, hvis
+man selv har mod pÃ¥ at oversÃ¦tte den. Emulatoren benytter sig af et
 plugin system, hvor man fra Mupen64's hjemmeside kan downloade
 forskellige plugins til grafik, lyd, controller, etc.
 </para>

@@ -5,22 +5,22 @@
 <sect1 id="ooo-sidetypografier">
   <title>Sidetypografier</title>
 
-<para>Normalt bliver alle sider formateret på samme måde. Hvis nogle sider,
-    f.eks. forsiden, skal formateres anderledes skal du bruge <emphasis>sidetypografier</emphasis> . Her er nogle eksempler på brug af
+<para>Normalt bliver alle sider formateret pÃ¥ samme mÃ¥de. Hvis nogle sider,
+    f.eks. forsiden, skal formateres anderledes skal du bruge <emphasis>sidetypografier</emphasis> . Her er nogle eksempler pÃ¥ brug af
     sidetypografier.</para>
 
 <sect2>
-  <title>Eksempel: Særlig typografi på første side.</title>
+  <title>Eksempel: SÃ¦rlig typografi pÃ¥ fÃ¸rste side.</title>
 <orderedlist>
       <listitem>
 
-<para>Placer markøren på første side i dit dokument.</para>
+<para>Placer markÃ¸ren pÃ¥ fÃ¸rste side i dit dokument.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Åbn stylisten og vælg <emphasis>sidetypografier</emphasis>, knappen
+<para>Ã…bn stylisten og vÃ¦lg <emphasis>sidetypografier</emphasis>, knappen
 <figure float="1" id="fig-ooo-stylistsidetypografier">
 <title>Sidetypografier</title>
 <graphic fileref="stylistsidetypografier.&magic;" scale="60"></graphic>
@@ -32,34 +32,34 @@
 
       <listitem>
 
-<para>Dobbeltklik på typografien <emphasis>første side</emphasis>.</para>
+<para>Dobbeltklik pÃ¥ typografien <emphasis>fÃ¸rste side</emphasis>.</para>
 
 </listitem>
     </orderedlist>
 
-<para>Efter den første side skiftes automatisk til standard
-    sídetypografien.</para>
+<para>Efter den fÃ¸rste side skiftes automatisk til standard
+    sÃ­detypografien.</para>
 
-<para>Nu kan du formatere den første side anderledes end de andre, f.eks.
+<para>Nu kan du formatere den fÃ¸rste side anderledes end de andre, f.eks.
     uden sidehoved.</para>
-</sect2>    <!--   Eksempel: Særlig typografi på første side. -->
+</sect2>    <!--   Eksempel: SÃ¦rlig typografi pÃ¥ fÃ¸rste side. -->
 
 <sect2 id="ooo-sidetypografier-tvaerformat">
-  <title>Eksempel: Enkelt liggende side (tværformat)</title>
+  <title>Eksempel: Enkelt liggende side (tvÃ¦rformat)</title>
 
 <para>Hvis du har brug for at en af siderne ligger ned, for eksempel fordi
-    den skal rumme en bred tabel, kan du gøre sådan:</para>
+    den skal rumme en bred tabel, kan du gÃ¸re sÃ¥dan:</para>
 
 <orderedlist>
       <listitem>
 
-<para>Placer markøren på en <!-- &bdquo; -->normal<!-- &ldquo; --> side.</para>
+<para>Placer markÃ¸ren pÃ¥ en <!-- &bdquo; -->normal<!-- &ldquo; --> side.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Åbn stylisten og vælg <emphasis>sidetypografier</emphasis>, knappen
+<para>Ã…bn stylisten og vÃ¦lg <emphasis>sidetypografier</emphasis>, knappen
 <figure float="1" id="fig-ooo-stylistsidetypografier2">
 <title>Sidetypografier</title>
 <graphic fileref="stylistsidetypografier.&magic;" scale="60"></graphic>
@@ -71,7 +71,7 @@
 
       <listitem>
 
-<para>Klik på knappen <emphasis>Ny typografi fra markeringen</emphasis> :
+<para>Klik pÃ¥ knappen <emphasis>Ny typografi fra markeringen</emphasis> :
 <figure float="1" id="fig-ooo-stylistny2">
 <title>Ny stylist</title>
 <graphic fileref="stylistny.&magic;" scale="60"></graphic>
@@ -88,66 +88,66 @@
 
       <listitem>
 
-<para>Placer markøren <emphasis>før</emphasis> det sted der skal lægges ned.</para>
+<para>Placer markÃ¸ren <emphasis>fÃ¸r</emphasis> det sted der skal lÃ¦gges ned.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Vælg <emphasis>Indsæt/Manuelt sideskift mm...</emphasis>.</para>
+<para>VÃ¦lg <emphasis>IndsÃ¦t/Manuelt sideskift mm...</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Vælg <emphasis>Sideskift</emphasis> og vælg <emphasis>liggende side</emphasis> som
+<para>VÃ¦lg <emphasis>Sideskift</emphasis> og vÃ¦lg <emphasis>liggende side</emphasis> som
         typografi.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Placer markøren <emphasis>efter</emphasis> det sted, der skal lægges ned.</para>
+<para>Placer markÃ¸ren <emphasis>efter</emphasis> det sted, der skal lÃ¦gges ned.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Vælg <emphasis>Indsæt/Manuelt sideskift mm...</emphasis>.</para>
+<para>VÃ¦lg <emphasis>IndsÃ¦t/Manuelt sideskift mm...</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Vælg <emphasis>Sideskift</emphasis> og vælg <emphasis>standard</emphasis> som typografi.</para>
+<para>VÃ¦lg <emphasis>Sideskift</emphasis> og vÃ¦lg <emphasis>standard</emphasis> som typografi.</para>
 
 </listitem>
     </orderedlist>
-</sect2>    <!--   Eksempel: Enkelt liggende side (tværformat) -->
+</sect2>    <!--   Eksempel: Enkelt liggende side (tvÃ¦rformat) -->
 
 <sect2 id="ooo-sidetypografier-generelt">
   <title>Generelt</title>
 
-<para>Som eksemplerne viser er der to måder at skifte sidetypografi:</para>
+<para>Som eksemplerne viser er der to mÃ¥der at skifte sidetypografi:</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
 <para>En sidetypografi kan indeholde et automatisk skift til en anden
-        typografi; det angives i feltet <emphasis>Næste typografi</emphasis> på fanebladet
+        typografi; det angives i feltet <emphasis>NÃ¦ste typografi</emphasis> pÃ¥ fanebladet
         <emphasis>Administrer</emphasis>.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Du kan også skifte typografi ved at indsætte et manuelt
+<para>Du kan ogsÃ¥ skifte typografi ved at indsÃ¦tte et manuelt
         sideskift.</para>
 
 </listitem>
 </itemizedlist>
 
-<para>Indholdet af sidehoved og sidefod hører til sidetypografien, så alle
+<para>Indholdet af sidehoved og sidefod hÃ¸rer til sidetypografien, sÃ¥ alle
     sider med samme sidetypografi har samme indhold i sidehoved og
     sidefod.</para>
 

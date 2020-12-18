@@ -1,12 +1,12 @@
 <!-- $Id$ -->
 <chapter id="Linux-firewalling">
- <title>Firewall på Linux</title>
+ <title>Firewall pÃ¥ Linux</title>
 
  <sect1 id="hvad-er-firewall">
   <title>Hvad er en firewall?</title>
 
   <indexterm>
-   <primary>dørvogter</primary>
+   <primary>dÃ¸rvogter</primary>
   </indexterm>
 
   <indexterm>
@@ -15,51 +15,51 @@
 
 <para>
 At forbinde sin virksomheds eller sit kollegiums lokale
-computernetværk direkte til internettet kan være en risikabel
-ting at gøre, for man åbner jo for trafik begge veje, altså også
-for trafik ind på det lokale netværk. Hvis man uden videre
-forbinder sit lokale netværk til internettet, kan man blive 
-udsat for, at andre trænger ind på firmaets eller kollegiets
-interne computere, læser og ændrer følsomme data, får servere til
-at gå i stå osv.  Ønsker man at give adgang for beboere og
-medarbejdere til e-post og den store mængde information, man kan
-finde på internettet uden at åbne for trafik den anden vej,
-kræver det en firewall.
+computernetvÃ¦rk direkte til internettet kan vÃ¦re en risikabel
+ting at gÃ¸re, for man Ã¥bner jo for trafik begge veje, altsÃ¥ ogsÃ¥
+for trafik ind pÃ¥ det lokale netvÃ¦rk. Hvis man uden videre
+forbinder sit lokale netvÃ¦rk til internettet, kan man blive 
+udsat for, at andre trÃ¦nger ind pÃ¥ firmaets eller kollegiets
+interne computere, lÃ¦ser og Ã¦ndrer fÃ¸lsomme data, fÃ¥r servere til
+at gÃ¥ i stÃ¥ osv.  Ã˜nsker man at give adgang for beboere og
+medarbejdere til e-post og den store mÃ¦ngde information, man kan
+finde pÃ¥ internettet uden at Ã¥bne for trafik den anden vej,
+krÃ¦ver det en firewall.
 </para>
 
 <para>
-Firewall er det engelske ord for en brandvæg eller en brandmur. I
+Firewall er det engelske ord for en brandvÃ¦g eller en brandmur. I
 bygninger bruges en brandmur til at dele en bygning i sektioner.
-Hvis der opstår en brand i den ene sektion, kan brandmuren
+Hvis der opstÃ¥r en brand i den ene sektion, kan brandmuren
 forhindre at branden breder sig (hurtigt) til andre sektioner.
 </para>
 
 <para>
-En computer som firewall bruges til på lignende vis at opdele et
-netværk i sektioner, typisk i det, der er uden for lokalnetværket,
-og det, som er indenfor. Firewallen er først og fremmest et
+En computer som firewall bruges til pÃ¥ lignende vis at opdele et
+netvÃ¦rk i sektioner, typisk i det, der er uden for lokalnetvÃ¦rket,
+og det, som er indenfor. Firewallen er fÃ¸rst og fremmest et
 pakkefilter, som forhindrer pakker af bestemte typer i at slippe
-igennem fra det ene til det andet netværk. Linux firewallen kan
-imidlertid meget mere end det, og i denne sammenhæng er det
-vigtigt, at den kan lade trafik, som har oprindelse på
-lokalnettet, gå til nettet udenfor, det offentlige net, og vel at
-mærke tillade svarpakkerne at passere på tilbagevejen.
+igennem fra det ene til det andet netvÃ¦rk. Linux firewallen kan
+imidlertid meget mere end det, og i denne sammenhÃ¦ng er det
+vigtigt, at den kan lade trafik, som har oprindelse pÃ¥
+lokalnettet, gÃ¥ til nettet udenfor, det offentlige net, og vel at
+mÃ¦rke tillade svarpakkerne at passere pÃ¥ tilbagevejen.
 </para>
 
 <para>
-Man kan opnå en fremragende sikkerhed med en Linux box som
+Man kan opnÃ¥ en fremragende sikkerhed med en Linux box som
 firewall, men det er imidlertid bedst at kombinere firewallen med de
-forholdsregler for sikker opsætning af en computer, som er omtalt
+forholdsregler for sikker opsÃ¦tning af en computer, som er omtalt
 tidligere i bogen.
 </para>
 
 <para>
-En firewall kan selvfølgelig også bruges til at adskille to
-eller flere lokalnetværk fra hinanden.
+En firewall kan selvfÃ¸lgelig ogsÃ¥ bruges til at adskille to
+eller flere lokalnetvÃ¦rk fra hinanden.
 </para>
 
 <para>
-Der findes forskellige måder at opbygge en firewall, næste afsnit
+Der findes forskellige mÃ¥der at opbygge en firewall, nÃ¦ste afsnit
 lister de vigtigste.
 </para>
 
@@ -68,7 +68,7 @@ lister de vigtigste.
 
 <itemizedlist mark="bullet">
   <listitem><para>Pakkefiltrering</para></listitem>
-  <listitem><para>Proxy, en applikation som optræder som
+  <listitem><para>Proxy, en applikation som optrÃ¦der som
      mellemmand</para></listitem>
   <listitem><para>Stateful Multi-Layer Inspection, SMLI, en
      kombination af pakkefilter, tilstands-betingelser og
@@ -77,44 +77,44 @@ lister de vigtigste.
 <indexterm><primary>SMLI</primary></indexterm>
 
 <para>
-Et pakkefilter ser på pakkens IP-adresse, den protokol-type, som
-den hører til, og eventuelt flere ting.
+Et pakkefilter ser pÃ¥ pakkens IP-adresse, den protokol-type, som
+den hÃ¸rer til, og eventuelt flere ting.
 </para>
 
 <para>
-En proxy, som egentlig blot betyder en stedfortræder, var
-oprindeligt et program på en gateway, som man inde på lokalnettet
-henvendte sig til, og så kunne dette program sende forespørgsler
+En proxy, som egentlig blot betyder en stedfortrÃ¦der, var
+oprindeligt et program pÃ¥ en gateway, som man inde pÃ¥ lokalnettet
+henvendte sig til, og sÃ¥ kunne dette program sende forespÃ¸rgsler
 videre, som om de kom fra proxy-maskinen. Det er en meget sikker,
-men også ret besværlig måde at skille lokalnet fra offentlige
-net, og det kræver en proxy for hver protokol, man ønsker at åbne
-for, http, ftp, ssh, og hvad det nu kunne være.
+men ogsÃ¥ ret besvÃ¦rlig mÃ¥de at skille lokalnet fra offentlige
+net, og det krÃ¦ver en proxy for hver protokol, man Ã¸nsker at Ã¥bne
+for, http, ftp, ssh, og hvad det nu kunne vÃ¦re.
 </para>
 
 <para>
 En mere moderne proxy kan fungere uden at man henvender sig
 specielt til den. Det kaldes en transparent proxy. Den lytter
 efter al trafik og videresender de pakker, som er tilladte,
-ligesom et pakkefilter, men i modsætning til pakkefilteret kan
-proxyen altså sende dem videre, som om de kom fra den selv, og
-desuden inspicere dem på indholdsniveau eller applikationslag.
+ligesom et pakkefilter, men i modsÃ¦tning til pakkefilteret kan
+proxyen altsÃ¥ sende dem videre, som om de kom fra den selv, og
+desuden inspicere dem pÃ¥ indholdsniveau eller applikationslag.
 </para>
 
 <para>
-I forbindelse med firewalls taler man ofte om netværkslag, fordi
-det gør det muligt at beskrive mere præcist, hvad der sker.
+I forbindelse med firewalls taler man ofte om netvÃ¦rkslag, fordi
+det gÃ¸r det muligt at beskrive mere prÃ¦cist, hvad der sker.
 Den forsimplede Department of Defence-model, DoD 4-lags modellen,
-er en god hjælp til de fleste formål: 
+er en god hjÃ¦lp til de fleste formÃ¥l: 
 </para>
 
 
 
 <sect3 id="sikkerhed-layer">
-<title>Netværks-lag</title>
+<title>NetvÃ¦rks-lag</title>
 
 <programlisting>
 
-                           Netværks-lag
+                           NetvÃ¦rks-lag
 
                         +---------------------+
                         | Applikations-laget  |
@@ -131,37 +131,37 @@ er en god hjælp til de fleste formål:
 </programlisting>
 
 <para>
-Nogle vil måske foretrække at få en forklaring på, hvorfor man i
-det hele taget har lag, og så er det bedst at tage forklaringerne
-fra ledningerne, det fysiske netværk og opefter.
+Nogle vil mÃ¥ske foretrÃ¦kke at fÃ¥ en forklaring pÃ¥, hvorfor man i
+det hele taget har lag, og sÃ¥ er det bedst at tage forklaringerne
+fra ledningerne, det fysiske netvÃ¦rk og opefter.
 </para>
 
 <itemizedlist mark="bullet" id="sikkerhed-network-layer">
 
 <listitem><para>
 Fysisk link-lag, det vil sige ethernetkort og ledninger (der er
-egentlig også et par abstraktionslag her); ofte kaldes det for
-det nederste lag; det skyldes måske, at ledningerne som regel
-liger på gulvet og føres ud gennem kælderen - hvis man stadig
-brugte telefonstolper, ville man nok kalde det for det øverste
+egentlig ogsÃ¥ et par abstraktionslag her); ofte kaldes det for
+det nederste lag; det skyldes mÃ¥ske, at ledningerne som regel
+liger pÃ¥ gulvet og fÃ¸res ud gennem kÃ¦lderen - hvis man stadig
+brugte telefonstolper, ville man nok kalde det for det Ã¸verste
 lag;-))
 </para></listitem>
 
 <listitem><para>
-netværkslaget, her finder man IP-numre, ping programmet og ICMP;
+netvÃ¦rkslaget, her finder man IP-numre, ping programmet og ICMP;
 dette lag har ansvaret for at en pakke kan komme fra Jylland til
 Australien, det vil sige ansvaret for at forbinde forskellige net
-med hinanden, herunder også fragmentering af pakker, som er for
+med hinanden, herunder ogsÃ¥ fragmentering af pakker, som er for
 store til det underliggende fysiske net;
 </para></listitem>
 
 <listitem><para>
 transportlaget, TCP, som er forskelligt fra IP-laget derved at
-det sørger for at data er valide, det vil sige at der oprettes
-handshake; nyere TCP implementationer kan også håndtere
-flow-kontrol: parametre på fysisk niveau kan styres indirekte af
-TCP oplysninger om, hvor meget modtageren kan klare, førend man
-får data galt i halsen; man kunne også kalde TCP laget for
+det sÃ¸rger for at data er valide, det vil sige at der oprettes
+handshake; nyere TCP implementationer kan ogsÃ¥ hÃ¥ndtere
+flow-kontrol: parametre pÃ¥ fysisk niveau kan styres indirekte af
+TCP oplysninger om, hvor meget modtageren kan klare, fÃ¸rend man
+fÃ¥r data galt i halsen; man kunne ogsÃ¥ kalde TCP laget for
 validerings- og flow control lag;
 </para></listitem>
 
@@ -173,11 +173,11 @@ applikationslaget, higher level, for eksempel FTP og HTTP.
 </sect3>
 
 <sect3 id="sikkerhed-proxy-applikationslag">
-<title>Filtrering på applikationslag</title>
+<title>Filtrering pÃ¥ applikationslag</title>
 
 <para>
-En proxy kan inspicere på applikationslaget. Den kan derfor
-kaldes for et censur-program, netværks-barnepige eller spion.
+En proxy kan inspicere pÃ¥ applikationslaget. Den kan derfor
+kaldes for et censur-program, netvÃ¦rks-barnepige eller spion.
 </para>
 
 <para>
@@ -185,72 +185,72 @@ Stateful Multi Layer Inspection (SMLI) er den mest avancerede
 form for firewall. Det er faktisk muligt at lave den slags
 filtrering med Linux-kernen. Udvalgte pakker kan med iptables
 kommandoen sendes til et program, som inspicerer dem og som kan
-afgøre, om de skal sendes videre eller ej. En forudsætning for
+afgÃ¸re, om de skal sendes videre eller ej. En forudsÃ¦tning for
 det er, at Linux' indbyggede pakkefilter har mulighed for at
-holde styr på det, man kalder en forbindelse (connection), det
+holde styr pÃ¥ det, man kalder en forbindelse (connection), det
 vil sige en session, hvor man indleder en konversation med en
-server, udveksler data og ender med at sige "nu er jeg færdig".
+server, udveksler data og ender med at sige "nu er jeg fÃ¦rdig".
 </para>
 
 <para>
-TCP benytter sådanne connection-meddelelser. Linux-kernen kan
-holde styr på status for en forbindelse. Derfor kaldes Linux
+TCP benytter sÃ¥danne connection-meddelelser. Linux-kernen kan
+holde styr pÃ¥ status for en forbindelse. Derfor kaldes Linux
 Netfilter for et State Packet Filter, SPF.
 </para>
 
 <para>
-Derved kan man bygge en SMLI firewall baseret på Linux Netfilter.
+Derved kan man bygge en SMLI firewall baseret pÃ¥ Linux Netfilter.
 Endvidere kan en user-applikation inkorporeres i kernen (for at
-effektivisere den), så man kan skam bygge tiptop professionelle
-SMLI-firewalls på basis af Linux.
+effektivisere den), sÃ¥ man kan skam bygge tiptop professionelle
+SMLI-firewalls pÃ¥ basis af Linux.
 </para>
 </sect3>
 </sect2>
 
 <sect2 id="sikkerhed-grundlaeggende-pakkefilter">
-<title>Grundlæggende pakkefiltrering eller politiske
+<title>GrundlÃ¦ggende pakkefiltrering eller politiske
 overvejelser</title>
 
 <para>
-Opsætningen af en firewall kan enten bygge på den grundlæggende
-antagelse, at alt, hvad der kommer udefra, er mistænkeligt og bør
-stoppes - eller, omvendt, at vi tror på det gode i netværket og
-kun spærrer af for de ting, som notorisk er nemme at misbruge.
+OpsÃ¦tningen af en firewall kan enten bygge pÃ¥ den grundlÃ¦ggende
+antagelse, at alt, hvad der kommer udefra, er mistÃ¦nkeligt og bÃ¸r
+stoppes - eller, omvendt, at vi tror pÃ¥ det gode i netvÃ¦rket og
+kun spÃ¦rrer af for de ting, som notorisk er nemme at misbruge.
 </para>
 
 
 <sect3 id="sikkerhed-luk-alt">
 <title>Luk alt</title>
 <para>
-Hvis man lukker for alt, er det selvfølgelig overflødigt med en
+Hvis man lukker for alt, er det selvfÃ¸lgelig overflÃ¸digt med en
 netforbindelse ud af huset. Men det er nu alligevel den bedste
-måde at sikre systemet på (;-) For at få lidt glæde af
-netforbindelsen kan man så åbne for web-protokollen HTTP. En
+mÃ¥de at sikre systemet pÃ¥ (;-) For at fÃ¥ lidt glÃ¦de af
+netforbindelsen kan man sÃ¥ Ã¥bne for web-protokollen HTTP. En
 TCP/IP-pakke har ud over IP-nummeret et port-nummer med sig, som
-blot er et tal (16 bit) i TCP-pakkens header. På modtagermaskinen
+blot er et tal (16 bit) i TCP-pakkens header. PÃ¥ modtagermaskinen
 ser TCP-softwaren i kernen efter, hvilket portnummer der er, og
 om der er noget program, som har meldt sig som interesseret i
 pakker til dette portnummer. Det kalder man, at et program har
-registreret på den pågældende port. Et program, som lytter efter
+registreret pÃ¥ den pÃ¥gÃ¦ldende port. Et program, som lytter efter
 indkommende forbindelser, kaldes en server (eller somme tider et
 serverprogram.)
 </para>
 
 <para>
 HTTP-protokollen er karakteristisk ved, at serveren som regel
-lytter på port 80. Vi kan derfor lave en firewall regel, som
-siger, at al trafik, som er til eller fra port 80 på en computer
-<emphasis>udenfor lokalnetværket</emphasis> skal have lov at
-passere. Det er en løsning, men en fattig løsning, idet man
+lytter pÃ¥ port 80. Vi kan derfor lave en firewall regel, som
+siger, at al trafik, som er til eller fra port 80 pÃ¥ en computer
+<emphasis>udenfor lokalnetvÃ¦rket</emphasis> skal have lov at
+passere. Det er en lÃ¸sning, men en fattig lÃ¸sning, idet man
 kommer til at mangle Domain Name Service, DNS, og endvidere
 kommer til at lide under, at nogle web-sites forventer, at man
 kan bruge FTP til download, eller ligefrem flytter brugerens
-forespørgsel til en server på et andet portnummer.
+forespÃ¸rgsel til en server pÃ¥ et andet portnummer.
 </para>
 
 <para>
-En netværksforbindelse mellem to applikationer defineres af
-IP-adresse plus portnummer. En sådan identificeret forbindelse
+En netvÃ¦rksforbindelse mellem to applikationer defineres af
+IP-adresse plus portnummer. En sÃ¥dan identificeret forbindelse
 kaldes en socket.
 </para>
 
@@ -276,58 +276,58 @@ typisk fra applikation til applikation.
 
 </sect3>
 
-<sect3 id="sikkerhed-aaben-alt"><title>Lad alt være åbent -
+<sect3 id="sikkerhed-aaben-alt"><title>Lad alt vÃ¦re Ã¥bent -
 undtagen de farlige ting</title>
 
 <para>
-For at undgå problemer kunne man så beslutte, at man lader det
-meste stå åbent og - selvfølgelig - lukker for de farlige
-services som telnet, remote shell og så videre.
+For at undgÃ¥ problemer kunne man sÃ¥ beslutte, at man lader det
+meste stÃ¥ Ã¥bent og - selvfÃ¸lgelig - lukker for de farlige
+services som telnet, remote shell og sÃ¥ videre.
 </para>
 
 <para>
-Et eksempel kunne være, at man lokalt gerne må bruge telnet, men
-at det er sket at folk udefra har forsøgt at få forbindelse via
-telnet. Derfor kan det se ud som en løsning at lukke for port 23.
-Den løsning er dog heller ikke særlig god. Intrusion på en
+Et eksempel kunne vÃ¦re, at man lokalt gerne mÃ¥ bruge telnet, men
+at det er sket at folk udefra har forsÃ¸gt at fÃ¥ forbindelse via
+telnet. Derfor kan det se ud som en lÃ¸sning at lukke for port 23.
+Den lÃ¸sning er dog heller ikke sÃ¦rlig god. Intrusion pÃ¥ en
 computer kan sagtens benytte sig af andre portnumre (og andre
-protokoller) og ved snedige, ulovlige datapakker forsøge at sætte
-en kæp i hjulet på de programmer, der lytter. Hvis vi var
+protokoller) og ved snedige, ulovlige datapakker forsÃ¸ge at sÃ¦tte
+en kÃ¦p i hjulet pÃ¥ de programmer, der lytter. Hvis vi var
 flittige og lappede alle hullerne i serverprogrammerne og i
-øvrigt overvågede maskinen døgnet rundt, så ville denne løsning
-være god nok, men den er dyr i arbejdstimer.
+Ã¸vrigt overvÃ¥gede maskinen dÃ¸gnet rundt, sÃ¥ ville denne lÃ¸sning
+vÃ¦re god nok, men den er dyr i arbejdstimer.
 </para>
 </sect3>
 </sect2>
 
 <sect2>
-<title>Den lukkede model bør vælges som udgangspunkt</title>
+<title>Den lukkede model bÃ¸r vÃ¦lges som udgangspunkt</title>
 
 <para>
-Hverken den åbne eller helt lukkede model er særligt nyttige. Der
+Hverken den Ã¥bne eller helt lukkede model er sÃ¦rligt nyttige. Der
 skal mere til. Som udgangspunkt er den lukkede model imidlertid
 den sikreste, men den skal kombineres med connection-tracking.
 </para>
 
 <para>
-Forhåbentlig fremgår det af ovenstående, at en firewall egentlig
+ForhÃ¥bentlig fremgÃ¥r det af ovenstÃ¥ende, at en firewall egentlig
 er et ret kompliceret stykke software. Man skal nu ikke lade sig
-skræmme væk af den grund. Det er i grunden ret nemt at skrive de
-nødvendige kommandoer og så blot kontrollere en gang i mellem, at
-det kører som det skal.
+skrÃ¦mme vÃ¦k af den grund. Det er i grunden ret nemt at skrive de
+nÃ¸dvendige kommandoer og sÃ¥ blot kontrollere en gang i mellem, at
+det kÃ¸rer som det skal.
 </para>
 
 <para>
 Man bruger <command> iptables </command> kommandoen til at
-opsætte firewall reglerne i kernen. Men man behøver ikke at kunne
+opsÃ¦tte firewall reglerne i kernen. Men man behÃ¸ver ikke at kunne
 <command> iptables </command> kommando syntaksen, idet SuSE,
-Red Hat og andre lavet GUI-administration af firewall reglerne. Så
-hvis man holder sig til de gode, kendte distributioner eller på
-anden måde sørger for, at de nødvendige ting er til stede, så kan
+Red Hat og andre lavet GUI-administration af firewall reglerne. SÃ¥
+hvis man holder sig til de gode, kendte distributioner eller pÃ¥
+anden mÃ¥de sÃ¸rger for, at de nÃ¸dvendige ting er til stede, sÃ¥ kan
 man blot krydse af, hvilke servere andre udefra skal have lov at
-bruge, om nogen.  Er man af gør det selv typen, følger her en
-opskrift på, hvordan man kan lave en lille komplet
-firewall-opsætning.
+bruge, om nogen.  Er man af gÃ¸r det selv typen, fÃ¸lger her en
+opskrift pÃ¥, hvordan man kan lave en lille komplet
+firewall-opsÃ¦tning.
 </para>
 
 
@@ -336,11 +336,11 @@ firewall-opsætning.
 
 <para>
 Senere bliver kommandoerne til en firewall beskrevet og forklaret
-grundigt, men for den utålmodige, som bare vil i gang, kan vi
+grundigt, men for den utÃ¥lmodige, som bare vil i gang, kan vi
 lige vise "Rusty's Really Quick Guide To Packet Filtering" fra
 packet-filtering-HOWTO. Vi antager, at maskinen har en
-modemforbindelse til en ISP og ikke ønsker, at man skal kunne
-tilgå maskinen udefra:
+modemforbindelse til en ISP og ikke Ã¸nsker, at man skal kunne
+tilgÃ¥ maskinen udefra:
 </para>
 
 <programlisting>
@@ -362,21 +362,21 @@ tilgå maskinen udefra:
 </programlisting>
 
 <para>
-De første kommandoer er nødvendige med de fleste
-distributionskerner. Det er ikke spor svært at lave sin egen
+De fÃ¸rste kommandoer er nÃ¸dvendige med de fleste
+distributionskerner. Det er ikke spor svÃ¦rt at lave sin egen
 superkerne, hvis man interesserer sig for, hvad en kerne er, og
-man har lært noget om, hvordan et operativsystem fungerer. Har
+man har lÃ¦rt noget om, hvordan et operativsystem fungerer. Har
 man en kerne hvor alt er kompileret ind i kernen, vil systemet
-være en anelse hurtigere<footnote><para>Summen af denne og andre
-optimeringer kan tydeligt mærkes også på dagens hurtigste
+vÃ¦re en anelse hurtigere<footnote><para>Summen af denne og andre
+optimeringer kan tydeligt mÃ¦rkes ogsÃ¥ pÃ¥ dagens hurtigste
 maskiner. </para></footnote>.
 </para>
 
 <para>
-<command>iptables -N block</command> laver en kæde (en skuffe
-eller hylde) for et regelsæt. Regelsættene kaldes chains, fordi
-man bruger reglerne i den rækkefølge, de er sat ind i kæden.
-Kæden her hedder "block", blokér.
+<command>iptables -N block</command> laver en kÃ¦de (en skuffe
+eller hylde) for et regelsÃ¦t. RegelsÃ¦ttene kaldes chains, fordi
+man bruger reglerne i den rÃ¦kkefÃ¸lge, de er sat ind i kÃ¦den.
+KÃ¦den her hedder "block", blokÃ©r.
 </para>
 
 <para>
@@ -385,89 +385,89 @@ Kæden her hedder "block", blokér.
 </para>
 
 <para>
-<command>-A block</command> indsætter en regel i block-kæden, som
+<command>-A block</command> indsÃ¦tter en regel i block-kÃ¦den, som
 siger, at man skal bruge tilstands-modulet, <command> -m state
-</command>, og undersøge, om pakken tilhører en forbindelse
-(connection), som allerede er startet, eller som er i slægt med en
+</command>, og undersÃ¸ge, om pakken tilhÃ¸rer en forbindelse
+(connection), som allerede er startet, eller som er i slÃ¦gt med en
 connection <command>--state ESTABLISHED,RELATED</command>, hvis
-det er tilfældet, skal pakken accepteres, d.v.s. regelfortolkeren
+det er tilfÃ¦ldet, skal pakken accepteres, d.v.s. regelfortolkeren
 jumper (-j) hopper til feltet for videresendelse af pakker,
 "ACCEPT".
 </para>
 
 <para>
-Næste linje siger, at alle pakker, som <emphasis>ikke</emphasis>
-kommer udefra (i dette tilfælde fra et modem som bruger
+NÃ¦ste linje siger, at alle pakker, som <emphasis>ikke</emphasis>
+kommer udefra (i dette tilfÃ¦lde fra et modem som bruger
 Point-to-Point-Protokollen, PPP), skal have lov at passere.
 </para>
 
 <para>
-Alt andet smides simpelt hen væk! DROP!
+Alt andet smides simpelt hen vÃ¦k! DROP!
 </para>
 
 <para>
-Og de sidste par linjer bevirker, som kommentaren siger, at både
+Og de sidste par linjer bevirker, som kommentaren siger, at bÃ¥de
 pakker, som er INPUT og pakker og FORWARD pakker kommer igennem
-den regelkæde, som vi har dannet. Dette er, som nævnt, et
-eksempel for den utålmodige, men for den tålmodige er der en
-nærmere forklaring af kommandoen og mulighederne med netfilter
+den regelkÃ¦de, som vi har dannet. Dette er, som nÃ¦vnt, et
+eksempel for den utÃ¥lmodige, men for den tÃ¥lmodige er der en
+nÃ¦rmere forklaring af kommandoen og mulighederne med netfilter
 i <xref linkend="sikkerhed-iptables-cmd"/>.
 </para>
 
 
-<!-- dax 2003-10-19 hertil, næste paragraffer stort set uændrede /-->
+<!-- dax 2003-10-19 hertil, nÃ¦ste paragraffer stort set uÃ¦ndrede /-->
 
 
 <para>
-Det er vigtigt at forstå, at en firewall ikke er spor sikker, hvis den
-er sat forkert op. Når firewallen er sat op, bør man grundigt teste,
-at den nu også gør, som man forventer. En vigtig del af sikkerheden
-omkring en firewall er desuden, at man registrerer og overvåger den trafik,
-der passerer igennem den. Hvis man glemmer at holde øje med de
-log-filer, firewallen genererer, er ens sikkerhed reelt væk (Se også
-<xref linkend="filtjek"/>). Man kan så risikere, at man ikke opdager,
-at der har været indbrud. En firewall er aldrig helt sikker, og man
-bør kun sætte en firewall op, hvis man har i sinde at vedligeholde
+Det er vigtigt at forstÃ¥, at en firewall ikke er spor sikker, hvis den
+er sat forkert op. NÃ¥r firewallen er sat op, bÃ¸r man grundigt teste,
+at den nu ogsÃ¥ gÃ¸r, som man forventer. En vigtig del af sikkerheden
+omkring en firewall er desuden, at man registrerer og overvÃ¥ger den trafik,
+der passerer igennem den. Hvis man glemmer at holde Ã¸je med de
+log-filer, firewallen genererer, er ens sikkerhed reelt vÃ¦k (Se ogsÃ¥
+<xref linkend="filtjek"/>). Man kan sÃ¥ risikere, at man ikke opdager,
+at der har vÃ¦ret indbrud. En firewall er aldrig helt sikker, og man
+bÃ¸r kun sÃ¦tte en firewall op, hvis man har i sinde at vedligeholde
 den.
 </para>
 
 <para>
-En forkert opsat firewall eller en firewall, ingen holder øje med,
-kan være værre end ingen firewall! Tilstedeværelsen af en firewall
-giver let en falsk fornemmelse af tryghed, så man ikke er omhyggelig
-nok med at beskytte hver enkelt computer. Det er også meget vigtigt,
+En forkert opsat firewall eller en firewall, ingen holder Ã¸je med,
+kan vÃ¦re vÃ¦rre end ingen firewall! TilstedevÃ¦relsen af en firewall
+giver let en falsk fornemmelse af tryghed, sÃ¥ man ikke er omhyggelig
+nok med at beskytte hver enkelt computer. Det er ogsÃ¥ meget vigtigt,
 at man holder sig ajour med nyheder om fejl i den
-software, der anvendes på firewallen 
+software, der anvendes pÃ¥ firewallen 
 (Se <xref linkend="sikkerhedsreferencer"/>).
 </para>
 
 <para>
-Selvom man har sat en firewall op for at beskytte et netværk imod
-folk på internettet, bør man stadig være omhyggelig med sikkerheden i det
-lokale netværk. For det første kan det være, at nogen bryder igennem
-ens firewall, og dermed er der kun lokalnetværkets sikkerhed tilbage. For det
-andet beskytter en firewall ikke imod internt misbrug af ens netværk. 
-I en virksomhed eller på et kollegium eller lignende kan man ikke
-altid stole på de lokale brugere. Opgørelser fra IBM peger på, at
-der ca. er ligeså mange interne netværksindbrud som eksterne.
+Selvom man har sat en firewall op for at beskytte et netvÃ¦rk imod
+folk pÃ¥ internettet, bÃ¸r man stadig vÃ¦re omhyggelig med sikkerheden i det
+lokale netvÃ¦rk. For det fÃ¸rste kan det vÃ¦re, at nogen bryder igennem
+ens firewall, og dermed er der kun lokalnetvÃ¦rkets sikkerhed tilbage. For det
+andet beskytter en firewall ikke imod internt misbrug af ens netvÃ¦rk. 
+I en virksomhed eller pÃ¥ et kollegium eller lignende kan man ikke
+altid stole pÃ¥ de lokale brugere. OpgÃ¸relser fra IBM peger pÃ¥, at
+der ca. er ligesÃ¥ mange interne netvÃ¦rksindbrud som eksterne.
 </para>
 
 <para>
 Et andet problem inden for firewallen er lokale modems. Hvis en
 bruger har et modem, hvormed han kobler sig direkte til sin
-hjemmearbejdsplads, der ikke er sikret, så er der via denne
+hjemmearbejdsplads, der ikke er sikret, sÃ¥ er der via denne
 hjemmeopkobling fri bane til virksomhedens net. Der er mange
-variationer på dette sikkerhedshul, for eksempel også at nogen
-medbringer en transportabel maskine og sætter den på kollegiets
-eller virksomhedens net. På Linux/GNU/BSD platforme sikrer man
+variationer pÃ¥ dette sikkerhedshul, for eksempel ogsÃ¥ at nogen
+medbringer en transportabel maskine og sÃ¦tter den pÃ¥ kollegiets
+eller virksomhedens net. PÃ¥ Linux/GNU/BSD platforme sikrer man
 den enkelte maskine bedst ved at den er firewall for sig selv.
 </para>
 
 <para>
-Så det er vigtigt at bemærke, at en firewall ikke er en universalløsning på
+SÃ¥ det er vigtigt at bemÃ¦rke, at en firewall ikke er en universallÃ¸sning pÃ¥
 sikkerhed, som mange tror i dag. Den er god at have, hvis
-man er indstillet på at gøre det ordentligt. Men den er ikke en
-erstatning for alle de andre sikkerhedsforanstaltninger på et netværk.
+man er indstillet pÃ¥ at gÃ¸re det ordentligt. Men den er ikke en
+erstatning for alle de andre sikkerhedsforanstaltninger pÃ¥ et netvÃ¦rk.
 </para>
 
 <para>
@@ -485,9 +485,9 @@ Man er aldrig helt sikker, selv med en firewall ...
 <sect1 id="firewall-links">
 
 <title>Links</title>
-<indexterm><primary>Links på nettet</primary></indexterm>
+<indexterm><primary>Links pÃ¥ nettet</primary></indexterm>
 <para>
-I dette kapitel henvises der til en række HOWTO's og andre dokumenter rundt 
+I dette kapitel henvises der til en rÃ¦kke HOWTO's og andre dokumenter rundt 
 om i teksten. Her er en hurtig oversigt:
 </para>
 
@@ -528,9 +528,9 @@ http://www.netfilter.org/unreliable-guides/packet-filtering-HOWTO/packet-filteri
   </para>
 
   <para>
-  Eller måske en kombineret firewall og web/mail/db/ftp server:
+  Eller mÃ¥ske en kombineret firewall og web/mail/db/ftp server:
   http://www.e-smith.org/
-  (Gert Lavsen bruger den på en 266MHz PII)
+  (Gert Lavsen bruger den pÃ¥ en 266MHz PII)
   </para></listitem>
 
 </itemizedlist>
@@ -541,10 +541,10 @@ Andet:
 
 <itemizedlist mark="bullet">
   <listitem><para>
-    Sikkerhed på Linux <ulink url="http://www.sslug.dk/artikler/Linux_sikkerhed/">http://www.sslug.dk/artikler/Linux_sikkerhed/</ulink>
+    Sikkerhed pÃ¥ Linux <ulink url="http://www.sslug.dk/artikler/Linux_sikkerhed/">http://www.sslug.dk/artikler/Linux_sikkerhed/</ulink>
   </para></listitem>
   <listitem><para>
-    Linux - Friheden til at vælge <ulink url="http://&linuxbogurl;/bog/">&linuxbogurl;/bog/</ulink>
+    Linux - Friheden til at vÃ¦lge <ulink url="http://&linuxbogurl;/bog/">&linuxbogurl;/bog/</ulink>
   </para></listitem>
   <listitem><para>
     IPChains i Linux 2.2 <ulink url="http://www.sslug.dk/sikkerhed/ipchains.html">http://www.sslug.dk/sikkerhed/ipchains.html</ulink>
@@ -567,25 +567,25 @@ Andet:
 <title>Firewallens funktioner</title>
 
 <indexterm><primary>firewall</primary>
-           <secondary>grundlæggende funktioner</secondary>
+           <secondary>grundlÃ¦ggende funktioner</secondary>
 </indexterm>
 
 
 <para>
-Linux firewallen vil på et mindre lokalnet som regel have flere
+Linux firewallen vil pÃ¥ et mindre lokalnet som regel have flere
 funktioner. Den skal kontrollere, hvilken trafik, der kan
 tillades, den skal sikre os mod angreb, og endelig kan den
-overvåge trafikmængder og for eksempel fortælle os, om et eller
-andet program begynder at udspy pakker på internettet. Det sker
-somme tider. Og måske er man bare almindeligt nysgerrig og ønsker
-at se, hvad der sker på maskinen. Endvidere vil vi også gerne
+overvÃ¥ge trafikmÃ¦ngder og for eksempel fortÃ¦lle os, om et eller
+andet program begynder at udspy pakker pÃ¥ internettet. Det sker
+somme tider. Og mÃ¥ske er man bare almindeligt nysgerrig og Ã¸nsker
+at se, hvad der sker pÃ¥ maskinen. Endvidere vil vi ogsÃ¥ gerne
 kunne servicere maskiner, som ikke har et offentligt IP-nummer.
 </para>
 
 <itemizedlist mark="bullet" id="sikkerhed-fw-funx">
 <listitem><para>Kontrol af trafik-typer</para></listitem>
-<listitem><para>Sikring mod indtrængen</para></listitem>
-<listitem><para>Overvågning, logning</para></listitem>
+<listitem><para>Sikring mod indtrÃ¦ngen</para></listitem>
+<listitem><para>OvervÃ¥gning, logning</para></listitem>
 <listitem><para>Servicering af maskiner uden offentligt IP-nummer</para></listitem>
 </itemizedlist>
 
@@ -595,57 +595,57 @@ kunne servicere maskiner, som ikke har et offentligt IP-nummer.
 <indexterm><primary>kontrol af trafik</primary></indexterm>
 
 <para>
-Data sendes igennem et netværk i form af datapakker. På
-internettet bruges IP-pakker. En IP-pakke består af en header med
+Data sendes igennem et netvÃ¦rk i form af datapakker. PÃ¥
+internettet bruges IP-pakker. En IP-pakke bestÃ¥r af en header med
 information om, hvor den skal hen, hvor den kommer fra, hvad den
 er for en slags samt eventuelt nogle data.  Ved pakkefiltrering
-kigger man på informationen i headeren og bestemmer, hvad der
+kigger man pÃ¥ informationen i headeren og bestemmer, hvad der
 skal ske med pakken: Om den skal afvises eller slippes igennem.
 </para>
 
 <para>
-Ideen er så, at en firewall stopper alle de pakker, som man ikke
-har "inviteret". Kører man f. eks. en web-server, slipper man kun
+Ideen er sÃ¥, at en firewall stopper alle de pakker, som man ikke
+har "inviteret". KÃ¸rer man f. eks. en web-server, slipper man kun
 web-pakker igennem. En privat maskine med internetadgang kan godt
-stoppe alle udefra kommende forespørgsler samtidigt med, at alle
-de netværks-sessions, der startes af brugeren får lov til at køre
+stoppe alle udefra kommende forespÃ¸rgsler samtidigt med, at alle
+de netvÃ¦rks-sessions, der startes af brugeren fÃ¥r lov til at kÃ¸re
 som normalt, d.v.s. at <emphasis>svar-pakker</emphasis> fra det
-eksterne net får lov at komme igennem.
+eksterne net fÃ¥r lov at komme igennem.
 </para>
 
 <para>
-Man bør blokere:
+Man bÃ¸r blokere:
 </para>
 
 <itemizedlist mark="bullet">
   <listitem><para>
       Pakker fra services, der ikke skal bruges. Hvis en server f.eks. ikke
-      tilbyder FTP, er det klogt at afvise alle forsøg på at
+      tilbyder FTP, er det klogt at afvise alle forsÃ¸g pÃ¥ at
       etablere en FTP-forbindelse med det samme.
   </para></listitem>
   <listitem><para>
-      Pakker med mistænkelige bits sat som IP source routing (kan bruges til
+      Pakker med mistÃ¦nkelige bits sat som IP source routing (kan bruges til
       spoofing, hvilket betyder at udgive pakkerne for at komme fra
       et andet sted, end de egentlig kommer fra).
   </para></listitem>
   <listitem><para>
       Pakker, der er til en lokal host, som ikke burde modtage 
       pakker udefra. Det vil sige pakker, som er direkte addreseret til en
-      maskine, som ikke har lov til at snakke med fremmede maskiner på
+      maskine, som ikke har lov til at snakke med fremmede maskiner pÃ¥
       internettet.
   </para></listitem>
 </itemizedlist>
 
  <indexterm>
-  <primary>netværkssikkerhed</primary>
+  <primary>netvÃ¦rkssikkerhed</primary>
   <secondary>spoofing</secondary>
  </indexterm>
 
 <para>
-Hvis for eksempel Boligforeningen Xyzzy-42 ikke ønsker, at der
-skal være adgang til FTP-serveren fra maskiner udefra, men gerne
-vil se, hvor mange, der prøver at komme i forbindelse med
-serveren, så kan nedenstående kommando bruges.
+Hvis for eksempel Boligforeningen Xyzzy-42 ikke Ã¸nsker, at der
+skal vÃ¦re adgang til FTP-serveren fra maskiner udefra, men gerne
+vil se, hvor mange, der prÃ¸ver at komme i forbindelse med
+serveren, sÃ¥ kan nedenstÃ¥ende kommando bruges.
 </para>
 
 <screen>
@@ -653,10 +653,10 @@ serveren, så kan nedenstående kommando bruges.
 </screen>
 
 <para>
-For mere information om IP, TCP og netværk generelt se f.eks.
-"Introduktion til Netværk" af Geir Steen-Olsen & Arne Stalheim
+For mere information om IP, TCP og netvÃ¦rk generelt se f.eks.
+"Introduktion til NetvÃ¦rk" af Geir Steen-Olsen & Arne Stalheim
 (IDG-bog til 69 kr.) eller "Linux - Friheden til til
-systemadministration" på <ulink
+systemadministration" pÃ¥ <ulink
 url="http://&linuxbogurl;/">&linuxbogurl;</ulink>.  Den grundige
 gennemgang af IPtables begynder <xref linkend="sikkerhed-netfilter"/>
 </para>
@@ -664,29 +664,29 @@ gennemgang af IPtables begynder <xref linkend="sikkerhed-netfilter"/>
 
 
 <sect2 id="sikkerhed-indtraengen">
-<title>Sikring mod indtrængen</title>
+<title>Sikring mod indtrÃ¦ngen</title>
 <para>
-Firewallens vigtigste opgave er selvfølgelig at hindre
-uvedkommende at trænge ind på systemet. Det bedste er at spærre
-for alt og åbne for en positivliste, som kan bestå af de tilladte
+Firewallens vigtigste opgave er selvfÃ¸lgelig at hindre
+uvedkommende at trÃ¦nge ind pÃ¥ systemet. Det bedste er at spÃ¦rre
+for alt og Ã¥bne for en positivliste, som kan bestÃ¥ af de tilladte
 brugeres IP-numre. Hvis man derimod vil tillade bruger XYZ at
 komme ind gennem vores firewall, uanset hvilken maskine XYZ
-benytter, ses (let) at det ikke kan lade sig gøre ved hjælp af
-firewall-regler. Man kan ikke på netværksniveau eller
-transportniveau åbne for en bestemt loginkonto, men her kommer
-SSH, secure shell, protokollen heldigvis til undsætning og løser
-problemet elegant og sikkert på session-niveau.
+benytter, ses (let) at det ikke kan lade sig gÃ¸re ved hjÃ¦lp af
+firewall-regler. Man kan ikke pÃ¥ netvÃ¦rksniveau eller
+transportniveau Ã¥bne for en bestemt loginkonto, men her kommer
+SSH, secure shell, protokollen heldigvis til undsÃ¦tning og lÃ¸ser
+problemet elegant og sikkert pÃ¥ session-niveau.
 </para>
 </sect2>
 
 
 <sect2 id="sikkerhed-logning">
-<title>Overvågning og logning</title>
+<title>OvervÃ¥gning og logning</title>
 <para>
-Når man installerer en regel i kernens pakkefilter, holder kernen
-automatisk øje med, hvor mange pakker der falder ind under denne
-regel, og med -L (list) kommandoen få iptables til at vise
-tællerne (counters).
+NÃ¥r man installerer en regel i kernens pakkefilter, holder kernen
+automatisk Ã¸je med, hvor mange pakker der falder ind under denne
+regel, og med -L (list) kommandoen fÃ¥ iptables til at vise
+tÃ¦llerne (counters).
 </para>
 
 <para>
@@ -705,61 +705,61 @@ Et eksempel:
 <title>Servicering af maskiner uden offentligt IP-nummer</title>
 
 <para>
-En router for et lokalnetværk har som regel flere opgaver end at
+En router for et lokalnetvÃ¦rk har som regel flere opgaver end at
 sende pakker videre og stoppe uvedkommende pakker. I de fleste
-netværk bruger man adresser, som er reserveret til testformål, de
-såkaldte private adresser. De skal ompakkes til en rigtig
+netvÃ¦rk bruger man adresser, som er reserveret til testformÃ¥l, de
+sÃ¥kaldte private adresser. De skal ompakkes til en rigtig
 IP-adresse, og hertil bruger routeren NAT, Network Address
 Translation.
 </para>
 
 <para>
 NAT er en teknik, som minder om en transparent
-proxy. NAT-ing har vist sig at være en halv løsning på mangelen
-på IP-numre. IP-numre er 32 bit.  Hvis man kunne udnytte alle
-4,294,967,295 numre (4 mia.), så ville det stadig ikke være nok
-til at dække behovet. Der er ca. 0.5 mia adresser, som bliver
-brugt til specielle formål, men selv hvis man kunne inddrage dem
-til "almindelige" adresser, så ville der ikke være nok numre til
-at dække behovet for at hvert menneske havde et IP-nummer, for
+proxy. NAT-ing har vist sig at vÃ¦re en halv lÃ¸sning pÃ¥ mangelen
+pÃ¥ IP-numre. IP-numre er 32 bit.  Hvis man kunne udnytte alle
+4,294,967,295 numre (4 mia.), sÃ¥ ville det stadig ikke vÃ¦re nok
+til at dÃ¦kke behovet. Der er ca. 0.5 mia adresser, som bliver
+brugt til specielle formÃ¥l, men selv hvis man kunne inddrage dem
+til "almindelige" adresser, sÃ¥ ville der ikke vÃ¦re nok numre til
+at dÃ¦kke behovet for at hvert menneske havde et IP-nummer, for
 slet ikke at tale om, hvis vi skulle have IP-numre til arbejde og
-hjem, køleskab, cykel og fjernsyn.
+hjem, kÃ¸leskab, cykel og fjernsyn.
 </para>
 
 <para>
-Hvis to maskiner på et net udgiver sig for at have samme
-IP-nummer, så vil kommunikationen blive upålidelig for begge
+Hvis to maskiner pÃ¥ et net udgiver sig for at have samme
+IP-nummer, sÃ¥ vil kommunikationen blive upÃ¥lidelig for begge
 maskiner. <!-- TODO: Illustration /-->
 </para>
 
 <para>
-Da man jo ikke behøver at koble et lokalnet på det globale
-internet, behøver man heller ikke at få en adresse på det
-globale net fra InterNIC eller deres lokale repræsentant.
-Man kunne sådan set godt bruge de numre, man synes så pænest ud.
+Da man jo ikke behÃ¸ver at koble et lokalnet pÃ¥ det globale
+internet, behÃ¸ver man heller ikke at fÃ¥ en adresse pÃ¥ det
+globale net fra InterNIC eller deres lokale reprÃ¦sentant.
+Man kunne sÃ¥dan set godt bruge de numre, man synes sÃ¥ pÃ¦nest ud.
 Imidlertid viser det sig ofte, at folk alligevel gerne vil
 have deres separate TCP/IP-net tilsluttet det globale internet
-på et eller andet tidspunkt, og derfor indskærpes det overfor
-netværksadministratorer, at man skal bruge de "private adresser",
-selv om man ikke lige nu har tænkt sig at slutte maskinerne
-til det offentlige net. De private adresser får ikke lov til
-at passere en router, det er indbygget i routeren.  På den måde
-kan man undgå uskyldige fejltagelser, hvor en maskine har fået
-et IP-nummer, som tilhører en anden.
+pÃ¥ et eller andet tidspunkt, og derfor indskÃ¦rpes det overfor
+netvÃ¦rksadministratorer, at man skal bruge de "private adresser",
+selv om man ikke lige nu har tÃ¦nkt sig at slutte maskinerne
+til det offentlige net. De private adresser fÃ¥r ikke lov til
+at passere en router, det er indbygget i routeren.  PÃ¥ den mÃ¥de
+kan man undgÃ¥ uskyldige fejltagelser, hvor en maskine har fÃ¥et
+et IP-nummer, som tilhÃ¸rer en anden.
 </para>
 
 <para>
 De mest benyttede private adresser er intervallet
-192.168.1.0 - 192.168.255.255. Man kan også bruge alle adresser,
+192.168.1.0 - 192.168.255.255. Man kan ogsÃ¥ bruge alle adresser,
 som begynder med 10, og adresser, som begynder med 172.16
 </para>
 
 <para>
-Det er så routerens opgave at foretage en omskrivning af pakkerne
+Det er sÃ¥ routerens opgave at foretage en omskrivning af pakkerne
 og sende dem videre, som om de kom fra routerens eksterne,
-offentligt synlige IP-adresse. Lige så vigtigt er det, at den kan
+offentligt synlige IP-adresse. Lige sÃ¥ vigtigt er det, at den kan
 identificere svar-pakkerne, og sende dem til den rigtige maskine.
-Dertil bruges portnumrene som en forlængelse af IP-adressen.
+Dertil bruges portnumrene som en forlÃ¦ngelse af IP-adressen.
 Denne funktion kaldes <emphasis>N</emphasis>etwork
 <emphasis>A</emphasis>ddress <emphasis>T</emphasis>ranslation
 eller NAT. En router, som kan det, kaldes somme tider en NATting
@@ -767,9 +767,9 @@ router.
 </para>
 
 <para>
-Den utålmodige læser kan nu springe frem til 
+Den utÃ¥lmodige lÃ¦ser kan nu springe frem til 
 <xref linkend="sikkerhed-netfilter"/>,
-mens den grundige læser i de næste afsnit kan få meget mere at
+mens den grundige lÃ¦ser i de nÃ¦ste afsnit kan fÃ¥ meget mere at
 vide om, hvordan Linux fungerer.
 </para>
 
@@ -778,36 +778,36 @@ vide om, hvordan Linux fungerer.
 
 
 <sect1 id="sikkerhed-virkemaader">
-<title>Firewallens virkemåder</title>
+<title>Firewallens virkemÃ¥der</title>
 
 <para>
 Som sagt kan en Linux-pc <!-- Den stavemaade er jeg ikke glad
 for, men jeg kan ikke faa verificeret en kapitaliseret version
 lige nu/--> fungere som firewall og router. En firewall-router er
-dog ofte en dedikeret, flad boks, som egentlig er et diskløst
-system, der kan fjernstyres fra en anden computer.  Der fås
+dog ofte en dedikeret, flad boks, som egentlig er et disklÃ¸st
+system, der kan fjernstyres fra en anden computer.  Der fÃ¥s
 billige routere til mindre virksomheder og private net, og der
-fås også store routere med mange stik, som kan håndtere meget
-store trafikmængder. Der er en Linux-kerne inde i mange af den
+fÃ¥s ogsÃ¥ store routere med mange stik, som kan hÃ¥ndtere meget
+store trafikmÃ¦ngder. Der er en Linux-kerne inde i mange af den
 slags dedikerede routere. TODO: eksempler, billede.
 </para>
 
 <para>
-Inde i firewallen inspiceres pakkerne. Hvordan man gør, og hvor
-meget det koster i tid, og hvilke problemer, der kan opstå, er
+Inde i firewallen inspiceres pakkerne. Hvordan man gÃ¸r, og hvor
+meget det koster i tid, og hvilke problemer, der kan opstÃ¥, er
 emnet for dette afsnit.
 </para>
 
 <para>
-Netværksmodellen (<xref linkend="sikkerhed-layer"/>) viser to
+NetvÃ¦rksmodellen (<xref linkend="sikkerhed-layer"/>) viser to
 ting. Dels viser den abstraktionslagene, som giver de elektriske
 signaler mening. Dels viser modellen, at en applikation, som
-ønsker at sende data (typisk tekst) til en anden applikation på
-en remote værtsmaskine, skal sende sin pakke gennem adskillige
+Ã¸nsker at sende data (typisk tekst) til en anden applikation pÃ¥
+en remote vÃ¦rtsmaskine, skal sende sin pakke gennem adskillige
 instanser (lag svarer her til programafsnit eller
 kernefunktioner). Hver gang pakken passerer et lag, bliver det
-hele lagt i en slags "konvolut". Først sendes applikationens
-information til transportlaget, og her lægges TCP-oplysninger ind
+hele lagt i en slags "konvolut". FÃ¸rst sendes applikationens
+information til transportlaget, og her lÃ¦gges TCP-oplysninger ind
 i nogle felter forrest i pakken. Pakken (eller rettere en pointer
 til den) sendes videre til IP-laget, som forsyner den med en 
 IP-header, "konvolut", foran. 
@@ -832,10 +832,10 @@ IP-header, "konvolut", foran.
 
 
 <para>
-Hver konvolut svarer til et lag i netværksmodellen. Uden om
-IP-pakken er der på et ethernet en ethernet pakke. Det er en god
-ide at se på den slags pakker med programmet ethereal. Når
-ethernet-headeren er selected i mellemste rude, så er de
+Hver konvolut svarer til et lag i netvÃ¦rksmodellen. Uden om
+IP-pakken er der pÃ¥ et ethernet en ethernet pakke. Det er en god
+ide at se pÃ¥ den slags pakker med programmet ethereal. NÃ¥r
+ethernet-headeren er selected i mellemste rude, sÃ¥ er de
 tilsvarende bytes highlighted i hexdump-ruden nederst.  
 </para>
 
@@ -868,27 +868,27 @@ Lagene fra den simple DoD model med kommentarer ses her:
 <itemizedlist>
 <listitem><para>
 Applikationslaget, f.eks. FTP og HTTP. Applikationen kan selv lave
-nogle regler for, hvordan pakkerne skal håndteres og se ud. Der
+nogle regler for, hvordan pakkerne skal hÃ¥ndteres og se ud. Der
 er <emphasis> mange </emphasis> forskellige
 applikationsprotokoller, og det er let at lave nogle selv eller
-afprøve teknikken ved at lave f.eks. en <command>finger</command>
+afprÃ¸ve teknikken ved at lave f.eks. en <command>finger</command>
 klient (TODO: Reference til gawk-finger-server).
 </para></listitem>
 
 <listitem><para>
-Transportlaget, TCP står for Transport Control Protocol. Her
-tilføjes TCP-portnummer, TCP-type, tjeksum m.v.
+Transportlaget, TCP stÃ¥r for Transport Control Protocol. Her
+tilfÃ¸jes TCP-portnummer, TCP-type, tjeksum m.v.
 </para></listitem>
 
 <listitem><para>
-Netværkslaget, her arbejdes med IP-numre, SNMP, ICMP og
+NetvÃ¦rkslaget, her arbejdes med IP-numre, SNMP, ICMP og
 router-protokoller; IP, eller Inter Net Protokollen, er reglerne
-for, hvordan man kommer fra ét lokalnet til et andet.
+for, hvordan man kommer fra Ã©t lokalnet til et andet.
 </para></listitem>
 
 <listitem><para>
 Fysisk link-lag, d.v.s. MAC-adresser, ethernetkort og ledninger.
-Mac-adresser er knyttet til ethernet-pakker. Der er egentlig også
+Mac-adresser er knyttet til ethernet-pakker. Der er egentlig ogsÃ¥
 et par abstraktionslag her.
 </para></listitem>
 </itemizedlist>
@@ -896,46 +896,46 @@ et par abstraktionslag her.
 <para>
 <emphasis>Et par forklaringer: </emphasis>
 Finger protokollen er en af de simplere, morsomme protokoller.
-Det er nemt at prøve fingerprotokollen: <command>finger
+Det er nemt at prÃ¸ve fingerprotokollen: <command>finger
 quake@geophys.washington.edu</command>
 </para>
 
 <para>
 SNMP, Simple Network Management Protocol, bruges til fjernkontrol
-af netværks enheder som f.eks routere. ICMP, Internet Control
+af netvÃ¦rks enheder som f.eks routere. ICMP, Internet Control
 Message Protocol, er den, som ping programmet benytter, og den,
-som gør det muligt at sende en besked om, at vores maskine ikke
-har tænkt sig at svare på for eksempel ftp. MAC-adresser kan listes med
-<command> arp -a </command> programmet og er et tal, som er brændt
-ind i netkortets ROM, så hardwaren altid kan skelne to netkort
+som gÃ¸r det muligt at sende en besked om, at vores maskine ikke
+har tÃ¦nkt sig at svare pÃ¥ for eksempel ftp. MAC-adresser kan listes med
+<command> arp -a </command> programmet og er et tal, som er brÃ¦ndt
+ind i netkortets ROM, sÃ¥ hardwaren altid kan skelne to netkort
 fra hinanden.
 </para>
 
 <para>
-Disse netværkslag er defineret med henblik på at kunne
-transportere så meget som muligt så hurtigt som muligt. Derfor
-behøver IP-laget ikke at interessere sig for, om data er korrekte
-eller om der lyttes på modtagerens portnummer, og heller ikke for
-applikationens datakodning og så videre.
+Disse netvÃ¦rkslag er defineret med henblik pÃ¥ at kunne
+transportere sÃ¥ meget som muligt sÃ¥ hurtigt som muligt. Derfor
+behÃ¸ver IP-laget ikke at interessere sig for, om data er korrekte
+eller om der lyttes pÃ¥ modtagerens portnummer, og heller ikke for
+applikationens datakodning og sÃ¥ videre.
 </para>
 
 <para>
-Det er derfor meget enkelt og "billigt", målt i tid, at filtrere
-indkommende pakker på netværkslaget. Bare se efter, om de er til
+Det er derfor meget enkelt og "billigt", mÃ¥lt i tid, at filtrere
+indkommende pakker pÃ¥ netvÃ¦rkslaget. Bare se efter, om de er til
 vores maskine, og om de kommer inde- eller udefra.
 </para>
 
 <para>
-Hvis firewallen imidlertid er nødt til også at udpakke
-transportpakken (d.v.s. se i TCP-konvolutten for at få fat i
-portnummeret) så kræver det selvfølgelig lidt mere tid. Hvis
+Hvis firewallen imidlertid er nÃ¸dt til ogsÃ¥ at udpakke
+transportpakken (d.v.s. se i TCP-konvolutten for at fÃ¥ fat i
+portnummeret) sÃ¥ krÃ¦ver det selvfÃ¸lgelig lidt mere tid. Hvis
 pakken yderligere skal om-adresseres og en ny tjeksum skal
-beregnes, så bliver det rigtig dyrt. Som tidligere nævnt er det
-for primitivt kun at filtrere på netværkslaget.
+beregnes, sÃ¥ bliver det rigtig dyrt. Som tidligere nÃ¦vnt er det
+for primitivt kun at filtrere pÃ¥ netvÃ¦rkslaget.
 </para>
 
 <para>
-De omtalte netværkslag svarer i kernen til programafsnit, som
+De omtalte netvÃ¦rkslag svarer i kernen til programafsnit, som
 bearbejder henholdsvis IP-adresse, TCP-oplysninger og, i sidste
 instans, flytter pakken til den applikation, som skal bruge data.
 </para>
@@ -943,29 +943,29 @@ instans, flytter pakken til den applikation, som skal bruge data.
 
 
 <sect2 id="sikkerhed-nat">
-<title>NAT-ing giver også mere sikkerhed</title>
+<title>NAT-ing giver ogsÃ¥ mere sikkerhed</title>
 
 <para>
-Som tidligere nævnt skal en NAT-ing router omsætte de interne
-eller private IP-adresser til den offentlige (lovligt købte)
-IP-adresse, som man har fået af sin internetudbyder (eng. »Internet
-Service Provider« eller »ISP«).  Man kan for eksempel bruge adresserne
+Som tidligere nÃ¦vnt skal en NAT-ing router omsÃ¦tte de interne
+eller private IP-adresser til den offentlige (lovligt kÃ¸bte)
+IP-adresse, som man har fÃ¥et af sin internetudbyder (eng. Â»Internet
+Service ProviderÂ« eller Â»ISPÂ«).  Man kan for eksempel bruge adresserne
 192.168.1.1-255 som lokale adresser, denne nummerserie er
-reserveret. Det er en del af de såkaldt "private adresser", som
-ikke bliver sendt rundt på det offentlige net. De er reserverede
-for at gøre det lettere at etablere et lokalnet uden at skulle
-søge og betale for "rigtige IP-adresser".
+reserveret. Det er en del af de sÃ¥kaldt "private adresser", som
+ikke bliver sendt rundt pÃ¥ det offentlige net. De er reserverede
+for at gÃ¸re det lettere at etablere et lokalnet uden at skulle
+sÃ¸ge og betale for "rigtige IP-adresser".
 </para>
 
 <para>
-NAT-teknikken er med til at gøre firewallen mere
-uigennemtrængelig. Det ses, hvis man forestiller sig hvad der
-sker, hvis man prøver at "snakke" med en maskine med et
+NAT-teknikken er med til at gÃ¸re firewallen mere
+uigennemtrÃ¦ngelig. Det ses, hvis man forestiller sig hvad der
+sker, hvis man prÃ¸ver at "snakke" med en maskine med et
 192.168.x.y - nummer? Pakkerne kommer ingen vegne. Hvis nogen
-prøver at trænge igennem en firewall ved at bryde ind i en
-kommunkations sekvens (trediemandsprincippet, spoofing) så skal
+prÃ¸ver at trÃ¦nge igennem en firewall ved at bryde ind i en
+kommunkations sekvens (trediemandsprincippet, spoofing) sÃ¥ skal
 pakkerne kunne snyde firewallen *og* modtagemaskinen inden for
-muren. Det er svært, og det sker heldigvis meget sjældent.
+muren. Det er svÃ¦rt, og det sker heldigvis meget sjÃ¦ldent.
 </para>
 
 </sect2>
@@ -977,18 +977,18 @@ muren. Det er svært, og det sker heldigvis meget sjældent.
 <title>Kontrol med oprettelse af forbindelser</title>
 
 <para>
-At åbne for alle forbindelser, som startes indefra, kræver, at
-firewallen holder styr på, hvilke forbindelser der er oprettet;
-for at gøre det, skal firewallen have inkluderet et modul, der
+At Ã¥bne for alle forbindelser, som startes indefra, krÃ¦ver, at
+firewallen holder styr pÃ¥, hvilke forbindelser der er oprettet;
+for at gÃ¸re det, skal firewallen have inkluderet et modul, der
 kaldes "connection tracking". Derved kan Linux-kernen styre
-hvilke forbindelser, der må oprettes imellem de to adskilte
-netværk. Den kan også logge, hvad der sker på disse forbindelser.
+hvilke forbindelser, der mÃ¥ oprettes imellem de to adskilte
+netvÃ¦rk. Den kan ogsÃ¥ logge, hvad der sker pÃ¥ disse forbindelser.
 </para>
 
 <para>
-Der er her tale om filtrering på session- eller forbindelses-niveau 
+Der er her tale om filtrering pÃ¥ session- eller forbindelses-niveau 
 (se <xref linkend="sikkerhed-layer" />). FTP er en protokol
-oven på TCP-laget, og når denne applikation går i gang, opretter
+oven pÃ¥ TCP-laget, og nÃ¥r denne applikation gÃ¥r i gang, opretter
 den mange "forbindelser". Det giver en ekstra vanskelighed for en
 firewall. Man skal huske, at FTP protokollen kom til verden i en
 tid, hvor der ikke var noget, der hed firewalls.
@@ -997,21 +997,21 @@ tid, hvor der ikke var noget, der hed firewalls.
 </sect2>
 
 
-<!-- dax 2003-10-23 god forklaring, belyser virkemåde, fredet! /-->
+<!-- dax 2003-10-23 god forklaring, belyser virkemÃ¥de, fredet! /-->
 
 <sect2 id="Ftp-problemet">
 <title>Ftp-problemet</title>
 <indexterm><primary>FTP og sikkerhed</primary></indexterm>
 
 <para>
-Traditionel FTP, også kaldet aktiv FTP, er lidt et problem i
-forbindelse med en firewall, da det laver indgående forbindelser.
+Traditionel FTP, ogsÃ¥ kaldet aktiv FTP, er lidt et problem i
+forbindelse med en firewall, da det laver indgÃ¥ende forbindelser.
 Ikke alene laver det 
-indgående forbindelser, men det er ikke muligt på forhånd at vide hvilken
-port, forbindelsen laves på. Det vil sige, at for at tillade sine brugere at
+indgÃ¥ende forbindelser, men det er ikke muligt pÃ¥ forhÃ¥nd at vide hvilken
+port, forbindelsen laves pÃ¥. Det vil sige, at for at tillade sine brugere at
 benytte aktiv FTP, er man
-nødt til at lade en masse porte stå åbne. Lad os se, hvad der sker,
-når man bruger traditionel FTP:
+nÃ¸dt til at lade en masse porte stÃ¥ Ã¥bne. Lad os se, hvad der sker,
+nÃ¥r man bruger traditionel FTP:
 </para>
 
 <programlisting>
@@ -1039,15 +1039,15 @@ Aktiv FTP
 
 <itemizedlist mark="bullet">
 
-<listitem><para>1) Først oprettes en forbindelse fra klienten på en 
-tilfældig port (her port 57724) til port 21, FTP-kommandoporten, 
-på serveren. Klienten overfører et portnummer, som den vil benytte 
-til dataoverførslen (her port 57726).</para></listitem>
+<listitem><para>1) FÃ¸rst oprettes en forbindelse fra klienten pÃ¥ en 
+tilfÃ¦ldig port (her port 57724) til port 21, FTP-kommandoporten, 
+pÃ¥ serveren. Klienten overfÃ¸rer et portnummer, som den vil benytte 
+til dataoverfÃ¸rslen (her port 57726).</para></listitem>
 
 <listitem><para>2) Serveren siger ok</para></listitem>
 
 <listitem><para>3) Serveren opretter en dataforbindelse fra sin
-FTP-dataport - port 20 - til den angivne port på klienten
+FTP-dataport - port 20 - til den angivne port pÃ¥ klienten
 (57726).</para></listitem>
 
 <listitem><para>4) Klienten siger ok</para></listitem>
@@ -1055,16 +1055,16 @@ FTP-dataport - port 20 - til den angivne port på klienten
 </itemizedlist>
 
 <para>
-Man kan se, at serveren opretter en forbindelse til klienten på port
-57726.  Da man ikke på forhånd kan vide hvilken port, der vil blive
-brugt på klienten - FTP-programmet vælger bare en ledig port - er det
-nødvendigt at lade et portinterval på klienten stå åbent for
-FTP-forbindelser, så FTP-klienten kan virke.
+Man kan se, at serveren opretter en forbindelse til klienten pÃ¥ port
+57726.  Da man ikke pÃ¥ forhÃ¥nd kan vide hvilken port, der vil blive
+brugt pÃ¥ klienten - FTP-programmet vÃ¦lger bare en ledig port - er det
+nÃ¸dvendigt at lade et portinterval pÃ¥ klienten stÃ¥ Ã¥bent for
+FTP-forbindelser, sÃ¥ FTP-klienten kan virke.
 </para>
 
 <para>
-Problemet kan løses med nyere udgaver af FTP,
-som kan køre "passiv FTP" i stedet for. Ved passiv FTP er det kun klienten,
+Problemet kan lÃ¸ses med nyere udgaver af FTP,
+som kan kÃ¸re "passiv FTP" i stedet for. Ved passiv FTP er det kun klienten,
 der starter forbindelser op. 
 </para>
 
@@ -1096,39 +1096,39 @@ Passiv FTP
 </example>
 
 <itemizedlist mark="bullet">
-<listitem><para>1) Først oprettes en forbindelse fra klienten på en 
-tilfældig port (57724) til port 21, ftp-kommandoporten, på serveren. 
-Klienten overfører en kommando, der fortæller serveren, at der skal 
+<listitem><para>1) FÃ¸rst oprettes en forbindelse fra klienten pÃ¥ en 
+tilfÃ¦ldig port (57724) til port 21, ftp-kommandoporten, pÃ¥ serveren. 
+Klienten overfÃ¸rer en kommando, der fortÃ¦ller serveren, at der skal 
 bruges passiv ftp.</para></listitem>
 
-<listitem><para>2) Serveren siger ok og fortæller hvilket portnummer,
+<listitem><para>2) Serveren siger ok og fortÃ¦ller hvilket portnummer,
 den vil have, at klienten connecter til.</para></listitem>
 
 <listitem><para>3) Klienten opretter en dataforbindelse fra sin
-ønskede dataport - her port 57726 - til den angivne port på serveren
+Ã¸nskede dataport - her port 57726 - til den angivne port pÃ¥ serveren
 (58734).</para></listitem>
 
 <listitem><para>4) Serveren siger ok</para></listitem>
 </itemizedlist>
 
 <para>
-Lad os se på, hvad der er vundet. Hvis man vedligeholder en firewall
+Lad os se pÃ¥, hvad der er vundet. Hvis man vedligeholder en firewall
 bag hvilken, der er klienter, der gerne vil hente via
-ftp, er man ved traditionel ftp nødt til at lade et portinterval stå
-åbent til indgående forbindelser, som de forskellige ftp-servere, folk
+ftp, er man ved traditionel ftp nÃ¸dt til at lade et portinterval stÃ¥
+Ã¥bent til indgÃ¥ende forbindelser, som de forskellige ftp-servere, folk
 henter fra, skal oprette. Bruges der derimod passiv ftp, skal man
-kun tillade udgående forbindelser - man behøver ikke længere lade et
-portinterval stå åbent til de indgående forbindelser fra diverse
+kun tillade udgÃ¥ende forbindelser - man behÃ¸ver ikke lÃ¦ngere lade et
+portinterval stÃ¥ Ã¥bent til de indgÃ¥ende forbindelser fra diverse
 ftp-servere.
 </para>
 
 <para>
-Ftp-serveren skal til gengæld lade en port stå åben til data, men den 
-bestemmer selv hvilken. Den oplysning sender den med over, før 
+Ftp-serveren skal til gengÃ¦ld lade en port stÃ¥ Ã¥ben til data, men den 
+bestemmer selv hvilken. Den oplysning sender den med over, fÃ¸r 
 dataforbindelsen oprettes. Alligevel betragtes det nogle steder som 
-et problem på serversiden. Selvom de fleste ftp-programmer - herunder
-web-browsere - understøtter passiv ftp, er det derfor ikke alle ftp-servere, 
-der understøtter det.
+et problem pÃ¥ serversiden. Selvom de fleste ftp-programmer - herunder
+web-browsere - understÃ¸tter passiv ftp, er det derfor ikke alle ftp-servere, 
+der understÃ¸tter det.
 </para>
 
 </sect2>
@@ -1138,14 +1138,14 @@ der understøtter det.
 <title>Linux som firewall</title>
 
 <indexterm><primary>firewall</primary></indexterm>
-<indexterm><primary>dørvogter</primary></indexterm>
+<indexterm><primary>dÃ¸rvogter</primary></indexterm>
 
 <para>
-I dette afsnit ser vi på Linux-kernens netfilter modul og hvad 
-man kan gøre med det. Det er en forudsætning, at man kender til
-begreberne IP-adresse, netværksadresse, netmaske, routing og DNS.
-Hvis du ikke gør, så læs i det mindste indledningen til denne
-bog, eller se på <ulink
+I dette afsnit ser vi pÃ¥ Linux-kernens netfilter modul og hvad 
+man kan gÃ¸re med det. Det er en forudsÃ¦tning, at man kender til
+begreberne IP-adresse, netvÃ¦rksadresse, netmaske, routing og DNS.
+Hvis du ikke gÃ¸r, sÃ¥ lÃ¦s i det mindste indledningen til denne
+bog, eller se pÃ¥ <ulink
 url="http://www.netfilter.org/documentation/index.html#HOWTO">
 http://www.netfilter.org/documentation/index.html#HOWTO</ulink>
 efter Networking Concepts HOWTO.  </para>
@@ -1154,12 +1154,12 @@ efter Networking Concepts HOWTO.  </para>
 De mere avancerede anvendelser af Network Address Translation,
 NAT, omtales sidst i denne del (<xref
 linkend="sikkerhed-grundig-NAT" />).  Derefter omtales proxy
-opsætning med squid.
+opsÃ¦tning med squid.
 </para>
 
 
-<!-- dax 2005-09-24: Har flyttet non-gui nedad og ændret niveau
-                     for at få GUI med i indholdsfortegnelsen. /-->
+<!-- dax 2005-09-24: Har flyttet non-gui nedad og Ã¦ndret niveau
+                     for at fÃ¥ GUI med i indholdsfortegnelsen. /-->
 
 
 <sect2 id="sikkerhed-gui">
@@ -1167,84 +1167,84 @@ opsætning med squid.
 </title>
 
 <para>
-Findes der ikke noget nemmere? hører man ofte en Linux begynder
-spørge, med rette, for det er i grunden meget få oplysninger der
+Findes der ikke noget nemmere? hÃ¸rer man ofte en Linux begynder
+spÃ¸rge, med rette, for det er i grunden meget fÃ¥ oplysninger der
 skal til at lave en meget fornuftig firewall, som kan bruges af
 de fleste. Derfor har distributioner som Red Hat, Fedora, SuSE og
-Mandrake alle et spørgsmål om man ønsker at maskinen skal være
-åben eller om der skal lukkes for services. Benytter man en anden
-distribution (og dem er der jo mange af) kan det hænde, at man
+Mandrake alle et spÃ¸rgsmÃ¥l om man Ã¸nsker at maskinen skal vÃ¦re
+Ã¥ben eller om der skal lukkes for services. Benytter man en anden
+distribution (og dem er der jo mange af) kan det hÃ¦nde, at man
 selv skal konfigurere firewall.
 </para>
 
 <para>
-Det kan også ske, at man selv vil raffinere opsætningen af
-firewall. Nogen vil derfor gå på jagt efter et værktøj til
-opsætning og selv installere dette. Her er et par eksempler:
+Det kan ogsÃ¥ ske, at man selv vil raffinere opsÃ¦tningen af
+firewall. Nogen vil derfor gÃ¥ pÃ¥ jagt efter et vÃ¦rktÃ¸j til
+opsÃ¦tning og selv installere dette. Her er et par eksempler:
 <command> Firestarter </command> og <command> Lokkit</command>.
 </para>
 
 <figure>
-<title>Firestarter giver ikke ligefrem indtryk af at være en
-sikker firewall, tværtimod står den vildt udseende pingvin med en
-tændstik her. Men det *er* linux-humor og ikke en trussel!
+<title>Firestarter giver ikke ligefrem indtryk af at vÃ¦re en
+sikker firewall, tvÃ¦rtimod stÃ¥r den vildt udseende pingvin med en
+tÃ¦ndstik her. Men det *er* linux-humor og ikke en trussel!
 </title>
 <graphic fileref="fs00.&magic;"  scale="40"/>
 </figure>
 
 <para>
 Der mange andre gode front ends til iptables kommandoen.
-Allerede under installationen kan man på mange distributioner
-indsætte et firewall filter af medium styrke.
+Allerede under installationen kan man pÃ¥ mange distributioner
+indsÃ¦tte et firewall filter af medium styrke.
 Derefter kan man begynde med en GUI som for eksempel Red Hats
-systemopsætningsværktøj, <command>setup</command> eller
+systemopsÃ¦tningsvÃ¦rktÃ¸j, <command>setup</command> eller
 <command>/usr/sbin/lokkit</command>. Disse nemme programmer er
 front-ends til den bagvedliggende mekanisme og fungerer bravt. De
 er til stede efter en normal installation. Firestarter kan man
-selv hente i forskellige grydeklare versioner, så den er
-også nem at komme igang med.
+selv hente i forskellige grydeklare versioner, sÃ¥ den er
+ogsÃ¥ nem at komme igang med.
 </para>
 
 <para>
-Hvis man vil noget særligt eller bare vil prøve kommandoerne
-direkte, så står der mere om det i de efterfølgende afsnit, som
+Hvis man vil noget sÃ¦rligt eller bare vil prÃ¸ve kommandoerne
+direkte, sÃ¥ stÃ¥r der mere om det i de efterfÃ¸lgende afsnit, som
 beskriver <command> iptables </command>
 anvendelse<footnote>
   <para>
-  Der kan være mange grunde til, at man selv vil skrive iptables
-  kommandoerne. Ved afprøvningen af Firestarter konstatererede
-  jeg, at den laver om på filer i /etc/ uden at aflevere en liste
-  over hvilke filer, den har ændret. Firestarter kan ikke save
-  sine resultat filer, firewall scriptet, uden at køre iptables
+  Der kan vÃ¦re mange grunde til, at man selv vil skrive iptables
+  kommandoerne. Ved afprÃ¸vningen af Firestarter konstatererede
+  jeg, at den laver om pÃ¥ filer i /etc/ uden at aflevere en liste
+  over hvilke filer, den har Ã¦ndret. Firestarter kan ikke save
+  sine resultat filer, firewall scriptet, uden at kÃ¸re iptables
   kommandoen.  Derfor kan man ikke "se den over skulderen" inden
-  man vælger at acceptere den. Jeg kørte den i en 'chroot'ed
-  partition og den stoppede min firewall uden at spørge.
+  man vÃ¦lger at acceptere den. Jeg kÃ¸rte den i en 'chroot'ed
+  partition og den stoppede min firewall uden at spÃ¸rge.
   </para>
   <para>
-  For en begynder er det nok en fordel, at den opfører sig så
-  håndfast uden at spørge.
+  For en begynder er det nok en fordel, at den opfÃ¸rer sig sÃ¥
+  hÃ¥ndfast uden at spÃ¸rge.
   </para>
   <para>
-  Ældre versioner af Red Hats firewall-config bruger ipchains
+  Ã†ldre versioner af Red Hats firewall-config bruger ipchains
   og forventer, at man har en modulariseret (distributions)kerne.
-  Det gør ikke så meget, at den råber FEJL når man kører med
-  optimeret non-modul kerne, hvis den i øvrigt bare fungerer.
-  Den kan heller ikke vise, hvad den vil gøre <emphasis> uden
-  </emphasis> at gøre det.
+  Det gÃ¸r ikke sÃ¥ meget, at den rÃ¥ber FEJL nÃ¥r man kÃ¸rer med
+  optimeret non-modul kerne, hvis den i Ã¸vrigt bare fungerer.
+  Den kan heller ikke vise, hvad den vil gÃ¸re <emphasis> uden
+  </emphasis> at gÃ¸re det.
   </para>
   <para>
   I de senere afsnit vises, hvordan man skriver et script med
-  sine egne firewall regler, og hvis man har gjort det, så kan
-  man jo tage en komplet kopi af /etc til for eksempel /etc-bkup og på den
-  måde sikre sine ændringer mod overskrivning.
+  sine egne firewall regler, og hvis man har gjort det, sÃ¥ kan
+  man jo tage en komplet kopi af /etc til for eksempel /etc-bkup og pÃ¥ den
+  mÃ¥de sikre sine Ã¦ndringer mod overskrivning.
   </para>
   <para>
   Red Hats setup er et xterm - menuprogram, og starter
-  forskellige subprogrammer til opsætning og opsætning.
-  Bortset fra små problemer med samtidig opsætning fra det
+  forskellige subprogrammer til opsÃ¦tning og opsÃ¦tning.
+  Bortset fra smÃ¥ problemer med samtidig opsÃ¦tning fra det
   ene/andet GUI er jeg glad for Red Hat setup. Dens firewall
-  configurator hedder /usr/sbin/lokkit og fungerer. Det er også
-  den, som bruges under installation af Red Hat, og den fås også
+  configurator hedder /usr/sbin/lokkit og fungerer. Det er ogsÃ¥
+  den, som bruges under installation af Red Hat, og den fÃ¥s ogsÃ¥
   som GUI version, /usr/sbin/redhat-config-network.
   </para>
 </footnote>.
@@ -1253,150 +1253,150 @@ anvendelse<footnote>
 <para>
 Firestarter er en generel front-end, som er meget nem at bruge,
 fordi den ligesom Red Hats installations program har nogle meget
-fornuftige default værdier, hvis man bruger troldmand/hjælpe
-systemet til opsætning af sin første firewall.
+fornuftige default vÃ¦rdier, hvis man bruger troldmand/hjÃ¦lpe
+systemet til opsÃ¦tning af sin fÃ¸rste firewall.
 </para>
 
 <para>
-Grafikken er rigtig pæn, og let at læse.  I første vindue står en
-pingvin med en tændstik, og sådan noget kan godt gøre mig lidt
-urolog. Pingvinen ser dog ikke umiddelbart ud til at være i gang
-med ildspåsættelse!
+Grafikken er rigtig pÃ¦n, og let at lÃ¦se.  I fÃ¸rste vindue stÃ¥r en
+pingvin med en tÃ¦ndstik, og sÃ¥dan noget kan godt gÃ¸re mig lidt
+urolog. Pingvinen ser dog ikke umiddelbart ud til at vÃ¦re i gang
+med ildspÃ¥sÃ¦ttelse!
 </para>
 
 <para>
-I andet vindue skal man fortælle, hvilke netkort (d.v.s.
-interfaces) reglerne skal gælde for. De kan også gælde for modem
-opkobling med Point-to-Point Protocol (PPP), hvilket også er
+I andet vindue skal man fortÃ¦lle, hvilke netkort (d.v.s.
+interfaces) reglerne skal gÃ¦lde for. De kan ogsÃ¥ gÃ¦lde for modem
+opkobling med Point-to-Point Protocol (PPP), hvilket ogsÃ¥ er
 forklaret. Man lades ikke i stikken!
 </para>
 
 <graphic fileref="fs01.&magic;"  scale="40"></graphic>
 
 <para>
-Det er meget fine forklaringer, også på det næste skærmbillede,
-hvor man rådes til i første omgang at lukke for alle "offentlige"
-services (disable public access to all services), så intet er
-tilgængeligt udefra. Så kan man åbne for dem senere, hvis man får
-brug for dem. Der burde stå, at man ikke bør åbne for telnet, men
+Det er meget fine forklaringer, ogsÃ¥ pÃ¥ det nÃ¦ste skÃ¦rmbillede,
+hvor man rÃ¥des til i fÃ¸rste omgang at lukke for alle "offentlige"
+services (disable public access to all services), sÃ¥ intet er
+tilgÃ¦ngeligt udefra. SÃ¥ kan man Ã¥bne for dem senere, hvis man fÃ¥r
+brug for dem. Der burde stÃ¥, at man ikke bÃ¸r Ã¥bne for telnet, men
 derimod kan klare de fleste opgaver med ssh.
 </para>
 
 <figure>
-<title>Man kan åbne for de services, man har brug for</title>
+<title>Man kan Ã¥bne for de services, man har brug for</title>
 <graphic fileref="fs02.&magic;"  scale="40"/>
 </figure>
 
 <para>
-Der er et par skærmbilleder mere, som på en overskuelig måde
-tilbyder at justere på trafikken af forskellige typer. Denne form
+Der er et par skÃ¦rmbilleder mere, som pÃ¥ en overskuelig mÃ¥de
+tilbyder at justere pÃ¥ trafikken af forskellige typer. Denne form
 for justering vil blive meget mere almindelig i fremtiden, fordi
-mange typer service kræver en jævn datastrøm, men som
+mange typer service krÃ¦ver en jÃ¦vn datastrÃ¸m, men som
 udgangspunkt kan man blot acceptere default indstillingerne.
 </para>
 
 <para>
-Ønsker man dansk tekst i sin GUI er guarddog (GPL) det klare valg.
+Ã˜nsker man dansk tekst i sin GUI er guarddog (GPL) det klare valg.
 Gunner Poulsen har oversat til dansk, og man kan hente denne fra
 <ulink
 url="http://www.simonzone.com/software/guarddog/#download">
 http://www.simonzone.com/software/guarddog/#download</ulink>
 Guarddog kan skelne mellem lokalnet og <emphasis>
-demilitariseret zone, </emphasis> som er et område udenfor
-lokalnettet, hvor man har anbragt sine servere - tilbørligt
-sikrede, men der skal jo være en åben dør, for at folk kan komme
-ind og se på éns dejlige web-sider. Man kan selv definere flere
+demilitariseret zone, </emphasis> som er et omrÃ¥de udenfor
+lokalnettet, hvor man har anbragt sine servere - tilbÃ¸rligt
+sikrede, men der skal jo vÃ¦re en Ã¥ben dÃ¸r, for at folk kan komme
+ind og se pÃ¥ Ã©ns dejlige web-sider. Man kan selv definere flere
 zoner og zonetyper.
 </para>
 
 <graphic fileref="guarddog2_protocol.&magic;"  scale="40"></graphic>
 
 <para>
-Læg mærke til, at guarddog styrer protokollerne pr. zone. Det vil
-sige, at man kan lukke for alt fra for eksempel externe numre og åbne for
+LÃ¦g mÃ¦rke til, at guarddog styrer protokollerne pr. zone. Det vil
+sige, at man kan lukke for alt fra for eksempel externe numre og Ã¥bne for
 sine lokale 4 maskiner. Man kan have flere zoner, for eksempel kan en
-anden afdeling huset få adgang til noget specielt, som de har
+anden afdeling huset fÃ¥ adgang til noget specielt, som de har
 brug for.
 </para>
 
 <para>
 Et andet fremragende GUI firewall-protection program er lokkit,
-som er bruges ved installation af Red Hat og ved kørsel af setup
+som er bruges ved installation af Red Hat og ved kÃ¸rsel af setup
 programmet.
 </para>
 
 <graphic fileref="gl06.&magic;"  scale="40"></graphic>
 
 <para>
-Her skal man blot angive for eksempel maximum sikkerhed og så åbne for den
-eller de services, som skal være tilgængelige udefra. (De skal jo
-så være sikret på anden måde, pas især på CGI scripting i Apache
-hvis den kører som root.)
+Her skal man blot angive for eksempel maximum sikkerhed og sÃ¥ Ã¥bne for den
+eller de services, som skal vÃ¦re tilgÃ¦ngelige udefra. (De skal jo
+sÃ¥ vÃ¦re sikret pÃ¥ anden mÃ¥de, pas isÃ¦r pÃ¥ CGI scripting i Apache
+hvis den kÃ¸rer som root.)
 </para>
 
 <para>
 Hvis du selv vil opdatere din kerne med source fra <ulink
-url="http://www.kernel.org/">www.kernel.org</ulink> så kommer
+url="http://www.kernel.org/">www.kernel.org</ulink> sÃ¥ kommer
 nedenfor nogle screenshots som svarer til <command> make xconfig
 </command>. Her kan du se, hvor i menuerne du skal klikke; husk
-at læse help teksterne, det er gode forklaringer.
+at lÃ¦se help teksterne, det er gode forklaringer.
 </para>
 
 <figure>
-<title>make xconfig, vælg network packet filtering</title>
+<title>make xconfig, vÃ¦lg network packet filtering</title>
 <graphic fileref="kconf-netfilt.&magic;"  scale="40"/>
 </figure>
 
 <figure>
-<title>Længere nede vælges sub-menu for netfilter
+<title>LÃ¦ngere nede vÃ¦lges sub-menu for netfilter
 configuration</title>
 <graphic fileref="kconf-netfilt-2.&magic;"  scale="40"/>
 </figure>
 
 <figure>
-<title>Den engelske hjælpetekst er meget fyldestgørende, se
+<title>Den engelske hjÃ¦lpetekst er meget fyldestgÃ¸rende, se
 appendix <xref linkend="sikkerhed-xconf-netfilt-help"/></title>
 <graphic fileref="kconf-netfilt-hlp.&magic;"  scale="40"/>
 </figure>
 
 <para>
-iptables kommandoen skal bygges, så den passer til den kerne, man
-bruger, eller rettere, så den passer til den version af
-netfilter, som er i kernen. Også det er gjort i alle
+iptables kommandoen skal bygges, sÃ¥ den passer til den kerne, man
+bruger, eller rettere, sÃ¥ den passer til den version af
+netfilter, som er i kernen. OgsÃ¥ det er gjort i alle
 distributioner.
 </para>
 
 <para>
-iptables indsætter som nævnt regler i kernens netfilter
-tabeller, hvilket betyder, at reglerne går tabt ved reboot. Du
-kan prøve at bruge kommandoerne iptables-save og
+iptables indsÃ¦tter som nÃ¦vnt regler i kernens netfilter
+tabeller, hvilket betyder, at reglerne gÃ¥r tabt ved reboot. Du
+kan prÃ¸ve at bruge kommandoerne iptables-save og
 iptables-restore.
 </para>
 
 <para>
-Hvis man har en opsætning, som man gerne vil gemme, så kan det
-lade sig gøre uanset om det er en "håndlavet opsætning" eller om
-den kommer fra et af de nævnte GUI-tools. Man bruger simpelthen
+Hvis man har en opsÃ¦tning, som man gerne vil gemme, sÃ¥ kan det
+lade sig gÃ¸re uanset om det er en "hÃ¥ndlavet opsÃ¦tning" eller om
+den kommer fra et af de nÃ¦vnte GUI-tools. Man bruger simpelthen
 iptables-save.
 </para>
 <para>
 Resultat-filen gemmer man, fx. i /etc/init.d eller /etc/rc.d
-og så sætter man en overordnet kommando ind i et 
-start/stop script, som køres af rc kommandoen ved opstart. 
-Det er måske lidt for vanskeligt for en GUI bruger, men 
-med lidt hjælp udefra skal det nok kunne lade sig gøre.
+og sÃ¥ sÃ¦tter man en overordnet kommando ind i et 
+start/stop script, som kÃ¸res af rc kommandoen ved opstart. 
+Det er mÃ¥ske lidt for vanskeligt for en GUI bruger, men 
+med lidt hjÃ¦lp udefra skal det nok kunne lade sig gÃ¸re.
 </para>
 
 <para>
-Man skal i så fald huske at få scriptet til at foretage sig noget
+Man skal i sÃ¥ fald huske at fÃ¥ scriptet til at foretage sig noget
 fornuftigt, hvis en af iptables kommandoerne fejler; normalt vil
-det fornuftigste være at starte <command> /sbin/sulogin </command>
-for så kan system-administrator se, at der er noget galt, og
-systemet går ikke videre (på nettet) uden at denne fejl er løst.
+det fornuftigste vÃ¦re at starte <command> /sbin/sulogin </command>
+for sÃ¥ kan system-administrator se, at der er noget galt, og
+systemet gÃ¥r ikke videre (pÃ¥ nettet) uden at denne fejl er lÃ¸st.
 For mere avancerede anvendelser, hvor ubemandet opstart er en
-nødvendighed, må man finde en anden måde at systemet kommer
-videre på, det kunne fx. være at tilbyde login til en
-overvågningsmaskine på lokalnettet.
+nÃ¸dvendighed, mÃ¥ man finde en anden mÃ¥de at systemet kommer
+videre pÃ¥, det kunne fx. vÃ¦re at tilbyde login til en
+overvÃ¥gningsmaskine pÃ¥ lokalnettet.
 </para>
 </sect2>
 
@@ -1409,15 +1409,15 @@ overvågningsmaskine på lokalnettet.
 <para>
 I Linux er pakkefiltrering i en avanceret version indbygget i
 kernen; kernedelen kaldes netfilter, og programmet <command>
-iptables </command> kommunikerer vores ønsker om hvad kernen skal
+iptables </command> kommunikerer vores Ã¸nsker om hvad kernen skal
 foretage sig fra user-space til kerne-space.
 </para>
 
 <para>
 For at kunne bruge kernens netfilter og <command> iptables
-</command> kommandoen, skal kernen være bygget med netfilter, og,
-hvis man planlægger at sikre en maskine, må det stærkt anbefales
-at man også inkluderer connection tracking. Det koster lidt
+</command> kommandoen, skal kernen vÃ¦re bygget med netfilter, og,
+hvis man planlÃ¦gger at sikre en maskine, mÃ¥ det stÃ¦rkt anbefales
+at man ogsÃ¥ inkluderer connection tracking. Det koster lidt
 belastning, men giver mange fordele.  De fleste standard kerner
 fra distributioner med kerne 2.4.18 og frem har den slags. Det
 kan kontrolleres med <command>ls -l /proc/net/ip_conntrack
@@ -1449,16 +1449,16 @@ pakkerne for at kunne klare vanskelige situationer.
 
 <para>
 Kernen begynder med at have 3 lister med regler i "filter"
-tabellen. Disse lister kaldes firewall kæder eller blot kæder,
-chains. De tre kæder kaldes INPUT, OUTPUT og FORWARD (pakker-ind,
+tabellen. Disse lister kaldes firewall kÃ¦der eller blot kÃ¦der,
+chains. De tre kÃ¦der kaldes INPUT, OUTPUT og FORWARD (pakker-ind,
 pakker-ud og pakker-til-videresendelse).<!-- Af hensyn til Jacobs
-læsere/-->
+lÃ¦sere/-->
 </para>
 
 <para>
-Her er en ASCII-kunstnerisk gengivelse af kædernes organisation
+Her er en ASCII-kunstnerisk gengivelse af kÃ¦dernes organisation
 (med tak til Rusty Russell's packet-filtering-HOWTO).  Det er
-væsentligt forskelligt fra arrangementet i kerne 2.0 og 2.2.
+vÃ¦sentligt forskelligt fra arrangementet i kerne 2.0 og 2.2.
 </para>
 
 <programlisting>
@@ -1479,57 +1479,57 @@ væsentligt forskelligt fra arrangementet i kerne 2.0 og 2.2.
 <para>
 Det ses, at en pakke kan komme fra to principielt forskellige
 kilder. Enten kommer pakkerne fra et netkort (rettere interface -
-men prøv at oversætte det til dansk) eller også kommer de fra et
+men prÃ¸v at oversÃ¦tte det til dansk) eller ogsÃ¥ kommer de fra et
 program, en lokal proces.
 </para>
 
 <para>
-De tre "cirkler" repræsenterer de tre kæder nævnt ovenfor. Når en
-pakke ankommer til en cirkel i diagrammet, undersøges reglerne i
-denne kæde for at afgøre pakkens skæbne. Hvis kæden siger DROP
-pakken bliver den elimineret på stedet, men hvis kæden siger
-ACCEPT vil den fortsætte sin rejse gennem diagrammet.
+De tre "cirkler" reprÃ¦senterer de tre kÃ¦der nÃ¦vnt ovenfor. NÃ¥r en
+pakke ankommer til en cirkel i diagrammet, undersÃ¸ges reglerne i
+denne kÃ¦de for at afgÃ¸re pakkens skÃ¦bne. Hvis kÃ¦den siger DROP
+pakken bliver den elimineret pÃ¥ stedet, men hvis kÃ¦den siger
+ACCEPT vil den fortsÃ¦tte sin rejse gennem diagrammet.
 </para>
 
 <para>
-En kæde er en tjekliste med regler. Hver regel siger "hvis
-pakke-headeren ser ud på denne-hersens-måde, så se her hvad der
-skal gøres med pakken".  Hvis en regels pakke-beskrivelse passer
-på pakken, kalder man det et match. Det svarer selvfølgelig til
+En kÃ¦de er en tjekliste med regler. Hver regel siger "hvis
+pakke-headeren ser ud pÃ¥ denne-hersens-mÃ¥de, sÃ¥ se her hvad der
+skal gÃ¸res med pakken".  Hvis en regels pakke-beskrivelse passer
+pÃ¥ pakken, kalder man det et match. Det svarer selvfÃ¸lgelig til
 en masse betingelser, som er opfyldt. Hvis pakken ikke matcher
-reglen fortsætter man til næste regel. Endelig når vi til et
-punkt, hvor der ikke er flere regler at undersøge. Nu ser kernen
-på kæde-policy for at afgøre, hvad der skal ske. I et
+reglen fortsÃ¦tter man til nÃ¦ste regel. Endelig nÃ¥r vi til et
+punkt, hvor der ikke er flere regler at undersÃ¸ge. Nu ser kernen
+pÃ¥ kÃ¦de-policy for at afgÃ¸re, hvad der skal ske. I et
 sikkerheds-bevidst system siger denne policy som regel at kernen
 skal DROPpe pakken.
 </para>
 
 <para>
-1. Når en pakke kommer ind, lad os sige fra ethernet-kortet ser
-kernen på pakkens destination: Dette kaldes routing (rutning
+1. NÃ¥r en pakke kommer ind, lad os sige fra ethernet-kortet ser
+kernen pÃ¥ pakkens destination: Dette kaldes routing (rutning
 eller bedre, ruting?)
 </para>
 
 <para>
 2. Hvis den er til denne box bliver pakken sendt videre ned i
-diagrammet til INPUT kæden. Hvis den passerer denne, så vil alle
-processer, som venter på denne pakke, få den.
+diagrammet til INPUT kÃ¦den. Hvis den passerer denne, sÃ¥ vil alle
+processer, som venter pÃ¥ denne pakke, fÃ¥ den.
 </para>
 
 <para>
 3. I modsat fald, hvis kernen ikke har videresendelse aktiveret,
 eller den ikke ved, hvordan pakken skal sendes videre, vil pakken
 blive droppet. Hvis videresendelse er aktiveret, og pakken er
-tiltænkt til et andet netværks-interface (hvis du har sådan et),
-så vil pakken gå fremad til FORWARD kæden. Hvis den accepteres
+tiltÃ¦nkt til et andet netvÃ¦rks-interface (hvis du har sÃ¥dan et),
+sÃ¥ vil pakken gÃ¥ fremad til FORWARD kÃ¦den. Hvis den accepteres
 her, bliver den sendt ud.
 </para>
 
 <para>
-4. Sluttelig kan et program, som kører på boxen, sende
-netværkspakker. Disse passerer gennem OUTPUT kæden straks: Hvis
-den siger ACCEPT, så fortsætter pakken til hvad nu end det måtte
-være for et interface, som den er bestemt for.
+4. Sluttelig kan et program, som kÃ¸rer pÃ¥ boxen, sende
+netvÃ¦rkspakker. Disse passerer gennem OUTPUT kÃ¦den straks: Hvis
+den siger ACCEPT, sÃ¥ fortsÃ¦tter pakken til hvad nu end det mÃ¥tte
+vÃ¦re for et interface, som den er bestemt for.
 </para>
 
 </sect3>
@@ -1545,40 +1545,40 @@ for oplysninger om specielle ting.
 </para>
 
 <para>
-Der er mange ting, man kan gøre med <command> iptables </command>
-kommandoen. Man begynder med at have de tre indbyggede kæder,
-INPUT, FORWARD og OUTPUT, som man ikke kan slette. Lad os først
-se på hvordan man administrerer hele kæder.
+Der er mange ting, man kan gÃ¸re med <command> iptables </command>
+kommandoen. Man begynder med at have de tre indbyggede kÃ¦der,
+INPUT, FORWARD og OUTPUT, som man ikke kan slette. Lad os fÃ¸rst
+se pÃ¥ hvordan man administrerer hele kÃ¦der.
 </para>
 
 
 <itemizedlist mark="bullet">
 <listitem><para>
-<command> -N </command>: Opretter en ny kæde.
+<command> -N </command>: Opretter en ny kÃ¦de.
 </para></listitem>
 <listitem><para>
-<command> -X </command>: Sletter en tom kæde.
+<command> -X </command>: Sletter en tom kÃ¦de.
 </para></listitem>
 <listitem><para>
-<command> -P </command>: Ændrer policy for en kæde.
+<command> -P </command>: Ã†ndrer policy for en kÃ¦de.
 </para></listitem>
 <listitem><para>
-<command> -L </command>: Lister regler i en kæde.
+<command> -L </command>: Lister regler i en kÃ¦de.
 </para></listitem>
 <listitem><para>
-<command> -F </command>: Flusher, sletter reglerne i en kæde.
+<command> -F </command>: Flusher, sletter reglerne i en kÃ¦de.
 </para></listitem>
 <listitem><para>
-<command> -Z </command>: Nulstiller tællerne for en kæde.
+<command> -Z </command>: Nulstiller tÃ¦llerne for en kÃ¦de.
 </para></listitem>
 </itemizedlist>
 
 
 <para>
-Brugerdefinerede kæder bruges til at strukturere filtreringen og
-demonstreres senere. Her er et simpelt eksempel på en
-kæde-kommando, som nulstiller tællerne i INPUT kæden. Prøv at
-liste før og efter med <command> iptables -L INPUT -v </command>:
+Brugerdefinerede kÃ¦der bruges til at strukturere filtreringen og
+demonstreres senere. Her er et simpelt eksempel pÃ¥ en
+kÃ¦de-kommando, som nulstiller tÃ¦llerne i INPUT kÃ¦den. PrÃ¸v at
+liste fÃ¸r og efter med <command> iptables -L INPUT -v </command>:
 </para>
 
 <screen>
@@ -1586,14 +1586,14 @@ liste før og efter med <command> iptables -L INPUT -v </command>:
 </screen>
 
 <para>
-Der er fire kommandoer til at manipulere reglerne i en kæde:
+Der er fire kommandoer til at manipulere reglerne i en kÃ¦de:
 </para>
 
 <itemizedlist mark="bullet">
-<listitem><para><command> -A &lt;kæde&gt; </command> Tilføj (append) regel</para></listitem>
-<listitem><para><command> -D &lt;kæde&gt; [nummer] </command> Slet (delete) regel</para></listitem>
-<listitem><para><command> -R &lt;kæde&gt; [nummer] </command> Erstat (replace) regel</para></listitem>
-<listitem><para><command> -I &lt;kæde&gt; [nummer] </command> Indsæt (insert) regel</para></listitem>
+<listitem><para><command> -A &lt;kÃ¦de&gt; </command> TilfÃ¸j (append) regel</para></listitem>
+<listitem><para><command> -D &lt;kÃ¦de&gt; [nummer] </command> Slet (delete) regel</para></listitem>
+<listitem><para><command> -R &lt;kÃ¦de&gt; [nummer] </command> Erstat (replace) regel</para></listitem>
+<listitem><para><command> -I &lt;kÃ¦de&gt; [nummer] </command> IndsÃ¦t (insert) regel</para></listitem>
 </itemizedlist>
 
 
@@ -1602,24 +1602,24 @@ En regel er en beskrivelse plus en handling.
 </para>
 
 <para>
-Beskrivelsen er et match-udtryk og kan være sammensat af mange
+Beskrivelsen er et match-udtryk og kan vÃ¦re sammensat af mange
 del-udtryk: <emphasis>Hvis pakken kommer fra adresse 44.55.66.77
 og skal videre gennem interface eth1 ... </emphasis> Det ville
-man skrive sådan: <command> --source 44.55.66.77 --out-interface
+man skrive sÃ¥dan: <command> --source 44.55.66.77 --out-interface
 eth1 </command>. 
 </para>
 
 <para>
 En handling er et "jump", og det svarer til at tage en
 bestemmelse om, hvad der skal ske med pakken. Det, man hopper
-til, kaldes et mål eller target, og to af de indbyggede targes
+til, kaldes et mÃ¥l eller target, og to af de indbyggede targes
 er de samme som de policy, vi tidligere har set, DROP, ACCEPT.
 At tage beslutning om at droppe en pakke skrives <command> -j
 DROP </command>
 </para>
 
 <para>
-Man kan sætte flere match udtryk sammen.  Nedenfor ses efter
+Man kan sÃ¦tte flere match udtryk sammen.  Nedenfor ses efter
 pakker, som kommer fra host 44.55.66.77 og som skal ud gennem
 interface eth1. Alle pakker, som har de to egenskaber, droppes:
 </para>
@@ -1629,14 +1629,14 @@ interface eth1. Alle pakker, som har de to egenskaber, droppes:
 </screen>
 
 <para>
-Endvidere kan man hoppe til en anden, brugeroprettet kæde,
-eller man kan returnere fra en kæde (med <command> -j RETURN
-</command>). Der er et REJECT target, som dog kræver at
+Endvidere kan man hoppe til en anden, brugeroprettet kÃ¦de,
+eller man kan returnere fra en kÃ¦de (med <command> -j RETURN
+</command>). Der er et REJECT target, som dog krÃ¦ver at
 kernen er kompileret med support for det. Der er andre inbyggede
-targets, som kræver tilvalg i kernen: QUEUE beder kernen om at
+targets, som krÃ¦ver tilvalg i kernen: QUEUE beder kernen om at
 sende pakkerne til en pseudo-device, som et program i userspace
-kan lytte på, og så er der bl.a. også REDIRECT, SNAT, DNAT og LOG
-targets. (Lad være med at studere listen i detailler! Bladr frem.)
+kan lytte pÃ¥, og sÃ¥ er der bl.a. ogsÃ¥ REDIRECT, SNAT, DNAT og LOG
+targets. (Lad vÃ¦re med at studere listen i detailler! Bladr frem.)
 </para>
 
 <orderedlist>
@@ -1644,38 +1644,38 @@ targets. (Lad være med at studere listen i detailler! Bladr frem.)
           <para>Pakken sendes videre uden yderligere
           test og dermed uden yderligere tidsforbrug.</para></listitem>
 <listitem><para>DROP</para>
-          <para>Pakken ignoreres ("smides væk").
+          <para>Pakken ignoreres ("smides vÃ¦k").
           </para></listitem>
 <listitem><para>RETURN</para>
-          <para>Der hoppes tilbage til den kæde, man kom fra
-          eller for indbyggede kæder til default policy.
+          <para>Der hoppes tilbage til den kÃ¦de, man kom fra
+          eller for indbyggede kÃ¦der til default policy.
           </para></listitem>
 <listitem><para>REJECT</para>
           <para>Pakken droppes men der sendes en ICMP pakke til
           modtageren med besked.
           </para></listitem>
 <listitem><para>QUEUE</para>
-          <para>Pakken lægges i kø til pseudodevice der tillader
+          <para>Pakken lÃ¦gges i kÃ¸ til pseudodevice der tillader
           data at blive hentet til userspace.
           </para></listitem>
 <listitem><para>REDIRECT</para>
-          <para>En -t nat funktion. Modtageradressen ændres, så
+          <para>En -t nat funktion. Modtageradressen Ã¦ndres, sÃ¥
           pakken sendes til maskinen selv (lokalhost); for tcp/udp 
-          kan portnummer ændres. Bruges til proxy-funktionalitet.
+          kan portnummer Ã¦ndres. Bruges til proxy-funktionalitet.
           </para></listitem>
 <listitem><para>SNAT</para>
-          <para>Kun for nat-tabellen, POSTROUTING kæden,
-          specificerer at afsenderadresse skal ændres for denne
+          <para>Kun for nat-tabellen, POSTROUTING kÃ¦den,
+          specificerer at afsenderadresse skal Ã¦ndres for denne
           og alle fremtidige pakker i denne forbindelse.
           </para></listitem>
 <listitem><para>DNAT</para>
-          <para>Modtager adressen ændres for denne og følgende
+          <para>Modtager adressen Ã¦ndres for denne og fÃ¸lgende
           pakker i samme forbindelse.
           </para></listitem>
 <listitem><para>LOG</para>
           <para>Begynd kernel-logging for matchende pakker.
-          Reglen behøver ikke at have noget target. Netfilter
-          fortsætter med næste regel. Bruges til at analysere.
+          Reglen behÃ¸ver ikke at have noget target. Netfilter
+          fortsÃ¦tter med nÃ¦ste regel. Bruges til at analysere.
           </para></listitem>
 <listitem><para>MARK</para>
           <para>Bruges i mangle tabellen i forbindelse med iproute2.
@@ -1688,7 +1688,7 @@ targets. (Lad være med at studere listen i detailler! Bladr frem.)
           ICMP pakker, som ens ISP ellers kasserer.
           </para></listitem>
 <listitem><para>TOS</para>
-          <para>For mangle tabellen, ændring af Type Of Service (TOS)
+          <para>For mangle tabellen, Ã¦ndring af Type Of Service (TOS)
           feltet i TCP headeren.
           </para></listitem>
 <listitem><para>ULOG</para>
@@ -1698,17 +1698,17 @@ targets. (Lad være med at studere listen i detailler! Bladr frem.)
           <para>Nyere version TOS mangling.
           </para></listitem>
 <listitem><para>ECN</para>
-          <para>For løsning af problem med Explicit Congestion
+          <para>For lÃ¸sning af problem med Explicit Congestion
           Notification.
           </para></listitem>
 <listitem><para>MIRROR</para>
-          <para>Kun for forsøg, bytter om på afsender/modtager adresserne.
+          <para>Kun for forsÃ¸g, bytter om pÃ¥ afsender/modtager adresserne.
           </para></listitem>
 </orderedlist>
 
 <para>
 Listen er ordnet efter hvad jeg synes er vigtigst. Se manual page
-for nærmere detailler om targets. Lige nu er de vigtigste ACCEPT,
+for nÃ¦rmere detailler om targets. Lige nu er de vigtigste ACCEPT,
 DROP og SNAT, som kun kan bruges i nat-tabellens POSTROUTING chain.
 </para>
 
@@ -1716,10 +1716,10 @@ DROP og SNAT, som kun kan bruges i nat-tabellens POSTROUTING chain.
 </para>
 
 <para>
-Opsummerende kan vi sige, at en regel består af består af en
+Opsummerende kan vi sige, at en regel bestÃ¥r af bestÃ¥r af en
 eller flere kommandoparametre, som beskriver en egenskab ved en
-netværkspakke, samt (som regel) en besked om, hvad der skal ske
-med pakker, som beskrivelsen passer på. Hvis en beskrivelse
+netvÃ¦rkspakke, samt (som regel) en besked om, hvad der skal ske
+med pakker, som beskrivelsen passer pÃ¥. Hvis en beskrivelse
 passer, siger man at pakken matcher.
 </para>
 
@@ -1733,9 +1733,9 @@ De vigtigste kommandoparametre til match er
 <command> --protocol [icmp|tcp|udp|all] </command> 
 </para>
 <para>
-Man kan også bruge et navn fra <filename> /etc/protocols
-</filename>. Hvis man ønsker at matche alle pakker, som ikke
-tilhører en bestemt protokol, negeres med udråbstegn. Fx.
+Man kan ogsÃ¥ bruge et navn fra <filename> /etc/protocols
+</filename>. Hvis man Ã¸nsker at matche alle pakker, som ikke
+tilhÃ¸rer en bestemt protokol, negeres med udrÃ¥bstegn. Fx.
 <command> iptables -A INPUT --protocol ! tcp -j ACCEPT</command>
 accepterer alt undtagen TCP-pakker.  Kan forkortes til -p.
 </para>
@@ -1756,7 +1756,7 @@ Angiver oprindelsesadressen. Kan forkortes til -s. Eksempel:
 <command> --destination [!] address[/mask] </command>
 </para>
 <para>
-matcher på slutadressen, destinationen. Forkortes -d.
+matcher pÃ¥ slutadressen, destinationen. Forkortes -d.
 </para>
 
 </listitem>
@@ -1765,7 +1765,7 @@ matcher på slutadressen, destinationen. Forkortes -d.
 <command> -i, --in-interface [!] name </command>
 </para>
 <para>
-hvor <emphasis>name</emphasis> kan være eth0, eth1, ppp0 m.v. kan
+hvor <emphasis>name</emphasis> kan vÃ¦re eth0, eth1, ppp0 m.v. kan
 bruges til at selektere alle pakker, som kommer fra ydersiden eller
 indersiden af firewallen.
 </para>
@@ -1776,7 +1776,7 @@ indersiden af firewallen.
 <command> -o, --out-interface [!] name </command>
 </para>
 <para>
-som -i, bruges til at selektere på alle pakker, der skal sendes
+som -i, bruges til at selektere pÃ¥ alle pakker, der skal sendes
 ud via et bestemt interface.
 </para>
 </listitem>
@@ -1786,23 +1786,23 @@ ud via et bestemt interface.
 <command> -m state </command>
 </para>
 <para>
-bruges til at fortælle kernen at tilstandsmodulet (connection
+bruges til at fortÃ¦lle kernen at tilstandsmodulet (connection
 tracking) skal bruges. Derefter kan man specificere, at pakker,
 som er ESTABLISHED eller RELATED til en forbindelse, som er i
-gang, skal have lov at passere. Det er den måde, man åbner for al
+gang, skal have lov at passere. Det er den mÃ¥de, man Ã¥bner for al
 trafik indefra.
 </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Næsten alle options har en kort form, for eksempel -s i stedet for
+NÃ¦sten alle options har en kort form, for eksempel -s i stedet for
 --source.
 </para>
 
 <para>
 Adresser til --source og --destination kan
-specificeres på fire måder:
+specificeres pÃ¥ fire mÃ¥der:
 </para>
 
 <itemizedlist>
@@ -1813,18 +1813,18 @@ Som domaine-navn, www.kernel.org, linuxbog.dk, www.netfilter.org
 Som IP-adresse: 127.0.0.1, 193.88.44.22
 </para></listitem>
 <listitem><para>
-Som netværksadresse med skråstreg + antal signifikante bits:
+Som netvÃ¦rksadresse med skrÃ¥streg + antal signifikante bits:
 10.11.128.0/17
 </para></listitem>
 <listitem><para>
-Netværksadresse med skråstreg+bitmaske, 10.11.128.0/255.255.128.0
+NetvÃ¦rksadresse med skrÃ¥streg+bitmaske, 10.11.128.0/255.255.128.0
 </para></listitem>
 </itemizedlist>
 
 <para>
 Man kan selektere alle pakker, som <emphasis>ikke</emphasis>
 kommer fra en adresse ved at negere adresse udtrykket, hertil
-bruges et udråbstegn, som skal have space før og efter: <command>
+bruges et udrÃ¥bstegn, som skal have space fÃ¸r og efter: <command>
 -s ! localhost </command> vil matche alle pakker, som ikke kommer
 fra localhost.
 </para>
@@ -1836,15 +1836,15 @@ fra localhost.
 
 <para>
 Nu til hands on! Vi antager, at vi har fem maskiner i huset og et
-en ADSL forbindelse på en af maskinerne. ADSL er på et separat
+en ADSL forbindelse pÃ¥ en af maskinerne. ADSL er pÃ¥ et separat
 netkort, som har betegnelsen eth1. De andre maskiner er forbundet
-via eth0 og vil gerne have lov at få del i ADSL forbindelsen.
+via eth0 og vil gerne have lov at fÃ¥ del i ADSL forbindelsen.
 </para>
 
 <para>
-Lad os lave en kæde af regler, som skal inspicere al trafik, der
-kommer ind på vores box, men kun, hvis det er fra ADSL
-interfacet, altså eth1.
+Lad os lave en kÃ¦de af regler, som skal inspicere al trafik, der
+kommer ind pÃ¥ vores box, men kun, hvis det er fra ADSL
+interfacet, altsÃ¥ eth1.
 </para>
 
 <screen>
@@ -1852,11 +1852,11 @@ interfacet, altså eth1.
 </screen>
 
 <para>
-Man kan liste den nye kæde sammen med de andre: <command>
-iptables -L </command> Kæden er ikke taget i brug, så der står "0
-references". For at bruge den til noget må vi instruere kernen
+Man kan liste den nye kÃ¦de sammen med de andre: <command>
+iptables -L </command> KÃ¦den er ikke taget i brug, sÃ¥ der stÃ¥r "0
+references". For at bruge den til noget mÃ¥ vi instruere kernen
 yderligere med en jump kommando. Vi laver en regel 1 for INPUT
-kæden.
+kÃ¦den.
 </para>
 
 <screen>
@@ -1885,8 +1885,8 @@ __|forward|
 </programlisting>
 
 <para>
-Det svarer til en if-sætning. Vi tester for om det var
-fra eth1 og hvis det er det, så fortsæt med regelkæden
+Det svarer til en if-sÃ¦tning. Vi tester for om det var
+fra eth1 og hvis det er det, sÃ¥ fortsÃ¦t med regelkÃ¦den
 <emphasis>udefra</emphasis>.
 </para>
 
@@ -1904,7 +1904,7 @@ fra eth1 og hvis det er det, så fortsæt med regelkæden
 
 <para>
 Lad os inspicere pakkerne udefra for, om de er til vores http
-server. Hvis de er det, så slip dem igennem, ellers skal de
+server. Hvis de er det, sÃ¥ slip dem igennem, ellers skal de
 droppes.
 </para>
 
@@ -1914,15 +1914,15 @@ droppes.
 </screen>
 
 <para>
-Når man specificerer -p tcp (eller --protocol tcp) så loader
+NÃ¥r man specificerer -p tcp (eller --protocol tcp) sÃ¥ loader
 iptables et extension modul, og vi kan nu kigge ind i
-tcp-headeren, hvis vi vil - og det vil vi, vi undersøger, om
+tcp-headeren, hvis vi vil - og det vil vi, vi undersÃ¸ger, om
 pakkerne er bestemt for port 80, den velkendte port, som benyttes
 af http serveren. Alle pakker til serveren accepteres. Der er
 forskellige protocol extensions, som tillader avancerede ting:
-Læs manual-page hvis du vil vide mere. <!-- TODO: Skal vi have et
+LÃ¦s manual-page hvis du vil vide mere. <!-- TODO: Skal vi have et
 appendix med en dansk version af alle de tekniske
-specifikationer? senere, måske! /-->
+specifikationer? senere, mÃ¥ske! /-->
 </para>
 
 
@@ -1933,10 +1933,10 @@ specifikationer? senere, måske! /-->
 <para>
 Derefter appender vi med <command> -A </command> endnu en regel,
 som siger, at alt andet skal droppes.
-Svarpakker til brugerne inde på lokalnettet vil imidlertid også
-blive stoppet af denne stop-regel, så nu vil vi benytte
-connection tracking og indsætte en regel, som siger, at alle
-pakker, som er beslægtede med en forbindelse, som allerede er
+Svarpakker til brugerne inde pÃ¥ lokalnettet vil imidlertid ogsÃ¥
+blive stoppet af denne stop-regel, sÃ¥ nu vil vi benytte
+connection tracking og indsÃ¦tte en regel, som siger, at alle
+pakker, som er beslÃ¦gtede med en forbindelse, som allerede er
 oprettet, skal accepteres.
 </para>
 
@@ -1947,10 +1947,10 @@ oprettet, skal accepteres.
 
 <para>
 Denne regel bliver nu nummer 1, og de andre rykker ned som 2 og
-tre. Hvis vi hellere vil sætte denne regel ind som nummer 2, skal
+tre. Hvis vi hellere vil sÃ¦tte denne regel ind som nummer 2, skal
 kommandoen bruge <command> -I udefra 2 </command> ; det er en
-meget bedre løsning, for connection tracking koster trods alt
-mere tid, så man bør acceptere så mange pakker som muligt med
+meget bedre lÃ¸sning, for connection tracking koster trods alt
+mere tid, sÃ¥ man bÃ¸r acceptere sÃ¥ mange pakker som muligt med
 simple regler inden man bruger connection-regler.
 </para>
 
@@ -1959,23 +1959,23 @@ simple regler inden man bruger connection-regler.
 </screen>
 
 <para>
-<command> -m state </command> fortæller kernen, at den skal
+<command> -m state </command> fortÃ¦ller kernen, at den skal
 benytte tilstandsmodulet, ip_conntrack. Derefter er det
-nødvendigt at bruge --state parameteren til at fortælle, hvilke
+nÃ¸dvendigt at bruge --state parameteren til at fortÃ¦lle, hvilke
 tilstande, der skal accepteres. Ud over ESTABLISHED og RELATED er
-der bl.a. NEW og INVALID, som betyder at en pakke ikke tilhører
+der bl.a. NEW og INVALID, som betyder at en pakke ikke tilhÃ¸rer
 nogen kendt forbindelse.
 </para>
 
 <para>
-Læg mærke til, at der ikke er mellemrum efter kommaet mellem de
-to tilstande, det må der ikke være.
+LÃ¦g mÃ¦rke til, at der ikke er mellemrum efter kommaet mellem de
+to tilstande, det mÃ¥ der ikke vÃ¦re.
 </para>
 
 <programlisting>
      +-----------------------------------------------------------
     _|  udefra  ---> udefra-regel1 --> udefra-regel2 ---->regel3
-   ^ |  kæden        PORT 80?          RELATED?           DROP!
+   ^ |  kÃ¦den        PORT 80?          RELATED?           DROP!
    | +------------   ACCEPT            ACCEPT
   _|_____               |                 |
  /if eth1\              |                 |
@@ -1985,20 +1985,20 @@ to tilstande, det må der ikke være.
    |        
 INPUT-chain
 
-Lidt forsimplet af pladshensyn, man skal spørge både på
-ESTABLISHED og RELATED i regel 1 i <emphasis> "udefra" </emphasis> regel kæden.
+Lidt forsimplet af pladshensyn, man skal spÃ¸rge bÃ¥de pÃ¥
+ESTABLISHED og RELATED i regel 1 i <emphasis> "udefra" </emphasis> regel kÃ¦den.
 </programlisting>
 
 <para>
 Lad os nu antage, at vi slet ikke kan lide telnet protokollen,
-heller ikke internt på det lille net, og derfor vil blokere for
-al telnet. Nu er telnet jo så en applikationsprotokol, så vi kan
+heller ikke internt pÃ¥ det lille net, og derfor vil blokere for
+al telnet. Nu er telnet jo sÃ¥ en applikationsprotokol, sÃ¥ vi kan
 ikke bruge <command> --protocol </command> optionen, idet den kun
-kender protokollerne tcp, udp, icmp eller "all", eller også et
+kender protokollerne tcp, udp, icmp eller "all", eller ogsÃ¥ et
 nummer fra filen <filename> /etc/protocols </filename>.  Med
-andre ord, telnet står ikke i <filename> /etc/protocols
-</filename> og derfor må vi "sigte efter telnet" på en anden
-måde, for eksempel ved at stoppe al trafik, som har destination port 23.
+andre ord, telnet stÃ¥r ikke i <filename> /etc/protocols
+</filename> og derfor mÃ¥ vi "sigte efter telnet" pÃ¥ en anden
+mÃ¥de, for eksempel ved at stoppe al trafik, som har destination port 23.
 </para>
 
 <screen>
@@ -2006,41 +2006,41 @@ måde, for eksempel ved at stoppe al trafik, som har destination port 23.
 </screen>
 
 <para>
-Der benyttes -I, insert, fordi reglen skal komme før
-eth1-reglerne, hvis det skal nytte noget. Der står jo en accept
+Der benyttes -I, insert, fordi reglen skal komme fÃ¸r
+eth1-reglerne, hvis det skal nytte noget. Der stÃ¥r jo en accept
 inde i eth1-reglerne, som kunne forstyrre billedet (lidt).
-Nyere versioner af iptables vil kunne matche generelt på --ports
-23, så det både er afsender/modtager pakker, som stoppes.
+Nyere versioner af iptables vil kunne matche generelt pÃ¥ --ports
+23, sÃ¥ det bÃ¥de er afsender/modtager pakker, som stoppes.
 </para>
 
 <para>
-Eksemplet er ikke fuldkomment endnu, hvis maskinerne på
-lokalnettet har "private IP-adresser" - så næste opgave går ud på
-at opsætte NAT for lokalmaskiner.
+Eksemplet er ikke fuldkomment endnu, hvis maskinerne pÃ¥
+lokalnettet har "private IP-adresser" - sÃ¥ nÃ¦ste opgave gÃ¥r ud pÃ¥
+at opsÃ¦tte NAT for lokalmaskiner.
 </para>
 </sect3>
 
 </sect2>
 
 <sect2 id="sikkerhed-start-nat">
-<title>Opsætning af NAT</title>
+<title>OpsÃ¦tning af NAT</title>
 
 <para>
-NAT og Masquerading sker i nat-tabellens FORWARD kæde, når en
+NAT og Masquerading sker i nat-tabellens FORWARD kÃ¦de, nÃ¥r en
 datapakke skal til at forlade maskinen. Det kan kun ske her.
 Source adressen, som skal NATtes, er den interne eller private
-adresse, men man kan også angive netværket ved at skrive 0 for
-den sidste byte i en almindelig 192.168 - adresse og også angive
-netmaske, typisk 192.168.1.0/24, så vil alle de lokale adresser
+adresse, men man kan ogsÃ¥ angive netvÃ¦rket ved at skrive 0 for
+den sidste byte i en almindelig 192.168 - adresse og ogsÃ¥ angive
+netmaske, typisk 192.168.1.0/24, sÃ¥ vil alle de lokale adresser
 blive NAT-ede.
 </para>
 
 <para>
-<command> iptables </command> har mange måder at angive adresser
-på, navne, numre, netværk, og for NAT også intervaller m.v., så
-hvis der opstår specielle behov, så kig lige en gang ekstra på
-manual page for iptables. Det er bedre at nøjes med én regel, som
-dækker flere adresser, end at have flere regler med hver deres
+<command> iptables </command> har mange mÃ¥der at angive adresser
+pÃ¥, navne, numre, netvÃ¦rk, og for NAT ogsÃ¥ intervaller m.v., sÃ¥
+hvis der opstÃ¥r specielle behov, sÃ¥ kig lige en gang ekstra pÃ¥
+manual page for iptables. Det er bedre at nÃ¸jes med Ã©n regel, som
+dÃ¦kker flere adresser, end at have flere regler med hver deres
 adresse.
 </para>
 
@@ -2049,12 +2049,12 @@ adresse.
 </screen>
 
 <para>
-Hvis man får en dynamisk IP adresse fra sin internet leverandør,
-skal kommandoen se lidt anderledes ud, og så bruger man
+Hvis man fÃ¥r en dynamisk IP adresse fra sin internet leverandÃ¸r,
+skal kommandoen se lidt anderledes ud, og sÃ¥ bruger man
 betegnelsen <emphasis> masquerading </emphasis> om metoden.
 Dynamiske adresser benyttes typisk med modemforbindelser, eller
-når man har en Point-to-Point Protocol (PPP) forbindelse til sin
-ISP. Man får en ny adresse hver gang. Linux kan tage denne
+nÃ¥r man har en Point-to-Point Protocol (PPP) forbindelse til sin
+ISP. Man fÃ¥r en ny adresse hver gang. Linux kan tage denne
 adresse og bruge som den officielle adresse for NAT-ing af
 interne maskiner.  Masquerading er oftest dynamisk NAT,
 med kun en ekstern adresse.
@@ -2062,12 +2062,12 @@ med kun en ekstern adresse.
 
 <para>
 MASQUERADE target er kun muligt i <emphasis> nat </emphasis>
-tabellen, og kun i POSTROUTING kæden. Dette target bør kun
+tabellen, og kun i POSTROUTING kÃ¦den. Dette target bÃ¸r kun
 benyttes med dynamiske IP-adresser.
 </para>
 
 <programlisting>
-# Eksempel på anvendelse af MASQUERADE target:
+# Eksempel pÃ¥ anvendelse af MASQUERADE target:
 
        # Masquerade out ppp0
        iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
@@ -2082,54 +2082,54 @@ benyttes med dynamiske IP-adresser.
 </programlisting>
 
 <para>
-Man kan godt bestemme, hvilken port-range, som må bruges til
-<emphasis> nat </emphasis> tabellen. Hvorfor skulle man gøre det?
-I nogle tilfælde laver man huller i firewallen for at sikre folk
+Man kan godt bestemme, hvilken port-range, som mÃ¥ bruges til
+<emphasis> nat </emphasis> tabellen. Hvorfor skulle man gÃ¸re det?
+I nogle tilfÃ¦lde laver man huller i firewallen for at sikre folk
 adgang til en bestemt protokol. Det er klart, at dette er en
-sikkerhedsfaktor, men hvis man skal have glæde af en server, så
-må der jo åbnes. Det kan evt. aftales med kendte brugere, at man
-kun holder et mindre port-interval åbent for bestemte protokoller.
+sikkerhedsfaktor, men hvis man skal have glÃ¦de af en server, sÃ¥
+mÃ¥ der jo Ã¥bnes. Det kan evt. aftales med kendte brugere, at man
+kun holder et mindre port-interval Ã¥bent for bestemte protokoller.
 </para>
 
 <para>
-DNS forespørgsler kan bruges som eksempel.  Vi vil sætte en
-intern DNS server op, en hjælpeserver, som husker nyligt brugte
-adresser, så alle maskinerne på vores lille netværk ikke behøver
-at spørge igen og igen ud over det overbelastede ISP link. Alle
-på det interne net kan spørge denne maskine, men den skal være
-fuldstændig lukket udadtil, bortset fra, at den skal kunne spørge
+DNS forespÃ¸rgsler kan bruges som eksempel.  Vi vil sÃ¦tte en
+intern DNS server op, en hjÃ¦lpeserver, som husker nyligt brugte
+adresser, sÃ¥ alle maskinerne pÃ¥ vores lille netvÃ¦rk ikke behÃ¸ver
+at spÃ¸rge igen og igen ud over det overbelastede ISP link. Alle
+pÃ¥ det interne net kan spÃ¸rge denne maskine, men den skal vÃ¦re
+fuldstÃ¦ndig lukket udadtil, bortset fra, at den skal kunne spÃ¸rge
 en remote DNS server. Det kaldes en DNS caching server. Til DNS
-benyttes User Datagram Protokol, UDP, som let kan udsættes for
-spoofing. Det ønsker vi at gøre alt for at forhindre. Det
-forbedrer selvfølgelig sikkerheden at køre en DNS caching server
-på en maskine for sig selv. 
+benyttes User Datagram Protokol, UDP, som let kan udsÃ¦ttes for
+spoofing. Det Ã¸nsker vi at gÃ¸re alt for at forhindre. Det
+forbedrer selvfÃ¸lgelig sikkerheden at kÃ¸re en DNS caching server
+pÃ¥ en maskine for sig selv. 
 </para>
 
 <para>
-Når hjælpeserveren skal foretage en forespørgsel, bruger den som
-afsenderport et nummer som den får tildelt lidt tilfældigt, men
+NÃ¥r hjÃ¦lpeserveren skal foretage en forespÃ¸rgsel, bruger den som
+afsenderport et nummer som den fÃ¥r tildelt lidt tilfÃ¦ldigt, men
 det vil ligge i intervallet 1024 - 65535. Det kaldes de
 ikke-priviligerede porte. Netfilter skelner mellem 1-511, som er
-såkaldt privilegerede, velkendte portnumre, som kun kræver root
+sÃ¥kaldt privilegerede, velkendte portnumre, som kun krÃ¦ver root
 privilegier, og som typisk bruges af specielle serverprogrammer
-som for eksempel httpd, 512-1023, som også er priviligerede, og så 1024 -
+som for eksempel httpd, 512-1023, som ogsÃ¥ er priviligerede, og sÃ¥ 1024 -
 65535, der kan anvendes til alt. Netfilter mapper ikke portnumre
 fra en gruppe til en anden. (At mappe = at spejle eller sige a
-svarer til X, b svarer til Y, c svarer til Z og så fremdeles, en
-af de få ting, en computer er god til.) Man vil kunne begrænse
-DNS-klienten til at bruge ganske få portnumre for forespørgsler,
-og derved yderligere skærpe sikkerheden, men det er ikke
-netfilters område. 
+svarer til X, b svarer til Y, c svarer til Z og sÃ¥ fremdeles, en
+af de fÃ¥ ting, en computer er god til.) Man vil kunne begrÃ¦nse
+DNS-klienten til at bruge ganske fÃ¥ portnumre for forespÃ¸rgsler,
+og derved yderligere skÃ¦rpe sikkerheden, men det er ikke
+netfilters omrÃ¥de. 
 </para>
 
 <para>
 De eksterne DNS servere sender svar til det portnummer, som 
-klienten brugte til at spørge.
+klienten brugte til at spÃ¸rge.
 </para>
 
 <para>
 Her kommer kommandoen, som tillader alle remote DNS servere at
-svare til vores maskines eksterne netkort på en ikke-priviligeret
+svare til vores maskines eksterne netkort pÃ¥ en ikke-priviligeret
 port:
 </para>
 
@@ -2138,12 +2138,12 @@ port:
 </screen>
 
 <para>
-Det ville være væsentligt bedre, hvis vi kun brugte en enkelt
-server udenfor firewallen, men så begynder det at blive et stort
-setup. Med den foreslåede lokale caching server kan anvendelsen
-af udp på alle lokale maskiner begrænses til, at de kun må lave
+Det ville vÃ¦re vÃ¦sentligt bedre, hvis vi kun brugte en enkelt
+server udenfor firewallen, men sÃ¥ begynder det at blive et stort
+setup. Med den foreslÃ¥ede lokale caching server kan anvendelsen
+af udp pÃ¥ alle lokale maskiner begrÃ¦nses til, at de kun mÃ¥ lave
 UDP til denne specifikke IP-adresse. Her kommer kommandoerne, som
-kan gøre det, idet vi antager, at caching serveren har
+kan gÃ¸re det, idet vi antager, at caching serveren har
 lokalnummeret 192.168.1.2:
 </para>
 
@@ -2154,23 +2154,23 @@ lokalnummeret 192.168.1.2:
 </screen>
 
 <para>
-Som man kan se er det lidt mere besværligt at kontrollere UDP,
+Som man kan se er det lidt mere besvÃ¦rligt at kontrollere UDP,
 fordi man ikke kan regne med connections - alle pakker er som en
-enkeltstående begivenhed. Det er en statusløs protokol.
-Rækkefølgen er kritisk. Det ville være en god idé at bruge -i for
-interface specifikation, så firewallen styrer på IP nummer og
+enkeltstÃ¥ende begivenhed. Det er en statuslÃ¸s protokol.
+RÃ¦kkefÃ¸lgen er kritisk. Det ville vÃ¦re en god idÃ© at bruge -i for
+interface specifikation, sÃ¥ firewallen styrer pÃ¥ IP nummer og
 hardware.
 </para>
 
 <para>
-Ligesom for tcp protokollen loades der et extension modul, når vi
+Ligesom for tcp protokollen loades der et extension modul, nÃ¥r vi
 specificerer -p udp. De ekstra kriterier, som dette modul giver
 mulighed for, er dog kun portnumre for hhv. source og
-destination. Det ovenstående eksempel specificerer, at alle
-inputporte over 1023 må bruges.  Det ville være meget bedre at
-sige til DNS-forwarder programmet at det kun må bruge for eksempel port
-32109. Ved at bruge fast portnummer for hjælpeserverens udgående
-trafik kan antallet af åbne porte begrænses meget.
+destination. Det ovenstÃ¥ende eksempel specificerer, at alle
+inputporte over 1023 mÃ¥ bruges.  Det ville vÃ¦re meget bedre at
+sige til DNS-forwarder programmet at det kun mÃ¥ bruge for eksempel port
+32109. Ved at bruge fast portnummer for hjÃ¦lpeserverens udgÃ¥ende
+trafik kan antallet af Ã¥bne porte begrÃ¦nses meget.
 </para>
 
 <screen>
@@ -2178,23 +2178,23 @@ trafik kan antallet af åbne porte begrænses meget.
 </screen>
 
 <para>
-Her vises en måde at åbne for alle FTP-pakker udefra, som ikke
-forsøger at indlede en konversation. Optionen --syn betyder, at
+Her vises en mÃ¥de at Ã¥bne for alle FTP-pakker udefra, som ikke
+forsÃ¸ger at indlede en konversation. Optionen --syn betyder, at
 pakker, som ikkehar syn-flaget (synkroniserings-request) sat,
-skal have lov at passere. Det er en anden måde at specificere, at
-maskiner indenfor firewallen skal have lov til at gøre alt, men
-alligevel beskyttes de såkaldt priviligerede porte i intervallet
+skal have lov at passere. Det er en anden mÃ¥de at specificere, at
+maskiner indenfor firewallen skal have lov til at gÃ¸re alt, men
+alligevel beskyttes de sÃ¥kaldt priviligerede porte i intervallet
 1 - 1024. En angriber kan godt sende en pakke, som ikke har syn
-flaget sat, men det er jo sværere at komme igennem til noget
-sårbart, når man nu ikke kan sende til portnumre under 1024.
+flaget sat, men det er jo svÃ¦rere at komme igennem til noget
+sÃ¥rbart, nÃ¥r man nu ikke kan sende til portnumre under 1024.
 </para>
 
 <para>
-En måske mere avanceret anvendelse af port-ranges er at åbne for et
-mindre område ved source NAT-ing; man reserverer et interval til
-et bestemt formål og kan på remote maskinen filtrere alle andre
-afsenderporte fra. Mange netværksprogrammer har en mulighed for
-at brugeren specificerer, hvilke porte, der må bruges.
+En mÃ¥ske mere avanceret anvendelse af port-ranges er at Ã¥bne for et
+mindre omrÃ¥de ved source NAT-ing; man reserverer et interval til
+et bestemt formÃ¥l og kan pÃ¥ remote maskinen filtrere alle andre
+afsenderporte fra. Mange netvÃ¦rksprogrammer har en mulighed for
+at brugeren specificerer, hvilke porte, der mÃ¥ bruges.
 </para>
 
 
@@ -2205,8 +2205,8 @@ POSTROUTING -j SNAT --to 129.142.141.140:47000-49000
 </screen>
 
 <para>
-Et eksempel på anvendelse af multiport extension, hvor der åbnes
-for (kendte) serverporte i et hug (mere effektivt, mindre load på
+Et eksempel pÃ¥ anvendelse af multiport extension, hvor der Ã¥bnes
+for (kendte) serverporte i et hug (mere effektivt, mindre load pÃ¥
 firewall):
 </para>
 
@@ -2215,8 +2215,8 @@ firewall):
 </screen>
 
 <para>
-I det efterfølgende eksempel bliver port specifikationer brugt
-til at omdirigere trafikken, en stærk feature, når man vil lave
+I det efterfÃ¸lgende eksempel bliver port specifikationer brugt
+til at omdirigere trafikken, en stÃ¦rk feature, nÃ¥r man vil lave
 en HTML proxy.
 </para>
 
@@ -2229,8 +2229,8 @@ en HTML proxy.
 
 <indexterm><primary>NAT</primary></indexterm>
 <para>
-I det følgende ses på henholdsvis source NAT og destination NAT.
-I source NAT er det afsenderens adresse+port, som oversættes til
+I det fÃ¸lgende ses pÃ¥ henholdsvis source NAT og destination NAT.
+I source NAT er det afsenderens adresse+port, som oversÃ¦ttes til
 gateway-adresse + en anden port. I Destination NAT sendes pakker,
 som egentlig er til a.b.c.d i stedet til x.y.z.q, hvilket jo
 strengt taget blot er en omdirigering.
@@ -2238,9 +2238,9 @@ strengt taget blot er en omdirigering.
 
 <para>
 Destination NAT rummer imidlertid mange muligheder, og er
-nødvendigt, når for eksempel 1000 klienter i sekundet spørger på Google,
-der i snit måske er 1/100 sekund om at svare. Man kan hurtigt
-regne ud, at de har mange servere kørende!
+nÃ¸dvendigt, nÃ¥r for eksempel 1000 klienter i sekundet spÃ¸rger pÃ¥ Google,
+der i snit mÃ¥ske er 1/100 sekund om at svare. Man kan hurtigt
+regne ud, at de har mange servere kÃ¸rende!
 </para>
 
 <sect3 id="source-NAT">
@@ -2249,13 +2249,13 @@ regne ud, at de har mange servere kørende!
 
 <para>
 Source NAT er det almindeligste, og er det, som vi hidtil har set
-på <!--TODO reference/--> i forbindelse med i192.168-numre
+pÃ¥ <!--TODO reference/--> i forbindelse med i192.168-numre
 klienter bag en firewall. Man kan sige, at vi spejler, (mapper,
 afbilder) source adressen plus portnummer som en global
 (offentlig) IP adresse med et andet portnummer.  Derved kan mange
 lokale maskiner deles om et enkelt IP nummer. Teoretisk set kan
-man løbe tør for portnumre på NAT maskinen, og det er der skam
-også taget højde for, idet maskinen simpelthen dropper alle
+man lÃ¸be tÃ¸r for portnumre pÃ¥ NAT maskinen, og det er der skam
+ogsÃ¥ taget hÃ¸jde for, idet maskinen simpelthen dropper alle
 pakker som ikke kan mappes til dens range af IP-numre+portnumre.
 </para>
 </sect3>
@@ -2266,17 +2266,17 @@ pakker som ikke kan mappes til dens range af IP-numre+portnumre.
 <indexterm><primary>Destination NAT</primary></indexterm>
 
 <para>
-Man kan også mappe (afbilde) destinationsadressen - Destination
-NAT - så folks forespørgsler f.eks. bliver omdirigeret hen til
+Man kan ogsÃ¥ mappe (afbilde) destinationsadressen - Destination
+NAT - sÃ¥ folks forespÃ¸rgsler f.eks. bliver omdirigeret hen til
 den lokale webserver eller til en server ud af en server pool. 
 </para>
 
 <para>
 For TCP og UDP kan man lave portmapping med iptables, hvor man skifter
 destinationsporten ud. F.eks. kan en klient oprette en forbindelse til
-en web-server på port 80, og NAT-serveren kan afbilde pakkerne til sin
-egen port 3128, hvor der kører en squid. Dette kaldes redirect,
-men er også en form for destination NAT. Resultatet er transparent proxying.
+en web-server pÃ¥ port 80, og NAT-serveren kan afbilde pakkerne til sin
+egen port 3128, hvor der kÃ¸rer en squid. Dette kaldes redirect,
+men er ogsÃ¥ en form for destination NAT. Resultatet er transparent proxying.
 </para>
 
 <para>Lav destination NAT til ip 1.2.3.4, 1.2.3.5 eller 1.2.3.6</para>
@@ -2286,14 +2286,14 @@ men er også en form for destination NAT. Resultatet er transparent proxying.
 
 <para>
 Fordelingen til serverne nr. 4 - 6 sker efter tur. Det kaldes
-ofte round-robin princippet. Derved kan man få fordelt
+ofte round-robin princippet. Derved kan man fÃ¥ fordelt
 belastningen til flere servere. Det egner sig ikke til CGI eller
-.php løsninger, hvor man skal fastholde en klient, hertil kræves
-en router, som kan holde styr på connections og samtidig lave
+.php lÃ¸sninger, hvor man skal fastholde en klient, hertil krÃ¦ves
+en router, som kan holde styr pÃ¥ connections og samtidig lave
 round robin.
 </para>
 
-<para>Lav destinations NAT fra port 80 til den lokale port 3128, hvor squid kører</para>
+<para>Lav destinations NAT fra port 80 til den lokale port 3128, hvor squid kÃ¸rer</para>
 <programlisting>
 # iptables -t nat -A PREROUTING -i eth1 -p tcp --dport 80 \ 
 -j REDIRECT --to-port 3128
@@ -2305,7 +2305,7 @@ er blot ment som illustration af, hvad man kan med iptables NAT.
 </para>
 
 <para>
-For nærmere beskrivelse, se Linux 2.4 NAT HOWTO på <ulink
+For nÃ¦rmere beskrivelse, se Linux 2.4 NAT HOWTO pÃ¥ <ulink
 url="http://www.netfilter.org/unreliable-guides/NAT-HOWTO/index.html">
 http://www.netfilter.org/unreliable-guides/NAT-HOWTO/index.html</ulink>
 Se desuden man-siden for iptables.
@@ -2318,83 +2318,83 @@ Se desuden man-siden for iptables.
 <title>En komplet firewall</title>
 
 <para>
-Selv om der allerede er givet eksempler på en firewall <xref
-linkend="sikkerhed-really-quick-guide" /> så vises her en lidt
-større opsætning af en firewall. Eksemplet er valgt 
-ud fra det kriterium, at det skal være en opsætning,
-som har fungeret og har vist sig at være stabil.
+Selv om der allerede er givet eksempler pÃ¥ en firewall <xref
+linkend="sikkerhed-really-quick-guide" /> sÃ¥ vises her en lidt
+stÃ¸rre opsÃ¦tning af en firewall. Eksemplet er valgt 
+ud fra det kriterium, at det skal vÃ¦re en opsÃ¦tning,
+som har fungeret og har vist sig at vÃ¦re stabil.
 </para>
 
 <para>
 Setuppet er, at vi har en maskine, som har forbindelse til vores
-ISP med fast (eller næsten fast) adresse, 130.3.2.99. Den skal
-være gateway og firewall. Desuden står der et antal maskiner i
-vores lille computerworkshop, og de må gerne snakke med
+ISP med fast (eller nÃ¦sten fast) adresse, 130.3.2.99. Den skal
+vÃ¦re gateway og firewall. Desuden stÃ¥r der et antal maskiner i
+vores lille computerworkshop, og de mÃ¥ gerne snakke med
 internettet gennem vores gateway/firewall, men da de ikke har
-"private adresser" må vi også sørge for, at firewallen laver NAT.
+"private adresser" mÃ¥ vi ogsÃ¥ sÃ¸rge for, at firewallen laver NAT.
 Desuden vil vi gerne have, at firewallen er web-server. Dette er
-ikke realistisk for en virksomhed, som ønsker high-speed,
-ultimativ sikkerhed, her ville man sørge for at fordele
-belastningen på flere maskiner, men realistisk nok for at
+ikke realistisk for en virksomhed, som Ã¸nsker high-speed,
+ultimativ sikkerhed, her ville man sÃ¸rge for at fordele
+belastningen pÃ¥ flere maskiner, men realistisk nok for at
 demonstrere mange pointer.  </para>
 
 <para>
-Firewall maskinen har 2 netkort, eth0 og eth1. På eth0 er den
-forbundet til en hub på det interne net, og på eth1 er der hul
-til ISP'ens gateway, der har nummer 130.3.2.1, en såkaldt klasse
-B adresse, som har netmaske 255.255.255.0 så den fungerer som en
-klasse C adresse, med max 255 maskiner i netværket.
+Firewall maskinen har 2 netkort, eth0 og eth1. PÃ¥ eth0 er den
+forbundet til en hub pÃ¥ det interne net, og pÃ¥ eth1 er der hul
+til ISP'ens gateway, der har nummer 130.3.2.1, en sÃ¥kaldt klasse
+B adresse, som har netmaske 255.255.255.0 sÃ¥ den fungerer som en
+klasse C adresse, med max 255 maskiner i netvÃ¦rket.
 </para>
 
 <para>
-Det interne net har adresser i området 192.168.67.0 - 255. Det er
-for at være lidt på tværs, at jeg altid anbefaler andet end
-192.168.1.1-254 om ikke andet, så kan de værste root-kit til
-intrusion på lokalnet herved vanskeligere få adgang ved spoofing.
+Det interne net har adresser i omrÃ¥det 192.168.67.0 - 255. Det er
+for at vÃ¦re lidt pÃ¥ tvÃ¦rs, at jeg altid anbefaler andet end
+192.168.1.1-254 om ikke andet, sÃ¥ kan de vÃ¦rste root-kit til
+intrusion pÃ¥ lokalnet herved vanskeligere fÃ¥ adgang ved spoofing.
 </para>
 
 <para>
 Vi starter med at konstatere, at man ikke kan lave en default
-policy som kun gælder for det ene netkort. Derfor adskilles
-trafikken, således at alt input fra eth1 ledes igennem en kæde,
+policy som kun gÃ¦lder for det ene netkort. Derfor adskilles
+trafikken, sÃ¥ledes at alt input fra eth1 ledes igennem en kÃ¦de,
 som kaldes door1.
 </para>
 
 <para>
-Door1 skal ende med at droppe al trafik, som vi ikke ønsker ind i
-vores netværk. De ting, som vi gerne vil have med, skal
+Door1 skal ende med at droppe al trafik, som vi ikke Ã¸nsker ind i
+vores netvÃ¦rk. De ting, som vi gerne vil have med, skal
 accepteres med en kommando -j ACCEPT.
 </para>
 
 <para>
-Det aller første, scriptet gør, er at sikre, at netfilter delen i
+Det aller fÃ¸rste, scriptet gÃ¸r, er at sikre, at netfilter delen i
 kernen er i en kendt tilstand, d.v.s. vi flusher alle regler i
-alle kæder og sætter alle default policies. Hvis man prøver at
-optimere ved kun at foretage de nødvendige ting for ens opsætning
-efter et boot, så skal man lige sørge for at have en version
+alle kÃ¦der og sÃ¦tter alle default policies. Hvis man prÃ¸ver at
+optimere ved kun at foretage de nÃ¸dvendige ting for ens opsÃ¦tning
+efter et boot, sÃ¥ skal man lige sÃ¸rge for at have en version
 liggende, som kan klare <emphasis> alle </emphasis> situationer.
 </para>
 
 <para>
-Det næste, der sker, er at kæden door1 slettes. Det sker
-selvfølgelig for at sikre, at der ikke ligger rester af andre
+Det nÃ¦ste, der sker, er at kÃ¦den door1 slettes. Det sker
+selvfÃ¸lgelig for at sikre, at der ikke ligger rester af andre
 regler i door1.
 </para>
 
 <para>
-Det kan gøres på mange mange andre måder, men denne her metode er
-valgt efter lidt eksperimenteren. Man får også nulstillet
-tællerne for door1, og fejlene er ikke nogen, som får systemet
-til at hænge, hvilket vistnok har kunnet forekomme med nogle af
-de iptables options, som giver fejl, hvis man kører dem
-selv om de ikke er nødvendige. Læseren kan eksperimentere med at
-flushe kæden door1 i stedet for (også hvis den ikke findes).
+Det kan gÃ¸res pÃ¥ mange mange andre mÃ¥der, men denne her metode er
+valgt efter lidt eksperimenteren. Man fÃ¥r ogsÃ¥ nulstillet
+tÃ¦llerne for door1, og fejlene er ikke nogen, som fÃ¥r systemet
+til at hÃ¦nge, hvilket vistnok har kunnet forekomme med nogle af
+de iptables options, som giver fejl, hvis man kÃ¸rer dem
+selv om de ikke er nÃ¸dvendige. LÃ¦seren kan eksperimentere med at
+flushe kÃ¦den door1 i stedet for (ogsÃ¥ hvis den ikke findes).
 </para>
 
 <para>
-Næste skridt er så at oprette kæden door1. Nu er den tom - ingen
-regler, ingen forbindelse med andre kæder. Lister man med -L
-kommandoen, får man at vide "no references", svarende til død
+NÃ¦ste skridt er sÃ¥ at oprette kÃ¦den door1. Nu er den tom - ingen
+regler, ingen forbindelse med andre kÃ¦der. Lister man med -L
+kommandoen, fÃ¥r man at vide "no references", svarende til dÃ¸d
 kode eller ubrugt variabel.
 </para>
 
@@ -2402,47 +2402,47 @@ kode eller ubrugt variabel.
 Nu installeres regel efter regel i firewallen. De vigtigste er
 stadig dem, som tillader brugere indefra at kommunikere frit, men
 man skal lige huske, at denne trafik altid starter med input fra
-eth0, som vi slet ikke ser i denne door1 kæde. Indtil videre er
-der fri passage indefra og ud. Det er først til sidst, at der
-etableres en regel som siger, at al indadgående trafik fra eth1
-skal via door1. Det kunne lige så godt have været først, og under
-alle omstændigheder må man kun aktivere eth1, når alle reglerne i
-firewallen er opsat. Man kan godt opsætte regler for et
+eth0, som vi slet ikke ser i denne door1 kÃ¦de. Indtil videre er
+der fri passage indefra og ud. Det er fÃ¸rst til sidst, at der
+etableres en regel som siger, at al indadgÃ¥ende trafik fra eth1
+skal via door1. Det kunne lige sÃ¥ godt have vÃ¦ret fÃ¸rst, og under
+alle omstÃ¦ndigheder mÃ¥ man kun aktivere eth1, nÃ¥r alle reglerne i
+firewallen er opsat. Man kan godt opsÃ¦tte regler for et
 interface, som er "down", <command> ifconfig eth1 down
 </command>.
 </para>
 
 <para>
-Der åbnes for al trafik til ssh-porten, både den indefra-ud og
-udefra-ind.  Ligeledes åbnes der for al trafik til http porten.
+Der Ã¥bnes for al trafik til ssh-porten, bÃ¥de den indefra-ud og
+udefra-ind.  Ligeledes Ã¥bnes der for al trafik til http porten.
 </para>
 
 <para>
-Næste regel åbner for indkommende trafik, der stammer fra port
+NÃ¦ste regel Ã¥bner for indkommende trafik, der stammer fra port
 53, nameservere.
 </para>
 
 <para>
 Nu kommer en regel, som kun skal benyttes, hvis ISP benytter DHCP
 til kontrol af IP, nameservices og routing. Det er en god ting
-og forhindrer slet ikke, at man selv styrer opsætningen.
+og forhindrer slet ikke, at man selv styrer opsÃ¦tningen.
 </para>
 
 <para>
-Der åbnes også for ping. Det er ikke et krav for en firewall, men
-er ok at gøre på en maskine, der står udenfor en firewall men
+Der Ã¥bnes ogsÃ¥ for ping. Det er ikke et krav for en firewall, men
+er ok at gÃ¸re pÃ¥ en maskine, der stÃ¥r udenfor en firewall men
 inden en gateway. I eksemplet her er gateway og firewall den
-samme, men det er ok at åbne for ping/ICMP, hvis man holder øje
+samme, men det er ok at Ã¥bne for ping/ICMP, hvis man holder Ã¸je
 med trafikken.
 </para>
 
 <para>
-Endelig kommer de spændende linier, hvor der åbnes for indgang
-for alt, hvad der er svar på forbindelser etableret indefra.
+Endelig kommer de spÃ¦ndende linier, hvor der Ã¥bnes for indgang
+for alt, hvad der er svar pÃ¥ forbindelser etableret indefra.
 </para>
 
 <para>
-Dernæst er der kun opsætning af NAT-ing og aktivering af
+DernÃ¦st er der kun opsÃ¦tning af NAT-ing og aktivering af
 forwarding.
 </para>
 
@@ -2457,31 +2457,31 @@ iptables -X door1 2> /dev/null 1>&2
 iptables -N door1
 
 iptables -A door1 -m state --state INVALID -j DROP
-# åbne for al ssh og http
+# Ã¥bne for al ssh og http
 iptables -A door1 -p tcp --sport ssh  -j ACCEPT
 iptables -A door1 -p tcp --dport ssh  -j ACCEPT
 iptables -A door1 -p tcp --sport http -j ACCEPT
 iptables -A door1 -p tcp --dport http -j ACCEPT
-# åbne for svar fra nameserere, DNS.
+# Ã¥bne for svar fra nameserere, DNS.
 iptables -A door1 -p udp --sport 53   -j ACCEPT
-# der åbnes for konversation med dhcp serveren på gatewayen.
+# der Ã¥bnes for konversation med dhcp serveren pÃ¥ gatewayen.
 iptables -A door1 -p udp --source 130.3.2.1 --dport bootps -j ACCEPT
-# åbne for ping (mange vil foretrække at lukke i stedet!)
+# Ã¥bne for ping (mange vil foretrÃ¦kke at lukke i stedet!)
 iptables -A door1 -p icmp             -j ACCEPT
 # Alt, hvad der er etableret indefra, accepteres.
 iptables -A door1 -m state --state ESTABLISHED,RELATED  -j ACCEPT
-# alt andet smides væk.
+# alt andet smides vÃ¦k.
 iptables -A door1 -j DROP
 
 # Hop til door1 hvis input er fra eth1
 iptables -A INPUT -i eth1 -j door1
 
-# NAT-ing sættes op, så alt, hvad der kommer fra lokalnettet,
+# NAT-ing sÃ¦ttes op, sÃ¥ alt, hvad der kommer fra lokalnettet,
 # bliver videresendt som om det kommer fra firewallen.
 iptables -t nat -A POSTROUTING --src 192.168.67.0/24 \
          -o eth1 -j SNAT --to 130.3.2.99
 
-# for at det skal fungere, må vi aktivere forwarding:
+# for at det skal fungere, mÃ¥ vi aktivere forwarding:
 echo 1 >> /proc/sys/net/ipv4/ip_forward
 
 </programlisting>
@@ -2489,27 +2489,27 @@ echo 1 >> /proc/sys/net/ipv4/ip_forward
 <para>
 Der er mange andre ting, man kan foretage sig, for at maskinen
 bliver sikret: <ulink url="http://www.bastille-linux.org/">
-http://www.bastille-linux.org/</ulink>. Det kaldes også
-"hardening", hærdning, af et system. For eksempel anbefales det
-på udsatte systemer at fjerne de tools, som en
-systemadministrator bruger til sletning, kopiering og omdøbning
+http://www.bastille-linux.org/</ulink>. Det kaldes ogsÃ¥
+"hardening", hÃ¦rdning, af et system. For eksempel anbefales det
+pÃ¥ udsatte systemer at fjerne de tools, som en
+systemadministrator bruger til sletning, kopiering og omdÃ¸bning
 af filer, mount, diskformatering, oprettelse af filsystemer mv.
-Hvis en cracker opnår root-privilegier, vil aktionsmulighederne
-derved være begrænset. Men det vil for de fleste private medføre
+Hvis en cracker opnÃ¥r root-privilegier, vil aktionsmulighederne
+derved vÃ¦re begrÃ¦nset. Men det vil for de fleste private medfÃ¸re
 irritationsmomenter i det daglige arbejde.  Man kunne
-selvfølgelig have en supplements-server stående, som man lige
-kunne hooke op når man havde brug for det ...
+selvfÃ¸lgelig have en supplements-server stÃ¥ende, som man lige
+kunne hooke op nÃ¥r man havde brug for det ...
 </para>
 
 <para>
-Sådan er der så mange ting, man kunne gøre. De fleste af disse
+SÃ¥dan er der sÃ¥ mange ting, man kunne gÃ¸re. De fleste af disse
 tiltag beskrives i sidste afsnit <!--TODO xref linkend="" /-->
 </para>
 
 <para>
-Kommentarer til ovenstående firewall er velkomne, særligt hvis
-der er konkrete ting, som er afprøvet, men også kommentarer, som
-bevæger sig i yderkanten af emnet.
+Kommentarer til ovenstÃ¥ende firewall er velkomne, sÃ¦rligt hvis
+der er konkrete ting, som er afprÃ¸vet, men ogsÃ¥ kommentarer, som
+bevÃ¦ger sig i yderkanten af emnet.
 </para>
 
 <para>
@@ -2523,35 +2523,35 @@ bevæger sig i yderkanten af emnet.
 <title>Linux som proxy server</title>
 
 <para>
-I det følgende beskrives den situation, at en virksomhed med 40
-ihærdige brugere på en 2 Megabit forbindelse ønsker at forbedre
-browser-response, således, at når en person har hentet en
-web-side, så kan de andre hente den samme web-information lokalt
-fra en server med buffer, en såkaldt caching proxy.
+I det fÃ¸lgende beskrives den situation, at en virksomhed med 40
+ihÃ¦rdige brugere pÃ¥ en 2 Megabit forbindelse Ã¸nsker at forbedre
+browser-response, sÃ¥ledes, at nÃ¥r en person har hentet en
+web-side, sÃ¥ kan de andre hente den samme web-information lokalt
+fra en server med buffer, en sÃ¥kaldt caching proxy.
 </para>
 
 <sect3 id="proxy-squid">
 <title>Proxy med Squid</title>
 
 <para>
-Squid er en god proxy server bl.a. til Linux, der kan findes på 
+Squid er en god proxy server bl.a. til Linux, der kan findes pÃ¥ 
 <ulink url="http://www.squid-cache.org/">http://www.squid-cache.org/</ulink>. Squid
 er en agent, der henter de hjemmesider, brugeren beder om, og
 videresender resultatet til brugeren. Samtidig kan Squid fungere som
 proxy-cache - den gemmer hjemmesiden i cache, og er der nu en anden
 bruger, der vil se den samme hjemmeside, hentes den direkte fra den
-lokale hukommelses- eller disk-cache på proxy-maskinen - det vil sige,
-uden at man skal via internettet. Squid tester, om en hjemmeside på
-nettet er nyere end den i cachen, og kun hvis cachen er forældet, vil
-en ny version blive hentet. Fordelen ved en proxy-cache er således, at
-man ofte kan spare måske 50% på båndbredden.
+lokale hukommelses- eller disk-cache pÃ¥ proxy-maskinen - det vil sige,
+uden at man skal via internettet. Squid tester, om en hjemmeside pÃ¥
+nettet er nyere end den i cachen, og kun hvis cachen er forÃ¦ldet, vil
+en ny version blive hentet. Fordelen ved en proxy-cache er sÃ¥ledes, at
+man ofte kan spare mÃ¥ske 50% pÃ¥ bÃ¥ndbredden.
 </para>
 
 <para>
 Det er naturligvis ikke alt, som kan gemmes i en cache, f.eks.
-skal cgi-kald netop ikke køre fra cache. Disse hindringer
-håndterer Squid dog transparent. Ud over hjemmesider (HTTP) er FTP,
-GOPHER, SSL og WAIS protokollen understøttet. Squid kan dog ikke klare
+skal cgi-kald netop ikke kÃ¸re fra cache. Disse hindringer
+hÃ¥ndterer Squid dog transparent. Ud over hjemmesider (HTTP) er FTP,
+GOPHER, SSL og WAIS protokollen understÃ¸ttet. Squid kan dog ikke klare
 POP-mail, NNTP (News grupper) og RealAudio.
 </para>
 </sect3>
@@ -2562,9 +2562,9 @@ POP-mail, NNTP (News grupper) og RealAudio.
 
 <indexterm><primary>Squid</primary><secondary>installation</secondary></indexterm>
 <para>
-Man bør ikke installere Squid, så den kører som root. Ofte vælger man
-at lade Squid køre som brugeren <command>squid</command> i sin egen gruppe
-<command>squid</command>, og kun med få rettigheder.
+Man bÃ¸r ikke installere Squid, sÃ¥ den kÃ¸rer som root. Ofte vÃ¦lger man
+at lade Squid kÃ¸re som brugeren <command>squid</command> i sin egen gruppe
+<command>squid</command>, og kun med fÃ¥ rettigheder.
 </para>
 
 <para>
@@ -2572,81 +2572,81 @@ Vi har installeret <filename>squid-2.2.STABLE5-1.i386.rpm</filename>,
 som kan hentes fra <ulink
 url="http://www.squid-cache.org/">http://www.squid-cache.org/</ulink>. Squid
 startes op via <filename>/etc/rc.d/init.d/squid</filename>. Squids
-opsætningsfil hedder <filename>/etc/squid/squid.conf</filename>. Der er
-<emphasis>mange</emphasis> opsætningsmuligheder. Basalt set skal
+opsÃ¦tningsfil hedder <filename>/etc/squid/squid.conf</filename>. Der er
+<emphasis>mange</emphasis> opsÃ¦tningsmuligheder. Basalt set skal
 man fjerne kommentartegnene fra nogle linjer i
 <filename>/etc/squid/squid.conf</filename> og udkommentere andre, og
-så starte Squid.  Den originale
+sÃ¥ starte Squid.  Den originale
 <filename>/etc/squid/squid.conf</filename> er stor, og vi vil nu se
-nærmere på en simpel opsætning af squid.
+nÃ¦rmere pÃ¥ en simpel opsÃ¦tning af squid.
 </para>
 
 <sect4 id="basal-squid-conf">
-<title>Basal opsætning af squid.conf</title>
+<title>Basal opsÃ¦tning af squid.conf</title>
 
 <indexterm><primary>squid.conf</primary></indexterm>
 <para>
 Man kan i <filename>/usr/doc/squid-2.2.STABLE5/QUICKSTART</filename>
 finde en minimal beskrivelse af parametre for
-<filename>squid.conf</filename>. En meget bedre gennemgang fås ved at
-læse brugermanualen til Squid, som kan findes på 
+<filename>squid.conf</filename>. En meget bedre gennemgang fÃ¥s ved at
+lÃ¦se brugermanualen til Squid, som kan findes pÃ¥ 
 <ulink url="http://www.squid-cache.org/Doc/Users-Guide/">http://www.squid-cache.org/Doc/Users-Guide/</ulink>.
-En anden god start er også at læse (og gemme) den originale
+En anden god start er ogsÃ¥ at lÃ¦se (og gemme) den originale
 <filename>/etc/squid/squid.conf</filename>, som fulgte med RPM-pakken.
 </para>
 
 <para>
-Vi skal nu vise en kort <filename>squid.conf</filename>, hvor vi lader squid køre som 
+Vi skal nu vise en kort <filename>squid.conf</filename>, hvor vi lader squid kÃ¸re som 
 brugeren <filename>squid</filename>.
 </para>
 
 <programlisting>
-#squid.conf -  Basal opsætning
+#squid.conf -  Basal opsÃ¦tning
 
 #Laveste niveau af logging
 debug_options ALL,1
 
-#Gruppe af IP numre, som kan tilgå Squid (Access Control List) 
-#Vil man kun give access til netværket 192.168.0.0/255.255.255.0
-#så brug følgende linje
+#Gruppe af IP numre, som kan tilgÃ¥ Squid (Access Control List) 
+#Vil man kun give access til netvÃ¦rket 192.168.0.0/255.255.255.0
+#sÃ¥ brug fÃ¸lgende linje
 acl all src 192.168.0.0/255.255.255.0
 
-#Skal alle kunne bruge Squid så udkommenter følgende linje.
+#Skal alle kunne bruge Squid sÃ¥ udkommenter fÃ¸lgende linje.
 #acl all src 0.0.0.0/0.0.0.0
 
-#Port, man anvender til opsætning af Netscape klienter
+#Port, man anvender til opsÃ¦tning af Netscape klienter
 http_port 3128
 
 #Lad alle i ACL bruge Squid til HTTP
 http_access allow  all
 
-#test følgende sites for at tjeke, om maskinen er koblet til internettet
+#test fÃ¸lgende sites for at tjeke, om maskinen er koblet til internettet
 dns_testnames internic.net usc.edu cs.colorado.edu mit.edu yale.edu
 
-#Kør som effektiv bruger squid og gruppe squid
+#KÃ¸r som effektiv bruger squid og gruppe squid
 cache_effective_user squid squid
 
-# Squid vil oftest bruge to-tre gange denne RAM størrelse. Vil man max
-# bruge 24 Mb RAM til Squid, så sæt cache_ram til 8 Mb. 
+# Squid vil oftest bruge to-tre gange denne RAM stÃ¸rrelse. Vil man max
+# bruge 24 Mb RAM til Squid, sÃ¥ sÃ¦t cache_ram til 8 Mb. 
 # Jo mere cache_mem desto hurtige er cachen (mindre diskaccess).
 cache_mem  8 MB
 
-#Maximal størrelse på object i cache
+#Maximal stÃ¸rrelse pÃ¥ object i cache
 maximum_object_size 4096 KB
 
-# Næste parameter-opsætning er disk cache struktur. Parametre er
-#  Dirname - hvor på disken er disk cache, dvs. spool dir
-#  Mbytes under spool dir - hvor mange Mb må gemmes i disk cache.
+# NÃ¦ste parameter-opsÃ¦tning er disk cache struktur. Parametre er
+#  Dirname - hvor pÃ¥ disken er disk cache, dvs. spool dir
+#  Mbytes under spool dir - hvor mange Mb mÃ¥ gemmes i disk cache.
 #  Level-1 dir antal - Antal underkataloger under Dirname
 #  Level2 dir antal - Antal underkataloger for hver Level-1 kataloger
-# Sæt ikke produktet mellem de to sidste vildt højt!
+# SÃ¦t ikke produktet mellem de to sidste vildt hÃ¸jt!
 cache_dir /var/spool/squid 100 16 256
 </programlisting>
 
 
 <para>
-Lad os se nærmere på, hvad der installeres, og hvordan squid
-kører. Installer squid med 
+Lad os se nÃ¦rmere pÃ¥, hvad der installeres, og hvordan squid
+kÃ¸rer. Installer squid med 
 </para>
 
 <programlisting>
@@ -2655,17 +2655,17 @@ kører. Installer squid med
 
 <para>
 Ret <filename>/etc/squid/squid.conf</filename> til som vist ovenfor. Husk dog at gemme 
-den originale <filename>/etc/squid/squid.conf</filename> før ovenstående eksempel anvendes.
+den originale <filename>/etc/squid/squid.conf</filename> fÃ¸r ovenstÃ¥ende eksempel anvendes.
 </para>
 
 <itemizedlist mark="bullet">
 
-<listitem><para><filename>/etc/squid/</filename> indeholder opsætningsfiler - specielt er
+<listitem><para><filename>/etc/squid/</filename> indeholder opsÃ¦tningsfiler - specielt er
 <filename>/etc/squid/squid.conf</filename> vigtig.</para></listitem> 
 
 <listitem><para><filename>/var/spool/squid</filename> indeholder den dynamiske database. (se
 parameteren <filename>cache_dir</filename> i <filename>squid.conf</filename>). Over 4000 filer laves med
-ovenstående opsætning.</para></listitem>
+ovenstÃ¥ende opsÃ¦tning.</para></listitem>
 
 <listitem><para><filename>/var/log/squid</filename> indeholder log-filer.
 </para></listitem>
@@ -2673,7 +2673,7 @@ ovenstående opsætning.</para></listitem>
   <itemizedlist mark="bullet">
     <listitem><para><filename>access.log</filename> - Hvad blev hentet
     fra  nettet. 
-    Her kan systemadministratoren overvåge trafik.</para></listitem>
+    Her kan systemadministratoren overvÃ¥ge trafik.</para></listitem>
   <listitem><para><filename>cache.log</filename> - Opstartsmeddelelser.</para></listitem>
 <listitem><para><filename>store.log</filename> - Oversigt over, hvad der findes i proxy-cache nu.</para></listitem>
   </itemizedlist>
@@ -2685,7 +2685,7 @@ ovenstående opsætning.</para></listitem>
 Med installation af squid blev <filename>squid</filename> brugeren og
 tilsvarende gruppe oprettet. Kataloget
 <filename>/var/spool/squid</filename> er tomt men ejet af brugeren
-squid. Selve databasestrukturen skal man en gang for alle sætte op -
+squid. Selve databasestrukturen skal man en gang for alle sÃ¦tte op -
 hertil bruges parameteren <filename>cache_dir</filename>.
 </para>
 
@@ -2695,18 +2695,18 @@ hertil bruges parameteren <filename>cache_dir</filename>.
 
 <para>
 Anvender man 16 og 256 som de sidste to parametre til <filename>cache_dir</filename>, skal
-man ikke blive bange, når man initialiserer databasen. Der køres hårdt på
-harddisken, og det tager måske flere minutter - databasen bliver stor!
+man ikke blive bange, nÃ¥r man initialiserer databasen. Der kÃ¸res hÃ¥rdt pÃ¥
+harddisken, og det tager mÃ¥ske flere minutter - databasen bliver stor!
 </para>
 </sect4>
 
 <sect4 id="squid-bruger">
-<title>Brugerens opsætning</title>
+<title>Brugerens opsÃ¦tning</title>
 
 <indexterm><primary>Proxy klient</primary></indexterm>
 <para>
-For at man kan få squid til at virke sammen med Lynx og Wget, kan man
-sætte følgende systemvariable
+For at man kan fÃ¥ squid til at virke sammen med Lynx og Wget, kan man
+sÃ¦tte fÃ¸lgende systemvariable
 (her hedder vores proxy-server "proxy.herne.dk")
 </para>
 
@@ -2718,16 +2718,16 @@ setenv ftp_proxy http://proxy.herne.dk:3128/
 
 <para>
 I Netscape skal brugerne under
-<filename>Edit->Preferences->Advanced->Proxies</filename> vælge
-<filename>Manual proxy configuration</filename> og tryk på
-<filename>View</filename>. Som det kan ses på det næste billede, skal
-man skive navnet på proxy maskinen (her anvender vi
+<filename>Edit->Preferences->Advanced->Proxies</filename> vÃ¦lge
+<filename>Manual proxy configuration</filename> og tryk pÃ¥
+<filename>View</filename>. Som det kan ses pÃ¥ det nÃ¦ste billede, skal
+man skive navnet pÃ¥ proxy maskinen (her anvender vi
 <filename>proxy.herne.dk</filename>), og port 3128 svarer til
 parameteren "http_port" i <filename>squid.conf</filename>.
 </para>
 
 <figure id="proxy-fig" float="1">
-<title>Proxy opsætning i Netscape</title>
+<title>Proxy opsÃ¦tning i Netscape</title>
 <graphic fileref="proxy.&magic;"  scale="40"></graphic>
 </figure>  
 
@@ -2735,13 +2735,13 @@ parameteren "http_port" i <filename>squid.conf</filename>.
 
 <para>
 Squid er i dagligdagen et meget driftsikkert program og kan anbefales.
-Vi skal dog lige huske at nævne, at hvis der ikke er blokeret for det
-via en firewall, så kan brugeren af Netscape faktisk godt køre
-forbi proxy cachen ved enten at udelade proxy-opsætningen eller 
-at holde SHIFT nede, før der trykkes på et
-link. Derfor skal firewallopsætningen være lavet, så
+Vi skal dog lige huske at nÃ¦vne, at hvis der ikke er blokeret for det
+via en firewall, sÃ¥ kan brugeren af Netscape faktisk godt kÃ¸re
+forbi proxy cachen ved enten at udelade proxy-opsÃ¦tningen eller 
+at holde SHIFT nede, fÃ¸r der trykkes pÃ¥ et
+link. Derfor skal firewallopsÃ¦tningen vÃ¦re lavet, sÃ¥
 proxy-programmet godt kan hente data fra internettet, men at brugere
-ikke kan - hvis man virkelig ønsker, at folk skal bruge
+ikke kan - hvis man virkelig Ã¸nsker, at folk skal bruge
 proxy-serveren.
 </para>
 
@@ -2757,12 +2757,12 @@ proxy-serveren.
 
 <para>
 Man kan lave transparent proxy med squid sammen med iptables.
-Kernen skal være oversat med "Transparent proxying". Se
+Kernen skal vÃ¦re oversat med "Transparent proxying". Se
 <xref linkend="destination-nat"/>
 </para>
 
 <para>
-Der findes også en mini-HOWTO på <ulink
+Der findes ogsÃ¥ en mini-HOWTO pÃ¥ <ulink
 url="http://sunsite.dk/ldp/HOWTO/mini/TransparentProxy.html
 ">http://sunsite.dk/ldp/HOWTO/mini/TransparentProxy.html
 </ulink>.
@@ -2777,17 +2777,17 @@ url="http://sunsite.dk/ldp/HOWTO/mini/TransparentProxy.html
 
 <para>
 I Linux-kerne 2.2 hedder firewall kommandoen <command> ipchains </command>, og denne
-kommando bruges også til opsætning af masquerading.
+kommando bruges ogsÃ¥ til opsÃ¦tning af masquerading.
 </para>
 
 <para>
-Forwardkæden sættes op med en default target MASQ eller, hvis
-default politik (policy). Den kan stadig væk smide væk, men i
+ForwardkÃ¦den sÃ¦ttes op med en default target MASQ eller, hvis
+default politik (policy). Den kan stadig vÃ¦k smide vÃ¦k, men i
 <command> ipchains </command> hedder det DENY.
 </para>
 
 <para>
-Den simple og hurtige måde at sætte IP masquerading op på er:
+Den simple og hurtige mÃ¥de at sÃ¦tte IP masquerading op pÃ¥ er:
 </para>
 
 <screen>
@@ -2802,7 +2802,7 @@ det net, man vil give sine maskiner adgang til via masquerading.
 </para>
 
 <para>
-Det kan også give mening at sætte timeouts for masquerading forbindelserne:
+Det kan ogsÃ¥ give mening at sÃ¦tte timeouts for masquerading forbindelserne:
 </para>
 
 <screen>
@@ -2810,16 +2810,16 @@ Det kan også give mening at sætte timeouts for masquerading forbindelserne:
 </screen>
 
 <para>
-Det første tal er timeout for en tcp forbindelse, det næste er hvor
-længe en tcp forbindelse skal kunne eksistere efter modtagelsen af en
+Det fÃ¸rste tal er timeout for en tcp forbindelse, det nÃ¦ste er hvor
+lÃ¦nge en tcp forbindelse skal kunne eksistere efter modtagelsen af en
 FIN pakke, og det sidste er timeout for UDP. Timeout tiderne er i
-sekunder. Default timeout er 15 minutter, og det kan være lidt kort
+sekunder. Default timeout er 15 minutter, og det kan vÃ¦re lidt kort
 for en tcp session.
 </para>
 
 <para>
-Nu sættes de andre maskiner i lokalnetværket til at bruge myhost som
-default gateway, og voila! Man kan komme på internettet fra de andre
+Nu sÃ¦ttes de andre maskiner i lokalnetvÃ¦rket til at bruge myhost som
+default gateway, og voila! Man kan komme pÃ¥ internettet fra de andre
 maskiner. 
 </para>
 
@@ -2827,25 +2827,25 @@ maskiner.
 <title>Moduler til ipchains</title>
 
 <para>
-Og dog. Http mm virker nu, men der er et par protokoller, der kræver særlige 
+Og dog. Http mm virker nu, men der er et par protokoller, der krÃ¦ver sÃ¦rlige 
 hensyn. Det er bla. ftp, realaudio, irc og forskellige spil.
 </para>
 
 <para>
 For at kunne bruge ftp, real audio, irc, spille quake mm via
-masquerading, er vi nødt til gøre det lidt mere indviklet. Der findes
-moduler til <command> ipchains </command>, der kan håndtere en del forskellige
+masquerading, er vi nÃ¸dt til gÃ¸re det lidt mere indviklet. Der findes
+moduler til <command> ipchains </command>, der kan hÃ¥ndtere en del forskellige
 applikationer: ip_masq_ftp, ip_masq_raudio, ip_masq_irc, ip_masq_quake
-etc. For at kunne bruge disse moduler, skal de være oversat med, da
+etc. For at kunne bruge disse moduler, skal de vÃ¦re oversat med, da
 man lavede kernen. Det er inde under networking options, hvor man skal
-slå "IP masquerading special module support" og "ipportfw masq
-support" til. I kerne 2.2.12 er det nødvendigt at slå "prompt for
-development and/or incomplete code/drivers" til for at få lov til at
-vælge ipportfw.
+slÃ¥ "IP masquerading special module support" og "ipportfw masq
+support" til. I kerne 2.2.12 er det nÃ¸dvendigt at slÃ¥ "prompt for
+development and/or incomplete code/drivers" til for at fÃ¥ lov til at
+vÃ¦lge ipportfw.
 </para>
 
 <para>
-Modulerne indlæses nu med:
+Modulerne indlÃ¦ses nu med:
 
 <screen>
 <prompt>[root@myhost /root]#</prompt> <userinput>/sbin/modprobe ip_masq_ftp</userinput>
@@ -2854,18 +2854,18 @@ Modulerne indlæses nu med:
 </para>
 
 <para>
-Nu virker ftp og realaudio fra de andre maskiner. Gør det samme med
-de andre moduler, der skal bruges. Der findes også et værktøj, der hedder 
+Nu virker ftp og realaudio fra de andre maskiner. GÃ¸r det samme med
+de andre moduler, der skal bruges. Der findes ogsÃ¥ et vÃ¦rktÃ¸j, der hedder 
 IPMASQADM, man kan bruge. 
-Der findes en slags beskrivelse af emnet i IP-Masquerade-HOWTO'en på
+Der findes en slags beskrivelse af emnet i IP-Masquerade-HOWTO'en pÃ¥
 <ulink url="http://sunsite.dk/ldp/HOWTO/IP-Masquerade-HOWTO-6.html#ss6.8">http://sunsite.dk/ldp/HOWTO/IP-Masquerade-HOWTO-6.html#ss6.8</ulink>
 </para>
 </sect3>
 
 <sect3 id="opsaetning-andre-maskiner">
-<title>Opsætning af de andre maskiner i nettet</title>
+<title>OpsÃ¦tning af de andre maskiner i nettet</title>
 <para>
-Default gateway sættes med kommandoen <command>route</command>:
+Default gateway sÃ¦ttes med kommandoen <command>route</command>:
 </para>
 
 <programlisting>
@@ -2873,20 +2873,20 @@ route add default gw myhost
 </programlisting>
 
 <para>
-Hvis det skal være permanent, er der lidt forskel på distributionerne.
-Nogle har et fint opsætningsværktøj, det vil vi ikke komme ind på
+Hvis det skal vÃ¦re permanent, er der lidt forskel pÃ¥ distributionerne.
+Nogle har et fint opsÃ¦tningsvÃ¦rktÃ¸j, det vil vi ikke komme ind pÃ¥
 her. I SuSE er det en <filename>/etc/route.conf</filename>, man kan
-sætte det ind i.  I debian er det direkte i
-<filename>/etc/init.d/</filename> i et netværks startup script.  I
+sÃ¦tte det ind i.  I debian er det direkte i
+<filename>/etc/init.d/</filename> i et netvÃ¦rks startup script.  I
 Red Hat er det filen <filename>/etc/sysconfig/network</filename>, man
-sætter sin default gateway ind i.
+sÃ¦tter sin default gateway ind i.
 </para>
 
 <para>
-For yderligere information om IP masquerading kan man læse
+For yderligere information om IP masquerading kan man lÃ¦se
 IP-Masquerade-HOWTO'en
 <ulink url="http://sunsite.dk/ldp/HOWTO/IP-Masquerade-HOWTO">http://sunsite.dk/ldp/HOWTO/IP-Masquerade-HOWTO</ulink> .
-HOWTO'en indeholder også referencer til en række gode ressourcer.
+HOWTO'en indeholder ogsÃ¥ referencer til en rÃ¦kke gode ressourcer.
 </para>
 
 </sect3>
@@ -2896,42 +2896,42 @@ HOWTO'en indeholder også referencer til en række gode ressourcer.
 
 
 <sect1 id="firewall-test">
-<title>Afprøvning af en firewall</title>
+<title>AfprÃ¸vning af en firewall</title>
  <indexterm>
   <primary>firewall</primary>
-  <secondary>afprøvning</secondary>
+  <secondary>afprÃ¸vning</secondary>
  </indexterm>
  <indexterm>
-  <primary>afprøvning af en firewall</primary>
+  <primary>afprÃ¸vning af en firewall</primary>
  </indexterm>
 <indexterm><primary>Firewall</primary><secondary>test</secondary></indexterm>
 <indexterm><primary>Test af firewall</primary></indexterm>
 <para>
-Når man har sat sin firewall op, skal man altid undersøge, 
+NÃ¥r man har sat sin firewall op, skal man altid undersÃ¸ge, 
 at den virker som forventet.</para>
 
 <itemizedlist mark="bullet">
 
 <listitem><para>
   <emphasis>Funktionalitet: </emphasis>Test at de services, der skal
-  kunne benyttes, virker. Både indefra og udefra. Der er dog stor
-  chance for, at brugerne nok skal fortælle meget hurtigt, hvis det
-  ikke er tilfældet.
+  kunne benyttes, virker. BÃ¥de indefra og udefra. Der er dog stor
+  chance for, at brugerne nok skal fortÃ¦lle meget hurtigt, hvis det
+  ikke er tilfÃ¦ldet.
 </para></listitem>
 
 <listitem><para>
   <emphasis>Sikkerhed: </emphasis>Test at firewallen rent faktisk
-  lukker for de ting, den burde. Prøv at bruge services, der skulle
-  være lukket for, ved at prøve at oprette forbindelser
-  udefra. Portscan firewallen for at se, hvad folk kan få at vide om
-  den udefra. Der findes også mere omfattende tests. Man kan forsøge
+  lukker for de ting, den burde. PrÃ¸v at bruge services, der skulle
+  vÃ¦re lukket for, ved at prÃ¸ve at oprette forbindelser
+  udefra. Portscan firewallen for at se, hvad folk kan fÃ¥ at vide om
+  den udefra. Der findes ogsÃ¥ mere omfattende tests. Man kan forsÃ¸ge
   sig med diverse cracker-programmer, eller man kan betale andre for
   at teste firewallen.
 </para></listitem>
 
 <listitem><para>
-  <emphasis>Vedligeholdelse: </emphasis> Hold altid softwaren på
-  firewallen opdateret med de nyeste sikkerhedsrettelser. Læs altid
+  <emphasis>Vedligeholdelse: </emphasis> Hold altid softwaren pÃ¥
+  firewallen opdateret med de nyeste sikkerhedsrettelser. LÃ¦s altid
   logfiler.
 </para></listitem>
 </itemizedlist>
@@ -2942,8 +2942,8 @@ at den virker som forventet.</para>
 <title>Epilog</title>
 
 <para>
-Firewallløsninger kan ikke beskrives fuldstændigt her. Vi
-har taget en del af Linux-mulighederne, men der er meget, vi ikke har dækket:
+FirewalllÃ¸sninger kan ikke beskrives fuldstÃ¦ndigt her. Vi
+har taget en del af Linux-mulighederne, men der er meget, vi ikke har dÃ¦kket:
 </para>
 
 <itemizedlist mark="bullet">
@@ -2966,80 +2966,80 @@ har taget en del af Linux-mulighederne, men der er meget, vi ikke har dækket:
     Se <ulink url="http://www.socks.nec.com">http://www.socks.nec.com</ulink>
   </para></listitem>
   <listitem><para>
-    Mange gode netværkssikkerhedsværktøjer og ressourcer findes på
+    Mange gode netvÃ¦rkssikkerhedsvÃ¦rktÃ¸jer og ressourcer findes pÃ¥
     <ulink url="http://www.freefire.org">http://www.freefire.org</ulink>
   </para></listitem>
   <listitem><para>
-    En opskrift på test af firewall kan læses på <ulink url="http://linuxtoday.com/news_story.php3?ltsn=2001-05-04-015-20-SC">http://linuxtoday.com/news_story.php3?ltsn=2001-05-04-015-20-SC</ulink>.
+    En opskrift pÃ¥ test af firewall kan lÃ¦ses pÃ¥ <ulink url="http://linuxtoday.com/news_story.php3?ltsn=2001-05-04-015-20-SC">http://linuxtoday.com/news_story.php3?ltsn=2001-05-04-015-20-SC</ulink>.
   </para></listitem>
 </itemizedlist>
 
 
 </sect1>
 
-<!-- TODO: Dette afsnit kan måske komme i et appendix eller hvad?
+<!-- TODO: Dette afsnit kan mÃ¥ske komme i et appendix eller hvad?
  /-->
 
 <sect1 id="sikkerhed-xconf-netfilt-help">
-<title>Oversættelse af xconfig netfilter configuration help
+<title>OversÃ¦ttelse af xconfig netfilter configuration help
 tekst.</title>
 
 <para>
-Netfilter er en række faciliteter til at filtrere og berarbejde
+Netfilter er en rÃ¦kke faciliteter til at filtrere og berarbejde
 de pakker, som kommer igennem din Linux box.
 </para>
 
 <para>
 Den mest almindelige anvendelse af netfilter er at bruge din
-Linux box som firewall, der beskytter et lokalt netværk mod
+Linux box som firewall, der beskytter et lokalt netvÃ¦rk mod
 internettet. Den type firewall, som denne kerne supporterer,
 kaldes et pakkefilter, hvilket betyder, at den kan afvise
-individuelle pakker baseret på type, afsenderadresse, modtager
+individuelle pakker baseret pÃ¥ type, afsenderadresse, modtager
 etc. Den anden slags firewall er "proxy-baseret", den er mere
-sikker men mere besværlig at sætte op. Den inspicerer
-netværkstrafikken meget mere i detailler, modificerer den og har
-viden om de højere protokol-lag, som et pakkefilter ikke ved
-noget om. Endvidere kræver proxy'er ofte ændringer i de
-programmer, som kører på den lokale klient. Proxy baserede
+sikker men mere besvÃ¦rlig at sÃ¦tte op. Den inspicerer
+netvÃ¦rkstrafikken meget mere i detailler, modificerer den og har
+viden om de hÃ¸jere protokol-lag, som et pakkefilter ikke ved
+noget om. Endvidere krÃ¦ver proxy'er ofte Ã¦ndringer i de
+programmer, som kÃ¸rer pÃ¥ den lokale klient. Proxy baserede
 firewalls har ikke brug for support i kernen, men de er ofte
 kombineret med et pakkefilter, som kun virker, hvis du siger Y
 (Yes, ja) her.
 </para>
 
 <para>
-Du bør sige Y her, hvis du har tænkt dig at bruge Linux som en
-gateway til internettet for et lokalt netværk af maskiner uden
+Du bÃ¸r sige Y her, hvis du har tÃ¦nkt dig at bruge Linux som en
+gateway til internettet for et lokalt netvÃ¦rk af maskiner uden
 globalt gyldige IP-adresser. Dette kaldes masquerading: Hvis en
-af dine lokale maskiner ønsker at sende noget til verden udenfor,
-kan din box "forklæde sig" (maskere sig) som den maskine, d.v.s.
+af dine lokale maskiner Ã¸nsker at sende noget til verden udenfor,
+kan din box "forklÃ¦de sig" (maskere sig) som den maskine, d.v.s.
 den videresender pakkerne til den angivne ydre destination, men
-modificerer pakkerne, så de ser ud, som om de kommer fra
+modificerer pakkerne, sÃ¥ de ser ud, som om de kommer fra
 firewall-boxen selv. Det fungerer begge veje: Hvis hosten udenfor
 svarer, vil linuxboxen uden yderligere kommentarer sende pakkerne
-videre til den rigtige lokale computer. På denne måde er
-maskinerne på indersiden af firewallen fuldstændig usynlige for
-verden udenfor, selv om de kan nå udenfor og får svar. Det er
-endog muligt at køre globalt synlige servere inde fra et
-masqueraded lokal netværk ved at anvende en mekanisme, som kaldes
-port-forwarding. Masquerading kaldes også ofte NAT (Network
+videre til den rigtige lokale computer. PÃ¥ denne mÃ¥de er
+maskinerne pÃ¥ indersiden af firewallen fuldstÃ¦ndig usynlige for
+verden udenfor, selv om de kan nÃ¥ udenfor og fÃ¥r svar. Det er
+endog muligt at kÃ¸re globalt synlige servere inde fra et
+masqueraded lokal netvÃ¦rk ved at anvende en mekanisme, som kaldes
+port-forwarding. Masquerading kaldes ogsÃ¥ ofte NAT (Network
 Address Translation)<footnote>
 <para>
 NAT bruges dog oftest om en gateway, som har flere IP adresser,
 som den kan bruge for mapning af de lokale maskiner. Det er som
-regel nok med 2 - 3 stykker, idet man sjældent løber tør for
-portnumre som jo er en 16-bit størrelse. Masquerading har
-yderligere den egenskab, at det oftest kan sættes op til at ske
-automatisk på et dynamisk tildelt IP-nummer for en klient, som
-fx. benytter PPP på en modem-linje.
+regel nok med 2 - 3 stykker, idet man sjÃ¦ldent lÃ¸ber tÃ¸r for
+portnumre som jo er en 16-bit stÃ¸rrelse. Masquerading har
+yderligere den egenskab, at det oftest kan sÃ¦ttes op til at ske
+automatisk pÃ¥ et dynamisk tildelt IP-nummer for en klient, som
+fx. benytter PPP pÃ¥ en modem-linje.
 </para>
 </footnote>.
 </para>
 
 <para>
-En anden anvendelse er transparent proxy-ing. Hvis en maskine på
-lokalnettet prøver at få skabe forbindelse til en maskine
-udenfor, kan Linux-boxen uden at det mærkes sende pakkerne til en
-lokal host, som typisk vil være en caching server.
+En anden anvendelse er transparent proxy-ing. Hvis en maskine pÃ¥
+lokalnettet prÃ¸ver at fÃ¥ skabe forbindelse til en maskine
+udenfor, kan Linux-boxen uden at det mÃ¦rkes sende pakkerne til en
+lokal host, som typisk vil vÃ¦re en caching server.
 </para>
 
 <para>
@@ -3050,21 +3050,21 @@ for placeringen af af disse pakker.
 </para>
 
 <para>
-Vær sikker på at svare N til "Fast switching" nedenfor, hvis du
+VÃ¦r sikker pÃ¥ at svare N til "Fast switching" nedenfor, hvis du
 siger ja til netfilter her, eftersom "Fast switching" i den
-aktuelle version laver bypass på netfilter.
+aktuelle version laver bypass pÃ¥ netfilter.
 </para>
 
 <para>
-Du bør nok sige Y her, hvis du oversætter en kerne, som skal
+Du bÃ¸r nok sige Y her, hvis du oversÃ¦tter en kerne, som skal
 fungere som router, og N, hvis det er til en almindelig host.
-Hvis du er usikker, så svar Y.
+Hvis du er usikker, sÃ¥ svar Y.
 </para>
 
 <para>
-[Oversætterens anmærkning: Det er i dag bedst at sige Y til
-netfilter, idet man også på et lokalnet kan have fordel af at
-kunne spærre af for uønskede pakker udefra. De store
+[OversÃ¦tterens anmÃ¦rkning: Det er i dag bedst at sige Y til
+netfilter, idet man ogsÃ¥ pÃ¥ et lokalnet kan have fordel af at
+kunne spÃ¦rre af for uÃ¸nskede pakker udefra. De store
 distributioner har det altid med.]
 </para>
 
@@ -3072,18 +3072,18 @@ distributioner har det altid med.]
 
 
 <sect1 id="sikkerhed-hardening">
-<title>System hærdning</title>
+<title>System hÃ¦rdning</title>
 
 <para>
-Hærdning af kernen er relevant på en firewall. Man kan for
-eksempel tilføje flg. til sit firewall script:
+HÃ¦rdning af kernen er relevant pÃ¥ en firewall. Man kan for
+eksempel tilfÃ¸je flg. til sit firewall script:
 </para>
 
 <programlisting>
-# Svar ikke på ping
+# Svar ikke pÃ¥ ping
 /bin/echo "1" > /proc/sys/net/ipv4/icmp_echo_ignore_all
 
-# undgå at være med til smurf angreb
+# undgÃ¥ at vÃ¦re med til smurf angreb
 /bin/echo "0" > /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
 # Tillad ikke source routing
 /bin/echo "0" > /proc/sys/net/ipv4/conf/all/accept_source_route
@@ -3092,16 +3092,16 @@ eksempel tilføje flg. til sit firewall script:
 for i in /proc/sys/net/ipv4/conf/*; do
     /bin/echo "1" > $i/rp_filter
 done
-# Log forsøg på source routing samt redirect
+# Log forsÃ¸g pÃ¥ source routing samt redirect
 /bin/echo "1" > /proc/sys/net/ipv4/conf/all/log_martians
 /bin/echo "0" > /proc/sys/net/ipv4/ip_forward
 
 </programlisting>
 
 <para>
-Det kræver en speciel kerne, hvor de forskellige nødvendige
-features er aktiveret. Man kan for eksempel godt køre en firewall på en
-kerne, som ikke har logging af fremmede (spoofede) pakker, også
+Det krÃ¦ver en speciel kerne, hvor de forskellige nÃ¸dvendige
+features er aktiveret. Man kan for eksempel godt kÃ¸re en firewall pÃ¥ en
+kerne, som ikke har logging af fremmede (spoofede) pakker, ogsÃ¥
 kaldet mars-boere, "Martians".
 </para>
 

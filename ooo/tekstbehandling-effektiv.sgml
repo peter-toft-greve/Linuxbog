@@ -7,8 +7,8 @@
   <para>
    WYSIWYG princippet giver en intuitiv
    arbejdsform, da du umiddelbart kan se resultatet af det, du laver.
-   Ulempen er, at du tvinges til at tænke på flere ting samtidigt. Se f.eks.
-   på dette skærmbillede:
+   Ulempen er, at du tvinges til at tÃ¦nke pÃ¥ flere ting samtidigt. Se f.eks.
+   pÃ¥ dette skÃ¦rmbillede:
 
    <figure id="fig-wysiwyg" float="1">
     <title>WYSIWYG</title>
@@ -17,7 +17,7 @@
   </para>
 
   <para>
-   Her skal du tænke på mindst tre ting på én gang:
+   Her skal du tÃ¦nke pÃ¥ mindst tre ting pÃ¥ Ã©n gang:
 
 <itemizedlist mark="bullet">
   <listitem>
@@ -29,17 +29,17 @@
 
   <listitem>
 
-<para>Tekstens udseende; jeg skal vælge den
-        rigtige skrifttype til overskriften og en anden til brødteksten.
-        Hvilken linjeafstand skal jeg skrive med og skal der være lige
-        højremargen osv...</para>
+<para>Tekstens udseende; jeg skal vÃ¦lge den
+        rigtige skrifttype til overskriften og en anden til brÃ¸dteksten.
+        Hvilken linjeafstand skal jeg skrive med og skal der vÃ¦re lige
+        hÃ¸jremargen osv...</para>
 
 </listitem>
 
   <listitem>
 
 <para>Stavningen; hvorfor er ordene mon
-        understreget med rødt? Er de stavet forkert eller er det bare
+        understreget med rÃ¸dt? Er de stavet forkert eller er det bare
         stavekontrollen som ikke kender dem?
      </para>
     </listitem>
@@ -47,14 +47,14 @@
   </para>
 
   <para>
-   Det er ikke hensigtsmæssigt; en
-   skriveproces fungerer bedst når du kun skal tænke på én ting ad gangen!
-   Nogle gode råd er derfor:
+   Det er ikke hensigtsmÃ¦ssigt; en
+   skriveproces fungerer bedst nÃ¥r du kun skal tÃ¦nke pÃ¥ Ã©n ting ad gangen!
+   Nogle gode rÃ¥d er derfor:
 
    <itemizedlist mark="bullet">
     <listitem>
 
-<para>Start med at skrive løs; begynd med
+<para>Start med at skrive lÃ¸s; begynd med
         det, der passer dig bedst.</para>
 
 </listitem>
@@ -62,7 +62,7 @@
   <listitem>
 
 <para>Rediger bagefter. Med et
-        tekstbehandlingsprogram kan du ændre, slette, indsætte og flytte
+        tekstbehandlingsprogram kan du Ã¦ndre, slette, indsÃ¦tte og flytte
         tekst som det passer dig.</para>
 
 
@@ -70,8 +70,8 @@
 
     <listitem>
      <para>
-      Lad være med at have løbende stavekontrol (<xref
-      linkend="ooo-stavekontrol"/> &ndash; røde understregninger) slået til
+      Lad vÃ¦re med at have lÃ¸bende stavekontrol (<xref
+      linkend="ooo-stavekontrol"/> &ndash; rÃ¸de understregninger) slÃ¥et til
       hele tiden. Lav stavekontrol bagefter eller nogle gange undervejs i
       stedet.
      </para>
@@ -79,25 +79,25 @@
 
     <listitem>
      <para>
-      Tænk ikke på formateringen når du skriver, tænk på
-      <emphasis>indholdet</emphasis>. Én strategi for at undgå at tænke på
+      TÃ¦nk ikke pÃ¥ formateringen nÃ¥r du skriver, tÃ¦nk pÃ¥
+      <emphasis>indholdet</emphasis>. Ã‰n strategi for at undgÃ¥ at tÃ¦nke pÃ¥
       tekstens
-      udseende mens du skriver er at <emphasis>skrive først og formatere
-      bagefter</emphasis> . Det kan fungere udmærket, men moderne
-      tekstbehandlingsprogrammer indeholder nogle faciliteter som gør at du
+      udseende mens du skriver er at <emphasis>skrive fÃ¸rst og formatere
+      bagefter</emphasis> . Det kan fungere udmÃ¦rket, men moderne
+      tekstbehandlingsprogrammer indeholder nogle faciliteter som gÃ¸r at du
       kan <emphasis>formatere teksten automatisk mens du skriver</emphasis>.
-      Dette gøres
-      ved hjælp af <emphasis>typografier</emphasis>, som omtales i
+      Dette gÃ¸res
+      ved hjÃ¦lp af <emphasis>typografier</emphasis>, som omtales i
       <xref linkend="ooo-typografier"/>.
      </para>
     </listitem>
 
     <listitem>
      <para>
-      Et ekstra råd: Det er svært at overskue en tekst på mere end 1-2
-      sider på skærmen. Lav derfor en udskrift når du synes du har nået et
-      punkt hvor det gælder om at få overblik. Den afsluttende
-      korrekturlæsning laves også bedst når teksten står på papir.
+      Et ekstra rÃ¥d: Det er svÃ¦rt at overskue en tekst pÃ¥ mere end 1-2
+      sider pÃ¥ skÃ¦rmen. Lav derfor en udskrift nÃ¥r du synes du har nÃ¥et et
+      punkt hvor det gÃ¦lder om at fÃ¥ overblik. Den afsluttende
+      korrekturlÃ¦sning laves ogsÃ¥ bedst nÃ¥r teksten stÃ¥r pÃ¥ papir.
      </para>
     </listitem>
    </itemizedlist>

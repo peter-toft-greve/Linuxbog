@@ -6,7 +6,7 @@
   af Hans Schou <chlor@sslug.dk>
   $Id$
 
-  Læg programmet i /home/httpd/html/
+  LÃ¦g programmet i /home/httpd/html/
 
   Afvikling: http://localhost/hello.php
 */

@@ -7,7 +7,7 @@
 
 <para>
 Systemadministration er alle de opgaver, som handler om
-at vedligeholde hardware og software på en computer.
+at vedligeholde hardware og software pÃ¥ en computer.
 </para>
 
 <sidebar>
@@ -18,21 +18,21 @@ til systemadministration".
 </sidebar>
 
 <para>
-I Unix-verdenen består systemadministration ofte i at rette i en
-masse forskellige opsætningsfiler. Opsætningsfilerne er rene
-tekstfiler, og det vigtigste værktøj til systemadministration er
-en tekst-editor såsom <command>vi</command>. Red Hat har lavet om på
+I Unix-verdenen bestÃ¥r systemadministration ofte i at rette i en
+masse forskellige opsÃ¦tningsfiler. OpsÃ¦tningsfilerne er rene
+tekstfiler, og det vigtigste vÃ¦rktÃ¸j til systemadministration er
+en tekst-editor sÃ¥som <command>vi</command>. Red Hat har lavet om pÃ¥
 dette: Der findes nu administrationssoftware, som er grafisk. Under
 overfladen bruges dog stadig rene tekstfiler. Vi vil i dette kapitel
-primært benytte os af Red Hats grafiske værktøjer.
+primÃ¦rt benytte os af Red Hats grafiske vÃ¦rktÃ¸jer.
 </para>
 
 <para>
 Systemadministration foretages af systemadministratoren, dvs. af
-brugeren <filename>root</filename>, som også kaldes for
+brugeren <filename>root</filename>, som ogsÃ¥ kaldes for
 superbrugeren (eng. "super user"). Du kan enten logge ind som
 <filename>root</filename> eller skifte til denne med
-programmet <command>su</command> (ordet hemmelig vises ikke på skærmen).
+programmet <command>su</command> (ordet hemmelig vises ikke pÃ¥ skÃ¦rmen).
 </para>
 
 <indexterm>
@@ -56,28 +56,28 @@ Ved at skrive "<userinput>su - root</userinput>" i stedet for blot
 "<userinput>su root</userinput>" sikrer vi os, at alt er glemt om
 brugeren (<filename>tyge</filename>), som skiftede til
 systemadministrator ("<userinput>su</userinput>" og "<userinput>su
-root</userinput>" er i øvrigt det samme). Typisk har en bruger en del
-opsætning, f.eks. omkring e-post, og denne opsætning bør du ikke
+root</userinput>" er i Ã¸vrigt det samme). Typisk har en bruger en del
+opsÃ¦tning, f.eks. omkring e-post, og denne opsÃ¦tning bÃ¸r du ikke
 "kende" til som <filename>root</filename>.
 </para>
 
 <para> 
-Bemærk også, at prompten ændrede sig, da du blev
+BemÃ¦rk ogsÃ¥, at prompten Ã¦ndrede sig, da du blev
 <filename>root</filename>. Dollar-tegnet blev til et hash-tegn. Da
-root har lov til alt på maskinen, bør du være meget omhyggelig med, om
-du er root eller almindelig bruger. Det kan være at din prompt ikke
-ser nøjagtig ud som vist ovenfor - den kan sættes som man selv ønsker
+root har lov til alt pÃ¥ maskinen, bÃ¸r du vÃ¦re meget omhyggelig med, om
+du er root eller almindelig bruger. Det kan vÃ¦re at din prompt ikke
+ser nÃ¸jagtig ud som vist ovenfor - den kan sÃ¦ttes som man selv Ã¸nsker
 det (se mere under "kommandofortolkere" i bogen "Linux - Friheden til
-at lære UNIX").
+at lÃ¦re UNIX").
 </para>
 
 <para>
-Måske tror du, at det er smart at være root og kunne alt 
+MÃ¥ske tror du, at det er smart at vÃ¦re root og kunne alt 
 - det er forkert! Som root kan du komme til at skrive <userinput>rm -rf
-/</userinput>, og så er hele dit Linux-system væk! For
-ikke at risikere at lave unødige fejl, bør du lave en brugerkonto til dig
-selv, også selv om du har root-adgangskoden. Skift kun til superbruger, hvis
-det er absolut nødvendigt, og skift tilbage til din almindelige brugerkonto
+/</userinput>, og sÃ¥ er hele dit Linux-system vÃ¦k! For
+ikke at risikere at lave unÃ¸dige fejl, bÃ¸r du lave en brugerkonto til dig
+selv, ogsÃ¥ selv om du har root-adgangskoden. Skift kun til superbruger, hvis
+det er absolut nÃ¸dvendigt, og skift tilbage til din almindelige brugerkonto
 hurtigst muligt.
 </para>
 
@@ -85,14 +85,14 @@ hurtigst muligt.
 Der eksisterer to varianter af Unix: System V (udtales "system fem")
 og BSD (Berkeley Software Distribution). For en almindelig bruger er der
 ikke den store forskel; den ligger hovedsagelig i, hvor de
-forskellige opsætningsfiler er placeret i filsystemet, og hvordan
-startsekvensen (engelsk: "boot") foregår. Red Hat (og de fleste
-Linux-distributioner) har valgt side og hører til
-System V familien, men låner lidt fra BSD.
+forskellige opsÃ¦tningsfiler er placeret i filsystemet, og hvordan
+startsekvensen (engelsk: "boot") foregÃ¥r. Red Hat (og de fleste
+Linux-distributioner) har valgt side og hÃ¸rer til
+System V familien, men lÃ¥ner lidt fra BSD.
 </para>
 
 <sect1 id="Mount">
-<title>Få adgang til andre diskdrev, cd-rom og diskettedrev</title>
+<title>FÃ¥ adgang til andre diskdrev, cd-rom og diskettedrev</title>
 <indexterm>
  <primary>mount</primary> 
 </indexterm>
@@ -102,15 +102,15 @@ System V familien, men låner lidt fra BSD.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>mount</tertiary>
 </indexterm>
 <sect2 id="mounte-filsystemer">
 <title>Montering af filsystemer</title>
 
 <para>
-For at kunne tilgå et filsystem under Linux skal det monteres
-(eng. "mount") som et katalog i det filtræ, som er blevet
+For at kunne tilgÃ¥ et filsystem under Linux skal det monteres
+(eng. "mount") som et katalog i det filtrÃ¦, som er blevet
 genereret af init-processen under opstarten.
 </para>
 
@@ -119,7 +119,7 @@ genereret af init-processen under opstarten.
 rodfilsystemet monteres direkte mens kernen starter.
 Herefter vil systemet automatisk montere de filsystemer, der
 er angivet i filen <filename>/etc/fstab</filename>, og som har en
-parameter, der fortæller at filsystemet skal monteres under opstarten.
+parameter, der fortÃ¦ller at filsystemet skal monteres under opstarten.
 <indexterm><primary>mount</primary></indexterm>
 </para>
 
@@ -129,15 +129,15 @@ parameter, der fortæller at filsystemet skal monteres under opstarten.
 
 <para> 
 vil montere de relevante filsystemer i
-<filename>/etc/fstab</filename>. Denne kommando udføres under
+<filename>/etc/fstab</filename>. Denne kommando udfÃ¸res under
 starten af et af de programmer, der findes i kataloget
-<filename>/etc/rc.d/</filename>. Derfor vil disse filsystemer være
-tilgængelige fra starten. Senere kan man så manuelt montere de ekstra
-filsystemer, der måtte være behov for.
+<filename>/etc/rc.d/</filename>. Derfor vil disse filsystemer vÃ¦re
+tilgÃ¦ngelige fra starten. Senere kan man sÃ¥ manuelt montere de ekstra
+filsystemer, der mÃ¥tte vÃ¦re behov for.
 </para>
 
 <para>
-Eksempel på <filename>/etc/fstab</filename>:
+Eksempel pÃ¥ <filename>/etc/fstab</filename>:
 </para>
 
 <programlisting>
@@ -172,7 +172,7 @@ Parameterforklaring:
 </listitem>
 <listitem> 
  <para>
-  user (tillader en alm. bruger at montere filsystemet - forudsætter 
+  user (tillader en alm. bruger at montere filsystemet - forudsÃ¦tter 
    noexec, nosuid, nodev)
  </para>
 </listitem>
@@ -187,30 +187,30 @@ Parameterforklaring:
 <para>
 <indexterm><primary>fsck</primary></indexterm>
 <indexterm><primary>dump</primary></indexterm>
-De to sidste tal på linjen henviser dels til dump-kommandoen, der
+De to sidste tal pÃ¥ linjen henviser dels til dump-kommandoen, der
 benytter tallet til at sammenligne med antallet af dage, siden der
-sidst blev taget backup af filsystemet, således at systemadministratoren
-kan informeres. Se i øvrigt online-manualen for kommandoen
-<command>dump</command>. Den sidste parameter på linjen benyttes af
-kommandoen <command>fsck</command> til at afgøre, om filsystemer kan
+sidst blev taget backup af filsystemet, sÃ¥ledes at systemadministratoren
+kan informeres. Se i Ã¸vrigt online-manualen for kommandoen
+<command>dump</command>. Den sidste parameter pÃ¥ linjen benyttes af
+kommandoen <command>fsck</command> til at afgÃ¸re, om filsystemer kan
 tjekkes parallelt under opstarten (boot). Root-filsystemet (
-dvs. <filename>/</filename> ) tjekkes altid først. De andre
-filsystemer kan tjekkes parallelt (multitasking er jo understøttet i
-Linux), men der er ingen fordel i at tjekke flere filsystemer på samme
-fysiske disk samtidig, da det vil resultere i overflødig flytning af
-læsehovedet og dermed slid og spild af tid. En parameter på nul (0) eller ingen
+dvs. <filename>/</filename> ) tjekkes altid fÃ¸rst. De andre
+filsystemer kan tjekkes parallelt (multitasking er jo understÃ¸ttet i
+Linux), men der er ingen fordel i at tjekke flere filsystemer pÃ¥ samme
+fysiske disk samtidig, da det vil resultere i overflÃ¸dig flytning af
+lÃ¦sehovedet og dermed slid og spild af tid. En parameter pÃ¥ nul (0) eller ingen
 parameter (f.eks. floppy og cd-rom) betyder, at filsystemet ikke tjekkes. 
 </para>
 
 <para>
-Se i øvrigt online-manualen for kommandoerne <command>fsck</command>,
+Se i Ã¸vrigt online-manualen for kommandoerne <command>fsck</command>,
 <command>dump</command> og <command>mount</command> (brug
 <command>man fsck</command> osv.)
 </para>
 
 <para>
 Mount-kommandoen er generelt kun beregnet for systemadministratoren,
-med mindre der står "user" i device-feltet i filen
+med mindre der stÃ¥r "user" i device-feltet i filen
 <filename>/etc/fstab</filename>.
 </para>
 
@@ -346,7 +346,7 @@ henter resten af oplysningerne fra <filename>/etc/fstab</filename>.
   </listitem>
   <listitem>
   <para>  
-   Derefter er filsystemet ikke længere til rådighed.
+   Derefter er filsystemet ikke lÃ¦ngere til rÃ¥dighed.
    fra dets <emphasis>mount point</emphasis>.
   </para>  
   </listitem>
@@ -354,7 +354,7 @@ henter resten af oplysningerne fra <filename>/etc/fstab</filename>.
 
 <para>
  Afmontering af et filsystem sker med kommandoen "umount"
- (bemærk: kun med ét "n").
+ (bemÃ¦rk: kun med Ã©t "n").
 </para>
 
 <para>
@@ -370,7 +370,7 @@ Eksempel:
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>umount</tertiary>
 </indexterm>
 
@@ -383,41 +383,41 @@ Eksempel:
 
 <para>
 <indexterm><primary>sync</primary></indexterm>
-<emphasis>Vigtigt!</emphasis> Det er vigtigt at bemærke, at man ikke
-kan/skal fjerne diskette eller andre ydre medier, der er monteret, før
-<command>umount</command> er kørt, idet der så kan mangle dele af de data,
-der er skrevet til mediets filsystem, og det kan medføre store
+<emphasis>Vigtigt!</emphasis> Det er vigtigt at bemÃ¦rke, at man ikke
+kan/skal fjerne diskette eller andre ydre medier, der er monteret, fÃ¸r
+<command>umount</command> er kÃ¸rt, idet der sÃ¥ kan mangle dele af de data,
+der er skrevet til mediets filsystem, og det kan medfÃ¸re store
 problemer. Man kan tvinge systemet til at foretage en synkronisering
 vha. kommandoen <command>sync</command>, idet alle filsystembuffere
-så skrives til mediet. Kommandoen <command>umount</command> gør det samme.
+sÃ¥ skrives til mediet. Kommandoen <command>umount</command> gÃ¸r det samme.
 </para>
 
 <para>
-Kommandoen <command>umount</command> kræver, at der ikke er
-nogen, der arbejder på det filsystem man vil afmontere,
-dvs. hvis du står i <filename>/mnt/cdrom</filename> hvor din cd-rom
-er monteret, så kan du ikke afmontere den. 
+Kommandoen <command>umount</command> krÃ¦ver, at der ikke er
+nogen, der arbejder pÃ¥ det filsystem man vil afmontere,
+dvs. hvis du stÃ¥r i <filename>/mnt/cdrom</filename> hvor din cd-rom
+er monteret, sÃ¥ kan du ikke afmontere den. 
 </para>
 
 <para>
-På samme måde vil kommandoen <command>mount</command> give
+PÃ¥ samme mÃ¥de vil kommandoen <command>mount</command> give
 fejlmeddelelsen "device already mounted", hvis man glemmer at
-afmontere et filsystem, når der forsøges med et nyt filsystem.
+afmontere et filsystem, nÃ¥r der forsÃ¸ges med et nyt filsystem.
 </para>
 
 <para>
 En meget vigtig pointe er at root-brugeren kan montere alt, mens den
-almindelige bruger kun kan montere de enheder, der specifikt er nævnt med
+almindelige bruger kun kan montere de enheder, der specifikt er nÃ¦vnt med
 et "user"-flag i <filename>/etc/fstab</filename>. Typisk vil man kun
-give brugere adgang til at montere løse enheder som diskette og cd-rom,
+give brugere adgang til at montere lÃ¸se enheder som diskette og cd-rom,
 og hvis man er forsigtig, giver man kun de brugere, der har fysisk adgang
-til maskinen lov til at læse og skrive disketter og cd-rom'er. Det gøres
-ved at lade disse enheder høre til en brugergruppe, der kun består af
-de lokale brugere, og så slå skrive- og læserettigheder fra for alle andre
+til maskinen lov til at lÃ¦se og skrive disketter og cd-rom'er. Det gÃ¸res
+ved at lade disse enheder hÃ¸re til en brugergruppe, der kun bestÃ¥r af
+de lokale brugere, og sÃ¥ slÃ¥ skrive- og lÃ¦serettigheder fra for alle andre
 end enhedernes ejer og gruppe. Se 
 <command>man chgrp</command>, <command>man chmod</command> og 
 <command>man usergrp</command> for information om
-hvordan det gøres.
+hvordan det gÃ¸res.
 </para>
 </sect2>
 
@@ -429,20 +429,20 @@ hvordan det gøres.
 <indexterm><primary>memory-key</primary><secondary>USB</secondary></indexterm>
 <indexterm><primary>kamera</primary><secondary>USB</secondary></indexterm>
 <para>
-USB er ved at blive en populær måde at koble eksterne enheder på
-computeren, såsom printere, kameraer og memory-keys (fra 8MB og op til 1
-GB nøgleringe).
+USB er ved at blive en populÃ¦r mÃ¥de at koble eksterne enheder pÃ¥
+computeren, sÃ¥som printere, kameraer og memory-keys (fra 8MB og op til 1
+GB nÃ¸gleringe).
 </para>
 
 <para>
-Vi skal her se på hvordan man får adgang til en USB memory-key, og
-samme fremgangsmåde kan anvendes til kameraer såsom Olympus UZ2100 og
+Vi skal her se pÃ¥ hvordan man fÃ¥r adgang til en USB memory-key, og
+samme fremgangsmÃ¥de kan anvendes til kameraer sÃ¥som Olympus UZ2100 og
 HP Photosmart 610.
 </para>
 
 <para>
-Jeg har på min laptop fat i min USB-nøglering
-ved at have følgende linje i min <filename>/etc/fstab</filename>
+Jeg har pÃ¥ min laptop fat i min USB-nÃ¸glering
+ved at have fÃ¸lgende linje i min <filename>/etc/fstab</filename>
 </para>
 
 <programlisting>
@@ -458,34 +458,34 @@ monteringspunktet.
 Derefter vil kommandoerne
 <command>mount /mnt/usb</command> og
 <command>umount /mnt/usb</command> virke fint - og brugeren har nu
-læse <emphasis>og</emphasis> skriverettigheder til drevet.
+lÃ¦se <emphasis>og</emphasis> skriverettigheder til drevet.
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> I <xref linkend="autofs"/> er vist hvordan man får
-monteret en eksterne USB-nøglering automatisk når dette er påkrævet.
+<emphasis>Tip:</emphasis> I <xref linkend="autofs"/> er vist hvordan man fÃ¥r
+monteret en eksterne USB-nÃ¸glering automatisk nÃ¥r dette er pÃ¥krÃ¦vet.
 </para>
 
 <para>
-Det kræver nok at din Linuxkerne kan se nøgleringen. Dette kan du se
+Det krÃ¦ver nok at din Linuxkerne kan se nÃ¸gleringen. Dette kan du se
 ved at skrive <command>cat /proc/scsi/usb-storage-0/0</command> eller 
 <command>cat /proc/scsi/usb-storage-0/1</command>. Dette
 skulle gerne vise at det er en "IBM USB memory key" (eller hvad der nu
-er det rigtige). Bemærk at det åbenbart kræver SCSI emulering - og det
-skal være en ret ny kerne. Det virker f.eks. ikke direkte i Red Hat
+er det rigtige). BemÃ¦rk at det Ã¥benbart krÃ¦ver SCSI emulering - og det
+skal vÃ¦re en ret ny kerne. Det virker f.eks. ikke direkte i Red Hat
 7.2, mens det virker fint med Red Hat 7.3.
 </para>
 
 <para>
 <emphasis>Tip:</emphasis> For dem som selv vil
-oversætte Linux-kernen til at understøtte en "IBM USB memory key" så
-kræves modulerne "usbdevfs", "hub" og "usb-storage".
+oversÃ¦tte Linux-kernen til at understÃ¸tte en "IBM USB memory key" sÃ¥
+krÃ¦ves modulerne "usbdevfs", "hub" og "usb-storage".
 </para>
 
 <para>
-Det sidste spørgsmål er naturligt hvordan jeg så fandt ud af at det er
+Det sidste spÃ¸rgsmÃ¥l er naturligt hvordan jeg sÃ¥ fandt ud af at det er
 <filename>/dev/sda1</filename> som kan monteres. Til dette kan
-programmet <command>hwbrowser</command> anvendes (kræver at
+programmet <command>hwbrowser</command> anvendes (krÃ¦ver at
 <filename>hwbrowser.*rpm er installeret)</filename>. Start
 <command>hwbrowser</command> i et terminal-vindue og angiv
 root-adgangskoden for at detektere hardware i maskinen.
@@ -501,8 +501,8 @@ root-adgangskoden for at detektere hardware i maskinen.
 </figure>
 
 <para>
-Under "Hard Drives" bør man nu kunne se at
-<filename>/dev/sda1</filename> er en harddisk på 32 MB, hvis man har
+Under "Hard Drives" bÃ¸r man nu kunne se at
+<filename>/dev/sda1</filename> er en harddisk pÃ¥ 32 MB, hvis man har
 memory sticken inde.
 </para>
 
@@ -512,31 +512,31 @@ memory sticken inde.
 </figure>
 
 <para>
-<emphasis>Tip:</emphasis> Et andet trick med USB er at læse filer i
+<emphasis>Tip:</emphasis> Et andet trick med USB er at lÃ¦se filer i
 <filename>/proc/bus/usb/devices</filename> - her skal man kunne se 
 at USB-enheden er fundet.
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> Alternativt så sæt din USB-enhed på maskinen
-og kør <command>dmesg</command>. Typisk vi de nederste linjer sige at
+<emphasis>Tip:</emphasis> Alternativt sÃ¥ sÃ¦t din USB-enhed pÃ¥ maskinen
+og kÃ¸r <command>dmesg</command>. Typisk vi de nederste linjer sige at
 der er fundet en enhed <filename>/dev/sda</filename>,
 <filename>/dev/sda1</filename>, <filename>/dev/sdb1</filename> eller 
-<filename>/dev/sdc1</filename>. Prøv så at køre (som root) 
+<filename>/dev/sdc1</filename>. PrÃ¸v sÃ¥ at kÃ¸re (som root) 
 <command>mount /dev/sda /mnt</command>,
 <command>mount /dev/sda1 /mnt</command>,
 <command>mount /dev/sda2 /mnt</command>,
 <command>mount /dev/sdb /mnt</command>,
 <command>mount /dev/sdb1 /mnt</command> osv. indtil der er bid.
-Mange USB-enheder kan findes på denne måde - men det er ikke 
+Mange USB-enheder kan findes pÃ¥ denne mÃ¥de - men det er ikke 
 indlysende hvilken USB-devicefil den enkelte USB-enhed ender under.
 </para>
 
 
 <para>
-<emphasis>Tip:</emphasis> Med KDE kan du trykke højre muse-tast på din
-baggrund og vælge "Create new" -> "CDROM device" eller på dansk "Opret
-ny" -> "CD/DVD-ROM-enhed" og under device/enhed vælges nu den enhed
+<emphasis>Tip:</emphasis> Med KDE kan du trykke hÃ¸jre muse-tast pÃ¥ din
+baggrund og vÃ¦lge "Create new" -> "CDROM device" eller pÃ¥ dansk "Opret
+ny" -> "CD/DVD-ROM-enhed" og under device/enhed vÃ¦lges nu den enhed
 (<filename>/dev/sda1</filename>) som passer.
 </para>
 
@@ -546,9 +546,9 @@ ny" -> "CD/DVD-ROM-enhed" og under device/enhed vælges nu den enhed
 <title>cd-rom</title>
 <indexterm><primary>cd-rom</primary></indexterm>
 <para>
-Først en gang Linux-gymnastik, som kun skal gøres én gang på din maskine.
+FÃ¸rst en gang Linux-gymnastik, som kun skal gÃ¸res Ã©n gang pÃ¥ din maskine.
 Skift til systemadministratorrettigheder ved at skrive <command>su -</command>.
-Kontrollér, at dit cd-rom-drev er fundet og tillad alle at læse fra det:
+KontrollÃ©r, at dit cd-rom-drev er fundet og tillad alle at lÃ¦se fra det:
 </para>
 
 <screen>
@@ -558,9 +558,9 @@ lrwxrwxrwx   1 root  root  3 Sep  4 14:31 /dev/cdrom -> hdd
 </screen>
 
 <para>
-Lad os tage en anden måde at opnå det samme for brugeren "tyge".
-Kontrollér, at dit cd-rom-drev er fundet, tillad alle i gruppen floppy
-at læse fra det og føj derefter "tyge" til gruppen floppy:
+Lad os tage en anden mÃ¥de at opnÃ¥ det samme for brugeren "tyge".
+KontrollÃ©r, at dit cd-rom-drev er fundet, tillad alle i gruppen floppy
+at lÃ¦se fra det og fÃ¸j derefter "tyge" til gruppen floppy:
 </para>
 
 <screen>
@@ -575,20 +575,20 @@ lrwxrwxrwx   1 root  root  3 Sep  4 14:31 /dev/cdrom -> hdd
 
 <para>
 I eksemplerne er <filename>/dev/cdrom</filename> en henvisning til
-<filename>/dev/hdd</filename>, dvs. cd-rom-drevet sidder på den
-sekundære IDE-bus som slave (typisk situation). Se også <xref
-linkend="redhatpartitioner"/>. Du skal ændre
-<command>chgrp</command>- og <command>chmod</command>-kommandoerne, så
-de svarer til den enhed dit cd-rom-drev sidder på, og
-<command>usermod</command>-kommandoen skal ændres, så det er dit brugernavn
+<filename>/dev/hdd</filename>, dvs. cd-rom-drevet sidder pÃ¥ den
+sekundÃ¦re IDE-bus som slave (typisk situation). Se ogsÃ¥ <xref
+linkend="redhatpartitioner"/>. Du skal Ã¦ndre
+<command>chgrp</command>- og <command>chmod</command>-kommandoerne, sÃ¥
+de svarer til den enhed dit cd-rom-drev sidder pÃ¥, og
+<command>usermod</command>-kommandoen skal Ã¦ndres, sÃ¥ det er dit brugernavn
 der bruges.
 </para>
 
 <para>
-Redigér filen <filename>/etc/fstab</filename> med
+RedigÃ©r filen <filename>/etc/fstab</filename> med
 <command>vi /etc/fstab</command> eller lignende. Du har sikkert
 en linje, der starter med <filename>/dev/cdrom</filename>. Den skal du
-ændre til
+Ã¦ndre til
 </para>
 
 <programlisting>
@@ -596,34 +596,34 @@ en linje, der starter med <filename>/dev/cdrom</filename>. Den skal du
 </programlisting>
 
 <para>
-Hvis du <emphasis>ikke</emphasis> finder en linje, som ligner ovenstående, 
-kan det være fordi supermount er installeret, så du automatisk får 
+Hvis du <emphasis>ikke</emphasis> finder en linje, som ligner ovenstÃ¥ende, 
+kan det vÃ¦re fordi supermount er installeret, sÃ¥ du automatisk fÃ¥r 
 adgang til dit cd-rom- og diskettedrev, hvilket bl.a. Mandrake 
-benytter. I så fald skal du ikke ændre noget i 
-<filename>/etc/fstab</filename> og gå videre til næste afsnit.
+benytter. I sÃ¥ fald skal du ikke Ã¦ndre noget i 
+<filename>/etc/fstab</filename> og gÃ¥ videre til nÃ¦ste afsnit.
 </para>
 
 <para>
-Første kolonne viser den enhed (<filename>/dev/cdrom</filename>),
-som du vil kunne tage fat i.  Næste kolonne viser det
-sted i filtræet, hvor den skal kunne ses. I eksemplet har vi valgt
+FÃ¸rste kolonne viser den enhed (<filename>/dev/cdrom</filename>),
+som du vil kunne tage fat i.  NÃ¦ste kolonne viser det
+sted i filtrÃ¦et, hvor den skal kunne ses. I eksemplet har vi valgt
 <filename>/mnt/cdrom</filename>.
 </para>
 
 <para>
 Tredje kolonne beskriver filformatet, her er det iso9960 til en cd-rom.  
 Fjerde kolonne indeholder
-nøgleord, der beskriver egenskaber ved cd-rom-drevet. 'noauto' betyder,
-at cd-rom-drevet ikke automatisk monteres, når maskinen startes op. 'ro'
-betyder at man kun kan læse fra drevet (engelsk: "read-only"). 'user' gør det muligt at montere cd-rom'er som
-almindelig bruger. 'exec' gør det muligt at køre Linux-programmer fra
-cd-rom. Betydningen af de to nuller kan du finde frem til ved at udføre
+nÃ¸gleord, der beskriver egenskaber ved cd-rom-drevet. 'noauto' betyder,
+at cd-rom-drevet ikke automatisk monteres, nÃ¥r maskinen startes op. 'ro'
+betyder at man kun kan lÃ¦se fra drevet (engelsk: "read-only"). 'user' gÃ¸r det muligt at montere cd-rom'er som
+almindelig bruger. 'exec' gÃ¸r det muligt at kÃ¸re Linux-programmer fra
+cd-rom. Betydningen af de to nuller kan du finde frem til ved at udfÃ¸re
 kommandoen <command>man mount</command>.
 </para>
 
 <para>
-Nu er du klar til at afprøve det. Stop som root ved at trykke Ctrl-D i
-den terminal, du arbejder i. Læg f.eks. din Red Hat-cd-rom i dit 
+Nu er du klar til at afprÃ¸ve det. Stop som root ved at trykke Ctrl-D i
+den terminal, du arbejder i. LÃ¦g f.eks. din Red Hat-cd-rom i dit 
 cd-rom-drev, og skriv
 </para>
 
@@ -632,10 +632,10 @@ cd-rom-drev, og skriv
 </screen>
 
 <para>
-Nu bør du kunne skrive <userinput>df /mnt/cdrom</userinput> for at se, hvor
-meget data der ligger på skiven. Du kan nu kopiere og læse fra din cd-rom.
-Når du er færdig med at læse din cd-rom, kan du ikke bare tage den ud. Du skal
-først skrive
+Nu bÃ¸r du kunne skrive <userinput>df /mnt/cdrom</userinput> for at se, hvor
+meget data der ligger pÃ¥ skiven. Du kan nu kopiere og lÃ¦se fra din cd-rom.
+NÃ¥r du er fÃ¦rdig med at lÃ¦se din cd-rom, kan du ikke bare tage den ud. Du skal
+fÃ¸rst skrive
 </para>
 
 <screen>
@@ -643,25 +643,25 @@ først skrive
 </screen>
 
 <para>
-Du skal også vide, at du sagtens kan bruge
+Du skal ogsÃ¥ vide, at du sagtens kan bruge
 f.eks. <filename>/cdrom</filename> som stedet, du monterer din cd-rom. Du
-skal bare først lave biblioteket med <userinput>mkdir /cdrom</userinput>
-og gentage ovenstående med den nye sti. Endelig findes der systemer til
+skal bare fÃ¸rst lave biblioteket med <userinput>mkdir /cdrom</userinput>
+og gentage ovenstÃ¥ende med den nye sti. Endelig findes der systemer til
 Linux (Automount, Supermount og AMD), hvor du mere eller mindre direkte 
-kan lægge
-din cd-rom i drevet og få adgang til data uden at skulle bruge
-specielle kommandoer, men det skal sættes op særskilt.
+kan lÃ¦gge
+din cd-rom i drevet og fÃ¥ adgang til data uden at skulle bruge
+specielle kommandoer, men det skal sÃ¦ttes op sÃ¦rskilt.
 </para>
 </sect2>
 
 <sect2 id="mount-DOSdisk">
-<title>Læse DOS/Windows-diskdrev</title>
-<indexterm><primary>DOS</primary><secondary>læsning af diskdrev</secondary></indexterm>
-<indexterm><primary>Windows</primary><secondary>læsning af diskdrev</secondary></indexterm>
+<title>LÃ¦se DOS/Windows-diskdrev</title>
+<indexterm><primary>DOS</primary><secondary>lÃ¦sning af diskdrev</secondary></indexterm>
+<indexterm><primary>Windows</primary><secondary>lÃ¦sning af diskdrev</secondary></indexterm>
 <indexterm><primary>/etc/fstab</primary></indexterm>
 <para>
-Tilsvarende, som med cd-rom-drevet, kan du automatisk føje dine
-DOS/Windows-diskdrev til Linux-filtræet, som f.eks. <filename>/dosc/</filename>
+Tilsvarende, som med cd-rom-drevet, kan du automatisk fÃ¸je dine
+DOS/Windows-diskdrev til Linux-filtrÃ¦et, som f.eks. <filename>/dosc/</filename>
 og/eller <filename>/dosd/</filename>. Start med at lave de kataloger,
 du skal bruge (her vises for disk C og D):
 </para> 
@@ -675,10 +675,10 @@ Passwd: <userinput>hemmelig</userinput>
 
 
 <para>
-Redigér filen <filename>/etc/fstab</filename> med <userinput>pico -w
+RedigÃ©r filen <filename>/etc/fstab</filename> med <userinput>pico -w
 /etc/fstab</userinput> eller lignende. Under installationen har du
-måske sat dine DOS/Windows-diskdrev ind, så de kan ses fra Linux, men her
-er alligevel et eksempel på <filename>/etc/fstab</filename>.
+mÃ¥ske sat dine DOS/Windows-diskdrev ind, sÃ¥ de kan ses fra Linux, men her
+er alligevel et eksempel pÃ¥ <filename>/etc/fstab</filename>.
 </para>
 
 <programlisting>
@@ -687,28 +687,28 @@ er alligevel et eksempel på <filename>/etc/fstab</filename>.
 </programlisting>
 
 <para>
-Den første linje tager <filename>/dev/hda1</filename>, dvs. første
-partition på den første IDE-disk, som her antages at være en
-MS-DOS-formateret partition, og lægger den ind som
+Den fÃ¸rste linje tager <filename>/dev/hda1</filename>, dvs. fÃ¸rste
+partition pÃ¥ den fÃ¸rste IDE-disk, som her antages at vÃ¦re en
+MS-DOS-formateret partition, og lÃ¦gger den ind som
 <filename>/dosc</filename>.  Tilsvarende med
-<filename>/dev/hda2</filename>, dvs. anden partition på den første
-IDE-harddisk, som her antages at være en vfat-formateret partition,
+<filename>/dev/hda2</filename>, dvs. anden partition pÃ¥ den fÃ¸rste
+IDE-harddisk, som her antages at vÃ¦re en vfat-formateret partition,
 dvs. en Windows-partition, hvor der anvendes lange filnavne. 
 </para>
 
 <para>
-Vi har her skrevet <literal>umask=000</literal>, som vil gøre at alle
-brugere kan læse og skrive alle filer på <filename>/dosc</filename> og 
-<filename>/dosd</filename>. Dvs. alle kan også slette systemet. Vurdér
-selv om dette er acceptabelt på dit system.
+Vi har her skrevet <literal>umask=000</literal>, som vil gÃ¸re at alle
+brugere kan lÃ¦se og skrive alle filer pÃ¥ <filename>/dosc</filename> og 
+<filename>/dosd</filename>. Dvs. alle kan ogsÃ¥ slette systemet. VurdÃ©r
+selv om dette er acceptabelt pÃ¥ dit system.
 </para>
 
 <para>
-Når du genstarter computeren vil du automatisk have adgang til dine
-DOS/Windows-partitioner. Vil du prøve om det virker med det samme,
-behøver du ikke at genstarte computeren. Du kan bare skrive
-<command>mount -a</command> i et terminalvindue. Det er unødvendigt
-at genstarte Linux for at gennemføre en triviel ændring, som man
+NÃ¥r du genstarter computeren vil du automatisk have adgang til dine
+DOS/Windows-partitioner. Vil du prÃ¸ve om det virker med det samme,
+behÃ¸ver du ikke at genstarte computeren. Du kan bare skrive
+<command>mount -a</command> i et terminalvindue. Det er unÃ¸dvendigt
+at genstarte Linux for at gennemfÃ¸re en triviel Ã¦ndring, som man
 typisk skal i Windows.
 </para>
 </sect2>
@@ -739,12 +739,12 @@ typisk skal i Windows.
  <secondary>mcd</secondary>
 </indexterm>
 <para>
-For at kunne læse dine DOS-disketter skal du gentage ovenstående
-med få ændringer (<filename>msdos</filename> i stedet for
+For at kunne lÃ¦se dine DOS-disketter skal du gentage ovenstÃ¥ende
+med fÃ¥ Ã¦ndringer (<filename>msdos</filename> i stedet for
 <filename>iso9660</filename> og <filename>rw</filename> i stedet for
-<filename>ro</filename>). Der er dog en langt nemmere måde: Installér
+<filename>ro</filename>). Der er dog en langt nemmere mÃ¥de: InstallÃ©r
 RPM-pakken <filename>mtools</filename> fra din Red Hat cd-rom (dette er
-nøjere beskrevet under RPM i næste afsnit).
+nÃ¸jere beskrevet under RPM i nÃ¦ste afsnit).
 </para>
 
 <screen>
@@ -752,7 +752,7 @@ nøjere beskrevet under RPM i næste afsnit).
 </screen>
 
 <para>
-Giv læse- og skriveadgang til <filename>/dev/fd0</filename>:
+Giv lÃ¦se- og skriveadgang til <filename>/dev/fd0</filename>:
 </para>
 
 <screen>
@@ -760,11 +760,11 @@ Giv læse- og skriveadgang til <filename>/dev/fd0</filename>:
 </screen>
 
 <para>
-Med <userinput>man mtools</userinput> kan du se, at du reelt har fået de
-gamle MS-DOS-kommandoer, som bare har fået et m foran. Du kan bruge
+Med <userinput>man mtools</userinput> kan du se, at du reelt har fÃ¥et de
+gamle MS-DOS-kommandoer, som bare har fÃ¥et et m foran. Du kan bruge
 <command>mdir</command>, <command>mcopy</command>,
 <command>mcd</command> osv. Du kan endda bruge <filename>a:</filename>
-som i MSDOS. For at kopiere hele disketten til det bibliotek, du står i,
+som i MSDOS. For at kopiere hele disketten til det bibliotek, du stÃ¥r i,
 skal du skrive:
 </para>
 
@@ -773,8 +773,8 @@ skal du skrive:
 </screen>
 
 <para>
-Med mtools har du også mulighed for at bruge lange filnavne, der
-passer med Windows 95, og du skal ikke tænke på
+Med mtools har du ogsÃ¥ mulighed for at bruge lange filnavne, der
+passer med Windows 95, og du skal ikke tÃ¦nke pÃ¥
 <command>mount</command> og <command>umount</command>. Rigtig nyttige
 programmer.
 </para>
@@ -787,8 +787,8 @@ programmer.
 <indexterm><primary>Montering af cd-rom og diskette - automatisk</primary></indexterm>
 
 <para>
-I Red Hat og SuSE er der mulighed for automatisk at få monteret
-eksterne enheder, såsom cd-rom og diskettedrev. Det er nemt
+I Red Hat og SuSE er der mulighed for automatisk at fÃ¥ monteret
+eksterne enheder, sÃ¥som cd-rom og diskettedrev. Det er nemt
 - du skal blot installere autofs-pakken. I Mandrake benyttes supermount, 
 som er endnu smartere.
 </para>
@@ -798,24 +798,24 @@ som er endnu smartere.
 </screen>
 
 <para>
-Sørg først for at autofs startes op i den "runlevel", du normalt
-arbejder i (oftest 3, hvilket i øvrigt står i
-<filename>/etc/inittab</filename>). Det gøres ved at starte
-<command>control-panel</command> og vælge ikonet med trafiklys på -
-eller direkte starte <command>tksysv</command> op. Du føjer blot
+SÃ¸rg fÃ¸rst for at autofs startes op i den "runlevel", du normalt
+arbejder i (oftest 3, hvilket i Ã¸vrigt stÃ¥r i
+<filename>/etc/inittab</filename>). Det gÃ¸res ved at starte
+<command>control-panel</command> og vÃ¦lge ikonet med trafiklys pÃ¥ -
+eller direkte starte <command>tksysv</command> op. Du fÃ¸jer blot
 autofs til runlevel 3.
 </para>
 
 <para>
 Derefter skal du se i <filename>/etc/auto.master</filename>, der viser,
-at <filename>/misc</filename> nu er under kontrol af automontøren.
-Går du ned i <filename>/misc</filename>, bliver der monteret enheder
-automatisk. Der er et tidsudløb på 60 sekunder i standardopsætningen -
-dvs. 60 sekunder efter du har besøgt f.eks. din cd-rom, vil maskinen
-automatisk køre <command>umount</command> for dig.  Filen
-<filename>/etc/auto.misc</filename> er så der, hvor du skriver hvilke
+at <filename>/misc</filename> nu er under kontrol af automontÃ¸ren.
+GÃ¥r du ned i <filename>/misc</filename>, bliver der monteret enheder
+automatisk. Der er et tidsudlÃ¸b pÃ¥ 60 sekunder i standardopsÃ¦tningen -
+dvs. 60 sekunder efter du har besÃ¸gt f.eks. din cd-rom, vil maskinen
+automatisk kÃ¸re <command>umount</command> for dig.  Filen
+<filename>/etc/auto.misc</filename> er sÃ¥ der, hvor du skriver hvilke
 af dine eksterne enheder der automatisk skal monteres.  Filen kan
-f.eks. se ud som følger, for at din cd-rom og dit diskettedrev automatisk
+f.eks. se ud som fÃ¸lger, for at din cd-rom og dit diskettedrev automatisk
 monteres i  <filename>/misc/cdrom</filename> hhv.
 <filename>/misc/floppy</filename>
 </para>
@@ -827,30 +827,30 @@ usb       -fstype=auto,gid=401,umask=007   :/dev/sda1
 </programlisting>
 
 <para>
-Bemærk at filsystemet <filename>/misc/floppy</filename> på
+BemÃ¦rk at filsystemet <filename>/misc/floppy</filename> pÃ¥
 floppy-disken (dvs. <filename>/dev/fd0</filename>) detekteres
-automatisk (pga. auto), og at filsystemet monteres med læse og skrive
+automatisk (pga. auto), og at filsystemet monteres med lÃ¦se og skrive
 rettigheder for alle (pga. umask=0). Tilsvarende er indsat adgang til
-en USB nøglering, men her har vi vist at gruppen af brugere i gruppe
+en USB nÃ¸glering, men her har vi vist at gruppen af brugere i gruppe
 401 (dette defineres i filen <filename>/etc/group</filename>) har fuld
-læse og skrive rettigheder (pga. umask=007), mens "others" har ingen adgang.
+lÃ¦se og skrive rettigheder (pga. umask=007), mens "others" har ingen adgang.
 </para>
 
 <para>
-Der er mange muligheder her, og er du doven, kan du endda lave en lænke
-fra roden, så <filename>/cdrom</filename> peger på
-<filename>/misc/cdrom</filename>, og du kan så anvende
-<filename>/cdrom</filename> til at læse filer fra din
-cd-rom. Tilsvarende kan det gøres for <filename>/floppy</filename>. Har
-du problemer med rettigheder, læs lige de forrige afsnit.
+Der er mange muligheder her, og er du doven, kan du endda lave en lÃ¦nke
+fra roden, sÃ¥ <filename>/cdrom</filename> peger pÃ¥
+<filename>/misc/cdrom</filename>, og du kan sÃ¥ anvende
+<filename>/cdrom</filename> til at lÃ¦se filer fra din
+cd-rom. Tilsvarende kan det gÃ¸res for <filename>/floppy</filename>. Har
+du problemer med rettigheder, lÃ¦s lige de forrige afsnit.
 </para>
 
 <para>
 <emphasis>Tip:</emphasis> SuSE 6.4 har via
-<filename>/etc/auto.net</filename> lavet mulighed for at man kan gå
-direkte ind på netværkets andre filservere (hvor dette er
+<filename>/etc/auto.net</filename> lavet mulighed for at man kan gÃ¥
+direkte ind pÃ¥ netvÃ¦rkets andre filservere (hvor dette er
 tilladt). Via <filename>/net/dykker.kongeh.dk/home/dykker</filename>
-får man adgang til kataloget <filename>/home/dykker</filename> på
+fÃ¥r man adgang til kataloget <filename>/home/dykker</filename> pÃ¥
 maskinen dykker.kongeh.dk, hvis dette er eksporteret korrekt.
 </para>
 
@@ -866,26 +866,26 @@ maskinen dykker.kongeh.dk, hvis dette er eksporteret korrekt.
 <para>
 Mange steder har man en Windows-filserver, eller en Linux-maskine med SAMBA
 (se bogen "Linux - friheden til systemadministration"), som eksporterer
-netværksdrev til Windows-maskiner. Denne kan Linux-maskinen sagtens anvende
-til at få adgang til data.
+netvÃ¦rksdrev til Windows-maskiner. Denne kan Linux-maskinen sagtens anvende
+til at fÃ¥ adgang til data.
 </para>
 
 <para>
 Brugeren root kan montere en SMB-share (SHARE_NAVN) fra maskinen SERVER_NAVN
-på Linux-maskinens katalog <emphasis>/mnt/smb_katalog</emphasis> ved at
-skrive følgende.
+pÃ¥ Linux-maskinens katalog <emphasis>/mnt/smb_katalog</emphasis> ved at
+skrive fÃ¸lgende.
 </para>
 
 <screen>
 <prompt>[root@hven /root]# </prompt><userinput>mount -t smbfs -o username=BRUGERNAVN,password=MIT_PASSWORD //SERVER_NAVN/SHARE_NAVN /mnt/smb_katalog</userinput>
 </screen>
-<!--$ Gerne et eksempel, af kød og blod, helst med forklaring $ -->
+<!--$ Gerne et eksempel, af kÃ¸d og blod, helst med forklaring $ -->
 <para>
-Der findes også kommandoerne <command>smbmnt</command> og
+Der findes ogsÃ¥ kommandoerne <command>smbmnt</command> og
 <command>smbmount</command>, som basalt set kan det samme, men de kan
-anvendes til at brugere selv kan montere Windows-shares (dette kræver
-dog at der køres <command>chmod +s /usr/bin/smb*</command>, hvilket
-svækker system-sikkerheden noget).
+anvendes til at brugere selv kan montere Windows-shares (dette krÃ¦ver
+dog at der kÃ¸res <command>chmod +s /usr/bin/smb*</command>, hvilket
+svÃ¦kker system-sikkerheden noget).
 </para>
 
 </sect2>

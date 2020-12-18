@@ -5,58 +5,58 @@
  <title>OpenOffice.org brugerfladen</title>
 
  <para>
-  Dette kapitel fortæller om opbygningen af brugerfladen (skærmbilledet)
-  i OpenOffice.org og hvordan du tilpasser det til dine ønsker.
+  Dette kapitel fortÃ¦ller om opbygningen af brugerfladen (skÃ¦rmbilledet)
+  i OpenOffice.org og hvordan du tilpasser det til dine Ã¸nsker.
  </para>
 
  <sect1 id="ooo-brugerfladen-elementer">
-  <title>Elementer på skærmbilledet</title>
+  <title>Elementer pÃ¥ skÃ¦rmbilledet</title>
 
   <para>
-   Skærmbilledets udseende afhænger af, hvilket modul du arbejder med.
+   SkÃ¦rmbilledets udseende afhÃ¦nger af, hvilket modul du arbejder med.
    Her ses det med et tekstdokument som det aktive dokument og med et
-   HTML-dokument og to regnearksdokumenter åbne i baggrunden.</para>
+   HTML-dokument og to regnearksdokumenter Ã¥bne i baggrunden.</para>
 
 <figure id="fig-skaerm-ooo" float="1">
-<title>Skærm</title>
+<title>SkÃ¦rm</title>
 <graphic fileref="skaerm-oo.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Skærmbilledet ser anderledes ud hvis du vælger:</para>
+<para>SkÃ¦rmbilledet ser anderledes ud hvis du vÃ¦lger:</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para><emphasis>Vis/Fuld skærm</emphasis> (ell. CTRL+SKIFT+J) fjerner flest mulige
-        elementer fra skærmen, så tekstområdet bliver størst muligt. Der
-        vendes tilbage til normal visning ved at klikke (venstre museknap) på
-        teksten "Fuld skærm" i øverste venstre hjørne.</para>
+<para><emphasis>Vis/Fuld skÃ¦rm</emphasis> (ell. CTRL+SKIFT+J) fjerner flest mulige
+        elementer fra skÃ¦rmen, sÃ¥ tekstomrÃ¥det bliver stÃ¸rst muligt. Der
+        vendes tilbage til normal visning ved at klikke (venstre museknap) pÃ¥
+        teksten "Fuld skÃ¦rm" i Ã¸verste venstre hjÃ¸rne.</para>
 
 </listitem>
 </itemizedlist>
 
 
-    <para>Nedenfor gennemgås de forskellige dele af
-    skærmbilledet.</para>
+    <para>Nedenfor gennemgÃ¥s de forskellige dele af
+    skÃ¦rmbilledet.</para>
 
 <sect2 id="ooo-brugerfladen-menuerne">
   <title>Menuerne</title>
 
-<para>Øverst findes <emphasis>menulinjen</emphasis> :</para>
+<para>Ã˜verst findes <emphasis>menulinjen</emphasis> :</para>
 
 <figure float="1" id="fig-ooo-skaermmenulinje">
-<title>Skærm menu</title>
+<title>SkÃ¦rm menu</title>
 <graphic fileref="skaermmenulinje.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Menulinjen skifter afhængigt af hvilken type dokument du arbejder med,
-    men her er en oversigt som gælder for tekstdokumenter. Der vil så være
-    større eller mindre ændringer ved andre typer dokumenter.</para>
+<para>Menulinjen skifter afhÃ¦ngigt af hvilken type dokument du arbejder med,
+    men her er en oversigt som gÃ¦lder for tekstdokumenter. Der vil sÃ¥ vÃ¦re
+    stÃ¸rre eller mindre Ã¦ndringer ved andre typer dokumenter.</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para><emphasis>Filer</emphasis> indeholder kommandoer til at oprette, åbne, gemme og
+<para><emphasis>Filer</emphasis> indeholder kommandoer til at oprette, Ã¥bne, gemme og
         udskrive dokumenter.</para>
 
 </listitem>
@@ -71,13 +71,13 @@
   <listitem>
 
 <para><emphasis>Vis</emphasis> indeholder kommandoer til at tilpasse
-        skærmbilledet.</para>
+        skÃ¦rmbilledet.</para>
 
 </listitem>
 
   <listitem>
 
-<para><emphasis>Indsæt</emphasis> indeholder kommandoer til at indsætte specielle
+<para><emphasis>IndsÃ¦t</emphasis> indeholder kommandoer til at indsÃ¦tte specielle
         elementer i dokumentet, f.eks. sidetal, fodnoter, grafik osv.</para>
 
 </listitem>
@@ -99,15 +99,15 @@
   <listitem>
 
 <para><emphasis>Vindue</emphasis> indeholder kommandoer til at administrere
-        skærmbilledet når du har flere dokumenter åbne. Til at skifte mellem
+        skÃ¦rmbilledet nÃ¥r du har flere dokumenter Ã¥bne. Til at skifte mellem
         dokumenterne er det lettere at bruge windows proceslinje.</para>
 
 </listitem>
 
   <listitem>
 
-<para><emphasis>Hjælp</emphasis> indeholder (mærkeligt nok) hjælpefunktionerne. Bemærk
-        at hjælpen er på engelsk. Endvidere mulighed for registrering, samt
+<para><emphasis>HjÃ¦lp</emphasis> indeholder (mÃ¦rkeligt nok) hjÃ¦lpefunktionerne. BemÃ¦rk
+        at hjÃ¦lpen er pÃ¥ engelsk. Endvidere mulighed for registrering, samt
         oplysninger om OpenOffice.org.</para>
 
 </listitem>
@@ -118,21 +118,21 @@
   <title>Ikonlinjerne</title>
 
 <para>Under menuerne kommer <emphasis>ikonlinjerne</emphasis> , som indeholder knapper til
-    nogle af de funktioner, du kan nå med menuerne samt nogle flere.</para>
+    nogle af de funktioner, du kan nÃ¥ med menuerne samt nogle flere.</para>
 
-<para>Øverst er <emphasis>funktionslinjen</emphasis> , som er den samme uanset hvilken
+<para>Ã˜verst er <emphasis>funktionslinjen</emphasis> , som er den samme uanset hvilken
     OpenOffice.org komponent du bruger.</para>
 
 <figure float="1" id="fig-ooo-skaermfunktionslinje2">
-<title>Skærm funktions linie</title>
+<title>SkÃ¦rm funktions linie</title>
 <graphic fileref="skaermfunktionslinje.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Her findes bl.a. knapper til browsing, åbne, gemme og udskrive samt
+<para>Her findes bl.a. knapper til browsing, Ã¥bne, gemme og udskrive samt
     redigering.</para>
 
-<para> <emphasis>Hyperlinklinjen</emphasis> er ikke synlig som standard (heller ikke på
-    skærmbilledet ovenfor). Den bruges i HTML-dokumenter til at lave
+<para> <emphasis>Hyperlinklinjen</emphasis> er ikke synlig som standard (heller ikke pÃ¥
+    skÃ¦rmbilledet ovenfor). Den bruges i HTML-dokumenter til at lave
     hyperlinks:</para>
 
 <figure float="1" id="fig-ooo-skaermhyperlinklinje3">
@@ -140,8 +140,8 @@
 <graphic fileref="skaermhyperlinklinje03.&magic;" scale="60"></graphic>
 </figure>
 
-<para> <emphasis>Objektlinjen</emphasis> skifter udseende afhængigt af hvilket modul, du
-    bruger. Når du bruger tekstbehandlingsmodulet ser den sådan ud som
+<para> <emphasis>Objektlinjen</emphasis> skifter udseende afhÃ¦ngigt af hvilket modul, du
+    bruger. NÃ¥r du bruger tekstbehandlingsmodulet ser den sÃ¥dan ud som
     standard.</para>
 
 <figure float="1" id="fig-ooo-skaermobjektlinje">
@@ -149,21 +149,21 @@
 <graphic fileref="skaermobjektlinje.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Denne bruges til at formatere tegn og afsnit, herunder at vælge
-    afsnitstypografi. Der hører specielle objektlinjer til f.eks. grafik,
+<para>Denne bruges til at formatere tegn og afsnit, herunder at vÃ¦lge
+    afsnitstypografi. Der hÃ¸rer specielle objektlinjer til f.eks. grafik,
     tabeller og punktopstilling.</para>
 
 <para>
 I <figure float="1" id="fig-ooo-skaermvaerktoejslinje">
-<title>Værktøjslinie</title>
+<title>VÃ¦rktÃ¸jslinie</title>
 <graphic fileref="skaermvaerktoejslinje.&magic;" scale="60"></graphic>
 </figure>
- venstre side er <emphasis>værktøjslinjen</emphasis> (her er kun vist et lille udsnit). Denne skifter
-    også afhængigt af modulet. De fleste teksbehandlingsprogrammer har mange
-    værktøjslinjer, som kan vælges til og fra. I OpenOffice.org er der i stedet
-    samlet mange funktioner i én værktøjsbjælke. De knapper, hvor der er en
-    grøn pil indeholder underpunkter, som i nogle tilfælde kan trækkes ud som
-    en <emphasis>flydende værktøjslinje</emphasis> . I denne håndbog bruges værktøjslinjen
+ venstre side er <emphasis>vÃ¦rktÃ¸jslinjen</emphasis> (her er kun vist et lille udsnit). Denne skifter
+    ogsÃ¥ afhÃ¦ngigt af modulet. De fleste teksbehandlingsprogrammer har mange
+    vÃ¦rktÃ¸jslinjer, som kan vÃ¦lges til og fra. I OpenOffice.org er der i stedet
+    samlet mange funktioner i Ã©n vÃ¦rktÃ¸jsbjÃ¦lke. De knapper, hvor der er en
+    grÃ¸n pil indeholder underpunkter, som i nogle tilfÃ¦lde kan trÃ¦kkes ud som
+    en <emphasis>flydende vÃ¦rktÃ¸jslinje</emphasis> . I denne hÃ¥ndbog bruges vÃ¦rktÃ¸jslinjen
     ikke ret meget.</para>
 
 <para>Du kan vise/skjule ikonlinjerne med <emphasis>Vis/Ikonlinjer</emphasis>.</para>
@@ -177,9 +177,9 @@ I <figure float="1" id="fig-ooo-skaermvaerktoejslinje">
 <graphic fileref="skaermlineal.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Linealen viser den vandrette position i cm. Du kan også bruge linealen
+<para>Linealen viser den vandrette position i cm. Du kan ogsÃ¥ bruge linealen
     til at lave indstillinger, f.eks. indrykning af afsnit, tabulatorstop og
-    sætte højre og venstre margen.</para>
+    sÃ¦tte hÃ¸jre og venstre margen.</para>
 
 <para>Du kan vise/skjule linealen med <emphasis>Vis/Lineal</emphasis>.</para>
 </sect2>    <!--   Linealen -->
@@ -193,16 +193,16 @@ I <figure float="1" id="fig-ooo-skaermvaerktoejslinje">
 </figure>
 
 <para>Statuslinjen viser forskellige oplysninger, f.eks. sidetal (her side 1
-    af i alt 1), målestok (her 108%) og om dokumentet er ændret siden sidst
+    af i alt 1), mÃ¥lestok (her 108%) og om dokumentet er Ã¦ndret siden sidst
     det blev gemt (vist med *).</para>
 
-<para>Nogle af felterne er aktive, dvs. de reagerer på klik, dobbeltklik
-    eller højreklik.</para>
+<para>Nogle af felterne er aktive, dvs. de reagerer pÃ¥ klik, dobbeltklik
+    eller hÃ¸jreklik.</para>
 
 <para>Du kan vise/skjule statuslinjen med <emphasis>Vis/Statuslinje</emphasis>.</para>
 
   </sect2>    <!--   Statuslinjen -->
- </sect1>    <!--   2.1. Elementer på skærmbilledet -->
+ </sect1>    <!--   2.1. Elementer pÃ¥ skÃ¦rmbilledet -->
 
 <!--  2.2 --> &ooo-tekstdokumenter-visning;
 <!--  2.3 --> &ooo-ooo-generelt;

@@ -1,32 +1,32 @@
 <chapter id="signatur-reference">
 <title>Mere information</title>
 
-<para>På <ulink
+<para>PÃ¥ <ulink
   url="http://www.si.dk/wimpdoc.asp?page=tema&amp;objno=95024072">http://www.si.dk/wimpdoc.asp?page=tema&amp;objno=95024072</ulink>
   har IT og Telestyrelsen nogen dokumenter om digitale signaturer der
-  er anbefalelsesværdige at læse.</para>
+  er anbefalelsesvÃ¦rdige at lÃ¦se.</para>
 
 
-<para>For en generel oversigt over hvordan KMD's system virker, besøg da
+<para>For en generel oversigt over hvordan KMD's system virker, besÃ¸g da
 <ulink url="http://www.kmd-ca.dk/digital_signatur.htm">
 http://www.kmd-ca.dk/digital_signatur.htm</ulink></para>
 
 
-<para>KMD-CA har lavet en "værktøjskasse" på
+<para>KMD-CA har lavet en "vÃ¦rktÃ¸jskasse" pÃ¥
 <ulink url="http://www.kmd-ca.dk/vaerktojskasse.htm">
 http://www.kmd-ca.dk/vaerktojskasse.htm</ulink> med information og
 direkte links til rodcertifikater og diverse programmer.
 </para>
 
 <para>
-På
+PÃ¥
 <ulink url="http://www.openssl.org/">
 http://www.openssl.org/</ulink>
  er der en manual til openssl i html
-format. Openssl er desuden dokumenteret i man sider på det system hvor
+format. Openssl er desuden dokumenteret i man sider pÃ¥ det system hvor
 det er installeret.</para>
 
-<para>Mozialla browseren har en del information under "Hjælp", der fortæller
+<para>Mozialla browseren har en del information under "HjÃ¦lp", der fortÃ¦ller
 om sikkerhed.</para>
 
 </chapter>

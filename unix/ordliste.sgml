@@ -9,13 +9,13 @@
   <glossdef>
    <para>
     <ulink url="http://www.linuxbase.org/">Linux Standard Base</ulink> er et
-    forsøg på at lave en fælles specifikation for hvordan en linux-distribution
-    skal se ud, primært set fra en uafhængig softwareleverandørs synsvinkel.
+    forsÃ¸g pÃ¥ at lave en fÃ¦lles specifikation for hvordan en linux-distribution
+    skal se ud, primÃ¦rt set fra en uafhÃ¦ngig softwareleverandÃ¸rs synsvinkel.
    </para>
 
    <para>
-    Formålet er at gøre det lettere for uafhængige softwareleverandører at
-    pakke programmer, så de fungerer på mange forskellige linux-distributioner.
+    FormÃ¥let er at gÃ¸re det lettere for uafhÃ¦ngige softwareleverandÃ¸rer at
+    pakke programmer, sÃ¥ de fungerer pÃ¥ mange forskellige linux-distributioner.
    </para>
   </glossdef>
  </glossentry>

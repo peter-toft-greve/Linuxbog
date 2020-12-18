@@ -1,54 +1,54 @@
 <chapter id="java-io">
-<title>Datastrømme og filhåndtering</title>
+<title>DatastrÃ¸mme og filhÃ¥ndtering</title>
 
 <para>Indhold:</para>
 
 <itemizedlist mark="bullet">
-  <listitem><para>At forstå datastrømme</para></listitem>
-  <listitem><para>At læse og skrive filer</para></listitem>
-  <listitem><para>At analysere tekstfiler og udtrække data</para></listitem>
-  <listitem><para>Overblikket over og sammenhængen mellem alle datastrøm-klasserne</para></listitem>
+  <listitem><para>At forstÃ¥ datastrÃ¸mme</para></listitem>
+  <listitem><para>At lÃ¦se og skrive filer</para></listitem>
+  <listitem><para>At analysere tekstfiler og udtrÃ¦kke data</para></listitem>
+  <listitem><para>Overblikket over og sammenhÃ¦ngen mellem alle datastrÃ¸m-klasserne</para></listitem>
 </itemizedlist>
 
 <para>
-  Kapitlet forudsættes af <xref linkend="java-net" />, Netværkskommunikation
+  Kapitlet forudsÃ¦ttes af <xref linkend="java-net" />, NetvÃ¦rkskommunikation
   og <xref linkend="java-serialisering" />, Serialisering.
 </para>
 
 <para>
-  Forudsætter <xref linkend="java-exception" />, Undtagelser.
+  ForudsÃ¦tter <xref linkend="java-exception" />, Undtagelser.
 </para>
 
 <para>
-  En fil er et arkiv på et lagermedium, hvori der er gemt
-  data. På lagermediet gemmes en række 0'er og 1-taller
+  En fil er et arkiv pÃ¥ et lagermedium, hvori der er gemt
+  data. PÃ¥ lagermediet gemmes en rÃ¦kke 0'er og 1-taller
   (bit) i grupper a 8 bit, svarende til en byte (et tal mellem 0 og 255).
 </para>
 
 <para>
-  Data kan være gemt <emphasis>binært</emphasis>, sådan at de
-  kun kan læses af et program eller styresystemet. Det gælder
-  f.eks. en .exe-fil eller et dokument gemt i et proprietært
-  binært format som f.eks. Word. De kan også være
-  gemt som <emphasis>tekst</emphasis> uden formatering. Det gælder f.eks.
-  filer, der ender på .txt, .html og .java. Oplysningerne i
-  tekstfiler kan læses med en teksteditor.
-  Det er op til programmet, der læser/skriver i filen, at afgøre,
-  om indholdet er tekst eller binært.
+  Data kan vÃ¦re gemt <emphasis>binÃ¦rt</emphasis>, sÃ¥dan at de
+  kun kan lÃ¦ses af et program eller styresystemet. Det gÃ¦lder
+  f.eks. en .exe-fil eller et dokument gemt i et proprietÃ¦rt
+  binÃ¦rt format som f.eks. Word. De kan ogsÃ¥ vÃ¦re
+  gemt som <emphasis>tekst</emphasis> uden formatering. Det gÃ¦lder f.eks.
+  filer, der ender pÃ¥ .txt, .html og .java. Oplysningerne i
+  tekstfiler kan lÃ¦ses med en teksteditor.
+  Det er op til programmet, der lÃ¦ser/skriver i filen, at afgÃ¸re,
+  om indholdet er tekst eller binÃ¦rt.
 </para>
 
 <para>
-  I Java behandles filer som datastrømme. En datastrøm
-  er et objekt, som man enten henter data fra (læser fra en
+  I Java behandles filer som datastrÃ¸mme. En datastrÃ¸m
+  er et objekt, som man enten henter data fra (lÃ¦ser fra en
   datakilde, f.eks. en fil) eller
-  skriver data til (et datamål).
+  skriver data til (et datamÃ¥l).
 </para>
 
 <para>
-  Denne arbejdsmåde gør, at forskellige datakilder og
-  -mål kan behandles ensartet, og at det er let at udskifte
-  datakilden eller -målet med noget andet end en fil, f.eks. en
-  forbindelse til netværket.
+  Denne arbejdsmÃ¥de gÃ¸r, at forskellige datakilder og
+  -mÃ¥l kan behandles ensartet, og at det er let at udskifte
+  datakilden eller -mÃ¥let med noget andet end en fil, f.eks. en
+  forbindelse til netvÃ¦rket.
 </para>
 
 <sect1 id="java-io-skrive-tekstfiler">
@@ -56,7 +56,7 @@
 
 <para>
   Klassen FileWriter bruges til at skrive en fil med tekstdata. I
-  konstruktøren angiver man filnavnet:
+  konstruktÃ¸ren angiver man filnavnet:
 </para>
 
 <screen>
@@ -64,7 +64,7 @@
 </screen>
 
 <para>
-  FileWriter-objektet er en datastrøm, hvis mål er
+  FileWriter-objektet er en datastrÃ¸m, hvis mÃ¥l er
   filen. Nu kan man skrive tekstdata til filen med:
 </para>
 
@@ -74,9 +74,9 @@
 </screen>
 
 <para>
-  FileWriter-objektets write()-metode er lidt besværlig at
-  arbejde med, da den ikke understøtter linjeskift (som så
-  i stedet må laves med &quot;\n&quot;).
+  FileWriter-objektets write()-metode er lidt besvÃ¦rlig at
+  arbejde med, da den ikke understÃ¸tter linjeskift (som sÃ¥
+  i stedet mÃ¥ laves med &quot;\n&quot;).
 </para>
 
 <figure id="java-io-skrive-tekstfil-fig">
@@ -85,9 +85,9 @@
 </figure>
 
 <para>
-  Det er mere bekvemt at lægge objektet ind i en PrintWriter. Et
+  Det er mere bekvemt at lÃ¦gge objektet ind i en PrintWriter. Et
   PrintWriter-objekt har print() og println()-metoder, som vi er vant
-  til, og man skal skrive til den præcis, som når man
+  til, og man skal skrive til den prÃ¦cis, som nÃ¥r man
   skriver til System.out:
 </para>
 
@@ -98,13 +98,13 @@
 </screen>
 
 <para>
-  Når vi skriver til PrintWriter-objektet, sender det teksten
+  NÃ¥r vi skriver til PrintWriter-objektet, sender det teksten
   videre til FileWriter-objektet, der skriver teksten i filen.
 </para>
 
 <para>
   Her er et samlet eksempel, der skriver nogle fiktive personers
-  navn, køn og alder til en fil:
+  navn, kÃ¸n og alder til en fil:
 </para>
 
 <screen>
@@ -118,13 +118,13 @@ public class SkrivTekstfil
     for (int i=0; i&lt;5; i++)
     {
       String navn = &quot;person&quot;+i;
-      String køn;
-      if (Math.random()&gt;0.5) køn = &quot;m&quot;; else køn = &quot;k&quot;;
+      String kÃ¸n;
+      if (Math.random()&gt;0.5) kÃ¸n = &quot;m&quot;; else kÃ¸n = &quot;k&quot;;
       int alder = 10+(int) (Math.random()*60);
 
-<emphasis>      ud.println(navn+&quot; &quot;+køn+&quot; &quot;+alder);</emphasis>
+<emphasis>      ud.println(navn+&quot; &quot;+kÃ¸n+&quot; &quot;+alder);</emphasis>
     }
-<emphasis>    ud.close()</emphasis>; <emphasis>// luk så alle data skrives til disken</emphasis>
+<emphasis>    ud.close()</emphasis>; <emphasis>// luk sÃ¥ alle data skrives til disken</emphasis>
     System.out.println(&quot;Filen er gemt.&quot;);
   }
 }
@@ -137,14 +137,14 @@ Filen er gemt.
 </screen>
 
 <para>
-  Eventuelle IO-undtagelser (f.eks. ikke mere plads på disken)
+  Eventuelle IO-undtagelser (f.eks. ikke mere plads pÃ¥ disken)
   tager vi os ikke af, men sender dem videre til styresystemet.
 </para>
 
 <para>
-  Det er vigtigt at lukke filen, når man er færdig med
-  at skrive. Ellers kan de sidste data gå tabt! Det gør
-  man ved at lukke datastrømmen, man skrev til:
+  Det er vigtigt at lukke filen, nÃ¥r man er fÃ¦rdig med
+  at skrive. Ellers kan de sidste data gÃ¥ tabt! Det gÃ¸r
+  man ved at lukke datastrÃ¸mmen, man skrev til:
 </para>
 
 <screen>
@@ -152,8 +152,8 @@ Filen er gemt.
 </screen>
 
 <para>
-  Efter at programmet har kørt, findes filen &quot;skrevet
-  fil.txt&quot; på disken, med indhold:
+  Efter at programmet har kÃ¸rt, findes filen &quot;skrevet
+  fil.txt&quot; pÃ¥ disken, med indhold:
 </para>
 
 <screen>
@@ -166,15 +166,15 @@ person4 k 16
 </sect1> 
 
 <sect1 id="java-io-laese-tekstfil">
-<title>Læse fra en tekstfil</title>
+<title>LÃ¦se fra en tekstfil</title>
 
 <para>
-  Lad os læse filen ovenfor og skrive den ud til skærmen.
-  Til det formål bruger vi et FileReader-objekt som
+  Lad os lÃ¦se filen ovenfor og skrive den ud til skÃ¦rmen.
+  Til det formÃ¥l bruger vi et FileReader-objekt som
   datakilde. Igen pakker vi det ind i et andet objekt, denne gang af
-  klassen BufferedReader. BufferedReader gør det mere
-  bekvemt, da indlæsning kan ske linje for linje med metoden
-  readLine(). Når der ikke er flere data, returnerer readLine()
+  klassen BufferedReader. BufferedReader gÃ¸r det mere
+  bekvemt, da indlÃ¦sning kan ske linje for linje med metoden
+  readLine(). NÃ¥r der ikke er flere data, returnerer readLine()
   null.
 </para>
 
@@ -197,7 +197,7 @@ public class LaesTekstfil
     String linje = ind.readLine();
     while (linje != null)
     {
-      System.out.println(&quot;Læst: &quot;+linje);
+      System.out.println(&quot;LÃ¦st: &quot;+linje);
       linje = <emphasis>ind.readLine()</emphasis>;
     }
   }
@@ -205,16 +205,16 @@ public class LaesTekstfil
 </screen>
 
 <screen>
-Læst: person0 m 34
-Læst: person1 m 26
-Læst: person2 m 24
-Læst: person3 k 51
-Læst: person4 k 16
+LÃ¦st: person0 m 34
+LÃ¦st: person1 m 26
+LÃ¦st: person2 m 24
+LÃ¦st: person3 k 51
+LÃ¦st: person4 k 16
 </screen>
 </sect1> 
 
 <sect1 id="java-io-tastatur-laese">
-<title>Indlæsning fra tastatur</title>
+<title>IndlÃ¦sning fra tastatur</title>
 
 <para>
   For et tekstbaseret (ikke-grafisk) program skal uddata som bekendt
@@ -222,28 +222,28 @@ Læst: person4 k 16
 </para>
 
 <para>
-  Det modsvarende objekt til at læse fra tastaturet,
-  System.in, er en byte-baseret (binær) datastrøm. Det er
+  Det modsvarende objekt til at lÃ¦se fra tastaturet,
+  System.in, er en byte-baseret (binÃ¦r) datastrÃ¸m. Det er
   nemmest at pakke den ind i en InputStreamReader, der konverterer til
-  tegnbaseret (tekst)indlæsning
+  tegnbaseret (tekst)indlÃ¦sning
 </para>
 
 <screen>
-  InputStreamReader tegnlæser = new InputStreamReader(System.in);
+  InputStreamReader tegnlÃ¦ser = new InputStreamReader(System.in);
 </screen>
 
 <para>
-  ... og derpå gøre den linjeorienteret ved at pakke
+  ... og derpÃ¥ gÃ¸re den linjeorienteret ved at pakke
   den yderligere ind i et BufferedReader-objekt:
 </para>
 
 <screen>
-  BufferedReader ind = new BufferedReader( tegnlæser );
+  BufferedReader ind = new BufferedReader( tegnlÃ¦ser );
 </screen>
 
 <para>
-  Derefter kan man læse inddata fra tastaturet linje for
-  linje, ligesom vi gør med filer:
+  Derefter kan man lÃ¦se inddata fra tastaturet linje for
+  linje, ligesom vi gÃ¸r med filer:
 </para>
 
 <screen>
@@ -255,22 +255,22 @@ Læst: person4 k 16
 <title>Analysering af tekstdata</title>
 
 <para>
-  Ofte er det ikke nok bare at indlæse data, de skal også
+  Ofte er det ikke nok bare at indlÃ¦se data, de skal ogsÃ¥
   kunne behandles bagefter.
 </para>
 
 <para>
-  Det kunne være sjovt at udregne aldersgennemsnit i
-  LaesTekstfil.java. Det kræver, at vi først opdeler data
+  Det kunne vÃ¦re sjovt at udregne aldersgennemsnit i
+  LaesTekstfil.java. Det krÃ¦ver, at vi fÃ¸rst opdeler data
   for at finde kolonnen med aldrene og derefter konverterer dem til
-  tal, der kan regnes på.
+  tal, der kan regnes pÃ¥.
 </para>
 
 <sect2 id="java-io-txt-analyse-tokenizer">
 <title>Opdele inddata (StringTokenizer)</title>
 
 <para>
-  Har man brug for at dele strenge op i mindre dele, kan det gøres
+  Har man brug for at dele strenge op i mindre dele, kan det gÃ¸res
   med StringTokenizer-klassen, der deler en streng op i bidder (eng.:
   tokens) efter bestemte skilletegn. Normalt opdeles efter blanktegn,
   og strengen bliver derfor delt op i ord.
@@ -281,17 +281,17 @@ Læst: person4 k 16
 </para>
 
 <screen>
-  StringTokenizer strengbidder = new StringTokenizer(&quot;Hej kære venner!&quot;);
+  StringTokenizer strengbidder = new StringTokenizer(&quot;Hej kÃ¦re venner!&quot;);
 </screen>
 
 <para>
-  Herefter kan man med metoden nextToken() få bidderne frem en
+  Herefter kan man med metoden nextToken() fÃ¥ bidderne frem en
   efter en.
 </para>
 
 <para>
   Metoden hasMoreTokens() er sand, hvis der er flere bidder, og
-  falsk, når vi er nået forbi sidste bid:
+  falsk, nÃ¥r vi er nÃ¥et forbi sidste bid:
 </para>
 
 <screen>
@@ -307,17 +307,17 @@ Læst: person4 k 16
 
 <screen>
   bid: Hej
-  bid: kære
+  bid: kÃ¦re
   bid: venner!
 </screen>
 
 <para>
   &Oslash;nsker man at opdele efter andet end mellemrum, kan man
-  angive det i StringTokenizer's konstruktør. Herunder opdeler
-  vi en formel efter både &quot;+&quot; og &quot;-&quot;. Den
+  angive det i StringTokenizer's konstruktÃ¸r. Herunder opdeler
+  vi en formel efter bÃ¥de &quot;+&quot; og &quot;-&quot;. Den
   sidste parameter angiver, at vi godt vil have skilletegnene, dvs. +
-  og -, ud som selvstændige bidder (i stedet for at de
-  smides væk som ligegyldige):
+  og -, ud som selvstÃ¦ndige bidder (i stedet for at de
+  smides vÃ¦k som ligegyldige):
 </para>
 
 <screen>
@@ -348,7 +348,7 @@ public class LaesFormel
 </screen>
 
 <para>
-  Bemærk, at vi kalder trim() på strengene for at fjerne
+  BemÃ¦rk, at vi kalder trim() pÃ¥ strengene for at fjerne
   eventuelle blanktegn omkring hver bid.
 </para>
 </sect2> 
@@ -357,16 +357,16 @@ public class LaesFormel
 <title>Konvertere til tal</title>
 
 <para>
-  For at omsætte en streng til et tal (int eller double) skal
-  strengen analyseres (eng.: parse), dvs. undersøges for, om den
-  indeholder et tal, og tallet, som kan være repræsenteret
-  på mange måder, skal findes frem. Det har Integer- og
+  For at omsÃ¦tte en streng til et tal (int eller double) skal
+  strengen analyseres (eng.: parse), dvs. undersÃ¸ges for, om den
+  indeholder et tal, og tallet, som kan vÃ¦re reprÃ¦senteret
+  pÃ¥ mange mÃ¥der, skal findes frem. Det har Integer- og
   Double-klasserne funktioner til,
   nemlig hhv. parseInt() og parseDouble().
 </para>
 
 <para>
-  De tager en streng og returnerer den ønskede type:
+  De tager en streng og returnerer den Ã¸nskede type:
 </para>
 
 <screen>
@@ -375,10 +375,10 @@ public class LaesFormel
 </screen>
 
 <para>
-  Eksponentiel notation (hvor 9.8E3 betyder 9800) forstås
-  også, og der kan også bruges andre talsystemer end
+  Eksponentiel notation (hvor 9.8E3 betyder 9800) forstÃ¥s
+  ogsÃ¥, og der kan ogsÃ¥ bruges andre talsystemer end
   titalsystemet. F.eks. giver Integer.parseInt(&quot;00010011&quot;,2)
-  tallet 19 (19 svarer til 00010011 i det binære talsystem), og
+  tallet 19 (19 svarer til 00010011 i det binÃ¦re talsystem), og
   Integer.parseInt(&quot;1F&quot;,16) giver 31 (1F i det hexadecimale
   talsystem):
 </para>
@@ -395,9 +395,9 @@ public class LaesFormel
 
 <para>
   Klasserne DecimalFormat og DateFormat giver ikke blot mange
-  muligheder for at formatere tal/datoer som strenge, men kan også
-  analysere strenge for forskellige tal- og tidsformater og trække
-  data ud af strenge. De er nærmere beskrevet i slutningen af
+  muligheder for at formatere tal/datoer som strenge, men kan ogsÃ¥
+  analysere strenge for forskellige tal- og tidsformater og trÃ¦kke
+  data ud af strenge. De er nÃ¦rmere beskrevet i slutningen af
   <xref linkend="java-obj" />.
 </para>
 </sect2> 
@@ -406,9 +406,9 @@ public class LaesFormel
 <title>Samlet eksempel: Statistik</title>
 
 <para>
-  Nu kan vi skrive et statistikprogram. Vi tæller antallet af
+  Nu kan vi skrive et statistikprogram. Vi tÃ¦ller antallet af
   personer (linjer i filen) og summen af aldrene. Linjerne
-  analyseres og lægges ind i variablerne navn, køn og
+  analyseres og lÃ¦gges ind i variablerne navn, kÃ¸n og
   alder.
 </para>
 
@@ -435,10 +435,10 @@ public class LaesTekstfilOgLavStatistik
           StringTokenizer bidder = new StringTokenizer(linje);
 
           String navn = bidder.nextToken();
-          String køn = bidder.nextToken();
+          String kÃ¸n = bidder.nextToken();
           int alder = Integer.parseInt(bidder.nextToken());
 
-          System.out.println(navn+&quot; er &quot;+alder+&quot; år.&quot;);
+          System.out.println(navn+&quot; er &quot;+alder+&quot; Ã¥r.&quot;);
           antalPersoner = antalPersoner + 1;
           sumAlder = sumAlder + alder;
         } catch (Exception u) 
@@ -455,7 +455,7 @@ public class LaesTekstfilOgLavStatistik
       System.out.println(&quot;Filen kunne ikke findes.&quot;);
     } catch (Exception u) 
     {
-      System.out.println(&quot;Fejl ved læsning af fil.&quot;);
+      System.out.println(&quot;Fejl ved lÃ¦sning af fil.&quot;);
       u.printStackTrace();
     }
   }
@@ -465,27 +465,27 @@ public class LaesTekstfilOgLavStatistik
 <para>Resultatet bliver:</para>
 
 <screen>
-person0 er 34 år.
-person1 er 26 år.
-person2 er 24 år.
-person3 er 51 år.
-person4 er 16 år.
+person0 er 34 Ã¥r.
+person1 er 26 Ã¥r.
+person2 er 24 Ã¥r.
+person3 er 51 Ã¥r.
+person4 er 16 Ã¥r.
 Aldersgennemsnittet er: 30
 </screen>
 
 <para>
-  Undervejs kan der opstå forskellige undtagelser. Hvis filen
+  Undervejs kan der opstÃ¥ forskellige undtagelser. Hvis filen
   ikke eksisterer udskrives &quot;Filen kunne ikke findes&quot;, og
-  programmet afslutter. En anden mulig fejl er, at filen er tom. Så
-  vil der opstå en aritmetisk undtagelse, når vi dividerer
-  med antalPersoner, og &quot;Fejl ved læsning af fil&quot;
+  programmet afslutter. En anden mulig fejl er, at filen er tom. SÃ¥
+  vil der opstÃ¥ en aritmetisk undtagelse, nÃ¥r vi dividerer
+  med antalPersoner, og &quot;Fejl ved lÃ¦sning af fil&quot;
   udskrives.
 </para>
 
 <para>
-  Under analyseringen af linjen kan der også opstå flere
-  forskellige slags undtagelser: Konverteringen til heltal kan gå
-  galt, og der kan være for få bidder, så nextToken()
+  Under analyseringen af linjen kan der ogsÃ¥ opstÃ¥ flere
+  forskellige slags undtagelser: Konverteringen til heltal kan gÃ¥
+  galt, og der kan vÃ¦re for fÃ¥ bidder, sÃ¥ nextToken()
   bliver kaldt efter sidste bid.
 </para>
 
@@ -503,14 +503,14 @@ java.util.NoSuchElementException
 
 
 <para>
-  Hvis disse fejl opstår, fortsætter programmet efter
-  catch-blokken med at læse næste linje af inddata.
+  Hvis disse fejl opstÃ¥r, fortsÃ¦tter programmet efter
+  catch-blokken med at lÃ¦se nÃ¦ste linje af inddata.
 </para>
 
 <para>
-  Da sumAlder og antalPersoner ændres sidst i
+  Da sumAlder og antalPersoner Ã¦ndres sidst i
   try-catch-blokken, vil de kun blive opdateret hvis hele linjen
-  er i orden, og statistikken udregnes derfor kun på grundlag af
+  er i orden, og statistikken udregnes derfor kun pÃ¥ grundlag af
   de gyldige linjer.
 </para>
 </sect2>
@@ -520,15 +520,15 @@ java.util.NoSuchElementException
 <title>Appendiks</title>
 
 <para>
-  I pakken java.io findes omkring 40 klasser, der kan læse
-  eller skrive binære eller tegnbaserede data fra et væld
-  af datakilder eller -mål og på et væld af
-  forskellige måder. Der henvises til javadokumentationen
-  for en nærmere beskrivelse af de enkelte klasser.
+  I pakken java.io findes omkring 40 klasser, der kan lÃ¦se
+  eller skrive binÃ¦re eller tegnbaserede data fra et vÃ¦ld
+  af datakilder eller -mÃ¥l og pÃ¥ et vÃ¦ld af
+  forskellige mÃ¥der. Der henvises til javadokumentationen
+  for en nÃ¦rmere beskrivelse af de enkelte klasser.
 </para>
 
 <para>
-  Næsten alle metoderne i klasserne kan kaste en
+  NÃ¦sten alle metoderne i klasserne kan kaste en
   IOException-undtagelse, som skal fanges i en try-catch-blok (eller
   kastes videre som beskrevet i kapitlet om undtagelser).
 </para>
@@ -537,27 +537,27 @@ java.util.NoSuchElementException
 <title>Navngivning</title>
 
 <para>
-  Datastrømmene kan ordnes i fire grupper, og den konsistente
-  navngivning gør dem lettere at overskue:
+  DatastrÃ¸mmene kan ordnes i fire grupper, og den konsistente
+  navngivning gÃ¸r dem lettere at overskue:
 </para>
 
 <para>
-  <emphasis>InputStream</emphasis>-objekter læser binære data.  
-  <emphasis>OutputStream</emphasis>-objekter skriver binære data.
+  <emphasis>InputStream</emphasis>-objekter lÃ¦ser binÃ¦re data.  
+  <emphasis>OutputStream</emphasis>-objekter skriver binÃ¦re data.
 </para>
 
 <para>
-  <emphasis>Reader</emphasis>-objekter læser
+  <emphasis>Reader</emphasis>-objekter lÃ¦ser
   tekstdata. <emphasis>Writer</emphasis>-objekter skriver tekstdata.
 </para>
 </sect2>
 
 <sect2 id="java-io-txt-analyze-binaere-data">
-<title>Binære data ( -OutputStream og -InputStream)</title>
+<title>BinÃ¦re data ( -OutputStream og -InputStream)</title>
 
 <para>
-  Byte-baserede data som f.eks. billeder, lyde eller andre binære
-  programdata håndteres af klasser, der arver fra InputStream
+  Byte-baserede data som f.eks. billeder, lyde eller andre binÃ¦re
+  programdata hÃ¥ndteres af klasser, der arver fra InputStream
   eller OutputStream.
 </para>
 
@@ -568,8 +568,8 @@ java.util.NoSuchElementException
 
 <para>
   Af klassediagrammet ses, at metoderne i InputStream og
-  OutputStream læser og skriver byte-data: write(byte[]) på
-  OutputStream skriver et array (en række) af byte. Arvingerne
+  OutputStream lÃ¦ser og skriver byte-data: write(byte[]) pÃ¥
+  OutputStream skriver et array (en rÃ¦kke) af byte. Arvingerne
   har lignende metoder (disse er ikke vist).
 </para>
 
@@ -580,15 +580,15 @@ java.util.NoSuchElementException
   InputStream(). I stedet skal man bruge en af nedarvingerne. Abstrakte
   klasser og metoder bliver behandlet i <xref linkend="java-avancerede-klasser" />, Avancerede klasser.
 </para>
-</sect2>    <!--   Binære data ( -OutputStream og -InputStream) -->
+</sect2>    <!--   BinÃ¦re data ( -OutputStream og -InputStream) -->
 
 <sect2 id="java-io-txt-analyze-reader-writers">
 <title>Tekstdata ( -Writer og -Reader)</title>
 
 <para>
-  Tegn-baserede data bruges til tekstfiler, til at læse
-  brugerinput og til meget netværkskommunikation. Dette
-  håndteres af klasserne, der nedarver fra Reader og Writer.
+  Tegn-baserede data bruges til tekstfiler, til at lÃ¦se
+  brugerinput og til meget netvÃ¦rkskommunikation. Dette
+  hÃ¥ndteres af klasserne, der nedarver fra Reader og Writer.
 </para>
 
 <figure id="java-io-txt-analyse-reader-writers-fig">
@@ -598,41 +598,41 @@ java.util.NoSuchElementException
 
 <para>
   Af klassediagrammet ses, at alle metoderne i Reader og Writer
-  læser og skriver tegndata (datatype char). Tegn
-  repræsenteres i Java som 16-bit unicode-værdier, og man
-  kan derfor arbejde med ikke blot det vesteuropæiske
-  tegnsæt, men også det østeuropæiske,
+  lÃ¦ser og skriver tegndata (datatype char). Tegn
+  reprÃ¦senteres i Java som 16-bit unicode-vÃ¦rdier, og man
+  kan derfor arbejde med ikke blot det vesteuropÃ¦iske
+  tegnsÃ¦t, men ogsÃ¥ det Ã¸steuropÃ¦iske,
   kinesiske, russiske, ...
 </para>
 </sect2>   
 
 <sect2 id="java-io-txt-analyse-read-write">
-<title>Fillæsning og -skrivning (File- )</title>
+<title>FillÃ¦sning og -skrivning (File- )</title>
 
 <para>
-  Klasserne til filhåndtering er FileInputStream, FileReader,
+  Klasserne til filhÃ¥ndtering er FileInputStream, FileReader,
   FileOutputStream og FileWriter.
 </para>
-</sect2>    <!--   Fillæsning og -skrivning (File- ) -->
+</sect2>    <!--   FillÃ¦sning og -skrivning (File- ) -->
 
 <sect2 id="java-io-txt-analyse-strenge">
 <title>Strenge (String- )</title>
 
 <para>
-  Med StringReader kan man læse data fra en streng, som om det
-  kom fra en datastrøm. Det kan være praktisk til f.eks.
+  Med StringReader kan man lÃ¦se data fra en streng, som om det
+  kom fra en datastrÃ¸m. Det kan vÃ¦re praktisk til f.eks.
   at simulere indtastninger fra tastaturet under test (sml. 
 <xref linkend="java-io-tastatur-laese" />,
-  Indlæsning fra tastatur).
+  IndlÃ¦sning fra tastatur).
 </para>
 
 <screen>
-  StringReader tegnlæser = new StringReader(&quot;Jacob\n4\n5.14\n&quot;);
-  BufferedReader ind = new BufferedReader( tegnlæser );
+  StringReader tegnlÃ¦ser = new StringReader(&quot;Jacob\n4\n5.14\n&quot;);
+  BufferedReader ind = new BufferedReader( tegnlÃ¦ser );
 </screen>
 
 <para>
-  StringWriter er en datastrøm, der gemmer uddata i et
+  StringWriter er en datastrÃ¸m, der gemmer uddata i et
   StringBuffer-objekt, der kan konverteres til en streng.
 </para>
 </sect2>   
@@ -641,25 +641,25 @@ java.util.NoSuchElementException
 <title>Arrays (ByteArray- og CharArray- )</title>
 
 <para>
-  Et array er en liste eller række af noget (se <xref linkend="java-arrays" /> om
-  arrays). Ligesom man kan behandle en streng som en datastrøm,
-  kan man også arbejde med et array som datakilde eller
-  -mål. Klasserne CharArrayReader og CharArrayWriter hhv.
-  læser og skriver fra et array af tegn, mens
-  ByteArrayInputStream og ByteArrayOutputStream læser og
-  skriver binært fra et array af byte.
+  Et array er en liste eller rÃ¦kke af noget (se <xref linkend="java-arrays" /> om
+  arrays). Ligesom man kan behandle en streng som en datastrÃ¸m,
+  kan man ogsÃ¥ arbejde med et array som datakilde eller
+  -mÃ¥l. Klasserne CharArrayReader og CharArrayWriter hhv.
+  lÃ¦ser og skriver fra et array af tegn, mens
+  ByteArrayInputStream og ByteArrayOutputStream lÃ¦ser og
+  skriver binÃ¦rt fra et array af byte.
 </para>
 </sect2>   
 
 <sect2 id="java-io-txt-analyse-read-write-objects">
-<title>Læse/skrive objekter (Object- )</title>
+<title>LÃ¦se/skrive objekter (Object- )</title>
 
 <para>
-  Det er muligt at skrive hele objekter ned i en datastrøm.
+  Det er muligt at skrive hele objekter ned i en datastrÃ¸m.
   Objektet bliver da &quot;serialiseret&quot;, dvs. dets data gemmes i
-  datastrømmen. Refererer objektet til andre objekter, bliver
-  disse også serialiseret og så fremdeles. Dette er nyttigt
-  til at gemme en hel graf af objekter på disken for senere at
+  datastrÃ¸mmen. Refererer objektet til andre objekter, bliver
+  disse ogsÃ¥ serialiseret og sÃ¥ fremdeles. Dette er nyttigt
+  til at gemme en hel graf af objekter pÃ¥ disken for senere at
   hente den frem igen. Emnet vil blive behandlet mere i <xref linkend="java-serialisering" />Serialisering.
 </para>
 </sect2>   
@@ -669,30 +669,30 @@ java.util.NoSuchElementException
 
 <para>
   Klasserne BufferedInputStream, BufferedReader,
-  BufferedOutputStream og BufferedWriter sørger for en
-  buffer (et opsamlingsområde) til datastrømmen. Det
-  sikrer mere effektiv indlæsning, fordi der bliver læst/skrevet
-  større blokke data ad gangen.
+  BufferedOutputStream og BufferedWriter sÃ¸rger for en
+  buffer (et opsamlingsomrÃ¥de) til datastrÃ¸mmen. Det
+  sikrer mere effektiv indlÃ¦sning, fordi der bliver lÃ¦st/skrevet
+  stÃ¸rre blokke data ad gangen.
 </para>
 
 <para>
-  BufferedReader sørger også for, at man kan læse
-  en hel linje af datastrømmen ad gangen.
+  BufferedReader sÃ¸rger ogsÃ¥ for, at man kan lÃ¦se
+  en hel linje af datastrÃ¸mmen ad gangen.
 </para>
 </sect2>   
 
 <sect2 id="java-io-txt-analyse-binaer-til-tegn">
-<title>Gå fra binære til tegnbaserede datastrømme</title>
+<title>GÃ¥ fra binÃ¦re til tegnbaserede datastrÃ¸mme</title>
 
 <para>
-  Nogen gange står man med en binær datastrøm og
-  ønsker at arbejde med den, som om den var tekstbaseret. Der er
-  to klasser, der konverterer til tegnbaseret indlæsning og
-  -udlæsning:
+  Nogen gange stÃ¥r man med en binÃ¦r datastrÃ¸m og
+  Ã¸nsker at arbejde med den, som om den var tekstbaseret. Der er
+  to klasser, der konverterer til tegnbaseret indlÃ¦sning og
+  -udlÃ¦sning:
 </para>
 
 <para>
-  <emphasis>InputStreamReader</emphasis> er et Reader-objekt, der læser fra
+  <emphasis>InputStreamReader</emphasis> er et Reader-objekt, der lÃ¦ser fra
   en InputStream (byte til tegn).
 </para>
 
@@ -707,58 +707,58 @@ java.util.NoSuchElementException
 
 <para>
   Klasserne, der arver fra FilterOutputStream og FilterInputStream,
-  sørger alle for en eller anden form for behandling og
-  præsentation, der letter programmørens arbejde:
+  sÃ¸rger alle for en eller anden form for behandling og
+  prÃ¦sentation, der letter programmÃ¸rens arbejde:
 </para>
 
 <para>
-  <emphasis>LineNumber</emphasis>-klasser tæller antallet af linjeskift i
-  datastrømmen, men lader den ellers være uændret.
+  <emphasis>LineNumber</emphasis>-klasser tÃ¦ller antallet af linjeskift i
+  datastrÃ¸mmen, men lader den ellers vÃ¦re uÃ¦ndret.
 </para>
 
 <para>
   <emphasis>Pushback</emphasis>-klasser giver mulighed for at skubbe data tilbage
-  i datastrømmen (nyttigt hvis man af en eller anden grund kan
-  &quot;komme til&quot; at læse for langt).
+  i datastrÃ¸mmen (nyttigt hvis man af en eller anden grund kan
+  &quot;komme til&quot; at lÃ¦se for langt).
 </para>
 
 <para>
   <emphasis>SequenceInputStream</emphasis> tager to eller flere datakilder og
-  læser dem i forlængelse af hinanden.
+  lÃ¦ser dem i forlÃ¦ngelse af hinanden.
 </para>
 
 <para>
-  <emphasis>Piped</emphasis>-klasserne letter datakommunikationen mellem to tråde
-  (samtidige programudførelsespunkter i et program) ved at
-  sætte data &quot;i kø&quot; sådan, at en tråd
-  kan læse fra datastrømmen og en anden skrive.
+  <emphasis>Piped</emphasis>-klasserne letter datakommunikationen mellem to trÃ¥de
+  (samtidige programudfÃ¸relsespunkter i et program) ved at
+  sÃ¦tte data &quot;i kÃ¸&quot; sÃ¥dan, at en trÃ¥d
+  kan lÃ¦se fra datastrÃ¸mmen og en anden skrive.
 </para>
 
 <para>
   <emphasis>Checked</emphasis>-klasserne (i pakken java.util.zip) udregner en
-  tjeksum på data. Det kan være nyttigt til at undersøge,
-  om nogen eller noget har ændret data (f.eks. en cracker eller
-  en dårlig diskette). Man skal angive et tjeksum-objekt, f.eks.
+  tjeksum pÃ¥ data. Det kan vÃ¦re nyttigt til at undersÃ¸ge,
+  om nogen eller noget har Ã¦ndret data (f.eks. en cracker eller
+  en dÃ¥rlig diskette). Man skal angive et tjeksum-objekt, f.eks.
   Adler32 eller CRC32.
 </para>
 
 <para>
-  <emphasis>Zip</emphasis>-klasserne (i java.util.zip) læser og skriver
+  <emphasis>Zip</emphasis>-klasserne (i java.util.zip) lÃ¦ser og skriver
   ZIP-filer (lavet af f.eks. WinZip). De er lidt indviklede at bruge,
-  da de er indrettet til at håndtere pakning af flere filer.
+  da de er indrettet til at hÃ¥ndtere pakning af flere filer.
 </para>
 
 <para>
   <emphasis>GZIP</emphasis>-klasserne (i java.util.zip) komprimerer og
   dekomprimerer data med Lempel-Ziv-kompression, kendt fra filer, der
-  ender på .gz på UNIX-systemer (især Linux). Er
-  nemmere at bruge end Zip-klasserne, hvis man kun ønsker
+  ender pÃ¥ .gz pÃ¥ UNIX-systemer (isÃ¦r Linux). Er
+  nemmere at bruge end Zip-klasserne, hvis man kun Ã¸nsker
   at pakke &eacute;n fil.
 </para>
 
 <para>
   Filtreringsklasser skydes ind som ekstra &quot;indpakning&quot;
-  mellem de andre datastrømme. F.eks. kan
+  mellem de andre datastrÃ¸mme. F.eks. kan
 </para>
 
 <screen>
@@ -766,7 +766,7 @@ PrintWriter ud= new PrintWriter(new FileOutputStream(&quot;fil&quot;));
 </screen>
 
 <para>
-  ændres til også at komprimere uddata, simpelthen ved
+  Ã¦ndres til ogsÃ¥ at komprimere uddata, simpelthen ved
   at skyde et GZIPOutputStream-objekt ind:
 </para>
 
@@ -780,7 +780,7 @@ PrintWriter ud=new PrintWriter(GZIPOutputStream(new(FileOutputStream(&quot;fil.g
 <title>Ekstra eksempler</title>
 
 <para>
-  Herunder læser vi en fil og udregner filens tjeksum og
+  Herunder lÃ¦ser vi en fil og udregner filens tjeksum og
   antallet af linjer i filen.
 </para>
 
@@ -793,14 +793,14 @@ public class UndersoegFil
   public static void main(String[] args) throws IOException
   {
     FileInputStream <emphasis>fil = new FileInputStream(&quot;skrevet fil.txt&quot;)</emphasis>;
-    BufferedInputStream <emphasis>bstrøm = new BufferedInputStream(fil)</emphasis>;
+    BufferedInputStream <emphasis>bstrÃ¸m = new BufferedInputStream(fil)</emphasis>;
     CRC32 tjeksum = new CRC32();
-    CheckedInputStream <emphasis>chkstrøm = new CheckedInputStream(bstrøm,tjeksum)</emphasis>;
-    InputStreamReader <emphasis>txtstrøm  = new InputStreamReader(chkstrøm)</emphasis>;
-    LineNumberReader <emphasis>ind        = new LineNumberReader(txtstrøm)</emphasis>;
+    CheckedInputStream <emphasis>chkstrÃ¸m = new CheckedInputStream(bstrÃ¸m,tjeksum)</emphasis>;
+    InputStreamReader <emphasis>txtstrÃ¸m  = new InputStreamReader(chkstrÃ¸m)</emphasis>;
+    LineNumberReader <emphasis>ind        = new LineNumberReader(txtstrÃ¸m)</emphasis>;
 
     String linje;
-    while ((linje=<emphasis>ind.readLine()</emphasis>)!= null) System.out.println(&quot;Læst: &quot;+linje);
+    while ((linje=<emphasis>ind.readLine()</emphasis>)!= null) System.out.println(&quot;LÃ¦st: &quot;+linje);
 
     System.out.println(&quot;Antal linjer: &quot;  +<emphasis>ind.getLineNumber()</emphasis>);
     System.out.println(&quot;Checksum (CRC):&quot; +<emphasis>tjeksum.getValue()</emphasis>);
@@ -811,27 +811,27 @@ public class UndersoegFil
 <para>Resultatet bliver</para>
 
 <screen>
-Læst: person0 k 43
-Læst: person1 k 10
-Læst: person2 k 16
-Læst: person3 k 11
-Læst: person4 k 21
+LÃ¦st: person0 k 43
+LÃ¦st: person1 k 10
+LÃ¦st: person2 k 16
+LÃ¦st: person3 k 11
+LÃ¦st: person4 k 21
 Antal linjer: 5
 Checksum (CRC):3543848051
 </screen>
 
 <para>
-  Læg mærke til, hvordan vi hægter
-  datastrøm-objekterne sammen i en kæde ved hele tiden
-  at bruge det forrige objekt i som parameter til konstruktørerne:
-  Filindlæsning, buffering, tjeksum, gå fra binær
-  til tekstbaseret indlæsning (InputStreamReader) og
-  linjetælling.
+  LÃ¦g mÃ¦rke til, hvordan vi hÃ¦gter
+  datastrÃ¸m-objekterne sammen i en kÃ¦de ved hele tiden
+  at bruge det forrige objekt i som parameter til konstruktÃ¸rerne:
+  FilindlÃ¦sning, buffering, tjeksum, gÃ¥ fra binÃ¦r
+  til tekstbaseret indlÃ¦sning (InputStreamReader) og
+  linjetÃ¦lling.
 </para>
 
 <para>
-  While-løkken er skrevet meget kompakt med en tildeling
-  (linje=ind.readLine()) og derefter en sammenligning, om værdien
+  While-lÃ¸kken er skrevet meget kompakt med en tildeling
+  (linje=ind.readLine()) og derefter en sammenligning, om vÃ¦rdien
   af tildelingen var null ( (..) != null).
 </para>
 </sect1>   
@@ -840,18 +840,18 @@ Checksum (CRC):3543848051
 <title>Opgaver</title>
 
 <para>
-  Prøv eksemplerne fra kapitlet og:
+  PrÃ¸v eksemplerne fra kapitlet og:
 </para>
 
 <orderedlist>
-  <listitem><para>Udvid LaesTekstfilOgLavStatistik.java sådan, at linjer, der starter med &quot;#&quot; er kommentarer, som ignoreres, og afprøv om programmet virker.</para></listitem>
-  <listitem><para>Skriv et program, Grep.java, der læser en fil og udskriver alle linjer, der indeholder en bestemt delstreng (vink: Ret LaesTekstfil.java - en linje undersøges for en delstreng med substring(...))</para></listitem>
+  <listitem><para>Udvid LaesTekstfilOgLavStatistik.java sÃ¥dan, at linjer, der starter med &quot;#&quot; er kommentarer, som ignoreres, og afprÃ¸v om programmet virker.</para></listitem>
+  <listitem><para>Skriv et program, Grep.java, der lÃ¦ser en fil og udskriver alle linjer, der indeholder en bestemt delstreng (vink: Ret LaesTekstfil.java - en linje undersÃ¸ges for en delstreng med substring(...))</para></listitem>
   <listitem><para>Skriv et program, Diff.java, der sammenligner to tekstfiler linje for linje og udskriver de linjer, der er forskellige.</para></listitem>
   <listitem><para>Ret SkrivTekstfil.java til SkrivKomprimeretTekstfil.java, der gemmer data komprimeret.</para></listitem>
   <listitem><para>Lav den tilsvarende LaesKomprimeretTekstfilOgLavStatistik.java.</para></listitem>
   <listitem>
     <para>
-      Lav et program, der læser fra en tekstfil, skyld.txt, og udskriver summen af tallene i hver linje med navnet foranstillet (f.eks. Anne:  450). Filen kunne f.eks. indeholde</para>
+      Lav et program, der lÃ¦ser fra en tekstfil, skyld.txt, og udskriver summen af tallene i hver linje med navnet foranstillet (f.eks. Anne:  450). Filen kunne f.eks. indeholde</para>
       <screen>Anne 300 150Peter 18 300 900 -950Lis 1000 13.5</screen>
   </listitem>
 </orderedlist>

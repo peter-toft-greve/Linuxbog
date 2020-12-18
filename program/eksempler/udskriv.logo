@@ -33,6 +33,6 @@ ifelse not file? thing "fil [
   ]
   close thing "fil
 ] [
-  print sentence thing "fil [kan ikke åbnes!] 
+  print sentence thing "fil [kan ikke Ã¥bnes!] 
 ]
 bye

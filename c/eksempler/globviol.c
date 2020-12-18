@@ -2,22 +2,22 @@
 /* fil 1. Demonstration af uheldig praksis. */
 
 /* programmet kompilerer uden warnings - ikke engang option
- * -Wall, som ellers betyder "giv mig alle warnings", får gcc til
- * at reagere på denne konstruktion! Men benyttes g++  får man
- * heldigvis en fejl på denne uheldige fremgangsmåde.
+ * -Wall, som ellers betyder "giv mig alle warnings", fÃ¥r gcc til
+ * at reagere pÃ¥ denne konstruktion! Men benyttes g++  fÃ¥r man
+ * heldigvis en fejl pÃ¥ denne uheldige fremgangsmÃ¥de.
  */
 
 #include <stdio.h>
 
-int min_globale_variabel; /* ok, det bør enhver compiler acceptere. */
+int min_globale_variabel; /* ok, det bÃ¸r enhver compiler acceptere. */
 
-int min_globale_variabel; /* uha - burde udløse en warning! */
-int min_globale_variabel; /* uha - burde udløse en warning! */
-int min_globale_variabel; /* uha - burde udløse en warning! */
+int min_globale_variabel; /* uha - burde udlÃ¸se en warning! */
+int min_globale_variabel; /* uha - burde udlÃ¸se en warning! */
+int min_globale_variabel; /* uha - burde udlÃ¸se en warning! */
 
 int main()
 {
-     printf("Værdien af min_globale_variabel er %d\n", min_globale_variabel);
+     printf("VÃ¦rdien af min_globale_variabel er %d\n", min_globale_variabel);
      return 0;
 }
 

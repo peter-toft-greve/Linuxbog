@@ -6,64 +6,64 @@
 </para>
 
 <itemizedlist mark="bullet">
-  <listitem><para>Analyse: Finde vigtige ord, brugsmønstre, aktivitetsdiagrammer ogskærmbilleder</para></listitem>
+  <listitem><para>Analyse: Finde vigtige ord, brugsmÃ¸nstre, aktivitetsdiagrammer ogskÃ¦rmbilleder</para></listitem>
   <listitem><para>Design: Kollaborationsdiagrammer og klassediagrammer</para></listitem>
   <listitem><para>Eksempel: Skitse til et yatzy-spil</para></listitem>
 </itemizedlist>
 
 <para>
   Kapitlet giver id&eacute;er til, hvordan en problemstilling kan
-  analyseres, før man går i gang med at programmere.
+  analyseres, fÃ¸r man gÃ¥r i gang med at programmere.
 </para>
 
 <para>
-  Forudsætter <xref linkend="java-arv" />, Nedarvning.
+  ForudsÃ¦tter <xref linkend="java-arv" />, Nedarvning.
 </para>
 
 <para>
-  Når et program udvikles sker det normalt i fem faser:
+  NÃ¥r et program udvikles sker det normalt i fem faser:
 </para>
 
 <orderedlist>
-  <listitem><para>Kravene til programmet bliver afdækket.</para></listitem>
+  <listitem><para>Kravene til programmet bliver afdÃ¦kket.</para></listitem>
   <listitem><para>Analyse - hvad det er for ting og begreber programmet handler om.</para></listitem>
   <listitem><para>Design - hvordan programmet skal laves.</para></listitem>
   <listitem><para>Programmering.</para></listitem>
-  <listitem><para>Afprøvning.</para></listitem>
+  <listitem><para>AfprÃ¸vning.</para></listitem>
 </orderedlist>
 
 <para>
-  I traditionel systemudvikling udføres de fem faser efter hinanden, og
-  en ny fase påbegyndes først når den forrige er afsluttet. Hver fase
-  udmøntes i et dokument som senere kan bruges dokumentation af
+  I traditionel systemudvikling udfÃ¸res de fem faser efter hinanden, og
+  en ny fase pÃ¥begyndes fÃ¸rst nÃ¥r den forrige er afsluttet. Hver fase
+  udmÃ¸ntes i et dokument som senere kan bruges dokumentation af
   systemet.
 </para>
 
 <para>
-  Dette er i skarp modsætning til den måde som en selvlært umiddelbart
-  ville programmere. Her blandes faserne sammen i hovedet på
-  programmøren, som skifter mellem dem mens han programmerer. Resultatet
-  er ofte et program, der bærer præg af ad-hoc-udbygninger og som er
-  svært at overskue og vedligeholde - selv for programmøren selv.
+  Dette er i skarp modsÃ¦tning til den mÃ¥de som en selvlÃ¦rt umiddelbart
+  ville programmere. Her blandes faserne sammen i hovedet pÃ¥
+  programmÃ¸ren, som skifter mellem dem mens han programmerer. Resultatet
+  er ofte et program, der bÃ¦rer prÃ¦g af ad-hoc-udbygninger og som er
+  svÃ¦rt at overskue og vedligeholde - selv for programmÃ¸ren selv.
 </para>
 
 <para>
   Den bedste udviklingsmetode findes nok et sted mellem de to
   ekstremer. Der dukker f.eks. altid nye ting op under programmeringen
-  som gør, at man må ændre sit design. Omvendt er det svært at
-  programmere uden et gennemtænkt design.
+  som gÃ¸r, at man mÃ¥ Ã¦ndre sit design. Omvendt er det svÃ¦rt at
+  programmere uden et gennemtÃ¦nkt design.
 </para>
 
 <para>
-  Derfor er det ikke en god idé at bruge alt for lang tid på at lave
-  fine tegninger og diagrammer - en blyantskitse er lige så god. Det er
-  indholdet, der tæller, og ofte laver man om i sit design flere gange,
-  inden programmet er færdigt.
+  Derfor er det ikke en god idÃ© at bruge alt for lang tid pÃ¥ at lave
+  fine tegninger og diagrammer - en blyantskitse er lige sÃ¥ god. Det er
+  indholdet, der tÃ¦ller, og ofte laver man om i sit design flere gange,
+  inden programmet er fÃ¦rdigt.
 </para>
 
 <para>
   Dette kapitel viser gennem et eksempel (et Yatzy-spil) en grov skitse
-  til analyse og design af et program. Det er tænkt som inspiration til,
+  til analyse og design af et program. Det er tÃ¦nkt som inspiration til,
   hvordan man kunne gribe sit eget projekt an.
 </para>
 
@@ -71,10 +71,10 @@
 <title>Krav til programmet</title>
 
 <para>
-  Vi skal lave et Yatzy-spil for flere spillere. Der kan være et
-  variabelt antal spillere, hvoraf nogle kan være styret af
+  Vi skal lave et Yatzy-spil for flere spillere. Der kan vÃ¦re et
+  variabelt antal spillere, hvoraf nogle kan vÃ¦re styret af
   computeren. Computerspillerne skal have forskellige strategier
-  (dum/tilfældig, grådig, strategisk), der vælges tilfældigt.
+  (dum/tilfÃ¦ldig, grÃ¥dig, strategisk), der vÃ¦lges tilfÃ¦ldigt.
 </para>
 
 <para>
@@ -88,16 +88,16 @@
 
 <para>
   Analysen skal beskrive hvad det er for ting og begreber programmet
-  handler om. Analysens formål er at afspejle virkeligheden mest muligt.
+  handler om. Analysens formÃ¥l er at afspejle virkeligheden mest muligt.
 </para>
 
 <sect2 id="java-analyse-design-obj-analyse-ord">
 <title>Skrive vigtige ord op</title>
 
 <para>
-  Det kan være en hjælp først at skrive alle de navneord (i ental) eller
+  Det kan vÃ¦re en hjÃ¦lp fÃ¸rst at skrive alle de navneord (i ental) eller
   ting op, man kan komme i tanke om ved problemet. Ud for hver ting kan
-  man notere eventuelle egenskaber (ofte tillægsord) og handlinger (ofte
+  man notere eventuelle egenskaber (ofte tillÃ¦gsord) og handlinger (ofte
   udsagnsord) der knytter sig til tingen.
 </para>
 
@@ -106,15 +106,15 @@
 </para>
 
 <para>
-  Terning - værdi, kaste, holde
+  Terning - vÃ¦rdi, kaste, holde
 </para>
 
 <para>
-  Raflebæger - kombination, ryste, holde
+  RaflebÃ¦ger - kombination, ryste, holde
 </para>
 
 <para>
-  Blok - skrive spillernavn på, skrive point på
+  Blok - skrive spillernavn pÃ¥, skrive point pÃ¥
 </para>
 
 <para>
@@ -134,7 +134,7 @@
 </para>
 
 <para>
-  Regel (kunne også kaldes en mulighed eller et kriterium) -
+  Regel (kunne ogsÃ¥ kaldes en mulighed eller et kriterium) -
   opfyldt, pointgivning
 </para>
 
@@ -144,19 +144,19 @@
 </sect2>    <!--   Skrive vigtige ord op -->
 
 <sect2 id="java-analyse-design-obj-brugsmoenstre">
-<title>Brugsmønstre</title>
+<title>BrugsmÃ¸nstre</title>
 
 <para>
-  Brugsmønstre (eng.: Use Case) beskriver en samling af aktører og
-  hvilke brugsmønstre, de deltager i. Man starter helt overordnet og går
-  mere og mere i detaljer omkring hvert brugsmønster.
+  BrugsmÃ¸nstre (eng.: Use Case) beskriver en samling af aktÃ¸rer og
+  hvilke brugsmÃ¸nstre, de deltager i. Man starter helt overordnet og gÃ¥r
+  mere og mere i detaljer omkring hvert brugsmÃ¸nster.
 </para>
 
 <para>
-  Man kan hævde, at Yatzy-spillet er på grænsen til at være for simpelt
-  til at lave brugsmønstre.  Herunder to brugsmønstre. Til venstre et
-  meget overordnet der beskriver to spillere og lageret som aktører. Til
-  højre brugsmønstret omkring en tur.
+  Man kan hÃ¦vde, at Yatzy-spillet er pÃ¥ grÃ¦nsen til at vÃ¦re for simpelt
+  til at lave brugsmÃ¸nstre.  Herunder to brugsmÃ¸nstre. Til venstre et
+  meget overordnet der beskriver to spillere og lageret som aktÃ¸rer. Til
+  hÃ¸jre brugsmÃ¸nstret omkring en tur.
 </para>
 
 <figure id="java-analyse-design-obj-brugsmoenstre-fig1">
@@ -168,14 +168,14 @@
   <title>Tur</title>
   <graphic fileref="Nordfalk2415476.&magic;" scale="60"></graphic>
 </figure>
-</sect2>    <!--   Brugsmønstre -->
+</sect2>    <!--   BrugsmÃ¸nstre -->
 
 <sect2 id="java-analyse-design-obj-aktivitetsdiag">
 <title>Aktivitetsdiagrammer</title>
 
 <para>
-  Aktivitetsdiagrammer beskriver den rækkefølge, som adfærdsmønstre og
-  aktiviteter foregår i.
+  Aktivitetsdiagrammer beskriver den rÃ¦kkefÃ¸lge, som adfÃ¦rdsmÃ¸nstre og
+  aktiviteter foregÃ¥r i.
 </para>
 
 <para>
@@ -198,29 +198,29 @@
 </sect2>    <!--   Aktivitetsdiagrammer -->
 
 <sect2 id="java-analyse-design-obj-skaermbilleder">
-<title>Skærmbilleder</title>
+<title>SkÃ¦rmbilleder</title>
 
 <para>
-  Hvis skærmbilleder er en væsentlig del af ens program,
-  er det en god hjælp at tegne de væsentligste for at gøre
+  Hvis skÃ¦rmbilleder er en vÃ¦sentlig del af ens program,
+  er det en god hjÃ¦lp at tegne de vÃ¦sentligste for at gÃ¸re
   sig klart, hvilke elementer programmet skal indeholde.
 </para>
 
 <para>
   Disse kan med fordel designes direkte med et
-  Java-udviklingsværktøj. Herved opnår man en ide
+  Java-udviklingsvÃ¦rktÃ¸j. Herved opnÃ¥r man en ide
   om, hvad der er muligt, samtidig med at den genererede kode ofte (men
   ikke altid!) kan genbruges i programmeringsfasen.
 </para>
 
 <para>
-  Normalt kommer der en klasse for hvert skærmbillede, så
-  man kan også med det samme give dem sigende navne.
+  Normalt kommer der en klasse for hvert skÃ¦rmbillede, sÃ¥
+  man kan ogsÃ¥ med det samme give dem sigende navne.
 </para>
 
 <para>
-  Når programmet startes skal vælges 2-6 spillere,
-  hvoraf nogle kan være computerspillere:
+  NÃ¥r programmet startes skal vÃ¦lges 2-6 spillere,
+  hvoraf nogle kan vÃ¦re computerspillere:
 </para>
 
 <figure id="java-analyse-design-obj-skaermbilleder-fig1">
@@ -233,7 +233,7 @@
 </para>
 
 <para>
-  Under selve spillet skiftes spillerne til at få tur.
+  Under selve spillet skiftes spillerne til at fÃ¥ tur.
 </para>
 
 <para>
@@ -250,14 +250,14 @@
 </para>
 
 <para>
-  Man kan holde på terningerne ved at klikke på
+  Man kan holde pÃ¥ terningerne ved at klikke pÃ¥
   afkrydsningsfelterne.
 </para>
 
 <para>
-  Når spilleren er færdig (efter max 3 kast), skal
-  han/hun vælge, hvilken regel der skal bruges, ved at
-  klikke på den i blok-vinduet:
+  NÃ¥r spilleren er fÃ¦rdig (efter max 3 kast), skal
+  han/hun vÃ¦lge, hvilken regel der skal bruges, ved at
+  klikke pÃ¥ den i blok-vinduet:
 </para>
 
 <figure id="java-analyse-design-obj-skaermbilleder-fig3">
@@ -269,20 +269,20 @@
   Blokvindue
 </para>
 
-</sect2>    <!--   Skærmbilleder -->
+</sect2>    <!--   SkÃ¦rmbilleder -->
 </sect1>    <!--   Objektorienteret analyse -->
 
 <sect1 id="java-analyse-design-obj-design">
 <title>Objektorienteret design</title>
 
 <para>
-  Designets formål er at beskrive, hvordan programmet skal
+  Designets formÃ¥l er at beskrive, hvordan programmet skal
   implementeres.
 </para>
 
 <para>
   Her skal man bl.a. identificere de vigtigste klasser i systemet og
-  lede efter ligheder mellem dem med henblik på nedarvning og
+  lede efter ligheder mellem dem med henblik pÃ¥ nedarvning og
   genbrug.
 </para>
 
@@ -292,7 +292,7 @@
 <para>
   Nyttige diagramformer under design er kollaborationsdiagrammer
   (samarbejdsdiagrammer), hvor man beskriver relationerne mellem
-  klasserne eller objekterne på et overordnet plan.
+  klasserne eller objekterne pÃ¥ et overordnet plan.
 </para>
 
 <para>
@@ -312,47 +312,47 @@
 <itemizedlist mark="bullet">
   <listitem>
     <para>
-      Raflebægeret har en reference til terningerne, ellers
+      RaflebÃ¦geret har en reference til terningerne, ellers
       kan det ikke kaste dem. Terningerne kender ikke til
-      raflebægerets eksistens.
+      raflebÃ¦gerets eksistens.
     </para>
   </listitem>
   <listitem>
     <para>
-      Blokken har nogle regler (en for hver række). Reglerne
+      Blokken har nogle regler (en for hver rÃ¦kke). Reglerne
       kender ikke til blokkens eller spillerens eksistens.
     </para>
   </listitem>
   <listitem>
     <para>
-      Blokken har nogle spillere (en for hver søjle), og
-      spillerne ved de hører til en blok hvor deres resultater skal
-      skrives ind på.
+      Blokken har nogle spillere (en for hver sÃ¸jle), og
+      spillerne ved de hÃ¸rer til en blok hvor deres resultater skal
+      skrives ind pÃ¥.
     </para>
   </listitem>
   <listitem>
     <para>
       lokkens data skal vises i et vindue. Der er brug for, at
-      blokken kender til Blokvindue, vinduet, der viser blokken på
-      skærmen, så det kan gentegnes, når blokken ændrer
-      sig. Men vinduet har også brug for at kende til blokken, som
+      blokken kender til Blokvindue, vinduet, der viser blokken pÃ¥
+      skÃ¦rmen, sÃ¥ det kan gentegnes, nÃ¥r blokken Ã¦ndrer
+      sig. Men vinduet har ogsÃ¥ brug for at kende til blokken, som
       indeholder de data, det skal vise.
     </para>
   </listitem>
 </itemizedlist>
 
 <para>
-  Når spilleren tjekker regler, sker det gennem blok-objektet.
-   Man kan forestille sig, at spilleren løber gennem alle
+  NÃ¥r spilleren tjekker regler, sker det gennem blok-objektet.
+   Man kan forestille sig, at spilleren lÃ¸ber gennem alle
   blokkens regler og ser, om der er nogle, der passer, og han ikke har
-  brugt endnu. Tjek af regler er altså ikke en har-relation, for
+  brugt endnu. Tjek af regler er altsÃ¥ ikke en har-relation, for
   spilleren har ikke en variabel, der refererer til reglerne.
 </para>
 
 <para>
-  Visse steder er der mange slags objekter, der kan indgå i
-  samme rolle. Det gælder for eksempel Spillere i diagrammet
-  ovenfor. Så kan man tegne et separat diagram, der viser
+  Visse steder er der mange slags objekter, der kan indgÃ¥ i
+  samme rolle. Det gÃ¦lder for eksempel Spillere i diagrammet
+  ovenfor. SÃ¥ kan man tegne et separat diagram, der viser
   rollerne.
 </para>
 
@@ -363,7 +363,7 @@
 
 <para>
   Er-en-relationer angiver generalisering eller specialisering (hvor
-  nedarvning kan være en fordel). Det tegnes oftest med en hul
+  nedarvning kan vÃ¦re en fordel). Det tegnes oftest med en hul
   pil.
 </para>
 
@@ -371,8 +371,8 @@
   Her er det lidt specielle, at &eacute;n type spiller (nemlig
   Menneske) har et vindue tilknyttet. Dette vindue skal jo have
   adgang
-  til at vise terningerne, så man skal huske at sørge for,
-  at spillere har en reference til raflebægeret.
+  til at vise terningerne, sÃ¥ man skal huske at sÃ¸rge for,
+  at spillere har en reference til raflebÃ¦geret.
 </para>
 </sect2>    <!--   Kollaborationsdiagrammer -->
 
@@ -380,15 +380,15 @@
 <title>Klassediagrammer</title>
 
 <para>
-  Herefter kan skitseres klassediagrammer, hvor man fastlægger
+  Herefter kan skitseres klassediagrammer, hvor man fastlÃ¦gger
   nedarvning (er-en-relationerne), de vigtigste variabler og
   referencerne mellem objekterne (har-relationer) og de vigtigste
   metoder.
 </para>
 
 <para>
-  Dette kan eventuelt tegnes med et UML-udviklingsværktøj
-  (f.eks. TogetherJ der kan hentes på
+  Dette kan eventuelt tegnes med et UML-udviklingsvÃ¦rktÃ¸j
+  (f.eks. TogetherJ der kan hentes pÃ¥
   <ulink url="http://www.togethersoft.com/">http://www.togethersoft.com</ulink>),
   der samtidig kan generere kode til programmeringsfasen.
 </para>

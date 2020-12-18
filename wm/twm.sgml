@@ -17,10 +17,10 @@
  <para>
   Twm er en meget gammel og klassisk windowmanager, der stadig lever
   hist og her som et "alternativ der altid virker", og det kan derfor
-  være godt at have et vist kendskab til den.
+  vÃ¦re godt at have et vist kendskab til den.
  </para>
 
-<!--  Nedenstående er mig bekendt noget vrøvl.  Den er i det mindste
+<!--  NedenstÃ¥ende er mig bekendt noget vrÃ¸vl.  Den er i det mindste
       med i Red Hat 9.
  <para>
   Den mangler mange features i forhold til nyere alternativer og er
@@ -29,8 +29,8 @@
 -->
 
  <para>
-  I nogle distributioner kan man være nødt til selv at oversætte den,
-  hvis man vil prøve den.  Det nærmeste man kommer på en hjemmeside
+  I nogle distributioner kan man vÃ¦re nÃ¸dt til selv at oversÃ¦tte den,
+  hvis man vil prÃ¸ve den.  Det nÃ¦rmeste man kommer pÃ¥ en hjemmeside
   med screenshots er <ulink
   url="http://www.plig.org/xwinman/vtwm.html">http://www.plig.org/xwinman/vtwm.html</ulink>.
  </para>
@@ -38,9 +38,9 @@
  <para>
   TWM er en del af X11 projektet og vedligeholdes derfor.
   I XFree86 distributionen kan man endvidere finde
-  nogle forslag til TWM-opsætning af Keith Packard, som er en af de
-  mest kompetente X11 programmører. Sammen med de klassiske X11
-  programmer viser TWM hvordan et ægte modulært grafisk interface kan
+  nogle forslag til TWM-opsÃ¦tning af Keith Packard, som er en af de
+  mest kompetente X11 programmÃ¸rer. Sammen med de klassiske X11
+  programmer viser TWM hvordan et Ã¦gte modulÃ¦rt grafisk interface kan
   opbygges. Den kan samarbejde med xdm(1) og xsm(1) og dermed udbygges
   til et komplet system. Det er forfriskende at se et design, der i
   den grad overlader farver og skriftsnit til brugeren, som kan bruge
@@ -55,26 +55,26 @@
 
  <para>
   Den anvendes endvidere som reserve GUI for fail-safe operation i
-  mange Linux/BDS distributioner, og også i kommercielle produkter
+  mange Linux/BDS distributioner, og ogsÃ¥ i kommercielle produkter
   (SUN fx.)
  </para>
 
  <para>
-  For dem, som er hooked på TWM er der varianter med virtuelle
+  For dem, som er hooked pÃ¥ TWM er der varianter med virtuelle
   skriveborde og 3D-dekorationer.  En kendt anke ved TWM er at den
   bruger Athena widgets, et 2D-widget-set, der oprindeligt blot var
-  ment som en midlertidig hurtig løsning. CTWM og VTWM bruger 3D
+  ment som en midlertidig hurtig lÃ¸sning. CTWM og VTWM bruger 3D
   rammer og ligner derfor mere de andre windows-managere. Man kan
-  finde nogle screenshots på nettet, men få af dem bruger TWM's
-  mulighed for at man kan indsætte sine egne klikbare knapper
-  i vinduesbjælkerne.
+  finde nogle screenshots pÃ¥ nettet, men fÃ¥ af dem bruger TWM's
+  mulighed for at man kan indsÃ¦tte sine egne klikbare knapper
+  i vinduesbjÃ¦lkerne.
  </para>
 
  <sect2 id="wm-twm-opstart">
   <title>Opstart af twm</title>
 
   <para>
-   Følgende <filename>.xsession</filename>-fil vil starte TWM og sørge
+   FÃ¸lgende <filename>.xsession</filename>-fil vil starte TWM og sÃ¸rge
    for at du som minimum har en <command>xterm</command> at arbejde
    i:
 
@@ -85,10 +85,10 @@ twm
   </para>
 
   <sect3 id="wm-twm-opsaetning">
-   <title>Opsætning af TWM</title>
+   <title>OpsÃ¦tning af TWM</title>
 
    <indexterm>
-    <primary>opsætning af</primary>
+    <primary>opsÃ¦tning af</primary>
     <secondary>TWM</secondary>
    </indexterm>
 
@@ -98,25 +98,25 @@ twm
    </indexterm>
 
    <para>
-    TWM's opsætning styres enten af den enkelte bruger i dennes
-    <filename>.twmrc</filename>-fil eller for alle brugere på systemet
+    TWM's opsÃ¦tning styres enten af den enkelte bruger i dennes
+    <filename>.twmrc</filename>-fil eller for alle brugere pÃ¥ systemet
     i <filename>/usr/X11R6/lib/X11/twm/system.twmrc</filename> . Da en
     tom <filename>.twmrc</filename> vil give en TWM uden menuer eller
-    noget som helst (den eneste måde den kan afsluttes på er med
-    <command>kill</command>) må det anbefales at man tager
+    noget som helst (den eneste mÃ¥de den kan afsluttes pÃ¥ er med
+    <command>kill</command>) mÃ¥ det anbefales at man tager
     udgangspunkt i en eksisterende <filename>.twmrc</filename>.
    </para>
 
    <para>
-    Med Red Hat følger der en enkel <filename>system.twmrc</filename>, det
-    er den samme, som følger med kildeteksten til X11 (d.v.s. X11 default
-    opsætningen).
+    Med Red Hat fÃ¸lger der en enkel <filename>system.twmrc</filename>, det
+    er den samme, som fÃ¸lger med kildeteksten til X11 (d.v.s. X11 default
+    opsÃ¦tningen).
     Debian har en kraftigt modificeret meget interessant
-    <filename>system.twmrc</filename>. Man kan læse i twm(1)
+    <filename>system.twmrc</filename>. Man kan lÃ¦se i twm(1)
     (d.v.s. brugsanvisningen til TWM) om hvordan man yderligere kan
-    tilføje funktionalitet til TWM.
+    tilfÃ¸je funktionalitet til TWM.
    </para>
-  </sect3>  <!--  Opsætning af TWM -->
+  </sect3>  <!--  OpsÃ¦tning af TWM -->
 
   <sect3 id="wm-twm-brug-af">
    <title>Brug af TWM</title>
@@ -131,7 +131,7 @@ twm
    </sect4>
 
    <sect4 id="wm-twm-fokus">
-    <title>Fokusopførsel</title>
+    <title>FokusopfÃ¸rsel</title>
 
     <indexterm>
      <primary>vinduesfokus i</primary>
@@ -139,24 +139,24 @@ twm
     </indexterm>
 
     <para>
-     I TWM følger fokus normalt musen, sådan at hvis musen ikke er i et
-     vindue har det vindue ikke fokus. Fokus kan låses fast på et
-     vindue med en funktion i baggrundsmenuen (default X11-opsætning).
+     I TWM fÃ¸lger fokus normalt musen, sÃ¥dan at hvis musen ikke er i et
+     vindue har det vindue ikke fokus. Fokus kan lÃ¥ses fast pÃ¥ et
+     vindue med en funktion i baggrundsmenuen (default X11-opsÃ¦tning).
     </para>
 
     <para>
-     Når man klikker på baggrunden og vælger menupunktet fokus, får
-     man en lille kugle som musemarkør. Den kan man nu flytte hen på
-     det vindue, som skal have fast fokus, klikke - og så er fokus
-     låst her indtil man bruger den samme funktion igen.
+     NÃ¥r man klikker pÃ¥ baggrunden og vÃ¦lger menupunktet fokus, fÃ¥r
+     man en lille kugle som musemarkÃ¸r. Den kan man nu flytte hen pÃ¥
+     det vindue, som skal have fast fokus, klikke - og sÃ¥ er fokus
+     lÃ¥st her indtil man bruger den samme funktion igen.
     </para>
 
     <para>
-     Man kan sætte TWM op, så at den har en museklik-funktion,
-     som hæver et vindue og holder dets fokus, og en anden, som
-     gør det muligt at få et eller andet til at ske, når man
-     klikker på rammen. I .twmrc filen kan for eksempel definere en
-     funktion, focus-raise, som udføres, når man klikker med
+     Man kan sÃ¦tte TWM op, sÃ¥ at den har en museklik-funktion,
+     som hÃ¦ver et vindue og holder dets fokus, og en anden, som
+     gÃ¸r det muligt at fÃ¥ et eller andet til at ske, nÃ¥r man
+     klikker pÃ¥ rammen. I .twmrc filen kan for eksempel definere en
+     funktion, focus-raise, som udfÃ¸res, nÃ¥r man klikker med
      shift-Museknap1:
     </para>
     <programlisting>
@@ -172,33 +172,33 @@ twm
     </para>
 
     <para>
-     Button1 = s betyder: "Når man trykker shift + museknap-1"
+     Button1 = s betyder: "NÃ¥r man trykker shift + museknap-1"
      idet s, c, l, m, og m1, m2 etc. er identifiers for tastaturets modifier
      knapper, shift, control, lock, alternate (eller meta) meta2 etc.
-     Kolon er delimiter, window er det område, som skal dækkes af den
-     pågældende funktionalitet, og sidst på linjen kan der stå en
-     funktion. Hvis man vil have sammensat funktionalitet, må man selv
+     Kolon er delimiter, window er det omrÃ¥de, som skal dÃ¦kkes af den
+     pÃ¥gÃ¦ldende funktionalitet, og sidst pÃ¥ linjen kan der stÃ¥ en
+     funktion. Hvis man vil have sammensat funktionalitet, mÃ¥ man selv
      definere en funktion.
     </para>
 
     <para>
      Man kan nu shift-klikke hvilket som helst sted i vinduet
-     (også titlebar og ramme) og få vinduet op og i fokus. Da
+     (ogsÃ¥ titlebar og ramme) og fÃ¥ vinduet op og i fokus. Da
      funktionen blokerer for andre funktioner, skal man nok ikke
-     bruge museknap1 uden shift! De to sidste linjer sørger for,
-     at hvis man klikker på rammen får vinduet fokus og kommer
+     bruge museknap1 uden shift! De to sidste linjer sÃ¸rger for,
+     at hvis man klikker pÃ¥ rammen fÃ¥r vinduet fokus og kommer
      i forgrunden, og endvidere kan man flytte det.
      <command>f.deltastop</command>
-     svarer til en if-sætning: Hvis man ikke flytter mere end
-     <emphasis>deltastop</emphasis> pixels skal TWM ikke udføre
-     resten at linjen. Man bør i øvrigt definere en lidt bredere
+     svarer til en if-sÃ¦tning: Hvis man ikke flytter mere end
+     <emphasis>deltastop</emphasis> pixels skal TWM ikke udfÃ¸re
+     resten at linjen. Man bÃ¸r i Ã¸vrigt definere en lidt bredere
      ramme, hvis man bruger den funktion.
     </para>
 
     <para>
-     Som standard hæves et vindue ikke (dvs. det bliver bagved andre
-     vinduer) selv om det får fokus. Dette kan ændres for udvalgte
-     vinduer, ved at indsætte følgende linje i sin
+     Som standard hÃ¦ves et vindue ikke (dvs. det bliver bagved andre
+     vinduer) selv om det fÃ¥r fokus. Dette kan Ã¦ndres for udvalgte
+     vinduer, ved at indsÃ¦tte fÃ¸lgende linje i sin
      <filename>.twmrc</filename>:
 
 <programlisting>
@@ -206,12 +206,12 @@ AutoRaise { "XTerm" "emacs" }
 </programlisting>
 
      vil alle vinduer der hedder "XTerm" (eller er af klassen "XTerm"
-     - herunder alle der hedder "xterm") blive hævet når de får fokus.
-     Samme for Emacs. Der er ingen måde at gøre dette til
-     standardopførslen for alle vinduer. Og der er desværre
-     heller ikke nogen måde at forbyde programmerne at forlange
-     et forgrundsvindue, for eksempel OpenOffice.org smækker et vindue op
-     i synet på den arbejdende programmør uden at man kan
+     - herunder alle der hedder "xterm") blive hÃ¦vet nÃ¥r de fÃ¥r fokus.
+     Samme for Emacs. Der er ingen mÃ¥de at gÃ¸re dette til
+     standardopfÃ¸rslen for alle vinduer. Og der er desvÃ¦rre
+     heller ikke nogen mÃ¥de at forbyde programmerne at forlange
+     et forgrundsvindue, for eksempel OpenOffice.org smÃ¦kker et vindue op
+     i synet pÃ¥ den arbejdende programmÃ¸r uden at man kan
      beskytte sig, og derved kan der ryge nogle tasteslag ind
      i et forkert vindue.
     </para>
@@ -219,11 +219,11 @@ AutoRaise { "XTerm" "emacs" }
     <para>
      Man kan interaktivt give denne egenskab til enkelte vinduer med
      funktionen <literal>f.autoraise</literal> der er beskrevet
-     nærmere i brugsanvisningen.  De fleste TWM-brugere opfatter ikke
-     dette som ønskeligt og det er ikke med i Red Hats
-     standardopsætning af TWM.
+     nÃ¦rmere i brugsanvisningen.  De fleste TWM-brugere opfatter ikke
+     dette som Ã¸nskeligt og det er ikke med i Red Hats
+     standardopsÃ¦tning af TWM.
     </para>
-   </sect4>    <!--   Fokusopførsel -->
+   </sect4>    <!--   FokusopfÃ¸rsel -->
 
    <sect4 id="wm-twm-tastatur">
     <title>Tastaturbindinger</title>
@@ -234,18 +234,18 @@ AutoRaise { "XTerm" "emacs" }
     </indexterm>
 
     <para>
-     Som standard er der ingen tastaturbindinger i TWM.  Man kan sætte
+     Som standard er der ingen tastaturbindinger i TWM.  Man kan sÃ¦tte
      TWM til at kunne styres fra tastaturet uden at det hindrer at man
      stadig kan bruge musen.
     </para>
 
     <para>
-     Der er forslag til hvordan man kan gøre det i brugsanvisningen.
+     Der er forslag til hvordan man kan gÃ¸re det i brugsanvisningen.
     </para>
    </sect4>    <!--   Tastaturbindinger -->
 
    <sect4 id="wm-twm-menuer">
-    <title>Menuers opførsel</title>
+    <title>Menuers opfÃ¸rsel</title>
 
     <indexterm>
      <primary>menuer i</primary>
@@ -253,28 +253,28 @@ AutoRaise { "XTerm" "emacs" }
     </indexterm>
 
     <para>
-     Almindeligvis vil man sætte sin TWM op så der kommer en menu frem
-     når man trykker på en museknap ude på baggrunden.  Sådan en menu
-     bliver kun på skærmen så længe man holder den pågældende museknap
-     nede. Det vil sige at man trykker museknappen ned, trækker sig
+     Almindeligvis vil man sÃ¦tte sin TWM op sÃ¥ der kommer en menu frem
+     nÃ¥r man trykker pÃ¥ en museknap ude pÃ¥ baggrunden.  SÃ¥dan en menu
+     bliver kun pÃ¥ skÃ¦rmen sÃ¥ lÃ¦nge man holder den pÃ¥gÃ¦ldende museknap
+     nede. Det vil sige at man trykker museknappen ned, trÃ¦kker sig
      frem til det menupunkt man er interesseret i og slipper
      museknappen der.
     </para>
-   </sect4> <!-- Menuers opførsel -->
+   </sect4> <!-- Menuers opfÃ¸rsel -->
 
    <sect4 id="wm-twm-vinduer">
     <title>Vinduer</title>
 
     <indexterm>
-     <primary>vindueshåndtering i</primary>
+     <primary>vindueshÃ¥ndtering i</primary>
      <secondary>TWM</secondary>
     </indexterm>
 
     <para>
-     Man flytter et vindue ved at trække i titelbjælken (som man
-     kender det fra de fleste andre windowmanagere). Man ændrer
-     størrelsen på et vindue ved at pege med musen på ikonet øverst
-     til højre, trykke venstre museknap ned og trække musen udover den
+     Man flytter et vindue ved at trÃ¦kke i titelbjÃ¦lken (som man
+     kender det fra de fleste andre windowmanagere). Man Ã¦ndrer
+     stÃ¸rrelsen pÃ¥ et vindue ved at pege med musen pÃ¥ ikonet Ã¸verst
+     til hÃ¸jre, trykke venstre museknap ned og trÃ¦kke musen udover den
      (eller de) kanter man vil flytte.
     </para>
    </sect4>  <!--  Vinduer  -->
@@ -284,15 +284,15 @@ AutoRaise { "XTerm" "emacs" }
 
     <para>
      Hvis man ikke giver et <literal>-geometry</literal>-argument til
-     et program der åbner et vindue, vil TWM præsentere dig for en
-     ramme i den størrelse vinduet vil få som du så skal placere. Når
+     et program der Ã¥bner et vindue, vil TWM prÃ¦sentere dig for en
+     ramme i den stÃ¸rrelse vinduet vil fÃ¥ som du sÃ¥ skal placere. NÃ¥r
      du har flyttet rammen det rigtige sted hen, kan man enten placere
-     vinduet der ved at trykke på venstre museknap. Alternativet er at
-     man kan justere dets størrelse ved at trykke midterste museknap
-     nede og trække udover de kanter man gerne vil flytte, når man så
-     slipper museknappen placeres vinduet. Hvis man gerne vil være fri
-     for at skulle placere alle vinduer manuelt, kan man sætte TWM til
-     at placere alle nye vinduer tilfældigt med følgende linje i sin
+     vinduet der ved at trykke pÃ¥ venstre museknap. Alternativet er at
+     man kan justere dets stÃ¸rrelse ved at trykke midterste museknap
+     nede og trÃ¦kke udover de kanter man gerne vil flytte, nÃ¥r man sÃ¥
+     slipper museknappen placeres vinduet. Hvis man gerne vil vÃ¦re fri
+     for at skulle placere alle vinduer manuelt, kan man sÃ¦tte TWM til
+     at placere alle nye vinduer tilfÃ¦ldigt med fÃ¸lgende linje i sin
      <filename>.twmrc</filename>:
 
 <programlisting>
@@ -304,10 +304,10 @@ RandomPlacement
    <title>Hvad er det fede ved TWM?</title>
      
     <para>
-     Twm er gennemført minimalistisk. Den er tænkt til at
+     Twm er gennemfÃ¸rt minimalistisk. Den er tÃ¦nkt til at
      samarbejde med X-session manager, xsm(1), der kan registrere,
-     hvad der er af vinduer, når man logger ud, og med xdm, xsm
-     og TWM kan man såmænd få en udmærket flad klient til X11.
+     hvad der er af vinduer, nÃ¥r man logger ud, og med xdm, xsm
+     og TWM kan man sÃ¥mÃ¦nd fÃ¥ en udmÃ¦rket flad klient til X11.
      Det fedeste ved TWM er, at den ikke belaster grafik/CPU og
      giver god performance med remote X11.
     </para>

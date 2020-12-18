@@ -1,14 +1,14 @@
 <chapter id="signatur-software">
-<title>Krævet software</title>
+<title>KrÃ¦vet software</title>
 <indexterm><primary>openssl</primary></indexterm>
 <indexterm><primary>Secure Socket Layer</primary></indexterm>
 <indexterm><primary>SSL</primary></indexterm>
 
-<para>For at du kan generere en certifikat forespørgsel til KMD-CA,
+<para>For at du kan generere en certifikat forespÃ¸rgsel til KMD-CA,
 skal du have installeret programmet <command>openssl</command>. Langt
 de fleste Linux distributioner installerer dette som standard, idet
 det anvendes af f.eks. mange webbrowsere til at lave "Secure Socket
-Layer" (SSL) enkodning. Du kan teste om du har programmet ved at åbne
+Layer" (SSL) enkodning. Du kan teste om du har programmet ved at Ã¥bne
 en terminal og skrive:</para>
 <screen>
 <prompt>$</prompt> <userinput>which openssl</userinput>
@@ -20,20 +20,20 @@ OpenSSL> <userinput>quit</userinput>
 
 <indexterm><primary>openssl</primary></indexterm>
 
-<para>På mit system er <command>openssl</command> altså installeret
+<para>PÃ¥ mit system er <command>openssl</command> altsÃ¥ installeret
 som <filename>/usr/bin/openssl</filename> og fungerer tilsyneladende
 fint.</para>
 
-<para>I <xref linkend="signatur-request"/> kan du se et eksempel på
-hvordan du manuelt kan genere en certifikatforspørgsel. Det
-er ret indviklet, og i stedet vil jeg anbefale dig at kigge på
+<para>I <xref linkend="signatur-request"/> kan du se et eksempel pÃ¥
+hvordan du manuelt kan genere en certifikatforspÃ¸rgsel. Det
+er ret indviklet, og i stedet vil jeg anbefale dig at kigge pÃ¥
 "sslugsig" i <xref linkend="sslugsig"/>, eller, hvis du er til
-kommandolinjeværktøjer, perl scriptet i <xref
+kommandolinjevÃ¦rktÃ¸jer, perl scriptet i <xref
 linkend="signatur-request-perl"/>, der illustrerer hvordan
 <command>openssl</command> skal anvendes for at lave en certifikat
-forespørgsel der kan anvendes til KMD-CA.</para>
+forespÃ¸rgsel der kan anvendes til KMD-CA.</para>
 
-<para>Når du har fået dit certifikat fra KMD-CA, skal det installeres. Se
+<para>NÃ¥r du har fÃ¥et dit certifikat fra KMD-CA, skal det installeres. Se
 <xref linkend="signatur-installation"/></para>
 
 </chapter>

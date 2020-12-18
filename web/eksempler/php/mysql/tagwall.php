@@ -39,27 +39,27 @@
 	# ----------------------------------------------------
 
 	# Inkluderer filen config.php der indeholder databasens navn, brugernavn og 
-	# password til databasen, det gør det meget lettere at rette senere
+	# password til databasen, det gÃ¸r det meget lettere at rette senere
 	include("config.php");
 
-	# Åbner en forbindelse til MySQL serveren
+	# Ã…bner en forbindelse til MySQL serveren
 	# Hvis det mislykkes skrives "Could not connect"
 	$messages_link = mysql_connect(_MYSQL_SERVER_NAME, _MYSQL_USER_NAME, _MYSQL_PASSWORD)
 		 or die ("Could not connect\n");
 
-	# Vælger den rigtige database 
+	# VÃ¦lger den rigtige database 
 	# Hvis det mislykkes skrives "Could not select database"
 	mysql_select_db ("FTAV")
 		or die ("Could not select database\n");
 
-	# Gør en SQL forespørgsel klar.
+	# GÃ¸r en SQL forespÃ¸rgsel klar.
 	$query = "SELECT Brug, Message, ID FROM Messages ORDER BY ID";
 
-	# SQL forespørgslen udføres og resultat gemmes i $result
+	# SQL forespÃ¸rgslen udfÃ¸res og resultat gemmes i $result
 	$result = mysql_query ($query)
 		or die ("Query failed\n");
 
-	# Trækker antallet af rækker ud fra forespørgslen
+	# TrÃ¦kker antallet af rÃ¦kker ud fra forespÃ¸rgslen
 	$number_of_rows = mysql_num_rows($result);
 
 	# Starter den tabel der skal indeholde beskederne fra databasen
@@ -72,21 +72,21 @@
 
 	$i = 0;
 
-	# Gentages så længe der er flere beskeder i databasen
+	# Gentages sÃ¥ lÃ¦nge der er flere beskeder i databasen
 	while ($i < $number_of_rows) {
-		# Er egentligt ikke nødvendig, men gør den senere kode lettere at læse
+		# Er egentligt ikke nÃ¸dvendig, men gÃ¸r den senere kode lettere at lÃ¦se
 		$bruger_navn = mysql_result($result, $i, 'Brug');
 		$message     = mysql_result($result, $i, 'Message');
 		$id          = mysql_result($result, $i, 'ID');
 
-		# Tilføjer en besked til tabellen	
+		# TilfÃ¸jer en besked til tabellen	
 		print "	<tr>\n";
 		print "		<td>$bruger_navn</td>\n";
 		print "		<td><a href='tagwall_remove.php?ID=$id'>x</a></td>\n";
 		print "		<td>$message</td>\n";
 		print "	</tr>\n";
 
-		# Rækketælleren øges med 1
+		# RÃ¦kketÃ¦lleren Ã¸ges med 1
 		$i++;
 	}
 

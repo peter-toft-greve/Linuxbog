@@ -13,28 +13,28 @@
 <orderedlist>
       <listitem>
 
-<para>Placer markøren et sted i afsnittet, som gerne må være tomt. (Hvis
-        du vil centrere flere afsnit på én gang, så skal du markere dem helt
+<para>Placer markÃ¸ren et sted i afsnittet, som gerne mÃ¥ vÃ¦re tomt. (Hvis
+        du vil centrere flere afsnit pÃ¥ Ã©n gang, sÃ¥ skal du markere dem helt
         eller delvist.)</para>
 
 </listitem>
 
       <listitem>
 
-<para>Vælg centreret afsnit ved at klikke på <figure float="1"><title>(noget)</title>
+<para>VÃ¦lg centreret afsnit ved at klikke pÃ¥ <figure float="1"><title>(noget)</title>
 <graphic fileref="objektlinjecentreret.&magic;" scale="60"></graphic>
 </figure>
  i objektlinjen eller taste <emphasis>Ctrl-E</emphasis>
-        på tastaturet.</para>
+        pÃ¥ tastaturet.</para>
 
 </listitem>
     </orderedlist>
 </sect2>    <!--   Eksempel: Centreret afsnit -->
 
 <sect2>
-  <title>Øvrige muligheder</title>
+  <title>Ã˜vrige muligheder</title>
 
-<para>På samme måde bruges følgende:</para>
+<para>PÃ¥ samme mÃ¥de bruges fÃ¸lgende:</para>
 
 <itemizedlist mark="bullet">
   <listitem>
@@ -57,7 +57,7 @@ fileref="objektlinjecentreret.&magic;" scale="60"></graphic>
 
   <listitem>
 
-<para>Du kan <emphasis>højrestille</emphasis> et afsnit med knappen <figure float="1"><title>(noget)</title>
+<para>Du kan <emphasis>hÃ¸jrestille</emphasis> et afsnit med knappen <figure float="1"><title>(noget)</title>
 <graphic fileref="objektlinjehoejre.&magic;" scale="60"></graphic>
 </figure>
  (tastatur <emphasis>Ctrl-R</emphasis>).</para>
@@ -66,17 +66,17 @@ fileref="objektlinjecentreret.&magic;" scale="60"></graphic>
 
   <listitem>
 
-<para>Du kan vælge <emphasis>Lige Margener</emphasis> med knappen
+<para>Du kan vÃ¦lge <emphasis>Lige Margener</emphasis> med knappen
 <figure float="1"><title>(noget)</title>
 <graphic fileref="objektlinjeligemargen.&magic;" scale="60"></graphic>
 </figure> (tastatur <emphasis>Ctrl-B</emphasis>). Det
-        kan kun anbefales hvis orddeling er slået til, se <xref linkend="ooo-orddeling"/>kapitel 18.</para>
+        kan kun anbefales hvis orddeling er slÃ¥et til, se <xref linkend="ooo-orddeling"/>kapitel 18.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Du kan vælge enkelt linjeafstand med knappen <figure float="1"><title>(noget)</title>
+<para>Du kan vÃ¦lge enkelt linjeafstand med knappen <figure float="1"><title>(noget)</title>
 <graphic fileref="objektlinjeenkelt.&magic;" scale="60"></graphic>
 </figure>
  (tastatur <emphasis>Ctrl-1</emphasis>). <emphasis>OBS</emphasis> :
@@ -86,7 +86,7 @@ fileref="objektlinjecentreret.&magic;" scale="60"></graphic>
 
   <listitem>
 
-<para>Du kan vælge halvanden linjeafstand med knappen <figure float="1"><title>(noget)</title>
+<para>Du kan vÃ¦lge halvanden linjeafstand med knappen <figure float="1"><title>(noget)</title>
 <graphic fileref="objektlinjehalvanden.&magic;" scale="60"></graphic>
 </figure>
  (tastatur <emphasis>Ctrl-5</emphasis>). <emphasis>OBS</emphasis> : Knappen er ikke synlig som standard.</para>
@@ -95,7 +95,7 @@ fileref="objektlinjecentreret.&magic;" scale="60"></graphic>
 
   <listitem>
 
-<para>Du kan vælge dobbelt linjeafstand med knappen <figure float="1"><title>(noget)</title>
+<para>Du kan vÃ¦lge dobbelt linjeafstand med knappen <figure float="1"><title>(noget)</title>
 <graphic fileref="objektlinjedobbelt.&magic;" scale="60"></graphic>
 </figure>
  (tastatur <emphasis>Ctrl-2</emphasis>). <emphasis>OBS</emphasis> :
@@ -105,7 +105,7 @@ fileref="objektlinjecentreret.&magic;" scale="60"></graphic>
 
   <listitem>
 
-<para>Du kan mindske/øge indrykningen i venstre side med knapperne <figure float="1"><title>(noget)</title>
+<para>Du kan mindske/Ã¸ge indrykningen i venstre side med knapperne <figure float="1"><title>(noget)</title>
 <graphic fileref="objektlinjeindrykning.&magic;" scale="60"></graphic>
 </figure>
 .</para>
@@ -115,8 +115,8 @@ fileref="objektlinjecentreret.&magic;" scale="60"></graphic>
   <listitem>
 
 
-<para>Du kan indstille indrykningen i højre og venstre side (to nederste
-        trekanter) samt indrykningen af første linje (øverste trekant) ved at <emphasis>trække</emphasis> I trekanterne i linealen:</para>
+<para>Du kan indstille indrykningen i hÃ¸jre og venstre side (to nederste
+        trekanter) samt indrykningen af fÃ¸rste linje (Ã¸verste trekant) ved at <emphasis>trÃ¦kke</emphasis> I trekanterne i linealen:</para>
 
 <para><figure float="1"><title>(noget)</title> <graphic
 fileref="skaermlinealafsnit.&magic;" scale="60"></graphic>
@@ -126,6 +126,6 @@ fileref="skaermlinealafsnit.&magic;" scale="60"></graphic>
 </listitem>
 </itemizedlist>
 
-</sect2>    <!--   Øvrige muligheder -->
+</sect2>    <!--   Ã˜vrige muligheder -->
 </sect1>    <!--   7.2. Afsnitsformatering med objektlinjen og tastaturet -->
 

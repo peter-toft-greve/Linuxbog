@@ -1,27 +1,27 @@
 <appendix id="kontorbruger-opsaetning">
-<title>Opsætning</title>
+<title>OpsÃ¦tning</title>
 
-<indexterm><primary>Opsætning</primary><secondary>Kontorprogrammer</secondary></indexterm>
+<indexterm><primary>OpsÃ¦tning</primary><secondary>Kontorprogrammer</secondary></indexterm>
 
 <sect1 id="OpenOffice-config">
-<title>Opsætning af OpenOffice.org 1.0</title>
+<title>OpsÃ¦tning af OpenOffice.org 1.0</title>
 
-<indexterm><primary>Opsætning</primary><secondary>OpenOffice.org</secondary></indexterm>
+<indexterm><primary>OpsÃ¦tning</primary><secondary>OpenOffice.org</secondary></indexterm>
 <indexterm><primary>Installation</primary><secondary>OpenOffice.org</secondary></indexterm>
 
 <para>
-OpenOffice.org kan installeres som enkeltbruger, som flere brugere på 
-samme maskine og som server-applikationer, hvor flere kan køre 
+OpenOffice.org kan installeres som enkeltbruger, som flere brugere pÃ¥ 
+samme maskine og som server-applikationer, hvor flere kan kÃ¸re 
 OpenOffice.org fra serveren. Her i bogen vil vi koncentrere os om de 
-to første installations&shy;typer.
+to fÃ¸rste installations&shy;typer.
 </para>
 
 <para>
-Hvis det kan tænkes at mere end en bruger skal kunne benytte 
-OpenOffice.org på samme maskine, er flerbruger installationen 
-klart at anbefale, da hver bruger så ikke skal have plads til 
-hele kontorpakken i sit hjemmekatalog, men kun nogle få megabytes 
-til opsætningsfiler med videre.
+Hvis det kan tÃ¦nkes at mere end en bruger skal kunne benytte 
+OpenOffice.org pÃ¥ samme maskine, er flerbruger installationen 
+klart at anbefale, da hver bruger sÃ¥ ikke skal have plads til 
+hele kontorpakken i sit hjemmekatalog, men kun nogle fÃ¥ megabytes 
+til opsÃ¦tningsfiler med videre.
 </para>
 
 <sect2 id="OpenOffice-single-install">
@@ -31,17 +31,17 @@ til opsætningsfiler med videre.
 <indexterm><primary>OpenOffice.org</primary><secondary>Enkeltbruger-installation</secondary></indexterm>
 
 <para>
-Dette er installationen for på en enkeltbruger-maskine eller en maskine, 
+Dette er installationen for pÃ¥ en enkeltbruger-maskine eller en maskine, 
 hvor man gerne vil bruge OpenOffice.org, men ikke har rettighed til at 
 installere programmet som system&shy;administratoren root.
 </para>
 
 <itemizedlist mark="bullet">
 <listitem><para>
-Log på maskine i grafisk tilstand som almindelig bruger.
+Log pÃ¥ maskine i grafisk tilstand som almindelig bruger.
 </para></listitem>
 <listitem><para>
-Åbn et konsolvindue (klik på det lille skærm-ikon nederst til venstre).
+Ã…bn et konsolvindue (klik pÃ¥ det lille skÃ¦rm-ikon nederst til venstre).
 </para></listitem>
 <listitem><para>
 Opret et midlertidigt katalog i dit eget hjemmekatalog med kommandoen 
@@ -61,60 +61,60 @@ Udpak pakken med kommandoen
 tar xvfz OOo_*_LinuxIntel_install_da.tar.gz
 </para></listitem>
 <listitem><para>
-Start installationen med følgende kommando 
+Start installationen med fÃ¸lgende kommando 
 <command>install/setup</command>.
 </para></listitem>
 <listitem><para>
-Klik "Næste" ved velkomstbilledet.
+Klik "NÃ¦ste" ved velkomstbilledet.
 </para></listitem>
 <listitem><para>
-Læs den vigtige information igennem og klik "Næste".
+LÃ¦s den vigtige information igennem og klik "NÃ¦ste".
 </para></listitem>
 <listitem><para>
-Læs licensbetingelserne igennem og klik "Acceptér", hvis du kan acceptere dem.
+LÃ¦s licensbetingelserne igennem og klik "AcceptÃ©r", hvis du kan acceptere dem.
 </para></listitem>
 <listitem><para>
 Udfyld skemaet med dine personlige oplysninger. Disse bliver ikke videregivet. 
-Klik derefter "Næste".
+Klik derefter "NÃ¦ste".
 </para></listitem>
 <listitem><para>
-Vælg "Standard-installation", som behøver ca. 213MB pr. brugerinstallation. 
-Klik derefter "Næste".
+VÃ¦lg "Standard-installation", som behÃ¸ver ca. 213MB pr. brugerinstallation. 
+Klik derefter "NÃ¦ste".
 </para></listitem>
 <listitem><para>
-Vælg hvor OpenOffice.org skal installere sine filer i brugerens katalog. 
-Klik derefter "Næste".
+VÃ¦lg hvor OpenOffice.org skal installere sine filer i brugerens katalog. 
+Klik derefter "NÃ¦ste".
 </para></listitem>
 <listitem><para>
 Klik "Ja" hvis du vil oprette et nyt katalog til OpenOffice.org.
 </para></listitem>
 <listitem><para>
-Klik "Installér"
+Klik "InstallÃ©r"
 </para></listitem>
 <listitem><para>
-Installationen undersøger om der er installeret Java på maskinen. Klik "OK", 
+Installationen undersÃ¸ger om der er installeret Java pÃ¥ maskinen. Klik "OK", 
 hvis den har fundet Java eller den ikke har fundet Java, fordi det ikke er 
-installeret. Ellers klik på "Browse..." for at finde Java-installationen og
-derefter "OK", så installationen kan fortsætte.
+installeret. Ellers klik pÃ¥ "Browse..." for at finde Java-installationen og
+derefter "OK", sÃ¥ installationen kan fortsÃ¦tte.
 </para></listitem>
 <listitem><para>
-Klik "Udfør" når det sidste skærmbillede dukker op.
+Klik "UdfÃ¸r" nÃ¥r det sidste skÃ¦rmbillede dukker op.
 </para></listitem>
 <listitem><para>
-Når du vender tilbage til tekstkonsollen, så skal du tilbage til dit 
+NÃ¥r du vender tilbage til tekstkonsollen, sÃ¥ skal du tilbage til dit 
 hjemmekatalog med kommandoen <command>cd</command>.
 </para></listitem>
 <listitem><para>
-For at kunne køre OpenOffice.org-applikationerne  direkte fra konsollen 
-er det nødvendigt, at stien til applikationerne bliver en del af 
-kommando-søgestien PATH. Dette gøres ved at ændre i filen .bash_profile, 
-så stien $HOME/OpenOffice.org1.0/program også er med. Det skal se nogenlunde 
-således ud:
+For at kunne kÃ¸re OpenOffice.org-applikationerne  direkte fra konsollen 
+er det nÃ¸dvendigt, at stien til applikationerne bliver en del af 
+kommando-sÃ¸gestien PATH. Dette gÃ¸res ved at Ã¦ndre i filen .bash_profile, 
+sÃ¥ stien $HOME/OpenOffice.org1.0/program ogsÃ¥ er med. Det skal se nogenlunde 
+sÃ¥ledes ud:
 <command>path=$PATH:$HOME/bin:$HOME/OpenOffice.org1.0/program</command>.
 </para>
 <para>
 Husk at ertatte OpenOffice.org1.0 med den sti du har til OpenOffice.org. 
-Genvejene virker først efter du er logget ind igen (eller du kan køre 
+Genvejene virker fÃ¸rst efter du er logget ind igen (eller du kan kÃ¸re 
 den med kommandoen <command>sh .bash_profile</command>).
 </para></listitem>
 <listitem><para>
@@ -129,7 +129,7 @@ lignende i dit hjemmekatalog. De enkelte applikationer kan startes
 fra kommandolinjen i konsollen med kommandoerne <command>swriter</command> for
 tekstbehandleren, <command>scalc</command> for regnearksprogrammet, 
 <command>simpress</command> for
-præsentationsprogrammet og <command>sdraw</command> for tegneprogrammet. 
+prÃ¦sentationsprogrammet og <command>sdraw</command> for tegneprogrammet. 
 I Gnome bliver
 de placeret under menupunktet "Favoritter" og underpunktet
 "OpenOffice.org 1.0".
@@ -146,26 +146,26 @@ de placeret under menupunktet "Favoritter" og underpunktet
 
 <para>
 Her vil jeg klart anbefale at benytte den danske installations-cd-rom, 
-da installations&shy;scriptet er rettet, således at der automatisk 
-oprettes symbolske lænker til de enkelte applikationer, så de kan startes 
-direkte fra kommandolinjen. Desuden er det scriptet også ændret, så det 
+da installations&shy;scriptet er rettet, sÃ¥ledes at der automatisk 
+oprettes symbolske lÃ¦nker til de enkelte applikationer, sÃ¥ de kan startes 
+direkte fra kommandolinjen. Desuden er det scriptet ogsÃ¥ Ã¦ndret, sÃ¥ det 
 kan startes fra ethvert katalog (hvilket originalen ikke kan). Hvis 
-du vælger at benytte cd-rom'en, så benyt også vejledningen på cd-rom'en, 
+du vÃ¦lger at benytte cd-rom'en, sÃ¥ benyt ogsÃ¥ vejledningen pÃ¥ cd-rom'en, 
 da den er tilpasset dertil.
 </para>
 
 <para>
-Det er dog også muligt at hente den modificerede udgave af 
-installations&shy;scriptet på denne adresse, hvis man ikke ønsker at 
+Det er dog ogsÃ¥ muligt at hente den modificerede udgave af 
+installations&shy;scriptet pÃ¥ denne adresse, hvis man ikke Ã¸nsker at 
 skaffe sig installations-cd-rom'en (enten ved at hente den ned 
-eller købe den af en forhandler): 
+eller kÃ¸be den af en forhandler): 
 <ulink url="http://ooo.chbs.dk/mat/install-1.0.0-chbs-mod">http://ooo.chbs.dk/mat/install-1.0.0-chbs-mod</ulink>
 </para>
 
 <para>
-Flerbruger-installationen er delt op i to dele. Først 
-grund&shy;installationen for alle brugerne på systemet. Og derefter 
-brugerinstallationen for den enkelte bruger, så denne kan køre 
+Flerbruger-installationen er delt op i to dele. FÃ¸rst 
+grund&shy;installationen for alle brugerne pÃ¥ systemet. Og derefter 
+brugerinstallationen for den enkelte bruger, sÃ¥ denne kan kÃ¸re 
 OpenOffice.org.
 </para>
 
@@ -173,13 +173,13 @@ OpenOffice.org.
 <title>Grund-installation af OpenOffice.org 1.0</title>
 <itemizedlist mark="bullet">
 <listitem><para>
-Log på maskine i grafisk tilstand som almindelig bruger. 
+Log pÃ¥ maskine i grafisk tilstand som almindelig bruger. 
 </para></listitem>
 <listitem><para>
-Åbn et konsolvindue (klik på det lille skærm-ikon nederst til venstre). 
+Ã…bn et konsolvindue (klik pÃ¥ det lille skÃ¦rm-ikon nederst til venstre). 
 </para></listitem>
 <listitem><para>
-Skift til systemadministratoren "root" med kommandoen <command>su -</command> og efterfølgende angive adgangskoden. 
+Skift til systemadministratoren "root" med kommandoen <command>su -</command> og efterfÃ¸lgende angive adgangskoden. 
 </para></listitem>
 <listitem><para>
 Opret et midlertidigt katalog i root's hjemmekatalog med kommandoen 
@@ -200,7 +200,7 @@ tar xvfz OOo_*_LinuxIntel_install_da.tar.gz
 </para></listitem>
 <listitem><para>
 Hvis du vil benytte den modificerede udgave af installations&shy;scriptet 
-så følg disse indrykkede punkter:
+sÃ¥ fÃ¸lg disse indrykkede punkter:
 </para>
 
 <itemizedlist mark="bullet">
@@ -213,25 +213,25 @@ Hent det modificerede installations&shy;script fra
 <ulink url="http://ooo.chbs.dk/mat/install-1.0.0-chbs-mod">http://ooo.chbs.dk/mat/install-1.0.0-chbs-mod</ulink>
 </para></listitem>
 <listitem><para>
-Kopiér det modificerede installation&shy;script med kommandoen
+KopiÃ©r det modificerede installation&shy;script med kommandoen
 <command>cp install-1.0.0-chbs-mod install/install</command>.
 </para></listitem>
 </itemizedlist>
 
 </listitem>
 <listitem><para>
-Skriv følgende kommando <command>install/install</command>. 
+Skriv fÃ¸lgende kommando <command>install/install</command>. 
 </para></listitem>
 <listitem><para>
-OpenOffice.org bliver nu installeret i kataloget /usr/local/OpenOffice.org1.0 og der bliver oprettet kommando-genveje for soffice (kontorpakken), swriter (tekstbehandlingeren), scalc (regnearket), simpress (præsentationsprogramet) og sdraw (tegneprogrammet), så de kan startes fra kommandolinjen. 
+OpenOffice.org bliver nu installeret i kataloget /usr/local/OpenOffice.org1.0 og der bliver oprettet kommando-genveje for soffice (kontorpakken), swriter (tekstbehandlingeren), scalc (regnearket), simpress (prÃ¦sentationsprogramet) og sdraw (tegneprogrammet), sÃ¥ de kan startes fra kommandolinjen. 
 </para></listitem>
 <listitem><para>
-Hvis der ikke skal installeres andre steder, så skift til root's eget 
+Hvis der ikke skal installeres andre steder, sÃ¥ skift til root's eget 
 katalog og det midlertidige katalog slettes med kommandoen
 <command>cd; rm -rf oootmp</command>.
 </para></listitem>
 <listitem><para>
-Nå installationen er udført, så forlades systemadministrator-sessionen med kommandoen <command>exit</command>
+NÃ¥ installationen er udfÃ¸rt, sÃ¥ forlades systemadministrator-sessionen med kommandoen <command>exit</command>
 </para></listitem>
 </itemizedlist>
 </sect3>
@@ -241,39 +241,39 @@ Nå installationen er udført, så forlades systemadministrator-sessionen med komma
 
 <itemizedlist mark="bullet">
 <listitem><para>
-Log på maskine i grafisk tilstand som den bruger, der skal bruge OpenOffice.org. 
+Log pÃ¥ maskine i grafisk tilstand som den bruger, der skal bruge OpenOffice.org. 
 </para></listitem>
 
 <listitem><para>
-Åbn et konsolvindue (klik på det lille skærm-ikon nederst til venstre). 
+Ã…bn et konsolvindue (klik pÃ¥ det lille skÃ¦rm-ikon nederst til venstre). 
 </para></listitem>
 
 <listitem><para>
-Skriv følgende kommando <command>/usr/local/OpenOffice.org1.0/program/setup</command>. 
+Skriv fÃ¸lgende kommando <command>/usr/local/OpenOffice.org1.0/program/setup</command>. 
 </para></listitem>
 
 <listitem><para>
-Klik "Næste" ved velkomstbilledet. 
+Klik "NÃ¦ste" ved velkomstbilledet. 
 </para></listitem>
 
 <listitem><para>
-Læs den vigtige information igennem og klik "Næste". 
+LÃ¦s den vigtige information igennem og klik "NÃ¦ste". 
 </para></listitem>
 
 <listitem><para>
-Læs licensbetingelserne igennem og klik "Acceptér", hvis du kan acceptere dem. 
+LÃ¦s licensbetingelserne igennem og klik "AcceptÃ©r", hvis du kan acceptere dem. 
 </para></listitem>
 
 <listitem><para>
-Udfyld skemaet med dine personlige oplysninger. Disse bliver ikke videregivet. Klik derefter "Næste". 
+Udfyld skemaet med dine personlige oplysninger. Disse bliver ikke videregivet. Klik derefter "NÃ¦ste". 
 </para></listitem>
 
 <listitem><para>
-Vælg "Arbejdsstations-installation", som kun behøver 2,1MB pr. brugerinstallation. Klik derefter "Næste". 
+VÃ¦lg "Arbejdsstations-installation", som kun behÃ¸ver 2,1MB pr. brugerinstallation. Klik derefter "NÃ¦ste". 
 </para></listitem>
 
 <listitem><para>
-Vælg hvor OpenOffice.org skal installere sine filer i brugerens katalog. Klik derefter "Næste". 
+VÃ¦lg hvor OpenOffice.org skal installere sine filer i brugerens katalog. Klik derefter "NÃ¦ste". 
 </para></listitem>
 
 <listitem><para>
@@ -281,19 +281,19 @@ Klik "Ja" hvis du vil oprette et nyt katalog til OpenOffice.org.
 </para></listitem>
 
 <listitem><para>
-Klik "Installér" 
+Klik "InstallÃ©r" 
 </para></listitem>
 
 <listitem><para>
-Installationen undersøger om der er installeret Java på maskinen. Klik "OK", hvis den har fundet Java eller den ikke har fundet Java, fordi det ikke er installeret. Ellers klik på "Browse..." for at finde Java-installationen og derefter "OK", så installationen kan fortsætte. 
+Installationen undersÃ¸ger om der er installeret Java pÃ¥ maskinen. Klik "OK", hvis den har fundet Java eller den ikke har fundet Java, fordi det ikke er installeret. Ellers klik pÃ¥ "Browse..." for at finde Java-installationen og derefter "OK", sÃ¥ installationen kan fortsÃ¦tte. 
 </para></listitem>
 
 <listitem><para>
-Klik "Udfør" når det sidste skærmbillede dukker op. 
+Klik "UdfÃ¸r" nÃ¥r det sidste skÃ¦rmbillede dukker op. 
 </para></listitem>
 
 <listitem><para>
-Nu er OpenOffice.org installeret. De enkelte applikationer kan startes fra kommandolinjen i konsollen med kommandoerne "swriter" for tekstbehandleren, "scalc" for regnearksprogrammet, "simpress" for præsentationsprogrammet og "sdraw" for tegneprogrammet. I Gnome bliver de placeret under menupunktet "Favoritter" og underpunktet "OpenOffice.org 1.0". 
+Nu er OpenOffice.org installeret. De enkelte applikationer kan startes fra kommandolinjen i konsollen med kommandoerne "swriter" for tekstbehandleren, "scalc" for regnearksprogrammet, "simpress" for prÃ¦sentationsprogrammet og "sdraw" for tegneprogrammet. I Gnome bliver de placeret under menupunktet "Favoritter" og underpunktet "OpenOffice.org 1.0". 
 </para></listitem>
 
 </itemizedlist>
@@ -310,15 +310,15 @@ Nu er OpenOffice.org installeret. De enkelte applikationer kan startes fra komma
 <indexterm><primary>OpenOffice.org</primary><secondary>stavekontrol i OpenOffice.org</secondary></indexterm>
 
 <para>
-Desværre distributeres de danske ordbøger ikke sammen med OpenOffice.org.
-Heldigvis kan man ret nemt få installeret dem. Først skal man vide hvor
-OpenOffice.org er installeret - i det følgende antager vi at det er i 
+DesvÃ¦rre distributeres de danske ordbÃ¸ger ikke sammen med OpenOffice.org.
+Heldigvis kan man ret nemt fÃ¥ installeret dem. FÃ¸rst skal man vide hvor
+OpenOffice.org er installeret - i det fÃ¸lgende antager vi at det er i 
 <filename>~/OpenOffice</filename>. Erstat dette med det der passer med
 den lokale installation.
 </para>
 
 <para>
-Først hentes den nyeste <filename>myspell-da-*.tar.gz</filename> fra 
+FÃ¸rst hentes den nyeste <filename>myspell-da-*.tar.gz</filename> fra 
 <ulink url="http://da.speling.org/filer/">http://da.speling.org/filer/</ulink>.
 Gem filen i dit hjemmekatalog.
 </para>
@@ -338,22 +338,22 @@ Start herefter OpenOffice.org op.
 <itemizedlist mark="bullet">
 <listitem>
  <para>
- Vælg nu Tools -&gt; Options -&gt; LanguageSettings -&gt; WritingAids
+ VÃ¦lg nu Tools -&gt; Options -&gt; LanguageSettings -&gt; WritingAids
  </para>
 </listitem>
 <listitem> 
  <para>
-Tryk på "Edit" i øverste højre hjørne (for OpenOffice.org MySpell SpellChecker)
+Tryk pÃ¥ "Edit" i Ã¸verste hÃ¸jre hjÃ¸rne (for OpenOffice.org MySpell SpellChecker)
  </para>
 </listitem>
 <listitem> 
  <para>
-Vælg "Danish" under "Language"
+VÃ¦lg "Danish" under "Language"
  </para>
 </listitem>
 <listitem> 
  <para>
-Vælg Close.
+VÃ¦lg Close.
  </para>
 </listitem>
 </itemizedlist>
@@ -376,98 +376,98 @@ Vælg Close.
 </sect1>
 
 <sect1 id="KMail-config">
-<title>Opsætning af KDE KMail</title>
+<title>OpsÃ¦tning af KDE KMail</title>
 
 <indexterm><primary>Installation</primary><secondary>KMail</secondary></indexterm>
 <para>
 KMail installeres automatisk sammen med KDE.
 </para>
-<indexterm><primary>Opsætning</primary><secondary>KMail</secondary></indexterm>
+<indexterm><primary>OpsÃ¦tning</primary><secondary>KMail</secondary></indexterm>
 
 <para>
-Du starter opsætningsvinduet ved at vælge "Settings"->"Configuration". 
-Under fanen "Identity", som du vælger i venstre side,
+Du starter opsÃ¦tningsvinduet ved at vÃ¦lge "Settings"->"Configuration". 
+Under fanen "Identity", som du vÃ¦lger i venstre side,
 kan du oprette flere forskellige postkonti, hvis du har behov for det,
-men i første omgang skriver du blot dit navn og din e-postadresse i de
+men i fÃ¸rste omgang skriver du blot dit navn og din e-postadresse i de
 respektive felter.
 </para>
 
 <figure id="KDE-KMail2-fig" float="1">
-<title>billede af opsætning, identitet</title>
+<title>billede af opsÃ¦tning, identitet</title>
 <graphic fileref="kmail_config_identity.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
-Dernæst vælger du fanen "Network", hvor de vigtige oplysninger skal
-skrives. Du kan i første omgang nøjes med at udfylde oplysninger i
-underfanen "Sending Mail".  Øverst skal du vælge, om du vil bruge
+DernÃ¦st vÃ¦lger du fanen "Network", hvor de vigtige oplysninger skal
+skrives. Du kan i fÃ¸rste omgang nÃ¸jes med at udfylde oplysninger i
+underfanen "Sending Mail".  Ã˜verst skal du vÃ¦lge, om du vil bruge
 Sendmail eller din udbyders SMTP-server til at sende mail. Jeg vil
-stærkt anbefale, at du vælger at bruge din udbyders SMTP-server.
+stÃ¦rkt anbefale, at du vÃ¦lger at bruge din udbyders SMTP-server.
 </para>
 
 <para>
 <emphasis>Sendmail</emphasis>:
-Du skal kun vælge Sendmail, hvis du ved, hvad du gør. Sendmail er
-notorisk vanskelig at sætte korrekt op. Hvis du vælger Sendmail, skal du først
-konfigurere Sendmail, og du skal i hvert fald holde øje med Sendmails logfil,
-som du kan læse ved som root at skrive 
+Du skal kun vÃ¦lge Sendmail, hvis du ved, hvad du gÃ¸r. Sendmail er
+notorisk vanskelig at sÃ¦tte korrekt op. Hvis du vÃ¦lger Sendmail, skal du fÃ¸rst
+konfigurere Sendmail, og du skal i hvert fald holde Ã¸je med Sendmails logfil,
+som du kan lÃ¦se ved som root at skrive 
 <command>cat /var/log/mail | more</command> i et
-terminalvindue. Her kan du se, om udsendelsen af dine mails er gået godt.
-Bemærk, at loggen viser om udsendelsen er gået godt på din lokale maskine,
-localhost. Du skal desuden være opmærksom på, at som udgangspunkt er det
-localhost og altså ikke i din konto i KMail, der får besked om, at breve, der
-bliver afvist af modtagerens mailserver, ikke er kommet frem. Du kan læse post
+terminalvindue. Her kan du se, om udsendelsen af dine mails er gÃ¥et godt.
+BemÃ¦rk, at loggen viser om udsendelsen er gÃ¥et godt pÃ¥ din lokale maskine,
+localhost. Du skal desuden vÃ¦re opmÃ¦rksom pÃ¥, at som udgangspunkt er det
+localhost og altsÃ¥ ikke i din konto i KMail, der fÃ¥r besked om, at breve, der
+bliver afvist af modtagerens mailserver, ikke er kommet frem. Du kan lÃ¦se post
 sendt til local host ved at skrive "mail" i et terminalvindue.
 </para>
 
 <para>
-<emphasis>Netværksopsætning</emphasis>:
-Det er langt enklere at bruge SMTP, idet du blot behøver skrive navnet på den
-SMTP-server, som din udbyder har oplyst dig om. Det kan for eksempel være
+<emphasis>NetvÃ¦rksopsÃ¦tning</emphasis>:
+Det er langt enklere at bruge SMTP, idet du blot behÃ¸ver skrive navnet pÃ¥ den
+SMTP-server, som din udbyder har oplyst dig om. Det kan for eksempel vÃ¦re
 smtp.tele.dk, vip.cybercity.dk eller ryle.get2net.dk. 
 Som udgangspunkt skal du bare acceptere
 port 25, som er default.
 </para>
 
 <figure id="KDE-KMail3-fig" float="1">
-<title>billede af opsætning, netværk</title>
+<title>billede af opsÃ¦tning, netvÃ¦rk</title>
 <graphic fileref="kmail_config_network.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
-Du skal nu oprette en konto for indgående post. Hvis du har behov for at
-oprette flere konti, kan du også gøre det. Klik på "Add" og vælg pop3.
+Du skal nu oprette en konto for indgÃ¥ende post. Hvis du har behov for at
+oprette flere konti, kan du ogsÃ¥ gÃ¸re det. Klik pÃ¥ "Add" og vÃ¦lg pop3.
 </para>
 
 <figure id="KDE-KMail4-fig" float="1">
-<title>billede af opsætning, pop</title>
+<title>billede af opsÃ¦tning, pop</title>
 <graphic fileref="kmail_config_pop.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
 I vinduet "Add account" - KMail udfylder du dit navn, brugernavn,
-password og navnet på din udbyders mailserver. Du kan som udgangspunkt
+password og navnet pÃ¥ din udbyders mailserver. Du kan som udgangspunkt
 acceptere port 110, som er default. Hvis du har en adsl-forbindelse,
-vil du typisk også vælge "Enable interval mail checking"<!-- grav lige
-den danske oversættelse frem -->, så KMail
+vil du typisk ogsÃ¥ vÃ¦lge "Enable interval mail checking"<!-- grav lige
+den danske oversÃ¦ttelse frem -->, sÃ¥ KMail
 automatisk henter post for eksempel hver 15.  minut. Du kan eventuelt
-også vælge fanen "Miscellaneous"<!-- grav lige den danske oversættelse frem
--->, hvor du for eksempel kan få KMail
-til at bippe, når du har fået en post.
+ogsÃ¥ vÃ¦lge fanen "Miscellaneous"<!-- grav lige den danske oversÃ¦ttelse frem
+-->, hvor du for eksempel kan fÃ¥ KMail
+til at bippe, nÃ¥r du har fÃ¥et en post.
 </para>
 
-<indexterm><primary>Tegnsæt</primary><secondary>KMail</secondary></indexterm>
-<indexterm><primary>Opsætning</primary><secondary>Tegnsæt under
+<indexterm><primary>TegnsÃ¦t</primary><secondary>KMail</secondary></indexterm>
+<indexterm><primary>OpsÃ¦tning</primary><secondary>TegnsÃ¦t under
 KMail</secondary></indexterm>
 
 <para>
-For at få den rigtige tegnopsætning (æ, ø og å) skal du på fanen "Composer,
-Charset" med Up-knappen flytte iso-8859-1 øverst i "Available charset".
-Desuden skal du vælge iso-8859-1 som "Default charset".
+For at fÃ¥ den rigtige tegnopsÃ¦tning (Ã¦, Ã¸ og Ã¥) skal du pÃ¥ fanen "Composer,
+Charset" med Up-knappen flytte iso-8859-1 Ã¸verst i "Available charset".
+Desuden skal du vÃ¦lge iso-8859-1 som "Default charset".
 </para>
 
 <figure id="KDE-KMail5-fig" float="1">
-<title>valg af tegnsæt</title>
+<title>valg af tegnsÃ¦t</title>
 <graphic fileref="kmail_charset.&magic;"  scale="50"></graphic>
 </figure>
 
@@ -478,8 +478,8 @@ Desuden skal du vælge iso-8859-1 som "Default charset".
 Hvis du har tastet dine oplysninger rigtigt ind, kan du nu sende og
 modtage breve. Du vil sandsynligvis ikke have nogen problemer med at
 bruge KMail, da den almindelige funktionalitet er forholdsvis
-intuitiv. Hvis du løber ind i nogen problemer, kan du som regel finde
-de nødvendige informationer i hjælpen, som i KMail er ret god.
+intuitiv. Hvis du lÃ¸ber ind i nogen problemer, kan du som regel finde
+de nÃ¸dvendige informationer i hjÃ¦lpen, som i KMail er ret god.
 </para>
 
 </sect2>
@@ -491,14 +491,14 @@ de nødvendige informationer i hjælpen, som i KMail er ret god.
 email</secondary></indexterm>
 <indexterm><primary>Email</primary><secondary>Import af 
 email under KMail</secondary></indexterm>
-<indexterm><primary>Opsætning</primary><secondary>Import
+<indexterm><primary>OpsÃ¦tning</primary><secondary>Import
 af email</secondary></indexterm>
 
 
 <para>
-Nu er KMail nok ikke den første mailklient, som du bruger, og du vil som regel
+Nu er KMail nok ikke den fÃ¸rste mailklient, som du bruger, og du vil som regel
 gerne have dine gamle mails med over under Linux. Heldigvis er der et fikst
-lille program - KMail Import, der kan hjælpe dig med det. Du kan finde
+lille program - KMail Import, der kan hjÃ¦lpe dig med det. Du kan finde
 programmet under "Start Applications, Utillities, KMail Import".
 </para>
 
@@ -508,16 +508,16 @@ programmet under "Start Applications, Utillities, KMail Import".
 </figure>
 
 <para>
-Du vælger her hvilken mailklient, du vil importere fra, og dernæst
-vælger du den sti, hvor din gamle post findes. Jeg kunne uden nogen
+Du vÃ¦lger her hvilken mailklient, du vil importere fra, og dernÃ¦st
+vÃ¦lger du den sti, hvor din gamle post findes. Jeg kunne uden nogen
 problemer importere min gamle post fra Pegasus, som jeg havde brugt
-som mailklient under Windows, men du kan selvfølgelig også vælge at
+som mailklient under Windows, men du kan selvfÃ¸lgelig ogsÃ¥ vÃ¦lge at
 importere din post og din adressebog fra MS Outlook.  Endelig skal du
-huske, at du i en overgangsfase jo sagtens kan vælge at køre med to
-systemer. Hvis du i vinduet "Modify account" undlader at sætte kryds i
-"Delete mail from server", kan du også hente din post med dit gamle
-postprogram. På den måde behøver du ikke beslutte dig 100% med det
-samme. KMail finder i øvrigt selv ud af, at den ikke skal hente den
+huske, at du i en overgangsfase jo sagtens kan vÃ¦lge at kÃ¸re med to
+systemer. Hvis du i vinduet "Modify account" undlader at sÃ¦tte kryds i
+"Delete mail from server", kan du ogsÃ¥ hente din post med dit gamle
+postprogram. PÃ¥ den mÃ¥de behÃ¸ver du ikke beslutte dig 100% med det
+samme. KMail finder i Ã¸vrigt selv ud af, at den ikke skal hente den
 samme post mere end en gang.
 </para>
 </sect2>
@@ -533,13 +533,13 @@ samme post mere end en gang.
 Da jeg bruger SuSEs Linux-distribution, henter jeg PGP som en
 rpm-installationsfil fra The International PGP Homepage. Jeg
 henter filen <filename>PGPcmdln_6.5.8.Lnx_FW.rpm.tar</filename>, 
-der viser sig at være en gzip-fil i stedet for en tar-fil, 
+der viser sig at vÃ¦re en gzip-fil i stedet for en tar-fil, 
 hvilket jeg konstaterer ved at
 skrive <command>file PGPcmdln_6.5.8.Lnx_FW.rpm.tar</command>. 
-Jeg omdøber derfor
-programmet først filen med <command>mv PGPcmdln_6.5.8.Lnx_FW.rpm.tar
-PGPcmdln_6.5.8.Lnx_FW.rpm.gz</command>. Dernæst pakker jeg den ud. Først med
-<command>gunzip PGPcmdln_6.5.8.Lnx_FW.rpm.gz</command> og så med <command>tar
+Jeg omdÃ¸ber derfor
+programmet fÃ¸rst filen med <command>mv PGPcmdln_6.5.8.Lnx_FW.rpm.tar
+PGPcmdln_6.5.8.Lnx_FW.rpm.gz</command>. DernÃ¦st pakker jeg den ud. FÃ¸rst med
+<command>gunzip PGPcmdln_6.5.8.Lnx_FW.rpm.gz</command> og sÃ¥ med <command>tar
 PGPcmdln_6.5.8.Lnx_FW.rpm</command>. Til sidst kan jeg installere PGP med
 <command>rpm -Uvh PGPcmdln_6.5.8.Lnx_FW.rpm</command>.
 </para>
@@ -556,23 +556,23 @@ PGPcmdln_6.5.8.Lnx_FW.rpm</command>. Til sidst kan jeg installere PGP med
 <indexterm><primary>Java installation</primary><secondary>Konqueror</secondary></indexterm>
 
 <para> 
-Mange hjemmesider anvender Java til at lave lækre menuer eller
-til at køre automatiserede scripts. Typisk er der stor forskel om der
-følger en god JVM (en Java virtuel maskine) med
-Linux-distributionerne. Køber man en kommerciel distribution følger
-det ofte med, mens på f.eks. Red Hat- og Mandrake-udgaver der frit kan hentes
-på nettet typisk
-ikke har det med. Typisk følger Java-pakkerne Kaffe og jikes med, men de er 
-bare ikke gode nok i praksis til at køre web-appletter. 
+Mange hjemmesider anvender Java til at lave lÃ¦kre menuer eller
+til at kÃ¸re automatiserede scripts. Typisk er der stor forskel om der
+fÃ¸lger en god JVM (en Java virtuel maskine) med
+Linux-distributionerne. KÃ¸ber man en kommerciel distribution fÃ¸lger
+det ofte med, mens pÃ¥ f.eks. Red Hat- og Mandrake-udgaver der frit kan hentes
+pÃ¥ nettet typisk
+ikke har det med. Typisk fÃ¸lger Java-pakkerne Kaffe og jikes med, men de er 
+bare ikke gode nok i praksis til at kÃ¸re web-appletter. 
 </para> 
 
 <para>
 Start f.eks. med at hent SUNs Java 2 Runtime Environment (j2re) fra
 <ulink
 url="http://java.sun.com/products">http://java.sun.com/products</ulink>,
-sørg for at finde den nyeste version 1.4.2, som i skrivende stund er 
-j2re-1_4_2_12-linux-i586.bin - måske virker dette link (det gør
-det nu nok ikke, man får en session-ID, men start på linket
+sÃ¸rg for at finde den nyeste version 1.4.2, som i skrivende stund er 
+j2re-1_4_2_12-linux-i586.bin - mÃ¥ske virker dette link (det gÃ¸r
+det nu nok ikke, man fÃ¥r en session-ID, men start pÃ¥ linket
 ovenfor og klik dig igennem:-)
 <ulink
 url="https://sdlc6a.sun.com/ECom/EComActionServlet;jsessionid=163009C9C1722035142662820047CD46#">
@@ -597,19 +597,19 @@ self-extracting file". Efter at have hentet ca. 14 MB har man filen
 
 <screen>
 <prompt>[root@linus /tmp]#</prompt> <userinput>sh j2re-1.3.1-02b-FCS-linux-i386.bin</userinput>
-Læs og accepter licensen... tryk mellemrum et par gange derefter skrives "yes"
+LÃ¦s og accepter licensen... tryk mellemrum et par gange derefter skrives "yes"
 <prompt>[root@linus /tmp]#</prompt> <userinput>rpm -ivh j2re-1_4_1-fcs-linux-i586.rpm</userinput>
 <prompt>[root@linus /tmp]#</prompt> <userinput>rm j2re-1_4_1-fcs-linux-i586.rpm</userinput>
 </screen>
 
 <para>
-Man kan også direkte tage SUNs RPM-pakke <filename>j2re-1_4_1-fcs-linux-i586.rpm</filename> og installere på SuSE kan at skrive <command>rpm -i j2re-1_4_1-fcs-linux-i586.rpm</command>.
+Man kan ogsÃ¥ direkte tage SUNs RPM-pakke <filename>j2re-1_4_1-fcs-linux-i586.rpm</filename> og installere pÃ¥ SuSE kan at skrive <command>rpm -i j2re-1_4_1-fcs-linux-i586.rpm</command>.
 </para>
 
 <para>
 Derefter skal man lige skrive stien til java-programmet ind i
-opsætningen for Konqueror. "Settings" -&gt; "Configure Konqueror"
--&gt; "Konqueror Browser" -&gt; "Java". Feltet "Path to java executable" sættes til <filename>/usr/java/j2re1.4.1/bin/java</filename> - eller hvis du tog RPM-pakken, så skrives <filename>/usr/lib/SunJava2/jre/bin/java</filename>.
+opsÃ¦tningen for Konqueror. "Settings" -&gt; "Configure Konqueror"
+-&gt; "Konqueror Browser" -&gt; "Java". Feltet "Path to java executable" sÃ¦ttes til <filename>/usr/java/j2re1.4.1/bin/java</filename> - eller hvis du tog RPM-pakken, sÃ¥ skrives <filename>/usr/lib/SunJava2/jre/bin/java</filename>.
 </para>
 
 

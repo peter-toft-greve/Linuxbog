@@ -9,11 +9,11 @@
 
     <itemizedlist mark="bullet">
      <listitem>
-      <para>Piletasterne flytter mod venstre/højre/op/ned.</para>
+      <para>Piletasterne flytter mod venstre/hÃ¸jre/op/ned.</para>
      </listitem>
 
      <listitem>
-      <para><emphasis>Ctrl</emphasis> plus højre/venstre pil flytter
+      <para><emphasis>Ctrl</emphasis> plus hÃ¸jre/venstre pil flytter
       et helt ord</para>
      </listitem>
 
@@ -30,14 +30,14 @@
 
      <listitem>
       <para><emphasis>PageUp</emphasis> og
-      <emphasis>PageDown</emphasis> flytter en skærmfuld
+      <emphasis>PageDown</emphasis> flytter en skÃ¦rmfuld
       op/ned.</para>
      </listitem>
     </itemizedlist>
    </para>
 
    <para>
-    Du kan også bruge rulleskakten i højre side af skærmen.
+    Du kan ogsÃ¥ bruge rulleskakten i hÃ¸jre side af skÃ¦rmen.
    </para>
   </sect1>    <!--   5.4. Navigere i teksten -->
 

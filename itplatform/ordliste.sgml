@@ -6,9 +6,9 @@
 <glossterm>32-bit styresystem</glossterm> 
 <glossdef>
 <para>
-Styresystem der arbejder med adresser og/eller data på 32-bit.
+Styresystem der arbejder med adresser og/eller data pÃ¥ 32-bit.
 Egentlig er det lidt af en tilsnigelse, da det er processoren der
-bestemmer den slags. Linux er således både et 32- og 64-bit
+bestemmer den slags. Linux er sÃ¥ledes bÃ¥de et 32- og 64-bit
 styresystem.
 </para></glossdef>
 </glossentry>
@@ -17,7 +17,7 @@ styresystem.
 <glossterm id="def-itplatform-anonym-FTP">anonym FTP</glossterm>
 <glossdef>
 <para>
-System til at hente og lægge filer på andre maskiner uden at skulle
+System til at hente og lÃ¦gge filer pÃ¥ andre maskiner uden at skulle
 bruge en adgangskode.
 </para></glossdef>
 </glossentry>
@@ -25,7 +25,7 @@ bruge en adgangskode.
 <glossentry id="def-itplatform-applikation">
 <glossterm>Applikation</glossterm>
 <glossdef><para>
-En applikation er et program, som brugeren kan køre.
+En applikation er et program, som brugeren kan kÃ¸re.
 </para></glossdef>
 </glossentry>
 
@@ -34,17 +34,17 @@ En applikation er et program, som brugeren kan køre.
 <glossterm id="def-itplatform-BIOS">BIOS</glossterm>
 <glossdef>
 <para>
-Basic Input Output System. Det program som din pc kører
-for at få kontakt med disk-enheder og tastatur, når den starter.
+Basic Input Output System. Det program som din pc kÃ¸rer
+for at fÃ¥ kontakt med disk-enheder og tastatur, nÃ¥r den starter.
 </para></glossdef>
 </glossentry>
 
 <glossentry id="def-itplatform-bitmap">
 <glossterm>Bitmap</glossterm>
 <glossdef><para>
-Bitmap er en måde at gemme digitale billeder på. Billedet deles op i
-rækker og søjler med fin opløsning. Hvert element i en given række og
-given søjle har sin egen farve. 
+Bitmap er en mÃ¥de at gemme digitale billeder pÃ¥. Billedet deles op i
+rÃ¦kker og sÃ¸jler med fin oplÃ¸sning. Hvert element i en given rÃ¦kke og
+given sÃ¸jle har sin egen farve. 
 </para></glossdef>
 </glossentry>
 
@@ -52,8 +52,8 @@ given søjle har sin egen farve.
 <glossterm>Beowulf-klyngesystemer</glossterm> 
 <glossdef>
 <para>
-En type supercomputer der består af en masse Linux-maskiner koblet
-sammen i et netværk.
+En type supercomputer der bestÃ¥r af en masse Linux-maskiner koblet
+sammen i et netvÃ¦rk.
 </para></glossdef>
 </glossentry>
 
@@ -62,7 +62,7 @@ sammen i et netværk.
 <glossterm>CGI-programmer</glossterm>
 <glossdef>
 <para>
-Programmer beregnet til at blive kørt af webservere for at slå op i
+Programmer beregnet til at blive kÃ¸rt af webservere for at slÃ¥ op i
 databaser og lignende.
 </para></glossdef>
 </glossentry>
@@ -78,7 +78,7 @@ En person som ulovligt bryder ind i andre folks computersystemer.
 <glossentry id="def-itplatform-debugger">
 <glossterm>Debugger</glossterm>
 <glossdef><para>
-En debugger (flere vil kalde dette en afluser på dansk) er 
+En debugger (flere vil kalde dette en afluser pÃ¥ dansk) er 
 et program, man anvender til at lede efter fejl i programmer med.
 </para></glossdef>
 </glossentry>
@@ -88,9 +88,9 @@ et program, man anvender til at lede efter fejl i programmer med.
 <glossterm>DCHP</glossterm>
 <glossdef><para>
 DHCP er et server-program, der automatisk kan give maskiner i
-netværket alle de netværksoplysninger, der skal til for at de kan
-fungere korrekt. Det er et dynamisk system, så man få nye
-informationer hvis maskinen har været lukket ned og startet forfra.
+netvÃ¦rket alle de netvÃ¦rksoplysninger, der skal til for at de kan
+fungere korrekt. Det er et dynamisk system, sÃ¥ man fÃ¥ nye
+informationer hvis maskinen har vÃ¦ret lukket ned og startet forfra.
 </para></glossdef>
 </glossentry>
 
@@ -113,8 +113,8 @@ Program til at redigere tekstfiler med.
 <glossentry id="def-itplatform-emulere">
 <glossterm>Emulere</glossterm>
 <glossdef><para>
-At emulere betyder at eftergøre. Oftest er det et program som 
-gør som et andet, f.eks. at få nogle programmer til at køre under
+At emulere betyder at eftergÃ¸re. Oftest er det et program som 
+gÃ¸r som et andet, f.eks. at fÃ¥ nogle programmer til at kÃ¸re under
 emulator-programmet.
 </para></glossdef>
 </glossentry>
@@ -133,22 +133,22 @@ emulator-programmet.
 <glossentry id="def-itplatform-firewall">
 <glossterm>Firewall</glossterm>
 <glossdef><para>
-En firewall - brandmur på dansk - er maskine, der kører software, der 
-udvælger hvilke ting andre maskiner kan se og anvende. Oftest sidder
-maskinen mellem internettet og et meget åbent lokal-net med lav
-sikkerhed. En brandmur skal således forhindre, at nogen bryder ind på det
-interne netværk.
+En firewall - brandmur pÃ¥ dansk - er maskine, der kÃ¸rer software, der 
+udvÃ¦lger hvilke ting andre maskiner kan se og anvende. Oftest sidder
+maskinen mellem internettet og et meget Ã¥bent lokal-net med lav
+sikkerhed. En brandmur skal sÃ¥ledes forhindre, at nogen bryder ind pÃ¥ det
+interne netvÃ¦rk.
 </para></glossdef>
 </glossentry>
 
 <glossentry id="def-itplatform-fjern-adgang">
 <glossterm>fjern-adgang</glossterm>
 <glossdef><para>
-Få adgang til, over et netværk, at køre programmer på en anden maskine
-end den du egentlig sidder ved - som om de kørte på din egen
-maskine. Dvs. Du kan sidde i København og logge ind på en maskine i
-Malmö. De programmer du kører på maskinen i Malmö sender så skærm
-billedet til maskinen i København over nettet.
+FÃ¥ adgang til, over et netvÃ¦rk, at kÃ¸re programmer pÃ¥ en anden maskine
+end den du egentlig sidder ved - som om de kÃ¸rte pÃ¥ din egen
+maskine. Dvs. Du kan sidde i KÃ¸benhavn og logge ind pÃ¥ en maskine i
+MalmÃ¶. De programmer du kÃ¸rer pÃ¥ maskinen i MalmÃ¶ sender sÃ¥ skÃ¦rm
+billedet til maskinen i KÃ¸benhavn over nettet.
 </para></glossdef>
 </glossentry>
 
@@ -163,7 +163,7 @@ The GNU Image Manipulation Program. Et billed manipulations program.
 <glossentry id="def-itplatform-hacker">
 <glossterm>hacker</glossterm>
 <glossdef><para>
-Programmør der skriver programmer. 
+ProgrammÃ¸r der skriver programmer. 
 Mange bruger det dog fejlagtigt som synonym for "cracker".
 </para></glossdef>
 </glossentry>
@@ -178,7 +178,7 @@ Maskintyper.
 <glossentry id="def-itplatform-implementere">
 <glossterm>implementere</glossterm> 
 <glossdef><para>
-Lave en løsning på en given opgave, for eksempel ved at skrive et
+Lave en lÃ¸sning pÃ¥ en given opgave, for eksempel ved at skrive et
 computerprogram.
 </para></glossdef>
 </glossentry>
@@ -190,18 +190,18 @@ Tre forskellige ting:
 </para>
 <itemizedlist mark="bullet">
 <listitem>
- <para>Et programmeringssprog inspireret af C++, men uden de værste
+ <para>Et programmeringssprog inspireret af C++, men uden de vÃ¦rste
  problemer i C++.
  </para>
 </listitem>
 <listitem> 
  <para>Et enormt stort klassebibliotek, der er defineret med en
- grænseflade i Java (programmeringssproget), men også kan bruges fra
- en lang række andre programmeringssprog, deriblandt Ada og Eiffel.
+ grÃ¦nseflade i Java (programmeringssproget), men ogsÃ¥ kan bruges fra
+ en lang rÃ¦kke andre programmeringssprog, deriblandt Ada og Eiffel.
  </para>
 </listitem>
 <listitem>
-<para>En virtuel maskine beregnet (men ikke begrænset) til at køre
+<para>En virtuel maskine beregnet (men ikke begrÃ¦nset) til at kÃ¸re
 programmer skrevet i Java (programmeringssproget).
 </para>
 </listitem>
@@ -210,9 +210,9 @@ programmer skrevet i Java (programmeringssproget).
 </glossentry>
 
 <glossentry id="def-itplatform-opsaetningsvaerktoej">
-<glossterm>opsætningsværktøj</glossterm>
+<glossterm>opsÃ¦tningsvÃ¦rktÃ¸j</glossterm>
 <glossdef><para>
-Program til at ændre på systemopsætningen.
+Program til at Ã¦ndre pÃ¥ systemopsÃ¦tningen.
 </para></glossdef>
 </glossentry>
 
@@ -223,8 +223,8 @@ Linux refererer til kernen, som pt. er i version 2.0.x, 2.2.x og
 2.4.x.
 </para>
 <para>
-Begrebet Linux anvendes også til at dække samlingen af en Linux-kerne,
-GNU-programmer og grafisk brugergrænseflade og mere til.
+Begrebet Linux anvendes ogsÃ¥ til at dÃ¦kke samlingen af en Linux-kerne,
+GNU-programmer og grafisk brugergrÃ¦nseflade og mere til.
 </para>
 </glossdef>
 </glossentry>
@@ -234,7 +234,7 @@ GNU-programmer og grafisk brugergrænseflade og mere til.
 <glossterm>Linux-distribution</glossterm> 
 <glossdef><para> 
 Udgivelse af Linux-kernen oftest den sidste stabile, samt en masse
-gennem-prøvede programmer som passer sammen. F.eks. Red Hat, SuSE,
+gennem-prÃ¸vede programmer som passer sammen. F.eks. Red Hat, SuSE,
 Mandrake, Debian, Slackware og mange andre er alle Linux distributioner.
 </para>
 <para>
@@ -242,8 +242,8 @@ Linux refererer til kernen, som pt. er i version 2.0.x, 2.2.x og
 2.4.x.
 </para>
 <para>
-Der findes altså ikke een officiel linux distribution. Det er derfor
-vigtigt at nævne hvilken distribution man bruger, og ikke bare sige:
+Der findes altsÃ¥ ikke een officiel linux distribution. Det er derfor
+vigtigt at nÃ¦vne hvilken distribution man bruger, og ikke bare sige:
 "Jeg bruger Linux 6.x" da dette ikke giver nogen mening.
 </para>
 </glossdef>
@@ -252,7 +252,7 @@ vigtigt at nævne hvilken distribution man bruger, og ikke bare sige:
 <glossentry id="def-itplatform-lukket-filformat">
 <glossterm>lukket filformat</glossterm>
 <glossdef><para>
-Filformat hvis beskrivelse ikke er frit tilgængelig. Eksempler på
+Filformat hvis beskrivelse ikke er frit tilgÃ¦ngelig. Eksempler pÃ¥
 lukkede formater er; Microsoft-formater som: Microsoft Word
 (<filename>.doc</filename>), Microsoft Excel (<filename>.xls</filename>)
 og Microsoft PowerPoint (<filename>.ppt</filename>) samt f.eks RealAudiaMedia
@@ -264,34 +264,34 @@ og Microsoft PowerPoint (<filename>.ppt</filename>) samt f.eks RealAudiaMedia
 <glossentry id="def-itplatform-multitasking">
 <glossterm>multitasking</glossterm>
 <glossdef><para>
-Udførsel af flere opgaver på samme tid. På maskiner med en enkelt
-processor sker det ved at de forskellige programmer, der kører på
-maskinen på skift får rådighed over processoren i et lille stykke tid
+UdfÃ¸rsel af flere opgaver pÃ¥ samme tid. PÃ¥ maskiner med en enkelt
+processor sker det ved at de forskellige programmer, der kÃ¸rer pÃ¥
+maskinen pÃ¥ skift fÃ¥r rÃ¥dighed over processoren i et lille stykke tid
 (omkring 1/100 sekund).
 </para></glossdef>
 </glossentry>
 
 
 <glossentry id="def-itplatform-netvaerksobjekt">
-<glossterm>Netværksobjekt</glossterm>
+<glossterm>NetvÃ¦rksobjekt</glossterm>
 <glossdef><para>
-Et netværksobjekt er en mindre funktion, der kan kaldes fra en maskine
+Et netvÃ¦rksobjekt er en mindre funktion, der kan kaldes fra en maskine
 til en anden. 
 </para></glossdef>
 </glossentry>
 
 
 <glossentry id="def-itplatform-OSS">
-  <glossterm>OSS: Ofte Stillede Spørgsmål</glossterm>
+  <glossterm>OSS: Ofte Stillede SpÃ¸rgsmÃ¥l</glossterm>
   <abbrev>OSS</abbrev>
   <glossdef>
     <para>
-      En OSS (på engelsk "FAQ") er en samling ofte stillede (og
-      besvarede) spørgsmål om et emne. Det største arkiv at OSS'er
-      findes nok på <ulink url="ftp://rtfm.mit.edu/">ftp://rtfm.mit.edu/</ulink>.
+      En OSS (pÃ¥ engelsk "FAQ") er en samling ofte stillede (og
+      besvarede) spÃ¸rgsmÃ¥l om et emne. Det stÃ¸rste arkiv at OSS'er
+      findes nok pÃ¥ <ulink url="ftp://rtfm.mit.edu/">ftp://rtfm.mit.edu/</ulink>.
     </para>
     <para>
-      OSS kan også stå for den engelske betegnelse for frit programmel (Open
+      OSS kan ogsÃ¥ stÃ¥ for den engelske betegnelse for frit programmel (Open
       Source Software).
     </para>
   </glossdef>
@@ -301,25 +301,25 @@ til en anden.
 <glossterm>PHP: Hypertext Preprocessor</glossterm>
 <abbrev>PHP</abbrev>
 <glossdef><para>
-Programmeringssprog der kan indlejres i websider. Webserveren kører så
-programmet inden websiden bliver sendt af sted til læseren.
+Programmeringssprog der kan indlejres i websider. Webserveren kÃ¸rer sÃ¥
+programmet inden websiden bliver sendt af sted til lÃ¦seren.
 </para></glossdef>
 </glossentry>
 
 <glossentry id="def-itplatform-platform">
 <glossterm>platform</glossterm>
 <glossdef><para>
-En bestemt type styresystem kørende på en bestemt type maskiner. Nogle
-gange blot en bestemt type maskiner. Et eksempel på en platform kan
-være Linux på Alpha-processorer.
+En bestemt type styresystem kÃ¸rende pÃ¥ en bestemt type maskiner. Nogle
+gange blot en bestemt type maskiner. Et eksempel pÃ¥ en platform kan
+vÃ¦re Linux pÃ¥ Alpha-processorer.
 </para></glossdef>
 </glossentry>
 
 <glossentry id="def-itplatform-reiserfs">
 <glossterm>ReiserFS</glossterm>
 <glossdef><para>
-Filsystem, som hurtigt kan reparere sig selv efter f.eks. strømsvigt. 
-Diske med ReiserFS må ikke være mere end 75% fyldte pga. systemets design.
+Filsystem, som hurtigt kan reparere sig selv efter f.eks. strÃ¸msvigt. 
+Diske med ReiserFS mÃ¥ ikke vÃ¦re mere end 75% fyldte pga. systemets design.
 </para></glossdef>
 </glossentry>
 
@@ -327,7 +327,7 @@ Diske med ReiserFS må ikke være mere end 75% fyldte pga. systemets design.
 <glossterm>Rich Text Format</glossterm>
 <abbrev>RTF</abbrev>
 <glossdef><para>
-Filformat der kan håndteres af de fleste (alle?)
+Filformat der kan hÃ¥ndteres af de fleste (alle?)
 tekstbehandlingsprogrammer og derfor er velegnet til at udveksle filer
 med andre.
 </para></glossdef>
@@ -345,14 +345,14 @@ Se systemadministrator.
 <glossterm>"service pack"</glossterm>
 <glossdef><para>
 Microsofts betegnelse for rettelser af fejl i deres programmer eller
-styresystemer. Bør omgås med største varsomhed.
+styresystemer. BÃ¸r omgÃ¥s med stÃ¸rste varsomhed.
 </para></glossdef>
 </glossentry>
 
 <glossentry id="def-itplatform-services">
 <glossterm>services</glossterm>
 <glossdef><para>
-De ydelser systemet stiller til rådighed via netværket. Det kan for
+De ydelser systemet stiller til rÃ¥dighed via netvÃ¦rket. Det kan for
 eksempel inkludere en webserver.
 </para></glossdef>
 </glossentry>
@@ -361,7 +361,7 @@ eksempel inkludere en webserver.
 <glossterm>SSH</glossterm>
 <glossdef><para>
 Secure SHell - Program som bruges til krypteret fjern-adgang. Se
-også fjern-adgang. Findes både i en kommerciel udgave og en fri - Open SSH.
+ogsÃ¥ fjern-adgang. Findes bÃ¥de i en kommerciel udgave og en fri - Open SSH.
 </para></glossdef>
 </glossentry>
 
@@ -369,8 +369,8 @@ også fjern-adgang. Findes både i en kommerciel udgave og en fri - Open SSH.
 <glossentry id="def-itplatform-sikkerhedsopdateringer">
 <glossterm>sikkerhedsopdateringer</glossterm>
 <glossdef><para>
-Opdateringer til styresystem eller programmer, der er nødvendige for
-at rette fejl, der kan gøre det let for "crackere" at bryde ind i
+Opdateringer til styresystem eller programmer, der er nÃ¸dvendige for
+at rette fejl, der kan gÃ¸re det let for "crackere" at bryde ind i
 maskinen.
 </para></glossdef>
 </glossentry>
@@ -378,9 +378,9 @@ maskinen.
 <glossentry id="def-itplatform-skalerbarhed">
 <glossterm>skalerbarhed</glossterm>
 <glossdef><para>
-Det at sammenhængen mellem systemets ydeevne og "størrelse". I et
-lineært skalerende system vil dobbelt så mange processorer give et
-dobbelt så hurtigt system.
+Det at sammenhÃ¦ngen mellem systemets ydeevne og "stÃ¸rrelse". I et
+lineÃ¦rt skalerende system vil dobbelt sÃ¥ mange processorer give et
+dobbelt sÃ¥ hurtigt system.
 </para></glossdef>
 </glossentry>
 
@@ -395,9 +395,9 @@ Filer med basale funktioner, der bruges af mange programmer.
 <glossentry id="def-itplatform-systemadministrator">
 <glossterm>systemadministrator</glossterm>
 <glossdef><para>
-Person der har adgang til at rette i systemets opsætning, oprette nye
-brugerkonti på maskinen og lignende. Systemadministratorens konto er
-"root" på Linux.
+Person der har adgang til at rette i systemets opsÃ¦tning, oprette nye
+brugerkonti pÃ¥ maskinen og lignende. Systemadministratorens konto er
+"root" pÃ¥ Linux.
 </para></glossdef>
 </glossentry>
 
@@ -405,8 +405,8 @@ brugerkonti på maskinen og lignende. Systemadministratorens konto er
 <glossterm>Systemfil</glossterm>
 <glossdef><para>
 En systemfil er en fil evt. et program, som brugeren ikke skal
-ændre. Oftest sker dette ved at brugerrettigheder ikke giver mulighed
-for at lave ændringer.
+Ã¦ndre. Oftest sker dette ved at brugerrettigheder ikke giver mulighed
+for at lave Ã¦ndringer.
 </para></glossdef>
 </glossentry>
 
@@ -416,15 +416,15 @@ for at lave ændringer.
 <glossdef><para>
 En tekstterminal er et tekstbaseret program, hvor man kan skrive
 kommandoer til computeren. Typisk er disse kommandoer i virkeligheden 
-programmer. Unix-verdenen - og dermed Linux - har foretrukket denne måde
-at styre computeren på. 
+programmer. Unix-verdenen - og dermed Linux - har foretrukket denne mÃ¥de
+at styre computeren pÃ¥. 
 </para></glossdef>
 </glossentry>
 
 <glossentry id="def-itplatform-tux">
 <glossterm>Tux</glossterm>
 <glossdef><para>
-Navnet på Linux's officielle logo og maskot, pengvinen Tux. 
+Navnet pÃ¥ Linux's officielle logo og maskot, pengvinen Tux. 
 Tux er skabt af Larry Ewing med programmet "The GIMP".
 Original-udgaven kan hentes fra: 
 <ulink url="http://www.isc.tamu.edu/~lewing/linux/">http://www.isc.tamu.edu/~lewing/linux/</ulink>
@@ -442,8 +442,8 @@ type styresystem eller til andre styresystemer.
 <glossentry id="def-itplatform-webserver">
 <glossterm>webserver</glossterm>
 <glossdef><para>
-Program (evt. også maskinen det kører på) der lagrer og udleverer data
-på "the world wide web". Vi nævner i flæng: Apache, Tux, Roxen og ISS.
+Program (evt. ogsÃ¥ maskinen det kÃ¸rer pÃ¥) der lagrer og udleverer data
+pÃ¥ "the world wide web". Vi nÃ¦vner i flÃ¦ng: Apache, Tux, Roxen og ISS.
 </para></glossdef>
 </glossentry>
 
@@ -458,17 +458,17 @@ System til at beskrive tekstbaserede filformater.
 
 
 <glossentry id="def-itplatform-aaben-dokumentstandard">
-<glossterm>åben dokumentstandard</glossterm>
+<glossterm>Ã¥ben dokumentstandard</glossterm>
 <glossdef><para>
 Filformat til (tekstbehandlings-) dokumenter, hvis beskrivelse er frit
-tilgængelig.
+tilgÃ¦ngelig.
 </para></glossdef>
 </glossentry>
 
 <glossentry id="def-itplatform-en-aaben-standard">
-<glossterm>åben standard</glossterm>
+<glossterm>Ã¥ben standard</glossterm>
 <glossdef><para>
-Standard der er frit tilgængelig og ikke omfattet af patenter.
+Standard der er frit tilgÃ¦ngelig og ikke omfattet af patenter.
 <!-- overvej henvisning til Peter Makholms definition -->
 </para></glossdef>
 </glossentry>

@@ -6,19 +6,19 @@
 
 
 <para>
-"Linux - friheden til vælge Window Manager" er baseret på SSLUG's julekalender 2002. 
-Vi frigiver ofte nye versioner, når der er kommer en del
+"Linux - friheden til vÃ¦lge Window Manager" er baseret pÃ¥ SSLUG's julekalender 2002. 
+Vi frigiver ofte nye versioner, nÃ¥r der er kommer en del
 rettelser ind, eller nye afsnit er blevet skrevet.  Kommentarer, ris
 og ros, og specielt fejl og mangler bedes sendt til <ulink
 url="mailto:linuxbog@sslug.dk">linuxbog@sslug.dk</ulink>, men er du
-medlem af SSLUG, så skriv til 
+medlem af SSLUG, sÃ¥ skriv til 
 <ulink url="mailto:sslug-bog@sslug.dk">sslug-bog@sslug.dk</ulink>. 
-Alle kan bidrage - se om tilmelding se på <ulink url="http://www.sslug.dk/tilmeld">http://www.sslug.dk/tilmeld</ulink>.
+Alle kan bidrage - se om tilmelding se pÃ¥ <ulink url="http://www.sslug.dk/tilmeld">http://www.sslug.dk/tilmeld</ulink>.
 </para>
 
 
 <para>
-Her er en liste over, hvad der er ændret i bogen.
+Her er en liste over, hvad der er Ã¦ndret i bogen.
 </para>
 
 <itemizedlist mark="bullet">
@@ -26,15 +26,15 @@ Her er en liste over, hvad der er ændret i bogen.
 <listitem><para>
 Version 1.2.20050118 - 18. januar 2005
 
-Jacob Sparre Andersen: Retter sproglige fejl. Tilføjer opsætningsfiler til Ion. Tilføjer stikord. Rettet tastefejl i filnavn. Rettet teksten om <filename>${HOME}/.xsession</filename>
+Jacob Sparre Andersen: Retter sproglige fejl. TilfÃ¸jer opsÃ¦tningsfiler til Ion. TilfÃ¸jer stikord. Rettet tastefejl i filnavn. Rettet teksten om <filename>${HOME}/.xsession</filename>
 
 </para></listitem>
 
 <listitem><para>
 Version 1.2 - 25. januar 2004
-Hanne Munkholm har ændret afsnittet om WindowMaker med
-mange rettelser og tilføjelser.
-Atte André Jensen skriver om XFce
+Hanne Munkholm har Ã¦ndret afsnittet om WindowMaker med
+mange rettelser og tilfÃ¸jelser.
+Atte AndrÃ© Jensen skriver om XFce
 Peter Makholm flytter rundt og reorganiserer indholdet.
 Peter Makholm skriver om XDM.
 Jacob Sparre Andersen: Retter sproglige fejl.
@@ -42,7 +42,7 @@ Jacob Sparre Andersen: Retter sproglige fejl.
 
 <listitem><para>
 Version 1.1 - 7. oktober 2003:
-Peter Makholm skriver noget nyt i indledningen om de forskellige begreber, påbegynder en ordliste og 
+Peter Makholm skriver noget nyt i indledningen om de forskellige begreber, pÃ¥begynder en ordliste og 
 retter sproglige fejl og uklarheder.
 Hanne Munkholm retter et par fejl.
 Jacob Sparre Andersen retter fejl og udvider stikordsregisteret.
@@ -52,9 +52,9 @@ Jacob Sparre Andersen skriver et par ord til om WindowMaker.
 
 <listitem><para>
 Version 1.0 - 6. april 2003:
-Peter Toft; Har overført SSLUG's julekalender 2002 til denne bog samt taget
-dele fra "Linux - Friheden til at vælge programmer" over til denne bog.
-Erik Søe Sørensen retter stavefejl.
+Peter Toft; Har overfÃ¸rt SSLUG's julekalender 2002 til denne bog samt taget
+dele fra "Linux - Friheden til at vÃ¦lge programmer" over til denne bog.
+Erik SÃ¸e SÃ¸rensen retter stavefejl.
 </para></listitem>
 </itemizedlist>
 

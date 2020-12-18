@@ -3,59 +3,59 @@
 
     
 <sect1 id="ooo-rammer-fra-fil">
-  <title>Indsætte grafik fra en fil</title>
+  <title>IndsÃ¦tte grafik fra en fil</title>
 
-<para>Du kan indsætte et billede/grafik som du har gemt i en fil med et
+<para>Du kan indsÃ¦tte et billede/grafik som du har gemt i en fil med et
     andet program:</para>
 
 <orderedlist>
       <listitem>
 
-<para>Gem grafikken på en fil med det andet program: <emphasis>Eksempel</emphasis> : I
-        din browser f.eks. Mozilla ell. Opera kan du højreklikke på et
-        billede og vælge <emphasis>Gem billede...</emphasis>.</para>
+<para>Gem grafikken pÃ¥ en fil med det andet program: <emphasis>Eksempel</emphasis> : I
+        din browser f.eks. Mozilla ell. Opera kan du hÃ¸jreklikke pÃ¥ et
+        billede og vÃ¦lge <emphasis>Gem billede...</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Placer markøren det sted (afsnit) i dokumentet, hvor billedet skal
+<para>Placer markÃ¸ren det sted (afsnit) i dokumentet, hvor billedet skal
         placeres.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Vælg <emphasis>Indsæt/Billede/Fra fil</emphasis> og udvælg et billede i
+<para>VÃ¦lg <emphasis>IndsÃ¦t/Billede/Fra fil</emphasis> og udvÃ¦lg et billede i
         fildialogen.</para>
 
-<para>Hvis du sætter hak i <emphasis>Eksempel</emphasis> bliver billedet vist i højre
-        side, når du klikker på filnavnet.</para>
+<para>Hvis du sÃ¦tter hak i <emphasis>Eksempel</emphasis> bliver billedet vist i hÃ¸jre
+        side, nÃ¥r du klikker pÃ¥ filnavnet.</para>
 
-<para>Hvis du sætter hak i <emphasis>Kæd</emphasis> vil billedet ikke blive gemt
+<para>Hvis du sÃ¦tter hak i <emphasis>KÃ¦d</emphasis> vil billedet ikke blive gemt
         sammen med dokumentet, i stedet hentes det hver gang fra den
         oprindelige fil. Det betyder at dit dokument fylder mindre; til
-        gengæld skal du have grafikfilen med hvis du f.eks. kopierer dit
+        gengÃ¦ld skal du have grafikfilen med hvis du f.eks. kopierer dit
         dokument til en diskette.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Klik <emphasis>Åbn</emphasis>.</para>
+<para>Klik <emphasis>Ã…bn</emphasis>.</para>
 
 </listitem>
     </orderedlist>
 
-<para>Skærmbilledet ser så nogenlunde sådan ud, idet billedet som standard
-    placeres øverst, centreret i det aktuelle afsnit og uden ombrydning.:</para>
+<para>SkÃ¦rmbilledet ser sÃ¥ nogenlunde sÃ¥dan ud, idet billedet som standard
+    placeres Ã¸verst, centreret i det aktuelle afsnit og uden ombrydning.:</para>
 
 <figure float="1" id="fig-ooo-grafikindsat">
 <title>Indsat grafik</title>
 <graphic fileref="grafikindsat.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Herefter kan du justere størrelse og placering af billedet, se <xref linkend="ooo-formattering-af-grafik"/>afsnit 16.5..</para>
+<para>Herefter kan du justere stÃ¸rrelse og placering af billedet, se <xref linkend="ooo-formattering-af-grafik"/>afsnit 16.5..</para>
 
-</sect1>    <!--   16.2. Indsætte grafik fra en fil -->
+</sect1>    <!--   16.2. IndsÃ¦tte grafik fra en fil -->
 

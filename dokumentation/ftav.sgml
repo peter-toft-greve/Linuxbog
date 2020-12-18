@@ -2,34 +2,34 @@
 <!-- README fra roden er fjernet, og i stedet lagt i denne fil. /chlor -->
 
 <chapter id="ftav">
-<title>Fremstilling af "Friheden til at vælge" bøgerne</title>
+<title>Fremstilling af "Friheden til at vÃ¦lge" bÃ¸gerne</title>
 <indexterm><primary>FTAV</primary></indexterm>
 
 <para>
-Dette kapitel har oprindeligt været linuxbog-gruppens interne
-retningslinjer og hjælp for skrivning og fremstilling af bøgerne
-"Linux - Friheden til at vælge". 
+Dette kapitel har oprindeligt vÃ¦ret linuxbog-gruppens interne
+retningslinjer og hjÃ¦lp for skrivning og fremstilling af bÃ¸gerne
+"Linux - Friheden til at vÃ¦lge". 
 </para>
 
 <para>
-Målgruppen til dette kapitel er således dem der gerne vil skrive
+MÃ¥lgruppen til dette kapitel er sÃ¥ledes dem der gerne vil skrive
 noget til FTAV, eller dem der gerne vil vide noget om hvordan
-vi fremstiller bøgerne.
+vi fremstiller bÃ¸gerne.
 </para>
 
 <para>
 I linuxbog-gruppen er forskellige personer med forskellige 
-roller/arbejdsområder.
+roller/arbejdsomrÃ¥der.
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
  <emphasis>DocBook-skriverkarl</emphasis>
- En person der skriver i bøgerne og selv skriver SGML-tags, således
- at bøgerne med det samme er klar til videre automatisk behandling.
- Personen uploader også selv nye tekster, så disse bliver 
- automatisk vist på 
+ En person der skriver i bÃ¸gerne og selv skriver SGML-tags, sÃ¥ledes
+ at bÃ¸gerne med det samme er klar til videre automatisk behandling.
+ Personen uploader ogsÃ¥ selv nye tekster, sÃ¥ disse bliver 
+ automatisk vist pÃ¥ 
  <ulink url="http:/cvs.linuxbog.dk/">cvs.linuxbog.dk</ulink>
  </para>
  <para>
@@ -40,25 +40,25 @@ roller/arbejdsområder.
 </listitem>
 <listitem>
  <para>
- <emphasis>Korrekturlæser</emphasis>
- En person der læser korrektur på bøgerne. 
- Det er ikke noget der sådan foregår i faste intervaller,
- men mere sådan "on and off".
- Det har nogle gange foregået ved at alle bøgerne blev
- printet ud, og så satte personen røde mærker hvor det forkert.
- Efterfølgende har en 
+ <emphasis>KorrekturlÃ¦ser</emphasis>
+ En person der lÃ¦ser korrektur pÃ¥ bÃ¸gerne. 
+ Det er ikke noget der sÃ¥dan foregÃ¥r i faste intervaller,
+ men mere sÃ¥dan "on and off".
+ Det har nogle gange foregÃ¥et ved at alle bÃ¸gerne blev
+ printet ud, og sÃ¥ satte personen rÃ¸de mÃ¦rker hvor det forkert.
+ EfterfÃ¸lgende har en 
  <emphasis>DocBook-skriverkarl</emphasis>
- så rettet bøgerne igennem efter disse printudskrifter.
+ sÃ¥ rettet bÃ¸gerne igennem efter disse printudskrifter.
  </para>
  <para>
- Der er typisk kun én person der har denne rolle.
+ Der er typisk kun Ã©n person der har denne rolle.
  </para>
 </listitem>
 <listitem>
  <para>
  <emphasis>Book build programmer</emphasis>
  En person der vedligeholder det automatisk byggesystem.
- Arbejdet indebære vedligeholdelse af 
+ Arbejdet indebÃ¦re vedligeholdelse af 
  <command>autoconf</command>, <command>automake</command>,
  <filename>Makefile</filename>, <command>perl</command>,
  <command>shell</command> og <command>php</command> -scripts.
@@ -70,99 +70,99 @@ roller/arbejdsområder.
 <listitem>
  <para>
  <emphasis>Release manager</emphasis>
- En person der klargøre bøgerne til at blive udgivet.
+ En person der klargÃ¸re bÃ¸gerne til at blive udgivet.
  En del af dette arbejde er at flytte filerne fra
  <ulink url="http:/cvs.linuxbog.dk/">cvs.linuxbog.dk</ulink>
  til
  <ulink url="http:/www.linuxbog.dk/">www.linuxbog.dk</ulink>
  .
- Personen skal også skrive en annoncering af de nye bøger
+ Personen skal ogsÃ¥ skrive en annoncering af de nye bÃ¸ger
  (eller bede en anden om det).
  </para>
  <para>
- Der er typisk kun én person der har denne rolle.
+ Der er typisk kun Ã©n person der har denne rolle.
  </para>
 </listitem>
 </itemizedlist>
 
 <sect1 id="ftav-ftav">
-<title>Hvad er Linux -- Friheden til at vælge (FTAV)</title>
+<title>Hvad er Linux -- Friheden til at vÃ¦lge (FTAV)</title>
 <indexterm><primary>FTAV</primary><secondary>Hvad er Linux</secondary></indexterm>
 
 <para>
-"Linux -- Friheden til at vælge" er en række bøger om Linux, Unix og
+"Linux -- Friheden til at vÃ¦lge" er en rÃ¦kke bÃ¸ger om Linux, Unix og
 andre relaterede emner, som er skrevet af en gruppe frivillige,
-fortrinsvis medlemmer af Linux brugergruppen "Skåne-Sjælland Linux
+fortrinsvis medlemmer af Linux brugergruppen "SkÃ¥ne-SjÃ¦lland Linux
 User Group" (SSLUG; http://www.sslug.dk/).
 </para>
 
 <para>
-FTAV udgives med jævne mellemrum på http://www.linuxbog.dk/ . Her kan
-du downloade færdige udgaver af bøgerne, i flere forskellige
+FTAV udgives med jÃ¦vne mellemrum pÃ¥ http://www.linuxbog.dk/ . Her kan
+du downloade fÃ¦rdige udgaver af bÃ¸gerne, i flere forskellige
 formater. Nogen formater er velegnet til online brug, f.eks. HTML,
 andre egner sig bedre til tryk, f.eks. PDF, ligesom der er formater
-til palmpilot, mv. Endeligt er kildeteksten til bøgerne, svarende til
-de færdige udgaver også tilgængeligt her.
+til palmpilot, mv. Endeligt er kildeteksten til bÃ¸gerne, svarende til
+de fÃ¦rdige udgaver ogsÃ¥ tilgÃ¦ngeligt her.
 </para>
 
 <para>
-Udviklingen af bøgerne -- rettelser, opdateringer, mv -- foregår på
-http://cvs.linuxbog.dk/ . Her finder du i princippet det samme som på
-http://www.linuxbog.dk/, men bøgerne indeholder de sidste rettelser
-(og fejl, unøjagtigheder, mv) som forfatterne har tilføjet. Her findes
-også information om hvordan du kan komme i kontakt med
-forfatterne/udviklerne på bøgerne.
+Udviklingen af bÃ¸gerne -- rettelser, opdateringer, mv -- foregÃ¥r pÃ¥
+http://cvs.linuxbog.dk/ . Her finder du i princippet det samme som pÃ¥
+http://www.linuxbog.dk/, men bÃ¸gerne indeholder de sidste rettelser
+(og fejl, unÃ¸jagtigheder, mv) som forfatterne har tilfÃ¸jet. Her findes
+ogsÃ¥ information om hvordan du kan komme i kontakt med
+forfatterne/udviklerne pÃ¥ bÃ¸gerne.
 </para>
 </sect1><!-- id="ftav-ftav" -->
 
 <sect1 id="ftav-byg-fra-db">
-<title>Bygning af bøgerne fra kildekode</title>
-<indexterm><primary>FTAV</primary><secondary>Bygning af bøgerne fra kildekode</secondary></indexterm>
+<title>Bygning af bÃ¸gerne fra kildekode</title>
+<indexterm><primary>FTAV</primary><secondary>Bygning af bÃ¸gerne fra kildekode</secondary></indexterm>
 
 <para>
-Der er relativt få grunde til at bygge bøgerne selv fra kildekode. Her
-opsummerer vi et par af de årsager der kan være.
+Der er relativt fÃ¥ grunde til at bygge bÃ¸gerne selv fra kildekode. Her
+opsummerer vi et par af de Ã¥rsager der kan vÃ¦re.
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
   <para>
-  Du ønsker at skrive et afsnit til bøgerne, eller at rette noget der
+  Du Ã¸nsker at skrive et afsnit til bÃ¸gerne, eller at rette noget der
   allerede er skrevet og vil derfor gerne kunne bygge dem selv.
   </para>
 </listitem>
 <listitem>
   <para>
-  Du ønsker at bygge bøgerne på en anden måde (f.eks. anden sidebredde
-  til fast tryk) end de bliver bygget på linuxbog.dk.
+  Du Ã¸nsker at bygge bÃ¸gerne pÃ¥ en anden mÃ¥de (f.eks. anden sidebredde
+  til fast tryk) end de bliver bygget pÃ¥ linuxbog.dk.
   </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Hvis ikke du har et af ovennævnte behov, burde du kunne "nøjes" med de
-færdigbyggede bøger på cvs.linuxbog.dk, eller www.linuxbog.dk. Hvis du
-vil bygge bøgerne selv, bliver det i det følgende beskrevet hvordan
-dette gøres.
+Hvis ikke du har et af ovennÃ¦vnte behov, burde du kunne "nÃ¸jes" med de
+fÃ¦rdigbyggede bÃ¸ger pÃ¥ cvs.linuxbog.dk, eller www.linuxbog.dk. Hvis du
+vil bygge bÃ¸gerne selv, bliver det i det fÃ¸lgende beskrevet hvordan
+dette gÃ¸res.
 </para>
 
 <para>
-For at kunne bygge bøgerne, skal du have en del forskellige programmer
-installeret. Det drejer sig om værktøjer der kan oversætte sgml koden
-(som bøgerne er skrevet i) til de forskellige formater (html, pdf, ps,
-palm pilot, mv) som bøgerne kan oversættes til.
+For at kunne bygge bÃ¸gerne, skal du have en del forskellige programmer
+installeret. Det drejer sig om vÃ¦rktÃ¸jer der kan oversÃ¦tte sgml koden
+(som bÃ¸gerne er skrevet i) til de forskellige formater (html, pdf, ps,
+palm pilot, mv) som bÃ¸gerne kan oversÃ¦ttes til.
 </para>
 
 <para>
-Fremgangsmåden for at bygge bøgerne er lidt forskellig, afhængigt af
-hvordan du har fået fat i kildeteksterne. Hvis du har fået CVS adgang
-til kildekoden, skal du starte med at læse afsnittet nedenfor kaldet
-"Adgang til kildekoden fra CVS". I det følgende beskrives hvordan en
-enkelt bog, downloadet som en tar.gz fil, oversættes.
+FremgangsmÃ¥den for at bygge bÃ¸gerne er lidt forskellig, afhÃ¦ngigt af
+hvordan du har fÃ¥et fat i kildeteksterne. Hvis du har fÃ¥et CVS adgang
+til kildekoden, skal du starte med at lÃ¦se afsnittet nedenfor kaldet
+"Adgang til kildekoden fra CVS". I det fÃ¸lgende beskrives hvordan en
+enkelt bog, downloadet som en tar.gz fil, oversÃ¦ttes.
 </para>
 
 <para>
-Først skal du udpakke bogen, f.eks. med kommandoen
+FÃ¸rst skal du udpakke bogen, f.eks. med kommandoen
 </para>
 
 <screen>
@@ -180,9 +180,9 @@ konfigurere bogen:
 </screen>
 
 <para>
-Ved at skrive --help vil du få en oversigt over de argumenter
-configure kan tage. Som udgangspunkt burde det ikke være nødvendigt at
-anvende nogen argumenter, men der kan være situationer hvor det er ønskværdigt.
+Ved at skrive --help vil du fÃ¥ en oversigt over de argumenter
+configure kan tage. Som udgangspunkt burde det ikke vÃ¦re nÃ¸dvendigt at
+anvende nogen argumenter, men der kan vÃ¦re situationer hvor det er Ã¸nskvÃ¦rdigt.
 </para>
 
 <para>
@@ -194,19 +194,19 @@ Du kan nu konfigurere bygning af bogen, med f.eks.
 </screen>
 
 <para>
-Herefter vil configure undersøge dit system for at finde ud af om du
-har de nødvendige værktøjer til at bygge bogen med. Hvis configure
-finder ud af at du mangler centrale værktøjer, vil den afbryde med en
-fejl. Det kan f.eks. være at du mangler programmet "jade" som kan læse
+Herefter vil configure undersÃ¸ge dit system for at finde ud af om du
+har de nÃ¸dvendige vÃ¦rktÃ¸jer til at bygge bogen med. Hvis configure
+finder ud af at du mangler centrale vÃ¦rktÃ¸jer, vil den afbryde med en
+fejl. Det kan f.eks. vÃ¦re at du mangler programmet "jade" som kan lÃ¦se
 sgml filer, eller programmet "jw" som er en frontend til jade. Disse
-programmer er altid krævet for overhovedet at kunne oversætte
-bøgerne. For de forskellige formater bøgerne skal oversættes til,
-kræves desuden nogle forskellige værktøjer. F.eks. kræves programmet
-"db2html" for at kunne lave en udgave af bøgerne i html
-format. Configure programmet vil ikke afbryde hvis disse værktøjer
-mangler, men blot konfigurere oversættelsen således at disse ikke kan
+programmer er altid krÃ¦vet for overhovedet at kunne oversÃ¦tte
+bÃ¸gerne. For de forskellige formater bÃ¸gerne skal oversÃ¦ttes til,
+krÃ¦ves desuden nogle forskellige vÃ¦rktÃ¸jer. F.eks. krÃ¦ves programmet
+"db2html" for at kunne lave en udgave af bÃ¸gerne i html
+format. Configure programmet vil ikke afbryde hvis disse vÃ¦rktÃ¸jer
+mangler, men blot konfigurere oversÃ¦ttelsen sÃ¥ledes at disse ikke kan
 bygges. Til slut vil configure udskrive en oversigt over hvilke
-formater der kan oversættes til. Det kan f.eks. se sådan her ud:
+formater der kan oversÃ¦ttes til. Det kan f.eks. se sÃ¥dan her ud:
 </para>
 
 <screen>
@@ -219,9 +219,9 @@ configure:  Kan PAKHTML bygges : ja
 </screen>
 
 <para>
-Hvis det format du gerne vil bygge til, ikke understøttes, kan du
-kigge i det configure har skrevet for at finde årsagen. Eksempelvis
-finder jeg følgende linie:
+Hvis det format du gerne vil bygge til, ikke understÃ¸ttes, kan du
+kigge i det configure har skrevet for at finde Ã¥rsagen. Eksempelvis
+finder jeg fÃ¸lgende linie:
 </para>
 
 <screen>
@@ -229,12 +229,12 @@ checking for plucker-build... nej - det er ikke muligt at lave PALM udgaven
 </screen>
 
 <para>
-og ud fra det kan jeg altså regne ud at jeg skal bruge programmet
-"plucker-build" for at kunne bygge bøgerne til palmpilot.
+og ud fra det kan jeg altsÃ¥ regne ud at jeg skal bruge programmet
+"plucker-build" for at kunne bygge bÃ¸gerne til palmpilot.
 </para>
 
 <para>
-Hvis du mangler nogen værktøjer må du installere dem, og køre
+Hvis du mangler nogen vÃ¦rktÃ¸jer mÃ¥ du installere dem, og kÃ¸re
 configure igen. Hvis du har vanskeligt ved at finde ud af hvorfor du
 ikke kan bygge et bestemt format, kan du kigge i filen "config.log"
 hvor configure skriver detaljeret information om hvad det foretager
@@ -242,7 +242,7 @@ sig.
 </para>
 
 <para>
-Når du har fået support for de formater du gerne vil have, kan du
+NÃ¥r du har fÃ¥et support for de formater du gerne vil have, kan du
 skrive f.eks.
 </para>
 
@@ -252,7 +252,7 @@ skrive f.eks.
 
 <para>
 for at lave html udgaven. Eller, make pdf for at lave pdf udgaven,
-osv. Bemærk at palm formatet hedder palmpilot.
+osv. BemÃ¦rk at palm formatet hedder palmpilot.
 </para>
 </sect1><!-- ftav-byg-fra-db -->
 
@@ -261,22 +261,22 @@ osv. Bemærk at palm formatet hedder palmpilot.
 <indexterm><primary>FTAV</primary><secondary>Adgang til kildekoden fra CVS</secondary></indexterm>
 
 <para>
-For at få adgang til bøgerne via CVS, skal du vise at du vil være
-aktiv og kan arbejde ansvarligt med bøgerne :) Få login på
+For at fÃ¥ adgang til bÃ¸gerne via CVS, skal du vise at du vil vÃ¦re
+aktiv og kan arbejde ansvarligt med bÃ¸gerne :) FÃ¥ login pÃ¥
 tyge.sslug.dk ved at skrive til Peter Toft
-<email>pto@linuxbog.dk</email> og gør
-dernæst følgende.
+<email>pto@linuxbog.dk</email> og gÃ¸r
+dernÃ¦st fÃ¸lgende.
 </para>
 
 <para>
-Installer OpenSSH på din maskine og følg 
-vejledningen på 
+Installer OpenSSH pÃ¥ din maskine og fÃ¸lg 
+vejledningen pÃ¥ 
 <ulink url="http://cvs.linuxbog.dk/sikkerhed/bog/sikker-net-trafik.html">http://cvs.linuxbog.dk/sikkerhed/bog/sikker-net-trafik.html</ulink>
 <ulink url="http://cvs.linuxbog.dk/sikkerhed/bog/opsaetning-af-openssh.html">http://cvs.linuxbog.dk/sikkerhed/bog/opsaetning-af-openssh.html</ulink>
 </para>
 
 <para>
-Gør følgende (Fremhævede linier udføres kun første gang)
+GÃ¸r fÃ¸lgende (FremhÃ¦vede linier udfÃ¸res kun fÃ¸rste gang)
 </para>
 
 <screen>
@@ -286,36 +286,36 @@ Gør følgende (Fremhævede linier udføres kun første gang)
 <prompt>[tyge@hven ~]$ </prompt><userinput> cd public_html</userinput>
 <prompt>[tyge@hven ~]$ </prompt><emphasis><userinput> cvs -d /usr/local/CVSROOT checkout linuxbog</userinput></emphasis>
 <prompt>[tyge@hven ~]$ </prompt><userinput> cd linuxbog</userinput>
-<prompt>[tyge@hven ~]$ </prompt><userinput> ./configure</userinput>      &lt;&lt;-- NB, se afsnit længere nede om byggesystemet.
+<prompt>[tyge@hven ~]$ </prompt><userinput> ./configure</userinput>      &lt;&lt;-- NB, se afsnit lÃ¦ngere nede om byggesystemet.
 <prompt>[tyge@hven ~]$ </prompt><userinput> cd BOGNAVN</userinput>
 <prompt>[tyge@hven ~]$ </prompt><userinput> make html</userinput>
 </screen>
 
 <para>
-Så kan du køre
+SÃ¥ kan du kÃ¸re
 Netscape http://cvs.sslug.dk/~DITLOGIN/linuxbog/java/bog
 </para>
 
 <para>
-Og teksten kommer på web hver morgen
+Og teksten kommer pÃ¥ web hver morgen
 http://cvs.linuxbog.dk
 </para>
 
 <para>
-configure --help fortæller om nogle options, blandt andet
---med-alle, som får make til at generere et arkiv og en
-samlet html-version af alle bøgerne.
+configure --help fortÃ¦ller om nogle options, blandt andet
+--med-alle, som fÃ¥r make til at generere et arkiv og en
+samlet html-version af alle bÃ¸gerne.
 </para>
 
 <para>
-Du kan også køre ./configure i de enkelt bog-directories.
-cd BOGNAVN &&  ./configure -- men det er kun nødvendigt,
-hvis du selv har ændret i bootstrap.subdir.
+Du kan ogsÃ¥ kÃ¸re ./configure i de enkelt bog-directories.
+cd BOGNAVN &&  ./configure -- men det er kun nÃ¸dvendigt,
+hvis du selv har Ã¦ndret i bootstrap.subdir.
 </para>
 
 <para>
-Hvis du gerne vil have filerne hjem, så kan du sætte
-følgende miljø-variabel (environment-variable)
+Hvis du gerne vil have filerne hjem, sÃ¥ kan du sÃ¦tte
+fÃ¸lgende miljÃ¸-variabel (environment-variable)
 </para>
 
 <screen>
@@ -331,7 +331,7 @@ og skrive
 </screen>
 
 <para>
-hvorefter du får bogen checket ud.
+hvorefter du fÃ¥r bogen checket ud.
 </para>
 
 <para>
@@ -340,16 +340,16 @@ cvs -d DITLOGIN@tyge.sslug.dk:/usr/local/CVSROOT checkout linuxbog/friheden
 </para>
 
 <para>
-Den samlede størrelse af CVS-checkout af alle bøger er ca. 30MB
+Den samlede stÃ¸rrelse af CVS-checkout af alle bÃ¸ger er ca. 30MB
 </para>
 
 <para>
-De enkelte bøger varierer fra &lt; 1.0 MB (dokumentation) til 
+De enkelte bÃ¸ger varierer fra &lt; 1.0 MB (dokumentation) til 
 8.8 MB (applikationer)
 </para>
 
 <para>
-Læs
+LÃ¦s
 <ulink url="http://cvs.linuxbog.dk/program/bog/vaerktoej.html#VAERKTOEJ-CVS">http://cvs.linuxbog.dk/program/bog/vaerktoej.html#VAERKTOEJ-CVS</ulink>
 </para>
 </sect1><!-- ftav-cvsadgang -->
@@ -360,7 +360,7 @@ Læs
 
 <para>
 Hvis du vil have en email hver gang
-der ryger en fil ind i CVS-arkivet (cvs commit), så kan 
+der ryger en fil ind i CVS-arkivet (cvs commit), sÃ¥ kan 
 I tilmelde jer 
 <email>linuxbog-commit@tyge.sslug.dk</email> ved 
 at skrive til
@@ -368,7 +368,7 @@ at skrive til
 </para>
 
 <para>
-I som har konto på tyge kan bruge 
+I som har konto pÃ¥ tyge kan bruge 
 </para>
 
 <screen>
@@ -377,22 +377,22 @@ I som har konto på tyge kan bruge
 </screen>
 
 <para>
-til at følge de filer I er interesserede i.
+til at fÃ¸lge de filer I er interesserede i.
 </para>
 
 <para>
-Hvordan ser de mails så ud man kan modtage på den nye 
+Hvordan ser de mails sÃ¥ ud man kan modtage pÃ¥ den nye 
 liste? De vil indeholde info om hvem som lavede 
-ændringen (pto), hvilket projekt der er 
-ændret (linuxbog) og hvilke filer som er ændret (her 
-kun hjaelpe.html) og man få den log-besked vi skriver 
+Ã¦ndringen (pto), hvilket projekt der er 
+Ã¦ndret (linuxbog) og hvilke filer som er Ã¦ndret (her 
+kun hjaelpe.html) og man fÃ¥ den log-besked vi skriver 
 hver gang (kan ses i 
 <ulink url="http://cvs.linuxbog.dk/cvs2html/">http://cvs.linuxbog.dk/cvs2html/</ulink>
 -&gt;
 <ulink url="http://cvs.linuxbog.dk/cvs2html/cvs_crono.html">http://cvs.linuxbog.dk/cvs2html/cvs_crono.html</ulink>
 )
-Man får således ikke selve ændringen at se kun 
-log-beskeden og hvad der er ændret - og af hvem.
+Man fÃ¥r sÃ¥ledes ikke selve Ã¦ndringen at se kun 
+log-beskeden og hvad der er Ã¦ndret - og af hvem.
 </para>
 </sect1><!-- ftav-watch-add -->
 
@@ -401,14 +401,14 @@ log-beskeden og hvad der er ændret - og af hvem.
 <indexterm><primary>FTAV</primary><secondary>Vejledning i at skrive</secondary></indexterm>
 
 <para>
-Læs 
+LÃ¦s 
 <link linkend="docbook">DocBook</link>
 </para>
 
 <para>
 Hver bog er organiseret gennem bog.sgml og indhold.sgml
-pga. integration med "alle-upgaven" (alle bøgerne 
-samlet) så er det smart at jeg i bog.sgml anfører 
+pga. integration med "alle-upgaven" (alle bÃ¸gerne 
+samlet) sÃ¥ er det smart at jeg i bog.sgml anfÃ¸rer 
 filernes kobling til et SGML-tag - eksempler
 </para>
 
@@ -423,11 +423,11 @@ filernes kobling til et SGML-tag - eksempler
 og at jeg sidst i filen bog.sgml siger at NU kommer 
 java-indhold - i praksis skriver du &amp;java-indhold;
 og dermed kopieres filen indhold.sgml ind (jfr. 
-ovenstående).
+ovenstÃ¥ende).
 </para>
 
 <para>
-Hvis du så kigger i indhold.sgml så vil jeg i bunden 
+Hvis du sÃ¥ kigger i indhold.sgml sÃ¥ vil jeg i bunden 
 bruge din indhold.sgml ved at skrive
 </para>
 
@@ -438,7 +438,7 @@ bruge din indhold.sgml ved at skrive
 </programlisting>
 
 <para>
-Dermed kommer de tre filer ind i følgende rækkefølge
+Dermed kommer de tre filer ind i fÃ¸lgende rÃ¦kkefÃ¸lge
 </para>
 
 <orderedlist>
@@ -448,8 +448,8 @@ Dermed kommer de tre filer ind i følgende rækkefølge
 </orderedlist>
 
 <para>
-Når I har indført en ny fil VM.sgml og den skal med i 
-f.eks. java bogen, så skal I indføje en linie i bog.sgml
+NÃ¥r I har indfÃ¸rt en ny fil VM.sgml og den skal med i 
+f.eks. java bogen, sÃ¥ skal I indfÃ¸je en linie i bog.sgml
 </para>
 
 <programlisting>
@@ -457,7 +457,7 @@ f.eks. java bogen, så skal I indføje en linie i bog.sgml
 </programlisting>
 
 <para>
-og i indhold.sgml skal I på passende sted referere 
+og i indhold.sgml skal I pÃ¥ passende sted referere 
 </para>
 
 <programlisting>
@@ -465,10 +465,10 @@ og i indhold.sgml skal I på passende sted referere
 </programlisting>
 
 <para>
-Dernæst skal I tilføje en linie under den rette bog i 
+DernÃ¦st skal I tilfÃ¸je en linie under den rette bog i 
 linuxbog/alle/bog.sgml - samme som i bog.sgml for den 
-enkelte bog - men med ../../../ sat foran stien. På den
-måde vil alle-bogen også være opdateret.
+enkelte bog - men med ../../../ sat foran stien. PÃ¥ den
+mÃ¥de vil alle-bogen ogsÃ¥ vÃ¦re opdateret.
 </para>
 
 <programlisting>
@@ -480,16 +480,16 @@ måde vil alle-bogen også være opdateret.
 <indexterm><primary>FTAV</primary><secondary>Tag ID</secondary></indexterm>
 
 <para>
-XML versionen kræver, at alle tags skrives med små bogstaver og
+XML versionen krÃ¦ver, at alle tags skrives med smÃ¥ bogstaver og
 alle tags har formen <sgmltag>&lt;tag [attributer]>tagged text&lt;/tag&gt;</sgmltag>
 </para>
 
 <para>
 Afsnit tags, fx. <sgmltag>&lt;sect1 id="xx-beskrivende-navn"&gt;</sgmltag> bliver brugt
-til at give html-filerne navne, så det beskrivende navn vælges
+til at give html-filerne navne, sÃ¥ det beskrivende navn vÃ¦lges
 med omhu. Det er vistnok en god ide at bruge en bogstavkode for
-selve bogens navn, altså: erstat xx med den identifikation, som
-benyttes for den bog, du skriver på.
+selve bogens navn, altsÃ¥: erstat xx med den identifikation, som
+benyttes for den bog, du skriver pÃ¥.
 </para>
 </sect2>
 
@@ -498,16 +498,16 @@ benyttes for den bog, du skriver på.
 <indexterm><primary>FTAV</primary><secondary>Notation for skrivning</secondary></indexterm>
 
 <para>
-For at bøgerne ligner hinanden mest muligt i de viste
+For at bÃ¸gerne ligner hinanden mest muligt i de viste
 eksempler, skal der anvendes samme brugernavn og
-maskinnavn i alle bøger.
+maskinnavn i alle bÃ¸ger.
 </para>
 
 <para>
-Den primære bruger er 'tyge' og hans fulde navn er
+Den primÃ¦re bruger er 'tyge' og hans fulde navn er
 'Tyge Brahe'. Denne bruger symbolisere brugeren
 selv. Skal der illustreres andre brugere der 
-kommunikeres med, eller der skal oprettes på et
+kommunikeres med, eller der skal oprettes pÃ¥ et
 system, bruges:
 </para>
 
@@ -517,14 +517,14 @@ axel 'Axel Brahe'
 </programlisting>
 
 <para>
-Valget af 'tyge', 'otto' og 'axel' udemærker sig ved
+Valget af 'tyge', 'otto' og 'axel' udemÃ¦rker sig ved
 at de alle har 4 tegn i navnet, og giver overskuelig
-liste når de bliver brugt i eksempler.
+liste nÃ¥r de bliver brugt i eksempler.
 </para>
 
 <para>
-Den primære maskine som brugeren fysisk sidder ved
-hedder 'hven.sslug.dk', hvor normalt brug så blot er
+Den primÃ¦re maskine som brugeren fysisk sidder ved
+hedder 'hven.sslug.dk', hvor normalt brug sÃ¥ blot er
 'hven'. Skal der kommunikeres med andre maskiner,
 hedder de:
 </para>
@@ -563,7 +563,7 @@ hedder de:
 </tbody></tgroup></table>
 
 <para>
-En normal-prompt (bash) i homedir bliver så:
+En normal-prompt (bash) i homedir bliver sÃ¥:
 </para>
 
 <screen>
@@ -571,8 +571,8 @@ En normal-prompt (bash) i homedir bliver så:
 </screen>
 
 <para>
-Det er ikke på forhånd givet at 'otto' og 'axel'
-har login på 'hven.sslug.dk', det skal fremgå af
+Det er ikke pÃ¥ forhÃ¥nd givet at 'otto' og 'axel'
+har login pÃ¥ 'hven.sslug.dk', det skal fremgÃ¥ af
 eksemplet.
 </para>
 
@@ -587,31 +587,31 @@ at jorden er flad, det ville dog have gjort det
 hele lidt nemmere.
 </para>
 </footnote> (latinsk: Tycho) er en kendt
-dansk astronom der blev født på Sjælland og voksede
-op i Skåne. Sidst bosat på Hven. Otto er hans far
+dansk astronom der blev fÃ¸dt pÃ¥ SjÃ¦lland og voksede
+op i SkÃ¥ne. Sidst bosat pÃ¥ Hven. Otto er hans far
 og Axel er hans bror.
 </para>
 </sect2><!-- ftav-notatioon -->
 </sect1><!-- ftav-skrivevejl -->
 
 <sect1 id="ftav-mere-byg-bog">
-<title>Mere om bygning af bøgerne fra CVS</title>
-<indexterm><primary>FTAV</primary><secondary>Mere om bygning af bøgerne fra CVS</secondary></indexterm>
+<title>Mere om bygning af bÃ¸gerne fra CVS</title>
+<indexterm><primary>FTAV</primary><secondary>Mere om bygning af bÃ¸gerne fra CVS</secondary></indexterm>
 
 <para>
-Dette afsnit er til dig der har fået CVS adgang, eller dig der har
+Dette afsnit er til dig der har fÃ¥et CVS adgang, eller dig der har
 haft det igennem et stykke tid, men gerne vil vide hvordan
-byggesystemet fungerer (eller forsøger at fungere).
+byggesystemet fungerer (eller forsÃ¸ger at fungere).
 </para>
 
 <para>
-Først beskrives hensigten med det nuværende system, derefter beskrives
+FÃ¸rst beskrives hensigten med det nuvÃ¦rende system, derefter beskrives
 hvordan det virker, og hvilke muligheder man har med det.
 </para>
 
 <para>
-Når man checker bøgerne ud fra CVS, vil jeg referere til det katalog
-der hedder "linuxbog" som "toplevel" og de enkelte bøgers kataloger
+NÃ¥r man checker bÃ¸gerne ud fra CVS, vil jeg referere til det katalog
+der hedder "linuxbog" som "toplevel" og de enkelte bÃ¸gers kataloger
 (f.eks. applikationer, sikkerhed, mv) som subdir.
 </para>
 
@@ -628,13 +628,13 @@ er at
 <orderedlist>
  <listitem>
    <para>
-   Det skal være nemt for folk at bidrage til de enkelte bøger, _uden_
+   Det skal vÃ¦re nemt for folk at bidrage til de enkelte bÃ¸ger, _uden_
    at have skriveadgang til CVS.
    </para>
  </listitem>
  <listitem>
    <para>
-   Alle bøger skal kunne bygges til html, palmpilot, mv, afhængigheder
+   Alle bÃ¸ger skal kunne bygges til html, palmpilot, mv, afhÃ¦ngigheder
    skal fungere korrekt
    </para>
  </listitem>
@@ -645,12 +645,12 @@ er at
  </listitem>
  <listitem>
    <para>
-   Der skal være install, uninstall, mv, targets
+   Der skal vÃ¦re install, uninstall, mv, targets
    </para>
  </listitem>
  <listitem>
    <para>
-   På sigt skal man kunne bygge bøgerne under andre platforme end Linux
+   PÃ¥ sigt skal man kunne bygge bÃ¸gerne under andre platforme end Linux
    (f.eks. FreeBSD)
    </para>
  </listitem>
@@ -665,68 +665,68 @@ Motivation og uddybning af disse punkter:
 <orderedlist numeration="loweralpha">
  <listitem>
    <para>
-   Tidligere har det været vanskeligt at bidrage til bøgerne af to
-   hovedårsager: Den eneste måde at få adgang til _alle_ de nødvendige
-   filer, var ved at få adgang til CVS udgaven af bøgerne & tests for
-   de nødvendige værktøjer var uigennemskuelig og flettet ind i
+   Tidligere har det vÃ¦ret vanskeligt at bidrage til bÃ¸gerne af to
+   hovedÃ¥rsager: Den eneste mÃ¥de at fÃ¥ adgang til _alle_ de nÃ¸dvendige
+   filer, var ved at fÃ¥ adgang til CVS udgaven af bÃ¸gerne & tests for
+   de nÃ¸dvendige vÃ¦rktÃ¸jer var uigennemskuelig og flettet ind i
    makefilerne. 
    </para>
 
    <para>
-   At få adgang via CVS var problematisk af to årsager. For det første
-   skulle der skriveadgang til, samt login på CVS serveren. For det
+   At fÃ¥ adgang via CVS var problematisk af to Ã¥rsager. For det fÃ¸rste
+   skulle der skriveadgang til, samt login pÃ¥ CVS serveren. For det
    andet er det ikke alle der er fortrolige med CVS.
-   De tests der har været for de forskellige værktøjer var tidligere
-   dels inkomplette, dels lagt ind i selve makefilerne. Det betød at
+   De tests der har vÃ¦ret for de forskellige vÃ¦rktÃ¸jer var tidligere
+   dels inkomplette, dels lagt ind i selve makefilerne. Det betÃ¸d at
    det var vanskeligt for brugeren at finde ud af hvorfor
-   oversættelsen gav problemer. I praksis var det en langvarig
-   "trial-and-error" proces, indtil man opnåede det ønskede
+   oversÃ¦ttelsen gav problemer. I praksis var det en langvarig
+   "trial-and-error" proces, indtil man opnÃ¥ede det Ã¸nskede
    resultat.
    </para>
 
    <para>
-   Med autotools udgaven af bøgerne (hvor autotools bruges til at lave
-   de nødvendige makefiler, mv) forsøges disse problemer
-   løst. Problemet med tests er løst ved at lade autotools (autoconf)
-   håndtere nødvendige tests. Det har den fordel at brugeren kan køre
-   ./configure og få en oversigt over hvilke værktøjer der
-   mangler. Når disse er installeret burde brugeren have en høj grad
-   af sikkerhed for at testene virke. Test gennemføres kun i subdirs,
-   da det er disse der skal bygges (som de enkelte bøger). Problemet
+   Med autotools udgaven af bÃ¸gerne (hvor autotools bruges til at lave
+   de nÃ¸dvendige makefiler, mv) forsÃ¸ges disse problemer
+   lÃ¸st. Problemet med tests er lÃ¸st ved at lade autotools (autoconf)
+   hÃ¥ndtere nÃ¸dvendige tests. Det har den fordel at brugeren kan kÃ¸re
+   ./configure og fÃ¥ en oversigt over hvilke vÃ¦rktÃ¸jer der
+   mangler. NÃ¥r disse er installeret burde brugeren have en hÃ¸j grad
+   af sikkerhed for at testene virke. Test gennemfÃ¸res kun i subdirs,
+   da det er disse der skal bygges (som de enkelte bÃ¸ger). Problemet
    med distribution af kildekoden er klaret ved at lave et nyt
    toplevel target "dist", der laver distributioner af de enkelte
-   bøger. De pakker man får ud af dette, er i princippet "stand-alone"
-   og har ikke nogen afhængigheder til resten af kildekoden.
+   bÃ¸ger. De pakker man fÃ¥r ud af dette, er i princippet "stand-alone"
+   og har ikke nogen afhÃ¦ngigheder til resten af kildekoden.
    </para>
  </listitem>
 
  <listitem>
    <para>
-   Ikke noget overraskende i dette. Imidlertid vil det nye system (når
-   det er færdigt) forhåbentligt have mere orthogonale afhængigheder,
-   og de problemer der pt. er med at f.eks. html og pdf rører ved
-   "hinandens" filer, vil være fjernet. Der mangler en del her.
+   Ikke noget overraskende i dette. Imidlertid vil det nye system (nÃ¥r
+   det er fÃ¦rdigt) forhÃ¥bentligt have mere orthogonale afhÃ¦ngigheder,
+   og de problemer der pt. er med at f.eks. html og pdf rÃ¸rer ved
+   "hinandens" filer, vil vÃ¦re fjernet. Der mangler en del her.
    </para>
  </listitem>
  <listitem>
    <para>
-c) Det nye i forhold til det eksisterende system vil være at man kan
-   lave en "personlig" alleudgave af bøgerne, der indeholder præcist
-   de bøger man er interesseret i. Dette fungerer stort set - dog er
-   der problemer med ps udgaven i øjeblikket.
+c) Det nye i forhold til det eksisterende system vil vÃ¦re at man kan
+   lave en "personlig" alleudgave af bÃ¸gerne, der indeholder prÃ¦cist
+   de bÃ¸ger man er interesseret i. Dette fungerer stort set - dog er
+   der problemer med ps udgaven i Ã¸jeblikket.
    </para>
  </listitem>
  <listitem>
    <para>
-d) På sigt skal der implementeres install og uninstall targets, så en
-   systemadministrator f.eks. kan vælge at installere bøgerne for en
-   større gruppe af brugere på en struktureret måde.
+d) PÃ¥ sigt skal der implementeres install og uninstall targets, sÃ¥ en
+   systemadministrator f.eks. kan vÃ¦lge at installere bÃ¸gerne for en
+   stÃ¸rre gruppe af brugere pÃ¥ en struktureret mÃ¥de.
    </para>
  </listitem>
  <listitem>
    <para>
 e) Med udgangspunkt i autotools, skal der findes alternativer til de
-   platforme der ikke har f.eks. jw i en tilstrækkelig ny
+   platforme der ikke har f.eks. jw i en tilstrÃ¦kkelig ny
    udgave. (pto?)
    </para>
  </listitem>
@@ -737,17 +737,17 @@ e) Med udgangspunkt i autotools, skal der findes alternativer til de
 
 
 <sect2 id="ftav-byggesystemet">
-<title>Sådan virker byggesystemet</title>
-<indexterm><primary>FTAV</primary><secondary>Sådan virker byggesystemet</secondary></indexterm>
+<title>SÃ¥dan virker byggesystemet</title>
+<indexterm><primary>FTAV</primary><secondary>SÃ¥dan virker byggesystemet</secondary></indexterm>
 
 <para>
 Byggesystemet er (pt) en blanding af autotools til subdirs, og
-håndskrevne scripts til toplevel. 
+hÃ¥ndskrevne scripts til toplevel. 
 </para>
 
 <para>
-Den ultrakorte udgave af "hvordan man gør", efter udcheck fra CVS for
-at bygge bogen "BOGNAVN" som html er som følger:
+Den ultrakorte udgave af "hvordan man gÃ¸r", efter udcheck fra CVS for
+at bygge bogen "BOGNAVN" som html er som fÃ¸lger:
 </para>
 
 <screen>
@@ -762,9 +762,9 @@ Men, det er langt fra hele historien.
 
 <para>
 Ideen med configure scriptet i toplevel er at det skal anvendes til at
-opsætte hvilke (og eventuelt hvordan) bøger man ønsker bygget på sin
-maskine. Dette bestemmes ved at give en række argumenter til
-configure. Hvis du kører ./configure --help, vil du se følgende:
+opsÃ¦tte hvilke (og eventuelt hvordan) bÃ¸ger man Ã¸nsker bygget pÃ¥ sin
+maskine. Dette bestemmes ved at give en rÃ¦kke argumenter til
+configure. Hvis du kÃ¸rer ./configure --help, vil du se fÃ¸lgende:
 </para>
 </sect2>
 
@@ -773,8 +773,8 @@ configure. Hvis du kører ./configure --help, vil du se følgende:
 <indexterm><primary>FTAV</primary><secondary>./configure</secondary></indexterm>
 
 <para>
-`configure' opsætter hvilke af "Linux - friheden til at vælge bøgerne" der skal
-laves på dit system.
+`configure' opsÃ¦tter hvilke af "Linux - friheden til at vÃ¦lge bÃ¸gerne" der skal
+laves pÃ¥ dit system.
 </para>
 
 <para>
@@ -782,37 +782,37 @@ Brug: ./configure [OPTIONS] [-- SUBDIROPTIONS]
 </para>
 
 <para>
-Hvor OPTIONS kan være een eller flere af
+Hvor OPTIONS kan vÃ¦re een eller flere af
 </para>
 
 <screen>
-  -h, --help             Viser denne hjælp og afslutter
-  -m, --med "BØGER"      Bestemmer hvilke bøger der medtages, hvor BØGER
-                         er en liste af bøger. Kombiner:
+  -h, --help             Viser denne hjÃ¦lp og afslutter
+  -m, --med "BÃ˜GER"      Bestemmer hvilke bÃ¸ger der medtages, hvor BÃ˜GER
+                         er en liste af bÃ¸ger. Kombiner:
                          "itplatform friheden unix kontorbruger applikationer wm signatur admin sikkerhed program web c java dokumentation forsker"
   -a, --med-alle         Medtag alle (een stor bog) bogen
-  -u, --bogurl URL       Hvilken url bøgerne skal bruge. [cvs.linuxbog.dk]
+  -u, --bogurl URL       Hvilken url bÃ¸gerne skal bruge. [cvs.linuxbog.dk]
 
-Hvor SUBDIROPTIONS kan være
+Hvor SUBDIROPTIONS kan vÃ¦re
       --enable-softlink  Bruger softlinks for HTML targets
 Eksempel: ./configure --med "friheden applikationer" -- --enable-softlink
 </screen>
 
 <para>
-I det følgende vil disse argumenter blive uddybet.
+I det fÃ¸lgende vil disse argumenter blive uddybet.
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
---med "BØGER" argumentet, bruges til at fortælle _hvilke_ bøger du
-gerne vil have bygget på dit system. ./configure --help vil udskrive
-en liste af dem der mulige (se ovenfor). Så, hvis du f.eks. gerne vil
-have bygget de bøger der anbefales når du vil lære hvordan man bruger
+--med "BÃ˜GER" argumentet, bruges til at fortÃ¦lle _hvilke_ bÃ¸ger du
+gerne vil have bygget pÃ¥ dit system. ./configure --help vil udskrive
+en liste af dem der mulige (se ovenfor). SÃ¥, hvis du f.eks. gerne vil
+have bygget de bÃ¸ger der anbefales nÃ¥r du vil lÃ¦re hvordan man bruger
 en Linux maskine til at programmere med, kan du give configure
-argumentet --med "friheden unix program c java". Så vil configure
-sørge for at opsætte systemet, således at disse bøger vil blive
-oversat. Hvis du ikke angiver noget --med argument, vil alle bøger
+argumentet --med "friheden unix program c java". SÃ¥ vil configure
+sÃ¸rge for at opsÃ¦tte systemet, sÃ¥ledes at disse bÃ¸ger vil blive
+oversat. Hvis du ikke angiver noget --med argument, vil alle bÃ¸ger
 blive medtaget.
  </para>
 </listitem>
@@ -820,17 +820,17 @@ blive medtaget.
 <listitem>
 <para>
 --med-alle argumentet bruges til at angive at man vil have bygget den
-særlige "alle" bog. Det er en udgave hvor de forskellige bøger flettes
+sÃ¦rlige "alle" bog. Det er en udgave hvor de forskellige bÃ¸ger flettes
 ind i hinanden. --med argumentet bruges af --med-alle; hvis du har
-angivet et --med argument, bruges kun de bøger i dette argument til
---med-alle. Rækkefølgen er også som i --med, hvis det er angivet.
+angivet et --med argument, bruges kun de bÃ¸ger i dette argument til
+--med-alle. RÃ¦kkefÃ¸lgen er ogsÃ¥ som i --med, hvis det er angivet.
 </para>
 </listitem>
 
 <listitem>
 <para>
---bogurl bruges fortrinsvist når vi udgiver en bog på nettet - så
-bygges bøgerne så interne (explicitte) referencer til &amp;linuxbogurl;
+--bogurl bruges fortrinsvist nÃ¥r vi udgiver en bog pÃ¥ nettet - sÃ¥
+bygges bÃ¸gerne sÃ¥ interne (explicitte) referencer til &amp;linuxbogurl;
 refererer til www.linuxbog.dk - normalt er det cvs.linuxbog.dk.
 </para>
 </listitem>
@@ -860,8 +860,8 @@ Her er en liste af filer der anvendes direkte af byggeprocessen i toplevel.
 <tbody>
 <row>
  <entry><filename>configure</filename></entry>
- <entry>dette script kopierer en række filer til de forskellige
-  subdirs, og kører "bootstrap", samt "configure" i disse
+ <entry>dette script kopierer en rÃ¦kke filer til de forskellige
+  subdirs, og kÃ¸rer "bootstrap", samt "configure" i disse
   subdirs.</entry>
 </row>
 <row>
@@ -915,20 +915,20 @@ subdir/palm-faelles/
 </tbody></tgroup></table>
 
 <para>
-Når configure er færdig med at kopiere, kører configure
-subdir/bootstrap og subdir/configure SUBDIROPTIONS for alle de bøger
-der skal opsættes. Bootstrap kører de forskellige autotools værktøjer
-der skal til for at opsætte de forskellige subdirs. Bemærk at det
-således er nødvendigt at have autotools værktøjerne for at bygge
-bøgerne fra CVS, men det er _ikke_ nødvendigt for at bygge
-individuelle bøger hentet i *dist* pakker.
+NÃ¥r configure er fÃ¦rdig med at kopiere, kÃ¸rer configure
+subdir/bootstrap og subdir/configure SUBDIROPTIONS for alle de bÃ¸ger
+der skal opsÃ¦ttes. Bootstrap kÃ¸rer de forskellige autotools vÃ¦rktÃ¸jer
+der skal til for at opsÃ¦tte de forskellige subdirs. BemÃ¦rk at det
+sÃ¥ledes er nÃ¸dvendigt at have autotools vÃ¦rktÃ¸jerne for at bygge
+bÃ¸gerne fra CVS, men det er _ikke_ nÃ¸dvendigt for at bygge
+individuelle bÃ¸ger hentet i *dist* pakker.
 </para>
 
 <para>
-Den centrale del af det videre byggeforløb ligger i filerne
+Den centrale del af det videre byggeforlÃ¸b ligger i filerne
 "Makefile.subdir" (der via toplevel/configure og subdir/configure
 bliver til subdir/Makefile). Denne fil er den centrale at modificere
-for at rette de tilbageværende problemer i byggeprocessen.
+for at rette de tilbagevÃ¦rende problemer i byggeprocessen.
 </para>
 </sect2><!-- ftav-configure -->
 </sect1><!-- ftav-mere-byg-bog -->
@@ -938,10 +938,10 @@ for at rette de tilbageværende problemer i byggeprocessen.
 <indexterm><primary>FTAV</primary><secondary>Specialudviklede scripts</secondary></indexterm>
 
 <para>
-Til brug for den automatiske bygning af bøgerne, har det været
-nødvendigt at udvikle specielle scripts.
-Nogle af scriptne er som sådan ikke nødvendige for at bygge
-bøgerne, men de hjælper læseren til bedre at læse bogen.
+Til brug for den automatiske bygning af bÃ¸gerne, har det vÃ¦ret
+nÃ¸dvendigt at udvikle specielle scripts.
+Nogle af scriptne er som sÃ¥dan ikke nÃ¸dvendige for at bygge
+bÃ¸gerne, men de hjÃ¦lper lÃ¦seren til bedre at lÃ¦se bogen.
 </para>
 
 <sect2 id="ftav-splitstikord">
@@ -949,16 +949,16 @@ bøgerne, men de hjælper læseren til bedre at læse bogen.
 <indexterm><primary>FTAV</primary><secondary>splitstikord.pl</secondary></indexterm>
 
 <para>
-Scriptet 'splitstikord.pl' der sørger for at blande alle
-stikord.html filerne sammen fra alle bøgerne, og dernæst lave
-en fil for hvert bogstav, kræver at perl-pakken HTML::TreeBuilder
+Scriptet 'splitstikord.pl' der sÃ¸rger for at blande alle
+stikord.html filerne sammen fra alle bÃ¸gerne, og dernÃ¦st lave
+en fil for hvert bogstav, krÃ¦ver at perl-pakken HTML::TreeBuilder
 er installeret. Det er ikke alle der har den default.
 </para>
 
 <para>
-På tyge.sslug.dk der kører Red Hat 9.0 (for tiden), er pakken
+PÃ¥ tyge.sslug.dk der kÃ¸rer Red Hat 9.0 (for tiden), er pakken
 http://dag.wieers.com/packages/perl-HTML-Tree/perl-HTML-Tree-3.17-0.dag.rh90.noarch.rpm
-blevet installeret. Original-pakken findes på
+blevet installeret. Original-pakken findes pÃ¥
 http://search.cpan.org/dist/HTML-Tree/
 </para>
 </sect2><!-- ftav-splitstikord -->
@@ -970,14 +970,14 @@ http://search.cpan.org/dist/HTML-Tree/
 <para>
 I bogen om dokumentation er liste over hvilke DocBook-tags
 der er mest anvendt i bogen om dokumentation.
-<link linkend="anvendte-elementer-tabel">Se eksempel på resultatet</link>.
-Dertil er et lille script der skriver dem en gang ud på
-skærmen, med angivelse for hver gang de er brugt.
+<link linkend="anvendte-elementer-tabel">Se eksempel pÃ¥ resultatet</link>.
+Dertil er et lille script der skriver dem en gang ud pÃ¥
+skÃ¦rmen, med angivelse for hver gang de er brugt.
 </para>
 
 <para>
-Scriptet kan også bruges på html-filer, og er dermed
-praktisk anvendeligt i andre sammenhænge, hvorfor det
+Scriptet kan ogsÃ¥ bruges pÃ¥ html-filer, og er dermed
+praktisk anvendeligt i andre sammenhÃ¦nge, hvorfor det
 er listet her under:
 </para>
 

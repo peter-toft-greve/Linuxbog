@@ -1,26 +1,26 @@
 <!-- $Id$ -->
 <chapter id="netovervaagning">
-<title>Netværksovervågning</title>
+<title>NetvÃ¦rksovervÃ¥gning</title>
 
 <para>
-Netværksovervågning kan groft sagt opdeles i to typer: dokumenterende og
+NetvÃ¦rksovervÃ¥gning kan groft sagt opdeles i to typer: dokumenterende og
 kontrollerende.
 </para>
 
 <para>
-Den dokumenterende overvågning handler om at dokumentere ting som
-udnyttelse af båndbredde, forbrug af diskplads, osv. Det gøres ofte ved
-at producere grafer der viser udviklingen over tid. Typiske værktøjer er
+Den dokumenterende overvÃ¥gning handler om at dokumentere ting som
+udnyttelse af bÃ¥ndbredde, forbrug af diskplads, osv. Det gÃ¸res ofte ved
+at producere grafer der viser udviklingen over tid. Typiske vÃ¦rktÃ¸jer er
 MRTG og RRDtool.
 </para>
 
 <para>
-Den kontrollerende overvågning handler om at sikre at tingene kører og
-kunne reagere hvis de holder op med at køre. Typiske værktøjer er Big
+Den kontrollerende overvÃ¥gning handler om at sikre at tingene kÃ¸rer og
+kunne reagere hvis de holder op med at kÃ¸re. Typiske vÃ¦rktÃ¸jer er Big
 Brother og Nagios <xref linkend="nagios"/>. 
 </para>
 
-<!-- Afsnit der bør skrives 
+<!-- Afsnit der bÃ¸r skrives 
   * SNMP
   * MRTG
   * RRDtool
@@ -31,26 +31,26 @@ Brother og Nagios <xref linkend="nagios"/>.
 <sect1 id="big-sister">
 <title>Big Sister</title>
 <indexterm><primary>Big Sister</primary></indexterm>
-<indexterm><primary>Overvågning</primary><secondary>Big Sister</secondary></indexterm>
-<indexterm><primary>Netværksovervågning</primary><secondary>Big Sister</secondary></indexterm>
+<indexterm><primary>OvervÃ¥gning</primary><secondary>Big Sister</secondary></indexterm>
+<indexterm><primary>NetvÃ¦rksovervÃ¥gning</primary><secondary>Big Sister</secondary></indexterm>
 
 <para>
-Big Sister er en GPL'et klon af Big Brother, der (desværre) berettiget
-har opnået en meget ringe udbredelse på grund af ganske elendig
-dokumentation. Det kan derfor anbefales at følge anvisningerne her for
-at få installeret en virkende Big Sister.
+Big Sister er en GPL'et klon af Big Brother, der (desvÃ¦rre) berettiget
+har opnÃ¥et en meget ringe udbredelse pÃ¥ grund af ganske elendig
+dokumentation. Det kan derfor anbefales at fÃ¸lge anvisningerne her for
+at fÃ¥ installeret en virkende Big Sister.
 </para>
 
 <sect2 id="big-sister-installation">
 <title>Installation</title>
 
 <para>
-Start med at tjekke "Prerequisits"-afsnittet på
+Start med at tjekke "Prerequisits"-afsnittet pÃ¥
 <ulink url="http://bigsister.graeff.com/pdoc/INSTALL.html">
 installationsvejledningen</ulink>, for at se hvad du kan installere
-for at øge Big Sisters funktionalitet/hastighed. Jeg havde installeret
+for at Ã¸ge Big Sisters funktionalitet/hastighed. Jeg havde installeret
 de fleste ting i forvejen, og valgte at installere de sidste, for at
-undgå problemer.
+undgÃ¥ problemer.
 </para>
 
 <para>
@@ -61,61 +61,61 @@ url="http://bigsister.graeff.com/">Big Sisters
 hjemmeside</ulink>.  Udpak
 <filename>big-sister-0.97p2.tar.gz</filename> et sted hvor der er en
 smule plads, og skift til kataloget <filename>bs-0.97</filename>. I
-følge dokumentationen skulle du nu kunne sætte Big Sister op, og
+fÃ¸lge dokumentationen skulle du nu kunne sÃ¦tte Big Sister op, og
 bl.a. angive hvor du gerne vil have det installeret, men det kan man
 ikke (<filename>configure</filename>-scriptet findes simpelthen
 ikke<footnote><para>
-Det gør det i version 0.98, som dokumentationen
-flere steder ser ud til at være rettet mod, den havde jeg andre
+Det gÃ¸r det i version 0.98, som dokumentationen
+flere steder ser ud til at vÃ¦re rettet mod, den havde jeg andre
 problemer med.  </para></footnote>).
-Heldigvis er det ikke nødvendigt at ændre noget i opsætningen, man kan
-gå direkte til <command>make
+Heldigvis er det ikke nÃ¸dvendigt at Ã¦ndre noget i opsÃ¦tningen, man kan
+gÃ¥ direkte til <command>make
 install</command>.  <footnote><para> Big Sister er en samling
-Perl-programmer der ikke skal oversættes derfor er der ikke noget
+Perl-programmer der ikke skal oversÃ¦ttes derfor er der ikke noget
 <command>make</command>-skridt.
 </para>
 </footnote>
-Næste skridt er at oprette en bruger bs, som skal
+NÃ¦ste skridt er at oprette en bruger bs, som skal
 have en brugbar kommandofortolker (ikke noget med
-<command>/bin/false</command>, hjemmekataloget kan passende sættes til
+<command>/bin/false</command>, hjemmekataloget kan passende sÃ¦ttes til
 <filename>/usr/local/lib/bs</filename>, som er hvor <command>make
-install</command> placerede tingene, men sørg for at man ikke kan
-	logge ind som bs (sæt en * eller et ! i andet felt i
+install</command> placerede tingene, men sÃ¸rg for at man ikke kan
+	logge ind som bs (sÃ¦t en * eller et ! i andet felt i
 	<filename>/etc/shadow</filename>).
 </para>
 </sect2> <!-- big-sister-installation -->
 
 <sect2 id="big-sister-konf1">
-<title>Indledende opsætning</title>
+<title>Indledende opsÃ¦tning</title>
 
 <para>
-Det første du skal gøre er at finde 
+Det fÃ¸rste du skal gÃ¸re er at finde 
 linjen 
 <programlisting>
 localhost bsdisplay
 </programlisting>
 i <filename>usr/local/lib/bs/adm/uxmon-net</filename> og rette "localhost" til
-maskinens navn. Mens du er i gang med at rette i den fil, så vil du
-sandsynligvis også fjerne "eventlog" fire linjer højere oppe (fra
+maskinens navn. Mens du er i gang med at rette i den fil, sÃ¥ vil du
+sandsynligvis ogsÃ¥ fjerne "eventlog" fire linjer hÃ¸jere oppe (fra
 listen over hvad der tjekkes &ndash; den vender vi tilbage til), det virker
-kun på win32-platformen.
+kun pÃ¥ win32-platformen.
 </para>
 
-<para>Vær opmærksom på at Big Sister læser alle filer i
+<para>VÃ¦r opmÃ¦rksom pÃ¥ at Big Sister lÃ¦ser alle filer i
 <filename>/usr/local/lib/bs/</filename> der starter med
-<filename>uxmon-net</filename>, også en fil som
-<filename>uxmon-net~</filename>. Så hvis din editor laver en
-sikkerhedskopi af den gamle udgave så slet den!
+<filename>uxmon-net</filename>, ogsÃ¥ en fil som
+<filename>uxmon-net~</filename>. SÃ¥ hvis din editor laver en
+sikkerhedskopi af den gamle udgave sÃ¥ slet den!
 </para>
 
 <para>
-Du skal også sørge for at du kan få fat i de sider Big Sister
-genererer. Det letteste er nok at sætte sin navneserver op så
-bs.domæne peger på din maskine og så tilføje:
+Du skal ogsÃ¥ sÃ¸rge for at du kan fÃ¥ fat i de sider Big Sister
+genererer. Det letteste er nok at sÃ¦tte sin navneserver op sÃ¥
+bs.domÃ¦ne peger pÃ¥ din maskine og sÃ¥ tilfÃ¸je:
 <programlisting>
-&lt;VirtualHost bs.domæne&gt;
-ServerAdmin admin@domæne
-ServerName bs.domæne
+&lt;VirtualHost bs.domÃ¦ne&gt;
+ServerAdmin admin@domÃ¦ne
+ServerName bs.domÃ¦ne
 DocumentRoot /usr/local/lib/bs/www/
 &lt;/VirtualHost&gt;
 </programlisting>
@@ -129,28 +129,28 @@ til <filename>httpd.conf</filename>.
 <para>
 Nu er tiden inde til at starte Big Sister, og se at det virker. Big
 startes med kommandoen <command>/usr/local/lib/bs/bin/bb_start
-start</command>. Nu skulle du kunne pege din netsøger mod bs.domæne og
+start</command>. Nu skulle du kunne pege din netsÃ¸ger mod bs.domÃ¦ne og
 se hvordan Big Sister tror din maskine har det.
 </para>
 </sect2> <!-- big-sister-start" --> 
 
 <sect2 id="big-sister-konf2">
-<title>Videre opsætning</title>
+<title>Videre opsÃ¦tning</title>
 
 <para>
-Først vil vi af med den gule advarselslampe der er under "msgs", den
-skyldes at brugeren bs ikke kan læse
+FÃ¸rst vil vi af med den gule advarselslampe der er under "msgs", den
+skyldes at brugeren bs ikke kan lÃ¦se
 <filename>/var/log/syslog</filename> og
 <filename>/var/log/messages</filename>, eftersom vi har sikret os at
-man ikke kan logge ind som bs, er det ikke særlig farligt at tilføje
-bs til gruppen adm, <!-- På Debian, måske noget andet på andre dist?
---> så Big Sister kan læse disse filer. 
+man ikke kan logge ind som bs, er det ikke sÃ¦rlig farligt at tilfÃ¸je
+bs til gruppen adm, <!-- PÃ¥ Debian, mÃ¥ske noget andet pÃ¥ andre dist?
+--> sÃ¥ Big Sister kan lÃ¦se disse filer. 
 </para>
 
 <para>
-Med mindre du bruger sendmail havde du også en rød alarmlampe under
-"procs", der fortalte dig at der ikke kørte mindst en
-sendmail-proces, den vil du sikkert gerne af med. For at gøre det skal
+Med mindre du bruger sendmail havde du ogsÃ¥ en rÃ¸d alarmlampe under
+"procs", der fortalte dig at der ikke kÃ¸rte mindst en
+sendmail-proces, den vil du sikkert gerne af med. For at gÃ¸re det skal
 	du igen have fat i
 	<filename>/usr/local/lib/bs/adm/uxmon-net</filename>, denne
 	gang skal du finde linjen der indeholder
@@ -158,38 +158,38 @@ sendmail-proces, den vil du sikkert gerne af med. For at gøre det skal
 procs=init(1-1),sendmail(1-20)
 </programlisting>
 og enten fjerne sendmail helt, eller erstatte det med noget du er
-	interesseret i. Hvis du kører Postfix kan du f.eks. bruge
+	interesseret i. Hvis du kÃ¸rer Postfix kan du f.eks. bruge
 <programlisting>
 procs=init(1-1),master(1-20)
 </programlisting>
-til at sikre dig at Postfix kører.
+til at sikre dig at Postfix kÃ¸rer.
 </para>
 
 <para>
-Hvis du har en webserver kørende på maskinen (og det har du, for
-ellers kan du ikke komme i kontakt med Big Sister), er du måske også
-interesseret i at få holdt øje med om den kører. Det gør du ved i
-<filename>/usr/local/lib/bs/uxmon-net</filename> at tilføje http til
+Hvis du har en webserver kÃ¸rende pÃ¥ maskinen (og det har du, for
+ellers kan du ikke komme i kontakt med Big Sister), er du mÃ¥ske ogsÃ¥
+interesseret i at fÃ¥ holdt Ã¸je med om den kÃ¸rer. Det gÃ¸r du ved i
+<filename>/usr/local/lib/bs/uxmon-net</filename> at tilfÃ¸je http til
 listen over ting der skal tjekkes.
 </para>
 
 <para>
-Der er mange andre ting man kan få Big Sister til at holde øje med,
-det vil føre for vidt at forsøge at komme ind på dem alle her. Tjek
+Der er mange andre ting man kan fÃ¥ Big Sister til at holde Ã¸je med,
+det vil fÃ¸re for vidt at forsÃ¸ge at komme ind pÃ¥ dem alle her. Tjek
 <ulink
 url="http://bigsister.graeff.com/pdoc/CONFIG.html">dokumentationen</ulink>,
-som omend den ikke er god så dog giver lidt på dette punkt.
+som omend den ikke er god sÃ¥ dog giver lidt pÃ¥ dette punkt.
 </para>
 
 <para>
-Du har måske også bemærket at "History", "Alarms" og "Admin"
-henvisningerne til højre ikke virker. For at ordne det skal du kopiere
+Du har mÃ¥ske ogsÃ¥ bemÃ¦rket at "History", "Alarms" og "Admin"
+henvisningerne til hÃ¸jre ikke virker. For at ordne det skal du kopiere
 filerne <filename>bshistory</filename>,
 <filename>bswebalarm</filename>, <filename>bswebadmin</filename> og
 <filename>bsgraph</filename> fra
 <filename>/usr/local/lib/bs/bin</filename> til
 <filename>/usr/local/lib/bs/www/cgi</filename> (det katalog skal
-oprettes først), og indsætte linjen
+oprettes fÃ¸rst), og indsÃ¦tte linjen
 <programlisting>
 ScriptAlias /cgi /usr/local/lib/bs/www/cgi
 </programlisting>
@@ -197,13 +197,13 @@ i <filename>httpd.conf</filename>.
 </para>
 
 <para>
-Når du har ændret i Big Sisters opsætning skal du genstarte Big Sister
+NÃ¥r du har Ã¦ndret i Big Sisters opsÃ¦tning skal du genstarte Big Sister
 med kommandoen <command>/usr/local/lib/bs/bin/bb_start
-restart</command>. <!-- Det er min erfaring at det ofte kan være
-nødvendigt at genstarte Big Sister to gange for at få en ændring til
-slå igennem. --> Der<!--udover--> kan der godt gå et par minutter før
-Big Sister får udskiftet en lampe på oversigtssiden, selv om man ved
-at klikke på den kan se at status er ændret.
+restart</command>. <!-- Det er min erfaring at det ofte kan vÃ¦re
+nÃ¸dvendigt at genstarte Big Sister to gange for at fÃ¥ en Ã¦ndring til
+slÃ¥ igennem. --> Der<!--udover--> kan der godt gÃ¥ et par minutter fÃ¸r
+Big Sister fÃ¥r udskiftet en lampe pÃ¥ oversigtssiden, selv om man ved
+at klikke pÃ¥ den kan se at status er Ã¦ndret.
 </para>
 </sect2>
 
@@ -211,21 +211,21 @@ at klikke på den kan se at status er ændret.
 <title>Andre maskiner</title>
 
 <para>
-Hvis du vil tjekke om netværksforbindelsen til en anden maskine er i
-orden, kan du tilføje linjen
+Hvis du vil tjekke om netvÃ¦rksforbindelsen til en anden maskine er i
+orden, kan du tilfÃ¸je linjen
 <programlisting>
-anden.maskine.domæne ping
+anden.maskine.domÃ¦ne ping
 </programlisting>
-til <filename>/usr/local/lib/bs/adm/uxmon-net</filename>. Så vil Big Sister jævnligt
-sende et UDP-ping til anden.maskine.domæne, for at se om den
-svarer. For at den skal have noget held med det, skal du sørge for at
-den anden maskine svarer på UDP-ping, det gør du ved sørge for at
+til <filename>/usr/local/lib/bs/adm/uxmon-net</filename>. SÃ¥ vil Big Sister jÃ¦vnligt
+sende et UDP-ping til anden.maskine.domÃ¦ne, for at se om den
+svarer. For at den skal have noget held med det, skal du sÃ¸rge for at
+den anden maskine svarer pÃ¥ UDP-ping, det gÃ¸r du ved sÃ¸rge for at
 	linjen 
 <programlisting>
 echo            dgram   udp     wait    root    internal
 </programlisting>
 findes i <filename>/etc/inetd.conf</filename>. <!-- Hvordan skal det -->
-<!-- se ud hvis man kører xinetd? -->
+<!-- se ud hvis man kÃ¸rer xinetd? -->
 </para>
 
 </sect2>
@@ -236,60 +236,60 @@ findes i <filename>/etc/inetd.conf</filename>. <!-- Hvordan skal det -->
 <sect1 id="nagios">
 <title>Nagios</title>
 <indexterm><primary>Nagios</primary></indexterm>
-<indexterm><primary>Overvågning</primary><secondary>Nagios</secondary></indexterm>
-<indexterm><primary>Netværksovervågning</primary><secondary>Nagios</secondary></indexterm>
+<indexterm><primary>OvervÃ¥gning</primary><secondary>Nagios</secondary></indexterm>
+<indexterm><primary>NetvÃ¦rksovervÃ¥gning</primary><secondary>Nagios</secondary></indexterm>
 
 <para>
-Nagios er et overvågningsværktøj der kontrollere om alle
-services på alle maskiner køre.
-En typisk brug er at sætte Nagios op til at overvåge
-et antal maskiner der er forbundet i netværk, 
-og administratorene af disse maskiner bliver så
-alarmeret når der er noget galt med de services
+Nagios er et overvÃ¥gningsvÃ¦rktÃ¸j der kontrollere om alle
+services pÃ¥ alle maskiner kÃ¸re.
+En typisk brug er at sÃ¦tte Nagios op til at overvÃ¥ge
+et antal maskiner der er forbundet i netvÃ¦rk, 
+og administratorene af disse maskiner bliver sÃ¥
+alarmeret nÃ¥r der er noget galt med de services
 de har ansvaret for.
-Det er ganske få ting der skal sættes op for at
-få det hele til at virke, men følger man den
+Det er ganske fÃ¥ ting der skal sÃ¦ttes op for at
+fÃ¥ det hele til at virke, men fÃ¸lger man den
 vedlagte dokumentation i Nagios, er det ikke sikkert man
-kommer helt i mål.
-Som det fremgår af Nagios-manualen:
+kommer helt i mÃ¥l.
+Som det fremgÃ¥r af Nagios-manualen:
 "Relax - its going to take some time."
-- så syntes forfatteren at det skal være meget
-besværligt at få begyndt med et Nagios-system.
-Men med de eksempler der følger med dette kapitel du
-læser på nu, samt beskrivelsen her, så skulle du gerne have
-en simpel kørende installation igang på ca. time
-hvis du er sådan en almindelig habil systemadministrator.
+- sÃ¥ syntes forfatteren at det skal vÃ¦re meget
+besvÃ¦rligt at fÃ¥ begyndt med et Nagios-system.
+Men med de eksempler der fÃ¸lger med dette kapitel du
+lÃ¦ser pÃ¥ nu, samt beskrivelsen her, sÃ¥ skulle du gerne have
+en simpel kÃ¸rende installation igang pÃ¥ ca. time
+hvis du er sÃ¥dan en almindelig habil systemadministrator.
 </para>
 
 <para>
 Nagios er opbygget som en central enhed der kontakter
 de andre maskiner og henter status fra dem.
-Nogle services såsom HTTP, SMTP og SSH kan checkes
+Nogle services sÃ¥som HTTP, SMTP og SSH kan checkes
 direkte fra Nagios maskinen selv fordi de anvender
-en åben port. Status vedrørende
+en Ã¥ben port. Status vedrÃ¸rende
 diskplads og andre interne services skal kontroleres ved
-at køre et program på den pågældende maskine.
-Programmet der skal køres på klient-maskinen hedder NRPE.
+at kÃ¸re et program pÃ¥ den pÃ¥gÃ¦ldende maskine.
+Programmet der skal kÃ¸res pÃ¥ klient-maskinen hedder NRPE.
 </para>
 
 <para>
 Som supplement til denne beskrivelse er der nogle
 konfigurationsscript du kan bruge som udgangspunkt.
-Sådanne start-script burde som udgangspunkt have
-været med i standardpakken, men det er de ikke.
+SÃ¥danne start-script burde som udgangspunkt have
+vÃ¦ret med i standardpakken, men det er de ikke.
 Disse ekstra-scripts kan downloades fra
 <ulink url="/admin/eksempler/etc/nagios/">http://www.linuxbog.dk/admin/eksempler/etc/nagios</ulink>
-Når de er blevet installeret vil du få et skærmbillede
-der ligner nedenstående.
+NÃ¥r de er blevet installeret vil du fÃ¥ et skÃ¦rmbillede
+der ligner nedenstÃ¥ende.
 </para>
 
 <figure id="nagios-demo" float="1">
-<title>Et skærmdump af Nagios ved almindelig drift hvor alt er OK</title>
+<title>Et skÃ¦rmdump af Nagios ved almindelig drift hvor alt er OK</title>
 <graphic fileref="nagios-ok.&magic;"></graphic>
 </figure>
 
 <para>
-Følgende programpakker skal downloades for at
+FÃ¸lgende programpakker skal downloades for at
 kunne komme igang.
 </para>
 
@@ -298,30 +298,30 @@ kunne komme igang.
 <listitem><para>
 <ulink url="http://www.nagios.org/download/">http://www.nagios.org/download/</ulink>
 Nagios: nagios-2*.tar.gz er selve programmet der
-skal køre på serveren og det program der indhenter
+skal kÃ¸re pÃ¥ serveren og det program der indhenter
 informationer fra de andre maskiner.
 </para></listitem>
 
 <listitem><para>
 <ulink url="http://sourceforge.net/project/showfiles.php?group_id=29880">nagiosplug.sourceforge.net</ulink>
 Nagios plugins: nagios-plugins-1*.tar.gz er en
-samling af små programstumper der checker de
+samling af smÃ¥ programstumper der checker de
 enkelte services. Eksempelvis findes programmet
 <command>check_http</command> i den pakke. og
-det anvendes til at checke web-serveren på en
+det anvendes til at checke web-serveren pÃ¥ en
 fjern maskine.
 Du skal have denne pakke installeret for at 
 kunne bruge Nagios til noget.
-Det kan så undre at den ikke er en del af
+Det kan sÃ¥ undre at den ikke er en del af
 standardpakken.
 </para></listitem>
 
 <listitem><para>
 <ulink url="http://www.nagios.org/download/">http://www.nagios.org/download/</ulink>
 NRPE: nrpe-*.tar.gz anvendes for at kontrollere
-ting der foregår lokalt på en fjern-maskine. Vil man
-holde øje med fx diskplads, skal man bruge NRPE-pakken
-på klient-maskinen.
+ting der foregÃ¥r lokalt pÃ¥ en fjern-maskine. Vil man
+holde Ã¸je med fx diskplads, skal man bruge NRPE-pakken
+pÃ¥ klient-maskinen.
 </para></listitem>
 
 </itemizedlist>
@@ -334,15 +334,15 @@ på klient-maskinen.
 I beskrivelsen her er valgt at installere fra
 grundpakken og ikke bruge et pakkeformat der
 passer til en specifik distribution.
-Grundinstallationen er baseret på BSD's
-måde at placere filerne på, så det er en
-værre rodebunke at hitte rundt i, når
+Grundinstallationen er baseret pÃ¥ BSD's
+mÃ¥de at placere filerne pÃ¥, sÃ¥ det er en
+vÃ¦rre rodebunke at hitte rundt i, nÃ¥r
 man er vant til Linux. 
-Herunder er vist en måde som filerne kan lægges
-ud på. Vigtigst er det at du kan finde 
+Herunder er vist en mÃ¥de som filerne kan lÃ¦gges
+ud pÃ¥. Vigtigst er det at du kan finde 
 konfigurationsfilerne i <filename>/etc/nagios</filename>,
-men de andre subdir er nu også rare at vide hvor ligger.
-Kør først en <command>configure</command>, efterfulgt
+men de andre subdir er nu ogsÃ¥ rare at vide hvor ligger.
+KÃ¸r fÃ¸rst en <command>configure</command>, efterfulgt
 af <command>make</command> og <command>make fullinstall</command>.
 </para>
 
@@ -366,8 +366,8 @@ af <command>make</command> og <command>make fullinstall</command>.
 
 <para>
 nagios-plugins
-er en særskilt programpakke der skal downloades.
-Den indeholder alle de check-programmer Nagios-dæmonen skal bruge, og uden
+er en sÃ¦rskilt programpakke der skal downloades.
+Den indeholder alle de check-programmer Nagios-dÃ¦monen skal bruge, og uden
 nagios-plugins virker Nagios slet ikke.
 Hent programpakken
 (<xref linkend="nagios-links"/>)
@@ -384,8 +384,8 @@ og installer pakken som angivet herunder:
 
 <para>
 Med de mest basale programmer installeret, mangler der
-nu et færdigt opsat eksempel du kan bruge som udgangspunkt.
-Det er beskrevet i næste afsnit.
+nu et fÃ¦rdigt opsat eksempel du kan bruge som udgangspunkt.
+Det er beskrevet i nÃ¦ste afsnit.
 </para>
 
 </sect2>
@@ -395,32 +395,32 @@ Det er beskrevet i næste afsnit.
 <indexterm><primary>Nagios</primary><secondary>Konfiguration</secondary></indexterm>
 
 <para>
-Nu mangler der et færdigt opsat eksempel.
-Der følger en smule med nagios-pakken,
+Nu mangler der et fÃ¦rdigt opsat eksempel.
+Der fÃ¸lger en smule med nagios-pakken,
 men det er ikke helt nok til
 at komme i luften med.
-For at kunne bruge eksemplet der følger
-med Nagios, skal der rettes så mange ting
+For at kunne bruge eksemplet der fÃ¸lger
+med Nagios, skal der rettes sÃ¥ mange ting
 at det mindst vil tage dig 6 timer at komme 
-frem til mål.
-Hent defor den færdige pakke fra
+frem til mÃ¥l.
+Hent defor den fÃ¦rdige pakke fra
 <ulink url="/admin/eksempler/etc-nagios.tar.gz">http://cvs.linuxbog.dk/admin/eksempler/etc-nagios.tar.gz</ulink>
 og stil dig i roden af din disk og pak den ud.
-Filerne vil lægge sig i <command>/etc/nagios</command>.
-Filerne kan også hentes enkeltvis og browses på
+Filerne vil lÃ¦gge sig i <command>/etc/nagios</command>.
+Filerne kan ogsÃ¥ hentes enkeltvis og browses pÃ¥
 <ulink url="/admin/eksempler/etc/nagios/">http://www.linuxbog.dk/admin/eksempler/etc/nagios/</ulink>
 </para>
 
 <para>
-Når filerne er pakket ud er det vigtigt at få sat
+NÃ¥r filerne er pakket ud er det vigtigt at fÃ¥ sat
 password til brugeren <command>nagios</command>.
 Det er den bruger som skal kunne logge ind
 via web-siden.
-Du kan tilføje alle de brugere du har behov for.
-Det gøres med programmet <command>htpasswd2</command>
-når det er Apache 2.0 du har installeret, ellers
+Du kan tilfÃ¸je alle de brugere du har behov for.
+Det gÃ¸res med programmet <command>htpasswd2</command>
+nÃ¥r det er Apache 2.0 du har installeret, ellers
 er det <command>htpasswd</command>.
-Gør som nedenstående eksempel:
+GÃ¸r som nedenstÃ¥ende eksempel:
 </para>
 
 <screen>
@@ -432,7 +432,7 @@ Updating password for user nagios
 </screen>
 
 <para>
-Når password til nagios-brugeren er sat kan Nagios-dæmonen startes,
+NÃ¥r password til nagios-brugeren er sat kan Nagios-dÃ¦monen startes,
 og den nye konfiguration til Apache webserveren kan loades.
 </para>
 
@@ -441,13 +441,13 @@ og den nye konfiguration til Apache webserveren kan loades.
 </screen>
 
 <para>
-Nu er Nagios dæmonen startet og indsamling af data er begyndt.
-Næste trin er så at kunne se de indsamlede data.
+Nu er Nagios dÃ¦monen startet og indsamling af data er begyndt.
+NÃ¦ste trin er sÃ¥ at kunne se de indsamlede data.
 Det forventes at du har Apache-webserveren installeret, og har nogenlunde
-styr på at administrerer den.
-Det nemmeste er hvis du vil tilgå Nagios via
+styr pÃ¥ at administrerer den.
+Det nemmeste er hvis du vil tilgÃ¥ Nagios via
 <ulink url="http://localhost/nagios/">http://localhost/nagios</ulink>
-for så kan du nøjes med at inkludere
+for sÃ¥ kan du nÃ¸jes med at inkludere
 <filename>sample-config/httpd.conf</filename>
 der ligger i filstrukturen under source nagios-pakken.
 Bruger du Gentoo er det nemmest blot at kopiere filen ned i filnavnet
@@ -457,14 +457,14 @@ Ved andre Linux-distributioner er det nok nemmest at kopiere
 <filename>sample-config/httpd.conf</filename>
 til
 <filename>/etc/nagios/</filename>
-og så gå ind i din 
+og sÃ¥ gÃ¥ ind i din 
 <filename>httpd.conf</filename>
-der hører til Apache og i bunden skrive
+der hÃ¸rer til Apache og i bunden skrive
 <filename>Include /etc/nagios/httpd.conf</filename>
 .
-Når den config-fil der hører til Nagios er blevet inkluderet, er det blot at
-få den loadet ind i Apache.
-Det gøre evt. med følgende kommando:
+NÃ¥r den config-fil der hÃ¸rer til Nagios er blevet inkluderet, er det blot at
+fÃ¥ den loadet ind i Apache.
+Det gÃ¸re evt. med fÃ¸lgende kommando:
 </para>
 
 <screen>
@@ -472,14 +472,14 @@ Det gøre evt. med følgende kommando:
 </screen>
 
 <para>
-Nu kan du klikke dig ind på
+Nu kan du klikke dig ind pÃ¥
 <ulink url="http://localhost/nagios/">http://localhost/nagios/</ulink>
-og se status for den maskine som Nagios er installeret på.
-Klik på service detail.
-Måske er der nogle service-check der lige står til "Pending",
-men så vent lige et par minutter, så kommer status også for disse.
-Som udgangspunkt viser eksemplerne der hører til 
-"Friheden til at vælge" status for
+og se status for den maskine som Nagios er installeret pÃ¥.
+Klik pÃ¥ service detail.
+MÃ¥ske er der nogle service-check der lige stÃ¥r til "Pending",
+men sÃ¥ vent lige et par minutter, sÃ¥ kommer status ogsÃ¥ for disse.
+Som udgangspunkt viser eksemplerne der hÃ¸rer til 
+"Friheden til at vÃ¦lge" status for
 <filename>localhost</filename>
 og
 <filename>cvs.sslug.dk</filename>
@@ -488,14 +488,14 @@ For at rette det, skal der rettes i
 konfigurationsfilerne der ligger i 
 <filename>/etc/nagios/*.cfg</filename> .
 Da der skal rettes i flere filer, kan man jo
-være fræk at gøre det fra kommandolinjen.
+vÃ¦re frÃ¦k at gÃ¸re det fra kommandolinjen.
 Hvis du fx vil rette 
 <filename>localhost</filename>
 til
 <filename>hven.sslug.dk</filename>,
 og du vil rette ip-nummer fra
 127.0.0.1 til 80.80.80.80,
-så kan det gøres med:
+sÃ¥ kan det gÃ¸res med:
 </para>
 
 <screen>
@@ -507,30 +507,30 @@ så kan det gøres med:
 </sect2> <!-- nagios-konfiguration -->
 
 <sect2 id="nagios-aendre-konfiguration">
-<title>Ændre konfiguration</title>
-<indexterm><primary>Nagios</primary><secondary>Ændre konfiguration</secondary></indexterm>
+<title>Ã†ndre konfiguration</title>
+<indexterm><primary>Nagios</primary><secondary>Ã†ndre konfiguration</secondary></indexterm>
 
 <para>
 Inden du kaster dig over at tilrette konfigurationsfilerne manuelt med en editor,
 skal du vide at der er indtil flere forskellige tredjeparts systemer
 der er beregnet for konfiguration via en GUI.
-En del af dem er baseret på PHP og MySQL, og nedarver selvklart de relationer
+En del af dem er baseret pÃ¥ PHP og MySQL, og nedarver selvklart de relationer
 der i forvejen er imellem Nagios' konfigurationsfiler.
 Download tredjepartsprogrammerne fra <xref linkend="nagios-links"/>.
 </para>
 
 <para>
 Som udgangspunkt er konfigurationen fordelt
-på flere filer ved at der er refereret til
+pÃ¥ flere filer ved at der er refereret til
 dem fra <filename>nagios.cfg</filename> .
 Nogle gange vil man finde det irreterende
-at skulle åbne flere filer for at lave en
-ændring, men så er muligheden at man kan samle
+at skulle Ã¥bne flere filer for at lave en
+Ã¦ndring, men sÃ¥ er muligheden at man kan samle
 det hele i en fil.
 Det der handler om host og service har man
-ofte fat i, så det kan være en fordel at have
+ofte fat i, sÃ¥ det kan vÃ¦re en fordel at have
 dem i samme fil.
-Den måde som filerne kommer som standard er følgende:
+Den mÃ¥de som filerne kommer som standard er fÃ¸lgende:
 </para>
 
 <orderedlist>
@@ -539,9 +539,9 @@ Den måde som filerne kommer som standard er følgende:
 <link linkend="nagios-konfiguration-services">
 <filename>services.cfg</filename>
 </link>
-indeholder alle de services der skal overvåges
-på alle maskiner.
-De services der overvåges i eksemplet
+indeholder alle de services der skal overvÃ¥ges
+pÃ¥ alle maskiner.
+De services der overvÃ¥ges i eksemplet
 her, er dem som de fleste vil forvente
 er startet.
 </para></listitem>
@@ -551,23 +551,23 @@ er startet.
 <filename>hosts.cfg</filename>
 </link>
 indeholder en liste over alle de maskiner der
-skal overvåges.
+skal overvÃ¥ges.
 Her i eksemplet er det kun 
 <filename>localhost</filename> og 
 <filename>cvs.sslug.dk</filename>
-der er sat op til at blive overvåget.
-Det er så meningen at du skal gå
-ind og lave en søg-og-erstat af de to 
-hostnavne, og sætte dine egne navne ind.
+der er sat op til at blive overvÃ¥get.
+Det er sÃ¥ meningen at du skal gÃ¥
+ind og lave en sÃ¸g-og-erstat af de to 
+hostnavne, og sÃ¦tte dine egne navne ind.
 </para></listitem>
 
 <listitem><para>
 <link linkend="nagios-konfiguration-hostgroups">
 <filename>hostgroups.cfg</filename>
 </link>
-er listen på alle de grupper af maskiner
-du har. De fleste har nok så få maskiner
-at de kun har én gruppe, men det er
+er listen pÃ¥ alle de grupper af maskiner
+du har. De fleste har nok sÃ¥ fÃ¥ maskiner
+at de kun har Ã©n gruppe, men det er
 nemt at lave en gruppe mere.
 </para></listitem>
 
@@ -576,7 +576,7 @@ nemt at lave en gruppe mere.
 <filename>contacts.cfg</filename>
 </link>
 er listen over de personer der skal have
-tilsendt en mail, når der er noget galt.
+tilsendt en mail, nÃ¥r der er noget galt.
 </para></listitem>
 
 <listitem><para>
@@ -584,19 +584,19 @@ tilsendt en mail, når der er noget galt.
 <filename>contactgroups.cfg</filename>
 </link>
 indeholder listen af de grupper der
-skal have sendt en mail, når der er noget galt.
-Når en service fejler, så er det gruppen der
+skal have sendt en mail, nÃ¥r der er noget galt.
+NÃ¥r en service fejler, sÃ¥ er det gruppen der
 sendes en mail til.
-Det gør det nemmere at administrerer mange brugere samtidigt.
+Det gÃ¸r det nemmere at administrerer mange brugere samtidigt.
 </para></listitem>
 
 <listitem><para>
 <link linkend="nagios-konfiguration-servicegroups">
 <filename>servicegroups.cfg</filename>
 </link>
-er ikke så vigtig at have med til at starte med.
+er ikke sÃ¥ vigtig at have med til at starte med.
 Den giver fx et godt overblik af alle webservere,
-men på alle maskiner.
+men pÃ¥ alle maskiner.
 </para></listitem>
 
 <listitem><para>
@@ -613,7 +613,7 @@ man kan bruge til at checke med i Nagios.
 </link>
 er hoved konfigurationsfilen.
 Det er typisk en man kun vil rette i under
-installation, eller hvis skal tilføje meget
+installation, eller hvis skal tilfÃ¸je meget
 avancerede funktioner.
 Som udgangspunkt skal du nok ikke rette
 i denne.
@@ -623,41 +623,41 @@ i denne.
 
 <para>
 De resterende konfigurationsfiler er til mere
-avanceret opsætning og er ikke beskrevet her.
+avanceret opsÃ¦tning og er ikke beskrevet her.
 </para>
 
 <para>
-En ting der er fælles for den måde konfigurationsfilerne
-er opbygget på i Nagios, er at man definere først en
-standardindstilling, som man så efterfølgende bruger
+En ting der er fÃ¦lles for den mÃ¥de konfigurationsfilerne
+er opbygget pÃ¥ i Nagios, er at man definere fÃ¸rst en
+standardindstilling, som man sÃ¥ efterfÃ¸lgende bruger
 som basis for de andre definitioner.
-Har man kun et ganske lille system, der kun overvåges
-af ganske få systemadministratore, så vil man nok kun
-definere en gruppe der får tilsendt mail når noget
-går galt.
-Her vil man så i filen
+Har man kun et ganske lille system, der kun overvÃ¥ges
+af ganske fÃ¥ systemadministratore, sÃ¥ vil man nok kun
+definere en gruppe der fÃ¥r tilsendt mail nÃ¥r noget
+gÃ¥r galt.
+Her vil man sÃ¥ i filen
 <filename>/etc/nagios/services.cfg</filename>
-øverst definere en template/objektklasse der indeholder
-navnet på den gruppe der skal have en mail tilsendt.
-Det er "contact_groups" der får tilsendt mail.
-Det kunne se ud som nedenstående:
+Ã¸verst definere en template/objektklasse der indeholder
+navnet pÃ¥ den gruppe der skal have en mail tilsendt.
+Det er "contact_groups" der fÃ¥r tilsendt mail.
+Det kunne se ud som nedenstÃ¥ende:
 </para>
 
 <programlisting>
 define service{
-	name		generic-service	# navn på definitionen
+	name		generic-service	# navn pÃ¥ definitionen
 	register	0		# angiver at det kun er en default
-	contact_groups	admins		# eksempel på noget der nedarves
-	... flere definitioner følger
+	contact_groups	admins		# eksempel pÃ¥ noget der nedarves
+	... flere definitioner fÃ¸lger
 	}
 </programlisting>
 
 <para>
-Der vil typisk være flere definitioner
+Der vil typisk vÃ¦re flere definitioner
 end vist herover. 
 Det er blot beskrevet minimalt her, for
 at forklare princippet.
-Det man nu kan gøre med 
+Det man nu kan gÃ¸re med 
 "generic-service" definitionen er at
 bruge den i alle de services man skal
 have defineret.
@@ -666,23 +666,23 @@ have defineret.
 <programlisting>
 define service{
 	use			generic-service	# nedarv fra definition
-	host_name		foo.eksempel.dk	# navn på host
-	service_description	HTTP		# navn på service
+	host_name		foo.eksempel.dk	# navn pÃ¥ host
+	service_description	HTTP		# navn pÃ¥ service
 	check_command		check_http	# kommando der tjekker service
 	}
 </programlisting>
 
 <para>
-Ved et bruge ovenstående princip, kan man
-så i mange tilfælde definere en service med
+Ved et bruge ovenstÃ¥ende princip, kan man
+sÃ¥ i mange tilfÃ¦lde definere en service med
 kun fire konfigurationslinjer.
-Får man brug for enkelte undtagelser, kan man
-så blot skrive det ind ved den service.
+FÃ¥r man brug for enkelte undtagelser, kan man
+sÃ¥ blot skrive det ind ved den service.
 Som eksempel kunne man forestille sig at 
-webadministratorerne også skulle havee at
+webadministratorerne ogsÃ¥ skulle havee at
 vide hvis der er noget galt med HTTP.
-Ved så at indskrive contact_groups igen,
-overskrives den forgående definition.
+Ved sÃ¥ at indskrive contact_groups igen,
+overskrives den forgÃ¥ende definition.
 I Nagios skrives lister adskilt med
 komma.
 </para>
@@ -690,8 +690,8 @@ komma.
 <programlisting>
 define service{
 	use			generic-service	# nedarv fra definition
-	host_name		foo.eksempel.dk	# navn på host
-	service_description	HTTP		# navn på service
+	host_name		foo.eksempel.dk	# navn pÃ¥ host
+	service_description	HTTP		# navn pÃ¥ service
 	check_command		check_http	# kommando der tjekker service
 	contact_groups		admins,webmasters
 	}
@@ -699,9 +699,9 @@ define service{
 
 <para>
 En ting der er god at huske efter man har lavet
-om på konfigurationen, er lige at køre et check
+om pÃ¥ konfigurationen, er lige at kÃ¸re et check
 om det man har lavet nu er rigtigt.
-Det gøres med kommandoen:
+Det gÃ¸res med kommandoen:
 </para>
 
 <screen>
@@ -709,24 +709,24 @@ Det gøres med kommandoen:
 </screen>
 
 <para>
-Herfter får man listet alle de fejl der måtte være
-og man kan gå igang med at rette dem.
+Herfter fÃ¥r man listet alle de fejl der mÃ¥tte vÃ¦re
+og man kan gÃ¥ igang med at rette dem.
 </para>
 
 <para>
-Er der en check-kommando der driller, kan man altid prøve dem
+Er der en check-kommando der driller, kan man altid prÃ¸ve dem
 af fra kommandolinjen.
 En af de check-kommandoer der kan give underlige svar,
 er fx <command>check_http_string</command>.
-Den bruges til at undersøge om en hjemmeside indeholder en bestemt tekst.
-Det kunne være en tekst far en database, eller andet der indikere at 
-mange af de services der skal fungere på en hjemmeside, er til stede.
+Den bruges til at undersÃ¸ge om en hjemmeside indeholder en bestemt tekst.
+Det kunne vÃ¦re en tekst far en database, eller andet der indikere at 
+mange af de services der skal fungere pÃ¥ en hjemmeside, er til stede.
 For at vide hvad programmet rigtigt hedder,
-må det findes i <filename>/etc/nagios/checkcommands.cfg</filename>
+mÃ¥ det findes i <filename>/etc/nagios/checkcommands.cfg</filename>
 og finde <command>check_http_string</command>.
 Her kan man se at programmet blot er <command>check_http</command>
 med en ekstra option.
-Definitionen ser således ud:
+Definitionen ser sÃ¥ledes ud:
 </para>
 
 <programlisting>
@@ -738,14 +738,14 @@ define command{
 </programlisting>
 
 <para>
-Hjælp til brug af check-kommandoerne fås alle ved option '-h'.
-'-s' bruges til at undersøge om en bestemt tekst forekommer.
-Nogle hjemmesider checker for hvilket sprog brugeren foretrækker,
-og her vil check-kommandoen spørge som default sprog, hvilket
+HjÃ¦lp til brug af check-kommandoerne fÃ¥s alle ved option '-h'.
+'-s' bruges til at undersÃ¸ge om en bestemt tekst forekommer.
+Nogle hjemmesider checker for hvilket sprog brugeren foretrÃ¦kker,
+og her vil check-kommandoen spÃ¸rge som default sprog, hvilket
 typisk er engelsk.
-Hvis man checker hjemmesiden med en browser, står der måske
-"Velkommen", men med <command>check_http</command> vil der stå "Welcome".
-På skærmen kunne det se således ud:
+Hvis man checker hjemmesiden med en browser, stÃ¥r der mÃ¥ske
+"Velkommen", men med <command>check_http</command> vil der stÃ¥ "Welcome".
+PÃ¥ skÃ¦rmen kunne det se sÃ¥ledes ud:
 </para>
 
 <screen>
@@ -760,19 +760,19 @@ HTTP ok: HTTP/1.1 200 OK -   0.020 second response time |time=  0.020
 <title>services.cfg</title>
 <indexterm><primary>Nagios</primary><secondary>Konfiguration</secondary><tertiary>services.cfg</tertiary></indexterm>
 <para>
-Alle services der skal holdes øje med findes i 
+Alle services der skal holdes Ã¸je med findes i 
 <filename>services.cfg</filename> .
-Med services forstås fx en HTTP web-service.
+Med services forstÃ¥s fx en HTTP web-service.
 Her er det at der bliver testet om det kan
 lade sig at hente en hjemmeside, og samtidigt
 bliv er det noteret hvor lang tid det tog.
-I nedenstående anvendes direktivet
+I nedenstÃ¥ende anvendes direktivet
 <command>use generic-service</command>,
-hvilket så gør at alle de sædvanlige 
+hvilket sÃ¥ gÃ¸r at alle de sÃ¦dvanlige 
 direktiver er nedarvet fra denne.
-Derved kan man nøjes med kun at angive fire
+Derved kan man nÃ¸jes med kun at angive fire
 linjer parametre for hver service der skal 
-holdes øje med.
+holdes Ã¸je med.
 </para>
 <programlisting>
 define service{
@@ -783,14 +783,14 @@ define service{
 	}
 </programlisting>
 <para>
-Har man en bestemt service man altid gerne vil bruger på alle de hosts man
-har defineret i hosts.cfg, så kan man fordel bruge en '*' som host_name.
-Eksempelvis kunne det være at alle skulle have en ping:
+Har man en bestemt service man altid gerne vil bruger pÃ¥ alle de hosts man
+har defineret i hosts.cfg, sÃ¥ kan man fordel bruge en '*' som host_name.
+Eksempelvis kunne det vÃ¦re at alle skulle have en ping:
 </para>
 <programlisting>
 define service{
 	use			generic-service
-	host_name		* ; Alle hosts får en ping
+	host_name		* ; Alle hosts fÃ¥r en ping
 	service_description	PING
 	check_command		check_ping!100.0,20%!500.0,60%
 	}
@@ -801,17 +801,17 @@ define service{
 <title>hosts.cfg</title>
 <indexterm><primary>Nagios</primary><secondary>Konfiguration</secondary><tertiary>hosts.cfg</tertiary></indexterm>
 <para>
-De maskiner der skal overvåges er angivet i 
+De maskiner der skal overvÃ¥ges er angivet i 
 <filename>hosts.cfg</filename>.
-Som med services anvendes også her en
-standardkonfiguration benævnt
+Som med services anvendes ogsÃ¥ her en
+standardkonfiguration benÃ¦vnt
 <command>use generic-host</command>
-så alle fælles direktiver kan angives et sted.
-Det kan virke overflødigt at IP-adressen
+sÃ¥ alle fÃ¦lles direktiver kan angives et sted.
+Det kan virke overflÃ¸digt at IP-adressen
 skal med, men som angivet i Nagios-manualen
 kan man komme ud for at DNS-serveren er nede,
-og så mister man overvågning af alle sine
-maskiner på én gang.
+og sÃ¥ mister man overvÃ¥gning af alle sine
+maskiner pÃ¥ Ã©n gang.
 </para>
 <programlisting>
 define host{
@@ -822,13 +822,13 @@ define host{
 	}
 </programlisting>
 <para>
-Til hver host kan der tilføjes ekstra information
-som ikke er påkrævet, men praktisk at have.
+Til hver host kan der tilfÃ¸jes ekstra information
+som ikke er pÃ¥krÃ¦vet, men praktisk at have.
 Har fx en hel hjemmeside der beskriver hver enkelt
-maskine, kan sætte et link op til denne så man
+maskine, kan sÃ¦tte et link op til denne sÃ¥ man
 hurtigt kan klikke sig frem til informationen
-direkte fra Nagios overvågningssiden.
-Informationen kunne være som følger:
+direkte fra Nagios overvÃ¥gningssiden.
+Informationen kunne vÃ¦re som fÃ¸lger:
 </para>
 <programlisting>
 define hostextinfo{
@@ -840,13 +840,13 @@ define hostextinfo{
 	}
 </programlisting>
 <para>
-Som tidligere nævnt er der noget rod omkring hvor
+Som tidligere nÃ¦vnt er der noget rod omkring hvor
 de forskellige filer skal ligge, og disse "icon_image"
 skal ligge i et subdir der hedder noget med
-"share/images/logos", og det må du så lede efter.
+"share/images/logos", og det mÃ¥ du sÃ¥ lede efter.
 </para>
 <para>
-Her i eksemplet er brugt hostnavnet 'localhost', men det bør man ikke bruge
+Her i eksemplet er brugt hostnavnet 'localhost', men det bÃ¸r man ikke bruge
 i praksis, da det er forvirende hvis rent faktisk sidder ved en anden maskine.
 </para>
 </sect3><!-- nagios-konfiguration-hosts -->
@@ -855,24 +855,24 @@ i praksis, da det er forvirende hvis rent faktisk sidder ved en anden maskine.
 <title>hostgroups.cfg</title>
 <indexterm><primary>Nagios</primary><secondary>Konfiguration</secondary><tertiary>hostgroups</tertiary></indexterm>
 <para>
-På Nagios web-status-siden er der i venstre side en menu, hvor man kan vælge
-at se status på forskellig måde.
-En måde er at se de forskellige maskiner sammen som en gruppe, og så have
+PÃ¥ Nagios web-status-siden er der i venstre side en menu, hvor man kan vÃ¦lge
+at se status pÃ¥ forskellig mÃ¥de.
+En mÃ¥de er at se de forskellige maskiner sammen som en gruppe, og sÃ¥ have
 flere grupper med et antal maskiner i.
-Er man flere personer om at overvåge maskiner, og hver har et ansvarsområde
+Er man flere personer om at overvÃ¥ge maskiner, og hver har et ansvarsomrÃ¥de
 for et antal maskiner, kan man med fordel dele dem op i flere hostgrupper.
-Det fx være en gruppe med Linux-maskiner, og en med UNIX-maskiner.
-Gruppen kan også være den fysiske lokation såsom København og Ruds Vedby.
+Det fx vÃ¦re en gruppe med Linux-maskiner, og en med UNIX-maskiner.
+Gruppen kan ogsÃ¥ vÃ¦re den fysiske lokation sÃ¥som KÃ¸benhavn og Ruds Vedby.
 </para>
 <para>
-Man kan godt have den samme maskine nævnt i flere grupper samtidigt, 
-men når der så er en fejl på den maskine vil der være to røde felter på
-skærmen, og på afstand vil det se ud som om der er to fejl.
-Så nævn kun hver maskine én gang i hostgroup-filen.
+Man kan godt have den samme maskine nÃ¦vnt i flere grupper samtidigt, 
+men nÃ¥r der sÃ¥ er en fejl pÃ¥ den maskine vil der vÃ¦re to rÃ¸de felter pÃ¥
+skÃ¦rmen, og pÃ¥ afstand vil det se ud som om der er to fejl.
+SÃ¥ nÃ¦vn kun hver maskine Ã©n gang i hostgroup-filen.
 </para>
 <programlisting>
 define hostgroup{
-	hostgroup_name	gruppenavn ; Vælg et kort unikt navn
+	hostgroup_name	gruppenavn ; VÃ¦lg et kort unikt navn
 	alias		Langt navn for gruppen
 	members		localhost, cvs.sslug.dk ; Kommasepareret liste
 	}
@@ -883,11 +883,11 @@ define hostgroup{
 <title>contacts.cfg</title>
 <indexterm><primary>Nagios</primary><secondary>Konfiguration</secondary><tertiary>contacts</tertiary></indexterm>
 <para>
-De brugere der skal have en meddelelse når der er noget galt med en maskine,
+De brugere der skal have en meddelelse nÃ¥r der er noget galt med en maskine,
 skrives i listen 
 <filename>contacts.cfg</filename>.
-I eksemplet der følger med beskrivelsen her, bruges en contact-template
-og så er det kun ganske få linjer man typisk skal skrive om hver person.
+I eksemplet der fÃ¸lger med beskrivelsen her, bruges en contact-template
+og sÃ¥ er det kun ganske fÃ¥ linjer man typisk skal skrive om hver person.
 </para>
 <programlisting>
 define contact{
@@ -903,16 +903,16 @@ define contact{
 <title>contactgroups.cfg</title>
 <indexterm><primary>Nagios</primary><secondary>Konfiguration</secondary><tertiary>contactgroups</tertiary></indexterm>
 <para>
-Der vil ofte være flere personer der skal sendt en e-mail når noget går
+Der vil ofte vÃ¦re flere personer der skal sendt en e-mail nÃ¥r noget gÃ¥r
 galt. Derfor definere man et antal personer i en gruppe, og ved de enkelte
-services angives hvilken kontaktgruppe der skal have besked når der er 
+services angives hvilken kontaktgruppe der skal have besked nÃ¥r der er 
 noget galt.
 Man kunne fx foresille sig at man i 
 <filename>services.cfg</filename>
-havde en overvågning af web-servere (check_http) og her ville sende en
+havde en overvÃ¥gning af web-servere (check_http) og her ville sende en
 mail til gruppen "webmasters" hvis der skete noget der.
 I det vedlagte eksempel er dog blot defineret en enkelt gruppe der modtager
-alle fejl, hvilket typisk vil være det de fleste har brug for.
+alle fejl, hvilket typisk vil vÃ¦re det de fleste har brug for.
 </para>
 <programlisting>
 define contactgroup{
@@ -927,16 +927,16 @@ define contactgroup{
 <title>servicegroups.cfg</title>
 <indexterm><primary>Nagios</primary><secondary>Konfiguration</secondary><tertiary>servicegroups</tertiary></indexterm>
 <para>
-Servicegrupper bruges til at overvåge en bestemt service, men på tværs af
-hvilke maskiner de køre på.
-I det viste eksempel er det webservices der bliver holdt øje med, og det
-gør så at man kan få en pæn liste op på skærmen der ikke viser andet end
+Servicegrupper bruges til at overvÃ¥ge en bestemt service, men pÃ¥ tvÃ¦rs af
+hvilke maskiner de kÃ¸re pÃ¥.
+I det viste eksempel er det webservices der bliver holdt Ã¸je med, og det
+gÃ¸r sÃ¥ at man kan fÃ¥ en pÃ¦n liste op pÃ¥ skÃ¦rmen der ikke viser andet end
 webservere.
-Bemærk her at listen af "members" skrives både med hostnavn og
+BemÃ¦rk her at listen af "members" skrives bÃ¥de med hostnavn og
 servicebeskrivelse: members &lt;host_name&gt;,&lt;service_description&gt; .
 Alle &lt;host_name&gt; og &lt;service_description&gt; kan findes i filen
 <filename>services.cfg</filename> ,
-og man kan fx lave en hurtig liste til skærmen med kommandoen:
+og man kan fx lave en hurtig liste til skÃ¦rmen med kommandoen:
 </para>
 <screen>
 <prompt>[tyge@hven nagios]$ </prompt><userinput>egrep "(host_name|service_description)" services.cfg</userinput>
@@ -958,17 +958,17 @@ define servicegroup{
 <indexterm><primary>Nagios</primary><secondary>Konfiguration</secondary><tertiary>checkcommands</tertiary></indexterm>
 <para>
 <filename>checkcommands.cfg</filename>
-indeholder definitionen på alle de check-kommandoer man kan kalde i
+indeholder definitionen pÃ¥ alle de check-kommandoer man kan kalde i
 <filename>services.cfg</filename> .
-Nogle af kommandoerne skal have parametre med såsom hostname, og andre
+Nogle af kommandoerne skal have parametre med sÃ¥som hostname, og andre
 skal ikke have nogen parametre.
-En nem måde at lære hvordan de enkelte check-programmer virker og hvordan
+En nem mÃ¥de at lÃ¦re hvordan de enkelte check-programmer virker og hvordan
 de giver output, er at kalde dem fra kommandolinjen.
-Hvis du fx 48% diskplads tilbage på din rod-partition, så prøv at lave en
-warning på 50%.
-Nagios-plugins (hjælpe-programmerne) ligger i 
+Hvis du fx 48% diskplads tilbage pÃ¥ din rod-partition, sÃ¥ prÃ¸v at lave en
+warning pÃ¥ 50%.
+Nagios-plugins (hjÃ¦lpe-programmerne) ligger i 
 <filename>/usr/libexec/nagios</filename>,
-så prøv denne:
+sÃ¥ prÃ¸v denne:
 </para>
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>cd /usr/libexec/nagios</userinput>
@@ -977,9 +977,9 @@ DISK WARNING - free space: / 134354 MB (48%);| /=147041MB;140697;211046;0;281395
 </userinput>
 </screen>
 <para>
-I stedet for at bruge mount-pointet '/' kan man også bruge selve devicen såsom
+I stedet for at bruge mount-pointet '/' kan man ogsÃ¥ bruge selve devicen sÃ¥som
 '/dev/hda1', hvis det giver mere mening.
-De anvendte mount-point kan læses i 
+De anvendte mount-point kan lÃ¦ses i 
 <filename>/etc/mtab</filename>
 .
 Som det ses herunder hedder kommandoen 
@@ -992,7 +992,7 @@ define command{
 	}
 </programlisting>
 <para>
-Når man har fundet ud af hvilke parametre man til henholdsvis
+NÃ¥r man har fundet ud af hvilke parametre man til henholdsvis
 warning og critical, kan man oprette en definition i
 <filename>services.cfg</filename>:
 </para>
@@ -1005,10 +1005,10 @@ define  service{
 	}
 </programlisting>
 <para>
-For alle check-programmerne gælder at man kalder dem med kommandoen
-<command>-h</command> for at få den fulde hjælp.
-Her får man så al den hjælp der findes, da reglerne for skrivning af
-plugins foreskriver at det skal være sådan.
+For alle check-programmerne gÃ¦lder at man kalder dem med kommandoen
+<command>-h</command> for at fÃ¥ den fulde hjÃ¦lp.
+Her fÃ¥r man sÃ¥ al den hjÃ¦lp der findes, da reglerne for skrivning af
+plugins foreskriver at det skal vÃ¦re sÃ¥dan.
 </para>
 </sect3> <!-- nagios-konfiguration-checkcommands -->
 
@@ -1016,10 +1016,10 @@ plugins foreskriver at det skal være sådan.
 <title>nagios.cfg</title>
 <indexterm><primary>Nagios</primary><secondary>Konfiguration</secondary><tertiary>nagios</tertiary></indexterm>
 <para>
-Der er mange ting der kan ændres i hovedkonfiguratiosfilen
+Der er mange ting der kan Ã¦ndres i hovedkonfiguratiosfilen
 <filename>nagios.cfg</filename>,
-men det vil oftest ikke være nødvendigt.
-Der kan være en enkelt path der skal ændres, men ellers er standardparametrene
+men det vil oftest ikke vÃ¦re nÃ¸dvendigt.
+Der kan vÃ¦re en enkelt path der skal Ã¦ndres, men ellers er standardparametrene
 sat fornuftigt, og det er kun de andre filer man skal koncentrere sig om.
 </para>
 </sect3> <!-- nagios-konfiguration-nagios -->
@@ -1031,36 +1031,36 @@ sat fornuftigt, og det er kun de andre filer man skal koncentrere sig om.
 <indexterm><primary>Nagios</primary><secondary>Manualen</secondary></indexterm>
 
 <para>
-Det er ikke mange steder i denne bog "Friheden til at vælge"
-hvor der er en beskrivelse af hvordan læser den 
+Det er ikke mange steder i denne bog "Friheden til at vÃ¦lge"
+hvor der er en beskrivelse af hvordan lÃ¦ser den 
 engelsksprogede manual.
-Hvad angår Nagios, så er det påkrævet da den ikke
+Hvad angÃ¥r Nagios, sÃ¥ er det pÃ¥krÃ¦vet da den ikke
 er helt nem at finde rundt i.
-Der er desværre heller ikke noget stiksordsregister,
+Der er desvÃ¦rre heller ikke noget stiksordsregister,
 hvilket kunne have hjulpet en del.
 </para>
 
 <para>
-Links ændre sig hele tiden for den sidst gældende manual,
-men her er så alligevel et link til
+Links Ã¦ndre sig hele tiden for den sidst gÃ¦ldende manual,
+men her er sÃ¥ alligevel et link til
 <ulink url="http://nagios.sourceforge.net/docs/2_0/">Nagios version 2.0 manual</ulink>
 .
-Et emne, hvor det kunne være rart hvis det var nemt at finde, 
-er der hvor der står noget om hvordan man definere services.
-Når der ikke lige er et stikordsregister, så er det lige sin
+Et emne, hvor det kunne vÃ¦re rart hvis det var nemt at finde, 
+er der hvor der stÃ¥r noget om hvordan man definere services.
+NÃ¥r der ikke lige er et stikordsregister, sÃ¥ er det lige sin
 sag at finde ud af at det er
 <ulink url="http://nagios.sourceforge.net/docs/2_0/xodtemplate.html#service">
 Table of Contents - &gt; Configuring Nagios -&gt;
 Object configuration file options -&gt; Click here -&gt; Service definitions</ulink>
-man skal klikke på.
-Måske du bare skulle overvej at hente hele manualen hjem,
-så kan du altid bruge <command>grep</command> hvis der er 
+man skal klikke pÃ¥.
+MÃ¥ske du bare skulle overvej at hente hele manualen hjem,
+sÃ¥ kan du altid bruge <command>grep</command> hvis der er 
 noget du vil finde.
-Og nu du har hentet manualen hjem på egen harddisk,
-så kan du lige sætte fontene til noget lidt større
-så det er til at læse. 7 og 8 pt er lige lovlig småt
-når man bruger "serif".
-De to følgende kommandoer skulle klare de værste problemer.
+Og nu du har hentet manualen hjem pÃ¥ egen harddisk,
+sÃ¥ kan du lige sÃ¦tte fontene til noget lidt stÃ¸rre
+sÃ¥ det er til at lÃ¦se. 7 og 8 pt er lige lovlig smÃ¥t
+nÃ¥r man bruger "serif".
+De to fÃ¸lgende kommandoer skulle klare de vÃ¦rste problemer.
 </para>
 
 <screen>
@@ -1079,21 +1079,21 @@ De to følgende kommandoer skulle klare de værste problemer.
 <ulink url="http://www.nagios.org/">nagios.org</ulink>
 er hjemmesiden for Nagios. 
 Her downloades hovedprogrammet til indsamling af data og programmet
-til præsentation på web.
+til prÃ¦sentation pÃ¥ web.
 </para></listitem>
 <listitem><para>
 <ulink url="http://nagiosplug.sourceforge.net/">nagiosplug.sourceforge.net</ulink>
 er hjemmesiden for check-programmerne for Nagios.
-Uden check-programmerne kan Nagios intet, så man skal downloade en
+Uden check-programmerne kan Nagios intet, sÃ¥ man skal downloade en
 pakke nagios-plugins.*.tra.gz her fra.
 </para></listitem>
 <listitem><para>
 <ulink url="http://www.nagiosexchange.org/">nagiosexchange.org</ulink>
 indeholder alt muligt andet omkring Nagios. Der er forskellige programmer
-der gør det nemmere at sætte Nagios op, pakker med ikoner, og andre
-tillægsting til Nagios.
-Der findes flere pakker der handler om at gøre opsætning af Nagios nemmere,
-så det kan være interessant at kigge på den på et tidligt tidspunkt.
+der gÃ¸r det nemmere at sÃ¦tte Nagios op, pakker med ikoner, og andre
+tillÃ¦gsting til Nagios.
+Der findes flere pakker der handler om at gÃ¸re opsÃ¦tning af Nagios nemmere,
+sÃ¥ det kan vÃ¦re interessant at kigge pÃ¥ den pÃ¥ et tidligt tidspunkt.
 </para></listitem>
 </itemizedlist>
 

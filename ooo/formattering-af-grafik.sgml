@@ -6,9 +6,9 @@
   <title>Formatering af grafik med mus og
     objektlinje</title>
 
-<para>Når du har klikket på et billede, så det er omgivet af grønne
-    firkanter/kontrolhåndtag kan du manipulere med det. Objektlinjen skifter
-    udseende til en særlig <emphasis>grafikobjektlinje</emphasis> :</para>
+<para>NÃ¥r du har klikket pÃ¥ et billede, sÃ¥ det er omgivet af grÃ¸nne
+    firkanter/kontrolhÃ¥ndtag kan du manipulere med det. Objektlinjen skifter
+    udseende til en sÃ¦rlig <emphasis>grafikobjektlinje</emphasis> :</para>
 
 <figure float="1" id="fig-ooo-grafikobjektlinje">
 <title>Grafik objektlinie</title>
@@ -20,14 +20,14 @@
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Du kan <emphasis>skalere</emphasis> (dvs. ændre størrelse på) billedet ved at <emphasis>trække</emphasis> med musen i en af de grønne firkanter.</para>
+<para>Du kan <emphasis>skalere</emphasis> (dvs. Ã¦ndre stÃ¸rrelse pÃ¥) billedet ved at <emphasis>trÃ¦kke</emphasis> med musen i en af de grÃ¸nne firkanter.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Hvis du holder <emphasis>skift</emphasis> nede mens du trækker bevares
-        højde/bredde forholdet.</para>
+<para>Hvis du holder <emphasis>skift</emphasis> nede mens du trÃ¦kker bevares
+        hÃ¸jde/bredde forholdet.</para>
 
 </listitem>
 </itemizedlist>
@@ -38,8 +38,8 @@
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Du kan ændre den relative placering i forhold til ankerpunktet ved
-        at trække med musen i <emphasis>midterområdet</emphasis> af billedet. Billedet kan
+<para>Du kan Ã¦ndre den relative placering i forhold til ankerpunktet ved
+        at trÃ¦kke med musen i <emphasis>midteromrÃ¥det</emphasis> af billedet. Billedet kan
         placeres helt frit i forhold til ankerpunktet, men hvis du flytter ud
         af afsnittet flytter ankerpunktet med.</para>
 
@@ -47,7 +47,7 @@
 
   <listitem>
 
-<para>Du kan også bruge objektlinjen: Knapperne
+<para>Du kan ogsÃ¥ bruge objektlinjen: Knapperne
 <figure float="1" id="fig-ooo-grafikjustering">
 <title>Grafikjustering</title>
 <graphic fileref="grafikjustering.&magic;" scale="60"></graphic>
@@ -59,7 +59,7 @@
 
   <listitem>
 
-<para>Du kan flytte ankerpunktet til et andet afsnit ved at trække i
+<para>Du kan flytte ankerpunktet til et andet afsnit ved at trÃ¦kke i
         anker-ikonen.</para>
 
 </listitem>
@@ -75,7 +75,7 @@
 </figure>
  i objektlinjen indstiller
     ombrydningen til enten ingen ombrydning, sideombrydning eller
-    gennemgående ombrydning.</para>
+    gennemgÃ¥ende ombrydning.</para>
 </sect2>    <!--   Ombrydning -->
 
 <sect2 id="ooo-formattering-af-grafik-forankring">

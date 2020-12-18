@@ -14,7 +14,7 @@
  <secondary>Awesome</secondary></indexterm>
 
  <para>
-   Awesome er en såkaldt "tiling window" manager
+   Awesome er en sÃ¥kaldt "tiling window" manager
  </para>
 
  <sect2 id="wm-awmesome-installation">
@@ -26,23 +26,23 @@
   </indexterm>
 
   <para>
-    Awesome burde være i de fleste pakkearkiver men kan hentes på <ulink
+    Awesome burde vÃ¦re i de fleste pakkearkiver men kan hentes pÃ¥ <ulink
    url="http://awesome.naquadah.org/">http://awesome.naquadah.org/</ulink>.
   </para>
 
   <sect3 id="wm-awesome-opsaetning">
-   <title>Opsætning</title>
+   <title>OpsÃ¦tning</title>
 
    <indexterm>
-    <primary>opsætning af</primary>
+    <primary>opsÃ¦tning af</primary>
     <secondary>Awesome</secondary>
    </indexterm>
 
    <para>
-    Awesome's opsætning styres i filen <command>~/.config/awesome/rc.lua</command>.
+    Awesome's opsÃ¦tning styres i filen <command>~/.config/awesome/rc.lua</command>.
     Alt configuration er skrevet i fortolkersproget Lua og der er 
-    ingen tjek på om filen er korrekt når awesome bliver startet.
-    Det er derfor nødvendigt at køre awesome med parameteren --check således <command>awesome --check ~/.config/awesome/rc.lua</command> or at tjekke om alt som det skal være inden man genindlæser konfiguration
+    ingen tjek pÃ¥ om filen er korrekt nÃ¥r awesome bliver startet.
+    Det er derfor nÃ¸dvendigt at kÃ¸re awesome med parameteren --check sÃ¥ledes <command>awesome --check ~/.config/awesome/rc.lua</command> or at tjekke om alt som det skal vÃ¦re inden man genindlÃ¦ser konfiguration
    </para>
   </sect3>
 
@@ -55,14 +55,14 @@
    </indexterm>
 
    <para>
-     Awesome har ikke som sådan skriveborde, men tags. Tags kan blandt andet flettes, men virker som man ville forvente virtuelle skriveborde ville.
+     Awesome har ikke som sÃ¥dan skriveborde, men tags. Tags kan blandt andet flettes, men virker som man ville forvente virtuelle skriveborde ville.
    </para>
   </sect3>    <!--   Tags -->
 
  <sect2 id="wm-awesome-hvorfor">
   <title>Det fede ved Awesome</title>
   <para>
-    Navnet alene gør den fed! Men det er rigtig rart at alle vinduer som standard er "maksimeret" og tilpasser sig når man åbner et nyt vindue. Det kræver lidt tilvænning, men hvis man ikke er den store fan af at bruge mus - er den eminient.
+    Navnet alene gÃ¸r den fed! Men det er rigtig rart at alle vinduer som standard er "maksimeret" og tilpasser sig nÃ¥r man Ã¥bner et nyt vindue. Det krÃ¦ver lidt tilvÃ¦nning, men hvis man ikke er den store fan af at bruge mus - er den eminient.
   </para>
  </sect2>
 </sect1>

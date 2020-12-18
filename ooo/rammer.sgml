@@ -4,34 +4,34 @@
 <chapter id="ooo-rammer">
  <title>Grafik/billeder (rammer)</title>
 
-<para>Dette kapitel handler om, hvordan du kan indsætte grafik/billeder
+<para>Dette kapitel handler om, hvordan du kan indsÃ¦tte grafik/billeder
     (lavet i et andet program) i dit dokument.</para>
 
 <sect1 id="ooo-rammer-teori">
   <title>Teori: Grafik/billeder og rammer</title>
 
-<para>Grafik/billeder indsættes på tværs af den øvrige inddeling af siden i
-    linjer, som vist på figuren herunder:</para>
+<para>Grafik/billeder indsÃ¦ttes pÃ¥ tvÃ¦rs af den Ã¸vrige inddeling af siden i
+    linjer, som vist pÃ¥ figuren herunder:</para>
 
 <figure float="1" id="fig-ooo-grafikeksempel1">
 <title>Grafik eksempel</title>
 <graphic fileref="grafikeksempel1.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Sådan en kasse kaldes en <emphasis>ramme</emphasis> .</para>
+<para>SÃ¥dan en kasse kaldes en <emphasis>ramme</emphasis> .</para>
 
-<para>Hvordan en ramme indgår i teksten afgøres af tre ting: <emphasis>Ombrydningen</emphasis> , <emphasis>forankringen</emphasis> og <emphasis>den relative
+<para>Hvordan en ramme indgÃ¥r i teksten afgÃ¸res af tre ting: <emphasis>Ombrydningen</emphasis> , <emphasis>forankringen</emphasis> og <emphasis>den relative
     placering</emphasis> .</para>
 
 <sect2 id="ooo-rammer-ombrydning">
   <title>Ombrydning</title>
 
-<para>Ombrydningen bestemmer hvordan teksten løber rundt om rammen.</para>
+<para>Ombrydningen bestemmer hvordan teksten lÃ¸ber rundt om rammen.</para>
 
 <para>I starten af afsnittet ses en <emphasis>sideombrydning</emphasis> , hvor teksten
-    løber ved siden af rammen. Et alternativ er <emphasis>parallel
-    side-ombrydning</emphasis> , hvor teksten afbrydes af rammen og fortsætter på den
-    anden side. I det viste tilfælde er teksten svær at læse, men hvis rammen
+    lÃ¸ber ved siden af rammen. Et alternativ er <emphasis>parallel
+    side-ombrydning</emphasis> , hvor teksten afbrydes af rammen og fortsÃ¦tter pÃ¥ den
+    anden side. I det viste tilfÃ¦lde er teksten svÃ¦r at lÃ¦se, men hvis rammen
     er placeret mellem to spalter er det velegnet.</para>
 
 <figure float="1" id="fig-ooo-grafikeksempel2">
@@ -39,17 +39,17 @@
 <graphic fileref="grafikeksempel2.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Så et eksempel <emphasis>uden ombrydning</emphasis> ; afsnittet afbrydes og
-    fortsætter først efter rammen.</para>
+<para>SÃ¥ et eksempel <emphasis>uden ombrydning</emphasis> ; afsnittet afbrydes og
+    fortsÃ¦tter fÃ¸rst efter rammen.</para>
 
 <figure float="1" id="fig-ooo-grafikeksempel3">
 <title>Grafik eksempel</title>
 <graphic fileref="grafikeksempel3.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Så et eksempel med <emphasis>gennemgående ombrydning</emphasis> ; teksten fortsætter
-    tværs igennem rammen. Her foran rammen; den kan også indstilles til at
-    forløbe bag rammen.</para>
+<para>SÃ¥ et eksempel med <emphasis>gennemgÃ¥ende ombrydning</emphasis> ; teksten fortsÃ¦tter
+    tvÃ¦rs igennem rammen. Her foran rammen; den kan ogsÃ¥ indstilles til at
+    forlÃ¸be bag rammen.</para>
 
 <figure float="1" id="fig-ooo-grafikeksempel4">
 <title>Grafik eksempel</title>
@@ -60,8 +60,8 @@
 <sect2 id="ooo-rammer-forankring">
   <title>Forankring</title>
 
-<para>En ramme vil altid <!-- &bdquo; -->hænge fast<!-- &ldquo; --> i noget. Det har især stor
-    betydning, når du <emphasis>redigerer</emphasis> i teksten. I Writer er der fire mulige
+<para>En ramme vil altid <!-- &bdquo; -->hÃ¦nge fast<!-- &ldquo; --> i noget. Det har isÃ¦r stor
+    betydning, nÃ¥r du <emphasis>redigerer</emphasis> i teksten. I Writer er der fire mulige
     forankringer:</para>
 
 <itemizedlist mark="bullet">
@@ -69,7 +69,7 @@
 
 <para>Forankring <emphasis>til et afsnit</emphasis> : Det betyder, at rammen flytter
         med et bestemt afsnit og placeres i forhold til det afsnit. Det er
-        standardindstillingen og passer til de fleste tilfælde.</para>
+        standardindstillingen og passer til de fleste tilfÃ¦lde.</para>
 
 </listitem>
 
@@ -77,8 +77,8 @@
 
 <para>Forankring <emphasis>til</emphasis>  <emphasis>et tegn</emphasis> : Det betyder tilsvarende, at
         rammen flytter med et bestemt tegn og placeres i forhold til det
-        tegn. Det betyder i de fleste sammenhænge det samme som forankring
-        til et afsnit, men kan gøre en forskel hvis du f.eks. deler et afsnit
+        tegn. Det betyder i de fleste sammenhÃ¦nge det samme som forankring
+        til et afsnit, men kan gÃ¸re en forskel hvis du f.eks. deler et afsnit
         i to.</para>
 
 </listitem>
@@ -86,23 +86,23 @@
   <listitem>
 
 <para>Forankring <emphasis>til</emphasis>  <emphasis>en side</emphasis> : Det betyder, at rammen
-        bliver på en bestemt side, og altså ikke flytter med teksten, når du
-        redigerer den. Det er nyttigt i nogle tilfælde, hvis rammen ikke
-        hænger direkte sammen med teksten og du ved hvor mange sider der er
+        bliver pÃ¥ en bestemt side, og altsÃ¥ ikke flytter med teksten, nÃ¥r du
+        redigerer den. Det er nyttigt i nogle tilfÃ¦lde, hvis rammen ikke
+        hÃ¦nger direkte sammen med teksten og du ved hvor mange sider der er
         (f.eks. hvis du laver en fire siders folder).</para>
 
 </listitem>
 
   <listitem>
 
-<para>Forankring <emphasis>som et tegn</emphasis> : Det betyder, at rammen indgår i
-        teksten som ethvert andet tegn (sådan her:
+<para>Forankring <emphasis>som et tegn</emphasis> : Det betyder, at rammen indgÃ¥r i
+        teksten som ethvert andet tegn (sÃ¥dan her:
 <figure float="1" id="fig-ooo-grafiksmil">
 <title>Grafik smil</title>
 <graphic fileref="grafiksmil.&magic;" scale="60"></graphic>
 </figure>
-) og altså indgår i den almindelige ombrydning
-        i linjer, hvor rammen i de andre tilfælde kan strække sig over mange
+) og altsÃ¥ indgÃ¥r i den almindelige ombrydning
+        i linjer, hvor rammen i de andre tilfÃ¦lde kan strÃ¦kke sig over mange
         linjer.</para>
 
 </listitem>
@@ -131,8 +131,8 @@
 </listitem>
 </itemizedlist>
 
-<para>I eksemplet øverst er rammen placeret øverst til venstre i afsnittet.
-    Tilsvarende kan den placeres til højre, centreret, i en vis afstand fra
+<para>I eksemplet Ã¸verst er rammen placeret Ã¸verst til venstre i afsnittet.
+    Tilsvarende kan den placeres til hÃ¸jre, centreret, i en vis afstand fra
     venstre osv.</para>
 
   </sect2>    <!--   Relativ placering -->

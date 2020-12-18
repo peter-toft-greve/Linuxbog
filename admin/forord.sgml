@@ -7,38 +7,38 @@
 
 <para>
 Denne bog er skrevet af erfarne Linux-folk til dem, som vil i gang med
-at lære systemadministration under styresystemet Linux med henblik på 
+at lÃ¦re systemadministration under styresystemet Linux med henblik pÃ¥ 
 server-funktioner.
 </para>
 
 <para> 
-I bogen <emphasis>Linux &ndash; Friheden til at lære Unix</emphasis> gennemgik vi 
-opbygningen af et Unix- og dermed Linux-system og fik set nærmere på
+I bogen <emphasis>Linux &ndash; Friheden til at lÃ¦re Unix</emphasis> gennemgik vi 
+opbygningen af et Unix- og dermed Linux-system og fik set nÃ¦rmere pÃ¥
 systemadministration for et enkeltbruger-system. I denne bog tager
-vi så næste skridt og ser på hvordan man kan bruge en Linux-maskine som
-server for hele netværket.
+vi sÃ¥ nÃ¦ste skridt og ser pÃ¥ hvordan man kan bruge en Linux-maskine som
+server for hele netvÃ¦rket.
 Dog er web-server, databaser og PHP ikke inkluderet i denne bog &ndash; se
 i stedet <emphasis>Linux &ndash; Friheden til egen webserver</emphasis>.
 Tilsvarende er aspekter omkring sikkerhed lagt i bogen
-<emphasis>Linux &ndash; Friheden til sikkerhed på internettet</emphasis>.
+<emphasis>Linux &ndash; Friheden til sikkerhed pÃ¥ internettet</emphasis>.
 </para>
 
 <para>
 I <xref linkend="etc-filer"/> findes en gennemgang af de mange
-opsætningsfiler, som man finder i <filename>/etc</filename>.
+opsÃ¦tningsfiler, som man finder i <filename>/etc</filename>.
 </para>
 
 <para>
-I <xref linkend="sysadm"/> gennemgås betydningen af runlevels,
-systemadministration med linuxconf, køre programmer på givne
-tidspunkter med crontab samt opstart af Linux og NT på samme maskine.
+I <xref linkend="sysadm"/> gennemgÃ¥s betydningen af runlevels,
+systemadministration med linuxconf, kÃ¸re programmer pÃ¥ givne
+tidspunkter med crontab samt opstart af Linux og NT pÃ¥ samme maskine.
 </para>
 
 <para>
-I <xref linkend="filsystemer"/> gennemgås flere aspekter af
-filsystemet, såsom installation af et Journaling filsystem,
-<emphasis>ReiserFS</emphasis>, vi ser på RAID og tuning af hastighed
-på dataoverførsel fra harddisk.
+I <xref linkend="filsystemer"/> gennemgÃ¥s flere aspekter af
+filsystemet, sÃ¥som installation af et Journaling filsystem,
+<emphasis>ReiserFS</emphasis>, vi ser pÃ¥ RAID og tuning af hastighed
+pÃ¥ dataoverfÃ¸rsel fra harddisk.
 </para>
 
 
@@ -46,46 +46,46 @@ på dataoverførsel fra harddisk.
 I <xref linkend="kerne"/> er der en gennemgang af hvad Linux-kernen er
 og ikke er. Der er en gennemgang af proces-strukturen, proces-ID og
 <filename>/proc</filename>-filsystemet. Det vises hvordan man
-oversætter kernen og der er en gennemgang af moduler til kernen, samt en
+oversÃ¦tter kernen og der er en gennemgang af moduler til kernen, samt en
 gennemgang af hvad der er kommet med i kerne 2.4-serien.
 </para>
 
 
 <para>
 Videre til <xref linkend="net"/>, hvor systemadministratorens vigtigste
-værktøjer gennemgås, såsom <command>ping</command>,
-<command>telnet</command>, <command>ftp</command>. Der er også en
-gennemgang af post-håndtering med <command>sendmail</command>,
+vÃ¦rktÃ¸jer gennemgÃ¥s, sÃ¥som <command>ping</command>,
+<command>telnet</command>, <command>ftp</command>. Der er ogsÃ¥ en
+gennemgang af post-hÃ¥ndtering med <command>sendmail</command>,
 <command>postfix</command>, <command>procmail</command>, kryptering af
-post med GnuPG, og endelig vises hvordan man kan læse nyhedsgrupper
-og sætte en news-server op.
+post med GnuPG, og endelig vises hvordan man kan lÃ¦se nyhedsgrupper
+og sÃ¦tte en news-server op.
 </para>
 
 <para>
-Skal man lave et halvstort eller stort netværk, skal man bruge en
-navneserver, en DNS-maskine. I <xref linkend="tcp-ip-dns"/> gennemgås
-hvordan IP-adresser bruges, og hvordan man sætter en navneserver op.
+Skal man lave et halvstort eller stort netvÃ¦rk, skal man bruge en
+navneserver, en DNS-maskine. I <xref linkend="tcp-ip-dns"/> gennemgÃ¥s
+hvordan IP-adresser bruges, og hvordan man sÃ¦tter en navneserver op.
 </para>
 
 <para>
 I <xref linkend="linux-netvaerk-server"/> er der vist hvordan man
-sætter mange server-funktionaliteter op, såsom DHCP-server (en
+sÃ¦tter mange server-funktionaliteter op, sÃ¥som DHCP-server (en
 dynamisk navneserver), FTP-server, NFS-server (til at dele filer over
-netværk mellem Unix/Linux-maskiner), NIS (til at dele adgangskoder
+netvÃ¦rk mellem Unix/Linux-maskiner), NIS (til at dele adgangskoder
 elegant frem for at kopiere adgangskodefiler mellem maskinerne). Der er
-et afsnit om at få adgang til Linux-maskinen via modem-adgang
-(ring-ind-server), X-server, og AppleTalk-funktionalitet er også
-gennemgået.
+et afsnit om at fÃ¥ adgang til Linux-maskinen via modem-adgang
+(ring-ind-server), X-server, og AppleTalk-funktionalitet er ogsÃ¥
+gennemgÃ¥et.
 </para>
 
 <para>
-Senere i <xref linkend="samba"/> beskrives hvordan du får Samba til at
+Senere i <xref linkend="samba"/> beskrives hvordan du fÃ¥r Samba til at
 virke. Dette giver mulighed for at Windows-maskiner kan montere netdrev fra
 din Linux-maskine.
 </para> 
 
 <para>
-Endelig ser vi i <xref linkend="pakke-formater"/> nærmere på installation af
+Endelig ser vi i <xref linkend="pakke-formater"/> nÃ¦rmere pÃ¥ installation af
 programmer.
 </para>
 
@@ -108,42 +108,42 @@ programmer.
 <title>Om forfatterne og bogens historie</title>
 <para>
 Bogen startede som et bogprojekt i sommeren 1998, hvor Peter Toft,
-Kenneth Geisshirt og Snebjørn Andersen fik skrevet "Linux &ndash; Friheden
-til at vælge". Bogen var i starten henvendt mod Linux-installation, at
-få lidt Unix-kendskab og noget om netværk. Bogen har altid 
-været en fri "web-bog", der kunne læses enten i smådele eller som en
-helhed på <ulink url="http://www.sslug.dk">http://www.sslug.dk</ulink>. 
+Kenneth Geisshirt og SnebjÃ¸rn Andersen fik skrevet "Linux &ndash; Friheden
+til at vÃ¦lge". Bogen var i starten henvendt mod Linux-installation, at
+fÃ¥ lidt Unix-kendskab og noget om netvÃ¦rk. Bogen har altid 
+vÃ¦ret en fri "web-bog", der kunne lÃ¦ses enten i smÃ¥dele eller som en
+helhed pÃ¥ <ulink url="http://www.sslug.dk">http://www.sslug.dk</ulink>. 
 </para>
 
-<para>Vi, forfatterne, har anvendt Linux i flere år og har stor
-erfaring med det. Vi er medlemmer af Skåne Sjælland Linux User
-Group (SSLUG), som er en uafhængig og non-profit svensk/dansk
-organisation, der søger at udbrede kendskabet til Linux. Det er
-gratis at være medlem af SSLUG, og organisationen findes på internettet på
+<para>Vi, forfatterne, har anvendt Linux i flere Ã¥r og har stor
+erfaring med det. Vi er medlemmer af SkÃ¥ne SjÃ¦lland Linux User
+Group (SSLUG), som er en uafhÃ¦ngig og non-profit svensk/dansk
+organisation, der sÃ¸ger at udbrede kendskabet til Linux. Det er
+gratis at vÃ¦re medlem af SSLUG, og organisationen findes pÃ¥ internettet pÃ¥
 <ulink url="http://www.sslug.dk">http://www.sslug.dk</ulink>.
-Vi har skrevet denne bog fordi den kunne være til glæde for andre.
+Vi har skrevet denne bog fordi den kunne vÃ¦re til glÃ¦de for andre.
 </para>
  
 <para>
-Den oprindelige bog "Linux &ndash; Friheden til at vælge" blev udgivet som
-hæfte på 96 sider fra IDG Forlag i februar 1999 med en Red Hat 5.2-cd-rom,
-hvor den i lang tid lå på bestsellerlisten for EDB-hæfter.  I
-december 1999 udgav Forlaget Globe version 2.9 i bogform på over 300
+Den oprindelige bog "Linux &ndash; Friheden til at vÃ¦lge" blev udgivet som
+hÃ¦fte pÃ¥ 96 sider fra IDG Forlag i februar 1999 med en Red Hat 5.2-cd-rom,
+hvor den i lang tid lÃ¥ pÃ¥ bestsellerlisten for EDB-hÃ¦fter.  I
+december 1999 udgav Forlaget Globe version 2.9 i bogform pÃ¥ over 300
 sider og med tre cd-rom'er (Red Hat 6.1, SuSE 6.2 og StarOffice 5.1).
 </para>
 
 <para>
 I juli 2000 var bogen vokset til 
-ca. 350 sider og blev delt ud til flere bøger. Alle kan læses på 
+ca. 350 sider og blev delt ud til flere bÃ¸ger. Alle kan lÃ¦ses pÃ¥ 
 <ulink url="http://&linuxbogurl;/">&linuxbogurl;</ulink>.
-I februar 2001 er der 8 bøger på over 700 sider.
-I vinter 2001 blev version 1.6 af bogen udgivet på tryk fra forlaget IDG.
+I februar 2001 er der 8 bÃ¸ger pÃ¥ over 700 sider.
+I vinter 2001 blev version 1.6 af bogen udgivet pÃ¥ tryk fra forlaget IDG.
 </para>
 
 
 <para>
 Fra version 1.0 af denne bog er det Peter Toft og Hans Schou, som
-vedligeholder bogen sammen med de mange, som skriver på dele af bogen.
+vedligeholder bogen sammen med de mange, som skriver pÃ¥ dele af bogen.
 </para>
 
 <figure id="pto-admin-fig" float="1">
@@ -152,8 +152,8 @@ vedligeholder bogen sammen med de mange, som skriver på dele af bogen.
 </figure>
 
 <para>
-<command>Peter Toft</command> er civilingeniør og har en ph.d.-grad fra
-DTU. Han har kørt Linux dagligt siden 1994. Aktiv Linux-forfatter og
+<command>Peter Toft</command> er civilingeniÃ¸r og har en ph.d.-grad fra
+DTU. Han har kÃ¸rt Linux dagligt siden 1994. Aktiv Linux-forfatter og
 foredragsholder om Linux i Danmark og Sverige. Tidligere bestyrelsesformand for
 SSLUG. 
 Medorganisator ved de danske Linux-konferencer
@@ -167,12 +167,12 @@ Hjemmeside <ulink url="http://pto.linux.dk">http://pto.linux.dk</ulink>.
 </figure>
 
 <para>
-<command>Hans Østergård Schou</command>
-stoppede brat på Københavns Teknikum
+<command>Hans Ã˜stergÃ¥rd Schou</command>
+stoppede brat pÃ¥ KÃ¸benhavns Teknikum
 i 1989 for at hellige sig undervisning i EDB samme sted.
 Han har anvendt Linux som bruger siden 1993 og har givet
 talrige foredrag om fri software og relaterede emner
-i Danmark, Skåne og Sverige.
+i Danmark, SkÃ¥ne og Sverige.
 Fast SSLUG-fotograf siden august 1998.
 Hjemmeside <ulink url="http://schou.dk/">http://schou.dk/</ulink>.
 </para>
@@ -180,22 +180,22 @@ Hjemmeside <ulink url="http://schou.dk/">http://schou.dk/</ulink>.
 </sect1>
 
 <sect1 id="admin-tak">
-<title>Vi siger tak for hjælpen</title>
+<title>Vi siger tak for hjÃ¦lpen</title>
 <para>
-Vi har haft stor glæde af mange SSLUG-medlemmers støtte, rettelser og
-forslag til forbedringer &ndash; bliv ved med det. Specielt vil vi nævne:
+Vi har haft stor glÃ¦de af mange SSLUG-medlemmers stÃ¸tte, rettelser og
+forslag til forbedringer &ndash; bliv ved med det. Specielt vil vi nÃ¦vne:
 </para>
 
 <itemizedlist  mark="bullet" spacing="compact">
 
 <listitem><para>
-Forlaget IDG har bidraget med professionel korrekturlæsning 
+Forlaget IDG har bidraget med professionel korrekturlÃ¦sning 
 til version 1.6 af bogen. Version 1.6 bliver netop udgivet som bog.
 </para></listitem>
 
 <listitem><para>
-Jacob Laursen har hjulpet meget med at få lavet
-splittet af "Linux &ndash; Friheden til at vælge" på en god måde.  
+Jacob Laursen har hjulpet meget med at fÃ¥ lavet
+splittet af "Linux &ndash; Friheden til at vÃ¦lge" pÃ¥ en god mÃ¥de.  
 </para></listitem>
 
 <listitem><para>
@@ -203,11 +203,11 @@ Lars Madsen og Michael Rasmussen for afsnittet om Samba.
 </para></listitem>
 
 <listitem><para>
-Claus Sørensen for afsnit om ringe-op-server. 
+Claus SÃ¸rensen for afsnit om ringe-op-server. 
 </para></listitem>
 
 <listitem><para>
-Henrik Størner for afsnittet om DHCP og afsnittet om at bygge RPM-pakker.
+Henrik StÃ¸rner for afsnittet om DHCP og afsnittet om at bygge RPM-pakker.
 </para></listitem>
 
 <listitem><para>
@@ -233,7 +233,7 @@ for starten af afsnittet om DNS.
 
 <listitem><para>
 Rolf Larsen (gentagne gange) og Steen Jensen for at
-have læst bogen fra ende til anden og afleveret en stribe rettelser til
+have lÃ¦st bogen fra ende til anden og afleveret en stribe rettelser til
 hele bogen.  
 </para></listitem>
 
@@ -247,7 +247,7 @@ Peter Frederiksen har skrevet afsnittet om RAID.
 </para></listitem>
 
 <listitem><para>
-Kristian Vilmann har lavet afsnittet om NIS og tilføjet en del om NFS.
+Kristian Vilmann har lavet afsnittet om NIS og tilfÃ¸jet en del om NFS.
 </para></listitem>
 
 <listitem><para>
@@ -255,7 +255,7 @@ Jesper Krogh har skrevet afsnittet om leafnode.
 </para></listitem>
 
 <listitem><para>
-Niels Elgaard Larsen har skrevet afsnit om at få en stille maskine.
+Niels Elgaard Larsen har skrevet afsnit om at fÃ¥ en stille maskine.
 </para></listitem>
 
 
@@ -286,16 +286,16 @@ Andre bidragydere er:
 
 Allan Jacobsen,
 Allan Olesen,
-Anders Damkjær Møller,
+Anders DamkjÃ¦r MÃ¸ller,
 Anders Ebbesen,
 Anders Melchiorsen,
 Anders Pedersen,
 Anna Jonna Armannsdottir,
-Asbjørn Laurberg,
+AsbjÃ¸rn Laurberg,
 Birger Langkjer,
 Brian Christensen,
 Brian Hemstedt,
-Carsten Nordstrøm Jensen,
+Carsten NordstrÃ¸m Jensen,
 Christian Borup,
 Christian Treldal,
 Christoffer Hall-Frederiksen,
@@ -307,7 +307,7 @@ Donald Axel,
 Emil S. Hansen,
 Esben Rugbjerg,
 Erik Andresen,
-Erik Søe Sørensen,
+Erik SÃ¸e SÃ¸rensen,
 Finn Dorph-Petersen,
 Flemming Bjerke,
 Flemming Mahler Larsen,
@@ -333,32 +333,32 @@ Jens Axelsen,
 Jens Bygum,
 Jens Stavnstrup,
 Jesper Louis Andersen,
-Jesper Møller,
+Jesper MÃ¸ller,
 Jesper Norskov Kristensen,
 Johan Myhre Andersen,
 Jon Loldrup,
-Jørgen I. Østergaard,
-Jørgen Ramskov,
+JÃ¸rgen I. Ã˜stergaard,
+JÃ¸rgen Ramskov,
 Kasper Hauge,
 Keld Simonsen,
-Kevin Ilchmann Jørgensen,
+Kevin Ilchmann JÃ¸rgensen,
 Kim Hermansen,
 Kim Larsen,
 Klaus Hebsgaard,
-Knud Haugaard Sørensen,
-Kristian Støchkel,
-Kåre Løvgren,
+Knud Haugaard SÃ¸rensen,
+Kristian StÃ¸chkel,
+KÃ¥re LÃ¸vgren,
 Lars Scheele Jensen,
-Magnus Østergaard,
+Magnus Ã˜stergaard,
 Martin Egholm Nielsen,
 Martin Lykke,
 Martin Stenderup,
-Martin René Pedersen,
+Martin RenÃ© Pedersen,
 Michael Jacobsen,
 Michael Lerskov Munk Nielsen,
 Michael Rasmussen,
 Michael Skaarup,
-Mogens Kjær,
+Mogens KjÃ¦r,
 Morten Christensen, 
 Morten Jensen,
 Morten Olsen,
@@ -381,15 +381,15 @@ Poul Petersen,
 Poul-Erik Hansen,
 Rasmus Laursen,
 Rask Ingemann Lambertsen,
-René Seindal,
+RenÃ© Seindal,
 Roy Sigurd Karlsbakk,
-Rune Tønnesen,
+Rune TÃ¸nnesen,
 Stefan Klukowski,
 Svend Erik Venstrup-Nielsen,
-Søren Sjørup,
-Thomas Mørch,
+SÃ¸ren SjÃ¸rup,
+Thomas MÃ¸rch,
 Thomas Petersen,
-Thorbjørn Ravn Andersen,
+ThorbjÃ¸rn Ravn Andersen,
 Tue Hansen.
 </para></listitem>
 
@@ -397,13 +397,13 @@ Tue Hansen.
 
 <para>
 Du kan i <xref linkend="admin-apprevhist"/> finde en liste over alle de
-revisioner, som bogen har været igennem. 
+revisioner, som bogen har vÃ¦ret igennem. 
 </para>
 
 <para>
-Hvis du har ord du ikke forstår, så kan <ulink
-url="http://www.whatis.com">http://www.whatis.com</ulink> være
-interessant. Her kan du slå mange computerord op, dog kun på engelsk.
+Hvis du har ord du ikke forstÃ¥r, sÃ¥ kan <ulink
+url="http://www.whatis.com">http://www.whatis.com</ulink> vÃ¦re
+interessant. Her kan du slÃ¥ mange computerord op, dog kun pÃ¥ engelsk.
 </para>
 
 </sect1>
@@ -411,16 +411,16 @@ interessant. Her kan du slå mange computerord op, dog kun på engelsk.
 <sect1 id="typografi">
 <title>Typografi</title>
 <para>
-Vi vil afslutte indledningen med at nævne den anvendte typografi.
+Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
 </para>
 
 
 <itemizedlist mark="bullet" spacing="compact">
-<listitem><para>Navne på filer og kataloger er skrevet som
+<listitem><para>Navne pÃ¥ filer og kataloger er skrevet som
 <filename>foo.bar</filename></para>
 </listitem>
 
-<listitem><para>Kommandoer, du udfører ved at taste, skrives som
+<listitem><para>Kommandoer, du udfÃ¸rer ved at taste, skrives som
 <command>help</command></para>
 </listitem>
 

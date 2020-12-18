@@ -3,7 +3,7 @@
 
 <para>
 Der er flere muligheder for at lave web-portaler med Linux,
-dvs. systemer som hjælper med at få en infrastruktur op omkring det
+dvs. systemer som hjÃ¦lper med at fÃ¥ en infrastruktur op omkring det
 indhold, man selv skal levere. phpNuke er en mulighed, Zope en anden
 og der er flere andre.
 </para>
@@ -14,62 +14,62 @@ og der er flere andre.
 <indexterm><primary>Zope</primary></indexterm>
 <para>
 Zope er et Open Source <emphasis>Content Management System</emphasis>.
-Det bruges til - på en let og overskuelig måde - at opbygge en
+Det bruges til - pÃ¥ en let og overskuelig mÃ¥de - at opbygge en
 hierakisk organiseret hjemmeside.
 </para>
 <para>
 Zope er bygget op over forskellige
 <emphasis>Products</emphasis>, som man kan importere i sin Zope, for
-derefter at lægge dem ind forskellige steder i hjemmesidens hieraki.
+derefter at lÃ¦gge dem ind forskellige steder i hjemmesidens hieraki.
 Disse produkter varierer lige fra forskellige databaseforbindelser
-til nyhedslister, chats, gæstebøger og kalendere. Alt sammen nyttige ting
+til nyhedslister, chats, gÃ¦stebÃ¸ger og kalendere. Alt sammen nyttige ting
 til hjemmesiden.
 </para>
 <para>
 I praksis kan man importere en pakke (et product) ved at placere dens filer under 
 <filename>~/zope/lib/python/Products</filename> og genstarte Zope. Herefter
-optræder dens elementer i listen med objekter, der kan anvendes i foldersystemet.
+optrÃ¦der dens elementer i listen med objekter, der kan anvendes i foldersystemet.
 </para>
 <para>
 Zope giver mulighed for at kontrollere adgangen til de enkelte dele
-af hjemmesiden. Har man fået adgang i et niveau, gælder denne for alle 
-niveauer herunder, indtil der evt. sættes et nyt adgangs object ind.
-Fremgangsmåden er enkel, man placerer blot et acl_users object i den
+af hjemmesiden. Har man fÃ¥et adgang i et niveau, gÃ¦lder denne for alle 
+niveauer herunder, indtil der evt. sÃ¦ttes et nyt adgangs object ind.
+FremgangsmÃ¥den er enkel, man placerer blot et acl_users object i den
 folder, man vil lukke med en adgangskode, og opretter de brugere,
 der skal have adgang. Forskellige andre objecter i samme folder eller
 underfoldere, kan derefter forholde sig til de rettigheder, der er sat op.
 </para>
 <para>
-Man kan i sin adgang for eksempel give alle (anonyme brugere) adgang til at læse, og
-en eller nogle få adgang til at redigere.
+Man kan i sin adgang for eksempel give alle (anonyme brugere) adgang til at lÃ¦se, og
+en eller nogle fÃ¥ adgang til at redigere.
 </para>
 <para>
 Zope er skrevet i Python. Internt bruges
 markup-sproget DTML som man kan bruge til at manipulere dynamiske data
-med på forskellige måder. Man kan også vælge at lave sine egne python
-scripts, hvis man hellere vil dette. De implementeres lige så let som
+med pÃ¥ forskellige mÃ¥der. Man kan ogsÃ¥ vÃ¦lge at lave sine egne python
+scripts, hvis man hellere vil dette. De implementeres lige sÃ¥ let som
 DTML dokumenter.  
 </para>
 <para>
 Zope har en indbygget webserver (ZServer) som man
-kan nøjes med at bruge til en mindre trafikeret hjemmeside. Der skal i det 
-tilfælde blot rettes i filen ~/zope/z2.py, idet 
-standardværdien for HTTP_PORT er 8080 (rettes til 80), mens den for
+kan nÃ¸jes med at bruge til en mindre trafikeret hjemmeside. Der skal i det 
+tilfÃ¦lde blot rettes i filen ~/zope/z2.py, idet 
+standardvÃ¦rdien for HTTP_PORT er 8080 (rettes til 80), mens den for
 FTP_PORT er 8021 (rettes til 21). Har du et startscript under 
-<filename>/etc/init.d/</filename> skal du også kontrollere dette for 
+<filename>/etc/init.d/</filename> skal du ogsÃ¥ kontrollere dette for 
 portnumrene 8080 hhv. 8021.
-Skal Zope køre parallelt med Apache, skal der tilføjes lidt til
-httpd.conf, hvilket forholdsvis let kan lade sig gøre.  Vil du vide mere
+Skal Zope kÃ¸re parallelt med Apache, skal der tilfÃ¸jes lidt til
+httpd.conf, hvilket forholdsvis let kan lade sig gÃ¸re.  Vil du vide mere
 om Zope, henvises til <ulink url="http://www.zope.org">http://www.zope.org</ulink>.
 </para>
 
 <para>
-En af Zope's største styrker er produktet CMF
+En af Zope's stÃ¸rste styrker er produktet CMF
 (Content Management Framework). Dette kan bl.a. bruges til at bygge en
-portal. Med CMF er det nemt at styre brugere. CMF sørger for at holde
+portal. Med CMF er det nemt at styre brugere. CMF sÃ¸rger for at holde
 indhold, data og kode adskilt. Har en indbygget skin-funktionalitet,
 som man kan bruge til at lave forskellige udseender til sin hjemmeside, 
-lave den flersproget osv. Læs mere på <ulink
+lave den flersproget osv. LÃ¦s mere pÃ¥ <ulink
 url="http://cmf.zope.org">http://cmf.zope.org</ulink>
 </para>
 
@@ -78,60 +78,60 @@ url="http://cmf.zope.org">http://cmf.zope.org</ulink>
 <title>Installation af Zope</title>
 
 <para>
-Her gives en beskrivelse af hvordan man kan få en fungerende (binær) 
-Zope-2.6.1 til at anvende mysql-3.23-52 og mysql-4.0. Man skulle også kunne 
-anvende rpm-pakker og debian-pakker, men hvis der opstår problemer, kan man 
-falde tilbage på nedenstående og hente en binær pakke med zope fra 
+Her gives en beskrivelse af hvordan man kan fÃ¥ en fungerende (binÃ¦r) 
+Zope-2.6.1 til at anvende mysql-3.23-52 og mysql-4.0. Man skulle ogsÃ¥ kunne 
+anvende rpm-pakker og debian-pakker, men hvis der opstÃ¥r problemer, kan man 
+falde tilbage pÃ¥ nedenstÃ¥ende og hente en binÃ¦r pakke med zope fra 
 <ulink url="http://www.zope.org">http://www.zope.org</ulink>:
 </para>
 
 <para>
-Zope-mysql connections kræver to at man henter 
+Zope-mysql connections krÃ¦ver to at man henter 
 MySQL-python-0.9.2.tar.gz og ZMySQLDA-2.0.8.tar.gz (eller nyere stabile 
 pakker) fra: <ulink url="http://sourceforge.net/project/showfiles.php?group_id=22307">http://sourceforge.net/project/showfiles.php?group_id=22307</ulink>.
 </para>
 
 <para>
-Læg de to tar pakker yderst i din zope-mappe (dér hvor du starter zope). 
+LÃ¦g de to tar pakker yderst i din zope-mappe (dÃ©r hvor du starter zope). 
 Udpak pakkerne med: <command>tar xvzf PAKKENAVN</command>.
 </para>
 
 <para>
-Nu lægger den udpakkede mappe MySQL-python-0.9.2 sig i zope-mappen,
-hvorimod ZMySQLDA lægger sig i
+Nu lÃ¦gger den udpakkede mappe MySQL-python-0.9.2 sig i zope-mappen,
+hvorimod ZMySQLDA lÃ¦gger sig i
 <filename>lib/python/Products/</filename> under ZOPE-mappen og er
-sådan set klar til at blive anvendt inde fra zope - idet man kan tilføje
-en MySQL-connection. Dog kræver det først at python kan kommunikere
+sÃ¥dan set klar til at blive anvendt inde fra zope - idet man kan tilfÃ¸je
+en MySQL-connection. Dog krÃ¦ver det fÃ¸rst at python kan kommunikere
 med MySQL.
 </para>
 
 <para>
-Til det formål skal man gå ind i mappen MySQL-python-0.9.2 og køre følgende 
+Til det formÃ¥l skal man gÃ¥ ind i mappen MySQL-python-0.9.2 og kÃ¸re fÃ¸lgende 
 kommando: <command>../bin/python setup.py build</command>.
 </para>
 
 
 <para>
-Nu er der bygget de programmer som kræves. Det bemærkes at man anvender den 
-python-udgave der følger med zopes binære programpakke. Dette er vist ikke 
+Nu er der bygget de programmer som krÃ¦ves. Det bemÃ¦rkes at man anvender den 
+python-udgave der fÃ¸lger med zopes binÃ¦re programpakke. Dette er vist ikke 
 mindst vigtigt, hvis ens python ikke er python2.1.3, men f.eks. python2.2, 
-fordi zope bruger 2.1.3. Herudover er det afgørende at der med zopes python 
-følger biblioteket distutils som skal bruges ved kompileringen. (Hvis man 
+fordi zope bruger 2.1.3. Herudover er det afgÃ¸rende at der med zopes python 
+fÃ¸lger biblioteket distutils som skal bruges ved kompileringen. (Hvis man 
 selv har kompileret zope, skal man angiveligt blot skrive: python setup.py 
-build, men så må man have distutils-biblioteket i sin python.)
+build, men sÃ¥ mÃ¥ man have distutils-biblioteket i sin python.)
 </para>
 
 <para>
-Man skal også sørge for at c-biblioteket mysql hvori mysql.h ligger,
+Man skal ogsÃ¥ sÃ¸rge for at c-biblioteket mysql hvori mysql.h ligger,
 findes et sted hvor gcc-compileren kan finde den,
 f.eks. <filename>/usr/include/mysql</filename>.  Biblioteket kommer
 med i mysql-4.0-standard-tgz-pakken som kan hentes fra <ulink
-url="http://www.mysql.com">http://www.mysql.com</ulink>. Kopier det så
+url="http://www.mysql.com">http://www.mysql.com</ulink>. Kopier det sÃ¥
 til <filename>/usr/include</filename>. 
 </para>
 
 <para>
-Man skal også have en af mig ukendt delmængde af følgende biblioteker:
+Man skal ogsÃ¥ have en af mig ukendt delmÃ¦ngde af fÃ¸lgende biblioteker:
 </para>
 
 <screen>
@@ -146,7 +146,7 @@ Man skal også have en af mig ukendt delmængde af følgende biblioteker:
 </screen>
 
 <para>
-Mangler de relevante biblioteker, går oversættelsen i stå med beskeden:
+Mangler de relevante biblioteker, gÃ¥r oversÃ¦ttelsen i stÃ¥ med beskeden:
 </para>
 
 <screen> 
@@ -154,7 +154,7 @@ Mangler de relevante biblioteker, går oversættelsen i stå med beskeden:
 </screen>
 
 <para>
-Det kan også være at oversættelsen går i stå med:
+Det kan ogsÃ¥ vÃ¦re at oversÃ¦ttelsen gÃ¥r i stÃ¥ med:
 </para>
 
 <screen>
@@ -162,14 +162,14 @@ Det kan også være at oversættelsen går i stå med:
 </screen>
 
 <para>
-I så fald går du ind på: <ulink url="http://www.gzip.org/zlib/">http://www.gzip.org/zlib/</ulink>
+I sÃ¥ fald gÃ¥r du ind pÃ¥: <ulink url="http://www.gzip.org/zlib/">http://www.gzip.org/zlib/</ulink>
 og henter <filename>zlib</filename> som kildetekst. (Tager du f.eks. en rpm-pakke, risikerer 
-du uendelige afhængighedsproblemer). 
+du uendelige afhÃ¦ngighedsproblemer). 
 </para>
 
 <para>
 Du udpakker zlib med <command>tar xvzf PAKKENAVN</command>.
-(hvis du har hentet tar.gz-filen) og går ind i den resulterende 
+(hvis du har hentet tar.gz-filen) og gÃ¥r ind i den resulterende 
 zlib-mappe hvor du foretager:
 </para>
 
@@ -180,16 +180,16 @@ make install
 </screen>
 
 <para>
-Når du er færdig med at installere relevante biblioteker, bør du formentlig 
-køre: <command>/sbin/ldconfig</command> så bibliotekerne bliver fundet under oversættelsen.
+NÃ¥r du er fÃ¦rdig med at installere relevante biblioteker, bÃ¸r du formentlig 
+kÃ¸re: <command>/sbin/ldconfig</command> sÃ¥ bibliotekerne bliver fundet under oversÃ¦ttelsen.
 </para>
 
 <para>
-Læs iøvrigt README-filen. 
+LÃ¦s iÃ¸vrigt README-filen. 
 </para>
 
 <para>
-Nu mangler man blot at installere MySQL-python. Det gøres med følgende 
+Nu mangler man blot at installere MySQL-python. Det gÃ¸res med fÃ¸lgende 
 kommando, inde fra mappen MySQL-python-0.9.2:
 </para>
 
@@ -203,8 +203,8 @@ ZMySQL-Connection inde i zope.
 </para>
 
 <para>
-Når du inde i zope har valgt en mysql connection (vi forudsætter at mysqld 
-kører), skriver du i feltet "Database Connection String", f.eks.:
+NÃ¥r du inde i zope har valgt en mysql connection (vi forudsÃ¦tter at mysqld 
+kÃ¸rer), skriver du i feltet "Database Connection String", f.eks.:
 </para>
 
 <screen>
@@ -212,14 +212,14 @@ kører), skriver du i feltet "Database Connection String", f.eks.:
 </screen>
 
 <figure id="zope-addcon-fig" float="1">
-<title>Tilføj MySQL forbindeler</title>
+<title>TilfÃ¸j MySQL forbindeler</title>
 <graphic fileref="add_con.&magic;"  scale="60"></graphic>
 </figure>
 
 <para>
-Så kommer zope sikkert ud og siger:
+SÃ¥ kommer zope sikkert ud og siger:
 "<literal>Can't connect to local MySQL server through socket ....</literal>"
-I så fald går du ud i en bash-terminal og skriver: 
+I sÃ¥ fald gÃ¥r du ud i en bash-terminal og skriver: 
 </para>
 
 <screen>
@@ -227,7 +227,7 @@ mysqladmin -u root -p variables | grep socket
 </screen>
 
 <para>
-har du ikke sti til mysqladmin, så tilføj fuld sti foran den kommando.
+har du ikke sti til mysqladmin, sÃ¥ tilfÃ¸j fuld sti foran den kommando.
 </para>
 
 <para>
@@ -239,9 +239,9 @@ Nu kan du skrive den rigtige "Database Connection String":
 </screen>
 
 <para>
-Derefter går du formentlig fuldstændig i ekstase over at din 
+Derefter gÃ¥r du formentlig fuldstÃ¦ndig i ekstase over at din 
 mysql-forbindelse virker. Du kan i stedet flytte de to tar-pakker fra 
-zope-mappen - og sikkert også mappen MySQL-python-0.9.2 - væk fra 
+zope-mappen - og sikkert ogsÃ¥ mappen MySQL-python-0.9.2 - vÃ¦k fra 
 zope-mappen.
 </para>
 
@@ -254,32 +254,32 @@ zope-mappen.
 <sect2 id="zope-mysql">
 <title>Zope koblet til MySQL</title>
 <para>
-Lad os nu se på hvordan Zope kobles til en database i MySQL.
+Lad os nu se pÃ¥ hvordan Zope kobles til en database i MySQL.
 </para>
 
 <sect3 id="zope-mysql-data">
-<title>Få Zope til at bruge MySQL i stedet for Zope's egen Z Gadfly database</title>
+<title>FÃ¥ Zope til at bruge MySQL i stedet for Zope's egen Z Gadfly database</title>
 
 <para>
  Zope har sin egen indbyggede database (Z Gadfly), og er dit behov for
- datalagring ikke særlig stort, kan du sagtens klare dig med denne. Dels har den dog
- en øvre begrænsning på et par gigabyte (det kan de fleste nøjes med), og dels kan
+ datalagring ikke sÃ¦rlig stort, kan du sagtens klare dig med denne. Dels har den dog
+ en Ã¸vre begrÃ¦nsning pÃ¥ et par gigabyte (det kan de fleste nÃ¸jes med), og dels kan
  man ikke komme i kontakt med den fra andre programmer. Eftersom der gemmes en del i denne
- database i forvejen (bl.a. brugerdata) er dette nok ikke den optimale løsning
+ database i forvejen (bl.a. brugerdata) er dette nok ikke den optimale lÃ¸sning
  hvis du skal lave et stort websted med mange brugere, eller med databaseindhold, som
  kommer fra helt andre kilder end Zope selv. 
  </para>
  <para>
   Der er lavet forskellige adaptorer til de mest brugte databaser. <!-- Til
-  MySQL findes produktet ZMySQLDA. Dette hentes på <ulink
+  MySQL findes produktet ZMySQLDA. Dette hentes pÃ¥ <ulink
   url="http://www.zope.org/Products/Members/MikeP/ZMySQLDA">http://www.zope.org/Products/Members/MikeP/ZMySQLDA</ulink>.
-  Produktet kræver at du har MySQL-misc, MySQL-devel og MySQL-python
+  Produktet krÃ¦ver at du har MySQL-misc, MySQL-devel og MySQL-python
   installeret (alle disse kan hentes fra <ulink
   url="http://www.mysql.com/download/">http://www.mysql.com/download/</ulink>).
   Udpak ".tar.gz"-filen i dit Zope-dir og skift katalog til til
   <filename>lib/python/Products/ZMySQLDA/src</filename>. Nu skal du
-  oversætte en udvidelse så Python kan lave forbindelser til
-  MySQL. Det kan gøres ved at udføre disse kommandoer:
+  oversÃ¦tte en udvidelse sÃ¥ Python kan lave forbindelser til
+  MySQL. Det kan gÃ¸res ved at udfÃ¸re disse kommandoer:
 <screen>
 <prompt>[tyge@hven ~]$</prompt> <userinput>make -f Makefile.pre.in boot</userinput>
 <prompt>[tyge@hven ~]$</prompt> <userinput>make</userinput>
@@ -287,17 +287,17 @@ Lad os nu se på hvordan Zope kobles til en database i MySQL.
 </para>
 
 <para>
- Undersøg om modulet virker i Python ved at starte python-fortolkeren (det gør
+ UndersÃ¸g om modulet virker i Python ved at starte python-fortolkeren (det gÃ¸r
  du med kommandoen <command>python</command>) og skriv: <command>import
- MySQL</command>. Får du ingen fejl, virker modulet. Til slut skal du bare
+ MySQL</command>. FÃ¥r du ingen fejl, virker modulet. Til slut skal du bare
  kopiere <filename>MySQLmodule.so</filename> et katalog-niveau op (til dit
- <filename>ZMySQLDA</filename>-katalog) og genstarte din Zope.  Du kan også
+ <filename>ZMySQLDA</filename>-katalog) og genstarte din Zope.  Du kan ogsÃ¥
  finde adaptorer til PostgreSQL, Oracle, MS SQL etc.
 </para>
 
 <para>
-Har du problemer med at få MySQL-modulet til at virke, kan du søge hjælp
-på Zope's mailingliste (<ulink url="http://www.zope.org/Resources/MailingLists">http://www.zope.org/Resources/MailingLists</ulink>).
+Har du problemer med at fÃ¥ MySQL-modulet til at virke, kan du sÃ¸ge hjÃ¦lp
+pÃ¥ Zope's mailingliste (<ulink url="http://www.zope.org/Resources/MailingLists">http://www.zope.org/Resources/MailingLists</ulink>).
 -->
  </para>
 </sect3>
@@ -305,22 +305,22 @@ på Zope's mailingliste (<ulink url="http://www.zope.org/Resources/MailingLists">
 <sect3 id="zope-mysql-vis">
 <title>Vise MySQL data i Zope</title>
 <para>
-Sådan henter du data fra f.eks. en MySQL database og viser dem.  Dette
-gøres ret enkelt i Zope. Gå ned i din rodfolder og tilføj et "Z MySQL
+SÃ¥dan henter du data fra f.eks. en MySQL database og viser dem.  Dette
+gÃ¸res ret enkelt i Zope. GÃ¥ ned i din rodfolder og tilfÃ¸j et "Z MySQL
 Database Connection"-objekt. Udfyld formen med de korrekte data og
-tilføj den. Tilføj nu en ZSQL Method. "Arguments"-feltet udfylder du
-med udvælgelseskriterier til query-strengen. Hvis du nu har en tabel i
-din database der hedder Medarbejdere.  Den har følgende kolonner:
+tilfÃ¸j den. TilfÃ¸j nu en ZSQL Method. "Arguments"-feltet udfylder du
+med udvÃ¦lgelseskriterier til query-strengen. Hvis du nu har en tabel i
+din database der hedder Medarbejdere.  Den har fÃ¸lgende kolonner:
 Navn, Afdeling, Alder. Du vil gerne liste alle medarbejdere der er
-født i 1980. Fra det DTML-Document der kalder din ZSQL Method har du
+fÃ¸dt i 1980. Fra det DTML-Document der kalder din ZSQL Method har du
 adgang til variablen alder. Derfor kan du i din "Argument"-liste
-skrive alder. Din query-streng skal så se ud som følger:
+skrive alder. Din query-streng skal sÃ¥ se ud som fÃ¸lger:
 <literal>SELECT * FROM Medarbejdere WHERE alder=&lt;dtml-sqlvar alder
 type=string&gt;</literal>.
 </para>
 
 <para>
-Fra dit DTML Document kalder du din ZSQL Method på følgende måde:
+Fra dit DTML Document kalder du din ZSQL Method pÃ¥ fÃ¸lgende mÃ¥de:
 </para>
 
 <programlisting>
@@ -331,11 +331,11 @@ Fra dit DTML Document kalder du din ZSQL Method på følgende måde:
 </programlisting>
 
 <para>
-Forklaring: &lt;dtml-in&gt; er en nem måde at iterere gennem
-f.eks. SQL resultater. Den fungerer på samme måde som f.eks. en
-for-løkke i PHP.  For at være sikker på at alder optræder i
+Forklaring: &lt;dtml-in&gt; er en nem mÃ¥de at iterere gennem
+f.eks. SQL resultater. Den fungerer pÃ¥ samme mÃ¥de som f.eks. en
+for-lÃ¸kke i PHP.  For at vÃ¦re sikker pÃ¥ at alder optrÃ¦der i
 REQUEST-objektet, kalder man sin ZSQL-Method med alder-variablen.
-&lt;dtml-var (navn)&gt;-tag'erne indsætter de variabler, der returneres fra
+&lt;dtml-var (navn)&gt;-tag'erne indsÃ¦tter de variabler, der returneres fra
 ZSQL-metoden.
 </para>
 
@@ -351,32 +351,32 @@ ZSQL-metoden.
 <sect2 id="andre-zope">
 <title>Andre Zope-produkter</title>
 <para>
-Som tidligere nævnt findes der mange forskellige produkter til Zope,
+Som tidligere nÃ¦vnt findes der mange forskellige produkter til Zope,
 som er udviklet af andre Zope-brugere. Det smarte ved at bruge disse
 produkter er at i stedet for selv at lave f.eks. en chat, kan man
 hente en fra <ulink url="http://www.zope.org/Products">http://www.zope.org/Products</ulink>.
 </para>
 
 <para>
-Det er ret nemt at installere disse produkter. Der findes to måder de
-fleste produkter installeres på. (Andre måder kan forekomme - læs
+Det er ret nemt at installere disse produkter. Der findes to mÃ¥der de
+fleste produkter installeres pÃ¥. (Andre mÃ¥der kan forekomme - lÃ¦s
 derfor altid installations vejledningen). Filer er som regel pakket
-som tar.gz, eller også har den en <filename>.zexp</filename>
-extension. I det første tilfælde skal filen udpakkes så det udpakkede
+som tar.gz, eller ogsÃ¥ har den en <filename>.zexp</filename>
+extension. I det fÃ¸rste tilfÃ¦lde skal filen udpakkes sÃ¥ det udpakkede
 dir ender med at ligge i
 <filename>/usr/local/Zope-xx/lib/python/Products/</filename>.
 Herefter genstartes Zope og dit nye produkt er klar til brug. Ender
-filen derimod på <filename>.zexp</filename> skal filen lægges i
-<filename>/usr/local/Zope-xx/import</filename>. Du skal så gå ind i
+filen derimod pÃ¥ <filename>.zexp</filename> skal filen lÃ¦gges i
+<filename>/usr/local/Zope-xx/import</filename>. Du skal sÃ¥ gÃ¥ ind i
 Zope's administration interface i Control Panel - Products og klikke
-på "import/export"-knappen. En ny side kommer nu frem. I
-"import"-tekstfeltet skriver du navnet på den fil du netop har
-placeret i import-dir'et og klikker på "import"-knappen. Produktet vil
-nu være synligt i listen over produkter (Control Panel - Products).
+pÃ¥ "import/export"-knappen. En ny side kommer nu frem. I
+"import"-tekstfeltet skriver du navnet pÃ¥ den fil du netop har
+placeret i import-dir'et og klikker pÃ¥ "import"-knappen. Produktet vil
+nu vÃ¦re synligt i listen over produkter (Control Panel - Products).
 </para>
 
 <para>
-Du bruger produkterne ved at tilføje dem i de relevante mapper i dit
+Du bruger produkterne ved at tilfÃ¸je dem i de relevante mapper i dit
 administrationsinterface.
 </para>
 </sect2>
@@ -385,25 +385,25 @@ administrationsinterface.
 <sect2 id="CMF">
 <title>CMF</title>
 <para>
-CMF er et meget kraftfuldt værktøj som man kan udvide sin Zope med.
-CMF står for Content Mangement Framework og bruges til at opbygge - på
-en meget nem måde - portaler med. CMF benytter sig også af Zope's
+CMF er et meget kraftfuldt vÃ¦rktÃ¸j som man kan udvide sin Zope med.
+CMF stÃ¥r for Content Mangement Framework og bruges til at opbygge - pÃ¥
+en meget nem mÃ¥de - portaler med. CMF benytter sig ogsÃ¥ af Zope's
 rolle hieraki. Derudover bliver man introduceret for "skins".
 Zope.org har dedikeret et helt site til deres portal-produkt. Adressen
 er <ulink url="http://cmf.zope.org">http://cmf.zope.org</ulink>. 
 Det er her du how-to's, nye portal-produkter,
-nyheder og hvad der ellers er værd at vide om CMF.
+nyheder og hvad der ellers er vÃ¦rd at vide om CMF.
 </para>
 
 <sect3 id="CMF-installation">
-<title>Sådan installeres CMF</title>
+<title>SÃ¥dan installeres CMF</title>
 
 <para>
-Gå ind på Zope's CMF-site. På den første side er der et link til deres
-»download«-side. Hent den af versionerne der hedder 1.0 og ikke er alpha
+GÃ¥ ind pÃ¥ Zope's CMF-site. PÃ¥ den fÃ¸rste side er der et link til deres
+Â»downloadÂ«-side. Hent den af versionerne der hedder 1.0 og ikke er alpha
 eller beta. Din tarball skal nu udpakkes i
-<filename>&lt;Zopedir&gt;/lib/python/Products</filename>. Du får lavet
-en folder der hedder CMF1.0. Gå ned i det og flyt de tre biblioteker
+<filename>&lt;Zopedir&gt;/lib/python/Products</filename>. Du fÃ¥r lavet
+en folder der hedder CMF1.0. GÃ¥ ned i det og flyt de tre biblioteker
 der er dernede et niveau op. Der skulle nu i din Products folder ligge
 3 nye foldere: CMFCore, CMDDecor, CMFDefault. Genstart din Zope og CMF
 er klar til brug !
@@ -415,114 +415,114 @@ er klar til brug !
 <title>Kom godt igang med CMF</title>
 
 <para>
-For at kunne lave sin portal, skal man gå ind i Zope's
+For at kunne lave sin portal, skal man gÃ¥ ind i Zope's
 administrationsinterface. I den folder du gerne vil placere din portal
-(som regel rod-folderen) vælger du at tilføje et CMF Site. Du kalder
+(som regel rod-folderen) vÃ¦lger du at tilfÃ¸je et CMF Site. Du kalder
 din portal noget passende og portalen er nu klar til brug. (Et passende
-navn vil være indec.html, idet de fleste browsere søger efter en fil
+navn vil vÃ¦re indec.html, idet de fleste browsere sÃ¸ger efter en fil
 med det navn som standard startsiden).
 </para>
 <para>
-For at komme igang med at bruge din portal, skal du klikke på
-"View"-tabben. Der er et par ting der skal konfigures, før din portal
-er klar til offentligheden. Du kan enten vælge at bruge portalen egen
-opsætningsside, eller du kan konfigurere den via
-administrationssiden. Vælger du det sidste skal du gå tlbage til
-<filename>http://www.mitdomæme.dk:8080/manage</filename>  og vælge din
-portal. (portnummeret :8080 er standarden, men har du ændret det til 
-port 80, kan du helt udelade :8080 i foregående link).
-Du skal herefter klikke på "Properties"-tabben. Indtast eller
-udskift de eksisterende værdier og klik på "Save". Nu er portalen klar
+For at komme igang med at bruge din portal, skal du klikke pÃ¥
+"View"-tabben. Der er et par ting der skal konfigures, fÃ¸r din portal
+er klar til offentligheden. Du kan enten vÃ¦lge at bruge portalen egen
+opsÃ¦tningsside, eller du kan konfigurere den via
+administrationssiden. VÃ¦lger du det sidste skal du gÃ¥ tlbage til
+<filename>http://www.mitdomÃ¦me.dk:8080/manage</filename>  og vÃ¦lge din
+portal. (portnummeret :8080 er standarden, men har du Ã¦ndret det til 
+port 80, kan du helt udelade :8080 i foregÃ¥ende link).
+Du skal herefter klikke pÃ¥ "Properties"-tabben. Indtast eller
+udskift de eksisterende vÃ¦rdier og klik pÃ¥ "Save". Nu er portalen klar
 til at se dagens lys :-)
 </para>
 
 <para>
-Der er masser af måder du kan ændre designet af din portal på. Men
-inden du begynder, er det måske en meget god idé at kigge
-lidt på hvordan portalen hænger sammen. Der findes som standard tre
+Der er masser af mÃ¥der du kan Ã¦ndre designet af din portal pÃ¥. Men
+inden du begynder, er det mÃ¥ske en meget god idÃ© at kigge
+lidt pÃ¥ hvordan portalen hÃ¦nger sammen. Der findes som standard tre
 slags brugere; Anonymous, Member og Reviewer. Man er Anonymous indtil
-man bliver medlem. Når man så er medlem, kan man bidrage med
-forskellige ting til portalen. Prøv at opret en bruger ved at klikke
-på "Join" og log ind. Du vil nu få nogle flere valgmuligheder i den
-venstre menu. Hvis du klikker på "My Stuff" kommer indholdet af din
-folder frem i vinduet. Du kan nu vælge enten at editere filen
+man bliver medlem. NÃ¥r man sÃ¥ er medlem, kan man bidrage med
+forskellige ting til portalen. PrÃ¸v at opret en bruger ved at klikke
+pÃ¥ "Join" og log ind. Du vil nu fÃ¥ nogle flere valgmuligheder i den
+venstre menu. Hvis du klikker pÃ¥ "My Stuff" kommer indholdet af din
+folder frem i vinduet. Du kan nu vÃ¦lge enten at editere filen
 "index_html" (som er den side andre kan se hvis din profil er listet)
-eller du kan vælge at tilføje mere til folderen. Klik på "Add" og prøv
-at tilføje en nyhed. Først udfylder du objektet's metadata og derefter
-vælger du at editere teksten. Når du har gjort dette, vil du
-selvfølgelig gerne have at andre skal kunne læse din nyhed, så du
-klikker på "Publish". Din nyhed er dog ikke helt publiceret endnu. For
+eller du kan vÃ¦lge at tilfÃ¸je mere til folderen. Klik pÃ¥ "Add" og prÃ¸v
+at tilfÃ¸je en nyhed. FÃ¸rst udfylder du objektet's metadata og derefter
+vÃ¦lger du at editere teksten. NÃ¥r du har gjort dette, vil du
+selvfÃ¸lgelig gerne have at andre skal kunne lÃ¦se din nyhed, sÃ¥ du
+klikker pÃ¥ "Publish". Din nyhed er dog ikke helt publiceret endnu. For
 at den kan blive dette, er der en bruger med rollen "Reviewer" eller
-"Manager" der skal godkende din nyhed. Du kan nu vælge enten at
+"Manager" der skal godkende din nyhed. Du kan nu vÃ¦lge enten at
 oprette en anden bruger, du kan tildele rollen "Reviewer" eller du kan
-vælge at logge ind med din administrator bruger (som jo har rollen
-"Manager"). Vælger du det første skal du logge ud, klikke endnu engang
-på "Join", oprette brugeren og gå ind i administrationsinterfacet
-(<filename>http://www.mitdomæne.dk:8080/minportal/manage</filename>). Her
-skal du klikke på den folder dine medlemmer ligger i (acl_users) og
-klikke på den bruger du gerne vil tildele rollen "Reviewer". Marker
-"Reviewer" i select-boxen og klik på "Save". Gå nu tilbage til din
+vÃ¦lge at logge ind med din administrator bruger (som jo har rollen
+"Manager"). VÃ¦lger du det fÃ¸rste skal du logge ud, klikke endnu engang
+pÃ¥ "Join", oprette brugeren og gÃ¥ ind i administrationsinterfacet
+(<filename>http://www.mitdomÃ¦ne.dk:8080/minportal/manage</filename>). Her
+skal du klikke pÃ¥ den folder dine medlemmer ligger i (acl_users) og
+klikke pÃ¥ den bruger du gerne vil tildele rollen "Reviewer". Marker
+"Reviewer" i select-boxen og klik pÃ¥ "Save". GÃ¥ nu tilbage til din
 portal og log ind som denne review-bruger. Du vil nu se nederst i den
-venstre menu at der står "Pending (1)". Klik her. Læs og godkend
-nyheden så vil denne blive publiceret. Gå tilbage til portalens
-forside og kig i højre side i nyheds-kassen. Nyheden optræder nu her.
-På samme måde som du lige tilføjede en nyhed, kan alle dine
-portal-brugere tilføje dokumenter, nyheder, billeder, links
-etc. etc. Den eneste der begrænser dette, er portal-administratoren.
+venstre menu at der stÃ¥r "Pending (1)". Klik her. LÃ¦s og godkend
+nyheden sÃ¥ vil denne blive publiceret. GÃ¥ tilbage til portalens
+forside og kig i hÃ¸jre side i nyheds-kassen. Nyheden optrÃ¦der nu her.
+PÃ¥ samme mÃ¥de som du lige tilfÃ¸jede en nyhed, kan alle dine
+portal-brugere tilfÃ¸je dokumenter, nyheder, billeder, links
+etc. etc. Den eneste der begrÃ¦nser dette, er portal-administratoren.
 </para>
 </sect3>
 
 <sect3 id="CMF-portal">
 <title>Lav portalen som du selv vil have den</title>
 <para>
-Det er nu på tide at kigge på de lidt mere konfigurerbare ting af
-portalen, der ikke kræver den store programmør. Portalens udseende
-bliver styret fra den folder der hedder "portal_skins". Gå tilbage til
-administrations-interfacet og klik på "+" på skins-folderen så den
-folder sig ud. Der ligger en række foldere, hvoraf en er en
+Det er nu pÃ¥ tide at kigge pÃ¥ de lidt mere konfigurerbare ting af
+portalen, der ikke krÃ¦ver den store programmÃ¸r. Portalens udseende
+bliver styret fra den folder der hedder "portal_skins". GÃ¥ tilbage til
+administrations-interfacet og klik pÃ¥ "+" pÃ¥ skins-folderen sÃ¥ den
+folder sig ud. Der ligger en rÃ¦kke foldere, hvoraf en er en
 "almindelig" folder. De andre er det der kaldes for "FileSystem"
-foldere. Indholdet i disse kan ikke ændres i skins-folderen, men kan
-kopieres til den folder der hedder "Custom" og ændres der. Hvis du
-klikker på folderens "Properties"-tab, kan du se hvordan de
-forskellige skins er defineret. Ud for hvert enkelt skin, står navnene
-på de foldere der bliver inkluderet i skin'et. Folderne bliver
-gennemsøgt fra venstre mod højre. D.v.s. at hvis man kopiere en fil
+foldere. Indholdet i disse kan ikke Ã¦ndres i skins-folderen, men kan
+kopieres til den folder der hedder "Custom" og Ã¦ndres der. Hvis du
+klikker pÃ¥ folderens "Properties"-tab, kan du se hvordan de
+forskellige skins er defineret. Ud for hvert enkelt skin, stÃ¥r navnene
+pÃ¥ de foldere der bliver inkluderet i skin'et. Folderne bliver
+gennemsÃ¸gt fra venstre mod hÃ¸jre. D.v.s. at hvis man kopiere en fil
 fra f.eks. "generic"-folderen til "custom"-folderen, bliver den kopi
-af filen der ligger i "custom" brugt før den der ligger i
-"generic". Hvis man nu byttede om på rækkefølgen af "custom" og
-"generic" ville den tilrettede kopi af filen ikke blive brugt. På
-denne måde kan man definere forskellige former for skins (med
+af filen der ligger i "custom" brugt fÃ¸r den der ligger i
+"generic". Hvis man nu byttede om pÃ¥ rÃ¦kkefÃ¸lgen af "custom" og
+"generic" ville den tilrettede kopi af filen ikke blive brugt. PÃ¥
+denne mÃ¥de kan man definere forskellige former for skins (med
 forskellige stylesheets f.eks.) til sin portal og dine brugere har nu
-forskellige udseender at vælge imellem. Du kan også bruge skins til at
+forskellige udseender at vÃ¦lge imellem. Du kan ogsÃ¥ bruge skins til at
 definere forskellige sprog med. En anden god ting man kan lave er et
-"Printable" skin som gør det muligt at vise en print-venlig side af
+"Printable" skin som gÃ¸r det muligt at vise en print-venlig side af
 alle dine dokumenter. Du laver bare en folder der hedder "Printable" i
-"portal_skins" folderen, kopierer de mest nødvendige filer ned i (såsom
-"index_html" etc.). Herefter laver du på "portal_skin"-folderens
-properties side et nyt skin der hedder "Printable" og tilføjer de
-skin-foldere der er nødvendige (som oftes skal de samme foldere
-inkluderes som også er i de andre skins på nær dem der sætter farver
+"portal_skins" folderen, kopierer de mest nÃ¸dvendige filer ned i (sÃ¥som
+"index_html" etc.). Herefter laver du pÃ¥ "portal_skin"-folderens
+properties side et nyt skin der hedder "Printable" og tilfÃ¸jer de
+skin-foldere der er nÃ¸dvendige (som oftes skal de samme foldere
+inkluderes som ogsÃ¥ er i de andre skins pÃ¥ nÃ¦r dem der sÃ¦tter farver
 ind, laver topbaren, sidebarerne etc.). At tilrette de eksisterende
 skins og lave nye er en hel videnskab for sig, men jo mere man
-arbejder med det, jo bedre forståelse får man for hvordan det hænger
+arbejder med det, jo bedre forstÃ¥else fÃ¥r man for hvordan det hÃ¦nger
 sammen.
 </para>
 
 <para>
-Der er efterhånden blevet udviklet flere og flere portal-typer end dem
-din portal blev født med. Disse finder du på <ulink
+Der er efterhÃ¥nden blevet udviklet flere og flere portal-typer end dem
+din portal blev fÃ¸dt med. Disse finder du pÃ¥ <ulink
 url="http://cmf.zope.org">http://cmf.zope.org</ulink>. Det er ikke
-helt let at tilføje nye portal-typer til portalen, da der er mange
-forskellige måder man kan gøre det på. Men som regel har udvikleren af
-portal-typen lavet en installationsvejledning og så er det bare med at
-følge den.
+helt let at tilfÃ¸je nye portal-typer til portalen, da der er mange
+forskellige mÃ¥der man kan gÃ¸re det pÃ¥. Men som regel har udvikleren af
+portal-typen lavet en installationsvejledning og sÃ¥ er det bare med at
+fÃ¸lge den.
 </para>
 
 <para>
-Løber du ind i problemer du ikke umiddelbart kan løse selv, er der
-hjælp at hente. Du kan tilmelde dig mailinglisten Zope-CMF. Klik ind
-på <ulink url="http://www.zope.org/Resources/MailingLists">http://www.zope.org/Resources/MailingLists</ulink>
-og tilmeld dig denne liste. Så er du i hvert fald godt på vej !
+LÃ¸ber du ind i problemer du ikke umiddelbart kan lÃ¸se selv, er der
+hjÃ¦lp at hente. Du kan tilmelde dig mailinglisten Zope-CMF. Klik ind
+pÃ¥ <ulink url="http://www.zope.org/Resources/MailingLists">http://www.zope.org/Resources/MailingLists</ulink>
+og tilmeld dig denne liste. SÃ¥ er du i hvert fald godt pÃ¥ vej !
 </para>
 </sect3>
 </sect2>
@@ -530,40 +530,40 @@ og tilmeld dig denne liste. Så er du i hvert fald godt på vej !
 </sect1>
 
 <sect1 id="phpnuke">
-<title>PHP-Nuke - start en portal på få timer</title>
+<title>PHP-Nuke - start en portal pÃ¥ fÃ¥ timer</title>
 
 <para>
-Hvis man vil have en portal startet på få timer og ikke regner med en
-ektrem belastning på maskinen, så et PHP-Nuke en glimrende måde at
-komme i gang på. Langt det meste vil konfigureres fra en web-browser,
-og man får typisk en fin site med en beskeden indsats. Ideen med
+Hvis man vil have en portal startet pÃ¥ fÃ¥ timer og ikke regner med en
+ektrem belastning pÃ¥ maskinen, sÃ¥ et PHP-Nuke en glimrende mÃ¥de at
+komme i gang pÃ¥. Langt det meste vil konfigureres fra en web-browser,
+og man fÃ¥r typisk en fin site med en beskeden indsats. Ideen med
 PHP-Nuke er at der anvendes en SQL-database til at gemme indhold mens
-integrationen mellem Apache-webserveren sker med en række PHP-scripts,
-der ikke ændres. Systemet er lavet så man ikke skal rette i filer for
-at håndtere den daglige drift. 
+integrationen mellem Apache-webserveren sker med en rÃ¦kke PHP-scripts,
+der ikke Ã¦ndres. Systemet er lavet sÃ¥ man ikke skal rette i filer for
+at hÃ¥ndtere den daglige drift. 
 </para>
 
 <para>
-Eneste negative ting angår sikkerheden. PHP-Nukes programmører er ikke
-gode til at højne sikkerheden - hvilket kan ses på <ulink
+Eneste negative ting angÃ¥r sikkerheden. PHP-Nukes programmÃ¸rer er ikke
+gode til at hÃ¸jne sikkerheden - hvilket kan ses pÃ¥ <ulink
 url="http://www.securityfocus.com">http://www.securityfocus.com</ulink>
-hvis der søges på PHP-Nuke.  F.eks. er der problemer med
-PHP-Nuke-filerne hvis man har en masse brugere på samme maskine, idet
-alle kan læse og skrive de filer der danner PHP-Nuke. Er det kun
+hvis der sÃ¸ges pÃ¥ PHP-Nuke.  F.eks. er der problemer med
+PHP-Nuke-filerne hvis man har en masse brugere pÃ¥ samme maskine, idet
+alle kan lÃ¦se og skrive de filer der danner PHP-Nuke. Er det kun
 system-administratoren som anvender maskinen kan man se bort fra
 dette.
 </para>
 
 <para>
 Start med at hente PHP-Nuke fra <ulink
-url="http://www.phpnuke.org">http://www.phpnuke.org</ulink>. Vælg
-»Downloads« i øverste menu og "PHP-Nuke". Dette burde lede til 
+url="http://www.phpnuke.org">http://www.phpnuke.org</ulink>. VÃ¦lg
+Â»DownloadsÂ« i Ã¸verste menu og "PHP-Nuke". Dette burde lede til 
 <ulink url="http://phpnuke.org/modules.php?name=Downloads&amp;d_op=getit&amp;id=225">http://phpnuke.org/modules.php?name=Downloads&amp;d_op=getit&amp;lid=225</ulink>.
 </para>
 
 <para>
 Start med at installere en apache-webserver og en MySQL-database.
-På en Red Hat 7.2 skal man indsætte Red Hat-cd-rom nummer 1 og skrive
+PÃ¥ en Red Hat 7.2 skal man indsÃ¦tte Red Hat-cd-rom nummer 1 og skrive
 </para>
 
 <screen>
@@ -576,7 +576,7 @@ På en Red Hat 7.2 skal man indsætte Red Hat-cd-rom nummer 1 og skrive
 </screen>
 
 <para>
-Indsæt derefter cd-rom nummer to (stadig som brugeren root)
+IndsÃ¦t derefter cd-rom nummer to (stadig som brugeren root)
 </para>
 
 <screen>
@@ -587,20 +587,20 @@ Indsæt derefter cd-rom nummer to (stadig som brugeren root)
 </screen>
 
 <para>
-Nu skal Apache-opsætningen sættes klar til en web-server. I det
-følgende antages at du vil have web-serveren
-http://www.linux-portal.dk i luften på IP-adresse 192.168.1.3 (denne
-IP-adresse virker kun på private netværk). Sørg for at dit servernavn
+Nu skal Apache-opsÃ¦tningen sÃ¦ttes klar til en web-server. I det
+fÃ¸lgende antages at du vil have web-serveren
+http://www.linux-portal.dk i luften pÃ¥ IP-adresse 192.168.1.3 (denne
+IP-adresse virker kun pÃ¥ private netvÃ¦rk). SÃ¸rg for at dit servernavn
 www.linux-portal.dk er kendt i DNS (navneserveren) eller i det mindste
-nævnt i <filename>/etc/hosts</filename> hvis serveren kun skal servicere 
-din hjemmenetværk.
+nÃ¦vnt i <filename>/etc/hosts</filename> hvis serveren kun skal servicere 
+din hjemmenetvÃ¦rk.
 </para>
 
 <para>
 Ret med en editor filen 
 <filename>/etc/httpd/conf/httpd.conf</filename> og find afsnittet
 "Section 3: Virtual Hosts" omkring linje 1173. I linjen
-"NameVirtualHost" ændres IP-adressen og nedenfor indsættes en virtuel
+"NameVirtualHost" Ã¦ndres IP-adressen og nedenfor indsÃ¦ttes en virtuel
 maskine som vist nedenfor - vi har her valgt at PHP-Nuke skal installeres i 
 <filename>/usr/local/PHPNuke</filename>. Erstat gerne root@localhost med din
 egen email-adresse (anvendes til at rapportere fejl).
@@ -626,7 +626,7 @@ NameVirtualHost 192.168.1.3
 </programlisting>
 
 <para>
-Vi skal også huske at starte både Apache webserveren og MySQL serveren op. 
+Vi skal ogsÃ¥ huske at starte bÃ¥de Apache webserveren og MySQL serveren op. 
 </para>
 
 <screen>
@@ -646,12 +646,12 @@ Pak nu PHP-Nuke ud
 </screen>
 
 <para>
-Læs gerne filen <filename>INSTALL</filename> som indeholder
-installations-noter. I store træk skal man køre følgende
-kommandoer. Først oprette en nuke-bruger i SQL-databasen, køre en
-opsætning ind. Rette alle filer og kataloger så alle kan læse og
+LÃ¦s gerne filen <filename>INSTALL</filename> som indeholder
+installations-noter. I store trÃ¦k skal man kÃ¸re fÃ¸lgende
+kommandoer. FÃ¸rst oprette en nuke-bruger i SQL-databasen, kÃ¸re en
+opsÃ¦tning ind. Rette alle filer og kataloger sÃ¥ alle kan lÃ¦se og
 skrive alt. Flytte <filename>config.php</filename> ud fra
-web-serverens søgesti og endeligt få Apache til at læse 
+web-serverens sÃ¸gesti og endeligt fÃ¥ Apache til at lÃ¦se 
 <filename>config.php</filename> fra den nye sti.
 </para>
 
@@ -666,9 +666,9 @@ web-serverens søgesti og endeligt få Apache til at læse
 
 
 <para>
-Nu er vi faktisk allerede klar til at starte med opsætningen via en 
-web-browser. Du bør nu kunne få http://www.linux-portal.dk vist hvis du 
-prøver at hente denne hjemmeside.
+Nu er vi faktisk allerede klar til at starte med opsÃ¦tningen via en 
+web-browser. Du bÃ¸r nu kunne fÃ¥ http://www.linux-portal.dk vist hvis du 
+prÃ¸ver at hente denne hjemmeside.
 </para>
 
 <figure id="phpnuke-index-fig" float="1">
@@ -678,8 +678,8 @@ prøver at hente denne hjemmeside.
 
 <para>
 Hent straks derefter http://www.linux-portal.dk/admin.php.
-Da dette er første gang skal du nu indtaste dit system-administrator
-opsætning - dvs. dit login-navn (Nickname), og som minimum også 
+Da dette er fÃ¸rste gang skal du nu indtaste dit system-administrator
+opsÃ¦tning - dvs. dit login-navn (Nickname), og som minimum ogsÃ¥ 
 password og email-adresse.
 </para>
 
@@ -691,7 +691,7 @@ password og email-adresse.
 
 <para>
 Derefter kan man logge ind i PHP-Nuke med den nye konto. Man kommer
-derefter ind på følgende side, hvorfra man kan styre hele ens portal.
+derefter ind pÃ¥ fÃ¸lgende side, hvorfra man kan styre hele ens portal.
 </para>
 
 <figure id="phpnuke-admin2-fig" float="1">
@@ -700,7 +700,7 @@ derefter ind på følgende side, hvorfra man kan styre hele ens portal.
 </figure>
 
 <para>
-Man kan f.eks. vælge "preferences" og få fyldt reelle information ind
+Man kan f.eks. vÃ¦lge "preferences" og fÃ¥ fyldt reelle information ind
 om selve hjemmesiden. 
 </para>
 
@@ -710,8 +710,8 @@ om selve hjemmesiden.
 </figure>
 
 <para>
-Man kan også sætte temaer (themes), som ændrer hele udseendet af
-hjemmesiden. Dette er vist på næste figur.
+Man kan ogsÃ¥ sÃ¦tte temaer (themes), som Ã¦ndrer hele udseendet af
+hjemmesiden. Dette er vist pÃ¥ nÃ¦ste figur.
 </para>
 
 
@@ -721,9 +721,9 @@ hjemmesiden. Dette er vist på næste figur.
 </figure>
 
 <para>
-Som system-administrator kan man via admin.php sætte nye historier
-ind, sætte afstemninger ind osv. Læs mere om dette på 
-<ulink url="http://www.nuketutorials.com/">http://www.nuketutorials.com/</ulink>. Se også <ulink url="http://nukesupport.com/">http://nukesupport.com/</ulink>.
+Som system-administrator kan man via admin.php sÃ¦tte nye historier
+ind, sÃ¦tte afstemninger ind osv. LÃ¦s mere om dette pÃ¥ 
+<ulink url="http://www.nuketutorials.com/">http://www.nuketutorials.com/</ulink>. Se ogsÃ¥ <ulink url="http://nukesupport.com/">http://nukesupport.com/</ulink>.
 </para>
 
 
@@ -734,10 +734,10 @@ ind, sætte afstemninger ind osv. Læs mere om dette på
 <indexterm><primary>Phorum</primary></indexterm>
 <indexterm><primary>Web diskussionsforum</primary></indexterm>
 <para>
-En nem måde at få lavet et diskussionsforum er at installere Phorum,
+En nem mÃ¥de at fÃ¥ lavet et diskussionsforum er at installere Phorum,
 der kan hentes fra <ulink
 url="http://phorum.org">http://phorum.org</ulink>. Det hele er skrevet i
-PHP, dvs. det kræver kun en Apache webserver med PHP installeret.
+PHP, dvs. det krÃ¦ver kun en Apache webserver med PHP installeret.
 </para>
 
 <figure id="phorum-fig" float="1">
@@ -753,17 +753,17 @@ PHP, dvs. det kræver kun en Apache webserver med PHP installeret.
 <para>
 Driver men en support-organisation med input, hvor man har en
 arbejdsgang ala: Der kommer en email til "helpdesken" med en rapport
-om et problem. Der oprettes automatisk en "billet" på opgaven, og et
-"billet-nummer" sendes tilbage til opgave-stilleren, så han eller hun
+om et problem. Der oprettes automatisk en "billet" pÃ¥ opgaven, og et
+"billet-nummer" sendes tilbage til opgave-stilleren, sÃ¥ han eller hun
 kan referere til det nummer. "Billetten" sendes af det automatiske
 system videre til en gruppe af medarbejdere. En af gruppens medlemmer
 tager ejerskab af "billetten" og der skabes i det automatiske system
 et udkast til svar til opgave-stilleren. Udkastet udfyldes med det
-komplette svar efter opgaven er løst, og alle er glade.
+komplette svar efter opgaven er lÃ¸st, og alle er glade.
 </para>
 
 <para>
-RT også kaldes Request Tracker kan hentes fra 
+RT ogsÃ¥ kaldes Request Tracker kan hentes fra 
 <ulink url="http://www.fsck.com/projects/rt/">http://www.fsck.com/projects/rt/</ulink>.
 </para>
 
@@ -773,9 +773,9 @@ RT også kaldes Request Tracker kan hentes fra
 </figure>
 
 <para>
-Det vel nok mest anvendte program til fejl-håndtering i Open Source-verdenen
-er Bugzilla, som f.eks. Red Hat anvender til deres fejl-håndtering.
-Alt foregår via internettet. Et rigtigt live-eksempel kan findes på
+Det vel nok mest anvendte program til fejl-hÃ¥ndtering i Open Source-verdenen
+er Bugzilla, som f.eks. Red Hat anvender til deres fejl-hÃ¥ndtering.
+Alt foregÃ¥r via internettet. Et rigtigt live-eksempel kan findes pÃ¥
 <ulink url="http://bugzilla.redhat.com">http://bugzilla.redhat.com</ulink>.
 Bugzilla kan hentes fra <ulink url="http://www.bugzilla.org/">http://www.bugzilla.org/</ulink>.
 </para>

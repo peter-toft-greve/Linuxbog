@@ -1,5 +1,5 @@
   <bookinfo>
-    <title>Linux - Friheden til at vælge it-løsning</title>
+    <title>Linux - Friheden til at vÃ¦lge it-lÃ¸sning</title>
     <abbrev>"FTAVKP"</abbrev>      
        <subtitle>Version &itplatform-version; - &itplatform-dato;</subtitle>
 
@@ -25,22 +25,22 @@
 <copyright>
   <year>2001-2005</year>
   <holder>Forfatterne har ophavsret til bogen, men udgiver den under
-   "Åben dokumentlicens (ÅDL) - version 1.0".
+   "Ã…ben dokumentlicens (Ã…DL) - version 1.0".
   </holder>
 </copyright>
 
 <abstract>
 <para>
-Formålet for denne bog er at introducere anvendelsen af Linux som
-itplatform i stedet for Windows med fokus på at give overblik, men
+FormÃ¥let for denne bog er at introducere anvendelsen af Linux som
+itplatform i stedet for Windows med fokus pÃ¥ at give overblik, men
 ikke fordybe sig i de enkelte komponenter.
 </para>
 
 <para>
-Ønsker man konkret opsætning og brug af programmer,
-vil vi i den forbindelse henvise til de andre bøger i
+Ã˜nsker man konkret opsÃ¦tning og brug af programmer,
+vil vi i den forbindelse henvise til de andre bÃ¸ger i
 denne serie. Denne bog vil entydigt koncentrere sig om, at vise hvad
-Linux formår som itplatform.
+Linux formÃ¥r som itplatform.
 </para>
 
 

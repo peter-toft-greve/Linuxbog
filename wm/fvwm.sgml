@@ -14,21 +14,21 @@
  <secondary>FVWM</secondary></indexterm>
 
  <para>
-  Da jeg i sin tid, for efterhånden ganske mange år siden begyndte at
-  bruge X (jeg havde allerede brugt Unix i et par år) var der en af
+  Da jeg i sin tid, for efterhÃ¥nden ganske mange Ã¥r siden begyndte at
+  bruge X (jeg havde allerede brugt Unix i et par Ã¥r) var der en af
   mine venner der viste mig hvordan jeg kunne erstatte den kedelige og
-  lidt besværlige vindueshåndtering der (stadig) er standard på
+  lidt besvÃ¦rlige vindueshÃ¥ndtering der (stadig) er standard pÃ¥
   Digital Unix (der i dag hedder HP Tru64) med en noget smartere en,
-  jeg kunne finde ud af at få til at køre med flere skriveborde, og
-  hvor man kunne lave sine egne menuer der kunne aktiveres med både
+  jeg kunne finde ud af at fÃ¥ til at kÃ¸re med flere skriveborde, og
+  hvor man kunne lave sine egne menuer der kunne aktiveres med bÃ¥de
   mus og genvejstaster, etc.  Det var FVWM.  Siden da er der blevet
-  skrevet videre på FVWM.  Og i forbindelse med at formatet af
-  opsætningsfilen blev ændret, blev versionsnummeret talt op, så
+  skrevet videre pÃ¥ FVWM.  Og i forbindelse med at formatet af
+  opsÃ¦tningsfilen blev Ã¦ndret, blev versionsnummeret talt op, sÃ¥
   <command>fvwm</command> blev til <command>fvwm2</command>.
  </para>
 
  <figure id="fvwm2-med-julepynt-hel-fig" float="1">
-  <title>Skærmskud med FVWM i juleskrud.</title>
+  <title>SkÃ¦rmskud med FVWM i juleskrud.</title>
   <graphic fileref="4_fvwm2_med_julepynt_hel.&magic;" scale="60"></graphic>
  </figure>
 
@@ -43,24 +43,24 @@
   <para>
    FVWM2 findes formodentlig i de fleste Linux-distributioner og det
    letteste er at installere den "fvwm2"- og "fvwm2-icons"-pakke der
-   følger med ens distribution. Hvis man selv ønsker at oversætte
-   FVWM, kan den hentes på hjemmesiden, <ulink
+   fÃ¸lger med ens distribution. Hvis man selv Ã¸nsker at oversÃ¦tte
+   FVWM, kan den hentes pÃ¥ hjemmesiden, <ulink
    url="http://www.fvwm.org/">http://www.fvwm.org/</ulink>.
   </para>
 
   <sect3 id="wm-fvwm-opsaetning">
-   <title>Opsætning</title>
+   <title>OpsÃ¦tning</title>
 
    <indexterm>
-    <primary>opsætning af</primary>
+    <primary>opsÃ¦tning af</primary>
     <secondary>FVWM</secondary>
    </indexterm>
 
    <para>
-    FVWM's opsætning styres i filen <command>~/.fvwm2rc</command>.
-    Som et eksempel kan du hente den opsætningsfil der blev brugt i
-    skærmbilledet ovenfor kataloget <filename>fvwm</filename> under
-    eksempler til denne bog.  Dele af den vil blive gennemgået
+    FVWM's opsÃ¦tning styres i filen <command>~/.fvwm2rc</command>.
+    Som et eksempel kan du hente den opsÃ¦tningsfil der blev brugt i
+    skÃ¦rmbilledet ovenfor kataloget <filename>fvwm</filename> under
+    eksempler til denne bog.  Dele af den vil blive gennemgÃ¥et
     nedenfor.
    </para>
   </sect3>
@@ -74,10 +74,10 @@
    </indexterm>
 
    <para>
-    Hvorfor nøjes med et skrivebord, når man kan have seks?  De fem
-    hvide og det ene gule rektangel nederst til højre på skærmen giver
+    Hvorfor nÃ¸jes med et skrivebord, nÃ¥r man kan have seks?  De fem
+    hvide og det ene gule rektangel nederst til hÃ¸jre pÃ¥ skÃ¦rmen giver
     en oversigt over de seks virtuelle skriveborde vi har valgt at
-    arbejde på med indstillingen:
+    arbejde pÃ¥ med indstillingen:
 
 <programlisting>
 DeskTopSize 3x2
@@ -106,7 +106,7 @@ Style *   Font     -adobe-helvetica-bold-r-*-*-12-*-*-*-*-*-*-*&nbsp;&nbsp;
 Style *   IconFont -adobe-helvetica-medium-r-*-*-11-*-*-*-*-*-*-*
 </programlisting>
 
-    vælger vi standardskriftsnit for vinduestitler (fed Helvetica,
+    vÃ¦lger vi standardskriftsnit for vinduestitler (fed Helvetica,
  12pt) og ikontitler (Helvetica, 11pt).
    </para>
   </sect3> <!-- Skriftsnit -->
@@ -120,9 +120,9 @@ Style *   IconFont -adobe-helvetica-medium-r-*-*-11-*-*-*-*-*-*-*
    </indexterm>
 
    <para>
-    Folk kan bruge meget tid på om vinduesfokus skal følge musen eller
-    først skal skifte når man klikker med musen i et nyt vindue.  Her
-    sætter vi det til at følge musen:
+    Folk kan bruge meget tid pÃ¥ om vinduesfokus skal fÃ¸lge musen eller
+    fÃ¸rst skal skifte nÃ¥r man klikker med musen i et nyt vindue.  Her
+    sÃ¦tter vi det til at fÃ¸lge musen:
 
 <programlisting>
 Style *   FocusFollowsMouse
@@ -145,12 +145,12 @@ Style *   FocusFollowsMouse
    </indexterm>
 
    <para>
-    I FVWM er du ikke begrænset til at have én "start"-menu.  Du kan
-    have så mange forskellige menuer som du har lyst til.  Og du kan
-    selv vælge hvordan de skal aktiveres og hvilke funktioner der skal
-    være på dem.  Her definerer vi en meget enkel menu med
+    I FVWM er du ikke begrÃ¦nset til at have Ã©n "start"-menu.  Du kan
+    have sÃ¥ mange forskellige menuer som du har lyst til.  Og du kan
+    selv vÃ¦lge hvordan de skal aktiveres og hvilke funktioner der skal
+    vÃ¦re pÃ¥ dem.  Her definerer vi en meget enkel menu med
     overskriften "Log ud" og menupunktet "Afslut FVWM2" (der vil
-    afslutte FVWM og dermed normalt også logge brugeren ud):
+    afslutte FVWM og dermed normalt ogsÃ¥ logge brugeren ud):
 
 <programlisting>
 AddToMenu Logud       &nbsp;
@@ -160,7 +160,7 @@ AddToMenu Logud       &nbsp;
    </para>
 
    <para>
-    Hvis vi senere i opsætningen vil bruge denne menu gør vi det med
+    Hvis vi senere i opsÃ¦tningen vil bruge denne menu gÃ¸r vi det med
     kommandoen "<command>Popup Logud</command>".
    </para>
   </sect3>    <!--   Menuer -->
@@ -174,7 +174,7 @@ AddToMenu Logud       &nbsp;
    </indexterm>
 
    <indexterm>
-    <primary>vindueshåndtering i</primary>
+    <primary>vindueshÃ¥ndtering i</primary>
     <secondary>FVWM</secondary>
    </indexterm>
 
@@ -183,18 +183,18 @@ AddToMenu Logud       &nbsp;
 Key Tab     A    M      Next (AcceptsFocus) Focus
 </programlisting>
 
-    sørger for at Alt-Tab skifter til næste vindue.  Og nej, det er
-    ikke A'et der står for "Alt".  <command>A</command> står for i
-    <filename>a</filename>lle sammenhænge.  <command>M</command> står
+    sÃ¸rger for at Alt-Tab skifter til nÃ¦ste vindue.  Og nej, det er
+    ikke A'et der stÃ¥r for "Alt".  <command>A</command> stÃ¥r for i
+    <filename>a</filename>lle sammenhÃ¦nge.  <command>M</command> stÃ¥r
     for "Meta" (der er det "Alt" hedder i FVWM).  Og <command>Next
-    (AcceptsFocus) Focus</command> giver fokus til det næste vindue
+    (AcceptsFocus) Focus</command> giver fokus til det nÃ¦ste vindue
     der er villigt til at komme i fokus.
    </para>
 
    <para>
-    Da jeg i sin tid satte FVWM op, så var en af de store fordele ved
-    FVWM at jeg kunne få den til at have omtrent samme genvejstaster
-    som OS/2 Warp 3.  Det klarede jeg hovedsageligt med de følgende ti
+    Da jeg i sin tid satte FVWM op, sÃ¥ var en af de store fordele ved
+    FVWM at jeg kunne fÃ¥ den til at have omtrent samme genvejstaster
+    som OS/2 Warp 3.  Det klarede jeg hovedsageligt med de fÃ¸lgende ti
     linjer.
 
 <programlisting>
@@ -217,8 +217,8 @@ Key F10     A    M      Maximize         &nbsp;
      <secondary>FVWM</secondary>
     </indexterm>
 
-    Og med de følgende fire linjer hægter jeg FVWM's vinduesoversigt
-    og tre hjemmelavede menuer på fire forskellige kombinationer af
+    Og med de fÃ¸lgende fire linjer hÃ¦gter jeg FVWM's vinduesoversigt
+    og tre hjemmelavede menuer pÃ¥ fire forskellige kombinationer af
     Escape-tasten med Ctrl-, Alt- og Shift-tasterne:
 
 <programlisting>
@@ -230,7 +230,7 @@ Key Escape  A    CS     Popup "Systemstyring"   &nbsp;
    </para>
 
    <para>
-    Og endelig sætter jeg Ctrl-Alt-T til at åbne en
+    Og endelig sÃ¦tter jeg Ctrl-Alt-T til at Ã¥bne en
     <command>xterm</command>:
 
 <programlisting>
@@ -243,7 +243,7 @@ Key T       A    CM     Exec xterm -fn 7x13 -ls -sb -rw -aw -sl 256 +vb +mb -bg 
    <title>Initialisering</title>
 
    <indexterm>
-    <primary>kørsel af programmer ved start af</primary>
+    <primary>kÃ¸rsel af programmer ved start af</primary>
     <secondary>FVWM</secondary>
    </indexterm>
 
@@ -254,9 +254,9 @@ Key T       A    CM     Exec xterm -fn 7x13 -ls -sb -rw -aw -sl 256 +vb +mb -bg 
 
    <para>
     FVWM kalder automatisk funktionen <command>InitFunction</command>
-    når den starter, så her kan man placere kommandoer man gerne vil
-    have kørt når man logger ind.  Vi kan for eksempel bruge den til
-    at sætte baggrundsbilledet:
+    nÃ¥r den starter, sÃ¥ her kan man placere kommandoer man gerne vil
+    have kÃ¸rt nÃ¥r man logger ind.  Vi kan for eksempel bruge den til
+    at sÃ¦tte baggrundsbilledet:
 
 <programlisting>
 AddToFunc InitFunction                                        &nbsp;
@@ -264,7 +264,7 @@ AddToFunc InitFunction                                        &nbsp;
 </programlisting>
    </para>
   </sect3>    <!--   Initialisering -->
- </sect2>    <!--   Opsætning -->
+ </sect2>    <!--   OpsÃ¦tning -->
 
  <sect2 id="wm-fvwm-dokumentation">
   <title>Brugsanvisningen</title>
@@ -277,7 +277,7 @@ AddToFunc InitFunction                                        &nbsp;
   <para>
    Man kan finde <ulink
    url="http://www.fvwm.org/documentation/manpages/">brugsanvisningen til
-   FVWM og de tilhørende moduler</ulink> på FVWM-webstedet.
+   FVWM og de tilhÃ¸rende moduler</ulink> pÃ¥ FVWM-webstedet.
   </para>
  </sect2>    <!--   Brugsanvisningen -->
 
@@ -285,22 +285,22 @@ AddToFunc InitFunction                                        &nbsp;
   <title>Det fede ved FVWM</title>
 
   <para>
-   FVWM kræver ikke specielt mange ressourcer.  Syntaksen i
-   opsætningsfilen er rimeligt overskuelig.  Og så har jeg efterhånden
-   brugt en del timer på at tilpasse min opsætning af FVWM til hvordan
-   jeg foretrækker at arbejde.
+   FVWM krÃ¦ver ikke specielt mange ressourcer.  Syntaksen i
+   opsÃ¦tningsfilen er rimeligt overskuelig.  Og sÃ¥ har jeg efterhÃ¥nden
+   brugt en del timer pÃ¥ at tilpasse min opsÃ¦tning af FVWM til hvordan
+   jeg foretrÃ¦kker at arbejde.
   </para>
 
   <para>
-   Den standardopsætningsfil FVWM kommer med er ikke just smuk, men
-   hvis man tager et kig på <ulink
-   url="http://www.fvwm.org/screenshots/">eksemplerne på
-   FVWM-webstedet</ulink> får man en idé om hvor fleksibel FVWM
+   Den standardopsÃ¦tningsfil FVWM kommer med er ikke just smuk, men
+   hvis man tager et kig pÃ¥ <ulink
+   url="http://www.fvwm.org/screenshots/">eksemplerne pÃ¥
+   FVWM-webstedet</ulink> fÃ¥r man en idÃ© om hvor fleksibel FVWM
    egentlig er.
   </para>
 
   <para>
-   Hvis man begynder med FVWM, så kan man praktisk talt alt.
+   Hvis man begynder med FVWM, sÃ¥ kan man praktisk talt alt.
   </para>
  </sect2>
 </sect1>

@@ -2,10 +2,10 @@
 -- $Id$
 --
 -- Programmet er skrevet til KRoC
--- Fås for eksempel hos
+-- FÃ¥s for eksempel hos
 -- http://www.ee.surrey.ac.uk/Personal/R.Peel/occam
 --
--- Oversættelse:
+-- OversÃ¦ttelse:
 --  kroc udskriv.occ -lfile -lhostio -lstring -lconvert
 --
 -- Afvikling:

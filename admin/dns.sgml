@@ -5,35 +5,35 @@
 <!-- Skrevet af Christian Rasmussen "chr@egebjerg.com" -->
 
 <para>
-Det er i dag blevet meget almindeligt, også for privatbrugere, at
-koble flere computere sammen i et netværk. For at computerne kan
-"tale" sammen kræves en standard for hvorledes kommunikationen skal
-foregå. En sådan standard kaldes en protokol.
+Det er i dag blevet meget almindeligt, ogsÃ¥ for privatbrugere, at
+koble flere computere sammen i et netvÃ¦rk. For at computerne kan
+"tale" sammen krÃ¦ves en standard for hvorledes kommunikationen skal
+foregÃ¥. En sÃ¥dan standard kaldes en protokol.
 </para>
 
 <para>
-En protokol består basalt set af nogle regler som blandt andet
-forhindrer computerne i at "snakke i munden på hinanden". Samtidig er
+En protokol bestÃ¥r basalt set af nogle regler som blandt andet
+forhindrer computerne i at "snakke i munden pÃ¥ hinanden". Samtidig er
 det defineret hvor store portioner data som skal sendes ad gangen,
-hvor lang tid computeren skal vente på at modparten svarer og
+hvor lang tid computeren skal vente pÃ¥ at modparten svarer og
 lignende.
 </para>
 
 <para> 
 Gennem tiden er forskellige standarder inden for
 datakommunikation blevet udviklet. En dominerende teknologi,
-kompatibel med flertallet af computersystemer, har ikke eksisteret før
-internettet for alvor brød igennem i 1990'erne.  
+kompatibel med flertallet af computersystemer, har ikke eksisteret fÃ¸r
+internettet for alvor brÃ¸d igennem i 1990'erne.  
 </para>
 
 <para>
-For at muliggøre kommunikation mellem vidt forskellige
+For at muliggÃ¸re kommunikation mellem vidt forskellige
 computersystemer er talrige standarder blevet vedtaget &ndash; og bliver
-løbende vedtaget. Kommunikation over internettet er bygget op om
+lÃ¸bende vedtaget. Kommunikation over internettet er bygget op om
 protokollen "TCP/IP", Transmission Control Protocol/Internet
-Protocol. Linux har i modsætning til andre styresystemer altid
+Protocol. Linux har i modsÃ¦tning til andre styresystemer altid
 indeholdt denne protokol, hvilket betyder at Linux er meget overlegen
-når det gælder internet-kommunikation.
+nÃ¥r det gÃ¦lder internet-kommunikation.
 </para>
 
 <indexterm><primary>DARPA</primary><secondary>DNS</secondary></indexterm>
@@ -41,52 +41,52 @@ når det gælder internet-kommunikation.
 <indexterm><primary>internettet</primary><secondary>ARPANET</secondary></indexterm>
 
 <para> 
-TCP/IP har rødder helt tilbage til slutningen af 1960'erne, hvor
-den amerikanske militær-organisation DARPA (Defense Advanced Research
-Projects Agency) startede et forskningsprojekt. Målet var at udvikle
-en teknologi til sikker datakommunikation, som ikke var afhængig af en
-central enhed, og kunne fungere selvom en stor del af netværket var
-destrueret af fjender. Samtidig skulle teknologien kunne fungere på
+TCP/IP har rÃ¸dder helt tilbage til slutningen af 1960'erne, hvor
+den amerikanske militÃ¦r-organisation DARPA (Defense Advanced Research
+Projects Agency) startede et forskningsprojekt. MÃ¥let var at udvikle
+en teknologi til sikker datakommunikation, som ikke var afhÃ¦ngig af en
+central enhed, og kunne fungere selvom en stor del af netvÃ¦rket var
+destrueret af fjender. Samtidig skulle teknologien kunne fungere pÃ¥
 vidt forskellige computersystemer og styresystemer. Teknologien kom
 til at hedde ARPANET.  
 </para>
 
 <para>
-ARPANET ekspanderede kraftigt, og delte sig i flere uafhængige men
-forbundne netværk. Inden længe havde ARPANET bredt sig til mange
-amerikanske universiteter og senere ud over USA's grænser, det blev
+ARPANET ekspanderede kraftigt, og delte sig i flere uafhÃ¦ngige men
+forbundne netvÃ¦rk. Inden lÃ¦nge havde ARPANET bredt sig til mange
+amerikanske universiteter og senere ud over USA's grÃ¦nser, det blev
 herefter til det som vi i dag kalder "internettet".
 </para>
 
 <para>
-For at få det hele til at snakke sammen, eksisterer forskellige
-organisationer, som hver har deres ansvarsområde. Disse består af
-frivillige teknikere/ingeniører, som tager stilling til forskellige
-forslag og diskuterer fremtiden for internettet. Debatten er meget åben;
-før en standard bliver vedtaget, kommer den ud til "internet-befolkningen"
+For at fÃ¥ det hele til at snakke sammen, eksisterer forskellige
+organisationer, som hver har deres ansvarsomrÃ¥de. Disse bestÃ¥r af
+frivillige teknikere/ingeniÃ¸rer, som tager stilling til forskellige
+forslag og diskuterer fremtiden for internettet. Debatten er meget Ã¥ben;
+fÃ¸r en standard bliver vedtaget, kommer den ud til "internet-befolkningen"
 hvor enhver har mulighed for at kommentere. Herefter vil forslaget blive
 vedtaget og gjort til en endelig standard som de individuelle firmaer
 kan implementere i deres systemer.
 </para>
 
 <para>
-Internettets historie er der skrevet mange bøger om, stort set hver
+Internettets historie er der skrevet mange bÃ¸ger om, stort set hver
 bog har sin egen version af historien. Der er ikke altid enighed om
-hvornår hvilken begivenhed indtraf, eller hvem der stod bag. Men rent
-faktisk er det kun filosofien, som datidens "internet" har til fælles med
+hvornÃ¥r hvilken begivenhed indtraf, eller hvem der stod bag. Men rent
+faktisk er det kun filosofien, som datidens "internet" har til fÃ¦lles med
 nutidens internet.
 </para>
 
 <para>
 Fordi du nu bruger Linux, kommer du til at have fingrene lidt
-længere nede i netværksmaskineriet end med andre styresystemer. Derfor
-er du nødt til at lære lidt mere om, hvordan det hele er skruet sammen,
+lÃ¦ngere nede i netvÃ¦rksmaskineriet end med andre styresystemer. Derfor
+er du nÃ¸dt til at lÃ¦re lidt mere om, hvordan det hele er skruet sammen,
 i stedet for bare at skrive en stribe magiske tal i nogle dialogbokse.
 </para>
 
 <para>
-Du kan i mange tilfælde teste tingene på din egen maskine uden at være
-forbundet til et eksternt netværk, og dermed undgår du at genere andre. Vær
+Du kan i mange tilfÃ¦lde teste tingene pÃ¥ din egen maskine uden at vÃ¦re
+forbundet til et eksternt netvÃ¦rk, og dermed undgÃ¥r du at genere andre. VÃ¦r
 frem for alt ikke bange for at lege med tingene &ndash; du kan kun blive klogere af
 det!
 </para>
@@ -99,42 +99,42 @@ det!
 <indexterm><primary>IP-adresser</primary></indexterm>
 
 <para>
-Kommunikation på internettet foregår ved at hver enkelt computer tilkoblet
+Kommunikation pÃ¥ internettet foregÃ¥r ved at hver enkelt computer tilkoblet
 internettet, har et unikt nummer, kaldet en IP-adresse. IP-adresser
 ses i det daglige som decimaltal, eksempelvis: 195.249.116.158.
 </para>
 
 <para>
 Men rent faktisk behandler computere dem ikke i 10-talssystemet,
-men derimod i  det binære talsystem. Det binære talsystem består af
+men derimod i  det binÃ¦re talsystem. Det binÃ¦re talsystem bestÃ¥r af
 bit. Dem skal der bruges 32 af for at have en IP-adresse. Hver bit
-kan enten have værdien 1 eller 0, på hardwareniveau behandles 1 som
-forbindelse mellem 2 kredsløb og 0 som ikke forbindelse.
+kan enten have vÃ¦rdien 1 eller 0, pÃ¥ hardwareniveau behandles 1 som
+forbindelse mellem 2 kredslÃ¸b og 0 som ikke forbindelse.
 </para>
 
 <indexterm><primary>IP-adresser</primary><secondary>teknisk baggrund</secondary></indexterm>
 
 <para>
 I decimaltal er en IP-adresse delt ind i 4 felter adskilt af
-punktum. For at sammenligne binær og decimal skal den binære version
-derfor også opdeles i 4 felter; vi deler derfor de 32 bit med de 4
-felter, og kan derved udlede at hvert felt skal bestå af 8 bit.
+punktum. For at sammenligne binÃ¦r og decimal skal den binÃ¦re version
+derfor ogsÃ¥ opdeles i 4 felter; vi deler derfor de 32 bit med de 4
+felter, og kan derved udlede at hvert felt skal bestÃ¥ af 8 bit.
 </para>
 
 <para>
-I binært talformat vil det første felt i ovenstående IP-adresse (195)
-hedde: 11000011. Følgende metode benyttes for at omregne feltet til
+I binÃ¦rt talformat vil det fÃ¸rste felt i ovenstÃ¥ende IP-adresse (195)
+hedde: 11000011. FÃ¸lgende metode benyttes for at omregne feltet til
 decimaltal:
 </para>
 
 <table id="netv1">
-<title> Omregn binær til decimal </title>
+<title> Omregn binÃ¦r til decimal </title>
 <tgroup cols="3" align="char">
 
 <thead><row>
  <entry>Bit-nr: (talt bagfra)</entry>
- <entry>Repræsenteret værdi:</entry>
- <entry>Bit-værdi:</entry>
+ <entry>ReprÃ¦senteret vÃ¦rdi:</entry>
+ <entry>Bit-vÃ¦rdi:</entry>
 </row></thead>
 
 <tbody>
@@ -192,21 +192,21 @@ decimaltal:
 </table>
 
 <para>
-Hvis bitværdien er 1 betyder det blot at den repræsenterede værdi
+Hvis bitvÃ¦rdien er 1 betyder det blot at den reprÃ¦senterede vÃ¦rdi
 skal medregnes, hvis den er 0, skal den springes over, det giver
-følgende regnestykke: 1+2+64+128 = 195.
+fÃ¸lgende regnestykke: 1+2+64+128 = 195.
 </para>
 
 <para>
-Dette regnestykke bruges for hvert af de 4 felter, og man kan på den
-måde omregne en IP-adresse fra binær til decimal. Hvert felt kan
-således antage en værdi mellem 0 og 255 (begge inklusive).
+Dette regnestykke bruges for hvert af de 4 felter, og man kan pÃ¥ den
+mÃ¥de omregne en IP-adresse fra binÃ¦r til decimal. Hvert felt kan
+sÃ¥ledes antage en vÃ¦rdi mellem 0 og 255 (begge inklusive).
 </para>
 
 
 <para>
-Har du brug for at regne om mellem binært, decimalt og hexadecimalt,
-så har KDE er god lommeregner, <command>kcalc</command>, som gør dette nemt.
+Har du brug for at regne om mellem binÃ¦rt, decimalt og hexadecimalt,
+sÃ¥ har KDE er god lommeregner, <command>kcalc</command>, som gÃ¸r dette nemt.
 </para>
 </sect1>
 
@@ -216,10 +216,10 @@ så har KDE er god lommeregner, <command>kcalc</command>, som gør dette nemt.
 <para>
 For at kunne opdele IP-adresserne i portioner som kan delegeres til
 firmaer/institutioner, er et system defineret til at inddele
-IP-adresserne i net, også kaldet netklasser. Der eksisterer 3 typer af
+IP-adresserne i net, ogsÃ¥ kaldet netklasser. Der eksisterer 3 typer af
 netklasser: A, B og C. Hver klasse har et specifikt
-adresseområde. Derudover afgør netklassen, hvor mange af felterne som
-er variable; følgende skema giver en oversigt over de omtalte
+adresseomrÃ¥de. Derudover afgÃ¸r netklassen, hvor mange af felterne som
+er variable; fÃ¸lgende skema giver en oversigt over de omtalte
 netklasser:
 </para>
 
@@ -237,7 +237,7 @@ netklasser:
 <tbody>
 
 <row>
- <entry>Adresseområde:</entry> 
+ <entry>AdresseomrÃ¥de:</entry> 
  <entry>0.*.*.* - 126.*.*.*</entry>
  <entry>128.*.*.* - 191.*.*.*</entry> 
  <entry>192.*.*.* - 223.*.*.*</entry> 
@@ -270,29 +270,29 @@ netklasser:
 
 
 <para>
-* (stjerne) angiver at værdien kan være mellem 0 og 255 (begge
+* (stjerne) angiver at vÃ¦rdien kan vÃ¦re mellem 0 og 255 (begge
 inklusiv).
 </para>
 
 <para>
-Som det kan ses i "adresseområde"-feltet, er det udelukkende det
-første felt i IP-adressen som afgør hvilken netklasse en IP-adresse
-tilhører. Feltet "Fast/Variabel" viser hvilken del af IP-adressen man
-selv kan bestemme når man får delegeret et net af den pågældende
-klasse. Den faste del kaldes også for netværksnummeret mens den
-variable del kaldes værtsnummer eller host-id. "Mulige klasser"
-fortæller hvor mange klasser af de forskellige typer som kan
-eksistere med de gældende standarder. Feltet "Mulige IP-adresser"
+Som det kan ses i "adresseomrÃ¥de"-feltet, er det udelukkende det
+fÃ¸rste felt i IP-adressen som afgÃ¸r hvilken netklasse en IP-adresse
+tilhÃ¸rer. Feltet "Fast/Variabel" viser hvilken del af IP-adressen man
+selv kan bestemme nÃ¥r man fÃ¥r delegeret et net af den pÃ¥gÃ¦ldende
+klasse. Den faste del kaldes ogsÃ¥ for netvÃ¦rksnummeret mens den
+variable del kaldes vÃ¦rtsnummer eller host-id. "Mulige klasser"
+fortÃ¦ller hvor mange klasser af de forskellige typer som kan
+eksistere med de gÃ¦ldende standarder. Feltet "Mulige IP-adresser"
 illustrerer hvor mange IP-adresser hver klasse kan indeholde.
 </para>
 
 <para>
 Hvis man sammenligner vores test-IP-adresse: 195.249.116.158 med
-ovenstående skema, fremgår følgende: Det første felt i IP-adressen,
-"195" fortæller at IP-adressen tilhører et C-klasse-net, da tallet
-"195" ligger i området 192-223. For C-klasse-net gælder det at de
-første 3 felter er faste. Det er således kun det sidste felt man selv
-kan råde over. Samtidig kan det ses at der i alt kan eksistere
+ovenstÃ¥ende skema, fremgÃ¥r fÃ¸lgende: Det fÃ¸rste felt i IP-adressen,
+"195" fortÃ¦ller at IP-adressen tilhÃ¸rer et C-klasse-net, da tallet
+"195" ligger i omrÃ¥det 192-223. For C-klasse-net gÃ¦lder det at de
+fÃ¸rste 3 felter er faste. Det er sÃ¥ledes kun det sidste felt man selv
+kan rÃ¥de over. Samtidig kan det ses at der i alt kan eksistere
 2.097.151 C-klasse-net. Hvert C-klasse-net kan indeholde 254 IP-adresser.
 </para>
 
@@ -306,27 +306,27 @@ kan råde over. Samtidig kan det ses at der i alt kan eksistere
 <indexterm><primary>255.255.255.0</primary><secondary>subnet-maske</secondary></indexterm>
 
 <para>
-Når et IP-net bliver delegeret til et firma/en institution, får
-firmaet tildelt et netværksnummer og skal derfra selv tildele
-værtsnumre til de enkelte computere. Eftersom computerne sidder i et
-lokalnetværk og derfor er fysisk koblet sammen, skal de formentlig
-primært udveksle data indbyrdes. For at muliggøre dette kræves det at
-en specifik subnet-maske sættes samtidig med den individuelle
+NÃ¥r et IP-net bliver delegeret til et firma/en institution, fÃ¥r
+firmaet tildelt et netvÃ¦rksnummer og skal derfra selv tildele
+vÃ¦rtsnumre til de enkelte computere. Eftersom computerne sidder i et
+lokalnetvÃ¦rk og derfor er fysisk koblet sammen, skal de formentlig
+primÃ¦rt udveksle data indbyrdes. For at muliggÃ¸re dette krÃ¦ves det at
+en specifik subnet-maske sÃ¦ttes samtidig med den individuelle
 IP-adresse.
 </para>
 
-<indexterm><primary>Klasse-C netværk</primary></indexterm>
+<indexterm><primary>Klasse-C netvÃ¦rk</primary></indexterm>
 
 <para>
-Subnet-masker består ligesom IP-adresser af 32 bit, til et
+Subnet-masker bestÃ¥r ligesom IP-adresser af 32 bit, til et
 C-klasse-net hedder subnet-masken i decimal 255.255.255.0. De
-første 3 felter af en C-klasse IP-adresse er som bekendt faste. I
-subnet-masken vises det ved at feltet har den maksimale værdi 255.
-Mens det sidste felt, som er variabelt, har værdien 0, hvilket betyder
-at dette felt i IP-adressen kan antage en hvilken som helst værdi
-mellem 0 og 255 og stadig være inden for det givne IP-net. Med en
-C-klasse-net subnet-maske skal de 3 første felter i en IP-adresse
-altså være ens før 2 IP-adresser stammer fra samme IP-net.
+fÃ¸rste 3 felter af en C-klasse IP-adresse er som bekendt faste. I
+subnet-masken vises det ved at feltet har den maksimale vÃ¦rdi 255.
+Mens det sidste felt, som er variabelt, har vÃ¦rdien 0, hvilket betyder
+at dette felt i IP-adressen kan antage en hvilken som helst vÃ¦rdi
+mellem 0 og 255 og stadig vÃ¦re inden for det givne IP-net. Med en
+C-klasse-net subnet-maske skal de 3 fÃ¸rste felter i en IP-adresse
+altsÃ¥ vÃ¦re ens fÃ¸r 2 IP-adresser stammer fra samme IP-net.
 </para>
 
 <table id="test-ip">
@@ -360,26 +360,26 @@ altså være ens før 2 IP-adresser stammer fra samme IP-net.
 </table>
 
 <para>
-Ovenstående skema viser med nogle eksempler hvordan man ser om
+OvenstÃ¥ende skema viser med nogle eksempler hvordan man ser om
 C-klasse IP-adressen 195.249.116.158 er i samme IP-net som en anden
-adresse. Kriteriet er at de 3 første felter skal være ens, da vi har
-at gøre med en C-klasse subnet-maske (255.255.255.0).
+adresse. Kriteriet er at de 3 fÃ¸rste felter skal vÃ¦re ens, da vi har
+at gÃ¸re med en C-klasse subnet-maske (255.255.255.0).
 </para>
 
 <para>
-Det første felt i den første adresse (212) er ikke lig 195, og derfor
-er de 2 adresser ikke i samme net. Ved den næste adresse matcher det
-første felt, men det andet felt (125), er ikke lig det andet felt i
-test-adressen (249). Den sidste adresse er på samme IP-net fordi de 3
-første felter matcher.
+Det fÃ¸rste felt i den fÃ¸rste adresse (212) er ikke lig 195, og derfor
+er de 2 adresser ikke i samme net. Ved den nÃ¦ste adresse matcher det
+fÃ¸rste felt, men det andet felt (125), er ikke lig det andet felt i
+test-adressen (249). Den sidste adresse er pÃ¥ samme IP-net fordi de 3
+fÃ¸rste felter matcher.
 </para>
 
 <!--
 <para>
-Du kan også på 
+Du kan ogsÃ¥ pÃ¥ 
 <ulink url="http://www.ko.sdu.dk/~pen/netmasker/ip-net.htmlx">
 http://www.ko.sdu.dk/~pen/netmasker/ip-net.htmlx</ulink>
-læse mere om IP-adresser.
+lÃ¦se mere om IP-adresser.
 </para>
 -->
 
@@ -388,27 +388,27 @@ læse mere om IP-adresser.
 
 
 <sect1 id="netsammenkobling">
-<title>Sammenkobling af flere netværk</title>
+<title>Sammenkobling af flere netvÃ¦rk</title>
 
 <para>
-En computer i et TCP/IP-netværk benytter altså subnet-masken til at
-verificere om en anden computer som den skal kommunikere med, er på det
-samme IP-net. Hvis det ikke skulle være tilfældet, skal computeren bruge
+En computer i et TCP/IP-netvÃ¦rk benytter altsÃ¥ subnet-masken til at
+verificere om en anden computer som den skal kommunikere med, er pÃ¥ det
+samme IP-net. Hvis det ikke skulle vÃ¦re tilfÃ¦ldet, skal computeren bruge
 en "gateway". En gateway er et slags mellemled som fysisk er tilkoblet
-flere netværk og samtidig har en IP-adresse for hvert netværk. På denne
-måde kan data komme fra et netværk, passere igennem gateway'en, og ud på
-et andet netværk til sin destination. Gateway'en er nærmere en funktion
-end en enhed. Denne "funktion" kaldes routning og kan udføres af en
+flere netvÃ¦rk og samtidig har en IP-adresse for hvert netvÃ¦rk. PÃ¥ denne
+mÃ¥de kan data komme fra et netvÃ¦rk, passere igennem gateway'en, og ud pÃ¥
+et andet netvÃ¦rk til sin destination. Gateway'en er nÃ¦rmere en funktion
+end en enhed. Denne "funktion" kaldes routning og kan udfÃ¸res af en
 computer, en router eller en lignende hardware-enhed.
 </para>
 
 <para>
-Et elementært eksempel kunne være en virksomhed bestående af en
-salgsafdeling og en regnskabsafdeling, med hver deres lokalnetværk:
+Et elementÃ¦rt eksempel kunne vÃ¦re en virksomhed bestÃ¥ende af en
+salgsafdeling og en regnskabsafdeling, med hver deres lokalnetvÃ¦rk:
 </para>
 
 <figure id="net1" float="1">
-<title>Netværks-eksempel</title>
+<title>NetvÃ¦rks-eksempel</title>
 <graphic fileref="net1.&magic;"  scale="60"></graphic>
 </figure>
 
@@ -417,39 +417,39 @@ salgsafdeling og en regnskabsafdeling, med hver deres lokalnetværk:
 
 
 <para>
-Disse pc'er har hidtil kørt i 2 separate netværk, men skal nu forenes
-således at pc'erne kan kommunikere på tværs af hinandens netværk.
+Disse pc'er har hidtil kÃ¸rt i 2 separate netvÃ¦rk, men skal nu forenes
+sÃ¥ledes at pc'erne kan kommunikere pÃ¥ tvÃ¦rs af hinandens netvÃ¦rk.
 </para>
 
 <para>
-Vi starter med at udnævne salgsafdelingens PC1 til at være gateway. Denne
+Vi starter med at udnÃ¦vne salgsafdelingens PC1 til at vÃ¦re gateway. Denne
 skal have et ekstra netkort installeret som fysisk skal tilkobles
-regnskabsafdelingens netværk. Dette ekstra netkort skal sættes til at
-kommunikere med de øvrige pc'er på regnskabsafdelingens netværk. Derfor
-tildeles dette netkort IP-adressen 192.168.20.10. Netværket ser herefter
-således ud:
+regnskabsafdelingens netvÃ¦rk. Dette ekstra netkort skal sÃ¦ttes til at
+kommunikere med de Ã¸vrige pc'er pÃ¥ regnskabsafdelingens netvÃ¦rk. Derfor
+tildeles dette netkort IP-adressen 192.168.20.10. NetvÃ¦rket ser herefter
+sÃ¥ledes ud:
 </para>
 
 
 <figure id="net2" float="1">
-<title>Netværk med gateway</title>
+<title>NetvÃ¦rk med gateway</title>
 <graphic fileref="net2.&magic;"  scale="60"></graphic>
 </figure>
 
 
 <para>
 Gateway er nu mellemledet som direkte kan kommunikere med samtlige
-pc'er i virksomheden. De øvrige pc'er har fået en gateway sat op
+pc'er i virksomheden. De Ã¸vrige pc'er har fÃ¥et en gateway sat op
 (angivet som GW). For PC2 og PC3's vedkommende er denne adresse
-gateways IP 1, mens de øvrige har gateway's IP 2.
+gateways IP 1, mens de Ã¸vrige har gateway's IP 2.
 </para>
 
 <para> 
-Ud fra ovenstående kan det konkluderes at en gateway er
-nødvendig når en computer skal kommunikere med en anden computer som
+Ud fra ovenstÃ¥ende kan det konkluderes at en gateway er
+nÃ¸dvendig nÃ¥r en computer skal kommunikere med en anden computer som
 ikke er inden for det samme IP-net. Det er derfor logisk at en gateway
-vil være påkrævet når man eksempelvis skal benytte internettet, da
-størstedelen af adresserne ligger uden for ens eget IP-net.
+vil vÃ¦re pÃ¥krÃ¦vet nÃ¥r man eksempelvis skal benytte internettet, da
+stÃ¸rstedelen af adresserne ligger uden for ens eget IP-net.
 </para>
 </sect1>
 
@@ -457,16 +457,16 @@ størstedelen af adresserne ligger uden for ens eget IP-net.
 
 
 <sect1 id="Klasseloest-internet">
-<title>Klasseløst internet</title>
-<indexterm><primary>Klasseløst internet</primary></indexterm>
+<title>KlasselÃ¸st internet</title>
+<indexterm><primary>KlasselÃ¸st internet</primary></indexterm>
 
 <para>
-Igennem 1990'erne er antallet af brugere på internettet mildest talt
-eksploderet, hvilket har udløst en akut mangel på IP-adresser. Som
-følge deraf er internettet i dag rent faktisk blevet klasseløst, idet
-man ikke længere har nok adresser tilbage til at delegere A-, B- eller
-C-net til firmaer/institutioner. Man bliver derfor nødt til at uddele
-IP-adresserne i meget mindre portioner. Følgende er en oversigt over
+Igennem 1990'erne er antallet af brugere pÃ¥ internettet mildest talt
+eksploderet, hvilket har udlÃ¸st en akut mangel pÃ¥ IP-adresser. Som
+fÃ¸lge deraf er internettet i dag rent faktisk blevet klasselÃ¸st, idet
+man ikke lÃ¦ngere har nok adresser tilbage til at delegere A-, B- eller
+C-net til firmaer/institutioner. Man bliver derfor nÃ¸dt til at uddele
+IP-adresserne i meget mindre portioner. FÃ¸lgende er en oversigt over
 de nye og langt mindre net:
 </para>
 
@@ -570,48 +570,48 @@ de nye og langt mindre net:
 </para>
 
 <para>
-Nettene benævnes på deres subnet-maske, eller subnet-maskens
-bit. Tallet i kolonnen "Bit" fortæller hvor mange af de 32 bit som er
-sat. Det første net med subnet-masken 255.255.255.255 har 32 bit sat
+Nettene benÃ¦vnes pÃ¥ deres subnet-maske, eller subnet-maskens
+bit. Tallet i kolonnen "Bit" fortÃ¦ller hvor mange af de 32 bit som er
+sat. Det fÃ¸rste net med subnet-masken 255.255.255.255 har 32 bit sat
 og kaldes derfor et "32-net".
 </para>
 
 <para>
-Hvert IP-net indeholder en netværksadresse og en
-broadcast-adresse. Netværksadressen er den første adresse i IP-nettet og
+Hvert IP-net indeholder en netvÃ¦rksadresse og en
+broadcast-adresse. NetvÃ¦rksadressen er den fÃ¸rste adresse i IP-nettet og
 bruges til at definere nettet. Broadcast-adressen er den sidste adresse,
-og benyttes til at kontakte samtlige andre adresser i IP-nettet på én
-gang. Broadcast-adressen kan være nyttig hvis man eksempelvis vil pinge
-(se om en computer er aktiv) samtlige computere på et IP-net, i stedet
+og benyttes til at kontakte samtlige andre adresser i IP-nettet pÃ¥ Ã©n
+gang. Broadcast-adressen kan vÃ¦re nyttig hvis man eksempelvis vil pinge
+(se om en computer er aktiv) samtlige computere pÃ¥ et IP-net, i stedet
 for at pinge hver enkelt kan man blot pinge broadcast-adressen.
 </para>
 
 <para>
-Den første og sidste adresse i et IP-net er derfor altid reserveret og
+Den fÃ¸rste og sidste adresse i et IP-net er derfor altid reserveret og
 kan ikke tildeles andre enheder. Det mindste IP-net som kan bruges til
 at tildele IP-adresser fra er derfor et 30 bit net som indeholder 4
-IP-adresser. Efter netværksadressen og broadcast-adressen er talt fra,
+IP-adresser. Efter netvÃ¦rksadressen og broadcast-adressen er talt fra,
 er 2 adresser i overskud som kan tildeles computere.
 </para>
 
 <para>
-IP-nettet som vores test-IP-adresse 195.249.116.158 tilhører, vil man
-umiddelbart kalde 195.249.116.0/24, da IP-adressen tilhører et
-C-klasse-net som jo netop består af 24 bit. Netværksadressen vil i
+IP-nettet som vores test-IP-adresse 195.249.116.158 tilhÃ¸rer, vil man
+umiddelbart kalde 195.249.116.0/24, da IP-adressen tilhÃ¸rer et
+C-klasse-net som jo netop bestÃ¥r af 24 bit. NetvÃ¦rksadressen vil i
 dette IP-net hedde 195.249.116.0 og Broadcast-adressen 195.249.116.255.
 </para>
 </sect1>
 
 <sect1 id="eks-net">
-<title>Eksempel på netværk tilkoblet internettet</title>
+<title>Eksempel pÃ¥ netvÃ¦rk tilkoblet internettet</title>
 <indexterm><primary>DNS</primary>
-<secondary>Eksempel på netværk tilkoblet internettet</secondary></indexterm>
+<secondary>Eksempel pÃ¥ netvÃ¦rk tilkoblet internettet</secondary></indexterm>
 
 <para>
 Hvis man forestiller sig et firma som netop er blevet forbundet til
 internettet via en fast forbindelse, og som af deres internetudbyder er
-blevet tildelt IP-nettet 195.249.116.144/28, vil følgende
-informationer gøre sig gældende:
+blevet tildelt IP-nettet 195.249.116.144/28, vil fÃ¸lgende
+informationer gÃ¸re sig gÃ¦ldende:
 </para>
 
 <table id="ip-net-eksempel">
@@ -627,16 +627,16 @@ informationer gøre sig gældende:
  <entry>Antal IP-adresser</entry> <entry>16</entry>
 </row>
 <row>
- <entry>Netværksadresse</entry> <entry>195.249.116.144</entry>
+ <entry>NetvÃ¦rksadresse</entry> <entry>195.249.116.144</entry>
 </row>
 <row>
  <entry>Broadcast-adresse</entry> <entry>195.249.116.159</entry>
 </row>
 <row>
- <entry>Første tilgængelige adresse</entry> <entry>195.249.116.145</entry>
+ <entry>FÃ¸rste tilgÃ¦ngelige adresse</entry> <entry>195.249.116.145</entry>
 </row>
 <row>
- <entry>Sidste tilgængelige adresse</entry> <entry>195.249.116.158</entry>
+ <entry>Sidste tilgÃ¦ngelige adresse</entry> <entry>195.249.116.158</entry>
 </row>
 
 </tbody>
@@ -645,32 +645,32 @@ informationer gøre sig gældende:
 
 <para>
 Internetudbyderen har samtidig leveret en router, som er blevet
-fysisk tilkoblet netværket. Hensigten med denne er at den skal fungere
-som gateway. Den har derfor fået tildelt den første af de tilgængelige
+fysisk tilkoblet netvÃ¦rket. Hensigten med denne er at den skal fungere
+som gateway. Den har derfor fÃ¥et tildelt den fÃ¸rste af de tilgÃ¦ngelige
 adresser.
 </para>
 
 <para>
-Firmaet har 10 computere som er tilkoblet netværket. TCP/IP skal på
-hver af disse sættes op til at bruge internettet ud fra nedenstående
+Firmaet har 10 computere som er tilkoblet netvÃ¦rket. TCP/IP skal pÃ¥
+hver af disse sÃ¦ttes op til at bruge internettet ud fra nedenstÃ¥ende
 oplysninger:
 </para>
 
 <figure id="net3" float="1">
-<title>Netværk med internet</title>
+<title>NetvÃ¦rk med internet</title>
 <graphic fileref="net3.&magic;"  scale="60"></graphic>
 </figure>
 
 
 <para>
-Ovenstående eksempel viser hvorledes de første 3 pc'er skal
-sættes op, de resterende sættes op på samme måde.
+OvenstÃ¥ende eksempel viser hvorledes de fÃ¸rste 3 pc'er skal
+sÃ¦ttes op, de resterende sÃ¦ttes op pÃ¥ samme mÃ¥de.
 </para>
 
 <para>
-Computerne vil nu være fuldt ud i stand til at kommunikere med brugere
-på internettet, ligeså gælder den anden vej. Hver enkelt bruger på
-internettet kan nu også kommunikere direkte med hver af computerne.
+Computerne vil nu vÃ¦re fuldt ud i stand til at kommunikere med brugere
+pÃ¥ internettet, ligesÃ¥ gÃ¦lder den anden vej. Hver enkelt bruger pÃ¥
+internettet kan nu ogsÃ¥ kommunikere direkte med hver af computerne.
 </para>
 
 </sect1>
@@ -681,26 +681,26 @@ internettet kan nu også kommunikere direkte med hver af computerne.
 <indexterm><primary>IP-adresser</primary><secondary>private</secondary></indexterm>
 
 <para>
-Der er fordele ved at gøre sine computere direkte tilgængelige over
-internettet, men der bestemt også ulemper! For hackere er det et rent
+Der er fordele ved at gÃ¸re sine computere direkte tilgÃ¦ngelige over
+internettet, men der bestemt ogsÃ¥ ulemper! For hackere er det et rent
 slaraffenland; eftersom de kan kommunikere med samtlige adresser
-direkte, er der ingen mellemled til at bremse deres indbrudsforsøg.
+direkte, er der ingen mellemled til at bremse deres indbrudsforsÃ¸g.
 </para>
 
 <para>
 For at hindre direkte kommunikation mellem internettet og lokalnettet
-benytter man såkaldte private IP-adresser som ikke kan nås fra
+benytter man sÃ¥kaldte private IP-adresser som ikke kan nÃ¥s fra
 internettet.
 </para>
 
 <para>
-Private IP-adresser er specielle adresseområder som man har valgt at
-"frede", netop med det formål at firmaer/institutioner kan vælge et af
-disse og benytte det på deres lokalnetværk. Private IP-adresser er
-altså derfor modsætningen til offentlige IP-adresser, da private
-adresser ikke er brugbare på internettet. De bliver simpelthen sorteret
-fra når de forsøger at komme igennem en gateway. Følgende oversigt
-viser de private IP-adresseområder:
+Private IP-adresser er specielle adresseomrÃ¥der som man har valgt at
+"frede", netop med det formÃ¥l at firmaer/institutioner kan vÃ¦lge et af
+disse og benytte det pÃ¥ deres lokalnetvÃ¦rk. Private IP-adresser er
+altsÃ¥ derfor modsÃ¦tningen til offentlige IP-adresser, da private
+adresser ikke er brugbare pÃ¥ internettet. De bliver simpelthen sorteret
+fra nÃ¥r de forsÃ¸ger at komme igennem en gateway. FÃ¸lgende oversigt
+viser de private IP-adresseomrÃ¥der:
 </para>
 
 <indexterm><primary>192.168.0.0</primary></indexterm>
@@ -741,20 +741,20 @@ viser de private IP-adresseområder:
 </table>
 
 <para>
-I praksis fungerer et netværk med private adresser ikke meget
-anderledes end et netværk med officielle adresser. Når de enkelte
+I praksis fungerer et netvÃ¦rk med private adresser ikke meget
+anderledes end et netvÃ¦rk med officielle adresser. NÃ¥r de enkelte
 computere skal kommunikere med en IP-adresse som er uden for deres eget
 IP-net, og derfor kommunikerer via deres gateway, er denne
-sat op til at "oversætte" deres adresse til en officiel adresse.
+sat op til at "oversÃ¦tte" deres adresse til en officiel adresse.
 </para>
 
 <para>
-Basalt set fungerer det på den måde at de beder gateway'en om at
-kommunikere med en given internet-computer på deres vegne.
+Basalt set fungerer det pÃ¥ den mÃ¥de at de beder gateway'en om at
+kommunikere med en given internet-computer pÃ¥ deres vegne.
 internet-computeren "tror" at den udelukkende kommunikerer med gateway'en
 - og kender derfor ikke til computerne bag ved gateway'en. Man kan
-derfor også kalde det en slags "envejs-kommunikation", da det kun er
-computeren med den private adresse der kan kontakte en computer på
+derfor ogsÃ¥ kalde det en slags "envejs-kommunikation", da det kun er
+computeren med den private adresse der kan kontakte en computer pÃ¥
 internettet og ikke omvendt.
 </para>
 
@@ -762,34 +762,34 @@ internettet og ikke omvendt.
 <indexterm><primary>ipchains</primary></indexterm>
 
 <para>
-Denne form for adresse-oversættelse kaldes også NAT, Network Address
+Denne form for adresse-oversÃ¦ttelse kaldes ogsÃ¥ NAT, Network Address
 Translation, hvilket er en slags udvidet routnings-funktion. Mange
-routere kan udføre denne funktion. For at sætte Linux op med kerne
+routere kan udfÃ¸re denne funktion. For at sÃ¦tte Linux op med kerne
 2.2 til det, skal programmet <command>ipchains</command> benyttes, og
 med kerne 2.4 anvendes <command>netfilter</command>. Dette er
-forklaret nøjere i bogen "Linux &ndash; Friheden til sikkerhed på internettet".
+forklaret nÃ¸jere i bogen "Linux &ndash; Friheden til sikkerhed pÃ¥ internettet".
 </para>
 
 <para>
-Det er meget vigtigt, at man sørger for at vælge private IP-adresser
-når man kører med NAT som er inde for det tilladte område. Hvis man i
-stedet vælger at benytte et IP-net som i forvejen er i brug, vil
-konsekvensen være, at man ikke kan kommunikere med de enheder som
-retmæssigt har fået tildelt IP-adresserne.
+Det er meget vigtigt, at man sÃ¸rger for at vÃ¦lge private IP-adresser
+nÃ¥r man kÃ¸rer med NAT som er inde for det tilladte omrÃ¥de. Hvis man i
+stedet vÃ¦lger at benytte et IP-net som i forvejen er i brug, vil
+konsekvensen vÃ¦re, at man ikke kan kommunikere med de enheder som
+retmÃ¦ssigt har fÃ¥et tildelt IP-adresserne.
 </para>
 
 <para>
 Det skyldes, at ens computere er sat op til at benytte en
-gateway, når de skal kommunikere med enheder uden
+gateway, nÃ¥r de skal kommunikere med enheder uden
 for det lokale IP-net. Hvis IP-adressen derimod er inden for
-det lokale IP-net vil de forsøge at kommunikere med den pc som har den
+det lokale IP-net vil de forsÃ¸ge at kommunikere med den pc som har den
 aktuelle IP-adresse, eftersom det er den forkerte pc, vil det
 naturligvis mislykkes.
 </para>
 
 <para>
 Hvis man alligevel forestillede sig at computerne kommunikerede via
-gateway'en og kunne kontakte de rigtige enheder, ville der opstå en
+gateway'en og kunne kontakte de rigtige enheder, ville der opstÃ¥ en
 konflikt idet der nu eksisterede flere enheder med samme IP-adresser.
 Dette er ikke tilladt, og styresystemet vil straks advare om
 problemet. Hvis IP-adresser ikke er unikke, kan computere ikke finde ud
@@ -799,32 +799,32 @@ af at bruge dem.
 </sect1>
 
 <sect1 id="eks-nat">
-<title>Eksempel på netværk med NAT</title>
-<indexterm><primary>Eksempel på netværk med NAT</primary></indexterm>
+<title>Eksempel pÃ¥ netvÃ¦rk med NAT</title>
+<indexterm><primary>Eksempel pÃ¥ netvÃ¦rk med NAT</primary></indexterm>
 <indexterm><primary>NAT</primary></indexterm>
 <indexterm><primary>Network Address Translation</primary></indexterm>
 
 <para>
-Vi bygger videre på det foregående eksempel og benytter derfor
+Vi bygger videre pÃ¥ det foregÃ¥ende eksempel og benytter derfor
 informationerne fra <xref linkend="ip-net-eksempel"/> igen, men
-denne gang vil vi benytte NAT. Primært for at øge sikkerheden, men
-også for at øge fleksibiliteten, i og med at vi ikke behøver at kontakte
-vores internetudbyder og ansøge om flere IP-adresser, hvis de 16
-viser sig at være for få.
+denne gang vil vi benytte NAT. PrimÃ¦rt for at Ã¸ge sikkerheden, men
+ogsÃ¥ for at Ã¸ge fleksibiliteten, i og med at vi ikke behÃ¸ver at kontakte
+vores internetudbyder og ansÃ¸ge om flere IP-adresser, hvis de 16
+viser sig at vÃ¦re for fÃ¥.
 </para>
 
 <para>
-Der skal tages stilling til 2 ting: Hvilken enhed skal udføre
-NAT-oversættelsen, og hvilket privat IP-net skal benyttes. Enten
-vælger man at købe en internet-løsning med NAT, hvilket vil sige at den
+Der skal tages stilling til 2 ting: Hvilken enhed skal udfÃ¸re
+NAT-oversÃ¦ttelsen, og hvilket privat IP-net skal benyttes. Enten
+vÃ¦lger man at kÃ¸be en internet-lÃ¸sning med NAT, hvilket vil sige at den
 router internetudbyderen leverer allerede er sat op med
-NAT. Eller også sætter man en computer op til at køre NAT.
+NAT. Eller ogsÃ¥ sÃ¦tter man en computer op til at kÃ¸re NAT.
 </para>
 
 <para>
-Valget af det private IP-net afhænger meget af ens behov, og hvor
-stort antal computere man regner med at have på sit netværk inden for
-en overskuelig årrække. I vores eksempel vælger vi 192.168.1.0/24:
+Valget af det private IP-net afhÃ¦nger meget af ens behov, og hvor
+stort antal computere man regner med at have pÃ¥ sit netvÃ¦rk inden for
+en overskuelig Ã¥rrÃ¦kke. I vores eksempel vÃ¦lger vi 192.168.1.0/24:
 </para>
 
 
@@ -842,16 +842,16 @@ en overskuelig årrække. I vores eksempel vælger vi 192.168.1.0/24:
  <entry>Antal IP-adresser</entry> <entry>255</entry>
 </row>
 <row>
- <entry>Netværksadresse</entry> <entry>192.168.1.0</entry>
+ <entry>NetvÃ¦rksadresse</entry> <entry>192.168.1.0</entry>
 </row>
 <row>
  <entry>Broadcast-adresse</entry> <entry>192.168.1.255</entry>
 </row>
 <row>
- <entry>Første tilgængelige adresse</entry> <entry>192.168.1.1</entry>
+ <entry>FÃ¸rste tilgÃ¦ngelige adresse</entry> <entry>192.168.1.1</entry>
 </row>
 <row>
- <entry>Sidste tilgængelige adresse</entry> <entry>192.168.1.254</entry>
+ <entry>Sidste tilgÃ¦ngelige adresse</entry> <entry>192.168.1.254</entry>
 </row>
 
 </tbody>
@@ -861,42 +861,42 @@ en overskuelig årrække. I vores eksempel vælger vi 192.168.1.0/24:
 <indexterm><primary>Routing</primary></indexterm>
 
 <para>
-Routeren skal bibeholde IP-adressen 195.249.116.145, mens der i næste
-led skal placeres en enhed til at udføre NAT-oversættelsen. Denne skal
-på "ydersiden" (mod routeren) have tildelt en officiel IP-adresse. Her
-vælger vi den næste ledige, 195.249.116.146. Desuden skal den have
-tildelt en privat IP-adresse på indersiden, her vælger vi den først
-tilgængelige adresse, 192.168.1.1.
+Routeren skal bibeholde IP-adressen 195.249.116.145, mens der i nÃ¦ste
+led skal placeres en enhed til at udfÃ¸re NAT-oversÃ¦ttelsen. Denne skal
+pÃ¥ "ydersiden" (mod routeren) have tildelt en officiel IP-adresse. Her
+vÃ¦lger vi den nÃ¦ste ledige, 195.249.116.146. Desuden skal den have
+tildelt en privat IP-adresse pÃ¥ indersiden, her vÃ¦lger vi den fÃ¸rst
+tilgÃ¦ngelige adresse, 192.168.1.1.
 </para>
 
 
 <figure id="net4" float="1">
-<title>Netværk med NAT</title>
+<title>NetvÃ¦rk med NAT</title>
 <graphic fileref="net4.&magic;"  scale="60"></graphic>
 </figure>
 
 
 <para>
-Ovenstående eksempel illustrerer hvorledes netværket skal sammenkobles
-hvis man vælger selv at sætte en enhed op til at udføre
-NAT-oversættelsen. Routeren bliver fysisk tilkoblet NAT-enheden, som
-samtidig via et sekundært netkort er tilkoblet det eksisterende netværk.
+OvenstÃ¥ende eksempel illustrerer hvorledes netvÃ¦rket skal sammenkobles
+hvis man vÃ¦lger selv at sÃ¦tte en enhed op til at udfÃ¸re
+NAT-oversÃ¦ttelsen. Routeren bliver fysisk tilkoblet NAT-enheden, som
+samtidig via et sekundÃ¦rt netkort er tilkoblet det eksisterende netvÃ¦rk.
 Denne vil herefter fungere som gateway for PC1-PC3.
 </para>
 
 <para>
-Alternativt kan man, som omtalt, købe en løsning hvor routeren
-indeholder NAT-opsætningen. I dette tilfælde vil internetudbyderen
-foretage den nødvendige opsætning. I forhold til ovenstående figur
+Alternativt kan man, som omtalt, kÃ¸be en lÃ¸sning hvor routeren
+indeholder NAT-opsÃ¦tningen. I dette tilfÃ¦lde vil internetudbyderen
+foretage den nÃ¸dvendige opsÃ¦tning. I forhold til ovenstÃ¥ende figur
 vil man kunne skippe NAT-enheden, idet routeren selv klarer opgaven.
-Routeren vil i så fald få tildelt både en ekstern og en intern IP-adresse.
+Routeren vil i sÃ¥ fald fÃ¥ tildelt bÃ¥de en ekstern og en intern IP-adresse.
 </para>
 
 <para>
-Hvis man senere ønsker at tilføje yderligere pc'er til denne opsætning,
-kan det gøres problemfrit, indtil man har opbrugt de resterende
-adresser i IP-nettet. Herefter vil det være nødvendigt at skifte
-IP-net. En simpel løsning vil være blot at skifte subnet-maske,
+Hvis man senere Ã¸nsker at tilfÃ¸je yderligere pc'er til denne opsÃ¦tning,
+kan det gÃ¸res problemfrit, indtil man har opbrugt de resterende
+adresser i IP-nettet. Herefter vil det vÃ¦re nÃ¸dvendigt at skifte
+IP-net. En simpel lÃ¸sning vil vÃ¦re blot at skifte subnet-maske,
 eksempelvis til /16, hvilket vil betyde 255 gange flere IP-adresser.
 </para>
 
@@ -910,123 +910,123 @@ eksempelvis til /16, hvilket vil betyde 255 gange flere IP-adresser.
 
 
 <para>
-På internettet ser man ofte adresser, som hedder noget i retning af
-www.smartnavn.dk. De 3 w'er står for World Wide Web. Internettet er
-verdensomspændende og nogle betragter det som værende et stort
-spindelvæv.
+PÃ¥ internettet ser man ofte adresser, som hedder noget i retning af
+www.smartnavn.dk. De 3 w'er stÃ¥r for World Wide Web. Internettet er
+verdensomspÃ¦ndende og nogle betragter det som vÃ¦rende et stort
+spindelvÃ¦v.
 </para>
 
 
 <para>
 Men faktisk gemmer der sig en IP-adresse bag hver enkelt af disse
-web-adresser. Dette er dog ikke noget den normale bruger lægger mærke
-til. Men faktisk er det således, at der slet ikke eksisterer egentlige
+web-adresser. Dette er dog ikke noget den normale bruger lÃ¦gger mÃ¦rke
+til. Men faktisk er det sÃ¥ledes, at der slet ikke eksisterer egentlige
 web-adresser. Det er udelukkende IP-adresser.
 </para>
 
 <para>
-Når en bruger skriver en web-adresse i sin browser, anmoder hans
-computer en DNS-server om IP-adressen på den pågældende web-adresse.
-Det er kun IP-adresser, som er brugbare på et TCP/IP-netværk.
+NÃ¥r en bruger skriver en web-adresse i sin browser, anmoder hans
+computer en DNS-server om IP-adressen pÃ¥ den pÃ¥gÃ¦ldende web-adresse.
+Det er kun IP-adresser, som er brugbare pÃ¥ et TCP/IP-netvÃ¦rk.
 </para>
 
 <para>
-En DNS-server er en service som en server kan køre ved siden af de
-almindelige services. Hvis der er meget belastning, kan man vælge at
-have en DNS-server, som udelukkende kører DNS-service.
+En DNS-server er en service som en server kan kÃ¸re ved siden af de
+almindelige services. Hvis der er meget belastning, kan man vÃ¦lge at
+have en DNS-server, som udelukkende kÃ¸rer DNS-service.
 </para>
 
 <para>
-Hver gang DNS-serveren får en anmodning om en web-adresse, slår den
-web-adressen op i sin database og finder den tilhørende IP-adresse.
+Hver gang DNS-serveren fÃ¥r en anmodning om en web-adresse, slÃ¥r den
+web-adressen op i sin database og finder den tilhÃ¸rende IP-adresse.
 </para>
 
 <para>
 For at dette kan virke over hele verden, er der et vist system i det.
-Det går ud på, at hvert land har et domæne. Ligesom institutioner og
-firmaer i det pågældende land har et "underdomæne/subdomæne". For
-eksempel hedder SSLUG's domæne sslug.dk, hvilket er et subdomæne til
-.dk-domænet. 'dk' angiver Danmark.
+Det gÃ¥r ud pÃ¥, at hvert land har et domÃ¦ne. Ligesom institutioner og
+firmaer i det pÃ¥gÃ¦ldende land har et "underdomÃ¦ne/subdomÃ¦ne". For
+eksempel hedder SSLUG's domÃ¦ne sslug.dk, hvilket er et subdomÃ¦ne til
+.dk-domÃ¦net. 'dk' angiver Danmark.
 </para>
 
 <para>
-Hos SSLUG har man så tilføjet et yderligere subdomæne, www. Den
-komplette adresse hedder således www.sslug.dk. Hvis man skriver denne
-adresse i sin browser, vil computeren automatisk spørge sin DNS-server om
-IP-adressen på domænet og herefter lave en webforespørgsel til
+Hos SSLUG har man sÃ¥ tilfÃ¸jet et yderligere subdomÃ¦ne, www. Den
+komplette adresse hedder sÃ¥ledes www.sslug.dk. Hvis man skriver denne
+adresse i sin browser, vil computeren automatisk spÃ¸rge sin DNS-server om
+IP-adressen pÃ¥ domÃ¦net og herefter lave en webforespÃ¸rgsel til
 IP-adressen.
 </para>
 
 <para>
-Det vil sige at domænenavne er hierarkisk opbygget. Landet er
-øverst, derefter navnet på firmaet/institutionen (eventuelt i en
-forkortet udgave), og til sidst subdomænet som "peger" på serveren
-for domænet.
+Det vil sige at domÃ¦nenavne er hierarkisk opbygget. Landet er
+Ã¸verst, derefter navnet pÃ¥ firmaet/institutionen (eventuelt i en
+forkortet udgave), og til sidst subdomÃ¦net som "peger" pÃ¥ serveren
+for domÃ¦net.
 </para>
 
 <indexterm><primary>TLD (Top Level Domain)</primary></indexterm>
 
 <para>
-De øverste domæner i hierarkiet kaldes også TLD (Top Level Domains =
-Topniveau-domæner), og disse administreres af de såkaldte
-root-servere. En root-server besvarer kun forespørgsler på TLD-niveau.
-I dag eksisterer der på verdensplan 13 root-servere, som hver
-besvarer cirka 200 millioner forespørgsler om dagen.
+De Ã¸verste domÃ¦ner i hierarkiet kaldes ogsÃ¥ TLD (Top Level Domains =
+Topniveau-domÃ¦ner), og disse administreres af de sÃ¥kaldte
+root-servere. En root-server besvarer kun forespÃ¸rgsler pÃ¥ TLD-niveau.
+I dag eksisterer der pÃ¥ verdensplan 13 root-servere, som hver
+besvarer cirka 200 millioner forespÃ¸rgsler om dagen.
 </para>
 
 <para>
 Almindelige computere kommunikerer ikke direkte med root-serverne. De
-sender i stedet en web-adresse-forespørgsel til enten en lokal
+sender i stedet en web-adresse-forespÃ¸rgsel til enten en lokal
 DNS-server, eller DNS-serveren hos deres internetudbyder.
 </para>
 
 <para>
 Hvis vi forestiller os at DNS-serveren ns.sslug.dk som er ansvarlig
-for domænet sslug.dk, modtager en forespørgsel på subdomænet
-www.sslug.dk, ser serveren med det samme at det er det domæne som den
-selv er ansvarlig for, og kan derfor besvare denne forespørgsel uden
+for domÃ¦net sslug.dk, modtager en forespÃ¸rgsel pÃ¥ subdomÃ¦net
+www.sslug.dk, ser serveren med det samme at det er det domÃ¦ne som den
+selv er ansvarlig for, og kan derfor besvare denne forespÃ¸rgsel uden
 at skulle kontakte andre DNS-servere.
 </para>
 
 <para>
-Hvis serveren i stedet modtog en forespørgsel på subdomænet
+Hvis serveren i stedet modtog en forespÃ¸rgsel pÃ¥ subdomÃ¦net
 <filename>www.linux.dk</filename> ville den straks kunne se at det
-ikke var et domæne den selv var ansvarlig for. Den ville derfor være
-nødt til at starte med det øverste rent hierarkisk set. Serveren vil
-derfor indlede med at spørge en root-server om topniveau-domænet
+ikke var et domÃ¦ne den selv var ansvarlig for. Den ville derfor vÃ¦re
+nÃ¸dt til at starte med det Ã¸verste rent hierarkisk set. Serveren vil
+derfor indlede med at spÃ¸rge en root-server om topniveau-domÃ¦net
 <filename>.dk</filename>, den vil af root-serveren blive bedt om at
 kontakte DK-Hostmasters server, som er ansvarlig for det
-domæne. DK-Hostmasters server vil henvise til serveren ns.linux.dk som
-er ansvarlig for domænet <filename>linux.dk</filename>. Serveren vil
-derfor ende med at få besvaret sit spørgsmål når den spørger
+domÃ¦ne. DK-Hostmasters server vil henvise til serveren ns.linux.dk som
+er ansvarlig for domÃ¦net <filename>linux.dk</filename>. Serveren vil
+derfor ende med at fÃ¥ besvaret sit spÃ¸rgsmÃ¥l nÃ¥r den spÃ¸rger
 <filename>ns.linux.dk</filename>.
 </para>
 
 <para>
 Man kan betragte en DNS-server som en telefonbog, hvor personerne er
-web-adresser. Begge steder får man et nummer (telefonnummer/IP-adresse),
+web-adresser. Begge steder fÃ¥r man et nummer (telefonnummer/IP-adresse),
 som systemet kan bruge til at lokalisere informationen/personen.
 </para>
 
 <para>
-For at begrænse DNS-trafikken benytter DNS-servere sig af DNS-cache.
-Her bliver de svar serveren har fået fra øvrige DNS-servere gemt.
-Hvis man gentog ovenstående eksempel, ville serveren derfor ikke
-starte forfra med at spørge alle serverne, men i stedet blot kigge på
-det foregående svar.
+For at begrÃ¦nse DNS-trafikken benytter DNS-servere sig af DNS-cache.
+Her bliver de svar serveren har fÃ¥et fra Ã¸vrige DNS-servere gemt.
+Hvis man gentog ovenstÃ¥ende eksempel, ville serveren derfor ikke
+starte forfra med at spÃ¸rge alle serverne, men i stedet blot kigge pÃ¥
+det foregÃ¥ende svar.
 </para>
 
 <para>
-Eftersom der dagligt bliver lavet ændringer på mange servere, er det
+Eftersom der dagligt bliver lavet Ã¦ndringer pÃ¥ mange servere, er det
 vigtigt at en DNS-server ikke tror den bare kan gemme sin cache
 evigt. Hvis eksempelvis <filename>www.sslug.dk</filename> bliver
-ændret til at pege på en anden webserver, vil det ikke være meget værd
-hvis vores DNS-server stadig fortæller alle og enhver hvad den hed
-førhen! Derfor har DNS-servere det man kalder en TTL (Time To Live),
-hvilket simpelthen definerer hvor lang tid et svar må leve. Hvis vores
-server igen modtager forespørgslen på
-<filename>www.sslug.dk</filename>, og TTL'en er udløbet, vil serveren
-være nødt til at starte forfra med at spørge de forskellige
+Ã¦ndret til at pege pÃ¥ en anden webserver, vil det ikke vÃ¦re meget vÃ¦rd
+hvis vores DNS-server stadig fortÃ¦ller alle og enhver hvad den hed
+fÃ¸rhen! Derfor har DNS-servere det man kalder en TTL (Time To Live),
+hvilket simpelthen definerer hvor lang tid et svar mÃ¥ leve. Hvis vores
+server igen modtager forespÃ¸rgslen pÃ¥
+<filename>www.sslug.dk</filename>, og TTL'en er udlÃ¸bet, vil serveren
+vÃ¦re nÃ¸dt til at starte forfra med at spÃ¸rge de forskellige
 DNS-servere.
 </para>
 
@@ -1038,7 +1038,7 @@ DNS-servere.
  <secondary>nslookup</secondary>
 </indexterm>
 <para>
-Som et konkret eksempel på et DNS-opslag kan vi f.eks. bede om SSLUG's
+Som et konkret eksempel pÃ¥ et DNS-opslag kan vi f.eks. bede om SSLUG's
 IP-adresse. Til dette bruger vi kommandoen <command>nslookup</command>.
 </para>
 
@@ -1056,15 +1056,15 @@ Aliases:  www.sslug.dk
 <para>
 Vi kan i eksemplet se, at vi beder
 <filename>danpost.uni-c.dk</filename> med IP-adresse 129.142.6.64 om
-adressen på SSLUG's webserver. SSLUG har IP-adressen 130.228.2.150, og maskinen
-er åbenbart også kendt som <filename>sslug.sslug.dk</filename>. Svaret er
+adressen pÃ¥ SSLUG's webserver. SSLUG har IP-adressen 130.228.2.150, og maskinen
+er Ã¥benbart ogsÃ¥ kendt som <filename>sslug.sslug.dk</filename>. Svaret er
 "Non-authoritative", idet danpost DNS-serveren ikke er herre over
-sslug-domænet, men har fået informationen fra en anden navneserver.
+sslug-domÃ¦net, men har fÃ¥et informationen fra en anden navneserver.
 </para>
 
 <para>
-DNS indeholder også andre informationer end IP-adresser. I DNS-sprog
-sætter man et punktum bag navnene for at angive, at disse er
+DNS indeholder ogsÃ¥ andre informationer end IP-adresser. I DNS-sprog
+sÃ¦tter man et punktum bag navnene for at angive, at disse er
 absolutte. Normalt kan man dog ignorere det sidste punktum.
 </para>
 
@@ -1075,9 +1075,9 @@ absolutte. Normalt kan man dog ignorere det sidste punktum.
 <indexterm><primary>DNS</primary><secondary>zoner</secondary></indexterm>
 <indexterm><primary>Zone</primary><secondary>DNS</secondary></indexterm>
 <para>
-DNS er baseret på filer. Disse filer indeholder zone-data. I mange
-tilfælde indeholder hver fil/zone ét domæne, i det følgende kan man
-derfor blot betragte "zone" som et synonym for "domæne".
+DNS er baseret pÃ¥ filer. Disse filer indeholder zone-data. I mange
+tilfÃ¦lde indeholder hver fil/zone Ã©t domÃ¦ne, i det fÃ¸lgende kan man
+derfor blot betragte "zone" som et synonym for "domÃ¦ne".
 </para>
 
 <para>
@@ -1100,12 +1100,12 @@ sslug.dk name server ptah.dkuug.dk
 </indexterm>
 
 <para>
-For at finde post-serverne for et domæne skal man kende en af
-navneserverne for domænet. Derefter spørger man denne navneserver:
+For at finde post-serverne for et domÃ¦ne skal man kende en af
+navneserverne for domÃ¦net. Derefter spÃ¸rger man denne navneserver:
 </para>
 
 <screen>
-<prompt>[tyge@hven ~]$ </prompt> <userinput>host -t mx domæne.dk navneserver.for.domæne.dk</userinput>
+<prompt>[tyge@hven ~]$ </prompt> <userinput>host -t mx domÃ¦ne.dk navneserver.for.domÃ¦ne.dk</userinput>
 </screen>
 
 <para>
@@ -1114,44 +1114,44 @@ Den ansvarlige administrator for en zone findes i zonens SOA-record
 </para>
 
 <screen>
-<prompt>[tyge@hven ~]$ </prompt> <userinput>host -t soa domæne.dk navneserver.for.domæne.dk</userinput>
+<prompt>[tyge@hven ~]$ </prompt> <userinput>host -t soa domÃ¦ne.dk navneserver.for.domÃ¦ne.dk</userinput>
 </screen>
 
 <para>
 Hvis SOA starter med:
 <filename>sslug.dk.      IN      SOA     ns.sslug.dk. root.sslug.dk.  (</filename>
-så er zonen <filename>sslug.dk</filename>, den primære navneserver <filename>ns.sslug.dk</filename> og den
-ansvarlige administrators e-post-adresse <filename>root@sslug.dk</filename> (udskift første . med @).
+sÃ¥ er zonen <filename>sslug.dk</filename>, den primÃ¦re navneserver <filename>ns.sslug.dk</filename> og den
+ansvarlige administrators e-post-adresse <filename>root@sslug.dk</filename> (udskift fÃ¸rste . med @).
 </para>
 
 <para>
 Nogle navne er blot et alias for et andet navn: de har et kanonisk navn 
-(eng: "canonical name"). Dette kan ses ved at spørge navneserveren for 
-domænet om alt, hvad den ved om et givet navn:
+(eng: "canonical name"). Dette kan ses ved at spÃ¸rge navneserveren for 
+domÃ¦net om alt, hvad den ved om et givet navn:
 </para>
 
 <screen>
-<prompt>[tyge@hven ~]$ </prompt> <userinput>host -t any dette.navn.domæne.dk nameserver.for.domæne.dk</userinput>
+<prompt>[tyge@hven ~]$ </prompt> <userinput>host -t any dette.navn.domÃ¦ne.dk nameserver.for.domÃ¦ne.dk</userinput>
 </screen>
 
 <para>
-Til nogle domæner er knyttet tekstinformation. Denne kan kaldes frem med:
+Til nogle domÃ¦ner er knyttet tekstinformation. Denne kan kaldes frem med:
 </para>
 
 <screen>
-<prompt>[tyge@hven ~]$ </prompt> <userinput>host -t txt navn.med.info.domæne.dk</userinput>
+<prompt>[tyge@hven ~]$ </prompt> <userinput>host -t txt navn.med.info.domÃ¦ne.dk</userinput>
 </screen>
 
 <para>
 Hvis informationen er til stede, indeholder den ofte information om
-hvem der bestyrer navn.med.info.domæne.dk
+hvem der bestyrer navn.med.info.domÃ¦ne.dk
 </para>
 
 <para>
-Da DNS ikke er helt simpelt at sætte op korrekt, kan de ovenstående
-eksempler bruges, hvis du skal fejlfinde din egen DNS. De kan også
-bruges til at finde ud af, hvorfor netværksfejl opstår eller til
-at finde en ansvarlig for et domæne, som man har modtaget
+Da DNS ikke er helt simpelt at sÃ¦tte op korrekt, kan de ovenstÃ¥ende
+eksempler bruges, hvis du skal fejlfinde din egen DNS. De kan ogsÃ¥
+bruges til at finde ud af, hvorfor netvÃ¦rksfejl opstÃ¥r eller til
+at finde en ansvarlig for et domÃ¦ne, som man har modtaget
 reklamer fra.
 </para>
 
@@ -1160,47 +1160,47 @@ reklamer fra.
 
 <para>
 I forbindelse med installationen af Red Hat Linux kan
-du vælge pakken "caching-nameserver". Pakken foretager en simpel
-opsætning af navneserveren <command>bind</command>. Fra starten kender
-den ikke selv svaret på navneopslag, men sender blot spørgsmålet
-videre og husker svaret (som beskrevet ovenfor). Den glemmer desværre
-alt, hvad den har lært, når maskinen lukkes ned, så du får mest glæde af
-en caching navneserver, hvis den kører på en maskine, der er i gang altid -
-f.eks. en server på et lille lokalnetværk. Den kan selvfølgelig
-sagtens bruges som navneserver for Windows-pc'er på netværket.
+du vÃ¦lge pakken "caching-nameserver". Pakken foretager en simpel
+opsÃ¦tning af navneserveren <command>bind</command>. Fra starten kender
+den ikke selv svaret pÃ¥ navneopslag, men sender blot spÃ¸rgsmÃ¥let
+videre og husker svaret (som beskrevet ovenfor). Den glemmer desvÃ¦rre
+alt, hvad den har lÃ¦rt, nÃ¥r maskinen lukkes ned, sÃ¥ du fÃ¥r mest glÃ¦de af
+en caching navneserver, hvis den kÃ¸rer pÃ¥ en maskine, der er i gang altid -
+f.eks. en server pÃ¥ et lille lokalnetvÃ¦rk. Den kan selvfÃ¸lgelig
+sagtens bruges som navneserver for Windows-pc'er pÃ¥ netvÃ¦rket.
 </para>
 
 <para>
-Hvis du vil bruge Linux på en server i et mindre netværk, kan du have
-glæde af at lade den fungere som navneserver for et lokalt domæne.
-Opsætningen af dette er ikke det første Linux-eksperiment, du skal
-starte med, så eventuelle interesserede henvises til den detaljerede
+Hvis du vil bruge Linux pÃ¥ en server i et mindre netvÃ¦rk, kan du have
+glÃ¦de af at lade den fungere som navneserver for et lokalt domÃ¦ne.
+OpsÃ¦tningen af dette er ikke det fÃ¸rste Linux-eksperiment, du skal
+starte med, sÃ¥ eventuelle interesserede henvises til den detaljerede
 beskrivelse i DNS-HOWTO (under Red Hat, se
 <filename>/usr/doc/HOWTO/DNS-HOWTO</filename>) og <ulink
 url="http://www.sslug.dk/artikler/dnsbind.shtml">http://www.sslug.dk/artikler/dnsbind.shtml</ulink>
-er sikkert også af interesse.
+er sikkert ogsÃ¥ af interesse.
 </para>
 </sect2>
 </sect1>
 
 <sect1 id="dns-opsaetning">
-<title>DNS-opsætning</title>
+<title>DNS-opsÃ¦tning</title>
 <indexterm><primary>DNS</primary>
-<secondary>Opsætning af</secondary></indexterm>
+<secondary>OpsÃ¦tning af</secondary></indexterm>
 
 <para>
-DNS er interessant, når man har flere end f.eks. 5 maskiner på
-netværket og hvis man ikke længere ønsker at kopiere
+DNS er interessant, nÃ¥r man har flere end f.eks. 5 maskiner pÃ¥
+netvÃ¦rket og hvis man ikke lÃ¦ngere Ã¸nsker at kopiere
 <filename>/etc/hosts</filename>-filer (Se <xref linkend="etc-hosts-filen"/>)
-rundt til alle maskiner. Har du mange maskiner på netværket, kan
-du i stedet have en fælles navneserver (eng. nameserver) til at kunne
-håndtere navneopslag.
+rundt til alle maskiner. Har du mange maskiner pÃ¥ netvÃ¦rket, kan
+du i stedet have en fÃ¦lles navneserver (eng. nameserver) til at kunne
+hÃ¥ndtere navneopslag.
 </para>
 
 <para>
-Som gennemgående eksempel antager vi her at vi har domænet "intranet"
-med følgende maskiner. IP-adresserne her er private,
-dvs. at maskinerne ikke er på internettet. Vi vælger derfor adresser fra
+Som gennemgÃ¥ende eksempel antager vi her at vi har domÃ¦net "intranet"
+med fÃ¸lgende maskiner. IP-adresserne her er private,
+dvs. at maskinerne ikke er pÃ¥ internettet. Vi vÃ¦lger derfor adresser fra
 <xref linkend="private-ip-adresser"/> i <xref linkend="private-ip"/>.
 </para>
 
@@ -1212,8 +1212,8 @@ dvs. at maskinerne ikke er på internettet. Vi vælger derfor adresser fra
 </programlisting>
 
 <para>
-Vi vedtager også at maskinen "linus" skal være DNS-server, og at samme
-maskine også skal være kendt som "ns.intranet" eller i kort form blot "ns".
+Vi vedtager ogsÃ¥ at maskinen "linus" skal vÃ¦re DNS-server, og at samme
+maskine ogsÃ¥ skal vÃ¦re kendt som "ns.intranet" eller i kort form blot "ns".
 </para>
 </sect1>
 
@@ -1222,26 +1222,26 @@ maskine også skal være kendt som "ns.intranet" eller i kort form blot "ns".
 <indexterm><primary>DNS</primary>
 <secondary>Bind</secondary></indexterm>
 <para>
-Dette afsnit vil gennemgå opsætningen af et registreret domæne på en
+Dette afsnit vil gennemgÃ¥ opsÃ¦tningen af et registreret domÃ¦ne pÃ¥ en
 DNS-server. Strukturen fra BIND 8.x er benyttet, da dette er den
-version de fleste DNS-servere anvender, modsætningen er den noget
-ældre BIND 4.x. De følgende eksempler kører på BIND 8.1.2, men nye
+version de fleste DNS-servere anvender, modsÃ¦tningen er den noget
+Ã¦ldre BIND 4.x. De fÃ¸lgende eksempler kÃ¸rer pÃ¥ BIND 8.1.2, men nye
 versioner udvikles hele tiden. Opgraderinger kan hentes fra
 <ulink url="http://www.isc.org">http://www.isc.org</ulink>.
 </para>
 
 
 <para>
-Den overordnede opsætningsfil er
+Den overordnede opsÃ¦tningsfil er
 <filename>/etc/named.conf</filename>. I denne defineres hvilke zoner
-(domæner) DNS-serveren administrerer og i hvilke filer de enkelte
+(domÃ¦ner) DNS-serveren administrerer og i hvilke filer de enkelte
 zoner er defineret.
 </para>
 
 <para>
 <indexterm><primary>DNS</primary>
 <secondary>zone</secondary></indexterm>
-Som standard vil man skulle definere 4 zoner for domænet "intranet"
+Som standard vil man skulle definere 4 zoner for domÃ¦net "intranet"
 med IP-adresser i intervallet 192.168.0.1-192.168.0.254 (ikke 255, da
 dette er broadcast-adressen).
 </para>
@@ -1249,11 +1249,11 @@ dette er broadcast-adressen).
 <itemizedlist mark="bullet" spacing="compact">
 <listitem>
 <para>
-<filename>.</filename> (punktum) : Først og fremmest root,
-denne zone henviser til root-serverne således at DNS-serveren kan
-spørge disse om domæner den ikke selv er ansvarlig for, hvilket vil
-sige at det er denne zone som DNS-serveren benytter når den modtager
-forespørgsler om IP-adresser på et domæne, som den ikke selv er ansvarlig
+<filename>.</filename> (punktum) : FÃ¸rst og fremmest root,
+denne zone henviser til root-serverne sÃ¥ledes at DNS-serveren kan
+spÃ¸rge disse om domÃ¦ner den ikke selv er ansvarlig for, hvilket vil
+sige at det er denne zone som DNS-serveren benytter nÃ¥r den modtager
+forespÃ¸rgsler om IP-adresser pÃ¥ et domÃ¦ne, som den ikke selv er ansvarlig
 for. Nedenfor er dette angivet i filen <filename>/var/named/root.cache</filename>.
 </para>
 </listitem>
@@ -1261,12 +1261,12 @@ for. Nedenfor er dette angivet i filen <filename>/var/named/root.cache</filename
 <listitem>
 <para>
 <filename>0.0.127.in-addr.arpa</filename>: Reverse lookup betyder, at
-man har en IP-adresse og gerne vil vide hvilket domæne denne
-tilhører. For at DNS-serveren kan besvare denne slags forespørgsler,
-kræves det at reverse-zonerne bliver defineret.  Reverse-zonen 127.0.0
+man har en IP-adresse og gerne vil vide hvilket domÃ¦ne denne
+tilhÃ¸rer. For at DNS-serveren kan besvare denne slags forespÃ¸rgsler,
+krÃ¦ves det at reverse-zonerne bliver defineret.  Reverse-zonen 127.0.0
 refererer blot til DNS-serveren selv (filen
-<filename>/var/named/127.0.0.rev</filename>), TCP/IP-software kræver i
-nogle tilfælde at denne IP-adresse henviser til DNS-serveren selv.
+<filename>/var/named/127.0.0.rev</filename>), TCP/IP-software krÃ¦ver i
+nogle tilfÃ¦lde at denne IP-adresse henviser til DNS-serveren selv.
 Derfor skal denne zone altid medtages.
 </para>
 </listitem>
@@ -1275,18 +1275,18 @@ Derfor skal denne zone altid medtages.
 <para>
 <filename>0.168.192.in-addr.arpa</filename>: Den anden (eller de
 andre) reverse-zoner er de "rigtige" IP-adresser.  Hvis man for
-eksempel råder over adresserne 192.168.0.1-192.168.0.254, laver man en
-reverse-zone-fil til disse IP-numre. (De nævnte adresser er kun et
-eksempel, de eksisterer ikke på internettet da de er nogle af de
+eksempel rÃ¥der over adresserne 192.168.0.1-192.168.0.254, laver man en
+reverse-zone-fil til disse IP-numre. (De nÃ¦vnte adresser er kun et
+eksempel, de eksisterer ikke pÃ¥ internettet da de er nogle af de
 "private" adresser). Denne zone gemmes i <filename>/var/named/192.168.0.rev</filename>.
 </para>
 </listitem>
 
 <listitem>
 <para>
-<filename>intranet</filename>: Du skal også lave en fil, der kan
-afbilde fra navn til IP-nummer for det domæne, du sætter op. I filen
-<filename>/var/named/intranet</filename> kan du erklære navne og
+<filename>intranet</filename>: Du skal ogsÃ¥ lave en fil, der kan
+afbilde fra navn til IP-nummer for det domÃ¦ne, du sÃ¦tter op. I filen
+<filename>/var/named/intranet</filename> kan du erklÃ¦re navne og
 aliaser for alle maskiner.
 </para>
 </listitem>
@@ -1296,16 +1296,16 @@ aliaser for alle maskiner.
 <title>/etc/named.conf</title>
 
 <para>
-Følgende er et eksempel på en
-<filename>/etc/named.conf</filename> fil som indeholder ovenstående
-grundlæggende opsætning:
+FÃ¸lgende er et eksempel pÃ¥ en
+<filename>/etc/named.conf</filename> fil som indeholder ovenstÃ¥ende
+grundlÃ¦ggende opsÃ¦tning:
 </para>
 
 <indexterm><primary>/etc/named.conf</primary></indexterm>
 
 <programlisting>   
 options {
-  /* Hvor er filerne med DNS-opsætning */
+  /* Hvor er filerne med DNS-opsÃ¦tning */
   directory "/var/named";
 
   /* Indsaet 1-3 forwarder nameservere */
@@ -1316,11 +1316,11 @@ options {
           MMM.MMM.MMM.MMM;
   };
 
-  /* Lyt på DNS-forespørgsler til to IP-adresser */
+  /* Lyt pÃ¥ DNS-forespÃ¸rgsler til to IP-adresser */
   listen-on { 192.168.0.1; 127.0.0.1 ; };
 
-  /* Udkommenter følgende linje hvis dit domæne 
-     er kendt på internettet */
+  /* Udkommenter fÃ¸lgende linje hvis dit domÃ¦ne 
+     er kendt pÃ¥ internettet */
   notify no;
   
 };
@@ -1352,28 +1352,28 @@ zone "intranet" in {
 </programlisting>
 
 <para>
-De første linjer definer i hvilket bibliotek de senere omtalte filer
+De fÃ¸rste linjer definer i hvilket bibliotek de senere omtalte filer
 skal placeres. Standard er: <filename>/var/named</filename>, men du
-kan også anvende f.eks. <filename>/etc/named</filename> eller andre steder.
+kan ogsÃ¥ anvende f.eks. <filename>/etc/named</filename> eller andre steder.
 </para>
 
 <para>
-Logging-linjen forhindrer at man får en masse unødigt i sin syslog.
+Logging-linjen forhindrer at man fÃ¥r en masse unÃ¸digt i sin syslog.
 (Log-funktionen er meget avanceret, en masse forskellige kriterier
 kan defineres).
 </para>
 
 <para>
-Næste linje er en zone-definition. Her gælder det root-zonen, selve
+NÃ¦ste linje er en zone-definition. Her gÃ¦lder det root-zonen, selve
 filen hentes fra 
 <ulink url="ftp://ftp.internic.net">ftp://ftp.internic.net</ulink>. De
-resterende linjer fortæller først hvilket domæne det handler om, og
-derefter i hvilken fil selve domænet er defineret. Samtidig får
-serveren af vide om den er "master" eller "slave" for det pågældende
-domæne. I ovenstående tilfælde er DNS-serveren master for alle
-zoner. For at kunne registrere et domæne kræves det at man har 2
-DNS-servere til domænet, master og slave, eller primær og
-sekundær. Følgende er et eksempel på en slave-zone:
+resterende linjer fortÃ¦ller fÃ¸rst hvilket domÃ¦ne det handler om, og
+derefter i hvilken fil selve domÃ¦net er defineret. Samtidig fÃ¥r
+serveren af vide om den er "master" eller "slave" for det pÃ¥gÃ¦ldende
+domÃ¦ne. I ovenstÃ¥ende tilfÃ¦lde er DNS-serveren master for alle
+zoner. For at kunne registrere et domÃ¦ne krÃ¦ves det at man har 2
+DNS-servere til domÃ¦net, master og slave, eller primÃ¦r og
+sekundÃ¦r. FÃ¸lgende er et eksempel pÃ¥ en slave-zone:
 </para>
 
 <programlisting>   
@@ -1385,11 +1385,11 @@ zone "intranet" in {
 </programlisting>
 
 <para>
-Udover at der nu står slave i stedet for master, er en linje tilføjet
-som fortæller hvilken server er master. Grunden til at
+Udover at der nu stÃ¥r slave i stedet for master, er en linje tilfÃ¸jet
+som fortÃ¦ller hvilken server er master. Grunden til at
 slave-serveren skal kende master-serveren er, at slave-serveren henter
-zone-filerne fra master-serveren. Dette betyder at ændringer i et domæne
-på master-serveren automatisk vil blive overført til slave-serveren.
+zone-filerne fra master-serveren. Dette betyder at Ã¦ndringer i et domÃ¦ne
+pÃ¥ master-serveren automatisk vil blive overfÃ¸rt til slave-serveren.
 </para>
 
 </sect2>
@@ -1399,7 +1399,7 @@ på master-serveren automatisk vil blive overført til slave-serveren.
 <indexterm><primary>bind</primary><secondary>root.cache</secondary></indexterm>
 <indexterm><primary>Zone</primary><secondary>eksempel</secondary></indexterm>
 <para>
-Vi kan f.eks. bruge følgende udgangspunkt for
+Vi kan f.eks. bruge fÃ¸lgende udgangspunkt for
 <filename>/var/named/root.cache</filename> &ndash; dvs. root-zonen.
 </para>
 
@@ -1496,7 +1496,7 @@ M.ROOT-SERVERS.NET.      3600000      A     202.12.27.33
 <indexterm><primary>Zone</primary><secondary>intranet</secondary></indexterm>
 <indexterm><primary>Intranet</primary><secondary>zone-fil</secondary></indexterm>
 <para>
-Den næste fil er for maskinerne i 192.168.0.*-området:
+Den nÃ¦ste fil er for maskinerne i 192.168.0.*-omrÃ¥det:
 </para>
 
 <programlisting>
@@ -1514,12 +1514,12 @@ $TTL   1D
 ;
 
 ;
-; Dette domænes DNS-servere:
+; Dette domÃ¦nes DNS-servere:
 ;
       IN   NS   ns.intranet.
 
 ;
-; Mailserveren for dette domæne:
+; Mailserveren for dette domÃ¦ne:
 ;
       IN   MX   0   mail.intranet.
 
@@ -1530,7 +1530,7 @@ localhost   IN   A   127.0.0.1
 linus       IN   A   192.168.0.1
 
 ;
-; Øvrige hostnavne afbildet til IP-adresser:
+; Ã˜vrige hostnavne afbildet til IP-adresser:
 ;
 alan        IN   A   192.168.0.2
 richard     IN   A   192.168.0.3
@@ -1544,141 +1544,141 @@ mail        IN   CNAME   linus.intranet.
 </programlisting>
 
 <para>
-<emphasis>Husk: Den første linje $TTL - "Time to live"
+<emphasis>Husk: Den fÃ¸rste linje $TTL - "Time to live"
 skal med, og der anvendes tabulator til at adskille hvert felt, og der
-må ikke anvendes mellemrum.</emphasis> 
-Bemærk specielt, at der er punktum efter hvert maskin-navn i CNAME-linjerne.
+mÃ¥ ikke anvendes mellemrum.</emphasis> 
+BemÃ¦rk specielt, at der er punktum efter hvert maskin-navn i CNAME-linjerne.
 </para>
 
 <para>
-Når en computer ude på nettet har spurgt vores server om noget på
+NÃ¥r en computer ude pÃ¥ nettet har spurgt vores server om noget pÃ¥
 vores zone vil den have modtaget noget data. Efter et par dage vil
-det være muligt at disse data er forældet. Derfor kan man med
-"TTL"-parameteren angive hvor lang tid en klient må beholde data som den har
-fået fra en DNS-server.
+det vÃ¦re muligt at disse data er forÃ¦ldet. Derfor kan man med
+"TTL"-parameteren angive hvor lang tid en klient mÃ¥ beholde data som den har
+fÃ¥et fra en DNS-server.
 </para>
 
 <para>
-Linje to til syv angiver diverse parametre for selve domænet. Det
-er ikke så vigtigt at forstå ordenen i disse linjer, derimod er det
-vigtigt at forstå betydningen. Det første tegn "@" er en variabel for
-selve domænet. Her kunne altså i stedet stå "intranet.". Grunden til
-at man i stedet sætter en variabel, er at man på den måde ikke behøver
-ændre dette felt hvis man bruger denne zone-fil til at lave en anden
+Linje to til syv angiver diverse parametre for selve domÃ¦net. Det
+er ikke sÃ¥ vigtigt at forstÃ¥ ordenen i disse linjer, derimod er det
+vigtigt at forstÃ¥ betydningen. Det fÃ¸rste tegn "@" er en variabel for
+selve domÃ¦net. Her kunne altsÃ¥ i stedet stÃ¥ "intranet.". Grunden til
+at man i stedet sÃ¦tter en variabel, er at man pÃ¥ den mÃ¥de ikke behÃ¸ver
+Ã¦ndre dette felt hvis man bruger denne zone-fil til at lave en anden
 zone-fil.
 </para>
 
 <indexterm><primary>IN</primary><secondary>DNS</secondary></indexterm>
 <para>
-"IN" står for "INTERNET" og angiver den klasse data man benytter. I dag
-bliver der meget sjældent benyttet andre klasser, så derfor er IN
-default, og man behøver derfor ikke angive dette. SOA står som
-tidligere skrevet for "Start Of Authority" og fortæller efterfølgende
+"IN" stÃ¥r for "INTERNET" og angiver den klasse data man benytter. I dag
+bliver der meget sjÃ¦ldent benyttet andre klasser, sÃ¥ derfor er IN
+default, og man behÃ¸ver derfor ikke angive dette. SOA stÃ¥r som
+tidligere skrevet for "Start Of Authority" og fortÃ¦ller efterfÃ¸lgende
 hvilken navneserver der er ansvarlig for denne zone.
 </para>
 
 <para>
-"ns.intranet." fortæller hvilket domæne navneserveren er ansvarlig
+"ns.intranet." fortÃ¦ller hvilket domÃ¦ne navneserveren er ansvarlig
 for, "hostmaster.intranet" er e-post-adressen til vedkommende som er
-ansvarlig for domænet. Bemærk, at det første . (punktum) skal læses
+ansvarlig for domÃ¦net. BemÃ¦rk, at det fÃ¸rste . (punktum) skal lÃ¦ses
 som et @.
 </para>
 
 <indexterm><primary>Serial</primary><secondary>DNS</secondary></indexterm>
 <para>
-"Serial" er serienummeret for zonen. Hver gang man laver en ændring, skal
-serienummeret opdateres. Eneste regel er at tallet skal blive mindst én
-højere (inkrementeres). De fleste vælger at bruge dags dato sammen med
-et 2-cifret tal. Det gør det muligt at vide hvornår sidste opdatering
+"Serial" er serienummeret for zonen. Hver gang man laver en Ã¦ndring, skal
+serienummeret opdateres. Eneste regel er at tallet skal blive mindst Ã©n
+hÃ¸jere (inkrementeres). De fleste vÃ¦lger at bruge dags dato sammen med
+et 2-cifret tal. Det gÃ¸r det muligt at vide hvornÃ¥r sidste opdatering
 blev foretaget. Grunden til at man har serienummeret, er at man kun
-opdaterer sine zone-filer på sin master-server. Slave-serveren vil
-derefter selv hente ændringerne, men den ved kun at der er foretaget
-ændringer <emphasis>hvis</emphasis> serienummeret er blevet
+opdaterer sine zone-filer pÃ¥ sin master-server. Slave-serveren vil
+derefter selv hente Ã¦ndringerne, men den ved kun at der er foretaget
+Ã¦ndringer <emphasis>hvis</emphasis> serienummeret er blevet
 inkrementeret.
 </para>
 
 <indexterm><primary>Refresh</primary><secondary>DNS</secondary></indexterm>
 
 <para>
-"Refresh" fortæller hvor tit slave-serveren skal spørge
-master-serveren om serienummeret på det pågældende domæne og herved
-beslutte om der skal foretages en overførsel.
+"Refresh" fortÃ¦ller hvor tit slave-serveren skal spÃ¸rge
+master-serveren om serienummeret pÃ¥ det pÃ¥gÃ¦ldende domÃ¦ne og herved
+beslutte om der skal foretages en overfÃ¸rsel.
 </para>
 
 <indexterm><primary>Retry</primary><secondary>DNS</secondary></indexterm>
 <para>
 Hvis slave-serveren ikke er i stand til at skabe kontakt til 
-master-serveren i første forsøg, definerer man med "Retry" hvor lang tid den
-skal vente før den prøver igen.
+master-serveren i fÃ¸rste forsÃ¸g, definerer man med "Retry" hvor lang tid den
+skal vente fÃ¸r den prÃ¸ver igen.
 </para>
 
 <indexterm><primary>expire</primary><secondary>DNS</secondary></indexterm>
 <para>
-I tilfælde af at slave-serveren slet ikke kan få kontakt til
-master-serveren, vil det efter nogle dage kunne være sandsynligt at der
-er foretaget ændringer på master-serveren som slave-serveren ikke
-har. Hvilket vil sige at den primære og den sekundære server giver
-modstridende oplysninger til deres klienter! For at undgå dette kan man
-definere hvor lang tid slave-serveren skal tro på at dens zone-data er
-gode nok. Dette gøres med "expire"-parameteren. Det skal forstås
-således, at når slave-serveren ikke kan kontakte master-serveren og det
-angivne tidsrum er udløbet, vil slave-serveren smide sine data om den
-pågældende zone ud, og altså ikke besvare forespørgsler omkring denne
+I tilfÃ¦lde af at slave-serveren slet ikke kan fÃ¥ kontakt til
+master-serveren, vil det efter nogle dage kunne vÃ¦re sandsynligt at der
+er foretaget Ã¦ndringer pÃ¥ master-serveren som slave-serveren ikke
+har. Hvilket vil sige at den primÃ¦re og den sekundÃ¦re server giver
+modstridende oplysninger til deres klienter! For at undgÃ¥ dette kan man
+definere hvor lang tid slave-serveren skal tro pÃ¥ at dens zone-data er
+gode nok. Dette gÃ¸res med "expire"-parameteren. Det skal forstÃ¥s
+sÃ¥ledes, at nÃ¥r slave-serveren ikke kan kontakte master-serveren og det
+angivne tidsrum er udlÃ¸bet, vil slave-serveren smide sine data om den
+pÃ¥gÃ¦ldende zone ud, og altsÃ¥ ikke besvare forespÃ¸rgsler omkring denne
 zone.
 </para>
 
 <para>
-Ovenstående parametre som angives i tidsrum, kan skrives i S, M, H, D
-(Sekunder, Minutter, Timer, Dage). De fleste vælger at angive dem
-alle i sekunder, det gør dog ingen forskel, og det er rimelig
-besværligt at skulle omregne eksempelvis 86400 sekunder (1 dag).
+OvenstÃ¥ende parametre som angives i tidsrum, kan skrives i S, M, H, D
+(Sekunder, Minutter, Timer, Dage). De fleste vÃ¦lger at angive dem
+alle i sekunder, det gÃ¸r dog ingen forskel, og det er rimelig
+besvÃ¦rligt at skulle omregne eksempelvis 86400 sekunder (1 dag).
 </para>
 
 <para>
-Der findes mange meninger om hvorledes ovenstående parametre skal
-sættes. De 4 første handler udelukkende om DNS-serverne, og derfor er
-det yderst begrænset hvor store fejl, der kan opstå ved at sætte nogle
-af disse 4 parametre "forkert", hvis man selv administrerer både master
-og slave. Derimod er det mindre hensigtsmæssigt at sætte TTL helt
+Der findes mange meninger om hvorledes ovenstÃ¥ende parametre skal
+sÃ¦ttes. De 4 fÃ¸rste handler udelukkende om DNS-serverne, og derfor er
+det yderst begrÃ¦nset hvor store fejl, der kan opstÃ¥ ved at sÃ¦tte nogle
+af disse 4 parametre "forkert", hvis man selv administrerer bÃ¥de master
+og slave. Derimod er det mindre hensigtsmÃ¦ssigt at sÃ¦tte TTL helt
 forkert. Resultatet kan eksempelvis blive at man ikke kan modtage post i
 en uges tid, hvis man er kommet til at angive en forkert IP-adresse til
 mail-serveren, og TTL er sat til en uge.
 </para>
 
 <para>
-Resten af zone-filen er selve "records". Den første kolonne fortæller
-hvilket navn man vil omsætte. Eksempelvis kunne der stå
-"mail.intranet" for at fortælle hvad "mail.intranet" skulle
-referere til. Hvis man ikke angiver noget i den første kolonne, vil
-selve zonen være default, altså "intranet."
+Resten af zone-filen er selve "records". Den fÃ¸rste kolonne fortÃ¦ller
+hvilket navn man vil omsÃ¦tte. Eksempelvis kunne der stÃ¥
+"mail.intranet" for at fortÃ¦lle hvad "mail.intranet" skulle
+referere til. Hvis man ikke angiver noget i den fÃ¸rste kolonne, vil
+selve zonen vÃ¦re default, altsÃ¥ "intranet."
 </para>
 
 <para>
-En vigtig ting som altid gælder når man angiver navne: Hvis man ikke
-afslutter med et "." (punktum) vil serveren automatisk tilføje det
-pågældende domæne til navnet. "mail.intranet" vil derfor blive til
+En vigtig ting som altid gÃ¦lder nÃ¥r man angiver navne: Hvis man ikke
+afslutter med et "." (punktum) vil serveren automatisk tilfÃ¸je det
+pÃ¥gÃ¦ldende domÃ¦ne til navnet. "mail.intranet" vil derfor blive til
 "mail.intranet.intranet".
 </para>
 
 <para>
 Herefter skal der angives hvilken klasse man arbejder med &ndash; her er "IN"
-igen default. Derpå skal man fortælle hvilken type record man vil
-angive (de mest brugte vil blive gennemgået i det efterfølgende). Det
+igen default. DerpÃ¥ skal man fortÃ¦lle hvilken type record man vil
+angive (de mest brugte vil blive gennemgÃ¥et i det efterfÃ¸lgende). Det
 sidste der skal angives, er hvilket navn eller hvilken IP-adresse
-DNS-serveren skal svare tilbage med, når den bliver spurgt om denne
+DNS-serveren skal svare tilbage med, nÃ¥r den bliver spurgt om denne
 record.
 </para>
 
 <indexterm><primary>DNS</primary><secondary>NS</secondary></indexterm>
 <para>
-Den først record er af typen "NS" (Name Server), her angiver man
-navnet på DNS-serveren, først den primære, herefter den sekundære.
+Den fÃ¸rst record er af typen "NS" (Name Server), her angiver man
+navnet pÃ¥ DNS-serveren, fÃ¸rst den primÃ¦re, herefter den sekundÃ¦re.
 </para>
 
 <indexterm><primary>DNS</primary><secondary>MX</secondary></indexterm>
 <para>
-Den næste record er af typen "MX" (Mail eXchanger), her angives
-navnet på post-serveren.
+Den nÃ¦ste record er af typen "MX" (Mail eXchanger), her angives
+navnet pÃ¥ post-serveren.
 </para>
 
 <indexterm><primary>DNS</primary><secondary>A</secondary></indexterm>
@@ -1689,7 +1689,7 @@ record angiver hvilket IP-nummer den omtalte host har.
 
 <indexterm><primary>DNS</primary><secondary>CNAME</secondary></indexterm>
 <para>
-"CNAME" står for Canonical name og betyder alias. Denne record-type
+"CNAME" stÃ¥r for Canonical name og betyder alias. Denne record-type
 bruges til at have flere navne til at referere til en IP-adresse.
 </para>
 </sect2>
@@ -1698,7 +1698,7 @@ bruges til at have flere navne til at referere til en IP-adresse.
 <sect2 id="DNS-eks-127-0-0-rev">
 <title>/var/named/127.0.0.rev</title>
 <para>
-Den første "reverse"-fil er for "localhost", som vi i
+Den fÃ¸rste "reverse"-fil er for "localhost", som vi i
 <filename>/etc/named.conf</filename> valgte at gemme i
 <filename>/var/named/127.0.0.rev</filename>.
 </para>
@@ -1729,8 +1729,8 @@ IN   NS    ns.intranet.
 </programlisting>
 
 <para>
-<emphasis>Husk den første linje $TTL - "Time to live" - skal med, og
-der anvendes tabulator til at adskille hvert felt.</emphasis> Bemærk
+<emphasis>Husk den fÃ¸rste linje $TTL - "Time to live" - skal med, og
+der anvendes tabulator til at adskille hvert felt.</emphasis> BemÃ¦rk
 specielt, at der er punktum efter hvert maskin-navn.
 </para>
 
@@ -1743,15 +1743,15 @@ administrativt er det langt mere overskueligt med samme parametre.
 
 <para>
 Grunden til at der kun er angivet en DNS-server, er at denne zone
-udelukkende er for 127.0.0 som altså kun kan være den lokale server,
-hvilket ikke har noget at gøre med den/de andre DNS-servere.
+udelukkende er for 127.0.0 som altsÃ¥ kun kan vÃ¦re den lokale server,
+hvilket ikke har noget at gÃ¸re med den/de andre DNS-servere.
 </para>
 
 <para>
-Reverse records er af typen PTR. Da forespørgsler til reverse-zoner skal
+Reverse records er af typen PTR. Da forespÃ¸rgsler til reverse-zoner skal
 besvares med et navn i stedet for en IP-adresse er strukturen i disse
-zoner også anderledes. Der er simpelthen byttet om på navnet og
-IP-adressen. Derfor står IP-adressen først, i det her tilfælde 1 (1 +
+zoner ogsÃ¥ anderledes. Der er simpelthen byttet om pÃ¥ navnet og
+IP-adressen. Derfor stÃ¥r IP-adressen fÃ¸rst, i det her tilfÃ¦lde 1 (1 +
 zone-navnet (127.0.0) = 127.0.0.1), herefter klassen (IN), record-typen
 (PTR) og til sidst navnet (localhost).
 </para>
@@ -1761,7 +1761,7 @@ zone-navnet (127.0.0) = 127.0.0.1), herefter klassen (IN), record-typen
 <sect2 id="DNS-eks-192-168-0-rev">
 <title>/var/named/192.168.0.rev</title>
 <para>
-Den næste "reverse"-fil er for maskinerne i 192.168.0.*-området:
+Den nÃ¦ste "reverse"-fil er for maskinerne i 192.168.0.*-omrÃ¥det:
 </para>
 
 <programlisting>
@@ -1793,17 +1793,17 @@ IN   NS    ns.intranet.
 </programlisting>
 
 <para>
-Ovenstående er reverse zone-filen for zonen 192.168.0.*.  Nok en gang
-- den første linje $TTL - "Time to live" skal med, og der anvendes
-tabulator til at adskille hvert felt.  Bemærk igen, at der er punktum
+OvenstÃ¥ende er reverse zone-filen for zonen 192.168.0.*.  Nok en gang
+- den fÃ¸rste linje $TTL - "Time to live" skal med, og der anvendes
+tabulator til at adskille hvert felt.  BemÃ¦rk igen, at der er punktum
 efter hvert maskin-navn.
 </para>
 
 <para>   
-Her gælder de samme regler som for 127.0.0 zonen. 4 reverse records
+Her gÃ¦lder de samme regler som for 127.0.0 zonen. 4 reverse records
 er defineret fra 1 til 4 svarende til 192.168.0.1-192.168.0.4, dvs. 
-vores fire maskiner. Har du brug for et andet eksempel på opsætning af
-DNS, så kan du se i <ulink url="http://www.sslug.dk/artikler/dnsbind.shtml">http://www.sslug.dk/artikler/dnsbind.shtml</ulink>.
+vores fire maskiner. Har du brug for et andet eksempel pÃ¥ opsÃ¦tning af
+DNS, sÃ¥ kan du se i <ulink url="http://www.sslug.dk/artikler/dnsbind.shtml">http://www.sslug.dk/artikler/dnsbind.shtml</ulink>.
 </para>
 </sect2>
 </sect1>
@@ -1812,9 +1812,9 @@ DNS, så kan du se i <ulink url="http://www.sslug.dk/artikler/dnsbind.shtml">http
 <title>Start named</title>
 <indexterm><primary>DNS</primary><secondary>start server</secondary></indexterm>
 <para>
-Efter at have redigeret navneserver-filerne færdig er du klar til
-at starte <command>named</command>. Kører du Red Hat, er det nemt. Du
-skal installere <command>bind</command>-pakken og køre
+Efter at have redigeret navneserver-filerne fÃ¦rdig er du klar til
+at starte <command>named</command>. KÃ¸rer du Red Hat, er det nemt. Du
+skal installere <command>bind</command>-pakken og kÃ¸re
 </para>
 <indexterm>
  <primary>/sbin/chkconfig</primary>
@@ -1831,14 +1831,14 @@ skal installere <command>bind</command>-pakken og køre
 </screen>
 
 <para>
-Dette er en smart måde at få startet
+Dette er en smart mÃ¥de at fÃ¥ startet
 <filename>/etc/rc.d/init.d/named</filename> i run-levels 3, 4 og 5. 
-Du kan nu eksperimentere og se om din opsætning er i orden. 
+Du kan nu eksperimentere og se om din opsÃ¦tning er i orden. 
 Start en xterm og skriv <command>tail -f
 /var/log/messages</command>. I en anden xterm skriver du 
 <command>/etc/rc.d/init.d/named start</command>. Kommer der ikke fejl
-ud, er du igennem første syntakstjek. Dernæst kan du starte med at
-spørge din lokale DNS, f.eks.:
+ud, er du igennem fÃ¸rste syntakstjek. DernÃ¦st kan du starte med at
+spÃ¸rge din lokale DNS, f.eks.:
 </para>
 <indexterm>
  <primary>nslookup </primary>
@@ -1856,7 +1856,7 @@ spørge din lokale DNS, f.eks.:
 </screen>
 
 <para>
-Tjek både på IP-adresser og maskinnavne. Går alt glat, skal dine
+Tjek bÃ¥de pÃ¥ IP-adresser og maskinnavne. GÃ¥r alt glat, skal dine
 Unix-maskiner nu have <filename>/etc/resolv.conf</filename> med
 indhold for at bruge din nye DNS-server.
 </para>
@@ -1867,23 +1867,23 @@ nameserver 192.168.0.1
 </programlisting>
 
 <para>
-Endelig skal det nævnes, at der i tidens løb har været en del
+Endelig skal det nÃ¦vnes, at der i tidens lÃ¸b har vÃ¦ret en del
 sikkerhedsfejl i DNS-serveren BIND, og det kan kraftigt anbefales at
-følge sikkerhedslisterne på internettet.
+fÃ¸lge sikkerhedslisterne pÃ¥ internettet.
 </para>
 
 
 <itemizedlist mark="bullet">
     <listitem><para>Bugtraq <ulink url="http://www.securityfocus.com">http://www.securityfocus.com</ulink>
-      bør du følge med på for at læse om de nyeste afsløringer af 
+      bÃ¸r du fÃ¸lge med pÃ¥ for at lÃ¦se om de nyeste afslÃ¸ringer af 
       sikkerhedsbrister (exploits).
     </para></listitem>
     <listitem><para>Root Shell <ulink url="http://www.rootshell.com">http://www.rootshell.com</ulink>
       har alt indenfor diskussion af sikkerhed.
     </para></listitem>
     <listitem><para>Linux Today <ulink url="http://linuxtoday.com">http://linuxtoday.com</ulink> bringer
-      også sikkerhedsbrister frem sammen med andre nyheder. Det er muligt 
-      at tilpasse hvilke nyheder man får, f.eks. nyheder om sikkerhed.
+      ogsÃ¥ sikkerhedsbrister frem sammen med andre nyheder. Det er muligt 
+      at tilpasse hvilke nyheder man fÃ¥r, f.eks. nyheder om sikkerhed.
     </para></listitem>
     <listitem><para><ulink url="http://www.securityportal.com/">http://www.securityportal.com/</ulink>
       er et andet interessant sted for folk, som interesserer sig for sikkerhed.
@@ -1895,8 +1895,8 @@ følge sikkerhedslisterne på internettet.
   </itemizedlist>
 
 <para>
-Du kan finde et mindre eksempel på DNS-filerne under 'Eksempler' til
-denne bog på hjemmesiden <ulink url="http://&linuxbogurl;/">&linuxbogurl;/</ulink>.
+Du kan finde et mindre eksempel pÃ¥ DNS-filerne under 'Eksempler' til
+denne bog pÃ¥ hjemmesiden <ulink url="http://&linuxbogurl;/">&linuxbogurl;/</ulink>.
 </para>
 
 </sect1>
@@ -1907,7 +1907,7 @@ denne bog på hjemmesiden <ulink url="http://&linuxbogurl;/">&linuxbogurl;/</ulin
 
 <!-- 
 Rettelser som jeg stadig har til gode: s/chroot/sikret og sikkert
-en hel masse andre ting som jeg ikke har fået øje på. 
+en hel masse andre ting som jeg ikke har fÃ¥et Ã¸je pÃ¥. 
 -->
 
 <indexterm><primary>BIND</primary></indexterm>
@@ -1922,34 +1922,34 @@ en hel masse andre ting som jeg ikke har fået øje på.
 </indexterm>
 
 <para>
-Hvis en angriber har held med et angreb på en DNS server og 
-kan udføre root kommandoer på systemet, kan konsekvenserne 
+Hvis en angriber har held med et angreb pÃ¥ en DNS server og 
+kan udfÃ¸re root kommandoer pÃ¥ systemet, kan konsekvenserne 
 blive uoverskuelige. 
-Der findes en sikkerhedsteknik til begrænsning af de skader 
-en angriber kan forvolde samt til at gøre det umuligt at bruge den 
-til at bryde ind i det øvrige system den kører på. Teknikken går ud på, at
-afspærre angrebet i en isoleret del af filsystemet, det såkaldte 
+Der findes en sikkerhedsteknik til begrÃ¦nsning af de skader 
+en angriber kan forvolde samt til at gÃ¸re det umuligt at bruge den 
+til at bryde ind i det Ã¸vrige system den kÃ¸rer pÃ¥. Teknikken gÃ¥r ud pÃ¥, at
+afspÃ¦rre angrebet i en isoleret del af filsystemet, det sÃ¥kaldte 
 "chroot-jail". 
-For at opnå uautoriseret adgang 
+For at opnÃ¥ uautoriseret adgang 
 kan angriberen bruge forskellige svagheder i programmer som 
-har suid/sgid bitten sat. Den største fordel ved denne teknik er 
-begrænsningen af adgang til sådanne programmer. I denne vejledning har
-DNS-processen ingen adgang til programmer og den sættes op til at køre
-som en upriviligeret bruger. Denne kombination gør livet 
-<emphasis>meget</emphasis> besværligt for den eventuelle angriber. 
-Når en proces køres på denne måde kan den ikke se det øvrige 
-filsystem der er udenfor afgrænsningen og den vil ikke kunne
-tilgå det øvrige filsystem. Dem der har brugt et ftp program for at
+har suid/sgid bitten sat. Den stÃ¸rste fordel ved denne teknik er 
+begrÃ¦nsningen af adgang til sÃ¥danne programmer. I denne vejledning har
+DNS-processen ingen adgang til programmer og den sÃ¦ttes op til at kÃ¸re
+som en upriviligeret bruger. Denne kombination gÃ¸r livet 
+<emphasis>meget</emphasis> besvÃ¦rligt for den eventuelle angriber. 
+NÃ¥r en proces kÃ¸res pÃ¥ denne mÃ¥de kan den ikke se det Ã¸vrige 
+filsystem der er udenfor afgrÃ¦nsningen og den vil ikke kunne
+tilgÃ¥ det Ã¸vrige filsystem. Dem der har brugt et ftp program for at
 koble op til en ftp-server, har sandsynligvis set et "chroot-jail"
 som det ser ud indenfra. 
 </para>
 
 <para>
-Man skal dog huske at denne teknik ikke løser alle sikkerhedsproblemer
-men blot en del af dem. Der findes sågar rapporter og vejledninger om
-hvordan man som angriber bryder ud af isolationen for at tilgå 
-servers virkelige filsystem. Forudsætningen for at dette lykkes er at
-angriberen først skal opnå root-privilegier inden han/hun kan bryde ud
+Man skal dog huske at denne teknik ikke lÃ¸ser alle sikkerhedsproblemer
+men blot en del af dem. Der findes sÃ¥gar rapporter og vejledninger om
+hvordan man som angriber bryder ud af isolationen for at tilgÃ¥ 
+servers virkelige filsystem. ForudsÃ¦tningen for at dette lykkes er at
+angriberen fÃ¸rst skal opnÃ¥ root-privilegier inden han/hun kan bryde ud
 fra den isolerede del af filsystemet. For en uddybning af dette se
 afsnit 3.8 i "Running Services in a chroot Environment": 
 <ulink url="http://www.nic.com/~dave/SecurityAdminGuide/SecurityAdminGuide-3.html">
@@ -1959,44 +1959,44 @@ Samt:
 <ulink url="http://www.linuxgazette.com/issue30/tag_chroot.html">
 http://www.linuxgazette.com/issue30/tag_chroot.html
 </ulink>
-Denne teknik kan feks. ikke forhindre en cracker i at forespørge
-dns-serveren om oplysninger til brug i forbindelse med andre angreb på
+Denne teknik kan feks. ikke forhindre en cracker i at forespÃ¸rge
+dns-serveren om oplysninger til brug i forbindelse med andre angreb pÃ¥
 computeren. 
 </para>
 
 <para>
-Den følgende vejledning gælder kun for BIND version 9 og opefter men 
+Den fÃ¸lgende vejledning gÃ¦lder kun for BIND version 9 og opefter men 
 noget kan dog bruges til tidligere versioner. 
-Denne vejledning tager udgangspunkt i opsætningsfilerne for en
-fungerende DNS-server og derfor er det oftest unødvendigt at ændre dem.
-Hvis DNS-serveren køres som upriviligeret bruger og beskyttes samtidig
-af en meget restriktiv dørvøgter kan man dog alligevel være nødt til
-at lave en lille ændring i opsætningsfilen. Dette forklares i 
+Denne vejledning tager udgangspunkt i opsÃ¦tningsfilerne for en
+fungerende DNS-server og derfor er det oftest unÃ¸dvendigt at Ã¦ndre dem.
+Hvis DNS-serveren kÃ¸res som upriviligeret bruger og beskyttes samtidig
+af en meget restriktiv dÃ¸rvÃ¸gter kan man dog alligevel vÃ¦re nÃ¸dt til
+at lave en lille Ã¦ndring i opsÃ¦tningsfilen. Dette forklares i 
 <xref linkend="dns-upriviligeret"/>.
 </para>
 
 <para>
 I disse afsnit bruges variablen <filename>$JAIL</filename>
 hyppigt. F.eks. skal kommandoen <command>echo $JAIL</command>
-bogstaveligt skrives sådan. 
+bogstaveligt skrives sÃ¥dan. 
 </para>
 
 <sect2 id="opsaetning-foer-chroot">
 <title>
-  Indsamling af oplysninger om serverens opsætning før "chroot".
+  Indsamling af oplysninger om serverens opsÃ¦tning fÃ¸r "chroot".
 </title>
 
 <para>
-Der findes flere distributioner og de placerer filer på hver sin
-måde. Det ville være for snævert hvis denne vejledning, var lavet 
-således at den kun kan bruges til én af disse distributioner. 
-For at sætte serveren op skal man kende navnet og placeringen på de
-relevante filer i hver distribution. Vi nøjes med 4 forskellige
-distributioner i håb om at det rammer tilstrækkelig bredt.
+Der findes flere distributioner og de placerer filer pÃ¥ hver sin
+mÃ¥de. Det ville vÃ¦re for snÃ¦vert hvis denne vejledning, var lavet 
+sÃ¥ledes at den kun kan bruges til Ã©n af disse distributioner. 
+For at sÃ¦tte serveren op skal man kende navnet og placeringen pÃ¥ de
+relevante filer i hver distribution. Vi nÃ¸jes med 4 forskellige
+distributioner i hÃ¥b om at det rammer tilstrÃ¦kkelig bredt.
 </para>
 
 <para>
-Vi skal bruge stinavnet på opstartsfilen der anvendes til at starte og
+Vi skal bruge stinavnet pÃ¥ opstartsfilen der anvendes til at starte og
 stoppe processen. 
 </para>
 
@@ -2024,9 +2024,9 @@ stoppe processen.
   </itemizedlist>
 
 <para>
-Placeringen af den overordnede opsætningsfil. 
-Variablen <filename>KONFIL</filename> sættes lig med denne mappe,
-dog uden det første skråstreg. 
+Placeringen af den overordnede opsÃ¦tningsfil. 
+Variablen <filename>KONFIL</filename> sÃ¦ttes lig med denne mappe,
+dog uden det fÃ¸rste skrÃ¥streg. 
 </para>
   <itemizedlist mark="bullet" spacing="compact">
     <listitem>
@@ -2048,9 +2048,9 @@ dog uden det første skråstreg.
 
 <para>
 Serverens forvalgte placering af zone filer.
-Denne mappe nævnes som regel i den overordnede opsætningsfil ( se
+Denne mappe nÃ¦vnes som regel i den overordnede opsÃ¦tningsfil ( se
 eksemplet i <xref linkend="DNS-eks-etc-name-conf"/>) og den er angivet
-som <filename>var/named</filename> i det følgende eksempel:
+som <filename>var/named</filename> i det fÃ¸lgende eksempel:
 </para>
 
 <programlisting>
@@ -2058,8 +2058,8 @@ som <filename>var/named</filename> i det følgende eksempel:
 </programlisting>
 
 <para>
-Variablen <filename>OPTDIR</filename> sættes lig med denne mappe,
-dog uden det første skråstreg. 
+Variablen <filename>OPTDIR</filename> sÃ¦ttes lig med denne mappe,
+dog uden det fÃ¸rste skrÃ¥streg. 
 </para>
 
   <itemizedlist mark="bullet" spacing="compact">
@@ -2082,9 +2082,9 @@ dog uden det første skråstreg.
 
 <para>
 En mappe hvor masterzone filer normalt placeres.
-Denne mappe nævnes som regel i den overordnede 
-opsætningsfil og den er angivet
-som <filename>etc/bind</filename> i det følgende eksempel:
+Denne mappe nÃ¦vnes som regel i den overordnede 
+opsÃ¦tningsfil og den er angivet
+som <filename>etc/bind</filename> i det fÃ¸lgende eksempel:
 </para>
 
 <programlisting>
@@ -2095,8 +2095,8 @@ zone "127.in-addr.arpa" {
 </programlisting>
 
 <para>
-Variablen <filename>MASTERZD</filename> sættes lig med denne mappe,
-dog uden det første skråstreg. 
+Variablen <filename>MASTERZD</filename> sÃ¦ttes lig med denne mappe,
+dog uden det fÃ¸rste skrÃ¥streg. 
 </para>
 
   <itemizedlist mark="bullet" spacing="compact">
@@ -2118,14 +2118,14 @@ dog uden det første skråstreg.
   </itemizedlist>
 
 <para>
-Det er et potentielt sikkerhedshul at lægge sine "master zone"-filer i
+Det er et potentielt sikkerhedshul at lÃ¦gge sine "master zone"-filer i
 mapper som selve processen har skriverettigheder til idet en angriber
-derved kunne ændre dem. 
+derved kunne Ã¦ndre dem. 
 </para>
 <para>
 En mappe hvor processen har skriveadgang og hvor der normalt placeres slave-zone-filer. 
-Denne mappe nævnes undtagelsesvis i den overordnede opsætningsfil og den er angivet
-som <filename>etc/named/slave</filename> i det følgende eksempel:
+Denne mappe nÃ¦vnes undtagelsesvis i den overordnede opsÃ¦tningsfil og den er angivet
+som <filename>etc/named/slave</filename> i det fÃ¸lgende eksempel:
 </para>
 
 <programlisting>
@@ -2136,10 +2136,10 @@ som <filename>etc/named/slave</filename> i det følgende eksempel:
 </programlisting>
 
 <para>
-Den forvalgte mappe kan sagtens bruges her hvis master filerne lægges
+Den forvalgte mappe kan sagtens bruges her hvis master filerne lÃ¦gges
 i en anden mappe. 
-Variablen <filename>SLAVEZD</filename> sættes lig med denne mappe,
-dog uden det første skråstreg. 
+Variablen <filename>SLAVEZD</filename> sÃ¦ttes lig med denne mappe,
+dog uden det fÃ¸rste skrÃ¥streg. 
 </para>
 
   <itemizedlist mark="bullet" spacing="compact">
@@ -2161,8 +2161,8 @@ dog uden det første skråstreg.
   </itemizedlist>
 
 <para>
-  For at få variabler med fornuftige værdier skal man køre det
-  følgende som passer for den enkelte distribution. 
+  For at fÃ¥ variabler med fornuftige vÃ¦rdier skal man kÃ¸re det
+  fÃ¸lgende som passer for den enkelte distribution. 
 </para>
 
 <para>
@@ -2192,9 +2192,9 @@ export slavezd=var/cache/bind
 </programlisting>
 
 <para>
-Der kan opstå forvirring vedrørende placeringer af filer og mapper
-hvilket nok ikke er særlig underligt idet der grundlæggende set er
-tale om 3 forskellige filsystemrødder, nemlig systemets egentlige
+Der kan opstÃ¥ forvirring vedrÃ¸rende placeringer af filer og mapper
+hvilket nok ikke er sÃ¦rlig underligt idet der grundlÃ¦ggende set er
+tale om 3 forskellige filsystemrÃ¸dder, nemlig systemets egentlige
 rod <filename>/</filename> , den nye rod der etableres ved "chroot" og
 som er angivet ved variablen <filename>$JAIL</filename> samt
 DNS-serverens forvalgte mappe angivet bl.a. ved variablen 
@@ -2202,7 +2202,7 @@ DNS-serverens forvalgte mappe angivet bl.a. ved variablen
 </para>
 
 <para>
-Det kan forøge forvirringen at DNS-serveren fortolker
+Det kan forÃ¸ge forvirringen at DNS-serveren fortolker
 <emphasis>relative</emphasis> filnavne i forhold til serverens forvalgte
 mappe mens <emphasis>absolutte</emphasis> filnavne fortolkes i forhold
 til den nye rod der etableres ved "chroot".
@@ -2217,13 +2217,13 @@ allesammen fortolkes i forhold til filsystemets rod, nemlig
 
 <para>
 Et fiktivt eksempel hvor variablen <filename>SLAVEZD</filename> er
-forskellig fra værdien i den overordnede opsætningsfil. 
+forskellig fra vÃ¦rdien i den overordnede opsÃ¦tningsfil. 
 <programlisting>
 <userinput>
 export slavezd=var/named/slave
 </userinput>
 </programlisting>
-Mens der i den overordnede opsætningsfil bl.a. står: 
+Mens der i den overordnede opsÃ¦tningsfil bl.a. stÃ¥r: 
 <programlisting>
   options { directory "/var/named";
   };
@@ -2256,16 +2256,16 @@ allesammen fortolkes i forhold til filsystemets rod
 
 <para>
 Nogle distributioner opretter automatisk en bruger der svarer til
-DNS-serveren. Et hurtigt blik på <filename>/etc/passwd</filename> kan
-afsløre en bruger der hedder f.eks. named, bind eller dns og så kan
-man lave de nødvendige rettelser i kommandoerne. Her antages
+DNS-serveren. Et hurtigt blik pÃ¥ <filename>/etc/passwd</filename> kan
+afslÃ¸re en bruger der hedder f.eks. named, bind eller dns og sÃ¥ kan
+man lave de nÃ¸dvendige rettelser i kommandoerne. Her antages
 at brugeren hedder <command>named</command> samt at gruppen hedder
 ligeledes <command>named</command>. 
 </para>
 
 <para>
 Hvis denne bruger ikke findes i forvejen, kan
-den i Debian oprettes med den følgende kommando:  
+den i Debian oprettes med den fÃ¸lgende kommando:  
 </para>
 
 <screen>
@@ -2279,7 +2279,7 @@ Creating home directory /opt/chroot/named.
 </sect2>
 
 <sect2 id="chroot-dns-mount">
-<title>Tilføjelse til filsystemtabellen</title>
+<title>TilfÃ¸jelse til filsystemtabellen</title>
 
 <indexterm>
  <primary>mount</primary>
@@ -2290,21 +2290,21 @@ Creating home directory /opt/chroot/named.
 DNS-serveren bruger 3 /dev filer. Disse er <filename>log</filename>, 
 <filename>null</filename>, og <filename>random</filename>. 
 For hver af disse /dev filer skal der oprettes en forbindelse til de 
-tilsvarende filer i den isolerede del af filsystemet. Når det er gjort 
+tilsvarende filer i den isolerede del af filsystemet. NÃ¥r det er gjort 
 kan serveren skrive til syslog. 
 </para>
 <para>
 Tidligere er der lavet forskellige krumspring for at DNS-serveren 
 kan skrive til syslog. Med version 2.4 af kernen kom muligheden for
-at løse dette let og elegant med kommandoen 
+at lÃ¸se dette let og elegant med kommandoen 
 <command>mount</command>.
 </para>
 <para>
-I det følgende er der givet 2 forskellige metoder for at opnå
-forbindelse til filerne i den isolerede del af filsystemet. I den første
+I det fÃ¸lgende er der givet 2 forskellige metoder for at opnÃ¥
+forbindelse til filerne i den isolerede del af filsystemet. I den fÃ¸rste
 metode bruges en <command>mount</command> kommando for hver af 
-disse <filename>/dev</filename> filer. Den første metode giver
-mulighed for at afprøve opsætningen men den vil være tabt ved genstart
+disse <filename>/dev</filename> filer. Den fÃ¸rste metode giver
+mulighed for at afprÃ¸ve opsÃ¦tningen men den vil vÃ¦re tabt ved genstart
 af computeren.
 </para>
 
@@ -2317,12 +2317,12 @@ mount --bind /dev/null $JAIL/dev/null
 </programlisting>
 
 <para>
-Erfarne brugere vil vide at mount kommandoen også kan bruges i
+Erfarne brugere vil vide at mount kommandoen ogsÃ¥ kan bruges i
 forbindelse med filsystemtabellen <filename>/etc/fstab</filename> og
-derved kan man opnå en varig opsætning af disse filer. Der tilføjes 
-nogle linjer til filsystemtabellen (derfor er det tilrådeligt at man
+derved kan man opnÃ¥ en varig opsÃ¦tning af disse filer. Der tilfÃ¸jes 
+nogle linjer til filsystemtabellen (derfor er det tilrÃ¥deligt at man
 lige tager en kopi af denne fil idet den er meget vigtig for 
-systemet). Dette gøres lettest med de følgende kommandoer:  
+systemet). Dette gÃ¸res lettest med de fÃ¸lgende kommandoer:  
 </para>
 
 <programlisting>
@@ -2337,14 +2337,14 @@ echo -e '/dev/random\t'$JAIL'/dev/random\tnone \t rw,bind \t 0 0' >>fstab
 </programlisting>
 
 <para>
-Ovenstående kommandoer er nok til at sætte computeren op så
-ændringerne er varige også ved genstart. 
+OvenstÃ¥ende kommandoer er nok til at sÃ¦tte computeren op sÃ¥
+Ã¦ndringerne er varige ogsÃ¥ ved genstart. 
 </para>
 
 <para>
 Hvis mappestrukturen er blevet opsat 
-(Se <xref linkend="chroot-dns-mappestruktur"/>) , kan man med følgende
-kommando afprøve om dette fungerer som det skal:
+(Se <xref linkend="chroot-dns-mappestruktur"/>) , kan man med fÃ¸lgende
+kommando afprÃ¸ve om dette fungerer som det skal:
 <screen>
 <prompt>[root@linus /root]# </prompt> <userinput>
 mount --all
@@ -2353,7 +2353,7 @@ mount --all
 </para>
 
 <para>
-Derpå vil kommandoen <command>mount</command> afsløre de interne 
+DerpÃ¥ vil kommandoen <command>mount</command> afslÃ¸re de interne 
 forbindelser i kernen. 
 </para>
 
@@ -2373,10 +2373,10 @@ forbindelser i kernen.
 
 <para>
 Der oprettes en  mappestruktur, til DNS-serveren hvori den skal 
-køre isoleret. Set fra DNS-serveren vil denne mappestruktur udgøre 
-hele serverens filsystem, og den vil således ikke kunne se 
-den resterende del af filsystemet. Dette vil således også 
-gælde for en eventuel angriber der har haft held med at tage
+kÃ¸re isoleret. Set fra DNS-serveren vil denne mappestruktur udgÃ¸re 
+hele serverens filsystem, og den vil sÃ¥ledes ikke kunne se 
+den resterende del af filsystemet. Dette vil sÃ¥ledes ogsÃ¥ 
+gÃ¦lde for en eventuel angriber der har haft held med at tage
 kontrollen over DNS-processen. 
 </para>
 
@@ -2384,15 +2384,15 @@ kontrollen over DNS-processen.
  <primary>FHS</primary>
 </indexterm>
 <para>
-I nedenstående eksempel oprettes mappestrukturen med roden 
+I nedenstÃ¥ende eksempel oprettes mappestrukturen med roden 
 <filename>/opt/chroot/named</filename> hvilket er i overensstemmelse 
 med standarden for filhierarki i Linux ( for flere oplysninger om FHS se: 
 <ulink url="http://www.pathname.com/fhs/">
 http://www.pathname.com/fhs/</ulink>). 
-Hvis man ønsker en anden rod (feks. <filename>/chroot/named</filename>
-kan man blot ændre variablen <filename>$JAIL</filename> i starten af
- kommandoerne. Ligeledes kan man rette brugernavnet i kommandoerne så
- det svarer til det brugernavn DNS-processen skal køre som. De følgende
+Hvis man Ã¸nsker en anden rod (feks. <filename>/chroot/named</filename>
+kan man blot Ã¦ndre variablen <filename>$JAIL</filename> i starten af
+ kommandoerne. Ligeledes kan man rette brugernavnet i kommandoerne sÃ¥
+ det svarer til det brugernavn DNS-processen skal kÃ¸re som. De fÃ¸lgende
  kommandoer kan klippes og klistres med et par museklik ind i et
  terminalvindue hvor root allerede har logget ind: 
 
@@ -2425,41 +2425,41 @@ chattr +i  dev etc var $LOKALTID
 
 <para>
 Kommandoen i femte nederste linje, kopierer hele DNS-serverens 
-opsætning til mappen  $JAIL/$MASTERZD . Den tredje øverste linje sætter
+opsÃ¦tning til mappen  $JAIL/$MASTERZD . Den tredje Ã¸verste linje sÃ¦tter
 DNS-serveren som ejer af bl.a. mappen <filename>$JAIL</filename> ,
-hvilket jo også er meget passende idé det jo er dens hjemmekatalog (det
-burde det i hvertfald være hvis alting gik godt i 
+hvilket jo ogsÃ¥ er meget passende idÃ© det jo er dens hjemmekatalog (det
+burde det i hvertfald vÃ¦re hvis alting gik godt i 
 <xref linkend="dns-brugernavn"/>). 
-Den næstnederste linje siger adgang forbudt for uvedkommende. Den
-allersidste er kommandoen <command>chattr</command> der på et Linux
-filsystem (ext2, ext3 og evt. andre) kan sætte "immutable"-bitten på
-bestemte filer. Filer med denne bit sat, kan ikke ændres, omdøbes
-eller slettes. Dette er nødvendigt idet <literal>named</literal>
+Den nÃ¦stnederste linje siger adgang forbudt for uvedkommende. Den
+allersidste er kommandoen <command>chattr</command> der pÃ¥ et Linux
+filsystem (ext2, ext3 og evt. andre) kan sÃ¦tte "immutable"-bitten pÃ¥
+bestemte filer. Filer med denne bit sat, kan ikke Ã¦ndres, omdÃ¸bes
+eller slettes. Dette er nÃ¸dvendigt idet <literal>named</literal>
 brugeren ejer mappen <filename>$JAIL</filename> og har dermed ret til
-at omdøbe og slette enhver fil i denne mappe, uanset hvem ejer dem. 
-Denne bit vil altså forhindre <literal>named</literal>
-brugeren i at omdøbe feks. <filename>etc</filename> mappen til noget
+at omdÃ¸be og slette enhver fil i denne mappe, uanset hvem ejer dem. 
+Denne bit vil altsÃ¥ forhindre <literal>named</literal>
+brugeren i at omdÃ¸be feks. <filename>etc</filename> mappen til noget
 andet og oprette en ny <filename>etc</filename> mappe med falske eller 
-ændrede domæner. Dette kan named brugeren gøre 
+Ã¦ndrede domÃ¦ner. Dette kan named brugeren gÃ¸re 
 uden videre hvis denne bit ikke er sat. Hvis en angriber opdager at
 denne bit ikke er sat, kan han/hun juble ligesom Benny i "The
 Julekalender" da han havde eksperimenteret med nissernes magiske bog
-og udbrød i ekstase: "Sikke muligheder man! Sikke muligheder!" 
-Hvis man er i gang med at eksperimentere med denne opsætning,
-gør man dog klogest i at undgå denne bit idet den forbyder selv
-root-brugeren at slette eller ændre hele <filename>$JAIL</filename> 
+og udbrÃ¸d i ekstase: "Sikke muligheder man! Sikke muligheder!" 
+Hvis man er i gang med at eksperimentere med denne opsÃ¦tning,
+gÃ¸r man dog klogest i at undgÃ¥ denne bit idet den forbyder selv
+root-brugeren at slette eller Ã¦ndre hele <filename>$JAIL</filename> 
 mappen. Denne bit ("immutable"-bitten) skal resettes med kommandoen
-<command>chattr -i</command> før root kan ændre eller slette filer
-hvor den er sat. Så er folk blevet advaret. 
+<command>chattr -i</command> fÃ¸r root kan Ã¦ndre eller slette filer
+hvor den er sat. SÃ¥ er folk blevet advaret. 
 </para>
 
 <para>
-Hvis der har været fejl i opsætningen eller kommandoerne kan man
-fjerne mappestrukturen med nogle eller alle af de følgende kommandoer
-og derpå kan man prøve endnu en gang at installere
-mappestrukturen. Som den Linuxkyndige læser vil se, er der sat to små 
-sikkerhedsventiler på kommandoen <command>rm -rf</command> for det
-tilfælde at variablen <filename>&amp;JAIL</filename> ikke findes. 
+Hvis der har vÃ¦ret fejl i opsÃ¦tningen eller kommandoerne kan man
+fjerne mappestrukturen med nogle eller alle af de fÃ¸lgende kommandoer
+og derpÃ¥ kan man prÃ¸ve endnu en gang at installere
+mappestrukturen. Som den Linuxkyndige lÃ¦ser vil se, er der sat to smÃ¥ 
+sikkerhedsventiler pÃ¥ kommandoen <command>rm -rf</command> for det
+tilfÃ¦lde at variablen <filename>&amp;JAIL</filename> ikke findes. 
 </para>
 
 <programlisting>
@@ -2485,23 +2485,23 @@ rm -rf $JAIL findesikke
 
 <para>
 Hvis det er lykkedes at oprette mappestrukturen samt montere
-<filename>/dev</filename> filerne i foregående afsnit, er filsystemet
-klart til at isolere DNS-serveren og dermed også isolere en eventuel
+<filename>/dev</filename> filerne i foregÃ¥ende afsnit, er filsystemet
+klart til at isolere DNS-serveren og dermed ogsÃ¥ isolere en eventuel
 angriber. 
 </para>
 
 <para>
-Det eneste der mangler nu er at fortælle DNS-serveren at den skal 
-isoleres i denne del af filsystemet og køre som en bestemt bruger. 
-Tidligere versioner af DNS-serveren måtte genoversættes 
-til formålet, men BIND version 9 kan bruges uden videre ved 
-at tilføje nogle parametre til kommandolinjen. Disse parametre er: 
+Det eneste der mangler nu er at fortÃ¦lle DNS-serveren at den skal 
+isoleres i denne del af filsystemet og kÃ¸re som en bestemt bruger. 
+Tidligere versioner af DNS-serveren mÃ¥tte genoversÃ¦ttes 
+til formÃ¥let, men BIND version 9 kan bruges uden videre ved 
+at tilfÃ¸je nogle parametre til kommandolinjen. Disse parametre er: 
 </para>
 
 <itemizedlist mark="bullet">
 <listitem> 
  <para>
-<filename>-u named</filename> processen skal køre som brugeren named i
+<filename>-u named</filename> processen skal kÃ¸re som brugeren named i
 stedet for root. 
  </para>
 </listitem>
@@ -2515,7 +2515,7 @@ stedet for root.
 </itemizedlist>
 
 <para>
-Der tilføjes nogle linjer til opstartsfilerne: 
+Der tilfÃ¸jes nogle linjer til opstartsfilerne: 
 </para>
 
 <programlisting>
@@ -2524,11 +2524,11 @@ opts="-u named -t /opt/chroot/named" &amp;&amp;
 </programlisting>
 
 <para>
-For at gøre opsætningen varig, kan ovenstående sættes ind i opstartsfilen. 
+For at gÃ¸re opsÃ¦tningen varig, kan ovenstÃ¥ende sÃ¦ttes ind i opstartsfilen. 
 </para>
 
 <para>
-I Red Hat ser opstartsfilen således ud med ovenstående ændringer: 
+I Red Hat ser opstartsfilen sÃ¥ledes ud med ovenstÃ¥ende Ã¦ndringer: 
 </para>
 
 <programlisting>
@@ -2608,7 +2608,7 @@ daemon named $OPTS
 </programlisting>
 
 <para>
-I Debian ser opstartsfilen således ud for bind version 9: 
+I Debian ser opstartsfilen sÃ¥ledes ud for bind version 9: 
 </para>
 
 <programlisting>
@@ -2654,19 +2654,19 @@ exit 0
 </programlisting>
 
 <para>
-Med ovenstående opstartsfil kan serveren køre efter genstart, 
+Med ovenstÃ¥ende opstartsfil kan serveren kÃ¸re efter genstart, 
 uden indgreb fra administrator. 
 </para>
 </sect2>
 
 
 <sect2 id="chroot-dns-start">
-<title>Afprøvning af DNS-serveren</title>
+<title>AfprÃ¸vning af DNS-serveren</title>
 
 <para>
 For at starte DNS-processen uden at genstart maskinen, giver man
-følgende kommando i henholdsvis Red Hat og Debian (den er desuden pyntet med lidt &amp;&amp;
-krusiduller og Co. for at man kan se hvordan opstarten går): 
+fÃ¸lgende kommando i henholdsvis Red Hat og Debian (den er desuden pyntet med lidt &amp;&amp;
+krusiduller og Co. for at man kan se hvordan opstarten gÃ¥r): 
 </para>
 
 <screen>
@@ -2694,16 +2694,16 @@ Jun  8 14:29:29 ns named[311]: zone localhost/IN: loaded serial 1
 </programlisting>
 
 <para>
-Hvis alting er som det skal være, udskrives noget der ligner det
-ovenstående. 
+Hvis alting er som det skal vÃ¦re, udskrives noget der ligner det
+ovenstÃ¥ende. 
 </para>
 
 <para>
-Opsætningen kan desuden afprøves ved at 
-se om bind virkelig kører samt kigge i logfiler. 
- Hvis bind kører, vil kommandoen 
+OpsÃ¦tningen kan desuden afprÃ¸ves ved at 
+se om bind virkelig kÃ¸rer samt kigge i logfiler. 
+ Hvis bind kÃ¸rer, vil kommandoen 
 <command>ps aux | grep named</command> vise en eller flere 
-linjer som den følgende: 
+linjer som den fÃ¸lgende: 
 </para>
 
 <programlisting>
@@ -2712,36 +2712,36 @@ named 2043 0.0  2.8 10396 1432 ?  S  03:11 0:00 /usr/sbin/named \
 </programlisting>
 
 <para>
-Ovenstående linje bekræfter at BIND kører som den upriviligerede bruger 
+OvenstÃ¥ende linje bekrÃ¦fter at BIND kÃ¸rer som den upriviligerede bruger 
 <filename>named</filename> og at den er isoleret i
 <filename>/opt/chroot/named</filename> som hensigten var.
 </para>
 
 <para>
-Den afgørende bekræftelse af opsætningen får man hvis serveren svarer
-når den forepørges om forskellige domæner. Hvid den er
-authoritativ/primær DNS-server for et domæne bør man selvfølgelig
-forespørge DNS-serveren om dette domæne. Man kan konkludere at
-"chroot" opsætningen er korrekt hvis serveren svarer. 
+Den afgÃ¸rende bekrÃ¦ftelse af opsÃ¦tningen fÃ¥r man hvis serveren svarer
+nÃ¥r den forepÃ¸rges om forskellige domÃ¦ner. Hvid den er
+authoritativ/primÃ¦r DNS-server for et domÃ¦ne bÃ¸r man selvfÃ¸lgelig
+forespÃ¸rge DNS-serveren om dette domÃ¦ne. Man kan konkludere at
+"chroot" opsÃ¦tningen er korrekt hvis serveren svarer. 
 </para>
 
 <para>
-Hvis der er noget i vejen, kan man få  yderligere  oplysninger kan
+Hvis der er noget i vejen, kan man fÃ¥  yderligere  oplysninger kan
 findes i logfilen med kommandoen <command>tail
 /var/log/daemon.log</command> eller <command>tail
 /var/log/messages</command>. 
 </para>
 
 <para>
-Hvis serveren ikke kører, bør man kigge nærmere efter om alle filer og mapper er
-placeret som de skal og om der er manglende sammenhæng mellem de
-filnavne der er angivet i opsætningsfilerne og de filnavne og
+Hvis serveren ikke kÃ¸rer, bÃ¸r man kigge nÃ¦rmere efter om alle filer og mapper er
+placeret som de skal og om der er manglende sammenhÃ¦ng mellem de
+filnavne der er angivet i opsÃ¦tningsfilerne og de filnavne og
 mappenavne der blev oprettet. 
 </para>
 
 <para>
-Alle øvrige problmemer med DNS-serveren har at gøre med den generelle
-opsætning i opsætningsfilerne. Yderligere oplysninger om opsætning
+Alle Ã¸vrige problmemer med DNS-serveren har at gÃ¸re med den generelle
+opsÃ¦tning i opsÃ¦tningsfilerne. Yderligere oplysninger om opsÃ¦tning
 og test af DNS, findes i <xref linkend="om-dns"/>.
 </para>
 
@@ -2755,31 +2755,31 @@ og test af DNS, findes i <xref linkend="om-dns"/>.
 </indexterm>
 
 <!-- 
-Dette afsnit skal flyttes til nogle af de foregående afsnit idet det 
+Dette afsnit skal flyttes til nogle af de foregÃ¥ende afsnit idet det 
 handler egentlig ikke om chroot. Jeg vil dog vente lidt med det indtil
-vi har set hvordan alle disse ændringer fungerer sammen. 
+vi har set hvordan alle disse Ã¦ndringer fungerer sammen. 
 --> 
 
 <para>
 Dette afsnit handler hovedsagelig om hvordan DNS-serveren 
-BIND 9 opfører sig når den kører som upriviligeret bruger. 
-Selve opsætningen omhandles i foregående afsnit. 
+BIND 9 opfÃ¸rer sig nÃ¥r den kÃ¸rer som upriviligeret bruger. 
+Selve opsÃ¦tningen omhandles i foregÃ¥ende afsnit. 
 </para>
 
 <para>
-Traditionelt set, tilhører alle porte lavere end 1024 til 
-root eller daemoner der kører som root. Når BIND køres som 
+Traditionelt set, tilhÃ¸rer alle porte lavere end 1024 til 
+root eller daemoner der kÃ¸rer som root. NÃ¥r BIND kÃ¸res som 
 en upriviligeret bruger, har den ikke rettigheder til at 
-sende førespørgsler til andre servere fra port 53. 
-Som udgangspunkt vil den vælge et tilfældigt upriviligeret 
-port at sende fra. Hvis netværket beskyttes af en dørvogter 
+sende fÃ¸respÃ¸rgsler til andre servere fra port 53. 
+Som udgangspunkt vil den vÃ¦lge et tilfÃ¦ldigt upriviligeret 
+port at sende fra. Hvis netvÃ¦rket beskyttes af en dÃ¸rvogter 
 der udtrykkeligt specificerer hvilket port DNS-serveren 
-kan sende fra, vil forespørgslerne ikke kunne komme forbi
-dørvogteren. For at afhjælpe dette kan man vælge en bestemt
+kan sende fra, vil forespÃ¸rgslerne ikke kunne komme forbi
+dÃ¸rvogteren. For at afhjÃ¦lpe dette kan man vÃ¦lge en bestemt
 upriviligeret port,  f.eks. 1053 og 
-sætte BIND op til kun at bruge denne port som afsenderport. 
-I den overordnede opsætningsfil til BIND 
-bør den nederste af de følgende linjer tilføjes i sektionen options {}:
+sÃ¦tte BIND op til kun at bruge denne port som afsenderport. 
+I den overordnede opsÃ¦tningsfil til BIND 
+bÃ¸r den nederste af de fÃ¸lgende linjer tilfÃ¸jes i sektionen options {}:
 </para>
 
 <programlisting>
@@ -2790,26 +2790,26 @@ bør den nederste af de følgende linjer tilføjes i sektionen options {}:
 </programlisting>
 
 <para>
-<!-- Det følgende skal skrives sammen med de foregående afsnit når
-afsnittene om sikret-dns har vist sit værd --> 
+<!-- Det fÃ¸lgende skal skrives sammen med de foregÃ¥ende afsnit nÃ¥r
+afsnittene om sikret-dns har vist sit vÃ¦rd --> 
 I eksemplet ovenfor, har serveren IP-nummeret 
-192.168.8.1 på trods af at det er en offentlig 
-DNS server. Forklaringen er, at serveren ikke har fået 
+192.168.8.1 pÃ¥ trods af at det er en offentlig 
+DNS server. Forklaringen er, at serveren ikke har fÃ¥et 
 tildelt et offentligt IP-nummer, men trafik til den bliver 
-dirigeret til den gennem en dørvogter. 
-Dørvogteren skal blot ændres så den tillader udgående trafik 
+dirigeret til den gennem en dÃ¸rvogter. 
+DÃ¸rvogteren skal blot Ã¦ndres sÃ¥ den tillader udgÃ¥ende trafik 
 med dette source port. 
-Dermed kan BIND fortsætte med at fungere bag selv den mest 
-restriktive dørvogter. 
+Dermed kan BIND fortsÃ¦tte med at fungere bag selv den mest 
+restriktive dÃ¸rvogter. 
 </para>
 </sect2>
 
   <sect2 id="dns-upriviligeret-test">
-   <title>Testkørsel af DNS serveren.</title>
+   <title>TestkÃ¸rsel af DNS serveren.</title>
 
-   <!-- Dette afsnit skal flyttes til nogle af de foregående afsnit i
+   <!-- Dette afsnit skal flyttes til nogle af de foregÃ¥ende afsnit i
         det det handler egentlig ikke om chroot. Jeg vil dog vente
-        lidt med det indtil vi har set hvordan alle disse ændringer
+        lidt med det indtil vi har set hvordan alle disse Ã¦ndringer
         fungerer sammen.  -->
 
    <indexterm>
@@ -2818,14 +2818,14 @@ restriktive dørvogter.
    </indexterm>
 
    <para>
-    Hvis serveren kører, bør den kunne svare på forespørgsler. Der
-    findes flere værktøj til dette men her skal nævnes det nu snart
-    forældede "<command>nslookup</command>" samt
+    Hvis serveren kÃ¸rer, bÃ¸r den kunne svare pÃ¥ forespÃ¸rgsler. Der
+    findes flere vÃ¦rktÃ¸j til dette men her skal nÃ¦vnes det nu snart
+    forÃ¦ldede "<command>nslookup</command>" samt
     "<command>dig</command>". Man kan bede "<command>dig</command>" om
-    at forespørge en vilkårlig DNS server ved blot at angive dens
-    IP-nummer med parameteren <literal>@</literal>.  I det følgende
+    at forespÃ¸rge en vilkÃ¥rlig DNS server ved blot at angive dens
+    IP-nummer med parameteren <literal>@</literal>.  I det fÃ¸lgende
     eksempel, skal den nyopsatte DNS-server give os oplysninger om
-    domænet "sslug.dk".
+    domÃ¦net "sslug.dk".
 
 <screen>
 <prompt>[tyge@hven tyge]$ </prompt><userinput>dig @192.168.8.1 sslug.dk</userinput>
@@ -2859,19 +2859,19 @@ ns-soa.darenet.dk.      71539   IN      A       130.226.1.4
    </para>
 
    <para>
-    Sådan kan man afprøve serveren ved at pege den på forskellige
-    domæner. Hvid den er authoritativ/primær DNS-server for et domæne
-    bør man selvfølgelig forespørge DNS-serveren om dette domæne. Man
-    kan konkludere at "chroot" opsætningen er korrekt hvis serveren
+    SÃ¥dan kan man afprÃ¸ve serveren ved at pege den pÃ¥ forskellige
+    domÃ¦ner. Hvid den er authoritativ/primÃ¦r DNS-server for et domÃ¦ne
+    bÃ¸r man selvfÃ¸lgelig forespÃ¸rge DNS-serveren om dette domÃ¦ne. Man
+    kan konkludere at "chroot" opsÃ¦tningen er korrekt hvis serveren
     svarer.
    </para>
 
    <para>
-    En af de ting der gør <command>dig</command> interessant
-    sammenlignet med <command>nslookup</command> er at man let kan få
+    En af de ting der gÃ¸r <command>dig</command> interessant
+    sammenlignet med <command>nslookup</command> er at man let kan fÃ¥
     fat i alle de forskellige oplysninger der ligger i DNS.  Til
-    gengæld giver <command>dig</command> også en masse oplysninger man
-    normalt ikke er interesseret i, så det kan være nødvendigt at
+    gengÃ¦ld giver <command>dig</command> ogsÃ¥ en masse oplysninger man
+    normalt ikke er interesseret i, sÃ¥ det kan vÃ¦re nÃ¸dvendigt at
     filtrere programmets uddata lidt.
    </para>
 
@@ -2912,9 +2912,9 @@ sarastro.nbi.dk.        86400   IN      A       130.225.212.46
 
 </screen>
 
-    Der kommer altså en hel masse data, hvoraf det eneste vi egentlig
+    Der kommer altsÃ¥ en hel masse data, hvoraf det eneste vi egentlig
     er interesserede i er "ANSWER SECTION".  Med tilvalget
-    <literal>+short</literal> kan vi få <command>dig</command> til kun
+    <literal>+short</literal> kan vi fÃ¥ <command>dig</command> til kun
     at give os det egentlige svar:
 
 <screen>
@@ -2924,7 +2924,7 @@ sarastro.nbi.dk.        86400   IN      A       130.225.212.46
    </para>
 
    <para>
-    Man kan også bruge <command>dig</command> til at få oplysninger
+    Man kan ogsÃ¥ bruge <command>dig</command> til at fÃ¥ oplysninger
     som maskinens IP-adresse:
 
 <screen>
@@ -2932,7 +2932,7 @@ sarastro.nbi.dk.        86400   IN      A       130.225.212.46
 130.225.212.98
 </screen>
 
-    Hvilke maskiner der står for et domænes navnetjeneste:
+    Hvilke maskiner der stÃ¥r for et domÃ¦nes navnetjeneste:
 
 <screen>
 <prompt>[tyge@hven tyge]$ </prompt><userinput>dig linuxlab.dk NS +short</userinput>
@@ -2940,15 +2940,15 @@ www.itu.dk.
 ns-soa.darenet.dk.
 </screen>
 
-    Eventuelt også lidt oplysninger om selve isenkrammet:
+    Eventuelt ogsÃ¥ lidt oplysninger om selve isenkrammet:
 
 <screen>
 <prompt>[tyge@hven tyge]$ </prompt><userinput>dig kaoslx07.nbi.dk HINFO +short</userinput>
 "Pentium 4/1.5GHz" "Linux 7.3/2.4.18"
 </screen>
 
-    Endelig kan man også få lidt løse uformaterede oplysninger om
-    domænet:
+    Endelig kan man ogsÃ¥ fÃ¥ lidt lÃ¸se uformaterede oplysninger om
+    domÃ¦net:
 
 <screen>
 <prompt>[tyge@hven tyge]$ </prompt><userinput>dig nbi.dk TXT +short</userinput>

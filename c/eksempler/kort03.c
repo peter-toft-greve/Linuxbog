@@ -1,6 +1,6 @@
 
-/* kort03.c kortspil - repræsentation */
-/* Næsten som kort02.c, men uden jokere. */
+/* kort03.c kortspil - reprÃ¦sentation */
+/* NÃ¦sten som kort02.c, men uden jokere. */
 /* Skriv alle kort-navne ud */
 
 #include <stdio.h>
@@ -16,9 +16,9 @@ enum farve_t {
 char *farve(enum farve_t kk)
 {
     static char *names[] = { 
-        "klør", "ruder", "hjerter", "spar"
+        "klÃ¸r", "ruder", "hjerter", "spar"
     };
-    return names[kk];  /* callers ansvar at kk er indenfor grænser */
+    return names[kk];  /* callers ansvar at kk er indenfor grÃ¦nser */
 }
 
 struct kort_t {

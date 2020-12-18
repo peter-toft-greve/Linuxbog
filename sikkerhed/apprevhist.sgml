@@ -5,13 +5,13 @@
 
 <para>
 Denne bog er skabt ud fra de seks artikler om introduktion til
-sikkerhed skrevet af Hanne Munkholm og Peter Toft, der kan findes på 
+sikkerhed skrevet af Hanne Munkholm og Peter Toft, der kan findes pÃ¥ 
 <ulink url="http://&linuxbogurl;/sikkerhed">&linuxbogurl;/sikkerhed</ulink>.
 </para>
 
 <para>
 Vedligeholdelse af bogen koordineres via SSLUG postlisten
-&lt;sslug-bog@sslug.dk&gt; Alle kan bidrage - til om tilmelding på <ulink url="http://www.sslug.dk/tilmeld">http://www.sslug.dk/tilmeld</ulink>.
+&lt;sslug-bog@sslug.dk&gt; Alle kan bidrage - til om tilmelding pÃ¥ <ulink url="http://www.sslug.dk/tilmeld">http://www.sslug.dk/tilmeld</ulink>.
 </para>
 
 
@@ -26,8 +26,8 @@ Link til cert.org's alert arkiv.
 <listitem><para>
 Version 2.9.20040518 - 18. maj 2004:
 
-Jacob Sparre Andersen: Retter sprog og opmærkning.
-Rettelser fra dip.nerd.dk og Henrik Kramshøj.
+Jacob Sparre Andersen: Retter sprog og opmÃ¦rkning.
+Rettelser fra dip.nerd.dk og Henrik KramshÃ¸j.
 
 </para></listitem>
 
@@ -38,7 +38,7 @@ Donald Axel har skrevet Firewall afsnittet om. Iptables
 kommandoen beskrives grundigt, og der er kommet mange
 GUI-firewall tools med, tak til Torkil Zachariassen
 &lt;torkil@flug.fo&gt; for Firewall screenshots og tekst. Har
-fået ideer fra mange Linuxbog-læsere, blandt andet fra en, som
+fÃ¥et ideer fra mange Linuxbog-lÃ¦sere, blandt andet fra en, som
 hedder "Kim" (husk altid efternavn), tak for det. Tak til Kenneth
 Ahn Jensen for korrektur.
 Jacob Sparre Andersen: Retter sprog.
@@ -46,13 +46,13 @@ Jacob Sparre Andersen: Retter sprog.
 
 <listitem><para> 
 Version 2.8 - 7. oktober 2003:
-Peter Toft tilføjer link til NMAP-artikel.
+Peter Toft tilfÃ¸jer link til NMAP-artikel.
 
-Jacob Sparre Andersen retter små sproglige fejl.
+Jacob Sparre Andersen retter smÃ¥ sproglige fejl.
 
 Afsnit om fish overflyttes fra itplatform.
 
-Johnny Ernst Nielsen sletter døde links.
+Johnny Ernst Nielsen sletter dÃ¸de links.
 
 </para></listitem>
 
@@ -60,51 +60,51 @@ Johnny Ernst Nielsen sletter døde links.
 <listitem><para> 
 Version 2.7 - 6. april 2003:
 Navngivning (bruger/maskine) til alle eksempler lavet om.
-Donald Axel og Peter Toft reviderer tekst om SSH på 
-opfordring fra Lars Sørensen.
+Donald Axel og Peter Toft reviderer tekst om SSH pÃ¥ 
+opfordring fra Lars SÃ¸rensen.
 </para></listitem>
 
 
 <listitem><para> 
 Version 2.6 - 1. december 2002:
-Thomas Hjorth og Peter Toft retter et par småfejl.
+Thomas Hjorth og Peter Toft retter et par smÃ¥fejl.
 Peter Toft opdaterer tekst om sudo.
 </para></listitem>
 
 
 <listitem><para> 
 Version 2.6 - 1. december 2002:
-Thomas Hjorth og Peter Toft retter et par småfejl.
+Thomas Hjorth og Peter Toft retter et par smÃ¥fejl.
 Peter Toft opdaterer tekst om sudo.
 </para></listitem>
 
 <listitem><para> 
 Version 2.5 - 1. september 2002:
-Peter Toft: URL til Putty ændret og afsnit om honeypot startet.
-Jacob Sparre Andersen - Harmoniseret brugen af <command>tar</command>. Udbedret logiske fejl i SGML-koden. Prøvet at sørge for at standardnavne for brugere og maskiner svarer til resten af bøgerne (tyge@hven).
+Peter Toft: URL til Putty Ã¦ndret og afsnit om honeypot startet.
+Jacob Sparre Andersen - Harmoniseret brugen af <command>tar</command>. Udbedret logiske fejl i SGML-koden. PrÃ¸vet at sÃ¸rge for at standardnavne for brugere og maskiner svarer til resten af bÃ¸gerne (tyge@hven).
 <!--Jacob Hilmer har inspireret til nyt afsnit om tunnel med SSH.-->
 </para></listitem>
 
 
 <listitem><para> 
 Version 2.4 - 14. juni 2002:
-Casper S finder en slåfejl.
+Casper S finder en slÃ¥fejl.
 Donald Axel retter et par trykfejl.
-Jacob Sparre Andersen: Rettet sproglige småfejl.
+Jacob Sparre Andersen: Rettet sproglige smÃ¥fejl.
 </para></listitem>
 
 
 <listitem><para> 
 Version 2.3 - 10. marts 2002:
-Casper S finder en slåfejl.
+Casper S finder en slÃ¥fejl.
 </para></listitem>
 
 
 <listitem><para> 
 Version 2.2 - 29. december 2001:
-Peter Toft: Nyt stort afsnit om Tripwire tilføjet. Har 
-også skrevet mere om OpenSSH (efter inspiration fra 
-Henrik Størner). Lille ændring i stikord.
+Peter Toft: Nyt stort afsnit om Tripwire tilfÃ¸jet. Har 
+ogsÃ¥ skrevet mere om OpenSSH (efter inspiration fra 
+Henrik StÃ¸rner). Lille Ã¦ndring i stikord.
 Christian Andersen har lavet en opdatering mht. 
 at ipchains nu er standard med i nyere Red Hat versioner.
 </para></listitem>
@@ -113,8 +113,8 @@ at ipchains nu er standard med i nyere Red Hat versioner.
 <listitem><para> 
 Version 2.1 - 21. oktober 2001:
 Peter Toft: Link til artikler om NMAP, Tripwire og firewall-test.
-Henrik Lund Kramshøj har kommet med en tilføjelse til at få X-serveren
-skjult for netværket.
+Henrik Lund KramshÃ¸j har kommet med en tilfÃ¸jelse til at fÃ¥ X-serveren
+skjult for netvÃ¦rket.
 Jacob Sparre Andersen: Rettet enheder til (MHz = megahertz, Mbit = megabit,
 Mb = megabyte).
 </para></listitem>
@@ -129,14 +129,14 @@ Rolf Therkildsen: Peter Toft retter overgang fra inetd til xinetd.
 
 <listitem><para> 
 Version 1.9 - 9. juli 2001:
-Peter Toft: En stribe indeks-referencer indsat (Tak til Claus Sørensen for at
-nævne dette). Desuden masser af stil-ændringer, så det er langt
+Peter Toft: En stribe indeks-referencer indsat (Tak til Claus SÃ¸rensen for at
+nÃ¦vne dette). Desuden masser af stil-Ã¦ndringer, sÃ¥ det er langt
 tydeligere hvad brugeren skriver i eksemplerne.
-Har også tilføjet en henvisning til ny bog om Office.
-Ole Michaelsen: Har tilføjet en langt bedre forklaring på hvorfor man
+Har ogsÃ¥ tilfÃ¸jet en henvisning til ny bog om Office.
+Ole Michaelsen: Har tilfÃ¸jet en langt bedre forklaring pÃ¥ hvorfor man
 aldrig skal bruge xhost-kommandoen.
-Claus Nielsen har rettet op på status for Tripwire.
-Henrik Christian Grove fandt serie døde URL'er som er rettet op.
+Claus Nielsen har rettet op pÃ¥ status for Tripwire.
+Henrik Christian Grove fandt serie dÃ¸de URL'er som er rettet op.
 Ole Tange fangede en stribe format-fejl.
 </para>
 </listitem>
@@ -150,61 +150,61 @@ Peter Toft: Lille SGML-fejl rettet.
 
 <listitem><para> 
 Version 1.7 - 12. marts 2001:
-Hanne Munkholm har opdateret firewall-kapitlet så det er ajour med
+Hanne Munkholm har opdateret firewall-kapitlet sÃ¥ det er ajour med
 kerne 2.4.
-Peter Toft: Link til sbscan væk, projektet er vist dødt.
-Henrik Christian Grove fandt en dum trykfejl i oversigt over bøger.
+Peter Toft: Link til sbscan vÃ¦k, projektet er vist dÃ¸dt.
+Henrik Christian Grove fandt en dum trykfejl i oversigt over bÃ¸ger.
 Jacob Sparre Andersen har lavet sproglige rettelser.
 </para>
 </listitem>
 
 <listitem><para> 
 Version 1.6 - 4. februar 2001:
-Peter Toft: Ny bog om Docbook nævnt i serien. Rettet tre SGML-fejl 
-i henvisninger. Tilføjet link til god artikel om SSH.
-Tommy Mogensen fandt en sprogbøf.
+Peter Toft: Ny bog om Docbook nÃ¦vnt i serien. Rettet tre SGML-fejl 
+i henvisninger. TilfÃ¸jet link til god artikel om SSH.
+Tommy Mogensen fandt en sprogbÃ¸f.
 Jacob Sparre Andersen og Hans Schou: Rettet nogle sproglige fejl.
-Kristian Støchkel fandt en URL, som ikke virkede længere.
+Kristian StÃ¸chkel fandt en URL, som ikke virkede lÃ¦ngere.
 </para>
 </listitem>
 
 <listitem> <para> Version 1.5 - 29. december 2000:
-SGML fejl rettet, så henvisninger er i orden igen.
-Peter Toft har skrevet afsnit om SSH helt om, så OpenSSH er det
+SGML fejl rettet, sÃ¥ henvisninger er i orden igen.
+Peter Toft har skrevet afsnit om SSH helt om, sÃ¥ OpenSSH er det
 foretrukne valg. Der er anvendt input fra Mayank Sarup.
-Claus Sørensen om SSH-klienter til Windows - slettet en henvisning.
+Claus SÃ¸rensen om SSH-klienter til Windows - slettet en henvisning.
 Link til den nye bog "Linux - friheden til at programmere i C".
 </para>
 </listitem>
 
 <listitem> <para> Version 1.4 - 3. december 2000:
-Lille skønhedsfejl rettet (manglede en prompt) - tak til Ole
+Lille skÃ¸nhedsfejl rettet (manglede en prompt) - tak til Ole
 Michaelsen og Jesper Laisen.
 </para>
 </listitem>
 
 
 <listitem> <para> Version 1.3 - 10. november 2000:
-Langt større stikordsregister er nu med.
+Langt stÃ¸rre stikordsregister er nu med.
 </para>
 </listitem>
 
 
 <listitem> <para> Version 1.2 - 26. oktober 2000:
-Masser af rettelser fra Claus Sørensen.
+Masser af rettelser fra Claus SÃ¸rensen.
 </para>
 </listitem>
 
 
 
 <listitem> <para> Version 1.1 - 30. august 2000: Tomas Bertelsen fandt
-en dårlig henvisning.  Mads Sejersen fandt URL fejl, sikkerhedsproblem
+en dÃ¥rlig henvisning.  Mads Sejersen fandt URL fejl, sikkerhedsproblem
 ved screensaver + et par andre SGML fejl.
 </para>
 </listitem>
 
 <listitem> <para> Version 1.0 - 30. juli 2000:
-Første offentlige bogversion.
+FÃ¸rste offentlige bogversion.
 </para>
 </listitem>
 </itemizedlist>

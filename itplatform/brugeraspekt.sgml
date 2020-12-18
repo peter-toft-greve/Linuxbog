@@ -1,25 +1,25 @@
 <chapter id="brugertilpasning">
-<title>Brugeropsætning og brugertilpasning</title>
+<title>BrugeropsÃ¦tning og brugertilpasning</title>
 <para>
 </para>
 <sect1 id="whatis-bt">
-<title>Hvordan gøres det i Linux</title>
+<title>Hvordan gÃ¸res det i Linux</title>
 <para>
-Forskelle og ligheder med proprietær software.
+Forskelle og ligheder med proprietÃ¦r software.
 </para>
 </sect1>
 
 <sect1 id="economi-bt">
-<title>Økonomi</title>
+<title>Ã˜konomi</title>
 <para>
-Økonomiske konsekvenser.
+Ã˜konomiske konsekvenser.
 </para>
 </sect1>
 
 <sect1 id="security-bt">
 <title>Sikkerhedsproblematikken</title>
 <para>
-Er det sikrere end proprietært software
+Er det sikrere end proprietÃ¦rt software
 </para>
 </sect1>
 

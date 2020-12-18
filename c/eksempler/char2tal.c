@@ -7,7 +7,7 @@ int main()
 {
     int c;
     while ( (c=getchar()) != EOF) {
-      printf("Decimal-værdi %3d, hexadecimal værdi 0x%2x ", c, c);
+      printf("Decimal-vÃ¦rdi %3d, hexadecimal vÃ¦rdi 0x%2x ", c, c);
       if (c > 31 && c < 127)
           printf("%c\n", c);
       else

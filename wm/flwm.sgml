@@ -7,16 +7,16 @@
 <indexterm><primary>flwm</primary></indexterm>
 <indexterm><primary>Windowmanager</primary><secondary>flvm</secondary></indexterm>
 
-<para>FLWM, The Fast Light Window Manager, tilhører gruppen
-så-let-som-muligt windowmanagere, og er én af nogle stykker der bygger
-på samme ideer som WM2.
+<para>FLWM, The Fast Light Window Manager, tilhÃ¸rer gruppen
+sÃ¥-let-som-muligt windowmanagere, og er Ã©n af nogle stykker der bygger
+pÃ¥ samme ideer som WM2.
 Det er et godt stykke tid siden der er
-gjort noget ved den og versionsnummeret er da også 1.00.
+gjort noget ved den og versionsnummeret er da ogsÃ¥ 1.00.
 </para>
 
 <para> 
 Umiddelbart vil jeg tro at der ikke sker mere
-med den, da det nok vil være svært at udbygge den og samtidig være tro
+med den, da det nok vil vÃ¦re svÃ¦rt at udbygge den og samtidig vÃ¦re tro
 mod keep-it-simple ideen.
 </para>
 
@@ -24,13 +24,13 @@ mod keep-it-simple ideen.
   <title>Installation</title>
 
   <para>
-   På et Debian-system klares installationen med
+   PÃ¥ et Debian-system klares installationen med
    <command>apt-get install flwm</command>.
   </para>
 
 <para>
-Jeg hentede en <ulink url="http://flwm.sourceforge.net/flwm-1.00-x86.tgz">prækompileret
-udgave</ulink>. Man kan ikke hente Red Hat-pakker på webstedet.
+Jeg hentede en <ulink url="http://flwm.sourceforge.net/flwm-1.00-x86.tgz">prÃ¦kompileret
+udgave</ulink>. Man kan ikke hente Red Hat-pakker pÃ¥ webstedet.
 
 <screen>
 kvi@snake ~ -> tar tzf flwm-1.00-x86.tgz 
@@ -41,12 +41,12 @@ kvi@snake ~ ->
 </para>
 
 <para>
-Selve den kørbare fil og en tilhørende brugsanvisning.
+Selve den kÃ¸rbare fil og en tilhÃ¸rende brugsanvisning.
 </para>
 
 <para>
 Jeg kopierede <command>flwm</command> til <command>/usr/local/bin</command> og
-manualsiden til <command>/usr/local/man/man1</command> , og ændrede så min <command>.xsession</command> : 
+manualsiden til <command>/usr/local/man/man1</command> , og Ã¦ndrede sÃ¥ min <command>.xsession</command> : 
 </para>
 
 <screen>
@@ -59,30 +59,30 @@ kvi@snake ~ ->
 </screen>
 
 <figure id="flwm-menu-fig" float="1">
-<title>Flwm. I uopsat udgave kan man ikke andet end at få en minimal menu ved
-at klikke på baggrunden</title>
+<title>Flwm. I uopsat udgave kan man ikke andet end at fÃ¥ en minimal menu ved
+at klikke pÃ¥ baggrunden</title>
 <graphic fileref="flwm_menu.&magic;" scale="60"></graphic>
 </figure>
 
 <para> 
-En ganske sjov feature er måden hvorpå FLWM shader vinduer. Vinduets
-titlebar sidder lodret på venstre side, og ligeledes kan vinduet kun
+En ganske sjov feature er mÃ¥den hvorpÃ¥ FLWM shader vinduer. Vinduets
+titlebar sidder lodret pÃ¥ venstre side, og ligeledes kan vinduet kun
 shades til en lodret barre.
 </para>
 
 <para>
-Der er fem knapper på hvert vindue. En blank til ikonisering, en
+Der er fem knapper pÃ¥ hvert vindue. En blank til ikonisering, en
 shade-knap og to til at maksimere vinduet: den ene horisontalt, den anden
-vertikalt. Den sidste knap lukker vinduet, og er placeret nederst i på
+vertikalt. Den sidste knap lukker vinduet, og er placeret nederst i pÃ¥
 barren.</para>
 
 <para>
-I menuen findes punktet "New desktop". Det gør hvad det siger: laver en ny
+I menuen findes punktet "New desktop". Det gÃ¸r hvad det siger: laver en ny
 desktop, som man kan navngive efter behov.
 </para>
 
 <para>
-Men læg mærke til at disse desktops ikke gemmes når man afslutter FLWM.</para>
+Men lÃ¦g mÃ¦rke til at disse desktops ikke gemmes nÃ¥r man afslutter FLWM.</para>
 
 
 <figure id="flwm-fullscreen-fig" float="1">
@@ -92,17 +92,17 @@ Men læg mærke til at disse desktops ikke gemmes når man afslutter FLWM.</para>
 </sect2>    <!--   Installation -->
 
 <sect2 id="wm-flwm-opsaetning">
-  <title>Opsætning</title>
+  <title>OpsÃ¦tning</title>
 
 <para>
-For at ændre på menuen skal kataloget <command>$HOME/.wmx</command> oprettes.
-Heri lægges kørbare filer for de programmer der skal optræde i
-menuen. De vil optræde med filens navn i menuen, så lidt omtanke med
-navngivningen er hensigtsmæssig.</para>
+For at Ã¦ndre pÃ¥ menuen skal kataloget <command>$HOME/.wmx</command> oprettes.
+Heri lÃ¦gges kÃ¸rbare filer for de programmer der skal optrÃ¦de i
+menuen. De vil optrÃ¦de med filens navn i menuen, sÃ¥ lidt omtanke med
+navngivningen er hensigtsmÃ¦ssig.</para>
 
 <para>
-Men kan med fordel nøjes med at oprette symbolske links hvor det er
-muligt. Og ellers kan små shellscripts gøre det:
+Men kan med fordel nÃ¸jes med at oprette symbolske links hvor det er
+muligt. Og ellers kan smÃ¥ shellscripts gÃ¸re det:
 </para>
 
 <screen>
@@ -121,7 +121,7 @@ kvi@snake ~/.wmx -> cat Galeon
 /usr/bin/galeon
 kvi@snake ~/.wmx ->
 </screen>
-</sect2>    <!--   Opsætning -->
+</sect2>    <!--   OpsÃ¦tning -->
 
 <sect2 id="wm-flwm-fed">
   <title>Er FLWM god?</title>
@@ -131,13 +131,13 @@ Ja da. Den er hurtig og nem at bruge.
 </para>
 
 <para>
-Jeg synes dog at det i længen er lidt upraktisk med den lodrette
-shading. Tilgengæld synes jeg vældig godt om muligheden for separat
+Jeg synes dog at det i lÃ¦ngen er lidt upraktisk med den lodrette
+shading. TilgengÃ¦ld synes jeg vÃ¦ldig godt om muligheden for separat
 horisontal og vertikal maximering.
 </para>
 
 <para>
-Og så ville det være rart at man ikke skal starte med at lave de samme
+Og sÃ¥ ville det vÃ¦re rart at man ikke skal starte med at lave de samme
 desktops hver gang man logger ind.
 </para>
 

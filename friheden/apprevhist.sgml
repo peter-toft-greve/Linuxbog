@@ -5,24 +5,24 @@
 
 
 <para>
-Igennem tiden har bogen "Linux - friheden til vælge" udviklet sig
-meget. Vi frigiver ofte nye versioner, når der er kommer en del
+Igennem tiden har bogen "Linux - friheden til vÃ¦lge" udviklet sig
+meget. Vi frigiver ofte nye versioner, nÃ¥r der er kommer en del
 rettelser ind, eller nye afsnit er blevet skrevet.  Kommentarer, ris
 og ros, og specielt fejl og mangler bedes sendt til <ulink
 url="mailto:linuxbog@sslug.dk">linuxbog@sslug.dk</ulink>, men er du
-medlem af SSLUG, så skriv til 
+medlem af SSLUG, sÃ¥ skriv til 
 <ulink url="mailto:sslug-bog@sslug.dk">sslug-bog@sslug.dk</ulink>. 
-Alle kan bidrage - se om tilmelding se på <ulink url="http://www.sslug.dk/tilmeld">http://www.sslug.dk/tilmeld</ulink>.
+Alle kan bidrage - se om tilmelding se pÃ¥ <ulink url="http://www.sslug.dk/tilmeld">http://www.sslug.dk/tilmeld</ulink>.
 </para>
 
 <para>
 Version 3.8 var den sidste store version af bogen - siden blev bogen
-splittet i mindre dele. Alle bøgerne kan findes på 
+splittet i mindre dele. Alle bÃ¸gerne kan findes pÃ¥ 
 <ulink url="http://&linuxbogurl;/">&linuxbogurl;/</ulink>.
 </para>
 
 <para>
-Her er en liste over, hvad der er ændret i bogen.
+Her er en liste over, hvad der er Ã¦ndret i bogen.
 </para>
 
 <itemizedlist mark="bullet">
@@ -30,7 +30,7 @@ Her er en liste over, hvad der er ændret i bogen.
 <listitem><para>
 Version 5.8.20040526 - 26. maj 2004:
 
-Jacob Sparre Andersen: Fjerner død henvisning. Retter sprog. Retter opmærkning.
+Jacob Sparre Andersen: Fjerner dÃ¸d henvisning. Retter sprog. Retter opmÃ¦rkning.
 
 </para></listitem>
 
@@ -38,15 +38,15 @@ Jacob Sparre Andersen: Fjerner død henvisning. Retter sprog. Retter opmærkning.
 Version 5.8 - 25. januar 2004:
 
 Peter Toft: Opgraderer afsnittet om Mandrake til version 9.2. Opdaterer
-Red Hat 9 afsnit til Fedora Core 1. Udelader SuSE fra denne udgave (Læs i stedet
+Red Hat 9 afsnit til Fedora Core 1. Udelader SuSE fra denne udgave (LÃ¦s i stedet
 den nye bog om valg af open source distributioner.
 
-Claus G. Henriksen har lavet nyt kapitel om Dappix. Vibeke og Hans Schou samt Claus Sørensen har
+Claus G. Henriksen har lavet nyt kapitel om Dappix. Vibeke og Hans Schou samt Claus SÃ¸rensen har
 forbedret sprog - Peter Toft har lavet XML-kodningen.
 
 Jacob Sparre Andersen: Retter sprog.
 
-Andreas E. Dalsgaard tilføjer mere om bootloader under Windows 2000/XP.
+Andreas E. Dalsgaard tilfÃ¸jer mere om bootloader under Windows 2000/XP.
 
 Donald Axel: Om GRUB hjemmeside.
 </para></listitem>
@@ -54,23 +54,23 @@ Donald Axel: Om GRUB hjemmeside.
 <listitem><para>
 Version 5.7 - 7. oktober 2003:
 Donald Axel reviderer afsnit om opstart med GRUB og LILO.
-Peter Toft tilføjer link til beskrivelse om hvordan man installerer Microsoft skrifttyper 
+Peter Toft tilfÃ¸jer link til beskrivelse om hvordan man installerer Microsoft skrifttyper 
 direkte fra internettet. Opdaterer kraftigt i afsnittet om XF86Config. Opdatering til SuSE 8.2.
 Desuden er der flere strukturelle opdateringer.
 Michael Schaumburg fanger en defekt URL.
-Roland Kruse tilføjer tekst om "su -".
+Roland Kruse tilfÃ¸jer tekst om "su -".
 Sandra Britz fanger et par dumme fejl.
-Hans Granlie tilføjer ekstra link om GRUB.
+Hans Granlie tilfÃ¸jer ekstra link om GRUB.
 Anders Lund retter lidt gammel tekst.
 </para></listitem>
 
 
 <listitem><para>
 Version 5.6 - 6. april 2003:
-Peter Toft; Link til KNOPPIX på dansk. 
+Peter Toft; Link til KNOPPIX pÃ¥ dansk. 
 Red Hat 9 og Mandrake 9.1 installationsvejledning er med. Keld Simonsen
 og Jesper Krogh retter fejl.
-Mads Kasper Gige; Afsnit om Ximian værktøjer var for gammelt - ud med det.
+Mads Kasper Gige; Afsnit om Ximian vÃ¦rktÃ¸jer var for gammelt - ud med det.
 </para></listitem>
 
 
@@ -78,125 +78,125 @@ Mads Kasper Gige; Afsnit om Ximian værktøjer var for gammelt - ud med det.
 Version 5.6 - 1. december 2002:
 Morten Christensen har skrevet et afsnit om apt4rpm.
 Peter Toft: Link til SIG11-fejl, Opdatering til Mandrake 9.0.
-lille bøf i Mandrake 8.2 KDE3 opgradering rettet, note om eksternt display og
-X-opsætning. Nyt afsnit om skrifttyper under Linux. Med input fra Jens Bygum.
+lille bÃ¸f i Mandrake 8.2 KDE3 opgradering rettet, note om eksternt display og
+X-opsÃ¦tning. Nyt afsnit om skrifttyper under Linux. Med input fra Jens Bygum.
 Anders H Lund fanger en defekt URL. 
 Claus Madsen om problem mellem SuSE 8.0 og VWware.
-Jørgen Kristensen fanger en skrivefejl.
+JÃ¸rgen Kristensen fanger en skrivefejl.
 Mads Sabroe Jensen og Keld Simonsen retter et par fejl i Mandrake og Red Hat installation.
 </para></listitem>
 
 <listitem><para>
 Version 5.5 - 1. september 2002:
-Peter Toft - Tilføjet <xref linkend="gode-redhat-sites"/>, tilføjet en 
-overskrift. Tilføjer mere om krympning af Windows partitioner under installation
-af Mandrake Linux og tilføjet vejledning i opgradering af Mandrake 8.2 til KDE 3.0.2. Mere om at hente SuSE over nettet.
+Peter Toft - TilfÃ¸jet <xref linkend="gode-redhat-sites"/>, tilfÃ¸jet en 
+overskrift. TilfÃ¸jer mere om krympning af Windows partitioner under installation
+af Mandrake Linux og tilfÃ¸jet vejledning i opgradering af Mandrake 8.2 til KDE 3.0.2. Mere om at hente SuSE over nettet.
 Skrevet nyt kapitel <xref linkend="friheden-program"/> og 
-<xref linkend="friheden-opstart"/> har fået eget kapitel. Har slettet afsnit om 3dfx som
-er forældet. Rykket en del emnet rundt, så de kommer mere logisk. Flyttet afsnit om
+<xref linkend="friheden-opstart"/> har fÃ¥et eget kapitel. Har slettet afsnit om 3dfx som
+er forÃ¦ldet. Rykket en del emnet rundt, sÃ¥ de kommer mere logisk. Flyttet afsnit om
 Emacs og mus med hjul til UNIX-bogen.
 Jacob Sparre Andersen - Harmoniseret brugen af <command>tar</command>. Udbedret logiske fejl i SGML-koden.
-Keld Simonsen retter installation af Red Hat, Mandrake, tilføjer afsnit om
+Keld Simonsen retter installation af Red Hat, Mandrake, tilfÃ¸jer afsnit om
 installation direkte via HTTP - se <xref linkend="installation-via-http"/> og mange andre mindre ting.
 Hanne Munkholm: Fejl i RH 7.3 med Latex syntax highlighting under Emacs.
 Kurt Westh Nielsen finder defekt URL til Linux-distribution for blinde.
-Anders Jørgensen inspirerer til at skrive om xset til at sætte musens hastighed.
+Anders JÃ¸rgensen inspirerer til at skrive om xset til at sÃ¦tte musens hastighed.
 Henrik Christian Grove har skrevet afsnit om swapfiler og
-printeropsætning med CUPS.
+printeropsÃ¦tning med CUPS.
 </para></listitem>
 
 
 <listitem><para>
 Version 5.4 - 14. juni 2002:
 Fjernet link til Unixsalg.
-Erling Sjørlund har skrevet installationsvejledning til SuSE 8.0
+Erling SjÃ¸rlund har skrevet installationsvejledning til SuSE 8.0
 Peter Toft: Installationsvejledning til Red Hat 7.3 og 
 tilsvarende til Mandrake 8.2.
 Jesper Krogh: Mere opdateret information om DrakConf og rpmdrake - retter
-også links op.
-Torkil Zachariassen og Jørgen Kristensen retter Red Hat afsnit til.
+ogsÃ¥ links op.
+Torkil Zachariassen og JÃ¸rgen Kristensen retter Red Hat afsnit til.
 Svend Erik Venstrup: Link til info om DMA og Red Hat.
-Peter Toft: Nyt om montering af USB-memorystick (nøglering) og hwbrowser til
+Peter Toft: Nyt om montering af USB-memorystick (nÃ¸glering) og hwbrowser til
 detektion af hardware. Mere om muligheder med autofs.
-Rune Christiansen retter størrelse på USB-nøgleringe.
-Svend Erik Venstrup og Erik Søe Sørensen retter en stribe fejl.
-Jacob Sparre Andersen: Rettet sproglige småfejl.
+Rune Christiansen retter stÃ¸rrelse pÃ¥ USB-nÃ¸gleringe.
+Svend Erik Venstrup og Erik SÃ¸e SÃ¸rensen retter en stribe fejl.
+Jacob Sparre Andersen: Rettet sproglige smÃ¥fejl.
 </para></listitem>
 
 <listitem><para>
 Version 5.5A - 16. juni 2002:
-Jacob Nordfalk tilføjer tekst om fejl i KDE til Mandrake 8.2.
+Jacob Nordfalk tilfÃ¸jer tekst om fejl i KDE til Mandrake 8.2.
 </para></listitem>
 
 
 <listitem><para>
 Version 5.3 - 10. marts 2002:
-Ny licens for bogen - Åben dokumentlicens.
+Ny licens for bogen - Ã…ben dokumentlicens.
 Peter Toft opdaterer installationsvejledning til Red Hat 7.2 og
-Jørgen Kristensen finder en smutter :)
+JÃ¸rgen Kristensen finder en smutter :)
 Stig Jensen flytter afsnit om fdisk til mere logisk sted.
 Peter Toft har skrevet nyt afsnit om GRUB-opstartsprogrammet, der
-følger med Red Hat 7.2. Erling Sjørlund retter op på et par fadæser :)
-Jacob Sparre Andersen tilføjer et par opslag til stikordsregistret.
-Peter Toft - nye links om Linux på laptops.
-Jesper Laisen skriver nyt afsnit om printer-håndtering under SuSE.
+fÃ¸lger med Red Hat 7.2. Erling SjÃ¸rlund retter op pÃ¥ et par fadÃ¦ser :)
+Jacob Sparre Andersen tilfÃ¸jer et par opslag til stikordsregistret.
+Peter Toft - nye links om Linux pÃ¥ laptops.
+Jesper Laisen skriver nyt afsnit om printer-hÃ¥ndtering under SuSE.
 Ask Holme korrigerer afsnit om GRUB mht. splash-billede.
 </para></listitem>
 
 
 <listitem><para>
 Version 5.2 - 29. december 2001:
-Jacob Sparre Andersen: Brygget videre på ordlisten.
-Peter Toft: Lille tilføjelse om ny Linux-distribution for blinde.
-Svend Erik Venstrup: Stikord og smårettelser.
+Jacob Sparre Andersen: Brygget videre pÃ¥ ordlisten.
+Peter Toft: Lille tilfÃ¸jelse om ny Linux-distribution for blinde.
+Svend Erik Venstrup: Stikord og smÃ¥rettelser.
 </para></listitem>
 
 <listitem><para>
 Version 5.1 - 21. september 2001:
 Peter Toft: Har overflyttet store dele af forordet til 
-"Linux - Friheden til at vælge IT-løsning".
+"Linux - Friheden til at vÃ¦lge IT-lÃ¸sning".
 Rettet sprog op med (login -> brugernavn, adgang hhv. adgangskontrol).
 Nyt afsnit om USB-modem efter forslag fra Jens Bygum.
-Lars K. Schunk har rettet ca. 1000 sproglige fejl - kæmpe indsats.
+Lars K. Schunk har rettet ca. 1000 sproglige fejl - kÃ¦mpe indsats.
 Jacob Sparre Andersen: Rettet enheder til (MHz = megahertz, Mbit = megabit,
-Mb = megabyte). Føjet "proxy" til ordlisten.
-Christian Martin Jäger har rettet kommaer.
+Mb = megabyte). FÃ¸jet "proxy" til ordlisten.
+Christian Martin JÃ¤ger har rettet kommaer.
 Kim Futtrup Petersen har skrevet et nyt afsnit om at anvende 2 mus 
 i X.
-Bogen er blevet splittet og ændret titel. Afsnit om Unix og netværk vil være
-at finde i "Linux - Friheden til at lære Unix".
+Bogen er blevet splittet og Ã¦ndret titel. Afsnit om Unix og netvÃ¦rk vil vÃ¦re
+at finde i "Linux - Friheden til at lÃ¦re Unix".
 </para></listitem>
 
 
 <listitem><para>
 Version 5.0 - 11. august 2001:
-Erling Sjørlund: Total omskrevet afsnit om 
-SuSE installation og har tilføjet afsnit 
+Erling SjÃ¸rlund: Total omskrevet afsnit om 
+SuSE installation og har tilfÃ¸jet afsnit 
 om LVM-installation under SuSE 7.2.
 Hans Schou: kerneparametre.
-Peter Toft: Nyt kapitel om systemvedligeholdelse. Større stikordsregister.
-Link til $unixsalg. Lidt om programmet enscript til at få pæne
-udskrifter på printer.
-Mere om Linux til blinde ud fra diskussion på sslug-teknik listen.
+Peter Toft: Nyt kapitel om systemvedligeholdelse. StÃ¸rre stikordsregister.
+Link til $unixsalg. Lidt om programmet enscript til at fÃ¥ pÃ¦ne
+udskrifter pÃ¥ printer.
+Mere om Linux til blinde ud fra diskussion pÃ¥ sslug-teknik listen.
 Anders Misfeldt fandt et par sprogfejl i ADSL-afsnittet.
 Gunner Poulsen retter fil-navne i Red Hat.
-Søren Bredlund Caspersen fanger en fejl i Debian-afsnittet.
+SÃ¸ren Bredlund Caspersen fanger en fejl i Debian-afsnittet.
 </para></listitem>
 
 <listitem><para>
 Version 4.9 - 9. juli 2001:
 Peter Toft: Mandrake 8.0 installation. 
-Lidt mere om at anvende Konqueror til at læse man-sider.
-Tilføjet lidt om den nyeste bog i serien. 
-Afsnit om "vi" er overflyttet fra "Linux - Friheden til at vælge
-programmer". Tilføjet lidt om problemer med at skrive ud på printer i
+Lidt mere om at anvende Konqueror til at lÃ¦se man-sider.
+TilfÃ¸jet lidt om den nyeste bog i serien. 
+Afsnit om "vi" er overflyttet fra "Linux - Friheden til at vÃ¦lge
+programmer". TilfÃ¸jet lidt om problemer med at skrive ud pÃ¥ printer i
 Red Hat 7.1.
 Tommy Olsen har skrevet om <command>apt-get</command> (Debian pakke-program).
-Flemming Danielsen har lavet en vejledning til at få Mobilix/Orange
+Flemming Danielsen har lavet en vejledning til at fÃ¥ Mobilix/Orange
 ADSL til at virke. Peter Toft har skrevet lidt mere om ADSL.
 Peter Makholm: Har skrevet om Debian.
-Michael Rasmussen tilføjer lidt om en Red Hat 7.0 fejl med Xconfigurator.
-Claus Boje har tilføjelse til montering af DOS/Windows-drev.
+Michael Rasmussen tilfÃ¸jer lidt om en Red Hat 7.0 fejl med Xconfigurator.
+Claus Boje har tilfÃ¸jelse til montering af DOS/Windows-drev.
 Ole Tange fangede en stribe format-fejl.
 </para></listitem>
 
@@ -204,27 +204,27 @@ Ole Tange fangede en stribe format-fejl.
 <listitem><para>
 Version 4.8 - 24. maj 2001:
 Peter Toft: Installationsvejledning til Red Hat 7.1. Lidt om Cygwin -
-Unix til Microsoft Windows. Linux på andre platforme end x86 - liste
-af links tilføjet.
+Unix til Microsoft Windows. Linux pÃ¥ andre platforme end x86 - liste
+af links tilfÃ¸jet.
 Mere om kerne 2.4 problemer med at se alle hjemmesider.
 Svend Erik Venstrup har lavet mange mindre rettelser.
 <ulink url="http://www.linuxpusher.dk">http://www.linuxpusher.dk</ulink> 
 har sponsoreret cd-rom'er med Red Hat 7.1.
 Jacob Sparre Andersen - mindre sproglig rettelse.
 Gunner Poulsen har revideret afsnittet om installation af Red Hat 
-over netværk.
+over netvÃ¦rk.
 </para></listitem>
 
 <listitem><para>
 Version 4.7 - 15. april 2001:
-Stig Lilander tilføjer lidt om at \* sørger for at en shell ikke
+Stig Lilander tilfÃ¸jer lidt om at \* sÃ¸rger for at en shell ikke
 ekspanderer *.
-Jacob Sparre Andersen har rettet sproglige fejl og pyntet på SGML-koden.
-Magnus Østergaard har skrevet mere om e-post-konvertering fra Outlook
+Jacob Sparre Andersen har rettet sproglige fejl og pyntet pÃ¥ SGML-koden.
+Magnus Ã˜stergaard har skrevet mere om e-post-konvertering fra Outlook
 - Peter har rettet den lidt til.
 Rettelse om Mandrake 7.2 dansk installation.
 Peter Toft: Nyt om pan og GPL, Open Source og RMS.
-Magnus Østergaard om størrelsen af RAM til installation.
+Magnus Ã˜stergaard om stÃ¸rrelsen af RAM til installation.
 </para></listitem>
 
 
@@ -233,9 +233,9 @@ Version 4.6 - 12. marts 2001:
 Peter Toft: Ny URL til gnuskole-projektet.
 Carsten Svaneborg har skrevet mere om LILO og mere om Linux/Windows
 2000-installation.
-Henrik Christian Grove fandt en dum trykfejl i oversigt over bøger.
-Peter Toft og Magnus Østergaard har på opfordring fra Erling Sjørlund
-skrevet nyt afsnit om miljø-variable. Kristian Vilmann og Jesper Krogh
+Henrik Christian Grove fandt en dum trykfejl i oversigt over bÃ¸ger.
+Peter Toft og Magnus Ã˜stergaard har pÃ¥ opfordring fra Erling SjÃ¸rlund
+skrevet nyt afsnit om miljÃ¸-variable. Kristian Vilmann og Jesper Krogh
 bidrager. Har flyttet afsnit om pakke-formater til bogen
 "Linux - Friheden til systemadministration".
 Jacob Sparre Andersen har jaget og nedlagt sproglige fejl.
@@ -244,40 +244,40 @@ Jacob Sparre Andersen har jaget og nedlagt sproglige fejl.
 
 <listitem><para>
 Version 4.5 - 4. februar 2001: 
-Peter Toft: Ny bog om Docbook nævnt i serien. Tilføjet 
+Peter Toft: Ny bog om Docbook nÃ¦vnt i serien. TilfÃ¸jet 
 nyt om at slette LILO fra DOS hhv. Linux.
 Corel Linux 1.2 installation - cd-rom sponsoreret af 
 Frank Damgaard.
 Mandrake 7.2 installation - cd-rom'er sponsoreret af 
 <ulink url="http://www.linuxpusher.dk">http://www.linuxpusher.dk</ulink>.
-Indsat advarsel mod at installere på dansk i Mandrake 7.2. Flere hints
+Indsat advarsel mod at installere pÃ¥ dansk i Mandrake 7.2. Flere hints
 om Mandrake fra Troels Liebe Bentsen.
-Nyt afsnit om epost konvertering efter diskussion på sslug-teknik -
+Nyt afsnit om epost konvertering efter diskussion pÃ¥ sslug-teknik -
 har anvendt input fra Kurt Alstrup, Claus Hindsgaul og Anders.
-Sproglig rettelse til dette af Jørgen Ramskov.
-Har indsat reference til nye bøger.
-Troels Liebe Bentsen har opdateret flere billeder så de fylder mindre.
-Tommy Mogensen fandt en sprogbøf.
-Magnus Østergaard fandt to dårlige URL'er og lavede fine tilføjelser
+Sproglig rettelse til dette af JÃ¸rgen Ramskov.
+Har indsat reference til nye bÃ¸ger.
+Troels Liebe Bentsen har opdateret flere billeder sÃ¥ de fylder mindre.
+Tommy Mogensen fandt en sprogbÃ¸f.
+Magnus Ã˜stergaard fandt to dÃ¥rlige URL'er og lavede fine tilfÃ¸jelser
 til ordlisten. 
 Jacob Sparre Andersen: Rettet nogle sproglige fejl.
-Asbjørn Laurberg: Rettet en sproglig fejl.
+AsbjÃ¸rn Laurberg: Rettet en sproglig fejl.
 </para></listitem>
 
 
 <listitem> <para> Version 4.4 - 29. december 2000: 
-Peter Toft: Nyt om at købe billige cd-rom'er. (tak til Janus Sandsgaard).
+Peter Toft: Nyt om at kÃ¸be billige cd-rom'er. (tak til Janus Sandsgaard).
 Henvisning til GNU-skole projektet. Rettet fejl i Slackware billeder.
 Skrevet nyt afsnit om XFree version 4.
-Jacob Sparre Andersen har igen bidraget til at få mere dansk ind i
-flere afsnit og har tilføjet flere deltaljer om at montere diske.
-Svend Erik Venstrup har bidraget med hvordan man får mus med hjul
+Jacob Sparre Andersen har igen bidraget til at fÃ¥ mere dansk ind i
+flere afsnit og har tilfÃ¸jet flere deltaljer om at montere diske.
+Svend Erik Venstrup har bidraget med hvordan man fÃ¥r mus med hjul
 til at virke.
-Magnus Østergaard har lavet flere ord til ordlisten.
+Magnus Ã˜stergaard har lavet flere ord til ordlisten.
 Kristian Vilmann har lavet flere gode tips til pine-brugere.
 Link til den nye bog "Linux - friheden til at programmere i C".
 Jacob Laursen har skrevet et helt nyt afsnit om at montere ydre enheder.
-Erik Sørensen har rettet småfejl i det afnit.
+Erik SÃ¸rensen har rettet smÃ¥fejl i det afnit.
 </para>
 </listitem>
 
@@ -290,7 +290,7 @@ Nyt om at lave nem brandmur i Red Hat 7.0 med gnome-lokkit.
 <listitem> <para> Version 4.2 - 26. oktober 2000: 
 Installationsvejledning for Red Hat 7.0 inkluderet - og med danske
 installationsbilleder, tak til Kenneth Christiansen. Hvem ville have
-gættet at de kunne laves ved at skrive
+gÃ¦ttet at de kunne laves ved at skrive
 <command>mkdir /tmp/test; /usr/sbin/anaconda -m nfs://mnt/cdrom -r /tmp/test</command>.
 </para>
 
@@ -300,38 +300,38 @@ billeder i PS-filen var i stykker (pico og pine) - tak Jacob.
 Sproglige rettelser fra Frank Damgaard.  Bogen er igen blevet splittet
 i to. En ny bog om applikationer er kommet til.  Jacob Sparre Andersen
 og Peter Toft har lavet en stribe gode sproglige rettelser og lavet en
-ordliste. Eva Clemmensen har været med til at revidere indhold ud fra
-en begynders synsvinkel.  Lars Michael Petersen har hjulpet med at få
+ordliste. Eva Clemmensen har vÃ¦ret med til at revidere indhold ud fra
+en begynders synsvinkel.  Lars Michael Petersen har hjulpet med at fÃ¥
 genkendt UDMA controller.  Mindre rettelser fra Steen Jensen (sunsite
-og njlug URL), Martin Djernæs (chkconfig har to minustegn til
+og njlug URL), Martin DjernÃ¦s (chkconfig har to minustegn til
 parametre).
 </para>
 </listitem>
 
 
-<listitem> <para> Version 4.1 - 20. august 2000: Claus Sørensen har
-bidraget med mange hundrede sproglige rettelser, ajourføringer og
+<listitem> <para> Version 4.1 - 20. august 2000: Claus SÃ¸rensen har
+bidraget med mange hundrede sproglige rettelser, ajourfÃ¸ringer og
 skrevet nyt om mcedit.  Nyt afsnit om installation af Slackware -
-skrevet af Magnus Østergaard.  Poul Petersen har nærlæst mange dele af
+skrevet af Magnus Ã˜stergaard.  Poul Petersen har nÃ¦rlÃ¦st mange dele af
 bogen og fundet nogle "gode" fejl. Jacob Sparre Andersen har
-tilsvarende rettet en stor mængde sproglige fejl.  Mindre rettelser
+tilsvarende rettet en stor mÃ¦ngde sproglige fejl.  Mindre rettelser
 fra Peter Brodersen og Daniel Pedersen.
 </para>
 </listitem>
 
 <listitem> <para> Version 4.0 - 30. juli 2000:
-Bogen er blevet splittet i en række mindre bøger. 
+Bogen er blevet splittet i en rÃ¦kke mindre bÃ¸ger. 
 </para>
 <para>
 Installation af Linux Mandrake skrevet af Kenneth Geisshirt. Sproglige
-rettelser til dette af Jørgen Ramskov og Claus Sørensen.  Carsten
+rettelser til dette af JÃ¸rgen Ramskov og Claus SÃ¸rensen.  Carsten
 Svaneborg har fundet en lille Linux-webserver. Billede er kommet med.
-Claus Sørensen har desuden rettet kapitlerne om Unix kommandoer og
+Claus SÃ¸rensen har desuden rettet kapitlerne om Unix kommandoer og
 systemadministration op - mange forbedringer.  Poul Petersen har
 kommet med en stribe sproglige rettelser.  Jesper Krogh og Claus
-Sørensen har bidraget med struktur-ændringer af bogen.  Mindre
+SÃ¸rensen har bidraget med struktur-Ã¦ndringer af bogen.  Mindre
 rettelser fra Svend Erik Venstrup-Nielsen og Swoop.  Tak til Claus
-G. Henriksen for hjælp til Makefiles.
+G. Henriksen for hjÃ¦lp til Makefiles.
 </para>
 </listitem>
 
@@ -343,64 +343,64 @@ Forkert billedref. til S/390, Hans Schou.
 
 
 <listitem> <para> Version 3.8 - 8. juli 2000: Peter Toft: Stor liste
-over Linux distributioner tilføjet. Tilføjelse i DNS opsætning om
-"notify off".  Link til artikel om Palm Pilot tilføjet. Nye billeder
-af S/390, LIAB og Yopy tilføjet. Nyt om at lave symbolske lænker og en
-masse småting inspireret af Carsten Svaneborg, som sendte en ekstrem
-stor mængde rettelser.  Henrik Størner har skrevet mere om forskellen
-på "default-lease-time" og "max-lease-time" for DHCP.  Peter
+over Linux distributioner tilfÃ¸jet. TilfÃ¸jelse i DNS opsÃ¦tning om
+"notify off".  Link til artikel om Palm Pilot tilfÃ¸jet. Nye billeder
+af S/390, LIAB og Yopy tilfÃ¸jet. Nyt om at lave symbolske lÃ¦nker og en
+masse smÃ¥ting inspireret af Carsten Svaneborg, som sendte en ekstrem
+stor mÃ¦ngde rettelser.  Henrik StÃ¸rner har skrevet mere om forskellen
+pÃ¥ "default-lease-time" og "max-lease-time" for DHCP.  Peter
 Frederiksen har skrevet et afsnit om raid.  Et Python-PostgreSQL eksempel
-af Björn Bergsten og Hans Schou.  Hans Schou har også tilføjet lidt om
+af BjÃ¶rn Bergsten og Hans Schou.  Hans Schou har ogsÃ¥ tilfÃ¸jet lidt om
 ncftp, ncftpget og ncftpput.  Flemming Mahler Larsen, Dennis Lauersen
 og Carsten Svaneborg har skrevet et afsnittet om webservere, specielt
-Apache, helt om.  Jesper Krogh har lavet et nyt afsnit om at brænde en
+Apache, helt om.  Jesper Krogh har lavet et nyt afsnit om at brÃ¦nde en
 cd-rom med xcdroast.  Kenneth Geisshirt har skrevet afsnit om Postfix
 og et andet afsnit om chkconfig.  Langt de fleste billeder i bogen er
 nu erstattet af opdaterede versioner, som fylder langt mindre end
 tidligere. Det store arbejde er lavet af Troels Liebe Bentsen og
-Kenneth Christiansen.  Jacob Thamsborg har sendt tilføjelse om at få
-mus med hjul til at virke. Mindre rettelser fra Søren Sjørup, Bue
-Gyldenkærne, Brian Hemstedt og Benny Pedersen.
+Kenneth Christiansen.  Jacob Thamsborg har sendt tilfÃ¸jelse om at fÃ¥
+mus med hjul til at virke. Mindre rettelser fra SÃ¸ren SjÃ¸rup, Bue
+GyldenkÃ¦rne, Brian Hemstedt og Benny Pedersen.
 </para>
 </listitem>
 
 
 <listitem> <para> Version 3.7 - 21. juni 2000: 
 Peter Toft: Lidt mere om tar sammen med bz2-filer (inspireret af Jesper Louis
-Andersen). Mere om MagicPoint til at lave foredragspræsentationer med.
+Andersen). Mere om MagicPoint til at lave foredragsprÃ¦sentationer med.
 Mere om sikkerhedsproblemer i Corel Linux (inspireret af Hanne
 Munkholm). Nyt om stjerne i <filename>/etc/password</filename> til at
 stoppe brugerlogin. Nyt afsnit om <filename>/etc/securetty</filename>.
 Brug af forwarders i DNS/Bind indsat (inspireret af Frank Damgaards
 artikel <ulink
 url="http://www.sslug.dk/artikler/dnsbind.shtml">http://www.sslug.dk/artikler/dnsbind.shtml</ulink>),
-Lidt om CAD er tilføjet (inspireret fra Niels Rasmussen og Kim Schultz).
+Lidt om CAD er tilfÃ¸jet (inspireret fra Niels Rasmussen og Kim Schultz).
 </para>
 
 <para>
-Johannes Møgelvang har lavet logo til bogen.
+Johannes MÃ¸gelvang har lavet logo til bogen.
 Peter Enoch har lavet en stor indsats for at lave bedre 
 brandmureksempler og beskrivelse. 
-Eksempel på brug af regulære udtryk af Ole Tange og Hans Schou.
+Eksempel pÃ¥ brug af regulÃ¦re udtryk af Ole Tange og Hans Schou.
 Jesper Louis Andersen har skrevet om BlackBox window manageren.
-Kenneth Geisshirt har lavet et afsnit om ReiserFS på Mandrake.
+Kenneth Geisshirt har lavet et afsnit om ReiserFS pÃ¥ Mandrake.
 </para>
 
 <para>
 Mindre rettelser fra Morten Jensen (link til Tux' historie), Kim
 Schulz (http://www.whatis.com), Jesper Krogh (kppp problemer), Michael
-Skaarup, Kåre Løvgren (PATH i programmeringsafsnittet), 
+Skaarup, KÃ¥re LÃ¸vgren (PATH i programmeringsafsnittet), 
 Palle E. Nielsen (Link om IP-adresser), 
 Johan Myhre Andersen (om Win-printere),
 Poul Petersen (en stribe rettelser),
 Frank Damgaard (nyt stylesheet),
 Peter Frederiksen (wget trick),
-Jens Stavnstrup (hjælp til at gøre tgz-versionen af bogen bedre),
+Jens Stavnstrup (hjÃ¦lp til at gÃ¸re tgz-versionen af bogen bedre),
 Jan Michael Due og Christian Rasmussen 
 (logisk fejl i DNS forklaringen rettet).
 Jacob Sparre Andersen (SAMBA linkfejl)
 og Erik Andresen (fejl i Java-afsnit med henvisninger til skriftsnit).  Eksempel
-på brug af regulære udtryk af Ole Tange og Hans Schou.  Beskrivelse af
+pÃ¥ brug af regulÃ¦re udtryk af Ole Tange og Hans Schou.  Beskrivelse af
 'visual mode' i vi-editoren af Hans Schou.
 </para>
 </listitem>
@@ -408,8 +408,8 @@ på brug af regulære udtryk af Ole Tange og Hans Schou.  Beskrivelse af
 
 <listitem> <para> Version 3.6 - 27. maj 2000: 
 Fra denne version af bogen er det Peter Toft som vedligeholder
-bogen. Kenneth Geisshirt og Snebjørn Andersen mangler begge tid til
-at fortsætte projektet.
+bogen. Kenneth Geisshirt og SnebjÃ¸rn Andersen mangler begge tid til
+at fortsÃ¦tte projektet.
 </para>
 
 <para>
@@ -417,37 +417,37 @@ Peter Toft:
 Installationskapitlet er opdateret med Corel Linux 1.1 og SuSE 6.4 -
 hvor er ReiserFS dog fedt! Nyt afsnit om Linux som X-server/klient
 inspireret af sslug-teknik diskussion, med bl.a. Kristian Vilmann.
-Der er et nyt afsnit om pakning af data med tar/gzip - skrevet på vej
-over Sibirien i 10000 meters højde :-) 
+Der er et nyt afsnit om pakning af data med tar/gzip - skrevet pÃ¥ vej
+over Sibirien i 10000 meters hÃ¸jde :-) 
 Har skrevet lidt om realplayer, pico, mswordview, Opera og autofs 
 (SuSE er smart med autofs).
-Har ændret en del i SGML-opsætningen, så bl.a. marginer er meget mindre nu -
+Har Ã¦ndret en del i SGML-opsÃ¦tningen, sÃ¥ bl.a. marginer er meget mindre nu -
 det sparer ca. 50 sider i bogen.
 </para>
 
 <para>
-Hans Schou har tilføjet flere 'vi' kommandoer,
+Hans Schou har tilfÃ¸jet flere 'vi' kommandoer,
 et afsnit om wu-ftpd, ftp-cd-rom-installation,
 lidt flere rpm-kommandoer og flere stikord.
-Ole Tange, Claus Sørensen og Hans Schou har tilføjet
-mere om regulære udtryk og globbing.
+Ole Tange, Claus SÃ¸rensen og Hans Schou har tilfÃ¸jet
+mere om regulÃ¦re udtryk og globbing.
 ESLUG <ulink url="http://www.eslug.dk">http://www.eslug.dk</ulink> 
-har fået eget domæne, tillykke!
+har fÃ¥et eget domÃ¦ne, tillykke!
 </para>
 
 <para>
-Peter Enoch har skrevet en ny smart brandmuropsætning, som også
+Peter Enoch har skrevet en ny smart brandmuropsÃ¦tning, som ogsÃ¥
 passer med modem-opkobling.
 Flemming Bjerke har givet input til kppp under Red Hat 6.2 - det er
-ikke uden problemer.  Steen Jensen og Kenneth Geisshirt har begge læst
-og rettet hele bogen igennem. Masser af små rettelser fra dem begge.
+ikke uden problemer.  Steen Jensen og Kenneth Geisshirt har begge lÃ¦st
+og rettet hele bogen igennem. Masser af smÃ¥ rettelser fra dem begge.
 Hans Schou har lavet rettelser i database kapitlet.  Frank Damgaard
 har lavet en lang stribe forbedringer rundt omkring.  Niels Rasmussen
-har bidraget med IceWM afsnittet.  Mindre rettelser og tilføjelser fra
-Henrik Størner (om password og netværks-sikkerhed), Niels Kristian
-Bech Jensen, Anders Melchiorsen, Rune Christiansen, Anders Damkjær
-Møller, Peter Andersen, Peter Christensen og Jørgen Ramskov. Lidt om
-HTML Tidy fra Jacob Sparre Andersen. Henrik Størner har også givet
+har bidraget med IceWM afsnittet.  Mindre rettelser og tilfÃ¸jelser fra
+Henrik StÃ¸rner (om password og netvÃ¦rks-sikkerhed), Niels Kristian
+Bech Jensen, Anders Melchiorsen, Rune Christiansen, Anders DamkjÃ¦r
+MÃ¸ller, Peter Andersen, Peter Christensen og JÃ¸rgen Ramskov. Lidt om
+HTML Tidy fra Jacob Sparre Andersen. Henrik StÃ¸rner har ogsÃ¥ givet
 input til mere om sikkerhed.  
 </para></listitem>
 
@@ -455,7 +455,7 @@ input til mere om sikkerhed.
 <listitem> <para> Version 3.5 - 30. april 2000: 
 Peter Toft: Nyt afsnit om Linux og Palm pilot interface.  Mere om
 mime-types til at koble StarOffice og Netscape (Tak til Lars Madsen og
-Mads Tofte).  Afsnit om PPP opsætning er skrevet om.  Ny beskrivelse
+Mads Tofte).  Afsnit om PPP opsÃ¦tning er skrevet om.  Ny beskrivelse
 af at hente epost krypteret via ssh (Kristian Vilmann fandt ud af
 dette).  Nyt afnit om tuning af harddisk (tak til bl.a. Christoffer
 Hall-Frederiksen og Jesper Monsted) .  Nyt afsnit om udprintning via
@@ -466,41 +466,41 @@ Kevin Steffer, Henning Schou og Kristian Vilmann.
 
 <listitem> <para> Version 3.4 - 24. april 2000: 
 Peter Toft: Der var fejl i palm udgaven af version 3.3, derfor 3.4.
-Hans Schou skrev også mere om SGML, der også nåede med.
+Hans Schou skrev ogsÃ¥ mere om SGML, der ogsÃ¥ nÃ¥ede med.
 </para></listitem>
 
 <listitem> <para> Version 3.3 - 23. april 2000: 
 Peter Toft: Stor intern revistion i SGML-koden. 
-Steder hvor man kan købe Linux-cd-rom'er tilføjet.
+Steder hvor man kan kÃ¸be Linux-cd-rom'er tilfÃ¸jet.
 Lidt om Docbook SGML. Lidt om dansk babel under Latex.
-Henrik Størner har skrevet et nyt afsnit om opsætning af DHCP.
+Henrik StÃ¸rner har skrevet et nyt afsnit om opsÃ¦tning af DHCP.
 Martin Christensen har skrevet med om emacs.
 Hans Schou har skrevet mere om CGI-scripts.  Casper Stromfeldt
-påpegede en fejl i et SQL-statement i database kapitlet.  
-Peter Enoch har rettet i ipchains opsætningen.
-Mindre tilføjelser eller rettelser af Patrik Bengtsson (fejl i reference
+pÃ¥pegede en fejl i et SQL-statement i database kapitlet.  
+Peter Enoch har rettet i ipchains opsÃ¦tningen.
+Mindre tilfÃ¸jelser eller rettelser af Patrik Bengtsson (fejl i reference
 under Red Hat 6.1 fejl), Jan Eggert Kofoed (reference til bash
 eksempler), Anders Melchiorsen (kortere eksempel med find), Rune
 Christiansen (flere vi-kommandoer), Christian Hansen (ny reference til
 Samba bog) og Brian Ziegler (lilo zImage->bzImage), Jesper Monsted
 (smart find kommando), Frank Damgaard (nye links om diald) og Magnus
-Østergaard (.Xdefaults til mus med hjul).  </para></listitem>
+Ã˜stergaard (.Xdefaults til mus med hjul).  </para></listitem>
 
 
 <listitem> <para> Version 3.2 - 9. april 2000: 
-Peter Toft: Nu er der også en
-version af bogen til Palm Pilot takket være Michael Nordström og hans
-arbejde med plucker. Lidt mere om Corel Linux.  Tilføjelser fra Frank
+Peter Toft: Nu er der ogsÃ¥ en
+version af bogen til Palm Pilot takket vÃ¦re Michael NordstrÃ¶m og hans
+arbejde med plucker. Lidt mere om Corel Linux.  TilfÃ¸jelser fra Frank
 Damgaard om Corel Linux.  Ny URL til LLUG - tak til Jon Loldrup. Et
-par ændringer i database kapitlet af Hans Schou.  Kenneth Christiansen
+par Ã¦ndringer i database kapitlet af Hans Schou.  Kenneth Christiansen
 og Niels Kristian Bech Jensen har givet et par gode rettelser og
-tilføjelser.  Hanne Munkholm fandt tre fejl i vejledningen til
-opsætning af DNS.  </para></listitem>
+tilfÃ¸jelser.  Hanne Munkholm fandt tre fejl i vejledningen til
+opsÃ¦tning af DNS.  </para></listitem>
 
 
 <listitem> <para> Version 3.1 - 5. april 2000: 
 Peter Toft: Nyt afsnit om
-installation af Corel Linux 1.0. Steen Jensen har læst korrektur på 
+installation af Corel Linux 1.0. Steen Jensen har lÃ¦st korrektur pÃ¥ 
 hele bogen og rettet en hel del fejl. Kenneth Christiansen har igen taget
 et kapitel og rettet danske ord ind.  Morten Christensen havde lidt
 nyt til SuSE installation. Brian Christensen fandt en del
@@ -511,39 +511,39 @@ Venstrup-Nielsen og Hans Schou.  </para></listitem>
 
 <listitem> <para> Version 3.0 - 1. april 2000: Peter Toft: Nu med Red Hat 6.2
 installationsvejledning.  Nyt om pine, incl. et par gode tricks. Nyt
-om at lave en bootdisk og en del mindre tilføjelser.  Der er kommet
-meget mere om netværk og IP-adresser skrevet af Christian Rasmussen og et
-helt nyt afsnit om opsætning af en DNS server - dette er en revideret
+om at lave en bootdisk og en del mindre tilfÃ¸jelser.  Der er kommet
+meget mere om netvÃ¦rk og IP-adresser skrevet af Christian Rasmussen og et
+helt nyt afsnit om opsÃ¦tning af en DNS server - dette er en revideret
 udgave af en artikel skrevet af Christian Rasmussen.  Kristian Vilmann
 har skrevet et helt nyt afsnit om NIS og mere om NFS.  Peter Enoch har
 skrevet et nyt afsnit om brandmure og givet input til andre
 sikkerhedsaspekter; brug af "password" i
 <filename>/etc/lilo.conf</filename> og betydning af
 <filename>/etc/issue</filename>.  Ole Vilmann har lavet et stort nyt
-afsnit om Java. Hans Schou har hjulpet med PHP3 kode, så <ulink
+afsnit om Java. Hans Schou har hjulpet med PHP3 kode, sÃ¥ <ulink
 url="http://&linuxbogurl;/">&linuxbogurl;</ulink>
-automatisk viser fil-størrelser. Hans Schou har også lavet en masse
+automatisk viser fil-stÃ¸rrelser. Hans Schou har ogsÃ¥ lavet en masse
 nyt om databaser - et helt nyt kapitel er startet op.  Kenneth
-Christiansen har fortsat den store sproglig revision for at få dansk
-sprog ind.  Småfejl fundet af Kim Futtrup Petersen, Anders Pedersen,
-Martin Stenderup og Anders Melchiorsen. Også tak til Jens Axelsen, Tue
-Hansen og Mogens Kjær.</para></listitem>
+Christiansen har fortsat den store sproglig revision for at fÃ¥ dansk
+sprog ind.  SmÃ¥fejl fundet af Kim Futtrup Petersen, Anders Pedersen,
+Martin Stenderup og Anders Melchiorsen. OgsÃ¥ tak til Jens Axelsen, Tue
+Hansen og Mogens KjÃ¦r.</para></listitem>
 
 <listitem> <para> Version 2.17 - 24. marts 2000:
-Christian Borup, René Seindal, Hans Schou og Flemming Mahler Larsen har 
+Christian Borup, RenÃ© Seindal, Hans Schou og Flemming Mahler Larsen har 
 tilsammen givet input til at vi nu kan forbedret HTML koden 
-med WIDTH og HEIGHT tags (giver hurtigere indlæsning af siderne -
-gammel forespørgsel fra Kristian Vilmann er nu klaret).
-Hans Schou har tilføjet et forbedret afsnit om databaser.
-Kenneth Christiansen har lavet en større sproglig revision for 
-at få dansk sprog ind hvor det er relevant. 
-René Seindal har skrevet mere om procmail og "spam"-håndtering.
+med WIDTH og HEIGHT tags (giver hurtigere indlÃ¦sning af siderne -
+gammel forespÃ¸rgsel fra Kristian Vilmann er nu klaret).
+Hans Schou har tilfÃ¸jet et forbedret afsnit om databaser.
+Kenneth Christiansen har lavet en stÃ¸rre sproglig revision for 
+at fÃ¥ dansk sprog ind hvor det er relevant. 
+RenÃ© Seindal har skrevet mere om procmail og "spam"-hÃ¥ndtering.
 Mindre rettelser fra Brian Christensen.
 </para></listitem>
 
 <listitem> <para> Version 2.16 - 19. marts 2000:
-Kenneth Christiansen har lavet en større sproglig revision for 
-at få dansk sprog ind hvor det er relevant. 
+Kenneth Christiansen har lavet en stÃ¸rre sproglig revision for 
+at fÃ¥ dansk sprog ind hvor det er relevant. 
 Thomas Rasmussen skrev et godt link til at finde 
 et RealPlayer G2 til Linux. Det er nu med.
 Tak til Brian Christensen, Finn Dorph-Petersen, Henrik Johansen og 
@@ -554,27 +554,27 @@ runlevel der.
 
 <listitem> <para> Version 2.15 - 12. marts 2000:
 En masse nyt om SAMBA skrevet af Lars Madsen. Konfigurering ved brug
-af swat og vejledning til at sætte SAMBA op som primær domænekontroller 
+af swat og vejledning til at sÃ¦tte SAMBA op som primÃ¦r domÃ¦nekontroller 
 (eng. Primary Domain Controller).
 </para></listitem>
 
 <listitem> <para> Version 2.14 - 12. marts 2000: 
 Nyt afsnit om tcsh og sed.
-Kevin Ilchmann Jørgensen og Stefan Klukowski har givet bidrag til
-opsætning af tcsh.
+Kevin Ilchmann JÃ¸rgensen og Stefan Klukowski har givet bidrag til
+opsÃ¦tning af tcsh.
 Frank Damgaard har givet bidrag til et kort afnit om "sed".
-Peter B. Kvan fik tanker igang om at få et stikordsregister med -
+Peter B. Kvan fik tanker igang om at fÃ¥ et stikordsregister med -
 det er nu med i version 2.14 - tak!
-Tak til Kim Futtrup Petersen, Jørgen Ramskov og
-Kristian Støchkel, der hver fandt et par fejl.
+Tak til Kim Futtrup Petersen, JÃ¸rgen Ramskov og
+Kristian StÃ¸chkel, der hver fandt et par fejl.
 </para></listitem>
 
 
 <listitem> <para> Version 2.13 - 13. februar 2000: Nyt afsnit om
-procmail til filtrering af e-breve på forskellige brev-foldere.  Nyt om
+procmail til filtrering af e-breve pÃ¥ forskellige brev-foldere.  Nyt om
 vwdial. Billeder er nu med for installation af SuSE 6.3 - tak til SuSE
-i USA. Kristian Støchkel har en rettelse om filplacering mht. "True
-Type"-skrifttyper. Rolf Larsen har igen læst hele bogen og givet os en
+i USA. Kristian StÃ¸chkel har en rettelse om filplacering mht. "True
+Type"-skrifttyper. Rolf Larsen har igen lÃ¦st hele bogen og givet os en
 masse sproglige rettelser.
 </para></listitem>
 
@@ -584,63 +584,63 @@ Nyt afsnit om kendte fejl i Red Hat 6.1.
 SuSE 6.3 er nu beskrevet. SuSE 6.2 er ikke taget
 bort, da det er meget anderledes end 6.3.  Mere om licensbetingelser
 for Linux cd-rom'er (Tak til Jacob Sparre Andersen).  Jonas Nielsen har
-givet os en stribe gode tilføjelse af <command>vi</command> og
+givet os en stribe gode tilfÃ¸jelse af <command>vi</command> og
 <command>emacs</command> kommandoer og meget andet. Stephan Kaas
-Johansen tilføjer mere om KWrite.  Niels Damgaard om "sendmail"
-opsætning ("relay" for eget domæne) og lidt mere om SAMBA
-opsætning. Henrik Størner har bidraget med en vejledning (til
-sslug-teknik@sslug.dk) i at få True Type-skriftsnit til at køre sammen med
+Johansen tilfÃ¸jer mere om KWrite.  Niels Damgaard om "sendmail"
+opsÃ¦tning ("relay" for eget domÃ¦ne) og lidt mere om SAMBA
+opsÃ¦tning. Henrik StÃ¸rner har bidraget med en vejledning (til
+sslug-teknik@sslug.dk) i at fÃ¥ True Type-skriftsnit til at kÃ¸re sammen med
 Netscape. Niels Kristian Bech Jensen har fundet en figur, som blev
-vist to gange.  Claus Sørensen har givet en stribe opdateringer og
+vist to gange.  Claus SÃ¸rensen har givet en stribe opdateringer og
 lidt mere om fil rettigheder.  </para></listitem>
 
 <listitem> <para> 
 Version 2.11 - 10. oktober 1999: 
-Ny installationsvejledning SUN's version af StarOffice 5.1 er tilføjet. 
-Igen er der også en stribe små tilføjelser og rettelser.
+Ny installationsvejledning SUN's version af StarOffice 5.1 er tilfÃ¸jet. 
+Igen er der ogsÃ¥ en stribe smÃ¥ tilfÃ¸jelser og rettelser.
 </para></listitem>
 
 
 <listitem> <para> 
 Version 2.10 - 9. oktober 1999: 
-Ny installationsvejledning til Red Hat 6.1 (Cartman) tilføjet. 
-Vi kører nu alene med billedformatet, PNG (Portabel netværksgrafik). 
-Det er også en sjat små tilføjelser og rettelser rundt omkring.
+Ny installationsvejledning til Red Hat 6.1 (Cartman) tilfÃ¸jet. 
+Vi kÃ¸rer nu alene med billedformatet, PNG (Portabel netvÃ¦rksgrafik). 
+Det er ogsÃ¥ en sjat smÃ¥ tilfÃ¸jelser og rettelser rundt omkring.
 </para></listitem>
 
 
 <listitem> <para> 
 Version 2.9 - 23. august 1999: 
 GLOBE, som vil trykke denne version af bogen, har
-lavet gennemgående sproglig revision og derfor er der ca. 1000 nye
-sproglige rettelser. Det kan nævnes, at den trykte bog fra GLOBE
+lavet gennemgÃ¥ende sproglig revision og derfor er der ca. 1000 nye
+sproglige rettelser. Det kan nÃ¦vnes, at den trykte bog fra GLOBE
 indeholder en del fejl idet en konsulent for GLOBE har konverteret
 bogen forkert.
 (Se <ulink url="http://www.sslug.sk/misc/globe_fejl.html">http://www.sslug.sk/misc/globe_fejl.html</ulink>).
 
 Der er revision af
-afsnittet om installation af SuSE, så det dækker SuSE 6.2. Bogens
+afsnittet om installation af SuSE, sÃ¥ det dÃ¦kker SuSE 6.2. Bogens
 revisionshistorie er nu en del af bogen, er placeret i et
 appendiks til bogen.   Der er nyt om KDevelop i
-kapitlet om programmering.  Nyt er også "ispell" på dansk under Red Hat
+kapitlet om programmering.  Nyt er ogsÃ¥ "ispell" pÃ¥ dansk under Red Hat
 6.0. Der er et helt nyt afsnit om spil til Linux og
-installationsvejledning til Quake II.  Der er også et helt nyt afsnit
+installationsvejledning til Quake II.  Der er ogsÃ¥ et helt nyt afsnit
 om 3d-grafikkort og 3d-spil skrevet af Stephan Kaas Johansen.
-Tak til Rune Christiansen for hjælp til nyt grafisk udseende af
+Tak til Rune Christiansen for hjÃ¦lp til nyt grafisk udseende af
 hjemmesiden for bogen.
 </para></listitem>
 
 <listitem> <para>
 Version 2.8 - 20. juli 1999: Der er et nyt afsnit om yast i
 installationskapitlet. I kapitlet om system administration er der nyt
-om crontab, DOS/Windows-emulatorer, printere og opsætning af
+om crontab, DOS/Windows-emulatorer, printere og opsÃ¦tning af
 kernemoduler. Desuden er der et nyt afnit om, hvor de enkelte vigtige
 filer findes, og hvad filerne indeholder.  John B. Jacobsen har igen
 hjulpet os - denne gang med at finde en stribe fejl.
 </para></listitem> 
 
 <listitem> <para>
-Version 2.7 - 11. juli 1999: Brian Graversen har hjulpet med at få æøå til at
+Version 2.7 - 11. juli 1999: Brian Graversen har hjulpet med at fÃ¥ Ã¦Ã¸Ã¥ til at
 virke med StarOffice 5.1 - derfor er der mere om at bruge TrueType
 skrifttyper. Jesper Laisen har taget endnu et kapitel og laver total
 revision af kommaer.
@@ -664,7 +664,7 @@ Morten Christensen. Masser af kommarettelser fra Jesper Laisen. Vi takker.
 </para></listitem> 
 
 <listitem> <para>
-Version 2.3 - 24. juni 1999: Sproglige rettelser og en lille tilføjelse
+Version 2.3 - 24. juni 1999: Sproglige rettelser og en lille tilfÃ¸jelse
 om at bruge danske bogstaver.
 </para></listitem> 
 
@@ -673,23 +673,23 @@ Version 2.2 - 23. juni 1999: En del nyt om KDE. Nye links til slut.
 </para></listitem> 
 
 <listitem> <para>
-Version 2.1 - 22. maj 1999: En masse rettelser og tilføjelser, bla. om
-linuxconf. Carsten Svaneborg fandt en række fejl og gav gode ideer til
+Version 2.1 - 22. maj 1999: En masse rettelser og tilfÃ¸jelser, bla. om
+linuxconf. Carsten Svaneborg fandt en rÃ¦kke fejl og gav gode ideer til
 nye ting.
 </para></listitem> 
 
 <listitem> <para>
 Version 2.0 - 18. maj 1999: 
-Tilføjelser omkring at oversætte Linux-kernen. Flere bog-referencer.
-Smårettelser mange steder.
-Den magiske version 2.0 er nået *grin*
+TilfÃ¸jelser omkring at oversÃ¦tte Linux-kernen. Flere bog-referencer.
+SmÃ¥rettelser mange steder.
+Den magiske version 2.0 er nÃ¥et *grin*
 </para></listitem> 
 
 <listitem> <para>
 Version 2.0pre5 :^) - 16. maj 1999: 
-Rettelser rundt omkring for at få Red Hat 5.2 afhængigheder til at
-følge om til Red Hat 6.0. Sproglige forbedringer mange steder og anden
-hjælp tilføjet.
+Rettelser rundt omkring for at fÃ¥ Red Hat 5.2 afhÃ¦ngigheder til at
+fÃ¸lge om til Red Hat 6.0. Sproglige forbedringer mange steder og anden
+hjÃ¦lp tilfÃ¸jet.
 Jesper Laisen fandt lidt sprogfejl. Jens Bygum takkes for at lede til
 forbedringer flere steder.
 </para></listitem> 
@@ -697,7 +697,7 @@ forbedringer flere steder.
 <listitem> <para>
 Version 2.0pre4 8-) - 15. maj 1999: 
 Sproglige rettelser, og der er oprettet en del nye afsnit. Under
-installation er tilføjet links til databaser over hardware, som virker
+installation er tilfÃ¸jet links til databaser over hardware, som virker
 med Linux.
 </para></listitem> 
 
@@ -710,7 +710,7 @@ Stig Linander takkes for mere om ekspansion af jokertegn.
 <listitem> <para>
 Version 2.0pre2 ;-) - 13. maj 1999: 
 Tonsvis af sproglige rettelser fra Rolf Larsen igennem hele bogen - vi
-takker mange gange. Stig Linander fik også en væsentlig lilo-ændring med.
+takker mange gange. Stig Linander fik ogsÃ¥ en vÃ¦sentlig lilo-Ã¦ndring med.
 </para></listitem> 
 
 <listitem> <para>
@@ -719,15 +719,15 @@ Red Hat 6.0 installationsvejledning og SuSE 6.1
 installationsvejledning er nu med.
 Debian 2.1 installationsvejledning, som er startet af John B. Jacobsen,
 er nu inde som et appendiks - der mangler stadig en del.
-Forordet er revideret helt om - og baseres på en artikel af Hanne
+Forordet er revideret helt om - og baseres pÃ¥ en artikel af Hanne
 Munkholm og Peter Toft. Flere ting er flyttet rundt i starten.
 Tak til Jesper Laisens mindre rettelser.
 </para></listitem> 
 
 <listitem> <para>
 Version 1.34 - 26. marts 1999: 
-Masser af små rettelser igennem hele bogen - mange har
-hjulpet. Debian vejledning er i øvrigt på vej!
+Masser af smÃ¥ rettelser igennem hele bogen - mange har
+hjulpet. Debian vejledning er i Ã¸vrigt pÃ¥ vej!
 </para></listitem> 
 
 <listitem> <para>
@@ -742,34 +742,34 @@ Lidt mere om swap-partitionen under installation og mere om Lilo afinstallation.
 
 <listitem> <para>
 Version 1.31 - 27. februar 1999: 
-Installation af SuSE 6.0 tilføjet, og 5.3 installation er taget bort.
-Linuxgrupperne opdateret. Billede af Linus tilføjet - tak til Hanne Munkholm.
+Installation af SuSE 6.0 tilfÃ¸jet, og 5.3 installation er taget bort.
+Linuxgrupperne opdateret. Billede af Linus tilfÃ¸jet - tak til Hanne Munkholm.
 </para></listitem> 
 
 <listitem> <para>
 Version 1.30 - 20. februar 1999: 
 Mere om forberedelse til installation om fips og fdisk. Tak til Hans Christian
-Andersen for et par gode tilføjelser.
+Andersen for et par gode tilfÃ¸jelser.
 </para></listitem> 
 
 <listitem> <para>
 Version 1.29 - 19. februar 1999: 
-Mere om filtræet under installation og vigtigt link i afslutningen af
-netværks kapitlet (tak til Stephan Kaas
+Mere om filtrÃ¦et under installation og vigtigt link i afslutningen af
+netvÃ¦rks kapitlet (tak til Stephan Kaas
 Johansen). Og tak til Hans Christian
-Andersen og Svend Erik Venstrup-Nielsen for et par gode tilføjelser.
+Andersen og Svend Erik Venstrup-Nielsen for et par gode tilfÃ¸jelser.
 </para></listitem> 
 
 <listitem> <para>
 
 Version 1.27 - 7. februar 1999: 
-Mindre rettelser i netværksadresse og LUG-listen er udvidet til sidst.
+Mindre rettelser i netvÃ¦rksadresse og LUG-listen er udvidet til sidst.
 </para></listitem> 
 
 <listitem> <para>
 
 Version 1.26 - 1. februar 1999: 
-En advarsel er tilføjet til det at slette "master boot record" i Linux. 
+En advarsel er tilfÃ¸jet til det at slette "master boot record" i Linux. 
 Appendiks B er nu oppe og klart.
 </para></listitem> 
 
@@ -777,15 +777,15 @@ Appendiks B er nu oppe og klart.
 
 Version 1.25 - 28. januar 1999: 
 Sproglige rettelser - tak til Dan Windekilde.
-Mere om fdisk og advarsel om at passe på her.
-Installation af Red Hat 5.1 er nu væk.
+Mere om fdisk og advarsel om at passe pÃ¥ her.
+Installation af Red Hat 5.1 er nu vÃ¦k.
 </para></listitem> 
 
 <listitem> <para>
 
 Version 1.24 - 24. januar 1999: 
 Det nye appendiks B har det bedre nu! 
-Kort tilføjelse om valg af Red Hat pakker.
+Kort tilfÃ¸jelse om valg af Red Hat pakker.
 </para></listitem> 
 
 <listitem> <para>
@@ -793,23 +793,23 @@ Version 1.23 - 23. januar 1999: Et par fejl og forbedringer af Hans
 Schou, Lars Lyngby
 Nielsen, Rolf Larsen, Allan Olesen - vi takker. 
 Vi har skrevet mere om at kunne monterer DOS/Windows-diske, og webside
-redigering fik et par ord med på vejen.
-Det nye appendix B er rodet - vi ved det! Det er ikke færdigt.
+redigering fik et par ord med pÃ¥ vejen.
+Det nye appendix B er rodet - vi ved det! Det er ikke fÃ¦rdigt.
 </para></listitem> 
 
 <listitem> <para>
 Version 1.22 - 16. januar 1999: Igen mange fejl fundet af Lars Lyngby
-Nielsen, og vi takker meget. Igen er der også en række andre personer, der
-har bidraget med småændringer - vi takker. Slutningen af Unix-introduktionen
-er flyttet til et nyt appendiks, som har fået en solid
-opgradering af Arne Haaning. Problemer med manglende billeder er løst.
-Det nye appendix B er rodet - vi ved det! Det er ikke færdigt.
+Nielsen, og vi takker meget. Igen er der ogsÃ¥ en rÃ¦kke andre personer, der
+har bidraget med smÃ¥Ã¦ndringer - vi takker. Slutningen af Unix-introduktionen
+er flyttet til et nyt appendiks, som har fÃ¥et en solid
+opgradering af Arne Haaning. Problemer med manglende billeder er lÃ¸st.
+Det nye appendix B er rodet - vi ved det! Det er ikke fÃ¦rdigt.
 </para></listitem> 
 
 <listitem> <para>
 Version 1.21 - 10. januar 1999: Mange fejl fundet af Lars Lyngby
-Nielsen (igen), og vi takker meget. En række andre personer har også
-kommet med småændringer - vi takker. Der er tilføjet et afsnit om
+Nielsen (igen), og vi takker meget. En rÃ¦kke andre personer har ogsÃ¥
+kommet med smÃ¥Ã¦ndringer - vi takker. Der er tilfÃ¸jet et afsnit om
 automontering med autofs pakken.
 </para></listitem> 
 
@@ -827,27 +827,27 @@ Version 1.19 - 27. december 1998: Lars Madsen har rundet mere af
 omkring SAMBA. "NT opstarter"-afsnit er skrevet lidt om. Masser af
 trykfejl fundet af Lars Lyngby Nielsen. Mere om GIMP
 og WindowMaker. Der er
-føjet et nedlæsnings- og installationsvejledning til WordPerfect 8.
+fÃ¸jet et nedlÃ¦snings- og installationsvejledning til WordPerfect 8.
 </para></listitem> 
 
 <listitem> <para>
 Version 1.18 - 20. december 1998: Nu er forord kommet ud som
-selvstændig del. Der er mere om SAMBA sammen med krypterede
+selvstÃ¦ndig del. Der er mere om SAMBA sammen med krypterede
 adgangskoder (Tak til Lars Madsen).
 </para></listitem> 
 
 <listitem> <para>
-Version 1.17 - 20. december 1998: En masse småfejl luget ud. De
+Version 1.17 - 20. december 1998: En masse smÃ¥fejl luget ud. De
 tre opstarts muligheder har nu hver deres afsnit.
 </para></listitem> 
 
 <listitem> <para>
-Version 1.16 - 16. december 1998: Suid afsnit skrevet helt om + småting.
+Version 1.16 - 16. december 1998: Suid afsnit skrevet helt om + smÃ¥ting.
 </para></listitem> 
 
 <listitem> <para>
 Version 1.15 - 14. december 1998: Prompt-fejl (tak til Poul
-Petersen) + et par småting.
+Petersen) + et par smÃ¥ting.
 </para></listitem> 
 
 <listitem> <para>
@@ -855,8 +855,8 @@ Version 1.14 - 13. december 1998:
 Installationskapitlet lavet helt om. Nu er der skrevet om Red Hat
 5.1, 5.2 og SuSE 5.3 (tak til Kaare Rasmussen for SuSE delen).
 Der er mere om mus - specielt mus med hjul i vores
-appendix (tak til Søren Lund og Jan Kofoed).
-Der er mere om SAMBA i netværks kapitlet (godt arbejde af Lars
+appendix (tak til SÃ¸ren Lund og Jan Kofoed).
+Der er mere om SAMBA i netvÃ¦rks kapitlet (godt arbejde af Lars
 Madsen).
 </para></listitem> 
 
@@ -866,11 +866,11 @@ NT og Linux. Tak til Lars Lyngby Nielsen for dette.
 </para></listitem> 
 
 <listitem> <para>
-Version 1.12 - 2. december 98: Et par småbøffer.
+Version 1.12 - 2. december 98: Et par smÃ¥bÃ¸ffer.
 </para></listitem> 
 
 <listitem> <para>
-Version 1.11 - 1. december 98: Et par småbøffer + mere om netværk.
+Version 1.11 - 1. december 98: Et par smÃ¥bÃ¸ffer + mere om netvÃ¦rk.
 </para></listitem> 
 
 <listitem> <para>
@@ -883,31 +883,31 @@ Version 1.09 - 27. november 98: Mange rettelser - fra mange folk.
 
 <listitem> <para>
 Version 1.08 - 25. november 98: Afsnit om DNS er udvidet - hvilket er Ole
-Tanges fortjeneste - tak! Et par små ændringer om Qt og Latex.
+Tanges fortjeneste - tak! Et par smÃ¥ Ã¦ndringer om Qt og Latex.
 </para></listitem> 
 
 <listitem> <para>
-Version 1.07 - 15. november 98: En række kommafejl og lignende rettet (Tak Hans), og man kan nu trykke på weblinks. 
+Version 1.07 - 15. november 98: En rÃ¦kke kommafejl og lignende rettet (Tak Hans), og man kan nu trykke pÃ¥ weblinks. 
 </para></listitem> 
 
 <listitem> <para>
-12. november 98: SGML-kilden er med på siden. 
+12. november 98: SGML-kilden er med pÃ¥ siden. 
 </para></listitem> 
 
 <listitem> <para>
-Version 1.06 - 8. november 98: En række sproglige rettelser.
+Version 1.06 - 8. november 98: En rÃ¦kke sproglige rettelser.
 </para></listitem> 
 
 <listitem> <para>
-Version 1.05 - 8. november 98: Gode justeringer fra Lars Sørensen + afsnit om NFS i netværkskapitlet er tilføjet.
+Version 1.05 - 8. november 98: Gode justeringer fra Lars SÃ¸rensen + afsnit om NFS i netvÃ¦rkskapitlet er tilfÃ¸jet.
 </para></listitem> 
 
 <listitem> <para>
-Version 1.04 - 7. november 98: Mange små rettelser fra Jacob I. Christensen, Morten S. Nielsen og Michael Jacobsen.
+Version 1.04 - 7. november 98: Mange smÃ¥ rettelser fra Jacob I. Christensen, Morten S. Nielsen og Michael Jacobsen.
 </para></listitem> 
 
 <listitem> <para>
-Version 1.03 - 3. november 98: To små "fejl" i "Basal Unix"-afsnittet rettet.
+Version 1.03 - 3. november 98: To smÃ¥ "fejl" i "Basal Unix"-afsnittet rettet.
 </para></listitem> 
 
 <listitem> <para>
@@ -916,12 +916,12 @@ Hanne Munkholm og Torben Fjerdingstad.
 </para></listitem> 
 
 <listitem> <para>
-Version 1.01 - 29. oktober 98: Tilføjet lidt om andre
+Version 1.01 - 29. oktober 98: TilfÃ¸jet lidt om andre
 distributioner + rettet alle eksempler (prompten).
 </para></listitem> 
 
 <listitem> <para>
-Version 1.0 - 28. oktober 98: Første offentlige version.
+Version 1.0 - 28. oktober 98: FÃ¸rste offentlige version.
 </para></listitem> 
 </itemizedlist>
 

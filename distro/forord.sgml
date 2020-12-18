@@ -14,10 +14,10 @@ Der havde den 24 kapitler.
 </para>
 
 <para>
-Formålet med bogen er at beskrive forskellige Linux, *BSD eller andre 
+FormÃ¥let med bogen er at beskrive forskellige Linux, *BSD eller andre 
 open source distributioner. Ideen er ikke at give en meget
 dyb indsigt i f.eks. installation eller drift af den enkelte distribution, 
-det sker i "Linux - Friheden til at vælge installation" for de mest gængse
+det sker i "Linux - Friheden til at vÃ¦lge installation" for de mest gÃ¦ngse
 distributioner. Stilen i denne bog er meget individuel, og afspejler
 personlige erfaringer med de enkelte distributioner. 
 </para>
@@ -36,16 +36,16 @@ personlige erfaringer med de enkelte distributioner.
 <sect1 id="distro-typografi">
 <title>Typografi</title>
 <para>
-Vi vil afslutte indledningen med at nævne den anvendte typografi.
+Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
 </para>
 
 
 <itemizedlist mark="bullet" spacing="compact">
-<listitem><para>Navne på filer og kataloger skrives som
+<listitem><para>Navne pÃ¥ filer og kataloger skrives som
 <filename>foo.bar</filename></para>
 </listitem>
 
-<listitem><para>Kommandoer, du udfører ved at taste, skrives som
+<listitem><para>Kommandoer, du udfÃ¸rer ved at taste, skrives som
 <command>help</command></para>
 </listitem>
 

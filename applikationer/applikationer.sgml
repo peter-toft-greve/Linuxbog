@@ -3,12 +3,12 @@
 <title>Forskellige programmer</title>
 
 <para>
-Til Linux findes der en stor mængde applikationer. De allerfleste
+Til Linux findes der en stor mÃ¦ngde applikationer. De allerfleste
 programmer til Linux er gratis og beskyttet af en "Open Source"-lignende
-licens. Men som man måske ikke skulle tro, kan der købes programmer
-til Linux. Af hensyn til det frie og uafhængige grundlag for
-Linux vil disse aldrig udgøre kernen i et Linux-system, men de vil altid
-være mulige tilføjelser.
+licens. Men som man mÃ¥ske ikke skulle tro, kan der kÃ¸bes programmer
+til Linux. Af hensyn til det frie og uafhÃ¦ngige grundlag for
+Linux vil disse aldrig udgÃ¸re kernen i et Linux-system, men de vil altid
+vÃ¦re mulige tilfÃ¸jelser.
 </para>
 
 <indexterm><primary>Matlab</primary></indexterm>
@@ -16,8 +16,8 @@ være mulige tilføjelser.
 <indexterm><primary>betalingsprogrammer</primary></indexterm>
 
 <para>
-Programmer som SAP/R3 og Matlab er kommercielle og sælges kun i
-binær form, som det kendes fra andre styresystemer. 
+Programmer som SAP/R3 og Matlab er kommercielle og sÃ¦lges kun i
+binÃ¦r form, som det kendes fra andre styresystemer. 
 Database-firmaer som Oracle og
 Informix har frigivet udgaver af deres systemer til Linux, og de er
 ikke "Open Source".
@@ -32,25 +32,25 @@ ikke "Open Source".
 <indexterm><primary>filstyring</primary></indexterm>
 <para>
 Til Linux findes forskellige filstyringsprogrammer med grafisk
-brugergrænseflade som f.eks. dem Gnome og KDE har. 
+brugergrÃ¦nseflade som f.eks. dem Gnome og KDE har. 
 </para>
 
 <indexterm><primary>xftp</primary></indexterm>
 <para>
-XFTP (<command>xftp</command>) bør også nævnes. Programmet er perfekt
-til at overføre filer fra en maskine til en anden via FTP. Svarende
-til Midnight Commander har du de to maskiner i hhv. venstre og højre
-side af vinduet og med musen vælges, hvad der skal kopieres. Programmet
-kan også kopiere rekursivt. Desværre bliver programmet ikke længere
+XFTP (<command>xftp</command>) bÃ¸r ogsÃ¥ nÃ¦vnes. Programmet er perfekt
+til at overfÃ¸re filer fra en maskine til en anden via FTP. Svarende
+til Midnight Commander har du de to maskiner i hhv. venstre og hÃ¸jre
+side af vinduet og med musen vÃ¦lges, hvad der skal kopieres. Programmet
+kan ogsÃ¥ kopiere rekursivt. DesvÃ¦rre bliver programmet ikke lÃ¦ngere
 vedligeholdt og findes normalt ikke i de udbredte Linux-distributioner.
 </para>
 
 <indexterm><primary>FileRunner</primary></indexterm>
 <para>
-Måske du vil være interesseret i FileRunner, som er et udmærket
-filstyringsværktøj. FileRunner udmærker sig ved at der er support for
-musehjul indbygget. Således der ikke skal rettes i programmets
-opsætnings-filer som det er tilfældet for xterm, emacs, netscape m.fl.
+MÃ¥ske du vil vÃ¦re interesseret i FileRunner, som er et udmÃ¦rket
+filstyringsvÃ¦rktÃ¸j. FileRunner udmÃ¦rker sig ved at der er support for
+musehjul indbygget. SÃ¥ledes der ikke skal rettes i programmets
+opsÃ¦tnings-filer som det er tilfÃ¦ldet for xterm, emacs, netscape m.fl.
 Programmet kan hentes fra: <ulink
 url="http://www.cd.chalmers.se/~hch/filerunner.html">http://www.cd.chalmers.se/~hch/filerunner.html</ulink>.
 </para>
@@ -67,7 +67,7 @@ url="http://www.cd.chalmers.se/~hch/filerunner.html">http://www.cd.chalmers.se/~
 <indexterm><primary>mc</primary></indexterm>
 <para>
 For folk med DOS-baggrund findes der en god Norton Commander-klon,
-Midnight Commander (<command>mc</command>).  Det kan dog nævnes, at
+Midnight Commander (<command>mc</command>).  Det kan dog nÃ¦vnes, at
 Midnight Commander har et par ekstra funktioner, f.eks. kan du
 montere diske fra andre maskiner og kopiere frem og
 tilbage. Tilsvarende er det nemt at koble op til en FTP-konto.
@@ -82,10 +82,10 @@ tilbage. Tilsvarende er det nemt at koble op til en FTP-konto.
 <para>
 <indexterm><primary>gmc</primary></indexterm>
 I <command>mc</command> har du farvekoder og symboler til at angive,
-om filen kan køres (grøn og *), et symbolsk link (reference til
+om filen kan kÃ¸res (grÃ¸n og *), et symbolsk link (reference til
 anden fil angives med @), kataloger (fed skrift og /) eller en
-core-fil (levn fra et program, der døde - rød skrifttype). Folkene bag
-Midnight Commander står også bag et filhåndteringsprogram til Gnome,
+core-fil (levn fra et program, der dÃ¸de - rÃ¸d skrifttype). Folkene bag
+Midnight Commander stÃ¥r ogsÃ¥ bag et filhÃ¥ndteringsprogram til Gnome,
 <command>gmc</command>.
 </para>
 
@@ -100,24 +100,24 @@ Midnight Commander står også bag et filhåndteringsprogram til Gnome,
 </sect1> <!-- Filstyring -->
 
 <!-- =================================================================== -->
-<!-- Slægtsforskningsprogrammer -->
+<!-- SlÃ¦gtsforskningsprogrammer -->
 <!-- =================================================================== -->
 <sect1 id="slaegtsforskning">
-<title>Slægtsforskningsprogrammer</title>
+<title>SlÃ¦gtsforskningsprogrammer</title>
 
-<indexterm><primary>Slægtsforskningsprogrammer</primary></indexterm>
+<indexterm><primary>SlÃ¦gtsforskningsprogrammer</primary></indexterm>
 <indexterm><primary>GEDCOM</primary></indexterm>
 <para>
-Når man skal vælge slægtsforskningsprogram, er en af de vigtigste
+NÃ¥r man skal vÃ¦lge slÃ¦gtsforskningsprogram, er en af de vigtigste
 faktorer nok at det har mulighed for import og eksport af
 GEDCOM-filer. GEDCOM er det filformat der er mest brugt til at sende
 filer mellem programmer. Det er jo bl.a. smart hvis man tidligere har
-brugt Windows, og man ikke skal til at skrive hele sin slægt ind
+brugt Windows, og man ikke skal til at skrive hele sin slÃ¦gt ind
 forfra, bare fordi man skrifter til Linux.
 </para>
 
 <para> 
-Der findes en mailingliste om slægtsforskning og Linux. Mere
+Der findes en mailingliste om slÃ¦gtsforskning og Linux. Mere
 information kan findes her:
 <ulink url="http://lists.rootsweb.com/index/other/Internet_Help/LINUX.html">http://lists.rootsweb.com/index/other/Internet_Help/LINUX.html</ulink>.
 </para>
@@ -126,21 +126,21 @@ information kan findes her:
 <title>Gramps</title>
 
 <indexterm>
- <primary>Slægtsforskningsprogrammer</primary>
+ <primary>SlÃ¦gtsforskningsprogrammer</primary>
  <secondary>Gramps</secondary>
 </indexterm>
 <indexterm><primary>Gramps</primary></indexterm>
 
 
 <para>
-Gramps står for "Genealogical Research and Analysis Management
+Gramps stÃ¥r for "Genealogical Research and Analysis Management
 Programming System", og er et Open Source-program. Programmets
-hjemmeside kan findes på <ulink url="http://gramps.sourceforge.net/">http://gramps.sourceforge.net/</ulink>, og der står
+hjemmeside kan findes pÃ¥ <ulink url="http://gramps.sourceforge.net/">http://gramps.sourceforge.net/</ulink>, og der stÃ¥r
 stort set alt hvad man kan have brug for. Det kan hentes som RPM,
-så installationen skulle ikke volde større problemer. Der findes en
-manual til Gramps på engelsk:
-<ulink url="http://gramps.sourceforge.net/gramps-manual/">http://gramps.sourceforge.net/gramps-manual/</ulink>. En dansk oversættelse er nu også kommet med. 
-Alt det, kan man læse mere om på programmets
+sÃ¥ installationen skulle ikke volde stÃ¸rre problemer. Der findes en
+manual til Gramps pÃ¥ engelsk:
+<ulink url="http://gramps.sourceforge.net/gramps-manual/">http://gramps.sourceforge.net/gramps-manual/</ulink>. En dansk oversÃ¦ttelse er nu ogsÃ¥ kommet med. 
+Alt det, kan man lÃ¦se mere om pÃ¥ programmets
 hjemmeside.
 </para>
 
@@ -157,16 +157,16 @@ hjemmeside.
 <title>Ftree</title>
 
 <indexterm>
- <primary>Slægtsforskningsprogrammer</primary>
+ <primary>SlÃ¦gtsforskningsprogrammer</primary>
  <secondary>Ftree</secondary>
 </indexterm>
 <indexterm><primary>Ftree</primary></indexterm>
 
 <para>
 Ftree er ikke Open Source, men det er gratis. Det kan det samme som de
-fleste andre, mindre slægtsforskningsprogrammer, og det er et lille og
-enkelt program. Til gengæld er der ikke nogen mulighed for f.eks. at
-sætte billeder ind af de personer man arbejder med. Man kan egentlig
+fleste andre, mindre slÃ¦gtsforskningsprogrammer, og det er et lille og
+enkelt program. Til gengÃ¦ld er der ikke nogen mulighed for f.eks. at
+sÃ¦tte billeder ind af de personer man arbejder med. Man kan egentlig
 betragte det som en GEDCOM-formidler - det gemmer automatisk i
 GEDCOM-format, og har ikke sit eget filformat. Programmets hjemmeside
 kan findes her: <ulink url="http://www.vjet.demon.co.uk/ftree/">http://www.vjet.demon.co.uk/ftree/</ulink>.
@@ -183,18 +183,18 @@ kan findes her: <ulink url="http://www.vjet.demon.co.uk/ftree/">http://www.vjet.
 <title>LifeLines</title> 
 
 <indexterm>
- <primary>Slægtsforskningsprogrammer</primary>
+ <primary>SlÃ¦gtsforskningsprogrammer</primary>
  <secondary>LifeLines</secondary>
 </indexterm>
 <indexterm><primary>LifeLines</primary></indexterm>
 
 <para>
-Hvis man kalder dette et slægtsforskningsprogram for nørder, ville det
-ikke være helt galt. Det kan køres rent tekstbaseret, hvilket
-selvfølgelig også kan være meget smart, hvis man skal køre det på en
+Hvis man kalder dette et slÃ¦gtsforskningsprogram for nÃ¸rder, ville det
+ikke vÃ¦re helt galt. Det kan kÃ¸res rent tekstbaseret, hvilket
+selvfÃ¸lgelig ogsÃ¥ kan vÃ¦re meget smart, hvis man skal kÃ¸re det pÃ¥ en
 anden maskine over en langsom forbindelse.
-Det umiddelbare råd er: Vælg et andet program end dette,
-hvis du er helt "ny". Det vil du få mere ud af. Hvis du alligevel vil
+Det umiddelbare rÃ¥d er: VÃ¦lg et andet program end dette,
+hvis du er helt "ny". Det vil du fÃ¥ mere ud af. Hvis du alligevel vil
 kaste dig ud i det kan programmets hjemmeside findes her:
 <ulink url="http://lifelines.sourceforge.net/">http://lifelines.sourceforge.net/</ulink>.
 </para>
@@ -206,7 +206,7 @@ kaste dig ud i det kan programmets hjemmeside findes her:
 
 
 </sect2>
-</sect1> <!-- Slægtforskning -->
+</sect1> <!-- SlÃ¦gtforskning -->
 
 <!-- =================================================================== -->
 <!-- Palmpilot og Linux -->
@@ -215,8 +215,8 @@ kaste dig ud i det kan programmets hjemmeside findes her:
 <title>Palmpilot og Linux</title>
 <indexterm><primary>Palm Pilot</primary></indexterm>
 <para>
-Har du en Palmpilot, så fik du sikkert kun programmer med til Windows.
-Heldigvis er der en hel del programmer til Linux, så du kan styre din
+Har du en Palmpilot, sÃ¥ fik du sikkert kun programmer med til Windows.
+Heldigvis er der en hel del programmer til Linux, sÃ¥ du kan styre din
 Palm uden Windows.
 </para>
 
@@ -224,7 +224,7 @@ Palm uden Windows.
 
 <indexterm><primary>J-pilot</primary></indexterm>
 <listitem><para>
-J-pilot som kan ses på <xref linkend="J-pilot-fig"/>
+J-pilot som kan ses pÃ¥ <xref linkend="J-pilot-fig"/>
 kan bruges til at styre aftaler, kontakter, opgaver og notater.
 <ulink url="http://www.jpilot.org/">http://www.jpilot.org/</ulink>.
 </para></listitem>
@@ -232,15 +232,15 @@ kan bruges til at styre aftaler, kontakter, opgaver og notater.
 <listitem><para>
 <indexterm><primary>KPilot</primary></indexterm>
 KPilot er et KDE-interface til at lave backup af din Palm. Denne
-findes som selvstændig RPM-pakke (<filename>kpilot-*.i386.rpm</filename>).
+findes som selvstÃ¦ndig RPM-pakke (<filename>kpilot-*.i386.rpm</filename>).
 </para></listitem>
 
 <listitem>
 <para>
 <indexterm><primary>Pose</primary></indexterm>
 <emphasis>Pose</emphasis> er en Palm-emulator til Linux, som for eksempel
-kan bruges til at afprøve Palm-programmer under Linux før man udsætter sin
-Palm for dem. Se pose på <xref linkend="pose-fig"/>, hvor den indbyggede
+kan bruges til at afprÃ¸ve Palm-programmer under Linux fÃ¸r man udsÃ¦tter sin
+Palm for dem. Se pose pÃ¥ <xref linkend="pose-fig"/>, hvor den indbyggede
 kalender emuleres. Pose kan hentes fra <ulink
 url="http://www.palm.com/devzone/pose/seed.html">http://www.palm.com/devzone/pose/seed.html</ulink>
 </para>
@@ -250,18 +250,18 @@ url="http://www.palm.com/devzone/pose/seed.html">http://www.palm.com/devzone/pos
 
 <listitem><para>
 <indexterm><primary>Pilot-link</primary></indexterm>
-Pilot-link er den RPM-pakke du nok installerer først
-og du bør læse <command>man pilot-link</command>. Med
-<command>pilot-xfer</command> kan du overføre databaser og programmer
+Pilot-link er den RPM-pakke du nok installerer fÃ¸rst
+og du bÃ¸r lÃ¦se <command>man pilot-link</command>. Med
+<command>pilot-xfer</command> kan du overfÃ¸re databaser og programmer
 til og fra din Palm.  Der er mange nyttige programmer i denne pakke,
 se dem alle med <command>rpm -ql pilot-link</command>.
 </para></listitem>
 
 <listitem><para>
 <indexterm><primary>prc-tools</primary></indexterm>
-Der findes også et udviklingsværktøj
+Der findes ogsÃ¥ et udviklingsvÃ¦rktÃ¸j
 til at lave Palm-programmer fra en Linux-maskine.  Hent
-<filename>prc-tools-*.tar.gz</filename> på
+<filename>prc-tools-*.tar.gz</filename> pÃ¥
 <ulink url="ftp://ivan.harhan.org/pub/embedded/palmos/">ftp://ivan.harhan.org/pub/embedded/palmos/</ulink>.
 </para></listitem>
 </itemizedlist>
@@ -278,7 +278,7 @@ til at lave Palm-programmer fra en Linux-maskine.  Hent
 </figure>
 
 <para>
-Se i øvrigt <ulink url="http://www.gnulinux.com/articles/pilot.shtml">http://www.gnulinux.com/articles/pilot.shtml</ulink>
+Se i Ã¸vrigt <ulink url="http://www.gnulinux.com/articles/pilot.shtml">http://www.gnulinux.com/articles/pilot.shtml</ulink>
 for en artikel om Palm og Linux.
 </para>
 
@@ -287,38 +287,38 @@ for en artikel om Palm og Linux.
 
 <indexterm><primary>Plucker</primary></indexterm>
 <para>
-Plucker er et program der gør det muligt at se websider og alle andre
+Plucker er et program der gÃ¸r det muligt at se websider og alle andre
 dokumenter der kan konverteres til HTML eller tekst (f.eks. PDF). Det
 har mange avancerede funktioner bl.a. mulighed for at vise indlejrede
-billeder, understøttelse af eksterne kort, understøttelse af
-mailto-henvisninger på hjemmesider og et imponerende pakningsforhold
+billeder, understÃ¸ttelse af eksterne kort, understÃ¸ttelse af
+mailto-henvisninger pÃ¥ hjemmesider og et imponerende pakningsforhold
 for dokumenterne (der bruges ZLib). Vigtigere er det dog at Plucker
-bruger et åbent og dokumenteret format det gør der nemlig muligt at
-portere det til andre enheder, f.eks. er det allerede understøttet i
-QTReader for Zaurus-håndholdte (de bruger Linux som styresystem) og
-Plucker omfatter også værktøjer der kan bruges til at konveretre et
+bruger et Ã¥bent og dokumenteret format det gÃ¸r der nemlig muligt at
+portere det til andre enheder, f.eks. er det allerede understÃ¸ttet i
+QTReader for Zaurus-hÃ¥ndholdte (de bruger Linux som styresystem) og
+Plucker omfatter ogsÃ¥ vÃ¦rktÃ¸jer der kan bruges til at konveretre et
 Plucker-dokument til den "oprindelige" HTML-tekst (og billeder).
 </para>
 
 <para>
-Værktøjerne til at skabe Plucker-dokumenter er skrevet i Python
-(værktøjer skrevet i Java, C++ og Perl er under udvikling) så de kan
-køre på mange forskellige systemer. Standardgrænsefalden er en
-kommandolinje hvilket under Linux gør integration i scripts til en
-leg, men for at gøre det let at bruge for alle findes der også et
-grafisk værktøj, der gør det til et spørgsmål om et par museklik at
-lave et Plucker-dokument. Læs mere på <ulink
+VÃ¦rktÃ¸jerne til at skabe Plucker-dokumenter er skrevet i Python
+(vÃ¦rktÃ¸jer skrevet i Java, C++ og Perl er under udvikling) sÃ¥ de kan
+kÃ¸re pÃ¥ mange forskellige systemer. StandardgrÃ¦nsefalden er en
+kommandolinje hvilket under Linux gÃ¸r integration i scripts til en
+leg, men for at gÃ¸re det let at bruge for alle findes der ogsÃ¥ et
+grafisk vÃ¦rktÃ¸j, der gÃ¸r det til et spÃ¸rgsmÃ¥l om et par museklik at
+lave et Plucker-dokument. LÃ¦s mere pÃ¥ <ulink
 url="http://desktor.plkr.org">http://desktop.plkr.org</ulink>.
 </para>
 
 <para>
 Har du ikke adgang til en computer, men kan modtage post direkte
-på din Palm? Ingen grund til bekymring. Plucker Email
-Reflector-tjenesten (forkortes "pler") gør det muligt at lave et
+pÃ¥ din Palm? Ingen grund til bekymring. Plucker Email
+Reflector-tjenesten (forkortes "pler") gÃ¸r det muligt at lave et
 Plucker-dokument hvis du kan sende og modtage e-post. Du sender
 instruktioner om et Plucker-dokument to pler@plkr.org og den vil svare
-dig med et færdigt Plucker-dokument som vedhæftning. For eksempel kan
-du få en Plucker-udgave af Wired ved at putte de følgende
+dig med et fÃ¦rdigt Plucker-dokument som vedhÃ¦ftning. For eksempel kan
+du fÃ¥ en Plucker-udgave af Wired ved at putte de fÃ¸lgende
 instruktioner i en besked til pler@plkr.org:
 <programlisting>
 &lt;template&gt;
@@ -338,26 +338,26 @@ instruktioner i en besked til pler@plkr.org:
 </para>
 
 <para>
-Flere oplysninger om brug af pler kan fås ved at sende et tomt brev
-til pler@plkr.org med ordet 'help'i emnet. Systemet vil svare på sden
-anmodning om hjælp med en komplet beskrivelse af brugen af pler,
+Flere oplysninger om brug af pler kan fÃ¥s ved at sende et tomt brev
+til pler@plkr.org med ordet 'help'i emnet. Systemet vil svare pÃ¥ sden
+anmodning om hjÃ¦lp med en komplet beskrivelse af brugen af pler,
 inklusive en zip-fil med tre skabeloner som du kan rette om sende til
 pler-systemet. 
 </para>
 
-<para> Et problem har været at finde PDA-kompatibelt materiale (og
-AvantGos licensaftale med indholdsproducenter gør det ikke nemmere),
-men for at gøre en ende på det findes der nu en lang liste over åbne
-URL'er på <ulink
+<para> Et problem har vÃ¦ret at finde PDA-kompatibelt materiale (og
+AvantGos licensaftale med indholdsproducenter gÃ¸r det ikke nemmere),
+men for at gÃ¸re en ende pÃ¥ det findes der nu en lang liste over Ã¥bne
+URL'er pÃ¥ <ulink
 url="http://openurls.plkr.org">http://openurls.plkr.org</ulink>. Det
 er et <ulink
-url="http://wiki.org/wiki.cgi?WhatIsWiki">Wiki-baseret</ulink> system, så
-alle kan rette og tilføje nye adresser. I øjeblikket er der over 600
+url="http://wiki.org/wiki.cgi?WhatIsWiki">Wiki-baseret</ulink> system, sÃ¥
+alle kan rette og tilfÃ¸je nye adresser. I Ã¸jeblikket er der over 600
 adresse i systemet.
 </para>
 
 <para>Plucker er fri software og flere oplysninger om projektet kan
-findes på <ulink
+findes pÃ¥ <ulink
 url="http://www.plkr.org/">http://www.plkr.org</ulink>.</para>
 
 </sect2>
@@ -390,10 +390,10 @@ url="http://www.plkr.org/">http://www.plkr.org</ulink>.</para>
 <indexterm><primary>Scientific Applications</primary></indexterm>
 
 <para>
-Gnuplot (<command>gnuplot</command>) har i mange år været Unix-programmet,
+Gnuplot (<command>gnuplot</command>) har i mange Ã¥r vÃ¦ret Unix-programmet,
 der er blevet anvendt til at afbilde data grafisk. Der er
-både mulighed for at afbilde egne data gemt i en ASCII-fil samt få
-vist grafer dannet ud fra de almindelige regneoperationer og en række
+bÃ¥de mulighed for at afbilde egne data gemt i en ASCII-fil samt fÃ¥
+vist grafer dannet ud fra de almindelige regneoperationer og en rÃ¦kke
 indbyggede matematiske funktioner. Grafer kan vises i 2D og i 3D. Gnuplot
 har mulighed for at eksportere billeder i eps-format, hvorfor det
 passer fint sammen med LaTeX.
@@ -402,32 +402,32 @@ passer fint sammen med LaTeX.
 <para>
 Grace er et 2D-plotteprogram med et grafisk interface. Programmet
 kan producere mange typer af grafer og man har stor kontrol med
-hvordan grafen skal se ud. Programmet kan også bruges til databehandling
-såsom ikke-lineære fits, Fourier transformation, feature extraction
+hvordan grafen skal se ud. Programmet kan ogsÃ¥ bruges til databehandling
+sÃ¥som ikke-lineÃ¦re fits, Fourier transformation, feature extraction
 m.m.
 </para>
 
 <para>
 Programmet R som er en meget omfangsrig open source statistik
-pakke. Den indeholder såvel avancerede databehandlingsdele som
+pakke. Den indeholder sÃ¥vel avancerede databehandlingsdele som
 visualiseringsmetoder og bruges i stor omfang af professionelle
-statistikere. Du kan finde programmet på <ulink
+statistikere. Du kan finde programmet pÃ¥ <ulink
 url="http://www.r-project.org/">http://www.r-project.org/</ulink>
 </para>
 
 <para>
-Man kan også købe Mathematica, Maple eller Matlab til Linux. Alle tre
-er meget gennemarbejdede og tilbyder et stabilt udviklingsmiljø med
+Man kan ogsÃ¥ kÃ¸be Mathematica, Maple eller Matlab til Linux. Alle tre
+er meget gennemarbejdede og tilbyder et stabilt udviklingsmiljÃ¸ med
 alt inden for numeriske/symbolske metoder og grafik. Grafikken er her
 helt i top og meget enkel at anvende.  </para>
 
 <para>
-MuPAD er måske også værd at hente. Det er gratis - dog ikke Open
-Source. MuPAD kan findes på
+MuPAD er mÃ¥ske ogsÃ¥ vÃ¦rd at hente. Det er gratis - dog ikke Open
+Source. MuPAD kan findes pÃ¥
 <ulink url="http://www.mupad.de">http://www.mupad.de</ulink>. MuPAD er
 et meget avanceret matematik-program, som bl.a. kan regne symbolsk med
-bogstaver. På mange områder er MuPAD en mindre kendt konkurrent til
-Mathematica og Maple. På det seneste har en hollandsk gut arbejdet på
+bogstaver. PÃ¥ mange omrÃ¥der er MuPAD en mindre kendt konkurrent til
+Mathematica og Maple. PÃ¥ det seneste har en hollandsk gut arbejdet pÃ¥
 endnu en konkurrent. Navnet er Yacas (yet another computer algebra
 system). Yacas er bestemt ikke modent til daglig brug, men det er
 sjovt at lege med!
@@ -437,15 +437,15 @@ sjovt at lege med!
 <para>
 De gratis Matlab-kloner, Scilab og Octave, er gode til numerisk
 manipulation af matricer og vektorer samt anden databehandling. Til
-præsentation af grafik er Octave baseret på Gnuplot, mens Scilab har
+prÃ¦sentation af grafik er Octave baseret pÃ¥ Gnuplot, mens Scilab har
 udviklet deres egne biblioteker til at vise grafer. Disse er
-gratis, men ikke på højde med de kommercielle programmer. Pythons
-numeriske udvidelser (NumPy) er værd at kigge nærmere på - lidt frækt
+gratis, men ikke pÃ¥ hÃ¸jde med de kommercielle programmer. Pythons
+numeriske udvidelser (NumPy) er vÃ¦rd at kigge nÃ¦rmere pÃ¥ - lidt frÃ¦kt
 kan man sige at Python er en bedre Matlab end Matlab.
 </para>
 
 <para>
-Vil du vide mere om programmer til matematik, fysik, biologi osv., bør
+Vil du vide mere om programmer til matematik, fysik, biologi osv., bÃ¸r
 du tjekke Scientific Applications on Linux: <ulink
 url="http://sal.jyu.fi">http://sal.jyu.fi</ulink>.
 </para>
@@ -453,10 +453,10 @@ url="http://sal.jyu.fi">http://sal.jyu.fi</ulink>.
 
 
 <!-- =================================================================== -->
-<!-- Programmeringsværktøjer -->
+<!-- ProgrammeringsvÃ¦rktÃ¸jer -->
 <!-- =================================================================== -->
 <sect1 id="progtools">
- <title>Programmeringsværktøjer</title>
+ <title>ProgrammeringsvÃ¦rktÃ¸jer</title>
 
 <sect2 id="programmeringssprog">
 <title>Programmeringssprog</title>
@@ -465,22 +465,22 @@ url="http://sal.jyu.fi">http://sal.jyu.fi</ulink>.
 
 <indexterm><primary>gcc</primary></indexterm>
   <para>
-   Den mest anvendte oversætter til Linux er <emphasis>GNU Compiler
-   Collection</emphasis> (GCC) og bruges bl.a. til at oversætte Ada, C
+   Den mest anvendte oversÃ¦tter til Linux er <emphasis>GNU Compiler
+   Collection</emphasis> (GCC) og bruges bl.a. til at oversÃ¦tte Ada, C
    og C++.
   </para>
 
   <para>
    Udover Ada, C og C++ findes der bl.a. Lisp, Java, Scheme, assembler,
-   Smalltalk, Tcl/Tk, Python, Perl, awk, sed, Pascal og Fortran. Man kan også
-   <emphasis>købe</emphasis> C-, C++- og Fortran 77/90-oversættere.
-   F.eks. leverer Portland Group en hel række oversættere (se <ulink
+   Smalltalk, Tcl/Tk, Python, Perl, awk, sed, Pascal og Fortran. Man kan ogsÃ¥
+   <emphasis>kÃ¸be</emphasis> C-, C++- og Fortran 77/90-oversÃ¦ttere.
+   F.eks. leverer Portland Group en hel rÃ¦kke oversÃ¦ttere (se <ulink
    url="http://www.pgroup.com/">http://www.pgroup.com/</ulink>).
   </para>
 
   <para>
-   Hvert af sprogene har sine stærke (og svage) sider og har fundet anvendelse
-   på en række områder. I dag ser det ud til, at Perl står meget stærkt. Perl
+   Hvert af sprogene har sine stÃ¦rke (og svage) sider og har fundet anvendelse
+   pÃ¥ en rÃ¦kke omrÃ¥der. I dag ser det ud til, at Perl stÃ¥r meget stÃ¦rkt. Perl
    er et fortolket sprog, som ikke er effektivt til store numeriske
    beregninger, men uovertruffent til at lave programmer, der skal foretage
    omformatering af tekst. Med ret simple kommandoer kan du hurtigt lave
@@ -488,8 +488,8 @@ url="http://sal.jyu.fi">http://sal.jyu.fi</ulink>.
   </para>
 
 <para>
-Til hurtigt at lave programmer med en grafisk brugergrænseflade
-har Tcl/Tk og Python også fået stor udbredelse.</para>
+Til hurtigt at lave programmer med en grafisk brugergrÃ¦nseflade
+har Tcl/Tk og Python ogsÃ¥ fÃ¥et stor udbredelse.</para>
 
 <para>Du kan finde meget mere om programmering under Linux i
 programmeringsbogen "Linux &ndash; Friheden til at programmere", som
@@ -497,7 +497,7 @@ kan hentes fra <ulink url="http://&linuxbogurl;/">
 &linuxbogurl;</ulink></para> 
 
 </sect2> 
-</sect1> <!-- Programmeringsværktøjer -->
+</sect1> <!-- ProgrammeringsvÃ¦rktÃ¸jer -->
 
 
 </chapter>

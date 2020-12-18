@@ -1,6 +1,6 @@
 # Denne fil er skrevet af Peter Toft og Jacob Sparre Andersen
 # Den gemmes som ~/.procmailrc
-# Til Qmail skal der skrives følgende i ~/.qmail
+# Til Qmail skal der skrives fÃ¸lgende i ~/.qmail
 #  | preline /usr/bin/procmail -p
 
 PATH=$HOME/bin:/usr/bin:/bin:/usr/local/bin:.
@@ -11,10 +11,10 @@ LOCKFILE=$HOME/.lockmail
 SKIDTPOST=$MAILDIR/skidtpost
 #SKIDTPOST=/dev/null
 
-## Sæt SKIDTPOST som vist da gemmes spam/skidtpost i folderen "skidtpost"
-## Sæt til /dev/null da slettes det; men da det er temmelig risikabelt
+## SÃ¦t SKIDTPOST som vist da gemmes spam/skidtpost i folderen "skidtpost"
+## SÃ¦t til /dev/null da slettes det; men da det er temmelig risikabelt
 ## kan man overveje at tage en sikkerheds kopi af de sidste 32 meddelelser.
-## Lav først et katalog (mkdir mail/backup)
+## Lav fÃ¸rst et katalog (mkdir mail/backup)
 #
 #      :0 c
 #      backup
@@ -24,7 +24,7 @@ SKIDTPOST=$MAILDIR/skidtpost
 # 
 ########################################
 # Offentlige lukkede SSLUG postlister der er 
-# sikrede mod spam kommer først
+# sikrede mod spam kommer fÃ¸rst
 
 ## Gemmer alt til sslug-LISTE@sslug.dk
 ## i sslug/LISTE
@@ -72,8 +72,8 @@ opensource/misc
 * ^From:.*\<_.+\>
 $SKIDTPOST
 
-## Man kan sætte flere afsendere i samme linie, hvis de adskilles 
-## med tegnet "|". Undgå mellemrum
+## Man kan sÃ¦tte flere afsendere i samme linie, hvis de adskilles 
+## med tegnet "|". UndgÃ¥ mellemrum
 
 :0:
 * ^Content-type:.*(ks_c_5601-1987|ISO-2022-KR|EUC-KR|koi8-r)
@@ -123,13 +123,13 @@ $SKIDTPOST
 * ^From:.+\<_.+\>
 $SKIDTPOST
 
-# Et filter der frasorterer på typiske fraser i Emne feltet
-# der skelnes ikke mellem store og små bogstaver, dertil bruges D flaget
+# Et filter der frasorterer pÃ¥ typiske fraser i Emne feltet
+# der skelnes ikke mellem store og smÃ¥ bogstaver, dertil bruges D flaget
 :0:
 * ^Subject:.*(waiting for your reply|INTERNET MARKETING|look at this|You never see this|Laser Products|save [0-9]+[%]|(now only|make) \$|Wall Street|Price Buster Clearance|no-spam|your sales|foreign residents|investment alert|earn money|naked girls|Security for your PC|Mortgage|green card|AFFORDABLE|Purchase Manager|FREE TEEN|TEEN HARDCORE|Feel Young|Fortune 500|urgent assistance|Financial Freedom|Maritime Newsletter|Exclusive offer|with.*better price|spam mail|foreign citizen|stockbroker|Just What Your Pet Asked For|Invest tip|health improvement formula|Are You Paying Too Much|CONGRATULATIONS|Stock market|Gov Grants Info|Boost The Reliability Of Windows|are.*you.*tired.*of|limited.*offer|Printer.*Cartridge|stock.*alert|An.*online.*greeting|double.*money|save \$|\$100|Offshore.*Free|get paid to|your number is|foreign investors|Receive Your Blessing|BlackJack|Reach Millions|Free Samples|mail.*Million|We've spent the last two years thinki|SPAM FREE|make.*\$|Windows Reliability|Nude teens|Stop Searching Start Earning|Stop begging lenders|Boost Your Cell|This Really Works|Incredible Pictures|Start Making MONEY Online Today|This is working for me|company profile|adult.*material|I Thought You Would Like To Know|[%] Off|dine kunder|your costumers|special offer|Find Out the TRUTH|MILLION.*EMAIL ADDRESSES|Bad Credit|Earn.*Income.*Home|Forbidden.*Secrets.*Revealed|Enlarge your penis|interested.in.money|EASY WEIGHT LOSS|FREE.*Guaranteed|market insider|MILLION.Email|your.free|your.credit|credit.card|marketprofile|sexual|extra money|Increase Your Profit|It will change your life|viagra|AIRE ACONDICIONADO|\$\$\$|MUST READ|IMPORTANT INFORMATION|FREE.*LEGALLY|XXX|p[o0]rn|advertis|bull market|credit cards|wealth|make money)
 $SKIDTPOST
 
-# Høflige afsemdere af reklame materiale skilter med det
+# HÃ¸flige afsemdere af reklame materiale skilter med det
 :0:
 * ^Subject:.(ADV|AD):
 $SKIDTPOST
@@ -152,28 +152,28 @@ $SKIDTPOST
 * ^(From|Sender):.*(themail\.com|bizjournals\.com|belgacom\.net|testinginstitute\.com|Allergy News|linksandmail\.com|torchmarkcorp\.com|artmarket\.com|braincoders\.com|designcreator\.com|xsmail\.com|mail\.asia-links\.com|adzines\.com|trafficbbs\.net|amail\.co\.uk|Datamation IT Mana|systems-mail\.org|Randy.Hutson|@bcad\.org|btamail\.net\.cn|education@edventures[.]com|ziwsgroup[.]com|supersphere[.]cc|trafficmagnet[.]net|jackpotcity[.]com|themaxx[.]be|gozilla[.]com|FANOFUNNY|@msn[.]com|The Financial News|eximkey[.]com|marketingTorben Garnfeldt|netbok[.]com|@mail[.]ru|@home[.]ro|@personal[.]ro|getfreebonus[.]com|manager[.]de|mecom[.]net|money-maker|[.]co[.]kr>|zzn[.]com|bytmusik[.]com|living-colors[.]ch|rediffmail[.]com|dedicated-systems[.]com|@eudoramail[.]com|blazemail[.]com|turkishshiprepaircenter[.]com|shipagent|Hahaha|@gethlp[.]dk|stocktips|marketprofile|arabia[.]com|dataintegrity.*@excite[.]com|france-mail[.]com|servaltem[.]net|post[.]sk)
 $SKIDTPOST
 
-## Kvæler alt fra @aol.com - dog ikke
+## KvÃ¦ler alt fra @aol.com - dog ikke
 ## EMAIL-ADRESSE-FRA-MAIL-DOT-COM-SOM-ER-OK@aol.com
 :0:
 *  ^(From|Sender):.*@aol[.]com
 * !^From:.*(EMAIL-ADRESSE-FRA-MAIL-DOT-COM-SOM-ER-OK)@aol[.]com
 $SKIDTPOST
 
-## Kvæler alt fra @compuserve.com - dog ikke
+## KvÃ¦ler alt fra @compuserve.com - dog ikke
 ## EMAIL-ADRESSE-FRA-MAIL-DOT-COM-SOM-ER-OK@compuserve.com
 :0:
 *  ^(From|Sender):.*@compuserve[.]com
 * !^From:.*(EMAIL-ADRESSE-FRA-MAIL-DOT-COM-SOM-ER-OK)@compuserve[.]com
 $SKIDTPOST
 
-## Kvæler alt fra @hotmail.com - dog ikke
+## KvÃ¦ler alt fra @hotmail.com - dog ikke
 ## EMAIL-ADRESSE-FRA-MAIL-DOT-COM-SOM-ER-OK@hotmail.com
 :0:
 *  ^(From|Sender):.*@hotmail[.]com
 * !^From:.*(EMAIL-ADRESSE-FRA-MAIL-DOT-COM-SOM-ER-OK)@hotmail[.]com
 $SKIDTPOST
 
-## Kvæler alt fra @mail.com - dog ikke 
+## KvÃ¦ler alt fra @mail.com - dog ikke 
 ## EMAIL-ADRESSE-FRA-MAIL-DOT-COM-SOM-ER-OK@mail.com
 :0:
 *  ^(From|Sender):.*@mail[.]com
@@ -184,7 +184,7 @@ $SKIDTPOST
 * ^Received:.*krline.net
 $SKIDTPOST
 
-## Alt med business er skidt - dog ikke hvis det handler også om lego 
+## Alt med business er skidt - dog ikke hvis det handler ogsÃ¥ om lego 
 :0:
 *  ^Subject:.*business
 * !^Subject:.*lego
@@ -202,7 +202,7 @@ $SKIDTPOST
 
 ##############################
 # Spamassasin - udkommenter
-# følgende fem linier for at 
+# fÃ¸lgende fem linier for at 
 # anvende dette - se http://linux.dk/artikler/artikel-12.php
 
 #:0fw
@@ -214,7 +214,7 @@ $SKIDTPOST
 
 
 ############################################################
-# Følgende filter vil se på vedhæftede filer
+# FÃ¸lgende filter vil se pÃ¥ vedhÃ¦ftede filer
 
 ## Markere breve med mulige vira som skidt "i subject-feltet"
 
@@ -234,7 +234,7 @@ $SKIDTPOST
 #}
 
 
-## Følgende filter vil slette breve med mulige virus-attachments.
+## FÃ¸lgende filter vil slette breve med mulige virus-attachments.
 
 #:0:
 #* ^Content-type: (multipart/mixed|application/octet-stream)
@@ -250,7 +250,7 @@ $SKIDTPOST
 
 
 #########################################
-# Diverse post-lister uden spam-filtre på
+# Diverse post-lister uden spam-filtre pÃ¥
 
 :0:
 *(To|Cc).*mgp-users@mew.org

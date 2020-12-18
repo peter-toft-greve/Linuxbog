@@ -1,22 +1,22 @@
 <chapter id="kontor">
-<title>Tekstbehandling, regneark og præsentationer</title>
+<title>Tekstbehandling, regneark og prÃ¦sentationer</title>
 
 <para>Inden for tekstbehandling er der flere muligheder,
 bl.a. fuld-grafiske kontorpakker som har alt hvad Microsoft Office
-har, men der er alternativer til dig, hvis du foretrækker egentlige
-tekstsætningssystemer &ndash; altså programmer beregnet til at skrive
-professionelt og meget. Tekstsætningssystemer som TeX/LaTeX og SGML
+har, men der er alternativer til dig, hvis du foretrÃ¦kker egentlige
+tekstsÃ¦tningssystemer &ndash; altsÃ¥ programmer beregnet til at skrive
+professionelt og meget. TekstsÃ¦tningssystemer som TeX/LaTeX og SGML
 DocBook er meget velegnede til store opgaver, men prisen er at du
-redigerer tekst-filer som sidenhen oversættes for at kunne
-udskrive/trykke dem eller overføre dem til f.eks. HTML. Dette kapitel
-vil også præsentere flere regneark samt flere måder at lave
-præsentationer, svarende til det som kan laves med f.eks. Microsoft
+redigerer tekst-filer som sidenhen oversÃ¦ttes for at kunne
+udskrive/trykke dem eller overfÃ¸re dem til f.eks. HTML. Dette kapitel
+vil ogsÃ¥ prÃ¦sentere flere regneark samt flere mÃ¥der at lave
+prÃ¦sentationer, svarende til det som kan laves med f.eks. Microsoft
 PowerPoint.</para>
 
-<para>Det skal nævnes at bogen "Linux &ndash; Friheden til at vælge
-kontorprogrammer" har direkte fokus på brugen af udvalgte
-kontor-programmer, såsom OpenOffice.org/StarOffice og at den bog
-formentlig vil være god at læse i tilgift til denne bog.</para>
+<para>Det skal nÃ¦vnes at bogen "Linux &ndash; Friheden til at vÃ¦lge
+kontorprogrammer" har direkte fokus pÃ¥ brugen af udvalgte
+kontor-programmer, sÃ¥som OpenOffice.org/StarOffice og at den bog
+formentlig vil vÃ¦re god at lÃ¦se i tilgift til denne bog.</para>
 
 
 <!-- =================================================================== -->
@@ -29,18 +29,18 @@ formentlig vil være god at læse i tilgift til denne bog.</para>
 <indexterm><primary>Word</primary></indexterm>
 <indexterm><primary>Wordfiler</primary><secondary>konverter til
 HTML</secondary></indexterm> <para> Ud over de store Office programmer
-til Linux, så kan det være bekvemt at du nemt kan oversætte Microsoft
-Word formatet til HTML, så en Word-fil kan læses på en
-Linux-maskine. På <ulink
+til Linux, sÃ¥ kan det vÃ¦re bekvemt at du nemt kan oversÃ¦tte Microsoft
+Word formatet til HTML, sÃ¥ en Word-fil kan lÃ¦ses pÃ¥ en
+Linux-maskine. PÃ¥ <ulink
 url="http://freshmeat.net/">freshmeat.net</ulink> kan du finde
-<command>wvHtml</command> &ndash; eller gå direkte til <ulink
+<command>wvHtml</command> &ndash; eller gÃ¥ direkte til <ulink
 url="http://www.wvWare.com/">www.wvWare.com</ulink>. Installer denne
-pakke og brug <command>wvHtml</command> til at konvertere med (bemærk
-at vw indeholder oversættere til andet end blot HTML &ndash;
+pakke og brug <command>wvHtml</command> til at konvertere med (bemÃ¦rk
+at vw indeholder oversÃ¦ttere til andet end blot HTML &ndash;
 f.eks. <command>wvPDF</command> og <command>wvText</command>.  </para>
 
-<para>En Office-pakke, der endnu ikke har fået meget omtale er Siag
-&ndash; se mere på <ulink
+<para>En Office-pakke, der endnu ikke har fÃ¥et meget omtale er Siag
+&ndash; se mere pÃ¥ <ulink
 url="http://siag.nu">http://siag.nu</ulink>.</para>
 
 
@@ -63,7 +63,7 @@ url="http://siag.nu">http://siag.nu</ulink>.</para>
 <para>OpenOffice.org er et stykke imponerende software, der indeholder et
 tekstbehandlingssystem (<command>oowriter</command>), regneark
 (<command>oocalc</command>), tegneprogram (<command>oodraw</command>),
-præsentationsprogram (<command>ooimpress</command>), og
+prÃ¦sentationsprogram (<command>ooimpress</command>), og
 formelredigeringsprogram (<command>oomath</command>).</para>
 
 <para>OpenOffice.org findes som pakke til de fleste distributioner, typisk
@@ -71,9 +71,9 @@ under navnet "OpenOffice.org", eller "openoffice". Alternativt kan du
 hente den nyeste version fra <ulink
 url="http://www.openoffice.org/">www.openoffice.org</ulink>.</para>
 
-<para>OpenOffice.org &ndash; og det afledte StarOffice &ndash; er dækket
-omfattende i bogen "Linux &ndash; Friheden til at vælge
-kontorprogrammer" som du kan finde på <ulink
+<para>OpenOffice.org &ndash; og det afledte StarOffice &ndash; er dÃ¦kket
+omfattende i bogen "Linux &ndash; Friheden til at vÃ¦lge
+kontorprogrammer" som du kan finde pÃ¥ <ulink
 url="http://&linuxbogurl;/"> &linuxbogurl;</ulink> og vil derfor ikke
 blive omtalt yderligere her.</para>
 
@@ -93,12 +93,12 @@ blive omtalt yderligere her.</para>
  <secondary>med AbiWord</secondary></indexterm>
 
 <para> Mangler du et godt, hurtigt og frit lille
- tekstbehandlingsprogram, som også kan køre på små maskiner, er
+ tekstbehandlingsprogram, som ogsÃ¥ kan kÃ¸re pÃ¥ smÃ¥ maskiner, er
  Abiword et godt valg.  Abiword har alle basale funtioner et
- tekstbehandlingsprogram skal have og en rimelig understøttelse af de
+ tekstbehandlingsprogram skal have og en rimelig understÃ¸ttelse af de
  mest udbredte formater som f.eks. Microsoft Word formatet. Programmet
- har danske menutekster og stavekontrol. På <xref
- linkend="abiword-fig"/> kan du se et skærmskud af en ældre udgave af
+ har danske menutekster og stavekontrol. PÃ¥ <xref
+ linkend="abiword-fig"/> kan du se et skÃ¦rmskud af en Ã¦ldre udgave af
  Abiword.</para>
 
 <figure id="abiword-fig" float="1">
@@ -106,15 +106,15 @@ blive omtalt yderligere her.</para>
  <graphic fileref="abiword.&magic;" scale="40"></graphic>
 </figure>
 
-<para> På Abiwords hjemmeside (<ulink url="http://www.abisource.com/">
- www.abisource.com</ulink>) er der en meget god dokumentation, især
+<para> PÃ¥ Abiwords hjemmeside (<ulink url="http://www.abisource.com/">
+ www.abisource.com</ulink>) er der en meget god dokumentation, isÃ¦r
  nogle gode OSS'er hvis der er problemer med skriftsnit og det danske
  sprog. Abiword findes som pakke til de fleste systemer, men dette kan
- ofte være lidt ældre pakker, så du bør nok besøge hjemmesiden og se
+ ofte vÃ¦re lidt Ã¦ldre pakker, sÃ¥ du bÃ¸r nok besÃ¸ge hjemmesiden og se
  om der er en nyere version, hvis du bliver glad for Abiword.</para>
 
-<para>Det skal nævnes at ordbogen til dansk stavekontrol kan opdateres
- fra dataene til Ispell på <ulink url="http://da.speling.org/">
+<para>Det skal nÃ¦vnes at ordbogen til dansk stavekontrol kan opdateres
+ fra dataene til Ispell pÃ¥ <ulink url="http://da.speling.org/">
  da.speling.org</ulink>. Filen <filename>dansk.hash</filename> fra
  Ispell kopieres til kataloget hvor <filename>american.hash</filename>
  ligger, typisk
@@ -141,33 +141,33 @@ med regneark.</para>
 <title>Gnumeric regneark</title>
 
 <para>Gnumeric er et fornuftigt, flerdimensionalt regneark som
-indlæser og skriver Microsoft <filename>.xls</filename> filer og som
+indlÃ¦ser og skriver Microsoft <filename>.xls</filename> filer og som
 ellers arbejder i et meget fornuftigt xml-format, som kan benyttes til
 at generere regneark-opstillinger ud fra f.eks. et
-databaseudtræk.</para>
+databaseudtrÃ¦k.</para>
 
 <graphic fileref="gnumeric1.&magic;"  scale="50"></graphic>
 
-<para>Gnumeric er skrevet med Gnome-toolkit, men på en måde, så den
-ikke er nødt til at køre under Gnome-desktoppen. Den kan køre under
-mange forskellige window-managere, også den effektive, men minimale,
-<command>twm</command>, der følger med X-Window systemet.</para>
+<para>Gnumeric er skrevet med Gnome-toolkit, men pÃ¥ en mÃ¥de, sÃ¥ den
+ikke er nÃ¸dt til at kÃ¸re under Gnome-desktoppen. Den kan kÃ¸re under
+mange forskellige window-managere, ogsÃ¥ den effektive, men minimale,
+<command>twm</command>, der fÃ¸lger med X-Window systemet.</para>
 
 <para>Gnumeric kan stort set alle de ting, et regneark skal kunne. Det
 er muligt at bruge store bogstaver, lave rammer og farver samt skille
 afsnit med ekstra linjer, men det er noget, man selv skal
-gøre. Microsoft Excels udmærkede "styles" er desværre ikke
-implementeret som et fikst og færdigt klik.</para>
+gÃ¸re. Microsoft Excels udmÃ¦rkede "styles" er desvÃ¦rre ikke
+implementeret som et fikst og fÃ¦rdigt klik.</para>
 
-<para>Det går nemt at indtaste et simpelt regneark, trække lidt i
-kanterne for at få plads til en stor overskrift, skifte kolonnebredde
-og indtaste en formel &ndash; samt få hjælp til, hvordan en sådan kan
+<para>Det gÃ¥r nemt at indtaste et simpelt regneark, trÃ¦kke lidt i
+kanterne for at fÃ¥ plads til en stor overskrift, skifte kolonnebredde
+og indtaste en formel &ndash; samt fÃ¥ hjÃ¦lp til, hvordan en sÃ¥dan kan
 se ud.</para>
 
 <graphic fileref="gnum_style.&magic;" scale="50"></graphic>
 <graphic fileref="gnum_formula.&magic;" scale="50"></graphic>
 
-<para>Ved indlæsning af et Excel-regneark, fås følgende
+<para>Ved indlÃ¦sning af et Excel-regneark, fÃ¥s fÃ¸lgende
 advarsel:</para>
 
 <programlisting>
@@ -178,17 +178,17 @@ FIXME: unicode support unimplemented: truncating
 
 <graphic fileref="gnumeric2.&magic;"  scale="50"></graphic>
 
-<para>Når gnumeric er startet op, ligner den et pænt og nydeligt
-regneark med indbydende funktionsmenu for oven, ca. 25 knapper på
+<para>NÃ¥r gnumeric er startet op, ligner den et pÃ¦nt og nydeligt
+regneark med indbydende funktionsmenu for oven, ca. 25 knapper pÃ¥
 toolbars og felt til input af tekst og formler. Altsammen meget
 genkendeligt.  </para>
 
 <graphic fileref="gnum_preview.&magic;"  scale="50"></graphic>
 
-<para>Har man brug for hjælp, er help-menuen der, hvor den plejer at
-være, længst til højre på menubjælken. Man kan hurtigt danne sig et
-overblik over den hjælp, der er at få. Desværre er enkelte afsnit ikke
-skrevet færdige.  </para>
+<para>Har man brug for hjÃ¦lp, er help-menuen der, hvor den plejer at
+vÃ¦re, lÃ¦ngst til hÃ¸jre pÃ¥ menubjÃ¦lken. Man kan hurtigt danne sig et
+overblik over den hjÃ¦lp, der er at fÃ¥. DesvÃ¦rre er enkelte afsnit ikke
+skrevet fÃ¦rdige.  </para>
 
 <graphic fileref="gnum_help1.&magic;"  scale="40"></graphic>
 
@@ -196,17 +196,17 @@ skrevet færdige.  </para>
  <title>Gnumerics filformater</title>
 
  <para>
-  <emphasis>Kun for programmører!</emphasis> 
+  <emphasis>Kun for programmÃ¸rer!</emphasis> 
 
   Hvis man vil lade sine programmer generere regneark for at kunne
-  vise brugeren en talsammenhæng, så må man bruge et regneark med et
+  vise brugeren en talsammenhÃ¦ng, sÃ¥ mÃ¥ man bruge et regneark med et
   dokumenteret og fornuftigt filformat. Gnumeric kan bruges til den
   slags applikationer.
  </para>
 
  <para>
   Gnumerics standardfilformat er XML-baseret. Det gemmes i komprimeret
-  form, via gzip, og derfor kan filen læses med
+  form, via gzip, og derfor kan filen lÃ¦ses med
   f.eks. zless-programmet. Her er en listning af linje 23 i et
   regneark:
  </para>
@@ -236,25 +236,25 @@ skrevet færdige.  </para>
 
 <para>
 Dette er en listning af linje 23 i priskalkulationseksemplet. Den
-bliver til linje 22, hvis man tæller fra 0, og det gør man jo
-på en computer.  Der er 6 kolonner i linje 22, altså 6 felter.
-Det andet felt indeholder 'ASUS V3800 TNT2 32MB', altså en tekst.
-De andre felters indhold er nem at få øje på, når man lader øjet
+bliver til linje 22, hvis man tÃ¦ller fra 0, og det gÃ¸r man jo
+pÃ¥ en computer.  Der er 6 kolonner i linje 22, altsÃ¥ 6 felter.
+Det andet felt indeholder 'ASUS V3800 TNT2 32MB', altsÃ¥ en tekst.
+De andre felters indhold er nem at fÃ¥ Ã¸je pÃ¥, nÃ¥r man lader Ã¸jet
 glide ned.
 </para>
 
 <para>
-Skal man nu generere andre priser eller felter, så kan man tage sådan
-en Gnumeric-fil &ndash; husk at unzippe den først &ndash; og så bruge
-den som model for et awk-program, typisk ved at sætte let genkendelige
-koder ind, hvor man vil sætte indhold fra database eller andet ind. Så
-kan man bagefter præsentere disse data som regneark. Desuden kan man
-jo udskrive sine data pænt formateret.  </para>
+Skal man nu generere andre priser eller felter, sÃ¥ kan man tage sÃ¥dan
+en Gnumeric-fil &ndash; husk at unzippe den fÃ¸rst &ndash; og sÃ¥ bruge
+den som model for et awk-program, typisk ved at sÃ¦tte let genkendelige
+koder ind, hvor man vil sÃ¦tte indhold fra database eller andet ind. SÃ¥
+kan man bagefter prÃ¦sentere disse data som regneark. Desuden kan man
+jo udskrive sine data pÃ¦nt formateret.  </para>
 
 <para>
 XML-Formatet er dokumenteret og er ren ascii. Som det siges i
-manualsiderne, er dette format designet til at være
-menneske-læseligt og nemt at udvide.
+manualsiderne, er dette format designet til at vÃ¦re
+menneske-lÃ¦seligt og nemt at udvide.
 </para>
 
 </sect3>
@@ -283,11 +283,11 @@ Excel eller lignende, men XSpread er bestemt anvendeligt.
 </indexterm>
 
 
-<para>Andre regneark, med pæne brugerflader, findes også (men
-kommercielle), f.eks.  på <ulink
+<para>Andre regneark, med pÃ¦ne brugerflader, findes ogsÃ¥ (men
+kommercielle), f.eks.  pÃ¥ <ulink
 url="http://www.xess.com">www.xess.com</ulink> og <ulink
 url="http://www.wingz-us.com/wingz/index.html">www.wingz-us.com</ulink>,
-som virker helt på højde med, hvad du kender fra Windows-verdenen.
+som virker helt pÃ¥ hÃ¸jde med, hvad du kender fra Windows-verdenen.
 </para>
 
 </sect2>
@@ -300,21 +300,21 @@ som virker helt på højde med, hvad du kender fra Windows-verdenen.
 <!-- ============================================================ -->
 
 <sect1 id="applikationer-praesentation">
-<title>Præsentationsprogrammer</title>
+<title>PrÃ¦sentationsprogrammer</title>
  <indexterm><primary>PowerPoint</primary></indexterm>
 
  <para>I OpenOffice.org findes programmet <command>ooimpress</command>
-  der er et fremragende program til at lave præsentationer med,
+  der er et fremragende program til at lave prÃ¦sentationer med,
   svarende til f.eks. programmet Microsoft PowerPoint. Dette program
-  omtales i bogen "Linux &ndash; Friheden til at vælge
-  kontorprogrammer" som du kan finde på <ulink
+  omtales i bogen "Linux &ndash; Friheden til at vÃ¦lge
+  kontorprogrammer" som du kan finde pÃ¥ <ulink
   url="http://&linuxbogurl;/"> &linuxbogurl;</ulink></para>
 
 <para>Vi omtaler i dette afsnit kort en anden slags programmer til at
-lave præsentationer med. Disse programmer er ikke sædvanlige grafiske
+lave prÃ¦sentationer med. Disse programmer er ikke sÃ¦dvanlige grafiske
 programmer, men programmer der anvendes ved at redigere en tekst fil,
 som man bagefter anvender som inddata til det egentlige
-præsentationsprogram. Denne fremgangsmåde gør det nemt at integrere
+prÃ¦sentationsprogram. Denne fremgangsmÃ¥de gÃ¸r det nemt at integrere
 programmerne med de traditionelle Unix/Linux-programmer som LaTeX,
 Gnuplot, mv.</para>
 
@@ -322,8 +322,8 @@ Gnuplot, mv.</para>
 <!-- magicpoint -->
 <!-- ============================================================ -->
 <sect2 id="magicpoint">
- <title>Præsentationer med MagicPoint</title>
- <indexterm><primary>præsentationer</primary>
+ <title>PrÃ¦sentationer med MagicPoint</title>
+ <indexterm><primary>prÃ¦sentationer</primary>
             <secondary>MagicPoint-</secondary></indexterm>
  <indexterm><primary>MagicPoint</primary></indexterm>
 
@@ -333,7 +333,7 @@ Gnuplot, mv.</para>
   </para>
 
  <para>
-For at bruge MagicPoint skriver du en tekstfil med præsentationen.
+For at bruge MagicPoint skriver du en tekstfil med prÃ¦sentationen.
 F.eks. kan en side skrives som: </para>
 
 <programlisting>
@@ -344,28 +344,28 @@ Open Source (TM)
 http://www.opensource.org
 
 	Frigivelse af kildeteksten sammen med programmet
-	Alle må anvende og ændre kildetekst efter behov
-	Alle må videregive modificeret kode under samme licens
+	Alle mÃ¥ anvende og Ã¦ndre kildetekst efter behov
+	Alle mÃ¥ videregive modificeret kode under samme licens
 
 %center
 %image "images/pingo.jpg" 1050x850
 </programlisting>
 
 <para>
-Tekstfilen køres så af MagicPoint (<command>mgp</command>), og
-tilsvarende præsentationsside ser ud som følger:
+Tekstfilen kÃ¸res sÃ¥ af MagicPoint (<command>mgp</command>), og
+tilsvarende prÃ¦sentationsside ser ud som fÃ¸lger:
 </para>
 
 
 <figure id="magicpoint-fig" float="1">
-<title>Præsentation med MagicPoint</title>
+<title>PrÃ¦sentation med MagicPoint</title>
 <graphic fileref="magicpoint.&magic;"  scale="40"></graphic>
 </figure>
 
 <para>
-MagicPoint kan også bruge TrueType-skrifttyper <!--(se om installation i xref
+MagicPoint kan ogsÃ¥ bruge TrueType-skrifttyper <!--(se om installation i xref
 linkend="truetype" )--> og resultatet er meget flottere end hvis du
-bruger X-skrifttyper. Opsætningen er måske ikke oplagt; man skal have en
+bruger X-skrifttyper. OpsÃ¦tningen er mÃ¥ske ikke oplagt; man skal have en
 sti til TrueType-skrifttyperne i <filename>~/.mgprc</filename>:
 </para>
 
@@ -386,10 +386,10 @@ TTF-filer, f.eks.:
 </programlisting>
 
 <para>
-MagicPoint er nemt at arbejde med og har en del gode muligheder, såsom
+MagicPoint er nemt at arbejde med og har en del gode muligheder, sÃ¥som
 at du kan lave en web-udgave af dit foredrag ved at bruge <command>mgp
 -g 640x480 -D OUTDIR MIT_FOREDRAG.mgp</command>, hvor 640x480 er den
-opløsning hvert billede får, <filename>OUTDIR</filename> er det
+oplÃ¸sning hvert billede fÃ¥r, <filename>OUTDIR</filename> er det
 katalog hvor foredraget gemmes og
 <filename>MIT_FOREDRAG.mgp</filename> er magicPoint-filen med
 foredraget.  </para> </sect2>
@@ -400,14 +400,14 @@ foredraget.  </para> </sect2>
 
 <sect2 id="pointless">
 <title>Pointless</title> 
- <indexterm><primary>præsentationer</primary>
+ <indexterm><primary>prÃ¦sentationer</primary>
             <secondary>Pointless-</secondary></indexterm>
  <indexterm><primary>Pointless</primary></indexterm>
  <indexterm><primary>PLL</primary></indexterm>
 
-<para> Der findes et dansk alternativ til MagicPoint, som går under
+<para> Der findes et dansk alternativ til MagicPoint, som gÃ¥r under
 navnet Pointless. Pointless er ligesom MagicPoint et program hvor du
-skriver en tekstfil med præsentationen, f.eks. kan en side skrives
+skriver en tekstfil med prÃ¦sentationen, f.eks. kan en side skrives
 som: </para>
 
 <screen>
@@ -416,8 +416,8 @@ som: </para>
 =par {=tiny =it http://www.opensource.org}
 
 =item Frigivelse af kildeteksten sammen med programmet
-=item Alle må anvende og ændre kildetekst efter behov
-=item Alle må videregive modificeret kode under samme licens
+=item Alle mÃ¥ anvende og Ã¦ndre kildetekst efter behov
+=item Alle mÃ¥ videregive modificeret kode under samme licens
 
 =vskip(5)
 
@@ -425,7 +425,7 @@ som: </para>
 </screen>
 
 <para>
-Det tilsvarende resultat på skærmen ser således ud.
+Det tilsvarende resultat pÃ¥ skÃ¦rmen ser sÃ¥ledes ud.
 </para>
 
 
@@ -435,19 +435,19 @@ Det tilsvarende resultat på skærmen ser således ud.
 </figure>
 
 <para>
-Præsentationerne bliver, som vist ovenfor, skrevet i et særligt
+PrÃ¦sentationerne bliver, som vist ovenfor, skrevet i et sÃ¦rligt
 markup-sprog kaldet PLL. PLL er et meget simpelt sprog som bedst
 beskrives som en blanding af TeX og Pod. Slideshowet bliver lavet
 ved brug af FreeType skrifttyper og OpenGL, hvilket giver et flot
-resultat. Man kan godt køre Pointless, selvom man ikke har et OpenGL
-grafikkort, men så må man ikke forvente de samme bløde og pæne
+resultat. Man kan godt kÃ¸re Pointless, selvom man ikke har et OpenGL
+grafikkort, men sÃ¥ mÃ¥ man ikke forvente de samme blÃ¸de og pÃ¦ne
 slide-skift, som Pointless ellers kan lave.  </para>
 
 <para>
-Pointless integrerer nemt med de værktøjer, som mange Unix folk er
+Pointless integrerer nemt med de vÃ¦rktÃ¸jer, som mange Unix folk er
 vant til at bruge, for eksempel LaTeX, metapost og Gnuplot. Nedenfor er et
-eksempel på hvordan det integrerer med latex og mange flere eksempler
-kan ses på hjemmesiden for pointless <ulink
+eksempel pÃ¥ hvordan det integrerer med latex og mange flere eksempler
+kan ses pÃ¥ hjemmesiden for pointless <ulink
 url="http://pointless.dk/">pointless.dk</ulink>.  </para>
 
 <screen>
@@ -456,15 +456,15 @@ url="http://pointless.dk/">pointless.dk</ulink>.  </para>
 =import("tex")
 
 =begin-par
-Følgende sætning går under navnet AEP egenskaben for stationære 
-ergodiske mål og den blev i sin tid bevist af Shannon, McMillan and Breiman.
+FÃ¸lgende sÃ¦tning gÃ¥r under navnet AEP egenskaben for stationÃ¦re 
+ergodiske mÃ¥l og den blev i sin tid bevist af Shannon, McMillan and Breiman.
 =end-par
 
 =medskip
 
 {=it
 =begin-par
-{=bf Sætning:} Entropien af et stationært ergodisk mål er beskrevet ved:
+{=bf SÃ¦tning:} Entropien af et stationÃ¦rt ergodisk mÃ¥l er beskrevet ved:
 =end-par
 
 =medskip
@@ -473,12 +473,12 @@ $$h(\mu)=\lim_{n\rightarrow\infty}\frac{-\log\mu(x_1^n)}n,$$
 =end-latex
 =medskip
 
-=par næsten sikkert.
+=par nÃ¦sten sikkert.
 }
 </screen>
 
 <para>
-Det tilsvarende resultat på skærmen ser således ud.
+Det tilsvarende resultat pÃ¥ skÃ¦rmen ser sÃ¥ledes ud.
 </para>
 
 <figure id="pointless2-fig" float="1">
@@ -491,7 +491,7 @@ Det er nemt at lave en web-udgave af dit foredrag ved at bruge
 <command>pointless --export html friheden.pll</command>. 
 </para>
 
-<para>På trods af at pointless er et relativt nyt projekt er det
+<para>PÃ¥ trods af at pointless er et relativt nyt projekt er det
 rimeligt vel-dokumenteret. Pointless er skrevet i C++ og Python
 distribueres under GPL licensen. </para> 
 
@@ -518,16 +518,16 @@ distribueres under GPL licensen. </para>
 
 <para>Til tekstformatering af tekniske rapporter anvendes TeX
 (<command>tex</command>) og LaTeX (<command>latex</command>) meget
-&ndash; både under Linux og f.eks. Microsoft Windows. LaTeX &ndash; og
+&ndash; bÃ¥de under Linux og f.eks. Microsoft Windows. LaTeX &ndash; og
 de andre programmer vi omtaler i denne sektion &ndash; bliver som
 regel installeret af alle distributioner. Nogen gange skal man dog
-vælge f.eks. at installere "Scientific Tools" eller lignende, for at
-få dem installeret.</para>
+vÃ¦lge f.eks. at installere "Scientific Tools" eller lignende, for at
+fÃ¥ dem installeret.</para>
 
 <para>LaTeX producerer professionelt udseende tekniske
 dokumenter. Specielt bliver matematiske tegn og formler sat meget flot
-op i forhold til gængse WYSIWYG-programmer. Nedenfor ser du et
-eksempel på en LaTeX-fil.  </para>
+op i forhold til gÃ¦ngse WYSIWYG-programmer. Nedenfor ser du et
+eksempel pÃ¥ en LaTeX-fil.  </para>
 
 
 <programlisting>
@@ -546,18 +546,18 @@ eksempel på en LaTeX-fil.  </para>
 Dette afsnit skal omhandle Linux.
 
 \subsection{Latex}
-\LaTeX{} er super til tekniske rapporter med formler, såsom
+\LaTeX{} er super til tekniske rapporter med formler, sÃ¥som
 $\sum_{i=0}^N i^2$.
 
 \end{document}
 </programlisting>
 
 <para>
-Oversæt LaTeX-filen <filename>linux.tex</filename> til
+OversÃ¦t LaTeX-filen <filename>linux.tex</filename> til
 <filename>linux.dvi</filename> (skriv <command>latex
 linux.tex</command> i en kommandofortolker). Dvi-filen kan vises med programmet
-<command>xdvi</command>, som den vil komme til at se ud på
-printeren. Et skærmskud svarende til eksemplet kan ses på <xref
+<command>xdvi</command>, som den vil komme til at se ud pÃ¥
+printeren. Et skÃ¦rmskud svarende til eksemplet kan ses pÃ¥ <xref
 linkend="xdvi-fig"/>.
 </para>
 
@@ -567,28 +567,28 @@ linkend="xdvi-fig"/>.
 </figure>
 
 <para>
-En dvi-fil kan normalt ikke printes direkte ud. Du oversætter den til
-PostScript-formatet med følgende kommando:
+En dvi-fil kan normalt ikke printes direkte ud. Du oversÃ¦tter den til
+PostScript-formatet med fÃ¸lgende kommando:
 </para>
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>dvips linux.dvi -t a4 -D 600 -o linux.ps</userinput></screen>
 
 <indexterm><primary>Postscript filer</primary>
-           <secondary>læse og vise</secondary></indexterm>
+           <secondary>lÃ¦se og vise</secondary></indexterm>
 
 <para>
-Ud kommer i dette tilfælde filen <filename>linux.ps</filename> med 600
-dpi opløsning i A4-format. Denne fil kan udskrives på en
+Ud kommer i dette tilfÃ¦lde filen <filename>linux.ps</filename> med 600
+dpi oplÃ¸sning i A4-format. Denne fil kan udskrives pÃ¥ en
 PostScript-printer. Hvis du ikke har en PostScript printer vil din
-distribution som regel have sørget for at der ved udskrivning
-automatisk sker en konvertering til et format din printer kan forstå,
-ved hjælp af programmet GhostScript (<command>gs</command>).  </para>
+distribution som regel have sÃ¸rget for at der ved udskrivning
+automatisk sker en konvertering til et format din printer kan forstÃ¥,
+ved hjÃ¦lp af programmet GhostScript (<command>gs</command>).  </para>
 
 <para>Vil du se en PostScript-fil, inden du printer den, kan du selv
 benytte GhostScript, men de fleste vil nok hellere benytte den
-grafiske brugergrænseflade <command>gv</command>, som vist på <xref
-linkend="gv-fig"/>. På det følgende billede ses pingvinen Tux, som er
+grafiske brugergrÃ¦nseflade <command>gv</command>, som vist pÃ¥ <xref
+linkend="gv-fig"/>. PÃ¥ det fÃ¸lgende billede ses pingvinen Tux, som er
 Linux' maskot.  </para>
 
 <indexterm><primary>gv</primary></indexterm>
@@ -602,19 +602,19 @@ Linux' maskot.  </para>
 <indexterm><primary>Acrobat Reader</primary></indexterm>
 
 <para>
-Har du brug for at generere pdf-filer, så kan <command>dvipdf
-linux.dvi</command> gøre dette. Hvis du vil lade pdf direkte fra dine
+Har du brug for at generere pdf-filer, sÃ¥ kan <command>dvipdf
+linux.dvi</command> gÃ¸re dette. Hvis du vil lade pdf direkte fra dine
 LaTeX filer, kan programmet <command>pdflatex</command>
 anvendes. Programmerne <command>gv</command> og
-<command>xpdf</command> også kan læse og vise pdf-filer og du kan også
+<command>xpdf</command> ogsÃ¥ kan lÃ¦se og vise pdf-filer og du kan ogsÃ¥
 hente programmet "Adobe Acrobat Reader" fra <ulink
 url="http://www.adobe.com">www.adobe.com</ulink>.</para>
 
 <para>
-Vil du vide mere om LaTeX, kan vi anbefale dig bøgerne <emphasis>LaTeX
+Vil du vide mere om LaTeX, kan vi anbefale dig bÃ¸gerne <emphasis>LaTeX
 &ndash; a document preparation system</emphasis> af Leslie Lamport og
 <emphasis>The LaTeX Companion</emphasis> af Michel Gossens
-m.fl. Du kan også læse mere i "Linux &ndash; Friheden til at skrive
+m.fl. Du kan ogsÃ¥ lÃ¦se mere i "Linux &ndash; Friheden til at skrive
 dokumentation".  </para>
 
 <!-- ============================================================ -->
@@ -625,8 +625,8 @@ dokumentation".  </para>
 <title>LyX</title>
 <indexterm><primary>Lyx</primary></indexterm>
 <para>
-Hvis du synes at det er for besværligt at skrive LaTeX koder selv, kan
-du måske få glæde af programmet LyX. LyX anvendes stort set som et
+Hvis du synes at det er for besvÃ¦rligt at skrive LaTeX koder selv, kan
+du mÃ¥ske fÃ¥ glÃ¦de af programmet LyX. LyX anvendes stort set som et
 normalt tekstbehandlingsprogram, men da LyX bruger LaTeX til at lave
 dokumenter til udskrift, bliver det endelige resultat meget flot.
 </para>
@@ -636,7 +636,7 @@ dokumenter til udskrift, bliver det endelige resultat meget flot.
 scale="40"></graphic> </figure>
 
 <para>LyX er en del af de fleste distributioner, som regel i en pakke
-kaldet "lyx", men ellers er hjemmesiden for LyX på <ulink
+kaldet "lyx", men ellers er hjemmesiden for LyX pÃ¥ <ulink
 url="http://www.lyx.org/">www.lyx.org</ulink></para>
 
 </sect2> <!-- lyx -->
@@ -655,32 +655,32 @@ url="http://www.lyx.org/">www.lyx.org</ulink></para>
 <para>Et alternativ til LaTeX er at skrive i SGML-formatet.  Det
 ligner i syntaks HTML og XML. SGML er et metasprog til at definere en
 syntaks for dokumenter.  Man kan definere sit eget dokument-sprog
-(DTD) med SGML.  Da dette er en meget omstændelig affære, bruger de
+(DTD) med SGML.  Da dette er en meget omstÃ¦ndelig affÃ¦re, bruger de
 fleste en af de DTD'er der findes i forvejen.  En meget brugt
-definition kaldes DocBook, som også er den der bruges til Linux HOWTO'er.
+definition kaldes DocBook, som ogsÃ¥ er den der bruges til Linux HOWTO'er.
 </para>
 
-<para>DocBook har ca. 250 "tags" defineret og er primært beregnet på
+<para>DocBook har ca. 250 "tags" defineret og er primÃ¦rt beregnet pÃ¥
 at skrive om EDB-relaterede emner.  I DocBook definerer man ikke
-hvordan teksten skal se ud, men kun hvad teksten er for en type.  Når
-så DocBook-dokumentet oversættes til f.eks. HTML, bliver teksten
-formateret på en bestemt måde.  Et "tag" er
+hvordan teksten skal se ud, men kun hvad teksten er for en type.  NÃ¥r
+sÃ¥ DocBook-dokumentet oversÃ¦ttes til f.eks. HTML, bliver teksten
+formateret pÃ¥ en bestemt mÃ¥de.  Et "tag" er
 f.eks. <command>&lt;PARA&gt;</command> der bruges til at starte et nyt
 afsnit.  Skal man angive en forfatters navn bruges
 <command>&lt;AUTHOR&gt;</command>.  Ved at al tekstformatering er
 defineret i "tags", kan man senere bestemme hvordan forskellige
 tekst-typer skal se ud.  </para>
 
-<para>Fordelen ved DocBook, er at man kan oversætte DocBook-koden til
+<para>Fordelen ved DocBook, er at man kan oversÃ¦tte DocBook-koden til
 mange forskellige formater, PostScript, PDF, RTF og HTML.  DocBook
-oversættes med <command>db2html</command>, <command>db2pdf</command>
+oversÃ¦ttes med <command>db2html</command>, <command>db2pdf</command>
 og <command>db2ps</command>, svarende til HTML, PDF og
 PostScript-output.  </para>
 
 <para>Denne bog er skrevet i DocBook og vi har skrevet om dette i
 "Linux &ndash; Friheden til at skrive dokumentation", der kan hentes
 fra <ulink url="http://&linuxbogurl;/">
-&linuxbogurl;</ulink>. Dokumentation (for de øvede) kan findes på
+&linuxbogurl;</ulink>. Dokumentation (for de Ã¸vede) kan findes pÃ¥
 <ulink url="http://www.docbook.org"> www.docbook.org</ulink>.</para>
 
 </sect1>
@@ -695,29 +695,29 @@ fra <ulink url="http://&linuxbogurl;/">
 
 <para>
 Til at lave HTML hjemmesider har du flere muligheder. Du kan
-selvfølgelig altid starte din favoriteditor og skrive dine
+selvfÃ¸lgelig altid starte din favoriteditor og skrive dine
 hjemmesider med denne. De fleste editorer har ikke meget speciel
-understøttelse af HTML, men Emacs kan forstå syntaks og farvekode
+understÃ¸ttelse af HTML, men Emacs kan forstÃ¥ syntaks og farvekode
 filerne (brug "Alt-x html-mode" og "Alt-x font-lock-mode"). Tilsvarende
 har KWrite samme muligheder.
 </para>
 
 <para>
-Ønsker du at kunne redigere HTML direkte i grafisk tilstand, er der
+Ã˜nsker du at kunne redigere HTML direkte i grafisk tilstand, er der
 mulighed for at bruge den indbyggede editor i Netscape.  OpenOffice.org
 har tilsvarende muligheder for at kunne udskrive dokumenterne til
 HTML, men du har ikke samme fleksibilitet, som hvis du skrev det med
 Netscape eller en almindelig editor. Programmet Amaya fra World Wide
-Web Consortium (W3C) er også en mulighed. W3C er den officielle
+Web Consortium (W3C) er ogsÃ¥ en mulighed. W3C er den officielle
 organisation bag WWW, og Amaya er deres browser og HTML-editor. Bruger
-du Amaya, er du sikker på, at dine hjemmesider følger de formelle
+du Amaya, er du sikker pÃ¥, at dine hjemmesider fÃ¸lger de formelle
 standarder!  </para>
 
 <para>
-W3C udgiver også programmet "HTML Tidy", der kan rette de fleste
-syntaksfejl i HTML-filer, og de kører webstedet <ulink
+W3C udgiver ogsÃ¥ programmet "HTML Tidy", der kan rette de fleste
+syntaksfejl i HTML-filer, og de kÃ¸rer webstedet <ulink
 url="http://validator.w3.org/">validator.w3.org</ulink>, hvor du kan
-få tjekket syntaksen på dine websider.  </para>
+fÃ¥ tjekket syntaksen pÃ¥ dine websider.  </para>
 
 
 <indexterm><primary>Bluefish</primary></indexterm>
@@ -726,9 +726,9 @@ få tjekket syntaksen på dine websider.  </para>
 En anden god mulighed er at anvende Bluefish, der kan hentes
 fra <ulink
 url="http://bluefish.openoffice.nl/">bluefish.openoffice.nl</ulink>. Den
-kan syntaks-vise HTML, og endda også PHP3, PHP4, SSI-kode og meget
+kan syntaks-vise HTML, og endda ogsÃ¥ PHP3, PHP4, SSI-kode og meget
 andet.  I samme kaliber er Quanta Plus, som har hjemmesiden
-<ulink url="http://quanta.sourceforge.net/">quanta.sourceforge.net</ulink>, som ses på <xref linkend="quanta-fig"/>.
+<ulink url="http://quanta.sourceforge.net/">quanta.sourceforge.net</ulink>, som ses pÃ¥ <xref linkend="quanta-fig"/>.
 </para>
 
 <figure id="quanta-fig" float="1">
@@ -750,18 +750,18 @@ andet.  I samme kaliber er Quanta Plus, som har hjemmesiden
  <para>Under Linux er stavekontrol typisk ikke knyttet til det enkelte
  program. Istedet anvender f.eks. Emacs enten programmet "Aspell"
  eller "Ispell" til at kontrollere stavefejl med. Disse programmer kan
- også kaldes direkte fra kommandolinjen og afhængig af hvilken type
- stavefejl man oftest laver bør man enten bruge det ene eller det
- andet.  Hvis man primært laver regulære tastefejl, hvor man får
- byttet om på to bogstaver eller glemmer eller indsætter et bogstav,
- vil Ispell nok være at foretrække.  Hvis det derimod ofte forekommer
- at man er usikker på hvordan et ord staves, har man nok mere
- fornøjele af Aspell, der kan sammenligne ord udfra deres omtrentlige
+ ogsÃ¥ kaldes direkte fra kommandolinjen og afhÃ¦ngig af hvilken type
+ stavefejl man oftest laver bÃ¸r man enten bruge det ene eller det
+ andet.  Hvis man primÃ¦rt laver regulÃ¦re tastefejl, hvor man fÃ¥r
+ byttet om pÃ¥ to bogstaver eller glemmer eller indsÃ¦tter et bogstav,
+ vil Ispell nok vÃ¦re at foretrÃ¦kke.  Hvis det derimod ofte forekommer
+ at man er usikker pÃ¥ hvordan et ord staves, har man nok mere
+ fornÃ¸jele af Aspell, der kan sammenligne ord udfra deres omtrentlige
  udtale.  </para>
 
  <para>
-  Både Aspell og Ispell har en noget primitiv håndtering af
-  sammensatte ord, der gør at man kun har de to muligheder at alle
+  BÃ¥de Aspell og Ispell har en noget primitiv hÃ¥ndtering af
+  sammensatte ord, der gÃ¸r at man kun har de to muligheder at alle
   eller ingen sammensatte ord der ikke findes i ordbogen accepteres.
   Standardindstillingen for de danske ordlister til Aspell og Ispell
   er at alle konstruktioner af sammensatte ord accepteres.
@@ -769,29 +769,29 @@ andet.  I samme kaliber er Quanta Plus, som har hjemmesiden
 
  <para>
   De fleste nyere distributioner kommer med enten Aspell eller Ispell
-  og en tilhørende dansk ordliste.  Kig efter pakker med navne som
+  og en tilhÃ¸rende dansk ordliste.  Kig efter pakker med navne som
   starter med "aspell-da-" eller "ispell-da-".  Pakkerne stammer fra
   <ulink url="http://da.speling.org/">"Den store danske
   ordliste"</ulink> som er et projekt under <ulink
-  url="http://www.sslug.dk/">Skåne Sjælland Linux User Group</ulink>.
+  url="http://www.sslug.dk/">SkÃ¥ne SjÃ¦lland Linux User Group</ulink>.
   </para>
 
  <para>
-  Dette projekt startede sommeren 1999, da Sprognævnet sagde nej til
-  at lade SSLUG distribuere nævnets ordliste i en form, der kan bruges
-  af Ispell.  Derfor har en række frivillige startet projektet på
+  Dette projekt startede sommeren 1999, da SprognÃ¦vnet sagde nej til
+  at lade SSLUG distribuere nÃ¦vnets ordliste i en form, der kan bruges
+  af Ispell.  Derfor har en rÃ¦kke frivillige startet projektet pÃ¥
   <ulink url="http://da.speling.org/">da.speling.org</ulink>, hvor du
   kan hente den nyeste version af ordlisten og finde vejledning i at
   installere den.  </para>
 
  <para>
-  Bogen "Linux &ndash; Friheden til at lære Unix" kommer med et lille
-  program til stavekontrol.  Det kan køres direkte på kommandolinjen
-  og det skal bare have navnet på den fil der skal læses korrektur på
-  som argument.  Det undersøger automatisk om man har Aspell
-  (foretrukket) eller Ispell installeret, og giver én mulighed for at
-  vælge hvilket sprog teksten er på.  Programmet hedder af historiske
-  årsager <command>pine-spell</command> og kan hentes fra: <ulink
+  Bogen "Linux &ndash; Friheden til at lÃ¦re Unix" kommer med et lille
+  program til stavekontrol.  Det kan kÃ¸res direkte pÃ¥ kommandolinjen
+  og det skal bare have navnet pÃ¥ den fil der skal lÃ¦ses korrektur pÃ¥
+  som argument.  Det undersÃ¸ger automatisk om man har Aspell
+  (foretrukket) eller Ispell installeret, og giver Ã©n mulighed for at
+  vÃ¦lge hvilket sprog teksten er pÃ¥.  Programmet hedder af historiske
+  Ã¥rsager <command>pine-spell</command> og kan hentes fra: <ulink
   url="http://&linuxbogurl;/unix/eksempler/pine-spell">&linuxbogurl;/unix/eksempler/pine-spell</ulink>
   </para>
 
@@ -807,29 +807,29 @@ andet.  I samme kaliber er Quanta Plus, som har hjemmesiden
   </indexterm>
 
   <para>
-   Den enkleste måde at bruge Aspell på er at køre det med
-   <literal>check</literal> og navnet på en fil som argumenter:
+   Den enkleste mÃ¥de at bruge Aspell pÃ¥ er at kÃ¸re det med
+   <literal>check</literal> og navnet pÃ¥ en fil som argumenter:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>aspell check en_tekstfil</userinput>
 </screen>
 
-   Så ser Aspell på hvilket sprog dine programmer er sat til at bruge
+   SÃ¥ ser Aspell pÃ¥ hvilket sprog dine programmer er sat til at bruge
    (gennem systemvariablen <literal>LANG</literal>) og bruger den
-   tilsvarende ordliste til korrekturlæsningen af filen.  Hvis du har
-   brug for at bruge en anden ordliste skal du indsætte
-   <literal>--master=</literal> og så det ønskede sprog foran
+   tilsvarende ordliste til korrekturlÃ¦sningen af filen.  Hvis du har
+   brug for at bruge en anden ordliste skal du indsÃ¦tte
+   <literal>--master=</literal> og sÃ¥ det Ã¸nskede sprog foran
    <literal>check</literal>.  For eksempel:
 
 <screen>
-<prompt>[tyge@hven ~]$ </prompt><userinput>aspell --master=føroyskt check ein_tekstfíla</userinput>
+<prompt>[tyge@hven ~]$ </prompt><userinput>aspell --master=fÃ¸royskt check ein_tekstfÃ­la</userinput>
 </screen>
   </para>
 
   <para>
    Aspell kender filformaterne i listen nedenfor.  Det betyder at man
    kun bliver spurgt om filernes egentlige indhold og ikke om koder
-   der hører til filformaterne.
+   der hÃ¸rer til filformaterne.
   </para>
 
   <itemizedlist>
@@ -839,15 +839,15 @@ andet.  I samme kaliber er Quanta Plus, som har hjemmesiden
 
    <listitem>
     <para>
-     e-post &ndash; så man ikke tjekker den tekst man citerer for
+     e-post &ndash; sÃ¥ man ikke tjekker den tekst man citerer for
      stavefejl
     </para>
    </listitem>
 
    <listitem>
     <para>
-     SGML &ndash; så man let kan tjekke sin hjemmeside for stavefejl
-     uden også at blive belemret med HTML-koderne
+     SGML &ndash; sÃ¥ man let kan tjekke sin hjemmeside for stavefejl
+     uden ogsÃ¥ at blive belemret med HTML-koderne
     </para>
    </listitem>
 
@@ -869,20 +869,20 @@ andet.  I samme kaliber er Quanta Plus, som har hjemmesiden
   </indexterm>
 
   <para>
-   Ispell kan kaldes fra en kommandolinje, hvor du giver navnet på
-   filen med teksten, der skal tjekkes igennem, som argument &ndash; se også
+   Ispell kan kaldes fra en kommandolinje, hvor du giver navnet pÃ¥
+   filen med teksten, der skal tjekkes igennem, som argument &ndash; se ogsÃ¥
    <command>man ispell</command>.
   </para>
 
   <para>
    Ispell kender filformaterne i listen nedenfor.  Det betyder at man
    kun bliver spurgt om filernes egentlige indhold og ikke om koder
-   der hører til filformaterne.
+   der hÃ¸rer til filformaterne.
   </para>
 
   <itemizedlist>
    <listitem>
-    <para>nroff (et ældre Unix typesetting program)</para>
+    <para>nroff (et Ã¦ldre Unix typesetting program)</para>
    </listitem>
 
    <listitem>
@@ -900,27 +900,27 @@ andet.  I samme kaliber er Quanta Plus, som har hjemmesiden
 <para>Der er ikke mange Open Source Desktop Publishing (DTP)
 programmer til Linux, men et brugbart er Scribus som har hjemmesiden
 <ulink url="http://www.scribus.org.uk/">www.scribus.org.uk </ulink>.
-Det kræver en del biblioteker for at kunne oversættes, så den nemmeste
-måde man kan få det installeret på er at finde en færdigoversat
+Det krÃ¦ver en del biblioteker for at kunne oversÃ¦ttes, sÃ¥ den nemmeste
+mÃ¥de man kan fÃ¥ det installeret pÃ¥ er at finde en fÃ¦rdigoversat
 version af scribus som RPM-pakke. </para>
 
 <para>Af kommercielle alternativer er iceSculptor en mulighed &ndash;
-se mere på <ulink
+se mere pÃ¥ <ulink
 url="http://www.chillistore.net/icesculptor1.html">http://www.chillistore.net/icesculptor1.html</ulink>.
-En anmeldelse kan læses på <ulink
+En anmeldelse kan lÃ¦ses pÃ¥ <ulink
 url="http://linux.cnet.com/linux/0-2136890-7-5518912.html">http://linux.cnet.com/linux/0-2136890-7-5518912.html</ulink>
 </para>
 
 <para>
 Et alternativ er <ulink
 url="http://www.mediascape.com/linux.html">http://www.mediascape.com/linux.html</ulink>,
-som både fås til Linux og IRIX.
+som bÃ¥de fÃ¥s til Linux og IRIX.
 </para>
 
 <para>
-En ældre oversigt over DTP-programmer kan findes på <ulink
+En Ã¦ldre oversigt over DTP-programmer kan findes pÃ¥ <ulink
 url="http://desktoppub.about.com/compute/desktoppub/library/weekly/aa042199.htm">http://desktoppub.about.com/compute/desktoppub/library/weekly/aa042199.htm</ulink>.
-Læs tilsvarende <ulink
+LÃ¦s tilsvarende <ulink
 url="http://www.firstlinux.com/product/Office/">http://www.firstlinux.com/product/Office/</ulink>.
 </para> </sect1>
 
@@ -945,7 +945,7 @@ Clara: <ulink url="http://www.claraocr.org/">www.claraocr.org</ulink> er et graf
 </itemizedlist>
 
 <para>
-Begge er begrænsede. Vil man betale for det så findes der proprietære programmer, der er markant
+Begge er begrÃ¦nsede. Vil man betale for det sÃ¥ findes der proprietÃ¦re programmer, der er markant
 bedre. En mulighed er <ulink url="http://www.vividata.com/ocrshop.html">http://www.vividata.com/ocrshop.html</ulink>.
 </para>
 </sect1>

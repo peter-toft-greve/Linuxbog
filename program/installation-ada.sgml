@@ -9,21 +9,21 @@
  </indexterm>
 
  <para>
-  For at komme i gang med at programmere i Ada på Linux skal du blot
-  installere GNU Ada oversætteren (GNAT), men der er et bredt udvalg
+  For at komme i gang med at programmere i Ada pÃ¥ Linux skal du blot
+  installere GNU Ada oversÃ¦tteren (GNAT), men der er et bredt udvalg
   af andre pakker man med fordel kan installere til forskellige
-  specielle formål.  <xref linkend="ada-pakker"/> indeholder en
-  oversigt over de vigtigste pakker fordelt på de opgaver de er
-  relevante til.  Hvis du kører SuSE, Red Hat eller en lignende
-  RPM-baseret distribution, bør du kunne finde alle de relevante pakker
-  hos "Ada for Linux Team" (ALT) på <ulink
+  specielle formÃ¥l.  <xref linkend="ada-pakker"/> indeholder en
+  oversigt over de vigtigste pakker fordelt pÃ¥ de opgaver de er
+  relevante til.  Hvis du kÃ¸rer SuSE, Red Hat eller en lignende
+  RPM-baseret distribution, bÃ¸r du kunne finde alle de relevante pakker
+  hos "Ada for Linux Team" (ALT) pÃ¥ <ulink
   url="http://dk.gnuada.org/alt">http://dk.gnuada.org/alt</ulink>.
  </para>
 
  <para>
-  Bemærk at de aktuelle ALT-pakker ikke kan bruges sammen med Red Hat
-  8.0-pakkerne, så hvis man bruger "gcc-gnat" og "libgnat" fra Red Hat
-  8.0, vil man være nødt til selv at oversætte alt det tilbehør som ALT
+  BemÃ¦rk at de aktuelle ALT-pakker ikke kan bruges sammen med Red Hat
+  8.0-pakkerne, sÃ¥ hvis man bruger "gcc-gnat" og "libgnat" fra Red Hat
+  8.0, vil man vÃ¦re nÃ¸dt til selv at oversÃ¦tte alt det tilbehÃ¸r som ALT
   ellers har pakket.  Desuden er der (blandt andet) fejl i
   matematikbiblioteket der kommer med Red Hat 8.0-pakkerne.
  </para>
@@ -57,8 +57,8 @@
     </row>
 
     <row>
-     <entry>Programmer der kan køre på en "Java Virtual Machine" (JVM). For
-            eksempel småprogrammer (engelsk: "applets") der skal køre i en
+     <entry>Programmer der kan kÃ¸re pÃ¥ en "Java Virtual Machine" (JVM). For
+            eksempel smÃ¥programmer (engelsk: "applets") der skal kÃ¸re i en
             webside.</entry>
      <entry>jgnat (samt en JVM, se afsnit ...)</entry>
      <entry>?     (samt en JVM, se afsnit ...)</entry>
@@ -67,7 +67,7 @@
 
     <row>
      <entry>
-      Grafiske programmer der også umiddelbart kan oversættes til
+      Grafiske programmer der ogsÃ¥ umiddelbart kan oversÃ¦ttes til
       andre styresystemer.
      </entry>
      <entry>
@@ -88,13 +88,13 @@
  </table>
 
  <example>
-  <title>Oversætte og køre "<filename>smart.adb</filename>"</title>
+  <title>OversÃ¦tte og kÃ¸re "<filename>smart.adb</filename>"</title>
 
   <para>
    Kildeteksten til programeksemplet "<filename>smart.adb</filename>"
    kan findes i bogens eksempelsamling (<ulink
    url="http://&linuxbogurl;/program/eksempler/smart.adb">http://&linuxbogurl;/program/eksempler/smart.adb</ulink>).
-   Det kan oversættes med kommandoen:
+   Det kan oversÃ¦ttes med kommandoen:
 <screen>
 <prompt>linux% </prompt><userinput>gnatmake -m smart -cargs -gnatv -gnati1 -gnatf -gnato -fstack-check</userinput>
 gnatgcc -c -gnatv -gnati1 -gnatf -gnato -fstack-check smart.adb
@@ -107,39 +107,39 @@ gnatbind -x smart.ali
 gnatlink smart.ali
 <prompt>linux% </prompt>
 </screen>
-   Man kan også nøjes med <command>gnatmake smart</command>, men det
-   er ikke ideelt, da der så er en del nyttige tjek der bliver fjernet
+   Man kan ogsÃ¥ nÃ¸jes med <command>gnatmake smart</command>, men det
+   er ikke ideelt, da der sÃ¥ er en del nyttige tjek der bliver fjernet
    fra programmet.  Det oversatte program skulle nu gerne findes som
-   <command>smart</command> i samme katalog, så du kan køre det sådan
+   <command>smart</command> i samme katalog, sÃ¥ du kan kÃ¸re det sÃ¥dan
    her:
 <screen>
 <prompt>linux% </prompt><userinput>./smart</userinput>
 
- -- Sætter porten til  2#1000000# -- 
+ -- SÃ¦tter porten til  2#1000000# -- 
 Hej
- -- Sætter porten til  2#1100000# -- 
+ -- SÃ¦tter porten til  2#1100000# -- 
  
- -- Sætter porten til    2#10000# -- 
+ -- SÃ¦tter porten til    2#10000# -- 
 Ver
- -- Sætter porten til   2#100000# -- 
+ -- SÃ¦tter porten til   2#100000# -- 
 den
 <prompt>linux% </prompt>
 </screen>
-   Da programmets to tråde ikke snakker med hinanden undervejs, kan du
-   ikke være sikker på at teksterne bliver blandet præcis som ovenfor.
+   Da programmets to trÃ¥de ikke snakker med hinanden undervejs, kan du
+   ikke vÃ¦re sikker pÃ¥ at teksterne bliver blandet prÃ¦cis som ovenfor.
   </para>
  </example>
 
 <!--
 <para>
  <indexterm><primary>flytbarhed</primary></indexterm>
- <indexterm><primary>arkitekturuafhængighed</primary></indexterm>
+ <indexterm><primary>arkitekturuafhÃ¦ngighed</primary></indexterm>
 
-  I det omfang man ikke direkte gør sig umage med at skrive et Ada-program til
+  I det omfang man ikke direkte gÃ¸r sig umage med at skrive et Ada-program til
   en bestemt arkitektur (processor, andet isenkram og eventuelt styresystem),
-  kan man regne med at det fungerer ens på alle systemer. Dele af Ada er
-  selvfølgelig nødt til at være systemspecifikke &ndash; det gælder for eksempel
-  hvor store heltal man kan regne med &ndash; men enhver Ada-oversætter skal komme
+  kan man regne med at det fungerer ens pÃ¥ alle systemer. Dele af Ada er
+  selvfÃ¸lgelig nÃ¸dt til at vÃ¦re systemspecifikke &ndash; det gÃ¦lder for eksempel
+  hvor store heltal man kan regne med &ndash; men enhver Ada-oversÃ¦tter skal komme
   med dokumentation af hvordan de systemspecifikke dele er lavet i den.
 </para>
 
@@ -152,8 +152,8 @@ den
 
   Ada har indbygget adgang til biblioteker skrevet i andre sprog.
   <ulink url="http://www.adaic.com/standards/ada95.html">Standarden</ulink>
-  beskriver grænsesnittet til Cobol, C og Fortran, men GNU Ada kommer også med
-  grænsesnit til Java og C++. Du har således let adgang til at genbruge gammel
+  beskriver grÃ¦nsesnittet til Cobol, C og Fortran, men GNU Ada kommer ogsÃ¥ med
+  grÃ¦nsesnit til Java og C++. Du har sÃ¥ledes let adgang til at genbruge gammel
   kode skrevet i andre sprog.
 </para>
 
@@ -161,23 +161,23 @@ den
   <indexterm><primary>GNU Ada</primary></indexterm>
   <indexterm><primary>GNAT</primary></indexterm>
 
-  GNU Ada oversætteren (også kendt som GNAT) blev udviklet parallelt med den
+  GNU Ada oversÃ¦tteren (ogsÃ¥ kendt som GNAT) blev udviklet parallelt med den
   seneste ISO-standard for Ada og var allerede da standarden udkom i februar
-  1995 overordentlig brugbar. I dag er det en oversætter i en kvalitet, der
-  gør at mange store firmaer vælger GNU Ada, når de har brug for en
-  Ada-oversætter. GNU Ada fås blandt andet til Linux, DOS, Digital Unix, AIX,
-  OS/2 og Windows. Udviklerne bag GNU Ada gør meget ud af at oversætteren
-  følger ISO-standarden for Ada. &ndash; Det at følge standarderne er i det hele
-  taget noget man går meget op i i Ada-miljøet.
+  1995 overordentlig brugbar. I dag er det en oversÃ¦tter i en kvalitet, der
+  gÃ¸r at mange store firmaer vÃ¦lger GNU Ada, nÃ¥r de har brug for en
+  Ada-oversÃ¦tter. GNU Ada fÃ¥s blandt andet til Linux, DOS, Digital Unix, AIX,
+  OS/2 og Windows. Udviklerne bag GNU Ada gÃ¸r meget ud af at oversÃ¦tteren
+  fÃ¸lger ISO-standarden for Ada. &ndash; Det at fÃ¸lge standarderne er i det hele
+  taget noget man gÃ¥r meget op i i Ada-miljÃ¸et.
 </para>
 
 <para>
   <indexterm>
-   <primary>hente på 'nettet</primary>
-   <secondary>Ada-oversætter</secondary>
+   <primary>hente pÃ¥ 'nettet</primary>
+   <secondary>Ada-oversÃ¦tter</secondary>
   </indexterm>
 
-  Du kan hente GNU Ada til Linux på
+  Du kan hente GNU Ada til Linux pÃ¥
   <ulink url="http://dk.gnuada.org/">http://dk.gnuada.org/</ulink>.
 </para>
 
@@ -194,10 +194,10 @@ den
  </indexterm>
 
  <para>
-  Vi følger traditionen og begynder med "Hello World"-programmet, der ofte er
-  det eksempel man bruger, når man skal præsentere et programmeringssprog.
-  Programmet skriver en kort tekst, Hej SSLUG, ud på skærmen og afslutter.
-  Indtast følgende tekst (brug <command>emacs</command>,
+  Vi fÃ¸lger traditionen og begynder med "Hello World"-programmet, der ofte er
+  det eksempel man bruger, nÃ¥r man skal prÃ¦sentere et programmeringssprog.
+  Programmet skriver en kort tekst, Hej SSLUG, ud pÃ¥ skÃ¦rmen og afslutter.
+  Indtast fÃ¸lgende tekst (brug <command>emacs</command>,
   <command>pico</command> eller <command>vi</command>), og gem det som
   <filename>hej_sslug.adb</filename>.
  </para>
@@ -213,10 +213,10 @@ end Hej_SSLUG;
 
  <para>
   <indexterm>
-   <primary>oversætte</primary>
+   <primary>oversÃ¦tte</primary>
    <secondary>Ada-programmer</secondary>
   </indexterm>
-  I kataloget, hvor filen er gemt, kan programmet nu oversættes ved at skrive
+  I kataloget, hvor filen er gemt, kan programmet nu oversÃ¦ttes ved at skrive
 <screen>
 <prompt>hven% </prompt><userinput>gnatmake hej_sslug</userinput>
 </screen>
@@ -224,11 +224,11 @@ end Hej_SSLUG;
 
  <para>
   <indexterm><primary>gnatmake</primary></indexterm>
-  Ada-oversætteren kaldes med kommandoen <command>gnatmake</command>.
+  Ada-oversÃ¦tteren kaldes med kommandoen <command>gnatmake</command>.
  </para>
 
  <para>
-  Det oversatte Ada-program, <filename>hej_sslug</filename>, køres ved at
+  Det oversatte Ada-program, <filename>hej_sslug</filename>, kÃ¸res ved at
   skrive navnet i en <command>xterm</command> eller lignende:
  </para>
 
@@ -239,7 +239,7 @@ Hej SSLUG
 </screen>
 
  <para>
-  Punktummet og skråstregen foran programmets navn bruges til at fortælle
+  Punktummet og skrÃ¥stregen foran programmets navn bruges til at fortÃ¦lle
   systemet at programmet ligger i det aktuelle katalog og ikke et af de steder,
   hvor systemet forventer at finde programmer.
  </para>
@@ -260,8 +260,8 @@ Hej SSLUG
  </indexterm>
 
  <para>
-  Ada har, i modsætning til de fleste andre programmeringssprog, indbygget
-  mulighed for at skrive programmer, hvor forskellige dele af programmet kører
+  Ada har, i modsÃ¦tning til de fleste andre programmeringssprog, indbygget
+  mulighed for at skrive programmer, hvor forskellige dele af programmet kÃ¸rer
   parallelt med hinanden. Som et enkelt eksempel kan du indtaste teksten
   nedenfor og gemme den i en fil med navnet
   <filename>hej_sslug_og_verden.adb</filename>.
@@ -272,9 +272,9 @@ with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Hej_SSLUG_Og_Verden is
 
-   task Hils_På_Verden;
+   task Hils_PÃ¥_Verden;
 
-   task body Hils_På_Verden is
+   task body Hils_PÃ¥_Verden is
    begin
       Put_Line ("Hej Verden");
    end;
@@ -285,14 +285,14 @@ end Hej_SSLUG_Og_Verden;
 </programlisting>
 
  <para>
-  Programmet kan oversættes og køres på samme måde som "Hej SSLUG"-programmet.
-  Med dette program kan man &ndash; principielt &ndash; ikke vide om det først vil skrive
-  "Hej SSLUG" eller "Hej Verden". Parallelprogrammering, der af C-programmører
-  typisk bliver kaldt trådprogrammering, benyttes normalt til lidt mere
-  komplicerede ting end ovenstående. Man kan for eksempel benytte
-  parallelprogrammering, hvis man vil lade sit program fordele sig på alle
-  computerens processorer eller hvis forskellige dele af programmet skal køre
-  på forskellige maskiner.
+  Programmet kan oversÃ¦ttes og kÃ¸res pÃ¥ samme mÃ¥de som "Hej SSLUG"-programmet.
+  Med dette program kan man &ndash; principielt &ndash; ikke vide om det fÃ¸rst vil skrive
+  "Hej SSLUG" eller "Hej Verden". Parallelprogrammering, der af C-programmÃ¸rer
+  typisk bliver kaldt trÃ¥dprogrammering, benyttes normalt til lidt mere
+  komplicerede ting end ovenstÃ¥ende. Man kan for eksempel benytte
+  parallelprogrammering, hvis man vil lade sit program fordele sig pÃ¥ alle
+  computerens processorer eller hvis forskellige dele af programmet skal kÃ¸re
+  pÃ¥ forskellige maskiner.
  </para>
 </sect2>
 -->

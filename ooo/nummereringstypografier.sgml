@@ -6,13 +6,13 @@
   <title>Nummereringstypografier</title>
 
 <para>Ligesom andre typer formatering kan punktopstillinger styres med
-    typografier, der selvfølgelig hedder nummereringstypografier.</para>
+    typografier, der selvfÃ¸lgelig hedder nummereringstypografier.</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>For at redigere nummereringstypografierne skal du åbne stylisten
-        og klikke på knappen
+<para>For at redigere nummereringstypografierne skal du Ã¥bne stylisten
+        og klikke pÃ¥ knappen
 <figure float="1" id="fig-ooo-nummereringstypografier">
 <title>Nummereringstypografier</title>
 <graphic fileref="stylistnummereringstypografier.&magic;" scale="60"></graphic>
@@ -24,7 +24,7 @@
   <listitem>
 
 <para>For at bruge en nummereringstypografi skal du markere
-        punktopstillingen og dobbeltklikke på typografien i stylisten.</para>
+        punktopstillingen og dobbeltklikke pÃ¥ typografien i stylisten.</para>
 
 </listitem>
 </itemizedlist>

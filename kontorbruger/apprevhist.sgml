@@ -3,13 +3,13 @@
 <indexterm><primary>Versisionshistorie</primary></indexterm>
 
 <para>
-Vi frigiver ofte nye versioner, når der er kommer en del
+Vi frigiver ofte nye versioner, nÃ¥r der er kommer en del
 rettelser ind, eller nye afsnit er blevet skrevet.  Kommentarer, ris
 og ros, og specielt fejl og mangler bedes sendt til <ulink
 url="mailto:linuxbog@sslug.dk">linuxbog@sslug.dk</ulink>, men er du
-medlem af SSLUG så skriv til 
+medlem af SSLUG sÃ¥ skriv til 
 <ulink url="mailto:sslug-bog@sslug.dk">sslug-bog@sslug.dk</ulink>. Her er en
-liste over, hvad der er ændret i bogen.
+liste over, hvad der er Ã¦ndret i bogen.
 </para>
 
 
@@ -39,7 +39,7 @@ Jacob Sparre Andersen: Retter sproglige fejl.
 
 <listitem><para>
 Version 0.9 - 7. oktober 2003: 
-Peter Toft tilføjer opsætning af stavekontrol til 
+Peter Toft tilfÃ¸jer opsÃ¦tning af stavekontrol til 
 OpenOffice.org.
 Jacob Sparre Andersen retter sproglige fejl.
 </para></listitem>
@@ -48,17 +48,17 @@ Jacob Sparre Andersen retter sproglige fejl.
 <listitem><para>
 Version 0.8 - 1. december 2002: 
 Peter Toft retter lige alle tekst og billeder fra 
-StarOffice 5.2 til OpenOffice.org 1.0. Claus Sørensen laver
-dette arbejde til ende på. Jacob Sparre Andersen kom lige på den 
-lille idé. 
-Erik Søe Sørensen rettet en del sproglige bøffer.
-Mark Gjøl kendte kommandoen <command>import</command> som 
-kan lave skærmskud.
+StarOffice 5.2 til OpenOffice.org 1.0. Claus SÃ¸rensen laver
+dette arbejde til ende pÃ¥. Jacob Sparre Andersen kom lige pÃ¥ den 
+lille idÃ©. 
+Erik SÃ¸e SÃ¸rensen rettet en del sproglige bÃ¸ffer.
+Mark GjÃ¸l kendte kommandoen <command>import</command> som 
+kan lave skÃ¦rmskud.
 </para></listitem>
 
 <listitem><para>
 Version 0.7 - 1. september 2002: 
-Erik Søe Sørensen retter et par fejl.
+Erik SÃ¸e SÃ¸rensen retter et par fejl.
 </para></listitem>
 
 
@@ -71,11 +71,11 @@ Henrik Skov Midtiby retter sproglige fejl.
 
 <listitem><para>
 Version 0.5 - 10. marts 2002: 
-Ny licens for bogen - Åben dokumentlicens.
+Ny licens for bogen - Ã…ben dokumentlicens.
 Jesper Laisen har skrevet et nyt afsnit om brug af PGP
-til at håndtere kryptering af emails under KMail.
+til at hÃ¥ndtere kryptering af emails under KMail.
 Peter Toft og Jesper Laisen - flere stikord.
-Claus Sørensen - flere stikord og retter tekst om OpenOffice.org og 
+Claus SÃ¸rensen - flere stikord og retter tekst om OpenOffice.org og 
 StarOffice.
 </para></listitem>
 
@@ -84,32 +84,32 @@ StarOffice.
 Version 0.4 - 29. november 2001: 
 Jesper Laisen skriver om KSnapshot, KMail og tekstbehandling med StarOffice.
 Poul Petersen rettet et par smuttere.
-Peter Toft skriver mere om at lave præsentationer med StarOffice.
+Peter Toft skriver mere om at lave prÃ¦sentationer med StarOffice.
 </para></listitem>
 
 <listitem><para>
 Version 0.3 - 21. oktober 2001: 
-Peter Toft forsætter med at skrive om StarOffice regneark og præsentationer.
+Peter Toft forsÃ¦tter med at skrive om StarOffice regneark og prÃ¦sentationer.
 Installation af KMail og afsnit om KMail er skrevet af Jesper Laisen.
 Jacob Sparre Andersen: Rettet enheder til (MHz = megahertz, Mbit = megabit,
 Mb = megabyte).
 Lars K. Schunk retter mange sproglige fejl igennem hele bogen.
-Erling Sjørlund påpeger et par smuttere som er rettet op.
+Erling SjÃ¸rlund pÃ¥peger et par smuttere som er rettet op.
 </para></listitem>
 
 
 <listitem><para>
 Version 0.2 - 8. august 2001: 
 Peter Toft begynder at skrive om regneark med StarOffice.
-Jørgen Ramskov og Erling Sjørlund hjælper godt til 
-med at rette og tilføje.
+JÃ¸rgen Ramskov og Erling SjÃ¸rlund hjÃ¦lper godt til 
+med at rette og tilfÃ¸je.
 </para></listitem>
 
 
 <listitem><para>
 Version 0.1 - 9. juli 2001: 
-Peter Toft på vej over Atlanten. Hrrm, jeg kan da starte på en ny bog.
-Har skrevet om web- og fil-håndtering. Tilsvarende om de vigtigste
+Peter Toft pÃ¥ vej over Atlanten. Hrrm, jeg kan da starte pÃ¥ en ny bog.
+Har skrevet om web- og fil-hÃ¥ndtering. Tilsvarende om de vigtigste
 KDE-programmer og hvad der er i KDE.
 </para></listitem>
 

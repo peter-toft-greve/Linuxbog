@@ -3,60 +3,60 @@
   <title>Basal programmering</title> 
  
 <para> 
-Kapitlet forudsættes i resten af bogen. 
+Kapitlet forudsÃ¦ttes i resten af bogen. 
 </para> 
  
 <sect1 id="java-basal-prg-foerste"> 
-  <title>Det første javaprogram</title> 
+  <title>Det fÃ¸rste javaprogram</title> 
  
 <para> 
-Lad os se på et simpelt javaprogram, der skriver "Hej verden" og et 
-citat af Storm P. ud til skærmen. 
+Lad os se pÃ¥ et simpelt javaprogram, der skriver "Hej verden" og et 
+citat af Storm P. ud til skÃ¦rmen. 
 </para> 
  
 <screen> 
 // Et simpelt program, der skriver "Hej verden"  
-// og et citat af Storm P. ud til skærmen 
+// og et citat af Storm P. ud til skÃ¦rmen 
 public class HejVerden 
 { 
   public static void main (String[] args) 
   { 
     System.out.println("Hej Verden!"); 
-    System.out.println("Hvornår smager en Tuborg bedst?"); 
+    System.out.println("HvornÃ¥r smager en Tuborg bedst?"); 
     System.out.println("Hvergang!"); 
   } 
 } 
 </screen> 
  
 <para> 
-Inden vi oversætter og kører programmet 
+Inden vi oversÃ¦tter og kÃ¸rer programmet 
 </para> 
  
 <sect2 id="java-basal-prg-foerste-kommentar"> 
   <title>Kommentarer</title> 
  
 <para> 
-Kommentarer er dokumentation beregnet på at gøre programmets 
-kildetekst lettere at forstå. De påvirker ikke programudførelsen, da 
-oversætteren ignorerer dem.</para> 
+Kommentarer er dokumentation beregnet pÃ¥ at gÃ¸re programmets 
+kildetekst lettere at forstÃ¥. De pÃ¥virker ikke programudfÃ¸relsen, da 
+oversÃ¦tteren ignorerer dem.</para> 
  
 <para> 
-De første 3 linjer, der starter med //, er kommentarer: 
+De fÃ¸rste 3 linjer, der starter med //, er kommentarer: 
 </para> 
  
 <screen> 
 // Et simpelt program, der skriver "Hej verden" 
-// og et citat af Storm P. ud til skærmen 
+// og et citat af Storm P. ud til skÃ¦rmen 
 </screen> 
  
 <para> 
-Kommentarer bør skrives, så de giver forståelse for, hvordan 
-programmet virker - uden at være flertydige eller forklare indlysende 
+Kommentarer bÃ¸r skrives, sÃ¥ de giver forstÃ¥else for, hvordan 
+programmet virker - uden at vÃ¦re flertydige eller forklare indlysende 
 ting. 
 </para> 
  
 <para> 
-// markerer, at resten af linjen er en kommentar. Den kan også 
+// markerer, at resten af linjen er en kommentar. Den kan ogsÃ¥ 
 bruges efter en kommando, til at forklare hvad der sker, f.eks. 
 </para> 
  
@@ -65,16 +65,16 @@ System.out.println("Hej verden!");  // Udskriv en hilsen
 </screen> 
  
 <para> 
-Java har også en anden form, som kan være nyttig til 
+Java har ogsÃ¥ en anden form, som kan vÃ¦re nyttig til 
 kommentarer over flere linjer: Man kan starte en kommentar med /* og 
-afslutte den med */. Al tekst mellem /* og */ bliver så 
-opfattet som kommentarer. Vi kunne altså også skrive 
+afslutte den med */. Al tekst mellem /* og */ bliver sÃ¥ 
+opfattet som kommentarer. Vi kunne altsÃ¥ ogsÃ¥ skrive 
 </para> 
  
 <screen> 
 /* 
 Et simpelt program, der skriver "Hej verden"  
-og et citat af Storm P. ud til skærmen 
+og et citat af Storm P. ud til skÃ¦rmen 
 */ 
 </screen> 
  
@@ -87,9 +87,9 @@ System.out.println("Hej verden!");  /* Udskriv en hilsen */
 </screen> 
  
 <para> 
-Der findes også en tredje form kaldet for 
+Der findes ogsÃ¥ en tredje form kaldet for 
 <emphasis>Javadoc-kommentarer</emphasis>, som starter med /** og 
-slutter med */. Javadoc-kommentarer gennemgåes i <xref 
+slutter med */. Javadoc-kommentarer gennemgÃ¥es i <xref 
 linkend="java-dev-env-doc-javadoc"/>. 
 </para> 
  
@@ -104,7 +104,7 @@ programmet (HejVerden).
 </para> 
  
 <para> 
-Den består af en fast struktur: 
+Den bestÃ¥r af en fast struktur: 
 </para> 
  
 <screen> 
@@ -119,7 +119,7 @@ public class HejVerden
  
  
 <para> 
-og noget programkode - kommandoer, der skal udføres, nærmest som en 
+og noget programkode - kommandoer, der skal udfÃ¸res, nÃ¦rmest som en 
 bageopskrift: 
 </para> 
  
@@ -131,14 +131,14 @@ System.out.println(&quot;Hej verden!&quot;);
   <title>Strukturdelen</title> 
  
 <para> 
-Strukturdelen vil ikke blive ændret i de næste to kapitler, og det er 
-ikke så vigtigt, at du forstår, hvad der foregår i første omgang. 
+Strukturdelen vil ikke blive Ã¦ndret i de nÃ¦ste to kapitler, og det er 
+ikke sÃ¥ vigtigt, at du forstÃ¥r, hvad der foregÃ¥r i fÃ¸rste omgang. 
 </para> 
  
 <para> 
 Al javakode er indkapslet i en klasse mellem { og } (blokstart og 
 blokslut-parenteser). Beskrivelsen af en klasse er altid indkapslet i 
-en blok bestående af: 
+en blok bestÃ¥ende af: 
 </para> 
  
 <screen> 
@@ -150,7 +150,7 @@ public class HejVerden
  
  
 <para> 
-Inde i klassen står der en main-metode med nogle kommandoer 
+Inde i klassen stÃ¥r der en main-metode med nogle kommandoer 
 i. Indholdet af metoden er altid indkapslet i en blok med { og }: 
 </para> 
  
@@ -159,7 +159,7 @@ public static void main (String[] arg) { ...  }
 </screen> 
  
 <para> 
-Programudførelsen starter i metoden: public static void main 
+ProgramudfÃ¸relsen starter i metoden: public static void main 
 (String[] arg) 
 </para> 
  
@@ -174,74 +174,74 @@ I main-metoden giver man instruktioner til computeren:
  
 <screen> 
     System.out.println("Hej verden!"); 
-    System.out.println("Hvornår smager en Tuborg bedst?"); 
+    System.out.println("HvornÃ¥r smager en Tuborg bedst?"); 
     System.out.println("Hvergang!"); 
 </screen> 
  
  
 <para> 
-Instruktionerne udføres altid en efter en, ovenfra og ned. 
+Instruktionerne udfÃ¸res altid en efter en, ovenfra og ned. 
 Hver instruktion afsluttes med et semikolon. 
 </para> 
  
 <para> 
 Disse 3 instruktioner skriver 3 strenge ("Hej verden!", 
-...) ud til skærmen. En streng er en tekst, som computeren kan 
+...) ud til skÃ¦rmen. En streng er en tekst, som computeren kan 
 arbejde med. Strenge er altid indkapslet i "". 
 </para> 
  
 <para> 
-Hver instruktion består af et kald til metoden 
+Hver instruktion bestÃ¥r af et kald til metoden 
 System.out.println, som betyder, at der skal udskrives noget til 
-skærmen, og en streng som parameter. 
+skÃ¦rmen, og en streng som parameter. 
 </para> 
  
 <para> 
-En parameter er en oplysning (data), som man overfører til 
+En parameter er en oplysning (data), som man overfÃ¸rer til 
 metoden. 
  
-I dette tilfælde hvilken tekst der skal skrives ud til 
-skærmen. 
+I dette tilfÃ¦lde hvilken tekst der skal skrives ud til 
+skÃ¦rmen. 
 </para> 
  
 <para> 
-Vores main-metode kalder altså andre metoder. 
+Vores main-metode kalder altsÃ¥ andre metoder. 
 </para> 
 </sect3>    <!--   Programkode --> 
 </sect2>    <!--   Klassedefinitionen --> 
  
 <sect2 id="java-basal-prg-foerste-oversaettelse"> 
-  <title>Oversættelse og kørsel af programmet</title> 
+  <title>OversÃ¦ttelse og kÃ¸rsel af programmet</title> 
  
 <para> 
-Når man skal udvikle et program, skriver man først en 
+NÃ¥r man skal udvikle et program, skriver man fÃ¸rst en 
 kildetekst (eng.: source code), der beskriver, hvad det er, man vil 
-have programmet til at gøre. Programmet, vi lige har set, er 
-et eksempel på en kildetekstfil. 
+have programmet til at gÃ¸re. Programmet, vi lige har set, er 
+et eksempel pÃ¥ en kildetekstfil. 
 </para> 
  
 <para> 
 Instruktionerne (kildeteksten), som centralenheden i computeren arbejder med, er i en 
-binær kode (ene ettaller og nuller) Nævnte binære kode kaldes maskinkode eller bytecode). 
-En sådan kode er umulig at læse for almindelige mennesker. Kildeteksten skal derfor 
-oversættes (eng.: compile; mange siger også kompilere på dansk) til binær kode, som så 
-kan udføres af computeren. 
+binÃ¦r kode (ene ettaller og nuller) NÃ¦vnte binÃ¦re kode kaldes maskinkode eller bytecode). 
+En sÃ¥dan kode er umulig at lÃ¦se for almindelige mennesker. Kildeteksten skal derfor 
+oversÃ¦ttes (eng.: compile; mange siger ogsÃ¥ kompilere pÃ¥ dansk) til binÃ¦r kode, som sÃ¥ 
+kan udfÃ¸res af computeren. 
 </para> 
  
 <para> 
-I Java kalder man den binære kode for bytekode. Bytekode er 
-platform-uafhængigt, dvs. at det kan køre på stort set alle 
+I Java kalder man den binÃ¦re kode for bytekode. Bytekode er 
+platform-uafhÃ¦ngigt, dvs. at det kan kÃ¸re pÃ¥ stort set alle 
 hardware-platforme og alle styresystemer. De fleste andre sprogs 
-binære kode er ikke indrettet til at være platformuafhængigt. 
+binÃ¦re kode er ikke indrettet til at vÃ¦re platformuafhÃ¦ngigt. 
 </para> 
  
 <para> 
-For at oversætte programmet HejVerden skal det gemmes i en fil med 
+For at oversÃ¦tte programmet HejVerden skal det gemmes i en fil med 
 navnet "HejVerden.java" - HejVerden er filnavnet, mens java er filtypen (efternavnet). 
-Filnavnet skal være det samme som klassenavnet - her er det ikke nok at de samme tegn
-optræder i filnavnet, sammensætningen af store og små bogstaver skal identisk med klassenavnet. 
-Filtypen skal være java. Man kan godt havde flere klasser i samme fil, men kun én kan have offentlig
-tilgang (public) filnavnet skal opkaldes efter denne - læs mere om dette senere.
+Filnavnet skal vÃ¦re det samme som klassenavnet - her er det ikke nok at de samme tegn
+optrÃ¦der i filnavnet, sammensÃ¦tningen af store og smÃ¥ bogstaver skal identisk med klassenavnet. 
+Filtypen skal vÃ¦re java. Man kan godt havde flere klasser i samme fil, men kun Ã©n kan have offentlig
+tilgang (public) filnavnet skal opkaldes efter denne - lÃ¦s mere om dette senere.
 </para> 
 
 <para> 
@@ -250,7 +250,7 @@ HejVerden.java.
 </para> 
  
 <sect3 id="java-basal-prg-foerste-oversaettelse-jdk"> 
-  <title>Oversættelse og kørsel uden et udviklingsværktøj</title> 
+  <title>OversÃ¦ttelse og kÃ¸rsel uden et udviklingsvÃ¦rktÃ¸j</title> 
  
 <para> 
 Hvis man bruger det kommandolinje-orienterede JDK, skal man (fra 
@@ -262,10 +262,10 @@ samme katalog) skrive:
 </programlisting> 
  
 <para> 
-Såfremt der ikke er nogen fejl i kildeteksten så vil oversætteren 
-forholde sig tavs. Det eneste tegn på at der er sket noget er at filen 
+SÃ¥fremt der ikke er nogen fejl i kildeteksten sÃ¥ vil oversÃ¦tteren 
+forholde sig tavs. Det eneste tegn pÃ¥ at der er sket noget er at filen 
 <filename>HejVerden.class</filename> er dukket op i samme katalog. Nu 
-kan det køres med kommandoen 
+kan det kÃ¸res med kommandoen 
 </para> 
  
 <programlisting> 
@@ -278,24 +278,24 @@ Resultatet bliver:
  
 <screen> 
 Hej Verden! 
-Hvornår smager en Tuborg bedst? 
+HvornÃ¥r smager en Tuborg bedst? 
 Hvergang! 
 </screen> 
  
 <figure id="java-basal-prg-oversaettelse-koer-cyklus-fig"> 
-<title>Oversættelse og udførelse af programmet HejVerden</title> 
+<title>OversÃ¦ttelse og udfÃ¸relse af programmet HejVerden</title> 
 <graphic fileref="Nordfalk415342.&magic;" scale="60"></graphic> 
 </figure> 
  
-</sect3>    <!--   Oversættelse og kørsel uden et udviklingsværktøj --> 
+</sect3>    <!--   OversÃ¦ttelse og kÃ¸rsel uden et udviklingsvÃ¦rktÃ¸j --> 
  
 <sect3 id="java-basal-prg-foerste-oversaettelse-ide"> 
-  <title>Oversættelse og kørsel med et udviklingsværktøj</title> 
+  <title>OversÃ¦ttelse og kÃ¸rsel med et udviklingsvÃ¦rktÃ¸j</title> 
  
 <para> 
-I de fleste udviklingsværktøjer skal du oprette et 
+I de fleste udviklingsvÃ¦rktÃ¸jer skal du oprette et 
 <emphasis>projekt</emphasis> (f.eks. i JBuilder: File/New 
-Project). Føj derefter din java-fil til projektet. Husk at placere 
+Project). FÃ¸j derefter din java-fil til projektet. Husk at placere 
 filen i det katalog, som projektet angiver (eller rette projektets 
 egenskaber). 
 </para> 
@@ -303,31 +303,31 @@ egenskaber).
  
  
 <para> 
-Når man vil oversætte sit java-program, skal man vælge 
-<emphasis>make</emphasis> (det er et engelsk ord). Når man har gjort 
-det, kan man køre sit program med <emphasis>run</emphasis>. 
+NÃ¥r man vil oversÃ¦tte sit java-program, skal man vÃ¦lge 
+<emphasis>make</emphasis> (det er et engelsk ord). NÃ¥r man har gjort 
+det, kan man kÃ¸re sit program med <emphasis>run</emphasis>. 
 </para> 
-</sect3>    <!--   Oversættelse og kørsel med et udviklingsværktøj --> 
-</sect2>    <!--   Oversættelse og kørsel af programmet --> 
-</sect1>    <!--   Det første javaprogram --> 
+</sect3>    <!--   OversÃ¦ttelse og kÃ¸rsel med et udviklingsvÃ¦rktÃ¸j --> 
+</sect2>    <!--   OversÃ¦ttelse og kÃ¸rsel af programmet --> 
+</sect1>    <!--   Det fÃ¸rste javaprogram --> 
  
 <sect1 id="java-basal-prg-variable"> 
   <title>Variable</title> 
  
 <para> 
-Du kan vælge at give et område i computeren et navn - sætte en etiket på området. Området kan  
-bruges til opbevaring af data. Da alle data ikke fylder lige meget i lageret, er det nødvendigt  
-at definere, hvilken type data du vil bruge lageret til samtidig med erklæringen eller navngivningen  
-af området. 
+Du kan vÃ¦lge at give et omrÃ¥de i computeren et navn - sÃ¦tte en etiket pÃ¥ omrÃ¥det. OmrÃ¥det kan  
+bruges til opbevaring af data. Da alle data ikke fylder lige meget i lageret, er det nÃ¸dvendigt  
+at definere, hvilken type data du vil bruge lageret til samtidig med erklÃ¦ringen eller navngivningen  
+af omrÃ¥det. 
 </para> 
  
 <para> 
-Det er en god vane at give variablerne sigende navne. Navnene bør 
+Det er en god vane at give variablerne sigende navne. Navnene bÃ¸r 
 starte med et lille bogstav. 
 </para> 
  
 <para> 
-I det følgende gennemgår vi to af Javas variabeltyper: int (heltal) og 
+I det fÃ¸lgende gennemgÃ¥r vi to af Javas variabeltyper: int (heltal) og 
 double (kommatal). 
 </para> 
  
@@ -335,7 +335,7 @@ double (kommatal).
   <title>Heltal</title> 
  
 <para> 
-En variabel af typen int (et heltal, eng.: integer) erklæres med 
+En variabel af typen int (et heltal, eng.: integer) erklÃ¦res med 
 </para> 
  
 <screen> 
@@ -351,9 +351,9 @@ int tal;
  
  
 <para> 
-Nu er der reserveret plads i hukommelsen til et heltal.  Man får fat i 
+Nu er der reserveret plads i hukommelsen til et heltal.  Man fÃ¥r fat i 
 pladsen ved at bruge variabelnavnet 'tal'. Efter at variablen er 
-erklæret kan den tildeles en værdi (der kan lagres en værdi på dens plads i computerens RAM), dvs.  man kan skrive data ind i 
+erklÃ¦ret kan den tildeles en vÃ¦rdi (der kan lagres en vÃ¦rdi pÃ¥ dens plads i computerens RAM), dvs.  man kan skrive data ind i 
 den: 
 </para> 
  
@@ -363,27 +363,27 @@ tal = 22;
  
  
 <para> 
-Nu er værdien af tal 22 (vist på figuren til højre). 
+Nu er vÃ¦rdien af tal 22 (vist pÃ¥ figuren til hÃ¸jre). 
 </para> 
  
 <para> 
 Vi kan bruge tal-variablen i stedet for at skrive 22, f.eks. til at 
-skrive ud til skærmen: 
+skrive ud til skÃ¦rmen: 
 </para> 
  
  
 <screen> 
-System.out.println("Svaret på livet, universet og alt det der: " + tal); 
+System.out.println("Svaret pÃ¥ livet, universet og alt det der: " + tal); 
 </screen> 
  
 <para> 
-Her slår computeren op i hukommelsen, læser indholdet af tal-variablen 
-og skriver det ud til skærmen (+'et vil blive forklaret om lidt). 
+Her slÃ¥r computeren op i hukommelsen, lÃ¦ser indholdet af tal-variablen 
+og skriver det ud til skÃ¦rmen (+'et vil blive forklaret om lidt). 
 </para> 
  
 <para> 
-Variabler kan, som navnet siger, ændre værdi. Det gør vi ved at 
-tildele variablen en ny værdi (der kan gemmes en værdi på den plads 
+Variabler kan, som navnet siger, Ã¦ndre vÃ¦rdi. Det gÃ¸r vi ved at 
+tildele variablen en ny vÃ¦rdi (der kan gemmes en vÃ¦rdi pÃ¥ den plads 
 i computerens lager, der er "markeret" med etiketten tal): 
 </para> 
  
@@ -397,30 +397,30 @@ tal = 42;
 </screen> 
  
 <para> 
-Herefter er den gamle værdi fuldstændigt glemt og erstattet med den 
-nye. Når programudførelsen når et punkt, hvor variablen læses, vil det 
-være den nye værdi, 42, der gælder. 
+Herefter er den gamle vÃ¦rdi fuldstÃ¦ndigt glemt og erstattet med den 
+nye. NÃ¥r programudfÃ¸relsen nÃ¥r et punkt, hvor variablen lÃ¦ses, vil det 
+vÃ¦re den nye vÃ¦rdi, 42, der gÃ¦lder. 
 </para> 
  
-<blockquote><para>I en tildeling læses værdien 
-på højre side og gemmes i variablen på venstre 
+<blockquote><para>I en tildeling lÃ¦ses vÃ¦rdien 
+pÃ¥ hÃ¸jre side og gemmes i variablen pÃ¥ venstre 
 side</para></blockquote> 
  
 <para> 
-Herunder er eksemplet i sin helhed (den væsentlige del af koden er 
-fremhævet): 
+Herunder er eksemplet i sin helhed (den vÃ¦sentlige del af koden er 
+fremhÃ¦vet): 
 </para> 
  
 <screen> 
-// Eksempel på brug af en variabel 
-// koden skal være i filen Variabler.java 
+// Eksempel pÃ¥ brug af en variabel 
+// koden skal vÃ¦re i filen Variabler.java 
 public class Variabler 
 { 
   public static void main (String[] args) 
   { 
 <emphasis>    int tal;</emphasis> 
 <emphasis>    tal = 22;</emphasis> 
-<emphasis>    System.out.println("Svaret på livet, universet og alt det der: " + tal);</emphasis> 
+<emphasis>    System.out.println("Svaret pÃ¥ livet, universet og alt det der: " + tal);</emphasis> 
  
 <emphasis>    tal = 42;</emphasis> 
 <emphasis>    System.out.println("Undskyld, svaret er: " + tal);</emphasis> 
@@ -430,31 +430,31 @@ public class Variabler
  
  
 <screen> 
-Svaret på livet, universet og alt det der: 22 
+Svaret pÃ¥ livet, universet og alt det der: 22 
 Undskyld, svaret er: 42 
 </screen> 
 </sect2>    <!--   Heltal --> 
  
 <sect2 id="java-basal-prg-variable-sammensaet"> 
-  <title>Sammensætte strenge med +</title> 
+  <title>SammensÃ¦tte strenge med +</title> 
  
 <para> 
-Som det er vist i ovenstående eksempel, kan vi med tegnet 
-<emphasis>+</emphasis> sætte strenge sammen med noget andet: 
+Som det er vist i ovenstÃ¥ende eksempel, kan vi med tegnet 
+<emphasis>+</emphasis> sÃ¦tte strenge sammen med noget andet: 
 </para> 
  
 <screen> 
-System.out.println(<emphasis>"Svaret på livet, universet og alt det 
+System.out.println(<emphasis>"Svaret pÃ¥ livet, universet og alt det 
 der: " + tal</emphasis>); 
 </screen> 
  
 <para> 
-Herunder sætter vi to strenge sammen: 
+Herunder sÃ¦tter vi to strenge sammen: 
 </para> 
  
 <screen> 
-// Sammensæt to strenge med + 
-// koden skal være i filen HejVerden2.java 
+// SammensÃ¦t to strenge med + 
+// koden skal vÃ¦re i filen HejVerden2.java 
 public class HejVerden2 
 { 
   public static void main (String[] args) 
@@ -481,7 +481,7 @@ public class HejVerden3
 { 
   public static void main (String[] args) 
   { 
-    System.out.println("Svaret på livet, universet og alt det der:"<emphasis> + 42</emphasis>); 
+    System.out.println("Svaret pÃ¥ livet, universet og alt det der:"<emphasis> + 42</emphasis>); 
   } 
 } 
 </screen> 
@@ -491,23 +491,23 @@ Resultatet bliver
 </para> 
  
 <screen> 
-Svaret på livet, universet og alt det der: 42 
+Svaret pÃ¥ livet, universet og alt det der: 42 
 </screen> 
  
 <para> 
 Det, der egentlig sker, er, at det hele bliver sat sammen til 
-én streng, og den sendes til System.out.println(). 
+Ã©n streng, og den sendes til System.out.println(). 
 </para> 
  
-<blockquote><para>En streng + noget andet sættes 
+<blockquote><para>En streng + noget andet sÃ¦ttes 
 sammen til en samlet streng</para></blockquote> 
-</sect2>    <!--   Sammensætte strenge med + --> 
+</sect2>    <!--   SammensÃ¦tte strenge med + --> 
  
 <sect2 id="java-basal-prg-variable-udtryk"> 
   <title>Beregningsudtryk</title> 
  
 <para> 
-Man kan erklære flere variabler på samme linje: 
+Man kan erklÃ¦re flere variabler pÃ¥ samme linje: 
 </para> 
  
 <screen> 
@@ -517,11 +517,11 @@ antalKatte = 8;
 </screen> 
  
 <para> 
-Tildelinger kan indeholde regneudtryk på højre side af 
+Tildelinger kan indeholde regneudtryk pÃ¥ hÃ¸jre side af 
 lighedstegnet. Udtrykket antalHunde + antalKatte udregnes, og 
-resultatet lægges i variablen på venstre side (fordi variabelnavnet ene og alene er en  
-etiket sat på en del af computerens lager, er det naturligvis ikke muligt   
-at have beregningsudtryk på venstre side): 
+resultatet lÃ¦gges i variablen pÃ¥ venstre side (fordi variabelnavnet ene og alene er en  
+etiket sat pÃ¥ en del af computerens lager, er det naturligvis ikke muligt   
+at have beregningsudtryk pÃ¥ venstre side): 
 </para> 
  
 <screen> 
@@ -529,8 +529,8 @@ antalDyr = antalHunde + antalKatte;
 </screen> 
  
 <para> 
-Beregningsudtrykkene undersøges af Java ved at indsætte de værdier, der er gemt i   
-variablerne. Her indsætter Java 5 + 8 og får 13, som lægges i 
+Beregningsudtrykkene undersÃ¸ges af Java ved at indsÃ¦tte de vÃ¦rdier, der er gemt i   
+variablerne. Her indsÃ¦tter Java 5 + 8 og fÃ¥r 13, som lÃ¦gges i 
 antalDyr. 
 </para> 
  
@@ -551,7 +551,7 @@ public class Dyreinternat
  
     antalHunde  = 10; 
  
-    // antalDyr er uændret 
+    // antalDyr er uÃ¦ndret 
     System.out.println("Antal dyr nu: " + antalDyr); 
   } 
 } 
@@ -567,14 +567,14 @@ Antal dyr nu: 13
 </screen> 
  
 <para> 
-Beregningen sker én gang <emphasis>på det tidspunkt, hvor kommandoen 
-udføres</emphasis> Derfor er antalDyr's værdi ikke påvirket at af vi 
-sætter antalHunde til noget andet efter udregningen. 
+Beregningen sker Ã©n gang <emphasis>pÃ¥ det tidspunkt, hvor kommandoen 
+udfÃ¸res</emphasis> Derfor er antalDyr's vÃ¦rdi ikke pÃ¥virket at af vi 
+sÃ¦tter antalHunde til noget andet efter udregningen. 
 </para> 
  
 <para> 
 Ligesom i almindelig matematik har * (multiplikation) og / 
-(division) højere prioritet end + og -. 
+(division) hÃ¸jere prioritet end + og -. 
 </para> 
  
 <blockquote><para>I Java skrives 9 divideret med 3 som 9/3 3 gange 3 
@@ -586,9 +586,9 @@ gangetegn.
 </para> 
  
 <para> 
-Resultatet af en heltalsudregning er også et heltal. Det skal man være 
-opmærksom på ved division, hvor eventuelle decimaler efter kommaet 
-smides væk.  Heltalsudregningen 13 / 5 giver altså 2, fordi 5 går op i 
+Resultatet af en heltalsudregning er ogsÃ¥ et heltal. Det skal man vÃ¦re 
+opmÃ¦rksom pÃ¥ ved division, hvor eventuelle decimaler efter kommaet 
+smides vÃ¦k.  Heltalsudregningen 13 / 5 giver altsÃ¥ 2, fordi 5 gÃ¥r op i 
 13 to gange. 
 </para> 
  
@@ -596,8 +596,8 @@ smides væk.  Heltalsudregningen 13 / 5 giver altså 2, fordi 5 går op i
 giver et heltal   95 / 100 giver 0</para></blockquote> 
  
 <para> 
-Ønsker man at få et kommatal som resultat af 
-divisionen skal et eller begge af tallene være kommatal. 
+Ã˜nsker man at fÃ¥ et kommatal som resultat af 
+divisionen skal et eller begge af tallene vÃ¦re kommatal. 
 Eksempelvis giver 95.0 / 10 kommatallet 9.5. 
 </para> 
 </sect2>    <!--   Beregningsudtryk --> 
@@ -608,23 +608,23 @@ Eksempelvis giver 95.0 / 10 kommatallet 9.5.
 <para> 
 Der findes mange andre variabeltyper end heltalstypen int. Hvis 
 man vil regne med kommatal, bruger man typen double. En variabel af 
-typen double erklæres med: 
+typen double erklÃ¦res med: 
 </para> 
  
 <screen> 
-double højde; 
+double hÃ¸jde; 
 </screen> 
  
 <para> 
-De følgende afsnit bruger noget matematik, mange lærer i 
-gymnasiet. Hvis du ikke kender så meget til matematik, gør det ikke 
-noget. Præcis, hvad der udregnes og formlerne bag det, er ikke så 
-vigtigt i denne sammenhæng. Det vigtige er at forstå, hvordan man 
+De fÃ¸lgende afsnit bruger noget matematik, mange lÃ¦rer i 
+gymnasiet. Hvis du ikke kender sÃ¥ meget til matematik, gÃ¸r det ikke 
+noget. PrÃ¦cis, hvad der udregnes og formlerne bag det, er ikke sÃ¥ 
+vigtigt i denne sammenhÃ¦ng. Det vigtige er at forstÃ¥, hvordan man 
 arbejder med tal i Java. 
 </para> 
  
 <para> 
-Her er et eksempel på beregning af en cylinders rumfang: 
+Her er et eksempel pÃ¥ beregning af en cylinders rumfang: 
 </para> 
  
 <screen> 
@@ -637,11 +637,11 @@ public class Cylinderberegning
   { 
     <emphasis>double radius;</emphasis> 
     <emphasis>radius = 5.0;</emphasis> 
-    <emphasis>double højde = 12.5;</emphasis> 
+    <emphasis>double hÃ¸jde = 12.5;</emphasis> 
     //beregn rumfang 
-    <emphasis>double volumen = radius * radius * højde * 3.14159;</emphasis> 
+    <emphasis>double volumen = radius * radius * hÃ¸jde * 3.14159;</emphasis> 
  
-    System.out.println("Cylinderens højde: " + højde); 
+    System.out.println("Cylinderens hÃ¸jde: " + hÃ¸jde); 
     System.out.println("Cylinderens radius: " + radius); 
     System.out.println("Cylinderens volumen: " + volumen); 
   } 
@@ -650,39 +650,39 @@ public class Cylinderberegning
  
  
 <screen> 
-Cylinderens højde: 12.5 
+Cylinderens hÃ¸jde: 12.5 
 Cylinderens radius: 5.0 
 Cylinderens volumen: 981.7468749999999 
 </screen> 
  
  
 <para> 
-Læg mærke til, at man godt kan erklære en variabel og tildele den 
-værdi i samme linje: 
+LÃ¦g mÃ¦rke til, at man godt kan erklÃ¦re en variabel og tildele den 
+vÃ¦rdi i samme linje: 
 </para> 
  
 <screen> 
-double højde = 12.5; 
+double hÃ¸jde = 12.5; 
 </screen> 
  
 <para> 
-er altså det samme som: 
+er altsÃ¥ det samme som: 
 </para> 
  
 <screen> 
-double højde; 
-højde = 12.5; 
+double hÃ¸jde; 
+hÃ¸jde = 12.5; 
 </screen> 
  
  
 <para> 
-Her er et eksempel på en skatteberegning, der viser nogle 
+Her er et eksempel pÃ¥ en skatteberegning, der viser nogle 
 flere fif: 
 </para> 
  
 <screen> 
 // 
-// Skatteberegning (Inspireret af Hallenberg og Sestoft, IT-C, København) 
+// Skatteberegning (Inspireret af Hallenberg og Sestoft, IT-C, KÃ¸benhavn) 
 // 
 public class Skatteberegning  
 { 
@@ -697,7 +697,7 @@ public class Skatteberegning
     bundskat = <emphasis>(indkomst - 33400) * 0.07</emphasis>; 
  
     System.out.println("AMBI: " + ambi); 
-    System.out.println("Særlig pensionsopsparing: " + pension); 
+    System.out.println("SÃ¦rlig pensionsopsparing: " + pension); 
     System.out.println("Bundskat: " + bundskat); 
   } 
 } 
@@ -706,15 +706,15 @@ public class Skatteberegning
  
 <screen> 
 AMBI: 24000.0 
-Særlig pensionsopsparing: 3000.0 
+SÃ¦rlig pensionsopsparing: 3000.0 
 Bundskat: 16772.0 
 </screen> 
  
  
 <para> 
-Udregninger sker normalt fra venstre mod højre, men ligesom 
-i den almindelige matematik kan man påvirke 
-udregningsrækkefølgen ved at sætte parenteser: 
+Udregninger sker normalt fra venstre mod hÃ¸jre, men ligesom 
+i den almindelige matematik kan man pÃ¥virke 
+udregningsrÃ¦kkefÃ¸lgen ved at sÃ¦tte parenteser: 
 </para> 
  
 <screen> 
@@ -732,9 +732,9 @@ variabel, et fast tal eller et beregningsudtryk.
 </para> 
  
 <para> 
-Vi kan f.eks. lave en tabel over værdierne af kvadratrod-funktionen 
+Vi kan f.eks. lave en tabel over vÃ¦rdierne af kvadratrod-funktionen 
 Math.sqrt() for x=0 til x=10 med programmet (senere, i sektionen om 
-løkker, vil vi se en smartere måde). 
+lÃ¸kker, vil vi se en smartere mÃ¥de). 
 </para> 
  
 <screen> 
@@ -777,9 +777,9 @@ kvadratroden af 10 er 3.1622776601683795
  
  
 <para> 
-Her er et program, der udregner længden af den skrå side (hypotenusen) 
-af en retvinklet trekant ud fra længden af dens to lige sider 
-(kateder): kvadratroden af a&sup2;+b&sup2;, hvor a og b er længderne 
+Her er et program, der udregner lÃ¦ngden af den skrÃ¥ side (hypotenusen) 
+af en retvinklet trekant ud fra lÃ¦ngden af dens to lige sider 
+(kateder): kvadratroden af a&sup2;+b&sup2;, hvor a og b er lÃ¦ngderne 
 af de to sider: 
 </para> 
  
@@ -808,9 +808,9 @@ har hypotenuse 5.0
 </screen> 
  
 <para> 
-Her er et tilsvarende program, der udregner hypotenusen ud fra længden 
-af en af de andre sider og den modstående vinkel. Det gøres ud fra 
-formlen a/sin(v), hvor a er længden af siden, og v er vinklen (i 
+Her er et tilsvarende program, der udregner hypotenusen ud fra lÃ¦ngden 
+af en af de andre sider og den modstÃ¥ende vinkel. Det gÃ¸res ud fra 
+formlen a/sin(v), hvor a er lÃ¦ngden af siden, og v er vinklen (i 
 radianer): 
 </para> 
  
@@ -823,7 +823,7 @@ public class Trekant2
     a = 10; 
     v = 0.3; // svarer til ca. 34 grader. 
     hypotenuse = <emphasis>a/Math.sin(v)</emphasis>; 
-    System.out.println("Hypotenusen har længden: "+hypotenuse); 
+    System.out.println("Hypotenusen har lÃ¦ngden: "+hypotenuse); 
   } 
 } 
 </screen> 
@@ -833,12 +833,12 @@ Resultatet bliver
 </para> 
  
 <screen> 
-Hypotenusen har længden: 33.838633618241225 
+Hypotenusen har lÃ¦ngden: 33.838633618241225 
 </screen> 
  
 <para> 
-Ud over de almindelige matematiske funktioner findes også 
-Math.random(), der giver et tilfældigt tal mellem 0 og 0.999999... 
+Ud over de almindelige matematiske funktioner findes ogsÃ¥ 
+Math.random(), der giver et tilfÃ¦ldigt tal mellem 0 og 0.999999... 
 </para> 
 </sect2>    <!--   Matematiske funktioner --> 
  
@@ -853,17 +853,17 @@ andre kommandoer, f.eks. System.out.println(), kaldes under et
  
 <para> 
 En metode er en navngiven programstump (i nogle computersprog
-taler man på dette sted om funktioner), der kan gøre et 
-eller andet eller beregne en værdi. F.eks. <emphasis>gør</emphasis> 
-System.out.println() det, at den skriver tekst på 
-skærmen, og Math.sqrt() <emphasis>beregner</emphasis> en 
-kvadratrod. Når en metode nævnes i teksten, skriver vi 
-altid () bagefter, så man kan se, at det er en 
+taler man pÃ¥ dette sted om funktioner), der kan gÃ¸re et 
+eller andet eller beregne en vÃ¦rdi. F.eks. <emphasis>gÃ¸r</emphasis> 
+System.out.println() det, at den skriver tekst pÃ¥ 
+skÃ¦rmen, og Math.sqrt() <emphasis>beregner</emphasis> en 
+kvadratrod. NÃ¥r en metode nÃ¦vnes i teksten, skriver vi 
+altid () bagefter, sÃ¥ man kan se, at det er en 
 metode. 
 </para> 
  
 <para> 
-Nedenstående linje indeholder et <emphasis>metodekald</emphasis>: 
+NedenstÃ¥ende linje indeholder et <emphasis>metodekald</emphasis>: 
 </para> 
  
 <screen> 
@@ -871,32 +871,32 @@ hypotenuse = a/Math.sin(v);
 </screen> 
  
 <para> 
-Math.sin er navnet på metoden, og man kalder det v, der står 
+Math.sin er navnet pÃ¥ metoden, og man kalder det v, der stÃ¥r 
 inde i (), for argumentet eller parameteren. 
 </para> 
  
 <para> 
-Et metodekald er en nævnelse af en metodes navn efterfulgt 
+Et metodekald er en nÃ¦vnelse af en metodes navn efterfulgt 
 af de rigtige parametre. Parametrene er omgivet af parenteser. 
 </para> 
  
 <para> 
 Ved et kald uden parametre skal man stadig have parenteserne med. 
-Math.random() skal kaldes uden parametre. Her er et eksempel på 
+Math.random() skal kaldes uden parametre. Her er et eksempel pÃ¥ 
 et metodekald af Math.random(): 
 </para> 
  
 <screen> 
-double tilfældigtTal;  
-tilfældigtTal = Math.random(); 
+double tilfÃ¦ldigtTal;  
+tilfÃ¦ldigtTal = Math.random(); 
 </screen> 
  
-<blockquote><para>Ved et metodekald kan man indsætte som parameter 
+<blockquote><para>Ved et metodekald kan man indsÃ¦tte som parameter 
 ethvert udtryk, der giver et resultat af den rigtige 
 type.</para></blockquote> 
  
 <para> 
-Alt, der giver et resultat af den rigtige type, er altså 
+Alt, der giver et resultat af den rigtige type, er altsÃ¥ 
 tilladt: Konstanter, variabler, regneudtryk og resultatet af et andet 
 metodekald: 
 </para> 
@@ -905,12 +905,12 @@ metodekald:
 double v,x; 
 x = Math.sin(0.1);             // konstant som parameter 
 x = Math.sin(v);               // variabel som parameter 
-x = Math.sin(Math.sqrt(0.3));  // værdi af andet metodekald som parameter 
+x = Math.sin(Math.sqrt(0.3));  // vÃ¦rdi af andet metodekald som parameter 
 </screen> 
  
 <para> 
-Vi vil i <xref linkend="java-klasser"/> se, hvad der sker, når computeren udfører et 
-metodekald, samt lære, hvordan man kan lave sine egne metoder. 
+Vi vil i <xref linkend="java-klasser"/> se, hvad der sker, nÃ¥r computeren udfÃ¸rer et 
+metodekald, samt lÃ¦re, hvordan man kan lave sine egne metoder. 
 </para> 
 </sect2>    <!--   Kald af metoder --> 
  
@@ -918,14 +918,14 @@ metodekald, samt lære, hvordan man kan lave sine egne metoder.
   <title>Logiske variable</title> 
  
 <para> 
-En boolsk variabel, også kaldet en logisk variabel, kan kun indeholde 
-værdierne sand eller falsk. Den bruges oftest til at huske, om noget 
-er sandt eller ej, men kan også bruges til at repræsentere noget, der 
-kun har to tilstande, f.eks. om en lampe er tændt eller slukket. 
+En boolsk variabel, ogsÃ¥ kaldet en logisk variabel, kan kun indeholde 
+vÃ¦rdierne sand eller falsk. Den bruges oftest til at huske, om noget 
+er sandt eller ej, men kan ogsÃ¥ bruges til at reprÃ¦sentere noget, der 
+kun har to tilstande, f.eks. om en lampe er tÃ¦ndt eller slukket. 
 </para> 
  
 <para> 
-Variabeltypen hedder boolean, og den erklæres med f.eks.: 
+Variabeltypen hedder boolean, og den erklÃ¦res med f.eks.: 
 </para> 
  
 <screen> 
@@ -934,7 +934,7 @@ boolean detErForSent;
  
  
 <para> 
-En boolesk variabel kan kun sættes til værdierne true 
+En boolesk variabel kan kun sÃ¦ttes til vÃ¦rdierne true 
 eller false. F.eks.: 
 </para> 
  
@@ -943,7 +943,7 @@ detErForSent = false;
 </screen> 
  
 <para> 
-På højre side af lighedstegnet kan stå et logisk udtryk, dvs. et 
+PÃ¥ hÃ¸jre side af lighedstegnet kan stÃ¥ et logisk udtryk, dvs. et 
 udsagn, der enten er sandt eller falsk, f.eks.  "klokken er over 8" 
 (her forestiller vi os, at vi har variablen klokken) 
 </para> 
@@ -953,12 +953,12 @@ detErForSent = klokken &gt; 8;
 </screen> 
  
 <para> 
-Udtrykket klokken &gt; 8 undersøges af Java ved at indsætte 
-værdien af variablen i regneudtrykket og derefter afgøre 
-om udsagnet er sandt. Hvis f.eks. klokken=7, står der 7&gt;8, 
-det er ikke sandt, og detErForSent får værdien false. 
-Hvis klokken=10, står der 10&gt;8, det er sandt, og 
-detErForSent får værdien true. 
+Udtrykket klokken &gt; 8 undersÃ¸ges af Java ved at indsÃ¦tte 
+vÃ¦rdien af variablen i regneudtrykket og derefter afgÃ¸re 
+om udsagnet er sandt. Hvis f.eks. klokken=7, stÃ¥r der 7&gt;8, 
+det er ikke sandt, og detErForSent fÃ¥r vÃ¦rdien false. 
+Hvis klokken=10, stÃ¥r der 10&gt;8, det er sandt, og 
+detErForSent fÃ¥r vÃ¦rdien true. 
 </para> 
 </sect2>    <!--   Logiske variabler --> 
  
@@ -967,17 +967,17 @@ detErForSent får værdien true.
  
 <orderedlist> 
 <listitem><para> 
-Skriv et program, som ud fra længde og bredde på et 
+Skriv et program, som ud fra lÃ¦ngde og bredde pÃ¥ et 
 rektangel udskriver rektanglets areal. 
 </para></listitem> 
  
 <listitem><para> 
 Skriv et program, som for ligningen y=3*x*x+6*x+9 udskriver 
-  værdierne af y for x=0, x=1 og x=10. 
+  vÃ¦rdierne af y for x=0, x=1 og x=10. 
 </para></listitem> 
  
 <listitem><para> 
-Skriv et program, som omregner et beløb fra dollar til 
+Skriv et program, som omregner et belÃ¸b fra dollar til 
   euro (f.eks. kurs 95). 
 </para></listitem> 
 </orderedlist> 
@@ -986,29 +986,29 @@ Skriv et program, som omregner et beløb fra dollar til
 </sect1>    <!--   Variabler --> 
  
 <sect1 id="java-basal-prg-betinget"> 
-  <title>Betinget udførelse</title> 
+  <title>Betinget udfÃ¸relse</title> 
  
 <para> 
-Indtil nu har vores programmer været fuldstændig 
-forudsigelige. Vi har bedt computeren om at udføre den ene 
+Indtil nu har vores programmer vÃ¦ret fuldstÃ¦ndig 
+forudsigelige. Vi har bedt computeren om at udfÃ¸re den ene 
 kommando efter den anden uanset udfaldet af de tidligere kommandoer. 
 </para> 
  
 <figure id="java-basal-prg-betinget-rutediagram1-fig"> 
-<title>Logikken i en if-sætning</title> 
+<title>Logikken i en if-sÃ¦tning</title> 
  
 <graphic fileref="Nordfalk415345.&magic;" scale="60"></graphic> 
 </figure> 
  
 <para> 
-I programmer kan man påvirke programudførelsen 
-ved at indføre betingelser, der fortæller, at en del af 
-programmet kun skal gennemløbes, hvis betingelsen er opfyldt. 
+I programmer kan man pÃ¥virke programudfÃ¸relsen 
+ved at indfÃ¸re betingelser, der fortÃ¦ller, at en del af 
+programmet kun skal gennemlÃ¸bes, hvis betingelsen er opfyldt. 
 </para> 
  
 <para> 
-Det består af et udtryk, der enten er sandt eller falsk, og noget, der 
-afhænger af dets sandhedsværdi (se <xref linkend="java-basal-prg-betinget-rutediagram1-fig"/>). 
+Det bestÃ¥r af et udtryk, der enten er sandt eller falsk, og noget, der 
+afhÃ¦nger af dets sandhedsvÃ¦rdi (se <xref linkend="java-basal-prg-betinget-rutediagram1-fig"/>). 
 </para> 
  
 <para> 
@@ -1020,11 +1020,11 @@ Alle er bekendte med betingelser fra deres dagligdag, f.eks.:
 hvis du er over 18, er du myndig. 
 </para></listitem> 
 <listitem><para> 
-hvis din alkoholpromille er større end 0.5, så 
-  lad bilen stå. 
+hvis din alkoholpromille er stÃ¸rre end 0.5, sÃ¥ 
+  lad bilen stÃ¥. 
 </para></listitem> 
 <listitem><para> 
-hvis den koster mindre end 500 kr, så køb den! 
+hvis den koster mindre end 500 kr, sÃ¥ kÃ¸b den! 
 </para></listitem> 
 </itemizedlist> 
  
@@ -1042,18 +1042,18 @@ For eksempel:
  
 <screen> 
 if (alder &gt;= 18) System.out.println("Du er myndig"); 
-if (alkoholpromille &gt; 0.5) System.out.println("Lad bilen stå"); 
-if (pris &lt; 500) System.out.println("Jeg køber den!"); 
-if (alder == 18) System.out.println("Du er præcis atten år."); 
+if (alkoholpromille &gt; 0.5) System.out.println("Lad bilen stÃ¥"); 
+if (pris &lt; 500) System.out.println("Jeg kÃ¸ber den!"); 
+if (alder == 18) System.out.println("Du er prÃ¦cis atten Ã¥r."); 
 if (alder != 18) System.out.println("Du er ikke atten."); 
 </screen> 
  
 <para> 
-Udtrykkene i parenteserne er logiske udtryk (eller boolske udtryk). På 
-dansk er sætningen "over 18" tvetydig: skal man være OVER 18, dvs. 19, 
-for at være myndig? Java har derfor to forskellige 
-sammenligningsoperatorer: a &gt;= b undersøger, om a er større end 
-eller lig med b, mens a &gt; b undersøger om a er større end b. I 
+Udtrykkene i parenteserne er logiske udtryk (eller boolske udtryk). PÃ¥ 
+dansk er sÃ¦tningen "over 18" tvetydig: skal man vÃ¦re OVER 18, dvs. 19, 
+for at vÃ¦re myndig? Java har derfor to forskellige 
+sammenligningsoperatorer: a &gt;= b undersÃ¸ger, om a er stÃ¸rre end 
+eller lig med b, mens a &gt; b undersÃ¸ger om a er stÃ¸rre end b. I 
 appendiks <xref linkend="java-basal-prg-appendiks-aritmetik"/> findes en oversigt over 
 sammenligningsoperatorerne. 
 </para> 
@@ -1065,9 +1065,9 @@ sammenligningsoperatorerne.
 </figure> 
  
 <para> 
-Herunder et komplet eksempel på et program, der afgør, om man er 
-myndig. Programkoden, udtrykt på dansk, kunne være: hvis alder er 
-større end 18, så skriv "Du er myndig". I et javaprogram skriver man: 
+Herunder et komplet eksempel pÃ¥ et program, der afgÃ¸r, om man er 
+myndig. Programkoden, udtrykt pÃ¥ dansk, kunne vÃ¦re: hvis alder er 
+stÃ¸rre end 18, sÃ¥ skriv "Du er myndig". I et javaprogram skriver man: 
 </para> 
  
 <screen> 
@@ -1080,7 +1080,7 @@ public class Alder
  
     <emphasis>if (alder &gt;= 18)</emphasis> 
     <emphasis>System.out.println("Du er myndig.");</emphasis> 
-    System.out.println("Du er " + alder + " år."); 
+    System.out.println("Du er " + alder + " Ã¥r."); 
   } 
 } 
 </screen> 
@@ -1090,38 +1090,38 @@ Resultatet bliver
 </para> 
  
 <screen> 
-Du er 15 år. 
+Du er 15 Ã¥r. 
 </screen> 
  
 <para> 
-Kommandoen System.out.println("Du er myndig"), bliver kun udført, hvis 
-udtrykket (alder &gt; 18) er sandt. I dette tilfælde er alder = 15, og 
-der bliver ikke skrevet noget ud.  Hvis vi ændrer i programmet, så 
-alder = 18, er betingelsen (alder &gt;= 18) sand, og vi får: 
+Kommandoen System.out.println("Du er myndig"), bliver kun udfÃ¸rt, hvis 
+udtrykket (alder &gt; 18) er sandt. I dette tilfÃ¦lde er alder = 15, og 
+der bliver ikke skrevet noget ud.  Hvis vi Ã¦ndrer i programmet, sÃ¥ 
+alder = 18, er betingelsen (alder &gt;= 18) sand, og vi fÃ¥r: 
 </para> 
  
 <screen> 
 Du er myndig. 
-Du er 18 år. 
+Du er 18 Ã¥r. 
 </screen> 
  
 <para> 
-Programudførelsen fortsætter under alle 
-omstændigheder efter betingelsen, så uafhængigt af 
+ProgramudfÃ¸relsen fortsÃ¦tter under alle 
+omstÃ¦ndigheder efter betingelsen, sÃ¥ uafhÃ¦ngigt af 
 udfaldet vil linjen 
 </para> 
  
 <screen> 
-System.out.println("Du er " + alder + " år."); 
+System.out.println("Du er " + alder + " Ã¥r."); 
 </screen> 
  
 <para> 
-blive udført. 
+blive udfÃ¸rt. 
 </para> 
  
 <para> 
-Bemærk, oversætteren er ligeglad med indrykning, linjeskift etc. Det 
-er teksten, der tæller. Vi kunne lige så godt have skrevet 
+BemÃ¦rk, oversÃ¦tteren er ligeglad med indrykning, linjeskift etc. Det 
+er teksten, der tÃ¦ller. Vi kunne lige sÃ¥ godt have skrevet 
 </para> 
  
 <screen> 
@@ -1138,24 +1138,24 @@ System.out.println("Du er myndig.");
 </screen> 
  
 <para> 
-... men det sidste er en dårlig stil, for det gør det 
-sværere at læse kildeteksten. Normalt indrykker man 2-4 
-tegn, når en kommando er betinget. 
+... men det sidste er en dÃ¥rlig stil, for det gÃ¸r det 
+svÃ¦rere at lÃ¦se kildeteksten. Normalt indrykker man 2-4 
+tegn, nÃ¥r en kommando er betinget. 
 </para> 
  
 <sect2 id="java-basal-prg-betinget-if-else"> 
   <title>if-else</title> 
  
 <figure id="java-basal-prg-betinget-rutediagram3-fig"> 
-<title>Logikken  i en if-else-sætning</title> 
+<title>Logikken  i en if-else-sÃ¦tning</title> 
  
 <graphic fileref="Nordfalk415347.&magic;" scale="60"></graphic> 
 </figure> 
  
 <para> 
-Hvis vi ønsker at gøre én ting, hvor betingelsen er sand, og en anden 
-ting hvis betingelsen er falsk, kan vi føje en else-del til vores 
-if-sætning. Denne del vil kun blive udført, hvis betingelsen er 
+Hvis vi Ã¸nsker at gÃ¸re Ã©n ting, hvor betingelsen er sand, og en anden 
+ting hvis betingelsen er falsk, kan vi fÃ¸je en else-del til vores 
+if-sÃ¦tning. Denne del vil kun blive udfÃ¸rt, hvis betingelsen er 
 falsk. Syntaksen er: 
 </para> 
  
@@ -1180,7 +1180,7 @@ public class Alder2
       System.out.println("Du er myndig."); 
     <emphasis>else</emphasis> System.out.println("Du er ikke myndig."); 
  
-    System.out.println("Du er " + alder + " år."); 
+    System.out.println("Du er " + alder + " Ã¥r."); 
   } 
 } 
 </screen> 
@@ -1188,27 +1188,27 @@ public class Alder2
  
 <screen> 
 Du er ikke myndig. 
-Du er 15 år. 
+Du er 15 Ã¥r. 
 </screen> 
  
  
 <para> 
-Ændrer vi så alder = 18, er betingelsen (alder &gt;= 18) sand, og vi 
-får resultatet 
+Ã†ndrer vi sÃ¥ alder = 18, er betingelsen (alder &gt;= 18) sand, og vi 
+fÃ¥r resultatet 
 </para> 
  
 <screen> 
 Du er myndig. 
-Du er 18 år. 
+Du er 18 Ã¥r. 
 </screen> 
  
  
 <para> 
-Det er selvfølgelig lidt kedeligt at kunne se direkte i vores program 
-uden at køre det, om en betingelse er opfyldt. I virkeligheden er 
-betingelser kun nyttige, når forgreningen afhænger af nogle ydre 
-omstændigheder, f.eks. af brugerens indtastning eller af værdien af en 
-variabel fra en anden del af programmet. Hvis du bare vil prøve, kan 
+Det er selvfÃ¸lgelig lidt kedeligt at kunne se direkte i vores program 
+uden at kÃ¸re det, om en betingelse er opfyldt. I virkeligheden er 
+betingelser kun nyttige, nÃ¥r forgreningen afhÃ¦nger af nogle ydre 
+omstÃ¦ndigheder, f.eks. af brugerens indtastning eller af vÃ¦rdien af en 
+variabel fra en anden del af programmet. Hvis du bare vil prÃ¸ve, kan 
 du lave et ikke-forudsigeligt program med Math.random().  
 </para> 
 </sect2>    <!--   if-else --> 
@@ -1218,18 +1218,18 @@ du lave et ikke-forudsigeligt program med Math.random().
  
 <orderedlist> 
 <listitem><para> 
-Lav et veksleprogram fra dollar til euro. Det skal påregne en 
-kommission på 2 %, dog mindst 0,5 euro. Afprøv programmet med 
-forskellige beløb. 
+Lav et veksleprogram fra dollar til euro. Det skal pÃ¥regne en 
+kommission pÃ¥ 2 %, dog mindst 0,5 euro. AfprÃ¸v programmet med 
+forskellige belÃ¸b. 
 </para></listitem> 
 <listitem><para> 
 Skriv et program, der beregner porto for et brev. Inddata er brevets 
-vægt (i gram). Uddata er prisen for at sende det som A-post i Danmark. 
+vÃ¦gt (i gram). Uddata er prisen for at sende det som A-post i Danmark. 
 </para></listitem> 
 </orderedlist> 
  
 </sect2>    <!--   Opgaver --> 
-</sect1>    <!--   Betinget udførelse --> 
+</sect1>    <!--   Betinget udfÃ¸relse --> 
  
 <sect1 id="java-basal-prg-blok"> 
   <title>Blokke</title> 
@@ -1239,13 +1239,13 @@ En blok er en samling af kommandoer. Den starter med en
 blokstart-parentes { og slutter med en blokslut-parentes}. 
 </para> 
  
-<blockquote><para>En blok grupperer flere kommandoer, så 
-de udføres samlet som &eacute;n kommando</para></blockquote> 
+<blockquote><para>En blok grupperer flere kommandoer, sÃ¥ 
+de udfÃ¸res samlet som &eacute;n kommando</para></blockquote> 
  
 <para> 
 Blokke bruges blandt andet, hvis man vil have mere end 
-førstkommende linje udført i en betingelse. Herunder 
-udføres to kommandoer, hvis betingelsen er opfyldt, og to 
+fÃ¸rstkommende linje udfÃ¸rt i en betingelse. Herunder 
+udfÃ¸res to kommandoer, hvis betingelsen er opfyldt, og to 
 andre, hvis betingelsen ikke er opfyldt: 
 </para> 
  
@@ -1259,12 +1259,12 @@ public class Alder3
  
     if (alder &gt;= 18)  
     <emphasis>{</emphasis> // blokstart 
-      System.out.println("Du er " + alder + " år."); 
+      System.out.println("Du er " + alder + " Ã¥r."); 
       System.out.println("Du er myndig."); 
     <emphasis>}</emphasis> // blokslut  
     else  
     <emphasis>{</emphasis> // blokstart 
-      System.out.println("Du er kun " + alder + " år."); 
+      System.out.println("Du er kun " + alder + " Ã¥r."); 
       System.out.println("Du er ikke myndig."); 
     <emphasis>}</emphasis> // blokslut 
   } 
@@ -1276,7 +1276,7 @@ Resultatet bliver
 </para> 
  
 <screen> 
-Du er kun 15 år. 
+Du er kun 15 Ã¥r. 
 Du er ikke myndig. 
 </screen> 
  
@@ -1284,21 +1284,21 @@ Du er ikke myndig.
   <title>Indrykning</title> 
  
 <para> 
-Læg mærke til, hvordan programkoden i blokkene i ovenstående eksempel 
-er rykket lidt ind. Det gør det lettere for programmøren at overskue 
-koden, så han/hun kan se, hvilken {-parentes der hører sammen med 
+LÃ¦g mÃ¦rke til, hvordan programkoden i blokkene i ovenstÃ¥ende eksempel 
+er rykket lidt ind. Det gÃ¸r det lettere for programmÃ¸ren at overskue 
+koden, sÃ¥ han/hun kan se, hvilken {-parentes der hÃ¸rer sammen med 
 hvilken }-parentes. 
 </para> 
  
 <blockquote><para>Det er god skik at bruge indrykning i 
 en blok</para></blockquote> 
-<blockquote><para>Indrykning gør programmet meget 
+<blockquote><para>Indrykning gÃ¸r programmet meget 
 nemmere at overskue</para></blockquote> 
  
 <para> 
-Her er det samme program uden indrykning. Programmet er sværere at 
-overskue nu (man kunne måske komme til at tro, at de nederste to 
-linjer bliver udført uafhængig af if-sætningen): 
+Her er det samme program uden indrykning. Programmet er svÃ¦rere at 
+overskue nu (man kunne mÃ¥ske komme til at tro, at de nederste to 
+linjer bliver udfÃ¸rt uafhÃ¦ngig af if-sÃ¦tningen): 
 </para> 
  
 <screen> 
@@ -1308,42 +1308,42 @@ public static void main(String[] args)
 alder = 15; 
 if (alder &gt;= 18) 
 { 
-System.out.println("Du er " + alder + " år."); 
+System.out.println("Du er " + alder + " Ã¥r."); 
 System.out.println("Du er myndig"); 
 } else { 
-System.out.println("Du er kun " + alder + " år."); 
+System.out.println("Du er kun " + alder + " Ã¥r."); 
 System.out.println("Du er ikke myndig"); 
 }}} 
 </screen> 
  
 <para> 
-De fleste udviklingsværktøjer har funktioner til at rykke flere 
-linjers kode ind og ud (i JBuilder gøres det ved at markere en tekst, 
+De fleste udviklingsvÃ¦rktÃ¸jer har funktioner til at rykke flere 
+linjers kode ind og ud (i JBuilder gÃ¸res det ved at markere en tekst, 
 og trykke Tab for at rykke ind og skift-Tab for at rykke ud). 
 </para> 
 </sect2>    <!--   Indrykning --> 
 </sect1>    <!--   Blokke --> 
  
 <sect1 id="java-basal-prg-loekke"> 
-  <title>Løkker</title> 
+  <title>LÃ¸kker</title> 
  
 <para> 
-En løkke er en gentaget udførelse af en kommando, igen og igen. Hvor 
-mange gange løkken udføres afhænger af et logisk udtryk. 
+En lÃ¸kke er en gentaget udfÃ¸relse af en kommando, igen og igen. Hvor 
+mange gange lÃ¸kken udfÃ¸res afhÃ¦nger af et logisk udtryk. 
 </para> 
  
 <sect2 id="java-basal-prg-loekke-while"> 
-  <title>while-løkken</title> 
+  <title>while-lÃ¸kken</title> 
  
 <figure id="java-basal-prg-loekke-while-fig"> 
 <title>Logikken 
-  i en while-løkke</title> 
+  i en while-lÃ¸kke</title> 
  
 <graphic fileref="Nordfalk415348.&magic;" scale="60"></graphic> 
 </figure> 
  
 <para> 
-while-løkken har formen: 
+while-lÃ¸kken har formen: 
 </para> 
  
 <screen> 
@@ -1351,9 +1351,9 @@ while-løkken har formen:
 </screen> 
  
 <para> 
-Kommandoen udføres igen og igen mens 
-betingelsen er opfyldt. Dvs. før kommandoen udføres, 
-undersøges betingelsen, og det kontrolleres, at den er opfyldt 
+Kommandoen udfÃ¸res igen og igen mens 
+betingelsen er opfyldt. Dvs. fÃ¸r kommandoen udfÃ¸res, 
+undersÃ¸ges betingelsen, og det kontrolleres, at den er opfyldt 
 (se <xref linkend="java-basal-prg-loekke-while-fig"/>). 
 </para> 
  
@@ -1371,12 +1371,12 @@ public class Alder4
  
     <emphasis>while (alder &lt; 18)</emphasis> 
     <emphasis>{</emphasis> 
-      System.out.println("Du er "+alder+" år. Vent til du bliver ældre."); 
+      System.out.println("Du er "+alder+" Ã¥r. Vent til du bliver Ã¦ldre."); 
       alder = alder + 1; 
-      System.out.println("Tillykke med fødselsdagen!"); 
+      System.out.println("Tillykke med fÃ¸dselsdagen!"); 
     <emphasis>}</emphasis> 
  
-    System.out.println("Nu er du "+alder+" år og myndig."); 
+    System.out.println("Nu er du "+alder+" Ã¥r og myndig."); 
   } 
 } 
 </screen> 
@@ -1386,13 +1386,13 @@ Resultatet bliver
 </para> 
  
 <screen> 
-Du er 15 år. Vent til du bliver ældre. 
-Tillykke med fødselsdagen! 
-Du er 16 år. Vent til du bliver ældre. 
-Tillykke med fødselsdagen! 
-Du er 17 år. Vent til du bliver ældre. 
-Tillykke med fødselsdagen! 
-Nu er du 18 år og myndig. 
+Du er 15 Ã¥r. Vent til du bliver Ã¦ldre. 
+Tillykke med fÃ¸dselsdagen! 
+Du er 16 Ã¥r. Vent til du bliver Ã¦ldre. 
+Tillykke med fÃ¸dselsdagen! 
+Du er 17 Ã¥r. Vent til du bliver Ã¦ldre. 
+Tillykke med fÃ¸dselsdagen! 
+Nu er du 18 Ã¥r og myndig. 
 </screen> 
  
  
@@ -1402,16 +1402,16 @@ Nu er du 18 år og myndig.
 <graphic fileref="Nordfalk415349.&magic;" scale="60"></graphic> 
 </figure> 
 <para> 
-Før løkken starter, har alder en startværdi på 15. Under hvert 
-gennemløb tælles variablen 1 op. På et tidspunkt, når alder er talt 
-op til 18, er betingelsen ikke mere opfyldt, og programudførelsen 
-fortsætter efter løkken. 
+FÃ¸r lÃ¸kken starter, har alder en startvÃ¦rdi pÃ¥ 15. Under hvert 
+gennemlÃ¸b tÃ¦lles variablen 1 op. PÃ¥ et tidspunkt, nÃ¥r alder er talt 
+op til 18, er betingelsen ikke mere opfyldt, og programudfÃ¸relsen 
+fortsÃ¦tter efter lÃ¸kken. 
 </para> 
  
 <para> 
-Med en løkke kan vi lave Kvadratrod-programmet nemmere. I 
+Med en lÃ¸kke kan vi lave Kvadratrod-programmet nemmere. I 
 stedet for at skrive den samme kommando igen og igen kan vi lave 
-en løkke (sammenlign med Kvadratrod <xref linkend="java-basal-prg-variable-matematik"/>). 
+en lÃ¸kke (sammenlign med Kvadratrod <xref linkend="java-basal-prg-variable-matematik"/>). 
 </para> 
  
 <screen> 
@@ -1451,13 +1451,13 @@ kvadratroden af 10 er 3.1622776601683795
  
  
 <para> 
-En tællevariabel er en variabel, der tælles op i en løkke, indtil den 
-når en bestemt øvre grænse.  I eksemplerne ovenfor bruges alder og n 
-som tællevariabler. 
+En tÃ¦llevariabel er en variabel, der tÃ¦lles op i en lÃ¸kke, indtil den 
+nÃ¥r en bestemt Ã¸vre grÃ¦nse.  I eksemplerne ovenfor bruges alder og n 
+som tÃ¦llevariabler. 
 </para> 
  
 <para> 
-Herunder udskriver vi 7-tabellen ved hjælp af tællevariablen n: 
+Herunder udskriver vi 7-tabellen ved hjÃ¦lp af tÃ¦llevariablen n: 
 </para> 
  
 <figure id="java-basal-prg-loekke-while-syvtabel-fig"> 
@@ -1501,17 +1501,17 @@ Resultatet bliver
 </screen> 
  
 <para> 
-Tællevariabel-formen er den mest almindelige for løkker, men man kan 
-sagtens komme ud for andre former for løkker. Der kan f.eks. godt 
-indgå et regneudtryk i betingelsen. 
+TÃ¦llevariabel-formen er den mest almindelige for lÃ¸kker, men man kan 
+sagtens komme ud for andre former for lÃ¸kker. Der kan f.eks. godt 
+indgÃ¥ et regneudtryk i betingelsen. 
 </para> 
-</sect2>    <!--   while-løkken --> 
+</sect2>    <!--   while-lÃ¸kken --> 
  
 <sect2 id="java-basal-prg-loekke-for"> 
-  <title>for-løkken</title> 
+  <title>for-lÃ¸kken</title> 
  
 <para> 
-For-løkken er specielt velegnet til løkker med en tællevariabel. Den 
+For-lÃ¸kken er specielt velegnet til lÃ¸kker med en tÃ¦llevariabel. Den 
 har formen 
 </para> 
  
@@ -1522,43 +1522,43 @@ for (<emphasis>initialisering</emphasis>;
 </screen> 
  
 <figure id="java-basal-prg-loekke-for-fig"> 
-<title>Strukturen i en for-løkke</title> 
+<title>Strukturen i en for-lÃ¸kke</title> 
 <graphic fileref="Nordfalk415351.&magic;" scale="60"></graphic> 
 </figure> 
  
 <itemizedlist mark="bullet"> 
 <listitem><para> 
-<emphasis>initialisering</emphasis> er en (evt.: erklæring og) 
-tildeling af en tællevariabel, f.eks. <literal>alder = 15</literal> 
+<emphasis>initialisering</emphasis> er en (evt.: erklÃ¦ring og) 
+tildeling af en tÃ¦llevariabel, f.eks. <literal>alder = 15</literal> 
 </para></listitem> 
 <listitem><para> 
 <emphasis>betingelse</emphasis> er et logisk udtryk, der angiver 
-  betingelsen for, at løkken skal fortsætte med at 
-  blive udført,  f.eks. <literal>alder 
+  betingelsen for, at lÃ¸kken skal fortsÃ¦tte med at 
+  blive udfÃ¸rt,  f.eks. <literal>alder 
   &lt; 18</literal> 
 </para></listitem> 
 <listitem><para> 
-<emphasis>opdatering</emphasis> er ændringen i tællevariablen, 
+<emphasis>opdatering</emphasis> er Ã¦ndringen i tÃ¦llevariablen, 
     f.eks. <literal>alder = alder + 1</literal> 
 </para></listitem> 
 </itemizedlist> 
  
 <para> 
-Det kan indenad læses som &quot;for <emphasis>startværdi</emphasis>, 
-så længe <emphasis>betingelse</emphasis> udfør: 
+Det kan indenad lÃ¦ses som &quot;for <emphasis>startvÃ¦rdi</emphasis>, 
+sÃ¥ lÃ¦nge <emphasis>betingelse</emphasis> udfÃ¸r: 
 <emphasis>kommando</emphasis> og 
 <emphasis>opdatering</emphasis>&quot;, f.eks. &quot;for 
-<emphasis>alder = 15</emphasis>, så længe <emphasis>alder &lt; 
-18</emphasis> udfør: <emphasis>Skriv &quot;du er..&quot;</emphasis> og 
-<emphasis>tæl alder 1 op&quot;</emphasis>. 
+<emphasis>alder = 15</emphasis>, sÃ¥ lÃ¦nge <emphasis>alder &lt; 
+18</emphasis> udfÃ¸r: <emphasis>Skriv &quot;du er..&quot;</emphasis> og 
+<emphasis>tÃ¦l alder 1 op&quot;</emphasis>. 
 </para> 
  
 <para> 
-En for-løkke og en while-løkke supplerer hinanden.  De har præcis 
-samme funktion, men for-løkken er mere kompakt og bekvem, når man 
-ønsker at lave en almindelig løkke, der udføres et bestemt antal 
-gange. Dette program gør det samme som Syvtabel-eksemplet, men med en 
-for-løkke: 
+En for-lÃ¸kke og en while-lÃ¸kke supplerer hinanden.  De har prÃ¦cis 
+samme funktion, men for-lÃ¸kken er mere kompakt og bekvem, nÃ¥r man 
+Ã¸nsker at lave en almindelig lÃ¸kke, der udfÃ¸res et bestemt antal 
+gange. Dette program gÃ¸r det samme som Syvtabel-eksemplet, men med en 
+for-lÃ¸kke: 
 </para> 
  
 <figure id="java-basal-prg-loekke-for-syvtabel2-fig"> 
@@ -1581,32 +1581,32 @@ public class Syvtabel2
  
  
 <para> 
-Programmører er dovne væsner og bruger ofte 
-for-løkken til optælling, fordi der skal skrives 
-mindre end i en while-løkke. 
+ProgrammÃ¸rer er dovne vÃ¦sner og bruger ofte 
+for-lÃ¸kken til optÃ¦lling, fordi der skal skrives 
+mindre end i en while-lÃ¸kke. 
 </para> 
  
 <para> 
-Man ser også ofte, at de bruger operatoren ++ til at tælle 
-en variabel op i en løkke: "alder++" svarer 
-altså til "alder=alder+1", men med mindre 
-skrivearbejde. Tilsvarende findes --, som tæller en variabel en 
+Man ser ogsÃ¥ ofte, at de bruger operatoren ++ til at tÃ¦lle 
+en variabel op i en lÃ¸kke: "alder++" svarer 
+altsÃ¥ til "alder=alder+1", men med mindre 
+skrivearbejde. Tilsvarende findes --, som tÃ¦ller en variabel en 
 ned, f.eks. alder--. 
 </para> 
-</sect2>    <!--   for-løkken --> 
+</sect2>    <!--   for-lÃ¸kken --> 
  
 <sect2 id="java-basal-prg-loekke-indlejrede"> 
-  <title>Indlejrede løkker</title> 
+  <title>Indlejrede lÃ¸kker</title> 
  
 <para> 
-En betingelse eller en løkke kan stå ethvert sted i 
-en metode, og altså også inden i en anden løkke 
+En betingelse eller en lÃ¸kke kan stÃ¥ ethvert sted i 
+en metode, og altsÃ¥ ogsÃ¥ inden i en anden lÃ¸kke 
 eller en betingelse. 
 </para> 
  
 <para> 
 Herunder har vi syvtabellen igen, men denne gang "brokker" 
-programmet sig, når det når op på 6, og efter 8 
+programmet sig, nÃ¥r det nÃ¥r op pÃ¥ 6, og efter 8 
 skriver den "ved ikke" i stedet for at regne resultatet ud. 
 </para> 
  
@@ -1615,9 +1615,9 @@ public class Syvtabel3
 { 
   public static void main(String[] args)  
   { 
-    <emphasis>for (int n=1; n&lt;=10; n++)</emphasis>  // n++ gør det samme som n=n+1 
+    <emphasis>for (int n=1; n&lt;=10; n++)</emphasis>  // n++ gÃ¸r det samme som n=n+1 
     { 
-      <emphasis>if (n == 6)</emphasis> System.out.println("puha, nu bliver det svært."); 
+      <emphasis>if (n == 6)</emphasis> System.out.println("puha, nu bliver det svÃ¦rt."); 
  
       <emphasis>if (n &lt; 8)  </emphasis> System.out.println(n+" : "+ 7*n); 
       <emphasis>else</emphasis> System.out.println(n+" : (ved ikke)"); 
@@ -1636,7 +1636,7 @@ Resultatet bliver
 3 : 21 
 4 : 28 
 5 : 35 
-puha, nu bliver det svært. 
+puha, nu bliver det svÃ¦rt. 
 6 : 42 
 7 : 49 
 8 : (ved ikke) 
@@ -1646,8 +1646,8 @@ puha, nu bliver det svært.
  
  
 <para> 
-Vi kan også lave løkker i løkker. Herunder 
-udregner vi n*7 ved at lægge 7 sammen n gange. 
+Vi kan ogsÃ¥ lave lÃ¸kker i lÃ¸kker. Herunder 
+udregner vi n*7 ved at lÃ¦gge 7 sammen n gange. 
 </para> 
  
 <screen> 
@@ -1682,22 +1682,22 @@ Resultatet bliver
 9 : 63 
 10 : 70 
 </screen> 
-</sect2>    <!--   Indlejrede løkker --> 
+</sect2>    <!--   Indlejrede lÃ¸kker --> 
  
 <sect2 id="java-basal-prg-loekke-uendelig"> 
-  <title>Uendelige løkker</title> 
+  <title>Uendelige lÃ¸kker</title> 
  
 <para> 
-Hvis programmøren ikke er omhyggelig, kan han komme til at lave en 
-løkke, hvor betingelsen vedbliver at være sand. Så bliver 
-programudførelsen i løkken i al evighed (eller indtil brugeren 
+Hvis programmÃ¸ren ikke er omhyggelig, kan han komme til at lave en 
+lÃ¸kke, hvor betingelsen vedbliver at vÃ¦re sand. SÃ¥ bliver 
+programudfÃ¸relsen i lÃ¸kken i al evighed (eller indtil brugeren 
 afbryder programmet). 
 </para> 
  
 <para> 
-Lad os f.eks. sige, at programmøren er kommet til at skrive '-' i 
-stedet for '+' i opdateringen af n i while-løkken fra 
-Syvtabel-programmet. Nu vil computeren tælle nedad: 
+Lad os f.eks. sige, at programmÃ¸ren er kommet til at skrive '-' i 
+stedet for '+' i opdateringen af n i while-lÃ¸kken fra 
+Syvtabel-programmet. Nu vil computeren tÃ¦lle nedad: 
 </para> 
  
 <screen> 
@@ -1725,13 +1725,13 @@ Resultatet bliver
 </screen> 
  
 <para> 
-... og så videre i det uendelige. Løkken vil aldrig stoppe, fordi n 
-vedbliver at være mindre end 10. 
+... og sÃ¥ videre i det uendelige. LÃ¸kken vil aldrig stoppe, fordi n 
+vedbliver at vÃ¦re mindre end 10. 
 </para> 
  
 <para> 
-En anden faldgrube er at komme til at sætte et semikolon efter en 
-while-løkke: 
+En anden faldgrube er at komme til at sÃ¦tte et semikolon efter en 
+while-lÃ¸kke: 
 </para> 
  
 <screen> 
@@ -1739,68 +1739,68 @@ while-løkke:
 </screen> 
  
 <para> 
-Oversætteren vil tro, at der ikke er nogen kommando, der skal udføres, 
-og blot undersøge betingelsen igen og igen og igen og igen... Da n 
-ikke ændrer sig, vil programmet aldrig stoppe. 
+OversÃ¦tteren vil tro, at der ikke er nogen kommando, der skal udfÃ¸res, 
+og blot undersÃ¸ge betingelsen igen og igen og igen og igen... Da n 
+ikke Ã¦ndrer sig, vil programmet aldrig stoppe. 
 </para> 
  
 <para> 
-Det er programmørens ansvar at sikre, at betingelsen i en løkke på et 
-tidspunkt ikke mere opfyldes, så programmet ikke går i uendelig løkke. 
+Det er programmÃ¸rens ansvar at sikre, at betingelsen i en lÃ¸kke pÃ¥ et 
+tidspunkt ikke mere opfyldes, sÃ¥ programmet ikke gÃ¥r i uendelig lÃ¸kke. 
 </para> 
-</sect2>    <!--   Uendelige løkker --> 
+</sect2>    <!--   Uendelige lÃ¸kker --> 
  
 <sect2 id="java-basal-prg-loekke-opgaver"> 
   <title>Opgaver</title> 
 <orderedlist> 
 <listitem><para> 
-Prøv at køre hvert eksempel, og forvis dig om, at du forstår det.Mange 
-udviklingsværktøjer understøtter trinvis gennemgang til fejlfinding 
-(eng.: debugging). Prøv trinvis gennemgang i dit værktøj, og hold øje 
-med variablerne. (I JBuilder og JDeveloper gøres det med F8 "step 
+PrÃ¸v at kÃ¸re hvert eksempel, og forvis dig om, at du forstÃ¥r det.Mange 
+udviklingsvÃ¦rktÃ¸jer understÃ¸tter trinvis gennemgang til fejlfinding 
+(eng.: debugging). PrÃ¸v trinvis gennemgang i dit vÃ¦rktÃ¸j, og hold Ã¸je 
+med variablerne. (I JBuilder og JDeveloper gÃ¸res det med F8 "step 
 over"). 
 </para></listitem> 
 <listitem><para> 
-Omskriv Alder4-programmet til at bruge en for-løkke. 
+Omskriv Alder4-programmet til at bruge en for-lÃ¸kke. 
 </para></listitem> 
 <listitem><para> 
-Lav et program, der tæller nedad fra 10 til 1. 
+Lav et program, der tÃ¦ller nedad fra 10 til 1. 
 </para></listitem> 
 <listitem><para> 
-Lav et program, der udregner værdien af 1+2+3+ ... +20. 
+Lav et program, der udregner vÃ¦rdien af 1+2+3+ ... +20. 
 </para></listitem> 
 <listitem><para> 
-Ret programmet til at udregne værdierne af 1+2+3+ ...  +n, når n er 
-10, 11, .. 30 (vink: brug en indlejret løkke). 
+Ret programmet til at udregne vÃ¦rdierne af 1+2+3+ ...  +n, nÃ¥r n er 
+10, 11, .. 30 (vink: brug en indlejret lÃ¸kke). 
 </para></listitem> 
 <listitem><para> 
 Lav et program, der udskriver 1-tabellen, 2-tabellen, .. op 
 til 10-tabellen. 
 </para></listitem> 
 <listitem><para> 
-Skriv et program, som for ligningen y=3*x*x+6*x+9 udskriver værdierne 
+Skriv et program, som for ligningen y=3*x*x+6*x+9 udskriver vÃ¦rdierne 
 af y for x=0, x=1,x= 2, x=3 ... x=10. Ret det derefter til at skrive 
 ud for x=0,x=10,x=20,x=30...x=100. 
 </para></listitem> 
 </orderedlist> 
 </sect2>    <!--   Opgaver --> 
-</sect1>    <!--   Løkker --> 
+</sect1>    <!--   LÃ¸kker --> 
  
 <sect1 id="java-basal-prg-typekonv"> 
-  <title>Værditypekonvertering</title> 
+  <title>VÃ¦rditypekonvertering</title> 
  
 <para> 
-Java er det, man kalder et stærkt typet sprog. Det betyder, at alle 
-variabler og værdier har en bestemt type gennem hele deres levetid, og 
-at der er visse begrænsninger for, hvilke værdier man kan tildele en 
-variabel. Når man først har vænnet sig til det, er det en stor hjælp, 
-fordi oversætteren på denne måde ofte fanger fejl i 
-programmerne. Desuden gør det, at computeren hurtigere kan udføre 
+Java er det, man kalder et stÃ¦rkt typet sprog. Det betyder, at alle 
+variabler og vÃ¦rdier har en bestemt type gennem hele deres levetid, og 
+at der er visse begrÃ¦nsninger for, hvilke vÃ¦rdier man kan tildele en 
+variabel. NÃ¥r man fÃ¸rst har vÃ¦nnet sig til det, er det en stor hjÃ¦lp, 
+fordi oversÃ¦tteren pÃ¥ denne mÃ¥de ofte fanger fejl i 
+programmerne. Desuden gÃ¸r det, at computeren hurtigere kan udfÃ¸re 
 beregninger. 
 </para> 
  
 <para> 
-I Java kan man f.eks. ikke lægge en double-værdi ind i en 
+I Java kan man f.eks. ikke lÃ¦gge en double-vÃ¦rdi ind i en 
 int-variabel: 
 </para> 
  
@@ -1810,14 +1810,14 @@ x=2.7;  // Fejl.
 </screen> 
  
 <para> 
-Forsøger man på dette, vil man få oversætter-fejlen: 
+ForsÃ¸ger man pÃ¥ dette, vil man fÃ¥ oversÃ¦tter-fejlen: 
 <emphasis>Possible loss of precision: double, required: 
 int</emphasis>. 
 </para> 
  
 <para> 
-&Aring;rsagen til, at vi i Java ikke kan gemme 2.7 i x, kan forstås på 
-to måder: 
+&Aring;rsagen til, at vi i Java ikke kan gemme 2.7 i x, kan forstÃ¥s pÃ¥ 
+to mÃ¥der: 
 </para> 
  
 <orderedlist> 
@@ -1826,40 +1826,40 @@ x har kun plads i lageret til at gemme hele tal (fra -2 mia.
 til +2 mia). 
 </para></listitem> 
 <listitem><para> 
-x er erklæret som en int, og skal derfor blive ved med at være en 
-int. I de efterfølgende beregninger kan det have stor betydning, om x 
-har en kommadel. Programmøren skal derfor kunne se på, hvordan x er 
-erklæret, og derefter være helt sikker på, hvilke værdier x kan 
+x er erklÃ¦ret som en int, og skal derfor blive ved med at vÃ¦re en 
+int. I de efterfÃ¸lgende beregninger kan det have stor betydning, om x 
+har en kommadel. ProgrammÃ¸ren skal derfor kunne se pÃ¥, hvordan x er 
+erklÃ¦ret, og derefter vÃ¦re helt sikker pÃ¥, hvilke vÃ¦rdier x kan 
 indeholde. 
 </para></listitem> 
 </orderedlist> 
  
 <para> 
-Begge måder at forstå årsagen på er 
+Begge mÃ¥der at forstÃ¥ Ã¥rsagen pÃ¥ er 
 rigtige og gyldige. 
 </para> 
  
 <para> 
-For at kunne gemme 2.7 i x bliver man derfor nødt til at lave 2.7 om 
-til en int-værdi. Det kaldes at typekonvertere værdien. Dette er ikke 
-helt uden problemer. Der er åbenlyst et informationstab, da kommadelen 
-af værdien må fjernes.  Derudover kunne double-værdien være 5 mia. i 
+For at kunne gemme 2.7 i x bliver man derfor nÃ¸dt til at lave 2.7 om 
+til en int-vÃ¦rdi. Det kaldes at typekonvertere vÃ¦rdien. Dette er ikke 
+helt uden problemer. Der er Ã¥benlyst et informationstab, da kommadelen 
+af vÃ¦rdien mÃ¥ fjernes.  Derudover kunne double-vÃ¦rdien vÃ¦re 5 mia. i 
 stedet for 2.7, og det er der ikke plads til i en int. Et tredje 
-problem er, at man skal vælge, hvordan man vil udføre 
+problem er, at man skal vÃ¦lge, hvordan man vil udfÃ¸re 
 konverteringen. Skal man afrunde korrekt til 3, eller nedrunde til 2? 
-Det første tager lidt mere tid end det sidste. 
+Det fÃ¸rste tager lidt mere tid end det sidste. 
 </para> 
  
 <para> 
-Af disse årsager bliver man i nogle tilfælde nødt til eksplicit at 
-fortælle oversætteren, at den skal foretage en værdi-typekonvertering. 
+Af disse Ã¥rsager bliver man i nogle tilfÃ¦lde nÃ¸dt til eksplicit at 
+fortÃ¦lle oversÃ¦tteren, at den skal foretage en vÃ¦rdi-typekonvertering. 
 </para> 
  
 <sect2 id="java-basal-prg-typekonv-explicit"> 
-  <title>Eksplicit værdi-typekonvertering</title> 
+  <title>Eksplicit vÃ¦rdi-typekonvertering</title> 
  
 <para> 
-Man konverterer en værdi til en anden type ved at skrive det 
+Man konverterer en vÃ¦rdi til en anden type ved at skrive det 
 eksplicit (eng.: cast) med: 
 </para> 
  
@@ -1869,47 +1869,47 @@ x = (int) 2.7;
 </screen> 
  
 <para> 
-Inde i parentesen skriver man typen, som værdien lige til højre skal 
+Inde i parentesen skriver man typen, som vÃ¦rdien lige til hÃ¸jre skal 
 konverteres til. Denne form for typekonvertering runder altid ned til 
-nærmeste hele tal. 
+nÃ¦rmeste hele tal. 
 </para> 
-</sect2>    <!--   Eksplicit værdi-typekonvertering --> 
+</sect2>    <!--   Eksplicit vÃ¦rdi-typekonvertering --> 
  
 <sect2 id="java-basal-prg-typekonv-implicit"> 
-  <title>Implicit værdi-typekonvertering</title> 
+  <title>Implicit vÃ¦rdi-typekonvertering</title> 
  
 <para> 
-Implicit typekonvertering betyder, at oversætteren selv 
-laver konverteringen, uden at programmøren behøver at 
-skrive noget særligt om, at den skal gøre det. 
+Implicit typekonvertering betyder, at oversÃ¦tteren selv 
+laver konverteringen, uden at programmÃ¸ren behÃ¸ver at 
+skrive noget sÃ¦rligt om, at den skal gÃ¸re det. 
 </para> 
  
 <screen> 
 double y; 
-y=4;   // OK: Implicit værdi-typekonvertering. 
+y=4;   // OK: Implicit vÃ¦rdi-typekonvertering. 
 </screen> 
  
 <para> 
-Selvom 4 er en int-værdi, kan y godt indeholde den, da den 
-svarer til double-værdien 4.0. Denne form for typekonvertering 
-er således ikke nær så problematisk som i det 
+Selvom 4 er en int-vÃ¦rdi, kan y godt indeholde den, da den 
+svarer til double-vÃ¦rdien 4.0. Denne form for typekonvertering 
+er sÃ¥ledes ikke nÃ¦r sÃ¥ problematisk som i det 
 tidligere eksempel. 
 </para> 
  
 <para> 
-En tommelfingerregel i Java er, at når modtagertypen kan 
-indeholde hele intervallet af mulige værdier for afsendertypen, 
-kan den være implicit. I appendikset sidst i dette kapitel 
+En tommelfingerregel i Java er, at nÃ¥r modtagertypen kan 
+indeholde hele intervallet af mulige vÃ¦rdier for afsendertypen, 
+kan den vÃ¦re implicit. I appendikset sidst i dette kapitel 
 findes en tabel over typerne. 
 </para> 
-</sect2>    <!--   Implicit værdi-typekonvertering --> 
+</sect2>    <!--   Implicit vÃ¦rdi-typekonvertering --> 
  
 <sect2 id="java-basal-prg-typekonv-misconception"> 
-  <title>Misforståelser af værdi-typekonvertering</title> 
+  <title>MisforstÃ¥elser af vÃ¦rdi-typekonvertering</title> 
  
 <para> 
-Bemærk, at det kun er <emphasis>værdien</emphasis>, der bliver 
-konverteret. Variablen bliver ikke ændret. 
+BemÃ¦rk, at det kun er <emphasis>vÃ¦rdien</emphasis>, der bliver 
+konverteret. Variablen bliver ikke Ã¦ndret. 
 </para> 
  
 <screen> 
@@ -1918,7 +1918,7 @@ double y;
 y=2.7; 
 <emphasis>x=(int)y</emphasis>;              // punkt A 
 System.out.println(x); 
-System.out.println(y); // y er upåvirket af typekonverteringen 
+System.out.println(y); // y er upÃ¥virket af typekonverteringen 
 </screen> 
  
 <para> 
@@ -1931,62 +1931,62 @@ Resultatet bliver
 </screen> 
  
 <para> 
-Man kunne måske fristes til at tro, at i punkt A konverteres variablen 
-y til en variabel af typen int, men det ville så betyde, at den sidste 
-linje i uddata skulle være 2. Men husk at: 
+Man kunne mÃ¥ske fristes til at tro, at i punkt A konverteres variablen 
+y til en variabel af typen int, men det ville sÃ¥ betyde, at den sidste 
+linje i uddata skulle vÃ¦re 2. Men husk at: 
 </para> 
  
 <blockquote><para>En variabels type er altid som den er 
-erklæret - den kan ikke ændre type</para></blockquote> 
+erklÃ¦ret - den kan ikke Ã¦ndre type</para></blockquote> 
  
 <para> 
-Det der sker i ovenstående er, at y's værdi (2.7) læses, en 
-konverteret værdi (2) beregnes og denne værdi lægges ind i x. 
+Det der sker i ovenstÃ¥ende er, at y's vÃ¦rdi (2.7) lÃ¦ses, en 
+konverteret vÃ¦rdi (2) beregnes og denne vÃ¦rdi lÃ¦gges ind i x. 
 </para> 
  
 <para> 
-En anden misforståelse er at tro, at oversætteren kan se at noget er 
-lovligt ud fra de øvrige programlinjer, f.eks.: 
+En anden misforstÃ¥else er at tro, at oversÃ¦tteren kan se at noget er 
+lovligt ud fra de Ã¸vrige programlinjer, f.eks.: 
 </para> 
  
 <screen> 
 int x; 
 double y; 
 y=4.0; 
-x=y;    // Fejl - her stopper oversætteren med "Possible loss of precision" 
+x=y;    // Fejl - her stopper oversÃ¦tteren med "Possible loss of precision" 
 </screen> 
  
  
 <para> 
-I ovenstående tilfælde kunne man tro, at man kan bruge implicit 
-typekonvertering, fordi oversætteren kan se at y altid er 4.0, og at 
-der derfor ikke går information tabt. Men så klog er oversætteren 
-ikke. Når den skal afgøre, om den kan lave implicit typekonvertering, 
-kigger den <emphasis>kun</emphasis> på typerne af variabler og 
-værdier. Den skeler ikke til resten af programmet. 
+I ovenstÃ¥ende tilfÃ¦lde kunne man tro, at man kan bruge implicit 
+typekonvertering, fordi oversÃ¦tteren kan se at y altid er 4.0, og at 
+der derfor ikke gÃ¥r information tabt. Men sÃ¥ klog er oversÃ¦tteren 
+ikke. NÃ¥r den skal afgÃ¸re, om den kan lave implicit typekonvertering, 
+kigger den <emphasis>kun</emphasis> pÃ¥ typerne af variabler og 
+vÃ¦rdier. Den skeler ikke til resten af programmet. 
 </para> 
-</sect2>    <!--   Misforståelser af værdi-typekonvertering --> 
-</sect1>    <!--   Værditypekonvertering --> 
+</sect2>    <!--   MisforstÃ¥elser af vÃ¦rdi-typekonvertering --> 
+</sect1>    <!--   VÃ¦rditypekonvertering --> 
  
 <sect1 id="java-basal-prg-fejl"> 
   <title>Fejl</title> 
  
 <para> 
-Som sagt udfører computeren programmet instruktion  
- som en kogebogsopskrift. Computeren forstår 
-ikke programmet, men udfører blot det, programmøren 
+Som sagt udfÃ¸rer computeren programmet instruktion  
+ som en kogebogsopskrift. Computeren forstÃ¥r 
+ikke programmet, men udfÃ¸rer blot det, programmÃ¸ren 
 (kogebogsforfatteren) har skrevet. 
 </para> 
  
 <sect2 id="java-basal-prg-fejl-logiske"> 
-  <title>Indholdsmæssige (logiske) fejl</title> 
+  <title>IndholdsmÃ¦ssige (logiske) fejl</title> 
  
 <para> 
-Da maskinen ikke forstår programmet, kan den heller ikke 
-rette op på fejlene i programmørens opskrift eller 
-forstå, hvad programmøren "mener" med det, han 
-skrev. Man kan altså sagtens komme til at lave et program, der 
-gør noget andet end det, der var tilsigtet: 
+Da maskinen ikke forstÃ¥r programmet, kan den heller ikke 
+rette op pÃ¥ fejlene i programmÃ¸rens opskrift eller 
+forstÃ¥, hvad programmÃ¸ren "mener" med det, han 
+skrev. Man kan altsÃ¥ sagtens komme til at lave et program, der 
+gÃ¸r noget andet end det, der var tilsigtet: 
 </para> 
  
 <screen> 
@@ -2013,30 +2013,30 @@ Hej Verdne!
 <para> 
 Dette eksempel har en stavefejl og en forkert udregning. I  
 <xref linkend="java-basal-prg-loekke-uendelig"/> 
-om uendelige løkker så vi en anden fejl, der 
-gjorde, at programmet aldrig stoppede. Et andet eksempel kunne være 
-et skatteprogram, der glemmer at tage højde for bundfradraget. 
+om uendelige lÃ¸kker sÃ¥ vi en anden fejl, der 
+gjorde, at programmet aldrig stoppede. Et andet eksempel kunne vÃ¦re 
+et skatteprogram, der glemmer at tage hÃ¸jde for bundfradraget. 
 </para> 
-</sect2>    <!--   Indholdsmæssige (logiske) fejl --> 
+</sect2>    <!--   IndholdsmÃ¦ssige (logiske) fejl --> 
  
 <sect2 id="java-basal-prg-fejl-sproglige"> 
   <title>Sproglige fejl</title> 
  
 <para> 
-Mens computeren ikke har mulighed for at finde indholdsmæssige fejl i 
-programmerne, kan den godt finde sproglige og syntaksmæssige 
-problemer, dvs. hvis kildeteksten gør brug af ukendte variable eller 
+Mens computeren ikke har mulighed for at finde indholdsmÃ¦ssige fejl i 
+programmerne, kan den godt finde sproglige og syntaksmÃ¦ssige 
+problemer, dvs. hvis kildeteksten gÃ¸r brug af ukendte variable eller 
 metoder eller ikke er gyldig i forhold til sprogets syntaks (den 
 formelle definition af, hvordan man skriver javakode). 
 </para> 
  
 <para> 
-Hvis der er sproglige fejl i kildeteksten, kan den ikke oversættes til 
-bytekode, så man kan altså overhovedet ikke komme til at prøve sit 
-program. De følgende instruktioner er alle forkerte, og vil blive 
-fanget under oversættelsen af programmet. Ofte kan fejlmeddelelsen 
-overraske lidt, men med lidt øvelse kan man lære at forstå den 
-"firkantede", måde som computeren "tænker" på: 
+Hvis der er sproglige fejl i kildeteksten, kan den ikke oversÃ¦ttes til 
+bytekode, sÃ¥ man kan altsÃ¥ overhovedet ikke komme til at prÃ¸ve sit 
+program. De fÃ¸lgende instruktioner er alle forkerte, og vil blive 
+fanget under oversÃ¦ttelsen af programmet. Ofte kan fejlmeddelelsen 
+overraske lidt, men med lidt Ã¸velse kan man lÃ¦re at forstÃ¥ den 
+"firkantede", mÃ¥de som computeren "tÃ¦nker" pÃ¥: 
 </para> 
  
 <screen> 
@@ -2045,9 +2045,9 @@ overraske lidt, men med lidt øvelse kan man lære at forstå den
  
 <para> 
 Her mangler en slut-&quot; til at markere, hvor strengen stopper. 
-Oversætteren skriver <emphasis>unclosed character 
+OversÃ¦tteren skriver <emphasis>unclosed character 
 literal</emphasis>. Den kan ikke regne ud, at strengen slutter lige 
-før ')'. 
+fÃ¸r ')'. 
 </para> 
  
 <screen> 
@@ -2056,7 +2056,7 @@ System.out.pintln("Hej verden!");
  
 <para> 
  
-Kaldet til println er stavet forkert. Oversætteren skriver 
+Kaldet til println er stavet forkert. OversÃ¦tteren skriver 
 <emphasis>method pintln(java.lang.String) not found in class 
 java.io.PrintStream</emphasis>. Den kan ikke finde ud af, at man mener 
 p<emphasis>r</emphasis>intln (med r) i stedet for pintln. 
@@ -2068,9 +2068,9 @@ system.out.println("Hej verden!");
  
 <para> 
  
-System er stavet forkert (med småt). Oversætteren skriver 
+System er stavet forkert (med smÃ¥t). OversÃ¦tteren skriver 
 <emphasis>cannot access class system.out; neither class nor source found for 
-system.out</emphasis>. Den skelner mellem store og små bogstaver og 
+system.out</emphasis>. Den skelner mellem store og smÃ¥ bogstaver og 
 kan ikke se, at man mener System (med stort) i stedet for system. 
 </para> 
  
@@ -2083,41 +2083,41 @@ System.out.println(Hej verden!);
 <para> 
  
 Der mangler &quot; til at markere, hvor strengen starter og slutter. 
-Oversætteren skriver <emphasis>')' expected</emphasis> og peger lige 
-efter Hej. Den forstår ikke at "Hej verden!" er en tekststreng, når 
+OversÃ¦tteren skriver <emphasis>')' expected</emphasis> og peger lige 
+efter Hej. Den forstÃ¥r ikke at "Hej verden!" er en tekststreng, nÃ¥r 
 &quot;-tegnene mangler, og mener derfor, at 'Hej' og 'verden!' skal 
 behandles adskilt. 
 </para> 
  
 <para> 
-Når man skal finde en fejl, gælder det om at nærlæse fejlmeddelelsen 
+NÃ¥r man skal finde en fejl, gÃ¦lder det om at nÃ¦rlÃ¦se fejlmeddelelsen 
 og programkoden omkring stedet, hvor fejlen er, og at huske, at 
-computeren følger faste regler, men ikke forstår hvad der 
-foregår. F.eks. er den sidste fejlmeddelelse <emphasis>')' 
-expected</emphasis> ikke særlig sigende, da fejlen formentlig er, at 
+computeren fÃ¸lger faste regler, men ikke forstÃ¥r hvad der 
+foregÃ¥r. F.eks. er den sidste fejlmeddelelse <emphasis>')' 
+expected</emphasis> ikke sÃ¦rlig sigende, da fejlen formentlig er, at 
 der mangler &quot;-tegn. 
 </para> 
  
 <para> 
-Det kan være banaliteter, der er årsag til sprogfejl. 
+Det kan vÃ¦re banaliteter, der er Ã¥rsag til sprogfejl. 
 Det giver ofte anledning til sprogfejl, at folk glemmer, at der er 
-forskel på store og små bogstaver. 
+forskel pÃ¥ store og smÃ¥ bogstaver. 
 </para> 
  
-<blockquote><para>Java skelner altid mellem store og små 
+<blockquote><para>Java skelner altid mellem store og smÃ¥ 
 bogstaver</para></blockquote> 
 <blockquote><para>Det er god stil konsekvent at skrive 
-klassenavne med stort og variabler og metoder med småt</para></blockquote> 
+klassenavne med stort og variabler og metoder med smÃ¥t</para></blockquote> 
 </sect2>    <!--   Sproglige fejl --> 
  
 <sect2 id="java-basal-prg-fejl-koeretid"> 
-  <title>Køretidsfejl</title> 
+  <title>KÃ¸retidsfejl</title> 
  
 <para> 
-Visse fejl opstår først ved udførelsen af 
-programmet. Selvom alting er syntaktisk korrekt, opstår der 
-alligevel en undtagelse fra den normale programudførelse. 
-Herunder ses et program, der stopper på grund af division med 
+Visse fejl opstÃ¥r fÃ¸rst ved udfÃ¸relsen af 
+programmet. Selvom alting er syntaktisk korrekt, opstÃ¥r der 
+alligevel en undtagelse fra den normale programudfÃ¸relse. 
+Herunder ses et program, der stopper pÃ¥ grund af division med 
 0. 
 </para> 
  
@@ -2143,12 +2143,12 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 </screen> 
  
 <para> 
-Køretidsfejl forårsager, at der opstår en 
-undtagelse (eng.: exception), som, hvis den ikke håndteres, 
-stopper programudførelsen (populært: programmet går 
+KÃ¸retidsfejl forÃ¥rsager, at der opstÃ¥r en 
+undtagelse (eng.: exception), som, hvis den ikke hÃ¥ndteres, 
+stopper programudfÃ¸relsen (populÃ¦rt: programmet gÃ¥r 
 ned). Dette vil blive behandlet grundigere i kapitlet om undtagelser. 
 </para> 
-</sect2>    <!--   Køretidsfejl --> 
+</sect2>    <!--   KÃ¸retidsfejl --> 
 </sect1>    <!--   Fejl --> 
  
 <sect1 id="java-basal-prg-opgaver"> 
@@ -2159,38 +2159,38 @@ ned). Dette vil blive behandlet grundigere i kapitlet om undtagelser.
  
 <para> 
 Lav et program, som udregner befordringsfradraget (det der kan 
-trækkes fra i skat ud fra, hvor langt der er mellem arbejde og 
+trÃ¦kkes fra i skat ud fra, hvor langt der er mellem arbejde og 
 hjem). 
 </para> 
  
 <orderedlist> 
 <listitem><para> 
-Udregn, og udskriv fradraget pr. dag fra 25 til 75 km på 
+Udregn, og udskriv fradraget pr. dag fra 25 til 75 km pÃ¥ 
   hver sin linje. 
 </para></listitem> 
 <listitem><para> 
-Udregn, og udskriv fradraget pr. dag fra 25 til 150 km på 
+Udregn, og udskriv fradraget pr. dag fra 25 til 150 km pÃ¥ 
   hver sin linje. 
 </para></listitem> 
 <listitem><para> 
-Udregn, og udskriv fradraget pr. dag fra 10 til 150 km på 
+Udregn, og udskriv fradraget pr. dag fra 10 til 150 km pÃ¥ 
   hver sin linje. Kun hver 10. km udskrives (10km, 20km, 30km...). 
 </para></listitem> 
 </orderedlist> 
  
 <para> 
-Reglerne for fradraget for år 2000 var følgende: 
+Reglerne for fradraget for Ã¥r 2000 var fÃ¸lgende: 
 </para> 
  
 <itemizedlist> 
 <listitem><para> 
-første 24 km  intet fradrag 
+fÃ¸rste 24 km  intet fradrag 
 </para></listitem> 
 <listitem><para> 
-25  - 100 km  154 øre pr. km 
+25  - 100 km  154 Ã¸re pr. km 
 </para></listitem> 
 <listitem><para> 
-over 100 km  77 øre pr. km 
+over 100 km  77 Ã¸re pr. km 
 </para></listitem> 
 </itemizedlist> 
  
@@ -2202,27 +2202,27 @@ over 100 km  77 øre pr. km
 <orderedlist> 
 <listitem><para> 
 Skriv et program, der tegner grafen over kvadratrod-funktionen 
-(Math.sqrt()).Vink: Når du vil skrive en "*" uden linjeskift kan du 
-bruge System.out.print("*") (dvs. uden 'ln'). Når du vil skifte linje, 
+(Math.sqrt()).Vink: NÃ¥r du vil skrive en "*" uden linjeskift kan du 
+bruge System.out.print("*") (dvs. uden 'ln'). NÃ¥r du vil skifte linje, 
 kan du bruge System.out.println() uden parametre. 
 </para></listitem> 
 <listitem><para> 
-Lav kurveprogrammet om, så det i stedet viser kurven over polynomiet 
-0.2*x*x +0.5*x +2. Lav programmet, så det er nemt at se, hvor man skal 
-rette for at ændre funktionen, intervalstart, intervalslut, skalering 
+Lav kurveprogrammet om, sÃ¥ det i stedet viser kurven over polynomiet 
+0.2*x*x +0.5*x +2. Lav programmet, sÃ¥ det er nemt at se, hvor man skal 
+rette for at Ã¦ndre funktionen, intervalstart, intervalslut, skalering 
 og forskydning af y-aksen.  Dvs. lav det til variabler, og brug 
 kommentarer til at markere stederne i programmet. 
 </para></listitem> 
 <listitem><para> 
-Lav om på kurvetegningsprogrammet, så kurven ikke er udfyldt, men kun 
+Lav om pÃ¥ kurvetegningsprogrammet, sÃ¥ kurven ikke er udfyldt, men kun 
 en streg. 
 </para></listitem> 
 <listitem><para> 
 Eventuelt: Udvid kurveprogrammet til at udregne det totale antal af 
 stjerner, der skrives ud (udregn integralet af funktionen numerisk ved 
-at summere arealet under grafen). Er det nemmest at gøre løbende, mens 
-stjernerne tegnes, eller bagefter? Hvordan ville du gøre på den ene og 
-på den anden måde? 
+at summere arealet under grafen). Er det nemmest at gÃ¸re lÃ¸bende, mens 
+stjernerne tegnes, eller bagefter? Hvordan ville du gÃ¸re pÃ¥ den ene og 
+pÃ¥ den anden mÃ¥de? 
 </para></listitem> 
 </orderedlist> 
 </sect2> 
@@ -2233,9 +2233,9 @@ på den anden måde?
 <title>Appendiks</title> 
  
 <para> 
-Dette afsnit sætter det, du har lært i kapitlet, i 
-system og kan senere bruges som opslagsværk. Enkelte 
-steder står der noget, som ikke er gennemgået endnu, men 
+Dette afsnit sÃ¦tter det, du har lÃ¦rt i kapitlet, i 
+system og kan senere bruges som opslagsvÃ¦rk. Enkelte 
+steder stÃ¥r der noget, som ikke er gennemgÃ¥et endnu, men 
 som er med for helhedens skyld. 
 </para> 
  
@@ -2243,16 +2243,16 @@ som er med for helhedens skyld.
   <title>Navngivningsregler</title> 
  
 <para> 
-Variabler og metoder bør have lille startbogstav. 
+Variabler og metoder bÃ¸r have lille startbogstav. 
 </para> 
  
 <para> 
-Eksempler: n, alder, tal, talDerSkalUndersøges, main(), 
+Eksempler: n, alder, tal, talDerSkalUndersÃ¸ges, main(), 
 println(), sqrt(). 
 </para> 
  
 <para> 
-Klasser bør have stort startbogstav. 
+Klasser bÃ¸r have stort startbogstav. 
 </para> 
  
 <para> 
@@ -2260,19 +2260,19 @@ Eksempler: HejVerden, Cylinderberegning, Syvtabel2
 </para> 
  
 <para> 
-Består navnet af flere ord, stryger man normalt 
-mellemrummene og lader hvert af de efterfølgende ord 
-starte med stort (nogen bruger også understreg _ som 
+BestÃ¥r navnet af flere ord, stryger man normalt 
+mellemrummene og lader hvert af de efterfÃ¸lgende ord 
+starte med stort (nogen bruger ogsÃ¥ understreg _ som 
 mellemrum). 
 </para> 
  
 <itemizedlist mark="bullet"> 
 <listitem><para> 
-Navnet kan bestå af A-&Aring;, a-å, 0-9, $ og _ 
+Navnet kan bestÃ¥ af A-&Aring;, a-Ã¥, 0-9, $ og _ 
 </para></listitem> 
 <listitem><para> 
-Det må ikke starte med et tal. Det kan have en 
-  vilkårlig længde. 
+Det mÃ¥ ikke starte med et tal. Det kan have en 
+  vilkÃ¥rlig lÃ¦ngde. 
 </para></listitem> 
 <listitem><para> 
 Lovlige navne: peter, Peter, $antal, var2, J2EE, 
@@ -2284,8 +2284,8 @@ Ulovlige navne: 7eleven, dette-er-en-test, peter#
 </itemizedlist> 
  
 <para> 
-Da visse styresystemer endnu ikke understøtter æ, ø og å i filnavne, 
-bør man undgå disse i klassenavne. 
+Da visse styresystemer endnu ikke understÃ¸tter Ã¦, Ã¸ og Ã¥ i filnavne, 
+bÃ¸r man undgÃ¥ disse i klassenavne. 
 </para> 
 </sect2>    <!--   Navngivningsregler --> 
  
@@ -2311,10 +2311,10 @@ Her er en oversigt over alle de simple variabeltyper i Java.
    Antal bit 
  </entry> 
  <entry> 
-   Mulige værdier 
+   Mulige vÃ¦rdier 
  </entry> 
  <entry> 
-   Standardværdi 
+   StandardvÃ¦rdi 
  </entry> 
 </row> 
 </thead> 
@@ -2466,19 +2466,19 @@ logisk
 </table> 
  
 <para> 
-De vigtigste er int, double og boolean. I enkelte tilfælde 
-bliver long og char også brugt, mens byte, short og float meget 
-sjældent bruges. 
+De vigtigste er int, double og boolean. I enkelte tilfÃ¦lde 
+bliver long og char ogsÃ¥ brugt, mens byte, short og float meget 
+sjÃ¦ldent bruges. 
 </para> 
 </sect2>    <!--   De simple typer --> 
  
 <sect2 id="java-basal-prg-appendiks-typekonv"> 
-  <title>Værditypekonvertering</title> 
+  <title>VÃ¦rditypekonvertering</title> 
  
 <para> 
-Konvertering til en anden type sker automatisk i de tilfælde, 
-hvor der ikke mistes information (forstået på den 
-måde, at intervallet af de mulige værdier udvides), dvs. 
+Konvertering til en anden type sker automatisk i de tilfÃ¦lde, 
+hvor der ikke mistes information (forstÃ¥et pÃ¥ den 
+mÃ¥de, at intervallet af de mulige vÃ¦rdier udvides), dvs. 
 </para> 
  
 <itemizedlist mark="bullet"> 
@@ -2526,12 +2526,12 @@ fra float til double.
  
 <para> 
 Den anden vej, dvs. hvor der muligvis mistes information, fordi 
-intervallet af mulige værdier indsnævres, skal man 
+intervallet af mulige vÃ¦rdier indsnÃ¦vres, skal man 
 skrive en eksplicit typekonvertering. 
 </para> 
  
 <para> 
-Det gøres ved at skrive en parentes med typenavnet foran 
+Det gÃ¸res ved at skrive en parentes med typenavnet foran 
 det, der skal konverteres: 
 </para> 
  
@@ -2545,13 +2545,13 @@ x = (int) y
  
 <para> 
  
-Her skæres kommadelen af 3.8 væk og x får værdien 
+Her skÃ¦res kommadelen af 3.8 vÃ¦k og x fÃ¥r vÃ¦rdien 
 3. 
 </para> 
  
 <para> 
-Eksplicit typekonvertering sikrer at programmøren er 
-bevidst om informationstabet (glemmes dette kommer oversætteren 
+Eksplicit typekonvertering sikrer at programmÃ¸ren er 
+bevidst om informationstabet (glemmes dette kommer oversÃ¦tteren 
 med fejlen: possible loss of precision: double, required: int). 
 Det skal ske 
 </para> 
@@ -2618,7 +2618,7 @@ fra char til short eller byte.
 <para> 
 Der kan ikke typekonverteres til eller fra boolean. 
 </para> 
-</sect2>    <!--   Værditypekonvertering --> 
+</sect2>    <!--   VÃ¦rditypekonvertering --> 
  
 <sect2 id="java-basal-prg-appendiks-aritmetik"> 
   <title>Aritmetiske operatorer</title> 
@@ -2673,28 +2673,28 @@ Forklaring
 -a 
 </entry> 
 <entry> 
-den negative værdi af a 
+den negative vÃ¦rdi af a 
 </entry> 
 </row> 
 <row> 
       <entry>++ 
 </entry><entry>a++ 
-</entry><entry>a = a+1; værdi før optælling 
+</entry><entry>a = a+1; vÃ¦rdi fÃ¸r optÃ¦lling 
 </entry></row> 
 <row> 
       <entry>++ 
 </entry><entry>++a 
-</entry><entry>a = a+1; værdi efter optælling 
+</entry><entry>a = a+1; vÃ¦rdi efter optÃ¦lling 
 </entry></row> 
 <row> 
       <entry>-- 
 </entry><entry>a-- 
-</entry><entry>a = a-1; værdi før nedtælling 
+</entry><entry>a = a-1; vÃ¦rdi fÃ¸r nedtÃ¦lling 
 </entry></row> 
 <row> 
       <entry>-- 
 </entry><entry>--a 
-</entry><entry>a = a-1; værdi efter nedtælling 
+</entry><entry>a = a-1; vÃ¦rdi efter nedtÃ¦lling 
 </entry></row> 
 </tbody> 
  
@@ -2702,13 +2702,13 @@ den negative værdi af a
 </table> 
  
 <para> 
-Operatorerne giver altid samme type som operanderne, der indgår. 
-Det skal man være specielt opmærksom på for / 
+Operatorerne giver altid samme type som operanderne, der indgÃ¥r. 
+Det skal man vÃ¦re specielt opmÃ¦rksom pÃ¥ for / 
 (divisions) vedkommende, hvor resten mistes ved heltalsdivision. 
 </para> 
  
 <para> 
-Operatoren ++ tæller en variabel op med &eacute;n : a++ 
+Operatoren ++ tÃ¦ller en variabel op med &eacute;n : a++ 
 svarer til a=a+1. Tilsvarende er a-- det samme som a=a-1. 
 </para> 
 </sect2>    <!--   Aritmetiske operatorer --> 
@@ -2741,7 +2741,7 @@ Forklaring
     <row> 
       <entry>&amp;&amp; 
 </entry><entry>u1 &amp;&amp; u2 
-</entry><entry>både u1 og u2 er sandt 
+</entry><entry>bÃ¥de u1 og u2 er sandt 
 </entry></row> 
 <row> 
       <entry>|| 
@@ -2759,8 +2759,8 @@ Forklaring
 </table> 
  
 <para> 
-<emphasis>Operator &amp;&amp;</emphasis> udtrykker, at både 1. <emphasis>og</emphasis> 
-2. udtryk skal være sandt: 
+<emphasis>Operator &amp;&amp;</emphasis> udtrykker, at bÃ¥de 1. <emphasis>og</emphasis> 
+2. udtryk skal vÃ¦re sandt: 
 </para> 
  
 <table> 
@@ -2809,12 +2809,12 @@ Forklaring
  
 <para> 
 F.eks. er udsagnet (a &gt; 5 &amp;&amp; a &lt; 10) sandt, hvis a 
-er større end 5, og a er mindre end 10. 
+er stÃ¸rre end 5, og a er mindre end 10. 
 </para> 
  
 <para> 
 <emphasis>Operator ||</emphasis> udtrykker, at 1. <emphasis>eller</emphasis> 2. udtryk skal 
-være sandt. 
+vÃ¦re sandt. 
 </para> 
  
 <table> 
@@ -2862,15 +2862,15 @@ være sandt.
 </table> 
  
 <para> 
-F.eks. er udsagnet (a &gt; 5 || a == 0) sandt, hvis a er større 
+F.eks. er udsagnet (a &gt; 5 || a == 0) sandt, hvis a er stÃ¸rre 
 end 5, eller a er 0. 
 </para> 
  
 <para> 
 <emphasis>Operator !</emphasis> Udtrykker, at udtrykket skal <emphasis>negeres</emphasis>, 
 dvs. at (!u1) er sandt, hvis u1 er falsk, og falsk hvis u1 er sandt, 
-f.eks. er udsagnet (!(a &gt; 5)) sandt, hvis der ikke gælder at 
-a er større end 5 (det er det samme som (a &lt;= 5)). 
+f.eks. er udsagnet (!(a &gt; 5)) sandt, hvis der ikke gÃ¦lder at 
+a er stÃ¸rre end 5 (det er det samme som (a &lt;= 5)). 
 </para> 
  
 <para> 
@@ -2902,12 +2902,12 @@ Forklaring
     <row> 
       <entry>&gt; 
 </entry><entry>a &gt; b 
-</entry><entry>a større end b 
+</entry><entry>a stÃ¸rre end b 
 </entry></row> 
 <row> 
       <entry>&gt;= 
 </entry><entry>a &gt;= b 
-</entry><entry>a større end el. lig med b 
+</entry><entry>a stÃ¸rre end el. lig med b 
 </entry></row> 
 <row> 
       <entry>&lt; 
@@ -2936,13 +2936,13 @@ Forklaring
 </sect2>    <!--   Sammenligningsoperatorer --> 
  
 <sect2 id="java-basal-prg-appendiks-programmeringsraad"> 
-  <title>Gode råd om programmering</title> 
+  <title>Gode rÃ¥d om programmering</title> 
 <itemizedlist mark="bullet"> 
   <listitem> 
  
 <para> 
  
-Gennemtænk problemstillingen, inden du sætter dig 
+GennemtÃ¦nk problemstillingen, inden du sÃ¦tter dig 
   til computeren. 
 </para> 
  
@@ -2951,7 +2951,7 @@ Gennemtænk problemstillingen, inden du sætter dig
   <listitem> 
  
 <para> 
-Formul&eacute;r problemet eller formålet med 
+Formul&eacute;r problemet eller formÃ¥let med 
   programmet. 
 </para> 
  
@@ -2960,8 +2960,8 @@ Formul&eacute;r problemet eller formålet med
   <listitem> 
  
 <para> 
-Overvej mulige løsningsstrategier. De fleste problemer 
-  kan løses på mere end &eacute;n måde. 
+Overvej mulige lÃ¸sningsstrategier. De fleste problemer 
+  kan lÃ¸ses pÃ¥ mere end &eacute;n mÃ¥de. 
 </para> 
  
 </listitem> 
@@ -2969,9 +2969,9 @@ Overvej mulige løsningsstrategier. De fleste problemer
   <listitem> 
  
 <para> 
-Lav en skitse til programmet i pseudokode (på papiret 
-  med danske ord). Du kan også tegne flowdiagrammer (der 
-  beskriver rækkefølgen tingene sker i). 
+Lav en skitse til programmet i pseudokode (pÃ¥ papiret 
+  med danske ord). Du kan ogsÃ¥ tegne flowdiagrammer (der 
+  beskriver rÃ¦kkefÃ¸lgen tingene sker i). 
 </para> 
  
 </listitem> 
@@ -2979,8 +2979,8 @@ Lav en skitse til programmet i pseudokode (på papiret
   <listitem> 
  
 <para> 
-Det er ikke altid, man kan tænke hele programmet 
-  igennem på forhånd. Ved mere komplicerede programmer må 
+Det er ikke altid, man kan tÃ¦nke hele programmet 
+  igennem pÃ¥ forhÃ¥nd. Ved mere komplicerede programmer mÃ¥ 
   man skifte mellem kodning og refleksion over koden. 
 </para> 
  
@@ -2989,8 +2989,8 @@ Det er ikke altid, man kan tænke hele programmet
   <listitem> 
  
 <para> 
-Når du sidder ved computeren, så skriv ganske få 
-  linjer ad gangen, og afprøv. På den måde er det 
+NÃ¥r du sidder ved computeren, sÃ¥ skriv ganske fÃ¥ 
+  linjer ad gangen, og afprÃ¸v. PÃ¥ den mÃ¥de er det 
   ofte lettere at se problemet, hvis programmet ikke virker. 
 </para> 
  
@@ -2999,8 +2999,8 @@ Når du sidder ved computeren, så skriv ganske få
   <listitem> 
  
 <para> 
-Gør flittigt brug af System.out.println(...) til at 
-  kontrollere, om programmet gør som forventet. 
+GÃ¸r flittigt brug af System.out.println(...) til at 
+  kontrollere, om programmet gÃ¸r som forventet. 
 </para> 
  
 </listitem> 
@@ -3008,14 +3008,14 @@ Gør flittigt brug af System.out.println(...) til at
   <listitem> 
  
 <para> 
-Lær en standardiseret indrykning fra starten og følg 
+LÃ¦r en standardiseret indrykning fra starten og fÃ¸lg 
   den stringent (Se afsnit <xref linkend="java-basal-prg-blok"/>). 
 </para> 
  
 </listitem> 
 </itemizedlist> 
  
-</sect2>    <!--   Gode råd om programmering --> 
+</sect2>    <!--   Gode rÃ¥d om programmering --> 
 </sect1>    <!--   Appendiks --> 
  
 </chapter>    <!--   Basal programmering --> 

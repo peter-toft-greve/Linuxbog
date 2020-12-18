@@ -21,7 +21,7 @@
 
  <para>
   Ideen med Ion er at man ikke har overlappende vinduer og at
-  vinduerne dækker hele skærmen (der er altså ingen flotte
+  vinduerne dÃ¦kker hele skÃ¦rmen (der er altsÃ¥ ingen flotte
   baggrundsbilleder nedenfor).
  </para>
 
@@ -54,27 +54,27 @@
  <para>
   Alternativt kan man hente kildeteksten fra <ulink
   url="http://modeemi.cs.tut.fi/~tuomov/ion/#download">Ions
-  hjemmeside</ulink> og oversætte den selv.
+  hjemmeside</ulink> og oversÃ¦tte den selv.
  </para>
 
  <sect2 id="wm-ion-opsaetning">
-  <title>Opsætningsfiler</title>
+  <title>OpsÃ¦tningsfiler</title>
 
   <indexterm>
-   <primary>opsætning af</primary>
+   <primary>opsÃ¦tning af</primary>
    <secondary>Ion</secondary>
   </indexterm>
 
   <para>
    Ion bruger filen "<filename>~/.ion/ion.conf</filename>" som
-   opsætningsfil.  Hvis filen ikke er der, vil Ion ikke starte.  Du
-   kan for eksempel bruge samme fil (plus tilbehør) som der er brugt
-   her, som udgangspunkt for din egen opsætning.
+   opsÃ¦tningsfil.  Hvis filen ikke er der, vil Ion ikke starte.  Du
+   kan for eksempel bruge samme fil (plus tilbehÃ¸r) som der er brugt
+   her, som udgangspunkt for din egen opsÃ¦tning.
   </para>
 
   <para>
-   Opret kataloget "<filename>~/.ion</filename>" og læg de tre
-   opsætningsfiler nedenfor i det.
+   Opret kataloget "<filename>~/.ion</filename>" og lÃ¦g de tre
+   opsÃ¦tningsfiler nedenfor i det.
   </para>
 
   <itemizedlist mark="bullet">
@@ -94,14 +94,14 @@
   </itemizedlist>
 
   <para>
-   Dernæst kan du oprette filen <filename>~/.xsession</filename> med
+   DernÃ¦st kan du oprette filen <filename>~/.xsession</filename> med
    linjen:
 
 <programlisting>
 exec ion
 </programlisting>
 
-   så Ion starter næste gang du logger ind.
+   sÃ¥ Ion starter nÃ¦ste gang du logger ind.
   </para>
 
   <sect3  id="wm-ion-udseende">
@@ -113,8 +113,8 @@ exec ion
    </indexterm>
 
    <para>
-    Når du så har logget ind og åbnet et par vinduer kan din skærm for
-    eksempel se sådan ud:
+    NÃ¥r du sÃ¥ har logget ind og Ã¥bnet et par vinduer kan din skÃ¦rm for
+    eksempel se sÃ¥dan ud:
 
     <figure id="ion-01-fig" float="1">
      <title>billede af ion i brug</title>
@@ -133,11 +133,11 @@ exec ion
 
    <para>
     Da hele ideen med Ion er at man skal kunne arbejde effektivt uden
-    at bruge musen for meget, er det vigtigt at sætte nogle
+    at bruge musen for meget, er det vigtigt at sÃ¦tte nogle
     komfortable genvejstaster op. Genvejstasterne defineres i blokken
-    <literal>bindings</literal> i opsætningsfilen (eller en af de
-    filer opsætningsfilen inkluderer). Starten på blokken markeres med
-    <literal>bindings{</literal> og slutningen på blokken markeres med
+    <literal>bindings</literal> i opsÃ¦tningsfilen (eller en af de
+    filer opsÃ¦tningsfilen inkluderer). Starten pÃ¥ blokken markeres med
+    <literal>bindings{</literal> og slutningen pÃ¥ blokken markeres med
     <literal>}</literal>.
    </para>
   </sect3>
@@ -163,7 +163,7 @@ bindings{                                       #
    </para>
 
    <para>
-    Vi kan også vælge at bruge Ctrl-Escape til at starte et program
+    Vi kan ogsÃ¥ vÃ¦lge at bruge Ctrl-Escape til at starte et program
     efter eget valg:
 
 <programlisting>
@@ -173,8 +173,8 @@ set_mod "Control"                       #
    </para>
 
    <para>
-    Når du taster Ctrl-Escape dukker der en minikommandolinje op
-    nederst i rammen, hvor du kan indtaste en kommando der køres i et
+    NÃ¥r du taster Ctrl-Escape dukker der en minikommandolinje op
+    nederst i rammen, hvor du kan indtaste en kommando der kÃ¸res i et
     nyt vindue.
    </para>
   </sect3> <!-- Starte et program -->
@@ -189,7 +189,7 @@ set_mod "Control"                       #
 
    <para>
     Hvis vi starter flere xterm'er i samme ramme vil de blive til
-    faneblade. Det vil være praktisk at kunne skifte mellem dem med
+    faneblade. Det vil vÃ¦re praktisk at kunne skifte mellem dem med
     Alt-Tab:
 
 <programlisting>
@@ -199,9 +199,9 @@ set_mod "Mod1"                          #
    </para>
 
    <para>
-    Bemærk at det aktive faneblad er markeret med blå tekst på hvid
-    baggrund (hvis du bruger opsætningsfilerne ovenfor), mens inaktive
-    faneblade er markerede med hvid tekst på blå baggrund.
+    BemÃ¦rk at det aktive faneblad er markeret med blÃ¥ tekst pÃ¥ hvid
+    baggrund (hvis du bruger opsÃ¦tningsfilerne ovenfor), mens inaktive
+    faneblade er markerede med hvid tekst pÃ¥ blÃ¥ baggrund.
    </para>
   </sect3> <!-- Skifte mellem faneblade -->
 
@@ -209,7 +209,7 @@ set_mod "Mod1"                          #
    <title>Opdele i flere rammer</title>
 
    <para>
-    Det er lidt pjattet kun at have én ramme, hvor alle vinduerne er
+    Det er lidt pjattet kun at have Ã©n ramme, hvor alle vinduerne er
     faneblade i. Vi kan for eksempel bruge Alt-O+V til at lave en
     vandret opdeling af en ramme og Alt-O+L til at lave en lodret
     opdeling af en ramme:
@@ -225,7 +225,7 @@ set_mod "Mod1"                          #
 
    <para>
     Med flere rammer vil du kunne se at de aktive faneblade i inaktive
-    rammer markeres med sort tekst på grøn baggrund.
+    rammer markeres med sort tekst pÃ¥ grÃ¸n baggrund.
    </para>
   </sect3>    <!--   Opdele i flere rammer -->
 
@@ -233,7 +233,7 @@ set_mod "Mod1"                          #
    <title>Skifte mellem rammer</title>
 
    <para>
-    Men når vi nu har flere rammer, så er det også nødvendigt at kunne
+    Men nÃ¥r vi nu har flere rammer, sÃ¥ er det ogsÃ¥ nÃ¸dvendigt at kunne
     skifte mellem dem. Det kan vi for eksempel bruge
     Ctrl-Alt-(piletaster) til:
 
@@ -251,8 +251,8 @@ set_mod "Control+Mod1"                  #
    <title>Lukke vinduer og rammer</title>
 
    <para>
-    Det kan også blive nødvendigt at lukke et vindue af og til.  Det
-    kan man for eksempel gøre med Alt-F4:
+    Det kan ogsÃ¥ blive nÃ¸dvendigt at lukke et vindue af og til.  Det
+    kan man for eksempel gÃ¸re med Alt-F4:
 
 <programlisting>
 set_mod "Mod1"                          #
@@ -261,8 +261,8 @@ set_mod "Mod1"                          #
    </para>
 
    <para>
-    Og når vi nu bruger Alt-O+... til at ændre rammernes størrelser,
-    så kan vi jo passende bruge Alt-O+F4 til at lukke en ramme:
+    Og nÃ¥r vi nu bruger Alt-O+... til at Ã¦ndre rammernes stÃ¸rrelser,
+    sÃ¥ kan vi jo passende bruge Alt-O+F4 til at lukke en ramme:
 
 <programlisting>
 set_mod "Mod1"                          #
@@ -276,13 +276,13 @@ set_mod "Mod1"                          #
   </sect3>    <!--   Lukke vinduer og rammer -->
 
   <sect3 id="wm-ion-aendre-rammer">
-   <title>Ændre rammernes størrelser</title>
+   <title>Ã†ndre rammernes stÃ¸rrelser</title>
 
    <para>
-    Det kan også være nyttigt at kunne ændre rammernes størrelser.  I
-    blokken "<literal>moveres_bindings</literal>" sætter man hvilke
-    taster der gør rammen større ("S") eller mindre ("M"), aktiverer
-    ændringen (enter) eller annullerer ændringen (escape):
+    Det kan ogsÃ¥ vÃ¦re nyttigt at kunne Ã¦ndre rammernes stÃ¸rrelser.  I
+    blokken "<literal>moveres_bindings</literal>" sÃ¦tter man hvilke
+    taster der gÃ¸r rammen stÃ¸rre ("S") eller mindre ("M"), aktiverer
+    Ã¦ndringen (enter) eller annullerer Ã¦ndringen (escape):
 
 <programlisting>
 moveres_bindings{                               #
@@ -296,9 +296,9 @@ moveres_bindings{                               #
    </para>
 
    <para>
-    Men vi har også brug for at fortælle at rammen skal ændre
-    størrelse.  Vi kan for eksempel bruge Alt-F8 til at ændre højden
-    på rammen, og Ctrl-F8 til at ændre bredden på rammen:
+    Men vi har ogsÃ¥ brug for at fortÃ¦lle at rammen skal Ã¦ndre
+    stÃ¸rrelse.  Vi kan for eksempel bruge Alt-F8 til at Ã¦ndre hÃ¸jden
+    pÃ¥ rammen, og Ctrl-F8 til at Ã¦ndre bredden pÃ¥ rammen:
 
 <programlisting>
 set_mod "Mod1"                          #
@@ -307,22 +307,22 @@ set_mod "Mod1"                          #
         kpress "F8",     "resize_horiz"         #
 </programlisting>
    </para>
-  </sect3>    <!--   Ændre rammernes størrelser -->
+  </sect3>    <!--   Ã†ndre rammernes stÃ¸rrelser -->
 
   <sect3 id="wm-ion-flytte-vinduer">
    <title>Flytte vinduer</title>
 
    <indexterm>
-    <primary>vindueshåndtering i</primary>
+    <primary>vindueshÃ¥ndtering i</primary>
     <secondary>Ion</secondary>
    </indexterm>
 
    <para>
-    Uanset hvor velorganiseret man er, kan man af og til få brug for
-    at flytte et vindue til en anden ramme.  Det kan man gøre ved at
+    Uanset hvor velorganiseret man er, kan man af og til fÃ¥ brug for
+    at flytte et vindue til en anden ramme.  Det kan man gÃ¸re ved at
     flytte til den ramme man vil have vinduet over i (med
     Ctrl-Alt-&lt;pil&gt;), taste Alt-F7, skrive noget af vinduets
-    navn, trykke på Tab (for at få skrevet navnet færdigt) og
+    navn, trykke pÃ¥ Tab (for at fÃ¥ skrevet navnet fÃ¦rdigt) og
     Enter.
 
 <programlisting>
@@ -336,9 +336,9 @@ set_mod "Mod1"                          #
    <title>Maksimere vinduer</title>
 
    <para>
-    Svarende til Alt-F8 og Ctrl-F8 (ændring af en rammes højde og
+    Svarende til Alt-F8 og Ctrl-F8 (Ã¦ndring af en rammes hÃ¸jde og
     bredde) kan vi definere Alt-F2 og Ctrl-F2 til at maksimere
-    henholdsvis rammens højde og bredde:
+    henholdsvis rammens hÃ¸jde og bredde:
 
 <programlisting>
 set_mod "Mod1"                          #
@@ -372,7 +372,7 @@ set_mod "Mod1"                          #
 
     <listitem>
      <para>
-      <emphasis>Redigér en fil:</emphasis> F5
+      <emphasis>RedigÃ©r en fil:</emphasis> F5
      </para>
     </listitem>
 
@@ -401,12 +401,12 @@ set_mod "Mod1"                          #
   <title>Hvorfor er Ion sej?</title>
 
   <para>
-   Jeg synes at det er vældig praktisk at bruge en window manager der
-   hjælper mig med at sørge for at mine vinduer ikke overlapper.  Og
-   så er det rimeligt overkommeligt at styre en hel masse direkte fra
-   tastaturet.  Hvis <command>xterm</command> understøttede
-   tastaturbaseret klippe-klistre, så ville jeg omgående fodre min mus
-   til den nærmeste kat.
+   Jeg synes at det er vÃ¦ldig praktisk at bruge en window manager der
+   hjÃ¦lper mig med at sÃ¸rge for at mine vinduer ikke overlapper.  Og
+   sÃ¥ er det rimeligt overkommeligt at styre en hel masse direkte fra
+   tastaturet.  Hvis <command>xterm</command> understÃ¸ttede
+   tastaturbaseret klippe-klistre, sÃ¥ ville jeg omgÃ¥ende fodre min mus
+   til den nÃ¦rmeste kat.
   </para>
  </sect2>
 </sect1>

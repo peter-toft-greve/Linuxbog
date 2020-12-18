@@ -17,7 +17,7 @@ switch ($Kode){
               $text = "Du er ikke registreret som bruger her";
               break;
        case 5:
-              $text = "Du skal være administrator for at bruge denne funktion";
+              $text = "Du skal vÃ¦re administrator for at bruge denne funktion";
               break;
 
        case 6:
@@ -28,7 +28,7 @@ print "
 <!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0//EN'>
 <HTML>
 <HEAD>
-        <TITLE>Der er opstået en fejl</TITLE>
+        <TITLE>Der er opstÃ¥et en fejl</TITLE>
 <META NAME='Generator' CONTENT='Stone's WebWriter 3'>
 </HEAD>
 <BODY BGCOLOR='#999999' TEXT='#000000' LINK='#0000FF' VLINK='#660066' ALINK='#FF0000'>
@@ -37,7 +37,7 @@ print "
 <TABLE BORDER='0' BGCOLOR='#CCCCCC' CELLPADDING='0'>
 <TR><TD>
 <TABLE WIDTH='100%' BORDER='0' CELLSPACING='2' CELLPADDING='3'>
-<TH ALIGN='center' COLSPAN='2' BGCOLOR='#330099'><FONT COLOR='RED' SIZE='+1'>DER ER OPSTÅET EN FEJL</FONT></TH>
+<TH ALIGN='center' COLSPAN='2' BGCOLOR='#330099'><FONT COLOR='RED' SIZE='+1'>DER ER OPSTÃ…ET EN FEJL</FONT></TH>
 <TR ALIGN='center'>
         <TD BGCOLOR='#FFFFCC'>Fejlen betyder f&oslash;lgende</TD>
         <TD BGCOLOR='#FFFFCC'>$text</TD>

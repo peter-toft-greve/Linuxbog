@@ -10,20 +10,20 @@
  </indexterm>
 
  <para>
-  Gnome er et af fremtidens frie skrivebordsmiljøer, baseret på
-  CORBA-netværksobjekter. Gnome kan køre en grafisk brugergrænseflade,
-  der kan udnytte Gnomes muligheder, såsom Sawmill, WindowMaker eller
-  Enlightenment.  Tempoet er meget højt og har allerede nu passeret
-  version 1.4 (Ximian), så det er et interessant alternativ for
+  Gnome er et af fremtidens frie skrivebordsmiljÃ¸er, baseret pÃ¥
+  CORBA-netvÃ¦rksobjekter. Gnome kan kÃ¸re en grafisk brugergrÃ¦nseflade,
+  der kan udnytte Gnomes muligheder, sÃ¥som Sawmill, WindowMaker eller
+  Enlightenment.  Tempoet er meget hÃ¸jt og har allerede nu passeret
+  version 1.4 (Ximian), sÃ¥ det er et interessant alternativ for
   alle. Derfor kommer de fleste distributioner med
-  Gnome-pakker. Arbejdet og nyeste versioner kan findes på <ulink
+  Gnome-pakker. Arbejdet og nyeste versioner kan findes pÃ¥ <ulink
   url="http://www.gnome.org">http://www.gnome.org</ulink> eller <ulink
   url="http://www.ximain.com">http://www.ximian.com</ulink>.
  </para>
 
  <para>
-  Vi vil i dette afsnit fortælle lidt mere om Gnome. Omtalen vil på
-  ingen måde være udtømmende, idet Gnome er et meget komplekst system,
+  Vi vil i dette afsnit fortÃ¦lle lidt mere om Gnome. Omtalen vil pÃ¥
+  ingen mÃ¥de vÃ¦re udtÃ¸mmende, idet Gnome er et meget komplekst system,
   som er i stadig udvikling.
  </para>
 
@@ -36,13 +36,13 @@
   <title>Lidt om filosofien bag Gnome</title>
 
   <para>
-   For at forstå Gnome bedre er det vigtigt at forstå lidt af
+   For at forstÃ¥ Gnome bedre er det vigtigt at forstÃ¥ lidt af
    filosofien bag Gnome. Gnome er en forkortelse for GNU Network
-   Object Model Environment. Det betyder, at Gnome består af en række
-   små netværksorienterede objekter. Objekterne (eller komponenterne)
-   udfører velafgrænsede opgaver. Dette ligger klart i tråd med den
-   gamle Unix-tradition, hvor ethvert program udfører en lille men
-   velafgrænset opgave.
+   Object Model Environment. Det betyder, at Gnome bestÃ¥r af en rÃ¦kke
+   smÃ¥ netvÃ¦rksorienterede objekter. Objekterne (eller komponenterne)
+   udfÃ¸rer velafgrÃ¦nsede opgaver. Dette ligger klart i trÃ¥d med den
+   gamle Unix-tradition, hvor ethvert program udfÃ¸rer en lille men
+   velafgrÃ¦nset opgave.
   </para>
  </sect2>
 
@@ -50,60 +50,60 @@
   <title>Panelet</title>
 
   <para>
-   Som alle moderne skrivebordsmiljøer kommer Gnome med et panel, som
-   i standard-indstillingen er placeret i bunden af skærmen. <xref
-   linkend="Gnome-panel-fig"/> viser et eksempel på et panel.
+   Som alle moderne skrivebordsmiljÃ¸er kommer Gnome med et panel, som
+   i standard-indstillingen er placeret i bunden af skÃ¦rmen. <xref
+   linkend="Gnome-panel-fig"/> viser et eksempel pÃ¥ et panel.
   </para>
 
   <figure id="Gnome-panel-fig" float="1">
-   <title>Eksempel på panel i Gnome</title>
+   <title>Eksempel pÃ¥ panel i Gnome</title>
    <graphic fileref="gnome-panel.&magic;" scale="40"></graphic>
   </figure>
 
   <para>
-   Yderst til højre og venstre ses to små pile. Trykker du på dem,
-   minimerer du panelet. Trykker du på et minimeret panels pil, kommer
-   vinduet frem igen i almindelig stor størrelse.
+   Yderst til hÃ¸jre og venstre ses to smÃ¥ pile. Trykker du pÃ¥ dem,
+   minimerer du panelet. Trykker du pÃ¥ et minimeret panels pil, kommer
+   vinduet frem igen i almindelig stor stÃ¸rrelse.
   </para>
 
   <para>
-   Næstyderst til venstre finder du et fodaftryk (Gnomes logo) med en
-   pil, der peger opad. Trykker du på fodaftrykket, popper Gnomes
-   hovedmenu op. Som ny Gnome-bruger er det sjovt at gå på opdagelse i
+   NÃ¦styderst til venstre finder du et fodaftryk (Gnomes logo) med en
+   pil, der peger opad. Trykker du pÃ¥ fodaftrykket, popper Gnomes
+   hovedmenu op. Som ny Gnome-bruger er det sjovt at gÃ¥ pÃ¥ opdagelse i
    alle disse programmer.
   </para>
 
   <para>
-   Panelet kan indeholde såkaldte appletter. En applet er et
-   miniprogram, hvis grafiske uddata vises i panelet. Du kan tilføje
-   en applet ved at gå ind i Panel-undermenuen og finde "Tilføj
+   Panelet kan indeholde sÃ¥kaldte appletter. En applet er et
+   miniprogram, hvis grafiske uddata vises i panelet. Du kan tilfÃ¸je
+   en applet ved at gÃ¥ ind i Panel-undermenuen og finde "TilfÃ¸j
    applet" (eng. "Add applet").  Blandt de sjovere er Livets spil
    (eng. Game of Life), mens der af de mere praktiske er flere ure og
    programmer til at tjekke om der er ny post. En god applet (som er
    med i Red Hat 6.0 standardindstillingen) er pager-appletten. Den
-   gør det muligt at have flere virtuelle skærme. Der kommer hele
-   tiden nye applets til, så det er en god idé at følge med på Gnomes
+   gÃ¸r det muligt at have flere virtuelle skÃ¦rme. Der kommer hele
+   tiden nye applets til, sÃ¥ det er en god idÃ© at fÃ¸lge med pÃ¥ Gnomes
    hjemmeside.
   </para>
 
   <para>
-   Ud over appletter kan du tilføje knapper, som starter programmer
+   Ud over appletter kan du tilfÃ¸je knapper, som starter programmer
    (genveje - eng. launchers) eller hele undermenuer (skuffer -
    eng. drawers).
   </para>
  </sect2>
 
  <sect2 id="Gnome-konfig">
-  <title>Opsætningen</title>
+  <title>OpsÃ¦tningen</title>
 
   <indexterm>
-   <primary>opsætning af</primary>
+   <primary>opsÃ¦tning af</primary>
    <secondary>Gnome</secondary>
   </indexterm>
 
   <para>
-   Opsætningen af Gnome kan ske grafisk. Med Gnome følger Gnome
-   kontrolcenteret, hvor du kan ændre på indstillingerne.
+   OpsÃ¦tningen af Gnome kan ske grafisk. Med Gnome fÃ¸lger Gnome
+   kontrolcenteret, hvor du kan Ã¦ndre pÃ¥ indstillingerne.
   </para>
 
   <figure id="Gnome-control" float="1">
@@ -113,7 +113,7 @@
 
   <para>
    Eftersom Gnome er tema-baseret (eng. themes), er det meget let at
-   gøre dit arbejdsmiljø personligt.
+   gÃ¸re dit arbejdsmiljÃ¸ personligt.
   </para>
  </sect2>
 
@@ -121,16 +121,16 @@
   <title>Lyd og grafik</title>
 
   <para>
-   Mange af programmørerne bag Gnome er meget glade for lyd og
-   grafik. Derfor findes der rigtig god understøttelse for dette i
-   Gnome allerede i dag. I Gnome kontrolcenteret kan du slå
-   lydunderstøttelse til, som betyder, at du får mange lydeffekter ved
-   forskellige hændelser, f.eks. når du minimerer panelet. Men det
-   kræver naturligvis, at du har et lydkort.
+   Mange af programmÃ¸rerne bag Gnome er meget glade for lyd og
+   grafik. Derfor findes der rigtig god understÃ¸ttelse for dette i
+   Gnome allerede i dag. I Gnome kontrolcenteret kan du slÃ¥
+   lydunderstÃ¸ttelse til, som betyder, at du fÃ¥r mange lydeffekter ved
+   forskellige hÃ¦ndelser, f.eks. nÃ¥r du minimerer panelet. Men det
+   krÃ¦ver naturligvis, at du har et lydkort.
   </para>
 
   <para>
-   Har du en cd-rom i din pc, kan du overveje om du vil høre musik,
+   Har du en cd-rom i din pc, kan du overveje om du vil hÃ¸re musik,
    mens du arbejder. Til Gnome finder du programmet
    <command>gtcd</command>, som er en enkel cd-afspiller.
   </para>
@@ -141,8 +141,8 @@
   </figure>
 
   <para>
-   Du har også mulighed for at se på billeder ved hjælp af programmet
-   Electric Eyes. Programmet understøtter de mest udbredte
+   Du har ogsÃ¥ mulighed for at se pÃ¥ billeder ved hjÃ¦lp af programmet
+   Electric Eyes. Programmet understÃ¸tter de mest udbredte
    grafik-formater.
   </para>
  </sect2>
@@ -152,8 +152,8 @@
 
   <para>
    <emphasis>Personal Information Managers</emphasis> (eller bare
-   PIMs) er små programmer, som holder styr på dine personlige
-   data. Til Gnome finder du en hel række.
+   PIMs) er smÃ¥ programmer, som holder styr pÃ¥ dine personlige
+   data. Til Gnome finder du en hel rÃ¦kke.
   </para>
 
   <para>
@@ -165,38 +165,38 @@
    <command>gnomecal</command> er et kalender-program. Du har mulighed
    for at gemme aftaler og tilbagevendende
    begivenheder. Standardindstillingen er en dagsoversigt, men du kan
-   også se på en uge, en måned eller et år ad gangen. En lækker
-   funktion er TO DO-lister, dvs. du kan sætte alle dine deadlines ind
+   ogsÃ¥ se pÃ¥ en uge, en mÃ¥ned eller et Ã¥r ad gangen. En lÃ¦kker
+   funktion er TO DO-lister, dvs. du kan sÃ¦tte alle dine deadlines ind
    i din kalender. <command>gnomecal</command> benytter
    vCalendar-formatet, som er en officiel internet-standard for
    kalender-systemer, f.eks. kan du let synkronisere din PalmPilot med
-   din stationære computer!
+   din stationÃ¦re computer!
   </para>
 
   <para>
-   Har du brug for at holde styr på adresser, er programmet
+   Har du brug for at holde styr pÃ¥ adresser, er programmet
    <command>gnomecard</command> nok noget for dig.
   </para>
 
   <para>
-   Vi synes også at <command>gtt</command> (GTimeTracker) bør
-   nævnes. Programmet er et simpelt tidtagerprogram. Arbejder du på
-   flere projekter eller opgaver, er det ofte rart at holde øje med,
-   hvor meget tid du bruger på hvad. Du kan oprette projekter, og du
+   Vi synes ogsÃ¥ at <command>gtt</command> (GTimeTracker) bÃ¸r
+   nÃ¦vnes. Programmet er et simpelt tidtagerprogram. Arbejder du pÃ¥
+   flere projekter eller opgaver, er det ofte rart at holde Ã¸je med,
+   hvor meget tid du bruger pÃ¥ hvad. Du kan oprette projekter, og du
    kan starte og stoppe uret.
   </para>
 
   <figure id="Gnome-pim-fig" float="1">
-   <title>Programmer til håndtering af personlige data</title>
+   <title>Programmer til hÃ¥ndtering af personlige data</title>
    <graphic fileref="gnome-pim.&magic;" scale="50"></graphic>
   </figure>
 
   <para>
-   Der er <emphasis>mange</emphasis> spændende programmer på vej fra
-   Gnome-fronten. Et der bør nævnes her er
+   Der er <emphasis>mange</emphasis> spÃ¦ndende programmer pÃ¥ vej fra
+   Gnome-fronten. Et der bÃ¸r nÃ¦vnes her er
    <command>evolution</command>, som er en direkte konkurrent til MS
-   Outlook, både i omgang og udseeende, men prisen på 0 kr er meget
-   bedre :-) Læs mere om <command>evolution</command> på <ulink
+   Outlook, bÃ¥de i omgang og udseeende, men prisen pÃ¥ 0 kr er meget
+   bedre :-) LÃ¦s mere om <command>evolution</command> pÃ¥ <ulink
    url="http://www.ximian.com/apps/evolution.php3">http://www.ximian.com/apps/evolution.php3</ulink>.
   </para>
 

@@ -6,7 +6,7 @@
  Programmet er krevet til Harbour
  http://www.harbour-project.org
 
- Oversættelse:
+ OversÃ¦ttelse:
   harbour udskriv.prg
   gcc -c udskriv.c -I/usr/include/harbour
   harbour-link udskriv.o

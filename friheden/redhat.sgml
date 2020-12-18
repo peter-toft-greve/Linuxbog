@@ -2,7 +2,7 @@
 <!-- mkdir /tmp/test; /usr/sbin/anaconda -m nfs://mnt/cdrom -r /tmp/test 
 for at lave screen-dumps af installation -->
 
-<!-- RH9; Tryk shift-PRINTSCREEN - billeder gemmes løbende i /root/anaconda-screenshots -->
+<!-- RH9; Tryk shift-PRINTSCREEN - billeder gemmes lÃ¸bende i /root/anaconda-screenshots -->
 
 <chapter id="installredhat">
 <title>Installation af Fedora og Red Hat Linux </title>
@@ -10,20 +10,20 @@ for at lave screen-dumps af installation -->
 <indexterm><primary>Red Hat</primary></indexterm>
 <indexterm><primary>Fedora</primary></indexterm>
 En af de bedste Linux-distributioner kommer fra Red Hat,
-hvis man ser på hvor nem den er at installere og hvor
-mange programmer, der findes præ-oversat til distributionen.
-I slutningen af 2003 ændrede Red Hat kurs. I stedet for at
-lancere Red Hat 10, så fokuserede Red Hat på deres "enterprise"
+hvis man ser pÃ¥ hvor nem den er at installere og hvor
+mange programmer, der findes prÃ¦-oversat til distributionen.
+I slutningen af 2003 Ã¦ndrede Red Hat kurs. I stedet for at
+lancere Red Hat 10, sÃ¥ fokuserede Red Hat pÃ¥ deres "enterprise"
 Linux-versioner, som er meget kommercielt orienterede. Disse
-kommer ikke i en fri-download-version. Til gengæld lavede Red
+kommer ikke i en fri-download-version. Til gengÃ¦ld lavede Red
 Hat en ny serie af Linux-distributioner, kaldet <emphasis>Fedora 
-Core</emphasis>. Den første version kaldes Fedora Core 1 og kan findes
+Core</emphasis>. Den fÃ¸rste version kaldes Fedora Core 1 og kan findes
 via <ulink url="http://fedora.redhat.com/">http://fedora.redhat.com/</ulink>.
 </para>
 
 <para>
-Ud over at være nem at installere og administrere må Fedora Core 1
-også siges at være et godt valg med hensyn til udvalget af
+Ud over at vÃ¦re nem at installere og administrere mÃ¥ Fedora Core 1
+ogsÃ¥ siges at vÃ¦re et godt valg med hensyn til udvalget af
 applikationer. Alle traditionelle Linux-programmer plus en hel del nye
 ligger klar til at installere fra cd-rom'erne.  
 </para>
@@ -31,37 +31,37 @@ ligger klar til at installere fra cd-rom'erne.
 <para>
 Forskellen er ikke stor mellem Red Hat 7.X, 8, 9 og Fedora Core 1. 
 Skulle du have en tidligere
-version, så vil man finde det meget lig hvad der er beskrevet her.
+version, sÃ¥ vil man finde det meget lig hvad der er beskrevet her.
 </para>
 
 <para>
 Red Hat Linux har up2date som overbygning til rpm, og kan bruges til
-let at holde maskinen opdateret, men kræver tilmelding til Red Hat
+let at holde maskinen opdateret, men krÃ¦ver tilmelding til Red Hat
 Network (rhn) og evt. betaling.
 </para>
 
 <para>
-Fedora Core 1 har også up2date samt, og mere spændende, yum - <emphasis>Yellow
-Dog Updater Modified</emphasis>, der ikke kræver tilmelding til nogen tjeneste,
-men blot at man peger på et eller flere RedHat/Fedora mirror(s) der
-indeholder de særlige "header" filer som yum gør brug af. Passende
-konfigureret kan yum sørge for at holde ens maskine(r) opdateret helt
-automatisk. En killer facilitet er at yum sørger selv for at løse
-rpm's afhængigheder når software installeres eller opdateres.
+Fedora Core 1 har ogsÃ¥ up2date samt, og mere spÃ¦ndende, yum - <emphasis>Yellow
+Dog Updater Modified</emphasis>, der ikke krÃ¦ver tilmelding til nogen tjeneste,
+men blot at man peger pÃ¥ et eller flere RedHat/Fedora mirror(s) der
+indeholder de sÃ¦rlige "header" filer som yum gÃ¸r brug af. Passende
+konfigureret kan yum sÃ¸rge for at holde ens maskine(r) opdateret helt
+automatisk. En killer facilitet er at yum sÃ¸rger selv for at lÃ¸se
+rpm's afhÃ¦ngigheder nÃ¥r software installeres eller opdateres.
 </para>
 
 <sect1 id="rhhardwarekrav">
 <title>Hardwarekrav</title>
 <para>
 <indexterm><primary>Hardware krav</primary></indexterm>
-Fedora Core 1 til pc stiller følgende hardwarekrav:
+Fedora Core 1 til pc stiller fÃ¸lgende hardwarekrav:
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
 
 <listitem><para>en Intel 32-bit CPU (80386 eller senere). Intel-kompatible
 typer af andet fabrikat, f.eks. AMD K6, K7 eller Athlon 
-kan også sagtens bruges.</para>
+kan ogsÃ¥ sagtens bruges.</para>
 
 </listitem>
 
@@ -71,11 +71,11 @@ Gnome og KDE kan anbefales 192 Mb RAM eller mere.
 
 </listitem>
 
-<listitem><para>minimum 500 Mb ledig plads på harddisken. En typisk
+<listitem><para>minimum 500 Mb ledig plads pÃ¥ harddisken. En typisk
 installation bruger omkring 2.5 Gb, men du kan sagtens bruge mere
 plads. Ud over plads
-til selve systemet skal der naturligvis også være plads til
-rådighed for brugerne til deres private filer af forskellig slags.</para>
+til selve systemet skal der naturligvis ogsÃ¥ vÃ¦re plads til
+rÃ¥dighed for brugerne til deres private filer af forskellig slags.</para>
 </listitem>
 </itemizedlist>
 
@@ -84,53 +84,53 @@ rådighed for brugerne til deres private filer af forskellig slags.</para>
 <sect1 id="rh-cd-rom-install">
 <title>Installation fra cd-rom</title>
 <para>
-I denne gennemgang af installationen vil vi gå ud fra, at der
-installeres fra et lokalt cd-rom-drev. Der er som nævnt nedenfor andre
-måder at gøre det på, men denne metode er både simpel og tilgængelig
-på langt de fleste moderne pc'er.
+I denne gennemgang af installationen vil vi gÃ¥ ud fra, at der
+installeres fra et lokalt cd-rom-drev. Der er som nÃ¦vnt nedenfor andre
+mÃ¥der at gÃ¸re det pÃ¥, men denne metode er bÃ¥de simpel og tilgÃ¦ngelig
+pÃ¥ langt de fleste moderne pc'er.
 </para>
 
 <para>
 Hvis din maskine er af ny dato, kan den starte direkte fra
-cd-rom'en. Du skal så ind og vælge cd-rom-drevet som første "boot drive"
-i BIOS-opsætningen. Typisk kommer du ind i BIOS-opsætningen ved at
-trykke en tastekombination når du tænder for computeren, 
-tastekombinationen varierer fra computermærke til computermærke og står
-sikkert i brugsanvisningen eller på skærmen under opstarten.
+cd-rom'en. Du skal sÃ¥ ind og vÃ¦lge cd-rom-drevet som fÃ¸rste "boot drive"
+i BIOS-opsÃ¦tningen. Typisk kommer du ind i BIOS-opsÃ¦tningen ved at
+trykke en tastekombination nÃ¥r du tÃ¦nder for computeren, 
+tastekombinationen varierer fra computermÃ¦rke til computermÃ¦rke og stÃ¥r
+sikkert i brugsanvisningen eller pÃ¥ skÃ¦rmen under opstarten.
 </para>
 
 <para>
-Når du alligevel er inde i BIOS-opsætningen kan du tjekke om 
-virusbeskyttelse er slået til. Virusbeskyttelsen forhindrer
-skrivning i boot-sektoren og er en udmærket sikkerhedsforanstaltning
+NÃ¥r du alligevel er inde i BIOS-opsÃ¦tningen kan du tjekke om 
+virusbeskyttelse er slÃ¥et til. Virusbeskyttelsen forhindrer
+skrivning i boot-sektoren og er en udmÃ¦rket sikkerhedsforanstaltning
 i det daglige, men hvis vi skal installere LILO (se nedenfor), er
-vi faktisk nødt til at have lov til dette. Skal du opgradere så er
-det uhyre nemt i grafiktilstand - du vælger tastatur og enkelte andre
-ting, og så kører det. Vi ser dog her på installation.
+vi faktisk nÃ¸dt til at have lov til dette. Skal du opgradere sÃ¥ er
+det uhyre nemt i grafiktilstand - du vÃ¦lger tastatur og enkelte andre
+ting, og sÃ¥ kÃ¸rer det. Vi ser dog her pÃ¥ installation.
 </para>
 
 <sect2 id="boot-fra-floppy">
 <title>Problem med at boote fra cd-rom</title>
 <para>
-Hvis du ikke kan starte fra cd-rom-drevet, må du i stedet bruge en
+Hvis du ikke kan starte fra cd-rom-drevet, mÃ¥ du i stedet bruge en
 opstartsdiskette.  Den kan laves i DOS ud fra programmet
 <command>RAWRITE.EXE</command>. Dette program ligger normalt 
-i <filename>/DOSUTILS</filename> kataloget på din Linux installations-cd-rom.
-Filen <filename>boot.img</filename> skal også bruges og er selve
+i <filename>/DOSUTILS</filename> kataloget pÃ¥ din Linux installations-cd-rom.
+Filen <filename>boot.img</filename> skal ogsÃ¥ bruges og er selve
 boot-disken, der normalt ligger i kataloget <filename>/images/</filename>.
-Tekstfilen <filename>RAWRITE3.DOC</filename> forklarer i nærmere detaljer
+Tekstfilen <filename>RAWRITE3.DOC</filename> forklarer i nÃ¦rmere detaljer
 hvordan programmet skal anvendes.
-Har du allerede Linux kørende kan den lave
-ved at du som root kører
+Har du allerede Linux kÃ¸rende kan den lave
+ved at du som root kÃ¸rer
 <command>dd if=boot.img of=/dev/fd0</command>
 hvorefter du trykker Ctrl+Alt+Delete for at genstarte installationen.
 </para>
 
 <para>
-Som eksempel ser vi på fremstilling af en opstartsdiskette fra en
+Som eksempel ser vi pÃ¥ fremstilling af en opstartsdiskette fra en
 DOS-prompt med cd-rom-drevet
 <filename>E:</filename>. Diskettedrevbogstavet er
-<filename>A:</filename>.  Disketten formateres, så alle data på den
+<filename>A:</filename>.  Disketten formateres, sÃ¥ alle data pÃ¥ den
 er slettet. (Grunden til formateringen er alene at det er surt at
 have en eventuel defekt bootdisk senere).
 </para>
@@ -140,7 +140,7 @@ have en eventuel defekt bootdisk senere).
 </screen>
 
 <para>
-Dernæst fremstilles opstartsdisketten med kommandoen,
+DernÃ¦st fremstilles opstartsdisketten med kommandoen,
 </para>
 
 <screen>
@@ -148,39 +148,39 @@ Dernæst fremstilles opstartsdisketten med kommandoen,
 </screen>
 
 <para>
-Derefter kan Windows genstartes. Computeren vil nu starte på
-opstartsdisketten og fortsætte Linux-installationen fra
+Derefter kan Windows genstartes. Computeren vil nu starte pÃ¥
+opstartsdisketten og fortsÃ¦tte Linux-installationen fra
 installations-cd-rom'en.
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> Før du genstarter computeren, og påbegynder
+<emphasis>Tip:</emphasis> FÃ¸r du genstarter computeren, og pÃ¥begynder
 Linux-installationen er det smart at lave en bootdisk til Windows,
-hvis der skulle gå noget galt med LILO-installationen. På Windows 95
-og 98 kan en bootdisk laves ved at indsætte en tom diskette og skrive
-<command>format a: /s</command> på kommandolinjen eller ved at
-højreklikke på diskdrevet og vælge 'Format' og markere et kryds i feltet "Kopier systemfiler".
-Når computeren starter fra disketten vil du ende i DOS, og kan starte
-Windows ved at udføre programmet <command>win</command> i
+hvis der skulle gÃ¥ noget galt med LILO-installationen. PÃ¥ Windows 95
+og 98 kan en bootdisk laves ved at indsÃ¦tte en tom diskette og skrive
+<command>format a: /s</command> pÃ¥ kommandolinjen eller ved at
+hÃ¸jreklikke pÃ¥ diskdrevet og vÃ¦lge 'Format' og markere et kryds i feltet "Kopier systemfiler".
+NÃ¥r computeren starter fra disketten vil du ende i DOS, og kan starte
+Windows ved at udfÃ¸re programmet <command>win</command> i
 <filename>c:\windows</filename>. Under Windows NT og 2000 kan man
 lave en bootdisk ved at formatere en tom diskette (dette er vigtigt
-da der oprettes en NT/2000 bootsektor på disketten) og så kopiere
-følgende tre filer <filename>ntldr</filename>, 
+da der oprettes en NT/2000 bootsektor pÃ¥ disketten) og sÃ¥ kopiere
+fÃ¸lgende tre filer <filename>ntldr</filename>, 
 <filename>ntdetect.com</filename> og <filename>boot.ini</filename> 
 fra roden af <filename>C:</filename>-drevet til disketten.
-Disse filer er normalt både skjulte og 'system'-mærkede og bliver
-normalt ikke vist i Microsoft Explorer med mindre man ændrer deres 
-opsætning.
+Disse filer er normalt bÃ¥de skjulte og 'system'-mÃ¦rkede og bliver
+normalt ikke vist i Microsoft Explorer med mindre man Ã¦ndrer deres 
+opsÃ¦tning.
 </para>
 </sect2>
 
 <sect2 id="rhinstall">
 <title>Installation</title>
 <para>
-Når systemet er startet op igen, og Linux er indlæst, vises en
+NÃ¥r systemet er startet op igen, og Linux er indlÃ¦st, vises en
 velkomstmeddelelse og en <filename>boot:</filename>-prompt nederst i
-skærmbilledet. De allerfleste kan her nøjes med at trykke
-<command>Enter</command> for at fortsætte installationen i grafisk
+skÃ¦rmbilledet. De allerfleste kan her nÃ¸jes med at trykke
+<command>Enter</command> for at fortsÃ¦tte installationen i grafisk
 tilstand. 
 </para>
 
@@ -190,36 +190,36 @@ tilstand.
 </figure>
 
 <para>
-Der vises nu en dialogboks - her kan du passende vælge "Danish" for
+Der vises nu en dialogboks - her kan du passende vÃ¦lge "Danish" for
 dansk installation.
 </para>
 
 <figure id="FedoraCore1-lang-fig" float="1">
-<title>Installation af Fedora Core 1 - Vælg installations-sprog</title>
+<title>Installation af Fedora Core 1 - VÃ¦lg installations-sprog</title>
 <graphic fileref="FedoraCore1_01.&magic;"  scale="60"></graphic>
 </figure>
 
 <indexterm><primary>tastatur</primary><secondary>dansk</secondary></indexterm>
 <indexterm><primary>dansk tastatur</primary></indexterm>
 <para>
-Så skal der vælges en tastaturtype. Vælg "Danish" eller "Danish (latin1)".
-"Danish" er UTF-8 baseret. Det er endnu ikke slået 100% igennem at alle
+SÃ¥ skal der vÃ¦lges en tastaturtype. VÃ¦lg "Danish" eller "Danish (latin1)".
+"Danish" er UTF-8 baseret. Det er endnu ikke slÃ¥et 100% igennem at alle
 programmer anvender dette, men det er (umiddelbart) den vej vi skal.
 </para>
 
 <figure id="FedoraCore1-keyboard-fig" float="1">
-<title>Installation af Fedora Core 1 - Vælg tastaturlayout</title>
+<title>Installation af Fedora Core 1 - VÃ¦lg tastaturlayout</title>
 <graphic fileref="FedoraCore1_02.&magic;"  scale="60"></graphic>
 </figure>
 
 <para>
-Vælg derefter din mus. Med de fleste nye maskiner er den en PS/2 eller USB. Kan
-du finde en tre-knaps mus er det klart at foretrække til Linux. Har du
-kun en to-knaps mus, så husk at angive nederst at den tredje knap skal
-emuleres (at man trykker både højre og venstre vil så svare til et tryk
-på midterste knap af en tre-knaps mus). Serielle porte hedder
+VÃ¦lg derefter din mus. Med de fleste nye maskiner er den en PS/2 eller USB. Kan
+du finde en tre-knaps mus er det klart at foretrÃ¦kke til Linux. Har du
+kun en to-knaps mus, sÃ¥ husk at angive nederst at den tredje knap skal
+emuleres (at man trykker bÃ¥de hÃ¸jre og venstre vil sÃ¥ svare til et tryk
+pÃ¥ midterste knap af en tre-knaps mus). Serielle porte hedder
 <filename>/dev/ttyS</filename> plus et tal startende fra nul. COM1 i
-DOS svarer til <filename>/dev/ttyS0</filename>. Læs evt. videre i
+DOS svarer til <filename>/dev/ttyS0</filename>. LÃ¦s evt. videre i
 <xref linkend="nulGUIapp"/>. Tilsvarende sidder mus med PS/2-stik
 (lille rundt stik) i <filename>/dev/psaux</filename>. 
 </para>
@@ -230,51 +230,51 @@ DOS svarer til <filename>/dev/ttyS0</filename>. Læs evt. videre i
 </indexterm>
 
 <para>
-<emphasis>Tip:</emphasis> Er du kommet til at vælge en forkert
-muse-type, så kan du senere ændre dette ved at du som 'root' kører
+<emphasis>Tip:</emphasis> Er du kommet til at vÃ¦lge en forkert
+muse-type, sÃ¥ kan du senere Ã¦ndre dette ved at du som 'root' kÃ¸rer
 <command>/usr/sbin/mouseconfig</command>. 
 </para>
 
 <indexterm>
  <primary>mus</primary>
- <secondary>venstrehåndet</secondary>
+ <secondary>venstrehÃ¥ndet</secondary>
 </indexterm>
 
 
 <para>
-<emphasis>Tip:</emphasis> Du kan når installationen er færdig bruge
-<command>gpm -B 321</command> til at ændre fra højrehånds-mus til
-venstrehånds-mus.
+<emphasis>Tip:</emphasis> Du kan nÃ¥r installationen er fÃ¦rdig bruge
+<command>gpm -B 321</command> til at Ã¦ndre fra hÃ¸jrehÃ¥nds-mus til
+venstrehÃ¥nds-mus.
 </para>
 
 <figure id="FedoraCore1-mouse-fig" float="1">
-<title>Installation af Fedora Core 1 - Vælg mus</title>
+<title>Installation af Fedora Core 1 - VÃ¦lg mus</title>
 <graphic fileref="FedoraCore1_03.&magic;"  scale="60"></graphic>
 </figure>
 
 
 <para>
-Hernæst kan du blive bedt om at vælge din monitor-type.
-Har du en kendt model, så vælg den direkte. Alternativt skal
-du i gang med at skrive hvilken hastighed monitoren kører med.
+HernÃ¦st kan du blive bedt om at vÃ¦lge din monitor-type.
+Har du en kendt model, sÃ¥ vÃ¦lg den direkte. Alternativt skal
+du i gang med at skrive hvilken hastighed monitoren kÃ¸rer med.
 </para>
 
 <figure id="FedoraCore1-skaermtype-fig" float="1">
-<title>Installation af Fedora Core 1 - Vælg af skærmtype</title>
+<title>Installation af Fedora Core 1 - VÃ¦lg af skÃ¦rmtype</title>
 <graphic fileref="FedoraCore1_04.&magic;"  scale="60"></graphic>
 </figure>
 
 <para>
-Nu kommer vi til installationstyperne. Som vist på <xref
+Nu kommer vi til installationstyperne. Som vist pÃ¥ <xref
 linkend="FedoraCore1-type-fig"/> er der flere forskellige muligheder. Vi
-vælger "Egendefineret system" for at få lov til at vælge lidt
+vÃ¦lger "Egendefineret system" for at fÃ¥ lov til at vÃ¦lge lidt
 mere frit mellem forskellige program-pakker - gider du ikke dette
-så vælg mellem workstation, server og bærbar efter behov.
+sÃ¥ vÃ¦lg mellem workstation, server og bÃ¦rbar efter behov.
 </para>
 
 
 <figure id="FedoraCore1-type-fig" float="1">
-<title>Installation af Fedora Core 1 - Vælg installationstype</title>
+<title>Installation af Fedora Core 1 - VÃ¦lg installationstype</title>
 <graphic fileref="FedoraCore1_05.&magic;"  scale="60"></graphic>
 </figure>
 
@@ -306,7 +306,7 @@ Fildeling, webserver og meget andet findes her.
 
 <listitem>
 <para>"Tilpasset"</para>
-<para>Vil du vælge helt frit hvad der skal installeres, så vælg denne.
+<para>Vil du vÃ¦lge helt frit hvad der skal installeres, sÃ¥ vÃ¦lg denne.
 </para>
 </listitem>
 </itemizedlist>
@@ -315,36 +315,36 @@ Fildeling, webserver og meget andet findes her.
 </sect2>
 
 <sect2 id="redhatpartitioner">
-<title>Partitioner og filtræet</title>
+<title>Partitioner og filtrÃ¦et</title>
 <indexterm><primary>Partitioner</primary></indexterm>
 
 <para>
 Du skal nu enten overlade det til systemet at opdele dine diske
-eller styre det selv. Har du en ren Linux-maskine, så kan du godt
-lade det køre automatisk (da diske kan blive slettet), men ellers
-rådes til at man anvender den manuelle styring.
+eller styre det selv. Har du en ren Linux-maskine, sÃ¥ kan du godt
+lade det kÃ¸re automatisk (da diske kan blive slettet), men ellers
+rÃ¥des til at man anvender den manuelle styring.
 </para>
 
 <figure id="FedoraCore1-disktype-fig" float="1">
-<title>Installation af Fedora Core 1 - Vælg håndtering af harddisk</title>
+<title>Installation af Fedora Core 1 - VÃ¦lg hÃ¥ndtering af harddisk</title>
 <graphic fileref="FedoraCore1_06.&magic;"  scale="60"></graphic>
 </figure>
 
 
 
 <para>
-Nu er vi nået så langt, at vi skal til at beslutte os for, hvilke
+Nu er vi nÃ¥et sÃ¥ langt, at vi skal til at beslutte os for, hvilke
 partitioner der skal oprettes, for at Fedora Core 1 har et sted at blive
-installeret. Har du kørt <command>fips.exe</command> tidligere og har
+installeret. Har du kÃ¸rt <command>fips.exe</command> tidligere og har
 to DOS-partitioner, skal du slette den nye DOS-partition, som er
 tom.
 </para>
 
 <para>
-Vi anbefaler at du vælger "Disk Druide" - et nyere og lidt venligere
-program som Fedora Core 1 tilbyder.  Har du på et senere tidspunkt
-brug for at partitionere din harddisk, så kan du læse om
-<command>fdisk</command> i <xref linkend="fdisk"/>. Vi vælger "Disk
+Vi anbefaler at du vÃ¦lger "Disk Druide" - et nyere og lidt venligere
+program som Fedora Core 1 tilbyder.  Har du pÃ¥ et senere tidspunkt
+brug for at partitionere din harddisk, sÃ¥ kan du lÃ¦se om
+<command>fdisk</command> i <xref linkend="fdisk"/>. Vi vÃ¦lger "Disk
 druiden".  
 </para>
 
@@ -355,27 +355,27 @@ druiden".
 
 
 <para>
-Du vælger en "Ny" og sætter så "Monteringspunkt" til "/" og "Size" til
-den størrelse, du ønsker på rod-partitionen. Tilsvarende gøres ved eventuelle
-andre "Linux Native"-partitioner. Der laves også en "Linux swap"-partition
-med "Ny". Nu skal der vælges, hvor de forskellige partitioner skal
-bruges i Linux-filtræet. "Linux native"-partitionen vælges som "rod". Skriv
+Du vÃ¦lger en "Ny" og sÃ¦tter sÃ¥ "Monteringspunkt" til "/" og "Size" til
+den stÃ¸rrelse, du Ã¸nsker pÃ¥ rod-partitionen. Tilsvarende gÃ¸res ved eventuelle
+andre "Linux Native"-partitioner. Der laves ogsÃ¥ en "Linux swap"-partition
+med "Ny". Nu skal der vÃ¦lges, hvor de forskellige partitioner skal
+bruges i Linux-filtrÃ¦et. "Linux native"-partitionen vÃ¦lges som "rod". Skriv
 <filename>/</filename> ud for denne. 
 </para>
 
 
 <para>
-Det kan nævnes, at du også kan køre med
-flere partitioner og så for eksempel have separate <filename>/usr</filename>
-og <filename>/home</filename>. Vi vælger dog her kun den simple udgave med
+Det kan nÃ¦vnes, at du ogsÃ¥ kan kÃ¸re med
+flere partitioner og sÃ¥ for eksempel have separate <filename>/usr</filename>
+og <filename>/home</filename>. Vi vÃ¦lger dog her kun den simple udgave med
 en enkelt Linux-partition.
 </para>
 
 <para>
-Windows-partitioner kan f.eks. lægges ind som
+Windows-partitioner kan f.eks. lÃ¦gges ind som
 <filename>/dosc</filename> og <filename>/dosd</filename> (eller
 <filename>/cdrev</filename> og <filename>/ddrev</filename>) osv.
-Swap-partitionen skal ikke lægges ind i filtræet. 
+Swap-partitionen skal ikke lÃ¦gges ind i filtrÃ¦et. 
 </para>
 
 </sect2>
@@ -391,9 +391,9 @@ Swap-partitionen skal ikke lægges ind i filtræet.
 <indexterm><primary>Boot af Linux</primary></indexterm>
 
 <para>
-Du kan nu installere en boot-manager. Der er to at vælge i mellem. Den
+Du kan nu installere en boot-manager. Der er to at vÃ¦lge i mellem. Den
 gamle LILO og den nye GRUB. Boot-manageren er et program, der ved
-opstart af din computer giver en menu, hvor du kan vælge at starte
+opstart af din computer giver en menu, hvor du kan vÃ¦lge at starte
 Windows hhv. Linux.
 </para>
 
@@ -405,31 +405,31 @@ Windows hhv. Linux.
 
 <para>
 Hvis du altid vil starte DOS/Windows og kun vil starte Linux 
-med en bootdiskette eller loadlin så skal du ikke installere LILO.
-Hvis du kun kører Linux, eller vil have valget mellem at køre
-Linux eller DOS/Windows når du starter computeren, så skal du 
-installere LILO. Hvis du ikke kender denne del så vælg GRUB.
+med en bootdiskette eller loadlin sÃ¥ skal du ikke installere LILO.
+Hvis du kun kÃ¸rer Linux, eller vil have valget mellem at kÃ¸re
+Linux eller DOS/Windows nÃ¥r du starter computeren, sÃ¥ skal du 
+installere LILO. Hvis du ikke kender denne del sÃ¥ vÃ¦lg GRUB.
 </para>
 
 <para>
-Du kan også bruge DOS-programmet <command>loadlin</command> som
-boot-loader, der ligger i <filename>\DOSUTILS</filename> kataloget på
+Du kan ogsÃ¥ bruge DOS-programmet <command>loadlin</command> som
+boot-loader, der ligger i <filename>\DOSUTILS</filename> kataloget pÃ¥
 Linux installations-cd-rom'en til at starte Linux fra
 DOS-kommandolinjen.
 </para>
 
 
 <para>
-MBR er det første boot-spor af din harddisk (Master Boot Record)
-- hvor du måske ønsker at kunne starte andre styresystemer.
+MBR er det fÃ¸rste boot-spor af din harddisk (Master Boot Record)
+- hvor du mÃ¥ske Ã¸nsker at kunne starte andre styresystemer.
 </para>
 
 
 <para>
-LILO og GRUB er små programmer med mange opsætningsmuligheder. Vælg
+LILO og GRUB er smÃ¥ programmer med mange opsÃ¦tningsmuligheder. VÃ¦lg
 at installere i Master Boot Record, hvis LILO hhv. GRUB skal styre alt boot
-fra nu af. Du kan slutteligt tilføje parametre til boot, så
-Linux nemmere kan finde hardware. Normalt er det ikke nødvendigt.
+fra nu af. Du kan slutteligt tilfÃ¸je parametre til boot, sÃ¥
+Linux nemmere kan finde hardware. Normalt er det ikke nÃ¸dvendigt.
 </para>
 
 <indexterm><primary>Fjerne LILO</primary></indexterm>
@@ -439,7 +439,7 @@ Linux nemmere kan finde hardware. Normalt er det ikke nødvendigt.
 <indexterm><primary>Boot</primary><secondary>Fjerne Linux boot-manager</secondary></indexterm>
 
 <para>
-<emphasis>Tip</emphasis>: Fortryder du senere dette, så brug i et
+<emphasis>Tip</emphasis>: Fortryder du senere dette, sÃ¥ brug i et
 DOS/Windows-vindue <command>fdisk /mbr</command> for at slette LILO
 hhv. GRUB. Dette virke med DOS-partitioner og vfat, men ikke NTFS.
 </para>
@@ -450,17 +450,17 @@ hhv. GRUB. Dette virke med DOS-partitioner og vfat, men ikke NTFS.
 <sect2 id="rh-netkort">
 <title>Installation af netkort</title>
 <para>
-Har du et netkort i din maskine og vil have maskinen ind på et
-eksisterende netværk skal du nu skrive netværksparametre ind. Disse
-får du fra din netværksadministrator og du må ikke skrive forkert
+Har du et netkort i din maskine og vil have maskinen ind pÃ¥ et
+eksisterende netvÃ¦rk skal du nu skrive netvÃ¦rksparametre ind. Disse
+fÃ¥r du fra din netvÃ¦rksadministrator og du mÃ¥ ikke skrive forkert
 her. Hvad de enkelte dele er, vil blive forklaret i "Linux - Friheden
-til at lære Unix".  Anvend DHCP hvis du har en ADSL-router som
+til at lÃ¦re Unix".  Anvend DHCP hvis du har en ADSL-router som
 automatisk kan uddele IP-adresser. Denne del kan springes over hvis
 du ikke ved hvad du skal skrive her.
 </para>
 
 <figure id="FedoraCore1-network-fig" float="1">
-<title>Installation af Fedora Core 1 - netværk</title>
+<title>Installation af Fedora Core 1 - netvÃ¦rk</title>
 <graphic fileref="FedoraCore1_09.&magic;"  scale="60"></graphic>
 </figure>
 
@@ -468,16 +468,16 @@ du ikke ved hvad du skal skrive her.
 
 
 <sect2 id="rh-firewall"> 
-<title>Opsætning af brandmur (firewall)</title>
+<title>OpsÃ¦tning af brandmur (firewall)</title>
 <para>
-I næste vindue kan du sætte en brandmur, dvs. en firewall, op.  En
-firewall skærmer dig mod andre maskiner, og højner sikkerheden, men
-kan aldrig gardere dig 100%. Der er tre niveauer - Høj, Middel og
+I nÃ¦ste vindue kan du sÃ¦tte en brandmur, dvs. en firewall, op.  En
+firewall skÃ¦rmer dig mod andre maskiner, og hÃ¸jner sikkerheden, men
+kan aldrig gardere dig 100%. Der er tre niveauer - HÃ¸j, Middel og
 Ingen brandmur. Tag mindst Middel og anvend som udgangspunkt standardregler. 
 </para>
 
 <figure id="FedoraCore1-firewall-fig" float="1">
-<title>Installation af Fedora Core 1 - Firewall-opsætning</title>
+<title>Installation af Fedora Core 1 - Firewall-opsÃ¦tning</title>
 <graphic fileref="FedoraCore1_10.&magic;"  scale="60"></graphic>
 </figure>
 </sect2>
@@ -485,9 +485,9 @@ Ingen brandmur. Tag mindst Middel og anvend som udgangspunkt standardregler.
 <sect2 id="rh-sprog"> 
 <title>Sprog og tidszone</title>
 <para>
-I næste vindue kan du sætte op hvor mange sprog, du skal have 
-installeret med vejledninger osv. for. Vælg "Danish" og
-eventuelle andre ønsker.
+I nÃ¦ste vindue kan du sÃ¦tte op hvor mange sprog, du skal have 
+installeret med vejledninger osv. for. VÃ¦lg "Danish" og
+eventuelle andre Ã¸nsker.
 </para>
 
 <figure id="FedoraCore1-langsupport-fig" float="1">
@@ -497,14 +497,14 @@ eventuelle andre ønsker.
 
 
 <para> 
-I næste vindue vælges tidszone til "Europa/København" ved at
-klikke på Danmark. Du har mulighed for at vælge om din pc kører i GMT
+I nÃ¦ste vindue vÃ¦lges tidszone til "Europa/KÃ¸benhavn" ved at
+klikke pÃ¥ Danmark. Du har mulighed for at vÃ¦lge om din pc kÃ¸rer i GMT
 (universal time zone) eller lokal tid. For Linux-servere vil man typisk
-vælge GMT mens til blandede Windows/Linux-maskiner er det nemmest med lokal 
-tid. Windows kan ikke køre med GMT i
+vÃ¦lge GMT mens til blandede Windows/Linux-maskiner er det nemmest med lokal 
+tid. Windows kan ikke kÃ¸re med GMT i
 BIOS, og det betyder blot et problem med sommertid.  Har du lyst til
-at vælge om senere efter installationen, så kan du køre
-<command>/usr/sbin/timeconfig</command> for at vælge om.  </para>
+at vÃ¦lge om senere efter installationen, sÃ¥ kan du kÃ¸re
+<command>/usr/sbin/timeconfig</command> for at vÃ¦lge om.  </para>
 
 <figure id="FedoraCore1-timezone-fig" float="1">
 <title>Installation af Fedora Core 1 - Tidszone</title>
@@ -518,14 +518,14 @@ at vælge om senere efter installationen, så kan du køre
 <title>Valg af adgangskode</title>
 
 <para>
-Du skal nu vælge en god adgangskode (eng. password) for
-systemadministrator-kontoen (root). Det må ikke være et navn, der kan
+Du skal nu vÃ¦lge en god adgangskode (eng. password) for
+systemadministrator-kontoen (root). Det mÃ¥ ikke vÃ¦re et navn, der kan
 findes i en ordbog, heller ikke simple ting, som andre kan vide om dig.
 Brug hellere mere indviklede ting som forbogstaver fra en remse,
-f.eks. kan "Ole sad på en knold og sang" blive til kodeordet
-"Osp1kos". Brug store OG små bogstaver samt tal. Brug mindst 7 tegn og
-meget gerne 8 tegn. En adgangskode på 3 tegn kan knækkes på under et
-sekund på en pc, og fire tegn på langt under et minut. For 8 tegn
+f.eks. kan "Ole sad pÃ¥ en knold og sang" blive til kodeordet
+"Osp1kos". Brug store OG smÃ¥ bogstaver samt tal. Brug mindst 7 tegn og
+meget gerne 8 tegn. En adgangskode pÃ¥ 3 tegn kan knÃ¦kkes pÃ¥ under et
+sekund pÃ¥ en pc, og fire tegn pÃ¥ langt under et minut. For 8 tegn
 tager det lang tid!
 </para>
 
@@ -536,14 +536,14 @@ tager det lang tid!
 
 
 <para>
-Du kan alt som <filename>root</filename> - også slette alt. Du bør derfor
+Du kan alt som <filename>root</filename> - ogsÃ¥ slette alt. Du bÃ¸r derfor
 kun bruge din root-konto til systemarbejde. 
 </para>
 
 
 <para>
 Nu bedes du om at verificere at det er de rette pakker som skal installeres. 
-Der er her mulighed for at få lidt mere med :-)
+Der er her mulighed for at fÃ¥ lidt mere med :-)
 </para>
 
 
@@ -553,18 +553,18 @@ Der er her mulighed for at få lidt mere med :-)
 </figure>
 
 <para>
-Vælger du at tilføje flere pakker til installationen eller evt. at fjerne nogle 
-så  får du følgende skærmbillede frem.
+VÃ¦lger du at tilfÃ¸je flere pakker til installationen eller evt. at fjerne nogle 
+sÃ¥  fÃ¥r du fÃ¸lgende skÃ¦rmbillede frem.
 </para>
 
 <figure id="FedoraCore1-pakketjek2-fig" float="1">
-<title>Installation af Fedora Core 1 - Tilføjer eller fjerner pakker</title>
+<title>Installation af Fedora Core 1 - TilfÃ¸jer eller fjerner pakker</title>
 <graphic fileref="FedoraCore1_15.&magic;"  scale="60"></graphic>
 </figure>
 
 
 <para>
-Så er vi klar til installation
+SÃ¥ er vi klar til installation
 </para>
 
 <figure id="FedoraCore1-klar-fig" float="1">
@@ -574,8 +574,8 @@ Så er vi klar til installation
 
 <para>
 Nu er vi klar til den pause - som passer fint med at alle pakkerne
-skal installeres. Det kan tage sin tid alt efter hvor "grådig" du er
-og hvor hurtig din maskine er. Der står dog altid på skærmen, hvor
+skal installeres. Det kan tage sin tid alt efter hvor "grÃ¥dig" du er
+og hvor hurtig din maskine er. Der stÃ¥r dog altid pÃ¥ skÃ¦rmen, hvor
 lang tid der ca. er tilbage.
 </para>
 
@@ -584,12 +584,12 @@ Langt inde i installationen skal du skifte fra cd-rom nummer 1 til
 nummer 2 og tilsvarende fra 2 til 3.
 </para>
 
-<para> Du kan nu lave en bootdisk - <emphasis>vælg dette</emphasis>.
-Du bør vælge at lave en Linux-bootdisk på en tom diskette. Gør dette,
-og gem den et sikkert sted. Så kan du altid få kontakt med
+<para> Du kan nu lave en bootdisk - <emphasis>vÃ¦lg dette</emphasis>.
+Du bÃ¸r vÃ¦lge at lave en Linux-bootdisk pÃ¥ en tom diskette. GÃ¸r dette,
+og gem den et sikkert sted. SÃ¥ kan du altid fÃ¥ kontakt med
 Linux-partitionen hvis du kommer til at lave fejl i opstartssystemet.
-Disketten skal først indsættes efter størstedelen af installationen er
-færdig. 
+Disketten skal fÃ¸rst indsÃ¦ttes efter stÃ¸rstedelen af installationen er
+fÃ¦rdig. 
 </para>
 
 
@@ -604,24 +604,24 @@ færdig.
 
 
 <sect2 id="rhgo">
-<title>Nu skal vi køre Linux</title>
+<title>Nu skal vi kÃ¸re Linux</title>
 
 <para>
 Tryk Enter og maskinen starter - enten via GRUB eller din
-bootdisk. En lang tur, men nu kan der køres Linux.
+bootdisk. En lang tur, men nu kan der kÃ¸res Linux.
 </para>
 
 <para>
 Hvis du valgte grafisk adgangskontrol, kan du nu logge ind via den brugerkonto,
 du lavede til dig selv eller som root.  Du kan hoppe fra den grafiske
-adgangskontrol-skærm til en tekstbaseret (f.eks. hvis du har grafik-problemer),
+adgangskontrol-skÃ¦rm til en tekstbaseret (f.eks. hvis du har grafik-problemer),
 ved at trykke "Ctrl-Alt-F1".  Log f.eks. ind som brugeren
 <filename>root</filename> og skriv den adgangskode, som du valgte
 tidligere.
 </para>
 
 <para>
-Du skal også sætte nye brugerkonti op mv. første gang.
+Du skal ogsÃ¥ sÃ¦tte nye brugerkonti op mv. fÃ¸rste gang.
 </para>
 
 </sect2>
@@ -629,34 +629,34 @@ Du skal også sætte nye brugerkonti op mv. første gang.
 </sect1>
 
 <sect1 id="ftp-inst">
-<title>Installation via netværk</title>
+<title>Installation via netvÃ¦rk</title>
 <indexterm>
- <primary>Installation</primary><secondary>via netværk</secondary>
+ <primary>Installation</primary><secondary>via netvÃ¦rk</secondary>
 </indexterm>
 
 <para>
-Specielt med ældre specielle cd-rom-drev kan det ske, at du ikke kan
-installere via cd-rom-drevet. I stedet kan du prøve at installere Linux
+Specielt med Ã¦ldre specielle cd-rom-drev kan det ske, at du ikke kan
+installere via cd-rom-drevet. I stedet kan du prÃ¸ve at installere Linux
 via ftp (NFS eller http). Og har du mange maskiner der skal installeres
-er det lettere på den måde.
+er det lettere pÃ¥ den mÃ¥de.
 </para>
 
 <sect2 id="installation-via-http">
-<title>Installation via HTTP over netværk</title>
+<title>Installation via HTTP over netvÃ¦rk</title>
 <para>
-Et måde man kan installere Red Hat direkte er følgende.
-Man kan på denne måde nok spare en del transmissionstid, i forhold til
-hvis man ville hente alle installations-cd'erne via nettet, brænde dem
-og installere dem. Det er også en god måde at
-installere på hvis man ikke har et cd-rom-drev. Du sparer lidt arbejdstid
-ved bl.a. ikke at skulle brænde og skifte cd-rom'er, men din maskine
-er længere utilgængelig, hvor du ikke kan lave andet på den.
-Hvis du kører med modem eller ISDN sparer du ganske mange timers
-telefontid, måske endog så meget at projektet er gennemførligt.
+Et mÃ¥de man kan installere Red Hat direkte er fÃ¸lgende.
+Man kan pÃ¥ denne mÃ¥de nok spare en del transmissionstid, i forhold til
+hvis man ville hente alle installations-cd'erne via nettet, brÃ¦nde dem
+og installere dem. Det er ogsÃ¥ en god mÃ¥de at
+installere pÃ¥ hvis man ikke har et cd-rom-drev. Du sparer lidt arbejdstid
+ved bl.a. ikke at skulle brÃ¦nde og skifte cd-rom'er, men din maskine
+er lÃ¦ngere utilgÃ¦ngelig, hvor du ikke kan lave andet pÃ¥ den.
+Hvis du kÃ¸rer med modem eller ISDN sparer du ganske mange timers
+telefontid, mÃ¥ske endog sÃ¥ meget at projektet er gennemfÃ¸rligt.
 </para>
 
 <para>
-Besparelserne på transmissionstiden sker fordi man normalt ikke
+Besparelserne pÃ¥ transmissionstiden sker fordi man normalt ikke
 vil installere det hele, for eksempel ikke alt server-programmellet, eller
 alle de ca 50 forskellige sprogversioner.
 </para>
@@ -664,7 +664,7 @@ alle de ca 50 forskellige sprogversioner.
 <para>
 Det er ikke alle servere der er sat op med HTTP-adgang til
 installation af redhat og mandrake, men klid.dk er .
-Hvad man gør er følgende:
+Hvad man gÃ¸r er fÃ¸lgende:
 </para>
 
 <orderedlist>
@@ -675,14 +675,14 @@ Hent diskettefilen bootnet.img fra nettet
 </listitem>
 <listitem> 
  <para>
-Skriv den ud på diskette med Unix <command>dd</command> eller 
+Skriv den ud pÃ¥ diskette med Unix <command>dd</command> eller 
 DOS-kommandoen <command>rawrite</command>.
  </para>
 </listitem>
 <listitem> 
  <para>
- Boot fra diskette, vælg HTTP som protokol, sæt netværksforbindelse
-   op med DHCP eller fast adresse som sædvanligt.
+ Boot fra diskette, vÃ¦lg HTTP som protokol, sÃ¦t netvÃ¦rksforbindelse
+   op med DHCP eller fast adresse som sÃ¦dvanligt.
  </para>
 </listitem>
 <listitem> 
@@ -692,7 +692,7 @@ Hent installationen via nettet, f.eks. maskine: klid.dk katalog: <filename>sw/re
 </listitem>
 <listitem> 
  <para>
-  Installationen starter, der vil gå noget tid - 
+  Installationen starter, der vil gÃ¥ noget tid - 
    med 256 Kbit ADSL mellem 5 og 15 minutter -
    to gange hvor der ikke ser ud til at ske noget, men du
    kan se at der er heftig netaktivitet!
@@ -700,9 +700,9 @@ Hent installationen via nettet, f.eks. maskine: klid.dk katalog: <filename>sw/re
 </listitem>
 <listitem> 
  <para>
-Installationen er i teksttilstand, der er desværre ikke
+Installationen er i teksttilstand, der er desvÃ¦rre ikke
    mulighed for den fine grafiske installation. Ellers installeres
-   på almindelig måde.
+   pÃ¥ almindelig mÃ¥de.
  </para>
 </listitem>
 </orderedlist>
@@ -710,33 +710,33 @@ Installationen er i teksttilstand, der er desværre ikke
 </sect2>
 
 <sect2 id="installation-via-nfs">
-<title>Installation via NFS over netværk</title>
+<title>Installation via NFS over netvÃ¦rk</title>
 
 <para>
-Skal man installere Linux via netværk, bruges en diskette med filen
+Skal man installere Linux via netvÃ¦rk, bruges en diskette med filen
 <filename>bootnet.img</filename>. Den ligger under
-<filename>/images/</filename> på cd-rom'en.  Da de fleste computere i
+<filename>/images/</filename> pÃ¥ cd-rom'en.  Da de fleste computere i
 dag kan starte direkte fra cd-rom, har du sikkert glemt hvordan man
 fremstiller en opstartsdiskette. 
-Når man booter fra bootnet.img-disketten bliver man spurgt to
+NÃ¥r man booter fra bootnet.img-disketten bliver man spurgt to
 gange om IP-adresser:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-   IP-adressen på klienten (den nye Linux-maskine)
+   IP-adressen pÃ¥ klienten (den nye Linux-maskine)
  </para>
 </listitem>
 <listitem> 
  <para>
-   IP-adressen på NFS server
+   IP-adressen pÃ¥ NFS server
  </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Indsæt en formateret diskette i diskettedrevet og montér cd-rom'en.
+IndsÃ¦t en formateret diskette i diskettedrevet og montÃ©r cd-rom'en.
 </para>
 
 <screen>
@@ -746,25 +746,25 @@ Indsæt en formateret diskette i diskettedrevet og montér cd-rom'en.
 
 <para>
 Nu har du din startdiskette. Hvis din maskine har et skummelt netkort
-så lav evt. en diskette med <filename>drivers.img</filename> så har du
-flere netkort at vælge imellem.
+sÃ¥ lav evt. en diskette med <filename>drivers.img</filename> sÃ¥ har du
+flere netkort at vÃ¦lge imellem.
 </para>
 
 <para>
-Nu skal vi så have noget at installere fra. 
-En anden Linux-maskine sættes så op i netværket med ftp-server,
-NFS-server eller hvad du nu ønsker.
+Nu skal vi sÃ¥ have noget at installere fra. 
+En anden Linux-maskine sÃ¦ttes sÃ¥ op i netvÃ¦rket med ftp-server,
+NFS-server eller hvad du nu Ã¸nsker.
 </para>
 
 <para> 
-Da Red Hat kommer fordelt på flere cd-rom'er
-går det desværre ikke, bare at montere cd-rom'en og installere fra
-den. Cd-rom'erne skal hældes over på en harddisk (de fylder mellem 1 og 2
+Da Red Hat kommer fordelt pÃ¥ flere cd-rom'er
+gÃ¥r det desvÃ¦rre ikke, bare at montere cd-rom'en og installere fra
+den. Cd-rom'erne skal hÃ¦ldes over pÃ¥ en harddisk (de fylder mellem 1 og 2
 Gb).  
 </para>
 
 <para>
-Følgende fremgangsmåde er en omarbejdet udgave af den, som Red Hat beskriver:
+FÃ¸lgende fremgangsmÃ¥de er en omarbejdet udgave af den, som Red Hat beskriver:
 </para>
 
 <screen>
@@ -772,7 +772,7 @@ Følgende fremgangsmåde er en omarbejdet udgave af den, som Red Hat beskriver:
 </screen>
 
 <para>
-Indsæt cd-rom en efter en og gentag følgende
+IndsÃ¦t cd-rom en efter en og gentag fÃ¸lgende
 </para>
 
 <screen>
@@ -783,7 +783,7 @@ Indsæt cd-rom en efter en og gentag følgende
 
 <para>
 Hvis du vil installere via NFS skriver du i filen
-filen<filename>/etc/exports</filename> følgende:
+filen<filename>/etc/exports</filename> fÃ¸lgende:
 </para>
 
 <programlisting>
@@ -794,20 +794,20 @@ filen<filename>/etc/exports</filename> følgende:
 <para>
 Herefter starter man den gamle maskine uden cd-rom-drev fra
 <filename>bootnet.img</filename>-disketten, og angiver IP-nummer eller
-navn på serveren, når man bliver spurgt.  Som underkatalog angives
-blot <filename>cdrom</filename> ved FTP-installation, og <filename>/var/ftp/cdrom</filename> ved NFS-installation.  Resten af installationen foregår
+navn pÃ¥ serveren, nÃ¥r man bliver spurgt.  Som underkatalog angives
+blot <filename>cdrom</filename> ved FTP-installation, og <filename>/var/ftp/cdrom</filename> ved NFS-installation.  Resten af installationen foregÃ¥r
 som beskrevet i <xref linkend="installredhat"/>.
 </para>
 
 </sect2>
-</sect1> <!-- ftp-inst via netværk -->
+</sect1> <!-- ftp-inst via netvÃ¦rk -->
 
 
 
 <sect1 id="gode-redhat-sites">
 <title>Gode steder at finde nye Red Hat RPM-pakker</title>
 <para>
-Et sted man bør kende som Red Hat bruger er
+Et sted man bÃ¸r kende som Red Hat bruger er
 <ulink url="http://www.freshrpms.net">http://www.freshrpms.net</ulink>, 
 hvorfra man kan finde nye RPM-pakker netop til Red Hat. 
 Typisk kan man her finde de nyeste grafiske programmer til at spille DVD'er, 

@@ -2,12 +2,12 @@
 <title>Video og DVD</title>
 
 <para>
-I dette kapitel ser vi på programmer til at håndtere video.
+I dette kapitel ser vi pÃ¥ programmer til at hÃ¥ndtere video.
 </para>
 
 <para>
-Det skal også nævnes at mange af de programmer som omtales i dette kapitel
-fås færdigoversat til Red Hat 7.3 på <ulink url="http://valhalla.freshrpms.net">http://valhalla.freshrpms.net</ulink>.
+Det skal ogsÃ¥ nÃ¦vnes at mange af de programmer som omtales i dette kapitel
+fÃ¥s fÃ¦rdigoversat til Red Hat 7.3 pÃ¥ <ulink url="http://valhalla.freshrpms.net">http://valhalla.freshrpms.net</ulink>.
 </para>
 
 
@@ -15,7 +15,7 @@ fås færdigoversat til Red Hat 7.3 på <ulink url="http://valhalla.freshrpms.net">
 <title>Afspille film</title>
 
 <para>
-Der er ved at komme flere muligheder for at se film på
+Der er ved at komme flere muligheder for at se film pÃ¥
 Linux-maskiner. 
 </para>
 
@@ -24,11 +24,11 @@ Linux-maskiner.
 <indexterm><primary>Afspille film</primary></indexterm>
 
 <para>
-Hvis du installerer <command>xanim</command>, så har KDE en glimrende 
+Hvis du installerer <command>xanim</command>, sÃ¥ har KDE en glimrende 
 film-afspiller, som mindst kan tage mov-film. Du finder den via KDE
 menuen <command>K-&gt;Multimedia-&gt;aKtion</command>. Med musen kan
-du vælge skærm-størrelse. Har du ikke en stærk maskine, så vælger du
-nok en lille skærm-størrelse ;-)
+du vÃ¦lge skÃ¦rm-stÃ¸rrelse. Har du ikke en stÃ¦rk maskine, sÃ¥ vÃ¦lger du
+nok en lille skÃ¦rm-stÃ¸rrelse ;-)
 </para>
 
 <figure id="aKtion-fig" float="1">
@@ -43,9 +43,9 @@ nok en lille skærm-størrelse ;-)
 <indexterm><primary>video</primary></indexterm>
 <indexterm><primary>RealPlayer</primary></indexterm>
 <para>
-Vi kan også nævne at du til at spille RealVideo-film fra nettet kan
-have glæde af at finde den gratis "RealPlayer 8 Basic" fra 
-<ulink url="http://www.real.com/">http://www.real.com</ulink> (klik på
+Vi kan ogsÃ¥ nÃ¦vne at du til at spille RealVideo-film fra nettet kan
+have glÃ¦de af at finde den gratis "RealPlayer 8 Basic" fra 
+<ulink url="http://www.real.com/">http://www.real.com</ulink> (klik pÃ¥
 Real Player -> RealPlayer 8 Basic).
 </para>
 
@@ -58,31 +58,31 @@ Real Player -> RealPlayer 8 Basic).
   <indexterm><primary>vsound</primary></indexterm>
   <indexterm><primary>gemme RealAudio til disk</primary></indexterm>
 
-  Et andet interessant program er <command>vsound</command>, der findes på
+  Et andet interessant program er <command>vsound</command>, der findes pÃ¥
   <ulink
   url="http://www.zip.com.au/~erikd/vsound/">http://www.zip.com.au/~erikd/vsound/</ulink>.
   Med det kan du gemme RealAudio til disk.
  </para>
 
  <para>
-  Programmet installeres på få sekunder med <command>./configure &amp;&amp;
+  Programmet installeres pÃ¥ fÃ¥ sekunder med <command>./configure &amp;&amp;
   make &amp;&amp; su -c 'make install &amp;&amp; echo O.k.'</command>. Det kan
-  ske at det derefter er nødvendigt at udføre kommandoen
+  ske at det derefter er nÃ¸dvendigt at udfÃ¸re kommandoen
   <command>chmod +s /usr/local/bin/vsound</command>.
  </para>
 
  <para>
   Nu kan du bruge
   <command>vsound -f lyd.wav -d realplay MIN_REAL_VIDEO.rm</command> til at
-  oversætte RealVideo-filen <filename>MIN_REAL_VIDEO.rm</filename> til en
+  oversÃ¦tte RealVideo-filen <filename>MIN_REAL_VIDEO.rm</filename> til en
   lydfil med navnet <filename>lyd.wav</filename>. Vsound bruger
-  <command>realplay</command> som afspiller (den skal være installeret - se
+  <command>realplay</command> som afspiller (den skal vÃ¦re installeret - se
   <xref linkend="realplayer"/>).
  </para>
 </sect2>
 
 <!-- Oprindeligt skrevet af Anders Bruun Olsen anders@bruun-olsen.net, -->
-<!-- med særlig fokus på installation af mplayer. Nyt afsnit om -->
+<!-- med sÃ¦rlig fokus pÃ¥ installation af mplayer. Nyt afsnit om -->
 <!-- mplayer, med information om blandt andet en plugin til mozilla -->
 <!-- skrevet af Mads Sabroe. -->
 <sect2 id="DivX">
@@ -105,16 +105,16 @@ Real Player -> RealPlayer 8 Basic).
 
 <para>MPlayer er en alsidig medieafspiller, der stort set kan
 afspille alle codecs &ndash; f.eks. DivX, Quicktime film, WMV, WMA,
-etc. MPlayer følger med de fleste moderne distributioner, men kun i
-skrabede versioner hvor det for eksempel ikke kan lade sig gøre at afspille WMV
+etc. MPlayer fÃ¸lger med de fleste moderne distributioner, men kun i
+skrabede versioner hvor det for eksempel ikke kan lade sig gÃ¸re at afspille WMV
 og Quicktime. (Grunden til at de fleste distributioner ikke kan dette
-som standard er at distributørene ikke tør inkludere de nødvendige
-codecs af frygt for patentproblemer). Det kan der rodes bod på, ved at
-hente kildeteksten samt de nødvendige codecs fra <ulink
+som standard er at distributÃ¸rene ikke tÃ¸r inkludere de nÃ¸dvendige
+codecs af frygt for patentproblemer). Det kan der rodes bod pÃ¥, ved at
+hente kildeteksten samt de nÃ¸dvendige codecs fra <ulink
 url="http://www.mplayerhq.hu"> http://www.mplayerhq.hu</ulink>. Det
-kan dog være en lidt af en langhåret affære, da MPlayer kan være svær
-at oversætte fra kildetekst. Afhængig af distribution, findes der
-forskellige måder at hente pakker med køreklare, oversatte udgaver af
+kan dog vÃ¦re en lidt af en langhÃ¥ret affÃ¦re, da MPlayer kan vÃ¦re svÃ¦r
+at oversÃ¦tte fra kildetekst. AfhÃ¦ngig af distribution, findes der
+forskellige mÃ¥der at hente pakker med kÃ¸reklare, oversatte udgaver af
 den fulde version
 fra diverse hjemmesider. For at hente en oversat udgave af
 MPlayer, som kan afspille WMV, Quicktime, etc., kan man som
@@ -124,14 +124,14 @@ http://plf.zarb.org/~nanardon/</ulink>) og som Red Hat eller Fedora-bruger anven
 <ulink url="http://apt.freshrpms.net/">
 http://apt.freshrpms.net/</ulink>.</para>
 
-<para>MPlayer kan også afspille streamet radio fra for eksempel P3, som
-benytter sig af *.asx formatet. Det kan eksempelvis være:</para>
+<para>MPlayer kan ogsÃ¥ afspille streamet radio fra for eksempel P3, som
+benytter sig af *.asx formatet. Det kan eksempelvis vÃ¦re:</para>
 
 <itemizedlist mark="bullet">
-<listitem><para>Boogie på DR: <ulink url="http://www.dr.dk/netradio/boogie.asx">http://www.dr.dk/netradio/boogie.asx</ulink></para></listitem>
-<listitem><para>Electric på DR: <ulink url="http://www.dr.dk/netradio/electric.asx">http://www.dr.dk/netradio/electric.asx</ulink></para></listitem>
-<listitem><para>Jazz på DR: <ulink url="http://www.dr.dk/netradio/drjazz.asx">http://www.dr.dk/netradio/drjazz.asx</ulink></para></listitem>
-<listitem><para>Soft på DR: <ulink url="http://www.dr.dk/netradio/drsoft.asx">http://www.dr.dk/netradio/drsoft.asx</ulink></para></listitem>
+<listitem><para>Boogie pÃ¥ DR: <ulink url="http://www.dr.dk/netradio/boogie.asx">http://www.dr.dk/netradio/boogie.asx</ulink></para></listitem>
+<listitem><para>Electric pÃ¥ DR: <ulink url="http://www.dr.dk/netradio/electric.asx">http://www.dr.dk/netradio/electric.asx</ulink></para></listitem>
+<listitem><para>Jazz pÃ¥ DR: <ulink url="http://www.dr.dk/netradio/drjazz.asx">http://www.dr.dk/netradio/drjazz.asx</ulink></para></listitem>
+<listitem><para>Soft pÃ¥ DR: <ulink url="http://www.dr.dk/netradio/drsoft.asx">http://www.dr.dk/netradio/drsoft.asx</ulink></para></listitem>
 <listitem><para>The Voice: <ulink url="http://dix.media.webpartner.dk/voice128">http://dix.media.webpartner.dk/voice128</ulink></para></listitem>
 </itemizedlist>
 
@@ -140,11 +140,11 @@ af ovst. links.
 </para>
 
 <para>En god egenskab ved MPlayer er at den kan vise undertekster ved
-afspilning af for eksempel DivX-film. Endvidere understøtter den flere lydspor,
-hvis det er med i DivX-filmen. MPlayer kan også afspille SVCD-film,
+afspilning af for eksempel DivX-film. Endvidere understÃ¸tter den flere lydspor,
+hvis det er med i DivX-filmen. MPlayer kan ogsÃ¥ afspille SVCD-film,
 som befinder sig i <filename>*.cue</filename> eller
-<filename>*.bin</filename> filer, uden at det er nødvendigt at brænde
-dem til en cd først.</para>
+<filename>*.bin</filename> filer, uden at det er nÃ¸dvendigt at brÃ¦nde
+dem til en cd fÃ¸rst.</para>
 
 <figure id="mplayer-fig3" float="1">
 <title>MPlayer afspiller en film med undertekster</title>
@@ -152,13 +152,13 @@ dem til en cd først.</para>
 </figure>
 
 <indexterm><primary>gmplayer</primary><secondary>skins til</secondary></indexterm>
-<indexterm><primary>MPlayer</primary><secondary>grafisk brugergrænseflade</secondary></indexterm>
+<indexterm><primary>MPlayer</primary><secondary>grafisk brugergrÃ¦nseflade</secondary></indexterm>
 <para>MPlayer er som udgangspunkt et kommandolinjeprogram
-(<command>mplayer</command>), men med MPlayer følger også en grafisk
-brugergrænseflade, kaldet <command>gmplayer</command>. (Nogen
+(<command>mplayer</command>), men med MPlayer fÃ¸lger ogsÃ¥ en grafisk
+brugergrÃ¦nseflade, kaldet <command>gmplayer</command>. (Nogen
 distributioner, f.eks. Mandrake, putter <command>gmplayer</command> i
 en separat pakke der f.eks. kan hedde "mplayer-gui"). Til denne
-brugergrænseflade kan hentes forskellige skins. De kan hentes fra
+brugergrÃ¦nseflade kan hentes forskellige skins. De kan hentes fra
 f.eks.  <ulink
 url="http://www.mplayerhq.hu">http://www.mplayerhq.hu</ulink>, <ulink
 url="http://themes.freshmeat.net/browse/1024/?topic_id=1024">
@@ -166,7 +166,7 @@ http://themes.freshmeat.net/browse/1024/?topic_id=1024</ulink> og
 <ulink url="http://ryan.adeptit.com.au/">
 http://ryan.adeptit.com.au/</ulink>.</para>
 
-<para>Her er nogle eksempler på et par skins der findes til
+<para>Her er nogle eksempler pÃ¥ et par skins der findes til
 MPlayer/<command>gmplayer</command></para>
 
 
@@ -182,11 +182,11 @@ MPlayer/<command>gmplayer</command></para>
 </figure>
 
 <indexterm><primary>MPlayer</primary><secondary>browser plugin</secondary></indexterm>
-<para>På <ulink url="http://mplayerplug-in.sourceforge.net/">
+<para>PÃ¥ <ulink url="http://mplayerplug-in.sourceforge.net/">
 http://mplayerplug-in.sourceforge.net/</ulink> kan du hente en plugin
-til Mozilla, som muliggører afspilning af for eksempel trailers på
+til Mozilla, som muliggÃ¸rer afspilning af for eksempel trailers pÃ¥
 <ulink url="http://www.apple.com/quicktime/">
-http://www.apple.com/quicktime/</ulink>. Desværre er den ikke 100%
+http://www.apple.com/quicktime/</ulink>. DesvÃ¦rre er den ikke 100%
 kompatibel med alle sider.</para>
 
 
@@ -205,7 +205,7 @@ kompatibel med alle sider.</para>
    <para>
     Et alternativ til MPlayer som mange Debian-brugere anbefaler er programmet
     <command>Avifile</command>. Avifile ligger i en Debian-unstable pakke og
-    vil ikke blive gennemgået her.
+    vil ikke blive gennemgÃ¥et her.
    </para>
   </sect3>
  </sect2>
@@ -224,16 +224,16 @@ kompatibel med alle sider.</para>
 <para>
 Hvis du har en DVD-afspiller (DVD-ROM) i din computer, har du
 mulighed for at afspille DVD-film.
-I dette afsnit skal vi se nærmere på mulighederne for at afspille
+I dette afsnit skal vi se nÃ¦rmere pÃ¥ mulighederne for at afspille
 DVD-film i Linux.
 </para>
 
 <para>
-Et generelt trick er at man skal huske at få sat
-overførsels-hastigheden til DVD-drevet maksimalt.  Typiske DVD-drev
-kan klare DMA66, hvilket kan slås til ved at køre
+Et generelt trick er at man skal huske at fÃ¥ sat
+overfÃ¸rsels-hastigheden til DVD-drevet maksimalt.  Typiske DVD-drev
+kan klare DMA66, hvilket kan slÃ¥s til ved at kÃ¸re
 <command>/sbin/hdparm -X66 -d1 -c3 /dev/hdb</command> ved opstart af maskinen
-(hvis DVD-drevet sidder på <filename>/dev/hdb</filename>). 
+(hvis DVD-drevet sidder pÃ¥ <filename>/dev/hdb</filename>). 
 Mere om optimering er beskrevet i 
 <ulink url=" http://linux.oreillynet.com/pub/a/linux/2000/06/29/hdparm.html?page=1"> http://linux.oreillynet.com/pub/a/linux/2000/06/29/hdparm.html?page=1</ulink>.
 </para>
@@ -249,14 +249,14 @@ Mere om optimering er beskrevet i
 <para>
 I forbindelse med afspilning af DVD-film er der nogle konkrete
 fakta, som er gode at have kendskab til, specielt hvis der bliver
-brug for fejlfinding. Disse fakta er beskrevet i det følgende.
+brug for fejlfinding. Disse fakta er beskrevet i det fÃ¸lgende.
 </para>
 
 <para>
-Du kan vælge at springe denne del over og gå direkte til
+Du kan vÃ¦lge at springe denne del over og gÃ¥ direkte til
 afsnittene om de forskellige software-DVD-afspillere. Hvis du
-ikke umiddelbart kan få DVD-afspilleren til at virke, kan
-du søge hjælp i dette afsnit.
+ikke umiddelbart kan fÃ¥ DVD-afspilleren til at virke, kan
+du sÃ¸ge hjÃ¦lp i dette afsnit.
 </para>
 
 <sect3 id="dvdregionskoder">
@@ -265,28 +265,28 @@ du søge hjælp i dette afsnit.
 <indexterm><primary>Regionskoder, DVD</primary></indexterm>
 
 <para>
-En DVD kan være regions-beskyttet. Da man udviklede DVD-konceptet,
-valgte man at dele verden ind i 6 regioner, sådan at en DVD-film
+En DVD kan vÃ¦re regions-beskyttet. Da man udviklede DVD-konceptet,
+valgte man at dele verden ind i 6 regioner, sÃ¥dan at en DVD-film
 udgivet i en region kun kan afspilles af en DVD-afspiller fra
 samme region.
 </para>
 
 <para>
-Danmark tilhører region 2, hvilket vil sige, at en DVD-afspiller
-købt i Danmark har regionskode 2, og kan derfor kun afspille
+Danmark tilhÃ¸rer region 2, hvilket vil sige, at en DVD-afspiller
+kÃ¸bt i Danmark har regionskode 2, og kan derfor kun afspille
 DVD-film med regionsnummer 2.
 </para>
 
 <para>
-Dog findes der et syvende regionsnummer (kode 0), som dækker
+Dog findes der et syvende regionsnummer (kode 0), som dÃ¦kker
 over alle regioner. En DVD-film med regionsnummer 0, kan afspilles
 af alle DVD-afspillere; og en kodefri DVD-afspiller
 (med regionskode 0) kan afspille alle DVD-film uanset regionsnummer.
 </para>
 
 <para>
-Når du vil afspille en DVD, skal du sikre dig at der er overensstemmelse
-mellem regionskoden på DVD-filmen og regionskoden i DVD-afspilleren.
+NÃ¥r du vil afspille en DVD, skal du sikre dig at der er overensstemmelse
+mellem regionskoden pÃ¥ DVD-filmen og regionskoden i DVD-afspilleren.
 For mere information om regionskoder se eventuelt
 <ulink url="http://www.epinions.com/elec-review-665C-105932C-39077F49-prod6">
 DVD Regions Explained
@@ -307,58 +307,58 @@ navn <emphasis>CSS (Content Scrambling System)</emphasis>, som er
 udviklet af
 <ulink url="http://www.dvdcca.org/dvdcca/">DVD Copy Control
 Association</ulink> <emphasis>(DVD CCA)</emphasis>.
-For at afspille en CSS-krypteret DVD-film kræves det, at
-software-DVD-afspilleren understøtter <emphasis>DeCSS</emphasis>,
-som er opskriften på, hvordan en CSS-krypteret DVD kan dekrypteres.
+For at afspille en CSS-krypteret DVD-film krÃ¦ves det, at
+software-DVD-afspilleren understÃ¸tter <emphasis>DeCSS</emphasis>,
+som er opskriften pÃ¥, hvordan en CSS-krypteret DVD kan dekrypteres.
 </para>
 
 <para>
-DeCSS-systemet har voldt en del problemer for uafhængige Open Source
+DeCSS-systemet har voldt en del problemer for uafhÃ¦ngige Open Source
 software-DVD-afspillere, da der er tvivl om rettighederne til at
 bruge det.
 </para>
 
 <para>
-Organisationen DVD CCA mener, at CSS-systemet kun må anvendes i en
+Organisationen DVD CCA mener, at CSS-systemet kun mÃ¥ anvendes i en
 software-DVD-afspiller, hvis man har en licens til det.
 Modsat er organisationen
 <ulink url="http://www.opendvd.org/">OpenDVD Group</ulink>
-forkæmper for retten til at udvikle uafhængige software-DVD-afspillere
+forkÃ¦mper for retten til at udvikle uafhÃ¦ngige software-DVD-afspillere
 samt fri anvendelse af DeCSS-systemet.
-De er aktiv deltager i de retssager, som på nuværende tidspunkt er i gang.
+De er aktiv deltager i de retssager, som pÃ¥ nuvÃ¦rende tidspunkt er i gang.
 </para>
 
 <para>
 Overordnet er konsekvensen af denne tvivl, at nogle Open Source software-DVD-afspillere
-ikke "officielt" understøtter DeCSS, mens andre afspillere gør.
+ikke "officielt" understÃ¸tter DeCSS, mens andre afspillere gÃ¸r.
 </para>
 </sect3>
 
 <sect3>
 <title>Video i X Windows-systemet</title>
 <para>
-Når software-DVD-afspilleren (eller andre video/mpeg-afspillere)
+NÃ¥r software-DVD-afspilleren (eller andre video/mpeg-afspillere)
 skal vise levende billeder i Linux, er der forskellige video-output-metoder,
 som kan anvendes. De to mest anvendte metoder er MIT-SHM og
-XVideo. (Andre video-output-metoder, som kan nævnes er SDL og GGI).
+XVideo. (Andre video-output-metoder, som kan nÃ¦vnes er SDL og GGI).
 </para>
 
 <itemizedlist mark="bullet">
 <listitem><para>
 <command>MIT-SHM (MIT Shared Memory Extension)</command>:
-MIT-SHM et udvidelses-modul til X Windows-systemet, som gør det
+MIT-SHM et udvidelses-modul til X Windows-systemet, som gÃ¸r det
 muligt for programmer (for eksempel en DVD-afspiller) at sende
-store billeder hurtigt til skærmen.
-MIT-SHM er understøttet i XFree86 version 3.3.x og frem.
+store billeder hurtigt til skÃ¦rmen.
+MIT-SHM er understÃ¸ttet i XFree86 version 3.3.x og frem.
 </para></listitem>
 <listitem><para>
 <command>XVideo (Xv/XVideo Extension)</command>: XVideo er et
 udvidelses-modul til X Windows-systemet, som er lavet specielt til at
 vise video. Det er generelt mere effektivt end MIT-SHM-metoden idet
-der for nogen drivere er understøttelse for hardware konvertering af
-video strøm formatet (typisk 16 bit YUV) til det format (typisk 24 bit
-RGB) man anvender på video kortet.  XVideo er understøttet i Xfree86
-version 4.x og frem.  Det er driverafhængigt om der er understøttelse
+der for nogen drivere er understÃ¸ttelse for hardware konvertering af
+video strÃ¸m formatet (typisk 16 bit YUV) til det format (typisk 24 bit
+RGB) man anvender pÃ¥ video kortet.  XVideo er understÃ¸ttet i Xfree86
+version 4.x og frem.  Det er driverafhÃ¦ngigt om der er understÃ¸ttelse
 for XVideo.
 </para></listitem>
 </itemizedlist>
@@ -372,37 +372,37 @@ ved at skrive:
 <para>
 Under punktet <command>number of extensions</command> er
 der en liste over alle udvidelses-moduler i dit X Windows-system.
-Her er MIT-SHM og XVideo listet, hvis de er understøttet.
+Her er MIT-SHM og XVideo listet, hvis de er understÃ¸ttet.
 </para>
 
 <para>
-Hvis XVideo er understøttet af X Windows Systemet, kan du se
-om din grafikkort driver også understøtter XVideo ved at skrive:
+Hvis XVideo er understÃ¸ttet af X Windows Systemet, kan du se
+om din grafikkort driver ogsÃ¥ understÃ¸tter XVideo ved at skrive:
 </para>
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>xvinfo</userinput>
 </screen>
 <para>
 Her skulle du gerne se en lang liste med information relateret til XVideo.
-Hvis du derimod får beskeden <command>no adaptors present</command>,
-er det et tegn på at XVideo ikke er understøttet i din grafikkort-driver.
-Hvis du ikke kan få en DVD-afspiller til at virke med MIT-SHM, er det
-derfor værd at undersøge om der er en driver til dit grafikkort, som
-understøtter XVideo.
+Hvis du derimod fÃ¥r beskeden <command>no adaptors present</command>,
+er det et tegn pÃ¥ at XVideo ikke er understÃ¸ttet i din grafikkort-driver.
+Hvis du ikke kan fÃ¥ en DVD-afspiller til at virke med MIT-SHM, er det
+derfor vÃ¦rd at undersÃ¸ge om der er en driver til dit grafikkort, som
+understÃ¸tter XVideo.
 </para>
 
 <para>
-Har du for eksempel et NVidia-grafikkort, vil den driver som følger
-med XFree86 ikke understøtte XVideo.
-Men installeres den driver, som kan hentes på NVidias
-<ulink url="http://www.nvidia.com/Products/Drivers.nsf/Linux.html">Linux Driver Download-side</ulink>, så er XVideo understøttet.
+Har du for eksempel et NVidia-grafikkort, vil den driver som fÃ¸lger
+med XFree86 ikke understÃ¸tte XVideo.
+Men installeres den driver, som kan hentes pÃ¥ NVidias
+<ulink url="http://www.nvidia.com/Products/Drivers.nsf/Linux.html">Linux Driver Download-side</ulink>, sÃ¥ er XVideo understÃ¸ttet.
 </para>
 
 <para>
 I The Xine Video Player HOWTO 
 <ulink  url="http://dvd.sourceforge.net/xine-howto/en_GB/html/howto.html">http://dvd.sourceforge.net/xine-howto/en_GB/html/howto.html</ulink>
 er der i kapitlet "Increasing Performance" en liste over drivere som
-understøtter XVideo.
+understÃ¸tter XVideo.
 </para>
 
 
@@ -414,7 +414,7 @@ understøtter XVideo.
 For at en software-DVD-afspiller kan finde din DVD-ROM, skal den vide
 hvilket device den skal bruge. De fleste DVD-afspillere bruger som
 default <command>/dev/dvd</command>. Normalt er <command>/dev/dvd</command>
-et symbolsk link til det rigtige device, som typisk er en af følgende:
+et symbolsk link til det rigtige device, som typisk er en af fÃ¸lgende:
 </para>
 
 <itemizedlist mark="bullet">
@@ -429,14 +429,14 @@ et symbolsk link til det rigtige device, som typisk er en af følgende:
 
 <para>
 Du kan se om du allerede har et dvd-link ved at skrive
-<command>ls -all /dev/dvd</command>. Hvis du får at vide at filen
-ikke eksisterer, bør du oprette et dvd-link til dit DVD-drev.
+<command>ls -all /dev/dvd</command>. Hvis du fÃ¥r at vide at filen
+ikke eksisterer, bÃ¸r du oprette et dvd-link til dit DVD-drev.
 </para>
 
 <para>
 Hvis du eksempelvis allerede bruger dit DVD-drev som almindeligt
-cd-rom-drev, har du højst sandsynligt allerede et cd-rom-link.
-Prøv eventuelt at skrive:
+cd-rom-drev, har du hÃ¸jst sandsynligt allerede et cd-rom-link.
+PrÃ¸v eventuelt at skrive:
 </para>
 
 <screen>
@@ -445,7 +445,7 @@ lrwxrwxrwx  1 root  root  8 apr 21 08:10 /dev/cdrom -> /dev/hdc
 </screen>
 
 <para>
-I dette tilfælde er cd-rom-drevet <command>/dev/hdc</command>.
+I dette tilfÃ¦lde er cd-rom-drevet <command>/dev/hdc</command>.
 For at oprette et dvd-link til dette device, skal du skifte over til
 systemadministrator og oprette linket:
 </para>
@@ -457,7 +457,7 @@ Password:
 </screen>
 
 <para>
-Og vupti, så har du et dvd-link :-).
+Og vupti, sÃ¥ har du et dvd-link :-).
 </para>
 </sect3>
 </sect2>
@@ -466,14 +466,14 @@ Og vupti, så har du et dvd-link :-).
 <title>VideoLAN</title>
 <indexterm><primary>VideoLAN, DVD-afspiller</primary></indexterm>
 <para>
-I dette afsnit skal vi se på
+I dette afsnit skal vi se pÃ¥
 <ulink url="http://www.videolan.org/">VideoLAN</ulink>,
 som er en Open Source DVD-afspiller.
-VideoLAN understøtter DeCSS til afspilning af krypterede DVD'er.
+VideoLAN understÃ¸tter DeCSS til afspilning af krypterede DVD'er.
 </para>
 
 <para>
-Som video-output understøtter VideoLAN metoderne MIT-SHM, XVideo,
+Som video-output understÃ¸tter VideoLAN metoderne MIT-SHM, XVideo,
 SDL, GGI og andre. Se eventuelt hjemmesiden for mere information.
 </para>
 
@@ -486,8 +486,8 @@ SDL, GGI og andre. Se eventuelt hjemmesiden for mere information.
  <para>
   Du kan hent VideoLAN fra
   <ulink url="http://www.videolan.org/vlc/download.html">VideoLAN Client
-  Download</ulink>-siden. Du kan selv vælge i hvilket format du ønsker at
-  hente softwaren. Her ser vi på oversættelse og installation af ".tar"-filen.
+  Download</ulink>-siden. Du kan selv vÃ¦lge i hvilket format du Ã¸nsker at
+  hente softwaren. Her ser vi pÃ¥ oversÃ¦ttelse og installation af ".tar"-filen.
  </para>
 
  <para>
@@ -496,7 +496,7 @@ SDL, GGI og andre. Se eventuelt hjemmesiden for mere information.
  </para>
 
  <para>
-  Pak filen ud med <command>tar</command> og gå ind i det udpakkede katalog:
+  Pak filen ud med <command>tar</command> og gÃ¥ ind i det udpakkede katalog:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>tar xzvf vlc-xxx.tar.gz</userinput>
 ...
@@ -505,7 +505,7 @@ SDL, GGI og andre. Se eventuelt hjemmesiden for mere information.
  </para>
 
  <para>
-  Gør klar til at oversætte kildeteksten med kommandoen:
+  GÃ¸r klar til at oversÃ¦tte kildeteksten med kommandoen:
 <screen>
 <prompt>[tyge@hven ~/vlc-xxx]$ </prompt><userinput>./configure &amp;&amp; echo O.k.</userinput>
 ...
@@ -514,11 +514,11 @@ O.k.
  </para>
 
  <para>
-  Der vil blive listet en masse information om hvad dit system understøtter og
-  ikke understøtter. Læg specielt mærke til punktet
-  <command>vlc configuration</command>, som bliver listet til sidst. Her står
-  der blandt andet hvilke plugin-moduler, som bliver understøttet (for
-  eksempel x11, sdl, xvideo, som er video-output-metoder).  Du oversætter
+  Der vil blive listet en masse information om hvad dit system understÃ¸tter og
+  ikke understÃ¸tter. LÃ¦g specielt mÃ¦rke til punktet
+  <command>vlc configuration</command>, som bliver listet til sidst. Her stÃ¥r
+  der blandt andet hvilke plugin-moduler, som bliver understÃ¸ttet (for
+  eksempel x11, sdl, xvideo, som er video-output-metoder).  Du oversÃ¦tter
   programmet ved at skrive:
 <screen>
 <prompt>[tyge@hven ~/vlc-xxx]$ </prompt><userinput>make &amp;&amp; echo O.k.</userinput>
@@ -528,7 +528,7 @@ O.k.
  </para>
 
  <para>
-  For at installere VideoLAN skal du som systemadministrator køre kommandoen
+  For at installere VideoLAN skal du som systemadministrator kÃ¸re kommandoen
   <command>make install</command>:
 <screen>
 <prompt>[tyge@hven ~/xlc-xxx]$ </prompt><userinput>su -c 'make install &amp;&amp; echo O.k.'</userinput>
@@ -543,8 +543,8 @@ O.k.
  <title>Anvendelse</title>
 
  <para>
-  Du starter VideoLAN ved at skrive <command>vlc</command>.  Du vil få
-  følgende kontrolpanel frem.
+  Du starter VideoLAN ved at skrive <command>vlc</command>.  Du vil fÃ¥
+  fÃ¸lgende kontrolpanel frem.
  </para>
 
  <figure id="VideoLAN-fig" float="1">
@@ -553,8 +553,8 @@ O.k.
  </figure>
 
  <para>
-  I VideoLAN har du mulighed for både at afspille video-filer (MPEG-filer),
-  DVD og netstreams. For at afspille en DVD skal du klikke på
+  I VideoLAN har du mulighed for bÃ¥de at afspille video-filer (MPEG-filer),
+  DVD og netstreams. For at afspille en DVD skal du klikke pÃ¥
   <command>Disc</command>-knappen.
  </para>
 
@@ -564,7 +564,7 @@ O.k.
  </figure>
 
  <para>
-  Du kan vælge om du vil afspille en DVD eller en VCD.  Klik på OK for at
+  Du kan vÃ¦lge om du vil afspille en DVD eller en VCD.  Klik pÃ¥ OK for at
   starte afspilningen.
  </para>
 </sect3>
@@ -582,12 +582,12 @@ Det virker ikke, og mit DVD-drev reagerer slet ikke!
 </para>
 
 <para>
-Måske har du valgt en forkert DVD-enhed.
+MÃ¥ske har du valgt en forkert DVD-enhed.
 I VideoLANs 'Open Disc'-boks
-har du mulighed for at angive andre devices. Prøv eventuelt med
+har du mulighed for at angive andre devices. PrÃ¸v eventuelt med
 <command>/dev/hda</command>, <command>/dev/hdb</command>,
-<command>/dev/hdc</command> og <command>/dev/hdd</command> på
-skift, og se om en af disse virker. Du kan også prøve med
+<command>/dev/hdc</command> og <command>/dev/hdd</command> pÃ¥
+skift, og se om en af disse virker. Du kan ogsÃ¥ prÃ¸ve med
 <command>/dev/scdx</command>, hvor <command>x</command> erstattes
 med at tal fra 0 og opefter.
 </para>
@@ -595,42 +595,42 @@ med at tal fra 0 og opefter.
 
 <listitem>
 <para>
-Jeg får lyd, men der er ikke noget billede!
+Jeg fÃ¥r lyd, men der er ikke noget billede!
 </para>
 
 <para>
-Måske virker den valgte video-output-metode ikke. Du kan, når du
-starter VideoLAN, vælge video-output-metode ved at skrive
-<command>vlc --out</command> efterfulgt af navnet på et
+MÃ¥ske virker den valgte video-output-metode ikke. Du kan, nÃ¥r du
+starter VideoLAN, vÃ¦lge video-output-metode ved at skrive
+<command>vlc --out</command> efterfulgt af navnet pÃ¥ et
 video-output-modul. For eksempel vil <command>vlc --vout x11</command>
 svare til MIT-SHM-metoden, <command>vlc --vout xvideo</command> vil svare til
 XVideo-metoden, <command>vlc --vout sdl</command> vil svare til SDL
-video-output, osv. Bemærk, at du kan altid kan se den aktuelle
-video-output-metode i video-vinduets titelbjælke.
+video-output, osv. BemÃ¦rk, at du kan altid kan se den aktuelle
+video-output-metode i video-vinduets titelbjÃ¦lke.
 </para>
 
 <para>
-Du kan også prøve at starte VideoLAN med
+Du kan ogsÃ¥ prÃ¸ve at starte VideoLAN med
 <command>vlc --yuv yuv</command>
-og se om det hjælper. Dette skulle ifølge tips på VideoLANs
-hjemmeside bl.a. afhjælpe et problem, der er med Red Hats
+og se om det hjÃ¦lper. Dette skulle ifÃ¸lge tips pÃ¥ VideoLANs
+hjemmeside bl.a. afhjÃ¦lpe et problem, der er med Red Hats
 <emphasis>gcc 2.96</emphasis> (som resulterer i manglende billede).
 </para>
 </listitem>
 
 <listitem>
 <para>
-Hvor finder jeg mere hjælp?
+Hvor finder jeg mere hjÃ¦lp?
 </para>
 
 <para>
-På VideoLAN's hjemmeside er der svar til typisk stillede spørgsmål
-samt løsning på kendte problemer. Det findes under
+PÃ¥ VideoLAN's hjemmeside er der svar til typisk stillede spÃ¸rgsmÃ¥l
+samt lÃ¸sning pÃ¥ kendte problemer. Det findes under
 <ulink url="http://www.videolan.org/doc.html">
 User documentation</ulink>.
-Her er der også et link til en
+Her er der ogsÃ¥ et link til en
 <ulink url="http://www.videolan.org/doc/">VLC HOWTO</ulink>,
-som bestemt er værd at læse.
+som bestemt er vÃ¦rd at lÃ¦se.
 </para>
 </listitem>
 </itemizedlist>
@@ -641,26 +641,26 @@ som bestemt er værd at læse.
 <title>Xine</title>
 <indexterm><primary>Xine, DVD-afspiller</primary></indexterm>
 <para>
-I dette afsnit skal vi se på
+I dette afsnit skal vi se pÃ¥
 <ulink url="http://xine.sourceforge.net/">Xine</ulink>,
-som også er en Open Source DVD-afspiller. Xine understøtter
+som ogsÃ¥ er en Open Source DVD-afspiller. Xine understÃ¸tter
 officielt ikke DeCSS, hvilket vil sige at nogle DVD'er ikke
-kan afspilles. Dog vil vi her se på, hvordan man installerer et
-plugin, der gør det muligt for Xine at afspille krypterede
+kan afspilles. Dog vil vi her se pÃ¥, hvordan man installerer et
+plugin, der gÃ¸r det muligt for Xine at afspille krypterede
 DVD'er.
 </para>
 
 <para>
-Som video-output-metode understøttes MIT-SHM og XVideo.
+Som video-output-metode understÃ¸ttes MIT-SHM og XVideo.
 </para>
 
 <sect3 id="xineinstallation">
 <title>Installation</title>
 <para>
-Du kan hente Xine på
+Du kan hente Xine pÃ¥
 <ulink url="http://xine.sourceforge.net/xine_frame.php?page=download.html">
-Xine Download</ulink>-siden. Du kan selv vælge, i hvilket format
-du vil hente softwaren. Her ser vi på tar-bolden.
+Xine Download</ulink>-siden. Du kan selv vÃ¦lge, i hvilket format
+du vil hente softwaren. Her ser vi pÃ¥ tar-bolden.
 </para>
 
 <para>
@@ -669,7 +669,7 @@ Hent filen <command>xine-xxx.tar.gz</command>, hvor
 </para>
 
 <para>
-Pak filen ud med <command>tar</command> og gå ind i source-kataloget:
+Pak filen ud med <command>tar</command> og gÃ¥ ind i source-kataloget:
 </para>
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>tar xzvf xine-xxx.tar.gz</userinput>
@@ -677,14 +677,14 @@ Pak filen ud med <command>tar</command> og gå ind i source-kataloget:
 <prompt>[tyge@hven ~]$ </prompt><userinput>cd xine-xxx/</userinput>
 </screen>
 <para>
-Konfigurér source-koden ved at skrive:
+KonfigurÃ©r source-koden ved at skrive:
 </para>
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>./configure</userinput>
 </screen>
 <para>
 Der vil blive listet en masse information om hvad dit system
-understøtter og ikke understøtter. Du oversætter koden ved at
+understÃ¸tter og ikke understÃ¸tter. Du oversÃ¦tter koden ved at
 skrive:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>make</userinput>
@@ -700,19 +700,19 @@ Password:
 ...
 O.k.
 </screen>
- Du skulle nu kunne gå i gang med at anvende Xine. Dog understøttes
- DeCSS ikke. Ønsker du at Xine også skal understøtte afspilning af
+ Du skulle nu kunne gÃ¥ i gang med at anvende Xine. Dog understÃ¸ttes
+ DeCSS ikke. Ã˜nsker du at Xine ogsÃ¥ skal understÃ¸tte afspilning af
  krypterede DVD'er skal du installere et DeCSS-plugin til Xine.
 </para>
 
 <para>
-På Xines hjemmeside er der et link til
+PÃ¥ Xines hjemmeside er der et link til
 <ulink url="http://debianlinux.net/captain_css.html">http://debianlinux.net/captain_css.html</ulink>,
-som er et plugin til Xine, der giver support for DeCSS. På denne side
+som er et plugin til Xine, der giver support for DeCSS. PÃ¥ denne side
 hentes filen <command>xine_dvd_static-xxx.tar.gz</command>
 (xine dvd-plugin xxx), hvor <command>xxx</command> er seneste versionsnummer.
-Installationen foregår på samme måde som installationen af
-xine tar-bolden. Du skal altså skrive følgende:
+Installationen foregÃ¥r pÃ¥ samme mÃ¥de som installationen af
+xine tar-bolden. Du skal altsÃ¥ skrive fÃ¸lgende:
 </para>
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>tar xzvf xine_dvd_static-xxx.tar.gz</userinput>
@@ -738,9 +738,9 @@ Password:
 <sect3 id="xineanvendelse">
 <title>Anvendelse</title>
 <para>
-Du starter Xine ved at skrive <command>xine</command>. Følgende figur
+Du starter Xine ved at skrive <command>xine</command>. FÃ¸lgende figur
 viser Xines kontrolpanel (det kan dog se anderledes ud). Hvis
-kontrolpanelet ikke kommer frem automatisk, så klik en gang med modsatte
+kontrolpanelet ikke kommer frem automatisk, sÃ¥ klik en gang med modsatte
 museknap i video-vinduet, som er kommet frem.
 </para>
 
@@ -750,15 +750,15 @@ museknap i video-vinduet, som er kommet frem.
 </figure>
 
 <para>
-Klik på knappen <command>DVD</command> for at starte afspilningen af en DVD.
+Klik pÃ¥ knappen <command>DVD</command> for at starte afspilningen af en DVD.
 </para>
 
 <para>
 Brug knapperne i bunden til at kontrollere afspilningen.
-De to sæt op/ned-pile i højre side bruges til at vælge henholdsvis
+De to sÃ¦t op/ned-pile i hÃ¸jre side bruges til at vÃ¦lge henholdsvis
 undertekstnings-sprog (off=ingen undertekstning) og lydspor.
-Den lille firkant yderst til højre (under x'et i titellinjen) skifter
-mellem video i fuld skærm og video i et vindue.
+Den lille firkant yderst til hÃ¸jre (under x'et i titellinjen) skifter
+mellem video i fuld skÃ¦rm og video i et vindue.
 </para>
 </sect3>
 
@@ -776,16 +776,16 @@ Det er lyd, men intet billede!
 
 <para>
 Xine bruger XVideo video-output-metoden som default. Hvis XVideo
-ikke virker, kan du prøve med MIT-SHM-metoden ved at starte Xine med
+ikke virker, kan du prÃ¸ve med MIT-SHM-metoden ved at starte Xine med
 kommandoen <command>xine -s</command>.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Spole frem og tilbage i en video-stream kan gøres ved
-at trykke på 1, 2, 3 osv. for at gå til 10%, 20% hhv. 30%
-af filmens længde. Tilsvarende kan man anvende højre hhv. venstre
+Spole frem og tilbage i en video-stream kan gÃ¸res ved
+at trykke pÃ¥ 1, 2, 3 osv. for at gÃ¥ til 10%, 20% hhv. 30%
+af filmens lÃ¦ngde. Tilsvarende kan man anvende hÃ¸jre hhv. venstre
 pil til at spole 1 minut frem hhv. tilbage.
 </para>
 </listitem>
@@ -793,13 +793,13 @@ pil til at spole 1 minut frem hhv. tilbage.
 
 <listitem>
 <para>
-Hvor finder jeg mere hjælp?
+Hvor finder jeg mere hjÃ¦lp?
 </para>
 
 <para>
-På Xines hjemmeside findes der en FAQ
-<ulink url="http://xine.sourceforge.net/xine_frame.php?page=FAQ">http://xine.sourceforge.net/xine_frame.php?page=FAQ</ulink>, hvor der er svar på typisk stillede spørgsmål.
-Der er også link til en Xine HOWTO 
+PÃ¥ Xines hjemmeside findes der en FAQ
+<ulink url="http://xine.sourceforge.net/xine_frame.php?page=FAQ">http://xine.sourceforge.net/xine_frame.php?page=FAQ</ulink>, hvor der er svar pÃ¥ typisk stillede spÃ¸rgsmÃ¥l.
+Der er ogsÃ¥ link til en Xine HOWTO 
 <ulink url="http://www.srcf.ucam.org/~rjw57/xine/">http://www.srcf.ucam.org/~rjw57/xine/</ulink>
 som giver god information.
 </para>
@@ -812,15 +812,15 @@ som giver god information.
 <title>LiViD</title>
 <indexterm><primary>LiViD, DVD-afspiller</primary></indexterm>
 <para>
-Her skal vi se på LiViD
+Her skal vi se pÃ¥ LiViD
 <ulink url="http://www.linuxvideo.org/">http://www.linuxvideo.org/</ulink>,
-som også er en Open Source DVD-afspiller.
+som ogsÃ¥ er en Open Source DVD-afspiller.
 </para>
 
 <sect3 id="lividinstallation">
 <title>Installation</title>
 <para>
-På LiViD's webside <ulink
+PÃ¥ LiViD's webside <ulink
 url="http://www.linuxvideo.org/user/dl.html">http://www.linuxvideo.org/user/dl.html</ulink>,
 kan du hente forskellige software-pakker. Det er dog ikke dem alle
 du skal bruge.
@@ -829,13 +829,13 @@ du skal bruge.
 <para>
 Hent filerne <filename>libcss-xxx.tar.gz</filename>,
 <filename>oms-xxx.tar.gz</filename> og <filename>omi-xxx.tar.gz</filename>,
-hvor <filename>xxx</filename> står for de seneste versionsnumre for
+hvor <filename>xxx</filename> stÃ¥r for de seneste versionsnumre for
 de tre pakker.
 </para>
 
 <para>
- Du skal først installere <filename>libcss</filename>. Det gøres ved
- først at pakke ".tar"-filen ud, opsætte og oversætte pakken:
+ Du skal fÃ¸rst installere <filename>libcss</filename>. Det gÃ¸res ved
+ fÃ¸rst at pakke ".tar"-filen ud, opsÃ¦tte og oversÃ¦tte pakken:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>tar xzvf libcss-xxx.tar.gz</userinput>
 ...
@@ -848,7 +848,7 @@ de tre pakker.
 </para>
 
 <para>
- Dernæst skal du som systemadministrator installere pakken:
+ DernÃ¦st skal du som systemadministrator installere pakken:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>su -c 'make install &amp;&amp; /sbin/ldconfig &amp;&amp; O.k.'</userinput>
 Password:
@@ -858,8 +858,8 @@ O.k.
 </para>
 
 <para>
- Den næste pakke, som skal installeres er "oms".  Du skal følge samme
- fremgangsmåde som før:
+ Den nÃ¦ste pakke, som skal installeres er "oms".  Du skal fÃ¸lge samme
+ fremgangsmÃ¥de som fÃ¸r:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>tar xzvf oms-xxx.tar.gz</userinput>
 ...
@@ -872,7 +872,7 @@ O.k.
 </para>
 
 <para>
- Dernæst skal du som systemadministrator installere pakken:
+ DernÃ¦st skal du som systemadministrator installere pakken:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>su -c 'make install &amp;&amp; /sbin/ldconfig &amp;&amp; echo O.k.'</userinput>
 Password:
@@ -882,7 +882,7 @@ O.k.
 </para>
 
 <para>
- Til sidst skal du installere "omi". Dette følger igen samme fremgangsmåde:
+ Til sidst skal du installere "omi". Dette fÃ¸lger igen samme fremgangsmÃ¥de:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>tar xzvf omi-xxx.tar.gz</userinput>
 ...
@@ -904,7 +904,7 @@ O.k.
 <title>Anvendelse</title>
 <para>
 Du starter LiViD ved at skrive <filename>omi_gtk</filename>.
-I følgende figur er LiViDs kontrolpanel vist.
+I fÃ¸lgende figur er LiViDs kontrolpanel vist.
 </para>
 
 <figure id="livid-fig" float="1">
@@ -927,11 +927,11 @@ Her er listet et par tips og tricks til afspilleren LiViD.
 <itemizedlist mark="bullet">
 <listitem>
 <para>
-Hvor finder jeg mere hjælp?
+Hvor finder jeg mere hjÃ¦lp?
 </para>
 
 <para>
-På LiViDs hjemmeside kan du finde
+PÃ¥ LiViDs hjemmeside kan du finde
 <ulink url="http://www.linuxvideo.org/docs/">
 LiViD Documentation</ulink>, som er en side med links til HOWTO's,
 FAQ's og mere.
@@ -945,9 +945,9 @@ FAQ's og mere.
 <title>Ogle til afspilning af DVD</title>
 <indexterm><primary>Ogle</primary></indexterm>
 <para>
-En af de bedre DVD-afspillere der er til linux er Ogle, der er understøttelse 
-af menuer i den og den kan afspille uden tab af frames på en 700 mhz Duron 
-processor. Den følgende beskrivelse passer til Mandrake.
+En af de bedre DVD-afspillere der er til linux er Ogle, der er understÃ¸ttelse 
+af menuer i den og den kan afspille uden tab af frames pÃ¥ en 700 mhz Duron 
+processor. Den fÃ¸lgende beskrivelse passer til Mandrake.
 </para>
 
    <sect3 id="ogle-installation">
@@ -958,23 +958,23 @@ processor. Den følgende beskrivelse passer til Mandrake.
      <filename>ogle_gui-0.7.5.tar.gz</filename> og
      <filename>libdvdread-0.9.2.tar.gz</filename> fra <ulink
      url="http://www.dtek.chalmers.se/groups/dvd/downloads.shtml">http://www.dtek.chalmers.se/groups/dvd/downloads.shtml</ulink>
-     og læg dem i kataloget "<filename>/tmp</filename>".
+     og lÃ¦g dem i kataloget "<filename>/tmp</filename>".
     </para>
 
     <para>
-     Hent også <filename>a52dec-0.7.1b.tar.gz</filename> fra <ulink
+     Hent ogsÃ¥ <filename>a52dec-0.7.1b.tar.gz</filename> fra <ulink
      url="http://liba52.sourceforge.net/">http://liba52.sourceforge.net/</ulink>
      og <filename>libxml2-2.4.9.tar.gz</filename> fra <ulink
-     url="ftp://xmlsoft.org/">ftp://xmlsoft.org/</ulink> der ligeledes lægges i
+     url="ftp://xmlsoft.org/">ftp://xmlsoft.org/</ulink> der ligeledes lÃ¦gges i
      kataloget "<filename>/tmp</filename>".
     </para>
 
     <para>
-     Det kan være at versionsnumrene er øget siden dette er skrevet.
+     Det kan vÃ¦re at versionsnumrene er Ã¸get siden dette er skrevet.
     </para>
 
     <para>
-     Den første pakke der skal installeres er <filename>libdvdread</filename>:
+     Den fÃ¸rste pakke der skal installeres er <filename>libdvdread</filename>:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>cd /tmp</userinput>
@@ -994,11 +994,11 @@ O.k.
     </para>
 
     <para>
-     Så bliver de nye biblioteker installeret i kataloget
-     <filename>/usr/local/lib</filename>. Har du ikke før oversat og
-     installeret biblioteker i <filename>/usr/local/lib</filename>, så skal du
+     SÃ¥ bliver de nye biblioteker installeret i kataloget
+     <filename>/usr/local/lib</filename>. Har du ikke fÃ¸r oversat og
+     installeret biblioteker i <filename>/usr/local/lib</filename>, sÃ¥ skal du
      sikre dig at programmet <command>ld</command> (linker-programmet) kan
-     finde filerne. Det gør du ved at føje linjen:
+     finde filerne. Det gÃ¸r du ved at fÃ¸je linjen:
 <programlisting>
 /usr/local/lib
 </programlisting>
@@ -1006,11 +1006,11 @@ O.k.
     </para>
 
     <para>
-     Bagefter køres programmet: <command>ldconfig</command>
+     Bagefter kÃ¸res programmet: <command>ldconfig</command>
     </para>
 
     <para>
-     Så skal a52dec installeres:
+     SÃ¥ skal a52dec installeres:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>cd /tmp</userinput>
@@ -1030,7 +1030,7 @@ O.k.
     </para>
 
     <para>
-     Så gælder det xml2:
+     SÃ¥ gÃ¦lder det xml2:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>cd /tmp</userinput>
@@ -1050,9 +1050,9 @@ O.k.
     </para>
 
     <para>
-     Denne pakke installerer også binære filer som ogle skal bruge i
+     Denne pakke installerer ogsÃ¥ binÃ¦re filer som ogle skal bruge i
      <filename>/usr/local/bin</filename>.  Derfor skal ogle kunne finde den. Det
-     gør du ved at føje linjen
+     gÃ¸r du ved at fÃ¸je linjen
 <programlisting>
 export path=$PATH:/usr/local/bin
 </programlisting>
@@ -1060,12 +1060,12 @@ export path=$PATH:/usr/local/bin
     </para>
 
     <para>
-     Du skal nu logge ud og logge ind igen. Sagen er at du senere skal være
-     root for at køre <command>ogle</command>.
+     Du skal nu logge ud og logge ind igen. Sagen er at du senere skal vÃ¦re
+     root for at kÃ¸re <command>ogle</command>.
     </para>
 
     <para>
-     Så skal ogle selv installeres:
+     SÃ¥ skal ogle selv installeres:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>cd /tmp</userinput>
@@ -1086,7 +1086,7 @@ O.k.
 
     <para>
      Og ligeledes skal <filename>ogle_gui-0.7.5.tar.gz</filename> installeres.
-     Hvis du er på et mandrake-system kræver det at disse pakker er
+     Hvis du er pÃ¥ et mandrake-system krÃ¦ver det at disse pakker er
      installeret:
      <itemizedlist>
       <listitem><para>libglib1.2-devel</para></listitem>
@@ -1101,12 +1101,12 @@ O.k.
       <listitem><para>db1-devel</para></listitem>
       <listitem><para>gnome-libs-devel</para></listitem>
      </itemizedlist>
-     På andre systemer kan det tænkes at pakkerne hedder noget lidt andet.
+     PÃ¥ andre systemer kan det tÃ¦nkes at pakkerne hedder noget lidt andet.
     </para>
 
     <para>
-     Selve oversættelsen og installationen af
-     <filename>ogle_gui-0.7.5.tar.gz</filename> foregår ganske som med de
+     Selve oversÃ¦ttelsen og installationen af
+     <filename>ogle_gui-0.7.5.tar.gz</filename> foregÃ¥r ganske som med de
      andre ".tar.gz"-filer:
 
 <screen>
@@ -1127,22 +1127,22 @@ O.k.
     </para>
 
     <para>
-     Så skal <filename>/dev/dvd</filename> lige sættes til at pege på den
+     SÃ¥ skal <filename>/dev/dvd</filename> lige sÃ¦ttes til at pege pÃ¥ den
      rette enhed.  Hos mig er <filename>/dev/hdc</filename> (secondary master)
-     DVD-drevet, så jeg sætter linket således:
+     DVD-drevet, sÃ¥ jeg sÃ¦tter linket sÃ¥ledes:
 <screen>
 <prompt>[root@linus /usr/local]# </prompt><userinput>ln -s /dev/hdc /dev/dvd</userinput>
 </screen>
     </para>
 
     <para>
-     Og husk at tjekke om drevet er sat til DMA-overførsel. Det kan gøres med
+     Og husk at tjekke om drevet er sat til DMA-overfÃ¸rsel. Det kan gÃ¸res med
      programmet <command>hdparm</command>:
 <screen>
 <prompt>[root@linus /usr/local]# </prompt><userinput>hdparm -c3d1 /dev/hdc</userinput>
 </screen>
-     De fleste drev kan ikke overføre data hurtigt nok til at afspille en DVD
-     uden DMA-overførsel.
+     De fleste drev kan ikke overfÃ¸re data hurtigt nok til at afspille en DVD
+     uden DMA-overfÃ¸rsel.
     </para>
    </sect3>
 
@@ -1150,10 +1150,10 @@ O.k.
     <title>Anvendelse af ogle</title>
 
     <para>
-     Så er det bare at starte ogle ved at skrive <command>ogle</command>. Hvis
-     det ikke virker kan det være fordi kataloget
-     <filename>/usr/local/bin</filename> ikke står i ens sti. Det klares ved
-     at føje <filename>/usr/local/bin</filename> til systemvariablen
+     SÃ¥ er det bare at starte ogle ved at skrive <command>ogle</command>. Hvis
+     det ikke virker kan det vÃ¦re fordi kataloget
+     <filename>/usr/local/bin</filename> ikke stÃ¥r i ens sti. Det klares ved
+     at fÃ¸je <filename>/usr/local/bin</filename> til systemvariablen
      <literal>PATH</literal>:
 <prompt>[tyge@hven ~]$ </prompt><userinput>export path=$PATH:/usr/local/bin</userinput>
     </para>
@@ -1178,14 +1178,14 @@ O.k.
 <indexterm><primary>Transcode, DVD</primary></indexterm>
 
 <para>
-Hvis du har en bærbar computer, har du sikkert siddet i toget og
-ærgret dig over, at du ikke har dine DVD-film med. Ved at rippe og
-encode sine film kan man have mange film med på en almindelig
-bærbar. Du behøver end ikke have et DVD-drev i den bærbare computer.
+Hvis du har en bÃ¦rbar computer, har du sikkert siddet i toget og
+Ã¦rgret dig over, at du ikke har dine DVD-film med. Ved at rippe og
+encode sine film kan man have mange film med pÃ¥ en almindelig
+bÃ¦rbar. Du behÃ¸ver end ikke have et DVD-drev i den bÃ¦rbare computer.
 </para>
 
 <para>
-Hvis du har fået dit DVD-drev til at virke og kan fremvise billede og
+Hvis du har fÃ¥et dit DVD-drev til at virke og kan fremvise billede og
 lyd, er du klar til at rippe DVD-film.
 </para>
 
@@ -1196,41 +1196,41 @@ lyd, er du klar til at rippe DVD-film.
 
 <para>
 Acidrip er et rigtigt nemt program til ripning af film.
-De forudvalgte indstillinger er godt valgt og dækker de flestes behov,
-så selv for en novice er det til at komme igang med.
-Specielt når man har indhentet (Load) data fra DVD'en,
-så er man stort set klar til at klikke på start.
+De forudvalgte indstillinger er godt valgt og dÃ¦kker de flestes behov,
+sÃ¥ selv for en novice er det til at komme igang med.
+Specielt nÃ¥r man har indhentet (Load) data fra DVD'en,
+sÃ¥ er man stort set klar til at klikke pÃ¥ start.
 </para>
 
 <indexterm><primary>lsdvd</primary></indexterm>
 <para>
 Acidrip er egentlig kun en skal uden om mplayer.
-Så fordelen ved Acidrip er alene at den pakker det hele lindt pænt
+SÃ¥ fordelen ved Acidrip er alene at den pakker det hele lindt pÃ¦nt
 ind i en grafisk brugerflade.
 For at kunne vide noget om DVD-skiven inden ripning,
-skal der indlæses nogle informationer.
-Til det formål har ophavsmanden til Acidrip skrevet et
-selvstændigt program <command>lsdvd</command> der kan dette,
+skal der indlÃ¦ses nogle informationer.
+Til det formÃ¥l har ophavsmanden til Acidrip skrevet et
+selvstÃ¦ndigt program <command>lsdvd</command> der kan dette,
 og det skal installeres for sig.
-Så Acidrip er kun en skal.
+SÃ¥ Acidrip er kun en skal.
 </para>
 
 <figure id="acidrip1" float="1">
- <title>Acidrip's startbillede hvor specifikationerne er indlæst fra DVD-skiven.</title>
+ <title>Acidrip's startbillede hvor specifikationerne er indlÃ¦st fra DVD-skiven.</title>
  <graphic fileref="acidrip1.&magic;"  scale="60"></graphic>
 </figure>
 
 <para>
-Når specifikationerne er indlæst fra DVD-skiven,
-er man i mange tilfælde klar til at starte ripningen.
+NÃ¥r specifikationerne er indlÃ¦st fra DVD-skiven,
+er man i mange tilfÃ¦lde klar til at starte ripningen.
 I det viste eksempel er det talte sprog manuelt valgt til dansk,
-men det var ikke nødvendigt da den valgte DVD kun har dansk
+men det var ikke nÃ¸dvendigt da den valgte DVD kun har dansk
 som det talte sprog.
-I listen til højre vil det sæt der varer længst automatisk
+I listen til hÃ¸jre vil det sÃ¦t der varer lÃ¦ngst automatisk
 blive valgt som det eneste der bliver rippet.
-Nogle DVD-film har så meget ekstramateriale omkring fremstilling
-af filmen, at det varer længere end selve filmenr, <!-- Bambi -->
-så det skal man lige holde øje med.
+Nogle DVD-film har sÃ¥ meget ekstramateriale omkring fremstilling
+af filmen, at det varer lÃ¦ngere end selve filmenr, <!-- Bambi -->
+sÃ¥ det skal man lige holde Ã¸je med.
 </para>
 
 <figure id="acidrip2" float="1">
@@ -1240,10 +1240,10 @@ så det skal man lige holde øje med.
 
 <para>
 I Video-fanebladet kan detaljer om output angives.
-Den forvalgte codec 'lavc' vil normalt være et godt
-valg der giver god kvalitet i små filer.
+Den forvalgte codec 'lavc' vil normalt vÃ¦re et godt
+valg der giver god kvalitet i smÃ¥ filer.
 Antallet af 'passes' forbedre kvaliteten, men det
-tager så også længere tid at udføre ripningen.
+tager sÃ¥ ogsÃ¥ lÃ¦ngere tid at udfÃ¸re ripningen.
 </para>
 
 <figure id="acidrip3" float="1">
@@ -1253,7 +1253,7 @@ tager så også længere tid at udføre ripningen.
 
 <para>
 Preview er god at bruge hvis man er i tvivl om man har valgt
-det rigtige sæt.
+det rigtige sÃ¦t.
 </para>
 
 <figure id="acidrip4" float="1">
@@ -1263,20 +1263,20 @@ det rigtige sæt.
 
 <para>
 Har man flere DVD-skiver der skal rippes,
-kan man sætte dem i kø for senere ripning.
+kan man sÃ¦tte dem i kÃ¸ for senere ripning.
 Har man flere computere med DVD-drev,
-kan man også eksportere specifikationen med 'Export',
-og så skal den anden computere kun have mplayer (mencoder) installeret,
-men grafisk brugerflade er ikke nødvendig.
+kan man ogsÃ¥ eksportere specifikationen med 'Export',
+og sÃ¥ skal den anden computere kun have mplayer (mencoder) installeret,
+men grafisk brugerflade er ikke nÃ¸dvendig.
 </para>
 
 <figure id="acidrip5" float="1">
- <title>Opsætning</title>
+ <title>OpsÃ¦tning</title>
  <graphic fileref="acidrip5.&magic;"  scale="60"></graphic>
 </figure>
 
 <para>
-Opsætning af diverse parametre.
+OpsÃ¦tning af diverse parametre.
 </para>
 
 <para>
@@ -1284,7 +1284,7 @@ Acidrip har hjemmesiden
 <ulink url="http://untrepid.com/acidrip/">http://untrepid.com/acidrip/</ulink>
 .
 Da Acidrip blot er en skal udenom mplayer,
-skal man søge i mplayers dokumentation for yderligere information.
+skal man sÃ¸ge i mplayers dokumentation for yderligere information.
 </para>
 
 </sect2>
@@ -1293,12 +1293,12 @@ skal man søge i mplayers dokumentation for yderligere information.
 <title>DVD::rip</title>
 
 <para>
-Hvis du ikke er kendt med DVD-rippe processen, så er DVD::rip et af de
+Hvis du ikke er kendt med DVD-rippe processen, sÃ¥ er DVD::rip et af de
 nemmeste programmer at komme igang med.
 </para>
 
 <para>
-På Gentoo Linux installeres programmet med: 
+PÃ¥ Gentoo Linux installeres programmet med: 
 </para>
 
 <screen>
@@ -1306,7 +1306,7 @@ På Gentoo Linux installeres programmet med:
 </screen>
 
 <para>
-Og på Mandrake Linux installeres med
+Og pÃ¥ Mandrake Linux installeres med
 </para>
 
 
@@ -1315,7 +1315,7 @@ Og på Mandrake Linux installeres med
 </screen>
 
 <para>
-Efter man har tilføjet "plf" til urpmi - se <ulink url="http://plf.zarb.org/">http://plf.zarb.org/</ulink>.
+Efter man har tilfÃ¸jet "plf" til urpmi - se <ulink url="http://plf.zarb.org/">http://plf.zarb.org/</ulink>.
 </para>
 
 <figure id="splash-fig" float="1">
@@ -1330,26 +1330,26 @@ Efter man har tilføjet "plf" til urpmi - se <ulink url="http://plf.zarb.org/">ht
 
 
 <para>
-Start med at gå ind i preferences (Ctrl-P). De fleste værdier er
+Start med at gÃ¥ ind i preferences (Ctrl-P). De fleste vÃ¦rdier er
 sandsynligvis korrekte. Men <command>Default Data Base
-Directory</command> skal pege på et sted, hvor der er 10 GB fri
-diskplads. Ret også <command>Default Video Codec</command> til
+Directory</command> skal pege pÃ¥ et sted, hvor der er 10 GB fri
+diskplads. Ret ogsÃ¥ <command>Default Video Codec</command> til
 <command>ffmpeg4</command> - dette skal skrives i feltet.
 </para>
 
 <para>
-Vælg ny <command>New Project</command> og giv din ripning et
+VÃ¦lg ny <command>New Project</command> og giv din ripning et
 navn. Under fanebladet <command>RIP Title</command> klikker du
-<command>Read DVD Table of Contents</command> hvorefter du vælger alt
-ved markere den første og trykke SHIFT-klik på den nederste. Herefter
-klikker du <command>RIP Selected Titles/Chapter(s)</command>. Så
+<command>Read DVD Table of Contents</command> hvorefter du vÃ¦lger alt
+ved markere den fÃ¸rste og trykke SHIFT-klik pÃ¥ den nederste. Herefter
+klikker du <command>RIP Selected Titles/Chapter(s)</command>. SÃ¥
 starter selve kopieringen af data fra DVD til harddisk. Det tager
 1-60 minutter - alt efter hvor hurtig dit DVD-drev er.
 </para>
 
 <para>
 Fanebladet <command>Clip&amp;Zoom</command> er normalt sat til noget
-fornuftigt, så det springer vi over.
+fornuftigt, sÃ¥ det springer vi over.
 </para>
 
 <figure id="transcode-fig" float="1">
@@ -1358,11 +1358,11 @@ fornuftigt, så det springer vi over.
 </figure>
 
 <para>
-Under fanebladet <command>Transcode</command> skal du vælge hvilken
-codec (komprimmeringsalgorime) du vil bruge. Du skal også angive, hvor
+Under fanebladet <command>Transcode</command> skal du vÃ¦lge hvilken
+codec (komprimmeringsalgorime) du vil bruge. Du skal ogsÃ¥ angive, hvor
 meget diskplads den komprimmerede film skal fylde. Jo mere diskplads
 desto bedre kvalitet. Hvis du har lyst kan du i stedet angive
-bitraten. En bitrate på 500 kbps er nok i de fleste tilfælde. Herefter
+bitraten. En bitrate pÃ¥ 500 kbps er nok i de fleste tilfÃ¦lde. Herefter
 klikker du <command>Transcode</command> og efter nogle timer ligger
 der en .avi-fil klar til dig i kataloget du gav under
 <command>Preferences</command>.
@@ -1377,13 +1377,13 @@ Du kan nu bruge de mest basale ting i DVD::rip. Du finder dog hurtigt
 ud af, at man gerne vil eksperimentere lidt med de forskellige
 settings. Under <command>Transcode</command> kan du angive start- og
 slut-frame (<command>Frame Range</command>). Ved at angive noget
-passende (f.eks. 1000 og 2000) så kan du nøjes med at encode en del af
+passende (f.eks. 1000 og 2000) sÃ¥ kan du nÃ¸jes med at encode en del af
 filmen og derefter vurdere om resultatet er godt nok til hele filmen.
 </para>
 
 <para>
-Det kan du læse mere om DVD::rip på:
-<ulink url="http://www.exit1.org/dvdrip/">http://www.exit1.org/dvdrip/</ulink> og mere om ripping med Linux på
+Det kan du lÃ¦se mere om DVD::rip pÃ¥:
+<ulink url="http://www.exit1.org/dvdrip/">http://www.exit1.org/dvdrip/</ulink> og mere om ripping med Linux pÃ¥
 <ulink url="http://www.bunkus.org/dvdripping4linux/single/index.html">http://www.bunkus.org/dvdripping4linux/single/index.html</ulink>.
 </para>
 </sect2>
@@ -1396,36 +1396,36 @@ Det kan du læse mere om DVD::rip på:
 <indexterm><primary>Video For Linux</primary></indexterm>
 <indexterm><primary>v4l</primary></indexterm>
 <para>
-Indtil for nylig var det vanskeligt at få et webcam (internet-kamera) 
+Indtil for nylig var det vanskeligt at fÃ¥ et webcam (internet-kamera) 
 til at virke under Linux, men med kerne 2.4 er det nu blevet langt
-lettere. Det er stadig sådan at man skal sikre sig at det enkelte
-kamera har understøttelse under Linux (helst inden man køber det). I
-praksis har de fleste USB kameraer understøttelse, men enkelte
+lettere. Det er stadig sÃ¥dan at man skal sikre sig at det enkelte
+kamera har understÃ¸ttelse under Linux (helst inden man kÃ¸ber det). I
+praksis har de fleste USB kameraer understÃ¸ttelse, men enkelte
 eksotiske kameraer giver stadig problemer. Ligeledes skal man kigge
-sig godt for, hvis man f.eks. vil have et webcam på parallel- eller
+sig godt for, hvis man f.eks. vil have et webcam pÃ¥ parallel- eller
 firewire-porten. 
 </para>
 
-<para>I praksis fungerer de fleste webcams under Linux ved hjælp af
+<para>I praksis fungerer de fleste webcams under Linux ved hjÃ¦lp af
 "Video For Linux" (v4l) arkitekturen. En driver sidder mellem Linux
-kernen og kameraet, og stiller en v4l grænseflade til rådighed som
+kernen og kameraet, og stiller en v4l grÃ¦nseflade til rÃ¥dighed som
 programmer der kan bruge v4l kan anvende. Et klassisk program er
-XAWTV, men også f.eks. aKtion (se <xref linkend="xanim"/>) understøtter
-dette. Du kan finde mere information om v4l på f.eks. 
+XAWTV, men ogsÃ¥ f.eks. aKtion (se <xref linkend="xanim"/>) understÃ¸tter
+dette. Du kan finde mere information om v4l pÃ¥ f.eks. 
 <ulink url="http://www.exploits.org/v4l/">http://www.exploits.org/v4l/</ulink>.</para>
 
 <para>
-På <ulink url="http://qce-ga.sourceforge.net">http://qce-ga.sourceforge.net</ulink> kan man finde drivere til Logitech Quickcam Express. 
+PÃ¥ <ulink url="http://qce-ga.sourceforge.net">http://qce-ga.sourceforge.net</ulink> kan man finde drivere til Logitech Quickcam Express. 
 </para>
 
 <para>
-På <ulink url="http://qce-ga.sourceforge.net/use.html">http://qce-ga.sourceforge.net/use.html</ulink> er også nævnt et par programmer som driverne virker 
-sammen med, såsom XAWTV <ulink url="http://linux.bytesex.org/xawtv/">http://linux.bytesex.org/xawtv/</ulink>.
+PÃ¥ <ulink url="http://qce-ga.sourceforge.net/use.html">http://qce-ga.sourceforge.net/use.html</ulink> er ogsÃ¥ nÃ¦vnt et par programmer som driverne virker 
+sammen med, sÃ¥som XAWTV <ulink url="http://linux.bytesex.org/xawtv/">http://linux.bytesex.org/xawtv/</ulink>.
 </para>
 
 <para>
-Et rigtig godt sted at få mere information om drivere til Philips webcam serien
-er på
+Et rigtig godt sted at fÃ¥ mere information om drivere til Philips webcam serien
+er pÃ¥
 <ulink url="http://www.smcc.demon.nl/webcam/">http://www.smcc.demon.nl/webcam/</ulink>
 </para>
 
@@ -1440,62 +1440,62 @@ er på
 <indexterm><primary>Videoredigering</primary></indexterm>
 
 <para>
-Videoredigering er en omfattende proces der kræver at man gennemfører
-en del skridt og at man har noget rimeligt hardware - især må man nok
+Videoredigering er en omfattende proces der krÃ¦ver at man gennemfÃ¸rer
+en del skridt og at man har noget rimeligt hardware - isÃ¦r mÃ¥ man nok
 forvente at skulle bruge en del diskplads. Hvis man vil lave mange
 sjove effekter (overgange, mv) eller gerne vil indkode til MPEG2/DivX
-er det også en god idé at have en (eller flere) kraftige processorer.
+er det ogsÃ¥ en god idÃ© at have en (eller flere) kraftige processorer.
 </para>
 
 <para>Videoredigering under Linux er ikke trivielt at begynde at
-arbejde med. Det skyldes primært at man skal installere en del
-forskellig software for at få de forskellige codecs (se <xref
-linkend="videoreg-konvertering"/>) understøttet og at man også i et
+arbejde med. Det skyldes primÃ¦rt at man skal installere en del
+forskellig software for at fÃ¥ de forskellige codecs (se <xref
+linkend="videoreg-konvertering"/>) understÃ¸ttet og at man ogsÃ¥ i et
 vist omfang vil blive tvunget til at foretage en del konverteringer
-mellem forskellige formater for at få de forskellige værktøjer til at
-arbejde med ens sekvenser. En af årsagerne til at man selv skal
-installere en del software er dels at udviklingen går meget hurtigt
-(hvilket er positivt) men også at megen multimedie software til Linux
-desværre rammes af patenter eller andre restriktioner der gør at
-softwaren kan være omfattet af restriktioner i USA. Derfor indeholder
+mellem forskellige formater for at fÃ¥ de forskellige vÃ¦rktÃ¸jer til at
+arbejde med ens sekvenser. En af Ã¥rsagerne til at man selv skal
+installere en del software er dels at udviklingen gÃ¥r meget hurtigt
+(hvilket er positivt) men ogsÃ¥ at megen multimedie software til Linux
+desvÃ¦rre rammes af patenter eller andre restriktioner der gÃ¸r at
+softwaren kan vÃ¦re omfattet af restriktioner i USA. Derfor indeholder
 mange distributioner ikke denne software som standard. Ofte kan man
-dog finde europæiske hjemmesider der har denne software tilgængelig
-for specifikke distributioner - det gælder f.eks. Mandrake Linux. </para>
+dog finde europÃ¦iske hjemmesider der har denne software tilgÃ¦ngelig
+for specifikke distributioner - det gÃ¦lder f.eks. Mandrake Linux. </para>
 
-<para>For at kunne redigere video kræves at man kan</para>
+<para>For at kunne redigere video krÃ¦ves at man kan</para>
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-Få videostrømmen ind på computeren. (Optage video).
+FÃ¥ videostrÃ¸mmen ind pÃ¥ computeren. (Optage video).
  </para>
 </listitem>
 <listitem>
  <para>
-Konvertere video fra det rå videoformat til et format ens programmer
+Konvertere video fra det rÃ¥ videoformat til et format ens programmer
 kan arbejde med.
  </para>
 </listitem>
 <listitem>
  <para>
-Manipulere video- og lydklip og sætte dem sammen til videofilm.
+Manipulere video- og lydklip og sÃ¦tte dem sammen til videofilm.
  </para>
 </listitem>
 <listitem>
  <para>
-Konvertere den færdige film til det endelige format.
+Konvertere den fÃ¦rdige film til det endelige format.
  </para>
 </listitem>
 <listitem>
  <para>
-Overføre den færdige film til slutmediet.
+OverfÃ¸re den fÃ¦rdige film til slutmediet.
  </para>
 </listitem>
 </itemizedlist>
 
-<para>I det følgende vil hvert af disse skridt blive skitseret - da
-der er mange forskellige måder at gøre tingene på, vil de forskellige
-skridt ikke blive gennemgået i detaljer. Flere værktøjer dækker
-desuden flere skridt - de vil blive nævnt under de punkter hvor de er
+<para>I det fÃ¸lgende vil hvert af disse skridt blive skitseret - da
+der er mange forskellige mÃ¥der at gÃ¸re tingene pÃ¥, vil de forskellige
+skridt ikke blive gennemgÃ¥et i detaljer. Flere vÃ¦rktÃ¸jer dÃ¦kker
+desuden flere skridt - de vil blive nÃ¦vnt under de punkter hvor de er
 mest relevante.</para>
 
 <sect2 id="videoreg-optage">
@@ -1504,55 +1504,55 @@ mest relevante.</para>
 <indexterm><primary>Video For Linux</primary></indexterm>
 <indexterm><primary>v4l</primary></indexterm>
 <indexterm><primary>XAWTV</primary></indexterm>
-<para>Der findes en række måder at få en videostrøm ind på dit system
-på. I det følgende antages at man har en videosekvens man har optaget
-på et videokamera eller lignende (kan også være f.eks. direkte tv,
-eller et webcam) og det er denne sekvens man vil have lagret på sin
-harddisk, med så lidt tab af signal (f.eks. frames) som muligt. Jeg
-forsøger at bruge ordet "optage" om denne proces - på engelsk kalder
+<para>Der findes en rÃ¦kke mÃ¥der at fÃ¥ en videostrÃ¸m ind pÃ¥ dit system
+pÃ¥. I det fÃ¸lgende antages at man har en videosekvens man har optaget
+pÃ¥ et videokamera eller lignende (kan ogsÃ¥ vÃ¦re f.eks. direkte tv,
+eller et webcam) og det er denne sekvens man vil have lagret pÃ¥ sin
+harddisk, med sÃ¥ lidt tab af signal (f.eks. frames) som muligt. Jeg
+forsÃ¸ger at bruge ordet "optage" om denne proces - pÃ¥ engelsk kalder
 man det at "grabbe" video.</para>
 
-<para>Det er selvklart muligt at købe et decideret optagekort (frame
-grabber card). Et sådan kort har den store fordel at det kan grabbe
+<para>Det er selvklart muligt at kÃ¸be et decideret optagekort (frame
+grabber card). Et sÃ¥dan kort har den store fordel at det kan grabbe
 analog video og eventuelt komprimere det i hardware, hvilket fjerner
 en del af belastningen fra selve systemet. Der findes et par kort der
-er understøttet under Linux via mjpegtools (mjpegtools er beskrevet
+er understÃ¸ttet under Linux via mjpegtools (mjpegtools er beskrevet
 i <xref linkend="videoreg-konvertering-mjpegtools"/>). Jeg har imidlertid ingen
 erfaring med disse kort.</para>
 
 <para>mjpegtools kan desuden optage fra "Video For Linux" (v4l)
-enheder og understøtter også software realtids komprimering under
+enheder og understÃ¸tter ogsÃ¥ software realtids komprimering under
 optagelse til jpeg codecs. v4l er en generel video infrastruktur som
-de fleste drivere til Linux der beskæftiger sig med video
-understøtter. (Med f.eks. DV som en undtagelse, så vidt jeg ved). Hvis
+de fleste drivere til Linux der beskÃ¦ftiger sig med video
+understÃ¸tter. (Med f.eks. DV som en undtagelse, sÃ¥ vidt jeg ved). Hvis
 man har f.eks. et webcam, vil driveren til dette typisk stille en v4l
-grænseflade til rådighed for applikationer. Derfor kan de fleste
+grÃ¦nseflade til rÃ¥dighed for applikationer. Derfor kan de fleste
 programmer der f.eks. er beregnet til at optage video, fungere med
-v4l. Du kan finde mere information om v4l på f.eks. 
+v4l. Du kan finde mere information om v4l pÃ¥ f.eks. 
 <ulink
 url="http://www.exploits.org/v4l/">http://www.exploits.org/v4l/</ulink>.
 </para>
 
 <para>Hvis du har et tv-kort, der bruger v4l, kan du bruge
 f.eks. programmet XAWTV (se
-<xref linkend="webcam"/>), til at gemme din videosekvens på din
-harddisk enten som en række jpeg billeder, eller som både lyd og
-billede i en AVI strøm. Du skal blot afspille din videosekvens og bede
-XAWTV om at gemme den på en passende måde. Imidlertid kræver dette en
+<xref linkend="webcam"/>), til at gemme din videosekvens pÃ¥ din
+harddisk enten som en rÃ¦kke jpeg billeder, eller som bÃ¥de lyd og
+billede i en AVI strÃ¸m. Du skal blot afspille din videosekvens og bede
+XAWTV om at gemme den pÃ¥ en passende mÃ¥de. Imidlertid krÃ¦ver dette en
 del af din hardware. Ved normal fremvisning skriver dit tv-kort direkte
 i dit grafikkorts hukommelse og med mindre dit tv-kort (og driveren til
-det) kan overføre billederne til din ram direkte, skal XAWTV læse
+det) kan overfÃ¸re billederne til din ram direkte, skal XAWTV lÃ¦se
 billederne fra videokortets hukommelse og behandle dem
-efterfølgende. Det kan være en temmeligt langsommelig proces og det
-er vanskeligt at grabbe med særlig høj opløsning, eller i særlig god
-kvalitet på den måde. Med en tilstrækkelig hurtig computer burde det
-dog kunne lade sig gøre.</para>
+efterfÃ¸lgende. Det kan vÃ¦re en temmeligt langsommelig proces og det
+er vanskeligt at grabbe med sÃ¦rlig hÃ¸j oplÃ¸sning, eller i sÃ¦rlig god
+kvalitet pÃ¥ den mÃ¥de. Med en tilstrÃ¦kkelig hurtig computer burde det
+dog kunne lade sig gÃ¸re.</para>
 
-<para>For et webcam gælder egentlig de samme betragtninger som for
-tv-kortet, bortset fra at man nok har en større sandsynlighed for at
-opnå succes, da udgangspunktet som regel er at et webcam har en
-relativt ringere kvalitet end et videokamera og især et lavere
-båndbreddeforbrug.</para>
+<para>For et webcam gÃ¦lder egentlig de samme betragtninger som for
+tv-kortet, bortset fra at man nok har en stÃ¸rre sandsynlighed for at
+opnÃ¥ succes, da udgangspunktet som regel er at et webcam har en
+relativt ringere kvalitet end et videokamera og isÃ¦r et lavere
+bÃ¥ndbreddeforbrug.</para>
 
 <sect3 id="firewire">
 <title>Optage digital video</title>
@@ -1574,46 +1574,46 @@ båndbreddeforbrug.</para>
 
 <para>Hvis man er den lykkelige ejer af et digitalt videokamera (DV
 kamera) er der ingen tvivl om hvordan man skal optage video; det skal
-man gøre med Firewire. Firewire er en IEEE specifikation, nummer
-1394. (Firewire er et "kælenavn" for denne specifikation, som omtales
-som IEEE1394 når man snakker teknik. Sony har forsøgt at kalde
-Firewire for ILink, men det er vist aldrig rigtigt slået an).</para>
+man gÃ¸re med Firewire. Firewire er en IEEE specifikation, nummer
+1394. (Firewire er et "kÃ¦lenavn" for denne specifikation, som omtales
+som IEEE1394 nÃ¥r man snakker teknik. Sony har forsÃ¸gt at kalde
+Firewire for ILink, men det er vist aldrig rigtigt slÃ¥et an).</para>
 
 <para>For at bruge Firewire, skal ens videokamera have en Firewire
 port. Det er mit indtryk at alle digitale videokameraer har en
-sådan. Derudover skal man have en Firewire port i sin PC. Har man en
-stationær, kan man købe f.eks. et Adaptec FireConnect 4300 kort til
-omkring 500-700 kr. Mange nyere bærbare (inklusiv alle fra Apple og de
+sÃ¥dan. Derudover skal man have en Firewire port i sin PC. Har man en
+stationÃ¦r, kan man kÃ¸be f.eks. et Adaptec FireConnect 4300 kort til
+omkring 500-700 kr. Mange nyere bÃ¦rbare (inklusiv alle fra Apple og de
 fleste fra Dell) kommer med en indbygget Firewire port. Det vigtige er
 at sikre sig at chippen er en OHCI-kompatibel chip - men, da det er
-langt den mest udbredte burde det være en smal sag.</para>
+langt den mest udbredte burde det vÃ¦re en smal sag.</para>
 
-<para>Dernæst skal man selvfølgelig bruge noget software. Først og
+<para>DernÃ¦st skal man selvfÃ¸lgelig bruge noget software. FÃ¸rst og
 fremmest skal man bruge nogen kernedrivere. Projektet for disse
-drivere er på <ulink
+drivere er pÃ¥ <ulink
 url="http://www.sourceforge.net/projects/linux1394/">http://www.sourceforge.net/projects/linux1394/</ulink>.
-Det vil fremgå af projektets hjemmeside hvilke kerneversioner, osv,
+Det vil fremgÃ¥ af projektets hjemmeside hvilke kerneversioner, osv,
 der anbefales - jeg har i skrivende stund gode erfaringer med den der
-kommer med Mandrake 8.2, nemlig kerne 2.4.18. Bemærk at driverne er en
-del af standard kernen, altså også 2.4.18, men at det nogen gange kan
+kommer med Mandrake 8.2, nemlig kerne 2.4.18. BemÃ¦rk at driverne er en
+del af standard kernen, altsÃ¥ ogsÃ¥ 2.4.18, men at det nogen gange kan
 betale sig at opgradere driverne alligevel. For mig har alting
 fungeret fint med den kerne og de pakker der kommer med Mandrake
-8.2. (På nær libdv - det vender jeg tilbage til nedenfor).</para>
+8.2. (PÃ¥ nÃ¦r libdv - det vender jeg tilbage til nedenfor).</para>
 
-<para>Installationen af IEEE1394 driverne er i øvrigt beskrevet i
-dokumentationen til driverne. I det følgende vises kort hvordan en
+<para>Installationen af IEEE1394 driverne er i Ã¸vrigt beskrevet i
+dokumentationen til driverne. I det fÃ¸lgende vises kort hvordan en
 session hvor disse drivere anvendes f.eks. kan se ud.</para>
 
 <para>Man skal have et device kaldet <filename>/dev/raw1394</filename>
-som skal være oprettet som major 171, minor 0, og med passende ejer og
+som skal vÃ¦re oprettet som major 171, minor 0, og med passende ejer og
 rettigheder:</para>
 <screen>
 <prompt>[root@linus /root]#</prompt> <userinput>ls -l /dev/raw1394</userinput>
 crw-r--r--    1 tyge     tyge     171,   0 mar 29 21:34 /dev/raw1394
 </screen>
 
-<para>Indsættelse af modulerne skulle helst ikke give nogen fejl. Det
-kan f.eks. se sådan ud, når man gør det manuelt (som sædvanligt kan
+<para>IndsÃ¦ttelse af modulerne skulle helst ikke give nogen fejl. Det
+kan f.eks. se sÃ¥dan ud, nÃ¥r man gÃ¸r det manuelt (som sÃ¦dvanligt kan
 moduler autoloades - se andetsteds for information om dette):</para>
 
 <screen>
@@ -1629,8 +1629,8 @@ May  1 15:43:59 linus kernel: PCI: Sharing IRQ 10 with 02:0f.1
 May  1 15:43:59 linus kernel: ohci1394_0: OHCI-1394 1.0 (PCI): irq=[10] ...
 </screen>
 
-<para>IEEE1394 driveren bliver automatisk indlæst af ovenstående selv
-om den ikke blev indlæst eksplicit:</para>
+<para>IEEE1394 driveren bliver automatisk indlÃ¦st af ovenstÃ¥ende selv
+om den ikke blev indlÃ¦st eksplicit:</para>
 
 <screen>
 <prompt>[root@linus /root]# </prompt><userinput>lsmod | head</userinput>
@@ -1640,28 +1640,28 @@ raw1394                 6832   0  (unused)
 ieee1394               26312   0  [ohci1394 raw1394]
 </screen>
 
-<para>Når de forskellige drivere er indlæste, kan du køre programmet
+<para>NÃ¥r de forskellige drivere er indlÃ¦ste, kan du kÃ¸re programmet
 <command>romtest</command> som er et testprogram fra libavc
 pakken. Dette er en pakke der giver et standard programmerings
-grænsesnit (API) til "1394 Trade Association AV/C (Audio/Video
-Control) Digital Interface Command Set" - altså et API til de
+grÃ¦nsesnit (API) til "1394 Trade Association AV/C (Audio/Video
+Control) Digital Interface Command Set" - altsÃ¥ et API til de
 protokolkommandoer vi kan sende til vores Firewire controller og
-bus. Hvis du kører Mandrake 8.2, ligger dette program i pakken
-"libavc1394_0-testools" som selvfølgelig forudsætter at "libavc1394_0"
-er installeret (og, det er nok en god idé at installere
-"libavc1394_0-devel" mens man er i gang). I denne pakke medfølger
-desuden <command>dvcont</command> som er et kommandolinje værktøj til
+bus. Hvis du kÃ¸rer Mandrake 8.2, ligger dette program i pakken
+"libavc1394_0-testools" som selvfÃ¸lgelig forudsÃ¦tter at "libavc1394_0"
+er installeret (og, det er nok en god idÃ© at installere
+"libavc1394_0-devel" mens man er i gang). I denne pakke medfÃ¸lger
+desuden <command>dvcont</command> som er et kommandolinje vÃ¦rktÃ¸j til
 at manipulere med DV kameraer med. <command>romtest</command> og
-<command>dvcont</command> forudsætter udover libavc1394 at man har
-installeret "libraw1394" biblioteket (dette bibliotek anvendes iøvrigt
-af stort set alle programmer der håndterer DV nær hardwaren, så det er
+<command>dvcont</command> forudsÃ¦tter udover libavc1394 at man har
+installeret "libraw1394" biblioteket (dette bibliotek anvendes iÃ¸vrigt
+af stort set alle programmer der hÃ¥ndterer DV nÃ¦r hardwaren, sÃ¥ det er
 praktisk at installere det). I Mandrake 8.2 kan man installere
 "libraw1394_5" og "libraw1394_5-devel" pakkerne. Hjemmesiderne for de
-to biblioteker er på <ulink
+to biblioteker er pÃ¥ <ulink
 url="http://www.sourceforge.net/projects/libraw1394/">http://www.sourceforge.net/projects/libraw1394/</ulink>
 og <ulink
 url="http://www.sourceforge.net/projects/libavc1394/">http://www.sourceforge.net/projects/libavc1394/</ulink>.
-Kørsel af <command>romtest</command> kan f.eks. se sådan her ud (når
+KÃ¸rsel af <command>romtest</command> kan f.eks. se sÃ¥dan her ud (nÃ¥r
 der ikke er nogen enheder tilsluttet Firewire bussen):</para>
 
 <screen>
@@ -1690,17 +1690,17 @@ directory:
     textual leaves       : Linux 1394
 </screen>
 
-<para>Når du har overbevist dig om at du har kontakt til din Firewire
-adapter, kan du prøve at forbinde dit kamera. Bemærk, at en del DV
-kameraer ikke vil snakke på Firewire-stikket, hvis ikke det er aktivt
-når kameraet er tændt. Med andre ord: det er typisk en god idé at slukke
-kameraet inden man stikker Firewire-kablet i. Dernæst bør man indlæse
-driverne på PC-siden og så endeligt tænde kameraet. Hvis man derefter
-kører <command>romtest</command>, skulle man gerne have to noder på
-sin Firewire-bus. Alternativt kan man køre programmet
+<para>NÃ¥r du har overbevist dig om at du har kontakt til din Firewire
+adapter, kan du prÃ¸ve at forbinde dit kamera. BemÃ¦rk, at en del DV
+kameraer ikke vil snakke pÃ¥ Firewire-stikket, hvis ikke det er aktivt
+nÃ¥r kameraet er tÃ¦ndt. Med andre ord: det er typisk en god idÃ© at slukke
+kameraet inden man stikker Firewire-kablet i. DernÃ¦st bÃ¸r man indlÃ¦se
+driverne pÃ¥ PC-siden og sÃ¥ endeligt tÃ¦nde kameraet. Hvis man derefter
+kÃ¸rer <command>romtest</command>, skulle man gerne have to noder pÃ¥
+sin Firewire-bus. Alternativt kan man kÃ¸re programmet
 <command>gscanbus</command>, som er et grafisk program til at se
-enheder på en Firewire-bus, inspicere dem, og for enkelte enheder
-kontrollere dem. På <xref linkend="gscanbus-fig"/> er et skærmdump af
+enheder pÃ¥ en Firewire-bus, inspicere dem, og for enkelte enheder
+kontrollere dem. PÃ¥ <xref linkend="gscanbus-fig"/> er et skÃ¦rmdump af
 <command>gscanbus</command> med et DV kamera tilsluttet og et
 dialogvindue til at kontrollere kameraet med, vist.</para>
 
@@ -1712,45 +1712,45 @@ dialogvindue til at kontrollere kameraet med, vist.</para>
 <para>Og, endelig er vi fremme ved at optage video. Til dette kan du
 f.eks.  bruge kommandolinjeprogrammet <command>dvgrab</command>. Dette
 program ligger under Mandrake 8.2 i "dvgrab" pakken. Hjemmesiden for
-dette værktøj er på
+dette vÃ¦rktÃ¸j er pÃ¥
 <ulink
 url="http://www.schirmacher.de/arne/dvgrab/index_e.html">http://www.schirmacher.de/arne/dvgrab/index_e.html</ulink>.
-<command>dvgrab</command> kræver biblioteket "libdv". Det er en
-rigtigt god idé at installere libdv i den nyeste version, version
+<command>dvgrab</command> krÃ¦ver biblioteket "libdv". Det er en
+rigtigt god idÃ© at installere libdv i den nyeste version, version
 0.98. Hvis du f.eks. oplever at dvgrab ikke kan se dit kamera eller
 simpelthen crasher (dvs at f.eks. <command>dvgrab</command> crasher),
 kan det skyldes en kendt fejl med MMX detekteringen i libdv. De RPM
 filer der er med Mandrake 8.2 indeholder ikke en rettelse for denne
-fejl, så det er nødvendigt at hente den nye version. Bemærk at
-både Kino, MainActor og Broadcast 2000 tilbyder grafiske frontends til
+fejl, sÃ¥ det er nÃ¸dvendigt at hente den nye version. BemÃ¦rk at
+bÃ¥de Kino, MainActor og Broadcast 2000 tilbyder grafiske frontends til
 at optage fra DV med - disse programmer er beskrevet i <xref
 linkend="videoreg-redigere"/> nedenfor.</para>
 
-<para>Når du bruger <command>dvgrab</command> og dit kamera er PAL
-(Meste af verden, pånær USA), optager du med 25 billeder i sekundet (I
-modsætning til NTSC, der optager med næsten 30 billeder i
-sekundet). Det betyder at du vil optage med ret præcist 3.6 MB/s. De
+<para>NÃ¥r du bruger <command>dvgrab</command> og dit kamera er PAL
+(Meste af verden, pÃ¥nÃ¦r USA), optager du med 25 billeder i sekundet (I
+modsÃ¦tning til NTSC, der optager med nÃ¦sten 30 billeder i
+sekundet). Det betyder at du vil optage med ret prÃ¦cist 3.6 MB/s. De
 fleste moderne harddiske har ingen problemer med at tage imod dette,
-men man skal være opmærksom på at der er ingen flowkontrol - det vil
-sige at hvis man sætter sin harddisk til at lave noget andet, kan man
+men man skal vÃ¦re opmÃ¦rksom pÃ¥ at der er ingen flowkontrol - det vil
+sige at hvis man sÃ¦tter sin harddisk til at lave noget andet, kan man
 risikere at man mister billeder. Endvidere kan man tilsyneladende
 risikere at komme i nogen situationer hvor Linux naivt beslutter sig
 for at fylde ens RAM med billeder, istedet for at skrive ud til
-harddisken med det samme. Når Linux endelig opdager at man har tænkt
-sig at smide 12 GB på disken (en time i DV fylder omtrent 12 GB),
-begynder den hektisk at flushe ram til disken, og det kan også give
+harddisken med det samme. NÃ¥r Linux endelig opdager at man har tÃ¦nkt
+sig at smide 12 GB pÃ¥ disken (en time i DV fylder omtrent 12 GB),
+begynder den hektisk at flushe ram til disken, og det kan ogsÃ¥ give
 nogen pakketab. Jeg har dog aldrig selv oplevet dette, men har set det
-beskrevet. For nogen er løsningen at starte en separat process der
-løbende syncer disken. Det kan man f.eks. gøre ved at skrive</para>
+beskrevet. For nogen er lÃ¸sningen at starte en separat process der
+lÃ¸bende syncer disken. Det kan man f.eks. gÃ¸re ved at skrive</para>
 <screen><prompt>[tyge@hven ~%]$ </prompt><userinput>while : ; do sleep 1 && sync ; done</userinput>
 </screen>
 <para>i en xterm eller lignende (hvis man bruger en anden shell end
 bash er syntaxen lidt anderledes). Dette vil synce disken omtrent
-hvert sekund, hvilket antageligvis kan løse problemet med mistede
-billeder for nogen. Det kan muligvis også betale sig at bruge
-low-latency patchene til Linux kernen, eller i yderste nødstilfælde
-disable skrive cachen på disken med programmet
-<command>hdparm</command>. Det sidste må dog generelt frarådes.</para> 
+hvert sekund, hvilket antageligvis kan lÃ¸se problemet med mistede
+billeder for nogen. Det kan muligvis ogsÃ¥ betale sig at bruge
+low-latency patchene til Linux kernen, eller i yderste nÃ¸dstilfÃ¦lde
+disable skrive cachen pÃ¥ disken med programmet
+<command>hdparm</command>. Det sidste mÃ¥ dog generelt frarÃ¥des.</para> 
 
 </sect3> <!-- Digitale video/Firewire -->
 
@@ -1763,48 +1763,48 @@ disable skrive cachen på disken med programmet
 <indexterm><primary>Video codecs</primary></indexterm>
 
 
-<para>Næsten ligegyldigt hvordan du har optaget din originale
-videosekvens, vil der opstå et behov for at konvertere sekvensen til 
-et andet format, typisk et format dine værktøjer kan arbejde med. Når
-du har lavet din endelige film, vil der formentlig ligeledes være brug
-for at konvertere den til forskellige formater, afhængigt af hvad du
-skal bruge den til. Det sidste er dækket i <xref
-linkend="videoreg-slutkonvertering"/>, det første gives der en introduktion til i
+<para>NÃ¦sten ligegyldigt hvordan du har optaget din originale
+videosekvens, vil der opstÃ¥ et behov for at konvertere sekvensen til 
+et andet format, typisk et format dine vÃ¦rktÃ¸jer kan arbejde med. NÃ¥r
+du har lavet din endelige film, vil der formentlig ligeledes vÃ¦re brug
+for at konvertere den til forskellige formater, afhÃ¦ngigt af hvad du
+skal bruge den til. Det sidste er dÃ¦kket i <xref
+linkend="videoreg-slutkonvertering"/>, det fÃ¸rste gives der en introduktion til i
 dette afsnit.</para>
 
 <para>
-Først skal man gøre sig klart, hvilke formater ens værktøjer
-understøtter. I <xref linkend="videoreg-redigere"/> nævnes et par
-værktøjer til at redigere i videofilm med. Eksempelvis for Kino gælder
+FÃ¸rst skal man gÃ¸re sig klart, hvilke formater ens vÃ¦rktÃ¸jer
+understÃ¸tter. I <xref linkend="videoreg-redigere"/> nÃ¦vnes et par
+vÃ¦rktÃ¸jer til at redigere i videofilm med. Eksempelvis for Kino gÃ¦lder
 det at den kun redigerer DV klip i det format dvgrab optager med (DV
-format). For Broadcast 2000 gælder at den kun redigerer klip i
+format). For Broadcast 2000 gÃ¦lder at den kun redigerer klip i
 QuickTime - og kun i et par af de mere simple codecs.
 </para>
 
 <para>
 Overordnet set er der 3 udbredte formater; AVI (.avi), QuickTime
 (.mov) og MPEG (.mpeg). Imidlertid er f.eks. en .avi fil ikke bare en
-.avi fil. De forskellige formater her nævnt er faktisk kun en
-definition af hvordan man skal kunne udtrække de enkelte billeder,
+.avi fil. De forskellige formater her nÃ¦vnt er faktisk kun en
+definition af hvordan man skal kunne udtrÃ¦kke de enkelte billeder,
 synkronisere med lyd, mv. fra videosekvensen. Selve indkodningen af
-billeder kan gøres på mange forskellige måder. Eksempelvis ser man
-.avi filer hvor hver enkelt billede er rå 24 bit RGB og lyden er rå 16
+billeder kan gÃ¸res pÃ¥ mange forskellige mÃ¥der. Eksempelvis ser man
+.avi filer hvor hver enkelt billede er rÃ¥ 24 bit RGB og lyden er rÃ¥ 16
 bit stereo i f.eks. 44 kHz. Hvis man konverterer denne .avi sekvens
-til at billederne skal være jpeg komprimeret og lyden ulaw
-komprimeret, kan man opnå en voldsom formindskelse i pladsforbrug med
-et normalt tåleligt kvalitetstab. De forskellige måder at indkode og
-afkode billeder og lyd på i de forskellige sekvenser kaldes codecs.
-Desværre er det ofte sådan at de bedste codec - altså dem der giver
+til at billederne skal vÃ¦re jpeg komprimeret og lyden ulaw
+komprimeret, kan man opnÃ¥ en voldsom formindskelse i pladsforbrug med
+et normalt tÃ¥leligt kvalitetstab. De forskellige mÃ¥der at indkode og
+afkode billeder og lyd pÃ¥ i de forskellige sekvenser kaldes codecs.
+DesvÃ¦rre er det ofte sÃ¥dan at de bedste codec - altsÃ¥ dem der giver
 bedst billed- og lydkvalitet med mindst pladsforbrug - udelukkende
-frigives i binær form til f.eks. Windows og Mac. Eller er omfattet af
-patent- eller licensbetingelser der gør det umuligt at implementere
-dem i åben software. Derfor er det ikke nok at AVI, QuickTime og MPEG
-er understøttet under Linux - de enkelte codecs skal også være
+frigives i binÃ¦r form til f.eks. Windows og Mac. Eller er omfattet af
+patent- eller licensbetingelser der gÃ¸r det umuligt at implementere
+dem i Ã¥ben software. Derfor er det ikke nok at AVI, QuickTime og MPEG
+er understÃ¸ttet under Linux - de enkelte codecs skal ogsÃ¥ vÃ¦re
 det. Det er generelt ikke noget problem med de sekvenser man selv
 optager, men hvis man vil mikse sekvenser man har fundet andre steder
 sammen, kan man opleve at man nok kan se sekvensen, f.eks. gennem
-programmet Mplayer (se <xref linkend="DivX"/>), men at det kan være
-meget vanskeligt at konvertere sekvensen til noget ens værktøjer kan
+programmet Mplayer (se <xref linkend="DivX"/>), men at det kan vÃ¦re
+meget vanskeligt at konvertere sekvensen til noget ens vÃ¦rktÃ¸jer kan
 arbejde med.
 </para>
 
@@ -1819,25 +1819,25 @@ arbejde med.
 at konvertere en DV2 AVI sekvens, f.eks. optaget med dvgrab (se <xref
 linkend="firewire"/>) til en JPEG AVI sekvens. En JPG AVI sekvens kan
 ses med f.eks. xine og andre film afspillere (se <xref
-linkend="spille-film"/>). dv2jpg's hjemmeside er på
+linkend="spille-film"/>). dv2jpg's hjemmeside er pÃ¥
 <ulink
 url="http://sourceforge.net/projects/dv2jpg">http://sourceforge.net/projects/dv2jpg</ulink>,</para>
 
 <para>Fordelen ved <command>dv2jpg</command> er at det er rimeligt
-hurtigt at køre og at den resulterende fil bliver væsentligt mindre
-end den oprindelige DV film. Ulempen er at man ikke har så meget
-kontrol over konverteringen - f.eks. sætter dv2jpg opløsningen ned i
-en forventning om at man vil lave en sekvens der skal ud på f.eks. en
+hurtigt at kÃ¸re og at den resulterende fil bliver vÃ¦sentligt mindre
+end den oprindelige DV film. Ulempen er at man ikke har sÃ¥ meget
+kontrol over konverteringen - f.eks. sÃ¦tter dv2jpg oplÃ¸sningen ned i
+en forventning om at man vil lave en sekvens der skal ud pÃ¥ f.eks. en
 video-cd (VCD). Men, det er et simpelt program at bruge hvis man
-f.eks. gerne hurtigt vil lave en sekvens der f.eks. kan lægges online
-og/eller afspilles på en Windows-maskine. Til seriøs behandling af
+f.eks. gerne hurtigt vil lave en sekvens der f.eks. kan lÃ¦gges online
+og/eller afspilles pÃ¥ en Windows-maskine. Til seriÃ¸s behandling af
 sekvenser er det dog ikke velegnet, med mindre konverteringen passer
-til det formål man har med videokonverteringen.</para>
+til det formÃ¥l man har med videokonverteringen.</para>
 
     <para>
-     For at bruge <command>dv2jpg</command> skal DV-sekvensen være lagret i
+     For at bruge <command>dv2jpg</command> skal DV-sekvensen vÃ¦re lagret i
      "DV format 2".  Hvis du bruger <command>dvgrab</command> til at optage
-     med, skal du altså bruge kommandolinjetilvalget
+     med, skal du altsÃ¥ bruge kommandolinjetilvalget
      "<literal>--format dv2</literal>".
     </para>
 </sect3> <!-- dv2jpg -->
@@ -1859,73 +1859,73 @@ til det formål man har med videokonverteringen.</para>
 <indexterm><primary>mplex</primary></indexterm>
 <indexterm><primary>dvdauthor</primary></indexterm>
 
-<para>mjpegtools er en samling af en lang række kommandolinjeværktøjer
+<para>mjpegtools er en samling af en lang rÃ¦kke kommandolinjevÃ¦rktÃ¸jer
 der kan konvertere fra MPEG og DV codecs (samt et par YUV
 indkodninger) i AVI, movtar eller QuickTime format til tilsvarende
-indkodninger. Eksempelvis kan mjpegtools konvertere både almindelige
-DV strømme og uddata fra f.eks. Broadcast 2000 (mindst eet format
-ihvertfald). Disse værktøjer er nok uundværlige, hvis man vil
-konvertere sine færdige film til f.eks. forskellige bitrater,
-størrelse, indkodninger og til f.eks. et medie som
-VideoCD. Forudsætningen er naturligvis at ens slutresultat skal være
-MPEG i en eller anden form. mpjegtools hjemmeside er på
+indkodninger. Eksempelvis kan mjpegtools konvertere bÃ¥de almindelige
+DV strÃ¸mme og uddata fra f.eks. Broadcast 2000 (mindst eet format
+ihvertfald). Disse vÃ¦rktÃ¸jer er nok uundvÃ¦rlige, hvis man vil
+konvertere sine fÃ¦rdige film til f.eks. forskellige bitrater,
+stÃ¸rrelse, indkodninger og til f.eks. et medie som
+VideoCD. ForudsÃ¦tningen er naturligvis at ens slutresultat skal vÃ¦re
+MPEG i en eller anden form. mpjegtools hjemmeside er pÃ¥
 <ulink
 url="http://sourceforge.net/projects/mjpeg/">http://sourceforge.net/projects/mjpeg/</ulink>,
-men besøg også <ulink
+men besÃ¸g ogsÃ¥ <ulink
 url="http://mjpeg.sourceforge.net/">http://mjpeg.sourceforge.net/</ulink>.</para>
 
-<para>På hjemmesiden kan du hente mjpegtools i flere forskellige
-binære udgaver eller som kildefiler. Jeg vil anbefale dig at starte
-med at hente en binær udgave og blive fortrolig med
+<para>PÃ¥ hjemmesiden kan du hente mjpegtools i flere forskellige
+binÃ¦re udgaver eller som kildefiler. Jeg vil anbefale dig at starte
+med at hente en binÃ¦r udgave og blive fortrolig med
 programmet. Hvis du kan finde ud af det, kan det dog godt betale sig
-at oversætte mjpegtools selv, da det er et værktøj der er meget CPU
-tungt, og du formentlig vil kunne få en del glæde af at have en udgave
-af det der er optimeret til din maskine. På min maskine (866 MHz PIII)
+at oversÃ¦tte mjpegtools selv, da det er et vÃ¦rktÃ¸j der er meget CPU
+tungt, og du formentlig vil kunne fÃ¥ en del glÃ¦de af at have en udgave
+af det der er optimeret til din maskine. PÃ¥ min maskine (866 MHz PIII)
 konverterer mjpegtools fra DV format til MPEG2 med ca. 0.6 billeder i
-sekundet. Det er temmeligt langsomt. Bemærk at det er enog meget
-vanskeligt at oversætte mjpegtools med DV support på en måde så det
-virker. Start med de binære pakker.</para>
+sekundet. Det er temmeligt langsomt. BemÃ¦rk at det er enog meget
+vanskeligt at oversÃ¦tte mjpegtools med DV support pÃ¥ en mÃ¥de sÃ¥ det
+virker. Start med de binÃ¦re pakker.</para>
 
-<para>mjpegtools indeholder som sagt en lang række værktøjer. Skriv
-"man mjpegtools" i en shell for at få en introduktion. Disse værktøjer
-rækker over <command>lavrec</command> der kan optage MPEG strømme fra
+<para>mjpegtools indeholder som sagt en lang rÃ¦kke vÃ¦rktÃ¸jer. Skriv
+"man mjpegtools" i en shell for at fÃ¥ en introduktion. Disse vÃ¦rktÃ¸jer
+rÃ¦kker over <command>lavrec</command> der kan optage MPEG strÃ¸mme fra
 mange forskellige kilder, inklusiv nogle enkelte frame grabber korts,
-forskellige konverteringsværktøjer, <command>mplex</command> som er en
+forskellige konverteringsvÃ¦rktÃ¸jer, <command>mplex</command> som er en
 MPEG multiplexer (anvendes typisk til at knytte en lydfil sammen med
 en videofil i slutkonvertering) og <command>lavplay</command> der kan
-afspille de understøttede formater.</para>
+afspille de understÃ¸ttede formater.</para>
 
-<para>Men, det mest interessante værktøj at introducere her må være
+<para>Men, det mest interessante vÃ¦rktÃ¸j at introducere her mÃ¥ vÃ¦re
 <command>lav2mpeg</command>. Dette shellscript kan konvertere mellem
-de formater mjpegtools understøtter ved at kalde de forskellige
-værktøjer og har en rimeligt overskuelig syntaks.
+de formater mjpegtools understÃ¸tter ved at kalde de forskellige
+vÃ¦rktÃ¸jer og har en rimeligt overskuelig syntaks.
 <command>lav2mpeg</command> (og muligvis andre af mjpegtools'ene)
-bruger <command>toolame</command> værktøjet til at indkode lyd i MPEG
+bruger <command>toolame</command> vÃ¦rktÃ¸jet til at indkode lyd i MPEG
 filerne med. Det er muligt at bruge en anden enkoder,
-f.eks. <command>mp2enc</command> som følger med mjpegtools, læs manual
+f.eks. <command>mp2enc</command> som fÃ¸lger med mjpegtools, lÃ¦s manual
 siden til <command>lav2mpeg</command> for at finde ud af hvordan. Men,
 hvis du vil bruge <command>toolame</command> fandt jeg
-<command>toolame</command> på <ulink
+<command>toolame</command> pÃ¥ <ulink
 url="http://members.dingoblue.net.au/~mikecheng/">http://members.dingoblue.net.au/~mikecheng/</ulink>.
 Installationen er lidt klodset, man skal selv rette i Makefilen og
 installere programmet manualt, men det er et lille program, og hurtigt
 oversat og installeret.</para>
 
-<para>mjpegtools pakken indeholder endvidere et værktøj kaldet
+<para>mjpegtools pakken indeholder endvidere et vÃ¦rktÃ¸j kaldet
 <command>lav2divx</command>, der angiveligt skulle kunne bruges til at
 konvertere til aiv/divx format. Jeg har dog ikke testet det.</para>
 
 <para>Hvis du har <command>mjpegtools</command> installeret og er
-interesseret i at brænde dine færdige film på DVD, skulle programmet
+interesseret i at brÃ¦nde dine fÃ¦rdige film pÃ¥ DVD, skulle programmet
 <command>dvdauthor</command> angiveligt kunne bruges. Det kan du finde
-på <ulink
+pÃ¥ <ulink
 url="http://dvdauthor.sourceforge.net/">http://dvdauthor.sourceforge.net/</ulink>.
 </para> 
 
 </sect3>
 
 <sect3 id="videoreg-konvertering-andre">
-<title>Andre værktøjer</title>
+<title>Andre vÃ¦rktÃ¸jer</title>
 <indexterm><primary>dv_utils</primary></indexterm>
 <indexterm><primary>transcode</primary></indexterm>
 <indexterm><primary>DV</primary></indexterm>
@@ -1940,7 +1940,7 @@ url="http://www.singingwizard.org/programming.php">http://www.singingwizard.org/
 
 <para><command>transcode</command>, som kan hentes fra <ulink
 url="http://www.theorie.physik.uni-goettingen.de/~ostreich/transcode/">http://www.theorie.physik.uni-goettingen.de/~ostreich/transcode/</ulink>,
-kan ligeledes konvertere mellem en række formater.</para>
+kan ligeledes konvertere mellem en rÃ¦kke formater.</para>
 
 </sect3>
 
@@ -1952,10 +1952,10 @@ kan ligeledes konvertere mellem en række formater.</para>
 <indexterm><primary>Videoredigering</primary></indexterm>
 
 <para>Der findes en del programmer til at redigere video med. I det
-følgende vil nogen af de mest populære blive præsenteret. Disse
-programmer har typisk også mulighed for at redigere og filtrere en
+fÃ¸lgende vil nogen af de mest populÃ¦re blive prÃ¦senteret. Disse
+programmer har typisk ogsÃ¥ mulighed for at redigere og filtrere en
 smule i lyd - Broadcast 2000 har f.eks. rigtigt mange lydfiltre - men
-iøvrigt vil jeg ikke komme ind på lydredigering i sig selv. Der findes
+iÃ¸vrigt vil jeg ikke komme ind pÃ¥ lydredigering i sig selv. Der findes
 en del programmer til dette under Linux af varierende modenhed, se
 <xref linkend="lydredigering"/>.</para>
 
@@ -1964,11 +1964,11 @@ en del programmer til dette under Linux af varierende modenhed, se
 <indexterm><primary>Broadcast 2000</primary></indexterm>
 <indexterm><primary>Videoredigering</primary></indexterm>
 
-<para>Broadcast 2000 er et af de mest kendte og vel nok også ældste
-videoredigeringsprogrammer til Linux. Det understøtter optagelse fra
+<para>Broadcast 2000 er et af de mest kendte og vel nok ogsÃ¥ Ã¦ldste
+videoredigeringsprogrammer til Linux. Det understÃ¸tter optagelse fra
 et v4l interface, fra LML33, som er et frame grabber kort fra <ulink
 url="http://linuxmedialabs.com">Linux Media Labs</ulink>, samt fra
-Firewire interface. På <xref linkend="broadcast2000-fig"/> kan du se et
+Firewire interface. PÃ¥ <xref linkend="broadcast2000-fig"/> kan du se et
 typisk billede af Broadcast 2000.</para>
 
 <figure id="broadcast2000-fig" float="1">
@@ -1977,44 +1977,44 @@ typisk billede af Broadcast 2000.</para>
 </figure>
 
 <para>Broadcast 2000 er et ret kraftfuldt program, men det har nogen
-problemer. For det første editerer det kun enkelte formater, primært
-QuickTime med ret primitive codes. Heldigvis kan Broadcast 2000 også
-læse MPEG2-video (men, jeg har ikke haft succes med MPEG1-video).
+problemer. For det fÃ¸rste editerer det kun enkelte formater, primÃ¦rt
+QuickTime med ret primitive codes. Heldigvis kan Broadcast 2000 ogsÃ¥
+lÃ¦se MPEG2-video (men, jeg har ikke haft succes med MPEG1-video).
 Derudover har Broadcast 2000 nogen enkelte fejl og
-uhensigtsmæssigheder i grænsefladen, der nogen gange gør det lidt
-besværligt at finde ud af hvad der foregår i programmet. Jeg finder
-det personligt svært at arbejde med, lidt ala Blender. Endeligt har
-forfatteren stoppet udviklingen på Broadcast 2000, angiveligt fordi
-han blev truet med et sagsanlæg af nogen der mente at de havde
+uhensigtsmÃ¦ssigheder i grÃ¦nsefladen, der nogen gange gÃ¸r det lidt
+besvÃ¦rligt at finde ud af hvad der foregÃ¥r i programmet. Jeg finder
+det personligt svÃ¦rt at arbejde med, lidt ala Blender. Endeligt har
+forfatteren stoppet udviklingen pÃ¥ Broadcast 2000, angiveligt fordi
+han blev truet med et sagsanlÃ¦g af nogen der mente at de havde
 rettigheder til nogen af de teknikker programmet anvender. Han
-forsætter dog tilsyneladende udviklingen på programmet, nu under et
+forsÃ¦tter dog tilsyneladende udviklingen pÃ¥ programmet, nu under et
 nyt navn, nemlig Cinelerra (se <xref linkend="cinelerra"/>). Under
-Mandrake 8.2 kan man installere pakken "bcast" for at få adgang til
-Broadcast 2000. På <ulink
+Mandrake 8.2 kan man installere pakken "bcast" for at fÃ¥ adgang til
+Broadcast 2000. PÃ¥ <ulink
 url="http://gajda.dk/">http://gajda.dk/</ulink> kan man hente
 kildeteksten til Broadcast 2000, sammen med et patch der blandt andet
-giver understøttelse af OpenDivx og Vorbis. Der er også instruktioner
-i at oversætte det. Hvis man vil igang med kildeteksten til
-Broadcast 2000 kan nok også godt kigge på Cinelerra.</para>
+giver understÃ¸ttelse af OpenDivx og Vorbis. Der er ogsÃ¥ instruktioner
+i at oversÃ¦tte det. Hvis man vil igang med kildeteksten til
+Broadcast 2000 kan nok ogsÃ¥ godt kigge pÃ¥ Cinelerra.</para>
 
-<para>Hvis man kan finde ud af grænsefladen har Broadcast 2000 mange
+<para>Hvis man kan finde ud af grÃ¦nsefladen har Broadcast 2000 mange
 styrker. Eksempelvis kan det bruge plugins fra Gimp til at lave
 overgange og effekter med. Det giver en umiddelbar adgang til
-bogstaveligt talt 100 vis af spændende effekter og gør det ekstremt
-nemt at skrive sine egne effekter eller overgange; hvis man gøre det
-til Gimp, kan man gøre det til Broadcast 2000. Broadcast 2000 er
-desuden et udemærket lydredigeringsprogram.</para>
+bogstaveligt talt 100 vis af spÃ¦ndende effekter og gÃ¸r det ekstremt
+nemt at skrive sine egne effekter eller overgange; hvis man gÃ¸re det
+til Gimp, kan man gÃ¸re det til Broadcast 2000. Broadcast 2000 er
+desuden et udemÃ¦rket lydredigeringsprogram.</para>
 
-<para>Der følger en del dokumentation med til Broadcast 2000 og,
-ihvertfald for forfatteren, var det nødvendigt at nærlæse denne meget
+<para>Der fÃ¸lger en del dokumentation med til Broadcast 2000 og,
+ihvertfald for forfatteren, var det nÃ¸dvendigt at nÃ¦rlÃ¦se denne meget
 grundigt for overhovedet at komme igang.</para>
 
 <para>Det endelige format for sekvenser redigeret med Broadcast 2000
-bliver nødt til at være en variation af QuickTime. En del simple
-codecs understøttes, herunder DV (som jeg tror er mest relevant, hvis
+bliver nÃ¸dt til at vÃ¦re en variation af QuickTime. En del simple
+codecs understÃ¸ttes, herunder DV (som jeg tror er mest relevant, hvis
 man har brugt Broadcast 2000 til at optage video fra sit DV kamera
-med), JPEG, PNG, RGB og YUV. For f.eks. JPEG kan man få nogen
-kompression, men generelt er det ikke meget, før kvaliteten af
+med), JPEG, PNG, RGB og YUV. For f.eks. JPEG kan man fÃ¥ nogen
+kompression, men generelt er det ikke meget, fÃ¸r kvaliteten af
 billederne falder drastisk.</para>
 
 </sect3> <!-- Broadcast 2000 -->
@@ -2024,18 +2024,18 @@ billederne falder drastisk.</para>
 <indexterm><primary>Cinelerra</primary></indexterm>
 <indexterm><primary>Videoredigering</primary></indexterm>
 
-<para>Som nævnt i <xref linkend="broadcast2000"/> kaldes efterfølgeren
-til Broadcast 2000 Cinelerra. Hjemmesiden er på
+<para>Som nÃ¦vnt i <xref linkend="broadcast2000"/> kaldes efterfÃ¸lgeren
+til Broadcast 2000 Cinelerra. Hjemmesiden er pÃ¥
 <ulink
 url="http://sourceforge.net/projects/heroines/">http://sourceforge.net/projects/heroines/</ulink>.
 Cinelerra er en gennemgribende omskrivning af Broadcast 2000. Mens
 dette skrives (august 2002) er den nyeste version 1.0.0. Selv om
-Cinelerra således har nået version 1, oplever jeg ikke programmet som
-særligt stabilt. Visse dele af programmet virker dog
-fint, blandt andet lydredigering og grænsefladen er langt mere
-intuitiv end for Broadcast 2000. Så, hvis man er frisk på at
-eksperimentere lidt, så er det absolut interessant at prøve Cinelerra
-af. På <xref linkend="cinelerra-fig"/> kan du se et skærmdump af
+Cinelerra sÃ¥ledes har nÃ¥et version 1, oplever jeg ikke programmet som
+sÃ¦rligt stabilt. Visse dele af programmet virker dog
+fint, blandt andet lydredigering og grÃ¦nsefladen er langt mere
+intuitiv end for Broadcast 2000. SÃ¥, hvis man er frisk pÃ¥ at
+eksperimentere lidt, sÃ¥ er det absolut interessant at prÃ¸ve Cinelerra
+af. PÃ¥ <xref linkend="cinelerra-fig"/> kan du se et skÃ¦rmdump af
 Cinelerra med composition og ressource vinduet vist.</para>
 
 <figure id="cinelerra-fig" float="1">
@@ -2044,8 +2044,8 @@ Cinelerra med composition og ressource vinduet vist.</para>
 </figure>
 
 <para>Hvis du har et DV kamera kan du konvertere filer i DV2 AVI
-format til et format Cinelerra kan indlæse
-vha. <command>mjpegtools</command>. Det kan gøres eksempelvis sådan
+format til et format Cinelerra kan indlÃ¦se
+vha. <command>mjpegtools</command>. Det kan gÃ¸res eksempelvis sÃ¥dan
 her, hvor <filename>fil.dv2.avi</filename> konverteres til
 <filename>fil.mjpeg.mov</filename> (uddata fra programmerne slettet):</para>
 <screen>
@@ -2055,31 +2055,31 @@ her, hvor <filename>fil.dv2.avi</filename> konverteres til
 <prompt>[tyge@hven ~%]$ </prompt><userinput>rm video.mpjeg.mov audio.wav</userinput>
 </screen> 
 
-<para>Hvis du vælger at oversætte Cinelerra fra source, skal du vide
+<para>Hvis du vÃ¦lger at oversÃ¦tte Cinelerra fra source, skal du vide
 at processen ikke er triviel. Makefilen er "hjemmestrikket" og har
-blandt andet den uheldige egenskab at den forsøger at oversætte flere
-dele af programmet samtidig, men ikke tager højde for at nogen dele
+blandt andet den uheldige egenskab at den forsÃ¸ger at oversÃ¦tte flere
+dele af programmet samtidig, men ikke tager hÃ¸jde for at nogen dele
 kan fejle. Det vil sige at man faktisk kan risikere at det ser ud som
-om at programmet er blevet oversat korrekt, uden at det er tilfældet.
-Du skal have en rimelig erfaring med at oversætte software under Linux
-for at få det til at virke. Hent alle backup pakkerne (4 stk.:
+om at programmet er blevet oversat korrekt, uden at det er tilfÃ¦ldet.
+Du skal have en rimelig erfaring med at oversÃ¦tte software under Linux
+for at fÃ¥ det til at virke. Hent alle backup pakkerne (4 stk.:
 cinelerra, xmovie, libmpeg og quicktime) og udpak dem i et
-katalog. Læs derefter filen
+katalog. LÃ¦s derefter filen
 <filename>cinelerra/doc/doc_2002.html</filename> og ret i
-<filename>cinelerra/global_config</filename>. Jeg måtte f.eks. fjerne
-ALSA support fra config, for at få det til at virke, selvom jeg
-egentlig har ALSA support. Jeg måtte desuden installere pakken
+<filename>cinelerra/global_config</filename>. Jeg mÃ¥tte f.eks. fjerne
+ALSA support fra config, for at fÃ¥ det til at virke, selvom jeg
+egentlig har ALSA support. Jeg mÃ¥tte desuden installere pakken
 "libtermcap5-devel" - men der er ikke nogen oversigt over hvilke
-pakker der kræves for at oversætte.</para>
+pakker der krÃ¦ves for at oversÃ¦tte.</para>
 
-<para>Når du har rettet i config filen, kan du skifte til
-<filename>cinelerra</filename> og køre <command>make 2>&1 | tee
-make.log</command>. Redirectionen og pipen er for at sikre at du får
-al uddata i loggen. Når du er færdig med at oversætte skal du meget
+<para>NÃ¥r du har rettet i config filen, kan du skifte til
+<filename>cinelerra</filename> og kÃ¸re <command>make 2>&1 | tee
+make.log</command>. Redirectionen og pipen er for at sikre at du fÃ¥r
+al uddata i loggen. NÃ¥r du er fÃ¦rdig med at oversÃ¦tte skal du meget
 gerne have et program kaldet
 <filename>cinelerra/cinelerra/i686/cinelerra</filename>. Hvis ikke
-denne fil findes, så kig i <filename>make.log</filename> efter
-fejl. Fiks fejlene og prøv igen. Til sidst kan du køre <command>make
+denne fil findes, sÃ¥ kig i <filename>make.log</filename> efter
+fejl. Fiks fejlene og prÃ¸v igen. Til sidst kan du kÃ¸re <command>make
 install</command> som beskrevet i
 <filename>cinelerra/doc/doc_2002.html</filename>.</para>
 
@@ -2089,38 +2089,38 @@ install</command> som beskrevet i
 <title>MainActor</title>
 <indexterm><primary>MainActor</primary></indexterm>
 
-<para>MainActor, som kan fås fra <ulink
+<para>MainActor, som kan fÃ¥s fra <ulink
 url="http://www.mainconcept.de">http://www.mainconcept.de</ulink> er
 ikke Open Source, men derimod ShareWare. Indtil du registrerer vil
 MainActor skrive "MainActor" hen over alle dine videor. Registrering
 koster DM 149.</para>
 
 <para>MainActor kommer med flere programmer. Dels hovedprogrammet
-MainActor Sequencer (<command>maseq</command>), men også 3 mindre
-værktøjer (der vist alle er integreret i Sequencer), nemlig MainActor
-VideoEditor (<command>mave</command>) der er et simpelt værktøj til at
-råredigere enkelte sekvenser, MainActor VideoCapture
+MainActor Sequencer (<command>maseq</command>), men ogsÃ¥ 3 mindre
+vÃ¦rktÃ¸jer (der vist alle er integreret i Sequencer), nemlig MainActor
+VideoEditor (<command>mave</command>) der er et simpelt vÃ¦rktÃ¸j til at
+rÃ¥redigere enkelte sekvenser, MainActor VideoCapture
 (<command>macap</command>) der kan bruges til at optage sekvenser,
 samt i et vist omfang komprimere i realtid og endelig MATool
 (<command>matool</command>) der er et kommandolinje baseret program
-til at konvertere mellem forskellige videoformater. På <xref
-linkend="mainactor-fig"/> kan du se et skærmdump af MainActor Sequencer.</para>
+til at konvertere mellem forskellige videoformater. PÃ¥ <xref
+linkend="mainactor-fig"/> kan du se et skÃ¦rmdump af MainActor Sequencer.</para>
 
 <figure id="mainactor-fig" float="1">
 <title>MainActor Sequencer</title>
 <graphic fileref="mainactor.&magic;"  scale="33"></graphic>
 </figure>
 
-<para>Forfatteren til dette afsnit er en stor tilhænger af OSS
-software - for næsten enhver pris. Alligevel kan det kun anbefales at
-man i det mindste prøver MainActor, hvis man gerne vil lave
+<para>Forfatteren til dette afsnit er en stor tilhÃ¦nger af OSS
+software - for nÃ¦sten enhver pris. Alligevel kan det kun anbefales at
+man i det mindste prÃ¸ver MainActor, hvis man gerne vil lave
 videoredigering under Linux. Programmet tilbyder mange faciliteter man
-ellers vil skulle bruge mange forskellige programmer for at kunne få,
+ellers vil skulle bruge mange forskellige programmer for at kunne fÃ¥,
 herunder tekster, filtre, effekter og ikke mindst konvertering mellem
-en lang række formater og codecs. Imidlertid har jeg også oplevet at
-det er gået ned for mig mindst een gang - og så mærker man
+en lang rÃ¦kke formater og codecs. Imidlertid har jeg ogsÃ¥ oplevet at
+det er gÃ¥et ned for mig mindst een gang - og sÃ¥ mÃ¦rker man
 irritationen ved at det ikke er OSS. (Ikke at OSS programmer ikke
-crasher, men så kan man jo fyre op under
+crasher, men sÃ¥ kan man jo fyre op under
 <command>gdb</command>).</para>
 
 </sect3> <!-- Main Actor -->
@@ -2136,11 +2136,11 @@ hente fra <ulink
 url="http://www.sourceforge.net/projects/kino">http://www.sourceforge.net/projects/kino</ulink>.</para>
 
 <para>Kino tilbyder stort set den samme funktionalitet som programmet
-"iMovie" til Mac's, men interfacet er ikke så simpelt som iMovie.  På
-<xref linkend="kino-fig"/> kan du se et skærmskud af kino. Der er kun
-indlæst én sekvens, men kino har automatisk fundet ud af at det er 4
-scener, ved at kigge på tidsstemplerne i DV sekvensen. Du kan se det
-første billede i de 4 scener i venstre søjle. I hovedfeltet er vist
+"iMovie" til Mac's, men interfacet er ikke sÃ¥ simpelt som iMovie.  PÃ¥
+<xref linkend="kino-fig"/> kan du se et skÃ¦rmskud af kino. Der er kun
+indlÃ¦st Ã©n sekvens, men kino har automatisk fundet ud af at det er 4
+scener, ved at kigge pÃ¥ tidsstemplerne i DV sekvensen. Du kan se det
+fÃ¸rste billede i de 4 scener i venstre sÃ¸jle. I hovedfeltet er vist
 "tidslinjen" som er en smart facilitet til at browse rundt i sin film
 med.</para>
 
@@ -2149,49 +2149,49 @@ med.</para>
 <graphic fileref="kino.&magic;"  scale="50"></graphic>
 </figure>
 
-<para>Kino udviklerne har fokuseret på korrekthed og simplicitet og
+<para>Kino udviklerne har fokuseret pÃ¥ korrekthed og simplicitet og
 programmet er, for mig, meget stabilt i brug.</para>
 
-<para>Kino læser og skriver DV1 og DV2 codecs i AVI (altså samme
+<para>Kino lÃ¦ser og skriver DV1 og DV2 codecs i AVI (altsÃ¥ samme
 formater som man typisk vil optage med
-<command>dvgrab</command>) samt rå DV. Ingen af delene tilbyder
-kompression, men til gengæld er der heller ikke noget kvalitetstab
-overhovedet. Hvis man vil lave playback i fuld PAL opløsning under
+<command>dvgrab</command>) samt rÃ¥ DV. Ingen af delene tilbyder
+kompression, men til gengÃ¦ld er der heller ikke noget kvalitetstab
+overhovedet. Hvis man vil lave playback i fuld PAL oplÃ¸sning under
 Kino, skal man regne med at have mindst en PIII 866 MHz maskine.</para>
 
-<para>Den nyeste udgave af kino er version 0.51 som kræver libdv i
+<para>Den nyeste udgave af kino er version 0.51 som krÃ¦ver libdv i
 mindst version 0.98. Kino version 0.51 tilbyder scene redigering (de
-almindelige klip, kopier, indsæt, mv operationer). Kino kan optage
+almindelige klip, kopier, indsÃ¦t, mv operationer). Kino kan optage
 video fra dit DV kamera, som kan kontrolleres direkte fra kino (via
-IEEE1394) og v4l. (v4l support skal slås til i preferences da det er
+IEEE1394) og v4l. (v4l support skal slÃ¥s til i preferences da det er
 eksperimental kode). Kino har en timeline funktion, samt mulighed for
 at trimme scener. Kino kan eksportere din film tilbage til dit kamera,
-hvis det understøtter DV in (se <xref
-linkend="videoreg-lagre-dv"/>). Det kræver ikke en særligt kraftig
-maskine, men en rimelig disk, der kan holde mindst 3.6 MB/s ligeså
-længe filmen varer. Kino kan også eksportere til DV filer, still
+hvis det understÃ¸tter DV in (se <xref
+linkend="videoreg-lagre-dv"/>). Det krÃ¦ver ikke en sÃ¦rligt kraftig
+maskine, men en rimelig disk, der kan holde mindst 3.6 MB/s ligesÃ¥
+lÃ¦nge filmen varer. Kino kan ogsÃ¥ eksportere til DV filer, still
 billeder, mp3 og wav filer, samt til MJPEG (hvis du har mjpegtools
 installeret).</para>
 
 <para>Nyt i version 0.51 er muligheden for at lave overgange og simple
-titler og effekter, via "FX" siden. Grænsefladen er lidt mærkværdig,
-men godt forklaret i kinos online hjælp. Mest besynderligt er nok den
-måde man vælger ens kildemateriale, altså f.eks. ved en overgang
-hvilke frames man vil bruge til overgangen. Man skal som regel vælge
+titler og effekter, via "FX" siden. GrÃ¦nsefladen er lidt mÃ¦rkvÃ¦rdig,
+men godt forklaret i kinos online hjÃ¦lp. Mest besynderligt er nok den
+mÃ¥de man vÃ¦lger ens kildemateriale, altsÃ¥ f.eks. ved en overgang
+hvilke frames man vil bruge til overgangen. Man skal som regel vÃ¦lge
 "Overwrite" - som faktisk burde hedde "Replace" - ihvertfald hvis man
 vil lave overgange. Kino udviklerne har i denne version valgt at
-fokusere på stabilitet og korrekthed og bevidst udskudt
-at forsøge at lave et fantastisk interface, indtil de har en bedre
-forståelse for hvordan dette skal laves.</para>
+fokusere pÃ¥ stabilitet og korrekthed og bevidst udskudt
+at forsÃ¸ge at lave et fantastisk interface, indtil de har en bedre
+forstÃ¥else for hvordan dette skal laves.</para>
 
 <para>Kino kommer som udgangspunkt ikke med vildt mange
 overgange eller effekter. F.eks. er der ikke engang "titler" med. Til
-det skal du hente, oversætte og installere nogen plugins. To gode
-steder at få kino plugins er <ulink
+det skal du hente, oversÃ¦tte og installere nogen plugins. To gode
+steder at fÃ¥ kino plugins er <ulink
 url="http://users.pandora.be/acp/kino">http://users.pandora.be/acp/kino</ulink>
 og <ulink
 url="http://www.k-3d.com/kino">http://www.k-3d.com/kino</ulink>. Her er
-både titler og en række brugbare overgange og effekter.</para>
+bÃ¥de titler og en rÃ¦kke brugbare overgange og effekter.</para>
 
 </sect3> <!-- Kino -->
 </sect2> <!-- Redigering af video- og lydsekvenser -->
@@ -2200,9 +2200,9 @@ både titler og en række brugbare overgange og effekter.</para>
 <title>Konvertering til det endelige format</title>
 <indexterm><primary>Slutkonvertering af video</primary></indexterm>
 
-<para>Denne sektion beskriver meget kort hvilke værktøjer man kan
-bruge til slutkonvertering til det populære DIVX AVI format, og især
-MPEG strømme til Video-CD'er.</para>
+<para>Denne sektion beskriver meget kort hvilke vÃ¦rktÃ¸jer man kan
+bruge til slutkonvertering til det populÃ¦re DIVX AVI format, og isÃ¦r
+MPEG strÃ¸mme til Video-CD'er.</para>
 
 <sect3 id="videoreg-slutkonvertering-divx">
 <title>Indkodning til DivX AVI</title>
@@ -2219,10 +2219,10 @@ MPEG strømme til Video-CD'er.</para>
 
 <para>Se <command>lav2mpeg</command> i <xref
 linkend="videoreg-konvertering-mjpegtools"/>. Det er ret nemt at
-konvertere sine strømme til forskellige VideoCD-formater, såfremt man
-har dem i et format mjpegtools kan håndtere. For de bedre opløsninger,
-er kvaliteten væsentlig bedre end VHS. Et eksempel på hvordan man kan
-lave en Super VideoCD-strøm gives her:</para>
+konvertere sine strÃ¸mme til forskellige VideoCD-formater, sÃ¥fremt man
+har dem i et format mjpegtools kan hÃ¥ndtere. For de bedre oplÃ¸sninger,
+er kvaliteten vÃ¦sentlig bedre end VHS. Et eksempel pÃ¥ hvordan man kan
+lave en Super VideoCD-strÃ¸m gives her:</para>
 
 <screen>
 <prompt>[tyge@hven Avi 94%]$ </prompt><userinput>lav2mpeg -m svcd video.avi</userinput>
@@ -2242,9 +2242,9 @@ lave en Super VideoCD-strøm gives her:</para>
 -rw-rw-r--    1 tyge     tyge       501984 maj 28 20:58 video.mpg
 </screen>
 
-<para>Bemærk at der er mange parametre at skrue på og at forskellige
-afspillere, især DVD-afspillere, har mulighed for at afspille VCD'ere
-med langt højere kvalitet end standarden egentlig lægger op til. Det
+<para>BemÃ¦rk at der er mange parametre at skrue pÃ¥ og at forskellige
+afspillere, isÃ¦r DVD-afspillere, har mulighed for at afspille VCD'ere
+med langt hÃ¸jere kvalitet end standarden egentlig lÃ¦gger op til. Det
 kan absolut betale sig at eksperimentere - brug eventuelt et
 genskrivbart cd-medie indtil du er helt tilfreds.</para>
 
@@ -2253,87 +2253,87 @@ genskrivbart cd-medie indtil du er helt tilfreds.</para>
 </sect2> <!-- Konvertering til det endelige format -->
 
 <sect2 id="videoreg-lagre">
-<title>Overføre video til slutmedie</title>
-<indexterm><primary>Overføre video</primary></indexterm>
+<title>OverfÃ¸re video til slutmedie</title>
+<indexterm><primary>OverfÃ¸re video</primary></indexterm>
 
-<para>Dette afsnit hænger selvfølgelig meget sammen med det
-foregående, idet slutdestinationen for ens film naturligvis har stor
-indflydelse på hvilke formater man vælger at lægge den endelige film
-i. I dette afsnit vil der blive fokuseret på overførsel til DV-bånd,
-VideoCD og almindeligt video-signal/bånd.</para>
+<para>Dette afsnit hÃ¦nger selvfÃ¸lgelig meget sammen med det
+foregÃ¥ende, idet slutdestinationen for ens film naturligvis har stor
+indflydelse pÃ¥ hvilke formater man vÃ¦lger at lÃ¦gge den endelige film
+i. I dette afsnit vil der blive fokuseret pÃ¥ overfÃ¸rsel til DV-bÃ¥nd,
+VideoCD og almindeligt video-signal/bÃ¥nd.</para>
 
 <sect3 id="videoreg-lagre-dv">
-<title>Lagring af endelig film på DV</title>
+<title>Lagring af endelig film pÃ¥ DV</title>
 <indexterm><primary>DV-in</primary></indexterm>
 
 
-<para>Hvis man har et DV kamera kan man i mange tilfælde lægge den
-endelige film tilbage på bånd i kameraet. Fordelen ved at lægge den
-endelige film tilbage på DV bånd er naturligvis, at man derved bevarer
+<para>Hvis man har et DV kamera kan man i mange tilfÃ¦lde lÃ¦gge den
+endelige film tilbage pÃ¥ bÃ¥nd i kameraet. Fordelen ved at lÃ¦gge den
+endelige film tilbage pÃ¥ DV bÃ¥nd er naturligvis, at man derved bevarer
 den oprindelige kvalitet og har mulighed for at bruge kameraet til at
-overspille til normal videobånd, mv. Som nævnt i <xref linkend="kino"/>
-stiller det ikke særligt store krav til ens hardware at overføre DV
+overspille til normal videobÃ¥nd, mv. Som nÃ¦vnt i <xref linkend="kino"/>
+stiller det ikke sÃ¦rligt store krav til ens hardware at overfÃ¸re DV
 video fra disken, da der ikke skal ske nogen konvertering af
-nævneværdig art.</para>
+nÃ¦vnevÃ¦rdig art.</para>
 
 <para>For at kameraet skal kunne optage DV tilbage fra Firewire
-porten, skal det understøtte "DV-in". I Europa sælges de fleste
+porten, skal det understÃ¸tte "DV-in". I Europa sÃ¦lges de fleste
 kameraer uden DV-in. Imidlertid er kameraerne identiske med dem der
-sælges i f.eks. Japan med DV-in. Muligheden er blot fjernet i
+sÃ¦lges i f.eks. Japan med DV-in. Muligheden er blot fjernet i
 firmwaren. Heldigvis kan man enable DV-in igen, med simpel
 software. En god oversigt over de forskellige programmer der findes
-til dette, kan findes på <ulink
+til dette, kan findes pÃ¥ <ulink
 url="http://lea.hamradio.si/~s51kq/DV-IN.HTM">Enabling DV-IN on D8 &
-DV</ulink>. Desværre er de fleste af disse programmer Windows
+DV</ulink>. DesvÃ¦rre er de fleste af disse programmer Windows
 programmer, men for f.eks. JVC kameraer, findes der et Linux
-program. Når man har enablet DV-in i firmwaren, skal man dog stadig have
+program. NÃ¥r man har enablet DV-in i firmwaren, skal man dog stadig have
 en mulighed for at starte optagelsen. Proceduren for dette er typisk
-beskrevet for hver type kamera. For nogen kameraer kan det kun gøres
-med software, for andre kan man trykke på recordknappen, mens kameraet
-står i playmode, eller lignende mærkværdigheder. NB: Brug for egen
-risiko, naturligvis. Skulle man være så heldig at eje et DV kamera med
-DV-in som standard, er ovenstående betragtninger selvklart
+beskrevet for hver type kamera. For nogen kameraer kan det kun gÃ¸res
+med software, for andre kan man trykke pÃ¥ recordknappen, mens kameraet
+stÃ¥r i playmode, eller lignende mÃ¦rkvÃ¦rdigheder. NB: Brug for egen
+risiko, naturligvis. Skulle man vÃ¦re sÃ¥ heldig at eje et DV kamera med
+DV-in som standard, er ovenstÃ¥ende betragtninger selvklart
 ligegyldige.</para>
 
-<para>Kino kan exportere ens film til DV-kameraet. Kino vil forsøge at
-starte optagelsen på kameraet, men for f.eks. mit kamera, skal jeg
+<para>Kino kan exportere ens film til DV-kameraet. Kino vil forsÃ¸ge at
+starte optagelsen pÃ¥ kameraet, men for f.eks. mit kamera, skal jeg
 derudover selv presse record knappen ind. Der er nogle forskellige
 indstillinger i Kino man kan justere, der handler om timing mv. Hvis
 man oplever billedfejl eller lignende kan det muligvis betale sig at
-jurstere på disse indstillinger.</para>
+jurstere pÃ¥ disse indstillinger.</para>
 
 <para>For at kunne eksportere tilbage til kameraet med Kino, skal man
-have indlæst modulet "video1394" og have et device med de rigtige
-rettigheder. Det kan f.eks. se sådan ud:</para>
+have indlÃ¦st modulet "video1394" og have et device med de rigtige
+rettigheder. Det kan f.eks. se sÃ¥dan ud:</para>
 
 <screen>
 <prompt>[root@linus /root]# </prompt><userinput>ls -l /dev/video1394</userinput>
 crw-r--r--    1 tyge     tyge     172,   0 maj  4 13:39 /dev/video1394
 </screen>
 
-</sect3> <!-- Lagring af endelig film på DV -->
+</sect3> <!-- Lagring af endelig film pÃ¥ DV -->
 
 <sect3 id="videoreg-lagre-vcd">
-<title>Lagring af endelig film på VideoCD</title>
+<title>Lagring af endelig film pÃ¥ VideoCD</title>
 <indexterm><primary>VideoCD</primary></indexterm>
 <indexterm><primary>VCD</primary></indexterm>
 <indexterm><primary>VCDImager</primary></indexterm>
 <indexterm><primary>CDRDAO</primary></indexterm>
 
-<para>Når man har konverteret sine formater til VideoCD-kompatible
-strømme, kan programmet <command>vcdimager</command> anbefales til at
-lave en VideoCD-fil (eng: image) med, som man derefter kan brænde til
+<para>NÃ¥r man har konverteret sine formater til VideoCD-kompatible
+strÃ¸mme, kan programmet <command>vcdimager</command> anbefales til at
+lave en VideoCD-fil (eng: image) med, som man derefter kan brÃ¦nde til
 en cd-rom med programmet <command>cdrdao</command>.</para>
 
-<para>VCDImagers hjemmeside er på <ulink
+<para>VCDImagers hjemmeside er pÃ¥ <ulink
 url="http://www.vcdimager.org/">http://www.vcdimager.org/</ulink> og
-<command>cdrdao</command> holder til på <ulink
+<command>cdrdao</command> holder til pÃ¥ <ulink
 url="http://cdrdao.sourceforge.net">http://cdrdao.sourceforge.net</ulink>.</para>
 
-<para>En VideoCD kan være mange ting. Hvis man vil have
+<para>En VideoCD kan vÃ¦re mange ting. Hvis man vil have
 f.eks. avancerede menuer, mv, kan VCDimager faktisk sagtens klare
-det. Det er dog lidt indviklet. Det kan anbefales at læse de guider
-der er på VCDImagers hjemmeside, men man kan også starte meget
+det. Det er dog lidt indviklet. Det kan anbefales at lÃ¦se de guider
+der er pÃ¥ VCDImagers hjemmeside, men man kan ogsÃ¥ starte meget
 simpelt. Her er f.eks. et udpluk af en skabning af en videocd
 fil:</para>
 
@@ -2350,7 +2350,7 @@ finished ok, image created with 816 sectors [00:10.66] (1919232 bytes)
 -rw-rw-r--    1 tyge     tyge       501984 maj 28 20:58 video.mpg
 </screen>
 
-<para>Man kan så brænde til cd-rom med f.eks. følgende:
+<para>Man kan sÃ¥ brÃ¦nde til cd-rom med f.eks. fÃ¸lgende:
 
 <screen>
 <prompt>[tyge@hven Avi 95%]$ </prompt><userinput>cdrdao write --device 0,0,0 --driver generic-mmc video.cue</userinput>
@@ -2368,42 +2368,42 @@ Writing finished successfully.
 </para>
 
     <para>
-     Man kan så smide sin Video-CD i sin DVD-afspiller og se sin video på
-     fjernsynet. I den højeste kvalitet (3000 kbit/s, 480×576 pixel,
-     25 billeder/s) kan man have omkring 40 minutter på en cd-rom beregnet til
-     80 minutters lydoptagelse. Og kvaliteten er en del bedre end på
-     almindelige videobånd. Endelig er mediet jo billigere.
+     Man kan sÃ¥ smide sin Video-CD i sin DVD-afspiller og se sin video pÃ¥
+     fjernsynet. I den hÃ¸jeste kvalitet (3000Â kbit/s, 480Ã—576Â pixel,
+     25Â billeder/s) kan man have omkring 40 minutter pÃ¥ en cd-rom beregnet til
+     80Â minutters lydoptagelse. Og kvaliteten er en del bedre end pÃ¥
+     almindelige videobÃ¥nd. Endelig er mediet jo billigere.
     </para>
-</sect3><!-- Lagring af endelig film på VideoCD -->
+</sect3><!-- Lagring af endelig film pÃ¥ VideoCD -->
 
 <sect3 id="videoreg-lagre-vhs">
-<title>Lagring af endelig film på VHS</title>
+<title>Lagring af endelig film pÃ¥ VHS</title>
 <indexterm><primary>Analog video</primary></indexterm>
 <indexterm><primary>VHS</primary></indexterm>
 
-<para>Hvis man vil lave en VHS-film, kan man naturligvis vælge at
-overføre til VideoCD eller tilbage til DV-bånd, hvis man har mulighed
-for at gøre dette. Herefter kan man overspille til analog bånd fra
+<para>Hvis man vil lave en VHS-film, kan man naturligvis vÃ¦lge at
+overfÃ¸re til VideoCD eller tilbage til DV-bÃ¥nd, hvis man har mulighed
+for at gÃ¸re dette. Herefter kan man overspille til analog bÃ¥nd fra
 f.eks. en DVD-afspiller eller direkte fra videokameraet. Imidlertid
-kan man også, hvis man har et videokort der understøtter TV out,
-overføre direkte fra PC til sin videooptager. Det kræver naturligvis
-at man har konfigureret X11 til at understøtte dette. Man kan så
-afspille til videoudgangen, i fuldskærm og starte optagelsen samtidig
+kan man ogsÃ¥, hvis man har et videokort der understÃ¸tter TV out,
+overfÃ¸re direkte fra PC til sin videooptager. Det krÃ¦ver naturligvis
+at man har konfigureret X11 til at understÃ¸tte dette. Man kan sÃ¥
+afspille til videoudgangen, i fuldskÃ¦rm og starte optagelsen samtidig
 med at man afspiller filmen. Se <xref linkend="spille-film"/> og <xref
 linkend="spille-dvd"/> for mere information om dette.</para>
 
-<para>Den store ulempe ved at gøre det på denne måde er at man skal
-have tilstrækkeligt med computerkraft til at sikre afspilning uden at
+<para>Den store ulempe ved at gÃ¸re det pÃ¥ denne mÃ¥de er at man skal
+have tilstrÃ¦kkeligt med computerkraft til at sikre afspilning uden at
 der bliver tabt billeder undervejs eller lyden hakker. Ellers vil disse fejl jo
-optræde på videoen. Det betyder at man i en vis udstrækning skal passe
-på hvad man laver på sin maskine samtidig - det vil f.eks. næppe være
-smart at begynde at oversætte kernen samtidig.
-     »Low latency«-lapperne til kernen vil muligvis kunne hjælpe, men generelt
-     må denne metode til overførsel af video siges at være den ringeste af dem
+optrÃ¦de pÃ¥ videoen. Det betyder at man i en vis udstrÃ¦kning skal passe
+pÃ¥ hvad man laver pÃ¥ sin maskine samtidig - det vil f.eks. nÃ¦ppe vÃ¦re
+smart at begynde at oversÃ¦tte kernen samtidig.
+     Â»Low latencyÂ«-lapperne til kernen vil muligvis kunne hjÃ¦lpe, men generelt
+     mÃ¥ denne metode til overfÃ¸rsel af video siges at vÃ¦re den ringeste af dem
      der er omtalt her.
     </para>
-   </sect3><!-- Lagring af endelig film på VHS -->
-  </sect2> <!-- Overføre video til slutmedie -->
+   </sect3><!-- Lagring af endelig film pÃ¥ VHS -->
+  </sect2> <!-- OverfÃ¸re video til slutmedie -->
 
   <sect2 id="videoreg-links">
    <title>Yderligere information om videoredigering</title>
@@ -2415,34 +2415,34 @@ smart at begynde at oversætte kernen samtidig.
    <indexterm><primary>dvbackup</primary></indexterm>
 
    <para>
-    Der findes et væld af værktøjer og information om videoredigering under
-    Linux. På mange af de hjemmesider der er nævnt ovenfor, kan du finde
-    yderligere information. Ellers kan du også kigge på nogen af følgende:
+    Der findes et vÃ¦ld af vÃ¦rktÃ¸jer og information om videoredigering under
+    Linux. PÃ¥ mange af de hjemmesider der er nÃ¦vnt ovenfor, kan du finde
+    yderligere information. Ellers kan du ogsÃ¥ kigge pÃ¥ nogen af fÃ¸lgende:
 
     <itemizedlist mark="bullet">
      <listitem>
       <para>
-       Crow er en ufuldstændig DV-editor på
+       Crow er en ufuldstÃ¦ndig DV-editor pÃ¥
        <ulink url="http://www.crow.atu.com.au/main.php3">http://www.crow.atu.com.au/main.php3</ulink>.
       </para>
      </listitem>
      <listitem>
       <para>
-       Jashaka er en "special effects composer" på <ulink
+       Jashaka er en "special effects composer" pÃ¥ <ulink
        url="http://www.sf.net/projects/jahshakafx/">http://www.sf.net/projects/jahshakafx/</ulink>.
       </para>
      </listitem>
      <listitem>
       <para>
-       LVE er en MPEG editor, som kan findes på <ulink
+       LVE er en MPEG editor, som kan findes pÃ¥ <ulink
        url="http://de.groups.yahoo.com/group/liunux_mpeg_world/">http://de.groups.yahoo.com/group/liunux_mpeg_world/</ulink>.
-       Alt er på tysk...
+       Alt er pÃ¥ tysk...
       </para>
      </listitem>
      <listitem>
       <para>
        Linux Video Studio er en grafisk overbygning til mjpegtools, som kan
-       findes på <ulink
+       findes pÃ¥ <ulink
        url="http://ronald.bitfreak.net/">http://ronald.bitfreak.net/</ulink>.
       </para>
      </listitem>
@@ -2450,9 +2450,9 @@ smart at begynde at oversætte kernen samtidig.
    </para>
 
    <para>
-    Der er som sagt meget meget mere. Et interessant lille værktøj, hvis man
+    Der er som sagt meget meget mere. Et interessant lille vÃ¦rktÃ¸j, hvis man
     ejer et DV kamera, er <command>dvbackup</command>, som lader en gemme
-    10 Gb på et DV-bånd. Hjemmesiden er på
+    10 Gb pÃ¥ et DV-bÃ¥nd. Hjemmesiden er pÃ¥
     <ulink url="http://sourceforge.net/projects/dvbackup">http://sourceforge.net/projects/dvbackup</ulink>.
    </para>
 

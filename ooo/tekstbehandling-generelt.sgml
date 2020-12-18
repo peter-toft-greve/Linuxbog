@@ -10,41 +10,41 @@
   <para>
    Mange opfatter et tekstbehandlingsprogram som en avanceret
    skrivemaskine. Selvom det umiddelbart lyder tilforladeligt er det faktisk
-   en dårlig sammenligning. Et tekstbehandlingsprogram bygger på nogle helt
-   andre begreber end en skrivemaskine. Formålet med denne håndbog er at
-   lære dig disse begreber, specielt med henblik på OpenOffice Writer
+   en dÃ¥rlig sammenligning. Et tekstbehandlingsprogram bygger pÃ¥ nogle helt
+   andre begreber end en skrivemaskine. FormÃ¥let med denne hÃ¥ndbog er at
+   lÃ¦re dig disse begreber, specielt med henblik pÃ¥ OpenOffice Writer
    (kaldes herefter blot Writer).
   </para>
 
   <para>
-   Grundlæggende omfatter tekstbehandling to forskellige ting, nemlig <emphasis>redigering</emphasis> og <emphasis>formattering.</emphasis> Som de fleste andre
+   GrundlÃ¦ggende omfatter tekstbehandling to forskellige ting, nemlig <emphasis>redigering</emphasis> og <emphasis>formattering.</emphasis> Som de fleste andre
    tekstbehandlingsprogrammer arbejder Writer efter <emphasis>WYSIWYG</emphasis> (What You
    See Is What You Get) princippet, hvor redigering og formattering klares i
-   samme arbejdsgang, så dokumentet hele tiden fremstår som det vil gøre på
-   papir, men her forklares forskellen på de to begreber:
+   samme arbejdsgang, sÃ¥ dokumentet hele tiden fremstÃ¥r som det vil gÃ¸re pÃ¥
+   papir, men her forklares forskellen pÃ¥ de to begreber:
   </para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
 <para><emphasis>Redigering</emphasis> vil sige at indskrive, slette, kopiere og flytte
-        tekst. Hertil hører også redskaber som stavekontrol, søgning,
-        brevfletning, automatisk registrering af ændringer mm.
+        tekst. Hertil hÃ¸rer ogsÃ¥ redskaber som stavekontrol, sÃ¸gning,
+        brevfletning, automatisk registrering af Ã¦ndringer mm.
 </para>
 
 <para>Et program, som kan redigere en tekst kaldes en <emphasis>teksteditor</emphasis>.
-Det der er særligt for et tekstbehandlingsprogram er, at det også kan
+Det der er sÃ¦rligt for et tekstbehandlingsprogram er, at det ogsÃ¥ kan
 <emphasis>formatere</emphasis> teksten:</para>
 
 </listitem>
 
 <listitem>
 <para> <emphasis>Formatering</emphasis> vil sige den typografiske del af
-        tekstbehandling: Teksten skal <emphasis>sættes</emphasis> med forskellige
+        tekstbehandling: Teksten skal <emphasis>sÃ¦ttes</emphasis> med forskellige
         skrifttyper. Herunder skal den <emphasis>ombrydes</emphasis> i linjer og sider.
-        Formattering er det arbejde, som en typograf lavede før i tiden med
-        håndkraft (du skal dog ikke forvente bogtrykkvalitet af et
-        almindeligt tekstbehandlingsprogram). Dette arbejde gør Writer
+        Formattering er det arbejde, som en typograf lavede fÃ¸r i tiden med
+        hÃ¥ndkraft (du skal dog ikke forvente bogtrykkvalitet af et
+        almindeligt tekstbehandlingsprogram). Dette arbejde gÃ¸r Writer
         automatisk efter dine anvisninger!</para>
 
 </listitem>

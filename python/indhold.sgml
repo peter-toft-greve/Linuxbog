@@ -14,13 +14,13 @@
     <copyright>
      <year>2003-2005</year>
      <holder>
-      Alfred Jensen under "Åben dokumentlicens (ÅDL) - version 1.0".
+      Alfred Jensen under "Ã…ben dokumentlicens (Ã…DL) - version 1.0".
      </holder>
     </copyright>
 
     <abstract>
      <para>
-      En indføring i programmering i Python på og til Linux.
+      En indfÃ¸ring i programmering i Python pÃ¥ og til Linux.
      </para>
     </abstract>
   </bookinfo>
@@ -38,7 +38,7 @@
   &python-libraryreference;
 
   <!-- 
-  Udkommenteret af Gitte - dette afsnit skal der simpelthen arbejdes mere på !
+  Udkommenteret af Gitte - dette afsnit skal der simpelthen arbejdes mere pÃ¥ !
   &python-guireference;
   -->
 

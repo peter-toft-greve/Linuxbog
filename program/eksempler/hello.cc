@@ -3,7 +3,7 @@
    af Frank Damgaard <frank@sslug.dk>
    $Id$
 
-   Oversæt med: g++ hello.cc -o hello
+   OversÃ¦t med: g++ hello.cc -o hello
 
    Afvikling: ./hello
 */

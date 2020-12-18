@@ -3,24 +3,24 @@
 
     
 <sect1>
-  <title>Ophæve et område med spalter</title>
+  <title>OphÃ¦ve et omrÃ¥de med spalter</title>
 <orderedlist>
       <listitem>
 
-<para>Flyt først markøren til området.</para>
+<para>Flyt fÃ¸rst markÃ¸ren til omrÃ¥det.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Vælg så <emphasis>Formater/Områder</emphasis> og klik på knappen <emphasis>Ophæv</emphasis>.
-        Så bliver teksten i området til almindelig tekst.</para>
+<para>VÃ¦lg sÃ¥ <emphasis>Formater/OmrÃ¥der</emphasis> og klik pÃ¥ knappen <emphasis>OphÃ¦v</emphasis>.
+        SÃ¥ bliver teksten i omrÃ¥det til almindelig tekst.</para>
 
 </listitem>
     </orderedlist>
 
-<para>Her kan du også ophæve de andre områder, men det du har placeret
-    markøren i bliver automatisk valgt.</para>
+<para>Her kan du ogsÃ¥ ophÃ¦ve de andre omrÃ¥der, men det du har placeret
+    markÃ¸ren i bliver automatisk valgt.</para>
 
-</sect1>    <!--   14.3. Ophæve et område med spalter -->
+</sect1>    <!--   14.3. OphÃ¦ve et omrÃ¥de med spalter -->
 

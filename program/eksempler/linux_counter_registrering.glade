@@ -16,7 +16,7 @@
 
 <widget>
   <class>GtkWindow</class>
-  <name>Spørgsmål</name>
+  <name>SpÃ¸rgsmÃ¥l</name>
   <title>Linux Counter-registrering</title>
   <type>GTK_WINDOW_TOPLEVEL</type>
   <position>GTK_WIN_POS_NONE</position>
@@ -312,7 +312,7 @@
 
     <widget>
       <class>GtkLabel</class>
-      <name>landebemærkning</name>
+      <name>landebemÃ¦rkning</name>
       <label>Brug venligst ISO-3166-landekoden (DK, SE, NO, ...).</label>
       <justify>GTK_JUSTIFY_LEFT</justify>
       <wrap>True</wrap>
@@ -439,8 +439,8 @@
 
     <widget>
       <class>GtkLabel</class>
-      <name>startbemærkning</name>
-      <label>Vælg bare en omtrentlig dato, hvis du ikke kan huske det præcise tidspunkt for hvornår du begyndte at bruge Linux.</label>
+      <name>startbemÃ¦rkning</name>
+      <label>VÃ¦lg bare en omtrentlig dato, hvis du ikke kan huske det prÃ¦cise tidspunkt for hvornÃ¥r du begyndte at bruge Linux.</label>
       <justify>GTK_JUSTIFY_LEFT</justify>
       <wrap>True</wrap>
       <xalign>0</xalign>
@@ -539,9 +539,9 @@
 
       <widget>
 	<class>GtkCheckButton</class>
-	<name>bruger_linux_på_arbejdet</name>
+	<name>bruger_linux_pÃ¥_arbejdet</name>
 	<can_focus>True</can_focus>
-	<label>På arbejdet</label>
+	<label>PÃ¥ arbejdet</label>
 	<active>False</active>
 	<draw_indicator>True</draw_indicator>
 	<child>
@@ -602,7 +602,7 @@
 	<class>GtkRadioButton</class>
 	<name>ja_til_hemmeligholdelse</name>
 	<can_focus>True</can_focus>
-	<label>Jeg vil være anonym</label>
+	<label>Jeg vil vÃ¦re anonym</label>
 	<active>False</active>
 	<draw_indicator>True</draw_indicator>
 	<child>
@@ -616,7 +616,7 @@
 	<class>GtkRadioButton</class>
 	<name>nej_til_hemmeligholdelse</name>
 	<can_focus>True</can_focus>
-	<label>Mit navn må gerne stå i listen</label>
+	<label>Mit navn mÃ¥ gerne stÃ¥ i listen</label>
 	<active>False</active>
 	<draw_indicator>True</draw_indicator>
 	<child>

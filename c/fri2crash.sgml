@@ -2,7 +2,7 @@
 <title>Crash course i C sproget</title>
 <titleabbrev>C-sprogelementer</titleabbrev>
 <para>
- C består som andre programmeringssprog af:
+ C bestÃ¥r som andre programmeringssprog af:
 </para>
 
 <itemizedlist>
@@ -21,8 +21,8 @@
 
  <listitem>
   <para>
-   Løkker og betingede sætninger (<emphasis>if</emphasis>,
-   <emphasis>while</emphasis> m.fl.). Vi vil gerne kunne gøre
+   LÃ¸kker og betingede sÃ¦tninger (<emphasis>if</emphasis>,
+   <emphasis>while</emphasis> m.fl.). Vi vil gerne kunne gÃ¸re
    noget specielt, hvis vores tal er blevet negativt.
   </para>
  </listitem>
@@ -36,17 +36,17 @@
 </itemizedlist>
 
 <sect1 id="C-hvad-er">
-<title>C i få ord</title>
+<title>C i fÃ¥ ord</title>
 <para>
  Programmeringssproget C blev oprindeligt lavet for at kunne skrive
- styresystemet Unix i et højniveausprog. C er derfor et effektivt sprog,
- det vil sige, at koden bliver oversat til så få maskininstruktioner
- som muligt, og derfor kører programmerne hurtigt.
+ styresystemet Unix i et hÃ¸jniveausprog. C er derfor et effektivt sprog,
+ det vil sige, at koden bliver oversat til sÃ¥ fÃ¥ maskininstruktioner
+ som muligt, og derfor kÃ¸rer programmerne hurtigt.
 </para>
 
 <para>
- C er også et lille sprog, hvis man måler det i antallet af reserverede ord
- (kun 32). Det gør det nemt at lære.
+ C er ogsÃ¥ et lille sprog, hvis man mÃ¥ler det i antallet af reserverede ord
+ (kun 32). Det gÃ¸r det nemt at lÃ¦re.
 </para>
 
 <sidebar>
@@ -66,26 +66,26 @@ do                if                static            while
 
 <indexterm><primary>C99 standard</primary></indexterm>
 <indexterm><primary>keywords</primary></indexterm>
-<indexterm><primary>nøgleord</primary></indexterm>
+<indexterm><primary>nÃ¸gleord</primary></indexterm>
 
 <para>
-C99 standarden tilføjer flg. reserverede ord:
+C99 standarden tilfÃ¸jer flg. reserverede ord:
 <literal>inline, restrict, _Bool, _Complex, _Imaginary.
 </literal>
-Desuden bør man have in mente, at C++ nøgleord også bør undgås,
+Desuden bÃ¸r man have in mente, at C++ nÃ¸gleord ogsÃ¥ bÃ¸r undgÃ¥s,
 d.v.s. class, private, public, virtual etc.
 </para>
 
 <para>
-Anvendt på rette måde bliver koden meget læseligt, og derfor 
+Anvendt pÃ¥ rette mÃ¥de bliver koden meget lÃ¦seligt, og derfor 
 anvendes C sproget til mange forskellige slags opgaver, fra
-hardware-niveau til højniveauopgaver.
+hardware-niveau til hÃ¸jniveauopgaver.
 </para>
 
 <para>
- C++ er en udvidelse af C. C++ er tænkt som et bedre C. Det understøtter
+ C++ er en udvidelse af C. C++ er tÃ¦nkt som et bedre C. Det understÃ¸tter
  objektorienteret programmering, dataabstraktion og generiske algoritmer. Der
- er dog et par forskelle mellem ANSI-C og den grundlæggende C syntaks i
+ er dog et par forskelle mellem ANSI-C og den grundlÃ¦ggende C syntaks i
  C++. 
 </para>
 
@@ -108,20 +108,20 @@ main()
 
 <para>
 Vores program definerer en funktion, d.v.s. et stykke kode, som
-udfører en opgave. Navnet på vores funktion er main. main er det
-sted, hvor et C program begynder at køre. Parenteserne efter
-ordet main fortæller, at det er en funktion.
+udfÃ¸rer en opgave. Navnet pÃ¥ vores funktion er main. main er det
+sted, hvor et C program begynder at kÃ¸re. Parenteserne efter
+ordet main fortÃ¦ller, at det er en funktion.
 </para>
 
 <para>
-Koden, det, som bliver til maskininstruktioner, står mellem to
-krøllede parenteser (eng. braces). Koden består af et
-kald til en anden funktion, printf, som får til opgave at skrive vores
-tekst på skærmen. Vores tekst står mellem dobbelt-quotes 
-(gåseøjne, citationstegn). "\n" er måden at skrive et
-linjeskift, som indgår i en tekst streng. '\' - tegnet, kaldet
+Koden, det, som bliver til maskininstruktioner, stÃ¥r mellem to
+krÃ¸llede parenteser (eng. braces). Koden bestÃ¥r af et
+kald til en anden funktion, printf, som fÃ¥r til opgave at skrive vores
+tekst pÃ¥ skÃ¦rmen. Vores tekst stÃ¥r mellem dobbelt-quotes 
+(gÃ¥seÃ¸jne, citationstegn). "\n" er mÃ¥den at skrive et
+linjeskift, som indgÃ¥r i en tekst streng. '\' - tegnet, kaldet
 backslash, signalerer, at nu kommer et bogstav, der skal opfattes
-på en anden måde. '\n' kaldes derfor et meta-tegn, og backslash
+pÃ¥ en anden mÃ¥de. '\n' kaldes derfor et meta-tegn, og backslash
 anvendes som <emphasis>escape kode</emphasis>.
 </para>
 
@@ -130,8 +130,8 @@ I kildeteksten kan man skifte linje stort set hvor man har lyst.
 </para>
 
 <para>
- Ovenstående kildetekst bør kunne oversættes (compileres) til et
- kørbart program. 
+ OvenstÃ¥ende kildetekst bÃ¸r kunne oversÃ¦ttes (compileres) til et
+ kÃ¸rbart program. 
 </para>
 
 <screen>
@@ -140,14 +140,14 @@ I kildeteksten kan man skifte linje stort set hvor man har lyst.
 </screen>
 
 <para>
-<command> -o </command> optionen fortæller compileren, at det
-færdige program skal skrives til en fil, der skal hedde hallo.
-Ellers vil compileren lægge det oversatte program i en fil ved
-navn a.out.  Nogle moderne oversættere vil klage over
+<command> -o </command> optionen fortÃ¦ller compileren, at det
+fÃ¦rdige program skal skrives til en fil, der skal hedde hallo.
+Ellers vil compileren lÃ¦gge det oversatte program i en fil ved
+navn a.out.  Nogle moderne oversÃ¦ttere vil klage over
 udeladelser. GNU-C vil kun klage, hvis vi anvender kommandolinje
 option -Wall, som betyder: "Giv mig alle advarsler mod uheldige
-eller mangelfulde konstruktioner!" En helt korrekt version (også
-C++) ser ud som følger:
+eller mangelfulde konstruktioner!" En helt korrekt version (ogsÃ¥
+C++) ser ud som fÃ¸lger:
 </para>
 
 <example id="ex-hello-types">
@@ -169,20 +169,20 @@ int main()
 <indexterm><primary>return</primary></indexterm>
 
 <para>
-Eksemplet her erklærer, at main er en funktion, som returnerer en
-int (integer, heltal). Med sætningen <literal>return 0;</literal>
-returnerer den jo så altså netop også et heltal, nemlig 0.
+Eksemplet her erklÃ¦rer, at main er en funktion, som returnerer en
+int (integer, heltal). Med sÃ¦tningen <literal>return 0;</literal>
+returnerer den jo sÃ¥ altsÃ¥ netop ogsÃ¥ et heltal, nemlig 0.
 <literal>return 0;</literal> betyder aflever et 0 til den, som
-satte funktionen i gang. Man siger, at caller får returneret en
-værdi.
+satte funktionen i gang. Man siger, at caller fÃ¥r returneret en
+vÃ¦rdi.
 </para>
 
 <para>
 printf er ligeledes en funktion, som returnerer en integer til
 caller; det er antallet af bogstaver, den har skrevet ud. Da vi ikke har
-brug for denne integer, fortæller vi oversætteren, at det er "med vilje",
+brug for denne integer, fortÃ¦ller vi oversÃ¦tteren, at det er "med vilje",
 at vi ignorer return value ved at skrive <emphasis> (void) </emphasis>.
-Det kaldes et cast, støbeform: vi omstøber funktionens type!
+Det kaldes et cast, stÃ¸beform: vi omstÃ¸ber funktionens type!
 </para>
 
 <sect2 id="crash-datatyper">
@@ -216,24 +216,24 @@ int *j;                            /* adressevariabel, pointer */
 
 
 <para>
-En variabel, for eksempel <emphasis>int xyzzy</emphasis>, kan erklæres
-udenfor en funktion, så er det et eksternt objekt, eller inde
-mellem krøllede parenteser, braces, så er det en lokal variabel.
+En variabel, for eksempel <emphasis>int xyzzy</emphasis>, kan erklÃ¦res
+udenfor en funktion, sÃ¥ er det et eksternt objekt, eller inde
+mellem krÃ¸llede parenteser, braces, sÃ¥ er det en lokal variabel.
 </para>
 
 <sidebar>
 <para>
-Jeg har med vilje udeladt en del grumsede detaljer i ovenstående
-type-oversigt. Hvis du, kære læser, er sur over det, så er her et resume
+Jeg har med vilje udeladt en del grumsede detaljer i ovenstÃ¥ende
+type-oversigt. Hvis du, kÃ¦re lÃ¦ser, er sur over det, sÃ¥ er her et resume
 af det udeladte:
 </para>
 
 <para>
-En long integer er lige så stor - måske større - end en int. I gcc i386
+En long integer er lige sÃ¥ stor - mÃ¥ske stÃ¸rre - end en int. I gcc i386
 er de begge 32 bit. Nye standarder vil indeholde forskrift om at
-oversættere skal understøtte _int8, _int16, _int32, _int64 etc. hvilket vil
-være praktisk for mange opgaver. Man kan definere sådanne typer
-selv ved hjælp af <literal>typedef</literal>.  For eksempel:
+oversÃ¦ttere skal understÃ¸tte _int8, _int16, _int32, _int64 etc. hvilket vil
+vÃ¦re praktisk for mange opgaver. Man kan definere sÃ¥danne typer
+selv ved hjÃ¦lp af <literal>typedef</literal>.  For eksempel:
 
 <programlisting>
 typedef long long int _int64;
@@ -243,8 +243,8 @@ typedef long long int _int64;
 <para>
 Heltalstyperne (char, int, short int, long int, _int64 eller
 long long) kan foranstilles <emphasis>signed</emphasis> (det er
-default) eller <emphasis>unsigned</emphasis>. Erklærer man en
-unsigned integer vil man i mange oversættere alligevel kunne
+default) eller <emphasis>unsigned</emphasis>. ErklÃ¦rer man en
+unsigned integer vil man i mange oversÃ¦ttere alligevel kunne
 tilskrive den en negativ value. Unsigned vinder overfor signed i
 type coercion i expression evaluering. (Coercion: tvang).
 </para>
@@ -264,9 +264,9 @@ main()
     printf("x er %d, b er %d, temperatur er %f\n",x,b,temp);
     {
         int *px; /* definition af variabel i top af blok. */
-        px = &amp;x; /* tag adressen af x og læg over i p */
+        px = &amp;x; /* tag adressen af x og lÃ¦g over i p */
 
-        printf("adressen på x er %p\n",px);
+        printf("adressen pÃ¥ x er %p\n",px);
     }
 
     return 0;
@@ -275,24 +275,24 @@ main()
 
 <para>
 px er en adressevariabel, d.v.s en variabel, som kan indeholde en
-adresse. Det kaldes også en pointer. Det ses af, at erklæringen
-har en stjerne foran px. Man må gerne stille stjernen lige
+adresse. Det kaldes ogsÃ¥ en pointer. Det ses af, at erklÃ¦ringen
+har en stjerne foran px. Man mÃ¥ gerne stille stjernen lige
 bagefter int, men syntaktisk binder den til px. Derfor kan man
-fx. erklære en integer pointer og en integer indenfor samme
-semikolon, <literal> int* ptr2tal, tal;</literal> (kønt er
-det ikke! Det bør virkelig undgås, dette her!)
+fx. erklÃ¦re en integer pointer og en integer indenfor samme
+semikolon, <literal> int* ptr2tal, tal;</literal> (kÃ¸nt er
+det ikke! Det bÃ¸r virkelig undgÃ¥s, dette her!)
 </para>
 
 <para>
-"Og" tegnet, ampersand på engelsk, er adresse-operatoren
-d.v.s. at den tager adressen på den variabel, den stilles foran.
-<literal> px = &amp;x; </literal> betyder tag adressen på x og
-læg den over i variablen px.
+"Og" tegnet, ampersand pÃ¥ engelsk, er adresse-operatoren
+d.v.s. at den tager adressen pÃ¥ den variabel, den stilles foran.
+<literal> px = &amp;x; </literal> betyder tag adressen pÃ¥ x og
+lÃ¦g den over i variablen px.
 </para>
 
 <para>
-Adresser på en 32-bit CPU ligger mellem 1 og 4 milliarder eller 4
-Giga. Altså 2<superscript>32 </superscript>.
+Adresser pÃ¥ en 32-bit CPU ligger mellem 1 og 4 milliarder eller 4
+Giga. AltsÃ¥ 2<superscript>32 </superscript>.
 </para>
 
 <sect3 id="crash-struct">
@@ -301,19 +301,19 @@ Giga. Altså 2<superscript>32 </superscript>.
 <para>
 Med struct konstruktionen kan vi selv definere de datatyper, vi har brug
 for, deraf betegnelse <emphasis> brugerdefinerede typer. </emphasis>
-Notationen kræver lidt øvelse. Først bygger man en type op, det
-kaldes, at man <emphasis> erklærer en type </emphasis>. Derefter
-kan man definere objekter af denne type. Når man definerer et objekt,
-reserveres der hukommelse i det færdige program til objektet.
+Notationen krÃ¦ver lidt Ã¸velse. FÃ¸rst bygger man en type op, det
+kaldes, at man <emphasis> erklÃ¦rer en type </emphasis>. Derefter
+kan man definere objekter af denne type. NÃ¥r man definerer et objekt,
+reserveres der hukommelse i det fÃ¦rdige program til objektet.
 </para>
 
 <para>
 Navnet efter ordet struct kaldes en tag (eller type tag; det
-betyder et mærke eller en mærkat, udtales med g som i væg). Det
+betyder et mÃ¦rke eller en mÃ¦rkat, udtales med g som i vÃ¦g). Det
 kan sammen med ordet struct bruges som type-specifikation. I
-eksemplerne anvendes vinkler (større/mindre tegn, eller på
-engelsk: angles) til meta ord - der skal indsættes et
-unikt navn på de pågældende positioner.
+eksemplerne anvendes vinkler (stÃ¸rre/mindre tegn, eller pÃ¥
+engelsk: angles) til meta ord - der skal indsÃ¦ttes et
+unikt navn pÃ¥ de pÃ¥gÃ¦ldende positioner.
 </para>
 
 <programlisting>
@@ -339,9 +339,9 @@ struct hus_t madsensvej_20;
 </programlisting>
 
 <para>
-Alternativt kan man opbygge en struct type ved hjælp af typedef. Denne
-metode foretrækkes af mange, fordi man så ikke behøver at anvende ordet
-struct når man definerer nye objekter.
+Alternativt kan man opbygge en struct type ved hjÃ¦lp af typedef. Denne
+metode foretrÃ¦kkes af mange, fordi man sÃ¥ ikke behÃ¸ver at anvende ordet
+struct nÃ¥r man definerer nye objekter.
 </para>
 
 <programlisting>
@@ -352,7 +352,7 @@ typedef struct &lt;type_tag> {
 &lt;type-specifier> min_variabel;
 </programlisting>
 
-<para>Et konkret eksempel på anvendelse af typedef-metoden: </para>
+<para>Et konkret eksempel pÃ¥ anvendelse af typedef-metoden: </para>
 
 <programlisting>
 typedef struct {
@@ -364,22 +364,22 @@ medlems_type medlem[200000];
 </programlisting>
 
 <para>
-Somme tider gør ordet struct programmerne lettere at læse. Og
-ordet struct, gør det lettere for oversætteren at give
-forståelige fejlmeddelelser.
+Somme tider gÃ¸r ordet struct programmerne lettere at lÃ¦se. Og
+ordet struct, gÃ¸r det lettere for oversÃ¦tteren at give
+forstÃ¥elige fejlmeddelelser.
 </para>
 
 <programlisting>
-struct hus_t {                 /* først erklæres ny type */
+struct hus_t {                 /* fÃ¸rst erklÃ¦res ny type */
    char adr[280];
    int pris;
 };
 
-struct hus_t mithus;           /* typen anvendes, ram udlægning sker */
+struct hus_t mithus;           /* typen anvendes, ram udlÃ¦gning sker */
 
 main() {
    mithus.pris = 780000;          /* nu kan vi bruge vores variabel */
-   strcpy(mithus.adr,"Byvej 20";  /* initialisering af string kræver strcpy */
+   strcpy(mithus.adr,"Byvej 20";  /* initialisering af string krÃ¦ver strcpy */
 }
 </programlisting>
 
@@ -393,22 +393,22 @@ enum farve_t { red, green, blue };
 </programlisting>
 </example>
 <para>
-<emphasis> red </emphasis> vil her svare til værdien 0,
+<emphasis> red </emphasis> vil her svare til vÃ¦rdien 0,
 <emphasis> green </emphasis> til 1 etc. etc... red, green og blue
-vil indgå som identifiers på linje med andre variable. Man kan nu
-erklære en variabel af denne type, og en C++ compiler vil kunne
-kontrollere, at vi ikke tildeler vores variabel ulovlige værdier.
-En C-compiler overlader dette ansvar til programmøren.
+vil indgÃ¥ som identifiers pÃ¥ linje med andre variable. Man kan nu
+erklÃ¦re en variabel af denne type, og en C++ compiler vil kunne
+kontrollere, at vi ikke tildeler vores variabel ulovlige vÃ¦rdier.
+En C-compiler overlader dette ansvar til programmÃ¸ren.
 </para>
 
 <para>
 En variant af struct er "union", som svarer til en slags
-forudbestilt typecasting. Den er som skræddersyet til en
-program-generator, der skal generere en oversætter - altså en
-oversætter som oversætter en oversætter. Dette æske system har
-fra tidligt i 70'erne i unix sammenhæng fået det sjove navn YACC,
+forudbestilt typecasting. Den er som skrÃ¦ddersyet til en
+program-generator, der skal generere en oversÃ¦tter - altsÃ¥ en
+oversÃ¦tter som oversÃ¦tter en oversÃ¦tter. Dette Ã¦ske system har
+fra tidligt i 70'erne i unix sammenhÃ¦ng fÃ¥et det sjove navn YACC,
 Yet Another Compiler Compiler. I Gnu tool-settet er det blevet
-til BISON - fordi bison er en fætter til Yak-oksen.  Ja-ja, læs
+til BISON - fordi bison er en fÃ¦tter til Yak-oksen.  Ja-ja, lÃ¦s
 mellem linjerne, at denne her union <emphasis> er </emphasis> kun
 til specielle lejligheder :-))
 </para>
@@ -453,14 +453,14 @@ Assignment operatorer, tildeling.
 <programlisting>
 Op.   ex.          Beskrivelse
 -------------------------------------------------------------------------------
-=     a = b     :  læg værdien af b over i a.
+=     a = b     :  lÃ¦g vÃ¦rdien af b over i a.
 
-++    ++c       :  læg en til c, increment operator.
+++    ++c       :  lÃ¦g en til c, increment operator.
 
-                :  ++ operatoren kan stå efter identifieren:
-  if (c++ &lt; 42) :  sammenlign med 42 og læg bagefter 1 til c.
+                :  ++ operatoren kan stÃ¥ efter identifieren:
+  if (c++ &lt; 42) :  sammenlign med 42 og lÃ¦g bagefter 1 til c.
 
---    --c       :  træk 1 fra c, decrement operator.
+--    --c       :  trÃ¦k 1 fra c, decrement operator.
 -------------------------------------------------------------------------------
 </programlisting>
 
@@ -480,22 +480,22 @@ Relationelle operatorer, sammenligning.
 
 <programlisting>
 &lt; mindre end
-> større end
+> stÃ¸rre end
 &lt;= mindre end eller lig med
->= større end eller lig med
+>= stÃ¸rre end eller lig med
 
 OBS!  ==    test for lighed
       !=    test for not lighed
-            Husk det ved at tænke på at 
-            den logiske operator NOT er et udråbstegn.
-      !     not (tager kun én operand, hvis logiske værdi inverteres)
+            Husk det ved at tÃ¦nke pÃ¥ at 
+            den logiske operator NOT er et udrÃ¥bstegn.
+      !     not (tager kun Ã©n operand, hvis logiske vÃ¦rdi inverteres)
 
 </programlisting>
 <para>
-Et expression er sandt, når det er forskelligt fra 0.
+Et expression er sandt, nÃ¥r det er forskelligt fra 0.
 </para>
 <para>
-Et expression er falsk, når det er lig med 0.
+Et expression er falsk, nÃ¥r det er lig med 0.
 </para>
 
 <para>
@@ -507,7 +507,7 @@ Eksempler:
       printf("a er for stor\n");
 
   if (x > 1 || x != y)
-      printf("x er større end 1 eller x er forskellig fra y!\n");
+      printf("x er stÃ¸rre end 1 eller x er forskellig fra y!\n");
 </programlisting>
 
 
@@ -537,18 +537,18 @@ bitkolonner efter den almindelige logik.
 </programlisting>
 
 <para>
-Pas på NOT operatoren, det er en tilde. I almindelig netscape opsætning
-er den meget svær se.
+Pas pÃ¥ NOT operatoren, det er en tilde. I almindelig netscape opsÃ¦tning
+er den meget svÃ¦r se.
 </para>
 
 <para>
-Bitvis NOT er det samme som bitvis invertering. I ovenstående
+Bitvis NOT er det samme som bitvis invertering. I ovenstÃ¥ende
 eksempel er resultatet skrevet ud fra en antagelse af, at der er tale om
-en 32-bit størrelse. Hvis der er tale om 64 bit, så vil der være 15 f'er
-i stedet for "kun" 7. Hvis 32-bit størrelsen skulle skrives som
-bit-mønster, så er der selvfølgelig 32 "cifre" der enten er 0 eller 1.
-Det er en god ting at lave et mellemrum for hver fjerde. Så kan man
-bedre jævnføre med hexadecimal notation.
+en 32-bit stÃ¸rrelse. Hvis der er tale om 64 bit, sÃ¥ vil der vÃ¦re 15 f'er
+i stedet for "kun" 7. Hvis 32-bit stÃ¸rrelsen skulle skrives som
+bit-mÃ¸nster, sÃ¥ er der selvfÃ¸lgelig 32 "cifre" der enten er 0 eller 1.
+Det er en god ting at lave et mellemrum for hver fjerde. SÃ¥ kan man
+bedre jÃ¦vnfÃ¸re med hexadecimal notation.
 </para>
 
 <programlisting>
@@ -558,25 +558,25 @@ bedre jævnføre med hexadecimal notation.
 
       15   15   15   15   15   15   15   14
 
-Så altså, det er lidt nemmere at læse hexadecimal notation:
+SÃ¥ altsÃ¥, det er lidt nemmere at lÃ¦se hexadecimal notation:
 
 ~1 == 0xffffffe
 </programlisting>
 
 <para>
-Der er desværre ikke nogen standard funktion, som udskriver bit-mønster
-for en integer. Hvis man vil skrive resultatet som BIT-mønster, så
-må man programmere en funktion, der tester med bitvis and og derefter
+Der er desvÃ¦rre ikke nogen standard funktion, som udskriver bit-mÃ¸nster
+for en integer. Hvis man vil skrive resultatet som BIT-mÃ¸nster, sÃ¥
+mÃ¥ man programmere en funktion, der tester med bitvis and og derefter
 foretager et shift, fx.
 </para>
 
 <programlisting>
-    /* udskriv x's bitmønster: */
+    /* udskriv x's bitmÃ¸nster: */
     { 
         int i = 0;
         char numstr[35];                    /* 2 + 32 + end of string */
         strcpy(numstr,"b:");                /* "b:" for binaert format */
-        numstr[34] = 0;                     /* End of string mærke */
+        numstr[34] = 0;                     /* End of string mÃ¦rke */
         while (i++ &lt; 32) {
             numstr[34-i] = (x & 1) + '0';
             x = x >> 1;
@@ -586,14 +586,14 @@ foretager et shift, fx.
 </programlisting>
 
 <para>
-Du kan afprøve de ovenstående ved at sætte den ind i en main() funktion,
-hvor man allerøverst definerer en int x = 0xf0f0f0f0.
+Du kan afprÃ¸ve de ovenstÃ¥ende ved at sÃ¦tte den ind i en main() funktion,
+hvor man allerÃ¸verst definerer en int x = 0xf0f0f0f0.
 (File: bitmonst.c).
 </para>
 
 <para>
-De andre bitmanipulationer kan også afprøves med små programmer som
-nedenstående, god øvelse:
+De andre bitmanipulationer kan ogsÃ¥ afprÃ¸ves med smÃ¥ programmer som
+nedenstÃ¥ende, god Ã¸velse:
 </para>
 
 <programlisting>
@@ -604,12 +604,12 @@ main()
 }
 </programlisting>
 
-<!-- TODO: Pseudo overskrift, fremhævelse: -->
-<para><command>Spørgsmålstegns-operatoren</command></para>
+<!-- TODO: Pseudo overskrift, fremhÃ¦velse: -->
+<para><command>SpÃ¸rgsmÃ¥lstegns-operatoren</command></para>
 
 <para>
 Specielt for C sproget er betingelses-operatoren (conditional
-operator) spørgsmålstegnet:
+operator) spÃ¸rgsmÃ¥lstegnet:
 </para>
 
 <programlisting>
@@ -627,18 +627,18 @@ Svarer til:
      yxi = b;
 </programlisting>
 
-<!-- TODO: Pseudo overskrift, fremhævelse: -->
+<!-- TODO: Pseudo overskrift, fremhÃ¦velse: -->
 <para> <command>Andre operatorer</command> </para>
 
 <para>
-Ud over ovenstående findes der adskillige specielle operatorer, der kun
-må anvendes efter forudgående aftale med typetjekningssystemet. ;-)
+Ud over ovenstÃ¥ende findes der adskillige specielle operatorer, der kun
+mÃ¥ anvendes efter forudgÃ¥ende aftale med typetjekningssystemet. ;-)
 </para>
 
 <programlisting>
  &   adresse operator, tager adressen af et objekt.
 
- *   asterisk operator, tag indholdet på den adresse, som specificeres
+ *   asterisk operator, tag indholdet pÃ¥ den adresse, som specificeres
      efter stjernen, <emphasis> dereferering af adresse. </emphasis>
 
  ->  kan bruges ved dereferering af en struct pointer.
@@ -651,14 +651,14 @@ må anvendes efter forudgående aftale med typetjekningssystemet. ;-)
 
 
  sizeof  (en pseudo funktion, kan bruges som operator, giver os
-          størrelsen af det objekt, som den står foran.)
+          stÃ¸rrelsen af det objekt, som den stÃ¥r foran.)
 
  
  ,   Komma, listeoperator.
 </programlisting>
 
 <para>
-Her er et simpelt eksempel - lav selv flere, bare for at afprøve
+Her er et simpelt eksempel - lav selv flere, bare for at afprÃ¸ve
 de enkelte operationer!
 </para>
 
@@ -682,7 +682,7 @@ main()
 }
 </programlisting>
 <example id="ex-operator-precedence">
-<title>Operator Præcedens</title>
+<title>Operator PrÃ¦cedens</title>
 <para>
 <informaltable frame="all">
 <tgroup cols="4">
@@ -701,14 +701,14 @@ main()
 <entry>v-h</entry>
 <entry>Funktions-parenteser, array-index, struct-element. 
 Dette niveau er det, der binder mest. Grupperings-parenteser er ikke en 
-operator, men anvendes til at ændre rækkefølge af evaluering.</entry>
+operator, men anvendes til at Ã¦ndre rÃ¦kkefÃ¸lge af evaluering.</entry>
 </row>
 <row>
 <entry><literal> ! ~ ++ --  -  (cast) * &amp; sizeof </literal></entry>
 <entry>2</entry>
 <entry>h-v</entry>
 <entry>not, bit not, increment, fortegns-minus, cast, 
-pointer afreferering, adressen på, objekt-størrelse</entry>
+pointer afreferering, adressen pÃ¥, objekt-stÃ¸rrelse</entry>
 </row>
 <row>
 <entry><literal>*  /  %</literal></entry>
@@ -787,7 +787,7 @@ pointer afreferering, adressen på, objekt-størrelse</entry>
 <entry>15</entry>
 <entry>v-h</entry>
 <entry>komma, listeoperator; den mest adskillende operator; 
-dette niveau skiller næsten lige så meget som semikolon</entry>
+dette niveau skiller nÃ¦sten lige sÃ¥ meget som semikolon</entry>
 </row>
 </tbody>
 
@@ -801,8 +801,8 @@ dette niveau skiller næsten lige så meget som semikolon</entry>
 <sect2 id="flow-kontrol">
 <title>Flow kontrol</title>
 <para>
-Flow kontrol er maskinens måde at reagere på data. Man kan klare
-sig glimrende med færre, for eksempel med if, while og goto! Men C sproget
+Flow kontrol er maskinens mÃ¥de at reagere pÃ¥ data. Man kan klare
+sig glimrende med fÃ¦rre, for eksempel med if, while og goto! Men C sproget
 er kendt for sine gode flow-konstruktioner.
 </para>
 
@@ -812,7 +812,7 @@ er kendt for sine gode flow-konstruktioner.
 </programlisting>
 
 <para>
-Test inden udførelse:
+Test inden udfÃ¸relse:
 </para>
 
 <programlisting>
@@ -821,7 +821,7 @@ Test inden udførelse:
 </programlisting>
 
 <para>
-Kør loop-body mindst en gang:
+KÃ¸r loop-body mindst en gang:
 </para>
 
 <programlisting>
@@ -831,15 +831,15 @@ Kør loop-body mindst en gang:
 </programlisting>
 
 <para>
-Bemærk at man altid bør bruge braces her for at undgå forveksling
-med en ordinær while-løkke.
+BemÃ¦rk at man altid bÃ¸r bruge braces her for at undgÃ¥ forveksling
+med en ordinÃ¦r while-lÃ¸kke.
 </para>
 
 <para>
-Behagelig kontrol med tællevariable:
+Behagelig kontrol med tÃ¦llevariable:
 
 <programlisting>
-    for (initialisering; betingelse; optælling) {
+    for (initialisering; betingelse; optÃ¦lling) {
        loop_body ...
     }
 </programlisting>
@@ -864,8 +864,8 @@ Inde i loops kan man:
 
 <para>
 En switch realiseres om muligt som en jumptabel. En jumptabel er
-en <emphasis>meget</emphasis> effektiv måde at teste på
-størrelsen af en int:
+en <emphasis>meget</emphasis> effektiv mÃ¥de at teste pÃ¥
+stÃ¸rrelsen af en int:
 </para>
 
 <programlisting>
@@ -893,15 +893,15 @@ label:
 </programlisting>
 
 <para>
-Bemærk, at case linjerne i switch statementet ligner og opfører sig
-som labels, de er faktisk labels. Man fortsætter nedefter i næste case,
+BemÃ¦rk, at case linjerne i switch statementet ligner og opfÃ¸rer sig
+som labels, de er faktisk labels. Man fortsÃ¦tter nedefter i nÃ¦ste case,
 hvis der ikke er et break statement.
 </para>
 
 
 <para>
-Et par eksempler, meget simple, først et eksempel, som smager på
-værdien af en variabel:
+Et par eksempler, meget simple, fÃ¸rst et eksempel, som smager pÃ¥
+vÃ¦rdien af en variabel:
 </para>
 
 <programlisting>
@@ -922,7 +922,7 @@ main()
 </programlisting>
 
 <para>
-Et eksempel på en for-løkke:
+Et eksempel pÃ¥ en for-lÃ¸kke:
 </para>
 
 <programlisting>
@@ -941,21 +941,21 @@ main()
 <sect2 id="modularitet">
 <title>Modularitet</title>
 <para>
-Funktionsbegrebet i C gør det muligt at genbruge kode; man kan bygge på
-andres arbejde i stedet for at begynde på bar bund hver gang.
+Funktionsbegrebet i C gÃ¸r det muligt at genbruge kode; man kan bygge pÃ¥
+andres arbejde i stedet for at begynde pÃ¥ bar bund hver gang.
 </para>
 
 <para>
-Et C program består typisk af mange forskellige filer, der kan
-oversættes hver for sig. En fil - evt. med tilhørende header files - der
-kan oversættes alene til et objekt modul, kaldes en oversættelses-unit
+Et C program bestÃ¥r typisk af mange forskellige filer, der kan
+oversÃ¦ttes hver for sig. En fil - evt. med tilhÃ¸rende header files - der
+kan oversÃ¦ttes alene til et objekt modul, kaldes en oversÃ¦ttelses-unit
 eller en translation-unit.
 </para>
 
 <para>
-Allerede i vores første program benyttede vi os af, at der i et bibiotek
-<emphasis> library </emphasis> lå en funktion (printf) som kunne skrive
-tekst ud på terminalvinduet.
+Allerede i vores fÃ¸rste program benyttede vi os af, at der i et bibiotek
+<emphasis> library </emphasis> lÃ¥ en funktion (printf) som kunne skrive
+tekst ud pÃ¥ terminalvinduet.
 </para>
 
 <para>
@@ -964,8 +964,8 @@ Det er muligt at have private variable i en translation unit.
 
 <programlisting>
 /* modular programmering - fil nr. 1, kryptio.c */
-/* main læser fra tastatur (eller omdirigeret fil)
- * og skriver det krypterede bogstav ud på skærmen.
+/* main lÃ¦ser fra tastatur (eller omdirigeret fil)
+ * og skriver det krypterede bogstav ud pÃ¥ skÃ¦rmen.
  */
 
 #include &lt;stdio.h>
@@ -981,37 +981,37 @@ main()
 </programlisting>
 
 <para>
-Til ovenstående main vil vi nu skrive et simpelt modul, som foretager
+Til ovenstÃ¥ende main vil vi nu skrive et simpelt modul, som foretager
 kryptering:
 </para>
 
 <programlisting>
 int krypter(int inputchar)
 {
-    return inputchar + 1;   /* 'cæsar' kryptering */
+    return inputchar + 1;   /* 'cÃ¦sar' kryptering */
 }
 </programlisting>
 
 <para>
 Uha, det viser sig snart, at folk gennemskuer vores simple kryptering,
-så nu laver vi en rigtig kryptering. Det smarte er, at vi kan erstatte
-dette modul uden at lave om på det eller de programmer, som anvender
+sÃ¥ nu laver vi en rigtig kryptering. Det smarte er, at vi kan erstatte
+dette modul uden at lave om pÃ¥ det eller de programmer, som anvender
 vores funktion "krypter()".
 </para>
 
 <para>
-Bliv nu ikke forskrækket over, at der er en del ting i næste eksempel,
-som ikke er fyldestgørende forklaret endnu. Prøv at læse det, evt.
-indtaste og oversætte det. Prøv så at rette i det for at se, hvad der
-sker undervejs. Når et problem er kompliceret, så skil det ad i mindre
-dele og indsæt printf statements, så du kan se, hvad der sker undervejs.
+Bliv nu ikke forskrÃ¦kket over, at der er en del ting i nÃ¦ste eksempel,
+som ikke er fyldestgÃ¸rende forklaret endnu. PrÃ¸v at lÃ¦se det, evt.
+indtaste og oversÃ¦tte det. PrÃ¸v sÃ¥ at rette i det for at se, hvad der
+sker undervejs. NÃ¥r et problem er kompliceret, sÃ¥ skil det ad i mindre
+dele og indsÃ¦t printf statements, sÃ¥ du kan se, hvad der sker undervejs.
 </para>
 
 <example id="ex-kryptering1">
 <title>Simpel kryptering</title>
 <programlisting>
 /* file krypter1.c - en brugbar (men forsimplet)
- * krypteringsalgoritme. Kan ikke håndtere linjeskift m.v.
+ * krypteringsalgoritme. Kan ikke hÃ¥ndtere linjeskift m.v.
  */
 
 int krypter(int inpchar)
@@ -1041,51 +1041,51 @@ int krypter(int inpchar)
 Virker kun for ren ASCII tekst.
 <footnote>
 <para>
-I parentes bemærket, hvis du vil gøre krypteringen ovenfor rigtig
-ubrydelig skal du forbedre den lidt. Anvend længere keystring
-(altid længere end meddelelsen), formatér output i linjer, som er
-lige lange.  Bemærk, at hvis input består af lutter samme tegn,
-så kan denne version ikke rigtigt skjule sin keystring. Ikke at
-den kommer i klartekst, men det er muligt at regne baglæns og
-finde keystringen.  Man skal behandle sekvenser af samme tegn på
-en speciel måde, hvor man angiver antal og tegn.  Algoritmen er
+I parentes bemÃ¦rket, hvis du vil gÃ¸re krypteringen ovenfor rigtig
+ubrydelig skal du forbedre den lidt. Anvend lÃ¦ngere keystring
+(altid lÃ¦ngere end meddelelsen), formatÃ©r output i linjer, som er
+lige lange.  BemÃ¦rk, at hvis input bestÃ¥r af lutter samme tegn,
+sÃ¥ kan denne version ikke rigtigt skjule sin keystring. Ikke at
+den kommer i klartekst, men det er muligt at regne baglÃ¦ns og
+finde keystringen.  Man skal behandle sekvenser af samme tegn pÃ¥
+en speciel mÃ¥de, hvor man angiver antal og tegn.  Algoritmen er
 en tilpasning af Kejser Augustus' og Livia's kode, som beskrevet
 i Robert Graves' "I, Claudius".
 </para>
 <para>
-Endelig er der ikke support for såkaldte offentlige keys, der kan
+Endelig er der ikke support for sÃ¥kaldte offentlige keys, der kan
 bruges til afkodning men ikke indkodning.
 </para>
 </footnote>
 </para>
 
 <para>
-Ordet static, som står foran de 4 variable, som skal anvendes i
-modulet her, betyder, at de ikke må kunne bruges fra andre
-moduler eller funktioner i det færdige program. Det er såmænd
-ikke fordi de skal være hemmelige, men blot for at sikre, at vi
-har styr på, hvor der sker ændringer af variablen, som peger
-fremad i krypteringsnøglen.
+Ordet static, som stÃ¥r foran de 4 variable, som skal anvendes i
+modulet her, betyder, at de ikke mÃ¥ kunne bruges fra andre
+moduler eller funktioner i det fÃ¦rdige program. Det er sÃ¥mÃ¦nd
+ikke fordi de skal vÃ¦re hemmelige, men blot for at sikre, at vi
+har styr pÃ¥, hvor der sker Ã¦ndringer af variablen, som peger
+fremad i krypteringsnÃ¸glen.
 </para>
 
 <para>
-Hvis du blev bidt af ovenstående, så lav en dekryptering til den.
-Eller læs eksempel-programmet afkrypt1.c. Desuden er der en
-forbedret version, som håndterer linjeskift, krypter2.c og
+Hvis du blev bidt af ovenstÃ¥ende, sÃ¥ lav en dekryptering til den.
+Eller lÃ¦s eksempel-programmet afkrypt1.c. Desuden er der en
+forbedret version, som hÃ¥ndterer linjeskift, krypter2.c og
 afkrypt2.c
 </para>
 
 <para>
-Det var små eksempler på anvendelse af datatyper, operatorer,
-flowkontrol statements og modularisering. Det næste afsnit
-af crash course i C programmering går lidt mere i dybden med
+Det var smÃ¥ eksempler pÃ¥ anvendelse af datatyper, operatorer,
+flowkontrol statements og modularisering. Det nÃ¦ste afsnit
+af crash course i C programmering gÃ¥r lidt mere i dybden med
 disse emner.
 </para>
 
 <para>
-Først et spørgsmål: Lagde du mærke til, at variablen 'keylen'
-havde fået ordet <emphasis>static</emphasis> stillet foran? Det
-er en storage specifikation. Læs videre!
+FÃ¸rst et spÃ¸rgsmÃ¥l: Lagde du mÃ¦rke til, at variablen 'keylen'
+havde fÃ¥et ordet <emphasis>static</emphasis> stillet foran? Det
+er en storage specifikation. LÃ¦s videre!
 </para>
 
 </sect2>
@@ -1094,7 +1094,7 @@ er en storage specifikation. Læs videre!
 <sect1 id="sect-C-fundamentet">
 <title>Lager klassifikation, storage classes</title>
 
-<!--OBS! AL TEKST ER ÆNDRET RADIKALT:-->
+<!--OBS! AL TEKST ER Ã†NDRET RADIKALT:-->
 
 <para>
 Emner:
@@ -1118,7 +1118,7 @@ programsektioner, stak, heap, bss, data, text
 </listitem>
 <listitem>
 <para>
-kontrolvariable for løkker eller loops
+kontrolvariable for lÃ¸kker eller loops
 </para>
 </listitem>
 <listitem>
@@ -1149,48 +1149,48 @@ register variable.
 </itemizedlist>
 
 <para>
-Et C program består af definitioner af eksterne objekter, som
-kan være funktioner eller variable. Eksterne objekter kan bruges
-overalt i det program, hvori de forekommer, også fra separat
+Et C program bestÃ¥r af definitioner af eksterne objekter, som
+kan vÃ¦re funktioner eller variable. Eksterne objekter kan bruges
+overalt i det program, hvori de forekommer, ogsÃ¥ fra separat
 oversatte funktioner.
 </para>
 <para>
-Modsætningen til eksterne variable er de variable, som defineres
-inde i en funktion og de parametre, som funktionen modtager når
-den bliver kaldt. De eksisterer, mens funktionen kører. De bliver
-automatisk oprettet når programmet kører funktionen (eller
-blokken) og nedlægges igen, når programmet forlader funktionen.
-De kaldes derfor også automatiske variable. Det reserverede ord
+ModsÃ¦tningen til eksterne variable er de variable, som defineres
+inde i en funktion og de parametre, som funktionen modtager nÃ¥r
+den bliver kaldt. De eksisterer, mens funktionen kÃ¸rer. De bliver
+automatisk oprettet nÃ¥r programmet kÃ¸rer funktionen (eller
+blokken) og nedlÃ¦gges igen, nÃ¥r programmet forlader funktionen.
+De kaldes derfor ogsÃ¥ automatiske variable. Det reserverede ord
 <emphasis>auto</emphasis> kan anvendes om lokale variable, men er
-overflødigt - det stammer fra de tidligste versioner af C
+overflÃ¸digt - det stammer fra de tidligste versioner af C
 sproget.
 </para>
 <para>
 Funktioner er altid eksterne objekter; man kan ikke definere en
-funktion inden i en anden funktion, sådan som man for eksempel
+funktion inden i en anden funktion, sÃ¥dan som man for eksempel
 kan i Pascal sproget.
 </para>
 <para>
 Selv om eksterne objekter uden videre er "synlige" i hele
-programmet, er der en metode til gøre dem private for et modul.
-Det skal vi se på senere i dette afsnit.
+programmet, er der en metode til gÃ¸re dem private for et modul.
+Det skal vi se pÃ¥ senere i dette afsnit.
 </para>
 
 <sect2 id="c-eksterne-variable">
 <title>Externe variable, funktioner og konstanter</title>
 
-<!--OBS! AL TEKST ER ÆNDRET RADIKALT:-->
+<!--OBS! AL TEKST ER Ã†NDRET RADIKALT:-->
 
 <para>
-For helt at være klar til diskussion af eksterne variable skal
-det lige understreges, at et C program næsten altid opbygges af
-separat oversatte moduler. De fleste af dem ligger måske i et
-library - måske er det standard-library, libc.a - Andre ligger i
-vores egne oversatte moduler, og vi kan give oversætteren besked om
-det på kommandolinjen ved simpelthen at nævne alle de moduler,
-som skal med. Oversætteren består af mange forskellige programmer,
-og det sidste af dem, nemlig linkeren, foretager sammenkædningen
-af modulerne (link = hægte eller led i en kæde).
+For helt at vÃ¦re klar til diskussion af eksterne variable skal
+det lige understreges, at et C program nÃ¦sten altid opbygges af
+separat oversatte moduler. De fleste af dem ligger mÃ¥ske i et
+library - mÃ¥ske er det standard-library, libc.a - Andre ligger i
+vores egne oversatte moduler, og vi kan give oversÃ¦tteren besked om
+det pÃ¥ kommandolinjen ved simpelthen at nÃ¦vne alle de moduler,
+som skal med. OversÃ¦tteren bestÃ¥r af mange forskellige programmer,
+og det sidste af dem, nemlig linkeren, foretager sammenkÃ¦dningen
+af modulerne (link = hÃ¦gte eller led i en kÃ¦de).
 </para>
 
 <programlisting>
@@ -1198,14 +1198,14 @@ gcc -o mitprogram modul_1.c modul_2.c modul_3.o
 </programlisting>
 
 <para>
-Oversætteren finder ud af, at modul_3.o er et oversat modul og
-nøjes med at medtage det i link-kommandoen, som bygger den
-kørbare fil, "program-image filen" eller bare "programmet".
+OversÃ¦tteren finder ud af, at modul_3.o er et oversat modul og
+nÃ¸jes med at medtage det i link-kommandoen, som bygger den
+kÃ¸rbare fil, "program-image filen" eller bare "programmet".
 </para>
 
 <para>
-En definition af en (ekstern) variabel består af en type
-angivelse og et navn, kaldet en variabel-identifikation, på
+En definition af en (ekstern) variabel bestÃ¥r af en type
+angivelse og et navn, kaldet en variabel-identifikation, pÃ¥
 engelsk: identifier.
 </para>
 
@@ -1214,7 +1214,7 @@ typespecifikator variabel-navn [, variabel-navn] ... ;
 </programlisting>
 
 <para>
-Altså typisk for eksempel følgende:
+AltsÃ¥ typisk for eksempel fÃ¸lgende:
 </para>
 
 <programlisting>
@@ -1222,17 +1222,17 @@ int en_taeller;
 </programlisting>
 
 <para>
-En funktion defineres nogenlunde på samme måde, altså ved en type
+En funktion defineres nogenlunde pÃ¥ samme mÃ¥de, altsÃ¥ ved en type
 og et navn (lige som en variabel) men derefter har vi brug for
 nogle flere oplysninger, nemlig en parentes med argumentlisten,
-og de program-sætninger (statements), som udgør funktionens
+og de program-sÃ¦tninger (statements), som udgÃ¸r funktionens
 <emphasis>krop</emphasis>, omsluttet af braces. 
 </para>
 
 <programlisting>
 typespecifikator funktion-navn(parameter-liste)
 {
-    funktion-sætning(er);
+    funktion-sÃ¦tning(er);
 }
 </programlisting>
 
@@ -1245,27 +1245,27 @@ int placeholder() { }
 </programlisting>
 
 <para>
-Selv om en tom funktion ikke laver noget, kan den dog være ganske
-nyttig under udviklingen af et større program ved simpelthen at
-være til stede, evt. returnere en brugbar (default) værdi.
+Selv om en tom funktion ikke laver noget, kan den dog vÃ¦re ganske
+nyttig under udviklingen af et stÃ¸rre program ved simpelthen at
+vÃ¦re til stede, evt. returnere en brugbar (default) vÃ¦rdi.
 </para>
 
 <para>
 Der skelnes i C sproget mellem en definition og en deklaration.
-På dansk ser man ofte ordet erklæring i stedet for deklaration.
+PÃ¥ dansk ser man ofte ordet erklÃ¦ring i stedet for deklaration.
 </para>
 
-<indexterm><primary>extern (nøgleord)</primary></indexterm>
+<indexterm><primary>extern (nÃ¸gleord)</primary></indexterm>
 <indexterm><primary>deklaration</primary></indexterm>
-<indexterm><primary>erklæring</primary></indexterm>
+<indexterm><primary>erklÃ¦ring</primary></indexterm>
 
 <para>
-Hvis vi ønsker at anvende en variabel, som allerede er defineret
-i et andet modul, så bruger vi en deklaration. Det er en
-forklaring, så at sige, til oversætteren om, at der er en variabel
-til rådighed i et andet modul i det færdige program, som hedder
-sådan og sådan og er af den og den type, men som altså IKKE
-findes i nærværende overstættelses-enhed (translation unit).
+Hvis vi Ã¸nsker at anvende en variabel, som allerede er defineret
+i et andet modul, sÃ¥ bruger vi en deklaration. Det er en
+forklaring, sÃ¥ at sige, til oversÃ¦tteren om, at der er en variabel
+til rÃ¥dighed i et andet modul i det fÃ¦rdige program, som hedder
+sÃ¥dan og sÃ¥dan og er af den og den type, men som altsÃ¥ IKKE
+findes i nÃ¦rvÃ¦rende overstÃ¦ttelses-enhed (translation unit).
 </para>
 
 <programlisting>
@@ -1273,56 +1273,56 @@ extern int en_taeller;
 </programlisting>
 
 <para>
-Nu ved oversætteren, at der i et andet modul findes en variabel,
+Nu ved oversÃ¦tteren, at der i et andet modul findes en variabel,
 som hedder en_taeller, og at det er ok, at vi bruger den.
 </para>
 
 <para>
-Hvis vi derimod vil reservere lager til en variabel, så kaldes
-det definition af en variabel. Når programmet kører og vi
-opretter et objekt (enten ved hjælp af dynamisk lagerallokering
-eller ved hjælp af lokale variable i en kodeblok) kaldes det
+Hvis vi derimod vil reservere lager til en variabel, sÃ¥ kaldes
+det definition af en variabel. NÃ¥r programmet kÃ¸rer og vi
+opretter et objekt (enten ved hjÃ¦lp af dynamisk lagerallokering
+eller ved hjÃ¦lp af lokale variable i en kodeblok) kaldes det
 instantiering af et objekt.
 </para>
 
 <para>
-I C foregår deklaration og definition ofte på samme tid.
-Når jeg skriver <emphasis>int xyzzy</emphasis> foretager jeg både
-deklaration og lagerudlægning.
+I C foregÃ¥r deklaration og definition ofte pÃ¥ samme tid.
+NÃ¥r jeg skriver <emphasis>int xyzzy</emphasis> foretager jeg bÃ¥de
+deklaration og lagerudlÃ¦gning.
 </para>
 
 <para>
 Hvis jeg derimod skriver <emphasis>extern int xyzzy</emphasis> 
-udlægges der ikke lager, men jeg indføjer et punkt i oversætterens
+udlÃ¦gges der ikke lager, men jeg indfÃ¸jer et punkt i oversÃ¦tterens
 symboltabel. I denne entry ligger oplysning om navn og type.
 </para>
 
 <para>
-I det andet modul skal der være defineret en variabel på 
-<emphasis>det yderste niveau</emphasis> - så er det en ekstern
-variabel, som kan eksistere uafhængigt af de funktioner, som det
-andet modul måtte indeholde (måske indeholder det kun variable).
-En variabel, som er erklæret i <emphasis>det yderste
+I det andet modul skal der vÃ¦re defineret en variabel pÃ¥ 
+<emphasis>det yderste niveau</emphasis> - sÃ¥ er det en ekstern
+variabel, som kan eksistere uafhÃ¦ngigt af de funktioner, som det
+andet modul mÃ¥tte indeholde (mÃ¥ske indeholder det kun variable).
+En variabel, som er erklÃ¦ret i <emphasis>det yderste
 niveau</emphasis> er altid en variabel, som kan ses af andre
-moduler. Den er, pr default, eksporteret, ville man måske sige i
+moduler. Den er, pr default, eksporteret, ville man mÃ¥ske sige i
 sprog som ADA og Oberon.
 </para>
 
 <para>
-En ekstern variabel er - i C sproget - også altid en <emphasis>
-statisk </emphasis> variabel.  Sådanne statiske variable har lige
-så lang levetid som det program, der anvender dem. På den måde
+En ekstern variabel er - i C sproget - ogsÃ¥ altid en <emphasis>
+statisk </emphasis> variabel.  SÃ¥danne statiske variable har lige
+sÃ¥ lang levetid som det program, der anvender dem. PÃ¥ den mÃ¥de
 ligner de programmets instruktioner.
 </para>
 
 <para>
-Programkode og statiske data ligger da også anbragt på samme måde
-i lageret, nemlig forneden, på de lave adresser, under det
-område, som anvendes til hhv. bunke (heap) og stak. Både heap og
-stak kan vokse, så det er meget passende, at de enes om at
+Programkode og statiske data ligger da ogsÃ¥ anbragt pÃ¥ samme mÃ¥de
+i lageret, nemlig forneden, pÃ¥ de lave adresser, under det
+omrÃ¥de, som anvendes til hhv. bunke (heap) og stak. BÃ¥de heap og
+stak kan vokse, sÃ¥ det er meget passende, at de enes om at
 udnytte det store mellemrum fra "bunden" med faste data og
 programinstruktioner og "toppen" hvor operativsystemet forlanger
-at få lov til at være i fred.
+at fÃ¥ lov til at vÃ¦re i fred.
 </para>
 
  <informaltable frame="all">
@@ -1355,8 +1355,8 @@ at få lov til at være i fred.
 
 
 <para>
-Der er dog lidt forskel på, hvor data anbringes, er de
-initialiserede, således som for eksempel vores keystring i eksempel 
+Der er dog lidt forskel pÃ¥, hvor data anbringes, er de
+initialiserede, sÃ¥ledes som for eksempel vores keystring i eksempel 
 <xref linkend="ex-kryptering1"/>, anbringes de i en sektion, som
 kaldes .data. Hvis vi ikke selv specificerer, at data skal
 initialiseres, anbringes variablen i den sektion, som kaldes BSS
@@ -1364,26 +1364,26 @@ initialiseres, anbringes variablen i den sektion, som kaldes BSS
 </para>
 
 <para>
-Navnet <emphasis>bss</emphasis> har rødder i IBM mainframe
+Navnet <emphasis>bss</emphasis> har rÃ¸dder i IBM mainframe
 assembler sproget, d.v.s. system 370, 390, 3900 og MVS.
-Det står for <emphasis> Block Started by Symbol</emphasis>.
+Det stÃ¥r for <emphasis> Block Started by Symbol</emphasis>.
 </para>
 
 <para>
 Lad os i stedet huske det som <emphasis> Base Static
-Storage</emphasis>. Det er garanteret, at variable, som erklæres
+Storage</emphasis>. Det er garanteret, at variable, som erklÃ¦res
 uden for en funktionsblok men som ikke er explicit initialiserede
 ved en "initializer", er nulstillede ved programmets start. Det
-sørger opstartsmodulet af programkoden for, traditionelt kaldet
+sÃ¸rger opstartsmodulet af programkoden for, traditionelt kaldet
 c0.c
 </para>
 
 <para>
-Læg især mærke til, at lokale variable anbringes på "stak for
-applikationen". Det er de højest tilgængelige adresser for vores
+LÃ¦g isÃ¦r mÃ¦rke til, at lokale variable anbringes pÃ¥ "stak for
+applikationen". Det er de hÃ¸jest tilgÃ¦ngelige adresser for vores
 program. Herfra kan stakken vokse (hov - den vokser nedad!)
-indtil den møder heap. På en linux-maskine kan den vokse mere end
-to gigabyte, før der sker sammenstød. MS NT har "kun" afsat 2 Gb
+indtil den mÃ¸der heap. PÃ¥ en linux-maskine kan den vokse mere end
+to gigabyte, fÃ¸r der sker sammenstÃ¸d. MS NT har "kun" afsat 2 Gb
 til applikationer.
 </para>
 
@@ -1396,11 +1396,11 @@ til applikationer.
 
 <para>
 Det reserverede ord <emphasis> static </emphasis> betyder
-selvfølgelig statisk. Det kan, som vi har set i 
+selvfÃ¸lgelig statisk. Det kan, som vi har set i 
 <xref linkend="ex-kryptering1"/>, bruges, hvis man <emphasis> inde
-</emphasis> i en funktion ønsker at have en variabel, som
-overlever funktionen, så at sige, husker fra gang til gang, hvad
-værdi, den havde sidste gang. For eksempel en sidetæller i en
+</emphasis> i en funktion Ã¸nsker at have en variabel, som
+overlever funktionen, sÃ¥ at sige, husker fra gang til gang, hvad
+vÃ¦rdi, den havde sidste gang. For eksempel en sidetÃ¦ller i en
 udskriftsfunktion.
 </para>
 <indexterm><primary>static</primary></indexterm>
@@ -1418,25 +1418,25 @@ void topmargin_udskrift(char *section_navn)
 <indexterm><primary>heap</primary></indexterm>
 
 <para>
-Stakken gør det muligt at have lokale variable i funktioner, og
-for at have et sæt variable HVER gang funktionen kaldes, det er
+Stakken gÃ¸r det muligt at have lokale variable i funktioner, og
+for at have et sÃ¦t variable HVER gang funktionen kaldes, det er
 betingelsen for, at man kan benytte rekursion.  Tilsvarende er
-heap'en det område, som benyttes til dynamiske lager-strukturer
-som for eksempel en "liste" og et "træ". (se kap. 3,
+heap'en det omrÃ¥de, som benyttes til dynamiske lager-strukturer
+som for eksempel en "liste" og et "trÃ¦". (se kap. 3,
 <xref linkend="sect-abstract-datatypes"/>).
 </para>
 
 <para>
-De steder, hvor der i nedenstående opstilling af lager-anvendelse
-er anbragt nogle punktummer på sidelinjen er steder, hvortil der
-ikke nødvendigvis er knyttet noget RAM, fysisk memory.
-Programmets anbringelse i lageret ser normalt ud sådan her:
+De steder, hvor der i nedenstÃ¥ende opstilling af lager-anvendelse
+er anbragt nogle punktummer pÃ¥ sidelinjen er steder, hvortil der
+ikke nÃ¸dvendigvis er knyttet noget RAM, fysisk memory.
+Programmets anbringelse i lageret ser normalt ud sÃ¥dan her:
 </para>
 
 <indexterm><primary>memory</primary><secondary>layout</secondary></indexterm>
 <programlisting>
               +----------------------------+
-              | Den øverste gigabyte       |
+              | Den Ã¸verste gigabyte       |
               |   som operativsystemet     |
               |     benytter og beskytter  |
               |                            |
@@ -1447,7 +1447,7 @@ Programmets anbringelse i lageret ser normalt ud sådan her:
               |                            |
               +----------------------------+
               |                            |
-              |  Stack område for          |
+              |  Stack omrÃ¥de for          |
               |          brugerprogram     |
               |                            |
               |  Her laves en ramme med    |
@@ -1496,19 +1496,19 @@ Programmets anbringelse i lageret ser normalt ud sådan her:
 <indexterm><primary>bss</primary></indexterm>
 
 <para>
-Hvis vi ønsker at anbringe en variabel i .bss sektionen kan vi
-enten erklære den uden for en funktion eller benytte
-lagrings-specifikationen <emphasis>static</emphasis>. Sidstnævnte
-metode muliggør statiske variable med lokal synlighed (altså
+Hvis vi Ã¸nsker at anbringe en variabel i .bss sektionen kan vi
+enten erklÃ¦re den uden for en funktion eller benytte
+lagrings-specifikationen <emphasis>static</emphasis>. SidstnÃ¦vnte
+metode muliggÃ¸r statiske variable med lokal synlighed (altsÃ¥
 <emphasis> kun </emphasis> synlige inde i en funktion eller blok).
-Hvis vi benytter "static" på eksternt niveau, d.v.s. uden for en
+Hvis vi benytter "static" pÃ¥ eksternt niveau, d.v.s. uden for en
 funktionsdefinition, har specifikationen den virkning, at
-variabelen ikke får ekstern synlighed (external linkage).
+variabelen ikke fÃ¥r ekstern synlighed (external linkage).
 </para>
 
 <para>
-Hvis en variabel erklæret inde i en funktion skal kunne huske sin
-værdi fra gang til gang, når funktionen kaldes, skal den
+Hvis en variabel erklÃ¦ret inde i en funktion skal kunne huske sin
+vÃ¦rdi fra gang til gang, nÃ¥r funktionen kaldes, skal den
 defineres som static, hvilket vil bevirke, at den bliver anbragt
 i .bss sektionen.
 </para>
@@ -1522,48 +1522,48 @@ i .bss sektionen.
 <indexterm><primary>skrivebeskyttet lager</primary></indexterm>
 
 <para>
-Der er forskellige måder at organisere kørselen af et program,
-men stort set alle benytter ovenstående opstilling som
+Der er forskellige mÃ¥der at organisere kÃ¸rselen af et program,
+men stort set alle benytter ovenstÃ¥ende opstilling som
 udgangspunkt. Det egner sig til virtual memory management,
 hvilket jo fra starten var udgangspunktet for Linux, og det giver
 nogle fordele, som er ret store. Vi kan simpelt hen lade vores
-program benytte 3 Gb memory - også selv om vi ikke har
-installeret så meget. Afhængig af operativsystemets snedighed vil
-der kun blive tildelt fysisk memory, når det er strengt
-nødvendigt. Det vil sige, hvis vi vil skrive til memory. Når vi
+program benytte 3 Gb memory - ogsÃ¥ selv om vi ikke har
+installeret sÃ¥ meget. AfhÃ¦ngig af operativsystemets snedighed vil
+der kun blive tildelt fysisk memory, nÃ¥r det er strengt
+nÃ¸dvendigt. Det vil sige, hvis vi vil skrive til memory. NÃ¥r vi
 har loadet vores program og vil starte det op igen fra en anden
-brugers terminal, kan man stole på, at operativsystem kernen ikke
+brugers terminal, kan man stole pÃ¥, at operativsystem kernen ikke
 bruger mere RAM til at loade endnu en kopi af program
 instruktionerne.
 </para>
 
 <para>
-Så opdelingen af programmet i sektioner skyldes både vores egne
-behov for at strukturere programmet og så et hensyn til
-operativsystemet. Sektionerne skal gøre det lettere for
+SÃ¥ opdelingen af programmet i sektioner skyldes bÃ¥de vores egne
+behov for at strukturere programmet og sÃ¥ et hensyn til
+operativsystemet. Sektionerne skal gÃ¸re det lettere for
 operativsystemet at optimere anvendelsen af memory.  Nogle
-sektioner skal kun læses, for eksempel program-instruktionerne, andre
-skal både læses og opdateres, og i hhv. heap og stack skal man
-kunne udvide området under kørselen.
+sektioner skal kun lÃ¦ses, for eksempel program-instruktionerne, andre
+skal bÃ¥de lÃ¦ses og opdateres, og i hhv. heap og stack skal man
+kunne udvide omrÃ¥det under kÃ¸rselen.
 </para>
 
 <para>
-Hvis nu vores program alligevel forsøger at skrive på fx.
-adressen for en funktion, så skal Linux kernens memory management
+Hvis nu vores program alligevel forsÃ¸ger at skrive pÃ¥ fx.
+adressen for en funktion, sÃ¥ skal Linux kernens memory management
 modul reagere ved at stoppe programmet.
 </para>
 
 <para>
-På samme måde er der dele af initialiserede data, som ikke må
+PÃ¥ samme mÃ¥de er der dele af initialiserede data, som ikke mÃ¥
 overskrives. Fx. streng-konstanten "Hello, world!\n" i eks.
-<xref linkend="hello-world"/>. Man kan heller ikke så nemt komme
-til at gøre det i netop det eksempel. Men se lige her:
+<xref linkend="hello-world"/>. Man kan heller ikke sÃ¥ nemt komme
+til at gÃ¸re det i netop det eksempel. Men se lige her:
 </para>
 
 <example id="ex-const-violation">
 <title>Konstant streng</title>
 <programlisting>
-/* constviol.c, kørselsfejl når man ændrer en konstant. */
+/* constviol.c, kÃ¸rselsfejl nÃ¥r man Ã¦ndrer en konstant. */
 #include &lt;stdio.h>
 
 char * ms1 = "Hello, ever changing world!\n";
@@ -1588,8 +1588,8 @@ int main()
 <para>
 Scope betyder synlighed (within scope = "inden for synsvidde").
 En af de rigtig gode ting ved C sproget er, at man kan skrive
-programmerne således, at variable kun er tilgængelige i en
-funktion eller et modul. Derved kan man uden stort besvær anvende
+programmerne sÃ¥ledes, at variable kun er tilgÃ¦ngelige i en
+funktion eller et modul. Derved kan man uden stort besvÃ¦r anvende
 objektorienterede programmeringsprincipper.
 </para>
 
@@ -1612,15 +1612,15 @@ headerlinje(){
 
 
 <para>
-Hvis vi definerer en variabel, for eksempel ms1, på samme niveau som
-funktioner, så kaldes den et eksternt objekt. (Husk: Et C program
-består af en række definitioner af eksterne objekter.)
+Hvis vi definerer en variabel, for eksempel ms1, pÃ¥ samme niveau som
+funktioner, sÃ¥ kaldes den et eksternt objekt. (Husk: Et C program
+bestÃ¥r af en rÃ¦kke definitioner af eksterne objekter.)
 </para>
 
 <para>
-Variablen ms1 vil - uden særlig angivelse af, at den er
+Variablen ms1 vil - uden sÃ¦rlig angivelse af, at den er
 "public", blive synlig i andre kildetekst filer. De skal blot
-erklære en extern char * ms1;
+erklÃ¦re en extern char * ms1;
 </para>
 
 <example id="ex-external-decl">
@@ -1639,42 +1639,42 @@ bundlinje(){
 </programlisting>
 </example>
 
-<indexterm><primary>extern (nøgleord)</primary></indexterm>
+<indexterm><primary>extern (nÃ¸gleord)</primary></indexterm>
 <para>
 Hov! Hvad er nu det - kan man deklarere en "extern" <emphasis>
-inde </emphasis> i en funktion? Jada, og så er det meningen, at
-oversætteren skal redde os, hvis vi kommer til at bruge den
+inde </emphasis> i en funktion? Jada, og sÃ¥ er det meningen, at
+oversÃ¦tteren skal redde os, hvis vi kommer til at bruge den
 <emphasis> uden </emphasis> for funktionen. Men deklarationen af
-extern char *ms2; inde i funktionen forudsætter, at variablen er
-defineret (og helst også initialiseret, i dette tilfælde!) et
+extern char *ms2; inde i funktionen forudsÃ¦tter, at variablen er
+defineret (og helst ogsÃ¥ initialiseret, i dette tilfÃ¦lde!) et
 andet sted, d.v.s. i en anden kildetekst-fil (source-file).
 </para>
 
 <para>
-Bemærk dog, at det stadig accepteres af mange oversættere, at man
-erklærer en ekstern variabel flere gange med samme navn. Det kan
-man vist roligt sige er en praksis, som bør undgås. Specielt kan
-det nævnes, at gcc accepterer at man definerer den samme variabel
+BemÃ¦rk dog, at det stadig accepteres af mange oversÃ¦ttere, at man
+erklÃ¦rer en ekstern variabel flere gange med samme navn. Det kan
+man vist roligt sige er en praksis, som bÃ¸r undgÃ¥s. Specielt kan
+det nÃ¦vnes, at gcc accepterer at man definerer den samme variabel
 to eller flere gange, hvis den defineres i ydre niveau og dermed
 implicit er ekstern variabel!
 </para>
 
 <programlisting>
 /* fil 1. Demonstration af uheldig praksis. */
-/* programmet oversættes uden advarsler - ikke engang option
+/* programmet oversÃ¦ttes uden advarsler - ikke engang option
  * -Wall, som ellers betyder "giv mig alle advarsler" 
- * (warnings, derfor -W), får gcc til
- * at reagere på denne konstruktion! Men benyttes g++ får man
- * heldigvis en fejl på denne uheldige fremgangsmåde. */
+ * (warnings, derfor -W), fÃ¥r gcc til
+ * at reagere pÃ¥ denne konstruktion! Men benyttes g++ fÃ¥r man
+ * heldigvis en fejl pÃ¥ denne uheldige fremgangsmÃ¥de. */
 
-int min_globale_variabel; /* ok, almindelig erklæring af en variabel. */
+int min_globale_variabel; /* ok, almindelig erklÃ¦ring af en variabel. */
 
-int min_globale_variabel; /* uha - burde udløse en warning! */
-int min_globale_variabel; /* uha - burde udløse en warning! */
+int min_globale_variabel; /* uha - burde udlÃ¸se en warning! */
+int min_globale_variabel; /* uha - burde udlÃ¸se en warning! */
 
 int main()
 {
-     printf("Værdien af min_globale_variabel er %d\n", min_globale_variabel);
+     printf("VÃ¦rdien af min_globale_variabel er %d\n", min_globale_variabel);
      return 0;
 }
 
@@ -1686,15 +1686,15 @@ int main()
 
 <para>
 Det er jo godt nok kedeligt, hvis man tror, at man har to
-forskellige variable, og oversætteren tror, at der kun er en.
-Heldigvis findes der et værktøj (ud over c++) som kan afsløre
+forskellige variable, og oversÃ¦tteren tror, at der kun er en.
+Heldigvis findes der et vÃ¦rktÃ¸j (ud over c++) som kan afslÃ¸re
 denne og andre sjuskefejl. Lint, en statisk syntakstjekker, har
-været på banen siden Unix version 7, altså den første offentlige
+vÃ¦ret pÃ¥ banen siden Unix version 7, altsÃ¥ den fÃ¸rste offentlige
 udgave fra 1978. Der findes nu en fri lclint, som er
-fantastisk god til at gennemgå programmer, og som vel at mærke
-kan komme igennem include-filer uden brok. Lclint er så
-pedantisk, at man somme tider ønsker at slå en masse warnings
-fra, men det er der heldigvis også altid anvisninger på.
+fantastisk god til at gennemgÃ¥ programmer, og som vel at mÃ¦rke
+kan komme igennem include-filer uden brok. Lclint er sÃ¥
+pedantisk, at man somme tider Ã¸nsker at slÃ¥ en masse warnings
+fra, men det er der heldigvis ogsÃ¥ altid anvisninger pÃ¥.
 </para>
 
 <para>
@@ -1721,20 +1721,20 @@ Finished LCLint checking --- 4 code errors found
 </para>
 
 <para>
-lclint er endog så omhyggelig, at den advarer mig om, at
+lclint er endog sÃ¥ omhyggelig, at den advarer mig om, at
 min_globale_variabel faktisk ikke bliver brugt i andre moduler
 (der er jo heller ikke andre lige for tiden ...) og at jeg derfor
-burde erklære denne variabel for static. Godt
-gået.<footnote><para> lint og den systemuafhængige C-oversætter har som
+burde erklÃ¦re denne variabel for static. Godt
+gÃ¥et.<footnote><para> lint og den systemuafhÃ¦ngige C-oversÃ¦tter har som
 oprindelig ophavsmand Stephen C. Johnson, som er en af de kendte
-oversætter-teoretikere der arbejder på Bell Labs.</para></footnote>
+oversÃ¦tter-teoretikere der arbejder pÃ¥ Bell Labs.</para></footnote>
 </para>
 
 <para>
-Hvis man omvendt kun har erklæret alle sine eksterne variable med
-keywordet extern, så vil gcc beklagende meddele "undefined
-reference to min_extern". (Se øvelser i kap. 2 for at få mere
-føling med håndtering af variable i C programmer).
+Hvis man omvendt kun har erklÃ¦ret alle sine eksterne variable med
+keywordet extern, sÃ¥ vil gcc beklagende meddele "undefined
+reference to min_extern". (Se Ã¸velser i kap. 2 for at fÃ¥ mere
+fÃ¸ling med hÃ¥ndtering af variable i C programmer).
 </para>
 
 <para>
@@ -1742,31 +1742,31 @@ føling med håndtering af variable i C programmer).
 </para>
 
 <para>
-Lige som extern kan også <emphasis> static </emphasis> bruges
+Lige som extern kan ogsÃ¥ <emphasis> static </emphasis> bruges
 inde i og ude af funktioner.
 </para>
 
 <para>
-Resumé: En variabel, som er erklæret i starten af en
+ResumÃ©: En variabel, som er erklÃ¦ret i starten af en
 funktion, er lokal - den er kun synlig i funktionen. Hvis man
-angiver, at den skal være static, så anbringes den fysisk i en
-datasektion, som eksisterer i hele programmets køretid. Men den
+angiver, at den skal vÃ¦re static, sÃ¥ anbringes den fysisk i en
+datasektion, som eksisterer i hele programmets kÃ¸retid. Men den
 er stadig kun synlig i funktionen, hvori den er defineret.
 </para>
 
 <para>
-Så hvad nu hvis man anvender det reserverede ord <literal>
+SÃ¥ hvad nu hvis man anvender det reserverede ord <literal>
 static </literal> <emphasis>udenfor</emphasis> funktionerne,
-altså lige som eksterne objekter? Jo, så bliver variablens
-synlighed indskrænket - ikke til en funktion, vi er jo udenfor
-funktionerne - men til den fil, hvori den er erklæret.
+altsÃ¥ lige som eksterne objekter? Jo, sÃ¥ bliver variablens
+synlighed indskrÃ¦nket - ikke til en funktion, vi er jo udenfor
+funktionerne - men til den fil, hvori den er erklÃ¦ret.
 </para>
 
 <para>
 En af de lidt morsomme ting i C sprogets anvendelse af ordene er,
 at ordet <emphasis>static</emphasis> derved kommer til at
 betyde, at en variabel er "privat" for det modul, hvori den er
-erklæret!
+erklÃ¦ret!
 </para>
 
 <indexterm><primary>static, betydning privat</primary></indexterm>
@@ -1774,75 +1774,75 @@ erklæret!
 
 <para>
 Den oprindelige betydning af specifikationen "static" er
-selvfølgelig, at variablen skal være statisk. Den skal anbringes
+selvfÃ¸lgelig, at variablen skal vÃ¦re statisk. Den skal anbringes
 i sektionen for globale data, statiske data. De kalde statiske,
-fordi de eksisterer hele tiden, så længe programmet kører. Men
-for at give programmøren en hjælpende hånd med at kontrollere,
-hvor den pågældende variabel kan være blevet ændret (hvis der af
-en eller anden grund skulle opstå fejl i programmet?) så kan
-synligheden af statiske variable på denne måde begrænses.
+fordi de eksisterer hele tiden, sÃ¥ lÃ¦nge programmet kÃ¸rer. Men
+for at give programmÃ¸ren en hjÃ¦lpende hÃ¥nd med at kontrollere,
+hvor den pÃ¥gÃ¦ldende variabel kan vÃ¦re blevet Ã¦ndret (hvis der af
+en eller anden grund skulle opstÃ¥ fejl i programmet?) sÃ¥ kan
+synligheden af statiske variable pÃ¥ denne mÃ¥de begrÃ¦nses.
 </para>
 
 <para>
-Static variabel erklæret inde i en funktion = scope i funktionen,
+Static variabel erklÃ¦ret inde i en funktion = scope i funktionen,
 static inde i et modul = scope i modulet.
 </para>
 
 <para>
-Et modul kaldes i syntaksbeskrivelser en oversættelsesenhed
-(eng. translation unit) og består af en eller flere filer (include
-filer) som oversættes til et objekt-modul.
+Et modul kaldes i syntaksbeskrivelser en oversÃ¦ttelsesenhed
+(eng. translation unit) og bestÃ¥r af en eller flere filer (include
+filer) som oversÃ¦ttes til et objekt-modul.
 </para>
 
 <para>
 Variablen i eksemplet ovenfor, sidenummer, kan kun bruges inde i
 funktionen headerlinje(), men den husker alligevel nummeret fra
-gang til gang, når funktionen bliver kaldt.
+gang til gang, nÃ¥r funktionen bliver kaldt.
 </para>
 
 <para>
 Hvis en funktion som for eksempel strftime(3) gerne vil aflevere en text
-string med datoen formateret efter callers behov, så er det også
-nødvendigt at returnere i en buffer, som ligger UDEN for
+string med datoen formateret efter callers behov, sÃ¥ er det ogsÃ¥
+nÃ¸dvendigt at returnere i en buffer, som ligger UDEN for
 funktionen.
 </para>
 
 <para>
-Man kunne somme tider ønske sig, at ordet static blev erstattet
-af "modul-specifik" eller "privat". Det kan man jo bare gøre
-selv ved hjælp af #define. I så fald skal man lige huske, at
-private er et reserveret ord i C++. Man kunne måske i stedet
+Man kunne somme tider Ã¸nske sig, at ordet static blev erstattet
+af "modul-specifik" eller "privat". Det kan man jo bare gÃ¸re
+selv ved hjÃ¦lp af #define. I sÃ¥ fald skal man lige huske, at
+private er et reserveret ord i C++. Man kunne mÃ¥ske i stedet
 anvende "privat" (uden 'e' til sidst!) eller, bedre, et ord som
-"hidden" eller ... "local"? SÅ ville der rigtig være rod i
-semantikken! Problemet er nævnt i forbindelse med revision af C
+"hidden" eller ... "local"? SÃ… ville der rigtig vÃ¦re rod i
+semantikken! Problemet er nÃ¦vnt i forbindelse med revision af C
 som basis for C++, men som sagt finder private anvendelse i C++ ,
-og det er på en lidt anden måde.
+og det er pÃ¥ en lidt anden mÃ¥de.
 </para>
 
 <para>
-Husk at et C program består af eksterne objekter, som kan være
+Husk at et C program bestÃ¥r af eksterne objekter, som kan vÃ¦re
 enten funktioner eller variable.
 </para>
 
 </sect2>
 
 <sect2 id="c-kontrolvariable">
-<title>Kontrolvariable for løkker eller loops</title>
+<title>Kontrolvariable for lÃ¸kker eller loops</title>
 
 <para>
-Det fremhæves somme tider, at C++ er særlig smart fordi man kan
-erklære variable der, hvor man har brug for dem. Det er sandelig
-også en god ting. Man har dog for nylig indført nogle
-forbedringer (læs rettelser) således at en kontrol-loop variabel,
-som erklæres i for eksempel en for-løkke, går ud af scope ved afslutningen
-af den blok, som styres af for løkken. Ellers kunne der nemt
-opstå noget rod.
+Det fremhÃ¦ves somme tider, at C++ er sÃ¦rlig smart fordi man kan
+erklÃ¦re variable der, hvor man har brug for dem. Det er sandelig
+ogsÃ¥ en god ting. Man har dog for nylig indfÃ¸rt nogle
+forbedringer (lÃ¦s rettelser) sÃ¥ledes at en kontrol-loop variabel,
+som erklÃ¦res i for eksempel en for-lÃ¸kke, gÃ¥r ud af scope ved afslutningen
+af den blok, som styres af for lÃ¸kken. Ellers kunne der nemt
+opstÃ¥ noget rod.
 </para>
 
 <para>
-Denne fejlkilde er elimineret i C ved at man kan erklære variable
-i enhver blok (hver gang man skriver en krøllet parentes start,
-brace start), og denne variabels scope går så indtil blokkens
+Denne fejlkilde er elimineret i C ved at man kan erklÃ¦re variable
+i enhver blok (hver gang man skriver en krÃ¸llet parentes start,
+brace start), og denne variabels scope gÃ¥r sÃ¥ indtil blokkens
 slutning. Nemt og logisk. Denne facilitet anvendes alt for lidt!
 </para>
 
@@ -1863,19 +1863,19 @@ int main(int argc, char *argv[])
     {
         int jj = 0;              /* jj bliver oprettet */
         while(jj++ &lt; 10)
-            printf("For %d. gang: Ih hvor vi kører\n", jj);
+            printf("For %d. gang: Ih hvor vi kÃ¸rer\n", jj);
     }
                                  /* nu er jj nedlagt "automatisk" */
-    printf("Program %s exiter graciøst!\n", thisprog);
+    printf("Program %s exiter graciÃ¸st!\n", thisprog);
     return 0;
 }
 </programlisting>
 </example>
 
 <para>
-For at tillade oversætteren at optimere kan det forekomme, at
+For at tillade oversÃ¦tteren at optimere kan det forekomme, at
 interne blokkes auto-variable faktisk oprettes samtidig med at
-funktionens stack-frame sættes. Således gør gcc.
+funktionens stack-frame sÃ¦ttes. SÃ¥ledes gÃ¸r gcc.
 </para>
 </sect2>
 
@@ -1883,17 +1883,17 @@ funktionens stack-frame sættes. Således gør gcc.
 <title>Flygtige ukontrollerede variable</title>
 
 <para>
-En speciel variabel klassifikation er nødvendig for programmer,
+En speciel variabel klassifikation er nÃ¸dvendig for programmer,
 som deler memory med andre processer eller threads. Her anvendes
-nøgleordet <emphasis>volatile</emphasis>. En variabel, som er
-volatile, vil ikke blive optimeret væk, d.v.s. at når programmet
-skal benytte variabelens værdi, vil der blive foretaget en
-læsning, og en eventuel gammel værdi i et CPU register vil blive
+nÃ¸gleordet <emphasis>volatile</emphasis>. En variabel, som er
+volatile, vil ikke blive optimeret vÃ¦k, d.v.s. at nÃ¥r programmet
+skal benytte variabelens vÃ¦rdi, vil der blive foretaget en
+lÃ¦sning, og en eventuel gammel vÃ¦rdi i et CPU register vil blive
 kasseret.
 </para>
 
 <para>
-Volatile specifikationen anvendes også på maskiner, som ikke har
+Volatile specifikationen anvendes ogsÃ¥ pÃ¥ maskiner, som ikke har
 et separat IO space men benytter en del af RAM som IO-porte.
 </para>
 </sect2>
@@ -1909,18 +1909,18 @@ Oversigt over anvendelsen af static:
 
 <listitem>
 <para>
-En variabel erklæret uden for funktioner er en global variabel.
+En variabel erklÃ¦ret uden for funktioner er en global variabel.
 Det er egentlig det samme som at sige, at den er statisk, den
-bliver stående som den er, gennem hele programmets levetid, 
-på linje med funktionsobjekter.
+bliver stÃ¥ende som den er, gennem hele programmets levetid, 
+pÃ¥ linje med funktionsobjekter.
 </para>
 </listitem>
 
 <listitem>
 <para>
-En variabel erklæret udenfor funktioner får, hvis den er
+En variabel erklÃ¦ret udenfor funktioner fÃ¥r, hvis den er
 initialiseret, plads i "data" sektionen, og i "bss" sektionen,
-hvis den ikke er initialiseret. I så fald kan man regne med, at
+hvis den ikke er initialiseret. I sÃ¥ fald kan man regne med, at
 den er nulstillet.
 </para>
 </listitem>
@@ -1928,60 +1928,60 @@ den er nulstillet.
 <listitem>
 <para>
 static for external object: specifikation af, at variablen
-<emphasis> kun </emphasis> skal være synlig i det oversættelses
+<emphasis> kun </emphasis> skal vÃ¦re synlig i det oversÃ¦ttelses
 modul (translation unit) hvori den forekommer.
 </para>
 </listitem>
 <listitem>
 <para>
 static for variabel i en funktion (kaldes lokal static) betyder,
-at den kun er synlig i den funktion, hvori den er erklæret.
+at den kun er synlig i den funktion, hvori den er erklÃ¦ret.
 </para>
 </listitem>
 
 </itemizedlist>
 
 <para>
-Her er en præcisering af, hvordan man kan definere
+Her er en prÃ¦cisering af, hvordan man kan definere
 forskellige slags lokale variable.
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
 <para>
-Uden storage spec: En lokal variabel allokeres på
-funktionsstakken. Skal initialiseres hver gang funktionen køres.
+Uden storage spec: En lokal variabel allokeres pÃ¥
+funktionsstakken. Skal initialiseres hver gang funktionen kÃ¸res.
 </para>
 </listitem>
 <listitem>
 <para>
-reserveret ord auto: overflødigt, samme som ovenfor.
+reserveret ord auto: overflÃ¸digt, samme som ovenfor.
 </para>
 </listitem>
 <listitem>
 <para>
-reserveret ord register: Oversætteren vil, hvis det er muligt, anbringe
+reserveret ord register: OversÃ¦tteren vil, hvis det er muligt, anbringe
 denne variabel i et af maskinens hurtige registre. Man kan ikke
-tage adressen på en registervariabel.
+tage adressen pÃ¥ en registervariabel.
 </para>
 </listitem>
 <listitem>
 <para>
 reserveret ord extern: Variablen er defineret et andet sted,
-normalt i en anden oversættelses enhed.
+normalt i en anden oversÃ¦ttelses enhed.
 </para>
 </listitem>
 <listitem>
 <para>
 reserveret ord static: Variablen anbringes i regionen for
 statiske variable. Den er kun synlig i den blok, gerne en
-funktionsblok, hvori den er deklareret. (Den er selvfølgelig også
-synlig i den oversættelses enhed, hvori den er defineret!)
+funktionsblok, hvori den er deklareret. (Den er selvfÃ¸lgelig ogsÃ¥
+synlig i den oversÃ¦ttelses enhed, hvori den er defineret!)
 </para>
 </listitem>
 <listitem>
 <para>
-En lokal variabel behøver ikke at blive defineret øverst i
+En lokal variabel behÃ¸ver ikke at blive defineret Ã¸verst i
 funktionens yderste blok. Man kan definere nye lokale variable,
 hver gang man skriver en start-brace (klamme).
 </para>
@@ -1996,83 +1996,83 @@ hver gang man skriver en start-brace (klamme).
 
 
 <sect1 id="sect-GNU-tools">
-<title>GNU programmerings værktøjer</title>
+<title>GNU programmerings vÃ¦rktÃ¸jer</title>
 
 <para>
-GNU står for Gnu is Not Unix. Det skyldes, at man ikke må bruge
+GNU stÃ¥r for Gnu is Not Unix. Det skyldes, at man ikke mÃ¥ bruge
 navnet Unix uden at betale for det, det var et registreret
-varemærke i 80'erne, da <ulink url="http://www.gnu.org">
+varemÃ¦rke i 80'erne, da <ulink url="http://www.gnu.org">
 Richard M. Stallman </ulink> begyndte arbejdet med
 open source tools.
 </para>
 
 <para>
-Heldigvis er Unix i vore dage ikke mere et varemærke, men en
+Heldigvis er Unix i vore dage ikke mere et varemÃ¦rke, men en
 betegnelse for et operativ system, som overholder standarder. Se
 <ulink url="http://www.opengroup.org">www.opengroup.org</ulink>
 </para>
 
 <para>
-De vigtigste værktøjer er: Compileren, gcc, assembleren as eller
+De vigtigste vÃ¦rktÃ¸jer er: Compileren, gcc, assembleren as eller
 gas, linkeren ld, og object librarian ar. Med disse programmer
 kan man bygge en programfil.
 </para>
 
 <para>
-Til at inspicere indholdet af programfiler og objektfiler, også
-kaldet dot-o filer, kan man benytte objdump.  Det kan også
+Til at inspicere indholdet af programfiler og objektfiler, ogsÃ¥
+kaldet dot-o filer, kan man benytte objdump.  Det kan ogsÃ¥
 disassemblere maskininstruktioner i objektmoduler.
 </para>
 
 <para>
 Desuden er der den Gnu debuggeren, gdb. Der er adskillige
-klikbare interfaces til gnu-værktøjerne. Begynd med xxgdb og
-fortsæt med gide, Gnome Integrated Development Interface, og slut
-med de store, forkromede værktøjer sourcenavigator og kdevelop,
-alle sammen meget udmærkede, men tidrøvende. Skal jeg fremhæve
-nogen på andres bekostning må jeg indrømme, at indpakning og
+klikbare interfaces til gnu-vÃ¦rktÃ¸jerne. Begynd med xxgdb og
+fortsÃ¦t med gide, Gnome Integrated Development Interface, og slut
+med de store, forkromede vÃ¦rktÃ¸jer sourcenavigator og kdevelop,
+alle sammen meget udmÃ¦rkede, men tidrÃ¸vende. Skal jeg fremhÃ¦ve
+nogen pÃ¥ andres bekostning mÃ¥ jeg indrÃ¸mme, at indpakning og
 configure, make og make install af source navigator har imponeret
-mig. Det fungerede for mig på 2 (forskellige) RedHat platforme
+mig. Det fungerede for mig pÃ¥ 2 (forskellige) RedHat platforme
 uden problemer.
 </para>
 
 <para>
-Ud over klik-interfaces har man specielt meget glæde af
+Ud over klik-interfaces har man specielt meget glÃ¦de af
 <command> indent, </command> et program, som kan foretage
-formatering af en C kildetekst. Det er desværre ikke i stand
-til at håndtere alle syntakskonstruktioner på lige god måde, men
-har man en større mængde filer, som skal gennemarbejdes, er
+formatering af en C kildetekst. Det er desvÃ¦rre ikke i stand
+til at hÃ¥ndtere alle syntakskonstruktioner pÃ¥ lige god mÃ¥de, men
+har man en stÃ¸rre mÃ¦ngde filer, som skal gennemarbejdes, er
 indent meget nyttigt. Kan man ikke lide de tabulatortegn, der er
 i en fil, kan man fjerne dem (anbefales!) med <command> expand
 </command>.
 </para>
 
 <para>
-Indent og expand og mange andre programmer kan med fordel køres
-som filtre på den tekst - eller dele af den tekst - som man har i
-editoren. Dette tillader vi og vist nok også Gnu Emacs. Se i
-øvrigt <ulink url="http://&linuxbogurl;/"> Friheden til at
-vælge applikationer. </ulink>
+Indent og expand og mange andre programmer kan med fordel kÃ¸res
+som filtre pÃ¥ den tekst - eller dele af den tekst - som man har i
+editoren. Dette tillader vi og vist nok ogsÃ¥ Gnu Emacs. Se i
+Ã¸vrigt <ulink url="http://&linuxbogurl;/"> Friheden til at
+vÃ¦lge applikationer. </ulink>
 </para>
 
 <para>
-Nævnes skal også <command> gvim </command>, den forbedrede
-editor, vi-improved, som med sit system-interface, hjælpesystem,
-syntaksfremhævning, muse-interface og ortogonale
-kommandostruktur ender med at være mange programmørers favoriteditor.
+NÃ¦vnes skal ogsÃ¥ <command> gvim </command>, den forbedrede
+editor, vi-improved, som med sit system-interface, hjÃ¦lpesystem,
+syntaksfremhÃ¦vning, muse-interface og ortogonale
+kommandostruktur ender med at vÃ¦re mange programmÃ¸rers favoriteditor.
 Der er dog flere, som benytter Gnu Emacs, Richard
-Stallmans bud på, hvordan en editor skal konstrueres. Den har
-features, som gvim ikke har, først og fremmest sammenligning og
-opdatering af to næsten ens filer. Man kan nemt finde
-kommandoerne til Emacs i menusystemet, og farver m.v. kan sættes
-(ligesom for andre programmer) i $HOME/.Xdefaults. Jeg nævner det
+Stallmans bud pÃ¥, hvordan en editor skal konstrueres. Den har
+features, som gvim ikke har, fÃ¸rst og fremmest sammenligning og
+opdatering af to nÃ¦sten ens filer. Man kan nemt finde
+kommandoerne til Emacs i menusystemet, og farver m.v. kan sÃ¦ttes
+(ligesom for andre programmer) i $HOME/.Xdefaults. Jeg nÃ¦vner det
 her, fordi den RedHat valgte farve kombination ser frygtelig
 dyster ud. Begge editorer har en tutorial, som guider begynderen
 igennem de vigtigste operationer.
 </para>
 
 <para>
-Dette afsnit er lige nu meget kort og ikke færdigt!
+Dette afsnit er lige nu meget kort og ikke fÃ¦rdigt!
 De vigtigste options til GNU-C compileren er:
 </para>
 
@@ -2081,33 +2081,33 @@ De vigtigste options til GNU-C compileren er:
 
 <programlisting> <!--TODO: Formatering -->
 -c              compile kun, skriver en &lt;navn>.o fil (dot-o fil, .o)
--d              output list af define, forudsætter -E
+-d              output list af define, forudsÃ¦tter -E
 -g              inkluder debug information i resultat fil
 -pedantic       check code after ANSI C code check spec-s.
 -save-temps     save intermediate files, ufn.i ufn.s (hvorfor ikke ufn.o?)
 -o xxx          send output til fil ved navn xxx. Hvis xxx ender
-                   på .o, vil compileren *kun* gå til det step,
+                   pÃ¥ .o, vil compileren *kun* gÃ¥ til det step,
                    der generer .o filer.
 
 -s              strip efter linkage 
 -v              verbose, vis kommandoer fra gcc "administrator" program.
 
--I xxxx         path til ekstra include directory, vil blive søgt først.
--I-             Path(s) specificeret før denne option søges kun
+-I xxxx         path til ekstra include directory, vil blive sÃ¸gt fÃ¸rst.
+-I-             Path(s) specificeret fÃ¸r denne option sÃ¸ges kun
                 for "xxx" files i double quotes. Der er meget mere om
                 -I option(s) in cpp.1 and cpp.doc
 
 -E              send preproces output til ?
 -MM             skriv MAKE regler for hvordan program er opbygget, bevirker,
-                   at også -E switchen bliver sat.
+                   at ogsÃ¥ -E switchen bliver sat.
 -N? stack_check?
 
--O              Optimer. Skriver bedre kode, men pas på, kan ændre sekvens.
--P              Præproces uden linjer m/# info
+-O              Optimer. Skriver bedre kode, men pas pÃ¥, kan Ã¦ndre sekvens.
+-P              PrÃ¦proces uden linjer m/# info
 -C              Lad kommentarer komme med
 -trigraphs      Process ANSI standard trigraph sequences
 
--D"str"         Definér macro eller hvad du nu vil definere.
+-D"str"         DefinÃ©r macro eller hvad du nu vil definere.
 -u"str"         AF-definer en macro! (d.v.s. annuller virkningen
                    af en #define)
 
@@ -2121,7 +2121,7 @@ De vigtigste options til GNU-C compileren er:
 <sect2 id="c-objdump-eksempler">
 <title>objdump eksempler</title>
 <para>
-Her kommer eksempler på objdump anvendelse.
+Her kommer eksempler pÃ¥ objdump anvendelse.
 </para>
 </sect2>
 

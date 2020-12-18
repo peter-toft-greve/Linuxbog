@@ -1,4 +1,4 @@
-// Oversættelse:
+// OversÃ¦ttelse:
 // af Peter Stubbe <stubbe@bitnisse.dk>
 // $Id$
 

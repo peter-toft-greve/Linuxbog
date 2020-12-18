@@ -1,25 +1,25 @@
 <chapter id="Kalender">
-<title>Planlægningsprogrammer</title>
+<title>PlanlÃ¦gningsprogrammer</title>
 <para>
 </para>
 <sect1 id="whatis-pp">
 <title>Hvad findes der til Linux</title>
 <para>
-Forskelle og ligheder med proprietær software.
+Forskelle og ligheder med proprietÃ¦r software.
 </para>
 </sect1>
 
 <sect1 id="economi-pp">
-<title>Økonomi</title>
+<title>Ã˜konomi</title>
 <para>
-Økonomiske konsekvenser.
+Ã˜konomiske konsekvenser.
 </para>
 </sect1>
 
 <sect1 id="security-pp">
 <title>Sikkerhedsproblematikken</title>
 <para>
-Er det sikrere end proprietært software
+Er det sikrere end proprietÃ¦rt software
 </para>
 </sect1>
 

@@ -3,68 +3,68 @@
 
 
 <para>
-Dette er en guide, som kan hjælpe dig hurtigt igang med Dappix 3.3 version 
-2003-10-23, et gratis alternativ til Microsoft Windows®. 
+Dette er en guide, som kan hjÃ¦lpe dig hurtigt igang med Dappix 3.3 version 
+2003-10-23, et gratis alternativ til Microsoft WindowsÂ®. 
 </para>
 
 
 <figure id="IntroDappix1-fig" float="1">
-<title>Dappix' brugergrænseflade</title>
+<title>Dappix' brugergrÃ¦nseflade</title>
 <graphic fileref="IntroDappix1.&magic;" scale="30"></graphic>
 </figure>
 
 <figure id="IntroDappix2-fig" float="1">
-<title>Dappix' brugergrænseflade</title>
+<title>Dappix' brugergrÃ¦nseflade</title>
 <graphic fileref="IntroDappix2.&magic;" scale="30"></graphic>
 </figure>
 
 <figure id="IntroDappix3-fig" float="1">
-<title>Dappix' brugergrænseflade</title>
+<title>Dappix' brugergrÃ¦nseflade</title>
 <graphic fileref="IntroDappix3.&magic;" scale="30"></graphic>
 </figure>
 
 <para>
 Dappix 3.3 er en dansk udgave af Knoppix Linux 3.3. Cd'en indeholder alt, 
-hvad der skal til for at køre tekstbehandling, regneark, forbinde sig til 
-internet og faktisk en del flere muligheder end du ser på en standard 
-Microsoft Windows®-installation. 
+hvad der skal til for at kÃ¸re tekstbehandling, regneark, forbinde sig til 
+internet og faktisk en del flere muligheder end du ser pÃ¥ en standard 
+Microsoft WindowsÂ®-installation. 
 </para>
 
 <para>
-Dette dokument er skrevet 100% ved hjælp af Dappix 3.3 version 2003-10-23, 
+Dette dokument er skrevet 100% ved hjÃ¦lp af Dappix 3.3 version 2003-10-23, 
 hentet fra http://tyge.sslug.dk/knoppix.  Tekstbehandlingssystemet er 
-OpenOffice.org 1.0.3, og skærmbillederne er taget med skærm-indfangeren KSnapshot.  
+OpenOffice.org 1.0.3, og skÃ¦rmbillederne er taget med skÃ¦rm-indfangeren KSnapshot.  
 </para>
 
 <para>
-Du sidder nok med en Dappix-cd, som du måske har fået af en blankøjet Linux-nørd.  
-Vedkommende har sandsynligvis også bildt dig ind, at du kan komme op at køre med 
-Linux på din pc på under 2 timer, og at du bagefter ikke vil savne Microsoft Windows®.
+Du sidder nok med en Dappix-cd, som du mÃ¥ske har fÃ¥et af en blankÃ¸jet Linux-nÃ¸rd.  
+Vedkommende har sandsynligvis ogsÃ¥ bildt dig ind, at du kan komme op at kÃ¸re med 
+Linux pÃ¥ din pc pÃ¥ under 2 timer, og at du bagefter ikke vil savne Microsoft WindowsÂ®.
 </para>
 
 <para>
-Nu får vi så at se, om han har ret...
+Nu fÃ¥r vi sÃ¥ at se, om han har ret...
 </para>
 
 <para>
-En anden vigtig forudsætning er, at du har en pc med cd-rom, printer, mus og 
-tastatur. Den behøver ikke være helt ny, men det er bedst, hvis den ikke er 
-meget mere end tre år gammel.
+En anden vigtig forudsÃ¦tning er, at du har en pc med cd-rom, printer, mus og 
+tastatur. Den behÃ¸ver ikke vÃ¦re helt ny, men det er bedst, hvis den ikke er 
+meget mere end tre Ã¥r gammel.
 </para>
 
 <sect1 id="dappix-cd">
 <title>Start Dappix fra cd'en</title>
 
 <para>
-Nu vil vi starte Dappix Linux op uden at installere noget på harddisken, 
-som en slags 'prøvetur i bilen'. Dette kan man ikke gøre med Microsoft Windows®!
+Nu vil vi starte Dappix Linux op uden at installere noget pÃ¥ harddisken, 
+som en slags 'prÃ¸vetur i bilen'. Dette kan man ikke gÃ¸re med Microsoft WindowsÂ®!
 </para>
 
 
 <orderedlist>
 <listitem>
  <para>
-Du starter din pc ved at tænde for den. 
+Du starter din pc ved at tÃ¦nde for den. 
  </para>
 </listitem>
 <listitem> 
@@ -74,12 +74,12 @@ Du skal proppe Dappix-cd'en i cd-skuffen og lukke for den igen.
 </listitem>
 <listitem> 
  <para>
-Så skal du genstarte maskinen - tryk på pc'ens genstart-knap 
-eller sluk og tænd igen.
+SÃ¥ skal du genstarte maskinen - tryk pÃ¥ pc'ens genstart-knap 
+eller sluk og tÃ¦nd igen.
  </para>
 
 <para>
-Sagen er at Dappix-cd'en skal ligge i maskinen, når du starter den, så hvis du 
+Sagen er at Dappix-cd'en skal ligge i maskinen, nÃ¥r du starter den, sÃ¥ hvis du 
 allerede havde cd'en i maskinen, kunne du have sprunget punkt 1 til 3 over.
 </para>
 
@@ -87,32 +87,32 @@ allerede havde cd'en i maskinen, kunne du have sprunget punkt 1 til 3 over.
 
 <listitem>
 <para>
-Når pc'en starter skal du trykke på den knap, der får BIOS-opstartsmenuen frem. 
-På min maskine er det F12, men det varierer meget fra pc til pc. Som regel står 
-det på skærmen under opstart, hvilken knap man skal trykke på. 
+NÃ¥r pc'en starter skal du trykke pÃ¥ den knap, der fÃ¥r BIOS-opstartsmenuen frem. 
+PÃ¥ min maskine er det F12, men det varierer meget fra pc til pc. Som regel stÃ¥r 
+det pÃ¥ skÃ¦rmen under opstart, hvilken knap man skal trykke pÃ¥. 
 </para>
 </listitem>
 
 <listitem>
 
 <para>
-I pc'ens opstartsmenu skal man vælge at starte pc'en op direkte fra 
-cd-drevet. Det kan man også, hvis man går ind i BIOS-opsætningen, men så bliver 
-indstillingen permanent. Hvis du ikke kan finde ud af, hvordan man gør dette, 
-skal du spørge en pc-kyndig. Måske ham der solgte dig maskinen.
+I pc'ens opstartsmenu skal man vÃ¦lge at starte pc'en op direkte fra 
+cd-drevet. Det kan man ogsÃ¥, hvis man gÃ¥r ind i BIOS-opsÃ¦tningen, men sÃ¥ bliver 
+indstillingen permanent. Hvis du ikke kan finde ud af, hvordan man gÃ¸r dette, 
+skal du spÃ¸rge en pc-kyndig. MÃ¥ske ham der solgte dig maskinen.
 </para>
 </listitem>
 
 <listitem>
 
 <para>
-Nu starter maskinen op, og man ser opstartsbilledet her, eller måske blot de 
+Nu starter maskinen op, og man ser opstartsbilledet her, eller mÃ¥ske blot de 
 tre nederste linjer af billedet.
-Her trykker man blot på returtasten (linjeskift), og Dappix starter op. 
-Du vil se en masse tekst ryge hen over skærmen, mens Dappix finder ud af, 
+Her trykker man blot pÃ¥ returtasten (linjeskift), og Dappix starter op. 
+Du vil se en masse tekst ryge hen over skÃ¦rmen, mens Dappix finder ud af, 
 hvordan din maskine er sat sammen.
-På visse gamle maskiner kan man godt blive udsat for at skulle svare på nogle 
-spørgsmål om skærmopsætningen. Her kan man blot trykke på retur (linjeskift) 
+PÃ¥ visse gamle maskiner kan man godt blive udsat for at skulle svare pÃ¥ nogle 
+spÃ¸rgsmÃ¥l om skÃ¦rmopsÃ¦tningen. Her kan man blot trykke pÃ¥ retur (linjeskift) 
 eller mellemrumstasten.
 </para>
 
@@ -127,7 +127,7 @@ eller mellemrumstasten.
 
 
 <para>
-Der går fra 1 til 3 minutter afhængig af, hvor gammel din maskine er, så har du 
+Der gÃ¥r fra 1 til 3 minutter afhÃ¦ngig af, hvor gammel din maskine er, sÃ¥ har du 
 Dappix-skrivebordet klar. Det ser nogenlunde ud som billedet her.
 </para>
 
@@ -138,10 +138,10 @@ Dappix-skrivebordet klar. Det ser nogenlunde ud som billedet her.
 </figure>
 
 <para>
-Hvis du er vant til Microsoft Windows®, finder du blandt andet ud af, at 
-startknappen er udskiftet med en K-knap og at starte programmer på skrivebordet 
+Hvis du er vant til Microsoft WindowsÂ®, finder du blandt andet ud af, at 
+startknappen er udskiftet med en K-knap og at starte programmer pÃ¥ skrivebordet 
 ikke dobbeltklikker, men blot klikker en enkelt gang.
-Ellers gælder de fleste genveje fra Microsoft Windows® stadig under Dappix - 
+Ellers gÃ¦lder de fleste genveje fra Microsoft WindowsÂ® stadig under Dappix - 
 fx ALT-F4 for at lukke programmer.  
 </para>
 </listitem>
@@ -155,36 +155,36 @@ fx ALT-F4 for at lukke programmer.
 <title>Skrivebordet</title>
 
 <para>
-Du får hurtigt brug for at ændre dit skrivebord, så det passer til dine ønsker. 
-Indstillingerne forsvinder dog, når du slukker for maskinen medmindre du har 
-oprettet en permanent hjemmemappe. Hvordan dette gøres beskrives på senere.
+Du fÃ¥r hurtigt brug for at Ã¦ndre dit skrivebord, sÃ¥ det passer til dine Ã¸nsker. 
+Indstillingerne forsvinder dog, nÃ¥r du slukker for maskinen medmindre du har 
+oprettet en permanent hjemmemappe. Hvordan dette gÃ¸res beskrives pÃ¥ senere.
 </para>
 
 
 
 <para>
-For at indstille skrivebordet kan du gøre følgende: 
+For at indstille skrivebordet kan du gÃ¸re fÃ¸lgende: 
 </para>
 
 <orderedlist>
 <listitem>
  <para>
-Generel opsætning: 
+Generel opsÃ¦tning: 
 </para>
 <para>
-Klik K-&gt;Opsætning-&gt;Guide til opsætning af skrivebordet. 
-Dette vil guide dig igennem en simpel procedure for opsætning af 
+Klik K-&gt;OpsÃ¦tning-&gt;Guide til opsÃ¦tning af skrivebordet. 
+Dette vil guide dig igennem en simpel procedure for opsÃ¦tning af 
 skrivebordet.
 </para>
 
 </listitem>
 <listitem> 
 <para>
-Indstilling af programpanelet - den nederste bjælke med mest anvendte programmer:
+Indstilling af programpanelet - den nederste bjÃ¦lke med mest anvendte programmer:
 </para>
 
 <para>
-Højreklik-&gt;K-&gt;PanelMenu. Her kan du sætte justere knapperne, så de passer dig.
+HÃ¸jreklik-&gt;K-&gt;PanelMenu. Her kan du sÃ¦tte justere knapperne, sÃ¥ de passer dig.
 </para>
 </listitem>
 </orderedlist>
@@ -195,8 +195,8 @@ Stifinder
 </title>
 
 <para>
-Til at finde rundt i filerne på harddisken findes Konqueror. 
-Konqueror startes ved at klikke på huset i panelet i bunden af skrivebordet.
+Til at finde rundt i filerne pÃ¥ harddisken findes Konqueror. 
+Konqueror startes ved at klikke pÃ¥ huset i panelet i bunden af skrivebordet.
 </para>
 
 
@@ -206,31 +206,31 @@ Konqueror startes ved at klikke på huset i panelet i bunden af skrivebordet.
 </figure>
 
 <para>
-Du åbner på den måde hjemmemappen <filename>/home/knoppix</filename>. Her skal du kun gemme 
+Du Ã¥bner pÃ¥ den mÃ¥de hjemmemappen <filename>/home/knoppix</filename>. Her skal du kun gemme 
 filer, hvis du har oprettet en permanent hjemmemappe, som beskrives senere. 
-Ellers findes de ikke næste gang, du starter Dappix.
+Ellers findes de ikke nÃ¦ste gang, du starter Dappix.
 </para>
 
 <para>
-Hvis du vil tilgå filer på en harddisk, kan du blot klikke på harddisk 
-ikonet på skrivebordet som før beskrevet.
+Hvis du vil tilgÃ¥ filer pÃ¥ en harddisk, kan du blot klikke pÃ¥ harddisk 
+ikonet pÃ¥ skrivebordet som fÃ¸r beskrevet.
 </para>
 
 <para>
-Hvis du vil tilgå filer på en anden maskine i din arbejdsgruppe, så skriv 
+Hvis du vil tilgÃ¥ filer pÃ¥ en anden maskine i din arbejdsgruppe, sÃ¥ skriv 
 smb:/ i sted-feltet og klik dig frem. Brug eventuelt brugernavn og adgangskode, 
-hvis der spørges herom.
+hvis der spÃ¸rges herom.
 </para>
 
 <para>
-Omdøbning, flytning og kopiering af filer foregår på samme måde som i 
-Windows Stifinder:  Højreklik på filen og vælg det du vil foretage dig med filen 
+OmdÃ¸bning, flytning og kopiering af filer foregÃ¥r pÃ¥ samme mÃ¥de som i 
+Windows Stifinder:  HÃ¸jreklik pÃ¥ filen og vÃ¦lg det du vil foretage dig med filen 
 eller mappen.
 </para>
 
 <para>
-Træk-og-slip, CTRL-C (kopiér) og CTRL-V (indsæt) virker også, som man er 
-vant til fra Microsoft Windows®.
+TrÃ¦k-og-slip, CTRL-C (kopiÃ©r) og CTRL-V (indsÃ¦t) virker ogsÃ¥, som man er 
+vant til fra Microsoft WindowsÂ®.
 </para>
 </sect2>
 
@@ -239,12 +239,12 @@ vant til fra Microsoft Windows®.
 <title>Tekstbehandling</title>
 
 <para>
-Der er tre kontorpakker på Dappix: OpenOffice.org, Koffice og AbiWord. 
+Der er tre kontorpakker pÃ¥ Dappix: OpenOffice.org, Koffice og AbiWord. 
 Du finder kontorprogrammerne under K-&gt;Kontorprogrammer. 
 </para>
 
 <para>
-Her er OpenOffice.org nok den mest populære, men de tre systemer har hver deres fordele. 
+Her er OpenOffice.org nok den mest populÃ¦re, men de tre systemer har hver deres fordele. 
 </para>
 
 <figure id="DappixTB-fig" float="1">
@@ -253,10 +253,10 @@ Her er OpenOffice.org nok den mest populære, men de tre systemer har hver deres 
 </figure>
 
 <para>
-Tekstbehandleren OpenOffice.org Writer kan læse og skrive Microsoft Word®-filer og har 
+Tekstbehandleren OpenOffice.org Writer kan lÃ¦se og skrive Microsoft WordÂ®-filer og har 
 stavekontrol til dansk, engelsk, tysk, fransk, italiensk, spansk, norsk og svensk. 
-Det vil for eksempel sige, at du får understreget dine "foklert stauede or såm du ser" 
-på dette billede.
+Det vil for eksempel sige, at du fÃ¥r understreget dine "foklert stauede or sÃ¥m du ser" 
+pÃ¥ dette billede.
 </para>
 </sect2>
 
@@ -264,13 +264,13 @@ på dette billede.
 <title>Regneark</title>
 
 <para>
-Dappix indeholder også flere dansk-sprogede regnearksprogrammer: 
+Dappix indeholder ogsÃ¥ flere dansk-sprogede regnearksprogrammer: 
 OpenOffice.org Calc, Kspread og Gnumeric.
 </para>
 
 <para>
-Hvis du kender f.eks. Microsoft Excel®  vil du se, at disse gratis løsninger er lige 
-så lettilgængelige og brugervenlige.
+Hvis du kender f.eks. Microsoft ExcelÂ®  vil du se, at disse gratis lÃ¸sninger er lige 
+sÃ¥ lettilgÃ¦ngelige og brugervenlige.
 </para>
 
 <para>
@@ -290,18 +290,18 @@ Her kan du for eksempel opstille dit IT-budget med OpenOffice.org Calc.
 <title>Internet</title>
 
 <para>
-Hvis du sidder i et lokalnetværk, så hopper Dappix måske automatisk på nettet! 
-Ellers findes netværksopsætning under K-&gt;KNOPPIX-&gt;Network/Internet.   
+Hvis du sidder i et lokalnetvÃ¦rk, sÃ¥ hopper Dappix mÃ¥ske automatisk pÃ¥ nettet! 
+Ellers findes netvÃ¦rksopsÃ¦tning under K-&gt;KNOPPIX-&gt;Network/Internet.   
 </para>
 
 <para>
-Når du så er på, har du den dansksprogede internetbrowser Mozilla ved 
+NÃ¥r du sÃ¥ er pÃ¥, har du den dansksprogede internetbrowser Mozilla ved 
 M-ikonet i programpanelet og den anden browser Konqueror ved siden af 
 med globus-ikonet.
 </para>
 
 <para>
-Her ser du hjemmesiden for Linux-brugergruppen Skåne Sjælland Linux User 
+Her ser du hjemmesiden for Linux-brugergruppen SkÃ¥ne SjÃ¦lland Linux User 
 Groups i Mozilla.
 </para>
 
@@ -317,9 +317,9 @@ Groups i Mozilla.
 <title>Elektronisk post</title>
 
 <para>
-E-post kan nemt tilgås med K-&gt;Internet-&gt;KMail eller med Mozillas 
-e-postklient. Der findes rigeligt med råd om både internet og opsætning af 
-e-post i bogen "Friheden til at vælge", som findes på Dappix-cd'en. 
+E-post kan nemt tilgÃ¥s med K-&gt;Internet-&gt;KMail eller med Mozillas 
+e-postklient. Der findes rigeligt med rÃ¥d om bÃ¥de internet og opsÃ¦tning af 
+e-post i bogen "Friheden til at vÃ¦lge", som findes pÃ¥ Dappix-cd'en. 
 <filename>file:///usr/share/doc/linuxbog-alle-html/html/email-med-kmail.html#kmail-til-kde</filename>
 </para>
 
@@ -344,7 +344,7 @@ K-&gt;Kontorprogrammer-&gt;Utilities.
 </para>
 
 <para>
-KOrganizer kan holde styr på alle dine gøremål og dine aftaler. 
+KOrganizer kan holde styr pÃ¥ alle dine gÃ¸remÃ¥l og dine aftaler. 
 </para>
 
 <figure id="DappixKalender-fig" float="1">
@@ -359,18 +359,18 @@ KOrganizer kan holde styr på alle dine gøremål og dine aftaler.
 <title>Undervisningsprogrammer</title>
 
 <para>
-Man finder en del spil og undervisningsprogrammer på Dappix - her nævnes 
+Man finder en del spil og undervisningsprogrammer pÃ¥ Dappix - her nÃ¦vnes 
 nogle af de vigtigste: 
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
 <para>
-TuxType, K-&gt;Spil-&gt;TuxType, er et rigtigt sjovt program til at lære 
-de mindste at skrive på et tastatur. 
+TuxType, K-&gt;Spil-&gt;TuxType, er et rigtigt sjovt program til at lÃ¦re 
+de mindste at skrive pÃ¥ et tastatur. 
 </para>
 <para>
-Det gælder om af finde bogstaverne på fiskene på tastaturet. så løber 
+Det gÃ¦lder om af finde bogstaverne pÃ¥ fiskene pÃ¥ tastaturet. sÃ¥ lÃ¸ber 
 pingvinen hen og spiser fisken.
 </para>
 
@@ -383,7 +383,7 @@ pingvinen hen og spiser fisken.
 <listitem> 
 <para>
 KTouch, K-&gt;Undervisningsprogrammer-&gt;Miscellaneous-&gt;KTouch , er et 
-program for de lidt større børn og voksne, der bruges til at forbedre 
+program for de lidt stÃ¸rre bÃ¸rn og voksne, der bruges til at forbedre 
 skrivehastighed med 10-fingersystemet.
 </para>
 
@@ -397,13 +397,13 @@ skrivehastighed med 10-fingersystemet.
 <listitem> 
 <para>
 KEduca, K-&gt;Undervisningsprogrammer-&gt;Tools-&gt;KEduca, bruges  til at 
-fremstille - og udføre - prøver ved hjælp af en pc (det som også kaldes et 
+fremstille - og udfÃ¸re - prÃ¸ver ved hjÃ¦lp af en pc (det som ogsÃ¥ kaldes et 
 'E-learning-program')
 </para>
 
 <para>
-Først fremstiller man prøven ved hjælp af den meget gode vejledning. 
-Dernæst sætter man eleverne til at udføre den.
+FÃ¸rst fremstiller man prÃ¸ven ved hjÃ¦lp af den meget gode vejledning. 
+DernÃ¦st sÃ¦tter man eleverne til at udfÃ¸re den.
 </para>
 
 <figure id="KEduca-fig" float="1">
@@ -415,7 +415,7 @@ Dernæst sætter man eleverne til at udføre den.
 <listitem> 
 <para>
 Solfege, K-&gt;Multimedia-&gt;Sound-&gt;GNU Solfege, er til at 
-træne musikalske ører med. 
+trÃ¦ne musikalske Ã¸rer med. 
 </para>
 
 <figure id="SolFege-fig" float="1">
@@ -424,17 +424,17 @@ træne musikalske ører med.
 </figure>
 
 <para>
-Man kan øve toner, takter og en masse andre ting.
+Man kan Ã¸ve toner, takter og en masse andre ting.
 </para>
 </listitem>
 <listitem> 
 <para>
 TuxPaint, K-&gt;Multimedia-&gt;Grafik-&gt;Tuxpaint, er et tegneprogram for 
-de små.
+de smÃ¥.
 </para>
 
 <para>
-Det er meget nemt at bruge for små børn.
+Det er meget nemt at bruge for smÃ¥ bÃ¸rn.
 </para>
 
 
@@ -472,7 +472,7 @@ tilfredstille den professionelle bruger.
 <listitem> 
 <para>
 KGeo, K-&gt;Undervisnings programmer-&gt;KGeo,  er et 
-geometri-træningsprogram for skolebørn.
+geometri-trÃ¦ningsprogram for skolebÃ¸rn.
 </para>
 
 
@@ -485,7 +485,7 @@ geometri-træningsprogram for skolebørn.
 <listitem>
 <para>
 CAD-program: Hvis du skal tegne tekniske tegninger for eksempel af en ny udestue eller
-højttaler, så kan 2D-CAD-programmet QCad benyttes, dog er det ikke er
+hÃ¸jttaler, sÃ¥ kan 2D-CAD-programmet QCad benyttes, dog er det ikke er
 oversat til dansk.  Findes ved K->Multimedia->Grafik->QCad.
 </para>
 
@@ -500,7 +500,7 @@ oversat til dansk.  Findes ved K->Multimedia->Grafik->QCad.
 
 <para>
 Til tegning af diagrammer som for eksempel flowchart, 
-netværk, elektriske og organisatoriske kan Dia bruges.
+netvÃ¦rk, elektriske og organisatoriske kan Dia bruges.
 Findes ved K->Multimedia->Grafik->Dia.
 </para>
 
@@ -518,19 +518,19 @@ Findes ved K->Multimedia->Grafik->Dia.
 
 <sect2 id="dappix-printer">
 <title>
-Printeropsætning
+PrinteropsÃ¦tning
 </title>
 
 <para>
 Du har sikkert brug for udskrive til en printer fra din pc. 
-Men først skal den sættes op med 
+Men fÃ¸rst skal den sÃ¦ttes op med 
 K-&gt;KNOPPIX-&gt;Configure-&gt;Configure Printers.
 </para>
 
 <para>
-Her klikkes blot på Tilføj Printer og du ledes gennem opsætningen. 
-Dette kræver en permanent hjemmemappe for at gemme opsætningen til næste 
-gang du bruger Dappix. Hvordan dette gøres forklares senere i artiklen.
+Her klikkes blot pÃ¥ TilfÃ¸j Printer og du ledes gennem opsÃ¦tningen. 
+Dette krÃ¦ver en permanent hjemmemappe for at gemme opsÃ¦tningen til nÃ¦ste 
+gang du bruger Dappix. Hvordan dette gÃ¸res forklares senere i artiklen.
 </para>
 </sect2>
 
@@ -540,9 +540,9 @@ Andre programmer
 </title>
 
 <para>
-Her nævnes blot et fåtal af resten af de programmer,
+Her nÃ¦vnes blot et fÃ¥tal af resten af de programmer,
  som endnu ikke er beskrevet i denne korte introduktion, 
-men som absolut bør prøves.
+men som absolut bÃ¸r prÃ¸ves.
 </para>
 
 
@@ -554,9 +554,9 @@ Skrivebordsdeling
 
 <para>
 For at dele dit skrivebord med andre, der bruger 
-Dappix (eller VNC for eksempel til Microsoft Windows®) på nettet skal du 
-trykke på K-&gt;System-&gt;Skrivebordsdeling og 
-invitere 'gæster'.
+Dappix (eller VNC for eksempel til Microsoft WindowsÂ®) pÃ¥ nettet skal du 
+trykke pÃ¥ K-&gt;System-&gt;Skrivebordsdeling og 
+invitere 'gÃ¦ster'.
 </para>
 
 <figure id="SkriveBordsdeling-fig" float="1">
@@ -565,19 +565,19 @@ invitere 'gæster'.
 </figure>
 
 <para>
-Gæsten kan så logge på dit skrivebord med K-&gt;Internet-&gt;Extern Skrivebordsforbindelse 
+GÃ¦sten kan sÃ¥ logge pÃ¥ dit skrivebord med K-&gt;Internet-&gt;Extern Skrivebordsforbindelse 
 og indtaste den angivne adgangskode.
 </para>
 </listitem>
 <listitem> 
 <para>
-Brænding af cd'er
+BrÃ¦nding af cd'er
 </para>
 
 <para>
-Du har et super nemt program til brænding af cd'er til rådighed. K3b kan 
-bruge de fleste brændere og det minder meget om de gængse brændeprogrammer 
-til Microsoft Windows®. 
+Du har et super nemt program til brÃ¦nding af cd'er til rÃ¥dighed. K3b kan 
+bruge de fleste brÃ¦ndere og det minder meget om de gÃ¦ngse brÃ¦ndeprogrammer 
+til Microsoft WindowsÂ®. 
 </para>
 
 <para>
@@ -592,11 +592,11 @@ Du finder det som K-&gt;System-&gt;K3b.
 </listitem>
 <listitem>
 <para>
-Høre musik
+HÃ¸re musik
 </para>
 
 <para>
-For at høre cd, .wav-, .ogg- eller .mp3-filer skal man bruge programmerne 
+For at hÃ¸re cd, .wav-, .ogg- eller .mp3-filer skal man bruge programmerne 
 under K-&gt;Multimedia-&gt;Sound  f.eks. XMMS. 
 </para>
 
@@ -606,7 +606,7 @@ under K-&gt;Multimedia-&gt;Sound  f.eks. XMMS.
 </figure>
 
 <para>
-Hvis du vil ændre på lydindstillingerne, kan du bruge mixerpulten Kmix 
+Hvis du vil Ã¦ndre pÃ¥ lydindstillingerne, kan du bruge mixerpulten Kmix 
 under  K-&gt;Multimedia-&gt;Sound-&gt;KMix.
 </para>
 
@@ -622,9 +622,9 @@ Se dvd-film
 </para>
 
 <para>
-Hvis du har en dvd-afspiller på din pc, kan du afspille film med Xine. Den 
+Hvis du har en dvd-afspiller pÃ¥ din pc, kan du afspille film med Xine. Den 
 ligger under K-&gt; Multimedie-&gt;Video-&gt;Xine media player. 
-Xine kan også bruges til at afspille andre medier med.
+Xine kan ogsÃ¥ bruges til at afspille andre medier med.
 </para>
 
 
@@ -640,17 +640,17 @@ Xine kan også bruges til at afspille andre medier med.
 </sect1>
 
 <sect1 id="dappix-ikke-skrive-og-dog">
-<title>Aktivér brug af harddisken</title>
+<title>AktivÃ©r brug af harddisken</title>
 
 <para>
-Før du går igang for alvor - som et supplement eller alternativ til f.eks. 
-Microsoft Windows® -  skal du vide, at Dappix, som standard starter op i 
-pc'ens hukommelse (RAM) uden at kunne skrive på din harddisk. 
+FÃ¸r du gÃ¥r igang for alvor - som et supplement eller alternativ til f.eks. 
+Microsoft WindowsÂ® -  skal du vide, at Dappix, som standard starter op i 
+pc'ens hukommelse (RAM) uden at kunne skrive pÃ¥ din harddisk. 
 Det skal man tvinge den til!
 </para>
 
 <para>
-Der er to måder at aktivere skrivning til harddisken på. 
+Der er to mÃ¥der at aktivere skrivning til harddisken pÃ¥. 
 Simpel montering og permanent hjemmemappe.
 </para>
 
@@ -658,9 +658,9 @@ Simpel montering og permanent hjemmemappe.
 <title>Simpel montering</title>
 
 <para>
-Man kan uden videre montere en eksisterende Microsoft Windows® FAT- eller en 
-Linux-partition til at skrive på. Det skal blot ske på ny, hver gang man 
-starter Dappix op, og er derfor lidt trættende i længden.
+Man kan uden videre montere en eksisterende Microsoft WindowsÂ® FAT- eller en 
+Linux-partition til at skrive pÃ¥. Det skal blot ske pÃ¥ ny, hver gang man 
+starter Dappix op, og er derfor lidt trÃ¦ttende i lÃ¦ngden.
 </para>
 
 
@@ -672,7 +672,7 @@ For at montere en partition:
 </listitem>
 <listitem> 
 <para>
-Først højre-klik på harddisk-ikonet på skrivebordet og vælg Montér.
+FÃ¸rst hÃ¸jre-klik pÃ¥ harddisk-ikonet pÃ¥ skrivebordet og vÃ¦lg MontÃ©r.
 </para>
 
 <figure id="DappixMonter-fig" float="1">
@@ -683,13 +683,13 @@ Først højre-klik på harddisk-ikonet på skrivebordet og vælg Montér.
 </listitem>
 <listitem>
 <para>
-Herefter kan du klikke på ikonet og læse alle filerne på denne partition.
+Herefter kan du klikke pÃ¥ ikonet og lÃ¦se alle filerne pÃ¥ denne partition.
 </para>
 </listitem>
 <listitem> 
 <para>
-Aktivering af skrivning på harddisken fås først ved
- at højre-klikke på harddisk-ikonet igen og vælge 'Change read/write mode'.
+Aktivering af skrivning pÃ¥ harddisken fÃ¥s fÃ¸rst ved
+ at hÃ¸jre-klikke pÃ¥ harddisk-ikonet igen og vÃ¦lge 'Change read/write mode'.
 </para>
 </listitem>
 <listitem> 
@@ -706,10 +706,10 @@ Du bliver spurgt, om du virkelig mener det, og du klikker Yes.
 </listitem>
 <listitem>
 <para>
-Så skal du - igen for tredje gang - højre-klikke på harddisk-ikonet på 
-skrivebordet, vælge Egenskaber og derefter Enhed. Her skal der 
-<emphasis>ikke</emphasis> være 
-et kryds ved Læs-kun. Et kryds fjernes ved at klikke på det. 
+SÃ¥ skal du - igen for tredje gang - hÃ¸jre-klikke pÃ¥ harddisk-ikonet pÃ¥ 
+skrivebordet, vÃ¦lge Egenskaber og derefter Enhed. Her skal der 
+<emphasis>ikke</emphasis> vÃ¦re 
+et kryds ved LÃ¦s-kun. Et kryds fjernes ved at klikke pÃ¥ det. 
 </para>
 
 <figure id="DappixMonter3-fig" float="1">
@@ -727,8 +727,8 @@ et kryds ved Læs-kun. Et kryds fjernes ved at klikke på det.
 
 <para>
 Hjemmemappen i Dappix kaldes <filename>/home/knoppix</filename> og det er 
-der, du gemmer dine filer og opsætninger. Den svarer omtrent til 
-<filename>C:\Dokumenter</filename> under Microsoft Windows®.
+der, du gemmer dine filer og opsÃ¦tninger. Den svarer omtrent til 
+<filename>C:\Dokumenter</filename> under Microsoft WindowsÂ®.
 </para>
 
 <para>
@@ -736,9 +736,9 @@ Som standard ligger <filename>/home/knoppix</filename> i hukommelsen.
 </para>
 
 <para>
-For at få Dappix til at benytte harddisken til hjemmemappen og derved 
-gemme skrivebord, filer og indstillinger fra gang til gang, skal man ændre 
-et par småting.
+For at fÃ¥ Dappix til at benytte harddisken til hjemmemappen og derved 
+gemme skrivebord, filer og indstillinger fra gang til gang, skal man Ã¦ndre 
+et par smÃ¥ting.
 </para>
 
 <orderedlist>
@@ -767,7 +767,7 @@ Klik 'Yes' for at oprette en hjemmemappe til dine filer.
 </listitem>
 <listitem> 
 <para>
-Vælg en partition - /dev/hda1 er typisk din Microsoft Windows®-partition - og klik på OK.
+VÃ¦lg en partition - /dev/hda1 er typisk din Microsoft WindowsÂ®-partition - og klik pÃ¥ OK.
 </para>
 
 
@@ -779,9 +779,9 @@ Vælg en partition - /dev/hda1 er typisk din Microsoft Windows®-partition - og kl
 </listitem>
 <listitem> 
 <para>
-Til spørgsmålet, om man vil bruge en hel partition, vælges No. 
+Til spÃ¸rgsmÃ¥let, om man vil bruge en hel partition, vÃ¦lges No. 
 ELLERS SLETTES HELE PARTITIONEN - EN EVENTUEL INSTALLATION AF 
-Microsoft Windows ®!
+Microsoft Windows Â®!
 </para>
 
 
@@ -794,8 +794,8 @@ Microsoft Windows ®!
 </listitem>
 <listitem> 
 <para>
-Der angives herefter, det antal megabytes, man vil bruge til sin hjemmemappe på partitionen. 
-Her vælges et antal, for eksempel 30, og klikkes OK.
+Der angives herefter, det antal megabytes, man vil bruge til sin hjemmemappe pÃ¥ partitionen. 
+Her vÃ¦lges et antal, for eksempel 30, og klikkes OK.
 </para>
 
 
@@ -808,7 +808,7 @@ Her vælges et antal, for eksempel 30, og klikkes OK.
 </listitem>
 <listitem> 
 <para>
-Der spørges så, om du vil kryptere dine data. Her anbefales det at vælge No.
+Der spÃ¸rges sÃ¥, om du vil kryptere dine data. Her anbefales det at vÃ¦lge No.
 </para>
 
 <figure id="DappixHome6-fig" float="1">
@@ -834,13 +834,13 @@ Klik herefter OK.
 </listitem>
 <listitem> 
 <para>
-Egentlig er du nu færdig med hjemmemappen, men du bør ændre din nye 
+Egentlig er du nu fÃ¦rdig med hjemmemappen, men du bÃ¸r Ã¦ndre din nye 
 hjemmemappe til et ext3-filsystem, som er meget fejl-sikker i 
 forbindelse med pludselig slukning af maskinen: 
 </para>
 
 <para>
-Åbn  K-&gt;KNOPPIX-&gt;Root Shell og udfør kommandoerne
+Ã…bn  K-&gt;KNOPPIX-&gt;Root Shell og udfÃ¸r kommandoerne
 </para>
 
 <screen>
@@ -863,9 +863,9 @@ Og til sidst ALT-F4 for at lukke kommandoboksen.
 
 
 <para>
-Nu er din Knoppix-"harddisk" - som ligger på dit Microsoft Windows®-drev 
+Nu er din Knoppix-"harddisk" - som ligger pÃ¥ dit Microsoft WindowsÂ®-drev 
 - helt klar, og du skal nu genstarte din maskine og skrive 
-knoppix home=scan efter boot: når den viser dig opstartsskærmen som ses på næste billede.
+knoppix home=scan efter boot: nÃ¥r den viser dig opstartsskÃ¦rmen som ses pÃ¥ nÃ¦ste billede.
 </para>
 
 
@@ -875,25 +875,25 @@ knoppix home=scan efter boot: når den viser dig opstartsskærmen som ses på næste
 </figure>
 
 <para>
-Derefter kan du så gemme filer på <filename>/home/knoppix</filename>, som er din Linux 'harddisk'.  
+Derefter kan du sÃ¥ gemme filer pÃ¥ <filename>/home/knoppix</filename>, som er din Linux 'harddisk'.  
 </para>
 </sect2>
 </sect1>
 
 <sect1 id="installer-knoppix-til-harddisk">
-<title>Installér Dappix på din harddisk</title>
+<title>InstallÃ©r Dappix pÃ¥ din harddisk</title>
 
 <para>
-Knoppix er en smule langsom at starte fra cd-drevet. Det er også lidt 
-irriterende, at man ikke kan bruge cd-drevet, når man bruger Dappix. 
-Der er to måder at undgå dette på ved installation af Dappix på harddisken:  
+Knoppix er en smule langsom at starte fra cd-drevet. Det er ogsÃ¥ lidt 
+irriterende, at man ikke kan bruge cd-drevet, nÃ¥r man bruger Dappix. 
+Der er to mÃ¥der at undgÃ¥ dette pÃ¥ ved installation af Dappix pÃ¥ harddisken:  
 Simpel Installation og Debian-installation. 
 </para>
 
 <para>
-Simpel Installation bliver beskrevet i det følgende, hvorimod Debian-installation, 
+Simpel Installation bliver beskrevet i det fÃ¸lgende, hvorimod Debian-installation, 
 som er en rigtig installation af Debian GNU/Linux, ikke vil blive beskrevet her, 
-udover at det er forholdsvis enkelt: Man åbner K-&gt;KNOPPIX-&gt;Root Shell og udfører kommandoen
+udover at det er forholdsvis enkelt: Man Ã¥bner K-&gt;KNOPPIX-&gt;Root Shell og udfÃ¸rer kommandoen
 </para>
 
 <screen>
@@ -901,43 +901,43 @@ knx-hdinstall <literal>&lt;retur&gt;</literal>
 </screen>
 
 <para>
-hvorefter man guides igennem installationsproceduren på engelsk. 
+hvorefter man guides igennem installationsproceduren pÃ¥ engelsk. 
 </para>
 
 <para>
 Du skal nok have tilegnet dig lidt viden om partitionering og Linux, 
-før du går i gang med en Debian-installation.
+fÃ¸r du gÃ¥r i gang med en Debian-installation.
 </para>
 
 <sect2 id="dappix-simpel-installation">
 <title>Simpel Installation</title>
 
 <para>
-Denne installations måde er blot en kopiering af Dappix-cd'en til 
-roden af en af partitionerne på harddisken, f.eks. til en allerede 
-installeret Microsoft Windows®-partition på <filename>/mnt/hda1</filename>.
+Denne installations mÃ¥de er blot en kopiering af Dappix-cd'en til 
+roden af en af partitionerne pÃ¥ harddisken, f.eks. til en allerede 
+installeret Microsoft WindowsÂ®-partition pÃ¥ <filename>/mnt/hda1</filename>.
 </para>
 
 <para>
-Bemærk: Man kan sagtens have en Microsoft Windows®-installation og en 
-simpel Dappix-installation på samme partition. Der er absolut INGEN fælles 
-filer som skaber problemer mellem de to styresystemer, så de blander sig 
+BemÃ¦rk: Man kan sagtens have en Microsoft WindowsÂ®-installation og en 
+simpel Dappix-installation pÃ¥ samme partition. Der er absolut INGEN fÃ¦lles 
+filer som skaber problemer mellem de to styresystemer, sÃ¥ de blander sig 
 ikke i hinandens 'arbejde'.
 </para>
 
 <para>
-Fordelene ved at foretage denne installation er primært en større hastighed 
-ved programkørsel, og at du får frigivet dit cd/dev-drev lige efter start, 
-så du kan bruge det til andre ting - f.eks. til at se dvd-film med under Dappix.
+Fordelene ved at foretage denne installation er primÃ¦rt en stÃ¸rre hastighed 
+ved programkÃ¸rsel, og at du fÃ¥r frigivet dit cd/dev-drev lige efter start, 
+sÃ¥ du kan bruge det til andre ting - f.eks. til at se dvd-film med under Dappix.
 </para>
 
 <para>
-Du skal have mindst 701 megabyte ledig plads på din harddisk-partition 
-for at udføre installationen.
+Du skal have mindst 701 megabyte ledig plads pÃ¥ din harddisk-partition 
+for at udfÃ¸re installationen.
 </para>
 
 <para>
-Sådan udføres Simpel Installation:
+SÃ¥dan udfÃ¸res Simpel Installation:
 </para>
 
 <orderedlist>
@@ -955,24 +955,24 @@ boot: knoppix tohd=/dev/hda1,
 </screen>
 <para>
 hvor <filename>/dev/hda1</filename> kan erstattes med det partition-navn, 
-som du vælger. På en almindelig pc er /dev/hda1 den første partition på en 
-IDE-harddisk (master på den primære-kontroller), og sædvanligvis er det der, 
-man finder Microsoft Windows®.
+som du vÃ¦lger. PÃ¥ en almindelig pc er /dev/hda1 den fÃ¸rste partition pÃ¥ en 
+IDE-harddisk (master pÃ¥ den primÃ¦re-kontroller), og sÃ¦dvanligvis er det der, 
+man finder Microsoft WindowsÂ®.
 </para>
 
 </listitem>
 <listitem>
 <para>
-Dappix går igang med at kopiere alle filerne fra 
-cd'en til harddisken. Hav tålmodighed, det kan tage op til 40 minutter 
-på en halvgammel pc, men normalt er det overstået på under 10.
+Dappix gÃ¥r igang med at kopiere alle filerne fra 
+cd'en til harddisken. Hav tÃ¥lmodighed, det kan tage op til 40 minutter 
+pÃ¥ en halvgammel pc, men normalt er det overstÃ¥et pÃ¥ under 10.
 </para>
 </listitem>
 <listitem>
 <para>
-Når kopieringen er færdig, starter Dappix op ved at bruge en slags 
+NÃ¥r kopieringen er fÃ¦rdig, starter Dappix op ved at bruge en slags 
 snyde cd-rom, 
-som den har lagt på harddisken.
+som den har lagt pÃ¥ harddisken.
 </para>
 </listitem>
 <listitem>

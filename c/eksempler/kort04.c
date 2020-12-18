@@ -1,5 +1,5 @@
 
-/* kort04.c kortspil repræsentation, kortene blandes */
+/* kort04.c kortspil reprÃ¦sentation, kortene blandes */
 /* ved at anbringe dem i en liste (linked liste)     */
 /* blande - rutinen laves som en service funktion    */
 /* display rutinen skilles ud fra main.              */
@@ -18,7 +18,7 @@ enum farve_t { kloer, ruder, hjerter, spar };
 char *farve(enum farve_t kk)
 {
     static char *names[] = {
-	"klør", "ruder", "hjerter", "spar", "forkert kuloer"
+	"klÃ¸r", "ruder", "hjerter", "spar", "forkert kuloer"
     };
 
     if (kk > spar || kk < kloer)
@@ -36,7 +36,7 @@ struct kort_t {
 
 #define MAXK 52
 
-/* prototyper på vores to service funktioner */
+/* prototyper pÃ¥ vores to service funktioner */
 
 void show_all(struct kort_t *k);
 void bland(struct kort_t *k, int lim, struct kort_t **first);
@@ -104,8 +104,8 @@ void bland(struct kort_t *k, int lim, struct kort_t **first)
     }
 }
 
-/* note 1:  Det sidste kort er "jordet", så vi skal kun anbringe
- * links på MAXK - 1 kort.
+/* note 1:  Det sidste kort er "jordet", sÃ¥ vi skal kun anbringe
+ * links pÃ¥ MAXK - 1 kort.
  */
 
 void show_kortbunke(struct kort_t *k)

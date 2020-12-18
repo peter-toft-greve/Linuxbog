@@ -16,13 +16,13 @@
 
  <para>
   Gnome har gennem tiden haft forskellige window managere som
-  standard-window manager. En af dem er Sawfish som vi skal se lidt på
+  standard-window manager. En af dem er Sawfish som vi skal se lidt pÃ¥
   i dag. Sawfish hed tidligere sawmill, men navnet blev af andre
-  registret som beskyttet varmeærke.
+  registret som beskyttet varmeÃ¦rke.
  </para>
 
  <para>
-  Sawfish understøtter Gnome på forskellige måder, men kan også bruges
+  Sawfish understÃ¸tter Gnome pÃ¥ forskellige mÃ¥der, men kan ogsÃ¥ bruges
   uden Gnome. Her er det dog et billede af Sawfish sammen med Gnome2:
 
   <indexterm>
@@ -46,11 +46,11 @@
 
   <para>
    Sawfish findes formodentlig i de fleste Linux-distributioner og det
-   letteste er at installere den sawfish-pakke der følger med ens
-   distribution. Hvis man selv ønsker at oversætte sawfish, kan den
-   hentes på hjemmesiden <ulink
+   letteste er at installere den sawfish-pakke der fÃ¸lger med ens
+   distribution. Hvis man selv Ã¸nsker at oversÃ¦tte sawfish, kan den
+   hentes pÃ¥ hjemmesiden <ulink
    url="http://sawmill.sourceforge.net">http://sawmill.sourceforge.net</ulink>.
-   Desuden får man brug for en række ekstra pakker:
+   Desuden fÃ¥r man brug for en rÃ¦kke ekstra pakker:
 
    <itemizedlist mark="bullet">
     <listitem>
@@ -76,25 +76,25 @@
  </sect2>    <!--   Installation -->
 
  <sect2 id="wm-sawfish-opsaetning">
-  <title>Opsætning af sawfish</title>
+  <title>OpsÃ¦tning af sawfish</title>
 
   <indexterm>
-   <primary>opsætning af</primary>
+   <primary>opsÃ¦tning af</primary>
    <secondary>Sawfish</secondary>
   </indexterm>
 
   <para>
-   Opsætningen af sawfish findes dels i filen
+   OpsÃ¦tningen af sawfish findes dels i filen
    <filename>~/.sawfishrc</filename> og kataloget
    <filename>.sawfish/</filename> i brugerens hjemkatalog. Man kan
-   enten sætte Sawfish op ved at skrive opsætningsfilen i LISP-kode
-   eller ved at bruge opsætningsprogrammet
+   enten sÃ¦tte Sawfish op ved at skrive opsÃ¦tningsfilen i LISP-kode
+   eller ved at bruge opsÃ¦tningsprogrammet
    <command>sawfish-ui</command>.
   </para>
 
   <para>
-   I det følgende vil de vigtigste punkter af opsætningen blive
-   gennemgået med sawfish-ui.
+   I det fÃ¸lgende vil de vigtigste punkter af opsÃ¦tningen blive
+   gennemgÃ¥et med sawfish-ui.
   </para>
 
   <sect3 id="wm-sawfish-temaer">
@@ -106,10 +106,10 @@
    </indexterm>
 
    <para>
-    Under »Udseende« (eng. »Appearance«) kan man vælge hvilket tema
+    Under Â»UdseendeÂ« (eng. Â»AppearanceÂ«) kan man vÃ¦lge hvilket tema
     (eng. 'theme') som vinduer skal have som standard. Temaer
-    bestemmer hvilke rammer der skal være om vinduerne og hvilke
-    knapper der skal være i titellinjen.
+    bestemmer hvilke rammer der skal vÃ¦re om vinduerne og hvilke
+    knapper der skal vÃ¦re i titellinjen.
    </para>
   </sect3> <!-- Themes  -->
 
@@ -122,7 +122,7 @@
    </indexterm>
 
    <para>
-    Under »Genveje« (eng. »Bindings«) kan man vælge hvilke
+    Under Â»GenvejeÂ« (eng. Â»BindingsÂ«) kan man vÃ¦lge hvilke
     genvejstaster sawfish skal bruge. En genvej kan virke i
     forskellige kontekster. Den kan for eksempel virke altid
     (konteksten 'Global'), i et vindue (konteksten 'Window') eller
@@ -130,9 +130,9 @@
    </para>
 
    <para>
-    Når man sætter en genvej op, da vælger man først hvad genvejen
-    skal gøre og dernæst hvilken 'tastekombination' der skal udføre
-    genvejen. Man kan enten skrive tastekombinationen eller trykke på
+    NÃ¥r man sÃ¦tter en genvej op, da vÃ¦lger man fÃ¸rst hvad genvejen
+    skal gÃ¸re og dernÃ¦st hvilken 'tastekombination' der skal udfÃ¸re
+    genvejen. Man kan enten skrive tastekombinationen eller trykke pÃ¥
     'Fang...' (eng.  'Grab...') og bare trykke kombinationen
    </para>
   </sect3> <!-- Genvejstaster -->
@@ -146,21 +146,21 @@
    </indexterm>
 
    <para>
-    Under 'Fokusopførsel' (eng. 'Focus') kan man sætte op hvordan
-    Sawfish skal skifte fokus mellem vinduer. Man kan enten vælge at
-    man skal klikke i et vindue for at få fokus eller at fokus følger
+    Under 'FokusopfÃ¸rsel' (eng. 'Focus') kan man sÃ¦tte op hvordan
+    Sawfish skal skifte fokus mellem vinduer. Man kan enten vÃ¦lge at
+    man skal klikke i et vindue for at fÃ¥ fokus eller at fokus fÃ¸lger
     musen.
    </para>
 
    <para>
-    Desuden kan man under 'Fokusopførsel' vælge hvordan Sawfish skal
-    opfører sig når man cykler gennem vinduer og om Sawfish skal
-    flytte et vindue øverst, når det får fokus.
+    Desuden kan man under 'FokusopfÃ¸rsel' vÃ¦lge hvordan Sawfish skal
+    opfÃ¸rer sig nÃ¥r man cykler gennem vinduer og om Sawfish skal
+    flytte et vindue Ã¸verst, nÃ¥r det fÃ¥r fokus.
    </para>
   </sect3> <!-- Fokus -->
 
   <sect3 id="wm-sawfish-opsaetning-menuer">
-   <title>Opsætning af menuer</title>
+   <title>OpsÃ¦tning af menuer</title>
 
    <indexterm>
     <primary>menuer i</primary>
@@ -168,19 +168,19 @@
    </indexterm>
 
    <para>
-    Man kan lave en række andre ændringer med
+    Man kan lave en rÃ¦kke andre Ã¦ndringer med
     <command>sawfish-ui</command>. Det eneste man egentlig ikke kan
-    sætte op er menuer. Dette kan i stedet let gøres ved at oprette en
+    sÃ¦tte op er menuer. Dette kan i stedet let gÃ¸res ved at oprette en
     <filename>~/.sawfishrc</filename>-fil.
    </para>
 
    <para>
-    Når man laver en <filename>~/.sawfishrc</filename> så bruger
-    Sawfish ikke standardopsætningen, man skal derfor altid huske at
-    begynde sin opsætning med <literal>(require
+    NÃ¥r man laver en <filename>~/.sawfishrc</filename> sÃ¥ bruger
+    Sawfish ikke standardopsÃ¦tningen, man skal derfor altid huske at
+    begynde sin opsÃ¦tning med <literal>(require
     'sawmill-defaults)</literal>. Min
-    <filename>~/.sawfishrc</filename> som sætter en enkel program-menu
-    op ser således ud:
+    <filename>~/.sawfishrc</filename> som sÃ¦tter en enkel program-menu
+    op ser sÃ¥ledes ud:
 
 <programlisting>
 (require 'sawmill-defaults)
@@ -189,45 +189,45 @@
           '("Gnome Terminal" (system "/usr/bin/gnome-terminal &amp;"))
           '("galeon" (system "/usr/bin/galeon &amp;"))
           '("Screensaver" (system "xlock -remote -nice 19 -nolock -mode random -modelist all -fullrandom -neighbors 0 &amp;"))
-          '("Lås skærm" (system "xlock -remote -nice 19 -mode blank &amp;"))
+          '("LÃ¥s skÃ¦rm" (system "xlock -remote -nice 19 -mode blank &amp;"))
 ))
 </programlisting>
    </para>
-  </sect3>    <!--   Opsætning af menuer -->
+  </sect3>    <!--   OpsÃ¦tning af menuer -->
 
   <sect3 id="wm-sawfish-gnome">
-   <title>Understøttelse for Gnome</title>
+   <title>UnderstÃ¸ttelse for Gnome</title>
 
    <para>
-    Sawfish understøtter Gnome på forskellige måder. Dels giver
-    Sawfish Gnome mulighed for at fortælle at brugeren er ved at
-    afslutte. Dermed har Sawfish mulighed for at lukke pænt ned når
+    Sawfish understÃ¸tter Gnome pÃ¥ forskellige mÃ¥der. Dels giver
+    Sawfish Gnome mulighed for at fortÃ¦lle at brugeren er ved at
+    afslutte. Dermed har Sawfish mulighed for at lukke pÃ¦nt ned nÃ¥r
     man trykker 'log out' i Gnome.
    </para>
 
    <para>
-    En anden del at Gnome-understøttelsen er at Sawfish og Gnome kan
-    fortælle hinanden noget om vinduers placering. Dermed kan man
+    En anden del at Gnome-understÃ¸ttelsen er at Sawfish og Gnome kan
+    fortÃ¦lle hinanden noget om vinduers placering. Dermed kan man
     anvende Gnomes pager (en lille udgave af ens skriveborde, hvor man
     kan se vinduerne) eller Gnomes vindueslister.
    </para>
 
    <para>
-    Udseendet af baggrunden er som sådan ikke noget Sawfish tager sig
-    af.  Hvis man bruger Gnome kan dette sættes op via Gnomes Control
-    Center, ellers kan man gøre det med <command>xsetroot</command>
-    (læs manualsiden) eller <command>display -window root
+    Udseendet af baggrunden er som sÃ¥dan ikke noget Sawfish tager sig
+    af.  Hvis man bruger Gnome kan dette sÃ¦ttes op via Gnomes Control
+    Center, ellers kan man gÃ¸re det med <command>xsetroot</command>
+    (lÃ¦s manualsiden) eller <command>display -window root
     foo.png</command>.
    </para>
-  </sect3>    <!--   Understøttelse for Gnome -->
+  </sect3>    <!--   UnderstÃ¸ttelse for Gnome -->
 
   <sect3 id="wm-sawfish-misc">
    <title>Andre muligheder</title>
 
    <para>
     Med Sawfish er man ikke bundet til et enkelt tema. I vinduesmenuen
-    kan man let ændre på et vindues udseende, så for eksempel følgende
-    skærmbillede opnås:
+    kan man let Ã¦ndre pÃ¥ et vindues udseende, sÃ¥ for eksempel fÃ¸lgende
+    skÃ¦rmbillede opnÃ¥s:
 
     <figure id="sawfish-themes-fig" float="1">
      <title>Themes med Sawfish</title>
@@ -236,10 +236,10 @@
    </para>
 
    <para>
-    Sawfish kan alt og hvis der er noget Sawfish ikke allerede kan, så
-    kan man udvide sawfish med LISP på samme måde som med Emacs.
-    Dokumentationen til LISP-grænsefladen er en ren reference-tekst,
-    så det kan være noget svært at finde ud af hvor man skal begynde,
+    Sawfish kan alt og hvis der er noget Sawfish ikke allerede kan, sÃ¥
+    kan man udvide sawfish med LISP pÃ¥ samme mÃ¥de som med Emacs.
+    Dokumentationen til LISP-grÃ¦nsefladen er en ren reference-tekst,
+    sÃ¥ det kan vÃ¦re noget svÃ¦rt at finde ud af hvor man skal begynde,
     men med noget lisp-kendskab er det muligt let at lave mindre ting.
    </para>
   </sect3>    <!--   Andre muligheder -->
@@ -249,12 +249,12 @@
 
    <para>
     Sawfish er en utolig fleksibel window manager. Selv uden at man
-    skal igang med LISP kan man pille ved utroligt mange detaljer, så
+    skal igang med LISP kan man pille ved utroligt mange detaljer, sÃ¥
     Sawfish virker meget som man vil have det.
    </para>
 
    <para>
-    &nbsp;&nbsp;&nbsp;... og hvis man begynder med LISP, så kan man
+    &nbsp;&nbsp;&nbsp;... og hvis man begynder med LISP, sÃ¥ kan man
     praktisk taget alt.
    </para>
   </sect3>    <!--   Det fede ved Sawfish -->

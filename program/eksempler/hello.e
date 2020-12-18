@@ -5,7 +5,7 @@
 -- Progremmet er skrevet til SmallEiffel
 -- http://www.loria.fr/SmallEiffel
 --
--- Oversættelse:
+-- OversÃ¦ttelse:
 --  compile hello -o hello
 --
 -- Afvikling:

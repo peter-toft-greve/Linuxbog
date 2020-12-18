@@ -3,7 +3,7 @@
   af Michael Rasmussen <mir@miras.org>
   $Id$
 
-  Oversæt med: gpc udskriv.pas -o udskriv
+  OversÃ¦t med: gpc udskriv.pas -o udskriv
 
   Afvikling: ./udskriv
 }
@@ -14,24 +14,24 @@ var
  fil, {variabel til at lagre filens navn}
  txt : string[255]; {variabel til at lagre en tekstlinie}
 
- fptr : text; {variabel til at skabe adgang til en fil på disken}
- i : integer; {variabel som tælles op med 1 for hver ny linie}
+ fptr : text; {variabel til at skabe adgang til en fil pÃ¥ disken}
+ i : integer; {variabel som tÃ¦lles op med 1 for hver ny linie}
 
 begin
-   {første linie}
+   {fÃ¸rste linie}
    i := 1;
-   {hent filnavnet fra kommandolinien: 0=programmet, 1=første
+   {hent filnavnet fra kommandolinien: 0=programmet, 1=fÃ¸rste
     parameter efter programmets navn}
    fil := paramstr(1);
-   {skab forbindelse til filen på disken med det pågældende navn}
+   {skab forbindelse til filen pÃ¥ disken med det pÃ¥gÃ¦ldende navn}
    assign (fptr,fil);
    {$i-}
-   {slå automatisk fejlbehandling fra: skriv din egen rutine;
-    fejlmeddelelser fra sidste I/O rutine kan læses i variablen IOResult}
-   reset (fptr); {åben filen for læsning fra første linie}
-   {$i+} {automatisk fejlbehandling slås til}
-   {hvis resultatet af forsøget på at åbne filen resulterede i en
-    fejl, vil variablen IOResult indeholde en værdi <> 0.}
+   {slÃ¥ automatisk fejlbehandling fra: skriv din egen rutine;
+    fejlmeddelelser fra sidste I/O rutine kan lÃ¦ses i variablen IOResult}
+   reset (fptr); {Ã¥ben filen for lÃ¦sning fra fÃ¸rste linie}
+   {$i+} {automatisk fejlbehandling slÃ¥s til}
+   {hvis resultatet af forsÃ¸get pÃ¥ at Ã¥bne filen resulterede i en
+    fejl, vil variablen IOResult indeholde en vÃ¦rdi <> 0.}
    if IOResult <> 0 then
    begin
      {var der en fejl?}
@@ -43,16 +43,16 @@ begin
    writeln;
    writeln ('linie tekst');
    writeln ('----- -----');
-   {så længe der er linier i filen, forsætter vi med at læse}
+   {sÃ¥ lÃ¦nge der er linier i filen, forsÃ¦tter vi med at lÃ¦se}
    while not eof(fptr) do
    begin
-      {læs en linie fra filen som fptr peger på,
-       og læg resultat i variablen txt. Skift til næste linie}
+      {lÃ¦s en linie fra filen som fptr peger pÃ¥,
+       og lÃ¦g resultat i variablen txt. Skift til nÃ¦ste linie}
       readln(fptr,txt);
       {skriv linienummeret - start i femte kolonne - og
-       indholdet af variablen txt på skærmen}
+       indholdet af variablen txt pÃ¥ skÃ¦rmen}
       writeln(i:5,' ',txt);
-      {tæl variablen i op med 1}
+      {tÃ¦l variablen i op med 1}
       inc(i);
    end;
 end.

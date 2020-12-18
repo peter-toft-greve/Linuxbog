@@ -7,9 +7,9 @@
 <para>
 Slackware er en af de rigtig gamle travere indenfor 
 Linuxdistributioner. Version 1.0 kom 16. juli 1993, og var
-den gang en kæmpe succes i den spæde Linux verden. 
+den gang en kÃ¦mpe succes i den spÃ¦de Linux verden. 
 Man installerede fra disketter - omkring 23 stk - eller via
-netværk. I vore dage henter man typisk to cdrommer fra f.eks. 
+netvÃ¦rk. I vore dage henter man typisk to cdrommer fra f.eks. 
 <ulink url="http://www.linuxiso.org/">http://www.linuxiso.org/</ulink>, som bootes 
 og man installerer derfra.
 </para>
@@ -21,23 +21,23 @@ og man installerer derfra.
 
 
 <para>
-Slackware er og har altid været en UNIX-distribution, man har værdsat
-at ting er enkle, og man lefler ikke for begynderen :-) Slackware skal være
+Slackware er og har altid vÃ¦ret en UNIX-distribution, man har vÃ¦rdsat
+at ting er enkle, og man lefler ikke for begynderen :-) Slackware skal vÃ¦re
 stabil og forventelig. 
 </para>
 
  <sect1 id="distro-slackware-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Slackware</secondary>
   </indexterm>
 
   <para>
-   Slackware er primært rettet mod erfarne linuxbrugere.  Og vel
-   efterhånden mest mod dem der allerede bruger Slackware eller har
-   venner der gør det.
+   Slackware er primÃ¦rt rettet mod erfarne linuxbrugere.  Og vel
+   efterhÃ¥nden mest mod dem der allerede bruger Slackware eller har
+   venner der gÃ¸r det.
   </para>
  </sect1>
 
@@ -50,10 +50,10 @@ stabil og forventelig.
   </indexterm>
 
   <para>
-   Installationen er tekstbaseret.  De første par menuer er lidt
-   forvirrende, da man skal vælge sprog flere gange.  Og så ser det
+   Installationen er tekstbaseret.  De fÃ¸rste par menuer er lidt
+   forvirrende, da man skal vÃ¦lge sprog flere gange.  Og sÃ¥ ser det
    endda ud til at det ikke bliver brugt i f.eks. KDE sidenhen.  Jeg
-   valgte dansk, og fik KDE på engelsk.
+   valgte dansk, og fik KDE pÃ¥ engelsk.
   </para>
  </sect1>
 
@@ -66,29 +66,29 @@ stabil og forventelig.
   </indexterm>
 
 <para>
-Slackware er enkel. Når man skal have dansk tastatur i KDE, så skal
+Slackware er enkel. NÃ¥r man skal have dansk tastatur i KDE, sÃ¥ skal
 man manuelt med <command>vi</command> eller <command>emacs</command>
-rette <filename>/etc/X11/XF86Config</filename> så der kommer til at stå
+rette <filename>/etc/X11/XF86Config</filename> sÃ¥ der kommer til at stÃ¥
 <literal>Option "XkbLayout" "dk"</literal> under Keyboard-afsnittet. Dette eksempel
 illusterer Slackware meget godt - man skal kende systemet godt for at kunne
-tilpasse det. Der er ikke ret mange hjælpeprogrammer med Slackware.
+tilpasse det. Der er ikke ret mange hjÃ¦lpeprogrammer med Slackware.
 </para>
 
 <para>
 En af de ting som er "enkel" at arbejde med, er installation af
-programmer. I modsætning til Mandrake hvor man kan skrive
-<command>urpmi emacs</command> for at få emacs installeret, så er
+programmer. I modsÃ¦tning til Mandrake hvor man kan skrive
+<command>urpmi emacs</command> for at fÃ¥ emacs installeret, sÃ¥ er
 Slackware langt mere primitiv. Man monterer sin cdrom manuelt som root
-med <command>mount /mnt/cdrom</command>, går til
+med <command>mount /mnt/cdrom</command>, gÃ¥r til
 <filename>/mnt/cdrom</filename> og i hver af de kataloger ligger der
-et ekskverbart script, der kan installere de passer fra det nuværende
-katalog.  Det er .tgz-filer, og der er således enkelt adgang til alle
-programmer - men opgradering kan være et helvede med Slackware, da
-pakkestyringen ikke er så smart som i Debian, Red Hat, SuSE og Mandrake.  
+et ekskverbart script, der kan installere de passer fra det nuvÃ¦rende
+katalog.  Det er .tgz-filer, og der er sÃ¥ledes enkelt adgang til alle
+programmer - men opgradering kan vÃ¦re et helvede med Slackware, da
+pakkestyringen ikke er sÃ¥ smart som i Debian, Red Hat, SuSE og Mandrake.  
 </para>
 
 <para>
-Der kan læses mere om Slackware på dansk i "Installation af Slackware Linux med Dropline Gnome" <ulink url="http://www.anhoej.suite.dk/slackware/slack.html">http://www.anhoej.suite.dk/slackware/slack.html</ulink>.
+Der kan lÃ¦ses mere om Slackware pÃ¥ dansk i "Installation af Slackware Linux med Dropline Gnome" <ulink url="http://www.anhoej.suite.dk/slackware/slack.html">http://www.anhoej.suite.dk/slackware/slack.html</ulink>.
 </para>
 
 </sect1>
@@ -97,8 +97,8 @@ Der kan læses mere om Slackware på dansk i "Installation af Slackware Linux med 
 <sect1 id="distro-slackware-vurdering">
 <title>Samlet vurdering af Slackware</title>
 <para>
-Slackware installationen har ikke ændret sig i 10 år. Der er kommet nye 
-programmer ind, men grundsystemet er basalt set uændret. Slackware er bevidst 
+Slackware installationen har ikke Ã¦ndret sig i 10 Ã¥r. Der er kommet nye 
+programmer ind, men grundsystemet er basalt set uÃ¦ndret. Slackware er bevidst 
 langt bag efter mange af de andre distributioner - Slackware-fans elsker det,
 men der bliver nok ikke mange nye Slackware fans.
 </para>

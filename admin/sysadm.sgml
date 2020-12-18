@@ -3,22 +3,22 @@
 <title>Pakke-formater</title>
 
 <para>
-De fleste har nok lidt svært ved, at forstå og bruge Linux'
-tekstopsætningsfiler når de lige er startet med at bruge Linux.
+De fleste har nok lidt svÃ¦rt ved, at forstÃ¥ og bruge Linux'
+tekstopsÃ¦tningsfiler nÃ¥r de lige er startet med at bruge Linux.
 Dette kan - som oftest - volde problemer, da mange mennesker jo netop
-installerer Linux for at bruge de medfølgende funktioner til fil- og
-printer-deling; eksempelvis på et kollegie, eller i en virksomhed.
+installerer Linux for at bruge de medfÃ¸lgende funktioner til fil- og
+printer-deling; eksempelvis pÃ¥ et kollegie, eller i en virksomhed.
 </para>
 
 <para>
-Det kan imidlertid godt være svært, da funktionerne til
-brugerstyring, netværksopsætning, indstilling af tiden osv. ofte ikke
-er lige nemme at gå til. Men fortvivl ikke - der er flere grafiske
-programmer, som kan hjælpe hvis du ikke vil gøre det tekstbaseret. 
+Det kan imidlertid godt vÃ¦re svÃ¦rt, da funktionerne til
+brugerstyring, netvÃ¦rksopsÃ¦tning, indstilling af tiden osv. ofte ikke
+er lige nemme at gÃ¥ til. Men fortvivl ikke - der er flere grafiske
+programmer, som kan hjÃ¦lpe hvis du ikke vil gÃ¸re det tekstbaseret. 
 </para>
 
 <para>
-I dette kapitel ser vi først nærmere på de pakkeformater, som mange
+I dette kapitel ser vi fÃ¸rst nÃ¦rmere pÃ¥ de pakkeformater, som mange
 programmer distribueres i.
 </para>
 
@@ -68,7 +68,7 @@ programmer distribueres i.
 <para>Linux har glimrende muligheder for at pakke programmer og
 datafiler sammen svarende til zip-formatet kendt fra Windows-verdenen. 
 Faktisk kan du med <command>unzip</command> udpakke
-zip-filer. Du skal blot installere unzip-pakken først - se <xref
+zip-filer. Du skal blot installere unzip-pakken fÃ¸rst - se <xref
 linkend="RPM"/>. Tilsvarende kan du have brug for at kunne udpakke en
 selvudpakkende zip-fil (som kommer som en exe-fil fra Windows). Til
 det kan du bruge <command>unzipsfx</command>.
@@ -77,18 +77,18 @@ det kan du bruge <command>unzipsfx</command>.
 <para>
 Du kan teoretisk set stadig komme ud for programpakker i Z-format. De
 skal udpakkes med <command>uncompress</command> (og de laves med
-<command>compress</command>). På grund af bedre pakke-effektivitet
+<command>compress</command>). PÃ¥ grund af bedre pakke-effektivitet
 anvendes kombinationen af <command>tar</command> og
 <command>gzip</command> eller <command>bzip2</command>. Dette er
-nærmere omtalt i <xref linkend="tar"/>. Et andet alternativ som
-efterhånden er en stærk standard for udbredelse af Linux-programmer i
-binær form er RPM, som er omtalt i <xref linkend="RPM"/>.
+nÃ¦rmere omtalt i <xref linkend="tar"/>. Et andet alternativ som
+efterhÃ¥nden er en stÃ¦rk standard for udbredelse af Linux-programmer i
+binÃ¦r form er RPM, som er omtalt i <xref linkend="RPM"/>.
 </para>
 
 <para>
-Det kan nævnes, at <command>tar</command> historisk set er et program, man
-bruger til at lime datafiler sammen, så de kan lægges ud på bånd -
-deraf navnet tar som står for Tape ARchive.
+Det kan nÃ¦vnes, at <command>tar</command> historisk set er et program, man
+bruger til at lime datafiler sammen, sÃ¥ de kan lÃ¦gges ud pÃ¥ bÃ¥nd -
+deraf navnet tar som stÃ¥r for Tape ARchive.
 </para>
 
 <sect2 id="tar">
@@ -96,11 +96,11 @@ deraf navnet tar som står for Tape ARchive.
 
 <para>
 I Linux/Unix-verdenen anvendes oftest tar-formatet til at samle mange
-filer i én pakkefil. Denne er ikke komprimeret, men alene en samling
-af filerne i én pakkefil. Har du filerne
+filer i Ã©n pakkefil. Denne er ikke komprimeret, men alene en samling
+af filerne i Ã©n pakkefil. Har du filerne
 <filename>oversigt.txt</filename>, <filename>tekstA.txt</filename> op
 til <filename>tekstD.txt</filename>, som du vil pakke sammen i filen
-<filename>tekster.tar</filename>, så gøres dette med:
+<filename>tekster.tar</filename>, sÃ¥ gÃ¸res dette med:
 </para>
 
 <screen>
@@ -120,26 +120,26 @@ tekstD.txt
 </screen>
 
 <para>
-Du kan således give alle de filnavne, der skal pakkes som det sidste
+Du kan sÃ¥ledes give alle de filnavne, der skal pakkes som det sidste
 argument, og giver du et katalognavn i listen vil dette katalog - med
-alle underkataloger - også blive pakket med. Som det ses af eksemplet
-vil programmet <command>tar</command> vise filnavne på de filer, der
-pakkes. Ønsker du ikke at se dette, skal du blot udelade option
+alle underkataloger - ogsÃ¥ blive pakket med. Som det ses af eksemplet
+vil programmet <command>tar</command> vise filnavne pÃ¥ de filer, der
+pakkes. Ã˜nsker du ikke at se dette, skal du blot udelade option
 <filename>v</filename>, dvs. brug <command>tar cf TARFILNAVN.tar
 LISTE_AF_FILER</command> i stedet.
 </para>
 
 <para>
 Hvis de filer du ville gemme er almindelige tekstfiler vil du i
-<filename>tekster.tar</filename> direkte kunne læse dig til de enkelte
-filer, som skulle lægges i pakken. Derfor vil tar-filen fylde lidt
-mere end summen af de filer, der skulle gemmes. For små filer vil der
-være en del ekstra fyld.
+<filename>tekster.tar</filename> direkte kunne lÃ¦se dig til de enkelte
+filer, som skulle lÃ¦gges i pakken. Derfor vil tar-filen fylde lidt
+mere end summen af de filer, der skulle gemmes. For smÃ¥ filer vil der
+vÃ¦re en del ekstra fyld.
 </para>
 
 <para>
-Ofte ønsker man nu at komprimere tar-filen, så den fylder
-mindre. Oftest vinder man en faktor 2, men både langt mere eller noget
+Ofte Ã¸nsker man nu at komprimere tar-filen, sÃ¥ den fylder
+mindre. Oftest vinder man en faktor 2, men bÃ¥de langt mere eller noget
 mindre er set i praksis. Der er flere muligheder for at komprimere,
 hvor <command>gzip</command> er langt det mest udbredte.
 </para>
@@ -168,7 +168,7 @@ tekster.tar:               93.3% -- replaced with tekster.tar.gz
 </indexterm>
 
 <para>
-Programmet <command>gzip</command> fortæller at filen
+Programmet <command>gzip</command> fortÃ¦ller at filen
 <filename>tekster.tar.gz</filename> er komprimeret med 93.3% og vi ser
 at filen nu kun fylder 706 bytes. Ofte vil man se at gzippede
 tar-filer ikke hedder <filename>.tar.gz</filename> men den kortere
@@ -177,15 +177,15 @@ samme.
 </para>
 
 <para>
-Bemærk, at originalfilen <filename>tekster.tar</filename> nu er
-væk. Kun den pakkede fil er tilbage efter <command>gzip</command>.
+BemÃ¦rk, at originalfilen <filename>tekster.tar</filename> nu er
+vÃ¦k. Kun den pakkede fil er tilbage efter <command>gzip</command>.
 </para>
 
 
 <para>
 Ofte laver man ikke tar-filen, men springer direkte til
 <filename>.tgz</filename>-formatet ved at danne pakkefilen med 
-<command>z</command> (for zip) tilføjet optionerne.
+<command>z</command> (for zip) tilfÃ¸jet optionerne.
 </para>
 
 <screen>
@@ -201,9 +201,9 @@ tekstD.txt
 </screen>
 
 <para>
-Vi skal nu se på hvordan du udpakker dine filer igen fra pakkefilen.
-Først ser vi hvad der er inde i pakken (t-option), og når vi er sikre
-på hvad der vil ske, bliver filerne udpakket (x-option). Antag at vi
+Vi skal nu se pÃ¥ hvordan du udpakker dine filer igen fra pakkefilen.
+FÃ¸rst ser vi hvad der er inde i pakken (t-option), og nÃ¥r vi er sikre
+pÃ¥ hvad der vil ske, bliver filerne udpakket (x-option). Antag at vi
 har placeret pakkefilen i et katalog, hvor der ikke er andre filer
 end pakkefilen.
 </para>
@@ -223,36 +223,36 @@ tekstD.txt
 </screen>
 
 <para>
-Igen kan v-option udelades, hvis du ikke vil have helt så meget
-information præsenteret på skærmen. Det skal nævnes, at
-<command>tar</command> har en stor mængde options, som kan læres lidt
+Igen kan v-option udelades, hvis du ikke vil have helt sÃ¥ meget
+information prÃ¦senteret pÃ¥ skÃ¦rmen. Det skal nÃ¦vnes, at
+<command>tar</command> har en stor mÃ¦ngde options, som kan lÃ¦res lidt
 efter lidt. Brug <command>man tar</command> til at komme videre. En
-option du måske allerede nu kan lære er <command>-C DIR</command>, som
-bruges til at pakke pakkefilen ud, svarende til at du står i kataloget 
+option du mÃ¥ske allerede nu kan lÃ¦re er <command>-C DIR</command>, som
+bruges til at pakke pakkefilen ud, svarende til at du stÃ¥r i kataloget 
 <filename>DIR</filename> og pakker ud.
 </para>
 
 
 <para>
-Du kan også komme ud for at folk bruger <command>bzip2</command> til
+Du kan ogsÃ¥ komme ud for at folk bruger <command>bzip2</command> til
 at komprimere data med i stedet for <command>gzip</command>. En fil der
-ender på <filename>.bz2</filename> kan du udpakke med <command>bunzip
+ender pÃ¥ <filename>.bz2</filename> kan du udpakke med <command>bunzip
 FILNAVN.bz2</command>. Er det en tar-fil som er pakket med
 <command>bzip2</command>, kan du med en nyere version af
 <command>tar</command> udpakke direkte med <command>tar xjvf
-FILNAVN.tar.bz2</command>, mens man med en ældre version af
-<command>tar</command> må tage den i to omgange: <command>bunzip2
+FILNAVN.tar.bz2</command>, mens man med en Ã¦ldre version af
+<command>tar</command> mÃ¥ tage den i to omgange: <command>bunzip2
 FILNAVN.tar.bz2</command> og derefter <command>tar xvf
 FILNAVN.tar</command>. 
 </para>
 </sect2>
 
 <sect2 id="tar-flytning">
-<title>Flytning af data til større disk</title>
+<title>Flytning af data til stÃ¸rre disk</title>
 
 <indexterm><primary>Disken er for lille</primary></indexterm>
-<indexterm><primary>flytning af data til større disk</primary></indexterm>
-<indexterm><primary>Opgradering</primary><secondary>større disk</secondary></indexterm>
+<indexterm><primary>flytning af data til stÃ¸rre disk</primary></indexterm>
+<indexterm><primary>Opgradering</primary><secondary>stÃ¸rre disk</secondary></indexterm>
 <indexterm><primary>mke2fs</primary></indexterm>
 <indexterm><primary>Formatere disk</primary></indexterm>
 <indexterm><primary>Flytning af data ved brug af tar </primary></indexterm>
@@ -260,13 +260,13 @@ FILNAVN.tar</command>.
 <indexterm><primary>Harddisk</primary><secondary>Formatering af harddisk</secondary></indexterm>
 <para>
 <emphasis>Tip:</emphasis> Lad os lige tage et avanceret eksempel. Det
-kan jo ske, at du løber tør for plads på din harddisk og køber en
+kan jo ske, at du lÃ¸ber tÃ¸r for plads pÃ¥ din harddisk og kÃ¸ber en
 ekstra disk. Du beslutter nu, at du vil flytte
-<filename>/home</filename> over på den nye disk
-(<filename>/dev/hdb1</filename>) og vil køre videre med Linux-systemet
-på den gamle disk. Lad os antage, at du har partitioneret
+<filename>/home</filename> over pÃ¥ den nye disk
+(<filename>/dev/hdb1</filename>) og vil kÃ¸re videre med Linux-systemet
+pÃ¥ den gamle disk. Lad os antage, at du har partitioneret
 <filename>/dev/hdb</filename> med <command>fdisk /dev/hdb</command> og
-kørt <command>/sbin/mke2fs /dev/hdb1</command> for at formatere
+kÃ¸rt <command>/sbin/mke2fs /dev/hdb1</command> for at formatere
 disken.
 </para>
 
@@ -278,18 +278,18 @@ disken.
 </screen>
 
 <para>
-De to første linjer er blot forberedelse, så vi har den nye disk til
-rådighed på <filename>/mnt/nydisk</filename>. Dernæst stiller vi os
-der hvor sikkerhedskopieringen skal startes fra (gør at dette er "."). I den sidste
+De to fÃ¸rste linjer er blot forberedelse, sÃ¥ vi har den nye disk til
+rÃ¥dighed pÃ¥ <filename>/mnt/nydisk</filename>. DernÃ¦st stiller vi os
+der hvor sikkerhedskopieringen skal startes fra (gÃ¸r at dette er "."). I den sidste
 kommando laver vi en sikkerhedskopi til "-" dvs. til stdout, som kanaliseres videre til en
 modtage-tar-kommando, der startes under
-<filename>/mnt/nydisk</filename>. Denne gang tilføjes p-option for at
-de udpakkede filer får samme rettigheder og ejerforhold som de oprindelige.
+<filename>/mnt/nydisk</filename>. Denne gang tilfÃ¸jes p-option for at
+de udpakkede filer fÃ¥r samme rettigheder og ejerforhold som de oprindelige.
 </para>
 
 <para>
-Det kan bemærkes at den sidste linje af ovenstående kommandolinje
-kunne også være skrevet om følgende, hvor stdin/stdout er 
+Det kan bemÃ¦rkes at den sidste linje af ovenstÃ¥ende kommandolinje
+kunne ogsÃ¥ vÃ¦re skrevet om fÃ¸lgende, hvor stdin/stdout er 
 implicit.
 </para>
 
@@ -298,11 +298,11 @@ implicit.
 </screen>
 
 <para>
-Først når du <emphasis>har</emphasis> tjekket at alle dine filer er
+FÃ¸rst nÃ¥r du <emphasis>har</emphasis> tjekket at alle dine filer er
 genskabt under <filename>/mnt/nydisk</filename> kan du slette dine
 filer og skabe kontakt med den nye disk med
-<filename>/home</filename>-filerne. Redigér
-<filename>/etc/fstab</filename> så den nye disk er med:
+<filename>/home</filename>-filerne. RedigÃ©r
+<filename>/etc/fstab</filename> sÃ¥ den nye disk er med:
 </para>
 
 <programlisting>
@@ -311,7 +311,7 @@ filer og skabe kontakt med den nye disk med
 
 <para>
 Bruger du en anden partition end <filename>/dev/hdb1</filename> til
-den nye disk, så skal du naturligvis erstatte dette i
+den nye disk, sÃ¥ skal du naturligvis erstatte dette i
 <filename>/etc/fstab</filename>
 </para>
 
@@ -323,21 +323,21 @@ den nye disk, så skal du naturligvis erstatte dette i
 
 <para>
 Hvis du kan se at alt fungerer, kan du slette den gamle
-<filename>/home</filename> som nu endte på
+<filename>/home</filename> som nu endte pÃ¥
 <filename>/oldhome</filename>. Brug <command>rm -rf /oldhome</command>,
-når du er helt sikker.
+nÃ¥r du er helt sikker.
 </para>
 
 <para>
-Det der kan gå galt her er, at man har links, som ikke peger på de
+Det der kan gÃ¥ galt her er, at man har links, som ikke peger pÃ¥ de
 rigtige steder efter flytningen. Med <filename>/home</filename> er dette
-normalt ikke tilfældet, men er det <filename>/usr</filename> du
-flytter, så skal du være meget forsigtig og altid lave disse
+normalt ikke tilfÃ¦ldet, men er det <filename>/usr</filename> du
+flytter, sÃ¥ skal du vÃ¦re meget forsigtig og altid lave disse
 operationer i enkeltbrugermodus (dvs. brug <command>init 1</command>).
 </para>
 
 <para>
-En guide til at opgrade harddiske kan findes på 
+En guide til at opgrade harddiske kan findes pÃ¥ 
 <ulink url="http://www.ibiblio.org/pub/Linux/docs/HOWTO/mini/other-formats/html_single/Hard-Disk-Upgrade.html">http://www.ibiblio.org/pub/Linux/docs/HOWTO/mini/other-formats/html_single/Hard-Disk-Upgrade.html</ulink>.
 </para>
 </sect2>
@@ -347,25 +347,25 @@ En guide til at opgrade harddiske kan findes på
 <title>Installation af RPM-programpakker</title>
 <indexterm><primary>RPM</primary></indexterm>
 <para>
-Gennem mange år har Unix-systemadministratoren skullet hente nye
-programmer hjem med kildetekst og derefter oversætte og installere.
-Det gik oftest nemt, men kunne fra tid til anden være meget svært. 
-Hvad værre var, man kunne typisk ikke afinstallere programmer uden at
-have 100 pct. styr på installationsfasen og styr på at andre programmer ikke
+Gennem mange Ã¥r har Unix-systemadministratoren skullet hente nye
+programmer hjem med kildetekst og derefter oversÃ¦tte og installere.
+Det gik oftest nemt, men kunne fra tid til anden vÃ¦re meget svÃ¦rt. 
+Hvad vÃ¦rre var, man kunne typisk ikke afinstallere programmer uden at
+have 100 pct. styr pÃ¥ installationsfasen og styr pÃ¥ at andre programmer ikke
 anvendte samme biblioteker. Alt i alt ganske problematisk og uden reel
-mulighed for at kunne opgradere systemet løbende.
+mulighed for at kunne opgradere systemet lÃ¸bende.
 </para>
 
 <para>
-Firmaet Red Hat og andre er i de senere år gået over til at
-oversætte programmer én gang for alle og så distribuere
-programpakker, som indeholder binær kode, biblioteker, manualsider og
+Firmaet Red Hat og andre er i de senere Ã¥r gÃ¥et over til at
+oversÃ¦tte programmer Ã©n gang for alle og sÃ¥ distribuere
+programpakker, som indeholder binÃ¦r kode, biblioteker, manualsider og
 andet. Fordelen ved disse programpakker er, at systemet kan holde
-styr på præcis hvad der er installeret.  Alle pakker undersøges for
-afhængigheder og du kan afinstallere pakker igen, hvis andre pakker
-ikke påvirkes af det. Red Hats format for programpakker kaldes RPM,
+styr pÃ¥ prÃ¦cis hvad der er installeret.  Alle pakker undersÃ¸ges for
+afhÃ¦ngigheder og du kan afinstallere pakker igen, hvis andre pakker
+ikke pÃ¥virkes af det. Red Hats format for programpakker kaldes RPM,
 som er en forkortelse for "Red Hat Package Management", hvilket vil sige
-Red Hats pakkehåndtering.
+Red Hats pakkehÃ¥ndtering.
 </para>
 
 <table>
@@ -387,28 +387,28 @@ Forklaring
 
 <row>
 <entry> <userinput>rpm -i pakke_version.rpm</userinput> </entry>
-<entry> Installér pakken</entry>
+<entry> InstallÃ©r pakken</entry>
 </row>
 
 <row>
 <entry> <userinput>rpm -ivh pakke_version.rpm</userinput> </entry>
-<entry>  Installér pakken med status vist. Tilføj option <literal>--nodeps</literal> hvis
-pakken skal installere uden at tjekke for manglende støttepakker.</entry>
+<entry>  InstallÃ©r pakken med status vist. TilfÃ¸j option <literal>--nodeps</literal> hvis
+pakken skal installere uden at tjekke for manglende stÃ¸ttepakker.</entry>
 </row>
 
 <row>
 <entry> <userinput>rpm -Uvh pakke_version.rpm</userinput> </entry>
 <entry>  Opgrader pakken med status vist. Hvis pakken ikke er installeret
-i forvejen vil den blive installeret. Tilføj option <literal>--nodeps</literal> hvis
-pakken skal installere uden at tjekke for manglende støttepakker.</entry>
+i forvejen vil den blive installeret. TilfÃ¸j option <literal>--nodeps</literal> hvis
+pakken skal installere uden at tjekke for manglende stÃ¸ttepakker.</entry>
 </row>
 
 <row>
 <entry> <userinput>rpm -Fvh pakke_version.rpm</userinput> </entry>
 <entry>  Opgrader pakken med status vist. Hvis pakken ikke er installeret
 i forvejen vil den <emphasis>ikke</emphasis> blive installeret. 
-Tilføj option <literal>--nodeps</literal> hvis pakken skal installere uden at tjekke for 
-manglende støttepakker.</entry>
+TilfÃ¸j option <literal>--nodeps</literal> hvis pakken skal installere uden at tjekke for 
+manglende stÃ¸ttepakker.</entry>
 </row>
 
 <row>
@@ -418,7 +418,7 @@ manglende støttepakker.</entry>
 
 <row>
 <entry> <userinput>rpm -e pakke</userinput> </entry>
-<entry> Afinstallér den installerede pakke.</entry>
+<entry> AfinstallÃ©r den installerede pakke.</entry>
 </row>
 
 <row>
@@ -459,7 +459,7 @@ manglende støttepakker.</entry>
 
 <row>
 <entry> <userinput>rpm -Va</userinput> </entry>
-<entry> Tjek alle RPM-installerede filer for ændringer siden
+<entry> Tjek alle RPM-installerede filer for Ã¦ndringer siden
 installation af pakkerne.
 </entry>
 </row>
@@ -476,16 +476,16 @@ installation af pakkerne.
 </indexterm>
 
 <para>
-Lad os illustrere styrken i RPM-programmet: Du sidder på en maskine
+Lad os illustrere styrken i RPM-programmet: Du sidder pÃ¥ en maskine
 som systemadministrator og opdaterer alle Linux-maskinerne i dit 
-netværk med én kommando - og endda med krypteret
-transmission, så ingen kan lytte med. Det er simpelthen
-administratorens drøm af et system. Nemt, sikkert og stabilt. Hvis
-alle maskiner, der skal opgraderes, er nævnt i filen
-<filename>/etc/serverlist</filename>, vil nedenstående magiske linje
+netvÃ¦rk med Ã©n kommando - og endda med krypteret
+transmission, sÃ¥ ingen kan lytte med. Det er simpelthen
+administratorens drÃ¸m af et system. Nemt, sikkert og stabilt. Hvis
+alle maskiner, der skal opgraderes, er nÃ¦vnt i filen
+<filename>/etc/serverlist</filename>, vil nedenstÃ¥ende magiske linje
 (ja, det er avanceret - men sejt, ikke sandt?) opgradere vim-pakken, som
 hentes fra ftp-serveren <filename>SERVER</filename>. Alle
-maskiner bliver lige opgraderet i ét hug!
+maskiner bliver lige opgraderet i Ã©t hug!
 
 <screen>
 <prompt>[root@linux /root]# </prompt><userinput>cat /etc/serverlist | \
@@ -501,33 +501,33 @@ maskiner bliver lige opgraderet i ét hug!
 
 <emphasis>Tip:</emphasis> Under installationen eller opgraderingen af
 en RPM-pakke sker det at den klager over at man mangler nogle filer.
-Det skyldes at RPM-pakken, som man er ved at installere, afhænger af
+Det skyldes at RPM-pakken, som man er ved at installere, afhÃ¦nger af
 andre RPM-pakker for at fungere, dvs. RPM-pakker som man enten mangler
-eller som man har, men af for gammel version. Et godt trick er at gå ind
-på <ulink url="http://www.rpmfind.net/linux/RPM/">http://www.rpmfind.net/linux/RPM/</ulink>. Her
-kan du søge efter RPM-pakker, men også efter filnavne og derved
+eller som man har, men af for gammel version. Et godt trick er at gÃ¥ ind
+pÃ¥ <ulink url="http://www.rpmfind.net/linux/RPM/">http://www.rpmfind.net/linux/RPM/</ulink>. Her
+kan du sÃ¸ge efter RPM-pakker, men ogsÃ¥ efter filnavne og derved
 oftest finde hvilke RPM-pakker du mangler.
 </para>
 </sect2>
 
 <sect2 id="rpm-build">
-<title>RPM for programmøren</title>
+<title>RPM for programmÃ¸ren</title>
 <indexterm>
- <primary>RPM for programmøren</primary>
+ <primary>RPM for programmÃ¸ren</primary>
  <secondary>Bygge selv</secondary>
 </indexterm>
 
 <para>
-RPM-filer opstår selvfølgelig ikke "af sig selv". Der skal
-bruges et værktøj til at lave dem - nemlig det samme
+RPM-filer opstÃ¥r selvfÃ¸lgelig ikke "af sig selv". Der skal
+bruges et vÃ¦rktÃ¸j til at lave dem - nemlig det samme
 <command>rpm</command>-program, som man bruger til alle de
 andre RPM-funktioner.
 </para>
 
 <para>
 <command>rpm</command>-programmet har en 
-<emphasis>build</emphasis>-funktion, som bruges når
-man skal lave sine egne rpm-filer. En 'build' består af flere
+<emphasis>build</emphasis>-funktion, som bruges nÃ¥r
+man skal lave sine egne rpm-filer. En 'build' bestÃ¥r af flere
 faser
 </para>
 
@@ -540,20 +540,20 @@ faser
 <listitem> 
  <para>
 <emphasis>setup</emphasis> - installation af patches og 
-opsætning af softwaren</para>
+opsÃ¦tning af softwaren</para>
 </listitem>
 <listitem> 
  <para>
-<emphasis>build</emphasis> - oversættelse (bygning) af softwaren</para>
+<emphasis>build</emphasis> - oversÃ¦ttelse (bygning) af softwaren</para>
 </listitem>
 <listitem> 
  <para>
-<emphasis>install</emphasis> - installation af program-, dokumentations- og opsætningsfiler i de korrekte kataloger.
+<emphasis>install</emphasis> - installation af program-, dokumentations- og opsÃ¦tningsfiler i de korrekte kataloger.
  </para>
 </listitem>
 <listitem> 
  <para>
-<emphasis>packaging</emphasis> - sammenpakning af kildetekst- og binære RPM-filer
+<emphasis>packaging</emphasis> - sammenpakning af kildetekst- og binÃ¦re RPM-filer
  </para>
 </listitem>
 <listitem> 
@@ -564,14 +564,14 @@ opsætning af softwaren</para>
 </itemizedlist>
 
 <para>
-Hver af disse faser kan kontrolleres fuldt ud gennem en opsætningsfil,
-som rpm-programmet bruger til hele build-processen. Denne opsætningsfil
-kaldes en <emphasis>spec</emphasis>-fil, og er den vigtigste fil at forstå, når
+Hver af disse faser kan kontrolleres fuldt ud gennem en opsÃ¦tningsfil,
+som rpm-programmet bruger til hele build-processen. Denne opsÃ¦tningsfil
+kaldes en <emphasis>spec</emphasis>-fil, og er den vigtigste fil at forstÃ¥, nÃ¥r
 man skal lave sine rpm-pakker.
 </para>
 
 <indexterm>
- <primary>RPM for programmøren</primary>
+ <primary>RPM for programmÃ¸ren</primary>
  <secondary>Katalogstruktur </secondary>
 </indexterm>
 
@@ -604,27 +604,27 @@ og patches, der bruges til build af en rpm-pakke</para>
 
 <para><command>BUILD</command> - er et 'arbejdskatalog' hvor 
 kildefilerne pakkes ud,
-og selve oversættelsen finder sted</para>
+og selve oversÃ¦ttelsen finder sted</para>
 </listitem>
 
   <listitem> 
-<para><command>RPMS</command> - er der hvor de færdige
-binære rpm-filer placeres.  Dette katalog har mindst to
+<para><command>RPMS</command> - er der hvor de fÃ¦rdige
+binÃ¦re rpm-filer placeres.  Dette katalog har mindst to
 underkataloger: <command>i386</command> til rpm-filer, der er rettet
 mod i386-platformen og <command>noarch</command> til rpm-filer, der
-ikke er platformsafhængige.</para>
+ikke er platformsafhÃ¦ngige.</para>
 </listitem>
 
   <listitem>
-<para><command>SRPMS</command> - er der hvor de færdige source 
+<para><command>SRPMS</command> - er der hvor de fÃ¦rdige source 
 rpm-filer placeres.</para>
 </listitem>
 </itemizedlist>
 
 <para>
-Inden man går i gang med at lave en rpm-fil, skal man sørge
+Inden man gÃ¥r i gang med at lave en rpm-fil, skal man sÃ¸rge
 for at have source-filerne lagt ned i kataloget SOURCES og en spec-fil
-i kataloget SPECS. Det kan man f.eks. gøre ved at installere en
+i kataloget SPECS. Det kan man f.eks. gÃ¸re ved at installere en
 source rpm-fil.
 </para>
 </sect3>    <!--   Katalog struktur -->
@@ -634,21 +634,21 @@ source rpm-fil.
   <title>En spec-fil til ssh (Secure Shell)</title>
 
 <indexterm>
- <primary>RPM for programmøren</primary>
+ <primary>RPM for programmÃ¸ren</primary>
  <secondary>En spec-fil til ssh (Secure Shell) </secondary>
 </indexterm>
 
 <para>
-Der har været en del skriveri om <command>ssh</command> på sslug
+Der har vÃ¦ret en del skriveri om <command>ssh</command> pÃ¥ sslug
 mailing-listen, og for nylig er der skrevet en god webside om hvordan man bruger
-dette program. ssh findes ikke i rpm-format, så det kunne være
-nyttigt at bruge det som eksempel på, hvordan
+dette program. ssh findes ikke i rpm-format, sÃ¥ det kunne vÃ¦re
+nyttigt at bruge det som eksempel pÃ¥, hvordan
 man laver en spec-fil og bruger den til at lave rpm-pakker.
 </para>
 
 <para>Hele spec-filen <filename>ssh.spec</filename> ligger i 
-underkataloget <filename>rpm</filename> til bogens eksempler på <ulink url="http://&linuxbogurl;/">&linuxbogurl;</ulink>,
-men lad os kigge på den i nogle mindre
+underkataloget <filename>rpm</filename> til bogens eksempler pÃ¥ <ulink url="http://&linuxbogurl;/">&linuxbogurl;</ulink>,
+men lad os kigge pÃ¥ den i nogle mindre
 bidder.
 </para>
 
@@ -673,14 +673,14 @@ other standard networking tools.
 </programlisting>
 
 <para>
-Starten på sådan en spec-fil er ret standardiseret. Der
+Starten pÃ¥ sÃ¥dan en spec-fil er ret standardiseret. Der
 er en stribe <emphasis>tags</emphasis> som man skal angive - 
 det er bl.a. al den
 information om pakken, som <command>rpm -i</command> kommandoen skal levere.
 </para>
 
 <para>
-Rækkefølgen af de enkelte tags er ligegyldig, bare de er
+RÃ¦kkefÃ¸lgen af de enkelte tags er ligegyldig, bare de er
 der.
 </para>
 <itemizedlist mark="bullet">
@@ -705,8 +705,8 @@ af, hvad pakken indeholder</para>
   <listitem>
 
 <para><emphasis>Release:</emphasis> RPM-pakkens 'build-nummer'
-- det er uafhængigt
-af selve programmets versionsnummer og bruges blot til at holde rede på
+- det er uafhÃ¦ngigt
+af selve programmets versionsnummer og bruges blot til at holde rede pÃ¥
 forskellige versioner af denne rpm-pakke med samme udgave af programmet
 i.</para>
 
@@ -735,30 +735,30 @@ gruppere pakkerne - f.eks.
 <listitem>
 
 <para><emphasis>Description:</emphasis> 
-Det er den lange beskrivelse af softwaren, og strækker
-sig derfor over flere linjer - faktisk så mange man har lyst til,
+Det er den lange beskrivelse af softwaren, og strÃ¦kker
+sig derfor over flere linjer - faktisk sÃ¥ mange man har lyst til,
 indtil der kommer en linje som begynder med et procenttegn.</para>
 </listitem>
 </itemizedlist>
 
 <para>
- <emphasis>Source</emphasis>-tag'en er vigtig - her fortæller man, hvor man har
+ <emphasis>Source</emphasis>-tag'en er vigtig - her fortÃ¦ller man, hvor man har
 fundet den oprindelige source-fil til programmet, gerne med en URL. Det
-er en dårlig idé kun at skrive filnavnet - så ved man ikke,
-hvor man skal gå hen for at finde eventuelle nyere versioner af programmet.
-Bemærk: Filnavnet der står her, <emphasis>skal</emphasis> matche det filnavn,
+er en dÃ¥rlig idÃ© kun at skrive filnavnet - sÃ¥ ved man ikke,
+hvor man skal gÃ¥ hen for at finde eventuelle nyere versioner af programmet.
+BemÃ¦rk: Filnavnet der stÃ¥r her, <emphasis>skal</emphasis> matche det filnavn,
 der ligger i <filename>SOURCES</filename>-kataloget. 
-Så med eksemplet, skal <filename>SOURCES</filename>-kataloget indeholde 
+SÃ¥ med eksemplet, skal <filename>SOURCES</filename>-kataloget indeholde 
 filen <filename>ssh-1.2.25.tar.gz</filename>.
 </para>
 
 <para> <emphasis>Patch</emphasis>-tag'en
-er også vigtig - det er ændringer til
+er ogsÃ¥ vigtig - det er Ã¦ndringer til
 de oprindelige sources (i form af patches) som skal installeres inden 
-programmet kan oversættes. Disse skal også ligge i 
+programmet kan oversÃ¦ttes. Disse skal ogsÃ¥ ligge i 
 <filename>SOURCES</filename>-kataloget.
-I eksemplet er der kun én patch; hvis man har flere, skal de nummereres,
-og så lister man dem en ad gangen (en patch uden nummer er automatisk
+I eksemplet er der kun Ã©n patch; hvis man har flere, skal de nummereres,
+og sÃ¥ lister man dem en ad gangen (en patch uden nummer er automatisk
 nummer nul):
 </para>
 
@@ -769,23 +769,23 @@ nummer nul):
 </programlisting>
 
 <para> 
-<emphasis>BuildRoot</emphasis>-tag'en er ikke krævet, men anbefales. Det er
+<emphasis>BuildRoot</emphasis>-tag'en er ikke krÃ¦vet, men anbefales. Det er
 <emphasis>ikke</emphasis> det katalog, hvori programmerne bliver oversat, men derimod
-det toplevel-katalog, hvori de oversatte programmer og øvrige
+det toplevel-katalog, hvori de oversatte programmer og Ã¸vrige
 filer placeres i installationsfasen, inden de pakkes sammen i rpm-filerne.
 Hvis ikke man bruger en BuildRoot-tag er default at filerne placeres i
-de "rigtige" kataloger - <filename>/usr/bin</filename>, <filename>/etc</filename>, <filename>/usr/lib</filename> osv. Det gør
-måske ikke noget, men hvis der er opsætningsfiler involveret
-er det en rigtig god idé at bruge BuildRoot-tag'en; ellers kan man nemt
-risikere at komme til at overskrive sine egne omhyggeligt tilpassede opsætningsfiler
-undervejs i build-processen, eller (måske endnu værre) komme
-til at inkludere sine egne opsætningsfiler i rpm-pakken, som hentes
+de "rigtige" kataloger - <filename>/usr/bin</filename>, <filename>/etc</filename>, <filename>/usr/lib</filename> osv. Det gÃ¸r
+mÃ¥ske ikke noget, men hvis der er opsÃ¦tningsfiler involveret
+er det en rigtig god idÃ© at bruge BuildRoot-tag'en; ellers kan man nemt
+risikere at komme til at overskrive sine egne omhyggeligt tilpassede opsÃ¦tningsfiler
+undervejs i build-processen, eller (mÃ¥ske endnu vÃ¦rre) komme
+til at inkludere sine egne opsÃ¦tningsfiler i rpm-pakken, som hentes
 af tusindvis af brugere. (F.eks. havde jeg en overgang password-filerne
-til min ISP liggende på ftp.sslug.dk, i en ppp-RPM-pakke). BuildRoot-tag'en
-er dog ofte lidt besværlig, da man næsten altid skal
+til min ISP liggende pÃ¥ ftp.sslug.dk, i en ppp-RPM-pakke). BuildRoot-tag'en
+er dog ofte lidt besvÃ¦rlig, da man nÃ¦sten altid skal
 rette i programmets 'Makefile' eller installationsscript, for at de kan
 finde ud af at installere pakkerne et andet sted end det normale. Men det
-er ulejligheden værd.
+er ulejligheden vÃ¦rd.
 </para>
 </sect3>    <!--   En spec-fil til ssh (Secure Shell) -->
 
@@ -794,15 +794,15 @@ er ulejligheden værd.
   <title>prep-fasen</title>
 
 <indexterm>
- <primary>RPM for programmøren</primary>
+ <primary>RPM for programmÃ¸ren</primary>
  <secondary>prep-fasen </secondary>
 </indexterm>
 
 <para>
-<emphasis>prep</emphasis> (prepare) fasen består almindeligvis blot i udpakning
+<emphasis>prep</emphasis> (prepare) fasen bestÃ¥r almindeligvis blot i udpakning
 af source-filerne til et underkatalog under BUILD. <command>rpm</command>'s <literal>build</literal>-funktion
-kan automatisk håndtere tar-arkiver (også komprimerede), så
-normalt kan man blot nøjes med at skrive:
+kan automatisk hÃ¥ndtere tar-arkiver (ogsÃ¥ komprimerede), sÃ¥
+normalt kan man blot nÃ¸jes med at skrive:
 </para>
 
 <programlisting>
@@ -810,7 +810,7 @@ normalt kan man blot nøjes med at skrive:
 </programlisting>
 
 <para>
-i spec-filen, og så går det af sig selv.
+i spec-filen, og sÃ¥ gÃ¥r det af sig selv.
 </para>
 </sect3>    <!--   prep-fasen -->
 
@@ -818,7 +818,7 @@ i spec-filen, og så går det af sig selv.
 <sect3 id="setup-fasen">
   <title>setup-fasen</title>
 <indexterm>
- <primary>RPM for programmøren</primary>
+ <primary>RPM for programmÃ¸ren</primary>
  <secondary>setup-fasen </secondary>
 </indexterm>
 
@@ -833,31 +833,31 @@ i spec-filen, og så går det af sig selv.
 </programlisting>
 
 <para>
-Denne fase skal gøre programmet klart til at blive oversat. Typisk
-skal der først installeres de forskellige <emphasis>patches</emphasis> som man
-har listet, og dernæst skal programmet måske konfigureres.
+Denne fase skal gÃ¸re programmet klart til at blive oversat. Typisk
+skal der fÃ¸rst installeres de forskellige <emphasis>patches</emphasis> som man
+har listet, og dernÃ¦st skal programmet mÃ¥ske konfigureres.
 </para>
 
 <para>
-De linjer der står efter <literal>%setup</literal> 
+De linjer der stÃ¥r efter <literal>%setup</literal> 
 er i virkeligheden almindelige
 <command>/bin/sh</command>-kommandoer. Dog er der defineret nogle makroer, som <command>rpm</command>'s <literal>build</literal>-funktion
-håndterer, inden de overgives til kommandofortolkeren - en af makroerne
+hÃ¥ndterer, inden de overgives til kommandofortolkeren - en af makroerne
 er <literal>%patch</literal>. 
-Denne makro kører <command>patch</command>-programmet, med
+Denne makro kÃ¸rer <command>patch</command>-programmet, med
 patch nummer nul som input. For at apply'e patch nummer 1 skriver man <literal>%patch1</literal>,
-patch nummer 2 er <literal>%patch2</literal> osv. Rækkefølgen af de
-forskellige patches er ligegyldig, så længe patch-programmet
-kan finde ud af det. Man kan også sagtens springe patches over, f.eks.
+patch nummer 2 er <literal>%patch2</literal> osv. RÃ¦kkefÃ¸lgen af de
+forskellige patches er ligegyldig, sÃ¥ lÃ¦nge patch-programmet
+kan finde ud af det. Man kan ogsÃ¥ sagtens springe patches over, f.eks.
 hvis de ikke er relevante for den platform man builder til.
 </para>
 
-<para>Inden kommandoerne i setup-fasen afvikles, sættes default-kataloget
+<para>Inden kommandoerne i setup-fasen afvikles, sÃ¦ttes default-kataloget
 til <filename>/usr/src/redhat/BUILD/</filename><emphasis>pakkenavn-version</emphasis>, dvs. <filename>/usr/src/redhat/BUILD/ssh-1.2.25</filename>
 i eksemplet. Hvis source-arkivet ikke er blevet pakket ud til det katalognavn
 (f.eks. bruger nogle source-arkiver en underscore i stedet for en
-bindestreg), så angiver man det rigtige katalognavn
-på <literal>%setup</literal>-linjen, f.eks.:
+bindestreg), sÃ¥ angiver man det rigtige katalognavn
+pÃ¥ <literal>%setup</literal>-linjen, f.eks.:
 </para>
 
 <programlisting> 
@@ -870,20 +870,20 @@ hvis source-filerne er havnet i
 </para>
 
 <para>
-Default-kataloget er også vigtigt at kende, når man vælger
+Default-kataloget er ogsÃ¥ vigtigt at kende, nÃ¥r man vÃ¦lger
 hvilke options man giver til patch-programmet. I eksemplet kaldes patch
 med <command>-p1</command>-option, fordi patch-filen indeholder <literal>ssh_1.2.25</literal> som
-første element i filnavnet. Men da default-kataloget allerede er
-nede i ssh-1.2.25, bruges -p1-option for at fjerne det første katalog-element
-fra filnavnet, inden patch leder efter de filer den skal ændre.
+fÃ¸rste element i filnavnet. Men da default-kataloget allerede er
+nede i ssh-1.2.25, bruges -p1-option for at fjerne det fÃ¸rste katalog-element
+fra filnavnet, inden patch leder efter de filer den skal Ã¦ndre.
 </para>
 
-<para> Opsætning af programmet kan ske på mange måder - her er det
+<para> OpsÃ¦tning af programmet kan ske pÃ¥ mange mÃ¥der - her er det
 et configure-script, som kaldes med en option om, at filerne skal
-bruge <command>/usr</command> som præfiks (default er ofte
-<filename>/usr/local</filename>, som jeg foretrækker at reservere til
+bruge <command>/usr</command> som prÃ¦fiks (default er ofte
+<filename>/usr/local</filename>, som jeg foretrÃ¦kker at reservere til
 ikke-rpm-styrede programmer). Andre programpakker konfigureres via en
-headerfil eller ved at ændre i Makefile - så må man lave en patch
+headerfil eller ved at Ã¦ndre i Makefile - sÃ¥ mÃ¥ man lave en patch
 mellem den oprindelige fil og den rettede, og installere den som en
 patch i patch-listen.
 </para>
@@ -891,7 +891,7 @@ patch i patch-listen.
 <para>
 Kommandoen <command>rpm -bp specfile</command>
 vil afvikle prep- og setup-fasen,
-og kan bruges til at "teste" om alle ens patches nu også kan installeres
+og kan bruges til at "teste" om alle ens patches nu ogsÃ¥ kan installeres
 uden problemer.
 </para>
 </sect3>    <!--   setup fasen -->
@@ -901,15 +901,15 @@ uden problemer.
   <title>build-fasen</title>
 
 <indexterm>
- <primary>RPM for programmøren</primary>
+ <primary>RPM for programmÃ¸ren</primary>
  <secondary>build-fasen </secondary>
 </indexterm>
 
 <para>
-<emphasis>build</emphasis>-fasen er der, hvor programmerne oversættes, og ofte
-er det blot at køre make. Ligesom ved setup-fasen, er default-kataloget
+<emphasis>build</emphasis>-fasen er der, hvor programmerne oversÃ¦ttes, og ofte
+er det blot at kÃ¸re make. Ligesom ved setup-fasen, er default-kataloget
 sat til der hvor source-filerne blev pakket ud - hvis man
-brugte <command>-n</command>-optionen til setup-fasen, så bliver det "husket" så man ikke
+brugte <command>-n</command>-optionen til setup-fasen, sÃ¥ bliver det "husket" sÃ¥ man ikke
 skal skrive den igen.
 </para>
 
@@ -921,28 +921,28 @@ skal skrive den igen.
 <para>
 Her er der dog givet nogle parametre til make-kommandoen. 
 CFLAGS bliver
-sat til $RPM_OPT_FLAGS - det er en miljøvariabel som <command>rpm</command>'s <literal>build</literal>-funktion
+sat til $RPM_OPT_FLAGS - det er en miljÃ¸variabel som <command>rpm</command>'s <literal>build</literal>-funktion
 giver med til alle kommandoerne i build-fasen og som indeholder standard
-"optimizer"-indstillingerne for programmer, som oversættes med rpm.
-Default er det <literal>-O2 -m486 -fno-strength-reduce</literal> på 
+"optimizer"-indstillingerne for programmer, som oversÃ¦ttes med rpm.
+Default er det <literal>-O2 -m486 -fno-strength-reduce</literal> pÃ¥ 
 i386-platformen.
 </para>
 
 <para>
-Kommandoen <command>rpm -bc specfile</command> vil først afvikle prep- og
-setup-faserne og dernæst build-fasen. Hvis man har travlt og allerede
+Kommandoen <command>rpm -bc specfile</command> vil fÃ¸rst afvikle prep- og
+setup-faserne og dernÃ¦st build-fasen. Hvis man har travlt og allerede
 har brugt <command>rpm -bp</command> til at afvikle prep og setup, 
 kan man bruge
-<command>rpm -bc --short-circuit specfile</command> for bare at køre build-fasen.
+<command>rpm -bc --short-circuit specfile</command> for bare at kÃ¸re build-fasen.
 </para>
 
 <para>Det er typisk under build-fasen, at man ramler ind i de fleste problemer.
-Her kan det være nyttigt at glemme rpm et øjeblik og i stedet
-gå ned i build-kataloget og køre build-kommandoerne manuelt,
-indtil man har fået rettet det hele og programmet kan oversættes.
-Så laver man en patch-fil med sine ændringer, tilføjer
-den til spec-filen (husk at få den med i <literal>%setup</literal>-fasen!),
-og går så tilbage til at builde med rpm.
+Her kan det vÃ¦re nyttigt at glemme rpm et Ã¸jeblik og i stedet
+gÃ¥ ned i build-kataloget og kÃ¸re build-kommandoerne manuelt,
+indtil man har fÃ¥et rettet det hele og programmet kan oversÃ¦ttes.
+SÃ¥ laver man en patch-fil med sine Ã¦ndringer, tilfÃ¸jer
+den til spec-filen (husk at fÃ¥ den med i <literal>%setup</literal>-fasen!),
+og gÃ¥r sÃ¥ tilbage til at builde med rpm.
 </para>
 </sect3>    <!--   build fasen -->
 
@@ -951,21 +951,21 @@ og går så tilbage til at builde med rpm.
   <title>install fasen</title>
 
 <indexterm>
- <primary>RPM for programmøren</primary>
+ <primary>RPM for programmÃ¸ren</primary>
  <secondary>install fasen </secondary>
 </indexterm>
 
 <para>
 <emphasis>install</emphasis>-fasen
-sørger for at installere de nu oversatte programmer
-på de rigtige steder i katalogstrukturen. Oftest sker det med
+sÃ¸rger for at installere de nu oversatte programmer
+pÃ¥ de rigtige steder i katalogstrukturen. Oftest sker det med
 kommandoen 'make install', da de fleste pakker heldigvis selv kan finde
-ud af at installere sig selv. Men ellers må man selv skrive de kommandoer
-der skal til - enten <command>cp</command>, <command>install</command> eller hvad man nu foretrækker.
+ud af at installere sig selv. Men ellers mÃ¥ man selv skrive de kommandoer
+der skal til - enten <command>cp</command>, <command>install</command> eller hvad man nu foretrÃ¦kker.
 </para>
 
-<para>Det er også vigtigt, at man sørger for at de installerede
-filer får korrekt ejer/gruppe-attributter og permissions.
+<para>Det er ogsÃ¥ vigtigt, at man sÃ¸rger for at de installerede
+filer fÃ¥r korrekt ejer/gruppe-attributter og permissions.
 </para>
 
 <para>
@@ -990,47 +990,47 @@ ssh spec-filen er lidt mere kompliceret end normalt:
 En del af kompleksiteten skyldes brugen af 
 <literal>BuildRoot</literal>-tag'en -
 inden filerne kan installeres, skal det sikres at det katalog vi installerer
-i er tomt. Derfor slettes det først, og oprettes så bagefter
+i er tomt. Derfor slettes det fÃ¸rst, og oprettes sÃ¥ bagefter
 igen, hvorefter <command>make install</command> klarer resten.
-Det er dog ikke sket uden at jeg måtte ændre i Makefile - men det blev
+Det er dog ikke sket uden at jeg mÃ¥tte Ã¦ndre i Makefile - men det blev
 gjort med den patch, der blev installeret helt tilbage i setup-fasen.
 </para>
 
-<para> Normalt vil <command>make install</command> til ssh sørge for
+<para> Normalt vil <command>make install</command> til ssh sÃ¸rge for
 at generere filen <emphasis>/etc/ssh_host_key</emphasis>, som er en
-del af ssh's krypteringsnøglesæt.  Men det vil jo ikke være smart at
-inkludere den fil i rpm-pakken; så ville alle som brugte rpm-pakken jo
-have denne nøgle til fælles. Derfor er denne del af installationen
+del af ssh's krypteringsnÃ¸glesÃ¦t.  Men det vil jo ikke vÃ¦re smart at
+inkludere den fil i rpm-pakken; sÃ¥ ville alle som brugte rpm-pakken jo
+have denne nÃ¸gle til fÃ¦lles. Derfor er denne del af installationen
 fjernet fra Makefile'n, og i stedet lagt ud som et <emphasis>post-install
-script</emphasis> - det står under <literal>%post.</literal>
+script</emphasis> - det stÃ¥r under <literal>%post.</literal>
 </para>
 
 <para>
-Disse kommandoer vil blive afviklet <emphasis>når brugeren installerer den
-færdige rpm-pakke</emphasis>, dvs. hver eneste gang ssh-pakken
-bliver installeret på en pc. Derved får hver enkelt pc sin egen
-nøgle-fil.
+Disse kommandoer vil blive afviklet <emphasis>nÃ¥r brugeren installerer den
+fÃ¦rdige rpm-pakke</emphasis>, dvs. hver eneste gang ssh-pakken
+bliver installeret pÃ¥ en pc. Derved fÃ¥r hver enkelt pc sin egen
+nÃ¸gle-fil.
 </para>
 
-<para><literal>%post</literal> bruges også til andre ting - hvis man laver en
-rpm-pakke med et shared library i, er det en god idé at køre 
+<para><literal>%post</literal> bruges ogsÃ¥ til andre ting - hvis man laver en
+rpm-pakke med et shared library i, er det en god idÃ© at kÃ¸re 
 <command>/sbin/ldconfig</command>
 i et post-install script; derved opdaterer man den dynamiske linkers tabel
-over hvilke biblioteker der er installeret, og det kan så bruges
+over hvilke biblioteker der er installeret, og det kan sÃ¥ bruges
 med det samme (uden at man skal reboote systemet).
 </para>
 
 <para>
-Der er andre af sådanne scripts, som man kan definere: 
+Der er andre af sÃ¥danne scripts, som man kan definere: 
 <literal>%post-un</literal>
-afvikles når man afinstallerer en rpm-pakke, og der er også
+afvikles nÃ¥r man afinstallerer en rpm-pakke, og der er ogsÃ¥
 pre-install (<literal>%pre</literal>) og pre-uninstall (<literal>%pre-un</literal>) scripts.&nbsp;
-De kan selvfølgelig kombineres.
+De kan selvfÃ¸lgelig kombineres.
 </para>
 
 <para>
-Install-fasen køres med kommandoen <command>rpm -bi specfile</command>
-- man kan også her bruge <literal>--short-circuit</literal> 
+Install-fasen kÃ¸res med kommandoen <command>rpm -bi specfile</command>
+- man kan ogsÃ¥ her bruge <literal>--short-circuit</literal> 
 for kun at afvikle denne fase.
 </para>
 </sect3>    <!--   install-fasen -->
@@ -1040,14 +1040,14 @@ for kun at afvikle denne fase.
   <title>sektionen files</title>
 
 <indexterm>
- <primary>RPM for programmøren</primary>
+ <primary>RPM for programmÃ¸ren</primary>
  <secondary>sektionen files </secondary>
 </indexterm>
 
 <para>
-Når filerne er blevet installeret, så er det eneste der mangler
-at pakke dem sammen i en binær rpm-fil. For at kunne gøre
-det, er det nødvendigt at opremse alle de filer, der er en del af
+NÃ¥r filerne er blevet installeret, sÃ¥ er det eneste der mangler
+at pakke dem sammen i en binÃ¦r rpm-fil. For at kunne gÃ¸re
+det, er det nÃ¸dvendigt at opremse alle de filer, der er en del af
 pakken - det sker i sektionen <literal>%files</literal>.
 </para>
 
@@ -1067,48 +1067,48 @@ pakken - det sker i sektionen <literal>%files</literal>.
 <para> 
 Filerne listes blot med deres fulde path-navn (man ser bort fra
 evt. <emphasis>BuildRoot</emphasis> her). Hvis en fil er en
-opsætningsfil, <emphasis>skal</emphasis> man skrive
-<literal>%config</literal> før filnavnet; det fortæller
-rpm-programmet, at denne fil ikke må slettes eller overskrives når man
+opsÃ¦tningsfil, <emphasis>skal</emphasis> man skrive
+<literal>%config</literal> fÃ¸r filnavnet; det fortÃ¦ller
+rpm-programmet, at denne fil ikke mÃ¥ slettes eller overskrives nÃ¥r man
 opdaterer pakken, men skal gemmes som en <filename>.rpmsave</filename>-fil.
 </para>
 
 <para>
-Dokumentationsfiler listes med <literal>%doc</literal> - og dem behøver
+Dokumentationsfiler listes med <literal>%doc</literal> - og dem behÃ¸ver
 man ikke at bekymre sig om at skulle installere. De kopieres automatisk
 fra det katalog, hvor source-arkivet er blevet udpakket. Dokumentationsfiler
 placeres i <filename>/usr/doc/</filename><emphasis>pakkenavn-version</emphasis>-kataloget. Hvilke
-filer man tager med som dokumentationsfiler er selvfølgelig et
-skøn, men hellere lidt for mange end for få. (Når man
-installerer en rpm-pakke kan man bede om ikke at få dokumentationsfilerne
+filer man tager med som dokumentationsfiler er selvfÃ¸lgelig et
+skÃ¸n, men hellere lidt for mange end for fÃ¥. (NÃ¥r man
+installerer en rpm-pakke kan man bede om ikke at fÃ¥ dokumentationsfilerne
 med - ved at bruge <literal>--excludedocs</literal>-optionen).
 </para>
 
-<para>Bemærk, at man-pages 
+<para>BemÃ¦rk, at man-pages 
 <emphasis>ikke</emphasis> regnes under dokumentation -
-de betragtes som en essentiel del af pakken, på lige fod med selve
+de betragtes som en essentiel del af pakken, pÃ¥ lige fod med selve
 programmet.
 </para>
 
-<para>Det er selvfølgelig vigtigt, at man får alle filerne med,
-som hører til pakken. Det kan være nyttigt at køre
+<para>Det er selvfÃ¸lgelig vigtigt, at man fÃ¥r alle filerne med,
+som hÃ¸rer til pakken. Det kan vÃ¦re nyttigt at kÃ¸re
 <command>make -n install</command> 
 for bare at se hvad pakken foretager sig under installationen,
-og holde øje med hvilke filer der kommer hvorhen.
+og holde Ã¸je med hvilke filer der kommer hvorhen.
 </para>
 
 <para>
-Hvis en pakke indeholder så mange filer, at de har deres eget
-underkatalog, kan man nøjes med at specificere kataloget - så
-følger alle filerne deri automatisk med. Det <emphasis>skal</emphasis> dog være
-et katalog, der kun bruges af den pågældende pakke - ellers
-kan man få sig nogle overraskelser.
+Hvis en pakke indeholder sÃ¥ mange filer, at de har deres eget
+underkatalog, kan man nÃ¸jes med at specificere kataloget - sÃ¥
+fÃ¸lger alle filerne deri automatisk med. Det <emphasis>skal</emphasis> dog vÃ¦re
+et katalog, der kun bruges af den pÃ¥gÃ¦ldende pakke - ellers
+kan man fÃ¥ sig nogle overraskelser.
 </para>
 
-<para>Det er også muligt at angive, at et tomt katalog er en del af
-pakken - det vil typisk være et katalog til f.eks. log-filer, som
-der jo ikke er nogen af når man laver rpm-filen, men som skal findes
-for at programmet kan køre. Det skal opremses i sektionen 
+<para>Det er ogsÃ¥ muligt at angive, at et tomt katalog er en del af
+pakken - det vil typisk vÃ¦re et katalog til f.eks. log-filer, som
+der jo ikke er nogen af nÃ¥r man laver rpm-filen, men som skal findes
+for at programmet kan kÃ¸re. Det skal opremses i sektionen 
 <literal>%files</literal> som
 </para>
 
@@ -1122,13 +1122,13 @@ for at programmet kan køre. Det skal opremses i sektionen
 <sect3 id="ultimativ-build">
   <title>Den ultimative build-kommando</title>
 <indexterm>
- <primary>RPM for programmøren</primary>
+ <primary>RPM for programmÃ¸ren</primary>
  <secondary>Den ultimative build-kommando </secondary>
 </indexterm>
 
 <para>
-Når man har en spec-fil, som er helt på plads, kan man bruge
-en enkelt rpm-kommando til at køre gennem hele build-fasen og generere
+NÃ¥r man har en spec-fil, som er helt pÃ¥ plads, kan man bruge
+en enkelt rpm-kommando til at kÃ¸re gennem hele build-fasen og generere
 rpm-filerne:
 </para>
 
@@ -1138,34 +1138,34 @@ rpm-filerne:
 
 <para>
 Den kommando klarer det hele: Udpakning af sources, installation af
-patches, opsætning af programmet, oversættelse, installation,
-sammenpakning i rpm-filer og oprydning bagefter så BUILD-kataloget
-er pænt og ryddeligt.
+patches, opsÃ¦tning af programmet, oversÃ¦ttelse, installation,
+sammenpakning i rpm-filer og oprydning bagefter sÃ¥ BUILD-kataloget
+er pÃ¦nt og ryddeligt.
 </para>    <!--   Den ultimative build-kommando -->
 </sect3>
 
 <sect3 id="rpm-besvaer">
-  <title>Sikke et besvær!</title>
+  <title>Sikke et besvÃ¦r!</title>
 <para>
-Det er selvfølgelig lidt mere omstændeligt at lave en rpm-fil,
-end bare at hælde et program igennem en oversætter og ned i 
+Det er selvfÃ¸lgelig lidt mere omstÃ¦ndeligt at lave en rpm-fil,
+end bare at hÃ¦lde et program igennem en oversÃ¦tter og ned i 
 <filename>/usr/local</filename>.
-Nogle gange kan det være frustrerende små detaljer i spec-filen,
-som gør at en build fejler - og det er som regel først efter,
-at din pc har tygget et par timer på at oversætte programmet...
+Nogle gange kan det vÃ¦re frustrerende smÃ¥ detaljer i spec-filen,
+som gÃ¸r at en build fejler - og det er som regel fÃ¸rst efter,
+at din pc har tygget et par timer pÃ¥ at oversÃ¦tte programmet...
 </para>
 
 <para>
-Men min erfaring er, at den tid man bruger på at nørkle en ordentlig
+Men min erfaring er, at den tid man bruger pÃ¥ at nÃ¸rkle en ordentlig
 spec-fil sammen, er godt givet ud. Det er <emphasis>meget</emphasis>
-nemmere at holde styr på sin software, når man med en enkelt kommando
-kan få en oversigt over, hvad der er installeret og hvilke filer hver
+nemmere at holde styr pÃ¥ sin software, nÃ¥r man med en enkelt kommando
+kan fÃ¥ en oversigt over, hvad der er installeret og hvilke filer hver
 pakke indeholder.
 </para>
 
 <para>
-For nogle år siden opgraderede jeg mit system fra Red Hat 4.2 til 5.1. Det var
-en større opgradering, bl.a. fordi der skiftes fra de gamle
+For nogle Ã¥r siden opgraderede jeg mit system fra Red Hat 4.2 til 5.1. Det var
+en stÃ¸rre opgradering, bl.a. fordi der skiftes fra de gamle
 libc (version 5) til det nye glibc (version 6). Red Hats installationsprogram
 klarede det meste af opgraderingen uden problemer, men jeg havde en del
 software-pakker, som jeg selv havde lavet i rpm-format. Nu var det nemt
@@ -1177,23 +1177,23 @@ at finde dem frem - jeg kunne bruge
 </screen>
 
 <para>
-til at liste alle pakker på mit system og filtrere Red Hats nye
-pakker fra. Det blev til en liste på 10-15 pakker, som jeg selv måtte
-stå for at opdatere til glibc - og fordi jeg havde installeret dem
+til at liste alle pakker pÃ¥ mit system og filtrere Red Hats nye
+pakker fra. Det blev til en liste pÃ¥ 10-15 pakker, som jeg selv mÃ¥tte
+stÃ¥ for at opdatere til glibc - og fordi jeg havde installeret dem
 liggende som RPM-pakker, kunne jeg nemt gentage build-processen, og rette
-de småting der skulle til for at de kunne oversættes med glibc.
-Selv programmer, jeg sidst havde haft fat i for 2 år siden kunne
-nemt genoversættes - fordi spec-filen indeholdt alle de oplysninger,
-der skulle til for at lave programmet. Jeg behøvede ikke at granske
+de smÃ¥ting der skulle til for at de kunne oversÃ¦ttes med glibc.
+Selv programmer, jeg sidst havde haft fat i for 2 Ã¥r siden kunne
+nemt genoversÃ¦ttes - fordi spec-filen indeholdt alle de oplysninger,
+der skulle til for at lave programmet. Jeg behÃ¸vede ikke at granske
 hukommelsen for at komme i tanke om, hvordan det nu var jeg havde konfigureret
 programmet sidst.
 </para>
 
 <para>
-Så bare klø på - det lønner sig.
+SÃ¥ bare klÃ¸ pÃ¥ - det lÃ¸nner sig.
 </para>
-</sect3>    <!--   Sikke et besvær! -->
-</sect2>    <!--   RPM for programmøren -->
+</sect3>    <!--   Sikke et besvÃ¦r! -->
+</sect2>    <!--   RPM for programmÃ¸ren -->
 
 
 <sect2 id="bygge-rpm-fra-src-rpm">
@@ -1205,10 +1205,10 @@ Så bare klø på - det lønner sig.
 </indexterm>
 
 <para>
-I dette afsnit ser vi på hvordan man bygger en RPM-pakke ud fra 
+I dette afsnit ser vi pÃ¥ hvordan man bygger en RPM-pakke ud fra 
 kilde-RPM-filen, dvs. en <filename>.src.rpm</filename>-fil. 
-Man behøver faktisk ikke at være root for at bygge en RPM-fil. 
-Du skal blot gøre følgende:
+Man behÃ¸ver faktisk ikke at vÃ¦re root for at bygge en RPM-fil. 
+Du skal blot gÃ¸re fÃ¸lgende:
 </para>
 
 <screen>
@@ -1222,15 +1222,15 @@ Du skal blot gøre følgende:
 </screen>
 
 <para>
-Når du så har hentet en <filename>.src.rpm</filename>-fil, f.eks. 
-<filename>dos2unix-3.1-3.src.rpm</filename>, så kan du skrive
+NÃ¥r du sÃ¥ har hentet en <filename>.src.rpm</filename>-fil, f.eks. 
+<filename>dos2unix-3.1-3.src.rpm</filename>, sÃ¥ kan du skrive
 </para>
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>rpmbuild --rebuild  dos2unix-3.1-3.src.rpm</userinput>
 dos2unix-3.1-3.src.rpm
 Installerer dos2unix-3.1-3.src.rpm
-Udfører(%prep): /bin/sh -e /var/tmp/rpm-tmp.61717
+UdfÃ¸rer(%prep): /bin/sh -e /var/tmp/rpm-tmp.61717
 + umask 022
 + cd /home/pto/rpm/BUILD
 + cd /home/pto/rpm/BUILD
@@ -1245,7 +1245,7 @@ og en masse flere linjer.
 </para>
 
 <para>
-Hvis alt går godt ender din 
+Hvis alt gÃ¥r godt ender din 
 <filename>din-nyligt-hentede.i386.rpm</filename> i
 <filename>$HOME/rpm/RPMS/i386/</filename> og du kan nu installere 
 (som root) med <command>rpm -Uvh 
@@ -1263,18 +1263,18 @@ Har du en Alpha og ikke en pc, da kommer pakken ikke til at hedde
 </indexterm>
 
 <para>
-<command>chkconfig</command> er et nyttigt lille værktøj til ændringer i
-services i et runlevel. Værktøjet følger med Red Hat og Mandrake.
+<command>chkconfig</command> er et nyttigt lille vÃ¦rktÃ¸j til Ã¦ndringer i
+services i et runlevel. VÃ¦rktÃ¸jet fÃ¸lger med Red Hat og Mandrake.
 </para>
 
 <para>
-Antag, at du har en service <command>foo</command>, som du ønsker at 
-tilføje til runlevel 3. Du har installeret (måske gennem 
+Antag, at du har en service <command>foo</command>, som du Ã¸nsker at 
+tilfÃ¸je til runlevel 3. Du har installeret (mÃ¥ske gennem 
 <command>rpm</command>) et script i kataloget 
-<filename>/etc/rc.d/init.d</filename>, som følger de gængse retningslinjer
+<filename>/etc/rc.d/init.d</filename>, som fÃ¸lger de gÃ¦ngse retningslinjer
 for service-scripts (dvs. at en service startes op vha. <command>foo start</command>
 og lukkes ned vha. <command>foo stop</command>). Nedenfor ser du hvordan
-den nye service tilføjes. Bemærk, at der er to minus-tegn foran "level"
+den nye service tilfÃ¸jes. BemÃ¦rk, at der er to minus-tegn foran "level"
 </para>
 
 <screen>
@@ -1284,12 +1284,12 @@ den nye service tilføjes. Bemærk, at der er to minus-tegn foran "level"
 
 
 <para>
-Bliver du træt af servicen <command>foo</command> kan du naturligvis
+Bliver du trÃ¦t af servicen <command>foo</command> kan du naturligvis
 fjerne den.  Du udskifter blot <emphasis>on</emphasis> med
-<emphasis>off</emphasis>. Du kan også bruge
+<emphasis>off</emphasis>. Du kan ogsÃ¥ bruge
 <command>chkconfig</command> til at tjekke hvilke runlevels en service
 bliver startet op under. Nedenfor tjekker vi <command>named</command>.
-Bemærk igen, at der er to minus-tegn foran "list".
+BemÃ¦rk igen, at der er to minus-tegn foran "list".
 </para>
 
 <indexterm>
@@ -1314,18 +1314,18 @@ named 0:off 1:off 2:off 3:off 4:off 5:off 6:off
 <indexterm><primary>DEB-pakker</primary></indexterm>
 
 <para>
-Skal du installere programmer på Debian eller Corel Linux, skal du
-være root. Med Corel Linux er det meningen at man skal anvende
+Skal du installere programmer pÃ¥ Debian eller Corel Linux, skal du
+vÃ¦re root. Med Corel Linux er det meningen at man skal anvende
 "Applications"-&gt;"System"-&gt;"update". Der anvendes et program der hedder
-<command>get_it</command>.  Her kan man sætte cd-rom, ftp- eller
+<command>get_it</command>.  Her kan man sÃ¦tte cd-rom, ftp- eller
 http-adresser hvor updates hentes fra. Som standard er Corels ftp-update
-adresse medtaget.  Man kan jo prøve at tilføje <ulink
+adresse medtaget.  Man kan jo prÃ¸ve at tilfÃ¸je <ulink
 url="ftp://ftp.dk.debian.org/debian">ftp://ftp.dk.debian.org/debian</ulink>
-for at få adgang til alle Debian-pakkerne.
+for at fÃ¥ adgang til alle Debian-pakkerne.
 </para>
 
 <para>
-Du kan dog også være interesseret i at kunne styre installationen selv
+Du kan dog ogsÃ¥ vÃ¦re interesseret i at kunne styre installationen selv
 fra kommandolinjen.  Nyttige kommandoer er:
 
 <itemizedlist mark="bullet" spacing="compact">
@@ -1351,15 +1351,15 @@ fra kommandolinjen.  Nyttige kommandoer er:
  </para> 
 </listitem>
 <listitem>
-  <para><command>dpkg --help</command> - viser hjælp.
+  <para><command>dpkg --help</command> - viser hjÃ¦lp.
  </para> 
 </listitem>
 </itemizedlist>
 </para>
 
 <para>
-For at konfigurere pakker til dit system skal du køre kommandoen
-<command>dpkg --pending --configure</command>. Det gør, at man får sat
+For at konfigurere pakker til dit system skal du kÃ¸re kommandoen
+<command>dpkg --pending --configure</command>. Det gÃ¸r, at man fÃ¥r sat
 de enkelte programmer op til maskinen efter, at pakkerne er blevet
 installeret.
 </para>

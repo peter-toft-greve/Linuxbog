@@ -1,14 +1,14 @@
 <!-- $Id$ -->
 <chapter id="net">
-<title>Netværksprogrammer</title>
+<title>NetvÃ¦rksprogrammer</title>
 
 <para>
-En vigtig start-kommentar, som kunne stå mange steder i denne bog er
+En vigtig start-kommentar, som kunne stÃ¥ mange steder i denne bog er
 at der med Linux-kerne 2.4 (f.eks. Red Hat 7.1 og Mandrake 8.0) er
-problemer med at få tilgang til alle hjemmesider &ndash; det er et
-problem som er forstået nu, se f.eks. <ulink
+problemer med at fÃ¥ tilgang til alle hjemmesider &ndash; det er et
+problem som er forstÃ¥et nu, se f.eks. <ulink
 url="http://eltoday.com/article.php3?ltsn=2001-04-17-001-14-PS">http://eltoday.com/article.php3?ltsn=2001-04-17-001-14-PS</ulink>.
-Løsningen er simpel. Tilføj følgende til f.eks. <filename>/etc/rc.d/rc.local</filename> (SuSE <filename>/etc/rc.d/boot.local</filename>):
+LÃ¸sningen er simpel. TilfÃ¸j fÃ¸lgende til f.eks. <filename>/etc/rc.d/rc.local</filename> (SuSE <filename>/etc/rc.d/boot.local</filename>):
 </para>
 
 <programlisting>
@@ -16,7 +16,7 @@ echo "0" &gt; /proc/sys/net/ipv4/tcp_ecn
 </programlisting>
 
 <para>
-Lad os nu se på de programmer en netværksadministrator bør kende.
+Lad os nu se pÃ¥ de programmer en netvÃ¦rksadministrator bÃ¸r kende.
 </para>
 <indexterm>
  <primary>ping</primary>
@@ -31,21 +31,21 @@ Lad os nu se på de programmer en netværksadministrator bør kende.
 <indexterm><primary>ping</primary></indexterm>
 <para>
 <command>ping</command> er et meget simpelt, men utroligt nyttigt
-stykke værktøj, som bruges til at finde ud af, om der kan opnås
-forbindelse til en IP-adresse. Sagt på en anden måde er
+stykke vÃ¦rktÃ¸j, som bruges til at finde ud af, om der kan opnÃ¥s
+forbindelse til en IP-adresse. Sagt pÃ¥ en anden mÃ¥de er
 <command>ping</command> det program, du kan bruge til at finde ud af, om
 der er "hul igennem".
 </para>
 
 <para>
-<command>ping</command> bør altid være det første program, du bruger
-til at diagnosticere et netværksproblem. Hvis det lykkes at pinge til
+<command>ping</command> bÃ¸r altid vÃ¦re det fÃ¸rste program, du bruger
+til at diagnosticere et netvÃ¦rksproblem. Hvis det lykkes at pinge til
 en adresse, ved du, at den fysiske forbindelse er i orden, og de basale
-dele af netværket fungerer.
+dele af netvÃ¦rket fungerer.
 </para>
 
 <para>
-<command>ping</command> køres sådan her:
+<command>ping</command> kÃ¸res sÃ¥dan her:
 </para>
 
 <screen>
@@ -53,7 +53,7 @@ dele af netværket fungerer.
 </screen>
 
 <para>
-Ved at skrive "-c 4" beder vi <command>ping</command> om at nøjes med
+Ved at skrive "-c 4" beder vi <command>ping</command> om at nÃ¸jes med
 at sende fire pakker, ellers bliver den ved, indtil vi stopper den med Ctrl-c.
 </para>
 
@@ -75,20 +75,20 @@ round-trip min/avg/max = 370.0/577.8/730.0 ms
 </programlisting>
 
 <para>
-Vi kan først og fremmest se, at vi kan komme igennem til
+Vi kan fÃ¸rst og fremmest se, at vi kan komme igennem til
 www.linux.org, som har adressen 198.182.196.51, og at alt, hvad vi
 sendte, kom tilbage igen, ja faktisk kom en af de fire pakker tilbage
 to gange! Hele turen frem og tilbage tog i gennemsnit 577,8
-millisekunder &ndash; altså lidt over et halvt sekund. Som Alan Cox på et
+millisekunder &ndash; altsÃ¥ lidt over et halvt sekund. Som Alan Cox pÃ¥ et
 tidspunkt vittigt skrev: "Afstanden mellem Bombay og New York i den nye
 tidsalder er kun 250 millisekunder".
 </para>
 
 <para>
-Hvis du ikke skulle få nogen pakker tilbage, er dette dog ikke 
+Hvis du ikke skulle fÃ¥ nogen pakker tilbage, er dette dog ikke 
 ensbetydende med, at der er noget galt med forbindelsen til 
-den anden maskine, da den kan være sat op til IKKE at svare 
-på <command>ping</command>.
+den anden maskine, da den kan vÃ¦re sat op til IKKE at svare 
+pÃ¥ <command>ping</command>.
 </para>
 </sect1>
 
@@ -103,21 +103,21 @@ på <command>ping</command>.
 </indexterm>
 <indexterm>
  <primary>ftp</primary>
- <secondary>spærring</secondary>
+ <secondary>spÃ¦rring</secondary>
 </indexterm>
 <para>
-Med <command>telnet</command> er det muligt at logge ind på andre
-computere på netværket og arbejde tekstbaseret, som om du sad ved
-computeren. Dette kan også foregå på tværs af platforme, f.eks. kan du
-køre <command>telnet</command> på en Windows 95-maskine og derfra logge ind
-på en Linux-maskine.
+Med <command>telnet</command> er det muligt at logge ind pÃ¥ andre
+computere pÃ¥ netvÃ¦rket og arbejde tekstbaseret, som om du sad ved
+computeren. Dette kan ogsÃ¥ foregÃ¥ pÃ¥ tvÃ¦rs af platforme, f.eks. kan du
+kÃ¸re <command>telnet</command> pÃ¥ en Windows 95-maskine og derfra logge ind
+pÃ¥ en Linux-maskine.
 </para>
 
 <para>
 Ved normal brug startes <command>telnet</command> simpelthen med
-navnet på den computer, du ønsker en forbindelse til &ndash; i nedenstående eksempel
-<filename>gonzo</filename>. Når forbindelsen er oprettet, vil du blive
-præsenteret for en <filename>login:</filename>-prompt, og du kan nu arbejde
+navnet pÃ¥ den computer, du Ã¸nsker en forbindelse til &ndash; i nedenstÃ¥ende eksempel
+<filename>gonzo</filename>. NÃ¥r forbindelsen er oprettet, vil du blive
+prÃ¦senteret for en <filename>login:</filename>-prompt, og du kan nu arbejde
 videre, som om du sad ved den anden maskine.
 </para>
 
@@ -133,41 +133,41 @@ login:
 </screen>
 
 <para>
-Når du ikke længere har brug for telnet-forbindelsen, afbryder du
-den med <command>exit</command>, og du er så tilbage på din egen maskine.
+NÃ¥r du ikke lÃ¦ngere har brug for telnet-forbindelsen, afbryder du
+den med <command>exit</command>, og du er sÃ¥ tilbage pÃ¥ din egen maskine.
 </para>
 
 <para>
-Hvis du angiver en port, som er bundet til en anden protokol, kan du også
-have glæde af <command>telnet</command> til fejlfinding og testbrug. I
-en snæver vending kan du bruge <command>telnet</command> til at hente
+Hvis du angiver en port, som er bundet til en anden protokol, kan du ogsÃ¥
+have glÃ¦de af <command>telnet</command> til fejlfinding og testbrug. I
+en snÃ¦ver vending kan du bruge <command>telnet</command> til at hente
 post hos din internetudbyder!
 </para>
 
 <para>
 For at beskytte din installation er standardinstallationen lavet,
-så "root" ikke kan logge ind fra en anden maskine med 
+sÃ¥ "root" ikke kan logge ind fra en anden maskine med 
 <command>telnet</command> og
-<command>ftp</command>. Det er gjort for, at man ikke helt så nemt kan få
-adgang til "root"s adgangskode. Hvis du har maskinen på et usikkert net &ndash;
-f.eks. internettet &ndash; bør du ikke ændre på dette. I stedet kan du bruge
+<command>ftp</command>. Det er gjort for, at man ikke helt sÃ¥ nemt kan fÃ¥
+adgang til "root"s adgangskode. Hvis du har maskinen pÃ¥ et usikkert net &ndash;
+f.eks. internettet &ndash; bÃ¸r du ikke Ã¦ndre pÃ¥ dette. I stedet kan du bruge
 krypteret netkommunikation &ndash; f.eks. med "Secure Shell" eller den frie udgave
 "OpenSSH" (sikker shell).
-Har du et lukket net og mener, at du ikke gider at gå ind som almindelig
-bruger og derefter lave <command>su - root</command>, kan du godt få lov
+Har du et lukket net og mener, at du ikke gider at gÃ¥ ind som almindelig
+bruger og derefter lave <command>su - root</command>, kan du godt fÃ¥ lov
 til at bruge <command>telnet</command> og
 <command>ftp</command> som root udefra. Filerne
 <filename>/etc/securetty</filename> og <filename>/etc/ftpusers</filename>
-kan rettes eller direkte slettes, så kan root
+kan rettes eller direkte slettes, sÃ¥ kan root
 logge ind udefra.
 </para>
 
 <para>
-Som telnet-klient på en Microsoft Windows-maskine kan 
-benyttes PuTTY, som også understøtter SSH. Med PuTTY 
-ligner det langt mere det, at sidde direkte på en 
+Som telnet-klient pÃ¥ en Microsoft Windows-maskine kan 
+benyttes PuTTY, som ogsÃ¥ understÃ¸tter SSH. Med PuTTY 
+ligner det langt mere det, at sidde direkte pÃ¥ en 
 Linux-konsol i forhold til den telnet-klient, som 
-følger med Microsoft Windows. Du kan se mere om PuTTY på  
+fÃ¸lger med Microsoft Windows. Du kan se mere om PuTTY pÃ¥  
 <ulink url="http://www.chiark.greenend.org.uk/~sgtatham/putty/">http://www.chiark.greenend.org.uk/~sgtatham/putty/</ulink>
 </para>
 </sect1>
@@ -196,7 +196,7 @@ Til at hente og sende filer over TCP/IP bruges programmet
 
 <para>
 Hvis du skal bruge en fil fra <filename>sunsite.dk</filename>,
-skriver du sådan her: 
+skriver du sÃ¥dan her: 
 </para>
 
 <screen>
@@ -204,10 +204,10 @@ skriver du sådan her:
 </screen>
 
 <para>
-Når forbindelsen er klar, spørger computeren om brugernavn og
-adgangskode. Du kan logge på som 'anonymous' (anonym) og give din
-e-post-adresse som adgangskode. Bemærk, at e-postadressen ikke er synlig,
-når den tastes ind.
+NÃ¥r forbindelsen er klar, spÃ¸rger computeren om brugernavn og
+adgangskode. Du kan logge pÃ¥ som 'anonymous' (anonym) og give din
+e-post-adresse som adgangskode. BemÃ¦rk, at e-postadressen ikke er synlig,
+nÃ¥r den tastes ind.
 </para>
 
 <programlisting>
@@ -235,7 +235,7 @@ Using binary mode to transfer files.
 </programlisting>
 
 <para>
-Så står du ved en <prompt>ftp></prompt>-prompt, hvor du kan bevæge dig
+SÃ¥ stÃ¥r du ved en <prompt>ftp></prompt>-prompt, hvor du kan bevÃ¦ge dig
 rundt i katalogerne med <command>cd</command> og se indholdet med
 <command>ls</command> - ganske som med en almindelig kommandolinje.
 </para>
@@ -248,23 +248,23 @@ drwxrwxr-x  60 ftpuser  ftpusers      8192 Oct 10 16:23 disk1
 drwxrwxr-x   9 ftpuser  ftpusers      2048 Oct 10 15:45 disk2
 drwxr-xr-x   3 ftpuser  ftpusers        96 Jun  2 17:02 disk3
 drwxr-xr-x   4 ftpuser  ftpusers        96 Sep  1 09:15 disk4
-... [mange kataloger klippet væk]
+... [mange kataloger klippet vÃ¦k]
 226 Listing completed.
 </screen>
 
 <para>
-Hvis du nu ved hjælp af <command>cd</command> navigerer ned i
-<filename>/pub/os/linux/Red Hat</filename> og kører
+Hvis du nu ved hjÃ¦lp af <command>cd</command> navigerer ned i
+<filename>/pub/os/linux/Red Hat</filename> og kÃ¸rer
 <command>ls</command>, vil du se, at der ligger en fil ved navn
-<filename>README</filename>, som du gerne vil hente hjem på din egen
+<filename>README</filename>, som du gerne vil hente hjem pÃ¥ din egen
 maskine med kommandoen <command>get README</command>.
 </para>
 
 <para>
-Nu er filen ikke særlig stor, så den er hentet ned på et øjeblik.
-Hvis du henter større ting, er det som regel rart at kunne se, om der er
-"flow" i overførslen. Med kommandoen <command>hash</command> kan du få
-skrevet et #-tegn ("hash mark"), hver gang en blok er blevet overført.
+Nu er filen ikke sÃ¦rlig stor, sÃ¥ den er hentet ned pÃ¥ et Ã¸jeblik.
+Hvis du henter stÃ¸rre ting, er det som regel rart at kunne se, om der er
+"flow" i overfÃ¸rslen. Med kommandoen <command>hash</command> kan du fÃ¥
+skrevet et #-tegn ("hash mark"), hver gang en blok er blevet overfÃ¸rt.
 </para>
 
 <screen>
@@ -273,7 +273,7 @@ Hash mark printing on (1024 bytes/hash mark).
 </screen>
 
 <para>
-Så henter du filen:
+SÃ¥ henter du filen:
 </para>
 
 <screen>
@@ -287,38 +287,38 @@ local: README remote: README
 </screen>
 
 <para>
-<filename>README</filename> er en ganske lille fil, så det vil
-kun blive til et enkelt #-tegn. Læg i øvrigt mærke til, at den er
-overført som binær fil (BINARY) i modsætning til ren tekst (ASCII). Hvis du
-bruger ASCII til overførslen, vil <command>ftp</command> konvertere
+<filename>README</filename> er en ganske lille fil, sÃ¥ det vil
+kun blive til et enkelt #-tegn. LÃ¦g i Ã¸vrigt mÃ¦rke til, at den er
+overfÃ¸rt som binÃ¦r fil (BINARY) i modsÃ¦tning til ren tekst (ASCII). Hvis du
+bruger ASCII til overfÃ¸rslen, vil <command>ftp</command> konvertere
 linjeskift i tekstfiler til det korrekte format for den maskine, der
-modtager filen. Det er udmærket til tekstfiler, men kan smadre f.eks.
-grafik og komprimerede filer fuldstændigt. Til at skifte mellem binær
+modtager filen. Det er udmÃ¦rket til tekstfiler, men kan smadre f.eks.
+grafik og komprimerede filer fuldstÃ¦ndigt. Til at skifte mellem binÃ¦r
 og ASCII bruges ftp-kommandoerne <command>bin</command> og
 <command>ascii</command>.
 </para>
 
 <para>
-Nu er du færdig med at hente, hvad du skal bruge, og du logger ud igen
-med kommandoen <command>quit</command>. Derefter er du tilbage på
-kommandolinjen på din egen maskine.
+Nu er du fÃ¦rdig med at hente, hvad du skal bruge, og du logger ud igen
+med kommandoen <command>quit</command>. Derefter er du tilbage pÃ¥
+kommandolinjen pÃ¥ din egen maskine.
 </para>
 
 
 <para>
 <indexterm><primary>anonym ftp</primary></indexterm>
 <indexterm><primary>ftp</primary><secondary>anonym</secondary></indexterm>
-Hvis du har brug for at tilbyde anonym ftp på din Linux-maskine, kan du i
+Hvis du har brug for at tilbyde anonym ftp pÃ¥ din Linux-maskine, kan du i
 Red Hat Linux og nogle andre distributioner 
 installere pakken "anonftp". Pakken foretager hele
-opsætningen for dig. Filer, der skal kunne hentes via anonym ftp, lægges
-så blot i <filename>/var/ftp/pub</filename>.
+opsÃ¦tningen for dig. Filer, der skal kunne hentes via anonym ftp, lÃ¦gges
+sÃ¥ blot i <filename>/var/ftp/pub</filename>.
 </para>
 
 <para>
-Alt det ovenstående handler om anonymt ftp. Hvis du er oprettet som bruger
-på den maskine, du skal i kontakt med, kan du logge på med dit rigtige
-brugernavn og adgangskode. På den måde får du så rettigheder til at
+Alt det ovenstÃ¥ende handler om anonymt ftp. Hvis du er oprettet som bruger
+pÃ¥ den maskine, du skal i kontakt med, kan du logge pÃ¥ med dit rigtige
+brugernavn og adgangskode. PÃ¥ den mÃ¥de fÃ¥r du sÃ¥ rettigheder til at
 hente og sende filer i forhold til, hvad du er blevet tildelt af
 administratoren.
 </para>
@@ -327,17 +327,17 @@ administratoren.
 <indexterm><primary>mc</primary></indexterm>
 
 <para>
-Man kan også bruge Midnight Commander til at hente filer 
-fra en FTP-server. Du åbner Midnight Commander med kommandoen 
-<command>mc</command>. Med funktionstasten F9 får du fat i 
-menuen og trækker ned med pil-ned. Vælg så "FTP link...".
+Man kan ogsÃ¥ bruge Midnight Commander til at hente filer 
+fra en FTP-server. Du Ã¥bner Midnight Commander med kommandoen 
+<command>mc</command>. Med funktionstasten F9 fÃ¥r du fat i 
+menuen og trÃ¦kker ned med pil-ned. VÃ¦lg sÃ¥ "FTP link...".
 </para>
 
 <para>
-Indtast evt. brugernavn og adgangskode adskilt med et kolon (:), så 
-et snabel-a (@), hvorefter navnet på selve FTP-serveren angives.
+Indtast evt. brugernavn og adgangskode adskilt med et kolon (:), sÃ¥ 
+et snabel-a (@), hvorefter navnet pÃ¥ selve FTP-serveren angives.
 Hvis det drejer sig om en anonym FTP-server kan man udelade alt 
-andet end serverens navn. Det kan se sådan ud:
+andet end serverens navn. Det kan se sÃ¥dan ud:
 </para>
 
 <programlisting>
@@ -345,11 +345,11 @@ andet end serverens navn. Det kan se sådan ud:
 </programlisting>
 
 <para>
-En hurtig og grafisk metode til at overføre filer via FTP.
+En hurtig og grafisk metode til at overfÃ¸re filer via FTP.
 </para>
 <sidebar>
  <para>
- Opsætning af ftp-tjeneste se afsnit <xref linkend="ftpd"/>.
+ OpsÃ¦tning af ftp-tjeneste se afsnit <xref linkend="ftpd"/>.
  </para>
 </sidebar>
 
@@ -382,18 +382,18 @@ En hurtig og grafisk metode til at overføre filer via FTP.
 
  <para>
   Fra tid til anden har du brug for at kunne hente en stribe hjemmesider, som
-  du sidenhen vil kunne læse - for eksempel programvejledninger. Med Netscape
-  er det besværligt, idet du skal trykke "gem" for hver enkelt side. Meget
+  du sidenhen vil kunne lÃ¦se - for eksempel programvejledninger. Med Netscape
+  er det besvÃ¦rligt, idet du skal trykke "gem" for hver enkelt side. Meget
   smartere er programmet <command>wget</command>, der kan hente rekursivt fra
-  en http- eller ftp-side, såsom SSLUG's adresse.
+  en http- eller ftp-side, sÃ¥som SSLUG's adresse.
  </para>
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt> <userinput>wget -r http://www.sslug.dk/</userinput></screen>
 
 <para>
-Ovenstående kommando henter hele SSLUG's websted.  Er det kun de
-underliggende kataloger der skal hentes, tilføjes <command>-np</command>
+OvenstÃ¥ende kommando henter hele SSLUG's websted.  Er det kun de
+underliggende kataloger der skal hentes, tilfÃ¸jes <command>-np</command>
 (no parents). Dette kan bruges til at hente denne bog fra
 www.sslug.dk.  I nogle HTML-sider er der angivet direkte link. Dette
 kan fjernes med <command>-k</command>.
@@ -404,14 +404,14 @@ kan fjernes med <command>-k</command>.
 
 <para>
 Et lille trick er at bruge <command>wget -c
-ftp://ftpsted/storfil.tgz</command>, hvor <literal>-c</literal> står for continue og hvis
-man husker den hver gang man henter store filer ned, så kan programmet finde ud af at
-fortsætte afbrudte nedhentninger. Fed funktionalitet hvis man vil hente noget
+ftp://ftpsted/storfil.tgz</command>, hvor <literal>-c</literal> stÃ¥r for continue og hvis
+man husker den hver gang man henter store filer ned, sÃ¥ kan programmet finde ud af at
+fortsÃ¦tte afbrudte nedhentninger. Fed funktionalitet hvis man vil hente noget
 stort over en ustabil forbindelse.
 </para>
 
 <para>
-Se også <xref linkend="ncftp"/> om <command>ncftp</command> som kan
+Se ogsÃ¥ <xref linkend="ncftp"/> om <command>ncftp</command> som kan
 anvendes til at hente filer fra nettet.
 </para>
 
@@ -438,7 +438,7 @@ anvendes til at hente filer fra nettet.
 Programmet <command>ncftp</command> er en ftp-lignende klient,
 som er nem at bruge til anonym FTP.
 Man skal ikke angive brugernavn og adgangskode.
-Prøv f.eks.:
+PrÃ¸v f.eks.:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>ncftp sunsite.dk</userinput>
@@ -447,7 +447,7 @@ Prøv f.eks.:
 
 <para>
 <command>ncftp</command> kan en masse ting der
-gør det væsentligt nemmere at bruge end det basale ftp-program.
+gÃ¸r det vÃ¦sentligt nemmere at bruge end det basale ftp-program.
 </para>
 
 <sect2 id="ncftpget">
@@ -458,11 +458,11 @@ gør det væsentligt nemmere at bruge end det basale ftp-program.
 <para>
 <command>ncftpget</command> er en videreudvikling af
 <command>ncftp</command> som er specielt velegnet til at hente mange
-filer fra en anden server, ved blot at angive hvad man vil hente på
+filer fra en anden server, ved blot at angive hvad man vil hente pÃ¥
 kommandolinjen.  Skal du hente filer i
 <filename>/home/mig/public_html</filename> fra maskinen
 ftp.serv.dk, hvor du har en brugerkonto
-<emphasis>mig</emphasis>, kan det gøres med følgende kommando:
+<emphasis>mig</emphasis>, kan det gÃ¸res med fÃ¸lgende kommando:
 </para>
 
 <screen>
@@ -471,13 +471,13 @@ ftp.serv.dk, hvor du har en brugerkonto
 </screen>
 
 <para>
-<option>-R</option> gør at alle filer i underkataloger også
+<option>-R</option> gÃ¸r at alle filer i underkataloger ogsÃ¥
 bliver hentet. <option>-u mig</option> angiver brugernavn og
-da man ikke bør angive adgangskode på kommandolinjen, bliver
+da man ikke bÃ¸r angive adgangskode pÃ¥ kommandolinjen, bliver
 man spurgt om adgangskode. Punktum angiver det katalog du
-står i, hvilket giver et godt overblik over hvor filerne havner.
+stÃ¥r i, hvilket giver et godt overblik over hvor filerne havner.
 <command>ncftpget</command> har mange flere muligheder
-der er velegnede til automatiserede formål.
+der er velegnede til automatiserede formÃ¥l.
 </para>
 </sect2><!-- ncftpget -->
 
@@ -504,12 +504,12 @@ der er velegnede til automatiserede formål.
 
 <para>
 <command>ncftpput</command>
-er beregnet til at lægge mange filer op på en server.
-Skal du lægge filer op fra <emphasis>/home/linus/public_html</emphasis>
+er beregnet til at lÃ¦gge mange filer op pÃ¥ en server.
+Skal du lÃ¦gge filer op fra <emphasis>/home/linus/public_html</emphasis>
 til <emphasis>ftp.serv.dk</emphasis> i kataloget
 <emphasis>/home/mig/html</emphasis>
 hvor du har en brugerkonto <emphasis>mig</emphasis>,
-kan det gøres med følgende kommando:
+kan det gÃ¸res med fÃ¸lgende kommando:
 </para>
 
 <screen>
@@ -517,7 +517,7 @@ kan det gøres med følgende kommando:
 </screen>
 
 <para>
-Se også <xref linkend="ncftpget"/>.
+Se ogsÃ¥ <xref linkend="ncftpget"/>.
 </para>
 </sect2><!-- ncftpput -->
 
@@ -538,38 +538,38 @@ Se også <xref linkend="ncftpget"/>.
 </indexterm>
 
 <para>
-Et naturligt spørgsmål ville være: "Hvorfor skulle man overhovedet
-køre en lokal newsserver?". Det er der faktisk flere gode grunde til:
+Et naturligt spÃ¸rgsmÃ¥l ville vÃ¦re: "Hvorfor skulle man overhovedet
+kÃ¸re en lokal newsserver?". Det er der faktisk flere gode grunde til:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-  Hvis der er flere på lokalnettet, som læser de samme nyhedsgrupper, så
-  skal de kun hentes én gang.
+  Hvis der er flere pÃ¥ lokalnettet, som lÃ¦ser de samme nyhedsgrupper, sÃ¥
+  skal de kun hentes Ã©n gang.
  </para>
 </listitem>
 
 <listitem> 
  <para>
-  Hvis man ikke lige kan overskue hvilken newsreader man ønsker at
-  bruge, så står man med Leafnode frit for at teste 1.000 newsreadere og
-  skal stadig kun hente serverlister én gang.
+  Hvis man ikke lige kan overskue hvilken newsreader man Ã¸nsker at
+  bruge, sÃ¥ stÃ¥r man med Leafnode frit for at teste 1.000 newsreadere og
+  skal stadig kun hente serverlister Ã©n gang.
  </para>
 </listitem>
 
 <listitem> 
  <para>
-  Hvis man læser news fra mere end én newsserver
+  Hvis man lÃ¦ser news fra mere end Ã©n newsserver
   f.eks. <filename>news.sslug.dk</filename> og
-  <filename>news.get2net.dk</filename>, så kan man "slå" disse
+  <filename>news.get2net.dk</filename>, sÃ¥ kan man "slÃ¥" disse
   serveres nyhedsgrupper sammen til en lokal server.
  </para>
 </listitem>
 
 <listitem> 
  <para>
-  Man kan læse news Offline som hvis man var Online. 
+  Man kan lÃ¦se news Offline som hvis man var Online. 
  </para>
 </listitem>
 
@@ -592,13 +592,13 @@ Et valg af newsserver er Leafnode.
    </indexterm>
 
    <para>
-    Ud over de generelle argumenter for at køre nyhedsserver selv, kan
-    vi tilføje følgende som angår newsserveren Leafnode:
+    Ud over de generelle argumenter for at kÃ¸re nyhedsserver selv, kan
+    vi tilfÃ¸je fÃ¸lgende som angÃ¥r newsserveren Leafnode:
 
     <itemizedlist mark="bullet">
      <listitem>
       <para>
-       Rigtig nem opsætning
+       Rigtig nem opsÃ¦tning
       </para>
      </listitem>
 
@@ -611,12 +611,12 @@ Et valg af newsserver er Leafnode.
      <listitem> 
       <para>
        Leafnode er en dynamisk newsserver. Den henter kun de grupper
-       der faktisk bliver læst.
+       der faktisk bliver lÃ¦st.
       </para>
      </listitem>
     </itemizedlist>
 
-    Så der er faktisk mange gode grunde til at bruge Leafnode, hvis
+    SÃ¥ der er faktisk mange gode grunde til at bruge Leafnode, hvis
     man kun har brug for en simpel NNTP-server og ikke har brug for at
     "feede" til andre NNTP-servere.
    </para>
@@ -630,12 +630,12 @@ Et valg af newsserver er Leafnode.
     </indexterm>
 
     <para>
-     Installationen af Leafnode er nem.  På et Debian-system klares
+     Installationen af Leafnode er nem.  PÃ¥ et Debian-system klares
      det med <command>apt-get install leafnode</command>.  Hvis din
-     distribution ikke kommer med Leafnode må du hente kildeteksten
+     distribution ikke kommer med Leafnode mÃ¥ du hente kildeteksten
      hentes fra <ulink
      url="http://www.leafnode.org/">http://www.leafnode.org/</ulink>.
-     Når man så har hentet tar-pakken, pakker man den ud:
+     NÃ¥r man sÃ¥ har hentet tar-pakken, pakker man den ud:
 
 <screen>
 <prompt>[root@linus /root]# </prompt><userinput>tar xzvf leafnode-*.tar.gz </userinput>
@@ -645,9 +645,9 @@ Et valg af newsserver er Leafnode.
     </para>
 
 <para>
-I denne fil er installationen beskrevet trin for trin, men vi løber
+I denne fil er installationen beskrevet trin for trin, men vi lÃ¸ber
 den lige igennem alligevel. Dette er beskrevet fra en Red Hat. Det kan
-være at opsætningsfilerne ligger andre steder på andre
+vÃ¦re at opsÃ¦tningsfilerne ligger andre steder pÃ¥ andre
 distributioner.
 </para>
 
@@ -674,7 +674,7 @@ Herefter skal der oprettes en bruger <emphasis>news</emphasis>:
 </screen>
 
 <para>
-Så må man køre:
+SÃ¥ mÃ¥ man kÃ¸re:
 </para>
 
 <screen>
@@ -682,21 +682,21 @@ Så må man køre:
 </screen>
 
 <para>
-Så skal der rettes i opsætningsfilen til Leafnode, som er
+SÃ¥ skal der rettes i opsÃ¦tningsfilen til Leafnode, som er
 placeret i <filename>/etc/leafnode/config</filename>. Det interessante
 er:
 </para>
 
 <programlisting>
-## Dette er en del af Leafnode opsætningsfilen /etc/leafnode/config
+## Dette er en del af Leafnode opsÃ¦tningsfilen /etc/leafnode/config
 ## This is the NNTP server Leafnode fetches its news from.
 ## You need read and post access to it. Mandatory.
 server = news.sslug.dk
 </programlisting>
 
 <para>
-Her kan man så bare tilføje flere servere hvis man ønsker at læse fra
-flere. Skal der bruges brugernavn/adgangskode på en af dem, tilføjes det
+Her kan man sÃ¥ bare tilfÃ¸je flere servere hvis man Ã¸nsker at lÃ¦se fra
+flere. Skal der bruges brugernavn/adgangskode pÃ¥ en af dem, tilfÃ¸jes det
 bare nedenunder:
 </para>
 
@@ -706,36 +706,36 @@ bare nedenunder:
 </programlisting>
 
 <para>
-Og dette er faktisk alt der skal gøres ved opsætningsfilen. De
+Og dette er faktisk alt der skal gÃ¸res ved opsÃ¦tningsfilen. De
 andre parametre er rigtig godt beskrevet og omhandler ting som:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-  I hvor lang tid indlæg skal gemmes.
+  I hvor lang tid indlÃ¦g skal gemmes.
  </para>
 </listitem>
 <listitem> 
  <para>
-  I hvor lang tid der skal hentes nye indlæg, hvis gruppen ikke bliver læst.
+  I hvor lang tid der skal hentes nye indlÃ¦g, hvis gruppen ikke bliver lÃ¦st.
  </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Disse parametre kan man altid stille på hvis man synes den ikke
+Disse parametre kan man altid stille pÃ¥ hvis man synes den ikke
 fungerer tilfredsstillende, men default er faktisk rimelig gode
 indstillinger.
 </para>
 
 <para>
-Så skal crontab redigeres for brugeren news.
-Som standard anvender crontab editoren vi. Du kan evt. starte med at ændre
+SÃ¥ skal crontab redigeres for brugeren news.
+Som standard anvender crontab editoren vi. Du kan evt. starte med at Ã¦ndre
 dette forhold med kommandoen: <command>editor=emacs; export EDITOR
 </command>
 eller <command>editor=mcedit; export EDITOR</command>.  Samme kommando
-kan tilføjes til din <filename>~/.profile</filename>.
+kan tilfÃ¸jes til din <filename>~/.profile</filename>.
 </para>
 
 <indexterm>
@@ -753,7 +753,7 @@ kan tilføjes til din <filename>~/.profile</filename>.
 
 
 <para>
-Heri tilføjes linjen:
+Heri tilfÃ¸jes linjen:
 </para>
 
 <programlisting>
@@ -761,19 +761,19 @@ Heri tilføjes linjen:
 </programlisting>
 
 <para>
-Dette får den til at slette gamle indlæg hver midnat. Det er
-smart hvis man sørger for at det er et tidspunkt hvor computeren er
-tændt. Nå, ja, hvis den er tændt, og man sover i samme rum, så lad være
-med at sætte den til at køre mens du sover. Der er rimeligt meget tryk
-på disken, når denne køres, da der er mange filer der skal tjekes
-igennem, så det kan man godt vågne af :-).
+Dette fÃ¥r den til at slette gamle indlÃ¦g hver midnat. Det er
+smart hvis man sÃ¸rger for at det er et tidspunkt hvor computeren er
+tÃ¦ndt. NÃ¥, ja, hvis den er tÃ¦ndt, og man sover i samme rum, sÃ¥ lad vÃ¦re
+med at sÃ¦tte den til at kÃ¸re mens du sover. Der er rimeligt meget tryk
+pÃ¥ disken, nÃ¥r denne kÃ¸res, da der er mange filer der skal tjekes
+igennem, sÃ¥ det kan man godt vÃ¥gne af :-).
 </para>
 
 <para>
-Så skal inet-dæmonen sættes op til at starte Leafnode. Først
-kontrolleres at inet er startet (Der skal være en stjerne foran i
-ntsysv). Så redigeres filen <filename>/etc/inetd.conf</filename>. Det
-er følgende linje der skal ses på: 
+SÃ¥ skal inet-dÃ¦monen sÃ¦ttes op til at starte Leafnode. FÃ¸rst
+kontrolleres at inet er startet (Der skal vÃ¦re en stjerne foran i
+ntsysv). SÃ¥ redigeres filen <filename>/etc/inetd.conf</filename>. Det
+er fÃ¸lgende linje der skal ses pÃ¥: 
 </para>
 
 <programlisting>
@@ -781,9 +781,9 @@ nntp stream tcp nowait root /usr/sbin/tcpd /usr/local/sbin/leafnode
 </programlisting>
 
 <para>
-Her er Leafnode sat til at gå igennem tcpwrapperen så der skal også
-lige åbnes for denne. I <filename>/etc/hosts.deny</filename> skal der
-helst (af sikkerhedsmæssige årsager) stå:
+Her er Leafnode sat til at gÃ¥ igennem tcpwrapperen sÃ¥ der skal ogsÃ¥
+lige Ã¥bnes for denne. I <filename>/etc/hosts.deny</filename> skal der
+helst (af sikkerhedsmÃ¦ssige Ã¥rsager) stÃ¥:
 </para>
 
 <programlisting>
@@ -792,7 +792,7 @@ ALL: ALL
 
 <para>
 hvorefter man redigerer <filename>/etc/hosts.allow</filename> og
-indsætter linjen:
+indsÃ¦tter linjen:
 </para>
 
 <programlisting>
@@ -800,9 +800,9 @@ leafnode: localhost
 </programlisting>
 
 <para>
-Her kan så
-tilføjes andre maskiner som skal have lov til at læse (se <command>man
-hosts.allow</command>). Og så skal netværks-funktionerne genstartes:
+Her kan sÃ¥
+tilfÃ¸jes andre maskiner som skal have lov til at lÃ¦se (se <command>man
+hosts.allow</command>). Og sÃ¥ skal netvÃ¦rks-funktionerne genstartes:
 </para>
 
 <screen>
@@ -827,14 +827,14 @@ Eller hvis du anvender SuSE 6.4
 </screen>
 
 <para>
-Så er det hele ved at være sat op.  Nu køres
-<command>/usr/local/sbin/fetchnews</command> for første gang. Første
-gang køres den med <filename>-f</filename> som parameter. Dette får
-Leafnode til at læse serverlisterne på de angivne servere. Denne skal
-køres som "root" eller "news". Man kan igen putte den i "news"s crontab
+SÃ¥ er det hele ved at vÃ¦re sat op.  Nu kÃ¸res
+<command>/usr/local/sbin/fetchnews</command> for fÃ¸rste gang. FÃ¸rste
+gang kÃ¸res den med <filename>-f</filename> som parameter. Dette fÃ¥r
+Leafnode til at lÃ¦se serverlisterne pÃ¥ de angivne servere. Denne skal
+kÃ¸res som "root" eller "news". Man kan igen putte den i "news"s crontab
 hvis ens forbindelse er oppe hele tiden, ellers kan den med fordel
-puttes i ens opkaldsscripts eller man kan køre den manuelt når man
-ønsker at poste/hente news. Det sidste har jeg valgt, og derfor har jeg
+puttes i ens opkaldsscripts eller man kan kÃ¸re den manuelt nÃ¥r man
+Ã¸nsker at poste/hente news. Det sidste har jeg valgt, og derfor har jeg
 redigeret <filename>/root/.bashrc</filename> og indsat denne linje: 
 </para>
 
@@ -844,17 +844,17 @@ alias news='/usr/local/sbin/fetchnews -vvv'
 
 <para>
 De 3 v'er giver bare meget output fra <command>fetchnews</command>, og
-nu kan jeg skrive news som root og køre
-<command>fetchnews</command>. Når man poster gennem Leafnode, bliver
-postningerne lagt i kø indtil fetchnews bliver kørt igen, og indlægget
-bliver postet mens nye indlæg fra de grupper, der abonneres på, bliver hentet.
-Nu mangler vi kun at sætte newsreaderen op til at læse fra localhost i
+nu kan jeg skrive news som root og kÃ¸re
+<command>fetchnews</command>. NÃ¥r man poster gennem Leafnode, bliver
+postningerne lagt i kÃ¸ indtil fetchnews bliver kÃ¸rt igen, og indlÃ¦gget
+bliver postet mens nye indlÃ¦g fra de grupper, der abonneres pÃ¥, bliver hentet.
+Nu mangler vi kun at sÃ¦tte newsreaderen op til at lÃ¦se fra localhost i
 stedet for den gamle newsserver.
 </para>
 
 <para>
-Ønsker du automatisk hentning af nyheder hvert kvarter, kan du
-yderligere tilføje denne linje i <filename>/etc/crontab</filename>
+Ã˜nsker du automatisk hentning af nyheder hvert kvarter, kan du
+yderligere tilfÃ¸je denne linje i <filename>/etc/crontab</filename>
 (kun interessant hvis du har en forbindelse med fast pris):
 </para>
 
@@ -872,15 +872,15 @@ yderligere tilføje denne linje i <filename>/etc/crontab</filename>
 <indexterm><primary>Tid</primary><secondary>NTP tidssynkronisering</secondary></indexterm>
 
 <para>
-(x)ntp er et værktøj til synkronisering af tiden på computere. Dette program
-sørger for hele tiden at holde systemuret synkroniseret med en anden ntpserver
-et sted på internettet, derfor er det mest oplagt at benytte det på maskiner
-der konstant er på internettet.
+(x)ntp er et vÃ¦rktÃ¸j til synkronisering af tiden pÃ¥ computere. Dette program
+sÃ¸rger for hele tiden at holde systemuret synkroniseret med en anden ntpserver
+et sted pÃ¥ internettet, derfor er det mest oplagt at benytte det pÃ¥ maskiner
+der konstant er pÃ¥ internettet.
 </para>
 
 <para>
-På installations-CD'erne til de fleste distributioner ligger der (x)ntp-pakker lige
-til at installere ellers kan programmet hentes på <ulink url="http://www.ntp.org">http://www.ntp.org</ulink>.
+PÃ¥ installations-CD'erne til de fleste distributioner ligger der (x)ntp-pakker lige
+til at installere ellers kan programmet hentes pÃ¥ <ulink url="http://www.ntp.org">http://www.ntp.org</ulink>.
 </para>
 
 <indexterm>
@@ -892,21 +892,21 @@ til at installere ellers kan programmet hentes på <ulink url="http://www.ntp.org
 </indexterm>
 
 <para>
-ntp-pakken består af 2 værktøjer <command>ntpd</command> (ntp-dæmonen)
-og <command>ntpdate</command>, den sidste køres manuelt før man
-starter <command>ntpd</command> for at få tiden synkroniseret fra
-start, da ntpd nægter at starte hvis tidsforskellen
+ntp-pakken bestÃ¥r af 2 vÃ¦rktÃ¸jer <command>ntpd</command> (ntp-dÃ¦monen)
+og <command>ntpdate</command>, den sidste kÃ¸res manuelt fÃ¸r man
+starter <command>ntpd</command> for at fÃ¥ tiden synkroniseret fra
+start, da ntpd nÃ¦gter at starte hvis tidsforskellen
 mellem de 2 maskiner er for stor.
-Når ntpdate kaldes under boot, kan man med fordel bruge option
-"-b", der tvinger ntpdate til at sætte tiden, selv om tidsforskellen
+NÃ¥r ntpdate kaldes under boot, kan man med fordel bruge option
+"-b", der tvinger ntpdate til at sÃ¦tte tiden, selv om tidsforskellen
 er for stor.
 </para>
 
 <para>
-Denne kan også kaldes fra ens internet-opkaldsscripts, hvis man har en
+Denne kan ogsÃ¥ kaldes fra ens internet-opkaldsscripts, hvis man har en
 opkaldsforbindelse og syntaksen er bare: <command>ntpdate -s
 ntp-server-navn</command>. NTP-servere er der en hel del af rundt
-omkring på nettet og din internetudbyder har højst sandsynligt en:
+omkring pÃ¥ nettet og din internetudbyder har hÃ¸jst sandsynligt en:
 </para>
 
 <programlisting>
@@ -916,11 +916,11 @@ TeleDK/TDC: ntp.inet.tele.dk
 </programlisting>
 
 <para>
-Har du fast internetforbindelse på din server så kan det være
-fordelagtigt at sætte dæmonen op så uret hele tiden holdes
-synkroniseret. Denne dæmon kompenserer for hardware-urets drift der er
-afhængigt af varme og andre ting.  Det gøres meget nemt ved blot at
-tilføje til filen <filename>/etc/ntp.conf</filename>.
+Har du fast internetforbindelse pÃ¥ din server sÃ¥ kan det vÃ¦re
+fordelagtigt at sÃ¦tte dÃ¦monen op sÃ¥ uret hele tiden holdes
+synkroniseret. Denne dÃ¦mon kompenserer for hardware-urets drift der er
+afhÃ¦ngigt af varme og andre ting.  Det gÃ¸res meget nemt ved blot at
+tilfÃ¸je til filen <filename>/etc/ntp.conf</filename>.
 </para>
 
 <programlisting>
@@ -930,26 +930,26 @@ driftfile /etc/ntp/drift
 
 <para>
 og ntpserverens navn som eneste linje i filen
-<filename>/etc/ntp/step-tickers</filename>. Så kører ntpdæmonen en
+<filename>/etc/ntp/step-tickers</filename>. SÃ¥ kÃ¸rer ntpdÃ¦monen en
 <command>ntpdate</command> mod serveren inden den starter
 synkroniseringen.
 </para>
 
 <para>
-Og så skal dæmonen blot startes med:
+Og sÃ¥ skal dÃ¦monen blot startes med:
 <command>/etc/rc.d/init.d/ntpd start</command>
-og hakkes af så den starter automatisk i "ntsysv" så den starter i det runlevel
+og hakkes af sÃ¥ den starter automatisk i "ntsysv" sÃ¥ den starter i det runlevel
 du normalt starter i. 
 </para>
 
 <para>
-Dette er beskrevet ud fra en Mandrake 8.0 og filernes placering kan afhænge af
+Dette er beskrevet ud fra en Mandrake 8.0 og filernes placering kan afhÃ¦nge af
 distribution og installationsmetode. 
 </para>
 </sect1>
 
 <sect1 id="hastighed-og-duplex">
-<title>Opsætning af netkortparametre</title>
+<title>OpsÃ¦tning af netkortparametre</title>
 
 <indexterm>
  <primary>netkort</primary>
@@ -976,23 +976,23 @@ distribution og installationsmetode.
 
 
 <para>
-Et problem som flere Linux-brugere har angår netkort, hvor
-man måske har lyst til at styre mellem 10 MBit og 100 MBit, samt og der
+Et problem som flere Linux-brugere har angÃ¥r netkort, hvor
+man mÃ¥ske har lyst til at styre mellem 10 MBit og 100 MBit, samt og der
 anvendes fuld duplex eller ej. Der er ofte en DOS/Windows driver med
 til ens netkort, som kan dette - og under Linux skal man bl.a. se efter
 <command>mii-tool</command> (nyeste version hedder
-<command>mii-diag</command>. Desværre er det vist ikke alle netkort
+<command>mii-diag</command>. DesvÃ¦rre er det vist ikke alle netkort
 som programmet virker sammen med.
 </para>
 
 <para>
-Findes <command>mii-diag</command> ikke på din Linux-maskine, så er
-det på adressen 
+Findes <command>mii-diag</command> ikke pÃ¥ din Linux-maskine, sÃ¥ er
+det pÃ¥ adressen 
 <ulink url="http://www.scyld.com/network.html">http://www.scyld.com/network.html</ulink>
-muligt at hente dette sammen med andre Linux-programmer for opsætning
-af de mest gængse netkort. Programmerne hentes som C-kildetekst og skal
-derfor oversættes. Nederst i programmerne står der hvordan man
-gør. Programmerne giver normalt hjælp, hvis de startes uden parametre,
+muligt at hente dette sammen med andre Linux-programmer for opsÃ¦tning
+af de mest gÃ¦ngse netkort. Programmerne hentes som C-kildetekst og skal
+derfor oversÃ¦ttes. Nederst i programmerne stÃ¥r der hvordan man
+gÃ¸r. Programmerne giver normalt hjÃ¦lp, hvis de startes uden parametre,
 eller man kan finde en tekst beskrivelse i sourcekoden.
 </para>
 </sect1>
@@ -1012,49 +1012,49 @@ eller man kan finde en tekst beskrivelse i sourcekoden.
 <para>
 At synkronisere data mellem to kataloger eller to maskiner er meget
 nyttigt. Tanken er at man har ca. samme data to steder - det kan enten
-være to kataloger på samme maskine eller to forskellige maskiner
-(f.eks. en laptop og en stationær maskine). Man ønsker så elegant at
-kunne overføre <emphasis>de ændrede filer</emphasis> fra den ene
+vÃ¦re to kataloger pÃ¥ samme maskine eller to forskellige maskiner
+(f.eks. en laptop og en stationÃ¦r maskine). Man Ã¸nsker sÃ¥ elegant at
+kunne overfÃ¸re <emphasis>de Ã¦ndrede filer</emphasis> fra den ene
 maskine til den anden - i forhold til sidste gang de to maskiner blev
 synkroniseret mod hinanden.
 </para> 
 
 <para>
-Det første man skal gøre er at installere
-<filename>rsync</filename>-pakken på ens maskine (tjek dette med
-<command>rpm -q rsync</command>) samt rsync på den anden maskine sammen med OpenSSH (Secure
-Shell) hvis man vil synkronisere mellem to maskiner. Opsætning og
-installation af OpenSSH er forklaret i "Linux - Friheden til sikkerhed på internettet", der kan findes på <ulink url="http://&linuxbogurl;/">&linuxbogurl;</ulink>. Man skal også sætte miljø-variablen <filename>RSYNC_rsh=ssh</filename> i brugerens opstartsfil (<filename>~/.bashrc</filename> "export RSYNC_rsh=ssh" eller <filename>~/.tcshrc</filename> "setenv RSYNC_RSH ssh").
+Det fÃ¸rste man skal gÃ¸re er at installere
+<filename>rsync</filename>-pakken pÃ¥ ens maskine (tjek dette med
+<command>rpm -q rsync</command>) samt rsync pÃ¥ den anden maskine sammen med OpenSSH (Secure
+Shell) hvis man vil synkronisere mellem to maskiner. OpsÃ¦tning og
+installation af OpenSSH er forklaret i "Linux - Friheden til sikkerhed pÃ¥ internettet", der kan findes pÃ¥ <ulink url="http://&linuxbogurl;/">&linuxbogurl;</ulink>. Man skal ogsÃ¥ sÃ¦tte miljÃ¸-variablen <filename>RSYNC_rsh=ssh</filename> i brugerens opstartsfil (<filename>~/.bashrc</filename> "export RSYNC_rsh=ssh" eller <filename>~/.tcshrc</filename> "setenv RSYNC_RSH ssh").
 </para>
 
 <para>
 Programmet <command>rsync</command> er genialt - det sammenligner
 filer i de to ender via tjeksummer og opdaterer filen i den ene ende
-kun med ændringerne mellem de to filer. Ofte har man få ændringer - og
-dermed kan <command>rsync</command> spare rigtig meget tid og båndbredde.
+kun med Ã¦ndringerne mellem de to filer. Ofte har man fÃ¥ Ã¦ndringer - og
+dermed kan <command>rsync</command> spare rigtig meget tid og bÃ¥ndbredde.
 </para>
 
 <para>
 Antag at brugerens email-katalog <filename>~/mail</filename> evt. med
-en række under-kataloger findes på egen maskine (den vi kører
+en rÃ¦kke under-kataloger findes pÃ¥ egen maskine (den vi kÃ¸rer
 kommandoer fra) samt maskinen
 <filename>asterix</filename>. 
 </para>
 
 <para>
- Antager vi først at <filename>asterix</filename> har de nyeste filer som skal
+ Antager vi fÃ¸rst at <filename>asterix</filename> har de nyeste filer som skal
  synkroniseres over til vores egen maskine, da skriver vi:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>rsync -azv asterix:mail ~</userinput>
 </screen>
- Bemærk at hvis der også er ændrede filer på egen maskine siden sidste
- synkronisering så overskrives disse.
+ BemÃ¦rk at hvis der ogsÃ¥ er Ã¦ndrede filer pÃ¥ egen maskine siden sidste
+ synkronisering sÃ¥ overskrives disse.
 </para>
 
 <para>
 Antager vi modsat at vores egen maskine har de nyeste filer som skal
 synkroniseres over til <filename>asterix</filename>, og vi vil slette
-eventuelle andre filer på asterix, da skriver vi
+eventuelle andre filer pÃ¥ asterix, da skriver vi
 </para>
 
 <screen>
@@ -1066,15 +1066,15 @@ eventuelle andre filer på asterix, da skriver vi
 Derefter vil
 asterix have eksakt de samme filer som vores maskine i
 <filename>~/mail</filename>. Med parameteren
-<filename>--delete</filename> sørger vi også for at slette eventuelle
-filer på <filename>asterix</filename> under
-<filename>~/mail</filename> som ikke findes på vores egen maskine.
+<filename>--delete</filename> sÃ¸rger vi ogsÃ¥ for at slette eventuelle
+filer pÃ¥ <filename>asterix</filename> under
+<filename>~/mail</filename> som ikke findes pÃ¥ vores egen maskine.
 </para>
 
 <para>
-Med de to ovennævnte eksempler vil filer blive overskrevet fra den ene
+Med de to ovennÃ¦vnte eksempler vil filer blive overskrevet fra den ene
 maskine til den anden uanset hvilke filer der er de nyeste. Lad os nu
-antage at vi gerne vil synkronisere mail-katalogerne så det altid er
+antage at vi gerne vil synkronisere mail-katalogerne sÃ¥ det altid er
 de nyeste filer som findes <emphasis>begge</emphasis> steder. 
 </para>
 
@@ -1096,7 +1096,7 @@ mail/fil3   April 1
 </programlisting>
 
 <para>
-Dette gøres ved
+Dette gÃ¸res ved
 
 <screen>
 <prompt>[tyge@hven ~]$</prompt> <userinput>rsync -auvz mail/ asterix:mail/</userinput>
@@ -1105,9 +1105,9 @@ Dette gøres ved
 </para>
 
   <para>
-   <emphasis>Bemærk:</emphasis> At <command>rsync</command> fungerer
+   <emphasis>BemÃ¦rk:</emphasis> At <command>rsync</command> fungerer
    forskeligt alt efter om der kommer <filename>/</filename> efter
-   katalog-navnet. Pas på med dette.
+   katalog-navnet. Pas pÃ¥ med dette.
   </para>
  </sect1> 
 </chapter>

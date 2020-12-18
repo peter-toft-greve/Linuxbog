@@ -10,39 +10,39 @@
 
  <para>
   qvwm er en window manager, der er modelleret efter Windows 95/98.
-  Hvorfor hedder den så qvwm ? Ja, med forfatternes egne ord:
+  Hvorfor hedder den sÃ¥ qvwm ? Ja, med forfatternes egne ord:
  </para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>&quot;q&quot; står for &quot;9&quot; - det udtales ens på 
-japansk, og tegnet har næsten samme facon</para>
+<para>&quot;q&quot; stÃ¥r for &quot;9&quot; - det udtales ens pÃ¥ 
+japansk, og tegnet har nÃ¦sten samme facon</para>
 
 </listitem>
 
   <listitem>
 
-<para>&quot;v&quot; står for &quot;5&quot; - V er romertal for 5.</para>
+<para>&quot;v&quot; stÃ¥r for &quot;5&quot; - V er romertal for 5.</para>
 
 </listitem>
 
   <listitem>
 
 <para>Desuden er qvwm en &quot;98 Window Manager&quot; fordi &quot;v&quot;
-står for &quot;8&quot - hvis man vender det på hovedet, er V meget lig 8
-i Kanji tegnsættet.</para>
+stÃ¥r for &quot;8&quot - hvis man vender det pÃ¥ hovedet, er V meget lig 8
+i Kanji tegnsÃ¦ttet.</para>
 
 </listitem>
 </itemizedlist>
 
-<para>Så qvwm er altså japansk, og hvis du synes forklaringen på
-navnet lyder lidt vel langt ude, så må man vel sige at det ikke
-overrasker når først man har fået ideen at ville lave Windows 95
-på Linux.</para>
+<para>SÃ¥ qvwm er altsÃ¥ japansk, og hvis du synes forklaringen pÃ¥
+navnet lyder lidt vel langt ude, sÃ¥ mÃ¥ man vel sige at det ikke
+overrasker nÃ¥r fÃ¸rst man har fÃ¥et ideen at ville lave Windows 95
+pÃ¥ Linux.</para>
 
 <para>
-Sådan ser qvwm ud:
+SÃ¥dan ser qvwm ud:
 </para>
 
 <figure id="qvwm-fig" float="1">
@@ -55,43 +55,43 @@ Sådan ser qvwm ud:
 <sect2 id="wm-qvwm-installation">
   <title>Installation</title>
 
-<para>Qvwm findes på <ulink url="http://www.qvwm.org/">http://www.qvwm.org/</ulink>. Den aktuelle version er 1.1.12, som blev frigivet i februar 2002. Jeg kender ikke til
+<para>Qvwm findes pÃ¥ <ulink url="http://www.qvwm.org/">http://www.qvwm.org/</ulink>. Den aktuelle version er 1.1.12, som blev frigivet i februar 2002. Jeg kender ikke til
 at qvwm er med i nogen standard distributioner, men den er let at installere
-med den sædvanlige sekvens: <command>./configure ; make; su -c make install</command></para>
+med den sÃ¦dvanlige sekvens: <command>./configure ; make; su -c make install</command></para>
 
-<para>Det eneste der kræves specielt, er <filename>imlib</filename> biblioteket, men det
-anvendes af mange andre Linux-programmer og følger normalt med din
+<para>Det eneste der krÃ¦ves specielt, er <filename>imlib</filename> biblioteket, men det
+anvendes af mange andre Linux-programmer og fÃ¸lger normalt med din
 distribution.</para>
 
    <sect3 id="wm-qvwm-opsaetning">
-    <title>Opsætningsfiler</title>
+    <title>OpsÃ¦tningsfiler</title>
 
     <indexterm>
-     <primary>opsætning</primary>
+     <primary>opsÃ¦tning</primary>
      <secondary>af Qvwm</secondary>
     </indexterm>
 
     <para>
      Alle filer der styrer Qvwm ligger under kataloget
-     <filename>/usr/local/share/qvwm</filename>.  Her ligger både
-     standardopsætningsfilen <filename>system.qvwmrc</filename>, og animerede
+     <filename>/usr/local/share/qvwm</filename>.  Her ligger bÃ¥de
+     standardopsÃ¦tningsfilen <filename>system.qvwmrc</filename>, og animerede
      ikoner, temafiler, lydfiler m.m.
     </para>
 
     <para>
-     Hver enkelt bruger har derudover sin personlige opsætning i filen
+     Hver enkelt bruger har derudover sin personlige opsÃ¦tning i filen
      <filename>~/.qvwmrc</filename>.
     </para>
 
     <para>
      <filename>~/.qvwmrc</filename>-filen styrer <emphasis>alt</emphasis> i
-     Qvwm.  Hvis man vil ændre noget i dens opførsel, er det denne fil man
-     skal rette i.  Man skal genstarte Qvwm for at indlæse den nye
-     <filename>~/.qvwmrc</filename>-fil, men det gøres nemt ved at
-     højre-klikke på skrivebordet, vælge "Exit qvwm" og så vælge
+     Qvwm.  Hvis man vil Ã¦ndre noget i dens opfÃ¸rsel, er det denne fil man
+     skal rette i.  Man skal genstarte Qvwm for at indlÃ¦se den nye
+     <filename>~/.qvwmrc</filename>-fil, men det gÃ¸res nemt ved at
+     hÃ¸jre-klikke pÃ¥ skrivebordet, vÃ¦lge "Exit qvwm" og sÃ¥ vÃ¦lge
      "Restart qvwm".
     </para> 
-   </sect3> <!-- Opsætningsfiler -->
+   </sect3> <!-- OpsÃ¦tningsfiler -->
 
 <sect3 id="wm-qvwm-startmenu">
   <title>Startmenu</title>
@@ -103,8 +103,8 @@ distribution.</para>
 
 
 <para> 
-Startmenuen findes i nederste venstre hjørne. Denne menu defineres i
-<filename>.qvwmrc</filename> filen i et format, der minder meget om den måde man
+Startmenuen findes i nederste venstre hjÃ¸rne. Denne menu defineres i
+<filename>.qvwmrc</filename> filen i et format, der minder meget om den mÃ¥de man
 i gamle dage definerede menuer i Windows-programmer.
 Nu til dags sker den slags vist i et GUI...
 </para>
@@ -114,7 +114,7 @@ Nu til dags sker den slags vist i et GUI...
   <title>Genvejstaster</title>
 
 <para>
-Genvejstaster defineres også i .qvwmrc-filen - 
+Genvejstaster defineres ogsÃ¥ i .qvwmrc-filen - 
 i afsnittet <filename>[ShortCutKeys]</filename> . En genvejstast kan bindes til en
 bestemt qvwm funktion - f.eks. er ALT+F4 bundet til at lukke
 det aktive vindue ved at aktivere QVWM_CLOSE funktionen:
@@ -133,42 +133,42 @@ Alle funktionerne er listet i man-siden i afsnittet om
 </sect3>    <!--   Genvejstaster -->
 
 <sect3 id="wm-qvwm-vinduer">
-  <title>Vindueshåndtering</title>
+  <title>VindueshÃ¥ndtering</title>
 
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
     <emphasis>Flytte et vindue:</emphasis>
-     Træk i titelbaren med venstre museknap. Eller aktiver
-     vindues-menuen med ALT+&lt;space&gt;, og vælg "Move" - så 
+     TrÃ¦k i titelbaren med venstre museknap. Eller aktiver
+     vindues-menuen med ALT+&lt;space&gt;, og vÃ¦lg "Move" - sÃ¥ 
      flytter du rundt med piletasterne.
  </para>
 </listitem>
 <listitem>
  <para>
-     <emphasis>Ændre størrelse på et vindue:</emphasis>
-     Træk i hjørnet.
+     <emphasis>Ã†ndre stÃ¸rrelse pÃ¥ et vindue:</emphasis>
+     TrÃ¦k i hjÃ¸rnet.
  </para>
 </listitem>
 <listitem>
  <para>
      <emphasis>Maksimere/minimere et vindue:</emphasis>
-     Brug maksimer/minimer knapperne øverst til højre i
+     Brug maksimer/minimer knapperne Ã¸verst til hÃ¸jre i
      vinduet.
  </para>
 </listitem>
 </itemizedlist>
-</sect3>    <!--   Vindueshåndtering -->
+</sect3>    <!--   VindueshÃ¥ndtering -->
 
 <sect3 id="wm-qvwm-fokus">
   <title>Fokus</title>
 
 <para>Default har qvwm click-to-focus, og man skal klikke i titelbaren
-på vinduet. Dette kan ændres til focus-follows-mouse ved at
-rette .qvwmrc filen og ændre "ClickToFocus" til "False". Hvis man
+pÃ¥ vinduet. Dette kan Ã¦ndres til focus-follows-mouse ved at
+rette .qvwmrc filen og Ã¦ndre "ClickToFocus" til "False". Hvis man
 samtidig holder "NoDesktopFocus" sat til "True" beholder det 
-aktive vindue fokus, selv hvis musen flyttes ud på baggrunden
+aktive vindue fokus, selv hvis musen flyttes ud pÃ¥ baggrunden
 i desktoppen - det kaldes nogle steder "sloppy focus".</para>
 </sect3>    <!--   Fokus -->
 
@@ -179,11 +179,11 @@ i desktoppen - det kaldes nogle steder "sloppy focus".</para>
 "pager", d.v.s. virtuelle skriveborde, med
 3x3 virtuelle skriveborde. Antal og facon kan stilles i .qvwmrc
 filen. Skift mellem de forskellige desktops sker ved at klikke
-i pageren på den desktop, man vil skifte til. Default er der dog
-aktiveret en facilitet, så hvis musen glider hen i kanten af 
-skærmen, skiftes der automatisk til den virtuelle desktop som
-ligger ved siden af den aktive. Dette kan være lidt forvirrende,
-men kan selvfølgelig slåes fra ved at sætte PagingBeltSize til 0.
+i pageren pÃ¥ den desktop, man vil skifte til. Default er der dog
+aktiveret en facilitet, sÃ¥ hvis musen glider hen i kanten af 
+skÃ¦rmen, skiftes der automatisk til den virtuelle desktop som
+ligger ved siden af den aktive. Dette kan vÃ¦re lidt forvirrende,
+men kan selvfÃ¸lgelig slÃ¥es fra ved at sÃ¦tte PagingBeltSize til 0.
 </para>
 
 <figure id="qvwmpager-fig" float="1">
@@ -192,32 +192,32 @@ men kan selvfølgelig slåes fra ved at sætte PagingBeltSize til 0.
 </figure>
 
 
-<para>qvwm har også en pudsig feature: Man kan placere vinduer midt mellem
+<para>qvwm har ogsÃ¥ en pudsig feature: Man kan placere vinduer midt mellem
 to virtuelle desktops.</para>
 </sect3>    <!--   Workspaces/virtuelle skriveborde -->
 
 <sect3 id="wm-qvwm-baggrund">
   <title>Baggrundsbilleder og temaer</title>
 
-<para>qvwm understøtter temaer - men de er faktisk blot en måde at samle
+<para>qvwm understÃ¸tter temaer - men de er faktisk blot en mÃ¥de at samle
 indstillinger som handler om udseendet af desktoppen i .qvwmrc filen.
-Skift af tema sker derfor ved at ændre en "include" linje i 
+Skift af tema sker derfor ved at Ã¦ndre en "include" linje i 
 .qvwmrc filen.</para>
 
 <para>Temaerne styrer alt der handler om udseende - baggrundsbillede,
 farver, skrifttyper o.s.v.</para>
 
-<para>Der følger tre tema-definitioner med i qvwm pakken - default,
-space og clouds. Default temaet er det, der er vist på billederne.</para>
+<para>Der fÃ¸lger tre tema-definitioner med i qvwm pakken - default,
+space og clouds. Default temaet er det, der er vist pÃ¥ billederne.</para>
 </sect3>    <!--   Baggrundsbilleder og temaer -->
 
 <sect3 id="wm-qvwm-dokumentation">
   <title>Dokumentation</title>
 <para>
 qvwm har en meget omfattende man-side, som beskriver alt hvad man
-kan gøre med opsætning af <filename>.qvwmrc</filename> filen. Der følger også nogle 
-tekstfiler med en FAQ og nogle løse noter med qvwm - både på 
-engelsk, fransk og japansk! Desuden kan man jo læse om qvwm på
+kan gÃ¸re med opsÃ¦tning af <filename>.qvwmrc</filename> filen. Der fÃ¸lger ogsÃ¥ nogle 
+tekstfiler med en FAQ og nogle lÃ¸se noter med qvwm - bÃ¥de pÃ¥ 
+engelsk, fransk og japansk! Desuden kan man jo lÃ¦se om qvwm pÃ¥
 deres hjemmeside, <ulink url="http://www.qvwm.org/">www.qvwm.org</ulink>
 </para>
 </sect3>    <!--   Dokumentation -->
@@ -227,13 +227,13 @@ deres hjemmeside, <ulink url="http://www.qvwm.org/">www.qvwm.org</ulink>
   <title>Hvad er det fede ved qvwm?</title>
 
 <para>
-Jeg må indrømme at qvwm er bedre, end jeg umiddelbart havde troet.
+Jeg mÃ¥ indrÃ¸mme at qvwm er bedre, end jeg umiddelbart havde troet.
 Den er lille - bruger kun godt 5 MB RAM - og hurtig, men alligevel
-er der gode muligheder for at sætte den op til at opføre sig
-sådan som gerne vil have den til. Grafisk og funktionelt er efterligningen 
-af Windows 95/98 så nogenlunde på plads, så den er måske værd at
+er der gode muligheder for at sÃ¦tte den op til at opfÃ¸re sig
+sÃ¥dan som gerne vil have den til. Grafisk og funktionelt er efterligningen 
+af Windows 95/98 sÃ¥ nogenlunde pÃ¥ plads, sÃ¥ den er mÃ¥ske vÃ¦rd at
 overveje, hvis man skal have lokket en fra Windows-verdenen over 
-til Linux uden at de behøver blive skræmt af en helt fremmed
+til Linux uden at de behÃ¸ver blive skrÃ¦mt af en helt fremmed
 window manager.</para>
 </sect2>
 </sect1>

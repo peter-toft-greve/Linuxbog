@@ -205,7 +205,7 @@ $proglang = array(
 
 $examp = array(
   "hello" => "Det klassiske \"Hello, world!\" program. Programmet udskriver \"Hello, world!\", efterfulgt af linie-skift hvis programmeringssproget kan. Dette er et minimalt program der viser start og slut, samt en kommentar.",
-  "udskriv" => "Et lille eksempel på åbning af fil. Filnavnet angives på kommando-linien. Der testes for om filen findes, hvis ikke, udskrives en fejl. Findes filen, udskrives den på stdout med linienumre. Tast Q ENTER for at afslutte.",
+  "udskriv" => "Et lille eksempel pÃ¥ Ã¥bning af fil. Filnavnet angives pÃ¥ kommando-linien. Der testes for om filen findes, hvis ikke, udskrives en fejl. Findes filen, udskrives den pÃ¥ stdout med linienumre. Tast Q ENTER for at afslutte.",
   "smart" => "Et smart eksempel som dette sprog er godt til"
 );
 

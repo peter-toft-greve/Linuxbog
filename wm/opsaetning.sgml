@@ -3,28 +3,28 @@
 <!-- Originalfil http://www.sslug.dk/julekalender/1.php3 -->
 
 <chapter id="wm-opsaetning">
- <title>Opsætning af valg af windowmanager</title>
+ <title>OpsÃ¦tning af valg af windowmanager</title>
 
 
  <sect1 id="starte-egen-wm">
   <title>At starte en alternativ windowmanager</title>
 
 <para>
-Det der starter X er som regel en binær fil ved navn
-<command>xinit</command>. Afhængig af hvordan <command>xinit</command>
-kaldes læses der forskellige opsætningsfiler og scripts. Det kan
-være foruddefinerede filer der gælder for alle brugere eller det kan
-være brugerens egne scripts. <filename>${HOME}/.xinitrc</filename>
+Det der starter X er som regel en binÃ¦r fil ved navn
+<command>xinit</command>. AfhÃ¦ngig af hvordan <command>xinit</command>
+kaldes lÃ¦ses der forskellige opsÃ¦tningsfiler og scripts. Det kan
+vÃ¦re foruddefinerede filer der gÃ¦lder for alle brugere eller det kan
+vÃ¦re brugerens egne scripts. <filename>${HOME}/.xinitrc</filename>
 eller <filename>${HOME}/.xsession</filename> er de "officielle" navne
 til disse scripts. I dem definerer brugeren hvilke programmer der skal
-udføres når X starter, herunder hvilken windowmanager der ønskes.
+udfÃ¸res nÃ¥r X starter, herunder hvilken windowmanager der Ã¸nskes.
 </para>
 
 <para>
 Programmet <filename>.xsession</filename> bruges ved login gennem XDM, GDM
-eller KDM. <filename>.xinitrc</filename> bruges når X startes med kommandoen
+eller KDM. <filename>.xinitrc</filename> bruges nÃ¥r X startes med kommandoen
 <command>startx</command> fra kommandolinjen.  <!-- Det her er da vist noget
-vrøvl: »De to filer har samme syntaks.« Det er bare programmer. Ikke specielt
+vrÃ¸vl: Â»De to filer har samme syntaks.Â« Det er bare programmer. Ikke specielt
 formatterede filer. -->
 </para>
 
@@ -40,14 +40,14 @@ exec /usr/X11R6/bin/icewm
 </screen>
 
 <para>
-Ovenstående script vil starte en xterm, en xclock samt windowmanageren
+OvenstÃ¥ende script vil starte en xterm, en xclock samt windowmanageren
 icewm.  Husk at <filename>~/.xsession</filename> skal have
 execute-rettigheder: <command>chmod +x ~/.xsession</command>.  For at
-få samme omgivelser både når der logges ind via GDM/KDM eller når
+fÃ¥ samme omgivelser bÃ¥de nÃ¥r der logges ind via GDM/KDM eller nÃ¥r
 <command>startx</command> bruges kan man lade
-<filename>~/.xinitrc</filename> være et symbolsk link til
+<filename>~/.xinitrc</filename> vÃ¦re et symbolsk link til
 <filename>.xsession</filename>: <command>ln -s .xsession
-.xinitrc</command>. På denne måde vil det kun være nødvendigt at vedligeholde
+.xinitrc</command>. PÃ¥ denne mÃ¥de vil det kun vÃ¦re nÃ¸dvendigt at vedligeholde
 den ene fil.</para> 
 
 <sect2 id="Display-managers">
@@ -55,12 +55,12 @@ den ene fil.</para>
 
 <para>
  GDM - GNOME Display Manager eller KDM - KDE Display Manager er
-efterhånden de mest anvendte programmer til at styre grafisk login.
+efterhÃ¥nden de mest anvendte programmer til at styre grafisk login.
 </para>
 
 <para>
-På de forskellige Linux-distributioner er GDM og KDM sat
-forskelligt op, men fælles for dem er at de kan bruge
+PÃ¥ de forskellige Linux-distributioner er GDM og KDM sat
+forskelligt op, men fÃ¦lles for dem er at de kan bruge
 <filename>.xsession</filename> til starte programmer og en
 windowmanager efter brugerens valg.  
 </para>
@@ -80,7 +80,7 @@ windowmanager efter brugerens valg.
 For at starte en anden windowmanager end de der allerede er
 sat op kan brugeren oprette filen
 <filename>~/.xsession</filename> i sit hjemmekatalog. En meget enkel
-<filename>.xsession</filename> kunne nøjes med at kalde selve 
+<filename>.xsession</filename> kunne nÃ¸jes med at kalde selve 
 windowmanager-programmet: 
 </para>
  
@@ -92,9 +92,9 @@ windowmanager-programmet:
 </screen>
 
 <para>
-For at få GDM til at læse <filename>~/.xsession</filename> skal
-<emphasis>Default</emphasis> (under Debian 3.0 skal man vælge
-Xsession) vælges fra Session-menuen.  
+For at fÃ¥ GDM til at lÃ¦se <filename>~/.xsession</filename> skal
+<emphasis>Default</emphasis> (under Debian 3.0 skal man vÃ¦lge
+Xsession) vÃ¦lges fra Session-menuen.  
 </para>
 
 <figure id="gdm2-fig" float="1">
@@ -104,12 +104,12 @@ Xsession) vælges fra Session-menuen.
 
 
 <para>
-Tilsvarende skal der fra KDM vælges default i menu-punktet "Session Type". 
+Tilsvarende skal der fra KDM vÃ¦lges default i menu-punktet "Session Type". 
 </para>
 
 <para>
-Nu læses <filename>~/.xsession</filename> og man kan begynde at 
-eksperimentere med at indsætte sine favorit programmer i <filename>.xsession</filename>. Fx: 
+Nu lÃ¦ses <filename>~/.xsession</filename> og man kan begynde at 
+eksperimentere med at indsÃ¦tte sine favorit programmer i <filename>.xsession</filename>. Fx: 
 </para>
 
 <screen>
@@ -123,22 +123,22 @@ exec /usr/X11R6/bin/icewm
 
 <sect1 id="wm-login-menu">
 
-  <title>Få en window manager til at optræde i KDM eller GDM menuen</title>
+  <title>FÃ¥ en window manager til at optrÃ¦de i KDM eller GDM menuen</title>
 
 <para>
-Siden det nu er søndag er der lidt ekstra guf. I stedet for at sætte sin yndlings window manager ind i sin .xsession og vælge default, kan det være smart at sætte den ind i den menu, der vises i KDM eller GDM, så man kan vælge den derfra.</para>
+Siden det nu er sÃ¸ndag er der lidt ekstra guf. I stedet for at sÃ¦tte sin yndlings window manager ind i sin .xsession og vÃ¦lge default, kan det vÃ¦re smart at sÃ¦tte den ind i den menu, der vises i KDM eller GDM, sÃ¥ man kan vÃ¦lge den derfra.</para>
 
 <para>
-Der kan være forskelle på de forskellige distributioner. Eksemplerne
-herunder er baseret på Red Hat. Vi håber der kan være til hjælp og
-inspiration også for dem der ikke kører Red Hat.</para>
+Der kan vÃ¦re forskelle pÃ¥ de forskellige distributioner. Eksemplerne
+herunder er baseret pÃ¥ Red Hat. Vi hÃ¥ber der kan vÃ¦re til hjÃ¦lp og
+inspiration ogsÃ¥ for dem der ikke kÃ¸rer Red Hat.</para>
 
 <sect2 id="wm-kdm-eller-gdm">
-  <title>Kører jeg kdm eller gdm?</title>
+  <title>KÃ¸rer jeg kdm eller gdm?</title>
 
 <para>
-Først må man finde ud af om man kører kdm eller gdm. Dette kan gøres ved
-at se, om der kører en proces der hedder kdm eller gdm.
+FÃ¸rst mÃ¥ man finde ud af om man kÃ¸rer kdm eller gdm. Dette kan gÃ¸res ved
+at se, om der kÃ¸rer en proces der hedder kdm eller gdm.
 </para>
 
 <screen>
@@ -150,12 +150,12 @@ $ ps ax |grep gdm
 </screen>
 
 <para>
-Her kører vi kdm. Hvis vi kørte gdm, var det <command>ps ax |grep gdm</command>
+Her kÃ¸rer vi kdm. Hvis vi kÃ¸rte gdm, var det <command>ps ax |grep gdm</command>
 der var kommet output ud af.
 </para>
 
 <para>
-Der er også forskel på hvordan de ser ud. Der kan være forskel fra
+Der er ogsÃ¥ forskel pÃ¥ hvordan de ser ud. Der kan vÃ¦re forskel fra
 distribution til distribution, men her er screen shots fra Red Hat:
 </para>
 
@@ -173,17 +173,17 @@ Og her er fra gdm:</para>
 <title>GDM</title>
 <graphic fileref="choosesession1_shot_crop.&magic;" scale="60"></graphic>
 </figure>
-</sect2>    <!--   Kører jeg kdm eller gdm? -->
+</sect2>    <!--   KÃ¸rer jeg kdm eller gdm? -->
 
 <sect2 id="wm-gdm">
   <title>GDM</title>
 
 <para>
-Hvis du kører GDM er det nemt at sætte den nye Window manager ind
+Hvis du kÃ¸rer GDM er det nemt at sÃ¦tte den nye Window manager ind
 i menuen:</para>
 
 <para>
-Når du er tilfreds med din <filename>$HOME/.xsession</filename> kan den kopieres til
+NÃ¥r du er tilfreds med din <filename>$HOME/.xsession</filename> kan den kopieres til
 <filename>/etc/X11/gdm/Sessions/WMNAME</filename>.</para>
 </sect2>    <!--   GDM -->
 
@@ -191,15 +191,15 @@ Når du er tilfreds med din <filename>$HOME/.xsession</filename> kan den kopieres
   <title>KDM</title>
 
 <sect3 id="wm-kdm-login-menu">
-  <title>At få den nye window manager til at optræde i menuen</title>
+  <title>At fÃ¥ den nye window manager til at optrÃ¦de i menuen</title>
 
 <para>
-Det er nemt nok at få kdm til at vise et nyt menupunkt.
-Åbn filen <filename>/etc/X11/xdm/kdmrc</filename> med en editor. (Kan ligge andre steder på
+Det er nemt nok at fÃ¥ kdm til at vise et nyt menupunkt.
+Ã…bn filen <filename>/etc/X11/xdm/kdmrc</filename> med en editor. (Kan ligge andre steder pÃ¥
 andre distributioner).</para>
 
 <para>
-Find linjen "SessionTypes" og indsæt navnet på din nye window
+Find linjen "SessionTypes" og indsÃ¦t navnet pÃ¥ din nye window
 manager:
 </para>
 
@@ -208,25 +208,25 @@ manager:
 </para>
 
 <para>
-Dette får imidlertid kun kdm til at vise menupunktet. Man skal selv
-sørge for at der sker det rigtige, når man vælger det fra menuen.
+Dette fÃ¥r imidlertid kun kdm til at vise menupunktet. Man skal selv
+sÃ¸rge for at der sker det rigtige, nÃ¥r man vÃ¦lger det fra menuen.
 </para>
-</sect3>    <!--   At få den nye window manager til at optræde i menuen -->
+</sect3>    <!--   At fÃ¥ den nye window manager til at optrÃ¦de i menuen -->
 
 <sect3 id="wm-kdm-login-menu-start-ny-wm">
-  <title>At få det nye menupunkt til at starte den nye window manager</title>
+  <title>At fÃ¥ det nye menupunkt til at starte den nye window manager</title>
 
 <para>
-Hvis man kører KDM på Red Hat og har switchdesk installeret, skal man
+Hvis man kÃ¸rer KDM pÃ¥ Red Hat og har switchdesk installeret, skal man
 blot kopiere sin .xsession til /usr/share/apps/switchdesk/ og kalde den
 Xclients.icewm eller Xclients.qvwm eller hvad man nu har sat ind i sin
-.kdmrc for et navn. Den skal måske helst have permissions 755 (kig på de
+.kdmrc for et navn. Den skal mÃ¥ske helst have permissions 755 (kig pÃ¥ de
 filer der ligger der i forvejen.</para>
 
 <para>
-Hvis man ikke kører Red Hat med switchdesk installeret, skal man sætte
+Hvis man ikke kÃ¸rer Red Hat med switchdesk installeret, skal man sÃ¦tte
 sin nye Window Manager ind i det case statement, der findes i filen
-<filename>/etc/X11/xdm/Xsession</filename> (kan ligge andre steder på andre
+<filename>/etc/X11/xdm/Xsession</filename> (kan ligge andre steder pÃ¥ andre
 systemer).
 </para>
 

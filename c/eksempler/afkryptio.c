@@ -1,7 +1,7 @@
 
 /* modular programmering - fil nr. 1, kryptio.c */
-/* main læser fra tastatur (eller omdirigeret fil)
- * og skriver det krypterede bogstav ud på skærmen.
+/* main lÃ¦ser fra tastatur (eller omdirigeret fil)
+ * og skriver det krypterede bogstav ud pÃ¥ skÃ¦rmen.
  */
 
 #include <stdio.h>
@@ -18,7 +18,7 @@ int main()
 }
 
 
-static char *keystring = "Under træerne var der stille og roligt.";
+static char *keystring = "Under trÃ¦erne var der stille og roligt.";
 static int inuse;
 static char *mv;
 static int keylen;

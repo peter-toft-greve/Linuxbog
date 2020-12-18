@@ -4,32 +4,32 @@
 <chapter id="ooo-fodnoter-og-slutnoter">
  <title>Fodnoter og slutnoter</title>
 
-<para>Dette kapitel handler om at indsætte fodnoter og slutnoter.</para>
+<para>Dette kapitel handler om at indsÃ¦tte fodnoter og slutnoter.</para>
     
 <sect1 id="ooo-fodnoter-og-slutnoter-indsaet">
-  <title>Indsætte en fodnote/slutnote</title>
+  <title>IndsÃ¦tte en fodnote/slutnote</title>
 
-<para>Vælg <emphasis>Indsæt/fodnote</emphasis>. Vælg fodnote eller slutnote og tryk
-    <emphasis>OK</emphasis>. Skriv så teksten:</para>
+<para>VÃ¦lg <emphasis>IndsÃ¦t/fodnote</emphasis>. VÃ¦lg fodnote eller slutnote og tryk
+    <emphasis>OK</emphasis>. Skriv sÃ¥ teksten:</para>
 
 <figure float="1" id="fig-ooo-fodnote">
 <title>Fodnote</title>
 <graphic fileref="fodnote.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Fodnoter placeres nederst på samme side. Slutnoter placeres til sidst
-    i dokumentet på en side for sig selv.</para>
+<para>Fodnoter placeres nederst pÃ¥ samme side. Slutnoter placeres til sidst
+    i dokumentet pÃ¥ en side for sig selv.</para>
 
 <para>I selve teksten kommer en henvisning til fodnoten:</para>
 
 <figure float="1" id="fig-ooo-fodnotemarkoer">
-<title>Fodnotemarkør</title>
+<title>FodnotemarkÃ¸r</title>
 <graphic fileref="fodnotemarkoer.&magic;" scale="60"></graphic>
 </figure>
 
 <para>En fodnote/slutnote kan slettes igen ved at slette henvisningen!</para>
 
- </sect1>    <!--   12.1. Indsætte en fodnote/slutnote -->
+ </sect1>    <!--   12.1. IndsÃ¦tte en fodnote/slutnote -->
 
 <!-- 12.2 --> &ooo-fodnoter-og-slutnoter-navigere;
 

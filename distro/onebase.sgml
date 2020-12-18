@@ -11,12 +11,12 @@
  </indexterm>
 
 <para>
-Onebase holder til på <ulink url="http://www.onebase-linux.org/">http://www.onebase-linux.org</ulink>. Siden er lukket
-lige nu, men forventes at åbne igen den. 22. december 2003 hvor
+Onebase holder til pÃ¥ <ulink url="http://www.onebase-linux.org/">http://www.onebase-linux.org</ulink>. Siden er lukket
+lige nu, men forventes at Ã¥bne igen den. 22. december 2003 hvor
 version 2.0.2 slippes fri.
 </para>
 <para>
-Jeg fandt den via distrowatch.com og ftp-serveren på ibiblio.org.
+Jeg fandt den via distrowatch.com og ftp-serveren pÃ¥ ibiblio.org.
 </para>
 <para>
 <figure id="onebase-logo" float="1">
@@ -25,22 +25,22 @@ Jeg fandt den via distrowatch.com og ftp-serveren på ibiblio.org.
 </figure>
 
 Onebase er en ny source-distribution fra sommeren 2003 der
-åbenbart hovedsageligt holdes i hånden af P.B.Prabhuram. Det lader til
-at Onebase har en lille trofast skare der følger med i hvad der sker,
-men for udenforstående kan det være lidt svært at få overblik indtil
-websiden åbner igen.
+Ã¥benbart hovedsageligt holdes i hÃ¥nden af P.B.Prabhuram. Det lader til
+at Onebase har en lille trofast skare der fÃ¸lger med i hvad der sker,
+men for udenforstÃ¥ende kan det vÃ¦re lidt svÃ¦rt at fÃ¥ overblik indtil
+websiden Ã¥bner igen.
 </para>
 
  <sect1 id="distro-onebase-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Onebase Linux</secondary>
   </indexterm>
 
 <para>
-Det er målet for Onebase at den skal stille en solid base til rådighed for en bred vifte af brugere, lige fra begynderen til udviklere der så selv kan installere netop de programmer der er brug for.
+Det er mÃ¥let for Onebase at den skal stille en solid base til rÃ¥dighed for en bred vifte af brugere, lige fra begynderen til udviklere der sÃ¥ selv kan installere netop de programmer der er brug for.
 </para>
 </sect1>
 
@@ -53,48 +53,48 @@ Det er målet for Onebase at den skal stille en solid base til rådighed for en br
   </indexterm>
 
 <para>
-Cd'en booter på helt normal vis med isolinux, og kort tid efter
-præsenteres man for en menu til installation, opdatering, og
+Cd'en booter pÃ¥ helt normal vis med isolinux, og kort tid efter
+prÃ¦senteres man for en menu til installation, opdatering, og
 redningsoperationer.
-Man logger ind som root og skriver "installos" og installationen går
+Man logger ind som root og skriver "installos" og installationen gÃ¥r
 igang.
 </para>
 <para>
 De enkelte punkter i installationen er ganske simple. Disken skal
 identificeres, men der er ikke mulighed for at partitionere den.
-Som filsystem er der mulighed for at vælge mellem ReiserFS, Ext3 og
+Som filsystem er der mulighed for at vÃ¦lge mellem ReiserFS, Ext3 og
 XFS.
 </para>
 <para>
-Swap partition angives, og installationen går igang med at kopiere
+Swap partition angives, og installationen gÃ¥r igang med at kopiere
 filer fra CD'en.
 </para>
 <para>
-Den største overraskelse under installationen er der skal kompileres
-en kerne. Meget smart egentlig - og knap så erfarne får da også råd om
-bare at acceptere default-indstillingerne, og lade være med at pille. 
-Jeg vil mene at andre også skal holde pilfingrene væk :)
+Den stÃ¸rste overraskelse under installationen er der skal kompileres
+en kerne. Meget smart egentlig - og knap sÃ¥ erfarne fÃ¥r da ogsÃ¥ rÃ¥d om
+bare at acceptere default-indstillingerne, og lade vÃ¦re med at pille. 
+Jeg vil mene at andre ogsÃ¥ skal holde pilfingrene vÃ¦k :)
 </para>
 <para>
-Efter kompilering af kernen er det tid til at finde på et godt root-password.
+Efter kompilering af kernen er det tid til at finde pÃ¥ et godt root-password.
 </para>
 <para>
 Herefter dukker en optimerings-fil op i vi-editoren. Jeg valgte min processor og default optimeringslevel.
 </para>
 <para>
-Så er installationen færdig og man bliver bedt om at boote med ctrl-alt-delete.
+SÃ¥ er installationen fÃ¦rdig og man bliver bedt om at boote med ctrl-alt-delete.
 </para>
 <para>
 Jeg havde problemer med kernen og kunne ikke boote efter instalationen.
-Morale: Lad være med at lave den perfekte kerne under installationen - den
+Morale: Lad vÃ¦re med at lave den perfekte kerne under installationen - den
 bliver ikke perfekt alligevel. Gem det til senere.
-Heldigvis er der en fin rescue-mode på CD'en så jeg kunne boote den vej og
+Heldigvis er der en fin rescue-mode pÃ¥ CD'en sÃ¥ jeg kunne boote den vej og
 bygge en brugbar kerne.
 </para>
 </sect1>
 
 <sect1 id="distro-onebase-postinstall">
-<title>Efter den grundlæggende installation</title>
+<title>Efter den grundlÃ¦ggende installation</title>
 <para>
 <screen>
 <prompt>
@@ -115,35 +115,35 @@ coltrane login:
 </para>
 
 <para>
-Første problem: Det er ikke umiddelbart muligt at konfigurere dansk keyboard i konsolen.
-Så det gælder om at kende det amerikanske keyboard layout:
+FÃ¸rste problem: Det er ikke umiddelbart muligt at konfigurere dansk keyboard i konsolen.
+SÃ¥ det gÃ¦lder om at kende det amerikanske keyboard layout:
 <screen>
 <prompt>
 
-- ligger på +
-_ ligger på ?
-; ligger på æ
-: ligger på Æ
-| ligger på *
+- ligger pÃ¥ +
+_ ligger pÃ¥ ?
+; ligger pÃ¥ Ã¦
+: ligger pÃ¥ Ã†
+| ligger pÃ¥ *
 </prompt>
 </screen>
 </para>
 <para>
-Det burde være nok til at klare sig gennem vi-editoren.
+Det burde vÃ¦re nok til at klare sig gennem vi-editoren.
 </para>
 <para>
 Jeg fik ikke mulighed for at konfigurere netkortet under
 installationen. 
 </para>
 <para>
-Da jeg fik maskinen i luften skrev jeg <prompt>modprobe 3c59x</prompt> for få gang i
-mit netkort. Herefter <prompt>ol-connect -y</prompt> for at få en tildelt en dhcpadresse.
+Da jeg fik maskinen i luften skrev jeg <prompt>modprobe 3c59x</prompt> for fÃ¥ gang i
+mit netkort. Herefter <prompt>ol-connect -y</prompt> for at fÃ¥ en tildelt en dhcpadresse.
 </para>
 <para>
 I <prompt>/etc/sysconfig/network</prompt> satte jeg hostnavn. Reboot!
 </para>
 <para>
-Det løstes dog hurtigt ved at tilføje tre filer: 
+Det lÃ¸stes dog hurtigt ved at tilfÃ¸je tre filer: 
 <prompt>/etc/sysconfig/network-devices/ifconfig.eth0</prompt>:
 <screen><prompt>
 ONBOOT=yes
@@ -183,18 +183,18 @@ Installationen fylder omkring 800 mb og har rigeligt med programmer til at
 installere flere - og ikke meget andet.
 </para>
 <para>
-Pakker er kildekode og skal oversættes. Der findes vist oversatte
-pakker, men det lykkedes mig ikke at finde dem. Jeg har længe haft lyst at
-prøve en sourcebaseret distribution, så jeg brugte ikke lang tid på at lede efter de binære pakker.
-Man skal bare have for øje at det kan tage et stykke tid at kompilere X og tilhørende komponenter.
+Pakker er kildekode og skal oversÃ¦ttes. Der findes vist oversatte
+pakker, men det lykkedes mig ikke at finde dem. Jeg har lÃ¦nge haft lyst at
+prÃ¸ve en sourcebaseret distribution, sÃ¥ jeg brugte ikke lang tid pÃ¥ at lede efter de binÃ¦re pakker.
+Man skal bare have for Ã¸je at det kan tage et stykke tid at kompilere X og tilhÃ¸rende komponenter.
 </para>
 <para>
 Jeg skrev <prompt>olm -h</prompt> og fandt ud af at hente beskrivelsen af fluxbox
-windowmanageren med den tekstbaserede browser links. Herefter skrev jeg <prompt>olm -d fluxbox.olm</prompt>. OLM-systemet gav sig til at holde styr på afhængigheder og downloads. Efter download skrev jeg "olm -d fluxbox.olm" og den gik igang med at kompilere. Jeg konstaterede at den fulgte afhængigheder og gik i seng.
+windowmanageren med den tekstbaserede browser links. Herefter skrev jeg <prompt>olm -d fluxbox.olm</prompt>. OLM-systemet gav sig til at holde styr pÃ¥ afhÃ¦ngigheder og downloads. Efter download skrev jeg "olm -d fluxbox.olm" og den gik igang med at kompilere. Jeg konstaterede at den fulgte afhÃ¦ngigheder og gik i seng.
 </para>
 <para>
-Da jeg vågnde var den færdig, og jeg skrev xf86config for at konfigurere X.
-Den kender jeg, men jeg kunne nok have nået samme resultat med xf86cfg. Selvfølgelig er der ingen problemer med at få X til at forstå et dansk keyboard-layout.
+Da jeg vÃ¥gnde var den fÃ¦rdig, og jeg skrev xf86config for at konfigurere X.
+Den kender jeg, men jeg kunne nok have nÃ¥et samme resultat med xf86cfg. SelvfÃ¸lgelig er der ingen problemer med at fÃ¥ X til at forstÃ¥ et dansk keyboard-layout.
 </para>
 <para>
 
@@ -203,11 +203,11 @@ Den kender jeg, men jeg kunne nok have nået samme resultat med xf86cfg. Selvfølg
 <graphic fileref="onebase-xfree-login.png" scale="60"></graphic>
 </figure>
 
-Jeg brugte <prompt>ol-desk</prompt> til at vælge Fluxbox som default windowmanager.
+Jeg brugte <prompt>ol-desk</prompt> til at vÃ¦lge Fluxbox som default windowmanager.
 </para>
 <para>
 
-For at kunne vælge en xterm i menuen indsatte jeg følgende linie i
+For at kunne vÃ¦lge en xterm i menuen indsatte jeg fÃ¸lgende linie i
 <prompt>/root/.fluxbox/menu</prompt>:
 <screen><prompt>
 [exec] (xterm) {xterm -bg grey -sl 500 -ls}
@@ -216,10 +216,10 @@ For at kunne vælge en xterm i menuen indsatte jeg følgende linie i
 </para>
 <para>
 Jeg hentede olm-beskrivelsen af dillo-browseren vha. links og hentede koden med
-<prompt>olm -s dillo.olm</prompt> Efter download kompilerede jeg Dillo og afhængigheder med <prompt>olm- d dillo.olm</prompt>.
+<prompt>olm -s dillo.olm</prompt> Efter download kompilerede jeg Dillo og afhÃ¦ngigheder med <prompt>olm- d dillo.olm</prompt>.
 </para>
 <para>
-Næste aften installerede jeg yderlige Secure Shell, Emacs og
+NÃ¦ste aften installerede jeg yderlige Secure Shell, Emacs og
 ImageMagick.
 <figure id="galeon-build" float="1">
 <title>Fluxbox med Dillo browser og xterm</title>
@@ -228,7 +228,7 @@ ImageMagick.
 
 </para>
 <para>
-Jeg ville have installeret Evolution og Mozilla også, men en afhængighedsfejl gjorde at jeg ikke kunne.
+Jeg ville have installeret Evolution og Mozilla ogsÃ¥, men en afhÃ¦ngighedsfejl gjorde at jeg ikke kunne.
 </para>
 </sect1>
 
@@ -243,15 +243,15 @@ at bruge og der er ikke flere end at man kan huske dem i hovedet.
 <sect1 id="distro-onebase-vurdering">
 <title>Vurdering af Onebase</title>
 <para>
-Når der kommer helt styr på pakke-afhængigheder vil
-den være et logisk alternativ til Gentoo og andre sourcebaserede
-distributioner for knap så hærdede Linux-brugere.
+NÃ¥r der kommer helt styr pÃ¥ pakke-afhÃ¦ngigheder vil
+den vÃ¦re et logisk alternativ til Gentoo og andre sourcebaserede
+distributioner for knap sÃ¥ hÃ¦rdede Linux-brugere.
 Der er ikke flere Onebase pakker (endnu) end at de er til at overskue, men
-selvfølgelig kan der kompileres egne pakker på normal vis.
+selvfÃ¸lgelig kan der kompileres egne pakker pÃ¥ normal vis.
 </para>
 <para>
-Som distribution der kan det nødvendige og ikke er fyldt med mere eller
-mindre uigennemskuelige programmer tror jeg den vil gøre lykke.
+Som distribution der kan det nÃ¸dvendige og ikke er fyldt med mere eller
+mindre uigennemskuelige programmer tror jeg den vil gÃ¸re lykke.
 </para>
 </sect1>
 </chapter>

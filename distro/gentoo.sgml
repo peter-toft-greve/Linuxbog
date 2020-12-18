@@ -17,44 +17,44 @@
  </indexterm>
 
  <para>
-  »Gentoo« er et kildetekstbaseret system.  Du (din maskine) kan selv
-  oversætte alle de programmer du vil have på maskinen,
-  men du behøver ikke at gøre det. Installationsmetodens vægt på
-  oversættelse bevirker, at det er lettere at opdatere
-  dependency-træer.
+  Â»GentooÂ« er et kildetekstbaseret system.  Du (din maskine) kan selv
+  oversÃ¦tte alle de programmer du vil have pÃ¥ maskinen,
+  men du behÃ¸ver ikke at gÃ¸re det. Installationsmetodens vÃ¦gt pÃ¥
+  oversÃ¦ttelse bevirker, at det er lettere at opdatere
+  dependency-trÃ¦er.
  </para>
 
  <figure id="distro-gentoo-fig" float="1">
-  <title>(Også) med Gentoo kan man oversætte alle programmer</title>
+  <title>(OgsÃ¥) med Gentoo kan man oversÃ¦tte alle programmer</title>
   <graphic fileref="gentoo.&magic;" scale="60"></graphic>
  </figure>
 
  <sect1 id="distro-gentoo-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Gentoo</secondary>
   </indexterm>
 
   <para>
-   Gentoo kan også tilfredsstille folk, der vil have et systemet
-   optimeret efter hardwaren. Man kan jo justere et system, når
-   man oversætter det. Gentoo tilbyder nogle generelle flag for
-   oversættelse, men man kan også sætte dem på pakkebasis,
-   således at folk kan få det lige præcis som det passer dem.
+   Gentoo kan ogsÃ¥ tilfredsstille folk, der vil have et systemet
+   optimeret efter hardwaren. Man kan jo justere et system, nÃ¥r
+   man oversÃ¦tter det. Gentoo tilbyder nogle generelle flag for
+   oversÃ¦ttelse, men man kan ogsÃ¥ sÃ¦tte dem pÃ¥ pakkebasis,
+   sÃ¥ledes at folk kan fÃ¥ det lige prÃ¦cis som det passer dem.
   </para>
 
   <para>
-   Hvis man ønsker det, kan man køre med de nyeste udgaver af
-   programmer, men så skal man jo selv enten lave en
-   gentoo-ebuild specifikation eller bruge sourcepakken på en
-   anden måde. Folk der har brug for at køre med de nyeste nye
+   Hvis man Ã¸nsker det, kan man kÃ¸re med de nyeste udgaver af
+   programmer, men sÃ¥ skal man jo selv enten lave en
+   gentoo-ebuild specifikation eller bruge sourcepakken pÃ¥ en
+   anden mÃ¥de. Folk der har brug for at kÃ¸re med de nyeste nye
    udgaver af programmerne kan med stor fordel bruge Gentoo i
-   stedet for for eksempel SuSE, men så får man jo heller ikke sikkerheden
-   i det afprøvede koncept. Mange af principperne i Gentoo svarer
-   til Debian, men i Gentoo skulle det være lidt hurtigere at man
-   får mulighed for at hente nye "ustabile" pakker.
+   stedet for for eksempel SuSE, men sÃ¥ fÃ¥r man jo heller ikke sikkerheden
+   i det afprÃ¸vede koncept. Mange af principperne i Gentoo svarer
+   til Debian, men i Gentoo skulle det vÃ¦re lidt hurtigere at man
+   fÃ¥r mulighed for at hente nye "ustabile" pakker.
   </para>
  </sect1>
 
@@ -68,23 +68,23 @@
 
   <para>
    Man kan bestille Gentoo hos <ulink url="http://www.linuxpusher.dk/gentoo.php?item=1">Linuxpusher</ulink> eller selv hente et 
-   brændklart ISO-cd-rom-billede fra <ulink url="http://www.gentoo.org/">Gentoo-hjemmesiden</ulink>.
-   Man brænder cd-rom-billedet til med sit foretrukne
-   værktøj (eller finder et i <ulink
-   url="http://www.linuxbog.dk/applikationer/bog/">»Linux - Friheden
-   til at vælge programmer«</ulink>).
+   brÃ¦ndklart ISO-cd-rom-billede fra <ulink url="http://www.gentoo.org/">Gentoo-hjemmesiden</ulink>.
+   Man brÃ¦nder cd-rom-billedet til med sit foretrukne
+   vÃ¦rktÃ¸j (eller finder et i <ulink
+   url="http://www.linuxbog.dk/applikationer/bog/">Â»Linux - Friheden
+   til at vÃ¦lge programmerÂ«</ulink>).
   </para>
 
   <para>
    Man starter installationen ved at starte sin maskine direkte fra
-   Gentoo-cd-rom'en og følger i øvrigt <ulink
+   Gentoo-cd-rom'en og fÃ¸lger i Ã¸vrigt <ulink
    url="http://www.gentoo.org/doc/da/handbook/">installationsvejledningen</ulink>.
   </para>
 
   <note>
    <para>
-    På grund af dørvogteren eller HTTP-stedfortræderen på vores netværk,
-    kunne min maskine ikke komme ordentligt på nettet, før jeg havde udført
+    PÃ¥ grund af dÃ¸rvogteren eller HTTP-stedfortrÃ¦deren pÃ¥ vores netvÃ¦rk,
+    kunne min maskine ikke komme ordentligt pÃ¥ nettet, fÃ¸r jeg havde udfÃ¸rt
     kommandoen:
 <screen>
 <prompt>cdimage / # </prompt><userinput>echo 0 &gt; /proc/sys/net/ipv4/tcp_timestamps</userinput>
@@ -94,21 +94,21 @@
 
   <note>
    <para>
-    Gentoo er afhængig af at udviklere ikke pludselig rydder op på deres
-    websteder og sletter, omdøber eller flytter filer.  Da jeg &ndash; som
-    installationsvejledningen forslår &ndash; forsøgte at installere
-    PCMCIA-understøttelse fik jeg for eksempel at vide at
-    <command>emerge</command> ikke kunne få fat i
+    Gentoo er afhÃ¦ngig af at udviklere ikke pludselig rydder op pÃ¥ deres
+    websteder og sletter, omdÃ¸ber eller flytter filer.  Da jeg &ndash; som
+    installationsvejledningen forslÃ¥r &ndash; forsÃ¸gte at installere
+    PCMCIA-understÃ¸ttelse fik jeg for eksempel at vide at
+    <command>emerge</command> ikke kunne fÃ¥ fat i
     <filename>pcmcia-cs-3.2.4-orinoco-patch.diff</filename>.
    </para>
   </note>
 
   <note>
    <para>
-    Hvis man har fulgt installationsvejledningens råd om opdelingen af
-    harddisken, bør GRUB's opsætningsfil,
+    Hvis man har fulgt installationsvejledningens rÃ¥d om opdelingen af
+    harddisken, bÃ¸r GRUB's opsÃ¦tningsfil,
     <filename>/boot/grub/grub.conf</filename>, <emphasis>ikke</emphasis>
-    være som de foreslår, men snarere se sådan ud:
+    vÃ¦re som de foreslÃ¥r, men snarere se sÃ¥dan ud:
 <programlisting>
 default 0
 timeout 30
@@ -123,9 +123,9 @@ initrd (hd0,0)/initrd-2.4.20-gentoo-r8
   </note>
 
   <para>
-   Regn med at det alt i alt tager en dag eller to at få et basalt
-   Gentoo-system på benene.  Og regn så med yderligere en dag eller to til at
-   få det til at fungere som du vil have det.
+   Regn med at det alt i alt tager en dag eller to at fÃ¥ et basalt
+   Gentoo-system pÃ¥ benene.  Og regn sÃ¥ med yderligere en dag eller to til at
+   fÃ¥ det til at fungere som du vil have det.
   </para>
  </sect1>
 
@@ -134,22 +134,22 @@ initrd (hd0,0)/initrd-2.4.20-gentoo-r8
 
   <indexterm>
    <primary>installation af ekstra programmel</primary>
-   <secondary>på Gentoo</secondary>
+   <secondary>pÃ¥ Gentoo</secondary>
   </indexterm>
 
   <para>
-   Det er i princippet ganske enkelt at installere ekstra programmer på Gentoo.
+   Det er i princippet ganske enkelt at installere ekstra programmer pÃ¥ Gentoo.
    Det klares blot med:
 <screen>
 <prompt># </prompt><userinput>emerge pakkens_navn</userinput>
 </screen>
-   I praksis er det ikke altid helt så let.  Det er for eksempel endnu ikke
-   lykkedes mig at få installeret webbrowseren Galeon (pakken hedder
-   »<literal>galeon</literal>«) så den reelt virker.  Uanset hvad jeg har
-   prøvet, så har den brokket sig over at <literal>gconf</literal> har manglet
-   (også efter at jeg installerede den).  Men jeg må indrømme at med flere
-   andre pakker er det gået ganske smertefrit, selvom det tager en hel del tid
-   at oversætte et linux-system &ndash; selv med en 2,4&nbsp;GHz-processor.
+   I praksis er det ikke altid helt sÃ¥ let.  Det er for eksempel endnu ikke
+   lykkedes mig at fÃ¥ installeret webbrowseren Galeon (pakken hedder
+   Â»<literal>galeon</literal>Â«) sÃ¥ den reelt virker.  Uanset hvad jeg har
+   prÃ¸vet, sÃ¥ har den brokket sig over at <literal>gconf</literal> har manglet
+   (ogsÃ¥ efter at jeg installerede den).  Men jeg mÃ¥ indrÃ¸mme at med flere
+   andre pakker er det gÃ¥et ganske smertefrit, selvom det tager en hel del tid
+   at oversÃ¦tte et linux-system &ndash; selv med en 2,4&nbsp;GHz-processor.
   </para>
  </sect1>
 
@@ -162,9 +162,9 @@ initrd (hd0,0)/initrd-2.4.20-gentoo-r8
   </indexterm>
 
   <para>
-   Gentoos killerfeature er at man oversætter programmerne på og til den
-   maskine de skal køre på.  Ideen er at så skulle programmerne være optimerede
-   lige netop til den maskine og derfor køre hurtigere end i generelle udgaver.
+   Gentoos killerfeature er at man oversÃ¦tter programmerne pÃ¥ og til den
+   maskine de skal kÃ¸re pÃ¥.  Ideen er at sÃ¥ skulle programmerne vÃ¦re optimerede
+   lige netop til den maskine og derfor kÃ¸re hurtigere end i generelle udgaver.
   </para>
  </sect1>
 
@@ -172,26 +172,26 @@ initrd (hd0,0)/initrd-2.4.20-gentoo-r8
   <title>Konklusion</title>
 
   <para>
-   Jeg synes det er utroligt bøvlet at skulle vente på at alle programmerne
-   bliver oversat under installationen.  Og så tvivler jeg voldsomt på at de
-   bliver så meget hurtigere at man tjener det ekstra tidsforbrug under
-   installationen ind igen.  Man <emphasis>kan</emphasis> også installere
-   Gentoo som binære pakker, men så kan jeg slet ikke se hvad der skulle
-   være fordelen ved distributionen, når argumenterne for den netop handler
-   om fordelen ved selv at oversætte alle programmerne.
+   Jeg synes det er utroligt bÃ¸vlet at skulle vente pÃ¥ at alle programmerne
+   bliver oversat under installationen.  Og sÃ¥ tvivler jeg voldsomt pÃ¥ at de
+   bliver sÃ¥ meget hurtigere at man tjener det ekstra tidsforbrug under
+   installationen ind igen.  Man <emphasis>kan</emphasis> ogsÃ¥ installere
+   Gentoo som binÃ¦re pakker, men sÃ¥ kan jeg slet ikke se hvad der skulle
+   vÃ¦re fordelen ved distributionen, nÃ¥r argumenterne for den netop handler
+   om fordelen ved selv at oversÃ¦tte alle programmerne.
   </para>
 
   <para>
-   Bortset fra nogle mystiske problemer med netværket og dørvogteren på mit
+   Bortset fra nogle mystiske problemer med netvÃ¦rket og dÃ¸rvogteren pÃ¥ mit
    arbejde &ndash; og at man ikke automatisk har lydsystemet med i kernen
-   &ndash; så må jeg sige at det klarede opgaven med at komme op og køre på
+   &ndash; sÃ¥ mÃ¥ jeg sige at det klarede opgaven med at komme op og kÃ¸re pÃ¥
    min maskine ganske fint.
   </para>
 
   <para>
-   Det bliver ikke Gentoo der kommer på min nye maskine, men det er nok ikke
-   noget dårligt valg til folk der prioriterer det at have den nyeste udgave
-   af alle programmer højt.
+   Det bliver ikke Gentoo der kommer pÃ¥ min nye maskine, men det er nok ikke
+   noget dÃ¥rligt valg til folk der prioriterer det at have den nyeste udgave
+   af alle programmer hÃ¸jt.
   </para>
  </sect1>
 </chapter>

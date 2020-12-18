@@ -1,27 +1,27 @@
 <!-- $Id$ -->
 
 <chapter id="distro-morphix">
-  <title>(Dødt projekt) Morphix</title>
+  <title>(DÃ¸dt projekt) Morphix</title>
 <indexterm><primary>Morphix</primary></indexterm>
 <indexterm><primary>distribution</primary><secondary>Morphix</secondary></indexterm>
   <para>
-    Der findes efterhånden en lang række distributioner baseret på
+    Der findes efterhÃ¥nden en lang rÃ¦kke distributioner baseret pÃ¥
     live-cd'er, hvor hele systemet bootes fra en cd. De fleste
-    består af en bestemt række programmer og bruger ofte enten KDE
-    eller Gnome, hvis det ikke er en af de små live-cd'er. Hvis man
-    ikke kan lide de programmer der følger med, kan det let være en
-    større opgave at ændre på systemet.
+    bestÃ¥r af en bestemt rÃ¦kke programmer og bruger ofte enten KDE
+    eller Gnome, hvis det ikke er en af de smÃ¥ live-cd'er. Hvis man
+    ikke kan lide de programmer der fÃ¸lger med, kan det let vÃ¦re en
+    stÃ¸rre opgave at Ã¦ndre pÃ¥ systemet.
   </para>
 
   <para>
-    Morphix er anderledes. Morphix er som sådan ikke bare en live-cd,
-    men et modulært system der gør det let at designe sit live-cd-system
+    Morphix er anderledes. Morphix er som sÃ¥dan ikke bare en live-cd,
+    men et modulÃ¦rt system der gÃ¸r det let at designe sit live-cd-system
     med netop det man har behov for. En slags meta-live-cd.
   </para>
 
   <para>
-    Morphix er baseret på Knoppix og Debian GNU/Linux og hvis man ikke
-    selv har lyst til at designe sin live-cd findes der en række
+    Morphix er baseret pÃ¥ Knoppix og Debian GNU/Linux og hvis man ikke
+    selv har lyst til at designe sin live-cd findes der en rÃ¦kke
     foruddesignede udgaver: En med KDE, en med Gnome, en med en
     lettere desktop og en specielt med spil.
   </para>
@@ -32,26 +32,26 @@
   </figure>
 
   <sect1 id="distro-morphix-maalgruppe">
-    <title>Målgruppe</title>
+    <title>MÃ¥lgruppe</title>
 
     <indexterm>
-      <primary>målgruppe</primary>
+      <primary>mÃ¥lgruppe</primary>
       <secondary>for Morphix</secondary>
     </indexterm>
 
     <para>
-      De foruddesignede udgaver af Morphix kan bruges på linje med
-      Knoppix som rejse-desktop eller for at markedsføre Linux over
-      for folk der ikke vil installere noget på deres maskiner for at
-      prøve Linux. Men Morphix kommer først rigtigt til sin ret når
+      De foruddesignede udgaver af Morphix kan bruges pÃ¥ linje med
+      Knoppix som rejse-desktop eller for at markedsfÃ¸re Linux over
+      for folk der ikke vil installere noget pÃ¥ deres maskiner for at
+      prÃ¸ve Linux. Men Morphix kommer fÃ¸rst rigtigt til sin ret nÃ¥r
       man udnytter modulariteten og "morpher" sit eget design.
     </para>
 
     <para>
-      Den egentlige målgruppe bliver derfor superbrugeren med specielle
+      Den egentlige mÃ¥lgruppe bliver derfor superbrugeren med specielle
       behov eller systemadministratoren der gerne vil lave et specielt
-      designet desktop til sine brugere. Det er primært i denne egenskab
-      vi i det følgende vil betragte Morphix
+      designet desktop til sine brugere. Det er primÃ¦rt i denne egenskab
+      vi i det fÃ¸lgende vil betragte Morphix
     </para>
 
   </sect1>
@@ -66,31 +66,31 @@
     </indexterm>
 
     <para>
-      De foruddesignede udgaver er lige til at hente ned og brænde på
-      en cd.  Man finder udgaven man ønsker på <ulink
+      De foruddesignede udgaver er lige til at hente ned og brÃ¦nde pÃ¥
+      en cd.  Man finder udgaven man Ã¸nsker pÃ¥ <ulink
       url='http://sourceforge.net/project/showfiles.php?group_id=71814'>SourceForge</ulink>
-      under "Combined ISO's", henter den hjem og brænder det.
+      under "Combined ISO's", henter den hjem og brÃ¦nder det.
     </para>
 
     <para>
-      Et Morphix-system består af en base, et »MainModule« og op til
+      Et Morphix-system bestÃ¥r af en base, et Â»MainModuleÂ« og op til
       fire minimoduler. Alle disse kan hentes fra <ulink
       url='http://sourceforge.net/project/showfiles.php?group_id=71814'>SourceForge</ulink>.
       Man kan enten hente 'base iso' og et 'mainmodule' eller hente et
-      'combined iso' der består netop af base iso og et
+      'combined iso' der bestÃ¥r netop af base iso og et
       MainModul. Derudover kan man hente nogle minimoduler.
     </para>
     
     <para>
-      Det burde være muligt at lave en multi-session-cd hvor man
-      først brænder én iso-fil til cd'en og så laver en anden
-      speciel iso-fil med tilføjelser der så kan brændes til samme
-      cd. Dette har jeg dog ikke fået til at virke.
+      Det burde vÃ¦re muligt at lave en multi-session-cd hvor man
+      fÃ¸rst brÃ¦nder Ã©n iso-fil til cd'en og sÃ¥ laver en anden
+      speciel iso-fil med tilfÃ¸jelser der sÃ¥ kan brÃ¦ndes til samme
+      cd. Dette har jeg dog ikke fÃ¥et til at virke.
     </para>
 
     <para>
-      For at lave en Morphix baseret på LightGUI-modulet med OpenOffice.org-,
-      Devel- og Console-modulerne har jeg gjort følgende:
+      For at lave en Morphix baseret pÃ¥ LightGUI-modulet med OpenOffice.org-,
+      Devel- og Console-modulerne har jeg gjort fÃ¸lgende:
     
       <itemizedlist>
         <listitem><para>
@@ -100,26 +100,26 @@
         </para></listitem>
 
 	<listitem><para>
-	  Lagt de minimoduler jeg ønsker i et katalog der hedder
+	  Lagt de minimoduler jeg Ã¸nsker i et katalog der hedder
 	  <filename>minimod</filename>.
 	</para></listitem>
 
 	<listitem><para>
-	  Lavet en ny iso-fil med følgende kommando:
+	  Lavet en ny iso-fil med fÃ¸lgende kommando:
 <screen>
 $ mkisofs -R -o MorphixCombined-My-0.4-0.iso -graft-points -b base/boot.img -c boot.catalog  /mnt minimod=minimod/
 </screen>
         </para></listitem>
 
 	<listitem><para>
-	  Brændt iso-filen på en cd.
+	  BrÃ¦ndt iso-filen pÃ¥ en cd.
 	</para></listitem>
       </itemizedlist>
     </para>
 
     <para>
       Det giver et system med XFce4, OpenOffice.org, gcc, Emacs og andre
-      nødvendige værktøjer lige til at køre.
+      nÃ¸dvendige vÃ¦rktÃ¸jer lige til at kÃ¸re.
     </para>
     
   </sect1>
@@ -133,36 +133,36 @@ $ mkisofs -R -o MorphixCombined-My-0.4-0.iso -graft-points -b base/boot.img -c b
   </figure>
 
     <para>
-      Når man har lavet sin Morphix-cd er den ganske enkelt lige
+      NÃ¥r man har lavet sin Morphix-cd er den ganske enkelt lige
       til at starte en maskine fra og man har et levende
-      system. Desvære ender man så op med et amerikansk
-      tastaturopsætning. For at få dansk tastatur skal man på
+      system. DesvÃ¦re ender man sÃ¥ op med et amerikansk
+      tastaturopsÃ¦tning. For at fÃ¥ dansk tastatur skal man pÃ¥
       boot-prompten skrive 'morphix lang=da'.
     </para>
 
     <para>
-      Ellers er Morphix-cd'en lige til at gå til. Som på mange andre
+      Ellers er Morphix-cd'en lige til at gÃ¥ til. Som pÃ¥ mange andre
       komprimerede live-cd-systemer er der dog ting der tager laaang
       tid. 
     </para>
   </sect1>
 
   <sect1 id="distro-morphix-fejl">
-    <title>Fejl på min Morphix</title>
+    <title>Fejl pÃ¥ min Morphix</title>
 
     <para>
-      Under min afprøvning af Morphix er jeg stødt på en række fejl af
-      større eller mindre betydning. Blandt andet virker den Emacs der
+      Under min afprÃ¸vning af Morphix er jeg stÃ¸dt pÃ¥ en rÃ¦kke fejl af
+      stÃ¸rre eller mindre betydning. Blandt andet virker den Emacs der
       ligger i Console-modulet ikke. I Devel-modulet er gcc et
       symlink til gcc-3.3 mens modulet kun indeholder gcc-3.2, derfor
-      virker det ikke at bare skrive <command>gcc</command> når man skal
-      oversætte ting.
+      virker det ikke at bare skrive <command>gcc</command> nÃ¥r man skal
+      oversÃ¦tte ting.
     </para>
 
     <para>
       Det er en mindre gene at jeg ikke kan stille tidszonen fra
-      Morphix. Det vil formodentlig være ret trivielt at gøre det inden
-      man brænder cd'en, men det hjælper ikke hvis jeg bruger systemet
+      Morphix. Det vil formodentlig vÃ¦re ret trivielt at gÃ¸re det inden
+      man brÃ¦nder cd'en, men det hjÃ¦lper ikke hvis jeg bruger systemet
       til rejsebrug og ikke vil stille mit hardware-ur.
     </para>
   </sect1>
@@ -172,14 +172,14 @@ $ mkisofs -R -o MorphixCombined-My-0.4-0.iso -graft-points -b base/boot.img -c b
 
     <para>
       Jeg mener at Morphix er et overordentligt interessant projekt. Det
-      er lidt besværligt at lave egne design og begrænsningen på fire
-      minimoduler er noget generende. Det er stadigvæk et projekt i
-      sin opstartsfase, så der er håb forude for begge ting.
+      er lidt besvÃ¦rligt at lave egne design og begrÃ¦nsningen pÃ¥ fire
+      minimoduler er noget generende. Det er stadigvÃ¦k et projekt i
+      sin opstartsfase, sÃ¥ der er hÃ¥b forude for begge ting.
     </para>
 
     <para>
-      Jeg har slet ikke set på hvordan man selv laver moduler. Det
-      bliver selvfølgelig endnu mere interessant når det er let at lave
+      Jeg har slet ikke set pÃ¥ hvordan man selv laver moduler. Det
+      bliver selvfÃ¸lgelig endnu mere interessant nÃ¥r det er let at lave
       minimoduler med et eller andet specielt program som man bruger
       inden for ens organisation.
     </para>

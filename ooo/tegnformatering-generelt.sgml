@@ -5,7 +5,7 @@
 <sect1 id="ooo-tegnformatering-generelt">
   <title>Tegnformatering generelt</title>
 
-<para>Du får adgang til alle formateringsmulighederne ved at vælge
+<para>Du fÃ¥r adgang til alle formateringsmulighederne ved at vÃ¦lge
     <emphasis>Formater/Tegn</emphasis>. Der fremkommer en dialogboks med fem faneblade:</para>
 
 <figure float="1" id="tegnformatdialog">
@@ -13,12 +13,12 @@
 <graphic fileref="tegnformatdialog.&magic;" scale="60"></graphic>
 </figure>
 
-<para>På fanebladet <emphasis>Skrifttype</emphasis> vælges skrifttypen, mens du kan vælge
-    forskellige specielle effekter på fanebladet <emphasis>Skrifteffekt</emphasis> (f.eks.
-    hævet skrift, ændret afstand mellem bogstaverne mm.).</para>
+<para>PÃ¥ fanebladet <emphasis>Skrifttype</emphasis> vÃ¦lges skrifttypen, mens du kan vÃ¦lge
+    forskellige specielle effekter pÃ¥ fanebladet <emphasis>Skrifteffekt</emphasis> (f.eks.
+    hÃ¦vet skrift, Ã¦ndret afstand mellem bogstaverne mm.).</para>
 
-<para>Du kan også finde mange af formateringsmulighederne i kontekstmenuen
-    (højreklik).</para>
+<para>Du kan ogsÃ¥ finde mange af formateringsmulighederne i kontekstmenuen
+    (hÃ¸jreklik).</para>
 
 </sect1>    <!--   6.3. Tegnformatering generelt -->
 

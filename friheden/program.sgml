@@ -7,10 +7,10 @@
 Det findes masser af programmer til Linux. Du kan finde links i <xref
 linkend="Linuxhjemmesider"/> til en masse af dem. Nogle programmer
 kommer i rpm-format, andre i deb-format, og nogle i
-tar.gz-format. Formatet kan ses som slutningen af filnavnet på det man
-kan hente. Det er desværre lidt rodet. I dette kapitel ser vi nærmere
-på håndtering af de enkelte filformater. Langt de fleste af de ting
-der omtales i dette kapitel foregår ved at starte et terminal-vindue op.
+tar.gz-format. Formatet kan ses som slutningen af filnavnet pÃ¥ det man
+kan hente. Det er desvÃ¦rre lidt rodet. I dette kapitel ser vi nÃ¦rmere
+pÃ¥ hÃ¥ndtering af de enkelte filformater. Langt de fleste af de ting
+der omtales i dette kapitel foregÃ¥r ved at starte et terminal-vindue op.
 (I KDE tastes alt-F2 og man skriver <command>xterm</command>)
 </para>
 
@@ -23,49 +23,49 @@ der omtales i dette kapitel foregår ved at starte et terminal-vindue op.
 <sect1 id="rpm-intro">
 <title>Intro til RPM</title>
 <para>
-RPM-pakker, dvs. filer du kan hente med filnavn som slutter på .rpm,
+RPM-pakker, dvs. filer du kan hente med filnavn som slutter pÃ¥ .rpm,
 passer typisk enten til Red Hat, SuSE, eller Mandrake Linux. Det er
-ofte sådan at der mangler noget hvis man prøver at installere pakker
-fra SuSE på Red Hat eller Mandrake og omvendt. Heldigvis skriver
+ofte sÃ¥dan at der mangler noget hvis man prÃ¸ver at installere pakker
+fra SuSE pÃ¥ Red Hat eller Mandrake og omvendt. Heldigvis skriver
 hjemmesiderne oftest til hvilken distribution, de enkelte pakker
 passer.
 </para>
 
 <para>
-RPM står for <emphasis>Red Hat Package Manager</emphasis> og det er
-formatet der anbefales (af Linux Standard Base) for færdig-oversatte
+RPM stÃ¥r for <emphasis>Red Hat Package Manager</emphasis> og det er
+formatet der anbefales (af Linux Standard Base) for fÃ¦rdig-oversatte
 programmer til Linux. Det er programmer, der direkte kan
 installeres og sidenhen afinstalleres eller opgraderes.
 </para>
 
 <para>
 En RPM-pakke findes oversat til en eller flere
-processor-arkitekturer. Formatet er typisk som følger:
-NAVN-VERSION-PAKKETAG.PROCESSOR.rpm, hvor NAVN er navnet på programmet
+processor-arkitekturer. Formatet er typisk som fÃ¸lger:
+NAVN-VERSION-PAKKETAG.PROCESSOR.rpm, hvor NAVN er navnet pÃ¥ programmet
 eller program-pakken, f.eks. "mplayer".  Versionen indikerer typisk
 hvor langt man er i udviklingen, hvor 1.0 indikerer stabilt, og
-væsentligt under 0.5 er meget tidligt i udviklingen. PAKKETAG kan
+vÃ¦sentligt under 0.5 er meget tidligt i udviklingen. PAKKETAG kan
 forekomme, hvis den der har lavet RPM-pakken vil vise at han eller hun
-har lavet den typisk ved at sætte PAKKETAG til ens egne initialer.
+har lavet den typisk ved at sÃ¦tte PAKKETAG til ens egne initialer.
 PROCESSOR er "i386" for alle Intel-kompatible 32-bit maskiner. Har man en 
-Alpha-maskine sætter man PROCESSOR til "alpha". Et eksempel på navn for 
+Alpha-maskine sÃ¦tter man PROCESSOR til "alpha". Et eksempel pÃ¥ navn for 
 en RPM-pakke er "mplayer-0.90pre5-fr1.i386.rpm". 
 </para>
 
 <para>
 En RPM-pakke er oversat ud fra en "source"-pakke, der indeholder kildeteksten
-samt en specifikation af hvordan man oversætter programmet.  Det er i
-specifikationen der desværre stadig er lidt forskelle mellem de forskellige
-Linux-distributioner. En "source"-pakke kan således ikke installeres
-direkte, men kan bruges til at oversætte programmets kildetekst på egen
-maskine og derefter installere programmet. Et eksempel på en "source"-pakke
-er "mplayer-0.90pre5-fr1.src.rpm" - bemærk at processor-arkitektur ikke
+samt en specifikation af hvordan man oversÃ¦tter programmet.  Det er i
+specifikationen der desvÃ¦rre stadig er lidt forskelle mellem de forskellige
+Linux-distributioner. En "source"-pakke kan sÃ¥ledes ikke installeres
+direkte, men kan bruges til at oversÃ¦tte programmets kildetekst pÃ¥ egen
+maskine og derefter installere programmet. Et eksempel pÃ¥ en "source"-pakke
+er "mplayer-0.90pre5-fr1.src.rpm" - bemÃ¦rk at processor-arkitektur ikke
 er en del af "source"-pakkens navn.
 </para>
 
 <para>
 Den ultra-korte guide til RPM (se mere i bogen "Linux -
-Friheden til systemadministration") er følgende:
+Friheden til systemadministration") er fÃ¸lgende:
 </para>
 
 <itemizedlist mark="bullet">
@@ -82,18 +82,18 @@ Friheden til systemadministration") er følgende:
 <listitem> 
  <para>
 <command>rpm -e PROGRAM</command>: afinstallerer PROGRAM-rpm-pakken. 
-Bemærk at man ikke skal have .rpm på her.
+BemÃ¦rk at man ikke skal have .rpm pÃ¥ her.
  </para>
 </listitem>
 </itemizedlist>
 
 <para>
-RPM-programmet kan både arbejde med program-pakker, der allerede er hentet
+RPM-programmet kan bÃ¥de arbejde med program-pakker, der allerede er hentet
 fra nettet, eller som angives ved en URL - enten ftp eller http-adressse.
 </para>
 
 <para>
-Til Mandrake Linux kan installation af programmer med fordel udføres
+Til Mandrake Linux kan installation af programmer med fordel udfÃ¸res
 med <command>urpmi program</command>, hvor <command>urpmi</command> selv
 vil hente
 </para>
@@ -104,36 +104,36 @@ vil hente
 
 <para>Den brasilianske linux-distribution 
 <ulink url="http://www.conectiva.com.br">Conectiva</ulink> 
-har stået bag udviklingen af en variant af Debians Advanced Package
-Tool, som kan håndtere rpm-pakker istedet for Debians deb-pakker, så
-kombinationen af en bredbåndsforbindelse til internettet og apt's meget
-fleksible installations- og opdateringsrutiner ikke længere er begrænset
+har stÃ¥et bag udviklingen af en variant af Debians Advanced Package
+Tool, som kan hÃ¥ndtere rpm-pakker istedet for Debians deb-pakker, sÃ¥
+kombinationen af en bredbÃ¥ndsforbindelse til internettet og apt's meget
+fleksible installations- og opdateringsrutiner ikke lÃ¦ngere er begrÃ¦nset
 til distributioner med deb-pakkesystemet.
 </para>
 
 <para>
-Projektet kaldes apt4rpm og dets aktivitet kan følges på
+Projektet kaldes apt4rpm og dets aktivitet kan fÃ¸lges pÃ¥
 <ulink url="http://apt4rpm.sourceforge.net/">Sourceforge</ulink>
 </para>
 
-<para>Conectiva er ikke udbredt i Danmark (efteråret 2002). Projektet
+<para>Conectiva er ikke udbredt i Danmark (efterÃ¥ret 2002). Projektet
 er alligevel interessant, fordi apt4rpm kan bruges til SuSE's
 distributioner fra 7.3 og frem.
 </para>
 
 <para>
-Der er en vejledning i opsætning af apt4rpm sammen med SuSE på SuSE's
-primære mirror (Gesellschaft fuer Wissenschaftliche Datenverarbeitung
-Goettingen) på adressen
+Der er en vejledning i opsÃ¦tning af apt4rpm sammen med SuSE pÃ¥ SuSE's
+primÃ¦re mirror (Gesellschaft fuer Wissenschaftliche Datenverarbeitung
+Goettingen) pÃ¥ adressen
 <ulink url="http://linux01.gwdg.de/apt4rpm/">linux01.gwdg.de/apt4rpm/</ulink>.
 </para>
 
 <!-- Mortens oprindelige HTML indrammede det her afsnit og satte det med -->
-<!-- mindre typer - hvad gør vi? -->
+<!-- mindre typer - hvad gÃ¸r vi? -->
 <para>
-Med bredbåndsforbindelse og så elegant en opgraderingsmulighed, som apt
-giver, er det fristende helt at lade være med at købe nye udgaver af
-distributionerne.  Hvor skal der så komme penge fra til den nyudvikling,
+Med bredbÃ¥ndsforbindelse og sÃ¥ elegant en opgraderingsmulighed, som apt
+giver, er det fristende helt at lade vÃ¦re med at kÃ¸be nye udgaver af
+distributionerne.  Hvor skal der sÃ¥ komme penge fra til den nyudvikling,
 som bliver lavet af de ansatte hos distributionsselskaberne?
 </para>
 
@@ -149,44 +149,44 @@ som bliver lavet af de ansatte hos distributionsselskaberne?
 <para>
 En egentlig installationsvejledning i Debian er ikke her,
 se da <ulink url="http://debianguiden.dk/">http://debianguiden.dk/</ulink>,
-vi ser dog nærmere på håndtering af DEB-pakker i Debian.
+vi ser dog nÃ¦rmere pÃ¥ hÃ¥ndtering af DEB-pakker i Debian.
 </para>
 
 <sect2 id="debian-apt">
-<title>Apt - Debians pakkehåndtering</title>
+<title>Apt - Debians pakkehÃ¥ndtering</title>
 <indexterm><primary>apt</primary></indexterm>
 
 <para>
 Hvis man bruger Debian, eller overvejer at bruge det, og ikke kender
-dens pakkesystem, så er denne lille guide en glimrende introduktion
+dens pakkesystem, sÃ¥ er denne lille guide en glimrende introduktion
 til emnet.
 </para>
  
 <para>
-Apt står for "Advanced Package Tool" og er det værktøj i Debian som
-håndterer installerede software-pakker. Når man bruger Apt, eller
-pakker generelt, så henter man som regel et præ-oversat stykke
-software og installerer det via sit pakke-håndteringsprogram. Fordelen
-ved dette er så at uerfarne Linux-brugere kan installere en masse
+Apt stÃ¥r for "Advanced Package Tool" og er det vÃ¦rktÃ¸j i Debian som
+hÃ¥ndterer installerede software-pakker. NÃ¥r man bruger Apt, eller
+pakker generelt, sÃ¥ henter man som regel et prÃ¦-oversat stykke
+software og installerer det via sit pakke-hÃ¥ndteringsprogram. Fordelen
+ved dette er sÃ¥ at uerfarne Linux-brugere kan installere en masse
 software uden at skulle igennem en - nogen gange - vanskelig proces
-med at oversætte programmet, hvilket sker ud fra kildeteksten. En af
-ulemperne ved kildetekst er også at når et program er blevet
-opgraderet så skal man til at gen-oversætte hele programmet igen, og det
+med at oversÃ¦tte programmet, hvilket sker ud fra kildeteksten. En af
+ulemperne ved kildetekst er ogsÃ¥ at nÃ¥r et program er blevet
+opgraderet sÃ¥ skal man til at gen-oversÃ¦tte hele programmet igen, og det
 kan hurtigt blive en uoverskuelig opgave hvis man bare bruger XFree86
 og nogle enkelte stykker software udover det. Men med f.eks. Apt kan
-dette gøres rigtig nemt og hurtigt.
+dette gÃ¸res rigtig nemt og hurtigt.
 </para>
 
 <para>
 Med Apt kan man installere/opdatere/fjerne pakker med et
-snuptag, fordi man ikke skal bruge selve pakken, men blot navnet på
-pakken som input. Så sørger Apt selv for at hente pakken, om så det er
-fra CD eller en http-server. Men for at få dette til at virke rigtigt
+snuptag, fordi man ikke skal bruge selve pakken, men blot navnet pÃ¥
+pakken som input. SÃ¥ sÃ¸rger Apt selv for at hente pakken, om sÃ¥ det er
+fra CD eller en http-server. Men for at fÃ¥ dette til at virke rigtigt
 bruger Apt en simpel konfigurerings-fil kaldet sources.list og denne
 fil ligger som standard i kataloget <filename>/etc/apt</filename>. I
-denne fil er der specificeret hvor Apt skal få pakkerne fra. Som
+denne fil er der specificeret hvor Apt skal fÃ¥ pakkerne fra. Som
 standard installerer man fra sin cd-rom-enhed, men dette kan nemt
-ændres hvis man kører følgende kommando i konsollen eller i en
+Ã¦ndres hvis man kÃ¸rer fÃ¸lgende kommando i konsollen eller i en
 xterm/wterm/etc. som root:
 </para>
 
@@ -195,39 +195,39 @@ xterm/wterm/etc. som root:
 </screen>
 
 <para> 
-Så skulle der gerne komme en menu hvori man kan vælge hvordan man vil
-hente sine pakker. Her vælger man så f.eks.: http
+SÃ¥ skulle der gerne komme en menu hvori man kan vÃ¦lge hvordan man vil
+hente sine pakker. Her vÃ¦lger man sÃ¥ f.eks.: http
 </para>
 
 <para>
-Så spørger den om man vil bruge "Non-free software" -- Det vil jeg
+SÃ¥ spÃ¸rger den om man vil bruge "Non-free software" -- Det vil jeg
 lade op til brugeren selv at bestemme. Som standard i Debian er dette
-"off", fordi det ikke følger ånden i GPL-licensen. Men man har her
-muligheden for at sætte det til "on", hvis der er noget software som
+"off", fordi det ikke fÃ¸lger Ã¥nden i GPL-licensen. Men man har her
+muligheden for at sÃ¦tte det til "on", hvis der er noget software som
 man gerne vil have. Under "Non-free software" findes
 bl.a. programpakken, der indeholder mail-klienten PINE og editoren
 PICO.
 </para>
 
 <para>
-Så spørger den om at bruge "Contrib software" -- Dette valg skal man
-nok basere på det valg man lavede ovenfor.
+SÃ¥ spÃ¸rger den om at bruge "Contrib software" -- Dette valg skal man
+nok basere pÃ¥ det valg man lavede ovenfor.
 </para>
 
 <para>
-Resten af spørgsmålene skulle gerne give sig selv. Og når man har
-svaret på dem begynder den at hente en "package-list", som Apt
-skal bruge fremover når man vil installere pakker.
+Resten af spÃ¸rgsmÃ¥lene skulle gerne give sig selv. Og nÃ¥r man har
+svaret pÃ¥ dem begynder den at hente en "package-list", som Apt
+skal bruge fremover nÃ¥r man vil installere pakker.
 </para>
 
 <para>
-Nu er Apt søsat til at hente pakkerne fra internettet, så nu vil
-jeg introducere det program som man vil bruge for at håndtere
+Nu er Apt sÃ¸sat til at hente pakkerne fra internettet, sÃ¥ nu vil
+jeg introducere det program som man vil bruge for at hÃ¥ndtere
 pakkerne: <command>apt-get</command>.
 </para>
 
 <para>
-Apt-get fungerer ved at man sætter første parameter efter hvad man
+Apt-get fungerer ved at man sÃ¦tter fÃ¸rste parameter efter hvad man
 gerne vil have gjort med pakken, f.eks. hvis man vil installere noget:
 </para>
 
@@ -236,22 +236,22 @@ gerne vil have gjort med pakken, f.eks. hvis man vil installere noget:
 </screen>
 
 <para>
-Læg her mærke til at jeg skriver "pakkenavn" og ikke "pakkenavn.deb" -
-Det gør jeg fordi pakkesystemet er bygget sådan op at man kun
+LÃ¦g her mÃ¦rke til at jeg skriver "pakkenavn" og ikke "pakkenavn.deb" -
+Det gÃ¸r jeg fordi pakkesystemet er bygget sÃ¥dan op at man kun
 skal bruge pakkens navn.
 </para>
 
 <para>
-Når jeg udfører denne kommando, så søger den i den underliggende
-"Package List" efter en pakke kaldet "pakke". Derudover søger den også
-i "Dependency List", og hvis den pakke man vil installere kræver en
-anden pakke så vil Apt også hente den.  Nu vil Apt så begynde at hente
-pakken fra internettet og når det er gjort vil den installere og
-derefter opsætte pakken.
+NÃ¥r jeg udfÃ¸rer denne kommando, sÃ¥ sÃ¸ger den i den underliggende
+"Package List" efter en pakke kaldet "pakke". Derudover sÃ¸ger den ogsÃ¥
+i "Dependency List", og hvis den pakke man vil installere krÃ¦ver en
+anden pakke sÃ¥ vil Apt ogsÃ¥ hente den.  Nu vil Apt sÃ¥ begynde at hente
+pakken fra internettet og nÃ¥r det er gjort vil den installere og
+derefter opsÃ¦tte pakken.
 </para>
 
 <para>
-Hvis man vil fjerne/afinstallere en pakke fra systemet skriver man så:
+Hvis man vil fjerne/afinstallere en pakke fra systemet skriver man sÃ¥:
 </para>
 
 <screen>
@@ -263,8 +263,8 @@ Her vil Apt afinstallere "pakkenavn" fra systemet.
 </para>
 
 <para>
-Alt dette er jo meget godt, men man kan også lave mere avancerede ting,
-f.eks. kan man opgradere alle pakker på sit system, ved først at
+Alt dette er jo meget godt, men man kan ogsÃ¥ lave mere avancerede ting,
+f.eks. kan man opgradere alle pakker pÃ¥ sit system, ved fÃ¸rst at
 skrive:
 </para>
 
@@ -273,12 +273,12 @@ skrive:
 </screen>
 
 <para>
-Dette vil opdatere "Package Lists" og "Dependency Lists", så man vil
+Dette vil opdatere "Package Lists" og "Dependency Lists", sÃ¥ man vil
 hente de nyeste pakker fra internettet.
 </para>
 
 <para>
-Herefter kører man:
+Herefter kÃ¸rer man:
 </para>
 
 <screen>
@@ -287,19 +287,19 @@ Herefter kører man:
 
 <para>
 Denne kommando vil sammenligne "Package List" med de installerede
-pakker og så opdatere de pakker på systemet, som er nyere i "Package
+pakker og sÃ¥ opdatere de pakker pÃ¥ systemet, som er nyere i "Package
 List". Denne kommando er utrolig fiks til at opdatere alle installerede
-pakker med. Udover 'apt-get upgrade' findes der også: 'apt-get
+pakker med. Udover 'apt-get upgrade' findes der ogsÃ¥: 'apt-get
 dist-upgrade' og som navnet antyder opgraderer den
 distributionen. Forskellen mellem 'upgrade' og 'dist-upgrade' er at
-'dist-upgrade' vil prøve at opdatere "Dependency List" med nye
+'dist-upgrade' vil prÃ¸ve at opdatere "Dependency List" med nye
 versioner af pakkerne.
 </para>
 
 <para>
-Når Apt har hentet en pakke bliver den lagt i
+NÃ¥r Apt har hentet en pakke bliver den lagt i
 <filename>/var/cache/apt/archives</filename> og der bliver den faktisk
-liggende, også efter at pakken er installeret. For at slette pakkerne
+liggende, ogsÃ¥ efter at pakken er installeret. For at slette pakkerne
 man har liggende skriver man:
 </para>
 
@@ -310,17 +310,17 @@ man har liggende skriver man:
 
 <para>
 Dette var en kort indledning til 'apt-get' - Men tro ikke at de
-funktioner jeg har nævnt her er det eneste den kan. Den kan faktisk en
+funktioner jeg har nÃ¦vnt her er det eneste den kan. Den kan faktisk en
 masse andet, f.eks. hente kildeteksten til et program for derefter at
 kompilere det. Alle disse smarte features kan man finde i Man-siden
 til <filename>apt-get(8)</filename>.
 </para>
 
 <para>
-Nogle gange når man skal installere en pakke kan det være svært at
-gennemskue hvad pakken hedder i Apt fordi der kan være versions-numre
-og lignende i navnet. I sådanne situationer hvor man ønsker at finde
-det præcise navn på en pakke kan man bruge programmet
+Nogle gange nÃ¥r man skal installere en pakke kan det vÃ¦re svÃ¦rt at
+gennemskue hvad pakken hedder i Apt fordi der kan vÃ¦re versions-numre
+og lignende i navnet. I sÃ¥danne situationer hvor man Ã¸nsker at finde
+det prÃ¦cise navn pÃ¥ en pakke kan man bruge programmet
 <command>apt-cache</command>. Hvis man f.eks. gerne vil vide hvad
 pakkenavnet for IRC-klienten EPIC4 hedder, kan man skrive:
 </para>
@@ -330,9 +330,9 @@ pakkenavnet for IRC-klienten EPIC4 hedder, kan man skrive:
 </screen>
 
 <para>
-Programmet vil så svare om der findes nogle pakker med det
-søgekriterium man har skrevet. I dette tilfælde vil den bl.a. komme
-med følgende linje:
+Programmet vil sÃ¥ svare om der findes nogle pakker med det
+sÃ¸gekriterium man har skrevet. I dette tilfÃ¦lde vil den bl.a. komme
+med fÃ¸lgende linje:
 </para>
 
 <programlisting>
@@ -341,39 +341,39 @@ epic4 - epic irc client, version 4
 
 <para>
 Fra denne oplysning kan jeg se at pakken jeg er interesseret i, hedder
-"epic4", og for at lette brugen udskriver den også en lille
-beskrivelse af pakken. Hvis man så ønsker at installere den kan man bare
-fodre <command>apt-get</command> med pakkens præcise navn og den vil
-så begynde at hente og installere pakken.
+"epic4", og for at lette brugen udskriver den ogsÃ¥ en lille
+beskrivelse af pakken. Hvis man sÃ¥ Ã¸nsker at installere den kan man bare
+fodre <command>apt-get</command> med pakkens prÃ¦cise navn og den vil
+sÃ¥ begynde at hente og installere pakken.
 </para>
 
 <para>
-Dette var en lettere kort introduktion til det efterhånden ret geniale
-værktøj Apt, som gør brugen af Debian meget god og nem at
-vedligeholde. Hvis man vil kompilere alle sine programmer selv, så er
-Debian nok ikke distribution for én.  Hvis man vil have mere info
-omkring de forskellige parametre, som man kan smide på programmerne
+Dette var en lettere kort introduktion til det efterhÃ¥nden ret geniale
+vÃ¦rktÃ¸j Apt, som gÃ¸r brugen af Debian meget god og nem at
+vedligeholde. Hvis man vil kompilere alle sine programmer selv, sÃ¥ er
+Debian nok ikke distribution for Ã©n.  Hvis man vil have mere info
+omkring de forskellige parametre, som man kan smide pÃ¥ programmerne
 kan Man-siderne godt anbefales: apt-cache(8), apt-get(8), sources.list(5)
 </para>
 
 <para>
-<command>apt-get</command> installere kun de absolut nødvendige ekstra
+<command>apt-get</command> installere kun de absolut nÃ¸dvendige ekstra
 pakker for at installere den pakker man beder den om. Ud over det
-absolut nødvendige har Debian to yderligere niveauer af afhængigheder:
-"Reccommends" og "Suggests". De første er ting det anbefales at man også
+absolut nÃ¸dvendige har Debian to yderligere niveauer af afhÃ¦ngigheder:
+"Reccommends" og "Suggests". De fÃ¸rste er ting det anbefales at man ogsÃ¥
 installere og det andet er andre pakker som er nyttige sammen med
-pakken. Disse to afhængigheder kan ses med <command>apt-cache show
+pakken. Disse to afhÃ¦ngigheder kan ses med <command>apt-cache show
 pakkenavn</command>.
 </para>
 
 <para>
-Som en slutreplik kan nævnes at hvis man editerer
-<filename>/etc/apt/sources.list</filename> så kan man opsætte
+Som en slutreplik kan nÃ¦vnes at hvis man editerer
+<filename>/etc/apt/sources.list</filename> sÃ¥ kan man opsÃ¦tte
 forskellige ting i denne fil, bl.a. om man vil have stable-, unstable-
-eller testingpakker installeret. I denne fil kan man også indsætte
-flere entries til Apt, som man så kan bruge. Man skal blot huske at
-køre en <command>apt-get update</command> efter man har opdateret
-<filename>sources.list</filename>. Se mere om dette i næste afsnit.
+eller testingpakker installeret. I denne fil kan man ogsÃ¥ indsÃ¦tte
+flere entries til Apt, som man sÃ¥ kan bruge. Man skal blot huske at
+kÃ¸re en <command>apt-get update</command> efter man har opdateret
+<filename>sources.list</filename>. Se mere om dette i nÃ¦ste afsnit.
 </para>
 </sect2>
 
@@ -381,44 +381,44 @@ køre en <command>apt-get update</command> efter man har opdateret
 <title>Udviklingsversioner og uofficielle pakker</title>
 
 <para>
-Debian er ikke særlig hurtig til at udgive nye stabile udgaver, så derfor
-ønsker mange at bruge dele af en af udviklingsudgaverne af Debian for
-at få nyere versioner af nogle programmer.
+Debian er ikke sÃ¦rlig hurtig til at udgive nye stabile udgaver, sÃ¥ derfor
+Ã¸nsker mange at bruge dele af en af udviklingsudgaverne af Debian for
+at fÃ¥ nyere versioner af nogle programmer.
 </para>
 
 <para>
 Debian Unstable hedder ikke unstable for sjov, og der er en grund til
-at Debian Testing ikke officielt er erklæret for en stabil udgave
-endnu. Følger man vejledningerne i dette afsnit kommer man til at
-bruge programmer, der ikke er fuldstændigt testet og hvis ens maskine
+at Debian Testing ikke officielt er erklÃ¦ret for en stabil udgave
+endnu. FÃ¸lger man vejledningerne i dette afsnit kommer man til at
+bruge programmer, der ikke er fuldstÃ¦ndigt testet og hvis ens maskine
 pludselig ikke virker er det bare synd! (Tag dette som en advarsel, I
-får ikke flere)
+fÃ¥r ikke flere)
 </para>
 
 <para>
-Når en udvikler har lavet en ny Debian-pakke ryger den direkte ind i
+NÃ¥r en udvikler har lavet en ny Debian-pakke ryger den direkte ind i
 Unstable. Man kan derfor let komme ud for at pakker i unstable har
-nogle ret kritiske fejl. Når en pakke har været i unstable i mindst 14
-dage, ikke har nogle kritiske fejl og er oversat til alle platforme, så
+nogle ret kritiske fejl. NÃ¥r en pakke har vÃ¦ret i unstable i mindst 14
+dage, ikke har nogle kritiske fejl og er oversat til alle platforme, sÃ¥
 bliver pakken automatisk installeret i Testing. Der skulle derfor ikke
-være ret mange kritiske fejl i Debian Testing, men det er som sagt
-ikke fuldt ud gennemprøvet.
+vÃ¦re ret mange kritiske fejl i Debian Testing, men det er som sagt
+ikke fuldt ud gennemprÃ¸vet.
 </para>
 
 <sect3 id="debian-fuldt-unstable">
 <title>At lave en fuld opdatering</title>
 
 <para>
-Hvis man ønsker at bruge en ren Testing eller Unstable kan det
-anbefales at begynde med at installere i Debian Stable og så opdatere
-over netværket.
+Hvis man Ã¸nsker at bruge en ren Testing eller Unstable kan det
+anbefales at begynde med at installere i Debian Stable og sÃ¥ opdatere
+over netvÃ¦rket.
 </para>
 
 <para>
-Når man har installeret Debian har man en fil, der hedder
+NÃ¥r man har installeret Debian har man en fil, der hedder
 <filename>/etc/apt/sources.list</filename>. Denne fil bestemmer hvor
 Debian henter pakker fra. Formodentligt, har den to linjer, der ligner
-følgende:
+fÃ¸lgende:
 </para>
 
 <programlisting>
@@ -428,8 +428,8 @@ deb http://non-us.debian.org/debian-non-US stable/non-US main contrib non-free
 
 <para>
 For fuldt ud at skifte til testing eller unstable, skal disse filer
-ændres, så de nævner henholdsvis testing eller unstable i stedet for
-stable. Det vil sige at linjerne skal se således ud:
+Ã¦ndres, sÃ¥ de nÃ¦vner henholdsvis testing eller unstable i stedet for
+stable. Det vil sige at linjerne skal se sÃ¥ledes ud:
 </para>
 
 <programlisting>
@@ -438,7 +438,7 @@ deb http://non-us.debian.org/debian-non-US testing/non-US main contrib non-free
 </programlisting>
 
 <para>
-Dernæst skal man opdatere sin pakkeliste og så er det bare at
+DernÃ¦st skal man opdatere sin pakkeliste og sÃ¥ er det bare at
 opgradere (til en ny distribution):
 </para>
 
@@ -448,7 +448,7 @@ opgradere (til en ny distribution):
 </screen>
 
 <para>
-Fremover holder man sin maskine opdateret ved med jævne mellemrum at
+Fremover holder man sin maskine opdateret ved med jÃ¦vne mellemrum at
 opdatere sin pakkeliste og opgradere (samme distribution):
 </para>
 
@@ -458,16 +458,16 @@ opdatere sin pakkeliste og opgradere (samme distribution):
 </screen>
 
 <para>
-Kalder man <command>apt-get upgrade</command> med en -u option, altså
-<command>apt-get -u upgrade</command> fortæller den om alle de pakker
+Kalder man <command>apt-get upgrade</command> med en -u option, altsÃ¥
+<command>apt-get -u upgrade</command> fortÃ¦ller den om alle de pakker
 den opgraderer.
 </para>
 
 <para>
-En række pakker vil apt-get fortælle at den ikke vil opdatere ("The
+En rÃ¦kke pakker vil apt-get fortÃ¦lle at den ikke vil opdatere ("The
 following packages have been kept back"). Dette betyder at pakkerne
 ikke kan opgraderes uden enten at installere flere pakker eller ved
-at fjerne pakker fra systemet. Disse pakker kan så opgraderes ved at
+at fjerne pakker fra systemet. Disse pakker kan sÃ¥ opgraderes ved at
 skrive:
 </para>
 
@@ -481,13 +481,13 @@ skrive:
 
 <para>
 Ofte er det kun enkelte pakker man virkelig har brug for at skulle
-have i en nyere version. Det kan derfor være smart kun at opdatere de
+have i en nyere version. Det kan derfor vÃ¦re smart kun at opdatere de
 pakker man har brug for at opdatere.
 </para>
 
 <para>
-Først skal man fortælle apt at den skal hente pakkelisterne for både
-stable, testing og unstable (eller bare to af dem). Det gøres ved at
+FÃ¸rst skal man fortÃ¦lle apt at den skal hente pakkelisterne for bÃ¥de
+stable, testing og unstable (eller bare to af dem). Det gÃ¸res ved at
 skrive begge distributioner ind i <filename>/etc/apt/sources.list</filename>:
 </para>
 
@@ -501,7 +501,7 @@ deb http://non-us.debian.org/debian-non-US unstable/non-US main contrib non-free
 </programlisting>
 
 <para>
-Dernæst skal pakkelisten opdateres:
+DernÃ¦st skal pakkelisten opdateres:
 </para>
 
 <screen>
@@ -509,10 +509,10 @@ Dernæst skal pakkelisten opdateres:
 </screen>
 
 <para>
-Vi skal nu fortælle apt at selv om der findes nyere versioner af en
+Vi skal nu fortÃ¦lle apt at selv om der findes nyere versioner af en
 pakke, skal den altid bruge pakken fra stable, med mindre den
-eksplicit får fortalt andet. Det gøres ved at lave en fil
-<filename>/etc/apt/preferences</filename>, der indeholder følgende:
+eksplicit fÃ¥r fortalt andet. Det gÃ¸res ved at lave en fil
+<filename>/etc/apt/preferences</filename>, der indeholder fÃ¸lgende:
 </para>
 
 <programlisting>
@@ -523,9 +523,9 @@ Pin-Priority: 600
 
 <para>
 Dermed ved apt at den skal give alle pakker, der kommer fra stable, en
-prioritet på 600. (standardprioriteten er 500). Når apt skal vælge
-hvilke pakker den skal installere (opgradere til) vælger den de pakker
-med højst prioritet (før den ser på versionsnumre).
+prioritet pÃ¥ 600. (standardprioriteten er 500). NÃ¥r apt skal vÃ¦lge
+hvilke pakker den skal installere (opgradere til) vÃ¦lger den de pakker
+med hÃ¸jst prioritet (fÃ¸r den ser pÃ¥ versionsnumre).
 </para>
 
 <para>
@@ -538,10 +538,10 @@ at skrive:
 </screen>
 
 <para>
-Dette installerer pakken slashem fra testing. Hvis pakken er afhængig
+Dette installerer pakken slashem fra testing. Hvis pakken er afhÃ¦ngig
 af andre pakker, der ikke er i stable, skal disse angives
-eksplicit. Hvis man ønsker at opfylde alle afhængigheder ved at
-installere pakker fra testing kan man skrive følgende:
+eksplicit. Hvis man Ã¸nsker at opfylde alle afhÃ¦ngigheder ved at
+installere pakker fra testing kan man skrive fÃ¸lgende:
 </para>
 
 <screen>
@@ -553,8 +553,8 @@ Hvormed apt vil give prioriteten 990 til alle pakker i testing.
 </para>
 
 <para>
-Hvis man altid vil følge pakken slashem fra testing, kan man skrive
-følgende i sin <filename>/etc/apt/preferences</filename>:
+Hvis man altid vil fÃ¸lge pakken slashem fra testing, kan man skrive
+fÃ¸lgende i sin <filename>/etc/apt/preferences</filename>:
 </para>
 
 <programlisting>
@@ -568,7 +568,7 @@ Pin-Priority: 600
 </programlisting>
 
 <para>
-Så vil slashem fra testing have en højere prioritet en slashem fra
+SÃ¥ vil slashem fra testing have en hÃ¸jere prioritet en slashem fra
 stable (600) og slashem fra unstable (500).
 </para>
 
@@ -582,50 +582,50 @@ findes i manualsiden apt_preferences(8)
 <title>Uofficielle pakker</title>
 
 <para>
-Der findes også en del steder hvor man kan finde uofficielle
-pakker til Debian. Selvom Debian er et meget åben projekt kan der være
-mange gode grunde til dette. Der kan være tale om eksperimentielle
-pakker, specielt patchede pakker eller pakker som Debian ikke må
+Der findes ogsÃ¥ en del steder hvor man kan finde uofficielle
+pakker til Debian. Selvom Debian er et meget Ã¥ben projekt kan der vÃ¦re
+mange gode grunde til dette. Der kan vÃ¦re tale om eksperimentielle
+pakker, specielt patchede pakker eller pakker som Debian ikke mÃ¥
 distribuere.
 </para>
 
 <para>
-Mange af disse pakker kan også hentes via <command>apt-get</command>
-hvis man indsætter de rette linjer i <filename>/etc/apt/sources.list</filename>.
-En lang liste over mulige steder kan findes på <ulink
+Mange af disse pakker kan ogsÃ¥ hentes via <command>apt-get</command>
+hvis man indsÃ¦tter de rette linjer i <filename>/etc/apt/sources.list</filename>.
+En lang liste over mulige steder kan findes pÃ¥ <ulink
 url="http://apt-get.org/">http://apt-get.org/</ulink>
 </para>
 </sect3>
 
 <sect3 id="debian-unstable-tips">
-<title>Lidt andre gode råd</title>
+<title>Lidt andre gode rÃ¥d</title>
 
 <para>
-Når man bruger udviklingsversionerne af Debian eller uofficielle pakker,
-så skal man passe ekstra godt på hvad <command>apt-get</command>
-tilbyder at gøre. <command>apt-get upgrade</command> vil aldrig
+NÃ¥r man bruger udviklingsversionerne af Debian eller uofficielle pakker,
+sÃ¥ skal man passe ekstra godt pÃ¥ hvad <command>apt-get</command>
+tilbyder at gÃ¸re. <command>apt-get upgrade</command> vil aldrig
 installere nye pakker eller afinstalere pakker. <command>apt-get
-dist-upgrade</command> vil gøre meget for at opgradere så meget som
+dist-upgrade</command> vil gÃ¸re meget for at opgradere sÃ¥ meget som
 overhovedet muligt, dette inkludere at fjerne pakker der er i konlikt
-med nye pakker. Ligeledes vil <command>apt-get install</command> gøre en
-del for at installere den pakke man ønsker og er man midt i en
+med nye pakker. Ligeledes vil <command>apt-get install</command> gÃ¸re en
+del for at installere den pakke man Ã¸nsker og er man midt i en
 transitionsperiode kan det let betyde at der vil blive afinstaleret
 pakker.
 </para>
 
 <para>
-Hvis man følger udviklingen af Debian kan det værer en god idé at
+Hvis man fÃ¸lger udviklingen af Debian kan det vÃ¦rer en god idÃ© at
 installere pakken apt-listchanges. Denne pakke giver mulighed for at
-læse changelog-filerne for de pakker apt ønsker at opdatere. Dermed
-kan man kyllinge ud hvis der er sket for store ændringer i en pakke.
+lÃ¦se changelog-filerne for de pakker apt Ã¸nsker at opdatere. Dermed
+kan man kyllinge ud hvis der er sket for store Ã¦ndringer i en pakke.
 </para>
 
 <para>
 <emphasis>Og husk:</emphasis> Debian Unstable bliver udviklet
-aktivt. At opdatere centrale pakker som glibc eller perl kan let gøre
+aktivt. At opdatere centrale pakker som glibc eller perl kan let gÃ¸re
 dit system ubrugligt. Brug derfor kun Debian Testing og Debian
-Unstable på produktionsmaskiner, du ikke kan tåle at miste, når du er
-absolut sikker på at det vil virke.
+Unstable pÃ¥ produktionsmaskiner, du ikke kan tÃ¥le at miste, nÃ¥r du er
+absolut sikker pÃ¥ at det vil virke.
 </para>
 
 </sect3>
@@ -636,10 +636,10 @@ absolut sikker på at det vil virke.
 <title>tar.gz-pakker</title>
 <para>
 Langt de fleste programmer til Linux er skrevet i C eller C++.  Mange
-programmer distribueres fra deres programmører som en ".tar.gz"-pakke eller
+programmer distribueres fra deres programmÃ¸rer som en ".tar.gz"-pakke eller
 ".tgz"-pakke - som er eksakt det samme. En "tar"-pakke er en container af
 filer lagt ned i en fil, uden komprimering eller kryptering. Typisk fylder
-en ".tar"-fil ca. dobbelt så meget som den behøver, og derfor man kan
+en ".tar"-fil ca. dobbelt sÃ¥ meget som den behÃ¸ver, og derfor man kan
 kompimere denne med <command>gzip</command>
 (evt. <command>bzip2</command>), hvorefter filen kommer til at hedde 
 ".tar.gz" til slut (eller ".tar.bz2" hvis <command>bzip2</command> blev
@@ -648,27 +648,27 @@ anvendt).
 
 <para>
 En ".tar.gz"-pakke (eller ".tgz") udpakkes med <command>tar xvzf
-pakke.tar.gz</command> og på skærmen vises hvilke filer der bliver
+pakke.tar.gz</command> og pÃ¥ skÃ¦rmen vises hvilke filer der bliver
 udpakket.  Man kan med <command>tar tvzf pakke.tar.gz</command> se hvilke
 filer og kataloger der er indeholdt i en given program-pakke.  Enkelte
 programmer skaber ikke et nyt underkatalog med de nye filer (hvilket er god
-kutume), og i de tilfælde må man selv lave et underkatalog og udpakke
+kutume), og i de tilfÃ¦lde mÃ¥ man selv lave et underkatalog og udpakke
 program-pakken der. Heldigvis vil langt de fleste programmer automatisk
-udpakke kildetekst og hjælpefiler i en nyt underkatalog under det nuværende
-katalog. Gør det f.eks. til en regel at udpakke program-pakker i kataloget
+udpakke kildetekst og hjÃ¦lpefiler i en nyt underkatalog under det nuvÃ¦rende
+katalog. GÃ¸r det f.eks. til en regel at udpakke program-pakker i kataloget
 <command>src</command> i eget hjemmekatalog, dvs. <filename>~/src/</filename>.
-Og der er ingen grund til at være root før at et program evt. skal installeres
-på systemet - til oversættelse og test er det (oftest) ikke nødvendigt.
+Og der er ingen grund til at vÃ¦re root fÃ¸r at et program evt. skal installeres
+pÃ¥ systemet - til oversÃ¦ttelse og test er det (oftest) ikke nÃ¸dvendigt.
 </para>
 
 <para>
-Når man har pakket kildeteksten ud kan man derefter gå ned i det nye katalog
-(brug <command>cd katalognavn</command> i terminalvinduet) og nu kan vi gå
-igang med at oversætte kildeteksten til ens egen maskine.
+NÃ¥r man har pakket kildeteksten ud kan man derefter gÃ¥ ned i det nye katalog
+(brug <command>cd katalognavn</command> i terminalvinduet) og nu kan vi gÃ¥
+igang med at oversÃ¦tte kildeteksten til ens egen maskine.
 </para>
 
 <para>
-Langt de fleste programmer kan oversættes efter følgende 
+Langt de fleste programmer kan oversÃ¦ttes efter fÃ¸lgende 
 opskrift
 </para>
 
@@ -706,15 +706,15 @@ opskrift
 </orderedlist>
 
 <example id="cdbakeoven-eks">
-<title>Eksempel på oversættelse af et KDE-program: cdbakeoven</title>
+<title>Eksempel pÃ¥ oversÃ¦ttelse af et KDE-program: cdbakeoven</title>
 <para>
-Som eksempel kan vi se på kildeteksten til
-<filename>cdbakeoven-1.8.9</filename> som findes til KDE. I dette tilfælde
+Som eksempel kan vi se pÃ¥ kildeteksten til
+<filename>cdbakeoven-1.8.9</filename> som findes til KDE. I dette tilfÃ¦lde
 hentes kildeteksten i formen <filename>cdbakeoven-1.8.9.tar.bz2</filename>.
 </para>
 
 <para>
-Først udpakkes kildeteksten:
+FÃ¸rst udpakkes kildeteksten:
 </para>
 
 <screen>
@@ -736,7 +736,7 @@ cdbakeoven-1.8.9/COPYING
 
 <para>
 Alt kildetekst er nu lagt i kataloget <command>cdbakeoven-1.8.9/</command>.
-Denne ser vi nu nærmere på.
+Denne ser vi nu nÃ¦rmere pÃ¥.
 </para>
 
 <screen>
@@ -749,10 +749,10 @@ Makefile.am  acinclude.m4  config.h.bot  configure.in     subdirs
 </screen>
 
 <para>
-Der er en hel del, der er værd at lægge mærke til her.  Først de fire filer
+Der er en hel del, der er vÃ¦rd at lÃ¦gge mÃ¦rke til her.  FÃ¸rst de fire filer
 <filename>COPYING</filename>, <filename>AUTHORS</filename>,
 <filename>README</filename> og <filename>INSTALL</filename>. De filer
-vil følge med langt de fleste programmer.
+vil fÃ¸lge med langt de fleste programmer.
 </para>
 
 <itemizedlist mark="bullet">
@@ -764,7 +764,7 @@ programmet - oftest GPL - General Public License.
 </listitem>
 <listitem>
  <para>
- <filename>AUTHORS</filename>: I denne fil anføres hvem der
+ <filename>AUTHORS</filename>: I denne fil anfÃ¸res hvem der
 har lavet programmet og evt. kontaktinformation.
  </para>
 </listitem>
@@ -777,25 +777,25 @@ om hvad programmet er og hvad man kan forvente.
 <listitem> 
  <para>
 <filename>INSTALL</filename>: I denne fil skrives typisk en kort 
-vejledning i hvordan man kan få oversat programmet på ens egen maskine.
+vejledning i hvordan man kan fÃ¥ oversat programmet pÃ¥ ens egen maskine.
  </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Det er naturligvis forskelle i hvordan de enkelte programmører skriver
-vejledningen filerne, men ovenstående dækker måske 80% af alle programmer.
+Det er naturligvis forskelle i hvordan de enkelte programmÃ¸rer skriver
+vejledningen filerne, men ovenstÃ¥ende dÃ¦kker mÃ¥ske 80% af alle programmer.
 </para>
 
 <para>
-Det næste vi skal lægge mærke til er filen <filename>configure</filename>,
-der viser at programmørerne har hjulpet os brugere med at lave et
-opsætnings-script, der automatisk kan se om alle de øvrige nødvendige
-program-biblioteker er til stede. Typisk bygger programmer på hinanden og
-<filename>configure</filename> er et kørbart script, der holder styr
-på det. Nu køres dette - bemærk at man typisk tilføjer "./" foran kommandoen
-<command>configure</command> for at være sikker på at det er et program-script
-i det nuværende katalog, der vil blive kørt.
+Det nÃ¦ste vi skal lÃ¦gge mÃ¦rke til er filen <filename>configure</filename>,
+der viser at programmÃ¸rerne har hjulpet os brugere med at lave et
+opsÃ¦tnings-script, der automatisk kan se om alle de Ã¸vrige nÃ¸dvendige
+program-biblioteker er til stede. Typisk bygger programmer pÃ¥ hinanden og
+<filename>configure</filename> er et kÃ¸rbart script, der holder styr
+pÃ¥ det. Nu kÃ¸res dette - bemÃ¦rk at man typisk tilfÃ¸jer "./" foran kommandoen
+<command>configure</command> for at vÃ¦re sikker pÃ¥ at det er et program-script
+i det nuvÃ¦rende katalog, der vil blive kÃ¸rt.
 </para>
 
 <screen>
@@ -809,20 +809,20 @@ checking for a BSD compatible install... /usr/bin/install -c
 </screen>
 
 <para>
-For hver parameter, der er nødvendig for at oversætte programmet vil
-<command>configure</command>-scriptet selv afgøre hvad der er rigtigt.
-Typisk tager det få minutter. Hvis der er fejl bliver man nødt til at
-efterinstallere program-pakker først, eller give flag til programmet med
-hvad der skal gøres. Hvordan dette gøres kan ikke beskrives kortfattet, da
-det afhænger af det enkelte program. Ofte skal der installeres
+For hver parameter, der er nÃ¸dvendig for at oversÃ¦tte programmet vil
+<command>configure</command>-scriptet selv afgÃ¸re hvad der er rigtigt.
+Typisk tager det fÃ¥ minutter. Hvis der er fejl bliver man nÃ¸dt til at
+efterinstallere program-pakker fÃ¸rst, eller give flag til programmet med
+hvad der skal gÃ¸res. Hvordan dette gÃ¸res kan ikke beskrives kortfattet, da
+det afhÃ¦nger af det enkelte program. Ofte skal der installeres
 udviklings-pakker af nogle programmer. De hedder typisk "-devel" i navnet.
 </para>
 
 <para>
-Efter at have kørt <command>./configure</command> igennem succes-fuldt kan
-programmet oversættes - ofte tager dette en del tid (alt efter maskinens
-CPU-hastighed). Oversættelsen sker ved at køre programmet
-<command>make</command>, der kalder C/C++-oversætteren  <command>gcc</command> og <command>g++</command>. Alle tre dele skal således være installeret.
+Efter at have kÃ¸rt <command>./configure</command> igennem succes-fuldt kan
+programmet oversÃ¦ttes - ofte tager dette en del tid (alt efter maskinens
+CPU-hastighed). OversÃ¦ttelsen sker ved at kÃ¸re programmet
+<command>make</command>, der kalder C/C++-oversÃ¦tteren  <command>gcc</command> og <command>g++</command>. Alle tre dele skal sÃ¥ledes vÃ¦re installeret.
 </para>
 
 <screen>
@@ -830,8 +830,8 @@ CPU-hastighed). Oversættelsen sker ved at køre programmet
 </screen>
 
 <para>
-Nu er programmet oversat og du har normalt fået et program der kan køres. 
-Det eneste der mangler er at få det installeret og det kan køres ligesom 
+Nu er programmet oversat og du har normalt fÃ¥et et program der kan kÃ¸res. 
+Det eneste der mangler er at fÃ¥ det installeret og det kan kÃ¸res ligesom 
 alle andre programmer.
 </para>
 
@@ -844,7 +844,7 @@ alle andre programmer.
 
 <para>
 Nu er programmet installeret - typisk i
-<filename>/usr/local/bin/</filename>. Nu er vi færdige :)
+<filename>/usr/local/bin/</filename>. Nu er vi fÃ¦rdige :)
 </para>
 
 </example>

@@ -9,30 +9,30 @@ EXTIF="ppp0"
 # Eksempel INTIF="eth0"
 INTIF="eth0"
 
-# Hvis man via sit netkort eller ppp adapter får en dynamisk IP addresse fra
-# sin Internet udbyder skal DHCP stå til yes.
+# Hvis man via sit netkort eller ppp adapter fÃ¥r en dynamisk IP addresse fra
+# sin Internet udbyder skal DHCP stÃ¥ til yes.
 DHCP="yes"
 
-# Hvis denne sættes til yes vil ALT udp trafik ind til portene 55000 til 65535
-# blive tilladt ind til EXTIF på firewallen.
+# Hvis denne sÃ¦ttes til yes vil ALT udp trafik ind til portene 55000 til 65535
+# blive tilladt ind til EXTIF pÃ¥ firewallen.
 UDPINOK=""
 
-# Ens IP adresse på ens eksterne netkort eller ppp adapter.
+# Ens IP adresse pÃ¥ ens eksterne netkort eller ppp adapter.
 EXTIP=`ifconfig | grep -A 4 $EXTIF | awk '/inet/ { print $2 } ' | sed -e s/addr://`
 
 if [ "$EXTIP" = '' ]; then
-   echo "Kan ikke finde IP adressen på $EXTIF "
+   echo "Kan ikke finde IP adressen pÃ¥ $EXTIF "
    exit 1
 fi
 
 # Alle IP adresser.
 ANYIP="0.0.0.0/0.0.0.0"
 
-# IP adresse på det interne netværk.
+# IP adresse pÃ¥ det interne netvÃ¦rk.
 INTLAN=`ifconfig | grep -A 4 $INTIF | awk '/inet/ { print $2 } ' | sed -e s/addr://`"/"`ifconfig | grep -A 4 $INTIF | awk '/Mask/ { print $4 } ' | sed -e s/Mask://`
 
 if [ "$INTLAN" = '' ]; then
-   echo "Kan ikke finde IP adressen på $INTLAN ..."
+   echo "Kan ikke finde IP adressen pÃ¥ $INTLAN ..."
    echo
    exit 1
 fi
@@ -46,55 +46,55 @@ if [ "$DNS1" = '' ]; then
    exit 1
 fi
 
-# Slår IP forwarding til
+# SlÃ¥r IP forwarding til
 echo "1" > /proc/sys/net/ipv4/ip_forward
 
-# Slår IP Spoofing attacks fra.
+# SlÃ¥r IP Spoofing attacks fra.
 for file in /proc/sys/net/ipv4/conf/*/rp_filter
 do
   echo "2" > $file
 done
 
-# Slår syn-cookies til (syn-flooding attacks) hvis support er kompileret i kernen.
+# SlÃ¥r syn-cookies til (syn-flooding attacks) hvis support er kompileret i kernen.
 if [ -f /proc/sys/net/ipv4/tcp_syncookies ]; then
   echo "1" >/proc/sys/net/ipv4/tcp_syncookies
 fi
 
-# Sætter ip_dynaddr til 1 hvis DHCP = yes.
+# SÃ¦tter ip_dynaddr til 1 hvis DHCP = yes.
 if [ "`echo $DHCP | tr '[A-Z]' '[a-z]'`" = "yes" ]; then
   echo "1" > /proc/sys/net/ipv4/ip_dynaddr
  else
   echo "0" > /proc/sys/net/ipv4/ip_dynaddr
 fi
 
-# Slår source routing fra
+# SlÃ¥r source routing fra
 for file in /proc/sys/net/ipv4/conf/*/accept_source_route
 do
  echo "0" > $file
 done
 
-# Slår ICMP redirect fra
+# SlÃ¥r ICMP redirect fra
 for file in /proc/sys/net/ipv4/conf/*/accept_redirects
 do
  echo "0" > $file
 done
 
-# Slår IP Always Defrag til.
+# SlÃ¥r IP Always Defrag til.
 echo "1" > /proc/sys/net/ipv4/ip_always_defrag
 
-# Liste over porte der åbnes lokalt på firewallen, når der laves en forbindelse ud.
+# Liste over porte der Ã¥bnes lokalt pÃ¥ firewallen, nÃ¥r der laves en forbindelse ud.
 echo "55000 60999" >/proc/sys/net/ipv4/ip_local_port_range
 
-# Slet alle regler i kæderne
+# Slet alle regler i kÃ¦derne
 ipchains -F
 ipchains -X
 
-# Ændre INPUT til DENY og OUTPUT og FORWARD kæden til REJECT
+# Ã†ndre INPUT til DENY og OUTPUT og FORWARD kÃ¦den til REJECT
 ipchains -P input DENY
 ipchains -P forward REJECT
 ipchains -P output REJECT
 
-# Ændre IP masquerading timeouts.
+# Ã†ndre IP masquerading timeouts.
 ipchains -M -S 7200 10 160
 
 # Load disse moduler til IP MASQ
@@ -107,7 +107,7 @@ ipchains -M -S 7200 10 160
 #  fi
 #fi
 
-# Bruges så aktiv FTP virker.
+# Bruges sÃ¥ aktiv FTP virker.
 if [ -f /lib/modules/`uname -r`/ipv4/ip_masq_ftp.o ]; then
    FTP="yes"
   if ! [ "`cat /proc/modules | awk '/ip_masq_ftp/ { print $1 }'`" = ip_masq_ftp ]; then 
@@ -115,7 +115,7 @@ if [ -f /lib/modules/`uname -r`/ipv4/ip_masq_ftp.o ]; then
   fi
 fi
 
-# Bruges til IRC så fil overførelse virker.
+# Bruges til IRC sÃ¥ fil overfÃ¸relse virker.
 if [ -f /lib/modules/`uname -r`/ipv4/ip_masq_irc.o ]; then
    IRC="yes"
   if ! [ "`cat /proc/modules | awk '/ip_masq_irc/ { print $1 }'`" = ip_masq_irc ]; then 
@@ -131,7 +131,7 @@ if [ -f /lib/modules/`uname -r`/ipv4/ip_masq_quake.o ]; then
   fi
 fi
 
-# Bruges så UDP virker med Real Audio
+# Bruges sÃ¥ UDP virker med Real Audio
 if [ -f /lib/modules/`uname -r`/ipv4/ip_masq_raudio.o ]; then
    RAUDIO="yes"
   if ! [ "`cat /proc/modules | awk '/ip_masq_raudio/ { print $1 }'`" = ip_masq_raudio ]; then 
@@ -155,13 +155,13 @@ if [ -f /lib/modules/`uname -r`/ipv4/ip_masq_icq.o ]; then
   fi
 fi
 
-# IP adresse som siger den har local loopback's IP adresse skal nægtes og logges
+# IP adresse som siger den har local loopback's IP adresse skal nÃ¦gtes og logges
 ipchains -A input -s 127.0.0.1/32 -i $EXTIF -l -j DENY
 
-# IP adresse som siger den har EXTIP IP adresse skal nægtes og logges
+# IP adresse som siger den har EXTIP IP adresse skal nÃ¦gtes og logges
 ipchains -A input -s $EXTIP -i $EXTIF -l -j DENY
 
-# IP adresse som siger den har en IP adresse i det "private" og multicast områdeskal nægtes og logges.
+# IP adresse som siger den har en IP adresse i det "private" og multicast omrÃ¥deskal nÃ¦gtes og logges.
 ipchains -A input -s 10.0.0.0/8 -i $EXTIF -l -j DENY
 ipchains -A input -s 172.16.0.0/12 -i $EXTIF -l -j DENY
 ipchains -A input -s 192.168.0.0/16 -i $EXTIF -l -j DENY
@@ -178,8 +178,8 @@ if [ "`echo $DHCP | tr '[A-Z]' '[a-z]'`" = "yes" ]; then
   ipchains -A output -i $EXTIF -p udp -s 255.255.255.255/0 68 -d $ANYIP 67 -j ACCEPT
 fi 
 
-# Acceptere DHCP trafik ind og ud af $INTIF hvis man kører en DHCP server
-# på firewall maskinen.
+# Acceptere DHCP trafik ind og ud af $INTIF hvis man kÃ¸rer en DHCP server
+# pÃ¥ firewall maskinen.
 if [ "`ps -C dhcpd | grep dhcpd | awk ' { print $4 }'`" = dhcpd ]; then
   ipchains -A input -i $INTIF -p udp -s 255.255.255.255/0 68 -d $ANYIP 67 -j ACCEPT
   ipchains -A output -i $INTIF -p udp -s $ANYIP 67 -d 255.255.255.255/0 68 -j ACCEPT
@@ -210,7 +210,7 @@ ipchains -A output -i $EXTIF -p udp -s $EXTIP 55000:65535 -d 0/0 -j ACCEPT
 # Afvis Auth trafik ind.
 ipchains -A input -i $EXTIF -p tcp -s $ANYIP 1024:65535 -d $EXTIP 113 -j REJECT
 
-# Tillad kun DNS retur trafik fra DNS servere der står i /etc/resolv.conf
+# Tillad kun DNS retur trafik fra DNS servere der stÃ¥r i /etc/resolv.conf
 if ! [ "$DNS1" = "" ]; then
    if ! [ "`echo $UDPINOK | tr '[A-Z]' '[a-z]'`" = "yes" ]; then
     ipchains -A input -i $EXTIF -p udp -s $DNS1 53 -d $EXTIP 55000:65535 -j ACCEPT
@@ -287,24 +287,24 @@ ipchains -A input -i $EXTIF -s $ANYIP destination-unreachable -p icmp -j ACCEPT
 ipchains -A input -i $EXTIF -s $ANYIP -d $EXTIP 55000:65535 -p udp -j ACCEPT
 
 
-# Hvis /etc/firewall.debug findes, så logges alle INPUT og OUTPUT pakker som ikke
+# Hvis /etc/firewall.debug findes, sÃ¥ logges alle INPUT og OUTPUT pakker som ikke
 # accepteres, derved kan man via /var/log/messages se hvad der eventuelt skal
-# åbnes for.
+# Ã¥bnes for.
 if [ -f /etc/firewall.debug ]; then
   ipchains -A input -l
   ipchains -A output -l
 fi
 
-# Hvis /etc/firewall.debug findes, så vises de variabler og de ting som script'et
+# Hvis /etc/firewall.debug findes, sÃ¥ vises de variabler og de ting som script'et
 # selv finder ud af.
 if [ -f /etc/firewall.debug ]; then
  if [ "`echo $DHCP | tr '[A-Z]' '[a-z]'`" = "yes" ]; then
-  echo "Du får dynamisk IP tildelt fra din ISP til dit interface $EXTIF"
+  echo "Du fÃ¥r dynamisk IP tildelt fra din ISP til dit interface $EXTIF"
  fi
   echo "Dit interface ud mod Internet er: $EXTIF"
-  echo "IP adressen på dit interface $EXTIF ud mod Internet er: $EXTIP"
+  echo "IP adressen pÃ¥ dit interface $EXTIF ud mod Internet er: $EXTIP"
   echo "Dit interface ud mod dit LAN er: $INTIF"
-  echo "IP adressen og netmasken på dit LAN interface er: $INTLAN"
+  echo "IP adressen og netmasken pÃ¥ dit LAN interface er: $INTLAN"
  if ! [ "$DNS1" = "" ]; then
    if ! [ "`echo $UDPINOK | tr '[A-Z]' '[a-z]'`" = "yes" ]; then
     echo "Din 1. DNS server i resolv.conf er: $DNS1"
@@ -324,7 +324,7 @@ if [ -f /etc/firewall.debug ]; then
   echo "ALT UDP trafik til portene 55000:65535 er tilladt !!"
  fi
  if [ "`ps -C dhcpd | grep dhcpd | awk ' { print $4 }'`" = dhcpd ]; then
-  echo "Du kører en DHCP server og der er lavet INPUT og OUTPUT regler for dette."
+  echo "Du kÃ¸rer en DHCP server og der er lavet INPUT og OUTPUT regler for dette."
  fi
   echo "IP MASQ modulerne bliver loadet i kataloget:" /lib/modules/`uname -r`/ipv4/
  if [ "$FTP" = "yes" ]; then

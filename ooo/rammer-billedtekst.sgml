@@ -3,9 +3,9 @@
 
     
 <sect1 id="ooo-rammer-billedtekst">
-  <title>Tilføj billedtekst til grafik</title>
+  <title>TilfÃ¸j billedtekst til grafik</title>
 
-<para>Du kan give grafik et nummer og en billedtekst sådan:</para>
+<para>Du kan give grafik et nummer og en billedtekst sÃ¥dan:</para>
 
 <orderedlist>
       <listitem>
@@ -16,7 +16,7 @@
 
       <listitem>
 
-<para>Vælg <emphasis>Indsæt/Billedtekst</emphasis>.</para>
+<para>VÃ¦lg <emphasis>IndsÃ¦t/Billedtekst</emphasis>.</para>
 
 </listitem>
 
@@ -32,11 +32,11 @@
 </listitem>
     </orderedlist>
 
-<para>Nummeret vises med grå baggrund på skærmen, da det styres automatisk
-    af Writer. Det betyder at det opdateres automatisk når du redigerer
+<para>Nummeret vises med grÃ¥ baggrund pÃ¥ skÃ¦rmen, da det styres automatisk
+    af Writer. Det betyder at det opdateres automatisk nÃ¥r du redigerer
     dokumentet, f.eks. ombytter to figurer.</para>
 
-<para>Der er tale om et såkaldt sekvensnummer felt; læs mere om felter i <xref linkend="ooo-felter"/>kapitel 11.</para>
+<para>Der er tale om et sÃ¥kaldt sekvensnummer felt; lÃ¦s mere om felter i <xref linkend="ooo-felter"/>kapitel 11.</para>
 
-</sect1>    <!--   16.8. Tilføj billedtekst til grafik -->
+</sect1>    <!--   16.8. TilfÃ¸j billedtekst til grafik -->
 

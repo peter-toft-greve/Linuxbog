@@ -5,7 +5,7 @@
 <sect1>
   <title>Redigering med navigatoren</title>
 
-<para>Åbn navigatoren, klik på teksten <emphasis>Overskrifter</emphasis> og derefter på
+<para>Ã…bn navigatoren, klik pÃ¥ teksten <emphasis>Overskrifter</emphasis> og derefter pÃ¥
     ikonen <figure float="1">
 <graphic fileref="navigatorindholdsvisning.&magic;" scale="60"></graphic>
 </figure>
@@ -16,18 +16,18 @@
 <graphic fileref="navigatorindholdsvisning2.&magic;" scale="60"></graphic>
 </figure></para>
 
-<para>I denne visning kan du flytte kapitler blot ved at trække
+<para>I denne visning kan du flytte kapitler blot ved at trÃ¦kke
     overskrifterne rundt i navigatoren!</para>
 
-<para>Når du trækker vil en vandret streg vise, hvor kapitlet vil blive
-    flyttet hen. Her flyttes &bdquo;Det første underkapitel&ldquo; et kapitel
+<para>NÃ¥r du trÃ¦kker vil en vandret streg vise, hvor kapitlet vil blive
+    flyttet hen. Her flyttes &bdquo;Det fÃ¸rste underkapitel&ldquo; et kapitel
     ned:</para>
 
 <para><figure float="1">
 <graphic fileref="navigatorindholdsvisning3.&magic;" scale="60"></graphic>
 </figure></para>
 
-<para>Resultatet ser sådan ud:</para>
+<para>Resultatet ser sÃ¥dan ud:</para>
 
 <para><figure float="1">
 <graphic fileref="navigatorindholdsvisning4.&magic;" scale="60"></graphic>

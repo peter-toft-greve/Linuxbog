@@ -5,24 +5,24 @@
  <title>Typografier/Stylisten</title>
 
  <para>
-  Dette kapitel handler om blød formatering af tegn og afsnit ved hjælp
-  af typografier. Begge typer gennemgås på én gang, da de er
+  Dette kapitel handler om blÃ¸d formatering af tegn og afsnit ved hjÃ¦lp
+  af typografier. Begge typer gennemgÃ¥s pÃ¥ Ã©n gang, da de er
   relaterede.
  </para>
     
  <sect1 id="ooo-typografier-teorier">
-  <title>Teori: Hård og blød formatering; typografier</title>
+  <title>Teori: HÃ¥rd og blÃ¸d formatering; typografier</title>
 
   <para>
-   Her er et skærmbillede fra Writer:</para>
+   Her er et skÃ¦rmbillede fra Writer:</para>
 
 <para><figure float="1"><title>(noget)</title>
 <graphic fileref="typografieksempel.&magic;" scale="60"></graphic>
 </figure>
 </para>
 
-<para>Det fremgår, at der er to forskellige slags afsnit i denne
-    tekst, og de er formateret på hver sin måde:</para>
+<para>Det fremgÃ¥r, at der er to forskellige slags afsnit i denne
+    tekst, og de er formateret pÃ¥ hver sin mÃ¥de:</para>
 
 <itemizedlist mark="bullet">
   <listitem>
@@ -35,18 +35,18 @@
 
   <listitem>
 
-<para>De tre afsnit med brødtekst er formateret med lige margener,
-        orddeling slået til og indrykning i venstre side, pånær den
-        første linje (det kaldes <emphasis>hængende
+<para>De tre afsnit med brÃ¸dtekst er formateret med lige margener,
+        orddeling slÃ¥et til og indrykning i venstre side, pÃ¥nÃ¦r den
+        fÃ¸rste linje (det kaldes <emphasis>hÃ¦ngende
         indrykning</emphasis> ). Desuden er der en afstand mellem
         afsnittene.</para>
 
 </listitem>
 </itemizedlist>
 
-<para>For at formatere teksten sådan kan du tage ét afsnit ad gangen
-    og så bruge de formateringsredskaber som er omtalt i <xref linkend="ooo-tegn-og-skriftsnit"/>kapitel 6 og <xref linkend="ooo-afsnit"/>7. Dette kaldes
-    <emphasis>hård</emphasis> formatering og betyder at du
+<para>For at formatere teksten sÃ¥dan kan du tage Ã©t afsnit ad gangen
+    og sÃ¥ bruge de formateringsredskaber som er omtalt i <xref linkend="ooo-tegn-og-skriftsnit"/>kapitel 6 og <xref linkend="ooo-afsnit"/>7. Dette kaldes
+    <emphasis>hÃ¥rd</emphasis> formatering og betyder at du
     skal:</para>
 
 <itemizedlist mark="bullet">
@@ -59,7 +59,7 @@
   <listitem>
 
 
-<para>Huske alle detaljer i formateringen næste gang du f.eks. laver en
+<para>Huske alle detaljer i formateringen nÃ¦ste gang du f.eks. laver en
         ny overskrift.</para>
 
 </listitem>
@@ -67,32 +67,32 @@
   <listitem>
 
 
-<para>Ændre formateringen <emphasis>alle</emphasis> steder hvis du beslutter dig for
-        at ændre en detalje.</para>
+<para>Ã†ndre formateringen <emphasis>alle</emphasis> steder hvis du beslutter dig for
+        at Ã¦ndre en detalje.</para>
 
 
 </listitem>
 </itemizedlist>
 
-<para>Redskabet til at løse disse problemer hedder <emphasis>typografier</emphasis> ( <emphasis>styles</emphasis> på engelsk). En typografi er en navngivet
+<para>Redskabet til at lÃ¸se disse problemer hedder <emphasis>typografier</emphasis> ( <emphasis>styles</emphasis> pÃ¥ engelsk). En typografi er en navngivet
     <!-- &bdquo; -->kasse<!-- &ldquo; --> som rummer en formatering. For at formatere et afsnit
-    på en bestemt måde skal du blot angive hvilken typografi du vil bruge. I
-    ovenstående tilfælde kunne du have to typografier, som vi kunne kalde
-    <emphasis>Overskrift&nbsp;1</emphasis> og <emphasis>Brødtekst</emphasis>.</para>
+    pÃ¥ en bestemt mÃ¥de skal du blot angive hvilken typografi du vil bruge. I
+    ovenstÃ¥ende tilfÃ¦lde kunne du have to typografier, som vi kunne kalde
+    <emphasis>Overskrift&nbsp;1</emphasis> og <emphasis>BrÃ¸dtekst</emphasis>.</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>For at formatere en overskrift på den rigtige måde skal du blot
+<para>For at formatere en overskrift pÃ¥ den rigtige mÃ¥de skal du blot
         angive, at den skal have typografien <emphasis>Overskrift&nbsp;1</emphasis>; du
-        behøver altså ikke huske på, hvad typografien indeholder, kun dens
+        behÃ¸ver altsÃ¥ ikke huske pÃ¥, hvad typografien indeholder, kun dens
         navn.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Hvis du senere ændrer typografien <emphasis>Overskrift 1</emphasis>, så ændres
+<para>Hvis du senere Ã¦ndrer typografien <emphasis>Overskrift 1</emphasis>, sÃ¥ Ã¦ndres
         automatisk <emphasis>alle</emphasis> de afsnit som er formateret med den
         overskrift.</para>
 
@@ -101,25 +101,25 @@
 </itemizedlist>
 
   <para>
-   Når du anvender typografier siger man, at du bruger
-   <emphasis>blød</emphasis> formatering, fordi du formaterer på et
-   højere niveau, hvor du ikke skal angive de <!-- &bdquo; -->hårde<!-- &ldquo; -->
+   NÃ¥r du anvender typografier siger man, at du bruger
+   <emphasis>blÃ¸d</emphasis> formatering, fordi du formaterer pÃ¥ et
+   hÃ¸jere niveau, hvor du ikke skal angive de <!-- &bdquo; -->hÃ¥rde<!-- &ldquo; -->
    detaljer direkte.
   </para>
 
   <para>
    Den type typografier som er omtalt ovenfor kaldes
    <emphasis>afsnitstypografier</emphasis> . En afsnitstypografi
-   indeholder <emphasis>både</emphasis> afsnitsformatering og
+   indeholder <emphasis>bÃ¥de</emphasis> afsnitsformatering og
    tegnformatering/skrifttyper.
   </para>
 
   <para>
    Tilsvarende er der <emphasis>tegntypografier</emphasis> , som kun
-   indeholder tegnformatering/skrifttyper. Tegntypografier bruges, når
+   indeholder tegnformatering/skrifttyper. Tegntypografier bruges, nÃ¥r
    det ikke er et helt afsnit, der skal formateres.
   </para>
- </sect1>     <!--   8.1. Teori: Hård og blød formatering; typografier -->
+ </sect1>     <!--   8.1. Teori: HÃ¥rd og blÃ¸d formatering; typografier -->
 
 <!--  8.2 --> &ooo-typografier-indbyggede;
 <!--  8.3 --> &ooo-stylisten;

@@ -1,7 +1,7 @@
 <!-- $Id$ -->
 <chapter id="java-dev-env">
-<title>Udviklingsmiljø</title>
-<indexterm><primary>Udviklingsmiljø</primary></indexterm>
+<title>UdviklingsmiljÃ¸</title>
+<indexterm><primary>UdviklingsmiljÃ¸</primary></indexterm>
 
 <!-- ####################################################################### -->
 <!-- JAVA  ->  DEV-ENV  ->  INDLEDNING                                       -->
@@ -10,8 +10,8 @@
 <title>Indledning</title>
 
 <para>
-Et professionelt udviklingsmiljø består af værktøjer, der helt eller
-delvist kan løse nedenstående opaver.
+Et professionelt udviklingsmiljÃ¸ bestÃ¥r af vÃ¦rktÃ¸jer, der helt eller
+delvist kan lÃ¸se nedenstÃ¥ende opaver.
 </para>
 
 <itemizedlist mark="bullet">
@@ -19,10 +19,10 @@ delvist kan løse nedenstående opaver.
   <para>Redigering af kildetekst</para>
 </listitem>
 <listitem>
-  <para>Oversættelse af kildetekst</para>
+  <para>OversÃ¦ttelse af kildetekst</para>
 </listitem>
 <listitem>
-  <para>Opsætningsstyring</para>
+  <para>OpsÃ¦tningsstyring</para>
 </listitem>
 <listitem>
   <para>Debugging</para>
@@ -45,9 +45,9 @@ delvist kan løse nedenstående opaver.
 </itemizedlist>
 
 <para>
-De næste mange sektioner vil gå i dybden med flere af disse opgaver og give bud på
-værktøjer, der er nyttige i den sammenhæng. Allerførst vil vi dog se på en række populære
-integrerede udviklingsmiljøer.
+De nÃ¦ste mange sektioner vil gÃ¥ i dybden med flere af disse opgaver og give bud pÃ¥
+vÃ¦rktÃ¸jer, der er nyttige i den sammenhÃ¦ng. AllerfÃ¸rst vil vi dog se pÃ¥ en rÃ¦kke populÃ¦re
+integrerede udviklingsmiljÃ¸er.
 </para>
 
 </sect1>
@@ -56,33 +56,33 @@ integrerede udviklingsmiljøer.
 <!-- JAVA  ->  DEV-ENV  ->  IDE                                              -->
 <!-- ####################################################################### -->
 <sect1 id="java-dev-env-ide">
-<title>Integrerede udviklingsmiljøer</title>
-<indexterm><primary>Integrerede udviklingsmiljøer</primary></indexterm>
+<title>Integrerede udviklingsmiljÃ¸er</title>
+<indexterm><primary>Integrerede udviklingsmiljÃ¸er</primary></indexterm>
 
 <para>
-Denne sektion giver et hurtigt overblik over populære integrerede udviklingsmiljøer.
+Denne sektion giver et hurtigt overblik over populÃ¦re integrerede udviklingsmiljÃ¸er.
 </para>
 
 <sect2 id="java-dev-env-ide-jdk">
 <title>Sun JDK</title>
 
 <para>
-Den mest skrabede løsning, man kan vælge at redigere kildeteksterne i, er et
+Den mest skrabede lÃ¸sning, man kan vÃ¦lge at redigere kildeteksterne i, er et
 ikke-Java-orienteret program som for eksempel Notesblok under Windows
 eller kedit eller emacs under Linux.
 </para>
 
 <para>
-Til oversættelse og kørsel kan man installere et Java-udviklingskit udgivet af
+Til oversÃ¦ttelse og kÃ¸rsel kan man installere et Java-udviklingskit udgivet af
 Sun, f.eks. JDK1.3 (Java Development Kit version 1.3). Det kan hentes gratis
-på <ulink url="http://www.javasoft.com">http://www.javasoft.com</ulink> til et
-væld af styresystemer.
+pÃ¥ <ulink url="http://www.javasoft.com">http://www.javasoft.com</ulink> til et
+vÃ¦ld af styresystemer.
 </para>
 
 <para>
 JDK'en bruges fra kommandolinjen (f.eks. i et DOS-vindue). De vigtigste kommandoer
-er <constant>javac</constant>, der oversætter en kildetekstfil til bytekode, og
-<constant>java</constant>, der udfører en bytekode-fil.
+er <constant>javac</constant>, der oversÃ¦tter en kildetekstfil til bytekode, og
+<constant>java</constant>, der udfÃ¸rer en bytekode-fil.
 </para>
 
 </sect2>
@@ -91,36 +91,36 @@ er <constant>javac</constant>, der oversætter en kildetekstfil til bytekode, og
 <title>Borland JBuilder</title>
 
 <para>
-Der findes en række mere avancerede programmeringsværktøjer, hvor JBuilder fra
-Borland er en af de mest populære. JBuilder er skrevet i Java og kører på både
+Der findes en rÃ¦kke mere avancerede programmeringsvÃ¦rktÃ¸jer, hvor JBuilder fra
+Borland er en af de mest populÃ¦re. JBuilder er skrevet i Java og kÃ¸rer pÃ¥ bÃ¥de
 Macintosh, Windows, Linux og Sun Solaris. Det anbefales at have 128 MB RAM.
 </para>
 
 <para>
 En basisversion af JBuilder kan hentes gratis fra
 <ulink url="http://www.borland.com/jbuilder/">http://www.borland.com/jbuilder/</ulink>.
-Ønsker man adgang til de mere avancerede funktioner skal programmet købes.
+Ã˜nsker man adgang til de mere avancerede funktioner skal programmet kÃ¸bes.
 </para>
 
 <para>
-JBuilder er opbygget med en menulinje øverst, der indeholder tilgang til
-filhåndtering, projektstyring og alle nødvendige værktøjer, hvoraf de vigtigste
-er "Run" og "Debug". "Run" oversætter først kildeteksten og starter derefter
+JBuilder er opbygget med en menulinje Ã¸verst, der indeholder tilgang til
+filhÃ¥ndtering, projektstyring og alle nÃ¸dvendige vÃ¦rktÃ¸jer, hvoraf de vigtigste
+er "Run" og "Debug". "Run" oversÃ¦tter fÃ¸rst kildeteksten og starter derefter
 fortolkeren. Uddata kan ses i den nederste ramme. "Debug" (der findes under "Run")
-bruges til fejlfinding af programmer og giver mulighed for at udføre programkoden
+bruges til fejlfinding af programmer og giver mulighed for at udfÃ¸re programkoden
 trinvist.
 </para>
 
 <para>
-Når man udvikler i JBuilder, er det baseret på projekter. Projekterne indeholder
-en liste over kildetekst-filerne samt, hvis det ønskes, projektinformation (lagret
+NÃ¥r man udvikler i JBuilder, er det baseret pÃ¥ projekter. Projekterne indeholder
+en liste over kildetekst-filerne samt, hvis det Ã¸nskes, projektinformation (lagret
 som HTML-dokument).
 </para>
 
 <para>
-Projektet (her oop.jpr) kan ses i den venstre ramme. Den højre ramme indeholder
-kildeteksten på et faneblad. På de andre faneblade er bl.a. designværktøj til
-grafiske brugergrænseflader, dokumentationsvisning og versionskontrol.
+Projektet (her oop.jpr) kan ses i den venstre ramme. Den hÃ¸jre ramme indeholder
+kildeteksten pÃ¥ et faneblad. PÃ¥ de andre faneblade er bl.a. designvÃ¦rktÃ¸j til
+grafiske brugergrÃ¦nseflader, dokumentationsvisning og versionskontrol.
 </para>
 
 <figure id="java-dev-env-jbuilder-fig" float="1">
@@ -136,14 +136,14 @@ grafiske brugergrænseflader, dokumentationsvisning og versionskontrol.
 <para>
 Oracle udgiver JDeveloper, som er en udgave af JBuilder, hvor Oracle har integreret
 sit eget database-produkt. JDeveloper er lidt mere indviklet at bruge, idet
-projekter er samlet i arbejdsområder, en facilitet, man sjældent har brug for
+projekter er samlet i arbejdsomrÃ¥der, en facilitet, man sjÃ¦ldent har brug for
 som almindelig udvikler.
 </para>
 
 <para>
-JDeveloper kræver 128 MB RAM og kører under Windows og Linux. Det kan
-købes af Oracle, men bruger man i forvejen Oracles produkter, er der sandsynlighed
-for, at man har fået leveret JDeveloper med i pakken.
+JDeveloper krÃ¦ver 128 MB RAM og kÃ¸rer under Windows og Linux. Det kan
+kÃ¸bes af Oracle, men bruger man i forvejen Oracles produkter, er der sandsynlighed
+for, at man har fÃ¥et leveret JDeveloper med i pakken.
 </para>
 
 <figure id="java-dev-env-jdeveloper-fig" float="1">
@@ -157,16 +157,16 @@ for, at man har fået leveret JDeveloper med i pakken.
 <title>Sun Forte for Java</title>
 
 <para>
-Sun udgiver sit eget udviklingsmiljø, også skrevet i Java, til Windows, Linux og
-Sun Solaris. Gratisversionen, der kan hentes på 
+Sun udgiver sit eget udviklingsmiljÃ¸, ogsÃ¥ skrevet i Java, til Windows, Linux og
+Sun Solaris. Gratisversionen, der kan hentes pÃ¥ 
 <ulink url="http://www.sun.com/forte/">http://www.sun.com/forte/</ulink>, har
-flere funktioner til at udvikle grafiske brugergrænseflader end JBuilders basisversion.
+flere funktioner til at udvikle grafiske brugergrÃ¦nseflader end JBuilders basisversion.
 </para>
 
 <para>
-Hvilken en, der er bedst, afhænger nok af, hvem man spørger, men Forte virker
-efter forfatterens mening mindre gennemført end JBuilder. JBuilder fylder mere på
-disken, men har betydeligt mere hjælp, både til begynderen og den erfarne.
+Hvilken en, der er bedst, afhÃ¦nger nok af, hvem man spÃ¸rger, men Forte virker
+efter forfatterens mening mindre gennemfÃ¸rt end JBuilder. JBuilder fylder mere pÃ¥
+disken, men har betydeligt mere hjÃ¦lp, bÃ¥de til begynderen og den erfarne.
 </para>
 
 <figure id="java-dev-env-forte-fig" float="1">
@@ -186,10 +186,10 @@ disken, men har betydeligt mere hjælp, både til begynderen og den erfarne.
    </note>
 
 <para>
-Ligesom Sun har IBM sit eget udviklingsmiljø til bl.a. Java, og en gammel udgave af
-miljøet kan hentes gratis på IBMs hjemmeside til bl.a. Linux (skærmbilledet viser
-VisualAge for Java under Linux). Gratisversionen kræver kun 32 MB RAM. De nyere
-udgaver er mere krævende (128 MB RAM).
+Ligesom Sun har IBM sit eget udviklingsmiljÃ¸ til bl.a. Java, og en gammel udgave af
+miljÃ¸et kan hentes gratis pÃ¥ IBMs hjemmeside til bl.a. Linux (skÃ¦rmbilledet viser
+VisualAge for Java under Linux). Gratisversionen krÃ¦ver kun 32 MB RAM. De nyere
+udgaver er mere krÃ¦vende (128 MB RAM).
 </para>
 
 <figure id="java-dev-env-visualage-fig" float="1">
@@ -203,9 +203,9 @@ udgaver er mere krævende (128 MB RAM).
 <title>Andre</title>
 
 <para>
-Der findes mange andre udviklingsmiljøer til Java, bl.a. Visual Café, Simplicity,
-CodeGuide, AnyJ og Microsofts Visual J++. De fleste findes i en prøveudgave, der
-kan hentes gratis fra internettet, og som har alle nødvendige faciliteter til at
+Der findes mange andre udviklingsmiljÃ¸er til Java, bl.a. Visual CafÃ©, Simplicity,
+CodeGuide, AnyJ og Microsofts Visual J++. De fleste findes i en prÃ¸veudgave, der
+kan hentes gratis fra internettet, og som har alle nÃ¸dvendige faciliteter til at
 lave mindre programmer.
 </para>
 
@@ -217,26 +217,26 @@ lave mindre programmer.
 <!-- JAVA  ->  DEV-ENV  ->  CONFIGURATION                                    -->
 <!-- ####################################################################### -->
 <sect1 id="java-dev-env-configuration">
-<title>Opsætningsstyring</title>
+<title>OpsÃ¦tningsstyring</title>
 
 <para>
-Når du skal til at lave større og mere komplekse softwaresystemer,
-så vil du opdage at de består af mange forskellige delkomponenter.
-Delkomponenter vil i de fleste tilfælde være softwaremoduler med
-bestemte versionsnumre, men det kan også være brugervejledninger
-eller datafiler, som er knyttet til det pågældende softwaresystem.
+NÃ¥r du skal til at lave stÃ¸rre og mere komplekse softwaresystemer,
+sÃ¥ vil du opdage at de bestÃ¥r af mange forskellige delkomponenter.
+Delkomponenter vil i de fleste tilfÃ¦lde vÃ¦re softwaremoduler med
+bestemte versionsnumre, men det kan ogsÃ¥ vÃ¦re brugervejledninger
+eller datafiler, som er knyttet til det pÃ¥gÃ¦ldende softwaresystem.
 </para>
 
 <para>
-Den proces at sammensætte komponenter så de udgør et softwaresystem kaldes
-for <emphasis>konfigurering</emphasis> og kan være en omfattende og ret så
-kedelig arbejdsopgave at udføre manuelt når man skal holde styr på 117
-forskellige filer med bestemte versionsnumre og deres indbyrdes afhængigheder.
+Den proces at sammensÃ¦tte komponenter sÃ¥ de udgÃ¸r et softwaresystem kaldes
+for <emphasis>konfigurering</emphasis> og kan vÃ¦re en omfattende og ret sÃ¥
+kedelig arbejdsopgave at udfÃ¸re manuelt nÃ¥r man skal holde styr pÃ¥ 117
+forskellige filer med bestemte versionsnumre og deres indbyrdes afhÃ¦ngigheder.
 </para>
 
 <para>
-Heldigvis findes der værktøjer som er skræddersyet til konfigureringsstyring
-og vi vil i dette afsnit beskrive et værktøj, der er møntet specielt mod
+Heldigvis findes der vÃ¦rktÃ¸jer som er skrÃ¦ddersyet til konfigureringsstyring
+og vi vil i dette afsnit beskrive et vÃ¦rktÃ¸j, der er mÃ¸ntet specielt mod
 konfigurering af Java-softwaresystemer.
 </para>
 
@@ -244,7 +244,7 @@ konfigurering af Java-softwaresystemer.
 <title>Ant</title>
 
 <para>
-Ant er et Java-baseret værktøj. Ant kan hentes fra:
+Ant er et Java-baseret vÃ¦rktÃ¸j. Ant kan hentes fra:
 <ulink url="http://jakarta.apache.org/">http://jakarta.apache.org/</ulink>
 hvor man desunden kan finde yderligere dokumentation og information.
 </para>
@@ -253,13 +253,13 @@ hvor man desunden kan finde yderligere dokumentation og information.
 <title>Typisk bibliotekslayout</title>
 
 <para>
-TODO...skriv om motivationen for nedenstående layout /jk
+TODO...skriv om motivationen for nedenstÃ¥ende layout /jk
 </para>
 
 <screen>
 projektnavn              Al projektrelateret data
 projektnavn/build        Oversatte class-filer, ressourcefiler og billeder
-projektnavn/dist         Binær distribution af softwaresystemet inkl. manualer osv.
+projektnavn/dist         BinÃ¦r distribution af softwaresystemet inkl. manualer osv.
 projektnavn/docs         Al dokumentation
 projektnavn/docs/api     JavaDoc-genereret HTML af din kode
 projektnavn/lib          Eksterne jar-filer, som anvendes i projektet
@@ -273,19 +273,19 @@ projektnavn/test/src     Kildetekst relateret til test af softwaresystemet
 </sect3>
 
 <sect3>
-<title>Opsætningsfil</title>
+<title>OpsÃ¦tningsfil</title>
 
 <para>
-Nedenstående er vist et eksempel på en opsætningsfil til Ant som
-benytter ovenstående layout. For at anvende build.xml skal man kopiere
+NedenstÃ¥ende er vist et eksempel pÃ¥ en opsÃ¦tningsfil til Ant som
+benytter ovenstÃ¥ende layout. For at anvende build.xml skal man kopiere
 build.xml til projekt katalog som man har valgt til dette project. Man kan benytte:
 
 <itemizedlist mark="bullet">
 <listitem>
-  <para><command>ant init</command> til at oprette ovenstående katalog struktur</para>
+  <para><command>ant init</command> til at oprette ovenstÃ¥ende katalog struktur</para>
 </listitem>
 <listitem>
-  <para><command>ant compile</command> til at oversætte kildeteksten</para>
+  <para><command>ant compile</command> til at oversÃ¦tte kildeteksten</para>
 </listitem>
 <listitem>
   <para><command>ant dist</command> til at oprette en jar fil med klasse filerne</para>
@@ -304,10 +304,10 @@ dk.cmm.*</emphasis> med dine egne pakker
 
 <para>
 Man kan utroligt mange forskellige ting med Ant. Lige fra at
-komplilere sin kildetekst, til at køre java-programmer, til test, til ftp
+komplilere sin kildetekst, til at kÃ¸re java-programmer, til test, til ftp
 med mere. I stedet for at lave sine egne scripts kan det anbefales at
-man ser på dokumentationen til Ant og finder den rette task således at
-man har samlet projektets opsætning på et sted.
+man ser pÃ¥ dokumentationen til Ant og finder den rette task sÃ¥ledes at
+man har samlet projektets opsÃ¦tning pÃ¥ et sted.
 </para>
 
 <screen>
@@ -451,23 +451,23 @@ java -Xprof JavaProgram
 
 <para>
 Dokumentation er et vigtigt aspekt af ethvert softwareudviklingsprojekt.
-I dette afsnit fokuserer vi på et værktøj, der kan hjælpe dig med at
+I dette afsnit fokuserer vi pÃ¥ et vÃ¦rktÃ¸j, der kan hjÃ¦lpe dig med at
 udarbejde API-dokumentation.
 </para>
 
 <para>
-API-dokumentation består af en API-specifikation samt en
+API-dokumentation bestÃ¥r af en API-specifikation samt en
 vejledning i at bruge API'en. API-specifikationen skal ses som en kontrakt
 mellem den som bruger API'en (klienten) og den som implementerer API'en
-(leverandøren). Hvis leverandøren f.eks. lover at metoden
+(leverandÃ¸ren). Hvis leverandÃ¸ren f.eks. lover at metoden
 <constant>double sqr(int number)</constant>
-returnerer kvadratroden af <constant>number</constant> når tallet ikke
-er negativt så ved klienten at uanset, hvordan metoden er implementeret
-så vil den altid returnere kvadratroden med så stor præcision, som returtypen
-tillader. Hvis returværdien viser sig at være forkert i nogle tilfælde så har
-leverandøren brudt kontrakten og metoden er implementeret forkert. Hvis klienten
-kalder metoden med et negativt tal så er der også tale om kontraktbrud.
-Kontraktbrud kan enten resultere i en exception eller også er resultatet ikke
+returnerer kvadratroden af <constant>number</constant> nÃ¥r tallet ikke
+er negativt sÃ¥ ved klienten at uanset, hvordan metoden er implementeret
+sÃ¥ vil den altid returnere kvadratroden med sÃ¥ stor prÃ¦cision, som returtypen
+tillader. Hvis returvÃ¦rdien viser sig at vÃ¦re forkert i nogle tilfÃ¦lde sÃ¥ har
+leverandÃ¸ren brudt kontrakten og metoden er implementeret forkert. Hvis klienten
+kalder metoden med et negativt tal sÃ¥ er der ogsÃ¥ tale om kontraktbrud.
+Kontraktbrud kan enten resultere i en exception eller ogsÃ¥ er resultatet ikke
 veldefineret.
 </para>
 
@@ -475,13 +475,13 @@ veldefineret.
 <title>Javadoc</title>
 
 <para>
-Javadoc er en dokumentationsværktøj, der genererer API-dokumentation ud fra
+Javadoc er en dokumentationsvÃ¦rktÃ¸j, der genererer API-dokumentation ud fra
 </para>
 
 <itemizedlist mark="bullet">
 <listitem><para>
 Specielle <emphasis>Javadoc-kommentarer</emphasis> indeholdt kildeteksten.
-Disse udgør API-specifikationen, men kan også indeholde brugsvejledninger.
+Disse udgÃ¸r API-specifikationen, men kan ogsÃ¥ indeholde brugsvejledninger.
 </para></listitem>
 <listitem><para>
 <emphasis>Pakkedokumentationsfiler</emphasis>, der indeholder overordnet
@@ -489,15 +489,15 @@ dokumentation for pakkerne.
 </para></listitem>
 <listitem><para>
 <emphasis>Overbliksfiler</emphasis>, der indeholder overordnet dokumentation
-om en mængde af pakker.
+om en mÃ¦ngde af pakker.
 </para></listitem>
 </itemizedlist>
 
 <para>
-Denne sektion er ment som en hjælp til at få dig i gang med at bruge Javadoc så
+Denne sektion er ment som en hjÃ¦lp til at fÃ¥ dig i gang med at bruge Javadoc sÃ¥
 der er flere aspekter, som vi vil springe over.
-Når du har fået blod på tanden så kan du læse JDK's <emphasis>Tool
-documentation</emphasis> eller besøge nedenstående hjemmesider.
+NÃ¥r du har fÃ¥et blod pÃ¥ tanden sÃ¥ kan du lÃ¦se JDK's <emphasis>Tool
+documentation</emphasis> eller besÃ¸ge nedenstÃ¥ende hjemmesider.
 </para>
 
 <itemizedlist mark="bullet">
@@ -515,7 +515,7 @@ How to Write Doc Comments for Javadoc,
 <title>Javadoc-kommentarer</title>
 
 <para>
-Javadoc-kommentarerne er på formen
+Javadoc-kommentarerne er pÃ¥ formen
 </para>
 
 <screen>
@@ -523,9 +523,9 @@ Javadoc-kommentarerne er på formen
 </screen>
 
 <para>
-og kan knytte sig til klasser, interfaces, konstruktører, metoder og klassevariable.
-Alt afhængigt af hvad de knytter sig til så kan/skal man også angive en række
-beskrivende <emphasis>Javadoc-tags</emphasis> som er på formen.
+og kan knytte sig til klasser, interfaces, konstruktÃ¸rer, metoder og klassevariable.
+Alt afhÃ¦ngigt af hvad de knytter sig til sÃ¥ kan/skal man ogsÃ¥ angive en rÃ¦kke
+beskrivende <emphasis>Javadoc-tags</emphasis> som er pÃ¥ formen.
 </para>
 
 <screen>
@@ -533,14 +533,14 @@ beskrivende <emphasis>Javadoc-tags</emphasis> som er på formen.
 </screen>
 
 <para>
-Følgende eksempel illustrerer brugen af Javadoc-kommentarer og Javadoc-tags.
+FÃ¸lgende eksempel illustrerer brugen af Javadoc-kommentarer og Javadoc-tags.
 </para>
 
 <screen>
 package dk.sslug;
 
 /**
- * Denne klasse repræsenterer en simpel stak, der
+ * Denne klasse reprÃ¦senterer en simpel stak, der
  * lagrer heltal.
  *
  * @author Jonas Kongslund (jonas@kongslund.dk)
@@ -556,7 +556,7 @@ public class IntStack
    * i &lt;code>elements[0...count-1]&lt;/code>.
    * &lt;p>
    * Toppen af stakken er &lt;code>count-1&lt;/code>
-   * når &lt;code>count>0&lt;/code> og ellers udefineret.
+   * nÃ¥r &lt;code>count>0&lt;/code> og ellers udefineret.
    *
    * @see #pop()
    * @see #push(int)
@@ -564,43 +564,43 @@ public class IntStack
   protected int[] elements;
 
   /**
-   * Standardkonstruktør for denne klasse.
+   * StandardkonstruktÃ¸r for denne klasse.
    */
   public IntStack()
   {
-    /* Øvelse: implementer metoden sådan at
+    /* Ã˜velse: implementer metoden sÃ¥dan at
        elements og count initialiseres til
-       nogle fornuftige værdier */
+       nogle fornuftige vÃ¦rdier */
   }
 
   /**
-   * Fjerner og returnerer det øverste tal på stakken.
+   * Fjerner og returnerer det Ã¸verste tal pÃ¥ stakken.
    *
-   * @return int Det øverste tal på stakken
+   * @return int Det Ã¸verste tal pÃ¥ stakken
    * @exception java.util.EmptyStackException
    *            hvis stakken er tom
    */
   public int pop() throws java.util.EmptyStackException
   {
-    /* Øvelse: implementer metoden */
+    /* Ã˜velse: implementer metoden */
     return -1;
   }
 
   /**
-   * Placerer det angivne tal øverst på stakken.
+   * Placerer det angivne tal Ã¸verst pÃ¥ stakken.
    *
-   * @param element Tallet der skal lægges på stakken
+   * @param element Tallet der skal lÃ¦gges pÃ¥ stakken
    */
   public void push(int element)
   {
-    /* Øvelse: implementer metoden så stakken
-       udvides såfremt den er fyldt */
+    /* Ã˜velse: implementer metoden sÃ¥ stakken
+       udvides sÃ¥fremt den er fyldt */
   }
 
   /**
-   * Placerer det angivne tal øverst på stakken.
+   * Placerer det angivne tal Ã¸verst pÃ¥ stakken.
    *
-   * @param element Tallet der skal lægges på stakken
+   * @param element Tallet der skal lÃ¦gges pÃ¥ stakken
    * @deprecated Siden version 1.1; Metoden er
    *   erstattet af &lt;code>push(int)&lt;/code>.
    * @see #push(int)
@@ -614,20 +614,20 @@ public class IntStack
 </screen>
 
 <para>
-Bemærk at vi i eksemplet bruger HTML-tags til at fremhæve
-blandt andet metodenavne. Dette er både tilladt og anbefalelsesværdigt
-pga. øget læsevenlighed i API-dokumentationen.
+BemÃ¦rk at vi i eksemplet bruger HTML-tags til at fremhÃ¦ve
+blandt andet metodenavne. Dette er bÃ¥de tilladt og anbefalelsesvÃ¦rdigt
+pga. Ã¸get lÃ¦sevenlighed i API-dokumentationen.
 </para>
 
 <para>
-Det er desuden anbefalelsesværdigt at lade den første sætning i hver
-kommentar være beskrivende nok til at man hurtigt får en idé om, hvad
-eksempelvis en metode gør. Javadoc-værktøjet forventer faktisk dette
-da den bruger den første sætning til at generere oversigtslister med.
+Det er desuden anbefalelsesvÃ¦rdigt at lade den fÃ¸rste sÃ¦tning i hver
+kommentar vÃ¦re beskrivende nok til at man hurtigt fÃ¥r en idÃ© om, hvad
+eksempelvis en metode gÃ¸r. Javadoc-vÃ¦rktÃ¸jet forventer faktisk dette
+da den bruger den fÃ¸rste sÃ¦tning til at generere oversigtslister med.
 </para>
 
 <para>
-Prøv at kalde Javadoc-værktøjet med følgende argumenter
+PrÃ¸v at kalde Javadoc-vÃ¦rktÃ¸jet med fÃ¸lgende argumenter
 </para>
 
 <programlisting>
@@ -635,14 +635,14 @@ Prøv at kalde Javadoc-værktøjet med følgende argumenter
 </programlisting>
 
 <para>
-Værktøjet genererer som standard HTML-filer. Åbn
+VÃ¦rktÃ¸jet genererer som standard HTML-filer. Ã…bn
 <filename>index.html</filename> med en browser
 for at se resultatet.
 </para>
 
 <note><para>
-Hvis du har brugt Javadoc på <constant>eksempler/dev-env/</constant>-kataloget så
-følger der også pakkedokumentation med i købet, selvom den ikke er medtaget i
+Hvis du har brugt Javadoc pÃ¥ <constant>eksempler/dev-env/</constant>-kataloget sÃ¥
+fÃ¸lger der ogsÃ¥ pakkedokumentation med i kÃ¸bet, selvom den ikke er medtaget i
 eksemplet foroven. Hvordan du laver pakkedokumentation beskrives senere i
 denne sektion.
 </para></note>
@@ -655,46 +655,46 @@ I eksemplet er der knyttet Javadoc-kommentarer til metoder og klassevariable sam
 <listitem><para>
   <emphasis>@author</emphasis>, der er obligatorisk, angiver ophavsmanden
   er for Javadoc-kommentarernes vedkommende beregnet til klasser og interfaces
-  . Det er muligt at angive flere @author-tags på separate linjer såfremt der
-  er flere ophavsmænd.
+  . Det er muligt at angive flere @author-tags pÃ¥ separate linjer sÃ¥fremt der
+  er flere ophavsmÃ¦nd.
 </para></listitem>
 <listitem><para>
   <emphasis>@version</emphasis>, der er obligatorisk, angiver versionsnummeret
   og er for Javadoc-kommentarernes vedkommende beregnet til klasser og interfaces.
-  Versionsnummeret har ikke nogen speciel betydning og kan derfor være hvad som helst.
+  Versionsnummeret har ikke nogen speciel betydning og kan derfor vÃ¦re hvad som helst.
 </para></listitem>
 <listitem><para>
   <emphasis>@since</emphasis>, angiver i hvilken version af API'en som
-  tilføjelsen fandt sted og kan bruges overalt. Versionsnummeret har ikke nogen
-  speciel betydning og kan derfor være hvad som helst.
+  tilfÃ¸jelsen fandt sted og kan bruges overalt. Versionsnummeret har ikke nogen
+  speciel betydning og kan derfor vÃ¦re hvad som helst.
 </para></listitem>
 <listitem><para>
   <emphasis>@param</emphasis> beskriver et argument og er beregnet til metoder
-  og konstruktører. Først angives argumentets navn og dernæst beskrivelsen.
+  og konstruktÃ¸rer. FÃ¸rst angives argumentets navn og dernÃ¦st beskrivelsen.
 </para></listitem>
 <listitem><para>
-  <emphasis>@return</emphasis> beskriver returværdien og er beregnet til metoder.
-  Først angives returtypen og dernæst beskrivelsen.
+  <emphasis>@return</emphasis> beskriver returvÃ¦rdien og er beregnet til metoder.
+  FÃ¸rst angives returtypen og dernÃ¦st beskrivelsen.
 </para></listitem>
 <listitem><para>
   <emphasis>@exception</emphasis> beskriver en exception og er beregnet til
-  metoder og konstruktører. Der kan naturligvis være flere @exception-tags og hvis du
-  synes <emphasis>@throws</emphasis> virker mere logisk så kan du også anvende
+  metoder og konstruktÃ¸rer. Der kan naturligvis vÃ¦re flere @exception-tags og hvis du
+  synes <emphasis>@throws</emphasis> virker mere logisk sÃ¥ kan du ogsÃ¥ anvende
   denne.
 </para></listitem>
 <listitem><para>
   <emphasis>@see</emphasis> henviser til en pakke, klasse, klassevariabel,
-  interface, konstruktør eller metode. En af de mulige henvisningsformer er
-  <constant>pakkenavn.klassenavn#medlem</constant>, hvor medlem kan være et
-  metodenavn på formen <constant>flaf(type1,type2,...)</constant> eller et
+  interface, konstruktÃ¸r eller metode. En af de mulige henvisningsformer er
+  <constant>pakkenavn.klassenavn#medlem</constant>, hvor medlem kan vÃ¦re et
+  metodenavn pÃ¥ formen <constant>flaf(type1,type2,...)</constant> eller et
   variabelnavn. Pakkenavn og klassenavn kan udlades, hvis der henvises til en
   metode eller klassevariabel indenfor samme klasse. Dette Javadoc-tag kan anvendes i
   alle Javadoc-kommentarer.
 </para></listitem>
 <listitem><para>
   <emphasis>@deprecated</emphasis> kan bruges overalt og indikerer f.eks. at en
-  metode ikke længere bør anvendes fordi den vil udgå i en senere version. Det er
-  anbefalelsesværdigt at henvise til et alternativ ved hjælp af @see.
+  metode ikke lÃ¦ngere bÃ¸r anvendes fordi den vil udgÃ¥ i en senere version. Det er
+  anbefalelsesvÃ¦rdigt at henvise til et alternativ ved hjÃ¦lp af @see.
 </para></listitem>
 </itemizedlist>
 
@@ -706,13 +706,13 @@ I eksemplet er der knyttet Javadoc-kommentarer til metoder og klassevariable sam
 <para>
 En pakkekommentar laves ved at oprette en HTML-fil kaldet
 <filename>package.html</filename>, der placeres i pakkens katalog.
-Hvis pakken f.eks. hedder <constant>dk.sslug</constant> så placeres
-filen i <filename>dk/sslug</filename>. Javadoc-værktøjet sørger
+Hvis pakken f.eks. hedder <constant>dk.sslug</constant> sÃ¥ placeres
+filen i <filename>dk/sslug</filename>. Javadoc-vÃ¦rktÃ¸jet sÃ¸rger
 automatisk for at medtage filen.
 </para>
 
 <para>
-Forneden har vi et eksempel på en pakkekommentar.
+Forneden har vi et eksempel pÃ¥ en pakkekommentar.
 </para>
 
 <screen>
@@ -723,8 +723,8 @@ Forneden har vi et eksempel på en pakkekommentar.
   &lt;/head>
   &lt;body>
     Tilbyder containerklasser, som kan lagre forskellige typer
-    data. Indtil videre er der kun én klasse, IntStack, men
-    dette bliver der ændret på i næste version.
+    data. Indtil videre er der kun Ã©n klasse, IntStack, men
+    dette bliver der Ã¦ndret pÃ¥ i nÃ¦ste version.
 
     @see dk.sslug.IntStack
     @since 1.0
@@ -733,13 +733,13 @@ Forneden har vi et eksempel på en pakkekommentar.
 </screen>
 
 <para>
-Javadoc-værktøjet bruger kun det der står mellem &lt;body> og &lt;/body>, så
-titlen kan være hvad som helst.
+Javadoc-vÃ¦rktÃ¸jet bruger kun det der stÃ¥r mellem &lt;body> og &lt;/body>, sÃ¥
+titlen kan vÃ¦re hvad som helst.
 </para>
 
 <para>
 Ligesom med Javadoc-kommentarer er det muligt at anvende
-Javadoc-tags i pakkekommentarer. Blandt dem der er nævnt
+Javadoc-tags i pakkekommentarer. Blandt dem der er nÃ¦vnt
 tidligere kan du anvende
 </para>
 
@@ -752,8 +752,8 @@ tidligere kan du anvende
 </itemizedlist>
 
 <para>
-Bemærk at pakkekommentarer må ikke indeholde <constant>/** ... */</constant>
-og en linje må ikke starte med <constant>*</constant>.
+BemÃ¦rk at pakkekommentarer mÃ¥ ikke indeholde <constant>/** ... */</constant>
+og en linje mÃ¥ ikke starte med <constant>*</constant>.
 </para>
 
 </sect3>
@@ -765,20 +765,20 @@ og en linje må ikke starte med <constant>*</constant>.
 I eksemplet foroven kan <constant>pop()</constant>-metoden smide en
 <constant>java.util.EmptyStackException</constant>, men denne har vi
 ikke selv lavet og derfor linker API-dokumentationen ikke til den.
-Dette kunne dog godt være ønskværdigt såfremt man ikke lige kan huske hvad
-EmptyStackException dækker over (hvilket i dette tilfælde dog nok er ret
+Dette kunne dog godt vÃ¦re Ã¸nskvÃ¦rdigt sÃ¥fremt man ikke lige kan huske hvad
+EmptyStackException dÃ¦kker over (hvilket i dette tilfÃ¦lde dog nok er ret
 usandsynligt).
 </para>
 
 <para>
-Javadoc-værktøjet er så smart at det kan linke din API-dokumentation til
+Javadoc-vÃ¦rktÃ¸jet er sÃ¥ smart at det kan linke din API-dokumentation til
 klasser og interfaces, der er indeholdt i andre API-dokumenter. Det eneste
-man skal gøre er at fortælle Javadoc, hvor den eksterne dokumentation
+man skal gÃ¸re er at fortÃ¦lle Javadoc, hvor den eksterne dokumentation
 befinder sig.
 </para>
 
 <para>
-Her er et eksempel, der forudsætter at JDK's API-dokumentation er indeholdt i
+Her er et eksempel, der forudsÃ¦tter at JDK's API-dokumentation er indeholdt i
 <filename>$JAVA_HOME/docs/api</filename>.
 </para>
 
@@ -787,7 +787,7 @@ Her er et eksempel, der forudsætter at JDK's API-dokumentation er indeholdt i
 </programlisting>
 
 <para>
-Du kan også angive en URL.
+Du kan ogsÃ¥ angive en URL.
 </para>
 
 <programlisting>
@@ -796,27 +796,27 @@ http://java.sun.com/products/jdk/1.3/docs/api/ dk.sslug</userinput>
 </programlisting>
 
 <para>
-I begge tilfælde bliver der kun lavet links til dokumentationen for en
-ekstern klasse eller interface såfremt følgende er opfyldt
+I begge tilfÃ¦lde bliver der kun lavet links til dokumentationen for en
+ekstern klasse eller interface sÃ¥fremt fÃ¸lgende er opfyldt
 </para>
 
 <itemizedlist mark="bullet">
 <listitem><para>
-Den er eksplict angivet i en import-sætning, f.eks. 
+Den er eksplict angivet i en import-sÃ¦tning, f.eks. 
 <constant>import java.util.EmptyStackException;</constant>. Det er ikke nok at
-der står <constant>import java.util.*;</constant>.
+der stÃ¥r <constant>import java.util.*;</constant>.
 </para></listitem>
 <listitem><para>
-Den er angivet som returtype eller argumenttype i en metode eller konstruktør.
+Den er angivet som returtype eller argumenttype i en metode eller konstruktÃ¸r.
 </para></listitem>
 <listitem><para>
-Den anvendes i en implements-, extends- eller throws-sætning, f.eks.
+Den anvendes i en implements-, extends- eller throws-sÃ¦tning, f.eks.
 <constant>public int pop() throws java.util.EmptyStackException</constant>
 </para></listitem>
 </itemizedlist>
 
 <para>
-I eksemplet er det tilfælde tre som gør sig gældende.
+I eksemplet er det tilfÃ¦lde tre som gÃ¸r sig gÃ¦ldende.
 </para>
 
 </sect3>
@@ -852,22 +852,22 @@ CVS. &linuxbogurl;/program/bog/vaerktoej.html
 </indexterm>
 
 <para>
-Kunsten at lave fejlfri programmer er svær at mestre. Kunsten at lave robuste
-programmer er svær at mestre. Kunsten at lave programmer der svarer til kundernes
-forventning er svær at mestre. Netop derfor er det nødvendigt at ethvert
+Kunsten at lave fejlfri programmer er svÃ¦r at mestre. Kunsten at lave robuste
+programmer er svÃ¦r at mestre. Kunsten at lave programmer der svarer til kundernes
+forventning er svÃ¦r at mestre. Netop derfor er det nÃ¸dvendigt at ethvert
 softwareprojekt i et eller andet omfang gennemtestes for fejl og mangler inden
-det sendes ud på markedet.
+det sendes ud pÃ¥ markedet.
 </para>
 
 <para>
-En <emphasis>modultest</emphasis> er en test, der afprøver en afgrænset delmængde kode
-i isolation fra det samlede softwaresystem. Målet er at finde fejl og sandsynliggøre
-at modulet fungerer efter hensigten. Når vi taler Java så er et modul som oftest
-enten en klasse eller en samling af klasser hørende under en fælle pakke.
+En <emphasis>modultest</emphasis> er en test, der afprÃ¸ver en afgrÃ¦nset delmÃ¦ngde kode
+i isolation fra det samlede softwaresystem. MÃ¥let er at finde fejl og sandsynliggÃ¸re
+at modulet fungerer efter hensigten. NÃ¥r vi taler Java sÃ¥ er et modul som oftest
+enten en klasse eller en samling af klasser hÃ¸rende under en fÃ¦lle pakke.
 </para>
 
 <para>
-I denne sektion ser vi på et yderst værdifuldt værktøj til automatiseret modultest,
+I denne sektion ser vi pÃ¥ et yderst vÃ¦rdifuldt vÃ¦rktÃ¸j til automatiseret modultest,
 <emphasis>JUnit</emphasis>.
 </para>
 
@@ -875,16 +875,16 @@ I denne sektion ser vi på et yderst værdifuldt værktøj til automatiseret modulte
 <title>JUnit</title>
 
 <para>
-JUnit er et testframework, der har til formål at lette programmørens arbejde når
+JUnit er et testframework, der har til formÃ¥l at lette programmÃ¸rens arbejde nÃ¥r
 der skal udarbejdes testmetoder. Frameworket er centreret omkring begrebet
-<emphasis>Test Case</emphasis> som repræsenterer en samling af testmetoder for et enkelt modul.
-På dansk kaldes en test case for en <emphasis>testsamling</emphasis>.
+<emphasis>Test Case</emphasis> som reprÃ¦senterer en samling af testmetoder for et enkelt modul.
+PÃ¥ dansk kaldes en test case for en <emphasis>testsamling</emphasis>.
 </para>
 
 <para>
 Du kan ganske gratis hente JUnit fra <ulink url="http://www.junit.org/">http://www.junit.org</ulink>.
-På selvsamme adresse kan du også finde mange gode artikler og eksempler. Gennemgangen i
-denne sektion er kun ment som en hurtig introduktion så det kan varmt anbefales selv at
+PÃ¥ selvsamme adresse kan du ogsÃ¥ finde mange gode artikler og eksempler. Gennemgangen i
+denne sektion er kun ment som en hurtig introduktion sÃ¥ det kan varmt anbefales selv at
 grave efter mere information.
 </para>
 
@@ -893,13 +893,13 @@ grave efter mere information.
 
 <para>
 I <xref linkend="java-dev-env-doc-javadoc"/> blev der defineret en stak,
-<constant>IntStack</constant>, der kan lagre heltal. Nedenstående kode viser
-et eksempel på, hvordan JUnit kan anvendes til at teste denne stak.
+<constant>IntStack</constant>, der kan lagre heltal. NedenstÃ¥ende kode viser
+et eksempel pÃ¥, hvordan JUnit kan anvendes til at teste denne stak.
 </para>
 
 <para>
-For at kunne oversætte og udføre eksemplet så skal jar-filen <constant>junit.jar</constant>
-være med i CLASSPATH.
+For at kunne oversÃ¦tte og udfÃ¸re eksemplet sÃ¥ skal jar-filen <constant>junit.jar</constant>
+vÃ¦re med i CLASSPATH.
 </para>
 
 <screen>
@@ -939,20 +939,20 @@ public class TestIntStack extends TestCase
 </screen>
 
 <para>
-Der er flere ting du skal bide mærke i. For det første skal en testklassen nedarve
+Der er flere ting du skal bide mÃ¦rke i. For det fÃ¸rste skal en testklassen nedarve
 fra <constant>TestCase</constant>-klassen. For det andet skal testmetoderne starte med navnet
-<emphasis>test</emphasis> for at testframeworket kan udføre dem. For det tredje skal
-testmetoderne være deklareret public og ikke tage imod nogen argumenter.
+<emphasis>test</emphasis> for at testframeworket kan udfÃ¸re dem. For det tredje skal
+testmetoderne vÃ¦re deklareret public og ikke tage imod nogen argumenter.
 </para>
 
 <para>
-Metoden <constant>assertTrue(boolean)</constant> bruges til at fortælle
+Metoden <constant>assertTrue(boolean)</constant> bruges til at fortÃ¦lle
 testframeworket, hvorvidt en test skal fejle eller ej. Hvis det boolske udtryk
-evaluerer til falsk så fejler testen.
+evaluerer til falsk sÃ¥ fejler testen.
 </para>
 
 <para>
-Der findes flere forskellige <constant>assertX()</constant>-metoder (læs dokumentationen!).
+Der findes flere forskellige <constant>assertX()</constant>-metoder (lÃ¦s dokumentationen!).
 De mest brugte udover <constant>assertTrue(boolean)</constant> er nok
 </para>
 
@@ -970,11 +970,11 @@ assertNull(java.lang.Object object)
 
 
 <para>
-<constant>fail()</constant>-metoden får altid en test til at fejle.
+<constant>fail()</constant>-metoden fÃ¥r altid en test til at fejle.
 </para>
 
 <para>
-Hvis ovenstående eksempel oversættes og køres med
+Hvis ovenstÃ¥ende eksempel oversÃ¦ttes og kÃ¸res med
 </para>
 
 <programlisting>
@@ -983,7 +983,7 @@ dk.sslug.TestIntStack</userinput>
 </programlisting>
 
 <para>
-så fås 
+sÃ¥ fÃ¥s 
 </para>
 
 <screen>
@@ -1006,8 +1006,8 @@ Tests run: 2,  Failures: 2,  Errors: 0
 </screen>
 
 <para>
-Hvis der smides en runtime exception i testmetoden som ikke fanges så fejler
-testen også. I JUnit-terminologi er fejl forårsaget af <constant>assertX()</constant>-
+Hvis der smides en runtime exception i testmetoden som ikke fanges sÃ¥ fejler
+testen ogsÃ¥. I JUnit-terminologi er fejl forÃ¥rsaget af <constant>assertX()</constant>-
 og <constant>fail()</constant>-metoder <emphasis>failures</emphasis> men runtime exceptions
 der ikke bliver fanget er <emphasis>errors</emphasis>.
 </para>
@@ -1019,7 +1019,7 @@ og se om din implementation indeholder fejl.
 </para>
 
 <para>
-Du kan også bruge en grafisk TestRunner. Hvis du kører nedenstående
+Du kan ogsÃ¥ bruge en grafisk TestRunner. Hvis du kÃ¸rer nedenstÃ¥ende
 </para>
 
 <programlisting>
@@ -1028,7 +1028,7 @@ dk.sslug.TestIntStack</userinput>
 </programlisting>
 
 <para>
-så fås
+sÃ¥ fÃ¥s
 </para>
 
 <figure id="java-dev-env-junit-gui-fig" float="1">
@@ -1039,19 +1039,19 @@ så fås
 </sect3>
 
 <sect3 id="java-dev-env-test-junit-fixture">
-<title>Fælles initialisering for metoder</title>
+<title>FÃ¦lles initialisering for metoder</title>
 
 <para>
-Ofte er man ude for at have to eller flere testmetoder, som skal operere på den samme
-kendte mængde af objekter. I JUnit-terminologi kaldes denne mængde af objekter for et
+Ofte er man ude for at have to eller flere testmetoder, som skal operere pÃ¥ den samme
+kendte mÃ¦ngde af objekter. I JUnit-terminologi kaldes denne mÃ¦ngde af objekter for et
 <emphasis>test fixture</emphasis> og skal betragtes som en slags fast inventar som
-alle testmetoder kan benytte sig af. Ligeledes er det ikke sjældent at to eller flere
-testmetoder skal gøre brug af en fælles ressource, for eksempel en netværksforbindelse
+alle testmetoder kan benytte sig af. Ligeledes er det ikke sjÃ¦ldent at to eller flere
+testmetoder skal gÃ¸re brug af en fÃ¦lles ressource, for eksempel en netvÃ¦rksforbindelse
 eller en databaseforbindelse.
 </para>
 
 <para>
-Nedenstående eksempel viser hvordan dette kan gøres ved at overskrive metoderne
+NedenstÃ¥ende eksempel viser hvordan dette kan gÃ¸res ved at overskrive metoderne
 <constant>setUp()</constant> og <constant>tearDown()</constant> og benytte sig af
 klassevariable.
 </para>
@@ -1090,14 +1090,14 @@ public class TestIntStack extends TestCase
 </screen>
 
 <para>
-Hver gang en testmetode skal udføres så tages <constant>setUp()</constant>
+Hver gang en testmetode skal udfÃ¸res sÃ¥ tages <constant>setUp()</constant>
 og <constant>tearDown()</constant> i brug. <constant>setUp()</constant> bliver
-kaldt umiddelbart før den enkelte testmetode, mens <constant>tearDown()</constant>
+kaldt umiddelbart fÃ¸r den enkelte testmetode, mens <constant>tearDown()</constant>
 bliver kaldt umiddelbart efter.
 </para>
 
 <para>
-Bemærk at begge metoder er deklareret som protected og sat til at kunne kaste en exception.
+BemÃ¦rk at begge metoder er deklareret som protected og sat til at kunne kaste en exception.
 </para>
 
 </sect3>

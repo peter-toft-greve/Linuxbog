@@ -1,38 +1,38 @@
 <chapter id="kontorbruger-praesentation">
-<title>Præsentationer med OpenOffice.org</title>
+<title>PrÃ¦sentationer med OpenOffice.org</title>
 
 <para>
-Det er ret nemt at lave præsentationer i OpenOffice.org. Vælg i menuen
+Det er ret nemt at lave prÃ¦sentationer i OpenOffice.org. VÃ¦lg i menuen
 "Filer" punktet "Ny(t)" - "Presentation".  
 
-Det er her et glimrende værktøj, og man
-kan endda læse og skrive Microsoft PowerPoint-filer med OpenOffice.org.
+Det er her et glimrende vÃ¦rktÃ¸j, og man
+kan endda lÃ¦se og skrive Microsoft PowerPoint-filer med OpenOffice.org.
 </para>
 
 <sect1 id="Start-af-en-praesentation">
-<title>Start af en præsentation</title>
+<title>Start af en prÃ¦sentation</title>
 
 <para>
-Du får nu en menu op, hvor du kan vælge at starte en præsentation på
-ny (Tom præsentation), 
-ud fra en skabelon (som ikke kan anvendes i indeværende udgave, 
+Du fÃ¥r nu en menu op, hvor du kan vÃ¦lge at starte en prÃ¦sentation pÃ¥
+ny (Tom prÃ¦sentation), 
+ud fra en skabelon (som ikke kan anvendes i indevÃ¦rende udgave, 
 medmindre du selv har lagt en skabelon ind) og den sidste 
-mulighed er at starte en præsentation ud fra en allerede eksisterende
-præsentation. Vi vælger den første mulighed. 
+mulighed er at starte en prÃ¦sentation ud fra en allerede eksisterende
+prÃ¦sentation. Vi vÃ¦lger den fÃ¸rste mulighed. 
 </para>
 
 <figure id="OOoImpress1-fig" float="1">
-<title>Start på en præsentation</title>
+<title>Start pÃ¥ en prÃ¦sentation</title>
 <graphic fileref="OOoImpress1.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
-Derefter skulle vi kunne vælge mellem en række typer af design - 
+Derefter skulle vi kunne vÃ¦lge mellem en rÃ¦kke typer af design - 
 men der er endnu ikke kommet nogen til OpenOffice.org endnu. 
 I samme menu
-er der mulighed for at vælge mellem en præsentation til overhead, 
-papir-format, skærm eller dias. Det er reelt forholdet mellem bredde og højde der 
-ændres. Tryk på "Næste" når du er tilfreds.
+er der mulighed for at vÃ¦lge mellem en prÃ¦sentation til overhead, 
+papir-format, skÃ¦rm eller dias. Det er reelt forholdet mellem bredde og hÃ¸jde der 
+Ã¦ndres. Tryk pÃ¥ "NÃ¦ste" nÃ¥r du er tilfreds.
 </para>
 
 <figure id="OOoImpress2-fig" float="1">
@@ -41,11 +41,11 @@ papir-format, skærm eller dias. Det er reelt forholdet mellem bredde og højde de
 </figure>
 
 <para>
-I næste menu kan du vælge om der skal være nogen effekt når man
-skifter mellem to sider. Man kan få en glidende overgang fra en
-vilkårlig kant. Har du en langsom computer, så kan det tilrådes at
-fravælge de mest smarte ting. Det koster meget processor-kraft. Tryk
-"Udfør" når du er færdig.
+I nÃ¦ste menu kan du vÃ¦lge om der skal vÃ¦re nogen effekt nÃ¥r man
+skifter mellem to sider. Man kan fÃ¥ en glidende overgang fra en
+vilkÃ¥rlig kant. Har du en langsom computer, sÃ¥ kan det tilrÃ¥des at
+fravÃ¦lge de mest smarte ting. Det koster meget processor-kraft. Tryk
+"UdfÃ¸r" nÃ¥r du er fÃ¦rdig.
 </para>
 
 
@@ -55,8 +55,8 @@ fravælge de mest smarte ting. Det koster meget processor-kraft. Tryk
 </figure>
 
 <para> 
-I næste menu ser du hvad der skal vælges for hver side der skal
-udarbejdes. Man kan vælge mellem (fra øverste venstre hjørne og mod højre,
+I nÃ¦ste menu ser du hvad der skal vÃ¦lges for hver side der skal
+udarbejdes. Man kan vÃ¦lge mellem (fra Ã¸verste venstre hjÃ¸rne og mod hÃ¸jre,
 derefter nedad) en blank side (uden tekst), en simpel overskrift, en
 overskrift og en tekstboks osv. 
 </para>
@@ -69,89 +69,89 @@ overskrift og en tekstboks osv.
 
 
 <para> 
-Bemærk den midterste mulighed i anden række på den følgende
+BemÃ¦rk den midterste mulighed i anden rÃ¦kke pÃ¥ den fÃ¸lgende
 figur. Denne "punkt-mulighed" er meget anvendt til
-"PowerPoint"-præsentationer.  Dette gøres nu.  Bemærk at du kan vælge
-navne til de enkelte sider i toppen af menuen. Vælg til sidst OK.  Nu
-kommer den første præsentationsside frem med to rammer. Der er en
+"PowerPoint"-prÃ¦sentationer.  Dette gÃ¸res nu.  BemÃ¦rk at du kan vÃ¦lge
+navne til de enkelte sider i toppen af menuen. VÃ¦lg til sidst OK.  Nu
+kommer den fÃ¸rste prÃ¦sentationsside frem med to rammer. Der er en
 vejledningstekst, som viser hvor man skal trykke for at taste tekst
-ind. Teksten forsvinder, når du begynder at skrive din tekst ind.  
+ind. Teksten forsvinder, nÃ¥r du begynder at skrive din tekst ind.  
 </para>
 
 
 <figure id="OOoImpress5-fig" float="1">
-<title>Så er det bare at skrive teksten til siden</title>
+<title>SÃ¥ er det bare at skrive teksten til siden</title>
 <graphic fileref="OOoImpress5.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
-På det følgende billede er flere menu-dele rammet ind med rød. I
-venstre side er øverst en pil, som anvendes til igen at få en pegepil
-så man kan vælge elementer på siden - hvis man f.eks. er i gang med at
+PÃ¥ det fÃ¸lgende billede er flere menu-dele rammet ind med rÃ¸d. I
+venstre side er Ã¸verst en pil, som anvendes til igen at fÃ¥ en pegepil
+sÃ¥ man kan vÃ¦lge elementer pÃ¥ siden - hvis man f.eks. er i gang med at
 tegne og skal tilbage er denne vigtig at kende. I venstre-menuen
 findes mulighed for at lave tekstbokse (det lille ikon med T'et), geometriske
-figurer, kurver, linjer og forbindelseslinjer. Bemærk at man kan
-trykke på hver at de små ikoner og holde musen nede mens den bevæges i
-retning af den lille trekantede pil (mod højre) - da vil flere
+figurer, kurver, linjer og forbindelseslinjer. BemÃ¦rk at man kan
+trykke pÃ¥ hver at de smÃ¥ ikoner og holde musen nede mens den bevÃ¦ges i
+retning af den lille trekantede pil (mod hÃ¸jre) - da vil flere
 muligheder komme frem.
 </para>
 
 <para>
-I topmenuen rammet ind med rødt kan man fra venstre rette linjetype
+I topmenuen rammet ind med rÃ¸dt kan man fra venstre rette linjetype
 (fra fast til stiplet osv.), linjetykkelse, linjefarve,
-udfyldningsfarve og type. I højre menu (med rødt) finder man knapper,
-der vælger mellem at se nuværende side, den rå tekst fra siderne,
-overblik over alle præsentationssiderne (smart hvis man skal flytte
-rundt på siderne), siden med noter (man kan også tilføje noter til
-eget brug for hver præsentationsside).
+udfyldningsfarve og type. I hÃ¸jre menu (med rÃ¸dt) finder man knapper,
+der vÃ¦lger mellem at se nuvÃ¦rende side, den rÃ¥ tekst fra siderne,
+overblik over alle prÃ¦sentationssiderne (smart hvis man skal flytte
+rundt pÃ¥ siderne), siden med noter (man kan ogsÃ¥ tilfÃ¸je noter til
+eget brug for hver prÃ¦sentationsside).
 </para>
 
 
 <figure id="OOoImpress6-fig" float="1">
-<title>I venste og højre side, samt i top er der vigtige menuer.</title>
+<title>I venste og hÃ¸jre side, samt i top er der vigtige menuer.</title>
 <graphic fileref="OOoImpress6.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
-Når man har skrevet overskrift og et par linjer tekst kan man 
-indsætte den næste præsentationsside ved at vælge "Insert"->"Slide"
+NÃ¥r man har skrevet overskrift og et par linjer tekst kan man 
+indsÃ¦tte den nÃ¦ste prÃ¦sentationsside ved at vÃ¦lge "Insert"->"Slide"
 </para>
 
 <figure id="OOoImpress7-fig" float="1">
-<title>Indsæt en ekstra side i præsentationen.</title>
+<title>IndsÃ¦t en ekstra side i prÃ¦sentationen.</title>
 <graphic fileref="OOoImpress7.&magic;"  scale="50"></graphic>
 </figure>
 </sect1>
 
 <sect1 id="grafik-i-praesentation">
-<title>Indsætte grafik i præsentationen</title>
+<title>IndsÃ¦tte grafik i prÃ¦sentationen</title>
 
 <para>
-Vil man indsætte billeder er det også muligt. Tryk
-"Indsæt"->"Grafik..."->"Fra fil..". Vælg nu grafikfilen, der ønskes indsat. 
-Bemærk
+Vil man indsÃ¦tte billeder er det ogsÃ¥ muligt. Tryk
+"IndsÃ¦t"->"Grafik..."->"Fra fil..". VÃ¦lg nu grafikfilen, der Ã¸nskes indsat. 
+BemÃ¦rk
 ikonerne i toppen af vinduet, som anvendes til at flytte til andre
-kataloger. Højre knap kan gå til stedet, du har dine dokumenter, og den anden
-knap fra højre går et niveau op.
+kataloger. HÃ¸jre knap kan gÃ¥ til stedet, du har dine dokumenter, og den anden
+knap fra hÃ¸jre gÃ¥r et niveau op.
 </para>
 
 <figure id="OOoImpress8-fig" float="1">
-<title>Indsæt et billede fra en fil.</title>
+<title>IndsÃ¦t et billede fra en fil.</title>
 <graphic fileref="OOoImpress8.&magic;"  scale="50"></graphic>
 </figure>
 
 
 <figure id="OOoImpress9-fig" float="1">
-<title>Vælg i denne næste menu hvilken fil det skal indsættes.</title>
+<title>VÃ¦lg i denne nÃ¦ste menu hvilken fil det skal indsÃ¦ttes.</title>
 <graphic fileref="OOoImpress9.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
-Bemærk, at hvert billede der er blevet indsat på præsentationssiden
-får otte grønne markeringer (fire i hjørnerne og fire midt på hver 
-side) som anvendes til at ændre størrelsen på 
-billedet. Tryk på "Shift" når du ændrer størrelse hvis forhold 
-mellem højre og bredde skal bibeholdes.
+BemÃ¦rk, at hvert billede der er blevet indsat pÃ¥ prÃ¦sentationssiden
+fÃ¥r otte grÃ¸nne markeringer (fire i hjÃ¸rnerne og fire midt pÃ¥ hver 
+side) som anvendes til at Ã¦ndre stÃ¸rrelsen pÃ¥ 
+billedet. Tryk pÃ¥ "Shift" nÃ¥r du Ã¦ndrer stÃ¸rrelse hvis forhold 
+mellem hÃ¸jre og bredde skal bibeholdes.
 </para>
 
 
@@ -162,22 +162,22 @@ mellem højre og bredde skal bibeholdes.
 </sect1>
 
 <sect1 id="overblik-over-praesentation">
-<title>Få overblik over præsentationen</title>
+<title>FÃ¥ overblik over prÃ¦sentationen</title>
 
 <para>
-Når man har lavet alle præsentationssiderne skal man ofte lige have et
-overblik over præsentationen. På det følgende billede er der trykket på
-den lille knap i højre side med fire firkanter (markeret med rødt). Ved at
-trykke på en præsentationsside og holde venstre musetast nede
-kan man nu flytte siden til at andet sted i præsentationen. I den anden 
-markerede menu ovenfor kan du vælge hvor mange sider man maksimalt skal se 
-vist i dette overblik. Flere sider medfører dårligere opløsning, men bedre
+NÃ¥r man har lavet alle prÃ¦sentationssiderne skal man ofte lige have et
+overblik over prÃ¦sentationen. PÃ¥ det fÃ¸lgende billede er der trykket pÃ¥
+den lille knap i hÃ¸jre side med fire firkanter (markeret med rÃ¸dt). Ved at
+trykke pÃ¥ en prÃ¦sentationsside og holde venstre musetast nede
+kan man nu flytte siden til at andet sted i prÃ¦sentationen. I den anden 
+markerede menu ovenfor kan du vÃ¦lge hvor mange sider man maksimalt skal se 
+vist i dette overblik. Flere sider medfÃ¸rer dÃ¥rligere oplÃ¸sning, men bedre
 overblik.
 </para>
 
 
 <figure id="OOoImpress11-fig" float="1">
-<title>Få overblikket over din præsentation</title>
+<title>FÃ¥ overblikket over din prÃ¦sentation</title>
 <graphic fileref="OOoImpress11.&magic;"  scale="50"></graphic>
 </figure>
  
@@ -186,61 +186,61 @@ overblik.
 </sect1>
 
 <sect1 id="faelles-for-praesentation">
-<title>Fælles ændring af baggrund, skrifttyper og farver</title>
+<title>FÃ¦lles Ã¦ndring af baggrund, skrifttyper og farver</title>
 
 <para>
-På det næste billede er markeret en menuknap nede til venstre. 
-Den knap giver dig mulighed for at ændre baggrundsgrafik 
-for hele præsentationen eller tekst-farverne i præsentationen.
-Når du er tilfreds så returner ved at trykke på knappen lige til venstre
+PÃ¥ det nÃ¦ste billede er markeret en menuknap nede til venstre. 
+Den knap giver dig mulighed for at Ã¦ndre baggrundsgrafik 
+for hele prÃ¦sentationen eller tekst-farverne i prÃ¦sentationen.
+NÃ¥r du er tilfreds sÃ¥ returner ved at trykke pÃ¥ knappen lige til venstre
 for den markerede knap (den med de to forskudte ark). 
 </para>
 
 <para>
-Vil du ændre skrift-farver på overskriften for alle siderne i præsentationen,
-så kan dette gøres side for side, men det er mere elegant at gøre det her
-ved blot at markere overskriften, vælge skrift-farve i menuen over denne 
-side, så det ændres i hele præsentationen.
+Vil du Ã¦ndre skrift-farver pÃ¥ overskriften for alle siderne i prÃ¦sentationen,
+sÃ¥ kan dette gÃ¸res side for side, men det er mere elegant at gÃ¸re det her
+ved blot at markere overskriften, vÃ¦lge skrift-farve i menuen over denne 
+side, sÃ¥ det Ã¦ndres i hele prÃ¦sentationen.
 </para>
 
 <figure id="OOoImpress12-fig" float="1">
-<title>Her kan baggrundbillede og farver for siderne vælges.</title>
+<title>Her kan baggrundbillede og farver for siderne vÃ¦lges.</title>
 <graphic fileref="OOoImpress12.&magic;"  scale="50"></graphic>
 </figure>
 
 <para>
 En ting man ofte kan blive meget irriteret over, er at OpenOffice.org selv
-detekterer en URL og sætter den i en anden farve end resten af teksten
-(også endda understregning). Dette kan man undgå ved at vælge menuen
+detekterer en URL og sÃ¦tter den i en anden farve end resten af teksten
+(ogsÃ¥ endda understregning). Dette kan man undgÃ¥ ved at vÃ¦lge menuen
 "Funktioner"->"Autokorrektur" (eng.
-"Tools"->"Autocorrect") - der kommer nu et vindue op hvor man vælger
+"Tools"->"Autocorrect") - der kommer nu et vindue op hvor man vÃ¦lger
 fanebladet "Indstilling" (eng. "Options") og her kan man fjerne krydset ud
-for "identificer URL". Dette er vist på de næste figurer
+for "identificer URL". Dette er vist pÃ¥ de nÃ¦ste figurer
 </para>
 
 <figure id="OOoImpress13-fig" float="1">
-<title>Ændring så en URL ikke identificeres som anden type</title>
+<title>Ã†ndring sÃ¥ en URL ikke identificeres som anden type</title>
 <graphic fileref="OOoImpress13.&magic;"  scale="50"></graphic>
 </figure>
 
 
 </sect1>
 <sect1 id="under-praesentationen">
-<title>Kør præsentationen</title>
+<title>KÃ¸r prÃ¦sentationen</title>
 
 <para>
-I menupunktet "Præsentation"->"Præsentation" (eng. "Diasshow"->"Diasshow") 
-startes præsentationen eller også med CTRL+F2. Man kan bladre
-frem med venstre muse-tast, mellemrum, retur, højre-pil eller "Page
-Down"-knappen. Vil man bladre tilbage med højre musetast, venstre-pil 
+I menupunktet "PrÃ¦sentation"->"PrÃ¦sentation" (eng. "Diasshow"->"Diasshow") 
+startes prÃ¦sentationen eller ogsÃ¥ med CTRL+F2. Man kan bladre
+frem med venstre muse-tast, mellemrum, retur, hÃ¸jre-pil eller "Page
+Down"-knappen. Vil man bladre tilbage med hÃ¸jre musetast, venstre-pil 
 eller "Page Up"-knappen. 
 </para>
 
 <para>
-Hvis man under præsentationen har brug for at hoppe til en helt anden
-side, så kan man trykke F5. Dette bringer en menu op under
-præsentationen, hvor man kan vælge i en sideoversigt. Fjern denne menu
-igen ved at trykke på F5. Man kan dog også hoppe direkte til en bestemt 
+Hvis man under prÃ¦sentationen har brug for at hoppe til en helt anden
+side, sÃ¥ kan man trykke F5. Dette bringer en menu op under
+prÃ¦sentationen, hvor man kan vÃ¦lge i en sideoversigt. Fjern denne menu
+igen ved at trykke pÃ¥ F5. Man kan dog ogsÃ¥ hoppe direkte til en bestemt 
 side ved at indtaste sidenummeret efterfulgt af retur.
 </para>
 
@@ -249,8 +249,8 @@ side ved at indtaste sidenummeret efterfulgt af retur.
 <sect1 id="Videre-med-openoffice-impress">
 <title>Videre med Impress (OpenOffice.org)</title>
 <para>
-Hvis du vil vide mere om præsentationsprogrammet i StarOffice/OpenOffice.org,
-så er der en del inspiration at hente i "StarOffice for alle" af Helle
+Hvis du vil vide mere om prÃ¦sentationsprogrammet i StarOffice/OpenOffice.org,
+sÃ¥ er der en del inspiration at hente i "StarOffice for alle" af Helle
 Frederiksen, forlaget IDG.
 
 <!-- cHBs Henvisning ind til OpenOffice.org-bog af en jyde -->

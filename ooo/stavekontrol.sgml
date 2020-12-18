@@ -6,47 +6,47 @@
   <title>Stavekontrol</title>
 
 <para>Stavekontrollen startes med <emphasis>Funktioner/Stavekontrol/Kontroller</emphasis>
-    (tastatur: <emphasis>F7</emphasis>). Du kan også bruge knappen
+    (tastatur: <emphasis>F7</emphasis>). Du kan ogsÃ¥ bruge knappen
 <figure float="1" id="fig-ooo-vaerktoejsliniestavekontrol">
-<title>Stavekontrol - værktøjslinie</title>
+<title>Stavekontrol - vÃ¦rktÃ¸jslinie</title>
 <graphic fileref="vaerktoejslinjestavekontrol.&magic;" scale="60"></graphic>
 </figure>
- i værktøjslinjen.</para>
+ i vÃ¦rktÃ¸jslinjen.</para>
 
-<para>Stavekontrollen starter ved markøren og stopper ved alle ord, som ikke
-    findes i ordbogen. Det betyder selvfølgelig ikke nødvendigvis, at ordet
+<para>Stavekontrollen starter ved markÃ¸ren og stopper ved alle ord, som ikke
+    findes i ordbogen. Det betyder selvfÃ¸lgelig ikke nÃ¸dvendigvis, at ordet
     er stavet forkert!</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Vælg knappen <emphasis>Ignorer</emphasis> for at lade ordet stå som det er.</para>
+<para>VÃ¦lg knappen <emphasis>Ignorer</emphasis> for at lade ordet stÃ¥ som det er.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Vælg knappen <emphasis>Erstat</emphasis> for at erstatte med et af programmets
-        forslag (vælges i listen).</para>
+<para>VÃ¦lg knappen <emphasis>Erstat</emphasis> for at erstatte med et af programmets
+        forslag (vÃ¦lges i listen).</para>
 
 </listitem>
 
   <listitem>
 
-<para>Vælg knappen <emphasis>Luk</emphasis> for at afslutte stavekontrollen.</para>
+<para>VÃ¦lg knappen <emphasis>Luk</emphasis> for at afslutte stavekontrollen.</para>
 
 </listitem>
 </itemizedlist>
 
-<para>Et alternativ er at få understreget forkert stavede ord med en rød
-    bølgelinje ved at vælge <emphasis>Funktioner/Stavekontrol/Automatisk
-    stavekontrol</emphasis>. Du kan også bruge knappen
+<para>Et alternativ er at fÃ¥ understreget forkert stavede ord med en rÃ¸d
+    bÃ¸lgelinje ved at vÃ¦lge <emphasis>Funktioner/Stavekontrol/Automatisk
+    stavekontrol</emphasis>. Du kan ogsÃ¥ bruge knappen
 <figure float="1" id="fig-ooo-vaerktoejslinjestavekontrol-loebende">
-<title>Løbende stavekontrol</title>
+<title>LÃ¸bende stavekontrol</title>
 <graphic fileref="vaerktoejslinjestavekontrol-loebende.&magic;" scale="60"></graphic>
 </figure>
- i værktøjslinjen. Du kan så
-    bruge funktionerne fra stavekontrollen ved at <emphasis>højreklikke</emphasis> på
+ i vÃ¦rktÃ¸jslinjen. Du kan sÃ¥
+    bruge funktionerne fra stavekontrollen ved at <emphasis>hÃ¸jreklikke</emphasis> pÃ¥
     ordet.</para>
 
 </sect1>    <!--   18.2. Stavekontrol -->

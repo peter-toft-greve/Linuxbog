@@ -26,19 +26,19 @@
 
  <copyright>
    <year>2002</year>
-   <holder>Mads Bondo Dydensborg under "ÅDL" licensen</holder>
+   <holder>Mads Bondo Dydensborg under "Ã…DL" licensen</holder>
  </copyright>
 
  <abstract>
   <para>
-  Denne (meget lille) bog beskriver hvordan man kan få sit Linux system
+  Denne (meget lille) bog beskriver hvordan man kan fÃ¥ sit Linux system
   til at bruge Kommunedata A/S (KMD) som Certificate Authority (CA).
   </para>
   <para>
-  Dokumentet henvender sig både til brugere, der gerne vil have at
+  Dokumentet henvender sig bÃ¥de til brugere, der gerne vil have at
   deres system kan anvende KMD som CA, samt til udviklere, der vil
-  udvikle frontends til processen. Bemærk dog at denne version er
-  meget tidlig, og primært indeholder information for udviklere.
+  udvikle frontends til processen. BemÃ¦rk dog at denne version er
+  meget tidlig, og primÃ¦rt indeholder information for udviklere.
   </para>
   <para>
    Bidrag og rettelser modtages meget gerne.
@@ -46,7 +46,7 @@
  </abstract>
 </bookinfo>
 
-<!-- Følgende linje skaber automatisk en indholdsfortegnelse -->
+<!-- FÃ¸lgende linje skaber automatisk en indholdsfortegnelse -->
 <toc id="toc"></toc>
 &baggrund;
 &software;

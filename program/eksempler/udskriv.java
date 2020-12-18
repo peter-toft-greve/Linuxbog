@@ -1,7 +1,7 @@
 // af Peter Stubbe <stubbe@bitnisse.dk>
 // $Id$
 
-// Oversættelse:
+// OversÃ¦ttelse:
 //  javac udskriv.java
 // Afvikling:
 //  java udskriv fil+
@@ -27,7 +27,7 @@ class udskriv {
 		r=new FileReader(navne[argnr]);
 	    }
 	    catch(IOException e){
-		System.out.println("Kan ikke åbne filen "+navne[argnr]+"!");
+		System.out.println("Kan ikke Ã¥bne filen "+navne[argnr]+"!");
 		return;
 	    }
 	    ls=new LineNumberReader(r);
@@ -35,7 +35,7 @@ class udskriv {
 		lin=ls.readLine();
 	    }
 	    catch(IOException e){
-		System.out.println("Kan ikke læse!");
+		System.out.println("Kan ikke lÃ¦se!");
 		return;
 	    }
 	    while(null!=lin){
@@ -44,7 +44,7 @@ class udskriv {
 		    lin=ls.readLine();
 		}
 		catch(IOException e){
-		    System.out.println("Kan ikke læse!");
+		    System.out.println("Kan ikke lÃ¦se!");
 		    return;
 		}
 	    }
@@ -69,7 +69,7 @@ class udskriv {
 		ind=r.readLine();
 	    }
 	    catch(IOException e){
-		System.out.println("Kan ikke læse stdin!");
+		System.out.println("Kan ikke lÃ¦se stdin!");
 	    }
 	    ind=ind.toUpperCase();
 	}

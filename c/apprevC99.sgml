@@ -9,59 +9,59 @@
 <indexterm><primary>C99 standard</primary></indexterm>
 
 <para id="para-C99-url">
-Den følgende 
+Den fÃ¸lgende 
 <ulink url="http://www.open-std.org/jtc1/sc22/wg14">
-liste over nyheder i ANSI C </ulink> omfatter både ændringer i
+liste over nyheder i ANSI C </ulink> omfatter bÃ¥de Ã¦ndringer i
 selve C-grammatikken (syntaksregler, regler for typekonvertering,
-nye datatyper), af præprocessing, af krav til oversætter og
-krav til biblioteker (lib-filer). Desværre er jeg i skrivende
+nye datatyper), af prÃ¦processing, af krav til oversÃ¦tter og
+krav til biblioteker (lib-filer). DesvÃ¦rre er jeg i skrivende
 stund ikke i stand til at kommentere alle punkter. 
 </para>
 
 <para>
-Hvad er for eksempel de nøjere regler for Variable Length Arrays,
-VLAs?  VLA er noget, som skulle være nyttigt i forbindelse med de
+Hvad er for eksempel de nÃ¸jere regler for Variable Length Arrays,
+VLAs?  VLA er noget, som skulle vÃ¦re nyttigt i forbindelse med de
 massive beregningsopgaver, som er en vigtig computeranvendelse i
 dag.
 </para>
 
 <para>
-Der er dog mange ting, som kan læses ud af n897.pdf filen omtalt
-nedenfor. "Pointere med begrænsninger" er en pointer der peger på
-et objekt (som pointere jo ofte gør). Men alle referencer til
-dette objekt <emphasis> skal </emphasis> nu gå igennem denne
-pointer. Derved kan man opnå nogle optimeringer, som ellers ikke
-er mulige.  Oversætteren kan stole på, at denne pointer ikke
+Der er dog mange ting, som kan lÃ¦ses ud af n897.pdf filen omtalt
+nedenfor. "Pointere med begrÃ¦nsninger" er en pointer der peger pÃ¥
+et objekt (som pointere jo ofte gÃ¸r). Men alle referencer til
+dette objekt <emphasis> skal </emphasis> nu gÃ¥ igennem denne
+pointer. Derved kan man opnÃ¥ nogle optimeringer, som ellers ikke
+er mulige.  OversÃ¦tteren kan stole pÃ¥, at denne pointer ikke
 bliver kopieret eller "aliaset" til en eller anden variabel.
 </para>
 
 <para>
-Man kan købe selve ANSI C 1999 standarden i Adobe-PDF format fra
+Man kan kÃ¸be selve ANSI C 1999 standarden i Adobe-PDF format fra
 <ulink url="http://www.ansi.org"> ANSI Standard Store</ulink>.
-Næsten lige så interessant (måske endda mere interessant) er
-tankerne bag standarden. Dem kan man finde i dokumentet n897.pdf på
+NÃ¦sten lige sÃ¥ interessant (mÃ¥ske endda mere interessant) er
+tankerne bag standarden. Dem kan man finde i dokumentet n897.pdf pÃ¥
 <ulink url="http://www.open-std.org/jtc1/sc22/wg14">
-http://www.open-std.org/jtc1/sc22/wg14"; teksten på
+http://www.open-std.org/jtc1/sc22/wg14"; teksten pÃ¥
 linket er N897, draft rationale available</ulink>.
 </para>
 
 <para>
-Charteret for revisionsgruppen ligger også at hente på
-ovenstående adresse. Det har (selvfølgelig) været en vigtig del
-af charteret, at C sproget skal være så kompatibelt med C++ som
+Charteret for revisionsgruppen ligger ogsÃ¥ at hente pÃ¥
+ovenstÃ¥ende adresse. Det har (selvfÃ¸lgelig) vÃ¦ret en vigtig del
+af charteret, at C sproget skal vÃ¦re sÃ¥ kompatibelt med C++ som
 muligt.
 </para>
 
 <para>
-Der er sikkert nogle, som sammen med mig vil begræde, at man ikke
-blot kan nævne en funktion uden at skrive en prototype for at
+Der er sikkert nogle, som sammen med mig vil begrÃ¦de, at man ikke
+blot kan nÃ¦vne en funktion uden at skrive en prototype for at
 informere compileren om return type og parametertyper. Men det er
-nu ikke så slemt endda; der vil i mange år endnu være en switch
+nu ikke sÃ¥ slemt endda; der vil i mange Ã¥r endnu vÃ¦re en switch
 som tillader ANSI-89 reglerne.
 </para>
 
 <para>
-De vigtigste ændringer er:
+De vigtigste Ã¦ndringer er:
 </para>
 <itemizedlist mark="bullet">
 
@@ -69,29 +69,29 @@ De vigtigste ændringer er:
 <listitem>
 <indexterm><primary>implicit integer regel</primary></indexterm>
 <para>
-Funktioner <emphasis> skal </emphasis> erklæres med prototype,
+Funktioner <emphasis> skal </emphasis> erklÃ¦res med prototype,
 inden de anvendes. En ukendt funktion antages ikke at have int
 som return type.
 </para></listitem>
 
 <listitem><para>
 Implicit integer er ligeledes afskaffet. Tidligere var det
-tilladt at skrive yxi = 1 øverst i en blok, hvis man ville
-erklære og initialisere en integer. Det må man ikke mere. En
-variabel skal erklæres med angivelse af type. Sammenhold dette
-med, at det nu skal være tilladt at erklære en variabel der, hvor
+tilladt at skrive yxi = 1 Ã¸verst i en blok, hvis man ville
+erklÃ¦re og initialisere en integer. Det mÃ¥ man ikke mere. En
+variabel skal erklÃ¦res med angivelse af type. Sammenhold dette
+med, at det nu skal vÃ¦re tilladt at erklÃ¦re en variabel der, hvor
 man har brug for den, ligesom i C++. 
 </para></listitem>
 
 <listitem><para>
-Inline funktioner skal supporteres af oversætteren (det kan GNU-C
+Inline funktioner skal supporteres af oversÃ¦tteren (det kan GNU-C
 allerede).
 </para></listitem>
 
 <listitem><para>
-Så vidt jeg kan forstå vil der også være begrænset support af
-typetjek i præprocessor aritmetik. Det skal også kunne
-specificeres, om præprocessor aritmetik er signed eller unsigned.
+SÃ¥ vidt jeg kan forstÃ¥ vil der ogsÃ¥ vÃ¦re begrÃ¦nset support af
+typetjek i prÃ¦processor aritmetik. Det skal ogsÃ¥ kunne
+specificeres, om prÃ¦processor aritmetik er signed eller unsigned.
 </para></listitem>
 
 <listitem><para>
@@ -105,7 +105,7 @@ disse punkter.
 </para>
 
 <para>
-Listen er hentet via http://www.ansi.org. Også her
+Listen er hentet via http://www.ansi.org. OgsÃ¥ her
 http://www.dkuug.dk/JTC1/SC22/WG14 kan man finde oplysninger.
 Men links har det med at blive gamle. Brug eventuelt
 www.google.com til at finde nye links til ANSI-C standard.
@@ -113,11 +113,11 @@ www.google.com til at finde nye links til ANSI-C standard.
 </sect1>
 
 <sect1 id="c-tilfaeldig-liste">
-<title>Liste i tilfældig rækkefølge</title>
+<title>Liste i tilfÃ¦ldig rÃ¦kkefÃ¸lge</title>
 
 <para>
-Ok, jeg har tilladt mig at gruppere emnerne på en lidt anden
-måde end 
+Ok, jeg har tilladt mig at gruppere emnerne pÃ¥ en lidt anden
+mÃ¥de end 
 <ulink
 url="http://www.open-std.org/jtc1/sc22/wg14/www/newinc9x.htm">
 det originale paper. </ulink>
@@ -125,10 +125,10 @@ det originale paper. </ulink>
 
 <itemizedlist mark="bullet"> 
 <listitem><para>
-pointere med begrænsninger
+pointere med begrÃ¦nsninger
 </para></listitem>
 <listitem><para>
-variabel længde arrays
+variabel lÃ¦ngde arrays
 </para></listitem>
 <listitem><para>
 fleksible array medlemmer
@@ -137,7 +137,7 @@ fleksible array medlemmer
 udvidede heltals typer og &lt;inttypes.h> og nu &lt;stdint.h>
 </para></listitem>
 <listitem><para>
-afskaffelse af regel om implicitte funktions erklæringer.
+afskaffelse af regel om implicitte funktions erklÃ¦ringer.
 </para></listitem>
 <listitem><para>
 afskaffelse af implicit integer reglen
@@ -146,19 +146,19 @@ afskaffelse af implicit integer reglen
 long long type og library funktioner for denne
 </para></listitem>
 <listitem><para>
-forøgelse af grænser for oversættelse
+forÃ¸gelse af grÃ¦nser for oversÃ¦ttelse
 </para></listitem>
 <listitem><para>
-længere variabelnavne
+lÃ¦ngere variabelnavne
 </para></listitem>
 <listitem><para>
-pålidelig integer division
+pÃ¥lidelig integer division
 </para></listitem>
 <listitem><para>
-universelle navne til det anvendte tegnsæt
+universelle navne til det anvendte tegnsÃ¦t
 </para></listitem>
 <listitem><para>
-binære floating point literals og printf/scanf specifikation af konvertering
+binÃ¦re floating point literals og printf/scanf specifikation af konvertering
 </para></listitem>
 <listitem><para>
 sammensatte stringkonstanter
@@ -170,20 +170,20 @@ designated initializers
 // slash-slash kommentarer
 </para></listitem>
 <listitem><para>
-blanding af erklæringer og kode (erklæring af variable, hvor man
+blanding af erklÃ¦ringer og kode (erklÃ¦ring af variable, hvor man
 har brug for dem)
 </para></listitem>
 <listitem><para>
 heltal (integer) konstant type - regler
 </para></listitem>
 <listitem><para>
-ændringer af type konvertering (integer promotion)
+Ã¦ndringer af type konvertering (integer promotion)
 </para></listitem>
 <listitem><para>
-præprocessor aritmetik kan gøres i signed/unsigned integers.
+prÃ¦processor aritmetik kan gÃ¸res i signed/unsigned integers.
 </para></listitem>
 <listitem><para>
-support af complex og imaginære tal (header fil &lt;complex.h>)
+support af complex og imaginÃ¦re tal (header fil &lt;complex.h>)
 </para></listitem>
 <listitem><para>
 type generiske matematik macroer &lt;tgmath.h>
@@ -192,10 +192,10 @@ type generiske matematik macroer &lt;tgmath.h>
 vararg makro'er
 </para></listitem>
 <listitem><para>
-tilføjelse af flere matematik library funktioner (&lt;math.h>)
+tilfÃ¸jelse af flere matematik library funktioner (&lt;math.h>)
 </para></listitem>
 <listitem><para>
-decimalbrøk miljø tilgang (for overflow? &lt;fenv.h>)
+decimalbrÃ¸k miljÃ¸ tilgang (for overflow? &lt;fenv.h>)
 </para></listitem>
 <listitem><para>
 IEC 559 (IEEE aritmetik) support
@@ -204,7 +204,7 @@ IEC 559 (IEEE aritmetik) support
 udvidet time structure (struct tmx) og library funktioner
 </para></listitem>
 <listitem><para>
-efterstillet komma tilladt i enum erklæringer
+efterstillet komma tilladt i enum erklÃ¦ringer
 </para></listitem>
 <listitem><para>
 %lf konverterings specifikation er tilladt i printf
@@ -225,13 +225,13 @@ tomme makro arguments
 ny struct type kompatibilitets regler (tag compatibility)
 </para></listitem>
 <listitem><para>
-_Pragma præprocessor operator
+_Pragma prÃ¦processor operator
 </para></listitem>
 <listitem><para>
 standard pragma'er
 </para></listitem>
 <listitem><para>
-__func__ predefineret nøgle-ord
+__func__ predefineret nÃ¸gle-ord
 </para></listitem>
 <listitem><para>
 vscanf funktionsfamilien
@@ -243,14 +243,14 @@ snprintf funktionsfamilien
 VA_COPY makro
 </para></listitem>
 <listitem><para>
-tilføjelse af flere strftime konverterings specifikationer
+tilfÃ¸jelse af flere strftime konverterings specifikationer
 </para></listitem>
 <listitem><para>
 LIA compatibility annex
 </para></listitem>
 <listitem><para>
-depreciering (afskaffelse på længere sigt) af ungetc i starten af
-binær fil
+depreciering (afskaffelse pÃ¥ lÃ¦ngere sigt) af ungetc i starten af
+binÃ¦r fil
 </para></listitem>
 <listitem><para>
 remove deprecation of aliased array parameters
@@ -265,9 +265,9 @@ annullering af depreciering af alias-ede array parametre
 
 <itemizedlist mark="bullet">
 <listitem><para>
-begrænset support af ISO-0646 &lt;iso646.h> (bemærk at der
-arbejdes på højtryk på unicode support i Gnome projektet,
-oversætters anmærkning).
+begrÃ¦nset support af ISO-0646 &lt;iso646.h> (bemÃ¦rk at der
+arbejdes pÃ¥ hÃ¸jtryk pÃ¥ unicode support i Gnome projektet,
+oversÃ¦tters anmÃ¦rkning).
 </para></listitem>
 
 <listitem><para>

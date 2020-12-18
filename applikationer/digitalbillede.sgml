@@ -8,14 +8,14 @@
 <sect1 id="billedvisning">
 <title>Visning af billeder og simpel redigering</title>
 
-<para>Dette afsnits overskrift dækker over programmer der primært
+<para>Dette afsnits overskrift dÃ¦kker over programmer der primÃ¦rt
 anvendes til at fremvise billeder, og f.eks. sortere dem i
 albums. Dette er noget du ofte vil have brug for, f.eks. hvis du
-skal håndtere din samling af billeder taget med digitalkamera (se
+skal hÃ¥ndtere din samling af billeder taget med digitalkamera (se
 <xref linkend="digitalkamera"/>), skannet ind, eller tilsvarende. De
-fleste af disse programmer har også mulighed for at redigere lidt i
-billederne, f.eks. rotere dem, gøre dem lysere, eller lignende. Mange
-har ligeledes mulighed for at tage et skærmskud af enten hele skærmen,
+fleste af disse programmer har ogsÃ¥ mulighed for at redigere lidt i
+billederne, f.eks. rotere dem, gÃ¸re dem lysere, eller lignende. Mange
+har ligeledes mulighed for at tage et skÃ¦rmskud af enten hele skÃ¦rmen,
 eller dele af den.</para>
 
 <!-- =================================================================== -->
@@ -28,17 +28,17 @@ eller dele af den.</para>
 
 <para>Xli (X Load Image) er et kommandolinjeprogram
 til at se billeder under X med. Start det f.eks. med <command>xli
-*jpg</command>. Programmet er meget simpelt, men understøtter rotation
+*jpg</command>. Programmet er meget simpelt, men understÃ¸tter rotation
 af billeder (tryk <keycap>r</keycap> eller <keycap>l</keycap>),
-lysstyrke plus nogle få andre operationer (se
+lysstyrke plus nogle fÃ¥ andre operationer (se
 <citerefentry><refentrytitle>xli</refentrytitle>
 <manvolnum>1</manvolnum></citerefentry> manual siden). Hvis du giver
 en liste af billeder til programmet, kan du bladre i dem med
 f.eks. <keycap>mellemrum</keycap> og <keycap>p</keycap>.</para>
 
-<para>Fordelen ved Xli er at det følger med de fleste distributioner
-og det er formentlig allerede installeret på dit system. Endvidere er
-det rimeligt hurtigt, både til at vise billeder og til f.eks. at
+<para>Fordelen ved Xli er at det fÃ¸lger med de fleste distributioner
+og det er formentlig allerede installeret pÃ¥ dit system. Endvidere er
+det rimeligt hurtigt, bÃ¥de til at vise billeder og til f.eks. at
 rotere dem.</para>
 
 </sect2> <!-- xli -->
@@ -53,30 +53,30 @@ rotere dem.</para>
 <indexterm><primary>Slideshows</primary><secondary>med qiv</secondary></indexterm>
 
 <para>Et andet kommandolinjeprogram er Qiv. Programmet er mere
-avanceret end Xli og understøtter en del forskellige operationer på
+avanceret end Xli og understÃ¸tter en del forskellige operationer pÃ¥
 billeder, herunder rotation (tryk <keycap>k</keycap> eller
 <keycap>l</keycap>), lysstyrke, kontrast, gamma, osv. Programmet kan
-betjenes med mus, og har også en simpel form for udvælgelse, hvor du
+betjenes med mus, og har ogsÃ¥ en simpel form for udvÃ¦lgelse, hvor du
 kan flytte billeder til et andet katalog.</para>
 
-<para>Qiv er godt hvis du har mange billeder du gerne vil kigge på og
-du kan lide at se billeder i fuld skærm. Så kan du skrive</para>
+<para>Qiv er godt hvis du har mange billeder du gerne vil kigge pÃ¥ og
+du kan lide at se billeder i fuld skÃ¦rm. SÃ¥ kan du skrive</para>
 
 <screen><prompt>[tyge@hven ~]$ </prompt><userinput>qiv --maxpect --scale_down --statusbar --fullscreen *jpg</userinput></screen>
 
-<para>Så vil Qiv sørge for at skalere alle billeder til skærmens
-størrelse og inkludere en statusbar der fortæller lidt information om
+<para>SÃ¥ vil Qiv sÃ¸rge for at skalere alle billeder til skÃ¦rmens
+stÃ¸rrelse og inkludere en statusbar der fortÃ¦ller lidt information om
 hvert enkelt billede. Du kan bladre i billederne med
 <keycap>space</keycap> og <keycap>backspace</keycap>. Programmet er
-meget hurtigt til at indlæse og vise billeder og nemt at anvende
-&ndash; og statusinformationen gør det nemt at identificere billederne
-selv om du ser dem i fuld skærm. Du kan læse mere om hvad Qiv kan i
+meget hurtigt til at indlÃ¦se og vise billeder og nemt at anvende
+&ndash; og statusinformationen gÃ¸r det nemt at identificere billederne
+selv om du ser dem i fuld skÃ¦rm. Du kan lÃ¦se mere om hvad Qiv kan i
 <citerefentry><refentrytitle>qiv</refentrytitle>
 <manvolnum>1</manvolnum></citerefentry> manualsiden &ndash her kan du
-f.eks. læse om Qivs muligheder for at lave simple
+f.eks. lÃ¦se om Qivs muligheder for at lave simple
 slideshows.</para>
 
-<para>Qiv følger med mange distributioner, men ellers er hjemmesiden
+<para>Qiv fÃ¸lger med mange distributioner, men ellers er hjemmesiden
 <ulink
 url="http://www.klografx.net/qiv/">www.klografx.net/qiv/</ulink>.</para>
 
@@ -90,39 +90,39 @@ url="http://www.klografx.net/qiv/">www.klografx.net/qiv/</ulink>.</para>
 <indexterm><primary>Eletric Eyes</primary></indexterm>
 <indexterm><primary>ee</primary></indexterm>
 <indexterm><primary>Se billeder</primary><secondary>med ee</secondary></indexterm>
-<indexterm><primary>Skærmskud</primary><secondary>med ee</secondary></indexterm>
+<indexterm><primary>SkÃ¦rmskud</primary><secondary>med ee</secondary></indexterm>
 
 <para>
 Electric Eyes er endnu en billedviser. Den har alle de normale
-funktioner (rotering, skalering, ændring af farver, osv.) og
-understøtter en masse filformater. Desuden kan den bruges til at tage
-et skærmskud af hele skærmen eller et enkelt vindue og har nogle
+funktioner (rotering, skalering, Ã¦ndring af farver, osv.) og
+understÃ¸tter en masse filformater. Desuden kan den bruges til at tage
+et skÃ¦rmskud af hele skÃ¦rmen eller et enkelt vindue og har nogle
 muligheder for redigering af det billede der vises.</para>
 
 <para>
 Programmet startes med kommandoen <command>ee billede</command>, hvor
-"billede" er det billede du vil have vist (du kan også få
+"billede" er det billede du vil have vist (du kan ogsÃ¥ fÃ¥
 <command>ee</command> til at vise flere billeder ved at skrive
 <command>ee billede1 billede2</command>). Undlades dette, startes
-programmet op med et velkomstbillede, hvorefter du kan højreklikke for
-at få en menu frem.</para>
+programmet op med et velkomstbillede, hvorefter du kan hÃ¸jreklikke for
+at fÃ¥ en menu frem.</para>
 
 <figure id="ee-fig" float="1">
 <title>Electric Eyes</title>
 <graphic fileref="ee.&magic;" scale="40"></graphic>
 </figure>
 
-<para>Hvis du vil anvende <command>ee</command> til at tage skærmskud
-med skal du vælge at <command>ee</command> skal vise
-redigeringsvinduet. Der findes to knapper til at tage skærmskud af
-enten hele skærmen eller en enkelt vindue.</para>
+<para>Hvis du vil anvende <command>ee</command> til at tage skÃ¦rmskud
+med skal du vÃ¦lge at <command>ee</command> skal vise
+redigeringsvinduet. Der findes to knapper til at tage skÃ¦rmskud af
+enten hele skÃ¦rmen eller en enkelt vindue.</para>
 
 <para>En ulempe ved <command>ee</command> er at programmet ikke er
-specielt hurtigt, især ikke hvis du har bedt det om at vise flere billeder.</para>
+specielt hurtigt, isÃ¦r ikke hvis du har bedt det om at vise flere billeder.</para>
 
 <para>
-Programmet følger som standard med RedHat og de fleste andre
-distributioner, men ellers kan den hentes på <ulink
+Programmet fÃ¸lger som standard med RedHat og de fleste andre
+distributioner, men ellers kan den hentes pÃ¥ <ulink
 url="http://rpmfind.net/">rpmfind.net</ulink> </para> 
 </sect2> <!-- ee -->
 
@@ -137,18 +137,18 @@ url="http://rpmfind.net/">rpmfind.net</ulink> </para>
 <indexterm><primary>Slideshows</primary><secondary>med GQview</secondary></indexterm>
 
 <para>GQview er en billedbrowser der er hurtig og simpel at bruge, og
-har et væld af indstillingsmuligheder. Forskellen fra en egentlig
-billedviser forstår vi her som at GQview som udgangspunkt viser en
+har et vÃ¦ld af indstillingsmuligheder. Forskellen fra en egentlig
+billedviser forstÃ¥r vi her som at GQview som udgangspunkt viser en
 oversigt over diskstrukturen og miniaturer af de billeder der er i det
-katalog der i øjeblikket er åbent i programmet. Du kan skifte katalog
-ved at klikke i træstrukturen, og GQview vil så åbne alle billeder i
-det katalog du har klikket på, og vise dem i sin
+katalog der i Ã¸jeblikket er Ã¥bent i programmet. Du kan skifte katalog
+ved at klikke i trÃ¦strukturen, og GQview vil sÃ¥ Ã¥bne alle billeder i
+det katalog du har klikket pÃ¥, og vise dem i sin
 oversigtsliste.</para>
 
-<para>GQview kan startes på forskellige måder. Hvis ikke du har det
-tilgængeligt i din menu, kan du køre kommandoen
+<para>GQview kan startes pÃ¥ forskellige mÃ¥der. Hvis ikke du har det
+tilgÃ¦ngeligt i din menu, kan du kÃ¸re kommandoen
 <command>gqview</command>, hvorefter GQview starter. Du kan se et
-eksempel på hvordan det kan se ud i <xref
+eksempel pÃ¥ hvordan det kan se ud i <xref
 linkend="gqview-fig"/>.</para>
 
 <figure id="gqview-fig" float="1">
@@ -156,32 +156,32 @@ linkend="gqview-fig"/>.</para>
 <graphic fileref="GQview.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Hvis du klikker på en af miniaturerne, vises billedet til
-højre. Derefter kan du taste <keycap>pilned</keycap> eller
-<keycap>pilop</keycap> for vise det næste eller forrige billede. Du
+<para>Hvis du klikker pÃ¥ en af miniaturerne, vises billedet til
+hÃ¸jre. Derefter kan du taste <keycap>pilned</keycap> eller
+<keycap>pilop</keycap> for vise det nÃ¦ste eller forrige billede. Du
 kan taste <keycap>[</keycap> eller <keycap>]</keycap> for at rotere
 det billede der vises. Der findes tastegenveje til de fleste
-operationer, og GQview er meget hurtig, både til at indlæse billeder
+operationer, og GQview er meget hurtig, bÃ¥de til at indlÃ¦se billeder
 og rotere dem.</para>
 
-<para>GQview understøtter også albums, dvs. samlinger af billeder fra
-forskellige kataloger, hvilket kaldes "collections". GQview kan også
-bruges til at vise slideshows med og har en god fuldskærms
+<para>GQview understÃ¸tter ogsÃ¥ albums, dvs. samlinger af billeder fra
+forskellige kataloger, hvilket kaldes "collections". GQview kan ogsÃ¥
+bruges til at vise slideshows med og har en god fuldskÃ¦rms
 tilstand.</para>
 
-<para>GQview har et væld af indstillingsmuligheder, som du finder i
-"rediger" menuen, under "indstillinger". Her kan du f.eks. sætte om
-GQview som standard skal tilpasse de billeder der vises til skærmen,
+<para>GQview har et vÃ¦ld af indstillingsmuligheder, som du finder i
+"rediger" menuen, under "indstillinger". Her kan du f.eks. sÃ¦tte om
+GQview som standard skal tilpasse de billeder der vises til skÃ¦rmen,
 og hvilken metode der skal bruges ved zoom, om den skal gemme
-miniaturer for hurtigere generering, mv. Faktisk har GQview så mange
-indstillinger at det kan være lidt forvirrende i starten at finde ud
-af de mere avancerede. Der er ikke megen hjælp at hente i programmets
-dokumentation, men lidt eksperimentering vil formentlig gøre det klart
-hvad de enkelte indstillinger gør. GQview er et godt program, og vi
-anbefaler at du bruger lidt tid på at lære det at kende, hvis du har
-behov for at kigge en del på billeder.</para>
+miniaturer for hurtigere generering, mv. Faktisk har GQview sÃ¥ mange
+indstillinger at det kan vÃ¦re lidt forvirrende i starten at finde ud
+af de mere avancerede. Der er ikke megen hjÃ¦lp at hente i programmets
+dokumentation, men lidt eksperimentering vil formentlig gÃ¸re det klart
+hvad de enkelte indstillinger gÃ¸r. GQview er et godt program, og vi
+anbefaler at du bruger lidt tid pÃ¥ at lÃ¦re det at kende, hvis du har
+behov for at kigge en del pÃ¥ billeder.</para>
 
-<para>GQview følger med mange distributioner, men ellers er
+<para>GQview fÃ¸lger med mange distributioner, men ellers er
 hjemmesiden <ulink
 url="http://gqview.sourceforge.net/">gqview.sourceforge.net</ulink>.</para>
 
@@ -198,11 +198,11 @@ url="http://gqview.sourceforge.net/">gqview.sourceforge.net</ulink>.</para>
 <indexterm><primary>Slideshows</primary><secondary>med gThumb</secondary></indexterm>
 <indexterm><primary>Gnome</primary><secondary>billedbrowser</secondary></indexterm>
 
-<para>gThumb er en billedbrowser til Gnome miljøet. Hvis du ikke kan
+<para>gThumb er en billedbrowser til Gnome miljÃ¸et. Hvis du ikke kan
 finde programmet i dine menuer, kan du starte det med kommandoen
 <command>gthumb</command>, hvorefter den vil vise de billeder der er i
 dit hjemmekatalog, eller det katalog du sidst har vist billeder
-fra. Et eksempel på hvordan gThumb kan se ud, kan du se i <xref
+fra. Et eksempel pÃ¥ hvordan gThumb kan se ud, kan du se i <xref
 linkend="gthumb-fig"/>.</para>
 
 <figure id="gthumb-fig" float="1">
@@ -211,22 +211,22 @@ linkend="gthumb-fig"/>.</para>
 </figure>
 
 <para>I forhold til GQview ligner gThumb mere et Gnome program og
-integrerer mere med komponenterne i Gnome. Programmet understøtter
-også dansk og menuer mv. er således på dansk. Programmet har også
-noget mere funktionalitet, f.eks. kontrol over farver, bogmærker og
-mere understøttelse af inddeling af billeder i kategorier og
+integrerer mere med komponenterne i Gnome. Programmet understÃ¸tter
+ogsÃ¥ dansk og menuer mv. er sÃ¥ledes pÃ¥ dansk. Programmet har ogsÃ¥
+noget mere funktionalitet, f.eks. kontrol over farver, bogmÃ¦rker og
+mere understÃ¸ttelse af inddeling af billeder i kategorier og
 albums. Desuden har programmet en god indeksbillede funktion, hvor du
 kan lave indeksbilleder der indeholder oversigter over dine
-billeder. gThumb kan også lave simple webalbums.</para>
+billeder. gThumb kan ogsÃ¥ lave simple webalbums.</para>
 
 <para>Ulempen ved gThumb er at det er en del langsommere end
-f.eks. GQview. Det har heller ikke helt så mange
+f.eks. GQview. Det har heller ikke helt sÃ¥ mange
 indstillingsmuligheder, f.eks. med hensyn til kvaliteten af
-miniaturer. På et meget hurtigt system er det muligvis ligemeget, men
-for et lidt langsommere kan det mærkes.</para>
+miniaturer. PÃ¥ et meget hurtigt system er det muligvis ligemeget, men
+for et lidt langsommere kan det mÃ¦rkes.</para>
 
 <para>gThumb findes som pakke for de fleste distributioner der
-understøtter Gnome, men ellers er hjemmesiden <ulink
+understÃ¸tter Gnome, men ellers er hjemmesiden <ulink
 url="http://gthumb.sourceforge.net/">
 gthumb.sourceforge.net</ulink>.</para>
 
@@ -241,19 +241,19 @@ gthumb.sourceforge.net</ulink>.</para>
 <!-- =================================================================== -->
 <sect1 id="billedredigering">
 <title>Billedredigering</title>
-<para>I denne sektion nævnes en række programmer, hvis hovedformål er
+<para>I denne sektion nÃ¦vnes en rÃ¦kke programmer, hvis hovedformÃ¥l er
 egentlig redigering af billeder.</para>
 
 <indexterm><primary>xpaint</primary></indexterm>
 <para>
-Ønsker du et bitmap-baseret tegneprogram uden mange smarte funktioner, er
-<command>xpaint</command> nemt at gå til, men det kan ikke ret meget.
+Ã˜nsker du et bitmap-baseret tegneprogram uden mange smarte funktioner, er
+<command>xpaint</command> nemt at gÃ¥ til, men det kan ikke ret meget.
 </para>
 
 <indexterm><primary>Image Magick</primary></indexterm>
 <indexterm><primary>convert</primary></indexterm>
 <para>
-Desuden kan du have glæde af ImageMagick, der kan vise og konvertere
+Desuden kan du have glÃ¦de af ImageMagick, der kan vise og konvertere
 mellem et utal af grafikformater. Specielt er det nemt og effektivt
 til at konvertere grafik via kommandolinje-ordrer
 (f.eks. <command>convert fil.jpg fil.png</command>).
@@ -263,19 +263,19 @@ til at konvertere grafik via kommandolinje-ordrer
 ===================================================================
 --> <!-- screenshot --> <!--
 ===================================================================
---> <sect2 id="screenshot"> <title>Lave skærmskud</title>
+--> <sect2 id="screenshot"> <title>Lave skÃ¦rmskud</title>
 <indexterm><primary>Screen shot</primary></indexterm>
-<indexterm><primary>Skærmbilleder</primary></indexterm>
-<indexterm><primary>Skærmskud</primary></indexterm>
+<indexterm><primary>SkÃ¦rmbilleder</primary></indexterm>
+<indexterm><primary>SkÃ¦rmskud</primary></indexterm>
 <indexterm><primary>KSnapshot</primary></indexterm> <para> Det er ofte
-nødvendigt at lave skærmbilleder af programmer til
+nÃ¸dvendigt at lave skÃ¦rmbilleder af programmer til
 f.eks. dokumentation. Mange programmer kan dette. F.eks. har
 <command>ee</command> en nem "grab"-funktion til det. Gimp har en
-tilsvarende funktion i menuen "Filer|Indhent|Skærmbillede". Til KDE 2
+tilsvarende funktion i menuen "Filer|Indhent|SkÃ¦rmbillede". Til KDE 2
 er programmet KSnapshot <command>ksnapshot</command> en meget enkel
-mulighed for at hente enten et vindue eller hele skærmen. Det skal
-også nævnes at du ofte skal klikke på baggrunden for at få hele
-skærmen gemt.</para> </sect2>
+mulighed for at hente enten et vindue eller hele skÃ¦rmen. Det skal
+ogsÃ¥ nÃ¦vnes at du ofte skal klikke pÃ¥ baggrunden for at fÃ¥ hele
+skÃ¦rmen gemt.</para> </sect2>
 
 <!-- =================================================================== -->
 <!-- gimp -->
@@ -289,12 +289,12 @@ skærmen gemt.</para> </sect2>
 <para>Til Linux findes et fremragende grafik-program <emphasis>the
 GIMP</emphasis> (the GNU Image Manipulation Program), der har stort
 set den samme funktionalitet som Photoshop. GIMP har brushes, lag,
-strukturerede underlag og meget andet. Med Gimp følger en masse ekstra
+strukturerede underlag og meget andet. Med Gimp fÃ¸lger en masse ekstra
 moduler til at lave forskellige visuelle effekter (du kan endda
 programmere dine egne moduler), og GIMP har et indbygget script-sprog
 der kan bruges til f.eks. automatisk generering af flammende knapper
-til web-sider. Udviklingen inden for GIMP har været og er stadig stor,
-så i dag er the GIMP på fuldt professionelt niveau &ndash; og ganske
+til web-sider. Udviklingen inden for GIMP har vÃ¦ret og er stadig stor,
+sÃ¥ i dag er the GIMP pÃ¥ fuldt professionelt niveau &ndash; og ganske
 gratis.</para>
 
 <figure id="gimp-fig" float="1">
@@ -303,40 +303,40 @@ gratis.</para>
 </figure>
 
 <para>I lighed med andre komplicerede programmer i professionel
-kvalitet kan GIMP være svær at komme helt ind på livet af. Heldigvis
+kvalitet kan GIMP vÃ¦re svÃ¦r at komme helt ind pÃ¥ livet af. Heldigvis
 findes der en glimrende brugervejledning med gennemgang af programmets
-funktioner og mange eksempler på hvordan diverse grafiske effekter kan
-laves. Den kan ses på <ulink
+funktioner og mange eksempler pÃ¥ hvordan diverse grafiske effekter kan
+laves. Den kan ses pÃ¥ <ulink
 url="http://manual.gimp.org">manual.gimp.org</ulink>, hvorfra
-den også kan hentes i flere forskellige formater. Det er en ganske
-omfattende sag, PDF-versionen fylder således hele 951 sider.</para>
+den ogsÃ¥ kan hentes i flere forskellige formater. Det er en ganske
+omfattende sag, PDF-versionen fylder sÃ¥ledes hele 951 sider.</para>
 
 <para>
-Vi kan tage et par eksempler på brug af GIMP.
+Vi kan tage et par eksempler pÃ¥ brug af GIMP.
 </para>
 
-<para>Det første er nok at få lidt hjælp til at komme i gang. Som det ses på
+<para>Det fÃ¸rste er nok at fÃ¥ lidt hjÃ¦lp til at komme i gang. Som det ses pÃ¥
 <xref linkend="gimphelp-fig"/> kan du i menuen
-"Ekstra-&gt;Web-Browser" få startet hjemmesider (med Netscape). Brug
-også tiden på at læse hjælpen du kan få frem med "F1".  </para>
+"Ekstra-&gt;Web-Browser" fÃ¥ startet hjemmesider (med Netscape). Brug
+ogsÃ¥ tiden pÃ¥ at lÃ¦se hjÃ¦lpen du kan fÃ¥ frem med "F1".  </para>
 
 <figure id="gimphelp-fig" float="1">
-<title>The GIMP-hjælp</title>
+<title>The GIMP-hjÃ¦lp</title>
 <graphic fileref="gimphelp.&magic;"  scale="40"></graphic>
 </figure>
 
-<para>En fantastisk funktion i Gimp er håndtering af tastatur-genveje. Hvis
-du i en given menu mener at det ville være smart hvis du kan udføre en
-funktion ved at trykke "Alt-c", så trykker man lige "Alt-c" og
+<para>En fantastisk funktion i Gimp er hÃ¥ndtering af tastatur-genveje. Hvis
+du i en given menu mener at det ville vÃ¦re smart hvis du kan udfÃ¸re en
+funktion ved at trykke "Alt-c", sÃ¥ trykker man lige "Alt-c" og
 genvejen er registreret.</para>
 
 <para>
-På <xref linkend="gimplogo-fig"/> er vist GIMP-logoet, og efter
-at have anvendt Filtre->Map->Papirbrik er resultatet som vist på 
-<xref linkend="gimplogo-papirbrik-fig"/>. Vælger du i stedet
+PÃ¥ <xref linkend="gimplogo-fig"/> er vist GIMP-logoet, og efter
+at have anvendt Filtre->Map->Papirbrik er resultatet som vist pÃ¥ 
+<xref linkend="gimplogo-papirbrik-fig"/>. VÃ¦lger du i stedet
 Script-Fu->Dekoration->Kaffeplet og derefter
-Script-Fu->Dekoration->Gamle Foto, så resultatet et billede
-som ligner noget fra forrige århundrede &ndash; se selv på 
+Script-Fu->Dekoration->Gamle Foto, sÃ¥ resultatet et billede
+som ligner noget fra forrige Ã¥rhundrede &ndash; se selv pÃ¥ 
 <xref linkend="gimplogo-gammelkaffe-fig"/>.
 </para>
 
@@ -355,21 +355,21 @@ som ligner noget fra forrige århundrede &ndash; se selv på
 <graphic fileref="gimp_gammelkaffe.&magic;"  scale="40"></graphic>
 </figure>
 
-<para>For at komme videre med The Gimp kan du besøge <emphasis>Gimp
+<para>For at komme videre med The Gimp kan du besÃ¸ge <emphasis>Gimp
 User Group</emphasis> <ulink
 url="http://gug.sunsite.dk/">gug.sunsite.dk</ulink> hvor der
 er guider til brug af Gimp og debat-fora, hvor der bliver debatteret
 Gimp.</para>
 
-<para>På <ulink url="http://gimp-savvy.com/BOOK/">
+<para>PÃ¥ <ulink url="http://gimp-savvy.com/BOOK/">
 gimp-savvy.com/BOOK/</ulink> findes bogen "Grokking the GIMP"
-som kan anbefales. På <ulink url="http://manual.gimp.org">
+som kan anbefales. PÃ¥ <ulink url="http://manual.gimp.org">
 manual.gimp.org</ulink> findes en brugervejledning til Gimp og
-meget andet. Endeligt har Eric Jeschke lavet en række fremragende
+meget andet. Endeligt har Eric Jeschke lavet en rÃ¦kke fremragende
 <ulink
 url="http://cs.uhh.hawaii.edu/~jeschke/photography/articles/gimp/tutorials.shtml">
-tutorials</ulink> der gennemgår en række specifikke opgaver der er en
-virkelig god indføring i GIMP.</para>
+tutorials</ulink> der gennemgÃ¥r en rÃ¦kke specifikke opgaver der er en
+virkelig god indfÃ¸ring i GIMP.</para>
 
 </sect2> <!-- Gimp -->
 
@@ -379,31 +379,31 @@ virkelig god indføring i GIMP.</para>
 <!-- =================================================================== -->
 
 <sect2 id="roedeoejne">
-<title>Fjernelse af røde øjne</title>
-<indexterm><primary>Røde øjne</primary><secondary>fjernelse af</secondary></indexterm>
+<title>Fjernelse af rÃ¸de Ã¸jne</title>
+<indexterm><primary>RÃ¸de Ã¸jne</primary><secondary>fjernelse af</secondary></indexterm>
 <indexterm><primary>gimp-config</primary></indexterm>
-<indexterm><primary>Gimp plugin</primary><secondary>til fjernelse af røde øjne</secondary></indexterm>
+<indexterm><primary>Gimp plugin</primary><secondary>til fjernelse af rÃ¸de Ã¸jne</secondary></indexterm>
 
-<para>Fjernelse af røde øjne er en operation man hurtigt kan få brug
-for, især hvis man har taget billeder med f.eks. et mindre
-digitalkamera, hvor blitzen sidder tæt på objektivet.</para>
+<para>Fjernelse af rÃ¸de Ã¸jne er en operation man hurtigt kan fÃ¥ brug
+for, isÃ¦r hvis man har taget billeder med f.eks. et mindre
+digitalkamera, hvor blitzen sidder tÃ¦t pÃ¥ objektivet.</para>
 
 <para>Eric <ulink url="http://gimpguru.org/"> Jeschke </ulink> har
 lavet en <ulink url="http://gimpguru.org/Tutorials/RedEye2/"> tutorial,
 </ulink> (kopieret <ulink url="http://www.help2go.com/article110.html">
-til andre sites) </ulink> der gennemgår fjernelse af røde øjne i
-Gimp. Denne tutorial er meget nem at følge. Hvis du synes det er
-kompliceret, så bladr endelig frem til slutningen, hvor der præsenteres
-en måde at automatisere processen på. Det kræver dog at man installerer
+til andre sites) </ulink> der gennemgÃ¥r fjernelse af rÃ¸de Ã¸jne i
+Gimp. Denne tutorial er meget nem at fÃ¸lge. Hvis du synes det er
+kompliceret, sÃ¥ bladr endelig frem til slutningen, hvor der prÃ¦senteres
+en mÃ¥de at automatisere processen pÃ¥. Det krÃ¦ver dog at man installerer
 et par ekstra plugins til Gimp &ndash; men det er rimeligt enkelt.</para>
 
-<para>Først og fremmest skal du sørge for at de nødvendige filer til
-at oversætte plugins til Gimp er til stede. Det er blandt andet
-programmet <command>gimp-config</command> du skal have. Det følger
+<para>FÃ¸rst og fremmest skal du sÃ¸rge for at de nÃ¸dvendige filer til
+at oversÃ¦tte plugins til Gimp er til stede. Det er blandt andet
+programmet <command>gimp-config</command> du skal have. Det fÃ¸lger
 formentlig med din distribution, sammen med en pakke kaldet noget i
 retning af "libgimp-devel".</para>
 
-<para>Dernæst skal du installere et plugin til at mixe farvekanaler
+<para>DernÃ¦st skal du installere et plugin til at mixe farvekanaler
 med. Du kan finde plugin'et <ulink
 url="http://registry.gimp.org/plugin?id=1918">her</ulink>.
 Installationen er meget enkel</para>
@@ -427,25 +427,25 @@ gimp-config --install-bin channel_mixer
 <para><command>make</command> skridtet kan godt give et par advarsler,
 men det betyder ikke noget.</para>
 
-<para>Det næste skridt er at installere selve det script der
+<para>Det nÃ¦ste skridt er at installere selve det script der
 automatiserer processen. Det kan findes <ulink
 url="http://gimpguru.org/Tutorials/RedEye2/">her</ulink>, og skal blot placeres i dit Gimp script katalog, f.eks.
 <filename>~/.gimp-1.2/scripts/</filename>.</para>
 
 <para>Nu kan du starte Gimp, f.eks. med <filename>gimp
-fil</filename>. Herefter kan du blot markere et lille område af den
-røde pupil, og vælge "Script-Fu|Markering|Red Eye...". Du kan nu
-eksperimentere med værdierne. Generelt skal man bruge lavere værdier
-for Radius og Threshold jo mindre røde øjnene er. På <xref
-linkend="roedeoejne-fig"/> kan du se et eksempel på en rødøjereduktion
+fil</filename>. Herefter kan du blot markere et lille omrÃ¥de af den
+rÃ¸de pupil, og vÃ¦lge "Script-Fu|Markering|Red Eye...". Du kan nu
+eksperimentere med vÃ¦rdierne. Generelt skal man bruge lavere vÃ¦rdier
+for Radius og Threshold jo mindre rÃ¸de Ã¸jnene er. PÃ¥ <xref
+linkend="roedeoejne-fig"/> kan du se et eksempel pÃ¥ en rÃ¸dÃ¸jereduktion
 med den procedure beskrevet i dette afsnit.</para>
 
 <figure id="roedeoejne-fig" float="1">
-<title>Rødøje reduktion</title>
+<title>RÃ¸dÃ¸je reduktion</title>
 <graphic fileref="roedeoejne.&magic;"  scale="50"></graphic>
 </figure>
 
-</sect2> <!-- Røde øjne -->
+</sect2> <!-- RÃ¸de Ã¸jne -->
 
 <!-- =================================================================== -->
 <!-- Panorama billeder -->
@@ -456,14 +456,14 @@ med den procedure beskrevet i dette afsnit.</para>
 <indexterm><primary>Panoramabilleder</primary></indexterm>
 <indexterm><primary>Stitching</primary></indexterm>
 
-<para>Det at sætte flere billeder, der forestiller forskellige dele af
+<para>Det at sÃ¦tte flere billeder, der forestiller forskellige dele af
 det samme motiv, sammen til et, kalder man at lave et
 panoramabillede. Det er en process der i princippet er rimeligt
-simpel, men kræver en del nøjagtighed &ndash; ihvertfald når
+simpel, men krÃ¦ver en del nÃ¸jagtighed &ndash; ihvertfald nÃ¥r
 billederne tages &ndash; for at resultatet bliver rigtigt godt. Men,
-resultatet kan blive absolut tåleligt selvom man har taget billederne
-i frihånd. Et eksempel er billederne på <xref
-linkend="panorama_lineup-fig"/>, der er taget med håndholdt kamera (om
+resultatet kan blive absolut tÃ¥leligt selvom man har taget billederne
+i frihÃ¥nd. Et eksempel er billederne pÃ¥ <xref
+linkend="panorama_lineup-fig"/>, der er taget med hÃ¥ndholdt kamera (om
 aftenen, i overskuet vejr) i en stor bue og hvor kameraet ikke er
 blevet holdt specielt vandret. (Billedet er dog taget med et
 digitalkamera der har en panoramamodus).</para>
@@ -473,41 +473,41 @@ digitalkamera der har en panoramamodus).</para>
 <graphic fileref="panorama_lineup.&magic;"  scale="50"></graphic>
 </figure>
 
-<para>Ved hjælp af pakken PanoTools (omtales i <xref
+<para>Ved hjÃ¦lp af pakken PanoTools (omtales i <xref
 linkend="panotools"/>) er dette relativt let blevet til det billede du
-kan se på <xref linkend="panorama_final-fig"/>. (Bemærk at de fem
+kan se pÃ¥ <xref linkend="panorama_final-fig"/>. (BemÃ¦rk at de fem
 billeder og panoramaet ikke har samme skala og at panoramaet er blevet
-beskåret en lille smule).</para>
+beskÃ¥ret en lille smule).</para>
 
 <figure id="panorama_final-fig" float="1">
-<title>Det færdige panorama</title>
+<title>Det fÃ¦rdige panorama</title>
 <graphic fileref="panorama_final.&magic;"  scale="50"></graphic>
 </figure>
 
-<para>Det endelige billede er faktisk ikke så ringe endda (OK,
-horisonten og hækken kunne være mere lige), selvom udgangspunktet var
-mindre godt end ønskeligt.</para>
+<para>Det endelige billede er faktisk ikke sÃ¥ ringe endda (OK,
+horisonten og hÃ¦kken kunne vÃ¦re mere lige), selvom udgangspunktet var
+mindre godt end Ã¸nskeligt.</para>
 
-<para>Når vi skriver at processen er rimeligt simpel, er det fordi der
-findes nogle gode programmer til at sætte billeder sammen med. Selve
+<para>NÃ¥r vi skriver at processen er rimeligt simpel, er det fordi der
+findes nogle gode programmer til at sÃ¦tte billeder sammen med. Selve
 teorien bag panoramabilleder er faktisk temmeligt
 kompliceret. F.eks. skal et godt panorama program tage hensyn til
-varierende fokus og lysforhold på de enkelte billeder, eventuel
-rotation eller tiltning af kameraet, samt linsens egenskaber, så som
-dens fejl (ingen linser er perfekte). Så den første tanke man får
+varierende fokus og lysforhold pÃ¥ de enkelte billeder, eventuel
+rotation eller tiltning af kameraet, samt linsens egenskaber, sÃ¥ som
+dens fejl (ingen linser er perfekte). SÃ¥ den fÃ¸rste tanke man fÃ¥r
 &ndash; at det bare handler om at lave lidt "klippe-klistre" med nogle
 billeder &ndash; er ikke helt korrekt. Hvis du gerne vil vide mere om
-teorien bag panorama billeder, er et godt sted at starte at læse
+teorien bag panorama billeder, er et godt sted at starte at lÃ¦se
 <ulink url="http://www.panoguide.com/">www.panoguide.com</ulink> der
-indeholder et væld af information om blandt andet hvordan man bedst
+indeholder et vÃ¦ld af information om blandt andet hvordan man bedst
 optager panoramabilleder, og hvad de forskellige begreber betyder,
-mv. Du kan godt få noget ud af at læse resten af dette afsnit uden at
+mv. Du kan godt fÃ¥ noget ud af at lÃ¦se resten af dette afsnit uden at
 kende informationerne fra Panoguide, men hvis du virkeligt vil lave
-flotte panoramabilleder &ndash; der f.eks. dækker 360 grader og både
+flotte panoramabilleder &ndash; der f.eks. dÃ¦kker 360 grader og bÃ¥de
 jord og himmel &ndash; kommer du ikke uden om at kende til de ting
 Panoguide omtaler.</para>
 
-<para>I det følgende vi vil præsentere nogle programmer der kan
+<para>I det fÃ¸lgende vi vil prÃ¦sentere nogle programmer der kan
 anvendes til at lave panoramaer med.</para>
 
 <!-- =================================================================== -->
@@ -527,44 +527,44 @@ anvendes til at lave panoramaer med.</para>
 panoramabilleder med. Med det kan du lave panoramaer, stereobilleder,
 virtuelle tours, mv.</para>
 
-<para>PanoTools programmerne består af mange forskellige dele. Her vil
-vi blot kigge på de programmer der kan lave panoramaer som på <xref
-linkend="panorama_final-fig"/> . Disse er egentlig en række
+<para>PanoTools programmerne bestÃ¥r af mange forskellige dele. Her vil
+vi blot kigge pÃ¥ de programmer der kan lave panoramaer som pÃ¥ <xref
+linkend="panorama_final-fig"/> . Disse er egentlig en rÃ¦kke
 kommandolinjeprogrammer, der fungerer ved at man skriver et "script"
 de forskellige programmer bruger. Fra dette script og fra
-originalbillederne genereres så det færdige panorama.</para>
+originalbillederne genereres sÃ¥ det fÃ¦rdige panorama.</para>
 
 <sidebar>
-<para>På grund af patentproblemer distribuerer den originale forfatter
+<para>PÃ¥ grund af patentproblemer distribuerer den originale forfatter
 til PanoTools ikke selv sine programmer mere. Istedet distribueres
-disse fra en række forskellige websteder verden over. Et godt sted at
-hente dem er på <ulink
+disse fra en rÃ¦kke forskellige websteder verden over. Et godt sted at
+hente dem er pÃ¥ <ulink
 url="http://bugbear.blackfish.org.uk/~bruno/panorama-tools/">
 bugbear.blackfish.org.uk/~bruno/panorama-tools/</ulink>. Det er
-kun RPM pakker til RedHat 7-9 der er her (men de virker fint på
-f.eks. Mandrake 9.1), men de er i både binær og kildetekstform. Desuden
-er her også pakker for en række andre panorama værktøjer, alle både i
-binær og kildetekstform. I det følgende antages at du har installeret
-pakken <filename>panorama-tools</filename> på dit system, idet denne
+kun RPM pakker til RedHat 7-9 der er her (men de virker fint pÃ¥
+f.eks. Mandrake 9.1), men de er i bÃ¥de binÃ¦r og kildetekstform. Desuden
+er her ogsÃ¥ pakker for en rÃ¦kke andre panorama vÃ¦rktÃ¸jer, alle bÃ¥de i
+binÃ¦r og kildetekstform. I det fÃ¸lgende antages at du har installeret
+pakken <filename>panorama-tools</filename> pÃ¥ dit system, idet denne
 indeholder nogle ekstra programmer i forhold til PanoTools (eller
-rettere, nogle scripts der gør det lidt lettere at arbejde med
+rettere, nogle scripts der gÃ¸r det lidt lettere at arbejde med
 PanoTools programmerne).</para></sidebar>
 
 <para>Det at lave scriptet er den vanskeligste del af
-processen. Heldigvis findes der nogle værktøjer der kan hjælpe med til
-at lave det og som har grafiske grænseflader. To af disse, PTPicker og
-Hugin, vil blive omtalt i det følgende.</para>
+processen. Heldigvis findes der nogle vÃ¦rktÃ¸jer der kan hjÃ¦lpe med til
+at lave det og som har grafiske grÃ¦nseflader. To af disse, PTPicker og
+Hugin, vil blive omtalt i det fÃ¸lgende.</para>
 
-<para>PTPicker er en del af PanoTools og programmets formål er at
+<para>PTPicker er en del af PanoTools og programmets formÃ¥l er at
 matche billeder, det vil sige at man manuelt skal specificere for to
 forskellige billeder, hvilke punkter der er ens. Det er simplere end
-det lyder, og der er både tutorials med programmet og på nettet.</para>
+det lyder, og der er bÃ¥de tutorials med programmet og pÃ¥ nettet.</para>
 
 <para>PTPicker er et javaprogram og hvis du har fulgt anvisningerne i
 installationen af <filename>panorama-tools</filename>, kan du starte
 PTPicker ved at skrive <command>ptpicker</command>. Efter at
-programmet er startet, kan du vælge "File|New" for at lave et nyt
-projekt. Der vil komme en dialogboks op ala den du kan se på <xref
+programmet er startet, kan du vÃ¦lge "File|New" for at lave et nyt
+projekt. Der vil komme en dialogboks op ala den du kan se pÃ¥ <xref
 linkend="PTPicker1-fig"/>.</para>
 
 <figure id="PTPicker1-fig" float="1">
@@ -572,17 +572,17 @@ linkend="PTPicker1-fig"/>.</para>
 <graphic fileref="PTPicker1.&magic;"  scale="90"></graphic>
 </figure>
 
-<para>På billedet kan du se indstillingerne efter at jeg har sat dem
-til de værdier der passer med mine billeder. En interessant detalje er
+<para>PÃ¥ billedet kan du se indstillingerne efter at jeg har sat dem
+til de vÃ¦rdier der passer med mine billeder. En interessant detalje er
 "Focal Length". Hvis du har taget dine billeder med et analogt kamera
-og scannet dem ind fra et fremkaldt foto, skal du være opmærksom på at
-fotobutikken typisk ikke fremkalder hele dit negativ. Derfor ændres
-den focale længde faktisk. Du kan på PanoGuide læse mere om hvad man
-så gør, eller du kan eksperimentere (ved at kigge på resultaterne) med
-forskellige værdier. For et digitalkamera, kan du med Jhead (omtalt i
-<xref linkend="jhead"/>) se hvad den focale længde er. Bemærk at alle
-længder er relativt til 35 mm film &ndash; en focal længde på 7.4 mm
-svarer til omkring 37 mm (afhængigt af kameraet &ndash; Jhead kan
+og scannet dem ind fra et fremkaldt foto, skal du vÃ¦re opmÃ¦rksom pÃ¥ at
+fotobutikken typisk ikke fremkalder hele dit negativ. Derfor Ã¦ndres
+den focale lÃ¦ngde faktisk. Du kan pÃ¥ PanoGuide lÃ¦se mere om hvad man
+sÃ¥ gÃ¸r, eller du kan eksperimentere (ved at kigge pÃ¥ resultaterne) med
+forskellige vÃ¦rdier. For et digitalkamera, kan du med Jhead (omtalt i
+<xref linkend="jhead"/>) se hvad den focale lÃ¦ngde er. BemÃ¦rk at alle
+lÃ¦ngder er relativt til 35 mm film &ndash; en focal lÃ¦ngde pÃ¥ 7.4 mm
+svarer til omkring 37 mm (afhÃ¦ngigt af kameraet &ndash; Jhead kan
 regne dette ud).</para>
 
 <para>Efter du har klikket OK, vil PTPicker bede dig om at gemme dit
@@ -590,7 +590,7 @@ project. Gem det i samme katalog som du har dine billeder, og brug
 navnet <filename>Script.txt</filename>. Nu kan du begynde at hente
 billeder ind i dit project. Brug "Left Image|Image0" og "Right
 Image|Image1" til dette. Nu burde du have et billede i hver side af
-PTPicker, og du kan begynde at matche punkter i billederne. På <xref
+PTPicker, og du kan begynde at matche punkter i billederne. PÃ¥ <xref
 linkend="PTPicker2-fig"/> kan du se hvordan det kan se ud.</para>
 
 <figure id="PTPicker2-fig" float="1">
@@ -599,48 +599,48 @@ linkend="PTPicker2-fig"/> kan du se hvordan det kan se ud.</para>
 </figure>
 
 <para>Du kan matche et punkt ved at klikke i det ene billede
-(f.eks. det til venstre) og så flytte den røde plet der kommer i det
-andet billede til den er over det samme punkt som i det første
+(f.eks. det til venstre) og sÃ¥ flytte den rÃ¸de plet der kommer i det
+andet billede til den er over det samme punkt som i det fÃ¸rste
 billede. Da en kameralinse har flest fejl i kanterne, er det bedste at
-holde sig fra kanterne, så vidt muligt.</para>
+holde sig fra kanterne, sÃ¥ vidt muligt.</para>
 
-<para>Når du synes du har punkter nok, kan du gå videre til
-det næste billede. Når du er helt færdig, kan du gemme projektet, og
-afslutte PTPicker. Det er nu tid til at køre PTOptimizer (som finder
-en optimal korregering af de enkelte billeder, baseret på
-kontrolpunkterne) og PTStitcher (som sætter billedet sammen fra
-informationerne fra PTOptimizer). Egentlig burde PTPicker kunne køre
+<para>NÃ¥r du synes du har punkter nok, kan du gÃ¥ videre til
+det nÃ¦ste billede. NÃ¥r du er helt fÃ¦rdig, kan du gemme projektet, og
+afslutte PTPicker. Det er nu tid til at kÃ¸re PTOptimizer (som finder
+en optimal korregering af de enkelte billeder, baseret pÃ¥
+kontrolpunkterne) og PTStitcher (som sÃ¦tter billedet sammen fra
+informationerne fra PTOptimizer). Egentlig burde PTPicker kunne kÃ¸re
 dem for dig, men der er fejl i den script fil PTPicker laver, og de
-skal rettes inden du kan køre PTOptimizer og PTStitcher.</para>
+skal rettes inden du kan kÃ¸re PTOptimizer og PTStitcher.</para>
 
-<para>I scriptet <filename>Script.txt</filename>, skal du ændre den
-første linje. Den kan f.eks. se sådan ud</para>
+<para>I scriptet <filename>Script.txt</filename>, skal du Ã¦ndre den
+fÃ¸rste linje. Den kan f.eks. se sÃ¥dan ud</para>
 
 <screen>p f2 w15760 h7880 v360 u10  n"JPEG"</screen>
 
 <para>I filen <filename>
 /usr/share/doc/panorama-tools-2.6bml10/Optimizer_Script.txt</filename>
-kan du læse om script filens syntaks, inden den skal igennem
-PTOptimizer. Her vil vi nøjes med at sige at du skal linjen til</para>
+kan du lÃ¦se om script filens syntaks, inden den skal igennem
+PTOptimizer. Her vil vi nÃ¸jes med at sige at du skal linjen til</para>
 
-<screen>p f2 w&lt;bredde af panorama&gt; h&lt;højde af panorama&gt; v&lt;Field of view&gt; u10  n"JPEG"</screen>
+<screen>p f2 w&lt;bredde af panorama&gt; h&lt;hÃ¸jde af panorama&gt; v&lt;Field of view&gt; u10  n"JPEG"</screen>
 
-<para>Altså, f.eks.</para>
+<para>AltsÃ¥, f.eks.</para>
 
 <screen>p f2 w4000 h2000 v120 u10  n"JPEG"</screen>
 
-<para>Hvis du vil have et billede på 4000x2000 pixels, og du tror at
-de billeder du har taget dækker en vinkel på 120 grader (Field of view
-på 120). Dernæst skal du finde linjen</para>
+<para>Hvis du vil have et billede pÃ¥ 4000x2000 pixels, og du tror at
+de billeder du har taget dÃ¦kker en vinkel pÃ¥ 120 grader (Field of view
+pÃ¥ 120). DernÃ¦st skal du finde linjen</para>
 
 <screen>v v0</screen>
 
-<para>og fjerne den. Denne linje fortæller PTOptimizer at du gerne vil
-have optimeret Field of view på det første billede, men det virker kun
-hvis du laver panoramaer der dækker 360 grader! Gem det ændrede script
+<para>og fjerne den. Denne linje fortÃ¦ller PTOptimizer at du gerne vil
+have optimeret Field of view pÃ¥ det fÃ¸rste billede, men det virker kun
+hvis du laver panoramaer der dÃ¦kker 360 grader! Gem det Ã¦ndrede script
 under samme navn <filename>Script.txt</filename>.</para>
 
-<para>Nu er du klar til at køre dit script igennem PTOptimizer og
+<para>Nu er du klar til at kÃ¸re dit script igennem PTOptimizer og
 PTStitcher:</para>
 
 <screen><prompt>[tyge@hven ~]$ </prompt><userinput>PTOptimizer Script.txt</userinput>
@@ -652,10 +652,10 @@ after 10 iteration(s): 1.70952 pixels
 ...
 </screen>
 
-<para>Du skulle gerne komme rimeligt langt ned, ellers er det tegn på
+<para>Du skulle gerne komme rimeligt langt ned, ellers er det tegn pÃ¥
 at der er noget galt med billedet eller din punkter (f.eks. hvis du
 har taget et billede af noget der har flyttet sig meget. Se Panoguide
-for mere information). Herefter er det tid at køre PTStitcher.</para>
+for mere information). Herefter er det tid at kÃ¸re PTStitcher.</para>
 
 <screen><prompt>[tyge@hven ~]$ </prompt><userinput>PTStitcher -o panorama.jpg Script.txt</userinput>
 Converting Image 0      100%
@@ -668,19 +668,19 @@ Inserting Alpha Channel       50%
 Flattening Image
 </screen>
 
-<para>PTStitcher kan være rimeligt længe om at køre, men resultatet er
-til gengæld også som regel godt.</para>
+<para>PTStitcher kan vÃ¦re rimeligt lÃ¦nge om at kÃ¸re, men resultatet er
+til gengÃ¦ld ogsÃ¥ som regel godt.</para>
 
-<para>Når PTStitcher er færdig, kan du kigge lidt på billedet,
-f.eks. med Xli (omtalt i <xref linkend="xli"/>). Det kan være at det
-giver anledning til at vælge nogle flere kontrolpunkter med
+<para>NÃ¥r PTStitcher er fÃ¦rdig, kan du kigge lidt pÃ¥ billedet,
+f.eks. med Xli (omtalt i <xref linkend="xli"/>). Det kan vÃ¦re at det
+giver anledning til at vÃ¦lge nogle flere kontrolpunkter med
 PTPicker. Hvis din horisont f.eks. bobler meget op og ned, har du formentlig
-filmet noget der bevæger sig meget (f.eks. et træ der svajer i vinden)
-og det kan være at du skal bruge nogle flere fikserede punkter omkring
+filmet noget der bevÃ¦ger sig meget (f.eks. et trÃ¦ der svajer i vinden)
+og det kan vÃ¦re at du skal bruge nogle flere fikserede punkter omkring
 horisonten, mv.</para>
 
-<para>Når du er tilfreds med resultatet, skal du formentlig beskære
-billedet lidt. Det kan du f.eks. gøre i programmet Gimp (omtalt i
+<para>NÃ¥r du er tilfreds med resultatet, skal du formentlig beskÃ¦re
+billedet lidt. Det kan du f.eks. gÃ¸re i programmet Gimp (omtalt i
 <xref linkend="gimp"/>).</para>
 
 <!-- =================================================================== -->
@@ -692,37 +692,37 @@ billedet lidt. Det kan du f.eks. gøre i programmet Gimp (omtalt i
 <indexterm><primary>Hugin</primary></indexterm>
 <indexterm><primary>PanoTools</primary><secondary>Hugin frontend</secondary></indexterm>
 
-<para>Da PTPicker lider under at programmet ikke udvikles længere, har
-en gruppe udviklere påbegyndt arbejdet på programmet Hugin. På figur
-<xref linkend="Hugin-fig"/> kan du se et skærmskud af Hugin.</para>
+<para>Da PTPicker lider under at programmet ikke udvikles lÃ¦ngere, har
+en gruppe udviklere pÃ¥begyndt arbejdet pÃ¥ programmet Hugin. PÃ¥ figur
+<xref linkend="Hugin-fig"/> kan du se et skÃ¦rmskud af Hugin.</para>
 
 <figure id="Hugin-fig" float="1">
 <title>Punkt matching med Hugin</title>
 <graphic fileref="Hugin.&magic;"  scale="72"></graphic>
 </figure>
 
-<para>Hugins hjemmeside er på <ulink
+<para>Hugins hjemmeside er pÃ¥ <ulink
 url="http://hugin.sourceforge.net/">hugin.sf.net</ulink>. Hugin er
 ikke specielt modent endnu &ndash; men hvis man installerer det fra
-CVS, kan man faktisk få det til at virke bedre end PTPicker. Det
-kræver dog at man først har installeret et bibliotek kaldet
+CVS, kan man faktisk fÃ¥ det til at virke bedre end PTPicker. Det
+krÃ¦ver dog at man fÃ¸rst har installeret et bibliotek kaldet
 "wxWindows", inklusiv support for "xrc". Det nemmeste sted at finde
-disse biblioteker er, (september 2003), på <ulink
+disse biblioteker er, (september 2003), pÃ¥ <ulink
 url="http://rpm.pbone.net/">rpm.pbone.net</ulink>, hvor filen
 <filename>wxGTK-xrc-2.4.1-0.fdr.4.rh90.i386.rpm</filename> kunne
 findes og installeres.</para>
 
-<para>Når man har installeret Hugin, kan man ret nemt anvende
-programmet til at sætte kontrolpunkter, og lave et panorama
-billede. Husk at læse Hugins README, der beskriver hvordan man hurtigt
-kan lave et panorama billede. Husk også at sætte FOV til noget der
-passer med den vinkel dine billeder dækkert (Hugin antager 360 til at
+<para>NÃ¥r man har installeret Hugin, kan man ret nemt anvende
+programmet til at sÃ¦tte kontrolpunkter, og lave et panorama
+billede. Husk at lÃ¦se Hugins README, der beskriver hvordan man hurtigt
+kan lave et panorama billede. Husk ogsÃ¥ at sÃ¦tte FOV til noget der
+passer med den vinkel dine billeder dÃ¦kkert (Hugin antager 360 til at
 starte med, hvilket ikke vil give noget billede, med mindre dine
-billeder dækker mere end 360 grader). Det endelige billede ender dog
+billeder dÃ¦kker mere end 360 grader). Det endelige billede ender dog
 et lidt underligt sted, nemlig i
 <filename>/usr/tmp/hugin*/noget</filename>.</para>
 
-<para>Hugin bliver udviklet aktivt, så forhåbentligt bliver disse
+<para>Hugin bliver udviklet aktivt, sÃ¥ forhÃ¥bentligt bliver disse
 fejl snart rettet.</para>
 
 </sect4> <!-- Hugin -->
@@ -751,15 +751,15 @@ fejl snart rettet.</para>
  <primary>digitalkamera</primary>
 </indexterm>
 
-<para>Mulighederne for digitale kameraer eksploderer disse år. Langt
-de fleste kameraer på markedet i dag kan anvendes under Linux.</para>
+<para>Mulighederne for digitale kameraer eksploderer disse Ã¥r. Langt
+de fleste kameraer pÃ¥ markedet i dag kan anvendes under Linux.</para>
 
 <para>Et digitalkamera gemmer som hovedregel de billeder der bliver
-taget på et medie (ramkort) der kan rumme adskillige
-billeder. Grundlæggende er der to måder at få billeder fra et kamera
-ind på din PC. Du kan forbinde kameraet til din PC med et kabel, eller
-du kan tage ramkortet ud af kameraet og bruge en kortlæser eller et
-pcmcia/cardbus slot til at aflæse kortet med.</para>
+taget pÃ¥ et medie (ramkort) der kan rumme adskillige
+billeder. GrundlÃ¦ggende er der to mÃ¥der at fÃ¥ billeder fra et kamera
+ind pÃ¥ din PC. Du kan forbinde kameraet til din PC med et kabel, eller
+du kan tage ramkortet ud af kameraet og bruge en kortlÃ¦ser eller et
+pcmcia/cardbus slot til at aflÃ¦se kortet med.</para>
 
 <!-- =================================================================== -->
 <!-- Tilgang via ramkort -->
@@ -770,39 +770,39 @@ pcmcia/cardbus slot til at aflæse kortet med.</para>
 <indexterm><primary>Compact Flash</primary></indexterm>
 
 <para>Hvis dit kamera bruger et Compact Flash-kort, kan du vha. af en
-kortlæser få adgang til billederne som om kortet var en disk. Hvordan
-du præist gør afhænger lidt af kortlæseren. Hvis den er forbundet som
+kortlÃ¦ser fÃ¥ adgang til billederne som om kortet var en disk. Hvordan
+du prÃ¦ist gÃ¸r afhÃ¦nger lidt af kortlÃ¦seren. Hvis den er forbundet som
 USB skal du kigge i <xref linkend="usb-kamera"/> &ndash; der er
 formentlig tale om et "USB Mass Storage". Hvis du har en
 PCMCIA/cardbus port i dit system (f.eks. en laptop) kan du anskaffe
 dig en Compact Flash til PC Card adapter og stikke den i systemet. Her
-bør dit system automatisk genkende kortet når det stikkes ind og
-dynamisk tilføje en ny IDE-disk til systemet, der så kan mountes
-(afhængigt af den nye disks navn, kig i
+bÃ¸r dit system automatisk genkende kortet nÃ¥r det stikkes ind og
+dynamisk tilfÃ¸je en ny IDE-disk til systemet, der sÃ¥ kan mountes
+(afhÃ¦ngigt af den nye disks navn, kig i
 <filename>/var/log/messages</filename>) med f.eks. <command>mkdir
 /mnt/cfa</command> efterfulgt af <command>mount /dev/hdc1
-/mnt/cfa</command>. På en distribution som Mandrake fungerer det som
-regel automatisk, og du vil få et nyt diskikon på skrivebordet når du
-indsætter kortet. Det kan du så klikke på for at se indholdet på
+/mnt/cfa</command>. PÃ¥ en distribution som Mandrake fungerer det som
+regel automatisk, og du vil fÃ¥ et nyt diskikon pÃ¥ skrivebordet nÃ¥r du
+indsÃ¦tter kortet. Det kan du sÃ¥ klikke pÃ¥ for at se indholdet pÃ¥
 kortet.</para>
 
 <indexterm><primary>Compact Flash</primary><secondary>problem med
 kerne 2.4.21</secondary></indexterm>
-<sidebar><para>Bemærk at der er et problem i 2.4.21 kernen (som
-anvendes af f.eks. Mandrake 9.1, der gør at mange Compact Flash-kort
+<sidebar><para>BemÃ¦rk at der er et problem i 2.4.21 kernen (som
+anvendes af f.eks. Mandrake 9.1, der gÃ¸r at mange Compact Flash-kort
 ikke kan bruges som IDE-diske. Det skyldes ny IDE-kode i disse kerner
-der beklageligvis udløser en fejl i mange Compact Flash-kort, så deres
-firmware crasher. Hvis du oplever det, må du afvente en nyere kerne
-med dette problem løst eller bruge en ældre kerne. Endvidere kan
+der beklageligvis udlÃ¸ser en fejl i mange Compact Flash-kort, sÃ¥ deres
+firmware crasher. Hvis du oplever det, mÃ¥ du afvente en nyere kerne
+med dette problem lÃ¸st eller bruge en Ã¦ldre kerne. Endvidere kan
 Mandrake 9.1 have problemer med kombinationen af devfsd og
-PCMCIA/cardbus. Mandrake 9.2 løser forhåbentligt dette problem.</para>
+PCMCIA/cardbus. Mandrake 9.2 lÃ¸ser forhÃ¥bentligt dette problem.</para>
 </sidebar>
 
-<para>Når du tilgår dine billeder på denne måde, kan du blot slette
+<para>NÃ¥r du tilgÃ¥r dine billeder pÃ¥ denne mÃ¥de, kan du blot slette
 billederne fra ramkortet umiddelbart efter du har kopieret dem til
-din PC. Det er en nem og simpel løsning, hvis du har muligheden og
+din PC. Det er en nem og simpel lÃ¸sning, hvis du har muligheden og
 har endvidere den fordel at det er hurtigere end at tilslutte via USB
-&ndash; idet begrænsningen sættes af hastigheden af ramkortet, ikke
+&ndash; idet begrÃ¦nsningen sÃ¦ttes af hastigheden af ramkortet, ikke
 USB kommunikationen.</para>
 
 </sect2> <!-- ramkort og digital -->
@@ -818,39 +818,39 @@ USB kommunikationen.</para>
 <indexterm><primary>PTP</primary></indexterm>
 <indexterm><primary>USB Mass Storage</primary></indexterm>
 
-<para>Hvis du vælger/er nødt til at forbinde med et kabel, er det i
-dag typisk en USB port på PC'en du skal anvende. Ældre kameraer
-tilsluttes nogle gange til en seriel port, men vi vil her nøjes med at
-med at omtale USB tilslutninger. Seriel er i vidt omfang understøttet
+<para>Hvis du vÃ¦lger/er nÃ¸dt til at forbinde med et kabel, er det i
+dag typisk en USB port pÃ¥ PC'en du skal anvende. Ã†ldre kameraer
+tilsluttes nogle gange til en seriel port, men vi vil her nÃ¸jes med at
+med at omtale USB tilslutninger. Seriel er i vidt omfang understÃ¸ttet
 af Gphoto2 dog. Tilsvarende for de enkelte kameraer der tilsluttes med
 firewire/IEEE1394 porte.</para>
 
 <para>For en USB forbindelse findes et antal muligheder. Kameraet kan
-anvende sin egen protokol til at overføre billeder med, kameraet kan
+anvende sin egen protokol til at overfÃ¸re billeder med, kameraet kan
 anvende "Picture Transfer Protocol" (PTP) og endeligt kan kameraet
-understøtte det der hedder "USB Mass Storage". De fleste nyere
-kameraer understøtter mindst en af de to sidste muligheder.</para>
+understÃ¸tte det der hedder "USB Mass Storage". De fleste nyere
+kameraer understÃ¸tter mindst en af de to sidste muligheder.</para>
 
-<para>Hvis dit kamera er noteret som "USB Mass Storage" så kan du med
-en nyere Linux installation (kerne 2.4) køre SCSI over USB. Det
+<para>Hvis dit kamera er noteret som "USB Mass Storage" sÃ¥ kan du med
+en nyere Linux installation (kerne 2.4) kÃ¸re SCSI over USB. Det
 betyder at dit Linux system vil opfatte kameraet som en slags disk,
-tilsluttet over USB. Så kan du få adgang til billederne i kameraet med
-<command>mkdir /mnt/kamera</command>. Herefter køres <command>mount
-/dev/sda1 /mnt/kamera</command>, hvis det ikke virker så prøv
+tilsluttet over USB. SÃ¥ kan du fÃ¥ adgang til billederne i kameraet med
+<command>mkdir /mnt/kamera</command>. Herefter kÃ¸res <command>mount
+/dev/sda1 /mnt/kamera</command>, hvis det ikke virker sÃ¥ prÃ¸v
 <command>mount /dev/sda2 /mnt/kamera</command>, <command>mount
-/dev/sdb1 /mnt/kamera</command> (kommandoen køres som root). Det
-virker oftest på en af disse måder. (Du kan typisk se i filen
+/dev/sdb1 /mnt/kamera</command> (kommandoen kÃ¸res som root). Det
+virker oftest pÃ¥ en af disse mÃ¥der. (Du kan typisk se i filen
 <filename>/var/log/messages</filename> eller
 <filename>/proc/scsi/scsi</filename> hvilken enhed det er du rent
 faktisk skal mounte). Det virker i princippet som beskrevet i
 afsnittet overfor om montering af ramkort.</para>
 
-<para>Hvis dit kamera ikke understøtter "USB Mass Storage", er det
-formentlig understøttet af GPhoto2. GPhoto2 er et programbibliotek til
-at håndtere digitale kameraer med under Linux og andre Unix
-systemer. GPhoto2 understøtter et væld af forskellige kameraer
+<para>Hvis dit kamera ikke understÃ¸tter "USB Mass Storage", er det
+formentlig understÃ¸ttet af GPhoto2. GPhoto2 er et programbibliotek til
+at hÃ¥ndtere digitale kameraer med under Linux og andre Unix
+systemer. GPhoto2 understÃ¸tter et vÃ¦ld af forskellige kameraer
 (omkring 400), enten via en speciel driver for kameraet, eller via
-PTP, og det er næsten givet at du vil ønske at installere dette
+PTP, og det er nÃ¦sten givet at du vil Ã¸nske at installere dette
 bibliotek, hvis du vil anvende dit kamera under Linux og tilslutter
 det via en ledning.</para>
 </sect2> <!-- tilslutning via usb/seriel -->
@@ -866,34 +866,34 @@ det via en ledning.</para>
 <indexterm><primary>libgphoto2</primary></indexterm>
 
 
-<para>Gphoto2 er som nævnt næsten ikke til at komme udenom, hvis du
-tilslutter dit kamera via USB. Næsten alle distributioner har
+<para>Gphoto2 er som nÃ¦vnt nÃ¦sten ikke til at komme udenom, hvis du
+tilslutter dit kamera via USB. NÃ¦sten alle distributioner har
 <filename>gphoto2</filename> og <filename>libgphoto2</filename> som
-pakker, ellers kan de findes på <ulink
+pakker, ellers kan de findes pÃ¥ <ulink
 url="http://www.gphoto.org/">www.gphoto.org</ulink>. Dog skal
-du være opmærksom på at hvis dit kamera er relativt nyt, er det ikke
-sikkert at den pakke der følger med din distribution understøtter
+du vÃ¦re opmÃ¦rksom pÃ¥ at hvis dit kamera er relativt nyt, er det ikke
+sikkert at den pakke der fÃ¸lger med din distribution understÃ¸tter
 kameraet. Gphoto2 er tekstbaseret og du kan teste for hvilke pakker
-der understøttes med kommandoen <command>gphoto2
---list-cameras</command>.  Hvis dit kamera ikke er understøttet af den
-pakker der følger med din distribution, kan du kigge på <ulink
+der understÃ¸ttes med kommandoen <command>gphoto2
+--list-cameras</command>.  Hvis dit kamera ikke er understÃ¸ttet af den
+pakker der fÃ¸lger med din distribution, kan du kigge pÃ¥ <ulink
 url="http://www.gphoto.org/proj/libgphoto2/support.php">
 www.gphoto.org/proj/libgphoto2/support.php</ulink> for en liste
-over de kameraer der er understøttet med den nyeste version af
-gphoto2. Hvis denne understøtter dit kamera, må du installere den nye
+over de kameraer der er understÃ¸ttet med den nyeste version af
+gphoto2. Hvis denne understÃ¸tter dit kamera, mÃ¥ du installere den nye
 gphoto2. Det er ret nemt &ndash; hvis du installerer fra kildetekst kan
-du endda nøjes med at inkludere understøttelse af f.eks. Canon
+du endda nÃ¸jes med at inkludere understÃ¸ttelse af f.eks. Canon
 kameraer, hvis dit kamera er fra Canon.</para>
 
-<para>Hvis dit kamera ikke er med på listen, kan det godt være at du kan
+<para>Hvis dit kamera ikke er med pÃ¥ listen, kan det godt vÃ¦re at du kan
 lokke GPhoto2 til at virke med det alligevel. En god mulighed er at
-søge på det kameranavn du gerne vil købe på <ulink
+sÃ¸ge pÃ¥ det kameranavn du gerne vil kÃ¸be pÃ¥ <ulink
 url="http://marc.theaimsgroup.com/?l=gphoto&amp;r=1&amp;w=2">
 marc.theaimsgroup.com/?l=gphoto&amp;r=1&amp;w=2</ulink>.  Det
 er maillinglisten for GPhoto2 og der er gode muligheder for at finde
-mere information om kameraer der (endnu) ikke er understøttet.</para>
+mere information om kameraer der (endnu) ikke er understÃ¸ttet.</para>
 
-<para>Når du har installeret Gphoto2, kan du f.eks. liste de billeder,
+<para>NÃ¥r du har installeret Gphoto2, kan du f.eks. liste de billeder,
 der i kameraet: </para>
 
 <screen><prompt>[tyge@hven ~]$ </prompt><userinput>gphoto2 --auto-detect -L</userinput>
@@ -914,16 +914,16 @@ There are no files in folder '/store_80000001'
 
 
 <para>
-Hvis kameraet ikke kan autodetekteres, så kan du, som nævnt, bruge
-<command>gphoto2 --list-cameras</command> til at få listet de
-kamera-navne som er understøttet. Find dit kamera, og anvend dette som
+Hvis kameraet ikke kan autodetekteres, sÃ¥ kan du, som nÃ¦vnt, bruge
+<command>gphoto2 --list-cameras</command> til at fÃ¥ listet de
+kamera-navne som er understÃ¸ttet. Find dit kamera, og anvend dette som
 argument til <command>gphoto2 --model</command>.
 <citerefentry><refentrytitle>gphoto2</refentrytitle>
-<manvolnum>1</manvolnum></citerefentry> manual siden er også god at
-læse.</para>
+<manvolnum>1</manvolnum></citerefentry> manual siden er ogsÃ¥ god at
+lÃ¦se.</para>
 
 
-<para>Vil du herefter hente billederne så gøres dette med</para>
+<para>Vil du herefter hente billederne sÃ¥ gÃ¸res dette med</para>
 
 <screen><prompt>[tyge@hven ~]$ </prompt><userinput>gphoto2 --auto-detect -P</userinput>
 Model                          Port
@@ -939,28 +939,28 @@ Downloading 'IMG_0239.JPG' from folder '/store_00010001/DCIM/102CANON'...
 Saving file as IMG_0239.JPG
 </screen>
 
-<para>Billederne gemmes i det katalog du står i, og uden yderligere
+<para>Billederne gemmes i det katalog du stÃ¥r i, og uden yderligere
 argumenter vil billederne ikke blive slettet fra kameraet.</para>
 
 <para>Hvis du har installeret GPhoto2 fra en pakke der kommer med din
-distribution er systemet typisk blevet konfigureret således at den
-bruger der er logget ind på maskinen via konsollen eller X har ret til
+distribution er systemet typisk blevet konfigureret sÃ¥ledes at den
+bruger der er logget ind pÃ¥ maskinen via konsollen eller X har ret til
 at bruge kameraet (eller rettere, den USB enhed der bliver oprettet
-når kameraet tilsluttet). Hvis ikke dette er tilfældet &ndash; eller
-hvis du har installeret fra kildeteksten &ndash; kan du på <ulink
+nÃ¥r kameraet tilsluttet). Hvis ikke dette er tilfÃ¦ldet &ndash; eller
+hvis du har installeret fra kildeteksten &ndash; kan du pÃ¥ <ulink
 url="http://www.gphoto.org/doc/manual/permissions-usb.html">
 www.gphoto.org/doc/manual/permissions-usb.html</ulink> finde en
-meget simpel og letforståelig vejledning i at sætte dit system op
-således at rettighederne automatisk bliver sat korrekt når kameraet
+meget simpel og letforstÃ¥elig vejledning i at sÃ¦tte dit system op
+sÃ¥ledes at rettighederne automatisk bliver sat korrekt nÃ¥r kameraet
 tilsluttes. (En detalje; Mandrake skal behandles som Debian idet
-Mandrake inkluderer USB værktøjer fra Debian). Her kan du også finde
-anvisninger på hvordan du kan sætte dit system op, så et bestemt
-program bliver startet når dit kamera tilsluttes, mv. Alt sammen meget
-fikst. I det følgende vi vil komme ind på en række programmer du måske
-kunne tænke dig at starte når dit kamera tilsluttes.</para>
+Mandrake inkluderer USB vÃ¦rktÃ¸jer fra Debian). Her kan du ogsÃ¥ finde
+anvisninger pÃ¥ hvordan du kan sÃ¦tte dit system op, sÃ¥ et bestemt
+program bliver startet nÃ¥r dit kamera tilsluttes, mv. Alt sammen meget
+fikst. I det fÃ¸lgende vi vil komme ind pÃ¥ en rÃ¦kke programmer du mÃ¥ske
+kunne tÃ¦nke dig at starte nÃ¥r dit kamera tilsluttes.</para>
 
-<para>Hvis du har problemer med at få teknikkerne nævnt ovenfor til at
-virke, kan følgende sider måske være en hjælp: <ulink
+<para>Hvis du har problemer med at fÃ¥ teknikkerne nÃ¦vnt ovenfor til at
+virke, kan fÃ¸lgende sider mÃ¥ske vÃ¦re en hjÃ¦lp: <ulink
 url="http://www.teaser.fr/~hfiguiere/linux/digicam.html">
 www.teaser.fr/~hfiguiere/linux/digicam.html</ulink> samt <ulink
 url="http://mirrors.sunsite.dk/ldp/HOWTO/USB-Digital-Camera-HOWTO/index.html">
@@ -977,7 +977,7 @@ mirrors.sunsite.dk/ldp/HOWTO/USB-Digital-Camera-HOWTO/index.html</ulink>.</para>
 
 <para>
 GTKam er et lille og overskueligt program til at hente billeder fra et
-digitalkamera og ned på en PC. Det er udviklet af Gnome-folkene, men
+digitalkamera og ned pÃ¥ en PC. Det er udviklet af Gnome-folkene, men
 kan sagtens bruges under KDE.
 </para>
 
@@ -986,7 +986,7 @@ kan sagtens bruges under KDE.
 <title>Indstilling af GTKam</title>
 
 <para>
-Først skal vi indstille GTKam til vores kamera. I de fleste tilfælde
+FÃ¸rst skal vi indstille GTKam til vores kamera. I de fleste tilfÃ¦lde
 kan vi indstille GTKam ganske let via USB og bede GTKam klare resten:
 </para>
 
@@ -999,13 +999,13 @@ Tilslut kameraet til computeren med et USB-kabel.
 </listitem>
 <listitem> 
  <para>
-Tænd kameraet og sæt det til at vise billeder ("Play-mode", eller
-   hvad det nu hedder på dit kamera)
+TÃ¦nd kameraet og sÃ¦t det til at vise billeder ("Play-mode", eller
+   hvad det nu hedder pÃ¥ dit kamera)
  </para>
 </listitem>
 <listitem> 
  <para>
-Gå ind i menuen og vælg camera -> add camera.
+GÃ¥ ind i menuen og vÃ¦lg camera -> add camera.
  </para>
 </listitem>
 </orderedlist>
@@ -1015,16 +1015,16 @@ Der dukker nu en dialogboks op:
 </para>
 
 <figure id="gtkam-config-simpel-fig" float="1">
-<title>Simpel opsætning af Gtkam</title>
+<title>Simpel opsÃ¦tning af Gtkam</title>
 <graphic fileref="gtkam-config-simpel.&magic;" scale="50"></graphic>
 </figure>
 
 <para>
-Her kan du vælge kamera-model og hvilken port det bruger til at
-snakke med computeren. GTKam kan i nogle tilfælde selv bestemme
-hvilket kamera du har. Tryk på "Detect" og se hvad der sker. Hvis
-GTKam har genkendt dit kamera vil model-navnet nu fremgå. Hvis det
-ikke lykkes, kan du manuelt vælge modellen fra en temmelig omfattende
+Her kan du vÃ¦lge kamera-model og hvilken port det bruger til at
+snakke med computeren. GTKam kan i nogle tilfÃ¦lde selv bestemme
+hvilket kamera du har. Tryk pÃ¥ "Detect" og se hvad der sker. Hvis
+GTKam har genkendt dit kamera vil model-navnet nu fremgÃ¥. Hvis det
+ikke lykkes, kan du manuelt vÃ¦lge modellen fra en temmelig omfattende
 liste:
 </para>
 
@@ -1035,8 +1035,8 @@ liste:
 </figure>
 
 <para>
-Her kan du også indstille port, for eksempel hvis du ønsker at bruge GTKam med
-en kortlæser til CompactFlash.
+Her kan du ogsÃ¥ indstille port, for eksempel hvis du Ã¸nsker at bruge GTKam med
+en kortlÃ¦ser til CompactFlash.
 </para>
 
 </sect3>
@@ -1045,8 +1045,8 @@ en kortlæser til CompactFlash.
 <title>Brug af GTKam &ndash; Hent billeder</title>
 
 <para>
-Vi vil nu hente nogle fotos fra kameraet ned på din PC. Når du starter
-GTKam bliver du mødt af en velkomstskærm som denne:
+Vi vil nu hente nogle fotos fra kameraet ned pÃ¥ din PC. NÃ¥r du starter
+GTKam bliver du mÃ¸dt af en velkomstskÃ¦rm som denne:
 </para>
 
 
@@ -1056,9 +1056,9 @@ GTKam bliver du mødt af en velkomstskærm som denne:
 </figure>
 
 <para>
-Længst til venstre er der en liste over det/de kamera/er, du har
-indstiller. Du kan bladre i billederne på kameraet ved at bevæge dig
-ind i filstrukturen lænst til venstre. Det kan se sådan her ud:
+LÃ¦ngst til venstre er der en liste over det/de kamera/er, du har
+indstiller. Du kan bladre i billederne pÃ¥ kameraet ved at bevÃ¦ge dig
+ind i filstrukturen lÃ¦nst til venstre. Det kan se sÃ¥dan her ud:
 </para>
 
 
@@ -1068,31 +1068,31 @@ ind i filstrukturen lænst til venstre. Det kan se sådan her ud:
 </figure>
 
 <para>
-GTKam viser dig en oversigt med både filnavne og et lille udsnit
-("thumbnail"). Du kan styre størrelsen på disse thumbnails ved at
-trykke på "Zoom ind" eller "Zoom Out".
+GTKam viser dig en oversigt med bÃ¥de filnavne og et lille udsnit
+("thumbnail"). Du kan styre stÃ¸rrelsen pÃ¥ disse thumbnails ved at
+trykke pÃ¥ "Zoom ind" eller "Zoom Out".
 </para>
 
 <para>
-Du kan nu vælge at hente alle eller udvalgte billeder ned på PC'en:
+Du kan nu vÃ¦lge at hente alle eller udvalgte billeder ned pÃ¥ PC'en:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-Alle: Vælg menuen "File" -> "Save Photos" -> "All".
+Alle: VÃ¦lg menuen "File" -> "Save Photos" -> "All".
  </para>
 </listitem>
 <listitem> 
  <para>
-  Udvalgte: Hold CTRL nede mens du klikker på de billeder du vil have,
-  og vælg derefter "File" -> "Save Photos" -> "Selected".
+  Udvalgte: Hold CTRL nede mens du klikker pÃ¥ de billeder du vil have,
+  og vÃ¦lg derefter "File" -> "Save Photos" -> "Selected".
  </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Der dukker nu en dialogboks op, hvor du kan vælge hvor billederne skal
+Der dukker nu en dialogboks op, hvor du kan vÃ¦lge hvor billederne skal
 gemmes:
 </para>
 
@@ -1102,7 +1102,7 @@ gemmes:
 </figure>
 
 <para>
-Her skal du bare vælge stien til din billedsamling, og trykke
+Her skal du bare vÃ¦lge stien til din billedsamling, og trykke
 "OK", hvorefter GTKam begynder at hente billederne til din
 harddisk:
 </para>
@@ -1120,27 +1120,27 @@ harddisk:
 <title>Brug af GTKam &ndash; Slette billeder</title>
 
 <para>
-Når du er færdig kan du slette alle eller udvalgte billeder fra
-kameraet på lignende vis som da du hentede dem:
+NÃ¥r du er fÃ¦rdig kan du slette alle eller udvalgte billeder fra
+kameraet pÃ¥ lignende vis som da du hentede dem:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-alle: Vælg "File" -> "Delete Photos" -> "Alle".
+alle: VÃ¦lg "File" -> "Delete Photos" -> "Alle".
  </para>
 </listitem>
 <listitem> 
  <para>
-Udvalgte: Hold CTRL nede mens du klikker på de billeder du vil
- slette, og vælg herefter "File" -> "Delete Photos" -> "Selected".
+Udvalgte: Hold CTRL nede mens du klikker pÃ¥ de billeder du vil
+ slette, og vÃ¦lg herefter "File" -> "Delete Photos" -> "Selected".
  </para>
 </listitem>
 </itemizedlist>
 
 
 <para>
-GTKam beder dig altid bekræfte, inden den sletter noget:
+GTKam beder dig altid bekrÃ¦fte, inden den sletter noget:
 </para>
 
 <figure id="gtkam-delete-fig" float="1">
@@ -1153,9 +1153,9 @@ GTKam beder dig altid bekræfte, inden den sletter noget:
 <sect3 id="gtkam-exif">
 <title>EXIF &ndash; metadata til billederne</title>
 <para>
-Ved at højre-klikke på et billede og vælge "Exif", får du alle de
+Ved at hÃ¸jre-klikke pÃ¥ et billede og vÃ¦lge "Exif", fÃ¥r du alle de
 meta-data, kameraet har registreret. Det er eksempelvis oplysninger om
-dato, blitz, blænde, lukketid etc.
+dato, blitz, blÃ¦nde, lukketid etc.
 </para>
 
 
@@ -1179,8 +1179,8 @@ kameraets billed-filer.
 <title>Digikam</title>
 <indexterm><primary>Digikam</primary></indexterm>
 <para>
-Er du til KDE-programmer så er <command>digikam</command>
-godt. Det findes f.eks. på 
+Er du til KDE-programmer sÃ¥ er <command>digikam</command>
+godt. Det findes f.eks. pÃ¥ 
 <ulink url="http://digikam.sourceforge.net/">digikam.sourceforge.net/</ulink>.
 </para>
 
@@ -1190,7 +1190,7 @@ godt. Det findes f.eks. på
 </figure>
 
 <figure id="Digikam1-fig" float="1">
-<title>Opsætning af Digikam</title>
+<title>OpsÃ¦tning af Digikam</title>
 <graphic fileref="Digikam1.&magic;" scale="40"></graphic>
 </figure>
 </sect2>
@@ -1203,13 +1203,13 @@ godt. Det findes f.eks. på
 <title>flphoto</title>
 <indexterm><primary>flphoto</primary></indexterm>
 <para>
-Et andet program til håndtering af digitale billeder er flphoto.
+Et andet program til hÃ¥ndtering af digitale billeder er flphoto.
 Det er lidt simpelt, men anvendeligt.
 </para>
 
 <para>
 Du importerer fra kameraet og har herefter adgang til alle 
-billeder i kameraet hvis kameraet er understøttet.
+billeder i kameraet hvis kameraet er understÃ¸ttet.
 </para>
 
 <figure id="flphoto-fig" float="1">
@@ -1244,20 +1244,20 @@ billeder i kameraet hvis kameraet er understøttet.
  <primary>JPG billeder</primary><secondary>exif data i</secondary>
 </indexterm>
 
-<para>Exif står for "Exchangeable Image File Format" og er en standard
-til at gemme metadata i billeder. Den bliver især brugt med JPG
-billeder, og alle nyere digitalkameraer indsætter Exif data i
+<para>Exif stÃ¥r for "Exchangeable Image File Format" og er en standard
+til at gemme metadata i billeder. Den bliver isÃ¦r brugt med JPG
+billeder, og alle nyere digitalkameraer indsÃ¦tter Exif data i
 de billeder de tager, med f.eks. oplysninger om linsen, dato, blitz,
-blænde, lukketid etc. Det er vældigt nyttigt hvis du f.eks. skal
-sortere billeder eller på anden måde manipulere dem og har brug for at
+blÃ¦nde, lukketid etc. Det er vÃ¦ldigt nyttigt hvis du f.eks. skal
+sortere billeder eller pÃ¥ anden mÃ¥de manipulere dem og har brug for at
 vide noget om det billedet indeholder. Mange af de programmer vi har
-præsenteret til billedvisning eller browsning kan også vise og, i
-nogle tilfælde, ændre i Exif dataene.</para>
+prÃ¦senteret til billedvisning eller browsning kan ogsÃ¥ vise og, i
+nogle tilfÃ¦lde, Ã¦ndre i Exif dataene.</para>
 
-<para>I det følgende præsenteres et par programmer der er gode værktøjer,
+<para>I det fÃ¸lgende prÃ¦senteres et par programmer der er gode vÃ¦rktÃ¸jer,
 hvis du vil arbejde med exif data. Der findes flere programmer til
 Linux, men disse er de mest udbredte. Hvis du vil vide mere om Exif
-kan du besøge <ulink url="http://www.exif.org/">
+kan du besÃ¸ge <ulink url="http://www.exif.org/">
 www.exif.org</ulink>.</para>
 
 <!-- =================================================================== --> 
@@ -1270,13 +1270,13 @@ www.exif.org</ulink>.</para>
 <primary>Exif data</primary> <secondary>manipulation med
 Jhead</secondary> </indexterm>
 
-<para>Jhead er et kommandolinjeprogram der kan bruges til at se, ændre
-og kopiere exif informationer. Det er særligt nyttigt til at få en
+<para>Jhead er et kommandolinjeprogram der kan bruges til at se, Ã¦ndre
+og kopiere exif informationer. Det er sÃ¦rligt nyttigt til at fÃ¥ en
 simpel oversigt over de mest interessante Exif informationer, herunder
 "Focal length (35mm equivalent)" som man ellers normalt skal beregne
-selv og til automatisk at rotere billeder baseret på
+selv og til automatisk at rotere billeder baseret pÃ¥
 orienteringsflaget sat af f.eks. nyere Canon kameraer. At bruge Jhead
-kan f.eks. se sådan her ud:</para>
+kan f.eks. se sÃ¥dan her ud:</para>
 
 <screen><prompt>[tyge@hven ~]$ </prompt><userinput>jhead IMG_0001.JPG</userinput>
 File name    : IMG_0001.JPG
@@ -1297,12 +1297,12 @@ Jpeg process : Baseline
 
 
 <indexterm><primary>Autorotation af JGP billeder</primary></indexterm>
-<para>I ovenstående kan det f.eks. ses hvornår billedet blev taget, og
-hvilken længde objektivet var sat til.</para>
+<para>I ovenstÃ¥ende kan det f.eks. ses hvornÃ¥r billedet blev taget, og
+hvilken lÃ¦ngde objektivet var sat til.</para>
 
 <para>En anden meget interessant mulighed med Jhead er
 <command>-autorot</command> optionen, der anvendes
-f.eks. således:</para>
+f.eks. sÃ¥ledes:</para>
 
 <screen><prompt>[tyge@hven ~]$ </prompt><userinput>jhead -autorot *</userinput>
 Cmd:jpegtran -rotate 90 IMG_0003.JPG > "IMG_0003.JPt"
@@ -1314,30 +1314,30 @@ Modified: IMG_0005.JPG
 Cmd:jpegtran -rotate 90 IMG_0009.JPG > "IMG_0009.JPt"
 </screen>
 
-<para>Autorotation kræver at programmet <command>jpegtran</command>
-findes på systemet. Dette program er typisk med i en pakke kaldet
-"libjpeg-progs" eller lignende, ellers kan det nemt findes på
+<para>Autorotation krÃ¦ver at programmet <command>jpegtran</command>
+findes pÃ¥ systemet. Dette program er typisk med i en pakke kaldet
+"libjpeg-progs" eller lignende, ellers kan det nemt findes pÃ¥
 nettet. Husk hvis du roterer alle dine billeder og derefter sender dem
-til fremkaldelse, at det kan give problemer fordi fotobutikken måske
-forsøger at trykke dem på den forkerte led. Så det kan være at du
-bliver nødt til at rotere billederne tilbage inden
+til fremkaldelse, at det kan give problemer fordi fotobutikken mÃ¥ske
+forsÃ¸ger at trykke dem pÃ¥ den forkerte led. SÃ¥ det kan vÃ¦re at du
+bliver nÃ¸dt til at rotere billederne tilbage inden
 fremkaldelse.</para>
 
-<para>Andre nyttige funktioner Jhead understøtter er
-f.eks. <command>-ft</command> som sætter tidsstemplet for billedfilen
+<para>Andre nyttige funktioner Jhead understÃ¸tter er
+f.eks. <command>-ft</command> som sÃ¦tter tidsstemplet for billedfilen
 i filsystemet til det tidspunkt der er gemt i Exif
-informationen. Jhead har i det hele taget et væld af nyttige
-funktioner, og det kan godt betale sig at læse
+informationen. Jhead har i det hele taget et vÃ¦ld af nyttige
+funktioner, og det kan godt betale sig at lÃ¦se
 <citerefentry><refentrytitle>jhead</refentrytitle>
 <manvolnum>1</manvolnum></citerefentry> manual siden.</para>
 
-<para>Jhead følger med de fleste distributioner, ellers er hjemmesiden
+<para>Jhead fÃ¸lger med de fleste distributioner, ellers er hjemmesiden
 <ulink
 url="http://www.sentex.net/~mwandel/jhead/">www.sentex.net/~mwandel/jhead/</ulink>.
 <command>-autorot</command> funktionen er en relativ ny funktion i
-Jhead, og ikke del af f.eks. den pakke der følger med Mandrake 9.1. Så
-hvis du skal bruge den funktion, må du nok ud på nettet og hente en
-nyere udgave (i Mandrakes tilfælde findes en nyere udgave i cooker
+Jhead, og ikke del af f.eks. den pakke der fÃ¸lger med Mandrake 9.1. SÃ¥
+hvis du skal bruge den funktion, mÃ¥ du nok ud pÃ¥ nettet og hente en
+nyere udgave (i Mandrakes tilfÃ¦lde findes en nyere udgave i cooker
 grenen).</para>
 
 
@@ -1358,29 +1358,29 @@ exif</secondary></indexterm> <indexterm> <primary>Exif data</primary>
 
 <para>Programmet Exif kan ligesom Jhead anvendes til at se exif
 informationerne i billeder der har exif information. I forhold til
-Jhead er Exifs information mere stringent, og måske bedre egnet til
-scripts, mv. Du kan læse mere om <command>exif</command> i
+Jhead er Exifs information mere stringent, og mÃ¥ske bedre egnet til
+scripts, mv. Du kan lÃ¦se mere om <command>exif</command> i
 <citerefentry><refentrytitle>exif</refentrytitle>
 <manvolnum>1</manvolnum></citerefentry></para>
 
 <para>gExif er en grafisk frontend til Exif (faktisk libexif) som
-arbejder på et billede af gangen. Det er meget nemt at redigere Exif
-information (f.eks. tilføje dato til et billede du har scannet ind,
-mv). gExif kan også bruges til at finde ud af hvad de enkelte
+arbejder pÃ¥ et billede af gangen. Det er meget nemt at redigere Exif
+information (f.eks. tilfÃ¸je dato til et billede du har scannet ind,
+mv). gExif kan ogsÃ¥ bruges til at finde ud af hvad de enkelte
 datafelter betyder, og kan vise GPS information. Du kan se et
-skærmskud af gExif på <xref linkend="gexif-fig"/>.</para>
+skÃ¦rmskud af gExif pÃ¥ <xref linkend="gexif-fig"/>.</para>
 
 <figure id="gexif-fig" float="1">
 <title>gexif</title>
 <graphic fileref="gexif.&magic;" scale="60"></graphic>
 </figure>
 
-<para>gExif kan også anvendes til at indsætte en ny thumbnail i
-billedet, hvilket kan være praktisk hvis du f.eks. har roteret
+<para>gExif kan ogsÃ¥ anvendes til at indsÃ¦tte en ny thumbnail i
+billedet, hvilket kan vÃ¦re praktisk hvis du f.eks. har roteret
 billedet eller lignende.</para>
 
 <para>Programmerne Exif og gExif er en del af libexif projektet. De
-fleste distributioner har disse som pakker, ellers er hjemmesiden på
+fleste distributioner har disse som pakker, ellers er hjemmesiden pÃ¥
 <ulink url="http://sourceforge.net/projects/libexif/">
 sourceforge.net/projects/libexif/ </ulink>.</para>
 
@@ -1396,14 +1396,14 @@ sourceforge.net/projects/libexif/ </ulink>.</para>
 <sect1 id="album">
 <title>Billedealbums</title>
 
-<para>Hvis du har en masse billeder, kan det være rart at få dem
-sorteret i albums. Mange af programmerne til digitalkameraer kan gøre
-dette, ligesom også flere af programmerne til at browse billeder med
+<para>Hvis du har en masse billeder, kan det vÃ¦re rart at fÃ¥ dem
+sorteret i albums. Mange af programmerne til digitalkameraer kan gÃ¸re
+dette, ligesom ogsÃ¥ flere af programmerne til at browse billeder med
 har gode muligheder for at lave albums. Disse albums kan dog typisk
 kun anvendes fra de programmer der har lavet dem. De programmer vi vil
-beskæftige os med i denne sektion, er programmer der er beregnet til
-at lave en album samling der f.eks. kan gemmes på en cd-rom, eller
-gøres tilgængeligt for andre på internettet.</para>
+beskÃ¦ftige os med i denne sektion, er programmer der er beregnet til
+at lave en album samling der f.eks. kan gemmes pÃ¥ en cd-rom, eller
+gÃ¸res tilgÃ¦ngeligt for andre pÃ¥ internettet.</para>
 
 <!-- =================================================================== --> 
 <!-- Bins --> 
@@ -1416,15 +1416,15 @@ gøres tilgængeligt for andre på internettet.</para>
 <indexterm><primary>bins-edit-gui</primary></indexterm>
 <indexterm><primary>bins_edit</primary></indexterm>
 
-<para>Først vi vil kigge på programmet Bins, der er beregnet til at
-lave statiske HTML albums, der f.eks. er velegnede til at brænde på en
+<para>FÃ¸rst vi vil kigge pÃ¥ programmet Bins, der er beregnet til at
+lave statiske HTML albums, der f.eks. er velegnede til at brÃ¦nde pÃ¥ en
 cd-rom. Programmet er med i de fleste distributioner, men ellers er
-programmets hjemmeside på <ulink url="http://bins.sautret.org/">
+programmets hjemmeside pÃ¥ <ulink url="http://bins.sautret.org/">
 bins.sautret.org</ulink>. Bins er et kommandolinjeprogram, og det
 tager to argumenter, nemlig et katalog med billeder i, og et katalog
-hvor det færdige album skal placeres. Derefter køres bins med
+hvor det fÃ¦rdige album skal placeres. Derefter kÃ¸res bins med
 f.eks. <command>bins -s joi Images/ Album/</command>. Bins er lidt
-længe om at køre, men du kan se et eksempel på resultatet på <xref
+lÃ¦nge om at kÃ¸re, men du kan se et eksempel pÃ¥ resultatet pÃ¥ <xref
 linkend="bins-fig"/> (vist i Konqueror).</para>
 
 <figure id="bins-fig" float="1">
@@ -1432,13 +1432,13 @@ linkend="bins-fig"/> (vist i Konqueror).</para>
 <graphic fileref="bins.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Når bins er færdig, kan man putte resultatet på sin hjemmeside,
-eller f.eks. brænde det til en cd-rom.</para>
+<para>NÃ¥r bins er fÃ¦rdig, kan man putte resultatet pÃ¥ sin hjemmeside,
+eller f.eks. brÃ¦nde det til en cd-rom.</para>
 
-<para>Bins bruger et selvstændigt program til at registrere metadata
+<para>Bins bruger et selvstÃ¦ndigt program til at registrere metadata
 (som titel, mv) for hvert enkelt billede (og for hele albummet). Til
-det første kan du anvende programmet <command>bins-edit-gui</command>
-der kaldes med de billeder man vil give metadata som argument. På
+det fÃ¸rste kan du anvende programmet <command>bins-edit-gui</command>
+der kaldes med de billeder man vil give metadata som argument. PÃ¥
 <xref linkend="bins_edit_gui-fig"/> kan du se hvordan dette program
 ser ud.</para>
 
@@ -1447,10 +1447,10 @@ ser ud.</para>
 <graphic fileref="bins_edit_gui.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Til at sætte metadata for selve albummet, anvendes programmet
-<command>bins_edit</command> som er et kommandolinjeprogram. Bemærk
+<para>Til at sÃ¦tte metadata for selve albummet, anvendes programmet
+<command>bins_edit</command> som er et kommandolinjeprogram. BemÃ¦rk
 at begge programmer skal anvendes inden <command>bins</command>
-køres &ndash; hvis du vil have metadata med.</para>
+kÃ¸res &ndash; hvis du vil have metadata med.</para>
 
 </sect2> <!-- bins -->
 
@@ -1464,20 +1464,20 @@ køres &ndash; hvis du vil have metadata med.</para>
 <indexterm><primary>Billedealbums</primary><secondary>med Gallery</secondary></indexterm> 
 
 <para>Gallery er endnu et program beregnet til at lave albums med. Til
-forskel fra Bins, er det ikke beregnet til at blive kørt fra en
-kommandolinje, men til at blive installeret som et script på en
-webserver (nærmere bestemt en Apache webserver der er udstyret med
-modulet "php"). Vi nævner Gallery her, fordi det er et rigtigt godt
-program til at gøre sine billeder tilgængelige over internettet for
+forskel fra Bins, er det ikke beregnet til at blive kÃ¸rt fra en
+kommandolinje, men til at blive installeret som et script pÃ¥ en
+webserver (nÃ¦rmere bestemt en Apache webserver der er udstyret med
+modulet "php"). Vi nÃ¦vner Gallery her, fordi det er et rigtigt godt
+program til at gÃ¸re sine billeder tilgÃ¦ngelige over internettet for
 f.eks. venner og familie, som f.eks. kan kommentere de enkelte
-billeder, nedhente dem i forskellige størrelser, osv. Der findes også
-udvidelser til Gallery som gør det muligt at lave statiske albums fra
+billeder, nedhente dem i forskellige stÃ¸rrelser, osv. Der findes ogsÃ¥
+udvidelser til Gallery som gÃ¸r det muligt at lave statiske albums fra
 de oplysninger der er i Gallerys database.</para>
 
-<para>Du kan finde Gallerys hjemmeside på <ulink
+<para>Du kan finde Gallerys hjemmeside pÃ¥ <ulink
 url="http://gallery.sf.net/">gallery.sf.net</ulink>. Gallery skal som
-nævnt installeres på en webserver &ndash; på Gallarys hjemmeside kan
-du finde instruktioner om dette, som er ret nemme at følge.</para>
+nÃ¦vnt installeres pÃ¥ en webserver &ndash; pÃ¥ Gallarys hjemmeside kan
+du finde instruktioner om dette, som er ret nemme at fÃ¸lge.</para>
 
 </sect2> <!-- Gallery -->
 

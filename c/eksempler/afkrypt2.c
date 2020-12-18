@@ -1,6 +1,6 @@
 
 /* afkrypt2.c - afkryptering med 31 som '\n'    */
-/* Læser fra stdin og skriver til stdout.
+/* LÃ¦ser fra stdin og skriver til stdout.
  * matcher krypter2.c
  */
 

@@ -5,37 +5,37 @@
 <sect1 id="ooo-tabeller-manipulere">
   <title>Manipulation med en tabel</title>
 
-<para>Når markøren står i en tabel skifter objektlinjen til en særlig <emphasis>tabelobjektlinje</emphasis> :</para>
+<para>NÃ¥r markÃ¸ren stÃ¥r i en tabel skifter objektlinjen til en sÃ¦rlig <emphasis>tabelobjektlinje</emphasis> :</para>
 
 <figure float="1" id="fig-ooo-tabelobjektlinje">
-<title>Tabel på objekt linie</title>
+<title>Tabel pÃ¥ objekt linie</title>
 <graphic fileref="tabelobjektlinje.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Du kan skifte tilbage til den sædvanlige objektlinje med knappen
+<para>Du kan skifte tilbage til den sÃ¦dvanlige objektlinje med knappen
 <figure float="1" id="fig-ooo-objektlinieskift2">
-<title>Linieskift på objektlinien</title>
+<title>Linieskift pÃ¥ objektlinien</title>
 <graphic fileref="objektlinjeskift.&magic;" scale="60"></graphic>
 </figure>
-. Tabelobjektlinjen indeholder en lang række
-    kommandoer til at manipulere med tabellen. Du kan også manipulere med
-    tabeller ved at vælge <emphasis>Tabel</emphasis>, <emphasis>Celle</emphasis>, <emphasis>Række</emphasis> eller
-    <emphasis>Kolonne</emphasis> i kontekstmenuen (højreklik) eller i menuen
-    <emphasis>Formater</emphasis> Her gennemgås kun tabelobjektlinjen.</para>
+. Tabelobjektlinjen indeholder en lang rÃ¦kke
+    kommandoer til at manipulere med tabellen. Du kan ogsÃ¥ manipulere med
+    tabeller ved at vÃ¦lge <emphasis>Tabel</emphasis>, <emphasis>Celle</emphasis>, <emphasis>RÃ¦kke</emphasis> eller
+    <emphasis>Kolonne</emphasis> i kontekstmenuen (hÃ¸jreklik) eller i menuen
+    <emphasis>Formater</emphasis> Her gennemgÃ¥s kun tabelobjektlinjen.</para>
 
 <sect2 id="ooo-tabeller-manipulere-kolonner">
-  <title>Rækker og kolonner</title>
+  <title>RÃ¦kker og kolonner</title>
 <itemizedlist mark="bullet">
   <listitem>
 
-<para><emphasis>Rækker</emphasis> : Du kan <emphasis>indsætte</emphasis> en række med
+<para><emphasis>RÃ¦kker</emphasis> : Du kan <emphasis>indsÃ¦tte</emphasis> en rÃ¦kke med
 <figure float="1" id="fig-ooo-tabelnyraekke">
-<title>Ny tabel række</title>
+<title>Ny tabel rÃ¦kke</title>
 <graphic fileref="tabelnyraekke.&magic;" scale="60"></graphic>
 </figure>
- og <emphasis>slette</emphasis> en række med
+ og <emphasis>slette</emphasis> en rÃ¦kke med
 <figure float="1" id="fig-ooo-tabelsletraekke">
-<title>Slet tabel række</title>
+<title>Slet tabel rÃ¦kke</title>
 <graphic fileref="tabelsletraekke.&magic;" scale="60"></graphic>
 </figure>
 .</para>
@@ -44,7 +44,7 @@
 
   <listitem>
 
-<para> <emphasis>Kolonner</emphasis> : Du kan <emphasis>indsætte</emphasis> en kolonne med
+<para> <emphasis>Kolonner</emphasis> : Du kan <emphasis>indsÃ¦tte</emphasis> en kolonne med
 <figure float="1" id="fig-ooo-tabelnykolonne">
 <title>Ny kolonne i tabel</title>
 <graphic fileref="tabelnykolonne.&magic;" scale="60"></graphic>
@@ -58,32 +58,32 @@
 
 </listitem>
 </itemizedlist>
-</sect2>    <!--   Rækker og kolonner -->
+</sect2>    <!--   RÃ¦kker og kolonner -->
 
 <sect2 id="ooo-tabeller-manipulere-cellestoerelse">
-  <title>Cellestørrelse</title>
+  <title>CellestÃ¸rrelse</title>
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Du kan ændre kolonne <emphasis>bredden</emphasis> ved at <emphasis>trække</emphasis> med musen
+<para>Du kan Ã¦ndre kolonne <emphasis>bredden</emphasis> ved at <emphasis>trÃ¦kke</emphasis> med musen
         i de lodrette adskillelser i tabellen.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Du kan ændre cellestørelserne automatisk ved at markere tabellen
-        helt eller delvist og klikke på knappen
+<para>Du kan Ã¦ndre cellestÃ¸relserne automatisk ved at markere tabellen
+        helt eller delvist og klikke pÃ¥ knappen
 <figure float="1" id="fig-ooo-tabeloptimal">
 <title>Optimal tabel</title>
 <graphic fileref="tabeloptimal.&magic;" scale="60"></graphic>
 </figure>
- (optimer) og vælge en af de fire
+ (optimer) og vÃ¦lge en af de fire
         muligheder.</para>
 
 </listitem>
 </itemizedlist>
-</sect2>    <!--   Cellestørrelse -->
+</sect2>    <!--   CellestÃ¸rrelse -->
 
 <sect2 id="ooo-tabeller-manipulere-celler">
   <title>Celler</title>
@@ -91,7 +91,7 @@
   <listitem>
 
 <para><emphasis>Fletning af celler</emphasis> : Du kan flette flere celler sammen til
-        én ved at markere cellerne og klikke på
+        Ã©n ved at markere cellerne og klikke pÃ¥
 <figure float="1" id="fig-ooo-tabelflet">
 <title>Flet tabel</title>
 <graphic fileref="tabelflet.&magic;" scale="60"></graphic>
@@ -103,7 +103,7 @@
   <listitem>
 
 <para> <emphasis>Opdeling af celler</emphasis> : Du kan dele en celle i to (eller flere)
-        celler ved at placere markøren i cellen og klikke på
+        celler ved at placere markÃ¸ren i cellen og klikke pÃ¥
 <figure float="1" id="fig-ooo-tabelopdelcelle">
 <title>Opdel celle</title>
 <graphic fileref="tabelopdelcelle.&magic;" scale="60"></graphic>
@@ -118,9 +118,9 @@
   <title>Slet tabel</title>
 
 <para>Du kan slette en tabel ved at markere <emphasis>alle celler</emphasis> og derefter
-    vælge slet række eller slet søjle.</para>
+    vÃ¦lge slet rÃ¦kke eller slet sÃ¸jle.</para>
 
-<para>Hvis du vil beholde teksten kan du istedet vælge
+<para>Hvis du vil beholde teksten kan du istedet vÃ¦lge
     <emphasis>Funktioner/Tekst&lt;-&gt;Tabel</emphasis>.</para>
 
 </sect2>    <!--   Slet tabel -->

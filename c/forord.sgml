@@ -7,12 +7,12 @@
 <itemizedlist mark="bullet">
 <listitem>
 <para>
-<xref linkend="c-intro"/>: Repræsentation og modeller
+<xref linkend="c-intro"/>: ReprÃ¦sentation og modeller
 </para>
 
 <para>
-Beskriver, hvordan data bliver repræsenteret i en computer. Det
-er nøglen til forståelse af, hvordan man kan løse forskellige
+Beskriver, hvordan data bliver reprÃ¦senteret i en computer. Det
+er nÃ¸glen til forstÃ¥else af, hvordan man kan lÃ¸se forskellige
 typer programmeringsopgaver, beregninger, simuleringer m.v.
 </para>
 </listitem>
@@ -44,14 +44,14 @@ datatyper og hvad man kan med dem i C.
 <listitem>
 <para>
 <xref linkend="c-parser-tilstandsmaskine"/>: Parsning - hvordan
-oversættes et C program.
+oversÃ¦ttes et C program.
 </para>
 
 <para>
 Hvordan man parser et beregningsudtryk.
 Hvordan man skriver en rekursiv descent parser. Som eksempler
 en kalkulator og en minimalistisk C-compiler. Komplet kildetekst
-medfølger.
+medfÃ¸lger.
 </para>
 </listitem>
 
@@ -65,26 +65,26 @@ elementer.
 </itemizedlist>
 
 <para>
-Bogen her har til hensigt at vise eksempler på forskellige
-grundlæggende teknikker.
+Bogen her har til hensigt at vise eksempler pÃ¥ forskellige
+grundlÃ¦ggende teknikker.
 </para>
 
 <para>
-Den henvender sig til programmører, som (måske) kender de første
+Den henvender sig til programmÃ¸rer, som (mÃ¥ske) kender de fÃ¸rste
 eksempler fra Kernighan &amp; Ritchie's bog "The C Programming
-Language", men som gerne vil se flere små eksempler, der
+Language", men som gerne vil se flere smÃ¥ eksempler, der
 illustrerer de forskellige features i C sproget. 
 </para>
 
 <para>
-Den ihærdige begynder med en del teknisk flair og lidt erfaring
-kan dog også få glæde af bogen ved først at læse Appendix A, som
+Den ihÃ¦rdige begynder med en del teknisk flair og lidt erfaring
+kan dog ogsÃ¥ fÃ¥ glÃ¦de af bogen ved fÃ¸rst at lÃ¦se Appendix A, som
 er en kort og koncis introduktion til sprogets "mekanik".
 </para>
 
 <para>
-Det er tanken at følge denne bog op med flere, som hver
-især behandler en bestemt type applikation.
+Det er tanken at fÃ¸lge denne bog op med flere, som hver
+isÃ¦r behandler en bestemt type applikation.
 </para>
 <para> - Donald Axel -
 </para>
@@ -102,15 +102,15 @@ især behandler en bestemt type applikation.
 <para>
 <command>Donald Axel</command>
 <ulink url="mailto:donald_j_axel@get2net.dk">donald_j_axel@get2net.dk</ulink>.
-Musiker, ex-radiojournalist, gymnasielærer,
-kursusinstruktør i C programmering, C++, Unix
+Musiker, ex-radiojournalist, gymnasielÃ¦rer,
+kursusinstruktÃ¸r i C programmering, C++, Unix
 systemadministration m.v., edb-konsulent, har blandt andet
-været udstationeret som gæsteprogrammør hos Motorola med
+vÃ¦ret udstationeret som gÃ¦steprogrammÃ¸r hos Motorola med
 private GSM systemer for alarmtjenester etc.
 </para>
 
 <para>
-Har et lille beskedent hus, der skal gøres
+Har et lille beskedent hus, der skal gÃ¸res
 noget ved. Men jeg spiller klaver midt i
 det hele og synes det er dejligt.
 </para>
@@ -127,10 +127,10 @@ det hele og synes det er dejligt.
 
 
 <sect1 id="c-tak">
-<title>Vi siger tak for hjælpen</title>
+<title>Vi siger tak for hjÃ¦lpen</title>
 <para>
-Vi har haft stor glæde af folks støtte, rettelser og
-forslag til forbedringer - bliv ved med dette. Specielt vil vi nævne:
+Vi har haft stor glÃ¦de af folks stÃ¸tte, rettelser og
+forslag til forbedringer - bliv ved med dette. Specielt vil vi nÃ¦vne:
 </para>
 
 <itemizedlist  mark="bullet" spacing="compact">
@@ -140,28 +140,28 @@ Peter Toft har hjulpet med SGML koden og rettet et par fejl.
 </para></listitem>
 
 <listitem><para> 
-Jacob Sparre Andersen har fundet nye stavemåder og rettet
+Jacob Sparre Andersen har fundet nye stavemÃ¥der og rettet
 sprogfejl.
 </para></listitem>
 
 <listitem><para> 
-Forfatteren takker Brian Eberhardt, direktør for SuperUsers a/s,
+Forfatteren takker Brian Eberhardt, direktÃ¸r for SuperUsers a/s,
 for hans inspiration til bl.a. introduktionen til de
-grundlæggende elementer i C sproget i appendix A.
+grundlÃ¦ggende elementer i C sproget i appendix A.
 </para></listitem>
 
 </itemizedlist>
 
 <para>
 Du kan i <xref linkend="c-apprevhist"/> finde en liste over alle de
-revisioner, som bogen har været igennem. 
+revisioner, som bogen har vÃ¦ret igennem. 
 </para>
 
 <para>
-Hvis du har ord du ikke forstår, så kan <ulink
-url="http://www.whatis.com">http://www.whatis.com</ulink> være
-interessant. Her kan du slå mange computerord op, dog kun på engelsk.
-I øvrigt kan bogens stikordsregister være interessant.
+Hvis du har ord du ikke forstÃ¥r, sÃ¥ kan <ulink
+url="http://www.whatis.com">http://www.whatis.com</ulink> vÃ¦re
+interessant. Her kan du slÃ¥ mange computerord op, dog kun pÃ¥ engelsk.
+I Ã¸vrigt kan bogens stikordsregister vÃ¦re interessant.
 </para>
 
 </sect1>
@@ -169,16 +169,16 @@ I øvrigt kan bogens stikordsregister være interessant.
 <sect1 id="c-typografi">
 <title>Typografi</title>
 <para>
-Vi vil afslutte indledningen med at nævne den anvendte typografi.
+Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
 </para>
 
 
 <itemizedlist mark="bullet" spacing="compact">
-<listitem><para>Navne på filer og kataloger skrevet som
+<listitem><para>Navne pÃ¥ filer og kataloger skrevet som
 <filename>foo.bar</filename></para>
 </listitem>
 
-<listitem><para>Kommandoer, du udfører ved at taste, skrives som
+<listitem><para>Kommandoer, du udfÃ¸rer ved at taste, skrives som
 <command>help</command></para>
 </listitem>
 

@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<!-- Skrevet af Keld Jørn Simonsen -->
+<!-- Skrevet af Keld JÃ¸rn Simonsen -->
 <chapter id="tynde-klienter">
 <title>Tynde klienter med Linux</title>
 
@@ -10,61 +10,61 @@
 
 <para>
 Tynde klienter er maskiner der blot virker som en terminal og lader al 
-væsentlig databehandling ske på en server.
+vÃ¦sentlig databehandling ske pÃ¥ en server.
 </para>
 
 <para>
 Terminalen kan derfor 
-være ganske begrænset udstyret. Fx. kan man benytte ældre pc'er af
+vÃ¦re ganske begrÃ¦nset udstyret. Fx. kan man benytte Ã¦ldre pc'er af
 pentiumtypen med blot en 100 MHz CPU, 16 Mb RAM og uden disk,
-og få ganske rimelig ydelse ud af den. Man kan også købe nye maskiner med 
-begrænset udstyr, såsom kun lidt RAM og ingen disk, og 
-derved spare penge på hver arbejdsstation.
+og fÃ¥ ganske rimelig ydelse ud af den. Man kan ogsÃ¥ kÃ¸be nye maskiner med 
+begrÃ¦nset udstyr, sÃ¥som kun lidt RAM og ingen disk, og 
+derved spare penge pÃ¥ hver arbejdsstation.
 </para>
 
 <para>
 En anden fordel er at i
-større miljøer med mange arbejdsstationer, kan en maskinpark med
-tynde klienter betyde en væsentlig arbejdsbesparelse, nogen
-undersøgelser viser op mod 50 % besparelse i de totale 
-driftsomkostninger (TCO) i.fh.t. almindelige fritstående
-Linux-maskiner med netværk, og op mod 75 % besparelse i.fh.t.
-almindelige Microsoft Windows fritstående maskiner i netværk.
+stÃ¸rre miljÃ¸er med mange arbejdsstationer, kan en maskinpark med
+tynde klienter betyde en vÃ¦sentlig arbejdsbesparelse, nogen
+undersÃ¸gelser viser op mod 50 % besparelse i de totale 
+driftsomkostninger (TCO) i.fh.t. almindelige fritstÃ¥ende
+Linux-maskiner med netvÃ¦rk, og op mod 75 % besparelse i.fh.t.
+almindelige Microsoft Windows fritstÃ¥ende maskiner i netvÃ¦rk.
 </para>
 
 <para>
-En tredje fordel kan være et bedre miljø, idet den manglende disk
-og mindre behov for CPU-kraft kan betyde mindre støj og mindre
+En tredje fordel kan vÃ¦re et bedre miljÃ¸, idet den manglende disk
+og mindre behov for CPU-kraft kan betyde mindre stÃ¸j og mindre
 varmeudvikling.
 </para>
 
 <para>
-En løsning med tynde klienter kan således være aktuel i både større 
-og mindre virksomheder, som arbejdsstationer på skoler, og hjemme,
-hvor en gammel pc måske kan gives et helt nyt liv.
+En lÃ¸sning med tynde klienter kan sÃ¥ledes vÃ¦re aktuel i bÃ¥de stÃ¸rre 
+og mindre virksomheder, som arbejdsstationer pÃ¥ skoler, og hjemme,
+hvor en gammel pc mÃ¥ske kan gives et helt nyt liv.
 </para>
 
 <para>
-Tynde klienter, som det omtales her, kræver et lokalnet, (mindst 10 Mbit,
+Tynde klienter, som det omtales her, krÃ¦ver et lokalnet, (mindst 10 Mbit,
 gerne 100 Mbit)
-for at fungere ordentligt. Tung grafik såsom film eller
-grafikintensive spil vil køre meget langsomt, mens de fleste andre
-anvendelser, såsom netlæser, kontorpakker vil køre ganske fortrinligt.
-Microsoft Windows programmer kræver særlig opsætning og formentlig
-køb af særligt programmel.
+for at fungere ordentligt. Tung grafik sÃ¥som film eller
+grafikintensive spil vil kÃ¸re meget langsomt, mens de fleste andre
+anvendelser, sÃ¥som netlÃ¦ser, kontorpakker vil kÃ¸re ganske fortrinligt.
+Microsoft Windows programmer krÃ¦ver sÃ¦rlig opsÃ¦tning og formentlig
+kÃ¸b af sÃ¦rligt programmel.
 </para>
 
 <para>
-Tynde klienter kræver en server, der skal have den nødvendige
-kapacitet. Dette behøver ikke at være alverden: folk har været
-imponeret over ydeevnen på en server med en 650 MHz CPU og 200 Mb
-RAM, hvilket er en del mindre end de mindste maskiner der sælges i dag
-på markedet. Der skal også være nødvendig diskkapacitet, selve
+Tynde klienter krÃ¦ver en server, der skal have den nÃ¸dvendige
+kapacitet. Dette behÃ¸ver ikke at vÃ¦re alverden: folk har vÃ¦ret
+imponeret over ydeevnen pÃ¥ en server med en 650 MHz CPU og 200 Mb
+RAM, hvilket er en del mindre end de mindste maskiner der sÃ¦lges i dag
+pÃ¥ markedet. Der skal ogsÃ¥ vÃ¦re nÃ¸dvendig diskkapacitet, selve
 det system, der omtales nedenfor fylder under 300 Mb udover det
 basale Linux-driftssystem. Det vigtigste er at have meget RAM, 
-20-80 Mb RAM per klient, afhængigt af om der køres mange store programmer
-såsom kontorpakker, og aftagende med antallet af klienter.
-CPU-hastigheden er ikke så afgørende, 1 GHz er fint.
+20-80 Mb RAM per klient, afhÃ¦ngigt af om der kÃ¸res mange store programmer
+sÃ¥som kontorpakker, og aftagende med antallet af klienter.
+CPU-hastigheden er ikke sÃ¥ afgÃ¸rende, 1 GHz er fint.
 Hertil skal man beregne diskplads til hver enkelt bruger ud fra
 deres forventede behov.
 </para>
@@ -72,23 +72,23 @@ deres forventede behov.
 <sect1 id="LTSP">
 <title>LTSP</title>
 <para>
-Tynde klienter har været en mulighed under Linux og UNIX i mange
-år, via X Windows. En pakke, som gør det nemt at installere,
+Tynde klienter har vÃ¦ret en mulighed under Linux og UNIX i mange
+Ã¥r, via X Windows. En pakke, som gÃ¸r det nemt at installere,
 er <emphasis>LTSP &ndash; Linux Terminal Server Project</emphasis> som
-findes på <ulink url="http://www.ltsp.org">http://www.ltsp.org</ulink>.
+findes pÃ¥ <ulink url="http://www.ltsp.org">http://www.ltsp.org</ulink>.
 Hovedmanden bag projektet hedder Jim McQuillan.
 </para>
 
 <para>
-Det, LTSP giver dig er først og
-fremmest et system til at køre X Windows på en pc-klient. På
+Det, LTSP giver dig er fÃ¸rst og
+fremmest et system til at kÃ¸re X Windows pÃ¥ en pc-klient. PÃ¥
 serveren kan man bruge de fleste distributioner, for eksempel Red Hat,
-Mandrake, Debian, SuSE, og det er altså serverens system, de
-enkelte klienter vil komme til at køre.
+Mandrake, Debian, SuSE, og det er altsÃ¥ serverens system, de
+enkelte klienter vil komme til at kÃ¸re.
 </para>
 
 <para>
-De 4 pakker som skal installeres for at lave en X skærm kan 
+De 4 pakker som skal installeres for at lave en X skÃ¦rm kan 
 hentes fra www.ltsp.org, hvor de findes i de forskellige 
 pakkeformater der passer til den valgte distribution (.rpm, .deb,
 .tgz etc.) Pakkerne er:
@@ -98,7 +98,7 @@ pakkeformater der passer til den valgte distribution (.rpm, .deb,
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-ltsp-core &ndash; skal installeres først.
+ltsp-core &ndash; skal installeres fÃ¸rst.
  </para>
 </listitem>
 <listitem> 
@@ -108,52 +108,52 @@ ltsp-kernel &ndash; linux-kerne mv.
 </listitem>
 <listitem>
  <para>
-ltsp-x-core &ndash; kan undværes hvis man kun vil køre kommando-skal.
+ltsp-x-core &ndash; kan undvÃ¦res hvis man kun vil kÃ¸re kommando-skal.
  </para>
 </listitem>
 <listitem> 
  <para>
-ltsp-x-fonts &ndash; kan undværes hvis man vil benytte serverens skriftsnit.
+ltsp-x-fonts &ndash; kan undvÃ¦res hvis man vil benytte serverens skriftsnit.
  </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Desuden findes der en masse anden information på <ulink
+Desuden findes der en masse anden information pÃ¥ <ulink
 url="http://www.ltsp.org">http://www.ltsp.org</ulink>
 om generel installation, postlister for diskussion,
-udvikling og annoncering, opsætning af lyd, floppy,
-kørsel af programmer på klientens CPU, støtte for gamle
-skærme mm.  Der findes en dansk side om LTSP på
+udvikling og annoncering, opsÃ¦tning af lyd, floppy,
+kÃ¸rsel af programmer pÃ¥ klientens CPU, stÃ¸tte for gamle
+skÃ¦rme mm.  Der findes en dansk side om LTSP pÃ¥
 <ulink url="http://www.klid.dk/sw/ltsp/">http://www.klid.dk/sw/ltsp/</ulink>.
 </para>
 
 <sect2 id="LTSP-internt">
-<title>LTSP virkemåde</title>
+<title>LTSP virkemÃ¥de</title>
 
 <para>
-LTSP har en række trin som gennemgås før pc'en kører som X-terminal.
+LTSP har en rÃ¦kke trin som gennemgÃ¥s fÃ¸r pc'en kÃ¸rer som X-terminal.
 </para>
 
 <orderedlist>
 <listitem>
  <para>
-Klienten bootes via diskette, eller en bootprom på netkortet
+Klienten bootes via diskette, eller en bootprom pÃ¥ netkortet
  </para>
 </listitem>
 <listitem> 
  <para>
-Klienten får en IP-adresse fra serverens DHCP
+Klienten fÃ¥r en IP-adresse fra serverens DHCP
  </para>
 </listitem>
 <listitem>
  <para>
-Linux-kernen overføres via TFTP
+Linux-kernen overfÃ¸res via TFTP
  </para>
 </listitem>
 <listitem> 
  <para>
-initrd RAM-filsystem overføres via TFTP
+initrd RAM-filsystem overfÃ¸res via TFTP
  </para>
 </listitem>
 <listitem>
@@ -163,59 +163,59 @@ klienten bootes fra RAM-disk og kerne
 </listitem>
 <listitem> 
  <para>
-Klienten får parametre til X-terminal fra LTSP
+Klienten fÃ¥r parametre til X-terminal fra LTSP
  </para>
 </listitem>
 <listitem>
  <para>
-Klient monterer diske på server via NFS
+Klient monterer diske pÃ¥ server via NFS
  </para>
 </listitem>
 <listitem> 
  <para>
-Klienten kører X
+Klienten kÃ¸rer X
  </para>
 </listitem>
 <listitem> 
  <para>
-Klienten får login fra server
+Klienten fÃ¥r login fra server
  </para>
 </listitem>
 </orderedlist>
 
 <para>
-Når man logger ind, kører programmerne så på serveren. Man skal derfor
+NÃ¥r man logger ind, kÃ¸rer programmerne sÃ¥ pÃ¥ serveren. Man skal derfor
 have en konto for hver bruger der skal bruge serveren. Samme bruger
-kan godt være logget ind flere gange samtidigt.
+kan godt vÃ¦re logget ind flere gange samtidigt.
 </para>
 </sect2> <!-- id="LTSP-internt" -->
 
 <sect2 id="ltsp-opsaetning-af-server">
-<title>Opsætning af server</title>
+<title>OpsÃ¦tning af server</title>
 
 <orderedlist>
 <listitem>
  <para>
-LTSP installeres fra de ovennævnte 4 pakker.
+LTSP installeres fra de ovennÃ¦vnte 4 pakker.
  </para>
 </listitem>
 <listitem> 
  <para>
-Opsætningsfiler laves for DHCP, TFTP, NFS, se LTSP-vejledning.
+OpsÃ¦tningsfiler laves for DHCP, TFTP, NFS, se LTSP-vejledning.
  </para>
 </listitem>
 <listitem>
  <para>
-LTSP opsætningsfil opsættes i 
+LTSP opsÃ¦tningsfil opsÃ¦ttes i 
 <filename>/opt/ltsp/i386/etc/lst.conf</filename>
-med info om skærm, tastatur, mus, lyd etc.
+med info om skÃ¦rm, tastatur, mus, lyd etc.
  </para>
 </listitem>
 <listitem> 
  <para>
-Der skal opsættes DHCP per klient med IP-nummer ud fra Ethernet
-   MAC-adresse og evt info om X-driver for ældre skærmkort der ikke 
-   kan køre XFree86 version 4.
+Der skal opsÃ¦ttes DHCP per klient med IP-nummer ud fra Ethernet
+   MAC-adresse og evt info om X-driver for Ã¦ldre skÃ¦rmkort der ikke 
+   kan kÃ¸re XFree86 version 4.
  </para>
 </listitem>
 <listitem>
@@ -225,55 +225,55 @@ Der skal opsættes DHCP per klient med IP-nummer ud fra Ethernet
 </listitem>
 <listitem> 
  <para>
-NFS <filename>/etc/exports</filename> skal opsættes
+NFS <filename>/etc/exports</filename> skal opsÃ¦ttes
  </para>
 </listitem>
 </orderedlist>
 </sect2> <!-- id="ltsp-opsaetning-af-server" -->
 
 <sect2 id="ltsp-opsaetning-af-klient">
-<title>Opsætning af klient</title>
+<title>OpsÃ¦tning af klient</title>
 <para>
-Der skal genereres en diskette, eller en bootprom. Dette kan gøres
+Der skal genereres en diskette, eller en bootprom. Dette kan gÃ¸res
 via netstedet 
 <ulink url="http://www.rom-o-matic.net">http://www.rom-o-matic.net</ulink>, 
 der indeholder drivere fra Etherboot-projektet for en masse netkort,
-til at generere både en opstartsdiskette og kode til en bootprom. 
-Brænding af bootprommer er et kapitel for sig, der findes info om dette på 
+til at generere bÃ¥de en opstartsdiskette og kode til en bootprom. 
+BrÃ¦nding af bootprommer er et kapitel for sig, der findes info om dette pÃ¥ 
 <ulink url="http://www.ltsp.org">http://www.ltsp.org</ulink>.
 </para>
 
 <para>
-Desuden skal der laves opsætning på serveren for hver
-klient, som nævnt ovenfor. 
+Desuden skal der laves opsÃ¦tning pÃ¥ serveren for hver
+klient, som nÃ¦vnt ovenfor. 
 </para>
 </sect2> <!-- id="ltsp-opsaetning-af-klient" -->
 
 <sect2 id="ltsp-problemer">
-<title>Problemløsning i LTSP</title>
+<title>ProblemlÃ¸sning i LTSP</title>
 <para>
 Grafikkort virker som regel med udgave 4 af XFree86, men
-ved ældre grafikkort kan man blive nødt til at finde ud af hvilken
+ved Ã¦ldre grafikkort kan man blive nÃ¸dt til at finde ud af hvilken
 X-driver der skal bruges, samt andre parametre for grafikkortet
-og skærmen. Det kan her være en hjælp at installere grafikkort og 
-skærm på en fritstående Linux-maskine med disk og X installeret.
-Her kan programmet Xconfigurator være en stor hjælp.
+og skÃ¦rmen. Det kan her vÃ¦re en hjÃ¦lp at installere grafikkort og 
+skÃ¦rm pÃ¥ en fritstÃ¥ende Linux-maskine med disk og X installeret.
+Her kan programmet Xconfigurator vÃ¦re en stor hjÃ¦lp.
 </para>
 
 <para>
-Standardværdierne for netværk, gateway mm er måske ikke rigtige, de
-skal evt. rettes til i en række filer.
+StandardvÃ¦rdierne for netvÃ¦rk, gateway mm er mÃ¥ske ikke rigtige, de
+skal evt. rettes til i en rÃ¦kke filer.
 </para>
 
 <para>
-Der kan være problemer hvis man har mere end 
-én DHCP-server på nettet, ved at klienten accepterer data fra den
-forkerte server. Man kan have flere DHCP-servere på samme
-net, men det må anbefales at integrere dem til én. Ofte er det dog ikke nemt at gøre,
-fx hvis man har en fritstående ruter med DHCP-server i forbindelse med et ADSL-abonnement.
+Der kan vÃ¦re problemer hvis man har mere end 
+Ã©n DHCP-server pÃ¥ nettet, ved at klienten accepterer data fra den
+forkerte server. Man kan have flere DHCP-servere pÃ¥ samme
+net, men det mÃ¥ anbefales at integrere dem til Ã©n. Ofte er det dog ikke nemt at gÃ¸re,
+fx hvis man har en fritstÃ¥ende ruter med DHCP-server i forbindelse med et ADSL-abonnement.
 Fra Etherboot version 5.0.7 vil klienten ikke bruge opstartsdata fra en DHCP-server,
 hvis denne ikke giver nogen opstartsfil, og dermed ignoreres normalt simple DHCP-servere.
-Således kan man på driftsikker måde have en ekstra DHCP-server installeret, for eksempel på en Linux-maskine,
+SÃ¥ledes kan man pÃ¥ driftsikker mÃ¥de have en ekstra DHCP-server installeret, for eksempel pÃ¥ en Linux-maskine,
 der kun tager sig af de tynde klienter, via deres explicitte MAC-adresser.
 </para>
 </sect2> <!-- id="ltsp-problemer" -->

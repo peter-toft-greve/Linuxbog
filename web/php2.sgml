@@ -7,7 +7,7 @@
 PHP er et scriptsprog, der kan inkluders direkte i html sider.
 Til forskel fra JavaScript, der fortolkes af browseren, fortolkes
 PHP scripts af  Apaches serverens PHP4 modul, og resultatet sendes
-så til brugerens klient. Et simpel script kunne se ud som følgende
+sÃ¥ til brugerens klient. Et simpel script kunne se ud som fÃ¸lgende
 HTML fil:</para>
 
 <programlisting>
@@ -20,7 +20,7 @@ HTML fil:</para>
 </programlisting>
 
 <para>
-Browseren vil så modtage følgende HTML kode</para>
+Browseren vil sÃ¥ modtage fÃ¸lgende HTML kode</para>
 
 <programlisting>
 &lt;body&gt;
@@ -31,27 +31,27 @@ Denne linje udskrives af PHP fortolkeren
 
 
 <para>
-PHP har en lang række features, der gør det meget praktisk
+PHP har en lang rÃ¦kke features, der gÃ¸r det meget praktisk
 og anvendeligt til at lave dynamiske html sider, sammenlignet med
 CGI scripts. PHP kan udskrive HTML sider med data fra databaser,
 lave billeder, modtage data fra webformulare, kommunikere vha. XML
-formateret filer. PHP kan også kommunikere med e-post, FTP, POP3, 
+formateret filer. PHP kan ogsÃ¥ kommunikere med e-post, FTP, POP3, 
 IMAP, LDAP, FTP, MySQL <xref linkend="db-mysql-php"/>, 
 PostgreSQL <xref linkend="db-pgsql-php"/> og kender til mange andre databaser,
 protokoler og akronymer.</para>
 
 <para>
-Formålet med det følgende kapittel er en introduktion til variabler,
-syntax, og grundlæggende funktioner i PHP scriptsproget. Med PHP følger en
+FormÃ¥let med det fÃ¸lgende kapittel er en introduktion til variabler,
+syntax, og grundlÃ¦ggende funktioner i PHP scriptsproget. Med PHP fÃ¸lger en
 excellent manual, der indeholder en masse reference information om PHP
 sprogets mange funktioner. Endnu mere information, kode eksempler m.m.
-kan findes på nettet et godt udgangspunkt er <ulink url="http://www.php.net/">http://www.php.net</ulink>. Eller også kan du kigge lidt på kursmaterialet 
-til "Frit PHP-kursus" på 
+kan findes pÃ¥ nettet et godt udgangspunkt er <ulink url="http://www.php.net/">http://www.php.net</ulink>. Eller ogsÃ¥ kan du kigge lidt pÃ¥ kursmaterialet 
+til "Frit PHP-kursus" pÃ¥ 
 <ulink url="http://www.chbs.dk/kurser/php/">http://www.chbs.dk/kurser/php/</ulink>.
 </para>
 
 <para>
-På n
+PÃ¥ n
 </para>
 
 <sect1 id="php-installation">
@@ -59,12 +59,12 @@ På n
 <indexterm><primary>PHP</primary><secondary>installation</secondary></indexterm>
 
 <para>
-RPM pakker følger med Red Hat. Disse hedder mod_php*.rpm og php*.rpm,
+RPM pakker fÃ¸lger med Red Hat. Disse hedder mod_php*.rpm og php*.rpm,
 men Pentium optimerede versioner kan hentes fra  Troels Arvins Php
-homepage, der kan findes på
+homepage, der kan findes pÃ¥
 <ulink url="http://rpms.arvin.dk/php/">http://rpms.arvin.dk/php/</ulink>.
-Den nyeste version af PHP er version 4. Apache configureres til at køre
-PHP scripts ved at inkludere følgende i <filename>/etc/httpd/conf/httpd.conf</filename>.
+Den nyeste version af PHP er version 4. Apache configureres til at kÃ¸re
+PHP scripts ved at inkludere fÃ¸lgende i <filename>/etc/httpd/conf/httpd.conf</filename>.
 </para>
 
 <programlisting>
@@ -79,9 +79,9 @@ AddModule mod_php4.c
 
 <para>
 Her har vi ikke tilladt at brugere laver PHP-kode inden i almindelige
-.html-filer, men lagt om til at disse hedder .phtml. Vil vi også gerne
-have at .html-filer også godt kan indeholde PHP-kode, så anvendes
-følgende opsætning i stedet. Det vil være lidt langsommere, men det er et valg.
+.html-filer, men lagt om til at disse hedder .phtml. Vil vi ogsÃ¥ gerne
+have at .html-filer ogsÃ¥ godt kan indeholde PHP-kode, sÃ¥ anvendes
+fÃ¸lgende opsÃ¦tning i stedet. Det vil vÃ¦re lidt langsommere, men det er et valg.
 </para>
 
 <programlisting>
@@ -97,11 +97,11 @@ AddModule mod_php4.c
 
 <para>
 Disse linjer inkluderes sikket automatisk af installationsprogrammet.
-De første to linjer inkludere selve PHP4 modulet, mens &lt;IfModule&gt;
+De fÃ¸rste to linjer inkludere selve PHP4 modulet, mens &lt;IfModule&gt;
 definere hvilke typer af filer, der skal fortolkes af PHP modulet. PHP
-modulet har sin egen opsætningsfil der ligger i
+modulet har sin egen opsÃ¦tningsfil der ligger i
 <filename>/etc/php.ini</filename>. Efter PHP er installeret kan Apache
-genstartes med følgende kommandoer:</para>
+genstartes med fÃ¸lgende kommandoer:</para>
 
 <screen>
 <prompt>[root@hven /root]# </prompt><userinput>apachectl configtest</userinput>
@@ -112,13 +112,13 @@ Syntax OK
 
 <para>
  Hver gang computeren bliver genstartet vil PHP-modulet
- automatisk blive indlæst.
+ automatisk blive indlÃ¦st.
 </para>
 
 <para>
 
 Du kan nu eksperimentere med at lave PHP scripts. Start med at gemme
-ovenstående script som <filename>test.php</filename>, og prøv at hente
+ovenstÃ¥ende script som <filename>test.php</filename>, og prÃ¸v at hente
 scriptet i en browser.
 </para>
 <!-- Fejl ?? -->
@@ -131,10 +131,10 @@ scriptet i en browser.
 
 <para>
 PHP har de velkendte variabel typer af heltal, floating point tal, og
-strenge. Variabler deklereres ikke på forhånd som i C. Men defineres ved at
-tilskrive variablen en værdi. Som i Perl starter alle typer af variabler med
+strenge. Variabler deklereres ikke pÃ¥ forhÃ¥nd som i C. Men defineres ved at
+tilskrive variablen en vÃ¦rdi. Som i Perl starter alle typer af variabler med
 dollartegn, men til forskel fra Perl bruges at og procent tegnene ('@' og '%')
-ikke til mærke variable, der er tabeller eller associative tabeller. Følgende
+ikke til mÃ¦rke variable, der er tabeller eller associative tabeller. FÃ¸lgende
 eksempel demonstrere hvordan variable oprettes og siden udskrives.</para>
 
 <programlisting>
@@ -164,22 +164,22 @@ $d=85 og $e=86
 
 
 <para>
-Som i Perl bliver værdien af variabler indsat automatisk når udskrives
+Som i Perl bliver vÃ¦rdien af variabler indsat automatisk nÃ¥r udskrives
 med som <command>echo "$a"</command>, mens <command>echo '$a'</command> bare
 ville udskrive $a (variabel interpolation). Som i Perl betyder koden "\n"
-linjeskift. Bemærk at output jo vises af browseren, og browseren ignorere
+linjeskift. BemÃ¦rk at output jo vises af browseren, og browseren ignorere
 linjeskift med mindre teksten vises som preformateret. Dette er grunden til
 at PHP scriptet er foldet ind i &lt;pre&gt;..&lt;/pre&gt; tags, som vist i
 eksemplet.</para>
 
 <para>
-Eksemplet viser også at det er muligt at tage summen af et tal og en streng
+Eksemplet viser ogsÃ¥ at det er muligt at tage summen af et tal og en streng
 for eksempel: 42+"44" og resultatet er 86. I artitmetiske operationer, der
 involvere strenge, vil strengen automatisk konverteres til en heltal eller
 reelt tal (se <command>man strtod</command> for konverteringen).</para>
 
 <para>
-Følgende eksempel viser nogle grundlæggende operationer på strenge.</para>
+FÃ¸lgende eksempel viser nogle grundlÃ¦ggende operationer pÃ¥ strenge.</para>
 
 <programlisting>
 &lt;pre&gt;
@@ -187,11 +187,11 @@ Følgende eksempel viser nogle grundlæggende operationer på strenge.</para>
    $a="Tux Penguin\n";
    
    print "Streng: $a";
-   print "Længde:". strlen($a) ."\n";
-   print "Tegn på tredie position: $a[2]\n";
+   print "LÃ¦ngde:". strlen($a) ."\n";
+   print "Tegn pÃ¥ tredie position: $a[2]\n";
 
 #konkatenering:
-   $b  = "Første linje\n";
+   $b  = "FÃ¸rste linje\n";
    $b .= "Anden Linje\n";
 
    print $b;
@@ -210,10 +210,10 @@ EOT;
 
 Udskriver:
 Streng: Tux Penguin
-Længde:12
-Tegn på tredie position: x
+LÃ¦ngde:12
+Tegn pÃ¥ tredie position: x
 
-Første linje
+FÃ¸rste linje
 Anden Linje
 
 Lange strenge der fylder flere
@@ -224,20 +224,20 @@ doc (&lt;&lt;&lt;) operatoren.
 
 <para>
 Som i Perl konkateneres strenge ved at bruge punktum. Strenge i PHP
-opfører sig som en tabel, og man kan derfor ekstrahere enkelt tegn med
-<command>$a[position]</command> hvor position går fra 0 til strenglængde-1,
-strenge slutter med 0. Dette er årsagen til at længden 12 er et tegn
-længere end strengen, der er vist i eksemplet. Eksemplet demonstrerer
-også hvordan man kan skrive strenge, der fylder flere linjer med
-&lt;&lt;&lt; operatoren. Bemærk at det er vigtigt at der ikke står nogen
-mellemrum før slut mærkatet (her EOT).</para> 
+opfÃ¸rer sig som en tabel, og man kan derfor ekstrahere enkelt tegn med
+<command>$a[position]</command> hvor position gÃ¥r fra 0 til strenglÃ¦ngde-1,
+strenge slutter med 0. Dette er Ã¥rsagen til at lÃ¦ngden 12 er et tegn
+lÃ¦ngere end strengen, der er vist i eksemplet. Eksemplet demonstrerer
+ogsÃ¥ hvordan man kan skrive strenge, der fylder flere linjer med
+&lt;&lt;&lt; operatoren. BemÃ¦rk at det er vigtigt at der ikke stÃ¥r nogen
+mellemrum fÃ¸r slut mÃ¦rkatet (her EOT).</para> 
 </sect1>    <!--   Simple datatyper -->
 
 <sect1 id="php-table">
   <title>Tabeller</title>
 
 <para>
-Dette PHP script demonstrere nogle grundlæggende egenskaber ved
+Dette PHP script demonstrere nogle grundlÃ¦ggende egenskaber ved
 tabeller.</para>
 
 <programlisting>
@@ -247,10 +247,10 @@ tabeller.</para>
   $a[1]=2;
   $a[2]=3;
 
-#adder streng til første frie index i tabel
+#adder streng til fÃ¸rste frie index i tabel
   $b[]="ost";     # =$b[0]
-  $b[]="smør";    # =$b[1]
-  $b[]="brød";    # =$b[2]
+  $b[]="smÃ¸r";    # =$b[1]
+  $b[]="brÃ¸d";    # =$b[2]
 
 #definer tabel med array funktionen
   $c=array("Pascal","Basic","Fortran");
@@ -269,21 +269,21 @@ tabeller.</para>
 ?&gt;
 
 Udskriver:
-1 smør Basic b
+1 smÃ¸r Basic b
 </programlisting>
 
 
 <para>
 Tabeller begynder ved index 0, og en tabel defineres ved at man tilskriver
-elementerne i tabellen værdier, til forskel fra Perl bruges dollartegnet også
-til at referere til tabeller (Perl bruger @ for tabel kontekst ). <command>$b[]</command> =streng notationen betyder adder strengen til den første
+elementerne i tabellen vÃ¦rdier, til forskel fra Perl bruges dollartegnet ogsÃ¥
+til at referere til tabeller (Perl bruger @ for tabel kontekst ). <command>$b[]</command> =streng notationen betyder adder strengen til den fÃ¸rste
 element i tabellen. Sort funktionen sortere strengene i tabellen i alfabetisk
-rækkefølge. Det er også muligt at definere multi-dimensionale tabeller ved at
-bruge <command>array(array(),array())</command> koden. Når en 2D tabel skal
-udskrives bruges '{}', dette skyldes at $d[0][1] fortolkes både som variablen
+rÃ¦kkefÃ¸lge. Det er ogsÃ¥ muligt at definere multi-dimensionale tabeller ved at
+bruge <command>array(array(),array())</command> koden. NÃ¥r en 2D tabel skal
+udskrives bruges '{}', dette skyldes at $d[0][1] fortolkes bÃ¥de som variablen
 "$d[0][1]" eller variablen "$d[0]" fulgt af strengen "[1]". Bracket {..} viser
-at vi ønsker at udskrive det andet element i den første tabel. Et alternativ
-ville være at bruge konkateneringsoperatoren: <command>echo
+at vi Ã¸nsker at udskrive det andet element i den fÃ¸rste tabel. Et alternativ
+ville vÃ¦re at bruge konkateneringsoperatoren: <command>echo
 '\$d[0][1]='.$d[0][1]."\n".</command>
 </para>
 </sect1>    <!--   Tabeller -->
@@ -294,7 +294,7 @@ ville være at bruge konkateneringsoperatoren: <command>echo
 
 <para>
 En associativ tabel er en tabel, der bruger strenge som indices, og de
-"associeres" med en streng eller talværdi.</para>
+"associeres" med en streng eller talvÃ¦rdi.</para>
 
 <programlisting>
 &lt;?php
@@ -303,7 +303,7 @@ En associativ tabel er en tabel, der bruger strenge som indices, og de
    $Disney["hund"]="Pluto";
 
 #array notation
-#              nøgle      værdi
+#              nÃ¸gle      vÃ¦rdi
    $logo=array("Tux"   =&gt; "Penguin",
                "Gnome" =&gt; "Fod",
                "Billg" =&gt; "Snegl");
@@ -311,8 +311,8 @@ En associativ tabel er en tabel, der bruger strenge som indices, og de
 #multi-dimensional array
    $kunst=array(
          "impressionism" =&gt; 
-               array("Monet" =&gt; "Åkander",
-                     "Manet" =&gt; "Frokost i det Grønne"),
+               array("Monet" =&gt; "Ã…kander",
+                     "Manet" =&gt; "Frokost i det GrÃ¸nne"),
          "barok" =&gt;
                array("Bach"  =&gt; "Brandenburg koncerterne",
                      "Hendel"=&gt; "Messias")
@@ -328,10 +328,10 @@ En associativ tabel er en tabel, der bruger strenge som indices, og de
    udskrivtabel("Usorteret     : ",$logo);
 
    asort($b);
-   udskrivtabel("Værdi sorteret: ",$logo);
+   udskrivtabel("VÃ¦rdi sorteret: ",$logo);
 
    ksort($b); 
-   udskrivtabel("Nøgle sorteret: ",$logo);
+   udskrivtabel("NÃ¸gle sorteret: ",$logo);
 
 #definer en udskrivningsfunktion:
 
@@ -339,7 +339,7 @@ function udskrivtabel($streng,$tabel)
   {
    echo "\n".$streng;
 
-#loop gennem alle par af nøgler og værdier i tabellen
+#loop gennem alle par af nÃ¸gler og vÃ¦rdier i tabellen
    foreach($tabel as $key=&gt;$val)
       {
          echo "$key =&gt; $val\t";
@@ -350,21 +350,21 @@ function udskrivtabel($streng,$tabel)
 Udskriver:
 Pluto
 Fod
-Frokost i det Grønne
+Frokost i det GrÃ¸nne
 
 Usorteret     : Tux =&gt; Penguin  Gnome =&gt; Fod    Billg =&gt; Snegl
-Værdi sorteret: Gnome =&gt; Fod    Tux =&gt; Penguin  Billg =&gt; Snegl
-Nøgle sorteret: Billg =&gt; Snegl  Gnome =&gt; Fod    Tux =&gt; Penguin
+VÃ¦rdi sorteret: Gnome =&gt; Fod    Tux =&gt; Penguin  Billg =&gt; Snegl
+NÃ¸gle sorteret: Billg =&gt; Snegl  Gnome =&gt; Fod    Tux =&gt; Penguin
 </programlisting>
 
 
 <para>
 Eksemplet viser hvordan associeret tabeller kan oprettes og udskrives.
-Eksemplet viser også hvordan en associativ tabel kan sorteres efter nøgler og
-værdier med ksort og asort funktionerne. En funktion defineres til at
+Eksemplet viser ogsÃ¥ hvordan en associativ tabel kan sorteres efter nÃ¸gler og
+vÃ¦rdier med ksort og asort funktionerne. En funktion defineres til at
 simplifiere udskrivningen af den associative tabel. Funktionen bruger
 <command>foreach</command> kommandoen til at iterere gennem alle elementer i
-tabellen, og udskrive nøgle og værdi for alle elementer i tabellen.
+tabellen, og udskrive nÃ¸gle og vÃ¦rdi for alle elementer i tabellen.
 Koden "\t" betyder tabulator.</para>
 </sect1>    <!--   Associative tabeller -->
 
@@ -375,11 +375,11 @@ Koden "\t" betyder tabulator.</para>
 <programlisting>
 &lt;pre&gt;
 &lt;?php
-# Funktion der udskriver en streng efterfulgt af en tilfældig type af fisk.
-# rand(a,b) funktionen returnere et tilfældigt tal mellem a og b inklusiv.
+# Funktion der udskriver en streng efterfulgt af en tilfÃ¦ldig type af fisk.
+# rand(a,b) funktionen returnere et tilfÃ¦ldigt tal mellem a og b inklusiv.
   function AddAFish($str)
    {
-      $fisk=array("Pirana","Elektrisk Ål","Haj","Guldfisk");
+      $fisk=array("Pirana","Elektrisk Ã…l","Haj","Guldfisk");
 
       $i=rand(0,count($fisk)-1);
       echo $str." ";
@@ -409,7 +409,7 @@ Koden "\t" betyder tabulator.</para>
   AddAFish($str);
   echo StrengGange("Test",4);
 
-# Overfør reference til funktionen:
+# OverfÃ¸r reference til funktionen:
   Encrypt(&amp;$str);
   echo $str;
 ?&gt;
@@ -424,14 +424,14 @@ Ifmmp!Xpsme
 
 <para>
 AddAFish funktionen modtager en streng og udskriver strengen igen efter
-fulgt af en tilfældig fisk fra fisk tabellen (Helt klart en funktion ethvert
+fulgt af en tilfÃ¦ldig fisk fra fisk tabellen (Helt klart en funktion ethvert
 website har brug for!). AddAFish funktionen returnere ikke nogle data.
 StrengGange funktionen modtager to argumenter og returnere en streng. Encrypt
 funktionen er mere interessant, den modtager en reference (&amp;$str) til
-strengen $str. Det betyder at $s variablen i Encrypt er præcist den samme
-variabel som den globalt defineret $str variabel, og Encrypt funktionen ændrer
-derfor $str direkte, og behøver ikke at returnere en streng. Selve Encrypt
-funktionen enkryptere strengen ved at erstatte alle tegn med det næste
+strengen $str. Det betyder at $s variablen i Encrypt er prÃ¦cist den samme
+variabel som den globalt defineret $str variabel, og Encrypt funktionen Ã¦ndrer
+derfor $str direkte, og behÃ¸ver ikke at returnere en streng. Selve Encrypt
+funktionen enkryptere strengen ved at erstatte alle tegn med det nÃ¦ste
 tegn i ASCII-tabellen dvs. 'a' bliver til 'b' osv.</para>
 </sect1>    <!--   Funktioner -->
 
@@ -439,7 +439,7 @@ tegn i ASCII-tabellen dvs. 'a' bliver til 'b' osv.</para>
   <title>Logiske Kontrolstrukturer</title>
 
 <para>
-Det følgende eksempel viser syntaxen for de logisk strukturer i PHP.</para>
+Det fÃ¸lgende eksempel viser syntaxen for de logisk strukturer i PHP.</para>
 
 <programlisting>
 &lt;pre&gt;
@@ -508,7 +508,7 @@ two
 
 <para>
 Syntaxen for for, while og do-while loops er som i Perl og C, og er vist i
-det følgende eksempel:</para>
+det fÃ¸lgende eksempel:</para>
 
 <programlisting>
 &lt;pre&gt;
@@ -553,9 +553,9 @@ do-while loop:
 
 <para>
 Loops kan afbrydes med <command>break</command> . <command>break</command> hopper straks
-til slutningen af loopet uden at udføre koden indtil da, til forskel så vil <command>continue</command> straks hoppe til starten af loopet. Begge kommandoer kan
+til slutningen af loopet uden at udfÃ¸re koden indtil da, til forskel sÃ¥ vil <command>continue</command> straks hoppe til starten af loopet. Begge kommandoer kan
 modtage et heltal argument, der er antallet af loops der skal brydes ud af.
-Følgende er et uhyre kryptisk eksempel der bruger både break og continue:</para>
+FÃ¸lgende er et uhyre kryptisk eksempel der bruger bÃ¥de break og continue:</para>
 
 <programlisting>
 &lt;pre&gt;
@@ -595,9 +595,9 @@ Udskriver:
 
 
 <para>
-En tricky opgave i ovenstående eksempel er at finde ud af om koden
+En tricky opgave i ovenstÃ¥ende eksempel er at finde ud af om koden
 afsluttes ved at hoppe ud af et break udtryk, eller fordi while udtrykket ikke
-længere er sandt?</para>
+lÃ¦ngere er sandt?</para>
 </sect1>    <!--   Loops -->
 
 <!-- Skrevet af Keld Simonsen -->
@@ -611,22 +611,22 @@ længere er sandt?</para>
 <indexterm><primary>HTML</primary><secondary>infokager</secondary></indexterm>
 
 <para>
-Infokager er små stykker information, der gemmes hos brugeren,
-og kan hentes frem igen af netlæseren ved det næste besøg.
-De kan bruges til mange formål, eksemplet nedenunder 
+Infokager er smÃ¥ stykker information, der gemmes hos brugeren,
+og kan hentes frem igen af netlÃ¦seren ved det nÃ¦ste besÃ¸g.
+De kan bruges til mange formÃ¥l, eksemplet nedenunder 
 viser hvordan man kan spare en bruger for at indtaste den samme
 information igen i en formular.
 </para>
 
 <para>
-Programmeringsmæssigt skal man først indsamle informationen, via en
-FORM-formular, denne udfører en anden HTML-side, hvor man så kan se
+ProgrammeringsmÃ¦ssigt skal man fÃ¸rst indsamle informationen, via en
+FORM-formular, denne udfÃ¸rer en anden HTML-side, hvor man sÃ¥ kan se
 den indsamlede information, og gemme informationen hos
 brugeren. Gemningen af informationen, med PHP-funktionen
-<literal>setcookie()</literal> skal ske før der overhovedet er skrevet
-andet ud, incl. den begyndende DTD og &lt;html&gt;-mærket.  Informationen
+<literal>setcookie()</literal> skal ske fÃ¸r der overhovedet er skrevet
+andet ud, incl. den begyndende DTD og &lt;html&gt;-mÃ¦rket.  Informationen
 gemmes som regel i en tekstfil et administrationskatalog for
-netlæseren i brugerens hjemmekatalog, for eksempel <filename>~/.netscape/cookies</filename>.
+netlÃ¦seren i brugerens hjemmekatalog, for eksempel <filename>~/.netscape/cookies</filename>.
 </para>
 
 <para>
@@ -634,7 +634,7 @@ Eksemplet indeholder to sider: <filename>bestilling.php</filename> og
 <filename>bestilt.php</filename>.  <filename>bestilling.php</filename>
 er siden brugeren kommer til og indtaster oplysningerne, og
 <filename>bestilt.php</filename> er den side som kvitterer for
-indtastningen. De to filer udgør et komplet eksempel, der kører.
+indtastningen. De to filer udgÃ¸r et komplet eksempel, der kÃ¸rer.
 </para>
 
 <screen>
@@ -653,11 +653,11 @@ Siden "bestilling.php":
 
 <para>
 "bestilling.php" indhenter information om navn og epostadresse, via indtastning.
-Hvis vi tidligere har fået informationen og gemt den i infokager hos brugeren,
-så vil eksemplet udfylde indtastningen på forhånd med disse værdier.
+Hvis vi tidligere har fÃ¥et informationen og gemt den i infokager hos brugeren,
+sÃ¥ vil eksemplet udfylde indtastningen pÃ¥ forhÃ¥nd med disse vÃ¦rdier.
 Dette sker ved at hente informationen via PHPs systemvariabel HTTP_COOKIE_VARS,
 som ved aktiveringen af siden allerede indeholder alle infokager for netstedet,
-og give det som værdier med VALUE tildelinger, og brug af PHP echo-udskrivning.
+og give det som vÃ¦rdier med VALUE tildelinger, og brug af PHP echo-udskrivning.
 </para>
 
 <screen>
@@ -671,28 +671,28 @@ echo "&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;Dit navn: " . $navn . "&l
 </screen>
 
 <para>
-<filename>bestilt.php</filename> aktiveres med tryk på
-"Bestil"-knappen fra <filename>bestilling.php</filename>.  Den får med
+<filename>bestilt.php</filename> aktiveres med tryk pÃ¥
+"Bestil"-knappen fra <filename>bestilling.php</filename>.  Den fÃ¥r med
 over alle variable fra formularen i
-<filename>bestilling.php</filename>, og det første vi gør er at sende
+<filename>bestilling.php</filename>, og det fÃ¸rste vi gÃ¸r er at sende
 infokagerne til brugeren med <literal>setcookie()</literal>.
 </para>
 
 <para>
-Parametrene er: 1: navnet på infokagen, 2: værdien, 3: hvor længe infokagen gælder, i
-eksemplet et år (i sekunder), 4: en sti hos værten, som regel "<literal>/</literal>" (og der er
-netlæsere, der ikke forstår andet), 5: domænenavnet for værten, "<literal>.</literal>" betyder
-incl alle underdomæner.
-Dette er navnet på de web-servere der kan få fat på
+Parametrene er: 1: navnet pÃ¥ infokagen, 2: vÃ¦rdien, 3: hvor lÃ¦nge infokagen gÃ¦lder, i
+eksemplet et Ã¥r (i sekunder), 4: en sti hos vÃ¦rten, som regel "<literal>/</literal>" (og der er
+netlÃ¦sere, der ikke forstÃ¥r andet), 5: domÃ¦nenavnet for vÃ¦rten, "<literal>.</literal>" betyder
+incl alle underdomÃ¦ner.
+Dette er navnet pÃ¥ de web-servere der kan fÃ¥ fat pÃ¥
 infokagen igen.
-Hvis du leger med eksemplet hér, så husk at ændre domænenavnet til dit eget domænenavn.
+Hvis du leger med eksemplet hÃ©r, sÃ¥ husk at Ã¦ndre domÃ¦nenavnet til dit eget domÃ¦nenavn.
 </para>
 
 <para>
-Dernæst udskriver
+DernÃ¦st udskriver
 vi et lille HTML-skript med de indtastede oplysninger. 
-Bemærk "<literal>.</literal>" bruges til at sætte flere strenge sammen til én streng
-i PHP, derved undgås mange <literal>echo</literal> sætninger.
+BemÃ¦rk "<literal>.</literal>" bruges til at sÃ¦tte flere strenge sammen til Ã©n streng
+i PHP, derved undgÃ¥s mange <literal>echo</literal> sÃ¦tninger.
 </para>
 </sect1>
 

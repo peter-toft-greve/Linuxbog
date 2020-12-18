@@ -13,14 +13,14 @@
  </indexterm>
 
  <para>
-  XDM er den oprindelige displaymanager og er dermed den mindste fællesnævner
-  for hvad en displaymanager skal kunne. XDM følger med som en del af XFree86
-  og har ingen afhængigheder ud over standardbiblioteker. XDM implementerer
-  ikke overflødige ting, det er en displaymanager og ikke andet.
+  XDM er den oprindelige displaymanager og er dermed den mindste fÃ¦llesnÃ¦vner
+  for hvad en displaymanager skal kunne. XDM fÃ¸lger med som en del af XFree86
+  og har ingen afhÃ¦ngigheder ud over standardbiblioteker. XDM implementerer
+  ikke overflÃ¸dige ting, det er en displaymanager og ikke andet.
  </para>
 
  <para>
-  Den mest synlige opsætningsmulighed er at XDM kan sætte et logo ind i
+  Den mest synlige opsÃ¦tningsmulighed er at XDM kan sÃ¦tte et logo ind i
   login-boksen og XDM giver ikke brugeren andre smarte valgmuligheder end at
   skrive sit brugernavn og kodeord.
 
@@ -29,25 +29,25 @@
   <graphic fileref="xdm.&magic;" scale="60" />
  </figure>
 
-  Selv ikke den lyseblå baggrundsfarve tager xdm sig af. Den bliver lavet fra
+  Selv ikke den lyseblÃ¥ baggrundsfarve tager xdm sig af. Den bliver lavet fra
   et shell-script xdm kalder under opstarten.
  </para>
 
- <sect2 id='xdm-opsætning'>
-  <title>Opsætning af XDM</title>
+ <sect2 id='xdm-opsÃ¦tning'>
+  <title>OpsÃ¦tning af XDM</title>
 
   <para>
-   Opsætningen af XDM foregår i en række tekstfiler, der normalt vil være
-   placeret i <filename>/etc/X11/xdm</filename>. Den primære
-   opsætningsfil er <filename>xdm-config</filename>. I den er der
-   henvisninger til hvad de andre opsætningsfiler hedder samt hvordan
-   XDM opfører sig som displaymanager
+   OpsÃ¦tningen af XDM foregÃ¥r i en rÃ¦kke tekstfiler, der normalt vil vÃ¦re
+   placeret i <filename>/etc/X11/xdm</filename>. Den primÃ¦re
+   opsÃ¦tningsfil er <filename>xdm-config</filename>. I den er der
+   henvisninger til hvad de andre opsÃ¦tningsfiler hedder samt hvordan
+   XDM opfÃ¸rer sig som displaymanager
   </para>
 
   <para>
    Ud over henvisninger til de andre filer er det vigtigste i denne fil 
-   at man kan slå muligheden for at skulle lege displaymanager for andre
-   maskiner ved at sætte XDM til at lytte på port 0.
+   at man kan slÃ¥ muligheden for at skulle lege displaymanager for andre
+   maskiner ved at sÃ¦tte XDM til at lytte pÃ¥ port 0.
 
 <programlisting>
 ! SECURITY: do not listen for XDMCP or Chooser requests
@@ -58,8 +58,8 @@ DisplayManager.requestPort:     0
 
   <para>
    Udseendet af ens loginbilled kan styres fra <filename>Xresources</filename>
-   Her kan man sætte op hvad den skal skrive, hvilke skriftsnit der skal bruges
-   og man kan sætte et logo på.
+   Her kan man sÃ¦tte op hvad den skal skrive, hvilke skriftsnit der skal bruges
+   og man kan sÃ¦tte et logo pÃ¥.
 
 <programlisting>
 xlogin*greeting: Velkommen til hven.sslug.dk
@@ -76,30 +76,30 @@ xlogin*failFont: -adobe-helvetica-bold-r-normal--12-120-75-75-p-70-iso8859-1
   </para>
 
   <para>
-   Så findes der en række shell-scripts som XDM kører på forskellige
+   SÃ¥ findes der en rÃ¦kke shell-scripts som XDM kÃ¸rer pÃ¥ forskellige
    tidspunkter
 
    <itemizedlist>
     <listitem>
      <para>
-      <filename>Xsetup</filename>: Udføres når XDM laver en login-skærm
+      <filename>Xsetup</filename>: UdfÃ¸res nÃ¥r XDM laver en login-skÃ¦rm
      </para>
     </listitem>
     <listitem>
      <para>
-      <filename>Xstartup</filename>: Udføres, som root, når en bruger har
+      <filename>Xstartup</filename>: UdfÃ¸res, som root, nÃ¥r en bruger har
       logget ind
      </para>
     </listitem>
     <listitem>
      <para>
-      <filename>Xsession</filename>: Udføres, som brugeren der har logget
+      <filename>Xsession</filename>: UdfÃ¸res, som brugeren der har logget
       ind, efter <filename>Xstartup</filename>
      </para>
     </listitem>
     <listitem>
      <para>
-      <filename>Xreset</filename>: Udføres, som root, når en brugers session
+      <filename>Xreset</filename>: UdfÃ¸res, som root, nÃ¥r en brugers session
       afsluttes
      </para>
     </listitem>
@@ -107,38 +107,38 @@ xlogin*failFont: -adobe-helvetica-bold-r-normal--12-120-75-75-p-70-iso8859-1
   </para>
 
   <para>
-   Normalt kører man en <command>xconsole</command> fra <filename>Xsetup</filename>
-   og man kan også skifte farve fra X11-grå med programmet <command>xsetroot</command>
+   Normalt kÃ¸rer man en <command>xconsole</command> fra <filename>Xsetup</filename>
+   og man kan ogsÃ¥ skifte farve fra X11-grÃ¥ med programmet <command>xsetroot</command>
   </para>
 
   <para>
    <filename>Xstartup</filename> og <filename>Xreset</filename> kan bruges
-   til at sørge for at man kan se at brugeren er logget ind. Dette kan gøres
+   til at sÃ¸rge for at man kan se at brugeren er logget ind. Dette kan gÃ¸res
    med programmet <command>sessreg</command> der vedligeholder utmp- og
    wtmp-filer.
   </para>
 
   <para>
-   <filename>Xsession</filename> kan sætte noget standardopsætning op. Den 
-   bør altid slutte med at udføre brugerens egen <filename>$HOME/.xsession</filename>
+   <filename>Xsession</filename> kan sÃ¦tte noget standardopsÃ¦tning op. Den 
+   bÃ¸r altid slutte med at udfÃ¸re brugerens egen <filename>$HOME/.xsession</filename>
    som kan starte en windowmanager op.
   </para>
 
  </sect2>
 
  <sect2 id='xdm-konklusion'>
-  <title>Er XDM stadigvæk brugbar?</title>
+  <title>Er XDM stadigvÃ¦k brugbar?</title>
 
   <para>
-   Det første man skal overveje er hvor tit man egentlig arbejder på selve
-   login-skærmen? Det er ikke ret ofte. Derfor gør det ikke særlig meget
-   at den ikke har så mange fancy features.
+   Det fÃ¸rste man skal overveje er hvor tit man egentlig arbejder pÃ¥ selve
+   login-skÃ¦rmen? Det er ikke ret ofte. Derfor gÃ¸r det ikke sÃ¦rlig meget
+   at den ikke har sÃ¥ mange fancy features.
   </para>
 
   <para>
-   Så skal man overveje hvad man mangler? Man kan måske mangle en pæn knap
+   SÃ¥ skal man overveje hvad man mangler? Man kan mÃ¥ske mangle en pÃ¦n knap
    der siger 'luk maskinen ned' hvis det er en arbejdsmaskine. De shell-scripts
-   XDM bruger giver dog en fleksibilitet der gør sådan en knap let at lave.
+   XDM bruger giver dog en fleksibilitet der gÃ¸r sÃ¥dan en knap let at lave.
   </para>
 
   <para>

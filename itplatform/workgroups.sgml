@@ -1,12 +1,12 @@
 <chapter id="workgroups">
 <!-- Kapitlet er skrevet af Morten Christensen  -->
-<title>Workgroups og dermed relaterede værktøjer</title>
+<title>Workgroups og dermed relaterede vÃ¦rktÃ¸jer</title>
 <para>
 </para>
 <sect1 id="whatis-wg">
-<title>Hvordan gøres det i Linux</title>
+<title>Hvordan gÃ¸res det i Linux</title>
 <para>
-Her kommer eksempler på løsninger i Linux:
+Her kommer eksempler pÃ¥ lÃ¸sninger i Linux:
 </para>
 
 <itemizedlist mark="bullet">
@@ -54,52 +54,52 @@ Exchange, Novell Groupwise og Lotus Notes/Domino.
 </para>
 
 <para>
-phpGroupWare kører på en web-server, som via PHP taler med en
+phpGroupWare kÃ¸rer pÃ¥ en web-server, som via PHP taler med en
 database, (gerne MySQL eller PostgreSQL). Klientprogrammet er en
 hvilken som helst browser, som kan kontakte webserveren.
 </para>
 
 <para>
-phpGroupWare's første betaversion kom i november 2000 og i marts 2002
-forsøger gruppen at få færdiggøre en beta version 14. Der er ikke
+phpGroupWare's fÃ¸rste betaversion kom i november 2000 og i marts 2002
+forsÃ¸ger gruppen at fÃ¥ fÃ¦rdiggÃ¸re en beta version 14. Der er ikke
 udsigt til en final version, og projektets hastighed er pt. faldet til
-en betarelease hver 12 måned. Selvom der tales om beta-udgaver er
+en betarelease hver 12 mÃ¥ned. Selvom der tales om beta-udgaver er
 mange dele af pakken brugbare.
 </para>
 
 <para>
-phpGroupWare viser nogle af et open source-produkts stærke og svage
+phpGroupWare viser nogle af et open source-produkts stÃ¦rke og svage
 sider. Der er meget talent til stede, som har gode ideer og kan skrive
-smart kode, men når det ubehagelige arbejde skal laves, mangler
-motivationen og overtalelsesmidlerne. Derfor har phpGroupWare været
-meget længe om, at få styr på dokumentation til programmet, og
-f.eks. har det centrale kalenderprogram en række avancerede
+smart kode, men nÃ¥r det ubehagelige arbejde skal laves, mangler
+motivationen og overtalelsesmidlerne. Derfor har phpGroupWare vÃ¦ret
+meget lÃ¦nge om, at fÃ¥ styr pÃ¥ dokumentation til programmet, og
+f.eks. har det centrale kalenderprogram en rÃ¦kke avancerede
 faciliteter, men det har hverken mulighed for at kommunikere med en
 PDA (f.eks. Palm Pilot) eller med kalenderen i brugernes MS Outlook.
 </para>
 
 <para>
-Principielt er phpGroupWare et API (en ramme eller fælles
+Principielt er phpGroupWare et API (en ramme eller fÃ¦lles
 programmeringssprog til at bygge underprogrammer i). Dette API og at
-phpGroupWare er baseret på PHP gør det nemmere at lave tilpasning og
+phpGroupWare er baseret pÃ¥ PHP gÃ¸r det nemmere at lave tilpasning og
 nye applikationer til phpGroupWare end til de fleste andre
-programsamlinger. Sammen med API.'et følger nogle centrale
+programsamlinger. Sammen med API.'et fÃ¸lger nogle centrale
 delprogrammer, som ud over brugeradministration omfatter kalender,
 web-post-klient, huskeseddel og note/memo-system. Derudover findes en
-stor mængde andre programmet i tilknytning til phpGroupWare, som
-karakteriseres ved, at være ufuldstændige.
+stor mÃ¦ngde andre programmet i tilknytning til phpGroupWare, som
+karakteriseres ved, at vÃ¦re ufuldstÃ¦ndige.
 </para>
 
 <sect3 id="phpgroupware-oekonomi">
-<title>Økonomi</title>
+<title>Ã˜konomi</title>
 <para>
 phpGroupWare er gratis at installere og bruge. Koden kan frit hentes
-på internettet.
+pÃ¥ internettet.
 </para>
 
 <para>
-Vi er ikke bekendt med værktøjer til at importere en organisations
-bestående bruger-base i programmet.
+Vi er ikke bekendt med vÃ¦rktÃ¸jer til at importere en organisations
+bestÃ¥ende bruger-base i programmet.
 </para>
 </sect3>
 </sect2>
@@ -108,32 +108,32 @@ bestående bruger-base i programmet.
 <sect2 id="PHProjekt">
 <title>PHPProjekt</title>
 <para>
-PHProjekt er et tysk enkeltmands-værk, som ikke har så stor
+PHProjekt er et tysk enkeltmands-vÃ¦rk, som ikke har sÃ¥ stor
 funktionalitet som phpGroupWare, men hvor de eksisterende funktioner
-til gengæld er mere gennemførte.  PHProjekt har udviklet sig meget
+til gengÃ¦ld er mere gennemfÃ¸rte.  PHProjekt har udviklet sig meget
 hurtigt, og version 3.1a blev frigivet 02.02.2002.
 </para>
 
 <para>
-Som phpGroupWare kører PHProjekt på en web-server, som via PHP taler
+Som phpGroupWare kÃ¸rer PHProjekt pÃ¥ en web-server, som via PHP taler
 med en database, (gerne MySQL eller PostgreSQL). Klientprogrammet er
 en hvilken som helst browser, som kan kontakte webserveren.
 Kalenderdelen mangler mulighed for, at synkronisere med PDA'er.
 </para>
 
 <sect3 id="PHProjekt-oekonomi">
-<title>Økonomi</title>
+<title>Ã˜konomi</title>
 <para>
-PhProjekt er gratis at installere og bruge. Koden kan frit hentes på internettet.
+PhProjekt er gratis at installere og bruge. Koden kan frit hentes pÃ¥ internettet.
 </para>
 
 <para>
-Der kan købes support (hos manden bag projektet), hvis virksomhedens egne ressourcer ikke slår til. 
+Der kan kÃ¸bes support (hos manden bag projektet), hvis virksomhedens egne ressourcer ikke slÃ¥r til. 
 </para>
 
 <para>
-Vi er ikke bekendt med værktøjer til at importere en organisations
-bestående bruger-base i programmet.
+Vi er ikke bekendt med vÃ¦rktÃ¸jer til at importere en organisations
+bestÃ¥ende bruger-base i programmet.
 </para>
 </sect3>
 </sect2>
@@ -143,30 +143,30 @@ bestående bruger-base i programmet.
 <title>TWIG</title>
 <para>
 TWIG (the web internet gateway) er startet i 1998, og derfor blandt de
-ældste linux-baserede groupware-produkter. I marts 2002 er den
+Ã¦ldste linux-baserede groupware-produkter. I marts 2002 er den
 aktuelle version 2.7.5.
 </para>
 
 <para>
-Som phpGroupWare og PHProjekt kører TWIG på en web-server, som via PHP
+Som phpGroupWare og PHProjekt kÃ¸rer TWIG pÃ¥ en web-server, som via PHP
 taler med en database, (gerne MySQL eller
 PostgreSQL). Klientprogrammet er en hvilken som helst browser, som kan
 kontakte webserveren.
 </para>
 
 <sect3 id="TWIG-oekonomi">
-<title>Økonomi</title>
+<title>Ã˜konomi</title>
 <para>
-TWIG er gratis at installere og bruge. Koden kan frit hentes på internettet.
+TWIG er gratis at installere og bruge. Koden kan frit hentes pÃ¥ internettet.
 </para>
 
 <para>
-Der kan købes support (hos manden bag projektet), hvis virksomhedens egne ressourcer ikke slår til. 
+Der kan kÃ¸bes support (hos manden bag projektet), hvis virksomhedens egne ressourcer ikke slÃ¥r til. 
 </para>
 
 <para>
-Vi er ikke bekendt med værktøjer til at importere en organisations
-bestående bruger-base i programmet.
+Vi er ikke bekendt med vÃ¦rktÃ¸jer til at importere en organisations
+bestÃ¥ende bruger-base i programmet.
 </para>
 </sect3>
 
@@ -180,7 +180,7 @@ et kommercielt produkt.
 </para>
 
 <para>
-I skrivende stund fungerer deres hjemmeside ikke særlig godt, og
+I skrivende stund fungerer deres hjemmeside ikke sÃ¦rlig godt, og
 virksomheden er antagelige under omstrukturering.
 </para>
 </sect2>
@@ -192,7 +192,7 @@ Et tysk kommercielt produkt. Det har mulighed for synkronisering af kalenderdata
 </para>
 
 <sect3 id="SKYRiX-oekonomi">
-<title>Økonomi</title>
+<title>Ã˜konomi</title>
 <para>
 Et kommercielt produkt. Skyrix' prisliste starter ved 5.000 euro.
 </para>
@@ -204,27 +204,27 @@ Et kommercielt produkt. Skyrix' prisliste starter ved 5.000 euro.
 <sect2 id="SKYRiX-plus-suse-e-mail-server">
 <title>SKYRiX Green og SuSE E-mail-server III</title>
 <para>
-Linux-distributøren SuSE sælger en dedikeret
+Linux-distributÃ¸ren SuSE sÃ¦lger en dedikeret
 e-mail-server-pakke. Version III af e-mail-serveren indeholder en
 specialudgave af SKYRiX. Den har stadig mulighed for synkronisering
 af kalenderdata med en Palm Pilot.
 </para>
 
 <para>
-En begrænsning i den version, som er bundlet med E-mailserver III er,
-at ToDo-lister er helt personlige. De kan ikke deles, så emner kan
-tilføjes eller ses af andre brugere.
+En begrÃ¦nsning i den version, som er bundlet med E-mailserver III er,
+at ToDo-lister er helt personlige. De kan ikke deles, sÃ¥ emner kan
+tilfÃ¸jes eller ses af andre brugere.
 </para>
 
 <sect3 id="SKYRiX2-oekonomi">
-<title>Økonomi</title>
+<title>Ã˜konomi</title>
 <para>
-Groupware-delen følger automatisk med ved køb af SuSE's eMail server
+Groupware-delen fÃ¸lger automatisk med ved kÃ¸b af SuSE's eMail server
 III-pakke. Pakken koster ca. kr. 8-10.000.
 </para>
 
 <para>
-Licensen giver ingen begrænsing i antallet af brugere på serveren.
+Licensen giver ingen begrÃ¦nsing i antallet af brugere pÃ¥ serveren.
 </para>
 </sect3>
 

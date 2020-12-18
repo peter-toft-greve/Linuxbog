@@ -1,24 +1,24 @@
 <chapter id="kde-basics">
 <title>KDE</title>
 <para>
-KDE-basalt. Menuen og et par få programmer - ikke noget med
+KDE-basalt. Menuen og et par fÃ¥ programmer - ikke noget med
 kommando-linje!
 KNotes
 <emphasis>skal skrives</emphasis>
 </para>
 
 <sect1 id="kde-login">
-<title>Log ind på Linux-maskinen</title>
+<title>Log ind pÃ¥ Linux-maskinen</title>
 <para>
-Det første der møder brugeren er en grafisk skærm hvor man kan logge
-ind. En Linux-maskine kan man ikke bare komme ind på uden et
-brugernavn og et password, dvs. der skal være oprettet en brugerkonto
+Det fÃ¸rste der mÃ¸der brugeren er en grafisk skÃ¦rm hvor man kan logge
+ind. En Linux-maskine kan man ikke bare komme ind pÃ¥ uden et
+brugernavn og et password, dvs. der skal vÃ¦re oprettet en brugerkonto
 til dig med dit personlige kodeord (password).
 </para>
 
 <para>
-Nå du logger ind med brugernavn og derefter password får du en skærm,
-som minder om <xref linkend="kde-kontorbrugerbog-fig"/>. Vi skal nu se på de
+NÃ¥ du logger ind med brugernavn og derefter password fÃ¥r du en skÃ¦rm,
+som minder om <xref linkend="kde-kontorbrugerbog-fig"/>. Vi skal nu se pÃ¥ de
 vigtigste dele af denne arbejdsflade. Bogstaverne passer til figuren.
 </para>
 
@@ -31,24 +31,24 @@ vigtigste dele af denne arbejdsflade. Bogstaverne passer til figuren.
 <itemizedlist mark="bullet">
 <listitem>
 <para>
-<emphasis>A:</emphasis> Skal man have adgang til cd-rom, så tryk her
-med venstre musetast for at få den koblet til. Med højre musetast
-kan du tilsvarende få en menu op hvor du kan afmontere cd-rom'en. Gør
-det, når du ikke længere skal se på indholdet af cd-rom'en.
+<emphasis>A:</emphasis> Skal man have adgang til cd-rom, sÃ¥ tryk her
+med venstre musetast for at fÃ¥ den koblet til. Med hÃ¸jre musetast
+kan du tilsvarende fÃ¥ en menu op hvor du kan afmontere cd-rom'en. GÃ¸r
+det, nÃ¥r du ikke lÃ¦ngere skal se pÃ¥ indholdet af cd-rom'en.
 </para>
 </listitem>
 
 <listitem> 
 <para>
-<emphasis>B:</emphasis> Tilsvarende til cd-rom, kan du på den lille
-diskette få koblet floppy-disken ind.
+<emphasis>B:</emphasis> Tilsvarende til cd-rom, kan du pÃ¥ den lille
+diskette fÃ¥ koblet floppy-disken ind.
 </para>
 </listitem>
 
 <listitem> 
 <para>
-<emphasis>C:</emphasis> På det lille KDE-ikon i venstre hjørne kan du
-få menuer frem med programmer. Dette svarer til Microsoft Windows' Start-ikon.
+<emphasis>C:</emphasis> PÃ¥ det lille KDE-ikon i venstre hjÃ¸rne kan du
+fÃ¥ menuer frem med programmer. Dette svarer til Microsoft Windows' Start-ikon.
 </para>
 </listitem>
 
@@ -68,18 +68,18 @@ i <xref linkend="web-med-konqueror"/>.
 
 <listitem> 
 <para>
-<emphasis>F:</emphasis> Tryk på den lille hængelås for at låse din
-skærm. Du skal bruge dit hemmelige kodeord (password) til at låse
+<emphasis>F:</emphasis> Tryk pÃ¥ den lille hÃ¦ngelÃ¥s for at lÃ¥se din
+skÃ¦rm. Du skal bruge dit hemmelige kodeord (password) til at lÃ¥se
 maskinen op igen.
 </para>
 </listitem>
 
 <listitem> 
 <para>
-<emphasis>G:</emphasis> På denne knap lukker du den grafiske
-brugergrænseflade ned igen. Det er ikke det samme som at lukke
+<emphasis>G:</emphasis> PÃ¥ denne knap lukker du den grafiske
+brugergrÃ¦nseflade ned igen. Det er ikke det samme som at lukke
 hele <emphasis>Linux-maskinen</emphasis> ned. Du kommer ud i en menu
-hvor du skal trykke på "[shutdown]".
+hvor du skal trykke pÃ¥ "[shutdown]".
 </para>
 </listitem>
 </itemizedlist>
@@ -87,21 +87,21 @@ hvor du skal trykke på "[shutdown]".
 </sect1>
 
 <sect1 id="KDE-smaaprogrammer">
-<title>KDE-småprogrammer</title>
+<title>KDE-smÃ¥programmer</title>
 
 <para>
-I dette afsnit ser vi på et par af de småprogrammer, du sikkert kan have
-glæde af at kende.
+I dette afsnit ser vi pÃ¥ et par af de smÃ¥programmer, du sikkert kan have
+glÃ¦de af at kende.
 </para>
 
 <sect2 id="kde-knotes">
 <title>Tag noter med KNotes</title>
 <para>
 Vi kender alle de gule Post-it lapper man lige skriver et hurtigt
-notat på. KDE har en tilsvarende smart funktion. Start KNotes ved at
-trykke på KDE-ikonet i nederste venstre hjørne og derefter
-"[Værktøjer]-&gt;[KNotes (Popup noter)]".
-Der kommer nu et nyt ikon frem i menu-panelet nederst i skærmen.
+notat pÃ¥. KDE har en tilsvarende smart funktion. Start KNotes ved at
+trykke pÃ¥ KDE-ikonet i nederste venstre hjÃ¸rne og derefter
+"[VÃ¦rktÃ¸jer]-&gt;[KNotes (Popup noter)]".
+Der kommer nu et nyt ikon frem i menu-panelet nederst i skÃ¦rmen.
 </para>
 
 <figure id="knotes-kontorbruger-fig" float="1">
@@ -110,9 +110,9 @@ Der kommer nu et nyt ikon frem i menu-panelet nederst i skærmen.
 </figure>
 
 <para>
-Gider du ikke se på noten, så tryk i øverste højre hjørne for at lukke
-noten ned. Den bliver ikke slettet - vil du igen se noten så tryk på
-ikonet med den lille notesbog, som ses ved den nederste pil på 
+Gider du ikke se pÃ¥ noten, sÃ¥ tryk i Ã¸verste hÃ¸jre hjÃ¸rne for at lukke
+noten ned. Den bliver ikke slettet - vil du igen se noten sÃ¥ tryk pÃ¥
+ikonet med den lille notesbog, som ses ved den nederste pil pÃ¥ 
 <xref linkend="knotes-kontorbruger-fig"/>. 
 </para>
 
@@ -121,12 +121,12 @@ ikonet med den lille notesbog, som ses ved den nederste pil på
 <sect2 id="KDE-spille-cd">
 <title>Spille musik-cd'er</title>
 <para>
-Mange af os kan godt lide at høre musik i løbet af dagen fra cd'er.
-Programmet Kscd finder du ved at trykke på KDE-ikonet i nederste venstre
-hjørne og derefter "[Multimedie]-&gt;[Kscd (CD-afspiller)]".
-Du kan se programmet på <xref linkend="kscd-kontorbruger-fig"/>. Har du
+Mange af os kan godt lide at hÃ¸re musik i lÃ¸bet af dagen fra cd'er.
+Programmet Kscd finder du ved at trykke pÃ¥ KDE-ikonet i nederste venstre
+hjÃ¸rne og derefter "[Multimedie]-&gt;[Kscd (CD-afspiller)]".
+Du kan se programmet pÃ¥ <xref linkend="kscd-kontorbruger-fig"/>. Har du
 direkte internetadgang vil programmet endda selv genkende dine cd'er
-og vise titler osv. på de enkelte titler.
+og vise titler osv. pÃ¥ de enkelte titler.
 </para>
 
 <figure id="kscd-kontorbruger-fig" float="1">
@@ -136,17 +136,17 @@ og vise titler osv. på de enkelte titler.
 </sect2>
 
 <sect2 id="KDE-udskrift">
-<title>Printerkøen</title>
+<title>PrinterkÃ¸en</title>
 <para>
-Når man udskriver på en netværksprinter kan det ofte være meget rart
-at se hvornår ens egen udskrift kommer ud. Ligesom i Microsoft Windows 
-kan man se printerkøen løbende.
-Programmet Klpq finder du ved at trykke på KDE-ikonet i nederste venstre
-hjørne og derefter "[Værktøjer]-&gt;[KLpq (Viser udskriftskøer)]".
+NÃ¥r man udskriver pÃ¥ en netvÃ¦rksprinter kan det ofte vÃ¦re meget rart
+at se hvornÃ¥r ens egen udskrift kommer ud. Ligesom i Microsoft Windows 
+kan man se printerkÃ¸en lÃ¸bende.
+Programmet Klpq finder du ved at trykke pÃ¥ KDE-ikonet i nederste venstre
+hjÃ¸rne og derefter "[VÃ¦rktÃ¸jer]-&gt;[KLpq (Viser udskriftskÃ¸er)]".
 </para>
 
 <figure id="klpq-fig" float="1">
-<title>Klpq viser udskriftskøen på dine netværksprintere.</title>
+<title>Klpq viser udskriftskÃ¸en pÃ¥ dine netvÃ¦rksprintere.</title>
 <graphic fileref="klpq.&magic;"  scale="50"></graphic>
 </figure>
 </sect2>
@@ -154,16 +154,16 @@ hjørne og derefter "[Værktøjer]-&gt;[KLpq (Viser udskriftskøer)]".
 <sect2 id="KDE-regnemaskine">
 <title>Lommeregner</title>
 <para>
-De fleste af os har jævnligt brug for at gange et par tal sammen. En
-lille regnemaskine  kan du også finde i KDE.
-Programmet KCalc findes på KDE-ikonet i nederste venstre
-hjørne og derefter "[Værktøjer]->[KCalc (Videnskabelig rengnemaskine)]".
-På <xref linkend="kcalc-fig"/> kan man se KCalc. De mest
-almindelige funktioner er markeret med rødt.</para>
+De fleste af os har jÃ¦vnligt brug for at gange et par tal sammen. En
+lille regnemaskine  kan du ogsÃ¥ finde i KDE.
+Programmet KCalc findes pÃ¥ KDE-ikonet i nederste venstre
+hjÃ¸rne og derefter "[VÃ¦rktÃ¸jer]->[KCalc (Videnskabelig rengnemaskine)]".
+PÃ¥ <xref linkend="kcalc-fig"/> kan man se KCalc. De mest
+almindelige funktioner er markeret med rÃ¸dt.</para>
 
 <para> 
 Dem som er interesseret i matematik kan se at
-regnemaskinen også kan regne om fra hex, binær og
+regnemaskinen ogsÃ¥ kan regne om fra hex, binÃ¦r og
 decimal. Tilsvarende har man trigonometriske funktioner og andet sjov :-)
 </para>
 
@@ -175,18 +175,18 @@ decimal. Tilsvarende har man trigonometriske funktioner og andet sjov :-)
 
 
 <sect2 id="KDE-organisator">
-<title>Planlægning af tid</title>
+<title>PlanlÃ¦gning af tid</title>
 <para>
-Har du brug for en elektronisk kalender, så er der en i KDE, som er
+Har du brug for en elektronisk kalender, sÃ¥ er der en i KDE, som er
 meget fornuftig. 
-Programmet KOrganisator findes på KDE-ikonet i nederste venstre
-hjørne og derefter "[Øvrige programmer]->[KOrganisator]". 
-På <xref linkend="korganisator-fig"/> kan man se KOrganisator.
+Programmet KOrganisator findes pÃ¥ KDE-ikonet i nederste venstre
+hjÃ¸rne og derefter "[Ã˜vrige programmer]->[KOrganisator]". 
+PÃ¥ <xref linkend="korganisator-fig"/> kan man se KOrganisator.
 </para>
 
 
 <para>
-Tilføj mere
+TilfÃ¸j mere
 </para>
 
 <figure id="korganisator-fig" float="1">
@@ -197,54 +197,54 @@ Tilføj mere
 
 
 <sect2 id="KDE-hjaelp">
-<title>Hjælpefunktionen</title>
+<title>HjÃ¦lpefunktionen</title>
 <para>
-KDE har en hjælpefunktion hvor mange programmer er beskrevet. Mange
-programmer vil nok have en engelsk beskrivelse, så der er gode
-muligheder for at hjælpe med at oversætte, hvis man har overskuddet.
+KDE har en hjÃ¦lpefunktion hvor mange programmer er beskrevet. Mange
+programmer vil nok have en engelsk beskrivelse, sÃ¥ der er gode
+muligheder for at hjÃ¦lpe med at oversÃ¦tte, hvis man har overskuddet.
 </para>
 
 <para>
-Hjælpefunktionen findes ved at trykke på KDE-ikonet i nederste venstre
-hjørne og derefter "[Hjælp]". På <xref linkend="khelp-fig"/> er dette
-vist. Man kan med fordel læse <xref linkend="KDE-Konqueror"/>, idet
-hjælpefunktionen anvender web-browseren Konqueror.
+HjÃ¦lpefunktionen findes ved at trykke pÃ¥ KDE-ikonet i nederste venstre
+hjÃ¸rne og derefter "[HjÃ¦lp]". PÃ¥ <xref linkend="khelp-fig"/> er dette
+vist. Man kan med fordel lÃ¦se <xref linkend="KDE-Konqueror"/>, idet
+hjÃ¦lpefunktionen anvender web-browseren Konqueror.
 </para>
 
 <figure id="khelp-fig" float="1">
-<title>KDE har en hjælpefunktion man finder i start-menuen</title>
+<title>KDE har en hjÃ¦lpefunktion man finder i start-menuen</title>
 <graphic fileref="khelp.&magic;"  scale="50"></graphic>
 </figure>
 </sect2>
 
 <sect2 id="kontorbruger-ksnapshot">
-<title>Skærmbilleder med KSnapshot</title>
-<indexterm><primary>skærmskud</primary></indexterm>
+<title>SkÃ¦rmbilleder med KSnapshot</title>
+<indexterm><primary>skÃ¦rmskud</primary></indexterm>
 <indexterm><primary>screenshot</primary></indexterm>
 <indexterm><primary>import</primary></indexterm>
 <indexterm><primary>ksnapshot</primary></indexterm>
 
 <para>
-Når du har brug for at lave skærmbilleder under KDE, 
+NÃ¥r du har brug for at lave skÃ¦rmbilleder under KDE, 
 bruger du programmet KSnapshot, som du kan finde under 
-"[Grafik]->[KSnapshot (Skærmindfangningsprogram)]". 
-Afhængig af om du vil lave et skærmbillede af det vindue, 
+"[Grafik]->[KSnapshot (SkÃ¦rmindfangningsprogram)]". 
+AfhÃ¦ngig af om du vil lave et skÃ¦rmbillede af det vindue, 
 som musen befinder sig i eller hele skrivebordet, skal du 
-sætte kryds i "Fotografér kun vindue som indeholder markør". 
-I feltet "Forsinkelse" vælger du hvor lang tid, der 
-skal gå, fra du har klikket på "Fotografér" til skærmbilledet 
-bliver taget. Forsinkelsen skal være lang nok til, at du 
-kan føre musen hen i det vindue, som du vil lave et 
-skærmbillede af. Sættes værdien til 0 bliver skærmbilledet 
-taget ved det første klik med musen.
+sÃ¦tte kryds i "FotografÃ©r kun vindue som indeholder markÃ¸r". 
+I feltet "Forsinkelse" vÃ¦lger du hvor lang tid, der 
+skal gÃ¥, fra du har klikket pÃ¥ "FotografÃ©r" til skÃ¦rmbilledet 
+bliver taget. Forsinkelsen skal vÃ¦re lang nok til, at du 
+kan fÃ¸re musen hen i det vindue, som du vil lave et 
+skÃ¦rmbillede af. SÃ¦ttes vÃ¦rdien til 0 bliver skÃ¦rmbilledet 
+taget ved det fÃ¸rste klik med musen.
 </para>
 
 <para>
-Når KSnapshot kommer til syne igen, kan du se resultatet 
-øverst i vinduet. Under "Filnavn" skriver du stien og 
-filnavnet på skærmbilledet. Du kan også klikke på ikonet 
-med folderen og vælge placeringen i et grafisk miljø. Til 
-sidst klikker du på "Gem", og skærmbilledet er gemt i 
+NÃ¥r KSnapshot kommer til syne igen, kan du se resultatet 
+Ã¸verst i vinduet. Under "Filnavn" skriver du stien og 
+filnavnet pÃ¥ skÃ¦rmbilledet. Du kan ogsÃ¥ klikke pÃ¥ ikonet 
+med folderen og vÃ¦lge placeringen i et grafisk miljÃ¸. Til 
+sidst klikker du pÃ¥ "Gem", og skÃ¦rmbilledet er gemt i 
 filsystemet. 
 </para>
 
@@ -254,9 +254,9 @@ filsystemet.
 </figure>
 
 <para>
-<emphasis>Tip:</emphasis> Man kan også anvende tekstkommandoen
+<emphasis>Tip:</emphasis> Man kan ogsÃ¥ anvende tekstkommandoen
 <command>import -window root screenshot.jpg</command> til at gemme
-hele skærmilledet under navnet <filename>screenshot.jpg</filename>.
+hele skÃ¦rmilledet under navnet <filename>screenshot.jpg</filename>.
 </para>
 
 </sect2>

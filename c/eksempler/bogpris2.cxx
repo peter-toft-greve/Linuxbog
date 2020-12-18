@@ -1,6 +1,6 @@
 /* bogpris2.cxx er en minimal demonstration af, hvordan man kan
- * indføre en ny taltype i C++, således at den - nogenlunde - kan
- * fungere på linie med de indbyggede taltyper.
+ * indfÃ¸re en ny taltype i C++, sÃ¥ledes at den - nogenlunde - kan
+ * fungere pÃ¥ linie med de indbyggede taltyper.
  */
 
 #include <stdio.h>

@@ -1,5 +1,5 @@
 /* file krypter1.c - en brugbar (men forsimplet)
- * krypteringsalgoritme. Kan ikke håndtere linieskift m.v.
+ * krypteringsalgoritme. Kan ikke hÃ¥ndtere linieskift m.v.
  */
 
 static char *keystring = "Under traeerne var der stille og roligt.";

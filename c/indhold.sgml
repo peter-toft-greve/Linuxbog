@@ -11,7 +11,7 @@
 	<othername>J.</othername>
 	<surname>Axel</surname>
 	<affiliation>
-	  <orgname>SSLUG, Skåne Sjælland Linux User Group</orgname>
+	  <orgname>SSLUG, SkÃ¥ne SjÃ¦lland Linux User Group</orgname>
 	</affiliation>
       </author>
     </authorgroup>
@@ -21,14 +21,14 @@
 <copyright>
   <year>2000-2005</year>
   <holder>Forfatteren har ophavsret til bogen, men udgiver den under
-    "Åben dokumentlicens (ÅDL) - version 1.0".
+    "Ã…ben dokumentlicens (Ã…DL) - version 1.0".
   </holder>
 </copyright>
 
 <abstract>
 <para>
 Forskellige programmeringsteknikker illustreret med eksempler,
-mest for C programmører med lidt erfaring, men begyndere kan
+mest for C programmÃ¸rer med lidt erfaring, men begyndere kan
 bladre om i Appendix A og se, om det er noget for dem.
 </para>
 </abstract>

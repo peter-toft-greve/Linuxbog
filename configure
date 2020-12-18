@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Dette script bootstrapper/konfigurer det der skal til for at lave linuxbøgerne 
+# Dette script bootstrapper/konfigurer det der skal til for at lave linuxbÃ¸gerne 
 
 # Af Mads Bondo Dydensborg, madsdyd@challenge.dk, september 2003.
-# Tilføjelser om samling-bogen af Henrik Christian Grove <grove@sslug.dk>
+# TilfÃ¸jelser om samling-bogen af Henrik Christian Grove <grove@sslug.dk>
 #  oktober/november 2003
 
-# Standard bøger at medtage
+# Standard bÃ¸ger at medtage
 #SUBDIRS="admin applikationer c dokumentation forsker friheden itplatform java kontorbruger program signatur sikkerhed unix web wm"
 SUBDIRS="distro itplatform friheden unix kontorbruger applikationer wm admin sikkerhed program web python c java dokumentation"
 SAMLING=
@@ -18,18 +18,18 @@ URL=www.linuxbog.dk
 brug() {
     echo "Brug: ./configure [OPTIONS] [-- SUBDIROPTIONS]"
     echo
-    echo "Hvor OPTIONS kan være een eller flere af "
-    echo "  -h, --help             Viser denne hjælp og afslutter"
-    echo "  -m, --med \"BØGER\"      Bestemmer hvilke bøger der medtages, hvor BØGER"
-    echo "                         er en liste af bøger. Kombiner:"
+    echo "Hvor OPTIONS kan vÃ¦re een eller flere af "
+    echo "  -h, --help             Viser denne hjÃ¦lp og afslutter"
+    echo "  -m, --med \"BÃ˜GER\"      Bestemmer hvilke bÃ¸ger der medtages, hvor BÃ˜GER"
+    echo "                         er en liste af bÃ¸ger. Kombiner:"
     echo "                         \"$SUBDIRS\""
-    echo "  -s, --med-samling      Medtag samling-bogen (samlingen af de byggede bøger)"
-    echo "  -u, --bogurl URL       Hvilken url bøgerne skal bruge. [cvs.linuxbog.dk]"
+    echo "  -s, --med-samling      Medtag samling-bogen (samlingen af de byggede bÃ¸ger)"
+    echo "  -u, --bogurl URL       Hvilken url bÃ¸gerne skal bruge. [cvs.linuxbog.dk]"
     echo "  --splitstikord         Splitter HTML stikord til en fil med hvert forbogstav"
     echo
-    echo "Hvor SUBDIROPTIONS kan være"
+    echo "Hvor SUBDIROPTIONS kan vÃ¦re"
     echo "      --disable-softlink  Bruger kopering af billeder for HTML targets"
-    echo "      --enable-submitbox  Tilføjer en submit boks, når der bygges på tyge"
+    echo "      --enable-submitbox  TilfÃ¸jer en submit boks, nÃ¥r der bygges pÃ¥ tyge"
     echo "Eksempel: ./configure --med \"friheden applikationer\" -- --disable-softlink";
 }
 
@@ -37,8 +37,8 @@ brug() {
 #
 # hjaelp
 hjaelp() {
-    echo "\`configure' opsætter hvilke af \"Linux - friheden til at vælge bøgerne\" der skal"
-    echo "laves på dit system."
+    echo "\`configure' opsÃ¦tter hvilke af \"Linux - friheden til at vÃ¦lge bÃ¸gerne\" der skal"
+    echo "laves pÃ¥ dit system."
     echo
     brug
     exit
@@ -75,14 +75,14 @@ while true ; do
     esac
 done
 
-# Opsaml ekstra argumenter til bøger
+# Opsaml ekstra argumenter til bÃ¸ger
 EXTRA_ARG=
 for arg ; do 
     EXTRA_ARG="$EXTRA_ARG $arg" ; 
 done
 #echo "EXTRA_ARG: $EXTRA_ARG"
 echo '<?php' > configureoptions.php
-echo '/* Oprettet ved kørsel af "configure" */' >> configureoptions.php
+echo '/* Oprettet ved kÃ¸rsel af "configure" */' >> configureoptions.php
 echo '$configureoptions = "' $EXTRA_ARG '";' >> configureoptions.php
 echo '?>' >> configureoptions.php
 
@@ -92,20 +92,20 @@ echo '?>' >> configureoptions.php
 # Check at Makefile.in findes. 
 if test ! -e Makefile.in ; then
     echo "Fejl: Kunne ikke finde Makefile.in"
-    echo "Vær venlig at køre dette script fra roden af Linux bøgernes kildetekst"
+    echo "VÃ¦r venlig at kÃ¸re dette script fra roden af Linux bÃ¸gernes kildetekst"
     exit 2;
 fi
 
 
 ################################################################################
 #
-# Rent faktisk gøre noget.
+# Rent faktisk gÃ¸re noget.
 
 # Status til bruger
 if test "x$SAMLING" != "x" ; then
-  echo "*** Opsætter samling bogen"
+  echo "*** OpsÃ¦tter samling bogen"
 else
-  echo "*** Opsætter ikke samling bogen"
+  echo "*** OpsÃ¦tter ikke samling bogen"
 fi
 
 # Lav Makefile
@@ -117,7 +117,7 @@ sed -e "s/@SUBDIRS@/$SUBDIRS/" \
 
 # Faelles filer
 for dir in $SUBDIRS ; do
-    echo "*** Installerer fælles filer i $dir"
+    echo "*** Installerer fÃ¦lles filer i $dir"
     cp --update faelles-filer/*.css $dir
     cp --update faelles-filer/*.sgml $dir
     cp --update faelles-filer/addsubmitbox $dir
@@ -127,10 +127,10 @@ for dir in $SUBDIRS ; do
     cp --update misc/*.prc misc/*.pdb misc/gpl.txt misc/plucker.txt $dir/palm-faelles
 done
 if test "x$SAMLING" != "x" ; then
-    echo "*** Installerer fælles filer i $SAMLING"
+    echo "*** Installerer fÃ¦lles filer i $SAMLING"
 #    cp --update faelles-filer/*.sgml $SAMLING
-# Det her er smålamt, ophavsret.sgml skal ikke bruges til noget men
-# configure.ac.subdir insisterer på at den skal være der
+# Det her er smÃ¥lamt, ophavsret.sgml skal ikke bruges til noget men
+# configure.ac.subdir insisterer pÃ¥ at den skal vÃ¦re der
     cp --update faelles-filer/ophavsret.sgml $SAMLING 
 #    echo "<!ENTITY linuxbogurl \"$URL\">" > $SAMLING/linuxbogurl.sgml || exit;
     mkdir -p $SAMLING/palm-faelles
@@ -139,7 +139,7 @@ fi
 
 # Byggerelaterede filer
 for dir in $SUBDIRS; do
-    echo "*** Kører bootstrap i $dir"
+    echo "*** KÃ¸rer bootstrap i $dir"
     cp --update bootstrap.subdir $dir/bootstrap
     cp --update Makefile.subdir $dir/Makefile.am
     cp --update configure.ac.subdir $dir/configure.ac
@@ -148,9 +148,9 @@ for dir in $SUBDIRS; do
     cp --update misc/insertimagesize $dir/misc/
     cd $dir && ./bootstrap && cd .. || exit ;
 done
-# grove: Gad vide hvor meget af dette der er nødvendigt?
+# grove: Gad vide hvor meget af dette der er nÃ¸dvendigt?
 if test "x$SAMLING" != "x" ; then
-    echo "*** Kører bootstrap i $SAMLING"
+    echo "*** KÃ¸rer bootstrap i $SAMLING"
     cp --update bootstrap.subdir $SAMLING/bootstrap
     sed "s/@SUBDIRSSAMLING@/$SUBDIRS/" < Makefile.samling > $SAMLING/Makefile.am
     cp --update configure.ac.subdir $SAMLING/configure.ac
@@ -162,14 +162,14 @@ if test "x$SAMLING" != "x" ; then
 #    cd $SAMLING && ./make.bog.2pdf.pl $SUBDIRS > bog.2pdf.sgml && cd .. || exit ;
 fi
 
-# Så køres ./configure i hvert subdir. 
+# SÃ¥ kÃ¸res ./configure i hvert subdir. 
 for dir in $SUBDIRS; do
-    echo "*** Kører configure i $dir"
+    echo "*** KÃ¸rer configure i $dir"
     cd $dir && ./configure $EXTRA_ARG && cd .. || exit ;
 done
 if test "x$SAMLING" != "x" ; then
-    echo "*** Kører configure i $SAMLING"
+    echo "*** KÃ¸rer configure i $SAMLING"
     cd $SAMLING && ./configure $EXTRA_ARG && cd .. || exit ;
 fi
 
-echo "*** Du kan nu køre f.eks. make all, make dist eller make palmpilot"
+echo "*** Du kan nu kÃ¸re f.eks. make all, make dist eller make palmpilot"

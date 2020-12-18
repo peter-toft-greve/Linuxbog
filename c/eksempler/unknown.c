@@ -1,6 +1,6 @@
 /* unknown.c typedef'er en pointer til ukendt entitet og
  * demonstrer dermed, at det er tilladt at bruge en pointer til
- * et objekt af ukendt størrelse.
+ * et objekt af ukendt stÃ¸rrelse.
  */
 
 #include <stdio.h>
@@ -13,8 +13,8 @@ main()
 
 	p = fopen("asd0.sgml", "r");
 	if (p == NULL)
-		printf("Kan ikke åbne asd0.sgml\n");
+		printf("Kan ikke Ã¥bne asd0.sgml\n");
 	else
-		printf("Har åbnet asd0.sgml\n");
+		printf("Har Ã¥bnet asd0.sgml\n");
 	return 0;
 }

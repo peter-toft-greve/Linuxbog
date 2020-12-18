@@ -5,11 +5,11 @@ SUBDIRSSAMLING = @SUBDIRSSAMLING@
 # version - skal bruges til samlingerne
 version:=$(shell (cd ../friheden; grep -A2 "<listitem>" apprevhist.sgml | head -n 2 | tail -n 1 | cut -d' ' -f2 > ../samling/version.sgml; cat ../samling/version.sgml))
 
-# html er unødvendigt
+# html er unÃ¸dvendigt
 all: kun-fra-toplevel palmpilot ps pdf pakhtml 
 
 ps: kun-fra-toplevel
-	echo "Vi bygger desværre ikke PostScript-bøger for tiden - ØV!"
+	echo "Vi bygger desvÃ¦rre ikke PostScript-bÃ¸ger for tiden - Ã˜V!"
 #	mkdir ps-samling
 #	@for dir in $(SUBDIRSSAMLING); do \
 #		cp ../$$dir/linuxbog-$$dir-ps-`cat ../$$dir/version.sgml`.ps ps-samling/ || /bin/true; \
@@ -32,7 +32,7 @@ palmpilot: kun-fra-toplevel
 	tar czf linuxbog-samling-palm-$(version).tar.gz palm-samling/
 
 html:
-	@echo 'html er et internt target - der ikke er nødvendigt at gennemføre for samling.'
+	@echo 'html er et internt target - der ikke er nÃ¸dvendigt at gennemfÃ¸re for samling.'
 
 pakhtml: kun-fra-toplevel
 	mkdir -p html-samling; \
@@ -48,9 +48,9 @@ pakhtml: kun-fra-toplevel
 	cd ..; \
 	tar hczf linuxbog-samling-html-$(version).tar.gz html-samling/
 	@tar hczf linuxbog-samling-htmlub-$(version).tar.gz $(addprefix html-samling/,$(join $(addsuffix /,$(SUBDIRSSAMLING)),$(addsuffix /*.html,$(SUBDIRSSAMLING)))) $(addprefix html-samling/,$(join $(addsuffix /,$(SUBDIRSSAMLING)),$(addsuffix /*.css,$(SUBDIRSSAMLING)))) $(addprefix html-samling/,$(addsuffix /eksempler,$(SUBDIRSSAMLING)))  html-samling/index.html html-samling/idx-*.html
-	@echo 'Mon der er behov for en samling af billederne fra alle bøgerne?'
+	@echo 'Mon der er behov for en samling af billederne fra alle bÃ¸gerne?'
 
-# Nej, jeg synes heller ikke den sidste tar-kommando er køn! .Henrik
+# Nej, jeg synes heller ikke den sidste tar-kommando er kÃ¸n! .Henrik
 
 online:
 	@echo 'online giver ikke mening for samling'
@@ -71,19 +71,19 @@ eksempler-sgml-PDF:
 .PHONY: kun-fra-toplevel
 kun-fra-toplevel:
 	@if [ ! -e toplevel-kald ]; then \
-		echo 'For at sikre at de individuelle bøger bliver bygget først,'; \
-		echo 'kan du ikke køre make med et bygge-target i samling/.'; \
-		echo 'Kør `make all/ps/pdf/palmpilot` fra toplevel.'; \
+		echo 'For at sikre at de individuelle bÃ¸ger bliver bygget fÃ¸rst,'; \
+		echo 'kan du ikke kÃ¸re make med et bygge-target i samling/.'; \
+		echo 'KÃ¸r `make all/ps/pdf/palmpilot` fra toplevel.'; \
 		exit 1; \
 	fi
 
-# Jeg er ikke sikker på at jeg har fanget forskellen mellem distclean,
+# Jeg er ikke sikker pÃ¥ at jeg har fanget forskellen mellem distclean,
 # clean og reallyclean.
 
 .PHONY: clean
 clean: 
 	rm -fr palm-samling
-# Skal ændres når vi engang begynder at bygge PostScript-versioner igen!
+# Skal Ã¦ndres nÃ¥r vi engang begynder at bygge PostScript-versioner igen!
 #	rm -fr ps-samling
 	rm -fr pdf-samling
 	rm -fr html-samling

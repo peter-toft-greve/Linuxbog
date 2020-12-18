@@ -11,7 +11,7 @@ int main()
     double kr2dollar(double);	/* placeret her har prototypen
 				   kun scope i denne funktion - 
 				   her kun for at vise muligheden for
-				   at gøre det på denne måde.
+				   at gÃ¸re det pÃ¥ denne mÃ¥de.
 				 */
     char inputlinie[MAXL];
 

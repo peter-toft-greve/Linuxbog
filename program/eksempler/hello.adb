@@ -2,7 +2,7 @@
 -- af Peter Stubbe <stubbe@bitnisse.dk>
 -- $Id$
 
--- Oversættelse:
+-- OversÃ¦ttelse:
 --  gnatmake hello.adb
 --
 -- Afvikling:

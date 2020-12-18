@@ -1,15 +1,15 @@
 <chapter id="java-arv">
   <title>Nedarvning</title>
 <para>
-Kapitlet forudsættes af resten af bogen.
+Kapitlet forudsÃ¦ttes af resten af bogen.
 </para>
 
 <para>
-Forudsætter <xref linkend="java-klasser" />, Definition af klasser.
+ForudsÃ¦tter <xref linkend="java-klasser" />, Definition af klasser.
 </para>
 
 <para>
-I dette kapitel vil vi se på, hvordan man kan genbruge
+I dette kapitel vil vi se pÃ¥, hvordan man kan genbruge
 programkode ved at tage en eksisterende klasse og udbygge den
 med flere metoder og variabler (nedarvning).
 </para>
@@ -18,7 +18,7 @@ med flere metoder og variabler (nedarvning).
   <title>At udbygge eksisterende klasser</title>
 
 <para>
-Hvad gør man, hvis man ønsker en klasse, der ligner
+Hvad gÃ¸r man, hvis man Ã¸nsker en klasse, der ligner
 en eksisterende klasse, men alligevel ikke helt er den samme?
 </para>
 
@@ -33,7 +33,7 @@ til for at definere underklassen i forhold til stamklassen
 <para>
 Arv er et meget vigtigt element i objektorienterede sprog. Med
 nedarvning kan man have en hel samling af klasser, der ligner
-hinanden på visse punkter, men som er forskellige på
+hinanden pÃ¥ visse punkter, men som er forskellige pÃ¥
 andre punkter.
 </para>
 
@@ -43,14 +43,14 @@ andre punkter.
 <para>
 Hvis man vil snyde i terningspil, findes der et kendt trick: Bruge
 sine egne terninger, hvor man har boret 1'er-sidens hul ud, kommet
-bly i hullet og malet det pænt over, så det ikke kan ses.
-Sådan en terning vil have meget lille sandsynlighed for at få
-en 1-er og en ret stor sandsynlighed for at få en 6'er.
+bly i hullet og malet det pÃ¦nt over, sÃ¥ det ikke kan ses.
+SÃ¥dan en terning vil have meget lille sandsynlighed for at fÃ¥
+en 1-er og en ret stor sandsynlighed for at fÃ¥ en 6'er.
 </para>
 
 <para>
 Herunder har vi lavet en nedarvning fra Terning til en ny klasse,
-FalskTerning, ved at starte erklæringen med:
+FalskTerning, ved at starte erklÃ¦ringen med:
 </para>
 
 <screen>
@@ -61,12 +61,12 @@ public class FalskTerning extends Terning
 <para>
 Vi har automatisk overtaget (arvet) alle metoder og variabler fra
 Terning-klassen fordi vi skriver &quot;extends Terning&quot;. Dvs. at
-et FalskTerning1-objekt også har en værdi-variabel og en
+et FalskTerning1-objekt ogsÃ¥ har en vÃ¦rdi-variabel og en
 toString()-metode.
 </para>
 
 <para>
-Vi ændrer nu klassens opførsel ved at definere en
+Vi Ã¦ndrer nu klassens opfÃ¸rsel ved at definere en
 anden udgave af kast()-metoden:
 </para>
 
@@ -75,16 +75,16 @@ anden udgave af kast()-metoden:
 
 public class FalskTerning1 <emphasis>extends Terning</emphasis>
 {
-  <emphasis>// tilsidesæt kast med en &quot;bedre&quot; udgave</emphasis>
+  <emphasis>// tilsidesÃ¦t kast med en &quot;bedre&quot; udgave</emphasis>
 <emphasis>  public void kast()</emphasis>
   {
-    <emphasis>// udskriv så vi kan se at metoden bliver kaldt</emphasis>
-    System.out.print(&quot;[kast() på FalskTerning1] &quot;);
+    <emphasis>// udskriv sÃ¥ vi kan se at metoden bliver kaldt</emphasis>
+    System.out.print(&quot;[kast() pÃ¥ FalskTerning1] &quot;);
 
-    værdi = (int) (6*Math.random() + 1);
+    vÃ¦rdi = (int) (6*Math.random() + 1);
 
-<emphasis>    // er det 1 eller 2? Så lav det om til 6!</emphasis>
-    if ( værdi &lt;= 2 ) værdi = 6;
+<emphasis>    // er det 1 eller 2? SÃ¥ lav det om til 6!</emphasis>
+    if ( vÃ¦rdi &lt;= 2 ) vÃ¦rdi = 6;
   }
 }
 </screen>
@@ -96,7 +96,7 @@ FalskTerning1 til Terning.
 </para>
 
 <para>
-Dette kaldes også en <emphasis>er-en</emphasis>-relation; FalskTerning1 <emphasis>er
+Dette kaldes ogsÃ¥ en <emphasis>er-en</emphasis>-relation; FalskTerning1 <emphasis>er
 en</emphasis> Terning, da den jo har alle de egenskaber en terning har.
 </para>
 
@@ -110,7 +110,7 @@ metoder fra en anden klasse</para></blockquote>
 superklassen</para></blockquote>
 <blockquote><para>Klassen, der arver fra superklassen,
 kaldes underklassen</para></blockquote>
-<blockquote><para>Underklassen kan tilsidesætte
+<blockquote><para>Underklassen kan tilsidesÃ¦tte
 (omdefinere) metoder arvet fra superklassen ved at definere dem
 igen</para></blockquote>
 
@@ -126,12 +126,12 @@ superklasse og underklasse. Her er et udpluk:
 </figure>
 
 <para>
-<emphasis>Superklasse</emphasis> kaldes også: Baseklasse, basisklasse,
-forældreklasse, stamklasse.
+<emphasis>Superklasse</emphasis> kaldes ogsÃ¥: Baseklasse, basisklasse,
+forÃ¦ldreklasse, stamklasse.
 </para>
 
 <para>
-<emphasis>Underklasse</emphasis> kaldes også: Afledt klasse, nedarvet
+<emphasis>Underklasse</emphasis> kaldes ogsÃ¥: Afledt klasse, nedarvet
 klasse, barn, subklasse.
 </para>
 
@@ -141,7 +141,7 @@ FalskTerning1.
 </para>
 
 <para>
-I det følgende program kastes med to terninger, en rigtig
+I det fÃ¸lgende program kastes med to terninger, en rigtig
 og en falsk:
 </para>
 
@@ -153,7 +153,7 @@ public class Snydespil1
     Terning t1 = new Terning();
     FalskTerning1 <emphasis>t2 = new FalskTerning1()</emphasis>;
 
-    System.out.println(&quot;t1: &quot;+t1); <emphasis>// kunne også kalde t1.toString()</emphasis>
+    System.out.println(&quot;t1: &quot;+t1); <emphasis>// kunne ogsÃ¥ kalde t1.toString()</emphasis>
     System.out.println(&quot;t2: &quot;+t2);
 
     for (int i=0; i&lt;5; i++)
@@ -161,7 +161,7 @@ public class Snydespil1
       t1.kast();
 <emphasis>      t2.kast();</emphasis>
       System.out.println(&quot;t1=&quot; + t1 + &quot;  t2=&quot; + t2);
-      if (t1.værdi == <emphasis>t2.værdi</emphasis>) System.out.println(&quot;To ens!&quot;);
+      if (t1.vÃ¦rdi == <emphasis>t2.vÃ¦rdi</emphasis>) System.out.println(&quot;To ens!&quot;);
     }
   }
 }
@@ -170,20 +170,20 @@ public class Snydespil1
 <para>Resultatet bliver:</para>
 
 <screen>
-[kast() på FalskTerning1] t1: 1
+[kast() pÃ¥ FalskTerning1] t1: 1
 t2: 3
-[kast() på FalskTerning1] t1=1  t2=5
-[kast() på FalskTerning1] t1=1  t2=3
-[kast() på FalskTerning1] t1=4  t2=3
-[kast() på FalskTerning1] t1=6  t2=6
+[kast() pÃ¥ FalskTerning1] t1=1  t2=5
+[kast() pÃ¥ FalskTerning1] t1=1  t2=3
+[kast() pÃ¥ FalskTerning1] t1=4  t2=3
+[kast() pÃ¥ FalskTerning1] t1=6  t2=6
 To ens!
-[kast() på FalskTerning1] t1=2  t2=6
+[kast() pÃ¥ FalskTerning1] t1=2  t2=6
 </screen>
 
 
 <para>
-Vi kan altså bruge FalskTerning1-objekter på præcis
-samme måde som Terning-objekter.
+Vi kan altsÃ¥ bruge FalskTerning1-objekter pÃ¥ prÃ¦cis
+samme mÃ¥de som Terning-objekter.
 </para>
 </sect2>    <!--   Eksempel: En falsk terning -->
 
@@ -191,7 +191,7 @@ samme måde som Terning-objekter.
   <title>At udbygge med flere metoder og variabler</title>
 
 <para>
-Lad os nu se på et eksempel, hvor vi definerer nogle
+Lad os nu se pÃ¥ et eksempel, hvor vi definerer nogle
 variabler og metoder i nedarvingen.
 </para>
 
@@ -204,30 +204,30 @@ variabler og metoder i nedarvingen.
 <screen>
 public class FalskTerning2 <emphasis>extends Terning</emphasis>
 {
-<emphasis>  public int snydeværdi;</emphasis>
+<emphasis>  public int snydevÃ¦rdi;</emphasis>
 
-<emphasis>  public void sætSnydeværdi(int nySnydeværdi)</emphasis>
+<emphasis>  public void sÃ¦tSnydevÃ¦rdi(int nySnydevÃ¦rdi)</emphasis>
   {
-    snydeværdi = nySnydeværdi;
+    snydevÃ¦rdi = nySnydevÃ¦rdi;
   }
 
 <emphasis>  public void kast()</emphasis>
   {
-    System.out.print(&quot;[kast() på FalskTerning2] &quot;);
+    System.out.print(&quot;[kast() pÃ¥ FalskTerning2] &quot;);
 
-    værdi = (int) (6*Math.random() + 1);
+    vÃ¦rdi = (int) (6*Math.random() + 1);
 
-    <emphasis>// 1 eller 2? Så lav det om til snydeværdi!</emphasis>
-    if ( værdi &lt;= 2 ) værdi = snydeværdi;
+    <emphasis>// 1 eller 2? SÃ¥ lav det om til snydevÃ¦rdi!</emphasis>
+    if ( vÃ¦rdi &lt;= 2 ) vÃ¦rdi = snydevÃ¦rdi;
   }
 }
 </screen>
 
 
 <para>
-FalskTerning2 har fået en ekstra variabel, snydeværdi,
-og en ekstra metode, sætSnydeværdi(),
-der sætter snydeværdi til noget andet.
+FalskTerning2 har fÃ¥et en ekstra variabel, snydevÃ¦rdi,
+og en ekstra metode, sÃ¦tSnydevÃ¦rdi(),
+der sÃ¦tter snydevÃ¦rdi til noget andet.
 </para>
 
 <screen>
@@ -236,7 +236,7 @@ public class Snydespil2
   public static void main(String[] args)
   {
     FalskTerning2 t1 = new FalskTerning2();
-    t1.sætSnydeværdi(4);
+    t1.sÃ¦tSnydevÃ¦rdi(4);
 
     for (int i=0; i&lt;5; i++)
     {
@@ -250,21 +250,21 @@ public class Snydespil2
 <para>Resultatet bliver:</para>
 
 <screen>
-[kast() på FalskTerning2] [kast() på FalskTerning2] t1=4
-[kast() på FalskTerning2] t1=4
-[kast() på FalskTerning2] t1=6
-[kast() på FalskTerning2] t1=6
-[kast() på FalskTerning2] t1=4
+[kast() pÃ¥ FalskTerning2] [kast() pÃ¥ FalskTerning2] t1=4
+[kast() pÃ¥ FalskTerning2] t1=4
+[kast() pÃ¥ FalskTerning2] t1=6
+[kast() pÃ¥ FalskTerning2] t1=6
+[kast() pÃ¥ FalskTerning2] t1=4
 </screen>
 </sect2>    <!--   At udbygge med flere metoder og variabler -->
 
 <sect2 id="java-arv-udb-super">
-  <title>Nøgleordet super</title>
+  <title>NÃ¸gleordet super</title>
 
 <para>
-Nogen gange ønsker man i en nedarvet klasse at få
-adgang til superklassens metoder, selvom de måske er blevet
-tilsidesat med en ny definition i nedarvingen. F.eks. kunne det være
+Nogen gange Ã¸nsker man i en nedarvet klasse at fÃ¥
+adgang til superklassens metoder, selvom de mÃ¥ske er blevet
+tilsidesat med en ny definition i nedarvingen. F.eks. kunne det vÃ¦re
 rart, hvis vi kunne genbruge den oprindelige kast()-metode i
 FalskTerning.
 </para>
@@ -278,13 +278,13 @@ FalskTerning:
 <screen>
 public class FalskTerning3 <emphasis>extends Terning</emphasis>
 {
-  <emphasis>// tilsidesæt kast med en &quot;bedre&quot; udgave</emphasis>
+  <emphasis>// tilsidesÃ¦t kast med en &quot;bedre&quot; udgave</emphasis>
   public void kast ()
   {
     <emphasis>super.kast()</emphasis>; <emphasis>// kald den oprindelige kast-metode</emphasis>
 
-    <emphasis>// blev det 1 eller 2? Så lav det om til en 6'er!</emphasis>
-    if ( værdi &lt;= 2 ) værdi = 6;
+    <emphasis>// blev det 1 eller 2? SÃ¥ lav det om til en 6'er!</emphasis>
+    if ( vÃ¦rdi &lt;= 2 ) vÃ¦rdi = 6;
   }
 }
 </screen>
@@ -292,9 +292,9 @@ public class FalskTerning3 <emphasis>extends Terning</emphasis>
 
 <para>
 super.kast() kalder kast()-metoden i superklassen. Derefter tager
-vi højde for, at det er en falsk terning.
+vi hÃ¸jde for, at det er en falsk terning.
 </para>
-</sect2>    <!--   Nøgleordet super -->
+</sect2>    <!--   NÃ¸gleordet super -->
 </sect1>    <!--   At udbygge eksisterende klasser -->
 
 <sect1 id="java-arv-poly">
@@ -308,7 +308,7 @@ vi højde for, at det er en falsk terning.
 </figure>
 
 <para>
-Se på følgende eksempel:
+Se pÃ¥ fÃ¸lgende eksempel:
 </para>
 
 <screen>
@@ -317,7 +317,7 @@ public class Snydespil2medPolymorfi
   public static void main(String[] args)
   {
     FalskTerning2 ft = new FalskTerning2();
-    ft.sætSnydeværdi(4);
+    ft.sÃ¦tSnydevÃ¦rdi(4);
 
     Terning t;
 <emphasis>    t = ft;</emphasis>
@@ -334,9 +334,9 @@ public class Snydespil2medPolymorfi
 <para>Resultatet bliver:</para>
 
 <screen>
-[kast() på FalskTerning2] [kast() på FalskTerning2] t=4
-[kast() på FalskTerning2] t=6
-[kast() på FalskTerning2] t=6
+[kast() pÃ¥ FalskTerning2] [kast() pÃ¥ FalskTerning2] t=4
+[kast() pÃ¥ FalskTerning2] t=6
+[kast() pÃ¥ FalskTerning2] t=6
 </screen>
 
 
@@ -351,34 +351,34 @@ FalskTerning2-objekt ?!
 
 
 <para>
-Der er altså ikke overensstemmelse mellem typen på
-venstre side (Terning) og typen på højre side
+Der er altsÃ¥ ikke overensstemmelse mellem typen pÃ¥
+venstre side (Terning) og typen pÃ¥ hÃ¸jre side
 (FalskTerning2) .
 </para>
 
 <para>
-Jamen, hvad så med typesikkerheden ?
+Jamen, hvad sÃ¥ med typesikkerheden ?
 </para>
 
 <sect2 id="java-arv-poly-disp">
   <title>Dispensation fra traditionel typesikkerhed</title>
 
 <para>
-Typesikkerhed gør, at man ikke f.eks. kan tildele et
-Point-objekt til en Terning-variabel uden at få en sprogfejl
-under oversættelsen.
+Typesikkerhed gÃ¸r, at man ikke f.eks. kan tildele et
+Point-objekt til en Terning-variabel uden at fÃ¥ en sprogfejl
+under oversÃ¦ttelsen.
 </para>
 
 <para>
 Hvis man kunne det, ville programmerne kunne indeholde mange fejl,
-der var svære at finde. Hvis man f.eks. et eller andet sted i
-et kæmpeprogram havde sat en Terning-variabel til at
-referere til et Point-objekt, og det var tilladt, hvad skulle der så
-ske, når man så (måske langt senere i en anden del
-af programmet) forsøgte at kalde dette objekts kast()-metode?
+der var svÃ¦re at finde. Hvis man f.eks. et eller andet sted i
+et kÃ¦mpeprogram havde sat en Terning-variabel til at
+referere til et Point-objekt, og det var tilladt, hvad skulle der sÃ¥
+ske, nÃ¥r man sÃ¥ (mÃ¥ske langt senere i en anden del
+af programmet) forsÃ¸gte at kalde dette objekts kast()-metode?
 Et Point-objekt har jo ingen kast()-metode. Det kunne blive meget
-svært at finde ud af, hvor den forkerte tildeling fandt sted.
-Sagt med andre ord: Normalt skal vi være lykkelige for, at Java
+svÃ¦rt at finde ud af, hvor den forkerte tildeling fandt sted.
+Sagt med andre ord: Normalt skal vi vÃ¦re lykkelige for, at Java
 har denne regel om typesikkerhed.
 </para>
 
@@ -390,19 +390,19 @@ Der er imidlertid en meget fornuftig dispensation fra denne regel:
 af en underklasse af variablens type</para></blockquote>
 
 <para>
-t-variablen har ikke ændret type (det kan variabler ikke),
-men den peger nu på et objekt af typen FalskTerning2. Men dette
-objekt har jo alle metoder og data, som et Terning-objekt har, så
-vi kan ikke få kaldt ikke-eksisterende metoder, hvis vi bare
-&quot;lader som om&quot;, den peger på et Terning-objekt. At
-FalskTerning2-objektet også har en objektvariabel, snydeværdi,
-og en ekstra metode, kan vi være ligeglade med. Variablen
+t-variablen har ikke Ã¦ndret type (det kan variabler ikke),
+men den peger nu pÃ¥ et objekt af typen FalskTerning2. Men dette
+objekt har jo alle metoder og data, som et Terning-objekt har, sÃ¥
+vi kan ikke fÃ¥ kaldt ikke-eksisterende metoder, hvis vi bare
+&quot;lader som om&quot;, den peger pÃ¥ et Terning-objekt. At
+FalskTerning2-objektet ogsÃ¥ har en objektvariabel, snydevÃ¦rdi,
+og en ekstra metode, kan vi vÃ¦re ligeglade med. Variablen
 bruger den bare ikke.
 </para>
 
 <para>
-Dispensationen giver altså mening, fordi en nedarving
-(f.eks. et FalskTerning2-objekt) set udefra kan lade, som om det også
+Dispensationen giver altsÃ¥ mening, fordi en nedarving
+(f.eks. et FalskTerning2-objekt) set udefra kan lade, som om det ogsÃ¥
 er af superklassens type (et Terning-objekt). Udefra har det jo
 <emphasis>mindst</emphasis> de samme objektvariabler og metoder, da det har arvet
 dem.
@@ -415,8 +415,8 @@ som stammer fra Terning-klassen:
 </para>
 
 <screen>
-  t.snydeværdi=4;    <emphasis>// sprogfejl: snydeværdi er ikke defineret i Terning</emphasis>
-  t.sætSnydeværdi(4);<emphasis>// sprogfejl: sætSnydeværdi() er ikke defineret i Terning</emphasis>
+  t.snydevÃ¦rdi=4;    <emphasis>// sprogfejl: snydevÃ¦rdi er ikke defineret i Terning</emphasis>
+  t.sÃ¦tSnydevÃ¦rdi(4);<emphasis>// sprogfejl: sÃ¦tSnydevÃ¦rdi() er ikke defineret i Terning</emphasis>
 </screen>
 </sect2>    <!--   Dispensation fra traditionel typesikkerhed -->
 
@@ -424,71 +424,71 @@ som stammer fra Terning-klassen:
   <title>Polymorfi</title>
 
 <para>
-En anden meget væsentlig detalje omkring denne dispensation
+En anden meget vÃ¦sentlig detalje omkring denne dispensation
 er, at det er <emphasis>objektets</emphasis> type, ikke variablens, der bestemmer,
-hvilken metodekrop der bliver udført, når vi kalder
+hvilken metodekrop der bliver udfÃ¸rt, nÃ¥r vi kalder
 en metode:
 </para>
 
 <screen>
   t.kast();  <emphasis>// kalder FalskTerning2's kast, </emphasis>
-<emphasis>            // fordi t peger på et FalskTerning2-objekt.</emphasis>
+<emphasis>            // fordi t peger pÃ¥ et FalskTerning2-objekt.</emphasis>
 </screen>
 
 
 <para>
-Herover kalder vi altså den kast()-metode, der findes i
-FalskTerning2-klassen. Den kigger således ikke på
-variablen t's type (så ville den jo udføre Ternings
+Herover kalder vi altsÃ¥ den kast()-metode, der findes i
+FalskTerning2-klassen. Den kigger sÃ¥ledes ikke pÃ¥
+variablen t's type (sÃ¥ ville den jo udfÃ¸re Ternings
 kast() ).
 </para>
 
 <blockquote><para>Variablens type bestemmer, hvilke
-metoder man kan kalde på objektet, og hvilke objektvariabler
-man kan læse og ændre</para></blockquote>
+metoder man kan kalde pÃ¥ objektet, og hvilke objektvariabler
+man kan lÃ¦se og Ã¦ndre</para></blockquote>
 <blockquote><para>Objektets type bestemmer, hvilken
-metode-definition der bliver udført</para></blockquote>
+metode-definition der bliver udfÃ¸rt</para></blockquote>
 
 <para>
 Af samme grund kaldes det at definere en metode, som allerede
-findes, fordi den er arvet, for <emphasis>tilsidesættelse</emphasis>
+findes, fordi den er arvet, for <emphasis>tilsidesÃ¦ttelse</emphasis>
 (eng.: override)
-af metoden. Man <emphasis>tilsidesætter</emphasis>
-metodens opførsel med en anden opførsel.
+af metoden. Man <emphasis>tilsidesÃ¦tter</emphasis>
+metodens opfÃ¸rsel med en anden opfÃ¸rsel.
 </para>
 
-<blockquote><para>For at tilsidesætte en metode
+<blockquote><para>For at tilsidesÃ¦tte en metode
 skal man i underklassen lave en eksakt kopi af metode-hovedet fra
 superklassen</para></blockquote>
 </sect2>    <!--   Polymorfi -->
 
 <sect2 id="java-arv-poly-eks">
-  <title>Et eksempel på
+  <title>Et eksempel pÃ¥
 polymorfi: Brug af Raflebaeger</title>
 <screen>
 public class SnydeMedBaeger
 {
   public static void main(String[] args)
   {
-    Raflebaeger bæger = new Raflebaeger(0);
+    Raflebaeger bÃ¦ger = new Raflebaeger(0);
 
     <emphasis>FalskTerning2 ft</emphasis> = new FalskTerning2();
-    ft.sætSnydeværdi(6);
+    ft.sÃ¦tSnydevÃ¦rdi(6);
 
-    <emphasis>bæger.tilføj(ft)</emphasis>;   <emphasis>// tilføj() tager et objekt af typen Terning,</emphasis>
-<emphasis>                        // og dermed også af typen FalskTerning2.</emphasis>
+    <emphasis>bÃ¦ger.tilfÃ¸j(ft)</emphasis>;   <emphasis>// tilfÃ¸j() tager et objekt af typen Terning,</emphasis>
+<emphasis>                        // og dermed ogsÃ¥ af typen FalskTerning2.</emphasis>
 
     <emphasis>Terning t</emphasis> = new Terning();
-    <emphasis>bæger.tilføj(t)</emphasis>;
+    <emphasis>bÃ¦ger.tilfÃ¸j(t)</emphasis>;
 
     ft = new FalskTerning2();
-    ft.snydeværdi=6;
+    ft.snydevÃ¦rdi=6;
     <emphasis>t=ft</emphasis>;               <emphasis>// t bruges som mellemvariabel for sjov.</emphasis>
-    <emphasis>bæger.tilføj(t)</emphasis>;
+    <emphasis>bÃ¦ger.tilfÃ¸j(t)</emphasis>;
 
     for (int i=1; i&lt;10; i++)
     {
-      bæger.ryst();
+      bÃ¦ger.ryst();
     }
   }
 }
@@ -499,7 +499,7 @@ public class SnydeMedBaeger
 I SnydeMedBaeger kaldes
 Raflebaeger's ryst()-metode. Hvis du nu kigger i definitionen af
 dennes ryst()-metode (se afsnit <xref linkend="java-klasser-rela" />), kan du se, at den kalder
-kast()-metoden på de enkelte objekter i
+kast()-metoden pÃ¥ de enkelte objekter i
 &quot;terninger&quot;-vektoren:
 </para>
 
@@ -519,38 +519,38 @@ kast()-metoden på de enkelte objekter i
 
 <para>
 Da to af objekterne, vi har lagt
-ind i bægeret, er af typen FalskTerning2, vil Raflebaeger's
-ryst()-metode, når den kommer til et objekt af denne type,
-kalde FalskTerning2's kast() helt automatisk. Resultatet er altså
-at vi får større sandsynlighed for at få seksere.
+ind i bÃ¦geret, er af typen FalskTerning2, vil Raflebaeger's
+ryst()-metode, nÃ¥r den kommer til et objekt af denne type,
+kalde FalskTerning2's kast() helt automatisk. Resultatet er altsÃ¥
+at vi fÃ¥r stÃ¸rre sandsynlighed for at fÃ¥ seksere.
 </para>
 
 <para>
-Faktisk har vi ændret den
-måde, et Raflebaeger-objekt opfører sig på helt
-uden at ændre i Raflebaeger-klassen! Raflebaeger ved ikke noget
+Faktisk har vi Ã¦ndret den
+mÃ¥de, et Raflebaeger-objekt opfÃ¸rer sig pÃ¥ helt
+uden at Ã¦ndre i Raflebaeger-klassen! Raflebaeger ved ikke noget
 om FalskTerning2, men kan alligevel bruge den.
 </para>
 
 <para>
-En programmør kan altså
+En programmÃ¸r kan altsÃ¥
 lave en Raflebaeger-klasse, som kan alt muligt smart: Kaste
-terninger, se hvor mange ens der er, tælle summen af
-øjnene, se om der er en stigende følge (eng.:
-straight) osv. Når en anden programmør vil lave en ny
-slags terning (f.eks. en snydeterning), behøver han ikke
-sætte sig ind i, hvordan Raflebaeger-klassen virker og lave
+terninger, se hvor mange ens der er, tÃ¦lle summen af
+Ã¸jnene, se om der er en stigende fÃ¸lge (eng.:
+straight) osv. NÃ¥r en anden programmÃ¸r vil lave en ny
+slags terning (f.eks. en snydeterning), behÃ¸ver han ikke
+sÃ¦tte sig ind i, hvordan Raflebaeger-klassen virker og lave
 tilpasninger af den, for at den kan bruges sammen med hans egen nye
 slags terning.
 </para>
-</sect2>    <!--   Et eksempel på
+</sect2>    <!--   Et eksempel pÃ¥
 polymorfi: Brug af Raflebaeger -->
 
 <sect2 id="java-arv-poly-polymorf">
   <title>Hvilken vej er en variabel polymorf ?</title>
 
 <para>
-Når følgende er muligt:
+NÃ¥r fÃ¸lgende er muligt:
 </para>
 
 <screen>
@@ -563,12 +563,12 @@ Når følgende er muligt:
 
 
 <para>
-Hvad så med det omvendte? Kan man tildele en
+Hvad sÃ¥ med det omvendte? Kan man tildele en
 FalskTerning2-variabel en reference til et objekt af typen Terning?
 </para>
 
 <figure id="java-arv-fake-dice2-fig">
-<title>Efter punkt A(programmet vil ikke oversætte)</title>
+<title>Efter punkt A(programmet vil ikke oversÃ¦tte)</title>
 
 <graphic fileref="Nordfalk715405.&magic;" scale="60"></graphic>
 </figure>
@@ -586,38 +586,38 @@ metoder og variabler vi kan bruge med ft. Dvs. vi ville kunne skrive:
     t = new Terning();
     ft = t;                <emphasis>// sprogfejl</emphasis>
                            <emphasis>// punkt A</emphasis>
-    ft.snydeværdi = 2;
+    ft.snydevÃ¦rdi = 2;
 </screen>
 
 
 <para>
-Hvis den sidste sætning kunne udføres, ville det være
+Hvis den sidste sÃ¦tning kunne udfÃ¸res, ville det vÃ¦re
 uheldigt: Terning-objektet som ft refererer til, har jo ingen
-snydeværdi.
+snydevÃ¦rdi.
 </para>
 
 <para>
-Det er altså et brud på typesikkerhedsreglen, og Java
+Det er altsÃ¥ et brud pÃ¥ typesikkerhedsreglen, og Java
 tillader det derfor ikke.
 </para>
 
 <para>
-Bemærk, at her, som i andre sammenhænge, kigger Java
-kun på en linje af gangen. F.eks. giver nedenstående
-stadig en sprogfejl, selvom det i princippet kunne lade sig gøre:
+BemÃ¦rk, at her, som i andre sammenhÃ¦nge, kigger Java
+kun pÃ¥ en linje af gangen. F.eks. giver nedenstÃ¥ende
+stadig en sprogfejl, selvom det i princippet kunne lade sig gÃ¸re:
 </para>
 
 <screen>
     t = new FalskTerning2();
     ft = t;                 <emphasis>// sprogfejl</emphasis>
-    ft.snydeværdi = 2;
+    ft.snydevÃ¦rdi = 2;
 </screen>
 
 
 <para>
 Her refererer ft i sidste linje til et rigtigt
 FalskTerning2-objekt, og den sidste linje ville derfor give
-mening, men programmet kan ikke oversættes, fordi
+mening, men programmet kan ikke oversÃ¦ttes, fordi
 typesikkerhedsreglen med dispensation ikke er opfyldt i linje 2.
 </para>
 </sect2>    <!--   Hvilken vej er en variabel polymorf ? -->
@@ -627,17 +627,17 @@ typesikkerhedsreglen med dispensation ikke er opfyldt i linje 2.
 
 <para>
 Dispensationen i typesikkerhedsreglen svarer til den implicitte
-værditypekonvertering: Ved konvertering fra int til double
-behøver programmøren ikke angive eksplicit, at denne
-værdi skal <emphasis>forsøges</emphasis>
-konverteret. Når en typekonvertering med garanti giver det
-ønskede, laver Java den implicit.
+vÃ¦rditypekonvertering: Ved konvertering fra int til double
+behÃ¸ver programmÃ¸ren ikke angive eksplicit, at denne
+vÃ¦rdi skal <emphasis>forsÃ¸ges</emphasis>
+konverteret. NÃ¥r en typekonvertering med garanti giver det
+Ã¸nskede, laver Java den implicit.
 </para>
 
 <para>
-I foregående eksempel så
-vi noget, der burde gå godt, men hvor Javas typeregel
-forhindrer oversættelse. Her kan vi bruge explicit
+I foregÃ¥ende eksempel sÃ¥
+vi noget, der burde gÃ¥ godt, men hvor Javas typeregel
+forhindrer oversÃ¦ttelse. Her kan vi bruge explicit
 reference-typekonvertering:
 </para>
 
@@ -653,21 +653,21 @@ reference-typekonvertering:
 
   t = new FalskTerning2();
   ft = (FalskTerning2) t; <emphasis>// OK, men muligvis</emphasis>
-                          <emphasis>// køretidsfejl</emphasis>
+                          <emphasis>// kÃ¸retidsfejl</emphasis>
 
                           <emphasis>// punkt A</emphasis>
-  ft.snydeværdi = 2;
+  ft.snydevÃ¦rdi = 2;
 </screen>
 
 
 <para>
-Det ligner en almindelig eksplicit værditypekonvertering
-(eng.:&nbsp;cast), og Javas betegnelse for det er også det
+Det ligner en almindelig eksplicit vÃ¦rditypekonvertering
+(eng.:&nbsp;cast), og Javas betegnelse for det er ogsÃ¥ det
 samme.
 </para>
 
 <para>
-Når vi læser objekter i en vektor, er det faktisk det,
+NÃ¥r vi lÃ¦ser objekter i en vektor, er det faktisk det,
 der sker.
 </para>
 
@@ -683,27 +683,27 @@ I&nbsp;Raflebaeger's ryst()-metode skrev vi:
 
 
 <para>
-I en vektor kan gemmes alle typer objekter. For at kunne lægge
+I en vektor kan gemmes alle typer objekter. For at kunne lÃ¦gge
 noget fra en vektor ned i en Terning-variabel er det derfor
-nødvendigt at lave en reference-typekonvertering til Terning.
-Dette går fint, så længe man har stoppet Terning-
+nÃ¸dvendigt at lave en reference-typekonvertering til Terning.
+Dette gÃ¥r fint, sÃ¥ lÃ¦nge man har stoppet Terning-
 eller FalskTerning2-objekter i vektoren, men man kan jo putte hvad
 som helst i en vektor...
 </para>
 
 <para>
-Hvis reference-typekonverteringen går galt (det opdages
-først under programudførelsen), kommer der en
-køretidsfejl (undtagelsen ClassCastException opstår), og
+Hvis reference-typekonverteringen gÃ¥r galt (det opdages
+fÃ¸rst under programudfÃ¸relsen), kommer der en
+kÃ¸retidsfejl (undtagelsen ClassCastException opstÃ¥r), og
 programmet stopper.
 </para>
 
 <para>
-Der er dog nogle tilfælde, hvor Java, selv når man har
+Der er dog nogle tilfÃ¦lde, hvor Java, selv nÃ¥r man har
 lavet en reference-typekonvertering, kan opdage en uheldig
-konvertering. Hvis de to klasser, der forsøges at konverteres
-imellem, ikke arver fra hinanden, får man en sprogfejl på
-oversættertidspunktet.
+konvertering. Hvis de to klasser, der forsÃ¸ges at konverteres
+imellem, ikke arver fra hinanden, fÃ¥r man en sprogfejl pÃ¥
+oversÃ¦ttertidspunktet.
 </para>
 
 <screen>
@@ -720,8 +720,8 @@ oversættertidspunktet.
 
 <para>
 Med arv kan man skabe et hierarki af klasser, der ligner hinanden
-(fordi de har alle fællestrækkene fra superklassen)
-og samtidig kan opføre sig forskelligt (polymorfi).
+(fordi de har alle fÃ¦llestrÃ¦kkene fra superklassen)
+og samtidig kan opfÃ¸re sig forskelligt (polymorfi).
 </para>
 
 <para>
@@ -736,14 +736,14 @@ et rigtigt matadorspil ville indeholde flere detaljer.
 </figure>
 
 <para>
-&Oslash;verst har vi klassen Felt, som indeholder fællestrækkene
+&Oslash;verst har vi klassen Felt, som indeholder fÃ¦llestrÃ¦kkene
 for alle matadorspillets felter. F.eks. skal alle felter kunne
-håndtere, at spilleren lander på eller passerer feltet.
+hÃ¥ndtere, at spilleren lander pÃ¥ eller passerer feltet.
 Vi forestiller os, at metoderne landet() og passeret() bliver
-kaldt af en anden del af programmet, når en spillers brik
-henholdsvis lander på eller passerer feltet. I Felt-klassen er
-metoderne defineret til ikke at gøre noget. Alle felter
-har også et navn, f.eks &quot;Hvidovrevej&quot;.
+kaldt af en anden del af programmet, nÃ¥r en spillers brik
+henholdsvis lander pÃ¥ eller passerer feltet. I Felt-klassen er
+metoderne defineret til ikke at gÃ¸re noget. Alle felter
+har ogsÃ¥ et navn, f.eks &quot;Hvidovrevej&quot;.
 </para>
 
 <screen>
@@ -753,19 +753,19 @@ har også et navn, f.eks &quot;Hvidovrevej&quot;.
 {
 <emphasis>  String navn;</emphasis>
 
-  <emphasis>public void passeret(Spiller sp)</emphasis> <emphasis>// kaldes når en spiller passerer dette felt</emphasis>
+  <emphasis>public void passeret(Spiller sp)</emphasis> <emphasis>// kaldes nÃ¥r en spiller passerer dette felt</emphasis>
   {
     System.out.println(sp.navn+&quot; passerer &quot;+navn);
   }
 
-  <emphasis>public void landet(Spiller sp) </emphasis>  <emphasis>// kaldes når en spiller lander på dette felt</emphasis>
+  <emphasis>public void landet(Spiller sp) </emphasis>  <emphasis>// kaldes nÃ¥r en spiller lander pÃ¥ dette felt</emphasis>
   {
   }
 }
 </screen>
 
 
-<para>Læg mærke til, at der er forskel mellem sp.navn
+<para>LÃ¦g mÃ¦rke til, at der er forskel mellem sp.navn
 (spillerens navn) og navn (Felt-objektets navn).
 </para>
 
@@ -778,14 +778,14 @@ til Felt.
 </para>
 
 <para>
-Klassen Helle er simpel; den skal lægge 15000 kr. til
-spillerens kassebeholdning, hvis spilleren lander på
-feltet. Dette gøres ved at tilsidesætte den nedarvede
-passeret()-metode med en, der overfører penge til spilleren.
+Klassen Helle er simpel; den skal lÃ¦gge 15000 kr. til
+spillerens kassebeholdning, hvis spilleren lander pÃ¥
+feltet. Dette gÃ¸res ved at tilsidesÃ¦tte den nedarvede
+passeret()-metode med en, der overfÃ¸rer penge til spilleren.
 </para>
 
 <screen>
-<emphasis>// Helle. Hvis man lander her får man en gevinst.</emphasis>
+<emphasis>// Helle. Hvis man lander her fÃ¥r man en gevinst.</emphasis>
 
 <emphasis>public class Helle extends Felt</emphasis>
 {
@@ -797,26 +797,26 @@ passeret()-metode med en, der overfører penge til spilleren.
     this.gevinst=gevinst;
   }
 
-  <emphasis>public void landet(Spiller sp)</emphasis>    <emphasis>// tilsidesæt metode i Felt</emphasis>
+  <emphasis>public void landet(Spiller sp)</emphasis>    <emphasis>// tilsidesÃ¦t metode i Felt</emphasis>
   {
-    System.out.println(sp.navn+&quot; lander på helle, og får overført &quot;+gevinst);
+    System.out.println(sp.navn+&quot; lander pÃ¥ helle, og fÃ¥r overfÃ¸rt &quot;+gevinst);
     sp.transaktion(gevinst);        <emphasis>// opdater spillers konto</emphasis>
-    System.out.println(sp.navn+&quot;s konto lyder nu på &quot;+sp.konto);
+    System.out.println(sp.navn+&quot;s konto lyder nu pÃ¥ &quot;+sp.konto);
   }
 }
 </screen>
 
 
-<para>I konstruktøren sætter vi feltets navn. Gevinsten ved at
-lande her er en parameter til konstruktøren. Metodekaldet
-sp.transaktion(gevinst) beder spiller-objektet om at føje
+<para>I konstruktÃ¸ren sÃ¦tter vi feltets navn. Gevinsten ved at
+lande her er en parameter til konstruktÃ¸ren. Metodekaldet
+sp.transaktion(gevinst) beder spiller-objektet om at fÃ¸je
 gevinsten til kontoen.
 </para>
 
 <para>
-Klassen Start skal overføre 5000 kr. til spilleren, der
-passerer eller lander på feltet. Dette gøres ved at
-tilsidesætte både landet() og passeret().
+Klassen Start skal overfÃ¸re 5000 kr. til spilleren, der
+passerer eller lander pÃ¥ feltet. Dette gÃ¸res ved at
+tilsidesÃ¦tte bÃ¥de landet() og passeret().
 </para>
 
 <screen>
@@ -832,18 +832,18 @@ tilsidesætte både landet() og passeret().
     this.gevinst=gevinst;
   }
 
-<emphasis>  public void passeret(Spiller sp)</emphasis>                 <emphasis>// tilsidesæt metode i Felt</emphasis>
+<emphasis>  public void passeret(Spiller sp)</emphasis>                 <emphasis>// tilsidesÃ¦t metode i Felt</emphasis>
   {
     System.out.println(sp.navn+&quot; passerer start og modtager &quot;+gevinst);
     sp.transaktion(gevinst);                       // kredit/debit af konto
-    System.out.println(sp.navn+&quot;s konto lyder nu på &quot;+sp.konto);
+    System.out.println(sp.navn+&quot;s konto lyder nu pÃ¥ &quot;+sp.konto);
   }
 
-<emphasis>  public void landet(Spiller sp)</emphasis>                   <emphasis>// tilsidesæt metode i Felt</emphasis>
+<emphasis>  public void landet(Spiller sp)</emphasis>                   <emphasis>// tilsidesÃ¦t metode i Felt</emphasis>
   {
-    System.out.println(sp.navn+&quot; lander på start og modtager &quot;+gevinst);
+    System.out.println(sp.navn+&quot; lander pÃ¥ start og modtager &quot;+gevinst);
     sp.transaktion(gevinst);
-    System.out.println(sp.navn+&quot;s konto lyder nu på &quot;+sp.konto);
+    System.out.println(sp.navn+&quot;s konto lyder nu pÃ¥ &quot;+sp.konto);
   }
 }
 </screen>
@@ -853,7 +853,7 @@ tilsidesætte både landet() og passeret().
 Nu kommer vi til felter, der kan ejes af en spiller, nemlig
 rederier og gader. De har en ejer-variabel, der refererer til en
 Spiller (og er derfor tegnet med en <emphasis>har-en</emphasis>-relation
-til klassen Spiller), en pris og en leje for at lande på
+til klassen Spiller), en pris og en leje for at lande pÃ¥
 grunden.
 </para>
 
@@ -875,20 +875,20 @@ grunden.
 
 <emphasis>  public void landet(Spiller sp)</emphasis>
   {
-    System.out.println(sp.navn+&quot; er landet på &quot;+navn);
+    System.out.println(sp.navn+&quot; er landet pÃ¥ &quot;+navn);
     <emphasis>if (sp==ejer)</emphasis>
     {                                       <emphasis>// spiller ejer selv grunden</emphasis>
       System.out.println(&quot;Dette er &quot;+sp.navn+&quot;s egen grund&quot;);
     }
     <emphasis>else if (ejer==null)</emphasis>
-    {                                       <emphasis>// ingen ejer grunden, så køb den</emphasis>
+    {                                       <emphasis>// ingen ejer grunden, sÃ¥ kÃ¸b den</emphasis>
       if (sp.konto &gt; pris)
       {
-        System.out.println(sp.navn+&quot; køber &quot;+navn+&quot; for &quot;+pris);
+        System.out.println(sp.navn+&quot; kÃ¸ber &quot;+navn+&quot; for &quot;+pris);
         <emphasis>ejer=sp</emphasis>;
         sp.transaktion( -pris );
       }
-      else System.out.println(sp.navn+&quot; har ikke penge nok til at købe &quot;+navn);
+      else System.out.println(sp.navn+&quot; har ikke penge nok til at kÃ¸be &quot;+navn);
     }
     <emphasis>else</emphasis>
     {                                       <emphasis>// feltet ejes af anden spiller</emphasis>
@@ -900,27 +900,27 @@ grunden.
 </screen>
 
 
-<para>Når en spiller lander på et rederi, skal der overføres
-penge fra spilleren til ejeren af grunden. Dette gøres
-ved at tilsidesætte den nedarvede landet()-metode med en, der
-overfører beløbet mellem parterne. Først tjekkes
+<para>NÃ¥r en spiller lander pÃ¥ et rederi, skal der overfÃ¸res
+penge fra spilleren til ejeren af grunden. Dette gÃ¸res
+ved at tilsidesÃ¦tte den nedarvede landet()-metode med en, der
+overfÃ¸rer belÃ¸bet mellem parterne. FÃ¸rst tjekkes
 om spilleren er den samme som ejeren (sp==ejer). Hvis dette ikke er
-tilfældet, tjekkes om der ingen ejer er (ejer==null), og hvis
-der ikke er, kan spilleren købe grunden (ejer sættes lig
-spilleren). Ellers beordres spilleren til at betale et beløb
+tilfÃ¦ldet, tjekkes om der ingen ejer er (ejer==null), og hvis
+der ikke er, kan spilleren kÃ¸be grunden (ejer sÃ¦ttes lig
+spilleren). Ellers beordres spilleren til at betale et belÃ¸b
 til ejeren: sp.betal(ejer, grundleje).
 </para>
 
 <para>
-Klassen Gade repræsenterer en byggegrund, og objekter af
+Klassen Gade reprÃ¦senterer en byggegrund, og objekter af
 type Gade har derfor, ud over ejer, pris og grundleje, en variabel,
-der husker, hvor mange huse der er bygget på dem.
+der husker, hvor mange huse der er bygget pÃ¥ dem.
 </para>
 
 <para>
-Når en spiller lander på grunden, skal der ske
+NÃ¥r en spiller lander pÃ¥ grunden, skal der ske
 nogenlunde det samme som for et Rederi bortset fra, at hvis det er
-ejeren der lander på grunden, kan han bygge et hus.
+ejeren der lander pÃ¥ grunden, kan han bygge et hus.
 </para>
 
 <screen>
@@ -945,27 +945,27 @@ ejeren der lander på grunden, kan han bygge et hus.
 
 <emphasis>  public void landet(Spiller sp)</emphasis>
   {
-    System.out.println(sp.navn+&quot; er landet på &quot;+navn);
+    System.out.println(sp.navn+&quot; er landet pÃ¥ &quot;+navn);
 
     if (sp==ejer)
     {                                        <emphasis>// eget felt</emphasis>
       System.out.println(&quot;Dette er &quot;+sp.navn+&quot;s egen grund&quot;);
       <emphasis>if (antalHuse&lt;5 &amp;&amp; sp.konto&gt;huspris)</emphasis>
       {                                     <emphasis>// byg et hus</emphasis>
-        System.out.println(ejer.navn+&quot; bygger et hus på &quot;+navn+&quot; for &quot;+huspris);
+        System.out.println(ejer.navn+&quot; bygger et hus pÃ¥ &quot;+navn+&quot; for &quot;+huspris);
 <emphasis>        ejer.transaktion( -huspris );</emphasis>
 <emphasis>        antalHuse = antalHuse + 1;</emphasis>
       }
     }
     else if (ejer==null)
-    {                                        <emphasis>// ingen ejer grunden, så køb den</emphasis>
+    {                                        <emphasis>// ingen ejer grunden, sÃ¥ kÃ¸b den</emphasis>
       if (sp.konto &gt; pris)
       {
-        System.out.println(sp.navn+&quot; køber &quot;+navn+&quot; for &quot;+pris);
+        System.out.println(sp.navn+&quot; kÃ¸ber &quot;+navn+&quot; for &quot;+pris);
         ejer=sp;
         sp.transaktion( -pris );
       }
-      else System.out.println(sp.navn+&quot; har ikke penge nok til at købe &quot;+navn);
+      else System.out.println(sp.navn+&quot; har ikke penge nok til at kÃ¸be &quot;+navn);
     }
     else
     {                                        <emphasis>// felt ejes af anden spiller</emphasis>
@@ -979,8 +979,8 @@ ejeren der lander på grunden, kan han bygge et hus.
 
 
 <para>
-Et spil kunne opbygges ved at lægge forskellige felter ind i
-en vektor for at få et bræt:
+Et spil kunne opbygges ved at lÃ¦gge forskellige felter ind i
+en vektor for at fÃ¥ et brÃ¦t:
 </para>
 
 <screen>
@@ -991,7 +991,7 @@ public class SpilMatador
 {
   public static void main(String[] args)
   {
-    Spiller sp1=new Spiller(&quot;Søren&quot;,50000);   <emphasis>// opret spiller 1</emphasis>
+    Spiller sp1=new Spiller(&quot;SÃ¸ren&quot;,50000);   <emphasis>// opret spiller 1</emphasis>
     Spiller sp2=new Spiller(&quot;Gitte&quot;,50000);   <emphasis>// opret spiller 2</emphasis>
 
     Vector felter=new Vector();               <emphasis>// indeholder alle felter</emphasis>
@@ -1006,7 +1006,7 @@ public class SpilMatador
     felter.addElement(<emphasis>new Gade(&quot;Gade 8&quot;,20000,1100,2000)</emphasis>);
     felter.addElement(<emphasis>new Gade(&quot;Gade 9&quot;,30000,1500,2200)</emphasis>);
 
-<emphasis>    // løb igennem 20 runder</emphasis>
+<emphasis>    // lÃ¸b igennem 20 runder</emphasis>
     for (int runde = 0; runde&lt;20; runde=runde+1)
     {
 <emphasis>      sp1.tur(felter);</emphasis>
@@ -1018,10 +1018,10 @@ public class SpilMatador
 
 
 <para>
-Man kan så lave en simpel tur()-metode, der rykker en
-spiller rundt på felterne ved at hente objekterne i vektoren,
+Man kan sÃ¥ lave en simpel tur()-metode, der rykker en
+spiller rundt pÃ¥ felterne ved at hente objekterne i vektoren,
 reference-typekonvertere dem til Felt og kalde objekternes
-passeret()-metode og landet()-metoden på det sidste objekt.
+passeret()-metode og landet()-metoden pÃ¥ det sidste objekt.
 </para>
 
 <para>
@@ -1062,17 +1062,17 @@ public class Spiller
 <emphasis>  public void tur(Vector felter)</emphasis>
   {
     int slag=(int)(Math.random()*6)+1;                <emphasis>// terningkast</emphasis>
-    System.out.println(&quot;***** &quot;+navn+&quot; på felt &quot;+feltnr+&quot; slår &quot;+slag+&quot; *****&quot;);
+    System.out.println(&quot;***** &quot;+navn+&quot; pÃ¥ felt &quot;+feltnr+&quot; slÃ¥r &quot;+slag+&quot; *****&quot;);
 
 <emphasis>    // nu rykkes der</emphasis>
 <emphasis>    for (int i=1;i&lt;=slag;i=i+1)</emphasis>
     {
-<emphasis>      // gå til næste felt: tæl op, hvis vi når over antal felter så tæl fra 0</emphasis>
+<emphasis>      // gÃ¥ til nÃ¦ste felt: tÃ¦l op, hvis vi nÃ¥r over antal felter sÃ¥ tÃ¦l fra 0</emphasis>
       <emphasis>feltnr = (feltnr + 1)</emphasis> % felter.size();
       Felt felt;
       <emphasis>felt = (Felt) felter.elementAt(feltnr)</emphasis>;
-      <emphasis>if (i&lt;slag) felt.passeret(this)</emphasis>;  <emphasis>// kald passer() på felter vi passerer</emphasis>
-      <emphasis>else felt.landet(this)</emphasis>;           <emphasis>// kald land() på sidste felt</emphasis>
+      <emphasis>if (i&lt;slag) felt.passeret(this)</emphasis>;  <emphasis>// kald passer() pÃ¥ felter vi passerer</emphasis>
+      <emphasis>else felt.landet(this)</emphasis>;           <emphasis>// kald land() pÃ¥ sidste felt</emphasis>
     }
     try {Thread.sleep(3000);} catch (Exception e) {}  <emphasis>// vent 3 sek.</emphasis>
   }
@@ -1081,16 +1081,16 @@ public class Spiller
 
 
 <para>
-Fidusen er, at denne tur()-metode kan skrives uafhængigt af,
+Fidusen er, at denne tur()-metode kan skrives uafhÃ¦ngigt af,
 hvilke felt-typer der findes: tur()-metoden kalder automatisk de
 rigtige landet()- og passeret()-metoder, selvom den kun kender
 Felt-klassen.
 </para>
 
 <para>
-Bemærk i øvrigt, hvordan vi med <emphasis>this</emphasis> overfører
-en reference til spilleren selv når vi kalder passeret() og
-landet() på Felt-objekterne.
+BemÃ¦rk i Ã¸vrigt, hvordan vi med <emphasis>this</emphasis> overfÃ¸rer
+en reference til spilleren selv nÃ¥r vi kalder passeret() og
+landet() pÃ¥ Felt-objekterne.
 </para>
 
 <para>
@@ -1102,124 +1102,124 @@ Linjen
 </screen>
 
 
-<para>får programmet til at holde en pause i tre sekunder inden det
-går videre (try og catch vil blive forklaret i kapitlet om
+<para>fÃ¥r programmet til at holde en pause i tre sekunder inden det
+gÃ¥r videre (try og catch vil blive forklaret i kapitlet om
 undtagelser).
 </para>
 
 <para>
-Bemærk også hvordan vi sørger for, at variablen
-feltnr forbliver at have en værdi mellem 0 og antallet af
+BemÃ¦rk ogsÃ¥ hvordan vi sÃ¸rger for, at variablen
+feltnr forbliver at have en vÃ¦rdi mellem 0 og antallet af
 felter med operatoren %, der giver resten af en division (se <xref linkend="java-basal-prg" />).
 </para>
 
 <para>
-Her ses uddata af en kørsel af programmet:
+Her ses uddata af en kÃ¸rsel af programmet:
 </para>
 
 <screen>
-***** Søren på felt 0 slår 3 *****
-Søren passerer Gade 1
-Søren passerer Gade 2
-Søren er landet på Gade 3
-Søren køber Gade 3 for 12000.0
-***** Gitte på felt 0 slår 5 *****
+***** SÃ¸ren pÃ¥ felt 0 slÃ¥r 3 *****
+SÃ¸ren passerer Gade 1
+SÃ¸ren passerer Gade 2
+SÃ¸ren er landet pÃ¥ Gade 3
+SÃ¸ren kÃ¸ber Gade 3 for 12000.0
+***** Gitte pÃ¥ felt 0 slÃ¥r 5 *****
 Gitte passerer Gade 1
 Gitte passerer Gade 2
 Gitte passerer Gade 3
 Gitte passerer Maersk
-Gitte er landet på Gade 5
-Gitte køber Gade 5 for 15000.0
-***** Søren på felt 3 slår 2 *****
-Søren passerer Maersk
-Søren er landet på Gade 5
+Gitte er landet pÃ¥ Gade 5
+Gitte kÃ¸ber Gade 5 for 15000.0
+***** SÃ¸ren pÃ¥ felt 3 slÃ¥r 2 *****
+SÃ¸ren passerer Maersk
+SÃ¸ren er landet pÃ¥ Gade 5
 Husleje: 700.0
-Søren betaler Gitte: 700.0 kr.
-***** Gitte på felt 5 slår 4 *****
+SÃ¸ren betaler Gitte: 700.0 kr.
+***** Gitte pÃ¥ felt 5 slÃ¥r 4 *****
 Gitte passerer Helle
 Gitte passerer Gade 7
 Gitte passerer Gade 8
-Gitte er landet på Gade 9
-Gitte køber Gade 9 for 30000.0
-***** Søren på felt 5 slår 1 *****
-Søren er landet på helle, og får overført 15000.0
-Sørens konto lyder nu på 52300.0
-***** Gitte på felt 9 slår 5 *****
+Gitte er landet pÃ¥ Gade 9
+Gitte kÃ¸ber Gade 9 for 30000.0
+***** SÃ¸ren pÃ¥ felt 5 slÃ¥r 1 *****
+SÃ¸ren er landet pÃ¥ helle, og fÃ¥r overfÃ¸rt 15000.0
+SÃ¸rens konto lyder nu pÃ¥ 52300.0
+***** Gitte pÃ¥ felt 9 slÃ¥r 5 *****
 Gitte har passeret start og modtager 5000.0
-Gittes konto lyder nu på 10700.0
+Gittes konto lyder nu pÃ¥ 10700.0
 Gitte passerer Gade 1
 Gitte passerer Gade 2
 Gitte passerer Gade 3
-Gitte er landet på Maersk
-Gitte har ikke penge nok til at købe Maersk
-***** Søren på felt 6 slår 1 *****
-Søren er landet på Gade 7
-Søren køber Gade 7 for 20000.0
-***** Gitte på felt 4 slår 1 *****
-Gitte bygger et hus på Gade 5 for 1500.0
-Gitte er landet på Gade 5
+Gitte er landet pÃ¥ Maersk
+Gitte har ikke penge nok til at kÃ¸be Maersk
+***** SÃ¸ren pÃ¥ felt 6 slÃ¥r 1 *****
+SÃ¸ren er landet pÃ¥ Gade 7
+SÃ¸ren kÃ¸ber Gade 7 for 20000.0
+***** Gitte pÃ¥ felt 4 slÃ¥r 1 *****
+Gitte bygger et hus pÃ¥ Gade 5 for 1500.0
+Gitte er landet pÃ¥ Gade 5
 Dette er Gittes egen grund
-***** Søren på felt 7 slår 1 *****
-Søren er landet på Gade 8
-Søren køber Gade 8 for 20000.0
-***** Gitte på felt 5 slår 4 *****
+***** SÃ¸ren pÃ¥ felt 7 slÃ¥r 1 *****
+SÃ¸ren er landet pÃ¥ Gade 8
+SÃ¸ren kÃ¸ber Gade 8 for 20000.0
+***** Gitte pÃ¥ felt 5 slÃ¥r 4 *****
 Gitte passerer Helle
 Gitte passerer Gade 7
 Gitte passerer Gade 8
-Gitte bygger et hus på Gade 9 for 2200.0
-Gitte er landet på Gade 9
+Gitte bygger et hus pÃ¥ Gade 9 for 2200.0
+Gitte er landet pÃ¥ Gade 9
 Dette er Gittes egen grund
-***** Søren på felt 8 slår 2 *****
-Søren passerer Gade 9
-Søren er landet på start og modtager 5000.0
-Sørens konto lyder nu på 17300.0
-***** Gitte på felt 9 slår 1 *****
-Gitte er landet på start og modtager 5000.0
-Gittes konto lyder nu på 12000.0
-***** Søren på felt 0 slår 3 *****
-Søren passerer Gade 1
-Søren passerer Gade 2
-Søren bygger et hus på Gade 3 for 1200.0
-Søren er landet på Gade 3
-Dette er Sørens egen grund
-***** Gitte på felt 0 slår 5 *****
+***** SÃ¸ren pÃ¥ felt 8 slÃ¥r 2 *****
+SÃ¸ren passerer Gade 9
+SÃ¸ren er landet pÃ¥ start og modtager 5000.0
+SÃ¸rens konto lyder nu pÃ¥ 17300.0
+***** Gitte pÃ¥ felt 9 slÃ¥r 1 *****
+Gitte er landet pÃ¥ start og modtager 5000.0
+Gittes konto lyder nu pÃ¥ 12000.0
+***** SÃ¸ren pÃ¥ felt 0 slÃ¥r 3 *****
+SÃ¸ren passerer Gade 1
+SÃ¸ren passerer Gade 2
+SÃ¸ren bygger et hus pÃ¥ Gade 3 for 1200.0
+SÃ¸ren er landet pÃ¥ Gade 3
+Dette er SÃ¸rens egen grund
+***** Gitte pÃ¥ felt 0 slÃ¥r 5 *****
 Gitte passerer Gade 1
 Gitte passerer Gade 2
 Gitte passerer Gade 3
 Gitte passerer Maersk
-Gitte bygger et hus på Gade 5 for 1500.0
-Gitte er landet på Gade 5
+Gitte bygger et hus pÃ¥ Gade 5 for 1500.0
+Gitte er landet pÃ¥ Gade 5
 Dette er Gittes egen grund
-***** Søren på felt 3 slår 5 *****
-Søren passerer Maersk
-Søren passerer Gade 5
-Søren passerer Helle
-Søren passerer Gade 7
-Søren bygger et hus på Gade 8 for 2000.0
-Søren er landet på Gade 8
-Dette er Sørens egen grund
-***** Gitte på felt 5 slår 1 *****
-Gitte er landet på helle, og får overført 15000.0
-Gittes konto lyder nu på 25500.0
-***** Søren på felt 8 slår 3 *****
-Søren passerer Gade 9
-Søren har passeret start og modtager 5000.0
-Sørens konto lyder nu på 19100.0
-Søren er landet på Gade 1
-Søren køber Gade 1 for 10000.0
+***** SÃ¸ren pÃ¥ felt 3 slÃ¥r 5 *****
+SÃ¸ren passerer Maersk
+SÃ¸ren passerer Gade 5
+SÃ¸ren passerer Helle
+SÃ¸ren passerer Gade 7
+SÃ¸ren bygger et hus pÃ¥ Gade 8 for 2000.0
+SÃ¸ren er landet pÃ¥ Gade 8
+Dette er SÃ¸rens egen grund
+***** Gitte pÃ¥ felt 5 slÃ¥r 1 *****
+Gitte er landet pÃ¥ helle, og fÃ¥r overfÃ¸rt 15000.0
+Gittes konto lyder nu pÃ¥ 25500.0
+***** SÃ¸ren pÃ¥ felt 8 slÃ¥r 3 *****
+SÃ¸ren passerer Gade 9
+SÃ¸ren har passeret start og modtager 5000.0
+SÃ¸rens konto lyder nu pÃ¥ 19100.0
+SÃ¸ren er landet pÃ¥ Gade 1
+SÃ¸ren kÃ¸ber Gade 1 for 10000.0
 </screen>
 
 
 <para>
-... (og så videre)
+... (og sÃ¥ videre)
 </para>
 
 <sect2 id="java-arv-poly-poly2">
   <title>Polymorfi</title>
 
 <para>
-Polymorfi vil sige, at objekter af forskellig type bruges på
-en ensartet måde uden hensyn til deres præcise type.
+Polymorfi vil sige, at objekter af forskellig type bruges pÃ¥
+en ensartet mÃ¥de uden hensyn til deres prÃ¦cise type.
 </para>
 
 <para>
@@ -1230,20 +1230,20 @@ Spiller's tur()-metode), selvom de er af forskellig type.
 
 <para>
 Polymorfi er et kraftfuldt redskab til at lave meget fleksible
-programmer, der senere kan udvides, uden at der skal ændres ret
+programmer, der senere kan udvides, uden at der skal Ã¦ndres ret
 meget i den eksisterende kode.
 </para>
 
 <para>
 For eksempel kan vi til enhver tid udbygge matadorspillet med
 flere felttyper uden at skrive programmet om. Den programkode, der
-arbejder på felterne, Spiller-klassens tur()-metode, kender
+arbejder pÃ¥ felterne, Spiller-klassens tur()-metode, kender
 faktisk slet ikke til andre klasser end Felt!
 </para>
 
 <para>
-En forudsætning for at udnytte polymorfi-mekanismen er, at
-objekterne &quot;sørger for sig selv&quot;, dvs. at data og
+En forudsÃ¦tning for at udnytte polymorfi-mekanismen er, at
+objekterne &quot;sÃ¸rger for sig selv&quot;, dvs. at data og
 programkode er i de objekter, som de handler om.
 </para>
 </sect2>    <!--   Polymorfi -->
@@ -1261,9 +1261,9 @@ andet, vil den automatisk arve fra Object.
 <blockquote><para>Alle klasser arver fra Object</para></blockquote>
 
 <para>
-Således arver f.eks. Terning fra Object. FalskTerning1 arver
+SÃ¥ledes arver f.eks. Terning fra Object. FalskTerning1 arver
 indirekte fra Object gennem Terning. Alle standardklasserne arver
-også fra Object, muligvis gennem andre klasser.
+ogsÃ¥ fra Object, muligvis gennem andre klasser.
 </para>
 
 <figure id="java-arv-fake-dice3-fig">
@@ -1273,7 +1273,7 @@ også fra Object, muligvis gennem andre klasser.
 </figure>
 
 <para>
-Det er derfor, at bl.a. toString()-metoden findes på
+Det er derfor, at bl.a. toString()-metoden findes pÃ¥
 alle objekter; den er defineret i Object og arves til alle klasser i
 Java. Her ses, hvad der sker, hvis man udskriver et (f.eks. Boks-)
 objekt der ikke har sin egen toString():
@@ -1295,7 +1295,7 @@ objekt der ikke har sin egen toString():
 
 
 <para>
-Den bruger toString() fra Object, og man kan altså se, at
+Den bruger toString() fra Object, og man kan altsÃ¥ se, at
 implementationen af toString() i Object returnerer klassens navn, et
 '@' og et tal,
 f.eks. Boks@4852d1b0.
@@ -1303,8 +1303,8 @@ f.eks. Boks@4852d1b0.
 
 <para>
 En anden metode i Object er equals(). Den har vi brugt til at
-undersøge, om strenge er ens, men den findes altså på
-ethvert objekt og kan f.eks. også bruges til at undersøge
+undersÃ¸ge, om strenge er ens, men den findes altsÃ¥ pÃ¥
+ethvert objekt og kan f.eks. ogsÃ¥ bruges til at undersÃ¸ge
 om to vektorer indeholder de samme elementer.
 </para>
 
@@ -1312,7 +1312,7 @@ om to vektorer indeholder de samme elementer.
   <title>Referencer til objekter</title>
 
 <para>
-Når alle objekter arver fra Object, kan man i en variabel af
+NÃ¥r alle objekter arver fra Object, kan man i en variabel af
 denne type gemme en reference til ethvert slags objekt, jf. reglerne
 om typekonvertering:
 </para>
@@ -1326,7 +1326,7 @@ om typekonvertering:
 
 
 <para>
-Omvendt kan man ikke rigtig bruge variablen til noget, før
+Omvendt kan man ikke rigtig bruge variablen til noget, fÃ¸r
 man har lavet en eksplicit referencetypekonvertering:
 </para>
 
@@ -1339,13 +1339,13 @@ man har lavet en eksplicit referencetypekonvertering:
 
 <para>
 Her var jeg heldig, at o faktisk refererede til en (underklasse)
-af Terning. Jeg får først at vide, om min
-typekonvertering er gået godt på kørselstidspunktet.
+af Terning. Jeg fÃ¥r fÃ¸rst at vide, om min
+typekonvertering er gÃ¥et godt pÃ¥ kÃ¸rselstidspunktet.
 </para>
 
 <para>
-Tilsvarende kan man bruge Object som parameter / returtype og få
-et fleksibelt, men ikke særlig sikkert program. Klassen Vector
+Tilsvarende kan man bruge Object som parameter / returtype og fÃ¥
+et fleksibelt, men ikke sÃ¦rlig sikkert program. Klassen Vector
 benytter sig af dette: Vektorer arbejder med lister af typen Object,
 det er derfor, man kan gemme alle slags objekter i dem.
 </para>
@@ -1371,15 +1371,15 @@ skal jo konverteres fra en Point-reference til en Object-reference):
 <screen>
   vector v = new Vector();
   Point p = new Point();
-  Object o;                  <emphasis>// overflødig mellemvariabel</emphasis>
+  Object o;                  <emphasis>// overflÃ¸dig mellemvariabel</emphasis>
   o = p;                     <emphasis>// implicit reference-typekonvertering</emphasis>
   v.addElement(o);
 </screen>
 
 
 <para>
-Når man kalder elementAt() for at få fat i objektet
-igen, er det nødvendigt med en eksplicit
+NÃ¥r man kalder elementAt() for at fÃ¥ fat i objektet
+igen, er det nÃ¸dvendigt med en eksplicit
 reference-typekonvertering, fordi konverteringen sker den anden vej,
 fra superklasse til underklasse:
 </para>
@@ -1390,7 +1390,7 @@ fra superklasse til underklasse:
 
 
 <para>
-Igen vises det samme blot med mellemvariabel, så man kan se,
+Igen vises det samme blot med mellemvariabel, sÃ¥ man kan se,
 hvilken typekonvertering der finder sted:
 </para>
 
@@ -1403,7 +1403,7 @@ hvilken typekonvertering der finder sted:
 </sect1>
 
 <sect1 id="java-arv-stamklasse-subklasser">
-<title>Konstruktører i underklasser</title>
+<title>KonstruktÃ¸rer i underklasser</title>
 
 <para>
 Vi minder om, at:
@@ -1412,9 +1412,9 @@ Vi minder om, at:
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Konstruktører definerer, hvordan objekter oprettes, og
-  med hvilke parametre de må oprettes. Der kan kun oprettes
-  objekter på en måde, der passer med en konstruktør.
+<para>KonstruktÃ¸rer definerer, hvordan objekter oprettes, og
+  med hvilke parametre de mÃ¥ oprettes. Der kan kun oprettes
+  objekter pÃ¥ en mÃ¥de, der passer med en konstruktÃ¸r.
 </para>
 
 </listitem>
@@ -1422,10 +1422,10 @@ Vi minder om, at:
   <listitem>
 
 <para>
-Hvis en klasse ikke har defineret nogen konstruktører,
-  så defineres automatisk en standardkonstruktør (uden
+Hvis en klasse ikke har defineret nogen konstruktÃ¸rer,
+  sÃ¥ defineres automatisk en standardkonstruktÃ¸r (uden
   parametre og med tom metodekrop). F.eks. har Boks automatisk
-  fået en tom konstruktør, så den kunne oprettes
+  fÃ¥et en tom konstruktÃ¸r, sÃ¥ den kunne oprettes
   med new Boks().
 </para>
 
@@ -1434,41 +1434,41 @@ Hvis en klasse ikke har defineret nogen konstruktører,
 
 <para>
 En underklasse skal selv definere, hvordan dets objekter skal
-kunne oprettes, så den skal selv definere sine konstruktører.
-Underklassen kan også have færre eller flere
-konstruktører end superklassen.
+kunne oprettes, sÃ¥ den skal selv definere sine konstruktÃ¸rer.
+Underklassen kan ogsÃ¥ have fÃ¦rre eller flere
+konstruktÃ¸rer end superklassen.
 </para>
 
 <para>
-Når man definerer en konstruktør på en
+NÃ¥r man definerer en konstruktÃ¸r pÃ¥ en
 underklasse, skal man kun initialisere den nye del af objektet.
 </para>
 
 <para>
-Har man f.eks. tilføjet nye variabler, skal konstruktøren
+Har man f.eks. tilfÃ¸jet nye variabler, skal konstruktÃ¸ren
 initialisere dem. Den arvede del af objektet initialiseres ved, at
-man fra underklassens konstruktør kalder en konstruktør
-fra superklassen. Dette gøres med sætningen:
-&quot;super(...);&quot; med eventuelle parametre. Man bruger altså
-her <emphasis>super</emphasis> som en metode. Det skal gøres som den <emphasis>første</emphasis>
-sætning i konstruktøren. Hvis man ikke selv kalder
-super() som det første, sker der det, at super bliver kaldt
+man fra underklassens konstruktÃ¸r kalder en konstruktÃ¸r
+fra superklassen. Dette gÃ¸res med sÃ¦tningen:
+&quot;super(...);&quot; med eventuelle parametre. Man bruger altsÃ¥
+her <emphasis>super</emphasis> som en metode. Det skal gÃ¸res som den <emphasis>fÃ¸rste</emphasis>
+sÃ¦tning i konstruktÃ¸ren. Hvis man ikke selv kalder
+super() som det fÃ¸rste, sker der det, at super bliver kaldt
 automatisk <emphasis>uden</emphasis>
 parametre.
 </para>
 
 <figure id="java-arv-boks-fig">
 <title>Boks3medDensitet
-  tillader oprettelse på to måder</title>
+  tillader oprettelse pÃ¥ to mÃ¥der</title>
 
 <graphic fileref="Nordfalk715411.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
 Herunder definerer vi Boks3medDensitet, der arver fra Boks3. Den
-nye egenskab er massefylden og metoden vægt(). Den skal kunne
+nye egenskab er massefylden og metoden vÃ¦gt(). Den skal kunne
 oprettes med: new Boks3medDensitet(), som opretter boksen med
-nogle standardværdier eller med: new
+nogle standardvÃ¦rdier eller med: new
 Boks3medDensitet(lgd,b,h,d), hvor d er densiteten (massefylden).
 </para>
 
@@ -1479,40 +1479,40 @@ public class Boks3medDensitet extends Boks3
 
   public Boks3medDensitet()
   {
-<emphasis>    // <emphasis>super();</emphasis> overflødig, den kaldes implicit</emphasis>
+<emphasis>    // <emphasis>super();</emphasis> overflÃ¸dig, den kaldes implicit</emphasis>
     densitet = 10.0;
   }
 
   public Boks3medDensitet(double lgd, double b,  
           double h, double densitet)
   {
-<emphasis>    // kald superklassens konstruktør</emphasis>
+<emphasis>    // kald superklassens konstruktÃ¸r</emphasis>
 <emphasis>    super(lgd,b,h);</emphasis>
     this.densitet = densitet;
   }
 
-  public double vægt()
+  public double vÃ¦gt()
   {
     return volumen() * densitet;    <emphasis>// superklassen udregner volumen for os</emphasis>
   }
 }
 </screen>
 
-<blockquote><para>Konstruktører skal defineres på
+<blockquote><para>KonstruktÃ¸rer skal defineres pÃ¥
 ny i en underklasse</para></blockquote>
-<blockquote><para>En konstruktør i en underklasse
-kalder først en af superklassens konstruktører</para></blockquote>
-<blockquote><para>Superklassens konstruktør kan
+<blockquote><para>En konstruktÃ¸r i en underklasse
+kalder fÃ¸rst en af superklassens konstruktÃ¸rer</para></blockquote>
+<blockquote><para>Superklassens konstruktÃ¸r kan
 kaldes med: super(<emphasis>parametre</emphasis>)</para></blockquote>
-<blockquote><para>Hvis programmøren ikke kalder
-en af superklassens konstruktører, indsætter Java
-automatisk et kald af superklassens konstruktør uden
+<blockquote><para>Hvis programmÃ¸ren ikke kalder
+en af superklassens konstruktÃ¸rer, indsÃ¦tter Java
+automatisk et kald af superklassens konstruktÃ¸r uden
 parametre</para></blockquote>
 
 <para>
-Disse regler kombineret med reglerne for standardkonstruktøren
-har nogle pudsige konsekvenser. Lad os se på et eksempel
-med al overflødig kode skåret væk:
+Disse regler kombineret med reglerne for standardkonstruktÃ¸ren
+har nogle pudsige konsekvenser. Lad os se pÃ¥ et eksempel
+med al overflÃ¸dig kode skÃ¥ret vÃ¦k:
 </para>
 
 <screen>
@@ -1535,14 +1535,14 @@ public class B extends A
 
 
 <para>
-Dette vil ikke oversætte, fordi B af Java vil blive lavet om
+Dette vil ikke oversÃ¦tte, fordi B af Java vil blive lavet om
 til:
 </para>
 
 <screen>
 public class B extends A
 {
-  public B() <emphasis>// indsættes automatisk af Java</emphasis>
+  public B() <emphasis>// indsÃ¦ttes automatisk af Java</emphasis>
   {
     super();
   }
@@ -1550,9 +1550,9 @@ public class B extends A
 </screen>
 
 
-<para>Standardkonstruktøren i B vil altså prøve at
-kalde konstruktøren i A uden parametre, men den findes jo
-ikke, fordi A har en anden konstruktør. Oversætteren
+<para>StandardkonstruktÃ¸ren i B vil altsÃ¥ prÃ¸ve at
+kalde konstruktÃ¸ren i A uden parametre, men den findes jo
+ikke, fordi A har en anden konstruktÃ¸r. OversÃ¦tteren
 kommer med fejlmeddelelsen &quot;<emphasis>constructor A() not found</emphasis>&quot;.
 </para>
 
@@ -1582,7 +1582,7 @@ Java laver det om til:
 <screen>
 public class A
 {
-  public A() <emphasis>// indsættes automatisk af Java</emphasis>
+  public A() <emphasis>// indsÃ¦ttes automatisk af Java</emphasis>
   {
   }
 }
@@ -1593,7 +1593,7 @@ public class A
 <screen>
 public class B extends A
 {
-  public B() <emphasis>// indsættes automatisk af Java</emphasis>
+  public B() <emphasis>// indsÃ¦ttes automatisk af Java</emphasis>
   {
     super();
   }
@@ -1608,15 +1608,15 @@ public class B extends A
 <para>
 Dette eksempel viser, hvordan man kan spare programkode (og dermed
 programmeringstid) med nedarvning. Samtidig viser det brugen af
-konstruktører i underklasser.
+konstruktÃ¸rer i underklasser.
 </para>
 
 <para>
-Se igen på programkoden til Rederi og Gade. Der er meget
+Se igen pÃ¥ programkoden til Rederi og Gade. Der er meget
 programkode, som er ens for de to klasser. Faktisk implementerer de
-kode, der er fælles for alle grunde, der kan ejes af en
-spiller, og derfor vil det være hensigtsmæssigt, at
-følgende kode var i en Grund-klasse:
+kode, der er fÃ¦lles for alle grunde, der kan ejes af en
+spiller, og derfor vil det vÃ¦re hensigtsmÃ¦ssigt, at
+fÃ¸lgende kode var i en Grund-klasse:
 </para>
 
 <itemizedlist mark="bullet">
@@ -1631,7 +1631,7 @@ følgende kode var i en Grund-klasse:
   <listitem>
 
 <para>
-Håndtering af, at en spiller lander på grunden
+HÃ¥ndtering af, at en spiller lander pÃ¥ grunden
   (bl.a. betaling af leje).
 </para>
 
@@ -1640,15 +1640,15 @@ Håndtering af, at en spiller lander på grunden
   <listitem>
 
 <para>
-Håndtering af, at en spiller lander på en grund,
-  der ikke ejes af nogen (køb af grunden).
+HÃ¥ndtering af, at en spiller lander pÃ¥ en grund,
+  der ikke ejes af nogen (kÃ¸b af grunden).
 </para>
 
 </listitem>
 </itemizedlist>
 
 <para>
-Det har vi gjort herunder. Vi har været forudseende og
+Det har vi gjort herunder. Vi har vÃ¦ret forudseende og
 flyttet beregningen af lejen ud fra landet() og ind i en separat
 metode beregnLeje(), fordi netop denne er meget forskellig for Rederi
 og Gade.
@@ -1677,20 +1677,20 @@ public class Grund2 extends Felt
 
 <emphasis>  public void landet(Spiller sp)</emphasis>
   {
-    System.out.println(sp.navn+&quot; er landet på &quot;+navn);
+    System.out.println(sp.navn+&quot; er landet pÃ¥ &quot;+navn);
     if (sp==ejer)
     {                                       <emphasis>// spiller ejer feltet</emphasis>
       System.out.println(&quot;Dette er &quot;+sp.navn+&quot;s egen grund&quot;);
     }
     else if (ejer==null)
-    {                                       <emphasis>// ingen ejer grunden, så køb den</emphasis>
+    {                                       <emphasis>// ingen ejer grunden, sÃ¥ kÃ¸b den</emphasis>
       if (sp.konto &gt; pris)
       {
-        System.out.println(sp.navn+&quot; køber &quot;+navn+&quot; for &quot;+pris);
+        System.out.println(sp.navn+&quot; kÃ¸ber &quot;+navn+&quot; for &quot;+pris);
         ejer=sp;
         sp.transaktion( -pris );
       }
-      else System.out.println(sp.navn+&quot; har ikke penge nok til at købe &quot;+navn);
+      else System.out.println(sp.navn+&quot; har ikke penge nok til at kÃ¸be &quot;+navn);
     }
     else
     {                                       <emphasis>// felt ejes af anden spiller</emphasis>
@@ -1705,8 +1705,8 @@ public class Grund2 extends Felt
 
 <para>
 Nu er Rederi ret nem. Den skal nemlig (i denne simple udgave)
-opføre sig præcis som Grund. Vi skal blot definere
-konstruktøren, som skal kalde den tilsvarende konstruktør
+opfÃ¸re sig prÃ¦cis som Grund. Vi skal blot definere
+konstruktÃ¸ren, som skal kalde den tilsvarende konstruktÃ¸r
 i Grund:
 </para>
 
@@ -1717,20 +1717,20 @@ public class Rederi2 extends Grund2
 {
 <emphasis>  public Rederi2(String navn, double pris, double leje)</emphasis>
   {
-<emphasis>    super(navn, pris, leje);</emphasis>    <emphasis>// kald superklassens konstruktør</emphasis>
+<emphasis>    super(navn, pris, leje);</emphasis>    <emphasis>// kald superklassens konstruktÃ¸r</emphasis>
   }
 }
 </screen>
 
 
 <para>
-Nu kommer vi til Gade. Her er beregnLeje() tilsidesat til også
-at tage højde for antallet af huse. Med <emphasis>super</emphasis> kan vi
+Nu kommer vi til Gade. Her er beregnLeje() tilsidesat til ogsÃ¥
+at tage hÃ¸jde for antallet af huse. Med <emphasis>super</emphasis> kan vi
 faktisk spare en hel del arbejde. Gaderne kan genbruge meget af
 landet()-metoden, men der er dog en ekstra mulighed for at bygge hus.
 Derfor kalder vi superklassens landet()-metode, hvis spilleren, der
-er landet på gaden, ikke er ejeren. Hvis det <emphasis>er</emphasis> ejeren,
-prøver vi at bygge et hus (udskilt i metoden bygHus()).
+er landet pÃ¥ gaden, ikke er ejeren. Hvis det <emphasis>er</emphasis> ejeren,
+prÃ¸ver vi at bygge et hus (udskilt i metoden bygHus()).
 </para>
 
 <screen>
@@ -1748,7 +1748,7 @@ public class Gade2 extends Grund2
     antalHuse = 0;
   }
 
-<emphasis>  public double beregnLeje()</emphasis>                          <emphasis>// tilsidesæt Grund2's</emphasis>
+<emphasis>  public double beregnLeje()</emphasis>                          <emphasis>// tilsidesÃ¦t Grund2's</emphasis>
   {
     return grundleje + antalHuse * huspris;
   }
@@ -1757,7 +1757,7 @@ public class Gade2 extends Grund2
   {
     if (sp==ejer)
     {                                                 <emphasis>// eget felt; byg hus</emphasis>
-      System.out.println(sp.navn+&quot; er landet på &quot;+navn);
+      System.out.println(sp.navn+&quot; er landet pÃ¥ &quot;+navn);
       System.out.println(&quot;Dette er &quot;+sp.navn+&quot;s egen grund&quot;);
       if (antalHuse&lt;5 &amp;&amp; sp.konto&gt;huspris) <emphasis>bygHus()</emphasis>;  <emphasis>// byg hus hvis vi kan</emphasis>
     }
@@ -1766,7 +1766,7 @@ public class Gade2 extends Grund2
 
 <emphasis>  public void bygHus()</emphasis>
   {
-    System.out.println(ejer.navn+&quot; bygger et hus på &quot;+navn+&quot; for &quot;+huspris);
+    System.out.println(ejer.navn+&quot; bygger et hus pÃ¥ &quot;+navn+&quot; for &quot;+huspris);
     ejer.transaktion( -huspris );
     antalHuse = antalHuse + 1;
   }
@@ -1775,8 +1775,8 @@ public class Gade2 extends Grund2
 
 
 <para>
-Læg mærke til, at vi har sparet næsten halvdelen
-af koden væk i de to nye klasser.
+LÃ¦g mÃ¦rke til, at vi har sparet nÃ¦sten halvdelen
+af koden vÃ¦k i de to nye klasser.
 </para>
 
 <para>
@@ -1799,9 +1799,9 @@ et</emphasis> Felt.
 <orderedlist>
   <listitem>
 
-<para>Lav en LudoTerning, der arver fra Terning. Tilsidesæt
-  toString() med en, der giver &quot;*&quot; på en 3er og
-  &quot;globus&quot; på en 4er. Afprøv klassen.
+<para>Lav en LudoTerning, der arver fra Terning. TilsidesÃ¦t
+  toString() med en, der giver &quot;*&quot; pÃ¥ en 3er og
+  &quot;globus&quot; pÃ¥ en 4er. AfprÃ¸v klassen.
 </para>
 
 </listitem>
@@ -1809,12 +1809,12 @@ et</emphasis> Felt.
   <listitem>
 
 <para>
-Tilføj en Bryggeri-klasse til matadorspillet (version
-  1) og prøv om det virker.På bryggerier afhænger
-  lejen af, hvor stort et slag spilleren slog, da han landede på
-  feltet, men start med at lade lejen være tilfældig.
+TilfÃ¸j en Bryggeri-klasse til matadorspillet (version
+  1) og prÃ¸v om det virker.PÃ¥ bryggerier afhÃ¦nger
+  lejen af, hvor stort et slag spilleren slog, da han landede pÃ¥
+  feltet, men start med at lade lejen vÃ¦re tilfÃ¦ldig.
   Du kan evt. kopiere Gade.java i stedet for at skrive koden forfra.
-  Husk at indsætte et bryggeri i felter-vektoren i main().
+  Husk at indsÃ¦tte et bryggeri i felter-vektoren i main().
 </para>
 
 </listitem>
@@ -1823,8 +1823,8 @@ Tilføj en Bryggeri-klasse til matadorspillet (version
 
 <para>
 Ret SpilMatador til at bruge Rederi2 og Gade2 i stedet for
-  Rederi og Gade. Kør programmet, og følg med i,
-  hvad der sker i Gade2's konstruktør og landet()-metode.
+  Rederi og Gade. KÃ¸r programmet, og fÃ¸lg med i,
+  hvad der sker i Gade2's konstruktÃ¸r og landet()-metode.
 </para>
 
 </listitem>
@@ -1832,9 +1832,9 @@ Ret SpilMatador til at bruge Rederi2 og Gade2 i stedet for
   <listitem>
 
 <para>
-Føj en Bryggeri-klasse til matadorspillet version 2.
-  Husk at kalde super() i konstruktøren (hvorfor er det
-  nødvendigt?). Du kan evt. kopiere Gade2.java i stedet for at
+FÃ¸j en Bryggeri-klasse til matadorspillet version 2.
+  Husk at kalde super() i konstruktÃ¸ren (hvorfor er det
+  nÃ¸dvendigt?). Du kan evt. kopiere Gade2.java i stedet for at
   skrive koden forfra. Hvor meget kode kan du spare?
 </para>
 
@@ -1843,10 +1843,10 @@ Føj en Bryggeri-klasse til matadorspillet version 2.
   <listitem>
 
 <para>
-Ret på Spiller, så slag er en objektvariabel i
-  stedet for en lokal variabel. Nu kan man udefra aflæse, hvad
-  spilleren slog sidst. Brug værdien af slag i landet()-metoden
-  i Bryggeri til at lade lejen afhænge af, hvad spilleren slog.
+Ret pÃ¥ Spiller, sÃ¥ slag er en objektvariabel i
+  stedet for en lokal variabel. Nu kan man udefra aflÃ¦se, hvad
+  spilleren slog sidst. Brug vÃ¦rdien af slag i landet()-metoden
+  i Bryggeri til at lade lejen afhÃ¦nge af, hvad spilleren slog.
 </para>
 
 </listitem>

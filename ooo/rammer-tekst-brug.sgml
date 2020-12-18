@@ -8,29 +8,29 @@
   <listitem>
 
 <para>For at manipulere med en tekstramme skal du klikke en enkelt gang
-        i <emphasis>kanten</emphasis> af tekstrammen; derefter bliver den omgivet af grønne
-        firkanter. (Sådan er det når du lige har sat tekstrammen ind).</para>
+        i <emphasis>kanten</emphasis> af tekstrammen; derefter bliver den omgivet af grÃ¸nne
+        firkanter. (SÃ¥dan er det nÃ¥r du lige har sat tekstrammen ind).</para>
 
 </listitem>
 
   <listitem>
 
-<para>Tekstrammer manipuleres på samme måde som grafik, se afsnittene om
+<para>Tekstrammer manipuleres pÃ¥ samme mÃ¥de som grafik, se afsnittene om
         <xref linkend="ooo-rammer"/>forankring, ombrydning og <xref linkend="ooo-formattering-af-grafik"/>skalering.</para>
 
 </listitem>
 
   <listitem>
 
-<para>For at skrive videre i den normale tekst skal du klikke et sted <emphasis>udenfor</emphasis> tekstrammen eller taste <emphasis>Esc</emphasis>. De grønne
+<para>For at skrive videre i den normale tekst skal du klikke et sted <emphasis>udenfor</emphasis> tekstrammen eller taste <emphasis>Esc</emphasis>. De grÃ¸nne
         firkanter forsvinder.</para>
 
 </listitem>
 
   <listitem>
 
-<para>For at skrive tekst i en tekstramme skal du klikke i det <emphasis>midterste</emphasis> område af tekstrammen. Der må ikke være grønne
-        firkanter, når du gør det.</para>
+<para>For at skrive tekst i en tekstramme skal du klikke i det <emphasis>midterste</emphasis> omrÃ¥de af tekstrammen. Der mÃ¥ ikke vÃ¦re grÃ¸nne
+        firkanter, nÃ¥r du gÃ¸r det.</para>
 
 </listitem>
 </itemizedlist>

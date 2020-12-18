@@ -1,10 +1,10 @@
-Plucker er programmet vi tilbyder til at læse 
-"Linux - Friheden til at vælge" hvis du har en
+Plucker er programmet vi tilbyder til at lÃ¦se 
+"Linux - Friheden til at vÃ¦lge" hvis du har en
 Palm Pilot. 
 
-Plucker er under GPL - licensen kan læses
+Plucker er under GPL - licensen kan lÃ¦ses
 i gpl.txt.
 
-Plucker kan findes på http://www.plkr.org/
+Plucker kan findes pÃ¥ http://www.plkr.org/
 
 

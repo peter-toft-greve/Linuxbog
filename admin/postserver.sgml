@@ -3,36 +3,36 @@
 
 <para>
 Hvis du installerer rpm-pakken <filename>imap</filename>, kan din
-Linux-maskine bruges som server for indgående post i et netværk. Ved
-installationen af pakken skulle hele opsætningen faktisk være på plads,
-så brugerne på de enkelte maskiner blot skal angive Linux-maskinen som
-postserver i deres e-post-programmer &ndash; og så naturligvis være oprettet
-som brugere på Linux-maskinen!
+Linux-maskine bruges som server for indgÃ¥ende post i et netvÃ¦rk. Ved
+installationen af pakken skulle hele opsÃ¦tningen faktisk vÃ¦re pÃ¥ plads,
+sÃ¥ brugerne pÃ¥ de enkelte maskiner blot skal angive Linux-maskinen som
+postserver i deres e-post-programmer &ndash; og sÃ¥ naturligvis vÃ¦re oprettet
+som brugere pÃ¥ Linux-maskinen!
 </para>
 
 <para>
 Hvis du kun har en modemforbindelse til internettet, kan du lade
-Linux-serveren sende og hente post for alle brugere på et lokalt
-netværk. Programmet <command>fetchmail</command> (se bogen "Linux -
-friheden til at lære Unix") er ret nemt at sætte op til at hente post til
-flere forskellige brugere på samme tid hos internetudbydere.
+Linux-serveren sende og hente post for alle brugere pÃ¥ et lokalt
+netvÃ¦rk. Programmet <command>fetchmail</command> (se bogen "Linux -
+friheden til at lÃ¦re Unix") er ret nemt at sÃ¦tte op til at hente post til
+flere forskellige brugere pÃ¥ samme tid hos internetudbydere.
 </para>
 
 <para>
-Udgående post håndteres af programmet <command>sendmail</command>. Hvis
-<command>sendmail</command> skal acceptere at videresende udgående e-post
-fra andre maskiner på et lokalnet, er det nødvendigt at angive dette i filen
-<filename>/etc/mail/ip_allow</filename>, ellers vil forsøg på at bruge
+UdgÃ¥ende post hÃ¥ndteres af programmet <command>sendmail</command>. Hvis
+<command>sendmail</command> skal acceptere at videresende udgÃ¥ende e-post
+fra andre maskiner pÃ¥ et lokalnet, er det nÃ¸dvendigt at angive dette i filen
+<filename>/etc/mail/ip_allow</filename>, ellers vil forsÃ¸g pÃ¥ at bruge
 Linux-maskinen som SMTP-server blive afvist med beskeden "We do not
 relay".
 </para>
 
 <para>
-I <filename>/etc/mail/ip_allow</filename> skriver du adresser på
-enkelte maskiner eller netværk, som må bruge Linux-maskinen som
-udgående postserver. Hvis for eksempel alle maskiner på netværket
+I <filename>/etc/mail/ip_allow</filename> skriver du adresser pÃ¥
+enkelte maskiner eller netvÃ¦rk, som mÃ¥ bruge Linux-maskinen som
+udgÃ¥ende postserver. Hvis for eksempel alle maskiner pÃ¥ netvÃ¦rket
 <filename>192.168.100.0</filename> skal accepteres, skal indholdet af
-<filename>/etc/mail/ip_allow</filename> være dette:
+<filename>/etc/mail/ip_allow</filename> vÃ¦re dette:
 </para>
 
 <programlisting>
@@ -40,22 +40,22 @@ udgående postserver. Hvis for eksempel alle maskiner på netværket
 </programlisting>
 
 <para>
-Hvis post kun skal accepteres fra nogle af maskinerne på netværket,
-skrives adresserne på de enkelte godkendte maskiner. Alternativt kan
-man tillade alle maskiner i eget domæne at være "relay"-maskine ved at
-tilføje <filename>FEATURE(`relay_entire_domain`)</filename> i
-<filename>/etc/sendmail.mc</filename> og derefter køre <command>m4
-/etc/sendmail.mc /etc/sendmail.cf</command>. Bemærk, at man skal have
+Hvis post kun skal accepteres fra nogle af maskinerne pÃ¥ netvÃ¦rket,
+skrives adresserne pÃ¥ de enkelte godkendte maskiner. Alternativt kan
+man tillade alle maskiner i eget domÃ¦ne at vÃ¦re "relay"-maskine ved at
+tilfÃ¸je <filename>FEATURE(`relay_entire_domain`)</filename> i
+<filename>/etc/sendmail.mc</filename> og derefter kÃ¸re <command>m4
+/etc/sendmail.mc /etc/sendmail.cf</command>. BemÃ¦rk, at man skal have
 sendmail-cf-pakken installeret.
 </para>
 
 <para>
-At tilpasse <command>sendmail</command>'s opsætning er i øvrigt
-et emne, som kan fremkalde nervøse trækninger og koldsved hos store voksne
-systemadministratorer. Red Hat Linux sætter <command>sendmail</command>
-ganske fornuftigt op fra starten, så medmindre du er meget videbegærlig
-eller masochistisk anlagt, vil vi foreslå dig at glemme alt om opsætning af
-<command>sendmail</command>, indtil det er absolut nødvendigt.
+At tilpasse <command>sendmail</command>'s opsÃ¦tning er i Ã¸vrigt
+et emne, som kan fremkalde nervÃ¸se trÃ¦kninger og koldsved hos store voksne
+systemadministratorer. Red Hat Linux sÃ¦tter <command>sendmail</command>
+ganske fornuftigt op fra starten, sÃ¥ medmindre du er meget videbegÃ¦rlig
+eller masochistisk anlagt, vil vi foreslÃ¥ dig at glemme alt om opsÃ¦tning af
+<command>sendmail</command>, indtil det er absolut nÃ¸dvendigt.
 Du kan med fordel erstatte Sendmail med Postfix.
 Se <xref linkend="postfix"/>.
 </para>
@@ -70,9 +70,9 @@ Se <xref linkend="postfix"/>.
 
 <para>
 <application>Postfix</application> er en moderne MTA (mail transfer agent), dvs. et program til at 
-flytte e-post fra én postserver til en anden. I mange år var 
+flytte e-post fra Ã©n postserver til en anden. I mange Ã¥r var 
 <application>Sendmail</application> den MTA, alle brugte, men i de sidste 
-par år har det vist sig, at <application>Sendmail</application> ikke kan
+par Ã¥r har det vist sig, at <application>Sendmail</application> ikke kan
 leve op til de sikkerhedskrav, man typisk stiller.
 </para>
 
@@ -87,15 +87,15 @@ leve op til de sikkerhedskrav, man typisk stiller.
     </listitem>
     <listitem>
       <para>
-      Systemet er brudt ned i mange små delprogrammer. Hver komponent er 
+      Systemet er brudt ned i mange smÃ¥ delprogrammer. Hver komponent er 
       lettere at overskue, og det mindsker risikoen for fejl.
       </para>
     </listitem>
     <listitem>
       <para>
-      Langt de fleste komponenter behøver ikke at blive kørt som root,
+      Langt de fleste komponenter behÃ¸ver ikke at blive kÃ¸rt som root,
       hvilket betyder at evt. programmerings- eller konfigureringsfejl ikke
-      bliver nær så alvorlige.
+      bliver nÃ¦r sÃ¥ alvorlige.
       </para>
     </listitem>
   </itemizedlist>
@@ -105,14 +105,14 @@ leve op til de sikkerhedskrav, man typisk stiller.
 Mandrake Linux kommer med
 <application>Postfix</application> og
 <application>Sendmail</application>, og du kan under installationen
-vælge hvilken MTA, du vil bruge. Dette valg har du endnu ikke under
-Red Hat eller SuSE, og i det følgende vil vi antage at du har Red Hat
-kørende.
+vÃ¦lge hvilken MTA, du vil bruge. Dette valg har du endnu ikke under
+Red Hat eller SuSE, og i det fÃ¸lgende vil vi antage at du har Red Hat
+kÃ¸rende.
 </para>
 
 <para>
-Først skal du stoppe og afinstallere <application>sendmail</application> 
-inden du går i gang med <application>Postfix</application>. 
+FÃ¸rst skal du stoppe og afinstallere <application>sendmail</application> 
+inden du gÃ¥r i gang med <application>Postfix</application>. 
 </para>
 <indexterm>
  <primary>cd </primary>
@@ -137,7 +137,7 @@ Shutting down sendmail:                [ OK ]
 
 <para>
 Du er nu klar til at hente og installere
-<application>Postfix</application>. Find den på <ulink url="http://www.postfix.org/">http://www.postfix.org/</ulink> eller <ulink url="http://rpmfind.net">http://rpmfind.net</ulink>. Se efter en fil kaldet <filename>postfix-*.i386.rpm</filename>.
+<application>Postfix</application>. Find den pÃ¥ <ulink url="http://www.postfix.org/">http://www.postfix.org/</ulink> eller <ulink url="http://rpmfind.net">http://rpmfind.net</ulink>. Se efter en fil kaldet <filename>postfix-*.i386.rpm</filename>.
 </para>
 
 <para>
@@ -149,7 +149,7 @@ Efter du har hentet filen, skal du installere den.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>chkconfig, undersøger og indsætter nye funktioner i et runlevel </secondary>
+ <secondary>chkconfig, undersÃ¸ger og indsÃ¦tter nye funktioner i et runlevel </secondary>
 </indexterm>
 <screen>
 <prompt>[root@linus /root]#</prompt> <userinput>rpm -i postfix-1.1.7-1.i386.rpm</userinput>
@@ -170,15 +170,15 @@ Starting postfix: postfix-script: starting the Postfix mail system
 </screen>
 
 <para>
-Nu har du fået udskiftet <application>Sendmail</application> med 
+Nu har du fÃ¥et udskiftet <application>Sendmail</application> med 
 <application>Postfix</application>, og den nye MTA vil altid blive startet
-op, når du kører i runlevel 3 (den sidste kommandolinje).
+op, nÃ¥r du kÃ¸rer i runlevel 3 (den sidste kommandolinje).
 </para>
 
 <para>
-Postfix er god til at tilpasse sig til dit system og behøver sjældent
-nogen opsætning. Du skal dog sikre dig, at kommandoen hostname
-giver det korrekte navn på din maskine:
+Postfix er god til at tilpasse sig til dit system og behÃ¸ver sjÃ¦ldent
+nogen opsÃ¦tning. Du skal dog sikre dig, at kommandoen hostname
+giver det korrekte navn pÃ¥ din maskine:
 </para>
 
 <screen>
@@ -191,7 +191,7 @@ Navnet skal eksistere i DNS.
 </para>
 
 <para>
-Hvis du ikke kan sende email til root@linus.kongeh.dk, så se i
+Hvis du ikke kan sende email til root@linus.kongeh.dk, sÃ¥ se i
 <filename>/var/log/maillog</filename> eller
 <filename>/var/log/mail/*</filename>. Her skriver postfix hvis der er
 noget galt.
@@ -199,11 +199,11 @@ noget galt.
 
 
 <para>
-<emphasis>Tip:</emphasis> Typisk skal man sætte at man afleverer epost
+<emphasis>Tip:</emphasis> Typisk skal man sÃ¦tte at man afleverer epost
 til den SMTP-gateway ens internet-udbyder har (TDC har
-<filename>smtp.mail.dk</filename>). Dette gøres ved at udkommentere
+<filename>smtp.mail.dk</filename>). Dette gÃ¸res ved at udkommentere
 linjen med <literal>relayhost</literal> i filen
-<filename>/etc/postfix/main.cf</filename> og skrive navnet på
+<filename>/etc/postfix/main.cf</filename> og skrive navnet pÃ¥
 den server man anvender:
 </para>
 
@@ -217,32 +217,32 @@ relayhost = smtp.mail.dk
 
 <para>
 Postfix har hjemmesiden <ulink url="http://www.postfix.org/">www.postfix.org</ulink>,
-hvor der også er en god FAQ.
+hvor der ogsÃ¥ er en god FAQ.
 </para>
 
 <sect2 id="postfix-virtual">
-<title>Modtage e-mail for flere domæner samtidigt</title>
+<title>Modtage e-mail for flere domÃ¦ner samtidigt</title>
 <indexterm><primary>Postfix</primary><secondary>virtual</secondary></indexterm>
-<indexterm><primary>E-post</primary><secondary>skyggedomæner</secondary></indexterm>
+<indexterm><primary>E-post</primary><secondary>skyggedomÃ¦ner</secondary></indexterm>
 <indexterm><primary>/etc/postfix/virtual</primary></indexterm>
 <indexterm><primary>/etc/postfix/main.cf</primary></indexterm>
 <indexterm><primary>Stjerne-email</primary></indexterm>
 
 <!-- Vibber spurgte hvordan det der "virtual" virkede
-     - hun faldt vist i søvn. /chlor -->
+     - hun faldt vist i sÃ¸vn. /chlor -->
 
 <para>
-Postfix kan nemt sættes op til at modtage e-mail fra flere domæner samtidigt,
+Postfix kan nemt sÃ¦ttes op til at modtage e-mail fra flere domÃ¦ner samtidigt,
 og sende disse e-mails videre til flere forskellige steder.
 Filen der styre dette ligger i filen <filename>/etc/postfix/virtual</filename>,
 der er grundlaget for databasen <filename>/etc/postfix/virtual.db</filename>.
 </para>
 
 <para>
-Det første der skal sættes op, er at få Postfix til at bruge filen
-<filename>/etc/postfix/virtual</filename> til at slå domæner og 
+Det fÃ¸rste der skal sÃ¦ttes op, er at fÃ¥ Postfix til at bruge filen
+<filename>/etc/postfix/virtual</filename> til at slÃ¥ domÃ¦ner og 
 brugere op.
-I filen <filename>/etc/postfix/main.cf</filename> indsættes følgende
+I filen <filename>/etc/postfix/main.cf</filename> indsÃ¦ttes fÃ¸lgende
 linje:
 </para>
 
@@ -252,7 +252,7 @@ virtual_maps = hash:/etc/postfix/virtual
 </programlisting>
 
 <para>
-Og så lige den obligatoriske reload:
+Og sÃ¥ lige den obligatoriske reload:
 </para>
 
 <screen>
@@ -260,22 +260,22 @@ Og så lige den obligatoriske reload:
 </screen>
 
 <para>
-Postfix kan ved hjælp af koden <emphasis>hash:</emphasis> se
+Postfix kan ved hjÃ¦lp af koden <emphasis>hash:</emphasis> se
 at det er filen <filename>/etc/postfix/virtual.db</filename>
-der skal slås op i.
-Dette er en binær fil der skal genereres hver gang der sker
-ændringer i <filename>/etc/postfix/virtual</filename>.
+der skal slÃ¥s op i.
+Dette er en binÃ¦r fil der skal genereres hver gang der sker
+Ã¦ndringer i <filename>/etc/postfix/virtual</filename>.
 </para>
 
 <para>
-Herefter kan domæner oprettes i filen
+Herefter kan domÃ¦ner oprettes i filen
 <filename>/etc/postfix/virtual</filename>.
-For overskuelighedens skyld, er her først vist opsætning
-for eet domæne.
+For overskuelighedens skyld, er her fÃ¸rst vist opsÃ¦tning
+for eet domÃ¦ne.
 Der er kun e-mailadressen
 <emphasis>postmaster@eksempel.dk</emphasis>, og e-mail
 sendes til brugeren <emphasis>root</emphasis>, der har
-en konto lokalt på maskinen.
+en konto lokalt pÃ¥ maskinen.
 </para>
 
 <programlisting>
@@ -285,9 +285,9 @@ postmaster@eksempel.dk root
 </programlisting>
 
 <para>
-<filename>virtual</filename> kan nu afprøves ved at
+<filename>virtual</filename> kan nu afprÃ¸ves ved at
 kompile den til <filename>virtual.db</filename>,
-hvilket <emphasis>skal</emphasis> gøres hver gang der er ændret i <filename>virtual</filename>.
+hvilket <emphasis>skal</emphasis> gÃ¸res hver gang der er Ã¦ndret i <filename>virtual</filename>.
 </para>
 
 <screen>
@@ -295,16 +295,16 @@ hvilket <emphasis>skal</emphasis> gøres hver gang der er ændret i <filename>virt
 </screen>
 
 <para>
-Efter at have kompilet <filename>virtual</filename> kan man udføre
-en <emphasis>reload</emphasis> til postfix. Gør man ikke det, vil der
-gå ca. 1 minut inden postfix selv opdager at <filename>virtual.db</filename>
-er ændret, og så reloader denne.
+Efter at have kompilet <filename>virtual</filename> kan man udfÃ¸re
+en <emphasis>reload</emphasis> til postfix. GÃ¸r man ikke det, vil der
+gÃ¥ ca. 1 minut inden postfix selv opdager at <filename>virtual.db</filename>
+er Ã¦ndret, og sÃ¥ reloader denne.
 </para>
 
 <para>
-Hvis man gerne vil have at al anden mail end ovenstående,
+Hvis man gerne vil have at al anden mail end ovenstÃ¥ende,
 skal sendes til brugeren <emphasis>linus</emphasis>,
-tilføjes en ekstra linje hvor der ikke er noget user-name.
+tilfÃ¸jes en ekstra linje hvor der ikke er noget user-name.
 </para>
 
 <programlisting>
@@ -315,10 +315,10 @@ postmaster@eksempel.dk root
 </programlisting>
 
 <para>
-Mail kan også sendes videre til en helt anden bruger
-på en helt anden server.
+Mail kan ogsÃ¥ sendes videre til en helt anden bruger
+pÃ¥ en helt anden server.
 Herunder er brugeren <emphasis>abuse@eksempel.dk</emphasis>
-tilføjet, og sendes videre til et domæne udenfor serveren.
+tilfÃ¸jet, og sendes videre til et domÃ¦ne udenfor serveren.
 </para>
 
 <programlisting>
@@ -330,15 +330,15 @@ postmaster@eksempel.dk root
 </programlisting>
 
 <para>
-Når der skal tilføjes et domæne mere, skal
-der være en blank linje til næste blok.
-Herunder er der tilføjet domænet 
+NÃ¥r der skal tilfÃ¸jes et domÃ¦ne mere, skal
+der vÃ¦re en blank linje til nÃ¦ste blok.
+Herunder er der tilfÃ¸jet domÃ¦net 
 <emphasis>linux.dk</emphasis>.
-E-mailreglerne for disse to domæner er de samme,
-så al mail der måtte komme sendes blot videre
+E-mailreglerne for disse to domÃ¦ner er de samme,
+sÃ¥ al mail der mÃ¥tte komme sendes blot videre
 <emphasis>eksempel.dk</emphasis>.
 Mail til <emphasis>postmaster@linux.dk</emphasis> vil
-således blive sendt videre til <emphasis>root</emphasis>.
+sÃ¥ledes blive sendt videre til <emphasis>root</emphasis>.
 </para>
 
 <programlisting>
@@ -362,7 +362,7 @@ linux.dk anything
 <indexterm><primary>postlister</primary><secondary>mailman</secondary></indexterm>
 
 <para>
-En af de rigtig gode programmer til håndtering af postlister
+En af de rigtig gode programmer til hÃ¥ndtering af postlister
 er Mailman. Det kommer med grafisk administration via en webbrowser,
 kan lave mail&lt;-%gt;news gateway automatisk, email-arkiv og meget andet.
 </para>
@@ -370,33 +370,33 @@ kan lave mail&lt;-%gt;news gateway automatisk, email-arkiv og meget andet.
 <sect2 id="mailman-installation">
 <title>Installation af Mailman</title>
 <para>
-Installation af mailman fra RPM er ikke nødvendigvis det nemmeste. 
-Man kan hente kildeteksten og oversætte denne med standard udpak (tar xvzf), 
+Installation af mailman fra RPM er ikke nÃ¸dvendigvis det nemmeste. 
+Man kan hente kildeteksten og oversÃ¦tte denne med standard udpak (tar xvzf), 
 <command>./configure</command>, <command>make</command> og <command>make install</command>.
 </para>
 
 <para>
 Herved kommer man igennem et par skridt med at lave en "mailman"
 bruger og gruppe, lave kataloget
-<filename>/usr/local/mailman</filename> ejet af mailman:mailman, og det går ret nemt.
+<filename>/usr/local/mailman</filename> ejet af mailman:mailman, og det gÃ¥r ret nemt.
 </para>
 
 <para>
-På Mandrake skal mailman-pakken installeres og så er man ret tæt på at være klar. 
-Red Hat er ikke helt så nem &ndash; man de hemmelige tricks er forklaret i det følgende :)
+PÃ¥ Mandrake skal mailman-pakken installeres og sÃ¥ er man ret tÃ¦t pÃ¥ at vÃ¦re klar. 
+Red Hat er ikke helt sÃ¥ nem &ndash; man de hemmelige tricks er forklaret i det fÃ¸lgende :)
 </para>
 
 </sect2>
 
 <sect2 id="mailman-init">
-<title>Opsætning af Mailman</title>
+<title>OpsÃ¦tning af Mailman</title>
 
 <para>
-Følgende ting skal køres en gang for alle.
+FÃ¸lgende ting skal kÃ¸res en gang for alle.
 </para>
 
 <para>
-Find først programmet <command>mmsitepass</command>.
+Find fÃ¸rst programmet <command>mmsitepass</command>.
 </para>
 
 <screen>
@@ -405,12 +405,12 @@ Find først programmet <command>mmsitepass</command>.
 </screen>
 
 <para>
-Installerede du fra kildetekst, så brug <command>find / -name mmsitepass</command>.
+Installerede du fra kildetekst, sÃ¥ brug <command>find / -name mmsitepass</command>.
 </para>
 
 <para>
-I dette tilfælde er det <filename>/var/mailman/bin/mmsitepass</filename> som
-skal køres som root for at sættes postlisteserverens adgangskode.
+I dette tilfÃ¦lde er det <filename>/var/mailman/bin/mmsitepass</filename> som
+skal kÃ¸res som root for at sÃ¦ttes postlisteserverens adgangskode.
 </para>
 
 <screen>
@@ -419,12 +419,12 @@ New site password:
 </screen>
 
 <para>
-Angiv en god adgangskode som skal anvendes når der skal laves nye lister i det følgende!
+Angiv en god adgangskode som skal anvendes nÃ¥r der skal laves nye lister i det fÃ¸lgende!
 </para>
 
 <para>
-Hernæst skal man finde den standard opsætningsfil som mailman anvender
-til bl.a. at sætte internet-information.
+HernÃ¦st skal man finde den standard opsÃ¦tningsfil som mailman anvender
+til bl.a. at sÃ¦tte internet-information.
 </para>
 
 <screen>
@@ -433,12 +433,12 @@ til bl.a. at sætte internet-information.
 </screen>
 
 <para>
-Indsæt i denne fil URL-adressen på maskinens webserver 
+IndsÃ¦t i denne fil URL-adressen pÃ¥ maskinens webserver 
 som <literal>DEFAULT_URL_HOST</literal> og 
-domænenavnet for postserveren 
-står i <literal>DEFAULT_EMAIL_HOST</literal>. I eksemplet
-sættes lister op for LISTENAVN@hven.dk, hvor LISTENAVN kommer
-senere og www.hven.dk skal passe med at der er en web-server på
+domÃ¦nenavnet for postserveren 
+stÃ¥r i <literal>DEFAULT_EMAIL_HOST</literal>. I eksemplet
+sÃ¦ttes lister op for LISTENAVN@hven.dk, hvor LISTENAVN kommer
+senere og www.hven.dk skal passe med at der er en web-server pÃ¥
 http://www.hven.dk.
 </para>
 
@@ -448,9 +448,9 @@ DEFAULT_URL_HOST = 'www.hven.dk'
 </screen>
 
 <para>
-Det kan også være man bliver nødt til (nogle gange hos Red Hat), at
-eksplicit anføre brugerid og gruppe på mailman-brugeren. Er det bruger-ID nr 41
-og gruppe 42 (se <filename>/etc/passwd</filename>) så tilføj til <filename>mm_cfg.py</filename>.
+Det kan ogsÃ¥ vÃ¦re man bliver nÃ¸dt til (nogle gange hos Red Hat), at
+eksplicit anfÃ¸re brugerid og gruppe pÃ¥ mailman-brugeren. Er det bruger-ID nr 41
+og gruppe 42 (se <filename>/etc/passwd</filename>) sÃ¥ tilfÃ¸j til <filename>mm_cfg.py</filename>.
 </para>
 
 <screen>
@@ -460,7 +460,7 @@ MAILMAN_GID = 42
 
 
 <para>
-Anvender man postfix som MTA, så skriv også i <filename>mm_cfg.py</filename>
+Anvender man postfix som MTA, sÃ¥ skriv ogsÃ¥ i <filename>mm_cfg.py</filename>
 </para>
 
 <screen>
@@ -475,21 +475,21 @@ Sikr dig at <command>/usr/sbin/postalias</command> og <command>/usr/sbin/postmap
 </para>
 
 <para>
-Der er masser af gode forklaringer på hvordan mailman fungerer internt
+Der er masser af gode forklaringer pÃ¥ hvordan mailman fungerer internt
 i filen <filename>Defaults.py</filename> som ligger samme sted som
-<filename>mm_cfg_py</filename>, dvs. det kan være interessant at læse
-den igennem på et tidspunkt. Generelle opsætninger for alle lister på
-maskinen bør ske igennem denne fil.  
+<filename>mm_cfg_py</filename>, dvs. det kan vÃ¦re interessant at lÃ¦se
+den igennem pÃ¥ et tidspunkt. Generelle opsÃ¦tninger for alle lister pÃ¥
+maskinen bÃ¸r ske igennem denne fil.  
 </para>
 
 <para>
-På Red Hat skal man nu tjeke at <filename>mailman</filename>-scriptet kan startes.
-Kør <command>/etc/init.d/mailman start</command> og se om det går godt. Mandrake har
+PÃ¥ Red Hat skal man nu tjeke at <filename>mailman</filename>-scriptet kan startes.
+KÃ¸r <command>/etc/init.d/mailman start</command> og se om det gÃ¥r godt. Mandrake har
 ikke dette script. 
 </para>
 
 <para>
-På Red Hat skal man køre følgende en gang for alle for at mailman startes sammen med maskinen
+PÃ¥ Red Hat skal man kÃ¸re fÃ¸lgende en gang for alle for at mailman startes sammen med maskinen
 </para>
 
 <screen>
@@ -499,16 +499,16 @@ mailman         0:off   1:off   2:off   3:on    4:off   5:on   6:off
 </screen>
 
 <para>
-Dette starter mailman (kun nødvendigt på Red Hat) i runlevel 3 og 5 (se <xref linkend="runlevel"/>).
+Dette starter mailman (kun nÃ¸dvendigt pÃ¥ Red Hat) i runlevel 3 og 5 (se <xref linkend="runlevel"/>).
 </para>
 
 <para>
 Det smarte med Mailman er at man kan administere systemet via en
-web-browser. Derfor skal man nu tilføje <filename>/mailman/</filename>
+web-browser. Derfor skal man nu tilfÃ¸je <filename>/mailman/</filename>
 (webadministration) og <filename>/pipermail/</filename> (postarkiv)
 til Apache webserveren. Der er en fil
-<filename>/etc/httpd/conf/mailman.conf</filename>, som følger ned
-Mailman i RPM-form, som nu skal tilføjes i Apaches <filename>Vhosts.conf</filename> eller 
+<filename>/etc/httpd/conf/mailman.conf</filename>, som fÃ¸lger ned
+Mailman i RPM-form, som nu skal tilfÃ¸jes i Apaches <filename>Vhosts.conf</filename> eller 
 <filename>httpd.conf</filename> under den webserver man anvender i forvejen.
 Erstat <filename>/var/mailman/</filename> med den korrekte sti hvis du ikke
 anvender Red Hat RPM-pakker.
@@ -541,13 +541,13 @@ Alias /pipermail/ /var/mailman/archives/public/
 <sect2 id="mailman-liste-opret">
 <title>Oprette postlister i Mailman</title>
 <para>
-For at oprette en enkelt post-liste så kan man enten lade mailman
-automatisk generere nye post-aliaser eller man kan køre det mere 
-manuelt. I det følgende er det vist manuelt.
+For at oprette en enkelt post-liste sÃ¥ kan man enten lade mailman
+automatisk generere nye post-aliaser eller man kan kÃ¸re det mere 
+manuelt. I det fÃ¸lgende er det vist manuelt.
 </para>
 
 <para>
-Find først kommandoen til at lave en ny liste <command>newlist</command>.
+Find fÃ¸rst kommandoen til at lave en ny liste <command>newlist</command>.
 </para>
 
 
@@ -580,7 +580,7 @@ Vil man senere slette en liste helt (inkl. mailarkiv)
 </screen>
 
 <para>
-Den første liste man skal oprette er listen "mailman", der muligvis allerede optræder i 
+Den fÃ¸rste liste man skal oprette er listen "mailman", der muligvis allerede optrÃ¦der i 
 <filename>/etc/aliases</filename> &ndash; slet dette og lav en "mailman"-liste i stedet. Erstat
 admin@hven.dk med systemadministratorernes post-konto.
 </para>
@@ -611,40 +611,40 @@ xx
 <indexterm><primary>epost-server</primary><secondary>exim</secondary></indexterm>
 <indexterm><primary>email-server</primary><secondary>exim</secondary></indexterm>
 <para>
-Exim er en mailserver som er nem at sætte op til almindeligt brug. Den har
-også en del avancerede funktioner, som for eksempel indbygget filter og
-vacation-program. Og så skulle den iøvrigt være sendmail-kompatibel.
+Exim er en mailserver som er nem at sÃ¦tte op til almindeligt brug. Den har
+ogsÃ¥ en del avancerede funktioner, som for eksempel indbygget filter og
+vacation-program. Og sÃ¥ skulle den iÃ¸vrigt vÃ¦re sendmail-kompatibel.
 </para>
 
 <para>
 Man finder den her: <ulink
 url="http://www.exim.org">http://www.exim.org</ulink>. Her er der dog
-ingen rpm-filer, men dem kan man finde på <ulink
+ingen rpm-filer, men dem kan man finde pÃ¥ <ulink
 url="http://rpmfind.net">http://rpmfind.net</ulink>. 
 </para>
 
 <para>
-Der følger desværre ikke nogen fil med til automatisk at lave en rpm-fil, så
-hvis man selv vil lave den, så er det vigtigt at følge
+Der fÃ¸lger desvÃ¦rre ikke nogen fil med til automatisk at lave en rpm-fil, sÃ¥
+hvis man selv vil lave den, sÃ¥ er det vigtigt at fÃ¸lge
 installationsvejledningen.
 </para>
 
 <para>
-Exim styres fra 1 stor opsætningsfil, som ligger i
+Exim styres fra 1 stor opsÃ¦tningsfil, som ligger i
 <filename>/etc</filename> eller for SuSE 9.0 i 
-<filename>/etc/exim/</filename>.  Opsætningsfilen er indelt i 7 dele, og
-det er normalt ikke nødvendigt at ændre i den for at få et virksomt
+<filename>/etc/exim/</filename>.  OpsÃ¦tningsfilen er indelt i 7 dele, og
+det er normalt ikke nÃ¸dvendigt at Ã¦ndre i den for at fÃ¥ et virksomt
 system, da det enten er noget som er defineret i systemet, eller fordi
-standard-værdierne er fornuftigt valgt.
+standard-vÃ¦rdierne er fornuftigt valgt.
 </para>
 
 <para>
 Dog skal man sikre sig at kommandoen hostname giver det rigtige navn. Ellers
-skal man rette det i opsætningsfilen.
+skal man rette det i opsÃ¦tningsfilen.
 </para>
 
 <para>
-Her er de 7 dele af opsætningsfilen kort beskrevet: 
+Her er de 7 dele af opsÃ¦tningsfilen kort beskrevet: 
 </para>
 
 
@@ -652,8 +652,8 @@ Her er de 7 dele af opsætningsfilen kort beskrevet:
 <listitem>
  <para>
 <emphasis>Main configuration</emphasis>:
-     Her indstiller man værtnavn, videresendelse mm. Dette er det eneste
-     sted det kan være nødvendigt at rette noget for at få det til at virke.
+     Her indstiller man vÃ¦rtnavn, videresendelse mm. Dette er det eneste
+     sted det kan vÃ¦re nÃ¸dvendigt at rette noget for at fÃ¥ det til at virke.
  </para>
 </listitem>
 <listitem> 
@@ -666,28 +666,28 @@ Her er de 7 dele af opsætningsfilen kort beskrevet:
 <listitem> 
  <para>
 <emphasis>Directors configuration</emphasis>:
-     Når en mail skal afleveres lokalt, er det her man definerer hvad der
-     skal ske med den.  Man kan for eksempel indsætte et kald af en virusskanner, og
-     det er også her man kan bestemme om .forward filer skal bruges. Herfra
+     NÃ¥r en mail skal afleveres lokalt, er det her man definerer hvad der
+     skal ske med den.  Man kan for eksempel indsÃ¦tte et kald af en virusskanner, og
+     det er ogsÃ¥ her man kan bestemme om .forward filer skal bruges. Herfra
      kalder man en transport som blev defineret ovenfor.
  </para>
 </listitem>
 <listitem> 
  <para>
 <emphasis>Routers configuration</emphasis>:
-     Dette er opsætning af hvordan post skal sendes videre til andre
-     maskiner. Man kan også her skanne for virus, men i modsætning til
-     ovenstående, så forhindrer man her virus i at komme ud, og ikke ind.
-     Også her kaldes en transport.
+     Dette er opsÃ¦tning af hvordan post skal sendes videre til andre
+     maskiner. Man kan ogsÃ¥ her skanne for virus, men i modsÃ¦tning til
+     ovenstÃ¥ende, sÃ¥ forhindrer man her virus i at komme ud, og ikke ind.
+     OgsÃ¥ her kaldes en transport.
  </para>
 </listitem>
 <listitem> 
  <para>
 <emphasis>Retry configuration</emphasis>:
-     Her indstiller man timeoutværdier, både for levering af post til andre
-     maskiner, men også lokalt, som hvis en virus-skanner er gået død, og
-     det er et krav at al post skal skannes. Man kan for eksempel også lade nogen
-     domæner have en meget lang timeout, mens man kan sætte den til meget
+     Her indstiller man timeoutvÃ¦rdier, bÃ¥de for levering af post til andre
+     maskiner, men ogsÃ¥ lokalt, som hvis en virus-skanner er gÃ¥et dÃ¸d, og
+     det er et krav at al post skal skannes. Man kan for eksempel ogsÃ¥ lade nogen
+     domÃ¦ner have en meget lang timeout, mens man kan sÃ¦tte den til meget
      lidt for andre.
  </para>
 </listitem>
@@ -695,15 +695,15 @@ Her er de 7 dele af opsætningsfilen kort beskrevet:
  <para>
 <emphasis>Rewrite configuration</emphasis>:
      Man kan her lave regler til at omskrive emailadresser, men dette skal man
-     normalt holde sig fra at gøre, medmindre man ved hvad man gør, og har en
-     god grund til dette. At gøre dette bliver af nogen betragtet som noget 
-     forbudt, og det er kun nødvendigt i sjældne og specielle tilfælde.     
+     normalt holde sig fra at gÃ¸re, medmindre man ved hvad man gÃ¸r, og har en
+     god grund til dette. At gÃ¸re dette bliver af nogen betragtet som noget 
+     forbudt, og det er kun nÃ¸dvendigt i sjÃ¦ldne og specielle tilfÃ¦lde.     
  </para>
 </listitem>
 <listitem> 
  <para>
 <emphasis>Authentication configuration</emphasis>:
-     Under authentication har man mulighed for at åbne for relay af post fra
+     Under authentication har man mulighed for at Ã¥bne for relay af post fra
      specifikke maskiner. Det sker ved at man skal identificere sig over for
      mailserveren. Dette bliver defineret i denne del.
  </para>
@@ -714,12 +714,12 @@ Her er de 7 dele af opsætningsfilen kort beskrevet:
 <title>Brug af procmail under exim</title>
 
 <para>
-Hvis procmail altid skal bruges til at afleve posten til indbakken, så skal
-dette rettes til i opsætningsfilen.
+Hvis procmail altid skal bruges til at afleve posten til indbakken, sÃ¥ skal
+dette rettes til i opsÃ¦tningsfilen.
 </para>
 
 <para>
-Følgende skal sættes ind i <filename>exim.conf</filename> under <literal>Transports configuration</literal>:
+FÃ¸lgende skal sÃ¦ttes ind i <filename>exim.conf</filename> under <literal>Transports configuration</literal>:
 </para>
 
 <screen>
@@ -738,7 +738,7 @@ procmail_pipe:
 </screen>
 
 <para>
-Og under directors skal følgende indsættes lige før linjen med <literal>localuser</literal>:
+Og under directors skal fÃ¸lgende indsÃ¦ttes lige fÃ¸r linjen med <literal>localuser</literal>:
 </para>
 
 <screen>
@@ -752,21 +752,21 @@ procmail:
 <title>Brug af Mailman listmanager sammen med Exim</title>
 <indexterm><primary>mailman</primary></indexterm>
 <para>
-Når man bruger Exim og Mailman sammen, så behøver man ikke at tænke på at
-rette forskellige alias-adresser til når man opretter og nedlægger lister.
-Dette sker automatisk, men kræver at man retter lidt i 
+NÃ¥r man bruger Exim og Mailman sammen, sÃ¥ behÃ¸ver man ikke at tÃ¦nke pÃ¥ at
+rette forskellige alias-adresser til nÃ¥r man opretter og nedlÃ¦gger lister.
+Dette sker automatisk, men krÃ¦ver at man retter lidt i 
 <filename>exim.conf</filename>.
 </para>
 
 <para>
-Hvis man ikke vil dette, så skal man i stedet for huske at rette i
+Hvis man ikke vil dette, sÃ¥ skal man i stedet for huske at rette i
 filen <filename>/etc/alias</filename> hver gang man opretter eller
-nedlægger en liste.
+nedlÃ¦gger en liste.
 </para>
 
 <para>
-I afsnittet Main configuration indsætter man følgende lige før linjen hvor
-der står "end":
+I afsnittet Main configuration indsÃ¦tter man fÃ¸lgende lige fÃ¸r linjen hvor
+der stÃ¥r "end":
 </para>
 
 <screen>
@@ -779,11 +779,11 @@ MAILMAN_GID=mail
 </screen>
 
 <para>
-Disse rettes selvfølgelig til, så de passer med installationen.
+Disse rettes selvfÃ¸lgelig til, sÃ¥ de passer med installationen.
 </para>
 
 <para>
-Under Transports configuration skal man indsætte:
+Under Transports configuration skal man indsÃ¦tte:
 </para>
 
 <screen>
@@ -815,12 +815,12 @@ list_admin_transport:
 </screen>
 
 <para>
-Dette skal igen være før "end"
+Dette skal igen vÃ¦re fÃ¸r "end"
 </para>
 
 <para>
-Og endelig under Directors configuration skal følgende indsættes (det _skal_
-stå lige før "end", da det er de sidste regler som skal kontrolleres).
+Og endelig under Directors configuration skal fÃ¸lgende indsÃ¦ttes (det _skal_
+stÃ¥ lige fÃ¸r "end", da det er de sidste regler som skal kontrolleres).
 </para>
 
 <screen>
@@ -859,8 +859,8 @@ list_director:
 </screen>
 
 <para>
-Herefter kan man blot oprette og nedlægge lister uden at bekynre sig om at
-sørge for at posten bliver sendt til Mailman programmet.
+Herefter kan man blot oprette og nedlÃ¦gge lister uden at bekynre sig om at
+sÃ¸rge for at posten bliver sendt til Mailman programmet.
 </para>
 </sect2>
 </sect1>

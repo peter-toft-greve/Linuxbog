@@ -1,55 +1,55 @@
 <!-- $Id$ -->
 <chapter id="linux-histoie">
-<title>Linux: Igår, i dag og i morgen</title>
+<title>Linux: IgÃ¥r, i dag og i morgen</title>
 
 <para>
-Der foregik en revolution på pc-fronten i slutningen af
+Der foregik en revolution pÃ¥ pc-fronten i slutningen af
 90'erne, hvor maskinerne blev bedre og hurtigere. Man kan i dag
-få farveskærme, hukommelse og store, store harddiske til rimelige
-priser, og det smitter selvfølgelig af på brugernes ønsker om
+fÃ¥ farveskÃ¦rme, hukommelse og store, store harddiske til rimelige
+priser, og det smitter selvfÃ¸lgelig af pÃ¥ brugernes Ã¸nsker om
 programmer.
 </para>
 
 <para>
-Den ny teknik har gjort en genration af software forældet, DOS er
-(næsten) død og er blevet afløst af nye styresystemer - i høj grad af
-Windows NT-5.1 og nyere. På Unix-fronten er Linux på vej frem med stor
+Den ny teknik har gjort en genration af software forÃ¦ldet, DOS er
+(nÃ¦sten) dÃ¸d og er blevet aflÃ¸st af nye styresystemer - i hÃ¸j grad af
+Windows NT-5.1 og nyere. PÃ¥ Unix-fronten er Linux pÃ¥ vej frem med stor
 hastighed.  Analyser af computermarkedet viser, at antallet af
-Linux-installationer fordobles hvert år (i 1998 havde Linux en vækst
-på 212% og i 1999 166% i følge analysevirksomheden IDC). I industrien
-<indexterm><primary>Linux</primary><secondary>vækst</secondary></indexterm>
-og i forretningsverdenen er det i øjeblikket umiddelbart kun Windows NT og
+Linux-installationer fordobles hvert Ã¥r (i 1998 havde Linux en vÃ¦kst
+pÃ¥ 212% og i 1999 166% i fÃ¸lge analysevirksomheden IDC). I industrien
+<indexterm><primary>Linux</primary><secondary>vÃ¦kst</secondary></indexterm>
+og i forretningsverdenen er det i Ã¸jeblikket umiddelbart kun Windows NT og
 Linux, der har fremgang.  Linux er derfor et system, som i
-styrke og antal installationer må tages seriøst af alle. Mange oplever
-det også som et frisk pust og et reelt alternativ til Microsofts
+styrke og antal installationer mÃ¥ tages seriÃ¸st af alle. Mange oplever
+det ogsÃ¥ som et frisk pust og et reelt alternativ til Microsofts
 monopollignende status. Linux er den mest anvendte <glossterm
 linkend="def-itplatform-platform">platform</glossterm> til ftp-, news- og
-webserver.  Der er nu ca. tre gange så mange webservere (60%), som
-kører den fri webserver Apache i forhold til Microsoft Information
-Server. En stor del af Apache webserverne kører Linux.
+webserver.  Der er nu ca. tre gange sÃ¥ mange webservere (60%), som
+kÃ¸rer den fri webserver Apache i forhold til Microsoft Information
+Server. En stor del af Apache webserverne kÃ¸rer Linux.
 <indexterm><primary>ftp-server</primary></indexterm>
 <indexterm><primary>news-server</primary></indexterm>
 <indexterm><primary>web-server</primary></indexterm>
-<indexterm><primary>Linux vækst</primary></indexterm>
+<indexterm><primary>Linux vÃ¦kst</primary></indexterm>
 </para>
 
 <para>
-Der kan være mange grunde til, at du kan have glæde af Linux. Her er 
+Der kan vÃ¦re mange grunde til, at du kan have glÃ¦de af Linux. Her er 
 nogle af dem:
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
 
 <listitem>
-<para>Linux er et reelt alternativ til andre systemer - såsom Windows NT og
-2000. Alle undersøgelser peger på, at Linux er på vej frem - og i et
-forrygende tempo. Næsten 70 millioner bruger i dag Linux på deres pc.
+<para>Linux er et reelt alternativ til andre systemer - sÃ¥som Windows NT og
+2000. Alle undersÃ¸gelser peger pÃ¥, at Linux er pÃ¥ vej frem - og i et
+forrygende tempo. NÃ¦sten 70 millioner bruger i dag Linux pÃ¥ deres pc.
 </para>
 </listitem>
 
 <listitem>
-<para>Linux er stabilt og har været stabilt i flere år på trods af et
-ekstremt højt udviklingstempo.
+<para>Linux er stabilt og har vÃ¦ret stabilt i flere Ã¥r pÃ¥ trods af et
+ekstremt hÃ¸jt udviklingstempo.
 </para>
 </listitem>
 
@@ -57,21 +57,21 @@ ekstremt højt udviklingstempo.
 <para>
 For en <glossterm
 linkend="def-itplatform-systemadministrator">systemadministrator</glossterm> er
-Linux suverænt, da det er nemt at vedligeholde.
+Linux suverÃ¦nt, da det er nemt at vedligeholde.
 </para>
 </listitem>
 
 <listitem>
-<para>Vil du lære, hvordan netværk, oversættere, brandmure
+<para>Vil du lÃ¦re, hvordan netvÃ¦rk, oversÃ¦ttere, brandmure
 (eng. firewall), 
 <glossterm linkend="def-itplatform-CGI">CGI-programmer</glossterm>, 
 <glossterm linkend="def-itplatform-PHP">PHP</glossterm>, 
 <glossterm linkend="def-itplatform-Java">Java</glossterm>, 
 webservere osv. virker, er Linux perfekt. 
-Du har endda kildeteksten til programmerne, så du kan pille i
+Du har endda kildeteksten til programmerne, sÃ¥ du kan pille i
 dem alle, rette fejl eller 
 <glossterm linkend="def-itplatform-implementere">implementere</glossterm> 
-netop den funktion, du går og mangler.  
+netop den funktion, du gÃ¥r og mangler.  
 <indexterm><primary>CGI</primary></indexterm>
 <indexterm><primary>PHP</primary><secondary>intro</secondary></indexterm>
 <indexterm><primary>Java</primary></indexterm>
@@ -79,17 +79,17 @@ netop den funktion, du går og mangler.
 </listitem>
 
 <listitem>
-<para>Linux kan gøres sikkert. Du kan kun rode med systemet, hvis du er
-systemadministrator. Som almindelig bruger kan du kun ødelægge dine
-egne ting og ikke de generelle opsætningsfiler.</para>
+<para>Linux kan gÃ¸res sikkert. Du kan kun rode med systemet, hvis du er
+systemadministrator. Som almindelig bruger kan du kun Ã¸delÃ¦gge dine
+egne ting og ikke de generelle opsÃ¦tningsfiler.</para>
 </listitem>
 
 <listitem>
 <para>
 Opdateringer bliver offentliggjort kort tid efter at sikkerhedshuller
 bliver fundet. Dette er hurtigere end den tid mange computer-firmaer som
-f.eks. Microsoft skal bruge for at finde og løse tilsvarende sikkerhedsfejl. Ligeledes
-er det tydeligt hvad en sikkerhedsopdatering gør. Man laver ikke en
+f.eks. Microsoft skal bruge for at finde og lÃ¸se tilsvarende sikkerhedsfejl. Ligeledes
+er det tydeligt hvad en sikkerhedsopdatering gÃ¸r. Man laver ikke en
 <glossterm linkend="def-itplatform-service-pack">"service pack"</glossterm>, der
 kan have en masse ukendte sideeffekter.
 </para>
@@ -97,8 +97,8 @@ kan have en masse ukendte sideeffekter.
 
 <listitem>
 <para>
-Linux er højtydende og kræver ikke megen RAM eller CPU-kraft, men det er
-alligevel en del bedre til at køre flere programmer sideløbende (engelsk:
+Linux er hÃ¸jtydende og krÃ¦ver ikke megen RAM eller CPU-kraft, men det er
+alligevel en del bedre til at kÃ¸re flere programmer sidelÃ¸bende (engelsk:
 <glossterm linkend="def-itplatform-multitasking">multitasking</glossterm>) end
 f.eks. Windows 95/98 og NT/2000.
 <indexterm><primary>Multitasking</primary></indexterm>
@@ -108,31 +108,31 @@ f.eks. Windows 95/98 og NT/2000.
 
 <listitem>
 <para>Linux er en god udviklingsplatform. Installerer du en 
-Linux-distribution, har du med det samme alle de værktøjer, du 
-behøver til at udvikle softwareløsninger; blandt andet
+Linux-distribution, har du med det samme alle de vÃ¦rktÃ¸jer, du 
+behÃ¸ver til at udvikle softwarelÃ¸sninger; blandt andet
 C, C++, Fortran, Java, CGI, PHP, HTML og SQL.
 </para>
 </listitem>
 
 <listitem>
-<para>Linux er en god server - også for andre systemer. Du kan nemt
-bruge en ældre pc som kraftig server for et netværk bestående
+<para>Linux er en god server - ogsÃ¥ for andre systemer. Du kan nemt
+bruge en Ã¦ldre pc som kraftig server for et netvÃ¦rk bestÃ¥ende
 af Unix, Windows, Mac og Novell Netware.
 </para>
 </listitem>
 
 <listitem>
-<para>Linux har både gratis og kommerciel support. Der er allerede nu en
-række konsulenter og flere store velanskrevne firmaer i
+<para>Linux har bÃ¥de gratis og kommerciel support. Der er allerede nu en
+rÃ¦kke konsulenter og flere store velanskrevne firmaer i
 Danmark, som tilbyder professionel support.
 </para>
 </listitem>
 
 
 <listitem>
-<para>En Linux-maskine kan du gøre til, hvad du vil. Skal den kun kunne
-anvendes til få ting og være ekstremt sikker,
-kan den sættes op til det. Skal den kunne håndtere post, være webserver,
+<para>En Linux-maskine kan du gÃ¸re til, hvad du vil. Skal den kun kunne
+anvendes til fÃ¥ ting og vÃ¦re ekstremt sikker,
+kan den sÃ¦ttes op til det. Skal den kunne hÃ¥ndtere post, vÃ¦re webserver,
 newsserver, ftp-server, filserver for Windows-klienter og andet -
 samtidigt - kan den det.
 </para>
@@ -141,17 +141,17 @@ samtidigt - kan den det.
 
 <listitem>
 <para>
-Udvikling af Linux-programmer sker i et meget højt tempo. Der kommer
+Udvikling af Linux-programmer sker i et meget hÃ¸jt tempo. Der kommer
 dagligt mange nye udgaver af Linux-programmer, og mange store firmaer
-understøtter nu officielt Linux - bl.a. Intel, SUN, Corel, IBM, DELL og
+understÃ¸tter nu officielt Linux - bl.a. Intel, SUN, Corel, IBM, DELL og
 Oracle.
 </para>
 </listitem>
 
 <listitem>
-<para>Linux er virkelig gennemtænkt. Du vil meget sjældent opleve
-frustrationen over, at systemet har en underlig fejl, som du bare må
-leve med (f.eks. at maskinen fryser tilfældigt). Software er generelt
+<para>Linux er virkelig gennemtÃ¦nkt. Du vil meget sjÃ¦ldent opleve
+frustrationen over, at systemet har en underlig fejl, som du bare mÃ¥
+leve med (f.eks. at maskinen fryser tilfÃ¦ldigt). Software er generelt
 skrevet med stor omtanke, er gennemarbejdet og har stor
 funktionalitet.
 </para>
@@ -172,17 +172,17 @@ funktionalitet.
 </figure>
 
 <para>
-Hele projektet tog sin begyndelse på Helsinki Universitet i Finland omkring
-1990.  Linus Torvalds tog et Unix-kursus på universitetet. Da han ikke havde
-råd til at købe en kommerciel Unix, valgte han at bruge Minix. Minix er
+Hele projektet tog sin begyndelse pÃ¥ Helsinki Universitet i Finland omkring
+1990.  Linus Torvalds tog et Unix-kursus pÃ¥ universitetet. Da han ikke havde
+rÃ¥d til at kÃ¸be en kommerciel Unix, valgte han at bruge Minix. Minix er
 skrevet af professor Andrew S. Tanenbaum ved Vrije Universitetet i
 Holland. Kildeteksten 
 til dette system fulgte med, men Linus var ikke tilfreds med det - hverken
 design eller ydelse. Hans projekt, som den
 <glossterm linkend="def-itplatform-hacker">hacker</glossterm> han jo er, gik
-derfor ud på at lave en bedre Minix end Minix. I øvrigt ville Linus
-først have kaldt det for 
-<!-- CS: I følge Linux FAQ skriver Linus, at det oprindeligt hed Freax -->
+derfor ud pÃ¥ at lave en bedre Minix end Minix. I Ã¸vrigt ville Linus
+fÃ¸rst have kaldt det for 
+<!-- CS: I fÃ¸lge Linux FAQ skriver Linus, at det oprindeligt hed Freax -->
 Freax, en kombination af free, freak og det obligatoriske x i Unix-verdenen, 
 fordi han syntes at arbejdstitlen Linux var lidt for egocentreret. Men Ari Lemmke, 
 som administrerede ftp-serveren, hvorfra Linus
@@ -194,81 +194,81 @@ offentliggjorde systemet syntes, at arbejdstitlen Linux var bedre.
 </para>
 
 <para>
-I modsætning til andre var Linus visionær og havde en god timing. Den
-25. august 1991 indbød han gennem en nyhedsgruppe på det meget spæde
+I modsÃ¦tning til andre var Linus visionÃ¦r og havde en god timing. Den
+25. august 1991 indbÃ¸d han gennem en nyhedsgruppe pÃ¥ det meget spÃ¦de
 internet andre til at deltage i projektet. Han overdrev ikke om, hvad
 han havde lavet indtil da: "...it will probably never support anything
-other than AT-harddisks" (Det vil sikkert aldrig understøtte andet 
+other than AT-harddisks" (Det vil sikkert aldrig understÃ¸tte andet 
 end AT-harddiske). 
 </para>
 
 <para>
-Kendetegnet for det nye Linux-projekt var, at det skulle være et frit
+Kendetegnet for det nye Linux-projekt var, at det skulle vÃ¦re et frit
 Unix-lignende styresystem til Intel 80386 maskiner, og at enhver skulle
-have lov til at arbejde med kildeteksten og lave tilføjelser. Hvis andres
-tilføjelser til kildeteksten gjorde, at Linux virkede bedre, blev en
-ny version af Linux frigivet med tilføjelserne.
+have lov til at arbejde med kildeteksten og lave tilfÃ¸jelser. Hvis andres
+tilfÃ¸jelser til kildeteksten gjorde, at Linux virkede bedre, blev en
+ny version af Linux frigivet med tilfÃ¸jelserne.
 </para>
 
 <para>
 Linux version 0.01, der blev frigivet 17. september 1991, kunne
-oversættes på en Minix-maskine og var ikke andet end et stykke
-legetøj. Tingene tog dog hurtigt fart: 5. oktober 1991 blev Linux version 0.02
+oversÃ¦ttes pÃ¥ en Minix-maskine og var ikke andet end et stykke
+legetÃ¸j. Tingene tog dog hurtigt fart: 5. oktober 1991 blev Linux version 0.02
  annonceret - en kommandofortolker (BASH) og en frit
-tilgængelig C-oversætter (GNU-projektets <command>gcc</command>) kørte, men
+tilgÃ¦ngelig C-oversÃ¦tter (GNU-projektets <command>gcc</command>) kÃ¸rte, men
 ikke meget
-mere. Linux var stadig afhængig af Minix, og Linus' vurdering var på
+mere. Linux var stadig afhÃ¦ngig af Minix, og Linus' vurdering var pÃ¥
 det tidspunkt, at det nok mest var et hobbyprojekt, da Linus
 forventede, at en anden fri Unix - med navnet
 <emphasis>HURD</emphasis> - snart ville blive frigivet. HURD skulle
-være bedre designet end Linux, men er i skrivende stund stadig ikke
+vÃ¦re bedre designet end Linux, men er i skrivende stund stadig ikke
 klar til almindelig brug! Mottoet er tilsyneladende: "Den, der venter 
-på noget godt, må selv tage fat, hvis man ikke vil vente for længe." Tænk 
-hvis Linus også havde ventet...
-I mellemtiden har historien vist, at Linux var værd at satse på.
+pÃ¥ noget godt, mÃ¥ selv tage fat, hvis man ikke vil vente for lÃ¦nge." TÃ¦nk 
+hvis Linus ogsÃ¥ havde ventet...
+I mellemtiden har historien vist, at Linux var vÃ¦rd at satse pÃ¥.
 </para>
 
 <para>
-Kort før julen 1991 blev version 0.11 frigivet, og nu var
-Linux et selvstændigt system. Minix var ikke længere nødvendig. På det
+Kort fÃ¸r julen 1991 blev version 0.11 frigivet, og nu var
+Linux et selvstÃ¦ndigt system. Minix var ikke lÃ¦ngere nÃ¸dvendig. PÃ¥ det
 tidspunkt blev der frigivet nye versioner ca. hver 14. dag eller oftere.
 Kernen var hverken fejlfri eller fuldt udviklet. Det var virkelig et
-system fra dengang, hvor "Mænd var mænd og skrev deres egne
+system fra dengang, hvor "MÃ¦nd var mÃ¦nd og skrev deres egne
 enhedsdrivere" - citat Linus Torvalds.
 </para>
 
 <para>
 Derefter gik det slag i slag under dygtig ledelse af Linus
-selv. Allerede to år senere havde Linux virkelig taget form. Der var
-allerede på det tidspunkt gratis Linux-distributioner til rådighed på
-internettet. På den måde kunne man nu installere styresystemet, et hav
-af Unix-værktøjer, LaTeX (til at skrive rapporter) samt oversættere til
-Pascal, C og C++. X-vinduesystemet kørte næsten
-stabilt. Selve kernen nåede 13. marts 1994 den magiske
-version 1.00, som var det første stabile mål. Siden hen er
+selv. Allerede to Ã¥r senere havde Linux virkelig taget form. Der var
+allerede pÃ¥ det tidspunkt gratis Linux-distributioner til rÃ¥dighed pÃ¥
+internettet. PÃ¥ den mÃ¥de kunne man nu installere styresystemet, et hav
+af Unix-vÃ¦rktÃ¸jer, LaTeX (til at skrive rapporter) samt oversÃ¦ttere til
+Pascal, C og C++. X-vinduesystemet kÃ¸rte nÃ¦sten
+stabilt. Selve kernen nÃ¥ede 13. marts 1994 den magiske
+version 1.00, som var det fÃ¸rste stabile mÃ¥l. Siden hen er
 udviklingstempoet mangedoblet, og nye kerner kommer ofte. 
-Normalt er det ikke nødvendigt at
-følge med dette tempo, men det understreger den rivende udvikling, der er
-i gang. Understøttelse af ny hardware kommer meget hurtigt. Udviklingen sker
+Normalt er det ikke nÃ¸dvendigt at
+fÃ¸lge med dette tempo, men det understreger den rivende udvikling, der er
+i gang. UnderstÃ¸ttelse af ny hardware kommer meget hurtigt. Udviklingen sker
 jo i en dynamisk verden med nem og hurtig kontakt vha. e-post mellem alle, som
 deltager i udviklingen af fremtidens Linux-systemer.
 </para>
 
 
 <para>
-Det kan nævnes, at i 1992 var der ca. 1000 personer, som kørte Linux,
-og kildeteksten til Linux-kernen var på ca. 40.000 linjers tekst. I dag
+Det kan nÃ¦vnes, at i 1992 var der ca. 1000 personer, som kÃ¸rte Linux,
+og kildeteksten til Linux-kernen var pÃ¥ ca. 40.000 linjers tekst. I dag
 (august 2001) med Linux-kerne 2.4, er kerneteksten vokset til over 3
 millioner linjer, og den indeholder over 100 millioner tegn. Antallet af
-Linux-brugere er tilsvarende vokset til ca. 70 millioner ifølge IDC.
+Linux-brugere er tilsvarende vokset til ca. 70 millioner ifÃ¸lge IDC.
 </para>
 
 <para>
-Endelig skal det retfærdigvis også nævnes, at Linux aldrig har fået så
+Endelig skal det retfÃ¦rdigvis ogsÃ¥ nÃ¦vnes, at Linux aldrig har fÃ¥et sÃ¥
 stor succes, hvis det ikke var for bl.a. GNU-programmerne (se GNU-logoet i
 <xref linkend="gnu-fig"/>). GNU (<ulink
 url="http://www.gnu.org">http://www.gnu.org</ulink>) 
-er en samling af højkvalitetssoftware,
+er en samling af hÃ¸jkvalitetssoftware,
 udviklet af Free Software Foundation (FSF - 
 <ulink url="http://www.fsf.org">http://www.fsf.org</ulink>). 
 </para>
@@ -281,11 +281,11 @@ udviklet af Free Software Foundation (FSF -
 
 <para>
 FSF ledes af Richard M. Stallman (RMS), som startede og er
-hoveddrivkraft i udviklingen af GNU Emacs (en stærk <glossterm
-linkend="def-itplatform-editor">editor</glossterm>) og GNU C-oversætteren
-(gcc). GNU software er i dag en vigtig hjørnesten af alle Linux-distributioner.
-Spørger man RMS selv fastholder han at Linux ikke skal
-kaldes Linux, men GNU/Linux, også selvom et Linux-system i dag har
+hoveddrivkraft i udviklingen af GNU Emacs (en stÃ¦rk <glossterm
+linkend="def-itplatform-editor">editor</glossterm>) og GNU C-oversÃ¦tteren
+(gcc). GNU software er i dag en vigtig hjÃ¸rnesten af alle Linux-distributioner.
+SpÃ¸rger man RMS selv fastholder han at Linux ikke skal
+kaldes Linux, men GNU/Linux, ogsÃ¥ selvom et Linux-system i dag har
 mange komponenter, som ikke er fra GNU-familien eller Linux-kernen selv
 (f.eks. XFree86, KDE, pine, Netscape).
 <indexterm><primary>RMS</primary></indexterm>
@@ -302,7 +302,7 @@ mange komponenter, som ikke er fra GNU-familien eller Linux-kernen selv
 </figure>
 
 <para>
-I øvrigt kan følgende link være interessant for de Linux-historisk
+I Ã¸vrigt kan fÃ¸lgende link vÃ¦re interessant for de Linux-historisk
 interesserede: 
 <ulink url="http://liw.iki.fi/liw/texts/linux-anecdotes.html">http://liw.iki.fi/liw/texts/linux-anecdotes.html</ulink>.
 <!-- Tux' historie - <ulink
@@ -311,30 +311,30 @@ url="http://www.woodsoup.org/~sbaker/tux/doc/">http://www.woodsoup.org/~sbaker/t
 
 <para>
 Der er sket meget siden. Linus og mange tusinde softwareudviklere
-fra hele verden har været med til at skabe et professionelt
-multitaskingsystem. I dag er der understøttelse af en utrolig stor
-mængde hardware og til mange platforme: Intel 386 og nyere samt 
+fra hele verden har vÃ¦ret med til at skabe et professionelt
+multitaskingsystem. I dag er der understÃ¸ttelse af en utrolig stor
+mÃ¦ngde hardware og til mange platforme: Intel 386 og nyere samt 
 tilsvarende AMD- og Cyrix-processorer,
-Alpha, PowerPC, Sparc, Amiga, Mips og ARM-baserede små indlejrede systemer (Se
-Yopy på <xref linkend="yopy-fig"/>) og endda IBM's mainframe S/390 (Se
-<xref linkend="S390-fig"/>) kan også køre Linux. Desuden er der hertil
-efterhånden en hel stribe Linux-distributioner, dvs. en samling af
-Linux-programmer, der sammen med Linux-kernen udgør et fuldstændigt
+Alpha, PowerPC, Sparc, Amiga, Mips og ARM-baserede smÃ¥ indlejrede systemer (Se
+Yopy pÃ¥ <xref linkend="yopy-fig"/>) og endda IBM's mainframe S/390 (Se
+<xref linkend="S390-fig"/>) kan ogsÃ¥ kÃ¸re Linux. Desuden er der hertil
+efterhÃ¥nden en hel stribe Linux-distributioner, dvs. en samling af
+Linux-programmer, der sammen med Linux-kernen udgÃ¸r et fuldstÃ¦ndigt
 system med enormt mange applikationer, 
 <glossterm linkend="def-itplatform-services">services</glossterm>,
-værktøjer og programmeringssprog.
+vÃ¦rktÃ¸jer og programmeringssprog.
 </para>
 
 <para>
-En af de mindre maskiner, som kører Linux er <ulink
+En af de mindre maskiner, som kÃ¸rer Linux er <ulink
 url="http://wearables.stanford.edu/hardware.html">http://wearables.stanford.edu/hardware.html</ulink>.
-Maskinen, som kan ses på <xref linkend="matchbox-fig"/>, kører Red Hat
-5.2 og man kan logge ind på den som guest med <command>ssh -l guest
+Maskinen, som kan ses pÃ¥ <xref linkend="matchbox-fig"/>, kÃ¸rer Red Hat
+5.2 og man kan logge ind pÃ¥ den som guest med <command>ssh -l guest
 wearables.stanford.edu</command>.
 </para>
 
 <figure id="matchbox-fig" float="1">
-<title>Linux webserver på størrelse med tændstiksæske</title>
+<title>Linux webserver pÃ¥ stÃ¸rrelse med tÃ¦ndstiksÃ¦ske</title>
 <graphic fileref="matchbox.&magic;"  scale="50"></graphic>
 </figure>
 
@@ -350,11 +350,11 @@ wearables.stanford.edu</command>.
 </figure>
 
 <para>
-Linux begrænser sig faktisk ikke bare til færdige maskiner. Linux in a
+Linux begrÃ¦nser sig faktisk ikke bare til fÃ¦rdige maskiner. Linux in a
 box (LIAB) 
 (<ulink url="http://www.liab.dk">http://www.liab.dk</ulink>) er et dansk
-eksempel på, at man selv kan bygge special-computere og få Linux til at
-køre til de ønskede formål.
+eksempel pÃ¥, at man selv kan bygge special-computere og fÃ¥ Linux til at
+kÃ¸re til de Ã¸nskede formÃ¥l.
 </para>
 
 
@@ -367,7 +367,7 @@ køre til de ønskede formål.
 <indexterm><primary>Embedded Linux</primary></indexterm>
 
 <para>
-En glimrende overbliksartikel om Linux i indlejlede (eng: embeddede) systemer kan læses på 
+En glimrende overbliksartikel om Linux i indlejlede (eng: embeddede) systemer kan lÃ¦ses pÃ¥ 
 <ulink url="http://www-106.ibm.com/developerworks/linux/library/l-embl.html">http://www-106.ibm.com/developerworks/linux/library/l-embl.html</ulink>.
 </para>
 
@@ -392,82 +392,82 @@ En glimrende overbliksartikel om Linux i indlejlede (eng: embeddede) systemer ka
 
 
 <sect1 id="Linux-info">
-<title>Forled ikke nogen til at køre Linux, men vejled enhver, der absolut
+<title>Forled ikke nogen til at kÃ¸re Linux, men vejled enhver, der absolut
 vil</title>
 
 
 <para>
-Linux er et frit, åbent og gratis styresystem. Et styresystem er et
-program, der styrer computeren. Du kender måske allerede DOS,
+Linux er et frit, Ã¥bent og gratis styresystem. Et styresystem er et
+program, der styrer computeren. Du kender mÃ¥ske allerede DOS,
 MacOS, OS/2 og Microsoft Windows 95/98/NT/2000/Me/XP.  
 Styresystemet Linux er
-meget mere stabilt end Windows. Det går simpelthen ikke ned hele
+meget mere stabilt end Windows. Det gÃ¥r simpelthen ikke ned hele
 tiden, og det kan mange
-flere ting, hvis du forstår at udnytte det.  Men Linux er ikke "et
+flere ting, hvis du forstÃ¥r at udnytte det.  Men Linux er ikke "et
 bedre Windows". Linux er et Unix-lignende styresystem og derfor
-på mange områder meget
-forskelligt fra Windows. Dette  må du gøre dig klart, før du hopper
-med på vognen og skifter til Linux, dvs. kender du ikke til Unix,
-kommer du til at lære en masse nyt!
+pÃ¥ mange omrÃ¥der meget
+forskelligt fra Windows. Dette  mÃ¥ du gÃ¸re dig klart, fÃ¸r du hopper
+med pÃ¥ vognen og skifter til Linux, dvs. kender du ikke til Unix,
+kommer du til at lÃ¦re en masse nyt!
 </para>
 
 <para>
-I dette afsnit vil vi forsøge at være mere objektive mht. Linux, for
-selvom Linux er spændende for os Linux-brugere, er det måske ikke
-interessant for dig. Vort udgangspunkt er at fortælle, på hvilke områder
-Linux er interessant, og samtidigt at gøre opmærksom på, at Linux måske
+I dette afsnit vil vi forsÃ¸ge at vÃ¦re mere objektive mht. Linux, for
+selvom Linux er spÃ¦ndende for os Linux-brugere, er det mÃ¥ske ikke
+interessant for dig. Vort udgangspunkt er at fortÃ¦lle, pÃ¥ hvilke omrÃ¥der
+Linux er interessant, og samtidigt at gÃ¸re opmÃ¦rksom pÃ¥, at Linux mÃ¥ske
 ikke passer til dig.
 </para>
 
 <sect2  id="komplexitet">
 <title>Prisen for frihed er kompleksitet</title>
 <para>
-Når du bruger Linux, kan du i høj grad skræddersy dit system efter
-dine egne ønsker og behov. Du kan f.eks. få mange forskellige grafiske
-brugergrænseflader af høj kvalitet, mange forskellige gratis
-programmer, du lovligt kan kopiere, og du kan vælge imellem
-forskellige udgaver af Linux med forskellige hjælpeværktøjer
-inkluderet. Det er det vi kalder "friheden til at vælge".
+NÃ¥r du bruger Linux, kan du i hÃ¸j grad skrÃ¦ddersy dit system efter
+dine egne Ã¸nsker og behov. Du kan f.eks. fÃ¥ mange forskellige grafiske
+brugergrÃ¦nseflader af hÃ¸j kvalitet, mange forskellige gratis
+programmer, du lovligt kan kopiere, og du kan vÃ¦lge imellem
+forskellige udgaver af Linux med forskellige hjÃ¦lpevÃ¦rktÃ¸jer
+inkluderet. Det er det vi kalder "friheden til at vÃ¦lge".
 </para>
 
 <para>
 Du kan bruge Linux til alt muligt, lige fra server i en multinational
-virksomhed til pc'en hjemme på skrivebordet. Men fleksibilitet og
+virksomhed til pc'en hjemme pÃ¥ skrivebordet. Men fleksibilitet og
 valgfrihed har en pris.
 </para>
 
 <para>
-Hvis du vil have den flotteste grafiske brugergrænseflade og de
-nemme <glossterm linkend="def-itplatform-opsaetningsvaerktoej">opsætningsværktøjer</glossterm>, er du nødt til
-at sætte dig ind i,
-hvilke der findes, og måske prøve nogle forskellige for at finde ud af,
-hvad du synes bedst om. Dvs. du må selv installere dem,
+Hvis du vil have den flotteste grafiske brugergrÃ¦nseflade og de
+nemme <glossterm linkend="def-itplatform-opsaetningsvaerktoej">opsÃ¦tningsvÃ¦rktÃ¸jer</glossterm>, er du nÃ¸dt til
+at sÃ¦tte dig ind i,
+hvilke der findes, og mÃ¥ske prÃ¸ve nogle forskellige for at finde ud af,
+hvad du synes bedst om. Dvs. du mÃ¥ selv installere dem,
 eksperimentere med mulighederne og evt. afinstallere dem igen.
 </para>
 
 <para>
-Øget kompleksitet er prisen for den mangfoldighed, Linux besidder. Den
+Ã˜get kompleksitet er prisen for den mangfoldighed, Linux besidder. Den
 store fordel er, at <emphasis>du</emphasis> har valgmulighederne. Du
-kan få en Linux-distribution hvor alt er besluttet for dig så
+kan fÃ¥ en Linux-distribution hvor alt er besluttet for dig sÃ¥
 installationen er nem, eller du kan selv samle eksakt de programmer
-sammen du vil køre ud over Linux-kernen.  Du kan sætte alt op selv,
-men oftest behøver du ikke at sætte dig ind i alt og normalt vil
-Linux-distributioner, programmer og brugergrænseflader have
+sammen du vil kÃ¸re ud over Linux-kernen.  Du kan sÃ¦tte alt op selv,
+men oftest behÃ¸ver du ikke at sÃ¦tte dig ind i alt og normalt vil
+Linux-distributioner, programmer og brugergrÃ¦nseflader have
 standardindstillinger, som kan bruges som et godt udgangspunkt.
 </para>
 
 <para>
-Installation af Linux kan være sværere end Windows - men det er reelt kun
-fordi flere af de ting, du spørges om, er uvante. Har du installeret
+Installation af Linux kan vÃ¦re svÃ¦rere end Windows - men det er reelt kun
+fordi flere af de ting, du spÃ¸rges om, er uvante. Har du installeret
 Linux, er driften derimod nemmere. Du kan (bortset fra
-sikkerhedsopdateringer) køre med det samme system i flere år.
+sikkerhedsopdateringer) kÃ¸re med det samme system i flere Ã¥r.
 </para>
 
 <para>
-Nu skal det heller ikke lyde, som om du skal prøve alt selv. Start
-med, hvad du har installeret, og så kan du senere ændre det, hvis du
-har lyst. Nærværende bog indeholder endvidere mange forslag til,
-hvordan du kan sætte din Linux-maskine op.
+Nu skal det heller ikke lyde, som om du skal prÃ¸ve alt selv. Start
+med, hvad du har installeret, og sÃ¥ kan du senere Ã¦ndre det, hvis du
+har lyst. NÃ¦rvÃ¦rende bog indeholder endvidere mange forslag til,
+hvordan du kan sÃ¦tte din Linux-maskine op.
 </para>
 </sect2>
 
@@ -475,33 +475,33 @@ hvordan du kan sætte din Linux-maskine op.
 <title>Programmer til Linux</title>
 
 <para>
-Det er vigtigt at forstå, at du ikke kan køre de samme programmer under
+Det er vigtigt at forstÃ¥, at du ikke kan kÃ¸re de samme programmer under
 Linux som under Windows. Der findes heldigvis et hav af programmer til
 Linux, men en stor del af dem er rettet imod de mere teknisk orienterede
-brugere.  En del af de programmer, vi kender fra Windows, er dog på
+brugere.  En del af de programmer, vi kender fra Windows, er dog pÃ¥
 vej i Linux-versioner, og enkelte findes allerede. Mange af de
 programmer, der findes til Linux, er gratis til privat brug. En stor
-del er endog - som Linux selv - helt gratis og åbne, også til kommerciel
+del er endog - som Linux selv - helt gratis og Ã¥bne, ogsÃ¥ til kommerciel
 brug.
 </para>
 
 <para>
-Du bør tænke over, hvad du primært vil bruge din computer til, før du
+Du bÃ¸r tÃ¦nke over, hvad du primÃ¦rt vil bruge din computer til, fÃ¸r du
 bestemmer dig for at skifte til Linux. Findes dine favoritprogrammer
 ikke til Linux, eller kan du ikke finde erstatninger, som du er
-tilfreds med, så lad være med at skifte til Linux.
+tilfreds med, sÃ¥ lad vÃ¦re med at skifte til Linux.
 </para>
 
 <para>
-I det følgende tager vi nogle specifikke programtyper frem.
+I det fÃ¸lgende tager vi nogle specifikke programtyper frem.
 </para>
 
 <sect3  id="officeprogrammer">
 <title>Kontorpakker</title>
 <para>
 Der findes forskellige kontorpakker (office-pakker) til Linux.
-Vi kan her nævne et par udbredte kontorprogrammer til Linux.
-ApplixWare og WordPerfect Office Suite kan købes, mens de
+Vi kan her nÃ¦vne et par udbredte kontorprogrammer til Linux.
+ApplixWare og WordPerfect Office Suite kan kÃ¸bes, mens de
 andre kan hentes gratis fra internettet:
 
 <itemizedlist mark="bullet">
@@ -509,54 +509,54 @@ andre kan hentes gratis fra internettet:
 <listitem> <para>
 WordPerfect Office Suite 2000: Et omfangsrigt produkt som kan sammenlignes
 direkte med Microsoft Office. Er dog lidt tungt til Linux i forhold til
-Windows-versionen. WordPerfect 8.0 kan dog hentes gratis på internettet.
+Windows-versionen. WordPerfect 8.0 kan dog hentes gratis pÃ¥ internettet.
 </para></listitem>
 
 <listitem> <para>
 ApplixWare: Velfungerende kontorpakke, som dog ikke har alle
-Microsoft Office 97's funktioner. ApplixWare er til gengæld meget mere stabil.
+Microsoft Office 97's funktioner. ApplixWare er til gengÃ¦ld meget mere stabil.
 </para></listitem>
 
 <listitem> <para>
-StarOffice: God kontorpakke, som kræver en del hukommelse for
-at køre godt. Minder om Microsoft Office 97 og kan både læse og skrive
+StarOffice: God kontorpakke, som krÃ¦ver en del hukommelse for
+at kÃ¸re godt. Minder om Microsoft Office 97 og kan bÃ¥de lÃ¦se og skrive
 Microsoft Office 97-formater.
 </para></listitem>
 
 <listitem> <para>
-KOffice: KDE-projektets frie kontorpakke. Den er ikke færdig endnu,
-men er nu ved at være anvendelig.
+KOffice: KDE-projektets frie kontorpakke. Den er ikke fÃ¦rdig endnu,
+men er nu ved at vÃ¦re anvendelig.
 </para></listitem>
 
 <listitem><para>
-Gnome Office: Gnome-projektet arbejder målrettet med en række
+Gnome Office: Gnome-projektet arbejder mÃ¥lrettet med en rÃ¦kke
 kontorprogrammer, f.eks. regnearket Gnumeric, tekstbehandlingsprogrammet
 AbiWord og grafikprogrammet GIMP.
 </para></listitem>
 
  <listitem>
   <para>
-   OpenOffice.org: Fri kontorpakke baseret på StarOffice. Desværre har det ikke
-   været muligt for Sun at frigive hele kildeteksten til StarOffice, så
+   OpenOffice.org: Fri kontorpakke baseret pÃ¥ StarOffice. DesvÃ¦rre har det ikke
+   vÃ¦ret muligt for Sun at frigive hele kildeteksten til StarOffice, sÃ¥
    OpenOffice.org kan endnu ikke kaldes et fuldt fungerende kontorprogram.
   </para>
  </listitem>
 </itemizedlist>
 
 Hvis din hverdag er centreret omkring Microsoft Office-dokumenter
-alene, bør du nok vente med at skifte til Linux. For selvom alle
-kontorprogrammerne vil læse Microsoft Office-dokumenter, kan det være
-svært at være 100% kompatibel med Microsofts produkter, da Microsoft
-ikke følger <glossterm linkend="def-itplatform-en-aaben-standard">åbne
+alene, bÃ¸r du nok vente med at skifte til Linux. For selvom alle
+kontorprogrammerne vil lÃ¦se Microsoft Office-dokumenter, kan det vÃ¦re
+svÃ¦rt at vÃ¦re 100% kompatibel med Microsofts produkter, da Microsoft
+ikke fÃ¸lger <glossterm linkend="def-itplatform-en-aaben-standard">Ã¥bne
 standarder</glossterm> og i udstrakt grad benytter <glossterm
 linkend="def-itplatform-lukket-filformat">lukkede filformater</glossterm>.
 </para>
 
 <para>
-Der er dog initiativer i gang til en fælles <glossterm
-linkend="def-itplatform-aaben-dokumentstandard">åben dokumentstandard</glossterm>
-baseret på <glossterm linkend="def-itplatform-XML">XML</glossterm>, så det bliver
-muligt at udveksle dokumenter uden at skulle tænke på modtagerens valg
+Der er dog initiativer i gang til en fÃ¦lles <glossterm
+linkend="def-itplatform-aaben-dokumentstandard">Ã¥ben dokumentstandard</glossterm>
+baseret pÃ¥ <glossterm linkend="def-itplatform-XML">XML</glossterm>, sÃ¥ det bliver
+muligt at udveksle dokumenter uden at skulle tÃ¦nke pÃ¥ modtagerens valg
 af kontorpakke.
 </para>
 
@@ -565,10 +565,10 @@ Hvis du ikke har behov for at udveksle tekstbehandlingsdokumenter og
 lignende med Windows-brugere, f.eks. hvis du kun skal skrive breve og
 lignende hjemme, er der ikke nogle problemer. Men hvis du kommer ud
 for filer i et lukket format, for eksempel MS Word-filer, er der
-mulighed for at der opstår problemer. Og selv da skulle det være
+mulighed for at der opstÃ¥r problemer. Og selv da skulle det vÃ¦re
 muligt at overkomme de fleste problemer ved at I bliver enige om at
 udveksle filer i et format som <glossterm
-linkend="def-itplatform-RTF">RTF</glossterm>, der kan læses og skrives af praktisk
+linkend="def-itplatform-RTF">RTF</glossterm>, der kan lÃ¦ses og skrives af praktisk
 taget alle tekstbehandlingsprogrammer.
 </para>
 </sect3>
@@ -577,17 +577,17 @@ taget alle tekstbehandlingsprogrammer.
 <title>E-post og internettet</title>
 <para>
 Internettet og e-post er intet problem med Linux. Du kan bruge din
-Linux-maskine lige så nemt som Windows, hvis du skal surfe på internettet og
-læse elektronisk post. Du kan sikkert få glæde af Netscape til
-dette. Mht. at læse elektronisk post er der mange programmer til Linux af høj
-kvalitet og helt sikkert også et, som passer til din
-smag for grafik og opsætningsmuligheder.
+Linux-maskine lige sÃ¥ nemt som Windows, hvis du skal surfe pÃ¥ internettet og
+lÃ¦se elektronisk post. Du kan sikkert fÃ¥ glÃ¦de af Netscape til
+dette. Mht. at lÃ¦se elektronisk post er der mange programmer til Linux af hÃ¸j
+kvalitet og helt sikkert ogsÃ¥ et, som passer til din
+smag for grafik og opsÃ¦tningsmuligheder.
 </para>
 
 <para>
 Hvis du skal lave avancerede websider, er Linux perfekt for dig. Ikke
-alene har du en lang række gratis værktøjer til rådighed, men du kan
-prøve det hele af hjemmefra, da Linux kommer med en komplet
+alene har du en lang rÃ¦kke gratis vÃ¦rktÃ¸jer til rÃ¥dighed, men du kan
+prÃ¸ve det hele af hjemmefra, da Linux kommer med en komplet
 <glossterm linkend="def-itplatform-webserver">webserver</glossterm>.
 </para>
 </sect3>
@@ -596,135 +596,135 @@ prøve det hele af hjemmefra, da Linux kommer med en komplet
 <title>Spil</title>
 <indexterm><primary>Spil</primary></indexterm>
 <para>
-Et område, hvor Linux står lidt svagt, er spil. De nyeste spil kommer
+Et omrÃ¥de, hvor Linux stÃ¥r lidt svagt, er spil. De nyeste spil kommer
 enten ikke til Linux eller kommer med ret stor forsinkelse.  Flere af
-de spil, som så kører under Linux er dem, som køres via en Windows-emulator.
- Der er flere detaljer, f.eks. på <ulink
+de spil, som sÃ¥ kÃ¸rer under Linux er dem, som kÃ¸res via en Windows-emulator.
+ Der er flere detaljer, f.eks. pÃ¥ <ulink
 url="http://www.linuxgames.com/">http://www.linuxgames.com/</ulink>.
-Den svage udbredelse af spil til Linux skyldes, at Linux i højere grad
-har været gearet til netværk og som <glossterm
+Den svage udbredelse af spil til Linux skyldes, at Linux i hÃ¸jere grad
+har vÃ¦ret gearet til netvÃ¦rk og som <glossterm
 linkend="def-itplatform-udviklingsplatform">udviklingsplatform</glossterm> og ikke
-tidligere har appelleret så meget til den brede befolkning.
+tidligere har appelleret sÃ¥ meget til den brede befolkning.
 </para>
 
 <para>
-Et andet problem har nok været, at <glossterm
+Et andet problem har nok vÃ¦ret, at <glossterm
 linkend="def-itplatform-Linux-distribution">Linux-distributioner</glossterm> kom
 med forskellige <glossterm
 linkend="def-itplatform-standardbibliotek">standardbiblioteker</glossterm>, og
-den stadige udvikling gjorde, at man ikke kunne være sikker på, hvad
+den stadige udvikling gjorde, at man ikke kunne vÃ¦re sikker pÃ¥, hvad
 Linux var dagen efter. Dette er heldigvis blevet meget bedre nu, hvor
 Linux er stabil og yder godt. Samtidig rykker en officiel
-Linux-standard nærmere (Linux Standard Base - se <ulink
+Linux-standard nÃ¦rmere (Linux Standard Base - se <ulink
 url="http://www.linuxbase.org">http://www.linuxbase.org</ulink>).
 <indexterm><primary>Linux distributioner</primary></indexterm>
 
 </para>
 
 <para>
-Spil til Linux er ved at komme. Det kommer naturligvis først i stort
-antal, når og hvis Linux bliver en meget stor
-succes med bred accept. Dvs. når de firmaer, der laver spillene, kan
-se, at der er penge at hente, fordi mange vil købe spillene til Linux.
+Spil til Linux er ved at komme. Det kommer naturligvis fÃ¸rst i stort
+antal, nÃ¥r og hvis Linux bliver en meget stor
+succes med bred accept. Dvs. nÃ¥r de firmaer, der laver spillene, kan
+se, at der er penge at hente, fordi mange vil kÃ¸be spillene til Linux.
 </para>
 
 <para>
 Der er dog undtagelser. Firmaet ID Soft, som udviklede Wolfenstein,
 DOOM, Quake og
-andre spil, har haft stor glæde af Linux; faktisk har de udviklet
-flere af spillene under Linux og så bagefter flyttet koden til Windows.
-Derfor findes mange af ID Soft spillene til Linux, og de kører
+andre spil, har haft stor glÃ¦de af Linux; faktisk har de udviklet
+flere af spillene under Linux og sÃ¥ bagefter flyttet koden til Windows.
+Derfor findes mange af ID Soft spillene til Linux, og de kÃ¸rer
 rigtig godt. 
-Loki Software er nu også begyndt at oversætte spil til Linux,
-bl.a. Civilization-serien, så meget ser nok anderledes ud om et år.
-Der findes også masser af mindre spil svarende til, hvad
-der kendes fra Windows, såsom Tetris, Pacman, Minestryger og forskellige
+Loki Software er nu ogsÃ¥ begyndt at oversÃ¦tte spil til Linux,
+bl.a. Civilization-serien, sÃ¥ meget ser nok anderledes ud om et Ã¥r.
+Der findes ogsÃ¥ masser af mindre spil svarende til, hvad
+der kendes fra Windows, sÃ¥som Tetris, Pacman, Minestryger og forskellige
 kabaler.
 </para>
 
 <para>
-Er du meget til spil, bør du nok mindst have Windows installeret på
+Er du meget til spil, bÃ¸r du nok mindst have Windows installeret pÃ¥
 samme maskine som Linux.
 </para>
 </sect3>
 
 <sect3 id="forordgui">
-<title>Grafisk brugergrænseflade</title>
+<title>Grafisk brugergrÃ¦nseflade</title>
 <para>
-Der er en del forskellige grafiske brugergrænseflader til Linux, som
-alle tilbyder spændende muligheder. Det er ikke sådan, at du behøver at
-bruge dem, men du har muligheden for at vælge netop den, som du synes
-tilbyder det du søger. Vi vil nævne et par relevante systemer.
+Der er en del forskellige grafiske brugergrÃ¦nseflader til Linux, som
+alle tilbyder spÃ¦ndende muligheder. Det er ikke sÃ¥dan, at du behÃ¸ver at
+bruge dem, men du har muligheden for at vÃ¦lge netop den, som du synes
+tilbyder det du sÃ¸ger. Vi vil nÃ¦vne et par relevante systemer.
 </para>
 
 <para>
 <itemizedlist mark="bullet">
 
 <listitem> <para>KDE er et meget succesrigt projekt, som har meget stor
-fart på. KDE
-tilbyder alle de små ting, du er vant til fra Windows: Ikoner, træk-og-slip-funktioner,
-grafisk filhåndtering mv., samt masser af praktiske småprogrammer,
-som f.eks. notitssedler, cd-afspiller, små spil og meget mere. Hvordan KDE ser
-ud, er meget op til dig selv, da der er masser af opsætningsmuligheder. Det
+fart pÃ¥. KDE
+tilbyder alle de smÃ¥ ting, du er vant til fra Windows: Ikoner, trÃ¦k-og-slip-funktioner,
+grafisk filhÃ¥ndtering mv., samt masser af praktiske smÃ¥programmer,
+som f.eks. notitssedler, cd-afspiller, smÃ¥ spil og meget mere. Hvordan KDE ser
+ud, er meget op til dig selv, da der er masser af opsÃ¦tningsmuligheder. Det
 er dog ikke alle programmer, der er lavet til at udnytte KDE's muligheder
 optimalt.
-Find KDE på <ulink url="http://www.kde.org">http://www.kde.org</ulink>.
+Find KDE pÃ¥ <ulink url="http://www.kde.org">http://www.kde.org</ulink>.
 </para></listitem>
 
-<listitem> <para>Gnome er fremtidens frie skrivebordssystem, baseret på
-<glossterm linkend="def-itplatform-netvaerksobjekt">netværksobjekter</glossterm>. Gnome
-er et skrivebordsmiljø, der
+<listitem> <para>Gnome er fremtidens frie skrivebordssystem, baseret pÃ¥
+<glossterm linkend="def-itplatform-netvaerksobjekt">netvÃ¦rksobjekter</glossterm>. Gnome
+er et skrivebordsmiljÃ¸, der
 tilbyder <glossterm linkend="def-itplatform-applikation">applikationerne</glossterm>
-nogle muligheder for at køre på en integreret måde, ligesom de gør i Windows.
-Gnome er stadig kun under udvikling, men Gnome-holdet er ved at være klar med
-færdige produktionssystemer nu. Tempoet er meget højt, og allerede nu er så
-store dele færdige, at den eksperimenterende bruger kan få meget sjov ud af at
-lege med systemet. Du kan læse meget mere om Gnome på
+nogle muligheder for at kÃ¸re pÃ¥ en integreret mÃ¥de, ligesom de gÃ¸r i Windows.
+Gnome er stadig kun under udvikling, men Gnome-holdet er ved at vÃ¦re klar med
+fÃ¦rdige produktionssystemer nu. Tempoet er meget hÃ¸jt, og allerede nu er sÃ¥
+store dele fÃ¦rdige, at den eksperimenterende bruger kan fÃ¥ meget sjov ud af at
+lege med systemet. Du kan lÃ¦se meget mere om Gnome pÃ¥
 <ulink url="http://news.gnome.org">http://news.gnome.org</ulink>.
 </para></listitem>
 
-<listitem> <para>Enlightenment er en såkaldt vindueshåndtering. Den har ikke alt
+<listitem> <para>Enlightenment er en sÃ¥kaldt vindueshÃ¥ndtering. Den har ikke alt
 det i sig, som KDE har, men er mere beregnet til at styre, hvordan
-grafikken ser ud.  Enlightenment kan køre oven på Gnome og udnytte dennes
-faciliteter. Den kan også køre alene. Enlightenment er et meget
+grafikken ser ud.  Enlightenment kan kÃ¸re oven pÃ¥ Gnome og udnytte dennes
+faciliteter. Den kan ogsÃ¥ kÃ¸re alene. Enlightenment er et meget
 futuristisk projekt med elementer som er helt unikke. Grafikken er
-meget speciel, men spændende. Startes et
+meget speciel, men spÃ¦ndende. Startes et
 <glossterm linkend="def-itplatform-tekstterminal">tekstterminal</glossterm>-vindue, kommer
-vinduet flyvende fra siden, og hér har du
+vinduet flyvende fra siden, og hÃ©r har du
 <glossterm linkend="def-itplatform-bitmap">bitmap</glossterm>-grafik til at danne
 baggrund for teksten i vinduerne. Baggrundsbilleder er standard. De
-er dog ikke statiske, men kan være dynamiske effekter såsom flammer,
-der bevæges, ringe i vand, som udbredes med tiden etc. Enlightenment er
-godt på vej frem, men mangler stadig mange ting. Beta-versioner kan
+er dog ikke statiske, men kan vÃ¦re dynamiske effekter sÃ¥som flammer,
+der bevÃ¦ges, ringe i vand, som udbredes med tiden etc. Enlightenment er
+godt pÃ¥ vej frem, men mangler stadig mange ting. Beta-versioner kan
 hentes fra <ulink url="http://www.enlightenment.org">http://www.enlightenment.org</ulink>
 </para></listitem>
 </itemizedlist>
 </para>
 
 <para>
-Der findes masser af andre vindueshåndterere, f.eks. Afterstep og WindowMaker,
-samt Fvwm 95 - læs mere om dem rundt om på internettet.
+Der findes masser af andre vindueshÃ¥ndterere, f.eks. Afterstep og WindowMaker,
+samt Fvwm 95 - lÃ¦s mere om dem rundt om pÃ¥ internettet.
 </para>
 </sect3>
 
 <sect3 id="forordprogrammering">
 <title>Programmering</title>
 <para>
-Her går vi måske lidt væk fra den almindelige bruger, men der er
-dog mange, der programmerer lidt på deres hjemmecomputer. Til denne
-gruppe findes der masser af gode programmeringsværktøjer til Linux, og der
-findes oversættere og fortolkere til næsten ethvert
+Her gÃ¥r vi mÃ¥ske lidt vÃ¦k fra den almindelige bruger, men der er
+dog mange, der programmerer lidt pÃ¥ deres hjemmecomputer. Til denne
+gruppe findes der masser af gode programmeringsvÃ¦rktÃ¸jer til Linux, og der
+findes oversÃ¦ttere og fortolkere til nÃ¦sten ethvert
 programmeringssprog: C, C++, Fortran, Perl, Python, Java, Tcl/Tk,
 Ada og Pascal.
 </para>
 
 <para>
-Visuelle værktøjer som Visual Basic og Visual C++ findes ikke til
+Visuelle vÃ¦rktÃ¸jer som Visual Basic og Visual C++ findes ikke til
 Linux, men der er et par gode grafiske
 <glossterm linkend="def-itplatform-debugger">debuggere</glossterm>, og
-integrerede udviklingsmiljøer er på vej til Linux. Netop nu er
-KDevelop og Code Warrior kommet til Linux i de første
-udgaver. Delphi er ligeledes på vej under navnet Kylix.
+integrerede udviklingsmiljÃ¸er er pÃ¥ vej til Linux. Netop nu er
+KDevelop og Code Warrior kommet til Linux i de fÃ¸rste
+udgaver. Delphi er ligeledes pÃ¥ vej under navnet Kylix.
 <indexterm><primary>Delphi til Linux</primary></indexterm>
 <indexterm><primary>Kylix</primary></indexterm>
 <indexterm><primary>Code Warrior</primary></indexterm>
@@ -735,18 +735,18 @@ udgaver. Delphi er ligeledes på vej under navnet Kylix.
 </sect3>
 
 <sect3 id="forordnetvaerk">
-<title>Netværk</title>
+<title>NetvÃ¦rk</title>
 <para>
-Linux kan fungere som server i hjemmenetværket, hvis du har sådan
-et. Den kan sagtens være navne-,
+Linux kan fungere som server i hjemmenetvÃ¦rket, hvis du har sÃ¥dan
+et. Den kan sagtens vÃ¦re navne-,
 <glossterm linkend="def-itplatform-dhcp">DHCP</glossterm>-, fil-, print- og webserver, og
-endda klare alle opgaverne på samme tid. Linux kan også være en meget
+endda klare alle opgaverne pÃ¥ samme tid. Linux kan ogsÃ¥ vÃ¦re en meget
 kraftig filserver for Windows- og Mac-maskiner. Hvis Linux-maskinen
 er sat rigtigt op og administreres fornuftigt, er Linux langt
-mere sikker på et netværk end Windows. For den erfarne
-Unix-administrator er det nemt at få overvågning og
+mere sikker pÃ¥ et netvÃ¦rk end Windows. For den erfarne
+Unix-administrator er det nemt at fÃ¥ overvÃ¥gning og
 <glossterm linkend="def-itplatform-brandmur">brandmur</glossterm> (eng. firewall)
-sat op, så der lukkes af for de kendte sikkerhedshuller.
+sat op, sÃ¥ der lukkes af for de kendte sikkerhedshuller.
 Virus er heller ikke et reelt problem, da man som almindelig bruger
 ikke har skriveadgang til systemfilerne.
 </para>
@@ -758,13 +758,13 @@ ikke har skriveadgang til systemfilerne.
 <indexterm><primary>LaTeX</primary></indexterm>
 
 Der findes fremragende Linux-programmer til teknisk
-dokumentation. Tekstformateringsprogrammet LaTeX er meget anvendt på
+dokumentation. Tekstformateringsprogrammet LaTeX er meget anvendt pÃ¥
 universiteter, idet specielt formler kommer til at se langt mere
 professionelle ud, end hvad du kan lave med f.eks. Microsoft Word.
 Skal du skrive f.eks. 100 eller 200 sider, er LaTeX et sikkert,
 professionelt og stabilt valg - langt bedre end f.eks. Word. Hvis du
-er villig til at sætte dig ind i noget sværere, kan du til gengæld
-også opnå virkeligt flotte resultater. Tilsvarende er SGML og DocBook
+er villig til at sÃ¦tte dig ind i noget svÃ¦rere, kan du til gengÃ¦ld
+ogsÃ¥ opnÃ¥ virkeligt flotte resultater. Tilsvarende er SGML og DocBook
 gode valg til store dokumenter. Denne bog er netop skrevet i
 DocBook.
 <indexterm><primary>DocBook</primary></indexterm>
@@ -775,65 +775,65 @@ DocBook.
 </sect2>
 
 <sect2 id="stejlindlaering">
-<title>Linux har en stejl indlæringskurve</title>
-<indexterm><primary>Stejl indlæringskurve</primary></indexterm>
+<title>Linux har en stejl indlÃ¦ringskurve</title>
+<indexterm><primary>Stejl indlÃ¦ringskurve</primary></indexterm>
 <para>
 Linux er et styresystem, der er opbygget helt som andre Unix-systemer -
-såsom AIX, HP-UX, Solaris og Irix.  Det er udviklet af
-programudviklere primært til programudviklere.
+sÃ¥som AIX, HP-UX, Solaris og Irix.  Det er udviklet af
+programudviklere primÃ¦rt til programudviklere.
 </para>
 
 <para>
-På Windows kommer du hurtigt i gang, men du kommer aldrig videre end
-"i gang". Eller, hvis du vil videre end i gang, går indlæringskurven
-nærmest lodret, for så skal du til at lære, hvordan Windows fejler og præcist
+PÃ¥ Windows kommer du hurtigt i gang, men du kommer aldrig videre end
+"i gang". Eller, hvis du vil videre end i gang, gÃ¥r indlÃ¦ringskurven
+nÃ¦rmest lodret, for sÃ¥ skal du til at lÃ¦re, hvordan Windows fejler og prÃ¦cist
 hvordan og under hvilke forhold, hvilket varierer fra maskine til maskine.
-Fordi Linux er så konsistent, som det er, kan du bruge din viden om
-Linux på stort set alle Linux-maskiner - hver gang.  På grund af Windows'
-inkonsistens bliver det utroligt svært at blive "rigtigt god" til
-Windows. Linux er både utroligt komplekst, men også utroligt logisk indrettet,
-fordi hver lille "ting" udfører sin egen lille velafgrænsede opgave. Og
-ikke nok med det; har du lært noget af logikken bag Linux, kan den let
-overføres til de andre Unix'er.
+Fordi Linux er sÃ¥ konsistent, som det er, kan du bruge din viden om
+Linux pÃ¥ stort set alle Linux-maskiner - hver gang.  PÃ¥ grund af Windows'
+inkonsistens bliver det utroligt svÃ¦rt at blive "rigtigt god" til
+Windows. Linux er bÃ¥de utroligt komplekst, men ogsÃ¥ utroligt logisk indrettet,
+fordi hver lille "ting" udfÃ¸rer sin egen lille velafgrÃ¦nsede opgave. Og
+ikke nok med det; har du lÃ¦rt noget af logikken bag Linux, kan den let
+overfÃ¸res til de andre Unix'er.
 </para>
 
 <para>
 Linux er designet helt anderledes end f.eks. Windows. En Windows-bruger
-kan genbruge en del af sin DOS/Windows-erfaring på Linux - men
+kan genbruge en del af sin DOS/Windows-erfaring pÃ¥ Linux - men
 bestemt ikke alt. Linux er beregnet til at flere personer kan bruge
-computeren på en gang, evt. over et netværk. Derfor skal du logge ind
-på systemet med et brugernavn og en adgangskode (eng. password). Nogle
-synes, at det er lidt besværligt, når computeren bare skal bruges af
-en person derhjemme. Men Linux er indrettet med sikkerhed i højsædet,
-og det giver nogle fordele. Du kan ikke komme til at ødelægge
-<glossterm linkend="def-itplatform-systemfil">systemfiler</glossterm>, når du er logget
+computeren pÃ¥ en gang, evt. over et netvÃ¦rk. Derfor skal du logge ind
+pÃ¥ systemet med et brugernavn og en adgangskode (eng. password). Nogle
+synes, at det er lidt besvÃ¦rligt, nÃ¥r computeren bare skal bruges af
+en person derhjemme. Men Linux er indrettet med sikkerhed i hÃ¸jsÃ¦det,
+og det giver nogle fordele. Du kan ikke komme til at Ã¸delÃ¦gge
+<glossterm linkend="def-itplatform-systemfil">systemfiler</glossterm>, nÃ¥r du er logget
 ind med dit almindelige brugernavn. Hvis
-du kommer til at køre et program med virus i, kan dette heller ikke
-ødelægge systemfilerne, hvis du kører det som almindelig bruger. Kun
+du kommer til at kÃ¸re et program med virus i, kan dette heller ikke
+Ã¸delÃ¦gge systemfilerne, hvis du kÃ¸rer det som almindelig bruger. Kun
 hvis du er logget ind som systemadministrator (som har brugernavnet
-"root"), kan du få adgang til at ødelægge eller ændre systemets
+"root"), kan du fÃ¥ adgang til at Ã¸delÃ¦gge eller Ã¦ndre systemets
 centrale dele.
 </para>
 
 <para>
-Desuden kan det være smart, hvis du har en familie, at de forskellige
-familiemedlemmer har hvert deres brugernavn. På den måde kan hver person have
-sin foretrukne grafiske brugergrænseflade og opsætning, og det er
-let at holde styr på de forskellige familiemedlemmers filer. Linux gør
-det muligt, at ethvert medlem af familien har et "privatliv" på
-computeren, dvs. lillebror kan ikke læse storesøsters kærestebreve
-(hvilket storesøster typisk vil være glad for).
+Desuden kan det vÃ¦re smart, hvis du har en familie, at de forskellige
+familiemedlemmer har hvert deres brugernavn. PÃ¥ den mÃ¥de kan hver person have
+sin foretrukne grafiske brugergrÃ¦nseflade og opsÃ¦tning, og det er
+let at holde styr pÃ¥ de forskellige familiemedlemmers filer. Linux gÃ¸r
+det muligt, at ethvert medlem af familien har et "privatliv" pÃ¥
+computeren, dvs. lillebror kan ikke lÃ¦se storesÃ¸sters kÃ¦restebreve
+(hvilket storesÃ¸ster typisk vil vÃ¦re glad for).
 </para>
 
 <para>
 Mange ting er ganske anderledes bygget op i Linux, end i Windows, og
 du skal regne med, at du ikke kan alt med Linux samme dag, du har
-installeret det. Du kommer til at skulle læse om Linux og spørge andre
-om hjælp - der er til gengæld mange, som gerne vil hjælpe. Som regel
-er der masser af hjælp at hente via internettet, enten via
+installeret det. Du kommer til at skulle lÃ¦se om Linux og spÃ¸rge andre
+om hjÃ¦lp - der er til gengÃ¦ld mange, som gerne vil hjÃ¦lpe. Som regel
+er der masser af hjÃ¦lp at hente via internettet, enten via
 nyhedsgrupper (eng. Newsgroups) eller hos en af de mange Linux-brugergrupper
 (Linux User Groups - LUG'er) - se <ulink url="http://www.lug.dk">http://www.lug.dk</ulink>.
-Du kan også lede efter bøger på bibliotek og i boghandel om Unix og Linux.
+Du kan ogsÃ¥ lede efter bÃ¸ger pÃ¥ bibliotek og i boghandel om Unix og Linux.
 </para>
 </sect2>
 
@@ -842,58 +842,58 @@ Du kan også lede efter bøger på bibliotek og i boghandel om Unix og Linux.
 
 <!--
 Grundlaget for generelle applikationssystemer er at man
-repræsenterer tegn, d.v.s. bogstaver og andre glyffer, med tal.
+reprÃ¦senterer tegn, d.v.s. bogstaver og andre glyffer, med tal.
 
-Unix og Linux er i virkeligheden baseret på, at du skriver kommandoer
+Unix og Linux er i virkeligheden baseret pÃ¥, at du skriver kommandoer
 til computeren, ligesom man gjorde i DOS. 
 /-->
 
 <para>
-Unix og Linux kan køre uden mus. Alt kan gøres uden mus, eller
-sagt på en lidt mere dækkende måde, så er interface til
-systemadministration baseret på programmer, som kan køre fra en
-kommandolinie og som ikke skriver til en grafisk skærm. Udprint
-(output) fra programmerne kan lægges i en logfil, også
+Unix og Linux kan kÃ¸re uden mus. Alt kan gÃ¸res uden mus, eller
+sagt pÃ¥ en lidt mere dÃ¦kkende mÃ¥de, sÃ¥ er interface til
+systemadministration baseret pÃ¥ programmer, som kan kÃ¸re fra en
+kommandolinie og som ikke skriver til en grafisk skÃ¦rm. Udprint
+(output) fra programmerne kan lÃ¦gges i en logfil, ogsÃ¥
 fejlmeddelelser, og derved kan alt systemadministration
 automatiseres og foretages fra en anden maskine.
 </para>
 
 <para>
-Det er i virkeligheden ikke så fjernt fra fx. Microsoft
-styre-systemer (MS-Windows), som godt nok repræsenterer sine
+Det er i virkeligheden ikke sÃ¥ fjernt fra fx. Microsoft
+styre-systemer (MS-Windows), som godt nok reprÃ¦senterer sine
 systemfunktioner med knapper og ruder, men som naturligvis har
-tegnbaserede funktioner bagved. Når du i SuSE's Yast2 fx. klikker
-på "tilføj bruger" og lignende, og taster oplysninger ind, så
-køres et program (useradd) som skriver de nye oplysninger ind i
-/etc/passwd - en tekstfil, som man lige så godt kunne have rettet
-i med en almindelig tekst editor. Der er mange, der foretrækker
-tekst-editoren som værktøj, men den kan dog ikke snakke direkte
-med kerne-funktionerne. Hertil kræves programmer som fx.
+tegnbaserede funktioner bagved. NÃ¥r du i SuSE's Yast2 fx. klikker
+pÃ¥ "tilfÃ¸j bruger" og lignende, og taster oplysninger ind, sÃ¥
+kÃ¸res et program (useradd) som skriver de nye oplysninger ind i
+/etc/passwd - en tekstfil, som man lige sÃ¥ godt kunne have rettet
+i med en almindelig tekst editor. Der er mange, der foretrÃ¦kker
+tekst-editoren som vÃ¦rktÃ¸j, men den kan dog ikke snakke direkte
+med kerne-funktionerne. Hertil krÃ¦ves programmer som fx.
 <command> ifconfig. </command>
 </para>
 
 <para>
-Du kan gøre "alt" med systemet fra en kommandolinje i Linux.
+Du kan gÃ¸re "alt" med systemet fra en kommandolinje i Linux.
 Kommandoerne, som du skriver, fx. <command> "ifconfig 10.1.1.2
 eth0" </command> er meget mere avancerede end de tilsvarende i
-DOS og Microsoft Windows cmd.exe.  Der er så mange smarte
-kommandoer i Linux-systemet, som kan sammensættes og hurtigt løse
-problemer, som ellers kunne tage tid.  Det er især derfor, at
+DOS og Microsoft Windows cmd.exe.  Der er sÃ¥ mange smarte
+kommandoer i Linux-systemet, som kan sammensÃ¦ttes og hurtigt lÃ¸se
+problemer, som ellers kunne tage tid.  Det er isÃ¦r derfor, at
 Linux er overlegen i forhold til Windows. Windows er i langt
-højere grad baseret på, at du må finde dig i, at du kan nogle bestemte
-ting på en bestemt måde, og der er andre ting, du bare ikke kan. Linux er
-måske sværere, men til gengæld kan man "alt".
+hÃ¸jere grad baseret pÃ¥, at du mÃ¥ finde dig i, at du kan nogle bestemte
+ting pÃ¥ en bestemt mÃ¥de, og der er andre ting, du bare ikke kan. Linux er
+mÃ¥ske svÃ¦rere, men til gengÃ¦ld kan man "alt".
 </para>
 
 <para>
-Har du ikke lyst til at lære tekstbaserede kommandoer overhovedet, er
-Linux måske lige på kanten til ikke at være interessant for dig.
+Har du ikke lyst til at lÃ¦re tekstbaserede kommandoer overhovedet, er
+Linux mÃ¥ske lige pÃ¥ kanten til ikke at vÃ¦re interessant for dig.
 </para>
 
 <para>
-Du kan dog komme langt med grafiske værktøjer i Linux, og den daglige
-brug kan sagtens foregå uden at taste kryptiske kommandoer ind - også
-installation og afinstallation af nye programmer kan køre grafisk. Men
+Du kan dog komme langt med grafiske vÃ¦rktÃ¸jer i Linux, og den daglige
+brug kan sagtens foregÃ¥ uden at taste kryptiske kommandoer ind - ogsÃ¥
+installation og afinstallation af nye programmer kan kÃ¸re grafisk. Men
 skal du selv installere specielle programmer og konfigurere systemet,
 kommer du ikke uden om kommandolinjen.
 </para>
@@ -904,21 +904,21 @@ kommer du ikke uden om kommandolinjen.
 <title>Linux er ikke enten-eller</title>
 <para>
 Findes dine favoritprogrammer endnu ikke til Linux, og vil du alligevel gerne
-i gang med at prøve Linux, findes der råd. Det er muligt at køre både
-Linux og Windows på den samme computer.
+i gang med at prÃ¸ve Linux, findes der rÃ¥d. Det er muligt at kÃ¸re bÃ¥de
+Linux og Windows pÃ¥ den samme computer.
 </para>
 
 <sect3 id="fororddualboot">
 <title>Dual boot</title>
-<indexterm><primary>Duét-opstart</primary></indexterm>
+<indexterm><primary>DuÃ©t-opstart</primary></indexterm>
 <para>
-Der er flere muligheder. Den mest udbredte er at køre dem hver for
-sig. Dvs. at du ved opstart af pc'en vælger, om du vil starte
-Linux eller Windows. Dette kaldes duét-opstart (eng. Dual Boot).
-Starter du Windows, kan du kun køre Windows-programmer og læse dine
+Der er flere muligheder. Den mest udbredte er at kÃ¸re dem hver for
+sig. Dvs. at du ved opstart af pc'en vÃ¦lger, om du vil starte
+Linux eller Windows. Dette kaldes duÃ©t-opstart (eng. Dual Boot).
+Starter du Windows, kan du kun kÃ¸re Windows-programmer og lÃ¦se dine
 Windows-data. Starter du
-Linux, kan du kun køre Linux-programmer, men du kan læse og skrive
-både på Windows' del af harddisken og på Linux' egen del af harddisken.
+Linux, kan du kun kÃ¸re Linux-programmer, men du kan lÃ¦se og skrive
+bÃ¥de pÃ¥ Windows' del af harddisken og pÃ¥ Linux' egen del af harddisken.
 </para>
 </sect3>
 
@@ -926,21 +926,21 @@ både på Windows' del af harddisken og på Linux' egen del af harddisken.
 <title>Virtual machine</title>
 <para>
 Den anden mulighed er at starte Linux og derefter starte Windows i et
-vindue under Linux, hvor det kører på en såkaldt virtuel maskine,
+vindue under Linux, hvor det kÃ¸rer pÃ¥ en sÃ¥kaldt virtuel maskine,
 dvs. hele processoren og kobling til maskinen
 <glossterm linkend="def-itplatform-emulere">emuleres</glossterm>. Dette kan
-gøres med programmet VMware, som kan findes på
+gÃ¸res med programmet VMware, som kan findes pÃ¥
 <ulink url="http://www.vmware.com">http://www.vmware.com</ulink> VMware koster
 $299 (dog billigere for bl.a. studerende).
-<indexterm><primary>Windows-programmer køres under Linux</primary></indexterm>
+<indexterm><primary>Windows-programmer kÃ¸res under Linux</primary></indexterm>
 <indexterm><primary>VMware</primary></indexterm>
 </para>
 
 <para>
-Så kan du køre dine Windows-programmer samtidig med, at du kører dine
-Linux-programmer - og principielt kan alle programmer køre. VMware
-kræver naturligvis at Windows er installeret på pc'en, og prisen
-er, at din maskine skal være ret kraftig - både CPU (gerne mere end 266
+SÃ¥ kan du kÃ¸re dine Windows-programmer samtidig med, at du kÃ¸rer dine
+Linux-programmer - og principielt kan alle programmer kÃ¸re. VMware
+krÃ¦ver naturligvis at Windows er installeret pÃ¥ pc'en, og prisen
+er, at din maskine skal vÃ¦re ret kraftig - bÃ¥de CPU (gerne mere end 266
 MHz Pentium II) og RAM (gerne 128 Mb).
 </para>
 </sect3>
@@ -948,18 +948,18 @@ MHz Pentium II) og RAM (gerne 128 Mb).
 <sect3 id="forordwinemu">
 <title>Windows-emulering</title>
 <para>
-En tredje mulighed for at køre Windows-programmer under Linux er at
+En tredje mulighed for at kÃ¸re Windows-programmer under Linux er at
 bruge en Windows-emulator under Linux. Der findes f.eks. en, der hedder
-WINE, som kan findes på
+WINE, som kan findes pÃ¥
 <ulink url="http://www.winehq.com">http://www.winehq.com</ulink>. Det
-er ikke alle Windows-programmer, der kan køre under WINE.
+er ikke alle Windows-programmer, der kan kÃ¸re under WINE.
 </para>
 
 <para>
-Hvis du kun har brug for at køre DOS-programmer, så er en fjerde
-mulighed at køre disse fra en DOS-emulator under Linux, som har navnet
+Hvis du kun har brug for at kÃ¸re DOS-programmer, sÃ¥ er en fjerde
+mulighed at kÃ¸re disse fra en DOS-emulator under Linux, som har navnet
 <command>dosemu</command>.
-Denne omtales nærmere i "Linux - Friheden til at vælge programmer".
+Denne omtales nÃ¦rmere i "Linux - Friheden til at vÃ¦lge programmer".
 </para>
 </sect3>
 
@@ -974,15 +974,15 @@ Denne omtales nærmere i "Linux - Friheden til at vælge programmer".
 <title>Linux er god til mange ting - samtidigt</title>
 
 <para>
-Linux er i sig selv lavet til at udnytte netværk. Da Linux er et
-styresystem, der er født med multitasking og designet til at give
-stor ydelse, kan du uden større problemer samtidigt køre 
+Linux er i sig selv lavet til at udnytte netvÃ¦rk. Da Linux er et
+styresystem, der er fÃ¸dt med multitasking og designet til at give
+stor ydelse, kan du uden stÃ¸rre problemer samtidigt kÃ¸re 
 webserver, 
 <glossterm linkend="def-itplatform-fjern-adgang">fjern-adgang</glossterm>, 
 udbydelse af
 <glossterm linkend="def-itplatform-anonym-FTP">anonym FTP</glossterm>,
-anvendelse af diske på andre maskiner, udnyttelse af netværksprintere,
-e-postserver, nyhedsserver, søge i databaser, samt surfe på internettet.
+anvendelse af diske pÃ¥ andre maskiner, udnyttelse af netvÃ¦rksprintere,
+e-postserver, nyhedsserver, sÃ¸ge i databaser, samt surfe pÃ¥ internettet.
 <indexterm><primary>anonym ftp</primary></indexterm>
 </para>
 
@@ -990,61 +990,61 @@ e-postserver, nyhedsserver, søge i databaser, samt surfe på internettet.
 Linux er et 
 <glossterm linkend="def-itplatform-32-bit-styresystem">32-bit styresystem</glossterm> 
 til pc og andre platforme
-(64-bit til Alpha), som enten kan erstatte DOS/Windows fuldstændigt
-eller installeres på samme maskine som disse. De basale operationer
-er normalt tekstbaserede, men efterhånden er der også mulighed for at
-benytte grafiske værktøjer. Fra Microsoft-verdenen kender
+(64-bit til Alpha), som enten kan erstatte DOS/Windows fuldstÃ¦ndigt
+eller installeres pÃ¥ samme maskine som disse. De basale operationer
+er normalt tekstbaserede, men efterhÃ¥nden er der ogsÃ¥ mulighed for at
+benytte grafiske vÃ¦rktÃ¸jer. Fra Microsoft-verdenen kender
 de fleste problemet med, at installation af et program meget
 ofte skal afsluttes med en genstart af maskinen, hvilket er kedeligt,
 hvis der skal tredive 
-<glossterm linkend="def-itplatform-sikkerhedsopdateringer">sikkerhedsopdateringer</glossterm> på maskinen. 
+<glossterm linkend="def-itplatform-sikkerhedsopdateringer">sikkerhedsopdateringer</glossterm> pÃ¥ maskinen. 
 <indexterm><primary>sikkerhedsopdateringer</primary></indexterm>
 Linux er derimod nemt at vedligeholde for en erfaren systemadministrator,
-da nye programmer normalt kan installeres over netværket.
-Systemadministratoren skal således ikke hen og sidde ved maskinen for at
-ændre på opsætningen eller tilføje nye programmer. En
-anden stor fordel er, at Linux-maskinen kan opgraderes, mens den kører
+da nye programmer normalt kan installeres over netvÃ¦rket.
+Systemadministratoren skal sÃ¥ledes ikke hen og sidde ved maskinen for at
+Ã¦ndre pÃ¥ opsÃ¦tningen eller tilfÃ¸je nye programmer. En
+anden stor fordel er, at Linux-maskinen kan opgraderes, mens den kÃ¸rer
 uden at skulle genstartes.
 </para>
 
 <para>
-I modsætning til Windows 95/98 kører programmerne under Linux i ægte
-multitasking. Hvis et program er gået ned, kan det blot afsluttes fra
-Linux uden, at dette påvirker stabiliteten af de øvrige programmer. På
-den enkelte Linux-maskine kan flere personer dele maskinen (også på
-samme tid) og undgå det rod, der tit opstår på en DOS/Windows-pc med
-forskellige opsætningsfiler, der ændres uden central styring. På enhver
+I modsÃ¦tning til Windows 95/98 kÃ¸rer programmerne under Linux i Ã¦gte
+multitasking. Hvis et program er gÃ¥et ned, kan det blot afsluttes fra
+Linux uden, at dette pÃ¥virker stabiliteten af de Ã¸vrige programmer. PÃ¥
+den enkelte Linux-maskine kan flere personer dele maskinen (ogsÃ¥ pÃ¥
+samme tid) og undgÃ¥ det rod, der tit opstÃ¥r pÃ¥ en DOS/Windows-pc med
+forskellige opsÃ¦tningsfiler, der Ã¦ndres uden central styring. PÃ¥ enhver
 Linux- og Unix-maskine er der en "superbruger", kaldet
 <emphasis>root</emphasis>, som er administrator af maskinen. Kun
-<emphasis>root</emphasis> kan ændre den generelle opsætning. Hver
-bruger oprettes på lige fod med andre og har normalt ikke rettigheder
-til at slette eller ændre i andre brugeres filer og slet ikke
-systemets filer. Den enkelte bruger kobler sig på med sit brugernavn
+<emphasis>root</emphasis> kan Ã¦ndre den generelle opsÃ¦tning. Hver
+bruger oprettes pÃ¥ lige fod med andre og har normalt ikke rettigheder
+til at slette eller Ã¦ndre i andre brugeres filer og slet ikke
+systemets filer. Den enkelte bruger kobler sig pÃ¥ med sit brugernavn
 og en privat adgangskode. Hvis man ikke har adgangskoden, kan man ikke
-komme ind på maskinen.
+komme ind pÃ¥ maskinen.
 </para>
 
 <para>
 I Unix-verdenen hedder det grafiske vinduesystem "X Window System" (i
-daglig tale X), og det følger også med til Linux. X-vinduesystemet er meget
+daglig tale X), og det fÃ¸lger ogsÃ¥ med til Linux. X-vinduesystemet er meget
 stabilt og er teknisk set forud for andre 
-alternativer. Den store fordel ved X er, at du via en netværksforbindelse
-kan koble dig på andre Unix-arbejdsstationer og køre
-programmer på disse maskiner. Programmerne kan være grafisk
-baserede, og det grafiske output vises på din skærm.
-Hver enkelt bruger kan vælge sin egen opsætning, så programmerne kører
+alternativer. Den store fordel ved X er, at du via en netvÃ¦rksforbindelse
+kan koble dig pÃ¥ andre Unix-arbejdsstationer og kÃ¸re
+programmer pÃ¥ disse maskiner. Programmerne kan vÃ¦re grafisk
+baserede, og det grafiske output vises pÃ¥ din skÃ¦rm.
+Hver enkelt bruger kan vÃ¦lge sin egen opsÃ¦tning, sÃ¥ programmerne kÃ¸rer
 med de vante farver, skrifttyper osv.
 </para>
 
 <para>
-For at køre Linux med grafisk brugergrænseflade kræves mindst en 386
+For at kÃ¸re Linux med grafisk brugergrÃ¦nseflade krÃ¦ves mindst en 386
 pc med 8 Mb hukommelse og minimum 50 Mb harddisk.  Normalt vil du dog
-få meget større glæde af Linux-maskinen med 16 eller 32 Mb hukommelse;
+fÃ¥ meget stÃ¸rre glÃ¦de af Linux-maskinen med 16 eller 32 Mb hukommelse;
 f.eks. vil en 166 MHz Pentium pc med 32 Mb hukommelse og 500 Mb
 harddisk give en potent Unix-arbejdsstation. Den arbejder hurtigt, du
-får masser af programmer, og systemet er meget stabilt - altsammen for
-meget få penge.  Det skal også nævnes, at nok har de fleste en Intel-baseret 
-maskine, men Linux kører også fint på mange andre platforme.
+fÃ¥r masser af programmer, og systemet er meget stabilt - altsammen for
+meget fÃ¥ penge.  Det skal ogsÃ¥ nÃ¦vnes, at nok har de fleste en Intel-baseret 
+maskine, men Linux kÃ¸rer ogsÃ¥ fint pÃ¥ mange andre platforme.
 </para>
 
 </sect1>
@@ -1055,9 +1055,9 @@ maskine, men Linux kører også fint på mange andre platforme.
 
 <para>
 Linux er i dag installeret af mange teknisk interesserede mennesker
-hjemme og/eller på arbejdet. Mange installerer Linux og erstatter eller
-supplerer Windows med Linux - enten på grund af de nye muligheder, der
-ligger i Linux, eller på grund af utilfredshed med f.eks. 
+hjemme og/eller pÃ¥ arbejdet. Mange installerer Linux og erstatter eller
+supplerer Windows med Linux - enten pÃ¥ grund af de nye muligheder, der
+ligger i Linux, eller pÃ¥ grund af utilfredshed med f.eks. 
 Windows-programmers manglende stabilitet.
 </para>
 
@@ -1065,61 +1065,61 @@ Windows-programmers manglende stabilitet.
 Mange firmaer bruger Linux som filserver for
 Windows-klienter. Pga. stor ydelse 
 og en endnu bedre stabilitet kommer Linux her ind og overtager Windows NT's
-funktioner - og gør det bedre. Mange firmaer ønsker webservere
-med databasetilgang, som skal kunne yde meget. Også her er
+funktioner - og gÃ¸r det bedre. Mange firmaer Ã¸nsker webservere
+med databasetilgang, som skal kunne yde meget. OgsÃ¥ her er
 Linux et godt valg.
 </para>
 
 <para>
-Internetudbydere anvender hyppigt Linux på grund af god <glossterm
-linkend="def-itplatform-skalerbarhed">skalerbarhed</glossterm>, høj driftsikkerhed,
+Internetudbydere anvender hyppigt Linux pÃ¥ grund af god <glossterm
+linkend="def-itplatform-skalerbarhed">skalerbarhed</glossterm>, hÃ¸j driftsikkerhed,
 let vedligeholdelse og en meget hurtig adgang til nyheder om
-sikkerhedsproblemer og løsninger på disse.  Tiscali
-(tidligere World Online eller Image Scandinavia) er en af de største internetudbydere i
+sikkerhedsproblemer og lÃ¸sninger pÃ¥ disse.  Tiscali
+(tidligere World Online eller Image Scandinavia) er en af de stÃ¸rste internetudbydere i
 Danmark og bruger Linux som platform.
-<indexterm><primary>skalérbarhed</primary></indexterm>
+<indexterm><primary>skalÃ©rbarhed</primary></indexterm>
 <indexterm><primary>driftsikkerhed</primary></indexterm>
 </para>
 
 <para>
-På flere universiteter og andre læreanstalter er Linux blevet meget
-udbredt på grund af adgangen til gratis programmer og muligheden
+PÃ¥ flere universiteter og andre lÃ¦reanstalter er Linux blevet meget
+udbredt pÃ¥ grund af adgangen til gratis programmer og muligheden
 for at lave flerbrugersystemer til mange
-studerende. Mange firmaer kører Linux i dag, enten for at få gode
+studerende. Mange firmaer kÃ¸rer Linux i dag, enten for at fÃ¥ gode
 udviklingsplatforme, som filservere eller oftest som brandmure
-til at afskærme firmanetværk mod internettet.
+til at afskÃ¦rme firmanetvÃ¦rk mod internettet.
 </para>
 
 <para>
 Internationalt er Linux kernen i store WAN-systemer (Wide Area Network). 
-Her kan nævnes IKEA, US Postal Services, NASA og CERN, der alle er
-karakteriseret ved, at de ikke nemt kunne få opfyldt specialiserede
-ønsker hos de etablerede EDB-leverandører. I stedet har de valgt at få
-fuld adgang til hele systemkoden og derefter lave præcis det system,
-de ønsker.
+Her kan nÃ¦vnes IKEA, US Postal Services, NASA og CERN, der alle er
+karakteriseret ved, at de ikke nemt kunne fÃ¥ opfyldt specialiserede
+Ã¸nsker hos de etablerede EDB-leverandÃ¸rer. I stedet har de valgt at fÃ¥
+fuld adgang til hele systemkoden og derefter lave prÃ¦cis det system,
+de Ã¸nsker.
 </para>
 
 <para>
-En række danske firmaer - anført af Liga, SuperUsers, Kampsax Technology,
-Netcetera, Xenux, Plomus, eHuset og Webvisor - sælger
-specialløsninger og konsulent-tjenester baseret på Linux. Den mest
-kendte succeshistorie er nok TeVefonen på TV2's tekst-tv, som blev
+En rÃ¦kke danske firmaer - anfÃ¸rt af Liga, SuperUsers, Kampsax Technology,
+Netcetera, Xenux, Plomus, eHuset og Webvisor - sÃ¦lger
+speciallÃ¸sninger og konsulent-tjenester baseret pÃ¥ Linux. Den mest
+kendte succeshistorie er nok TeVefonen pÃ¥ TV2's tekst-tv, som blev
 lavet af den danske afdeling af Grundig TV i samarbejde med 2M
-Electronic, der også udvikler betalings-tv-løsninger til hoteller på
+Electronic, der ogsÃ¥ udvikler betalings-tv-lÃ¸sninger til hoteller pÃ¥
 Linux. En anden succeshistorie er printerserverfirmaet Lasat Networks
-(i-data), som baserer mange af deres produkter på Linux.
+(i-data), som baserer mange af deres produkter pÃ¥ Linux.
 </para>
 
 <para>
-Linux vinder også frem indenfor 
+Linux vinder ogsÃ¥ frem indenfor 
 <glossterm linkend="def-itplatform-beowulf">Beowulf-klyngesystemer</glossterm> 
 (eng. cluster).
-I tilfælde hvor man skal bruge meget mere beregningskraft end hvad der
-kan hentes ud af én maskine, så kobler man en masse (billige) maskiner
-ind i samme højhastighedsnetværk og udnytter klyngens samlede kraft.
+I tilfÃ¦lde hvor man skal bruge meget mere beregningskraft end hvad der
+kan hentes ud af Ã©n maskine, sÃ¥ kobler man en masse (billige) maskiner
+ind i samme hÃ¸jhastighedsnetvÃ¦rk og udnytter klyngens samlede kraft.
 I dag har bl.a. Niels Bohr Institut, Datalogisk Institut ved
-Københavns Universitet og Institut for Matematisk
-Modellering på DTU lavet store Linux-klynger.
+KÃ¸benhavns Universitet og Institut for Matematisk
+Modellering pÃ¥ DTU lavet store Linux-klynger.
 </para>
 
 </sect1>
@@ -1134,7 +1134,7 @@ Modellering på DTU lavet store Linux-klynger.
 <indexterm> <primary>Distributioner</primary> </indexterm>
 
 <para>
-Der er som nævnt tidligere mange forlag, der udgiver hver sin udgave
+Der er som nÃ¦vnt tidligere mange forlag, der udgiver hver sin udgave
 af Linux (ofte kaldet en distribution). Den vigtigste forskel mellem
 de forskellige udgaver er nok installationsprogrammet, men derudover
 er der to forskellige systemer til at distribuere programmer til

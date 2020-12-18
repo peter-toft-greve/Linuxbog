@@ -2,7 +2,7 @@
 
 SUBDIRS = friheden itplatform forsker signatur unix wm applikationer admin program web sikkerhed c dokumentation kontorbruger java
 
-# version - skal bruges til samlingerne (i øjeblikket kun palm)
+# version - skal bruges til samlingerne (i Ã¸jeblikket kun palm)
 version:=$(shell (cd friheden; grep -A2 "<listitem>" apprevhist.sgml | head -n 2 | tail -n 1 | cut -d' ' -f2 > ../samling/version.sgml; cat ../samling/version.sgml))
 
 all: cvs2htmlweb filer palmpilot-samling
@@ -16,7 +16,7 @@ start:
 		make -C $$dir start; \
 		make -C $$dir ekstra; \
 	done;
-	echo "Installerer Makefiler og fælles SGML-filer til alle bøger"
+	echo "Installerer Makefiler og fÃ¦lles SGML-filer til alle bÃ¸ger"
 
 filer:  start
 	@for dir in $(SUBDIRS); do \
@@ -84,4 +84,4 @@ ifeq	($(shell if which cvs2html >/dev/null 2>&1; then echo -n 1; fi;), 1)
 endif
 
 mail:
-#	@echo "Nu er der nye bøger på tyge. Have a nice day" | mail -s "automatisk mail: bog OK" linuxbog@sslug.dk
+#	@echo "Nu er der nye bÃ¸ger pÃ¥ tyge. Have a nice day" | mail -s "automatisk mail: bog OK" linuxbog@sslug.dk

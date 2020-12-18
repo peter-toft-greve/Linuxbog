@@ -3,7 +3,7 @@
 <!-- $Id$ -->
 <html>
 <head>
-<title>Min gæstebog</title>
+<title>Min gÃ¦stebog</title>
 </head>
 <body bgcolor="white">
 
@@ -12,7 +12,7 @@
 function gem_denne($navn, $email, $hilsen ) {
   // Hent password
   require(".password.php");
-  // Åben forbindelse til databasen
+  // Ã…ben forbindelse til databasen
   $conn = pg_pconnect("dbname=$dbname user=$dbuser");
 
   $sql = "INSERT INTO gaest(navn,email,hilsen) VALUES('$navn', '$email', '$hilsen')";
@@ -24,7 +24,7 @@ function gem_denne($navn, $email, $hilsen ) {
 
 // Test om der blev klikket 'Gem'
 if ($aktion == "Gem") {
-  echo "Hej <b>$navn</b><br>Tak fordi du skrev i min gæstebog.";
+  echo "Hej <b>$navn</b><br>Tak fordi du skrev i min gÃ¦stebog.";
   gem_denne($navn, $email, $hilsen);
 }
 

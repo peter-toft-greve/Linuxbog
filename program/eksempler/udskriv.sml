@@ -3,19 +3,19 @@
 	af Henning Niss <hniss@diku.dk>
   $Id$
 
-	Kør programmet:
+	KÃ¸r programmet:
 	1. Start mosml
 	2. "udskriv.sml"
 	3. main (["udskriv.sml"])
 *)
 
 
-(* [Fejl besked] exception der rejses når der opstår fejl. *)
+(* [Fejl besked] exception der rejses nÃ¥r der opstÃ¥r fejl. *)
 exception Fejl of string
 
 (* [lase_filnavn ()] checker kommandolinien for netop et argument
-   og bruger det som filnavn. Dernæst checkes om filen kan læses, og
-   hvis dette er tilfælde læses hele molevitten, og strengen opdeles
+   og bruger det som filnavn. DernÃ¦st checkes om filen kan lÃ¦ses, og
+   hvis dette er tilfÃ¦lde lÃ¦ses hele molevitten, og strengen opdeles
    i en liste af strenge - et element for hver linie i filen.
 *)
 fun laes_filnavn args =
@@ -23,10 +23,10 @@ fun laes_filnavn args =
         val filnavn = hd args
                       handle List.Empty =>
                           raise Fejl("Kald programmet med et filnavn\n")
-        (* check om filen kan læses *)
+        (* check om filen kan lÃ¦ses *)
         val _ = if FileSys.access (filnavn,[]) then ()
-                else raise Fejl("Filen " ^ filnavn ^ " kan ikke læses\n")
-        (* læs hele molevitten - ombryd ved linieskift *)
+                else raise Fejl("Filen " ^ filnavn ^ " kan ikke lÃ¦ses\n")
+        (* lÃ¦s hele molevitten - ombryd ved linieskift *)
         val is = TextIO.openIn filnavn
     in  String.tokens (fn #"\n" => true | _ => false) (TextIO.inputAll is)
         before
@@ -34,7 +34,7 @@ fun laes_filnavn args =
     end
 
 (* [udskriv_linier linier] udskriver listen af linier. Hver linie 
-   foranstilles med et linienummer (højrejusteret i et felt på 3).
+   foranstilles med et linienummer (hÃ¸jrejusteret i et felt pÃ¥ 3).
 *)
 fun udskriv_linier linier =
     let val cifre = (Real.ceil o Math.log10 o Real.fromInt o length) linier
@@ -47,7 +47,7 @@ fun udskriv_linier linier =
     in  app print (rev linier)
     end
 
-(* [vent ()] læser fra standard input indtil der tastes Q <ENTER>. *)
+(* [vent ()] lÃ¦ser fra standard input indtil der tastes Q <ENTER>. *)
 fun vent () =
     let fun loop () = 
         if TextIO.inputLine TextIO.stdIn = "Q\n" then ()

@@ -16,29 +16,29 @@
  </indexterm>
 
  <para>
-  Haskell er et funktionsorienteret programmeringssprog og minder på
-  mange måder om SML. Mange af de ting der er beskrevet i afsnittet om
-  <link linkend="sprog-ml">SML</link> gælder derfor også for Haskell.
-  Der er typepolymorfi, højereordens funktioner og funktionsdefinition 
-  ved mønstre.
+  Haskell er et funktionsorienteret programmeringssprog og minder pÃ¥
+  mange mÃ¥der om SML. Mange af de ting der er beskrevet i afsnittet om
+  <link linkend="sprog-ml">SML</link> gÃ¦lder derfor ogsÃ¥ for Haskell.
+  Der er typepolymorfi, hÃ¸jereordens funktioner og funktionsdefinition 
+  ved mÃ¸nstre.
  </para>
 
  <para>
-  Den første måde hvor Haskell adskiller sig fra SML er at Haskell er 
+  Den fÃ¸rste mÃ¥de hvor Haskell adskiller sig fra SML er at Haskell er 
   et rent funktionsorienteret sprog, hvor SML har nogle imperative dele.
-  Det har især betydning for I/O der i Haskell foregår ved hjælp af et
+  Det har isÃ¦r betydning for I/O der i Haskell foregÃ¥r ved hjÃ¦lp af et
   koncept der hedder monader.
  </para>
 
  <para>
   Den anden forskel er at Haskell er et dovent sprog. Dette betyder at
-  argumenter til funktioner først bliver evalueret når den kaldte 
+  argumenter til funktioner fÃ¸rst bliver evalueret nÃ¥r den kaldte 
   funktion benytter dem. Dette giver blandt andet mulighed for at behandle
   uendelige datastrukturer, for eksempel uendelige lister af tal.
  </para>
 
  <para>
-  Der er oversættere og fortolkere til de fleste platforme herunder *BSD,
+  Der er oversÃ¦ttere og fortolkere til de fleste platforme herunder *BSD,
   Linux, MacOS og Windows.
  </para>
 
@@ -46,14 +46,14 @@
   <title>Brug af Haskell</title>
 
   <para>
-   Skal man lege med Haskell bør man tage fat i Hugs. Den implementerer en
-   læs-beregn-udskriv løkke hvor man kan skrive et udtryk og få Hugs til 
+   Skal man lege med Haskell bÃ¸r man tage fat i Hugs. Den implementerer en
+   lÃ¦s-beregn-udskriv lÃ¸kke hvor man kan skrive et udtryk og fÃ¥ Hugs til 
    at beregne udtrykket. Man kan dog ikke definere nye funktioner, de skal
    skrives i filer.
   </para>
 
   <para>
-   Hvis man for eksempel har en fil <filename>Test.hs</filename> med følgende
+   Hvis man for eksempel har en fil <filename>Test.hs</filename> med fÃ¸lgende
    indhold
 
 <programlisting>
@@ -66,7 +66,7 @@ mysum []         = 0
 mysum (x:xs)     = x + sum xs
 </programlisting>
 
-   En session med Hugs kan så se således ud
+   En session med Hugs kan sÃ¥ se sÃ¥ledes ud
 
 <screen>
 __   __ __  __  ____   ___      _________________________________________
@@ -96,9 +96,9 @@ Test.hs
 <prompt>Main&gt; </prompt>
 </screen>
 
-   Man kan så inde fra Hugs redigere <filename>Test.hs</filename> med
+   Man kan sÃ¥ inde fra Hugs redigere <filename>Test.hs</filename> med
    kommandoen <command>:edit Test.hs</command> der starter en editor og
-   efterfølgende genindlæser filen
+   efterfÃ¸lgende genindlÃ¦ser filen
   </para>
  </sect2>
 
@@ -106,15 +106,15 @@ Test.hs
   <title>Doven evaluering</title>
 
   <para>
-   Haskell er et dovent sprog. Det betyder at den udsætter beregningen af et 
-   udtryk så lang tid som det overhovedet er muligt. Normalt er man vant til
-   at argumenterne i et funktionskald bliver beregnet før funktionen kaldes.
-   Sådan gør haskell ikke.
+   Haskell er et dovent sprog. Det betyder at den udsÃ¦tter beregningen af et 
+   udtryk sÃ¥ lang tid som det overhovedet er muligt. Normalt er man vant til
+   at argumenterne i et funktionskald bliver beregnet fÃ¸r funktionen kaldes.
+   SÃ¥dan gÃ¸r haskell ikke.
   </para>
 
   <para>
-   Man ville for eksempel forvente at følgende stykke kode gik i
-   uendelig løkke:
+   Man ville for eksempel forvente at fÃ¸lgende stykke kode gik i
+   uendelig lÃ¸kke:
 
 <programlisting>
 foo :: Int -> Int
@@ -128,13 +128,13 @@ switch False n m = m
 switch True (foo 0) (foo 5)
 </programlisting>
 
-   Men eftersom værdien af <literal>(foo 5)</literal> bare bliver smidt
-   vil Haskell ikke forsøge at beregne det.
+   Men eftersom vÃ¦rdien af <literal>(foo 5)</literal> bare bliver smidt
+   vil Haskell ikke forsÃ¸ge at beregne det.
   </para>
 
   <para>
    Dette giver mulighed for at definere strukturer der egentligt er uendelige.
-   For eksempel kan Fibonaccis talfølge kan let skrives som:
+   For eksempel kan Fibonaccis talfÃ¸lge kan let skrives som:
 
 <programlisting>
 zip :: [a] -> [b] -> [(a,b)]
@@ -152,17 +152,17 @@ fib = 0 : 1 : map add (zip fib, (tail fib))
 
   <para>
    <literal>zip</literal> tager to lister og danner en liste af par og 
-   <literal>add</literal> tager et par af to tal og lægger dem sammn.
+   <literal>add</literal> tager et par af to tal og lÃ¦gger dem sammn.
   </para>
 
-  <!-- Og så bliver det sort...
-       Mon det hjælper at vise et par trins håndkøring?
+  <!-- Og sÃ¥ bliver det sort...
+       Mon det hjÃ¦lper at vise et par trins hÃ¥ndkÃ¸ring?
   -->
 
   <para>
    <literal>(zip fib, (tail fib))</literal> laver en uendelig liste af
-   par med to på hinanden følgende tal i Fibonaccis talfølge. <literal>
-   map add (...)</literal> lægger disse par sammen.
+   par med to pÃ¥ hinanden fÃ¸lgende tal i Fibonaccis talfÃ¸lge. <literal>
+   map add (...)</literal> lÃ¦gger disse par sammen.
   </para>
  </sect2>
  

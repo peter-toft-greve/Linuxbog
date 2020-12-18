@@ -11,14 +11,14 @@ NetBSD er som navnet antyder en BSD-variant ligesom FreeBSD og OpenBSD.
 </para>
 
 <para>
-NetBSD kæmper med Debian GNU/Linux om at være det mest portable
-styresystem, hvilket af systemerne der fører kommer an på hvordan man
-tæller, men faktum er at begge systemer findes til en meget lang række
+NetBSD kÃ¦mper med Debian GNU/Linux om at vÃ¦re det mest portable
+styresystem, hvilket af systemerne der fÃ¸rer kommer an pÃ¥ hvordan man
+tÃ¦ller, men faktum er at begge systemer findes til en meget lang rÃ¦kke
 platforme.  
 </para>
 
 <para>
-Du kan læse mere om NetBSD på projektets hjemmeside
+Du kan lÃ¦se mere om NetBSD pÃ¥ projektets hjemmeside
 <ulink url="http://www.netbsd.org">http://www.netbsd.org</ulink>.
 
 </para>
@@ -26,10 +26,10 @@ Du kan læse mere om NetBSD på projektets hjemmeside
 </sect1>
 
  <sect1 id="distro-netbsd-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for NetBSD</secondary>
   </indexterm>
 
@@ -47,73 +47,73 @@ Du kan læse mere om NetBSD på projektets hjemmeside
   </indexterm>
 
 <para>
-Der er to forskellige versioner af NetBSD man kan vælge at
+Der er to forskellige versioner af NetBSD man kan vÃ¦lge at
 installere. Den seneste formelle udgivelse, som i skrivende stund er
-version 1.6.1, eller -current som er udviklingsversionen. Det frarådes
-at bruge -current på produktionsmaskiner.
+version 1.6.1, eller -current som er udviklingsversionen. Det frarÃ¥des
+at bruge -current pÃ¥ produktionsmaskiner.
 </para>
 
 <para>
 Man kan enten hente <ulink
 url="http://www.netbsd.org/Sites/cdroms.html#officialiso">ISO-filer</ulink>
-og installere fra, eller man kan installere via FTP. I så fald skal
+og installere fra, eller man kan installere via FTP. I sÃ¥ fald skal
 man blot hente
 <filename>boot1.fs</filename>
 <filename>boot2.fs</filename>
 fra
 <filename>ftp://ftp.dk.netbsd.org/pub/NetBSD/NetBSD-1.6.1/i386/installation/floppy/</filename>,
-og skrive dem på disketter (f.eks. med <command>dd</command>).
+og skrive dem pÃ¥ disketter (f.eks. med <command>dd</command>).
 </para>
 
 <para>
 Installationsprogrammet er tekstbaseret og har et menusystem der er
-ret nemt at bruge. Det første man skal vælge er 'Install NetBSD to
+ret nemt at bruge. Det fÃ¸rste man skal vÃ¦lge er 'Install NetBSD to
 hard disk'.
 </para>
 
 <para>
-Når man skal installere en BSD-variant kan det være rart at vide at de
-kalder enhederne noget andet end Linux. NetBSD kaldte således mine
+NÃ¥r man skal installere en BSD-variant kan det vÃ¦re rart at vide at de
+kalder enhederne noget andet end Linux. NetBSD kaldte sÃ¥ledes mine
 IDE-diske (hda og hdd under Linux) for wd0 og wd1. Ligeledes blev mine
-netkort kaldt rtk0 og rtk1 (men heldigvis nummeret i samme rækkefølge
-som Linux gør det).
+netkort kaldt rtk0 og rtk1 (men heldigvis nummeret i samme rÃ¦kkefÃ¸lge
+som Linux gÃ¸r det).
 </para>
 
 <para>
-Første egentlige skridt er at partitionere harddisken. NetBSD skal som
-de andre BSD-varianter bruge en primær partition (i
-DOS/Linux-terminologi), som den så kalder en slice, og opretter det
-den kalder partitioner deri (ved hjælp af en 'disklabel')
+FÃ¸rste egentlige skridt er at partitionere harddisken. NetBSD skal som
+de andre BSD-varianter bruge en primÃ¦r partition (i
+DOS/Linux-terminologi), som den sÃ¥ kalder en slice, og opretter det
+den kalder partitioner deri (ved hjÃ¦lp af en 'disklabel')
 </para>
 
 <para>
-Hvis du installerer NetBSD på en maskine hvor der er andre
+Hvis du installerer NetBSD pÃ¥ en maskine hvor der er andre
 styresystemer, vil installationsprogrammet undervejs i
-partitioneringen spørge om det skal installere en 'bootselector'.  NetBSD's
+partitioneringen spÃ¸rge om det skal installere en 'bootselector'.  NetBSD's
 'bootselector' kunne boote DOS og Windows (og naturligvis NetBSD) men
-ikke Linux. I stedet kan LiLo nemt sættes op til at boote NetBSD, det
-fungerer præcis som når den skal boote DOS/Windows.
+ikke Linux. I stedet kan LiLo nemt sÃ¦ttes op til at boote NetBSD, det
+fungerer prÃ¦cis som nÃ¥r den skal boote DOS/Windows.
 </para>
 
 <para>
-Til oprettelse af NetBSD's partioner (i 'slicen') får du mulighed for
-at vælge 
+Til oprettelse af NetBSD's partioner (i 'slicen') fÃ¥r du mulighed for
+at vÃ¦lge 
 <itemizedlist mark="bullet">
 <listitem><para>Standard</para></listitem>
 <listitem><para>Standard with X</para></listitem>
 <listitem><para>Custom</para></listitem>
 <listitem><para>Use existing</para></listitem>
 </itemizedlist>
-Selvom man vælger en af standarderne, bliver man stadig præsenteret
+Selvom man vÃ¦lger en af standarderne, bliver man stadig prÃ¦senteret
 for en oversigt over hvad der vil blive gjort.
 </para>
 
 <para>
-Når partitioner og filsystemer er oprettet,
-får man et spørgsmål man som Linux-bruger næppe er vandt til, nemlig
+NÃ¥r partitioner og filsystemer er oprettet,
+fÃ¥r man et spÃ¸rgsmÃ¥l man som Linux-bruger nÃ¦ppe er vandt til, nemlig
 om man vil bruge normale eller serielle bootblokke. Det drejer sig om
-hvorvidt man vil bruge skærm+tastatur som konsol (normale bootblokke)
-eller om man har en seriel konsol på den første serielle port og vil
+hvorvidt man vil bruge skÃ¦rm+tastatur som konsol (normale bootblokke)
+eller om man har en seriel konsol pÃ¥ den fÃ¸rste serielle port og vil
 bruge den til installationen. Dem der ikke vil bruge normale
 bootblokke vil vide det!
 </para>
@@ -121,49 +121,49 @@ bootblokke vil vide det!
 <para>
 Efter en oplysning om at man nu er kommet til anden del af
 installationsproceduren, bliver man spurgt om man vil installere alle
-dens 'distribution filesets'. Det kan man roligt vælge at gøre uden at
+dens 'distribution filesets'. Det kan man roligt vÃ¦lge at gÃ¸re uden at
 frygte at den installerer alt muligt.
 </para>
 
 <para>
-Hvis man vil installere via netværk (FTP eller NFS) kommer man
-herefter til netværkskonfiguartionen. Her har man mulighed for at
-bruge DHCP eller konfigurere det manuelt. Derudover får man endnu et
-spørgsmål, man som Linux-bruger næppe er forvænt med, nemlig om der
-skal foretages autoopsætning af IPv6, der er næppe mange der på
-nuværende tidspunkt ville få noget fornufigt ud af at vælge det.
-Hvis man har valgt at installere via FTP, bliver man også spurgt om
+Hvis man vil installere via netvÃ¦rk (FTP eller NFS) kommer man
+herefter til netvÃ¦rkskonfiguartionen. Her har man mulighed for at
+bruge DHCP eller konfigurere det manuelt. Derudover fÃ¥r man endnu et
+spÃ¸rgsmÃ¥l, man som Linux-bruger nÃ¦ppe er forvÃ¦nt med, nemlig om der
+skal foretages autoopsÃ¦tning af IPv6, der er nÃ¦ppe mange der pÃ¥
+nuvÃ¦rende tidspunkt ville fÃ¥ noget fornufigt ud af at vÃ¦lge det.
+Hvis man har valgt at installere via FTP, bliver man ogsÃ¥ spurgt om
 hvilken FTP-server man vil benytte. Som
-standard foreslår den <filename>ftp.netbsd.org</filename>, hvilket det
-for danskere kan anbefales at ændre til
-<filename>ftp.dk.netbsd.org</filename> (En række andre landekoder kan
+standard foreslÃ¥r den <filename>ftp.netbsd.org</filename>, hvilket det
+for danskere kan anbefales at Ã¦ndre til
+<filename>ftp.dk.netbsd.org</filename> (En rÃ¦kke andre landekoder kan
 benyttes tilsvarende).
 </para>
 
 <para>
 Herefter vil installationsprogrammet arbejde i et stykke
-tid. Når det har hentet og udpakket alting, får du stillet nogle få
-væsentlige spørgsmål, før du kommer tilbage til samme skærmbillede som
-installationen startede med. Denne gang kan det anbefales at vælge at
+tid. NÃ¥r det har hentet og udpakket alting, fÃ¥r du stillet nogle fÃ¥
+vÃ¦sentlige spÃ¸rgsmÃ¥l, fÃ¸r du kommer tilbage til samme skÃ¦rmbillede som
+installationen startede med. Denne gang kan det anbefales at vÃ¦lge at
 genstarte maskinen.
 </para>
 
 <!--
 Installationsprogrammet sagde noget om:
-Læs INSTALL om afsluttende konfig
-men det gjorde jeg selvfølgelig ikke. - Men hvor er den fil?
-Det sagde også:
+LÃ¦s INSTALL om afsluttende konfig
+men det gjorde jeg selvfÃ¸lgelig ikke. - Men hvor er den fil?
+Det sagde ogsÃ¥:
 Ret /etc/rc.conf (se /etc/defaults/rc.conf)
 -->
 
 <para>
-Når du genstarter vil du se NetBSD starte op, men eftersom X endnu
-ikke er konfigureret får du kun en almindelig konsol op.
+NÃ¥r du genstarter vil du se NetBSD starte op, men eftersom X endnu
+ikke er konfigureret fÃ¥r du kun en almindelig konsol op.
 </para>
 
 <para>
-Det du har nu er et meget råt system. Der er ikke installeret meget
-mere end højst nødvendigt (der er dog en <command>vi</command> til de
+Det du har nu er et meget rÃ¥t system. Der er ikke installeret meget
+mere end hÃ¸jst nÃ¸dvendigt (der er dog en <command>vi</command> til de
 stakler der ikke kan klare sig med <command>ed</command>).
 Standardkommandofortolkeren er csh (nej, <emphasis>ikke</emphasis> tcsh).
 </para>
@@ -173,7 +173,7 @@ Der er heller ikke andre brugere end <literal>root</literal>.
 </para>
 
 <para>
-Du kan få dansk tastatur ved at gå ind i
+Du kan fÃ¥ dansk tastatur ved at gÃ¥ ind i
 <filename>/etc/wscons.conf</filename> og rette linien
 <programlisting>
 #encoding sv
@@ -185,8 +185,8 @@ encoding dk
 </para>
 
 <para>
-Til opsætning af X er der <command>xf86config</command>. Et rent
-tekstbaseret værktøj, som vækker masser af gode minder.  Det eneste
+Til opsÃ¦tning af X er der <command>xf86config</command>. Et rent
+tekstbaseret vÃ¦rktÃ¸j, som vÃ¦kker masser af gode minder.  Det eneste
 der ikke var som under Linux var min ps/2-mus. Programmet fortalte mig
 dog at det rigtige valg var 'wsmouse protocol' og
 <filename>/dev/wsmouse0</filename> som port.
@@ -198,40 +198,40 @@ dog at det rigtige valg var 'wsmouse protocol' og
 <title>Daglig brug af NetBSD</title>
 
 <para>
-De enkelte programmer virker som under Linux, så som almindelig bruger
-mærker man ikke at man kører NetBSD i stedet for en Linux-variant.
-Som systemadministrator er forskellene større.
+De enkelte programmer virker som under Linux, sÃ¥ som almindelig bruger
+mÃ¦rker man ikke at man kÃ¸rer NetBSD i stedet for en Linux-variant.
+Som systemadministrator er forskellene stÃ¸rre.
 </para>
 
 <para>
-Læs <ulink
+LÃ¦s <ulink
 url="http://www.netbsd.org/Documentation/software/packages.html">http://www.netbsd.org/Documentation/software/packages.html</ulink>
 for at finde ud af hvordan du kan installere programmer.
 </para>
 
 <para>
-Hvis du er tilfreds med at installere binære pakker, kan du sætte
+Hvis du er tilfreds med at installere binÃ¦re pakker, kan du sÃ¦tte
 omgivelsesvariablen <command>PKG_PATH</command> til
 <filename>ftp://ftp.dk.netbsd.org/pub/NetBSD/packages/1.6.1/i386/ALL</filename>,
-så kan du f.eks. installere <command>zsh</command> med kommandoen
+sÃ¥ kan du f.eks. installere <command>zsh</command> med kommandoen
 <command>pkg_add zsh</command>.
-Med den opsætning kan <command>pkg_add</command> selv
-klare finde eventuelle afhængigheder (så længe der er officielle pakker).
-En oversigt over hvad man kan installere på denne måde, kan findes på
-den ovenfor nævnte side. Der burde være nok at vælge imellem.
+Med den opsÃ¦tning kan <command>pkg_add</command> selv
+klare finde eventuelle afhÃ¦ngigheder (sÃ¥ lÃ¦nge der er officielle pakker).
+En oversigt over hvad man kan installere pÃ¥ denne mÃ¥de, kan findes pÃ¥
+den ovenfor nÃ¦vnte side. Der burde vÃ¦re nok at vÃ¦lge imellem.
 </para>
 
 <para>
 Som en BSD-variant benytter NetBSD ikke <command>sysvinit</command>
-(de runlevel scripts der under Linux bliver kørt ved start) men i
+(de runlevel scripts der under Linux bliver kÃ¸rt ved start) men i
 stedet <filename>/etc/rc.conf</filename>. 
 </para>
 
 <para>
-Hvis man logger ind som <literal>root</literal>, får man at vide at
-det er en dårlig idé og bliver rådet til at bruge
-<command>su</command> i stedet. Det er et rigtig godt råd, men man
-skal lige være opmærksom på at kun medlemmer af
+Hvis man logger ind som <literal>root</literal>, fÃ¥r man at vide at
+det er en dÃ¥rlig idÃ© og bliver rÃ¥det til at bruge
+<command>su</command> i stedet. Det er et rigtig godt rÃ¥d, men man
+skal lige vÃ¦re opmÃ¦rksom pÃ¥ at kun medlemmer af
 <literal>wheel</literal>-gruppen kan bruge <command>su</command> til
 at blive <literal>root</literal>.
 </para>
@@ -242,11 +242,11 @@ at blive <literal>root</literal>.
 <title>Konklusion</title>
 
 <para>
-NetBSD er et spændende alternativ til Linux, men man skal kende sin
-standardværktøjer, og være forberedt på at der er meget der skal
-konfigureres hvis den skal se ud som en typisk Linux. Til gengæld har
-man alle muligheder for at få et system der ser ud præcis som man vil
-have det og på næsten en hvilken som helst platform.
+NetBSD er et spÃ¦ndende alternativ til Linux, men man skal kende sin
+standardvÃ¦rktÃ¸jer, og vÃ¦re forberedt pÃ¥ at der er meget der skal
+konfigureres hvis den skal se ud som en typisk Linux. Til gengÃ¦ld har
+man alle muligheder for at fÃ¥ et system der ser ud prÃ¦cis som man vil
+have det og pÃ¥ nÃ¦sten en hvilken som helst platform.
 </para>
 
 </sect1>

@@ -5,50 +5,50 @@
   <title>Tegnformatering med objektlinjen og tastaturet</title>
 
   <para>
-   Dette eksempel viser de to grundlæggende måder at ændre skrifttype.
+   Dette eksempel viser de to grundlÃ¦ggende mÃ¥der at Ã¦ndre skrifttype.
   </para>
 
   <sect2>
-   <title>Eksempel: Fed skrift når teksten er skrevet</title>
+   <title>Eksempel: Fed skrift nÃ¥r teksten er skrevet</title>
 
    <para>
-    Hvis teksten <emphasis>er</emphasis> skrevet er fremgangsmåden
-    sådan:
+    Hvis teksten <emphasis>er</emphasis> skrevet er fremgangsmÃ¥den
+    sÃ¥dan:
    </para>
 
 <orderedlist>
       <listitem>
 
-<para>Marker den tekst, som skal være fed.</para>
+<para>Marker den tekst, som skal vÃ¦re fed.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Vælg fed skrift ved at klikke på ikonen <figure
+<para>VÃ¦lg fed skrift ved at klikke pÃ¥ ikonen <figure
 float="1"><title>(noget)</title> <graphic
 fileref="objektlinjefed.&magic;" scale="60"></graphic></figure> i
 objektlinjen <emphasis>eller</emphasis> taste
-<emphasis>Ctrl-B</emphasis> på tastaturet.</para>
+<emphasis>Ctrl-B</emphasis> pÃ¥ tastaturet.</para>
 
 </listitem>
     </orderedlist>
 
-<para>Eksempel på skærmbillede:</para>
+<para>Eksempel pÃ¥ skÃ¦rmbillede:</para>
 
 <para><figure float="1"><title>(noget)</title> <graphic
 fileref="tekstfedeksempel.&magic;" scale="60"></graphic>
 </figure></para>
 
 <para> <emphasis>Undtagelse</emphasis> : Hvis det kun er et enkelt ord
-    der skal skrives med fed er det nok at placere markøren i ordet
-    (markering er ikke nødvendigt).</para> </sect2> <!-- Eksempel: Fed
-    skrift når teksten er skrevet -->
+    der skal skrives med fed er det nok at placere markÃ¸ren i ordet
+    (markering er ikke nÃ¸dvendigt).</para> </sect2> <!-- Eksempel: Fed
+    skrift nÃ¥r teksten er skrevet -->
 
 <sect2>
   <title>Eksempel: Fed skrift mens teksten skrives</title>
 
-<para>Hvis teksten ikke er skrevet endnu kan du slå fed skrift til/fra
+<para>Hvis teksten ikke er skrevet endnu kan du slÃ¥ fed skrift til/fra
 <emphasis>mens</emphasis> du skriver. F.eks.:</para>
 
 <itemizedlist mark="bullet">
@@ -67,7 +67,7 @@ fileref="objektlinjefed.&magic;" scale="60"></graphic>
   <listitem>
 
 
-<para> <emphasis>Eller sådan</emphasis> : Her skal
+<para> <emphasis>Eller sÃ¥dan</emphasis> : Her skal
         <emphasis>Ctrl-B</emphasis> skrives med fed
         <emphasis>Ctrl-B</emphasis> skrift.</para>
 
@@ -76,25 +76,25 @@ fileref="objektlinjefed.&magic;" scale="60"></graphic>
 </itemizedlist>
 
 
-    <para>Dette er den letteste måde at bruge fed skrift, men virker
-    bedst når du tilføjer tekst til <emphasis>slutningen</emphasis> af
+    <para>Dette er den letteste mÃ¥de at bruge fed skrift, men virker
+    bedst nÃ¥r du tilfÃ¸jer tekst til <emphasis>slutningen</emphasis> af
     et afsnit.</para>
 
 <para> <emphasis>Tip</emphasis> : I slutningen af et afsnit kan du
-    altid taste <emphasis>højrepil</emphasis> for at vende tilbage til
+    altid taste <emphasis>hÃ¸jrepil</emphasis> for at vende tilbage til
     standardskrift.</para>
 
   </sect2> <!-- Eksempel: Fed skrift mens teksten skrives -->
 
   <sect2>
-   <title>Øvrige muligheder</title>
+   <title>Ã˜vrige muligheder</title>
 
-<para>På samme måde bruges følgende:</para>
+<para>PÃ¥ samme mÃ¥de bruges fÃ¸lgende:</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Skrifttypen vælges i feltet <figure float="1"><title>(noget)</title>
+<para>Skrifttypen vÃ¦lges i feltet <figure float="1"><title>(noget)</title>
 <graphic fileref="objektlinjefont.&magic;" scale="60"></graphic>
 </figure>
 .</para>
@@ -105,7 +105,7 @@ fileref="objektlinjefed.&magic;" scale="60"></graphic>
 
 
 
-<para>Skriftstørrelsen (i <emphasis>punkter</emphasis> ) vælges i
+<para>SkriftstÃ¸rrelsen (i <emphasis>punkter</emphasis> ) vÃ¦lges i
 feltet <figure float="1"><title>(noget)</title> <graphic
 fileref="objektlinjestoerrelse.&magic;" scale="60"></graphic>
 </figure>
@@ -117,7 +117,7 @@ fileref="objektlinjestoerrelse.&magic;" scale="60"></graphic>
 
   <listitem>
 
-<para>Du kan også øge/mindske skriftstørrelsen med knapperne <figure
+<para>Du kan ogsÃ¥ Ã¸ge/mindske skriftstÃ¸rrelsen med knapperne <figure
 float="1"><title>(noget)</title> <graphic
 fileref="objektlinjestoerremindre.&magic;"
 scale="60"></graphic></figure> . <emphasis>OBS</emphasis> : Knapperne
@@ -130,7 +130,7 @@ er ikke synlige som standard.</para>
 
 
 
-<para>Du kan vælge/fravælge <emphasis>fed</emphasis> skrift med
+<para>Du kan vÃ¦lge/fravÃ¦lge <emphasis>fed</emphasis> skrift med
 knappen <figure float="1"><title>(noget)</title> <graphic
 fileref="objektlinjefed.&magic;" scale="60"></graphic>
 </figure>
@@ -143,7 +143,7 @@ fileref="objektlinjefed.&magic;" scale="60"></graphic>
   <listitem>
 
 
-<para>Du kan vælge/fravælge <emphasis>kursiv</emphasis> skrift med
+<para>Du kan vÃ¦lge/fravÃ¦lge <emphasis>kursiv</emphasis> skrift med
 knappen <figure float="1"><title>(noget)</title> <graphic
 fileref="objektlinjekursiv.&magic;" scale="60"></graphic></figure>
 (tastatur <emphasis>Ctrl-I</emphasis>).</para>
@@ -154,39 +154,39 @@ fileref="objektlinjekursiv.&magic;" scale="60"></graphic></figure>
 
     <listitem>
      <para>
-      Du kan vælge/fravælge understreget skrift med knappen <figure
+      Du kan vÃ¦lge/fravÃ¦lge understreget skrift med knappen <figure
       float="1"><title>(noget)</title> <graphic
       fileref="objektlinjeunderstreg.&magic;"
       scale="60"></graphic></figure> (tastatur
-      <emphasis>Ctrl-U</emphasis>) eller vælge
+      <emphasis>Ctrl-U</emphasis>) eller vÃ¦lge
       <emphasis>Ctrl-D</emphasis> for dobbelt understregning.
      </para>
     </listitem>
 
     <listitem>
      <para>
-      Du kan vælge hævet skrift med knappen <figure
+      Du kan vÃ¦lge hÃ¦vet skrift med knappen <figure
       float="1"><title>(noget)</title> <graphic
       fileref="objektlinjehaevet.&magic;"
       scale="60"></graphic></figure> (tastatur
       <emphasis>Ctrl-H</emphasis>). <emphasis>OBS</emphasis> : Knappen
-      er ikke synlig som standard. Hævet skrift bruges f.eks. til at
-      skrive cm².
+      er ikke synlig som standard. HÃ¦vet skrift bruges f.eks. til at
+      skrive cmÂ².
      </para>
     </listitem>
 
     <listitem>
      <para>
-      Du kan vælge sænket skrift med knappen <figure
+      Du kan vÃ¦lge sÃ¦nket skrift med knappen <figure
       float="1"><title>(noget)</title> <graphic
       fileref="objektlinjesaenket.&magic;"
       scale="60"></graphic></figure> (tastatur:
       <emphasis>Ctrl-T</emphasis>). <emphasis>OBS</emphasis> : Knappen
-      er ikke synlig som standard. Sænket skrift bruges f.eks. til at
+      er ikke synlig som standard. SÃ¦nket skrift bruges f.eks. til at
       skrive H2O.
      </para>
     </listitem>
    </itemizedlist>
-  </sect2>    <!--   Øvrige muligheder -->
+  </sect2>    <!--   Ã˜vrige muligheder -->
  </sect1>    <!--   6.2. Tegnformatering med objektlinjen og tastaturet -->
 

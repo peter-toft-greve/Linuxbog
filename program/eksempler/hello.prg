@@ -6,7 +6,7 @@
  Programmet er skrevet til Harbour
  http://www.harbour-project.org
 
- Oversættelse:
+ OversÃ¦ttelse:
   harbour hello.prg
   gcc -c hello.c -I/usr/include/harbour
   harbour-link hello.o

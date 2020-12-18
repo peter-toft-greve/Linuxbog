@@ -3,66 +3,66 @@
 <title>DocBook</title>
 
 <para>
-DocBook er et sæt af stylesheets, som beskriver hvordan man laver en
+DocBook er et sÃ¦t af stylesheets, som beskriver hvordan man laver en
 bog, artikel eller lignende ud af tekstfiler. DocBook er ligesom
-LaTeX således <emphasis>ikke</emphasis> et grafisk miljø hvor man
-skriver og kan se resultatet grafisk som det er tilfældet med Word,
+LaTeX sÃ¥ledes <emphasis>ikke</emphasis> et grafisk miljÃ¸ hvor man
+skriver og kan se resultatet grafisk som det er tilfÃ¦ldet med Word,
 WordPerfect eller StarOffice. Den store fordel med DocBook er at der
-er gode værktøjer til at oversætte DocBook til HTML, PostScript, RTF
-og PDF og få et pænt og ensartet resultat.
+er gode vÃ¦rktÃ¸jer til at oversÃ¦tte DocBook til HTML, PostScript, RTF
+og PDF og fÃ¥ et pÃ¦nt og ensartet resultat.
 </para>
 
 <para>
-Før vi tager fat på installation og en teknisk gennemgang af det
-"sprog" man skal skrive i - med en vilkårlig teksteditor - så er der i 
-<xref linkend="docbook-ex1"/> et eksempel på lidt tekst skrevet i
-DocBook. Som det kan ses så er det kildeteksten til teksten ovenfor som
+FÃ¸r vi tager fat pÃ¥ installation og en teknisk gennemgang af det
+"sprog" man skal skrive i - med en vilkÃ¥rlig teksteditor - sÃ¥ er der i 
+<xref linkend="docbook-ex1"/> et eksempel pÃ¥ lidt tekst skrevet i
+DocBook. Som det kan ses sÃ¥ er det kildeteksten til teksten ovenfor som
 er vist. DocBook minder meget om at skrive HTML-kode - dvs. koderne 
-afgrænses som &lt;KODEN&gt;.
+afgrÃ¦nses som &lt;KODEN&gt;.
 </para>
 
 <para>
 Grunden til at denne bogserie er skrevet i DocBook er at det var sjovt at
-prøve. Det har vist sig at det fungerer godt med automatiske
-krydshenvisninger; det er nemt at håndtere store bogværker på denne
-måde.
+prÃ¸ve. Det har vist sig at det fungerer godt med automatiske
+krydshenvisninger; det er nemt at hÃ¥ndtere store bogvÃ¦rker pÃ¥ denne
+mÃ¥de.
 Da alle filerne der skrives i "ren ASCII" (tekst-filer), kan flere
 personer nemmere redigere i de samme filer samtidigt, og disse 
-ændringer kan så blandes sammen med <command>patch</command> kommandoen.
+Ã¦ndringer kan sÃ¥ blandes sammen med <command>patch</command> kommandoen.
 </para>
 
 <example id="docbook-ex1">
-<title>Eksempel på DocBook kode</title>
-<indexterm><primary>DocBook, eksempel på kode</primary></indexterm>
+<title>Eksempel pÃ¥ DocBook kode</title>
+<indexterm><primary>DocBook, eksempel pÃ¥ kode</primary></indexterm>
 <programlisting>
 &lt;chapter id="docbook"&gt;
 &lt;title&gt;DocBook&lt;/title&gt;
 
 &lt;para&gt;
-DocBook er et sæt af stylesheets, som beskriver hvordan man laver en
+DocBook er et sÃ¦t af stylesheets, som beskriver hvordan man laver en
 bog, artikel eller lignende ud af tekstfiler. DocBook er ligesom
-LaTeX således &lt;emphasis&gt;ikke&lt;/emphasis&gt; et grafisk miljø hvor man
-skriver og kan se resultatet grafisk som det er tilfældet med Word,
+LaTeX sÃ¥ledes &lt;emphasis&gt;ikke&lt;/emphasis&gt; et grafisk miljÃ¸ hvor man
+skriver og kan se resultatet grafisk som det er tilfÃ¦ldet med Word,
 WordPerfect eller StarOffice. Den store fordel med DocBook er at der
-er gode værktøjer til at oversætte DocBook til HTML, PostScript, RTF
-og PDF og få et pænt resultat.
+er gode vÃ¦rktÃ¸jer til at oversÃ¦tte DocBook til HTML, PostScript, RTF
+og PDF og fÃ¥ et pÃ¦nt resultat.
 &lt;/para&gt;
 </programlisting>
 
 </example>
 
 <sect1 id="docbook-Installation">
-<title>Installation af Docbook værktøjer</title>
+<title>Installation af Docbook vÃ¦rktÃ¸jer</title>
 <indexterm><primary>installation</primary></indexterm>
 
 <para>
-En engelsk installationsvejledning kan findes på følgende URL;
+En engelsk installationsvejledning kan findes pÃ¥ fÃ¸lgende URL;
 </para>
 
 <para>
 <ulink
 url="http://www.tldp.org/HOWTO/mini/DocBook-Install/index.html">http://www.tldp.org/HOWTO/mini/DocBook-Install/index.html</ulink>.
-Nedenfor er en kort vejledning på dansk.
+Nedenfor er en kort vejledning pÃ¥ dansk.
 </para>
 
 <para>
@@ -73,9 +73,9 @@ system-installation (eller system-opgradering) at medtage
 
 
 <para>
-På Mandrake 9.1 er det ret enkelt at få DocBook værktøjerne til at virke.
-Installer følgende pakker med <command>urpmi</command> (efterfulgt af 
-følgende navne). Dette gøres som root.
+PÃ¥ Mandrake 9.1 er det ret enkelt at fÃ¥ DocBook vÃ¦rktÃ¸jerne til at virke.
+Installer fÃ¸lgende pakker med <command>urpmi</command> (efterfulgt af 
+fÃ¸lgende navne). Dette gÃ¸res som root.
 </para>
 
 <screen>
@@ -96,7 +96,7 @@ libopenjade0
 
 <para>
 Hvis du bruger en af de distributioner,
-som har det hele med, kan du afprøve installationen ved for eksempel at
+som har det hele med, kan du afprÃ¸ve installationen ved for eksempel at
 bruge docbook-eksemplet, der kan hentes fra bogens hjemmeside under
 eksempler, eller med <xref linkend="dokumentation-hallo-hallo"/>
 hallo-bog eksemplet her.
@@ -110,19 +110,19 @@ hallo-bog eksemplet her.
 
 &lt;book id="index" lang="da">
 
-&lt;chapter id="hellobog-minikapitel">&lt;title>Sgml-afprøvning&lt;/title>
+&lt;chapter id="hellobog-minikapitel">&lt;title>Sgml-afprÃ¸vning&lt;/title>
 &lt;sect1 id="hellobog-minisect">
 &lt;title>Hallo, hallo!&lt;/title>
 
 &lt;para>
 Hallo, Verden! Hallo, hallo! Her kommer indholdet i den nye bog.
-Disse linjer ender med at blive en paragraf i den færdige bog.
+Disse linjer ender med at blive en paragraf i den fÃ¦rdige bog.
 For at kunne se, hvordan linjeombrydning fungerer, er denne
-paragraf lidt længere end de berømte ord, Hello, World! 
+paragraf lidt lÃ¦ngere end de berÃ¸mte ord, Hello, World! 
 &lt;/para>
 
 &lt;para>
-Hvis du vil se et lidt længere eksempel med flere elementer og et
+Hvis du vil se et lidt lÃ¦ngere eksempel med flere elementer og et
 billede, kan du hente og udpakke docbook-eksemplet fra bogens
 hjemmeside.
 &lt;/para>
@@ -134,15 +134,15 @@ hjemmeside.
 </example>
 
 <para>
-Du kan selvfølgelig også afprøve systemet ved at bruge
-sgml-filerne til andre bøger i denne serie. Så skal du huske at
+Du kan selvfÃ¸lgelig ogsÃ¥ afprÃ¸ve systemet ved at bruge
+sgml-filerne til andre bÃ¸ger i denne serie. SÃ¥ skal du huske at
 flytte billederne ned fra *_images/ directory'et til directory'et
-med .sgml filerne, husk at rette magic.sgml, så der står
+med .sgml filerne, husk at rette magic.sgml, sÃ¥ der stÃ¥r
 <emphasis>png</emphasis> i stedet for eps. 
 </para>
 
 <para>
-Når man står i directory'et med .sgml filerne og skriver følgende
+NÃ¥r man stÃ¥r i directory'et med .sgml filerne og skriver fÃ¸lgende
 kommando, skal systemet generere en .pdf fil.
 </para>
 
@@ -152,52 +152,52 @@ kommando, skal systemet generere en .pdf fil.
 
 <para>
 Og hvis det fungerer er alt jo godt
-<footnote><para>Mandrake 9.x og SuSE 8.1 samt Red Hat 8.0 kører
+<footnote><para>Mandrake 9.x og SuSE 8.1 samt Red Hat 8.0 kÃ¸rer
 med det samme, hvis du har valgt de relevante pakker. Vi kan
-ikke anbefale Red Hat 7.0, 7.1 og 7.2, da der har været mange
-problemer med at få deres docbook output til at fungere. Fejlene
-er rettede i senere versioner, så Red Hat 7.3 og 8.x fungerer uden
-problemer - og hvis man hellere vil baglæns, så kan man stadig få
-Red Hat 6.2 - docbook pakker til at fungere på en intel-baseret
+ikke anbefale Red Hat 7.0, 7.1 og 7.2, da der har vÃ¦ret mange
+problemer med at fÃ¥ deres docbook output til at fungere. Fejlene
+er rettede i senere versioner, sÃ¥ Red Hat 7.3 og 8.x fungerer uden
+problemer - og hvis man hellere vil baglÃ¦ns, sÃ¥ kan man stadig fÃ¥
+Red Hat 6.2 - docbook pakker til at fungere pÃ¥ en intel-baseret
 Linux.</para></footnote>
 </para>
 
 <para>
 Hvorfor ikke installere det hele selv fra source? Det kan man
-selvfølgelig godt, men der er så mange pakker, der skal spille
-sammen, så det er faktisk ret svært og måske grænser det til
-spild af tid, når nu andre har gjort det for en. Men - hvis du
-prøver, vil vi gerne høre resultatet.
+selvfÃ¸lgelig godt, men der er sÃ¥ mange pakker, der skal spille
+sammen, sÃ¥ det er faktisk ret svÃ¦rt og mÃ¥ske grÃ¦nser det til
+spild af tid, nÃ¥r nu andre har gjort det for en. Men - hvis du
+prÃ¸ver, vil vi gerne hÃ¸re resultatet.
 </para>
 
 <para>
-Hvis du kører Red Hat-8.0, Mandrake-9.0, eller SuSE kan du regne
+Hvis du kÃ¸rer Red Hat-8.0, Mandrake-9.0, eller SuSE kan du regne
 med, at tingene fungerer med det samme, du har installeret.
 </para>
 
 
 <para>
-Man kan med for eksempel Red Hat bruge en fil-manager til at kigge på
-CD-Rom RPM-filerne, og så installere med point-and-click. 
+Man kan med for eksempel Red Hat bruge en fil-manager til at kigge pÃ¥
+CD-Rom RPM-filerne, og sÃ¥ installere med point-and-click. 
 </para>
 
 <para>
-Du kan også hente docbook pakker ved at følge links fra linuxdoc
-(se ovenfor) eller hente RPM-pakker fra Red Hat. Hvis du gør det,
-så skal du ikke bruge installations-CD'erne og får ofte en nyere
+Du kan ogsÃ¥ hente docbook pakker ved at fÃ¸lge links fra linuxdoc
+(se ovenfor) eller hente RPM-pakker fra Red Hat. Hvis du gÃ¸r det,
+sÃ¥ skal du ikke bruge installations-CD'erne og fÃ¥r ofte en nyere
 version ud af det. Med undtagelse af openjade*rpm skulle der ikke
-være noget i vejen for at bruge nyere pakker på en ældre
-installation. Se i øvrigt afsnittet i Sysadm-bogen om
+vÃ¦re noget i vejen for at bruge nyere pakker pÃ¥ en Ã¦ldre
+installation. Se i Ã¸vrigt afsnittet i Sysadm-bogen om
 pakke-administration.
 <ulink url="http://&linuxbogurl;/admin/bog/rpm.html">&linuxbogurl;/admin/bog/rpm.html</ulink>
 </para>
 
 <para>
-Med installations - CD'er er fremgangsmåden som følger:
+Med installations - CD'er er fremgangsmÃ¥den som fÃ¸lger:
 </para>
 <para>
-Man "mounter" den første CD. Hvis ikke desktoppen selv gør det
-(hvis man ikke har slået det fra) så skal man på en kommandolinje
+Man "mounter" den fÃ¸rste CD. Hvis ikke desktoppen selv gÃ¸r det
+(hvis man ikke har slÃ¥et det fra) sÃ¥ skal man pÃ¥ en kommandolinje
 skrive:
 </para>
 
@@ -207,8 +207,8 @@ skrive:
 </screen>
 
 <para>
-Kommandoen "cd /mnt/cdrom/Red Hat/RPMS" gør, at man "står" i det
-katalog (directory) hvor pakkerne ligger. Nu kan vi installere, kør:
+Kommandoen "cd /mnt/cdrom/Red Hat/RPMS" gÃ¸r, at man "stÃ¥r" i det
+katalog (directory) hvor pakkerne ligger. Nu kan vi installere, kÃ¸r:
 </para>
 
 <itemizedlist mark="bullet">
@@ -224,10 +224,10 @@ Red Hat 7.3 - cd-rom 1:
 
 <para>
 Kommandolinjetilvalget "<literal>--nodeps</literal>" er brugt
-her for at undgå et
-stop, hvis du kommer til at installere i forkert rækkefølge.
-Det skyldes RPM-kontrol af, om forudsætninger for anvendelse af
-et stykke software er til stede. Det kan du læse mere om i
+her for at undgÃ¥ et
+stop, hvis du kommer til at installere i forkert rÃ¦kkefÃ¸lge.
+Det skyldes RPM-kontrol af, om forudsÃ¦tninger for anvendelse af
+et stykke software er til stede. Det kan du lÃ¦se mere om i
 administrations-bogen.
 </para>
 
@@ -274,47 +274,47 @@ Red Hat 7.3 - cd-rom 3, hvis du vil have tetex dokumentationen med:
 
  <para>
 Princippet er det samme for andre RPM-baserede systemer (fx.
-Mandrake). SuSE Yast2 og DEBIAN apt-get følger samme principper
-som RPM, men har helt andre kommandolinjetilvalg og kræver
-andre opsætningsfiler. Til gengæld kan man med en hurtig
+Mandrake). SuSE Yast2 og DEBIAN apt-get fÃ¸lger samme principper
+som RPM, men har helt andre kommandolinjetilvalg og krÃ¦ver
+andre opsÃ¦tningsfiler. Til gengÃ¦ld kan man med en hurtig
 internetforbindelse her gratis drage fordel af, at apt-get kan
 have en liste af servere, hvorfra friske pakker kan hentes.
 </para>
 
 <para>
 Se afsnit om administration af softwarepakker i sysadm-bogen
-eller på <ulink url="http://www.rpm.org">http://www.rpm.org</ulink>.
+eller pÃ¥ <ulink url="http://www.rpm.org">http://www.rpm.org</ulink>.
 </para>
 
 <para>
-Dette burde være nok til at installere pakkerne. Hvis du har
-problemer efter installationen, kan du følge vejledningen fra
+Dette burde vÃ¦re nok til at installere pakkerne. Hvis du har
+problemer efter installationen, kan du fÃ¸lge vejledningen fra
 Norman Walsh, som du kan finde her.  <ulink
 url="http://docbook.sourceforge.net/projects/dsssl/">
 http://docbook.sourceforge.net/projects/dsssl/</ulink>
 </para>
 
 <para>
-Norman Walsh har skrevet de "modulære docbook-style sheets". Hans
+Norman Walsh har skrevet de "modulÃ¦re docbook-style sheets". Hans
 anvisninger er jo de korrekte for fejlfinding af en installation,
-men på den anden side, hvis der er problemer, og man har mulighed
-for at installere pakkerne fra en nyere version af sit system, så
-er det som regel en hurtigere løsning.
+men pÃ¥ den anden side, hvis der er problemer, og man har mulighed
+for at installere pakkerne fra en nyere version af sit system, sÃ¥
+er det som regel en hurtigere lÃ¸sning.
 </para>
 
 <para>
-Grunden til, at vi skriver så meget om, hvad man skal gøre i
-tilfælde af fejl, er selvfølgelig, at vi er nogle stykker, som
-har kæmpet mod underlige fejl og har haft svært ved at finde en
-udvej; vi vil gerne hjælpe, hvis du sender en mail.
+Grunden til, at vi skriver sÃ¥ meget om, hvad man skal gÃ¸re i
+tilfÃ¦lde af fejl, er selvfÃ¸lgelig, at vi er nogle stykker, som
+har kÃ¦mpet mod underlige fejl og har haft svÃ¦rt ved at finde en
+udvej; vi vil gerne hjÃ¦lpe, hvis du sender en mail.
 </para>
 
 <para>
-Se evt. også <ulink url="http://hvdkooij.xs4all.nl/docs-docbook.cms">http://hvdkooij.xs4all.nl/docs-docbook.cms</ulink>.
+Se evt. ogsÃ¥ <ulink url="http://hvdkooij.xs4all.nl/docs-docbook.cms">http://hvdkooij.xs4all.nl/docs-docbook.cms</ulink>.
 </para>
 
 <para>
-Der er en enkelt pakke man nok skal opdatere - læs mere på
+Der er en enkelt pakke man nok skal opdatere - lÃ¦s mere pÃ¥
 <ulink url="http://www.redhat.com/support/errata/RHEA-2001-167.html">http://www.redhat.com/support/errata/RHEA-2001-167.html</ulink>.
 </para>
 
@@ -326,27 +326,27 @@ Der er en enkelt pakke man nok skal opdatere - læs mere på
 <title>Igang med Docbook</title>
 
 <para>
-Når man skal igang med docBook er det nemmest at have en model,
-en tom ramme, som man så kan starte med at skrive i med det
-samme. Du kan for eksempel fjerne alle paragraffer i eksemplet, som følger
+NÃ¥r man skal igang med docBook er det nemmest at have en model,
+en tom ramme, som man sÃ¥ kan starte med at skrive i med det
+samme. Du kan for eksempel fjerne alle paragraffer i eksemplet, som fÃ¸lger
 med denne bog, og skrive i de rensede filer. <!--TODO: Lav en tom
 ramme til den stakkels begynder! -->
 </para>
 
 <para>
-DocBook-dokumentationen ligger på <ulink
+DocBook-dokumentationen ligger pÃ¥ <ulink
 url="http://www.oasis-open.org/docbook/">http://www.oasis-open.org/docbook/</ulink>. 
-Her kan du finde information om alle de elementer, som kan anvendes. Desværre
-må man sige, at det er en ringe hjælp for dem som skal igang med at
-skrive for første gang. Det skal denne bog råde bod på. Først ser
-vi på et par af de vigtigste SGML-elementer og senere hvordan man bruger
+Her kan du finde information om alle de elementer, som kan anvendes. DesvÃ¦rre
+mÃ¥ man sige, at det er en ringe hjÃ¦lp for dem som skal igang med at
+skrive for fÃ¸rste gang. Det skal denne bog rÃ¥de bod pÃ¥. FÃ¸rst ser
+vi pÃ¥ et par af de vigtigste SGML-elementer og senere hvordan man bruger
 dem til at lave et helt dokument.
 </para>
 
 <para>
-Det første vi skal vide er at alle elementer åbnes og lukkes med et mærke.
-Åbningsmærket starter med &lt; fulgt af elementets navn, eventuelle
-atributter og til sidst &gt;.  Afslutningsmærket er blot &lt;/ fulgt af elementets navn og &gt;.
+Det fÃ¸rste vi skal vide er at alle elementer Ã¥bnes og lukkes med et mÃ¦rke.
+Ã…bningsmÃ¦rket starter med &lt; fulgt af elementets navn, eventuelle
+atributter og til sidst &gt;.  AfslutningsmÃ¦rket er blot &lt;/ fulgt af elementets navn og &gt;.
 Et eksempel er <literal>&lt;command&gt;</literal>ls -l<literal>&lt;/command&gt;</literal> som markerer at strengen "<literal>ls -l</literal>" er en kommando.
 </para>
 
@@ -354,12 +354,12 @@ Et eksempel er <literal>&lt;command&gt;</literal>ls -l<literal>&lt;/command&gt;<
 <indexterm><primary>&lt;</primary></indexterm>
 
 <para>
-Ud over at &lt; har speciel betydning, så har &amp; også speciel
+Ud over at &lt; har speciel betydning, sÃ¥ har &amp; ogsÃ¥ speciel
 betydning. Det betyder, at du ikke kan skrive <literal>&lt;</literal> og <literal>&amp;</literal>
-<emphasis>direkte</emphasis> i din tekst, men i stedet må man skrive
+<emphasis>direkte</emphasis> i din tekst, men i stedet mÃ¥ man skrive
 <literal>&amp;lt;</literal> og <literal>&amp;amp;</literal> (Du
-kan så vælge også at skrive &gt; som &amp;gt; - men det er ikke
-tvungent). Tegn, som ikke opfører sig almindeligt, kaldes
+kan sÃ¥ vÃ¦lge ogsÃ¥ at skrive &gt; som &amp;gt; - men det er ikke
+tvungent). Tegn, som ikke opfÃ¸rer sig almindeligt, kaldes
 <emphasis>metategn</emphasis>.
 </para>
 
@@ -377,9 +377,9 @@ midt i en &lt;para&gt; blok, ignorerer docbook-programmerne det.
 </para>
 
 <para>
-Hvis man vil have linjeskift, må man slutte paragraffen og enten
+Hvis man vil have linjeskift, mÃ¥ man slutte paragraffen og enten
 starte en ny paragraf, en liste, en SCREEN, eller, hvis man
-foretrækker det, skrive al sin tekst som programlisting, så får
+foretrÃ¦kker det, skrive al sin tekst som programlisting, sÃ¥ fÃ¥r
 man docbook til at acceptere ren asciitekst, "typewriter-style".
 </para>
 
@@ -388,8 +388,8 @@ man docbook til at acceptere ren asciitekst, "typewriter-style".
 Der findes ikke en &lt;br&gt;-konstruktion som man kender det fra HTML.
 </para>
 
-<!-- Man kan kun få linjedeling ved at
-lade SGML gøre dette automatisk eller 
+<!-- Man kan kun fÃ¥ linjedeling ved at
+lade SGML gÃ¸re dette automatisk eller 
 stoppe blokken og starte en ny.-->
 
 
@@ -401,7 +401,7 @@ Dette er en tekstblok.
 &lt;/para&gt;
 
 &lt;para&gt;
-Dette er en anden tekstblok, som starter på ny linje.
+Dette er en anden tekstblok, som starter pÃ¥ ny linje.
 &lt;/para&gt;
 </programlisting>
 
@@ -414,7 +414,7 @@ Dette er en tekstblok.
 </para>
 
 <para>
-Dette er en anden tekstblok, som starter på ny linje.
+Dette er en anden tekstblok, som starter pÃ¥ ny linje.
 </para>
 </example>
 
@@ -424,8 +424,8 @@ Dette er en anden tekstblok, som starter på ny linje.
 <indexterm><primary>command</primary></indexterm>
 <para>
 I en <command>&lt;para&gt;</command> block skal man
-måske indikere at nu kommer der en kommando, som kan
-køres. 
+mÃ¥ske indikere at nu kommer der en kommando, som kan
+kÃ¸res. 
 </para>
 
 <example>
@@ -476,12 +476,12 @@ Linux har altid filen <filename>/etc/password</filename>.
 </sect3>
 
 <sect3 id="docbook-emphasis">
-<title>Skråskrift - emphasis</title>
+<title>SkrÃ¥skrift - emphasis</title>
 <indexterm><primary>emphasis</primary></indexterm>
 <indexterm><primary>SGML-elementer</primary><secondary>emphasis</secondary></indexterm>
 
 <para>
-For at markere en del af sætningen med kursiv skrift i en
+For at markere en del af sÃ¦tningen med kursiv skrift i en
 <command>&lt;para&gt;</command> kan man bruge
 <command>&lt;emphasis&gt;</command>
 </para>
@@ -519,7 +519,7 @@ For at markere en URL i en
 <title>ulink</title>
 
 <programlisting>
-Læs om SSLUG på
+LÃ¦s om SSLUG pÃ¥
 &lt;ulink url="http://www.sslug.dk"&gt;SSLUG's hjemmeside http://www.sslug.dk&lt;/ulink&gt;. Der er
 mange aktiviteter.
 </programlisting>
@@ -529,7 +529,7 @@ Dette kommer til at se ud som:
 </para>
 
 <para>
-Læs om SSLUG på
+LÃ¦s om SSLUG pÃ¥
 <ulink url="http://www.sslug.dk">SSLUG's hjemmeside http://www.sslug.dk</ulink>. Der er
 mange aktiviteter.
 </para>
@@ -542,7 +542,7 @@ mange aktiviteter.
 
 
 <sect2 id="docbook-programlisting">
- <title>Vise kildetekst og skærmbilleder - programlisting og screen</title>
+ <title>Vise kildetekst og skÃ¦rmbilleder - programlisting og screen</title>
 
  <indexterm>
   <primary>programlisting</primary>
@@ -563,16 +563,16 @@ mange aktiviteter.
  </indexterm>
 
  <para>
-  Har man brug for at vise noget kildetekst bør man sætte det ind i et
-  "programlisting"-element. Hvis man derimod vil vise noget der står på
-  skærmen bør man sætte det ind i et "screen"-element. Både i
-  "programlisting"- og "screen"-elementer følger linjeskiftene i uddata
-  (selvfølgelig) linjeskiftene i SGML/XML-koden.
+  Har man brug for at vise noget kildetekst bÃ¸r man sÃ¦tte det ind i et
+  "programlisting"-element. Hvis man derimod vil vise noget der stÃ¥r pÃ¥
+  skÃ¦rmen bÃ¸r man sÃ¦tte det ind i et "screen"-element. BÃ¥de i
+  "programlisting"- og "screen"-elementer fÃ¸lger linjeskiftene i uddata
+  (selvfÃ¸lgelig) linjeskiftene i SGML/XML-koden.
  </para>
 
 <!--
-   Det er noget vrøvl at "programlisting"- og "screen"-elementer ikke
-   kan stå indeni "para"-elementer.
+   Det er noget vrÃ¸vl at "programlisting"- og "screen"-elementer ikke
+   kan stÃ¥ indeni "para"-elementer.
 -->
 
  <example>
@@ -628,8 +628,8 @@ s/Microsoft/Linux/g;
 
   <para>
    For at kunne skelne mellem hvad et program udskriver og hvad brugeren
-   taster, så anvender jeg et par Docbook elementer inden i
-   "screen"-elementet. "prompt" bruges til spørgsmål til brugeren og
+   taster, sÃ¥ anvender jeg et par Docbook elementer inden i
+   "screen"-elementet. "prompt" bruges til spÃ¸rgsmÃ¥l til brugeren og
    "userinput" bruges til det brugeren indtaster.
   </para>
 
@@ -665,13 +665,13 @@ s/Microsoft/Linux/g;
 <indexterm><primary>SGML-elementer</primary><secondary>table</secondary></indexterm>
 <para>
 Tabeller laves med
-<command>&lt;table&gt;</command>. Bemærk at denne ikke må
-være inden i en <command>&lt;para&gt;</command>. I
+<command>&lt;table&gt;</command>. BemÃ¦rk at denne ikke mÃ¥
+vÃ¦re inden i en <command>&lt;para&gt;</command>. I
 eksemplet skal med <command>cols=</command> angives
-antallet af søjler. Indrykningen har ingen betydning for
+antallet af sÃ¸jler. Indrykningen har ingen betydning for
 resultatet, og anvendes alene til at man selv har
-overblik over koderne. Igen bemærkes, at det er
-ligegyldigt om man anvender store eller små bogstaver.
+overblik over koderne. Igen bemÃ¦rkes, at det er
+ligegyldigt om man anvender store eller smÃ¥ bogstaver.
 </para>
 
 <example>
@@ -745,14 +745,14 @@ Dette kommer til at se ud som:
 </table>
 
 <para>
-Bemærk at vi har anført <filename>id="label"</filename> sammen
+BemÃ¦rk at vi har anfÃ¸rt <filename>id="label"</filename> sammen
 med <command>&lt;table&gt;</command>. Det er for at
 kunne krydsreferere til tabellen fra et sted i teksten.
 </para>
 
 <para>
-Det skal bemærkes, at man med <command>&lt;colspec&gt;</command>
-kan lave en del bedre formattering af tabeller, såsom farvelægning af
+Det skal bemÃ¦rkes, at man med <command>&lt;colspec&gt;</command>
+kan lave en del bedre formattering af tabeller, sÃ¥som farvelÃ¦gning af
 celler og andre fikse ting som bredde af tabeller, 
 kolonner etc. 
 </para>
@@ -768,11 +768,11 @@ kolonner etc.
 
 <para>
 Figurer kan inkluderes i Docbook-dokumenter. Selvom
-det anføres at en lang række grafik formater er
-understøttet, så gælder det i praksis ikke, hvis man
-skal kunne oversætte både til HTML, PDF og Postscript.
+det anfÃ¸res at en lang rÃ¦kke grafik formater er
+understÃ¸ttet, sÃ¥ gÃ¦lder det i praksis ikke, hvis man
+skal kunne oversÃ¦tte bÃ¥de til HTML, PDF og Postscript.
 Vi anbefaler PNG-format til billeder, da dette er generelt
-understøttet.
+understÃ¸ttet.
 </para>
 
 <example>
@@ -797,7 +797,7 @@ Dette kommer til at se ud som:
 </figure>
 
 <para>
-Bemærk at vi igen her har sat <command>id="label"</command> ind under
+BemÃ¦rk at vi igen her har sat <command>id="label"</command> ind under
 <command>&lt;figure id="linustorvalds-fig" float="1"&gt;</command> for at
 kunne krydsreferere til figuren. Du skal selv skalere billedet (i PDF og
 Postscript udskrift via <command>scale</command>-parameteren.
@@ -805,108 +805,108 @@ Postscript udskrift via <command>scale</command>-parameteren.
 
 <indexterm><primary>Scale parameteren</primary></indexterm> 
 <para> 
-Det kan være lidt vanskeligt at gennemskue, hvor stort ens billede
-bliver, når man har taget et screenshot og det skal med i ens bog. Det
-kan også være lidt svært at regne ud hvor store billeder man skal
-lave.Her følger en gennemgang af hvordan man kan forudsige lidt om
-skaleringen, så man kan forstå hvad der sker og hvordan
+Det kan vÃ¦re lidt vanskeligt at gennemskue, hvor stort ens billede
+bliver, nÃ¥r man har taget et screenshot og det skal med i ens bog. Det
+kan ogsÃ¥ vÃ¦re lidt svÃ¦rt at regne ud hvor store billeder man skal
+lave.Her fÃ¸lger en gennemgang af hvordan man kan forudsige lidt om
+skaleringen, sÃ¥ man kan forstÃ¥ hvad der sker og hvordan
 <command>scale</command>-paremeteren skal bruges.  
 </para>
 
 <indexterm><primary>dpi</primary></indexterm> 
 <para> 
-Det er formentlig velkendt at alle billeder har en opløsning i pixels,
-det vi som regel forstår som størrelsen af et billede. Et skærmskud
-kan f.eks. være 900x600 pixels. Hvis man ser det billede på to
-forskellige computere, hvor den ene har en 20" skærm med en opløsning
-på 1024x768 og den anden har en 15" skærm med en opløsning på
-1024x768, vil det samme billede have to meget forskellige størrelser,
-når de ses på skærmen. Det er vi vant til og tager ikke så højtideligt
-&ndash; typisk kan vi forstørre eller formindske billedet for at se
+Det er formentlig velkendt at alle billeder har en oplÃ¸sning i pixels,
+det vi som regel forstÃ¥r som stÃ¸rrelsen af et billede. Et skÃ¦rmskud
+kan f.eks. vÃ¦re 900x600 pixels. Hvis man ser det billede pÃ¥ to
+forskellige computere, hvor den ene har en 20" skÃ¦rm med en oplÃ¸sning
+pÃ¥ 1024x768 og den anden har en 15" skÃ¦rm med en oplÃ¸sning pÃ¥
+1024x768, vil det samme billede have to meget forskellige stÃ¸rrelser,
+nÃ¥r de ses pÃ¥ skÃ¦rmen. Det er vi vant til og tager ikke sÃ¥ hÃ¸jtideligt
+&ndash; typisk kan vi forstÃ¸rre eller formindske billedet for at se
 det bedre alligevel.
 </para>
 
 <para>
-Det er meget værre hvis vi taler om udskrivning. Hvis vi fulgte samme
-metode som for skærme &ndash; hvor hver af billedets pixels optager
-een pixel på skærmen &ndash; ville et billede på 900 pixels bredde
-være 3 tommer bredt på en 300 dpi printer (en printers dpi bestemmer
+Det er meget vÃ¦rre hvis vi taler om udskrivning. Hvis vi fulgte samme
+metode som for skÃ¦rme &ndash; hvor hver af billedets pixels optager
+een pixel pÃ¥ skÃ¦rmen &ndash; ville et billede pÃ¥ 900 pixels bredde
+vÃ¦re 3 tommer bredt pÃ¥ en 300 dpi printer (en printers dpi bestemmer
 hvor mange (evt. farvede) prikker den kan lave pr. tomme/cm) og 1.5
-tomme bredt på en 600 dpi printer. Det er ikke særligt ønskeligt. For
-at imødekomme det, taler man også om et billedes opløsning pr. enhed,
+tomme bredt pÃ¥ en 600 dpi printer. Det er ikke sÃ¦rligt Ã¸nskeligt. For
+at imÃ¸dekomme det, taler man ogsÃ¥ om et billedes oplÃ¸sning pr. enhed,
 typisk pixels pr. centimeter, eller pixels pr. tomme (det sidste er
 det der kaldes dpi).
 </para>
 
 <para>
-Afhængigt af hvordan du har lavet dit billede (og hvilket format det
-er) har det allerede en dpi størrelse. Nogen programmer tillader dig
-at se og ændre denne størrelse (f.eks. <command>gimp</command> med jpg
+AfhÃ¦ngigt af hvordan du har lavet dit billede (og hvilket format det
+er) har det allerede en dpi stÃ¸rrelse. Nogen programmer tillader dig
+at se og Ã¦ndre denne stÃ¸rrelse (f.eks. <command>gimp</command> med jpg
 billeder). Men, de fleste billeder har ikke et tal indbygget, og
-derfor antager Docbook en standard værdi, når den skal lave dit
-billede om til noget der kan skrives ud på en printer
-(f.eks. postscript eller pdf). Denne standardværdi er, så vidt jeg
+derfor antager Docbook en standard vÃ¦rdi, nÃ¥r den skal lave dit
+billede om til noget der kan skrives ud pÃ¥ en printer
+(f.eks. postscript eller pdf). Denne standardvÃ¦rdi er, sÃ¥ vidt jeg
 ved, 72 dpi.
 </para>
 
 <para>
 Lad os tage et eksempel.  Antag at du har et 900 pixel bredt billede
-og du vil skrive det ud på en 300 dpi printer (eller en fil med
-indbygget antagelse om opløsningen, som f.eks. postscript eller
+og du vil skrive det ud pÃ¥ en 300 dpi printer (eller en fil med
+indbygget antagelse om oplÃ¸sningen, som f.eks. postscript eller
 pdf). Docbook antager at billedet er 72 dpi, derfor skaleres billedet
-først op med printerdpi/billededpi = 300/72 ~= 4.2, dvs. at billedet
+fÃ¸rst op med printerdpi/billededpi = 300/72 ~= 4.2, dvs. at billedet
 bliver ca. 3750 pixels bredt eller 12.5 tommer, eller ca. 31 cm. Det
-er jo alt for stort til en A4 side, så her kommer scale parameteren
-ind. Vi bruger scale parameteren til at sætte det til 40%, så bliver
-det 1500 pix, 5 tommer eller ca.  13 cm, som passer fint på docbook
-siden. Det endelige billedes opløsning bliver 1500/5 = 300 dpi &ndash;
-lige som det skal være. Når Docbook laver f.eks. HTML, sker der dog
-ingen skalering. Her vil billedet stadig være 900 pixels bredt.
+er jo alt for stort til en A4 side, sÃ¥ her kommer scale parameteren
+ind. Vi bruger scale parameteren til at sÃ¦tte det til 40%, sÃ¥ bliver
+det 1500 pix, 5 tommer eller ca.  13 cm, som passer fint pÃ¥ docbook
+siden. Det endelige billedes oplÃ¸sning bliver 1500/5 = 300 dpi &ndash;
+lige som det skal vÃ¦re. NÃ¥r Docbook laver f.eks. HTML, sker der dog
+ingen skalering. Her vil billedet stadig vÃ¦re 900 pixels bredt.
 </para>
 
 <para>
-Så, hvor stort skal ens billede være? Det vigtigeste er at undgå
-nedskalering &ndash; det er bedre at skulle skalere op på papir, end
-ned, fordi der uundgåeligt går detaljer tabt ved nedskalering.  Så,
-hvornår bliver der skaleret ned? Hvis man har 15 cm plads, har man
+SÃ¥, hvor stort skal ens billede vÃ¦re? Det vigtigeste er at undgÃ¥
+nedskalering &ndash; det er bedre at skulle skalere op pÃ¥ papir, end
+ned, fordi der uundgÃ¥eligt gÃ¥r detaljer tabt ved nedskalering.  SÃ¥,
+hvornÃ¥r bliver der skaleret ned? Hvis man har 15 cm plads, har man
 typisk plads til mindst 15/2.54*300 pixels = 1771 pixels. Billeder
-mindre end det, bliver skaleret op, mens billeder større bliver
-skaleret ned. Hvis man udskriver på 600 dpi, har man selvklart plads
+mindre end det, bliver skaleret op, mens billeder stÃ¸rre bliver
+skaleret ned. Hvis man udskriver pÃ¥ 600 dpi, har man selvklart plads
 til det dobbelte. Men, det er nok ikke smart at lave billeder meget
-større end 1000 pixels, da de kan blive meget store på skærme med en
-lav opløsning.
+stÃ¸rre end 1000 pixels, da de kan blive meget store pÃ¥ skÃ¦rme med en
+lav oplÃ¸sning.
 </para>
 
 <para>
-Hvis man vil lave små billeder, så lav dem små til at starte med, lad
-være med at brug gimp eller lignende til at resample dem med: de
-bliver alligevel resamplet når de skal skrives ud/vises og på webben
+Hvis man vil lave smÃ¥ billeder, sÃ¥ lav dem smÃ¥ til at starte med, lad
+vÃ¦re med at brug gimp eller lignende til at resample dem med: de
+bliver alligevel resamplet nÃ¥r de skal skrives ud/vises og pÃ¥ webben
 betyder det ingenting.
 </para>
 
 <para>
 Hvis du gerne vil regne ud hvad din <command>scale</command>-parameter
-skal være, for at optage en bestemt bredde, kan du bruge den her
-formel: "scale = ønsket bredde i tommer * billeddpi / billedbredde i
+skal vÃ¦re, for at optage en bestemt bredde, kan du bruge den her
+formel: "scale = Ã¸nsket bredde i tommer * billeddpi / billedbredde i
 pixels". Her kan du antage at billeddpi er 72 hvis du ikke ved
-andet. Det er måske lidt nemmere i centimeter for os danskere, og så
-bliver det 72 dpi (ca) = 28.3 punkter pr. centimeter. Så bliver
-formlen: "scale = ønsket bredde i cm * 28.3 / billedebredde i
-pixels". Et eksempel; vi ønsker at et 900 pixels billede skal være 15
-cm bredt ved udskrift, så vi får "scale = 15 * 28.3 / 900 =
-0.47". <command>scale</command>-parameteren skal altså sættes til 47%.
-På webben bliver scale parameteren ignoreret, og brugeren får et 900
-pix bredt billede. Det kan han så se det hele af, og skalere ned eller
+andet. Det er mÃ¥ske lidt nemmere i centimeter for os danskere, og sÃ¥
+bliver det 72 dpi (ca) = 28.3 punkter pr. centimeter. SÃ¥ bliver
+formlen: "scale = Ã¸nsket bredde i cm * 28.3 / billedebredde i
+pixels". Et eksempel; vi Ã¸nsker at et 900 pixels billede skal vÃ¦re 15
+cm bredt ved udskrift, sÃ¥ vi fÃ¥r "scale = 15 * 28.3 / 900 =
+0.47". <command>scale</command>-parameteren skal altsÃ¥ sÃ¦ttes til 47%.
+PÃ¥ webben bliver scale parameteren ignoreret, og brugeren fÃ¥r et 900
+pix bredt billede. Det kan han sÃ¥ se det hele af, og skalere ned eller
 bruge scrollbars.  
 </para>
 
 <para>
 Hvad nu med &amp;magic;? Der er et problem med grafik - hvis man alene
-laver PDF og HTML-filer, så kan man anføre at det er en
-<filename>.png</filename> fil eller lignende. Skal man også lave
-PostScript, så skal man anvende <filename>.eps</filename>-filer. Der
-skal en konvertering af billederne til. En nem måde at styre
-magic-variablen er at tilføje denne i den hoved-sgml-fil man laver
+laver PDF og HTML-filer, sÃ¥ kan man anfÃ¸re at det er en
+<filename>.png</filename> fil eller lignende. Skal man ogsÃ¥ lave
+PostScript, sÃ¥ skal man anvende <filename>.eps</filename>-filer. Der
+skal en konvertering af billederne til. En nem mÃ¥de at styre
+magic-variablen er at tilfÃ¸je denne i den hoved-sgml-fil man laver
 </para>
 
 <programlisting>
@@ -921,7 +921,7 @@ magic-variablen er at tilføje denne i den hoved-sgml-fil man laver
 <indexterm><primary>footnote</primary></indexterm>
 <indexterm><primary>SGML-elementer</primary><secondary>footnote</secondary></indexterm>
 <para>
-Skal du lige lave en fodnote i din SGML-fil skal du prøve dette
+Skal du lige lave en fodnote i din SGML-fil skal du prÃ¸ve dette
 </para>
 
 <programlisting>
@@ -963,7 +963,7 @@ Skal du lave en info-boks findes tagget "sidebar".
 <programlisting>
 &lt;sidebar&gt;
 &lt;para&gt;
-Det er da ikke særlig svært at se hvordan man laver en 
+Det er da ikke sÃ¦rlig svÃ¦rt at se hvordan man laver en 
 "sidebar". 
 &lt;/para&gt;
 &lt;/sidebar&gt;
@@ -971,7 +971,7 @@ Det er da ikke særlig svært at se hvordan man laver en
 
 <sidebar>
 <para>
-Det er da ikke særlig svært at se hvordan man laver en 
+Det er da ikke sÃ¦rlig svÃ¦rt at se hvordan man laver en 
 "sidebar". 
 </para>
 </sidebar>
@@ -991,7 +991,7 @@ Det er da ikke særlig svært at se hvordan man laver en
 <indexterm><primary>SGML-elementer</primary><secondary>&lt;!-- kommentar --&gt;</secondary></indexterm>
 <para>
 Skal du lige lave en kommentar i din SGML-fil som ikke kommer med ud i
-HTML, PDF og Postscript-filerne, så kan du anvende.
+HTML, PDF og Postscript-filerne, sÃ¥ kan du anvende.
 </para>
 
 <programlisting>
@@ -999,8 +999,8 @@ HTML, PDF og Postscript-filerne, så kan du anvende.
 </programlisting>
 
 <para>
-Bemærk at der er to minus-tegn efter hinanden. I udprintning vil de se
-ud som ét langt minustegn.
+BemÃ¦rk at der er to minus-tegn efter hinanden. I udprintning vil de se
+ud som Ã©t langt minustegn.
 </para>
 </sect3>
 
@@ -1015,21 +1015,21 @@ ud som ét langt minustegn.
 Vi har allerede set at vi kan give en tabel og en figur en
 label. Dette gjorde vi med <command>id="label"</command>. Tilsvarende
 kan vi referere til den label i en tekstblok et andet sted ved at
-bruge <command>&lt;xref&gt;</command>. Bemærk at denne kommando
+bruge <command>&lt;xref&gt;</command>. BemÃ¦rk at denne kommando
 <emphasis>ikke</emphasis> har en tilsvarende
-<command>&lt;/xref&gt;</command>. Lad i øvrigt være med at bruge
+<command>&lt;/xref&gt;</command>. Lad i Ã¸vrigt vÃ¦re med at bruge
 danske bogstaver, mellemrum og understregning
-(eng. underscore). Grunden er at værdien af "ID" bruges til 
-filnavne - og her kan man ikke tillade de nævnte tegn.
+(eng. underscore). Grunden er at vÃ¦rdien af "ID" bruges til 
+filnavne - og her kan man ikke tillade de nÃ¦vnte tegn.
 </para>
 
 <example>
 <title>id og xref</title>
 
 <programlisting>
-Vi kan referere til den forrige figur, altså 
+Vi kan referere til den forrige figur, altsÃ¥ 
 &lt;xref linkend="linustorvalds-fig"/&gt; eller tabellen 
-&lt;xref linkend="db-firmaet"/&gt; uden at tænke på hvilket
+&lt;xref linkend="db-firmaet"/&gt; uden at tÃ¦nke pÃ¥ hvilket
 nummer de har. Vi anvender blot deres label.
 </programlisting>
 
@@ -1038,9 +1038,9 @@ Dette kommer til at se ud som:
 </para>
 
 <para>
-Vi kan referere til den forrige figur, altså 
+Vi kan referere til den forrige figur, altsÃ¥ 
 <xref linkend="linustorvalds-fig"/> eller tabellen 
-<xref linkend="db-firmaet"/> uden at tænke på hvilket
+<xref linkend="db-firmaet"/> uden at tÃ¦nke pÃ¥ hvilket
 nummer de har. Vi anvender blot deres label.
 </para>
 </example>
@@ -1067,7 +1067,7 @@ punkter
 &lt;itemizedlist mark="bullet"&gt;
 &lt;listitem&gt;
  &lt;para&gt;
-  Første punkt i listen skriver jeg her.
+  FÃ¸rste punkt i listen skriver jeg her.
  &lt;/para&gt;
 &lt;/listitem&gt;
 &lt;listitem&gt; 
@@ -1086,7 +1086,7 @@ Dette kommer til at se ud som:
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-  Første punkt i listen skriver jeg her.
+  FÃ¸rste punkt i listen skriver jeg her.
  </para>
 </listitem>
 <listitem> 
@@ -1109,7 +1109,7 @@ kan man lave lister, som er nummererede.
 &lt;orderedlist&gt;
 &lt;listitem&gt;
  &lt;para&gt;
-  Første punkt i listen skriver jeg her.
+  FÃ¸rste punkt i listen skriver jeg her.
  &lt;/para&gt;
 &lt;/listitem&gt;
 &lt;listitem&gt; 
@@ -1121,13 +1121,13 @@ kan man lave lister, som er nummererede.
 </programlisting>
 
 <para>
-Dette kommer til at se således ud
+Dette kommer til at se sÃ¥ledes ud
 </para>
 
 <orderedlist>
 <listitem>
  <para>
-  Første punkt i listen skriver jeg her.
+  FÃ¸rste punkt i listen skriver jeg her.
  </para>
 </listitem>
 <listitem> 
@@ -1156,14 +1156,14 @@ En bog inddeles i kapitelniveauer med
 <command>&lt;chapter&gt;</command>, og tilsvarende lavere niveauer
 <command>&lt;sect1&gt;</command>, <command>&lt;sect2&gt;</command>, og
 <command>&lt;sect3&gt;</command>. Opdelingen afspejler ikke
-nødvendigvis de filer man skriver. For hver ny inddeling
+nÃ¸dvendigvis de filer man skriver. For hver ny inddeling
 <emphasis>skal</emphasis> man have et <command>&lt;title&gt;&lt;/title&gt;</command>
-til at anføre titel.
+til at anfÃ¸re titel.
 </para>
 
 <para>
-En artikel har samme inddelinger, pånær
-<command>&lt;chapter&gt;</command>, og første inddelingsniveau er 
+En artikel har samme inddelinger, pÃ¥nÃ¦r
+<command>&lt;chapter&gt;</command>, og fÃ¸rste inddelingsniveau er 
 <command>&lt;sect1&gt;</command>.
 </para>
 
@@ -1179,25 +1179,25 @@ bruge til at referere til.
 &lt;sect2 id="introduktion"&gt;
 &lt;title&gt;Dette er en introduktion&lt;/title&gt;
  &lt;para&gt;
-  Tekst kommer her i en para-blok og bemærkede du at afsnittet har
+  Tekst kommer her i en para-blok og bemÃ¦rkede du at afsnittet har
   label "introduktion"?
  &lt;/para&gt;
  &lt;para&gt;
-  Havde det været en bog, skulle vi starte med chapter og sect1, men
+  Havde det vÃ¦ret en bog, skulle vi starte med chapter og sect1, men
   men det er jo et eksempel :-)
  &lt;/para&gt;
  &lt;para&gt;
-  Læs mit næste afsnit i &lt;xref linkend="naeste-inddeling"/&gt;.
+  LÃ¦s mit nÃ¦ste afsnit i &lt;xref linkend="naeste-inddeling"/&gt;.
  &lt;/para&gt;
 
  &lt;sect3 id="naeste-inddeling"&gt;
- &lt;title&gt;Dette er næste inddeling&lt;/title&gt;
+ &lt;title&gt;Dette er nÃ¦ste inddeling&lt;/title&gt;
    &lt;para&gt;
-    Her er et underafsnit. Du skal bemærke, at jeg ikke bruger æ, ø og
-    å i labels. Det giver ellers problemer med HTML-filnavne.
+    Her er et underafsnit. Du skal bemÃ¦rke, at jeg ikke bruger Ã¦, Ã¸ og
+    Ã¥ i labels. Det giver ellers problemer med HTML-filnavne.
    &lt;/para&gt;
    &lt;para&gt;
-   Bemærk at &lt;command&gt;&amp;lt;!-- Dette er en kommentar --&amp;gt;&lt;/command&gt; kan 
+   BemÃ¦rk at &lt;command&gt;&amp;lt;!-- Dette er en kommentar --&amp;gt;&lt;/command&gt; kan 
    bruges til at angive en kommentar som ikke vises
    &lt;/para&gt;
  &lt;/sect3&gt;
@@ -1212,25 +1212,25 @@ Dette kommer til at se ud som:
 <sect3 id="docbook-introduktion">
 <title>Dette er en introduktion</title>
  <para>
-  Tekst kommer her i en para-blok og bemærkede du at afsnittet har
+  Tekst kommer her i en para-blok og bemÃ¦rkede du at afsnittet har
   label "introduktion"?
  </para>
  <para>
-  Havde det været en bog, skulle vi starte med chapter og sect1, men
+  Havde det vÃ¦ret en bog, skulle vi starte med chapter og sect1, men
   det er jo et eksempel :-)
  </para>
  <para>
-  Læs mit næste afsnit i <xref linkend="docbook-naeste-inddeling"/>.
+  LÃ¦s mit nÃ¦ste afsnit i <xref linkend="docbook-naeste-inddeling"/>.
  </para>
 
  <sect4 id="docbook-naeste-inddeling">
- <title>Dette er næste inddeling</title>
+ <title>Dette er nÃ¦ste inddeling</title>
    <para>
-    Her er et underafsnit. Du skal bemærke, at jeg ikke bruger æ, ø og
-    å i labels. Det giver ellers problemer med HTML-filnavne.
+    Her er et underafsnit. Du skal bemÃ¦rke, at jeg ikke bruger Ã¦, Ã¸ og
+    Ã¥ i labels. Det giver ellers problemer med HTML-filnavne.
    </para>
    <para>
-   Bemærk at <command>&lt;!-- Dette er en kommentar --&gt;</command> kan 
+   BemÃ¦rk at <command>&lt;!-- Dette er en kommentar --&gt;</command> kan 
    bruges til at angive en kommentar som ikke vises
    </para>
  </sect4>
@@ -1239,7 +1239,7 @@ Dette kommer til at se ud som:
 <sect3 id="docbook-Startfilen">
 <title>Start filen</title>
 <para>
-Nu har vi set på inddelinger af dokumentet og hvordan man laver
+Nu har vi set pÃ¥ inddelinger af dokumentet og hvordan man laver
 tabeller, figurer, viser kildetekst og URL'er.
 </para>
 
@@ -1248,7 +1248,7 @@ Lad os antage at man har lavet tre kapitler med hver deres
 <command>&lt;chapter id="label-for-kapitel"&gt;</command>, som er gemt
 i tre filer <filename>introduktion.sgml</filename>,
 <filename>linux.sgml</filename> og
-<filename>konklusion.sgml</filename>. Her er så en opskrift på at lave
+<filename>konklusion.sgml</filename>. Her er sÃ¥ en opskrift pÃ¥ at lave
 hoved-filen som binder det hele sammen. 
 </para>
 
@@ -1264,8 +1264,8 @@ som tidligere vist i <command>&lt;title&gt;</command>.
  &lt;!entity konklusion SYSTEM "konklusion.sgml"&gt; &lt;!-- Filnavn her lig id --&gt;
 ]&gt;
 
-&lt;book id="index" lang="da"&gt; &lt;!-- med lang="da" vælges
-den danske docbook-localization fil, altså man får danske ord
+&lt;book id="index" lang="da"&gt; &lt;!-- med lang="da" vÃ¦lges
+den danske docbook-localization fil, altsÃ¥ man fÃ¥r danske ord
 for chapter, section, content, appendix, index m.v. --&gt;
 &lt;bookinfo&gt;
  &lt;title&gt;Bog titel kommer her&lt;/title&gt;
@@ -1287,7 +1287,7 @@ for chapter, section, content, appendix, index m.v. --&gt;
  &lt;COPYRIGHT&gt;
    &lt;YEAR&gt;2002&lt;/YEAR&gt;
    &lt;HOLDER&gt;Peter Toft og mange andre under
-   "ÅDL" licensen&lt;/HOLDER&gt;
+   "Ã…DL" licensen&lt;/HOLDER&gt;
  &lt;/COPYRIGHT&gt;
 
  &lt;ABSTRACT&gt;
@@ -1297,7 +1297,7 @@ for chapter, section, content, appendix, index m.v. --&gt;
  &lt;/ABSTRACT&gt;
 &lt;/bookinfo&gt;
 
-&lt;!-- Følgende linje skaber automatisk en indholdsfortegnelse --&gt;
+&lt;!-- FÃ¸lgende linje skaber automatisk en indholdsfortegnelse --&gt;
 &lt;toc id="toc"&gt;&lt;/toc&gt; 
 &amp;intro;
 &amp;Linux;
@@ -1306,15 +1306,15 @@ for chapter, section, content, appendix, index m.v. --&gt;
 </programlisting>
 
 <para>
-I hovedet af filen erklæres hvilke eksterne filer, vil skal læse
-ind. Hver af disse får en label (intro, Linux og konklusion) som vi
+I hovedet af filen erklÃ¦res hvilke eksterne filer, vil skal lÃ¦se
+ind. Hver af disse fÃ¥r en label (intro, Linux og konklusion) som vi
 anvender til sidst i filen med et &amp; foran. Der er her til sidst vi
-angiver den rækkefølge filerne indsættes i.
+angiver den rÃ¦kkefÃ¸lge filerne indsÃ¦ttes i.
 </para>
 
 <para>
-Bemærk at kommandoerne <command>&lt;toc&gt;&lt;/toc&gt;</command>
-bruges til at få genereret en indholdsfortegnelse. Dette kræver intet
+BemÃ¦rk at kommandoerne <command>&lt;toc&gt;&lt;/toc&gt;</command>
+bruges til at fÃ¥ genereret en indholdsfortegnelse. Dette krÃ¦ver intet
 andet end den linje.
 </para>
 
@@ -1328,7 +1328,7 @@ andet end den linje.
 <para>
 Vi har i <xref linkend="docbook-Startfilen"/> allerede set ordet
 <command>entity</command> anvendt. Denne bruges til at definere enten
-en forkortelse eller at inkludere en anden fil. Vi så tidligere at tre
+en forkortelse eller at inkludere en anden fil. Vi sÃ¥ tidligere at tre
 filer blev defineret og her er vist samme definitioner samt at en
 forkortelse "pto" er sat til "Peter Toft". 
 </para>
@@ -1342,11 +1342,11 @@ forkortelse "pto" er sat til "Peter Toft".
 
 
 <para>
-Når man ønsker indholdet af <filename>introduktion.sgml</filename>, så
+NÃ¥r man Ã¸nsker indholdet af <filename>introduktion.sgml</filename>, sÃ¥
 skriver man blot <command>&amp;intro;</command>, tilsvarende 
 <command>&amp;Linux;</command> og
 <command>&amp;konklusion;</command>. Skal man bruge teksten "Peter
-Toft", så er det nemmere at bruge <command>&amp;pto;</command>.
+Toft", sÃ¥ er det nemmere at bruge <command>&amp;pto;</command>.
 </para>
 
 </sect3>
@@ -1360,10 +1360,10 @@ Toft", så er det nemmere at bruge <command>&amp;pto;</command>.
 </indexterm>
 <indexterm><primary>-</primary></indexterm>
 <para>
-På dansk skrives tankestreger sådan &ndash altså en mellemlang streg
+PÃ¥ dansk skrives tankestreger sÃ¥dan &ndash altsÃ¥ en mellemlang streg
 med mellemrum omkring. Dette skal ikke forveksles med minus, som er en
 kort streg, som her -. Eller den amerikanske udgave, som er en ret
-lang streg, uden mellemrum&mdash;som ikke anvendes på dansk. (NB:
+lang streg, uden mellemrum&mdash;som ikke anvendes pÃ¥ dansk. (NB:
 Hvis du ser dette i en HTML udgave, er det ikke sikkert at tegnene ser
 forskellige ud!)
 </para>
@@ -1376,62 +1376,62 @@ forskellige ud!)
 </sect1>
 
 <sect1 id="docbook-Compile">
-<title>Oversætte SGML til andre formater</title>
-<indexterm><primary>oversætte SGML</primary></indexterm>
+<title>OversÃ¦tte SGML til andre formater</title>
+<indexterm><primary>oversÃ¦tte SGML</primary></indexterm>
 <indexterm><primary>docbook2html</primary></indexterm>
 <indexterm><primary>docbook2pdf</primary></indexterm>
 <indexterm><primary>docbook2ps</primary></indexterm>
 <indexterm><primary>docbook2rtf</primary></indexterm>
 
 <para>
-Du kan oversætte SGML filerne til HTML, PDF, Postscript og RTF. Der
-er også mulighed for at vælge at oversætte SGML til én HTML-fil og
+Du kan oversÃ¦tte SGML filerne til HTML, PDF, Postscript og RTF. Der
+er ogsÃ¥ mulighed for at vÃ¦lge at oversÃ¦tte SGML til Ã©n HTML-fil og
 ikke til mange, opdelt for hver
-<command>&lt;sect1&gt;</command>. Skal din HTML-fil hentes lokalt på
-læserens harddisk, kan dette være en fordel, men skal den sendes via nettet,
+<command>&lt;sect1&gt;</command>. Skal din HTML-fil hentes lokalt pÃ¥
+lÃ¦serens harddisk, kan dette vÃ¦re en fordel, men skal den sendes via nettet,
 bliver det for langsommeligt.
 </para>
 
 <para>
-Du oversætter din hoved SGML fil
+Du oversÃ¦tter din hoved SGML fil
 (f.eks. <filename>bog.sgml</filename>) til HTML ved at skrive
 <command>docbook2html bog.sgml</command>. Dine HTML filer gemmes i
-<filename>bog</filename> under dit nuværende katalog, fordi SGML-filen
+<filename>bog</filename> under dit nuvÃ¦rende katalog, fordi SGML-filen
 hedder <filename>bog.sgml</filename>.
 </para>
 
 <para>
-Du skal selv sørge for at kopiere dine billed-filer (f.eks. PNG) til
-kataloget <filename>bog</filename>. Typisk kan dette gøres med en
+Du skal selv sÃ¸rge for at kopiere dine billed-filer (f.eks. PNG) til
+kataloget <filename>bog</filename>. Typisk kan dette gÃ¸res med en
 <filename>Makefile</filename>.
 </para>
 
 <para>
-Tilsvarende kan man oversætte <filename>bog.sgml</filename> til PDF
+Tilsvarende kan man oversÃ¦tte <filename>bog.sgml</filename> til PDF
 ved at skrive <command>docbook2pdf bog.sgml</command>. Igen skal alle
-billed-filer (typisk PNG) være placeret der hvor SGML-filerne
-oversættes. Jeg kopierer normalt alle de filer til et midlertidigt
-katalog og oversætter der.
+billed-filer (typisk PNG) vÃ¦re placeret der hvor SGML-filerne
+oversÃ¦ttes. Jeg kopierer normalt alle de filer til et midlertidigt
+katalog og oversÃ¦tter der.
 </para>
 
 <para>
-Skal man oversætte til Postscript hedder kommandoen
+Skal man oversÃ¦tte til Postscript hedder kommandoen
 <command>docbook2ps</command> og RTF laves med <command>docbook2rtf</command>.
 </para>
 
 <sect2 id="docbook-fejl-i-sgml">
 <title>Fejl i SGML-teksten</title>
-<indexterm><primary>Fejl under oversættelse</primary></indexterm>
+<indexterm><primary>Fejl under oversÃ¦ttelse</primary></indexterm>
 <para>
-Har du lavet fejl i din SGML-tekst, så er den oversætter man har i
-<command>docbook2html</command> faktisk til stor hjælp. Vi skal se på et
+Har du lavet fejl i din SGML-tekst, sÃ¥ er den oversÃ¦tter man har i
+<command>docbook2html</command> faktisk til stor hjÃ¦lp. Vi skal se pÃ¥ et
 par eksempler.
 </para>
 
 <example>
 <title>Manglende /para</title>
 <para>
-Lad os prøve at oversætte følgende tekst
+Lad os prÃ¸ve at oversÃ¦tte fÃ¸lgende tekst
 </para>
 
 <programlisting>
@@ -1440,11 +1440,11 @@ Lad os prøve at oversætte følgende tekst
 
 &lt;book id="index" lang="da"&gt;
   &lt;bookinfo&gt;
-    &lt;title&gt;Min første Docbook-bog&lt;/title&gt;
+    &lt;title&gt;Min fÃ¸rste Docbook-bog&lt;/title&gt;
   &lt;/bookinfo&gt;
 
 &lt;chapter id="forord"&gt;
-&lt;title&gt;Mit første kapitel&lt;/title&gt;
+&lt;title&gt;Mit fÃ¸rste kapitel&lt;/title&gt;
 
 &lt;para&gt;
 Vil du skrive i Docbook ?
@@ -1458,7 +1458,7 @@ Ja - men jeg kan ikke huske at slutte mine para-blokke.
 </programlisting>
 
 <para>
-Filen <filename>eks1.sgml</filename> oversættes nu 
+Filen <filename>eks1.sgml</filename> oversÃ¦ttes nu 
 </para>
 
 <programlisting>
@@ -1475,19 +1475,19 @@ about to rename temporary directory to eks1
 </programlisting>
 
 <para>
-For det første laves et temporært katalog
+For det fÃ¸rste laves et temporÃ¦rt katalog
 <filename>DBTOHTML_OUTPUT_DIR3088</filename>, og resultatet vil ende i
 <filename>eks1/</filename> idet filen hedder <filename>eks1.sgml</filename>.
-Man får to ret klare fejlbeskeder. I linje 24 (næstsidste linje) må
-der ikke komme en <command>&lt;/chapter&gt;</command>, når der bør
+Man fÃ¥r to ret klare fejlbeskeder. I linje 24 (nÃ¦stsidste linje) mÃ¥
+der ikke komme en <command>&lt;/chapter&gt;</command>, nÃ¥r der bÃ¸r
 komme en slut PARA, dvs. <command>&lt;/para&gt;</command>. Den
-følgende linje fortæller dernæst at i linje 19 var den
+fÃ¸lgende linje fortÃ¦ller dernÃ¦st at i linje 19 var den
 <command>&lt;para&gt;</command>, som ikke kunne matches.
 </para>
 
 <para>
-Tilføj en <command>&lt;/para&gt;</command> før næstsidste linje og 
-teksten oversætter fejlfrit.
+TilfÃ¸j en <command>&lt;/para&gt;</command> fÃ¸r nÃ¦stsidste linje og 
+teksten oversÃ¦tter fejlfrit.
 </para>
 
 </example>
@@ -1495,7 +1495,7 @@ teksten oversætter fejlfrit.
 <example>
 <title>To ens ID</title>
 <para>
-Lad os prøve at oversætte følgende tekst
+Lad os prÃ¸ve at oversÃ¦tte fÃ¸lgende tekst
 </para>
 
 <programlisting>
@@ -1511,14 +1511,14 @@ Lad os prøve at oversætte følgende tekst
 
 
 &lt;chapter id="id1"&gt;
-&lt;title&gt;Mit første kapitel&lt;/title&gt;
+&lt;title&gt;Mit fÃ¸rste kapitel&lt;/title&gt;
 
 &lt;para&gt;
 Vil du skrive i Docbook ?
 &lt;/para&gt;
 
 &lt;sect1 id="id1"&gt;
-&lt;title&gt;Mit første underkapitel&lt;/title&gt;
+&lt;title&gt;Mit fÃ¸rste underkapitel&lt;/title&gt;
 &lt;para&gt;
 tekst1
 &lt;/para&gt;
@@ -1529,7 +1529,7 @@ tekst1
 </programlisting>
 
 <para>
-Filen <filename>eks2.sgml</filename> oversættes nu 
+Filen <filename>eks2.sgml</filename> oversÃ¦ttes nu 
 </para>
 
 <programlisting>
@@ -1546,8 +1546,8 @@ about to rename temporary directory to eks2
 </programlisting>
 
 <para>
-Her ses at ID1 er erklæret to gange - og der oplyses hvilke steder det
-sker. Omdefiner den ene og oversæt igen.
+Her ses at ID1 er erklÃ¦ret to gange - og der oplyses hvilke steder det
+sker. Omdefiner den ene og oversÃ¦t igen.
 </para>
 </example>
 
@@ -1561,13 +1561,13 @@ sker. Omdefiner den ene og oversæt igen.
 <title>Stikordsregister</title>
 <indexterm><primary>stikordsregister, oprettelse</primary></indexterm>
 <para>
-At få lavet et stikordsregister er ikke så integreret i Docbook som
-man kunne ønske sig, men modsat så kan det nemt indføres, når bare man
-har en vejledning. Det første man skal gøre er at hente et Perl-program,
+At fÃ¥ lavet et stikordsregister er ikke sÃ¥ integreret i Docbook som
+man kunne Ã¸nske sig, men modsat sÃ¥ kan det nemt indfÃ¸res, nÃ¥r bare man
+har en vejledning. Det fÃ¸rste man skal gÃ¸re er at hente et Perl-program,
 <command>collateindex.pl</command>, som f.eks. kan hentes fra 
 <ulink
 url="http://&linuxbogurl;/misc/collateindex.pl">&linuxbogurl;/misc/collateindex.pl</ulink>.
-Filen skal gøres kørbar og f.eks. placeres i <filename>/usr/local/bin</filename>.
+Filen skal gÃ¸res kÃ¸rbar og f.eks. placeres i <filename>/usr/local/bin</filename>.
 </para>
 
 
@@ -1578,34 +1578,34 @@ Filen skal gøres kørbar og f.eks. placeres i <filename>/usr/local/bin</filename>
 <indexterm><primary>indexterm</primary><secondary>secondary</secondary></indexterm>
 <indexterm><primary>SGML-elementer</primary><secondary>indexterm</secondary></indexterm>
 <para>
-Før man får en stikordsliste skal man igennem hele ens dokument og
-markere de steder, man ønsker et link til. Det er manuelt arbejde.
-Hvert sted man ønsker et link til skal man tilføje
+FÃ¸r man fÃ¥r en stikordsliste skal man igennem hele ens dokument og
+markere de steder, man Ã¸nsker et link til. Det er manuelt arbejde.
+Hvert sted man Ã¸nsker et link til skal man tilfÃ¸je
 </para>
 
 <programlisting>
-&lt;indexterm&gt;&lt;primary&gt;Søgeord&lt;/primary&gt;&lt;/indexterm&gt;
+&lt;indexterm&gt;&lt;primary&gt;SÃ¸geord&lt;/primary&gt;&lt;/indexterm&gt;
 </programlisting>
 
 <para>
-I stikordsregisteret vil man så kunne se at "Søgeord" kan man læse om
-det pågælende afsnit. Man kan godt lave henvisning til flere
-forskellige steder med samme søgeord. Indføj blot flere linjer som den
-ovenstående og man får et tilsvarende antal referencer i stikordsregisteret.
+I stikordsregisteret vil man sÃ¥ kunne se at "SÃ¸geord" kan man lÃ¦se om
+det pÃ¥gÃ¦lende afsnit. Man kan godt lave henvisning til flere
+forskellige steder med samme sÃ¸geord. IndfÃ¸j blot flere linjer som den
+ovenstÃ¥ende og man fÃ¥r et tilsvarende antal referencer i stikordsregisteret.
 </para>
 
 <para>
-Samme markeringsteknik kan laves med underinddelinger, så man under
-"Søgeord" kan have f.eks. "At lave søgeord" og et andet sted "At finde
-søgeord". For at lave det første eksempel skrives følgende, og det kan
-bemærkes, at linjedelingen og indrykningen nedenfor alene tjener til
-at gøre SGML-koden nemmere at læse.
+Samme markeringsteknik kan laves med underinddelinger, sÃ¥ man under
+"SÃ¸geord" kan have f.eks. "At lave sÃ¸geord" og et andet sted "At finde
+sÃ¸geord". For at lave det fÃ¸rste eksempel skrives fÃ¸lgende, og det kan
+bemÃ¦rkes, at linjedelingen og indrykningen nedenfor alene tjener til
+at gÃ¸re SGML-koden nemmere at lÃ¦se.
 </para>
 
 <programlisting>
 &lt;indexterm&gt;
- &lt;primary&gt;Søgeord&lt;/primary&gt;
- &lt;secondary&gt;At lave søgeord&lt;/secondary&gt;
+ &lt;primary&gt;SÃ¸geord&lt;/primary&gt;
+ &lt;secondary&gt;At lave sÃ¸geord&lt;/secondary&gt;
 &lt;/indexterm&gt;
 </programlisting>
 </sect4>
@@ -1615,16 +1615,16 @@ at gøre SGML-koden nemmere at læse.
 <indexterm><primary>collateindex.pl</primary></indexterm>
 
 <para>
-Når man har sat alle sine stikordshenvisninger ind i dokumentet kommer
-turen til at få genereret dokumentet med <command>collateindex.pl</command>.
-Tricket er at man skal oversætte sit dokument en gang før man kører
-<command>docbook2html</command> (eller hvad man nu har som mål-format).
+NÃ¥r man har sat alle sine stikordshenvisninger ind i dokumentet kommer
+turen til at fÃ¥ genereret dokumentet med <command>collateindex.pl</command>.
+Tricket er at man skal oversÃ¦tte sit dokument en gang fÃ¸r man kÃ¸rer
+<command>docbook2html</command> (eller hvad man nu har som mÃ¥l-format).
 </para>
 
 <para>
 Jeg plejer typisk at have en <filename>Makefile</filename>, hvor jeg
-oversætter min hoved SGML-fil <filename>bog.sgml</filename> på
-følgende måde. Jeg har kommenteret Makefilen med kommentarer før kommandoen
+oversÃ¦tter min hoved SGML-fil <filename>bog.sgml</filename> pÃ¥
+fÃ¸lgende mÃ¥de. Jeg har kommenteret Makefilen med kommentarer fÃ¸r kommandoen
 </para>
 
 <programlisting>
@@ -1632,35 +1632,35 @@ følgende måde. Jeg har kommenteret Makefilen med kommentarer før kommandoen
     rm -rf tempdir stikord.sgml
 # Skab et  midlertidige katalog "tempdir"
     mkdir tempdir
-# Initialiser "stikord.sgml" til at være tom
+# Initialiser "stikord.sgml" til at vÃ¦re tom
     perl /usr/local/bin/collateindex.pl \
         -s Symboler  -t Stikordsregister -g \
         -i stikord -N -o stikord.sgml
 # Kopier alle SGML filer til "tempdir"
     cp *.sgml tempdir
-# Gå ned i "tempdir" og oversæt SGML-filerne hvor HTML.index dannes
+# GÃ¥ ned i "tempdir" og oversÃ¦t SGML-filerne hvor HTML.index dannes
     (cd tempdir; jade -t sgml -ihtml \
         -d /usr/lib/sgml/stylesheets/cygnus-both.dsl\#html \
         -V html-index bog.sgml)
-# Kør nu "collateindex.pl" som oversætter "HTML.index" til indholdet
-# af SGML-filen "stikord.sgml". -s er at symboler optræder under
+# KÃ¸r nu "collateindex.pl" som oversÃ¦tter "HTML.index" til indholdet
+# af SGML-filen "stikord.sgml". -s er at symboler optrÃ¦der under
 # navnet "symboler". -t angiver overskrift for "stikord.sgml"
     perl /usr/local/bin/collateindex.pl -s Symboler \
         -t Stikordsregister  -g -i stikord \
         -o stikord.sgml tempdir/HTML.index
-# Nu er "stikord.sgml" fuld af referencer som kan oversættes
+# Nu er "stikord.sgml" fuld af referencer som kan oversÃ¦ttes
     docbook2html bog.sgml
 # Kopier alle PNG-filer fra "images/" til "bog/"
     cp images/*.png bog
 </programlisting>
 
 <para>
-Skal du tilsvarende oversætte til PDF kan du have en del af en
+Skal du tilsvarende oversÃ¦tte til PDF kan du have en del af en
 <filename>Makefile</filename> med et lidt andet indhold. Ideen er den
 samme, men <command>jade</command>, som anvendes til at lave
-stikordsregisteret får "print" overført ikke "html". Dette gør, at man
-få sidenumre og ikke afsnitsnavne i stikordsregisteret. Bemærk også at
-<command>-V nochunks</command> gør at filen oversættes til en stor fil
+stikordsregisteret fÃ¥r "print" overfÃ¸rt ikke "html". Dette gÃ¸r, at man
+fÃ¥ sidenumre og ikke afsnitsnavne i stikordsregisteret. BemÃ¦rk ogsÃ¥ at
+<command>-V nochunks</command> gÃ¸r at filen oversÃ¦ttes til en stor fil
 (svarende til den endelige PDF-fil).
 </para>
 
@@ -1670,31 +1670,31 @@ få sidenumre og ikke afsnitsnavne i stikordsregisteret. Bemærk også at
     rm -rf tempdir stikord.sgml bogpdf
 # Skab et  midlertidige katalog "tempdir"
     mkdir tempdir
-# Initialiser "stikord.sgml" til at være tom
+# Initialiser "stikord.sgml" til at vÃ¦re tom
     perl /usr/local/bin/collateindex.pl \
         -s Symboler  -t Stikordsregister -g \
         -i stikord -N -o stikord.sgml
 # Kopier alle SGML filer til "tempdir"
     cp *.sgml tempdir
-# Gå ned i "tempdir" og oversæt SGML-filerne hvor HTML.index dannes
+# GÃ¥ ned i "tempdir" og oversÃ¦t SGML-filerne hvor HTML.index dannes
     (cd tempdir; jade -t sgml -ihtml \
         -d /usr/lib/sgml/stylesheets/cygnus-both.dsl\#print 
         -V html-index -V nochunks bog.sgml > slet_fil.html)
-# Kør nu "collateindex.pl" som oversætter "HTML.index" til indholdet
-# af SGML-filen "stikord.sgml". -s er at symboler optræder under
+# KÃ¸r nu "collateindex.pl" som oversÃ¦tter "HTML.index" til indholdet
+# af SGML-filen "stikord.sgml". -s er at symboler optrÃ¦der under
 # navnet "symboler". -t angiver overskrift for "stikord.sgml"
     perl /usr/local/bin/collateindex.pl -s Symboler \
         -t Stikordsregister  -g -i stikord \
         -o stikord.sgml tempdir/HTML.index
-# Nu er "stikord.sgml" fuld af referencer som kan oversættes
+# Nu er "stikord.sgml" fuld af referencer som kan oversÃ¦ttes
     mkdir bogpdf
 # Kopier alle SGML-filer til "bogpdf/"
     cp *.sgml bogpdf
 # Kopier alle PNG-filer fra "images/" til "bog/"
     cp images/*.png bogpdf
-# Kør "docbook2pdf" i "bogpdf/" 
+# KÃ¸r "docbook2pdf" i "bogpdf/" 
     (cd bogpdf; docbook2pdf bog.sgml)
-# Flytter PDF-filen til nuværende katalog
+# Flytter PDF-filen til nuvÃ¦rende katalog
     mv bogpdf/bog.pdf .
 </programlisting>
 </sect4>
@@ -1704,10 +1704,10 @@ få sidenumre og ikke afsnitsnavne i stikordsregisteret. Bemærk også at
 <indexterm><primary>Postscript</primary></indexterm>
 <para>
 Som vist i forrige afsnit kopieres PNG-filer blot til det katalog hvor
-man oversætter. Skal man oversætte Docbook dokumentet til Postscript
-opstår dog problemet; Man kan ikke oversætte dokumentet med
-PNG-billeder, men godt med EPS-billeder. Det problem kan også løses,
-men det er bøvlet og kræver at alle billeder oversættes til EPS,
+man oversÃ¦tter. Skal man oversÃ¦tte Docbook dokumentet til Postscript
+opstÃ¥r dog problemet; Man kan ikke oversÃ¦tte dokumentet med
+PNG-billeder, men godt med EPS-billeder. Det problem kan ogsÃ¥ lÃ¸ses,
+men det er bÃ¸vlet og krÃ¦ver at alle billeder oversÃ¦ttes til EPS,
 f.eks. ved at bruge <command>convert</command>fra
 ImageMagick-programmet.
 </para>
@@ -1716,23 +1716,23 @@ ImageMagick-programmet.
 </sect3>
 
 <sect3 id="docbook-texconfig">
-<title>Ændring af opsætning</title>
-<indexterm><primary>opsætning (layout), ændring af</primary></indexterm>
-<indexterm><primary>layout, ændring af</primary></indexterm>
+<title>Ã†ndring af opsÃ¦tning</title>
+<indexterm><primary>opsÃ¦tning (layout), Ã¦ndring af</primary></indexterm>
+<indexterm><primary>layout, Ã¦ndring af</primary></indexterm>
 
 <para>
 Er du utilfreds med hvordan marginer i PDF-filen er eller hvordan dine
-HTML style-filer anvendes, så har Docbook et hav af muligheder for at
-skrue på format.
+HTML style-filer anvendes, sÃ¥ har Docbook et hav af muligheder for at
+skrue pÃ¥ format.
 </para>
 
 <para>
-I <filename>/usr/lib/sgml</filename> ligger alle de opsætningsfiler
-Docbook bruger. Oftest vil man ændre i ganske få filer, såsom
+I <filename>/usr/lib/sgml</filename> ligger alle de opsÃ¦tningsfiler
+Docbook bruger. Oftest vil man Ã¦ndre i ganske fÃ¥ filer, sÃ¥som
 <filename>/usr/lib/sgml/stylesheets/nwalsh-modular/common/dbl1da.ent</filename>.
-I denne fil står alle de oversættelser man har til dansk for
-referencer og afsnit. Mener du at en "Section" (på engelsk) hedder
-"Sektion" og ikke "Afsnit" så kan du ændre linjen
+I denne fil stÃ¥r alle de oversÃ¦ttelser man har til dansk for
+referencer og afsnit. Mener du at en "Section" (pÃ¥ engelsk) hedder
+"Sektion" og ikke "Afsnit" sÃ¥ kan du Ã¦ndre linjen
 </para>
 
 <programlisting>
@@ -1748,22 +1748,22 @@ til
 </programlisting>
 
 <para>
-Tilsvarende finder du mange opsætningsparametre fælles for HTML og
+Tilsvarende finder du mange opsÃ¦tningsparametre fÃ¦lles for HTML og
 PDF/Postscript i
 <filename>/usr/lib/sgml/stylesheets/nwalsh-modular/common/dbcommon.dsl</filename>.
-Filen er skrevet i LISP (ligesom Emacs opsætningsfiler) og har mange
-kommentarer. Oftest er det ikke denne fil man vil ændre i.
+Filen er skrevet i LISP (ligesom Emacs opsÃ¦tningsfiler) og har mange
+kommentarer. Oftest er det ikke denne fil man vil Ã¦ndre i.
 </para>
 
 <para>
-For HTML-generering vil du nok ændre i 
+For HTML-generering vil du nok Ã¦ndre i 
 <filename>/usr/lib/sgml/stylesheets/nwalsh-modular/html/dbparam.dsl</filename>.
-Du vil se at filen har mange kommentarer og vil du ændre en parameter
-fra sand til falsk er det <command>#t</command> som ændres til <command>#f</command>.
+Du vil se at filen har mange kommentarer og vil du Ã¦ndre en parameter
+fra sand til falsk er det <command>#t</command> som Ã¦ndres til <command>#f</command>.
 </para>
 
 <para>
-I forhold til standardopsætningen kan det være interessant at kigge på:
+I forhold til standardopsÃ¦tningen kan det vÃ¦re interessant at kigge pÃ¥:
 </para>
 
 <programlisting>
@@ -1771,13 +1771,13 @@ I forhold til standardopsætningen kan det være interessant at kigge på:
 </programlisting>
 
 <para>
-Sættes den til <command>#t</command> bliver afsnit ("sections") automatisk nummereret. 
-Første afsnit ("sect1") i kapitel 7 vil så få nummer 7.1. 
+SÃ¦ttes den til <command>#t</command> bliver afsnit ("sections") automatisk nummereret. 
+FÃ¸rste afsnit ("sect1") i kapitel 7 vil sÃ¥ fÃ¥ nummer 7.1. 
 </para>
 
 <para>
-Hvis man vil undgå at få en indholdsfortegnelse over tabeller og figurer nedenunder den 
-almindelige indholdsfortegnelse, skal $generate-book-lot-list$ sættes til
+Hvis man vil undgÃ¥ at fÃ¥ en indholdsfortegnelse over tabeller og figurer nedenunder den 
+almindelige indholdsfortegnelse, skal $generate-book-lot-list$ sÃ¦ttes til
 </para>
 
 <programlisting>
@@ -1800,8 +1800,8 @@ almindelige indholdsfortegnelse, skal $generate-book-lot-list$ sættes til
 </programlisting>
 
 <para>
-Hvis du ønsker at styre udseendet af bogen (i HTML-udgaven), kan det gøres ved at 
-vælge at bruge et eksternt Cascading Style Sheet. Filnavnet på dette angives i
+Hvis du Ã¸nsker at styre udseendet af bogen (i HTML-udgaven), kan det gÃ¸res ved at 
+vÃ¦lge at bruge et eksternt Cascading Style Sheet. Filnavnet pÃ¥ dette angives i
 </para>
 
 <programlisting>
@@ -1818,14 +1818,14 @@ vælge at bruge et eksternt Cascading Style Sheet. Filnavnet på dette angives i
 </programlisting>
 
 <para>
-Du skal selvfølgelig sørge for, at der er et stylesheet på den angivne placering...
+Du skal selvfÃ¸lgelig sÃ¸rge for, at der er et stylesheet pÃ¥ den angivne placering...
 </para>
 
 <para>
 For PDF og Postscript-generering (kaldes "print" i Docbook) vil du nok
-ændre i <filename>/usr/share/sgml/docbook/dsssl-stylesheets/print/dbparam.dsl</filename>
+Ã¦ndre i <filename>/usr/share/sgml/docbook/dsssl-stylesheets/print/dbparam.dsl</filename>
 (Red Hat 6.2 <filename>/usr/lib/sgml/stylesheets/nwalsh-modular/print/dbparam.dsl</filename>).
-En ting du nok skal se på er "%paper-type%" som sættes til
+En ting du nok skal se pÃ¥ er "%paper-type%" som sÃ¦ttes til
 </para>
 
 <programlisting>
@@ -1884,7 +1884,7 @@ til
 <para>
 Tilsvarende kan man lede efter margin og finde de marginer, som anvendes i 
 PDF-dokumentet, ligesom "%section-autolabel%" og "$generate-book-lot-list$" 
-kan ændres på samme vis som i 
+kan Ã¦ndres pÃ¥ samme vis som i 
 <filename>/usr/share/sgml/docbook/dsssl-stylesheets/html/dbparam.dsl</filename>.
 </para>
 
@@ -1903,18 +1903,18 @@ kan ændres på samme vis som i
 </indexterm>
 
 <para>
-Her er en kort beskrivelse af de dele, som indgår i docbook
+Her er en kort beskrivelse af de dele, som indgÃ¥r i docbook
 systemet.
 </para>
 
 <para>
-Et dokument system består af tre dele:
+Et dokument system bestÃ¥r af tre dele:
 </para>
 
 <orderedlist id="dokumentation-delsystemer">
 <listitem>
 <para>
-En specifikation af formatet, altså en syntax og/eller
+En specifikation af formatet, altsÃ¥ en syntax og/eller
 dokumentation af de elementer, man bruger, og hvad meningen er med
 dem.
 </para>
@@ -1922,20 +1922,20 @@ dem.
 <listitem>
 <para>
 Filer med formateringskommandoer, som omformer det abstrakte
-dokument til et output, som kan printes eller på anden måde
+dokument til et output, som kan printes eller pÃ¥ anden mÃ¥de
 publiceres.
 </para>
 </listitem>
 <listitem>
 <para>
-Et program (eller flere programmer), som læser og udfører
+Et program (eller flere programmer), som lÃ¦ser og udfÃ¸rer
 formateringskommandoerne.
 </para>
 </listitem>
 <listitem>
 <para>
 En print-mekanisme, som kan omforme fra et almindeligt
-printerformat til det, som printeren nu måtte forlange.
+printerformat til det, som printeren nu mÃ¥tte forlange.
 </para>
 </listitem>
 </orderedlist>
@@ -1944,12 +1944,12 @@ printerformat til det, som printeren nu måtte forlange.
 Det var jo 4 ting!? Jo, men den sidste del er jo oftest en
 generel mekanisme, som for eksempel Linux/GNU print systemet, der kan tage
 en postscript fil og konvertere den til de fleste af de
-printerformater, som man kan købe i dag.
+printerformater, som man kan kÃ¸be i dag.
 </para>
 
 <sect2 id="dokumentation-docbook-bestaar-af">
 
-<title>Hvad docbook består af</title>
+<title>Hvad docbook bestÃ¥r af</title>
 <indexterm>
  <primary>docbook</primary>
  <secondary>delsystemer</secondary>
@@ -1957,13 +1957,13 @@ printerformater, som man kan købe i dag.
 
 <para>
 DocBook systemet er sammensat af mange elementer. De kommer
-forskellige steder fra, og programmørerne (eller forfatterne) har
-ikke ønsket at sætte dem sammen i én pakke.
+forskellige steder fra, og programmÃ¸rerne (eller forfatterne) har
+ikke Ã¸nsket at sÃ¦tte dem sammen i Ã©n pakke.
 </para>
 
 <para>
 Her er en liste over alle de ting, som skal fungere sammen for at
-DocBook kildetekster kan "oversættes" til html, pdf eller
+DocBook kildetekster kan "oversÃ¦ttes" til html, pdf eller
 postscript filer.
 </para>
 
@@ -1971,8 +1971,8 @@ postscript filer.
 <listitem>
 <para>
 Openjade, programmet, som foretager konverteringer af sgml
-dokumenter til andre formater. <command>jade</command> læser en document
-type definition (DTD) og agerer efter denne instruktion på
+dokumenter til andre formater. <command>jade</command> lÃ¦ser en document
+type definition (DTD) og agerer efter denne instruktion pÃ¥
 dokument "source". 
 </para>
 </listitem>
@@ -1980,16 +1980,16 @@ dokument "source".
 <listitem>
 <para>
 DocBook SGML - DTD. Det er de filer, som beskriver reglerne for
-de elementer, som OpenJade skal acceptere, altså 
+de elementer, som OpenJade skal acceptere, altsÃ¥ 
 <emphasis>regler</emphasis> eller <emphasis>syntax</emphasis>
-for, hvornår man skal bruge for eksempel  &lt;para&gt;.
+for, hvornÃ¥r man skal bruge for eksempel  &lt;para&gt;.
 </para>
 </listitem>
    
 <listitem>
 <para>
 ISO entity filer. De definerer de tegn, som bruges i output fra
-openjade. Der er mange typer tegn, græske bogstaver, matematiske
+openjade. Der er mange typer tegn, grÃ¦ske bogstaver, matematiske
 tegn, specielle valutasymboler etc. Det er faktisk filer fra
 International Standards Organization (ISO).
 </para>
@@ -2006,8 +2006,8 @@ en ISO standard.
    
 <listitem>
 <para>
-Docbook-utils. Nogle konverteringer foregår i flere trin. Disse
-tools er blot scripts, som samler flere kommandoer til én kommando.
+Docbook-utils. Nogle konverteringer foregÃ¥r i flere trin. Disse
+tools er blot scripts, som samler flere kommandoer til Ã©n kommando.
 </para>
 </listitem>
 
@@ -2020,24 +2020,24 @@ pdfjadetex - systemet.
    
 <listitem>
 <para>
-TeX, for eksempel tetex implementationen, som følger med Red Hat og de
-fleste andre Linux/GNU distributioner. Man skal også have
+TeX, for eksempel tetex implementationen, som fÃ¸lger med Red Hat og de
+fleste andre Linux/GNU distributioner. Man skal ogsÃ¥ have
 hyperref og latex, for at det hele spiller sammen, men dem har
-distributøren pakket sammen med tetex.
+distributÃ¸ren pakket sammen med tetex.
 </para>
 </listitem>
    
 <listitem>
 <para>
 jadetex og pdfjadetex, formaterings-specifikationer til TeX, som
-gør det muligt at konvertere det output, som jade laver, til
+gÃ¸r det muligt at konvertere det output, som jade laver, til
 postscript filer og pdf filer.
 </para>
 </listitem>
    
 <listitem>
 <para>
-HTMLdoc, er en af måderne til generering af bookmarks eller index
+HTMLdoc, er en af mÃ¥derne til generering af bookmarks eller index
 til PDF filer.
 </para>
 </listitem>
@@ -2070,7 +2070,7 @@ and Specification Language" (DSSSL). Den transformerer DocBook
 sgml kildefiler til html, tex, rtf, txt og andet. OpenJade er den
 essentielle maskine til konvertering af en DocBook fil til andre
 formater. TeX output formatet bruges mest som et mellemformat for
-at opnå dvi, pdf og postscript filer via TeX macro'er og dvi
+at opnÃ¥ dvi, pdf og postscript filer via TeX macro'er og dvi
 konverterings programmer.
 </para>
 </sect3>
@@ -2084,27 +2084,27 @@ konverterings programmer.
 
 <para>
 DocBook SGML DTD, dokument-type-definitionen for den eller de
-docbook - versioner, som du ønsker at benytte. Der er ikke den
+docbook - versioner, som du Ã¸nsker at benytte. Der er ikke den
 store forskel mellem for eksempel version 4.0 og version 4.1. Ved at rette
-i dokument-type-versions-specifikationen øverst i kildeteksten
+i dokument-type-versions-specifikationen Ã¸verst i kildeteksten
 kan man skifte fra den ene til den anden version, og ofte vil
-oversættelse, d.v.s. generering af html og/eller pdf-filer,
-stadig kunne foretages uden at der opstår fejl.
+oversÃ¦ttelse, d.v.s. generering af html og/eller pdf-filer,
+stadig kunne foretages uden at der opstÃ¥r fejl.
 </para>
 
 <para>
-DTD filerne for en DocBook version ligger i et directory, som på
+DTD filerne for en DocBook version ligger i et directory, som pÃ¥
 Red Hat er <filename>/usr/share/sgml/docbook/&lt;dir-navn&gt;</filename>
-Disse filer definerer sammen med entity filerne et sæt regler
-som anvendes af OpenJade, når den læser kildeteksten af en
+Disse filer definerer sammen med entity filerne et sÃ¦t regler
+som anvendes af OpenJade, nÃ¥r den lÃ¦ser kildeteksten af en
 sgml-pakke.
 </para>
 
 <para>
 OpenJade skal have tilgang til et katalog for hver type
-dokument, som man forventer, at den skal kunne oversætte. Strengt
-taget kan man specificere dcl-filer, d.v.s. docbook-erklæringer,
-på kommandolinjen, men det er altså ikke praktisk, så derfor har
+dokument, som man forventer, at den skal kunne oversÃ¦tte. Strengt
+taget kan man specificere dcl-filer, d.v.s. docbook-erklÃ¦ringer,
+pÃ¥ kommandolinjen, men det er altsÃ¥ ikke praktisk, sÃ¥ derfor har
 man catalog-mekanismen.
 </para>
 
@@ -2117,11 +2117,11 @@ man catalog-mekanismen.
 </indexterm>
 
 <para>
-ISO8879 ENTITY SGML. Entiteter definerer repræsentation af specielle
+ISO8879 ENTITY SGML. Entiteter definerer reprÃ¦sentation af specielle
 tegn, som enten ikke har nogen keyboard-knap eller som har
 speciel funktion i SGML-kildeteksten. 
 Eksempel: "&amp;amp;" = '&amp;' og "&amp;ap;" = '&ap;'
-(approximation, tilnærmelsesvis-lig-med).
+(approximation, tilnÃ¦rmelsesvis-lig-med).
 </para>
 
 </sect3>
@@ -2138,9 +2138,9 @@ Eksempel: "&amp;amp;" = '&amp;' og "&amp;ap;" = '&ap;'
 <para>
 DocBook DSSSL, Document Style Semantics and Specification
 Language (DSSSL) filerne med .dsl endelse, for hver af de
-forskellige typer output format, som man ønsker, html, rtf og
-så videre. DSSSL er en ISO-standard, og man kan finde
-dokumentationen på OASIS-hjemmesiden, <ulink
+forskellige typer output format, som man Ã¸nsker, html, rtf og
+sÃ¥ videre. DSSSL er en ISO-standard, og man kan finde
+dokumentationen pÃ¥ OASIS-hjemmesiden, <ulink
 url="http://www.oasis-open.org/docbook/">http://www.oasis-open.org/</ulink>.
 </para>
 
@@ -2152,18 +2152,18 @@ url="http://www.oasis-open.org/docbook/">http://www.oasis-open.org/</ulink>.
  <primary>docbook-utils</primary>
 </indexterm>
 
-<para>Det er små scripts, som benytter et lidt større script, jw,
-jade-wrapper, til opsætning, så oversættelsen sker uden for mange
-overflødige krav til kommandolinjen.
+<para>Det er smÃ¥ scripts, som benytter et lidt stÃ¸rre script, jw,
+jade-wrapper, til opsÃ¦tning, sÃ¥ oversÃ¦ttelsen sker uden for mange
+overflÃ¸dige krav til kommandolinjen.
 </para>
 
 <para>
 Konvertering af en docbook fil til postscript eller pdf er en 
-to-trins proces. Openjade skriver en tex-fil, som så er
+to-trins proces. Openjade skriver en tex-fil, som sÃ¥ er
 input for jadetex, som producerer en dvi, og pdfjadetex, som
-producerer en pdf-fil. Postscript opnås så ved at sende dvi filen
-igennem dvips. Docbook-utils sparer os for alle de kommandoer, så
-vi med en enkelt kommando kan udføre disse operationer.
+producerer en pdf-fil. Postscript opnÃ¥s sÃ¥ ved at sende dvi filen
+igennem dvips. Docbook-utils sparer os for alle de kommandoer, sÃ¥
+vi med en enkelt kommando kan udfÃ¸re disse operationer.
 </para>
 
 </sect3>
@@ -2171,7 +2171,7 @@ vi med en enkelt kommando kan udføre disse operationer.
 <sect3 id="HTMLdoc">
 
 
-<title>HTMLdoc - et hjælpeprogram</title>
+<title>HTMLdoc - et hjÃ¦lpeprogram</title>
 
 <indexterm>
  <primary>HTMLdoc</primary>
@@ -2179,8 +2179,8 @@ vi med en enkelt kommando kan udføre disse operationer.
 
 
 <para>
-Mini-Howto'en for installering af DocBook pakker nævner dette som
-et specielt system, men jeg har p.t. ikke nogen idé om, hvilke
+Mini-Howto'en for installering af DocBook pakker nÃ¦vner dette som
+et specielt system, men jeg har p.t. ikke nogen idÃ© om, hvilke
 Red Hat 7.1++ pakker dette svarer til.
 HTMLdoc er et frit program, som konverterer html filer til pdf
 eller ps filer.
@@ -2206,7 +2206,7 @@ SGMLspm er et perl modul, som sammen med andre programmer
 modul, som behandler parsed output fra onsgmls (open new sgml -
 parser). SGMLSpm inkluderer en applikation, som hedder sgmlspl,
 for at kunne bruge SGMLSpm modul-library'et. Sgmlspl har brug for
-spec filer, som kan fås fra forskellige andre sites på
+spec filer, som kan fÃ¥s fra forskellige andre sites pÃ¥
 internettet, for hver type konvertering, som den skal foretage.
 DocBook2X er en pakke, som leverer spec-filer, der kan
 transformere docbook-filer til man-pages.
@@ -2224,15 +2224,15 @@ transformere docbook-filer til man-pages.
 <title>Epilog</title>
 
 <para>
-Har du brug for at se flere SGML eksempler, så se f.eks. 
+Har du brug for at se flere SGML eksempler, sÃ¥ se f.eks. 
 <ulink url="http://&linuxbogurl;/linuxbog/friheden">&linuxbogurl;/linuxbog/friheden</ulink>.
 Tilsvarende er der en del eksempler i 
 <filename>/usr/lib/sgml/stylesheets/nwalsh-modular/doc</filename>.
 </para>
 
 <para>
-Har du brug for hjælp til Docbook, så er der en god diskussionsgruppe
-at finde på <ulink
+Har du brug for hjÃ¦lp til Docbook, sÃ¥ er der en god diskussionsgruppe
+at finde pÃ¥ <ulink
 url="mailto:docbook-tools-discuss@sourceware.cygnus.com">docbook-tools-discuss@sourceware.cygnus.com</ulink>.
 Man tilmelder sig via at skrive til <ulink
 url="mailto:docbook-tools-discuss-subscribe@sourceware.cygnus.com">docbook-tools-discuss-subscribe@sourceware.cygnus.com</ulink>.
@@ -2248,7 +2248,7 @@ url="mailto:docbook-tools-discuss-subscribe@sourceware.cygnus.com">docbook-tools
 
 <listitem>
  <para>
-Du kan også have glæde af den fulde Docbook dokumentation, der kan
+Du kan ogsÃ¥ have glÃ¦de af den fulde Docbook dokumentation, der kan
 hentes fra <ulink url="http://www.oasis-open.org/docbook/">http://www.oasis-open.org/docbook/</ulink>.
  </para>
 </listitem>
@@ -2256,9 +2256,9 @@ hentes fra <ulink url="http://www.oasis-open.org/docbook/">http://www.oasis-open
 <listitem> 
  <para>
   Bogen "DocBook - The Definitive Guide" af Norman Walsh &amp; Leonard
-  Muellner - O'Reilly. Den kan læses på 
+  Muellner - O'Reilly. Den kan lÃ¦ses pÃ¥ 
   <ulink url="http://docbook.org/tdg/">http://docbook.org/tdg/</ulink>.
-  Den er måske ikke "The Definitive Guide" i praksis...
+  Den er mÃ¥ske ikke "The Definitive Guide" i praksis...
  </para>
 </listitem>
 
@@ -2285,18 +2285,18 @@ hentes fra <ulink url="http://www.oasis-open.org/docbook/">http://www.oasis-open
 
 <listitem> 
  <para>
-  Praktisk guide i brug af SGML/XML og Docbook på Windows NT
+  Praktisk guide i brug af SGML/XML og Docbook pÃ¥ Windows NT
  <ulink url="http://ourworld.compuserve.com/homepages/hoenicka_markus/ntsgml.html">http://ourworld.compuserve.com/homepages/hoenicka_markus/ntsgml.html</ulink>
  </para>
 </listitem>
 
 
 <listitem> 
-<indexterm><primary>HTML til SGML/DocBook oversættelse</primary></indexterm>
-<indexterm><primary>SGML/DocBook</primary><secondary>oversættelse fra HTML</secondary></indexterm>
+<indexterm><primary>HTML til SGML/DocBook oversÃ¦ttelse</primary></indexterm>
+<indexterm><primary>SGML/DocBook</primary><secondary>oversÃ¦ttelse fra HTML</secondary></indexterm>
  <para>
-Skal du konvertere fra HTML til SGML/DocBook kan du have glæde af
-Carsten Svaneborgs oversætter, der findes på 
+Skal du konvertere fra HTML til SGML/DocBook kan du have glÃ¦de af
+Carsten Svaneborgs oversÃ¦tter, der findes pÃ¥ 
 <ulink url="http://&linuxbogurl;/misc/html2sgml">&linuxbogurl;/misc/html2sgml</ulink>
  </para>
 </listitem>
@@ -2349,21 +2349,21 @@ Carsten Svaneborgs oversætter, der findes på
 <para>
 Der er nogen, som har haft stor gavn af en xml syntax support
 pakke til GNU emacs. Pakken hedder nxml, er skrevet af James
-Clark og alene dette navn kan få Linux Groff og Jade brugere til
-at spidse øren, idet James Clark har skrevet de to programmer.
-Pakken kan hentes på 
+Clark og alene dette navn kan fÃ¥ Linux Groff og Jade brugere til
+at spidse Ã¸ren, idet James Clark har skrevet de to programmer.
+Pakken kan hentes pÃ¥ 
 <ulink url="http://www.thaiopensource.com/download/">
 James Clark's site </ulink> og er under stadig
 udvikling.
 </para>
 
 <para>
-Det er lettest at gå til nxml
+Det er lettest at gÃ¥ til nxml
 hvis man kender Emacs i forvejen - Emacs ligner ikke
-rigtigt nogen anden editor. Så er nxml til gengæld ret
+rigtigt nogen anden editor. SÃ¥ er nxml til gengÃ¦ld ret
 enkelt at bruge da kernefunktionaliteten ligger i blot
-tre kommandoer som til gengæld gør et stort arbejde for
-en. On-the-fly validering er bestemt også en rar ting.
+tre kommandoer som til gengÃ¦ld gÃ¸r et stort arbejde for
+en. On-the-fly validering er bestemt ogsÃ¥ en rar ting.
 </para>
 
 <para>
@@ -2372,24 +2372,24 @@ Valideringsskemaer ligger i mappen
 kompakt notation, .rnc filer. Som default kommer nxml
 med skemaer for docbook, xhtml, xsl og RELAX NG(xml
 notation). nxml bestemmer hvilket skema der skal
-anvendes på baggrund af rodelementet i ens dokument.
+anvendes pÃ¥ baggrund af rodelementet i ens dokument.
 Hvis rodelementet er 'article' eller 'book' anvendes 
 docbook. Filen schema.xml i schema-mappen bestemmer
-hvordan skemaer og rodelementer hænger sammen.
+hvordan skemaer og rodelementer hÃ¦nger sammen.
 </para>
 
 <para>
-Hvis man starter på et nyt docbook-dokument, må man give
+Hvis man starter pÃ¥ et nyt docbook-dokument, mÃ¥ man give
 kommandoen C-c C-a (svarer til Ctrl-C Ctrl-A i normal notation)
 efter at have skrevet rodelementet - ellers har man blot den
 generiske xml-funktionalitet (Using vacuous schema).
 </para>
 
 <para>
-Hjælpen findes ved at give kommandoen C-h m som giver
+HjÃ¦lpen findes ved at give kommandoen C-h m som giver
 en oversigt over nxml's kommandoer (hvis man er i
 nxml-mode) eller C-h i som giver adgang til Emacs' info
-system. Her finder man også dokumentation på nxml-mode
+system. Her finder man ogsÃ¥ dokumentation pÃ¥ nxml-mode
 (hvis info-oversigten er lang, brug C-s nxml). For
 selve installationen som ikke er ret kompliceret, kig i
 Readme.
@@ -2403,14 +2403,14 @@ Readme.
 <para>
 Gvim har de samme faciliteter som Emacs, og flere til endda. Der
 er mange typer completion af XML syntaxen. Syntax for SGML er
-installeret fra starten (VIM havde SGML syntax for 6 år siden
+installeret fra starten (VIM havde SGML syntax for 6 Ã¥r siden
 allerede, men det anbefales at bruge gvim 6.1 eller nyere.)
 </para>
 
 <para>
-Brug kommandoen <command>:help completion</command> for at få
-mere at vide om faciliteter for hjælp under editering, og brug
-kommandoen <command>:help syntax </command> for at få en
+Brug kommandoen <command>:help completion</command> for at fÃ¥
+mere at vide om faciliteter for hjÃ¦lp under editering, og brug
+kommandoen <command>:help syntax </command> for at fÃ¥ en
 forklaring af selve syntax systemet.
 </para>
 

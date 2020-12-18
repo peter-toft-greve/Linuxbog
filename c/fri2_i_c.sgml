@@ -3,87 +3,87 @@
 modularitet og relevante teknikker</title>
 
 <abstract><para>
-Resume: Hello-world programmer isolerer og afprøver en speciel teknik.
-For at konstruere og lære nye teknikker er det en god ting at
+Resume: Hello-world programmer isolerer og afprÃ¸ver en speciel teknik.
+For at konstruere og lÃ¦re nye teknikker er det en god ting at
 kunne isolere hver eneste lille funktionalitet i det nye program,
-man ønsker at bygge. Denne teknik kan man kalde terrasse-teknik.
+man Ã¸nsker at bygge. Denne teknik kan man kalde terrasse-teknik.
 </para></abstract>
 
 <para>
-Et C-program består af en serie definitioner af eksterne
-objekter. Et eksternt objekt kan være en funktion eller en
-datadefinition, d.v.s. en variabel. For at få overblik over en
+Et C-program bestÃ¥r af en serie definitioner af eksterne
+objekter. Et eksternt objekt kan vÃ¦re en funktion eller en
+datadefinition, d.v.s. en variabel. For at fÃ¥ overblik over en
 opgave fra begyndelsen af, er det godt at vide, hvordan man
 opdeler en opgave i mindre dele. Ikke blot hvilke
-funktionaliteter, som lader sig isolere, men også en idé om,
-hvordan man bærer sig ad med at opdele et program i mindre
+funktionaliteter, som lader sig isolere, men ogsÃ¥ en idÃ© om,
+hvordan man bÃ¦rer sig ad med at opdele et program i mindre
 programdele. Det er hovedemnet for dette kapitel.
 </para>
 
 <indexterm><primary>objekt, eksternt</primary></indexterm>
 
 <para>
-En opdeling forudsætter, at der er mulighed for at koble
-forskellige moduler sammen igen på et senere tidspunkt ved hjælp
-af libraries, header filer og make filer. Det vil nærværende
-kapitel give nogle eksempler på.
+En opdeling forudsÃ¦tter, at der er mulighed for at koble
+forskellige moduler sammen igen pÃ¥ et senere tidspunkt ved hjÃ¦lp
+af libraries, header filer og make filer. Det vil nÃ¦rvÃ¦rende
+kapitel give nogle eksempler pÃ¥.
 </para>
 
 <para>
 I C er funktioner grundlaget for opdelingen af programmer i
-mindre dele. Som Kernighan siger: funktioner gør det muligt
-at genbruge kode, gør det muligt, at en programmør bygger videre
-på en anden programmørs arbejde.
+mindre dele. Som Kernighan siger: funktioner gÃ¸r det muligt
+at genbruge kode, gÃ¸r det muligt, at en programmÃ¸r bygger videre
+pÃ¥ en anden programmÃ¸rs arbejde.
 </para>
 
 <para>
-Det er vel at mærke sådan at forstå, at jeg, i mit nye program,
+Det er vel at mÃ¦rke sÃ¥dan at forstÃ¥, at jeg, i mit nye program,
 kan includere al funktionalitet fra noget, som er skrevet i
-forvejen <emphasis> uden at jeg skal ændre i eller kopiere fra den
+forvejen <emphasis> uden at jeg skal Ã¦ndre i eller kopiere fra den
 oprindelige kode. </emphasis>
 </para>
 
 <para>
-Grundlaget for genbrug er som sagt funktionen, men ved hjælp af
+Grundlaget for genbrug er som sagt funktionen, men ved hjÃ¦lp af
 separat kompilering, statiske variable og evt. dynamisk
-allokering af mere hukommelse kan denne teknik forfines, således
-at man reelt set råder over objektorienterede metoder. Det bedst
+allokering af mere hukommelse kan denne teknik forfines, sÃ¥ledes
+at man reelt set rÃ¥der over objektorienterede metoder. Det bedst
 kendte eksempel er ANSI C bibliotekets Input Output del, som
-bygger på begrebet en FILE. Man kan erklære en variabel af typen
+bygger pÃ¥ begrebet en FILE. Man kan erklÃ¦re en variabel af typen
 <literal> FILE* </literal> uden at ane, hvad den indeholder. Det
-varierer også fra system til system. Men fælles for alle
-<literal> FILE* </literal> er, at man kan åbne dem, <literal>
-fopen() </literal>, læse fra dem <literal> fread() </literal> og
+varierer ogsÃ¥ fra system til system. Men fÃ¦lles for alle
+<literal> FILE* </literal> er, at man kan Ã¥bne dem, <literal>
+fopen() </literal>, lÃ¦se fra dem <literal> fread() </literal> og
 skrive til dem <literal> fwrite() </literal> finde en position,
 lukke igen og meget andet.
 </para>
 
 <sect1 id="tour"><title>ANSI prototyper og modularitet</title>
 <para>
-I dette kapitel ser vi på hvordan man opdeler en lille opgave i
+I dette kapitel ser vi pÃ¥ hvordan man opdeler en lille opgave i
 en beregningsdel og en hoveddel. Undervejs eksperimenteres
 med funktioner og prototyper.
 </para>
 
 <para>
-Derefter ses på filter programmer, som er programmer, der læser
+Derefter ses pÃ¥ filter programmer, som er programmer, der lÃ¦ser
 noget input og transformerer dette til en bestemt slags output.
-For et givet input vil output altid være det samme.
+For et givet input vil output altid vÃ¦re det samme.
 </para>
 
 <para>
-Dette princip udstrækkes til et forholdsvis kompliceret program,
-som parser sgml tags og formaterer lidt på en sgml tekst. Endelig
-er der forslag til mange øvelser undervejs, og den interesserede
-læser vil sikkert ikke kunne lade være med at eksperimentere
-yderligere. God fornøjelse!
+Dette princip udstrÃ¦kkes til et forholdsvis kompliceret program,
+som parser sgml tags og formaterer lidt pÃ¥ en sgml tekst. Endelig
+er der forslag til mange Ã¸velser undervejs, og den interesserede
+lÃ¦ser vil sikkert ikke kunne lade vÃ¦re med at eksperimentere
+yderligere. God fornÃ¸jelse!
 </para>
 
 <para>
-Men allerførst skal vi lige se på, hvilken betydning returværdien
-fra en funktion kan have på et helt andet program, nemlig en
+Men allerfÃ¸rst skal vi lige se pÃ¥, hvilken betydning returvÃ¦rdien
+fra en funktion kan have pÃ¥ et helt andet program, nemlig en
 shell eller kommandofortolkeren. Vi bruger et minimal program til
-at isolere fænomenet.
+at isolere fÃ¦nomenet.
 </para>
 
 <indexterm><primary>Kernighan, Brian</primary></indexterm>
@@ -92,33 +92,33 @@ at isolere fænomenet.
 <sect2 id="brohoved">
 <title>Et brohoved.</title>
 <para>
-Forhåbentlig kender du Kernighan &amp; Ritchies bog The
-C Programming Language. Det første kapitel, den berømte "tour"
+ForhÃ¥bentlig kender du Kernighan &amp; Ritchies bog The
+C Programming Language. Det fÃ¸rste kapitel, den berÃ¸mte "tour"
 gennem C sproget, starter med et program, der skriver "Hello,
-World!" på en uddataenhed (altså en skærm eller
+World!" pÃ¥ en uddataenhed (altsÃ¥ en skÃ¦rm eller
 lignende).<footnote><para>
 Hvis du ikke kender bogen "The C Programming Language" af Kernighan &
-Ritchie, og hvis du ikke er en øvet C programmør, så vil jeg anbefale,
-at du køber eller låner den og bruger nogle uger til at arbejde
-kapitel 1 igennem - lav så mange af de ekstra øvelser, som du kan
-nå. Nærværende kapitel er en ikke en erstatning for den
+Ritchie, og hvis du ikke er en Ã¸vet C programmÃ¸r, sÃ¥ vil jeg anbefale,
+at du kÃ¸ber eller lÃ¥ner den og bruger nogle uger til at arbejde
+kapitel 1 igennem - lav sÃ¥ mange af de ekstra Ã¸velser, som du kan
+nÃ¥. NÃ¦rvÃ¦rende kapitel er en ikke en erstatning for den
 oprindelige "tour", men et supplement. Man kalder det for
-learning by doing eller deduktiv spiralpædagogik; vi udleder,
-hvordan C sproget fungerer ved at prøve det mange gange og ved at
-gøre øvelser lidt sværere hver gang.
+learning by doing eller deduktiv spiralpÃ¦dagogik; vi udleder,
+hvordan C sproget fungerer ved at prÃ¸ve det mange gange og ved at
+gÃ¸re Ã¸velser lidt svÃ¦rere hver gang.
 </para>
 
 <para>
-Hvis Kernighan &amp; Ritchie bogen også forekommer for vanskelig
-- den er nemlig heller ikke for helt grønne begyndere - så er der
-nogle andre introduktionsbøger, som kan guide dig igennem
-grundlæggende øvelser i programmering, f.eks. "Practical C" fra
+Hvis Kernighan &amp; Ritchie bogen ogsÃ¥ forekommer for vanskelig
+- den er nemlig heller ikke for helt grÃ¸nne begyndere - sÃ¥ er der
+nogle andre introduktionsbÃ¸ger, som kan guide dig igennem
+grundlÃ¦ggende Ã¸velser i programmering, f.eks. "Practical C" fra
 O'Reilly.
 </para>
 
 <para>
-Hvis du har lidt gåpå-mod, kan du måske alligevel klare dig ved
-at bladre/klikke dig om til appendiks A i denne bog; dér gives en
+Hvis du har lidt gÃ¥pÃ¥-mod, kan du mÃ¥ske alligevel klare dig ved
+at bladre/klikke dig om til appendiks A i denne bog; dÃ©r gives en
 oversigt over C sprogets fire forskellige bestanddele, datatyper,
 operatorerne, flow-konstruktionerne - og om opdeling af
 programmer i moduler.
@@ -126,21 +126,21 @@ programmer i moduler.
 
 <para>
 K&amp;R bogen giver imidlertid flere eksempler end jeg har med
-i Appendiks A, og forklarer variationer på programmerne,
-variationer, som er rigtig gode til at få én igang med selv at
-forsøge. Det kan du selvfølgelig også gøre med eksemplerne i
+i Appendiks A, og forklarer variationer pÃ¥ programmerne,
+variationer, som er rigtig gode til at fÃ¥ Ã©n igang med selv at
+forsÃ¸ge. Det kan du selvfÃ¸lgelig ogsÃ¥ gÃ¸re med eksemplerne i
 denne bog.
 </para>
 
 <para>
 Det specielle ved Kernighan &amp; Ritchies programeksempler i
-Kapitel 1 af den berømte bog er, at programmerne er nyttige. På
+Kapitel 1 af den berÃ¸mte bog er, at programmerne er nyttige. PÃ¥
 en kommandolinje kan de bruges med det samme til endda ret
 fornuftige og realistiske ting.  Hvis du ikke er fortrolig med
-kommandolinjesyntaks, så kan du finde eksempler i bogen »Linux &ndash;
-Friheden til at lære Unix«.  Det er en god idé at
+kommandolinjesyntaks, sÃ¥ kan du finde eksempler i bogen Â»Linux &ndash;
+Friheden til at lÃ¦re UnixÂ«.  Det er en god idÃ© at
 eksperimentere lidt med de simpleste Unix-programmer, inden du
-går videre. Prøv f.eks. date, cal, uptime, id, who, finger, "echo
+gÃ¥r videre. PrÃ¸v f.eks. date, cal, uptime, id, who, finger, "echo
 hej", strings /usr/bin/ls, file *, ls, pwd, cd, du, df, man gcc,
 man ld, man ld.so, ldd /usr/bin/ls osv. (klassiske unix
 kommandoer).
@@ -148,45 +148,45 @@ kommandoer).
 </para>
 
 <para>
-Det program kunne man jo så udnævne til stamfaderen for en
+Det program kunne man jo sÃ¥ udnÃ¦vne til stamfaderen for en
 hel kategori. "Hello-world" programmer isolerer en feature og 
-afprøver, hvordan den virker. Et "hello-program" skal helst kunne
-køre, selv om vi nogen gange nøjes med at skrive en funktion for
-at se, om oversætteren accepterer den syntaks, vi anvender.
+afprÃ¸ver, hvordan den virker. Et "hello-program" skal helst kunne
+kÃ¸re, selv om vi nogen gange nÃ¸jes med at skrive en funktion for
+at se, om oversÃ¦tteren accepterer den syntaks, vi anvender.
 </para>
 
 <indexterm><primary>minimal-programmer</primary></indexterm>
 <indexterm><primary>hello-programmer</primary></indexterm>
 
 <para>
-Et "hello-program" kan være et, som skriver noget på skærmen,
-eller det kan hente dato-information, så kan vi få bekræftet, om
-dato funktionerne opfører sig, som vi forventer, eller ej. Vi
-kunne kalde det for et minimalprogram. Vi kunne også sige, at vi
-isolerer de features i C sproget, som vi ønsker at
-lære/undersøge/afprøve. Metoden er vigtig at lære. Det er
-en ekstremt nyttig metode; med den kan man løse flere problemer,
+Et "hello-program" kan vÃ¦re et, som skriver noget pÃ¥ skÃ¦rmen,
+eller det kan hente dato-information, sÃ¥ kan vi fÃ¥ bekrÃ¦ftet, om
+dato funktionerne opfÃ¸rer sig, som vi forventer, eller ej. Vi
+kunne kalde det for et minimalprogram. Vi kunne ogsÃ¥ sige, at vi
+isolerer de features i C sproget, som vi Ã¸nsker at
+lÃ¦re/undersÃ¸ge/afprÃ¸ve. Metoden er vigtig at lÃ¦re. Det er
+en ekstremt nyttig metode; med den kan man lÃ¸se flere problemer,
 end man kan med en debugger.
 </para>
 </sect2>
 
 
 <sect2 id="sect-return-value">
-<title>Returværdi fra en funktion</title>
-<indexterm><primary>retur værdi</primary></indexterm>
+<title>ReturvÃ¦rdi fra en funktion</title>
+<indexterm><primary>retur vÃ¦rdi</primary></indexterm>
 <indexterm><primary>ANSI funktioner</primary></indexterm>
 
 <para>
-Det, vi skal i gang med nu, er at undersøge, hvordan funktioner
-afleverer data til hinanden, og hvordan C sproget gør det lettere
-at lave sådan nogle "kasser", ofte kaldet black box, om hvilken
-man ved, at den kan dit og dat, og at den er helt uafhængig af
+Det, vi skal i gang med nu, er at undersÃ¸ge, hvordan funktioner
+afleverer data til hinanden, og hvordan C sproget gÃ¸r det lettere
+at lave sÃ¥dan nogle "kasser", ofte kaldet black box, om hvilken
+man ved, at den kan dit og dat, og at den er helt uafhÃ¦ngig af
 resten af vores program.  
 </para>
 
 <para>
-Et helt grundlæggende "Hello-world" program er et, som
-simpelt hen afslutter med det samme! Sådan et kommer her:
+Et helt grundlÃ¦ggende "Hello-world" program er et, som
+simpelt hen afslutter med det samme! SÃ¥dan et kommer her:
 </para>
 
 <example id="ex-hello"><title>HELLO - statuskode</title>
@@ -206,22 +206,22 @@ int main()
 
 <indexterm><primary>kommentarer</primary></indexterm>
 <para>
-Program-source, kildeteksten består af 8 linjer, hvis man
-tæller kommentarer og tomme linjer med. Aller øverst er der en
-kommentar, som fortæller kort hvad meningen med programmet er.
+Program-source, kildeteksten bestÃ¥r af 8 linjer, hvis man
+tÃ¦ller kommentarer og tomme linjer med. Aller Ã¸verst er der en
+kommentar, som fortÃ¦ller kort hvad meningen med programmet er.
 En kommentar startes med "/*" og slutter med "*/".
 </para>
 
 <para>
-Programmet består af en definition af ét eksternt objekt,
+Programmet bestÃ¥r af en definition af Ã©t eksternt objekt,
 nemlig en funktion, som har navnet "main". Parenteserne efter main
-fortæller, at main er et objekt af typen funktion. Parenteserne
+fortÃ¦ller, at main er et objekt af typen funktion. Parenteserne
 kaldes derfor "funktions-operator" <footnote> <para> Tabellen
 <xref linkend="ex-operator-precedence"/>, viser parenteserne
-<emphasis>"()"</emphasis> øverst, fordi bindingen mellem
-identifier og () er stærkere end bindinger mellem andre
+<emphasis>"()"</emphasis> Ã¸verst, fordi bindingen mellem
+identifier og () er stÃ¦rkere end bindinger mellem andre
 operatorer.  </para> </footnote> Selve koden i main er indrammet
-i krøllede parenteser, braces. Koden består af kun én sætning,
+i krÃ¸llede parenteser, braces. Koden bestÃ¥r af kun Ã©n sÃ¦tning,
 eller <emphasis> statement </emphasis>, nemlig 
 </para>
 
@@ -231,54 +231,54 @@ return 0;
 
 <para>
 <emphasis> return </emphasis> er en specifikation af, at
-funktionen skal aflevere noget til den, som har bedt om at få
-udført funktionen (har <emphasis>kaldt</emphasis> den.)
+funktionen skal aflevere noget til den, som har bedt om at fÃ¥
+udfÃ¸rt funktionen (har <emphasis>kaldt</emphasis> den.)
 </para>
 
 <indexterm><primary>reserverede ord</primary></indexterm>
 <para>
 return er et <emphasis> reserveret ord </emphasis>, d.v.s.
-et ord, som oversætteren er født med at kende. C sproget har 32
+et ord, som oversÃ¦tteren er fÃ¸dt med at kende. C sproget har 32
 reserverede ord. (se <xref linkend="C-hvad-er"/> .)
 </para>
 
 
 <para>
-Nullet er et "udtryk", (aritmetisk udtryk) med en talværdi.
-Vi kunne også have skrevet return 234 eller return 7000143. I
-dette tilfælde vil det dog være klogt at holde talværdien 
+Nullet er et "udtryk", (aritmetisk udtryk) med en talvÃ¦rdi.
+Vi kunne ogsÃ¥ have skrevet return 234 eller return 7000143. I
+dette tilfÃ¦lde vil det dog vÃ¦re klogt at holde talvÃ¦rdien 
 under 256.
 </para>
 
 <indexterm><primary>udtryk, expressions</primary></indexterm>
 
 <para>
-Eksempler på andre expressions: kroner = timer * timeloen;
-hvor det forudsættes at kroner, timer og timeloen er variable,
-som indeholder fornuftige værdier. Et expression, som afsluttes
+Eksempler pÃ¥ andre expressions: kroner = timer * timeloen;
+hvor det forudsÃ¦ttes at kroner, timer og timeloen er variable,
+som indeholder fornuftige vÃ¦rdier. Et expression, som afsluttes
 med semikolon, kaldes et statement.
 </para>
 
-<indexterm><primary>sætning, statement</primary></indexterm>
+<indexterm><primary>sÃ¦tning, statement</primary></indexterm>
 
 <para>
-Hvis der er flere statements i en funktion, udføres de i
-rækkefølge, oppefra nedefter.
+Hvis der er flere statements i en funktion, udfÃ¸res de i
+rÃ¦kkefÃ¸lge, oppefra nedefter.
 </para>
 
 <para>
 Et kald til en funktion, som f.eks. flg.: <literal>
-abs(-5); </literal> er også et expression, i dette tilfælde med
-værdien 5.  Kald til en funktion vil ofte returnere en variabel
+abs(-5); </literal> er ogsÃ¥ et expression, i dette tilfÃ¦lde med
+vÃ¦rdien 5.  Kald til en funktion vil ofte returnere en variabel
 af typen heltal, <emphasis> integer </emphasis>, og en integer i
 et expression kan erstattes af et kald til en funktion, som
 returnerer en integer.
 </para>
 
 <para>
- Det er en konvention, at kørsel af et program, som benytter
- standardbiblioteket (med bl.a. læse- og skrivefunktioner) begynder med
- funktionen <emphasis>main</emphasis>.  Når man kommer til slutningen af denne
+ Det er en konvention, at kÃ¸rsel af et program, som benytter
+ standardbiblioteket (med bl.a. lÃ¦se- og skrivefunktioner) begynder med
+ funktionen <emphasis>main</emphasis>.  NÃ¥r man kommer til slutningen af denne
  funktion, slutter programmet her med at returnere en statuskode til
  styresystemet. Denne statuskode bruger man til at markere om programmet blev
  afbrudt af en fejl (og lignende). Hvis et program slutter uden et
@@ -286,22 +286,22 @@ returnerer en integer.
 </para>
 
 <para>
- Kernighan &amp; Ritchie dropper return-sætningen en del gange i
- <emphasis>bogen</emphasis>, men det er faktisk sjusk alligevel! De gør det
- selvfølgelig fordi det er lettere at forklare et program, hvori der kun er de
- nødvendigste linjer.
+ Kernighan &amp; Ritchie dropper return-sÃ¦tningen en del gange i
+ <emphasis>bogen</emphasis>, men det er faktisk sjusk alligevel! De gÃ¸r det
+ selvfÃ¸lgelig fordi det er lettere at forklare et program, hvori der kun er de
+ nÃ¸dvendigste linjer.
 </para>
 
 <para>
- Statuskoden bør fortælle, om programmet kunne køre uden fejl,
- (dvs. uden fejl, der er påført af ydre omstændigheder, som
- f.eks. at en datafil mangler).  Det er altså programmørens
+ Statuskoden bÃ¸r fortÃ¦lle, om programmet kunne kÃ¸re uden fejl,
+ (dvs. uden fejl, der er pÃ¥fÃ¸rt af ydre omstÃ¦ndigheder, som
+ f.eks. at en datafil mangler).  Det er altsÃ¥ programmÃ¸rens
  mulighed for at sende et signal om at "alt er vel" eller "her
  opstod en fatal fejl".
 </para>
 
 <para>
- Hvis programmøren vil fortælle systemet, at der var en fejl, skrives
+ Hvis programmÃ¸ren vil fortÃ¦lle systemet, at der var en fejl, skrives
  simpelthen:
 </para>
 
@@ -310,11 +310,11 @@ return 255;
 </programlisting>
 
 <para>
-Tallet kan i Unix-kommandofortolker-sammenhæng læses i variabelen $?,
-som kan styre processtrømmen i et Unix-skalprogram <emphasis> (en
-shell) </emphasis>.<footnote><para> I Microsoft miljøer som
-"errorlevel", der kan bruges af if-sætninger i batch-filer.
-</para> </footnote> Øvelse: Ret, så programmet returnerer 117 og
+Tallet kan i Unix-kommandofortolker-sammenhÃ¦ng lÃ¦ses i variabelen $?,
+som kan styre processtrÃ¸mmen i et Unix-skalprogram <emphasis> (en
+shell) </emphasis>.<footnote><para> I Microsoft miljÃ¸er som
+"errorlevel", der kan bruges af if-sÃ¦tninger i batch-filer.
+</para> </footnote> Ã˜velse: Ret, sÃ¥ programmet returnerer 117 og
 se, om du kan udskrive systemvariablen $? med kommandoen 
 </para>
 
@@ -325,8 +325,8 @@ se, om du kan udskrive systemvariablen $? med kommandoen
 </screen>
 
 <para>
-Det lille program ovenfor kunne oversættes/compileres <footnote>
-<para> Generer det, hvis jeg staver engelske computer-udtryk på
+Det lille program ovenfor kunne oversÃ¦ttes/compileres <footnote>
+<para> Generer det, hvis jeg staver engelske computer-udtryk pÃ¥
 engelsk? </para></footnote> med flg. kommando:
 </para>
 
@@ -336,10 +336,10 @@ engelsk? </para></footnote> med flg. kommando:
 </screen>
 
 <para>
-Derefter kan det køres fra current directory (i det aktuelle
-katalog, eller sagt på en tredie måde, fra det bibliotek, som vi
-står i <footnote> <para> Se "Friheden til at programmere"
-afsnittet om C sproget, hvis du har brug for lidt mere indføring
+Derefter kan det kÃ¸res fra current directory (i det aktuelle
+katalog, eller sagt pÃ¥ en tredie mÃ¥de, fra det bibliotek, som vi
+stÃ¥r i <footnote> <para> Se "Friheden til at programmere"
+afsnittet om C sproget, hvis du har brug for lidt mere indfÃ¸ring
 i, hvordan man bruger kommandolinjen. </para> </footnote> ) med
 en kommando som:
 </para>
@@ -349,7 +349,7 @@ en kommando som:
 <prompt>dax@pluto$</prompt>
 </screen>
 <para>
-   eller, hvis din PATH-systemvariabel ender på ':'
+   eller, hvis din PATH-systemvariabel ender pÃ¥ ':'
 </para>
 <screen>
 <prompt>dax@pluto$</prompt><userinput> frame </userinput>
@@ -358,11 +358,11 @@ en kommando som:
 
 <para>
 Eksemplet lider imidlertid af en alvorlig skavank, vi kan
-jo næsten ikke se, om programmet rent faktisk kører. Det laver jo
-ikke noget! Derfor tilføjer vi en lille output kommando:
+jo nÃ¦sten ikke se, om programmet rent faktisk kÃ¸rer. Det laver jo
+ikke noget! Derfor tilfÃ¸jer vi en lille output kommando:
 </para>
 
-<example id="ex-stdout"><title>Skriv message på standard output.</title>
+<example id="ex-stdout"><title>Skriv message pÃ¥ standard output.</title>
 <programlisting role="C">
 <literal>
 /* frame2.c Skriv til stdout og afslut. */
@@ -371,7 +371,7 @@ ikke noget! Derfor tilføjer vi en lille output kommando:
 
 int main()
 {
-    puts("Hello! Programmet frame2 kører nu...");
+    puts("Hello! Programmet frame2 kÃ¸rer nu...");
     return 0;
 }
 
@@ -380,22 +380,22 @@ int main()
 </programlisting></example>
 
 <para>
-Her er flere ting, som er værd at lægge mærke til. Dels et
-include direktiv, d.v.s. en kommando, som fortæller oversætteren,
-at den skal læse en fil, der hedder stdio.h. Når filnavnet står i
-<emphasis> vinkler </emphasis>, så betyder det, at oversætteren
+Her er flere ting, som er vÃ¦rd at lÃ¦gge mÃ¦rke til. Dels et
+include direktiv, d.v.s. en kommando, som fortÃ¦ller oversÃ¦tteren,
+at den skal lÃ¦se en fil, der hedder stdio.h. NÃ¥r filnavnet stÃ¥r i
+<emphasis> vinkler </emphasis>, sÃ¥ betyder det, at oversÃ¦tteren
 skal lede der, hvor systemet normalt har sine filer med
-erklæringer, "include filerne". På Unix, Linux og andre systemer
-er det <filename>/usr/include</filename>, der gennemsøges først.
+erklÃ¦ringer, "include filerne". PÃ¥ Unix, Linux og andre systemer
+er det <filename>/usr/include</filename>, der gennemsÃ¸ges fÃ¸rst.
 </para>
 
 <para>
-Oversætteren finder den pågældende file og læser den. Den
-indeholder <emphasis>kun type erklæringer</emphasis>.
+OversÃ¦tteren finder den pÃ¥gÃ¦ldende file og lÃ¦ser den. Den
+indeholder <emphasis>kun type erklÃ¦ringer</emphasis>.
 </para>
 
 <para>
-Den erklæring, som vi skal bruge, ser ud som følger:
+Den erklÃ¦ring, som vi skal bruge, ser ud som fÃ¸lger:
 </para>
 
 <programlisting>
@@ -403,7 +403,7 @@ extern int puts (const char *__str);
 </programlisting>
 
 <para>
-Den kunne dog også have set enklere ud:
+Den kunne dog ogsÃ¥ have set enklere ud:
 </para>
 
 <programlisting>
@@ -415,19 +415,19 @@ int puts (char *message);
 </indexterm>
 
 <para>
-Det kaldes en prototype. Denne gør det muligt for oversætteren
+Det kaldes en prototype. Denne gÃ¸r det muligt for oversÃ¦tteren
 at tjekke, at funktionskald vil fungere efter hensigten.
 </para>
 
 <para>
-Prototypen "int puts(char*)" fortæller, at puts er en
-funktion, som returnerer en integer og forventer at få en
+Prototypen "int puts(char*)" fortÃ¦ller, at puts er en
+funktion, som returnerer en integer og forventer at fÃ¥ en
 character pointer som argument.
 </para>
 
 <para>
 En prototype for vores main (som burde findes i en af glibc
-- systemets header filer) ville hjælpe oversætteren med at 
+- systemets header filer) ville hjÃ¦lpe oversÃ¦tteren med at 
 kontrollere, om vi overholdt interface mellem vores main og
 bibliotekets startup procedure.
 <footnote>
@@ -436,7 +436,7 @@ filerne <filename>./sysdeps/elf/start.S</filename> og
 <filename>./sysdeps/generic/libc-start.c</filename>
 </para>
 </footnote> 
-Denne prototype ville se sådan ud:
+Denne prototype ville se sÃ¥dan ud:
 </para>
 
 <programlisting>
@@ -444,8 +444,8 @@ int main(int argc, char *argv[], char *env[]);
 </programlisting>
 
 <para>
-Det er ikke nødvendigt at angive et navn, en identifier, på 
-argumenterne, kun typen skal angives når vi skriver en prototype.
+Det er ikke nÃ¸dvendigt at angive et navn, en identifier, pÃ¥ 
+argumenterne, kun typen skal angives nÃ¥r vi skriver en prototype.
 </para>
 
 <programlisting>
@@ -453,13 +453,13 @@ int main(int, char *[], char *[]);
 </programlisting>
 
 <para>
-Men det er oplagt at finde navne, som giver læseren en hjælp
-til at forstå meningen med funktionen. Argc står for argument
+Men det er oplagt at finde navne, som giver lÃ¦seren en hjÃ¦lp
+til at forstÃ¥ meningen med funktionen. Argc stÃ¥r for argument
 count, argv for argument vector, en liste med alle parametre fra
-det program, som har startet vores program op; env står for
-systemvariable (eng. environment variables), her kan vi aflæse brugerpreferencer og
-ligenende. Når vi ikke bruger parametrene til main, kan vi nøjes
-med at skrive main(), altså en tom funktions-parentes.
+det program, som har startet vores program op; env stÃ¥r for
+systemvariable (eng. environment variables), her kan vi aflÃ¦se brugerpreferencer og
+ligenende. NÃ¥r vi ikke bruger parametrene til main, kan vi nÃ¸jes
+med at skrive main(), altsÃ¥ en tom funktions-parentes.
 </para>
 
 <example id="ex-char-ptr"><title>En character pointer</title>
@@ -471,7 +471,7 @@ med at skrive main(), altså en tom funktions-parentes.
 
 int main()
 {
-    char *charpointer = "Hallo! Programmet frame3 kører nu...";
+    char *charpointer = "Hallo! Programmet frame3 kÃ¸rer nu...";
     puts(charpointer);
     return 0;
 }
@@ -481,10 +481,10 @@ int main()
 </programlisting></example>
 
 <para>
-char *charpointer er erklæring af en variabel. Variabelen er en
+char *charpointer er erklÃ¦ring af en variabel. Variabelen er en
 character pointer, det vil sige en adresse variabel. Den
-initialiseres på samme source linje, som den erklæres. 
-Det er simpelthen en praktisk skrivemåde. Det svarer til:
+initialiseres pÃ¥ samme source linje, som den erklÃ¦res. 
+Det er simpelthen en praktisk skrivemÃ¥de. Det svarer til:
 </para>
 
 <programlisting role="C">
@@ -496,18 +496,18 @@ main()
 
 <para>
 En literal string, "Hallo etc... "; er ikke en variabel, men er
-en besked til oversætteren om at initialisere et dataområde med den
-tekst, som vi nu ønsker os. For at kunne bruge teksten skal vi
-enten gemme adressen på den (altså cptr = "Hallo etc...") eller
-også give adressen på denne string til den funktion, som skal
+en besked til oversÃ¦tteren om at initialisere et dataomrÃ¥de med den
+tekst, som vi nu Ã¸nsker os. For at kunne bruge teksten skal vi
+enten gemme adressen pÃ¥ den (altsÃ¥ cptr = "Hallo etc...") eller
+ogsÃ¥ give adressen pÃ¥ denne string til den funktion, som skal
 bruge den: <literal> puts("Hallo etc.."); </literal>
 </para>
 
 <para>
 En gengivelse af dette system af RAM-adresser og indhold
 kunne tegnes som en reol. Her er det en reol, hvor hver hylde har
-et indhold, der enten kan være 4 bytes eller 4 bogstaver, eller
-én adresse (32 bits).
+et indhold, der enten kan vÃ¦re 4 bytes eller 4 bogstaver, eller
+Ã©n adresse (32 bits).
 </para>
 
 <programlisting role="C">
@@ -534,7 +534,7 @@ et indhold, der enten kan være 4 bytes eller 4 bogstaver, eller
                     |             |
            120808   +-------------+  charptr er en adressevariabel,
                     |             |  som indeholder adressen
-                    |  &lt;800436>   |  på en string, "Hallo! Prog...etc."
+                    |  &lt;800436>   |  pÃ¥ en string, "Hallo! Prog...etc."
  charptr:  120804   +-------------+
                     |             |
                     |             |
@@ -552,18 +552,18 @@ et indhold, der enten kan være 4 bytes eller 4 bogstaver, eller
 
 
 <para>
-Det, der skrives på skærmen, er tekst, som bogstav
+Det, der skrives pÃ¥ skÃ¦rmen, er tekst, som bogstav
 for bogstav ligger i programmets data-del. 
 </para>
 
 <para>
-Lad os nu gå over til beregningsprogrammer. Hvis de ikke har
+Lad os nu gÃ¥ over til beregningsprogrammer. Hvis de ikke har
 noget input, er de en slags "hello" programmer, fordi de isolerer
 de aritmetiske operationer. Selv om vi begynder med simple
-eksempler, kan det sandelig godt være nyttige programmer. Den
-oprindelige idé om computere var jo blot at de skulle beregne
-ting, som var trælse at beregne i hånden, planetbaner,
-skatteopgørelser og lignende ;-)
+eksempler, kan det sandelig godt vÃ¦re nyttige programmer. Den
+oprindelige idÃ© om computere var jo blot at de skulle beregne
+ting, som var trÃ¦lse at beregne i hÃ¥nden, planetbaner,
+skatteopgÃ¸relser og lignende ;-)
 </para>
 </sect2>
 </sect1>
@@ -572,28 +572,28 @@ skatteopgørelser og lignende ;-)
 <title>Parameterlister og datatyper</title>
 
 <para>
-I foregående afsnit afleverede vi én oplysning til en funktion. I
+I foregÃ¥ende afsnit afleverede vi Ã©n oplysning til en funktion. I
 dette afsnit skal vi aflevere flere oplysninger og desuden se,
-hvordan en funktion kan udføre sit arbejde på en så robust og
-fornuftig måde, at vi ikke behøver at spekulere på, om programmet
-bliver ustabilt, hvis brugeren foretager sig noget tåbeligt.
+hvordan en funktion kan udfÃ¸re sit arbejde pÃ¥ en sÃ¥ robust og
+fornuftig mÃ¥de, at vi ikke behÃ¸ver at spekulere pÃ¥, om programmet
+bliver ustabilt, hvis brugeren foretager sig noget tÃ¥beligt.
 </para>
 
 <para>
-Vi vil foreløbig nøjes med at bruge de indbyggede datatyper, men
-det er på ingen måde en begrænsning for C programmøren, at
+Vi vil forelÃ¸big nÃ¸jes med at bruge de indbyggede datatyper, men
+det er pÃ¥ ingen mÃ¥de en begrÃ¦nsning for C programmÃ¸ren, at
 sproget "kun har" int, double, char etc, for vi kan jo opbygge
-andre datatyper ved hjælp af brugerdefinerede datatyper,
-struct, og vi kan manipulere de enkelte bits ved hjælp af bitvise
+andre datatyper ved hjÃ¦lp af brugerdefinerede datatyper,
+struct, og vi kan manipulere de enkelte bits ved hjÃ¦lp af bitvise
 operatorer.
 </para>
 
 <para>
-På den måde kan man bygge udmærkede repræsentationer af de
+PÃ¥ den mÃ¥de kan man bygge udmÃ¦rkede reprÃ¦sentationer af de
 datatyper, som findes i andre sprog, men som savnes i C.  For
-eksempel kan man opbygge en tegnbaseret repræsentation af tal,
-ligesom det findes i Lisp. Ved hjælp af denne repræsentation
-kan man opnå mange hundrede (tusinder) decimalers præcision i
+eksempel kan man opbygge en tegnbaseret reprÃ¦sentation af tal,
+ligesom det findes i Lisp. Ved hjÃ¦lp af denne reprÃ¦sentation
+kan man opnÃ¥ mange hundrede (tusinder) decimalers prÃ¦cision i
 beregninger.
 </para>
 
@@ -601,24 +601,24 @@ beregninger.
 <title>Datatyper og beregninger</title>
 
 <para>
-Den grundlæggende datatype i C sproget er int, en forkortelse for
-integer, heltal. Størrelsen af denne datatype er ikke altid den
-samme, på en 8 bit computer er det 16 bit (hmm, fik du den?) og på
+Den grundlÃ¦ggende datatype i C sproget er int, en forkortelse for
+integer, heltal. StÃ¸rrelsen af denne datatype er ikke altid den
+samme, pÃ¥ en 8 bit computer er det 16 bit (hmm, fik du den?) og pÃ¥
 en 64 bit computer er det 64 bit. Hvis man vil foretage
-64-bit beregninger på en 8-bit computer, så kan det godt lade sig
-gøre, det vil blot være væsentligt langsommere end hvis man
-nøjes med at benytte maskinens "medfødte" datatype. Det kan
-implementeres som en oversætterfunktionalitet, eller det kan være, at
+64-bit beregninger pÃ¥ en 8-bit computer, sÃ¥ kan det godt lade sig
+gÃ¸re, det vil blot vÃ¦re vÃ¦sentligt langsommere end hvis man
+nÃ¸jes med at benytte maskinens "medfÃ¸dte" datatype. Det kan
+implementeres som en oversÃ¦tterfunktionalitet, eller det kan vÃ¦re, at
 det er implementeret som maskin-instruktioner, der benytter flere
 registre. Intel 386-arkitekturen benytter to registre til 64-bit
-aritmetik, men har dog ikke ægte 64-bit division. Det må man så
-lave på en anden måde.
+aritmetik, men har dog ikke Ã¦gte 64-bit division. Det mÃ¥ man sÃ¥
+lave pÃ¥ en anden mÃ¥de.
 </para>
 
 <para>
-Lad os prøve at foretage nogle beregninger med heltal. Det må
-gerne være nogle simple beregninger, sådan at vi nemt kan
-kontrollere, om programmet regner rigtigt. Sidenhen kan vi ændre
+Lad os prÃ¸ve at foretage nogle beregninger med heltal. Det mÃ¥
+gerne vÃ¦re nogle simple beregninger, sÃ¥dan at vi nemt kan
+kontrollere, om programmet regner rigtigt. Sidenhen kan vi Ã¦ndre
 det til noget mere imponerende.
 </para>
 
@@ -655,13 +655,13 @@ brug simple tal indtil programmet er stabilt.
 </para>
 
 <para>
-Vi har indført nogle variable - kroner, procent, resultat.
-Det er simpelt hen kasser med tal i. Der er straks fyldt værdier
+Vi har indfÃ¸rt nogle variable - kroner, procent, resultat.
+Det er simpelt hen kasser med tal i. Der er straks fyldt vÃ¦rdier
 i kasserne.
 </para>
 
 <para>
-Navnene er valgt sådan, at man kan regne ud, hvad meningen er med
+Navnene er valgt sÃ¥dan, at man kan regne ud, hvad meningen er med
 variabelen.
 </para>
 
@@ -675,10 +675,10 @@ straks fylder tallet 100 i.
 </para>
 
 <para>
-Selve beregningen kan skrives i programmet næsten på samme måde,
-som man ville skrive formelen på et stykke papir. Hvis man er
-vant til, at (x y) betyder x gange y, så skal man selvfølgelig
-passe på at man ikke glemmer multiplikations operatoren '*'.
+Selve beregningen kan skrives i programmet nÃ¦sten pÃ¥ samme mÃ¥de,
+som man ville skrive formelen pÃ¥ et stykke papir. Hvis man er
+vant til, at (x y) betyder x gange y, sÃ¥ skal man selvfÃ¸lgelig
+passe pÃ¥ at man ikke glemmer multiplikations operatoren '*'.
 </para>
 
 <programlisting>
@@ -686,22 +686,22 @@ resultat = kroner * procent / 100;
 </programlisting>
 
 <para>
-<literal> resultat </literal> er navnet på den "kasse", hvor
+<literal> resultat </literal> er navnet pÃ¥ den "kasse", hvor
 resultatet skal gemmes, og den kaldes en "left value",
-venstre-værdi, fordi den kan stå på venstre side af et
+venstre-vÃ¦rdi, fordi den kan stÃ¥ pÃ¥ venstre side af et
 lighedstegn eller assignment (tildelings) operator. Venstre side
-af assignment operatoren skal være et udtryk, der kan evalueres
+af assignment operatoren skal vÃ¦re et udtryk, der kan evalueres
 som en adresse, ellers kan man jo ikke komme til at gemme
-resultatet af vejen.  Hvad der måtte ligge af interessante
-værdier i sådan en "kasse", forsvinder efter et assignment.
+resultatet af vejen.  Hvad der mÃ¥tte ligge af interessante
+vÃ¦rdier i sÃ¥dan en "kasse", forsvinder efter et assignment.
 </para>
 
 <para>
-<literal>printf()</literal> får at vide, at den skal skrive
-variablen "resultat" ud ved hjælp af procent-tegnet efterfulgt af
-'d'. Nu får <literal>printf()</literal> ikke én, men
+<literal>printf()</literal> fÃ¥r at vide, at den skal skrive
+variablen "resultat" ud ved hjÃ¦lp af procent-tegnet efterfulgt af
+'d'. Nu fÃ¥r <literal>printf()</literal> ikke Ã©n, men
 <emphasis>to</emphasis> oplysninger, nemlig format string'en
-mellem double quotes, (gåseøjne) og talvariabelen
+mellem double quotes, (gÃ¥seÃ¸jne) og talvariabelen
 <emphasis>resultat</emphasis>.
 </para>
 
@@ -718,11 +718,11 @@ oplysninger til en funktion. </para></footnote>
 </para>
 
 <para>
-Det er nok lidt for besværligt at rette i programmet her,
-hver gang jeg vil udføre en procent beregning! Så i stedet laver
-vi i næste afsnit et program, som prompter for (beder om input
+Det er nok lidt for besvÃ¦rligt at rette i programmet her,
+hver gang jeg vil udfÃ¸re en procent beregning! SÃ¥ i stedet laver
+vi i nÃ¦ste afsnit et program, som prompter for (beder om input
 af) det tal, der skal beregnes procent af.  Dermed forlader vi
-"Hello-world" sfæren og bevæger os ind i fejlmulighedernes
+"Hello-world" sfÃ¦ren og bevÃ¦ger os ind i fejlmulighedernes
 paradis, interaktive programmer.
 </para>
 </sect3>
@@ -732,11 +732,11 @@ paradis, interaktive programmer.
 <title>Prompt og input</title>
 <para>
 Input fortjener et kapitel for sig. Men lad os alligevel her
-skrive et program, som læser inddata fra tastaturet, og som godt
-nok forventer, at der bliver tastet tal (cifre) ind, men på den
+skrive et program, som lÃ¦ser inddata fra tastaturet, og som godt
+nok forventer, at der bliver tastet tal (cifre) ind, men pÃ¥ den
 anden side ikke tager skade af, at brugeren indtaster noget helt
-andet - eventuelt skubber en bog henover tastaturet, så der kommer
-input i store mængder.
+andet - eventuelt skubber en bog henover tastaturet, sÃ¥ der kommer
+input i store mÃ¦ngder.
 </para>
 
 <sect3 id="input-og-beregning">
@@ -780,39 +780,39 @@ printf-output hvis der ikke er en "newline" til sidst:
 </programlisting>
 
 <para>
-Denne måde at kæde expressions sammen med
-et komma er bestemt ikke den mest pædagogiske. Det er faktisk
-grimt! Men når jeg nu har gjort det alligevel, så er det for at
+Denne mÃ¥de at kÃ¦de expressions sammen med
+et komma er bestemt ikke den mest pÃ¦dagogiske. Det er faktisk
+grimt! Men nÃ¥r jeg nu har gjort det alligevel, sÃ¥ er det for at
 understrege, at C sprogets liste-operator (komma'et) er
-anvendelig i mange sammenhæng. Men lad nu være med at skrive for
-meget komatøs kode!  
+anvendelig i mange sammenhÃ¦ng. Men lad nu vÃ¦re med at skrive for
+meget komatÃ¸s kode!  
 </para>
 
 <para>
-Det er værdien af det sidste expression, som er afgørende
+Det er vÃ¦rdien af det sidste expression, som er afgÃ¸rende
 for, om expression-listen evaluerer til sand eller falsk.  
 </para>
 
 <para>
-Input læses af fgets(3). Den skal have 3 oplysninger,
-adressen på den buffer, som den må lægge characters i, længden på
-bufferen (den læser maximalt længde - 1 og afslutter string med
-en null-byte) og den fil, som den skal læse input fra. Her
+Input lÃ¦ses af fgets(3). Den skal have 3 oplysninger,
+adressen pÃ¥ den buffer, som den mÃ¥ lÃ¦gge characters i, lÃ¦ngden pÃ¥
+bufferen (den lÃ¦ser maximalt lÃ¦ngde - 1 og afslutter string med
+en null-byte) og den fil, som den skal lÃ¦se input fra. Her
 anvendes "kodeordet" stdin, som er defineret i &lt;stdio.h>.
 </para>
 
 <para>
 fgets(3) returnerer NULL hvis der ikke er mere input. Dette
 kan ske hvis brugeren taster "symbolsk end-of-file", der som
-regel sættes til ^D med stty kommandoen. Men hvis input er
-omdirigeret, så sker det jo som forventet, når man rammer
-slutningen på filen.
+regel sÃ¦ttes til ^D med stty kommandoen. Men hvis input er
+omdirigeret, sÃ¥ sker det jo som forventet, nÃ¥r man rammer
+slutningen pÃ¥ filen.
 </para>
 
 <para>
 Der er includeret en fil mere, stdlib.h, som indeholder
 prototype til atoi - Ascii TO Integer conversion.<footnote>
-<para> Sørg for, at du virkelig ved, hvad ascii er for noget!
+<para> SÃ¸rg for, at du virkelig ved, hvad ascii er for noget!
 </para> </footnote>
 </para>
 
@@ -820,11 +820,11 @@ prototype til atoi - Ascii TO Integer conversion.<footnote>
 #define __P(args)  args
 
 extern int atoi __P ((__const char *__nptr));
-/* __P(args) er en kommando til præprocessoren, det kaldes
- * en macro, og den har til formål at gøre
+/* __P(args) er en kommando til prÃ¦processoren, det kaldes
+ * en macro, og den har til formÃ¥l at gÃ¸re
  * bibliotek funktionerne brugbare sammen med mange
- * forskellige C-oversættere. Nogle varianter af C-oversættere kan
- * ikke forstå komplicerede prototypeerklæringer.
+ * forskellige C-oversÃ¦ttere. Nogle varianter af C-oversÃ¦ttere kan
+ * ikke forstÃ¥ komplicerede prototypeerklÃ¦ringer.
  */
 /* derfor svarer denne prototype til:
 extern int atoi(const char* string_som_skal_converteres);
@@ -832,10 +832,10 @@ extern int atoi(const char* string_som_skal_converteres);
 </programlisting>
 
 <para>
-Det smukke i procent2.c er, at man ikke kan få programmet
-til at gå ned ved ondskabsful indtastning, når der promptes for
-et tal. Man kan godt få det til at regne forkert, hvis man
-indtaster et tal, som er større end 126 mio.  Men dels er fgets()
+Det smukke i procent2.c er, at man ikke kan fÃ¥ programmet
+til at gÃ¥ ned ved ondskabsful indtastning, nÃ¥r der promptes for
+et tal. Man kan godt fÃ¥ det til at regne forkert, hvis man
+indtaster et tal, som er stÃ¸rre end 126 mio.  Men dels er fgets()
 en robust funktion, som ikke laver buffer overflow, selv om
 brugeren indtaster 2 Gb data, og <literal> atoi(char*) </literal>
 er en robust konverteringsrutine, som ikke brokker sig, hvis
@@ -851,10 +851,10 @@ indtaster tal. <!-- TODO -->
 </para>
 
 <para>
-Det er programmørens ansvar at sørge for den rigtige
-længdeangivelse til fgets' anden parameter. Det er lettere at
-holde styr på den slags, hvis man benytter preprocessor macro'er
-til at definere symboler for konstant-talværdier.
+Det er programmÃ¸rens ansvar at sÃ¸rge for den rigtige
+lÃ¦ngdeangivelse til fgets' anden parameter. Det er lettere at
+holde styr pÃ¥ den slags, hvis man benytter preprocessor macro'er
+til at definere symboler for konstant-talvÃ¦rdier.
 </para>
 
 <programlisting role="C">
@@ -874,18 +874,18 @@ Ikke semikolon i #define linjen, det er <emphasis> ikke
 </para>
 
 <para>
-Øvelser for de lidt mere erfarne: Prøv at ændre programmet,
-så der anvendes double precision floating point variable. Prøv
-også at tilføje en kontrolberegning, som finder ud af, om der har
-været overflow. Hvis der er overflow, så skriv en fejlmeddelelse
+Ã˜velser for de lidt mere erfarne: PrÃ¸v at Ã¦ndre programmet,
+sÃ¥ der anvendes double precision floating point variable. PrÃ¸v
+ogsÃ¥ at tilfÃ¸je en kontrolberegning, som finder ud af, om der har
+vÃ¦ret overflow. Hvis der er overflow, sÃ¥ skriv en fejlmeddelelse
 til brugeren i stedet for at skrive resultatet, men stop ikke
 programmet.
 </para>
 
 <para>
-Prøv også at skriv en version, hvor man kan indtaste
-procentsatsen først, eller et, som udskriver værdien af kroner i
-både australske, canadiske og US dollar.
+PrÃ¸v ogsÃ¥ at skriv en version, hvor man kan indtaste
+procentsatsen fÃ¸rst, eller et, som udskriver vÃ¦rdien af kroner i
+bÃ¥de australske, canadiske og US dollar.
 </para>
 
 <para>
@@ -901,59 +901,59 @@ tabel, f.eks.  svarende til kr. 100, 200, 300, 400, 500 ... )
 
 <para>
 Opdelingen i funktioner er grundlaget for strukturering af
-opgaverne, som man måtte være ved at løse. 
+opgaverne, som man mÃ¥tte vÃ¦re ved at lÃ¸se. 
 </para>
 <para>
-Funktioner er den teknik, som gør det muligt at genbruge kode,
-sådan at man ikke behøver at begynde fra bunden hver gang, men
-kan bygge videre på andres arbejde.
+Funktioner er den teknik, som gÃ¸r det muligt at genbruge kode,
+sÃ¥dan at man ikke behÃ¸ver at begynde fra bunden hver gang, men
+kan bygge videre pÃ¥ andres arbejde.
 </para>
 <para>
-Der er ikke noget problem, der er så stort, at det ikke kan deles
+Der er ikke noget problem, der er sÃ¥ stort, at det ikke kan deles
 op i mindre :-)
 </para>
 
 <sect2 id="s2-modularisering">
 <title>Kursomregning</title>
 <para>
-For at illustrere, hvordan man trækker en beregning ud af et
-program, kunne vi bruge en beregning så simpel som x = a + b.
+For at illustrere, hvordan man trÃ¦kker en beregning ud af et
+program, kunne vi bruge en beregning sÃ¥ simpel som x = a + b.
 </para>
 
 <para>
-Skal eksemplet være en lille smule realistisk foreslår jeg
+Skal eksemplet vÃ¦re en lille smule realistisk foreslÃ¥r jeg
 imidlertid, at vi i stedet laver en kursomregningsfunktion. Man
-kan forestille sig, at der er skal så mange beregninger til (f.eks.
-en tabel i en udskrift eller priser på en faktura) at det er en
-stor lettelse at få udført beregningen i en funktion.
+kan forestille sig, at der er skal sÃ¥ mange beregninger til (f.eks.
+en tabel i en udskrift eller priser pÃ¥ en faktura) at det er en
+stor lettelse at fÃ¥ udfÃ¸rt beregningen i en funktion.
 </para>
 
 <para>
-Det er forhåbentlig indlysende, at en "euro-funktion" 
-ville kunne indgå i bankers udbetalingsautomater, i
+Det er forhÃ¥bentlig indlysende, at en "euro-funktion" 
+ville kunne indgÃ¥ i bankers udbetalingsautomater, i
 faktureringsprogrammer etc.etc.
 </para>
 
 <para>
 Lad os derfor benytte kursomregning til at forske i den
-teknik, som kaldes modularisering. Det endelige mål er en
+teknik, som kaldes modularisering. Det endelige mÃ¥l er en
 omregningsfunktion i et bibliotek af forskellige financielle
-funktioner. Man må forestille sig valutaveksling med og
-uden gebyr og afrunding etc. Dette er så den rå omregning
+funktioner. Man mÃ¥ forestille sig valutaveksling med og
+uden gebyr og afrunding etc. Dette er sÃ¥ den rÃ¥ omregning
 til brug for rapporter eller lignende. Det er simpelt hen en
-funktion, som får vores kroner og "afleverer" dollar (eller
+funktion, som fÃ¥r vores kroner og "afleverer" dollar (eller
 Euro<!--&eur;-->).  Udgangspunktet er en tilretning af <xref
-linkend="ex-io-ber"/>, så vi kan afprøve funktionen mens vi
-skriver på den. For at gøre det mere overskueligt, har jeg
-imidlertid valgt at sløjfe prompt-input delen; den kan man
-evt. selv tilføje efter mønsteret i <xref linkend="ex-io-ber"/>.
+linkend="ex-io-ber"/>, sÃ¥ vi kan afprÃ¸ve funktionen mens vi
+skriver pÃ¥ den. For at gÃ¸re det mere overskueligt, har jeg
+imidlertid valgt at slÃ¸jfe prompt-input delen; den kan man
+evt. selv tilfÃ¸je efter mÃ¸nsteret i <xref linkend="ex-io-ber"/>.
 </para>
 
 <para>
-Jeg må indrømme, at jeg efter at have skrevet dette her afsnit syntes,
-at det var lidt rigeligt langt! Grunden til, at jeg lader det stå
-er, at jeg har set så mange programmører, der havde svært ved at forstå
-mekanikken i funktionskald. Først når man forstår hvad der sker i
+Jeg mÃ¥ indrÃ¸mme, at jeg efter at have skrevet dette her afsnit syntes,
+at det var lidt rigeligt langt! Grunden til, at jeg lader det stÃ¥
+er, at jeg har set sÃ¥ mange programmÃ¸rer, der havde svÃ¦rt ved at forstÃ¥
+mekanikken i funktionskald. FÃ¸rst nÃ¥r man forstÃ¥r hvad der sker i
 computeren under et funktionskald kan man udnytte C sprogets
 fulde styrke. 
 </para>
@@ -991,7 +991,7 @@ int main()
 </example>
 
 <para>
-Først trækker vi beregningen ud af programmet og lægger den
+FÃ¸rst trÃ¦kker vi beregningen ud af programmet og lÃ¦gger den
 i en funktion, som vi kalder kr2dollar.
 </para>
 
@@ -1006,8 +1006,8 @@ i en funktion, som vi kalder kr2dollar.
 
 #include &lt;stdio.h>
 
-/* vi erklærer nu en prototype for vores funktion. En prototype kan
- * kendes på, at der efter funktionsparentesen er et semikolon - ikke
+/* vi erklÃ¦rer nu en prototype for vores funktion. En prototype kan
+ * kendes pÃ¥, at der efter funktionsparentesen er et semikolon - ikke
  * nogen braces, som ville signalere starten af en kodeblok.
  */
 
@@ -1034,49 +1034,49 @@ int kr2dollar(int kr)
 </example>
 
 <para>
-Bemærk, at main står øverst i programmet. C inviterer til top -
+BemÃ¦rk, at main stÃ¥r Ã¸verst i programmet. C inviterer til top -
 down programmering. Vi kan kalde kr2dollar uden at have nogen
-som helst idé om, hvordan vi vil implementere den. Selvfølgelig
-er programmet ikke færdigt, før end vi har skrevet den sidste
-kode, men i nødsfald kan man somme tider klare sig med en
+som helst idÃ© om, hvordan vi vil implementere den. SelvfÃ¸lgelig
+er programmet ikke fÃ¦rdigt, fÃ¸r end vi har skrevet den sidste
+kode, men i nÃ¸dsfald kan man somme tider klare sig med en
 forsimplet udgave - eller en stub, en tom funktion - der, hvor
 man ikke har skrevet al koden.
 </para>
 
 <para>
-Men funktionen kr2dollar er <emphasis> erklæret </emphasis>
+Men funktionen kr2dollar er <emphasis> erklÃ¦ret </emphasis>
 inden den anvendes, det er linjen lige neden under #include
-direktivet.  Erklæringen er en slags forklaring til oversætteren
+direktivet.  ErklÃ¦ringen er en slags forklaring til oversÃ¦tteren
 af, hvad det er for en funktion. Den bevirker, at
-oversætteren opretter en entry i en symboltabel, så den kan slå
-op, hvad "kr2dollar" er for noget, næste gang den forekommer i
+oversÃ¦tteren opretter en entry i en symboltabel, sÃ¥ den kan slÃ¥
+op, hvad "kr2dollar" er for noget, nÃ¦ste gang den forekommer i
 kildeteksten. 
 </para>
 
 <para>
-Derfor ved oversætteren, hvad type der kommer ud af
-funktionen. Det kunne være, at det var en flydendetals dims i
+Derfor ved oversÃ¦tteren, hvad type der kommer ud af
+funktionen. Det kunne vÃ¦re, at det var en flydendetals dims i
 stedet for et heltal. (Ja forresten, det synes du nok, at det
-burde være!  Det ville være rart med flydende tal for at få
-decimaler på, se <xref linkend="ex-dollar-double"/>. Men strengt
-taget kunne vi få en mere præcis beregning ved at anvende
-64-bits integers til at repræsentere 100-dele øre. For den
-avancerede: Prøv det! Og husk at indsætte et komma på det
-rigtige sted, når du skriver det ud.)
+burde vÃ¦re!  Det ville vÃ¦re rart med flydende tal for at fÃ¥
+decimaler pÃ¥, se <xref linkend="ex-dollar-double"/>. Men strengt
+taget kunne vi fÃ¥ en mere prÃ¦cis beregning ved at anvende
+64-bits integers til at reprÃ¦sentere 100-dele Ã¸re. For den
+avancerede: PrÃ¸v det! Og husk at indsÃ¦tte et komma pÃ¥ det
+rigtige sted, nÃ¥r du skriver det ud.)
 </para>
 
 <para>
-<literal> kr2dollar() </literal> består af KUN et return
-statement. Godt nok skal der regnes lidt, før end return værdien
+<literal> kr2dollar() </literal> bestÃ¥r af KUN et return
+statement. Godt nok skal der regnes lidt, fÃ¸r end return vÃ¦rdien
 er klar, det er jo selve ideen i funktionen.
 </para>
 
 <para>
-I almindelig stenalder C kunne man nøjes med at kalde
-funktionen uden at forklare oversætteren, at det var en funktion,
+I almindelig stenalder C kunne man nÃ¸jes med at kalde
+funktionen uden at forklare oversÃ¦tteren, at det var en funktion,
 der returnerede en integer. Det kaldes "implicit integer"
-regelen. <footnote><para>Det hænger sammen med, at der 
-alle funktioner i de aller første C-oversættere returnerede
+regelen. <footnote><para>Det hÃ¦nger sammen med, at der 
+alle funktioner i de aller fÃ¸rste C-oversÃ¦ttere returnerede
 en integer. Funktioner, som returnerer doubles er stadig i
 mindretal.</para></footnote>
 </para>
@@ -1086,13 +1086,13 @@ mindretal.</para></footnote>
 <title>Modulariseret udgave af beregningen</title>
 
 <para>
-Nu skiller vi beregnings funktionen ud, så den ligger i en
-fil for sig selv - den er på vej til at blive en del af vores
+Nu skiller vi beregnings funktionen ud, sÃ¥ den ligger i en
+fil for sig selv - den er pÃ¥ vej til at blive en del af vores
 "financial library" (;-).
 </para>
 
 <para>
-Desuden lader vi variabelen "resultat" udgå, for vi kan jo
+Desuden lader vi variabelen "resultat" udgÃ¥, for vi kan jo
 bare anbringe funktionskaldet der, hvor resultatet skal skrives.
 </para>
 
@@ -1118,7 +1118,7 @@ int main()
 
 <para>
 Som det kan ses, har vi klippet de nederste 4 linjer ud,
-hvor funktionen kr2dollar var defineret. Den står nu i en fil,
+hvor funktionen kr2dollar var defineret. Den stÃ¥r nu i en fil,
 som vi kalder kr2dollar.c:
 </para>
 
@@ -1136,20 +1136,20 @@ int kr2dollar(int kr)
 </programlisting></example>
 
 <para>
-Kursen er ikke mere tilgængelig i main, vi har
-isoleret den, så den kun kan ses i funktionen, som omregner. Det
-er en primitiv udgave af et udmærket princip. 
+Kursen er ikke mere tilgÃ¦ngelig i main, vi har
+isoleret den, sÃ¥ den kun kan ses i funktionen, som omregner. Det
+er en primitiv udgave af et udmÃ¦rket princip. 
 </para>
 
 <para>
-Det ville være fint, hvis vi skrev en funktion, som hentede
-kursen fra en pålidelig kilde, f.eks. en eller anden nationalbank
-på internettet.  Når vi så skulle bruge kursen, kunne vi kalde
+Det ville vÃ¦re fint, hvis vi skrev en funktion, som hentede
+kursen fra en pÃ¥lidelig kilde, f.eks. en eller anden nationalbank
+pÃ¥ internettet.  NÃ¥r vi sÃ¥ skulle bruge kursen, kunne vi kalde
 denne funktion. 
 </para>
 
 <para>
-De to filer kan oversættes på flere forskellige måder:
+De to filer kan oversÃ¦ttes pÃ¥ flere forskellige mÃ¥der:
 </para>
 
 <para>
@@ -1182,33 +1182,33 @@ gcc -Wall dollar1.o -L./ -lfinans
 </programlisting>
 
 <para>
-Læg lige mærke til, at vi har genereret en bibliotek file med
+LÃ¦g lige mÃ¦rke til, at vi har genereret en bibliotek file med
 en meget simpel kommando, ar -rv libfinans.a &lt;objectfile> ...
 </para>
 
 <para>
 Hvis vi skulle glemme prototypen for denne simple beregning,
-så vil der ikke opstå fejl i dette eksempel. Det skyldes, 
+sÃ¥ vil der ikke opstÃ¥ fejl i dette eksempel. Det skyldes, 
 at vi stadig har regelen
-om implicit integer, når vi skriver standard C programmer.
-<footnote><para> Reglen kan være meget praktisk for den erfarne
-programmør, som i visse situationer kan gøre et program lidt mere
-læseligt, fordi der er mindre "støj". <!-- COMMENT: Men der er en
-sjov historie om dette religiøse spørgsmål! Bjarne Stroustrup
+om implicit integer, nÃ¥r vi skriver standard C programmer.
+<footnote><para> Reglen kan vÃ¦re meget praktisk for den erfarne
+programmÃ¸r, som i visse situationer kan gÃ¸re et program lidt mere
+lÃ¦seligt, fordi der er mindre "stÃ¸j". <!-- COMMENT: Men der er en
+sjov historie om dette religiÃ¸se spÃ¸rgsmÃ¥l! Bjarne Stroustrup
 overvejede, hvordan man dog skulle kunne klare problemerne med
-implicit integers og ingen parametre, som før var det samme som,
+implicit integers og ingen parametre, som fÃ¸r var det samme som,
 at alt var tilladt! En dag siger Ritchie til ham, at det skal han
-da ikke spekulere på, man kan da godt indføre et krav om, at
+da ikke spekulere pÃ¥, man kan da godt indfÃ¸re et krav om, at
 parametre skal specificeres. - eller lignende emne, hvor Ritchie
-gav ham støtte til at gå videre med sagen. --> </para>
+gav ham stÃ¸tte til at gÃ¥ videre med sagen. --> </para>
 </footnote>
 </para>
 
 <para>
-Med GNU C-oversætteren vil man dog få en advarsel: "implicit declaration
-of function `kr2dollar'". Det betyder simpelthen, at oversætteren har
+Med GNU C-oversÃ¦tteren vil man dog fÃ¥ en advarsel: "implicit declaration
+of function `kr2dollar'". Det betyder simpelthen, at oversÃ¦tteren har
 opdaget, at vi kalder kr2dollar, men ikke kan finde den i typetabellen.
-Oversætteren antager at funktionen returnerer en integer. Man får kun
+OversÃ¦tteren antager at funktionen returnerer en integer. Man fÃ¥r kun
 denne warning, hvis man anvender -Wall (Warning level, give us ALL
 warnings).
 </para>
@@ -1219,8 +1219,8 @@ warnings).
 <title>Modul med return type double</title>
 
 <para>
-Lad os nu prøve at definere kr2dollar() som en funktion, der
-returnerer en double. Prøv nogle eksperimenter med programmet.
+Lad os nu prÃ¸ve at definere kr2dollar() som en funktion, der
+returnerer en double. PrÃ¸v nogle eksperimenter med programmet.
 Der er vist nogle forslag.
 </para>
 
@@ -1231,7 +1231,7 @@ Der er vist nogle forslag.
 #include &lt;stdio.h>
 #include &lt;stdlib.h>
 
-double kr2dollar(double);  /* prøv at udelade denne her! */
+double kr2dollar(double);  /* prÃ¸v at udelade denne her! */
 
 
 int main()
@@ -1245,10 +1245,10 @@ int main()
 </programlisting></example>
 
 <para>
-I ovenstående eksempel er det nødvendigt, at der erklæres en
+I ovenstÃ¥ende eksempel er det nÃ¸dvendigt, at der erklÃ¦res en
 prototype for kr2dollar. Hvis prototypen udelades, vil gcc, ligesom i
 forrige eksempel, stadig <emphasis>kun</emphasis> give en warning,
-og endda kun under forudsætning af, at -Wall anvendes! 
+og endda kun under forudsÃ¦tning af, at -Wall anvendes! 
 </para>
 
 <screen id="wrong-type-coersion">
@@ -1261,7 +1261,7 @@ dollar3x.c:16: warning: double format, different type arg (arg 3)
 </screen>
 
 <para>
-Og her kommer så den anden fil med funktionen, som foretager
+Og her kommer sÃ¥ den anden fil med funktionen, som foretager
 omregning med double precision floating point parameteren kr.
 </para>
 
@@ -1280,39 +1280,39 @@ double kr2dollar(double kr)
 
 
 <para>
-Oversættelse uden prototype vil som sagt alligevel resultere i en
+OversÃ¦ttelse uden prototype vil som sagt alligevel resultere i en
 objektfil, som kan linkes med vores nye finans-bibliotek uden at
-man får en fejlmeddelelse. Men når man kører programmet, kan man
+man fÃ¥r en fejlmeddelelse. Men nÃ¥r man kÃ¸rer programmet, kan man
 se, at det ikke regner rigtigt, uha uha.
 </para>
 
 <para>
-Når man oversætter et sådant program, vil oversætteren opfatte
-retur værdien fra en ikke erklæret funktion som en integer. Denne
-vil typisk være placeret i det primære register. På Intel x86
-register EAX eller EBX. Oversætteren kan ikke kontrollere, om den
-kaldte funktion placerer sin retur værdi dér. Det er jo et helt
-andet modul, og måske endda et modul, som ikke er skrevet endnu.
+NÃ¥r man oversÃ¦tter et sÃ¥dant program, vil oversÃ¦tteren opfatte
+retur vÃ¦rdien fra en ikke erklÃ¦ret funktion som en integer. Denne
+vil typisk vÃ¦re placeret i det primÃ¦re register. PÃ¥ Intel x86
+register EAX eller EBX. OversÃ¦tteren kan ikke kontrollere, om den
+kaldte funktion placerer sin retur vÃ¦rdi dÃ©r. Det er jo et helt
+andet modul, og mÃ¥ske endda et modul, som ikke er skrevet endnu.
 </para>
 
 <para>
-Oversætteren "ser", at den retur værdien fra den funktion, som
-antages at være en integer, skal afleveres (her som argument til
-printf). Hvis returværdien er en integer, ligger den i EAX
+OversÃ¦tteren "ser", at den retur vÃ¦rdien fra den funktion, som
+antages at vÃ¦re en integer, skal afleveres (her som argument til
+printf). Hvis returvÃ¦rdien er en integer, ligger den i EAX
 registeret. Derfor skriver compileren en instruktion, som skubber
-værdien af EAX op på applikations-stakken.  Printf er, også i
-denne sammenhæng, lidt speciel, fordi den ikke aner, hvilke
-argumenter den får, før end den har læst format-specifikationen.
-Hvis vi skulle personificere printf, så ville den sige: "Jeg skal
-skrive et double precision floating point tal ud, ergo må der
-ligge sådan et på stakken. Det tager jeg!" Og det gør den så, den
+vÃ¦rdien af EAX op pÃ¥ applikations-stakken.  Printf er, ogsÃ¥ i
+denne sammenhÃ¦ng, lidt speciel, fordi den ikke aner, hvilke
+argumenter den fÃ¥r, fÃ¸r end den har lÃ¦st format-specifikationen.
+Hvis vi skulle personificere printf, sÃ¥ ville den sige: "Jeg skal
+skrive et double precision floating point tal ud, ergo mÃ¥ der
+ligge sÃ¥dan et pÃ¥ stakken. Det tager jeg!" Og det gÃ¸r den sÃ¥, den
 tager 8 bytes fra stakken uden at <emphasis> kunne </emphasis>
-kontrollere, om de rent faktisk repræsenterer en double eller en
+kontrollere, om de rent faktisk reprÃ¦senterer en double eller en
 integer.
 </para>
 
 <para>
-Det, som jeg prøver på at demonstrere, er konsekvensen af, at 
+Det, som jeg prÃ¸ver pÃ¥ at demonstrere, er konsekvensen af, at 
 ANSI-C specifikationen ikke omfatter et krav om typekontrol under
 link-processen.  Derfor er det nyttigt at tage notits af alle
 warnings.
@@ -1320,11 +1320,11 @@ warnings.
 
 <para>
 Det er specielt vanskeligt med <literal> printf(3) </literal>,
-fordi det er tilladt at aflevere så mange parametre efter
+fordi det er tilladt at aflevere sÃ¥ mange parametre efter
 format-specifikationen, som man har lyst til, af de typer,
 som man har brug for. Det er vildt anarki, siger nogen,
 men det er uhyre praktisk. Med printf kan man formatere
-komplicerede rapporter med ét printf-statement, hvor det i
+komplicerede rapporter med Ã©t printf-statement, hvor det i
 C++ kan ende med mange linjers kompliceret kode, som skal styre
 forskellige skjulte interne variable i <literal> cout </literal>
 funktionens talkonvertering.
@@ -1348,23 +1348,23 @@ double kr2dollar(double kroner);
 </example>
 
 <para>
-Denne fil kan includeres i både der, hvor funktionen skal
+Denne fil kan includeres i bÃ¥de der, hvor funktionen skal
 anvendes, og der, hvor den defineres (programmeres). Det giver
 jo kontrol med tingene.
 </para>
 
 <para>
-Man får filen med ved at skrive: <literal> 
+Man fÃ¥r filen med ved at skrive: <literal> 
 #include "dollar3.h"
 </literal>
-Bemærk, at der er anvendt double quotes om filnavnet fordi denne fil
+BemÃ¦rk, at der er anvendt double quotes om filnavnet fordi denne fil
 ligger i current directory.
 </para>
 
 <para>
 NB! Der er en lignende regel, som tillader, at en (global)
 integer kan
-defineres 2 gange. Det er straks mere farligt - for tænk nu hvis
+defineres 2 gange. Det er straks mere farligt - for tÃ¦nk nu hvis
 det ikke var meningen  -  og det kan ikke tillades i C++.
 </para>
 
@@ -1377,14 +1377,14 @@ det ikke var meningen  -  og det kan ikke tillades i C++.
 <sect1 id="filter-programmer">
 <title>Filter programmer</title>
 <para>
-Filter programmer er nogen, som læser input og producerer noget
-output, som for samme input altid vil være det samme.
-Filter programmer er som skabt til batchkørsel, d.v.s. som jobs,
+Filter programmer er nogen, som lÃ¦ser input og producerer noget
+output, som for samme input altid vil vÃ¦re det samme.
+Filter programmer er som skabt til batchkÃ¸rsel, d.v.s. som jobs,
 der er automatiserede.
 </para>
 
 <para>
-Her kommer det grundlæggende program:
+Her kommer det grundlÃ¦ggende program:
 </para>
 
 <example id="simpelt-filter">
@@ -1405,13 +1405,13 @@ int main()
 </example>
 
 <para>
-Dette program er så dejligt at eksperimentere med. Når vi har
-læst vores char med getchar, så kan vi gøre med den hvad vi vil,
-f.eks. konvertere den fra DOS-tegnsæt til UTF-8 tegnsæt. (Se
-nedenfor.) Men i første omgang, som her, skriver vi blot vores
-char ud nøjagtig som vi fik den ind. Hvis nu vi bruger en
+Dette program er sÃ¥ dejligt at eksperimentere med. NÃ¥r vi har
+lÃ¦st vores char med getchar, sÃ¥ kan vi gÃ¸re med den hvad vi vil,
+f.eks. konvertere den fra DOS-tegnsÃ¦t til UTF-8 tegnsÃ¦t. (Se
+nedenfor.) Men i fÃ¸rste omgang, som her, skriver vi blot vores
+char ud nÃ¸jagtig som vi fik den ind. Hvis nu vi bruger en
 kommandolinje som nedenfor, kan vi kontrollere, at programmet
-faktisk kopierer nøjagtigt, d.v.s. at library funktionerne bag
+faktisk kopierer nÃ¸jagtigt, d.v.s. at library funktionerne bag
 vores getchar() og putchar() er ok.
 </para>
 
@@ -1426,23 +1426,23 @@ MITPROMPT$
 </programlisting>
 
 <para>
-Man kunne tro, at det er uhyre ineffektivt at læse en stor fil
+Man kunne tro, at det er uhyre ineffektivt at lÃ¦se en stor fil
 et bogstav af gangen, men det er det ikke, hvis vores run-time
-library ellers er blot nogenlunde godt skrevet. For det første
-skal det nævnes at getchar og putchar er <emphasis> macroer </emphasis>,
+library ellers er blot nogenlunde godt skrevet. For det fÃ¸rste
+skal det nÃ¦vnes at getchar og putchar er <emphasis> macroer </emphasis>,
 derved spares et funktionskald.
 </para>
 
 <para>
-For det andet kan man med omdirigering på kommandolinjen bruge
-sådanne simple programmer til at behandle filer. Det er altså
-ikke nødvendigt at sidde og taste data ind til sine eksempler.
+For det andet kan man med omdirigering pÃ¥ kommandolinjen bruge
+sÃ¥danne simple programmer til at behandle filer. Det er altsÃ¥
+ikke nÃ¸dvendigt at sidde og taste data ind til sine eksempler.
 </para>
 
 <para>
-For at forstå den klassiske konstruktion ((c=getchar()) != EOF)
-er det en god idé at erstatte (c=getchar()) med c, variabelen,
-som indeholder det læste bogstav. Så står der:
+For at forstÃ¥ den klassiske konstruktion ((c=getchar()) != EOF)
+er det en god idÃ© at erstatte (c=getchar()) med c, variabelen,
+som indeholder det lÃ¦ste bogstav. SÃ¥ stÃ¥r der:
 </para>
 
 <programlisting>
@@ -1451,29 +1451,29 @@ som indeholder det læste bogstav. Så står der:
 </programlisting>
 
 <para>
-Et assignment (en tilskrivning, på lokalsproget) har en værdi,
-nemlig værdien af den sidst foretagne tildeling. Her er der kun
-en tildeling i udtrykket, så det er meget nemt. Værdien af
+Et assignment (en tilskrivning, pÃ¥ lokalsproget) har en vÃ¦rdi,
+nemlig vÃ¦rdien af den sidst foretagne tildeling. Her er der kun
+en tildeling i udtrykket, sÃ¥ det er meget nemt. VÃ¦rdien af
 (c=getchar()) er c.
 </para>
 
 <para>
-Læg også mærke til, at det er en int vi bruger til at gemme
-vores indlæste bogstav. Integer er en datatype, som er
-større end char. Derfor kan den rumme en værdi, som garanteret
+LÃ¦g ogsÃ¥ mÃ¦rke til, at det er en int vi bruger til at gemme
+vores indlÃ¦ste bogstav. Integer er en datatype, som er
+stÃ¸rre end char. Derfor kan den rumme en vÃ¦rdi, som garanteret
 ikke er et lovligt bogstav, og det er den, som systembiblioteket
-indsætter, når der ikke er mere input. Det er som regel -1, og
-EOF skal være defineret i stdin.
+indsÃ¦tter, nÃ¥r der ikke er mere input. Det er som regel -1, og
+EOF skal vÃ¦re defineret i stdin.
 </para>
 
 <sect2 id="tegn-og-tal">
-<title>Tegn og talværdier</title>
+<title>Tegn og talvÃ¦rdier</title>
 <indexterm><primary>filter</primary></indexterm>
 <para>
-Lad os først bruge programmet til at skrive bogstavernes talværdi
-ud i både almindelige titals - notation, i hexadecimal notation,
+Lad os fÃ¸rst bruge programmet til at skrive bogstavernes talvÃ¦rdi
+ud i bÃ¥de almindelige titals - notation, i hexadecimal notation,
 og, hvis bogstavet er udskrivbart, som glyf, eller
-tegn-repræsentation.
+tegn-reprÃ¦sentation.
 </para>
 
 <example id="hex-filter">
@@ -1487,7 +1487,7 @@ int main()
 {
     int c;
     while ( (c=getchar()) != EOF) {
-      printf("Decimal-værdi %3d, hexadecimal værdi 0x%2x ", c, c);
+      printf("Decimal-vÃ¦rdi %3d, hexadecimal vÃ¦rdi 0x%2x ", c, c);
       if (c > 31 && c &lt; 127)
           printf("%c\n", c);
       else
@@ -1501,43 +1501,43 @@ int main()
 <para>
 Dette program producerer noget output, som indeholde alle de
 samme informationer som den oprindelige fil. Den indeholder endda
-flere informationer, skønt ikke så mange som den kunne.
+flere informationer, skÃ¸nt ikke sÃ¥ mange som den kunne.
 </para>
 
 <para>
 Vi har med dette program <emphasis> mappet </emphasis> input til
-output på en måde, så vi ikke har tabt data. Vi kan skrive et
+output pÃ¥ en mÃ¥de, sÃ¥ vi ikke har tabt data. Vi kan skrive et
 program, som ud fra outputfilen rekonstruerer den oprindelige
 fil.
 </para>
 
 <para>
-Der er også en anden sjov ting ved programmet: Hvis vi skulle
-sende data over et ustabilt transmissionsmedium, så ville det
-være nemt at finde de linjer, hvor data var gået tabt. I mange
-tilfælde ville man ved mindre fejl endda kunne regne det rigtige
-input ud. Denne form for overskud af bits til at repræsentere
-data kalde redundans. "Redundancy" oversættes i ordbogen til
-overflødighed, men vi kunne også oversætte det til "rigelighed",
+Der er ogsÃ¥ en anden sjov ting ved programmet: Hvis vi skulle
+sende data over et ustabilt transmissionsmedium, sÃ¥ ville det
+vÃ¦re nemt at finde de linjer, hvor data var gÃ¥et tabt. I mange
+tilfÃ¦lde ville man ved mindre fejl endda kunne regne det rigtige
+input ud. Denne form for overskud af bits til at reprÃ¦sentere
+data kalde redundans. "Redundancy" oversÃ¦ttes i ordbogen til
+overflÃ¸dighed, men vi kunne ogsÃ¥ oversÃ¦tte det til "rigelighed",
 "med ekstrareservebits som forsikring ..." (Bedre forslag
-modtages med glæde!)
+modtages med glÃ¦de!)
 </para>
 
 <para>
-Som en biting til C++ interesserede kan det tilføjes, at man i
-C++ nok også ville slippe nemmere afsted i dette tilfælde ved at
-bruge printf. C++ cout() er ikke så nem at bruge til formatering
+Som en biting til C++ interesserede kan det tilfÃ¸jes, at man i
+C++ nok ogsÃ¥ ville slippe nemmere afsted i dette tilfÃ¦lde ved at
+bruge printf. C++ cout() er ikke sÃ¥ nem at bruge til formatering
 af kolonner og lignende.
 </para>
 
 <para>
-Lad os dernæst bruge programmet til at tælle characters.
+Lad os dernÃ¦st bruge programmet til at tÃ¦lle characters.
 </para>
 
 <example id="ex-char-count">
 <title>Simpelt filter som character counter.</title>
 <programlisting role="C">
-/* filter1.c simpelt filter tæller chars istf at ouputte. */
+/* filter1.c simpelt filter tÃ¦ller chars istf at ouputte. */
 
 #include &lt;stdio.h>
 
@@ -1559,12 +1559,12 @@ int main()
 Hvorfor initialiseres nc ikke? Jo, for det er en global variabel,
 og den er garanteret zeroed out. Al global hukommelse, som ikke er
 explicit initialiseret, er garanteret en nulstilling. Man kan
-selv gøre det, i øvrigt, hvis man har en snavset buffer:
+selv gÃ¸re det, i Ã¸vrigt, hvis man har en snavset buffer:
 memset(buf,0,lengde);
 </para>
 
 <para>
-Et eksempel på en kørsel af programmet:
+Et eksempel pÃ¥ en kÃ¸rsel af programmet:
 </para>
 
 <programlisting>
@@ -1574,19 +1574,19 @@ MITPROMPT $ time charcount &lt; /usr/dict/words
 </programlisting>
 
 <para>
-På min gamle maskine, 3/10 sekunder til at læse 400KB! Det er
-pænt (i forhold til maskinens formåen). Den "officielle"
+PÃ¥ min gamle maskine, 3/10 sekunder til at lÃ¦se 400KB! Det er
+pÃ¦nt (i forhold til maskinens formÃ¥en). Den "officielle"
 wordcount, wc &lt; /usr/dict/words er dog 10 gange hurtigere!
 </para>
 
 <para>
-Husk at denne charcount ikke tæller bytes, men bogstaver. På en
-linux maskine er dette normalt det samme. På et MicroSoft system
-vil længden af filen ikke svare til antal characters talt på
+Husk at denne charcount ikke tÃ¦ller bytes, men bogstaver. PÃ¥ en
+linux maskine er dette normalt det samme. PÃ¥ et MicroSoft system
+vil lÃ¦ngden af filen ikke svare til antal characters talt pÃ¥
 <emphasis> denne </emphasis> metode, fordi MicroSoft
 operativsystemer (og andre) benytter carriage-return line-feed
-sekvenser til linjeskift.  Når man kører "normal C" - eller
-simpel, POSIX-C - på en platform som MS-OS'erne, så filtreres
+sekvenser til linjeskift.  NÃ¥r man kÃ¸rer "normal C" - eller
+simpel, POSIX-C - pÃ¥ en platform som MS-OS'erne, sÃ¥ filtreres
 alle cr - tegn fra.
 </para>
 
@@ -1607,30 +1607,30 @@ PROMPT $ man groff-char
 <para>
 Et filterprogram, som svarer til den normale anvendelse af ordet
 filter, er et program som kan konverterer CodePage 865
-til UTF-8. Det kan gøres på forskellige måder, men eksemplet
+til UTF-8. Det kan gÃ¸res pÃ¥ forskellige mÃ¥der, men eksemplet
 egner sig godt til at demonstrere, hvordan man "mapper" en
-datamængde over i en anden.
+datamÃ¦ngde over i en anden.
 </para>
 
 <para>
-Lad os for simplicitetens skyld gå ud fra, at hvert bogstav er en
-byte. (Desværre er jeg ikke klar over, om iso8859-1 altid er en
-byte, men det går vi altså ud fra, at de er.) Vi skal med andre
+Lad os for simplicitetens skyld gÃ¥ ud fra, at hvert bogstav er en
+byte. (DesvÃ¦rre er jeg ikke klar over, om iso8859-1 altid er en
+byte, men det gÃ¥r vi altsÃ¥ ud fra, at de er.) Vi skal med andre
 ord kunne konvertere en byte til en anden byte. Antallet af
-mulige værdier i begge lejre er kun 256.
+mulige vÃ¦rdier i begge lejre er kun 256.
 </para>
 
 <para>
-Den hurtigste teknik til en sådan opgave er derfor tabelopslag,
-som kan svare på, hvilken ny værdi vores byte skal have ved at
-bruge vores input som index i et array med 256 værdier.
+Den hurtigste teknik til en sÃ¥dan opgave er derfor tabelopslag,
+som kan svare pÃ¥, hvilken ny vÃ¦rdi vores byte skal have ved at
+bruge vores input som index i et array med 256 vÃ¦rdier.
 </para>
 
 <para>
-For at prøve teknikken lader vi først en loop initialisere
-arrayet først, således at der ingen konvertering ville finde
-sted. Derefter prøver vi, om vores program kopierer input til
-output <emphasis>uden</emphasis> ændringer.
+For at prÃ¸ve teknikken lader vi fÃ¸rst en loop initialisere
+arrayet fÃ¸rst, sÃ¥ledes at der ingen konvertering ville finde
+sted. Derefter prÃ¸ver vi, om vores program kopierer input til
+output <emphasis>uden</emphasis> Ã¦ndringer.
 </para>
 
 <example id="ex-msdos2iso8859-1-forstadium">
@@ -1663,16 +1663,16 @@ int main(int argc, char *argv[])
 
 <para>
 Somme tider klager folk over, at C programmet ikke har boundary
-tjek for arrays. Det er der selvfølgelig den gode grund til, at
-det ville være spild af tid i et godt program. Hvorfor vil
-ovenstående program ALDRIG gå ud over grænserne fra 0 til 256?
+tjek for arrays. Det er der selvfÃ¸lgelig den gode grund til, at
+det ville vÃ¦re spild af tid i et godt program. Hvorfor vil
+ovenstÃ¥ende program ALDRIG gÃ¥ ud over grÃ¦nserne fra 0 til 256?
 </para>
 
 <para>
-Hvordan tester man nu sådan et program? Her er Unix suverænt, man
+Hvordan tester man nu sÃ¥dan et program? Her er Unix suverÃ¦nt, man
 omdirigerer input fra en fil og samler test output op i en anden
-fil. På den måde opnår man, at selve test-proceduren kan
-automatiseres (evt. sættes ind som et target i en makefile.)
+fil. PÃ¥ den mÃ¥de opnÃ¥r man, at selve test-proceduren kan
+automatiseres (evt. sÃ¦ttes ind som et target i en makefile.)
 </para>
 
 <para>
@@ -1684,18 +1684,18 @@ automatiseres (evt. sættes ind som et target i en makefile.)
 </para>
 
 <para>
-Den næste terrasse, som vi vil nå op på, skal konvertere et
-enkelt tegn og lade resten være. Vi benytter derfor stadig
-loopen, men tilføjer nu en linje, som ændrer en enkelt af
-tabelværdierne, og ser, om vi får det ønskede resultat, hvis vi
-sender input af den pågældende værdi. (Det gør vi selvfølgelig).
+Den nÃ¦ste terrasse, som vi vil nÃ¥ op pÃ¥, skal konvertere et
+enkelt tegn og lade resten vÃ¦re. Vi benytter derfor stadig
+loopen, men tilfÃ¸jer nu en linje, som Ã¦ndrer en enkelt af
+tabelvÃ¦rdierne, og ser, om vi fÃ¥r det Ã¸nskede resultat, hvis vi
+sender input af den pÃ¥gÃ¦ldende vÃ¦rdi. (Det gÃ¸r vi selvfÃ¸lgelig).
 </para>
 
 <example id="ex-msdos2iso8859-1-Terrasse2">
 <title>Terrasse 2</title>
 <programlisting>
 
-/* ibm2iso0v2 - forstadium 2, konvertering af en enkelt værdi. */
+/* ibm2iso0v2 - forstadium 2, konvertering af en enkelt vÃ¦rdi. */
 
 #include &lt;stdio.h>
 
@@ -1709,7 +1709,7 @@ int main(int argc, char *argv[])
     for (jj = 0; jj &lt; 256 ; ++jj)
         conv[jj] = jj;
 
-    conv['A'] = 'a';                  /* Ja, man må gerne! */
+    conv['A'] = 'a';                  /* Ja, man mÃ¥ gerne! */
 
     while ( (c=getchar()) != EOF) 
         putchar(conv[c]);
@@ -1721,19 +1721,19 @@ int main(int argc, char *argv[])
 </example>
 
 <para>
-Når man kører ovenstående program (fra kommandolinje, med inddata
-fra tastaturet) skal man få lille a hvis man taster store a.
-Ellers skal alt output være det samme som input.
+NÃ¥r man kÃ¸rer ovenstÃ¥ende program (fra kommandolinje, med inddata
+fra tastaturet) skal man fÃ¥ lille a hvis man taster store a.
+Ellers skal alt output vÃ¦re det samme som input.
 </para>
 
 <para>
-Den version af programmet, som vi slutter med her, behøver ikke
-at være den endelige version. De mange sjove grafiske tegn, som
+Den version af programmet, som vi slutter med her, behÃ¸ver ikke
+at vÃ¦re den endelige version. De mange sjove grafiske tegn, som
 findes i codepage850 og 865 kan man jo forestille sig efterlignet
-på mange måder, afhængig af, om man skal ud på en printer eller
-en ascii skærm eller en grafisk tegneflade (stort arbejde!). Vi
-nøjes med en version, som konverterer de danske tegn i
-IBM-tegnsættet codepage 850 til ækvivalenterne i iso8859-1.
+pÃ¥ mange mÃ¥der, afhÃ¦ngig af, om man skal ud pÃ¥ en printer eller
+en ascii skÃ¦rm eller en grafisk tegneflade (stort arbejde!). Vi
+nÃ¸jes med en version, som konverterer de danske tegn i
+IBM-tegnsÃ¦ttet codepage 850 til Ã¦kvivalenterne i iso8859-1.
 </para>
 
 <example id="ex-msdos2iso8859-1-Terrasse3">
@@ -1754,15 +1754,15 @@ int main(int argc, char *argv[])
     for (jj = 0; jj &lt; 256 ; ++jj)
         conv[jj] = jj;
 
-    conv[134] = 'å';              /* 134 er codepage850 for å */
-    conv[143] = 'Å';              /* 143 er codepage850 for Å */
-    conv[145] = 'æ';
-    conv[146] = 'Æ';
-    conv[155] = 'ø';
-    conv[157] = 'Ø';
-    conv[130] = 'é';
-    conv[144] = 'É';
-                                  /* fortsæt listen efter behov */
+    conv[134] = 'Ã¥';              /* 134 er codepage850 for Ã¥ */
+    conv[143] = 'Ã…';              /* 143 er codepage850 for Ã… */
+    conv[145] = 'Ã¦';
+    conv[146] = 'Ã†';
+    conv[155] = 'Ã¸';
+    conv[157] = 'Ã˜';
+    conv[130] = 'Ã©';
+    conv[144] = 'Ã‰';
+                                  /* fortsÃ¦t listen efter behov */
 
     while ( (c=getchar()) != EOF)
         putchar(conv[c]);
@@ -1773,10 +1773,10 @@ int main(int argc, char *argv[])
 </programlisting>
 </example>
 <para>
-Den teknik, som er vist her ovenfor, er selvfølgelig lidt for
-nem. Hvis man vil have en lynhurtig service ved hjælp af en
-opslagstabel, skal tabellen selvfølgelig være initialiseret i
-forvejen. Det må man med andre ord skrive i hånden:
+Den teknik, som er vist her ovenfor, er selvfÃ¸lgelig lidt for
+nem. Hvis man vil have en lynhurtig service ved hjÃ¦lp af en
+opslagstabel, skal tabellen selvfÃ¸lgelig vÃ¦re initialiseret i
+forvejen. Det mÃ¥ man med andre ord skrive i hÃ¥nden:
 </para>
 <programlisting>
 char ctab[256] = 0,1,2,3, /* nej ikke stop her! */
@@ -1785,8 +1785,8 @@ char ctab[256] = 0,1,2,3, /* nej ikke stop her! */
 <para>
 Det er den teknik, som anvendes i library funktionerne
 isprint(3), isdigit(3), toupper(3) osv. fordi det simpelthen er
-den hurtigste måde. Hver konvertering koster kun en enkelt
-indexerings-operation - især hvis funktionerne er erklæret som
+den hurtigste mÃ¥de. Hver konvertering koster kun en enkelt
+indexerings-operation - isÃ¦r hvis funktionerne er erklÃ¦ret som
 inline funktioner (findes i gcc og er med i den nye standard
 C99).
 </para>
@@ -1794,33 +1794,33 @@ C99).
 </sect2>
 
 <sect2 id="sect-oversaetter-forstadium">
-<title>Oversætter - teknik, forstadium</title>
+<title>OversÃ¦tter - teknik, forstadium</title>
 
 <para>
-Ud over de grundlæggende typer tekstfiltre, som vi har
-set på her, ville det være nyttigt at se et par eksempler på
+Ud over de grundlÃ¦ggende typer tekstfiltre, som vi har
+set pÃ¥ her, ville det vÃ¦re nyttigt at se et par eksempler pÃ¥
 programmer, som kan filtrere mime-kodede postfiler.
 </para>
 
 <para>
 Denne gang nytter det ikke at lave byte til byte mapning. Vi har
 som input sekvenser, der begynder med et lighedstegn og
-fortsætter med en hexadecimal talværdi for det ønskede output
-tegn. Fx. vil i "blåbærgrød" i Mime-kodning blive skrevet således:
-bl=e5b=e6rgr=F8d. Det er klart en forbedring at få det oversat
+fortsÃ¦tter med en hexadecimal talvÃ¦rdi for det Ã¸nskede output
+tegn. Fx. vil i "blÃ¥bÃ¦rgrÃ¸d" i Mime-kodning blive skrevet sÃ¥ledes:
+bl=e5b=e6rgr=F8d. Det er klart en forbedring at fÃ¥ det oversat
 til noget, som ligner de danske tegn noget mere. Desuden kan man
 bruge Mime-kodning til at angive et linjeskift, der ikke skal med
-i den færdige tekst. Meget rart, hvis man har problemer med lange
-linjer i for eksempel en mail transport agent. Det gøres ved at afslutte
+i den fÃ¦rdige tekst. Meget rart, hvis man har problemer med lange
+linjer i for eksempel en mail transport agent. Det gÃ¸res ved at afslutte
 linjen med et lighedstegn. <!-- TODO: Henvisning til mime-std.-->
 </para>
 
 <para>
-Her kommer først en simpel version, som kun kan operere i en
-kanal (på engelsk en pipe), d.v.s. den læser fra stdin og skriver 
+Her kommer fÃ¸rst en simpel version, som kun kan operere i en
+kanal (pÃ¥ engelsk en pipe), d.v.s. den lÃ¦ser fra stdin og skriver 
 til stdout. (Med programmer til kommando fortolkeren bash eller ksh,
-kaldet shell scripts, kan man klare fil-opsætning for alle andre
-situationer, så det er såmænd ikke så ringe endda!)
+kaldet shell scripts, kan man klare fil-opsÃ¦tning for alle andre
+situationer, sÃ¥ det er sÃ¥mÃ¦nd ikke sÃ¥ ringe endda!)
 </para>
 
 <example id="ex-mime2asc">
@@ -1842,7 +1842,7 @@ int main(int argc, char *argv[])
         if (c != '=')
             putchar(c);
         else {
-            if ( (c2 = getchar()) == '\n')  /* aha! linjen ønskes ikke brudt */
+            if ( (c2 = getchar()) == '\n')  /* aha! linjen Ã¸nskes ikke brudt */
                 continue;                   /* print ikke ny-linje-tegn */
             else {
                 if (feof(stdin)) exit(1);
@@ -1863,55 +1863,55 @@ int main(int argc, char *argv[])
 
 <para>
 Programmet er uhyre simpelt i forhold til en produktionsversion,
-men indeholder det nødvendige for at fremhæve pointen.
-Håndteringen af End-Of-File er klodset, og fejl ved konvertering
-af de to tegn efter lighedstegn håndteres slet ikke. EOF
-håndteringen kunne håndteres ved at benytte en linjebuffer og
-fgets(), og strtol(3) giver os et errno, som vi kunne tjekke på.
+men indeholder det nÃ¸dvendige for at fremhÃ¦ve pointen.
+HÃ¥ndteringen af End-Of-File er klodset, og fejl ved konvertering
+af de to tegn efter lighedstegn hÃ¥ndteres slet ikke. EOF
+hÃ¥ndteringen kunne hÃ¥ndteres ved at benytte en linjebuffer og
+fgets(), og strtol(3) giver os et errno, som vi kunne tjekke pÃ¥.
 </para>
 
 <para>
-Vi benytter os af det faktum, at ethvert '=' skal forstås på en
-speciel måde, det indleder en mime sekvens. Det kan man kalde for
+Vi benytter os af det faktum, at ethvert '=' skal forstÃ¥s pÃ¥ en
+speciel mÃ¥de, det indleder en mime sekvens. Det kan man kalde for
 et meta tegn, et tegn, som ikke blot er et tegn. Det er en
-kommando, på samme måde som '\' er en speciel kommando i en C
+kommando, pÃ¥ samme mÃ¥de som '\' er en speciel kommando i en C
 string, '\n' betyder newline og ikke bogstavet n.
 </para>
 
 <para>
-Hver gang vi støder ind i et tegn, undersøges, om det er et
-lighedstegn, og hvis ikke går det ufiltreret til output.
+Hver gang vi stÃ¸der ind i et tegn, undersÃ¸ges, om det er et
+lighedstegn, og hvis ikke gÃ¥r det ufiltreret til output.
 </para>
 
 <para>
-Lighedstegnet smides væk og de to næste characters puttes i en
-streng, der bliver opfattet som en hexadecimal værdi. Denne
+Lighedstegnet smides vÃ¦k og de to nÃ¦ste characters puttes i en
+streng, der bliver opfattet som en hexadecimal vÃ¦rdi. Denne
 konverteres ved kald til strtol(3) string to long. Denne fornemme
-konverteringsrutine får en pointer til stringen med hexadecimal
-tallet, adressen på en character pointer, som den så kan bruge
+konverteringsrutine fÃ¥r en pointer til stringen med hexadecimal
+tallet, adressen pÃ¥ en character pointer, som den sÃ¥ kan bruge
 til at rapportere, hvor meget den kunne konvertere, og endelig et
 tal, som er radix for konverteringen, d.v.s. at hvis vi vil
 konvertere et almindeligt tal, skal vi aflevere et 10-tal her.
 </para>
 
 <para>
-strtol(3) kunne godt undvære parameter 2, eller rettere, vi kunne
-fortælle den, at der ikke er nogen pointer ved at aflevere en NULL
+strtol(3) kunne godt undvÃ¦re parameter 2, eller rettere, vi kunne
+fortÃ¦lle den, at der ikke er nogen pointer ved at aflevere en NULL
 pointer. <literal>strtol(str,NULL,16);</literal>
 </para>
 
 <para>
-strtol ville returnere et 0, hvis de efterfølgende bogstaver ikke
-kan konverteres, og det ville selvfølgelig være en situation, vi
-burde undersøge nøjere, ligesom errno, en static variabel i
-library modulet, burde tjekkes. Prøv at gøre det, og giv
+strtol ville returnere et 0, hvis de efterfÃ¸lgende bogstaver ikke
+kan konverteres, og det ville selvfÃ¸lgelig vÃ¦re en situation, vi
+burde undersÃ¸ge nÃ¸jere, ligesom errno, en static variabel i
+library modulet, burde tjekkes. PrÃ¸v at gÃ¸re det, og giv
 programmet input med fejl i og kontroller, at programmet
-håndterer det på en fornuftig måde!
+hÃ¥ndterer det pÃ¥ en fornuftig mÃ¥de!
 </para>
 
 <para>
-Lad os til sidst forbede programmet, så det selv kan finde ud af
-at åbne filer, konvertere indholdet og skrive resultatet ud i en
+Lad os til sidst forbede programmet, sÃ¥ det selv kan finde ud af
+at Ã¥bne filer, konvertere indholdet og skrive resultatet ud i en
 fil med et andet navn.
 </para>
 
@@ -1948,7 +1948,7 @@ int main(int argc, char *argv[])
             switch(argv[j][1]) {
                 case 'v': verbose=1;
                           break;
-                default: error("Option ikke forstået", 40);
+                default: error("Option ikke forstÃ¥et", 40);
             }
     }
     j=0;
@@ -1959,16 +1959,16 @@ int main(int argc, char *argv[])
             error("Filnavn er for langt", 100);
         fp = fopen(argv[j],"r");
         if (!fp) {
-            sprintf(errormsg, "Kan ikke åbne fil ved navn %s",argv[j]);
+            sprintf(errormsg, "Kan ikke Ã¥bne fil ved navn %s",argv[j]);
             error(errormsg,2);
         }
         strcpy(nyfilnavn,argv[j]);
         strcat(nyfilnavn,".X");
         nyfilp = fopen(nyfilnavn,"w");
         if (!nyfilp)
-            error("Kan ikke åbne fil for skrivning",103);
+            error("Kan ikke Ã¥bne fil for skrivning",103);
         if (verbose)
-            fprintf(stderr,"Har åbnet %s, starter konvertering\n", argv[j]);
+            fprintf(stderr,"Har Ã¥bnet %s, starter konvertering\n", argv[j]);
         konverter(fp,nyfilp);
     }
     return 0;
@@ -1984,7 +1984,7 @@ void konverter(FILE *fil, FILE *outfil)
         if (c != '=')
             putc(c,outfil);
         else {
-            if ( (c2 = getc(fil)) == '\n')  /* aha! linjen ønskes ikke brudt */
+            if ( (c2 = getc(fil)) == '\n')  /* aha! linjen Ã¸nskes ikke brudt */
                 continue;                   /* print ikke ny-linje-tegn */
             else {
                 if (feof(stdin)) exit(1);
@@ -2002,18 +2002,18 @@ void konverter(FILE *fil, FILE *outfil)
 </example>
 
 <para>
-En kommandolinje, som består af 3 ord, for eksempel mime2ascii fil1 fil2
-vil blive opdelt i de tre ord, altså "mime2ascii" er det første,
+En kommandolinje, som bestÃ¥r af 3 ord, for eksempel mime2ascii fil1 fil2
+vil blive opdelt i de tre ord, altsÃ¥ "mime2ascii" er det fÃ¸rste,
 "fil1" er det andet, "fil2" er det tredie ord.
 </para>
 
 <para>
-argc er sat til 3 af den startup kode, som sætter vores program i
+argc er sat til 3 af den startup kode, som sÃ¦tter vores program i
 gang. argv[0] er derfor ordet "mime2ascii", det vil sige vores
 eget programs navn. Da vores program <emphasis> altid
 </emphasis> har et navn, er argc altid mindst 1. Man gemmer
 sommetider programnavnet i en global character-pointer, fx.
-således: 
+sÃ¥ledes: 
 </para>
 <programlisting> 
 char *thisprog; 
@@ -2024,49 +2024,49 @@ main(int argc, char *argv[])
 </programlisting>
 
 <para>
-Hvis man skal have fat i sidste ord på kommandolinjen er det
-altså <literal> argv[argc-1] </literal> - <emphasis> Husk,
-</emphasis> at array elementer starter med 0, d.v.s. første
+Hvis man skal have fat i sidste ord pÃ¥ kommandolinjen er det
+altsÃ¥ <literal> argv[argc-1] </literal> - <emphasis> Husk,
+</emphasis> at array elementer starter med 0, d.v.s. fÃ¸rste
 element er argv[0].
 </para>
 
 <para>
-For at vise, hvordan main får argumenterne fra kommandolinjen,
-kan man lave en "terrasse1" af dette program, hvor man nøjes med
-at løbe argumenterne igennem og skrive dem ud på skærmen.
+For at vise, hvordan main fÃ¥r argumenterne fra kommandolinjen,
+kan man lave en "terrasse1" af dette program, hvor man nÃ¸jes med
+at lÃ¸be argumenterne igennem og skrive dem ud pÃ¥ skÃ¦rmen.
 </para>
 
 <para>
-Læg mærke til, at programmet gennemløber kommandolinjen 2 gange.
-Første gang er det blot for at få de eventuelle options. Vi har
+LÃ¦g mÃ¦rke til, at programmet gennemlÃ¸ber kommandolinjen 2 gange.
+FÃ¸rste gang er det blot for at fÃ¥ de eventuelle options. Vi har
 lavet en enkelt optionmulighed, nemlig -v for verbose. Det
-fungerer - men det er en meget rå form for kommandolinje analyse.
-Vi vil i andre eksempler vise flere måder at gøre dette.
+fungerer - men det er en meget rÃ¥ form for kommandolinje analyse.
+Vi vil i andre eksempler vise flere mÃ¥der at gÃ¸re dette.
 </para>
 
 <para>
 Alt i alt er mime2ascii dog betydeligt mere praktisk end
-forgængeren. Det læser de filer, som man angiver på
+forgÃ¦ngeren. Det lÃ¦ser de filer, som man angiver pÃ¥
 kommandolinjen, og skriver det konverterede indhold ud i en fil
-med samme navn med en tilføjelse af ".X". 
+med samme navn med en tilfÃ¸jelse af ".X". 
 </para>
 
 <para>
-Det kunne lige så godt være en anden endelse, og det står dig
-selvfølgelig frit for at ændre programmet til at lave filer, som
-ender på <command>.txt</command>. Nogle gange vil man måske
-ønske, at man sletter den oprindelige fil (eller gemmer den under
-et andet navn) og omdøber (renamer) den konverterede fil til det
+Det kunne lige sÃ¥ godt vÃ¦re en anden endelse, og det stÃ¥r dig
+selvfÃ¸lgelig frit for at Ã¦ndre programmet til at lave filer, som
+ender pÃ¥ <command>.txt</command>. Nogle gange vil man mÃ¥ske
+Ã¸nske, at man sletter den oprindelige fil (eller gemmer den under
+et andet navn) og omdÃ¸ber (renamer) den konverterede fil til det
 oprindelige filnavn. Dette er en god ide, hvis mime2ascii aldrig
-laver fejl!  Det vil være en god opgave til programmeringsarbejde
-at polere dette filter, således at det fungerer perfekt og selv
+laver fejl!  Det vil vÃ¦re en god opgave til programmeringsarbejde
+at polere dette filter, sÃ¥ledes at det fungerer perfekt og selv
 genererer fornuftige filnavne.
 </para>
 
 <para>
 I afsnit <xref linkend="sect-parser-programmer"/> udvidedes denne
-programtype, så den kan håndtere lidt længere sekvenser af tegn,
-således at man kan analysere input på et lidt højere
+programtype, sÃ¥ den kan hÃ¥ndtere lidt lÃ¦ngere sekvenser af tegn,
+sÃ¥ledes at man kan analysere input pÃ¥ et lidt hÃ¸jere
 abstraktionsniveau.
 </para>
 
@@ -2076,49 +2076,49 @@ abstraktionsniveau.
 <title>Summering af tal i en fil.</title>
 
 <para>
-Et program, som ønsker at behandle linjer i st.f. characters, kan
+Et program, som Ã¸nsker at behandle linjer i st.f. characters, kan
 optimere IO ved at benytte fgets(2). Vi kan benytte denne
-funktion til at skrive et program, som læser en fil med tal og
-lægger dem sammen og skriver resultatet. Det er fascinerende at
-se et program, der kan behandle en megabyte datafil på brøkdele
+funktion til at skrive et program, som lÃ¦ser en fil med tal og
+lÃ¦gger dem sammen og skriver resultatet. Det er fascinerende at
+se et program, der kan behandle en megabyte datafil pÃ¥ brÃ¸kdele
 af et sekund.
 </para>
 
 <para>
-Allerede nu kan det forudses, at hvis den kan "forstå"
-negative tal også vil kunne trække fra.
+Allerede nu kan det forudses, at hvis den kan "forstÃ¥"
+negative tal ogsÃ¥ vil kunne trÃ¦kke fra.
 </para>
 
 <para>
-Der findes situationer fra det virkelige liv, hvor sådan et
-program kunne være nyttigt. Hvis vi f.eks. har foretaget et udtræk
-fra en stor database med alle telefon taksttelegrammer fra lørdag
-24.00 til søndag 06.00, så kan vi beregne den samlede tid og hvor
-meget det ville koste at give natterabat. Men også datafiler fra
-alle mulige andre situationer ville kunne være input. Normalt vil
-man på Unix klare den slags med awk, men hvis man skulle
-optimere (f.eks. p.g.a. store datamængder fra en telefoni-data), så
-kunne det blive aktuelt at skrive det rå C program.
+Der findes situationer fra det virkelige liv, hvor sÃ¥dan et
+program kunne vÃ¦re nyttigt. Hvis vi f.eks. har foretaget et udtrÃ¦k
+fra en stor database med alle telefon taksttelegrammer fra lÃ¸rdag
+24.00 til sÃ¸ndag 06.00, sÃ¥ kan vi beregne den samlede tid og hvor
+meget det ville koste at give natterabat. Men ogsÃ¥ datafiler fra
+alle mulige andre situationer ville kunne vÃ¦re input. Normalt vil
+man pÃ¥ Unix klare den slags med awk, men hvis man skulle
+optimere (f.eks. p.g.a. store datamÃ¦ngder fra en telefoni-data), sÃ¥
+kunne det blive aktuelt at skrive det rÃ¥ C program.
 </para>
 
 <para>
-Pseudokode er måden at programmere på, hvis man ikke er
-interesseret i sprogets finurligheder, men blot ønsker at
+Pseudokode er mÃ¥den at programmere pÃ¥, hvis man ikke er
+interesseret i sprogets finurligheder, men blot Ã¸nsker at
 forklare mekanikken i et program. Vores fil-additionsmaskine vil
-i pseudokode se ud nogenlunde sådan her:
+i pseudokode se ud nogenlunde sÃ¥dan her:
 </para>
 
 <programlisting>
-Så længe der er linjer,
-  læse næste linje,
+SÃ¥ lÃ¦nge der er linjer,
+  lÃ¦se nÃ¦ste linje,
   konverter linjen til et tal, hvis muligt
-     er det ikke et tal, så vis linjenr, linje og gå ud;
-  læg tallet til totalen.
+     er det ikke et tal, sÃ¥ vis linjenr, linje og gÃ¥ ud;
+  lÃ¦g tallet til totalen.
 Print totalen.
 </programlisting>
 
 <para>
-Programmet er så simpelt, at vi skriver det i et hug.
+Programmet er sÃ¥ simpelt, at vi skriver det i et hug.
 </para>
 
 <example id="beregnings-filter">
@@ -2150,12 +2150,12 @@ int main()
 <para>
 <literal>strtod(3)</literal> (STRing-TO-Double) er en funktion,
 som konverterer en string til double. Denne funktion er mere
-avanceret end atoi, i det den kan sætte en fejl-variabel, hvis
+avanceret end atoi, i det den kan sÃ¦tte en fejl-variabel, hvis
 konverteringen ikke lykkes, og den kan flytte en pointer hen ad
-tekst strengen til det første bogstav, der ikke kunne
-konverteres. Man kan også bruge den på en mere simpel måde;
+tekst strengen til det fÃ¸rste bogstav, der ikke kunne
+konverteres. Man kan ogsÃ¥ bruge den pÃ¥ en mere simpel mÃ¥de;
 man giver den blot NULL som anden parameter, og krydser fingre og
-siger: det skal nok gå alt sammen ...
+siger: det skal nok gÃ¥ alt sammen ...
 </para>
 
 </sect2>
@@ -2166,24 +2166,24 @@ siger: det skal nok gå alt sammen ...
 <title>Analyse af input</title>
 
 <para>
-Er et oversætterprogram et filter? På en måde ja. En bestemt
-slags input giver altid et bestemt output. Output er afhængigt af
-(ét) input. 
+Er et oversÃ¦tterprogram et filter? PÃ¥ en mÃ¥de ja. En bestemt
+slags input giver altid et bestemt output. Output er afhÃ¦ngigt af
+(Ã©t) input. 
 </para>
 
 <para>
-Tag nu som eksempel følgende to små programmer. De vil, hvis vi
-oversætter dem til statisk linkede, strippede filer, være helt
-ens. I de færdige programmer vil der ikke være noget ord "alfa"
-eller "beta" - det er blot et midlertidigt navn for nummeret på
-den memory - celle, hvor oversætteren anbringer vores tal. Prøv
+Tag nu som eksempel fÃ¸lgende to smÃ¥ programmer. De vil, hvis vi
+oversÃ¦tter dem til statisk linkede, strippede filer, vÃ¦re helt
+ens. I de fÃ¦rdige programmer vil der ikke vÃ¦re noget ord "alfa"
+eller "beta" - det er blot et midlertidigt navn for nummeret pÃ¥
+den memory - celle, hvor oversÃ¦tteren anbringer vores tal. PrÃ¸v
 selv med kommandoen <command> strings prog1 </command>.
 </para>
 
 <programlisting role="C">
-/* prog1.c - lav om på variabelnavne og oversæt: gcc prog1.c -s -o prog1 */
+/* prog1.c - lav om pÃ¥ variabelnavne og oversÃ¦t: gcc prog1.c -s -o prog1 */
 int alfa 112233;
-main(){ printf("min globale variabel har værdien %d\n", alfa); }
+main(){ printf("min globale variabel har vÃ¦rdien %d\n", alfa); }
 </programlisting>
 
 <programlisting role="C">
@@ -2191,99 +2191,99 @@ main(){ printf("min globale variabel har værdien %d\n", alfa); }
 int beta 112233;
 main()
 {
-    printf("min globale variabel har værdien %d\n", beta);
+    printf("min globale variabel har vÃ¦rdien %d\n", beta);
 }
 </programlisting>
 
 <para>
-Selv om vi ændrer variables navne og laver om på linjedeling,
-kommentarer mv.  får vi nøjagtigt samme maskininstruktioner ud af
+Selv om vi Ã¦ndrer variables navne og laver om pÃ¥ linjedeling,
+kommentarer mv.  fÃ¥r vi nÃ¸jagtigt samme maskininstruktioner ud af
 det, med andre ord, der er en entydig bestemmelse af ouput ud fra
-input. Men for samme output kan vi altså have flere forskellige
+input. Men for samme output kan vi altsÃ¥ have flere forskellige
 input.
 </para>
 
 <para>
-Kan et program analysere input? Det kommer an på, hvad man
-mener med analyse. Hvis man forventer en forståelse, så nej, men
+Kan et program analysere input? Det kommer an pÃ¥, hvad man
+mener med analyse. Hvis man forventer en forstÃ¥else, sÃ¥ nej, men
 hvis analysen giver sig udslag i, at en struktur i input
-oversættes til en anden struktur, så jo, så kan et program
+oversÃ¦ttes til en anden struktur, sÃ¥ jo, sÃ¥ kan et program
 analysere input.
 </para>
 
 <para>
 Der sker en transformering af input, og den er bestemt af regler.
-I en parser er det reglerne, som er de mest interessante. Når vi
-ønsker at bygge en oversætter, så skifter vores fokus fra de
-laveste, små input enheder, d.v.s. bogstaver og tal, til større
-enheder, sætninger, blokke og funktioner.
+I en parser er det reglerne, som er de mest interessante. NÃ¥r vi
+Ã¸nsker at bygge en oversÃ¦tter, sÃ¥ skifter vores fokus fra de
+laveste, smÃ¥ input enheder, d.v.s. bogstaver og tal, til stÃ¸rre
+enheder, sÃ¦tninger, blokke og funktioner.
 </para>
 
 <para>
 Der er mange teknikker til at skifte fokus fra de laveste
-inputenheder, characters og words, til højere niveauer, blokke
+inputenheder, characters og words, til hÃ¸jere niveauer, blokke
 mv. En af mere taknemmelige metoder er den rekusivt nedstigende
 parser, som opbygges af et hierarki af funktioner, hvor de
-øverste tager sig af de store linjer, og de nederste i
+Ã¸verste tager sig af de store linjer, og de nederste i
 call-hierarkiet tager sig af de mindste, syntaktiske enheder.
 </para>
 
 <para>
 Den rekursivt nedstigende parser (recursive descent parser)
-er en attraktiv metode for både begynderen og den viderekomne
-programmør. Bjarne Stroustrup fortæller i sin bog "The Design and
+er en attraktiv metode for bÃ¥de begynderen og den viderekomne
+programmÃ¸r. Bjarne Stroustrup fortÃ¦ller i sin bog "The Design and
 Evolution af C++" at han oprindeligt ville bruge en recursive
-descent parser til Cfront, den første C++ compiler. " [...] it
+descent parser til Cfront, den fÃ¸rste C++ compiler. " [...] it
 <emphasis>is</emphasis> possible to write an efficient and
 reasonably nice recursive descent parser for C++. Several modern
 C++ compilers use recursive descent." Stroustrup[1], p. 69.
 </para>
 
 <para>
-For begynderen er det imidlertid en stor mundfuld at forstå en
+For begynderen er det imidlertid en stor mundfuld at forstÃ¥ en
 fuld-skala rekursiv nedstignings parser, men det klares, som
-bekendt, ved at dele opgaven op i små bidder. Intet problem er så
+bekendt, ved at dele opgaven op i smÃ¥ bidder. Intet problem er sÃ¥
 stort, at det ikke kan deles i flere mindre. Hvem har sagt det?
 </para>
 
 <para>
-I de næste eksempler vil vi derfor opbygge en tag-parser efter
-terrasse-princippet, d.v.s. at vi lægger ud med at løse en
-beskeden del af opgaven.  Først når den virker, kommer vi
-yderligere features på. Man er nødt til at skrive nogle simple
-inputfiler for at teste programmet, men det kan nu være ganske
-fornøjeligt at se, hvad der sker, når man "leger" med input.
+I de nÃ¦ste eksempler vil vi derfor opbygge en tag-parser efter
+terrasse-princippet, d.v.s. at vi lÃ¦gger ud med at lÃ¸se en
+beskeden del af opgaven.  FÃ¸rst nÃ¥r den virker, kommer vi
+yderligere features pÃ¥. Man er nÃ¸dt til at skrive nogle simple
+inputfiler for at teste programmet, men det kan nu vÃ¦re ganske
+fornÃ¸jeligt at se, hvad der sker, nÃ¥r man "leger" med input.
 </para>
 
 <sect2 id="sect-tag-parser">
 <title>En tag - parser</title>
 <para>
-Når man skriver tekst i sgml format, så vil det være rart, at man
-kan få hjælp til at kontrollere sine tags. Det program, jade
+NÃ¥r man skriver tekst i sgml format, sÃ¥ vil det vÃ¦re rart, at man
+kan fÃ¥ hjÃ¦lp til at kontrollere sine tags. Det program, jade
 <footnote> <para> Jade - James' DSSSL Engine, James Clark har
-også skrevet groff programmet. </para> </footnote>, som
+ogsÃ¥ skrevet groff programmet. </para> </footnote>, som
 fremstiller html, postscript, pdf-filer etc.etc. ud fra vores
-kildetekst, skal selvfølgelig også kunne tjekke for, at man har
-anvendt tags på den rigtige måde. Men inden man kommer dertil,
-kan det somme tider være rart med et mindre program, som
+kildetekst, skal selvfÃ¸lgelig ogsÃ¥ kunne tjekke for, at man har
+anvendt tags pÃ¥ den rigtige mÃ¥de. Men inden man kommer dertil,
+kan det somme tider vÃ¦re rart med et mindre program, som
 tjekker, at man har husket alle end-tags, og endnu bedre, et
-program, som kan formatere lidt på afsnit og indrykning, så
-kildeteksten er lettere at læse. Man kunne så fortsætte med at
+program, som kan formatere lidt pÃ¥ afsnit og indrykning, sÃ¥
+kildeteksten er lettere at lÃ¦se. Man kunne sÃ¥ fortsÃ¦tte med at
 lave et program, som ville udskrive en formateret ascii udgave.
 </para>
 
 <para>
-Et sådant program kunne for eksempel få flg. input:
+Et sÃ¥dant program kunne for eksempel fÃ¥ flg. input:
 </para>
 
 <programlisting>
 &lt;chapter>&lt;title>Dette er kapitel 1.&lt;/title> &lt;para> Dette kapitel
-handler om de teknikker, som en programmør kan bruge til at
+handler om de teknikker, som en programmÃ¸r kan bruge til at
 analysere input.  &lt;/para> &lt;/chapter>
 </programlisting>
 
 <para>
-Når vi har kørt input gennem vores tag-kontrolprogram, forventer
+NÃ¥r vi har kÃ¸rt input gennem vores tag-kontrolprogram, forventer
 vi, at output skal se ud nogenlunde som flg.:
 </para>
 
@@ -2291,7 +2291,7 @@ vi, at output skal se ud nogenlunde som flg.:
 &lt;chapter>
   &lt;title> Dette er kapitel 1.
   &lt;/title>
-  &lt;para> Dette kapitel handler om de teknikker, som en programmør
+  &lt;para> Dette kapitel handler om de teknikker, som en programmÃ¸r
          kan bruge til at analysere input.
   &lt;/para>
 &lt;/chapter>
@@ -2300,47 +2300,47 @@ vi, at output skal se ud nogenlunde som flg.:
 
 <para>
 Hvis der mangler en end-tag, skal programmet komme med en
-fejlmeddelelse. Programmet kommer (forhåbentlig) til at ligne
-indent programmet, som forskønner C - kildetekst ved at sørge for
+fejlmeddelelse. Programmet kommer (forhÃ¥bentlig) til at ligne
+indent programmet, som forskÃ¸nner C - kildetekst ved at sÃ¸rge for
 systematisk indrykning og placering af kommentarer m.v. (se <xref
 linkend="sect-GNU-tools"/>.)
 </para>
 
 <para>
-Man kan diskutere detailler omkring formatering, men i første
-omgang vil vi blot have den simplest mulige løsning. Og ikke nok
-med det, den første version af programmet skal blot afprøve IO
+Man kan diskutere detailler omkring formatering, men i fÃ¸rste
+omgang vil vi blot have den simplest mulige lÃ¸sning. Og ikke nok
+med det, den fÃ¸rste version af programmet skal blot afprÃ¸ve IO
 mekanismerne.
 </para>
 
 <para>
 Hvis vi skal analysere tags, skal vi kunne se mindst et ord af
-gangen. Det er heldigvis meget nemt, idet vi kan nøjes med en
-linjebuffer. Et ord vil aldrig være delt hen over en linje.
-Orddelinger på grund af linjelængde forekommer <emphasis> ikke
+gangen. Det er heldigvis meget nemt, idet vi kan nÃ¸jes med en
+linjebuffer. Et ord vil aldrig vÃ¦re delt hen over en linje.
+Orddelinger pÃ¥ grund af linjelÃ¦ngde forekommer <emphasis> ikke
 </emphasis>.
 </para>
 
 <para>
-Vores linjebuffer skal være stor nok, selvfølgelig, og vores
-program skal reagere fornuftigt på buffer overflow, derfor bruger
-vi fgets(), som stopper, når bufferen er fuld.
+Vores linjebuffer skal vÃ¦re stor nok, selvfÃ¸lgelig, og vores
+program skal reagere fornuftigt pÃ¥ buffer overflow, derfor bruger
+vi fgets(), som stopper, nÃ¥r bufferen er fuld.
 </para>
 
 <para>
-For at se på det næste bogstav skriver vi en lille funktion,
-ch(), som blot returnerer det næste tegn i vores linjebuffer. Men
-når vi læser og fremrykker pointeren, så skal der selvfølgelig
-tjekkes på, om der er et gyldigt tegn forude, hvis der ikke er,
+For at se pÃ¥ det nÃ¦ste bogstav skriver vi en lille funktion,
+ch(), som blot returnerer det nÃ¦ste tegn i vores linjebuffer. Men
+nÃ¥r vi lÃ¦ser og fremrykker pointeren, sÃ¥ skal der selvfÃ¸lgelig
+tjekkes pÃ¥, om der er et gyldigt tegn forude, hvis der ikke er,
 kaldes fillbuf.
 </para>
 
 <para>
-I stil med <xref linkend="ex-mime2asc"/> kan vi dog lige tilføje
+I stil med <xref linkend="ex-mime2asc"/> kan vi dog lige tilfÃ¸je
 en lille feature til dette program, nemlig, at hver gang, der ses
 en kile, d.v.s. &lt; ofte kaldet mindre-end tegnet, konverteres
-til en sgml-kode, "&amp;lt;". Det har vist sig at være et nyttigt
-program, når man vil inkludere for eksempel en stump af et C-program i en
+til en sgml-kode, "&amp;lt;". Det har vist sig at vÃ¦re et nyttigt
+program, nÃ¥r man vil inkludere for eksempel en stump af et C-program i en
 sgml kildetekst.
 </para>
 
@@ -2348,9 +2348,9 @@ sgml kildetekst.
 <title>En tag - parser, forstadium</title>
 <programlisting role="C">
 /* sgmlfmt_pre1.c Forstadium til mini program, som tjekker balancen i
- * sgml tags. I den nuværende skikkelse kan programmet erstatte
- * alle "mindre-end" tegn med sgml-koden for dette, altså &amp;lt; -
- * så det kan såmænd bruges til at filtrere C-programmer, der
+ * sgml tags. I den nuvÃ¦rende skikkelse kan programmet erstatte
+ * alle "mindre-end" tegn med sgml-koden for dette, altsÃ¥ &amp;lt; -
+ * sÃ¥ det kan sÃ¥mÃ¦nd bruges til at filtrere C-programmer, der
  * skal includeres i en sgml-tekst. */
 
 #include &lt;stdio.h>
@@ -2407,10 +2407,10 @@ int fillbuf()
     return (int) rv;
 }
 
-/* ch() returnerer den næste character i input stream *men* læser
- * ikke, og ændrer ikke noget i den eksisterende buffer. Det
- * svarer til at spørge "Hvad er det næste input tegn, hvis vi nu
- * gad gå videre?!"
+/* ch() returnerer den nÃ¦ste character i input stream *men* lÃ¦ser
+ * ikke, og Ã¦ndrer ikke noget i den eksisterende buffer. Det
+ * svarer til at spÃ¸rge "Hvad er det nÃ¦ste input tegn, hvis vi nu
+ * gad gÃ¥ videre?!"
  */
 
 int ch()
@@ -2425,21 +2425,21 @@ int nch()
 
 
 
-/* Hvis vi altid vil kunne se mere end én character fremefter, må
- * vi udskifte gch() og fillbuf() funktionerne, således at de
- * tjekker, hvor meget er der i bufferen, og hvis der er for få
- * (mindre end ønsket) skal de efterfylde bufferen og justere
+/* Hvis vi altid vil kunne se mere end Ã©n character fremefter, mÃ¥
+ * vi udskifte gch() og fillbuf() funktionerne, sÃ¥ledes at de
+ * tjekker, hvor meget er der i bufferen, og hvis der er for fÃ¥
+ * (mindre end Ã¸nsket) skal de efterfylde bufferen og justere
  * pointere.
- * Det søde ved denne implementering er imidlertid, at vi altid
- * har én character lookahead (garanteret), men hvis vi ser på et
+ * Det sÃ¸de ved denne implementering er imidlertid, at vi altid
+ * har Ã©n character lookahead (garanteret), men hvis vi ser pÃ¥ et
  * ord, kan vi se hele resten af ordet, fordi et ord ikke kan
  * krydse en linjedeling.
  */
 
 /* gch() returnerer samme som ch() men flytter pointeren en plads
  * frem. Hvis vi ved fremadrykning rammer end of line (en
- * nul-byte) må vi fylde bufferen, så ch() næste gang har et tegn
- * at kigge på.
+ * nul-byte) mÃ¥ vi fylde bufferen, sÃ¥ ch() nÃ¦ste gang har et tegn
+ * at kigge pÃ¥.
  */
 
 int gch()
@@ -2460,60 +2460,60 @@ int gch()
 
 
 <para>
-Programmets main kunne såmænd udmærket nøjes med at benytte
+Programmets main kunne sÃ¥mÃ¦nd udmÃ¦rket nÃ¸jes med at benytte
 getchar og putchar. Der er ikke noget vundet i <emphasis> dette
-</emphasis> program ved at benytte en særlig input mekanisme. Men
-det, som er det egentlige formål med programmet, er jo også at
+</emphasis> program ved at benytte en sÃ¦rlig input mekanisme. Men
+det, som er det egentlige formÃ¥l med programmet, er jo ogsÃ¥ at
 bygge grundbestanddelen til et andet. Det er "terrasse 1", og
 hvis det virker og kopierer input til output (med undtagelse af
-&lt; tegn), så er grunden lagt til næste udgave af programmet,
+&lt; tegn), sÃ¥ er grunden lagt til nÃ¦ste udgave af programmet,
 som blot skal tjekke, om en tekst har balancerede tags.
 </para>
 
 <para>
 Funktionerne ch() og gch() <emphasis> administrerer </emphasis>
 bufferen. Andre funktioner i programmet kigger ikke direkte i
-den globale variabel "buf[MAXB]". Det kunne være en privat
-variabel, som lå i et IO-modul. (Prøv at ændre programmet på den
-måde.)
+den globale variabel "buf[MAXB]". Det kunne vÃ¦re en privat
+variabel, som lÃ¥ i et IO-modul. (PrÃ¸v at Ã¦ndre programmet pÃ¥ den
+mÃ¥de.)
 </para>
 
 <para>
 En af de ting, der drillede ved konstruktionen af programmet,
 var, at gch() skal fylde bufferen - den er jo ansvarlig, klart
-nok, for at der er en næste byte at læse. gch() er den eneste,
-som kalder filbuf. Men hvornår skal den fylde bufferen? Hvis 
-buffer indexet peger på newline eller en streng-slutning
-(null-byte), så kunne det være signal til at fylde bufferen op.
-Da det alligevel blot er en newline, så kunne man smide den væk.
+nok, for at der er en nÃ¦ste byte at lÃ¦se. gch() er den eneste,
+som kalder filbuf. Men hvornÃ¥r skal den fylde bufferen? Hvis 
+buffer indexet peger pÃ¥ newline eller en streng-slutning
+(null-byte), sÃ¥ kunne det vÃ¦re signal til at fylde bufferen op.
+Da det alligevel blot er en newline, sÃ¥ kunne man smide den vÃ¦k.
 </para>
 
 <para>
-Men det er ikke en god idé (her) - for at det skal kunne lade sig
-gøre at gengive linjeskift i for eksempel litteral tekst er det nødvendigt
+Men det er ikke en god idÃ© (her) - for at det skal kunne lade sig
+gÃ¸re at gengive linjeskift i for eksempel litteral tekst er det nÃ¸dvendigt
 at lade gch() kigge en byte fremad.
 </para>
 
 <para>
-Så man skal altså huske at "gemme" den sidste byte i bufferen i
+SÃ¥ man skal altsÃ¥ huske at "gemme" den sidste byte i bufferen i
 en variabel, og derefter fyldes bufferen igen.
 </para>
 
 <para>
-Derved opstår der et andet problem. Hvornår rammer man end of
-file. Hvis caller af gch() tester på end of file INDEN han bruger
-den character, han har fået med gch(), så vil der - i denne
-version - gå kage i systemet.
+Derved opstÃ¥r der et andet problem. HvornÃ¥r rammer man end of
+file. Hvis caller af gch() tester pÃ¥ end of file INDEN han bruger
+den character, han har fÃ¥et med gch(), sÃ¥ vil der - i denne
+version - gÃ¥ kage i systemet.
 </para>
 
 <para>
 I dette lille program er det imidlertid overskueligt at huske, at
-man skal anvende returværdien fra gch() inden man tester for end
+man skal anvende returvÃ¦rdien fra gch() inden man tester for end
 of file (eller teste for end of file inden man kalder gch()).
 </para>
 
 <para>
-Input mekanismen, som den er præsenteret her, er en forsimplet
+Input mekanismen, som den er prÃ¦senteret her, er en forsimplet
 udgave af input mekanismen i small-C compileren, se <xref
 linkend="sect-uCc"/>.
 </para>
@@ -2528,40 +2528,40 @@ med variabelen bufindex.
 <title>Tjek balancering af tags</title>
 
 <para>
-I den næste version af tag-parseren, tagbal01.c, kan
+I den nÃ¦ste version af tag-parseren, tagbal01.c, kan
 man se, hvordan input mekanismen er bevaret. Programmet er ikke
-gengivet her i sin fulde udstrækning, men ligger som en fil i
+gengivet her i sin fulde udstrÃ¦kning, men ligger som en fil i
 kataloget med eksempler. 
 </para>
 
 <para>
-Opgaven består denne gang i at skrive et program, som kan læse
-en tag og "huske den", indtil vi kommer frem til næste tag. Hvis
-den næste tag er en end-tag (med skråstreg, for eksempel &lt;/chapter>) så
-skal teksten <emphasis> efter </emphasis> skråstregen være samme
+Opgaven bestÃ¥r denne gang i at skrive et program, som kan lÃ¦se
+en tag og "huske den", indtil vi kommer frem til nÃ¦ste tag. Hvis
+den nÃ¦ste tag er en end-tag (med skrÃ¥streg, for eksempel &lt;/chapter>) sÃ¥
+skal teksten <emphasis> efter </emphasis> skrÃ¥stregen vÃ¦re samme
 ord, som vores start tag. Hvis det er en ny start tag, fx.
-&lt;section1>, så skal den accepteres, og programmet leder nu
+&lt;section1>, sÃ¥ skal den accepteres, og programmet leder nu
 efter en end-tag for section1.
 </para>
 
 <para>
-Vi kan beskrive flow'et på flg. måde:
+Vi kan beskrive flow'et pÃ¥ flg. mÃ¥de:
 </para>
 <programlisting>
 <emphasis>
-    så længe der er en tag &lt;navn>
-       hvis den næste tag er en start tag
+    sÃ¥ lÃ¦nge der er en tag &lt;navn>
+       hvis den nÃ¦ste tag er en start tag
            kald rekursivt
        ellers
            hvis det ikke er en end-tag, som matcher &lt;navn>
                meld fejl
-           ellers returnér ok
+           ellers returnÃ©r ok
 
 </emphasis>
 </programlisting>
 <para>
-Når vi har fundet en end-tag, som matcher start-taggen, skal
-vores funktion  altså returnere true (eller ok). Denne simple
+NÃ¥r vi har fundet en end-tag, som matcher start-taggen, skal
+vores funktion  altsÃ¥ returnere true (eller ok). Denne simple
 version skriver m.a.o. ikke noget output.
 </para>
 
@@ -2569,17 +2569,17 @@ version skriver m.a.o. ikke noget output.
 <graphic fileref="recurs1.&magic;"  scale="100"></graphic>
 
 <para>
-Den funktion, som skal klare chapter-/chapter, kan selvfølgelig
-være lavet sådan, at den <emphasis> kun </emphasis> leder efter
-chapter. Men da mekanismen er den samme, når vi leder efter
-section eller para, så er det nok bedre at lade vores funktion
-acceptere et hvilket som helst tag navn, og så gemme det i en
+Den funktion, som skal klare chapter-/chapter, kan selvfÃ¸lgelig
+vÃ¦re lavet sÃ¥dan, at den <emphasis> kun </emphasis> leder efter
+chapter. Men da mekanismen er den samme, nÃ¥r vi leder efter
+section eller para, sÃ¥ er det nok bedre at lade vores funktion
+acceptere et hvilket som helst tag navn, og sÃ¥ gemme det i en
 character buffer. Derved kan vi bruge den samme mekanisme for
-både chapter, section1 og alle mulige andre.
+bÃ¥de chapter, section1 og alle mulige andre.
 </para>
 
 <para>
-Programmet kunne i simplest mulige form simpelt hen se sådan
+Programmet kunne i simplest mulige form simpelt hen se sÃ¥dan
 ud:
 </para>
 
@@ -2597,10 +2597,10 @@ scan_for_tags()
         parse_error("Cannot have end tag here\n");
     while ( ch() != '>' )
         newbuffer[j++] = gch();
-    // Nu skipper vi al almindelig tekst indtil næste tag.
+    // Nu skipper vi al almindelig tekst indtil nÃ¦ste tag.
     while (ch() != '&lt;')
         gch();
-    // Nu stoler vi på, at vi kan se 2 characters frem
+    // Nu stoler vi pÃ¥, at vi kan se 2 characters frem
     if (!match("&lt;/")) {
         // ikke en endtag
         scan_for_tags();   // tag lige alle indskudte tags her!
@@ -2614,38 +2614,38 @@ scan_for_tags()
           return 1; // ok.
     }
     parse_error("tag-name non-match\n");
-    // parse_error returnerer ikke, så vi kommer aldrig her, men
-    // vil gerne gøre compileren glad...
+    // parse_error returnerer ikke, sÃ¥ vi kommer aldrig her, men
+    // vil gerne gÃ¸re compileren glad...
     return 0;
 }
 </programlisting>
 
 <para>
-Ovenstående funktion kalder sig selv, hvis den ser en ny
-start-tag efter at den er gået i gang med at lede efter en
+OvenstÃ¥ende funktion kalder sig selv, hvis den ser en ny
+start-tag efter at den er gÃ¥et i gang med at lede efter en
 end-tag.
 </para>
 
 <para>
 Det er en simpel version af rekursiv nedstigning. Der er flere
 forskellige ting, denne her parser ikke kan klare. Hvis man
-skriver sin tag hen over en newline (hvilket er lovligt) så vil
+skriver sin tag hen over en newline (hvilket er lovligt) sÃ¥ vil
 parseren includere newline i tag-navnet. I det hele taget tager
 den alt, bogstavelig taget alt, inden slut vinkelen, og gemmer
 det som et tag-navn. Endvidere tjekker den ikke for buffer
-overflow, men det kunne man nemt indføje. Den er ikke desto
-mindre en god demonstration af, hvordan rekursionen kan gøre det
-muligt for os at håndtere mange forskellige slags input. Hvis der
-er 17 tags inden i hinanden, fint. Hvis vi først lægger 5 inden
-i hinanden og bagefter får 2 endtags og så igen en start-tag,
-fint, så klarer funktionen også at validere den slags input.
+overflow, men det kunne man nemt indfÃ¸je. Den er ikke desto
+mindre en god demonstration af, hvordan rekursionen kan gÃ¸re det
+muligt for os at hÃ¥ndtere mange forskellige slags input. Hvis der
+er 17 tags inden i hinanden, fint. Hvis vi fÃ¸rst lÃ¦gger 5 inden
+i hinanden og bagefter fÃ¥r 2 endtags og sÃ¥ igen en start-tag,
+fint, sÃ¥ klarer funktionen ogsÃ¥ at validere den slags input.
 </para>
 
 <para>
-Det vil være en god øvelse at afprøve ovenstående. Det findes
+Det vil vÃ¦re en god Ã¸velse at afprÃ¸ve ovenstÃ¥ende. Det findes
 ikke som en fil i eksemplerne. Man kan klippe funktionen her og
-indsætte den i en kopi af sgmlfmt_pre1.c -- eller man kunne
-skrive hele programmet for at få lidt øvelse.
+indsÃ¦tte den i en kopi af sgmlfmt_pre1.c -- eller man kunne
+skrive hele programmet for at fÃ¥ lidt Ã¸velse.
 </para>
 
 </sect2>
@@ -2655,24 +2655,24 @@ skrive hele programmet for at få lidt øvelse.
 <title>Any-tag</title>
 
 <para>
-Lad os forfine ideen fra foregående eksempel. I stedet for at
-lede efter start-tag tegnet, så overlader vi alt det beskidte
-arbejde (inclusive håndtering af linjeskift og spaces) til en
+Lad os forfine ideen fra foregÃ¥ende eksempel. I stedet for at
+lede efter start-tag tegnet, sÃ¥ overlader vi alt det beskidte
+arbejde (inclusive hÃ¥ndtering af linjeskift og spaces) til en
 funktion, som vi vil kalde anytag(). Derved bliver programmet
-meget lettere at læse.
+meget lettere at lÃ¦se.
 </para>
 
 <para>
-Hvis funktionen anytag() ser en tag, fint, så gemmer den navnet i
-den buffer, den har fået og returnerer true. Hvis den ikke finder
-en tag, så returnerer den blot false. Det må vores parser så
+Hvis funktionen anytag() ser en tag, fint, sÃ¥ gemmer den navnet i
+den buffer, den har fÃ¥et og returnerer true. Hvis den ikke finder
+en tag, sÃ¥ returnerer den blot false. Det mÃ¥ vores parser sÃ¥
 benytte sig af. Her kommer pseudo-koden:
 </para>
 
 <programlisting>
 <emphasis>
    hvis der er en ny starttag &lt;navn>
-       så længe der er mere input
+       sÃ¥ lÃ¦nge der er mere input
            lad tekst data passere
            hvis der er en end-tag
                begynd forfra (d.v.s. se efter en ny starttag)
@@ -2684,48 +2684,48 @@ benytte sig af. Her kommer pseudo-koden:
 </programlisting>
 
 <para>
-Opmærksomheden kan nu koncentrere sig om, hvordan man scanner for
-en tag med tilhørende slut-tag. Ovenstående pseudo-kode svarer
+OpmÃ¦rksomheden kan nu koncentrere sig om, hvordan man scanner for
+en tag med tilhÃ¸rende slut-tag. OvenstÃ¥ende pseudo-kode svarer
 til funktionen parse_level1. Navnet giver en forudanelse om, at
 man senere kunne have forskellige levels i parseren, som hver
-især er udtryk for, at der gælder forskellige regler for
+isÃ¦r er udtryk for, at der gÃ¦lder forskellige regler for
 forskellige tags. Men her bliver de alle behandlet ens. Der er
-ikke nogen regler for, hvilke tags der må være inde mellem andre
+ikke nogen regler for, hvilke tags der mÃ¥ vÃ¦re inde mellem andre
 tags. Programmet skal blot kunne tjekke, at der efter en
-&lt;tag>, kommer en &lt;/tag> (altså en slut-tag af samme type)
+&lt;tag>, kommer en &lt;/tag> (altsÃ¥ en slut-tag af samme type)
 senere, evt, efter nogle andre, indskudte (nestede) tags og med
-"tekst data" både før og efter.
+"tekst data" bÃ¥de fÃ¸r og efter.
 </para>
 
 <para>
-For at få tag'en analyseret kalder parse_level1 den dertil
+For at fÃ¥ tag'en analyseret kalder parse_level1 den dertil
 indrettede funktion anytag(), som afleverer navnet eller
-keywordet på taggen i den buffer, som den får adressen på.
-Parse_level1 gemmer navnet på taggen for senere at kontrollere,
+keywordet pÃ¥ taggen i den buffer, som den fÃ¥r adressen pÃ¥.
+Parse_level1 gemmer navnet pÃ¥ taggen for senere at kontrollere,
 at den tilsvarende end-tag har samme navn.
 </para>
 
 <para>
 parse_level1 accepterer nu ord ved at kalde getword. Typisk ville
-det være efter en para-tag. Når getword støder ind i et '&lt;'-tegn
-stopper den. Når den returnerer 0 er det fordi den er stødt ind i
+det vÃ¦re efter en para-tag. NÃ¥r getword stÃ¸der ind i et '&lt;'-tegn
+stopper den. NÃ¥r den returnerer 0 er det fordi den er stÃ¸dt ind i
 en ny tag (eller end-tag) -- eller fordi der ikke er mere input.
 </para>
 
 <para>
-Nu kommer det spændende! Hvad må der komme efter? På dette sted i
+Nu kommer det spÃ¦ndende! Hvad mÃ¥ der komme efter? PÃ¥ dette sted i
 input kan der komme en end-tag eller en ny tag. Hvis det er en
-end tag, har vi sluttet ringen og bør gå et niveau ned og se, om
-der er mere tekst efter end-taggen. Det gøres ved at breake og
+end tag, har vi sluttet ringen og bÃ¸r gÃ¥ et niveau ned og se, om
+der er mere tekst efter end-taggen. Det gÃ¸res ved at breake og
 hvis der ikke kommer en ny tag returneres fra parse_level1.
 </para>
 
 <para>
-Hvis den nu har kaldt sig selv, så er vi ikke på det yderste
+Hvis den nu har kaldt sig selv, sÃ¥ er vi ikke pÃ¥ det yderste
 niveau. Der returneres til stedet lige efter det rekursive
-call, og programmet begynder forfra på while-loop(2). Herved
+call, og programmet begynder forfra pÃ¥ while-loop(2). Herved
 vil det igen ser efter med getword, om der er "tekst-data". Men
-altså på et niveau lavere. (Det kan ses på indrykningerne i
+altsÃ¥ pÃ¥ et niveau lavere. (Det kan ses pÃ¥ indrykningerne i
 output).
 </para>
 
@@ -2763,18 +2763,18 @@ int parse_level1()
 <sidebar>
 <para>
 Efter en nested tag kan der komme mere tekst (som efter emphasis
-tag fx.) Man skal derfor spørge efter flere words når man kommer
+tag fx.) Man skal derfor spÃ¸rge efter flere words nÃ¥r man kommer
 tilbage fra rekursivt kald til parse_level1(). Det er derfor, at
-der forrest i while-løkke (2) er et tjek for tekst-data, nemlig
+der forrest i while-lÃ¸kke (2) er et tjek for tekst-data, nemlig
 getword() (3).
 </para>
 <para>
 Endvidere kan der jo komme en ny tag-konstruktion lige efter en
-komplet cyklus <emphasis>på samme niveau</emphasis>.  Derfor må
+komplet cyklus <emphasis>pÃ¥ samme niveau</emphasis>.  Derfor mÃ¥
 man <emphasis> ikke </emphasis> returnere, hvis have_endtag()
-returnerer true; altså hvis vi finder en end-tag, så skal vi se
-efter, om der er en start-tag mere på samme niveau. Hvis der
-<emphasis> ikke </emphasis> er det, <emphasis> så skal der
+returnerer true; altsÃ¥ hvis vi finder en end-tag, sÃ¥ skal vi se
+efter, om der er en start-tag mere pÃ¥ samme niveau. Hvis der
+<emphasis> ikke </emphasis> er det, <emphasis> sÃ¥ skal der
 returneres </emphasis>.
 </para>
 </sidebar>
@@ -2782,7 +2782,7 @@ returneres </emphasis>.
 </example>
 
 <para>
-Nøglen til forståelse er at følge flowet og forestille sig input
+NÃ¸glen til forstÃ¥else er at fÃ¸lge flowet og forestille sig input
 i stil med flg.: &lt;sect1> &lt;para> text-text &lt;emphasis>
 _text_ &lt;/emphasis> text2 &lt;emphasis> !text3! &lt;/emphasis>
 text4 &lt/para>&lt;/sect1>
@@ -2791,14 +2791,14 @@ text4 &lt/para>&lt;/sect1>
 <graphic fileref="recurs2.&magic;"  scale="100"></graphic>
 
 <para>
-Indsæt printf() statements forskellige steder i programmet og
-afprøv med små input filer. Sæt ord mellem para-tags. Prøv at
-undersøge, hvad der sker, hvis man ikke ignorerer return value i
+IndsÃ¦t printf() statements forskellige steder i programmet og
+afprÃ¸v med smÃ¥ input filer. SÃ¦t ord mellem para-tags. PrÃ¸v at
+undersÃ¸ge, hvad der sker, hvis man ikke ignorerer return value i
 det rekursive kald til parse_level1().
 </para>
 
 <para>
-Det vil være en god øvelse at tjekke, om der i programmet er
+Det vil vÃ¦re en god Ã¸velse at tjekke, om der i programmet er
 mulighed for buffer overflow nogen steder.
 </para>
 
@@ -2811,9 +2811,9 @@ mulighed for buffer overflow nogen steder.
 <title>Skelnen mellem tagtyper</title>
 
 <para>
-tagbal02.c er bygget op nøjagtigt som tagbal01.c, men kan skelne
-mellem et par grundlæggende typer sgml-tags, nemlig comment,
-programlisting og literal. Den kan også anvende en speciel
+tagbal02.c er bygget op nÃ¸jagtigt som tagbal01.c, men kan skelne
+mellem et par grundlÃ¦ggende typer sgml-tags, nemlig comment,
+programlisting og literal. Den kan ogsÃ¥ anvende en speciel
 regel for programlisting og literal, tekst data imellem dem
 bliver leveret videre som den er, uden formatering eller
 ombrydning af linjer.
@@ -2852,27 +2852,27 @@ int parse_level1()
 <para>
 Find funktionen parse_level1() og sammenlign med tagbal01.c. Nu
 er det ikke kun anytag, den kalder. Der er kommet
-special-funktioner til, som håndterer henholdsvis kommentarer,
+special-funktioner til, som hÃ¥ndterer henholdsvis kommentarer,
 programlisting og litteral-tags. De er bygget op som anytag(), de
 returnerer false, hvis de ikke ser den tag type, som de er "sendt
 ud for at lede efter".
 </para>
 
 <para>
-Klart nok må man så vente med at kalde anytag() til efter at de
-andre har fået chancen. Anytag() accepterer jo hvad som helst,
-der er en tag, så andre funktioner ville overhovedet ikke blive
+Klart nok mÃ¥ man sÃ¥ vente med at kalde anytag() til efter at de
+andre har fÃ¥et chancen. Anytag() accepterer jo hvad som helst,
+der er en tag, sÃ¥ andre funktioner ville overhovedet ikke blive
 kaldt.
 </para>
 
 <para> 
 I en sgml parser kunne anytag() benytte en liste over tilladte
-tag navne; hvis en tag ikke stod i denne tabel, så var den
+tag navne; hvis en tag ikke stod i denne tabel, sÃ¥ var den
 ulovlig og programmet skulle stoppe med en fejlmeddelelse.
 </para>
 
 <para>
-Et eksempel på kørsel af programmet, med en lidt forsimplet form
+Et eksempel pÃ¥ kÃ¸rsel af programmet, med en lidt forsimplet form
 for sgml-tags, kommer her.
 </para>
 
@@ -2883,7 +2883,7 @@ for sgml-tags, kommer her.
 &lt;sect1 id="tag_balance_tjekk">
 &lt;para>
 Dette       er
-en prøvetekst.
+en prÃ¸vetekst.
 &lt;/para>
 &lt;para>
 mere tekst i ny paragraf
@@ -2904,7 +2904,7 @@ fodnote text kommer her.
 <prompt>dax@pluto: </prompt><userinput>tagbal02 &lt; lidt.sgml </userinput>
 &lt;chapter>
   &lt;sect1 id="tag_balance_tjekk">
-    &lt;para> Dette er en prøvetekst.
+    &lt;para> Dette er en prÃ¸vetekst.
     &lt;/para>
     &lt;para> mere tekst i ny paragraf
       &lt;footnote>
@@ -2928,7 +2928,7 @@ fodnote text kommer her.
 <para>
 Som det kan ses, beklager programmet sig ikke over, at der
 forekommer en ulovlig tag sidst i input. Programmet formaterer
-teksten, ikke så avanceret, men nyttigt nok, og foretager
+teksten, ikke sÃ¥ avanceret, men nyttigt nok, og foretager
 indrykning, hver gang der forekommer en tag er inde i en anden
 tag.
 </para>
@@ -2939,11 +2939,11 @@ tagbal02.c.
 </para>
 
 <para>
-<command>Forslag til øvelse:</command> Dette program kan med få
-modifikationer benyttes til at trække teksten ud af en sgml fil,
-og endda i en læselig formatering. Overvej, hvilke forbedringer,
-som kunne gøre denne tekstudtrækning - ascii formatering -
-endnu mere nyttig. (Jeg har ikke nogen løsning på denne øvelse -
+<command>Forslag til Ã¸velse:</command> Dette program kan med fÃ¥
+modifikationer benyttes til at trÃ¦kke teksten ud af en sgml fil,
+og endda i en lÃ¦selig formatering. Overvej, hvilke forbedringer,
+som kunne gÃ¸re denne tekstudtrÃ¦kning - ascii formatering -
+endnu mere nyttig. (Jeg har ikke nogen lÃ¸sning pÃ¥ denne Ã¸velse -
 endnu!)
 </para>
 
@@ -2954,44 +2954,44 @@ endnu!)
 <title>Tilstandsvariabel</title>
 
 <para>
-Det er lidt af en provokation at kalde det næste program for
-et filter. Man kunne lige så godt kalde det en parser eller en
-tilstandsmaskine. Det er også en lexical analyzer. Men strengt
-taget er det også et filter. Der kommer noget input ind fra (kun)
-én kilde, og afhængigt af dette spytter programmet noget andet
-ud.  Der er en årsagssammenhæng fra input til output.  Det samme
-input vil altid give det samme output.  Men det går kun den ene
+Det er lidt af en provokation at kalde det nÃ¦ste program for
+et filter. Man kunne lige sÃ¥ godt kalde det en parser eller en
+tilstandsmaskine. Det er ogsÃ¥ en lexical analyzer. Men strengt
+taget er det ogsÃ¥ et filter. Der kommer noget input ind fra (kun)
+Ã©n kilde, og afhÃ¦ngigt af dette spytter programmet noget andet
+ud.  Der er en Ã¥rsagssammenhÃ¦ng fra input til output.  Det samme
+input vil altid give det samme output.  Men det gÃ¥r kun den ene
 vej. Et bestemt output kan produceres af mange forskellige slags
 input.
 </para>
 
 <para>
-I modsætning til de tidligere eksempler er der i dette eksempel
+I modsÃ¦tning til de tidligere eksempler er der i dette eksempel
 en variabel, som husker den tilstand, vi er i.
 </para>
 
 <para>
-Og hvad er det så for et program? Et WORD count filter! Input er
+Og hvad er det sÃ¥ for et program? Et WORD count filter! Input er
 tekst, og output er blot antallet af ord. Provokation! Er det
-virkelig et filter? Ja, for det opfylder jo alle de ovenstående
+virkelig et filter? Ja, for det opfylder jo alle de ovenstÃ¥ende
 krav. Det sluger input fra en kilde og omformer det til output,
-som, ok, kan være det samme for flere forskellige slags input,
+som, ok, kan vÃ¦re det samme for flere forskellige slags input,
 men samme input -- altid samme output. Vi baserer vores program
-på en lille bemærkning i Kernighan &amp; Ritchies 
+pÃ¥ en lille bemÃ¦rkning i Kernighan &amp; Ritchies 
 version af word count<xref linkend="ex-hello-wordcount"/>: Nemlig 
-at begrebet "et ord" kan forfines, så man kan skelne mellem
-rigtige ord og tal, tegnsætning og lignende.
+at begrebet "et ord" kan forfines, sÃ¥ man kan skelne mellem
+rigtige ord og tal, tegnsÃ¦tning og lignende.
 </para>
 
 <para>
-Hvis du ikke kender det grundlæggende wordcount program, så er if
-sætningerne i dette program næsten uforståelige. Se derfor
+Hvis du ikke kender det grundlÃ¦ggende wordcount program, sÃ¥ er if
+sÃ¦tningerne i dette program nÃ¦sten uforstÃ¥elige. Se derfor
 <xref linkend="ex-hello-wordcount"/> hvis du ikke kender det.
 </para>
 
 <para>
-Programmet her starter med at være i en tilstand, som vi kalder
-HVID.  Når vi ikke har læst noget, så må vi være på HVIDt papir.
+Programmet her starter med at vÃ¦re i en tilstand, som vi kalder
+HVID.  NÃ¥r vi ikke har lÃ¦st noget, sÃ¥ mÃ¥ vi vÃ¦re pÃ¥ HVIDt papir.
 </para>
 
 <para>
@@ -3000,14 +3000,14 @@ kalder den status.
 </para>
 
 <para>
-For at gøre det lettere at læse programmet, lader vi denne
-variabel være af enum - typen. Så kan en god oversætter holde styr
-på, om vi tilskriver den andet end symbolske navne som tilhører
+For at gÃ¸re det lettere at lÃ¦se programmet, lader vi denne
+variabel vÃ¦re af enum - typen. SÃ¥ kan en god oversÃ¦tter holde styr
+pÃ¥, om vi tilskriver den andet end symbolske navne som tilhÃ¸rer
 typen. Dog kun med warnings.
 </para>
 
 <example id="ex-word-and-digit-count">
-<title>Ord - tælling</title>
+<title>Ord - tÃ¦lling</title>
 <programlisting>
 /*file ordtael.c */
 
@@ -3054,8 +3054,8 @@ int main()
     return 0;
 }
 
-/* OBS: Der er lidt flere braces i ovenstående eksempel end 
- * nødvendigt, det er i håb om bedre læselighed.
+/* OBS: Der er lidt flere braces i ovenstÃ¥ende eksempel end 
+ * nÃ¸dvendigt, det er i hÃ¥b om bedre lÃ¦selighed.
  */
 
 /* end of file ordtael.c */
@@ -3064,50 +3064,50 @@ int main()
 
 <para>
 Det er statusvariabelen, som "husker", om vi er inde i et ord
-eller ej. Og det er statusvariablen, som gør det muligt at skrive
-programmet på en <emphasis> forholdsvis </emphasis> læselig måde
-Hvis opgaven imidlertid blev forsøgt løst <emphasis> uden
-</emphasis> statusvariabel, så ville der komme endnu flere
-if-sætninger. Inde i dem måtte man så lave nogle loops med
-læsning af input, så længe vi er i et ord. Og så bliver programmet
-fuldstændigt barokt kompliceret, prøv selv!. 
+eller ej. Og det er statusvariablen, som gÃ¸r det muligt at skrive
+programmet pÃ¥ en <emphasis> forholdsvis </emphasis> lÃ¦selig mÃ¥de
+Hvis opgaven imidlertid blev forsÃ¸gt lÃ¸st <emphasis> uden
+</emphasis> statusvariabel, sÃ¥ ville der komme endnu flere
+if-sÃ¦tninger. Inde i dem mÃ¥tte man sÃ¥ lave nogle loops med
+lÃ¦sning af input, sÃ¥ lÃ¦nge vi er i et ord. Og sÃ¥ bliver programmet
+fuldstÃ¦ndigt barokt kompliceret, prÃ¸v selv!. 
 </para>
 
 <para>
 (1) Hvis vi lige er har fat i noget, der er "ikke-space" og
-tilstanden stadig siger HVID, så betyder det jo, at vores
-tilstand lige netop nu ændrer sig.  Derfor bør vi tælle antal af
-ord (eller tal, tegnsætning, etc.) op.
+tilstanden stadig siger HVID, sÃ¥ betyder det jo, at vores
+tilstand lige netop nu Ã¦ndrer sig.  Derfor bÃ¸r vi tÃ¦lle antal af
+ord (eller tal, tegnsÃ¦tning, etc.) op.
 </para>
 
 <para>
-(2) Som ord tæller vi alt, hvad der begynder med bogstaver.
+(2) Som ord tÃ¦ller vi alt, hvad der begynder med bogstaver.
 </para>
 
 <para>
-(3) Som tal tæller vi alt, hvad der begynder med cifre.
+(3) Som tal tÃ¦ller vi alt, hvad der begynder med cifre.
 </para>
 
 <para>
-(4) Læg mærke til, at ETHVERT skilletegn udløser en
-tilstandsændring til PUNC, fordi denne sætning er sideordnet med
-den if, der står lige efter den (1) mærkede else.
+(4) LÃ¦g mÃ¦rke til, at ETHVERT skilletegn udlÃ¸ser en
+tilstandsÃ¦ndring til PUNC, fordi denne sÃ¦tning er sideordnet med
+den if, der stÃ¥r lige efter den (1) mÃ¦rkede else.
 </para>
 
 <para>
-Hvis indrykningen i dette program bliver smadret, så er det
-komplet umuligt at forstå meningen med det.
+Hvis indrykningen i dette program bliver smadret, sÃ¥ er det
+komplet umuligt at forstÃ¥ meningen med det.
 </para>
 
 <para>
-Programmet er udmærket til at danne sig et skøn over forholdet
+Programmet er udmÃ¦rket til at danne sig et skÃ¸n over forholdet
 mellem tal og ord i en artikel.
 </para>
 
 <para>
 Ordtael.c er i stand til at taelle et funktionskald
 som f.eks. qwerty(6000) som et ord, et tal og 2 andre tegn. Til
-gengæld tæller det 123Mb som et tal (uden ord).
+gengÃ¦ld tÃ¦ller det 123Mb som et tal (uden ord).
 </para>
 
 <programlisting role="C">
@@ -3119,10 +3119,10 @@ Antal: chr 9, ord: 1, tal 1, andet 3, lin. 1
 </programlisting>
 
 <para>
-Hvis vi skal forfine programmet, så er det klogt at skifte taktik.
-Løsningen ovenfor skalerer ikke godt, når antallet af tilstande
+Hvis vi skal forfine programmet, sÃ¥ er det klogt at skifte taktik.
+LÃ¸sningen ovenfor skalerer ikke godt, nÃ¥r antallet af tilstande
 vokser, og input indeholder mange flere kategorier. En
-tilstandstabel kan bedre håndtere opgaven.
+tilstandstabel kan bedre hÃ¥ndtere opgaven.
 Se <xref linkend="c-parser-tilstandsmaskine"/>.
 </para>
 
@@ -3130,28 +3130,28 @@ Se <xref linkend="c-parser-tilstandsmaskine"/>.
 </sect1>
 
 <sect1 id="fejl-og-haandtering">
-<title>Fejl og håndteringen af dem.</title>
+<title>Fejl og hÃ¥ndteringen af dem.</title>
 
 <sect2 id="fejl-kategorier">
 <title>Hvilke slags fejl er interessante</title>
 <para>
-Det er egentlig ikke så interessant, set fra en programmørs
+Det er egentlig ikke sÃ¥ interessant, set fra en programmÃ¸rs
 synspunkt, om en disk bryder sammen. Det kan man nemlig ikke
-rigtig gøre noget ved, når det er sket. Den, der skriver drivere
-til styresystemet, ville måske nok kunne lave noget programmel,
-som forudsagde, at hardwaren trængte til service eller
-udskiftning. Det er indenfor mulighedernes grænser.
+rigtig gÃ¸re noget ved, nÃ¥r det er sket. Den, der skriver drivere
+til styresystemet, ville mÃ¥ske nok kunne lave noget programmel,
+som forudsagde, at hardwaren trÃ¦ngte til service eller
+udskiftning. Det er indenfor mulighedernes grÃ¦nser.
 </para>
 
 <para>
 Hvis vi skriver et almindeligt filteringsprogram, f.eks. et,
 som konverterer fra MIME/html characters til extended ascii eller
-rettere UTF-8, så bør vi altså ikke begynde at lave tjek af
-CPU-temperatur, disktilstand etc. Det hører hjemme et andet sted
+rettere UTF-8, sÃ¥ bÃ¸r vi altsÃ¥ ikke begynde at lave tjek af
+CPU-temperatur, disktilstand etc. Det hÃ¸rer hjemme et andet sted
 og er ikke interessant for vores filterprogram.
 </para>
 <figure id="fig-fejl-fil-mangler" float="1">
-<title>Eksempel på fejlhåndtering, informativ besked</title>
+<title>Eksempel pÃ¥ fejlhÃ¥ndtering, informativ besked</title>
 <graphic fileref="err2.&magic;"  scale="60"></graphic>
 </figure>
 
@@ -3160,10 +3160,10 @@ og er ikke interessant for vores filterprogram.
 
 
 <sect1 id="outformat1">
-<title>Flere små programmer og øvelsesforslag.</title>
+<title>Flere smÃ¥ programmer og Ã¸velsesforslag.</title>
 <para>
-For at demonstrere styrken af små 10-24 linjers programmer
-("Hallo-programmer") kommer her en serie sådanne små særlinge.
+For at demonstrere styrken af smÃ¥ 10-24 linjers programmer
+("Hallo-programmer") kommer her en serie sÃ¥danne smÃ¥ sÃ¦rlinge.
 </para>
 
 <sect2 id="hello-tal-format">
@@ -3178,7 +3178,7 @@ listing af tallene fra 0 til 7, inverteret og som 2's complement.
 <title>Tallene fra 0 til 7 i hexadecimal notation.</title>
 <programlisting role="C">
 /* bitinvert.c viser hexadeximalt tallene fra 0 - 8  */
-/* og desuden invertering, og såkaldt 2-s complement */
+/* og desuden invertering, og sÃ¥kaldt 2-s complement */
 
 #include &lt;stdio.h>
 
@@ -3211,16 +3211,16 @@ tilstande, enten er den i HVID tilstand, eller i SORT.
 </para>
 
 <para>
-Hvis den er i HVID tilstand, har den læst et bogstav, som var
+Hvis den er i HVID tilstand, har den lÃ¦st et bogstav, som var
 whitespace, d.v.s. typisk space eller newline eller tab. Hvis den
-er i SORT tilstand, har den læst et tegn, som kræver tryksværte -
+er i SORT tilstand, har den lÃ¦st et tegn, som krÃ¦ver tryksvÃ¦rte -
 eller rettere, et, som ikke er et whitespace tegn.
 </para>
 <para>
-Programmet skelner altså ikke mellem ord og tal eller
-tegnsætning. Det anser bogstaver mellem to spaces for at være et
-ord! Så simpel en ord-tællingsmekanisme kan såmænd da være meget
-anvendelig i mange sammenhæng, 
+Programmet skelner altsÃ¥ ikke mellem ord og tal eller
+tegnsÃ¦tning. Det anser bogstaver mellem to spaces for at vÃ¦re et
+ord! SÃ¥ simpel en ord-tÃ¦llingsmekanisme kan sÃ¥mÃ¦nd da vÃ¦re meget
+anvendelig i mange sammenhÃ¦ng, 
 f.eks. <literal>echo * | ordtael</literal> vil vise, hvor mange filer, 
 der er i det
 aktuelle katalog.  Det er grundlaget for det lidt mere avancerede
@@ -3229,7 +3229,7 @@ skelne mellem ord og tal og skilletegn.
 </para>
 
 <example id="ex-hello-wordcount">
-<title>Simpel ordtælling</title>
+<title>Simpel ordtÃ¦lling</title>
 <programlisting>
 /*file wc.c */
 
@@ -3268,21 +3268,21 @@ int main()
 </example>
 
 <para>
-Læg mærke til, at programmet altid tæller characters, når der er
-læst en. Hvis det er en newline, så tæller vi linjer. Klart nok.
+LÃ¦g mÃ¦rke til, at programmet altid tÃ¦ller characters, nÃ¥r der er
+lÃ¦st en. Hvis det er en newline, sÃ¥ tÃ¦ller vi linjer. Klart nok.
 Hvis det nu er en slags space (eller newline, tab, backspace,
-vertical tab, formfeed ...) så lader vi den gå i HVID-tilstand.
+vertical tab, formfeed ...) sÃ¥ lader vi den gÃ¥ i HVID-tilstand.
 </para>
 
 <para>
-Den efterfølgende ELSE er kernepunktet for forståelse. Hvad ved
-vi, hvis vi havner i ELSE-sætningen? Jo, vi ved, at vores nys
-indlæste character IKKE var hvid.
+Den efterfÃ¸lgende ELSE er kernepunktet for forstÃ¥else. Hvad ved
+vi, hvis vi havner i ELSE-sÃ¦tningen? Jo, vi ved, at vores nys
+indlÃ¦ste character IKKE var hvid.
 </para>
 
 <para>
-Hvad ved vi så, hvis STATUS er lig med HVID, og vores nys
-indlæste bogstav var sort?
+Hvad ved vi sÃ¥, hvis STATUS er lig med HVID, og vores nys
+indlÃ¦ste bogstav var sort?
 </para>
 
 <para>
@@ -3290,26 +3290,26 @@ Joda, ... giv dig tid!
 </para>
 
 <para>
-Så ved vi, at det foregående bogstav var hvidt (altså space) og
-at det nuværende er sort, altså, det første bogstav i et ord. Så
-derfor skifter vi tilstand til sort og tæller det nye ord med.
+SÃ¥ ved vi, at det foregÃ¥ende bogstav var hvidt (altsÃ¥ space) og
+at det nuvÃ¦rende er sort, altsÃ¥, det fÃ¸rste bogstav i et ord. SÃ¥
+derfor skifter vi tilstand til sort og tÃ¦ller det nye ord med.
 </para>
 
 <para>
-Så vores tilstandsvariabel <literal>status</literal> er meget
-praktisk, fordi den kan huske for os, hvad det foregående bogstav
+SÃ¥ vores tilstandsvariabel <literal>status</literal> er meget
+praktisk, fordi den kan huske for os, hvad det foregÃ¥ende bogstav
 var, eller i bredere forstand, hvilken slags bogstav det var, og
-dermed hvilken tilstand vores tællemaskine var i.
+dermed hvilken tilstand vores tÃ¦llemaskine var i.
 </para>
 
 <para>
-Det er et program, som er sindssygt svært at forstå for en
-begynder, som heller ikke har erfaring med andre sprog. Sådan er
-det forresten altid når if-sætninger gror oven i hinanden. Hvis
-du har arbejdet dig igennem læsning af programmet og - bedre -
-har fået det til at køre, evt. med dine egne tilføjelser, så du
-kan se, hvad der sker undervejs, så har du taget et stort skridt
-fremad indenfor programmering (og logisk tænkning).
+Det er et program, som er sindssygt svÃ¦rt at forstÃ¥ for en
+begynder, som heller ikke har erfaring med andre sprog. SÃ¥dan er
+det forresten altid nÃ¥r if-sÃ¦tninger gror oven i hinanden. Hvis
+du har arbejdet dig igennem lÃ¦sning af programmet og - bedre -
+har fÃ¥et det til at kÃ¸re, evt. med dine egne tilfÃ¸jelser, sÃ¥ du
+kan se, hvad der sker undervejs, sÃ¥ har du taget et stort skridt
+fremad indenfor programmering (og logisk tÃ¦nkning).
 </para>
 </sect2>
 </sect1>
@@ -3317,33 +3317,33 @@ fremad indenfor programmering (og logisk tænkning).
 
 
 <sect1 id="cprog-oevelser">
-<title id="OV1">Øvelser</title>
+<title id="OV1">Ã˜velser</title>
 
 
 <para>
 Skriv frame2 om til frame2a, hvor du selv angiver prototypen
-for puts, og se, om det oversætter og kører lige så godt som
+for puts, og se, om det oversÃ¦tter og kÃ¸rer lige sÃ¥ godt som
 frame2.c, der jo bruger headerfilen &lt;stdio.h>
 </para>
 
 <sect2 id="cprog-hello-beregninger">
-<title>Forslag til beregningsøvelser</title>
+<title>Forslag til beregningsÃ¸velser</title>
 <para>
-Skriv procent.c om, så du også udskriver indholdet af
+Skriv procent.c om, sÃ¥ du ogsÃ¥ udskriver indholdet af
 variablene kroner og procent.
 </para>
 
 <para>
-Skriv procent.c om, sådan at den beregner 99% af 100
-millioner (jo jo, det kan man gøre i hovedet, men det er for at
-gøre det nemt at kontrollere resultatet!) Dette er ikke
+Skriv procent.c om, sÃ¥dan at den beregner 99% af 100
+millioner (jo jo, det kan man gÃ¸re i hovedet, men det er for at
+gÃ¸re det nemt at kontrollere resultatet!) Dette er ikke
 en helt triviel opgave.
 </para>
 
 <para>
 Lav en version af programmet, som selv kan finde ud af, om
-der er overflow på beregningen. Hint: resultat / procent *
-kroner. For den viderekomne kan opgaven løses ved, at man
+der er overflow pÃ¥ beregningen. Hint: resultat / procent *
+kroner. For den viderekomne kan opgaven lÃ¸ses ved, at man
 benytter en assemblerinstruction, som tjekker for overflow
 flaget.
 </para>

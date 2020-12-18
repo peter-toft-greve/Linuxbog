@@ -1,10 +1,10 @@
 <!-- $Id$ -->
-<!-- Dette er en "fusker-fil" der er her for at "samling" kan blive læst af bin/titleabstract.pl og komme med i oversigten. -->
+<!-- Dette er en "fusker-fil" der er her for at "samling" kan blive lÃ¦st af bin/titleabstract.pl og komme med i oversigten. -->
 
-   <title>Linux - Friheden til at skrive bøger</title>
+   <title>Linux - Friheden til at skrive bÃ¸ger</title>
 
    <abstract>
     <para>
-      En pakke med alle bøgerne i.
+      En pakke med alle bÃ¸gerne i.
     </para>
    </abstract>

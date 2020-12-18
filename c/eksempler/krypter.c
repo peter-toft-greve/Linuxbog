@@ -1,6 +1,6 @@
 
 
-static char *keystring = "Under træerne var der stille og roligt.";
+static char *keystring = "Under trÃ¦erne var der stille og roligt.";
 static int inuse;
 static char *mv;
 static int keylen;

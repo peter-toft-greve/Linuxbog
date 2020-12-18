@@ -1,6 +1,6 @@
 
-/* program, som afprøver gcc's reaktionsevne på duplicate
- * external definitions samt på erklæring af externs, der ikke
+/* program, som afprÃ¸ver gcc's reaktionsevne pÃ¥ duplicate
+ * external definitions samt pÃ¥ erklÃ¦ring af externs, der ikke
  * har nogen tilsvarende "definition".
  */
 

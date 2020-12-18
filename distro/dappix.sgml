@@ -10,9 +10,9 @@
 
 
  <para>
-  En af de Linux-distributioner, som har fået meget ros og er meget
+  En af de Linux-distributioner, som har fÃ¥et meget ros og er meget
   omtalt er <emphasis>Knoppix</emphasis>. Det er en live-cdrom distribution lavet af
-  tyskeren Klaus Knopper. Den findes på <ulink
+  tyskeren Klaus Knopper. Den findes pÃ¥ <ulink
   url="http://www.knopper.net/knoppix/">http://www.knopper.net/knoppix/</ulink>.
 </para>
 
@@ -22,48 +22,48 @@
 </figure>
 
   <para>
-  Man henter en cdrom-fil, brænder denne til en cdrom-skive, og starter
-  maskinen. Herefter køres alt fra cdrom uden at brugeren 
-  installer noget på harddisken. Knoppix indeholder et fuldt installeret Linux-system
-  med system-programmer, netværksprogrammer og en masse desktop-programmer. 
-  Alt sammen styres bekvemt fra KDE-brugergrænsefladen. Man kan endda køre 
-  kontorpakken OpenOffice.org. Har du en router med en DHCP-server, så får
+  Man henter en cdrom-fil, brÃ¦nder denne til en cdrom-skive, og starter
+  maskinen. Herefter kÃ¸res alt fra cdrom uden at brugeren 
+  installer noget pÃ¥ harddisken. Knoppix indeholder et fuldt installeret Linux-system
+  med system-programmer, netvÃ¦rksprogrammer og en masse desktop-programmer. 
+  Alt sammen styres bekvemt fra KDE-brugergrÃ¦nsefladen. Man kan endda kÃ¸re 
+  kontorpakken OpenOffice.org. Har du en router med en DHCP-server, sÃ¥ fÃ¥r
   Knoppix automatisk adgang til internettet.
  </para>
 
 <para>
-<emphasis>Tip:</emphasis> Kan man ikke lide KDE-brugergrænsefladen, men foretrækker
-Gnome, så led efter GNOPPIX på <ulink url="http://www.gnoppix.org">http://www.gnoppix.org</ulink>.
+<emphasis>Tip:</emphasis> Kan man ikke lide KDE-brugergrÃ¦nsefladen, men foretrÃ¦kker
+Gnome, sÃ¥ led efter GNOPPIX pÃ¥ <ulink url="http://www.gnoppix.org">http://www.gnoppix.org</ulink>.
 </para>
 
  <sect1 id="distro-dappix-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Dappix</secondary>
   </indexterm>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Knoppix</secondary>
   </indexterm>
 
   <para>
-   Målgruppen for Knoppix er folk som gerne vil se, prøve og lege med
+   MÃ¥lgruppen for Knoppix er folk som gerne vil se, prÃ¸ve og lege med
    Linux - eller systemadministratoren som gerne vil have alle de
-   vante værktøjer lige ved hånden på en vilkårlig maskine.
+   vante vÃ¦rktÃ¸jer lige ved hÃ¥nden pÃ¥ en vilkÃ¥rlig maskine.
   </para>
 
 
 <para> 
-  Live distributioner som Knoppix og Dappix kræver en rimelig ny maskine for at være interessant. 
-  cdrom-drevet skal være over 20x hastighed og alt under 300 MHz er tungt. Har du 
-  en mindre maskine, så se nærmere på <emphasis>Damn Small Linux</emphasis> i stedet.
+  Live distributioner som Knoppix og Dappix krÃ¦ver en rimelig ny maskine for at vÃ¦re interessant. 
+  cdrom-drevet skal vÃ¦re over 20x hastighed og alt under 300 MHz er tungt. Har du 
+  en mindre maskine, sÃ¥ se nÃ¦rmere pÃ¥ <emphasis>Damn Small Linux</emphasis> i stedet.
 </para>
 
 <figure id="dappixdesktop-fig" float="1">
-<title>Knoppix/Dappix giver en KDE desktop, hvor alt køres fra cdrom</title>
+<title>Knoppix/Dappix giver en KDE desktop, hvor alt kÃ¸res fra cdrom</title>
 <graphic fileref="dappixdesktop.&magic;" scale="60"></graphic>
 </figure>
 
@@ -71,13 +71,13 @@ Gnome, så led efter GNOPPIX på <ulink url="http://www.gnoppix.org">http://www.gn
 <title>Dappix er en dansk Knoppix</title>
  <para>
   En af de meget gode ting ved Knoppix, er at den kan modificeres. 
-  Man kan (og må) pakke den ud på egen harddisk, ændre f.eks. så den
-  som standard kører med dansk opsætning, og herefter kan man pakke det rettede indhold ned
-  igen. Det har bl.a. Hans Schou og Claus Henriksen fra SSLUG gjort og på 
+  Man kan (og mÃ¥) pakke den ud pÃ¥ egen harddisk, Ã¦ndre f.eks. sÃ¥ den
+  som standard kÃ¸rer med dansk opsÃ¦tning, og herefter kan man pakke det rettede indhold ned
+  igen. Det har bl.a. Hans Schou og Claus Henriksen fra SSLUG gjort og pÃ¥ 
   <ulink url="http://tyge.sslug.dk/knoppix/">http://tyge.sslug.dk/knoppix/</ulink> findes 
-  en version af Knoppix med danske menuer mv. Samme personer har også taget skridtet videre og 
-  strippet Knoppix for en nogle pakker og herefter tilføjet flere programmer til uddannelse af
-  børn i samarbejde med <ulink url="http://gnuskole.dk">http://gnuskole.dk</ulink>. 
+  en version af Knoppix med danske menuer mv. Samme personer har ogsÃ¥ taget skridtet videre og 
+  strippet Knoppix for en nogle pakker og herefter tilfÃ¸jet flere programmer til uddannelse af
+  bÃ¸rn i samarbejde med <ulink url="http://gnuskole.dk">http://gnuskole.dk</ulink>. 
   Dette er blevet til <emphasis>Dappix</emphasis>, som kan hentes fra 
   <ulink url="http://tyge.sslug.dk/knoppix/">http://tyge.sslug.dk/knoppix/</ulink>. 
  </para>
@@ -99,8 +99,8 @@ Gnome, så led efter GNOPPIX på <ulink url="http://www.gnoppix.org">http://www.gn
   </indexterm>
 
 <para>
-Knoppix/Dappix køres fra cdrom, men det er faktisk muligt at installere
-den på harddisken hvis hurtige tilgang til programmet ønskes.
+Knoppix/Dappix kÃ¸res fra cdrom, men det er faktisk muligt at installere
+den pÃ¥ harddisken hvis hurtige tilgang til programmet Ã¸nskes.
 </para>
 
 <figure id="dappixboot-fig" float="1">
@@ -112,16 +112,16 @@ den på harddisken hvis hurtige tilgang til programmet ønskes.
 <title>Fra Knoppix til Debian</title>
 
  <para>
-  Knoppix er Debian-baseret. Debian har ry for at være en god stabil
-  Linux-distribution, men svær at installere og har svært ved at genkende hardware.
-  Det gælder heldigvis ikke for Knoppix. Den gør det godt.
+  Knoppix er Debian-baseret. Debian har ry for at vÃ¦re en god stabil
+  Linux-distribution, men svÃ¦r at installere og har svÃ¦rt ved at genkende hardware.
+  Det gÃ¦lder heldigvis ikke for Knoppix. Den gÃ¸r det godt.
  </para>  
 
  <para>
   Man kan installere Knoppix/Dappix til harddisk hvis man vi have en nem
-  Debian-installation. Det kræver at man har rimelig idé om hvad
+  Debian-installation. Det krÃ¦ver at man har rimelig idÃ© om hvad
   Linux-partitioner er.
-  Man åbner K-&gt;KNOPPIX-&gt;Root Shell og udfører kommandoen
+  Man Ã¥bner K-&gt;KNOPPIX-&gt;Root Shell og udfÃ¸rer kommandoen
 </para>
 
 <screen>
@@ -129,7 +129,7 @@ knx-hdinstall <literal>&lt;retur&gt;</literal>
 </screen>
 
  <para>
-  Efter ca. en halv time så kan man genstarte maskinen, og man har herefter en 
+  Efter ca. en halv time sÃ¥ kan man genstarte maskinen, og man har herefter en 
   Debian GNU/Linux-maskine.
  </para>
 
@@ -144,31 +144,31 @@ knx-hdinstall <literal>&lt;retur&gt;</literal>
 <title>Brugen af Knoppix og Dappix</title>
 <para>
 Det er fedt at starte Linux op hvor som helst. 
-Det eneste negative er at den kræver en rimelig ny
+Det eneste negative er at den krÃ¦ver en rimelig ny
 computer. 
 </para>
 
 
 <para>
-Dappix udmærker sig specifikt til skolebrug, idet der er 
+Dappix udmÃ¦rker sig specifikt til skolebrug, idet der er 
 en god del programmer til undervisning i folkeskolen.
 </para>
 
 
 <para>
 <emphasis>Tip:</emphasis> Knoppix/Dappix har en glimrende
-mulighed for at gemme ens opsætning og filer på KDE desktoppen på
-en USB-nøglering, (windows-)harddisk eller floppy-disk. 
+mulighed for at gemme ens opsÃ¦tning og filer pÃ¥ KDE desktoppen pÃ¥
+en USB-nÃ¸glering, (windows-)harddisk eller floppy-disk. 
 </para>
 
 
 <figure id="distro-dappix-config-fig" float="1">
-<title>Man kan gemme opsætning af netværk, postprogram og egne filer</title>
+<title>Man kan gemme opsÃ¦tning af netvÃ¦rk, postprogram og egne filer</title>
 <graphic fileref="dappixconfig.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-Man kan herefter ved opstart af Knoppix eller Dappix ved det første 
+Man kan herefter ved opstart af Knoppix eller Dappix ved det fÃ¸rste 
 opstartsbillede skrive
 </para>
 
@@ -177,7 +177,7 @@ knoppix myconfig=scan
 </screen>
 
 <para>
-Hermed indlæses opsætning fra USB-nøgleringen.
+Hermed indlÃ¦ses opsÃ¦tning fra USB-nÃ¸gleringen.
 </para>
 
 </sect1>
@@ -190,7 +190,7 @@ Knoppix og Dappix er rigtig gode - kan varmt anbefales.
 </para>
 
 <para>
-Vil du læse mere om Dappix (det meste af teksten dækker også Knoppix), så se 
+Vil du lÃ¦se mere om Dappix (det meste af teksten dÃ¦kker ogsÃ¥ Knoppix), sÃ¥ se 
 <ulink url="http://tyge.sslug.dk/knoppix/begynder_dappix.pdf">http://tyge.sslug.dk/knoppix/begynder_dappix.pdf</ulink>.
 </para>
 

@@ -14,36 +14,36 @@ udvikling af internet og webbaserede programmer.
 </para>
 
 <para>
-Dets udvikling begyndte  i det sene efterår i 1989. I foråret 1991 blev
-Python almindelig tilgængelig.
+Dets udvikling begyndte  i det sene efterÃ¥r i 1989. I forÃ¥ret 1991 blev
+Python almindelig tilgÃ¦ngelig.
 </para>
 
 <para>
-Den første bog overhovedet om sproget udkom i begyndelsen af 1996,
-herværende bog er mig bekendt den første på dansk. I 1999 regnede en
+Den fÃ¸rste bog overhovedet om sproget udkom i begyndelsen af 1996,
+hervÃ¦rende bog er mig bekendt den fÃ¸rste pÃ¥ dansk. I 1999 regnede en
 ledende industri observer med at der var omkring 300.000, der brugte
-Python. Det tal må skønnes at være meget større i dag.
+Python. Det tal mÃ¥ skÃ¸nnes at vÃ¦re meget stÃ¸rre i dag.
 </para>
 
 <para>
 Bl.a. er man meget hurtig til at frigive eventuelle rettelser, ligesom
-det er særdeles let at få besvaret spørgsmål, såfremt man mener at have
-konstateret fejl i sproget. Fejl der meget let kan vise sig at være
+det er sÃ¦rdeles let at fÃ¥ besvaret spÃ¸rgsmÃ¥l, sÃ¥fremt man mener at have
+konstateret fejl i sproget. Fejl der meget let kan vise sig at vÃ¦re
 reelle forbedringer i forbindelse med overgangen til bl.a. unicode (de
-større tegntabeller).
+stÃ¸rre tegntabeller).
 </para>
 
 <para>
-Jeg nævner dette allerede her, fordi der kan være meget stor forskel på,
-hvordan koden skulle skrives før version 2.2 og efter. Der kom nemlig en
+Jeg nÃ¦vner dette allerede her, fordi der kan vÃ¦re meget stor forskel pÃ¥,
+hvordan koden skulle skrives fÃ¸r version 2.2 og efter. Der kom nemlig en
 meget stor forbedring af sproget. I skrivende stund er det vist mere end
-svært at finde større fejl, selv behandlingen af de dansk/norske
-specialtegn er kommet helt på plads.
+svÃ¦rt at finde stÃ¸rre fejl, selv behandlingen af de dansk/norske
+specialtegn er kommet helt pÃ¥ plads.
 </para>
 
 <para>
-Med version 2.3 skulle Python nu kunne håndtere 64 bits tegn - i den
-første ASCII tegntabel kunne et tegn, en karakters nummer være op til 8
+Med version 2.3 skulle Python nu kunne hÃ¥ndtere 64 bits tegn - i den
+fÃ¸rste ASCII tegntabel kunne et tegn, en karakters nummer vÃ¦re op til 8
 bit lang. Fra og med Python version 2.4 vil Python droppe 8 bits
 tegntabellen totalt.
 </para>
@@ -53,9 +53,9 @@ tegntabellen totalt.
 <title>Hvorfor bruge Python?</title>
 
 <para>
-Hvorfor i al verden skulle man interessere sig for Python, når der i
+Hvorfor i al verden skulle man interessere sig for Python, nÃ¥r der i
 forvejen er en lang stribe af rigtig gode gamle og velfungerende
-computersprog at gå til? Lad mig som eksempler nævne:
+computersprog at gÃ¥ til? Lad mig som eksempler nÃ¦vne:
 </para>
 
 <orderedlist>
@@ -75,23 +75,23 @@ Linux til Windows og omvendt.
 
 <listitem>
 <para>
-Er meget let at lære - også for begyndere indenfor brugen af
+Er meget let at lÃ¦re - ogsÃ¥ for begyndere indenfor brugen af
 computersprog i det hele taget.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Python kombinerer bemærkelsesværdig styrke med en meget klar syntaks
-(læs: måde at gøre tingene på).
+Python kombinerer bemÃ¦rkelsesvÃ¦rdig styrke med en meget klar syntaks
+(lÃ¦s: mÃ¥de at gÃ¸re tingene pÃ¥).
 </para>
 </listitem>
 
 <listitem>
 <para>
-I Python kan du lære objekt-orienteret programmering (programmering og
-anvendelse af vinduer, knapper og den slags) uden af forstå mange af de
-komplekse detaljer forinden. Senere kan du så om ønsket sætte dig ind i
+I Python kan du lÃ¦re objekt-orienteret programmering (programmering og
+anvendelse af vinduer, knapper og den slags) uden af forstÃ¥ mange af de
+komplekse detaljer forinden. Senere kan du sÃ¥ om Ã¸nsket sÃ¦tte dig ind i
 teknikken bag konstruktionen.
 </para>
 </listitem>
@@ -99,11 +99,11 @@ teknikken bag konstruktionen.
 <listitem>
 <para>
 Python er et begyndervenligt computersprog, der automatisk styrer mange
-af de komplekse detalier, der foregår bag scenen. Det gør det muligt
-for dig at bruge kræfterne på de overordnede ting i dit projekt uden at
-skulle grave i dybden for hvert eneste skridt. Lad os også her foregribe
-begivenhederne lidt og se følgende eksempel, der nok også kan
-interessere den erfarne Java, C++ eller Delphi programmør.
+af de komplekse detalier, der foregÃ¥r bag scenen. Det gÃ¸r det muligt
+for dig at bruge krÃ¦fterne pÃ¥ de overordnede ting i dit projekt uden at
+skulle grave i dybden for hvert eneste skridt. Lad os ogsÃ¥ her foregribe
+begivenhederne lidt og se fÃ¸lgende eksempel, der nok ogsÃ¥ kan
+interessere den erfarne Java, C++ eller Delphi programmÃ¸r.
 </para>
 <para>
 <screen>
@@ -112,12 +112,12 @@ interessere den erfarne Java, C++ eller Delphi programmør.
 </screen>
 </para>
 <para>
-Egentlig burde der nok have været 1 programlinje mere i det viste
-eksempel. Den skulle i så fald hedde widget.pack()
-Funktionen pack() stiller objektets bestanddele på plads på
-udskriftsenheden (skærmen). Men i dette tilfælde er der ikke noget at
-stille på plads, så de 2 programlinjer er tilstrækkelige. Du kan lave
-nøjagtig samme vindue med:
+Egentlig burde der nok have vÃ¦ret 1 programlinje mere i det viste
+eksempel. Den skulle i sÃ¥ fald hedde widget.pack()
+Funktionen pack() stiller objektets bestanddele pÃ¥ plads pÃ¥
+udskriftsenheden (skÃ¦rmen). Men i dette tilfÃ¦lde er der ikke noget at
+stille pÃ¥ plads, sÃ¥ de 2 programlinjer er tilstrÃ¦kkelige. Du kan lave
+nÃ¸jagtig samme vindue med:
 </para>
 <para>
 <screen>
@@ -126,7 +126,7 @@ med  Entry:
 >>> barn = Entry()
 >>> barn.pack()
 
-eller med Text (og en lang række andre objekter):
+eller med Text (og en lang rÃ¦kke andre objekter):
 >>> from Tkinter import Text
 >>> barn = Text()
 >>> barn.pack()
@@ -136,25 +136,25 @@ eller med Text (og en lang række andre objekter):
 </screen>
 </para>
 <para>
-Læg allerede her mærke til forskellen på 2 ting. 1: Det du formentlig
+LÃ¦g allerede her mÃ¦rke til forskellen pÃ¥ 2 ting. 1: Det du formentlig
 havde forventet from Tkinter import Frame er blevet til from Tkinter
-import * (her sker det for at kunne udnytte parameterværdierne i pack)
-og 2: funktionen barn.pack() er blevet flyttet til Frame() og har fået
+import * (her sker det for at kunne udnytte parametervÃ¦rdierne i pack)
+og 2: funktionen barn.pack() er blevet flyttet til Frame() og har fÃ¥et
 2 parametre (argumenter). Det sker for at give Frame arvingen barn
-mulighed for at kunne udvides (sker med expand = YES) og det i både
+mulighed for at kunne udvides (sker med expand = YES) og det i bÃ¥de
 vandret og lodret retning eller med andre ord til at kunne udfylde hele
-skærmen. Frame objektet er en kontainer, hvori alle andre grafiske
-objekter som tekstbokse, knapper, labels og mange andre kan indsættes.
-Dem er der jo ingen af i eksemplet her, så Frame().pack(expand = YES,
-fill = BOTH) virker helt på samme måde, som når du klikker på knappen
-længst til venstre i vinduets øverste højre hjørne. Den får vinduet til
-at klappe sammen til dets mindst mulige størrelse. expand = YES giver
+skÃ¦rmen. Frame objektet er en kontainer, hvori alle andre grafiske
+objekter som tekstbokse, knapper, labels og mange andre kan indsÃ¦ttes.
+Dem er der jo ingen af i eksemplet her, sÃ¥ Frame().pack(expand = YES,
+fill = BOTH) virker helt pÃ¥ samme mÃ¥de, som nÃ¥r du klikker pÃ¥ knappen
+lÃ¦ngst til venstre i vinduets Ã¸verste hÃ¸jre hjÃ¸rne. Den fÃ¥r vinduet til
+at klappe sammen til dets mindst mulige stÃ¸rrelse. expand = YES giver
 rammen (the frame - kontaineren)  mulighed for at kunne udvides efter
-behov, men her der ikke behov (der skal ikke sættes andre komponenter
-ind i kontaineren). Hvis der senere sættes et eller flere af den nævnte
+behov, men her der ikke behov (der skal ikke sÃ¦ttes andre komponenter
+ind i kontaineren). Hvis der senere sÃ¦ttes et eller flere af den nÃ¦vnte
 og tilsvarende objekter ind i rammen (the Frame), vil den blive udvidet
-efter behov lige så længe der er plads til objekterne i det givne
-skærmareal. Er der ikke det, vil objekterne ganske enkelt ikke blive
+efter behov lige sÃ¥ lÃ¦nge der er plads til objekterne i det givne
+skÃ¦rmareal. Er der ikke det, vil objekterne ganske enkelt ikke blive
 viste.
 </para>
 
@@ -164,35 +164,35 @@ viste.
 </figure>
 
 <para>
-Naturligvis har de to vinduer nøjagtig de samme åbne/lukke muligheder
+Naturligvis har de to vinduer nÃ¸jagtig de samme Ã¥bne/lukke muligheder
 m.v. som du kender dem fra f.eks. internet browsere i Windows. Det kan
-da kaldes objektorienteret programmering, så det forslår. Alle vinduer,
-knapper og andre normale objekter er forprogrammerede, så du direkte
-kan bruge dem og selvfølgelig tilpasse dem efter dit behov i det givne
-øjeblik. I C++ skal du skrive masser af programlinjer for at opnå det
-tilsvarende. Det er i øvrigt meget let at integrere Python og C++ i
+da kaldes objektorienteret programmering, sÃ¥ det forslÃ¥r. Alle vinduer,
+knapper og andre normale objekter er forprogrammerede, sÃ¥ du direkte
+kan bruge dem og selvfÃ¸lgelig tilpasse dem efter dit behov i det givne
+Ã¸jeblik. I C++ skal du skrive masser af programlinjer for at opnÃ¥ det
+tilsvarende. Det er i Ã¸vrigt meget let at integrere Python og C++ i
 hinanden.
 </para>
 <para>
 Noget af det fornemmeste ved OOP (objekt orienteret programmering) er
 genbrugen. Med de tre viste eksempler har du allerede set, at Python
-har fremragende egenskaber også på dette område, for naturligvis kan
-koden til et fuld færdigt vindue umuligt samles og udføres i de 2-3
-programlinjer, det enkelte eksempel indeholder. Der skal mange gange så
-megen koden til. Hvis ikke Python besad evnen til genbrug, så skulle det
-meget store program, der skal til for at oprette det fuldt færdige
-vindue udvikles hver eneste gang, vinduet skulle bruges - altså 3 gange
-alene til de viste eksempler. Det ville blive kæmpeprogrammer, der i
-virkeligheden ville være næsten uanvendelige grundet det enorme omfang.
-Koden til det viste eksempel og til en række andre er indeholdt i Widget
+har fremragende egenskaber ogsÃ¥ pÃ¥ dette omrÃ¥de, for naturligvis kan
+koden til et fuld fÃ¦rdigt vindue umuligt samles og udfÃ¸res i de 2-3
+programlinjer, det enkelte eksempel indeholder. Der skal mange gange sÃ¥
+megen koden til. Hvis ikke Python besad evnen til genbrug, sÃ¥ skulle det
+meget store program, der skal til for at oprette det fuldt fÃ¦rdige
+vindue udvikles hver eneste gang, vinduet skulle bruges - altsÃ¥ 3 gange
+alene til de viste eksempler. Det ville blive kÃ¦mpeprogrammer, der i
+virkeligheden ville vÃ¦re nÃ¦sten uanvendelige grundet det enorme omfang.
+Koden til det viste eksempel og til en rÃ¦kke andre er indeholdt i Widget
 klassen. Label, Entry, Text og Frame er alle subklasser i Widget.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Python er rygraden i Jython. Det betyder, at en større eller mindre
-del at et Jython program er og fortsat vil være Python. I Jython er det
+Python er rygraden i Jython. Det betyder, at en stÃ¸rre eller mindre
+del at et Jython program er og fortsat vil vÃ¦re Python. I Jython er det
 ofte lettere at udvikle eksempelvis Java applets end det er i selve
 Java. Applets kan bruges som integrerede dele af HTML, XHTML, XML
 sprogene til hjemmesider.
@@ -201,15 +201,15 @@ sprogene til hjemmesider.
 
 <listitem>
 <para>
-I Linux taler man ofte om hele programpakken med de førnævnte
+I Linux taler man ofte om hele programpakken med de fÃ¸rnÃ¦vnte
 programpakker som Linux. Det er forkert. Linux er kernen
-(centralenheden/det styrende program. I Python er der også en kerne.
-Den er lille, hvilket den også bør være. Til denne styrende enhed er der
-et meget stort bibliotek (library). Det betyder, at meget af det, du får
-brug for, allerede er udviklet og testet for dig. Din opgave vil være at
-skrive den kode, der kombinerer nævnte biblioteks komponenter og udvikle
-nye egenskaber efterhånden som der bliver brug for det, men du kan i høj
-grad også selv udvide Python med  dine egne funktioner (metoder),
+(centralenheden/det styrende program. I Python er der ogsÃ¥ en kerne.
+Den er lille, hvilket den ogsÃ¥ bÃ¸r vÃ¦re. Til denne styrende enhed er der
+et meget stort bibliotek (library). Det betyder, at meget af det, du fÃ¥r
+brug for, allerede er udviklet og testet for dig. Din opgave vil vÃ¦re at
+skrive den kode, der kombinerer nÃ¦vnte biblioteks komponenter og udvikle
+nye egenskaber efterhÃ¥nden som der bliver brug for det, men du kan i hÃ¸j
+grad ogsÃ¥ selv udvide Python med  dine egne funktioner (metoder),
 klasser, moduler m.v.
 </para>
 </listitem>
@@ -217,43 +217,43 @@ klasser, moduler m.v.
 </sect1>
 
 <sect1 id="pythonbog-pris">
-<title>Hvad koster Python, og hvor får jeg det fra?</title>
+<title>Hvad koster Python, og hvor fÃ¥r jeg det fra?</title>
 <para>
-Python er gratis og tilgængelig for langt de fleste styresystemer.
-Har du ikke den nyeste version, kan du altid hente den på 
+Python er gratis og tilgÃ¦ngelig for langt de fleste styresystemer.
+Har du ikke den nyeste version, kan du altid hente den pÃ¥ 
 <ulink url="http://www.python.org">http://www.python.org</ulink>.
-Det er særdeles let at installere Python, hvis sproget ikke allerede er
-installeret på din computer. Det er det dog normalt hvis du bruger SuSE,
+Det er sÃ¦rdeles let at installere Python, hvis sproget ikke allerede er
+installeret pÃ¥ din computer. Det er det dog normalt hvis du bruger SuSE,
 RedHat eller Mandrake.
 </para>
 
 <para>
-Der er en meget stor udvikling af Python i gang, Alene de ca. 3 måneder,
-det har taget mig at skrive herværende bog, er der kommet 2 fulde
+Der er en meget stor udvikling af Python i gang, Alene de ca. 3 mÃ¥neder,
+det har taget mig at skrive hervÃ¦rende bog, er der kommet 2 fulde
 opdateringer af sproget (de udkomne versioner er 2.2 og 2.3). Men ikke
-alene det, der kommer også opdateringer til sidstnævnte, uden at
-versionsnavnet ændres. Lige nu den 16. oktober 2003 er version 2.3.2
-den aktuelle. I version 2.4 skulle der ske ret store ændringer, så
+alene det, der kommer ogsÃ¥ opdateringer til sidstnÃ¦vnte, uden at
+versionsnavnet Ã¦ndres. Lige nu den 16. oktober 2003 er version 2.3.2
+den aktuelle. I version 2.4 skulle der ske ret store Ã¦ndringer, sÃ¥
 Python kan endnu mere (bl.a. behandle 64 bits karakterkode).
 </para>
 </sect1>
 <sect1 id="python-doc-guide">
 <title>Guide til Python dokumentation</title>
 <para>
-Hvis man er helt ny udi programmering kan det være svært at forstå
+Hvis man er helt ny udi programmering kan det vÃ¦re svÃ¦rt at forstÃ¥
 hvordan dokumentationen af et programmeringssprog er skruet sammen. Men
-når man først kan gennemskue det, er det tit og ofte meget nemmere at
-hente hjælp i dokumentationen af sproget end at skulle spørge om hjælp
-til en specifik funktion på en mailing-liste.
+nÃ¥r man fÃ¸rst kan gennemskue det, er det tit og ofte meget nemmere at
+hente hjÃ¦lp i dokumentationen af sproget end at skulle spÃ¸rge om hjÃ¦lp
+til en specifik funktion pÃ¥ en mailing-liste.
 </para>
 
 <para>
-Dokumentation til python kan du finde online på adressen: <ulink
+Dokumentation til python kan du finde online pÃ¥ adressen: <ulink
 url="http://www.python.org/doc/">http://www.python.org/doc/</ulink>.
 Her kan du desuden finde guides og HowTo's til diverse emner.
 Dokumentationen er delt op i 7 kategorier: Modul oversigt, tutorial,
 biblioteks reference, Macintosh reference, sprog reference, udvidelser
-af sproget og et Python/C API. Forklaring på kategorierne:
+af sproget og et Python/C API. Forklaring pÃ¥ kategorierne:
 </para>
 
 <itemizedlist mark="bullet">
@@ -268,7 +268,7 @@ desuden dokumentation af det.
 <listitem>
 <para>
 <command>Tutorial</command> - Her finder du en gennemgribende tutorial
-på den mest basale brug af Python. Et godt sted at starte hvis man i
+pÃ¥ den mest basale brug af Python. Et godt sted at starte hvis man i
 forvejen kan programmere, men bare ikke kender Python.
 </para>
 </listitem>
@@ -277,7 +277,7 @@ forvejen kan programmere, men bare ikke kender Python.
 <para>
 <command>Biblioteks reference (Library reference)</command> - En
 gennemgang af de mest brugte biblioteker i Python samt mere
-gennemgribende eksempler på brug end du finder i modul oversigten.
+gennemgribende eksempler pÃ¥ brug end du finder i modul oversigten.
 </para>
 </listitem>
 
@@ -306,7 +306,7 @@ andre applikationer m.m.
 <listitem>
 <para>
 <command>Python/C API</command> - En gennemgang af et C API til Python,
-der lader C programmører bruge Python i deres applikationer.
+der lader C programmÃ¸rer bruge Python i deres applikationer.
 </para>
 </listitem>
 </itemizedlist>
@@ -320,12 +320,12 @@ der lader C programmører bruge Python i deres applikationer.
 <para>
 GUI er en forkortelse af Graphic User Interface og er de programmer,
 som dels opretter de virtuelle vinduer, knapper, menuer m.v. Dette giver
-brugeren mulighed for ved klik m.v. at kalde de med nævnte elementer
-forbundne funktioner, hvis formål kan være at sende en tekst til en
-tekstboks, hente en fil ind eller sende en ud på et eksternt lager som
+brugeren mulighed for ved klik m.v. at kalde de med nÃ¦vnte elementer
+forbundne funktioner, hvis formÃ¥l kan vÃ¦re at sende en tekst til en
+tekstboks, hente en fil ind eller sende en ud pÃ¥ et eksternt lager som
 f.eks. en harddisk, tegne grafik  og meget andet. Koden til GUI
 komponenterne findes bl.a. i Pythons Tk bibliotek. At koden til
-vinduerne kommer fra Tk biblioteket kan ses af ordet Tk øverst i
+vinduerne kommer fra Tk biblioteket kan ses af ordet Tk Ã¸verst i
 grundvinduet.
 </para>
 
@@ -337,13 +337,13 @@ grundvinduet.
 </para>
 
 <para>
-Da der som nævnt findes en grundmodel af GUI komponenterne i Tk, kan
-værkføreren Tkinter sende bud ud i Tk, om at koden til opførelsen af
-grundvinduet skal gøres tilgængelig til opførelse af en kopi af Label(),
-som jeg i dette tilfælde har valgt at kalde barnAfLabel, fordi det som
-andre børn har sit ophav, hvorfra det arver i moderen, en betegnelse,
-der også ses brugt i andre danske bøger om computersprog. På engelsk
-kaldes moderen for the parent (forælderen). I Python bruges også
+Da der som nÃ¦vnt findes en grundmodel af GUI komponenterne i Tk, kan
+vÃ¦rkfÃ¸reren Tkinter sende bud ud i Tk, om at koden til opfÃ¸relsen af
+grundvinduet skal gÃ¸res tilgÃ¦ngelig til opfÃ¸relse af en kopi af Label(),
+som jeg i dette tilfÃ¦lde har valgt at kalde barnAfLabel, fordi det som
+andre bÃ¸rn har sit ophav, hvorfra det arver i moderen, en betegnelse,
+der ogsÃ¥ ses brugt i andre danske bÃ¸ger om computersprog. PÃ¥ engelsk
+kaldes moderen for the parent (forÃ¦lderen). I Python bruges ogsÃ¥
 betegnelsen the main class eller the basic class.
 </para>
 </sect1>
@@ -354,9 +354,9 @@ betegnelsen the main class eller the basic class.
 Fra gamle DOS kender du muligvis dosprompten c:\> klarmeldingen, til at
 computerne kan modtage dine kommandoer. I Python anvendes \>>> som en
 tilsvarende klarmelding. En melding om at Python er i Immediate eller
-som den også kaldes interaktiv mode. Det er herfra, du begynder din
-Python programmering, men bestemt også moden den erfarne Python
-programmør vender tilbage til og anvender f.eks. ved test af nye
+som den ogsÃ¥ kaldes interaktiv mode. Det er herfra, du begynder din
+Python programmering, men bestemt ogsÃ¥ moden den erfarne Python
+programmÃ¸r vender tilbage til og anvender f.eks. ved test af nye
 programstumper.
  </para>
 </sect1>
@@ -364,11 +364,11 @@ programstumper.
 <sect1 id="python-kommentar">
 <title>Kommentarer</title>
 <para>
-Når du programmerer har du fra tid til anden brug for at indsætte
-kommentarer - dele af programmet, som du og andre kan læse, men som
-computersproget springer over. I Python markerer \# (hashtegnet - på
-dansk kaldet havelåge eller bøftegn). En kommentar begynder ved
-havelågen og fortsætter programlinjen ud. Eks. 1:
+NÃ¥r du programmerer har du fra tid til anden brug for at indsÃ¦tte
+kommentarer - dele af programmet, som du og andre kan lÃ¦se, men som
+computersproget springer over. I Python markerer \# (hashtegnet - pÃ¥
+dansk kaldet havelÃ¥ge eller bÃ¸ftegn). En kommentar begynder ved
+havelÃ¥gen og fortsÃ¦tter programlinjen ud. Eks. 1:
 </para>
 <screen>
 >>># Python springer over kommentarer
@@ -376,30 +376,30 @@ havelågen og fortsætter programlinjen ud. Eks. 1:
 Kommentarer er til dig og ikke til computeren.
 </screen>
 <para>
-Det er også muligt at udskrive hash-tegnet, hvis det er en del af en
+Det er ogsÃ¥ muligt at udskrive hash-tegnet, hvis det er en del af en
 tekst-streng. Eks. 2:
 <screen>
 >>> print "Her udskriver vi et hash-tegn #"
 Her udskriver vi et hash-tegn #
 </screen>
-I dette eksempel var der INGEN kommentarer. Bøftegnet er her
-en del af en teksstreng. En sådan skal Python meget gerne reagere på og
-ikke forbigå. Læg mærke til at bøftegnet udskrives her, hvad det ikke
-gjorde i eksemplet, hvor det tjente sit rette formål.
+I dette eksempel var der INGEN kommentarer. BÃ¸ftegnet er her
+en del af en teksstreng. En sÃ¥dan skal Python meget gerne reagere pÃ¥ og
+ikke forbigÃ¥. LÃ¦g mÃ¦rke til at bÃ¸ftegnet udskrives her, hvad det ikke
+gjorde i eksemplet, hvor det tjente sit rette formÃ¥l.
 </para>
 
 <sect2 id="python-kommentar1">
-<title>Kommentarer i anførselstegns par</title>
+<title>Kommentarer i anfÃ¸rselstegns par</title>
 <para>
-Strenge kan også være indesluttet i 3 anførselstegn (enkelte eller dobbelte).
+Strenge kan ogsÃ¥ vÃ¦re indesluttet i 3 anfÃ¸rselstegn (enkelte eller dobbelte).
 Eks. 1:
 <screen>
 >>> print """
-... Navn:       Klippeøen Bornholm
+... Navn:       KlippeÃ¸en Bornholm
 ... Befolkning: 44.500
 ... """
 
-Navn:   	Klippeøen Bornholm
+Navn:   	KlippeÃ¸en Bornholm
 Befolkning:     44.500
 </screen>
 
@@ -408,7 +408,7 @@ Eks. 2:
 <screen>
 >>> def Funktion():
 ...     """Indskudt tekst"""
-...     return "Normalt bruges 1 tegnsæt"
+...     return "Normalt bruges 1 tegnsÃ¦t"
 ...
 >>> Funktion()
 'Normalt bruges 1 tegns\xe6t'
@@ -428,7 +428,7 @@ Eks. 4:
 
 <screen>
 >>> def inaktiv():
-...     """Vær passiv, men dokumemter det.
+...     """VÃ¦r passiv, men dokumemter det.
 ... Nej, der sker virkelig intet."""
 ...     pass
 ...
@@ -436,10 +436,10 @@ Eks. 4:
 </screen>
 </para>
 <para>
-Bemærk at tre anførselstegn (enkelte eller dobbelte efter dit ønske)
-lader Python springe over alt mellem de første (indledende)
-anførselstegn og de sidste, hvad du også kan se, af at Nej ... ikke
-behøver den ellers krævede blokindrykning.
+BemÃ¦rk at tre anfÃ¸rselstegn (enkelte eller dobbelte efter dit Ã¸nske)
+lader Python springe over alt mellem de fÃ¸rste (indledende)
+anfÃ¸rselstegn og de sidste, hvad du ogsÃ¥ kan se, af at Nej ... ikke
+behÃ¸ver den ellers krÃ¦vede blokindrykning.
 </para>
 </sect2>
 </sect1>
@@ -474,13 +474,13 @@ Eksponent notation   **   eks:  3 ** 4 = 81
 
 <listitem>
 <para>
-Division     /   eks: 3 / 4 = 0 (afrunder nedad til nærmeste hele tal)
+Division     /   eks: 3 / 4 = 0 (afrunder nedad til nÃ¦rmeste hele tal)
 </para>
 </listitem>
 
 <listitem>
 <para>
-Division     //    eks: 3 // 4 = 0 (afrunder nedad til nærmeste hele tal)
+Division     //    eks: 3 // 4 = 0 (afrunder nedad til nÃ¦rmeste hele tal)
 </para>
 </listitem>
 
@@ -492,7 +492,7 @@ Modulus    %   eks: 3.0 % 4.0 = 0.75
 </itemizedlist>
 
 <para>
-FARE:  Pas på ved heltalsdivisioner
+FARE:  Pas pÃ¥ ved heltalsdivisioner
 </para>
 
 <screen>
@@ -503,7 +503,7 @@ FARE:  Pas på ved heltalsdivisioner
 
 <para>
 25 divideret med 24 burde give 1.0416666666666667, men Python runder
-automatisk af nedad til nærmeste heltal, som i dette tilfælde er 1.
+automatisk af nedad til nÃ¦rmeste heltal, som i dette tilfÃ¦lde er 1.
 </para>
 
 <para>
@@ -512,14 +512,14 @@ automatisk af nedad til nærmeste heltal, som i dette tilfælde er 1.
 1.0416666666666667
 </screen>
 
-For at få decimaldelen returneret (udskrevet) er det nødvendigt, at
+For at fÃ¥ decimaldelen returneret (udskrevet) er det nÃ¸dvendigt, at
 mindst det ene af tallene er et decimaltal (et tal med flydende komma).
 </para>
 
 <para>
-I Python er der fuld støtte for flydende tal (floating point numbers).
+I Python er der fuld stÃ¸tte for flydende tal (floating point numbers).
 Operatorer med operanter af blandet type konverterer heltals (integer)
-operanten til tal med flydende komma (på engelsk punktum):
+operanten til tal med flydende komma (pÃ¥ engelsk punktum):
 <screen>
 >>> 3 * 3.75 / 1.5
 7.5
@@ -533,7 +533,7 @@ operanten til tal med flydende komma (på engelsk punktum):
 >>> print "simpelt eksempel " * 3
  simpelt eksempel simpelt eksempel simpelt eksempel
 </screen>
-I de traditionelle computersprog kan det ikke gøres så enkelt. Der kræves noget som:
+I de traditionelle computersprog kan det ikke gÃ¸res sÃ¥ enkelt. Der krÃ¦ves noget som:
 
 <screen>
 print "simpelt eksempel " + "simpelt eksempel " + "simpelt eksempel "
@@ -544,35 +544,35 @@ print "simpelt eksempel " + "simpelt eksempel " + "simpelt eksempel "
 <sect1 id="python-variabler">
 <title>Variabler</title>
 <para>
-En variabel er en pegepind, der peger på et antal adresser i computerens
-arbejdslager (RAM), hvor data, der kan være flere ting f.eks. tal og
-tekststrenge, placeres. Variablen skal tildeles et navn, der ikke må
-indeholde de dansk/norske specialtegn ÆØÅ og æøå. Det skal lige
-bemærkes, at der i visse underversioner af version 2.3 har været
-muligheder for at bruge de nævte karakterer.
+En variabel er en pegepind, der peger pÃ¥ et antal adresser i computerens
+arbejdslager (RAM), hvor data, der kan vÃ¦re flere ting f.eks. tal og
+tekststrenge, placeres. Variablen skal tildeles et navn, der ikke mÃ¥
+indeholde de dansk/norske specialtegn Ã†Ã˜Ã… og Ã¦Ã¸Ã¥. Det skal lige
+bemÃ¦rkes, at der i visse underversioner af version 2.3 har vÃ¦ret
+muligheder for at bruge de nÃ¦vte karakterer.
 </para>
 
 <sect2 id="python-variabler1">
-<title>Erklæring af variabler</title>
+<title>ErklÃ¦ring af variabler</title>
 <para>
-Når programmørerne skulle foretage beregninger på Dask, Danmarks første
-computer, måtte de tænke i nuller og et taller. Det er meget ubekvemt
-for mennesker så tallene blev erstattet med ord - i første omgang ord på
-3 bogstaver. Det var en stor lettelse for programmørerne. Nu kan
+NÃ¥r programmÃ¸rerne skulle foretage beregninger pÃ¥ Dask, Danmarks fÃ¸rste
+computer, mÃ¥tte de tÃ¦nke i nuller og et taller. Det er meget ubekvemt
+for mennesker sÃ¥ tallene blev erstattet med ord - i fÃ¸rste omgang ord pÃ¥
+3 bogstaver. Det var en stor lettelse for programmÃ¸rerne. Nu kan
 variabel- og andre navne normalt have op til 256 bogstaver eller tal
-blot bør første tegn i et variabelnavn være et bogstav, der ikke må være
-et dansk/norsk specialtegn æøå og ÆØÅ. I Python er der for så vidt ikke
-noget i vejen, for at første tegn kan være et understreg tegn, men det
-kan være en rigtig dårlig løsning, da fordefinerede navne m.v. herved
-let vil kunne overskrives.  I Python skal variabler ikke erklæres.
-Erklæringen sker automatisk. MEN BEMÆRK i Python er navne kasusafhængige
+blot bÃ¸r fÃ¸rste tegn i et variabelnavn vÃ¦re et bogstav, der ikke mÃ¥ vÃ¦re
+et dansk/norsk specialtegn Ã¦Ã¸Ã¥ og Ã†Ã˜Ã…. I Python er der for sÃ¥ vidt ikke
+noget i vejen, for at fÃ¸rste tegn kan vÃ¦re et understreg tegn, men det
+kan vÃ¦re en rigtig dÃ¥rlig lÃ¸sning, da fordefinerede navne m.v. herved
+let vil kunne overskrives.  I Python skal variabler ikke erklÃ¦res.
+ErklÃ¦ringen sker automatisk. MEN BEMÃ†RK i Python er navne kasusafhÃ¦ngige
 d.v.s. at variablerne a og A er to  forskellige variabler og vil blive
-fortolket som sådanne. Det samme gælder naturligvis også alle andre
-navne (på lister, tuples m.v.)
+fortolket som sÃ¥danne. Det samme gÃ¦lder naturligvis ogsÃ¥ alle andre
+navne (pÃ¥ lister, tuples m.v.)
 </para>
 <para>
 <screen>
->>> # Først tildeles x værdien nul, så tildeles y værdien i x og z værdien i y.
+>>> # FÃ¸rst tildeles x vÃ¦rdien nul, sÃ¥ tildeles y vÃ¦rdien i x og z vÃ¦rdien i y.
 >>> x = y = z = 0
 >>> x
 0
@@ -582,8 +582,8 @@ navne (på lister, tuples m.v.)
 0
 </screen>
 
-BEMÆRK: I Python anvendes  == for lig med  og = for tildel. Der er
-således markant forskel på  x == y og x = y
+BEMÃ†RK: I Python anvendes  == for lig med  og = for tildel. Der er
+sÃ¥ledes markant forskel pÃ¥  x == y og x = y
 </para>
 </sect2>
 
@@ -604,7 +604,7 @@ Globale variabler kan overskrives:
 25
 </screen>
 
-Globale navne er flere ting, så pas på:
+Globale navne er flere ting, sÃ¥ pas pÃ¥:
 
 <screen>
 >>> liste = [1,2,3,4,5]
@@ -622,12 +622,12 @@ Globale navne er flere ting, så pas på:
 </para>
 
 <para>
-Indledningsvis oprettes listen [1,2,3,4,5]. Det første kald viser, at
-såfremt listen kaldes, inden den i funktionen funktion erklærede globale
+Indledningsvis oprettes listen [1,2,3,4,5]. Det fÃ¸rste kald viser, at
+sÃ¥fremt listen kaldes, inden den i funktionen funktion erklÃ¦rede globale
 liste overtager 1: den udenfor funktionen definerede liste og 2: tildeler
 den et element (12345) yderligere. Her markeres det, at en
-global variabel erklæret i en funktion overstyrer en global variabel
-erklæret udenfor funktionen.
+global variabel erklÃ¦ret i en funktion overstyrer en global variabel
+erklÃ¦ret udenfor funktionen.
 </para>
 </sect2>
 
@@ -644,7 +644,7 @@ Variablers type kan findes med type:
 >>> a = 12.4
 >>> type(a)
 &lt;type 'float'>
->>> a = "Rønne"
+>>> a = "RÃ¸nne"
 >>> type(a)
 &lt;type 'str'>
 </screen>
@@ -663,14 +663,14 @@ Variablers adresse i RAM kan findes med id
 >>> a = 23
 >>> id(a)
 135591272
->>> a = "Rønne"
+>>> a = "RÃ¸nne"
 >>> id(a)
 1078892096
 </screen>
 </para>
 
 <para>
-Af  følgende udskrift fremgår det, at samme bogstav == samme adresse:
+Af  fÃ¸lgende udskrift fremgÃ¥r det, at samme bogstav == samme adresse:
 
 <screen>
 >>> s = "Dette er en streng."
@@ -724,26 +724,26 @@ c 1076690176
 <title>Variabler i Python</title>
 <para>
 At Python er et ret nyt computsprog, det markerer sig bl.a. m.h.t.
-variablers egenskaber og anvendelsesmåde. I de traditionelle
+variablers egenskaber og anvendelsesmÃ¥de. I de traditionelle
 computersprog som C, C++, Pascal, Delphi, Visual Basic, Java og andre
-skal variable være det man kalder strongly typed dvs. de skal defineres
-til at indeholde ganske bestemte værdityper f.eks. heltal eller
-tekststrenge, og kun de således definerede typer må gemmes i de aktuelle
-variabler. Sådan er det ikke i Python. Her flyttes variablers indhold
-automatisk til andre adresser i lageret, hvis omdefinering er nødvendig,
+skal variable vÃ¦re det man kalder strongly typed dvs. de skal defineres
+til at indeholde ganske bestemte vÃ¦rdityper f.eks. heltal eller
+tekststrenge, og kun de sÃ¥ledes definerede typer mÃ¥ gemmes i de aktuelle
+variabler. SÃ¥dan er det ikke i Python. Her flyttes variablers indhold
+automatisk til andre adresser i lageret, hvis omdefinering er nÃ¸dvendig,
 bl.a. fordi alle former for variabler ikke fylder lige meget i lageret.
 </para>
 <para>
 Eks. 1:
 <screen>
->>> # Her sker der 2 ting: 1: variablen a erklæres (is declared) og
->>> # 2: tildeles samtidig værdien "Tekststreng" d.v.s. den sættes til
->>> # at pege på de adresser i computerens lager, hvor "Tekststreng"
+>>> # Her sker der 2 ting: 1: variablen a erklÃ¦res (is declared) og
+>>> # 2: tildeles samtidig vÃ¦rdien "Tekststreng" d.v.s. den sÃ¦ttes til
+>>> # at pege pÃ¥ de adresser i computerens lager, hvor "Tekststreng"
 >>> # opbevares.
 >>> a = "Tekststreng"
 >>> a
 Tekststreng
->>> # Nu tildeles samme variabel uden videre et heltal (integer) som værdi.
+>>> # Nu tildeles samme variabel uden videre et heltal (integer) som vÃ¦rdi.
 >>> a = 25
 >>> print a
 25
@@ -763,11 +763,11 @@ Eks. 2:
 
 <para>
 Python er ikke strong typed som C, Pascal og mon ikke de fleste andre
-computersprogs variabler skal være det. At et sprog er strong typed
-betyder, at en variabel ene og alene kan indeholde den type af værdi,
+computersprogs variabler skal vÃ¦re det. At et sprog er strong typed
+betyder, at en variabel ene og alene kan indeholde den type af vÃ¦rdi,
 den er oprettet (defineret) til at indeholde. C, Pascal og de andre
-sprog holder kort sagt styr på de adresser i computerens RAM lager,
-variablerne er sat til at pege på.
+sprog holder kort sagt styr pÃ¥ de adresser i computerens RAM lager,
+variablerne er sat til at pege pÃ¥.
 </para>
 </sect2>
 </sect1>
@@ -775,12 +775,12 @@ variablerne er sat til at pege på.
 <sect1 id="python-bool">
 <title>Boolske udtryk/variabler </title>
 <para>
-Boolske udtryk/variabler kan indtage/tildeles 2 værdier og kun 2. De 2
-værdier er sand (true) og falsk (false). De 2 værdier burde i alle
-computersprog repræsenteres med 0 for falsk og 1 for sand, men sådan er
-det desværre ikke altid. Til alt held benytter Python også her det
-logiske altså: 0 for falsk og 1 for sand, hvad følgende eksempel kan
-påvise:
+Boolske udtryk/variabler kan indtage/tildeles 2 vÃ¦rdier og kun 2. De 2
+vÃ¦rdier er sand (true) og falsk (false). De 2 vÃ¦rdier burde i alle
+computersprog reprÃ¦senteres med 0 for falsk og 1 for sand, men sÃ¥dan er
+det desvÃ¦rre ikke altid. Til alt held benytter Python ogsÃ¥ her det
+logiske altsÃ¥: 0 for falsk og 1 for sand, hvad fÃ¸lgende eksempel kan
+pÃ¥vise:
 </para>
 <para>
 Eks. 1:
@@ -860,20 +860,20 @@ false or false & false
 
 <para>
 Eks. 2
-Vi begynder med at lade en variabel, pege på en adresse i lageret, hvor
-værdien 5 lagres. Af nemhedsgrunde vælger vi at give variablen det
-absolut intetsigende navn a. Det var en ordentlig smøre for at beskrive,
-hvad der reelt sker. Når man ved, hvad det, der sker og, for at det hele
+Vi begynder med at lade en variabel, pege pÃ¥ en adresse i lageret, hvor
+vÃ¦rdien 5 lagres. Af nemhedsgrunde vÃ¦lger vi at give variablen det
+absolut intetsigende navn a. Det var en ordentlig smÃ¸re for at beskrive,
+hvad der reelt sker. NÃ¥r man ved, hvad det, der sker og, for at det hele
 ikke skal blive absurd og mekanisk, kan vi tillade os at sige, at vi
-tildeler variablen a værdien 5, værdien b værdien 7 og variablen c
-værdien 9. De samme forhold bør altid gælde for den seriøse programmør.
-Man kan tildele en variabel en værdi f.eks. a = 25 og b = 15 + 10 med
-tildelingstegnet = og eksempelvis betinge, at såfremt den værdi en
-variabel peger på opfylder de samme betingelser som f.eks. indeholder
-samme talsum, som i dette tilfælde så er \ a == b.
+tildeler variablen a vÃ¦rdien 5, vÃ¦rdien b vÃ¦rdien 7 og variablen c
+vÃ¦rdien 9. De samme forhold bÃ¸r altid gÃ¦lde for den seriÃ¸se programmÃ¸r.
+Man kan tildele en variabel en vÃ¦rdi f.eks. a = 25 og b = 15 + 10 med
+tildelingstegnet = og eksempelvis betinge, at sÃ¥fremt den vÃ¦rdi en
+variabel peger pÃ¥ opfylder de samme betingelser som f.eks. indeholder
+samme talsum, som i dette tilfÃ¦lde sÃ¥ er \ a == b.
 </para>
 <para>
-Nu kan vi gå videre og teste de tildelte værdiers sandhedsværdier i
+Nu kan vi gÃ¥ videre og teste de tildelte vÃ¦rdiers sandhedsvÃ¦rdier i
 matematiske udtryk:
 
 <screen>
@@ -908,7 +908,7 @@ matematiske udtryk:
 <para>
 I interaktiv mode kan tal indskrives med 2 forskellige funktioner:
 raw_input, hvor tal modtages som var det tekst, og input der modtager
-tal som tal. I førstnævnte vil den modtagne værdi ofte skulle
+tal som tal. I fÃ¸rstnÃ¦vnte vil den modtagne vÃ¦rdi ofte skulle
 konverteres til tal, ellers kan det give uheldige resultater eks:
 <screen>
 >>> tal = raw_input("Skriv et tal: " )
@@ -916,7 +916,7 @@ Skriv et tal: 730
 >>> tal * 4
 '730730730730'
 >>>
-Det går langt bedre med:
+Det gÃ¥r langt bedre med:
 >>> tal = input("Skriv et tal: " )
 Skriv et tal: 730
 >>> tal
@@ -931,7 +931,7 @@ integer = int( integer )
 if integer < 0:
 	print "%d er mindre end nul" % integer
 else:
-	print "%d er større end nul" % integer
+	print "%d er stÃ¸rre end nul" % integer
 
 >>> # Fra tekst til tal
 >>> heltal = raw_input("Skriv et helt tal: ")
@@ -953,42 +953,42 @@ Skriv et helt tal: 25
 <sect1 id="python-scripts">
 <title>Scripts</title>
 <para>
-Hvis og når du kommer ud for at skulle udvikle større projekter i Python,
-bliver du nødt til at gemme din Python-kode som individuelle filer du
+Hvis og nÃ¥r du kommer ud for at skulle udvikle stÃ¸rre projekter i Python,
+bliver du nÃ¸dt til at gemme din Python-kode som individuelle filer du
 kan bruge igen og igen. Hertil findes der adskillige tekst editorer til
-Linux at vælge imellem. (Indsæt her et link til beskrivelse af tekst
+Linux at vÃ¦lge imellem. (IndsÃ¦t her et link til beskrivelse af tekst
 editorer i FTAV).
-Brugen af editoren er slet ikke så svært, som det kan virke i første
+Brugen af editoren er slet ikke sÃ¥ svÃ¦rt, som det kan virke i fÃ¸rste
 omgang, hvad du let kan konstatere, hvis du har skrevet et eksempel i
-immediate mode, så marker hele teksten og kopier det hele til den
-editor, du vil bruge. Når du har koden inde i editoren, så lad editoren
+immediate mode, sÃ¥ marker hele teksten og kopier det hele til den
+editor, du vil bruge. NÃ¥r du har koden inde i editoren, sÃ¥ lad editoren
 foretage en find og erstat og fjern alle
 <screen>
 >>>
 </screen>
-meldingerne. Hvis du har bevaret koden med de tilhørende blokkoloner
-m.v., så er det, du nu har tilbage et script (Pythons benævnelse af et
+meldingerne. Hvis du har bevaret koden med de tilhÃ¸rende blokkoloner
+m.v., sÃ¥ er det, du nu har tilbage et script (Pythons benÃ¦vnelse af et
 program). Scriptet kan du gemme under et lovligt navn og med
 typebetegnelsen py som eksempelvis mitScript.py. Herefter kan du afvikle
-(køre) programmet lige så tit du lyster. Desuden er det meget let at
-udvide og ændre. Det sker ved at hente det ind i editoren igen og skrive
-videre på det. Det er naturligvis ikke meningen, at du hver gang skal
+(kÃ¸re) programmet lige sÃ¥ tit du lyster. Desuden er det meget let at
+udvide og Ã¦ndre. Det sker ved at hente det ind i editoren igen og skrive
+videre pÃ¥ det. Det er naturligvis ikke meningen, at du hver gang skal
 begynde dine projekter i interaktiv mode for derfra at flytte dem ud i
-editoren og fortsætte der. De større projekter er som antydet bøvlede at
+editoren og fortsÃ¦tte der. De stÃ¸rre projekter er som antydet bÃ¸vlede at
 behandle i interaktiv mode. Der skriver du det hele i editoren og gemmer
-det på nævnte måde. Når du har skrevet et program (et script) og ønsker
+det pÃ¥ nÃ¦vnte mÃ¥de. NÃ¥r du har skrevet et program (et script) og Ã¸nsker
 at afvikle det, sker det ved fra det bibliotek, hvori skriptet findes at
 taste python programmetsNavn.py
 </para>
 <para>
-I Linux kan Python-scripts gøres direkte kørbare ved at indsætte
+I Linux kan Python-scripts gÃ¸res direkte kÃ¸rbare ved at indsÃ¦tte
 
 <screen>
 #! /usr/bin/env python
 </screen>
 
-som første linje i programmet. "#!" (havelåge og udråbstegn) SKAL være
-de to første karakterer i scriptet. Scriptet kan tildeles en kørbar
+som fÃ¸rste linje i programmet. "#!" (havelÃ¥ge og udrÃ¥bstegn) SKAL vÃ¦re
+de to fÃ¸rste karakterer i scriptet. Scriptet kan tildeles en kÃ¸rbar
 mode eller tilladelse ved anvendelse af kommandoen:
 
 <screen>
@@ -998,9 +998,9 @@ $ chmod +x myscript.py
 
 <para>
 Det er muligt at anvende andre styrekoder end ASCII i Python
-kildetekster. Den bedste fremgangsmåde til udførelse af dette er at
-indsætte endnu en speciel kommando linje umiddelbart efter den allerede
-viste, således:
+kildetekster. Den bedste fremgangsmÃ¥de til udfÃ¸relse af dette er at
+indsÃ¦tte endnu en speciel kommando linje umiddelbart efter den allerede
+viste, sÃ¥ledes:
 
 <screen>
 #! /usr/bin/env python
@@ -1009,7 +1009,7 @@ viste, således:
 </para>
 
 <para>
-Hvis du ønsker at afvikle en opstartsfil mere fra det aktuelle
+Hvis du Ã¸nsker at afvikle en opstartsfil mere fra det aktuelle
 bibliotek, kan du skrive en global opstartsfil ved at bruge koden:
 <screen>
 if os.path.isfile('.pythonrc.py'): execfile('.pythonrc.py')
@@ -1017,8 +1017,8 @@ if os.path.isfile('.pythonrc.py'): execfile('.pythonrc.py')
 </para>
 
 <para>
-Hvis du ønsker at anvende opstartsfilen i et program, må programmet
-yderligere indeholde følgende kode (aktuelt tilpasset til dit program):
+Hvis du Ã¸nsker at anvende opstartsfilen i et program, mÃ¥ programmet
+yderligere indeholde fÃ¸lgende kode (aktuelt tilpasset til dit program):
 <screen>
 import os
 filnavn = os.environ.get('PYTHONSTARTUP')
@@ -1031,8 +1031,8 @@ if filnavn and os.path.isfile(filnavn):
 <sect1 id="python-ifelse">
 <title>If, elif og else</title>
 <para>
-Her er et eksempel på hvorledes man kan teste for forskellige
-betingelser, og få ens funktioner til at gøre nogle forskellige ting.
+Her er et eksempel pÃ¥ hvorledes man kan teste for forskellige
+betingelser, og fÃ¥ ens funktioner til at gÃ¸re nogle forskellige ting.
 <screen>
 >>> def findMax(a,b,c):
 ...     max = a
@@ -1055,49 +1055,49 @@ betingelser, og få ens funktioner til at gøre nogle forskellige ting.
 ...     	print "Tallet er",tal
 ...
 Tallet er 83521
-If sætningen er måske den bedst kendte sætning (statement)
+If sÃ¦tningen er mÃ¥ske den bedst kendte sÃ¦tning (statement)
 >>> x = int(raw_input("Skriv et helt tal: "))
 >>> if x < 0:
 ...      x = 0
-...      print 'Negativt tal ændret til nul'
+...      print 'Negativt tal Ã¦ndret til nul'
 ... elif x == 0:
 ...      print 'Nul'
 ... elif x == 1:
 ...      print 'Et'
 ... else:
-...      print 'Større end 1'
+...      print 'StÃ¸rre end 1'
 ...
 </screen>
 </para>
 <para>
-Der kan være nul eller flere elif blokke, else kan vælges/udelades efter
-ønske. Nøgleordet "elif" er en forkortelse af "else if" og er praktisk,
-da der derved er muligt at undgå alt for mange blokindrykninger (de
+Der kan vÃ¦re nul eller flere elif blokke, else kan vÃ¦lges/udelades efter
+Ã¸nske. NÃ¸gleordet "elif" er en forkortelse af "else if" og er praktisk,
+da der derved er muligt at undgÃ¥ alt for mange blokindrykninger (de
 fylder enormt i bredden).
 </para>
 <para>
 <screen>
->>> streng = "wqexmjupiolåærdtce45rft6g8ijuplbkilmæø3we45rft6g8ijupl"
+>>> streng = "wqexmjupiolÃ¥Ã¦rdtce45rft6g8ijuplbkilmÃ¦Ã¸3we45rft6g8ijupl"
 >>> if len(streng) > 50:
-...     print "Længden af strengen er større end 50"
+...     print "LÃ¦ngden af strengen er stÃ¸rre end 50"
 ... elif len(streng) > 45:
-...     print "Længden af strengen er større end 45"
+...     print "LÃ¦ngden af strengen er stÃ¸rre end 45"
 ... elif len(streng) > 40:
-...     print "Længden af strengen er større end 40"
+...     print "LÃ¦ngden af strengen er stÃ¸rre end 40"
 ... else:
-...     print "Længden af strengen er:", len(streng)
+...     print "LÃ¦ngden af strengen er:", len(streng)
 ...
-Længden af strengen er større end 50
+LÃ¦ngden af strengen er stÃ¸rre end 50
 </screen>
 </para>
 <para>
-Simulering af terningekast: ALLE variabler i Python SKAL være erklærede,
-inden de bruges første gang, I det følgende eksempel skal der bruges 6
-fordefinerede variabler. Her har Python en speciel og særdeles
-konstruktiv måde at gøre det på:
+Simulering af terningekast: ALLE variabler i Python SKAL vÃ¦re erklÃ¦rede,
+inden de bruges fÃ¸rste gang, I det fÃ¸lgende eksempel skal der bruges 6
+fordefinerede variabler. Her har Python en speciel og sÃ¦rdeles
+konstruktiv mÃ¥de at gÃ¸re det pÃ¥:
 <screen>
 f6 = f5 = f4 = f3 = f2 = f1 = 0
-I andre om ikke alle andre computersprog skulle det gøres nogenlunde således:
+I andre om ikke alle andre computersprog skulle det gÃ¸res nogenlunde sÃ¥ledes:
 f1 = 0
 f2 = 0
 f3 = 0
@@ -1135,20 +1135,20 @@ def kastMed2():
    sumTotal = terning1 + terning2
    print "Spiller slog%d + %d = %d" % ( terning1, terning2, sumTotal )
    return sumTotal
-sum = kastMed2()       # første omgang kast
+sum = kastMed2()       # fÃ¸rste omgang kast
 if sum == 7 or sum == 11:
    gameStatus = "VANDT"
 elif sum == 2 or sum == 3 or sum == 12:
    gameStatus = "TABTE"
 else:                                     # husker points
-   gameStatus = "FORTSÆT"
+   gameStatus = "FORTSÃ†T"
    minePoints = sum
    print "Spillers points er ", minePoints
-while gameStatus == "FORTSÆT":   # fortsæt spillet
+while gameStatus == "FORTSÃ†T":   # fortsÃ¦t spillet
    sum = kastMed2()
-   if sum == minePoints:             # vandt med følgende resultat
+   if sum == minePoints:             # vandt med fÃ¸lgende resultat
       gameStatus = "VANDT"
-   elif sum == 7:                  # vandt ved at slå/kaste summen 7
+   elif sum == 7:                  # vandt ved at slÃ¥/kaste summen 7
       gameStatus = "TABTE"
 if gameStatus == "VANDT":
    print "Spilleren vandt"
@@ -1173,14 +1173,14 @@ else:
 </sect1>
 
 <sect1 id="python-rundgang">
-<title>Løkker</title>
+<title>LÃ¸kker</title>
 <para>
-En computer er god til at huske (hvis ikke strømmen afbrydes) og god til
-at gentage. Når en kommando ønskes gentaget, kan det ske i en eller
-anden form for løkke, der køres i ring sådan at fortolkningen begynder
-umiddelbart efter blokkolon, fortsætter blokken ud og gentager samme
-proces til kommandoen i løkkens øverste linje er opfyldt. Her vil vi se på
-løkkestrukturer.
+En computer er god til at huske (hvis ikke strÃ¸mmen afbrydes) og god til
+at gentage. NÃ¥r en kommando Ã¸nskes gentaget, kan det ske i en eller
+anden form for lÃ¸kke, der kÃ¸res i ring sÃ¥dan at fortolkningen begynder
+umiddelbart efter blokkolon, fortsÃ¦tter blokken ud og gentager samme
+proces til kommandoen i lÃ¸kkens Ã¸verste linje er opfyldt. Her vil vi se pÃ¥
+lÃ¸kkestrukturer.
 </para>
 </sect1>
 
@@ -1188,7 +1188,7 @@ løkkestrukturer.
 <title>While</title>
 <para>
 <screen>
->>> i = 0  # i skal være defineret inden løkken gennemløbes
+>>> i = 0  # i skal vÃ¦re defineret inden lÃ¸kken gennemlÃ¸bes
 >>> while i < 11:
 ...     print i,
 ...     i += 1
@@ -1198,8 +1198,8 @@ løkkestrukturer.
 </para>
 <para>
 Fibonacci tal
-Fibonaccis tal er en uendelig talrække, hvor det enkelte tal
-fremkommer som summen af de to foregående eks: 1, 1, 2,3,5,8,13...
+Fibonaccis tal er en uendelig talrÃ¦kke, hvor det enkelte tal
+fremkommer som summen af de to foregÃ¥ende eks: 1, 1, 2,3,5,8,13...
 </para>
 <para>
 <screen>
@@ -1225,10 +1225,10 @@ fremkommer som summen af de to foregående eks: 1, 1, 2,3,5,8,13...
 </sect1>
 
 <sect1 id="python-omIgen">
-<title>For løkker</title>
+<title>For lÃ¸kker</title>
 <para>
-Se også under range. Alle range løkker med 2 eller flere parametre kan
-anvendes i forbindelse med for løkker.
+Se ogsÃ¥ under range. Alle range lÃ¸kker med 2 eller flere parametre kan
+anvendes i forbindelse med for lÃ¸kker.
 </para>
 <para>
 <screen>
@@ -1239,7 +1239,7 @@ anvendes i forbindelse med for løkker.
 </screen>
 </para>
 <para>
-Kartotek = []     # liste af Pythonbøger
+Kartotek = []     # liste af PythonbÃ¸ger
 </para>
 <para>
 print "Indskriv bogtitel.\n"
@@ -1285,7 +1285,7 @@ Kvadrattal:
 1 4 9 16 25 36 49 64 81 100
 </para>
 <para>
-Tilfældige tal:
+TilfÃ¦ldige tal:
 >>> import random
 >>> for i in range( 1, 21 ):
 ...     print random.randrange( 1, 7 ),
@@ -1332,42 +1332,42 @@ Indeks Element Histogram
 </para>
 <para>
 <screen>
-Mål længden af nogle tekststrenge:
->>> a = ['Ugleenge', 'Murergade', 'Galløkken']
+MÃ¥l lÃ¦ngden af nogle tekststrenge:
+>>> a = ['Ugleenge', 'Murergade', 'GallÃ¸kken']
 for l in a:
         print l, len(l)
 >>>
 Ugleenge 8
 Murergade 9
-Galløkken 9
+GallÃ¸kken 9
 >>>
 </screen>
 </para>
 <para>
 <screen>
-For løkker og slicing:
+For lÃ¸kker og slicing:
 for x in a[:]: # opret en slice copy af den aktuelle liste:
 >>> if len(l) > 6: a.insert(0, l)
 >>> a
-['Galløkken', 'Ugleenge', 'Murergade', 'Galløkken']
+['GallÃ¸kken', 'Ugleenge', 'Murergade', 'GallÃ¸kken']
 >>>
 >>> for i in range(len(a)):
         print i, a[i]...
 ...
-0 Galløkken
+0 GallÃ¸kken
 1 Ugleenge
 2 Murergade
-3 Galløkken
+3 GallÃ¸kken
 >>>
 </screen>
 </para>
 </sect1>
 
 <sect1 id="python-pass">
-<title>Pass sætningen</title>
+<title>Pass sÃ¦tningen</title>
 <para>
-pass sætningen bruges til at gøre ingen ting. Kan bruges når en sætning
-syntaktisk er nødvendig, mens programmet ikke kræver nogen aktion. For
+pass sÃ¦tningen bruges til at gÃ¸re ingen ting. Kan bruges nÃ¥r en sÃ¦tning
+syntaktisk er nÃ¸dvendig, mens programmet ikke krÃ¦ver nogen aktion. For
 eksempel:
 </para>
 <para>
@@ -1383,7 +1383,7 @@ Eks. 1
 <screen>
 Eks. 2
 while True:
-	pass # vent på tastaturklik
+	pass # vent pÃ¥ tastaturklik
 </screen>
 </para>
 </sect1>
@@ -1391,27 +1391,27 @@ while True:
 <sect1 id="python-funkdef">
 <title>Funktionsdefinering og -kald</title>
 <para>
-Under udviklingen af et program kan der være brug for en hensigtsmæssig
-måde at opdele programmet på, så vi kan nøjes med at beskæftige os med
-en del af programmet ad gangen. Vi kan ønske at putte mere trivielle
-rutiner hen i et hjørne af programmet, så de ikke forstyrrer os i den
-øvrige programskrivning. Her er funktioner (functions) eller som de
-samme også ofte kaldes metoder (methods) en velkendt hjælp i de fleste
-computersprog om ikke alle de nuværende. I det oprindelige BASIC kendtes
+Under udviklingen af et program kan der vÃ¦re brug for en hensigtsmÃ¦ssig
+mÃ¥de at opdele programmet pÃ¥, sÃ¥ vi kan nÃ¸jes med at beskÃ¦ftige os med
+en del af programmet ad gangen. Vi kan Ã¸nske at putte mere trivielle
+rutiner hen i et hjÃ¸rne af programmet, sÃ¥ de ikke forstyrrer os i den
+Ã¸vrige programskrivning. Her er funktioner (functions) eller som de
+samme ogsÃ¥ ofte kaldes metoder (methods) en velkendt hjÃ¦lp i de fleste
+computersprog om ikke alle de nuvÃ¦rende. I det oprindelige BASIC kendtes
 begrebet ikke, hvorfor vi brugte "GOTO" i massevis. I Pascal og Delphi
 er der ud over funktionerne nogle til funktioner forholdsvis svarende
 "pakkesamlere", der kaldes procedurer. Procedurer kan returnere en
-værdi, men behøver det ikke. Alt efter computersprog kan en funktion
-ubetinget skulle returnere en værdi (gælder i C++), i andre
+vÃ¦rdi, men behÃ¸ver det ikke. Alt efter computersprog kan en funktion
+ubetinget skulle returnere en vÃ¦rdi (gÃ¦lder i C++), i andre
 computersprog som Pascal, Delphi, Visual Basic og Python kan en funktion
-returnere en værdi, men behøver det ikke nødvendigvis. Python funktioner
-bliver derfor, hvad C++ programmører nok vil kalde en procedure. Men
-lad os nu skrive en Python funktion af hver slags - først en funktion,
-der returnerer en værdi (altså den "rigtige" funktion).
+returnere en vÃ¦rdi, men behÃ¸ver det ikke nÃ¸dvendigvis. Python funktioner
+bliver derfor, hvad C++ programmÃ¸rer nok vil kalde en procedure. Men
+lad os nu skrive en Python funktion af hver slags - fÃ¸rst en funktion,
+der returnerer en vÃ¦rdi (altsÃ¥ den "rigtige" funktion).
 </para>
 <para>
-Når du er færdig med defineringen skal du trykker 2 gange på
-Enter-tasten dels for at fortælle Python, at defineringen er færdig og
+NÃ¥r du er fÃ¦rdig med defineringen skal du trykker 2 gange pÃ¥
+Enter-tasten dels for at fortÃ¦lle Python, at defineringen er fÃ¦rdig og
 dels for at komme tilbage til interaktiv mode markeringen
 </para>
 <para>
@@ -1428,23 +1428,23 @@ Funktionskald:
 </screen>
 </para>
 <para>
-Som du kan se ovenfor, skal nøgleordet def bruges for at fortælle
-Python, at det kommende er en funktionsdefinering. Efter nøgleordet
-følger funktionsnavnet, der kan være alle lovlige navne som i variabler.
-Efter funktionsnavnet følger en parameterliste, der som her kan være
-tom. Den omgives af runde parenteser og efterfølges af det kolon, som du
+Som du kan se ovenfor, skal nÃ¸gleordet def bruges for at fortÃ¦lle
+Python, at det kommende er en funktionsdefinering. Efter nÃ¸gleordet
+fÃ¸lger funktionsnavnet, der kan vÃ¦re alle lovlige navne som i variabler.
+Efter funktionsnavnet fÃ¸lger en parameterliste, der som her kan vÃ¦re
+tom. Den omgives af runde parenteser og efterfÃ¸lges af det kolon, som du
 med garanti vil glemme mange gange, inden du er inde i rutinen med at
-fortælle Python, at det kommende er en sammenhørende blok (her
-funktionskroppen). Python reagerer ved at rykke de efterfølgende
-programlinjer en tabulatorbredde til højre. Hvis du kopierer kode fra
-eksempelvis en editor til Python, er det nødvendigt, at få nævnte
-indrykninger med evt. ved selv at indsætte dem ved at trykke på
+fortÃ¦lle Python, at det kommende er en sammenhÃ¸rende blok (her
+funktionskroppen). Python reagerer ved at rykke de efterfÃ¸lgende
+programlinjer en tabulatorbredde til hÃ¸jre. Hvis du kopierer kode fra
+eksempelvis en editor til Python, er det nÃ¸dvendigt, at fÃ¥ nÃ¦vnte
+indrykninger med evt. ved selv at indsÃ¦tte dem ved at trykke pÃ¥
 tastaturets tabulatortast. Der er ofte flere blokke i en funktion. Er
-der det, skal de programlinjer, der hører til den pågældende blok rykkes
-endnu et tabulatorstop til højre.
+der det, skal de programlinjer, der hÃ¸rer til den pÃ¥gÃ¦ldende blok rykkes
+endnu et tabulatorstop til hÃ¸jre.
 </para>
 <para>
-Returværdien kan også indgå i eksempelvis en anden regneoperation:
+ReturvÃ¦rdien kan ogsÃ¥ indgÃ¥ i eksempelvis en anden regneoperation:
 </para>
 <para>
 <screen>
@@ -1477,7 +1477,7 @@ Funktionskald:
 'Streng1 streng2.
 </para>
 <para>
-Samme funktion, men ved tildeling af numeriske værdier:
+Samme funktion, men ved tildeling af numeriske vÃ¦rdier:
 </para>
 <para>
 >>> funktionsnavn(10,20.50)
@@ -1522,25 +1522,25 @@ Denne maaneds navn er december
 <para>
 Liste kan modtages som argument i funktion:
 >>> liste [] #opretter tom global liste
->>> def ul(l): # argumentet l erklæres her som lokalt navn
+>>> def ul(l): # argumentet l erklÃ¦res her som lokalt navn
 ...     liste.append(l)  # udvider den globale liste
 ...
 >>> ul(1)
 >>> ul("Hasle")
 >>> ul(2)
 >>> ul("Nyker")
-Kørselsresultat:
+KÃ¸rselsresultat:
 >>> liste
 [1, 'Hasle', 2, 'Nyker']
 </para>
 <para>
 >>> liste = [1,2,3,4]
->>> def udvL(l = []): # argumentet l erklæres her som lokalt navn
+>>> def udvL(l = []): # argumentet l erklÃ¦res her som lokalt navn
 ...     for i in range(5,11):
 ...             l.append(i)
 ...             print l
 ...
-Kørselsresultat:
+KÃ¸rselsresultat:
 >>> udvL(liste)
 [1, 2, 3, 4, 5]
 [1, 2, 3, 4, 5, 6]
@@ -1556,10 +1556,10 @@ def kR( lengde = 1, bredde = 1, hojde= 1 ):
 </para>
 <para>
 print "Forvalgte kasserumfang:", kR()
-print "Rumfang af kasse med længden 10 er: ", kR( 10 )
-print "Rumfang af kasse med højden 10 er: ", kR(1 ,10 )
-print "Rumfang af kasse med længde og  højde 10 er: ", kR(10 ,10 )
-print "Rumfang af kasse med længde 12, bredde 4  og  højde 10 er: ", kR(12,4 ,10 )
+print "Rumfang af kasse med lÃ¦ngden 10 er: ", kR( 10 )
+print "Rumfang af kasse med hÃ¸jden 10 er: ", kR(1 ,10 )
+print "Rumfang af kasse med lÃ¦ngde og  hÃ¸jde 10 er: ", kR(10 ,10 )
+print "Rumfang af kasse med lÃ¦ngde 12, bredde 4  og  hÃ¸jde 10 er: ", kR(12,4 ,10 )
 </para>
 <para>
 </para>
@@ -1635,9 +1635,9 @@ def OK(prompt, rundgang=4, svar='Svar ja eller nej!'):
         if rundgang < 0: raise IOError, 'vanskelig bruger'
         print svar
 Kan kaldes med eksempelvis:
-OK('Ønsker du at afslutte?')
+OK('Ã˜nsker du at afslutte?')
 og:
-OK('Ønskes filen lukket?', 2)
+OK('Ã˜nskes filen lukket?', 2)
 </screen>
 </para>
 <para>
@@ -1657,7 +1657,7 @@ OK('Ønskes filen lukket?', 2)
     L.append(a)
     return L... ...
 ...
-Et kørselsresultat:
+Et kÃ¸rselsresultat:
 >>> for i in range(10):
 ...     print f(i)
 ...
@@ -1708,9 +1708,9 @@ None
 </screen>
 </para>
 <para>
-Nøgleords argumenter (keyword arguments). Du kan vælge at lade din
-funktion have et antal fordefinerede og forud værditildelte nøgleord.
-Sådanne nøgleord må ikke forveksles med de i Python forud definerede
+NÃ¸gleords argumenter (keyword arguments). Du kan vÃ¦lge at lade din
+funktion have et antal fordefinerede og forud vÃ¦rditildelte nÃ¸gleord.
+SÃ¥danne nÃ¸gleord mÃ¥ ikke forveksles med de i Python forud definerede
 variabler. Vi skal se et eksempel:
 </para>
 <para>
@@ -1723,12 +1723,12 @@ En veludstyret PC anvender Linux
 >>>
 </screen>
 Argumenterne computer og kvalitet er tomme, hvorfor de skal tildeles
-værdi ved funktionskald. Det skal nøgleordsargumenterne ikke, da de
-allerede er tildelt en sådan. Det samme gælder nøgleordet computersprog.
+vÃ¦rdi ved funktionskald. Det skal nÃ¸gleordsargumenterne ikke, da de
+allerede er tildelt en sÃ¥dan. Det samme gÃ¦lder nÃ¸gleordet computersprog.
 </para>
 <para>
-Som andre variabler, kan variablen kvalitet modtage en tom værdi,
-ellers kan du få et lidt ulogisk resultat som:
+Som andre variabler, kan variablen kvalitet modtage en tom vÃ¦rdi,
+ellers kan du fÃ¥ et lidt ulogisk resultat som:
 <screen>
 >>> funktion(0,0)
 En 0 0 anvender naturligvis Linux
@@ -1745,18 +1745,18 @@ En nogenlunde PC anvender Windows
 </screen>
 </para>
 <para>
-Når en funktions sidste parameter er af formen **navn (med 2
-foranstillede stjerner), kan den modtage en ordliste, hvis nøgleord ikke
+NÃ¥r en funktions sidste parameter er af formen **navn (med 2
+foranstillede stjerner), kan den modtage en ordliste, hvis nÃ¸gleord ikke
 findes i parameterlisten. Det kan kombineres med en formel parameter af
-formen *navn (med 1 foranstillet stjerne).*navn skal komme før **navn:
+formen *navn (med 1 foranstillet stjerne).*navn skal komme fÃ¸r **navn:
 <screen>
 >>> def f(vareart, *argumenter, **noegleord):
 ...     pass
 ...
 >>>
 </screen>
-Funktionskald af den type bruges meget i Python, så det er vigtigt at
-forstå virkning m.v, hvorfor jeg viste første eksempel med danske navne,
+Funktionskald af den type bruges meget i Python, sÃ¥ det er vigtigt at
+forstÃ¥ virkning m.v, hvorfor jeg viste fÃ¸rste eksempel med danske navne,
 ellers er det mest praktist at holde sig til de engelske, da det er dem,
 du normalt vil se:
 </para>
@@ -1772,8 +1772,8 @@ du normalt vil se:
 </para>
 <para>
 Som du ser, returneres der en tuple indeholdende 1: argumentet 2: en
-tuple og 3: en ordliste. Hvis du ønsker at læse den eksterne fil
-mitProgram.py, kan du anvende følgende indledning:
+tuple og 3: en ordliste. Hvis du Ã¸nsker at lÃ¦se den eksterne fil
+mitProgram.py, kan du anvende fÃ¸lgende indledning:
 </para>
 <para>
 <screen>
@@ -1804,7 +1804,7 @@ mitProgram.py, kan du anvende følgende indledning:
 >>>
 </para>
 <para>
-Argumentlisten behøver ikke nødvendigvis at være af et omfang som en dansk stil:
+Argumentlisten behÃ¸ver ikke nÃ¸dvendigvis at vÃ¦re af et omfang som en dansk stil:
 </para>
 <para>
 >>> def f(v,*a, **k):
@@ -1834,7 +1834,7 @@ Argumentlisten behøver ikke nødvendigvis at være af et omfang som en dansk stil:
 >>>
 </para>
 <para>
-Bemærk: boglisten kræver de krøllede parenteser:
+BemÃ¦rk: boglisten krÃ¦ver de krÃ¸llede parenteser:
 >>> def f(a,*b,**c):
 ...     return a,b,c
 ...
@@ -1888,9 +1888,9 @@ Lamda arbejder i baggrunden:
 <sect1 id="python-lister">
 <title>Lister</title>
 <para>
-Lister er variabler med nul til flere sammenhørende rum. Listen kendes
-på dens firkantede parenteser. Tænker du dig dem taget væk, har du en
-tuple. Den kendes på dens kommaer.
+Lister er variabler med nul til flere sammenhÃ¸rende rum. Listen kendes
+pÃ¥ dens firkantede parenteser. TÃ¦nker du dig dem taget vÃ¦k, har du en
+tuple. Den kendes pÃ¥ dens kommaer.
 </para>
 <para>
 <screen>
@@ -1899,12 +1899,12 @@ Listens og dens muligheder:
 >>> listen = []
 >>> # udvid listen med et ekstra element
 >>> listen.append("Ypnasted")
->>> # udvidelsen kan også ske således:
+>>> # udvidelsen kan ogsÃ¥ ske sÃ¥ledes:
 >>> listen[len(listen):] = "Teglkaas"
 >>> listen[len(listen):] = ["Hellig Peder"]
 >>> listen
 ['Ypnasted', 'T', 'e', 'g', 'l', 'k', 'a', 'a', 's', 'Hellig Peder']
->>> # udvidelsen kan også ske således:
+>>> # udvidelsen kan ogsÃ¥ ske sÃ¥ledes:
 >>> listen.extend(["Vang","Hammeren"])
 >>> listen
 ['Ypnasted', 'T', 'e', 'g', 'l', 'k', 'a', 'a', 's', 'Hellig Peder', 'Vang', 'Hammeren']
@@ -1943,7 +1943,7 @@ Listens og dens muligheder:
 0
 >>> listen.index("Vang")
 1
->>> # finder listens største element:
+>>> # finder listens stÃ¸rste element:
 >>> max(listen)
 'Vang'
 >>> # finder listens mindste element:
@@ -1966,15 +1966,15 @@ Listens og dens muligheder:
 </screen>
 </para>
 <para>
-Returnering af større eller mindre dele af en liste kaldes slicing.
-Slicing af en given del af en liste sker ved at indsætte start- og
+Returnering af stÃ¸rre eller mindre dele af en liste kaldes slicing.
+Slicing af en given del af en liste sker ved at indsÃ¦tte start- og
 slutindeks i de fra listen velkendte firkantede parenteser:
 </para>
 <para>
 >>> l = [1,2,3,3,4,5,6,7,8,9]
->>> print l[0] # returner listens første element
+>>> print l[0] # returner listens fÃ¸rste element
 1
->>> print l[0:4] # returner listens 4 første elementer
+>>> print l[0:4] # returner listens 4 fÃ¸rste elementer
 [1, 2, 3, 3]
 >>> print l[3:6] # returner  listens  4. til 6. element
 [3, 4, 5]
@@ -1986,19 +1986,19 @@ slutindeks i de fra listen velkendte firkantede parenteser:
 </para>
 <para>
 # Opret liste med lige tal <= 20
-# Søg i liste efter integer (heltal)
+# SÃ¸g i liste efter integer (heltal)
 liste = range( 0, 21, 2 )
 #listeindhold: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 print liste
 skalFindes = int( raw_input( "Indtast heltal <= 20: " ) )
 if skalFindes in liste:
-	print "Fundet på indeks:", liste.index( skalFindes )
+	print "Fundet pÃ¥ indeks:", liste.index( skalFindes )
 else:
 	print "Elementet blev ikke fundet"
 </para>
 <para>
 Indtast heltal <= 20: 12
-Fundet på indeks: 6
+Fundet pÃ¥ indeks: 6
 Indtast heltal <= 20: 13
 Elementet blev ikke fundet
 </para>
@@ -2027,7 +2027,7 @@ Listen og tuplen har flere lighedspunkter:
 </para>
 <para>
 liste = []    # opret tom liste
-# indsæt elementer i listen
+# indsÃ¦t elementer i listen
 for indeks in range( 1, 11 ):
    liste += [ indeks ]
 </para>
@@ -2035,7 +2035,7 @@ for indeks in range( 1, 11 ):
 print "Listens indhold:", liste
 </para>
 <para>
-print # indsætter tom linje
+print # indsÃ¦tter tom linje
 </para>
 <para>
 for element in liste:
@@ -2046,7 +2046,7 @@ print
 </para>
 <para>
 # listetilgang via indeks (rumnummer)
-print "\nVælg elementer efter deres indeks:"
+print "\nVÃ¦lg elementer efter deres indeks:"
 print "Listens indhold:"
 </para>
 <para>
@@ -2055,7 +2055,7 @@ for i in range( len( liste ) ):
 </para>
 <para>
 print "\nOpdatering af listeelementer..."
-print "Listens indhold før opdateringen:", liste
+print "Listens indhold fÃ¸r opdateringen:", liste
 liste[ 0 ] = -100
 liste[ -3 ] = "bornholmere"
 print "Listens indhold efter opdateringen:", liste
@@ -2068,7 +2068,7 @@ Listens indhold: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 1 2 3 4 5 6 7 8 9 10
 </para>
 <para>
-Vælg elementer efter deres indeks:
+VÃ¦lg elementer efter deres indeks:
 Listens indhold:
      0   1
      1   2
@@ -2083,14 +2083,14 @@ Listens indhold:
 </para>
 <para>
 Opdatering af listeelementer...
-Listens indhold før opdateringen: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Listens indhold fÃ¸r opdateringen: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 Listens indhold efter opdateringen: [-100, 2, 3, 4, 5, 6, 7, 'bornholmere', 9, 10]
 </para>
 <para>
 liste = []   # opretter tom liste
 </para>
 <para>
-# indsæt 10 heltal via brugerindtastninger
+# indsÃ¦t 10 heltal via brugerindtastninger
 print "Skriv 10 heltal:"
 </para>
 <para>
@@ -2112,7 +2112,7 @@ for i in liste:
 		print
 </para>
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 python row.py
 Elementerne i listen:
 1
@@ -2174,18 +2174,18 @@ Lister kan flettes (indeholde andre lister) f.eks:
 <para>
 </para>
 <para>
->>> liste = ["Ugleenge","Sæne","Bækkely","Stampen"]
+>>> liste = ["Ugleenge","SÃ¦ne","BÃ¦kkely","Stampen"]
 >>> for i, v in enumerate(liste):
 ...     print i,v
 ...
 0 Ugleenge
-1 Sæne
-2 Bækkely
+1 SÃ¦ne
+2 BÃ¦kkely
 3 Stampen
 >>>
 </para>
 <para>
-Der kan også dannes løkke over to eller flere samtidige sekvenser:
+Der kan ogsÃ¥ dannes lÃ¸kke over to eller flere samtidige sekvenser:
 >>> person = ['Ole', '120', 'naturen']
 >>> svar = ['navn:', 'alder:', 'hobby:']
 >>> for i, j in zip(person,svar):
@@ -2225,25 +2225,25 @@ Lister anvendt som stakke
 </para>
 <para>
 I computersproget FORTH benyttes begrebet stakke meget. Der sammenligner
-man normalt en stak med en stabel tallerkener. I en sådan stabel
+man normalt en stak med en stabel tallerkener. I en sÃ¥dan stabel
 tallerkener, vil den nederste under normale forhold blive placeret i
 bunden at stakken eller stabelen. I FORTH arbejder man normalt med
-begreberne LIFO (last in first out eller på dansk først ind (altså
-øverst i tallerkenstabelen) first out eller først ud betyder, som ordet
-siger først ud - altså at man tager den øverste tallerken (det øverste
-eller sidst placerede element først. Modsvarende LIFO bruger man også
-FIFO i FORTH. Forkortelsen FIFO står for first in first out eller på
-dansk først ind først ud. Overført til tallerkenstablen betyder det, at
-den nederste tallerken i stakken, er den tjeneren benytter først. Jeg
-har vagt at forklare princippet ud fra FORTH, fordi det derved også
-bliver lettere at forstå, hvordan man i Python kan lave noget
+begreberne LIFO (last in first out eller pÃ¥ dansk fÃ¸rst ind (altsÃ¥
+Ã¸verst i tallerkenstabelen) first out eller fÃ¸rst ud betyder, som ordet
+siger fÃ¸rst ud -Â altsÃ¥ at man tager den Ã¸verste tallerken (det Ã¸verste
+eller sidst placerede element fÃ¸rst. Modsvarende LIFO bruger man ogsÃ¥
+FIFO i FORTH. Forkortelsen FIFO stÃ¥r for first in first out eller pÃ¥
+dansk fÃ¸rst ind fÃ¸rst ud. OverfÃ¸rt til tallerkenstablen betyder det, at
+den nederste tallerken i stakken, er den tjeneren benytter fÃ¸rst. Jeg
+har vagt at forklare princippet ud fra FORTH, fordi det derved ogsÃ¥
+bliver lettere at forstÃ¥, hvordan man i Python kan lave noget
 tilsvarende. I Python kalder man en stak for en queue ligesom normalt
-må nøjes med at udskrive selve FIFO og LIFO elementerne. Det kan gøres
-således:
+mÃ¥ nÃ¸jes med at udskrive selve FIFO og LIFO elementerne. Det kan gÃ¸res
+sÃ¥ledes:
 </para>
 <para>
 <screen>
->>> queue = ["Arnager","Dueodde","Nexø","Svaneke"]
+>>> queue = ["Arnager","Dueodde","NexÃ¸","Svaneke"]
 >>> queue.pop(0)
 'Arnager'
 >>> queue.pop(2)
@@ -2259,7 +2259,7 @@ således:
 </para>
 
 <sect2 id="python-tabeller-tol">
-<title>Funktionelle programmeringsværktøjer</title>
+<title>Funktionelle programmeringsvÃ¦rktÃ¸jer</title>
 <para>
 I Python er der tre fordefinerede funktioner, der er meget nyttige i
 forbindelse med lister:
@@ -2269,7 +2269,7 @@ filter(), map(), and reduce().
 Eksempel:
 Syntaks: filter(funktion,sekvens) returnerer om muligt en sekvens af
 samme type som den i filters parameterliste. Den returnerede sekvens
-består af de værdier, der gør, at funktion(argument) er sand (true).
+bestÃ¥r af de vÃ¦rdier, der gÃ¸r, at funktion(argument) er sand (true).
 </para>
 <para>
 Eksempel:
@@ -2289,7 +2289,7 @@ Syntaks: map(funktion, blok)
 </para>
 <para>
 kalder funktion(parameter) for hver enkelt af sekvensens elementer
-og returnerer en liste indeholdende returværdierne.
+og returnerer en liste indeholdende returvÃ¦rdierne.
 </para>
 <para>
 Eksempel:
@@ -2301,7 +2301,7 @@ Beregn kubiktal:
 >>>
 </para>
 <para>
-map kan også tage flere sekvenser.
+map kan ogsÃ¥ tage flere sekvenser.
 >>> def kvadrat(x): return x*x
 ...
 >>> map(None, sekvens, map(kvadrat, sekvens))
@@ -2376,8 +2376,8 @@ Nyhed i Python version 2.3:
 </screen>
 </para>
 <para>
-Tuples består af et anatal værdier adskille med kommaer. Man siger, at
-tuples kendes på deres kommaer, mens listen kendes på dens firkantede
+Tuples bestÃ¥r af et anatal vÃ¦rdier adskille med kommaer. Man siger, at
+tuples kendes pÃ¥ deres kommaer, mens listen kendes pÃ¥ dens firkantede
 parenteser. Eks:
 <screen>
 >>> t = 1,2,3,4,5
@@ -2393,8 +2393,8 @@ At de adskillende kommaer virkelig betyder noget ses her:
 1
 >>>
 </screen>
-I det første lilfælde er "Fare forude!" en tekststreng, mens det i det
-sidste tilfælde er en tuple. Forskellen er ene og alene kommaet.
+I det fÃ¸rste lilfÃ¦lde er "Fare forude!" en tekststreng, mens det i det
+sidste tilfÃ¦lde er en tuple. Forskellen er ene og alene kommaet.
 </para>
 <para>
 <screen>
@@ -2416,7 +2416,7 @@ print "Antal sekunder siden midnat", \
      ligeNu[ 2 ] )
 </para>
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 ajbo@linux:~> python anvendt_tuple.py
 Skriv aktuelt timetal: 11
 Skriv aktuelt minuttal: 17
@@ -2437,8 +2437,8 @@ print "tuplen: ", tuplen
 print "listen: ", listen
 </para>
 <para>
-start = int( raw_input( "Vælg startpunkt: " ) )
-sidste = int( raw_input( "Vælg slutpunkt: " ) )
+start = int( raw_input( "VÃ¦lg startpunkt: " ) )
+sidste = int( raw_input( "VÃ¦lg slutpunkt: " ) )
 </para>
 <para>
 print "\nstrengen[", start, ":", sidste, "] = ", \
@@ -2453,12 +2453,12 @@ print "listen[", start, ":", sidste, "] = ", \
    listen[ start:sidste ]
 </para>
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 strengen:  abcdefghij
 tuplen:  (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 listen:  ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
-Vælg startpunkt: 0
-Vælg slutpunkt: 6
+VÃ¦lg startpunkt: 0
+VÃ¦lg slutpunkt: 6
 </para>
 <para>
 strengen[ 0 : 6 ] =  abcdef
@@ -2537,17 +2537,17 @@ print "Ordlisten indhold:", ordliste
 </screen>
 </para>
 <para>
-postnumre = { "Rønne": 3700, "Allinge": 3770, "Gudhjem": 3780, "Nexø": 3730}
+postnumre = { "RÃ¸nne": 3700, "Allinge": 3770, "Gudhjem": 3780, "NexÃ¸": 3730}
 print "\nAlle indsatte postnumre:", postnumre
 </para>
 <para>
 # access  og ret eksistenende ordliste
-print "\nRønne postnummer:", postnumre[ "Rønne" ]
+print "\nRÃ¸nne postnummer:", postnumre[ "RÃ¸nne" ]
 postnumre[ "Gudhjem" ] = 3760
 print "Gudhjems rigtige postnummer:", postnumre[ "Gudhjem" ]
 </para>
 <para>
-# tilføj postnummer
+# tilfÃ¸j postnummer
 postnumre[ "Aakirkeby" ] = 3720
 print "\nOrdlistens postnumre efter rettelsen:"
 print postnumre
@@ -2555,31 +2555,31 @@ print postnumre
 <para>
 # slet indgang fra ordlisten
 del postnumre[ "Allinge" ]
-print "\nOrdlistens nuværende indhold:"
+print "\nOrdlistens nuvÃ¦rende indhold:"
 print postnumre
 </para>
 <para>
 Ordlisten indhold: {}
 </para>
 <para>
-Alle indsatte postnumre: {'Nexø': 3730, 'Gudhjem': 3780, 'Rønne': 3700, 'Allinge': 3770}
+Alle indsatte postnumre: {'NexÃ¸': 3730, 'Gudhjem': 3780, 'RÃ¸nne': 3700, 'Allinge': 3770}
 </para>
 <para>
-Rønne postnummer: 3700
+RÃ¸nne postnummer: 3700
 Gudhjems rigtige postnummer: 3760
 </para>
 <para>
 Ordlistens postnumre efter rettelsen:
-{'Nexø': 3730, 'Aakirkeby': 3720, 'Gudhjem': 3760, 'Rønne': 3700, 'Allinge': 3770}
+{'NexÃ¸': 3730, 'Aakirkeby': 3720, 'Gudhjem': 3760, 'RÃ¸nne': 3700, 'Allinge': 3770}
 </para>
 <para>
-Ordlistens nuværende indhold:
-{'Nexø': 3730, 'Aakirkeby': 3720, 'Gudhjem': 3760, 'Rønne': 3700}
+Ordlistens nuvÃ¦rende indhold:
+{'NexÃ¸': 3730, 'Aakirkeby': 3720, 'Gudhjem': 3760, 'RÃ¸nne': 3700}
 </para>
 <para>
 </para>
 <para>
-Her er et eksempel på anvendelse af en ordliste:
+Her er et eksempel pÃ¥ anvendelse af en ordliste:
 >>> postnr = {'Nyker': 3700, 'Hasle': 3790}
 >>> postnr['Gudhjem'] = 3760
 >>> postnr
@@ -2603,7 +2603,7 @@ Her er et eksempel på anvendelse af en ordliste:
 >>>
 </para>
 <para>
-Konstruktøren dict() opretter ordlister direkte fra en liste hvis elementer er tuples:
+KonstruktÃ¸ren dict() opretter ordlister direkte fra en liste hvis elementer er tuples:
 >>> liste = [('Muleby', 3700), ('Nyker', 3700), ('Gudhjem', 3760)]
 >>> dict(liste)
 {'Nyker': 3700, 'Muleby': 3700, 'Gudhjem': 3760}
@@ -2627,14 +2627,14 @@ eller:
 >>>
 </para>
 <para>
-Løkke teknikker:
->>> t = "Ugleenge","Sæne","Bækkely","Stampen"
+LÃ¸kke teknikker:
+>>> t = "Ugleenge","SÃ¦ne","BÃ¦kkely","Stampen"
 >>> t
 ('Ugleenge', 'S\xe6ne', 'B\xe6kkely', 'Stampen')
 >>>
 </para>
 <para>
-ordliste = {"Ugleenge" : 1,"Sæne" : 2,"Bækkely" :3,"Stampen" : 4}
+ordliste = {"Ugleenge" : 1,"SÃ¦ne" : 2,"BÃ¦kkely" :3,"Stampen" : 4}
 >>> for i in ordliste.items(): print i
 ...
 ('S\xe6ne', 2)
@@ -2664,12 +2664,12 @@ print "\nOrdlistens elementer er:"
 print kalender.values()
 </para>
 <para>
-print "\nFor løkke henter ordliste elementer:"
+print "\nFor lÃ¸kke henter ordliste elementer:"
 for indgang in kalender.keys():
 	print "kalender[", indgang, "] =", kalender[ indgang ]
 </para>
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 ajbo@linux:~> python kalender.py
 Ordlistens indhold:
 [(1, 'Januar'), (2, 'Februar'), (3, 'Marts'), (4, 'April'),
@@ -2686,7 +2686,7 @@ Ordlistens elementer er:
 'Juli', 'August', 'September', 'Oktober', 'November', 'December']
 </para>
 <para>
-For løkke henter ordliste elementer:
+For lÃ¸kke henter ordliste elementer:
 kalender[ 1 ] = Januar
 kalender[ 2 ] = Februar
 kalender[ 3 ] = Marts
@@ -2709,13 +2709,13 @@ ajbo@linux:~>
 <para>
 <screen>
 \n  Ny linje
-\t  Vandret tabulator. Flytter markøren til næste tabulatorstop
-\r  Vognretur. Flytter markøren til linjens begyndelse
-\b  Backspace. Flytter markøren 1 plads tilbage
+\t  Vandret tabulator. Flytter markÃ¸ren til nÃ¦ste tabulatorstop
+\r  Vognretur. Flytter markÃ¸ren til linjens begyndelse
+\b  Backspace. Flytter markÃ¸ren 1 plads tilbage
 \a  Systemklokke
-\\  Backspace. Indsætter \
-\"  Indsætter anførselstegn
-\'  Indsætter enkelt anførselstegn
+\\  Backspace. IndsÃ¦tter \
+\"  IndsÃ¦tter anfÃ¸rselstegn
+\'  IndsÃ¦tter enkelt anfÃ¸rselstegn
 </screen>
 </para>
 </sect1>
@@ -2724,34 +2724,34 @@ ajbo@linux:~>
 <title>Talsystemer</title>
 <para>
 I computersproget Forth, kan man benytte omkring 70 forskellige
-talsystemer afhængig af sprogversionen. Det talsystem vi bruger i vore
-dage et 10-talsystemet eller det decimale talsystem. Sådan har det ikke
-været altid verden over. For omkring 4000 år siden brugtes
-60-talsystemet i områ det lige nordvest for Persiske Hav. Lad os lige se
-på tallet 4320. Det består af 4 tusinder, 3 hundreder, 2 tiere og 0
-enere, hvilket de fleste sikkert tager som en selvfølgelighed, men er
-det nu også så selvfølgelig? Nej, det allerede nævnte har sikkert
-allerede røbet, at det slet ikke er så enkelt 10-talsystemet er nonsens
+talsystemer afhÃ¦ngig af sprogversionen. Det talsystem vi bruger i vore
+dage et 10-talsystemet eller det decimale talsystem. SÃ¥dan har det ikke
+vÃ¦ret altid verden over. For omkring 4000 Ã¥r siden brugtes
+60-talsystemet i omrÃ¥ det lige nordvest for Persiske Hav. Lad os lige se
+pÃ¥ tallet 4320. Det bestÃ¥r af 4 tusinder, 3 hundreder, 2 tiere og 0
+enere, hvilket de fleste sikkert tager som en selvfÃ¸lgelighed, men er
+det nu ogsÃ¥ sÃ¥ selvfÃ¸lgelig? Nej, det allerede nÃ¦vnte har sikkert
+allerede rÃ¸bet, at det slet ikke er sÃ¥ enkelt 10-talsystemet er nonsens
 for enhver computer. Den kan alene arbejde i 2-talsystemet. Det skyldes,
 at computeren, som det elektriske apparat den er, reelt kun kan reagere
-på, om der går en strøm i en ledning eller ikke. Hvis der går en strøm,
+pÃ¥, om der gÃ¥r en strÃ¸m i en ledning eller ikke. Hvis der gÃ¥r en strÃ¸m,
 har man vedtaget at registrere tilstanden med tallet 1. Hvis der ikke
-går nogen strøm, registreres det med tallet 0.
+gÃ¥r nogen strÃ¸m, registreres det med tallet 0.
 </para>
 <para>
 2 er grundtal i totalsystemet, som 10 er det i 10-talsystemet og n i
-n-talsystemet. Cifrene i et talsystem udgør altid det antal,
+n-talsystemet. Cifrene i et talsystem udgÃ¸r altid det antal,
 talsystemets grundtal angiver. Grundtallet er normalt det, der giver
 talsystemet dets navn. I totalsystemet er der to cifre (nul og et). I
 titalsystemet er der ti cifre (fra og med 0 til og med 9) osv.
 </para>
 <para>
-Fordi alle talsystemer har 0 som laveste ciffer, bliver højeste ciffer
-en mindre end talsystemets grundtal. I 2-talsystemet bliver det størst
-ciffer således 2 - 1 = 1 og i 10-talsystemet 10 - 1 = 9 og sådan
-fremdeles. Det bageste ciffer (det længst til højre) vil repræsentere
-ciffer gange grundtal i første. Et ciffer i et tal vil altid udgøre
-ciffer gange grundtal i n - 1. Men lad os lade Python gøre det lidt
+Fordi alle talsystemer har 0 som laveste ciffer, bliver hÃ¸jeste ciffer
+en mindre end talsystemets grundtal. I 2-talsystemet bliver det stÃ¸rst
+ciffer sÃ¥ledes 2 - 1 = 1 og i 10-talsystemet 10 - 1 = 9 og sÃ¥dan
+fremdeles. Det bageste ciffer (det lÃ¦ngst til hÃ¸jre) vil reprÃ¦sentere
+ciffer gange grundtal i fÃ¸rste. Et ciffer i et tal vil altid udgÃ¸re
+ciffer gange grundtal i n - 1. Men lad os lade Python gÃ¸re det lidt
 klarere:
 </para>
 
@@ -2761,14 +2761,14 @@ klarere:
 I Python specificeres et hexadecimalt tal ved et foranstillet nul
 efterfulgt af et x og afsluttet med det hexadecimale tal som f.eks. 0x49
 svarende til 9 + 4 * 16 = 73 i vores normale 10-talsystem. Jeg kommer
-ikke nærmere ind på det oktale talsystem (det med grundtallet 8), men
-skal nøjes med kort at nævne, at i det er 7 største ciffer x udelades.
+ikke nÃ¦rmere ind pÃ¥ det oktale talsystem (det med grundtallet 8), men
+skal nÃ¸jes med kort at nÃ¦vne, at i det er 7 stÃ¸rste ciffer x udelades.
 Det betyder, at 0x49 svarer til 0111 (1 ener 1 8-er og 1 64-er eller 8
-** 2) altså 1 + 8 + 64 = 73 i det decimale talsystem. Det kan være
-svært for en begynder at forstå, så lad os se på et par eksempler:
+** 2) altsÃ¥ 1 + 8 + 64 = 73 i det decimale talsystem. Det kan vÃ¦re
+svÃ¦rt for en begynder at forstÃ¥, sÃ¥ lad os se pÃ¥ et par eksempler:
 </para>
 <para>
-Først et eksempel fra 10-talsystemet (decimaltal systemet)
+FÃ¸rst et eksempel fra 10-talsystemet (decimaltal systemet)
 <screen>
 >>> for i in range(0,9):
 ...     print "10 i",i,". er:", 10 ** i
@@ -2784,7 +2784,7 @@ Først et eksempel fra 10-talsystemet (decimaltal systemet)
 10 i 8 . er: 100000000
 >>>
 
-Det binære talsystem:
+Det binÃ¦re talsystem:
 >>> for i in range(0,9):
 ...     print "2 i ",i,". er:", 2 ** i
 ...
@@ -2887,7 +2887,7 @@ Udskriv oktale tal
 >>> a
 73
 
->>> # om der benyttes "store" eller "små"
+>>> # om der benyttes "store" eller "smÃ¥"
 >>> # bogstaver er uden betydning
 >>> a = 0xa5
 >>> a
@@ -2926,34 +2926,34 @@ I tekststrenge erstattes nul af backslach.
 </para>
 <para>
 Det lettest sagte er at funktion chr er gammeldags, vil fra Python 2.4
-være helt out, så det er ene og alene unichr funktionen, der bør
-bruges. Men går vi i dybden, så er det ikke helt så let. Forklaringen
+vÃ¦re helt out, sÃ¥ det er ene og alene unichr funktionen, der bÃ¸r
+bruges. Men gÃ¥r vi i dybden, sÃ¥ er det ikke helt sÃ¥ let. Forklaringen
 er, at chr funktionen i dens oprindelige udformning ene og alene var
-beregnet til karakterer (tal, bogstaver m.m.), hvis numeriske værdi var
+beregnet til karakterer (tal, bogstaver m.m.), hvis numeriske vÃ¦rdi var
 under 129. Til og med Python 2.2 returneredes der en fejlmelding, hvis
-karakterens numeriske værdi var større end 128. Fra og med karakter
+karakterens numeriske vÃ¦rdi var stÃ¸rre end 128. Fra og med karakter
 nummer 129 og tegntabellen ud skulle funktionen unichr bruges. Kort sagt
-er det en større tegntabel, hvor stor ligger sådan lidt hen i det
+er det en stÃ¸rre tegntabel, hvor stor ligger sÃ¥dan lidt hen i det
 uvisse, for Pythons vedkommende bliver den fra version 2.4 enorm stor,
-da man går over til at bruge 64 bits (et ettal efterfulgt af 64 nuller)
-kode. Der må have været en del overvejelser i Python samfundet, om
+da man gÃ¥r over til at bruge 64 bits (et ettal efterfulgt af 64 nuller)
+kode. Der mÃ¥ have vÃ¦ret en del overvejelser i Python samfundet, om
 hvordan chr funktionen skal fungere fremover, for selv i den samme
-version af sproget er der og har der været afvigelser. I den version jeg
+version af sproget er der og har der vÃ¦ret afvigelser. I den version jeg
 bruger lige nu (en Python 2.3) returnerer chr og unichr funktionerne
-tegnnummer 156 således:
+tegnnummer 156 sÃ¥ledes:
 <screen>
 >>> chr(156)
 '\x9c'
 >>> unichr(156)
 u'\x9c'
 </screen>
-I begge tilfælde er returneringen helt i orden. At der står et u foran
-anførselstegnet i unichr returneringen fortæller, at strengen er en
+I begge tilfÃ¦lde er returneringen helt i orden. At der stÃ¥r et u foran
+anfÃ¸rselstegnet i unichr returneringen fortÃ¦ller, at strengen er en
 unicode streng, hvad chr returneringen naturligvis ikke er. FORDI
-returneringen her var i orden, kan der være god grund til at antage, at
-Python har "snydt" lidt, så der i den version jeg bruger lige nu,
+returneringen her var i orden, kan der vÃ¦re god grund til at antage, at
+Python har "snydt" lidt, sÃ¥ der i den version jeg bruger lige nu,
 benyttes samme kode i chr som i unichr funktionerne, men som antydet er
-det ikke altid tilfældet, hvad du vil kunne konstere ved at bruge en
+det ikke altid tilfÃ¦ldet, hvad du vil kunne konstere ved at bruge en
 Python version lavere end 2.3
 </para>
 <para>
@@ -2978,7 +2978,7 @@ l.append(chr(i)) # chr konverteret tal til karakter (character)
 </para>
 <para>
 Tallet 32 er lig med afstanden mellem et "store" bogstavs numeriske
-værdi og det tilsvarende "lille" bogstavs numeriske værdi.
+vÃ¦rdi og det tilsvarende "lille" bogstavs numeriske vÃ¦rdi.
 </para>
 <para>
 <screen>
@@ -2988,7 +2988,7 @@ værdi og det tilsvarende "lille" bogstavs numeriske værdi.
 ...
 >>> uni()
 Skriv et helt tal mellem -1 og 256: 255
-255 ÿ
+255 Ã¿
 </screen>
 </para>
 </sect2>
@@ -2997,15 +2997,15 @@ Skriv et helt tal mellem -1 og 256: 255
 <sect1 id="python-kompleks">
 <title>Komplekse tal</title>
 <para>
-I Python er der naturligvis også støtte for komplekse tal (komplekse tal
+I Python er der naturligvis ogsÃ¥ stÃ¸tte for komplekse tal (komplekse tal
 er sammensat af reelle tal (normale tal) og irrationale tal som f.eks.
-kvadrat- og kubikrod, Pii og uendelige uperiodiske decimalbrøker). De
-immaginære tal skrives med et efterstillet j eller J.
+kvadrat- og kubikrod, Pii og uendelige uperiodiske decimalbrÃ¸ker). De
+immaginÃ¦re tal skrives med et efterstillet j eller J.
 </para>
 <para>
 Komplekse tal med et reelt tal, de ikke er nul, skrives som (reelle tal
-+ immaginære tal med efterstillet j) eller kan dannes ved anvendelse af
-complex(reelt tal, immaginært tal) funktionen.
++ immaginÃ¦re tal med efterstillet j) eller kan dannes ved anvendelse af
+complex(reelt tal, immaginÃ¦rt tal) funktionen.
 </para>
 <para>
 <screen>
@@ -3026,7 +3026,7 @@ complex(reelt tal, immaginært tal) funktionen.
 </screen>
 </para>
 <para>
-Komplekse tal repræsenteres ved en reel og en immaginær del. De to dele
+Komplekse tal reprÃ¦senteres ved en reel og en immaginÃ¦r del. De to dele
 kan adskilles ved brug af kompleksTal.real og kompleksTal.imag:
 <screen>
 >>> a=1.5+0.5j
@@ -3038,8 +3038,8 @@ kan adskilles ved brug af kompleksTal.real og kompleksTal.imag:
 </para>
 <para>
 Konverterings funktionerne for flydende tal og heltal (float(), int()
-and long()) fungerer ikke på komplekse tal. Her skal du anvende
-abs(immaginære del af tal) og komplekseTal.real:
+and long()) fungerer ikke pÃ¥ komplekse tal. Her skal du anvende
+abs(immaginÃ¦re del af tal) og komplekseTal.real:
 <screen>
 >>> a.real
 3.0
@@ -3056,22 +3056,22 @@ abs(immaginære del af tal) og komplekseTal.real:
 <title>Klasser</title>
 
 <para>
-Objekter osm flyvemaskiner, rugbrød og knapper i et Python GUI program
-har egenskaber som eksempelvis, der kan være fælles. Eksempler på
-egenskaber er farve og størrelse. Jo flere egenskaber, de har fælles,
-jo nærmere er de beslægtede. De kan have så mange fælles egenskaber, at
-det bliver naturligt at samle dem i fælles grupper eller klasser. I OOP
-(objektorienteret programmering - se først i bogen) går ud på at udnytte
-(genbruge) fælles egenskaber.
+Objekter osm flyvemaskiner, rugbrÃ¸d og knapper i et Python GUI program
+har egenskaber som eksempelvis, der kan vÃ¦re fÃ¦lles. Eksempler pÃ¥
+egenskaber er farve og stÃ¸rrelse. Jo flere egenskaber, de har fÃ¦lles,
+jo nÃ¦rmere er de beslÃ¦gtede. De kan have sÃ¥ mange fÃ¦lles egenskaber, at
+det bliver naturligt at samle dem i fÃ¦lles grupper eller klasser. I OOP
+(objektorienteret programmering - se fÃ¸rst i bogen) gÃ¥r ud pÃ¥ at udnytte
+(genbruge) fÃ¦lles egenskaber.
 </para>
 <para>
-Klasser repræsenterer grupper af objekter med fælles egenskaber. At
-egenskaberne er fælles kan i høj grad bruges til noget, når det gælder
-Python og andre objektorienterede computersprog. Programmøren skal ikke
-genopfinde de fælles egenskaber, men kan lade sine klasser arve de
+Klasser reprÃ¦senterer grupper af objekter med fÃ¦lles egenskaber. At
+egenskaberne er fÃ¦lles kan i hÃ¸j grad bruges til noget, nÃ¥r det gÃ¦lder
+Python og andre objektorienterede computersprog. ProgrammÃ¸ren skal ikke
+genopfinde de fÃ¦lles egenskaber, men kan lade sine klasser arve de
 egenskaber andre klasser allerede er i besiddelse af. Han eller hun
-fortæller Python, at der skal oprettes en klasse ved at indsætte
-nøgleordet class først på en programlinje eks:
+fortÃ¦ller Python, at der skal oprettes en klasse ved at indsÃ¦tte
+nÃ¸gleordet class fÃ¸rst pÃ¥ en programlinje eks:
 </para>
 <para>
 <screen>
@@ -3081,9 +3081,9 @@ class Klasse:
 </para>
 <para>
 Det viste eksempel arver ikke direkte nogen som helst egenskaber, men
-der skal selvfølgelig en masse kode til for at danne de nødvendige
+der skal selvfÃ¸lgelig en masse kode til for at danne de nÃ¸dvendige
 forbindelser (interface mellem eksemplet og fortolkeren). Det kan
-følgende antyde:
+fÃ¸lgende antyde:
 </para>
 <para>
 <screen>
@@ -3091,7 +3091,7 @@ følgende antyde:
 ['__doc__', '__module__']
 >>>
 
-Her ser du endnu et eksempel, på hvor beskeden en fuldgyldig Python klasse kan være:
+Her ser du endnu et eksempel, pÃ¥ hvor beskeden en fuldgyldig Python klasse kan vÃ¦re:
 
 >>> class Klasse:
 	""" Dette er en fuldgyldig Python klasse."""
@@ -3103,16 +3103,16 @@ Her ser du endnu et eksempel, på hvor beskeden en fuldgyldig Python klasse kan v
 </screen>
 </para>
 <para>
-Defineringen skal indledes med class, der skal efterfølges af et
-lovligt navn og et kolon, hvor sidstnævnte er indledningen til
+Defineringen skal indledes med class, der skal efterfÃ¸lges af et
+lovligt navn og et kolon, hvor sidstnÃ¦vnte er indledningen til
 klassens krop. Denne indledning er samtidig indledningen af en blok. I
-denne blok skal der være mindst en fejlfri programlinje. De er der i
+denne blok skal der vÃ¦re mindst en fejlfri programlinje. De er der i
 begge de viste eksempler, hvorfor de er helt OK. Det vil jeg godt se et
-bevis på lige nu og her:
+bevis pÃ¥Â lige nu og her:
 </para>
 <para>
 <screen>
-Det kan vi få en kontrol på lige her og nu:
+Det kan vi fÃ¥ en kontrol pÃ¥ lige her og nu:
 
 >>> class Klasse:
 	""" Dette er en fuldgyldig Python klasse."""
@@ -3131,16 +3131,16 @@ Det kan vi få en kontrol på lige her og nu:
 </screen>
 </para>
 <para>
-Klasse opfylder alle betingelser for at være en fuldgyldig Python
-klasse. Den begynder med nøgleordet class, har et navn, der er fuldt
+Klasse opfylder alle betingelser for at vÃ¦re en fuldgyldig Python
+klasse. Den begynder med nÃ¸gleordet class, har et navn, der er fuldt
 lovligt og dermed brugbart, og den omfatter en krop, der begynder med
-kolon og den i Python obligatoriske indrykning. Nøgleordet pass gør
-ingen ting, og det er netop formålet med pass.
+kolon og den i Python obligatoriske indrykning. NÃ¸gleordet pass gÃ¸r
+ingen ting, og det er netop formÃ¥let med pass.
 </para>
 <para>
-Som vist kan det konstateres, at Klasse virkelig er en fuld færdig og
+Som vist kan det konstateres, at Klasse virkelig er en fuld fÃ¦rdig og
 lovlig Python klasse ved fra interaktiv mode at skrive klassenavnet
-(Klasse) og trykke på Enter-tasten.
+(Klasse) og trykke pÃ¥ Enter-tasten.
 </para>
 <para>
 <screen>
@@ -3153,8 +3153,8 @@ Test:
 </screen>
 </para>
 <para>
-I Python er der en række muligheder for at få uddybende informationer om
-en klasse. Dem vil vi se på her i indledningen til afsnittet om klasser:
+I Python er der en rÃ¦kke muligheder for at fÃ¥ uddybende informationer om
+en klasse. Dem vil vi se pÃ¥ her i indledningen til afsnittet om klasser:
 </para>
 <para>
 <screen>
@@ -3162,7 +3162,7 @@ en klasse. Dem vil vi se på her i indledningen til afsnittet om klasser:
 &lt;built-in function dir>
 
 Den fordefinerede eller i Python indbyggede (built-in) funktion dir kan med
-sin parameterliste fortælle, om Klasse nu også er en klasse.
+sin parameterliste fortÃ¦lle, om Klasse nu ogsÃ¥ er en klasse.
 
 >>> dir()
 ['Klasse', 'PyShell', '__builtins__', '__doc__', '__name__']
@@ -3170,9 +3170,9 @@ sin parameterliste fortælle, om Klasse nu også er en klasse.
 </screen>
 </para>
 <para>
-Der oprettes en liste, hvis første element er klassenavnet selv. Ved
+Der oprettes en liste, hvis fÃ¸rste element er klassenavnet selv. Ved
 konstruktionen af Klasse er PyShell anvendt, hvad PyShell er, kan vi
-også få oplyst:
+ogsÃ¥ fÃ¥ oplyst:
 </para>
 <para>
 <screen>
@@ -3182,8 +3182,8 @@ også få oplyst:
 </screen>
 </para>
 <para>
-Det kan vel næppe komme som en overraskelse, at der er anvendt et modul
-til konstruktionen af vores Klasse, men prøv lige selv at lave følgende
+Det kan vel nÃ¦ppe komme som en overraskelse, at der er anvendt et modul
+til konstruktionen af vores Klasse, men prÃ¸v lige selv at lave fÃ¸lgende
 test, og du vil overraskes over, hvor mange stumper, der er anvendt til
 konstruktionen:
 </para>
@@ -3200,8 +3200,8 @@ Nederst i den lange udskrift, hvorfra jeg kun har medtaget starten, genfinder du
 </screen>
 </para>
 <para>
-Helt tilsvarende kan man få oplysning, om hvilke programstumper (OOP
-dele), der indgår i Klasse:
+Helt tilsvarende kan man fÃ¥ oplysning, om hvilke programstumper (OOP
+dele), der indgÃ¥r i Klasse:
 </para>
 <para>
 <screen>
@@ -3211,8 +3211,8 @@ dele), der indgår i Klasse:
 </screen>
 </para>
 <para>
-Dem vil vi se nærmere på i forbindelse med Klasse, men Klasse er
-defineret tom, så vi behøver en udvidelse af erklæringen:
+Dem vil vi se nÃ¦rmere pÃ¥ i forbindelse med Klasse, men Klasse er
+defineret tom, sÃ¥ vi behÃ¸ver en udvidelse af erklÃ¦ringen:
 <screen>
 >>> class Klasse:
 	def _init_(self):
@@ -3220,11 +3220,11 @@ defineret tom, så vi behøver en udvidelse af erklæringen:
 </screen>
 </para>
 <para>
-"def _init_(Klasse)" er på sin vis 3 ting: 1: definering af funktionen
-_init_ og 2: initialisering (grundlæggende værditildeling til Klasse)
-og 3: Klasses konstruktør. Argumentet self fortæller, at Klassen bruger
+"def _init_(Klasse)" er pÃ¥ sin vis 3 ting: 1: definering af funktionen
+_init_ og 2: initialisering (grundlÃ¦ggende vÃ¦rditildeling til Klasse)
+og 3: Klasses konstruktÃ¸r. Argumentet self fortÃ¦ller, at Klassen bruger
 sine egne egenskaber, hvad det vil sige, skal vi snart se, men lad os
-først lave endnu en kontrol:
+fÃ¸rst lave endnu en kontrol:
 </para>
 <para>
 </para>
@@ -3244,7 +3244,7 @@ Vi ser, at _init_ er indsat som element i listen.
 <para>
 </para>
 <para>
-Vi har endnu ikke importeret et modul. Det vil vi gøre:
+Vi har endnu ikke importeret et modul. Det vil vi gÃ¸re:
 </para>
 <para>
 </para>
@@ -3267,19 +3267,19 @@ Test:
 >>>
 </para>
 <para>
-Når Python-fortolkeren indleder kørslen af et program, er værdien
-af _name_ lig med _main_ (læg godt mærke til det, for programlinjen
-indgår i en lang række af bogens eksempler, hvor det er svært at
-kommentere og samtidig bevare læsbarheden, og den derfor udelades
+NÃ¥r Python-fortolkeren indleder kÃ¸rslen af et program, er vÃ¦rdien
+af _name_ lig med _main_ (lÃ¦g godt mÃ¦rke til det, for programlinjen
+indgÃ¥r i en lang rÃ¦kke af bogens eksempler, hvor det er svÃ¦rt at
+kommentere og samtidig bevare lÃ¦sbarheden, og den derfor udelades
 programlinjen er if _name_ == "_main_": eks. if __name__ == '__main__':
-Dialog().mainloop() det skal læses som: Hvis det er klassen Dialog, der
-startes op, så skal løkken mainloop startes op - den kontrollerer, om
-der indtræder nye hændelser (events) fra program og/eller bruger.)
+Dialog().mainloop() det skal lÃ¦ses som: Hvis det er klassen Dialog, der
+startes op, sÃ¥ skal lÃ¸kken mainloop startes op - den kontrollerer, om
+der indtrÃ¦der nye hÃ¦ndelser (events) fra program og/eller bruger.)
 </para>
 <para>
 Namespace og scope er to navne for det samme - at angive et navns
-virkningsområde eller sagt på en anden måde det område, hvori navnet
-kan bruges. Det kan følgende eksempel belyse:
+virkningsomrÃ¥de eller sagt pÃ¥ en anden mÃ¥de det omrÃ¥de, hvori navnet
+kan bruges. Det kan fÃ¸lgende eksempel belyse:
 </para>
 <para>
 <screen>
@@ -3293,8 +3293,8 @@ kan bruges. Det kan følgende eksempel belyse:
 </para>
 <para>
 Klasse har ene og alene mulighed for at kende navnet x og dermed for at
-kunne returnere variablens værdi, fordi v er defineret som global
-variabel (globalt navn). Det fører videre til:
+kunne returnere variablens vÃ¦rdi, fordi v er defineret som global
+variabel (globalt navn). Det fÃ¸rer videre til:
 </para>
 <para>
 <screen>
@@ -3302,22 +3302,22 @@ x = 1 # global variabel
 </screen>
 </para>
 <para>
-# ændrer den lokale variabel x (shadows (skygger for) den globale variabel
+# Ã¦ndrer den lokale variabel x (shadows (skygger for) den globale variabel
 def a():
 	x = 25
 </para>
 <para>
-	print "\nVærdien i den lokale x er", x, "efter defineringen og kaldet af a"
+	print "\nVÃ¦rdien i den lokale x er", x, "efter defineringen og kaldet af a"
 	x += 1
-	print "Den lokale x (den i a) er",x, #før a forlades"
+	print "Den lokale x (den i a) er",x, #fÃ¸r a forlades"
 </para>
 <para>
-# ænder den globale variabel x
+# Ã¦nder den globale variabel x
 def b():
 	global x
 	print "\nDen globale x er nu",x,"Ved kald fra b"
 	x *= 10
-	print "Globale x er",x,"når b er forladt"
+	print "Globale x er",x,"nÃ¥r b er forladt"
 </para>
 <para>
 print "Globale x er",x
@@ -3336,7 +3336,7 @@ print "\nGlobale x er" ,x
 <para>
 </para>
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 </para>
 <para>
 </para>
@@ -3347,24 +3347,24 @@ Globale x er 1
 Globale x er 7
 </para>
 <para>
-Værdien i den lokale x er 25 efter defineringen og kaldet af a
+VÃ¦rdien i den lokale x er 25 efter defineringen og kaldet af a
 </para>
 <para>
 Den lokale x (den i a) er 26
 Den globale x er nu 7 Ved kald fra b
 </para>
 <para>
-Globale x er 70 når b er forladt
+Globale x er 70 nÃ¥r b er forladt
 </para>
 <para>
-Værdien i den lokale x er 25 efter defineringen og kaldet af a
+VÃ¦rdien i den lokale x er 25 efter defineringen og kaldet af a
 </para>
 <para>
 Den lokale x (den i a) er 26
 Den globale x er nu 70 Ved kald fra b
 </para>
 <para>
-Globale x er 700 når b er forladt
+Globale x er 700 nÃ¥r b er forladt
 </para>
 <para>
 Globale x er 700
@@ -3382,9 +3382,9 @@ Globale x er 700
 </para>
 <para>
 Klasse.i og Klasse.f er begge lovlige attribut referencer, der
-henholdsvis returnerer et heltal og brugt på rette måde resultatet af
-en metodeafvikling. Læg mærke til, at for at få nævnte resultat
-returneret, så skal både klasse og metode have parameterliste.
+henholdsvis returnerer et heltal og brugt pÃ¥ rette mÃ¥de resultatet af
+en metodeafvikling. LÃ¦g mÃ¦rke til, at for at fÃ¥ nÃ¦vnte resultat
+returneret, sÃ¥ skal bÃ¥de klasse og metode have parameterliste.
 </para>
 <para>
 <screen>
@@ -3393,9 +3393,9 @@ returneret, så skal både klasse og metode have parameterliste.
 >>> print Klasse().f()
 Python klasser er i en klasse for sig.
 </screen>
-Har du gemt nogle af dine definitioner i py filer, har du for så vidt
-allerede lavet Python moduler, der principielt fuldstændig svarer til de
-fordefinerede moduler i Python. Men skriv de to følgende funktioner i en
+Har du gemt nogle af dine definitioner i py filer, har du for sÃ¥ vidt
+allerede lavet Python moduler, der principielt fuldstÃ¦ndig svarer til de
+fordefinerede moduler i Python. Men skriv de to fÃ¸lgende funktioner i en
 editor og gem dem med navnet fibonacci.py
 <screen>
 def fib(n):
@@ -3413,9 +3413,9 @@ def fib2(n):
 </screen>
 </para>
 <para>
-fibonacci.py er et ganske normalt python modul og skal derfor også
-importeres på den helt normale måde. Start Python op i interaktiv mode
-og skriv følgende kode:
+fibonacci.py er et ganske normalt python modul og skal derfor ogsÃ¥
+importeres pÃ¥ den helt normale mÃ¥de. Start Python op i interaktiv mode
+og skriv fÃ¸lgende kode:
 </para>
 <para>
 >>> import fibonacci
@@ -3423,7 +3423,7 @@ og skriv følgende kode:
 >>> fibonacci.fib2(100)
 </para>
 <para>
-Gør du det vil programafviklingen se således ud:
+GÃ¸r du det vil programafviklingen se sÃ¥ledes ud:
 >>> import fibonacci
 >>> fibonacci.fib(100)
 1 1 2 3 5 8 13 21 34 55 89
@@ -3437,21 +3437,21 @@ Hvis du har til hensigt at bruge en funktion ofte, kan du tildele den et lokalt 
 >>> f = fibonacci.fib
 </para>
 <para>
-Et kørselsresultat:
+Et kÃ¸rselsresultat:
 >>> f(500)
 1 1 2 3 5 8 13 21 34 55 89 144 233 377
 >>>
 </para>
 <para>
 <screen>
-Naturligvis kan du også bruge  type og dir  funktionerne på fibonacci.py:
+Naturligvis kan du ogsÃ¥ bruge  type og dir  funktionerne pÃ¥ fibonacci.py:
 >>> type(fibonacci)
 &lt;type 'module'&gt;
-fibonacci.py er altså et modul, hvad vi  vel nok kunne ane.
+fibonacci.py er altsÃ¥ et modul, hvad vi  vel nok kunne ane.
 >>> dir(fibonacci)
 ['__builtins__', '__doc__', '__file__', '__name__', 'fib', 'fib2']
 Her returneres liste indeholdende alle navne, variabler, moduler,
-funktioner m.v., der er defineret i øjeblikket.
+funktioner m.v., der er defineret i Ã¸jeblikket.
 >>> dir()
 ['__builtins__', '__doc__', '__name__', 'fibonacci']
 >>>
@@ -3459,9 +3459,9 @@ funktioner m.v., der er defineret i øjeblikket.
 </para>
 <para>
 Uden argumenter returnerer \dir() de navne, du har defineret i
-øjeblikket. Det drejer sig alene om fibonacci modulet. dir() lister ikke
+Ã¸jeblikket. Det drejer sig alene om fibonacci modulet. dir() lister ikke
 den indbyggede (fordefinerede) funktioners og variablers navne, hvis du
-ønsker at se dem, så kan det ske ved at udskrive en liste af
+Ã¸nsker at se dem, sÃ¥ kan det ske ved at udskrive en liste af
 standardmodulet  \__bultin__ 's indhold:
 </para>
 <para>
@@ -3473,7 +3473,7 @@ standardmodulet  \__bultin__ 's indhold:
 </screen>
 </para>
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 >>> sys.path
 ['', '/usr/local/lib/python23.zip', '/usr/local/lib/python2.3', '/usr/local/lib/
 python2.3/plat-linux2','/usr/local/lib/python2.3/lib-tk', '/usr/local/lib/
@@ -3485,7 +3485,7 @@ python2.3/lib-dynload', '/usr/local/lib/python2.3/site-packages']
 </para>
 <para>
 <screen>
-Et kørselsresultat:
+Et kÃ¸rselsresultat:
 >>> PYTHONPATH
 ['', '/usr/local/lib/python23.zip', '/usr/local/lib/python2.3', '/usr/local/lib/
 python2.3/plat-linux2', '/usr/local/lib/python2.3/lib-tk', '/usr/local/lib/
@@ -3495,12 +3495,12 @@ python2.3/lib-dynload', '/usr/local/lib/python2.3/site-packages']
 </para>
 <para>
 Som du ser, returnerer PYTHONPATH en liste. I den er de aktuelle stier,
-de stier hvori fortolkeren vil søge for at finde moduler m.v. Det kan du
-udnytte ved at tilføje det eller de biblioteker, hvori du gemmer dine
+de stier hvori fortolkeren vil sÃ¸ge for at finde moduler m.v. Det kan du
+udnytte ved at tilfÃ¸je det eller de biblioteker, hvori du gemmer dine
 selvkomponerede klasser, som element eller elementer. I det store og
 hele er det underordnet, hvor du placerer dine moduler. Jeg oprettede
-biblioteket mineModuler i mit brugerområdes rod. Nu kan jeg flytte mine
-moduler dertil og indsætte biblioteket som element i listen:
+biblioteket mineModuler i mit brugeromrÃ¥des rod. Nu kan jeg flytte mine
+moduler dertil og indsÃ¦tte biblioteket som element i listen:
 </para>
 <para>
 <screen>
@@ -3508,7 +3508,7 @@ PYTHONPATH.append("/home/ajbo/mineModuler")
 </screen>
 </para>
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 >>> PYTHONPATH
 ['', '/usr/local/lib/python23.zip', '/usr/local/lib/python2.3',
 '/usr/local/lib/python2.3/plat-linux2',
@@ -3518,8 +3518,8 @@ Kørselsresultat:
 </para>
 <para>
 <screen>
-Det er også muligt at adskille sys.path og PYTHONPATH,
-så de hver især kan bruges efter behov:
+Det er ogsÃ¥ muligt at adskille sys.path og PYTHONPATH,
+sÃ¥ de hver isÃ¦r kan bruges efter behov:
 >>> PYTHONPATH = "/home/ajbo/mineModuler"
 >>> PYTHONPATH
 '/home/ajbo/mineModuler'
@@ -3534,10 +3534,10 @@ så de hver især kan bruges efter behov:
 <para>
 </para>
 <para>
-Del sætningen kan bruges på 2 forskellige måder. Der er en måde, hvorpå
+Del sÃ¦tningen kan bruges pÃ¥ 2 forskellige mÃ¥der. Der er en mÃ¥de, hvorpÃ¥
 et element kan fjernes fra en liste ud fra elementets indeks-nummer i
 stedet for selve elementet. Den kan bruges til at fjerne slices fra en
-liste. Og som eks. 2 viser kan del også fjerne selve listen.
+liste. Og som eks. 2 viser kan del ogsÃ¥ fjerne selve listen.
 <screen>
 Eksempel 1:
 >>> liste = [-1, 1, 66.6, 333, 333, 1234.5]
@@ -3566,7 +3566,7 @@ Eksempel 3:
 <sect2 id="python-sort-1">
 <title>Sortering af basale typer</title>
 <para>
-I mange computersprog bruges nogenlunde følgende rutine, når værdierne
+I mange computersprog bruges nogenlunde fÃ¸lgende rutine, nÃ¥r vÃ¦rdierne
 i to variabler skal bytte plads f.eks. i en sorteringsrutine:
 <screen>
 >>> a = 50; b = 25
@@ -3594,8 +3594,8 @@ Sortering af elementerne i en liste foretages let med sort() funktionen:
 </screen>
 </para>
 <para>
-Ud fra det, jeg har været inde på et eller flere andre steder i bogen,
-kan du passende forsøge at forklare, hvorfor også den følgende sortering
+Ud fra det, jeg har vÃ¦ret inde pÃ¥ et eller flere andre steder i bogen,
+kan du passende forsÃ¸ge at forklare, hvorfor ogsÃ¥ den fÃ¸lgende sortering
 er korrekt, for det er den.
 </para>
 <para>
@@ -3611,7 +3611,7 @@ er korrekt, for det er den.
 Sort funktionen kan anvendes uden parameter eller med en funktion som
 parameter. Anvendelsen uden parameter, som vist ovenfor, svarer helt til
 sort(cmp), hvor cmp() er en fordefineret funktion der sammenligner to
-værdier, x og y, og returnerer -1,0 og 1 afhængig af om\ x < y, x == y
+vÃ¦rdier, x og y, og returnerer -1,0 og 1 afhÃ¦ngig af om\ x < y, x == y
 eller \ x > y.
 </para>
 <para>
@@ -3627,7 +3627,7 @@ Eller:
 [2, 4, 5, 6, 12, 34, 78]
 >>>
 
-Hvis du ønsker det, kan du let lave din egen sammenligningsfunktion:
+Hvis du Ã¸nsker det, kan du let lave din egen sammenligningsfunktion:
 
 >>> def Sam(a,b):
 ...     return a - b
@@ -3640,9 +3640,9 @@ Hvis du ønsker det, kan du let lave din egen sammenligningsfunktion:
 </screen>
 </para>
 <para>
-Lambda kan være svær at forstå virkningen af. Som jeg er inde på
-andetsteds, så opererer lambda i baggrunden. Lad os se på Sam() ovenfor
-igen. Sam er en funktion med sit eget navn. Sam() trækker b fra a. Ved
+Lambda kan vÃ¦re svÃ¦r at forstÃ¥ virkningen af. Som jeg er inde pÃ¥
+andetsteds, sÃ¥ opererer lambda i baggrunden. Lad os se pÃ¥ Sam() ovenfor
+igen. Sam er en funktion med sit eget navn. Sam() trÃ¦kker b fra a. Ved
 brug af lambda kan denne operation flyttes op i sort's parameterliste:
 <screen>
 >>> l = [2,34,5,4,78,6,1]
@@ -3653,9 +3653,9 @@ brug af lambda kan denne operation flyttes op i sort's parameterliste:
 </screen>
 </para>
 <para>
-Nu kunne jeg imidlertid godt tænke mig at anvende samme lambda på en
-sortering i faldende orden. Det eneste, jeg da skal gøre er at bytte om,
-så
+Nu kunne jeg imidlertid godt tÃ¦nke mig at anvende samme lambda pÃ¥ en
+sortering i faldende orden. Det eneste, jeg da skal gÃ¸re er at bytte om,
+sÃ¥
 <screen>
 >>> l = [2,34,5,4,78,6,1]
 >>> l.sort(lambda a, b : b - a)
@@ -3663,7 +3663,7 @@ så
 [78, 34, 6, 5, 4, 2, 1]
 >>>
 
-Tilsvarende kunne Sam() ganske let ændres til at fortage sortering med
+Tilsvarende kunne Sam() ganske let Ã¦ndres til at fortage sortering med
 faldende orden:
 >>> def Sam(a,b):
 ...     return b - a
@@ -3676,10 +3676,10 @@ faldende orden:
 </screen>
 </para>
 <para>
-I sorteringrutiner er hastighed ofte et vigtigt parameter, så i
+I sorteringrutiner er hastighed ofte et vigtigt parameter, sÃ¥ i
 sorteringer i stigende orden er det bedst at bruge sort uden parametre.
-Ønsker du sortering i faldende orden bliver ekspeditionstiden kortest
-ved at udføre operationen i to omgange. Først foretages en sortering i
+Ã˜nsker du sortering i faldende orden bliver ekspeditionstiden kortest
+ved at udfÃ¸re operationen i to omgange. FÃ¸rst foretages en sortering i
 stigende orden med sort() og derefter anvendes funktionen reverse():
 <screen>
 >>> l = [2,34,5,4,78,6,1]
@@ -3690,8 +3690,8 @@ stigende orden med sort() og derefter anvendes funktionen reverse():
 >>>
 </screen>
 Med strengfunktionen split(), er det enkelt at konvertere en tekststreng
-til en liste. Når det er gjort, kan strengen sorteres helt tilsvarende
-den numeriske sortering, vi har set på ovenfor:
+til en liste. NÃ¥r det er gjort, kan strengen sorteres helt tilsvarende
+den numeriske sortering, vi har set pÃ¥ ovenfor:
 <screen>
 >>> import string
 >>> streng = "Lad os dele opgaven op i enkeltelementer."
@@ -3722,7 +3722,7 @@ Her de samme rutiner med brug af Lambda funktionen:
 ['os', 'opgaven', 'op', 'i', 'enkeltelementer.', 'dele', 'Lad']
 >>>
 
-Her er en kasusafhængig strengsortering med stigende orden,
+Her er en kasusafhÃ¦ngig strengsortering med stigende orden,
 der anvender Lambda funktionen:
 >>> import string
 >>> l = "Lad os dele opgaven op i enkeltelementer.".split()
@@ -3736,7 +3736,7 @@ Og her den samme sortering i faldende orden:
 ['os', 'opgaven', 'op', 'Lad', 'i', 'enkeltelementer.', 'dele']
 >>>
 
-Sorter strengen, indsæt elementerne i en tuple og sæt den
+Sorter strengen, indsÃ¦t elementerne i en tuple og sÃ¦t den
 ind i en liste for senerer sortering:
 
 >>> import string
@@ -3752,7 +3752,7 @@ ind i en liste for senerer sortering:
 >>>
 
 Nu kan listen renses for tuplens indvirkning ved
-(vi har ingen brug for indeksværdierne (tallene)) :
+(vi har ingen brug for indeksvÃ¦rdierne (tallene)) :
 
 >>> nyListe = []
 >>> for springOver, i in listen:
@@ -3762,7 +3762,7 @@ Nu kan listen renses for tuplens indvirkning ved
 ['dele', 'enkeltelementer.', 'i', 'Lad', 'op', 'opgaven', 'os']
 >>>
 
-En anden vej til målet er at lagre de oprindelige data (elementer) som
+En anden vej til mÃ¥let er at lagre de oprindelige data (elementer) som
 listens andet led:
 
 >>> import string
@@ -3795,22 +3795,22 @@ NameError: name 'x' is not defined
 
 <para>
 Ved at fortolke koden bagfra finder Python en fejl i linje 1. Det viser
-sig at være en navnefejl - variablen x er ikke defineret.
+sig at vÃ¦re en navnefejl - variablen x er ikke defineret.
 </para>
 
 <para>
 Der findes ofte rester af forskellig slags i arbejdslageret, er den
-krævede definering en meget stor fordel, for den betyder, at en
-nyerklæret variabel samtidig tildeles en værdi.En variabel i Python
-altid pege på den værdi, som du eller en anden programmør har sat den
-til ved seneste anvendelse. Den kan ganske enkelt ikke pege på en af de
-nævnte datarester.
+krÃ¦vede definering en meget stor fordel, for den betyder, at en
+nyerklÃ¦ret variabel samtidig tildeles en vÃ¦rdi.En variabel i Python
+altid pege pÃ¥ den vÃ¦rdi, som du eller en anden programmÃ¸r har sat den
+til ved seneste anvendelse. Den kan ganske enkelt ikke pege pÃ¥ en af de
+nÃ¦vnte datarester.
 </para>
 
 <para>
 eks. 2
-Vi kunne undgå fejlmeldingen ovenfor ved at tildele variablen en værdi.
-Så er alt for så vidt i orden, i hvert fald i det aktuelle tilfælde:
+Vi kunne undgÃ¥ fejlmeldingen ovenfor ved at tildele variablen en vÃ¦rdi.
+SÃ¥ er alt for sÃ¥ vidt i orden, i hvert fald i det aktuelle tilfÃ¦lde:
 </para>
 
 <para>
@@ -3824,9 +3824,9 @@ except Navnefejl: x = 0
 </para>
 
 <para>
-Fordi variablen er erklæret og tildelt værdi, så kan try løkken
-gennemføres tilfredsstillende, så afviklingen når aldrig frem til
-except løkken.
+Fordi variablen er erklÃ¦ret og tildelt vÃ¦rdi, sÃ¥ kan try lÃ¸kken
+gennemfÃ¸res tilfredsstillende, sÃ¥ afviklingen nÃ¥r aldrig frem til
+except lÃ¸kken.
 </para>
 
 <para>
@@ -3842,9 +3842,9 @@ NameError: name 'Navnefejl' is not defined
 </para>
 
 <para>
-Fordi variablen ikke er erklæret og tildelt værdi, så kan try løkken ikke
-gennemføres tilfredsstillende, så afviklingen når frem til except løkken.
-Her gives fejlmelding, da Navnefejl er ukendt, det samme gælder y, men
+Fordi variablen ikke er erklÃ¦ret og tildelt vÃ¦rdi, sÃ¥ kan try lÃ¸kken ikke
+gennemfÃ¸res tilfredsstillende, sÃ¥ afviklingen nÃ¥r frem til except lÃ¸kken.
+Her gives fejlmelding, da Navnefejl er ukendt, det samme gÃ¦lder y, men
 afviklingen afbrydes inden y behandles.
 </para>
 </sect1>
@@ -3853,31 +3853,31 @@ afviklingen afbrydes inden y behandles.
 <title>Unicode</title>
 <para>
 Python 2.0 kunne anvende grundtypen Unicode strenge. Unicode bruger
-16-bit tal til at repræsentere karakterer i stedet for de 8-bits tal,
+16-bit tal til at reprÃ¦sentere karakterer i stedet for de 8-bits tal,
 der bruges af ASCII. Det betyder, at der i stedet for 256 tegn i en
 tegntabel nu er plads til 65.536 forskellige tegn.
 </para>
 
 <para>
-I Python kildekode, det du skriver, når du programmerer i Python,
+I Python kildekode, det du skriver, nÃ¥r du programmerer i Python,
 skrives Unicode strenge som u"tekststreng". Unicode karakterer ved
-hjælp af escape sekvensen  \\uHHHH, hvor HHHH er et 4-cifret
+hjÃ¦lp af escape sekvensen  \\uHHHH, hvor HHHH er et 4-cifret
 hexadecimalt tal fra 0000 til FFFF. Den
-eksisterende \\xHHHH escape sekvens kan også anvendes. Det samme gælder
-oktale escape sekvenser for karakterer op til U+01FF, der repræsenteres
-af  \\777. Jeg har ikke fundet det nødvendigt at tage eksempler med her,
-men skal gøre opmærksom på at Python 2.4 også skulle kunne håndtere 32
+eksisterende \\xHHHH escape sekvens kan ogsÃ¥ anvendes. Det samme gÃ¦lder
+oktale escape sekvenser for karakterer op til U+01FF, der reprÃ¦senteres
+af  \\777. Jeg har ikke fundet det nÃ¸dvendigt at tage eksempler med her,
+men skal gÃ¸re opmÃ¦rksom pÃ¥ at Python 2.4 ogsÃ¥ skulle kunne hÃ¥ndtere 32
 og 64 bits unicoder.
 </para>
 
 <para>
 En konvertering til Unicode streng returnerer en 8-bit streng i det
-ønskede kodeformat, der eksempelvis kan være   'ascii', 'utf-8' eller
+Ã¸nskede kodeformat, der eksempelvis kan vÃ¦re   'ascii', 'utf-8' eller
 den vi vel nok oftest benytter i Danmark  'iso-8859-1'.
 </para>
 
 <para>
-Sammenføjning af  8-bit og Unicode strenge vil altid returnere en
+SammenfÃ¸jning af  8-bit og Unicode strenge vil altid returnere en
 Unicode streng.
 </para>
 
@@ -3888,26 +3888,26 @@ u'abc'
 </para>
 
 <para>
-2 metoder til målet:
+2 metoder til mÃ¥let:
 </para>
 
 <para>
->>> "Nexø"
+>>> "NexÃ¸"
 'Nex\xf8'
->>> print "Nexø"
-Nexø
+>>> print "NexÃ¸"
+NexÃ¸
 </para>
 <para>
-2 andre metoder til 2 ANDRE mål:
->>> print "Rønne"
-Rønne
+2 andre metoder til 2 ANDRE mÃ¥l:
+>>> print "RÃ¸nne"
+RÃ¸nne
 </para>
 <para>
->>> print str("Rønne")
-Rønne
+>>> print str("RÃ¸nne")
+RÃ¸nne
 </para>
 <para>
-Sådan skulle ord funktionen anvendes i Python med lavere versionsnummer end 2.3:
+SÃ¥dan skulle ord funktionen anvendes i Python med lavere versionsnummer end 2.3:
 </para>
 <para>
 >>> ord(u'\xc6')
@@ -3915,18 +3915,18 @@ Sådan skulle ord funktionen anvendes i Python med lavere versionsnummer end 2.3:
 </para>
 <para>
 Fordi:
->>> ord("Æ")
+>>> ord("Ã†")
 </para>
 <para>
 UnicodeError: ASCII encoding error: ordinal not in range(128)
 </para>
 <para>
-Og sådan nu (med Python version 2.3):
->>> ord("Æ")
+Og sÃ¥dan nu (med Python version 2.3):
+>>> ord("Ã†")
 198
 </para>
 <para>
-Talværdien 198 er bogstavets korrekte nummer i Unicode tabellen.
+TalvÃ¦rdien 198 er bogstavets korrekte nummer i Unicode tabellen.
 </para>
 <para>
 >>> u"Computersproget\u0020Python\u0020er\u0020fra\u00201991"
@@ -3935,16 +3935,16 @@ u'Computersproget Python er fra 1991'
 </para>
 <para>
 Konverter unicode streng til gammeldags 8-bit streng
->>> u"æøåÆØÅ".encode('utf-8')
+>>> u"Ã¦Ã¸Ã¥Ã†Ã˜Ã…".encode('utf-8')
 '\xc3\xa6\xc3\xb8\xc3\xa5\xc3\x86\xc3\x98\xc3\x85'
 >>>
 </para>
 </sect1>
 
 <sect1 id="python-try-except">
-<title>Prøv ... Ellers</title>
+<title>PrÃ¸v ... Ellers</title>
 <para>
-BEMÆRK Pythons indrykninger SKAL bevares, ellers KAN eksemplet ikke afvikles:
+BEMÃ†RK Pythons indrykninger SKAL bevares, ellers KAN eksemplet ikke afvikles:
 </para>
 <para>
 <screen>
@@ -3953,41 +3953,41 @@ BEMÆRK Pythons indrykninger SKAL bevares, ellers KAN eksemplet ikke afvikles:
 		indkomst = int(raw_input("Skriv et helt tal: "))
 		break
 	except ValueError:
-		print "Tallet var ikke et heltal (an integer). Prøv igen..."
+		print "Tallet var ikke et heltal (an integer). PrÃ¸v igen..."
 </screen>
 </para>
 <para>
 </para>
 <para>
 Skriv et helt tal: 23.6
-Tallet var ikke et heltal (an integer). Prøv igen...
+Tallet var ikke et heltal (an integer). PrÃ¸v igen...
 Skriv et helt tal: 24
 >>>
 </para>
 <para>
-Af hensyn til overskueligheden og til den absolut nødvendige bevarelse
-af indrykningerne,  kommenterer jeg først eksemplet her:
-while 1: læses som lige så længe påstanden er sand, så skal blokken
+Af hensyn til overskueligheden og til den absolut nÃ¸dvendige bevarelse
+af indrykningerne,  kommenterer jeg fÃ¸rst eksemplet her:
+while 1: lÃ¦ses som lige sÃ¥ lÃ¦nge pÃ¥standen er sand, sÃ¥ skal blokken
 indkomst = int(raw_input("Skriv et helt tal: ")) og
-break udføres.
+break udfÃ¸res.
 <screen>
 raw_input("Skriv et helt tal: ")
 </screen>
-modtager en værdi, der lagres et eller
+modtager en vÃ¦rdi, der lagres et eller
 andet sted i computerens arbejdslager, men inden det sker, konverteres
 den til et heltal (an integer) v.h.a. funktionen int().Kan det ske,
-sættes en variabel med navnet indkomst til at pege på stedet i lageret,
-hvor det hele tal findes i form af et antal "ledninger" med og uden strøm 
-på (svarende helt til 1-taller  og 0-er) i vores binære talsystem. Såfremt
-og kun såfremt den indtastede værdi kan tildeles indkomst, så fortsættes
-til næste programlinje break - afbryd while løkken. Er den indtastede
-værdi et heltal, kommer blokken except ValueError: aldrig i brug, så det
-næste Python skal gøre er at melde klar til mere aktiv kommunikation med
+sÃ¦ttes en variabel med navnet indkomst til at pege pÃ¥ stedet i lageret,
+hvor det hele tal findes i form af et antal "ledninger" med og uden strÃ¸m 
+pÃ¥ (svarende helt til 1-taller  og 0-er) i vores binÃ¦re talsystem. SÃ¥fremt
+og kun sÃ¥fremt den indtastede vÃ¦rdi kan tildeles indkomst, sÃ¥ fortsÃ¦ttes
+til nÃ¦ste programlinje break - afbryd while lÃ¸kken. Er den indtastede
+vÃ¦rdi et heltal, kommer blokken except ValueError: aldrig i brug, sÃ¥ det
+nÃ¦ste Python skal gÃ¸re er at melde klar til mere aktiv kommunikation med
 brugeren, hvilket som bekendt meldes med  \>>>
 </para>
 <para>
-Men en gang mere PAS PÅ INDRYKNINGERNE. De SKAL ubetinget være korrekte,
-ellers kan Python-fortolkeren jo ikke afgøre, hvor en blok begynder og
+Men en gang mere PAS PÃ… INDRYKNINGERNE. De SKAL ubetinget vÃ¦re korrekte,
+ellers kan Python-fortolkeren jo ikke afgÃ¸re, hvor en blok begynder og
 slutter.
 </para>
 </sect1>
@@ -3995,7 +3995,7 @@ slutter.
 <sect1 id="python-dictionary">
 <title>Ordbog (dictionary)</title>
 <para>
-Lad os starte gennemgangen af ordbøger (dictionaries)
+Lad os starte gennemgangen af ordbÃ¸ger (dictionaries)
 et helt andet sted, ved et tilbageblik til lister og tuples.
 </para>
 <para>
@@ -4027,14 +4027,14 @@ KeyError: 0
 </screen>
 </para>
 <para>
-Sammenlign nu de ovenstående bevidst ukommenterede eksempler,
-så er vi ligesom klar til at gå videre til det egentlige.
-En ordbog/ordliste adskiller sig fra listen på den måde at
+Sammenlign nu de ovenstÃ¥ende bevidst ukommenterede eksempler,
+sÃ¥ er vi ligesom klar til at gÃ¥ videre til det egentlige.
+En ordbog/ordliste adskiller sig fra listen pÃ¥ den mÃ¥de at
 listen er omgivet af firkaltede parenteser, mens ordbogen er omgivet
-af krøllede parenteser. tuples kan, men ikke nødvendigvis, være omgivet
+af krÃ¸llede parenteser. tuples kan, men ikke nÃ¸dvendigvis, vÃ¦re omgivet
 af almindelige runde parenteser. Mens liste og tuple kan returnere
 element v.h.a. navn og firkantede parenteser indeholdende elementnummer,
-kræver returnering fra en ordbog en lidt mere kompliceret operation. Den vil
+krÃ¦ver returnering fra en ordbog en lidt mere kompliceret operation. Den vil
 vi tage lidt i etaper:
 </para>
 <para>
@@ -4047,14 +4047,14 @@ else:
 </screen>
 </para>
 <para>
-Hvis vi nu i stedet for at tænke på den direkte oversættelse af ordet dictionary (ordbog)
-og i stedet for tænker på den som en ordliste - en indholdsfortegnelse i en bog, så kan det returberede
-2-tal ovenfor fint henvise til den side i bogen, hvor Hasle er omtalt og sådan fremdeles.
+Hvis vi nu i stedet for at tÃ¦nke pÃ¥ den direkte oversÃ¦ttelse af ordet dictionary (ordbog)
+og i stedet for tÃ¦nker pÃ¥ den som en ordliste - en indholdsfortegnelse i en bog, sÃ¥ kan det returberede
+2-tal ovenfor fint henvise til den side i bogen, hvor Hasle er omtalt og sÃ¥dan fremdeles.
 </para>
 <para>
-Hvis vi i stedet for at tænke på the dictionary som indholdslisten tænker på den som en lænke (a link)
-på en hjemmeside, så vil det ofte være således, at en hotlink i form af en virtuel knap med en eller anden påskrift
-ved et klik med musen fører til ankerpladsen - en beskrivelse eller omtale af påskriften, så kunne en ordliste komme
+Hvis vi i stedet for at tÃ¦nke pÃ¥ the dictionary som indholdslisten tÃ¦nker pÃ¥ den som en lÃ¦nke (a link)
+pÃ¥ en hjemmeside, sÃ¥ vil det ofte vÃ¦re sÃ¥ledes, at en hotlink i form af en virtuel knap med en eller anden pÃ¥skrift
+ved et klik med musen fÃ¸rer til ankerpladsen - en beskrivelse eller omtale af pÃ¥skriften, sÃ¥ kunne en ordliste komme
 til at se ud som denne:
 </para>
 <para>
@@ -4070,8 +4070,8 @@ Lille by, der tidligere havde en del stenindustri.
 </screen>
 </para>
 <para>
-Nu er vi vist allerede kommet dertil, hvor Pythons ordbøger kan bruges til noget konstruktivt. Men der er meget mere endnu,
-vi skal se på i den forbindelse.
+Nu er vi vist allerede kommet dertil, hvor Pythons ordbÃ¸ger kan bruges til noget konstruktivt. Men der er meget mere endnu,
+vi skal se pÃ¥ i den forbindelse.
 </para>
 <para>
 <screen>
@@ -4096,7 +4096,7 @@ def nyIndgang(noegle, sidenummer):
 >>>
 >>> indeks
 {'Arnager': [0], 'Bodilsker': [1], 'Pedersker': [2]}
-# Pas på med sidenumrene ellers:
+# Pas pÃ¥ med sidenumrene ellers:
 >>> nyIndgang("Arnager",0)
 >>> nyIndgang("Bolsker",0)
 >>> indeks
@@ -4104,9 +4104,9 @@ def nyIndgang(noegle, sidenummer):
 </screen>
 </para>
 <para>
-Mange har anskaffet et eller flere af de efterhånden prisbillige digitale kameraer. De lagrer oftest billederne i jpg eller tif format. Førstnævnte er det mest velegnede til hjemmesider m.v. Samme filtype kan desværre ikke uden videre anvendes af Python - der skal
-et ekstra modul til. Derfor kan det være en fordel at konvertere billeder til gif formater, der har en række fordele frem for jpg formatet, med generelt fylder en smule mere. Tif formatet fylder temmelig mere end de to andre formater. Det skyldes primært at tif kan gemme
-flere farver - farver der ofte er usynlige for det menneskelige øje. Her vil jeg ene og alene vise, hvordan gif og jpg formaterne hentes inde i Python programmer.
+Mange har anskaffet et eller flere af de efterhÃ¥nden prisbillige digitale kameraer. De lagrer oftest billederne i jpg eller tif format. FÃ¸rstnÃ¦vnte er det mest velegnede til hjemmesider m.v. Samme filtype kan desvÃ¦rre ikke uden videre anvendes af Python - der skal
+et ekstra modul til. Derfor kan det vÃ¦re en fordel at konvertere billeder til gif formater, der har en rÃ¦kke fordele frem for jpg formatet, med generelt fylder en smule mere. Tif formatet fylder temmelig mere end de to andre formater. Det skyldes primÃ¦rt at tif kan gemme
+flere farver - farver der ofte er usynlige for det menneskelige Ã¸je. Her vil jeg ene og alene vise, hvordan gif og jpg formaterne hentes inde i Python programmer.
 </para>
 <para>
 <screen>
@@ -4131,9 +4131,9 @@ root.mainloop()
 </screen>
 </para>
 <para>
-Det følgende eksempel  kræver PIL installeret - PIL håndterer over
-30 formater PIL kan hentes fra www.pythonware.com til såvel Windows
-som Linux. Pas på at få den rette (nyeste) version af det gratis eller
+Det fÃ¸lgende eksempel  krÃ¦ver PIL installeret - PIL hÃ¥ndterer over
+30 formater PIL kan hentes fra www.pythonware.com til sÃ¥vel Windows
+som Linux. Pas pÃ¥ at fÃ¥ den rette (nyeste) version af det gratis eller
 evt. det kommercielle modul.
 </para>
 <para>
@@ -4167,7 +4167,7 @@ def opretArvinger(root):
     arbejdsplads.pack(side=LEFT, expand=YES, fill=BOTH)
     tilslutAfbryd = Button(root, text='Start', command=onStart)
     tilslutAfbryd.pack(fill=BOTH)
-    Button(root, text='Åbn',  command=onOpen).pack(fill=BOTH)
+    Button(root, text='Ã…bn',  command=onOpen).pack(fill=BOTH)
     Button(root, text='Klokke',  command=onBeep).pack(fill=BOTH)
     Button(root, text='Afbryd',  command=onQuit).pack(fill=BOTH)
 def onStart():
@@ -4227,7 +4227,7 @@ def opretArvinger(root):
     arbejdsplads.pack(side=LEFT, expand=YES, fill=BOTH)
     tilslutAfbryd = Button(root, text='Start', command=onStart)
     tilslutAfbryd.pack(fill=BOTH)
-    Button(root, text='Åbn',  command=onOpen).pack(fill=BOTH)
+    Button(root, text='Ã…bn',  command=onOpen).pack(fill=BOTH)
     Button(root, text='Klokke',  command=onBeep).pack(fill=BOTH)
     Button(root, text='Afbryd',  command=onQuit).pack(fill=BOTH)
 def onStart():
@@ -4291,12 +4291,12 @@ root.mainloop()
 
 <para>
 <screen>
-Eksempler på anvendelse af repr funktionen:
->>> print "Rønne"
-Rønne
->>> print str("Rønne")
-Rønne
->>> print repr("Rønne")
+Eksempler pÃ¥ anvendelse af repr funktionen:
+>>> print "RÃ¸nne"
+RÃ¸nne
+>>> print str("RÃ¸nne")
+RÃ¸nne
+>>> print repr("RÃ¸nne")
 'R\xf8nne'
 
 >>> str(0.1)
@@ -4306,9 +4306,9 @@ Rønne
 
 >>> x = 10 * 3.25
 y = 200 * 200
-s = 'Værdien af x er ' + repr(x) + ', af y er den ' + repr(y) + '...'
+s = 'VÃ¦rdien af x er ' + repr(x) + ', af y er den ' + repr(y) + '...'
 print s>>> >>> >>>
-Værdien af x er 32.5, af y er den 40000...
+VÃ¦rdien af x er 32.5, af y er den 40000...
 
 >>> x = 20; y = x ** 3
 >>> repr((x, y, ('tomater', 'ostemad')))
@@ -4321,29 +4321,29 @@ Værdien af x er 32.5, af y er den 40000...
 <sect1 id="python-strings">
 <title>Tekststrenge</title>
 <para>
-En tekststreng er alt mellem dobbelte eller enkelte anførselstegn
+En tekststreng er alt mellem dobbelte eller enkelte anfÃ¸rselstegn
 <screen>
-Tekststeng mellem dobbelte anførselstegn:
+Tekststeng mellem dobbelte anfÃ¸rselstegn:
 >>> print "Velkommen til Python!"
 Velkommen til Python!
 </screen>
 </para>
 <para>
-Tekststeng mellem enkelte anførselstegn:
+Tekststeng mellem enkelte anfÃ¸rselstegn:
 >>> print 'Velkommen til Python!'
 Velkommen til Python!
 </para>
 <para>
-print "Tekststreng med \"dobbelte anførselstegn.\""
-print 'En streng med "dobbelte anførselstegn."'
-print 'Tekststreng med \'enkelte anførselstegn.\''
-print "En streng med 'enkelte anførselstegn.'"
-print """Strengen her har "dobbelte anførselstegn"og 'enkelte anførselstegn'.
+print "Tekststreng med \"dobbelte anfÃ¸rselstegn.\""
+print 'En streng med "dobbelte anfÃ¸rselstegn."'
+print 'Tekststreng med \'enkelte anfÃ¸rselstegn.\''
+print "En streng med 'enkelte anfÃ¸rselstegn.'"
+print """Strengen her har "dobbelte anfÃ¸rselstegn"og 'enkelte anfÃ¸rselstegn'.
    Du kan tilmed udskrive over flere linjer."""
-print '''Denne streng har også "dobbelte"og 'enkelte' anførselstegn.'''
+print '''Denne streng har ogsÃ¥ "dobbelte"og 'enkelte' anfÃ¸rselstegn.'''
 </para>
 <para>
-Anførselstegnene skal være samme slags:
+AnfÃ¸rselstegnene skal vÃ¦re samme slags:
 >>> 'Velkommen til Python! "
 SyntaxError: EOL while scanning single-quoted string
 </para>
@@ -4355,7 +4355,7 @@ SyntaxError: EOL while scanning single-quoted string
 print "Velkommen\ntil\n\nPython!"
 </para>
 <para>
-Strenge kan lægges sammen:
+Strenge kan lÃ¦gges sammen:
 >>> print "Velkommen " + 'til Python'
 Velkommen til Python
 </para>
@@ -4370,9 +4370,9 @@ Velkommen til Python! Velkommen til Python! Velkommen til Python!
 </para>
 <para>
 Strenge kan sammenlignes:
->>> "æøå" < "ÆØÅ"
+>>> "Ã¦Ã¸Ã¥" < "Ã†Ã˜Ã…"
 False
->>> "ÆØÅ" < "æøå"
+>>> "Ã†Ã˜Ã…" < "Ã¦Ã¸Ã¥"
 True
 >>>
 >>> 'Python' < 'Pascal'<'ABC' < 'C'
@@ -4409,7 +4409,7 @@ sum = integer1 + heltal2
 print "Summen af de to heltal er ", sum
 </para>
 <para>
-Linjeskifte indsættes med \n
+Linjeskifte indsÃ¦ttes med \n
 >>> print "Velkommen\ntil\n\nPython!"
 Velkommen
 til
@@ -4418,15 +4418,15 @@ til
 Python!
 </para>
 <para>
-Tabulatorskifte indsættes med \t
+Tabulatorskifte indsÃ¦ttes med \t
 >>> print "Velkommen\ttil\t\tPython!"
 Velkommen       til             Python!
-Bemærk her at tekstfunktionerne oftes knyttes til tekststrengen
+BemÃ¦rk her at tekstfunktionerne oftes knyttes til tekststrengen
 som f.eks. streng.funktionsnavn()
 </para>
 <para>
-# Skriv første streng og konverter til heltal
-tal1 = raw_input( "Indskriv første integer: " )
+# Skriv fÃ¸rste streng og konverter til heltal
+tal1 = raw_input( "Indskriv fÃ¸rste integer: " )
 tal1 = int( tal1)
 </para>
 <para>
@@ -4448,7 +4448,7 @@ if tal1< 2:
 </para>
 <para>
 if tal1> 2:
-   print "%d er større end %d" % ( tal1, tal2)
+   print "%d er stÃ¸rre end %d" % ( tal1, tal2)
 </para>
 <para>
 if tal1<= 2:
@@ -4456,7 +4456,7 @@ if tal1<= 2:
 </para>
 <para>
 if tal1>= 2:
-   print "%d er større end eller lig med %d" % ( tal1, tal2)
+   print "%d er stÃ¸rre end eller lig med %d" % ( tal1, tal2)
 </para>
 <para>
 >>> heltal = 414
@@ -4495,8 +4495,8 @@ Forvalgt eksponentnotation 1.240000e+01
 <para>
 >>> # Udskriver med fordefineret tabulatorbredde 8 tegn
 >>> heltal = 414
->>> print "Højre justeret heltal (%8d)" % heltal
-Højre justeret heltal (     414)
+>>> print "HÃ¸jre justeret heltal (%8d)" % heltal
+HÃ¸jre justeret heltal (     414)
 >>> print "Venstre justeret heltal (%-8d)" % heltal
 Venstre justeret heltal (414     )
 </para>
@@ -4521,7 +4521,7 @@ Gennemtving 6 cifre efter komme i float 12.100000
 <para>
 En streng er en liste. Her udskrives streng som liste:
 >>> s = "Dette er en streng."
->>> l = len(s) # len finder strenglængde
+>>> l = len(s) # len finder strenglÃ¦ngde
 >>> for i in range(0,l):
 ...     print s[i],
 ...
@@ -4532,7 +4532,7 @@ D e t t e   e r   e n   s t r e n g .
 <para>
 eks. 1
 capitalize() funktionen konverterer strengens
-første bogstav til "stort" bogstav.
+fÃ¸rste bogstav til "stort" bogstav.
 </para>
 <para>
 >>> import string
@@ -4540,70 +4540,70 @@ første bogstav til "stort" bogstav.
 'Dette er en mulig anvendelse'
 </para>
 <para>
-eks. 2 Eksempel 1 på en anden måde
+eks. 2 Eksempel 1 pÃ¥ en anden mÃ¥de
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "rødgrød med fløde er godt."
+>>> streng = "rÃ¸dgrÃ¸d med flÃ¸de er godt."
 >>> streng.capitalize()
 'R\xf8dgr\xf8d med fl\xf8de er godt.'
 ELLER:
 >>> print streng.capitalize()
-Rødgrød med fløde er godt.
+RÃ¸dgrÃ¸d med flÃ¸de er godt.
 </screen>
 </para>
 <para>
 De fleste af de mange andre tekstfunktioner anvendes svarende til eksempel
-1 og 2 ovenfor. BEMÆRK hvordan de danske specialtegn erstattes med
-hexadecimale værdier i den første udskrift. Det skyldes, at Python
+1 og 2 ovenfor. BEMÃ†RK hvordan de danske specialtegn erstattes med
+hexadecimale vÃ¦rdier i den fÃ¸rste udskrift. Det skyldes, at Python
 benytter 2 forskellige funktioner i immediate mode ved returneringen
-str() og repr(), hvad følgende kan vise:
+str() og repr(), hvad fÃ¸lgende kan vise:
 </para>
 <para>
 <screen>
->>> print str("rødgrød med fløde er godt.")
-rødgrød med fløde er godt.
->>> print repr("rødgrød med fløde er godt.")
+>>> print str("rÃ¸dgrÃ¸d med flÃ¸de er godt.")
+rÃ¸dgrÃ¸d med flÃ¸de er godt.
+>>> print repr("rÃ¸dgrÃ¸d med flÃ¸de er godt.")
 'r\xf8dgr\xf8d med fl\xf8de er godt.'
 </screen>
 </para>
 <para>
 eks. 3
-center(bredde)funktionen placerer en delstreng i en streng, hvis længde
-angives af det tal, der indsættes i parameterlisten her markeret med
+center(bredde)funktionen placerer en delstreng i en streng, hvis lÃ¦ngde
+angives af det tal, der indsÃ¦ttes i parameterlisten her markeret med
 variablen bredde.
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "Rønne er hovedstaden på Bornholm."
+>>> streng = "RÃ¸nne er hovedstaden pÃ¥ Bornholm."
 >>> s = streng.center(60)
 >>> s
 '             R\xf8nne er hovedstaden p\xe5 Bornholm.              '
 >>> print s
-             Rønne er hovedstaden på Bornholm.
+             RÃ¸nne er hovedstaden pÃ¥ Bornholm.
 </screen>
 </para>
 <para>
 <screen>
 Samme eksempel mere "naturlig":
 >>> import string
->>> print "Rønne er hovedstaden på Bornholm.".center(60)
-             Rønne er hovedstaden på Bornholm.
+>>> print "RÃ¸nne er hovedstaden pÃ¥ Bornholm.".center(60)
+             RÃ¸nne er hovedstaden pÃ¥ Bornholm.
 </screen>
 </para>
 <para>
 eks. 4//
-count(delstreng,begyndMed,slutMed) tæller antal forekomster af delstreng
+count(delstreng,begyndMed,slutMed) tÃ¦ller antal forekomster af delstreng
 i streng.
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "Rønne og Åkirkeby er to bornholmske byer."
+>>> streng = "RÃ¸nne og Ã…kirkeby er to bornholmske byer."
 >>> # Da der ikke er angivet hverken start- eller slutpunkt
->>> # tælles der op i hele strengen.
+>>> # tÃ¦lles der op i hele strengen.
 >>> streng.count("e")
 5
 >>> streng.count("e",6,15)
@@ -4614,20 +4614,20 @@ i streng.
 <screen>
 Eller:
 >>> import string
->>> "Rønne og Åkirkeby er to bornholmske byer.".count("e")
+>>> "RÃ¸nne og Ã…kirkeby er to bornholmske byer.".count("e")
 5
 </screen>
 </para>
 <para>
 eks. 5
-endswith(delstreng, startplads, slutplads) funktionen fortæller, det
+endswith(delstreng, startplads, slutplads) funktionen fortÃ¦ller, det
 den siger - om det er sandt/falskt at strengen slutter delstrengen. Som
-vi har set andre steder, så er 1 lig med sand, mens 0 betyder falsk.
+vi har set andre steder, sÃ¥ er 1 lig med sand, mens 0 betyder falsk.
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "Hammershus er Nordeuropas største borgruin."
+>>> streng = "Hammershus er Nordeuropas stÃ¸rste borgruin."
 >>> streng.endswith(".")
 1
 >>> streng.endswith("n",10, len(streng) - 1)
@@ -4640,10 +4640,10 @@ vi har set andre steder, så er 1 lig med sand, mens 0 betyder falsk.
 <screen>
 Eller:
 >>> import string
->>> s1 = "Hammershus er Nordeuropas største borgruin.".endswith(".")
->>> strenglengde = len("Hammershus er Noreuropas største borgruin")
->>> s2 = "Hammershus er Nordeuropas største borgruin.".endswith("n",10,strenglengde)
->>> s3 = "Hammershus er Nordeuropas største borgruin.".endswith("n",10,12)
+>>> s1 = "Hammershus er Nordeuropas stÃ¸rste borgruin.".endswith(".")
+>>> strenglengde = len("Hammershus er Noreuropas stÃ¸rste borgruin")
+>>> s2 = "Hammershus er Nordeuropas stÃ¸rste borgruin.".endswith("n",10,strenglengde)
+>>> s3 = "Hammershus er Nordeuropas stÃ¸rste borgruin.".endswith("n",10,12)
 >>> print s1, s2, s3
 True True False
 >>> s1, s2, s3
@@ -4651,8 +4651,8 @@ True True False
 </screen>
 </para>
 <para>
-Det første af de to eksempler er udført i Python 2.2, det sidste i
-Python 2.3 derfor forskellen i returneringen af sandhedsværdierne.
+Det fÃ¸rste af de to eksempler er udfÃ¸rt i Python 2.2, det sidste i
+Python 2.3 derfor forskellen i returneringen af sandhedsvÃ¦rdierne.
 </para>
 <para>
 eks. 6//
@@ -4661,7 +4661,7 @@ tabulatorstop er erstattet af mellemrum. Det valgfrie argument
 antalTomme specificerer antal mellemrum  der erstatter en
 tabulatorindrykning. Det forvalgte antal er 8 tegn mellem hvert
 tabulatorstop.
-Bemærk \t for tabulator.
+BemÃ¦rk \t for tabulator.
 </para>
 <para>
 >>> import string
@@ -4683,50 +4683,50 @@ en streng.
 <para>
 <screen>
 >>> import string
->>> streng = "Børnene leger i skolegården."
->>> streng.find("ø")
+>>> streng = "BÃ¸rnene leger i skolegÃ¥rden."
+>>> streng.find("Ã¸")
 1
->>> streng.find("å")
+>>> streng.find("Ã¥")
 22
 </screen>
 </para>
 <para>
 </para>
 <para>
-Hvis du tæller efter, synes det som om Python er gal på den - kan Python
+Hvis du tÃ¦ller efter, synes det som om Python er gal pÃ¥ den - kan Python
 ikke regne? Jo, men det er vist et faktum i alle normale computersprog,
-at en streng er en form for tabel, og så er den god nok, for det er
-vist også fast, at en tabels første værdi er placeret som tabelelement
-nummer nul. Det betyder, at ø reelt er element nummer 1 og å element
-nummer 22 som vist ovenfor. Du kan opnå den "rigtige" position således:
+at en streng er en form for tabel, og sÃ¥ er den god nok, for det er
+vist ogsÃ¥ fast, at en tabels fÃ¸rste vÃ¦rdi er placeret som tabelelement
+nummer nul. Det betyder, at Ã¸ reelt er element nummer 1 og Ã¥ element
+nummer 22 som vist ovenfor. Du kan opnÃ¥ den "rigtige" position sÃ¥ledes:
 </para>
 <para>
 <screen>
->>> streng.find("ø") + 1
+>>> streng.find("Ã¸") + 1
 2
 </screen>
 </para>
 <para>
 <screen>
 Funktionen returnerer -1, hvis ikke delstrengen findes.
->>> streng.find("ø",2,)
+>>> streng.find("Ã¸",2,)
 -1
 </screen>
 </para>
 <para>
 eks. 8
 index(delstreng, startplads, slutplads) viser en delstrengs position i
-en streng. Udfører samme funktion som find(delstreng, startplads,
+en streng. UdfÃ¸rer samme funktion som find(delstreng, startplads,
 slutplads), men i stedet for at returnere -1 returneres en ValueError
 exception, hvis ikke delstrengen findes i strengen.
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "Børnene leger i skolegården."
->>> streng.index("ø")
+>>> streng = "BÃ¸rnene leger i skolegÃ¥rden."
+>>> streng.index("Ã¸")
 1
->>> streng.index("å")
+>>> streng.index("Ã¥")
 22
 >>> streng.index("q")
 Traceback (most recent call last):
@@ -4736,7 +4736,7 @@ ValueError: substring not found in string.index
 </para>
 <para>
 Python melder to ting 1: fejlen findes i linje 1 (tabelcelle 2)
-og 2: delstrengen "ø" blev ikke fundet.
+og 2: delstrengen "Ã¸" blev ikke fundet.
 </para>
 <para>
 eks. 9
@@ -4771,10 +4771,10 @@ isalpha() returnerer 1 hvis strengen ene og alene indeholder alfabetiske
 karakterer  (bogstaver) ellers returneres 0
 <screen>
 >>> import string
->>> streng = "Børnenelegeriskolegården"
+>>> streng = "BÃ¸rnenelegeriskolegÃ¥rden"
 >>> streng.isalpha()
 1
->>> streng = "Børnene leger i skolegården."
+>>> streng = "BÃ¸rnene leger i skolegÃ¥rden."
 >>> streng.isalpha()
 0
 </screen>
@@ -4801,18 +4801,18 @@ ellers returneres 0.
 <para>
 eks. 12
 islower() funktionen returnerer 1, hvis alle bogstaver i strengen er
-"små".
+"smÃ¥".
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "det er efterår nu"
+>>> streng = "det er efterÃ¥r nu"
 >>> streng.islower()
 1
->>> streng = "Det er efterår nu"
+>>> streng = "Det er efterÃ¥r nu"
 >>> streng.islower()
 0
->>> streng = "vi er i efteråret 2003"
+>>> streng = "vi er i efterÃ¥ret 2003"
 >>> streng.islower()
 1
 </screen>
@@ -4821,7 +4821,7 @@ islower() funktionen returnerer 1, hvis alle bogstaver i strengen er
 <screen>
 eller:
 >>> import string
->>> "vi er i efteråret 2003.".islower()
+>>> "vi er i efterÃ¥ret 2003.".islower()
 True
 </screen>
 </para>
@@ -4854,17 +4854,17 @@ eks. 14
 istitle() I en engelsk bogtittel begynder det enkelte ord (som regel)
 med "store" bogstaver, deraf funktionsnavnet. Selve funktionen
 returnerer derfor 1, hvis der ene og alene forekommer "store" bogstaver
-som de enkelte ords første bogstav ellers returneres 0. Det kan føre
-til, at selv velkendte stavemåder kan returnere nul og omvendt, hvad
+som de enkelte ords fÃ¸rste bogstav ellers returneres 0. Det kan fÃ¸re
+til, at selv velkendte stavemÃ¥der kan returnere nul og omvendt, hvad
 dette eksempel vil vise:
 </para>
 <para>
 <screen>
->>> # Først den forkerte stavemåde:
+>>> # FÃ¸rst den forkerte stavemÃ¥de:
 >>> streng = "Suse Linux"
 >>> streng.istitle()
 1
->>> # Så den rigtige stavemåde:
+>>> # SÃ¥ den rigtige stavemÃ¥de:
 >>> import string
 >>> streng = "SuSE Linux"
 >>> streng.istitle()
@@ -4878,10 +4878,10 @@ isupper() funktionen returnerer 1, hvis alle bogstaver i strengen er "store".
 <para>
 <screen>
 >>> import string
->>> streng = "SuSE Linux" # normale skrivemåde
+>>> streng = "SuSE Linux" # normale skrivemÃ¥de
 >>> streng.isupper()
 0
->>> streng = "SUSE LINUX" # unormal skrivemåde
+>>> streng = "SUSE LINUX" # unormal skrivemÃ¥de
 >>> streng.isupper()
 1
 >>> streng = "SUSE LINUX 8.2"
@@ -4923,7 +4923,7 @@ eller:
 eks. 17
 ljust(bredde) ligner center(bredde) funktionen, hvis anvendelse
 tidligere er vist. Her placeres delstrengen bare venstrejusteret i den
-tomme streng, hvis længde angives med breddeargumentet.
+tomme streng, hvis lÃ¦ngde angives med breddeargumentet.
 </para>
 <para>
 <screen>
@@ -4937,7 +4937,7 @@ tomme streng, hvis længde angives med breddeargumentet.
 </para>
 <para>
 eks. 18//
-lower() lower() konverterer alle bogstaver til "små".
+lower() lower() konverterer alle bogstaver til "smÃ¥".
 </para>
 <para>
 <screen>
@@ -4966,7 +4966,7 @@ lstrip() fjerner tomme (ASCII 32) i strengens begyndelse - venstre side.
 <para>
 eks. 20
 replace(gamle,nye,maksimale) erstatter en "gammel" tekstsreng med en ny.
-Hvis du ikke ønsker at udskifte samtlig eksistende "gamle" med nye, kan
+Hvis du ikke Ã¸nsker at udskifte samtlig eksistende "gamle" med nye, kan
 et maksimalt antal udskiftninger angives.
 </para>
 <para>
@@ -4991,7 +4991,7 @@ delstreng i en streng. Hvis delstrengen ikke findes returneres -1.
 <para>
 <screen>
 >>> import string
->>> streng = "Der er en klippefast grund til at besøge Bornholm."
+>>> streng = "Der er en klippefast grund til at besÃ¸ge Bornholm."
 >>> streng.rfind("e")
 39
 </screen>
@@ -5000,7 +5000,7 @@ delstreng i en streng. Hvis delstrengen ikke findes returneres -1.
 <screen>
 eller:
 >>> import string
->>> "Der er en klippefast grund til at besøge Bornholm.".rfind("e")
+>>> "Der er en klippefast grund til at besÃ¸ge Bornholm.".rfind("e")
 39
 </screen>
 </para>
@@ -5008,14 +5008,14 @@ eller:
 <screen>
 eller:
 >>> import string
->>> l = len("Der er en klippefast grund til at besøge Bornholm.")
->>> "Der er en klippefast grund til at besøge Bornholm.".rfind("e",len(streng) - 10,l)
+>>> l = len("Der er en klippefast grund til at besÃ¸ge Bornholm.")
+>>> "Der er en klippefast grund til at besÃ¸ge Bornholm.".rfind("e",len(streng) - 10,l)
 -1
 </screen>
 </para>
 <para>
 eks. 22
-rindex(delstreng,startpunkt,slutpunkt) virker fuldstændig som rfind
+rindex(delstreng,startpunkt,slutpunkt) virker fuldstÃ¦ndig som rfind
 funktionen, men i stedet for at returnere -1, hvis delstrengen ikke
 findes returneres en ValueError.
 </para>
@@ -5038,35 +5038,35 @@ Fejlmeldingen siger, at delstrengen "dk" ikke findes i streng.
 </para>
 <para>
 eks. 23//
-rjust(bredde) svarer til center(bredde) og ljust(bredde) bortset fra at delstrengen her placeres højrejusteret i strengen.
+rjust(bredde) svarer til center(bredde) og ljust(bredde) bortset fra at delstrengen her placeres hÃ¸jrejusteret i strengen.
 </para>
 <para>
 <screen>
 >>> import string
 >>> "h".rjust(30)
-'                             h' # Et enkelt bogstav er også en streng.
+'                             h' # Et enkelt bogstav er ogsÃ¥ en streng.
 </screen>
 </para>
 <para>
 eks. 24//
-rstrip() fjerner tomme (ASCII 32) i HØJRE side af en streng.
+rstrip() fjerner tomme (ASCII 32) i HÃ˜JRE side af en streng.
 </para>
 <para>
 <screen>
 >>> # Python 2.2 afvikling:
 >>> import string
->>> "    En unødvendig lang streng        ".rstrip()
+>>> "    En unÃ¸dvendig lang streng        ".rstrip()
 '    En un\xf8dvendig lang streng'
 >>> # Python 2.3 afvikling:
 >>> import string
->>> print "    En unødvendig lang streng        ".rstrip()
-    En unødvendig lang streng
+>>> print "    En unÃ¸dvendig lang streng        ".rstrip()
+    En unÃ¸dvendig lang streng
 </screen>
 </para>
 <para>
 eks. 25
-split(seperator) Opdeler tekststreng i delstrenge, der indsættes i
-liste. Hvis ikke der indsættes seperator deles ved ASCII 32
+split(seperator) Opdeler tekststreng i delstrenge, der indsÃ¦ttes i
+liste. Hvis ikke der indsÃ¦ttes seperator deles ved ASCII 32
 (mellemrum).
 </para>
 <para>
@@ -5102,7 +5102,7 @@ anvendes eller er sat til None, deles strengen ved hver mellemrum
 eks. 27
 splitlines([1])returnerer en liste af delstrenge fremkommet ved at
 dele den oprindelige streng ved hver ny linje karakter. Hvis
-parameteret 1 indsættes bevares ny linje skiftet i delstrengene se
+parameteret 1 indsÃ¦ttes bevares ny linje skiftet i delstrengene se
 nederste del af eksemplet.
 </para>
 <para>
@@ -5136,18 +5136,18 @@ strip() fjerner mellemrum i strengens begyndelse og slutning
 <screen>
 >>> # Python 2.2 afvikling:
 >>> import string
->>> "      Har du været på Christiansø?     ".strip()
+>>> "      Har du vÃ¦ret pÃ¥ ChristiansÃ¸?     ".strip()
 'Har du v\xe6ret p\xe5 Christians\xf8?'
 >>> import string
->>> "      Har du været på Christiansø?     ".strip()
+>>> "      Har du vÃ¦ret pÃ¥ ChristiansÃ¸?     ".strip()
 'Har du v\xe6ret p\xe5 Christians\xf8?'
->>> print "      Har du været på Christiansø?     ".strip()
-Har du været på Christiansø?
+>>> print "      Har du vÃ¦ret pÃ¥ ChristiansÃ¸?     ".strip()
+Har du vÃ¦ret pÃ¥ ChristiansÃ¸?
 </screen>
 </para>
 <para>
 eks. 30//
-swapcase() konverterer alle "store" bogstaver til små og omvendt.
+swapcase() konverterer alle "store" bogstaver til smÃ¥ og omvendt.
 </para>
 <para>
 <screen>
@@ -5160,29 +5160,29 @@ swapcase() konverterer alle "store" bogstaver til små og omvendt.
 </para>
 <para>
 eks. 31
-title() Returnerer en streng, hvori første bogstav af strengens
+title() Returnerer en streng, hvori fÃ¸rste bogstav af strengens
 enkeltord og kun dem er med stort begyndelsesbogstav.
 </para>
 <para>
 <screen>
 >>> import string
->>> "er uldjyder lådne?".title()
+>>> "er uldjyder lÃ¥dne?".title()
 'Er Uldjyder L\xe5dne?'
 </screen>
 </para>
 <para>
->>> "eR brAndMænd meget iltre?".title()
+>>> "eR brAndMÃ¦nd meget iltre?".title()
 'Er Brandm\xe6nd Meget Iltre?'
 </para>
 <para>
 <screen>
 eller:
 >>> import string
->>> "er uldjyder lådne?".title()
+>>> "er uldjyder lÃ¥dne?".title()
 'Er Uldjyder L\xe5dne?'
->>> s = "er uldjyder lådne?".title()
+>>> s = "er uldjyder lÃ¥dne?".title()
 >>> print s
-Er Uldjyder Lådne?
+Er Uldjyder LÃ¥dne?
 </screen>
 </para>
 <para>
@@ -5192,20 +5192,20 @@ eks. 32//
 <para>
 <screen>
 >>> import string
->>> "var forfatteren nexø fra nexø?".upper()
+>>> "var forfatteren nexÃ¸ fra nexÃ¸?".upper()
 'VAR FORFATTEREN NEX\xd8 FRA NEX\xd8?'
 </screen>
 </para>
 <para>
 eller:
 >>> import string
->>> "var forfatteren nexø fra nexø?".upper()
+>>> "var forfatteren nexÃ¸ fra nexÃ¸?".upper()
 'VAR FORFATTEREN NEX\xd8 FRA NEX\xd8?'
->>> print "var forfatteren nexø fra nexø?".upper()
-VAR FORFATTEREN NEXØ FRA NEXØ?
+>>> print "var forfatteren nexÃ¸ fra nexÃ¸?".upper()
+VAR FORFATTEREN NEXÃ˜ FRA NEXÃ˜?
 </para>
 <para>
-Brødmaskinen (slicing):
+BrÃ¸dmaskinen (slicing):
 >>> streng = "naturlig"
 >>> streng[4]
 'r'
@@ -5227,7 +5227,7 @@ Brødmaskinen (slicing):
 </para>
 <para>
 <screen>
-zfill funktionen gør det, den siger fylder op med zeros (nuller)
+zfill funktionen gÃ¸r det, den siger fylder op med zeros (nuller)
 opfyldningen sker altid til venstre:
 import string
 string.zfill('12', 5)
@@ -5244,7 +5244,7 @@ string.zfill('3.14159265359', 5)
 <title>Range</title>
 <para>
 <screen>
-syntaks: range(begynd, slut - 1, step) - slut er nødvendig.
+syntaks: range(begynd, slut - 1, step) - slut er nÃ¸dvendig.
 >>> range(11)
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9.10]
 >>> range(0,21,2)
@@ -5259,7 +5259,7 @@ syntaks: range(begynd, slut - 1, step) - slut er nødvendig.
 ...     print i,
 ...
 1 2 3 4 5 6 7 8 9 10
-Range fungerer også ved nedtælling:
+Range fungerer ogsÃ¥ ved nedtÃ¦lling:
 >>> for i in range(10,0, -1):
 ...     print i,
 ...
@@ -5303,11 +5303,11 @@ Range fungerer også ved nedtælling:
 </sect1>
 
 <sect1 id="python-filer">
-<title>Læs og skriv filer</title>
+<title>LÃ¦s og skriv filer</title>
 <para>
 <screen>
 heleTeksten= open('filnavn.txt').read()    # hent hele indholdet i en tekstfil
-alleData = open('fuldeFilsti', 'rb').read() # hent hele indholdet i en binær fil
+alleData = open('fuldeFilsti', 'rb').read() # hent hele indholdet i en binÃ¦r fil
 
 filObjekt  = open('filnavn.txt')
 heleTeksten = filObjekt.read()
@@ -5339,7 +5339,7 @@ filObjekt.close()
 <para>
 <screen>
 open('filnavn.txt', 'w').write(heleTeksten)  # skriv tekst til en tekstfil
-open('fuldeFilsti', 'wb').write(alleData)    # skriv binære data til en binær fil
+open('fuldeFilsti', 'wb').write(alleData)    # skriv binÃ¦re data til en binÃ¦r fil
 
 filObjekt = open('filnavn.txt', 'w')
 filObjekt.write(heleTeksten)
@@ -5413,7 +5413,7 @@ print "Udfilen er lukket."
 </programlisting>
 
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 <screen>
 python udfilNy.py
 Skriv tekstlinje (tom lukker fil): Ny tekst i ny udfil."
@@ -5515,7 +5515,7 @@ print "Udfilen er lukket."
 </sect2>
 
 <sect2 id="python-filer-8">
-<title>Læs fra fil</title>
+<title>LÃ¦s fra fil</title>
 
 <programlisting>
 import sys
@@ -5537,16 +5537,16 @@ udfil.close()
 print "Udfilen er lukket."
 </programlisting>
 <para>
-BEMÆRK:  str funktionen kræves a.h.t. dansk/norske specialtegn.
+BEMÃ†RK:  str funktionen krÃ¦ves a.h.t. dansk/norske specialtegn.
 </para>
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 ajbo@linux:~> python indfil.py
-['Microsoft får en ordentlig bredside i en ny rapport fra den amerikanske \n',
+['Microsoft fÃ¥r en ordentlig bredside i en ny rapport fra den amerikanske \n',
 'organisation Computer & Communications Industry Association (CCIA). Manglen \n',
- 'på ordentlig sikkerhed i Microsofts programmer og det faktum, at Windows er \n',
+ 'pÃ¥ ordentlig sikkerhed i Microsofts programmer og det faktum, at Windows er \n',
  'det mest udbredte styresystem i verden, betyder tilsammen, at verden generelt \n',
- 'er blevet mere sårbar overfor trusler mod sikkerheden, konkluderer rapporten.\n']
+ 'er blevet mere sÃ¥rbar overfor trusler mod sikkerheden, konkluderer rapporten.\n']
 </para>
 <para>
 Filen er lukket.
@@ -5581,9 +5581,9 @@ print "Udfilen er lukket."
 </programlisting>
 </para>
 <para>
-Fra kørselsresultat:
+Fra kÃ¸rselsresultat:
 filnavn.txt indeholder:
-Nu går vi over til at udsende teksten i antal bytes.
+Nu gÃ¥r vi over til at udsende teksten i antal bytes.
 Flere bytes skrives til filen.
 </para>
 </sect2>
@@ -5609,10 +5609,10 @@ print "Filen er lukket."
 </programlisting>
 </para>
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 <screen>
 ajbo@linux:~> python indfilBytes.py
-['Nu går vi over til at udsende teksten i antal bytes.\n',
+['Nu gÃ¥r vi over til at udsende teksten i antal bytes.\n',
  'Flere bytes skrives til filen.\n', '\n', '\n']
 Filen er lukket.
 ajbo@linux:~>
@@ -5641,7 +5641,7 @@ print
 print "Filen er lukket."
 </programlisting>
 <para>
-Kørselsresultat (uddrag af den store udskrift):
+KÃ¸rselsresultat (uddrag af den store udskrift):
 enhed   Den terminalenhed, som du vil bruge, f.eks. COM1.
 1Viser eller indstiller datoen.
 </para>
@@ -5658,7 +5658,7 @@ aSletter en eller flere filer.
 <sect2 id="python-filer-12">
 <title>Hent bytes fra fil eksempel 3</title>
 <para>
-I dette eksempel læses filen vinduer.jpg, der også benyttes et andet
+I dette eksempel lÃ¦ses filen vinduer.jpg, der ogsÃ¥ benyttes et andet
 sted i bogen.
 </para>
 <programlisting>
@@ -5676,16 +5676,16 @@ print
 print "Filen er lukket."
 </programlisting>
 <para>
-Kørselsresultat (ganske kort uddrag af returgodset)
+KÃ¸rselsresultat (ganske kort uddrag af returgodset)
 <screen>
 python indfilBytes3.py
-ÿØÿàJFIFHHÿşLEAD Technologies Inc. V1.01ÿÛC
+Ã¿Ã˜Ã¿Ã JFIFHHÃ¿Ã¾LEAD Technologies Inc. V1.01Ã¿Ã›C
 </screen>
 </para>
 </sect2>
 
 <sect2 id="python-filer-13">
-<title>Søg og erstat tekst i fil</title>
+<title>SÃ¸g og erstat tekst i fil</title>
 
 <programlisting>
 #!/usr/bin/env python
@@ -5712,24 +5712,24 @@ else:
 </programlisting>
 <para>
 <screen>
- Et kørselsresultat:
+ Et kÃ¸rselsresultat:
 python erstatTekst.py
 Anvend: erstatTekst.py tekstAtFinde erstatningsTekst [indfil [udfil]]
 </screen>
-Når filen søges afviklet uden de nødvendige parametre udskrives der som
-vist en anvisning på, hvordan kaldet skal foregå. sys.argv[0] er selve
-programmets navn (erstatTekst.py). I Python bøger er det normalt at
-angive valgfrie parametre i firkantede parenteser. Det er altså i
-herværende tilfælde ikke absolut nødvendigt at angive en indfils navn,
-det samme er tilfældet med en udfils navn. Udeladelse af de to navne er
-imidlertid upraktisk i det aktuelle tilfælde, så et kald kunne være:
+NÃ¥r filen sÃ¸ges afviklet uden de nÃ¸dvendige parametre udskrives der som
+vist en anvisning pÃ¥, hvordan kaldet skal foregÃ¥. sys.argv[0] er selve
+programmets navn (erstatTekst.py). I Python bÃ¸ger er det normalt at
+angive valgfrie parametre i firkantede parenteser. Det er altsÃ¥ i
+hervÃ¦rende tilfÃ¦lde ikke absolut nÃ¸dvendigt at angive en indfils navn,
+det samme er tilfÃ¦ldet med en udfils navn. Udeladelse af de to navne er
+imidlertid upraktisk i det aktuelle tilfÃ¦lde, sÃ¥ et kald kunne vÃ¦re:
 <screen>
 python erstatTekst.py "Microsoft" "Linux" "/windows/C/autoexec.bat" "autoexec.bat"
 </screen>
-Der er bare det ved det, at ordet "Microsoft" næppe forekommer i
-autoexec.bat filen. Resultatet vil altså alene blive at filen bliver
+Der er bare det ved det, at ordet "Microsoft" nÃ¦ppe forekommer i
+autoexec.bat filen. Resultatet vil altsÃ¥ alene blive at filen bliver
 kopieret fra Microsoft Windows biblioteket til rodbiblioteket i Linux,
-men det kan jo også være fint nok.
+men det kan jo ogsÃ¥ vÃ¦re fint nok.
 </para>
 <para>
 <screen>
@@ -5744,7 +5744,7 @@ udfil.close
 </screen>
 </para>
 <para>
-Før programafvikling:
+FÃ¸r programafvikling:
 SET windir=C:\WINDOWS
 SET winbootdir=C:\WINDOWS
 SET COMSPEC=C:\WINDOWS\COMMAND.COM
@@ -5769,33 +5769,33 @@ for s in indfil.readlines():
 	udfil.write(string.replace(s, findeTekst, erstatteTekst))
 </para>
 <para>
-Kan også skrives:
+Kan ogsÃ¥ skrives:
 for s in indfil:
 	udfil.write(s.replace(findeTekst, erstatteTekst))
 </para>
 <para>
-Lad Python fortælle, hvad et modul indeholder:
+Lad Python fortÃ¦lle, hvad et modul indeholder:
 <screen>
 >>> sys
 &lt;module 'sys' (built-in)>
 </screen>
 </para>
 <para>
-returstrengen fortæller, at sys er et i Python indbygget (fordefineret)
+returstrengen fortÃ¦ller, at sys er et i Python indbygget (fordefineret)
 modul. sys inkluderes i dette eksempel ene og alene for at kunne lukke
-programmet ned, når der klikkes på knappen. Herved udføres kommandoen
+programmet ned, nÃ¥r der klikkes pÃ¥ knappen. Herved udfÃ¸res kommandoen
 root.exit
 </para>
 <para>
-I interaktiv mode kan det undertiden være vanskeligt at få kørslen
+I interaktiv mode kan det undertiden vÃ¦re vanskeligt at fÃ¥ kÃ¸rslen
 stoppet og komme ud af programmet. I Windows kan du komme ud ved at
-trykke på Ctrl og Z tasten samtidig. I Linux skulle du kunne komme ud
-ved at trykke samtidig på Ctrl og D. I SuSE 8.2 skal du imidlertid
+trykke pÃ¥ Ctrl og Z tasten samtidig. I Linux skulle du kunne komme ud
+ved at trykke samtidig pÃ¥ Ctrl og D. I SuSE 8.2 skal du imidlertid
 trykke Ctrl C for at komme ud. Men det korte og det lange er, at
-sys.exit og nævnte tastetryk har samme virkning.
+sys.exit og nÃ¦vnte tastetryk har samme virkning.
 </para>
 <para>
-Vi kan også få at se, hvad modulet indeholder:
+Vi kan ogsÃ¥ fÃ¥ at se, hvad modulet indeholder:
 </para>
 <para>
 <screen>
@@ -5827,7 +5827,7 @@ Vi kan også få at se, hvad modulet indeholder:
 
 <screen>
 >>> import time
->>> type(time) # unødvendigt bevis for dig
+>>> type(time) # unÃ¸dvendigt bevis for dig
 &lt;type 'module'>
 
 >>> time.time()
@@ -5850,7 +5850,7 @@ Vi kan også få at se, hvad modulet indeholder:
 25
 
 >>> # pausefunktion
->>> # kontrol :   >>>  fremkommer efter pause på 10 sekunder.
+>>> # kontrol :   >>>  fremkommer efter pause pÃ¥ 10 sekunder.
 >>> time.sleep(10)
 >>>
 </screen>
@@ -5861,7 +5861,7 @@ Vi kan også få at se, hvad modulet indeholder:
 
 <screen>
 >>> import datetime
->>> type(datetime)  # unødvendigt bevis for dig
+>>> type(datetime)  # unÃ¸dvendigt bevis for dig
 &lt;type 'module'>
 
 >>> nu = datetime.datetime.now()
@@ -5899,7 +5899,7 @@ Vi kan også få at se, hvad modulet indeholder:
 '07 AM'
 
 >>> # Funktionen beregner ugenummeret 1 for lavt
->>> # derfor nedenstående omregning
+>>> # derfor nedenstÃ¥ende omregning
 >>> Ugenummer = int(Ugenummer) + 1
 >>> Ugenummer
 39
@@ -5908,7 +5908,7 @@ Vi kan også få at se, hvad modulet indeholder:
 >>> Ugenummer
 '39'
 
->>> # Søndag er ugens første dag (element 0)
+>>> # SÃ¸ndag er ugens fÃ¸rste dag (element 0)
 >>> UgedagDecimal = nu.strftime("%w")
 >>> UgedagDecimal
 '4'
@@ -5928,19 +5928,19 @@ Vi kan også få at se, hvad modulet indeholder:
 <chapter id="vkm">
  <title>Vinduer, knapper og meget mere</title>
  <para>
-GUI komponenter skal stilles på plads i en kontainer. Det sker primært med Pack metoden.
+GUI komponenter skal stilles pÃ¥ plads i en kontainer. Det sker primÃ¦rt med Pack metoden.
 </para>
 <para>
-Medmindre en programmør specificerer (angiver) en anden rækkefølge, vil Pack placere komponenterne i kontaineren fra skærmtop til -bund i den rækkefølge, hvori de er listede i programmet.
+Medmindre en programmÃ¸r specificerer (angiver) en anden rÃ¦kkefÃ¸lge, vil Pack placere komponenterne i kontaineren fra skÃ¦rmtop til -bund i den rÃ¦kkefÃ¸lge, hvori de er listede i programmet.
 </para>
 <para>
-Du har en række valgmuligheder (options), når komponenterne (tekstboksene, menuerne, knapperne og de øvrige grafiske objekter) skal placeres i kontaineren (ofte Frame). Option "side" angiver, hvor i kontaineren, komponentet skal placeres.
-Sættes side = TOP (er forvalgt af Python) pakkes komponenterne lodret (vertically). Andre mulige side værdier er BOTTOM
-(bund), LEFT (venstre) og RIGHT (højre). Option "fill" kan være NONE (den forvalgte værdi), X, Y og BOTH sikrer at et komponent udfylder al den plads, der er afsat til den i den angivne retning. Option expand kan tildeles værdierne YES
-(1) og NO (0). Hvis expand er sat til YES udvides komponentet til at udfylde al ledig plads i kontaineren. Optionerne padx og pady indsætter tom plads rundt om komponentet. Metoden pack_forget fjerner et pakket komponent fra kontaineren.
+Du har en rÃ¦kke valgmuligheder (options), nÃ¥r komponenterne (tekstboksene, menuerne, knapperne og de Ã¸vrige grafiske objekter) skal placeres i kontaineren (ofte Frame). Option "side" angiver, hvor i kontaineren, komponentet skal placeres.
+SÃ¦ttes side = TOP (er forvalgt af Python) pakkes komponenterne lodret (vertically). Andre mulige side vÃ¦rdier er BOTTOM
+(bund), LEFT (venstre) og RIGHT (hÃ¸jre). Option "fill" kan vÃ¦re NONE (den forvalgte vÃ¦rdi), X, Y og BOTH sikrer at et komponent udfylder al den plads, der er afsat til den i den angivne retning. Option expand kan tildeles vÃ¦rdierne YES
+(1) og NO (0). Hvis expand er sat til YES udvides komponentet til at udfylde al ledig plads i kontaineren. Optionerne padx og pady indsÃ¦tter tom plads rundt om komponentet. Metoden pack_forget fjerner et pakket komponent fra kontaineren.
 </para>
 <para>
-Hvis Canvas komponentet bliver brugt alene som her, oprettes et fuld færdigt vindue:
+Hvis Canvas komponentet bliver brugt alene som her, oprettes et fuld fÃ¦rdigt vindue:
 </para>
 <para>
 <screen>
@@ -5955,7 +5955,7 @@ Hvis Canvas komponentet bliver brugt alene som her, oprettes et fuld færdigt vin
 </screen>
 </para>
 <para>
-Der defineres en klasse, som benytter underklassen Canvas's kode. Denne klasse tildeles startværdier (initieres heraf forkortelsen init). Initieringen kaldes en konstruktør eller fuldt ud klassekonstruktøren. Både den programlinje, hvori klassen defineres (klassehovedet) og konstruktøren er blokke, så begge steder skal de efterfølgende programlinjer rykkes ind til højre. Da self først fungerer i og med initieringen, må det være klart, at self stammer fra selve klassen, hvorfor det viste eksempel også kunne skrives:
+Der defineres en klasse, som benytter underklassen Canvas's kode. Denne klasse tildeles startvÃ¦rdier (initieres heraf forkortelsen init). Initieringen kaldes en konstruktÃ¸r eller fuldt ud klassekonstruktÃ¸ren. BÃ¥de den programlinje, hvori klassen defineres (klassehovedet) og konstruktÃ¸ren er blokke, sÃ¥ begge steder skal de efterfÃ¸lgende programlinjer rykkes ind til hÃ¸jre. Da self fÃ¸rst fungerer i og med initieringen, mÃ¥ det vÃ¦re klart, at self stammer fra selve klassen, hvorfor det viste eksempel ogsÃ¥ kunne skrives:
 </para>
 <para>
 <screen>
@@ -5968,7 +5968,7 @@ Der defineres en klasse, som benytter underklassen Canvas's kode. Denne klasse t
 </screen>
 </para>
 <para>
-Medmindre en programmør specificerer (angiver) en anden rækkefølge, vil Pack placere komponenterne i kontaineren fra skærmtop til -bund i den rækkefølge, hvori de er listede i programmet.
+Medmindre en programmÃ¸r specificerer (angiver) en anden rÃ¦kkefÃ¸lge, vil Pack placere komponenterne i kontaineren fra skÃ¦rmtop til -bund i den rÃ¦kkefÃ¸lge, hvori de er listede i programmet.
 </para>
 <para>
 <screen>
@@ -5976,13 +5976,13 @@ from Tkinter import *
 from tkMessageBox import askyesno, showerror
 
 class Dialog(Frame): # arver Frame
-    def __init__(self, master=None): #Dialogs konstruktør
-        Frame.__init__(self, master) # Frames konstruktør
+    def __init__(self, master=None): #Dialogs konstruktÃ¸r
+        Frame.__init__(self, master) # Frames konstruktÃ¸r
         Pack.config(self)
         self.opretArvinger()
 
     def Hilsen(self): # arver Dialog
-        print "En hilsen fra Bornholm til dig!" #sendes til skal, men kunne være til fil
+        print "En hilsen fra Bornholm til dig!" #sendes til skal, men kunne vÃ¦re til fil
 
     def opretArvinger(self): # arver Dialog
         Label(self,  text='Hej! jeg vil gerne i dialog med dig.').pack(side=TOP)
@@ -6011,7 +6011,7 @@ class Dialog(Frame): # arver Frame
 <chapter id="wid">
  <title>Widget klassen</title>
  <para>
-Et grafisk bruger interface (grafical user inteface heraf forkortelsen GUI) giver brugeren mulighed for at kommunikere interaktivt med et program. GUIs sammensættes af GUI komponenter (kaldet widgets - en forkortelse for windows finesser). Et GUI komponent er et objekt hvormed en bruger som antydet kan kommunikere interaktivt med et program via mus og eller tastatur. Ved brug af Tool Command Language (forkortet TCL) og dets værktøjskit (Tool Kit forkortet Tk - et bibliotek af fordefinerede klasser, subklasser m.v.) kan Python programmører konstruere GUIs. Hvordan det gøres skal vi se på i en lang række eksempler.
+Et grafisk bruger interface (grafical user inteface heraf forkortelsen GUI) giver brugeren mulighed for at kommunikere interaktivt med et program. GUIs sammensÃ¦ttes af GUI komponenter (kaldet widgets - en forkortelse for windows finesser). Et GUI komponent er et objekt hvormed en bruger som antydet kan kommunikere interaktivt med et program via mus og eller tastatur. Ved brug af Tool Command Language (forkortet TCL) og dets vÃ¦rktÃ¸jskit (Tool Kit forkortet Tk - et bibliotek af fordefinerede klasser, subklasser m.v.) kan Python programmÃ¸rer konstruere GUIs. Hvordan det gÃ¸res skal vi se pÃ¥ i en lang rÃ¦kke eksempler.
 </para>
 <para>
 <screen>
@@ -6020,13 +6020,13 @@ Et grafisk bruger interface (grafical user inteface heraf forkortelsen GUI) give
 </screen>
 </para>
 <para>
->>> # Her ses at Frame er en klasse tilhørende Tkinter:
+>>> # Her ses at Frame er en klasse tilhÃ¸rende Tkinter:
 >>> Frame
 &lt;class Tkinter.Frame at 0x405ecd4c>
 </para>
 <para>
-Vi får også at vide, at koden til Frame eller rettere
-indledningen til den er pladeret på den hexadecimale adresse \x405ecd4c.
+Vi fÃ¥r ogsÃ¥ at vide, at koden til Frame eller rettere
+indledningen til den er pladeret pÃ¥ den hexadecimale adresse \x405ecd4c.
 </para>
 <para>
 <screen>
@@ -6036,7 +6036,7 @@ indledningen til den er pladeret på den hexadecimale adresse \x405ecd4c.
 </screen>
 </para>
 <para>
-Det følgende kald til Tk (from Tkinter import *) kan være farligt, og bør absolut kun anvendes ved kald, hvor du er sikker, på at kaldet virkelig kan bruges. Det der er farligt, er at du ved at benytte navne f.eks. på variabler og funktioner, hvis navne også findes i det importerede modul, vil blive overstyret  (på engelsk overrided). Det betyder, at det bliver de navne du har tilføjet, der vil fungere og dermed bestemme dit programs funktion. På den anden side, hvis du er sikker, på at du ikke vil komme til at overstyre navne i det eller de importerede modul/moduler, så er det stjernekaldet, du bør bruge. Lad os lige få en kvittering, på at det forholder sig som nævnt:
+Det fÃ¸lgende kald til Tk (from Tkinter import *) kan vÃ¦re farligt, og bÃ¸r absolut kun anvendes ved kald, hvor du er sikker, pÃ¥ at kaldet virkelig kan bruges. Det der er farligt, er at du ved at benytte navne f.eks. pÃ¥ variabler og funktioner, hvis navne ogsÃ¥ findes i det importerede modul, vil blive overstyret  (pÃ¥ engelsk overrided). Det betyder, at det bliver de navne du har tilfÃ¸jet, der vil fungere og dermed bestemme dit programs funktion. PÃ¥ den anden side, hvis du er sikker, pÃ¥ at du ikke vil komme til at overstyre navne i det eller de importerede modul/moduler, sÃ¥ er det stjernekaldet, du bÃ¸r bruge. Lad os lige fÃ¥ en kvittering, pÃ¥ at det forholder sig som nÃ¦vnt:
 </para>
 <para>
 <screen>
@@ -6049,7 +6049,7 @@ NameError: name 'Tkinter' is not defined
 </screen>
 </para>
 <para>
-Fortolkeren kender ikke Tkinter, hvorfor Tkinter ikke kan eksistere i dit program. Det er kun det for dit program nødvendige, der bliver hentet ind. Hvis vi var i tvivl, om hvorvidt Tkinter kan klare kaldet from Tkinter import *, så er det eneste rigtige, vi kan gøre, at benytte kaldet import Tkinter i stedet for from Tkinter import *.
+Fortolkeren kender ikke Tkinter, hvorfor Tkinter ikke kan eksistere i dit program. Det er kun det for dit program nÃ¸dvendige, der bliver hentet ind. Hvis vi var i tvivl, om hvorvidt Tkinter kan klare kaldet from Tkinter import *, sÃ¥ er det eneste rigtige, vi kan gÃ¸re, at benytte kaldet import Tkinter i stedet for from Tkinter import *.
 </para>
 <para>
 <screen>
@@ -6060,7 +6060,7 @@ Fortolkeren kender ikke Tkinter, hvorfor Tkinter ikke kan eksistere i dit progra
 </screen>
 </para>
 <para>
-Funktionen dir kan vise indholdet i et modul. Benyttes det igen, får vi en udskrift af indholdet i modulet - nu kender fortolkeren Tkinter. Jeg har ikke taget ret meget af den lange udskrift med her, så lav lige kontrollen selv også.
+Funktionen dir kan vise indholdet i et modul. Benyttes det igen, fÃ¥r vi en udskrift af indholdet i modulet - nu kender fortolkeren Tkinter. Jeg har ikke taget ret meget af den lange udskrift med her, sÃ¥ lav lige kontrollen selv ogsÃ¥.
 </para>
 <para>
 <screen>
@@ -6072,14 +6072,14 @@ Funktionen dir kan vise indholdet i et modul. Benyttes det igen, får vi en udskr
 </para>
 <para>
 <screen>
-Et allerede vist eksempel så således ud:
+Et allerede vist eksempel sÃ¥ sÃ¥ledes ud:
 >>> from Tkinter import Frame
 >>> Frame().pack()
 >>>
 </screen>
 </para>
 <para>
-Sublassen Frame blev importeret og derefter anvendt direkte. Da det var selve Frame, der blev importeret og brugt, må det være indlysende, at der i kaldet  Frame().pack() ikke bliver tilført nogen anden form for kode - Frames parameterliste er da også tom. Det behøver den ikke at være. Det følgende eksempel har nøjagtig samme funktion som det ovenstående. parrent = None fortæller nøjagtig det samme, at der ikke kommer nogen form for kode til den, der er indeholdt i Frame - der er ingen parrent (direkte oversat forældre på dansk mor).
+Sublassen Frame blev importeret og derefter anvendt direkte. Da det var selve Frame, der blev importeret og brugt, mÃ¥ det vÃ¦re indlysende, at der i kaldet  Frame().pack() ikke bliver tilfÃ¸rt nogen anden form for kode - Frames parameterliste er da ogsÃ¥ tom. Det behÃ¸ver den ikke at vÃ¦re. Det fÃ¸lgende eksempel har nÃ¸jagtig samme funktion som det ovenstÃ¥ende. parrent = None fortÃ¦ller nÃ¸jagtig det samme, at der ikke kommer nogen form for kode til den, der er indeholdt i Frame - der er ingen parrent (direkte oversat forÃ¦ldre pÃ¥ dansk mor).
 </para>
 <para>
 <screen>
@@ -6089,10 +6089,10 @@ Sublassen Frame blev importeret og derefter anvendt direkte. Da det var selve Fr
 </screen>
 </para>
 <para>
-Subklassen arver fra Frame, så subklassens self refererer til Frame som den kommer fra
-Tkinter. mor = None kan godt forvirre lidt på dette sted, for Klasse har jo Frame til mor, så reelt er der en mor, men Klasse er på arvetidspunktet  som alle andre klassearvinger en direkte kopi af moderen. De tre eksemplers første 4 linjer ændrer ikke noget som
-helst på arvegodset, så mor = None fortæller konkret, at Frame ingen mor har, og det er jo korrekt. Når det er fastslået, er det også
-klart, at self repræsenterer selve subklassen Klasse. Når det er tilfældet, vil det samme eksempel også kunne skrives således:
+Subklassen arver fra Frame, sÃ¥ subklassens self refererer til Frame som den kommer fra
+Tkinter. mor = None kan godt forvirre lidt pÃ¥ dette sted, for Klasse har jo Frame til mor, sÃ¥ reelt er der en mor, men Klasse er pÃ¥ arvetidspunktet  som alle andre klassearvinger en direkte kopi af moderen. De tre eksemplers fÃ¸rste 4 linjer Ã¦ndrer ikke noget som
+helst pÃ¥ arvegodset, sÃ¥ mor = None fortÃ¦ller konkret, at Frame ingen mor har, og det er jo korrekt. NÃ¥r det er fastslÃ¥et, er det ogsÃ¥
+klart, at self reprÃ¦senterer selve subklassen Klasse. NÃ¥r det er tilfÃ¦ldet, vil det samme eksempel ogsÃ¥ kunne skrives sÃ¥ledes:
 </para>
 <para>
 <screen>
@@ -6111,7 +6111,7 @@ if __name__ == '__main__': Klasse().mainloop()
 <para>
 <screen>
 import tkSimpleDialog
-x = tkSimpleDialog.askinteger("Vælg et heltal",
+x = tkSimpleDialog.askinteger("VÃ¦lg et heltal",
 "mellem 1 og 6:",initialvalue = 1, minvalue = 1, maxvalue = 6)
 </screen>
 </para>
@@ -6119,7 +6119,7 @@ x = tkSimpleDialog.askinteger("Vælg et heltal",
  <sect1 id="wid.rammen">
   <title>Frame underklasse i Widget</title>
   <para>
-Frame komponentets formål er at være kontainer for andre komponenter. Det før viste eksempel kunne bl.a. også skrives således:
+Frame komponentets formÃ¥l er at vÃ¦re kontainer for andre komponenter. Det fÃ¸r viste eksempel kunne bl.a. ogsÃ¥ skrives sÃ¥ledes:
 </para>
 <para>
 <screen>
@@ -6145,7 +6145,7 @@ Her oprettes og bruges en kopi af det importerede modul.
 </screen>
 </para>
 <para>
-Frame er subklasse i Widget klassen (barn af Widget). Frame arver dermed Widget klassens egenskaber. Det betyder imidlertid ikke, at alle egenskaber i fuldt omfang kan overføres til barnet - pack vil altid være knyttet til moderobjektet - i dette tilfælde til Frame. Derfor rykker pack()  op på den programlinje, hvori objektkopien (barnet) oprettes:
+Frame er subklasse i Widget klassen (barn af Widget). Frame arver dermed Widget klassens egenskaber. Det betyder imidlertid ikke, at alle egenskaber i fuldt omfang kan overfÃ¸res til barnet - pack vil altid vÃ¦re knyttet til moderobjektet - i dette tilfÃ¦lde til Frame. Derfor rykker pack()  op pÃ¥ den programlinje, hvori objektkopien (barnet) oprettes:
 </para>
 <para>
 <screen>
@@ -6159,24 +6159,24 @@ Frame er subklasse i Widget klassen (barn af Widget). Frame arver dermed Widget 
 </para>
 <para>
 Svaret var, at Tkinter er et modul, at det blev importeret fra /usr/local/lib/python2.3/lib-tk/ biblioteket og at det var fra en kompileret
-fil Tkinter.pyc - det ses på at den sædvanlige filtype py er udvidet med et c. Det normale er, at en kompileret fil er væsentlig hurtigere, men sådan er det ikke i Python. Her kan der vindes ganske ubetydelig tid, lige i det øjeblik koden hentes ind i computeren ellers ikke.
+fil Tkinter.pyc - det ses pÃ¥ at den sÃ¦dvanlige filtype py er udvidet med et c. Det normale er, at en kompileret fil er vÃ¦sentlig hurtigere, men sÃ¥dan er det ikke i Python. Her kan der vindes ganske ubetydelig tid, lige i det Ã¸jeblik koden hentes ind i computeren ellers ikke.
 </para>
 <para>
 <screen>
 >>> from Tkinter import Frame
->>> Her stilles Frames objekter på plads:
+>>> Her stilles Frames objekter pÃ¥ plads:
 >>> Frame().pack()
 </screen>
 </para>
 <para>
 <screen>
->>> # Her ses at Frame er en klasse tilhørende Tkinter:
+>>> # Her ses at Frame er en klasse tilhÃ¸rende Tkinter:
 >>> Frame
 &lt;class Tkinter.Frame at 0x405ecd4c&gt;
 </screen>
 </para>
 <para>
-Vi får også at vide, at koden til Frame eller rettere indledningen til den er pladeret på den hexadecimale adresse 405ecd4c.
+Vi fÃ¥r ogsÃ¥ at vide, at koden til Frame eller rettere indledningen til den er pladeret pÃ¥ den hexadecimale adresse 405ecd4c.
 </para>
 <para>
 <screen>
@@ -6226,7 +6226,7 @@ En label kan vise ikke editerbar tekst plus ikoner.
 <para>
 </para>
 <para>
-Af fordefinerede ikoner er der følgende:
+Af fordefinerede ikoner er der fÃ¸lgende:
 </para>
 <para>
 ikoner = ["error","hourglass","info", "questhead","question",
@@ -6300,8 +6300,8 @@ root.mainloop()
 <screen>
 from Tkinter import *
 class LabelDemo( Frame ):
-   def __init__( self ):  # LabelDemos konstruktør
-      Frame.__init__( self )   # mor Frames konstruktør
+   def __init__( self ):  # LabelDemos konstruktÃ¸r
+      Frame.__init__( self )   # mor Frames konstruktÃ¸r
       self.pack( expand = YES, fill = BOTH )
       self.master.title( "Labels" )
       self.label1 = Label( self, text = "Label med tekst" )
@@ -6329,7 +6329,7 @@ if __name__ == "__main__":
  <sect1 id="wid.enLinjet">
   <title>Entry underklasse i Widget</title>
   <para>
-Entry er et en-linjes input område, der kan modtage input fra tastaturet eller vise information.
+Entry er et en-linjes input omrÃ¥de, der kan modtage input fra tastaturet eller vise information.
 </para>
 <para>
 <screen>
@@ -6341,7 +6341,7 @@ Entry er et en-linjes input område, der kan modtage input fra tastaturet eller v
 >>>
 from Tkinter import *
 root = Tk()
-Directions = Label(root, text ='Hvilken fil ønskes hentet?')
+Directions = Label(root, text ='Hvilken fil Ã¸nskes hentet?')
 Directions.config(anchor=W)
 inputBox = Entry(root, width=60)
 Directions.pack()
@@ -6369,7 +6369,7 @@ class EntryDemo( Frame ):
       self.frame1 = Frame( self )
       self.frame1.pack( pady = 5 )
       # text1 oprettes som barnebarn af Frame
-      # entry er endnu en underklasse i Widget klassen (læs barn af)
+      # entry er endnu en underklasse i Widget klassen (lÃ¦s barn af)
       self.text1 = Entry( self.frame1, name = "tekst1" )
       self.text1.bind( "&lt;Return&gt;", self.visIndhold )
       self.text1.pack( side = LEFT, padx = 5 )
@@ -6415,7 +6415,7 @@ if __name__ == "__main__":
  <sect1 id="wid.tekstboks">
   <title>Text underklasse i Widget</title>
   <para>
-Text modtager input fra tastaturet eller viser information. I modsætning til Entry komponentet er Text et areal, der kan
+Text modtager input fra tastaturet eller viser information. I modsÃ¦tning til Entry komponentet er Text et areal, der kan
 modtage mange tekstlinjer.
 </para>
 <para>
@@ -6433,8 +6433,8 @@ class tekstFunktioner(Frame):
         tekst = Text(self, relief=SUNKEN)
         rulleskakt.config(command=tekst.yview)      # xlink rulleskakt og tekst
         tekst.config(yscrollcommand=rulleskakt.set)    # flyttes en flyttes alle
-        rulleskakt.pack(side=RIGHT, fill=Y)            # pack først = clip sidst
-        tekst.pack(side=LEFT, expand=YES, fill=BOTH)   # tekst clipped først
+        rulleskakt.pack(side=RIGHT, fill=Y)            # pack fÃ¸rst = clip sidst
+        tekst.pack(side=LEFT, expand=YES, fill=BOTH)   # tekst clipped fÃ¸rst
         self.tekst = tekst
 
     def tekstvalg(self, tekst='', indfil=None):
@@ -6451,9 +6451,9 @@ class tekstFunktioner(Frame):
 if __name__ == '__main__':
     root = Tk()
     try:
-        streng = tekstFunktioner(indfil=sys.argv[1])  # filnavn på kommandolinje
+        streng = tekstFunktioner(indfil=sys.argv[1])  # filnavn pÃ¥ kommandolinje
     except IndexError:
-        streng = tekstFunktioner(tekst='Tekst\nindsættes her')
+        streng = tekstFunktioner(tekst='Tekst\nindsÃ¦ttes her')
 </screen>
 </para>
 <para>
@@ -6510,13 +6510,13 @@ barn.mainloop()
 <screen>
 from Tkinter import *
 root = Tk()
-def melding(event): print "Modtog melding om klik på knap"
+def melding(event): print "Modtog melding om klik pÃ¥ knap"
 text = Text()
 text.config(font=("times", 18, "normal"))    # skrift 18 punkts normal
 text.config(height=40, width=60)            # plads til 40 linjer a 60 tegn
 text.pack(expand=YES, fill=BOTH)
 text.insert(END, "Dette er\n\nmeningen\n\nmed livet.\n\n")   # indsaetter 6 linjer
-#linje 1  sender "Modtog melding om klik på knap" til skal (shell)
+#linje 1  sender "Modtog melding om klik pÃ¥ knap" til skal (shell)
 knap = Button(text, text="Python er andet end slanger.", command=lambda:melding(1))
 knap.pack()
 text.window_create(END, window=knap)    # indsaetter foto
@@ -6538,13 +6538,13 @@ root.mainloop()
 <screen>
 from Tkinter import *
 root = Tk()
-def melding(event): print "Modtog melding om klik på knap"
+def melding(event): print "Modtog melding om klik pÃ¥ knap"
 text = Text()
 text.config(font=("times", 18, "normal"))    # skrift 18 punkts normal
 text.config(height=40, width=60)            # plads til 40 linjer a 60 tegn
 text.pack(expand=YES, fill=BOTH)
 text.insert(END, "Dette er\n\nmeningen\n\nmed livet.\n\n")   # indsaetter 6 linjer
-#linje 1  sender "Modtog melding om klik på knap" til skal (shell)
+#linje 1  sender "Modtog melding om klik pÃ¥ knap" til skal (shell)
 knap = Button(text, text="Python er andet end slanger.", command=lambda:melding(1))
 knap.pack()
 text.window_create(END, window=knap)                          # indsaetter foto
@@ -6574,8 +6574,8 @@ root.mainloop()
  <sect1 id="wid.knap">
   <title>Button underklasse i Widget</title>
   <para>
-Button  er fordefineret som et komponent tilhørende Widget modulet.
-Ved klik med musens markør på knap kan funktion (metode) kaldes.
+Button  er fordefineret som et komponent tilhÃ¸rende Widget modulet.
+Ved klik med musens markÃ¸r pÃ¥ knap kan funktion (metode) kaldes.
 </para>
 <para>
 <screen>
@@ -6591,7 +6591,7 @@ class Arving(Frame):   # Klassehovede Arving er barn af  Frame
         widget.pack(side=LEFT)
     def message(Arving):
         Arving.data = Arving.data + 1
-        print 'Sum %s' % Arving.data # udskriver på skal (kunne være til fil)
+        print 'Sum %s' % Arving.data # udskriver pÃ¥ skal (kunne vÃ¦re til fil)
 if __name__ == '__main__': Arving().mainloop()
 </screen>
 </para>
@@ -6619,11 +6619,11 @@ Hej! Jeg er her.
 </screen>
 </para>
 <para>
-I Python bruger man ofte en såkaldt callback handler. Herved forstår
-man en funktion, som den i det følgende eksempel. En callback handler
+I Python bruger man ofte en sÃ¥kaldt callback handler. Herved forstÃ¥r
+man en funktion, som den i det fÃ¸lgende eksempel. En callback handler
 er en ganske normal metode (funktion) alene med den forskel, at modulet
 sys importeres direkte i den, og den i modulet fordefinerede metode
-exit() kaldes. Dens eneste formål er at gøre en udgang af en løkke her
+exit() kaldes. Dens eneste formÃ¥l er at gÃ¸re en udgang af en lÃ¸kke her
 mainloop() mulig.
 </para>
 <para>
@@ -6675,7 +6675,7 @@ class Arving(Frame):   # Klassehovede Arving er barn af  Frame
         widget.pack(side=LEFT)
     def message(Arving):
         Arving.data = Arving.data + 1
-        print 'Sum %s' % Arving.data # udskriver på skal (kunne være til fil)
+        print 'Sum %s' % Arving.data # udskriver pÃ¥ skal (kunne vÃ¦re til fil)
 if __name__ == '__main__': Arving().mainloop()
 </screen>
 </para>
@@ -6748,7 +6748,7 @@ print var.get()
  <sect1 id="wid.valgmenu">
   <title>Menu underklasse i Widget</title>
   <para>
-Menu komponentet kan vise en liste af værdier, hvorfra brugeren kan vælge.
+Menu komponentet kan vise en liste af vÃ¦rdier, hvorfra brugeren kan vÃ¦lge.
 </para>
 <para>
 <screen>
@@ -7055,7 +7055,7 @@ if __name__ == '__main__':
  <sect1 id="wid.rulleskakt">
   <title>Scrollbar underklasse i Widget</title>
   <para>
-Kan vise rulleskakt i canvas, text og list elementer. Eksemplet er vist udfyldeligt under beskrivelsen af Listbox underklassen se evt. der også, men først lige et par eksempler her:
+Kan vise rulleskakt i canvas, text og list elementer. Eksemplet er vist udfyldeligt under beskrivelsen af Listbox underklassen se evt. der ogsÃ¥, men fÃ¸rst lige et par eksempler her:
 </para>
 <para>
 <screen>
@@ -7233,15 +7233,15 @@ eks. 5
 </screen>
 </para>
 <para>
-Ser du på Pythons faq (kan findes på www.python.org), vil du konstatere, at der
-er lavet en lang række mere eller mindre kunstfærdige
-løsninger på netop et eksempel som eks. 5 Udviklingen
-af sådanne ting kan måske være meget interessante, men
-skal tingene være praktisk anvendelige, er der nok ofte
-mere konstruktive løsninger. Hvis man som her ønsker at
-oprette et bibliotek i et bibliotek, må man kunne skifte
-til sidstnævnte som eks. os.chdir("bibliotek"). I dette 
-tilfælde, er det nødvendigt at befinde sig det sted,
+Ser du pÃ¥ Pythons faq (kan findes pÃ¥ www.python.org), vil du konstatere, at der
+er lavet en lang rÃ¦kke mere eller mindre kunstfÃ¦rdige
+lÃ¸sninger pÃ¥ netop et eksempel som eks. 5 Udviklingen
+af sÃ¥danne ting kan mÃ¥ske vÃ¦re meget interessante, men
+skal tingene vÃ¦re praktisk anvendelige, er der nok ofte
+mere konstruktive lÃ¸sninger. Hvis man som her Ã¸nsker at
+oprette et bibliotek i et bibliotek, mÃ¥ man kunne skifte
+til sidstnÃ¦vnte som eks. os.chdir("bibliotek"). I dette 
+tilfÃ¦lde, er det nÃ¸dvendigt at befinde sig det sted,
 hvor bibliotek eksisterer.
 </para>
 <para>
@@ -7257,17 +7257,17 @@ OSError: [Errno 2] No such file or directory: 'bibliotek'
 </para>
 <para>
 Da det seneste kald var os.chdir("bibliotek"), og dette 
-bibliotek ikke findes får vi en af Pythons normalt fremragende 
-fejlmeldinger, hvad den også er denne gang. Den er virkelig god,
-men gamle Comal 80 har mig bekendt været det eneste computersprog,
-der nogensinde har eksisteret på dansk og dermed i stand til at 
-give danske fejlmeldinger, så computersprog og engelsk er det 
+bibliotek ikke findes fÃ¥r vi en af Pythons normalt fremragende 
+fejlmeldinger, hvad den ogsÃ¥ er denne gang. Den er virkelig god,
+men gamle Comal 80 har mig bekendt vÃ¦ret det eneste computersprog,
+der nogensinde har eksisteret pÃ¥ dansk og dermed i stand til at 
+give danske fejlmeldinger, sÃ¥ computersprog og engelsk er det 
 normale.
 </para>
 <para>
-Men selvom fejlmeldingen er fremragende, så er vi ligesom nødt til 
+Men selvom fejlmeldingen er fremragende, sÃ¥ er vi ligesom nÃ¸dt til 
 at bruge den konstruktivt, hvad vi har mulighed for med try..except,
-som jeg også er inde på flere andre steder i bogen.
+som jeg ogsÃ¥ er inde pÃ¥ flere andre steder i bogen.
 </para>
 <para>
 <screen>
@@ -7297,16 +7297,16 @@ Alternativ fjern bibliotek:
 </chapter>
 
 <chapter id="python-internettet">
- <title>Med Python på internettet</title>
+ <title>Med Python pÃ¥ internettet</title>
 
  <para>
-I en tid, hvor det ikke er ualmindeligt at modtage mails fra en meget stor del af den globale verden, kan det være rart
-at se, hvilken server, det måtte være, hvorfra der sendes til en. I Python kan det ske særdeles enklet. De tre forholdsvis
-ens eksempler, jeg nu vil vise, er så selvforklarende, at jeg kun vil tilføje, at Date: viser, hvornår jeg hentede de viste info ind. Dog skal tillægges 2 timer grundet forskellen i længdegrad fra Rønne til London og sommertiden. Endelig skal jeg
-gøre opmærksom, på at Content-Length: informationen viser det antal bytes, der er i indexfilen og ikke andet. Jeg finder det selv interessant at se, hvilken server den besøgte benytter. Jeg kunne ikke lade være med at tage såvel folketingets
-som Alt Om Datas udskrift med, fordi førstnævnte har vedtaget, at det offentlige skal bruge open source - og så bruger samme
-folketing endda en ældre version af Microsofts server (version 4) - der er ingen forbindelse mellem påstanden om at ville
-bruge eksempelvis Linux og så det at gøre det.
+I en tid, hvor det ikke er ualmindeligt at modtage mails fra en meget stor del af den globale verden, kan det vÃ¦re rart
+at se, hvilken server, det mÃ¥tte vÃ¦re, hvorfra der sendes til en. I Python kan det ske sÃ¦rdeles enklet. De tre forholdsvis
+ens eksempler, jeg nu vil vise, er sÃ¥ selvforklarende, at jeg kun vil tilfÃ¸je, at Date: viser, hvornÃ¥r jeg hentede de viste info ind. Dog skal tillÃ¦gges 2 timer grundet forskellen i lÃ¦ngdegrad fra RÃ¸nne til London og sommertiden. Endelig skal jeg
+gÃ¸re opmÃ¦rksom, pÃ¥ at Content-Length: informationen viser det antal bytes, der er i indexfilen og ikke andet. Jeg finder det selv interessant at se, hvilken server den besÃ¸gte benytter. Jeg kunne ikke lade vÃ¦re med at tage sÃ¥vel folketingets
+som Alt Om Datas udskrift med, fordi fÃ¸rstnÃ¦vnte har vedtaget, at det offentlige skal bruge open source - og sÃ¥ bruger samme
+folketing endda en Ã¦ldre version af Microsofts server (version 4) - der er ingen forbindelse mellem pÃ¥standen om at ville
+bruge eksempelvis Linux og sÃ¥ det at gÃ¸re det.
 </para>
 
 <para>
@@ -7350,12 +7350,12 @@ Content-Type: text/html; charset=iso-8859-1
 Content-Length: 23164
 
 >>> import ftplib
->>> # host kan læses som stedet, hvor filen er placeret.
+>>> # host kan lÃ¦ses som stedet, hvor filen er placeret.
 >>> ftp = ftplib.FTP("ftp.host.dk")
 >>> ftp.login("brugernavn skal ind her","password skal ind her")
 '230 User brugernavn logged in.'
 
-Hent dokument fra url på Web
+Hent dokument fra url pÃ¥ Web
 >>> from urllib import urlopen
 >>> dokument = urlopen("http://www.sslug.dk").read()
 >>> print dokument

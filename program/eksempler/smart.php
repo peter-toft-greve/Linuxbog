@@ -6,24 +6,24 @@ smart.php / index.php
 af Hans Schou <chlor@sslug.dk>
 $Id$
 
-Her skulle være et smart eksempel på hvad PHP er god til,
-og hvorfor så ikke bare vise det script vi bruger til
-at vise eksemplerne på programmeringssprogene.
+Her skulle vÃ¦re et smart eksempel pÃ¥ hvad PHP er god til,
+og hvorfor sÃ¥ ikke bare vise det script vi bruger til
+at vise eksemplerne pÃ¥ programmeringssprogene.
 I virkligheden hedder denne fil "index.php" og der
-er så bare lavet en symbolic link til "smart.php".
+er sÃ¥ bare lavet en symbolic link til "smart.php".
 
- Der er følgende scripts:
+ Der er fÃ¸lgende scripts:
   index.php - Denne fil
   proglang.inc - Listen med alle programmeringssprog
   show.php - Hvis kildetekst til et prog-sprog eksisterer
   list.php - List samlet en type eksempler, for eksempel "hello"
   all.php - Hvis alle eksempler for et programmeringssprog eksisterer
 
- Ovenstående filer kan ses i din browser med kommandoen:
+ OvenstÃ¥ende filer kan ses i din browser med kommandoen:
   http://www.sslug.dk/linuxbog/program/eksempler/udskriv.php?filnavn=show.php
 */
 
-/* Tilføj nye program-sprog i filen herunder */
+/* TilfÃ¸j nye program-sprog i filen herunder */
 require("proglang.inc");
 
 $version = file("../version.sgml");
@@ -39,14 +39,14 @@ Hent tar-ball
 med alle eksempler.
 <p>
 Der findes mange flere sprog til Linux end de viste,
-så listen dækker kun hvad vi selv har kunnet skrive.
+sÃ¥ listen dÃ¦kker kun hvad vi selv har kunnet skrive.
 Mangler dit favorit-sprog, modtager vi det gerne.
 <p>
-Der er følgende restriktioner til sprog der kan medtages:
+Der er fÃ¸lgende restriktioner til sprog der kan medtages:
 <ul>
 <li>Sproget skal findes til Linux</li>
 <li>Sproget skal findes som "fri software" (Open Source)</li>
-<li>Sproget skal indeholde kontrol-strukture alá if/for/while/goto</li>
+<li>Sproget skal indeholde kontrol-strukture alÃ¡ if/for/while/goto</li>
 <li>Sproget skal kunne flyttes til en anden CPU-arkitektur</li>
 </ul>
 
@@ -55,9 +55,9 @@ Kan du skrive lignende eksempler, modtager vi dem gerne.
 Sprog med '?' er tvivlsomme om de findes til Linux.
 <p>
 
-Klik f.eks. på "hello"-kolonnen for at få alle eksempler med det klasiske
+Klik f.eks. pÃ¥ "hello"-kolonnen for at fÃ¥ alle eksempler med det klasiske
 "Hello, world!" program.<br>
-Klik på et programsprognavn for at få en samlet side med de tre
+Klik pÃ¥ et programsprognavn for at fÃ¥ en samlet side med de tre
 eksempler samlet.
 <p>
 
@@ -71,11 +71,11 @@ eksempler samlet.
 ?>
 </tr>
 <?php
-  // Gennemløb array for alle prog-sprog
+  // GennemlÃ¸b array for alle prog-sprog
   while (list($ext,$lang) = each($proglang)) {
     // Start et row og skriv et programsprog
     echo "<tr>\n";
-    // Tæl op om alle eksempler er der
+    // TÃ¦l op om alle eksempler er der
     reset($examp);
     $gotall = 0;
     while (list($file) = each($examp))

@@ -2,13 +2,13 @@
 <title>Lyd under Linux</title>
 
 
-<para>I dette kapitel ser vi på programmer til at håndtere lyd, dvs.
+<para>I dette kapitel ser vi pÃ¥ programmer til at hÃ¥ndtere lyd, dvs.
 afspille CD'er, MP3 og Ogg Vorbis filer, redigere lydfiler og lave
 nodesats.</para>
 
-<para>Hvis du, efter at have læst dette kapitel, gerne vil vide mere
+<para>Hvis du, efter at have lÃ¦st dette kapitel, gerne vil vide mere
 om lyd under Linux og programmer til dette, findes der en
-anbefalelsesværdig oversigt over alt indenfor Linux og lyd på <ulink
+anbefalelsesvÃ¦rdig oversigt over alt indenfor Linux og lyd pÃ¥ <ulink
 url="http://www.linuxsound.at/">www.linuxsound.at</ulink>.  </para>
 
 <!-- ====================================================================== -->
@@ -21,19 +21,19 @@ url="http://www.linuxsound.at/">www.linuxsound.at</ulink>.  </para>
 <indexterm><primary>CD lyd</primary></indexterm>
 
 <para>Til Linux findes der mange programmer til at afspille
-lyd-cd'er. Afhængigt af hvad du bruger som skrivebordsmiljø,
-f.eks. KDE eller Gnome, kan du med fordel bruges miljøets indbyggede
+lyd-cd'er. AfhÃ¦ngigt af hvad du bruger som skrivebordsmiljÃ¸,
+f.eks. KDE eller Gnome, kan du med fordel bruges miljÃ¸ets indbyggede
 CD afspiller.</para>
 
 <indexterm><primary>kscd</primary></indexterm>
 <para>For KDE er det programmet <command>kscd</command>. I praksis
-finder du den nemmest i KDE ved at vælge menuen
+finder du den nemmest i KDE ved at vÃ¦lge menuen
 "K-&gt;Multimedia-&gt;Lyd-&gt;CD Player". Programmet er meget nemt at
-bruge og ved at gå ind i opsætningen (hammer og skruetrækker) kan
-<ulink url="http://freedb.org/">freedb</ulink> slås til. Så bliver
-titlen og nummeret de afspilles vist på skærmen.  Freedb kræver at du
-er logget på internettet første gang du sætter CD'en i, men efterfølgende
-kan du slå til at titler skal gemmes på din harddisk så du
+bruge og ved at gÃ¥ ind i opsÃ¦tningen (hammer og skruetrÃ¦kker) kan
+<ulink url="http://freedb.org/">freedb</ulink> slÃ¥s til. SÃ¥ bliver
+titlen og nummeret de afspilles vist pÃ¥ skÃ¦rmen.  Freedb krÃ¦ver at du
+er logget pÃ¥ internettet fÃ¸rste gang du sÃ¦tter CD'en i, men efterfÃ¸lgende
+kan du slÃ¥ til at titler skal gemmes pÃ¥ din harddisk sÃ¥ du
 altid har titlerne til de CD'er du spiller.</para>
 
 <figure id="kscd-fig" float="1">
@@ -47,7 +47,7 @@ altid har titlerne til de CD'er du spiller.</para>
 <indexterm><primary>gnome-cd</primary></indexterm>
 <para>Til Gnome findes tilsvarende programmet
 <command>gnome-cd</command>. Hvis du ikke bruger KDE eller Gnome kan
-det være du kan få glæde af programmet <command>xplaycd</command>.</para>
+det vÃ¦re du kan fÃ¥ glÃ¦de af programmet <command>xplaycd</command>.</para>
 
 <figure id="xplaycd-fig" float="1">
 <title>xplaycd</title>
@@ -56,12 +56,12 @@ det være du kan få glæde af programmet <command>xplaycd</command>.</para>
 
 <indexterm><primary>cdplay</primary></indexterm>
 <indexterm><primary>cdp</primary></indexterm> 
-<para>Hvis du hellere vil have et tekst-interface, så kan du være
+<para>Hvis du hellere vil have et tekst-interface, sÃ¥ kan du vÃ¦re
 interesseret i at installere programsamlingen "sox", idet den
 indeholder <command>cdplay</command> og <command>cdp</command>. Reelt
 er det samme program, men <command>cdp</command> starter en lille
 tekst-menu op i det terminal-vindue, hvor programmet startes. Dette
-kan ses på <xref linkend="cdp-fig"/>. Du kan læse mere om sox i <xref
+kan ses pÃ¥ <xref linkend="cdp-fig"/>. Du kan lÃ¦se mere om sox i <xref
 linkend="sox"/>.</para>
 
 <figure id="cdp-fig" float="1">
@@ -80,11 +80,11 @@ linkend="sox"/>.</para>
 <indexterm><primary>Ogg Vorbis</primary></indexterm>
 <indexterm><primary>OGG</primary></indexterm>
 
-<para>Under Linux er det selvfølgeligt muligt at indkode og afspille
-MP3 filer, men da MP3 filer er behæftet med patentproblemer, vil vi
+<para>Under Linux er det selvfÃ¸lgeligt muligt at indkode og afspille
+MP3 filer, men da MP3 filer er behÃ¦ftet med patentproblemer, vil vi
 anbefale dig at bruge formattet Ogg Vorbis (udtales Forbis) til
-indkodning af din lyd. Vi vil dog præsentere værktøjer til at arbejde
-med begge formater. Først præsenteres afspilning, derefter
+indkodning af din lyd. Vi vil dog prÃ¦sentere vÃ¦rktÃ¸jer til at arbejde
+med begge formater. FÃ¸rst prÃ¦senteres afspilning, derefter
 indkodning.</para>
 
 <!-- ====================================================================== -->
@@ -108,27 +108,27 @@ url="http://www.xmms.org">www.xmms.org</ulink>).</para>
  <secondary>Afspille med xmms</secondary></indexterm>
 
 
-<para>Udover at kunne afspille lydfiler har Xmms også muligheden for
+<para>Udover at kunne afspille lydfiler har Xmms ogsÃ¥ muligheden for
 at huske spille-lister, dvs. lister af melodier, som styres fra det
-panel, der kommer frem ved at trykke på "PL". Ellers styres
+panel, der kommer frem ved at trykke pÃ¥ "PL". Ellers styres
 <command>xmms</command> som en almindelig CD-afspiller eller
-kassette-radio, dvs. frem, tilbage, stop og pause.  En sød lille
-"feature" fås ved at maksimere programmet. Derved bliver afspilleren
-meget diskret på din desktop. Iøvrigt kan Xmms også afspille MPG1
+kassette-radio, dvs. frem, tilbage, stop og pause.  En sÃ¸d lille
+"feature" fÃ¥s ved at maksimere programmet. Derved bliver afspilleren
+meget diskret pÃ¥ din desktop. IÃ¸vrigt kan Xmms ogsÃ¥ afspille MPG1
 videofiler.</para>
 
-<para>Programmet <command>xmms</command> har nærmest alt hvad man kan
-ønske sig af en medieafspiller. Designet af programmet har været meget
-åbent, så forskellige programmører "nemt" har kunnet bidrage med
+<para>Programmet <command>xmms</command> har nÃ¦rmest alt hvad man kan
+Ã¸nske sig af en medieafspiller. Designet af programmet har vÃ¦ret meget
+Ã¥bent, sÃ¥ forskellige programmÃ¸rer "nemt" har kunnet bidrage med
 plug-ins af forskellig art, og tilsvarende med "skins", dvs. med nye
-måder programmet kan se ud på. På <ulink
+mÃ¥der programmet kan se ud pÃ¥. PÃ¥ <ulink
 url="http://www.xmms.org/skins.php">www.xmms.org/skins.html</ulink>
-kan man finde rigtig mange nye skins. På <xref linkend="xmms-fig"/> og
+kan man finde rigtig mange nye skins. PÃ¥ <xref linkend="xmms-fig"/> og
 <xref linkend="xmms2-fig"/> kan man se to forskellige skins. Skins
 skal hentes hjem og udpakkes under
 <filename>./xmms/Skins/NYTSKINNAVN</filename>, med enten
 <command>unzip ZIP-fil.zip</command> eller <command>tar xzvf
-TARGZ-fil.tar.gz</command>. Med <command>Alt-s</command> vælges mellem
+TARGZ-fil.tar.gz</command>. Med <command>Alt-s</command> vÃ¦lges mellem
 de forskellige skins.  </para>
 
 <figure id="xmms-fig" float="1">
@@ -148,9 +148,9 @@ de forskellige skins.  </para>
 
 <para>
 <emphasis>Tip:</emphasis>
-Hvis du har problemer med lyd i KDE, når du bruger XMMS, så prøv følgende:
-"Højre mus" -&gt; "Funktioner" -&gt; "Indstillinger" -&gt;
-"Uddata-indstik". Prøv at vælge "aRts Driver" i stedet
+Hvis du har problemer med lyd i KDE, nÃ¥r du bruger XMMS, sÃ¥ prÃ¸v fÃ¸lgende:
+"HÃ¸jre mus" -&gt; "Funktioner" -&gt; "Indstillinger" -&gt;
+"Uddata-indstik". PrÃ¸v at vÃ¦lge "aRts Driver" i stedet
 for "OSS".
 </para>
 
@@ -158,26 +158,26 @@ for "OSS".
 <!--  Det er sgu for hardcore
 <para>
 <emphasis>Tip:</emphasis>
-Endelig kan et godt trick nævnes, hvis du er interesseret i at skære en
-MP3-fil op i mindre dele. I det følgende eksempel skipper vi de første
-1200 kb af MP3-filen og tager et udsnit på 15 kb. Hvis
-man kender fil-størrelsen eller bitraten kan man
-relativt nemt skære filer til på denne måde.  
+Endelig kan et godt trick nÃ¦vnes, hvis du er interesseret i at skÃ¦re en
+MP3-fil op i mindre dele. I det fÃ¸lgende eksempel skipper vi de fÃ¸rste
+1200 kb af MP3-filen og tager et udsnit pÃ¥ 15 kb. Hvis
+man kender fil-stÃ¸rrelsen eller bitraten kan man
+relativt nemt skÃ¦re filer til pÃ¥ denne mÃ¥de.  
 </para>
 
 <screen><prompt>[tyge@hven ~]$ </prompt><userinput>dd if=DIN_FIL.mp3 of=NY_FIL.mp3 bs=1c skip=1200k count=15k</userinput>
 </screen>
 
 <para>
-<emphasis>Tip:</emphasis> på 
-<ulink url="http://LinuxFocus.org/English/March2001/article178.shtml">http://LinuxFocus.org/English/March2001/article178.shtml</ulink> kan du læse mere 
+<emphasis>Tip:</emphasis> pÃ¥ 
+<ulink url="http://LinuxFocus.org/English/March2001/article178.shtml">http://LinuxFocus.org/English/March2001/article178.shtml</ulink> kan du lÃ¦se mere 
 om konvertering af lyd til MP3 i real-tid.
 </para>
 
 -->
 
 <para><emphasis>Tip:</emphasis> Vil du gerne lave en Ogg Vorbis (eller
-MP3) fil om til en WAV-fil, så har Xmms et diskwriter plugin der kan
+MP3) fil om til en WAV-fil, sÃ¥ har Xmms et diskwriter plugin der kan
 skrive alle former for lyd til en WAV-fil istedet for at sende det til
 lydkortet.</para>
 
@@ -194,10 +194,10 @@ lydkortet.</para>
 
 <para>En anden god Ogg Vorbis (eller MP3) afspiller er Zinf som kan
 hentes fra <ulink url="http://www.zinf.org">www.zinf.org</ulink>
-(nogle distributioner har også Zinf som pakke i deres "contrib" del).</para>
+(nogle distributioner har ogsÃ¥ Zinf som pakke i deres "contrib" del).</para>
 
-<para>Zinf har næsten de samme funktioner som Xmms. F.eks. kan man
-ændre udsendet med "skins" der kan hentes fra hjemmesiden se <xref
+<para>Zinf har nÃ¦sten de samme funktioner som Xmms. F.eks. kan man
+Ã¦ndre udsendet med "skins" der kan hentes fra hjemmesiden se <xref
 linkend="zinf-fig1"/>, <xref linkend="zinf-fig2"/> og <xref
 linkend="zinf-fig3"/>.  </para>
 
@@ -226,13 +226,13 @@ linkend="zinf-fig3"/>.  </para>
 <indexterm><primary>Ogg Vorbis</primary></indexterm>
 
 <para>De fleste distributioner inkluderer som udgangspunkt alle de
-værktøjer du har brug for, for at kunne arbejde med Ogg Vorbis
-filer. Ellers kan du på <ulink url="http://www.vorbis.com/">
+vÃ¦rktÃ¸jer du har brug for, for at kunne arbejde med Ogg Vorbis
+filer. Ellers kan du pÃ¥ <ulink url="http://www.vorbis.com/">
 www.vorbis.com</ulink> hente programmer og biblioteker til
 Linux (og til f.eks. Microsoft Windows).</para>
 
 <para>Til at kode <filename>.wav</filename>-filer over til
-<filename>.ogg</filename>-filer gør du følgende: </para>
+<filename>.ogg</filename>-filer gÃ¸r du fÃ¸lgende: </para>
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>oggenc -o FILNAVN.ogg -a MUSIKER -t TITEL -l STED FILNAVN.wav</userinput>
@@ -240,11 +240,11 @@ Linux (og til f.eks. Microsoft Windows).</para>
 
 <para> 
 Har du en stereo Wave-fil (.wav) hvis indhold reelt er i mono (f.eks.et
-foredrag), så kan du spare pladsen
-ved at lave en mono-udgave af ogg-filen ved at køre 
-filen igennem <command>sox</command> først. I dette 
-eksempel er der ikke anført musiker-navn og optage-sted 
-som i det ovenstående.
+foredrag), sÃ¥ kan du spare pladsen
+ved at lave en mono-udgave af ogg-filen ved at kÃ¸re 
+filen igennem <command>sox</command> fÃ¸rst. I dette 
+eksempel er der ikke anfÃ¸rt musiker-navn og optage-sted 
+som i det ovenstÃ¥ende.
 </para>
 
 <screen>
@@ -254,19 +254,19 @@ som i det ovenstående.
 
 <para>
 Filerne kan spilles enten med <command>freeamp</command> eller
-<command>xmms</command>. <command>xmms</command> kræver dog at du har
+<command>xmms</command>. <command>xmms</command> krÃ¦ver dog at du har
 installeret <filename>libogg</filename> og
 <filename>libvorbis</filename> &ndash; dette bibliotek er som regel
 installeret automatisk af din distribution.</para>
 
-<!-- Hører til en server bog...
+<!-- HÃ¸rer til en server bog...
 <para>
 <indexterm><primary>Streame lyd</primary></indexterm>
 <emphasis>Tip:</emphasis> har du brug for en streaming-server til
-OGG-filer, så se mere på <ulink
+OGG-filer, sÃ¥ se mere pÃ¥ <ulink
 url="http://www.icecast.org">www.icecast.org</ulink>. Alternativt kan
-man på <ulink url="http://media.tangent.org">media.tangent.org</ulink>
-finde et patch (mod_mp3) til Apache, så man kan streame MP3 eller
+man pÃ¥ <ulink url="http://media.tangent.org">media.tangent.org</ulink>
+finde et patch (mod_mp3) til Apache, sÃ¥ man kan streame MP3 eller
 OGG-filer.</para> 
 -->
 </sect2>
@@ -277,23 +277,23 @@ OGG-filer.</para>
 <title>Indkodning af OGG eller MP3-filer fra CD'er</title>
 <indexterm><primary>Grip</primary></indexterm>
 
-<para>En meget nem måde at lave MP3- eller OGG-filer på ud fra en lyd
+<para>En meget nem mÃ¥de at lave MP3- eller OGG-filer pÃ¥ ud fra en lyd
 CD, er at installere <command>grip</command>, som de fleste
-distributioner installerer som standard, sammen med understøttelse af
-indkodning af OGG filer. (Ellers kan Grip findes på <ulink
+distributioner installerer som standard, sammen med understÃ¸ttelse af
+indkodning af OGG filer. (Ellers kan Grip findes pÃ¥ <ulink
 url="http://www.nostatic.org/grip"> www.nostatic.org/grip/</ulink>).
 Grip er et grafisk program, som kalder et par andre programmer og
-dermed kan anvendes til at indkode både MP3-filer og
-OGG-filer. Iøvrigt kan Grip også anvendes til at afspille CD'er
+dermed kan anvendes til at indkode bÃ¥de MP3-filer og
+OGG-filer. IÃ¸vrigt kan Grip ogsÃ¥ anvendes til at afspille CD'er
 med.</para>
 
 <para>Det smarte ved programmet <command>grip</command> er at det
 automatisk kan hente titler og cd-rom-information fra Freedb og derved
-får dine lydfiler al information om sangene indkodet. Programmet vil
-køre en rip-proces (cd-rom-&gt;wav-fil) og en indkodningsproces
-(wav-&gt;OGG) på samme tid, og når alt er kodet, bliver de
+fÃ¥r dine lydfiler al information om sangene indkodet. Programmet vil
+kÃ¸re en rip-proces (cd-rom-&gt;wav-fil) og en indkodningsproces
+(wav-&gt;OGG) pÃ¥ samme tid, og nÃ¥r alt er kodet, bliver de
 midlertidige wav-filer automatisk slettet, mens de indkodede filer
-gemmes i <filename>~/mp3</filename> (af historiske årsager hedder
+gemmes i <filename>~/mp3</filename> (af historiske Ã¥rsager hedder
 dette katalog ikke ogg).</para>
 
 <figure id="grip" float="1">
@@ -303,15 +303,15 @@ dette katalog ikke ogg).</para>
 
 <para>
 Hvis du virkeligt har brug for MP3-filer istedet for OGG-filer, kan
-Grip sættes op til at lave MP3-filer. Det kræver at du installerer
+Grip sÃ¦ttes op til at lave MP3-filer. Det krÃ¦ver at du installerer
 f.eks. programmet <command>lame</command> som ofte findes som pakke
-til de forskellige distributioner. Du skal så ændre Grips opsætning.
-På <xref linkend="grip-ogg1"/> og <xref linkend="grip-ogg2"/> er vist
-et par af de parametre som kan ændres under "Config". Du skal ind
+til de forskellige distributioner. Du skal sÃ¥ Ã¦ndre Grips opsÃ¦tning.
+PÃ¥ <xref linkend="grip-ogg1"/> og <xref linkend="grip-ogg2"/> er vist
+et par af de parametre som kan Ã¦ndres under "Config". Du skal ind
 under "Config"->"Rip", "Config"->"MP3" og "Config"->"ID3".  </para>
 
 <figure id="grip-ogg1" float="1">
-<title>Grip kan opsættes til at bruge forskellige ripper programmer</title>
+<title>Grip kan opsÃ¦ttes til at bruge forskellige ripper programmer</title>
 <graphic fileref="grip_ogg1.&magic;"  scale="50"></graphic>
 </figure>
 
@@ -321,32 +321,32 @@ under "Config"->"Rip", "Config"->"MP3" og "Config"->"ID3".  </para>
 </figure>
 
 <sect3 id="lave-mp3-og-ogg-uden-grafik">
-<title>Lave OGG eller MP3-filer med tekstbaserede værktøjer</title>
+<title>Lave OGG eller MP3-filer med tekstbaserede vÃ¦rktÃ¸jer</title>
 
 <para>Det er ofte praktisk at kunne arbejde med tekst-baserede
-værktøjer hvis du skal have konverteret mange filer, eller har den
+vÃ¦rktÃ¸jer hvis du skal have konverteret mange filer, eller har den
 samme konverteringsopgave mange gange. I stedet for at anvende Grip,
-som vist ovenfor, så skal vi her se på et par tekstbaserede værktøjer
+som vist ovenfor, sÃ¥ skal vi her se pÃ¥ et par tekstbaserede vÃ¦rktÃ¸jer
 til at konvertere lyd.</para>
 
-<para>En god pakke man bør installere er <filename>sox</filename>, som
-indeholder programmer til at håndtere ikke-komprimerede lydfiler, som
-f.eks. WAV-filer, fra kommandolinjen. Vil man spille en WAV-fil gøres
+<para>En god pakke man bÃ¸r installere er <filename>sox</filename>, som
+indeholder programmer til at hÃ¥ndtere ikke-komprimerede lydfiler, som
+f.eks. WAV-filer, fra kommandolinjen. Vil man spille en WAV-fil gÃ¸res
 dette med <command>play MIN-FIL.wav</command>. Tilsvarende kan man
-optage en lydfil med <command>rec MIN-fil.wav</command>. Du kan læse
+optage en lydfil med <command>rec MIN-fil.wav</command>. Du kan lÃ¦se
 mere om sox i <xref linkend="sox"/>.</para>
 
 <para>
-Vil du indkode en WAV fil til OGG-formatet, så læs <xref
-linkend="ogg"/>, hvor det gennemgås mere om hvordan man koder til
-OGG-format &ndash; den korte version er at man kører <command>oggenc
-MIN-FIL.wav</command> og får <filename>MIN-FIL.ogg</filename> som
+Vil du indkode en WAV fil til OGG-formatet, sÃ¥ lÃ¦s <xref
+linkend="ogg"/>, hvor det gennemgÃ¥s mere om hvordan man koder til
+OGG-format &ndash; den korte version er at man kÃ¸rer <command>oggenc
+MIN-FIL.wav</command> og fÃ¥r <filename>MIN-FIL.ogg</filename> som
 resultat.  </para>
 
-<para>Vil du hellere konvertere lyd-filen til MP3, så skal du
+<para>Vil du hellere konvertere lyd-filen til MP3, sÃ¥ skal du
 installere programmet <filename>lame</filename>, som de fleste
 distributioner typisk har en pakke med. (Ellers kan programmet findes
-på <ulink url="http://www.mp3dev.org/mp3/">www.mp3dev.org/mp3/
+pÃ¥ <ulink url="http://www.mp3dev.org/mp3/">www.mp3dev.org/mp3/
 </ulink>).</para>
 
 </sect3>
@@ -368,7 +368,7 @@ på <ulink url="http://www.mp3dev.org/mp3/">www.mp3dev.org/mp3/
 <para>Til Linux findes der mange gode lydredigeringsprogrammer og
 programmer til at redigere musik (midi/sequencers) med. Denne sektion
 indeholder referencer og beskrivelser af forskellige nyttige
-programmer &ndash; primært til redigering af lyd.</para>
+programmer &ndash; primÃ¦rt til redigering af lyd.</para>
 
 <sect2 id="ladspa">
 <title>LADSPA moduler</title>
@@ -376,19 +376,19 @@ programmer &ndash; primært til redigering af lyd.</para>
 <indexterm><primary>LADSPA moduler</primary></indexterm>
 <indexterm><primary>Linux Audio Developers</primary></indexterm>
 
-<para>Inden de forskellige programmer beskrives nævnes kort "Linux
+<para>Inden de forskellige programmer beskrives nÃ¦vnes kort "Linux
 Audio Developer's Simple Plugin API" (LADSPA). Dette er et API for
 programmering af lyd "plugins" (moduler) som flere og flere Linux
-applikationer der arbejder med lyd understøtter.</para>
+applikationer der arbejder med lyd understÃ¸tter.</para>
 
-<para>Hjemmesiden for LADSPA er på <ulink
+<para>Hjemmesiden for LADSPA er pÃ¥ <ulink
 url="http://www.ladspa.org/">http://www.ladspa.org/</ulink> hvor man
-kan hente en række moduler i "pakker", som kan anvendes af de
-programmer der nævnes i det følgende, såfremt det fremgår af
-beskrivelsen af dem. LADSPAs hjemmeside er i øvrigt et godt
+kan hente en rÃ¦kke moduler i "pakker", som kan anvendes af de
+programmer der nÃ¦vnes i det fÃ¸lgende, sÃ¥fremt det fremgÃ¥r af
+beskrivelsen af dem. LADSPAs hjemmeside er i Ã¸vrigt et godt
 udgangspunkt for at finde interessante lydredigeringsprogrammer. Hvis
 man er interesseret i at vide mere om lydinfrastruktur under Linux,
-kan man også besøge "Linux Audio Developers" på <ulink
+kan man ogsÃ¥ besÃ¸ge "Linux Audio Developers" pÃ¥ <ulink
 url="http://www.linuxdj.com/audio/lad/">http://www.linuxdj.com/audio/lad/</ulink>.
 Det er dog absolut mest for programudviklere.</para>
 </sect2>
@@ -403,13 +403,13 @@ Det er dog absolut mest for programudviklere.</para>
 
 <para>Sox er et kommandolinje program. Fra den danske beskrivelse i
 Mandrake: 'Sox betegner sig selv som "Lyd-programmernes
-schweizer-kniv". Det kan konvertere mellem mange lydformater og udføre
+schweizer-kniv". Det kan konvertere mellem mange lydformater og udfÃ¸re
 simple manipulationer'. Bliver installeret som standard i langt de
-fleste distributioner. Sox' anvendelighed ligger først og fremmest i
-konverteringen mellem formater, men kan også anvendes til f.eks. at
-filtrere forskellige frekvenser fra i en snæver
-vending. (F.eks. mikrofonstøj fra optageudstyr). Altså måske især
-anvendeligt som en form for pre/postprocessingværktøj i forbindelse
+fleste distributioner. Sox' anvendelighed ligger fÃ¸rst og fremmest i
+konverteringen mellem formater, men kan ogsÃ¥ anvendes til f.eks. at
+filtrere forskellige frekvenser fra i en snÃ¦ver
+vending. (F.eks. mikrofonstÃ¸j fra optageudstyr). AltsÃ¥ mÃ¥ske isÃ¦r
+anvendeligt som en form for pre/postprocessingvÃ¦rktÃ¸j i forbindelse
 med optagelser. Nedenfor kan du se et kald til sox &ndash; du kan
 komme videre med man siden.</para>
 
@@ -444,8 +444,8 @@ wav wve
 <indexterm><primary>DAP</primary></indexterm>
 <indexterm><primary>Lydredigering</primary>
            <secondary>med DAP</secondary></indexterm>
-<para>DAP er en "gammel traver" inden for lydredigering på Unix
-platforme. Den understøtter de mest almindelige former for redigering
+<para>DAP er en "gammel traver" inden for lydredigering pÃ¥ Unix
+platforme. Den understÃ¸tter de mest almindelige former for redigering
 af lyd, herunder en del dspeffekter, som flanger, phaser, distortion,
 mv. <xref linkend="dap-fig"/> viser DAPs forskellige vinduer.</para>
 
@@ -454,7 +454,7 @@ mv. <xref linkend="dap-fig"/> viser DAPs forskellige vinduer.</para>
 <graphic fileref="dap.&magic;" scale="40"></graphic>
 </figure>
 
-<para>DAPs hjemmeside er på <ulink
+<para>DAPs hjemmeside er pÃ¥ <ulink
 url="http://www.cee.hw.ac.uk/~richardk/">http://www.cee.hw.ac.uk/~richardk/</ulink>
 og DAP kommer med nogen distributioner, dog ikke ret mange.</para>
 </sect2>
@@ -473,13 +473,13 @@ og DAP kommer med nogen distributioner, dog ikke ret mange.</para>
 <para>Snd er en lydeditor, der blandt andet har sin styrke inden for
 Fourier-fremstillinger. Snd kan tilrettes/scriptes med guile og
 guile-gtk, hvilket giver gode muligheder for at udvikle egne moduler
-til programmet. Ligesom der findes en lang række moduler til snd
-allerede. Snd understøtter desuden LADSPA. Som det kan ses på <xref
-linkend="snd-1-fig"/> understøtter snd desuden optagelse fra
+til programmet. Ligesom der findes en lang rÃ¦kke moduler til snd
+allerede. Snd understÃ¸tter desuden LADSPA. Som det kan ses pÃ¥ <xref
+linkend="snd-1-fig"/> understÃ¸tter snd desuden optagelse fra
 flere lydkilder &ndash; f.eks. flere lydkort &ndash; samtidig.</para>
 
 <figure id="snd-1-fig" float="1">
-<title>Snd &ndash; flere samtidige lydkilder understøttes</title>
+<title>Snd &ndash; flere samtidige lydkilder understÃ¸ttes</title>
 <graphic fileref="snd-1.&magic;" scale="50"></graphic>
 </figure>
 
@@ -490,13 +490,13 @@ blandt andet en Fourier-fremstilling.
 </para>
 
 <figure id="snd-2-fig" float="1">
-<title>Snd &ndash; flere fremstillinger understøttes</title>
+<title>Snd &ndash; flere fremstillinger understÃ¸ttes</title>
 <graphic fileref="snd-2.&magic;" scale="50"></graphic>
 </figure>
 
-<para>Snds hjemmeside er på <ulink
+<para>Snds hjemmeside er pÃ¥ <ulink
 url="http://www-ccrma.stanford.edu/software/snd/">www-ccrma.stanford.edu/software/snd/</ulink>
-hvor der også er en omfattende manual.</para> </sect2>
+hvor der ogsÃ¥ er en omfattende manual.</para> </sect2>
 
 <!-- =================================================================== -->
 <!-- GLAME -->
@@ -509,15 +509,15 @@ hvor der også er en omfattende manual.</para> </sect2>
 <indexterm><primary>LADSPA moduler</primary>
            <secondary>med Glame</secondary></indexterm>
 
-<para>Glame forsøger at blive "the GIMP of sound". Programmet er
+<para>Glame forsÃ¸ger at blive "the GIMP of sound". Programmet er
 stadig noget umodent, men inkluderes allerede nu i flere Linux
 distributioner da det er et meget interessant program der allerede nu
 tilbyder megen funktionalitet.</para>
 
 <para>Glame er opbygget omkring en engine skrevet i guile, og en lang
-række af plugins. Denne arkitektur har tidligere vist sig at være
-meget fremmende for udvikling, for f.eks. Gimp. Glame understøtter blandt andet
-LADSPA. På <xref linkend="glame-1-fig"/> vises et typisk Glame projekt
+rÃ¦kke af plugins. Denne arkitektur har tidligere vist sig at vÃ¦re
+meget fremmende for udvikling, for f.eks. Gimp. Glame understÃ¸tter blandt andet
+LADSPA. PÃ¥ <xref linkend="glame-1-fig"/> vises et typisk Glame projekt
 under almindelig waveform redigering.</para>
 
 <figure id="glame-1-fig" float="1">
@@ -526,16 +526,16 @@ under almindelig waveform redigering.</para>
 </figure>
 
 <para>En interessant funktionalitet Glame har, er muligheden for at
-lave netværk af de forskellige filtre/plugins. Dette er illustreret på
+lave netvÃ¦rk af de forskellige filtre/plugins. Dette er illustreret pÃ¥
 <xref linkend="glame-2-fig"/>.</para>
 
 <figure id="glame-2-fig" float="1">
-<title>Glame &ndash; opbygning af filternetværk</title>
+<title>Glame &ndash; opbygning af filternetvÃ¦rk</title>
 <graphic fileref="glame-2.&magic;" scale="90"></graphic>
 </figure>
 
-<para>Glame kommer som nævnt med flere Linux distributioner, men
-ellers er hjemmesiden på <ulink
+<para>Glame kommer som nÃ¦vnt med flere Linux distributioner, men
+ellers er hjemmesiden pÃ¥ <ulink
 url="http://glame.sourceforge.net/">glame.sourceforge.net</ulink>.</para>
 </sect2>
 
@@ -551,22 +551,22 @@ url="http://glame.sourceforge.net/">glame.sourceforge.net</ulink>.</para>
            <secondary>med Audacity</secondary></indexterm>
 
 <para>Audacity er endnu et lydredigeringsprogram. En fordel ved
-Audacity er at programmet findes til både Linux, Mac og Windows og at
-der findes en dansk oversættelse. Her er teksten fra hjemmesidens
+Audacity er at programmet findes til bÃ¥de Linux, Mac og Windows og at
+der findes en dansk oversÃ¦ttelse. Her er teksten fra hjemmesidens
 danske beskrivelse: "Audacity er en fri og gratis lydeditor. Du kan
 indspille lyd, afspille lyd, importere og eksportere filer i WAV,
-AIFF, mp3 med mere. Brug Audacity til at redigere lyd med Klip, Kopiér
-og Indsæt (og ubegrænset fortrydelse), mix spor sammen, eller tilføj
-effekter til dine indspilninger. Det har også en indbygget
+AIFF, mp3 med mere. Brug Audacity til at redigere lyd med Klip, KopiÃ©r
+og IndsÃ¦t (og ubegrÃ¦nset fortrydelse), mix spor sammen, eller tilfÃ¸j
+effekter til dine indspilninger. Det har ogsÃ¥ en indbygget
 styrkekonvolutering, en justerbar spektogramfremstilling og et
 frekvensanalysevindue til brug for egentlig lydanalyse. Indbyggede
-effekter omfatter blandt andet Bas boost, Wahwah, støjfjernelse, og
+effekter omfatter blandt andet Bas boost, Wahwah, stÃ¸jfjernelse, og
 programmet kan bruge VST-udvidelser."</para>
 
 <para>De VST udvidelser der omtales, er pendanten til LADSPA, men
 under Windows og Mac. I Audacitys nyeste udgave (1.1 som dette
-skrives) understøttes LADSPA også (under Linux). På <xref
-linkend="audacity-1-1-fig"/> vises et skærmskud af Audacity 1.1.</para>
+skrives) understÃ¸ttes LADSPA ogsÃ¥ (under Linux). PÃ¥ <xref
+linkend="audacity-1-1-fig"/> vises et skÃ¦rmskud af Audacity 1.1.</para>
 
 <figure id="audacity-1-1-fig" float="1">
 <title>Audacity</title>
@@ -574,12 +574,12 @@ linkend="audacity-1-1-fig"/> vises et skærmskud af Audacity 1.1.</para>
 </figure>
 
 <para>Audacity kommer med flere Linux distributioner, men
-ellers er hjemmesiden på <ulink
+ellers er hjemmesiden pÃ¥ <ulink
 url="http://audacity.sourceforge.net/">audacity.sf.net</ulink>.
 </para>
 
 <para>
-Er Audacity ikke avanceret nok til dine behov, så tag et kig på
+Er Audacity ikke avanceret nok til dine behov, sÃ¥ tag et kig pÃ¥
 Ardour i <xref linkend="ardour"/>.
 </para>
 
@@ -595,17 +595,17 @@ Ardour i <xref linkend="ardour"/>.
            <secondary>med Ardour</secondary></indexterm>
 
 <para>Ardour er noget af det mest avancerede lydredigeringsprogram der
-kan fås til Linux. Ud over et væld af filtre og andre effekter, kan
-der optages i op til 196kHz, hvis du har hardware der understøtter dette.
-Ardour bruger ALSA-projektets API, hvilket betyder understøttelse af
-professionelle kort så som 26 kanals RME Hammerfall, Midiman Delta 1010
+kan fÃ¥s til Linux. Ud over et vÃ¦ld af filtre og andre effekter, kan
+der optages i op til 196kHz, hvis du har hardware der understÃ¸tter dette.
+Ardour bruger ALSA-projektets API, hvilket betyder understÃ¸ttelse af
+professionelle kort sÃ¥ som 26 kanals RME Hammerfall, Midiman Delta 1010
 og mange andre.
-Antallet af samtidige kanaler er ubegrænset og både 16 og 24 bit per
-sampling er understøttet.
+Antallet af samtidige kanaler er ubegrÃ¦nset og bÃ¥de 16 og 24 bit per
+sampling er understÃ¸ttet.
 </para>
 
 <para>
-På <xref linkend="ardour-fig"/> vises et skærmskud af Ardour 0.9beta.</para>
+PÃ¥ <xref linkend="ardour-fig"/> vises et skÃ¦rmskud af Ardour 0.9beta.</para>
 
 <figure id="ardour-fig" float="1">
 <title>Ardour</title>
@@ -613,7 +613,7 @@ På <xref linkend="ardour-fig"/> vises et skærmskud af Ardour 0.9beta.</para>
 </figure>
 
 <para>Ardour kommer med flere Linux distributioner, men
-ellers er hjemmesiden på <ulink
+ellers er hjemmesiden pÃ¥ <ulink
 url="http://ardour.sourceforge.net/">ardour.sf.net</ulink>.
 </para>
 </sect2>
@@ -636,30 +636,30 @@ url="http://ardour.sourceforge.net/">ardour.sf.net</ulink>.
 <indexterm><primary>Lilypond</primary></indexterm>
 <indexterm><primary>Nodesats</primary><secondary>med Lilypond</secondary></indexterm>
 
-<para>Hvis man vil lave sine egne noder, bør man kigge lidt på
+<para>Hvis man vil lave sine egne noder, bÃ¸r man kigge lidt pÃ¥
 Lilypond. Lilypond er et meget omfattende program til at producere
-noder til udprint i høj kvalitet. Programmet bruger TeX som backend,
+noder til udprint i hÃ¸j kvalitet. Programmet bruger TeX som backend,
 hvilket betyder, at det er forholdsvis nemt at integrere
-musikeksempler lavet i Lilypond i et LaTeX-dokument. Det betyder også
-at det er nødvendigt at have en fungerende TeX-installation inden
-Lilypond installeres. (Du kan læse mere om TeX og LaTeX i <xref
+musikeksempler lavet i Lilypond i et LaTeX-dokument. Det betyder ogsÃ¥
+at det er nÃ¸dvendigt at have en fungerende TeX-installation inden
+Lilypond installeres. (Du kan lÃ¦se mere om TeX og LaTeX i <xref
 linkend="kort-om-latex"/>).</para>
 
-<para>Programmet kan hentes på hjemmesiden <ulink
+<para>Programmet kan hentes pÃ¥ hjemmesiden <ulink
 url="http://www.gnu.org/software/lilypond/">www.gnu.org/software/lilypond/</ulink>,
 enten som en rpm, eller som kildetekst du selv skal
-oversætte. Debian-brugere kan installere pakken "lilypond". Med
-Lilypond følger en glimrende Emacs-modus, som letter arbejdet med
+oversÃ¦tte. Debian-brugere kan installere pakken "lilypond". Med
+Lilypond fÃ¸lger en glimrende Emacs-modus, som letter arbejdet med
 Lilypond meget (hvis man skriver i Emacs).</para>
 
-<para>Når du har installeret programmet, skal du igennem to trin for
-at lave dine egne noder. Først skal du lave en inputfil med din
-favorit-teksteditor, og derefter skal du køre
+<para>NÃ¥r du har installeret programmet, skal du igennem to trin for
+at lave dine egne noder. FÃ¸rst skal du lave en inputfil med din
+favorit-teksteditor, og derefter skal du kÃ¸re
 <command>lilypond</command> for at konvertere den til en
 postscript-fil.  </para>
 
 <para>
-Her er et simpelt eksempel på en inputfil:
+Her er et simpelt eksempel pÃ¥ en inputfil:
 <screen>
 \score{
     \notes<
@@ -679,28 +679,28 @@ Her er et simpelt eksempel på en inputfil:
     \paper{}
 }
 </screen>
-Den skal så gemmes som f.eks. <filename>edderkop.ly</filename>.
+Den skal sÃ¥ gemmes som f.eks. <filename>edderkop.ly</filename>.
 </para>
 
 <para>
-Nu kan den konverteres til en postscriptfil ved hjælp af kommandoen
+Nu kan den konverteres til en postscriptfil ved hjÃ¦lp af kommandoen
 <screen>
 <prompt>[milesdavis@localhost ~]$</prompt> <userinput>ly2dvi -P edderkop.ly</userinput>
 </screen>
-og så skulle du meget gerne få følgende resultat når du åbner
+og sÃ¥ skulle du meget gerne fÃ¥ fÃ¸lgende resultat nÃ¥r du Ã¥bner
 edderkop.ps med ghostview (<filename>gv</filename>):
 <figure id="lilypond-fig" float="1">
-<title>Resultatet af lilypond-kørsel</title>
+<title>Resultatet af lilypond-kÃ¸rsel</title>
 <graphic fileref="lilypond.&magic;" scale="60"></graphic>
 </figure>
 Hvis du hellere vil have det i PDF, kan du bruge <command>ps2pdf</command>
 til at konvertere filen.
 </para>
 
-<para>For at lære hvordan du bruger lilypond er det en rigtig god ide
-at læse den temmelig omfattende tutorial der findes på hjemmesiden.
-Der er også nogle fulde eksempler som bliver gennemgået trin for trin,
-så du let kan lære at bruge programmet.  </para>
+<para>For at lÃ¦re hvordan du bruger lilypond er det en rigtig god ide
+at lÃ¦se den temmelig omfattende tutorial der findes pÃ¥ hjemmesiden.
+Der er ogsÃ¥ nogle fulde eksempler som bliver gennemgÃ¥et trin for trin,
+sÃ¥ du let kan lÃ¦re at bruge programmet.  </para>
 
 </sect2>
 
@@ -712,14 +712,14 @@ så du let kan lære at bruge programmet.  </para>
 <indexterm><primary>MusiXTex</primary></indexterm>
 <indexterm><primary>Nodesats</primary><secondary>med MusiXTeX</secondary></indexterm>
 
-<para>MusiXTeX er en samling værktøjer til fremstilling af
-nodesats. Alle værktøjerne er baseret på en samlig macroer til
-TeX. Det er derfor, som for Lilypond, nødvendigt at have en fungerende
-TeX-installation, før man kan installere MusiXTeX-værktøjerne.</para>
+<para>MusiXTeX er en samling vÃ¦rktÃ¸jer til fremstilling af
+nodesats. Alle vÃ¦rktÃ¸jerne er baseret pÃ¥ en samlig macroer til
+TeX. Det er derfor, som for Lilypond, nÃ¸dvendigt at have en fungerende
+TeX-installation, fÃ¸r man kan installere MusiXTeX-vÃ¦rktÃ¸jerne.</para>
 
-<para>MusiXTeX-macroer og programmer kan hentes på <ulink
+<para>MusiXTeX-macroer og programmer kan hentes pÃ¥ <ulink
 url="http://icking-music-archive.org/">Werner Icking Music
-Archive</ulink>. Her findes også 
+Archive</ulink>. Her findes ogsÃ¥ 
 installationsvejledninger for <ulink
 url="http://icking-music-archive.org/software/musixtex/musixtex-for-unix.html">Linux</ulink>
 (og <ulink
@@ -731,27 +731,27 @@ noderne.</para>
 <indexterm><primary>PMX</primary></indexterm>
 <indexterm><primary>M-Tx</primary></indexterm>
 <para>Det er muligt at fremstille nodesats ved direkte brug af
-MusiXTeX-macroerne. Men det kan stærkt anbefales at benytte en af
-præprocessorerne PMX og M-Tx, hvorved arbejdet forenkles ganske betydeligt.
-Her følger et par simple eksempler på brugen af disse programmer.</para>
+MusiXTeX-macroerne. Men det kan stÃ¦rkt anbefales at benytte en af
+prÃ¦processorerne PMX og M-Tx, hvorved arbejdet forenkles ganske betydeligt.
+Her fÃ¸lger et par simple eksempler pÃ¥ brugen af disse programmer.</para>
 
-<para>Her er et eksempel på en inputfil til PMX:</para>
+<para>Her er et eksempel pÃ¥ en inputfil til PMX:</para>
 
-<screen>% Præambel:
+<screen>% PrÃ¦ambel:
 
 % antal stave: antal instrumenter: 
   2            1                     
-% logisk taktart, tæller: nævner:
+% logisk taktart, tÃ¦ller: nÃ¦vner:
                   4       4 
-% noteret taktart, tæller: nævner:
+% noteret taktart, tÃ¦ller: nÃ¦vner:
                    0       6  
 % optakt: fortegn:
   0       0 
 % antal sider: antal nodesystemer
   1            1 
-% Skriftstørrelse: indrykning i 1. system
+% SkriftstÃ¸rrelse: indrykning i 1. system
   20               0
-% basnøgle+diskantnøgle: 
+% basnÃ¸gle+diskantnÃ¸gle: 
 bt
 % output directory
 ./
@@ -760,14 +760,14 @@ c24d b4 | c2 c4- e4 | f2 g2 | c0- | Rb /
 c45 c4 c4 d4 | e4 e4 e2 | d4 d4 d4 e4 | c2 c2 | /
 </screen>
 
-<para>Den skal gemmes som f.eks. <filename>edderkop.pmx</filename>. Bemærk,
-at den dybeste stemme, klaverets venstre hånd, skrives <emphasis>før</emphasis> den
-øverste stemme, højre hånd.
+<para>Den skal gemmes som f.eks. <filename>edderkop.pmx</filename>. BemÃ¦rk,
+at den dybeste stemme, klaverets venstre hÃ¥nd, skrives <emphasis>fÃ¸r</emphasis> den
+Ã¸verste stemme, hÃ¸jre hÃ¥nd.
 </para>
 
-<para>PMX er en præprocessor til MusiXTeX, hvilket betyder, at dens resultat er
-MusiXTeX-kode, i dette tilfælde filen <filename>edderkop.tex</filename>
-som man får ved at skrive</para>
+<para>PMX er en prÃ¦processor til MusiXTeX, hvilket betyder, at dens resultat er
+MusiXTeX-kode, i dette tilfÃ¦lde filen <filename>edderkop.tex</filename>
+som man fÃ¥r ved at skrive</para>
 
 <screen><prompt>[wolfgang@mozart ~]$</prompt> <userinput>pmxab edderkop</userinput>
 </screen>
@@ -781,33 +781,33 @@ som man får ved at skrive</para>
 <prompt>[wolfgang@mozart ~]$</prompt> <userinput>tex edderkop</userinput>
 </screen>
 
-<para>og så skulle du meget gerne få følgende resultat når du åbner
+<para>og sÃ¥ skulle du meget gerne fÃ¥ fÃ¸lgende resultat nÃ¥r du Ã¥bner
 <filename>edderkop.dvi</filename> med <command>xdvi</command>:</para>
 
 <figure id="musixtex-pmx-fig" float="1">
-<title>Resultatet af tex+musixflx+tex-kørsel</title>
+<title>Resultatet af tex+musixflx+tex-kÃ¸rsel</title>
 <graphic fileref="musixtex-edderkop.&magic;" scale="70"></graphic>
 </figure>
 
-<para>Du får en postscript-fil ved at skrive</para>
+<para>Du fÃ¥r en postscript-fil ved at skrive</para>
 
 <screen><prompt>[wolfgang@mozart ~]$</prompt> <userinput>dvips edderkop.dvi -o edderkop.ps</userinput>
 </screen>
 
 <indexterm><primary>dvipdfm</primary></indexterm>
 <para>Hvis du har installeret programmet <ulink 
-url="http://gaspra.kettering.edu/dvipdfm/">dvipdfm</ulink> kan du få en pdf-fil
+url="http://gaspra.kettering.edu/dvipdfm/">dvipdfm</ulink> kan du fÃ¥ en pdf-fil
 <filename>edderkop.pdf</filename> ved at skrive</para>
 
 <screen><prompt>[wolfgang@mozart ~]$</prompt> <userinput>dvipdfm edderkop</userinput>
 </screen>
 
-<para>Ellers kan du benytte <filename>ps2pdf</filename> på din
+<para>Ellers kan du benytte <filename>ps2pdf</filename> pÃ¥ din
 postscript-fil.</para>
 
-<para>Her er et eksempel på en inputfil til M-Tx:</para>
+<para>Her er et eksempel pÃ¥ en inputfil til M-Tx:</para>
 
-<screen>% Præambel:
+<screen>% PrÃ¦ambel:
 
 Meter: C
 SingerPiano: Voices RH LH; Clefs G F; Vocal; Group
@@ -821,14 +821,14 @@ L: Lil-le Pe-ter Ed-der-kop krav-led op ad mu-ren.
 c2d+ b4 | c2 c4- e | f2 g | c0- |
 </screen>
 
-<para>Den skal gemmes som f.eks. <filename>edderkop.mtx</filename>. Bemærk,
-at her skrives den øverste stemme før den dybeste. M-Tx er skrevet specielt
-med henblik på at gøre det let at skrive noder med sangtekst.
+<para>Den skal gemmes som f.eks. <filename>edderkop.mtx</filename>. BemÃ¦rk,
+at her skrives den Ã¸verste stemme fÃ¸r den dybeste. M-Tx er skrevet specielt
+med henblik pÃ¥ at gÃ¸re det let at skrive noder med sangtekst.
 </para>
 
-<para>M-Tx er en præprocessor til PMX, hvilket betyder, at dens resultat er
-PMX-kode, i dette tilfælde filen <filename>edderkop.pmx</filename> som
-man får ved at skrive</para>
+<para>M-Tx er en prÃ¦processor til PMX, hvilket betyder, at dens resultat er
+PMX-kode, i dette tilfÃ¦lde filen <filename>edderkop.pmx</filename> som
+man fÃ¥r ved at skrive</para>
 
 <indexterm><primary>prepmx</primary></indexterm>
 <screen><prompt>[wolfgang@mozart ~]$</prompt> <userinput>prepmx edderkop</userinput>
@@ -836,18 +836,18 @@ man får ved at skrive</para>
 
 <para>Denne fil behandles som beskrevet ovenfor for pmx-inputfiler.</para>
 
-<para>Det færdige resultat skulle gerne se sådan ud:</para>
+<para>Det fÃ¦rdige resultat skulle gerne se sÃ¥dan ud:</para>
 
 <figure id="musixtex-mtx-fig" float="1">
-<title>Resultatet af prepmx+pmxab+tex+musixflx+tex-kørsel</title>
+<title>Resultatet af prepmx+pmxab+tex+musixflx+tex-kÃ¸rsel</title>
 <graphic fileref="musixtex-edderkop_mtx.&magic;" scale="70"></graphic>
 </figure>
 
-<para>Det en rigtig god idé at læse den omfattende <ulink
+<para>Det en rigtig god idÃ© at lÃ¦se den omfattende <ulink
 url="http://icking-music-archive.org/software/pmx/notdr.pdf">tutorial</ulink>
 der findes i Werner Icking-arkivets <ulink
 url="http://icking-music-archive.org/software/indexmt6.html">software-afdeling</ulink>.
-Det kan desuden anbefales at studere nogle af de kildetekster, der følger med
+Det kan desuden anbefales at studere nogle af de kildetekster, der fÃ¸lger med
 noderne i Icking-arkivet.</para>
 
 </sect2> <!-- musixtex -->

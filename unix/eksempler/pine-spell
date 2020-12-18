@@ -4,7 +4,7 @@
 
 if [ $# -eq 1 ]; then
    if [ "$1" = "--help" -o "$1" = "-h" ]; then
-      echo "pine-spell, 20020605, © Jacob Sparre Andersen, 2001-2002."
+      echo "pine-spell, 20020605, ¬© Jacob Sparre Andersen, 2001-2002."
       echo "The program is distributed under the GNU GPL and comes with"
       echo "ABSOLUTELY NO WARRANTY."
       echo ""
@@ -111,7 +111,7 @@ if [ -x /usr/bin/dialog -a -x /bin/mktemp ]; then
    outer_width=70
    inner_height=`( echo ${dicts}; echo ''        ) | tr ' ' '\n' | wc -l`
 
-   dialog --menu "VÊlg sprog:" \
+   dialog --menu "V√¶lg sprog:" \
                  ${outer_height} ${outer_width} ${inner_height} \
                  `echo ${dicts} | tr ' ' '\n' | cat -n - | tr '\n' ' '` \
                  "A" "Afslut" \
@@ -130,7 +130,7 @@ else
       default_dict=dansk
    fi
 
-   echo "VÊlg ordbog (enter for ${default_dict}): ${dicts}"
+   echo "V√¶lg ordbog (enter for ${default_dict}): ${dicts}"
    read dictionary
    if [ "${dictionary}" = "" ]; then
       dictionary=${default_dict}
@@ -149,7 +149,7 @@ done
 until [ "${found}" = "true" ]
 do
    echo "Kunne ikke finde en '${dictionary}' ordbog."
-   echo "VÊlg ordbog (enter for ${default_dict}): ${dicts}"
+   echo "V√¶lg ordbog (enter for ${default_dict}): ${dicts}"
    read dictionary
    if [ "${dictionary}" = "" ]; then
       dictionary=${default_dict}
@@ -179,16 +179,16 @@ if [ "${spell}" = "ispell" ]; then
    fi
 
    if [ "${can_compose}" = "true" ]; then
-      ispell_flags='-b -S -w·¡‡¿–È…Ë»ÌÕÛ”˙⁄˝›¸‹Ê∆‰ƒ¯ÿˆ÷Â≈'
+      ispell_flags='-b -S -w√°√Å√†√Ä√∞√ê√©√â√®√à√≠√ç√≥√ì√∫√ö√Ω√ù√º√ú√¶√Ü√§√Ñ√∏√ò√∂√ñ√•√Ö'
    else
       if [ ${dictionary} = dansk -o \
            ${dictionary} = deutsch -o \
-           ${dictionary} = f¯royskt -o \
+           ${dictionary} = f√∏royskt -o \
            ${dictionary} = norsk -o \
            ${dictionary} = svenska ]; then
-         ispell_flags='-b -C -S -w·¡‡¿–È…Ë»ÌÕÛ”˙⁄˝›¸‹Ê∆‰ƒ¯ÿˆ÷Â≈'
+         ispell_flags='-b -C -S -w√°√Å√†√Ä√∞√ê√©√â√®√à√≠√ç√≥√ì√∫√ö√Ω√ù√º√ú√¶√Ü√§√Ñ√∏√ò√∂√ñ√•√Ö'
       else
-         ispell_flags='-b -S -w·¡‡¿–È…Ë»ÌÕÛ”˙⁄˝›¸‹Ê∆‰ƒ¯ÿˆ÷Â≈'
+         ispell_flags='-b -S -w√°√Å√†√Ä√∞√ê√©√â√®√à√≠√ç√≥√ì√∫√ö√Ω√ù√º√ú√¶√Ü√§√Ñ√∏√ò√∂√ñ√•√Ö'
       fi
    fi
 
@@ -197,7 +197,7 @@ if [ "${spell}" = "ispell" ]; then
    case ${dictionary} in
       dansk)
          if [ "${da_nutids_r}" = "on" ]; then
-            perl -i -pe 'use locale; s/(\W(at|vil|ville|kan|kunne|skal|skulle|mÂ|mÂtte) \w+)r(\W)/$1#$3/gim' $@
+            perl -i -pe 'use locale; s/(\W(at|vil|ville|kan|kunne|skal|skulle|m√•|m√•tte) \w+)r(\W)/$1#$3/gim' $@
          fi
 
          exec ${speller} -d ${dictionary_file} ${ispell_flags} $@
@@ -217,7 +217,7 @@ elif [ "${spell}" = "aspell" ]; then
    case ${dictionary} in
       dansk)
          if [ "${da_nutids_r}" = "on" ]; then
-            perl -i -pe 'use locale; s/(\W(at|vil|ville|kan|kunne|skal|skulle|mÂ|mÂtte) \w+)r(\W)/$1#$3/gim' $@
+            perl -i -pe 'use locale; s/(\W(at|vil|ville|kan|kunne|skal|skulle|m√•|m√•tte) \w+)r(\W)/$1#$3/gim' $@
          fi
 
          exec ${speller} --master=${dictionary} check $@

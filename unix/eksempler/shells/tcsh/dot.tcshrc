@@ -1,7 +1,7 @@
 #!/bin/tcsh
 # User .tcshrc file (/bin/tcsh initialization).
 
-# Omgåelse af en fejl i Red Hat 7.X
+# OmgÃ¥else af en fejl i Red Hat 7.X
 unset dspmbyte
 
 # Anvend ssh til rsync
@@ -11,8 +11,8 @@ setenv RSYNC_RSH ssh
 setenv LC_ALL da_DK
 setenv LANG da
 
-# Led efter programmer i de følgende steder - bemærk
-# punktum betyder at det aktuell katalog også gennemsøges.
+# Led efter programmer i de fÃ¸lgende steder - bemÃ¦rk
+# punktum betyder at det aktuell katalog ogsÃ¥ gennemsÃ¸ges.
 set path = (  /bin /usr/bin /usr/local/bin /usr/X11R6/bin .)
 
 if ( ! $?prompt ) exit                      # Kommandofortolkeren er interaktiv
@@ -26,13 +26,13 @@ set correct = cmd                           # Checks spelling of commands
 # Kommando-prompt med login-navn maskine og sti
 set prompt  = "%{^[[1m%}${user}@`hostname`%/>%{^[[0m%} " 
 
-# Findes en ~/.alias-fil med aliaser, da køres denne
+# Findes en ~/.alias-fil med aliaser, da kÃ¸res denne
 if ( -e ~/.alias ) source ~/.alias
 
-# Findes en ~/.complete.tcsh-fil, da køres denne
+# Findes en ~/.complete.tcsh-fil, da kÃ¸res denne
 if ( -e ~/.complete.tcsh ) source ~/.complete.tcsh
 
-# Jeg vælger også at søge efter programmer i ~/bin
+# Jeg vÃ¦lger ogsÃ¥ at sÃ¸ge efter programmer i ~/bin
 if ($?PATH) then
     setenv PATH $PATH:~/bin
 endif

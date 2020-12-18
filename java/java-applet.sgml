@@ -10,7 +10,7 @@ Indhold:
 
 <para>
 
-At lægge Java i en hjemmeside
+At lÃ¦gge Java i en hjemmeside
 </para>
 
 </listitem>
@@ -33,19 +33,19 @@ Metoder i en applet
 </itemizedlist>
 
 <para>
-Kapitlet forudsættes af <xref linkend="java-gui" />, Grafiske brugergrænseflader
+Kapitlet forudsÃ¦ttes af <xref linkend="java-gui" />, Grafiske brugergrÃ¦nseflader
 og <xref linkend="java-interface" />, Interfaces.
 </para>
 
 <para>
-Forudsætter <xref linkend="java-obj" />, Objekter (<xref linkend="java-klasser" />, Definition af klasser og
+ForudsÃ¦tter <xref linkend="java-obj" />, Objekter (<xref linkend="java-klasser" />, Definition af klasser og
 <xref linkend="java-arv" />, Nedarvning er en fordel).
 </para>
 
 <para>
-En applet er et javaprogram i en hjemmeside. Når siden
+En applet er et javaprogram i en hjemmeside. NÃ¥r siden
 vises, vil browseren (fremviseren af HTML-dokumentet) hente
-javaprogrammet og udføre det på brugerens maskine. Ordet
+javaprogrammet og udfÃ¸re det pÃ¥ brugerens maskine. Ordet
 applet giver mange associationer til &quot;en lille applikation&quot;.
 </para>
 
@@ -55,7 +55,7 @@ applet giver mange associationer til &quot;en lille applikation&quot;.
 <para>
 Hjemmesider skrives i et sprog, der hedder HTML. En hjemmeside med
 en applet vil have en HTML-kode, der henviser til, hvor
-browseren skal finde programkoden. Det ser sådan her ud:
+browseren skal finde programkoden. Det ser sÃ¥dan her ud:
 </para>
 
 <screen>
@@ -64,14 +64,14 @@ browseren skal finde programkoden. Det ser sådan her ud:
 
 
 <para>
-Her blev angivet, at appletten hedder MinApplet, og den skal være
-400 punkter bred og 300 høj. MinApplet.class, den binære
+Her blev angivet, at appletten hedder MinApplet, og den skal vÃ¦re
+400 punkter bred og 300 hÃ¸j. MinApplet.class, den binÃ¦re
 kode fra MinApplet.java, skal ligge i samme katalog som hjemmesiden.
 </para>
 
 <para>
 HTML-koder er skrevet mellem &lt; og &gt;. Et helt HTML-dokument
-med en applet kunne se sådan her ud:
+med en applet kunne se sÃ¥dan her ud:
 </para>
 
 <screen>
@@ -81,7 +81,7 @@ med en applet kunne se sådan her ud:
 &lt;/HEAD&gt;
 
 &lt;BODY&gt;
-        Velkommen til min første applet!&lt;BR&gt;
+        Velkommen til min fÃ¸rste applet!&lt;BR&gt;
 
         &lt;APPLET
           CODEBASE = &quot;.&quot;
@@ -107,15 +107,15 @@ hvordan man laver hjemmesider.
 
 <para>
 Selve javaprogrammet er en klasse, der arver fra Applet. Her skal
-paint()-metoden, som kaldes når appletten skal tegnes på
-skærmen, defineres. Til dette formål får paint() et
-Graphics-objekt (beskrevet i <xref linkend="java-applet-appendix-graphics" />) overført, som vi kan
+paint()-metoden, som kaldes nÃ¥r appletten skal tegnes pÃ¥
+skÃ¦rmen, defineres. Til dette formÃ¥l fÃ¥r paint() et
+Graphics-objekt (beskrevet i <xref linkend="java-applet-appendix-graphics" />) overfÃ¸rt, som vi kan
 tegne med.
 </para>
 
 <para>
 I eksemplet nedenfor tegner vi en linje, en fyldt oval og noget
-tekst med grøn skrift.
+tekst med grÃ¸n skrift.
 </para>
 
 <screen>
@@ -151,7 +151,7 @@ Her ses, hvordan HTML-koden med appletten ser ud i en browser
 </figure>
 
 <para>
-Man ser, at først kommer HTML-teksten &quot;Velkommen til
+Man ser, at fÃ¸rst kommer HTML-teksten &quot;Velkommen til
 ...&quot;, derunder appletten og nederst igen noget tekst fra
 HTML-koden.
 </para>
@@ -160,13 +160,13 @@ HTML-koden.
   <title>Metoder i appletter, som du kan kalde</title>
 
 <para>
-Den vigtigste metode er repaint(), som forårsager, at
+Den vigtigste metode er repaint(), som forÃ¥rsager, at
 appletten bliver gentegnet (ved, at systemet kalder paint()).
 </para>
 
 <para>
 Andre rare metoder er getImage(), der giver dig mulighed for at
-indlæse grafik, og getSize(), der giver applettens størrelse.
+indlÃ¦se grafik, og getSize(), der giver applettens stÃ¸rrelse.
 De er beskrevet i appendiks senere i kapitlet (<xref linkend="java-applet-appendix-bruger-metoder" />).
 </para>
 </sect2>
@@ -176,32 +176,32 @@ De er beskrevet i appendiks senere i kapitlet (<xref linkend="java-applet-append
 
 <para>
 En applet skal spille sammen med HTML-koden og fremvisningen. Der
-ligger faktisk et stort maskineri bagved, der sørger for, at
-den bliver vist korrekt og får relevante oplysninger om,
-hvad brugeren gør. Derfor har appletter en række
-metoder, som kan tilsidesættes efter behov.
+ligger faktisk et stort maskineri bagved, der sÃ¸rger for, at
+den bliver vist korrekt og fÃ¥r relevante oplysninger om,
+hvad brugeren gÃ¸r. Derfor har appletter en rÃ¦kke
+metoder, som kan tilsidesÃ¦ttes efter behov.
 </para>
 
 <para>
 Den vigtigste er paint(), som systemet kalder, hver gang der er
-behov for at tegne appletten, f.eks. hvis den har været
-dækket af et andet vindue.
+behov for at tegne appletten, f.eks. hvis den har vÃ¦ret
+dÃ¦kket af et andet vindue.
 </para>
 
 <para>
-En anden er init(), der kaldes, når appletten indlæses
+En anden er init(), der kaldes, nÃ¥r appletten indlÃ¦ses
 som en del af HTML-dokumentet. Metoden bliver kun kaldt &eacute;n
-gang, så det er en god idé at placere programkode, der
+gang, sÃ¥ det er en god idÃ© at placere programkode, der
 opretter objekter og initialiserer programmet, i init(). Da
-appletten er et objekt, kan man selvfølgelig også
-gøre det i konstruktøren, men da skal man være
-opmærksom på, at de metoder du kan kalde (f.eks.
+appletten er et objekt, kan man selvfÃ¸lgelig ogsÃ¥
+gÃ¸re det i konstruktÃ¸ren, men da skal man vÃ¦re
+opmÃ¦rksom pÃ¥, at de metoder du kan kalde (f.eks.
 repaint() og getSize()), ikke har nogen virkning, da applettens
 omgivelser ikke er blevet initialiseret endnu.
 </para>
 
 <para>
-Det er en god idé at initialisere variabler og oprette objekter i
+Det er en god idÃ© at initialisere variabler og oprette objekter i
 init()-metoden, og kun have selve gentegningen i paint().
 </para>
 </sect2>
@@ -220,15 +220,15 @@ hvor stor appletten er).
 </para>
 
 <para>
-Vi tegner punkterne i paint(), der er gjort så lille og
+Vi tegner punkterne i paint(), der er gjort sÃ¥ lille og
 hurtig som muligt (den kaldes jo hver gang appletten bliver
 gentegnet).
 </para>
 
 <para>
 Punkterne huskes i en vektor, der er defineret som objektvariabel,
-sådan at den er kendt, så længe
-Kurvetegning-objektet findes. På den måde får vi
+sÃ¥dan at den er kendt, sÃ¥ lÃ¦nge
+Kurvetegning-objektet findes. PÃ¥ den mÃ¥de fÃ¥r vi
 data fra init() over til paint().
 </para>
 
@@ -239,17 +239,17 @@ import java.applet.*;
 
 public class Kurvetegning extends Applet 
 {
-  <emphasis>Vector punkter</emphasis>; <emphasis>// objektvariabel kendt i både init() og paint()</emphasis>
+  <emphasis>Vector punkter</emphasis>; <emphasis>// objektvariabel kendt i bÃ¥de init() og paint()</emphasis>
 
 <emphasis>  public void init()</emphasis>  <emphasis>// Forbered punkterne</emphasis>
   {
     punkter = new Vector();
     int br = <emphasis>getSize().width</emphasis>;  <emphasis>// applettens bredde</emphasis>
-    int hø = <emphasis>getSize().height</emphasis>; <emphasis>// applettens højde</emphasis>
+    int hÃ¸ = <emphasis>getSize().height</emphasis>; <emphasis>// applettens hÃ¸jde</emphasis>
 
     for (int i=0; i&lt;br; i++)
     {
-      double y = 0.5*hø - 0.4*hø*Math.sin((double) i*20 / br);
+      double y = 0.5*hÃ¸ - 0.4*hÃ¸*Math.sin((double) i*20 / br);
       punkter.addElement(new Point(i, (int) y ));
     }
   }
@@ -302,17 +302,17 @@ Lav en applet, der viser et analogt ur.
 <title>Appendiks</title>
 
 <para>
-Appletter har nogle metoder, som det kan være nyttigt at
+Appletter har nogle metoder, som det kan vÃ¦re nyttigt at
 kende. De er delt i to grupper, nemlig dem <emphasis>du kan kalde</emphasis>, og
-dem <emphasis>systemet kalder</emphasis>, og som du kan omdefinere for at få
-udført noget af din kode, når de kaldes.
+dem <emphasis>systemet kalder</emphasis>, og som du kan omdefinere for at fÃ¥
+udfÃ¸rt noget af din kode, nÃ¥r de kaldes.
 </para>
 
 <sect2 id="java-applet-appendix-bruger-metoder">
   <title>Metoder i appletter, som du kan kalde</title>
 
 <para>
-Disse metoder står til din rådighed, når du
+Disse metoder stÃ¥r til din rÃ¥dighed, nÃ¥r du
 programmerer appletter. Det er kun de vigtigste af metoderne,
 der er gengivet (se Javadokumentationen for Applet og Component for
 en komplet liste).
@@ -325,13 +325,13 @@ metoder</emphasis>
 
 <para>
 <emphasis>repaint</emphasis>(int
-millisekunder)forårsager at systemet kalder paint() på
+millisekunder)forÃ¥rsager at systemet kalder paint() pÃ¥
 appletten lidt senere.
 </para>
 
 <para>
 Dimension <emphasis>getSize</emphasis>()returnerer
-applettens højde og bredde i et Dimension-objekt (der har
+applettens hÃ¸jde og bredde i et Dimension-objekt (der har
 variablerne width og height).
 </para>
 
@@ -361,10 +361,10 @@ billede-objekt, typisk fra en .&magic; eller .&magic;-fil.
 
 <para>
 String <emphasis>getParameter</emphasis>(String
-parameternavn)returnerer den pågældende
-parameterværdi, hvis den er defineret i HTML-koden, ellers
-null. En parameter sættes med &lt;PARAM name=&quot;navn&quot;
-value=&quot;værdi&quot;&gt; før &lt;/APPLET&gt;.
+parameternavn)returnerer den pÃ¥gÃ¦ldende
+parametervÃ¦rdi, hvis den er defineret i HTML-koden, ellers
+null. En parameter sÃ¦ttes med &lt;PARAM name=&quot;navn&quot;
+value=&quot;vÃ¦rdi&quot;&gt; fÃ¸r &lt;/APPLET&gt;.
 </para>
 </sect2>
 
@@ -372,7 +372,7 @@ value=&quot;værdi&quot;&gt; før &lt;/APPLET&gt;.
   <title>Metoder, som systemet kalder</title>
 
 <para>
-Appletter har en række metoder, som du selv kan definere, og
+Appletter har en rÃ¦kke metoder, som du selv kan definere, og
 som systemet vil kalde.
 </para>
 
@@ -381,16 +381,16 @@ som systemet vil kalde.
 </screen>
 
 <para>
-Her programmerer du, hvordan appletten skal se ud på skærmen
-ved at kalde metoder på Graphics-objektet g (dets metoder er
-forklaret i næste afsnit).
+Her programmerer du, hvordan appletten skal se ud pÃ¥ skÃ¦rmen
+ved at kalde metoder pÃ¥ Graphics-objektet g (dets metoder er
+forklaret i nÃ¦ste afsnit).
 </para>
 
 <para>
 Metoden kaldes af systemet, hver gang der er behov for at gentegne
-en del eller hele appletten. Det kan være ret så
-ofte, så man bør have så lidt kode som muligt her,
-så metoden kan udføres hurtigt.
+en del eller hele appletten. Det kan vÃ¦re ret sÃ¥
+ofte, sÃ¥ man bÃ¸r have sÃ¥ lidt kode som muligt her,
+sÃ¥ metoden kan udfÃ¸res hurtigt.
 </para>
 
 <screen>
@@ -399,8 +399,8 @@ så metoden kan udføres hurtigt.
 
 <para>
 
-Kaldes, når fremviseren indlæser HTML-dokumentet og
-appletten. Her kan du lægge kode, der initialiserer
+Kaldes, nÃ¥r fremviseren indlÃ¦ser HTML-dokumentet og
+appletten. Her kan du lÃ¦gge kode, der initialiserer
 programmet. init() bliver kun kaldt &eacute;n gang.
 </para>
 
@@ -410,10 +410,10 @@ programmet. init() bliver kun kaldt &eacute;n gang.
 
 <para>
 
-Kaldes, når appletten bliver synlig. Normalt sker det lige
+Kaldes, nÃ¥r appletten bliver synlig. Normalt sker det lige
 efter init(), men hvis HTML-dokumentet er meget stort, og
-appletten er i bunden af dokumentet, kan det være, den ikke er
-synlig med det samme. Så kaldes start() først, når
+appletten er i bunden af dokumentet, kan det vÃ¦re, den ikke er
+synlig med det samme. SÃ¥ kaldes start() fÃ¸rst, nÃ¥r
 appletten bliver synlig for brugeren. start() kan godt blive kaldt
 flere gange, hvis appletten skjules og bliver synlig igen.
 </para>
@@ -424,8 +424,8 @@ flere gange, hvis appletten skjules og bliver synlig igen.
 
 <para>
 
-Kaldes, når appletten bliver skjult. Det kan være, fordi
-vinduet bliver minimeret, eller fordi brugeren går til et
+Kaldes, nÃ¥r appletten bliver skjult. Det kan vÃ¦re, fordi
+vinduet bliver minimeret, eller fordi brugeren gÃ¥r til et
 andet dokument. Ligesom start() kan stop() godt blive kaldt flere
 gange.
 </para>
@@ -436,11 +436,11 @@ gange.
 
 <para>
 
-Kaldes, når appletten smides væk af fremviseren, fordi
-brugeren er gået til et andet dokument eller har lukket
+Kaldes, nÃ¥r appletten smides vÃ¦k af fremviseren, fordi
+brugeren er gÃ¥et til et andet dokument eller har lukket
 vinduet. destroy() bliver kun kaldt &eacute;n gang. Er der noget, der
-er vigtigt at få gjort inden programmet afsluttes, kan du
-lægge kode til at gøre det i destroy().
+er vigtigt at fÃ¥ gjort inden programmet afsluttes, kan du
+lÃ¦gge kode til at gÃ¸re det i destroy().
 </para>
 </sect2>
 
@@ -448,10 +448,10 @@ lægge kode til at gøre det i destroy().
   <title>Klassen Graphics</title>
 
 <para>
-Graphics er beregnet til at tegne grafik (på skærm
+Graphics er beregnet til at tegne grafik (pÃ¥ skÃ¦rm
 eller printer). Man skal ikke selv oprette Graphics-objekter med new,
-i stedet får man givet et &quot;i hånden&quot;, når
-styresystemet afgører, at vinduet skal tegnes op.
+i stedet fÃ¥r man givet et &quot;i hÃ¥nden&quot;, nÃ¥r
+styresystemet afgÃ¸rer, at vinduet skal tegnes op.
 Herunder gengives kun nogle af metoderne - se Javadokumentationen
 for en komplet liste.
 </para>
@@ -477,7 +477,7 @@ en linje mellem punkterne (x1, y1) og (x2, y2).
 
 <para>
 void
-<emphasis>drawRect</emphasis>(int x, int y, int bredde, int højde)
+<emphasis>drawRect</emphasis>(int x, int y, int bredde, int hÃ¸jde)
 </para>
 
 <para>
@@ -492,23 +492,23 @@ void
 
 <para>
   tegner
-tekst med øverste venstre hjørne i (x,y).
+tekst med Ã¸verste venstre hjÃ¸rne i (x,y).
 </para>
 
 <para>
 void
-<emphasis>drawOval</emphasis>(int x, int y, int bredde, int højde)
+<emphasis>drawOval</emphasis>(int x, int y, int bredde, int hÃ¸jde)
 </para>
 
 <para>
   tegner
-en oval med øverste venstre hjørne i (x,y). Er
-bredde==højde, tegnes en cirkel.
+en oval med Ã¸verste venstre hjÃ¸rne i (x,y). Er
+bredde==hÃ¸jde, tegnes en cirkel.
 </para>
 
 <para>
 void
-<emphasis>drawArc</emphasis>(int x, int y, int bredde, int højde, int
+<emphasis>drawArc</emphasis>(int x, int y, int bredde, int hÃ¸jde, int
 startvinkel, int vinkel)
 </para>
 
@@ -520,7 +520,7 @@ og <emphasis>vinkel</emphasis> grader rundt (mellem 0 og 360).
 
 <para>
 
-void <emphasis>fillRect</emphasis>(int x, int y, int bredde, int højde)
+void <emphasis>fillRect</emphasis>(int x, int y, int bredde, int hÃ¸jde)
 </para>
 
 <para>
@@ -530,18 +530,18 @@ void <emphasis>fillRect</emphasis>(int x, int y, int bredde, int højde)
 
 <para>
 void
-<emphasis>fillOval</emphasis>(int x, int y, int bredde, int højde)
+<emphasis>fillOval</emphasis>(int x, int y, int bredde, int hÃ¸jde)
 </para>
 
 <para>
   tegner
-en udfyldt oval med øverste venstre hjørne i (x,y). Er
-bredde==højde, tegnes en cirkel.
+en udfyldt oval med Ã¸verste venstre hjÃ¸rne i (x,y). Er
+bredde==hÃ¸jde, tegnes en cirkel.
 </para>
 
 <para>
 void
-<emphasis>fillArc</emphasis>(int x, int y, int bredde, int højde, int
+<emphasis>fillArc</emphasis>(int x, int y, int bredde, int hÃ¸jde, int
 startvinkel, int slutvinkel)
 </para>
 
@@ -559,7 +559,7 @@ Rectangle
 <para>
   giver
 grafik-objektets klipnings-omrids. Kun punkter inden for dette omrids
-bliver faktisk tegnet, ting uden for omridset bliver beskåret
+bliver faktisk tegnet, ting uden for omridset bliver beskÃ¥ret
 til den del, der er inden for omridset.
 </para>
 
@@ -569,7 +569,7 @@ void <emphasis>setColor</emphasis>(Color nyFarve)
 </para>
 
 <para>
-  sætter
+  sÃ¦tter
 tegnefarven til nyFarve. Alt bliver herefter tegnet med denne farve.
 </para>
 
@@ -580,7 +580,7 @@ Color <emphasis>getColor</emphasis>()
 
 <para>
 
-  aflæser tegningsfarven.
+  aflÃ¦ser tegningsfarven.
 </para>
 
 <para>
@@ -589,8 +589,8 @@ void <emphasis>setFont</emphasis>(Font nySkrifttype)
 </para>
 
 <para>
-  sætter
-skrifttypen til nySkrifttype. Dette påvirker tekster skrevet
+  sÃ¦tter
+skrifttypen til nySkrifttype. Dette pÃ¥virker tekster skrevet
 med drawString() herefter.
 </para>
 
@@ -600,7 +600,7 @@ Font <emphasis>getFont</emphasis>()
 </para>
 
 <para>
-  aflæser
+  aflÃ¦ser
 skrifttypen.
 </para>
 

@@ -13,8 +13,8 @@
  </indexterm>
 
  <para>
-  Mutt er et populært tekstbaseret postprogram. Det følger
-  sandsyndligvis med din linuxdistribution, men er det ikke tilfældet
+  Mutt er et populÃ¦rt tekstbaseret postprogram. Det fÃ¸lger
+  sandsyndligvis med din linuxdistribution, men er det ikke tilfÃ¦ldet
   kan det hentes fra <ulink
   url="http://www.mutt.org/download.html">http://www.mutt.org/download.html</ulink>
  </para>
@@ -25,28 +25,28 @@
  </figure>
 
  <para>
-  Før du begynder at bruge Mutt for alvor, er det nok en god idé at
-  kigge på opsætningsfilen. Der findes en masse eksempler på
-  opsætningsfiler på <ulink
+  FÃ¸r du begynder at bruge Mutt for alvor, er det nok en god idÃ© at
+  kigge pÃ¥ opsÃ¦tningsfilen. Der findes en masse eksempler pÃ¥
+  opsÃ¦tningsfiler pÃ¥ <ulink
   url="http://www.mutt.org/links.html#config">http://www.mutt.org/links.html#config</ulink>
  </para>
 
  <para>
-  Her er et eksempel med det mest nødvendige:
+  Her er et eksempel med det mest nÃ¸dvendige:
 
 <programlisting>
 # Den folder dine breve ligger i. Hvis du har brugt Pine tidligere,
 # kan du bruge den samme
 set folder=~/mail
 
-# Sæt standard-brevbakken
+# SÃ¦t standard-brevbakken
 set spoolfile=+mbox
 
-# Her kan du angive i hvilken rækkefølge dine brevbakker skal vises,
-# når du skifter i mellem dem
+# Her kan du angive i hvilken rÃ¦kkefÃ¸lge dine brevbakker skal vises,
+# nÃ¥r du skifter i mellem dem
 mailboxes ! +mbox +sslug-bog +sslug-misc +osv
 
-# Vælg den epostadresse du vil have folk skal bruge
+# VÃ¦lg den epostadresse du vil have folk skal bruge
 my_hdr From: Tyge &lt;tyge@sslug.dk&gt;
 
 # Skjul alle felter i brevhovedet:
@@ -54,29 +54,29 @@ ignore *
 # ... bortset fra nogle enkelte:
 unignore From: Date: Subject: To: Cc: Reply-to:
 
-# Sorter i tråde
+# Sorter i trÃ¥de
 set sort=threads
 </programlisting>
  </para>
 
  <para>
-  Nu skulle du være klar til at bruge Mutt. Programmet startes med
+  Nu skulle du vÃ¦re klar til at bruge Mutt. Programmet startes med
   kommandoen <command>mutt</command>. Som standard vises din indbakke.
-  Du kan bevæge dig op og ned med enten piltasterne eller
+  Du kan bevÃ¦ge dig op og ned med enten piltasterne eller
   <keysym>j</keysym> og <keysym>k</keysym> (ligesom VI). Normalt kan
-  man nøjes med at bruge <keysym>tabulator</keysym> som hopper direkte
-  til næste ulæste brev.  For at læse et brev trykker du
+  man nÃ¸jes med at bruge <keysym>tabulator</keysym> som hopper direkte
+  til nÃ¦ste ulÃ¦ste brev.  For at lÃ¦se et brev trykker du
   <keysym>enter</keysym> og for at komme tilbage til brevbakken
-  trykker du på <keysym>i</keysym>.
+  trykker du pÃ¥ <keysym>i</keysym>.
  </para>
 
  <para>
-  Når du læser et brev skal du bevæge dig rundt med enten
-  <keysym>mellemrum</keysym> som viser næste side, eller
-  <keysym>enter</keysym> for at gå en linje ned og
-  <keysym>backspace</keysym> for at gå en linje op. Prøver du derimod
-  at bruge pil op og ned (ligesom man gør i Pine) bevæger du dig
-  videre til næste eller forrige brev.
+  NÃ¥r du lÃ¦ser et brev skal du bevÃ¦ge dig rundt med enten
+  <keysym>mellemrum</keysym> som viser nÃ¦ste side, eller
+  <keysym>enter</keysym> for at gÃ¥ en linje ned og
+  <keysym>backspace</keysym> for at gÃ¥ en linje op. PrÃ¸ver du derimod
+  at bruge pil op og ned (ligesom man gÃ¸r i Pine) bevÃ¦ger du dig
+  videre til nÃ¦ste eller forrige brev.
  </para>
 
  <para>
@@ -85,11 +85,11 @@ set sort=threads
   <itemizedlist mark="bullet">
    <listitem><para>q: (Quit) Afslutter Mutt</para></listitem>
    <listitem><para>d: (Delete) Sletter et brev</para></listitem>
-   <listitem><para>r: (Reply) Svarer på et brev</para></listitem>
+   <listitem><para>r: (Reply) Svarer pÃ¥ et brev</para></listitem>
    <listitem><para>g: (Groupreply) Svarer til alle modtagere af et brev</para></listitem>
    <listitem><para>m: (Mail) Skriv et nyt brev</para></listitem>
    <listitem><para>c: (Change) Skift til en anden brevbakke</para></listitem>
-   <listitem><para>?: Viser hjælpen</para></listitem>
+   <listitem><para>?: Viser hjÃ¦lpen</para></listitem>
   </itemizedlist>
  </para>
 
@@ -97,17 +97,17 @@ set sort=threads
   <title>Skrive breve</title>
 
   <para>
-   For at skrive et nyt brev skal du trykke på <keysym>m</keysym>. Du
-   vil nu blive spurgt (i nederste linje på skærmen) om modtagerens
-   epostadresse og emnet på brevet. Når det er indtastet startes en
-   editor op, og du kan skrive dit brev. Når du er færdig med dette,
+   For at skrive et nyt brev skal du trykke pÃ¥ <keysym>m</keysym>. Du
+   vil nu blive spurgt (i nederste linje pÃ¥ skÃ¦rmen) om modtagerens
+   epostadresse og emnet pÃ¥ brevet. NÃ¥r det er indtastet startes en
+   editor op, og du kan skrive dit brev. NÃ¥r du er fÃ¦rdig med dette,
    gemmer du som normalt og afslutter editoren.
   </para>
 
   <para>
-   Nu har du mulighed for at tilføje vedhæftninger ved at trykke på
-   <keysym>a</keysym>, skifte emnet med <keysym>s</keysym>, ændre
-   modtageren med <keysym>t</keysym> og selvfølgelig at sende brevet
+   Nu har du mulighed for at tilfÃ¸je vedhÃ¦ftninger ved at trykke pÃ¥
+   <keysym>a</keysym>, skifte emnet med <keysym>s</keysym>, Ã¦ndre
+   modtageren med <keysym>t</keysym> og selvfÃ¸lgelig at sende brevet
    med <keysym>y</keysym>.
   </para>
  </sect2>
@@ -116,11 +116,11 @@ set sort=threads
   <title>Adressebog</title>
 
   <para>
-   Mutt har ikke en adressebog på samme måde som for eksempel Pine. I
-   stedet tilføjes adresser til ens opsætningsfil som aliaser. For
-   eksempel vil følgende linje give personen Tyge med epostadressen
-   tyge@sslug.dk aliaset tyge (den første forekomst af "tyge" er
-   aliaset, den anden er navnet på personen):
+   Mutt har ikke en adressebog pÃ¥ samme mÃ¥de som for eksempel Pine. I
+   stedet tilfÃ¸jes adresser til ens opsÃ¦tningsfil som aliaser. For
+   eksempel vil fÃ¸lgende linje give personen Tyge med epostadressen
+   tyge@sslug.dk aliaset tyge (den fÃ¸rste forekomst af "tyge" er
+   aliaset, den anden er navnet pÃ¥ personen):
 
 <programlisting>
 alias tyge Tyge &lt;tyge@sslug.dk&gt;
@@ -128,14 +128,14 @@ alias tyge Tyge &lt;tyge@sslug.dk&gt;
   </para>
 
   <para>
-   Dette kan også gøres simplere ved at finde et brev fra personen og
-   trykke på <keysym>a</keysym>. Så kan du bare følge vejledningerne i
-   bunden af skærmen, hvorefter personen automatisk vil blive tilføjet
-   til din opsætningsfil.
+   Dette kan ogsÃ¥ gÃ¸res simplere ved at finde et brev fra personen og
+   trykke pÃ¥ <keysym>a</keysym>. SÃ¥ kan du bare fÃ¸lge vejledningerne i
+   bunden af skÃ¦rmen, hvorefter personen automatisk vil blive tilfÃ¸jet
+   til din opsÃ¦tningsfil.
   </para>
 
   <para>
-   Når du fremover vil skrive til en person, kan du nøjes med at
+   NÃ¥r du fremover vil skrive til en person, kan du nÃ¸jes med at
    skrive aliaset, hvorefter det vil blive skiftet ud med personens
    navn og epostadresse.
   </para>

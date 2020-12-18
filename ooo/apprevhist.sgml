@@ -8,19 +8,19 @@
  </indexterm>
 
  <para>
-  Igennem tiden har bogen "Linux - friheden til vælge OpenOffice.org"
-  udviklet sig meget. Vi frigiver ofte nye versioner, når der er
+  Igennem tiden har bogen "Linux - friheden til vÃ¦lge OpenOffice.org"
+  udviklet sig meget. Vi frigiver ofte nye versioner, nÃ¥r der er
   kommer en del rettelser ind, eller nye afsnit er blevet skrevet.
   Kommentarer, ris og ros, og specielt fejl og mangler bedes sendt til
   <ulink url="mailto:linuxbog@sslug.dk">linuxbog@sslug.dk</ulink>, men
-  er du medlem af SSLUG, så skriv til <ulink
+  er du medlem af SSLUG, sÃ¥ skriv til <ulink
   url="mailto:sslug-bog@sslug.dk">sslug-bog@sslug.dk</ulink>.  Alle
-  kan bidrage - se om tilmelding se på <ulink
+  kan bidrage - se om tilmelding se pÃ¥ <ulink
   url="http://www.sslug.dk/tilmeld">http://www.sslug.dk/tilmeld</ulink>.
  </para>
 
  <para>
-  Her er en liste over, hvad der er ændret i bogen.
+  Her er en liste over, hvad der er Ã¦ndret i bogen.
  </para>
 
 <itemizedlist mark="bullet">
@@ -28,8 +28,8 @@
 <listitem><para>
 Version 1.0 - 25. januar 2004:
 
-Første offentlige version som en del af »Friheden til at
-vælge«-serien.  Konverteret fra HTML til Docbook af Gitte Wange og
+FÃ¸rste offentlige version som en del af Â»Friheden til at
+vÃ¦lgeÂ«-serien.  Konverteret fra HTML til Docbook af Gitte Wange og
 Jacob Sparre Andersen.
 
 </para></listitem>

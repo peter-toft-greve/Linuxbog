@@ -5,11 +5,11 @@
 
   <indexterm>
    <primary>Gnus</primary>
-   <secondary>som nyhedslæser</secondary>
+   <secondary>som nyhedslÃ¦ser</secondary>
   </indexterm>
 
   <indexterm>
-   <primary>nyhedslæsere</primary>
+   <primary>nyhedslÃ¦sere</primary>
    <secondary>Gnus</secondary>
   </indexterm>
 
@@ -19,7 +19,7 @@
   </indexterm>
 
   <para>
-   Gnus er en nyhedslæser der er indlejret i Emacs.  Det kommer med de fleste
+   Gnus er en nyhedslÃ¦ser der er indlejret i Emacs.  Det kommer med de fleste
    Linux-distributioner.
    ...
   </para>

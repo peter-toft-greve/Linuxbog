@@ -13,8 +13,8 @@
  <para>
   <ulink url="http://www.mandrakelinux.com/">Mandrake</ulink> bliver
   udviklet af det franske firma af samme navn.  Mandrake kan enten
-  hentes ned fra nettet, købes med manual og support eller installeres
-  via netværk.
+  hentes ned fra nettet, kÃ¸bes med manual og support eller installeres
+  via netvÃ¦rk.
  </para>
 
  <figure id="distro-mandrake-figname" float="1">
@@ -23,17 +23,17 @@
  </figure>
 
  <sect1 id="distro-mandrake-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Mandrake</secondary>
   </indexterm>
 
   <para>
-   Mandrake anvendes på både servere og skrivebordssystemer.  Den
-   oprindelige målgruppe var nybegyndere, men i dag bruges det af
-   linuxbrugere på alle niveauer.
+   Mandrake anvendes pÃ¥ bÃ¥de servere og skrivebordssystemer.  Den
+   oprindelige mÃ¥lgruppe var nybegyndere, men i dag bruges det af
+   linuxbrugere pÃ¥ alle niveauer.
   </para>
  </sect1>
 
@@ -46,21 +46,21 @@
   </indexterm>
 
   <para>
-   Mandrake kan enten installeres fra cd-rom eller netværk.  Hvis man
-   vælger at installere fra cd-rom, starter man maskinen fra den
-   første cd-rom og så er man i gang.  Vælger man at installere fra
-   netværk skal man først lave en startdiskette. Har man en
+   Mandrake kan enten installeres fra cd-rom eller netvÃ¦rk.  Hvis man
+   vÃ¦lger at installere fra cd-rom, starter man maskinen fra den
+   fÃ¸rste cd-rom og sÃ¥ er man i gang.  VÃ¦lger man at installere fra
+   netvÃ¦rk skal man fÃ¸rst lave en startdiskette. Har man en
    ADSL-forbindelse eller bedre er det bekvemt at installere fra
-   netværk, ellers kan det bedre betale sig at købe de tre cd-rom'er
-   som Mandrake kommer på.
+   netvÃ¦rk, ellers kan det bedre betale sig at kÃ¸be de tre cd-rom'er
+   som Mandrake kommer pÃ¥.
   </para>
 
   <para>
-   Startdisketten til netværksinstallation laves fra filen
-   <filename>network.img</filename>, der kan findes på et af de mange
+   Startdisketten til netvÃ¦rksinstallation laves fra filen
+   <filename>network.img</filename>, der kan findes pÃ¥ et af de mange
    Mandrake-spejle, for eksempel <ulink
    url="http://klid.dk/sw/mandrake/9.2/images/network.img">KLID's</ulink>.
-   Sidder du på en Linux-maskine kan du kopiere
+   Sidder du pÃ¥ en Linux-maskine kan du kopiere
    <filename>network.img</filename> til disketten med kommandoen:
 <screen>
 <prompt>[julemanden@greenland /]$ </prompt><userinput>cat network.img &gt; /dev/fd0</userinput>
@@ -68,36 +68,36 @@
   </para>
 
   <para>
-   Hvis du sidder på et Windows-system bliver du nødt til også at
+   Hvis du sidder pÃ¥ et Windows-system bliver du nÃ¸dt til ogsÃ¥ at
    hente <ulink
    url="http://www.klid.dk/sw/mandrake/9.2/dosutils/rawwritewin.exe">rawwritewin.exe</ulink>
    for at kunne lave startdisketten.
   </para>
 
   <para>
-   Når disketten er lavet er det bare at starte maskinen fra den.
+   NÃ¥r disketten er lavet er det bare at starte maskinen fra den.
 <!--
    Startbilledet ligner det man ser ved cd-rom-installationen, men det
-   næste skærmbillede er lidt anderledes (minder om Red Hats
+   nÃ¦ste skÃ¦rmbillede er lidt anderledes (minder om Red Hats
    tekst-installation).
 -->
   </para>
 
   <para>
-   Hvis man installerer fra netværk vil man efter startbilledet blive
-   bedt om at vælge om man vil installere via NFS, FTP eller HTTP.
-   Når man har valgt protokol, skal man opsætte sit netværk. De fleste
-   har typisk adgang til en DHCP-server, så bare vælg denne mulighed.
-   Hvis ikke, fejler netværksopsætningen, og du får mulighed for selv
+   Hvis man installerer fra netvÃ¦rk vil man efter startbilledet blive
+   bedt om at vÃ¦lge om man vil installere via NFS, FTP eller HTTP.
+   NÃ¥r man har valgt protokol, skal man opsÃ¦tte sit netvÃ¦rk. De fleste
+   har typisk adgang til en DHCP-server, sÃ¥ bare vÃ¦lg denne mulighed.
+   Hvis ikke, fejler netvÃ¦rksopsÃ¦tningen, og du fÃ¥r mulighed for selv
    at indtaste en IP-adresse. Herefter indtaster man den server og sti
-   hvor installations-filerne ligger henne og så starter det grafiske
+   hvor installations-filerne ligger henne og sÃ¥ starter det grafiske
    installationsprogram.
   </para>
 
   <para>
    Selve installationsfasen er den samme som ved cd-rom-installation
-   og er beskrevet på i »Linux &ndash; Friheden til at vælge
-   distribution«.
+   og er beskrevet pÃ¥ i Â»Linux &ndash; Friheden til at vÃ¦lge
+   distributionÂ«.
   </para>
  </sect1>
 
@@ -110,32 +110,32 @@
   </indexterm>
 
   <para>
-   Hvis man har installeret en hel Mandrake, har man adgang til både
+   Hvis man har installeret en hel Mandrake, har man adgang til bÃ¥de
    <ulink url="http://www.linuxbog.dk/wm/bog/kwm.html">KDE</ulink> og
    <ulink
    url="http://www.linuxbog.dk/wm/bog/gui-gnome.html">Gnome</ulink>
-   Mandrake har lavet sit eget skrivebordstema (Mandrake Galaxy) så
+   Mandrake har lavet sit eget skrivebordstema (Mandrake Galaxy) sÃ¥
    begge skrivebordssystemer ser ens ud. Derudover har Mandrake lavet
-   grafiske programmer til alt hvad der kan administreres på systemet
+   grafiske programmer til alt hvad der kan administreres pÃ¥ systemet
    (brugere, e-post, menu i KDE/Gnome, hardware, software, sprog etc).
   </para>
 
 <para>
-Det er let at komme i gang Første gang man starter enten KDE eller
-Gnome, bliver man præsenteret for et par skærme hvor man lige kan
-vælge udseende på vinduer, vælge hvilket post-program man vil
-benytte etc. Det gør det let for den uerfarne bruger at komme
+Det er let at komme i gang FÃ¸rste gang man starter enten KDE eller
+Gnome, bliver man prÃ¦senteret for et par skÃ¦rme hvor man lige kan
+vÃ¦lge udseende pÃ¥ vinduer, vÃ¦lge hvilket post-program man vil
+benytte etc. Det gÃ¸r det let for den uerfarne bruger at komme
 i gang. Vil man hellere selv bestemme alle disse ting i en
-opsætningsfil, kan man bare afslutte guiden og så dukker den ikke
+opsÃ¦tningsfil, kan man bare afslutte guiden og sÃ¥ dukker den ikke
 op igen.
 </para>
 
 <para>
-Som server er Mandrake ikke forskellig fra andre gængse distributioner.
+Som server er Mandrake ikke forskellig fra andre gÃ¦ngse distributioner.
 I installationen kan man installere alle slags servere (webserver,
-postserver, DNS-server, dørvogter etc.). Hvis man ikke lige fik
+postserver, DNS-server, dÃ¸rvogter etc.). Hvis man ikke lige fik
 installeret den server man skal bruge, er den let at installere senere
-ved hjælp af. Mandrakes pakke-system.
+ved hjÃ¦lp af. Mandrakes pakke-system.
 </para>
 
 </sect1>
@@ -144,27 +144,27 @@ ved hjælp af. Mandrakes pakke-system.
 <title>Administration af software</title>
 
 <para>
-Ligesom Red Hat er Mandrake baseret på et pakke-system der hedder RPM
+Ligesom Red Hat er Mandrake baseret pÃ¥ et pakke-system der hedder RPM
 (Red Hat Package Management). Selve pakke-systemet er ikke specielt godt
-til at styre afhængigheder og kan virke en smule bøvlet. Derfor har
+til at styre afhÃ¦ngigheder og kan virke en smule bÃ¸vlet. Derfor har
 Mandrake lavet sin egen lille overbygning til RPM der hedder <command>urpmi</command>.
 Dette program minder om <command>apt-get</command> til Debian.
-Man angiver sine installations-medier således:
+Man angiver sine installations-medier sÃ¥ledes:
 <screen>
 <prompt>[julemanden@greenland /]$ </prompt><userinput>urpmi.addmedia cdrom1 http://klid.dk/sw/mandrake/9.2/Mandrake/RPMS with ../../Mandrake/base/hdlist.cz</userinput>
 </screen>
 </para>
 
 <para>
-Et nyt program (f.eks. Evolution) installeres således:
+Et nyt program (f.eks. Evolution) installeres sÃ¥ledes:
 <screen>
 <prompt>[julemanden@greenland /]$ </prompt><userinput>urpmi evolution</userinput>
 </screen>
 </para>
 
 <para>
-Der findes også et pænt grafisk program til <command>urpmi</command> (der hedder <command>gurpmi</command>)
-som er en hel del lettere at bruge hvis man ikke er så skrap i en konsol.
+Der findes ogsÃ¥ et pÃ¦nt grafisk program til <command>urpmi</command> (der hedder <command>gurpmi</command>)
+som er en hel del lettere at bruge hvis man ikke er sÃ¥ skrap i en konsol.
 </para>
 
   <sect2 id="distro-mandrake-plf">
@@ -172,20 +172,20 @@ som er en hel del lettere at bruge hvis man ikke er så skrap i en konsol.
 
    <indexterm>
     <primary>installation af ekstra programmel</primary>
-    <secondary>på Mandrake</secondary>
+    <secondary>pÃ¥ Mandrake</secondary>
    </indexterm>
 
    <para>
-    På <ulink
+    PÃ¥ <ulink
     url="http://plf.zarb.org/~nanardon">http://plf.zarb.org/~nanardon</ulink>
-    kan du let finde urpmi medier og få den rigtige kommando for at
-    indsætte disse i din <command>urpmi</command>-opsætning. Udover de
-    sædvanlige mirrors med installations-pakkerne og "contrib" (som er
+    kan du let finde urpmi medier og fÃ¥ den rigtige kommando for at
+    indsÃ¦tte disse i din <command>urpmi</command>-opsÃ¦tning. Udover de
+    sÃ¦dvanlige mirrors med installations-pakkerne og "contrib" (som er
     programmer der ikke er med i den officielle udgave) kan man finde
     et arkiv der hedder plf (Penguin Liberation Front). Typisk kan
     disse pakker ikke komme med i den officielle udgave, da de er
-    under en anden licens end GPL.  Der findes også et Texstars arkiv
-    samt et JPackage-arkiv der består af Java-pakker til Linux.
+    under en anden licens end GPL.  Der findes ogsÃ¥ et Texstars arkiv
+    samt et JPackage-arkiv der bestÃ¥r af Java-pakker til Linux.
    </para>
   </sect2>
  </sect1>
@@ -199,10 +199,10 @@ som er en hel del lettere at bruge hvis man ikke er så skrap i en konsol.
   </indexterm>
 
 <para>
-Det helt særlige ved Mandrake er at den er så grafisk orienteret og
-derfor en af de bedste Linu distributioner til Linux. Det er let at få
+Det helt sÃ¦rlige ved Mandrake er at den er sÃ¥ grafisk orienteret og
+derfor en af de bedste Linu distributioner til Linux. Det er let at fÃ¥
 videokort til at virke, og hvis man er glad for video kan Mandrake selv
-finde dit grabberkort i maskinen og sætte det op (så kan du se tv på din
+finde dit grabberkort i maskinen og sÃ¦tte det op (sÃ¥ kan du se tv pÃ¥ din
 computer).
 </para>
 
@@ -213,8 +213,8 @@ computer).
 <title>Samlet vurdering af Mandrake</title>
 <para>
 Mandrake er klart et af de bedste valg for begyndere. Du bliver holdt i
-hånden under installationen og der findes mange grafiske værktøjer som
-alt andet lige gør det nemmere for en begynder at finde rundt i.
+hÃ¥nden under installationen og der findes mange grafiske vÃ¦rktÃ¸jer som
+alt andet lige gÃ¸r det nemmere for en begynder at finde rundt i.
 </para>
 
 </sect1>

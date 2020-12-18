@@ -1,56 +1,56 @@
 <!-- $Id$ -->
 <chapter id="remote-login">
- <title>Remote login og netværksaflytning</title>
+ <title>Remote login og netvÃ¦rksaflytning</title>
 
  <indexterm>
   <primary>remote login</primary>
  </indexterm>
 
  <indexterm>
-  <primary>netværksaflytning</primary>
+  <primary>netvÃ¦rksaflytning</primary>
  </indexterm>
 
  <para>
   En af de store styrker ved et Linux-system (eller et andet Unix-system)
-  er, at man kan administrere den fra en anden maskine via netværk. For at være
-kompatibel med alle andre UNIX varianter følger de gode gamle værktøjer 
+  er, at man kan administrere den fra en anden maskine via netvÃ¦rk. For at vÃ¦re
+kompatibel med alle andre UNIX varianter fÃ¸lger de gode gamle vÃ¦rktÃ¸jer 
 <command>telnet</command> og ftp med i Linux-distributionerne, og de er meget anvendte 
-til fjernadministration. Vi vil i dette kapitel se på, hvorfor 
-værktøjer som <command>telnet</command> og ftp ikke bør anvendes, hvis maskinen er koblet til 
-internettet eller et andet usikkert netværk. Vi skal se på, hvordan 
-netværkstrafik kan aflyttes. Derefter skal vi se nærmere på alternativer 
-til <command>telnet</command> og ftp, hvor datastrømmen bliver krypteret. Specielt 
-fokuserer vi på OpenSsh (den frie version af secure shell) og 
+til fjernadministration. Vi vil i dette kapitel se pÃ¥, hvorfor 
+vÃ¦rktÃ¸jer som <command>telnet</command> og ftp ikke bÃ¸r anvendes, hvis maskinen er koblet til 
+internettet eller et andet usikkert netvÃ¦rk. Vi skal se pÃ¥, hvordan 
+netvÃ¦rkstrafik kan aflyttes. Derefter skal vi se nÃ¦rmere pÃ¥ alternativer 
+til <command>telnet</command> og ftp, hvor datastrÃ¸mmen bliver krypteret. Specielt 
+fokuserer vi pÃ¥ OpenSsh (den frie version af secure shell) og 
 viser installation og anvendelse.
-Meget af det, der beskrives i artiklen, gælder ikke blot for Linux, men
-også for andre UNIX'er.
+Meget af det, der beskrives i artiklen, gÃ¦lder ikke blot for Linux, men
+ogsÃ¥ for andre UNIX'er.
 </para>
 
  <sect1 id="usikker-nettrafik">
-  <title>Nem men usikker netværkstrafik</title>
+  <title>Nem men usikker netvÃ¦rkstrafik</title>
 
   <para>
-   Fra en Linux-maskine kan man nemt logge ind på en anden Linux-maskine
-   og køre programmer, endog grafiske programmer. Dermed kan man køre
-tunge programmer på en stærk server og få vist resultater på en anden 
-(måske langsommere) maskine. 
+   Fra en Linux-maskine kan man nemt logge ind pÃ¥ en anden Linux-maskine
+   og kÃ¸re programmer, endog grafiske programmer. Dermed kan man kÃ¸re
+tunge programmer pÃ¥ en stÃ¦rk server og fÃ¥ vist resultater pÃ¥ en anden 
+(mÃ¥ske langsommere) maskine. 
 </para>
 
 <para>
-Antag, at vi har et lokalnet bestående af tre maskiner. Vi anvender
+Antag, at vi har et lokalnet bestÃ¥ende af tre maskiner. Vi anvender
 maskinen "hven" (IP-adresse 192.168.0.1) med brugernavnet tyge, men vi
-vil køre programmer fra maskinen "bohr" (192.168.0.2). I netværket 
+vil kÃ¸re programmer fra maskinen "bohr" (192.168.0.2). I netvÃ¦rket 
 finder vi desuden maskinen "nottingham" (192.168.0.3), som vi leger er 
-en ondsindet maskine, der ønsker at bryde vores sikkerhed. I praksis 
-kunne det være tre maskiner på internettet, hvor netværkstrafik mellem 
-"hven" og "bohr" tilfældigvis også kommer forbi "nottingham".
+en ondsindet maskine, der Ã¸nsker at bryde vores sikkerhed. I praksis 
+kunne det vÃ¦re tre maskiner pÃ¥ internettet, hvor netvÃ¦rkstrafik mellem 
+"hven" og "bohr" tilfÃ¦ldigvis ogsÃ¥ kommer forbi "nottingham".
 </para>
 
 <para>
 Resten af kapitlet vil handle om programmer til remote login, som <command>telnet</command>, 
-<command>rlogin</command> og ssh, samt programmer til filoverførsel (ftp og scp). Men hvad
-bruges det til? Med remote login kan man udføre tekstkommandoer på den
-maskine, man er logget ind på, men man kan også køre X-programmer over
+<command>rlogin</command> og ssh, samt programmer til filoverfÃ¸rsel (ftp og scp). Men hvad
+bruges det til? Med remote login kan man udfÃ¸re tekstkommandoer pÃ¥ den
+maskine, man er logget ind pÃ¥, men man kan ogsÃ¥ kÃ¸re X-programmer over
 nettet.
 </para>
 
@@ -60,10 +60,10 @@ nettet.
 <indexterm><primary>xhost</primary><secondary>sikkerhed</secondary></indexterm>
 
 <para>
-Hvis du på hven kører en X-baseret grafisk brugergrænseflade, og
-du vil køre X-programmer (grafiske programmer) fra maskinen "bohr",
-skal du starte med at fortælle maskinen "hven", at det er i orden, at
-maskinen "bohr" benytter dens display.  Dette gøres ved at føje "bohr" til
+Hvis du pÃ¥ hven kÃ¸rer en X-baseret grafisk brugergrÃ¦nseflade, og
+du vil kÃ¸re X-programmer (grafiske programmer) fra maskinen "bohr",
+skal du starte med at fortÃ¦lle maskinen "hven", at det er i orden, at
+maskinen "bohr" benytter dens display.  Dette gÃ¸res ved at fÃ¸je "bohr" til
 listen med godkendte X-klienter med kommandoen <command>xhost</command>:
 
 <screen>
@@ -74,12 +74,12 @@ bohr being added to access control list
 
 <para>Dermed vil grafiske programmer fra "bohr" blive accepteret af
 "hven". Udelades maskinnavnet, betyder det, at alle maskiner kan vise
-grafik på din skærm. Lad være med det, da det sikkerhedsmæssigt er
-en ekstremt dårlig ide. 
+grafik pÃ¥ din skÃ¦rm. Lad vÃ¦re med det, da det sikkerhedsmÃ¦ssigt er
+en ekstremt dÃ¥rlig ide. 
 </para>
 
 <para>
-Lad os nu logge ind på "bohr" med <command>telnet</command>,
+Lad os nu logge ind pÃ¥ "bohr" med <command>telnet</command>,
 </para>
 
 <screen>
@@ -94,14 +94,14 @@ Password:
 </screen>
 
 <para>
-Efter at have skrevet brugernavn og adgangskode på bohr-maskinen får
-du en kommandolinje, og du kan udføre programmer på maskinen, som om du
+Efter at have skrevet brugernavn og adgangskode pÃ¥ bohr-maskinen fÃ¥r
+du en kommandolinje, og du kan udfÃ¸re programmer pÃ¥ maskinen, som om du
 var logget ind lokalt. 
 </para>
 
 <para>
-For at kunne få de grafiske programmer, du starter på bohr, til at
-vise sig på hvens skærm er det nødvendigt at sætte systemvariablen
+For at kunne fÃ¥ de grafiske programmer, du starter pÃ¥ bohr, til at
+vise sig pÃ¥ hvens skÃ¦rm er det nÃ¸dvendigt at sÃ¦tte systemvariablen
 <literal>DISPLAY</literal>:
 </para>
 
@@ -110,13 +110,13 @@ vise sig på hvens skærm er det nødvendigt at sætte systemvariablen
 </screen>
 
 <para>
-Mange X-programmer kan dog også kaldes med "-display" som option. 
+Mange X-programmer kan dog ogsÃ¥ kaldes med "-display" som option. 
 </para>
 
 <para>
-Nu kan du køre dit X-program, f.eks. "xload", som om du sad på 
-bohr. Programmet kører på bohr, men
-alt grafik vises på hven, og programmet styres fra hven. 
+Nu kan du kÃ¸re dit X-program, f.eks. "xload", som om du sad pÃ¥ 
+bohr. Programmet kÃ¸rer pÃ¥ bohr, men
+alt grafik vises pÃ¥ hven, og programmet styres fra hven. 
 </para>
 
 <screen>
@@ -129,80 +129,80 @@ alt grafik vises på hven, og programmet styres fra hven.
 </figure>  
 
 <para>
-Problemet er ikke at du nu kan kalde grafik op på en anden skærm end
-din egen. Problemet er, at den adgang du har etableret med <command>xhost</command> så at
-sige går begge veje. I og med du har lavet <command>xhost +bohr</command> har alle brugere på bohr adgang til at læse og
-skrive fra og til dit dislay på "hven". Er bohr et
+Problemet er ikke at du nu kan kalde grafik op pÃ¥ en anden skÃ¦rm end
+din egen. Problemet er, at den adgang du har etableret med <command>xhost</command> sÃ¥ at
+sige gÃ¥r begge veje. I og med du har lavet <command>xhost +bohr</command> har alle brugere pÃ¥ bohr adgang til at lÃ¦se og
+skrive fra og til dit dislay pÃ¥ "hven". Er bohr et
 multibrugersystem, og har en cracker, eller blot en nysgerrig kollega
-konto på maskinen, kan vedkommende køre kommandoen <command>xwd -display
+konto pÃ¥ maskinen, kan vedkommende kÃ¸re kommandoen <command>xwd -display
 hven:0.0 -root -out hven.dump</command> efterfulgt af <command>xwud -in
-hven.dump</command>. Den første giver vedkommende et skærmdump af hven, den
-næste viser dette billede lokalt (på bohr). Alt hvad du kan se på
-skærmen på hven kan enhver på bohr tage et dump af.
+hven.dump</command>. Den fÃ¸rste giver vedkommende et skÃ¦rmdump af hven, den
+nÃ¦ste viser dette billede lokalt (pÃ¥ bohr). Alt hvad du kan se pÃ¥
+skÃ¦rmen pÃ¥ hven kan enhver pÃ¥ bohr tage et dump af.
 </para>
 
 <para>
 Selv hvis hven har <command>xhost -</command> kan en bruger, der har
-lokal shell-adgang på hven, i visse tilfælde stadigvæk køre
-xwd-kommandoen! Vedkommende skal så blot være logget ind på hven, når
-kommandoen udføres - det kan ikke ske over nettet som beskrevet
+lokal shell-adgang pÃ¥ hven, i visse tilfÃ¦lde stadigvÃ¦k kÃ¸re
+xwd-kommandoen! Vedkommende skal sÃ¥ blot vÃ¦re logget ind pÃ¥ hven, nÃ¥r
+kommandoen udfÃ¸res - det kan ikke ske over nettet som beskrevet
 ovenfor.
 </para>
 
 <para>
-Det bliver værre: Med <command>xlswins</command> kan man vise hvilke
-vinduer (xterm, netscape osv.) der er åbne på den anden maskine, og så
+Det bliver vÃ¦rre: Med <command>xlswins</command> kan man vise hvilke
+vinduer (xterm, netscape osv.) der er Ã¥bne pÃ¥ den anden maskine, og sÃ¥
 dump disse enkeltvis med <command>xwatchwin</command>. Begge
-programmer er enten med i standard X, eller fås kvit og frit på
+programmer er enten med i standard X, eller fÃ¥s kvit og frit pÃ¥
 internettet.
 </para>
 
 <para>
-Og værre: Programmet <command>xscan</command> skal efter sigende kunne
+Og vÃ¦rre: Programmet <command>xscan</command> skal efter sigende kunne
 lave et tilsvarende trick, men med tastetryk. Direkte til en logfil,
-alt hvad der tastes på maskinen, der har <command>xhost</command>: brugernavne,
+alt hvad der tastes pÃ¥ maskinen, der har <command>xhost</command>: brugernavne,
 adgangskoder, pgp-koder.
 </para>
 
 <para>
-<command>xhost</command> er generelt en meget dårlig ide, og bør i
-alle tilfælde erstattes med SSH, der automatisk og transparent sørger
-for at sætte display og X rettigheder, så man hele tiden "har sit
+<command>xhost</command> er generelt en meget dÃ¥rlig ide, og bÃ¸r i
+alle tilfÃ¦lde erstattes med SSH, der automatisk og transparent sÃ¸rger
+for at sÃ¦tte display og X rettigheder, sÃ¥ man hele tiden "har sit
 display med sig".
 </para>
 </sect2>
 
 <sect2 id="sende-passwords-over-net">
-<title>Pas på adgangskoder sendt over netværk</title>
-<indexterm><primary>password</primary><secondary>Sendt over netværk</secondary></indexterm>
-<indexterm><primary>adgangskode</primary><secondary>Sendt over netværk</secondary></indexterm>
+<title>Pas pÃ¥ adgangskoder sendt over netvÃ¦rk</title>
+<indexterm><primary>password</primary><secondary>Sendt over netvÃ¦rk</secondary></indexterm>
+<indexterm><primary>adgangskode</primary><secondary>Sendt over netvÃ¦rk</secondary></indexterm>
 <indexterm><primary>sniffit</primary></indexterm>
 
 <para>
-For at aflytte netværkstrafikken kan man hente programmet sniffit
-til Linux. Når det startes op vises alle kommunikationslinjer,
-såsom telnet- og ftp-forbindelser, mellem maskinerne på netværket. Det
-kommer an på opsætning af routere, firewalls, switche og hubs,
-hvor meget man reelt får at se.  Sniffit kan hentes fra 
+For at aflytte netvÃ¦rkstrafikken kan man hente programmet sniffit
+til Linux. NÃ¥r det startes op vises alle kommunikationslinjer,
+sÃ¥som telnet- og ftp-forbindelser, mellem maskinerne pÃ¥ netvÃ¦rket. Det
+kommer an pÃ¥ opsÃ¦tning af routere, firewalls, switche og hubs,
+hvor meget man reelt fÃ¥r at se.  Sniffit kan hentes fra 
 <ulink url="http://reptile.rug.ac.be/~coder/sniffit/sniffit.html">http://reptile.rug.ac.be/~coder/sniffit/sniffit.html</ulink>. 
 </para>
 
 <para>
-Det er en udbredt misforståelse at man ikke kan aflytte switchede
-netværk - men kun netværk med hubs. Dette er forkert og
-aflytningen kan typisk foretages ved hjælp af ARP spoofing -
-eksempelvis med arpspoof programmet der følger med dsniff. Link:
+Det er en udbredt misforstÃ¥else at man ikke kan aflytte switchede
+netvÃ¦rk - men kun netvÃ¦rk med hubs. Dette er forkert og
+aflytningen kan typisk foretages ved hjÃ¦lp af ARP spoofing -
+eksempelvis med arpspoof programmet der fÃ¸lger med dsniff. Link:
 <ulink url="http://www.monkey.org/~dugsong/dsniff/">
 http://www.monkey.org/~dugsong/dsniff/</ulink>.
 Dsniff kan opsamle og afkode traffik fra mange usikre protokoller.  
-Sniffit og dsniff skal køres som root.
+Sniffit og dsniff skal kÃ¸res som root.
 </para>
 
 <para>
-Lad os antage, at den ondsindede "nottingham" (192.168.0.3) lytter med på, 
+Lad os antage, at den ondsindede "nottingham" (192.168.0.3) lytter med pÃ¥, 
 hvad vi laver mellem "hven" (192.168.0.1) og "bohr" (192.168.0.2).
 Programmet sniffit startes i interaktiv tilstand med angivelse af
-hvilket netværks-interface, der skal lyttes på: 
+hvilket netvÃ¦rks-interface, der skal lyttes pÃ¥: 
 </para>
 
 <screen>
@@ -210,22 +210,22 @@ hvilket netværks-interface, der skal lyttes på:
 </screen>
 
 <para>
-hvor eth0 betyder første ethernet kort i maskinen, og i betyder
-interaktiv tilstand. Ud kommer nedenstående billede, hvor man ser, at
-maskinen med netværksadresse 192.168.0.1 (hven) har oprettet en
-forbindelse til port 23 på maskinen med netværksadresse 192.168.0.2
-(bohr). Port 23 er den port, telnet lytter på. Port 3211, som man
+hvor eth0 betyder fÃ¸rste ethernet kort i maskinen, og i betyder
+interaktiv tilstand. Ud kommer nedenstÃ¥ende billede, hvor man ser, at
+maskinen med netvÃ¦rksadresse 192.168.0.1 (hven) har oprettet en
+forbindelse til port 23 pÃ¥ maskinen med netvÃ¦rksadresse 192.168.0.2
+(bohr). Port 23 er den port, telnet lytter pÃ¥. Port 3211, som man
 sender fra, er valgt blandt maskinens ledige porte, dvs. de porte, der
-ikke er nogen service, der lytter på.  Der er valgt et portnummer, som
-er større end 1024, dvs. en ikke priviligeret port.
+ikke er nogen service, der lytter pÃ¥.  Der er valgt et portnummer, som
+er stÃ¸rre end 1024, dvs. en ikke priviligeret port.
 </para>
 
 <para>
-Trykkes return på en linje vil den blive markeret med "*LOGGED*",
-og det mindre vindue mod højre vil vise trafikken på den forbindelse. 
-Først kommer login navn: "tyge", og efter to punktummer kommer adgangskoden
+Trykkes return pÃ¥ en linje vil den blive markeret med "*LOGGED*",
+og det mindre vindue mod hÃ¸jre vil vise trafikken pÃ¥ den forbindelse. 
+FÃ¸rst kommer login navn: "tyge", og efter to punktummer kommer adgangskoden
 i klar tekst: "qwe123". Der skal ikke stor fantasi til at forestille sig, 
-at dette program nemt kan sættes til at dumpe samhørende brugernavne og 
+at dette program nemt kan sÃ¦ttes til at dumpe samhÃ¸rende brugernavne og 
 adgangskoder ned i en fil over en periode, indtil der er gevinst. 
 </para>
 
@@ -238,18 +238,18 @@ adgangskoder ned i en fil over en periode, indtil der er gevinst.
 <para>
 Vi har vist, at man ikke skal bruge <command>telnet</command> til at kommunikere mellem
 to maskiner, hvis der er risiko for, at nogen lytter med, og slet ikke
-hvis man skal logge ind som root på maskinen. Det er simpelthen for
-nemt at lede efter loginnavn root og derefter få adgangskoden. Derfor
+hvis man skal logge ind som root pÃ¥ maskinen. Det er simpelthen for
+nemt at lede efter loginnavn root og derefter fÃ¥ adgangskoden. Derfor
 har mange Linux-distributioner per default forhindret, at root logger
-ind via netværket. Red Hat 6.0, Debian 1.3 og SuSE 6.2 har filen
-"/etc/securetty", der indeholder de konsoller, hvor root må logge ind.
-Dette kan være "tty1" til "tty6", som er de tekst login konsoller, der
-normalt er på selve Linux-maskinen - dvs. ikke via netværket. Hvis man
-absolut vil tillade root login via netværk, kan man tilføje "0", "1"
+ind via netvÃ¦rket. Red Hat 6.0, Debian 1.3 og SuSE 6.2 har filen
+"/etc/securetty", der indeholder de konsoller, hvor root mÃ¥ logge ind.
+Dette kan vÃ¦re "tty1" til "tty6", som er de tekst login konsoller, der
+normalt er pÃ¥ selve Linux-maskinen - dvs. ikke via netvÃ¦rket. Hvis man
+absolut vil tillade root login via netvÃ¦rk, kan man tilfÃ¸je "0", "1"
 og opefter (for Linux-kerne 2.2.X) svarende til hvor mange logins, du
-forventer på maskinen fra netværket. Normalt er det
+forventer pÃ¥ maskinen fra netvÃ¦rket. Normalt er det
 <emphasis>ikke</emphasis> klogt at tillade direkte root login via
-netværk.
+netvÃ¦rk.
 </para>
 </sect2>
 
@@ -258,11 +258,11 @@ netværk.
 <title>ftp</title>
 <indexterm><primary>ftp</primary><secondary>sikkerhed</secondary></indexterm>
 <para>
-Hvis vi vil overføre filer fra "hven" (192.168.0.1) til
-"bohr" (192.168.0.2), er ftp et af de gennemprøvede og gamle 
-værktøjer. Også her er der sikkerhedsproblemer.
-Vi sætter igen "nottingham" (192.168.0.3) til at køre sniffit som vist 
-nedenfor. Denne gang sætter vi sniffit op til at vise alle pakker som 
+Hvis vi vil overfÃ¸re filer fra "hven" (192.168.0.1) til
+"bohr" (192.168.0.2), er ftp et af de gennemprÃ¸vede og gamle 
+vÃ¦rktÃ¸jer. OgsÃ¥ her er der sikkerhedsproblemer.
+Vi sÃ¦tter igen "nottingham" (192.168.0.3) til at kÃ¸re sniffit som vist 
+nedenfor. Denne gang sÃ¦tter vi sniffit op til at vise alle pakker som 
 ankommer til "bohr" (192.168.0.2), og man kan nemt se, 
 hvad der sker.
 </para>
@@ -286,23 +286,23 @@ Packet ID (from_IP.port-to_IP.port): 192.168.0.1.1299-192.168.0.2.21
 </programlisting>
 
 <para>
-På den første af de tre data-linjer kan man se login navn (tyge), og som 
-vist på den sidste data-linje, vil man direkte kunne læse adgangskoden (qwe123). 
-Ser man lidt nøjere efter, vises også ftp-porten, port 21. Port 
-1299 er ligesom ved <command>telnet</command> en ledig port, der vælges til denne session.
+PÃ¥ den fÃ¸rste af de tre data-linjer kan man se login navn (tyge), og som 
+vist pÃ¥ den sidste data-linje, vil man direkte kunne lÃ¦se adgangskoden (qwe123). 
+Ser man lidt nÃ¸jere efter, vises ogsÃ¥ ftp-porten, port 21. Port 
+1299 er ligesom ved <command>telnet</command> en ledig port, der vÃ¦lges til denne session.
 </para>
 
 <para>
-Som vi ser, er ftp også et meget usikkert program, hvor andre kan lytte med.
-Så brug det med omtanke.
+Som vi ser, er ftp ogsÃ¥ et meget usikkert program, hvor andre kan lytte med.
+SÃ¥ brug det med omtanke.
 For en systemadministrator er paranoia ikke en sygdom, men en kvalifikation...
 </para>
 
 <para>
-Det skal nævnes, at også resten af den nettrafik, du laver med <command>telnet</command> og
-ftp, kan læses i klar tekst via f.eks. sniffit. Starter du andre
+Det skal nÃ¦vnes, at ogsÃ¥ resten af den nettrafik, du laver med <command>telnet</command> og
+ftp, kan lÃ¦ses i klar tekst via f.eks. sniffit. Starter du andre
 programmer, kan man se det. Laver du "su - root" og skriver "root"s adgangskode, 
-er sikkerheden på den maskine væk, for "root"s adgangskode er ude, hvis du
+er sikkerheden pÃ¥ den maskine vÃ¦k, for "root"s adgangskode er ude, hvis du
 bliver aflyttet.
 </para>
 </sect2>
@@ -317,10 +317,10 @@ bliver aflyttet.
 
 <para>
 To andre velkendte programmer i samme kategori er "<command>rlogin</command>" og "rsh".
-Programmerne virker næsten ens. Begge 
-giver interaktivt login på maskinen, men rsh kan udføre en kommando 
-samtidig med, at man logger ind. F.eks. vil den følgende kommando logge 
-ind direkte fra hven til bohr og køre kommandoen "df" (som viser 
+Programmerne virker nÃ¦sten ens. Begge 
+giver interaktivt login pÃ¥ maskinen, men rsh kan udfÃ¸re en kommando 
+samtidig med, at man logger ind. F.eks. vil den fÃ¸lgende kommando logge 
+ind direkte fra hven til bohr og kÃ¸re kommandoen "df" (som viser 
 hvor fyldte dine diske er).
 </para>
 
@@ -329,8 +329,8 @@ hvor fyldte dine diske er).
 </screen>
 
 <para>
-Nu prøver vi at køre sniffit på en <command>rlogin</command> session for at se, hvad man kan se.
-På maskinen "nottingham" kører vi sniffit:
+Nu prÃ¸ver vi at kÃ¸re sniffit pÃ¥ en <command>rlogin</command> session for at se, hvad man kan se.
+PÃ¥ maskinen "nottingham" kÃ¸rer vi sniffit:
 </para>
 
 <screen>
@@ -348,7 +348,7 @@ $
 </screen>
 
 <para>
-hvor adgangskoden naturligvis ikke kan ses på skærmen, når man taster den ind.
+hvor adgangskoden naturligvis ikke kan ses pÃ¥ skÃ¦rmen, nÃ¥r man taster den ind.
 Udklip fra sniffit's output:
 </para>
 
@@ -435,12 +435,12 @@ Packet ID (from_IP.port-to_IP.port): 192.168.0.1.1023-192.168.0.2.513
 
 <para>
 Igen ser man tydeligt brugernavn og adgangskode blive sendt ukrypteret
-over nettet (se sidste tegn på hver linje).  Man kan se, at <command>rlogin</command> på
-bohr bruger port 513, og at der på hven sendes fra port 1023.
+over nettet (se sidste tegn pÃ¥ hver linje).  Man kan se, at <command>rlogin</command> pÃ¥
+bohr bruger port 513, og at der pÃ¥ hven sendes fra port 1023.
 </para>
 
 <para>
-Skal du kopiere filer mellem to maskiner, så er ftp som tidligere
+Skal du kopiere filer mellem to maskiner, sÃ¥ er ftp som tidligere
 skrevet meget anvendt. Alternativt kan remote copy
 <command>rcp</command> anvendes.  Skal du kopiere filen
 <filename>.emacs</filename> fra hven til bohr, sker dette med
@@ -451,20 +451,20 @@ skrevet meget anvendt. Alternativt kan remote copy
 </screen>
 
 <para>
-Sikkerhedsmæssigt er <command>rcp</command> på linje med
+SikkerhedsmÃ¦ssigt er <command>rcp</command> pÃ¥ linje med
 <command>rlogin</command> og <command>rsh</command>. Vi skal senere i
 artiklen vende tilbage til et fuldt krypteret alternativ til
 <command>rcp</command>.
 </para>
 
 <para>
-Med <command>rlogin</command>, rsh og rcp kan man vælge, at login kan ske uden
-adgangskode. Dette gøres ved at sætte sit hostnavn og evt. brugernavn ind
-i filen <filename>~/.rhosts</filename> i sit hjemmekatalog på den
-maskine, der skal logges ind på. Hvis du gerne vil kunne logge ind fra
+Med <command>rlogin</command>, rsh og rcp kan man vÃ¦lge, at login kan ske uden
+adgangskode. Dette gÃ¸res ved at sÃ¦tte sit hostnavn og evt. brugernavn ind
+i filen <filename>~/.rhosts</filename> i sit hjemmekatalog pÃ¥ den
+maskine, der skal logges ind pÃ¥. Hvis du gerne vil kunne logge ind fra
 hven til bohr uden adgangskode, som brugeren tyge, kan
-<filename>.rhosts</filename>-filen i dit hjemmekatalog på bohr se
-sådan ud:
+<filename>.rhosts</filename>-filen i dit hjemmekatalog pÃ¥ bohr se
+sÃ¥dan ud:
 </para>
 
 <programlisting>
@@ -472,49 +472,49 @@ hven tyge
 </programlisting>
 
 <para>
-Der kan godt stå mange flere linjer med andre hostnavne. Brugernavnet
-kan udelades, idet brugeren sættes til den, hvis hjemmekatalog filen
-ligger i.  Hvis filen er læsbar for alle, er det kun en bruger med
+Der kan godt stÃ¥ mange flere linjer med andre hostnavne. Brugernavnet
+kan udelades, idet brugeren sÃ¦ttes til den, hvis hjemmekatalog filen
+ligger i.  Hvis filen er lÃ¦sbar for alle, er det kun en bruger med
 samme brugernavn som sit eget, der kan logge ind fra en anden
-maskine. Er filen ikke læsbar for andre, kan man anføre linjer i
-<filename>.rhosts</filename>-filen med først maskinnavn og dernæst det
-brugernavn, som anvendes på den anden maskine. For at "peter" skal
-logge på ind på "hven" som "tyge", kan man således bruge
+maskine. Er filen ikke lÃ¦sbar for andre, kan man anfÃ¸re linjer i
+<filename>.rhosts</filename>-filen med fÃ¸rst maskinnavn og dernÃ¦st det
+brugernavn, som anvendes pÃ¥ den anden maskine. For at "peter" skal
+logge pÃ¥ ind pÃ¥ "hven" som "tyge", kan man sÃ¥ledes bruge
 <command>rlogin hven -l tyge</command>.
 </para>
 
 <para>
 Den viste <filename>.rhosts</filename>-fil vil betyde, at du fra
-maskinen "hven" som brugeren "tyge", godt må komme ind på bohr
-som "tyge", uden adgangskode. Det kræver, at brugeren findes på begge
-maskiner, og ".rhosts" filen skal ligge i brugerens hjemmekatalog på
-den maskine, man prøver at logge ind på. Det er nemt og giver
+maskinen "hven" som brugeren "tyge", godt mÃ¥ komme ind pÃ¥ bohr
+som "tyge", uden adgangskode. Det krÃ¦ver, at brugeren findes pÃ¥ begge
+maskiner, og ".rhosts" filen skal ligge i brugerens hjemmekatalog pÃ¥
+den maskine, man prÃ¸ver at logge ind pÃ¥. Det er nemt og giver
 lynhurtig adgang til, at man hopper fra maskine til maskine og laver
 meget effektive arbejdsgange. Det lyder smart, men medaljen har en
-bagside. En med root-adgang på maskinen "nottingham" (eller andre
-maskiner i netværket) kan aflytte rsh/rlogin netværkstrafik et stykke
+bagside. En med root-adgang pÃ¥ maskinen "nottingham" (eller andre
+maskiner i netvÃ¦rket) kan aflytte rsh/rlogin netvÃ¦rkstrafik et stykke
 tid, og derved finde ud af fra hvilken maskine og med hvilket bruger
 navn, man kan logge ind direkte.  Derefter kan man med lidt snilde
-sætte maskinen "nottingham" lidt anderledes op, så "bohr" tror, at
+sÃ¦tte maskinen "nottingham" lidt anderledes op, sÃ¥ "bohr" tror, at
 den er "hven".
 </para>
 
 <para>
-Der kan imidlertid være situationer, hvor det kan virke mere sikkert
+Der kan imidlertid vÃ¦re situationer, hvor det kan virke mere sikkert
 at lade en bruger logge ind uden adgangskode fra en kendt host end at
 lade brugeren have en adgangskode. Har man tillid til sit interne
-netværk, og er det nødvendigt, at nogle brugere kan logge på en udsat
-maskine, kan man vælge, at disse brugere ikke har nogen adgangskode på
-den udsatte maskine.  I stedet får de en stjerne ("*") i
+netvÃ¦rk, og er det nÃ¸dvendigt, at nogle brugere kan logge pÃ¥ en udsat
+maskine, kan man vÃ¦lge, at disse brugere ikke har nogen adgangskode pÃ¥
+den udsatte maskine.  I stedet fÃ¥r de en stjerne ("*") i
 <filename>/etc/passwd</filename>, der hvor adgangskoden normalt ville
-stå.  Dette vil forhindre dem i at logge ind fra andre maskiner end
+stÃ¥.  Dette vil forhindre dem i at logge ind fra andre maskiner end
 dem, der er angivet i deres <filename>~/.rhosts</filename> fil i deres
-hjemmekatalog på den udsatte maskine. Når en bruger ikke har en
-adgangskode, kan man ikke bryde ind på den udefra ved at gætte eller
-knække adgangskoden. Men kan kun logge ind som denne bruger, hvis man
+hjemmekatalog pÃ¥ den udsatte maskine. NÃ¥r en bruger ikke har en
+adgangskode, kan man ikke bryde ind pÃ¥ den udefra ved at gÃ¦tte eller
+knÃ¦kke adgangskoden. Men kan kun logge ind som denne bruger, hvis man
 kan overbevise maskinen om, at man logger ind fra en betroet
-maskine. Der kan i øvrigt læses mere om adgangskodebeskyttelse og
-håndtering i <xref linkend="root-access"/>.
+maskine. Der kan i Ã¸vrigt lÃ¦ses mere om adgangskodebeskyttelse og
+hÃ¥ndtering i <xref linkend="root-access"/>.
 </para>
 
 <para>
@@ -523,22 +523,22 @@ hver login sendes adgangskoder i klar tekst over nettet. Hvis der er
 <filename>.rhosts</filename>-filer, bliver der slet ikke sendt
 adgangskoder over nettet - i stedet for at give sin adgangskode skal man
 logge ind fra en betroet host. Ingen kan nu opsnappe adgangskoder - til
-gengæld kan de udgive sig for at være den betroede host.  Stoler man
-ikke på sit interne netværk, eller er nogen <emphasis>sluppet
-ind</emphasis>, er begge dele nok lige dårligt.
+gengÃ¦ld kan de udgive sig for at vÃ¦re den betroede host.  Stoler man
+ikke pÃ¥ sit interne netvÃ¦rk, eller er nogen <emphasis>sluppet
+ind</emphasis>, er begge dele nok lige dÃ¥rligt.
 </para>
 
 <para>
 Vi vil anbefale, at man i stedet for <command>rlogin</command> bruger et program, der 
-krypterer login såvel som selve dataoverførslen, som f.eks. SSH giver
+krypterer login sÃ¥vel som selve dataoverfÃ¸rslen, som f.eks. SSH giver
 mulighed for.
 </para>
 
 <para>
 Som systemadministrator kan du se om dine brugere har
-<filename>.rhosts</filename> filer, og hvis det ikke er ønsket, kan du
-slette dem (og skælde brugeren ud).  Hvis brugerne har hjemmekataloger
-under <filename>/home/</filename>, så kan dette gøres med
+<filename>.rhosts</filename> filer, og hvis det ikke er Ã¸nsket, kan du
+slette dem (og skÃ¦lde brugeren ud).  Hvis brugerne har hjemmekataloger
+under <filename>/home/</filename>, sÃ¥ kan dette gÃ¸res med
 </para>
 
 <screen>
@@ -556,16 +556,16 @@ Hvis man samtidigt vil slette de fundne .rhosts filer kan man anvende
 
 <para>
 Det er enklere at disable brugernes egne
-<filename>.rhosts</filename>-filer ved, at man tilføjer parameteren
+<filename>.rhosts</filename>-filer ved, at man tilfÃ¸jer parameteren
 <filename>-l</filename> efter <filename>in.rshd</filename> i filen
-<filename>/etc/inetd.conf</filename> og genstarter inetd-dæmonen. 
+<filename>/etc/inetd.conf</filename> og genstarter inetd-dÃ¦monen. 
 </para>
 
 <para>
 Et andet argument imod at tillade ".rhosts"-filer er, at brugeren kan
-komme til at køre et program, som skriver til en fil uden hans viden.
+komme til at kÃ¸re et program, som skriver til en fil uden hans viden.
 Filen kunne "~/.rhosts" og dermed give adgang til en
-ekstern bruger, som ikke behøver at have en konto på maskinen.
+ekstern bruger, som ikke behÃ¸ver at have en konto pÃ¥ maskinen.
 </para>
 
 
@@ -573,18 +573,18 @@ ekstern bruger, som ikke behøver at have en konto på maskinen.
 Et alternativ til "~/.rhosts" metoden er "hosts level
 equivalence" via filen "/etc/hosts.equiv". Dine brugere har
 ikke adgang til denne fil, og kun root kan rette i den. Root kan
-vælge at sætte en række hostnavne ind i denne fil eller evt. bare et
+vÃ¦lge at sÃ¦tte en rÃ¦kke hostnavne ind i denne fil eller evt. bare et
 plus. Det betyder, at disse hosts (+ betyder alle maskiner)
-har adgang til at udføre <command>rlogin</command> og rsh kommandoer uden adgangskode. Dette
-gælder alle brugere (dog ikke root) - brugeren skal dog findes på
-begge maskiner. Filen "/etc/hosts.equiv" kan være en bekvem løsning,
-men den er en bombe under systemsikkerheden - find en anden løsning,
-hvis du har et åbent eller halvåbent netværk.
+har adgang til at udfÃ¸re <command>rlogin</command> og rsh kommandoer uden adgangskode. Dette
+gÃ¦lder alle brugere (dog ikke root) - brugeren skal dog findes pÃ¥
+begge maskiner. Filen "/etc/hosts.equiv" kan vÃ¦re en bekvem lÃ¸sning,
+men den er en bombe under systemsikkerheden - find en anden lÃ¸sning,
+hvis du har et Ã¥bent eller halvÃ¥bent netvÃ¦rk.
 </para>
 
 <para>
 Her i <ulink url="http://www.userfriendly.org/cartoons/archives/97dec/19971212.html">User Friendly fra den 12. december 1997</ulink> kan Greg fra Columbia Internet 
-aflytte netværkstrafikken i forsvarsministeriet...
+aflytte netvÃ¦rkstrafikken i forsvarsministeriet...
 </para>
 
 <figure id="uf16x122-fig" float="1">
@@ -593,42 +593,42 @@ aflytte netværkstrafikken i forsvarsministeriet...
 </figure>  
 
 <para>
-Fortsættelsen kan findes på <ulink url="http://www.userfriendly.org/cartoons/archives/97dec/19971216.html">http://www.userfriendly.org/cartoons/archives/97dec/19971216.html</ulink> :-)
+FortsÃ¦ttelsen kan findes pÃ¥ <ulink url="http://www.userfriendly.org/cartoons/archives/97dec/19971216.html">http://www.userfriendly.org/cartoons/archives/97dec/19971216.html</ulink> :-)
 </para>
 </sect2>
 </sect1>
 
 <sect1 id="sikker-net-trafik">
-<title>Nem og sikker netværkstrafik</title>
+<title>Nem og sikker netvÃ¦rkstrafik</title>
 <indexterm><primary>SSH</primary></indexterm>
 <indexterm><primary>OpenSSH</primary></indexterm>
 <indexterm><primary>Secure Shell</primary></indexterm>
-<indexterm><primary>Kommunikation over netværk</primary><secondary>sikkert</secondary></indexterm>
+<indexterm><primary>Kommunikation over netvÃ¦rk</primary><secondary>sikkert</secondary></indexterm>
 
 
 <para>
-Hvis der er risiko for, at andre lytter med på netværkstrafikken,
+Hvis der er risiko for, at andre lytter med pÃ¥ netvÃ¦rkstrafikken,
 er der behov for erstatningsprogrammer for <command>telnet</command>,
-ftp og <command>rlogin</command>. Samtidig ønsker vi stadig at kunne afvikle programmer fra en
-maskine og se resultater på en anden, naturligvis også de grafiske
-programmer. Med andre ord ønsker vi samme funktionalitet - men med sikkerheden
+ftp og <command>rlogin</command>. Samtidig Ã¸nsker vi stadig at kunne afvikle programmer fra en
+maskine og se resultater pÃ¥ en anden, naturligvis ogsÃ¥ de grafiske
+programmer. Med andre ord Ã¸nsker vi samme funktionalitet - men med sikkerheden
 i orden.
 </para>
 
 <para>
 Der findes flere sikre alternativer til de gamle, ukrypterede protokoller.
-Vi vil mest beskæftige os med SSH, men der findes også andre muligheder.
-Et alternativ til <command>telnet</command> er stelnet, som står for secure telnet. Programmet 
-baserer sig på SSL (Secure Sockets Layer), som er en måde at lave 
-krypterering af datatrafikken. Kombinationen af stelnet og SSL er ikke så 
-udbredt som SSH, og det er ikke så nemt at sætte op som SSH. 
-Programmet stelnet kan findes på 
+Vi vil mest beskÃ¦ftige os med SSH, men der findes ogsÃ¥ andre muligheder.
+Et alternativ til <command>telnet</command> er stelnet, som stÃ¥r for secure telnet. Programmet 
+baserer sig pÃ¥ SSL (Secure Sockets Layer), som er en mÃ¥de at lave 
+krypterering af datatrafikken. Kombinationen af stelnet og SSL er ikke sÃ¥ 
+udbredt som SSH, og det er ikke sÃ¥ nemt at sÃ¦tte op som SSH. 
+Programmet stelnet kan findes pÃ¥ 
 <ulink url="http://www.crufty.net/ftp/pub/sjg/">
 http://www.crufty.net/ftp/pub/sjg/</ulink>
-og selve krypteringslaget SSL til Linux kan findes på <ulink
+og selve krypteringslaget SSL til Linux kan findes pÃ¥ <ulink
 url="http://www.psy.uq.oz.au/~ftp/Crypto/">
 http://www.psy.uq.oz.au/~ftp/Crypto/</ulink>.
-Denne sidste URL har også en hel del dokumentation.
+Denne sidste URL har ogsÃ¥ en hel del dokumentation.
 </para>
 
 <para>
@@ -639,8 +639,8 @@ internationalt udbredte og anvendte <command>telnet</command>-kode.
 </para>
 
 <para>
-Et andet alternativ til <command>telnet</command> og ftp, som er på vej, er SRP. Se mere
-om SRP på 
+Et andet alternativ til <command>telnet</command> og ftp, som er pÃ¥ vej, er SRP. Se mere
+om SRP pÃ¥ 
 <ulink url="http://srp.stanford.edu/">
 http://srp.stanford.edu/</ulink>.
 </para>
@@ -658,50 +658,50 @@ SSH har bl.a. den store fordel fremfor stelnet, at grafiske vinduer
 Det er et reelt problem, at den oprindelige kommercielle SSH ikke er
 <ulink url="http://www.opensource.org/">Open Source</ulink>, og derfor er
 der startet et GNU-projekt under navnet PSST for at genskrive koden.
-Du kan finde mere information om dette på <ulink
+Du kan finde mere information om dette pÃ¥ <ulink
 url="http://www.net.lut.ac.uk/psst">http://www.net.lut.ac.uk/psst</ulink>.
-PSST's hjemmeside bør følges fra tid til anden, men status i øjeblikket
+PSST's hjemmeside bÃ¸r fÃ¸lges fra tid til anden, men status i Ã¸jeblikket
 (April 2003) er en fungerende version 1.5.1, og den siges at
-fungere sammen med OpenSSH. LSH kører kun ssh-protokol version 2,
+fungere sammen med OpenSSH. LSH kÃ¸rer kun ssh-protokol version 2,
 men roser sig af at have god kryptering og bedre random-generator
-for maskiner uden /dev/random. For at køre sammen med ssh kræves
-nogle scripts, fordi filformater for nøglefiler ikke er det
+for maskiner uden /dev/random. For at kÃ¸re sammen med ssh krÃ¦ves
+nogle scripts, fordi filformater for nÃ¸glefiler ikke er det
 samme.
 </para>
 
 <para>
 En anden implementation af SSH-protokollen er OpenSSH,
 som er fri og er lavet af OpenBSD-folkene. Et separat hold
-programmører sørger for at lave en version for andre platforme,
+programmÃ¸rer sÃ¸rger for at lave en version for andre platforme,
 den portable version.  OpenSSH er allerede lagt ind i
-OpenBSD-distributionen, der har ry for at være særdeles
+OpenBSD-distributionen, der har ry for at vÃ¦re sÃ¦rdeles
 sikker. OpenSSH er ligeledes at finde i de fleste
 Linux-distributioner.  Hjemmesiden for OpenSSH er 
 <ulink url="http://www.openssh.com/">http://www.openssh.com/</ulink>.
-OpenSSH er baseret på OpenSSL, som skal oversættes først (hvis
-man vil bygge sin egen) Læs den medfølgende dokumentation, da der
+OpenSSH er baseret pÃ¥ OpenSSL, som skal oversÃ¦ttes fÃ¸rst (hvis
+man vil bygge sin egen) LÃ¦s den medfÃ¸lgende dokumentation, da der
 er nogle options for library generation, som ikke er helt
 trivielle. Den kan hentes under "support" samme
 sted, som OpenSSH findes, eller direkte fra <ulink
 url="http://www.openssl.org/">http://www.openssl.org/</ulink>.
-Man kan enten oversætte programmerne selv eller installere de
+Man kan enten oversÃ¦tte programmerne selv eller installere de
 allerede oversatte RPM-pakker.  
 </para>
 
 <para>
 OpenSSH er en godt projekt. Den omfatter en server, en klient og
-omfattende dokumentation af opsætningen. Den kan køre
+omfattende dokumentation af opsÃ¦tningen. Den kan kÃ¸re
 protokol version 2 og version 1. Hvis den er konfigureret til
 det, kan den endda starte rsh op, hvis alt andet fejler.
 Der er glimrende support fra OpenBSD teamet og det virker.
-Der er versioner af OpenSSH til alle Unix varianter også Linux, så i
-praksis er der ingen grund til at vælge den kommercielle SSH længere i
+Der er versioner af OpenSSH til alle Unix varianter ogsÃ¥ Linux, sÃ¥ i
+praksis er der ingen grund til at vÃ¦lge den kommercielle SSH lÃ¦ngere i
 forhold til OpenSSH.
 </para>
 
 <para>
-Har du problemer med SSH, så læs 
-<ulink url="http://sysadmin.oreilly.com/news/sshtips_0101.html">http://sysadmin.oreilly.com/news/sshtips_0101.html</ulink>. Der er et par gode råd.
+Har du problemer med SSH, sÃ¥ lÃ¦s 
+<ulink url="http://sysadmin.oreilly.com/news/sshtips_0101.html">http://sysadmin.oreilly.com/news/sshtips_0101.html</ulink>. Der er et par gode rÃ¥d.
 </para>
 
   <sect2 id="installation-af-openssh">
@@ -715,40 +715,40 @@ Har du problemer med SSH, så læs
    <para>
     Hvis dit system ikke kommer med SSH-server- og -klientprogrammer, kan du
     hente kildeteksten til OpenSSH kan hentes fra <ulink
-    url="http://www.openssh.com/">http://www.openssh.com/</ulink>.  Bemærk at
-    OpenSSH-udgaver før 3.4 og OpenSSL-udgaver før 0.9.6g har kendte
+    url="http://www.openssh.com/">http://www.openssh.com/</ulink>.  BemÃ¦rk at
+    OpenSSH-udgaver fÃ¸r 3.4 og OpenSSL-udgaver fÃ¸r 0.9.6g har kendte
     sikkerhedsfejl.
     <footnote>
      <para>
-      Hvis din distribution kører med ældre udgaver af OpenSSH og/eller OpenSSL
+      Hvis din distribution kÃ¸rer med Ã¦ldre udgaver af OpenSSH og/eller OpenSSL
       er det muligt at de selv har lukket sikkerhedshullerne.
      </para>
     </footnote>
-    Her installationen vist med openssh-3.4 og det fungerer på samme måde med
+    Her installationen vist med openssh-3.4 og det fungerer pÃ¥ samme mÃ¥de med
     nyeste version.
    </para>
 
 <para>
 Du kan hente tar-filer, som du selv kan
-oversætte, eller du kan få OpenSSH som RPM-filer. Som RPM-filer, skal
+oversÃ¦tte, eller du kan fÃ¥ OpenSSH som RPM-filer. Som RPM-filer, skal
 du bruge openssh-*.i386.rpm, openssh-clients-*.i386.rpm og
-openssh-server-*.i386.rpm, hvor * betyder et versionsnummer, såsom
-3.4.0. Du skal også bruge zlib, som sikkert allerede er installeret på
-din Linux-maskine. Er dette ikke tilfældet (se om du får fejl), så kan dette bibliotek hentes fra 
-<ulink url="http://www.freesoftware.com/pub/infozip/zlib/">http://www.freesoftware.com/pub/infozip/zlib/</ulink>. Igen kan du vælge mellem tar-filer og RPM.
+openssh-server-*.i386.rpm, hvor * betyder et versionsnummer, sÃ¥som
+3.4.0. Du skal ogsÃ¥ bruge zlib, som sikkert allerede er installeret pÃ¥
+din Linux-maskine. Er dette ikke tilfÃ¦ldet (se om du fÃ¥r fejl), sÃ¥ kan dette bibliotek hentes fra 
+<ulink url="http://www.freesoftware.com/pub/infozip/zlib/">http://www.freesoftware.com/pub/infozip/zlib/</ulink>. Igen kan du vÃ¦lge mellem tar-filer og RPM.
 </para>
 
 <indexterm><primary>OpenSSH</primary><secondary>OpenSSL</secondary></indexterm>
 <indexterm><primary>OpenSSL</primary><secondary>OpenSSH</secondary></indexterm>
 
 <para> 
-OpenSSH anvender OpenSSL - et værktøj der implementerer Secure
-Socket Layer (SSL) til at lave stærk kryptering af transportlaget. 
+OpenSSH anvender OpenSSL - et vÃ¦rktÃ¸j der implementerer Secure
+Socket Layer (SSL) til at lave stÃ¦rk kryptering af transportlaget. 
 </para>
 
 <para>
 Fra RedHat-7.0 og senere er ssh en del af normal installation; det samme
-gælder de fleste andre Linux distributioner.
+gÃ¦lder de fleste andre Linux distributioner.
 </para>
 
 <screen>
@@ -761,22 +761,22 @@ gælder de fleste andre Linux distributioner.
 </screen>
 
 <para>
-For at undgå de vanvittig lange indtastninger bruger man
-selvfølgelig tabulator tasten, når man har tastet de første par
+For at undgÃ¥ de vanvittig lange indtastninger bruger man
+selvfÃ¸lgelig tabulator tasten, nÃ¥r man har tastet de fÃ¸rste par
 tegn ind, idet shell'en selv kan finde resten af filnavnet. Hvis
-der er flere filnavne der ligner, så taster man lidt flere tegn,
-og så igen tabulator.
+der er flere filnavne der ligner, sÃ¥ taster man lidt flere tegn,
+og sÃ¥ igen tabulator.
 </para>
 
 <para>
-Installerede du på denne måde, kan du springe det næste over og gå
-direkte frem til at generere bruger-nøgler med <command>ssh-keygen</command>.
-Vil du installere via tar-filer, så er det ret nemt, men der er et par
+Installerede du pÃ¥ denne mÃ¥de, kan du springe det nÃ¦ste over og gÃ¥
+direkte frem til at generere bruger-nÃ¸gler med <command>ssh-keygen</command>.
+Vil du installere via tar-filer, sÃ¥ er det ret nemt, men der er et par
 skridt du skal igennem.
 </para>
 
 <para>
-Først "zlib", hvis dette ikke er installeret (tjek om
+FÃ¸rst "zlib", hvis dette ikke er installeret (tjek om
 <filename>/usr/lib/libz.so</filename> findes).
 </para>
 
@@ -790,7 +790,7 @@ Først "zlib", hvis dette ikke er installeret (tjek om
 </screen>
 
 <para>
-Dernæst skal OpenSSL installeres. Den har en variant af
+DernÃ¦st skal OpenSSL installeres. Den har en variant af
 configure. Den er bl.a. god til at kryds-kompilere.  Det nemmeste
 er at bruge kommandoen <command>./config </command> idet den
 foretager bestemmelse af maskintype og system, og derefter
@@ -808,7 +808,7 @@ starter ./Configure.
 </screen>
 
 <para>
-Og slutteligt skal OpenSSH oversættes og installeres
+Og slutteligt skal OpenSSH oversÃ¦ttes og installeres
 </para>
 
 <screen>
@@ -822,23 +822,23 @@ Og slutteligt skal OpenSSH oversættes og installeres
 </screen>
 
 <para>
-Det er normalt at OpenSSH vil installere opsætning i
+Det er normalt at OpenSSH vil installere opsÃ¦tning i
 <filename>/usr/local/etc</filename>, men Linux-folk vil oftest gemme
-opsætning til SSH i <filename>/etc/ssh</filename> - dette gøres
+opsÃ¦tning til SSH i <filename>/etc/ssh</filename> - dette gÃ¸res
 med option <command>sysconfdir</command> (og to minusser foran).
 </para>
 
 <para>
 Kommandoen <command>make host-key</command> installerer RSA og DSA
-nøgler for din maskine. RSA anvendes af SSH version 1, mens DSA er en
+nÃ¸gler for din maskine. RSA anvendes af SSH version 1, mens DSA er en
 nyere version, der anvendes i SSH2 protokollen. 
 </para>
 
 <para>
-Vi mangler stadig få ting, hvis du har oversat SSH selv (ikke ved
-RPM). Mange Linux-systemer anvender PAM til at styre login på
+Vi mangler stadig fÃ¥ ting, hvis du har oversat SSH selv (ikke ved
+RPM). Mange Linux-systemer anvender PAM til at styre login pÃ¥
 maskinen. For Red Hat og SuSE skal du kopiere den generelle PAM-ssh fil til
-/etc/pam.d under navnet sshd. Samme idé anvendes nok af de andre store
+/etc/pam.d under navnet sshd. Samme idÃ© anvendes nok af de andre store
 Linux-distributioner.
 </para>
 
@@ -851,7 +851,7 @@ Linux-distributioner.
 Har du oversat OpenSSH selv, mangler du stadig et start/stop
 script, som kan starte OpenSSH efter reboot. Som regel finder man
 et af de simple start/stop scripts i /etc/init.d og kopierer,
-retter til. I OpenSSH distributionen er der nogle eksempler på
+retter til. I OpenSSH distributionen er der nogle eksempler pÃ¥
 start/stop-scripts. Du kan for SuSE kopiere
 </para>
 
@@ -879,8 +879,8 @@ For SuSE skal du nok rette i filen en sti fra
 </para>
 
 <para>
-Nu skal vi prøve at start SSH dæmonen "sshd", så man kan logge ind på
-maskinen udefra. For Red Hat køres 
+Nu skal vi prÃ¸ve at start SSH dÃ¦monen "sshd", sÃ¥ man kan logge ind pÃ¥
+maskinen udefra. For Red Hat kÃ¸res 
 </para>
 
 <screen>
@@ -896,7 +896,7 @@ eller
 </screen>
 
 <para>
-og tilsvarende for SuSE køres
+og tilsvarende for SuSE kÃ¸res
 </para>
 
 <screen>
@@ -904,7 +904,7 @@ og tilsvarende for SuSE køres
 </screen>
 
 <para>
-Tjek at SSH dæmonen (dvs. serveren) kører ved at skrive
+Tjek at SSH dÃ¦monen (dvs. serveren) kÃ¸rer ved at skrive
 <command>telnet localhost 22</command>
 </para>
 
@@ -917,37 +917,37 @@ SSH-1.99-OpenSSH_3.4
 </sect2>
 
 <sect2 id="Opsaetning-af-openssh">
-<title>Brugeropsætning af OpenSSH</title>
-<indexterm><primary>OpenSSH</primary><secondary>Opsætning</secondary></indexterm>
+<title>BrugeropsÃ¦tning af OpenSSH</title>
+<indexterm><primary>OpenSSH</primary><secondary>OpsÃ¦tning</secondary></indexterm>
 
 <para>
-Hver bruger skal have sit eget sæt af privat/offentlig nøgle. Den
-private må aldrig sendes via netværk, idet den kan dekryptere
-datatrafik. Den offentlige nøgle anvendes til at kryptere data med, og
-den kan man så distribuere til andre maskiner, man skal kunne logge
-ind på.
+Hver bruger skal have sit eget sÃ¦t af privat/offentlig nÃ¸gle. Den
+private mÃ¥ aldrig sendes via netvÃ¦rk, idet den kan dekryptere
+datatrafik. Den offentlige nÃ¸gle anvendes til at kryptere data med, og
+den kan man sÃ¥ distribuere til andre maskiner, man skal kunne logge
+ind pÃ¥.
 </para>
 
 <para>
-Den fjerne maskine (remote-maskinen) kan nu kryptere trafikken på
-en måde, så kun os, der udleverede den offentlige nøgle, kan
-afkryptere datastrømmen. Dertil bruger vi naturligvis den private
-nøgle. Det er derfor, denne privat-nøgle ikke må gå over nettet.
+Den fjerne maskine (remote-maskinen) kan nu kryptere trafikken pÃ¥
+en mÃ¥de, sÃ¥ kun os, der udleverede den offentlige nÃ¸gle, kan
+afkryptere datastrÃ¸mmen. Dertil bruger vi naturligvis den private
+nÃ¸gle. Det er derfor, denne privat-nÃ¸gle ikke mÃ¥ gÃ¥ over nettet.
 </para>
 
 <para>
-Brugeren kan selv generere nøgler til login med løsen i
+Brugeren kan selv generere nÃ¸gler til login med lÃ¸sen i
 stedet for at bruge en almindelig adgangskode til at logge ind. Det anses
-for mere sikkert, fordi man ikke kan logge ind på hvilken som
-helst konto selv om man skulle have skaffet sig den tilhørende
+for mere sikkert, fordi man ikke kan logge ind pÃ¥ hvilken som
+helst konto selv om man skulle have skaffet sig den tilhÃ¸rende
 adgangskode.
 </para>
 
 <para>
-Man kører <command>ssh-keygen</command> som generer en identitetsnøgle, og
-undervejs kan man hertil selv vælge et løsen &ndash; svarende
-til en adganskode, men et, som kan være meget langt.  Lav det
-tilpas kryptisk, dog på en måde, så du har nemt ved at huske det.
+Man kÃ¸rer <command>ssh-keygen</command> som generer en identitetsnÃ¸gle, og
+undervejs kan man hertil selv vÃ¦lge et lÃ¸sen &ndash; svarende
+til en adganskode, men et, som kan vÃ¦re meget langt.  Lav det
+tilpas kryptisk, dog pÃ¥ en mÃ¥de, sÃ¥ du har nemt ved at huske det.
 </para>
 
 <screen>
@@ -964,18 +964,18 @@ ea:20:20:ae:b3:39:6f:d9:1b:a2:ef:02:0c:05:c5:fb tyge@hven
 
 
 <para> 
-Når du kører
-<command>ssh-keygen</command> spørges du om du vil gemme i default
+NÃ¥r du kÃ¸rer
+<command>ssh-keygen</command> spÃ¸rges du om du vil gemme i default
 stedet <filename>/home/tyge/.ssh/id_dsa</filename>. Dette giver dig
-mulighed for at have mere end et sæt nøgler. Din private nøgle gemmes
-i <filename>$HOME/.ssh/id_dsa</filename> (for DSA nøglen). Tilsvarende
-er den offentlige nøgle gemt med samme filnavn med et ".pub" tilføjet.
+mulighed for at have mere end et sÃ¦t nÃ¸gler. Din private nÃ¸gle gemmes
+i <filename>$HOME/.ssh/id_dsa</filename> (for DSA nÃ¸glen). Tilsvarende
+er den offentlige nÃ¸gle gemt med samme filnavn med et ".pub" tilfÃ¸jet.
 </para>
 
 <para>
-Lad os først se på et par af de filer, der blev installeret. Der er
+Lad os fÃ¸rst se pÃ¥ et par af de filer, der blev installeret. Der er
 kommet filer tre steder. (1) /etc/ssh, (2) /etc/init.d/, (3)
-/usr/sbin/sshd og så også i hjemmekataloget, ~/.ssh  .
+/usr/sbin/sshd og sÃ¥ ogsÃ¥ i hjemmekataloget, ~/.ssh  .
 </para>
 
 
@@ -991,25 +991,25 @@ kommet filer tre steder. (1) /etc/ssh, (2) /etc/init.d/, (3)
 </screen>
 
 <para>
-Filerne <filename>/etc/ssh/*</filename> er opsætningsfiler, der styrer
-ssh opsætningen. Det er kun <filename>/etc/ssh/sshd_config</filename>,
+Filerne <filename>/etc/ssh/*</filename> er opsÃ¦tningsfiler, der styrer
+ssh opsÃ¦tningen. Det er kun <filename>/etc/ssh/sshd_config</filename>,
 du evt. skal rette i. <footnote><para>Hvis du har installeret fra
 source-tar-balls er disse filer default lagt i
 /usr/local/etc</para></footnote>
-F.eks. kan du ændre "PermitRootLogin yes"
-til "PermitRootLogin no", hvis du mener, at root ikke må logge ind via
-ssh. Det kan være en god idé at forbyde root remote login i det hele taget.
-Tilsvarende kan du forbyde tomme adgangskoder ved at ændre
+F.eks. kan du Ã¦ndre "PermitRootLogin yes"
+til "PermitRootLogin no", hvis du mener, at root ikke mÃ¥ logge ind via
+ssh. Det kan vÃ¦re en god idÃ© at forbyde root remote login i det hele taget.
+Tilsvarende kan du forbyde tomme adgangskoder ved at Ã¦ndre
 "PermitEmptyPasswords yes" til "PermitEmptyPasswords no" - vent lige
-med at lave disse ændringer til du har fået ssh til at virke.
+med at lave disse Ã¦ndringer til du har fÃ¥et ssh til at virke.
 </para>
 
 
 <para>
-Vi skal også lige nævne, at ssh forbindelser normalt ikke styres via
-inetd-systemet, som du i øvrigt kan finde beskrevet tidligere i 
-<xref linkend="services"/>. Grunden er, at det ville være for langsomt, idet
-der ved opstart af sshd skal genereres en server-nøgle. Dette kan
+Vi skal ogsÃ¥ lige nÃ¦vne, at ssh forbindelser normalt ikke styres via
+inetd-systemet, som du i Ã¸vrigt kan finde beskrevet tidligere i 
+<xref linkend="services"/>. Grunden er, at det ville vÃ¦re for langsomt, idet
+der ved opstart af sshd skal genereres en server-nÃ¸gle. Dette kan
 tage flere sekunder for hver opstart.
 </para>
 </sect2>
@@ -1019,7 +1019,7 @@ tage flere sekunder for hver opstart.
 <indexterm><primary>OpenSSH</primary><secondary>Brug af</secondary></indexterm>
 <para>
 Hvis sshd er startet op, er alt klar til at kommunikere sikkert, 
-også over usikre netværk. Start med at skrive
+ogsÃ¥ over usikre netvÃ¦rk. Start med at skrive
 </para>
 
 <screen>
@@ -1029,23 +1029,23 @@ Are you sure you want to continue connecting (yes/no)?
 </screen>
 
 <para>
-Første gang du kobler til en fremmed maskine, der ligeledes har fået
-installeret ssh, skal ssh acceptere at udveksle nøgler med en
-ukendt maskine. Dette spørgsmål skal du således acceptere, og næste
+FÃ¸rste gang du kobler til en fremmed maskine, der ligeledes har fÃ¥et
+installeret ssh, skal ssh acceptere at udveksle nÃ¸gler med en
+ukendt maskine. Dette spÃ¸rgsmÃ¥l skal du sÃ¥ledes acceptere, og nÃ¦ste
 gang du anvender samme fremmede maskine, skal du ikke igennem dette
-spørgsmål. Efter at have svaret "yes" skal du aflevere din
-almindelige adgangskode, og du er så logget ind på maskinen. Dette kan du
-fortsætte med, men hvis du vil højne sikkerheden yderligere, bør du
-gemme din offentlige nøgle på fjernmaskinen. Har du denne nøgle gemt, 
+spÃ¸rgsmÃ¥l. Efter at have svaret "yes" skal du aflevere din
+almindelige adgangskode, og du er sÃ¥ logget ind pÃ¥ maskinen. Dette kan du
+fortsÃ¦tte med, men hvis du vil hÃ¸jne sikkerheden yderligere, bÃ¸r du
+gemme din offentlige nÃ¸gle pÃ¥ fjernmaskinen. Har du denne nÃ¸gle gemt, 
 kan man ikke logge ind med din adgangskode, men kun med dit lange og 
-kryptiske løsen.
+kryptiske lÃ¸sen.
 </para>
 
 <para>
-Hvis du ikke fik adgang til maskinen, så kan der være flere grunde.
+Hvis du ikke fik adgang til maskinen, sÃ¥ kan der vÃ¦re flere grunde.
 Enten kan det skyldes, at du bruger den forkerte protokol. Nyere versioner
-af OpenSSH kan både køre SSH version 1 og 2. Version 2 og DSA-nøglen hænger
-sammen som nævnt ovenfor. 
+af OpenSSH kan bÃ¥de kÃ¸re SSH version 1 og 2. Version 2 og DSA-nÃ¸glen hÃ¦nger
+sammen som nÃ¦vnt ovenfor. 
 </para>
 
 <indexterm><primary>OpenSSH</primary><secondary>Version 2</secondary></indexterm>
@@ -1060,17 +1060,17 @@ sammen som nævnt ovenfor.
 
 <para>
 I dette eksempel tvinges OpenSSH til at anvende SSH version 2, og 
-brugeren tyge prøver at logge ind på maskinen bohr med brugernavn tuck.
+brugeren tyge prÃ¸ver at logge ind pÃ¥ maskinen bohr med brugernavn tuck.
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> Du bør udelukkende anvende SSH2 (SSH
-version 2); skriv følgende ind i din
+<emphasis>Tip:</emphasis> Du bÃ¸r udelukkende anvende SSH2 (SSH
+version 2); skriv fÃ¸lgende ind i din
 <filename>~/.ssh/config</filename>
 </para>
 
 <programlisting>
-# Tillad også grafiske programmer gennem SSH-forbindelse
+# Tillad ogsÃ¥ grafiske programmer gennem SSH-forbindelse
 ForwardX11 yes
 # Anvend SSH2-identitet
 IdentityFile ~/.ssh/id_dsa
@@ -1085,11 +1085,11 @@ Log ud ved at skrive exit (eller trykke Ctrl-D) for at komme tilbage
 til din egen maskine. Kopier nu din public key fra din egen maskine
 (hven) til fjernmaskinen og gem den under
 <filename>~/.ssh/authorized_keys</filename> (for SSH1, dvs. RSA
-nøglen) og <filename>~/.ssh/authorized_keys2</filename> (for SSH2,
-dvs. DSA nøglen). Ingen andre end dig skal kunne læse den fil du
+nÃ¸glen) og <filename>~/.ssh/authorized_keys2</filename> (for SSH2,
+dvs. DSA nÃ¸glen). Ingen andre end dig skal kunne lÃ¦se den fil du
 laver. Denne kopiering laver vi med en ny kommando "scp" (secure
-copy) eller beder systemadministratoren at lægge filen ind hvis du
-ikke kan få adgang.
+copy) eller beder systemadministratoren at lÃ¦gge filen ind hvis du
+ikke kan fÃ¥ adgang.
 </para>
 
 <screen>
@@ -1098,11 +1098,11 @@ ikke kan få adgang.
 </screen>
 
 <para>
-Nu skal du lave den sidste opsætning på bohr. Du laver kataloget
-<filename>~/.ssh</filename>, hvor du gemmer din offentlige nøgle, og
-sikrer, at andre ikke kan læse denne. Dit hjemmekatalog skal andre
+Nu skal du lave den sidste opsÃ¦tning pÃ¥ bohr. Du laver kataloget
+<filename>~/.ssh</filename>, hvor du gemmer din offentlige nÃ¸gle, og
+sikrer, at andre ikke kan lÃ¦se denne. Dit hjemmekatalog skal andre
 heller ikke have lov til at skrive i - denne foranstaltning er altid
-klog, men det er også nødvendig for at din offentlige nøgle
+klog, men det er ogsÃ¥ nÃ¸dvendig for at din offentlige nÃ¸gle
 "id_dsa2.pub" virker efter, at den er kopieret til fjernmaskinens
 "authorized_keys2". Det er en egenskab ved ssh.
 </para>
@@ -1119,11 +1119,11 @@ klog, men det er også nødvendig for at din offentlige nøgle
 </sect2>
 
 <sect2 id="krypteret-data">
-<title>Krypteret dataoverførsel</title>
+<title>Krypteret dataoverfÃ¸rsel</title>
 <para>
 Nu kan du slappe af. Alt er sat op, og du kan uden at skulle
-frygte for netværkssikkerheden logge ind på bohr. F.eks. kan du
-starte et grafik program såsom "xload" ved at skrive
+frygte for netvÃ¦rkssikkerheden logge ind pÃ¥ bohr. F.eks. kan du
+starte et grafik program sÃ¥som "xload" ved at skrive
 </para>
 
 <screen>
@@ -1132,12 +1132,12 @@ Enter passphrase for RSA key 'tyge@bohr': V1 hANDLER me spaghett1
 </screen>
 
 <para>
-Du blev nu mødt af noget nyt igen, idet du skulle skrive dit
-løsen og ikke din adgangskode. Bemærk, at i virkeligheden vises dit
-løsen naturligvis ikke på skærmen.
-<command>xload</command> vil nu køre fra bohr og vises på din egen maskine (hven). 
-Skal du logge ind på bohr, så skriver du blot "ssh bohr", og skal 
-du have udført et program derfra, tilføjer du blot programnavnet til denne
+Du blev nu mÃ¸dt af noget nyt igen, idet du skulle skrive dit
+lÃ¸sen og ikke din adgangskode. BemÃ¦rk, at i virkeligheden vises dit
+lÃ¸sen naturligvis ikke pÃ¥ skÃ¦rmen.
+<command>xload</command> vil nu kÃ¸re fra bohr og vises pÃ¥ din egen maskine (hven). 
+Skal du logge ind pÃ¥ bohr, sÃ¥ skriver du blot "ssh bohr", og skal 
+du have udfÃ¸rt et program derfra, tilfÃ¸jer du blot programnavnet til denne
 ordre. 
 </para>
 
@@ -1168,18 +1168,18 @@ Tilsvarende erstattes ftp med <command>sftp</command>, og scp erstatter rcp
 
 
 <para>
-Hvis du ikke frygter, hvem der kan tilgå din egen maskine, kan du
-få endnu nemmere adgang til de andre maskiner ved, at du en
-gang for alle i den X session, du har igang, giver dit løsen.
+Hvis du ikke frygter, hvem der kan tilgÃ¥ din egen maskine, kan du
+fÃ¥ endnu nemmere adgang til de andre maskiner ved, at du en
+gang for alle i den X session, du har igang, giver dit lÃ¸sen.
 </para>
 
 <indexterm>
-  <primary>SSH-nøgler</primary>
+  <primary>SSH-nÃ¸gler</primary>
   <secondary>huske</secondary>
 </indexterm>
 
 <indexterm>
-  <primary>huske SSH-nøgler</primary>
+  <primary>huske SSH-nÃ¸gler</primary>
 </indexterm>
 
 <indexterm>
@@ -1209,19 +1209,19 @@ Enter passphrase for /home/pto/.ssh/id_dsa:
 
 <para>
 Derefter kan du med ssh fra den terminal logge ind og ud af "bohr" 
-og andre ssh maskiner uden at skulle bruge løsen. Vil du
+og andre ssh maskiner uden at skulle bruge lÃ¸sen. Vil du
 have at alle terminal-vinduer skal kunne dette, skal du rette i din 
 "~/.xsessionrc", "~/.xinitrc" eller
 lignende, hvor din window manager startes op. Er det f.eks. KDE,
-skal du ændre "startkde" til "ssh-agent startkde" og kun en
-enkelt gang køre "ssh-add". Derefter kan du slippe for at indtaste dit 
-løsen i resten af den X session. Brug "ssh-agent" med omtanke.
+skal du Ã¦ndre "startkde" til "ssh-agent startkde" og kun en
+enkelt gang kÃ¸re "ssh-add". Derefter kan du slippe for at indtaste dit 
+lÃ¸sen i resten af den X session. Brug "ssh-agent" med omtanke.
 </para>
 
 <para>
 Tip: Det anbefales at du flytter SSH til en anden port end port
 22 - hvis det kun er dig som benytter denne. Den valgte port kan
-på klienten skrives ind i ~/.ssh/config således at det stadig er
+pÃ¥ klienten skrives ind i ~/.ssh/config sÃ¥ledes at det stadig er
 nemt at logge ind. Eksempel:
 </para>
 
@@ -1244,33 +1244,33 @@ host steno
 En af de (mange) meget elegante ting man kan med SSH (og OpenSSH) er
 at lave en sikker krypteret tunnel gennem en firewall og endda kunne
 transmittere grafiske programmer (X-programmer). Skal man administere
-servere (evt. via grafiske programmer) på et lukket netværk er en
-SSH-server i firewallen yderside en god måde at give adgang til
-netværket hjemmefra (husk dog at følge sikkerhedslisten for den
+servere (evt. via grafiske programmer) pÃ¥ et lukket netvÃ¦rk er en
+SSH-server i firewallen yderside en god mÃ¥de at give adgang til
+netvÃ¦rket hjemmefra (husk dog at fÃ¸lge sikkerhedslisten for den
 SSH-variant der installeres). For at grafiske programmer kan
-transmitteres fra en maskine til en anden via SSH, kræves at man har
+transmitteres fra en maskine til en anden via SSH, krÃ¦ves at man har
 programmet <command>xauth</command> installeret. 
 </para>
 
 
 <para>
 Anvender du ssh, kan andre med sniffit se, at der laves kommunikation
-på port 22, men prøver de at følge netværkstrafikken, kommer der
-ikke login navne, adgangskoder, eller efterfølgende kommandoer i klar
+pÃ¥ port 22, men prÃ¸ver de at fÃ¸lge netvÃ¦rkstrafikken, kommer der
+ikke login navne, adgangskoder, eller efterfÃ¸lgende kommandoer i klar
 tekst - alt er krypteret. Den lille boks i sniffit, som for <command>telnet</command>
-viste login sekvensen med adgangskoder osv., vil med ssh være fyldt med en
-bunke tilfældige tegn uden sammenhæng - kun de to SSH-programmer der har etableret forbindelsen kan i praksis
+viste login sekvensen med adgangskoder osv., vil med ssh vÃ¦re fyldt med en
+bunke tilfÃ¦ldige tegn uden sammenhÃ¦ng - kun de to SSH-programmer der har etableret forbindelsen kan i praksis
 afkode kommunikationen. 
 </para>
 
 <para>
 Lad os vende tilbage til sniffit og se, hvad der med ssh kommer over
-netværket under login via ssh. På næste billede kan vi se, at port 22
-på bohr modtager tekst, der er krypteret og dermed ikke læseligt
-for andre. Igen er det "sniffit -F eth0 -i", som køres. Derefter
-har vi valgt at følge den linje fra 192.168.0.1, som kommer
+netvÃ¦rket under login via ssh. PÃ¥ nÃ¦ste billede kan vi se, at port 22
+pÃ¥ bohr modtager tekst, der er krypteret og dermed ikke lÃ¦seligt
+for andre. Igen er det "sniffit -F eth0 -i", som kÃ¸res. Derefter
+har vi valgt at fÃ¸lge den linje fra 192.168.0.1, som kommer
 ind via port 22 til 192.168.0.2. I det lille vindue kan du se resultatet
-af vilkårlige og almindelige Linux-kommandoer - i dette tilfælde "ls
+af vilkÃ¥rlige og almindelige Linux-kommandoer - i dette tilfÃ¦lde "ls
 -al /home".
 </para>
 
@@ -1280,7 +1280,7 @@ af vilkårlige og almindelige Linux-kommandoer - i dette tilfælde "ls
 </figure>  
 
 <para>
-Endelig kan det nævnes at følgende link giver en god gennemgang af
+Endelig kan det nÃ¦vnes at fÃ¸lgende link giver en god gennemgang af
 SSH <ulink url="http://www.redhat.com/docs/manuals/linux/RHL-8.0-Manual/custom-guide/s1-openssh-client-config.html">http://www.redhat.com/docs/manuals/linux/RHL-8.0-Manual/custom-guide/s1-openssh-client-config.html</ulink>.
 </para>
 
@@ -1293,8 +1293,8 @@ SSH <ulink url="http://www.redhat.com/docs/manuals/linux/RHL-8.0-Manual/custom-g
 
 <para>
 Jeg har et mindre problem med hensyn til X. Da vi gerne vil have
-muligheden for at brug X fra nogle af vores kunder så har vi brug for at
-kunne bruge X over SSH. Vores problem et at vores netværk på kontoret er
+muligheden for at brug X fra nogle af vores kunder sÃ¥ har vi brug for at
+kunne bruge X over SSH. Vores problem et at vores netvÃ¦rk pÃ¥ kontoret er
 bag en firewall, og at denne firewall ikke har X.
 </para>
 
@@ -1307,9 +1307,9 @@ firewall#> ssh login@kunde.dk -g -L 10022:127.0.0.1:22
 
 arbejdsstation#> ssh -p 10022 -X login@firewall
 
-kunde#> xclock  (xclock fra kundes pc på min computer)
+kunde#> xclock  (xclock fra kundes pc pÃ¥ min computer)
 
-Jeg gætter du skal gøre:
+Jeg gÃ¦tter du skal gÃ¸re:
 
 
 
@@ -1317,7 +1317,7 @@ Jeg gætter du skal gøre:
 
 #kunde> ssh -p 10022 -X login@localhost
 
-#arbejdstation> xclock (xclock fra din computer på kundes pc)
+#arbejdstation> xclock (xclock fra din computer pÃ¥ kundes pc)
 
 ssh er sejt!
 
@@ -1332,22 +1332,22 @@ mvh. Jakob Hilmer
 <indexterm><primary>fish</primary></indexterm>
 <indexterm><primary>scp (nem i KDE)</primary></indexterm>
 <para>
-Som det er beskrevet ovenfor så bør kommunikation mellem maskiner
+Som det er beskrevet ovenfor sÃ¥ bÃ¸r kommunikation mellem maskiner
 ske over SSH-protokollen hvor det er muligt. Det er et tekst-baseret program
-hvor man kan logge ind på en fjernmaskine og udføre kommandoer - men
-det er ikke hele historien. Man kan også sætte OpenSSH op til at køre
-grafiske programmer eller få andre programmer til at bruge OpenSSH til 
-at danne en krypteret kanal mellem maskinerne og mellem maskinerne køre
+hvor man kan logge ind pÃ¥ en fjernmaskine og udfÃ¸re kommandoer - men
+det er ikke hele historien. Man kan ogsÃ¥ sÃ¦tte OpenSSH op til at kÃ¸re
+grafiske programmer eller fÃ¥ andre programmer til at bruge OpenSSH til 
+at danne en krypteret kanal mellem maskinerne og mellem maskinerne kÃ¸re
 alle programmer transparent. Med Konqueror til KDE kan man f.eks. installere
 en lille udvidelse med navn <literal>fish</literal> 
 <ulink url="http://ich.bin.kein.hoschi.de/fish/">http://ich.bin.kein.hoschi.de/fish/</ulink>. Normalt angiver man i URL-feltet til Konqueror at man vil
 ser filerne i <filename>/usr/</filename> som <filename>file:/usr/</filename>.
 
- Vil man se filerne i kataloget "<filename>/usr/</filename>" på maskinen
+ Vil man se filerne i kataloget "<filename>/usr/</filename>" pÃ¥ maskinen
  "<literal>hven.sslug.dk</literal>" med brugernavnet "<literal>tyge</literal>"
  skriver man i URL-feltet <filename>fish://tyge@hven.sslug.dk/usr</filename>.
  Har man SSH-adgang til maskinen vil filoversigten blive vist som om det var
- på egen maskine med fuld mulighed for træk-og-slip-kopiering, -flytning mv.
+ pÃ¥ egen maskine med fuld mulighed for trÃ¦k-og-slip-kopiering, -flytning mv.
 </para>
 <indexterm><primary>KDE</primary><secondary>fish</secondary></indexterm>
 <indexterm><primary>scp</primary><secondary>GUI - grafisk brugerflade</secondary></indexterm>
@@ -1356,7 +1356,7 @@ ser filerne i <filename>/usr/</filename> som <filename>file:/usr/</filename>.
 <indexterm><primary>krypteret kanel</primary><secondary>Konqueror</secondary></indexterm>
 
 <figure id="fish-fig" float="1">
-<title>fish giver direkte adgang til filer på andre maskiner via sikker ssh-krypteret tunnel</title>
+<title>fish giver direkte adgang til filer pÃ¥ andre maskiner via sikker ssh-krypteret tunnel</title>
 <graphic fileref="fish.&magic;" scale="60"></graphic>
 </figure>
 
@@ -1367,35 +1367,35 @@ ser filerne i <filename>/usr/</filename> som <filename>file:/usr/</filename>.
 <title>Epilog</title>
 <para>
 Der er mange forskellige smarte features i
-ssh, såsom at maskinerne skal acceptere hinandens identitet, brugeres
-skal accepteres via et løsen, og en gang hver time vil maskiner
-endda skifte nøgler, så en eventuel ondsindet person, som vil lytte
-med skal begynde forfra i dekodning af krypterings-nøgler.
+ssh, sÃ¥som at maskinerne skal acceptere hinandens identitet, brugeres
+skal accepteres via et lÃ¸sen, og en gang hver time vil maskiner
+endda skifte nÃ¸gler, sÃ¥ en eventuel ondsindet person, som vil lytte
+med skal begynde forfra i dekodning af krypterings-nÃ¸gler.
 </para>
 
 <para>
-Vi skal også nævne, at ssh kan anvendes til at lave VPN løsninger
-(Virtual Private network) mellem to lokale netværk, der forbindes via
-et usikkert net. Skal man køre revisionssystemer på Linux, kan vi
+Vi skal ogsÃ¥ nÃ¦vne, at ssh kan anvendes til at lave VPN lÃ¸sninger
+(Virtual Private network) mellem to lokale netvÃ¦rk, der forbindes via
+et usikkert net. Skal man kÃ¸re revisionssystemer pÃ¥ Linux, kan vi
 anbefale CVS, som drager nytte af ssh til at skabe krypteret tilgang
-til ens server. Det er kun en systemvariabel (sæt $CVS_rsh=ssh), så
-kører det. Tilsvarende kan rsync kobles med ssh (sæt $RSYNC_rsh=ssh)
+til ens server. Det er kun en systemvariabel (sÃ¦t $CVS_rsh=ssh), sÃ¥
+kÃ¸rer det. Tilsvarende kan rsync kobles med ssh (sÃ¦t $RSYNC_rsh=ssh)
 for at lave synkroniseret data mellem flere maskiner, hvor
 dataudveksling sker med secure shell.
 </para>
 
 <para>
 Ud over Linux (UNIX) server og klient programmer, som er
-indeholdt i ssh-pakken, så kan du måske også have glæde af klienter
+indeholdt i ssh-pakken, sÃ¥ kan du mÃ¥ske ogsÃ¥ have glÃ¦de af klienter
 til Windows.  
 </para>
 
 <para>
-Med en af disse kan du fra en Windows-maskine logge sikkert ind på
-din Linux-maskine. Du kan på hhv.
+Med en af disse kan du fra en Windows-maskine logge sikkert ind pÃ¥
+din Linux-maskine. Du kan pÃ¥ hhv.
 <ulink url="http://www.chiark.greenend.org.uk/~sgtatham/putty/">http://www.chiark.greenend.org.uk/~sgtatham/putty/</ulink>,
 <ulink url="http://www.mindbright.se/mindterm">http://www.mindbright.se/mindterm</ulink>.
-Der findes også en kommerciel Windows ssh-version, som kan købes fra 
+Der findes ogsÃ¥ en kommerciel Windows ssh-version, som kan kÃ¸bes fra 
 <ulink url="http://www.datafellows.com">http://www.datafellows.com</ulink>.
 </para>
 

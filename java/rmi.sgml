@@ -1,19 +1,19 @@
 <chapter id="java-rmi">
-<title>RMI - objekter over netværk</title>
+<title>RMI - objekter over netvÃ¦rk</title>
 
 
 <para>
-  Kapitlet forudsættes ikke i resten af bogen.
+  Kapitlet forudsÃ¦ttes ikke i resten af bogen.
 </para>
 
 <para>
-  Forudsætter <xref linkend="java-interface" />, Interfaces, <xref linkend="java-serialisering" />, Serialisering og
-  kendskab til netværk.
+  ForudsÃ¦tter <xref linkend="java-interface" />, Interfaces, <xref linkend="java-serialisering" />, Serialisering og
+  kendskab til netvÃ¦rk.
 </para>
 
 <para>
-  RMI (Remote Method Invocation) er en måde at arbejde med objekter der
-  eksisterer i en anden Java virtuel maskine (ofte på en anden fysisk
+  RMI (Remote Method Invocation) er en mÃ¥de at arbejde med objekter der
+  eksisterer i en anden Java virtuel maskine (ofte pÃ¥ en anden fysisk
   maskine), <emphasis>som om de var lokale objekter</emphasis>.
 </para>
 
@@ -21,8 +21,8 @@
 <title>Principper</title>
 
 <para>
-  Herunder er tegnet, hvad der sker, når en klient på maskine A laver et
-  kald til et serverobjekt (da: værts-objekt), der er i maskine B.
+  Herunder er tegnet, hvad der sker, nÃ¥r en klient pÃ¥ maskine A laver et
+  kald til et serverobjekt (da: vÃ¦rts-objekt), der er i maskine B.
 </para>
 
 <figure id="java-rmi-principer-fig">
@@ -31,9 +31,9 @@
 </figure>
 
 <para>
-  Serverobjektet findes slet ikke på maskine A, i stedet er der en
-  såkaldt <emphasis>RMI-stub</emphasis>, der repræsenterer det. Når der
-  sker et kald til RMI-stubben på maskine A, sørger den for at
+  Serverobjektet findes slet ikke pÃ¥ maskine A, i stedet er der en
+  sÃ¥kaldt <emphasis>RMI-stub</emphasis>, der reprÃ¦senterer det. NÃ¥r der
+  sker et kald til RMI-stubben pÃ¥ maskine A, sÃ¸rger den for at
   transportere kaldet og alle parametre til maskine B, hvor
   serverobjektet bliver kaldt, som om det var et lokalt
   kald. Serverobjektets svar bliver transporteret tilbage til
@@ -41,21 +41,21 @@
 </para>
 
 <para>
-  Denne proces foregår helt automatisk og er usynlig for klienten såvel
+  Denne proces foregÃ¥r helt automatisk og er usynlig for klienten sÃ¥vel
   som serverobjektet.
 </para>
 
 <para>
-  RMI benytter serialisering til at transportere parametre og returværdi
-  mellem maskinerne, så man skal huske, at alle objekter, der sendes
-  over netværket, skal implementere Serializable-interfacet, og at
-  variabler, der ikke skal overføres, skal mærkes med nøgleordet
+  RMI benytter serialisering til at transportere parametre og returvÃ¦rdi
+  mellem maskinerne, sÃ¥ man skal huske, at alle objekter, der sendes
+  over netvÃ¦rket, skal implementere Serializable-interfacet, og at
+  variabler, der ikke skal overfÃ¸res, skal mÃ¦rkes med nÃ¸gleordet
   transient.
 </para>
 
 <para>
-  Overordnet set foregår det på den måde, at der defineres et interface
-  til de metoder på serverobjektet, der skal være tilgængelige for
+  Overordnet set foregÃ¥r det pÃ¥ den mÃ¥de, at der defineres et interface
+  til de metoder pÃ¥ serverobjektet, der skal vÃ¦re tilgÃ¦ngelige for
   klienten.
 </para>
 </sect1>    <!--   Principper -->
@@ -64,9 +64,9 @@
 <title>Konkret</title>
 
 <para>
-  Konkret kunne man tænke sig, at serveren havde et konto-objekt, hvor
-  man kan overføre penge, spørge om saldo og få bevægelserne på
-  kontoen. Så ville man definere et Konto-interface (her kaldt KontoI):
+  Konkret kunne man tÃ¦nke sig, at serveren havde et konto-objekt, hvor
+  man kan overfÃ¸re penge, spÃ¸rge om saldo og fÃ¥ bevÃ¦gelserne pÃ¥
+  kontoen. SÃ¥ ville man definere et Konto-interface (her kaldt KontoI):
 </para>
 
 <screen>
@@ -74,9 +74,9 @@ import java.util.Vector;
 
 public interface KontoI extends java.rmi.Remote
 {
-  public void overførsel(int kroner) throws java.rmi.RemoteException;
+  public void overfÃ¸rsel(int kroner) throws java.rmi.RemoteException;
   public int saldo()                 throws java.rmi.RemoteException;
-  public Vector bevægelser()         throws java.rmi.RemoteException;
+  public Vector bevÃ¦gelser()         throws java.rmi.RemoteException;
 }
 </screen>
 
@@ -86,16 +86,16 @@ public interface KontoI extends java.rmi.Remote
 </para>
 
 <para>
-  Interfacet bliver brugt på både klientsiden og serversiden.
+  Interfacet bliver brugt pÃ¥ bÃ¥de klientsiden og serversiden.
 </para>
 
 <sect2 id="java-rmi-konkret-serveren">
-<title>På serversiden</title>
+<title>PÃ¥ serversiden</title>
 
 <para>
-  På serversiden skal vi implementere Konto-interfacet og programmere
+  PÃ¥ serversiden skal vi implementere Konto-interfacet og programmere
   den funktionalitet der skjuler sig bag det, i et serverobjekt, som
-  normalt ender på Impl (for at signalere, at det er implementationen af
+  normalt ender pÃ¥ Impl (for at signalere, at det er implementationen af
   interfacet). Serverobjektet skal arve fra UnicastRemoteObject.
 </para>
 
@@ -106,40 +106,40 @@ import java.rmi.server.UnicastRemoteObject;
 public class KontoImpl <emphasis>extends UnicastRemoteObject implements KontoI</emphasis>
 {
 <emphasis>  public int saldo;</emphasis>
-<emphasis>  public Vector bevægelser;</emphasis>
+<emphasis>  public Vector bevÃ¦gelser;</emphasis>
 
   public KontoImpl() throws java.rmi.RemoteException 
   {
     // man starter med 100 kroner
     saldo = 100;
-    bevægelser = new Vector();
+    bevÃ¦gelser = new Vector();
   }
 
-  public void overførsel(int kroner) throws java.rmi.RemoteException
+  public void overfÃ¸rsel(int kroner) throws java.rmi.RemoteException
   {
     saldo = saldo + kroner;
-    String s = &quot;Overførsel på &quot;+kroner+&quot; kr. Ny saldo er &quot;+saldo+&quot; kr.&quot;;
-    bevægelser.addElement(s);
+    String s = &quot;OverfÃ¸rsel pÃ¥ &quot;+kroner+&quot; kr. Ny saldo er &quot;+saldo+&quot; kr.&quot;;
+    bevÃ¦gelser.addElement(s);
     System.out.println(s);
   }
 
   public int saldo()                 throws java.rmi.RemoteException
   {
-    System.out.println(&quot;Der spørges om saldoen. Den er &quot;+saldo+&quot; kr.&quot;);
+    System.out.println(&quot;Der spÃ¸rges om saldoen. Den er &quot;+saldo+&quot; kr.&quot;);
     return saldo;
   }
 
-  public Vector bevægelser()         throws java.rmi.RemoteException
+  public Vector bevÃ¦gelser()         throws java.rmi.RemoteException
   {
-    System.out.println(&quot;Der spørges på alle bevægelser.&quot;);
-    return bevægelser;
+    System.out.println(&quot;Der spÃ¸rges pÃ¥ alle bevÃ¦gelser.&quot;);
+    return bevÃ¦gelser;
   }
 }
 </screen>
 
 <para>
   Nu skal vi oprette et serverobjekt og registrere vores tjeneste under
-  et navn i RMI. Det sker sådan her:
+  et navn i RMI. Det sker sÃ¥dan her:
 </para>
 
 <screen>
@@ -156,31 +156,31 @@ public class Kontoserver
 </screen>
 
 <para>
-  Derudover skal der køre en RMI-navnetjeneste, der holder styr på,
+  Derudover skal der kÃ¸re en RMI-navnetjeneste, der holder styr pÃ¥,
   hvilke tjenester der udbydes under hvilke navne og formidler kontakten
   til dem. Det er et lille program, der hedder rmiregistry. Det skal
-  kende definitionen af de klasser, der overføres.
+  kende definitionen af de klasser, der overfÃ¸res.
 </para>
 
 <para>
-  Når vi skal køre vores server sker de i fire trin:
+  NÃ¥r vi skal kÃ¸re vores server sker de i fire trin:
 </para>
 
 <orderedlist>
-  <listitem><para>alle kildetekster oversættes til bytekode:  <constant>javac *.java</constant> (eller i et udviklingsværktøj)</para></listitem>
+  <listitem><para>alle kildetekster oversÃ¦ttes til bytekode:  <constant>javac *.java</constant> (eller i et udviklingsvÃ¦rktÃ¸j)</para></listitem>
   <listitem><para>KontoImpl skal have en RMI-stub og en RMI-skel:  <constant>rmic KontoImpl.java</constant></para></listitem>
   <listitem><para>rmiregistry startes i et separat vindue (fra samme katalog, som bytekoden ligger i): <constant>rmiregistry</constant></para></listitem>
-  <listitem><para>til sidst kan Kontoserver startes fra et separat vindue: <constant>java Kontoserver</constant> (eller i et udviklingsværktøj)</para></listitem>
+  <listitem><para>til sidst kan Kontoserver startes fra et separat vindue: <constant>java Kontoserver</constant> (eller i et udviklingsvÃ¦rktÃ¸j)</para></listitem>
 </orderedlist>
 
-</sect2>    <!--   På serversiden -->
+</sect2>    <!--   PÃ¥ serversiden -->
 
 <sect2 id="java-rmi-konkret-klient">
-<title>På klientsiden</title>
+<title>PÃ¥ klientsiden</title>
 
 <para>
-  På klientsiden skal vi slå serverobjektet op i RMI-tjenesten og
-  derefter bruge det objekt, vi får retur, som om det var serverobjektet
+  PÃ¥ klientsiden skal vi slÃ¥ serverobjektet op i RMI-tjenesten og
+  derefter bruge det objekt, vi fÃ¥r retur, som om det var serverobjektet
   selv (i virkeligheden er det en RMI-stub, der implementerer KontoI):
 </para>
 
@@ -195,15 +195,15 @@ public class Kontoklient
     try 
     {
 <emphasis>      KontoI k =(KontoI) Naming.lookup(&quot;rmi://localhost/Kontotjeneste&quot;);</emphasis>
-      k.overførsel(100);
-      k.overførsel(50);
+      k.overfÃ¸rsel(100);
+      k.overfÃ¸rsel(50);
       System.out.println( &quot;Saldo er: &quot;+ k.saldo() );
-      k.overførsel(-200);
-      k.overførsel(51);
+      k.overfÃ¸rsel(-200);
+      k.overfÃ¸rsel(51);
       System.out.println( &quot;Saldo er: &quot;+ k.saldo() );
-      Vector bevægelser = k.bevægelser();
+      Vector bevÃ¦gelser = k.bevÃ¦gelser();
 
-      System.out.println( &quot;Bevægelser er: &quot;+ bevægelser );
+      System.out.println( &quot;BevÃ¦gelser er: &quot;+ bevÃ¦gelser );
     }
     catch (Exception e)
     {
@@ -219,7 +219,7 @@ public class Kontoklient
 <screen>
 Saldo er: 250
 Saldo er: 101
-Bevægelser er: [Overførsel på 100 kr. Ny saldo er 200 kr., Overførsel på 50 kr. Ny saldo er 250 kr., Overførsel på -200 kr. Ny saldo er 50 kr., Overførsel på 51 kr. Ny saldo er 101 kr.]
+BevÃ¦gelser er: [OverfÃ¸rsel pÃ¥ 100 kr. Ny saldo er 200 kr., OverfÃ¸rsel pÃ¥ 50 kr. Ny saldo er 250 kr., OverfÃ¸rsel pÃ¥ -200 kr. Ny saldo er 50 kr., OverfÃ¸rsel pÃ¥ 51 kr. Ny saldo er 101 kr.]
 </screen>
 
 <para>
@@ -231,7 +231,7 @@ Bevægelser er: [Overførsel på 100 kr. Ny saldo er 200 kr., Overførsel på 50 kr. 
   <graphic fileref="Nordfalk2015471.&magic;" scale="60"></graphic>
 </figure>
 
-</sect2>    <!--   På klientsiden -->
+</sect2>    <!--   PÃ¥ klientsiden -->
 </sect1>    <!--   Konkret -->
-</chapter>    <!--   RMI - objekter over netværk -->
+</chapter>    <!--   RMI - objekter over netvÃ¦rk -->
 

@@ -1,9 +1,9 @@
 <chapter id="wysiwyg"><title>DocBook med WYSIWYG</title>
-<para>Hvis du ikke er så stærk i at anvende DocBook, eller blot vil have en mulighed for at fremstille en hurtig artikel, er dette kapitel sikkert interessant for dig.</para>
+<para>Hvis du ikke er sÃ¥ stÃ¦rk i at anvende DocBook, eller blot vil have en mulighed for at fremstille en hurtig artikel, er dette kapitel sikkert interessant for dig.</para>
 <sect1 id="openoffice">
 	<title>OpenOffice.org1.1</title>
 	<indexterm><primary>OpenOffice.org1.1</primary></indexterm>
-<para>Dette afsnit vil omhandle en af de nye spændende faciliteter i OpenOffice.org 1.1, som er muligheden for, at kunne fremstille dokumenter i OpenOffice.org og bagefter få dem gemt i DocBook format. At denne facilitet er interessant, har sin begrundelse i, at man bagefter kan konvertere sit dokumentet til et utal af forskellige formater. I øjeblikket er følgende formater understøttet:</para>
+<para>Dette afsnit vil omhandle en af de nye spÃ¦ndende faciliteter i OpenOffice.org 1.1, som er muligheden for, at kunne fremstille dokumenter i OpenOffice.org og bagefter fÃ¥ dem gemt i DocBook format. At denne facilitet er interessant, har sin begrundelse i, at man bagefter kan konvertere sit dokumentet til et utal af forskellige formater. I Ã¸jeblikket er fÃ¸lgende formater understÃ¸ttet:</para>
 <itemizedlist>
 <listitem>
 <para>HTML</para>
@@ -21,10 +21,10 @@
 <para>DVI</para>
 </listitem>
 </itemizedlist>
-<para>Efter gennemlæsning af dette afsnit vil du være i stand til, at fremstille dit første dokument i DocBook format.</para>
+<para>Efter gennemlÃ¦sning af dette afsnit vil du vÃ¦re i stand til, at fremstille dit fÃ¸rste dokument i DocBook format.</para>
 <sect2 id="openoffice-install"><title>Installation af openOffice 1.1</title>
 	<indexterm><primary>Installation af OpenOffice.org 1.1</primary></indexterm>
-<para>Før du kan anvende DocBook fra OpenOffice.org, skal det selvfølgeligt først installeres, og da formålet er at skrive DocBook-filer, kan du ikke anvende standardinstallationen; du må i stedet vælge interaktiv installation. Se nedenstående skærmdump viser, skal du køre install med kommandolinjetilvalget <literal>-interactive</literal>. Det gøres på følgende måde: <command>./install -interactive</command>
+<para>FÃ¸r du kan anvende DocBook fra OpenOffice.org, skal det selvfÃ¸lgeligt fÃ¸rst installeres, og da formÃ¥let er at skrive DocBook-filer, kan du ikke anvende standardinstallationen; du mÃ¥ i stedet vÃ¦lge interaktiv installation. Se nedenstÃ¥ende skÃ¦rmdump viser, skal du kÃ¸re install med kommandolinjetilvalget <literal>-interactive</literal>. Det gÃ¸res pÃ¥ fÃ¸lgende mÃ¥de: <command>./install -interactive</command>
 .
 </para>
 <para>
@@ -39,9 +39,9 @@ Configuration:
 --single install single user version of OpenOffice.org
 --interactive install OpenOffice.org using interactive mode
 </screen>
-<para>Når du når frem til nedenstående skærmbillede, skal du vælge 
+<para>NÃ¥r du nÃ¥r frem til nedenstÃ¥ende skÃ¦rmbillede, skal du vÃ¦lge 
 custom install
-, da du her skal tilvælge filtre, der gør import/eksport af DocBook-filer muligt.
+, da du her skal tilvÃ¦lge filtre, der gÃ¸r import/eksport af DocBook-filer muligt.
 </para>
 <para>
 </para>
@@ -49,7 +49,7 @@ custom install
 <inlinegraphic fileref="custum-install.png"></inlinegraphic>
 
 </para>
-<para>Herefter vil nedenstående skærmbillede fremkomme, hvor du skal klikke på symbolet ud for XSLT Sample Filters. Efter du har klikket, skulle du gerne se det markeret med en blå pil. Markeringen sikrer, at du installerer de nødvendige DocBook filtre.
+<para>Herefter vil nedenstÃ¥ende skÃ¦rmbillede fremkomme, hvor du skal klikke pÃ¥ symbolet ud for XSLT Sample Filters. Efter du har klikket, skulle du gerne se det markeret med en blÃ¥ pil. Markeringen sikrer, at du installerer de nÃ¸dvendige DocBook filtre.
 </para>
 <para>
 </para>
@@ -57,8 +57,8 @@ custom install
 <inlinegraphic fileref="xslt-filtre.png"></inlinegraphic>
 
 </para>
-<para>Når du har foretaget ovenstående valg, vil du få at vide, at du har givet alle nødvendige informationer til, at OpenOffice.org kan installeres. Du skal så sikre dig, at det næste skærmbillede 
-ser ud på følgende måde:
+<para>NÃ¥r du har foretaget ovenstÃ¥ende valg, vil du fÃ¥ at vide, at du har givet alle nÃ¸dvendige informationer til, at OpenOffice.org kan installeres. Du skal sÃ¥ sikre dig, at det nÃ¦ste skÃ¦rmbillede 
+ser ud pÃ¥ fÃ¸lgende mÃ¥de:
 </para>
 <para>
 </para>
@@ -69,18 +69,18 @@ ser ud på følgende måde:
 <para>
 </para>
 <para>
-Det er af vital betydning, at du har installeret Java på din computer,
+Det er af vital betydning, at du har installeret Java pÃ¥ din computer,
 da import/eksport af DocBook filer skal parses gennem et
-Java-program. Er der ikke installeret Java, bør du afslutte
-installationen og installere Java først - bemærk, at kun Sun's Java
+Java-program. Er der ikke installeret Java, bÃ¸r du afslutte
+installationen og installere Java fÃ¸rst - bemÃ¦rk, at kun Sun's Java
 j2se, se <ulink url="http://java.sun.com/j2se/">http://java.sun.com/j2se/</ulink>, kan anvendes. Har du derimod Java
 installeret, men installationsprogrammet blot ikke kan finde det, skal
-du vælge Browse. Du vil her have mulighed for at vise
+du vÃ¦lge Browse. Du vil her have mulighed for at vise
 installationsprogrammet, hvor du har installeret Java. Hvis du viser
-den det rigtige sted, skal det fremgå af vinduet, hvor du kan se mine
+den det rigtige sted, skal det fremgÃ¥ af vinduet, hvor du kan se mine
 Java-installationer.
 </para>
-<para>Når du har installeret OpenOffice.org, kan du begynde at lave DocBook filer.
+<para>NÃ¥r du har installeret OpenOffice.org, kan du begynde at lave DocBook filer.
 </para>
 <para>
 </para>
@@ -88,7 +88,7 @@ Java-installationer.
 <sect2 id="openoffice-docbookfiler">
 	<title>Fremstilling af DocBook filer</title>
 	<indexterm><primary>DocBook filer med OpenOffice.org</primary></indexterm>
-<para>Når du selv skal fremstille DocBook filer, er det såre enkelt: Åben et nyt dokument - File-&gt;New-&gt;Text Document, og gem det i DocBook format - File-&gt;Save As. Se nedenstående billede.
+<para>NÃ¥r du selv skal fremstille DocBook filer, er det sÃ¥re enkelt: Ã…ben et nyt dokument - File-&gt;New-&gt;Text Document, og gem det i DocBook format - File-&gt;Save As. Se nedenstÃ¥ende billede.
 </para>
 <para>
 </para>
@@ -96,10 +96,10 @@ Java-installationer.
 <inlinegraphic fileref="save-as.png"></inlinegraphic>
 
 </para>
-<para>De faciliteter du har til rådighed, kan du se i under paragraph styles - fremkommer når du trykker &lt;F11
-&gt; på tastaturet. Bemærk endvidere her, at du har 5 mulige styles, da iconerne øverst i vinduet underindeler custom styles i 5 kategorier: Paragraph styles, character styles, frame styles, page styles og numbering styles. Dem jeg har prøvet indtil videre, har virket efter hensigten, men en væsentlig undtagelse: Alle elementer under paragraph styles der starter med Section, virker ikke! For at kunne inddele dokumentet i afsnit, skal du i stedet for vælge de normale heading-elementer, og husk lige på i den forbindelse, at HTML-standarden kun understøtter heading1 (&lt;h1&gt;&lt;/h1&gt;) - heading6 (&lt;h6&gt;&lt;/h6&gt;). Indsættelse af grafik virker også; anvendes på normal vis, blot skal grafikken efterfølgende kopieres ned i samme katalog, hvor du placerer html-filerne.</para>
-<para>Små fejl, jeg har fundet, udover den nævnte med sections er, at når man laver en tankestreg, udskifter OpenOffice.org den med en anden type tankestreg, der desværre ikke findes i Latin-1 tegnsættet, hvorfor oversættelse vil give fejl, du må derfor enten undlade at benytte tankestreg eller manuelt udskifte alle OpenOffice.org tankestreger med de generiske fra Latin-1. En anden væsentlig fejl er, at den attribut der bestemmer hvilket sprog dokumentet generes i, sættes forkert. Herudover er der problemet med, at OpenOffice.org arbejder i UTF-8 tegnsættet, hvorimod at DocBook, på trods af at der er specificeret UTF-8 som tegnsæt, oversætter filerne til Latin-1, hvilket betyder, at alle danske tegn forsvinder fra dokumentet. Det er sikkert blot et spørgsmål om at sætte et korrekt kommandolinjetilvalg til docbook2html, men det har jeg indtil videre ladet ligge. Alle disse fejl kan du selvfølgeligt rette manuelt, mens hvis du ikke har mod på det, kan du i stedet for, benytte dette lille perl-script til at få dine dokumenter konverteret fra UTF-8 til Latin-1. Hent <ulink url="http://&linuxbogurl;/dokumentation/eksempler/oo2db">perl-scriptet</ulink>
-. Scriptet ser ud på følgende måde:</para>
+<para>De faciliteter du har til rÃ¥dighed, kan du se i under paragraph styles - fremkommer nÃ¥r du trykker &lt;F11
+&gt; pÃ¥ tastaturet. BemÃ¦rk endvidere her, at du har 5 mulige styles, da iconerne Ã¸verst i vinduet underindeler custom styles i 5 kategorier: Paragraph styles, character styles, frame styles, page styles og numbering styles. Dem jeg har prÃ¸vet indtil videre, har virket efter hensigten, men en vÃ¦sentlig undtagelse: Alle elementer under paragraph styles der starter med Section, virker ikke! For at kunne inddele dokumentet i afsnit, skal du i stedet for vÃ¦lge de normale heading-elementer, og husk lige pÃ¥ i den forbindelse, at HTML-standarden kun understÃ¸tter heading1 (&lt;h1&gt;&lt;/h1&gt;) - heading6 (&lt;h6&gt;&lt;/h6&gt;). IndsÃ¦ttelse af grafik virker ogsÃ¥; anvendes pÃ¥ normal vis, blot skal grafikken efterfÃ¸lgende kopieres ned i samme katalog, hvor du placerer html-filerne.</para>
+<para>SmÃ¥ fejl, jeg har fundet, udover den nÃ¦vnte med sections er, at nÃ¥r man laver en tankestreg, udskifter OpenOffice.org den med en anden type tankestreg, der desvÃ¦rre ikke findes i Latin-1 tegnsÃ¦ttet, hvorfor oversÃ¦ttelse vil give fejl, du mÃ¥ derfor enten undlade at benytte tankestreg eller manuelt udskifte alle OpenOffice.org tankestreger med de generiske fra Latin-1. En anden vÃ¦sentlig fejl er, at den attribut der bestemmer hvilket sprog dokumentet generes i, sÃ¦ttes forkert. Herudover er der problemet med, at OpenOffice.org arbejder i UTF-8 tegnsÃ¦ttet, hvorimod at DocBook, pÃ¥ trods af at der er specificeret UTF-8 som tegnsÃ¦t, oversÃ¦tter filerne til Latin-1, hvilket betyder, at alle danske tegn forsvinder fra dokumentet. Det er sikkert blot et spÃ¸rgsmÃ¥l om at sÃ¦tte et korrekt kommandolinjetilvalg til docbook2html, men det har jeg indtil videre ladet ligge. Alle disse fejl kan du selvfÃ¸lgeligt rette manuelt, mens hvis du ikke har mod pÃ¥ det, kan du i stedet for, benytte dette lille perl-script til at fÃ¥ dine dokumenter konverteret fra UTF-8 til Latin-1. Hent <ulink url="http://&linuxbogurl;/dokumentation/eksempler/oo2db">perl-scriptet</ulink>
+. Scriptet ser ud pÃ¥ fÃ¸lgende mÃ¥de:</para>
 
 <screen>#!/usr/bin/env perl
 use strict;
@@ -182,7 +182,7 @@ while (&lt;&gt;) {
 	}
 }
 exit(0);</screen>
-<para>Til sidst kan jeg i parantes bemærke, at hele dette dokument er skrevet udelukkende i OpenOffice.org med en enkelt udtagelse. OpenOffice.org har ikke implementeret elementet screen endnu, så derfor har jeg selv manuelt måtte indsætte det. Man kunne i stedet for have benyttet elementet ComputerOutput, men da vi som standard benytter screen i Friheden til at vælge serien, har jeg undladt dette.</para>
+<para>Til sidst kan jeg i parantes bemÃ¦rke, at hele dette dokument er skrevet udelukkende i OpenOffice.org med en enkelt udtagelse. OpenOffice.org har ikke implementeret elementet screen endnu, sÃ¥ derfor har jeg selv manuelt mÃ¥tte indsÃ¦tte det. Man kunne i stedet for have benyttet elementet ComputerOutput, men da vi som standard benytter screen i Friheden til at vÃ¦lge serien, har jeg undladt dette.</para>
 </sect2>
 </sect1>
 </chapter>

@@ -5,66 +5,66 @@
 
  <indexterm><primary>Glade</primary></indexterm>
 
- <indexterm><primary>brugergrænsefladebygger</primary></indexterm>
+ <indexterm><primary>brugergrÃ¦nsefladebygger</primary></indexterm>
 
  <para>
   Glade er et program der kan bruges til at designe grafiske
-  brugergrænseflader der bruger GTK- og Gnome-biblioteketerne. Glade
-  kan generere grafiske brugergrænseflader og gemme dem som Ada, C-,
+  brugergrÃ¦nseflader der bruger GTK- og Gnome-biblioteketerne. Glade
+  kan generere grafiske brugergrÃ¦nseflader og gemme dem som Ada, C-,
   C++-, Eiffel og Perl-kildetekst.  Glade genererer automatisk
-  oversættelsesfiler til at oversætte programmet.
+  oversÃ¦ttelsesfiler til at oversÃ¦tte programmet.
  </para>
 
  <para>
   I Glade kan man for eksempel definere at der skal kaldes en bestemt
-  funktion når der, for eksempel, trykkes på en knap. Glade gemmer så
-  kildeteksten med en tom funktionsdefinition. Det er så op til
-  programmøren at indsætte kode i denne funktion så programmet rent
-  faktisk gør noget.
+  funktion nÃ¥r der, for eksempel, trykkes pÃ¥ en knap. Glade gemmer sÃ¥
+  kildeteksten med en tom funktionsdefinition. Det er sÃ¥ op til
+  programmÃ¸ren at indsÃ¦tte kode i denne funktion sÃ¥ programmet rent
+  faktisk gÃ¸r noget.
  </para>
 
  <figure id="glade-fig" float="1">
   <title>
-   Design af grafisk brugergrænseflade i Glade (her vist med Aqua-temaet).
+   Design af grafisk brugergrÃ¦nseflade i Glade (her vist med Aqua-temaet).
   </title>
   <graphic fileref="glade1.&magic;" scale="50"></graphic>
  </figure>
 
  <para>
   En specielt smart egenskab ved Glade er at den kan gemme hele
-  definitionen af en grafisk brugergrænseflade i en fil. Ved hjælp af
+  definitionen af en grafisk brugergrÃ¦nseflade i en fil. Ved hjÃ¦lp af
   biblioteket "libglade" kan et program automatisk genskabe den
-  grafiske brugergrænseflade, så man kan distribuere et program med en
-  redigérbar grafisk brugergrænseflade.
+  grafiske brugergrÃ¦nseflade, sÃ¥ man kan distribuere et program med en
+  redigÃ©rbar grafisk brugergrÃ¦nseflade.
  </para>
 
  <para>
-  I bogens eksempelsamling er der et eksempel på en grafisk
-  brugergrænseflade lavet i Glade (<ulink
+  I bogens eksempelsamling er der et eksempel pÃ¥ en grafisk
+  brugergrÃ¦nseflade lavet i Glade (<ulink
   url="http://&linuxbogurl;/program/eksempler/linux_counter_registrering.glade">http://&linuxbogurl;/program/eksempler/linux_counter_registrering.glade</ulink>).
-  Hvis man starter Glade og indlæser denne fil, vil hovedvinduet komme
+  Hvis man starter Glade og indlÃ¦ser denne fil, vil hovedvinduet komme
   til at se ud som <xref linkend="glade-linux-counter-eksempel-1"/>.
  </para>
 
  <figure id="glade-linux-counter-eksempel-1" float="1">
   <title>
    Glades hovedvindue med filen
-   "<filename>linux_counter_registrering.glade</filename>" indlæst.
+   "<filename>linux_counter_registrering.glade</filename>" indlÃ¦st.
   </title>
   <graphic fileref="glade-linux_counter-eksempel-1.&magic;"
   scale="50"></graphic>
  </figure>
 
  <para>
-  Hvis man så dobbeltklikker på teksten "Spørgsmål", vil Glade vise et
-  præsentationsvindue med en dialog (se <xref
-  linkend="glade-linux-counter-eksempel-2"/>) hvor man så kan
-  tilføje, rette eller slette elementer.
+  Hvis man sÃ¥ dobbeltklikker pÃ¥ teksten "SpÃ¸rgsmÃ¥l", vil Glade vise et
+  prÃ¦sentationsvindue med en dialog (se <xref
+  linkend="glade-linux-counter-eksempel-2"/>) hvor man sÃ¥ kan
+  tilfÃ¸je, rette eller slette elementer.
  </para>
 
  <figure id="glade-linux-counter-eksempel-2" float="1">
   <title>
-   Glades præsentationsvindue med dialogen "Spørgsmål" fra filen
+   Glades prÃ¦sentationsvindue med dialogen "SpÃ¸rgsmÃ¥l" fra filen
    "<filename>linux_counter_registrering.glade</filename>".
   </title>
   <graphic fileref="glade-linux_counter-eksempel-2.&magic;"

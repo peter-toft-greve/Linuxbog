@@ -1,24 +1,24 @@
 <!-- $Id$ -->
 <chapter id="etc-filer">
-<title>Hvor finder jeg opsætningsfilerne?</title>
-<indexterm><primary>Opsætningsfiler</primary></indexterm>
+<title>Hvor finder jeg opsÃ¦tningsfilerne?</title>
+<indexterm><primary>OpsÃ¦tningsfiler</primary></indexterm>
 
 <para>
-I dette afsnit vil vi beskrive, hvilke opsætningsfiler der er
+I dette afsnit vil vi beskrive, hvilke opsÃ¦tningsfiler der er
 relevante at kende i et Linux-system. Det er normalt at gemme
-opsætningsfiler i <filename>/etc</filename> (det er meget muligt
+opsÃ¦tningsfiler i <filename>/etc</filename> (det er meget muligt
 at katalog-navnet er en forkortelse af <emphasis>editable text
-configurations</emphasis>).  Du kan have glæde af at læse de enkelte
-filer igennem, når du er blevet lidt erfaren i at styre Linux. Vi vil
+configurations</emphasis>).  Du kan have glÃ¦de af at lÃ¦se de enkelte
+filer igennem, nÃ¥r du er blevet lidt erfaren i at styre Linux. Vi vil
 i dette afsnit give dig et overblik over de vigtigste
-opsætningsfiler, så du selv kan forstå, hvad der foregår.  
+opsÃ¦tningsfiler, sÃ¥ du selv kan forstÃ¥, hvad der foregÃ¥r.  
 </para>
 
 <para>
-Opsætningsfiler i <filename>/etc</filename> er vitale for dit
-Linux-system, så vær derfor forsigtig, når du retter i filerne. Vi vil
-foreslå, at du <emphasis>altid</emphasis> først laver en kopi af den
-fil, du vil ændre, dvs.
+OpsÃ¦tningsfiler i <filename>/etc</filename> er vitale for dit
+Linux-system, sÃ¥ vÃ¦r derfor forsigtig, nÃ¥r du retter i filerne. Vi vil
+foreslÃ¥, at du <emphasis>altid</emphasis> fÃ¸rst laver en kopi af den
+fil, du vil Ã¦ndre, dvs.
 </para>
 
 <indexterm>
@@ -36,7 +36,7 @@ fil, du vil ændre, dvs.
 
 
 <para>
-Hvis der så skulle gå noget galt, kan du altid fortryde og vende tilbage
+Hvis der sÃ¥ skulle gÃ¥ noget galt, kan du altid fortryde og vende tilbage
 til den oprindelige udgave af filen med:
 </para>
 
@@ -46,7 +46,7 @@ til den oprindelige udgave af filen med:
 
 <para>
 I eksemplet anvendte vi <command>vi</command> som editor, men du kan
-naturligvis selv vælge hvordan du vil redigere filerne.
+naturligvis selv vÃ¦lge hvordan du vil redigere filerne.
 </para>
 
 <sect1 id="etc-password-filen">
@@ -55,13 +55,13 @@ naturligvis selv vælge hvordan du vil redigere filerne.
 <indexterm><primary>Password</primary><secondary>brugerfilen</secondary></indexterm>
 <para>
 Filen <filename>/etc/passwd</filename> indeholder en linje per bruger,
-som har login på maskinen. Brugeren "root" har også en linje her. Kun
-hvis man kører NIS (tidligere kendt som "yellow pages"), kan man lade
-ekstra brugere være styret af andre servere.
+som har login pÃ¥ maskinen. Brugeren "root" har ogsÃ¥ en linje her. Kun
+hvis man kÃ¸rer NIS (tidligere kendt som "yellow pages"), kan man lade
+ekstra brugere vÃ¦re styret af andre servere.
 </para>
 
 <para>
-Et eksempel på en linje af adgangskodefilen, passwd, er:
+Et eksempel pÃ¥ en linje af adgangskodefilen, passwd, er:
 </para>
 
 <programlisting>
@@ -69,20 +69,20 @@ tyge:x:500:501::/home/tyge:/bin/bash
 </programlisting>
 
 <para>
-Der står her, at brugeren "tyge" er bruger nummer 500 på maskinen (ikke, at
+Der stÃ¥r her, at brugeren "tyge" er bruger nummer 500 pÃ¥ maskinen (ikke, at
 der faktisk er 500). Brugeren "tyge" er med i gruppe nummer 501, hvilket er
 styret af <filename>/etc/group</filename>. Brugeren "tyge" har
 hjemmekatalog i <filename>/home/tyge</filename> og starter med
 <command>/bin/bash</command> som login-shell.  Det lille x betyder, at
-man kører med skygge-adgangskoder (eng. shadow passwords), dvs. at
-adgangskoder står i <filename>/etc/shadow</filename>, og denne fil kan
-ikke læses af andre end systemadministratoren &ndash; dvs. skygge-adgangskoder
-er et ekstra niveau af sikring af adgangskoderne på systemet.
+man kÃ¸rer med skygge-adgangskoder (eng. shadow passwords), dvs. at
+adgangskoder stÃ¥r i <filename>/etc/shadow</filename>, og denne fil kan
+ikke lÃ¦ses af andre end systemadministratoren &ndash; dvs. skygge-adgangskoder
+er et ekstra niveau af sikring af adgangskoderne pÃ¥ systemet.
 </para>
 
 <para>
-Hvis en person ikke skal have lov til at logge ind på maskinen, så kan
-du rette i <filename>/etc/passwd</filename> og indsætte en stjerne
+Hvis en person ikke skal have lov til at logge ind pÃ¥ maskinen, sÃ¥ kan
+du rette i <filename>/etc/passwd</filename> og indsÃ¦tte en stjerne
 (dvs. *) foran den krypterede adgangskode.
 </para>
 
@@ -95,7 +95,7 @@ du rette i <filename>/etc/passwd</filename> og indsætte en stjerne
 <indexterm><primary>/etc/shadow</primary></indexterm>
 
 <para>
-Formatet af <filename>/etc/shadow</filename>-filen følger formatet for
+Formatet af <filename>/etc/shadow</filename>-filen fÃ¸lger formatet for
 <filename>/etc/passwd</filename>-filen med en linje per bruger. Et
 eksempel er:
 </para>
@@ -105,20 +105,20 @@ tyge:$1$/hbYueDa$46ggNKFugoDABWOJZ3xvz0:10784:0:99999:7:::
 </programlisting>
 
 <para>
-For brugeren "tyge" står der de krypterede adgangskoder. For Red Hat
-er det længere end for SuSE, idet Red Hat anvender en bedre
-krypteringsmåde. Derefter vises antal dage siden 1/1-1970 for sidste
-ændring af adgangskoderne. Næste felt viser antal dage siden sidste
-ændring af adgangskode. Derefter antal dage mellem at der sendes en
-advarsel til brugeren om kontoudløb og det faktiske kontoudløb (her
+For brugeren "tyge" stÃ¥r der de krypterede adgangskoder. For Red Hat
+er det lÃ¦ngere end for SuSE, idet Red Hat anvender en bedre
+krypteringsmÃ¥de. Derefter vises antal dage siden 1/1-1970 for sidste
+Ã¦ndring af adgangskoderne. NÃ¦ste felt viser antal dage siden sidste
+Ã¦ndring af adgangskode. Derefter antal dage mellem at der sendes en
+advarsel til brugeren om kontoudlÃ¸b og det faktiske kontoudlÃ¸b (her
 99999 dage dvs. det anvendes ikke). Sidst anvendte felt (7) er antal
 dage siden 1/1-1970 til kontoen bliver lukket. Endelig er der et felt
 som ikke anvendes.
 </para>
 <para>
-Hvis din maskine ikke kører skygge-adgangskoder, og vil du dette, så kør
+Hvis din maskine ikke kÃ¸rer skygge-adgangskoder, og vil du dette, sÃ¥ kÃ¸r
 <command>/usr/sbin/pwconv</command> som brugeren root. Tilsvarende
-findes <command>/usr/sbin/pwunconv</command> til at få adgangskoderne gemt
+findes <command>/usr/sbin/pwunconv</command> til at fÃ¥ adgangskoderne gemt
 i selve passwd-filen og ikke shadow-filen.
 </para>
 </sect1>
@@ -130,16 +130,16 @@ i selve passwd-filen og ikke shadow-filen.
 <indexterm><primary>Brugergrupper</primary></indexterm>
 <indexterm><primary>Grupper</primary></indexterm>
 <para>
-Hver person er med i én eller flere grupper, og det bruger man til
-at udskille, hvem der har adgang til hvilke dataområder. Kommandoen
-<command>chmod g+w fil</command> vil f.eks. gøre, at andre brugere, som
+Hver person er med i Ã©n eller flere grupper, og det bruger man til
+at udskille, hvem der har adgang til hvilke dataomrÃ¥der. Kommandoen
+<command>chmod g+w fil</command> vil f.eks. gÃ¸re, at andre brugere, som
 er i samme gruppe som ejeren af filen, kan skrive i
 <filename>fil</filename>.
 </para>
 
 <para>
 Hver linje i <filename>/etc/group</filename> svarer til en gruppe. Et
-eksempel på en gruppe kan være:
+eksempel pÃ¥ en gruppe kan vÃ¦re:
 </para>
 
 <programlisting>
@@ -152,7 +152,7 @@ eventuel adgangkode for gruppen (anvendes ved skift til ny gruppe med
 <command>newgrp</command>) findes i shadow-filen
 <filename>/etc/gshadow</filename>. Hvis "x" blev fjernet,
 anvendes gruppe-adgangskoder ikke.
-Til sidst på linjen står der de login-navne (fra
+Til sidst pÃ¥ linjen stÃ¥r der de login-navne (fra
 passwd-filen) som er medlemmer af gruppen.
 </para>
 </sect1>
@@ -163,7 +163,7 @@ passwd-filen) som er medlemmer af gruppen.
 <indexterm><primary>/etc/gshadow</primary></indexterm>
 
 <para>
-Filen <filename>/etc/gshadow</filename> følger nøje
+Filen <filename>/etc/gshadow</filename> fÃ¸lger nÃ¸je
 <filename>/etc/group</filename> med en linje pr. gruppe.
 Ideen er ligesom med <filename>/etc/shadow</filename> at gemme
 gruppe-information for brugerne.
@@ -186,7 +186,7 @@ gruppe-information for brugerne.
 <para>
 Filen <filename>/etc/fstab</filename> indeholder information om de
 disk-partitioner, som skal eller kan monteres ved systemopstart.
-Et eksempel kan være:
+Et eksempel kan vÃ¦re:
 </para>
 
 <programlisting>
@@ -203,26 +203,26 @@ none        /dev/pts     devpts  mode=0622       0 0
 <para>
 De to sidste linjer er noget Red Hat automatisk selv har sat op.
 Det ser vi bort fra. Derefter kan vi se, at der mindst er to harddiske i
-maskinen &ndash; hda og hdb. Den sekundære harddisk på første IDE-controller,
-dvs. hdb har mindst tre partitioner. Swap-partitionen er sat op på den første
-partition <filename>/dev/hdb1</filename>, og de to næste partitioner
-på hdb, dvs. <filename>/dev/hdb2</filename> og
+maskinen &ndash; hda og hdb. Den sekundÃ¦re harddisk pÃ¥ fÃ¸rste IDE-controller,
+dvs. hdb har mindst tre partitioner. Swap-partitionen er sat op pÃ¥ den fÃ¸rste
+partition <filename>/dev/hdb1</filename>, og de to nÃ¦ste partitioner
+pÃ¥ hdb, dvs. <filename>/dev/hdb2</filename> og
 <filename>/dev/hdb3</filename>, er af typen ext2 (Linux-type), og de
-monteres i rækkefølge som vist yderst til højre, dvs.
-<filename>/dev/hdb2</filename> (roden) før
+monteres i rÃ¦kkefÃ¸lge som vist yderst til hÃ¸jre, dvs.
+<filename>/dev/hdb2</filename> (roden) fÃ¸r
 <filename>/dev/hdb3</filename> (brugerens hjemmekatalog i
 <filename>/home</filename>). De to sidste linjer viser, at en
 almindelig bruger (user) kan montere cd-rom'er og disketter, men at det ikke
-gøres automatisk (noauto) under opstart. cd-rom'en vil efter
+gÃ¸res automatisk (noauto) under opstart. cd-rom'en vil efter
 <command>mount /mnt/cdrom</command> kunne findes under
 <filename>/mnt/cdrom</filename>.
-Brug i øvrigt <command>man mount</command>.
+Brug i Ã¸vrigt <command>man mount</command>.
 </para>
 
 <para>
-Det bør nok nævnes, at brugere med scsi-diske bør bruge UUID i stedet
-for device-navne til at identificere devices. Ellers opfører hele
-filsystemet sig underligt, hvis én af diskene på scsi-controlleren går
+Det bÃ¸r nok nÃ¦vnes, at brugere med scsi-diske bÃ¸r bruge UUID i stedet
+for device-navne til at identificere devices. Ellers opfÃ¸rer hele
+filsystemet sig underligt, hvis Ã©n af diskene pÃ¥ scsi-controlleren gÃ¥r
 ned. Se <command>man fstab</command>.
 </para>
 
@@ -234,10 +234,10 @@ ned. Se <command>man fstab</command>.
 <indexterm><primary>hosts</primary></indexterm>
 
 <para>
-Hosts-filen anvendes ofte på maskiner, som ikke har navneserver
-(eng. DNS-server eller name server) til rådighed. Man skriver en
-IP-adresse, det fulde netværksnavn og et eventuelt alias. Et eksempel
-kan være:
+Hosts-filen anvendes ofte pÃ¥ maskiner, som ikke har navneserver
+(eng. DNS-server eller name server) til rÃ¥dighed. Man skriver en
+IP-adresse, det fulde netvÃ¦rksnavn og et eventuelt alias. Et eksempel
+kan vÃ¦re:
 </para>
 
 <programlisting>
@@ -251,20 +251,20 @@ kan være:
 <para>
 IP-adressen 127.0.0.1 er en speciel "loopback"-adresse, som ikke
 anvendes til andet end, at Linux-kernen hurtigt kan kommunikere med
-sig selv. De fire maskiner linus, alan, richard og eric har fået
+sig selv. De fire maskiner linus, alan, richard og eric har fÃ¥et
 IP-adresser i 192.168.0.*, som er et lukket net &ndash; dvs. de adresser er
-garanteret ikke-eksisterende på internettet. <!-- Se mere i xref
+garanteret ikke-eksisterende pÃ¥ internettet. <!-- Se mere i xref
 linkend="private-ip-adresser". -->
 </para>
 
-<para> Skal du selv sætte et hjemmedomæne op, hvor maskinerne ikke
-skal være kendte på internettet, og du vil være sikker på at dit
-hjemmedomænenavn ikke er kendt på internettet, så brug f.eks. domænenavnet
-".hjemme" eller som her ".intranet", så linus-maskinen bliver til
-"linus.intranet" &ndash; så får du aldrig overlap med en anden maskine. Skal
-maskinerne være kendt på internettet, så skal du ansøge om et domæne,
-sætte DNS op, og erstatte ".intranet" med ".MITDANSKEDOMAENE.dk", eller
-hvad du nu vælger.
+<para> Skal du selv sÃ¦tte et hjemmedomÃ¦ne op, hvor maskinerne ikke
+skal vÃ¦re kendte pÃ¥ internettet, og du vil vÃ¦re sikker pÃ¥ at dit
+hjemmedomÃ¦nenavn ikke er kendt pÃ¥ internettet, sÃ¥ brug f.eks. domÃ¦nenavnet
+".hjemme" eller som her ".intranet", sÃ¥ linus-maskinen bliver til
+"linus.intranet" &ndash; sÃ¥ fÃ¥r du aldrig overlap med en anden maskine. Skal
+maskinerne vÃ¦re kendt pÃ¥ internettet, sÃ¥ skal du ansÃ¸ge om et domÃ¦ne,
+sÃ¦tte DNS op, og erstatte ".intranet" med ".MITDANSKEDOMAENE.dk", eller
+hvad du nu vÃ¦lger.
 </para>
 
 <para>
@@ -283,8 +283,8 @@ systemet automatisk hosts-filen ved ssh, telnet, ftp, ping osv.
  <secondary>angiv ekstern DNS</secondary>
 </indexterm>
 <para>
-Resolver-filen viser, hvilken maskine der er navneserver, så man kan
-slå en vilkårlig adresse op på internettet. Et eksempel kan være
+Resolver-filen viser, hvilken maskine der er navneserver, sÃ¥ man kan
+slÃ¥ en vilkÃ¥rlig adresse op pÃ¥ internettet. Et eksempel kan vÃ¦re
 </para>
 
 <programlisting>
@@ -294,15 +294,15 @@ nameserver 129.142.6.65
 </programlisting>
 
 <para>
-Første linje (search) viser domæne-navnet for netværket. De to næste
+FÃ¸rste linje (search) viser domÃ¦ne-navnet for netvÃ¦rket. De to nÃ¦ste
 linjer er to navneservere (danpost-maskiner). Laver du
 internet-opkobling til din egen ISP, skal du have nogle andre
-IP-adresser end de viste. <!--Se også xref linkend="PPP".-->
+IP-adresser end de viste. <!--Se ogsÃ¥ xref linkend="PPP".-->
 </para>
 
 <para>
 NB: Brug <emphasis>IKKE</emphasis> ekstra nuller til at udfylde de
-cifre, der ikke bruges. I det ovenstående må du ikke skrive
+cifre, der ikke bruges. I det ovenstÃ¥ende mÃ¥ du ikke skrive
 </para>
 
 <programlisting>
@@ -335,8 +335,8 @@ nameserver 129.142.006.065
   <secondary>stop server</secondary>
 </indexterm>
 <para>
-Denne fil er vigtig for din netværks-sikkerhed, idet den viser en stribe
-af de services, som Linux-maskinen tilbyder netværket.
+Denne fil er vigtig for din netvÃ¦rks-sikkerhed, idet den viser en stribe
+af de services, som Linux-maskinen tilbyder netvÃ¦rket.
 Du vil f.eks. finde disse linjer:
 </para>
 
@@ -346,11 +346,11 @@ telnet  stream  tcp     nowait  root    /usr/sbin/tcpd  in.telnetd
 </programlisting>
 
 <para>
-som viser, at du modtager ftp- og telnet-login. Hvis du kan undvære
-disse services, så udkommentér dem ved at sætte et # foran dem.
-Næste gang du genstarter maskinen (eller inet-dæmonen), kan man ikke logge
-på via <command>telnet</command>.
-Prøv <command>man inetd</command> for at læse mere.
+som viser, at du modtager ftp- og telnet-login. Hvis du kan undvÃ¦re
+disse services, sÃ¥ udkommentÃ©r dem ved at sÃ¦tte et # foran dem.
+NÃ¦ste gang du genstarter maskinen (eller inet-dÃ¦monen), kan man ikke logge
+pÃ¥ via <command>telnet</command>.
+PrÃ¸v <command>man inetd</command> for at lÃ¦se mere.
 </para>
 </sect1>
 
@@ -362,12 +362,12 @@ Prøv <command>man inetd</command> for at læse mere.
 
 <para>
 <filename>/etc/issue</filename> og <filename>/etc/issue.net</filename>
-kan være en god måde for en cracker at finde ud af hvilket system og hvilken
-version af Linux man kører. <filename>/etc/issue</filename> vises på
-skærmen lige op over login-prompten og
-<filename>/etc/issue.net</filename> vises blandt andet når man logger
-på systemet via <command>telnet</command>. Derfor fjern al tekst i
-begge filer og sæt havelåger foran dette i
+kan vÃ¦re en god mÃ¥de for en cracker at finde ud af hvilket system og hvilken
+version af Linux man kÃ¸rer. <filename>/etc/issue</filename> vises pÃ¥
+skÃ¦rmen lige op over login-prompten og
+<filename>/etc/issue.net</filename> vises blandt andet nÃ¥r man logger
+pÃ¥ systemet via <command>telnet</command>. Derfor fjern al tekst i
+begge filer og sÃ¦t havelÃ¥ger foran dette i
 <filename>/etc/rc.local</filename> (SuSE <filename>/etc/rc.d/boot.local</filename>):
 </para>
 <indexterm>
@@ -395,16 +395,16 @@ fi
 <indexterm><primary>/etc/rc.d/</primary></indexterm>
 <para>
 I mappen <filename>/etc/rc.d/</filename> findes styringen af
-hvilke programmer, der automatisk startes op, når maskinen startes. Der
+hvilke programmer, der automatisk startes op, nÃ¥r maskinen startes. Der
 er lidt forskel mellem Red Hat og SuSE, men begge har samme struktur,
-kaldes SysV (udtales system fem), i modsætning til BSD.
+kaldes SysV (udtales system fem), i modsÃ¦tning til BSD.
 </para>
 
 <sect2 id="RH-etc-rc-d-filen">
 <title>Red Hat-opstartsfiler</title>
 
 <para>
-Red Hat har følgende indhold af <filename>/etc/rc.d/</filename>
+Red Hat har fÃ¸lgende indhold af <filename>/etc/rc.d/</filename>
 </para>
 
 <programlisting>
@@ -415,26 +415,26 @@ rc      rc.sysinit  rc1.d  rc3.d  rc5.d
 <para>hvor <filename>rc0.d</filename> op til <filename>rc6.d</filename> er
 mapper med links for hvert af de syv runlevels. Links laves til
 <filename>init.d</filename>, der indeholder script-filer, som starter
-programmerne. Se i øvrigt <xref linkend="runlevel"/>.
+programmerne. Se i Ã¸vrigt <xref linkend="runlevel"/>.
 </para>
 
 <indexterm><primary>Tastatur</primary><secondary>start</secondary></indexterm>
 <indexterm><primary>Mus</primary><secondary>start</secondary></indexterm>
 
 <para>
-Filen <filename>rc.sysinit</filename> ændrer man oftest ikke, idet den
+Filen <filename>rc.sysinit</filename> Ã¦ndrer man oftest ikke, idet den
 styrer opstart af tastatur, tjek af filsystemer, montering af swap, samt
 andet basalt.
 </para>
 
 <para>
-I filen <filename>rc.local</filename> (SuSE <filename>/etc/rc.d/boot.local</filename>) kan man selv tilføje kommandoer, som
+I filen <filename>rc.local</filename> (SuSE <filename>/etc/rc.d/boot.local</filename>) kan man selv tilfÃ¸je kommandoer, som
 skal startes efter de almindelige programmer.
 </para>
 
 <para>
-Alle de ovenstående filer kan læses af alle på et Red Hat-system,
-mens SuSE har valgt, at kun "root" kan læse de filer.
+Alle de ovenstÃ¥ende filer kan lÃ¦ses af alle pÃ¥ et Red Hat-system,
+mens SuSE har valgt, at kun "root" kan lÃ¦se de filer.
 </para>
 </sect2>
 
@@ -442,7 +442,7 @@ mens SuSE har valgt, at kun "root" kan læse de filer.
 <title>SuSE-opstartsfiler</title>
 
 <para>
-SuSE kan have følgende indhold af <filename>/etc/rc.d/</filename>
+SuSE kan have fÃ¸lgende indhold af <filename>/etc/rc.d/</filename>
 </para>
 
 <programlisting>
@@ -458,14 +458,14 @@ cdb         ipfwadm     powerfail   rc6.d       single
 </programlisting>
 
 <para>
-Som det ses, er der mapper rcX.d (hvor X går fra 0 til 6),
-med links for hvert af de syv runlevels, ligesom Red Hat. I modsætning
+Som det ses, er der mapper rcX.d (hvor X gÃ¥r fra 0 til 6),
+med links for hvert af de syv runlevels, ligesom Red Hat. I modsÃ¦tning
 til Red Hat er der i SuSE intet <filename>init.d</filename>-katalog,
 og script-filerne, der linkes til, findes direkte i
 <filename>/etc/rc.d/</filename>. Indholdet af hver af opstartsfilerne,
 f.eks. <filename>autofs</filename>, er kommandoer til at starte,
-stoppe, tjekke og genstarte den pågældende service. Man skriver
-således <command>/etc/rc.d/autofs stop</command> for at stoppe autofs
+stoppe, tjekke og genstarte den pÃ¥gÃ¦ldende service. Man skriver
+sÃ¥ledes <command>/etc/rc.d/autofs stop</command> for at stoppe autofs
 og tilsvarende <command>/etc/rc.d/autofs start</command> for at starte
 den igen.
 </para>
@@ -481,7 +481,7 @@ I Red Hat er mappen <filename>/etc/sysconfig/</filename> vigtig. Se f.eks.
 <ulink
 url="http://www.comptechdoc.org/os/linux/howlinuxworks/linux_hlsysconfig.html">
 http://www.comptechdoc.org/os/linux/howlinuxworks/linux_hlsysconfig.html</ulink>
-for en nærmere gennemgang af de enkelte filtræer i
+for en nÃ¦rmere gennemgang af de enkelte filtrÃ¦er i
 /etc/sysconfig.
 </para>
 
@@ -491,18 +491,18 @@ clock  init     mouse     network-scripts  soundcard
 </programlisting>
 
 <para>
-For Red Hat vil alle filer i dette katalog indeholde opsætningsparametre
+For Red Hat vil alle filer i dette katalog indeholde opsÃ¦tningsparametre
 og er koblet til filerne i <filename>/etc/rc.d/init.d</filename>. F.eks. vil
 <filename>mouse</filename> indeholde musetype.
 </para>
 
 <para>
-Et skridt længere nede i filtræet finder du
+Et skridt lÃ¦ngere nede i filtrÃ¦et finder du
 mappen <filename>/etc/sysconfig/network-scripts</filename>, som
 f.eks. kan indeholde:
 </para>
 
-<indexterm><primary>IP-adresser</primary><secondary>opsætningsfil</secondary></indexterm>
+<indexterm><primary>IP-adresser</primary><secondary>opsÃ¦tningsfil</secondary></indexterm>
 
 <programlisting>
 chat-ppp0   ifcfg-ppp0   ifdown-ppp    ifup-plip    network-functions
@@ -530,35 +530,35 @@ internettet, ender du med at skulle rette i filer her.
 <indexterm><primary>Klokken</primary></indexterm>
 
 <para>
-Hvis man har Windows installeret på samme maskine kan man ikke køre med
+Hvis man har Windows installeret pÃ¥ samme maskine kan man ikke kÃ¸re med
 GMT som tiden i BIOS. Windows kan ikke dette. Det er ellers smart da Linux
-så automatisk styrer sommertid perfekt.
+sÃ¥ automatisk styrer sommertid perfekt.
 </para>
 
 <para>
-I filen <filename>/etc/sysconfig/clock</filename> sætter man
+I filen <filename>/etc/sysconfig/clock</filename> sÃ¦tter man
 tidsstyringen op. Der er tre parametre:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-<literal>zone="Europe/Copenhagen"</literal> &ndash; sætter tidszonen til dansk zone.
+<literal>zone="Europe/Copenhagen"</literal> &ndash; sÃ¦tter tidszonen til dansk zone.
  </para>
 </listitem>
 <listitem>
  <para>
-<literal>utc=false</literal> &ndash; UTC sættes til "true", hvis du vil
+<literal>utc=false</literal> &ndash; UTC sÃ¦ttes til "true", hvis du vil
 have BIOS-tiden til at opfattes som UTC-tid (GMT-tid).
-Med "true" fungerer håndtering af sommertid perfekt.
-Hvis du har Windows installeret, så skal du køre med "false",
-da Windows ellers vil køre med en eller to timers forskydelse af tiden.
-Windows kan ikke køre med "utc=true".
+Med "true" fungerer hÃ¥ndtering af sommertid perfekt.
+Hvis du har Windows installeret, sÃ¥ skal du kÃ¸re med "false",
+da Windows ellers vil kÃ¸re med en eller to timers forskydelse af tiden.
+Windows kan ikke kÃ¸re med "utc=true".
  </para>
 </listitem>
 <listitem>
  <para>
-<literal>arc=false</literal> &ndash; Dette anvendes kun på Linux til Alpha. Se mere på <ulink 
+<literal>arc=false</literal> &ndash; Dette anvendes kun pÃ¥ Linux til Alpha. Se mere pÃ¥ <ulink 
 url="http://www.comptechdoc.org/os/linux/howlinuxworks/linux_hlsysconfig.html">
 http://www.comptechdoc.org/os/linux/howlinuxworks/linux_hlsysconfig.html</ulink>
 
@@ -583,13 +583,13 @@ Crontab-systemet og filstyring er forklaret i <xref linkend="crontab"/>.
 <title>/etc/sendmail.cf</title>
 <indexterm><primary>/etc/sendmail.cf</primary></indexterm>
 <indexterm><primary>SMTP</primary></indexterm>
-<indexterm><primary>E-post-opsætning</primary></indexterm>
-<indexterm><primary>Sendmail</primary><secondary>opsætningsfil</secondary></indexterm>
+<indexterm><primary>E-post-opsÃ¦tning</primary></indexterm>
+<indexterm><primary>Sendmail</primary><secondary>opsÃ¦tningsfil</secondary></indexterm>
 
 <para>
-Sendmail er det gode gamle postprogram til Linux, som desværre tit
-viser sig at have sikkerhedsfejl.  Opsætningsfilen til sendmail er
-notorisk svær, og du bør ikke rette ret meget i din.  Du kan dog med
+Sendmail er det gode gamle postprogram til Linux, som desvÃ¦rre tit
+viser sig at have sikkerhedsfejl.  OpsÃ¦tningsfilen til sendmail er
+notorisk svÃ¦r, og du bÃ¸r ikke rette ret meget i din.  Du kan dog med
 fordel rette feltet DS til
 </para>
 
@@ -610,11 +610,11 @@ hvis du sender post til din internet-udbyder, og denne har en hurtig
 <indexterm><primary>E-post</primary><secondary>skyggeadresser</secondary></indexterm>
 
 <para>
-Hvis du har brug for at have nem adgang til at lave post-aliaser, så
+Hvis du har brug for at have nem adgang til at lave post-aliaser, sÃ¥
 breve til &lt;web@sslug.dk&gt; automatisk bliver videresendt
 (eng. forwarded) til &lt;tyge@sslug.dk&gt;, mens f.eks. alle breve
-til "root" også skal ende hos "tyge", så kan du i
-<filename>/etc/aliases</filename> nemt anføre dette.
+til "root" ogsÃ¥ skal ende hos "tyge", sÃ¥ kan du i
+<filename>/etc/aliases</filename> nemt anfÃ¸re dette.
 </para>
 
 <programlisting>
@@ -626,7 +626,7 @@ root: tyge
  <secondary>newaliases</secondary>
 </indexterm>
 <para>
-Efter du har redigeret filen, skal du køre
+Efter du har redigeret filen, skal du kÃ¸re
 <command>newaliases</command>-kommandoen.
 </para>
 </sect1>
@@ -635,12 +635,12 @@ Efter du har redigeret filen, skal du køre
 <sect1 id="etc-printcap-filen">
 <title>/etc/printcap</title>
 <indexterm><primary>/etc/printcap</primary></indexterm>
-<indexterm><primary>Printer</primary><secondary>opsætningsfil</secondary></indexterm>
+<indexterm><primary>Printer</primary><secondary>opsÃ¦tningsfil</secondary></indexterm>
 
 <para>
 For hver printer vil programmet <command>printtool</command> i Red Hat
-tilføje et afsnit til <filename>/etc/printcap</filename> med definition
-af printeren, såsom
+tilfÃ¸je et afsnit til <filename>/etc/printcap</filename> med definition
+af printeren, sÃ¥som
 </para>
 
 <programlisting>
@@ -654,15 +654,15 @@ lp:\
 </programlisting>
 
 <para>
-Her er "sd" spool-directory. Printeren sidder på
+Her er "sd" spool-directory. Printeren sidder pÃ¥
 <filename>/dev/lp0</filename>, og der printes med filter som vist
 med "if".
 </para>
 
 <para>
-Det skal nævnes at flere Linux-distributioner er ved at gå væk fra
-denne måde at sætte printere op på. Dels er CUPS-projektet i fuld gang
-og LPRng vinder også indpas (bl.a. i Red Hat 7.0).
+Det skal nÃ¦vnes at flere Linux-distributioner er ved at gÃ¥ vÃ¦k fra
+denne mÃ¥de at sÃ¦tte printere op pÃ¥. Dels er CUPS-projektet i fuld gang
+og LPRng vinder ogsÃ¥ indpas (bl.a. i Red Hat 7.0).
 </para>
 
 </sect1>
@@ -670,11 +670,11 @@ og LPRng vinder også indpas (bl.a. i Red Hat 7.0).
 <sect1 id="etc-conf-modules-filen">
 <title>/etc/conf.modules</title>
 <indexterm><primary>/etc/conf.modules</primary></indexterm>
-<indexterm><primary>Moduler</primary><secondary>opsætningsfil</secondary></indexterm>
+<indexterm><primary>Moduler</primary><secondary>opsÃ¦tningsfil</secondary></indexterm>
 
 <para>
-Denne fil indeholder opsætning og parametre til de moduler, som kan
-læses ind og ud af systemet uden at genstarte. Der er mere forklaring i
+Denne fil indeholder opsÃ¦tning og parametre til de moduler, som kan
+lÃ¦ses ind og ud af systemet uden at genstarte. Der er mere forklaring i
 <xref linkend="kerne-moduler"/>.
 </para>
 </sect1>
@@ -682,12 +682,12 @@ læses ind og ud af systemet uden at genstarte. Der er mere forklaring i
 <sect1 id="etc-securetty-filen">
 <title>/etc/securetty</title>
 <indexterm><primary>/etc/securetty</primary></indexterm>
-<indexterm><primary>telnet</primary><secondary>spærring</secondary></indexterm>
+<indexterm><primary>telnet</primary><secondary>spÃ¦rring</secondary></indexterm>
 <indexterm><primary>root</primary><secondary>kan ikke logge ind</secondary></indexterm>
 
 <para>
-I <filename>/etc/securetty</filename> anføres alle de terminaler,
-hvorfra root-brugeren kan logge ind. Filen ser ofte således ud
+I <filename>/etc/securetty</filename> anfÃ¸res alle de terminaler,
+hvorfra root-brugeren kan logge ind. Filen ser ofte sÃ¥ledes ud
 </para>
 
 <programlisting>
@@ -703,8 +703,8 @@ tty8
 
 <para>
 <filename>tty1-tty8</filename> svarer til de terminal-vinduer som er
-på selve maskinen. Det er således ikke tilladt for root at logge ind
-via telnet på maskinen, og det bør <emphasis>ikke</emphasis> tillades.
+pÃ¥ selve maskinen. Det er sÃ¥ledes ikke tilladt for root at logge ind
+via telnet pÃ¥ maskinen, og det bÃ¸r <emphasis>ikke</emphasis> tillades.
 </para>
 
 </sect1>
@@ -714,25 +714,25 @@ via telnet på maskinen, og det bør <emphasis>ikke</emphasis> tillades.
 <sect1 id="etc-exports">
 <title>/etc/exports</title>
 <indexterm><primary>/etc/exports</primary></indexterm>
-<indexterm><primary>NFS</primary><secondary>opsætningsfil</secondary></indexterm>
+<indexterm><primary>NFS</primary><secondary>opsÃ¦tningsfil</secondary></indexterm>
 
 <para>
-Hvis din maskine skal køre NFS, dvs. kunne være disk-server for andre
+Hvis din maskine skal kÃ¸re NFS, dvs. kunne vÃ¦re disk-server for andre
 Unix-maskiner, skal du i <filename>/etc/exports</filename> skrive,
 hvilke mapper du vil lade andre montere. For at det virker, skal du
-have "portmap" og "nfs" kørende.
+have "portmap" og "nfs" kÃ¸rende.
 </para>
 
 <para>
-Desuden kan du anvende <command>man exports</command> for at lære
+Desuden kan du anvende <command>man exports</command> for at lÃ¦re
 syntaks af <filename>/etc/exports</filename>. Som eksempel viser vi
-hvordan du lader alle maskiner læse (ikke skrive) fra dit cd-rom-drev, som
-du her har monteret fast på <filename>/mnt/cdrom</filename>. Derudover
-lader vi maskiner i domænet kongeh.dk montere hele
-<filename>/usr/local/</filename> med både læse- og skrive-rettigheder,
-så alle maskinerne kan lægge nyt programmel ind her, og programmellet anvendes
-så på alle klient-maskinerne. Husk, at du måske også skal tænke over
-sikkerheden, når du distribuerer data over netværket. Giv kun adgang
+hvordan du lader alle maskiner lÃ¦se (ikke skrive) fra dit cd-rom-drev, som
+du her har monteret fast pÃ¥ <filename>/mnt/cdrom</filename>. Derudover
+lader vi maskiner i domÃ¦net kongeh.dk montere hele
+<filename>/usr/local/</filename> med bÃ¥de lÃ¦se- og skrive-rettigheder,
+sÃ¥ alle maskinerne kan lÃ¦gge nyt programmel ind her, og programmellet anvendes
+sÃ¥ pÃ¥ alle klient-maskinerne. Husk, at du mÃ¥ske ogsÃ¥ skal tÃ¦nke over
+sikkerheden, nÃ¥r du distribuerer data over netvÃ¦rket. Giv kun adgang
 til data til de personer, som skal have den adgang.
 </para>
 
@@ -746,16 +746,16 @@ til data til de personer, som skal have den adgang.
 <title>/etc/X11/XF86Config - /etc/XF86Config</title>
 <indexterm><primary>/etc/XF86Config</primary></indexterm>
 <indexterm><primary>/etc/X11/XF86Config</primary></indexterm>
-<indexterm><primary>X</primary><secondary>opsætningsfil</secondary></indexterm>
+<indexterm><primary>X</primary><secondary>opsÃ¦tningsfil</secondary></indexterm>
 
 <para>
-I Red Hat er den basale X Window-opsætningsfil
+I Red Hat er den basale X Window-opsÃ¦tningsfil
 <filename>XF86Config</filename> lagt i
 <filename>/etc/X11/XF86Config</filename>. I SuSE er den
 i <filename>/etc/XF86Config</filename> for XFree86 version 3.x og
 i <filename>/etc/X11/XF86Config</filename> for version 4.x.
 Syntaksen findes ved at skrive:
-<command>man XF86Config</command>. <!-- men der er mere hjælp i
+<command>man XF86Config</command>. <!-- men der er mere hjÃ¦lp i
 xref linkend="nulGUIapp".-->
 </para>
 </sect1>
@@ -782,8 +782,8 @@ xref linkend="nulGUIapp".-->
    </indexterm>
 
    <para>
-    Hvis du er logget ind på et Debian-system og har brug for at
-    finde ud af hvilken udgave af Debian det er, så kan du se det
+    Hvis du er logget ind pÃ¥ et Debian-system og har brug for at
+    finde ud af hvilken udgave af Debian det er, sÃ¥ kan du se det
     med kommandoen:
 
 <screen>
@@ -794,7 +794,7 @@ xref linkend="nulGUIapp".-->
    <para>
     Har man brug for at finde oplysninger om versionnummeret for en enkelt
     pakke kan man bruge kommandoen <command>dpkg --status pakkenavn</command>.
-    Dette giver en række status-oplysninger, blandt andet et felt der
+    Dette giver en rÃ¦kke status-oplysninger, blandt andet et felt der
     hedder "Version" som indenholder versionsnummeret for den installerede
     pakke.
    </para>
@@ -819,8 +819,8 @@ xref linkend="nulGUIapp".-->
    </indexterm>
 
    <para>
-    Hvis du er logget ind på et Red Hat-system og har brug for at
-    finde ud af hvilken udgave af Red Hat det er, så kan du se det
+    Hvis du er logget ind pÃ¥ et Red Hat-system og har brug for at
+    finde ud af hvilken udgave af Red Hat det er, sÃ¥ kan du se det
     med kommandoen:
 
 <screen>
@@ -833,20 +833,20 @@ xref linkend="nulGUIapp".-->
     pakke kan man bruge kommandoen <command>rpm --query pakkenavn</command>.
     Dette giver pakkens navn og versionsnummer.  Hvis der er installeret flere
     udgaver af pakken, vil alle de forskellige udgavers versionsnumre blive
-    vist.  Med <command>rpm --query --info pakkenavn</command> kan man få flere
+    vist.  Med <command>rpm --query --info pakkenavn</command> kan man fÃ¥ flere
     oplysninger om pakken.
    </para>
   </sect2>
  </sect1>
 
 <sect1 id="filsystem-videre">
-<title>Videre læsning</title>
+<title>Videre lÃ¦sning</title>
 <para>
-Der er en masse godt om opsætningsfilerne i <filename>/etc</filename>
-at læse på <ulink url="http://ctdp.tripod.com/os/linux/howlinuxworks/index.html">http://ctdp.tripod.com/os/linux/howlinuxworks/index.html</ulink>.
+Der er en masse godt om opsÃ¦tningsfilerne i <filename>/etc</filename>
+at lÃ¦se pÃ¥ <ulink url="http://ctdp.tripod.com/os/linux/howlinuxworks/index.html">http://ctdp.tripod.com/os/linux/howlinuxworks/index.html</ulink>.
 </para>
 <para>
-En anden god kilde er O'Reilly-bogen <emphasis>Linux Device Drivers</emphasis> af Alessandro Rubini & Jonathan Corbet, som kan findes på
+En anden god kilde er O'Reilly-bogen <emphasis>Linux Device Drivers</emphasis> af Alessandro Rubini & Jonathan Corbet, som kan findes pÃ¥
 <ulink url="http://www.xml.com/ldd/chapter/book/">http://www.xml.com/ldd/chapter/book/</ulink>.
 </para>
 

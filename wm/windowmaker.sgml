@@ -15,10 +15,10 @@
 
  <para>
   Window Maker er, ligesom Afterstep, lavet
-  med henblik på at efterligne NeXTSTEP's look and feel. Window Maker
+  med henblik pÃ¥ at efterligne NeXTSTEP's look and feel. Window Maker
   er noget yngre end Afterstep, og har hentet en del inspiration fra
   denne. "Wharfen" er dog erstattet af et noget anderledes docking
-  system, selvom de to ting ved første blik ligner hinanden af
+  system, selvom de to ting ved fÃ¸rste blik ligner hinanden af
   udseende.
  </para>
 
@@ -29,7 +29,7 @@
  </para>
 
  <para>
-  Sådan ser Window Maker ud:
+  SÃ¥dan ser Window Maker ud:
  </para>
 
  <figure id="wmaker-fig" float="1">
@@ -47,7 +47,7 @@
 
   <para>
    Window Maker fulgte med i Red Hat 7.3 som standard, og RPM'ner evirker
-stadig til Red Hat 9. Måske følger den også med andre distributioner. Ellers
+stadig til Red Hat 9. MÃ¥ske fÃ¸lger den ogsÃ¥ med andre distributioner. Ellers
 kan man hente kildeteksten fra <ulink
    url="ftp://windowmaker.org/pub/">ftp://windowmaker.org/pub/</ulink>
    og installere den med kommandoerne:
@@ -62,36 +62,36 @@ su -c "make install"
 
   Disse kommandoer vil installere Window Maker i
   <filename>/usr/local</filename>.  Hvis man vil have filerne til at
-  ligge et andet sted må man give <command>./configure</command>
+  ligge et andet sted mÃ¥ man give <command>./configure</command>
   argumentet <literal>--prefix=/et/andet/sted</literal>.  Hvis man
-  henter en nyere udgave end 0.80.2, så skal man erstatte
+  henter en nyere udgave end 0.80.2, sÃ¥ skal man erstatte
   <literal>0.80.2</literal> med den nyere udgaves versionsnummer i
   kommandoerne ovenfor.
  </para>
 </sect2>    <!--   Installation -->
 
 <sect2 id="wm-windowmaker-opsaetning">
- <title>Opsætning</title>
+ <title>OpsÃ¦tning</title>
 
  <indexterm>
-  <primary>opsætning af</primary>
+  <primary>opsÃ¦tning af</primary>
   <secondary>Window Maker</secondary>
  </indexterm>
 
  <para>
-  Opsætningsværktøjet kommer frem når man dobbeltklikker på denne ikon:
+  OpsÃ¦tningsvÃ¦rktÃ¸jet kommer frem nÃ¥r man dobbeltklikker pÃ¥ denne ikon:
 
   <figure id="wmaker-conf-icon-fig" float="1">
-   <title>Opsætning af WindowMaker</title>
+   <title>OpsÃ¦tning af WindowMaker</title>
    <graphic fileref="wmaker_conf_icon.&magic;" scale="60"></graphic>
   </figure>
  </para>
 
  <para>
-  Man kan også starte det fra menuen ved at vælge punktet "Appearence"
-  -&gt; "Preferences".  Det er indrettet med en vandret række ikoner
+  Man kan ogsÃ¥ starte det fra menuen ved at vÃ¦lge punktet "Appearence"
+  -&gt; "Preferences".  Det er indrettet med en vandret rÃ¦kke ikoner
   der viser symboler for de forskellige underkategorier, f.eks. er der
-  billede af et tastatur der hvor man kan sætte genvejstaster op.
+  billede af et tastatur der hvor man kan sÃ¦tte genvejstaster op.
  </para>
 
  <figure id="wmaker-preferences-fig" float="1">
@@ -101,25 +101,25 @@ su -c "make install"
 
  <para>
   Det anbefales at man kigger alle punkterne igennem, da det ikke er
-  helt indlysende, hvor man finder hvad. Ofte skal Window Maker genstartes før
-  ændringerne træder i kraft. Dette kan gøres fra menuen uden at lukke Window
+  helt indlysende, hvor man finder hvad. Ofte skal Window Maker genstartes fÃ¸r
+  Ã¦ndringerne trÃ¦der i kraft. Dette kan gÃ¸res fra menuen uden at lukke Window
   Maker ned.
   </para>
 
  <para>
-  Opsætningsfilerne gemmes i <filename>~/GNUstep/Defaults</filename> i
+  OpsÃ¦tningsfilerne gemmes i <filename>~/GNUstep/Defaults</filename> i
   brugerens hjemmekatalog.  Man kan godt rette direkte i
-  opsætningsfilerne, hvis man foretrækker det.  Dette er beskrevet i
+  opsÃ¦tningsfilerne, hvis man foretrÃ¦kker det.  Dette er beskrevet i
   <ulink
   url="http://www.windowmaker.org/documentation-userguide-chapter4.html">"Users
-  Guide", kapitel 4</ulink> på Window Makers hjemmeside.
+  Guide", kapitel 4</ulink> pÃ¥ Window Makers hjemmeside.
  </para>
 
    <note>
     <para>
-     OBS! Man bør ikke rette i opsætningsfilerne imens man er inde i Window
-     Maker, da en del opsætning gemmes når man logger ud, således at ens
-     splinternye opsætning bliver overskrevet.
+     OBS! Man bÃ¸r ikke rette i opsÃ¦tningsfilerne imens man er inde i Window
+     Maker, da en del opsÃ¦tning gemmes nÃ¥r man logger ud, sÃ¥ledes at ens
+     splinternye opsÃ¦tning bliver overskrevet.
     </para>
    </note>
 
@@ -132,7 +132,7 @@ su -c "make install"
   </indexterm>
 
   <para>
-   Applikationsmenuen åbnes ved at trykke på F12 eller højreklikke på
+   Applikationsmenuen Ã¥bnes ved at trykke pÃ¥ F12 eller hÃ¸jreklikke pÃ¥
    skrivebordet.
   </para>
 
@@ -142,7 +142,7 @@ su -c "make install"
   </figure>
 
   <para>
-   Man ændrer i menuen ved at gå ind i opsætningsværktøjet under
+   Man Ã¦ndrer i menuen ved at gÃ¥ ind i opsÃ¦tningsvÃ¦rktÃ¸jet under
    det punkt hvor der er billede af en menu:
 
    <figure id="wmaker-menu-icon-fig" float="1">
@@ -153,17 +153,17 @@ su -c "make install"
 
   <para>
    En redigerbar version af applikationsmenuen kommer nu frem. Brug
-   musen til at trække "Run Program" over i den redigérbare menu for
-   at indsætte et nyt punkt.  Dobbeltklik på punktet i menuen for at
+   musen til at trÃ¦kke "Run Program" over i den redigÃ©rbare menu for
+   at indsÃ¦tte et nyt punkt.  Dobbeltklik pÃ¥ punktet i menuen for at
    skrive programmets navn i stedet for "Run Program".  Nu kommer
-   menupunktets egenskaber frem i opsætningsvinduet, og her kan
-   man skrive stien til den applikation, der skal køres, samt definere
-   en tastaturgenvej, hvis det ønskes.
+   menupunktets egenskaber frem i opsÃ¦tningsvinduet, og her kan
+   man skrive stien til den applikation, der skal kÃ¸res, samt definere
+   en tastaturgenvej, hvis det Ã¸nskes.
   </para>
 
   <figure id="wmaker-menu-conf-fig" float="1">
    <title>
-    Et menupunkt fjernes ved at trække det ud af den redigérbare menu
+    Et menupunkt fjernes ved at trÃ¦kke det ud af den redigÃ©rbare menu
     med musen.
    </title>
    <graphic fileref="wmaker_menu_conf.&magic;" scale="60"></graphic>
@@ -174,15 +174,15 @@ su -c "make install"
   <title>Docking</title>
 
   <para>
-   Window Maker har mulighed for at "docke" ikoner for programmer, så
+   Window Maker har mulighed for at "docke" ikoner for programmer, sÃ¥
    man let kan starte de programmer op man anvender tit. Dog vil de
-   fleste nok mene at det kræver lidt forklaring før man kan se
+   fleste nok mene at det krÃ¦ver lidt forklaring fÃ¸r man kan se
    logikken i det.
   </para>
 
   <para>
-   Det første man skal lægge mærke de to ikoner i øverste venstre
-   hhv. højre hjørne.
+   Det fÃ¸rste man skal lÃ¦gge mÃ¦rke de to ikoner i Ã¸verste venstre
+   hhv. hÃ¸jre hjÃ¸rne.
   </para>
 
   <para>
@@ -195,7 +195,7 @@ su -c "make install"
   </figure>
 
   <para>
-   og i højre hjørne er det dock-ikonen
+   og i hÃ¸jre hjÃ¸rne er det dock-ikonen
   </para>
 
   <figure id="wmaker-dock-fig" float="1">
@@ -204,22 +204,22 @@ su -c "make install"
   </figure>
 
   <para>
-   Mht. at docke så virker de næste ens - program-ikoner som indsættes
-   ("dockes") på klipsen bliver kun tilknyttet det aktuelle
-   skrivebord, mens dock-ikoner i højre side gælder for alle
+   Mht. at docke sÃ¥ virker de nÃ¦ste ens - program-ikoner som indsÃ¦ttes
+   ("dockes") pÃ¥ klipsen bliver kun tilknyttet det aktuelle
+   skrivebord, mens dock-ikoner i hÃ¸jre side gÃ¦lder for alle
    skriveborde.
   </para>
 
   <para>
-   Lad os tage et eksempel. Prøv at få menuen op med højre musetast på
-   baggrunden og vælg "Kør" (eller "Run" hvis det er engelsk). Skriv
+   Lad os tage et eksempel. PrÃ¸v at fÃ¥ menuen op med hÃ¸jre musetast pÃ¥
+   baggrunden og vÃ¦lg "KÃ¸r" (eller "Run" hvis det er engelsk). Skriv
    "emacs" for at starte emacs. Nu kommer der et emacs-program op og
-   en ikon med en GNU i bunden af skærmen. Window Maker genkender en
+   en ikon med en GNU i bunden af skÃ¦rmen. Window Maker genkender en
    del programmer i forvejen og kan automagisk tildele dem fornuftige
    ikoner fra ikon-katalogerne
    (bl.a. <filename>/usr/X11R6/share/WindowMaker/Icons</filename>).
-   Prøv at minimere emacs ved at trykke på knappen i øverste venstre
-   hjørne. Nu skulle der gerne være to GNU-ikoner i bunden af skærmen.
+   PrÃ¸v at minimere emacs ved at trykke pÃ¥ knappen i Ã¸verste venstre
+   hjÃ¸rne. Nu skulle der gerne vÃ¦re to GNU-ikoner i bunden af skÃ¦rmen.
    Det ikon uden tekst i toppen anvendes til at docke programmet, men
    det med tekst svarer til det emacs-program som er startet
    op.
@@ -227,8 +227,8 @@ su -c "make install"
 
   <para>
    Flyt nu med musens venstre knap nede GNU-ikonet uden tekst op under
-   de ikoner der allerede er i højre side (eller oppe ved klipsen i
-   venstre hjørne). Ikonerne bør nu se ud som følger i højre side.
+   de ikoner der allerede er i hÃ¸jre side (eller oppe ved klipsen i
+   venstre hjÃ¸rne). Ikonerne bÃ¸r nu se ud som fÃ¸lger i hÃ¸jre side.
 
    <figure id="wmaker-emacsdocked-fig" float="1">
     <title>Emacs docked</title>
@@ -237,41 +237,41 @@ su -c "make install"
   </para>
 
   <para>
-   Man kan ændre ikon eller ændre i kommandoen der bliver udført, ved
-   at højreklikke på ikonen i docken, og vælge "Settings". Flere ikoner kan
-   downloades på 
+   Man kan Ã¦ndre ikon eller Ã¦ndre i kommandoen der bliver udfÃ¸rt, ved
+   at hÃ¸jreklikke pÃ¥ ikonen i docken, og vÃ¦lge "Settings". Flere ikoner kan
+   downloades pÃ¥ 
    <ulink
    url="http://heily.com/mark/projects/wmaker-icons/">http://heily.com/mark/projects/wmaker-icons/</ulink>
 </para>
 
   <para>
    En af de underlige ting med dock-funktionen er at man nu med det
-   nye ikon kan gå der hen og trykke med højre museknap og i menuen
-   vælge "Kør". Dette starter en ny emacs op. Dobbelt-klipper man på
+   nye ikon kan gÃ¥ der hen og trykke med hÃ¸jre museknap og i menuen
+   vÃ¦lge "KÃ¸r". Dette starter en ny emacs op. Dobbelt-klipper man pÃ¥
    GNU-ikonet starter man ikke en ny emacs op som mange ville forvente
-   - man går til en af som allerede er startet op (og vist som ikon i
-   bunden af skærmen). Denne opførsel kan man heldigvis ændre til at
-   der skal startes en ny instans op af programmet nå man
-   dobbelt-klikker på det dockede ikon. På en af GNU-ikonerne i bunden
-   af skærmen eller på rammen af et åbent Emacs-program vælges
-   "Attributter" og i fanebladet i menuen der kommer op vælges
-   "Specifikt for program". Sæt mærket i "No application icon" og vælg
-   "Anvend" og "Gem". Herefter kan man med dobbeltklik på det dockede
-   GNU-Emacs ikon i højre side starte nye Emacs-programmer.
+   - man gÃ¥r til en af som allerede er startet op (og vist som ikon i
+   bunden af skÃ¦rmen). Denne opfÃ¸rsel kan man heldigvis Ã¦ndre til at
+   der skal startes en ny instans op af programmet nÃ¥ man
+   dobbelt-klikker pÃ¥ det dockede ikon. PÃ¥ en af GNU-ikonerne i bunden
+   af skÃ¦rmen eller pÃ¥ rammen af et Ã¥bent Emacs-program vÃ¦lges
+   "Attributter" og i fanebladet i menuen der kommer op vÃ¦lges
+   "Specifikt for program". SÃ¦t mÃ¦rket i "No application icon" og vÃ¦lg
+   "Anvend" og "Gem". Herefter kan man med dobbeltklik pÃ¥ det dockede
+   GNU-Emacs ikon i hÃ¸jre side starte nye Emacs-programmer.
   </para>
 
   <para>
-   En anden underlig ting ved docken er at den ikke virker på alle
-   applikationer, eller den opfører sig i hvert fald mærkeligt nu og
-   da.  Man kan ikke først docke en netscape 6 og derefter en mozilla
+   En anden underlig ting ved docken er at den ikke virker pÃ¥ alle
+   applikationer, eller den opfÃ¸rer sig i hvert fald mÃ¦rkeligt nu og
+   da.  Man kan ikke fÃ¸rst docke en netscape 6 og derefter en mozilla
    - de tror de er den samme applikation, og der kommer derfor ikke
-   nogen ikon man kan docke, når man starter mozilla efter at netscape
-   6 allerede er docket. Man kan se at der lige når at komme en dock
-   ikon, men den forsvinder så over i den eksisterende.
+   nogen ikon man kan docke, nÃ¥r man starter mozilla efter at netscape
+   6 allerede er docket. Man kan se at der lige nÃ¥r at komme en dock
+   ikon, men den forsvinder sÃ¥ over i den eksisterende.
   </para>
 
   <para>
-  Løsning: Start og dock Mozilla normalt. Start nu netscape med kommandoen
+  LÃ¸sning: Start og dock Mozilla normalt. Start nu netscape med kommandoen
   </para>
   <screen>
   netscape --name netscape
@@ -282,45 +282,45 @@ su -c "make install"
 
   <para>
    Et andet eksempel er Eterm (se julekalenderen fra den 15. december
-   for nærmere information om Eterm). Eterm kan fint dockes, men det
-   er kun imens programmet er åbent at ikonen bevares. Når der ikke er
-   nogen Eterm åben, bruges window makers standard ikon i stedet.
+   for nÃ¦rmere information om Eterm). Eterm kan fint dockes, men det
+   er kun imens programmet er Ã¥bent at ikonen bevares. NÃ¥r der ikke er
+   nogen Eterm Ã¥ben, bruges window makers standard ikon i stedet.
   </para>
 
   <figure id="medetermaaben-fig" float="1">
-   <title>Eterm ikon når Eterm kører</title>
+   <title>Eterm ikon nÃ¥r Eterm kÃ¸rer</title>
    <graphic fileref="medetermaaben.&magic;" scale="60"></graphic>
   </figure>
 
   <figure id="medetermlukket-fig" float="1">
-   <title>Eterm ikon når Eterm lukkes:</title>
+   <title>Eterm ikon nÃ¥r Eterm lukkes:</title>
    <graphic fileref="medetermlukket.&magic;" scale="60"></graphic>
   </figure>
 
   <para>
-  Dette kan naturligvis løses ved at tildele programmet en anden ikon.
+  Dette kan naturligvis lÃ¸ses ved at tildele programmet en anden ikon.
   </para>
 
   <para>
-   Programmet ImageMagick (display) gør noget lignende, blot kan det
-   slet ikke startes fra docken efterfølgende.  Tekstbaserede
-   programmer som skal udføres i en xterm (f.eks. pine) virker vist
-   heller ikke så godt.  Men de fleste programmer docker uden
+   Programmet ImageMagick (display) gÃ¸r noget lignende, blot kan det
+   slet ikke startes fra docken efterfÃ¸lgende.  Tekstbaserede
+   programmer som skal udfÃ¸res i en xterm (f.eks. pine) virker vist
+   heller ikke sÃ¥ godt.  Men de fleste programmer docker uden
    problemer.
   </para>
 
   <para>
-   Endelig kan det nævnes at man "undocker" (fjerner) et ikon ved at
+   Endelig kan det nÃ¦vnes at man "undocker" (fjerner) et ikon ved at
    hive det ud af det sted ikonet er docket. En ikon man gerne vil beholde kan
-   låses ved at højreklikke på den, vælge "Settings", og sætte hak i "Lås".
-   Dette er en rigtig god idé hvis man sætter Window Maker op til andre, som er
-   vant til at bruge et system, hvor ikoner kan trækkes rundt på dekstopppen.
+   lÃ¥ses ved at hÃ¸jreklikke pÃ¥ den, vÃ¦lge "Settings", og sÃ¦tte hak i "LÃ¥s".
+   Dette er en rigtig god idÃ© hvis man sÃ¦tter Window Maker op til andre, som er
+   vant til at bruge et system, hvor ikoner kan trÃ¦kkes rundt pÃ¥ dekstopppen.
   </para>
 
   <para>
-   Det kan også nævnes at
-   man på de dockede ikoner men højre mus kan sætte om programmet
-   under ikonen skal startes sammen med Window Maker. Dette kan være
+   Det kan ogsÃ¥ nÃ¦vnes at
+   man pÃ¥ de dockede ikoner men hÃ¸jre mus kan sÃ¦tte om programmet
+   under ikonen skal startes sammen med Window Maker. Dette kan vÃ¦re
    rart med ens post-program eller med appletter.
   </para>
  </sect3> <!-- Docking -->
@@ -329,21 +329,21 @@ su -c "make install"
   <title>Appletter</title>
 
   <indexterm>
-   <primary>småprogrammer i</primary>
+   <primary>smÃ¥programmer i</primary>
    <secondary>Window Maker</secondary>
   </indexterm>
 
   <para>
-   En af de ting som gør Window Maker cool er deres mange appletter (dockapps)
-  - dvs. småprogrammer som kører i de dockede ikoner i højresiden. Det
-   gør at anvendeligheden af Window Maker stiger en hel del.
+   En af de ting som gÃ¸r Window Maker cool er deres mange appletter (dockapps)
+  - dvs. smÃ¥programmer som kÃ¸rer i de dockede ikoner i hÃ¸jresiden. Det
+   gÃ¸r at anvendeligheden af Window Maker stiger en hel del.
   </para>
 
   <para>
-   Navne på appletter til Window Maker starter typisk med "wm"
+   Navne pÃ¥ appletter til Window Maker starter typisk med "wm"
    efterfulgt af 2 til 6 bogstaver, f.eks. "wmnet" eller "wmfire".
-   Jeg finder mine appletter i menuen (højre musetast på baggrunden)
-   "Applikationer"-&gt;"WindowMaker"-&gt;"applets" (SuSE). På Red Hat
+   Jeg finder mine appletter i menuen (hÃ¸jre musetast pÃ¥ baggrunden)
+   "Applikationer"-&gt;"WindowMaker"-&gt;"applets" (SuSE). PÃ¥ Red Hat
    er der ikke rigtig nogen appletter med som standard.
   </para>
 
@@ -352,7 +352,7 @@ su -c "make install"
 
    <itemizedlist mark="bullet">
     <listitem>
-     <para>wmtop : Viser de tre mest CPU-krævende processer</para>
+     <para>wmtop : Viser de tre mest CPU-krÃ¦vende processer</para>
     </listitem>
 
     <listitem>
@@ -373,16 +373,16 @@ su -c "make install"
    </itemizedlist>
   </para>
 
-  <para>De fem nævnte appletter kan ses i det følgende billede</para>
+  <para>De fem nÃ¦vnte appletter kan ses i det fÃ¸lgende billede</para>
 
   <figure id="appletter" float="1">
    <title>appletter</title>
    <graphic fileref="wmaker_applets.&magic;" scale="60"></graphic>
   </figure>
 
-  <para> En rigtig sød applet er bubblemon, som forestiller en lille gul and
-  der svømmer på noget blåt vand. Vandstanden angiver memory-forbrug imens
-  antallet af bobler er CPU-load. Kan downloades på
+  <para> En rigtig sÃ¸d applet er bubblemon, som forestiller en lille gul and
+  der svÃ¸mmer pÃ¥ noget blÃ¥t vand. Vandstanden angiver memory-forbrug imens
+  antallet af bobler er CPU-load. Kan downloades pÃ¥
   <ulink
    url="http://www.ne.jp/asahi/linux/timecop/">http://www.ne.jp/asahi/linux/timecop/</ulink>
   </para>
@@ -393,15 +393,15 @@ su -c "make install"
   </figure>
 
   <para>
-   Man kan finde flere appletter på <ulink
+   Man kan finde flere appletter pÃ¥ <ulink
    url="http://www.bensinclair.com/dockapp/">http://www.bensinclair.com/dockapp/</ulink>
    eller <ulink
    url="http://www.linux.org/apps/all/gui/window_maker_applets.html">http://www.linux.org/apps/all/GUI/Window_Maker_Applets.html</ulink>.
   </para>
 
   <para>
-   p.s. wmfire er også en sej applet til at vise load på maskinen som
-   en ild.  Prøv den selv :-)
+   p.s. wmfire er ogsÃ¥ en sej applet til at vise load pÃ¥ maskinen som
+   en ild.  PrÃ¸v den selv :-)
   </para>
  </sect3>    <!--   Appletter -->
 
@@ -414,18 +414,18 @@ su -c "make install"
   </indexterm>
 
   <para>
-   Genveje for actions (raise, lower mv.) sættes op inde i
-   opsætningsværktøjet der hvor der er billede af et
-   tastatur. Genvejstaster til applikationer sættes op i menu-editoren
+   Genveje for actions (raise, lower mv.) sÃ¦ttes op inde i
+   opsÃ¦tningsvÃ¦rktÃ¸jet der hvor der er billede af et
+   tastatur. Genvejstaster til applikationer sÃ¦ttes op i menu-editoren
    (se punktet om menuer).
   </para>
  </sect3>    <!--   Genvejstaster -->
 
  <sect3 id="wm-windowmaker-vinduer">
-  <title>Vindueshåndtering</title>
+  <title>VindueshÃ¥ndtering</title>
 
   <indexterm>
-   <primary>vindueshåndtering i</primary>
+   <primary>vindueshÃ¥ndtering i</primary>
    <secondary>Window Maker</secondary>
   </indexterm>
 
@@ -434,10 +434,10 @@ su -c "make install"
     <para><emphasis>Skifte mellem vinduerne:</emphasis></para>
 
     <para>Man kan skifte mellem vinduerne med alt+tab, eller man kan
-    midterklikke på baggrunden og vælge fra en liste over vinduerne. 
-    Hvis man sætter "Automatic Window Raise Delay" i første billede af 
-    opsætningsværktøjet til en værdi i stedet for OFF, vil vinduerne
-    også komme til at ligge forrest, når man skifter til dem med alt+tab.
+    midterklikke pÃ¥ baggrunden og vÃ¦lge fra en liste over vinduerne. 
+    Hvis man sÃ¦tter "Automatic Window Raise Delay" i fÃ¸rste billede af 
+    opsÃ¦tningsvÃ¦rktÃ¸jet til en vÃ¦rdi i stedet for OFF, vil vinduerne
+    ogsÃ¥ komme til at ligge forrest, nÃ¥r man skifter til dem med alt+tab.
     </para>
     <figure id="raisedelay" float="1">
     <title>Det vindue der har fokus kommer forrest hvis "Automatic Window Raise Delay" er sat til noget andet end OFF</title>
@@ -446,20 +446,20 @@ su -c "make install"
    </listitem>
 
    <listitem><para> <emphasis>Flytte et vindue:</emphasis> </para>
-     <para>Træk i titelbaren med venstre museknap. Eller hold "alt"
-     nede og træk hvorsomhelst i vinduet med venstre
+     <para>TrÃ¦k i titelbaren med venstre museknap. Eller hold "alt"
+     nede og trÃ¦k hvorsomhelst i vinduet med venstre
      museknap.</para></listitem>
 
-   <listitem><para> <emphasis>Ændre størrelse på et vindue:</emphasis>
-     </para> <para>Træk i baren for neden med venstre museknap. I
-     midten kan man kun trække nedad. Ude i siderne kan man også
-     trække diagonalt.  Eller hold "alt" nede og brug højre museknap
-     til at ændre størrelse med.  </para></listitem>
+   <listitem><para> <emphasis>Ã†ndre stÃ¸rrelse pÃ¥ et vindue:</emphasis>
+     </para> <para>TrÃ¦k i baren for neden med venstre museknap. I
+     midten kan man kun trÃ¦kke nedad. Ude i siderne kan man ogsÃ¥
+     trÃ¦kke diagonalt.  Eller hold "alt" nede og brug hÃ¸jre museknap
+     til at Ã¦ndre stÃ¸rrelse med.  </para></listitem>
      
    <listitem><para> <emphasis>Minimere et vindue:</emphasis> </para>
-     <para>Klik på firkanten i øverste venstre hjørne Når et vindue
-     minimeres kommer der en ikon frem i nederste venstre hjørne af
-     skærmen. Dobbeltklik på denne for at få vinduet op igen.  NB: Tag
+     <para>Klik pÃ¥ firkanten i Ã¸verste venstre hjÃ¸rne NÃ¥r et vindue
+     minimeres kommer der en ikon frem i nederste venstre hjÃ¸rne af
+     skÃ¦rmen. Dobbeltklik pÃ¥ denne for at fÃ¥ vinduet op igen.  NB: Tag
      ikke fejl af denne og dock ikonen (se afsnit om docking).
      </para></listitem>
 
@@ -469,10 +469,10 @@ su -c "make install"
    </para></listitem>
      
    <listitem>
-    <para><emphasis>Vise et vindue på alle skriveborde
+    <para><emphasis>Vise et vindue pÃ¥ alle skriveborde
     (sticky):</emphasis></para>
 
-    <para>Højreklik i titelbaren giver en menu med
+    <para>HÃ¸jreklik i titelbaren giver en menu med
     vindues-egenskaber. Sticky hedder her "omnipresent" og findes
     under "options".</para>
    </listitem>
@@ -481,16 +481,16 @@ su -c "make install"
     <para><emphasis>Rulle et vindue op i titelbaren
     (shade):</emphasis></para>
 
-    <para>Dobbeltklik på titelbaren</para>
+    <para>Dobbeltklik pÃ¥ titelbaren</para>
    </listitem>
 
    <listitem>
     <para><emphasis>Lukke et vindue</emphasis></para>
 
-    <para>Klik på krydset i øverste højre hjørne</para>
+    <para>Klik pÃ¥ krydset i Ã¸verste hÃ¸jre hjÃ¸rne</para>
    </listitem>
   </itemizedlist>
- </sect3>    <!--   Vindueshåndtering -->
+ </sect3>    <!--   VindueshÃ¥ndtering -->
 
  <sect3 id="wm-windowmaker-fokus">
   <title>Fokus</title>
@@ -501,14 +501,14 @@ su -c "make install"
   </indexterm>
 
   <para>
-   Man kan sætte "Input Focus Mode" til enten "Click" eller "Auto" i
-   det første punkt i opsætningsværktøjet. "Auto" svarer til det
+   Man kan sÃ¦tte "Input Focus Mode" til enten "Click" eller "Auto" i
+   det fÃ¸rste punkt i opsÃ¦tningsvÃ¦rktÃ¸jet. "Auto" svarer til det
    der er kendt som sloppy focus i mange andre window managere.
    Default er "click to focus".
   </para>
 
   <para>
-   Det er også her man vælger om den skal bruge auto raise, og i så fald med
+   Det er ogsÃ¥ her man vÃ¦lger om den skal bruge auto raise, og i sÃ¥ fald med
    hvor stor en forsinkelse.
   </para>
 
@@ -528,9 +528,9 @@ su -c "make install"
 
   <para>
    Window Maker tilbyder et antal workspaces, men man skal oprette dem
-   først. Dette kan gøres i højremenuen under "Workspaces -&gt;
-   New". Man kan skifte imellem workspaces enten med ikonen øverst i
-   venstre hjørne ved at klikke på een af pilene:
+   fÃ¸rst. Dette kan gÃ¸res i hÃ¸jremenuen under "Workspaces -&gt;
+   New". Man kan skifte imellem workspaces enten med ikonen Ã¸verst i
+   venstre hjÃ¸rne ved at klikke pÃ¥ een af pilene:
   </para>
 
   <figure id="wmaker-workspace-icon-fig" float="1">
@@ -539,9 +539,9 @@ su -c "make install"
   </figure>
 
   <para>
-   eller med tasterne alt+1, alt+2 osv. Hvis man sætter "switch
+   eller med tasterne alt+1, alt+2 osv. Hvis man sÃ¦tter "switch
    workspaces while dragging windows" i Workspace Navigation, kan man
-   desuden trække et vindue "gennem kanten" ind i det næste
+   desuden trÃ¦kke et vindue "gennem kanten" ind i det nÃ¦ste
    workspace. Men det virker kun hvis man har et vindue med.
   </para>
  </sect3>    <!--   Workspaces/virtuelle skriveborde -->
@@ -560,45 +560,45 @@ su -c "make install"
   </indexterm>
 
   <para>
-   Temaer vælger man via Applications menuen, som kommer frem når man
-   højreklikker på skrivebordet. Gå ind under Appearance -&gt; Themes
-   og vælg mellem de præinstallerede temaer. Der er også en lang række
-   styles, som sætter menuen og titelbarens farve og udseende. Prøv
+   Temaer vÃ¦lger man via Applications menuen, som kommer frem nÃ¥r man
+   hÃ¸jreklikker pÃ¥ skrivebordet. GÃ¥ ind under Appearance -&gt; Themes
+   og vÃ¦lg mellem de prÃ¦installerede temaer. Der er ogsÃ¥ en lang rÃ¦kke
+   styles, som sÃ¦tter menuen og titelbarens farve og udseende. PrÃ¸v
    dig frem, til du finder een du kan lide.  Der er mange flotte.
   </para>
 
   <para>
-   Flere temaer kan i øvrigt hentes på <ulink
+   Flere temaer kan i Ã¸vrigt hentes pÃ¥ <ulink
    url="http://wm.themes.org/">http://wm.themes.org/</ulink>.
   </para>
 
   <para>
-   Baggrundsfarve vælges i "Appearance" -&gt; "Background". Her kan
-   man vælge "Solid" (ensfarvet), "Gradient" eller "Image". Under
-   "Image" kan man vælge mellem præinstallerede billeder. I min
-   installation er der kun ét.
+   Baggrundsfarve vÃ¦lges i "Appearance" -&gt; "Background". Her kan
+   man vÃ¦lge "Solid" (ensfarvet), "Gradient" eller "Image". Under
+   "Image" kan man vÃ¦lge mellem prÃ¦installerede billeder. I min
+   installation er der kun Ã©t.
   </para>
 
   <para>
-   Man kan godt indsætte sine egne baggrundbilleder i menuen. Først
+   Man kan godt indsÃ¦tte sine egne baggrundbilleder i menuen. FÃ¸rst
    skal man kopiere sine baggrundsbilleder til
-   <filename>/usr/share/WindowMaker/Backgrounds</filename> (fælles
+   <filename>/usr/share/WindowMaker/Backgrounds</filename> (fÃ¦lles
    baggrundsbilleder) eller
    <filename>~/GNUstep/Library/WindowMaker/Backgrounds/</filename>
-   (egne baggrundsbilleder). Alternativt kan man indsætte stien til
+   (egne baggrundsbilleder). Alternativt kan man indsÃ¦tte stien til
    det sted, man har sine baggrunde i Window Makers
-   baggrundsbillede-søgesti.
+   baggrundsbillede-sÃ¸gesti.
   </para>
 
   <para>
-   Sidstnævnte gøres ved at gå ind i opsætningsværktøjet, ind under
-   punktet hvor man redigerer menuer. Her vælges "Appearance" -&gt;
-   "Background" -&gt; "Images", i den redigérbare menu.
+   SidstnÃ¦vnte gÃ¸res ved at gÃ¥ ind i opsÃ¦tningsvÃ¦rktÃ¸jet, ind under
+   punktet hvor man redigerer menuer. Her vÃ¦lges "Appearance" -&gt;
+   "Background" -&gt; "Images", i den redigÃ©rbare menu.
   </para>
 
   <para>
-   Nu kommer et skærmbillede frem hvor man kan rette søgestien, eller
-   indsætte sin egen søgesti. Man kan også rette i den kommando der
+   Nu kommer et skÃ¦rmbillede frem hvor man kan rette sÃ¸gestien, eller
+   indsÃ¦tte sin egen sÃ¸gesti. Man kan ogsÃ¥ rette i den kommando der
    bruges til at vise baggrundsbilledet med:
 
 <screen>
@@ -614,7 +614,7 @@ wmsetbg -u -s
   </para>
 
   <para>
-   Når man har fået lavet et udseende man kan lide, kan dette gemmes
+   NÃ¥r man har fÃ¥et lavet et udseende man kan lide, kan dette gemmes
    med "Save Theme" under "Appearance" i menuen.
   </para>
  </sect3>    <!--   Baggrundsbilleder og temaer -->
@@ -629,11 +629,11 @@ wmsetbg -u -s
  </indexterm>
 
  <para>
-  På <ulink
+  PÃ¥ <ulink
   url="http://www.windowmaker.org/documentation.html">http://www.windowmaker.org/documentation.html</ulink>
   findes Window Makers dokumentation, herunder "Users Guide", som det
-  kan være nyttigt at læse.
-  Desuden er der en udemærket mailing-liste (på engelsk) der hedder wm-user, se <ulink url="http://www.windowmaker.org/lists.html">http://www.windowmaker.org/lists.html</ulink>.
+  kan vÃ¦re nyttigt at lÃ¦se.
+  Desuden er der en udemÃ¦rket mailing-liste (pÃ¥ engelsk) der hedder wm-user, se <ulink url="http://www.windowmaker.org/lists.html">http://www.windowmaker.org/lists.html</ulink>.
  </para>
 </sect2>    <!--   Dokumentation -->
 
@@ -641,10 +641,10 @@ wmsetbg -u -s
   <title>Hvad er det fede ved windowmaker?</title>
 
   <para>
-   Window Maker kræver ikke mange system-ressourcer, og formår stadig
-   at give brugeren en række gode detaljer såsom docking af
-   programmer, animation af menuer, masser af temaer og den er ikke så
-   vanskelig at styre. Den grafiske stil på mange af temaerne er også
+   Window Maker krÃ¦ver ikke mange system-ressourcer, og formÃ¥r stadig
+   at give brugeren en rÃ¦kke gode detaljer sÃ¥som docking af
+   programmer, animation af menuer, masser af temaer og den er ikke sÃ¥
+   vanskelig at styre. Den grafiske stil pÃ¥ mange af temaerne er ogsÃ¥
    ganske god.
   </para>
  </sect2>

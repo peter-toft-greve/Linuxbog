@@ -1,45 +1,45 @@
 <chapter id="c-parser-tilstandsmaskine">
-<title>Parsning - hvordan oversættes et C program</title>
+<title>Parsning - hvordan oversÃ¦ttes et C program</title>
 
 <sect1 id="declaration-parser">
 <title>En declaration parser</title>
 
 <para>
-Erklæringer kan være vanskelige at læse, især når der indgår
+ErklÃ¦ringer kan vÃ¦re vanskelige at lÃ¦se, isÃ¦r nÃ¥r der indgÃ¥r
 pointere til funktioner. Installation af en signal handler med
 funktionen signal(2) er kendt for sin vanskelige prototype.
 </para>
 
 <para>
-Det ville være en god øvelse at skrive en komplet declaration
-parser (og en sådan er på ønskesedlen til en udvidet version af
+Det ville vÃ¦re en god Ã¸velse at skrive en komplet declaration
+parser (og en sÃ¥dan er pÃ¥ Ã¸nskesedlen til en udvidet version af
 denne bog). Imidlertid findes der allerede en meget instruktiv
 parser til interaktiv / didaktiv anvendelse, cdecl.
 </para>
 
 <para>
-Cdecl manual-page går ud fra, at man er bekendt med de
-væsentligste problemstillinger, men den forklarer ikke, hvordan
-man løser læselighedsproblemet, hvis man ikke lige har cdecl ved
-hånden!
+Cdecl manual-page gÃ¥r ud fra, at man er bekendt med de
+vÃ¦sentligste problemstillinger, men den forklarer ikke, hvordan
+man lÃ¸ser lÃ¦selighedsproblemet, hvis man ikke lige har cdecl ved
+hÃ¥nden!
 </para>
 
 <para>
-For at gøre tingene vanskeligere, er Linux/Gnu signal.h fuld af
-defines og særlige syntaktiske konstruktioner, som skal lette
-læsningen for den erfarne multiplatform programmør - men som gør
-det fuldstændigt umuligt for den almindelige begynder at finde
-hoved og hale. I dette tilfælde er manual page for signal(2) en
-lettelse. Der er oven i købet en forklaring på, hvordan man kan
-opbygge deklarationen ved hjælp af "typedef"ning. Manual siderne
+For at gÃ¸re tingene vanskeligere, er Linux/Gnu signal.h fuld af
+defines og sÃ¦rlige syntaktiske konstruktioner, som skal lette
+lÃ¦sningen for den erfarne multiplatform programmÃ¸r - men som gÃ¸r
+det fuldstÃ¦ndigt umuligt for den almindelige begynder at finde
+hoved og hale. I dette tilfÃ¦lde er manual page for signal(2) en
+lettelse. Der er oven i kÃ¸bet en forklaring pÃ¥, hvordan man kan
+opbygge deklarationen ved hjÃ¦lp af "typedef"ning. Manual siderne
 for glibc er med i RedHat og andre distributioner, men er ikke
 en del af glibc systemet, der kun anvender info-pages.
 </para>
 
 <para>
-Men i header filerne - kast et blik på /usr/include/signal.h - er
-der så mange hensyn til diverse platforme at det bliver næsten
-ulæseligt. Leder vi på "signal(" finder vi:
+Men i header filerne - kast et blik pÃ¥ /usr/include/signal.h - er
+der sÃ¥ mange hensyn til diverse platforme at det bliver nÃ¦sten
+ulÃ¦seligt. Leder vi pÃ¥ "signal(" finder vi:
 </para>
 
 <para>
@@ -49,12 +49,12 @@ ulæseligt. Leder vi på "signal(" finder vi:
 </para>
 
 <para>
-Ovenstående define kan man ikke fodre cdecl med. Heldigvis er
-den ikke så svær at forstå. Signal er en funktion som skal
+OvenstÃ¥ende define kan man ikke fodre cdecl med. Heldigvis er
+den ikke sÃ¥ svÃ¦r at forstÃ¥. Signal er en funktion som skal
 erstattes af __sysv_signal. De to parametre skal gives videre som
-de er. Det ene skal være et signal, (fx. INTR, svarende
-til control-C) og det andet skal være den funktion, som vi vil
-have kørt, når vores program modtager signalet. Men så må vi jo
+de er. Det ene skal vÃ¦re et signal, (fx. INTR, svarende
+til control-C) og det andet skal vÃ¦re den funktion, som vi vil
+have kÃ¸rt, nÃ¥r vores program modtager signalet. Men sÃ¥ mÃ¥ vi jo
 kigge efter, hvordan headerfilen definerer __sysv_signal().
 </para>
 
@@ -65,17 +65,17 @@ extern __sighandler_t __sysv_signal __P ((int __sig, __sighandler_t __handler));
 </para>
 
 <para>
-Heri indgår der - desværre - også en #define macro, nemlig
-__sighandler_t. Så det er en større sag at finde rundt i.
+Heri indgÃ¥r der - desvÃ¦rre - ogsÃ¥ en #define macro, nemlig
+__sighandler_t. SÃ¥ det er en stÃ¸rre sag at finde rundt i.
 </para>
 
 <para>
 Det, som cdecl er glimrende til, er at fodre den med en vanskelig
-prototype og så se, hvordan den vil forklare det.
+prototype og sÃ¥ se, hvordan den vil forklare det.
 </para>
 
 <para>
-Vi finder med <command> man signal </command> følgende prototype:
+Vi finder med <command> man signal </command> fÃ¸lgende prototype:
 </para>
 
 <para>
@@ -85,14 +85,14 @@ void (*signal(int signum, void (*handler)(int)))(int);
 </para>
 
 <para>
-Er det en void funktion? Jeg spørger bare ... Nej, det er ikke en
+Er det en void funktion? Jeg spÃ¸rger bare ... Nej, det er ikke en
 void funktion, det er en funktion, som returnerer en pointer til
 en anden funktion, som er void. Nemlig den tidligere signal
-handler. Så kan man jo geninstallere den, hvis man på et
+handler. SÃ¥ kan man jo geninstallere den, hvis man pÃ¥ et
 tidspunkt skal tilbage til forrige niveau af signal handling.
 </para>
 
-<indexterm><primary>cdecl, eksempel på anvendelse</primary></indexterm>
+<indexterm><primary>cdecl, eksempel pÃ¥ anvendelse</primary></indexterm>
 <screen id="cdecl">
 <prompt>ax@pluto:/udvik/$</prompt><userinput>cdecl</userinput>
 <prompt>cdecl></prompt><userinput>void (*signal(int signum, void (*handler)(int)))(int)</userinput>
@@ -100,50 +100,50 @@ syntax error
 </screen>
 
 <para>
-Ja, desværre kan denne udmærkede lille applikation heller ikke
-klare denne iøvrigt korrekte prototype, så der er virkelig et
+Ja, desvÃ¦rre kan denne udmÃ¦rkede lille applikation heller ikke
+klare denne iÃ¸vrigt korrekte prototype, sÃ¥ der er virkelig et
 problem her.
 </para>
 
 <para>
-Løsningen er at lære sig "højre-venstre" teknikken.
+LÃ¸sningen er at lÃ¦re sig "hÃ¸jre-venstre" teknikken.
 </para>
 
 <para>
-Højre venstre - teknikken består i at læse indefra den
-identifier, som man ønsker at forstå. I ovenstående erklæring
+HÃ¸jre venstre - teknikken bestÃ¥r i at lÃ¦se indefra den
+identifier, som man Ã¸nsker at forstÃ¥. I ovenstÃ¥ende erklÃ¦ring
 "signal".
 </para>
 
 <para>
-Til HØJRE for signal er der en parentes start. Det betyder:
+Til HÃ˜JRE for signal er der en parentes start. Det betyder:
 "Signal er en funktion ..."
 </para>
 
 <para>
-Efter parameter parentesen er der "lukket" ved hjælp af en
-slut-parentes ekstra. Derfor må vi gå til VENSTRE. Vi er nu nået
+Efter parameter parentesen er der "lukket" ved hjÃ¦lp af en
+slut-parentes ekstra. Derfor mÃ¥ vi gÃ¥ til VENSTRE. Vi er nu nÃ¥et
 til, at vi forventer angivelse af retur-type.
 </para>
 
 <para>
-Til venstre står der '*' hvilket vi læser som "returnerer en
+Til venstre stÃ¥r der '*' hvilket vi lÃ¦ser som "returnerer en
 pointer til ..." - til hvad?
 </para>
 
 <para>
-Parentes start spærrer for yderligere adgang til venstre, så vi
-går mod højre, udenfor den matchende parentes og ser efter denne
-endnu en parentes, aha, en pointer TIL EN FUNKTION, der står jo
-igen parenteser, og i øvrigt med en int som parameter. Det mest
-vanskelige er, at den VOID, som står forrest på linjen, er retur
+Parentes start spÃ¦rrer for yderligere adgang til venstre, sÃ¥ vi
+gÃ¥r mod hÃ¸jre, udenfor den matchende parentes og ser efter denne
+endnu en parentes, aha, en pointer TIL EN FUNKTION, der stÃ¥r jo
+igen parenteser, og i Ã¸vrigt med en int som parameter. Det mest
+vanskelige er, at den VOID, som stÃ¥r forrest pÃ¥ linjen, er retur
 type angivelse til denne funktionspointer.
 </para>
 
 <para>
-Det er ikke nemt. Læs man - siden for signal, den forklarer (som
-nævnt ovenfor), at meningen med signal er, at den returnerer den
-tidligere handler, så man kan reinstallere den senere.
+Det er ikke nemt. LÃ¦s man - siden for signal, den forklarer (som
+nÃ¦vnt ovenfor), at meningen med signal er, at den returnerer den
+tidligere handler, sÃ¥ man kan reinstallere den senere.
 </para>
 
 </sect1>
@@ -154,66 +154,66 @@ tidligere handler, så man kan reinstallere den senere.
 <para>
 En kalkulator er et program, som kan fodres med beregningsudtryk
 og som derefter beregner resultatet. Som regel skrives resultatet
-på en computerskærm, men det kan jo lige så godt være på en
-papirstrimmel eller i et felt i et regneark. Et udtryk kaldes på
+pÃ¥ en computerskÃ¦rm, men det kan jo lige sÃ¥ godt vÃ¦re pÃ¥ en
+papirstrimmel eller i et felt i et regneark. Et udtryk kaldes pÃ¥
 engelsk et expression.
 </para>
 
 <para>
-Hvis man vil forstå, hvordan en oversætter/compiler virker,
-så er en kalkulator et godt sted at begynde. En kalkulator består
+Hvis man vil forstÃ¥, hvordan en oversÃ¦tter/compiler virker,
+sÃ¥ er en kalkulator et godt sted at begynde. En kalkulator bestÃ¥r
 af analysator, som kaldes en expression parser, og en
 beregningsdel. Expression parseren har til opgave at analysere
-input og se, hvad der skal gøres.
+input og se, hvad der skal gÃ¸res.
 </para>
 
 <para>
-En sådan expression parser findes også i en oversætter. I stedet
-for at foretage beregning, så udskriver oversætteren assembler
+En sÃ¥dan expression parser findes ogsÃ¥ i en oversÃ¦tter. I stedet
+for at foretage beregning, sÃ¥ udskriver oversÃ¦tteren assembler
 kode, der vil kunne foretage beregningen.
 </para>
 
 <para>
-En væsentlig del af kunsten at skrive en oversætter består i at
-skille tingene ad. Det kræver stor forståelse for opgaven, en
+En vÃ¦sentlig del af kunsten at skrive en oversÃ¦tter bestÃ¥r i at
+skille tingene ad. Det krÃ¦ver stor forstÃ¥else for opgaven, en
 stor abstraktionsevne, for kode-generator delen er jo flettet
-ind, så at sige, i analysen. Hver gang man kommer til et
-delresultat, skal det omsættes til kode. Endvidere kræves der
-også en forståelse for assembler koden. Derfor er det meget
+ind, sÃ¥ at sige, i analysen. Hver gang man kommer til et
+delresultat, skal det omsÃ¦ttes til kode. Endvidere krÃ¦ves der
+ogsÃ¥ en forstÃ¥else for assembler koden. Derfor er det meget
 godt at begynde med en kalkulator. Den er simplere at skrive,
-nemmere at forstå, men rummer de samme problemstillinger.
+nemmere at forstÃ¥, men rummer de samme problemstillinger.
 </para>
 
 <para>
 I en compiler har man brug for en expression parser, hver gang
-der er et statement. Et statement eller en (programsprog-)sætning
-kan i simple tilfælde blot være et beregningsudtryk efterfulgt af
-et semikolon. I mere komplicerede tilfælde er det for eksempel keywordet
-<emphasis> if </emphasis> efterfulgt af en betingelse og så et
+der er et statement. Et statement eller en (programsprog-)sÃ¦tning
+kan i simple tilfÃ¦lde blot vÃ¦re et beregningsudtryk efterfulgt af
+et semikolon. I mere komplicerede tilfÃ¦lde er det for eksempel keywordet
+<emphasis> if </emphasis> efterfulgt af en betingelse og sÃ¥ et
 eller andet stykke kode, som styres af <emphasis> if'et
-</emphasis>. Betingelsen er, i C sproget, et expression (altså et
-udtryk). Den efterfølgende sætning vil i mange tilfælde være et
-funktionskald (også et udtryk, strengt taget) eller en tildeling
-som i C sproget også er et udtryk.
+</emphasis>. Betingelsen er, i C sproget, et expression (altsÃ¥ et
+udtryk). Den efterfÃ¸lgende sÃ¦tning vil i mange tilfÃ¦lde vÃ¦re et
+funktionskald (ogsÃ¥ et udtryk, strengt taget) eller en tildeling
+som i C sproget ogsÃ¥ er et udtryk.
 </para>
 
 <para>
-Så en expression parser er en vigtig del af computer-software.
-Her kommer et eksempel på en kalkulator, som beregner ganske
+SÃ¥ en expression parser er en vigtig del af computer-software.
+Her kommer et eksempel pÃ¥ en kalkulator, som beregner ganske
 almindelige regnestykker som 2+3 eller mere komplicerede, hvori
-der indgår aritmetiske funktioner og en enkelt variabel, X, som
-er resultatet af foregående beregning. Ideen her er hentet fra
-gode gamle Compas Pascal, men det er altså C-kode, dette her.
+der indgÃ¥r aritmetiske funktioner og en enkelt variabel, X, som
+er resultatet af foregÃ¥ende beregning. Ideen her er hentet fra
+gode gamle Compas Pascal, men det er altsÃ¥ C-kode, dette her.
 </para>
 
 <para>
 En lignende kalkulator i C++ er en god opgave for viderekomne.
-(Jeg vil senere prøve at komme med nogle sammenligninger med
+(Jeg vil senere prÃ¸ve at komme med nogle sammenligninger med
 Stroustrups eksempel, Stroustrup[1997] p. 108.)
 </para>
 
 <para>
-Eksempel på input:
+Eksempel pÃ¥ input:
 </para>
 <programlisting>
 calcu '200 * sin(0.444)'
@@ -234,23 +234,23 @@ Calc: 32/square(2)
 </programlisting>
 
 <para>
-Programmet benytter til den viste fejlmeddelelse en særlig slem
+Programmet benytter til den viste fejlmeddelelse en sÃ¦rlig slem
 variant af printf format specification, som skriver et antal
 spaces ud styret af en variabel:
 <literal>
 printf("En padded string: %*s\n",lengde,string);
 </literal>
-Meget smart - men første gang lidt vanskeligt at læse og forstå.
+Meget smart - men fÃ¸rste gang lidt vanskeligt at lÃ¦se og forstÃ¥.
 Det styrer angivelsen af error positionen.
 </para>
 
 <para>
-Programmet er i sin nuværende form ganske anvendeligt, fordi det
+Programmet er i sin nuvÃ¦rende form ganske anvendeligt, fordi det
 kan fungere som erstatning for expr programmet, der stiller alt
 for mange krav til spaces og anden formatering til de
 expressions, som skal evalueres. Men programmet kan simpelt hen
-også anvendes til beregning af prislister (det har det faktisk
-været!)
+ogsÃ¥ anvendes til beregning af prislister (det har det faktisk
+vÃ¦ret!)
 </para>
 
 <example id="calculator">
@@ -546,58 +546,58 @@ double stdfunc()
 <sect1 id="sect-uCc">
 <title>En komplet compiler</title>
 <para>
-Nu har vi haft mulighed for at se nærmere på en tag-parser og en
-expression parser. Hvor langt er der så til at skrive en komplet
-compiler? Ikke så langt. Vi får brug for en kode-generator,
+Nu har vi haft mulighed for at se nÃ¦rmere pÃ¥ en tag-parser og en
+expression parser. Hvor langt er der sÃ¥ til at skrive en komplet
+compiler? Ikke sÃ¥ langt. Vi fÃ¥r brug for en kode-generator,
 d.v.s. den del, som ved, hvordan maskin instruktioner for
 addition, subtraktion, kopiering og funktionskald etc. ser ud.
-Desuden vil det være klogt at lave en præprocessor, som kan
-håndtere #include of #define.
+Desuden vil det vÃ¦re klogt at lave en prÃ¦processor, som kan
+hÃ¥ndtere #include of #define.
 </para>
 
 <para>
-Når man kan skrive en expression parser som <xref
+NÃ¥r man kan skrive en expression parser som <xref
 linkend="expression-parser"/> og -- i stil med tag-parseren <xref
 linkend="ex-tagbal-sammenligning"/> -- kan behandle forskellige
-typer input efter forskellige regler, så har man teknikken til
-det meste af en C compiler. Kodegeneratoren hæftes på
-parser-delen, således at hver gang man har analyseret sig til en
-basis-operation (tildeling, aritmetik, funktionskald osv) så
+typer input efter forskellige regler, sÃ¥ har man teknikken til
+det meste af en C compiler. Kodegeneratoren hÃ¦ftes pÃ¥
+parser-delen, sÃ¥ledes at hver gang man har analyseret sig til en
+basis-operation (tildeling, aritmetik, funktionskald osv) sÃ¥
 skrives de tilsvarende assembler instruktioner til outputfilen.
 </para>
 
 <para>
-Preprocessor er derimod det aller første behandlings-trin
-i C-compileren. Alle linjer med havelåge tegn (hash
+Preprocessor er derimod det aller fÃ¸rste behandlings-trin
+i C-compileren. Alle linjer med havelÃ¥ge tegn (hash
 character, eller nummer-tegn <emphasis> # </emphasis>) bliver
-behandlet af præprocessoren. Det er #include, #define, #ifdef mv.
-De kaldes direktiver eller præprocessor kommandoer.
+behandlet af prÃ¦processoren. Det er #include, #define, #ifdef mv.
+De kaldes direktiver eller prÃ¦processor kommandoer.
 </para>
 
 <para>
-En compiler kan somme tider indgyde ærefrygt. Hvordan får man et
-stykke software til at forandre programsætninger til maskinkode,
-oven i købet lange, komplicerede programsætninger, med iffer og
-while, med komplicerede beregningsudtryk og så videre. Og
+En compiler kan somme tider indgyde Ã¦refrygt. Hvordan fÃ¥r man et
+stykke software til at forandre programsÃ¦tninger til maskinkode,
+oven i kÃ¸bet lange, komplicerede programsÃ¦tninger, med iffer og
+while, med komplicerede beregningsudtryk og sÃ¥ videre. Og
 maskin-instruktioner, er det noget for hvide mennesker? Er det et
-mirakel, at compileren kan finde ud af at oversætte <literal> if
+mirakel, at compileren kan finde ud af at oversÃ¦tte <literal> if
 (a > b) duut(); </literal> til maskininstruktioner, eller kender
-den måske maskin-instruktionerne i forvejen? Ja - selvfølgelig
-kender compileren maskinen og dens instruktionssæt i forvejen!
+den mÃ¥ske maskin-instruktionerne i forvejen? Ja - selvfÃ¸lgelig
+kender compileren maskinen og dens instruktionssÃ¦t i forvejen!
 </para>
 
 <para>
-Det er efter min erfaring et vigtigt skridt, måske det vigtigste,
-for forståelse af computeren, at man forstår, hvordan CPU og
+Det er efter min erfaring et vigtigt skridt, mÃ¥ske det vigtigste,
+for forstÃ¥else af computeren, at man forstÃ¥r, hvordan CPU og
 adressebus fungerer. <!--TODO appendix D--> En CPU kan bedst
-sammenlignes med en regnemaskine, som har flere små
+sammenlignes med en regnemaskine, som har flere smÃ¥
 resultat-display, eller celler til at gemme
-kalkulationsresultater. En sådan celle kaldes et register, og
+kalkulationsresultater. En sÃ¥dan celle kaldes et register, og
 CPU'er kan anvende disse direkte i deres instruktioner. Til
-gengæld er der begrænsninger på, hvordan man kan anvende tal
-(data) fra RAM modulerne. Nogle CPU typer insisterer på kun at
+gengÃ¦ld er der begrÃ¦nsninger pÃ¥, hvordan man kan anvende tal
+(data) fra RAM modulerne. Nogle CPU typer insisterer pÃ¥ kun at
 lave aritmetik med register-indhold. Andre, som Intel-x86 er mere
-alsidige og derfor også mere komplicerede.
+alsidige og derfor ogsÃ¥ mere komplicerede.
 </para>
 
 <para>
@@ -605,15 +605,15 @@ Intel 386 familien har til almindelig afbenyttelse for alle slags
 programmer registrene %eax, %ebx, %ecx og %edx. Desuden er der
 nogle ekstra registre, %esi og %edi, som er specielt gode til
 index-operationer, samt et base-pointer register %ebx og et
-stack-pointer register %esp. Desuden er der selvfølgelig en
+stack-pointer register %esp. Desuden er der selvfÃ¸lgelig en
 instruktions pointer %eip og mange specielle registre, bl.a. til
 administration af hukommelsen. De er ikke interessante i denne
-sammenhæng.
+sammenhÃ¦ng.
 </para>
 
 <para>
-Et typisk lille assembler program i GNU assembler til at lægge to
-tal sammen med kunne skrives sådan her:
+Et typisk lille assembler program i GNU assembler til at lÃ¦gge to
+tal sammen med kunne skrives sÃ¥dan her:
 </para>
 
 <example id="ex-gas-programmering">
@@ -623,22 +623,22 @@ tal sammen med kunne skrives sådan her:
         .comm tal1,4,4
         .comm tal2,4,4
         movl tal1, %eax
-        addl tal2, %eax   # nu lægges tal2 til tal1,
+        addl tal2, %eax   # nu lÃ¦gges tal2 til tal1,
                           # resultatet ligger i %eax
         ret
 </programlisting>
 <blockquote><sidebar><para>
 GNU assembleren benytter traditionelt sin egen syntaks. Man
-skal huske, at Intel assembler er forskellig på væsentlige
+skal huske, at Intel assembler er forskellig pÃ¥ vÃ¦sentlige
 punkter (og er copyrighted!).
 </para><para>
 Der findes en "nasm" netwide portable 80x86 assembler, som
-benytter en mere Intel-agtig syntaks, hvis man foretrækker det.
+benytter en mere Intel-agtig syntaks, hvis man foretrÃ¦kker det.
 </para></sidebar></blockquote>
 </example>
 
 <example id="ex-oversat">
-<title>Output fra GNU-C oversætter</title>
+<title>Output fra GNU-C oversÃ¦tter</title>
 <screen>
 <prompt>ax@pluto:fri$</prompt><userinput>cat xyzzy.c</userinput>
 xyzzy()
@@ -655,7 +655,7 @@ gcc2_compiled.:
 .globl xyzzy
 	.type	 xyzzy,@function
 xyzzy:
-	movl $42,%eax  # <<=== OBS! HER ER OVERSÆTTELSEN!!!
+	movl $42,%eax  # <<=== OBS! HER ER OVERSÃ†TTELSEN!!!
 	ret
 .Lfe1:
 	.size	 xyzzy,.Lfe1-xyzzy
@@ -666,36 +666,36 @@ xyzzy:
 
 <para>
 Den linje, som interesserer os mest, er <literal> movl $42,%eax
-</literal>. Det er oversættelsen af <literal> return 42
-</literal>. movl betyder move long, altså flyt en integer, som er
-lang. På intel x86 kaldes 32 bit integers for long. Andre
+</literal>. Det er oversÃ¦ttelsen af <literal> return 42
+</literal>. movl betyder move long, altsÃ¥ flyt en integer, som er
+lang. PÃ¥ intel x86 kaldes 32 bit integers for long. Andre
 assembler sprog ville kalde det for en load operation.
-$42 betyder en konstant med værdien 42 (Dollar = værdi). %eax er
-en snedig måde at betegne 386 multi purpose registrene, procent
-tegnet gør, at dette symbol ikke kan være en variabel, så
-programmøren kan altså godt have en variabel eax i programmet,
-uden at den støder sammen med %eax.
+$42 betyder en konstant med vÃ¦rdien 42 (Dollar = vÃ¦rdi). %eax er
+en snedig mÃ¥de at betegne 386 multi purpose registrene, procent
+tegnet gÃ¸r, at dette symbol ikke kan vÃ¦re en variabel, sÃ¥
+programmÃ¸ren kan altsÃ¥ godt have en variabel eax i programmet,
+uden at den stÃ¸der sammen med %eax.
 </para>
 
 <para>
-Når jeg i en funktion skriver <literal> return 42; </literal> --
-så sker der åbenbart det, at værdien, som skal returneres, lægges
+NÃ¥r jeg i en funktion skriver <literal> return 42; </literal> --
+sÃ¥ sker der Ã¥benbart det, at vÃ¦rdien, som skal returneres, lÃ¦gges
 i det CPU-register, som er det almindeligst anvendte (og - tjek
-Intel manualer - også det hurtigste). Når computerprogrammet
+Intel manualer - ogsÃ¥ det hurtigste). NÃ¥r computerprogrammet
 vender tilbage til de instruktioner, som kaldte vores funktion,
-så har den altså resultatet i %eax. I gamle dage kaldte man %eax
+sÃ¥ har den altsÃ¥ resultatet i %eax. I gamle dage kaldte man %eax
 for kalkulator registeret. I dag kan flere registre bruges som
 kalkulatorregistre.
 </para>
 
 <para>
-Ellers er det meste af ovenstående output er fileheader og functions
-type-erklæringer, som jo blot kan genereres som en ramme, hvori
-man indsætter funktionsnavnet.
+Ellers er det meste af ovenstÃ¥ende output er fileheader og functions
+type-erklÃ¦ringer, som jo blot kan genereres som en ramme, hvori
+man indsÃ¦tter funktionsnavnet.
 </para>
 
 <example id="ex-uC-oversaettelse">
-<title>uC oversættelse</title>
+<title>uC oversÃ¦ttelse</title>
 <screen>
 <prompt>ax@pluto:fri$</prompt><userinput>uC -A xyzzy.c</userinput>
 <prompt>ax@pluto:fri$</prompt><userinput>cat xyzzy.y86</userinput>
@@ -712,7 +712,7 @@ xyzzy:
 	movl %esp,%ebp
 #{
 #    return 42;
-	movl $42,%eax     # <<=== OBS! HER ER OVERSÆTTELSEN!!!
+	movl $42,%eax     # <<=== OBS! HER ER OVERSÃ†TTELSEN!!!
 	movl %ebp,%esp
 	popl %ebp
 	ret
@@ -729,7 +729,7 @@ xyzzy:
 </screen>
 <blockquote><sidebar>
 <para>
-Det er meget tekst, der kommer ud af uC oversættelsen, men igen
+Det er meget tekst, der kommer ud af uC oversÃ¦ttelsen, men igen
 er det vigtigste linjen med <literal> movl $42,%eax </literal>.
 </para>
 </sidebar>
@@ -737,40 +737,40 @@ er det vigtigste linjen med <literal> movl $42,%eax </literal>.
 </example>
 
 <para>
-I foregående gcc oversættelse var der færre instruktioner. Det
+I foregÃ¥ende gcc oversÃ¦ttelse var der fÃ¦rre instruktioner. Det
 skyldes, at vi anvendte en option -fomit-frame-pointer, som
 betyder, at compileren (om muligt) ikke skal udspy
 instruktionerne, som saver base-pointer registeret %ebx.
 </para>
 
 <para>
-En compiler oversætter de enkelte statements til symbolsk
+En compiler oversÃ¦tter de enkelte statements til symbolsk
 assembler, det vil sige maskin instruktioner i tekst form.
-Oversætterens output er en fil med symbolske
+OversÃ¦tterens output er en fil med symbolske
 maskin-instruktioner, kaldet assembler source.
 </para>
 
 <para>
-Man behøver ikke at kunne <emphasis> så forfærdelig </emphasis>
-meget assembler for at få noget ud af dette afsnit. De
-nødvendigste ting bliver forklaret undervejs.
+Man behÃ¸ver ikke at kunne <emphasis> sÃ¥ forfÃ¦rdelig </emphasis>
+meget assembler for at fÃ¥ noget ud af dette afsnit. De
+nÃ¸dvendigste ting bliver forklaret undervejs.
 </para>
 
 <para>
-Måske det bedste ved uC er, at der er masser af opgaver, som man
-kan gå i gang med. Man kan pynte lidt hist og her på
-hjælpetekster, banner tekster osv. Man kan også lave ganske små
-ændringer, som gør den nemmere at bruge.  Men man kan også
-forbedre den <emphasis> væsentligt </emphasis> på kodekvaliteten
-ved at tilføje nyttige funktioner i kodegeneratoren.
+MÃ¥ske det bedste ved uC er, at der er masser af opgaver, som man
+kan gÃ¥ i gang med. Man kan pynte lidt hist og her pÃ¥
+hjÃ¦lpetekster, banner tekster osv. Man kan ogsÃ¥ lave ganske smÃ¥
+Ã¦ndringer, som gÃ¸r den nemmere at bruge.  Men man kan ogsÃ¥
+forbedre den <emphasis> vÃ¦sentligt </emphasis> pÃ¥ kodekvaliteten
+ved at tilfÃ¸je nyttige funktioner i kodegeneratoren.
 </para>
 
 <para>
-Når man ser, hvordan et program bliver "nedbrudt" under
-oversættelsen, så kan man få den helt store aha-oplevelse.
-P.J. Plauger har på et tidspunkt <!--TODO, C Journal -->
-skrevet, at han for at lære et nyt programmeringssprog skrev
-en (lille) compiler til det pågældende sprog. Det er derfor,
+NÃ¥r man ser, hvordan et program bliver "nedbrudt" under
+oversÃ¦ttelsen, sÃ¥ kan man fÃ¥ den helt store aha-oplevelse.
+P.J. Plauger har pÃ¥ et tidspunkt <!--TODO, C Journal -->
+skrevet, at han for at lÃ¦re et nyt programmeringssprog skrev
+en (lille) compiler til det pÃ¥gÃ¦ldende sprog. Det er derfor,
 at dette eksempel er taget med.
 </para>
 
@@ -779,8 +779,8 @@ at dette eksempel er taget med.
 <title> uC - en mikroskopisk C compiler </title>
 
 <para>
-I dette afsnit præsenteres en lille C compiler, som man selv kan
-skrive - eller skrive videre på, nemlig Small-C, som jeg i denne
+I dette afsnit prÃ¦senteres en lille C compiler, som man selv kan
+skrive - eller skrive videre pÃ¥, nemlig Small-C, som jeg i denne
 version har kaldt Micro-C, eller uC.
 </para>
 
@@ -796,11 +796,11 @@ et nyttigt sub-set af C sproget. Small-C var skrevet til Intel
 <para>
 Den oprindelige source til Small-C har jeg aldrig kunnet finde.
 Der findes imidlertid mange varianter. En af de bedste er James
-E. Hendrix's Small-C 2.2, men den er på den anden side også mere
+E. Hendrix's Small-C 2.2, men den er pÃ¥ den anden side ogsÃ¥ mere
 kompliceret.  En anden version for MS-DOS hed Caprock System PC
-eller CPC, og det er den, som jeg har arbejdet videre på. Den
-vigtigste ændring er, at den kører 32 bit under linux og at den i
-øvrigt benytter samme call-sequence som GNU-C.
+eller CPC, og det er den, som jeg har arbejdet videre pÃ¥. Den
+vigtigste Ã¦ndring er, at den kÃ¸rer 32 bit under linux og at den i
+Ã¸vrigt benytter samme call-sequence som GNU-C.
 </para>
 
 <para>
@@ -810,7 +810,7 @@ pr. 2. juni 2001.
 </para>
 
 <para>
-Eksempel på udpakning og installation:
+Eksempel pÃ¥ udpakning og installation:
 <screen id="sc-install">
 <prompt>[root@linus /root]# </prompt><userinput>mkdir -p /hjem/src/compiler/ucc</userinput>
 <prompt>[root@linus /root]# </prompt><userinput>cd /hjem/src/compiler/ucc</userinput>
@@ -821,35 +821,35 @@ Eksempel på udpakning og installation:
 </para>
 
 <para>
-Hvis man kører <command>make install</command>, vil
+Hvis man kÃ¸rer <command>make install</command>, vil
 programmerne lave et symbolsk link fra /usr/local/uC til det
 sted, hvor man installerer fra. Derfor skal man ikke flytte
-installations-dir. Man kan let selv lave om på disse ting. Hvis
+installations-dir. Man kan let selv lave om pÃ¥ disse ting. Hvis
 man i forvejen har et directory /usr/local/uC vil man blive bedt
-om at fjerne det manuelt, så installationen er altså ikke destruktiv.
+om at fjerne det manuelt, sÃ¥ installationen er altsÃ¥ ikke destruktiv.
 </para>
 
 
 <para>
-Leder man på nettet kan man sagtens finde source
+Leder man pÃ¥ nettet kan man sagtens finde source
 til andre C compilere, og som bekendt er GNU C "fri software",
-der distribueres med kildetekst og dokumentation, så
-den kan man jo også begynde at læse på. 
+der distribueres med kildetekst og dokumentation, sÃ¥
+den kan man jo ogsÃ¥ begynde at lÃ¦se pÃ¥. 
 </para>
 
 <para>
-Inden jeg valgte at det skulle være uC, som skulle med som
+Inden jeg valgte at det skulle vÃ¦re uC, som skulle med som
 eksempel i denne bog, havde jeg Dennis Ritchies oprindelige
-"pre-struct" C, LCC, cc68 og cc386 i kikkerten, før end jeg
+"pre-struct" C, LCC, cc68 og cc386 i kikkerten, fÃ¸r end jeg
 valgte denne. Den er lille og kunne nemt tilpasses til GNU/Linux
-miljøet. Og -- indrømmet -- jeg kendte den godt i forvejen!
+miljÃ¸et. Og -- indrÃ¸mmet -- jeg kendte den godt i forvejen!
 </para>
 
 <para>
-Den nuværende version nummerering indeholder to oplysninger.
+Den nuvÃ¦rende version nummerering indeholder to oplysninger.
 Linux-porteringen (32 bit versionen) er version 0.9, og den
 centrale del, parseren, har jeg ladet hedde version 3.01 fordi
-den jo er baseret på tidligere versioner.
+den jo er baseret pÃ¥ tidligere versioner.
 </para>
 
 <para>
@@ -857,34 +857,34 @@ den jo er baseret på tidligere versioner.
 </para>
 
 <para>
-  Revision: Version 09 (næsten poleret ...) pr. 6-apr-2001.
+  Revision: Version 09 (nÃ¦sten poleret ...) pr. 6-apr-2001.
 </para>
 <para>
   Parser-delen er version 3.01
 </para>
 
 <para>
-  Med tilføjelse af options for extended stackframe og
+  Med tilfÃ¸jelse af options for extended stackframe og
 for saving %ebx. (brug -h for at se options).
 </para>
 
 <para>
-Assembler output oversættes af GNU "as" og linkes med
+Assembler output oversÃ¦ttes af GNU "as" og linkes med
 ld via en gcc kommando.
 </para>
 
 <para>
-Den kan bootstrappes på en RedHat 5.2, 6.0 og RedHat 7.0 (benyt
+Den kan bootstrappes pÃ¥ en RedHat 5.2, 6.0 og RedHat 7.0 (benyt
 --bx option til kompilering af main, se Changelog.dk); jeg
-formoder, at der også er andre distributioner, som lader sig
+formoder, at der ogsÃ¥ er andre distributioner, som lader sig
 anvende.
 </para>
 
 <para>
 Koden er "acceptabelt ineffektiv", idet den performer ca 1/3
 langsommere end gcc genereret kode. Det er egentlig ret
-forbløffende, idet compileren er meget simpel og har nogle
-indlysende skavanker, når der skal anvendes array indexering og
+forblÃ¸ffende, idet compileren er meget simpel og har nogle
+indlysende skavanker, nÃ¥r der skal anvendes array indexering og
 pointere. Forklaringen er, at de simplere instruktioner, der
 anvendes, er hurtigere end de komplicerede instruktioner til
 adressering, som gcc kan generere.
@@ -896,19 +896,19 @@ uC er instruktiv i 2 henseender:
 
 <para>
 1. Dels viser den hvordan man laver en minimal C -
-compiler med en SUBSET af C, som alligevel er så
+compiler med en SUBSET af C, som alligevel er sÃ¥
 kompatibelt med (old-style) C at den kan kompileres
 med en "stor" C compiler
 </para>
 
 <para>
-2. Den kan oversætte sig selv. 
+2. Den kan oversÃ¦tte sig selv. 
 </para>
 
 <para>
-Hønen og ægget! Hvad nu, hvis man ikke lige har en C compiler ved
-hånden. Kan man så få denne compiler til at fungere? Ja, det kan
-man.  Den er lille nok til, at den kan hånd-oversættes.
+HÃ¸nen og Ã¦gget! Hvad nu, hvis man ikke lige har en C compiler ved
+hÃ¥nden. Kan man sÃ¥ fÃ¥ denne compiler til at fungere? Ja, det kan
+man.  Den er lille nok til, at den kan hÃ¥nd-oversÃ¦ttes.
 </para>
 
 <programlisting>
@@ -930,7 +930,7 @@ Preprocessor direktiver:
 #ifndef
 #else
 #endif
-#asm                /* for hånd - optimering! */
+#asm                /* for hÃ¥nd - optimering! */
 #endasm
 
 -----------------------------------------------------
@@ -983,34 +983,34 @@ Modularitet
 -----------------------------------------------------
 extern int x;   /* static mangler */
 
-/* extern f(); automatisk hvis ukendt fcn-navn optræder. */
+/* extern f(); automatisk hvis ukendt fcn-navn optrÃ¦der. */
 
 functions returnerer en int. Altid!
-function type må ikke specificeres, men den er jo også
+function type mÃ¥ ikke specificeres, men den er jo ogsÃ¥
 redundant, da funktioner altid returnere en int.
 prototyper er forbudt! Hu!
 
 separat kompilering og linkning med gnu as og ld.
 
 -----------------------------------------------------
-Slut på specifikation af uC
+Slut pÃ¥ specifikation af uC
 -----------------------------------------------------
 
 </programlisting>
 
 <para>
 Det er meningen her at give en ganske kort beskrivelse af denne
-compiler. En forsmag kan være den centrale funktion, som parser
+compiler. En forsmag kan vÃ¦re den centrale funktion, som parser
 eksterne objekter:
 </para>
 
 <example id="ex-parser-externe-obj">
-<title>C oversætter, parsning på øverste niveau</title>
+<title>C oversÃ¦tter, parsning pÃ¥ Ã¸verste niveau</title>
 <programlisting>
 /*                                              */
 /*      Behandling af alt input                 */
 /*                                              */
-/* På dette niveau er kun statiske erklæringer  */
+/* PÃ¥ dette niveau er kun statiske erklÃ¦ringer  */
 /*      defines, includes, og function          */
 /*      definitions legale                      */
 /* Input kaldes fra (a)match                    */
@@ -1053,7 +1053,7 @@ parse()
 </example>
 
 <para>
-Mere i næste version af "Friheden til at programmere i C" ...
+Mere i nÃ¦ste version af "Friheden til at programmere i C" ...
 </para>
 
 </sect2>
@@ -1065,49 +1065,49 @@ Mere i næste version af "Friheden til at programmere i C" ...
 <para>
 Tilstandsmaskiner er betegnelse for 2 ting: (1) generelt for
 computer programmer, idet alle programmer er tilstands-maskiner,
-og (2) en speciel teknik, som består i, at man bruger en
-tabel til at beskrive de tilstande, et program kan være i.
+og (2) en speciel teknik, som bestÃ¥r i, at man bruger en
+tabel til at beskrive de tilstande, et program kan vÃ¦re i.
 Tilstandstabeller anvendes blandt andet i parsere.
 </para>
 
 <para>
-Hvis man vil se en "rigtig" tilstandsmaskine, så kan man studere
+Hvis man vil se en "rigtig" tilstandsmaskine, sÃ¥ kan man studere
 output fra yacc eller bison parser-generatorer. De egner sig
-imidlertid også til opgaver. Da ID-Software frigav koden til
+imidlertid ogsÃ¥ til opgaver. Da ID-Software frigav koden til
 Quake og Quake-2 projekterne, kunne man se, at botternes
-bevægelser og strategi blev styret af simple tilstandsmaskiner.
+bevÃ¦gelser og strategi blev styret af simple tilstandsmaskiner.
 </para>
 
 <para>
-Tilstandsmaskiner kaldes mere præcist Finite State Machines,
+Tilstandsmaskiner kaldes mere prÃ¦cist Finite State Machines,
 (FSM) maskiner med et endeligt antal tilstande. Tilstandene kan
 noteres i en tabel, for der er jo kun et endeligt antal af dem.
-Hver tilstand er karakteriseret af, at der er et begrænset antal
+Hver tilstand er karakteriseret af, at der er et begrÃ¦nset antal
 muligheder for, hvordan maskinen kan reagere. Maskinen reagerer
-på input, som skal kunne opdeles i et endeligt antal kategorier.
-Input kan være fra et tastatur, men i et spil kan det
-selvfølgelig også være fra en joy-stick.
+pÃ¥ input, som skal kunne opdeles i et endeligt antal kategorier.
+Input kan vÃ¦re fra et tastatur, men i et spil kan det
+selvfÃ¸lgelig ogsÃ¥ vÃ¦re fra en joy-stick.
 </para>
 
 <para>
-For at få et billede af en FSM kan man forestille sig en
-adventure-lignende situation: Jeg står foran indgangen til en
-grotte, og jeg kan vælge at gå ind, kravle op af bjergvæggen, gå
-baglæns eller til højre eller venstre. Jeg vælger at gå ind. Nu
-har jeg andre muligheder, tilstanden er en anden. Det at gå fra
-én tilstand til en anden kaldes en tilstandsændring (state
+For at fÃ¥ et billede af en FSM kan man forestille sig en
+adventure-lignende situation: Jeg stÃ¥r foran indgangen til en
+grotte, og jeg kan vÃ¦lge at gÃ¥ ind, kravle op af bjergvÃ¦ggen, gÃ¥
+baglÃ¦ns eller til hÃ¸jre eller venstre. Jeg vÃ¦lger at gÃ¥ ind. Nu
+har jeg andre muligheder, tilstanden er en anden. Det at gÃ¥ fra
+Ã©n tilstand til en anden kaldes en tilstandsÃ¦ndring (state
 transition) og mulighederne for hver tilstand noteres i
 tilstandstabellen.
 </para>
 
 <para>
-Hvis jeg havde valgt at gå tilbage, havde jeg haft andre
-muligheder bagefter, jeg var gået til en anden tilstand.
+Hvis jeg havde valgt at gÃ¥ tilbage, havde jeg haft andre
+muligheder bagefter, jeg var gÃ¥et til en anden tilstand.
 </para>
 
 <para>
-For at tabellen kan være på siden har jeg udeladt muligheden for
-at gå til venstre.
+For at tabellen kan vÃ¦re pÃ¥ siden har jeg udeladt muligheden for
+at gÃ¥ til venstre.
 </para>
 
 <para>
@@ -1127,9 +1127,9 @@ at gå til venstre.
   <row>
     <entry>--</entry>
     <entry>Skift til ind i grotte-tilstand</entry>
-    <entry>Skift til væk-fra-indgang tilstand</entry>
+    <entry>Skift til vÃ¦k-fra-indgang tilstand</entry>
     <entry>Skift til op-over-grotte tilstand</entry>
-    <entry>Skift til højre-for-grotte tilstand</entry>
+    <entry>Skift til hÃ¸jre-for-grotte tilstand</entry>
     <entry>Skift til ubrugeligt-input tilstand</entry>
   </row>
 </tbody>
@@ -1138,12 +1138,12 @@ at gå til venstre.
 </para>
 
 <para>
-Det er væsentligt for teorien at der er en kategori af
+Det er vÃ¦sentligt for teorien at der er en kategori af
 ikke-brugbart input, og det har yderligere den fordel, at
-tilstandstabellen bliver mere overskuelig.  Næste tabel viser
-hvilke muligheder, vi har, når vi er gået ind i grotten, jeg er i
+tilstandstabellen bliver mere overskuelig.  NÃ¦ste tabel viser
+hvilke muligheder, vi har, nÃ¥r vi er gÃ¥et ind i grotten, jeg er i
 "grotte tilstand". Der er samme antal input-kategorier, blot for
-at gøre det lettere at håntere implementeringen senere.
+at gÃ¸re det lettere at hÃ¥ntere implementeringen senere.
 </para>
 
 <para>
@@ -1162,10 +1162,10 @@ at gøre det lettere at håntere implementeringen senere.
 <tbody>
   <row>
     <entry>--</entry>
-    <entry>Skift til støde-ind-i-væg tilstand</entry>
+    <entry>Skift til stÃ¸de-ind-i-vÃ¦g tilstand</entry>
     <entry>Skift til foran-grotte tilstand</entry>
     <entry>Skift til ubrugeligt-input tilstand</entry>
-    <entry>Skift til gennem-dør tilstand</entry>
+    <entry>Skift til gennem-dÃ¸r tilstand</entry>
     <entry>Skift til ubrugeligt-input tilstand</entry>
   </row>
 </tbody>
@@ -1175,39 +1175,39 @@ at gøre det lettere at håntere implementeringen senere.
 
 
 <para>
-I et rigtigt spil skal der selvfølgelig være mange, mange
+I et rigtigt spil skal der selvfÃ¸lgelig vÃ¦re mange, mange
 tilstande, ligesom der i et godt adventure spil er mange huler,
 grotter og underlige steder, man kan komme hen. I hver situation
-udløser input-katetori X et skift til en tilstand (det kan godt
-være samme tilstand og evt. en action, for eksempel at man kommer i
-besiddelse af nye ting - og det er så en anden tilstand. Antallet
-at tilstande kan derfor være ret stort i sådan et spil, og man
-laver derfor heller ikke én FSM for hele spillet, men for eksempel som i
+udlÃ¸ser input-katetori X et skift til en tilstand (det kan godt
+vÃ¦re samme tilstand og evt. en action, for eksempel at man kommer i
+besiddelse af nye ting - og det er sÃ¥ en anden tilstand. Antallet
+at tilstande kan derfor vÃ¦re ret stort i sÃ¥dan et spil, og man
+laver derfor heller ikke Ã©n FSM for hele spillet, men for eksempel som i
 Quake en tilstandsmaskien for en "bot". Her bliver input til
-"bot"en så ikke nødvendigvis input direkte fra tastaturet, men
+"bot"en sÃ¥ ikke nÃ¸dvendigvis input direkte fra tastaturet, men
 resultatet af en beregning fra en tilstandsmaskine et andet sted
 i programmet.
 </para>
 
 <para>
-Antallet af tilstande, en CPU kan være i, fås ved at tage alle
-registre og flag og lægge i forlængelse af hinanden og så tælle
-antallet af bits, T, så er antallet 2<superscript>T</superscript>
+Antallet af tilstande, en CPU kan vÃ¦re i, fÃ¥s ved at tage alle
+registre og flag og lÃ¦gge i forlÃ¦ngelse af hinanden og sÃ¥ tÃ¦lle
+antallet af bits, T, sÃ¥ er antallet 2<superscript>T</superscript>
 </para>
 
 <para>
-Det almindeligste eksempel på en tilstandsmaskine er parsning af
+Det almindeligste eksempel pÃ¥ en tilstandsmaskine er parsning af
 en tekststring, som formodes at indeholde et floating point tal,
 for eksempel <literal>123.45</literal>. Vi benytter den
-internationale standard for floating point, altså punktum, i hele
-kapitlet. Det kan være en god øvelse at lave et program, som også
+internationale standard for floating point, altsÃ¥ punktum, i hele
+kapitlet. Det kan vÃ¦re en god Ã¸velse at lave et program, som ogsÃ¥
 kan acceptere flydendetals-komma.
 </para>
 
 <para>
-Næste udgave af denne bog vil bringe nogle overskuelige eksempler
-på tilstandstabeller, genererede med bison og "håndlavede". Følg
-med på www.sslug.dk i de nye udgaver af "Friheden" bøgerne!
+NÃ¦ste udgave af denne bog vil bringe nogle overskuelige eksempler
+pÃ¥ tilstandstabeller, genererede med bison og "hÃ¥ndlavede". FÃ¸lg
+med pÃ¥ www.sslug.dk i de nye udgaver af "Friheden" bÃ¸gerne!
 </para>
 
 </sect1>

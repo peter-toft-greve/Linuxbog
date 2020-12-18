@@ -1,12 +1,12 @@
 % Konfigurationsfil til slrn - gemmes i ~/.slrnrc
-% sørger for at poste med rigtig e-post-adresse. 
+% sÃ¸rger for at poste med rigtig e-post-adresse. 
 % Username og hostname bliver sat sammen til afsender adressse.
 
 set username "anne"
 set hostname "sslug.dk"
 set realname "Anne S. Slug"
 
-% replies skal også se ordentligt ud.
+% replies skal ogsÃ¥ se ordentligt ud.
 
 set quote_string "&gt; "
 
@@ -71,8 +71,8 @@ set use_mime 1
 % that slrn does not handle
 set use_metamail 1
 
-% En sidste ting der kunne være interessant er:
+% En sidste ting der kunne vÃ¦re interessant er:
 editor_command    "jed %s -g %d -tmp"
-% Denne sætter slrn til at bruge jed som editor i 
-% stedet for default (vi). Her putter man så bare 
+% Denne sÃ¦tter slrn til at bruge jed som editor i 
+% stedet for default (vi). Her putter man sÃ¥ bare 
 % sin favorit editor ind i stedet for.

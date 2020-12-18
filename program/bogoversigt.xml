@@ -1,31 +1,31 @@
 <?xml encoding="ISO-8859-1" ?>
 
-<title>Linux-bøgerne</title>
+<title>Linux-bÃ¸gerne</title>
 
 <para>
-Bogen er en del af en serie som kan findes på 
+Bogen er en del af en serie som kan findes pÃ¥ 
 <ulink url="http://&linuxbogurl;/">http://&linuxbogurl;/</ulink>
 </para>
 
   <itemizedlist mark="bullet">
    <listitem>
     <para>
-     <emphasis>Linux - Friheden til at vælge installation</emphasis> -
+     <emphasis>Linux - Friheden til at vÃ¦lge installation</emphasis> -
      Om at installere Linux.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     <emphasis>Linux - Friheden til at lære Unix</emphasis> - Om
-     hvordan man bruger Linux' (og Unix') kommandolinieværktøjer.
+     <emphasis>Linux - Friheden til at lÃ¦re Unix</emphasis> - Om
+     hvordan man bruger Linux' (og Unix') kommandolinievÃ¦rktÃ¸jer.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     <emphasis>Linux - Friheden til at vælge programmer</emphasis> -
-     Om de programmer du kan få til Linux.
+     <emphasis>Linux - Friheden til at vÃ¦lge programmer</emphasis> -
+     Om de programmer du kan fÃ¥ til Linux.
     </para>
    </listitem>
 
@@ -39,7 +39,7 @@ Bogen er en del af en serie som kan findes på
    <listitem> 
     <para>
      <emphasis>Linux - Friheden til at programmere</emphasis> -
-     Programmering på Linux
+     Programmering pÃ¥ Linux
     </para>
    </listitem>
 
@@ -59,7 +59,7 @@ Bogen er en del af en serie som kan findes på
 
    <listitem> 
     <para>
-     <emphasis>Linux - Friheden til sikkerhed på
+     <emphasis>Linux - Friheden til sikkerhed pÃ¥
      internettet</emphasis> - Om at sikre dit Linuxsystem mod indbrud
      fra internettet.
     </para>
@@ -68,7 +68,7 @@ Bogen er en del af en serie som kan findes på
    <listitem>
     <para>
      <emphasis>Linux - Friheden til egen webserver</emphasis> - Om at
-     sætte en webserver med databaser, CGI-programmer og andet godt
+     sÃ¦tte en webserver med databaser, CGI-programmer og andet godt
      op.
     </para>
    </listitem>
@@ -83,24 +83,24 @@ Bogen er en del af en serie som kan findes på
 
    <listitem> 
     <para>
-     <emphasis>Linux - Friheden til at vælge
-     kontorprogrammer</emphasis> - Kontorfunktioner på et
+     <emphasis>Linux - Friheden til at vÃ¦lge
+     kontorprogrammer</emphasis> - Kontorfunktioner pÃ¥ et
      Linux/KDE/Star Office-system.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     <emphasis>Linux - Friheden til at vælge IT-løsning</emphasis> -
+     <emphasis>Linux - Friheden til at vÃ¦lge IT-lÃ¸sning</emphasis> -
      Om muligheder, fordele og ulemper ved at bruge Linux i sin
-     it-løsning.
+     it-lÃ¸sning.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     <emphasis>Linux - Friheden til at vælge digital signatur</emphasis> -
-     Digital signatur på Linux.
+     <emphasis>Linux - Friheden til at vÃ¦lge digital signatur</emphasis> -
+     Digital signatur pÃ¥ Linux.
     </para>
    </listitem>
   </itemizedlist>

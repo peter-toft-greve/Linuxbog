@@ -12,33 +12,33 @@ XXX
 </para>
 
 <para>
-Bogen er en del af en serie, som alle kan findes på
+Bogen er en del af en serie, som alle kan findes pÃ¥
 <ulink url="http://&linuxbogurl;/">&linuxbogurl;</ulink>
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-   <emphasis>Linux - Friheden til at vælge</emphasis> -
+   <emphasis>Linux - Friheden til at vÃ¦lge</emphasis> -
      En god bog til at komme i gang med Linux.
  </para>
 </listitem>
 <listitem>
  <para>
-   <emphasis>Linux - Friheden til at vælge programmer</emphasis> -
-    En bog om de programmer man kan få til Linux.
+   <emphasis>Linux - Friheden til at vÃ¦lge programmer</emphasis> -
+    En bog om de programmer man kan fÃ¥ til Linux.
  </para>
 </listitem>
 <listitem>
  <para>
   <emphasis>Linux - Friheden til systemadministration</emphasis> -
-      Administrér din egen Linux-server.
+      AdministrÃ©r din egen Linux-server.
  </para>
 </listitem>
 <listitem>
  <para>
  <emphasis>Linux - Friheden til at programmere</emphasis> -
-   Programmering på Linux.
+   Programmering pÃ¥ Linux.
  </para>
 </listitem>
 <listitem>
@@ -49,7 +49,7 @@ Bogen er en del af en serie, som alle kan findes på
 </listitem>
 <listitem>
  <para>
-  <emphasis>Linux - Friheden til sikkerhed på internettet</emphasis> -
+  <emphasis>Linux - Friheden til sikkerhed pÃ¥ internettet</emphasis> -
      Sikkerhed omkring din Linux-boks.
  </para>
 </listitem>
@@ -62,13 +62,13 @@ Bogen er en del af en serie, som alle kan findes på
 <listitem>
  <para>
  <emphasis>Linux - Friheden til at skrive i SGML/DocBook</emphasis> -
-   Kom i gang med at skrive bøger i SGML/DocBook.
+   Kom i gang med at skrive bÃ¸ger i SGML/DocBook.
  </para>
 </listitem>
 <listitem> 
  <para>
- <emphasis>Linux - Friheden til at vælge kontorprogrammer</emphasis> -
-   Kontor-funktioner på en Linux/KDE/Star Office-maskine.
+ <emphasis>Linux - Friheden til at vÃ¦lge kontorprogrammer</emphasis> -
+   Kontor-funktioner pÃ¥ en Linux/KDE/Star Office-maskine.
  </para>
 </listitem>
 </itemizedlist>
@@ -82,20 +82,20 @@ Bogen er en del af en serie, som alle kan findes på
 <indexterm><primary>Ophavsret/Copyright</primary></indexterm>
 <indexterm><primary>OPL</primary></indexterm>
 Denne bog er oprindeligt skrevet og redigeret af
-XXX, som har ophavsret på bogen.
+XXX, som har ophavsret pÃ¥ bogen.
 Store dele af bogen er skrevet eller redigeret
-af andre forfattere, hvilket er nævnt i
+af andre forfattere, hvilket er nÃ¦vnt i
 <xref linkend="YYY-tak">.
-Bogen kan findes i opdateret form på 
+Bogen kan findes i opdateret form pÃ¥ 
 <ulink url="http://&linuxbogurl;/">&linuxbogurl;/</ulink>.
 Bogen er udgivet under "Open Content License"
 [OPL], der er helt analog til GNU General Public License.
 </para>
 
 <para>
-Alle er velkomne til at trykke bogen og tjene de penge på salget, som de
-ønsker. Eventuelle indtægter er os uvedkommende, men vi vil være glade
-for at vide, at den udgives. Licensen kan findes på <ulink
+Alle er velkomne til at trykke bogen og tjene de penge pÃ¥ salget, som de
+Ã¸nsker. Eventuelle indtÃ¦gter er os uvedkommende, men vi vil vÃ¦re glade
+for at vide, at den udgives. Licensen kan findes pÃ¥ <ulink
 url="http://www.opencontent.org/opl.shtml">http://www.opencontent.org/opl.shtml</ulink>.
 </para>
 
@@ -109,19 +109,19 @@ er du medlem af SSLUG kan du med fordel skrive til
 
 <para>
 MSDOS (DOS), Microsoft, Windows 95/98, Windows NT og Windows 2000 er
-registrerede varemærker ejet af Microsoft Corporation.
+registrerede varemÃ¦rker ejet af Microsoft Corporation.
 </para>
 
 <para>
-Unix er et registreret varemærke ejet af The Open Group.
+Unix er et registreret varemÃ¦rke ejet af The Open Group.
 </para>
 
 <para>
-Linux er et registreret varemærke ejet af Linus Torvalds.
+Linux er et registreret varemÃ¦rke ejet af Linus Torvalds.
 </para>
 
 <para>
-Alle andre varemærker er ejet af deres respektive firmaer.
+Alle andre varemÃ¦rker er ejet af deres respektive firmaer.
 </para>
 
 
@@ -137,10 +137,10 @@ XXX
 </sect1>
 
 <sect1 id="YYY-tak">
-<title>Vi siger tak for hjælpen</title>
+<title>Vi siger tak for hjÃ¦lpen</title>
 <para>
-Vi har haft stor glæde af mange SSLUG-medlemmers støtte, rettelser og
-forslag til forbedringer - bliv ved med dette. Specielt vil vi nævne:
+Vi har haft stor glÃ¦de af mange SSLUG-medlemmers stÃ¸tte, rettelser og
+forslag til forbedringer - bliv ved med dette. Specielt vil vi nÃ¦vne:
 </para>
 
 <itemizedlist  mark="bullet" spacing="compact">
@@ -153,14 +153,14 @@ XXX
 
 <para>
 Du kan i <xref linkend="YYY-apprevhist"> finde en liste over alle de
-revisioner, som bogen har været igennem.
+revisioner, som bogen har vÃ¦ret igennem.
 </para>
 
 <para>
-Hvis du har ord du ikke forstår, så kan <ulink
-url="http://www.whatis.com">http://www.whatis.com</ulink> være
-interessant. Her kan du slå mange computerord op dog kun på engelsk.
-I øvrigt kan bogens stikordsregister være interessant.
+Hvis du har ord du ikke forstÃ¥r, sÃ¥ kan <ulink
+url="http://www.whatis.com">http://www.whatis.com</ulink> vÃ¦re
+interessant. Her kan du slÃ¥ mange computerord op dog kun pÃ¥ engelsk.
+I Ã¸vrigt kan bogens stikordsregister vÃ¦re interessant.
 </para>
 
 </sect1>
@@ -168,16 +168,16 @@ I øvrigt kan bogens stikordsregister være interessant.
 <sect1 id="YYY-typografi">
 <title>Typografi</title>
 <para>
-Vi vil afslutte indledningen med at nævne den anvendte typografi.
+Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
 </para>
 
 
 <ITEMIZEDLIST MARK="bullet" SPACING="compact">
-<listitem><para>Navne på filer og kataloger skrevet som
+<listitem><para>Navne pÃ¥ filer og kataloger skrevet som
 <filename>foo.bar</filename></para>
 </listitem>
 
-<listitem><para>Kommandoer, du udfører ved at taste, skrives som
+<listitem><para>Kommandoer, du udfÃ¸rer ved at taste, skrives som
 <command>help</command></para>
 </listitem>
 

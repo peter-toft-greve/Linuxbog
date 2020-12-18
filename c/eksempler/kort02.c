@@ -1,5 +1,5 @@
 
-/* kort02.c kortspil - repræsentation */
+/* kort02.c kortspil - reprÃ¦sentation */
 
 #include <stdio.h>
 #include <string.h>
@@ -14,7 +14,7 @@ enum farve_t {
 char *farve(enum farve_t kk)
 {
     static char *names[] = {
-        "klør", "ruder", "hjerter", "spar", "forkert kuloer"
+        "klÃ¸r", "ruder", "hjerter", "spar", "forkert kuloer"
     };
 
     if (kk > spar  || kk < kloer)

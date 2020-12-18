@@ -4,20 +4,20 @@
  <sect1 id="ooo-tekstdokumenter-visning">
   <title>Visning af tekstdokumenter</title>
 
-<para>Du kan få vist forskellige ting i dit tekstdokument, som ikke
-    udskrives, men hjælper undervejs i skrivningen.</para>
+<para>Du kan fÃ¥ vist forskellige ting i dit tekstdokument, som ikke
+    udskrives, men hjÃ¦lper undervejs i skrivningen.</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para><emphasis>Vis/Tekstmargener</emphasis> fjerner/viser de linjer på skærmen, som
-        omkranser tekstområdet på siden samt sidehoved og sidefod.</para>
+<para><emphasis>Vis/Tekstmargener</emphasis> fjerner/viser de linjer pÃ¥ skÃ¦rmen, som
+        omkranser tekstomrÃ¥det pÃ¥ siden samt sidehoved og sidefod.</para>
 
 </listitem>
 
   <listitem>
 
-<para><emphasis>Vis/Markeringer</emphasis> fjerner/viser den grå baggrund til de
+<para><emphasis>Vis/Markeringer</emphasis> fjerner/viser den grÃ¥ baggrund til de
         elementer i teksten, hvor Writer kontrollerer indholdet, f.eks.
         punkttegn i punktopstilling, fodnotehenvisninger samt til felter som
         f.eks. sidetal, krydsreferencer mm. (Tastatur: <emphasis>Ctrl-F8</emphasis>).</para>
@@ -26,7 +26,7 @@
 
   <listitem>
 
-<para><emphasis>Vis/Felter</emphasis> viser navn i stedet for indhold på felter, som
+<para><emphasis>Vis/Felter</emphasis> viser navn i stedet for indhold pÃ¥ felter, som
         f.eks. sidetal, krydsreferencer mm. (Tastatur: <emphasis>Ctrl-F9</emphasis>).</para>
 
 </listitem>
@@ -34,16 +34,16 @@
   <listitem>
 
 <para><emphasis>Vis/Kontroltegn</emphasis> fjerner/viser de tegn som ellers er skjult,
-        f.eks. nyt afsnit (¶), mellemrum og tvungent linjeskift. (Tastatur:
+        f.eks. nyt afsnit (Â¶), mellemrum og tvungent linjeskift. (Tastatur:
         <emphasis>Ctrl-F10</emphasis>).</para>
 
 </listitem>
 </itemizedlist>
 
 
-    <para>Skærmbillederne viser forskellene: Til
-    venstre er alle fire punkter tilvalgt, til højre er alle fire punkter
-    fravalgt, så udseendet svarer til udskriften:</para>
+    <para>SkÃ¦rmbillederne viser forskellene: Til
+    venstre er alle fire punkter tilvalgt, til hÃ¸jre er alle fire punkter
+    fravalgt, sÃ¥ udseendet svarer til udskriften:</para>
 
 <figure float="1" id="fig-ooo-brugerfladetekstmed">
 <title>Brugerfladetekst med</title>
@@ -55,19 +55,19 @@
 </figure>
 
 <sect2 id="ooo-tekstdokument-visning-maalestok">
-  <title>Målestok</title>
+  <title>MÃ¥lestok</title>
 
-<para>Størrelsen af teksten på skærmen justeres med menupunktet
-    <emphasis>Vis/Målestok</emphasis>. Alternativ: Højreklik eller dobbeltklik på
+<para>StÃ¸rrelsen af teksten pÃ¥ skÃ¦rmen justeres med menupunktet
+    <emphasis>Vis/MÃ¥lestok</emphasis>. Alternativ: HÃ¸jreklik eller dobbeltklik pÃ¥
     procentangivelsen i statuslinjen.</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para><emphasis>Skalering</emphasis> kan vælges til et antal procent af
-        <!-- &bdquo; -->naturlig størrelse<!-- &ldquo; -->. Bemærk at 100% ikke svarer præcis
-        til størrelsen på papir; det afhænger af skærmens størrelse og
-        opløsning.</para>
+<para><emphasis>Skalering</emphasis> kan vÃ¦lges til et antal procent af
+        <!-- &bdquo; -->naturlig stÃ¸rrelse<!-- &ldquo; -->. BemÃ¦rk at 100% ikke svarer prÃ¦cis
+        til stÃ¸rrelsen pÃ¥ papir; det afhÃ¦nger af skÃ¦rmens stÃ¸rrelse og
+        oplÃ¸sning.</para>
 
 </listitem>
 
@@ -75,7 +75,7 @@
 
 <para><emphasis>Optimal</emphasis> betyder teksten fylder mest muligt, idet der kun
         vises et lille stykke af margen. <emphasis>Denne indstilling anbefales, da
-        den udnytter skærmen bedst muligt!</emphasis></para>
+        den udnytter skÃ¦rmen bedst muligt!</emphasis></para>
 
 </listitem>
 
@@ -88,14 +88,14 @@
 
   <listitem>
 
-<para><emphasis>Hele siden</emphasis> betyder, at hele papiret vises i både bredden og
-        højden. Det er kun nyttigt til at skabe overblik, men det kan du også
-        få på anden måde, se under udskrivning ( <xref linkend="ooo-udskrift-vis"/>vis
+<para><emphasis>Hele siden</emphasis> betyder, at hele papiret vises i bÃ¥de bredden og
+        hÃ¸jden. Det er kun nyttigt til at skabe overblik, men det kan du ogsÃ¥
+        fÃ¥ pÃ¥ anden mÃ¥de, se under udskrivning ( <xref linkend="ooo-udskrift-vis"/>vis
         udskrift).</para>
 
 </listitem>
 </itemizedlist>
 
-</sect2>    <!--   Målestok -->
+</sect2>    <!--   MÃ¥lestok -->
 </sect1>    <!--   2.2. Visning af tekstdokumenter -->
 

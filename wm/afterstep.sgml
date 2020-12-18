@@ -15,26 +15,26 @@
  </indexterm>
 
  <para>
-  AfterStep hører til blandt veteranerne. Den har eksisteret længe, og
-  er egentlig en fortsættelse af et endnu ældre projekt, BowMan, der
-  for længst er stoppet.
+  AfterStep hÃ¸rer til blandt veteranerne. Den har eksisteret lÃ¦nge, og
+  er egentlig en fortsÃ¦ttelse af et endnu Ã¦ldre projekt, BowMan, der
+  for lÃ¦ngst er stoppet.
  </para>
 
  <para>
-  AfterStep er ikke lavet specifikt til Linux, og den er da også
-  omtrent lige så gammel som de første Linux-distributioner.
+  AfterStep er ikke lavet specifikt til Linux, og den er da ogsÃ¥
+  omtrent lige sÃ¥ gammel som de fÃ¸rste Linux-distributioner.
  </para>
 
  <para>
-  Jeg har tidligere brugt AfterStep på HP-UX som erstatning for det
-  meget lidt funktionelle CDE-miljø, ligesom AfterStep tidligere var
-  fast inventar på mine Linux-maskiner.
+  Jeg har tidligere brugt AfterStep pÃ¥ HP-UX som erstatning for det
+  meget lidt funktionelle CDE-miljÃ¸, ligesom AfterStep tidligere var
+  fast inventar pÃ¥ mine Linux-maskiner.
  </para>
 
  <para>
-  Meningen er at AfterStep skal ligne og opføre sig som NeXTStep der
+  Meningen er at AfterStep skal ligne og opfÃ¸re sig som NeXTStep der
   blev lavet af NeXT Software, Inc., der havde Steve Jobs fra Apple
-  som en af grundlæggerne.
+  som en af grundlÃ¦ggerne.
  </para>
 
  <indexterm>
@@ -57,18 +57,18 @@
 
   <para>
    Fra <ulink url="http://www.afterstep.org/download.php">AfterSteps
-   »download«-side</ulink> kan man hente en kildetekst-RPM-pakke med den
-   seneste udgave, men den lod sig ikke bygge til brugbar RPM på Red
-   Hat 8, så jeg hentede <ulink
+   Â»downloadÂ«-side</ulink> kan man hente en kildetekst-RPM-pakke med den
+   seneste udgave, men den lod sig ikke bygge til brugbar RPM pÃ¥ Red
+   Hat 8, sÃ¥ jeg hentede <ulink
    url="ftp://ftp.afterstep.org/stable/afterstep-1.8.11.tar.bz2">den
-   rå kildetekst</ulink> i stedet for.
+   rÃ¥ kildetekst</ulink> i stedet for.
   </para>
 
   <para>
-   AfterStep kompilerer let på Red Hat 8. Den sædvanlige procedure med
+   AfterStep kompilerer let pÃ¥ Red Hat 8. Den sÃ¦dvanlige procedure med
    kommandoen <command>./configure &amp;&amp; make &amp;&amp; make
-   install</command> virker fint, men det er også muligt at benytte
-   det medfølgende <command>./install.script</command>.
+   install</command> virker fint, men det er ogsÃ¥ muligt at benytte
+   det medfÃ¸lgende <command>./install.script</command>.
   </para>
 
   <para>
@@ -78,43 +78,43 @@
  </sect2>    <!--   Installation -->
 
  <sect2  id="wm-afterstep-opsaetning">
-  <title>Opsætning</title>
+  <title>OpsÃ¦tning</title>
 
   <indexterm>
-   <primary>opsætning af</primary>
+   <primary>opsÃ¦tning af</primary>
    <secondary>Afterstep</secondary>
   </indexterm>
 
   <sect3  id="wm-afterstep-opsaetningsfiler">
-   <title>Opsætningsfiler</title>
+   <title>OpsÃ¦tningsfiler</title>
 
    <para>
-    AfterSteps opsætningsfiler ligger under
+    AfterSteps opsÃ¦tningsfiler ligger under
     <filename>/usr/local/share/afterstep</filename>.
    </para>
 
    <para>
-    Den enkelte brugers opsætning af AfterStep kan lægges i
+    Den enkelte brugers opsÃ¦tning af AfterStep kan lÃ¦gges i
     <filename>$HOME/GNUstep/Library/AfterStep/</filename>, og har
     samme katalogstruktur som
     <filename>/usr/local/share/afterstep</filename>.
    </para>
 
    <para>
-    Man kan lige så godt starte med at kopiere det meste af
-    <filename>/usr/local/share/afterstep</filename>, da jeg har svært
+    Man kan lige sÃ¥ godt starte med at kopiere det meste af
+    <filename>/usr/local/share/afterstep</filename>, da jeg har svÃ¦rt
     ved at forestille mig at nogen vil have AfterStep i
-    standardopsætningen.  Indholdet af katalogerne
+    standardopsÃ¦tningen.  Indholdet af katalogerne
     <filename>looks</filename>, <filename>desktop</filename> og
     <filename>backgrounds</filename> skal ikke kopieres da en del
-    indgange i menuerne så vil dukke op to gange. Men katalogerne selv
-    må gerne eksistere under
-    <filename>$HOME/GNUstep/Library/AfterStep/</filename>, da man så
-    her kan lægge egne menu-punkter og ikoner.
+    indgange i menuerne sÃ¥ vil dukke op to gange. Men katalogerne selv
+    mÃ¥ gerne eksistere under
+    <filename>$HOME/GNUstep/Library/AfterStep/</filename>, da man sÃ¥
+    her kan lÃ¦gge egne menu-punkter og ikoner.
    </para>
 
    <para>
-    Mængden af opsætningsfiler og -kataloger kan ved første øjekast se
+    MÃ¦ngden af opsÃ¦tningsfiler og -kataloger kan ved fÃ¸rste Ã¸jekast se
     temmelig uoverskuelig ud:
 
 <screen>
@@ -129,35 +129,35 @@ backgrounds/  base.8bpp   doc/           looks/  start/
    </para>
 
    <para>
-    Men når man har vænnet sig til det, er det egentlig ganske logisk.
+    Men nÃ¥r man har vÃ¦nnet sig til det, er det egentlig ganske logisk.
     AfterStep har ingen kilometerlang <filename>.noget</filename>-fil.
-    Der er &eacute;n fil til hver funktion, hvilket selvfølgelig øger
-    overskueligheden væsentligt, når man først har fundet ud af,
+    Der er &eacute;n fil til hver funktion, hvilket selvfÃ¸lgelig Ã¸ger
+    overskueligheden vÃ¦sentligt, nÃ¥r man fÃ¸rst har fundet ud af,
     hvilke filer der styrer hvad.
    </para>
 
    <para>
-    Jeg har ikke været dem alle igennem, men for mig at se er de
-    væsentlige filer og kataloger:
+    Jeg har ikke vÃ¦ret dem alle igennem, men for mig at se er de
+    vÃ¦sentlige filer og kataloger:
 
     <itemizedlist mark="bullet">
      <listitem>
       <para>
        <filename>autoexec</filename> bestemmer hvilke
-       AfterStep-moduler der skal køres ved start og genstart
+       AfterStep-moduler der skal kÃ¸res ved start og genstart
       </para>
      </listitem>
 
      <listitem> 
       <para>
-       <filename>wharf</filename> opsætning af Wharf
+       <filename>wharf</filename> opsÃ¦tning af Wharf
       </para>
      </listitem>
 
      <listitem>
       <para>
        <filename>pager</filename> styrer pagerens udseende og
-       størrelse
+       stÃ¸rrelse
       </para>
      </listitem>
 
@@ -182,7 +182,7 @@ backgrounds/  base.8bpp   doc/           looks/  start/
      </listitem>
     </itemizedlist>
    </para>
-  </sect3>    <!--   Opsætningsfiler -->
+  </sect3>    <!--   OpsÃ¦tningsfiler -->
 
   <sect3  id="wm-afterstep-winlist">
    <title>Winlist</title>
@@ -193,7 +193,7 @@ backgrounds/  base.8bpp   doc/           looks/  start/
    </indexterm>
 
    <para>
-    Winlist er et lille panel hvormed man kan holde styr på åbne
+    Winlist er et lille panel hvormed man kan holde styr pÃ¥ Ã¥bne
     vinduer - i stil med GNOME-panelets Desk Guide, eller Taskbar i
     Windows.
    </para>
@@ -204,10 +204,10 @@ backgrounds/  base.8bpp   doc/           looks/  start/
    </figure>
 
    <para>
-    Jeg synes den er overflødig, så jeg fjernede <filename>Module "I"
+    Jeg synes den er overflÃ¸dig, sÃ¥ jeg fjernede <filename>Module "I"
     WinList</filename> fra
     <filename>$HOME/GNUstep/Library/AfterStep/autoexec</filename> og
-    gjorde ikke mere ved winlist. Men den kan sættes op i filen
+    gjorde ikke mere ved winlist. Men den kan sÃ¦ttes op i filen
     <filename>winlist</filename>.
    </para>
   </sect3>    <!--   Winlist -->
@@ -221,7 +221,7 @@ backgrounds/  base.8bpp   doc/           looks/  start/
    </indexterm>
 
    <para>
-    Når man starter AfterStep første gang får man en pager, der efter
+    NÃ¥r man starter AfterStep fÃ¸rste gang fÃ¥r man en pager, der efter
     min smag er lidt vel overdimensioneret.
    </para>
 
@@ -231,24 +231,24 @@ backgrounds/  base.8bpp   doc/           looks/  start/
    </figure>
 
    <para>
-    Jeg synes den fylder for meget, og i øvrigt kan jeg sjældent hitte
+    Jeg synes den fylder for meget, og i Ã¸vrigt kan jeg sjÃ¦ldent hitte
     rundt i mere end 4 desktops.
    </para>
 
    <para>
     I <filename>$HOME/GNUstep/Library/AfterStep/pager</filename>
-    udkommenterede jeg Desktop 1,2 og 3 og ændrede lidt på størrelsen
-    for at få den til at passe ind i Wharf.
+    udkommenterede jeg Desktop 1,2 og 3 og Ã¦ndrede lidt pÃ¥ stÃ¸rrelsen
+    for at fÃ¥ den til at passe ind i Wharf.
    </para>
 
    <para>
     I <filename>module</filename> udkommenterede jeg pager-linjerne -
-    også af hensyn til Wharf. Mere om Wharf i næste afsnit.
+    ogsÃ¥ af hensyn til Wharf. Mere om Wharf i nÃ¦ste afsnit.
    </para>
 
    <para>
-    For sjov skyld ændrede jeg på farverne på de pop-up-lister der
-    kommer når man kører musen hen over pageren.
+    For sjov skyld Ã¦ndrede jeg pÃ¥ farverne pÃ¥ de pop-up-lister der
+    kommer nÃ¥r man kÃ¸rer musen hen over pageren.
    </para>
 
    <para>
@@ -305,14 +305,14 @@ BalloonBorderColor      Green
     url="http://www.tigr.net/afterstep/long.php">stor samling</ulink>
     netop til Wharf. Jeg hentede det <ulink
     url="http://www.tigr.net/cgi-bin/as-apps-snapshot.cgi">komplette
-    tar-arkiv</ulink> af dem alle og kompilerede efterhånden som jeg
+    tar-arkiv</ulink> af dem alle og kompilerede efterhÃ¥nden som jeg
     fik brug for dem.
    </para>
 
    <para>
-    Først i filen
+    FÃ¸rst i filen
     <filename>$HOME/GNUstep/Library/AfterStep/wharf</filename> er der
-    en del options der bestemmer hvordan Wharf skal opføre sig:
+    en del options der bestemmer hvordan Wharf skal opfÃ¸re sig:
     farver, animering, pop-up-lister o.l.
    </para>
 
@@ -321,9 +321,9 @@ BalloonBorderColor      Green
    </para>
 
    <para>
-    Men jeg ændrede <filename>*WharfGeometry</filename> til
-    <filename>-1+1</filename> for at få den til at tage udgangspunkt i
-    øverste højre hjørne.
+    Men jeg Ã¦ndrede <filename>*WharfGeometry</filename> til
+    <filename>-1+1</filename> for at fÃ¥ den til at tage udgangspunkt i
+    Ã¸verste hÃ¸jre hjÃ¸rne.
    </para>
 
    <para>
@@ -333,13 +333,13 @@ BalloonBorderColor      Green
    </para>
 
    <para>
-    Syntaksen for de dockede applikationer kan være lidt tricky, men
+    Syntaksen for de dockede applikationer kan vÃ¦re lidt tricky, men
     med nogle eksempler vil det nok falde naturligt efter et stykke
     tid.
    </para>
 
    <para>
-    Jeg vil have Emacs let tilgængelig, så jeg indsatte følgende
+    Jeg vil have Emacs let tilgÃ¦ngelig, sÃ¥ jeg indsatte fÃ¸lgende
     linje:
 
 <programlisting>
@@ -348,19 +348,19 @@ BalloonBorderColor      Green
    </para>
 
    <para>
-    AfterStep kommer ikke med et Emacs-ikon, så jeg huggede et fra
+    AfterStep kommer ikke med et Emacs-ikon, sÃ¥ jeg huggede et fra
     GNOME, og lagde det i XPM-format under
     <filename>$HOME/GNUstep/Library/AfterStep/desktop/icons/16bpp</filename>.
    </para>
 
    <para>
-    Wharf kommer hurtigt til at fylde den del, så man kan med fordel
+    Wharf kommer hurtigt til at fylde den del, sÃ¥ man kan med fordel
     bruge de indbyggede skuffer.
    </para>
 
    <para>
     Jeg har lavet en skuffe til audio-ting og en til programmer jeg
-    ikke bruger så ofte:
+    ikke bruger sÃ¥ ofte:
 
 <programlisting>
 ## Applikations-folder
@@ -382,7 +382,7 @@ BalloonBorderColor      Green
 
    <para>
     <filename>FileFolders.xpm,3_dots.xpm</filename> giver to
-    XPM-billeder på skuffeknappen: Et af nogle fine hængemapper og et
+    XPM-billeder pÃ¥ skuffeknappen: Et af nogle fine hÃ¦ngemapper og et
     af tre prikker, der symboliserer at det er en skuffe og ikke et
     normalt program.
    </para>
@@ -392,7 +392,7 @@ BalloonBorderColor      Green
    </para>
 
    <para>
-    Min endelige opsætningsfil der laver den wharf her til venstre kan
+    Min endelige opsÃ¦tningsfil der laver den wharf her til venstre kan
     findes i <ulink url="17-wharf.txt">min wharf-fil</ulink>
    </para>
   </sect3>    <!--   Wharf -->
@@ -406,7 +406,7 @@ BalloonBorderColor      Green
    </indexterm>
 
    <para>
-    Menuen sættes op i kataloget
+    Menuen sÃ¦ttes op i kataloget
     <filename>~/GNUstep/Library/AfterStep/start</filename>.
     Strukturen herunder afspejles i menuen. I kataloget
     <filename>Applications</filename> har jeg:
@@ -435,8 +435,8 @@ System/
     Kataloger angiver en undermenu med katalogets navn, og filer
     angiver menupunkter. Menupunkterne navngives med et bogstav eller
     et tal efterfulgt af en underscore og herefter menupunktets
-    navn. Det første bogstav eller tal bestemmer menupunkternes
-    rækkefølge.
+    navn. Det fÃ¸rste bogstav eller tal bestemmer menupunkternes
+    rÃ¦kkefÃ¸lge.
    </para>
 
    <para>
@@ -451,7 +451,7 @@ MiniPixmap "mini-app.xpm"
    </para>
 
    <para>
-    Først angives der at dette er et kørbart program der kaldes
+    FÃ¸rst angives der at dette er et kÃ¸rbart program der kaldes
     for &quot;AfterStep terminal&quot;. Derefter angives selve
     kommandolinjen til det program der skal startes.
    </para>
@@ -467,19 +467,19 @@ MiniPixmap "mini-app.xpm"
 
    <para>
     Da jeg ikke synes om Winlist har jeg i stedet brug for at have
-    ikoner på skrivebordet. I filen
+    ikoner pÃ¥ skrivebordet. I filen
     <filename>~/GNUstep/Library/AfterStep/looks/look.Vilmann</filename>
     har jeg angivet <filename>IconBox 10 -100 600 -10</filename> , for
-    at få ikonerne til at ligge nederst til venstre.
+    at fÃ¥ ikonerne til at ligge nederst til venstre.
    </para>
 
    <para>
     <filename>look.Vilmann</filename> er en kopi af en af filerne i
     <filename>/usr/local/share/afterstep/looks/</filename>, som jeg
-    har rettet lidt til så udseendet passer mig lidt bedre.
+    har rettet lidt til sÃ¥ udseendet passer mig lidt bedre.
    </para>
   </sect3>    <!--   Ikoner -->
- </sect2>    <!--   Opsætning -->
+ </sect2>    <!--   OpsÃ¦tning -->
 
  <sect2  id="wm-afterstep-fed">
   <title>Er AfterStep stadig brugbar?</title>
@@ -489,36 +489,36 @@ MiniPixmap "mini-app.xpm"
   </para>
 
   <para>
-   Jeg har her kun været inde på en lille del af AfterStep. Der er
+   Jeg har her kun vÃ¦ret inde pÃ¥ en lille del af AfterStep. Der er
    meget mere at lege med, hvis man har tid og lyst. Temaer og
-   baggrunde kan ændres efter behov, og der eksisterer en erstatning
+   baggrunde kan Ã¦ndres efter behov, og der eksisterer en erstatning
    for wharf ved navn zharf.
   </para>
 
   <para>
-   Men AfterStep <emphasis>har</emphasis> overstået
-   børnesygdommene. Og når man har forstået opbygningen af
-   opsætningskataloget, er den ikke specielt indviklet at arbejde med.
+   Men AfterStep <emphasis>har</emphasis> overstÃ¥et
+   bÃ¸rnesygdommene. Og nÃ¥r man har forstÃ¥et opbygningen af
+   opsÃ¦tningskataloget, er den ikke specielt indviklet at arbejde med.
   </para>
 
   <para>
-   Den gør sig godt som flot alternativ til GNOME eller KDE.
+   Den gÃ¸r sig godt som flot alternativ til GNOME eller KDE.
   </para>
 
   <para>
    Jeg har nu (igen) den sidste uges tid brugt AfterStep. Og flere
-   gange har jeg fået kommentaren: Hvad er det? Den er flot!
+   gange har jeg fÃ¥et kommentaren: Hvad er det? Den er flot!
   </para>
 
   <para>
-   Eneste anke er at wharf'en fylder en del på skærmen. Der er ingen
-   tvivl om at AfterStep kommer fra miljøer hvor skærmene har højere
-   opløsning end de 1024x768 min bærbare kan præstere.
+   Eneste anke er at wharf'en fylder en del pÃ¥ skÃ¦rmen. Der er ingen
+   tvivl om at AfterStep kommer fra miljÃ¸er hvor skÃ¦rmene har hÃ¸jere
+   oplÃ¸sning end de 1024x768 min bÃ¦rbare kan prÃ¦stere.
   </para>
 
   <para>
-   Og så kræver den et godt grafikkort. Det burde ikke være et problem
-   i dag, men på ældre maskiner kan man "løbe tør" for farver, fordi
+   Og sÃ¥ krÃ¦ver den et godt grafikkort. Det burde ikke vÃ¦re et problem
+   i dag, men pÃ¥ Ã¦ldre maskiner kan man "lÃ¸be tÃ¸r" for farver, fordi
    ikonerne er meget farverige.
   </para>
  </sect2>

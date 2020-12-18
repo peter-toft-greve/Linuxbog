@@ -17,13 +17,13 @@
 
  <para>
   Prolog er et <link linkend="def-deklarative-sprog">deklarativt sprog</link>
-  med understøttelse for metaprogrammering.
+  med understÃ¸ttelse for metaprogrammering.
   Det er hovedsageligt brugt i kunstig intelligens, specielt inden for
   naturlige sprog og logik.
  </para>
 
  <para>
-  Programmeringen foregår via en formel logisk beskrivelse af hvad man ønsker
-  programmet skal opnå.
+  Programmeringen foregÃ¥r via en formel logisk beskrivelse af hvad man Ã¸nsker
+  programmet skal opnÃ¥.
  </para>
 </sect1>

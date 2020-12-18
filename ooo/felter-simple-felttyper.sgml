@@ -7,48 +7,48 @@
 <orderedlist>
       <listitem>
 
-<para>For at indsætte felter generelt skal du vælge
-        <emphasis>Indsæt/Felt/Andre</emphasis> (tastatur <emphasis>Ctrl-F2</emphasis>).</para>
+<para>For at indsÃ¦tte felter generelt skal du vÃ¦lge
+        <emphasis>IndsÃ¦t/Felt/Andre</emphasis> (tastatur <emphasis>Ctrl-F2</emphasis>).</para>
 
 </listitem>
 
       <listitem>
 
-<para>På fanebladet <emphasis>Dokument</emphasis> finder du et udvalg af simple
+<para>PÃ¥ fanebladet <emphasis>Dokument</emphasis> finder du et udvalg af simple
         felttyper.</para>
 
 </listitem>
 
       <listitem>
 
-<para>I listen <emphasis>Felttype</emphasis> kan du vælge en kategori, for eksempel
+<para>I listen <emphasis>Felttype</emphasis> kan du vÃ¦lge en kategori, for eksempel
         <emphasis>Dato</emphasis>, <emphasis>Filnavn</emphasis> og <emphasis>Side</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>I listen <emphasis>Udvalg</emphasis> kan du derefter vælge en undertype, for
+<para>I listen <emphasis>Udvalg</emphasis> kan du derefter vÃ¦lge en undertype, for
         eksempel <emphasis>Dato (fast)</emphasis> og <emphasis>Dato</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>I listen <emphasis>Format</emphasis> kan du til sidst vælge, hvordan feltet skal
+<para>I listen <emphasis>Format</emphasis> kan du til sidst vÃ¦lge, hvordan feltet skal
         formateres.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Klik <emphasis>Indsæt</emphasis> for at indsætte feltet og <emphasis>Luk</emphasis> for at
+<para>Klik <emphasis>IndsÃ¦t</emphasis> for at indsÃ¦tte feltet og <emphasis>Luk</emphasis> for at
         lukke dialogen igen.</para>
 
 </listitem>
     </orderedlist>
 
-<para>Feltet vises på en grå baggrund på skærmen (ikke på udskriften). Det
+<para>Feltet vises pÃ¥ en grÃ¥ baggrund pÃ¥ skÃ¦rmen (ikke pÃ¥ udskriften). Det
     betyder, at Writer kontrollerer indholdet, og opdaterer det hvis det er
     relevant.</para>
 

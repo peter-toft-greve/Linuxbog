@@ -10,13 +10,13 @@
 <indexterm><primary>Windowmanager</primary><secondary>wmx</secondary></indexterm>
 
 <para>
-wm2 og wmx er to window managere, der dels går efter at være
+wm2 og wmx er to window managere, der dels gÃ¥r efter at vÃ¦re
 ret minimalistiske i hvad de kan, men samtidig gerne vil skille
-sig lidt ud fra mængden.</para>
+sig lidt ud fra mÃ¦ngden.</para>
 
 <para>
-Det mest slående element ved wm2 og wmx er den titelbar, de sætter på
-vinduerne. Den står nemlig ikke ovenover vinduet, men på siden.
+Det mest slÃ¥ende element ved wm2 og wmx er den titelbar, de sÃ¦tter pÃ¥
+vinduerne. Den stÃ¥r nemlig ikke ovenover vinduet, men pÃ¥ siden.
 Se bare her:
 </para>
 
@@ -27,95 +27,95 @@ Se bare her:
 </figure>
 
 <para>
-Forskellen på wm2 og wmx er, at wm2 er den mest simple af de to,
-f.eks. indeholder wm2 ingen form for run-time opsætning.
+Forskellen pÃ¥ wm2 og wmx er, at wm2 er den mest simple af de to,
+f.eks. indeholder wm2 ingen form for run-time opsÃ¦tning.
 wmx er mere avanceret, men dog ikke mere end at man har
-bevaret det oprindelige mål med at have en meget enkel
+bevaret det oprindelige mÃ¥l med at have en meget enkel
 window manager. wmx har blandt andet en del flere tastatur-
-genveje, så man f.eks. kan skifte mellem vinduer med ALT+TAB,
+genveje, sÃ¥ man f.eks. kan skifte mellem vinduer med ALT+TAB,
 der er virtuelle desktops (kaldet &quot;Channels&quot;), og
 en del flere muligheder for at dekorere sin desktop med f.eks.
-baggrunds-billeder på titel-baren og den slags.</para>
+baggrunds-billeder pÃ¥ titel-baren og den slags.</para>
 
 <sect2 id="wm-wm2-installation">
   <title>Installation</title>
 
-<para>Både wm2 og wmx findes på <ulink url="http://www.all-day-breakfast.com/">
+<para>BÃ¥de wm2 og wmx findes pÃ¥ <ulink url="http://www.all-day-breakfast.com/">
 http://www.all-day-breakfast.com/</ulink> i kildetekst-form. Hvis man mere
-er til rpm-udgaver, så fandt jeg en rpm-version af wm2 på
-rpmfind. Der er også en rpm-udgave af wmx, men den er baseret på
-en ret gammel version, så her er man bedre tjent med at hente
-kildeteksten og oversætte selv.</para>
+er til rpm-udgaver, sÃ¥ fandt jeg en rpm-version af wm2 pÃ¥
+rpmfind. Der er ogsÃ¥ en rpm-udgave af wmx, men den er baseret pÃ¥
+en ret gammel version, sÃ¥ her er man bedre tjent med at hente
+kildeteksten og oversÃ¦tte selv.</para>
 
 <para><emphasis>wm2</emphasis>
-Skal bare oversættes med <command>make; su -c make install</command>.</para>
+Skal bare oversÃ¦ttes med <command>make; su -c make install</command>.</para>
 
 <para><emphasis>wmx</emphasis>
-wmx understøtter autoconf, så det er blot <command>./configure; make; su -c make install</command>.
+wmx understÃ¸tter autoconf, sÃ¥ det er blot <command>./configure; make; su -c make install</command>.
 </para>
 
 <para>
 Min gcc version (3.2) brokkede sig over wmx <filename>Menu.C</filename> filen.
-gcc 3 tjekker for nogle ting som gcc 2 synes er OK, så det kan omgåes
-ved at tilføje &quot;-fpermissive&quot; til CXXFLAGS i Makefile.</para>
+gcc 3 tjekker for nogle ting som gcc 2 synes er OK, sÃ¥ det kan omgÃ¥es
+ved at tilfÃ¸je &quot;-fpermissive&quot; til CXXFLAGS i Makefile.</para>
 
-<para>En ting man skal være opmærksom på, er at din X server skal
-understøtte &quot;SHAPE&quot; udvidelsen for at wm2 eller wmx
+<para>En ting man skal vÃ¦re opmÃ¦rksom pÃ¥, er at din X server skal
+understÃ¸tte &quot;SHAPE&quot; udvidelsen for at wm2 eller wmx
 kan fungere. De fleste nyere versioner af XFree86 har denne
-med som standard, men ellers kan du køre programmet <command>xdpyinfo</command> og se om der står <filename>SHAPE</filename> i listen over understøttede
+med som standard, men ellers kan du kÃ¸re programmet <command>xdpyinfo</command> og se om der stÃ¥r <filename>SHAPE</filename> i listen over understÃ¸ttede
 udvidelser (extensions).</para>
 </sect2>    <!--   Installation -->
 
 <sect2 id="wm-wm2-opsaetning">
-  <title>Opsætning</title>
+  <title>OpsÃ¦tning</title>
 
-<para>wm2 og wmx kan som hovedregel <emphasis>kun</emphasis> sættes op ved at
-rette i Config.h filen, og genoversætte programmet. Der er en
-række elementer i Config.h, som man skal ændre for at få en 
-fornuftig opførsel:
+<para>wm2 og wmx kan som hovedregel <emphasis>kun</emphasis> sÃ¦ttes op ved at
+rette i Config.h filen, og genoversÃ¦tte programmet. Der er en
+rÃ¦kke elementer i Config.h, som man skal Ã¦ndre for at fÃ¥ en 
+fornuftig opfÃ¸rsel:
 </para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Fokus-metoden defineres ved at sætte CONFIG_CLICK_TO_FOCUS
-     og evt. CONFIG_AUTO_RAISE. Default er fokus følger musen,
-     men uden at vinduet bliver hævet - hvis man blot vil have 
-     &quot;normal&quot; fokus-følger-mus og have vinduerne til at
-     blive hævet, skal man blot sætte CONFIG_AUTO_RAISE til True.</para>
+<para>Fokus-metoden defineres ved at sÃ¦tte CONFIG_CLICK_TO_FOCUS
+     og evt. CONFIG_AUTO_RAISE. Default er fokus fÃ¸lger musen,
+     men uden at vinduet bliver hÃ¦vet - hvis man blot vil have 
+     &quot;normal&quot; fokus-fÃ¸lger-mus og have vinduerne til at
+     blive hÃ¦vet, skal man blot sÃ¦tte CONFIG_AUTO_RAISE til True.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Farver på titel-baren, skrifttyper etc. defineres også i
+<para>Farver pÃ¥ titel-baren, skrifttyper etc. defineres ogsÃ¥ i
      Config.h</para>
 
 </listitem>
 
   <listitem>
 
-<para>wmx har en del flere muligheder, for at understøtte de forskellig
+<para>wmx har en del flere muligheder, for at understÃ¸tte de forskellig
      ekstra features.</para>
 
 </listitem>
 </itemizedlist>
 
 <para>Der er nogle enkelte elementer i wmx, der kan defineres 
-via en usædvanlig metode med et symbolsk link i $HOME/wmx/options,
+via en usÃ¦dvanlig metode med et symbolsk link i $HOME/wmx/options,
 se nedenfor om Fokus.</para>
 
 <sect3 id="wm-wm2-vindueshaandtering">
-  <title>Vindueshåndtering</title>
+  <title>VindueshÃ¥ndtering</title>
 
 <itemizedlist mark="bullet">
      <listitem><para><emphasis>Flytte et vindue:</emphasis>
-     Træk i titelbaren eller øverste vinduesramme med venstre museknap.
+     TrÃ¦k i titelbaren eller Ã¸verste vinduesramme med venstre museknap.
      </para></listitem>
-     <listitem><para><emphasis>Ændre størrelse på et vindue:</emphasis>
-     Træk i nederste højre hjørne med venstre museknap. Man kan
-         også trække i øverste højre eller nederste venstre hjørne,
-	 men så kan man kun ændre i een retning: Henholdsvis vandret
+     <listitem><para><emphasis>Ã†ndre stÃ¸rrelse pÃ¥ et vindue:</emphasis>
+     TrÃ¦k i nederste hÃ¸jre hjÃ¸rne med venstre museknap. Man kan
+         ogsÃ¥ trÃ¦kke i Ã¸verste hÃ¸jre eller nederste venstre hjÃ¸rne,
+	 men sÃ¥ kan man kun Ã¦ndre i een retning: Henholdsvis vandret
 	 og lodret.     </para></listitem>
 
      <listitem><para><emphasis>Maksimere et vindue:</emphasis>
@@ -128,49 +128,49 @@ se nedenfor om Fokus.</para>
 
      <listitem><para><emphasis>Minimere et vindue:</emphasis>
      Minimerede vinduer forsvinder helt - der er ikke nogen
-         ikon-liste. Man skal først sørge for at vinduet har
-	 fokus, og så minimerer man vinduet ved at klikke i 
-	 firkanten øverst i titel-baren.     </para></listitem>
+         ikon-liste. Man skal fÃ¸rst sÃ¸rge for at vinduet har
+	 fokus, og sÃ¥ minimerer man vinduet ved at klikke i 
+	 firkanten Ã¸verst i titel-baren.     </para></listitem>
 
      <listitem><para><emphasis>Gendanne et minimeret vindue:</emphasis>
-     Hold venstre musetast nede på desktop-baggrunden - så 
+     Hold venstre musetast nede pÃ¥ desktop-baggrunden - sÃ¥ 
          kommer der en menu
-         frem, hvor du kan vælge det vindue der skal gendannes.
-	 Et smart lille feature er, at hvis man vælger et af 
-	 menu-punkterne uden at slippe musen, så vises dette vindue
-	 så man kan se, hvad det indeholder - hvis man så går videre
-	 i menuen forsvinder det automatisk igen. Så man kan lave
+         frem, hvor du kan vÃ¦lge det vindue der skal gendannes.
+	 Et smart lille feature er, at hvis man vÃ¦lger et af 
+	 menu-punkterne uden at slippe musen, sÃ¥ vises dette vindue
+	 sÃ¥ man kan se, hvad det indeholder - hvis man sÃ¥ gÃ¥r videre
+	 i menuen forsvinder det automatisk igen. SÃ¥ man kan lave
 	 et &quot;preview&quot; af sine minimerede vinduer. Det er
-	 praktisk hvis man lige har 8 Mozilla-vinduer åbne.     </para></listitem>
+	 praktisk hvis man lige har 8 Mozilla-vinduer Ã¥bne.     </para></listitem>
 
      <listitem><para><emphasis>Start en ny xterm:</emphasis>
      Kald rod-menuen frem ved at holde venstre musetast nede
-         på desktop-baggrunden, og vælg &quot;New&quot; fra menuen.
+         pÃ¥ desktop-baggrunden, og vÃ¦lg &quot;New&quot; fra menuen.
 	 Du kan definere det program der startes i Config.h filen     </para></listitem>
 
      <listitem><para><emphasis>Luk et vindue:</emphasis>
-     Sørg for at vinduet har fokus. Klik så på firkanten øverst
+     SÃ¸rg for at vinduet har fokus. Klik sÃ¥ pÃ¥ firkanten Ã¸verst
          i titel-baren, og <emphasis>hold museknappen nede</emphasis> i mindst
-	 halvandet sekund. Muse-markøren skifter til et kryds, og
-	 når du slipper tasten bliver vinduet lukket.
+	 halvandet sekund. Muse-markÃ¸ren skifter til et kryds, og
+	 nÃ¥r du slipper tasten bliver vinduet lukket.
          </para>
 
          <para>
-	 Det er en ret usædvanlig metode, men det er bevidst -
+	 Det er en ret usÃ¦dvanlig metode, men det er bevidst -
 	 forfatterne af wm2 synes man skal bruge det aktuelle
 	 programs egen luk-funktion for at afslutte programmet,
-	 i stedet for blot at slå vinduet ihjel.     </para></listitem>
+	 i stedet for blot at slÃ¥ vinduet ihjel.     </para></listitem>
 </itemizedlist>
 
-</sect3>    <!--   Vindueshåndtering -->
+</sect3>    <!--   VindueshÃ¥ndtering -->
 
 <sect3 id="wm-wm2-fokus">
   <title>Fokus</title>
 
 <para>Som sagt styres fokus-metoden af Config.h filen. I wmx (ikke wm2)
-kan man dog definere den ved runtime på en ret obskur måde:
+kan man dog definere den ved runtime pÃ¥ en ret obskur mÃ¥de:
 Man opretter et katalog $HOME/.wmx/, og i dette katalog laver
-man et symbolsk link på denne vis:
+man et symbolsk link pÃ¥ denne vis:
 </para>
 
 <screen>
@@ -178,8 +178,8 @@ $ ln -sf focus:delay-raise,100 options
 </screen>
 
 <para>Dette symbolske link definerer en run-time option &quot;focus&quot;
-der får værdien &quot;delay-raise,100&quot;. Det bevirker, at
-fokus bliver sat til auto-raise, med en forsinkelse på 100 ms.</para>
+der fÃ¥r vÃ¦rdien &quot;delay-raise,100&quot;. Det bevirker, at
+fokus bliver sat til auto-raise, med en forsinkelse pÃ¥ 100 ms.</para>
 </sect3>    <!--   Fokus -->
 
 <sect3 id="wm-wm2-virtuelle-skriveborde">
@@ -188,15 +188,15 @@ fokus bliver sat til auto-raise, med en forsinkelse på 100 ms.</para>
 <para>En &quot;Channel&quot; er wmx navn for et virtuelt skrivebord.
 Denne facilitet findes kun i wmx, ikke i wm2. Man skifter imellem
 virtuelle skriveborde ved at klikke med den midterste musetast
-i øverste højre hjørne af vinduet - der må ikke være et åbent
-vindue i vejen. Man kan også bruge taste-kombinationen ALT+højrepil
+i Ã¸verste hÃ¸jre hjÃ¸rne af vinduet - der mÃ¥ ikke vÃ¦re et Ã¥bent
+vindue i vejen. Man kan ogsÃ¥ bruge taste-kombinationen ALT+hÃ¸jrepil
 eller ALT+venstrepil.</para>
 
 <para>
 Hvis man vil flytte et vindue fra et virtuelt skrivebord til et andet,
 klikker man med midterste musetast i firkanten i titelbaren.
-I øverste højre hjørne vises så et kanal-nummer, og så klikker man
-bare videre med midterste musetast, indtil man er på den rigtige
+I Ã¸verste hÃ¸jre hjÃ¸rne vises sÃ¥ et kanal-nummer, og sÃ¥ klikker man
+bare videre med midterste musetast, indtil man er pÃ¥ den rigtige
 kanal.</para>
 
 <para>Man kan klistre et vindue til alle kanaler ved at taste
@@ -206,11 +206,11 @@ ALT+Pause mens det har fokus.</para>
 <sect3 id="wm-wm2-baggrundsbilleder">
   <title>Baggrundsbilleder og den slags</title>
 
-<para>Baggrunds-billeder må man klare selv - f.eks. med display,
+<para>Baggrunds-billeder mÃ¥ man klare selv - f.eks. med display,
 xsetroot eller hvad man nu vil bruge. Der er ikke noget der 
 ligner temaer i wm2 eller wmx.</para>
 
-<para>wmx har dog en feature, hvor man kan lægge en pixmap ind
+<para>wmx har dog en feature, hvor man kan lÃ¦gge en pixmap ind
 som baggrund i titel-baren.</para>
 </sect3>    <!--   Baggrundsbilleder og den slags -->
 
@@ -228,8 +228,8 @@ som baggrund i titel-baren.</para>
     </indexterm>
 
     <para>
-     Læs <filename>README</filename>-filen, der følger med sourcen. Det er
-     faktisk det eneste sted, der står hvordan man opsætter og bruger wm2
+     LÃ¦s <filename>README</filename>-filen, der fÃ¸lger med sourcen. Det er
+     faktisk det eneste sted, der stÃ¥r hvordan man opsÃ¦tter og bruger wm2
      og wmx.
     </para>
    </sect3>    <!--   Dokumentation -->
@@ -239,15 +239,15 @@ som baggrund i titel-baren.</para>
   <title>Hvad er det fede ved wm2 og wmx ?</title>
 
 <para>
-Det rigtig gode ved wmx er, at der er så mange muligheder for
+Det rigtig gode ved wmx er, at der er sÃ¥ mange muligheder for
 tastatur-genveje til at lave alle mulige vindues-operationer.
 For en gammel kommando-linje fanatiker som undertegnede, er
 det irriterende at skulle have fat i musen i tide og utide,
-så de mange tastatur-genveje er virkelig rare at have.</para>
+sÃ¥ de mange tastatur-genveje er virkelig rare at have.</para>
 
-<para>De lodrette titel-barer er også noget der virkelig fanger
-folks opmærksomhed - men man kan nok diskutere hvor praktiske
-de er. Det er i al fald lidt underligt at skulle lægge hovedet
-på skrå, for at læse hvad det er for et vindue man har åbent.</para>
+<para>De lodrette titel-barer er ogsÃ¥ noget der virkelig fanger
+folks opmÃ¦rksomhed - men man kan nok diskutere hvor praktiske
+de er. Det er i al fald lidt underligt at skulle lÃ¦gge hovedet
+pÃ¥ skrÃ¥, for at lÃ¦se hvad det er for et vindue man har Ã¥bent.</para>
 </sect2>
 </sect1>

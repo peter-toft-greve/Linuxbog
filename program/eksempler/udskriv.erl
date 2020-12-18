@@ -1,7 +1,7 @@
 % af Peter Stubbe <stubbe@bitnisse.dk>
 % $Id$
 
-% Oversættelse:
+% OversÃ¦ttelse:
 %  erlc udskriv.erl
 %
 % Afvikling (let og elegant):
@@ -29,7 +29,7 @@ skrivfil([Fnavn|L]) ->
   if
     Ok == ok -> skrivlin(1, Fil),
                 file:close(Fil);
-    Ok == error -> io:format('Filen ~s kan ikke åbnes!\n', [Fnavn])
+    Ok == error -> io:format('Filen ~s kan ikke Ã¥bnes!\n', [Fnavn])
   end,
   skrivfil(L).
 

@@ -11,7 +11,7 @@ linkend="digitalbillede"/> omtales programmer til at manipulere digitale
 billeder med.</para>
 
 <para>Programmet <command>xfig</command> er et vektorbaseret
-tegneprogram. Du tegner, redigerer og fjerner grafiske former såsom
+tegneprogram. Du tegner, redigerer og fjerner grafiske former sÃ¥som
 ellipser og rektangler. Programmet kan gemme PostScript-filer, som
 direkte kan importeres i LaTeX. ApplixWare laver ligeledes
 vektorbaseret grafik.  </para>
@@ -27,20 +27,20 @@ vektorbaseret grafik.  </para>
 <indexterm><primary>Visio klonen Dia</primary></indexterm>
 
 <para>Hvis man skal lave diagrammer, f.eks. elektriske, UML eller
-flowcharts, så findes der til Microsoft Windows programmet Visio. Til Linux har
-en gruppe programmører lavet <command>dia</command>, som er en klon af
+flowcharts, sÃ¥ findes der til Microsoft Windows programmet Visio. Til Linux har
+en gruppe programmÃ¸rer lavet <command>dia</command>, som er en klon af
 Visio med en tilsvarende funktion. Kerne-funktionen i Dia er at man
-indsætter komponenter, f.eks. netværks-enheder, som vist på <xref
-linkend="dia-fig"/> og sætter netværks-linjer på. Flytter man derefter 
-netværksenhederne vil netværks-forbindelserne flytte med, dvs. det er
-meget enkelt og dynamisk at tilføje ekstra enheder på et senere
+indsÃ¦tter komponenter, f.eks. netvÃ¦rks-enheder, som vist pÃ¥ <xref
+linkend="dia-fig"/> og sÃ¦tter netvÃ¦rks-linjer pÃ¥. Flytter man derefter 
+netvÃ¦rksenhederne vil netvÃ¦rks-forbindelserne flytte med, dvs. det er
+meget enkelt og dynamisk at tilfÃ¸je ekstra enheder pÃ¥ et senere
 tidspunkt.
 </para>
 
 <para>
 Dia mangler flere standard-diagrammer, men selve programmet fungerer
-fint. Du kan finde Dia (<command>dia</command>) på mange af de store
-Linux-distributioner eller du kan hente den selv på 
+fint. Du kan finde Dia (<command>dia</command>) pÃ¥ mange af de store
+Linux-distributioner eller du kan hente den selv pÃ¥ 
 <ulink
 url="http://www.lysator.liu.se/~alla/dia/">http://www.lysator.liu.se/~alla/dia/</ulink>.
 </para>
@@ -51,12 +51,12 @@ url="http://www.lysator.liu.se/~alla/dia/">http://www.lysator.liu.se/~alla/dia/<
 </figure>
 
 <para>
-Et godt alternativ til Dia er Kivio, som kan ses på <xref
+Et godt alternativ til Dia er Kivio, som kan ses pÃ¥ <xref
 linkend="kivio-fig"/>. Kivio har basalt set samme funktion som Dia,
 og er en integreret del af KDE 2.2.
 Kivio har basale "stencils", dvs. de tegneblokke man
-bygger ud fra. Man kan lave flow-diagrammer og elektriske kredsløb
-direkte, mens man kan købe ekstra stencils fra firmaet <ulink url="http://www.thekompany.com/">http://www.thekompany.com</ulink>, der laver Kivio.
+bygger ud fra. Man kan lave flow-diagrammer og elektriske kredslÃ¸b
+direkte, mens man kan kÃ¸be ekstra stencils fra firmaet <ulink url="http://www.thekompany.com/">http://www.thekompany.com</ulink>, der laver Kivio.
 </para>
 
 <figure id="kivio-fig" float="1">
@@ -76,19 +76,19 @@ direkte, mens man kan købe ekstra stencils fra firmaet <ulink url="http://www.th
 <indexterm><primary>Acrobat Illustrator</primary></indexterm>
 <para>
 Savner man et vektor baseret tegneprogram som f.eks. Corel Draw eller Acrobat
-Illustrator, er programmet Sketch måske værd at se på. Programmet kan hentes på
+Illustrator, er programmet Sketch mÃ¥ske vÃ¦rd at se pÃ¥. Programmet kan hentes pÃ¥
 <ulink url="http://www.nongnu.org/skencil/">http://www.nongnu.org/skencil/</ulink>. Programmet
-er hovedsageligt skrevet i python og kræver derfor python minimum
-version 1.5. Programmet kræver også Tcl/Tk og python biblioteket
+er hovedsageligt skrevet i python og krÃ¦ver derfor python minimum
+version 1.5. Programmet krÃ¦ver ogsÃ¥ Tcl/Tk og python biblioteket
 Python Imaging Library (PIL) som kan hentes fra
 <ulink url="http://www.pythonware.com/">http://www.pythonware.com</ulink>. Der findes rpm pakker til programmet, men disse
-kan til tider være svære at få til at virke, hvis man ikke lige har den
-opsætning som rpm-pakkerne er lavet til, derfor er det ofte nemmere at
-installere programmet fra sourcekoden. Der medfølger en glimrende instruktion
-på hvordan det gøres, og det tager normalt ikke ret lang tid. Hvis programmet
+kan til tider vÃ¦re svÃ¦re at fÃ¥ til at virke, hvis man ikke lige har den
+opsÃ¦tning som rpm-pakkerne er lavet til, derfor er det ofte nemmere at
+installere programmet fra sourcekoden. Der medfÃ¸lger en glimrende instruktion
+pÃ¥ hvordan det gÃ¸res, og det tager normalt ikke ret lang tid. Hvis programmet
 ikke virker eller virker underligt er et godt tip at starte det i en
 terminalbox, kommer der fejlmeldinger her mens programmet bruges, er der
-sandsynligvis et eller andet galt. Programmet er meget kompakt og kører også på
+sandsynligvis et eller andet galt. Programmet er meget kompakt og kÃ¸rer ogsÃ¥ pÃ¥
 mindre kraftige maskiner.
 </para>
 
@@ -102,14 +102,14 @@ mindre kraftige maskiner.
 Programmet har alle de basale funktioner som andre vektorbaserede programmer,
 tegning af cirkler, ellipser, rektangler, Bezier kurver, import af eksterne
 images (jpeg, gif osv). Objekter kan grupperes, der kan arbejdes i lag og meget
-meget mere. Er man f.eks. vant til Corel Draw er programmet lige til at gå
-til. Programmet har også en plugin facilitet og der findes en del forskellige
+meget mere. Er man f.eks. vant til Corel Draw er programmet lige til at gÃ¥
+til. Programmet har ogsÃ¥ en plugin facilitet og der findes en del forskellige
 plugins, bl.a. en del til korttegning (GIS).
 </para>
 
 <para>
-Til programmet findes en ganske udmærket manual skrevet af nogle franskmænd,
-men den er heldigvis oversat til Engelsk. Den kan hentes på
+Til programmet findes en ganske udmÃ¦rket manual skrevet af nogle franskmÃ¦nd,
+men den er heldigvis oversat til Engelsk. Den kan hentes pÃ¥
 <ulink url="http://www.linuxgraphic.org/section2d/sketch/documentation.html">http://www.linuxgraphic.org/section2d/sketch/documentation.html</ulink>.
 </para>
 </sect1>
@@ -129,7 +129,7 @@ men den er heldigvis oversat til Engelsk. Den kan hentes på
 <indexterm><primary>octree</primary></indexterm>
 
 <para>Der er flere CAD-programmer til Linux. Et af de bedre er
- programmet QCad, som du kan se et skærmskud af på <xref
+ programmet QCad, som du kan se et skÃ¦rmskud af pÃ¥ <xref
  linkend="qcad-fig"/>.</para>
 
 <figure id="qcad-fig" float="1">
@@ -137,9 +137,9 @@ men den er heldigvis oversat til Engelsk. Den kan hentes på
 <graphic fileref="qcad.&magic;"  scale="40"></graphic>
 </figure>
 
-<para>QCad er et glimrende program, men det tager lidt tid at lære at
-bruge det effektivt. Man skal lære at tænke i linjer og deres forhold,
-frem for i "kasser". QCad er også begrænset til 2D tegninger.</para>
+<para>QCad er et glimrende program, men det tager lidt tid at lÃ¦re at
+bruge det effektivt. Man skal lÃ¦re at tÃ¦nke i linjer og deres forhold,
+frem for i "kasser". QCad er ogsÃ¥ begrÃ¦nset til 2D tegninger.</para>
 
 <para>Hvis man skal bruge 3D tegninger, kan det anbefales at se mere
 til Cycas <ulink url="http://www.cycas.de/">www.cycas.de</ulink>, Qcad
@@ -158,8 +158,8 @@ til Cycas <ulink url="http://www.cycas.de/">www.cycas.de</ulink>, Qcad
 
 <para>Der er flere gode muligheder for at lave 3D modellering med en
 Linux-maskine. Det er en stor trend i Hollywood at anvende
-Linux-maskiner til 3D animering og rendering, primært pga. de meget
-pris- og ydelses-effektive løsninger man nu kan lave.</para>
+Linux-maskiner til 3D animering og rendering, primÃ¦rt pga. de meget
+pris- og ydelses-effektive lÃ¸sninger man nu kan lave.</para>
 
 
 <!-- =================================================================== -->
@@ -172,16 +172,16 @@ pris- og ydelses-effektive løsninger man nu kan lave.</para>
 
 <para>Blender er glimerende 3D modelleringsprogram, som har en rigtigt god
 3d modelerings del sammenlignet med de tunge (og dyre) drenge som Maya
-og 3D Max, specielt når man tager det i betragtning at programmet er
-gratis og OpenSource. Ud over 3D modelering er Blender også god til at
-lave animationer. Blender har en meget stejl indlæringskurve, men
-heldigvis findes der masser af guides til nybegyndere på nettet, her
-kan du blandt andet kigge på Blenders hjemmeside på <ulink
+og 3D Max, specielt nÃ¥r man tager det i betragtning at programmet er
+gratis og OpenSource. Ud over 3D modelering er Blender ogsÃ¥ god til at
+lave animationer. Blender har en meget stejl indlÃ¦ringskurve, men
+heldigvis findes der masser af guides til nybegyndere pÃ¥ nettet, her
+kan du blandt andet kigge pÃ¥ Blenders hjemmeside pÃ¥ <ulink
 url="http://www.blender3d.org/">www.blender3d.org</ulink>. Her kan der
-også downloades billeder samt film lavet med Blender hvis du mangler
-lidt inspiration. På <ulink
+ogsÃ¥ downloades billeder samt film lavet med Blender hvis du mangler
+lidt inspiration. PÃ¥ <ulink
 url="http://3dmaxer.dk/forum/topic.asp?TOPIC_ID=8205">3dmaxer.dk</ulink>
-er Blender også omtalt med lidt mere information (på Dansk).</para>
+er Blender ogsÃ¥ omtalt med lidt mere information (pÃ¥ Dansk).</para>
 
 
 <figure id="blender1-fig" float="1">
@@ -194,47 +194,47 @@ er Blender også omtalt med lidt mere information (på Dansk).</para>
 <graphic fileref="Blender2.&magic;"  scale="45"></graphic>
 </figure>
 
-<para>Blender har ikke altid været opensource. Blender startede i sin
+<para>Blender har ikke altid vÃ¦ret opensource. Blender startede i sin
 tid med at blive udviklet for et firma som hedder NaN, det kunne godt
-downloades gratis, men kildekoden var ikke tilgængelig. Marts 2002 gik
+downloades gratis, men kildekoden var ikke tilgÃ¦ngelig. Marts 2002 gik
 NaN konkurs. Heldigvis fik man lavet en aftale med NaN, om hvis man
-kunne indsamle 100.000 Euro, så man kunne få overdraget rettighederne
-til Blender. I løbet af nogle få uger blev beløbet indsamlet og en
-gruppe af udviklere har kunnet udgive Blender under GPL licensen, så
+kunne indsamle 100.000 Euro, sÃ¥ man kunne fÃ¥ overdraget rettighederne
+til Blender. I lÃ¸bet af nogle fÃ¥ uger blev belÃ¸bet indsamlet og en
+gruppe af udviklere har kunnet udgive Blender under GPL licensen, sÃ¥
 man havde adgang til kildekoden, og udviklingen af programmet kunne
-forsætte.</para>
+forsÃ¦tte.</para>
 
 <para>Blender kan hentes fra hjemmesiden. Kildekoden kan downloades,
-hvis man ønsker at oversætte programmet selv. Der findes også
+hvis man Ã¸nsker at oversÃ¦tte programmet selv. Der findes ogsÃ¥
 oversatte versioner. Af disse kan den "ikke statiske" version
-anbefales da det muliggør OpenGL hardware acceleration (hvis ens
-system har dette). Hvis man kører med en meget gammel distribution så
-kan man blive nød til at downloade den "statiske" version.</para>
+anbefales da det muliggÃ¸r OpenGL hardware acceleration (hvis ens
+system har dette). Hvis man kÃ¸rer med en meget gammel distribution sÃ¥
+kan man blive nÃ¸d til at downloade den "statiske" version.</para>
 
-<para>Blender understøtter Python, hvilket har resulteret i at nogle
-ganske avancerede scripts. Her kan da blandt andet nævnes "MakeHuman"
-som findes på <ulink
+<para>Blender understÃ¸tter Python, hvilket har resulteret i at nogle
+ganske avancerede scripts. Her kan da blandt andet nÃ¦vnes "MakeHuman"
+som findes pÃ¥ <ulink
 url="http://www.dedalo-3d.com/makehuman.html">www.dedalo-3d.com</ulink>.
-Endvidere findes der et hav af plugins til Blender som kan findes på
+Endvidere findes der et hav af plugins til Blender som kan findes pÃ¥
 <ulink
 url="http://www-users.cs.umn.edu/~mein/blender/plugins/index.html">The
 Blender Plugin Repository</ulink>.</para>
 
-<para>Du kan få et overblik over alle Blenders egenskaber og
-muligheder på <ulink
+<para>Du kan fÃ¥ et overblik over alle Blenders egenskaber og
+muligheder pÃ¥ <ulink
 url="http://www.blender3d.org/About/?sub=Features">her</ulink>.</para>
 
 </sect2>
 
 <!-- =================================================================== -->
-<!-- Andre modelleringsværktøjer -->
+<!-- Andre modelleringsvÃ¦rktÃ¸jer -->
 <!-- =================================================================== -->
 <sect2 id="modellering-andre">
-<title>Andre 3D modelleringsværktøjer</title>
+<title>Andre 3D modelleringsvÃ¦rktÃ¸jer</title>
 
 <indexterm><primary>gig3dgo</primary></indexterm>
 <para>
-På <ulink url="http://www.gig3d.com/">www.gig3d.com</ulink> kan findes et kommercielt
+PÃ¥ <ulink url="http://www.gig3d.com/">www.gig3d.com</ulink> kan findes et kommercielt
 program GIG3DGO, der ser meget lovende ud.
 </para>
 
@@ -249,7 +249,7 @@ program GIG3DGO, der ser meget lovende ud.
 <para> Alternativt kan f.eks. AC3D <ulink
 url="http://www.ac3d.org/">
 http://www.ac3d.org/ </ulink> og
-POVRAY være af interesse.</para>
+POVRAY vÃ¦re af interesse.</para>
 
 <para>Med programmet "Persistence of Vision Raytracer" (POVRAY) kan du
    lave fotorealistiske billeder.  Se <ulink
@@ -257,7 +257,7 @@ POVRAY være af interesse.</para>
    information.  </para> </sect2>
 
 <!-- =================================================================== -->
-<!-- Særligt om Lego -->
+<!-- SÃ¦rligt om Lego -->
 <!-- =================================================================== -->
  <sect2 id="appl-lego-cad">
   <title>LEGO-byggevejledninger</title>
@@ -269,42 +269,42 @@ POVRAY være af interesse.</para>
    Tegning af byggevejledninger til LEGO-modeller er en temmelig
    specifik anvendelse af 3D modellering, men der findes et stort
    bibliotek af 3D modeller af LEGO-klodser i et format designet
-   specifikt til formålet.  Formatet kaldes "LDraw" efter det (lukkede
+   specifikt til formÃ¥let.  Formatet kaldes "LDraw" efter det (lukkede
    DOS-) program der fungerer som referenceimplementation. Det er
-   &ndash; i traditionel Unix-stil &ndash; strengt tekstorienteret, så
-   man kan "skrive" sine byggevejledninger, hvis man foretrækker at
+   &ndash; i traditionel Unix-stil &ndash; strengt tekstorienteret, sÃ¥
+   man kan "skrive" sine byggevejledninger, hvis man foretrÃ¦kker at
    bruge tastaturet fremfor musen.  </para>
 
 <indexterm><primary>LeoCAD</primary></indexterm>  
 <indexterm><primary>LDGLite</primary></indexterm>
   <para>
    Der findes p.t. kun to LEGO-tegneprogrammer til Linux;
-   <emphasis>LeoCAD</emphasis> er et decideret 3D modelleringsværktøj med
-   fokus på LEGO mens <emphasis>LDGLite</emphasis> primært er beregnet på
-   visning af eksisterende byggevejledninger. LeoCAD kører kun på
-   x86-processorer, mens LDGLite kører på både x86- og Alpha-processorer.
+   <emphasis>LeoCAD</emphasis> er et decideret 3D modelleringsvÃ¦rktÃ¸j med
+   fokus pÃ¥ LEGO mens <emphasis>LDGLite</emphasis> primÃ¦rt er beregnet pÃ¥
+   visning af eksisterende byggevejledninger. LeoCAD kÃ¸rer kun pÃ¥
+   x86-processorer, mens LDGLite kÃ¸rer pÃ¥ bÃ¥de x86- og Alpha-processorer.
   </para>
 
 <indexterm><primary>l2p</primary></indexterm>
 <indexterm><primary>l3p</primary></indexterm>
   <para>
-   Det er også muligt at lave "fotorealistiske" billeder udfra sine
-   byggevejledninger. Det gøres ved at man oversætter sine LDraw-filer
-   til POV-Ray-format og dernæst bruger POV-Ray (se
+   Det er ogsÃ¥ muligt at lave "fotorealistiske" billeder udfra sine
+   byggevejledninger. Det gÃ¸res ved at man oversÃ¦tter sine LDraw-filer
+   til POV-Ray-format og dernÃ¦st bruger POV-Ray (se
    <xref linkend="modellering-3d"/>) til at generere billederne udfra de
-   oversatte filer. Programmet <emphasis>l2p</emphasis> håndterer
-   oversættelsen til POV-Ray-format, men er begrænset af det tilhørende
+   oversatte filer. Programmet <emphasis>l2p</emphasis> hÃ¥ndterer
+   oversÃ¦ttelsen til POV-Ray-format, men er begrÃ¦nset af det tilhÃ¸rende
    bibliotek af LEGO-klodser. Hvis man har adgang til et DOS-system
    (evt. dosemu eller WINE), kan man med fordel bruge DOS-programmet
    <emphasis>l3p</emphasis> i stedet for l2p, da det blot bruger
-   LDraw-biblioteket af LEGO-klodser og oversætter det til POV-Ray-format
+   LDraw-biblioteket af LEGO-klodser og oversÃ¦tter det til POV-Ray-format
    efter behov (l3p er gratis, men ikke frit).
   </para>
 
   <itemizedlist>
    <listitem>
     <para>
-     LeoCAD kan findes på:
+     LeoCAD kan findes pÃ¥:
      <ulink url="http://www.leocad.org/linux.htm">http://www.leocad.org/linux.htm</ulink>
     </para>
    </listitem>
@@ -312,23 +312,23 @@ POVRAY være af interesse.</para>
    <listitem>
     <para>
      <ulink url="http://www.ldraw.org/">LDraw.org</ulink> har en detaljeret
-     installationsvejledning til LDGLite på:
+     installationsvejledning til LDGLite pÃ¥:
      <ulink url="http://www.ldraw.org/download/start/linux/">http://www.ldraw.org/download/start/linux/</ulink>
     </para>
    </listitem>
 
    <listitem>
     <para>
-     L2p og det tilhørende bibliotek af LEGO-klodser kan findes på:
+     L2p og det tilhÃ¸rende bibliotek af LEGO-klodser kan findes pÃ¥:
      <ulink url="http://www.el-lutzo.de/lego/l2p.html">http://www.el-lutzo.de/lego/l2p.html</ulink>
     </para>
    </listitem>
   </itemizedlist>
 
   <para>
-   Det bør for en god ordens skyld bemærkes at LEGO ikke er indblandet i
-   arbejdet med de her nævnte tegneprogrammer og at "LEGO" vist egentlig
-   er et registreret varemærke.
+   Det bÃ¸r for en god ordens skyld bemÃ¦rkes at LEGO ikke er indblandet i
+   arbejdet med de her nÃ¦vnte tegneprogrammer og at "LEGO" vist egentlig
+   er et registreret varemÃ¦rke.
   </para>
  </sect2>
 
@@ -345,16 +345,16 @@ POVRAY være af interesse.</para>
 <para>
 Programmet Cycas kan hentes fra 
 <ulink url="http://www.cycas.de">http://www.cycas.de</ulink>. Dokumentation og
-installationsvejledning følger med.  På dette site kan
-også ses screen-dumps og et billedgaleri af professionelle anvendelser
-(her kan også ses større udgaver af de i denne omtale anvendte
+installationsvejledning fÃ¸lger med.  PÃ¥ dette site kan
+ogsÃ¥ ses screen-dumps og et billedgaleri af professionelle anvendelser
+(her kan ogsÃ¥ ses stÃ¸rre udgaver af de i denne omtale anvendte
 illustrationer).
 </para>
 
 <para>
-Download også for fotorealistisk output PovRay - se <xref linkend="modellering-andre"></xref>.
-PovRay er ikke nødvendigt i første omgang, men hurtigt
-vil du ønske også denne mulighed.
+Download ogsÃ¥ for fotorealistisk output PovRay - se <xref linkend="modellering-andre"></xref>.
+PovRay er ikke nÃ¸dvendigt i fÃ¸rste omgang, men hurtigt
+vil du Ã¸nske ogsÃ¥ denne mulighed.
 </para>
 
 <itemizedlist mark="bullet">
@@ -363,7 +363,7 @@ vil du ønske også denne mulighed.
 Softwarekrav:
 glibc2.1/2.2-based Linux system
 X Window System, Version 11 (X11) 
-For udprinting på ikke-Postscript printere: Ghostscript
+For udprinting pÃ¥ ikke-Postscript printere: Ghostscript
 Tilvalg: POV-Ray 3.1 eller senere
  </para>
 </listitem>
@@ -372,7 +372,7 @@ Tilvalg: POV-Ray 3.1 eller senere
 Minimum hardware:
 x86 PC 100MHz. 32MB RAM
 HD 20MB fri disk plads
-video opløsning 800*600, 8bpp.
+video oplÃ¸sning 800*600, 8bpp.
  </para>
 </listitem>
 <listitem> 
@@ -381,7 +381,7 @@ Anbefalet hardware:
 x86 PC 400MHz eller kraftigere
 128MB RAM eller mere
 HD 50MB fri disk plads
-video resolution 1024*768 eller mere, 16bpp eller højere.
+video resolution 1024*768 eller mere, 16bpp eller hÃ¸jere.
  </para>
 </listitem>
 </itemizedlist>
@@ -397,62 +397,62 @@ video resolution 1024*768 eller mere, 16bpp eller højere.
 </figure>
 
 <figure id="cycas3-fig" float="1">
-<title>Kuglerne er vist med PovRay, bemærk overfladestrukturen i de enkelte kugler.</title>
+<title>Kuglerne er vist med PovRay, bemÃ¦rk overfladestrukturen i de enkelte kugler.</title>
 <graphic fileref="cycas3.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-Cycas kaldes i nærværende udgave for Cycas2 og er udviklet til
-arkitekttegning, men kan formodentlig anvendes til en række andre
-formål, hvor det gælder om at lave 2D eller 3D tekniske
-tegninger. Arkitekttegning er foreløbig eneste opgave, som forfatteren
-af denne beskrivelse har sat Cycas2 på, men andre tekniske
-konstruktioner og måske endda en 3D-haveplan må også kunne laves.
+Cycas kaldes i nÃ¦rvÃ¦rende udgave for Cycas2 og er udviklet til
+arkitekttegning, men kan formodentlig anvendes til en rÃ¦kke andre
+formÃ¥l, hvor det gÃ¦lder om at lave 2D eller 3D tekniske
+tegninger. Arkitekttegning er forelÃ¸big eneste opgave, som forfatteren
+af denne beskrivelse har sat Cycas2 pÃ¥, men andre tekniske
+konstruktioner og mÃ¥ske endda en 3D-haveplan mÃ¥ ogsÃ¥ kunne laves.
 Konstruktionen kan vises som grundplan eller fra 4 sider samt som 3D
 og i perspektiv.  Endvidere kan man fjerne skjulte ("hidden")
 linier. Herved fjernes gennemsigtigheden i tegningen.  Der er mulighed
-for at måle afstande og midtpunkter samt foretage rotation og
-forskydning i 3 dimentioner. Det kan f.eks. være nyttigt ved
+for at mÃ¥le afstande og midtpunkter samt foretage rotation og
+forskydning i 3 dimentioner. Det kan f.eks. vÃ¦re nyttigt ved
 konstruktion af et nyt element.  Cycas2 kan arbejde med layers,
-således at f.eks. en fleretages bygning kan tildeles et layer for hver
+sÃ¥ledes at f.eks. en fleretages bygning kan tildeles et layer for hver
 etage.
 </para>
 
 
 <para>
-Cycas2 kan eksportere sine 3D-data i en række filformater (i
+Cycas2 kan eksportere sine 3D-data i en rÃ¦kke filformater (i
 public-versionen: EPS, SVG og POV, i betalingsversionerne flere
 andre).
 </para>
 
 <para>
-Metoden at arbejde på kan i begyndelsen forekomme lidt knudret, så det
-anbefales stærkt at gennemgå de ganske korte men rigtig gode tutorial
-for 2D og 3D. Man lærer herved hurtigt arbejdsgangen i oprettelse af
+Metoden at arbejde pÃ¥ kan i begyndelsen forekomme lidt knudret, sÃ¥ det
+anbefales stÃ¦rkt at gennemgÃ¥ de ganske korte men rigtig gode tutorial
+for 2D og 3D. Man lÃ¦rer herved hurtigt arbejdsgangen i oprettelse af
 tegningens enkelte elementer.
 </para>
 
 <para>
 Kun grundplan-tegningen kan umiddelbart printes, men bruger man
-"wire"-funktionen under 3D, så kan 3D-tegninger tilføjes tegningen
+"wire"-funktionen under 3D, sÃ¥ kan 3D-tegninger tilfÃ¸jes tegningen
 over grundplanet og printes ud sammen med dette.  "Printscale" fra
-Project-menuen kan anvendes til at skalere printet, således at alt kan
-være på et A4-ark. Bemærk at værdien 200 giver mindre tegninger end
-værdien 100 (default).
+Project-menuen kan anvendes til at skalere printet, sÃ¥ledes at alt kan
+vÃ¦re pÃ¥ et A4-ark. BemÃ¦rk at vÃ¦rdien 200 giver mindre tegninger end
+vÃ¦rdien 100 (default).
 </para>
 
 <para>
 Cycas-Public er gratis for ikke-kommersiel anvendelse, men ikke
-OpenSource. Yderligere kan Cycas-Basic og Cycas-Profesionel fås mod
+OpenSource. Yderligere kan Cycas-Basic og Cycas-Profesionel fÃ¥s mod
 betaling. Disse indeholder begge licens til kommersiel
 anvendelse. Yderligere findes Cycas til Windows32.
 </para>
 
 <para>
-Installerer man PovRay, så kan dette program kaldes fra Cycas2 for at
-vise en næsten fotorealistisk rendering. Overflader kan gives farve og
-struktur, lys af forskellig type kan sættes på ønsket position i
-3D-rummet. Eksempler på dette ses kan ses i galleriet på Cycas hjemmeside.
+Installerer man PovRay, sÃ¥ kan dette program kaldes fra Cycas2 for at
+vise en nÃ¦sten fotorealistisk rendering. Overflader kan gives farve og
+struktur, lys af forskellig type kan sÃ¦ttes pÃ¥ Ã¸nsket position i
+3D-rummet. Eksempler pÃ¥ dette ses kan ses i galleriet pÃ¥ Cycas hjemmeside.
 </para>
 </sect2>
 

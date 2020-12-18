@@ -71,7 +71,7 @@ case "$1" in
     ;;
 
  panic)
-	 action "INPUT,FORWARD og OUTPUT kæden sættes til DENY: " \
+	 action "INPUT,FORWARD og OUTPUT kÃ¦den sÃ¦ttes til DENY: " \
 	   ipchains -F; \
 	   ipchains -P input DENY; \
 	   ipchains -P forward DENY; \
@@ -91,21 +91,21 @@ case "$1" in
 	 echo "Stop:    med firewall stop, stoppes firewall scriptet" \
 	   "i /etc."
 	 echo "Restart: med firewall restart, stoppes firewall scriptet" \
-	   "først, derefter bliver"
+	   "fÃ¸rst, derefter bliver"
 	 echo "         det startet igen."
 	 echo "Gem:     med firewall gem, gemmes alle regler i firewall'en" \
 	   "i /etc/firewall.bak."
-	 echo "         Bemærk at /etc/firewall.bak bliver" \
-	   "slettet hver gang denne køres."
+	 echo "         BemÃ¦rk at /etc/firewall.bak bliver" \
+	   "slettet hver gang denne kÃ¸res."
 	 echo "Status:  med firewall status, vises alle firewall regler der" \
-	   "er på maskinen."
+	   "er pÃ¥ maskinen."
 	 echo "Masq:    med firewall masq, vises alle masquerading forbindelser." \
 	   "Dvs. man kan "
 	 echo "         se hvor ens lokale maskiner har oprettet en forbindelse til."
-	 echo "Panic:   med firewall panic, sættes alle standarts kæderne," \
+	 echo "Panic:   med firewall panic, sÃ¦ttes alle standarts kÃ¦derne," \
 	   "dvs. input, forward"
-	 echo "	 og output til deny og alle nuværende regler bliver slettet."
-	 echo "Debug:   med firewall debug, startes firewall scriptet og man får" \
+	 echo "	 og output til deny og alle nuvÃ¦rende regler bliver slettet."
+	 echo "Debug:   med firewall debug, startes firewall scriptet og man fÃ¥r" \
 	   "status"
 	 echo "         over hvad de forskellige variabler er sat til og hvad scriptet"
 	 echo "         har fundet af informationer."

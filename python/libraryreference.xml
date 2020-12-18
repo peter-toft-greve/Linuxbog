@@ -5,12 +5,12 @@
 
 <para>
 <screen>
-Eksempler på anvendelse af repr funktionen:
->>> print "Rønne"
-Rønne
->>> print str("Rønne")
-Rønne
->>> print repr("Rønne")
+Eksempler pÃ¥ anvendelse af repr funktionen:
+>>> print "RÃ¸nne"
+RÃ¸nne
+>>> print str("RÃ¸nne")
+RÃ¸nne
+>>> print repr("RÃ¸nne")
 'R\xf8nne'
 
 >>> str(0.1)
@@ -20,9 +20,9 @@ Rønne
 
 >>> x = 10 * 3.25
 y = 200 * 200
-s = 'Værdien af x er ' + repr(x) + ', af y er den ' + repr(y) + '...'
+s = 'VÃ¦rdien af x er ' + repr(x) + ', af y er den ' + repr(y) + '...'
 print s>>> >>> >>>
-Værdien af x er 32.5, af y er den 40000...
+VÃ¦rdien af x er 32.5, af y er den 40000...
 
 >>> x = 20; y = x ** 3
 >>> repr((x, y, ('tomater', 'ostemad')))
@@ -35,29 +35,29 @@ Værdien af x er 32.5, af y er den 40000...
 <sect1 id="python-strings">
 <title>Tekststrenge</title>
 <para>
-En tekststreng er alt mellem dobbelte eller enkelte anførselstegn
+En tekststreng er alt mellem dobbelte eller enkelte anfÃ¸rselstegn
 <screen>
-Tekststeng mellem dobbelte anførselstegn:
+Tekststeng mellem dobbelte anfÃ¸rselstegn:
 >>> print "Velkommen til Python!"
 Velkommen til Python!
 </screen>
 </para>
 <para>
-Tekststeng mellem enkelte anførselstegn:
+Tekststeng mellem enkelte anfÃ¸rselstegn:
 >>> print 'Velkommen til Python!'
 Velkommen til Python!
 </para>
 <para>
-print "Tekststreng med \"dobbelte anførselstegn.\""
-print 'En streng med "dobbelte anførselstegn."'
-print 'Tekststreng med \'enkelte anførselstegn.\''
-print "En streng med 'enkelte anførselstegn.'"
-print """Strengen her har "dobbelte anførselstegn"og 'enkelte anførselstegn'.
+print "Tekststreng med \"dobbelte anfÃ¸rselstegn.\""
+print 'En streng med "dobbelte anfÃ¸rselstegn."'
+print 'Tekststreng med \'enkelte anfÃ¸rselstegn.\''
+print "En streng med 'enkelte anfÃ¸rselstegn.'"
+print """Strengen her har "dobbelte anfÃ¸rselstegn"og 'enkelte anfÃ¸rselstegn'.
    Du kan tilmed udskrive over flere linjer."""
-print '''Denne streng har også "dobbelte"og 'enkelte' anførselstegn.'''
+print '''Denne streng har ogsÃ¥ "dobbelte"og 'enkelte' anfÃ¸rselstegn.'''
 </para>
 <para>
-Anførselstegnene skal være samme slags:
+AnfÃ¸rselstegnene skal vÃ¦re samme slags:
 >>> 'Velkommen til Python! "
 SyntaxError: EOL while scanning single-quoted string
 </para>
@@ -69,7 +69,7 @@ SyntaxError: EOL while scanning single-quoted string
 print "Velkommen\ntil\n\nPython!"
 </para>
 <para>
-Strenge kan lægges sammen:
+Strenge kan lÃ¦gges sammen:
 >>> print "Velkommen " + 'til Python'
 Velkommen til Python
 </para>
@@ -84,9 +84,9 @@ Velkommen til Python! Velkommen til Python! Velkommen til Python!
 </para>
 <para>
 Strenge kan sammenlignes:
->>> "æøå" < "ÆØÅ"
+>>> "Ã¦Ã¸Ã¥" < "Ã†Ã˜Ã…"
 False
->>> "ÆØÅ" < "æøå"
+>>> "Ã†Ã˜Ã…" < "Ã¦Ã¸Ã¥"
 True
 >>>
 >>> 'Python' < 'Pascal'<'ABC' < 'C'
@@ -123,7 +123,7 @@ sum = integer1 + heltal2
 print "Summen af de to heltal er ", sum
 </para>
 <para>
-Linjeskifte indsættes med \n
+Linjeskifte indsÃ¦ttes med \n
 >>> print "Velkommen\ntil\n\nPython!"
 Velkommen
 til
@@ -132,15 +132,15 @@ til
 Python!
 </para>
 <para>
-Tabulatorskifte indsættes med \t
+Tabulatorskifte indsÃ¦ttes med \t
 >>> print "Velkommen\ttil\t\tPython!"
 Velkommen       til             Python!
-Bemærk her at tekstfunktionerne oftes knyttes til tekststrengen
+BemÃ¦rk her at tekstfunktionerne oftes knyttes til tekststrengen
 som f.eks. streng.funktionsnavn()
 </para>
 <para>
-# Skriv første streng og konverter til heltal
-tal1 = raw_input( "Indskriv første integer: " )
+# Skriv fÃ¸rste streng og konverter til heltal
+tal1 = raw_input( "Indskriv fÃ¸rste integer: " )
 tal1 = int( tal1)
 </para>
 <para>
@@ -162,7 +162,7 @@ if tal1< 2:
 </para>
 <para>
 if tal1> 2:
-   print "%d er større end %d" % ( tal1, tal2)
+   print "%d er stÃ¸rre end %d" % ( tal1, tal2)
 </para>
 <para>
 if tal1<= 2:
@@ -170,7 +170,7 @@ if tal1<= 2:
 </para>
 <para>
 if tal1>= 2:
-   print "%d er større end eller lig med %d" % ( tal1, tal2)
+   print "%d er stÃ¸rre end eller lig med %d" % ( tal1, tal2)
 </para>
 <para>
 >>> heltal = 414
@@ -209,8 +209,8 @@ Forvalgt eksponentnotation 1.240000e+01
 <para>
 >>> # Udskriver med fordefineret tabulatorbredde 8 tegn
 >>> heltal = 414
->>> print "Højre justeret heltal (%8d)" % heltal
-Højre justeret heltal (     414)
+>>> print "HÃ¸jre justeret heltal (%8d)" % heltal
+HÃ¸jre justeret heltal (     414)
 >>> print "Venstre justeret heltal (%-8d)" % heltal
 Venstre justeret heltal (414     )
 </para>
@@ -235,7 +235,7 @@ Gennemtving 6 cifre efter komme i float 12.100000
 <para>
 En streng er en liste. Her udskrives streng som liste:
 >>> s = "Dette er en streng."
->>> l = len(s) # len finder strenglængde
+>>> l = len(s) # len finder strenglÃ¦ngde
 >>> for i in range(0,l):
 ...     print s[i],
 ...
@@ -246,7 +246,7 @@ D e t t e   e r   e n   s t r e n g .
 <para>
 eks. 1
 capitalize() funktionen konverterer strengens
-første bogstav til "stort" bogstav.
+fÃ¸rste bogstav til "stort" bogstav.
 </para>
 <para>
 >>> import string
@@ -254,70 +254,70 @@ første bogstav til "stort" bogstav.
 'Dette er en mulig anvendelse'
 </para>
 <para>
-eks. 2 Eksempel 1 på en anden måde
+eks. 2 Eksempel 1 pÃ¥ en anden mÃ¥de
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "rødgrød med fløde er godt."
+>>> streng = "rÃ¸dgrÃ¸d med flÃ¸de er godt."
 >>> streng.capitalize()
 'R\xf8dgr\xf8d med fl\xf8de er godt.'
 ELLER:
 >>> print streng.capitalize()
-Rødgrød med fløde er godt.
+RÃ¸dgrÃ¸d med flÃ¸de er godt.
 </screen>
 </para>
 <para>
 De fleste af de mange andre tekstfunktioner anvendes svarende til eksempel
-1 og 2 ovenfor. BEMÆRK hvordan de danske specialtegn erstattes med
-hexadecimale værdier i den første udskrift. Det skyldes, at Python
+1 og 2 ovenfor. BEMÃ†RK hvordan de danske specialtegn erstattes med
+hexadecimale vÃ¦rdier i den fÃ¸rste udskrift. Det skyldes, at Python
 benytter 2 forskellige funktioner i immediate mode ved returneringen
-str() og repr(), hvad følgende kan vise:
+str() og repr(), hvad fÃ¸lgende kan vise:
 </para>
 <para>
 <screen>
->>> print str("rødgrød med fløde er godt.")
-rødgrød med fløde er godt.
->>> print repr("rødgrød med fløde er godt.")
+>>> print str("rÃ¸dgrÃ¸d med flÃ¸de er godt.")
+rÃ¸dgrÃ¸d med flÃ¸de er godt.
+>>> print repr("rÃ¸dgrÃ¸d med flÃ¸de er godt.")
 'r\xf8dgr\xf8d med fl\xf8de er godt.'
 </screen>
 </para>
 <para>
 eks. 3
-center(bredde)funktionen placerer en delstreng i en streng, hvis længde
-angives af det tal, der indsættes i parameterlisten her markeret med
+center(bredde)funktionen placerer en delstreng i en streng, hvis lÃ¦ngde
+angives af det tal, der indsÃ¦ttes i parameterlisten her markeret med
 variablen bredde.
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "Rønne er hovedstaden på Bornholm."
+>>> streng = "RÃ¸nne er hovedstaden pÃ¥ Bornholm."
 >>> s = streng.center(60)
 >>> s
 '             R\xf8nne er hovedstaden p\xe5 Bornholm.              '
 >>> print s
-             Rønne er hovedstaden på Bornholm.
+             RÃ¸nne er hovedstaden pÃ¥ Bornholm.
 </screen>
 </para>
 <para>
 <screen>
 Samme eksempel mere "naturlig":
 >>> import string
->>> print "Rønne er hovedstaden på Bornholm.".center(60)
-             Rønne er hovedstaden på Bornholm.
+>>> print "RÃ¸nne er hovedstaden pÃ¥ Bornholm.".center(60)
+             RÃ¸nne er hovedstaden pÃ¥ Bornholm.
 </screen>
 </para>
 <para>
 eks. 4//
-count(delstreng,begyndMed,slutMed) tæller antal forekomster af delstreng
+count(delstreng,begyndMed,slutMed) tÃ¦ller antal forekomster af delstreng
 i streng.
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "Rønne og Åkirkeby er to bornholmske byer."
+>>> streng = "RÃ¸nne og Ã…kirkeby er to bornholmske byer."
 >>> # Da der ikke er angivet hverken start- eller slutpunkt
->>> # tælles der op i hele strengen.
+>>> # tÃ¦lles der op i hele strengen.
 >>> streng.count("e")
 5
 >>> streng.count("e",6,15)
@@ -328,20 +328,20 @@ i streng.
 <screen>
 Eller:
 >>> import string
->>> "Rønne og Åkirkeby er to bornholmske byer.".count("e")
+>>> "RÃ¸nne og Ã…kirkeby er to bornholmske byer.".count("e")
 5
 </screen>
 </para>
 <para>
 eks. 5
-endswith(delstreng, startplads, slutplads) funktionen fortæller, det
+endswith(delstreng, startplads, slutplads) funktionen fortÃ¦ller, det
 den siger - om det er sandt/falskt at strengen slutter delstrengen. Som
-vi har set andre steder, så er 1 lig med sand, mens 0 betyder falsk.
+vi har set andre steder, sÃ¥ er 1 lig med sand, mens 0 betyder falsk.
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "Hammershus er Nordeuropas største borgruin."
+>>> streng = "Hammershus er Nordeuropas stÃ¸rste borgruin."
 >>> streng.endswith(".")
 1
 >>> streng.endswith("n",10, len(streng) - 1)
@@ -354,10 +354,10 @@ vi har set andre steder, så er 1 lig med sand, mens 0 betyder falsk.
 <screen>
 Eller:
 >>> import string
->>> s1 = "Hammershus er Nordeuropas største borgruin.".endswith(".")
->>> strenglengde = len("Hammershus er Noreuropas største borgruin")
->>> s2 = "Hammershus er Nordeuropas største borgruin.".endswith("n",10,strenglengde)
->>> s3 = "Hammershus er Nordeuropas største borgruin.".endswith("n",10,12)
+>>> s1 = "Hammershus er Nordeuropas stÃ¸rste borgruin.".endswith(".")
+>>> strenglengde = len("Hammershus er Noreuropas stÃ¸rste borgruin")
+>>> s2 = "Hammershus er Nordeuropas stÃ¸rste borgruin.".endswith("n",10,strenglengde)
+>>> s3 = "Hammershus er Nordeuropas stÃ¸rste borgruin.".endswith("n",10,12)
 >>> print s1, s2, s3
 True True False
 >>> s1, s2, s3
@@ -365,8 +365,8 @@ True True False
 </screen>
 </para>
 <para>
-Det første af de to eksempler er udført i Python 2.2, det sidste i
-Python 2.3 derfor forskellen i returneringen af sandhedsværdierne.
+Det fÃ¸rste af de to eksempler er udfÃ¸rt i Python 2.2, det sidste i
+Python 2.3 derfor forskellen i returneringen af sandhedsvÃ¦rdierne.
 </para>
 <para>
 eks. 6//
@@ -375,7 +375,7 @@ tabulatorstop er erstattet af mellemrum. Det valgfrie argument
 antalTomme specificerer antal mellemrum  der erstatter en
 tabulatorindrykning. Det forvalgte antal er 8 tegn mellem hvert
 tabulatorstop.
-Bemærk \t for tabulator.
+BemÃ¦rk \t for tabulator.
 </para>
 <para>
 >>> import string
@@ -397,50 +397,50 @@ en streng.
 <para>
 <screen>
 >>> import string
->>> streng = "Børnene leger i skolegården."
->>> streng.find("ø")
+>>> streng = "BÃ¸rnene leger i skolegÃ¥rden."
+>>> streng.find("Ã¸")
 1
->>> streng.find("å")
+>>> streng.find("Ã¥")
 22
 </screen>
 </para>
 <para>
 </para>
 <para>
-Hvis du tæller efter, synes det som om Python er gal på den - kan Python
+Hvis du tÃ¦ller efter, synes det som om Python er gal pÃ¥ den - kan Python
 ikke regne? Jo, men det er vist et faktum i alle normale computersprog,
-at en streng er en form for tabel, og så er den god nok, for det er
-vist også fast, at en tabels første værdi er placeret som tabelelement
-nummer nul. Det betyder, at ø reelt er element nummer 1 og å element
-nummer 22 som vist ovenfor. Du kan opnå den "rigtige" position således:
+at en streng er en form for tabel, og sÃ¥ er den god nok, for det er
+vist ogsÃ¥ fast, at en tabels fÃ¸rste vÃ¦rdi er placeret som tabelelement
+nummer nul. Det betyder, at Ã¸ reelt er element nummer 1 og Ã¥ element
+nummer 22 som vist ovenfor. Du kan opnÃ¥ den "rigtige" position sÃ¥ledes:
 </para>
 <para>
 <screen>
->>> streng.find("ø") + 1
+>>> streng.find("Ã¸") + 1
 2
 </screen>
 </para>
 <para>
 <screen>
 Funktionen returnerer -1, hvis ikke delstrengen findes.
->>> streng.find("ø",2,)
+>>> streng.find("Ã¸",2,)
 -1
 </screen>
 </para>
 <para>
 eks. 8
 index(delstreng, startplads, slutplads) viser en delstrengs position i
-en streng. Udfører samme funktion som find(delstreng, startplads,
+en streng. UdfÃ¸rer samme funktion som find(delstreng, startplads,
 slutplads), men i stedet for at returnere -1 returneres en ValueError
 exception, hvis ikke delstrengen findes i strengen.
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "Børnene leger i skolegården."
->>> streng.index("ø")
+>>> streng = "BÃ¸rnene leger i skolegÃ¥rden."
+>>> streng.index("Ã¸")
 1
->>> streng.index("å")
+>>> streng.index("Ã¥")
 22
 >>> streng.index("q")
 Traceback (most recent call last):
@@ -450,7 +450,7 @@ ValueError: substring not found in string.index
 </para>
 <para>
 Python melder to ting 1: fejlen findes i linje 1 (tabelcelle 2)
-og 2: delstrengen "ø" blev ikke fundet.
+og 2: delstrengen "Ã¸" blev ikke fundet.
 </para>
 <para>
 eks. 9
@@ -485,10 +485,10 @@ isalpha() returnerer 1 hvis strengen ene og alene indeholder alfabetiske
 karakterer  (bogstaver) ellers returneres 0
 <screen>
 >>> import string
->>> streng = "Børnenelegeriskolegården"
+>>> streng = "BÃ¸rnenelegeriskolegÃ¥rden"
 >>> streng.isalpha()
 1
->>> streng = "Børnene leger i skolegården."
+>>> streng = "BÃ¸rnene leger i skolegÃ¥rden."
 >>> streng.isalpha()
 0
 </screen>
@@ -515,18 +515,18 @@ ellers returneres 0.
 <para>
 eks. 12
 islower() funktionen returnerer 1, hvis alle bogstaver i strengen er
-"små".
+"smÃ¥".
 </para>
 <para>
 <screen>
 >>> import string
->>> streng = "det er efterår nu"
+>>> streng = "det er efterÃ¥r nu"
 >>> streng.islower()
 1
->>> streng = "Det er efterår nu"
+>>> streng = "Det er efterÃ¥r nu"
 >>> streng.islower()
 0
->>> streng = "vi er i efteråret 2003"
+>>> streng = "vi er i efterÃ¥ret 2003"
 >>> streng.islower()
 1
 </screen>
@@ -535,7 +535,7 @@ islower() funktionen returnerer 1, hvis alle bogstaver i strengen er
 <screen>
 eller:
 >>> import string
->>> "vi er i efteråret 2003.".islower()
+>>> "vi er i efterÃ¥ret 2003.".islower()
 True
 </screen>
 </para>
@@ -568,17 +568,17 @@ eks. 14
 istitle() I en engelsk bogtittel begynder det enkelte ord (som regel)
 med "store" bogstaver, deraf funktionsnavnet. Selve funktionen
 returnerer derfor 1, hvis der ene og alene forekommer "store" bogstaver
-som de enkelte ords første bogstav ellers returneres 0. Det kan føre
-til, at selv velkendte stavemåder kan returnere nul og omvendt, hvad
+som de enkelte ords fÃ¸rste bogstav ellers returneres 0. Det kan fÃ¸re
+til, at selv velkendte stavemÃ¥der kan returnere nul og omvendt, hvad
 dette eksempel vil vise:
 </para>
 <para>
 <screen>
->>> # Først den forkerte stavemåde:
+>>> # FÃ¸rst den forkerte stavemÃ¥de:
 >>> streng = "Suse Linux"
 >>> streng.istitle()
 1
->>> # Så den rigtige stavemåde:
+>>> # SÃ¥ den rigtige stavemÃ¥de:
 >>> import string
 >>> streng = "SuSE Linux"
 >>> streng.istitle()
@@ -592,10 +592,10 @@ isupper() funktionen returnerer 1, hvis alle bogstaver i strengen er "store".
 <para>
 <screen>
 >>> import string
->>> streng = "SuSE Linux" # normale skrivemåde
+>>> streng = "SuSE Linux" # normale skrivemÃ¥de
 >>> streng.isupper()
 0
->>> streng = "SUSE LINUX" # unormal skrivemåde
+>>> streng = "SUSE LINUX" # unormal skrivemÃ¥de
 >>> streng.isupper()
 1
 >>> streng = "SUSE LINUX 8.2"
@@ -637,7 +637,7 @@ eller:
 eks. 17
 ljust(bredde) ligner center(bredde) funktionen, hvis anvendelse
 tidligere er vist. Her placeres delstrengen bare venstrejusteret i den
-tomme streng, hvis længde angives med breddeargumentet.
+tomme streng, hvis lÃ¦ngde angives med breddeargumentet.
 </para>
 <para>
 <screen>
@@ -651,7 +651,7 @@ tomme streng, hvis længde angives med breddeargumentet.
 </para>
 <para>
 eks. 18//
-lower() lower() konverterer alle bogstaver til "små".
+lower() lower() konverterer alle bogstaver til "smÃ¥".
 </para>
 <para>
 <screen>
@@ -680,7 +680,7 @@ lstrip() fjerner tomme (ASCII 32) i strengens begyndelse - venstre side.
 <para>
 eks. 20
 replace(gamle,nye,maksimale) erstatter en "gammel" tekstsreng med en ny.
-Hvis du ikke ønsker at udskifte samtlig eksistende "gamle" med nye, kan
+Hvis du ikke Ã¸nsker at udskifte samtlig eksistende "gamle" med nye, kan
 et maksimalt antal udskiftninger angives.
 </para>
 <para>
@@ -705,7 +705,7 @@ delstreng i en streng. Hvis delstrengen ikke findes returneres -1.
 <para>
 <screen>
 >>> import string
->>> streng = "Der er en klippefast grund til at besøge Bornholm."
+>>> streng = "Der er en klippefast grund til at besÃ¸ge Bornholm."
 >>> streng.rfind("e")
 39
 </screen>
@@ -714,7 +714,7 @@ delstreng i en streng. Hvis delstrengen ikke findes returneres -1.
 <screen>
 eller:
 >>> import string
->>> "Der er en klippefast grund til at besøge Bornholm.".rfind("e")
+>>> "Der er en klippefast grund til at besÃ¸ge Bornholm.".rfind("e")
 39
 </screen>
 </para>
@@ -722,14 +722,14 @@ eller:
 <screen>
 eller:
 >>> import string
->>> l = len("Der er en klippefast grund til at besøge Bornholm.")
->>> "Der er en klippefast grund til at besøge Bornholm.".rfind("e",len(streng) - 10,l)
+>>> l = len("Der er en klippefast grund til at besÃ¸ge Bornholm.")
+>>> "Der er en klippefast grund til at besÃ¸ge Bornholm.".rfind("e",len(streng) - 10,l)
 -1
 </screen>
 </para>
 <para>
 eks. 22
-rindex(delstreng,startpunkt,slutpunkt) virker fuldstændig som rfind
+rindex(delstreng,startpunkt,slutpunkt) virker fuldstÃ¦ndig som rfind
 funktionen, men i stedet for at returnere -1, hvis delstrengen ikke
 findes returneres en ValueError.
 </para>
@@ -752,35 +752,35 @@ Fejlmeldingen siger, at delstrengen "dk" ikke findes i streng.
 </para>
 <para>
 eks. 23//
-rjust(bredde) svarer til center(bredde) og ljust(bredde) bortset fra at delstrengen her placeres højrejusteret i strengen.
+rjust(bredde) svarer til center(bredde) og ljust(bredde) bortset fra at delstrengen her placeres hÃ¸jrejusteret i strengen.
 </para>
 <para>
 <screen>
 >>> import string
 >>> "h".rjust(30)
-'                             h' # Et enkelt bogstav er også en streng.
+'                             h' # Et enkelt bogstav er ogsÃ¥ en streng.
 </screen>
 </para>
 <para>
 eks. 24//
-rstrip() fjerner tomme (ASCII 32) i HØJRE side af en streng.
+rstrip() fjerner tomme (ASCII 32) i HÃ˜JRE side af en streng.
 </para>
 <para>
 <screen>
 >>> # Python 2.2 afvikling:
 >>> import string
->>> "    En unødvendig lang streng        ".rstrip()
+>>> "    En unÃ¸dvendig lang streng        ".rstrip()
 '    En un\xf8dvendig lang streng'
 >>> # Python 2.3 afvikling:
 >>> import string
->>> print "    En unødvendig lang streng        ".rstrip()
-    En unødvendig lang streng
+>>> print "    En unÃ¸dvendig lang streng        ".rstrip()
+    En unÃ¸dvendig lang streng
 </screen>
 </para>
 <para>
 eks. 25
-split(seperator) Opdeler tekststreng i delstrenge, der indsættes i
-liste. Hvis ikke der indsættes seperator deles ved ASCII 32
+split(seperator) Opdeler tekststreng i delstrenge, der indsÃ¦ttes i
+liste. Hvis ikke der indsÃ¦ttes seperator deles ved ASCII 32
 (mellemrum).
 </para>
 <para>
@@ -816,7 +816,7 @@ anvendes eller er sat til None, deles strengen ved hver mellemrum
 eks. 27
 splitlines([1])returnerer en liste af delstrenge fremkommet ved at
 dele den oprindelige streng ved hver ny linje karakter. Hvis
-parameteret 1 indsættes bevares ny linje skiftet i delstrengene se
+parameteret 1 indsÃ¦ttes bevares ny linje skiftet i delstrengene se
 nederste del af eksemplet.
 </para>
 <para>
@@ -850,18 +850,18 @@ strip() fjerner mellemrum i strengens begyndelse og slutning
 <screen>
 >>> # Python 2.2 afvikling:
 >>> import string
->>> "      Har du været på Christiansø?     ".strip()
+>>> "      Har du vÃ¦ret pÃ¥ ChristiansÃ¸?     ".strip()
 'Har du v\xe6ret p\xe5 Christians\xf8?'
 >>> import string
->>> "      Har du været på Christiansø?     ".strip()
+>>> "      Har du vÃ¦ret pÃ¥ ChristiansÃ¸?     ".strip()
 'Har du v\xe6ret p\xe5 Christians\xf8?'
->>> print "      Har du været på Christiansø?     ".strip()
-Har du været på Christiansø?
+>>> print "      Har du vÃ¦ret pÃ¥ ChristiansÃ¸?     ".strip()
+Har du vÃ¦ret pÃ¥ ChristiansÃ¸?
 </screen>
 </para>
 <para>
 eks. 30//
-swapcase() konverterer alle "store" bogstaver til små og omvendt.
+swapcase() konverterer alle "store" bogstaver til smÃ¥ og omvendt.
 </para>
 <para>
 <screen>
@@ -874,29 +874,29 @@ swapcase() konverterer alle "store" bogstaver til små og omvendt.
 </para>
 <para>
 eks. 31
-title() Returnerer en streng, hvori første bogstav af strengens
+title() Returnerer en streng, hvori fÃ¸rste bogstav af strengens
 enkeltord og kun dem er med stort begyndelsesbogstav.
 </para>
 <para>
 <screen>
 >>> import string
->>> "er uldjyder lådne?".title()
+>>> "er uldjyder lÃ¥dne?".title()
 'Er Uldjyder L\xe5dne?'
 </screen>
 </para>
 <para>
->>> "eR brAndMænd meget iltre?".title()
+>>> "eR brAndMÃ¦nd meget iltre?".title()
 'Er Brandm\xe6nd Meget Iltre?'
 </para>
 <para>
 <screen>
 eller:
 >>> import string
->>> "er uldjyder lådne?".title()
+>>> "er uldjyder lÃ¥dne?".title()
 'Er Uldjyder L\xe5dne?'
->>> s = "er uldjyder lådne?".title()
+>>> s = "er uldjyder lÃ¥dne?".title()
 >>> print s
-Er Uldjyder Lådne?
+Er Uldjyder LÃ¥dne?
 </screen>
 </para>
 <para>
@@ -906,20 +906,20 @@ eks. 32//
 <para>
 <screen>
 >>> import string
->>> "var forfatteren nexø fra nexø?".upper()
+>>> "var forfatteren nexÃ¸ fra nexÃ¸?".upper()
 'VAR FORFATTEREN NEX\xd8 FRA NEX\xd8?'
 </screen>
 </para>
 <para>
 eller:
 >>> import string
->>> "var forfatteren nexø fra nexø?".upper()
+>>> "var forfatteren nexÃ¸ fra nexÃ¸?".upper()
 'VAR FORFATTEREN NEX\xd8 FRA NEX\xd8?'
->>> print "var forfatteren nexø fra nexø?".upper()
-VAR FORFATTEREN NEXØ FRA NEXØ?
+>>> print "var forfatteren nexÃ¸ fra nexÃ¸?".upper()
+VAR FORFATTEREN NEXÃ˜ FRA NEXÃ˜?
 </para>
 <para>
-Brødmaskinen (slicing):
+BrÃ¸dmaskinen (slicing):
 >>> streng = "naturlig"
 >>> streng[4]
 'r'
@@ -941,7 +941,7 @@ Brødmaskinen (slicing):
 </para>
 <para>
 <screen>
-zfill funktionen gør det, den siger fylder op med zeros (nuller)
+zfill funktionen gÃ¸r det, den siger fylder op med zeros (nuller)
 opfyldningen sker altid til venstre:
 import string
 string.zfill('12', 5)
@@ -958,7 +958,7 @@ string.zfill('3.14159265359', 5)
 <title>Range</title>
 <para>
 <screen>
-syntaks: range(begynd, slut - 1, step) - slut er nødvendig.
+syntaks: range(begynd, slut - 1, step) - slut er nÃ¸dvendig.
 >>> range(11)
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9.10]
 >>> range(0,21,2)
@@ -973,7 +973,7 @@ syntaks: range(begynd, slut - 1, step) - slut er nødvendig.
 ...     print i,
 ...
 1 2 3 4 5 6 7 8 9 10
-Range fungerer også ved nedtælling:
+Range fungerer ogsÃ¥ ved nedtÃ¦lling:
 >>> for i in range(10,0, -1):
 ...     print i,
 ...
@@ -1017,11 +1017,11 @@ Range fungerer også ved nedtælling:
 </sect1>
 
 <sect1 id="python-filer">
-<title>Læs og skriv filer</title>
+<title>LÃ¦s og skriv filer</title>
 <para>
 <screen>
 heleTeksten= open('filnavn.txt').read()    # hent hele indholdet i en tekstfil
-alleData = open('fuldeFilsti', 'rb').read() # hent hele indholdet i en binær fil
+alleData = open('fuldeFilsti', 'rb').read() # hent hele indholdet i en binÃ¦r fil
 
 filObjekt  = open('filnavn.txt')
 heleTeksten = filObjekt.read()
@@ -1053,7 +1053,7 @@ filObjekt.close()
 <para>
 <screen>
 open('filnavn.txt', 'w').write(heleTeksten)  # skriv tekst til en tekstfil
-open('fuldeFilsti', 'wb').write(alleData)    # skriv binære data til en binær fil
+open('fuldeFilsti', 'wb').write(alleData)    # skriv binÃ¦re data til en binÃ¦r fil
 
 filObjekt = open('filnavn.txt', 'w')
 filObjekt.write(heleTeksten)
@@ -1127,7 +1127,7 @@ print "Udfilen er lukket."
 </programlisting>
 
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 <screen>
 python udfilNy.py
 Skriv tekstlinje (tom lukker fil): Ny tekst i ny udfil."
@@ -1229,7 +1229,7 @@ print "Udfilen er lukket."
 </sect2>
 
 <sect2 id="python-filer-8">
-<title>Læs fra fil</title>
+<title>LÃ¦s fra fil</title>
 
 <programlisting>
 import sys
@@ -1251,16 +1251,16 @@ udfil.close()
 print "Udfilen er lukket."
 </programlisting>
 <para>
-BEMÆRK:  str funktionen kræves a.h.t. dansk/norske specialtegn.
+BEMÃ†RK:  str funktionen krÃ¦ves a.h.t. dansk/norske specialtegn.
 </para>
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 ajbo@linux:~> python indfil.py
-['Microsoft får en ordentlig bredside i en ny rapport fra den amerikanske \n',
+['Microsoft fÃ¥r en ordentlig bredside i en ny rapport fra den amerikanske \n',
 'organisation Computer & Communications Industry Association (CCIA). Manglen \n',
- 'på ordentlig sikkerhed i Microsofts programmer og det faktum, at Windows er \n',
+ 'pÃ¥ ordentlig sikkerhed i Microsofts programmer og det faktum, at Windows er \n',
  'det mest udbredte styresystem i verden, betyder tilsammen, at verden generelt \n',
- 'er blevet mere sårbar overfor trusler mod sikkerheden, konkluderer rapporten.\n']
+ 'er blevet mere sÃ¥rbar overfor trusler mod sikkerheden, konkluderer rapporten.\n']
 </para>
 <para>
 Filen er lukket.
@@ -1295,9 +1295,9 @@ print "Udfilen er lukket."
 </programlisting>
 </para>
 <para>
-Fra kørselsresultat:
+Fra kÃ¸rselsresultat:
 filnavn.txt indeholder:
-Nu går vi over til at udsende teksten i antal bytes.
+Nu gÃ¥r vi over til at udsende teksten i antal bytes.
 Flere bytes skrives til filen.
 </para>
 </sect2>
@@ -1323,10 +1323,10 @@ print "Filen er lukket."
 </programlisting>
 </para>
 <para>
-Kørselsresultat:
+KÃ¸rselsresultat:
 <screen>
 ajbo@linux:~> python indfilBytes.py
-['Nu går vi over til at udsende teksten i antal bytes.\n',
+['Nu gÃ¥r vi over til at udsende teksten i antal bytes.\n',
  'Flere bytes skrives til filen.\n', '\n', '\n']
 Filen er lukket.
 ajbo@linux:~>
@@ -1355,7 +1355,7 @@ print
 print "Filen er lukket."
 </programlisting>
 <para>
-Kørselsresultat (uddrag af den store udskrift):
+KÃ¸rselsresultat (uddrag af den store udskrift):
 enhed   Den terminalenhed, som du vil bruge, f.eks. COM1.
 1Viser eller indstiller datoen.
 </para>
@@ -1372,7 +1372,7 @@ aSletter en eller flere filer.
 <sect2 id="python-filer-12">
 <title>Hent bytes fra fil eksempel 3</title>
 <para>
-I dette eksempel læses filen vinduer.jpg, der også benyttes et andet
+I dette eksempel lÃ¦ses filen vinduer.jpg, der ogsÃ¥ benyttes et andet
 sted i bogen.
 </para>
 <programlisting>
@@ -1390,16 +1390,16 @@ print
 print "Filen er lukket."
 </programlisting>
 <para>
-Kørselsresultat (ganske kort uddrag af returgodset)
+KÃ¸rselsresultat (ganske kort uddrag af returgodset)
 <screen>
 python indfilBytes3.py
-ÿØÿàJFIFHHÿşLEAD Technologies Inc. V1.01ÿÛC
+Ã¿Ã˜Ã¿Ã JFIFHHÃ¿Ã¾LEAD Technologies Inc. V1.01Ã¿Ã›C
 </screen>
 </para>
 </sect2>
 
 <sect2 id="python-filer-13">
-<title>Søg og erstat tekst i fil</title>
+<title>SÃ¸g og erstat tekst i fil</title>
 
 <programlisting>
 #!/usr/bin/env python
@@ -1426,24 +1426,24 @@ else:
 </programlisting>
 <para>
 <screen>
- Et kørselsresultat:
+ Et kÃ¸rselsresultat:
 python erstatTekst.py
 Anvend: erstatTekst.py tekstAtFinde erstatningsTekst [indfil [udfil]]
 </screen>
-Når filen søges afviklet uden de nødvendige parametre udskrives der som
-vist en anvisning på, hvordan kaldet skal foregå. sys.argv[0] er selve
-programmets navn (erstatTekst.py). I Python bøger er det normalt at
-angive valgfrie parametre i firkantede parenteser. Det er altså i
-herværende tilfælde ikke absolut nødvendigt at angive en indfils navn,
-det samme er tilfældet med en udfils navn. Udeladelse af de to navne er
-imidlertid upraktisk i det aktuelle tilfælde, så et kald kunne være:
+NÃ¥r filen sÃ¸ges afviklet uden de nÃ¸dvendige parametre udskrives der som
+vist en anvisning pÃ¥, hvordan kaldet skal foregÃ¥. sys.argv[0] er selve
+programmets navn (erstatTekst.py). I Python bÃ¸ger er det normalt at
+angive valgfrie parametre i firkantede parenteser. Det er altsÃ¥ i
+hervÃ¦rende tilfÃ¦lde ikke absolut nÃ¸dvendigt at angive en indfils navn,
+det samme er tilfÃ¦ldet med en udfils navn. Udeladelse af de to navne er
+imidlertid upraktisk i det aktuelle tilfÃ¦lde, sÃ¥ et kald kunne vÃ¦re:
 <screen>
 python erstatTekst.py "Microsoft" "Linux" "/windows/C/autoexec.bat" "autoexec.bat"
 </screen>
-Der er bare det ved det, at ordet "Microsoft" næppe forekommer i
-autoexec.bat filen. Resultatet vil altså alene blive at filen bliver
+Der er bare det ved det, at ordet "Microsoft" nÃ¦ppe forekommer i
+autoexec.bat filen. Resultatet vil altsÃ¥ alene blive at filen bliver
 kopieret fra Microsoft Windows biblioteket til rodbiblioteket i Linux,
-men det kan jo også være fint nok.
+men det kan jo ogsÃ¥ vÃ¦re fint nok.
 </para>
 <para>
 <screen>
@@ -1458,7 +1458,7 @@ udfil.close
 </screen>
 </para>
 <para>
-Før programafvikling:
+FÃ¸r programafvikling:
 SET windir=C:\WINDOWS
 SET winbootdir=C:\WINDOWS
 SET COMSPEC=C:\WINDOWS\COMMAND.COM
@@ -1483,33 +1483,33 @@ for s in indfil.readlines():
 	udfil.write(string.replace(s, findeTekst, erstatteTekst))
 </para>
 <para>
-Kan også skrives:
+Kan ogsÃ¥ skrives:
 for s in indfil:
 	udfil.write(s.replace(findeTekst, erstatteTekst))
 </para>
 <para>
-Lad Python fortælle, hvad et modul indeholder:
+Lad Python fortÃ¦lle, hvad et modul indeholder:
 <screen>
 >>> sys
 &lt;module 'sys' (built-in)>
 </screen>
 </para>
 <para>
-returstrengen fortæller, at sys er et i Python indbygget (fordefineret)
+returstrengen fortÃ¦ller, at sys er et i Python indbygget (fordefineret)
 modul. sys inkluderes i dette eksempel ene og alene for at kunne lukke
-programmet ned, når der klikkes på knappen. Herved udføres kommandoen
+programmet ned, nÃ¥r der klikkes pÃ¥ knappen. Herved udfÃ¸res kommandoen
 root.exit
 </para>
 <para>
-I interaktiv mode kan det undertiden være vanskeligt at få kørslen
+I interaktiv mode kan det undertiden vÃ¦re vanskeligt at fÃ¥ kÃ¸rslen
 stoppet og komme ud af programmet. I Windows kan du komme ud ved at
-trykke på Ctrl og Z tasten samtidig. I Linux skulle du kunne komme ud
-ved at trykke samtidig på Ctrl og D. I SuSE 8.2 skal du imidlertid
+trykke pÃ¥ Ctrl og Z tasten samtidig. I Linux skulle du kunne komme ud
+ved at trykke samtidig pÃ¥ Ctrl og D. I SuSE 8.2 skal du imidlertid
 trykke Ctrl C for at komme ud. Men det korte og det lange er, at
-sys.exit og nævnte tastetryk har samme virkning.
+sys.exit og nÃ¦vnte tastetryk har samme virkning.
 </para>
 <para>
-Vi kan også få at se, hvad modulet indeholder:
+Vi kan ogsÃ¥ fÃ¥ at se, hvad modulet indeholder:
 </para>
 <para>
 <screen>
@@ -1541,7 +1541,7 @@ Vi kan også få at se, hvad modulet indeholder:
 
 <screen>
 >>> import time
->>> type(time) # unødvendigt bevis for dig
+>>> type(time) # unÃ¸dvendigt bevis for dig
 &lt;type 'module'>
 
 >>> time.time()
@@ -1564,7 +1564,7 @@ Vi kan også få at se, hvad modulet indeholder:
 25
 
 >>> # pausefunktion
->>> # kontrol :   >>>  fremkommer efter pause på 10 sekunder.
+>>> # kontrol :   >>>  fremkommer efter pause pÃ¥ 10 sekunder.
 >>> time.sleep(10)
 >>>
 </screen>
@@ -1575,7 +1575,7 @@ Vi kan også få at se, hvad modulet indeholder:
 
 <screen>
 >>> import datetime
->>> type(datetime)  # unødvendigt bevis for dig
+>>> type(datetime)  # unÃ¸dvendigt bevis for dig
 &lt;type 'module'>
 
 >>> nu = datetime.datetime.now()
@@ -1613,7 +1613,7 @@ Vi kan også få at se, hvad modulet indeholder:
 '07 AM'
 
 >>> # Funktionen beregner ugenummeret 1 for lavt
->>> # derfor nedenstående omregning
+>>> # derfor nedenstÃ¥ende omregning
 >>> Ugenummer = int(Ugenummer) + 1
 >>> Ugenummer
 39
@@ -1622,7 +1622,7 @@ Vi kan også få at se, hvad modulet indeholder:
 >>> Ugenummer
 '39'
 
->>> # Søndag er ugens første dag (element 0)
+>>> # SÃ¸ndag er ugens fÃ¸rste dag (element 0)
 >>> UgedagDecimal = nu.strftime("%w")
 >>> UgedagDecimal
 '4'
@@ -1640,20 +1640,20 @@ Vi kan også få at se, hvad modulet indeholder:
 </chapter>
 
 <!-- Wange:
-     Jeg mener det næste chapter bør flyttes ud i en seperat fil og
-     bør dække bredere end de få eksempler der er vist.
+     Jeg mener det nÃ¦ste chapter bÃ¸r flyttes ud i en seperat fil og
+     bÃ¸r dÃ¦kke bredere end de fÃ¥ eksempler der er vist.
 -->
 <chapter id="python-internettet">
- <title>Med Python på internettet</title>
+ <title>Med Python pÃ¥ internettet</title>
 
  <para>
-I en tid, hvor det ikke er ualmindeligt at modtage mails fra en meget stor del af den globale verden, kan det være rart
-at se, hvilken server, det måtte være, hvorfra der sendes til en. I Python kan det ske særdeles enklet. De tre forholdsvis
-ens eksempler, jeg nu vil vise, er så selvforklarende, at jeg kun vil tilføje, at Date: viser, hvornår jeg hentede de viste info ind. Dog skal tillægges 2 timer grundet forskellen i længdegrad fra Rønne til London og sommertiden. Endelig skal jeg
-gøre opmærksom, på at Content-Length: informationen viser det antal bytes, der er i indexfilen og ikke andet. Jeg finder det selv interessant at se, hvilken server den besøgte benytter. Jeg kunne ikke lade være med at tage såvel folketingets
-som Alt Om Datas udskrift med, fordi førstnævnte har vedtaget, at det offentlige skal bruge open source - og så bruger samme
-folketing endda en ældre version af Microsofts server (version 4) - der er ingen forbindelse mellem påstanden om at ville
-bruge eksempelvis Linux og så det at gøre det.
+I en tid, hvor det ikke er ualmindeligt at modtage mails fra en meget stor del af den globale verden, kan det vÃ¦re rart
+at se, hvilken server, det mÃ¥tte vÃ¦re, hvorfra der sendes til en. I Python kan det ske sÃ¦rdeles enklet. De tre forholdsvis
+ens eksempler, jeg nu vil vise, er sÃ¥ selvforklarende, at jeg kun vil tilfÃ¸je, at Date: viser, hvornÃ¥r jeg hentede de viste info ind. Dog skal tillÃ¦gges 2 timer grundet forskellen i lÃ¦ngdegrad fra RÃ¸nne til London og sommertiden. Endelig skal jeg
+gÃ¸re opmÃ¦rksom, pÃ¥ at Content-Length: informationen viser det antal bytes, der er i indexfilen og ikke andet. Jeg finder det selv interessant at se, hvilken server den besÃ¸gte benytter. Jeg kunne ikke lade vÃ¦re med at tage sÃ¥vel folketingets
+som Alt Om Datas udskrift med, fordi fÃ¸rstnÃ¦vnte har vedtaget, at det offentlige skal bruge open source - og sÃ¥ bruger samme
+folketing endda en Ã¦ldre version af Microsofts server (version 4) - der er ingen forbindelse mellem pÃ¥standen om at ville
+bruge eksempelvis Linux og sÃ¥ det at gÃ¸re det.
 </para>
 
 <para>
@@ -1697,12 +1697,12 @@ Content-Type: text/html; charset=iso-8859-1
 Content-Length: 23164
 
 >>> import ftplib
->>> # host kan læses som stedet, hvor filen er placeret.
+>>> # host kan lÃ¦ses som stedet, hvor filen er placeret.
 >>> ftp = ftplib.FTP("ftp.host.dk")
 >>> ftp.login("brugernavn skal ind her","password skal ind her")
 '230 User brugernavn logged in.'
 
-Hent dokument fra url på Web
+Hent dokument fra url pÃ¥ Web
 >>> from urllib import urlopen
 >>> dokument = urlopen("http://www.sslug.dk").read()
 >>> print dokument

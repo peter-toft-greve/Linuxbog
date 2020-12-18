@@ -1,9 +1,9 @@
-# Dette er en Makefile til de enkelte bøger som kan anvendes på 
+# Dette er en Makefile til de enkelte bÃ¸ger som kan anvendes pÃ¥ 
 # Red Hat 7.2 
 #
-# Skrevet af Peter Toft <pto@sslug.dk> 22/1-2002 - er ikke færdig :)
+# Skrevet af Peter Toft <pto@sslug.dk> 22/1-2002 - er ikke fÃ¦rdig :)
 #
-# Mangler - håndtering af billeder, PS/RTF/PDF-output, setindex mv.
+# Mangler - hÃ¥ndtering af billeder, PS/RTF/PDF-output, setindex mv.
 
 html:
 	rm -rf bog

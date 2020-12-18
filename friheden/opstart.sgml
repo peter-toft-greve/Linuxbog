@@ -7,83 +7,83 @@
 <indexterm><primary>Windows</primary><secondary>98</secondary></indexterm>
 
 <para>
-I dette kapitel beskrives nærmere, hvordan Linux opstarten
-foregår på en PC. Vi fortæller de vigtigste ting om program
-pakkerne LILO og GRUB, så du har en chance for at komme igang
-på en nem måde. Nogle i linuxbog redaktionen foretrækker GRUB,
-andre LILO. Den vigtigste forskel er, at GRUB "forstår
+I dette kapitel beskrives nÃ¦rmere, hvordan Linux opstarten
+foregÃ¥r pÃ¥ en PC. Vi fortÃ¦ller de vigtigste ting om program
+pakkerne LILO og GRUB, sÃ¥ du har en chance for at komme igang
+pÃ¥ en nem mÃ¥de. Nogle i linuxbog redaktionen foretrÃ¦kker GRUB,
+andre LILO. Den vigtigste forskel er, at GRUB "forstÃ¥r
 filsystemer" og kerne-exec formater. LILO springer det led over
-og arbejder med fysisk specificerede bloknumre på disken.
+og arbejder med fysisk specificerede bloknumre pÃ¥ disken.
 </para>
 
 <para>
 Som tidligere skrevet kan Linux fint eksistere sammen med Windows
-95/98, NT 4.1, NT 5 og også MS-Windows XP. Linux kan i det hele
+95/98, NT 4.1, NT 5 og ogsÃ¥ MS-Windows XP. Linux kan i det hele
 taget eksistere sammen med andre systemer.  Det normale er at
-installere en Linux opstart-manager, så man kan vælge, om man vil
-starte Linux eller for eksempel MS-Windows-NT. Det vil vi beskrive nærmere
-her i indledningen. Men først et par formanende ord, hvis du
+installere en Linux opstart-manager, sÃ¥ man kan vÃ¦lge, om man vil
+starte Linux eller for eksempel MS-Windows-NT. Det vil vi beskrive nÃ¦rmere
+her i indledningen. Men fÃ¸rst et par formanende ord, hvis du
 bruger Microsoft Windows XP.
 </para>
 
 <para>
 Det siges, at Windows XP ikke accepterer at blive bootet fra en
-disk, som der er ændret på med programmer, som ikke er fra
+disk, som der er Ã¦ndret pÃ¥ med programmer, som ikke er fra
 Microsoft, for eksempel Ghost, Novell, Partitionmagic - og Linux LILO.
 Efter vores viden er det en bug i MS-XP, som bevirker, at endog
 Microsoft setup-programmer kan lave rav i licens-kontrollen,
-således at man ikke får lov at starte MS-XP. Da dette
-selvfølgelig kan være alvorligt belastende, må vi råde til
+sÃ¥ledes at man ikke fÃ¥r lov at starte MS-XP. Da dette
+selvfÃ¸lgelig kan vÃ¦re alvorligt belastende, mÃ¥ vi rÃ¥de til
 forsigtighed med de nyeste versioner af Microsoft produkter.
 </para>
 
 <para>
-Hvis man vil bevare en MS-XP installation, må vi derfor anbefale
-den forsigtige metode. Vi kommenterer i øvrigt <emphasis>ikke
-</emphasis> på fejl i MS-XP eller hvordan man undgår dem.
+Hvis man vil bevare en MS-XP installation, mÃ¥ vi derfor anbefale
+den forsigtige metode. Vi kommenterer i Ã¸vrigt <emphasis>ikke
+</emphasis> pÃ¥ fejl i MS-XP eller hvordan man undgÃ¥r dem.
 </para>
 
 <para>
-De ældre Microsoft systemer, NT-4.x m.v., opfører sig helt
+De Ã¦ldre Microsoft systemer, NT-4.x m.v., opfÃ¸rer sig helt
 korrekt og er non-destruktive overfor egne og andres data.
 </para>
 
 <para>
-Den forsigtige metode består i, at man installerer Linux, men
-ikke installerer en LILO boot sector. Man benytter så den
+Den forsigtige metode bestÃ¥r i, at man installerer Linux, men
+ikke installerer en LILO boot sector. Man benytter sÃ¥ den
 start-diskette, som man kan lave til sidst i installationen. Vi
-beskriver også, hvordan man selv kan lave sådan en diskette med
-sin egen kerneopsætning. Det er i virkeligheden ret
-effektivt, idet disketten efter indlæsning af kernen sørger for,
+beskriver ogsÃ¥, hvordan man selv kan lave sÃ¥dan en diskette med
+sin egen kerneopsÃ¦tning. Det er i virkeligheden ret
+effektivt, idet disketten efter indlÃ¦sning af kernen sÃ¸rger for,
 at harddisken bruges som udgangspunkt for alle andre operationer,
-herunder kernemoduler, hvis man benytter sådanne. Det drejer sig
-højst om 10-20 sekunder ekstra i opstarten.
+herunder kernemoduler, hvis man benytter sÃ¥danne. Det drejer sig
+hÃ¸jst om 10-20 sekunder ekstra i opstarten.
 </para>
 
 <para>
-Når man så er blevet træt af Microsoft programmer og ikke mere
-har brug for dem, så kan man fjerne den partition og installere
-LILO, således at man starter Linux op fra harddisken.
+NÃ¥r man sÃ¥ er blevet trÃ¦t af Microsoft programmer og ikke mere
+har brug for dem, sÃ¥ kan man fjerne den partition og installere
+LILO, sÃ¥ledes at man starter Linux op fra harddisken.
 </para>
 
 <para>
 For MS-Windows-95, 98, NT, CE og lignende er det almindeligste at
-installere en LILO boot-manager, hvorfra man kan vælge, hvilken
-kerne (og evt. hvilken Windows-kerne) man ønsker at starte op.
+installere en LILO boot-manager, hvorfra man kan vÃ¦lge, hvilken
+kerne (og evt. hvilken Windows-kerne) man Ã¸nsker at starte op.
 </para>
 
 <para>
-Der er mange flere muligheder. Ældre maskiner kan boote Linux fra
-Windows 95/98 ved hjælp af et (ældre) program, som hedder loadlin
-(load Linux), men man kan selvfølgelig også bruge LILO eller GRUB
-på ældre maskiner.
+Der er mange flere muligheder. Ã†ldre maskiner kan boote Linux fra
+Windows 95/98 ved hjÃ¦lp af et (Ã¦ldre) program, som hedder loadlin
+(load Linux), men man kan selvfÃ¸lgelig ogsÃ¥ bruge LILO eller GRUB
+pÃ¥ Ã¦ldre maskiner.
 </para>
 
 <para>
 Et alternativ til at have LILO boot manageren installeret er det
-at lægge en bootsector på den partition, som man har installeret
-Linux på, og så tilføje Linux partitionen til NT-boot manageren,
-og det kan gøres bl.a. med programmet bootpart.exe fra <ulink
+at lÃ¦gge en bootsector pÃ¥ den partition, som man har installeret
+Linux pÃ¥, og sÃ¥ tilfÃ¸je Linux partitionen til NT-boot manageren,
+og det kan gÃ¸res bl.a. med programmet bootpart.exe fra <ulink
 url="http://www.winimage.com">http://www.winimage.com</ulink> og
 <ulink
 url="http://www.winimage.com/bootpart.htm">http://www.winimage.com/bootpart.htm</ulink>.
@@ -109,67 +109,67 @@ url="http://www.winimage.com/bootpart.htm">http://www.winimage.com/bootpart.htm<
 
 <para>
 GRUB er et alternativ til LILO-opstartsprogrammet (se <xref
-linkend="lilo"/>), dvs. et program som kan håndtere opstarten af et
-eller flere styresystemer på maskinen (eng: boot loader).  GRUB
-har været med i RedHat fra version 7.2.
+linkend="lilo"/>), dvs. et program som kan hÃ¥ndtere opstarten af et
+eller flere styresystemer pÃ¥ maskinen (eng: boot loader).  GRUB
+har vÃ¦ret med i RedHat fra version 7.2.
 Se f.eks. <ulink url="http://www.redhat.com/docs/manuals/linux/RHL-7.2-Manual/ref-guide/ch-grub.html">http://www.redhat.com/docs/manuals/linux/RHL-7.2-Manual/ref-guide/ch-grub.html</ulink>.
-GRUB forstår fdisk-partitioner og BSD-type disk-opdeling;
+GRUB forstÃ¥r fdisk-partitioner og BSD-type disk-opdeling;
 endvidere kender den til ext2fs, ReiserFS, JFS and XFS, BSD ufs,
 MS-DOS FAT16 og FAT32, Minix fs, og VSTa fs filesystems, plus
-fysiske bloklister. GRUB kan også boote andre kerner
+fysiske bloklister. GRUB kan ogsÃ¥ boote andre kerner
 (styresystemer) som for eksempel GNU og BSD. LILO, LInux LOader, er 
-først og fremmest et Linux-system, og nogen erfaringer tyder på,
-at den visse situationer kan være mere stabil. Den har også et
-væld af features.
+fÃ¸rst og fremmest et Linux-system, og nogen erfaringer tyder pÃ¥,
+at den visse situationer kan vÃ¦re mere stabil. Den har ogsÃ¥ et
+vÃ¦ld af features.
 </para>
 
 <para>
 GRUB kan benytte filsystemet til at finde kernefilen. GRUB var
 lidt tidligere ude med grafiske raffinementer i opstartsfasen,
-noget, som har stor værdi for markedsføringen. LILO har nu også
-fået mulighed for grafik under opstarten.
+noget, som har stor vÃ¦rdi for markedsfÃ¸ringen. LILO har nu ogsÃ¥
+fÃ¥et mulighed for grafik under opstarten.
 </para>
 
 <para>
- Læs mere om GRUB på <ulink
+ LÃ¦s mere om GRUB pÃ¥ <ulink
  url="http://www.gnu.org/software/grub/">hjemmesiden</ulink> og i <ulink
- url="http://www.gnu.org/software/grub/manual/grub.html#Configuration">opsætningsvejledningen</ulink>.
+ url="http://www.gnu.org/software/grub/manual/grub.html#Configuration">opsÃ¦tningsvejledningen</ulink>.
  Her kan man finde de filnavne, som GRUB bruger hvis man bruger den utilpasset.
- Red Hat har ændret filnavnene i overensstemmelse med god skik og brug.
+ Red Hat har Ã¦ndret filnavnene i overensstemmelse med god skik og brug.
 </para>
 
 <para>
-I <xref linkend="grub-conf-ex"/> er vist et eksempel på den fil
+I <xref linkend="grub-conf-ex"/> er vist et eksempel pÃ¥ den fil
 <filename>/boot/grub/grub.conf</filename>, som styrer
-opstartsprogrammet.  Først er der en linje
-<literal>default=0</literal>, der viser at det første menupunkt
-(nummer nul) er det som man får per default. Næste del er
+opstartsprogrammet.  FÃ¸rst er der en linje
+<literal>default=0</literal>, der viser at det fÃ¸rste menupunkt
+(nummer nul) er det som man fÃ¥r per default. NÃ¦ste del er
 <literal>timeout=10</literal>, som betyder at default-menupunket vil
 blive startet efter 10 sekunder. Parameteren
 <literal>splashimage</literal> angiver stien til at billede som
-lægges som baggrund for menuen. Det skal være et billede i
-VGA-størrelse dvs. 640x480 og man har kun 14 farver at gøre godt
+lÃ¦gges som baggrund for menuen. Det skal vÃ¦re et billede i
+VGA-stÃ¸rrelse dvs. 640x480 og man har kun 14 farver at gÃ¸re godt
 med. Filen skal gemmes i XPM-format (f.eks. lavet med GIMP eller
-ImageMagick) og derefter skal man køre <command>gzip</command> på
+ImageMagick) og derefter skal man kÃ¸re <command>gzip</command> pÃ¥
 filen idet den ellers vil fylde <emphasis>meget</emphasis> mere.
 Stien til filen er interessant. <literal>(hd0,0)</literal>
-betyder den første harddisk og første partition - dvs.
+betyder den fÃ¸rste harddisk og fÃ¸rste partition - dvs.
 <literal>/dev/hda1</literal> hvor <filename>/boot/</filename>
-skal ligge. Dernæst er stien relativ til kataloget
+skal ligge. DernÃ¦st er stien relativ til kataloget
 <filename>/boot/</filename> - dvs. stien her er fysisk
 <filename>/boot/grub/splash2.xpm.gz</filename> i eksemplet.
-Dernæst er der i <filename>/boot/grub/grub.conf</filename> en
+DernÃ¦st er der i <filename>/boot/grub/grub.conf</filename> en
 eller flere sektioner, der startes med <literal>title</literal>.
-Hver af dem bliver til et menu-punkt som man kan vælge mellem. I
+Hver af dem bliver til et menu-punkt som man kan vÃ¦lge mellem. I
 eksemplet er der tre menupunkter, som vil fremkomme med titlerne
-"Dell" hhv. "Red Hat Linux (2.4.21-13)" og "Windows".  Bemærk at
+"Dell" hhv. "Red Hat Linux (2.4.21-13)" og "Windows".  BemÃ¦rk at
 man igen her angiver den lidt specielle notation for hvilken
 Linux-kerne der skal hentes ved at skrive harddisk og partition
 som <literal>root (hd&lt;DREV&gt;,&lt;PARTITION&gt;)</literal>.
 </para>
 
 <example id="grub-conf-ex">
-<title>Eksempel på en grub.conf</title>
+<title>Eksempel pÃ¥ en grub.conf</title>
 <programlisting>
 default=0
 timeout=10
@@ -189,17 +189,17 @@ title Windows
 </example>
 
 <para> 
-Under det første
+Under det fÃ¸rste
 menupunkt "Dell" hentes kernen fra
 <filename>/boot/bzImage.417</filename> og filsystemets rod
 (dvs. <filename>/</filename>) bliver sat til
 <filename>/dev/hda2</filename>. <literal>ro</literal> betyder at
-root partitionen er read-only fra start, hvilket kan være en
-fordel, hvis en disk får en hardware fejl.
+root partitionen er read-only fra start, hvilket kan vÃ¦re en
+fordel, hvis en disk fÃ¥r en hardware fejl.
 </para>
 
 <para> 
-Man kan også se at det andet menupunkt "Red Hat Linux (2.4.21-13)"
+Man kan ogsÃ¥ se at det andet menupunkt "Red Hat Linux (2.4.21-13)"
 har en initiel RAM-disk <filename>/boot/initrd-2.4.21-13.img</filename>.
 I eksemplet er den originale Red Hat 7.2 kerne lagt
 under menupunktet "Red Hat Linux (2.4.21-13)", mens "Dell" er en nyere 
@@ -209,29 +209,29 @@ Linux-kerne uden initiel RAM-disk.
 <para>
 Det tre menupunkt "Windows" anvendes til at starte en Windows 95 eller
 NT op fra <filename>/dev/hda2</filename> (det er den anden partition
-på første disk - dvs. <literal>(hd0,1)</literal>.
+pÃ¥ fÃ¸rste disk - dvs. <literal>(hd0,1)</literal>.
 </para>
 
 <para>
-Det eneste man skal gøre hvis man vil ændre i opstarts-opsætningen er
-at rette i <filename>/boot/grub/grub.conf</filename> og ved næste
-genstart af maskinen anvendes den nye opsætning. I bogens eksempler
+Det eneste man skal gÃ¸re hvis man vil Ã¦ndre i opstarts-opsÃ¦tningen er
+at rette i <filename>/boot/grub/grub.conf</filename> og ved nÃ¦ste
+genstart af maskinen anvendes den nye opsÃ¦tning. I bogens eksempler
 kan man finde <filename>splash2.xpm.gz</filename> som er et
 opstarts-billede med SSLUG-logo, der passer til GRUB og
-også til LILO fra version 22.3.
+ogsÃ¥ til LILO fra version 22.3.
 </para>
 
 <para>
-Det skal lige nævnes at muligheden for at lægge et billede ind
-kræver et patch til GRUB der kan hentes fra <ulink url="http://people.redhat.com/~katzj/grub/patches/">http://people.redhat.com/~katzj/grub/patches/</ulink>.
+Det skal lige nÃ¦vnes at muligheden for at lÃ¦gge et billede ind
+krÃ¦ver et patch til GRUB der kan hentes fra <ulink url="http://people.redhat.com/~katzj/grub/patches/">http://people.redhat.com/~katzj/grub/patches/</ulink>.
 </para>
 
 <!--
 <para>
-Det skal også nævnes, at filnavnet grub.conf er default i RedHat
+Det skal ogsÃ¥ nÃ¦vnes, at filnavnet grub.conf er default i RedHat
 og andre distributioner, men at GRUB manualen anbefaler navnet
-menu.lst, hvilket kan vække mistanke om nogle ikke så klare
-tanker hos programmørerne (hvis man
+menu.lst, hvilket kan vÃ¦kke mistanke om nogle ikke sÃ¥ klare
+tanker hos programmÃ¸rerne (hvis man
 </para>
 /-->
 
@@ -248,17 +248,17 @@ tanker hos programmørerne (hvis man
 <indexterm><primary>LILO</primary><secondary>LILO</secondary></indexterm>
 <para>
 Mange vil allerede under installationen af Red Hat have installeret
-LILO som opstarter (eng. Boot Manager). Senere kan det være, at du vil
+LILO som opstarter (eng. Boot Manager). Senere kan det vÃ¦re, at du vil
 have mulighed for at opstarte med en ny kerne eller lignende.
-Typisk ændres opsætningsfilen <filename>/etc/lilo.conf</filename>, hvor
-der står nogle linjer (et "vers" eller en stanza) for hvert af de
-styresystemer, der kan opstartes. Når du har rettet, skal du køre
+Typisk Ã¦ndres opsÃ¦tningsfilen <filename>/etc/lilo.conf</filename>, hvor
+der stÃ¥r nogle linjer (et "vers" eller en stanza) for hvert af de
+styresystemer, der kan opstartes. NÃ¥r du har rettet, skal du kÃ¸re
 <command>/sbin/lilo</command> som "root",
 hvorefter rettelserne har effekt.
 </para>
 
 <para>
-Et eksempel på <filename>/etc/lilo.conf</filename> kan være
+Et eksempel pÃ¥ <filename>/etc/lilo.conf</filename> kan vÃ¦re
 </para>
 
 <example id="friheden-opstart-lilo-conf">
@@ -290,9 +290,9 @@ other=/dev/hda1
 </example>
 
 <para>
-I eksemplet installeres bootsectoren på første IDE-disk (med
+I eksemplet installeres bootsectoren pÃ¥ fÃ¸rste IDE-disk (med
 linjen <command>boot=/dev/hda</command>.  For at vise, hvordan
-disken med partitioner og boot-blokke "ser ud" på harddisken, har
+disken med partitioner og boot-blokke "ser ud" pÃ¥ harddisken, har
 Werner Almesberger tegnet nogle diagrammer:
 </para>
 
@@ -324,8 +324,8 @@ Werner Almesberger tegnet nogle diagrammer:
 
 <para>
 Hver partition har en boot sector. Partitionstabellen er en del
-af boot-sectoren, så en partition med boot sector kan illustreres
-således:
+af boot-sectoren, sÃ¥ en partition med boot sector kan illustreres
+sÃ¥ledes:
 </para>
 
 <programlisting>
@@ -355,31 +355,31 @@ således:
 </programlisting>
 
 <para>
-LILO boot-sectoren er designet, så den kan være
+LILO boot-sectoren er designet, sÃ¥ den kan vÃ¦re
 partitions-bootsector, eller med andre ord, der er plads til en
-partitions-tabel. Den kan derfor bruges som følger:
+partitions-tabel. Den kan derfor bruges som fÃ¸lger:
 </para>
 <itemizedlist mark="bullet" id="friheden-opstart-lilo-bootsector">
 <listitem>
 <para>
-Boot sector på en linux floppy (bruges til install og rescue boot) /dev/fd0
+Boot sector pÃ¥ en linux floppy (bruges til install og rescue boot) /dev/fd0
 </para>
 </listitem>
 <listitem>
 <para>
-Første boot sector på en harddisk, Master Boot Record (MBR)
+FÃ¸rste boot sector pÃ¥ en harddisk, Master Boot Record (MBR)
 /dev/hda, /dev/sda.
 </para>
 </listitem>
 <listitem>
 <para>
-Boot sector på en Linux primary partition, /dev/hda1
+Boot sector pÃ¥ en Linux primary partition, /dev/hda1
 </para>
 </listitem>
 <listitem>
 <para>
-Boot sector på en extended partition med Linux, /dev/hda5. Det er ikke
-normalt at boote fra en såkaldt extended partition, men det kan
+Boot sector pÃ¥ en extended partition med Linux, /dev/hda5. Det er ikke
+normalt at boote fra en sÃ¥kaldt extended partition, men det kan
 LILO.
 </para>
 </listitem>
@@ -387,22 +387,22 @@ LILO.
 
 <para>
 LILO bootsector er lille og kan ikke have alle de oplysninger,
-der skal bruges til at boote. Den får hjælp ved at henvise til
-præcise adresser (fysiske disk-blokke, positioner på disken) hvor
-resten af informationerne ligger. Først finder den nogle blokke
+der skal bruges til at boote. Den fÃ¥r hjÃ¦lp ved at henvise til
+prÃ¦cise adresser (fysiske disk-blokke, positioner pÃ¥ disken) hvor
+resten af informationerne ligger. FÃ¸rst finder den nogle blokke
 med "blok-listen".
 </para>
 
 <para>
 Bloklisten gemmer LILO i en fil, <filename> /boot/map
-</filename>, som genskrives, hver gang LILO kører uden fejl. I
-map filen ligger så alle de øvrige oplysninger, evt. prompt
+</filename>, som genskrives, hver gang LILO kÃ¸rer uden fejl. I
+map filen ligger sÃ¥ alle de Ã¸vrige oplysninger, evt. prompt
 dialog og oplysning om, hvor kernens diskblokke er.
 </para>
 
 <para>
 Map filen er specificeret ovenfor i <xref
-linkend="friheden-opstart-lilo-conf"/> på
+linkend="friheden-opstart-lilo-conf"/> pÃ¥
 lilo.conf: <filename>map=/boot/map</filename>.
 </para>
 
@@ -424,21 +424,21 @@ image=/boot/bzImage
 <para>
 install=&lt;filename&gt; er specifikation af, hvilken boot
 sector, som skal anvendes. Denne boot sector er typisk den, som
-følger med LILO systemet.
+fÃ¸lger med LILO systemet.
 </para>
 
 <para>
 prompt: betyder at LILO skal vise en boot prompt, hvor vi kan
 indtaste noget til LILO eller til kernen. Hvis kernen ikke
-forstår vores indtastning, gives det videre til init-programmet,
-som styrer maskinens opstart.  Efter 5 sekunders venten på
-tastaturtryk bootes den første mulighed i listen af kerner.
+forstÃ¥r vores indtastning, gives det videre til init-programmet,
+som styrer maskinens opstart.  Efter 5 sekunders venten pÃ¥
+tastaturtryk bootes den fÃ¸rste mulighed i listen af kerner.
 </para>
 
 <para>
-lba32 står for Logical Block Addressing 32-bit-tilstand og bør
-anvendes på alle nyere harddiske. På ældre PC'er kan det være
-nødvendigt i stedet at skrive "linear".
+lba32 stÃ¥r for Logical Block Addressing 32-bit-tilstand og bÃ¸r
+anvendes pÃ¥ alle nyere harddiske. PÃ¥ Ã¦ldre PC'er kan det vÃ¦re
+nÃ¸dvendigt i stedet at skrive "linear".
 </para>
 
 <indexterm><primary>LILO</primary><secondary>lba32</secondary></indexterm>
@@ -446,19 +446,19 @@ nødvendigt i stedet at skrive "linear".
 <para>
 Eksemplet har 
 to forskellige kerner (linjerne med image). Begge starter op med root-partition
-på <filename>/dev/hda3</filename>. Feltet "label" (mærkat)
-er det, du ser på skærmen som opstarts-valgmulighed. Den sidste
+pÃ¥ <filename>/dev/hda3</filename>. Feltet "label" (mÃ¦rkat)
+er det, du ser pÃ¥ skÃ¦rmen som opstarts-valgmulighed. Den sidste
 mulighed i eksemplet er, at noget andet startes (her kaldt MS-DOS
 - men det er ikke sikkert, at det <emphasis>er</emphasis> MS-DOS!)
 </para>
 
 <para>
 I eksemplet er der benyttet kommandoerne <command>restricted</command>
-og <command>password</command>. De linjer gør at man ikke kan starte
-op i enkeltbrugertilstand (eng. »single user mode«) uden at give
+og <command>password</command>. De linjer gÃ¸r at man ikke kan starte
+op i enkeltbrugertilstand (eng. Â»single user modeÂ«) uden at give
 password "HEMLIPASSWORD". Husk at <command>/etc/lilo.conf</command>
-ikke bør kunne læses af andre end root. Sæt dens
-access-attributer så kun root kan læse den:
+ikke bÃ¸r kunne lÃ¦ses af andre end root. SÃ¦t dens
+access-attributer sÃ¥ kun root kan lÃ¦se den:
 </para>
 
 <screen>
@@ -466,19 +466,19 @@ access-attributer så kun root kan læse den:
 </screen>
 
 <para>
-I eksemplet ses også kommandoen <command>append=</command> som får
+I eksemplet ses ogsÃ¥ kommandoen <command>append=</command> som fÃ¥r
 LILO til at give kernen nogle ekstra direktiver til opstart.
-Læs mere om direktiverne i <xref linkend="kernelparm"/>.
+LÃ¦s mere om direktiverne i <xref linkend="kernelparm"/>.
 </para>
 
 <para>
 LILO kan en hel del. Hvis du vil udnytte mere af LILO, kan du
-læse README filen, typisk /usr/share/doc/lilo-*/README, eller du
-kan læse den mini-HOWTO om LILO, som findes under "Linux
-Documentation Project" på <ulink
+lÃ¦se README filen, typisk /usr/share/doc/lilo-*/README, eller du
+kan lÃ¦se den mini-HOWTO om LILO, som findes under "Linux
+Documentation Project" pÃ¥ <ulink
 url="http://sunsite.dk/ldp">http://sunsite.dk/ldp</ulink>.
-Specielt kan det være at de to alternativer "restricted" eller "password" 
-(adgangskode) er værd at forstå.
+Specielt kan det vÃ¦re at de to alternativer "restricted" eller "password" 
+(adgangskode) er vÃ¦rd at forstÃ¥.
 </para>
 
 
@@ -487,27 +487,27 @@ Specielt kan det være at de to alternativer "restricted" eller "password"
 <para>
 <indexterm><primary>Slette LILO</primary></indexterm>
 <indexterm><primary>LILO</primary><secondary>Slette</secondary></indexterm>
-<emphasis>Tip:</emphasis> Hvis du kører DOS eller Windows 9x 
-kan LILO fjernes ved at køre 
+<emphasis>Tip:</emphasis> Hvis du kÃ¸rer DOS eller Windows 9x 
+kan LILO fjernes ved at kÃ¸re 
 <command>fdisk /mbr</command> i et DOS-vindue under DOS/Windows.
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> Hvis du kører Windows 2000/XP kan LILO 
+<emphasis>Tip:</emphasis> Hvis du kÃ¸rer Windows 2000/XP kan LILO 
 fjernes ved at boot op i en Genoprettelseskonsol. 
 Du kan starte en genoprettelseskonsol ved enten boot den op fra din Windows cd, 
-eller ved at installer den som et punkt i din boot loader, dette kan gøres 
-ved at kører følgende, hvor <userinput>cdrom</userinput> er dit cd-rom-drev med din indsatte windows cd, 
+eller ved at installer den som et punkt i din boot loader, dette kan gÃ¸res 
+ved at kÃ¸rer fÃ¸lgende, hvor <userinput>cdrom</userinput> er dit cd-rom-drev med din indsatte windows cd, 
 <userinput>cdrom</userinput><command>:\i386\win32.exe /cmdcons</command> i en cmd under windows. 
-Du kan start en cmd ved at trykke på punktet <emphasis>kør</emphasis> i startmenuen, 
+Du kan start en cmd ved at trykke pÃ¥ punktet <emphasis>kÃ¸r</emphasis> i startmenuen, 
 her skriver du <userinput>cmd</userinput> og trykker derefter <emphasis>ok</emphasis>.
-Når du er startet op i genoprettelseskonsolen skal du kører <command>fixmbr</command> 
-Herefter kørere du så <command>exit</command> for at afslutte genoprettelseskonsolen 
+NÃ¥r du er startet op i genoprettelseskonsolen skal du kÃ¸rer <command>fixmbr</command> 
+Herefter kÃ¸rere du sÃ¥ <command>exit</command> for at afslutte genoprettelseskonsolen 
 og genstarte til Windows.
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> LILO kan i Linux fjernes ved at køre
+<emphasis>Tip:</emphasis> LILO kan i Linux fjernes ved at kÃ¸re
 <command>/sbin/lilo -u /dev/hda</command>, hvis din boot-harddisk er
 <filename>/dev/hda</filename>.
 </para>
@@ -518,21 +518,21 @@ og genstarte til Windows.
 <indexterm><primary>LILO</primary><secondary>problemer</secondary></indexterm>
 <para>
 Hvis uheldet er ude og du har Linux installeret og der er problemer
-med LILO, så maskinen ikke booter, så kan du bruge din
+med LILO, sÃ¥ maskinen ikke booter, sÃ¥ kan du bruge din
 installations-cd-rom til at reparere systemet med.
 </para>
 
 <para>
-Du skal starte op på din Linux-cd-rom og vælge
-<command>rescue</command>-muligheden. Du får ikke kontakt med din
-harddisk derved, men får Linux startet op med programmer til at klare
+Du skal starte op pÃ¥ din Linux-cd-rom og vÃ¦lge
+<command>rescue</command>-muligheden. Du fÃ¥r ikke kontakt med din
+harddisk derved, men fÃ¥r Linux startet op med programmer til at klare
 problemerne. 
 </para>
 
 <para>
 Hvis vi antager at Linux er installeret med <filename>/</filename>
-(roden) på <filename>/dev/hda1</filename>, så kan du skrive følgende
-for at montere harddisk-roden på <filename>/mnt</filename>. 
+(roden) pÃ¥ <filename>/dev/hda1</filename>, sÃ¥ kan du skrive fÃ¸lgende
+for at montere harddisk-roden pÃ¥ <filename>/mnt</filename>. 
 </para>
 
 <screen>
@@ -545,32 +545,32 @@ for at montere harddisk-roden på <filename>/mnt</filename>.
 
 <para> 
 Nu kan du med <command>cd /mnt/etc</command> komme ned til
-<filename>/etc</filename> på harddisken. Husk at dit Linux-system er
-fra din cd-rom og din cd-rom er tilgængelig via
+<filename>/etc</filename> pÃ¥ harddisken. Husk at dit Linux-system er
+fra din cd-rom og din cd-rom er tilgÃ¦ngelig via
 <filename>/mnt</filename>. Du kan nu rette i
 <filename>lilo.conf</filename> eller rettere
 <filename>/mnt/etc/lilo.conf</filename>, f.eks. med
 <command>vi</command> eller <command>pico</command>. Derefter kan du
-køre <command>lilo -r /mnt</command>, der læser
+kÃ¸re <command>lilo -r /mnt</command>, der lÃ¦ser
 <filename>lilo.conf</filename>-filen fra
 <filename>/mnt/etc/lilo.conf</filename>, og installerer LILO, som om
 du havde <filename>/mnt</filename> som dit rod-filsystem.
 </para>
 
 <para>
-Husk at det kan være et problem at boote fra en harddisk, som har
+Husk at det kan vÃ¦re et problem at boote fra en harddisk, som har
 flere end 1024 cylindre - hvis de filer som LILO skal bruge for at
 boote ligger over cylinder 1024, 
 er det ikke altid LILO eller din BIOS kan finde
-ud af det, og derfor vil LILO i så fald komme med en advarsel. Det kan
-være årsagen til, at den ikke vil installeres automatisk. Heldigvis
-er dette kun et problem med ældre distributioner, 
+ud af det, og derfor vil LILO i sÃ¥ fald komme med en advarsel. Det kan
+vÃ¦re Ã¥rsagen til, at den ikke vil installeres automatisk. Heldigvis
+er dette kun et problem med Ã¦ldre distributioner, 
 idet LILO fra version 0.21.4.2
-og fremover kan understøtte op til 2 Tb diske, hvilket vel stadig
-dækker de fleste personers behov :-)
-Husk dog at den nye LILO kun vil virke med BIOS'er der understøtter
-de udvidede LBA-funktioner til store diske, så ældre BIOS'er og
-nyere BIOS'er der ikke helt følger standarden kan stadig give problemer.
+og fremover kan understÃ¸tte op til 2 Tb diske, hvilket vel stadig
+dÃ¦kker de fleste personers behov :-)
+Husk dog at den nye LILO kun vil virke med BIOS'er der understÃ¸tter
+de udvidede LBA-funktioner til store diske, sÃ¥ Ã¦ldre BIOS'er og
+nyere BIOS'er der ikke helt fÃ¸lger standarden kan stadig give problemer.
 </para>
 </sect2>
 </sect1>
@@ -579,9 +579,9 @@ nyere BIOS'er der ikke helt følger standarden kan stadig give problemer.
 <title>Loadlin</title>
 <indexterm><primary>Opstart af Linux</primary><secondary>Loadlin</secondary></indexterm>
 <para>
-En anden mulighed er at starte op i Windows 95 og dér lave en opstarter
+En anden mulighed er at starte op i Windows 95 og dÃ©r lave en opstarter
 via <filename>CONFIG.SYS</filename> og
-<filename>AUTOEXEC.BAT</filename>-filerne. Først hentes DOS-programmet
+<filename>AUTOEXEC.BAT</filename>-filerne. FÃ¸rst hentes DOS-programmet
 LOADLIN fra f.eks. <ulink url="http://freshmeat.net">http://freshmeat.net</ulink>.
 
 </para>
@@ -593,15 +593,15 @@ zip-format og pakkes ud som vanligt med
 <command>pkunzip</command> eller <command>WinZip</command>).  Vor
 Linux-kerne har vi kopieret til 
 <filename>c:\linux</filename> med navnet <filename>vmlinuz</filename>,
-og i nedenstående <filename>autoexec.bat</filename> har vi vores
-root-partition på <filename>/dev/hda3</filename> (tredje partition på
+og i nedenstÃ¥ende <filename>autoexec.bat</filename> har vi vores
+root-partition pÃ¥ <filename>/dev/hda3</filename> (tredje partition pÃ¥
 hoveddisken). Du skal rette i linjen
 <filename>c:\linux\loadlin\loadlin c:\linux\vmlinuz root=/dev/hda3
-ro</filename> svarende til din opsætning.
+ro</filename> svarende til din opsÃ¦tning.
 </para>
 
 <para>
-I det følgende skal du erstatte indholdet for Windows 95 (Win95) med
+I det fÃ¸lgende skal du erstatte indholdet for Windows 95 (Win95) med
 det, som du selv har. Linux har reelt kun noget i
 <filename>AUTOEXEC.BAT</filename>
 </para>
@@ -662,15 +662,15 @@ GOTO END
 <indexterm><primary>LILO</primary><secondary>append</secondary></indexterm>
 
 <para>
-Når din computer starter med LILO, holdes der typisk en pause. Pausen kan
-bruges til at vælge en anden kerne end standardkernen. Men den kan også bruges
+NÃ¥r din computer starter med LILO, holdes der typisk en pause. Pausen kan
+bruges til at vÃ¦lge en anden kerne end standardkernen. Men den kan ogsÃ¥ bruges
 til at indtaste ekstra tilvalg til kernen.
-Et ofte brugt tilvalg er »single«, der får Linux til at starte i
+Et ofte brugt tilvalg er Â»singleÂ«, der fÃ¥r Linux til at starte i
 enkeltbrugertilstand.  Det er praktisk til systemvedligeholdelse, hvor man
-ikke vil have programmer kørende i baggrunden.  Med nogle opsætninger er det
-også en praktisk måde at komme til at rette adgangskoden på
+ikke vil have programmer kÃ¸rende i baggrunden.  Med nogle opsÃ¦tninger er det
+ogsÃ¥ en praktisk mÃ¥de at komme til at rette adgangskoden pÃ¥
 systemadministratorkontoen (<literal>root</literal>), hvis man skulle have
-glemt den.  Det ser sådan ud:
+glemt den.  Det ser sÃ¥dan ud:
 </para>
 
 <screen>
@@ -686,10 +686,10 @@ Flere parametre angives med et mellemrum imellem:
 </screen>
 
 <para>
-Disse parametre kan også indsættes permanent i filen
+Disse parametre kan ogsÃ¥ indsÃ¦ttes permanent i filen
 <filename>/etc/lilo.conf</filename>
-så de altid er med og man ikke skal taste dem ind hver gang computeren starter.
-Fra eksemplet om LILO i <xref linkend="lilo"/> er der tilføjet to parametre
+sÃ¥ de altid er med og man ikke skal taste dem ind hver gang computeren starter.
+Fra eksemplet om LILO i <xref linkend="lilo"/> er der tilfÃ¸jet to parametre
 med linjen <command>append="max_loop=128 quiet"</command>:
 </para>
 
@@ -706,21 +706,21 @@ image=/boot/bzImage
 </programlisting>
 
 <para>
-Der er mange parametre og de fleste af dem har til formål at give
+Der er mange parametre og de fleste af dem har til formÃ¥l at give
 en bestemt type hardware, f.eks. en harddisk, nogle ekstra parametre
 om I/O eller interrupt. Her er en liste af nogle af de mere generelle
-parametre som kan skrives enten på boot-prompten eller i lilo.conf i
+parametre som kan skrives enten pÃ¥ boot-prompten eller i lilo.conf i
 <command>append</command>-linjen.
 </para>
 
 <itemizedlist>
  <listitem>
-  <para><command>console=ttyS0,9600n</command> - få output til skærmen ud på den
+  <para><command>console=ttyS0,9600n</command> - fÃ¥ output til skÃ¦rmen ud pÃ¥ den
   serielle port. Kommandoen kan bruges til at sende data til et modem eller en
-  seriel skærmterminal. Alternativt til en printer med kommandoen
+  seriel skÃ¦rmterminal. Alternativt til en printer med kommandoen
   <command>console=lp0</command>.
-  Læs mere i <filename>/usr/src/linux/Documentation/serial-console.txt</filename>.
-  Denne kommando vil typisk være noget man skriver i <filename>/etc/lilo.conf</filename>.
+  LÃ¦s mere i <filename>/usr/src/linux/Documentation/serial-console.txt</filename>.
+  Denne kommando vil typisk vÃ¦re noget man skriver i <filename>/etc/lilo.conf</filename>.
   </para>
  </listitem>
  <listitem>
@@ -732,59 +732,59 @@ parametre som kan skrives enten på boot-prompten eller i lilo.conf i
  <listitem>
   <para><command>init=&lt;nummer&gt;</command> - bestemmer i hvilken tilstand
   Linux starter.
-  <command>init=3</command> svarer (på de fleste systemer) til at Linux starter i teksttilstand,
+  <command>init=3</command> svarer (pÃ¥ de fleste systemer) til at Linux starter i teksttilstand,
   og <command>init=5</command> er start i grafiktilstand. Init-niveau bestemmes
-  normalt i <filename>/etc/inittab</filename>, men hvis man f.eks. skifter skærmkort
-  og dette ikke virker med den gamle grafik-opsætning bruges denne kommando.
+  normalt i <filename>/etc/inittab</filename>, men hvis man f.eks. skifter skÃ¦rmkort
+  og dette ikke virker med den gamle grafik-opsÃ¦tning bruges denne kommando.
   <command>init=1</command> starter Linux i enkeltbrugertilstand.
   Denne kommando vil typisk blive tastet ind under start.
   </para>
  </listitem>
  <listitem>
-  <para><command>max_loop=128</command> - øger antallet af loop-back
-  devices i Linux. Værdien kan være helt op til 255. Default-værdien er 8.
+  <para><command>max_loop=128</command> - Ã¸ger antallet af loop-back
+  devices i Linux. VÃ¦rdien kan vÃ¦re helt op til 255. Default-vÃ¦rdien er 8.
   Loop-back bruges f.eks. til at mounte iso-filer:
   <command>mount -o loop redhat.iso /mnt</command> .
-  Denne kommando vil typisk være noget man skriver i <filename>/etc/lilo.conf</filename>.
+  Denne kommando vil typisk vÃ¦re noget man skriver i <filename>/etc/lilo.conf</filename>.
   </para>
  </listitem>
  <listitem>
-  <para><command>panic=5</command> - antal sekunder der skal gå efter en kernel panic
-  før systemet rebooter.
-  Denne kommando vil typisk være noget man skriver i <filename>/etc/lilo.conf</filename>.
+  <para><command>panic=5</command> - antal sekunder der skal gÃ¥ efter en kernel panic
+  fÃ¸r systemet rebooter.
+  Denne kommando vil typisk vÃ¦re noget man skriver i <filename>/etc/lilo.conf</filename>.
   </para>
  </listitem>
  <listitem>
   <para><command>quiet</command> - undertrykker de fleste informationslinjer
   Linux skriver ud under boot. Fejl udskrives stadig, men ligegyldig
   information udskrives ikke. De beskeder der normalt ses, kan efter boot 
-  stadig læses med <command>dmesg</command>.
-  Denne kommando vil typisk være noget man med glæde skriver i <filename>/etc/lilo.conf</filename>.
+  stadig lÃ¦ses med <command>dmesg</command>.
+  Denne kommando vil typisk vÃ¦re noget man med glÃ¦de skriver i <filename>/etc/lilo.conf</filename>.
   </para>
  </listitem>
  <listitem>
   <para><command>ro</command> - filsystemer bliver mounted read-only
-  under boot. Herefter kan man foretage systemarbejde på et "sygt" system.
+  under boot. Herefter kan man foretage systemarbejde pÃ¥ et "sygt" system.
   Denne kommando vil typisk blive tastet ind under boot.
   </para>
  </listitem>
  <listitem>
   <para><command>single</command> - starter Linux i enkeltbrugertilstand
   hvilket er det samme som <command>init=1</command>.
-  Denne kommando vil nok mest blive tastet ind, men kan også skrives
+  Denne kommando vil nok mest blive tastet ind, men kan ogsÃ¥ skrives
   i <filename>/etc/lilo.conf</filename>.
   </para>
  </listitem>
 </itemizedlist>
 
 <para>
-Den fulde liste af kerneparametre kan findes på din harddisk:
+Den fulde liste af kerneparametre kan findes pÃ¥ din harddisk:
 <filename>/usr/src/linux/Documentation/kernel-parameters.txt</filename>
 </para>
 
 <para>
 Der er meget mere om Linux kernen i bogen "Linux - Friheden til systemadministration",
-der kan findes på <ulink url="http://&linuxbogurl;/">&linuxbogurl;</ulink>.
+der kan findes pÃ¥ <ulink url="http://&linuxbogurl;/">&linuxbogurl;</ulink>.
 </para>
 
 </sect1><!-- kernelparm -->

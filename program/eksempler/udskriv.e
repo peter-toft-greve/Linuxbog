@@ -5,7 +5,7 @@
 -- Progremmet er skrevet til SmallEiffel
 -- http://www.loria.fr/SmallEiffel
 --
--- Oversættelse:
+-- OversÃ¦ttelse:
 --  compile udskriv -o udskriv
 --
 -- Afvikling:
@@ -54,7 +54,7 @@ feature
         else
           io.put_string("Filen ");
           io.put_string(fnavn);
-          io.put_string(" kan ikke åbnes!%N");
+          io.put_string(" kan ikke Ã¥bnes!%N");
         end;
         fnr:=fnr+1;
       end;

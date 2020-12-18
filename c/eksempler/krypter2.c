@@ -2,22 +2,22 @@
  */
 /* denne version af krypterings funktionen behandler
  * linieskift bedre. 
- * Output burde kun være, som i version 1, characters med værdier
- * fra 33 til 126.  Det er 93 værdier, men vi vil gerne have
- * repræsenteret 95 værdier, nemlig newline (10) og space (32)
+ * Output burde kun vÃ¦re, som i version 1, characters med vÃ¦rdier
+ * fra 33 til 126.  Det er 93 vÃ¦rdier, men vi vil gerne have
+ * reprÃ¦senteret 95 vÃ¦rdier, nemlig newline (10) og space (32)
  * samt 33-126.  Desuden vil vi ikke have, at linieskift
- * forbliver som i originalteksten, og spaces må heller ikke
+ * forbliver som i originalteksten, og spaces mÃ¥ heller ikke
  * forblive spaces.
  *
- * Hvis ikke vi vil lave om på selve programflowet, hvor en
+ * Hvis ikke vi vil lave om pÃ¥ selve programflowet, hvor en
  * oprindelig character mappes til en krypteret character (det
- * vil sige, hvis vi vil fastholde vores funktions-opdeling) så
- * må vi altså skaffe 2 printable characters mere eller lade
- * nogle andre tegn udgå (fx. # og ` kunne være kandidater.)
+ * vil sige, hvis vi vil fastholde vores funktions-opdeling) sÃ¥
+ * mÃ¥ vi altsÃ¥ skaffe 2 printable characters mere eller lade
+ * nogle andre tegn udgÃ¥ (fx. # og ` kunne vÃ¦re kandidater.)
  * 
- * Men i denne version vælger vi alligevel at bruge space,
- * newline mapper vi til character 31, så må vi se, hvordan det
- * går ...
+ * Men i denne version vÃ¦lger vi alligevel at bruge space,
+ * newline mapper vi til character 31, sÃ¥ mÃ¥ vi se, hvordan det
+ * gÃ¥r ...
  */
 
 static char *keystring = "Under traeerne var der stille og roligt.";

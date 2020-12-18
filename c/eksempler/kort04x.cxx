@@ -1,5 +1,5 @@
 
-/* kort04x.cxx kortspil repræsentation, kortene blandes */
+/* kort04x.cxx kortspil reprÃ¦sentation, kortene blandes */
 /* ved at anbringe dem i en liste (linked liste)     */
 /* blande - rutinen laves som en service funktion    */
 /* display rutinen skilles ud fra main.              */
@@ -19,7 +19,7 @@ enum farve_t { kloer, ruder, hjerter, spar };
 char *farve(enum farve_t kk)
 {
     static char *names[] = {
-	"klør", "ruder", "hjerter", "spar", "forkert kuloer"
+	"klÃ¸r", "ruder", "hjerter", "spar", "forkert kuloer"
     };
 
     int xk = kk;
@@ -47,7 +47,7 @@ struct kort_t {
 using namespace std;
 list <kort_t> kortbunke;
 
-/* prototyper på vores to service funktioner */
+/* prototyper pÃ¥ vores to service funktioner */
 
 void show_all(struct kort_t *k);
 void bland(struct kort_t *k, int lim, list<kort_t> bunke);

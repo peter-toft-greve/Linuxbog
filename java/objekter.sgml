@@ -18,7 +18,7 @@ Objekter og klasser
   <listitem>
 
 <para>
-Oprettelse af objekter og konstruktører
+Oprettelse af objekter og konstruktÃ¸rer
 </para>
 
 </listitem>
@@ -41,11 +41,11 @@ Punkter, rektangler, strenge, vektorer
 </itemizedlist>
 
 <para>
-Kapitlet forudsættes i resten af bogen.
+Kapitlet forudsÃ¦ttes i resten af bogen.
 </para>
 
 <para>
-Forudsætter <xref linkend="java-basal-prg" />, Basal programmering.
+ForudsÃ¦tter <xref linkend="java-basal-prg" />, Basal programmering.
 </para>
 
 
@@ -54,62 +54,62 @@ Forudsætter <xref linkend="java-basal-prg" />, Basal programmering.
 
 <para>
 Hidtil har vi kun brugt de <emphasis>simple typer</emphasis> (som
-int, boolean og double). Et javaprogram vil ofte udføre
+int, boolean og double). Et javaprogram vil ofte udfÃ¸re
 mere komplekse opgaver og dermed have brug for <emphasis>objekter</emphasis>. Et
-objekt repræsenterer en eller anden (ofte fysisk) ting og
+objekt reprÃ¦senterer en eller anden (ofte fysisk) ting og
 indeholder sammensatte data om denne ting, f.eks. et hus-objekt (med
-adresse, telefonnummer, antallet af døre og vinduer ...), en
+adresse, telefonnummer, antallet af dÃ¸re og vinduer ...), en
 bil, en person, en bankkonto, en selvangivelse, en ordre, et dokument
 ...
 </para>
 
 <para>
 Objekter kan klassificeres i forskellige kategorier, kaldet
-<emphasis>klasser</emphasis>. F.eks. kunne man sige, at alle hus-objekter tilhører
+<emphasis>klasser</emphasis>. F.eks. kunne man sige, at alle hus-objekter tilhÃ¸rer
 Hus-klassen. Hus-klassen er en beskrivelse af alle slags huse.
 </para>
 
 <para>
-Næsten alt er repræsenteret som objekter i Java, og
+NÃ¦sten alt er reprÃ¦senteret som objekter i Java, og
 der findes tusindvis af foruddefinerede klasser til ting, som
-man ofte har brug for som programmør såsom:
+man ofte har brug for som programmÃ¸r sÃ¥som:
 tekststrenge, datoer, lister, filer og kataloger, vinduer,
-knapper, menuer, netværksforbindelser, hjemmeside-adresser,
+knapper, menuer, netvÃ¦rksforbindelser, hjemmeside-adresser,
 billeder, lyde ...
 </para>
 
 <para>
 Et objekt indeholder data, der beskriver det, som objektet
-repræsenterer. Et Fil-objekt har oplysninger om den fil, det
-repræsenterer: Navn, placering, type, dato for oprettelse og
-indhold. Et Person-objekt har måske variabler for fornavn,
+reprÃ¦senterer. Et Fil-objekt har oplysninger om den fil, det
+reprÃ¦senterer: Navn, placering, type, dato for oprettelse og
+indhold. Et Person-objekt har mÃ¥ske variabler for fornavn,
 efternavn, CPR-nummer.
 </para>
 
 <para>
-Et objekt kan også indeholde navngivne programstumper, som
-kan udføres ved at give objektet besked om det. Disse
-programstumper kaldes metoder og kan opfattes som spørgsmål
-eller kommandoer, som man bruger til at undersøge og
+Et objekt kan ogsÃ¥ indeholde navngivne programstumper, som
+kan udfÃ¸res ved at give objektet besked om det. Disse
+programstumper kaldes metoder og kan opfattes som spÃ¸rgsmÃ¥l
+eller kommandoer, som man bruger til at undersÃ¸ge og
 manipulere indholdet af objektet med.
 </para>
 
 <para>
-Et Fil-objekt har måske metoden &quot;omdøb()&quot;,
-der ændrer filens navn, et Person-objekt kan måske give
+Et Fil-objekt har mÃ¥ske metoden &quot;omdÃ¸b()&quot;,
+der Ã¦ndrer filens navn, et Person-objekt kan mÃ¥ske give
 personens alder med metoden &quot;hvadErDinAlder()&quot;.
 </para>
 
 <blockquote><para>Et objekt kan indeholde metoder og
 data (variabler)</para></blockquote>
-<blockquote><para>En metode kan ændre på
-objektets data, når den udføres</para></blockquote>
+<blockquote><para>En metode kan Ã¦ndre pÃ¥
+objektets data, nÃ¥r den udfÃ¸res</para></blockquote>
 
 <para>
-Ligesom med de simple typer afhænger det af objektets type,
-dets klasse, hvad man kan gøre med det. Ordet &quot;klasse&quot;
-skal forstås i betydningen &quot;kategori, gruppe&quot;. Alle
-objekter kan klassificeres som værende af en bestemt type
+Ligesom med de simple typer afhÃ¦nger det af objektets type,
+dets klasse, hvad man kan gÃ¸re med det. Ordet &quot;klasse&quot;
+skal forstÃ¥s i betydningen &quot;kategori, gruppe&quot;. Alle
+objekter kan klassificeres som vÃ¦rende af en bestemt type
 (klasse), f.eks. Streng, Dato, Fil, Knap.
 </para>
 
@@ -118,10 +118,10 @@ objekter kan klassificeres som værende af en bestemt type
 data et objekt indeholder</para></blockquote>
 
 <para>
-Objekter af samme klasse forstår de samme beskeder
-(kommandoer og spørgsmål) og indeholder samme slags
+Objekter af samme klasse forstÃ¥r de samme beskeder
+(kommandoer og spÃ¸rgsmÃ¥l) og indeholder samme slags
 data. Objekter af klassen Person indeholder f.eks. begge et navn, men
-navnene (data) i de to person-objekter kan være forskellige.
+navnene (data) i de to person-objekter kan vÃ¦re forskellige.
 </para>
 
 <figure id="java-obj-klasse2-fig">
@@ -142,7 +142,7 @@ Vi tegner klasser som vist her:
 
 
 <para>
-&Oslash;verst er klassens navn, dernæst data og nederst
+&Oslash;verst er klassens navn, dernÃ¦st data og nederst
 metoderne.
 </para>
 
@@ -154,14 +154,14 @@ programmering.
 
 <para>
 I dette kapitel vil vi bruge objekter fra foruddefinerede klasser.
-Vi har valgt at kigge nærmere på nogle klasser, der
+Vi har valgt at kigge nÃ¦rmere pÃ¥ nogle klasser, der
 er velegnede til at illustrere ideerne, nemlig Point, Rectangle,
 String, Date, StringBuffer og Vector.
 </para>
 
 <para>
 String og Vector er nok de mest brugte klasser overhovedet og
-er næsten uundværlige i praktisk programmering.
+er nÃ¦sten uundvÃ¦rlige i praktisk programmering.
 </para>
 
 </sect1>
@@ -170,20 +170,20 @@ er næsten uundværlige i praktisk programmering.
 <title>Punkter (klassen Point)</title>
 
 <para>
-Det første objekt, vi vil arbejde med, er Javas
-Point-objekt, der repræsenterer et <emphasis>punkt</emphasis>. I Java
+Det fÃ¸rste objekt, vi vil arbejde med, er Javas
+Point-objekt, der reprÃ¦senterer et <emphasis>punkt</emphasis>. I Java
 indeholder et punkt to heltalsvariable, nemlig en x- og en
-y-koordinat. Vi vil senere bruge Point-klassen, når vi kommer
+y-koordinat. Vi vil senere bruge Point-klassen, nÃ¥r vi kommer
 til programmering af grafik.
 </para>
 
 <sect2 id="java-obj-klasser-def-opr">
-  <title>Erklæring og oprettelse</title>
+  <title>ErklÃ¦ring og oprettelse</title>
 
 <para>
 For at kunne arbejde med et objekt har man brug for en variabel,
 der refererer til objektet. En variabel af typen Point (der refererer
-til et punkt) erklæres ved at skrive
+til et punkt) erklÃ¦res ved at skrive
 </para>
 
 <screen>
@@ -200,7 +200,7 @@ til et punkt) erklæres ved at skrive
 Ligesom med de simple typer skriver man typen (Point)
 efterfulgt af variabelnavnet. Nu har vi defineret, at p er en
 variabel til objekter af typen Point, og vi kan lave et nyt
-Point-objekt, som vi sætter p til at pege på:
+Point-objekt, som vi sÃ¦tter p til at pege pÃ¥:
 </para>
 
 <screen>
@@ -209,33 +209,33 @@ Point-objekt, som vi sætter p til at pege på:
 
 
 <para>
-Vi skriver altså new og klassens navn (Point) efterfulgt af
-parenteser med startværdier for objektet. Her giver vi ingen
-startværdier, og parentesen er derfor tom.
+Vi skriver altsÃ¥ new og klassens navn (Point) efterfulgt af
+parenteser med startvÃ¦rdier for objektet. Her giver vi ingen
+startvÃ¦rdier, og parentesen er derfor tom.
 </para>
 
 <blockquote><para>Et objekt oprettes med new</para></blockquote>
-<blockquote><para>Når et objekt oprettes, sørger
-det for dets datas startværdi</para></blockquote>
+<blockquote><para>NÃ¥r et objekt oprettes, sÃ¸rger
+det for dets datas startvÃ¦rdi</para></blockquote>
 
 <para>
-I dette tilfælde vil punktet starte med at have
-koordinaterne (0,0), og situationen er som vist på figuren til
-højre: p peger hen på et objekt, der har en x- og
+I dette tilfÃ¦lde vil punktet starte med at have
+koordinaterne (0,0), og situationen er som vist pÃ¥ figuren til
+hÃ¸jre: p peger hen pÃ¥ et objekt, der har en x- og
 y-variabel, som begge er sat til 0.
 </para>
 
 <para>
 Man kan sige, at hver gang vi anvender new-operatoren, bruger vi
-klassen som en slags støbeform til at skabe et nyt objekt med.
+klassen som en slags stÃ¸beform til at skabe et nyt objekt med.
 </para>
-</sect2>    <!--   Erklæring og oprettelse -->
+</sect2>    <!--   ErklÃ¦ring og oprettelse -->
 
 <sect2 id="java-obj-klasser-var">
   <title>Objektvariable</title>
 
 <para>
-Vi kan undersøge objektet p's variabler. Her erklærer
+Vi kan undersÃ¸ge objektet p's variabler. Her erklÃ¦rer
 vi en anden variabel, a,
 </para>
 
@@ -254,7 +254,7 @@ vi en anden variabel, a,
 
 
 <para>
-p's x-koordinat får man fat i ved at skrive p punktum x. Vi
+p's x-koordinat fÃ¥r man fat i ved at skrive p punktum x. Vi
 kan derefter udskrive a:
 </para>
 
@@ -264,7 +264,7 @@ kan derefter udskrive a:
 
 
 <para>
-Man kan også udskrive koordinaterne direkte uden at bruge a
+Man kan ogsÃ¥ udskrive koordinaterne direkte uden at bruge a
 som mellemvariabel:
 </para>
 
@@ -280,7 +280,7 @@ som mellemvariabel:
 </figure>
 
 <para>
-Vi kan også ændre p's koordinater:
+Vi kan ogsÃ¥ Ã¦ndre p's koordinater:
 </para>
 
 <screen>
@@ -290,9 +290,9 @@ Vi kan også ændre p's koordinater:
 
 
 <para>
-Variablerne x og y i Point-objektet kan behandles fuldstændig
-som andre variabler af typen int, når vi bare husker at skrive
-&quot;p.&quot; foran. F.eks. kan man tælle x-koordinaten op med
+Variablerne x og y i Point-objektet kan behandles fuldstÃ¦ndig
+som andre variabler af typen int, nÃ¥r vi bare husker at skrive
+&quot;p.&quot; foran. F.eks. kan man tÃ¦lle x-koordinaten op med
 5:
 </para>
 
@@ -302,7 +302,7 @@ som andre variabler af typen int, når vi bare husker at skrive
 
 
 <para>
-x og y kaldes objektvariabler, fordi de tilhører objektet
+x og y kaldes objektvariabler, fordi de tilhÃ¸rer objektet
 p.
 </para>
 </sect2>    <!--   Objektvariable -->
@@ -311,9 +311,9 @@ p.
   <title>Metodekald</title>
 
 <para>
-I stedet for at ændre objektet udefra, kan vi bede objektet selv
-udføre ændringen. Metoden move() flytter punktet til et bestemt
-koordinatsæt, dvs. den ændrer x- og y-koordinaten.  </para>
+I stedet for at Ã¦ndre objektet udefra, kan vi bede objektet selv
+udfÃ¸re Ã¦ndringen. Metoden move() flytter punktet til et bestemt
+koordinatsÃ¦t, dvs. den Ã¦ndrer x- og y-koordinaten.  </para>
 
 <figure id="java-obj-point3-fig">
 <title>Efter kald af move(200,300)</title>
@@ -328,18 +328,18 @@ koordinatsæt, dvs. den ændrer x- og y-koordinaten.  </para>
 
 
 <para>
-Man siger, at man foretager et metodekald på objektet som p
+Man siger, at man foretager et metodekald pÃ¥ objektet som p
 refererer til, og man skriver: p punktum metodenavn parenteser.
 </para>
 
 <para>
-Efter metodekaldet til move() har x- og y-koordinaterne ændret
-sig i det objekt, som p peger på.
+Efter metodekaldet til move() har x- og y-koordinaterne Ã¦ndret
+sig i det objekt, som p peger pÃ¥.
 </para>
 
 <blockquote><para>Et objekt kan indeholde metoder</para></blockquote>
-<blockquote><para>Et metodekald på et objekt kan
-ændre objektets variabler</para></blockquote>
+<blockquote><para>Et metodekald pÃ¥ et objekt kan
+Ã¦ndre objektets variabler</para></blockquote>
 
 <para>
 Her er Point-klassen illustreret i UML-notationen:
@@ -353,7 +353,7 @@ Her er Point-klassen illustreret i UML-notationen:
 
 
 <para>
-Herunder er nogle af de metoder, som punktobjekter forstår
+Herunder er nogle af de metoder, som punktobjekter forstÃ¥r
 (en oversigt over klassen kan findes i appendiks, 
 <xref linkend="java-obj-appendix-point" />).
 </para>
@@ -364,7 +364,7 @@ metoder</emphasis>
 </para>
 
 <para>
-<emphasis>move</emphasis>(int x, int y)Sætter
+<emphasis>move</emphasis>(int x, int y)SÃ¦tter
 punktets koordinater
 </para>
 
@@ -374,12 +374,12 @@ punktets koordinater relativt i forhold til, hvor det er
 </para>
 
 <para>
-Først står navnet på metoden med fed, f.eks.:
+FÃ¸rst stÃ¥r navnet pÃ¥ metoden med fed, f.eks.:
 <emphasis>move</emphasis>.
 </para>
 
 <para>
-Derefter står parametrene adskilt af komma, f.eks.: (int x,
+Derefter stÃ¥r parametrene adskilt af komma, f.eks.: (int x,
 int y).
 </para>
 
@@ -388,8 +388,8 @@ For hver parameter er angivet en type og et navn.
 </para>
 
 <para>
-Typen angiver, hvilke værdier man kan kalde metoden med, og
-bruges til at kontrollere, at man har kaldt den med en værdi af
+Typen angiver, hvilke vÃ¦rdier man kan kalde metoden med, og
+bruges til at kontrollere, at man har kaldt den med en vÃ¦rdi af
 den rigtige type.
 </para>
 
@@ -399,7 +399,7 @@ bruger parameteren.
 </para>
 
 <para>
-Bemærk at kaldet derfor ser anderledes ud end beskrivelsen:
+BemÃ¦rk at kaldet derfor ser anderledes ud end beskrivelsen:
 </para>
 
 <screen>
@@ -409,7 +409,7 @@ p.move(x=200, y=300);     <emphasis>// sprogfejl: parameternavne angivet ved kal
 </screen>
 
 <blockquote><para>I parenteserne i metodekaldet giver
-man oplysninger til objektet om, hvordan man vil have metoden udført</para></blockquote>
+man oplysninger til objektet om, hvordan man vil have metoden udfÃ¸rt</para></blockquote>
 <blockquote><para>Oplysningerne kaldes parametre (eller
 argumenter)</para></blockquote>
 
@@ -423,7 +423,7 @@ parametre.
   <title>Eksempel</title>
 
 <para>
-Her er et eksempel på tingene, vi har vist ovenfor:
+Her er et eksempel pÃ¥ tingene, vi har vist ovenfor:
 </para>
 
 <screen>
@@ -499,24 +499,24 @@ import java.awt.*;
 
 
 <para>
-Dette fortæller oversætteren, hvor den skal lede efter
-definitionen af klasserne, vi bruger i programmet. I dette tilfælde
-er det for, at oversætteren skal kende til Point-klassen (der
+Dette fortÃ¦ller oversÃ¦tteren, hvor den skal lede efter
+definitionen af klasserne, vi bruger i programmet. I dette tilfÃ¦lde
+er det for, at oversÃ¦tteren skal kende til Point-klassen (der
 findes i pakken java.awt).
 </para>
 
 <para>
-En pakke er en samling klasser med beslægtede funktioner.
-AWT står for &quot;Abstract Window Toolkit&quot;, og
+En pakke er en samling klasser med beslÃ¦gtede funktioner.
+AWT stÃ¥r for &quot;Abstract Window Toolkit&quot;, og
 java.awt indeholder forskellige nyttige klasser til at tegne grafik
-på skærmen, herunder klasser til at repræsentere
+pÃ¥ skÃ¦rmen, herunder klasser til at reprÃ¦sentere
 punkter og rektangler.
 </para>
 
 <para>
 Lige nu er det nok at vide, at de fleste klasser skal importeres,
-før de kan bruges (hvis du er meget nysgerrig, kan du læse
-den første del af kapitlet om pakker allerede nu).
+fÃ¸r de kan bruges (hvis du er meget nysgerrig, kan du lÃ¦se
+den fÃ¸rste del af kapitlet om pakker allerede nu).
 </para>
 </sect2>    <!--   Import af standardklasser -->
 </sect1>    <!--   Objekter og klasser -->
@@ -525,21 +525,21 @@ den første del af kapitlet om pakker allerede nu).
   <title>Rektangler (klassen Rectangle)</title>
 
 <para>
-Vi vil nu gå videre til nogle lidt mere indviklede objekter,
-af klassen Rectangle. Den bruges sjældent i praksis (så
-du behøver ikke lære dens metoder udenad), men den er
+Vi vil nu gÃ¥ videre til nogle lidt mere indviklede objekter,
+af klassen Rectangle. Den bruges sjÃ¦ldent i praksis (sÃ¥
+du behÃ¸ver ikke lÃ¦re dens metoder udenad), men den er
 velegnet til at illustrere ideer omkring oprettelse af objekter
-(konstruktører) og metodekald med returværdi.
+(konstruktÃ¸rer) og metodekald med returvÃ¦rdi.
 </para>
 
 <para>
-Et rektangel-objekt består af en x- og y-koordinat og en
-højde og bredde. Disse objektvariabler (data) hedder
+Et rektangel-objekt bestÃ¥r af en x- og y-koordinat og en
+hÃ¸jde og bredde. Disse objektvariabler (data) hedder
 x,y,width og height.
 </para>
 
 <para>
-En variabel med navnet r af typen Rectangle erklæres med:
+En variabel med navnet r af typen Rectangle erklÃ¦res med:
 </para>
 
 <screen>
@@ -569,7 +569,7 @@ Dette skaber et Rectangle-objekt med x,y,width og height sat til
 </para>
 
 <para>
-Vi kan ændre dette til (1,1,10,10) med:
+Vi kan Ã¦ndre dette til (1,1,10,10) med:
 </para>
 
 <screen>
@@ -581,18 +581,18 @@ Vi kan ændre dette til (1,1,10,10) med:
 
 
 <para>
-Det er besværligt hvis vi skal bruge fire linjers
-programkode på at sætte et objekts værdier hver
+Det er besvÃ¦rligt hvis vi skal bruge fire linjers
+programkode pÃ¥ at sÃ¦tte et objekts vÃ¦rdier hver
 gang vi opretter det.
 </para>
 
 <sect2 id="java-obj-rekt-konst">
-  <title>Konstruktører</title>
+  <title>KonstruktÃ¸rer</title>
 
 <para>
-Når man vil oprette et objekt med bestemte startværdier,
-kan det gøres ved at benytte en <emphasis>konstruktør</emphasis>,
-hvor startværdierne kan angives.
+NÃ¥r man vil oprette et objekt med bestemte startvÃ¦rdier,
+kan det gÃ¸res ved at benytte en <emphasis>konstruktÃ¸r</emphasis>,
+hvor startvÃ¦rdierne kan angives.
 </para>
 
 <para>
@@ -605,49 +605,49 @@ For eksempel kan et rektangel oprettes med:
 
 
 <para>
-De fire parametre i parenteser fortæller, at det rektangel,
-som skal skabes, som start skal have det øverste venstre
-hjørne i (1,1) og en bredde og en højde på 10.
-Det er i virkeligheden en slags metodekald, vi her foretager, så
-det er ikke nogen tilfældighed, hvis det ligner.
+De fire parametre i parenteser fortÃ¦ller, at det rektangel,
+som skal skabes, som start skal have det Ã¸verste venstre
+hjÃ¸rne i (1,1) og en bredde og en hÃ¸jde pÃ¥ 10.
+Det er i virkeligheden en slags metodekald, vi her foretager, sÃ¥
+det er ikke nogen tilfÃ¦ldighed, hvis det ligner.
 </para>
 
-<blockquote><para>Når man skaber et nyt objekt med
-new, kaldes en konstruktør</para></blockquote>
-<blockquote><para>Konstruktøren skaber et nyt
+<blockquote><para>NÃ¥r man skaber et nyt objekt med
+new, kaldes en konstruktÃ¸r</para></blockquote>
+<blockquote><para>KonstruktÃ¸ren skaber et nyt
 objekt og initialiserer objektets data</para></blockquote>
-<blockquote><para>Nogle konstruktører tager
+<blockquote><para>Nogle konstruktÃ¸rer tager
 parametre, der beskriver, hvordan objektet skal oprettes</para></blockquote>
 
 <para>
-Herunder er beskrevet tre konstruktører for Rectangle -
-dvs. tre måder rektangler kan oprettes på.
+Herunder er beskrevet tre konstruktÃ¸rer for Rectangle -
+dvs. tre mÃ¥der rektangler kan oprettes pÃ¥.
 </para>
 
 <para>
 <emphasis>Nogle af
-Rectangle-klassens konstruktører</emphasis>
+Rectangle-klassens konstruktÃ¸rer</emphasis>
 </para>
 
 <para>
 Rectangle()opretter
-et rektangel i (0,0), hvis bredde og højde er 0
+et rektangel i (0,0), hvis bredde og hÃ¸jde er 0
 </para>
 
 <para>
 Rectangle(int
-bredde, int højde)opretter et rektangel i (0,0) med den
-angivne bredde og højde
+bredde, int hÃ¸jde)opretter et rektangel i (0,0) med den
+angivne bredde og hÃ¸jde
 </para>
 
 <para>
 Rectangle(int
-x, int y, int bredde, int højde)opretter et rektangel i
-(x,y) med den angivne bredde og højde
+x, int y, int bredde, int hÃ¸jde)opretter et rektangel i
+(x,y) med den angivne bredde og hÃ¸jde
 </para>
 
 <para>
-Point-klassens konstruktører er beskrevet i appendikset
+Point-klassens konstruktÃ¸rer er beskrevet i appendikset
 <xref linkend="java-obj-appendix-point" />. 
 Vi kan f.eks. bruge den, der tager to parametre:
 </para>
@@ -656,16 +656,16 @@ Vi kan f.eks. bruge den, der tager to parametre:
     Point p;
     p= new Point(8,6);  <emphasis>// skaber et Point med koordinaterne (8,6)</emphasis>
 </screen>
-</sect2>    <!--   Konstruktører -->
+</sect2>    <!--   KonstruktÃ¸rer -->
 
 <sect2 id="java-obj-rekt-met">
   <title>Metoder</title>
 
 <para>
 Vi vil nu lave et lille program, der tjekker, om punktet p ligger
-inde i rektanglet r. Vi erklærer en variabel, inde, af
+inde i rektanglet r. Vi erklÃ¦rer en variabel, inde, af
 type boolean, som vi kan bruge til at gemme resultatet af vores
-undersøgelse i.
+undersÃ¸gelse i.
 </para>
 
 <screen>
@@ -675,7 +675,7 @@ undersøgelse i.
 
 <para>
 Objekter af klassen Rectangle har en metode, contains(), som kan
-fortælle, om et punkt ligger inde i rektanglet:
+fortÃ¦lle, om et punkt ligger inde i rektanglet:
 </para>
 
 <screen>
@@ -685,25 +685,25 @@ fortælle, om et punkt ligger inde i rektanglet:
 
 <para>
 Det, der sker, er, at vi kalder metoden contains() - svarende til
-spørgsmålet <emphasis>&quot;indeholder du p?&quot;</emphasis> - på
-rektanglet r. Vi giver p med som parameter, således at
-rektanglets metode ved, at det lige præcis er punktet p, som
-skal undersøges. Metoden bliver udført og foretager
+spÃ¸rgsmÃ¥let <emphasis>&quot;indeholder du p?&quot;</emphasis> - pÃ¥
+rektanglet r. Vi giver p med som parameter, sÃ¥ledes at
+rektanglets metode ved, at det lige prÃ¦cis er punktet p, som
+skal undersÃ¸ges. Metoden bliver udfÃ¸rt og foretager
 nogle beregninger, som vi ikke kan se, og til sidst kommer den ud med
 et svar. Dette svar returneres til os og bliver gemt i variablen
-'inde'. Modsat tilfældet med Point-objekters move()- og
-translate()-metoder er rektanglers indhold uændret af kald af
+'inde'. Modsat tilfÃ¦ldet med Point-objekters move()- og
+translate()-metoder er rektanglers indhold uÃ¦ndret af kald af
 contains().
 </para>
 
-<blockquote><para>Ikke alle metoder på et objekt
-ændrer på det</para></blockquote>
+<blockquote><para>Ikke alle metoder pÃ¥ et objekt
+Ã¦ndrer pÃ¥ det</para></blockquote>
 <blockquote><para>Nogle metoder giver et svar tilbage
 (returnerer et resultat)</para></blockquote>
 
 <para>
-Prøv at sammenligne det med kaldet til Math.sqrt(), som vi
-så i forrige kapitel:
+PrÃ¸v at sammenligne det med kaldet til Math.sqrt(), som vi
+sÃ¥ i forrige kapitel:
 </para>
 
 <screen>
@@ -712,7 +712,7 @@ så i forrige kapitel:
 
 
 <para>
-Det er samme mekanisme: Vi spørger Math.sqrt() om, hvad
+Det er samme mekanisme: Vi spÃ¸rger Math.sqrt() om, hvad
 kvadratroden af x*x+y*y er, og svaret, som metoden giver tilbage,
 gemmer vi i variablen hypotenuse.
 </para>
@@ -722,23 +722,23 @@ gemmer vi i variablen hypotenuse.
   <title>Metoders returtype</title>
 
 <para>
-Ligesom parametre skal være af den rette type, gælder
+Ligesom parametre skal vÃ¦re af den rette type, gÃ¦lder
 det for resultatet af et metode-kald at:
 </para>
 
 <blockquote><para>En metode giver et resultat af en
-bestemt type, når den bliver udført</para></blockquote>
+bestemt type, nÃ¥r den bliver udfÃ¸rt</para></blockquote>
 <blockquote><para>Dette kaldes metodens returtype</para></blockquote>
 
 <para>
-Math.sin() har returtypen double, mens contains() på et
+Math.sin() har returtypen double, mens contains() pÃ¥ et
 rektangel-objekt har returtypen boolean. Det er derfor, vores
-variabel 'inde' også skulle have typen boolean.
+variabel 'inde' ogsÃ¥ skulle have typen boolean.
 </para>
 
 <para>
-Hvis punktet var inde i rektanglet, så vil vi skrive det på
-skærmen:
+Hvis punktet var inde i rektanglet, sÃ¥ vil vi skrive det pÃ¥
+skÃ¦rmen:
 </para>
 
 <screen>
@@ -751,8 +751,8 @@ skærmen:
 
 <para>
 Herunder ses nogle af Rectangle-klassens metoder. Foran
-metode-navnene står returtyperne. I kursiv står
-spørgsmålene, som de svarer til. En mere komplet
+metode-navnene stÃ¥r returtyperne. I kursiv stÃ¥r
+spÃ¸rgsmÃ¥lene, som de svarer til. En mere komplet
 oversigt over klassen kan findes  i appendiks i 
 <xref linkend="java-obj-appendix-rectangle" />. 
 </para>
@@ -776,15 +776,15 @@ Point <emphasis>getLocation</emphasis>()  <emphasis>&quot;hvad er din placering?
 
 <para>
   returnerer
-et Point-objekt, der har samme koordinater som rektanglets øverste
-venstre hjørne.
+et Point-objekt, der har samme koordinater som rektanglets Ã¸verste
+venstre hjÃ¸rne.
 </para>
 
 <para>
 String
 <emphasis>toString</emphasis>()  <emphasis>&quot;hvordan
 vil du beskrive dig selv?&quot;</emphasis>giver en beskrivelse af
-rektanglet med (x,y)-koordinater og mål som en
+rektanglet med (x,y)-koordinater og mÃ¥l som en
 streng.
 </para>
 
@@ -806,7 +806,7 @@ undlader parametertyperne).
 
 <para>
 Herunder ses et samlet eksempel med to punkter. Det andet punkt,
-p2, undersøger vi direkte i en if-sætning uden at
+p2, undersÃ¸ger vi direkte i en if-sÃ¦tning uden at
 bruge en mellemvariabel.
 </para>
 
@@ -852,10 +852,10 @@ p2 er inde i r
 
 <para>
 Her er et eksempel, der beregner afstanden (distancen) mellem
-punktet p og rektanglet r's øverste venstre hjørne. Det
-foregår ved, at vi spørger r: getLocation() - &quot;<emphasis>hvad
+punktet p og rektanglet r's Ã¸verste venstre hjÃ¸rne. Det
+foregÃ¥r ved, at vi spÃ¸rger r: getLocation() - &quot;<emphasis>hvad
 er din position?</emphasis>&quot;. Svaret bruger vi som parameter til
-et spørgsmål til p: distance(svaret fra r) - &quot;<emphasis>Hvad
+et spÃ¸rgsmÃ¥l til p: distance(svaret fra r) - &quot;<emphasis>Hvad
 er din afstand til (svaret fra r)?</emphasis>&quot;
 </para>
 
@@ -864,30 +864,30 @@ er din afstand til (svaret fra r)?</emphasis>&quot;
     afstand = p.distance(r.getLocation());
 </screen>
 
-<blockquote><para>Ved et metodekald beregnes først
-alle parametrene, og derefter udføres metoden</para></blockquote>
+<blockquote><para>Ved et metodekald beregnes fÃ¸rst
+alle parametrene, og derefter udfÃ¸res metoden</para></blockquote>
 
 <para>
-Dvs. først beregnes parameteren, getLocation() kaldes altså
-på r. Den returnerer et punkt som er r's (x,y), og derefter
-kaldes distance() på p med dette Point-objekt som parameter.
+Dvs. fÃ¸rst beregnes parameteren, getLocation() kaldes altsÃ¥
+pÃ¥ r. Den returnerer et punkt som er r's (x,y), og derefter
+kaldes distance() pÃ¥ p med dette Point-objekt som parameter.
 </para>
 
 <para>
-Man kunne også bruge en mellemvariabel, og skrive:
+Man kunne ogsÃ¥ bruge en mellemvariabel, og skrive:
 </para>
 
 <screen>
     Point rpunkt;
-    rpunkt = r.getLocation();      <emphasis>// rpunkt er r's øverste venstre hjørne</emphasis>
+    rpunkt = r.getLocation();      <emphasis>// rpunkt er r's Ã¸verste venstre hjÃ¸rne</emphasis>
     afstand = p.distance(rpunkt);
 </screen>
 
 
 <para>
-Det er i starten lettere at læse kode med mellemvariable,
-men når eksemplerne bliver mere indviklede bliver antallet af
-mellemvariabler for stort. Man skal øve sig i selv at
+Det er i starten lettere at lÃ¦se kode med mellemvariable,
+men nÃ¥r eksemplerne bliver mere indviklede bliver antallet af
+mellemvariabler for stort. Man skal Ã¸ve sig i selv at
 forestille sig, at der er nogle mellemregninger med mellemvariabler.
 </para>
 
@@ -905,7 +905,7 @@ forestille sig, at der er nogle mellemregninger med mellemvariabler.
 
 <para>
 Vi kommer nu til de mest brugte objekter, nemlig tekststrenge
-(af typen String). En variabel, der refererer til strenge erklæres
+(af typen String). En variabel, der refererer til strenge erklÃ¦res
 ved at skrive
 </para>
 
@@ -917,7 +917,7 @@ String s;
 <para>
 Nu har vi defineret, at s er en variabel, der kan referere til
 objekter af typen String, men den refererer endnu ikke til nogen
-konkret streng. Lad os tildele s en værdi:
+konkret streng. Lad os tildele s en vÃ¦rdi:
 </para>
 
 <figure id="java-obj-strenge2-fig">
@@ -932,9 +932,9 @@ s = &quot;Ude godt&quot;;
 
 
 <para>
-Nu er situationen som vist på figuren til højre. Vi
-kan bruge s i vores program, f.eks. til at skrive ud på
-skærmen:
+Nu er situationen som vist pÃ¥ figuren til hÃ¸jre. Vi
+kan bruge s i vores program, f.eks. til at skrive ud pÃ¥
+skÃ¦rmen:
 </para>
 
 <screen>
@@ -943,16 +943,16 @@ System.out.println(&quot;Strengen s indeholder: &quot;+s);
 
 
 <para>
-Nu kan vi spørge streng-objektet om forskellige ting. For
-eksempel kan vi kalde metoden length(), der svarer til spørgsmålet
+Nu kan vi spÃ¸rge streng-objektet om forskellige ting. For
+eksempel kan vi kalde metoden length(), der svarer til spÃ¸rgsmÃ¥let
 &quot;hvor lang er du?&quot;. Strengen vil svare med tallet 8:
 </para>
 
 <screen>
 ...
-int strengensLængde;
-strengensLængde = s.length();
-System.out.println(&quot;s er &quot;+strengensLængde+&quot; tegn lang&quot;);
+int strengensLÃ¦ngde;
+strengensLÃ¦ngde = s.length();
+System.out.println(&quot;s er &quot;+strengensLÃ¦ngde+&quot; tegn lang&quot;);
 ...
 </screen>
 
@@ -963,7 +963,7 @@ s er 8 tegn lang
 
 
 <para>
-Vi kunne også springe mellemvariablen over og skrive:
+Vi kunne ogsÃ¥ springe mellemvariablen over og skrive:
 </para>
 
 <screen>
@@ -972,7 +972,7 @@ System.out.println(&quot;s er &quot;+s.length()+&quot; tegn lang&quot;);
 
 
 <para>
-Metoden toUpperCase() svarer til spørgsmålet &quot;hvordan
+Metoden toUpperCase() svarer til spÃ¸rgsmÃ¥let &quot;hvordan
 ser du ud med store bogstaver?&quot;:
 </para>
 
@@ -987,22 +987,22 @@ s med store bogstaver: UDE GODT
 
 
 <para>
-Herunder ses nogle af metoderne, man kan kalde på strenge. I
-kursiv til højre står spørgsmålene,
+Herunder ses nogle af metoderne, man kan kalde pÃ¥ strenge. I
+kursiv til hÃ¸jre stÃ¥r spÃ¸rgsmÃ¥lene,
 som de svarer til.
 </para>
 
 <para>
 <emphasis>Nogle af String-klassens
-metoder. En mere fuldstændig oversigt kan findes i 
+metoder. En mere fuldstÃ¦ndig oversigt kan findes i 
 <xref linkend="java-obj-appendix-string" />.
 </emphasis>
 </para>
 
 <para>
 char <emphasis>charAt</emphasis> (int indeks)  <emphasis>&quot;hvilket
-tegn er der på plads nummer x?&quot;</emphasis>Returnerer tegnet
-på det angivne <emphasis>indeks</emphasis>. Indeks tæller fra 0.
+tegn er der pÃ¥ plads nummer x?&quot;</emphasis>Returnerer tegnet
+pÃ¥ det angivne <emphasis>indeks</emphasis>. Indeks tÃ¦ller fra 0.
 </para>
 
 <para>
@@ -1016,7 +1016,7 @@ forekomster af <emphasis>gammeltTegn</emphasis> er erstattet med <emphasis>nytTe
 String <emphasis>substring</emphasis> (int
 startindeks)  <emphasis>&quot;hvad er delstrengen fra x?&quot;</emphasis>Returnerer
 en ny streng, som er en del af denne streng. Delstrengen starter ved
-<emphasis>startindeks</emphasis> og går til slutningen.
+<emphasis>startindeks</emphasis> og gÃ¥r til slutningen.
 </para>
 
 <para>
@@ -1029,15 +1029,15 @@ en ny streng, som er en del af denne streng. Delstrengen starter ved
 
 <para>
 String <emphasis>toLowerCase</emphasis> ()  <emphasis>&quot;hvordan
-ser du ud med små bogstaver?&quot;</emphasis>Returnerer en ny
+ser du ud med smÃ¥ bogstaver?&quot;</emphasis>Returnerer en ny
 streng, som er identisk med denne streng, bortset fra at alle store
-bogstaver er erstattet med små.
+bogstaver er erstattet med smÃ¥.
 </para>
 
 <para>
 String <emphasis>toUpperCase</emphasis> ()  <emphasis>&quot;hvordan
 ser du ud med store bogstaver?&quot;</emphasis>Returnerer en ny streng,
-som er identisk med denne streng, bortset fra at alle små
+som er identisk med denne streng, bortset fra at alle smÃ¥
 bogstaver er erstattet med store.
 </para>
 
@@ -1049,19 +1049,19 @@ indeholder den samme tegnsekvens som <emphasis>str</emphasis>, ellers falsk.
 
 <para>
 int <emphasis>length</emphasis> ()    <emphasis>&quot;hvad er din
-længde?&quot;</emphasis>Returnerer længden af (antal tegn i)
+lÃ¦ngde?&quot;</emphasis>Returnerer lÃ¦ngden af (antal tegn i)
 strengen.
 </para>
 
 <para>
 int <emphasis>indexOf</emphasis> (String str)  <emphasis>&quot;hvor
-er delstrengen x?&quot;</emphasis>Returnerer indekset på den
-første forekomst af <emphasis>str</emphasis> som delstreng. Hvis <emphasis>str</emphasis>
+er delstrengen x?&quot;</emphasis>Returnerer indekset pÃ¥ den
+fÃ¸rste forekomst af <emphasis>str</emphasis> som delstreng. Hvis <emphasis>str</emphasis>
 ikke er en delstreng, returneres -1.
 </para>
 
 <para>
-Herunder ses et eksempel, hvor nogle af metoderne er afprøvet:
+Herunder ses et eksempel, hvor nogle af metoderne er afprÃ¸vet:
 </para>
 
 <screen>
@@ -1076,8 +1076,8 @@ public class Strengeleg
     System.out.println(&quot;Strengen s indeholder: &quot;+s);
     System.out.println(&quot;s er &quot;+<emphasis>s.length()</emphasis>+&quot; tegn lang&quot;);
     System.out.println(&quot;s med store bogstaver: &quot;+<emphasis>s.toUpperCase()</emphasis>);
-    System.out.println(&quot;Tegnet på plads nummer 2 er: &quot;+<emphasis>s.charAt(2)</emphasis>);
-    System.out.println(&quot;Det første g er på plads nummer: &quot;+<emphasis>s.indexOf(&quot;g&quot;)</emphasis>);
+    System.out.println(&quot;Tegnet pÃ¥ plads nummer 2 er: &quot;+<emphasis>s.charAt(2)</emphasis>);
+    System.out.println(&quot;Det fÃ¸rste g er pÃ¥ plads nummer: &quot;+<emphasis>s.indexOf(&quot;g&quot;)</emphasis>);
   }
 }
 </screen>
@@ -1086,27 +1086,27 @@ public class Strengeleg
 <screen>
 Strengen s indeholder: Ude godt
 s er 8 tegn lang s med store bogstaver: UDE GODT
-Tegnet på plads nummer 2 er: e
-Det første g er på plads nummer: 4
+Tegnet pÃ¥ plads nummer 2 er: e
+Det fÃ¸rste g er pÃ¥ plads nummer: 4
 </screen>
 
 <sect2 id="java-obj-rekt-strenge-imut">
   <title>Strenge er uforanderlige</title>
 
 <para>
-De fleste objekter tillader, at deres data ændres, enten ved
+De fleste objekter tillader, at deres data Ã¦ndres, enten ved
 at man direkte har adgang til deres variabler eller gennem kald af
-metoder. String-objekter er derimod indrettet sådan, at når
-de først er oprettet, så kan de ikke ændres (det
-giver Java mulighed for at spare hukommelse ved at slå
-streng-objekter med fælles indhold sammen til &eacute;n
-streng). I stedet for at ændre indholdet af strengen returnerer
+metoder. String-objekter er derimod indrettet sÃ¥dan, at nÃ¥r
+de fÃ¸rst er oprettet, sÃ¥ kan de ikke Ã¦ndres (det
+giver Java mulighed for at spare hukommelse ved at slÃ¥
+streng-objekter med fÃ¦lles indhold sammen til &eacute;n
+streng). I stedet for at Ã¦ndre indholdet af strengen returnerer
 String-objekters metoder altid en anden streng, som er resultatet af
-ændringen.
+Ã¦ndringen.
 </para>
 
 <para>
-Når vi skal ændre i et Point-objekt, f.eks. så
+NÃ¥r vi skal Ã¦ndre i et Point-objekt, f.eks. sÃ¥
 dets x og y er (1,1), skriver vi:
 </para>
 
@@ -1116,8 +1116,8 @@ dets x og y er (1,1), skriver vi:
 
 
 <para>
-Kalder man derimod en metode på et String-objekt, bliver den
-ikke ændret:
+Kalder man derimod en metode pÃ¥ et String-objekt, bliver den
+ikke Ã¦ndret:
 </para>
 
 <screen>
@@ -1127,8 +1127,8 @@ ikke ændret:
 
 <para>
 replace()-metoden giver en ny streng tilbage til os, hvor alle
-'d'-tegn er erstattet med 'f', men den bliver smidt væk med det
-samme, da vi ikke bruger returværdien. I stedet kunne vi
+'d'-tegn er erstattet med 'f', men den bliver smidt vÃ¦k med det
+samme, da vi ikke bruger returvÃ¦rdien. I stedet kunne vi
 skrive:
 </para>
 
@@ -1144,7 +1144,7 @@ uforandret).
 </para>
 
 <para>
-Her ses samlet et eksempel på strenges uforanderlighed:
+Her ses samlet et eksempel pÃ¥ strenges uforanderlighed:
 </para>
 
 <screen>
@@ -1159,13 +1159,13 @@ public class Strengeleg2
     String s4;
 
     s1 = &quot;Ude godt, men hjemme bedst.&quot;;
-    <emphasis>s2 = s1.toUpperCase()</emphasis>;          <emphasis>// kald toUpperCase() på s1</emphasis>
-    <emphasis>s3 = s2.replace('E', 'X')</emphasis>;        <emphasis>// kald replace() på s2</emphasis>
-    <emphasis>s4 = s3.substring(4, 16)</emphasis>;        <emphasis>// kald substring() på s3</emphasis>
+    <emphasis>s2 = s1.toUpperCase()</emphasis>;          <emphasis>// kald toUpperCase() pÃ¥ s1</emphasis>
+    <emphasis>s3 = s2.replace('E', 'X')</emphasis>;        <emphasis>// kald replace() pÃ¥ s2</emphasis>
+    <emphasis>s4 = s3.substring(4, 16)</emphasis>;        <emphasis>// kald substring() pÃ¥ s3</emphasis>
 
-    System.out.println (&quot;s1: &quot; + s1);  <emphasis>// s1 er uændret af toUpperCase()-kald</emphasis>
-    System.out.println (&quot;s2: &quot; + s2);  <emphasis>// s2 er uændret af replace()-kaldet</emphasis>
-    System.out.println (&quot;s3: &quot; + s3);  <emphasis>// s3 er uændret af s3.substring(4, 20)</emphasis>
+    System.out.println (&quot;s1: &quot; + s1);  <emphasis>// s1 er uÃ¦ndret af toUpperCase()-kald</emphasis>
+    System.out.println (&quot;s2: &quot; + s2);  <emphasis>// s2 er uÃ¦ndret af replace()-kaldet</emphasis>
+    System.out.println (&quot;s3: &quot; + s3);  <emphasis>// s3 er uÃ¦ndret af s3.substring(4, 20)</emphasis>
     System.out.println (&quot;s4: &quot; + s4);  <emphasis>// s4 er resultatet af substring()-kaldet</emphasis>
  }
 }
@@ -1181,36 +1181,36 @@ s4: GODT, MXN HJ
 
 
 <para>
-Variablerne s1, s2, s3 og s4 får tildelt en reference til
-hvert sit strengobjekt, og derefter ændrer deres indhold sig
-ikke, uanset hvilke metoder der kaldes på objekterne.
+Variablerne s1, s2, s3 og s4 fÃ¥r tildelt en reference til
+hvert sit strengobjekt, og derefter Ã¦ndrer deres indhold sig
+ikke, uanset hvilke metoder der kaldes pÃ¥ objekterne.
 </para>
 
 <para>
-Bemærk, at selvom streng-objekterne i sig selv er
-uforanderlige, kan streng-variablerne godt ændres:
+BemÃ¦rk, at selvom streng-objekterne i sig selv er
+uforanderlige, kan streng-variablerne godt Ã¦ndres:
 </para>
 
 <screen>
-  s = s.replace('d','f');  <emphasis>// sæt s til at referere resultatet af replace()</emphasis>
+  s = s.replace('d','f');  <emphasis>// sÃ¦t s til at referere resultatet af replace()</emphasis>
 </screen>
 
 
 <para>
-Forskellen mellem en metode, der ændrer på det objekt,
-den bliver kaldt på og en metode, der returnerer en værdi,
-kan være svær at forstå i starten, men det kommer i
+Forskellen mellem en metode, der Ã¦ndrer pÃ¥ det objekt,
+den bliver kaldt pÃ¥ og en metode, der returnerer en vÃ¦rdi,
+kan vÃ¦re svÃ¦r at forstÃ¥ i starten, men det kommer i
 takt med, at du programmerer selv.
 </para>
 </sect2>    <!--   Strenge er uforanderlige -->
 
 <sect2 id="java-obj-rekt-ej-new">
-  <title>Man behøver ikke bruge new til String-objekter</title>
+  <title>Man behÃ¸ver ikke bruge new til String-objekter</title>
 
 <para>
 De andre klasser, vi har set indtil nu, har vi brugt til at skabe
-nye objekter med. Når vi skulle lave et nyt Point-objekt,
-kaldte vi dens konstruktør vha. new, f.eks.:
+nye objekter med. NÃ¥r vi skulle lave et nyt Point-objekt,
+kaldte vi dens konstruktÃ¸r vha. new, f.eks.:
 </para>
 
 <screen>
@@ -1220,7 +1220,7 @@ kaldte vi dens konstruktør vha. new, f.eks.:
 
 
 <para>
-Lige netop med strenge behøves det ikke. Her skriver man
+Lige netop med strenge behÃ¸ves det ikke. Her skriver man
 typisk:
 </para>
 
@@ -1240,20 +1240,20 @@ Man <emphasis>kan</emphasis> godt skrive:
 
 
 <para>
-I det sidste tilfælde skabes et nyt String-objekt, som også
-indeholder teksten &quot;Ude godt&quot;, så der i lageret er <emphasis>to</emphasis>
-strenge med samme indhold, hvilket er unødvendigt.
-Netop fordi strenge ikke kan ændres, når de først
+I det sidste tilfÃ¦lde skabes et nyt String-objekt, som ogsÃ¥
+indeholder teksten &quot;Ude godt&quot;, sÃ¥ der i lageret er <emphasis>to</emphasis>
+strenge med samme indhold, hvilket er unÃ¸dvendigt.
+Netop fordi strenge ikke kan Ã¦ndres, nÃ¥r de fÃ¸rst
 er skabt, har man aldrig brug for kopier. Hvorfor skulle man lave en
-kopi, der altid vil være helt den samme som originalen?
+kopi, der altid vil vÃ¦re helt den samme som originalen?
 </para>
-</sect2>    <!--   Man behøver ikke bruge new til String-objekter -->
+</sect2>    <!--   Man behÃ¸ver ikke bruge new til String-objekter -->
 
 <sect2 id="java-obj-rekt-overload">
 <title>Navnesammenfald for metoder</title>
 
 <para>
-I tabellen over Strings metoder er der en, der er nævnt to
+I tabellen over Strings metoder er der en, der er nÃ¦vnt to
 gange; substring(). Den findes i to varianter: <emphasis>substring</emphasis>(int
 startindeks) og <emphasis>substring</emphasis>(int startindeks, int slutindeks).
 </para>
@@ -1261,24 +1261,24 @@ startindeks) og <emphasis>substring</emphasis>(int startindeks, int slutindeks).
 <para>
 Hvilken variant der kaldes i Strengeleg2.java ved tildelingen af
 s4 kan man se ud fra, hvilke parameterlister der passer sammen.
-I dette tilfælde den metode med to parametre.
+I dette tilfÃ¦lde den metode med to parametre.
 </para>
 
 <para>
-Så længe der er forskel på antallet af
-parametre, er det simpelt nok, ellers må man kigge på
+SÃ¥ lÃ¦nge der er forskel pÃ¥ antallet af
+parametre, er det simpelt nok, ellers mÃ¥ man kigge pÃ¥
 typerne af parametrene.
 </para>
 </sect2>    <!--   Navnesammenfald for metoder -->
 
 <sect2 id="java-obj-rekt-concat">
-  <title>At sætte strenge sammen med +</title>
+  <title>At sÃ¦tte strenge sammen med +</title>
 
 <para>
-Operatoren + bruges ikke kun til at lægge tal sammen. Hvis
-enten højre- eller venstre-siden er en streng, bliver +
-opfattet som: &quot;<emphasis>konverter begge sider til strenge, og sæt
-dem i forlængelse af hinanden til en samlet streng</emphasis>&quot;.
+Operatoren + bruges ikke kun til at lÃ¦gge tal sammen. Hvis
+enten hÃ¸jre- eller venstre-siden er en streng, bliver +
+opfattet som: &quot;<emphasis>konverter begge sider til strenge, og sÃ¦t
+dem i forlÃ¦ngelse af hinanden til en samlet streng</emphasis>&quot;.
 </para>
 
 <para>
@@ -1298,7 +1298,7 @@ Svaret er: java.awt.Point[x=1,y=1]
 
 
 <para>
-Sker der i computeren nogenlunde følgende:
+Sker der i computeren nogenlunde fÃ¸lgende:
 </para>
 
 <screen>
@@ -1313,14 +1313,14 @@ Sker der i computeren nogenlunde følgende:
 
 
 <para>
-toString() laver en streng-repræsentation af et objekt. Alle
-objekter har en toString()-metode, og oversætteren sætter
-kode ind, der kalder toString(), hvis den møder et + mellem en
+toString() laver en streng-reprÃ¦sentation af et objekt. Alle
+objekter har en toString()-metode, og oversÃ¦tteren sÃ¦tter
+kode ind, der kalder toString(), hvis den mÃ¸der et + mellem en
 streng og en anden slags objekt.
 </para>
 
 <para>
-Alle de simple typer kan også laves om til strenge med +:
+Alle de simple typer kan ogsÃ¥ laves om til strenge med +:
 </para>
 
 <screen>
@@ -1331,10 +1331,10 @@ Alle de simple typer kan også laves om til strenge med +:
 
 
 <para>
-Java kigger ikke på indholdet af strengene, så &quot;2&quot;
+Java kigger ikke pÃ¥ indholdet af strengene, sÃ¥ &quot;2&quot;
 (som streng) + 3 (som tal) giver &quot;23&quot; (som streng). Man kan
-altså bruge operatoren + til et lille trick: For at få
-noget repræsenteret som en streng kan man sammensætte
+altsÃ¥ bruge operatoren + til et lille trick: For at fÃ¥
+noget reprÃ¦senteret som en streng kan man sammensÃ¦tte
 det med en tom streng:
 </para>
 
@@ -1367,14 +1367,14 @@ Man kan derimod ikke skrive:
 <para>
 ... selvom s er &quot;42&quot;.
 </para>
-</sect2>    <!--   At sætte strenge sammen med + -->
+</sect2>    <!--   At sÃ¦tte strenge sammen med + -->
 
 <sect2 id="java-obj-rekt-samlign">
   <title>Sammenligning</title>
 
 <para>
 Umiddelbart kunne man fristes til at sammenligne to strenge med ==
-ligesom med de simple typer. Det går ofte (men ikke altid)
+ligesom med de simple typer. Det gÃ¥r ofte (men ikke altid)
 godt:
 </para>
 
@@ -1392,13 +1392,13 @@ s1 og s2 er ens.
 
 
 <para>
-Imidlertid sammenligner == <emphasis>referencerne til</emphasis> (adresserne på)
-objekterne, ikke <emphasis>indholdet af </emphasis>dem. Sammenligningen s1==s2 går
+Imidlertid sammenligner == <emphasis>referencerne til</emphasis> (adresserne pÃ¥)
+objekterne, ikke <emphasis>indholdet af </emphasis>dem. Sammenligningen s1==s2 gÃ¥r
 godt fordi s1 og s2 refererer til samme objekt.
 </para>
 
 <para>
-Derfor vil det gå galt hvis s1 og s2 refererer til to
+Derfor vil det gÃ¥ galt hvis s1 og s2 refererer til to
 objekter forskellige steder i hukommelsen, selvom de har
 samme indhold:
 </para>
@@ -1417,7 +1417,7 @@ s1 og s2 er IKKE ens.
 
 
 <para>
-I stedet bør man kalde equals()-metoden, dvs. spørge
+I stedet bÃ¸r man kalde equals()-metoden, dvs. spÃ¸rge
 et af objekterne &quot;<emphasis>har du samme indhold som dette
 objekt?</emphasis>&quot; og give det andet objekt som parameter:
 </para>
@@ -1434,12 +1434,12 @@ s1 og s2 er ens.
 
 
 <para>
-Dette gælder i virkeligheden ikke kun strenge. Alle objekter
-har en equals()-metode, som kan bruges til at afgøre, om to
-objekter er ens, og den bør man bruge i stedet for ==.
+Dette gÃ¦lder i virkeligheden ikke kun strenge. Alle objekter
+har en equals()-metode, som kan bruges til at afgÃ¸re, om to
+objekter er ens, og den bÃ¸r man bruge i stedet for ==.
 </para>
 
-<blockquote><para>Sammenligning af adresser på
+<blockquote><para>Sammenligning af adresser pÃ¥
 objekter sker med ==</para></blockquote>
 <blockquote><para>Sammenligning af objekters indhold
 sker med equals()-metoden</para></blockquote>
@@ -1452,7 +1452,7 @@ sker med equals()-metoden</para></blockquote>
 
 <para>
 
-Skriv et program, der finder positionen af det første
+Skriv et program, der finder positionen af det fÃ¸rste
   mellemrum i en streng (Vink: Brug metoden indexOf(&quot; &quot;)).
 </para>
 
@@ -1461,8 +1461,8 @@ Skriv et program, der finder positionen af det første
   <listitem>
 
 <para>
-Skriv et program, der fjerner det første ord i en
-  sætning (indtil første mellemrum).
+Skriv et program, der fjerner det fÃ¸rste ord i en
+  sÃ¦tning (indtil fÃ¸rste mellemrum).
 </para>
 
 </listitem>
@@ -1471,7 +1471,7 @@ Skriv et program, der fjerner det første ord i en
 
 <para>
 Skriv et program, der finder og fjerner alle forekomster af
-  ordet &quot;måske&quot; fra en tekst.
+  ordet &quot;mÃ¥ske&quot; fra en tekst.
 </para>
 
 </listitem>
@@ -1480,8 +1480,8 @@ Skriv et program, der finder og fjerner alle forekomster af
 
 <para>
 Skriv et program, der finder og fjerner alle forekomster af
-  ordet &quot;måske&quot; fra en tekst, uanset om det er skrevet
-  med store eller små bogstaver.
+  ordet &quot;mÃ¥ske&quot; fra en tekst, uanset om det er skrevet
+  med store eller smÃ¥ bogstaver.
 </para>
 
 </listitem>
@@ -1489,7 +1489,7 @@ Skriv et program, der finder og fjerner alle forekomster af
   <listitem>
 
 <para>
-Skriv et program, der tæller antallet af kommaer i en
+Skriv et program, der tÃ¦ller antallet af kommaer i en
   tekst.
 </para>
 
@@ -1498,12 +1498,12 @@ Skriv et program, der tæller antallet af kommaer i en
   <listitem>
 
 <para>
-Skriv et program, der undersøger, om en tekst er et
+Skriv et program, der undersÃ¸ger, om en tekst er et
   palindrom, dvs. med samme stavning forfra og bagfra (som f.eks.
-  &quot;regninger&quot;, &quot;russerdressur&quot;, &quot;vær
-  dog god ræv&quot;).(vink: træk de enkelte tegn ud af
+  &quot;regninger&quot;, &quot;russerdressur&quot;, &quot;vÃ¦r
+  dog god rÃ¦v&quot;).(vink: trÃ¦k de enkelte tegn ud af
   strengene med substring(n,n+1) eller med charAt(n), som er beskrevet
-  i apendikset, og kræver at du også bruger variabler
+  i apendikset, og krÃ¦ver at du ogsÃ¥ bruger variabler
   af typen char).
 </para>
 
@@ -1512,11 +1512,11 @@ Skriv et program, der undersøger, om en tekst er et
   <listitem>
 
 <para>
-Udvid programmet til at tage højde for store/små
-  bogstaver, tegnsætning og mellemrum, sådan at de
-  følgende palindromer også genkendes: &quot;Selmas
-  lakserøde garagedøre skal samles&quot; og &quot;&Aring;ge
-  lo, da baronesse Nora bad Ole gå&quot;.
+Udvid programmet til at tage hÃ¸jde for store/smÃ¥
+  bogstaver, tegnsÃ¦tning og mellemrum, sÃ¥dan at de
+  fÃ¸lgende palindromer ogsÃ¥ genkendes: &quot;Selmas
+  lakserÃ¸de garagedÃ¸re skal samles&quot; og &quot;&Aring;ge
+  lo, da baronesse Nora bad Ole gÃ¥&quot;.
 </para>
 
 </listitem>
@@ -1539,7 +1539,7 @@ indeks.
 </figure>
 
 <para>
-Konstruktører og metoder er beskrevet i appendiks, 
+KonstruktÃ¸rer og metoder er beskrevet i appendiks, 
 <xref linkend="java-obj-appendix-vector" />.
 </para>
 
@@ -1557,36 +1557,36 @@ Man opretter en vektor med f.eks.:
 
 
 <para>
-Derefter kan man tilføje et objekt i enden af listen med
+Derefter kan man tilfÃ¸je et objekt i enden af listen med
 <emphasis>addElement</emphasis>( objekt ), f.eks.:
 </para>
 
 <screen>
-  v.addElement(&quot;æh&quot;);
+  v.addElement(&quot;Ã¦h&quot;);
 </screen>
 
 
 <para>
 
-tilføjer strengen &quot;æh&quot; sidst i vektoren.
+tilfÃ¸jer strengen &quot;Ã¦h&quot; sidst i vektoren.
 </para>
 
 <para>
-Man kan sætte ind midt i listen med v.<emphasis>insertElementAt</emphasis>(
+Man kan sÃ¦tte ind midt i listen med v.<emphasis>insertElementAt</emphasis>(
 objekt, int indeks ), f.eks.:
 </para>
 
 <screen>
-  v.insertElementAt(&quot;øh&quot;,0);
+  v.insertElementAt(&quot;Ã¸h&quot;,0);
 </screen>
 
 
 <para>
 
-indsætter &quot;øh&quot; på plads nummer 0, sådan
-at vektoren nu indeholder først &quot;øh&quot; og så
-&quot;æh&quot;. Alle elementerne fra og med det indeks hvori
-man indsætter, får altså rykket deres indeks et
+indsÃ¦tter &quot;Ã¸h&quot; pÃ¥ plads nummer 0, sÃ¥dan
+at vektoren nu indeholder fÃ¸rst &quot;Ã¸h&quot; og sÃ¥
+&quot;Ã¦h&quot;. Alle elementerne fra og med det indeks hvori
+man indsÃ¦tter, fÃ¥r altsÃ¥ rykket deres indeks et
 frem.
 </para>
 
@@ -1595,8 +1595,8 @@ Man henter elementerne ud igen med <emphasis>elementAt</emphasis> ( indeks ).
 </para>
 
 <para>
-Med v.<emphasis>size</emphasis>() får man antallet af elementer i
-vektoren, i dette tilfælde 2.
+Med v.<emphasis>size</emphasis>() fÃ¥r man antallet af elementer i
+vektoren, i dette tilfÃ¦lde 2.
 </para>
 
 <para>
@@ -1609,20 +1609,20 @@ metoder</emphasis>
 </para>
 
 <para>
-void <emphasis>addElement</emphasis>( objekt )Føjer
+void <emphasis>addElement</emphasis>( objekt )FÃ¸jer
 <emphasis>objekt</emphasis> til vektoren. <emphasis>objekt</emphasis>
-kan være et vilkårligt objekt (men ikke en simpel type)
+kan vÃ¦re et vilkÃ¥rligt objekt (men ikke en simpel type)
 </para>
 
 <para>
 void <emphasis>insertElementAt</emphasis>( objekt, int
-indeks )Indsætter <emphasis>objekt</emphasis>
-i vektoren lige før plads nummer <emphasis>indeks</emphasis>
+indeks )IndsÃ¦tter <emphasis>objekt</emphasis>
+i vektoren lige fÃ¸r plads nummer <emphasis>indeks</emphasis>
 </para>
 
 <para>
 void <emphasis>removeElementAt</emphasis>( int indeks
-)Sletter objektet på plads
+)Sletter objektet pÃ¥ plads
 nummer <emphasis>indeks</emphasis>
 </para>
 
@@ -1633,10 +1633,10 @@ elementer
 
 <para>
 Object <emphasis>elementAt</emphasis> (int
-indeks)Returnerer en reference til objektet på plads nummer
+indeks)Returnerer en reference til objektet pÃ¥ plads nummer
 <emphasis>indeks</emphasis>. Husk at lave en
-typekonvertering af referencen til den rigtige klasse før
-resultatet lægges i en variabel (se
+typekonvertering af referencen til den rigtige klasse fÃ¸r
+resultatet lÃ¦gges i en variabel (se
 Point-eksemplet nedenfor).
 </para>
 
@@ -1649,7 +1649,7 @@ elementerne til en streng.
 <para>
 <emphasis>Vector-klassen skal
 importeres med <literal>import java.util.*;</literal>
-før den kan bruges</emphasis>
+fÃ¸r den kan bruges</emphasis>
 </para>
 
 <para>
@@ -1667,8 +1667,8 @@ public class Vectortest
  
 <emphasis>    v = new Vector();</emphasis>
 <emphasis> </emphasis>
-<emphasis>    v.addElement(&quot;æh&quot;);</emphasis>
-<emphasis>    v.addElement(&quot;bæh&quot;);</emphasis>
+<emphasis>    v.addElement(&quot;Ã¦h&quot;);</emphasis>
+<emphasis>    v.addElement(&quot;bÃ¦h&quot;);</emphasis>
 <emphasis>    v.addElement(&quot;buh&quot;);</emphasis>
 <emphasis> </emphasis>
     System.out.println(&quot;v har elementerne &quot;<emphasis>+v.toString()</emphasis>);
@@ -1677,25 +1677,25 @@ public class Vectortest
     System.out.println(&quot;Nu har v elementerne &quot;<emphasis>+v</emphasis>); <emphasis>//toString() kaldes implicit</emphasis>
 
 <emphasis>    v.removeElementAt(0);</emphasis>
-    System.out.println(&quot;Nu har v elementerne &quot;+v+&quot; og størrelsen &quot;+<emphasis>v.size()</emphasis>);
+    System.out.println(&quot;Nu har v elementerne &quot;+v+&quot; og stÃ¸rrelsen &quot;+<emphasis>v.size()</emphasis>);
 
-    System.out.println(&quot;På plads nummer 2 er: &quot;+<emphasis>v.elementAt(2)</emphasis>);
+    System.out.println(&quot;PÃ¥ plads nummer 2 er: &quot;+<emphasis>v.elementAt(2)</emphasis>);
   }
 }
 </screen>
 
 
 <screen>
-v har elementerne [æh, bæh, buh]
-Nu har v elementerne [æh, bæh, og, buh]
-Nu har v elementerne [bæh, og, buh] og størrelsen 3
-På plads nummer 2 er: buh
+v har elementerne [Ã¦h, bÃ¦h, buh]
+Nu har v elementerne [Ã¦h, bÃ¦h, og, buh]
+Nu har v elementerne [bÃ¦h, og, buh] og stÃ¸rrelsen 3
+PÃ¥ plads nummer 2 er: buh
 </screen>
 
 
 <para>
-Vi indsætter først tre (referencer til) strenge i
-vektoren. I hukommelsen ser det sådan ud:
+Vi indsÃ¦tter fÃ¸rst tre (referencer til) strenge i
+vektoren. I hukommelsen ser det sÃ¥dan ud:
 </para>
 
 <figure id="java-obj-vector2-fig">
@@ -1705,28 +1705,28 @@ vektoren. I hukommelsen ser det sådan ud:
 </figure>
 
 <para>
-Dernæst lægges &quot;og&quot; ind på plads
-nummer 2, dvs. efter &quot;bæh&quot; og før &quot;buh&quot;.
-Til sidst fjernes &quot;æh&quot; på plads nummer 0.
+DernÃ¦st lÃ¦gges &quot;og&quot; ind pÃ¥ plads
+nummer 2, dvs. efter &quot;bÃ¦h&quot; og fÃ¸r &quot;buh&quot;.
+Til sidst fjernes &quot;Ã¦h&quot; pÃ¥ plads nummer 0.
 </para>
 
 <para>
-Vector-objekter kan blive vilkårligt lange. De sørger
+Vector-objekter kan blive vilkÃ¥rligt lange. De sÃ¸rger
 selv for at reservere mere hukommelse, hvis det bliver
-nødvendigt.
+nÃ¸dvendigt.
 </para>
 
 <sect2 id="java-obj-rekt-point">
   <title>Eksempel med Point</title>
 
 <para>
-I det næste eksempel lægges tre Point-objekter ind i
-en vektor, og vektoren gennemløbes for at finde punktet med
+I det nÃ¦ste eksempel lÃ¦gges tre Point-objekter ind i
+en vektor, og vektoren gennemlÃ¸bes for at finde punktet med
 den mindste afstand til (0,0) (origo).
 </para>
 
 <para>
-Læg mærke til, hvordan man kan gennemløbe en
+LÃ¦g mÃ¦rke til, hvordan man kan gennemlÃ¸be en
 vektor:
 </para>
 
@@ -1735,7 +1735,7 @@ vektor:
     {
       Point p;
       <emphasis>p=(Point) pv.elementAt(n)</emphasis>; <emphasis>// punkt nr n hentes ud af vektoren</emphasis>
-<emphasis>                                 // (typekonvertering nødvendig)</emphasis>
+<emphasis>                                 // (typekonvertering nÃ¸dvendig)</emphasis>
 <emphasis>      //...</emphasis>
     }
 </screen>
@@ -1743,7 +1743,7 @@ vektor:
 
 <para>
 Da vektorer kan indeholde objekter af alle mulige typer, er man
-nødt til at lave en typekonvertering af den
+nÃ¸dt til at lave en typekonvertering af den
 objekt-reference, som elementAt() returnerer.
 </para>
 
@@ -1775,7 +1775,7 @@ public class MindsteAfstand
       Point p;
 
       p=(Point) pv.elementAt(n); <emphasis>// punkt nr n hentes ud af vektoren</emphasis>
-<emphasis>                                 // (typekonvertering nødvendig)</emphasis>
+<emphasis>                                 // (typekonvertering nÃ¸dvendig)</emphasis>
 
       dist = origo.distance(p);
       if (dist&lt;minDist)
@@ -1822,7 +1822,7 @@ vektoren:
 
 <para>
 Og herunder er vist, hvordan man kan finde den mindste afstand
-mellem to vilkårlige punkter i vektoren:
+mellem to vilkÃ¥rlige punkter i vektoren:
 </para>
 
 <screen>
@@ -1850,27 +1850,27 @@ mellem to vilkårlige punkter i vektoren:
   <title>Ekstra eksempler</title>
 
 <para>
-Tillykke! Du har nu lært, hvordan man opretter og arbejder
+Tillykke! Du har nu lÃ¦rt, hvordan man opretter og arbejder
 med objekter, og du er kommet igennem de vigtigste klasser af
-objekter. De eksempler og klasser, der følger nu er ikke
+objekter. De eksempler og klasser, der fÃ¸lger nu er ikke
 fundamentalt forskellige fra det, du har set. Der bliver med andre
-ord ikke introduceret nogen nye begreber, men klasserne kan være
-nyttige, og eksemplerne kan måske hjælpe dig med at få
-repeteret ideerne om brug af objekter, metodekald og konstruktører.
+ord ikke introduceret nogen nye begreber, men klasserne kan vÃ¦re
+nyttige, og eksemplerne kan mÃ¥ske hjÃ¦lpe dig med at fÃ¥
+repeteret ideerne om brug af objekter, metodekald og konstruktÃ¸rer.
 </para>
 
 <sect2 id="java-obj-eksempel-vector">
   <title>Blanding af kort med Vector</title>
 
 <para>
-I det følgende bruges nogle af de metoder der er nævnt
+I det fÃ¸lgende bruges nogle af de metoder der er nÃ¦vnt
 i appendikset om Vector.
 </para>
 
 <para>
 Dette program blander nogle spillekort (beskrevet som strenge) i
-en vektor. Det gøres ved 100 gange at tage et kort fra en
-tilfældig plads og flytte det til en anden tilfældig
+en vektor. Det gÃ¸res ved 100 gange at tage et kort fra en
+tilfÃ¦ldig plads og flytte det til en anden tilfÃ¦ldig
 plads:
 </para>
 
@@ -1888,25 +1888,25 @@ public class BlandKort
     for (int n=2; n&lt;9; n++)
     {
       bunke.addElement(&quot;ruder&quot;+n);  <emphasis>// ruder</emphasis>
-      bunke.addElement(&quot;klør&quot;+n);   <emphasis>// klør</emphasis>
+      bunke.addElement(&quot;klÃ¸r&quot;+n);   <emphasis>// klÃ¸r</emphasis>
       bunke.addElement(&quot;spar&quot;+n);   <emphasis>// spar</emphasis>
     }
 
-    System.out.println(&quot;Før blanding: &quot;+bunke);
+    System.out.println(&quot;FÃ¸r blanding: &quot;+bunke);
     int antalKort = bunke.size();
 
 <emphasis>    // Bland bunken</emphasis>
     for (int n=0;n&lt;100;n++)
     {
       int nr;
-      nr = (int) (Math.random() * antalKort);     <emphasis>// find en tilfældig plads</emphasis>
+      nr = (int) (Math.random() * antalKort);     <emphasis>// find en tilfÃ¦ldig plads</emphasis>
 
       String <emphasis>kort = (String) bunke.elementAt(nr)</emphasis>; <emphasis>// tag et kort ud</emphasis>
 
       <emphasis>bunke.removeElementAt(nr);</emphasis>
 
       nr = (int) (Math.random() * antalKort);
-      bunke.<emphasis>insertElementAt(kort,nr)</emphasis>;             <emphasis>// sæt det ind et andet sted</emphasis>
+      bunke.<emphasis>insertElementAt(kort,nr)</emphasis>;             <emphasis>// sÃ¦t det ind et andet sted</emphasis>
     }
     
     System.out.println(&quot;Efter blanding: &quot;+bunke);
@@ -1916,16 +1916,16 @@ public class BlandKort
 
 
 <screen>
-Før blanding: [ruder2, klør2, spar2, ruder3, klør3, spar3, ruder4, klør4, spar4, ruder5, klør5, spar5, ruder6, klør6, spar6, ruder7, klør7,
-spar7, ruder8, klør8, spar8]
-Efter blanding: [spar3, klør3, ruder7, spar5, spar2, ruder5, ruder6, klør6, spar6, klør5, klør8, ruder2, ruder4, klør7, ruder3, spar8, spar4, ruder8, klør4, klør2, spar7]
+FÃ¸r blanding: [ruder2, klÃ¸r2, spar2, ruder3, klÃ¸r3, spar3, ruder4, klÃ¸r4, spar4, ruder5, klÃ¸r5, spar5, ruder6, klÃ¸r6, spar6, ruder7, klÃ¸r7,
+spar7, ruder8, klÃ¸r8, spar8]
+Efter blanding: [spar3, klÃ¸r3, ruder7, spar5, spar2, ruder5, ruder6, klÃ¸r6, spar6, klÃ¸r5, klÃ¸r8, ruder2, ruder4, klÃ¸r7, ruder3, spar8, spar4, ruder8, klÃ¸r4, klÃ¸r2, spar7]
 </screen>
 
 
 <para>
-I et rigtigt program ville de enkelte kort nok være
-repræsenteret med objekter fra en Kort-klasse med
-objektvariablerne farve og værdi.
+I et rigtigt program ville de enkelte kort nok vÃ¦re
+reprÃ¦senteret med objekter fra en Kort-klasse med
+objektvariablerne farve og vÃ¦rdi.
 </para>
 </sect2>    <!--   Blanding af kort med Vector -->
 
@@ -1933,8 +1933,8 @@ objektvariablerne farve og værdi.
   <title>Datoer (klassen Date)</title>
 
 <para>
-Date-klassen repræsenterer et punkt i tiden (en dato og et
-klokkeslæt).
+Date-klassen reprÃ¦senterer et punkt i tiden (en dato og et
+klokkeslÃ¦t).
 </para>
 
 <figure id="java-eksempel-date-fig">
@@ -1944,7 +1944,7 @@ klokkeslæt).
 </figure>
 
 <para>
-For at oprette et dato-objekt, der repræsenterer dags dato
+For at oprette et dato-objekt, der reprÃ¦senterer dags dato
 og tid, skriver vi:
 </para>
 
@@ -1960,26 +1960,26 @@ Date) og et objekt (en konkret dato, f.eks. 24/12 2000 kl. 18:37).
 </para>
 
 <para>
-For at oprette en dato, der repræsenterer et andet
-tidspunkt, kan vi bruge en af de andre konstruktører, der
-tager årstal, måned (regnet fra 0), dag, time og minut.
-Undertegnede er født den 1. januar 1971, så min
-fødselsdag kunne oprettes med:
+For at oprette en dato, der reprÃ¦senterer et andet
+tidspunkt, kan vi bruge en af de andre konstruktÃ¸rer, der
+tager Ã¥rstal, mÃ¥ned (regnet fra 0), dag, time og minut.
+Undertegnede er fÃ¸dt den 1. januar 1971, sÃ¥ min
+fÃ¸dselsdag kunne oprettes med:
 </para>
 
 <screen>
-  jacobsFødselsdag = new Date(71,0,1,12,00); <emphasis>// 1.januar 1971 kl. 12:00</emphasis>
+  jacobsFÃ¸dselsdag = new Date(71,0,1,12,00); <emphasis>// 1.januar 1971 kl. 12:00</emphasis>
 </screen>
 
 
 <para>
-I appendikset er et udvalg af Date-klassens konstruktører
+I appendikset er et udvalg af Date-klassens konstruktÃ¸rer
 og metoder beskrevet.
 </para>
 
 <para>
-Eksemplet nedenfor regner på min fødselsdato og
-finder ud af, hvornår jeg var halvt så gammel som nu.
+Eksemplet nedenfor regner pÃ¥ min fÃ¸dselsdato og
+finder ud af, hvornÃ¥r jeg var halvt sÃ¥ gammel som nu.
 </para>
 
 <screen>
@@ -1999,7 +1999,7 @@ public class Datoer
     jacob = new Date(71,0,1,12,00); <emphasis>// 1. januar 1971 kl. 12:00</emphasis>
 
     System.out.println(&quot;Dags dato: &quot;+netopNu.toString());
-    System.out.println(&quot;Jacob blev født &quot;+jacob); <emphasis>// .toString() implicit</emphasis>
+    System.out.println(&quot;Jacob blev fÃ¸dt &quot;+jacob); <emphasis>// .toString() implicit</emphasis>
 
 <emphasis>    // Lad os regne Jacobs alder ud (i millisekunder)</emphasis>
     long nuMs;
@@ -2010,9 +2010,9 @@ public class Datoer
     jacobMs = jacob.getTime();
     alderMs = nuMs - jacobMs;
  
-<emphasis>    // Hvornår var han halvt så gammel?</emphasis>
+<emphasis>    // HvornÃ¥r var han halvt sÃ¥ gammel?</emphasis>
     jacob.setTime(nuMs - alderMs/2);
-    System.out.println(&quot;Jacob var halvt så gammel &quot;+jacob);
+    System.out.println(&quot;Jacob var halvt sÃ¥ gammel &quot;+jacob);
   }
 }
 </screen>
@@ -2020,32 +2020,32 @@ public class Datoer
 
 <screen>
 Dags dato: Sun Jul 15 14:33:59 CEST 2001
-Jacob blev født Fri Jan 01 12:00:00 CET 1971
-Jacob var halvt så gammel Wed Apr 09 01:46:59 CEST 1986
+Jacob blev fÃ¸dt Fri Jan 01 12:00:00 CET 1971
+Jacob var halvt sÃ¥ gammel Wed Apr 09 01:46:59 CEST 1986
 </screen>
 
 
 <para>
-Kaldet jacob.setTime(...) ændrer objektet, så Jacobs
-fødselsdag blev glemt.
+Kaldet jacob.setTime(...) Ã¦ndrer objektet, sÃ¥ Jacobs
+fÃ¸dselsdag blev glemt.
 </para>
 
 <para>
-Man kan gøre meget mere med datoer end vist her.
+Man kan gÃ¸re meget mere med datoer end vist her.
 </para>
 
 <para>
 Med DateFormat-klassen kan man formatere og udskrive datoer langt
-pænere end med toString() og på alle mulige sprog (bl.a.
-på dansk). Klassen kan også gå den anden vej:
-Analysere en tekststreng og finde frem til datoen, den repræsenterer.
+pÃ¦nere end med toString() og pÃ¥ alle mulige sprog (bl.a.
+pÃ¥ dansk). Klassen kan ogsÃ¥ gÃ¥ den anden vej:
+Analysere en tekststreng og finde frem til datoen, den reprÃ¦senterer.
 </para>
 
 <para>
-GregorianCalendar-klassen repræsenterer vort kalendersystem
+GregorianCalendar-klassen reprÃ¦senterer vort kalendersystem
 (det gregorianske / julianske) og har alle de
-kalenderfunktioner, man kunne ønske sig. Med den kan man
-arbejde med ugedage, måneder, år, tidszoner, sommertid
+kalenderfunktioner, man kunne Ã¸nske sig. Med den kan man
+arbejde med ugedage, mÃ¥neder, Ã¥r, tidszoner, sommertid
 etc.
 </para>
 
@@ -2063,9 +2063,9 @@ klassemetoder).
 
 <para>
 
-Ret Datoer-programmet sådan, at Jacobs fødselsdato
-  ikke går tabt (opret et tredje objekt i stedet for at
-  ændre i jacob-objektet).
+Ret Datoer-programmet sÃ¥dan, at Jacobs fÃ¸dselsdato
+  ikke gÃ¥r tabt (opret et tredje objekt i stedet for at
+  Ã¦ndre i jacob-objektet).
 </para>
 
 </listitem>
@@ -2074,7 +2074,7 @@ Ret Datoer-programmet sådan, at Jacobs fødselsdato
 
 <para>
 Skriv et program, der udskriver datoen for i morgen, om en
-  uge og om et år.
+  uge og om et Ã¥r.
 </para>
 
 </listitem>
@@ -2082,11 +2082,11 @@ Skriv et program, der udskriver datoen for i morgen, om en
   <listitem>
 
 <para>
-Skriv et program, der ud fra en persons fødselsdato
-  udskriver alle fødselsdage, som personen har fejret indtil nu
-  (lav f.eks. en while-løkke, hvor du tæller år
-  frem fra fødselsdatoen, og brug before-metoden til at
-  tjekke, om du er nået frem til nu).
+Skriv et program, der ud fra en persons fÃ¸dselsdato
+  udskriver alle fÃ¸dselsdage, som personen har fejret indtil nu
+  (lav f.eks. en while-lÃ¸kke, hvor du tÃ¦ller Ã¥r
+  frem fra fÃ¸dselsdatoen, og brug before-metoden til at
+  tjekke, om du er nÃ¥et frem til nu).
 </para>
 
 </listitem>
@@ -2101,7 +2101,7 @@ Skriv et program, der ud fra en persons fødselsdato
 
 <para>
 Her finder du en oversigt over de vigtigste klasser og deres
-vigtigste metoder. På siden
+vigtigste metoder. PÃ¥ siden
 <ulink url="http://java.sun.com/products/jdk/1.2/docs/api/index.html">http://java.sun.com/products/jdk/1.2/docs/api/index.html</ulink>
 findes en komplet oversigt.
 </para>
@@ -2115,7 +2115,7 @@ Nogle af metoderne er markeret med:
 
 <para>
 
-JDK1.2: Denne metode er kun tilgængelig fra og med Java
+JDK1.2: Denne metode er kun tilgÃ¦ngelig fra og med Java
   version 1.2.
 </para>
 
@@ -2127,10 +2127,10 @@ JDK1.2: Denne metode er kun tilgængelig fra og med Java
 
 <para>
 
-(frarådes): Denne metode er frarådet (eng.:
+(frarÃ¥des): Denne metode er frarÃ¥det (eng.:
   deprecated), men findes endnu af hensyn til programmer skrevet til
-  tidligere versioner af Java. Oversætteren advarer mod brugen
-  med '... has been deprecated', men programmet kører i øvrigt
+  tidligere versioner af Java. OversÃ¦tteren advarer mod brugen
+  med '... has been deprecated', men programmet kÃ¸rer i Ã¸vrigt
   fint.
 </para>
 
@@ -2141,7 +2141,7 @@ JDK1.2: Denne metode er kun tilgængelig fra og med Java
 <title>Point</title>
 
 <para>
-Point repræsenterer et punkt med en x- og y-koordinat.
+Point reprÃ¦senterer et punkt med en x- og y-koordinat.
 </para>
 
 <para>
@@ -2164,7 +2164,7 @@ y  y-koordinaten
 </para>
 
 <para>
-<emphasis>Konstruktører</emphasis>
+<emphasis>KonstruktÃ¸rer</emphasis>
 </para>
 
 <para>
@@ -2192,7 +2192,7 @@ p)Opretter et punkt med samme (x,y)-koordinater som p.
 
 <para>
 void <emphasis>move</emphasis>(int
-x, int y)Sætter punktets koordinater.
+x, int y)SÃ¦tter punktets koordinater.
 </para>
 
 <para>
@@ -2209,14 +2209,14 @@ etAndetPunkt)  JDK1.2 Giver afstanden fra punktet til
 
 <para>
 boolean <emphasis>equals</emphasis>(Object
-obj)Undersøger, om punktet har samme koordinater som <emphasis>obj</emphasis>.
-Returnerer true, hvis det er tilfældet, og false, hvis obj ikke
+obj)UndersÃ¸ger, om punktet har samme koordinater som <emphasis>obj</emphasis>.
+Returnerer true, hvis det er tilfÃ¦ldet, og false, hvis obj ikke
 er et punkt, eller hvis det har andre koordinater.
 </para>
 
 <para>
 String
-<emphasis>toString</emphasis>()giver en strengrepræsentation af punktet
+<emphasis>toString</emphasis>()giver en strengreprÃ¦sentation af punktet
 med (x,y)-koordinater, f.eks. java.awt.Point[x=0,y=0]
 </para>
 </sect2>    <!--   Point -->
@@ -2225,7 +2225,7 @@ med (x,y)-koordinater, f.eks. java.awt.Point[x=0,y=0]
   <title>Rectangle</title>
 
 <para>
-Rectangle repræsenterer et todimensionalt rektangel.
+Rectangle reprÃ¦senterer et todimensionalt rektangel.
 </para>
 
 <para>
@@ -2239,12 +2239,12 @@ todimensionalt rektangel - skal importeres med import java.awt.*;</emphasis>
 
 <para>
 int
-x  x-koordinat på øverste venstre hjørne
+x  x-koordinat pÃ¥ Ã¸verste venstre hjÃ¸rne
 </para>
 
 <para>
 int
-y  y-koordinat på øverste venstre hjørne
+y  y-koordinat pÃ¥ Ã¸verste venstre hjÃ¸rne
 </para>
 
 <para>
@@ -2254,33 +2254,33 @@ width  bredden
 
 <para>
 int
-height  højden
+height  hÃ¸jden
 </para>
 
 <para>
-<emphasis>Konstruktører</emphasis>
+<emphasis>KonstruktÃ¸rer</emphasis>
 </para>
 
 <para>
 Rectangle()opretter
-et rektangel i (0,0), hvis bredde og højde er 0.
+et rektangel i (0,0), hvis bredde og hÃ¸jde er 0.
 </para>
 
 <para>
 Rectangle(int
-bredde, int højde)opretter et rektangel i (0,0) med den
-angivne bredde og højde.
+bredde, int hÃ¸jde)opretter et rektangel i (0,0) med den
+angivne bredde og hÃ¸jde.
 </para>
 
 <para>
 Rectangle(int
-x, int y, int bredde, int højde)opretter et rektangel i
-(x,y) med den angivne bredde og højde.
+x, int y, int bredde, int hÃ¸jde)opretter et rektangel i
+(x,y) med den angivne bredde og hÃ¸jde.
 </para>
 
 <para>
 Rectangle(Point
-p)opretter et rektangel i <emphasis>p</emphasis>, hvis bredde og højde
+p)opretter et rektangel i <emphasis>p</emphasis>, hvis bredde og hÃ¸jde
 er 0.
 </para>
 
@@ -2290,7 +2290,7 @@ er 0.
 
 <para>
 void <emphasis>add
-</emphasis>(Point p) udvider rektanglet sådan, at det også
+</emphasis>(Point p) udvider rektanglet sÃ¥dan, at det ogsÃ¥
 omfatter punktet <emphasis>p</emphasis>.
 </para>
 
@@ -2314,32 +2314,32 @@ og <emphasis>r</emphasis> overlapper.
 
 <para>
 Rectangle
-<emphasis>intersection </emphasis>(Rectangle r)undersøger overlappet
-(fællesmængden, snitmængden) mellem rektanglet og
-<emphasis>r</emphasis>, og returnerer et, rektangel der repræsenterer
-det fælles overlap.
+<emphasis>intersection </emphasis>(Rectangle r)undersÃ¸ger overlappet
+(fÃ¦llesmÃ¦ngden, snitmÃ¦ngden) mellem rektanglet og
+<emphasis>r</emphasis>, og returnerer et, rektangel der reprÃ¦senterer
+det fÃ¦lles overlap.
 </para>
 
 <para>
 Rectangle
 <emphasis>union</emphasis>(Rectangle r)returnerer et rektangel, der
-repræsenterer foreningsmængden, dvs. det mindste
-rektangel, der indeholder både <emphasis>r</emphasis> og dette
+reprÃ¦senterer foreningsmÃ¦ngden, dvs. det mindste
+rektangel, der indeholder bÃ¥de <emphasis>r</emphasis> og dette
 rektangel.
 </para>
 
 <para>
 boolean <emphasis>equals</emphasis>(Object
-obj)Undersøger, om rektanglet har samme koordinater og mål
+obj)UndersÃ¸ger, om rektanglet har samme koordinater og mÃ¥l
 som <emphasis>obj</emphasis>. Returnerer true,
-hvis det er tilfældet, og false, hvis obj ikke er et rektangel,
-eller hvis det har andre koordinater eller mål.
+hvis det er tilfÃ¦ldet, og false, hvis obj ikke er et rektangel,
+eller hvis det har andre koordinater eller mÃ¥l.
 </para>
 
 <para>
 String
-<emphasis>toString</emphasis>()giver en strengrepræsentation af
-rektanglet med (x,y)-koordinater og mål.
+<emphasis>toString</emphasis>()giver en strengreprÃ¦sentation af
+rektanglet med (x,y)-koordinater og mÃ¥l.
 </para>
 </sect2>    <!--   Rectangle -->
 
@@ -2347,8 +2347,8 @@ rektanglet med (x,y)-koordinater og mål.
   <title>String</title>
 
 <para>
-Strenge er specielle ved, at de ikke kan ændres, når
-de først er oprettet.
+Strenge er specielle ved, at de ikke kan Ã¦ndres, nÃ¥r
+de fÃ¸rst er oprettet.
 </para>
 
 <para>
@@ -2358,7 +2358,7 @@ tekststrenge</emphasis>
 
 <para>
 char <emphasis>charAt</emphasis> (int indeks)returnerer
-tegnet på det angivne <emphasis>indeks</emphasis>. Indeks tæller fra 0.
+tegnet pÃ¥ det angivne <emphasis>indeks</emphasis>. Indeks tÃ¦ller fra 0.
 </para>
 
 <para>
@@ -2371,7 +2371,7 @@ erstattet med <emphasis>nytTegn</emphasis>.
 <para>
 String <emphasis>substring</emphasis> (int
 startindeks)Returnerer en ny streng, som er en del af denne
-streng. Delstrengen starter ved <emphasis>startindeks</emphasis> og går
+streng. Delstrengen starter ved <emphasis>startindeks</emphasis> og gÃ¥r
 til slutningen.
 </para>
 
@@ -2385,13 +2385,13 @@ ved <emphasis>slutindeks</emphasis> (til og med <emphasis>slutindeks</emphasis>-
 <para>
 String <emphasis>toLowerCase</emphasis> ()returnerer
 en ny streng, som er identisk med denne streng, bortset fra at alle
-store bogstaver er erstattet med små.
+store bogstaver er erstattet med smÃ¥.
 </para>
 
 <para>
 String <emphasis>toUpperCase</emphasis> ()returnerer
 en ny streng, som er identisk med denne streng, bortset fra at alle
-små bogstaver er erstattet med store.
+smÃ¥ bogstaver er erstattet med store.
 </para>
 
 <para>
@@ -2402,19 +2402,19 @@ ender af strengen.
 </para>
 
 <para>
-int <emphasis>length</emphasis> ()returnerer længden
+int <emphasis>length</emphasis> ()returnerer lÃ¦ngden
 af (antal tegn i) strengen.
 </para>
 
 <para>
 int <emphasis>indexOf</emphasis> (String str)returnerer
-indekset på den første forekomst af <emphasis>str</emphasis> som
+indekset pÃ¥ den fÃ¸rste forekomst af <emphasis>str</emphasis> som
 delstreng. Hvis <emphasis>str</emphasis> ikke er en delstreng, returneres -1.
 </para>
 
 <para>
 int
-<emphasis>lastIndexOf</emphasis> (String str)returnerer indekset på den
+<emphasis>lastIndexOf</emphasis> (String str)returnerer indekset pÃ¥ den
 sidste forekomst af <emphasis>str</emphasis> som delstreng. Hvis <emphasis>str</emphasis> ikke er
 en delstreng, returneres -1.
 </para>
@@ -2441,7 +2441,7 @@ ellers falsk.
 boolean
 <emphasis>equalsIgnoreCase</emphasis> (String str)returnerer sand, hvis denne
 streng har samme indhold som <emphasis>str</emphasis>, ellers falsk. Der skelnes
-ikke mellem store og små bogstaver.
+ikke mellem store og smÃ¥ bogstaver.
 </para>
 
 <para>
@@ -2455,7 +2455,7 @@ med s1==s2 (der sammenligner objektreferencer).
 
 <para>
 Visse tegn kan man ikke skrive direkte i tekststrenge i
-kildeteksten. De står opført herunder:
+kildeteksten. De stÃ¥r opfÃ¸rt herunder:
 </para>
 
 <table>
@@ -2492,7 +2492,7 @@ Linjeskift (eng.: newline)
 
 <row>
 <entry>
-Vognretur (eng.: carriage return). Bruges sjældent
+Vognretur (eng.: carriage return). Bruges sjÃ¦ldent
 </entry>
 <entry>
 \r
@@ -2501,14 +2501,14 @@ Vognretur (eng.: carriage return). Bruges sjældent
 
 <row>
 <entry>
-Bak (eng.: backspace). Bruges sjældent
+Bak (eng.: backspace). Bruges sjÃ¦ldent
 </entry>
 <entry>
 \b
 </entry>
 </row>
 <row>
-<entry>Anførelsestegn &quot;
+<entry>AnfÃ¸relsestegn &quot;
 </entry>
 <entry>
 \&quot;
@@ -2539,11 +2539,11 @@ En bagstreg \ (eng.: backslash)
 
 <para>
 Unikode-tegn skrives som fire hexadecimale cifre
-(0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F). F.eks. kan de græske
-bogstaver findes på &quot;\u0390&quot; til &quot;\u03F3&quot;
-(det græske pi skrives med &quot;\u03C0&quot;), og de
+(0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F). F.eks. kan de grÃ¦ske
+bogstaver findes pÃ¥ &quot;\u0390&quot; til &quot;\u03F3&quot;
+(det grÃ¦ske pi skrives med &quot;\u03C0&quot;), og de
 kyrilliske tegn findes fra &quot;\u0400&quot; til &quot;\u047F&quot;.
-Unikode-tegntabellen kan findes på <ulink url="http://unicode.org/">http://unicode.org</ulink>
+Unikode-tegntabellen kan findes pÃ¥ <ulink url="http://unicode.org/">http://unicode.org</ulink>
 </para>
 
 <para>
@@ -2563,14 +2563,14 @@ Jacob
 
 
 <screen>
-System.out.println(&quot;\t\&quot;At være eller ikke være\n\tdet er spørgsmålet.\&quot;&quot;);
+System.out.println(&quot;\t\&quot;At vÃ¦re eller ikke vÃ¦re\n\tdet er spÃ¸rgsmÃ¥let.\&quot;&quot;);
 System.out.println(&quot;\t\t\t\t\t\t\t\t\t\tShakespeare&quot;);
 </screen>
 
 
 <screen>
-  &quot;At være eller ikke være
-  det er spørgsmålet.&quot;
+  &quot;At vÃ¦re eller ikke vÃ¦re
+  det er spÃ¸rgsmÃ¥let.&quot;
                     Shakespeare
 </screen>
 
@@ -2579,7 +2579,7 @@ System.out.println(&quot;\t\t\t\t\t\t\t\t\t\tShakespeare&quot;);
 <title>Date</title>
 
 <para>
-Date repræsenterer en tid, dvs. en dato og et klokkeslæt.
+Date reprÃ¦senterer en tid, dvs. en dato og et klokkeslÃ¦t.
 </para>
 
 <para>
@@ -2588,33 +2588,33 @@ tidspunkt - skal importeres med import java.util.*;</emphasis>
 </para>
 
 <para>
-<emphasis>Konstruktører</emphasis>
+<emphasis>KonstruktÃ¸rer</emphasis>
 </para>
 
 <para>
 Date ()opretter et Date-objekt, som
-repræsenterer tidspunktet, da det blev oprettet, målt i
+reprÃ¦senterer tidspunktet, da det blev oprettet, mÃ¥lt i
 millisekunder.
 </para>
 
 <para>
 Date (long tid_i_millisekunder)opretter
-et Date-objekt, som repræsenterer et tidspunkt, der er
+et Date-objekt, som reprÃ¦senterer et tidspunkt, der er
 <emphasis>tid_i_millisekunder</emphasis> efter 1. januar 1970 kl 00:00:00 GMT.
 </para>
 
 <para>
-Date (int år, int måned, int
-dag, int timer, int minutter)  <emphasis>(frarådes)</emphasis>opretter
-et Date-objekt med det givne tidspunkt. Bemærk, at <emphasis>år</emphasis>
-regnes fra år 1900 (1997 svarer til <emphasis>år</emphasis>=97),
-og <emphasis>måned</emphasis> regnes
-fra 0. (januar svarer til <emphasis>måned</emphasis>=0).
+Date (int Ã¥r, int mÃ¥ned, int
+dag, int timer, int minutter)  <emphasis>(frarÃ¥des)</emphasis>opretter
+et Date-objekt med det givne tidspunkt. BemÃ¦rk, at <emphasis>Ã¥r</emphasis>
+regnes fra Ã¥r 1900 (1997 svarer til <emphasis>Ã¥r</emphasis>=97),
+og <emphasis>mÃ¥ned</emphasis> regnes
+fra 0. (januar svarer til <emphasis>mÃ¥ned</emphasis>=0).
 </para>
 
 <para>
-Date (String dato)  <emphasis>(frarådes)</emphasis>opretter
-et Date-objekt, som repræsenterer det tidspunkt, <emphasis>dato</emphasis>
+Date (String dato)  <emphasis>(frarÃ¥des)</emphasis>opretter
+et Date-objekt, som reprÃ¦senterer det tidspunkt, <emphasis>dato</emphasis>
 indeholder.
 </para>
 
@@ -2624,60 +2624,60 @@ indeholder.
 
 <para>
 long <emphasis>getTime</emphasis> ()returnerer antal
-millisekunder siden 1. januar 1970 kl. 00:00:00 GMT repræsenteret
+millisekunder siden 1. januar 1970 kl. 00:00:00 GMT reprÃ¦senteret
 af dette Date-objekt.
 </para>
 
 <para>
 void <emphasis>setTime</emphasis> (long
-tid_i_millisekunder)ændrer dette Date-objekt til at
-repræsentere et tidspunkt, der er <emphasis>tid_i_millisekunder</emphasis>
+tid_i_millisekunder)Ã¦ndrer dette Date-objekt til at
+reprÃ¦sentere et tidspunkt, der er <emphasis>tid_i_millisekunder</emphasis>
 efter 1. januar 1970 kl 00:00:00 GMT.
 </para>
 
 <para>
 boolean <emphasis>after</emphasis> (Date
-hvornår)undersøger, om denne dato er efter
-<emphasis>hvornår</emphasis>-datoen.
+hvornÃ¥r)undersÃ¸ger, om denne dato er efter
+<emphasis>hvornÃ¥r</emphasis>-datoen.
 </para>
 
 <para>
 boolean <emphasis>before</emphasis> (Date
-hvornår)undersøger, om denne dato er før
-<emphasis>hvornår</emphasis>-datoen.
+hvornÃ¥r)undersÃ¸ger, om denne dato er fÃ¸r
+<emphasis>hvornÃ¥r</emphasis>-datoen.
 </para>
 
 <para>
 String <emphasis>toString</emphasis> ()returnerer en
-strengrepræsentation af formen: ugedag mm dd tt:mm:ss åååå
+strengreprÃ¦sentation af formen: ugedag mm dd tt:mm:ss Ã¥Ã¥Ã¥Ã¥
 (f.eks. Man 5. juli 15:23:18 2000). Denne metode kaldes automatisk,
-hvis man forsøger at lægge en dato sammen med en
+hvis man forsÃ¸ger at lÃ¦gge en dato sammen med en
 streng med +-operatoren.
 </para>
 
 <para>
 int <emphasis>getDate</emphasis>
-()    <emphasis>(frarådes)</emphasis>returnerer dagen i måneden
-repræsenteret af dette objekt.
+()    <emphasis>(frarÃ¥des)</emphasis>returnerer dagen i mÃ¥neden
+reprÃ¦senteret af dette objekt.
 </para>
 
 <para>
 void <emphasis>setDate</emphasis> (int
-dag).  <emphasis>(frarådes)</emphasis>ændrer
-dagen i måneden til <emphasis>dag</emphasis> på
-dette objekt. Sættes den til en dag uden for denne måned,
-ændres måneden tilsvarende. ... tilsvarende
+dag).  <emphasis>(frarÃ¥des)</emphasis>Ã¦ndrer
+dagen i mÃ¥neden til <emphasis>dag</emphasis> pÃ¥
+dette objekt. SÃ¦ttes den til en dag uden for denne mÃ¥ned,
+Ã¦ndres mÃ¥neden tilsvarende. ... tilsvarende
 med <emphasis>getYear()</emphasis>, <emphasis>setYear()</emphasis>, <emphasis>getMonth()</emphasis>,
 <emphasis>setMonth()</emphasis>, <emphasis>getHours()</emphasis>, <emphasis>setHours(),
 getMinutes(), setMinutes()</emphasis>, <emphasis>getSeconds()</emphasis> og
-<emphasis>setSeconds()</emphasis>.  <emphasis>(frarådes)</emphasis>
+<emphasis>setSeconds()</emphasis>.  <emphasis>(frarÃ¥des)</emphasis>
 </para>
 
 <para>
-(frarådes): Disse metoder blev frarådet fra JDK
-version 1.1, fordi de ikke understøtter andre kalendre
+(frarÃ¥des): Disse metoder blev frarÃ¥det fra JDK
+version 1.1, fordi de ikke understÃ¸tter andre kalendre
 end det gregorianske kalendersystem der bruges i den vestlige verden.
-Det betyder dog ikke det store for europæiske programmer.
+Det betyder dog ikke det store for europÃ¦iske programmer.
 </para>
 </sect3>
 
@@ -2694,7 +2694,7 @@ liste af objekter - skal importeres med import java.util.*;</emphasis>
 </para>
 
 <para>
-<emphasis>Konstruktører</emphasis>
+<emphasis>KonstruktÃ¸rer</emphasis>
 </para>
 
 <para>
@@ -2706,20 +2706,20 @@ Vector ()opretter en tom Vector.
 </para>
 
 <para>
-void <emphasis>addElement</emphasis>( objekt )føjer
+void <emphasis>addElement</emphasis>( objekt )fÃ¸jer
 <emphasis>objekt</emphasis> til vektoren. <emphasis>objekt</emphasis>
-kan være et vilkårligt objekt (men ikke en simpel type).
+kan vÃ¦re et vilkÃ¥rligt objekt (men ikke en simpel type).
 </para>
 
 <para>
 void <emphasis>insertElementAt</emphasis>( objekt, int
-indeks )indsætter <emphasis>objekt</emphasis>
-i vektoren lige før plads nummer <emphasis>indeks.</emphasis>
+indeks )indsÃ¦tter <emphasis>objekt</emphasis>
+i vektoren lige fÃ¸r plads nummer <emphasis>indeks.</emphasis>
 </para>
 
 <para>
 void <emphasis>removeElementAt</emphasis>( int indeks
-)sletter objektet på plads
+)sletter objektet pÃ¥ plads
 nummer <emphasis>indeks.</emphasis>
 </para>
 
@@ -2735,9 +2735,9 @@ elementer.
 
 <para>
 Object <emphasis>elementAt</emphasis> (int
-indeks)returnerer en reference til objektet på plads nummer
+indeks)returnerer en reference til objektet pÃ¥ plads nummer
 <emphasis>indeks</emphasis>. Husk at lave en
-typekonvertering af referencen til den rigtige klasse, før
+typekonvertering af referencen til den rigtige klasse, fÃ¸r
 du bruger resultatet.
 </para>
 
@@ -2749,7 +2749,7 @@ findes i vektoren.
 
 <para>
 int <emphasis>indexOf</emphasis>( objekt )returnerer
-indekset på første forekomst af <emphasis>objekt</emphasis>
+indekset pÃ¥ fÃ¸rste forekomst af <emphasis>objekt</emphasis>
 i vektoren. Hvis den ikke findes, returneres -1.
 </para>
 

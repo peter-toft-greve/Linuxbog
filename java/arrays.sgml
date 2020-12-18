@@ -2,29 +2,29 @@
   <title>Arrays</title>
 
 <para>
-Kapitlet forudsættes ikke i resten af bogen, men er nyttigt
+Kapitlet forudsÃ¦ttes ikke i resten af bogen, men er nyttigt
 i praktisk programmering.
 </para>
 
 <para>
-Forudsætter <xref linkend="java-obj" />, Objekter (og et enkelt sted 
+ForudsÃ¦tter <xref linkend="java-obj" />, Objekter (og et enkelt sted 
 <xref linkend="java-arv" />, Nedarvning).  </para>
 
 <para>
-Ofte har man behov for at håndtere et større antal
-objekter eller simple typer på en ensartet måde.
+Ofte har man behov for at hÃ¥ndtere et stÃ¸rre antal
+objekter eller simple typer pÃ¥ en ensartet mÃ¥de.
 Indtil nu har vi gjort det med lister af typen Vector, men Java
-understøtter også <emphasis>arrays</emphasis>.
+understÃ¸tter ogsÃ¥ <emphasis>arrays</emphasis>.
 </para>
 
-<blockquote><para>Et array er en række data af
+<blockquote><para>Et array er en rÃ¦kke data af
 samme type</para></blockquote>
 
 <para>
-Man kan f.eks. have et array af int eller et array af Point. Når
-man har et array af int, betyder det, at man har en række
-int-variabler som ligger i arrayet og kan ændres eller læses
-vha. arrayet og et indeks. Indekset er nummeret på variablen i
+Man kan f.eks. have et array af int eller et array af Point. NÃ¥r
+man har et array af int, betyder det, at man har en rÃ¦kke
+int-variabler som ligger i arrayet og kan Ã¦ndres eller lÃ¦ses
+vha. arrayet og et indeks. Indekset er nummeret pÃ¥ variablen i
 arrayet - ligesom i Vector.
 </para>
 
@@ -35,10 +35,10 @@ indeholder variablerne.
 </para>
 
 <sect1 id="java-arrays-erkl">
-  <title>Erklæring og brug</title>
+  <title>ErklÃ¦ring og brug</title>
 
 <para>
-Man erklærer en array-variabel med den type data, man ønsker
+Man erklÃ¦rer en array-variabel med den type data, man Ã¸nsker
 at lave et array af, umiddelbart efterfulgt af &quot;[]&quot;,
 f.eks.:
 </para>
@@ -49,9 +49,9 @@ f.eks.:
 
 
 <para>
-Dette erklærer, at arr er en variabel med typen &quot;array
+Dette erklÃ¦rer, at arr er en variabel med typen &quot;array
 af int&quot;. Ligesom med variabler af objekt-type er dette blot
-en reference hen til det egentlige array-objekt. Hvis man ønsker
+en reference hen til det egentlige array-objekt. Hvis man Ã¸nsker
 at oprette et array, skriver man f.eks.:
 </para>
 
@@ -61,18 +61,18 @@ at oprette et array, skriver man f.eks.:
 
 
 <para>
-Dette sætter arr til at referere til et array, der har 6
+Dette sÃ¦tter arr til at referere til et array, der har 6
 elementer.
 </para>
 
 <para>
-Elementer i et array har som udgangspunkt værdien 0. Havde
+Elementer i et array har som udgangspunkt vÃ¦rdien 0. Havde
 arrayet indeholdt referencer til objekter, var de blevet sat til
 null.
 </para>
 
 <para>
-Arrayets værdier kan sættes og aflæses ved at
+Arrayets vÃ¦rdier kan sÃ¦ttes og aflÃ¦ses ved at
 angive indeks i firkantede []-parenteser efter variabelnavnet:
 </para>
 
@@ -87,9 +87,9 @@ public class ArrayEksempel1
 
     arr[3] = arr[0] + arr[1] + arr[2];
 
-    int længde = <emphasis>arr.length</emphasis>;    <emphasis>// = 6, da vi oprettede det med new int[6]</emphasis>
+    int lÃ¦ngde = <emphasis>arr.length</emphasis>;    <emphasis>// = 6, da vi oprettede det med new int[6]</emphasis>
 
-    for (int i=0; i&lt;længde; i=i+1) System.out.print( <emphasis>arr[i]</emphasis> + &quot; &quot; );
+    for (int i=0; i&lt;lÃ¦ngde; i=i+1) System.out.print( <emphasis>arr[i]</emphasis> + &quot; &quot; );
     System.out.println();
   }
 }
@@ -104,24 +104,24 @@ public class ArrayEksempel1
 
 <para>
 Indekseringen starter altid fra 0 af, og sidste lovlige indeks er
-dermed lig med arrayets længde-1. Indekserer man uden for
-arrayets grænser, kastes undtagelsen
+dermed lig med arrayets lÃ¦ngde-1. Indekserer man uden for
+arrayets grÃ¦nser, kastes undtagelsen
 ArrayIndexOutOfBoundsException.
 </para>
 
 <para>
-Alle arrays er objekter (derfor bruges new-operatoren, når
+Alle arrays er objekter (derfor bruges new-operatoren, nÃ¥r
 vi opretter et nyt array). Alle array-objekter har variablen length,
-som fortæller hvor mange pladser arrayet indeholder.
+som fortÃ¦ller hvor mange pladser arrayet indeholder.
 </para>
 
-<blockquote><para>Længden på et array kan
-ikke ændres</para></blockquote>
+<blockquote><para>LÃ¦ngden pÃ¥ et array kan
+ikke Ã¦ndres</para></blockquote>
 
 <para>
-Selvom array-objekter ikke kan ændre længde, kan man
+Selvom array-objekter ikke kan Ã¦ndre lÃ¦ngde, kan man
 lade variablen referere til et andet array-objekt med en anden
-længde:
+lÃ¦ngde:
 </para>
 
 <screen>
@@ -130,8 +130,8 @@ længde:
 
 
 <para>
-Nu refererer arr til et andet array med længde 8 (og det
-gamle arrays og dets værdier er glemt).
+Nu refererer arr til et andet array med lÃ¦ngde 8 (og det
+gamle arrays og dets vÃ¦rdier er glemt).
 </para>
 
 <sect2 id="java-arrays-erkl-eks">
@@ -139,7 +139,7 @@ gamle arrays og dets værdier er glemt).
 
 <para>
 Arrays er gode til at lave statistik med. Her laver vi statistik
-på slag med to terninger:
+pÃ¥ slag med to terninger:
 </para>
 
 <screen>
@@ -155,7 +155,7 @@ public class TerningStatistik
     {
       int sum = (int) (6*Math.random()+1) + (int) (6*Math.random()+1);
 
-      antal[sum] = antal[sum]+1;  <emphasis>// optæl statistikken for summen af øjne</emphasis>
+      antal[sum] = antal[sum]+1;  <emphasis>// optÃ¦l statistikken for summen af Ã¸jne</emphasis>
     }
 
     for (int n=2; n&lt;=12; n=n+1) System.out.println( n + &quot;: &quot; + antal[n]);
@@ -187,7 +187,7 @@ public class TerningStatistik
 <para>
 Main-metoden, som vi har defineret utallige gange, tager en
 parameter, som er et array af strenge. Dette array indeholder
-kommandolinje-parametrene ved kørsel af programmet.
+kommandolinje-parametrene ved kÃ¸rsel af programmet.
 </para>
 
 <screen>
@@ -214,16 +214,16 @@ Parameter 2 er: z
 
 
 <para>
-Programmet herover er kørt fra prompten med &quot;java
+Programmet herover er kÃ¸rt fra prompten med &quot;java
 Kommandolinje x y z&quot;.
 </para>
 </sect1>    <!--   Main-metoden -->
 
 <sect1 id="java-arrays-start-values">
-  <title>Arrays med startværdier</title>
+  <title>Arrays med startvÃ¦rdier</title>
 
 <para>
-Arrays kan initialiseres med startværdier i {} og er adskilt
+Arrays kan initialiseres med startvÃ¦rdier i {} og er adskilt
 med komma.
 </para>
 
@@ -233,12 +233,12 @@ med komma.
 
 
 <para>
-Det er ofte meget mere bekvemt end at sætte de enkelte
-værdier.
+Det er ofte meget mere bekvemt end at sÃ¦tte de enkelte
+vÃ¦rdier.
 </para>
 
 <para>
-Herunder et program, der udskriver antallet af dage i hver måned:
+Herunder et program, der udskriver antallet af dage i hver mÃ¥ned:
 </para>
 
 <screen>
@@ -246,13 +246,13 @@ public class Maaneder
 {  
   public static void main(String[] args)
   { 
-<emphasis>    int[] måneder = {31,28,31,30,31,30,31,31,30,31,30,31};</emphasis>
+<emphasis>    int[] mÃ¥neder = {31,28,31,30,31,30,31,31,30,31,30,31};</emphasis>
     
-    System.out.println(&quot;Længden af januar er: &quot; + måneder[0]);
-    System.out.println(&quot;Længden af april er: &quot; + måneder[3]);
+    System.out.println(&quot;LÃ¦ngden af januar er: &quot; + mÃ¥neder[0]);
+    System.out.println(&quot;LÃ¦ngden af april er: &quot; + mÃ¥neder[3]);
 
-    for (int i=0; i &lt;måneder.length; i++)
-      System.out.print(måneder[i] + &quot;, &quot;);
+    for (int i=0; i &lt;mÃ¥neder.length; i++)
+      System.out.print(mÃ¥neder[i] + &quot;, &quot;);
 
     System.out.println();
   }
@@ -262,21 +262,21 @@ public class Maaneder
 <para>Resultatet bliver:</para>
 
 <screen>
-Længden af januar er: 31
-Længden af april er: 30
+LÃ¦ngden af januar er: 31
+LÃ¦ngden af april er: 30
 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31,
 </screen>
 </sect1>
 
 <sect1 id="java-arrays-gennemloeb">
-  <title>Gennemløb og manipulering</title>
+  <title>GennemlÃ¸b og manipulering</title>
 
 <para>
 Et array er faktisk et objekt, men det har ingen metoder og kun &eacute;n
-variabel, nemlig length. Arrays kan ikke ændre størrelse,
-og length er da også konstant. Den eneste måde at få
-et array af en anden størrelse er at oprette et andet array og
-så kopiere det gamle indhold over i det nye array.
+variabel, nemlig length. Arrays kan ikke Ã¦ndre stÃ¸rrelse,
+og length er da ogsÃ¥ konstant. Den eneste mÃ¥de at fÃ¥
+et array af en anden stÃ¸rrelse er at oprette et andet array og
+sÃ¥ kopiere det gamle indhold over i det nye array.
 </para>
 
 <para>
@@ -292,8 +292,8 @@ public class FjernEtElement
      <emphasis>int[] a=new int[10]</emphasis>;
     for (int n=0;n&lt;a.length;n=n+1) a[n]=n*10;
 
-<emphasis>    // Gennemløb og udskrivning af array   </emphasis>
-    System.out.print(&quot;a før: &quot;);
+<emphasis>    // GennemlÃ¸b og udskrivning af array   </emphasis>
+    System.out.print(&quot;a fÃ¸r: &quot;);
      for (int n=0;n&lt;a.length;n=n+1) System.out.print(a[n]+&quot; &quot;);
      System.out.println();
 
@@ -302,7 +302,7 @@ public class FjernEtElement
 
     <emphasis>int[] tmp=new int[9]</emphasis>;<emphasis> // Nyt array med 9 pladser</emphasis>
 
-<emphasis>    // bemærk at elementet der skal fjernes ikke kopieres</emphasis>
+<emphasis>    // bemÃ¦rk at elementet der skal fjernes ikke kopieres</emphasis>
     <emphasis>for (int n=0;n&lt;fjernes;n=n+1) tmp[n]=a[n]</emphasis>;
 
     <emphasis>for (int n=fjernes+1;n&lt;a.length;n=n+1) tmp[n-1]=a[n]</emphasis>;
@@ -319,7 +319,7 @@ public class FjernEtElement
 <para>Resultatet bliver:</para>
 
 <screen>
-a før: 0 10 20 30 40 50 60 70 80 90
+a fÃ¸r: 0 10 20 30 40 50 60 70 80 90
 a efter: 0 10 20 30 40 60 70 80 90
 </screen>
 </sect1>
@@ -328,7 +328,7 @@ a efter: 0 10 20 30 40 60 70 80 90
   <title>Array af objekter</title>
 
 <para>
-Et array af objekter oprettes på samme måde som et
+Et array af objekter oprettes pÃ¥ samme mÃ¥de som et
 array af simple typer:
 </para>
 
@@ -338,15 +338,15 @@ array af simple typer:
 
 
 <para>
-Bemærk: Arrayet indeholder en række af referencer til
-objekterne. Herover oprettes altså ingen punkter! Dvs. pkt[0],
+BemÃ¦rk: Arrayet indeholder en rÃ¦kke af referencer til
+objekterne. Herover oprettes altsÃ¥ ingen punkter! Dvs. pkt[0],
 pkt[1],...,pkt[9] er alle null.
 </para>
 
 <para>
-Arrays kan bruges til at gå mellem værdier fra et
-domæne til værdier i et andet domæne. For eksempel
-konvertering af måneders numre (1-12) til deres navne:
+Arrays kan bruges til at gÃ¥ mellem vÃ¦rdier fra et
+domÃ¦ne til vÃ¦rdier i et andet domÃ¦ne. For eksempel
+konvertering af mÃ¥neders numre (1-12) til deres navne:
 </para>
 
 <screen>
@@ -354,12 +354,12 @@ public class MaanedersNavne
 {
   public static void main(String[] args) 
   {
-<emphasis>    String[] måneder = {&quot;januar&quot;, &quot;februar&quot;, &quot;marts&quot;, &quot;april&quot;, &quot;maj&quot;, &quot;juni&quot;,</emphasis>
+<emphasis>    String[] mÃ¥neder = {&quot;januar&quot;, &quot;februar&quot;, &quot;marts&quot;, &quot;april&quot;, &quot;maj&quot;, &quot;juni&quot;,</emphasis>
 <emphasis>      &quot;juli&quot;, &quot;august&quot;, &quot;september&quot;, &quot;oktober&quot;, &quot;november&quot;, &quot;december&quot; };</emphasis>
 
-      System.out.println(&quot;Den 1. måned er &quot; + måneder[0] );
-      System.out.println(&quot;Den 6. måned er &quot; + måneder[5] );
-      System.out.println(&quot;Den 9. måned er &quot; + måneder[9] );  
+      System.out.println(&quot;Den 1. mÃ¥ned er &quot; + mÃ¥neder[0] );
+      System.out.println(&quot;Den 6. mÃ¥ned er &quot; + mÃ¥neder[5] );
+      System.out.println(&quot;Den 9. mÃ¥ned er &quot; + mÃ¥neder[9] );  
   }
 }
 </screen>
@@ -367,15 +367,15 @@ public class MaanedersNavne
 <para>Resultatet bliver:</para>
 
 <screen>
-Den 1. måned er januar
-Den 6. måned er juni
-Den 9. måned er september
+Den 1. mÃ¥ned er januar
+Den 6. mÃ¥ned er juni
+Den 9. mÃ¥ned er september
 </screen>
 
 
 <para>
-På samme måde som strenge kan andre slags objekter
-lægges i et array, f.eks. punkter:
+PÃ¥ samme mÃ¥de som strenge kan andre slags objekter
+lÃ¦gges i et array, f.eks. punkter:
 </para>
 
 <screen>
@@ -410,17 +410,17 @@ public class Terninger
   <title>Arrays versus vektorer</title>
 
 <para>
-Som det ses, er det besværligt at ændre størrelsen
-på et array, f.eks. når der skal indsættes eller
-slettes elementer. Til gengæld kan arrays indeholde simple
-typer, det er nemmere at få adgang til elementerne, og man kan
-initialisere et array på &eacute;n linje. Faktisk er
-Vector-klassen et array i en indpakning, der gør det nemmere
-at bruge. Hvad du vælger er op til dig selv.
+Som det ses, er det besvÃ¦rligt at Ã¦ndre stÃ¸rrelsen
+pÃ¥ et array, f.eks. nÃ¥r der skal indsÃ¦ttes eller
+slettes elementer. Til gengÃ¦ld kan arrays indeholde simple
+typer, det er nemmere at fÃ¥ adgang til elementerne, og man kan
+initialisere et array pÃ¥ &eacute;n linje. Faktisk er
+Vector-klassen et array i en indpakning, der gÃ¸r det nemmere
+at bruge. Hvad du vÃ¦lger er op til dig selv.
 </para>
 
 <para>
-En vektor er god at bruge, når:
+En vektor er god at bruge, nÃ¥r:
 </para>
 
 <itemizedlist mark="bullet">
@@ -428,7 +428,7 @@ En vektor er god at bruge, når:
 
 <para>
 
-antallet af elementer kan ændre sig
+antallet af elementer kan Ã¦ndre sig
 </para>
 
 </listitem>
@@ -436,14 +436,14 @@ antallet af elementer kan ændre sig
   <listitem>
 
 <para>
-der er brug for at indsætte og slette elementer løbende
+der er brug for at indsÃ¦tte og slette elementer lÃ¸bende
 </para>
 
 </listitem>
 </itemizedlist>
 
 <para>
-Et array er godt at bruge, når:
+Et array er godt at bruge, nÃ¥r:
 </para>
 
 <itemizedlist mark="bullet">
@@ -451,8 +451,8 @@ Et array er godt at bruge, når:
 
 <para>
 
-antallet af elementer er fast, og man evt. kender værdierne
-  på forhånd
+antallet af elementer er fast, og man evt. kender vÃ¦rdierne
+  pÃ¥ forhÃ¥nd
 </para>
 
 </listitem>
@@ -468,7 +468,7 @@ man arbejder med simple typer som int og double
   <listitem>
 
 <para>
-programmet skal være meget hurtigt
+programmet skal vÃ¦re meget hurtigt
 </para>
 
 </listitem>
@@ -476,8 +476,8 @@ programmet skal være meget hurtigt
 
 <para>
 Der er desuden den fordel ved arrays, at de er typesikre. Vi kan
-ikke komme til at lægge værdier af forkerte typer ind i
-et array - så stopper oversætteren os.
+ikke komme til at lÃ¦gge vÃ¦rdier af forkerte typer ind i
+et array - sÃ¥ stopper oversÃ¦tteren os.
 </para>
 </sect1>
 
@@ -489,8 +489,8 @@ et array - så stopper oversætteren os.
 <para>
 
 Lav et program, der simulerer kast med 2 terninger. Der
-  udføres f.eks. 100 kast. Optæl i et array hyppigheden
-  af summen af øjenantallene.
+  udfÃ¸res f.eks. 100 kast. OptÃ¦l i et array hyppigheden
+  af summen af Ã¸jenantallene.
 </para>
 
 </listitem>
@@ -498,9 +498,9 @@ Lav et program, der simulerer kast med 2 terninger. Der
   <listitem>
 
 <para>
-Lav programmet om til at lave hyppighedsstatistik på
-  med 6 terninger. Udvid det derpå til at kunne lave
-  statistik på kast med et vilkårligt antal terninger.
+Lav programmet om til at lave hyppighedsstatistik pÃ¥
+  med 6 terninger. Udvid det derpÃ¥ til at kunne lave
+  statistik pÃ¥ kast med et vilkÃ¥rligt antal terninger.
 </para>
 
 </listitem>

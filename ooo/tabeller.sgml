@@ -10,40 +10,40 @@
 <sect1 id="ooo-tabeller-oprette">
   <title>Oprette en tabel</title>
 
-<para>Du indsætter en tabel ved at vælge <emphasis>Indsæt/Tabel</emphasis> (tastatur:
-    <emphasis>Ctrl-F12</emphasis>). Indtast antal rækker og kolonner. Du kan desuden
-    vælge:</para>
+<para>Du indsÃ¦tter en tabel ved at vÃ¦lge <emphasis>IndsÃ¦t/Tabel</emphasis> (tastatur:
+    <emphasis>Ctrl-F12</emphasis>). Indtast antal rÃ¦kker og kolonner. Du kan desuden
+    vÃ¦lge:</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para><emphasis>Overskrift</emphasis> hvis øverste række skal formateres som en
+<para><emphasis>Overskrift</emphasis> hvis Ã¸verste rÃ¦kke skal formateres som en
         overskrift.</para>
 
 </listitem>
 
   <listitem>
 
-<para><emphasis>Gentag på hver side</emphasis> hvis overskriften skal gentages når
+<para><emphasis>Gentag pÃ¥ hver side</emphasis> hvis overskriften skal gentages nÃ¥r
         tabellen deles over flere sider.</para>
 
 </listitem>
 
   <listitem>
 
-<para><emphasis>Opdel tabel ikke</emphasis> hvis tabellen ikke må deles over flere
+<para><emphasis>Opdel tabel ikke</emphasis> hvis tabellen ikke mÃ¥ deles over flere
         sider.</para>
 
 </listitem>
 
   <listitem>
 
-<para><emphasis>Ramme</emphasis> hvis der skal være rammer mellem cellerne.</para>
+<para><emphasis>Ramme</emphasis> hvis der skal vÃ¦re rammer mellem cellerne.</para>
 
 </listitem>
 </itemizedlist>
 
-<para>Knappen <emphasis>Autoformat</emphasis> er til at vælge forskellige
+<para>Knappen <emphasis>Autoformat</emphasis> er til at vÃ¦lge forskellige
     standardformateringer af tabellen.</para>
 
 <para> <emphasis>Tip</emphasis> : En smal tabel kan med fordel placeres i en tekstramme, se

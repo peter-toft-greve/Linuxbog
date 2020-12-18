@@ -4,8 +4,8 @@
 # af Hans Schou <chlor@sslug.dk>
 # $Id$
 
-# Læg filen i /home/httpd/cgi-bin/
-# Gør filen executeable: chmod +x hello.sh-cgi
+# LÃ¦g filen i /home/httpd/cgi-bin/
+# GÃ¸r filen executeable: chmod +x hello.sh-cgi
 # Skift ejer: chown nobody:nobody hello.sh-cgi
 
 # Afvikling: http://localhost/cgi-bin/hello.sh-cgi

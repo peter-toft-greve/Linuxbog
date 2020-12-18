@@ -2,58 +2,58 @@
 <title>Brugerprogrammer</title>
 <para>
 I dette kapitel giver vi en oversigt over programmer, der findes til
-Linux. Kapitlet er langt fra udtømmende og mange flere vil man kunne
-læse om i bogen "Linux - Friheden til at vælge programmer", der findes
-på <ulink url="http://&linuxbogurl;/">&linuxbogurl;/</ulink>.
+Linux. Kapitlet er langt fra udtÃ¸mmende og mange flere vil man kunne
+lÃ¦se om i bogen "Linux - Friheden til at vÃ¦lge programmer", der findes
+pÃ¥ <ulink url="http://&linuxbogurl;/">&linuxbogurl;/</ulink>.
 </para>
 
 <para>
-Det er væsentligt at skelne mellem frie (Open Source)
-programmer og proprietære til Linux. 
-Det er fuldt legalt at lave egne proprietære<footnote><para>
-dvs. hvor man ikke får kildetekst til programmet.</para></footnote> programmer,
-der passer til Linux og sælge dem for penge. Det er den
+Det er vÃ¦sentligt at skelne mellem frie (Open Source)
+programmer og proprietÃ¦re til Linux. 
+Det er fuldt legalt at lave egne proprietÃ¦re<footnote><para>
+dvs. hvor man ikke fÃ¥r kildetekst til programmet.</para></footnote> programmer,
+der passer til Linux og sÃ¦lge dem for penge. Det er den
 forretningsmodel som bla. Corel anvendte til WordPerfect (indtil de
-stoppede). Der er også en række programmer som reelt er shareware, dvs. 
-proprietære men gratis. Eksempler er RealPlayer, 
-Netscape Communicator og Adobe Acrobat Reader (til at læse PDF-filer).
+stoppede). Der er ogsÃ¥ en rÃ¦kke programmer som reelt er shareware, dvs. 
+proprietÃ¦re men gratis. Eksempler er RealPlayer, 
+Netscape Communicator og Adobe Acrobat Reader (til at lÃ¦se PDF-filer).
 </para>
 
 <sect1 id="prop-whatis-bp">
-<title>Proprietære brugerprogrammer til Linux</title>
+<title>ProprietÃ¦re brugerprogrammer til Linux</title>
 
 <para>
 <emphasis>OBS:</emphasis> 
-Følgende programpakker følger normalt ikke med en Linux-distribution.
+FÃ¸lgende programpakker fÃ¸lger normalt ikke med en Linux-distribution.
 </para>
 
 <para>
-Af brugerprogrammer til Linux der er proprietære kan nævnes
+Af brugerprogrammer til Linux der er proprietÃ¦re kan nÃ¦vnes
 StarOffice, der er SUNs kontorpakke. I version 5.2 var StarOffice til
 Linux gratis men version 6.0 og senere er salg-bare. 
 Samme kildetekst som anvendes til
-StarOffice vil indgå i OpenOffice.org, der er en gratis Open
+StarOffice vil indgÃ¥ i OpenOffice.org, der er en gratis Open
 Source version af samme program. StarOffice vil i forhold til
-OpenOffice.org yderligere have templates, skifttyper og andet som gør
-den mere attraktiv. StarOffice kan findes på 
+OpenOffice.org yderligere have templates, skifttyper og andet som gÃ¸r
+den mere attraktiv. StarOffice kan findes pÃ¥ 
 <ulink url="http://www.sun.com">http://www.sun.com</ulink> og OpenOffice.org
-kan findes på <ulink url="http://www.openoffice.org">http://www.openoffice.org</ulink>.
+kan findes pÃ¥ <ulink url="http://www.openoffice.org">http://www.openoffice.org</ulink>.
 </para>
 
 <para>
 Adobe Acrobat Reader hentes fra 
 <ulink url="http://www.adobe.com">http://www.adobe.com</ulink>. Med Acrobat 
-Reader kan man læse PDF-filer og skrive dem ud til printer. Normalt er 
-programmet ikke nødvendigt, da KGhostView (til KDE) og gv begge gode 
+Reader kan man lÃ¦se PDF-filer og skrive dem ud til printer. Normalt er 
+programmet ikke nÃ¸dvendigt, da KGhostView (til KDE) og gv begge gode 
 Open Source-programmer, der reelt kan det samme.
 </para>
 
 <para>
-Netscape Communicator var det første store program som frigav deres
+Netscape Communicator var det fÃ¸rste store program som frigav deres
 kildetekst i Open Source-form. Det var dog ikke hele kildeteksten de
-frigav og derfor har det tager Open Source-varianten Mozilla mange år
+frigav og derfor har det tager Open Source-varianten Mozilla mange Ã¥r
 at komme op i omdrejninger med en amputeret kildetekst som
-startskud. Netscape-firmaet har løbende frigivet nye versioner af
+startskud. Netscape-firmaet har lÃ¸bende frigivet nye versioner af
 Netscape. Det er typisk nogle
 ret gode browsere - specielt til Java og Javascript. 
 </para>
@@ -64,7 +64,7 @@ ret gode browsere - specielt til Java og Javascript.
 <title>Hvad findes der af Open Source-programmer til Linux</title>
 <para>
 Open Source-programmer til Linux er i kraftig stigning. Der er mange
-hjemmesider på internettet hvor man kan finde Linux-programmer. To
+hjemmesider pÃ¥ internettet hvor man kan finde Linux-programmer. To
 hjemmesider samler mange af projekterne:
 </para>
 
@@ -72,8 +72,8 @@ hjemmesider samler mange af projekterne:
 <listitem>
  <para>
  <ulink url="http://sourceforge.net">http://sourceforge.net</ulink> 
- er en portal for udviklingsprojekter, som også tilbyder udviklingsstøtte
- i form af harddiskplads og versionshåndtering til projektet. På denne
+ er en portal for udviklingsprojekter, som ogsÃ¥ tilbyder udviklingsstÃ¸tte
+ i form af harddiskplads og versionshÃ¥ndtering til projektet. PÃ¥ denne
  hjemmeside findes der over 30.000 projekter.
  </para>
 </listitem>
@@ -81,7 +81,7 @@ hjemmesider samler mange af projekterne:
  <para>
  <ulink url="http://freshmeat.net">http://freshmeat.net</ulink> er som
  Sourceforge en portal hvor man kan finde over 20.000 udviklingsprojekter i
- Open Source-verdenen. Freshmeat tilbyder dog ikke at håndtere 
+ Open Source-verdenen. Freshmeat tilbyder dog ikke at hÃ¥ndtere 
  projektets filer og data.
  </para>
 </listitem>
@@ -90,19 +90,19 @@ hjemmesider samler mange af projekterne:
 <indexterm><primary>versionsnumre</primary></indexterm>
 
 <para>
-Mange af projekterne er gode og solide, mens andre bærer præg af at de
-er startet på en god ide, men kræfterne bagved kunne ikke følge
-intentionerne.  Derfor er det klogt at se om versionsnummeret på
+Mange af projekterne er gode og solide, mens andre bÃ¦rer prÃ¦g af at de
+er startet pÃ¥ en god ide, men krÃ¦fterne bagved kunne ikke fÃ¸lge
+intentionerne.  Derfor er det klogt at se om versionsnummeret pÃ¥
 projektet er under 1.0 eller over. Normalt viser man udviklingsstadiet
-ved versionsnummeret. Under 0.2 så har projektet ofte store mangler,
+ved versionsnummeret. Under 0.2 sÃ¥ har projektet ofte store mangler,
 man kan noget. Omkring version 0.5 er programmet ofte brugbart, men
-slet ikke poleret færdig. Version 1.0 er en milepæl hvor man
+slet ikke poleret fÃ¦rdig. Version 1.0 er en milepÃ¦l hvor man
 signalerer at programmet nu svarer til intentionerne og er
-"færdigt". Efter version 1.0 kommer der typisk udvidelser eller
+"fÃ¦rdigt". Efter version 1.0 kommer der typisk udvidelser eller
 egentlig redesign. Ud over selve versionsnummeret er det klogt at
-følge hvor lang tid der går mellem udgivelserne af programmet. Hvis
-versionen er under 1.0 og der går lang tid mellem udgivelser, så er
-det ofte et projekt der er gået i stå og man kan ikke forvente at der
+fÃ¸lge hvor lang tid der gÃ¥r mellem udgivelserne af programmet. Hvis
+versionen er under 1.0 og der gÃ¥r lang tid mellem udgivelser, sÃ¥ er
+det ofte et projekt der er gÃ¥et i stÃ¥ og man kan ikke forvente at der
 reelt sker meget mere. Endelig skal det siges at nok er det flertallet
 af projekter der anvender versionsnumre som beskrevet - men ikke alle. 
 </para>
@@ -113,18 +113,18 @@ af projekter der anvender versionsnumre som beskrevet - men ikke alle.
 
 <para>
 Der er mange forskellige programmer til Linux. En meget stor del er
-tekstbaserede programmer, der er optimeret til en primær funktion og
-ofte en del varianter af primær-funktionen. Et eksempel er fetchmail,
+tekstbaserede programmer, der er optimeret til en primÃ¦r funktion og
+ofte en del varianter af primÃ¦r-funktionen. Et eksempel er fetchmail,
 som anvendes til at hente emails fra en email-server. Programmet
-anvendes måske direkte, men ofte indirekte af andre større programmer
+anvendes mÃ¥ske direkte, men ofte indirekte af andre stÃ¸rre programmer
 til at hente emails.
 </para>
 
 <para>
-Der findes flere grafiske skrivebordsmiljøer til Linux. Hver er optimeret
-til sin funktion. Nogle er meget skrabede, men meget hurtige og kræver
-kun få ressourcer og dermed et godt valg på en ældre PC, mens andre er
-meget avancerede og kræver så også meget større system-ressourcer. I
+Der findes flere grafiske skrivebordsmiljÃ¸er til Linux. Hver er optimeret
+til sin funktion. Nogle er meget skrabede, men meget hurtige og krÃ¦ver
+kun fÃ¥ ressourcer og dermed et godt valg pÃ¥ en Ã¦ldre PC, mens andre er
+meget avancerede og krÃ¦ver sÃ¥ ogsÃ¥ meget stÃ¸rre system-ressourcer. I
 den tunge og avancerede ende finder vi KDE og Gnome, som begge er
 meget langt fremme og har langt de fleste elementer som findes til
 Windows-varianterne eller Apple OS/X.
@@ -142,29 +142,29 @@ Windows-varianterne eller Apple OS/X.
 
 <para>
 Praktisk talt alle programmeringssprog findes til Linux. I bogen
-"Linux - Friheden til at programmere" som kan hentes på <ulink
+"Linux - Friheden til at programmere" som kan hentes pÃ¥ <ulink
 url="http://&linuxbogurl;/">&linuxbogurl;/</ulink>
-har vi netop valgt at præsentere en meget stort antal af de sprog der
-findes i Open Source-udgave. Af listen kan f.eks. nævnes Ada, Basic, C, C++,
-C# (er på vej), Cobol, Fortran, Java, ML, Pascal, Perl og
-Python. Ud over de Open Source-oversættere der findes til de nævnte
+har vi netop valgt at prÃ¦sentere en meget stort antal af de sprog der
+findes i Open Source-udgave. Af listen kan f.eks. nÃ¦vnes Ada, Basic, C, C++,
+C# (er pÃ¥ vej), Cobol, Fortran, Java, ML, Pascal, Perl og
+Python. Ud over de Open Source-oversÃ¦ttere der findes til de nÃ¦vnte
 sprog findes der Kylix til Linux - dvs. Delphi fra Borland. Det er et
-interessant udviklingsmiljø, idet det er gratis at hente hjem og
-gratis at udvikle og bruge programmer lavet i Kylix - så længe
-programmerne er under GPL (en open source-licens). Der findes også
-flere kommercielle oversættere til C, C++ og Fortran som typisk
+interessant udviklingsmiljÃ¸, idet det er gratis at hente hjem og
+gratis at udvikle og bruge programmer lavet i Kylix - sÃ¥ lÃ¦nge
+programmerne er under GPL (en open source-licens). Der findes ogsÃ¥
+flere kommercielle oversÃ¦ttere til C, C++ og Fortran som typisk
 genererer mere effektiv kode end de tilsvarende open source-varianter.
 </para>
 
 <para>
-Til at udvikle grafiske programmer til Linux er det nok primært Kylix
+Til at udvikle grafiske programmer til Linux er det nok primÃ¦rt Kylix
 man vil overveje at anvende hvis man vil udvikle i Pascal. Hvis man
-vil udvikle i C/C++ så findes der flere grafiske udviklingsmiljøer,
-bla. KDevelop som er en del af KDE-miljøet.
+vil udvikle i C/C++ sÃ¥ findes der flere grafiske udviklingsmiljÃ¸er,
+bla. KDevelop som er en del af KDE-miljÃ¸et.
 </para>
 
 <figure id="kdev-fig" float="1">
-<title>KDevelop til KDE er et integreret C/C++ udviklingsmiljø</title>
+<title>KDevelop til KDE er et integreret C/C++ udviklingsmiljÃ¸</title>
 <graphic fileref="kdevelop2.&magic;"  scale="60"></graphic>
 </figure>
 
@@ -172,33 +172,33 @@ bla. KDevelop som er en del af KDE-miljøet.
 <title>Databaser</title>
 <para>
 I 1998 skete der en hurtigt og kraftigt skred hos
-database-fabrikanterne. Indenfor få måneder meldte alle de større
+database-fabrikanterne. Indenfor fÃ¥ mÃ¥neder meldte alle de stÃ¸rre
 databasefabriakanter ud med at de ville til at udgive en Linux-udgave
-af deres batabase. Ledt an af sværvægtere som Informix og Oracle så
+af deres batabase. Ledt an af svÃ¦rvÃ¦gtere som Informix og Oracle sÃ¥
 kom Sybase og IBM med DB2 snart med. Interbase fra Borland blev endda
-udgivet i Open Source-form også til Linux. Bl.a. Oracle har sidenhen
-været meget ude med at få tunet deres database til Linux og han også
-arbejdet med at forbedre selve Linux-kernen for at få højere total
+udgivet i Open Source-form ogsÃ¥ til Linux. Bl.a. Oracle har sidenhen
+vÃ¦ret meget ude med at fÃ¥ tunet deres database til Linux og han ogsÃ¥
+arbejdet med at forbedre selve Linux-kernen for at fÃ¥ hÃ¸jere total
 ydelse.
 </para>
 
 <para>
-Ud over de kommercielle sværvægtere indenfor databaser findes to Open
+Ud over de kommercielle svÃ¦rvÃ¦gtere indenfor databaser findes to Open
 Source databaser fra mindre firmaer og andre udviklere som alt i alt
-kan være meget attraktive. Til begge findes kommerciel support og en
-masse erfaring om brug af disse databaser i Linux-miljøet.
+kan vÃ¦re meget attraktive. Til begge findes kommerciel support og en
+masse erfaring om brug af disse databaser i Linux-miljÃ¸et.
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
- MySQL som findes på <ulink url="http://www.mysql.com">http://www.mysql.com</ulink> er afsindig hurtig og nem at installere. MySQL er et ideelt valg 
+ MySQL som findes pÃ¥ <ulink url="http://www.mysql.com">http://www.mysql.com</ulink> er afsindig hurtig og nem at installere. MySQL er et ideelt valg 
 hvis man mangler en database til mindre og mellemstore opgaver.
  </para>
 </listitem>
 <listitem> 
  <para>
-PostfreSQL er en anden glimrende database på <ulink url="http://www2.dk.postgresql.org">http://www2.dk.postgresql.org</ulink>. Den har flere funktioner end 
+PostfreSQL er en anden glimrende database pÃ¥ <ulink url="http://www2.dk.postgresql.org">http://www2.dk.postgresql.org</ulink>. Den har flere funktioner end 
 MySQL.
  </para>
 </listitem>
@@ -207,23 +207,23 @@ MySQL.
 <para>
 Mange anvender databaser sammen med en webserver - som i praksis er en
 Apache-webserver. Mellem databasen og Apache anvender mange PHP4 - som
-kan findes på <ulink
+kan findes pÃ¥ <ulink
 url="http://www.php4.net">http://www.php4.net</ulink>.  PHP4 har samme
 funktion som ASP til Windows, dvs. det fungerer som en udvidelse til
-HTML, hvor man kan lave web-serveren udføre scripts og databasekald
-som en del af den funktion der sker når en hjemmeside bliver hentet.
+HTML, hvor man kan lave web-serveren udfÃ¸re scripts og databasekald
+som en del af den funktion der sker nÃ¥r en hjemmeside bliver hentet.
 </para>
 
 <para>
-Endelig kan det nævnes at der er alternativer til databaser hvis det
+Endelig kan det nÃ¦vnes at der er alternativer til databaser hvis det
 handler om <emphasis>content management</emphasis>. Projekter som Zope
 <ulink url="http://www.zope.org">http://www.zope.org</ulink> giver en
-komplet web-løsning hvor man kan håndtere portaler og generel
+komplet web-lÃ¸sning hvor man kan hÃ¥ndtere portaler og generel
 behandling af indhold. Det danske firma MMManager <ulink url="http://www.mmmanager.org">http://www.mmmanager.org</ulink> har specialiseret sig i dette.
 </para>
 
 <para>
-Hvis man har meget erfaring med Lotus Notes, så har Lotus også vist 
+Hvis man har meget erfaring med Lotus Notes, sÃ¥ har Lotus ogsÃ¥ vist 
 stor interesse for Linux - se <ulink url="http://www.notes.net/linux">http://www.notes.net/linux</ulink>. De har bl.a. udgivet Lotus Domino til Linux - se 
 <ulink url="http://www.lotus.com/home.nsf/welcome/dominolinux">http://www.lotus.com/home.nsf/welcome/dominolinux</ulink>.
 </para>
@@ -239,15 +239,15 @@ stor interesse for Linux - se <ulink url="http://www.notes.net/linux">http://www
 <indexterm><primary>Netbank</primary></indexterm>
 <para>
 Mange af de danske banker udbyder nu hjemmebank, dvs. en service, hvor man
-får tilgang til egne konti og kan indbetale girokort. Nogle PC-banker
-virker direkte, måske efter man har installeret Java. Andre banker
+fÃ¥r tilgang til egne konti og kan indbetale girokort. Nogle PC-banker
+virker direkte, mÃ¥ske efter man har installeret Java. Andre banker
 virker ikke. Man kan dog installerer f.eks. Internet Explorer
-under CrosOver Office eller WINE og få langt de fleste systemer til at
+under CrosOver Office eller WINE og fÃ¥ langt de fleste systemer til at
 virke. 
 </para>
 
 <para>
-En liste over hvor vidt PC-netbank virker med Linux kan findes på 
+En liste over hvor vidt PC-netbank virker med Linux kan findes pÃ¥ 
 <ulink url="http://www.linux.dk">http://www.linux.dk</ulink>.
 </para>
 

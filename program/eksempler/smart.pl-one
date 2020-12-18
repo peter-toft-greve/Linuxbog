@@ -9,12 +9,12 @@ perl -i.bak -pe '/start/ .. /slut/ and s/(\d+)/$1+1/ge' *
 For hver af alle filer (*)
   Fra en linje, der indeholder ordet 'start' og til en linje, der
   indeholder ordet 'slut':
-    Tæl hvert hele tal een op (s/(\d+)/$1+1/ge)
+    TÃ¦l hvert hele tal een op (s/(\d+)/$1+1/ge)
   Gem den originale fil som filnavn.bak (-i.bak)
 
 Eksempel-filer:
 
-Før:
+FÃ¸r:
 fil:
 10 20
 30
@@ -46,4 +46,4 @@ start 91
 121 slut 131
 140
 
-fil.bak: se fil fra før
+fil.bak: se fil fra fÃ¸r

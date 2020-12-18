@@ -10,7 +10,7 @@
       echo "<META $value>\n";
 
 ?>
-<title>Friheden til at vælge</title>
+<title>Friheden til at vÃ¦lge</title>
 
 <style type="text/css">
 /* From PhpWiki: <a href> looks like buttons */
@@ -35,7 +35,7 @@ a.button {
 <body>
 <?php
    // $Id$
-   // Første version af Hans Schou. Dernæst har Peter og Hans rettet i et væk.
+   // FÃ¸rste version af Hans Schou. DernÃ¦st har Peter og Hans rettet i et vÃ¦k.
 
    /* top.phtml sets 
       <!--DOCTYPE ....
@@ -43,16 +43,16 @@ a.button {
       ... [topmenu] ...
    */
    /*
-   Når 'register_globals' er slået fra så gå ind i VI og:
+   NÃ¥r 'register_globals' er slÃ¥et fra sÃ¥ gÃ¥ ind i VI og:
    :%s/\$t\>/$_GET["t"]/g
    if (!ini_get('register_globals')) {
-   	echo "<h1>'register_globals' er slået fra i /etc/php.ini</h1><hr>\n";
+   	echo "<h1>'register_globals' er slÃ¥et fra i /etc/php.ini</h1><hr>\n";
    	phpinfo(32);
    }
    */
    $htmltitle_en="Liberty of writing books";
-   $htmltitle_da="Friheden til at skrive bøger";
-   $htmltitle_sv="Friheden til at skrive böcker";
+   $htmltitle_da="Friheden til at skrive bÃ¸ger";
+   $htmltitle_sv="Friheden til at skrive bÃ¶cker";
    $bodyarg=" background=\"/grafix/linux-back-1.gif\" ";
    $maintain_name = "Hans Schou";       // Skriv dit navn her
    $maintain_email = "chlor@schou.dk";  // Skriv din email adresse her
@@ -73,11 +73,11 @@ a.button {
    list($width,$height) = getimagesize("front.png");
 
 if (!$_GET["b"] && !$_GET["t"] && !$_GET["matrix"]) { ?>
-<img src="front.png" alt="Friheden til at skrive bøger"
+<img src="front.png" alt="Friheden til at skrive bÃ¸ger"
  align=right width="<? echo $width ?>" height="<? echo $height ?>">
 <?php } ?>
 
-<h1>Friheden til at skrive bøger</h1>
+<h1>Friheden til at skrive bÃ¸ger</h1>
  
 <?php
 
@@ -86,13 +86,13 @@ function href($url,$desc) {
   return "<a href=\"$url\">$desc</a>";
 }
 
-// Returner filstørrelse i human readable format
+// Returner filstÃ¸rrelse i human readable format
 function fsize_text( $filename ) {
-  // ISO filstørrelser, ex: 5.5 MB
+  // ISO filstÃ¸rrelser, ex: 5.5 MB
   $ISO = array("","k","M","G","T","P");
   $filesize = filesize($filename);
   if (! $filesize) {
-      return "000 B";  // file_exists() skulle være checket her
+      return "000 B";  // file_exists() skulle vÃ¦re checket her
   } else {
     $base = floor(floor(log10($filesize))/3);
     $num3 = $filesize/pow(1024,$base);
@@ -102,27 +102,27 @@ function fsize_text( $filename ) {
 
 // Funktion til at formatere filnavne.
 // Online versionen skal kun have bookname een gang
-// "Ændringer" skal navnet med to gange, men uden version
+// "Ã†ndringer" skal navnet med to gange, men uden version
 function form_filename( $bookname, $format ) {
   global $books;
   switch ($format[online]) {
     case 1:
-      // Onlinebøger, Eks: admin/bog/index.html
+      // OnlinebÃ¸ger, Eks: admin/bog/index.html
       return "$bookname/$format[first]/$format[last]";
       break;
     case 2:
-      // Ændringer, Eks: admin/bog/admin-apprevhist.html
+      // Ã†ndringer, Eks: admin/bog/admin-apprevhist.html
       return "$bookname/$format[first]/$bookname-$format[last]";
       break;
     case 3:
-      // Onlinebøger, Eks: admin/todo.html
+      // OnlinebÃ¸ger, Eks: admin/todo.html
       return "$bookname/$format[last]";
       break;
     default:
       $last = $format[last];
-      /* UNDTAGELSE: søg efter "samling" */
+      /* UNDTAGELSE: sÃ¸g efter "samling" */
       if ($bookname == "samling" && $last == ".pdf.gz") {
-	echo "\n<!-- SIKKE NOGET GRIS. SÅDAN BØR MAN IKKE PROGRAMMERE. (chlor) -->\n\n";
+	echo "\n<!-- SIKKE NOGET GRIS. SÃ…DAN BÃ˜R MAN IKKE PROGRAMMERE. (chlor) -->\n\n";
         $last = ".tar.gz";
       }
       # Eks: admin/linuxbog-admin-ps-5.6.tar.gz
@@ -146,7 +146,7 @@ function visbog( $short ) {
 
   echo "<p>";
   echo "<table border=\"1\" cellspacing=\"0\" cellpadding=\"3\" bgcolor=\"#F8F8E0\">\n<tr>\n";
-  echo "<th>Bøger</th>\n";
+  echo "<th>BÃ¸ger</th>\n";
   echo "<th>Link</th>\n";
   echo "<th>Dato</th>\n";
   echo "<th>Bytes</th>\n";
@@ -182,7 +182,7 @@ function vistype($type) {
   $attr = $packs[$type];
   echo "<a name=\"".rawurlencode($type)."\"></a><h3>$type</h3>\n";
   echo "<table border=\"1\" cellspacing=\"0\" cellpadding=\"3\" bgcolor=\"#E0F8F8\">\n<tr>\n";
-  echo "<th>Bøger</th>\n";
+  echo "<th>BÃ¸ger</th>\n";
   echo "<th>Link</th>\n";
   echo "<th>Dato</th>\n";
   echo "<th>Bytes</th>\n";
@@ -227,7 +227,7 @@ if (!file_exists("titleabstract.php")) {
     "dato" => "/dato.sgml"
   );
 
-  // Sæt versionsnumre, sideantal og dato på bøgerne
+  // SÃ¦t versionsnumre, sideantal og dato pÃ¥ bÃ¸gerne
   $totalsideantal = 0;
   reset($books);
   while (list($bookname) = each($books)) {
@@ -243,7 +243,7 @@ if (!file_exists("titleabstract.php")) {
   }
 
 
-  // Bogpakker pakket på forskellige måder
+  // Bogpakker pakket pÃ¥ forskellige mÃ¥der
   // <first><$books><last>
   $packs = array(
     // Eks: frihed/bog/index.html
@@ -254,11 +254,11 @@ if (!file_exists("titleabstract.php")) {
       online => 1  // Hvis bognavn kun skal med een gang
     ),
     // Eks: frihed/bog/index.html
-    "Ændringer" => array(
+    "Ã†ndringer" => array(
       first => "bog",
       form => "",
       last => "apprevhist.html".$USE_SUBMIT_INC,
-      online => 2  // "Ændringer" har bognavn med to gange
+      online => 2  // "Ã†ndringer" har bognavn med to gange
     ),
     // Eks: frihed/linuxbog-friheden-html-4.0.tar.gz
     "HTML" => array(
@@ -280,7 +280,7 @@ if (!file_exists("titleabstract.php")) {
     "PDF" => array(
       first => "linuxbog-",
       form => "-pdf-",
-      /* UNDTAGELSE: søg efter "samling" */
+      /* UNDTAGELSE: sÃ¸g efter "samling" */
       last => ".pdf.gz"
     ),
     "Palm Pilot" => array(
@@ -314,16 +314,16 @@ if (!file_exists("titleabstract.php")) {
     echo "<p>\n";
   }
 
-  // Vis en type med alle dens bøger
+  // Vis en type med alle dens bÃ¸ger
   if (strlen($_GET["t"]) && is_array($packs[$_GET["t"]])) {
     vistype($_GET["t"]);
     echo "<p>\n";
   }
 
-  // Vis alle bøger
+  // Vis alle bÃ¸ger
   if ($_GET["all"] == "b") {
-    echo "<h2>Bøger</h2>\n";
-    // Liste over alle bøger. Alle bøger har hver sin tabel med forskellig filtyper
+    echo "<h2>BÃ¸ger</h2>\n";
+    // Liste over alle bÃ¸ger. Alle bÃ¸ger har hver sin tabel med forskellig filtyper
     reset($books);
     while (list($short,$desc) = each($books)) {
       visbog($short);
@@ -345,10 +345,10 @@ if ($_GET["matrix"]) { ?>
 <a name="matrix"></a>
 <h2>Samlet bogoversigt</h2>
 <table border="1" cellspacing="0" cellpadding="3">
-<tr bgcolor="#F0F0FF"><th>Bøger/filtype</th>
+<tr bgcolor="#F0F0FF"><th>BÃ¸ger/filtype</th>
 <?php
 
-  // Stor tabel med alle bøger og filtyper samlet.
+  // Stor tabel med alle bÃ¸ger og filtyper samlet.
   reset($packs);
   list($type) = current($packs);
   while (list($type) = each($packs)) {
@@ -398,14 +398,14 @@ if (count($notexists))
 
 <a class="button" href="http://www.linuxbog.dk/">Seneste udgaver</a>
 <a class="button" href="http://cvs.linuxbog.dk">Beta-upgaver</a>
-<a class="button" href="laese-vejledning.html">Læsevejledning</a>
-<a class="button" href="hjaelpe.html">Om at hjælpe</a>
-<a class="button" href="http://cvs.linuxbog.dk/cvs2html/cvs_crono.html">Følg ændringer</a>
+<a class="button" href="laese-vejledning.html">LÃ¦sevejledning</a>
+<a class="button" href="hjaelpe.html">Om at hjÃ¦lpe</a>
+<a class="button" href="http://cvs.linuxbog.dk/cvs2html/cvs_crono.html">FÃ¸lg Ã¦ndringer</a>
 <p>
 <a class="button" href="?matrix=1">Samlet bogoversigt</a>
-<a class="button" href="?all=b">Alle bøger</a>
+<a class="button" href="?all=b">Alle bÃ¸ger</a>
 <a class="button" href="?all=t">Alle filtyper</a>
-<a class="button" href="search.php">Søg</a>
+<a class="button" href="search.php">SÃ¸g</a>
 
 <?php
 	if (file_exists("idx-a.html")) {
@@ -422,7 +422,7 @@ if (count($notexists))
 	}
 ?>
 
-<h2>Vi har følgende bøger</h2>
+<h2>Vi har fÃ¸lgende bÃ¸ger</h2>
 <p>
 Filtyper: 
 <?php
@@ -440,7 +440,7 @@ Filtyper:
 <ul>
 <?php
 
-  // Pæn bullet liste over alle bog-titler med kort beskrivelse
+  // PÃ¦n bullet liste over alle bog-titler med kort beskrivelse
   reset($books);
   while (list($short,$desc) = each($books)) {
     echo "<li><b>$short:</b> ";
@@ -455,7 +455,7 @@ Filtyper:
 </ul>
 
 <p>
-Det samlede sideantal for alle bøger er <b><?php echo $totalsideantal ?></b> sider.
+Det samlede sideantal for alle bÃ¸ger er <b><?php echo $totalsideantal ?></b> sider.
 </p>
 
 <hr>
@@ -466,45 +466,45 @@ Det samlede sideantal for alle bøger er <b><?php echo $totalsideantal ?></b> sid
 <hr>
 
 <p>
-Bøgerne er udgivet under 
-<a href="licens.html">Åben dokumentlicens</a>
-hvilket gør at forfatterne ikke er involveret i de trykte udgaver.
+BÃ¸gerne er udgivet under 
+<a href="licens.html">Ã…ben dokumentlicens</a>
+hvilket gÃ¸r at forfatterne ikke er involveret i de trykte udgaver.
 </p>
 
 <p>
-Bøgerne redigeres af Peter Toft, Jacob Sparre Andersen, Hans Schou,
+BÃ¸gerne redigeres af Peter Toft, Jacob Sparre Andersen, Hans Schou,
 Gitte Wange, Peter Makholm, Mads Dydensborg og
 Donald Axel - 
 &lt;<a href="mailto:linuxbog@sslug.dk">linuxbog@sslug.dk</a>&gt;.
 <br>
-Indholdet af bøgerne diskuteres på
+Indholdet af bÃ¸gerne diskuteres pÃ¥
 &lt;<a href="mailto:sslug-bog@sslug.dk">sslug-bog@sslug.dk</a>&gt;.
 </p>
 
 <p>
-Vil du følge med i hvad der sker med vores kilde-kode (SGML/dist-filerne), 
-<a href="http://cvs.linuxbog.dk/">så se her</a>.
+Vil du fÃ¸lge med i hvad der sker med vores kilde-kode (SGML/dist-filerne), 
+<a href="http://cvs.linuxbog.dk/">sÃ¥ se her</a>.
 </p>
 
 <p>
-Hvis du har noget du søger efter, så skal du nok starte i
-<a href="#stikord">stikordregisteret øverst på siden</a>.
+Hvis du har noget du sÃ¸ger efter, sÃ¥ skal du nok starte i
+<a href="#stikord">stikordregisteret Ã¸verst pÃ¥ siden</a>.
 </p>
 
 <p>
-Se også vores konkurrenters bøger ;-)
+Se ogsÃ¥ vores konkurrenters bÃ¸ger ;-)
 </p>
 
 <ul>
-<li>"Debianguiden" på <a href="http://www.debianguiden.dk/">www.debianguiden.dk/</a></li>
-<li><a href="http://www.skibhist.dk/download/download.html">Håndbog i OpenOffice.org</a></li>
+<li>"Debianguiden" pÃ¥ <a href="http://www.debianguiden.dk/">www.debianguiden.dk/</a></li>
+<li><a href="http://www.skibhist.dk/download/download.html">HÃ¥ndbog i OpenOffice.org</a></li>
 </ul>
 
 <p>
-Vil du hjælpe med, så læs <a href="hjaelpe.html">mere her</a>.
+Vil du hjÃ¦lpe med, sÃ¥ lÃ¦s <a href="hjaelpe.html">mere her</a>.
 </p>
 
-<a href="licens.html"><img src="licens/licens.png" alt="ÅDL"></a>
+<a href="licens.html"><img src="licens/licens.png" alt="Ã…DL"></a>
 
 
 <p>

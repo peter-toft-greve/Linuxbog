@@ -4,11 +4,11 @@
 <para>
 Linux er ikke en spillemaskine, som vi har skrevet i forordet, men
 der er spil til Linux og der kommer flere og flere.
-På internettet kan du læse meget mere om spil på siden
+PÃ¥ internettet kan du lÃ¦se meget mere om spil pÃ¥ siden
 <ulink url="http://www.linuxgames.com">http://www.linuxgames.com</ulink>.
 Vi vil i dette afsnit vise nogle af disse.
-Det kan også lige nævnes at Heretic er blevet annonceret til
-Linux og flere detaljer kan findes på
+Det kan ogsÃ¥ lige nÃ¦vnes at Heretic er blevet annonceret til
+Linux og flere detaljer kan findes pÃ¥
 <ulink url="http://www.cs.uni-potsdam.de/~wertmann/homepage3.html">http://www.cs.uni-potsdam.de/~wertmann/homepage3.html</ulink>
 </para>
 
@@ -16,7 +16,7 @@ Linux og flere detaljer kan findes på
 <title>KDE-spil</title>
 <para>
 Der er en del mindre spil til KDE, som er ganske underholdende. De svarer
-meget til de småspil, du sikkert kender fra Windows 95/98 eller lignende.
+meget til de smÃ¥spil, du sikkert kender fra Windows 95/98 eller lignende.
 Der er naturligvis et 7-kabale-spil.
 </para>
 
@@ -37,17 +37,17 @@ hyggeligt spil.
 </figure>
 
 <para>
-Ok - du kender den fra Windows. Ingen spilsamling uden Minesøger-spillet.
+Ok - du kender den fra Windows. Ingen spilsamling uden MinesÃ¸ger-spillet.
 </para>
 
 <figure id="minesoeger" float="1">
-<title>KDE-spillet Minesøger</title>
+<title>KDE-spillet MinesÃ¸ger</title>
 <graphic fileref="spil-minesoeger.&magic;"  scale="40"></graphic>
 </figure>
 
 <para>
 Reversi eller Sort/Hvid. Kendt barn har mange navne. Vend
-modstanderens brikker - rigtig fornøjeligt.
+modstanderens brikker - rigtig fornÃ¸jeligt.
 </para>
 
 <figure id="reversi" float="1">
@@ -57,7 +57,7 @@ modstanderens brikker - rigtig fornøjeligt.
 
 <para>
 Tetris kender du sikkert, og den "rigtige" version hedder i KDE
-<command>sirtet</command>. Der er også en sødere version, som hedder
+<command>sirtet</command>. Der er ogsÃ¥ en sÃ¸dere version, som hedder
 <command>smiletris</command>.
 </para>
 
@@ -72,8 +72,8 @@ Tetris kender du sikkert, og den "rigtige" version hedder i KDE
 </figure>
 
 <para>
-Poker-spillet i KDE er ret enkelt men desværre kun et enkeltmands-spil.
-Du taber stille og roligt dine virtuelle penge, eller gør du?
+Poker-spillet i KDE er ret enkelt men desvÃ¦rre kun et enkeltmands-spil.
+Du taber stille og roligt dine virtuelle penge, eller gÃ¸r du?
 </para>
 
 <figure id="poker" float="1">
@@ -82,8 +82,8 @@ Du taber stille og roligt dine virtuelle penge, eller gør du?
 </figure>
 
 <para>
-Snake er et lille spil, der for mange år siden blev spillet på
-Commodore 64, ældre videospil osv. Nu har det fået en ny forklædning.
+Snake er et lille spil, der for mange Ã¥r siden blev spillet pÃ¥
+Commodore 64, Ã¦ldre videospil osv. Nu har det fÃ¥et en ny forklÃ¦dning.
 </para>
 
 
@@ -94,7 +94,7 @@ Commodore 64, ældre videospil osv. Nu har det fået en ny forklædning.
 
 <para>
 En af de gamle kendinge er asteroide-spillet, hvor du skyder og
-flyver. Ikke så festligt efter et stykke tid.
+flyver. Ikke sÃ¥ festligt efter et stykke tid.
 </para>
 
 <figure id="astroider" float="1">
@@ -107,9 +107,9 @@ flyver. Ikke så festligt efter et stykke tid.
 <sect1 id="gnome-spil">
 <title>Gnome-spil</title>
 <para>
-Ligesom KDE har spil, så har Gnome også et lignende udvalg. Ud over
-7-kabalen, er der f.eks. også <command>gtali</command>, som er vist
-på <xref linkend="spil-gtali"/>. I Danmark kender vi nok bedre
+Ligesom KDE har spil, sÃ¥ har Gnome ogsÃ¥ et lignende udvalg. Ud over
+7-kabalen, er der f.eks. ogsÃ¥ <command>gtali</command>, som er vist
+pÃ¥ <xref linkend="spil-gtali"/>. I Danmark kender vi nok bedre
 spillet under navnet Yatzy.
 </para>
 
@@ -119,10 +119,10 @@ spillet under navnet Yatzy.
 </figure>
 
 <para>
-Måske kender du det meget gamle spil Boulder Dash - det er også med i
-Gnome under navnet <command>gnome-stones</command>. Spillet er vist på
+MÃ¥ske kender du det meget gamle spil Boulder Dash - det er ogsÃ¥ med i
+Gnome under navnet <command>gnome-stones</command>. Spillet er vist pÃ¥
 <xref linkend="spil-gnome-stones"/>. Du skal her fange
-små diamanter uden at få sten i hovedet. Derefter skal du finde udgangen.
+smÃ¥ diamanter uden at fÃ¥ sten i hovedet. Derefter skal du finde udgangen.
 </para>
 
 <figure id="spil-gnome-stones" float="1">
@@ -136,10 +136,10 @@ små diamanter uden at få sten i hovedet. Derefter skal du finde udgangen.
 <sect1 id="andre-spil">
 <title>Andre spil</title>
 <para>
-Langt mere festligt er <command>xbill</command>, som følger med
-KDE. En lille mand prøver at installere et styresystem på alle
-maskiner med nogle vinduer. Sødt lavet, og det bliver svært at følge
-når sværhedsgraden vokser - godt, man er en pingvin...
+Langt mere festligt er <command>xbill</command>, som fÃ¸lger med
+KDE. En lille mand prÃ¸ver at installere et styresystem pÃ¥ alle
+maskiner med nogle vinduer. SÃ¸dt lavet, og det bliver svÃ¦rt at fÃ¸lge
+nÃ¥r svÃ¦rhedsgraden vokser - godt, man er en pingvin...
 </para>
 
 <figure id="xbill" float="1">
@@ -156,16 +156,16 @@ når sværhedsgraden vokser - godt, man er en pingvin...
 <title>3D-spil</title>
 <para>
 Et godt sted at lede efter spil til Linux, som bruger 3D-grafikkort, er
-på <emphasis>The Linux Game Home</emphasis>: <ulink
+pÃ¥ <emphasis>The Linux Game Home</emphasis>: <ulink
 url="http://www.happypenguin.org/">www.happypenguin.org</ulink>.
-Her står faktisk alt om spil til Linux.
+Her stÃ¥r faktisk alt om spil til Linux.
 </para>
 
 <para>
-Hvis du skulle høre til den (heldigvis) sjældne computerbruger, som
+Hvis du skulle hÃ¸re til den (heldigvis) sjÃ¦ldne computerbruger, som
 hader spil, er det bedste sted at starte med at lede efter software
 til 3D-grafikkort <emphasis>The Linux3D.org software site</emphasis>,
-som findes på
+som findes pÃ¥
 <ulink
  url="http://www.linux3d.org/genframe.php3?software">www.linux3d.org/genframe.php3?software</ulink>
 </para>
@@ -173,10 +173,10 @@ som findes på
 <sect2 id="spil-quake">
 <title>Quake II</title>
 <indexterm><primary>spil</primary><secondary>Quake
-II</secondary></indexterm> <para> Den absolut bedste måde at bruge sit
-3D-grafikkort på er ved at spille, og et spil, som også er kendt
-blandt Windows-brugere, er Quake.  Både etteren, toeren og treeren kan
-du spille i Linux.  Du kan nok have glæde af at læse <ulink
+II</secondary></indexterm> <para> Den absolut bedste mÃ¥de at bruge sit
+3D-grafikkort pÃ¥ er ved at spille, og et spil, som ogsÃ¥ er kendt
+blandt Windows-brugere, er Quake.  BÃ¥de etteren, toeren og treeren kan
+du spille i Linux.  Du kan nok have glÃ¦de af at lÃ¦se <ulink
 url="http://www.linuxquake.com/howto/Quake-HOWTO-3.html#ss3.2">http://www.linuxquake.com/howto/Quake-HOWTO-3.html#ss3.2</ulink>,
 hvorfra vi har hentet installationsvejledningen.  </para>
 
@@ -187,22 +187,22 @@ hvorfra vi har hentet installationsvejledningen.  </para>
 
 
 <para>
-Mere information om Quake til Linux er at finde på <ulink
+Mere information om Quake til Linux er at finde pÃ¥ <ulink
 url="http://www.linuxquake.com/">www.linuxquake.com</ulink>.
-Her findes også installationsvejledninger til etteren og toeren.
+Her findes ogsÃ¥ installationsvejledninger til etteren og toeren.
 </para>
 
 <para>
 I <xref linkend="grafik-3Dsoftware"/> kan du finde mere om Quake til Linux,
-og i "Linux &ndash; Friheden til at lære Unix" er der en beskrivelse af, hvad
-du skal gøre for at få 3D-grafik til at køre under Linux. Her får du
+og i "Linux &ndash; Friheden til at lÃ¦re Unix" er der en beskrivelse af, hvad
+du skal gÃ¸re for at fÃ¥ 3D-grafik til at kÃ¸re under Linux. Her fÃ¥r du
 installationsvejledningen til selve spillet. Spillet skal du hente som
 RPM-pakke eller tage fra en af de mange computerblades cd-rom'er, den har
-været bragt på. Du skal yderligere bruge selve Windows-udgaven af spillet.
+vÃ¦ret bragt pÃ¥. Du skal yderligere bruge selve Windows-udgaven af spillet.
 </para>
 
 <para>
-Du skal som root først installere Windows-udgaven f.eks. under
+Du skal som root fÃ¸rst installere Windows-udgaven f.eks. under
 <filename>/usr/local/games/quake2</filename>:
 </para>
 
@@ -245,22 +245,22 @@ Rock and roll - let's play!
 <title>Unreal Tournament</title>
 <indexterm><primary>Unreal Tournament</primary></indexterm>
 
-<para>Man kan sagtens spille Unreal Tournament på Linux.  Spillet kan
-afvikles med Glide (de ældre voodoo-kort), OpenGL (TNT 1-2, Geforce
+<para>Man kan sagtens spille Unreal Tournament pÃ¥ Linux.  Spillet kan
+afvikles med Glide (de Ã¦ldre voodoo-kort), OpenGL (TNT 1-2, Geforce
 1-4, ATI Radeon etc.) eller med software rendering, hvis det
-ønskes. Det kræver at man har det korrekte installationsprogram
+Ã¸nskes. Det krÃ¦ver at man har det korrekte installationsprogram
 fra <ulink url="http://www.lokigames.com/products/ut/updates.php3">
 www.lokigames.com/products/ut/updates.php3</ulink>, da der findes
 forskellige windows versioner af Unreal Tournament. Den originale UT
-cd og "Game of the year edition" er fuldt ud understøttet. "Best of
-Infogrames" og "Totally Unreal" versioner er ikke understøttet af
+cd og "Game of the year edition" er fuldt ud understÃ¸ttet. "Best of
+Infogrames" og "Totally Unreal" versioner er ikke understÃ¸ttet af
 Lokis installere hvilket kan resultere, at spillet ikke bliver
 installeret 100% korrekt. Ved problemer med installationen kan man med
 fordel tjekke <ulink
 url="http://icculus.org/lgfaq/">icculus.org/lgfaq/</ulink> ud, da
-denne side beskriver løsninger til mange af de problemmer, der kan
-opstå med spil og Linux. Når den korrekte installer er blevet
-hentet, placer man cd'en i sit CD-Rom drev og kører derefter
+denne side beskriver lÃ¸sninger til mange af de problemmer, der kan
+opstÃ¥ med spil og Linux. NÃ¥r den korrekte installer er blevet
+hentet, placer man cd'en i sit CD-Rom drev og kÃ¸rer derefter
 installeren med root-rettigheder </para>
 
 <figure id="UT-installer1-fig" float="1">
@@ -268,7 +268,7 @@ installeren med root-rettigheder </para>
 <graphic fileref="UT-installer1.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Når man har gjort dette dukker følgende billede op.</para>
+<para>NÃ¥r man har gjort dette dukker fÃ¸lgende billede op.</para>
 	
 <figure id="UT-installer2-fig" float="1">
 <title>Unreal Tournament &ndash; installation</title>
@@ -276,13 +276,13 @@ installeren med root-rettigheder </para>
 </figure>
 
 
-<para>Herefter trykker man på "Install" når man har tjekket, at
-instillingerne er korrekte. Efter installationen er forløbet korrekt,
-skal man gå ud i konsolen og skriver <command>ut</command>, her
-behøver man ikke root-retigheder.  </para>
+<para>Herefter trykker man pÃ¥ "Install" nÃ¥r man har tjekket, at
+instillingerne er korrekte. Efter installationen er forlÃ¸bet korrekt,
+skal man gÃ¥ ud i konsolen og skriver <command>ut</command>, her
+behÃ¸ver man ikke root-retigheder.  </para>
 
 <para>
-Forhåbentlig køre spillet som vist her
+ForhÃ¥bentlig kÃ¸re spillet som vist her
 </para>
 
 <figure id="UT-installer3-fig" float="1">
@@ -293,7 +293,7 @@ Forhåbentlig køre spillet som vist her
 <para>
 For at skifte mellem de forskellige rendere skal man ind i UT's
 ini-fil, som findes i
-<filename>~/.loki/ut/Sytem/UnrealTournament.ini</filename>) og ændre
+<filename>~/.loki/ut/Sytem/UnrealTournament.ini</filename>) og Ã¦ndre
 nogle parametre. Det anbefales, at man bruger OpenGL renderen istedet
 for SDLGL rendereren.
 </para>
@@ -360,14 +360,14 @@ renderdevice=SDLSoftDrv.SDLSoftwareRenderDevice
 
 <para>
 Hvis du har Unreal Tournament og Unreal 1, er det muligt at installere
-og køre det under Linux hvis man har en Unreal 1-cd-rom til
-Windows. Først skal man installere Unreal Tournament (se afsnittet om
+og kÃ¸re det under Linux hvis man har en Unreal 1-cd-rom til
+Windows. FÃ¸rst skal man installere Unreal Tournament (se afsnittet om
 dette). Herefter skal man hente en installer fra
 <ulink url="http://icculus.org/~chunky/ut/unreal">http://icculus.org/~chunky/ut/unreal</ulink>.</para>
 
 <para> 
-Indsæt Unreal 1 cd'en i CD-Rom
-drevet og kør installations-programmet fra terminalen med root-rettigheder:
+IndsÃ¦t Unreal 1 cd'en i CD-Rom
+drevet og kÃ¸r installations-programmet fra terminalen med root-rettigheder:
 </para>
 
 <figure id="Unreal1-1" float="1">
@@ -377,7 +377,7 @@ drevet og kør installations-programmet fra terminalen med root-rettigheder:
 
 
 <para>
-Når dette er gjort, dukker følgende billede op
+NÃ¥r dette er gjort, dukker fÃ¸lgende billede op
 </para>
 
 <figure id="Unreal1-2" float="1">
@@ -387,11 +387,11 @@ Når dette er gjort, dukker følgende billede op
 
 
 <para>
-Herefter trykker man på "Begin Install", når man har tjekket, at
-indstillingerne er korrekte. Når installationen er forløbet korrekt,
-skal man gå ud i konsolen og skrive "unreal" - her behøver man ikke
+Herefter trykker man pÃ¥ "Begin Install", nÃ¥r man har tjekket, at
+indstillingerne er korrekte. NÃ¥r installationen er forlÃ¸bet korrekt,
+skal man gÃ¥ ud i konsolen og skrive "unreal" - her behÃ¸ver man ikke
 root-rettigheder.  Husk at skifte fra SDLGL til den anbefalede
-OpenGL rendere - se i <xref linkend="UT"/> om hvordan det gøres.
+OpenGL rendere - se i <xref linkend="UT"/> om hvordan det gÃ¸res.
 </para>
 
 <figure id="Unreal1-3" float="1">
@@ -409,16 +409,16 @@ OpenGL rendere - se i <xref linkend="UT"/> om hvordan det gøres.
 <indexterm><primary>Unreal Tournament 2003</primary></indexterm>
 
 <para>
-Unreal Tournament 2003 kan sagtens køre under Linux. Hvis man køber
-Unreal Tournament 2003, ligger der en Linux installer på cd3 &ndash;
-det står ikke på boksen, da installeren blev lagt på i sidste
-øjeblik. Hvis man har problemer med installationen eller afviklingen
-af spillet, bør man besøge <ulink
+Unreal Tournament 2003 kan sagtens kÃ¸re under Linux. Hvis man kÃ¸ber
+Unreal Tournament 2003, ligger der en Linux installer pÃ¥ cd3 &ndash;
+det stÃ¥r ikke pÃ¥ boksen, da installeren blev lagt pÃ¥ i sidste
+Ã¸jeblik. Hvis man har problemer med installationen eller afviklingen
+af spillet, bÃ¸r man besÃ¸ge <ulink
 url="http://icculus.org/lgfaq/">icculus.org/lgfaq/</ulink>,
-hvor man kan få hjælp til de problemer, som eventuelt kan opstå.  Der
+hvor man kan fÃ¥ hjÃ¦lp til de problemer, som eventuelt kan opstÃ¥.  Der
 kan endvidere hentes en demo fra <ulink
 url="http://www.unrealtournament2003.com/">www.unrealtournament2003.com</ulink>
-så man kan afprøve spillet før man køber det.  </para>
+sÃ¥ man kan afprÃ¸ve spillet fÃ¸r man kÃ¸ber det.  </para>
 
 <figure id="Unreal2003" float="1">
 <title>Unreal2003</title>
@@ -438,9 +438,9 @@ så man kan afprøve spillet før man køber det.  </para>
 <para>
 Et af de nyere gode spil til Linux er "Return to Castle Wolfenstein",
 hvor ID-software igen viser at de kan lave flotte 3D-spil, og endda til
-Linux.  Der er en demo-udgave du frit kan hente på deres
+Linux.  Der er en demo-udgave du frit kan hente pÃ¥ deres
 hjemmeside <ulink url="http://www.activision.com/games/wolfenstein/">www.activision.com/games/wolfenstein/</ulink>. Spillet installeres i
-f.eks. <filename>/usr/local/games/wolfenstein-spdemo</filename> ved at køre
+f.eks. <filename>/usr/local/games/wolfenstein-spdemo</filename> ved at kÃ¸re
 <command>sh wolfspdemo-linux-1.1b.x86.run</command> som root.
 </para>
 
@@ -449,8 +449,8 @@ f.eks. <filename>/usr/local/games/wolfenstein-spdemo</filename> ved at køre
 <graphic fileref="ReturnCW1.&magic;" scale="50"></graphic>
 </figure>
 
-<para>Spillet kræver en forholdsvis kraftig maskine, men med f.eks. et
-GForce2 grafikkort, så kører det som en leg.  </para>
+<para>Spillet krÃ¦ver en forholdsvis kraftig maskine, men med f.eks. et
+GForce2 grafikkort, sÃ¥ kÃ¸rer det som en leg.  </para>
 </sect2>
 
 
@@ -466,12 +466,12 @@ GForce2 grafikkort, så kører det som en leg.  </para>
 gratis og kan hentes fra <ulink
 url="http://games.activision.com/games/wolfenstein/">
 games.activision.com/games/wolfenstein/</ulink>. Det var oprindeligt
-tænkt som en efterfølger til Return To Castle Wolfenstein. Men da
+tÃ¦nkt som en efterfÃ¸lger til Return To Castle Wolfenstein. Men da
 single playerdelen ikke faldt i god jord hos id software blev den
 droppet og multiplayerdelen blev frigivet gratis &ndash; hvilket er jo
-rigtig godt for os spilleglade pingviner. Spillets største force er at
+rigtig godt for os spilleglade pingviner. Spillets stÃ¸rste force er at
 der bliver lagt op til at man skal samarbejde med sit team, og ikke
-bare kan køre sit eget "Rambo"-ræs. Et must for spilfreaks.</para>
+bare kan kÃ¸re sit eget "Rambo"-rÃ¦s. Et must for spilfreaks.</para>
 
 <para>Spillet er nemt at installere da det kommer med et godt grafisk
 instaleringsprogram</para>
@@ -491,11 +491,11 @@ instaleringsprogram</para>
 <indexterm><primary>Tuxracer</primary></indexterm>
 
 
-<para>Et spil, som er ved at være legendarisk til Linux er
-<emphasis>Tuxracer</emphasis>, som er et af de første 3D spil til
-Linux. Spillet er enkelt, at man som pingvin skal fange alle fisk på
-vej ned af en sne-dækket bakke. Det er et fint børnespil, men det kan
-ofte også fange opmærksomheden for børn over 20...</para>
+<para>Et spil, som er ved at vÃ¦re legendarisk til Linux er
+<emphasis>Tuxracer</emphasis>, som er et af de fÃ¸rste 3D spil til
+Linux. Spillet er enkelt, at man som pingvin skal fange alle fisk pÃ¥
+vej ned af en sne-dÃ¦kket bakke. Det er et fint bÃ¸rnespil, men det kan
+ofte ogsÃ¥ fange opmÃ¦rksomheden for bÃ¸rn over 20...</para>
 
 <figure id="tuxracer-fig" float="1">
 <title>Tuxracer</title>
@@ -511,15 +511,15 @@ ofte også fange opmærksomheden for børn over 20...</para>
 <title>Lincity</title>
 <para>
 Lincity er et spil, som klart er inspireret af SimCity-spillene. Du
-starter på en bar mark ved en flod og må nu i gang med at lege
-byplanlægger. Spillet tager sit udgangspunkt i noget, der kan minde om 
+starter pÃ¥ en bar mark ved en flod og mÃ¥ nu i gang med at lege
+byplanlÃ¦gger. Spillet tager sit udgangspunkt i noget, der kan minde om 
 et simpelt bondesamfund.
 </para>
 
 <para>
-Spillet kører i X-vinduesystemet, og du starter det ved at udføre
+Spillet kÃ¸rer i X-vinduesystemet, og du starter det ved at udfÃ¸re
 kommandoen <command>xlincity</command> i en
-<command>xterm</command>. Spillet indeholder en fuldstændig
+<command>xterm</command>. Spillet indeholder en fuldstÃ¦ndig
 vejledning, og din by vokser let meget hurtigt.
 </para>
 
@@ -534,26 +534,26 @@ vejledning, og din by vokser let meget hurtigt.
 <title>Freeciv</title>
 <para>
 Civilization-spillene handler om at omskrive verdenshistorien ved at styre
-en nation gennem 6000 år fra år 4000 f.Kr. til i dag.  Du starter
-spillet med en eller to nybyggere (settlers), som så kan bygge din
-første by. Denne by kan så bygge yderligere nybyggere, militære
-enheder og diverse bygninger som gør byen stærkere. Du får også ny
-teknologi via dine byer, hvorved du får adgang til nye bygninger og
+en nation gennem 6000 Ã¥r fra Ã¥r 4000 f.Kr. til i dag.  Du starter
+spillet med en eller to nybyggere (settlers), som sÃ¥ kan bygge din
+fÃ¸rste by. Denne by kan sÃ¥ bygge yderligere nybyggere, militÃ¦re
+enheder og diverse bygninger som gÃ¸r byen stÃ¦rkere. Du fÃ¥r ogsÃ¥ ny
+teknologi via dine byer, hvorved du fÃ¥r adgang til nye bygninger og
 enheder. Nybyggere kan desuden forbedre landet omkring dine byer med
-f.eks. veje.  Der er desværre kun et begrænset areal på jorden, så når du
-møder andre nationer må du vælge om du vil lave fred eller
+f.eks. veje.  Der er desvÃ¦rre kun et begrÃ¦nset areal pÃ¥ jorden, sÃ¥ nÃ¥r du
+mÃ¸der andre nationer mÃ¥ du vÃ¦lge om du vil lave fred eller
 ekspansionskrig.
 </para>
 
 <para>
 "Civilization: Call to Power" er udkommet til Linux, men siden 1996 har der
-eksisteret et spil ved navn Freeciv ("Free Civilization"). Ifølge
+eksisteret et spil ved navn Freeciv ("Free Civilization"). IfÃ¸lge
 forfatterne til spillet har de skrevet det, "'Cause civilization should 
-be free". Der er tale om et ægte flerbrugerspil, hvor hver spiller
-benytter en klient, som kobler op mod en server, som enten kan være den 
-samme maskine, som spillerne bruger, eller en eller anden computer på
-internettet. Man kan også nøjes med at spille mod den kunstige
-intelligens på sin egen computer.
+be free". Der er tale om et Ã¦gte flerbrugerspil, hvor hver spiller
+benytter en klient, som kobler op mod en server, som enten kan vÃ¦re den 
+samme maskine, som spillerne bruger, eller en eller anden computer pÃ¥
+internettet. Man kan ogsÃ¥ nÃ¸jes med at spille mod den kunstige
+intelligens pÃ¥ sin egen computer.
 </para>
 
 <figure id="fig-freeciv-main" float="1">
@@ -562,28 +562,28 @@ intelligens på sin egen computer.
 </figure>
 
 <para>
-Jeg går i det følgende ud fra at du allerede har installeret Freeciv
-på din computer. Freeciv følger med de fleste distributioner,
-men kan også hentes fra
+Jeg gÃ¥r i det fÃ¸lgende ud fra at du allerede har installeret Freeciv
+pÃ¥ din computer. Freeciv fÃ¸lger med de fleste distributioner,
+men kan ogsÃ¥ hentes fra
 <ulink url="http://www.freeciv.org">Freecivs hjemmeside</ulink>.
 </para>
 
 <sect2 id="freecivmultiplayer">
-<title>Spil Freeciv over netværk mod dine venner</title>
+<title>Spil Freeciv over netvÃ¦rk mod dine venner</title>
 
 <para>
 Hvis du vil spille Freeciv mod andre mennesker kan du enten
-spille på den officielle server eller lave din egen server.
+spille pÃ¥ den officielle server eller lave din egen server.
 </para>
 
 <sect3 id="freecivcivserver">
-<title>Spil på den officielle server</title>
+<title>Spil pÃ¥ den officielle server</title>
 <para>
-Du kan spille mod mennesker fra hele verden på Freecivs officielle server.
+Du kan spille mod mennesker fra hele verden pÃ¥ Freecivs officielle server.
 Start med at starte din klient ved at skrive <command>civclient</command>.
-I den "connect"-dialog der kommer op trykker du da på Metaserver-tappen og
-trykker <userinput>Update</userinput>. Vælg en server som har Pregame
-status, gerne en som har et par spillere ventende allerede, og tryk på
+I den "connect"-dialog der kommer op trykker du da pÃ¥ Metaserver-tappen og
+trykker <userinput>Update</userinput>. VÃ¦lg en server som har Pregame
+status, gerne en som har et par spillere ventende allerede, og tryk pÃ¥
 <userinput>Connect</userinput>.
 </para>
 
@@ -593,40 +593,40 @@ status, gerne en som har et par spillere ventende allerede, og tryk på
 </figure>
 
 <para>
-Nu er du forbundet til serveren, og venter på at der er nok spillere til
-at starte et spil. Du kan chatte med de andre spillere, som også er gået
-ind på serveren, ved at skrive i chat-linjen nederst i din klient.
-Du kan også give serveren instruktioner ved at sætte en <prompt>/</prompt>
+Nu er du forbundet til serveren, og venter pÃ¥ at der er nok spillere til
+at starte et spil. Du kan chatte med de andre spillere, som ogsÃ¥ er gÃ¥et
+ind pÃ¥ serveren, ved at skrive i chat-linjen nederst i din klient.
+Du kan ogsÃ¥ give serveren instruktioner ved at sÃ¦tte en <prompt>/</prompt>
 foran, f.eks. <prompt>/set xsize 100</prompt>
 </para>
 
 <para>
-Når du og de andre spillere er enige om at starte, kan en af jer starte
-serveren ved at skrive <prompt>/start</prompt>. Husk at være høflig og
+NÃ¥r du og de andre spillere er enige om at starte, kan en af jer starte
+serveren ved at skrive <prompt>/start</prompt>. Husk at vÃ¦re hÃ¸flig og
 ikke starte serveren eller give serveren andre instruktioner uden at
-spørge de andre spillere først!
+spÃ¸rge de andre spillere fÃ¸rst!
 </para>
 
 <para>
-Listen over tilgængelige spil findes også i
+Listen over tilgÃ¦ngelige spil findes ogsÃ¥ i
 <ulink url="http://meta.freeciv.org/metaserver">HTML-version</ulink>.
-Man kan desuden se referater af spil og anden information på
+Man kan desuden se referater af spil og anden information pÃ¥
 <ulink url="http://civserver.freeciv.org/">Freecivs civserver</ulink>.
 </para>
 </sect3>
 
 <sect3 id="freecivegenserver">
-<title>Spil mod dine kammarater på din egen server</title>
+<title>Spil mod dine kammarater pÃ¥ din egen server</title>
 <para>
-Du kan også sætte din egen server op. Start en server ved at skrive
+Du kan ogsÃ¥ sÃ¦tte din egen server op. Start en server ved at skrive
 <command>civserver</command>. Nu kan du og andre starte jeres
-klienter og slutte jer til serveren ved at skrive netværks-navnet på den
-maskine serveren kører på i klientens "connect"-dialog. Maskinens navn er
-det man også bruger når man telnet'er til maskinen.
+klienter og slutte jer til serveren ved at skrive netvÃ¦rks-navnet pÃ¥ den
+maskine serveren kÃ¸rer pÃ¥ i klientens "connect"-dialog. Maskinens navn er
+det man ogsÃ¥ bruger nÃ¥r man telnet'er til maskinen.
 </para>
 
 <para>
-Når alle er tilsluttet kan du starte serveren ved at skrive
+NÃ¥r alle er tilsluttet kan du starte serveren ved at skrive
 <userinput>start</userinput> i serveren.
 </para>
 
@@ -637,20 +637,20 @@ Når alle er tilsluttet kan du starte serveren ved at skrive
 <sect2 id="freecivsingleplayer">
 <title>Spil Freeciv alene mod den kunstige intelligens</title>
 <para>
-Du kan også spille Freeciv alene, mod Freecivs indbyggede intelligens.
-Det gøres ved at starte en server ved at skrive
+Du kan ogsÃ¥ spille Freeciv alene, mod Freecivs indbyggede intelligens.
+Det gÃ¸res ved at starte en server ved at skrive
 <command>civserver</command>, og en klient ved at skrive
 <command>civclient</command>. Forbind serveren til klienten ved at
-trykke på <userinput>Connect</userinput>.
+trykke pÃ¥ <userinput>Connect</userinput>.
 </para>
 
 <para>
-Du skal da danne computerstyrede spillere i serveren. Det kan gøres ved at
+Du skal da danne computerstyrede spillere i serveren. Det kan gÃ¸res ved at
  danne
-dem én af gangen med kommandoen <userinput>create humankiller</userinput>,
-hvor "humankiller" er navnet på den dannede spiller..
-En lettere måde er at bruge kommandoen <userinput>set aifill 30</userinput>, som
-vil danne så mange spillere at det totale antal er 30.
+dem Ã©n af gangen med kommandoen <userinput>create humankiller</userinput>,
+hvor "humankiller" er navnet pÃ¥ den dannede spiller..
+En lettere mÃ¥de er at bruge kommandoen <userinput>set aifill 30</userinput>, som
+vil danne sÃ¥ mange spillere at det totale antal er 30.
 </para>
 
 <para>
@@ -675,12 +675,12 @@ Starting game.
 </sect2>
 
 <sect2 id="freecivsettings">
-<title>Opsætning af serveren</title>
+<title>OpsÃ¦tning af serveren</title>
 <para>
-Der er et hav af muligheder for at sætte serveren op. De er delt op
+Der er et hav af muligheder for at sÃ¦tte serveren op. De er delt op
 i to klasser, rulesets og server-variable.
-Rulesets er tekstfiler som serveren læser ind når den starter.
-Serverens variable sættes inden fra serverens prompt. De er lettest
+Rulesets er tekstfiler som serveren lÃ¦ser ind nÃ¥r den starter.
+Serverens variable sÃ¦ttes inden fra serverens prompt. De er lettest
 illustreret ved et eksempel:
 </para>
 
@@ -763,17 +763,17 @@ Option: xsize has been set to 100.
 <sect2 id="freeciveditor">
 <title>Freecivs scenarie-editor civworld</title>
 <para>
-Freeciv har også en scenario-editor ved navn <command>civworld</command>, som
+Freeciv har ogsÃ¥ en scenario-editor ved navn <command>civworld</command>, som
  kan
 hentes fra
 <ulink url="http://www.freeciv.org/download.phtml">Freecivs hjemmeside</ulink>.
-Den virker desværre kun med den seneste version Freeciv
+Den virker desvÃ¦rre kun med den seneste version Freeciv
 1.12.0.
 </para>
 </sect2>
 
 <sect2 id="freecivsmugkik">
-<title>Et kig på den nyeste version af Freeciv</title>
+<title>Et kig pÃ¥ den nyeste version af Freeciv</title>
 <para>
 Den nyeste version af Freeciv, version 1.12.0, er blevet frigivet. Da Freeciv er
 open source kan man dog altid hente den seneste udviklingsversion fra CVS
@@ -782,8 +782,8 @@ Udviklingsversionen er som regel relativt stabil.
 </para>
 
 <para>
-Af nye ting i Freeciv 1.12.0 kan nævnes isometrisk kort som i Civilization II og
-mulighed for at specificere en enhedsrute på kortet ved at tegne streger.
+Af nye ting i Freeciv 1.12.0 kan nÃ¦vnes isometrisk kort som i Civilization II og
+mulighed for at specificere en enhedsrute pÃ¥ kortet ved at tegne streger.
 </para>
 
 <figure id="fig-freeciv-devel" float="1">
@@ -799,12 +799,12 @@ mulighed for at specificere en enhedsrute på kortet ved at tegne streger.
 <indexterm><primary>Uplink</primary></indexterm>
 <indexterm><primary>Spil</primary><secondary>Uplink</secondary></indexterm>
 <para>
-Hvis du går rundt med en drøm om at blive hacker, så er Uplink noget
+Hvis du gÃ¥r rundt med en drÃ¸m om at blive hacker, sÃ¥ er Uplink noget
 for dig. Spillet har ikke fede lydeffekter og voldsom 3d grafik, men
-det oser af atmosfære. Spillet går kort sagt ud på, at man er ansat af
+det oser af atmosfÃ¦re. Spillet gÃ¥r kort sagt ud pÃ¥, at man er ansat af
 lyssky organisationer for at hacke computere verden over, hvor man
-skal stjæle eller ødelægge data. For hver fuldført mission får man
-penge, så man kan købe nyt software, hardware, etc. 
+skal stjÃ¦le eller Ã¸delÃ¦gge data. For hver fuldfÃ¸rt mission fÃ¥r man
+penge, sÃ¥ man kan kÃ¸be nyt software, hardware, etc. 
 </para>
 
 <figure id="Uplink-fig" float="1">
@@ -814,14 +814,14 @@ penge, så man kan købe nyt software, hardware, etc.
 
 
 <para>
-Spillet kan købes hos <ulink url="http://www.introversion.co.uk/">http://www.introversion.co.uk/</ulink>. 
+Spillet kan kÃ¸bes hos <ulink url="http://www.introversion.co.uk/">http://www.introversion.co.uk/</ulink>. 
 </para>
 </sect1>
 
 <sect1 id="xscrabble">
 <title>Scrabble</title>
 <para>
-Naturligvis findes der til Linux et lille scrabble-spil. Når det er
+Naturligvis findes der til Linux et lille scrabble-spil. NÃ¥r det er
 installeret kan du starte spillet ved at skrive
 <command>xscrabble</command>. Op til fire spillere kan spille mod
 hinanden, og hvis du er alene kan du spille mod computer-styrede
@@ -838,17 +838,17 @@ spillere.
 <title>Skak</title>
 <para>
 Kan du lide at spille skak og vil du gerne bruge din Linux-maskine som
-skakcomputer, findes der et rigtig godt skakprogram, som du bør se
-nærmere på. Programmet hedder GNU Chess.
+skakcomputer, findes der et rigtig godt skakprogram, som du bÃ¸r se
+nÃ¦rmere pÃ¥. Programmet hedder GNU Chess.
 </para>
 
 <para>
-GNU Chess indeholder et åbningsbibliotek og op til flere
-sværhedsgrader (eller styrker) af din computer-styrede
-modstander. Programmet køres ved at udføre kommandoen
-<command>gnuchess</command> på en kommandolinje. På <xref
+GNU Chess indeholder et Ã¥bningsbibliotek og op til flere
+svÃ¦rhedsgrader (eller styrker) af din computer-styrede
+modstander. Programmet kÃ¸res ved at udfÃ¸re kommandoen
+<command>gnuchess</command> pÃ¥ en kommandolinje. PÃ¥ <xref
 linkend="fig-gnuchess"/> ser du, hvordan spillet ser ud. Som det ses er
-det tekstbaseret. Der findes dog en grafisk brugergrænseflade til 
+det tekstbaseret. Der findes dog en grafisk brugergrÃ¦nseflade til 
 spillet ved navn Gnome Chess.
 </para>
 
@@ -858,15 +858,15 @@ spillet ved navn Gnome Chess.
 </figure>
 
 <para>
-Nu kan det være, at du finder ovenstående tekstbaserede udseende lidt
-for primitivt, men det er der råd for. Programmet
+Nu kan det vÃ¦re, at du finder ovenstÃ¥ende tekstbaserede udseende lidt
+for primitivt, men det er der rÃ¥d for. Programmet
 <command>xboard</command> er en grafisk frontend til GNU Chess. Ja,
 faktisk er <command>xboard</command> mere end blot en frontend til GNU 
-Chess. Programmet kan også bruges til at spille skak over internettet,
-forstået på den måde, at du kobler op mod en skak-server og finder en
-modstander (et virkeligt menneske) at spille imod. Kører du
-<command>xboard</command> lokalt på din egen computer, vil programmet
-starte GNU Chess op bag din ryg. Du ser et eksempel på
+Chess. Programmet kan ogsÃ¥ bruges til at spille skak over internettet,
+forstÃ¥et pÃ¥ den mÃ¥de, at du kobler op mod en skak-server og finder en
+modstander (et virkeligt menneske) at spille imod. KÃ¸rer du
+<command>xboard</command> lokalt pÃ¥ din egen computer, vil programmet
+starte GNU Chess op bag din ryg. Du ser et eksempel pÃ¥
 <command>xboard</command> i <xref linkend="fig-xboard"/>.
 </para>
 

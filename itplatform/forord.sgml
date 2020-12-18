@@ -8,64 +8,64 @@
 <title>Forord</title>
 
 <para>
-Nærværende bog er ikke skrevet i samme stil som de øvrige bøger i
-serien <emphasis>Friheden til at vælge</emphasis>.  Formålet med
-denne bog er, på en visionær måde, at argumentere for, at Linux
-kan konkurrere på lige fod med andre, kommercielle
+NÃ¦rvÃ¦rende bog er ikke skrevet i samme stil som de Ã¸vrige bÃ¸ger i
+serien <emphasis>Friheden til at vÃ¦lge</emphasis>.  FormÃ¥let med
+denne bog er, pÃ¥ en visionÃ¦r mÃ¥de, at argumentere for, at Linux
+kan konkurrere pÃ¥ lige fod med andre, kommercielle
 softwaresystemer, som for eksempel Microsoft Windows og Solaris, som
-platform for en kontorarbejsplads. På serversiden har Linux
-længe været en væsentlig markedsfaktor, men som platform for
+platform for en kontorarbejsplads. PÃ¥ serversiden har Linux
+lÃ¦nge vÃ¦ret en vÃ¦sentlig markedsfaktor, men som platform for
 kontorprogrammer var Linux indtil ca. 2001 et eksotisk valg,
 forbeholdt forskere og professionelle it-folk.  Med dette fokus
-for bogen er den naturlige målgruppe it-beslutningstagere, men
+for bogen er den naturlige mÃ¥lgruppe it-beslutningstagere, men
 andre med interesse for de overordnede perspektiver indenfor
-planlægning og systemarktitektur vil også med fordel kunne læse
+planlÃ¦gning og systemarktitektur vil ogsÃ¥ med fordel kunne lÃ¦se
 bogen.
 </para>
 
 <para>
-Selv om hovedvægten ligger på Linux med kontorprogrammer, nævnes
-også mange af de serverfunktioner, som kan placeres på en Linux
+Selv om hovedvÃ¦gten ligger pÃ¥ Linux med kontorprogrammer, nÃ¦vnes
+ogsÃ¥ mange af de serverfunktioner, som kan placeres pÃ¥ en Linux
 box, uanset hvilke systemer, man ellers anvender. Linux fungerer
-fint i et heterogent miljø.
+fint i et heterogent miljÃ¸.
 </para>
 
 <para>
-Det er vores håb, at interesserede derved får et indblik i de
+Det er vores hÃ¥b, at interesserede derved fÃ¥r et indblik i de
 principper, som ligger til grund for sund it-styring, og derved
-har vægtige argumenter klar, når der skal diskuteres og vejes,
+har vÃ¦gtige argumenter klar, nÃ¥r der skal diskuteres og vejes,
 inden en beslutning skal tages.
 </para>
 
 <!--
 d.v.s. tekstbehandling, adressekartoteker,
-regneark med kobling mod databaser m.v. er det først i de seneste
-par år, at Linux har haft en væsentlig betydning.
+regneark med kobling mod databaser m.v. er det fÃ¸rst i de seneste
+par Ã¥r, at Linux har haft en vÃ¦sentlig betydning.
 /-->
 
 <para>
-Det er derfor ikke i denne bog, at man skal søge oplysninger om,
+Det er derfor ikke i denne bog, at man skal sÃ¸ge oplysninger om,
 hvordan et givet program fungerer, og hvilke knapper man skal
-trykke på. Hensigten er at påpege de fordele, der er ved en Linux
-løsning set fra en nuanceret og realistisk synsvinkel.
+trykke pÃ¥. Hensigten er at pÃ¥pege de fordele, der er ved en Linux
+lÃ¸sning set fra en nuanceret og realistisk synsvinkel.
 </para>
 
 <para>
-Argumentationen vil koncentrere sig om fire områder:
-<emphasis>Økonomi</emphasis>, <emphasis>sikkerhed</emphasis>, 
+Argumentationen vil koncentrere sig om fire omrÃ¥der:
+<emphasis>Ã˜konomi</emphasis>, <emphasis>sikkerhed</emphasis>, 
 <emphasis>brugervenlighed</emphasis> og <emphasis>drift</emphasis>.
-Overvejelser på de fire områder udgør grundlaget for en god
-<emphasis>it-strategi</emphasis>. På et område, som udvikler sig
-så hurtigt som it-området, er det svært, og nogen vil sige
-meningsløst, at komme konkrete bedømmelser af det ene eller andet
-system, for i morgen er det allerede ændret.
+Overvejelser pÃ¥ de fire omrÃ¥der udgÃ¸r grundlaget for en god
+<emphasis>it-strategi</emphasis>. PÃ¥ et omrÃ¥de, som udvikler sig
+sÃ¥ hurtigt som it-omrÃ¥det, er det svÃ¦rt, og nogen vil sige
+meningslÃ¸st, at komme konkrete bedÃ¸mmelser af det ene eller andet
+system, for i morgen er det allerede Ã¦ndret.
 </para>
 
 <para>
-Alligevel kan man med fordel gøre sig overvejelser om en given
-kombination af software og hardware indenfor de fire områder og
-således kan man trin for trin selv tage stilling til bogens
-påstand om, at Linux i dag udgør en driftssikker og fornuftig
+Alligevel kan man med fordel gÃ¸re sig overvejelser om en given
+kombination af software og hardware indenfor de fire omrÃ¥der og
+sÃ¥ledes kan man trin for trin selv tage stilling til bogens
+pÃ¥stand om, at Linux i dag udgÃ¸r en driftssikker og fornuftig
 platform for kontorprogrammer.
 </para>
 
@@ -81,10 +81,10 @@ platform for kontorprogrammer.
 </sect1>
 
 <sect1 id="itplatform-tak">
-<title>Vi siger tak for hjælpen</title>
+<title>Vi siger tak for hjÃ¦lpen</title>
 <para>
-Vi har haft stor glæde af mange SSLUG-medlemmers støtte, rettelser og
-forslag til forbedringer - bliv ved med dette. Specielt vil vi nævne:
+Vi har haft stor glÃ¦de af mange SSLUG-medlemmers stÃ¸tte, rettelser og
+forslag til forbedringer - bliv ved med dette. Specielt vil vi nÃ¦vne:
 </para>
 
 <itemizedlist  mark="bullet" spacing="compact">
@@ -107,14 +107,14 @@ Ole Hansen
 
 <para>
 Du kan i <xref linkend="itplatform-apprevhist"/> finde en liste over alle de
-revisioner, som bogen har været igennem.
+revisioner, som bogen har vÃ¦ret igennem.
 </para>
 
 <para>
-Hvis du har ord du ikke forstår, så kan <ulink
-url="http://www.whatis.com">http://www.whatis.com</ulink> være
-interessant. Her kan du slå mange computerord op dog kun på engelsk.
-I øvrigt kan bogens stikordsregister være interessant.
+Hvis du har ord du ikke forstÃ¥r, sÃ¥ kan <ulink
+url="http://www.whatis.com">http://www.whatis.com</ulink> vÃ¦re
+interessant. Her kan du slÃ¥ mange computerord op dog kun pÃ¥ engelsk.
+I Ã¸vrigt kan bogens stikordsregister vÃ¦re interessant.
 </para>
 
 </sect1>
@@ -122,16 +122,16 @@ I øvrigt kan bogens stikordsregister være interessant.
 <sect1 id="itplatform-typografi">
 <title>Typografi</title>
 <para>
-Vi vil afslutte indledningen med at nævne den anvendte typografi.
+Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
 </para>
 
 
 <itemizedlist mark="bullet" spacing="compact">
-<listitem><para>Navne på filer og kataloger skrevet som
+<listitem><para>Navne pÃ¥ filer og kataloger skrevet som
 <filename>foo.bar</filename></para>
 </listitem>
 
-<listitem><para>Kommandoer, du udfører ved at taste, skrives som
+<listitem><para>Kommandoer, du udfÃ¸rer ved at taste, skrives som
 <command>help</command></para>
 </listitem>
 

@@ -5,7 +5,7 @@
 <sect1 id="ooo-afsnit-formatering-generelt">
   <title>Afsnitsformatering generelt</title>
 
-<para>Du får adgang til alle formateringsmulighederne ved at vælge
+<para>Du fÃ¥r adgang til alle formateringsmulighederne ved at vÃ¦lge
     <emphasis>Formater/Afsnit</emphasis>. Der fremkommer en dialogboks med otte
     faneblade:</para>
 
@@ -14,11 +14,11 @@
 <graphic fileref="afsnitsformatdialog.&magic;" scale="60"></graphic>
 </figure>
 
-<para>På fanebladet <emphasis>Indrykning og mellemrum</emphasis> vælges alle afstande,
-    mens du kan vælge justeringen på fanebladet <emphasis>Justering</emphasis>.</para>
+<para>PÃ¥ fanebladet <emphasis>Indrykning og mellemrum</emphasis> vÃ¦lges alle afstande,
+    mens du kan vÃ¦lge justeringen pÃ¥ fanebladet <emphasis>Justering</emphasis>.</para>
 
-<para>Du kan også finde mange af formateringsmulighederne i kontekstmenuen
-    (højreklik).</para>
+<para>Du kan ogsÃ¥ finde mange af formateringsmulighederne i kontekstmenuen
+    (hÃ¸jreklik).</para>
 
 </sect1>    <!--   7.3. Afsnitsformatering generelt -->
 

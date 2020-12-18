@@ -9,7 +9,7 @@
   <indexterm><primary>Programmering i Python</primary></indexterm>
 
   <para>
-   Denne bog er skrevet som en indføring i programmering i Python.
+   Denne bog er skrevet som en indfÃ¸ring i programmering i Python.
   </para>
  </sect1>
 
@@ -34,26 +34,26 @@
   </indexterm>
 
   <para>
-   Denne bog er skrevet af Alfred Jensen som en tilføjelse til
-   bogserien »Linux - Friheden til ...«.  Bogen er som resten af serien
-   en fri bog der kan læses enten i smådele eller som en helhed på
+   Denne bog er skrevet af Alfred Jensen som en tilfÃ¸jelse til
+   bogserien Â»Linux - Friheden til ...Â«.  Bogen er som resten af serien
+   en fri bog der kan lÃ¦ses enten i smÃ¥dele eller som en helhed pÃ¥
    <ulink url="http://&linuxbogurl;/">http://&linuxbogurl;/</ulink>.
   </para>
  </sect1>
 
  <sect1 id="python-tak">
-  <title>Vi siger tak for hjælpen</title>
+  <title>Vi siger tak for hjÃ¦lpen</title>
 
   <para>
-   Vi har haft stor glæde af mange SSLUG-medlemmers støtte, rettelser
+   Vi har haft stor glÃ¦de af mange SSLUG-medlemmers stÃ¸tte, rettelser
    og forslag til forbedringer &ndash; bliv ved med dette. Specielt vil vi
-   nævne:
+   nÃ¦vne:
 
    <itemizedlist  mark="bullet" spacing="compact">
     <listitem>
      <para>
-      Gitte Wange har oversat bogen fra LaTeX til Docbook/XML, så den kunne
-      blive en del af »Linux &ndash; Friheden til ...«-serien.
+      Gitte Wange har oversat bogen fra LaTeX til Docbook/XML, sÃ¥ den kunne
+      blive en del af Â»Linux &ndash; Friheden til ...Â«-serien.
      </para>
     </listitem>
    </itemizedlist>
@@ -61,16 +61,16 @@
 
   <para>
    Du kan i <xref linkend="python-apprevhist"/> finde en liste over
-   alle de ændringer som bogen har været igennem.
+   alle de Ã¦ndringer som bogen har vÃ¦ret igennem.
   </para>
 
   <para>
-   Hvis du støder på ord du ikke forstår, og de ikke findes i bogens
-   ordliste, så kan <ulink url=
-   "http://www.whatis.com/">http://www.whatis.com/</ulink> være et
-   nyttigt opslagsværk. Desværre er det kun på engelsk. Du må meget
-   gerne også <ulink url="mailto:linuxbog@sslug.dk">skrive til
-   redaktionen</ulink>, så vi kan få ordet med i ordlisten i næste
+   Hvis du stÃ¸der pÃ¥ ord du ikke forstÃ¥r, og de ikke findes i bogens
+   ordliste, sÃ¥ kan <ulink url=
+   "http://www.whatis.com/">http://www.whatis.com/</ulink> vÃ¦re et
+   nyttigt opslagsvÃ¦rk. DesvÃ¦rre er det kun pÃ¥ engelsk. Du mÃ¥ meget
+   gerne ogsÃ¥ <ulink url="mailto:linuxbog@sslug.dk">skrive til
+   redaktionen</ulink>, sÃ¥ vi kan fÃ¥ ordet med i ordlisten i nÃ¦ste
    udgave.
   </para>
  </sect1>
@@ -79,20 +79,20 @@
   <title>Typografi</title>
 
   <para>
-   Vi vil afslutte indledningen med at nævne den anvendte typografi.
+   Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
   </para>
 
   <itemizedlist mark="bullet" spacing="compact">
    <listitem>
     <para>
-     Navne på filer og kataloger skrives som
+     Navne pÃ¥ filer og kataloger skrives som
      <filename>foo.bar</filename>.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     Kommandoer du udfører ved at skrive dem på en kommandolinje,
+     Kommandoer du udfÃ¸rer ved at skrive dem pÃ¥ en kommandolinje,
      skrives som <command>help</command>.
     </para>
    </listitem>

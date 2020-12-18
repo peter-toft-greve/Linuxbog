@@ -3,33 +3,33 @@
 
     
 <sect1 id="ooo-soeg-og-erstat">
-  <title>Søg og erstat</title>
+  <title>SÃ¸g og erstat</title>
 
-<para>Søgefunktionen startes med <emphasis>Rediger/Søg og erstat</emphasis> (tastatur:
+<para>SÃ¸gefunktionen startes med <emphasis>Rediger/SÃ¸g og erstat</emphasis> (tastatur:
     <emphasis>Ctrl-G</emphasis>).</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>I boksen <emphasis>Søg efter</emphasis> indtastes den tekst du vil finde.</para>
+<para>I boksen <emphasis>SÃ¸g efter</emphasis> indtastes den tekst du vil finde.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Knappen <emphasis>Søg</emphasis> finder den næste forekomst (efter markørens
+<para>Knappen <emphasis>SÃ¸g</emphasis> finder den nÃ¦ste forekomst (efter markÃ¸rens
         position), som automatisk bliver markeret.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Knappen <emphasis>Søg alle</emphasis> finder <emphasis>alle</emphasis> forekomster, som <emphasis>alle</emphasis> bliver markeret.</para>
+<para>Knappen <emphasis>SÃ¸g alle</emphasis> finder <emphasis>alle</emphasis> forekomster, som <emphasis>alle</emphasis> bliver markeret.</para>
 
 </listitem>
 </itemizedlist>
 
-<para>Hvis du vil erstatte den søgte tekst med noget andet gøres sådan:</para>
+<para>Hvis du vil erstatte den sÃ¸gte tekst med noget andet gÃ¸res sÃ¥dan:</para>
 
 <itemizedlist mark="bullet">
   <listitem>
@@ -41,8 +41,8 @@
 
   <listitem>
 
-<para>Knappen <emphasis>Erstat</emphasis> erstatter den næste forekomst (efter
-        markørens position).</para>
+<para>Knappen <emphasis>Erstat</emphasis> erstatter den nÃ¦ste forekomst (efter
+        markÃ¸rens position).</para>
 
 </listitem>
 
@@ -53,5 +53,5 @@
 </listitem>
 </itemizedlist>
 
-</sect1>    <!--   5.9. Søg og erstat -->
+</sect1>    <!--   5.9. SÃ¸g og erstat -->
 

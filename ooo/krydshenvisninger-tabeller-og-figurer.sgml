@@ -7,45 +7,45 @@
     figurer</title>
 
 <para>Hvis du vil henvise til f.eks. en nummereret tabel eller figur (se <xref linkend="ooo-tabeller"/>kapitel 15 og <xref linkend="ooo-rammer"/>16)
-    har du igen det problem, at nummeret kan ændre sig, og også her skal du
+    har du igen det problem, at nummeret kan Ã¦ndre sig, og ogsÃ¥ her skal du
     bruge et <emphasis>krydshenvisningsfelt</emphasis> .</para>
 
-<para>Fremgangsmåden er sådan:</para>
+<para>FremgangsmÃ¥den er sÃ¥dan:</para>
 
 <orderedlist>
       <listitem>
 
-<para>Vælg <emphasis>Indsæt/Krydshenvisning</emphasis>.</para>
+<para>VÃ¦lg <emphasis>IndsÃ¦t/Krydshenvisning</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Under <emphasis>Felttype</emphasis> vælges den relevante type: <emphasis>Tabel</emphasis>
+<para>Under <emphasis>Felttype</emphasis> vÃ¦lges den relevante type: <emphasis>Tabel</emphasis>
         eller <emphasis>Illustration</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Under <emphasis>Udvalg</emphasis> vælges det relevante nummer.</para>
+<para>Under <emphasis>Udvalg</emphasis> vÃ¦lges det relevante nummer.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Under <emphasis>Format</emphasis> vælges <emphasis>Nummer</emphasis>.</para>
+<para>Under <emphasis>Format</emphasis> vÃ¦lges <emphasis>Nummer</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Klik <emphasis>Indsæt</emphasis> og derefter <emphasis>Luk</emphasis>.</para>
+<para>Klik <emphasis>IndsÃ¦t</emphasis> og derefter <emphasis>Luk</emphasis>.</para>
 
 </listitem>
     </orderedlist>
 
-<para>Nedenfor er vist dialogboksen når der skal henvises til figur nummer 3
+<para>Nedenfor er vist dialogboksen nÃ¥r der skal henvises til figur nummer 3
     ud af 5.</para>
 
 <figure float="1" id="fig-ooo-krydshenvisningsdialog">
@@ -53,8 +53,8 @@
 <graphic fileref="krydshenvisningdialog.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Referencen (dvs. nummeret) vises nu med grå baggrund på skærmen, og
-    hvis du holder musemarkøren over teksten kommer der en lille gul boks,
+<para>Referencen (dvs. nummeret) vises nu med grÃ¥ baggrund pÃ¥ skÃ¦rmen, og
+    hvis du holder musemarkÃ¸ren over teksten kommer der en lille gul boks,
     som viser hvad, du henviser til (tabel/illustration).</para>
 
 <figure float="1" id="fig-ooo-krydshenvisningsekvensnr">
@@ -62,7 +62,7 @@
 <graphic fileref="krydshenvisningsekvensnr.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Nummeret bliver automatisk opdateret, når der sker ændringer.</para>
+<para>Nummeret bliver automatisk opdateret, nÃ¥r der sker Ã¦ndringer.</para>
 
 <para> <emphasis>Tip</emphasis> : <emphasis>venstreklik</emphasis> hopper til den tabel/figur, du henviser
     til.</para>

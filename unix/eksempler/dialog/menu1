@@ -1,6 +1,6 @@
 #! /bin/sh
 # Filnavn: menu1
-dialog --menu "Hvem var en berømt astronom?" 0 0 0 \
+dialog --menu "Hvem var en berÃ¸mt astronom?" 0 0 0 \
 	a "Axel Brahe" \
 	o "Otto Brahe" \
 	t "Tyge Brahe" \

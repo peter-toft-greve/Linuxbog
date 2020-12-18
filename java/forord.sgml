@@ -9,8 +9,8 @@
 
 <para>
 Denne bog er blevet startet af Christian Damsgaard som syntes at den manglede i
-samlingen af "Frihedens" bøgerne. Meget hurtigt meldte Jonas Kongslund og
-Jacob Nordfalk sig på banen mht. at hjælpe med skrive arbejdet. Jakob Nordfalk
+samlingen af "Frihedens" bÃ¸gerne. Meget hurtigt meldte Jonas Kongslund og
+Jacob Nordfalk sig pÃ¥ banen mht. at hjÃ¦lpe med skrive arbejdet. Jakob Nordfalk
 har enddog doneret en del materiale fra sin egen Java bog "Objektorienteret 
 programmering i Java" (<ulink url="http://javabog.dk">http://javabog.dk</ulink>).
 </para>
@@ -18,13 +18,13 @@ programmering i Java" (<ulink url="http://javabog.dk">http://javabog.dk</ulink>)
 <para>
 Denne bog er oprindeligt skrevet og redigeret af
 Christian Damsgaard, Jonas Kongslund, Jakob Nordfalk,
-som har ophavsret på bogen.
+som har ophavsret pÃ¥ bogen.
 </para>
 
 <para>
-Den største del at materialet i denne bog, består af det materiale som
+Den stÃ¸rste del at materialet i denne bog, bestÃ¥r af det materiale som
 Jacob Nordfalk har doneret til bogen - det takker vi for. I fremtiden vil
-Jacobs og denne bog muligvis bevæge sig længere fra hinanden, og der
+Jacobs og denne bog muligvis bevÃ¦ge sig lÃ¦ngere fra hinanden, og der
 vil komme nye afsnit til.
 </para>
 
@@ -44,7 +44,7 @@ vil komme nye afsnit til.
 <title>Om forfatterne og bogens historie</title>
 
 <para>
-  Bogen er primært skrevet af nedenstående personer:
+  Bogen er primÃ¦rt skrevet af nedenstÃ¥ende personer:
   <itemizedlist mark="bullet">
     <listitem>
       <para>
@@ -56,7 +56,7 @@ vil komme nye afsnit til.
       </para></listitem>
     <listitem>
       <para>
-        Jonas Kongslund, Stud. MSc. Datalogi, Århus Universitet
+        Jonas Kongslund, Stud. MSc. Datalogi, Ã…rhus Universitet
         <figure id="jonas-kongslund-fig">
           <title>Jonas Kongslund</title>
           <graphic fileref="jonas_kongslund.&magic;" scale="60"></graphic>
@@ -65,7 +65,7 @@ vil komme nye afsnit til.
       </listitem>
     <listitem>
       <para>
-        Jakob Nordfalk, cand.scient. i fysik, Københavns Universitet.
+        Jakob Nordfalk, cand.scient. i fysik, KÃ¸benhavns Universitet.
         <figure id="jacob-nordfalk-fig">
           <title>Jacob Nordfalk</title>
           <graphic fileref="jacob_nordfalk.&magic;" scale="60"></graphic>
@@ -78,29 +78,29 @@ vil komme nye afsnit til.
 </sect1>
 
 <sect1 id="java-tak">
-<title>Vi siger tak for hjælpen</title>
+<title>Vi siger tak for hjÃ¦lpen</title>
 <para>
-Vi har haft stor glæde af mange SSLUG-medlemmers støtte, rettelser og
-forslag til forbedringer - bliv ved med dette. Specielt vil vi nævne:
+Vi har haft stor glÃ¦de af mange SSLUG-medlemmers stÃ¸tte, rettelser og
+forslag til forbedringer - bliv ved med dette. Specielt vil vi nÃ¦vne:
 </para>
 
 <itemizedlist  mark="bullet" spacing="compact">
   <listitem><para>Peter Toft</para></listitem>
-  <listitem><para>Erik Søe Sørensen</para></listitem>
+  <listitem><para>Erik SÃ¸e SÃ¸rensen</para></listitem>
   <listitem><para>Alfred Jensen</para></listitem>
   <listitem><para>Claus Madsen</para></listitem>
 </itemizedlist>
 
 <para>
 Du kan i <xref linkend="java-apprevhist"/> finde en liste over alle de
-revisioner, som bogen har været igennem.
+revisioner, som bogen har vÃ¦ret igennem.
 </para>
 
 <para>
-Hvis du har ord du ikke forstår, så kan <ulink
-url="http://www.whatis.com">http://www.whatis.com</ulink> være
-interessant. Her kan du slå mange computerord op dog kun på engelsk.
-I øvrigt kan bogens stikordsregister være interessant.
+Hvis du har ord du ikke forstÃ¥r, sÃ¥ kan <ulink
+url="http://www.whatis.com">http://www.whatis.com</ulink> vÃ¦re
+interessant. Her kan du slÃ¥ mange computerord op dog kun pÃ¥ engelsk.
+I Ã¸vrigt kan bogens stikordsregister vÃ¦re interessant.
 </para>
 
 </sect1>
@@ -108,16 +108,16 @@ I øvrigt kan bogens stikordsregister være interessant.
 <sect1 id="java-typografi">
 <title>Typografi</title>
 <para>
-Vi vil afslutte indledningen med at nævne den anvendte typografi.
+Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
 </para>
 
 
 <itemizedlist mark="bullet" spacing="compact">
-<listitem><para>Navne på filer og kataloger skrevet som
+<listitem><para>Navne pÃ¥ filer og kataloger skrevet som
 <filename>foo.bar</filename></para>
 </listitem>
 
-<listitem><para>Kommandoer, du udfører ved at taste, skrives som
+<listitem><para>Kommandoer, du udfÃ¸rer ved at taste, skrives som
 <command>help</command></para>
 </listitem>
 

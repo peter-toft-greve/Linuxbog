@@ -7,14 +7,14 @@
 <orderedlist>
       <listitem>
 
-<para>Placer markøren i det afsnit, som typografien skal bruges på
-        (afsnittet må gerne være tomt).</para>
+<para>Placer markÃ¸ren i det afsnit, som typografien skal bruges pÃ¥
+        (afsnittet mÃ¥ gerne vÃ¦re tomt).</para>
 
 </listitem>
 
       <listitem>
 
-<para>Åbn stylisten og vælg <emphasis>afsnitstypografier</emphasis>, knappen
+<para>Ã…bn stylisten og vÃ¦lg <emphasis>afsnitstypografier</emphasis>, knappen
 <figure float="1" id="fig-ooo-stylistafsnitstypografier-anvende">
 <title>Afsnitstypografier</title>
 <graphic fileref="stylistafsnitstypografier.&magic;" scale="60"></graphic>
@@ -26,9 +26,9 @@
 
       <listitem>
 
-<para>Dobbeltklik på den ønskede typografi, f.eks. <emphasis>Overskrift 1</emphasis>
-        eller <emphasis>Brødtekst</emphasis>; så formateres afsnittet med den valgte
-        typografi. <emphasis>Tip</emphasis> : Du får flere typografier frem hvis du vælger
+<para>Dobbeltklik pÃ¥ den Ã¸nskede typografi, f.eks. <emphasis>Overskrift 1</emphasis>
+        eller <emphasis>BrÃ¸dtekst</emphasis>; sÃ¥ formateres afsnittet med den valgte
+        typografi. <emphasis>Tip</emphasis> : Du fÃ¥r flere typografier frem hvis du vÃ¦lger
         <emphasis>Alle typografier</emphasis> nederst i stylisten.</para>
 
 <para> <emphasis>Eksempel</emphasis> : Formatering af et afsnit med typografien
@@ -48,9 +48,9 @@
 <graphic fileref="objektlinjetypografi.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Hvis du har brugt en typografi før kan du undvære
-    stylisten, i stedet kan typografien vælges i listen i objektlinjen, som
-    vist her til venstre. (Typografierne tilføjes til listen efterhånden som
+<para>Hvis du har brugt en typografi fÃ¸r kan du undvÃ¦re
+    stylisten, i stedet kan typografien vÃ¦lges i listen i objektlinjen, som
+    vist her til venstre. (Typografierne tilfÃ¸jes til listen efterhÃ¥nden som
     de bruges).</para>
 
 </sect1>    <!--   8.4. Anvende en afsnitstypografi -->

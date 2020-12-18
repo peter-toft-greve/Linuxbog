@@ -1,4 +1,4 @@
-/* dirlist2.c læser og gemmer alle filnavne i et directory */
+/* dirlist2.c lÃ¦ser og gemmer alle filnavne i et directory */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,13 +17,13 @@ main(int argc, char *argv[])
 	return showdir(dirname);
 }
 
-/* et liste element indeholder en pointer til næste element samt data eller
- * som her en pointer til allokeret blok der kan variere i størrelse.
+/* et liste element indeholder en pointer til nÃ¦ste element samt data eller
+ * som her en pointer til allokeret blok der kan variere i stÃ¸rrelse.
  * Som navnet antyder, kunne man save flere oplysninger om hver directory
  * entry, men her er det kun navnet, som saves. For et mere fuldkomment
- * eksempel på, hvordan man gemmer alle oplysninger om en fil, se fileutils
- * source - eller nogle af de talrige andre eksempler, som kan findes på
- * nettet (fx. metalab.unc.edu - søg efter ydir).
+ * eksempel pÃ¥, hvordan man gemmer alle oplysninger om en fil, se fileutils
+ * source - eller nogle af de talrige andre eksempler, som kan findes pÃ¥
+ * nettet (fx. metalab.unc.edu - sÃ¸g efter ydir).
  */
 
 struct dirsav_t {
@@ -57,8 +57,8 @@ int showdir(char *name)
 
 
 /* createnew() stopper programmet, hvis der ikke er mere ram. Det er den
- * enkleste og mest relevante fejl håndtering (her): Succes eller dø.
- * Et mere sigende navn kunne være mustCreatenew(); */
+ * enkleste og mest relevante fejl hÃ¥ndtering (her): Succes eller dÃ¸.
+ * Et mere sigende navn kunne vÃ¦re mustCreatenew(); */
 
 static struct dirsav_t * createnew()
 {
@@ -71,26 +71,26 @@ static struct dirsav_t * createnew()
 	return p2l;
 }
 
-/* denne insert funktion er så simpel som mulig. Se evt. dirlist3.c (kommer
+/* denne insert funktion er sÃ¥ simpel som mulig. Se evt. dirlist3.c (kommer
  * snart ... */
 
 void insert_list(struct dirsav_t *ptr, char *obj, int len)
 {
 	struct dirsav_t *e;
 				/* der reserveres hukommelse til det
-				 * listeelement, som skal indsættes. */
+				 * listeelement, som skal indsÃ¦ttes. */
 	e = createnew();
 	e->next = NULL;
-				/* listen gennemløbes for at finde sidste
+				/* listen gennemlÃ¸bes for at finde sidste
 				 * element. Alternativt kunne man stoppe,
-				 * når man nåede det sted, hvor det nye
+				 * nÃ¥r man nÃ¥ede det sted, hvor det nye
 				 * element passede ind, alfabetisk sorteret. */
 	while (ptr->next)
 		ptr = ptr->next;
-				/* nu indsættes det nye element i den next
-				 * pointer, som før var NULL. */
+				/* nu indsÃ¦ttes det nye element i den next
+				 * pointer, som fÃ¸r var NULL. */
 	ptr->next = e;
-				/* så allokeres mere memory til den string
+				/* sÃ¥ allokeres mere memory til den string
 				 * eller andre data, som skal gemmes. */
 	e->name = malloc(len+1);
 				/* til sidst flyttes data over. Det er
@@ -98,8 +98,8 @@ void insert_list(struct dirsav_t *ptr, char *obj, int len)
 	memcpy(e->name,obj,len);
 }
 
-/* løb gennem listen, spring første element over (for nemheds skyld bliver
- * det første element aldrig brugt til andet end til at pege på det næste)
+/* lÃ¸b gennem listen, spring fÃ¸rste element over (for nemheds skyld bliver
+ * det fÃ¸rste element aldrig brugt til andet end til at pege pÃ¥ det nÃ¦ste)
  * */
 
 void show_list(struct dirsav_t *ptr)

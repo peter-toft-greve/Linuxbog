@@ -1,6 +1,6 @@
 <!--
 <ul>
-<li>25/1 2004 Seneste udgaver af bøgerne frigives til www.linuxbog.dk</li>
+<li>25/1 2004 Seneste udgaver af bÃ¸gerne frigives til www.linuxbog.dk</li>
 </ul>
 -->
 
@@ -9,41 +9,41 @@
 
 <ul>
 <li>Generelt:<br> 
-"alle"-bøgerne er væk. Denne gamle konstruktion til at lave
-et kæmpe fælles stikordsregister er nu afløst af en ny elegant
+"alle"-bÃ¸gerne er vÃ¦k. Denne gamle konstruktion til at lave
+et kÃ¦mpe fÃ¦lles stikordsregister er nu aflÃ¸st af en ny elegant
 metode med samme resultat. Ole Tange og Hans Schou klarede det.
 
-<li>3 nye bøger er med denne gang
+<li>3 nye bÃ¸ger er med denne gang
 <ul>
-<li><a href="distro/bog/">Linux - Friheden til at vælge
+<li><a href="distro/bog/">Linux - Friheden til at vÃ¦lge
     distribution</a>: 
 
-<li><a href="ooo/bog/">Linux - Friheden til at vælge OpenOffice.org</a>:
+<li><a href="ooo/bog/">Linux - Friheden til at vÃ¦lge OpenOffice.org</a>:
     
-<li><a href="python/bog/">Linux - Friheden til at vælge Python</a>:
+<li><a href="python/bog/">Linux - Friheden til at vÃ¦lge Python</a>:
 </ul>
 
 
-<li><a href="friheden/bog/apprevhist.html">Linux - Friheden til at vælge installation</a>:
+<li><a href="friheden/bog/apprevhist.html">Linux - Friheden til at vÃ¦lge installation</a>:
 </li>
 
-<li><a href="applikationer/bog/apprevhist.html">Linux - Friheden til at vælge  programmer</a>:
-</li>
-
-
-<li><a href="wm/bog/apprevhist.html">Linux - Friheden til at vælge
-grafisk brugergrænseflade</a>:
+<li><a href="applikationer/bog/apprevhist.html">Linux - Friheden til at vÃ¦lge  programmer</a>:
 </li>
 
 
-<li><a href="sikkerhed/bog/apprevhist.html">Linux - Friheden til sikkerhed på internettet</a>:
+<li><a href="wm/bog/apprevhist.html">Linux - Friheden til at vÃ¦lge
+grafisk brugergrÃ¦nseflade</a>:
+</li>
+
+
+<li><a href="sikkerhed/bog/apprevhist.html">Linux - Friheden til sikkerhed pÃ¥ internettet</a>:
 </li>
 
 <li><a href="admin/bog/apprevhist.html">Linux - Friheden til
 systemadministration</a>:
 </li>
 
-<li><a href="unix/bog/apprevhist.html">Linux - Friheden til at lære Unix</a>:
+<li><a href="unix/bog/apprevhist.html">Linux - Friheden til at lÃ¦re Unix</a>:
 </li>
 
 
@@ -64,7 +64,7 @@ programmere</a>:
 </li>
 
 
-<li><a href="kontorbruger/bog/apprevhist.html">Linux -  Friheden til at vælge kontorprogrammer</a>:
+<li><a href="kontorbruger/bog/apprevhist.html">Linux -  Friheden til at vÃ¦lge kontorprogrammer</a>:
 </li>
 
 
@@ -75,7 +75,7 @@ programmere</a>:
 
 
 <li><a href="itplatform/bog/apprevhist.html">Linux - Friheden til at
-vælge itplatform</a>: 
+vÃ¦lge itplatform</a>: 
 </li>
 
 

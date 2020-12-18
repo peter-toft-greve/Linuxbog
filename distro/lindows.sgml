@@ -1,11 +1,11 @@
 <!-- $Id$ -->
 <chapter id="distro-lindows">
-<title>(Dødt projekt) Lindows</title>
+<title>(DÃ¸dt projekt) Lindows</title>
 <indexterm><primary>Lindows</primary></indexterm>
 <indexterm><primary>distribution</primary><secondary>Lindows</secondary></indexterm>
 <para>
-Lindows er en amerikansk Debian-inspireret Linux-distribution, som går direkte efter
-desktop-brug. Den har en meget nem installation, og suverænt den hurtigste installation.
+Lindows er en amerikansk Debian-inspireret Linux-distribution, som gÃ¥r direkte efter
+desktop-brug. Den har en meget nem installation, og suverÃ¦nt den hurtigste installation.
 </para>
 
 
@@ -15,10 +15,10 @@ desktop-brug. Den har en meget nem installation, og suverænt den hurtigste insta
 </figure>
 
  <sect1 id="distro-lindows-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Lindows</secondary>
   </indexterm>
 
@@ -26,7 +26,7 @@ desktop-brug. Den har en meget nem installation, og suverænt den hurtigste insta
 Lindows bejler til desktopbrugere, som gerne vil nemt gennem installationen og
 som sidenhen vil have adgang til en masse programmer, som kan installeres ved 
 simpel afkrydsning i en browser. Denne download-service kaldes "Click-N-Run" og 
-den kræver abonnement. Den giver adgang til ca. 1800 programmer.
+den krÃ¦ver abonnement. Den giver adgang til ca. 1800 programmer.
 </para>
 </sect1>
 
@@ -39,10 +39,10 @@ den kræver abonnement. Den giver adgang til ca. 1800 programmer.
   </indexterm>
 
 <para>
-Installationen er meget nem, og kræver på en hurtig PC 3-5 minutter. 
-At det er så hurtigt skyldes, at der ikke installeres mere end hvad der
-er nødvendigt for at man får en KDE brugergrænseflade, hvorfra man kan 
-efterinstallere programmer via "Click-N-Run" før de danske menutekster i KDE var
+Installationen er meget nem, og krÃ¦ver pÃ¥ en hurtig PC 3-5 minutter. 
+At det er sÃ¥ hurtigt skyldes, at der ikke installeres mere end hvad der
+er nÃ¸dvendigt for at man fÃ¥r en KDE brugergrÃ¦nseflade, hvorfra man kan 
+efterinstallere programmer via "Click-N-Run" fÃ¸r de danske menutekster i KDE var
 i orden.
 </para>
 </sect1>
@@ -50,19 +50,19 @@ i orden.
 <sect1 id="distro-lindows-brug">
 <title>Brugen af Lindows</title>
 <para>
-Lindows 3.0 havde en meget nem installation og hvis man vil betale til "Click-N-Run", så
-får brugeren en enkel og god adgang til at installere programmer. Alt det svære er pakket
-ind, og brugeren skal kun betjene få og enkle grafiske programmer.
+Lindows 3.0 havde en meget nem installation og hvis man vil betale til "Click-N-Run", sÃ¥
+fÃ¥r brugeren en enkel og god adgang til at installere programmer. Alt det svÃ¦re er pakket
+ind, og brugeren skal kun betjene fÃ¥ og enkle grafiske programmer.
 </para>
 
 <para>
-Det som var svært ved Lindows 3.0 var at få danske menuer og dansk keyboard. Lindows 3.0
-var meget inspireret af at den skulle sælge i USA, og det skinner igennem. Det krævede 
+Det som var svÃ¦rt ved Lindows 3.0 var at fÃ¥ danske menuer og dansk keyboard. Lindows 3.0
+var meget inspireret af at den skulle sÃ¦lge i USA, og det skinner igennem. Det krÃ¦vede 
 flere opdateringer af systemet via "Click-N-Run".
 </para>
 
 <figure id="lindows-Click-N-Run-fig" float="1">
-<title>Med Lindows Click-N-Run kræver det kun enkle klik i en browser før man har installeret et eller 
+<title>Med Lindows Click-N-Run krÃ¦ver det kun enkle klik i en browser fÃ¸r man har installeret et eller 
 flere programmer.</title>
 <graphic fileref="lindows-Click-N-Run.&magic;" scale="100"></graphic>
 </figure>
@@ -75,13 +75,13 @@ flere programmer.</title>
 <title>Samlet vurdering af Lindows</title>
 <para>
 Lindows er nem og en rigtig god Linux rettet mod enkel desktopbrug, 
-men f.eks. sikkerhedsmæssigt er den ikke smart idet man (ligesom Windows XP) hurtigt 
-kommer til at være systemadministrator "root".
+men f.eks. sikkerhedsmÃ¦ssigt er den ikke smart idet man (ligesom Windows XP) hurtigt 
+kommer til at vÃ¦re systemadministrator "root".
 </para>
 
 <para>
-Et minus er at for at få glæde af Lindows, så skal man abonnere på "Click-N-Run". Det
-koster fra $50 og opefter at have den adgang til den service - per år.
+Et minus er at for at fÃ¥ glÃ¦de af Lindows, sÃ¥ skal man abonnere pÃ¥ "Click-N-Run". Det
+koster fra $50 og opefter at have den adgang til den service - per Ã¥r.
 </para>
 
 </sect1>

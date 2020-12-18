@@ -4,27 +4,27 @@
 <indexterm><primary>Sikkerhed</primary></indexterm>
 
 <sect1 id="usikkert-net">
-<title>Hvorfor er netværk usikkert?</title>
+<title>Hvorfor er netvÃ¦rk usikkert?</title>
 <para>
-Din maskine har ofte en del netværksservices åbne på forskellige "porte",
-når du har adgang til internettet. En port er ikke en fysisk port, men en 
-logisk indgang til din maskine via netværksenheden (modem eller 
-netværkskort). Disse "åbne porte" benyttes til at udføre 
-netværkskommunikation, hvis maskinen tilbyder netværksservices som f.eks. ftp.
-Men de kan også misbruges, så uautoriserede
-personer kan komme ind på din computer via nettet. Dette kan ske, hvis der 
-er fejl i netværksprogrammer (services, firewall og styresystem), eller hvis 
+Din maskine har ofte en del netvÃ¦rksservices Ã¥bne pÃ¥ forskellige "porte",
+nÃ¥r du har adgang til internettet. En port er ikke en fysisk port, men en 
+logisk indgang til din maskine via netvÃ¦rksenheden (modem eller 
+netvÃ¦rkskort). Disse "Ã¥bne porte" benyttes til at udfÃ¸re 
+netvÃ¦rkskommunikation, hvis maskinen tilbyder netvÃ¦rksservices som f.eks. ftp.
+Men de kan ogsÃ¥ misbruges, sÃ¥ uautoriserede
+personer kan komme ind pÃ¥ din computer via nettet. Dette kan ske, hvis der 
+er fejl i netvÃ¦rksprogrammer (services, firewall og styresystem), eller hvis 
 du lader dem 
-stå helt åbne uden nogen form for adgangskontrol. Det kan også ske selvom 
+stÃ¥ helt Ã¥bne uden nogen form for adgangskontrol. Det kan ogsÃ¥ ske selvom 
 du har adgangkontrol, hvis folk har mulighed for at opsnappe dit brugernavn 
 og password via nettet.
-Ofte kan man direkte samle brugernavne og passwords op på nettet ved at 
-bruge et "sniffer" program, som lytter til trafikken på et givent sted.
+Ofte kan man direkte samle brugernavne og passwords op pÃ¥ nettet ved at 
+bruge et "sniffer" program, som lytter til trafikken pÃ¥ et givent sted.
 </para>
 
 <para>
-Dette er bare en forsmag på de emner, vi vil komme nærmere ind på i de
-kommende kapitler. Se også 
+Dette er bare en forsmag pÃ¥ de emner, vi vil komme nÃ¦rmere ind pÃ¥ i de
+kommende kapitler. Se ogsÃ¥ 
 <ulink url="http://securityfocus.com/infocus/1539">http://securityfocus.com/infocus/1539</ulink> om samme emne.
 </para>
 
@@ -33,44 +33,44 @@ kommende kapitler. Se også
 <indexterm><primary>Sikkerhed</primary><secondary>Linux</secondary></indexterm>
 
 <para>
-Nogen har anklaget Linux for at være et meget usikkert system, idet alle 
-kan læse kildeteksten. Når man kan læse kildeteksten til f.eks. 
-netværksprogrammer og se, hvordan de fungerer, er det nemt finde 
+Nogen har anklaget Linux for at vÃ¦re et meget usikkert system, idet alle 
+kan lÃ¦se kildeteksten. NÃ¥r man kan lÃ¦se kildeteksten til f.eks. 
+netvÃ¦rksprogrammer og se, hvordan de fungerer, er det nemt finde 
 eventuelle fejl.
-Disse kan bruges til at lave angreb på Linux-maskiner. Dette er delvis sandt! 
-<emphasis>Men</emphasis> alligevel ikke. Vi ser på hvorfor.
+Disse kan bruges til at lave angreb pÃ¥ Linux-maskiner. Dette er delvis sandt! 
+<emphasis>Men</emphasis> alligevel ikke. Vi ser pÃ¥ hvorfor.
 </para>
 
 <para>
-For at knække sikkerheden på et UNIX-system, skal man enten
+For at knÃ¦kke sikkerheden pÃ¥ et UNIX-system, skal man enten
 <emphasis>kende</emphasis> en fejl eller
-<emphasis>lede efter</emphasis> fejl i systemet herunder systemopsætning 
-og netværksprogrammer.
+<emphasis>lede efter</emphasis> fejl i systemet herunder systemopsÃ¦tning 
+og netvÃ¦rksprogrammer.
 
-For en kommerciel leverandør er en fejl ofte et prestigetab, og derfor er 
-det måske ikke alle fejl, som bliver offentligt kendt. Hvis ingen kendte
-de fejl, der er i de lukkede systemer, ville alt være godt. Men ofte
+For en kommerciel leverandÃ¸r er en fejl ofte et prestigetab, og derfor er 
+det mÃ¥ske ikke alle fejl, som bliver offentligt kendt. Hvis ingen kendte
+de fejl, der er i de lukkede systemer, ville alt vÃ¦re godt. Men ofte
 bliver fejl i lukkede systemer opdaget og kendt.
-Det kan skyldes at nogen udefra opdager fejlen ved et tilfælde, eller måske 
-leder de bevidst efter fejl - eller at nogen indefra lækker information  
-eller taler over sig. Så ender fejlen måske på en hjemmeside
-eller som en artikel i en avis. Så har du problemet: Hvis den, der vil bryde 
-ind, kender fejlen, og du som systemadministrator ikke kender og tager højde 
-for den, kan han komme ind på dit system. 
+Det kan skyldes at nogen udefra opdager fejlen ved et tilfÃ¦lde, eller mÃ¥ske 
+leder de bevidst efter fejl - eller at nogen indefra lÃ¦kker information  
+eller taler over sig. SÃ¥ ender fejlen mÃ¥ske pÃ¥ en hjemmeside
+eller som en artikel i en avis. SÃ¥ har du problemet: Hvis den, der vil bryde 
+ind, kender fejlen, og du som systemadministrator ikke kender og tager hÃ¸jde 
+for den, kan han komme ind pÃ¥ dit system. 
 </para>
 
 <para>
-Det er nok nærmest umuligt at gardere sig imod at en sikkerhedsbrist 
+Det er nok nÃ¦rmest umuligt at gardere sig imod at en sikkerhedsbrist 
 bliver offentligt kendt. 
 </para>
 
 <para>
 Ud over kendte sikkerhedshuller kan den, der vil bryde ind, selv lede efter
-fejl. I et lukket system er det langt sværere at lede efter fejl end i 
-åbent system som Linux, 
-fordi man ikke har kildeteksten. Men en måde at finde sikkerhedsfejl på, 
-er at prøve kendte sikkerhedshuller af på nye maskinopsætninger - men med 
-ændringer svarende til nye ideer. Nogle gange sker det så, at der er
+fejl. I et lukket system er det langt svÃ¦rere at lede efter fejl end i 
+Ã¥bent system som Linux, 
+fordi man ikke har kildeteksten. Men en mÃ¥de at finde sikkerhedsfejl pÃ¥, 
+er at prÃ¸ve kendte sikkerhedshuller af pÃ¥ nye maskinopsÃ¦tninger - men med 
+Ã¦ndringer svarende til nye ideer. Nogle gange sker det sÃ¥, at der er
 bid. Et system er ikke sikret imod indbrud, bare fordi kildeteksten er 
 lukket.
 </para>
@@ -78,54 +78,54 @@ lukket.
 <para>
 Erfaring viser, at nogle af de helt store firmaer er meget ringe til
 at oplyse om sikkerhedsfejl - de skal helst negligeres eller
-skjules. Sikkerhedsbristerne bliver ofte hurtigt annonceret på internettet,
-mens firmaerne tit bruger lang tid på at lukke sikkerhedshullet
-ordentligt. I al den tid fra annoncering til rettelse er maskinerne åbne 
+skjules. Sikkerhedsbristerne bliver ofte hurtigt annonceret pÃ¥ internettet,
+mens firmaerne tit bruger lang tid pÃ¥ at lukke sikkerhedshullet
+ordentligt. I al den tid fra annoncering til rettelse er maskinerne Ã¥bne 
 for mulige sikkerhedsangreb.
 </para> 
 
 <para>
-I Open Source-verdenen vender man alle disse problemstillinger på hovedet. For det første
-findes al relevant kode på internettet til offentlig beskuelse. Så nok
-er der mennesker, som kan læse og bryde sikkerheden for andre, men
-Open Source-verdenen er indrettet, så der er en meget stor prestige i at
+I Open Source-verdenen vender man alle disse problemstillinger pÃ¥ hovedet. For det fÃ¸rste
+findes al relevant kode pÃ¥ internettet til offentlig beskuelse. SÃ¥ nok
+er der mennesker, som kan lÃ¦se og bryde sikkerheden for andre, men
+Open Source-verdenen er indrettet, sÃ¥ der er en meget stor prestige i at
 finde og specielt lappe sikkerhedshuller. Derfor vil folk, der
-finder fejl, oftest fortælle offentligt om de fundne fejl fremfor at
-gemme informationen. Det kan selvfølgelig også være, at man i stedet
-vælger at udnytte informationen til at bryde ind på andres systemer. 
-Så kan det være, at det er et af de første "ofre", som rapporterer fejlen. 
-Man vil så fokusere på hvilken service, der gav sikkerhedshullet, som 
-man så lukker (eller giver speciel opmærksomhed gennem overvågning, 
+finder fejl, oftest fortÃ¦lle offentligt om de fundne fejl fremfor at
+gemme informationen. Det kan selvfÃ¸lgelig ogsÃ¥ vÃ¦re, at man i stedet
+vÃ¦lger at udnytte informationen til at bryde ind pÃ¥ andres systemer. 
+SÃ¥ kan det vÃ¦re, at det er et af de fÃ¸rste "ofre", som rapporterer fejlen. 
+Man vil sÃ¥ fokusere pÃ¥ hvilken service, der gav sikkerhedshullet, som 
+man sÃ¥ lukker (eller giver speciel opmÃ¦rksomhed gennem overvÃ¥gning, 
 hvis man ikke kan lukke servicen f.eks. webserveren for en internet-butik). 
-I Open Source-verdenen indleder man så  en klapjagt for at få fjernet 
+I Open Source-verdenen indleder man sÃ¥  en klapjagt for at fÃ¥ fjernet 
 problemet og 
-udgive nye versioner af de berørte programmer. Det bliver en slags "trofæ" 
-at komme først med den korrekte rettelse. Normalt er man nede på dage 
+udgive nye versioner af de berÃ¸rte programmer. Det bliver en slags "trofÃ¦" 
+at komme fÃ¸rst med den korrekte rettelse. Normalt er man nede pÃ¥ dage 
 og ofte timer, fra en sikkerhedsfejl er rapporteret, til den er fundet 
-og rettet, hvilket er markant mindre end på nogen af de andre lukkede 
+og rettet, hvilket er markant mindre end pÃ¥ nogen af de andre lukkede 
 systemer.
 </para>
 
 <para>
-Alt dette lyder meget rosenrødt, men hvis din Linux-maskine har en
-kendt sikkerhedsbrist, og maskinen er på et usikkert netværk såsom
-internettet, så er der er en pris at betale.
-Du <emphasis>skal</emphasis> opdatere din maskine, når der er fundet
+Alt dette lyder meget rosenrÃ¸dt, men hvis din Linux-maskine har en
+kendt sikkerhedsbrist, og maskinen er pÃ¥ et usikkert netvÃ¦rk sÃ¥som
+internettet, sÃ¥ er der er en pris at betale.
+Du <emphasis>skal</emphasis> opdatere din maskine, nÃ¥r der er fundet
 sikkerhedsbrister, og den tilsvarende sikkerhedsrettelse er
 offentliggjort. Ellers har du reelt set nul sikkerhed!  Alle kan jo se
-hvad, der er galt i din kode - det har jo været diskuteret på internettet, 
-så man har kunnet lave rettelsen. På 
+hvad, der er galt i din kode - det har jo vÃ¦ret diskuteret pÃ¥ internettet, 
+sÃ¥ man har kunnet lave rettelsen. PÃ¥ 
 <ulink
 url="http://ftp2.de.freebsd.org/pub/misc/www.rootshell.com/">
-rootshell på freebsd.org </ulink> er der en lang række
+rootshell pÃ¥ freebsd.org </ulink> er der en lang rÃ¦kke
 henvisninger til artikler og software. Det er ofte beskrivelse af
-problemets omfang og karakter og anvisninger på udnyttelse og
+problemets omfang og karakter og anvisninger pÃ¥ udnyttelse og
 reparation.
 </para>
 
 <para>
-Det typiske forløb for en systemadministrator i forbindelse med 
-opdagelsen af et sikkerhedsbrist vil være:
+Det typiske forlÃ¸b for en systemadministrator i forbindelse med 
+opdagelsen af et sikkerhedsbrist vil vÃ¦re:
 </para>
 
 <itemizedlist mark="bullet">
@@ -134,9 +134,9 @@ Sikkerhedsbristen bliver annonceret
 </para></listitem>
 
 <listitem><para>
-Man lukker for den service, som bristen tilhører. Hvis det ikke er 
-muligt iværksættes ekstra overvågning af servicen samt de filer, som 
-kan påvirkes af sikkerhedsbristen.
+Man lukker for den service, som bristen tilhÃ¸rer. Hvis det ikke er 
+muligt ivÃ¦rksÃ¦ttes ekstra overvÃ¥gning af servicen samt de filer, som 
+kan pÃ¥virkes af sikkerhedsbristen.
 </para></listitem>
 
 <listitem><para>
@@ -148,7 +148,7 @@ Installation af rettelsen.
 </para></listitem>
 
 <listitem><para>
-Starte servicen igen eller stoppe den ekstra overvågning.
+Starte servicen igen eller stoppe den ekstra overvÃ¥gning.
 </para></listitem>
 </itemizedlist>
 
@@ -158,14 +158,14 @@ Starte servicen igen eller stoppe den ekstra overvågning.
 <title>Hvilke angreb kan jeg blive udsat for</title>
 <para>
 Der er flere forskellige typer angreb, der kan ramme din maskine. Der
-er forskellige metoder, en angriber kan benytte sig af, og som man kan gøre
-noget for at beskytte sig imod. Der er også forskel på, hvilken type
-adgang en angriber får til dit system, og hvor alvorlige konsekvenser
+er forskellige metoder, en angriber kan benytte sig af, og som man kan gÃ¸re
+noget for at beskytte sig imod. Der er ogsÃ¥ forskel pÃ¥, hvilken type
+adgang en angriber fÃ¥r til dit system, og hvor alvorlige konsekvenser
 et vellykket angreb har for dig. 
 </para>
 
 <para>
-Lad os først se på, hvordan en angriber kan bære sig ad med at få adgang
+Lad os fÃ¸rst se pÃ¥, hvordan en angriber kan bÃ¦re sig ad med at fÃ¥ adgang
 til dit system.
 </para>
 
@@ -174,12 +174,12 @@ til dit system.
 <emphasis>Exploits</emphasis>
 <indexterm><primary>Exploits</primary></indexterm>
 
-Det mest almindelige er at gå efter nogle netværksservice-programmer, 
-der er fundet fejl i. Disse fejl udnyttes ofte for at få fuld adgang
+Det mest almindelige er at gÃ¥ efter nogle netvÃ¦rksservice-programmer, 
+der er fundet fejl i. Disse fejl udnyttes ofte for at fÃ¥ fuld adgang
 til maskinen (Se nedenfor og <xref linkend="root-access"/>). Som 
-tidligere nævnt skal man holde øje med annoncerede sikkerhedsfejl,
-og få opdateret de anfægtede programmer. Vi vil i <xref
-linkend="services"/> se på hvordan du minimerer disse problemer.
+tidligere nÃ¦vnt skal man holde Ã¸je med annoncerede sikkerhedsfejl,
+og fÃ¥ opdateret de anfÃ¦gtede programmer. Vi vil i <xref
+linkend="services"/> se pÃ¥ hvordan du minimerer disse problemer.
 </para>
 
 
@@ -188,7 +188,7 @@ linkend="services"/> se på hvordan du minimerer disse problemer.
 <listitem><para>
 <emphasis>Password angreb</emphasis>
 <indexterm><primary>Password angreb</primary></indexterm>
-Den klassiske måde at komme ind på et system på er at få fat i et
+Den klassiske mÃ¥de at komme ind pÃ¥ et system pÃ¥ er at fÃ¥ fat i et
 brugernavn og password (helst root passwordet). 
 
 <itemizedlist mark="bullet">
@@ -204,7 +204,7 @@ emnet i <xref linkend="remote-login"/>.
 <listitem><para>
 <emphasis>Brute force</emphasis>
 <indexterm><primary>Brute force</primary></indexterm>
-Man kan knække et svagt password med rå computerkraft. Se
+Man kan knÃ¦kke et svagt password med rÃ¥ computerkraft. Se
 <xref linkend="root-access"/>.
 </para></listitem>
 
@@ -212,18 +212,18 @@ Man kan knække et svagt password med rå computerkraft. Se
 <emphasis>Social engineering angreb</emphasis>
 <indexterm><primary>Social engineering angreb</primary></indexterm>
 Ofte kan en angriber slutte sig til ting ud fra sin viden om menneskelig
-adfærd. F.eks. at en bruger vil benytte det samme passwords til mange ting
-for at slippe for at huske så mange passwords. Så har man et password fra
-en telnet session, man har overvåget, kan det sikkert bruges 
+adfÃ¦rd. F.eks. at en bruger vil benytte det samme passwords til mange ting
+for at slippe for at huske sÃ¥ mange passwords. SÃ¥ har man et password fra
+en telnet session, man har overvÃ¥get, kan det sikkert bruges 
 i andre henseender.</para></listitem>
 </itemizedlist>
 </para></listitem>
 
 <listitem><para><emphasis>Man-in-the-middle angreb</emphasis>
 <indexterm><primary>Man-in-the-middle angreb</primary></indexterm>
-Her er tale om at angriberen befinder sig et sted på netværket, hvor dine
-data-pakker kommer forbi. F.eks. hos din internet-udbyder eller på dit 
-lokalnetværk. Eller i princippet et vilkårligt sted på internettet, 
+Her er tale om at angriberen befinder sig et sted pÃ¥ netvÃ¦rket, hvor dine
+data-pakker kommer forbi. F.eks. hos din internet-udbyder eller pÃ¥ dit 
+lokalnetvÃ¦rk. Eller i princippet et vilkÃ¥rligt sted pÃ¥ internettet, 
 hvor dine pakker kommer forbi.
 </para></listitem>
 
@@ -231,19 +231,19 @@ hvor dine pakker kommer forbi.
 
 <itemizedlist mark="bullet">
 <listitem><para><emphasis>Packet sniffing</emphasis>
-Det mest almindelige man-in-the-middle angreb er, at angriberen kigger på 
-dine data-pakker for at opsnappe information. Det kan f.eks.være 
+Det mest almindelige man-in-the-middle angreb er, at angriberen kigger pÃ¥ 
+dine data-pakker for at opsnappe information. Det kan f.eks.vÃ¦re 
 brugernavne og passwords, som sendes i klar tekst over nettet, eller dine 
 firmahemmeligheder, hvis du sender dem afsted ukrypteret.
 </para></listitem>
 
 <listitem><para><emphasis>Session hijacking</emphasis>
 <indexterm><primary>Session hijacking</primary></indexterm>
-En anden type man-in-the-middle angreb er, at en angriber går ind og 
-overtager en igangværende session f.eks. en telnet-session. Dette er
-i praksis meget vanskeligt på internettet, da det enten kræver at
+En anden type man-in-the-middle angreb er, at en angriber gÃ¥r ind og 
+overtager en igangvÃ¦rende session f.eks. en telnet-session. Dette er
+i praksis meget vanskeligt pÃ¥ internettet, da det enten krÃ¦ver at
 target-maskinen bruger forudsigelige tcp-sekvensnumre, eller at man
-kan aflytte trafikken. Det første er ikke muligt i Linux, og hvis man
+kan aflytte trafikken. Det fÃ¸rste er ikke muligt i Linux, og hvis man
 kan det andet, er det meget nemmere blot at sniffe brugernavn og
 password.
 </para></listitem>
@@ -252,44 +252,44 @@ password.
 
 <listitem><para><emphasis>IP spoofing</emphasis>
 <indexterm><primary>IP spoofing</primary></indexterm>
-IP Spoofing går ud på at få systemet til at tro, at angriberens computer 
+IP Spoofing gÃ¥r ud pÃ¥ at fÃ¥ systemet til at tro, at angriberens computer 
 er en autoriseret computer, der har lovlig adgang. Dvs. at angriberens 
-computer udgiver sig for at være en autoriseret host ved at bruge 
-dennes IP-adresse. Dette kan bruges til at indsætte angriberens data i 
-en datastrøm. Hvis angriberen ønsker at opnå tovejskommunikation, hvor 
-han modtager de pakker, der er tiltænkt den, han udgiver sig for, er det 
-sværere, idet han også skal ind og ændre routing-tabellerne. 
-Uanset dette, så kan IP spoofing gøre analyse af angreb til en 
+computer udgiver sig for at vÃ¦re en autoriseret host ved at bruge 
+dennes IP-adresse. Dette kan bruges til at indsÃ¦tte angriberens data i 
+en datastrÃ¸m. Hvis angriberen Ã¸nsker at opnÃ¥ tovejskommunikation, hvor 
+han modtager de pakker, der er tiltÃ¦nkt den, han udgiver sig for, er det 
+svÃ¦rere, idet han ogsÃ¥ skal ind og Ã¦ndre routing-tabellerne. 
+Uanset dette, sÃ¥ kan IP spoofing gÃ¸re analyse af angreb til en 
 umulig opgave.
 </para></listitem>
 
 <listitem><para><emphasis>Trojanske heste</emphasis>
 <indexterm><primary>Trojanske heste</primary></indexterm>
 En "trojansk hest" er et program, som indeholder skjult funktionalitet. Et 
-velkendt program på dit system kan se helt uskyldigt ud og udføre sin 
-normale funktion. Programmet kan imidlertid være modificeret, så det 
+velkendt program pÃ¥ dit system kan se helt uskyldigt ud og udfÃ¸re sin 
+normale funktion. Programmet kan imidlertid vÃ¦re modificeret, sÃ¥ det 
 ud over sine normale opgaver f.eks. sender navne og passwords til en fast 
-modtager eller lader ukendte personer logge ind på maskinen uden, 
+modtager eller lader ukendte personer logge ind pÃ¥ maskinen uden, 
 at dette skrives i systemets logfiler. 
-"Trojanske heste" kan være programmer efterladt af en angriber, der har 
-været inde på dit system. De kan skjule hans spor og lette hans adgang 
-næste gang via bagdøre (<emphasis>back-doors</emphasis>). Det kan 
-imidlertid også være programmer, 
+"Trojanske heste" kan vÃ¦re programmer efterladt af en angriber, der har 
+vÃ¦ret inde pÃ¥ dit system. De kan skjule hans spor og lette hans adgang 
+nÃ¦ste gang via bagdÃ¸re (<emphasis>back-doors</emphasis>). Det kan 
+imidlertid ogsÃ¥ vÃ¦re programmer, 
 du selv har hentet ned og installeret. Du tror, du installerer et 
 almindeligt program, men i virkeligheden er det en modificeret udgave, 
-du har fået fat i. Heldigvis medfører traditionen med 
+du har fÃ¥et fat i. Heldigvis medfÃ¸rer traditionen med 
 <ulink url="http://www.opensource.org">Open Source</ulink> 
 programmer, at vi har
 adgang til kildeteksten, og at man i praksis ikke kan skjule disse problemer
-for os. Henter du binære programmer ned (såsom RPM-pakker), så bør
+for os. Henter du binÃ¦re programmer ned (sÃ¥som RPM-pakker), sÃ¥ bÃ¸r
 dette kun ske fra betroede steder, hvor du kan regne med at der bliver
-holdt styr på sikkerheden - men det er altid en risiko, du må løbe. 
-Ydermere findes der PGP-nøglesignaturer i alle RPM-pakker, som man
+holdt styr pÃ¥ sikkerheden - men det er altid en risiko, du mÃ¥ lÃ¸be. 
+Ydermere findes der PGP-nÃ¸glesignaturer i alle RPM-pakker, som man
 kan bruge til at kontrollere, hvem der har lavet den enkelte pakke.
-Heldigvis er problemerne i Open Source-verdenen meget små i forhold
+Heldigvis er problemerne i Open Source-verdenen meget smÃ¥ i forhold
 til det niveau, som Windows-verdenen er udsat for med virus i programmer 
-og selv i Word-dokumenter. Et velkendt eksempel på en trojansk hest fra 
-Windows verdenen er "Back Orifice". Hvis det først er installeret, giver 
+og selv i Word-dokumenter. Et velkendt eksempel pÃ¥ en trojansk hest fra 
+Windows verdenen er "Back Orifice". Hvis det fÃ¸rst er installeret, giver 
 det folk udefra fuld kontrol over den inficerede maskine via
 internettet. 
 </para></listitem>
@@ -297,54 +297,54 @@ internettet.
 
 
 <para>
-Vi har nu set på forskellige metoder, en angriber kan bruge til at få
+Vi har nu set pÃ¥ forskellige metoder, en angriber kan bruge til at fÃ¥
 adgang til dit system. Men hvad kan han bruge det til?  Lad os dele
-angrebene op efter resultatet - hvad opnår vedkommende, og hvor
+angrebene op efter resultatet - hvad opnÃ¥r vedkommende, og hvor
 farligt er det for dig.
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
-<para><emphasis>Læseadgang</emphasis>
-Angriberen kan stjæle (kopiere) dine data. Dette er alvorligt, hvis du 
-har hemmelige data, som kan udnyttes af andre på en måde, der skader dig.
-Læseadgang kan f.eks. opnås ved packet sniffing - hvis der er værdifuld
+<para><emphasis>LÃ¦seadgang</emphasis>
+Angriberen kan stjÃ¦le (kopiere) dine data. Dette er alvorligt, hvis du 
+har hemmelige data, som kan udnyttes af andre pÃ¥ en mÃ¥de, der skader dig.
+LÃ¦seadgang kan f.eks. opnÃ¥s ved packet sniffing - hvis der er vÃ¦rdifuld
 information i pakkerne. Man kan beskytte sig ved at kryptere sine data.
-Læseadgang kan også opnås ved IP spoofing, hvis angriberen f.eks. giver 
+LÃ¦seadgang kan ogsÃ¥ opnÃ¥s ved IP spoofing, hvis angriberen f.eks. giver 
 din maskine besked om at videresende et vigtigt 
-brev til ham. Endelig kan det opnås, hvis angriberen opnår login på
-dit system f.eks. ved at have skaffet sig et brugernavn og tilhørende 
-password. Har man login på maskinen, kan man naturligvis også skrive men
+brev til ham. Endelig kan det opnÃ¥s, hvis angriberen opnÃ¥r login pÃ¥
+dit system f.eks. ved at have skaffet sig et brugernavn og tilhÃ¸rende 
+password. Har man login pÃ¥ maskinen, kan man naturligvis ogsÃ¥ skrive men
 kun i de filer, der er adgang til for den bruger, man er logget ind som.
 Hvis man er logget ind som root, er det i praksis alle filer.
 </para></listitem>
 
 <listitem>
 <para><emphasis>Skriveadgang</emphasis> Ud over at dine data kan blive
-stjålet, kan du risikere, at de er ændret, og at dit system er
+stjÃ¥let, kan du risikere, at de er Ã¦ndret, og at dit system er
 modificeret. Dette er meget alvorligt. Dit system er
-kompromitteret. Er dette tilfældet, skal man være
+kompromitteret. Er dette tilfÃ¦ldet, skal man vÃ¦re
 <emphasis>ekstremt</emphasis> forsigtig med systemet, da man typiske ikke
-ved hvor meget som er ændret. 
+ved hvor meget som er Ã¦ndret. 
 </para>
 
 <para>
-Skriveadgang kan opnås, hvis angriberen opnår login på systemet. Han kan
+Skriveadgang kan opnÃ¥s, hvis angriberen opnÃ¥r login pÃ¥ systemet. Han kan
 modificere de data, som det anvendte brugernavn har adgang til. Hvis
-han er inde som root, har han fuld adgang til at ødelægge eller modificere
-dit system. Root-adgang kan opnås ved opsnappe eller knække root passwordet
-eller ved at udnytte et sikkerhedshul i en netværksservice f.eks. Sendmail.
-En angriber kan også opnå skriveadgang til dit system ved IP spoofing - 
-hvis man kan ændre indholdet af pakker, der bliver sendt over nettet, uden
-at modtageren opdager det, så har man effektivt forfalskede data. Det kunne
-også være kommandoer til systemet. Har en angriber først haft skriveadgang 
-til dit system, skal du være meget forsigtig. Du ved ikke hvilke data, der er
-ændret - måske er de programmer, du kontrollerer dit system med, selv 
-modificeret, og du kan ikke regne med dem længere. Du ved måske ikke med 
-sikkerhed, hvornår han første gang har været inde, og dine backups kan være 
-inficeret et stykke tid tilbage. Vi kommer tilbage til, hvad du skal gøre 
+han er inde som root, har han fuld adgang til at Ã¸delÃ¦gge eller modificere
+dit system. Root-adgang kan opnÃ¥s ved opsnappe eller knÃ¦kke root passwordet
+eller ved at udnytte et sikkerhedshul i en netvÃ¦rksservice f.eks. Sendmail.
+En angriber kan ogsÃ¥ opnÃ¥ skriveadgang til dit system ved IP spoofing - 
+hvis man kan Ã¦ndre indholdet af pakker, der bliver sendt over nettet, uden
+at modtageren opdager det, sÃ¥ har man effektivt forfalskede data. Det kunne
+ogsÃ¥ vÃ¦re kommandoer til systemet. Har en angriber fÃ¸rst haft skriveadgang 
+til dit system, skal du vÃ¦re meget forsigtig. Du ved ikke hvilke data, der er
+Ã¦ndret - mÃ¥ske er de programmer, du kontrollerer dit system med, selv 
+modificeret, og du kan ikke regne med dem lÃ¦ngere. Du ved mÃ¥ske ikke med 
+sikkerhed, hvornÃ¥r han fÃ¸rste gang har vÃ¦ret inde, og dine backups kan vÃ¦re 
+inficeret et stykke tid tilbage. Vi kommer tilbage til, hvad du skal gÃ¸re 
 for at opdage et indbrud i <xref linkend="filtjek"/>. 
-Har en angriber lokket dig til at installere en trojansk hest, er det også
+Har en angriber lokket dig til at installere en trojansk hest, er det ogsÃ¥
 en slags skriveadgang - dit system er modificeret.
 Den eneste sikre kur er geninstallation af hele systemet.
 </para></listitem>
@@ -354,21 +354,21 @@ Den eneste sikre kur er geninstallation af hele systemet.
 <title>Remote og local exploit</title>
 
 <para>
-Når der findes en fejl i et program kan der ofte laves et lille
+NÃ¥r der findes en fejl i et program kan der ofte laves et lille
 program der demonstrerer effekten af fejlen. Disse programmer
 kaldes ofte for proof-of-concept kode. Crackeren kan bruge samme
 metode til at lave et exploit program, d.v.s. et program, som
-udnytter fejlen, sårbarheden.
+udnytter fejlen, sÃ¥rbarheden.
 </para>
 
 <para>
-Disse exploit programmer kan fungere via netværk eller afvikles
-lokalt. Ideen med lokale programmer er typisk at få flere
-rettigheder på systemet (privilege escalation). Derfor skal
-programmer som Apache webserveren afvikles med så få privilegier 
-som muligt. Så skal der være to sårbarheder for at få magt over
-maskinen, - en for at få adgang til maskinen, og en lokal
-sårbarhed, som kan give root privilegier.
+Disse exploit programmer kan fungere via netvÃ¦rk eller afvikles
+lokalt. Ideen med lokale programmer er typisk at fÃ¥ flere
+rettigheder pÃ¥ systemet (privilege escalation). Derfor skal
+programmer som Apache webserveren afvikles med sÃ¥ fÃ¥ privilegier 
+som muligt. SÃ¥ skal der vÃ¦re to sÃ¥rbarheder for at fÃ¥ magt over
+maskinen, - en for at fÃ¥ adgang til maskinen, og en lokal
+sÃ¥rbarhed, som kan give root privilegier.
 </para>
 </sect3>
 
@@ -382,26 +382,26 @@ sårbarhed, som kan give root privilegier.
 <!-- dax: TODO: Find bedre formuleringer, gerne kortere /-->
 
 <para>
-Ude-af-drift angreb (eng. Denial of Service - DoS) har til formål
-at få din maskine til at holde op med gøre det, den er sat til.
-Crackeren prøver at forhindre maskinen i at yde den service den
+Ude-af-drift angreb (eng. Denial of Service - DoS) har til formÃ¥l
+at fÃ¥ din maskine til at holde op med gÃ¸re det, den er sat til.
+Crackeren prÃ¸ver at forhindre maskinen i at yde den service den
 skal ved at overbelaste nettet eller maskinens netsoftware. Ofte
-medfører den slags overbelastning at systemerne crasher.  Dette
-er knap så alvorligt som et reelt indbrud på systemet, men kan
-alligevel godt koste meget tid og mange penge.  Eksempler på DoS
+medfÃ¸rer den slags overbelastning at systemerne crasher.  Dette
+er knap sÃ¥ alvorligt som et reelt indbrud pÃ¥ systemet, men kan
+alligevel godt koste meget tid og mange penge.  Eksempler pÃ¥ DoS
 angreb er <emphasis>Pentium F00F-fejlen</emphasis>,
 <emphasis>ping of death</emphasis> og
-<emphasis>teardrop</emphasis>, som får maskinen til at låse.
+<emphasis>teardrop</emphasis>, som fÃ¥r maskinen til at lÃ¥se.
 Disse fejl er rettet i nyere Linux-systemer.
 </para>
 
 <para>
 Man kan ikke lokalt i en virksomhed beskytte sig mod almindelig,
 lovlig, men massivt overbelastende og unyttig traffik til en
-bestemt server og man ser derfor virksomheder, som opsætter
+bestemt server og man ser derfor virksomheder, som opsÃ¦tter
 alternative web-sites med nye IP-numre/navne som kan overtage
-arbejdet mens der køres DoS mod virksomhederne. Andet er der ikke
-at gøre.
+arbejdet mens der kÃ¸res DoS mod virksomhederne. Andet er der ikke
+at gÃ¸re.
 </para>
 </sect3>
 
@@ -412,9 +412,9 @@ at gøre.
 
 <para>
 Ved <emphasis>SYN flooding</emphasis> og <emphasis>Ping
-flooding</emphasis> udsættes maskinen for en voldsom belastning fra en
-eller flere angribere med at svare på netværksforespørglser, og det er
-ikke muligt at bruge andre netværksservices på grund af
+flooding</emphasis> udsÃ¦ttes maskinen for en voldsom belastning fra en
+eller flere angribere med at svare pÃ¥ netvÃ¦rksforespÃ¸rglser, og det er
+ikke muligt at bruge andre netvÃ¦rksservices pÃ¥ grund af
 overbelastning.
 </para>
 </sect3>
@@ -424,11 +424,11 @@ overbelastning.
 <indexterm><primary>Smurfing</primary></indexterm>
 
 <para>
-Ved <emphasis>smurfing</emphasis> er det netværket, der
-overbelastes. Disse problemer kan der dæmmes op for ved fornuftig
-router-opsætning. Der er også angreb, hvor der uploades meget
-store mængder data til en anonym ftp konto, hvor formålet er at få
-diske til at løbe fulde. Disse problemer kan der dæmmes op for med
+Ved <emphasis>smurfing</emphasis> er det netvÃ¦rket, der
+overbelastes. Disse problemer kan der dÃ¦mmes op for ved fornuftig
+router-opsÃ¦tning. Der er ogsÃ¥ angreb, hvor der uploades meget
+store mÃ¦ngder data til en anonym ftp konto, hvor formÃ¥let er at fÃ¥
+diske til at lÃ¸be fulde. Disse problemer kan der dÃ¦mmes op for med
 disk-kvoter og/eller smart partitionering (eller at upload af filer
 disables).</para>
 
@@ -451,11 +451,11 @@ User Friendly strippen den 7/8 99 <ulink url="http://www.userfriendly.org/cartoo
 <title>Har mit system sikkerhedsproblemer?</title>
 
 <para>
-Nu skal vi se på, hvor meget du udsætter din maskine for, når du 
+Nu skal vi se pÃ¥, hvor meget du udsÃ¦tter din maskine for, nÃ¥r du 
 tilslutter den til internettet. Vi tager udgangspunkt i en Linux-maskine, 
-som har en netværksopkobling enten via modem eller fast forbindelse. 
-Det er reelt ikke så vigtigt, at det er en Linux-maskine - alle 
-systemer med netværk har samme karakteristiske træk. 
+som har en netvÃ¦rksopkobling enten via modem eller fast forbindelse. 
+Det er reelt ikke sÃ¥ vigtigt, at det er en Linux-maskine - alle 
+systemer med netvÃ¦rk har samme karakteristiske trÃ¦k. 
 </para>
 
 <para>
@@ -465,43 +465,43 @@ Lad os inddele verden efter
 <itemizedlist mark="bullet">
 <listitem><para>"On and off" :
 Opkobling sker med modem og f.eks. PPP. Der hentes post og
-surfes minimalt på internettet.
+surfes minimalt pÃ¥ internettet.
 <indexterm><primary>Risiko</primary>
 <secondary>On and off</secondary></indexterm>
 </para>
 
-<para>Du har ikke så meget at frygte, selvom du måske ikke har styr på
-din sikkerhed på maskinen.  Når du laver en modem-opkobling til
-internettet, får du tildelt en IP-adresse, dvs. en adresse, som alle kan
-tilgå din maskine på. Men den adresse er forskellig fra gang til gang
-når du laver opkobling. Derfor bliver det i praksis umuligt at afsøge 
-din maskines sikkerhedshuller fra en anden maskine, før du igen har
-lukket forbindelsen. Der er dog oplagt, at den risiko, du løber,
-svarer nøje til den tid du er koblet på internettet.
+<para>Du har ikke sÃ¥ meget at frygte, selvom du mÃ¥ske ikke har styr pÃ¥
+din sikkerhed pÃ¥ maskinen.  NÃ¥r du laver en modem-opkobling til
+internettet, fÃ¥r du tildelt en IP-adresse, dvs. en adresse, som alle kan
+tilgÃ¥ din maskine pÃ¥. Men den adresse er forskellig fra gang til gang
+nÃ¥r du laver opkobling. Derfor bliver det i praksis umuligt at afsÃ¸ge 
+din maskines sikkerhedshuller fra en anden maskine, fÃ¸r du igen har
+lukket forbindelsen. Der er dog oplagt, at den risiko, du lÃ¸ber,
+svarer nÃ¸je til den tid du er koblet pÃ¥ internettet.
 </para>
 
 
 </listitem>
 
-<listitem><para>"Seriøs surfing": Opkobling sker med modem og f.eks. PPP. Der
-hentes post jævnligt, og der surfes en del. Denne situation kan
-også gælde for en maskine, som via automatiske services laver
+<listitem><para>"SeriÃ¸s surfing": Opkobling sker med modem og f.eks. PPP. Der
+hentes post jÃ¦vnligt, og der surfes en del. Denne situation kan
+ogsÃ¥ gÃ¦lde for en maskine, som via automatiske services laver
 internetopkobling for et helt lokalnet. Til Linux er det
 ofte "diald", som bruges til dette.
 <indexterm><primary>Risiko</primary>
-<secondary>seriøs surfing</secondary></indexterm>
+<secondary>seriÃ¸s surfing</secondary></indexterm>
 
 </para>
 <para>
-Du er tilkoblet internettet i længere tid ad gangen men stadig med 
-forskellig IP-adresse hver gang, så du er ikke helt nem at finde.
-Men i modsætning til "On and off" brugeren er du på så lang tid, 
+Du er tilkoblet internettet i lÃ¦ngere tid ad gangen men stadig med 
+forskellig IP-adresse hver gang, sÃ¥ du er ikke helt nem at finde.
+Men i modsÃ¦tning til "On and off" brugeren er du pÃ¥ sÃ¥ lang tid, 
 at der godt kan
-laves skanning på din maskine. Hvis der findes en usikker service,
-kan den måske give oplysninger om svagheder i dit system, og dermed
-kan din netværkssikkerhed rammes. Du bør tænke på hvilke åbninger, 
-der er i dit system. Du bør lære noget om grundlæggende
-netværkssikkerhed. Læs f.eks. resten af artiklerne i denne serie.
+laves skanning pÃ¥ din maskine. Hvis der findes en usikker service,
+kan den mÃ¥ske give oplysninger om svagheder i dit system, og dermed
+kan din netvÃ¦rkssikkerhed rammes. Du bÃ¸r tÃ¦nke pÃ¥ hvilke Ã¥bninger, 
+der er i dit system. Du bÃ¸r lÃ¦re noget om grundlÃ¦ggende
+netvÃ¦rkssikkerhed. LÃ¦s f.eks. resten af artiklerne i denne serie.
 </para>
 
 </listitem>
@@ -512,13 +512,13 @@ via ethernet-, ISDN-, ADSL- eller anden forbindelse.
 
 </para>
 <para>
-Du kan skannes fra en enhver maskine på internettet medmindre der er
-firewalls eller såkaldte proxy-servere imellem. Du kan ikke
-overvåge alt 24 timer i døgnet. Maskinen efterlades. Du må tjekke
-dine log filer! Slå overflødige netværksservices fra og begræns adgangen
-til dem, der er tilbage. Du bør lære noget om sikkerhed. Læs f.eks. som en
-start de kommende artikler i denne serie. På internettet er der 
-masser af yderligere information, og der findes gode bøger om emnet.
+Du kan skannes fra en enhver maskine pÃ¥ internettet medmindre der er
+firewalls eller sÃ¥kaldte proxy-servere imellem. Du kan ikke
+overvÃ¥ge alt 24 timer i dÃ¸gnet. Maskinen efterlades. Du mÃ¥ tjekke
+dine log filer! SlÃ¥ overflÃ¸dige netvÃ¦rksservices fra og begrÃ¦ns adgangen
+til dem, der er tilbage. Du bÃ¸r lÃ¦re noget om sikkerhed. LÃ¦s f.eks. som en
+start de kommende artikler i denne serie. PÃ¥ internettet er der 
+masser af yderligere information, og der findes gode bÃ¸ger om emnet.
 </para>
 </listitem>
 </itemizedlist>
@@ -526,27 +526,27 @@ masser af yderligere information, og der findes gode bøger om emnet.
 
 <para>
 Lad os antage, at din maskine har direkte adgang til internettet uden 
-firewall eller anden beskyttelse. Vi vil nu se på, hvorfor 
-din maskine kan være udsat, og hvordan andre finder ud af, at du har en
-maskine på nettet. At det netop er din maskine, som er udset til et
-angreb, kan skyldes mange ting: Tilfældigheder, at du anses
+firewall eller anden beskyttelse. Vi vil nu se pÃ¥, hvorfor 
+din maskine kan vÃ¦re udsat, og hvordan andre finder ud af, at du har en
+maskine pÃ¥ nettet. At det netop er din maskine, som er udset til et
+angreb, kan skyldes mange ting: TilfÃ¦ldigheder, at du anses
 for at ligge inde med interessante data, eller at du ikke har
-vedligeholdt din Linux-maskine og fået lukket de kendte sikkerhedshuller. 
+vedligeholdt din Linux-maskine og fÃ¥et lukket de kendte sikkerhedshuller. 
 </para>
 
 <para>
-En angriber har flere måder at finde din maskine på. En er f.eks.
+En angriber har flere mÃ¥der at finde din maskine pÃ¥. En er f.eks.
 at studere brevhovederne i dine breve. En anden er at hente listen
-over hostnavnene i dit domæne vha. DNS (navneservere). En mere
-direkte måde er at bruge ping.
+over hostnavnene i dit domÃ¦ne vha. DNS (navneservere). En mere
+direkte mÃ¥de er at bruge ping.
 </para>
 
 <para>
-En angriber kan derefter spørge din maskine, hvilke services den 
-tilbyder, og måske finde et sikkerhedshul. Som eksempel kan vi tage ssh,
-som tilbydes på port 22. Med telnet kan man logge ind på port 22 og få
-versionsnummeret på ssh. I det følgende eksempel finder vi ud af, at det 
-er ssh version 1.2.27, der kører. Kan angriberen f.eks. på internettet finde 
+En angriber kan derefter spÃ¸rge din maskine, hvilke services den 
+tilbyder, og mÃ¥ske finde et sikkerhedshul. Som eksempel kan vi tage ssh,
+som tilbydes pÃ¥ port 22. Med telnet kan man logge ind pÃ¥ port 22 og fÃ¥
+versionsnummeret pÃ¥ ssh. I det fÃ¸lgende eksempel finder vi ud af, at det 
+er ssh version 1.2.27, der kÃ¸rer. Kan angriberen f.eks. pÃ¥ internettet finde 
 en beskrivelse af en sikkerhedsfejl i den version af ssh, kan han udnytte
 dette til at angribe dit system med.
 </para>
@@ -560,20 +560,20 @@ SSH-1.5-1.2.27
 </screen>
 
 <para>
-Normalt er det nødvendigt, at din maskine har nogle af 
-de mange netværksservices kørende, da de bruges til at kommunikere med 
-andre maskiner via netværk. Ofte kan de fleste af dem dog slås fra, se 
+Normalt er det nÃ¸dvendigt, at din maskine har nogle af 
+de mange netvÃ¦rksservices kÃ¸rende, da de bruges til at kommunikere med 
+andre maskiner via netvÃ¦rk. Ofte kan de fleste af dem dog slÃ¥s fra, se 
 <xref linkend="services"/>.
 </para>
 
 <para>
 I stedet for at en angriber manuelt skal gennemse alle dine porte for mulige
-huller, kan han gøre det nemmere og meget hurtigere ved at installere 
-programmer såsom nmap. Nmap kan hentes på 
+huller, kan han gÃ¸re det nemmere og meget hurtigere ved at installere 
+programmer sÃ¥som nmap. Nmap kan hentes pÃ¥ 
 <ulink url="http://www.insecure.org/nmap">http://www.insecure.org/nmap</ulink>.
 Med nmap kan man dels se hvilke maskiner, der er i live,
-men også hvilke porte, der er åbne. Nedenstående eksempel viser, at
-maskinen "bohr" har (alt for) mange porte åbne. 
+men ogsÃ¥ hvilke porte, der er Ã¥bne. NedenstÃ¥ende eksempel viser, at
+maskinen "bohr" har (alt for) mange porte Ã¥bne. 
 <indexterm><primary>nmap</primary></indexterm>
 <indexterm><primary>porte</primary></indexterm>
 </para>
@@ -602,10 +602,10 @@ Nmap run completed -- 1 IP address (1 host up) scanned in 2 seconds
 
 <para>
 Eksemplet med nmap svarer til, hvad man udefra kan se om maskinen. Har
-man adgang til maskinen, så kan "netstat -a" også være interessant,
-idet kommandoen viser alle de netværksforbindelser, som er etableret,
+man adgang til maskinen, sÃ¥ kan "netstat -a" ogsÃ¥ vÃ¦re interessant,
+idet kommandoen viser alle de netvÃ¦rksforbindelser, som er etableret,
 samt de ventende serverprogrammer. Et forkortet output af "netstat -a"
-kan være følgende, hvor man kan se, at en telnet-session fra sherwood
+kan vÃ¦re fÃ¸lgende, hvor man kan se, at en telnet-session fra sherwood
 til bohr er igang, og serverprogrammerne ssh, sendmail (smtp),
 telnet og ftp er klar.
 </para>
@@ -621,23 +621,23 @@ tcp        0      0 *:ftp           *:*                    LISTEN
 </programlisting>
 
 <para>
-Du kan læse mere om NMAP på <ulink url="http://www.itworld.com/Sec/2202/LWD010404vcontrol1/">http://www.itworld.com/Sec/2202/LWD010404vcontrol1/</ulink>
+Du kan lÃ¦se mere om NMAP pÃ¥ <ulink url="http://www.itworld.com/Sec/2202/LWD010404vcontrol1/">http://www.itworld.com/Sec/2202/LWD010404vcontrol1/</ulink>
 og <ulink url="http://www.insecure.org/nmap/nmap_doc.html">http://www.insecure.org/nmap/nmap_doc.html</ulink>.
 </para>
 
 
 <para>
-<indexterm><primary>cheops</primary></indexterm> Man kan også have
-interesse i at bruge det grafiske program cheops, som findes på 
+<indexterm><primary>cheops</primary></indexterm> Man kan ogsÃ¥ have
+interesse i at bruge det grafiske program cheops, som findes pÃ¥ 
 <ulink url="ftp://ftp.marko.net/pub/cheops/RPMS/">ftp://ftp.marko.net/pub/cheops/RPMS/</ulink>.
-Programmet er skrevet sådan, at det grafisk viser hvilke maskiner, som
-er i live, og evt. overvåger, at de forbliver i live. Cheops er nok
-primært beregnet til at give systemadministratoren et hurtigt overblik
-over netværket, men det kan også bruges til at udse sig svage
-maskiner, som kan angribes. På følgende billede er vist, hvordan
-cheops ud fra et domænenavn selv finder ud af, at der er seks maskiner
-i live. Det vises grafisk hvilket operativsystem, der anvendes på hver
-af dem. Fra venstre mod højre: SGI IRIX, Linux, HP/UX, HP/UX, Windows
+Programmet er skrevet sÃ¥dan, at det grafisk viser hvilke maskiner, som
+er i live, og evt. overvÃ¥ger, at de forbliver i live. Cheops er nok
+primÃ¦rt beregnet til at give systemadministratoren et hurtigt overblik
+over netvÃ¦rket, men det kan ogsÃ¥ bruges til at udse sig svage
+maskiner, som kan angribes. PÃ¥ fÃ¸lgende billede er vist, hvordan
+cheops ud fra et domÃ¦nenavn selv finder ud af, at der er seks maskiner
+i live. Det vises grafisk hvilket operativsystem, der anvendes pÃ¥ hver
+af dem. Fra venstre mod hÃ¸jre: SGI IRIX, Linux, HP/UX, HP/UX, Windows
 og endelig en speciel maskine.  </para>
 
 <figure id="cheops-fig" float="1">
@@ -646,9 +646,9 @@ og endelig en speciel maskine.  </para>
 </figure>  
 
 <para>
-Flytter man musen ned på ikonet for maskinen, får man flere oplysninger
-om den ofte også versionsnumre, og man kan yderligere direkte skanne
-maskinen for alle oplysninger. Man kan ofte se alt for meget - især når 
+Flytter man musen ned pÃ¥ ikonet for maskinen, fÃ¥r man flere oplysninger
+om den ofte ogsÃ¥ versionsnumre, og man kan yderligere direkte skanne
+maskinen for alle oplysninger. Man kan ofte se alt for meget - isÃ¦r nÃ¥r 
 folk ikke har deres sikkerhed i orden.
 </para>
 
@@ -658,7 +658,7 @@ folk ikke har deres sikkerhed i orden.
 </figure>  
 
 <para>
-Det er altså nemt at trække informationer ud af en ubeskyttet maskine.
+Det er altsÃ¥ nemt at trÃ¦kke informationer ud af en ubeskyttet maskine.
 </para>
 </sect1>
 
@@ -668,47 +668,47 @@ Det er altså nemt at trække informationer ud af en ubeskyttet maskine.
 
 <para>
 Hold din maskine ajour med sikkerhedsrettelser. 
-Du kan følge med på diverse postlister/nyhedsgrupper om sikkerhed, 
+Du kan fÃ¸lge med pÃ¥ diverse postlister/nyhedsgrupper om sikkerhed, 
 og websider - se mere i <xref linkend="sikkerhedsreferencer"/>.  
 Ofte kan man hurtigt efter en fejl er opdaget, hente rettelsen 
 fra internettet.
 </para>
 
 <para>
-Mange peger på Linux, som et system der er meget tidskrævende at holde 
-opdateret, fordi der kommer så mange opdateringer til Linux og de 
-services, man ofte kører. Men mange af disse opdateringer er netop 
+Mange peger pÃ¥ Linux, som et system der er meget tidskrÃ¦vende at holde 
+opdateret, fordi der kommer sÃ¥ mange opdateringer til Linux og de 
+services, man ofte kÃ¸rer. Men mange af disse opdateringer er netop 
 rettelser, som lukker sikkerhedshuller. Samme sikkerhedshuller findes 
-ofte også til andre systemer, men de bliver ikke lukket ligeså hurtigt, 
-hvis de overhovedet bliver det. Den ekstra tid du skal bruge på 
-sikkerhedsopdatering er altså blot en sikring af dit system, som ikke 
-er muligt i samme omfang for mange andre systemer. Desuden er det også 
+ofte ogsÃ¥ til andre systemer, men de bliver ikke lukket ligesÃ¥ hurtigt, 
+hvis de overhovedet bliver det. Den ekstra tid du skal bruge pÃ¥ 
+sikkerhedsopdatering er altsÃ¥ blot en sikring af dit system, som ikke 
+er muligt i samme omfang for mange andre systemer. Desuden er det ogsÃ¥ 
 lettere at finde sikkerhedsopdateringer til Linux og andre Open 
-Source-systemer, da disse ganske bramfrit annonceres på internettet.
+Source-systemer, da disse ganske bramfrit annonceres pÃ¥ internettet.
 </para>
 
 <para>
-Når du henter en sikkerhedsopdatering, så tænk lige på om den
-kommer fra et sted, du stoler på - den kunne i princippet være
-falsk. Det er den sikkert ikke, men nøjes alligevel med at hente
-fra "officielle" steder. Den første lektie, du skal lære, hvis du vil
-have et sikkert computersystem, er at være en lille smule paranoid.
-:-) Der er intet på nettet, der er helt sikkert.
+NÃ¥r du henter en sikkerhedsopdatering, sÃ¥ tÃ¦nk lige pÃ¥ om den
+kommer fra et sted, du stoler pÃ¥ - den kunne i princippet vÃ¦re
+falsk. Det er den sikkert ikke, men nÃ¸jes alligevel med at hente
+fra "officielle" steder. Den fÃ¸rste lektie, du skal lÃ¦re, hvis du vil
+have et sikkert computersystem, er at vÃ¦re en lille smule paranoid.
+:-) Der er intet pÃ¥ nettet, der er helt sikkert.
 </para>
 
 <sect2 id="honey-pot">
-<title>Honeypot - lær at forsvare dig før det koster</title>
+<title>Honeypot - lÃ¦r at forsvare dig fÃ¸r det koster</title>
 <indexterm><primary>Honeypot</primary></indexterm>
 <indexterm><primary>DHP</primary></indexterm>
 <para>
-På <ulink
+PÃ¥ <ulink
 url="http://www.honeynet.org/">http://www.honeynet.org/</ulink>
-forfølges en interessant tankegang. Man sætter en "honeypot",
-dvs. en krukke med lækker honning, op, og derefter studeres de
-bier som går i lag med honningen. I netværks-sammenhæng opsætter
-man en computer, som ikke har nogen data af værdi, men med det
-setup man har tænkt sig at køre sidenhen. I en periode lader man
-crackere angribe maskinen og holder meget øje med den, så man kan
+forfÃ¸lges en interessant tankegang. Man sÃ¦tter en "honeypot",
+dvs. en krukke med lÃ¦kker honning, op, og derefter studeres de
+bier som gÃ¥r i lag med honningen. I netvÃ¦rks-sammenhÃ¦ng opsÃ¦tter
+man en computer, som ikke har nogen data af vÃ¦rdi, men med det
+setup man har tÃ¦nkt sig at kÃ¸re sidenhen. I en periode lader man
+crackere angribe maskinen og holder meget Ã¸je med den, sÃ¥ man kan
 se, hvad der sker. Erfaringerne deles og diskuteres gerne med
 andre, og erfaringerne bruges til at lave endnu mere sikre
 maskiner.
@@ -725,7 +725,7 @@ maskiner.
 
   <itemizedlist mark="bullet">
     <listitem><para>Linux Administrator's Security Guide (LASG) by Kurt Seifried.
-        Denne bog er guld værd - og kan findes på 
+        Denne bog er guld vÃ¦rd - og kan findes pÃ¥ 
         <ulink url="http://seifried.org/lasg/">http://seifried.org/lasg/</ulink>.
     </para></listitem>
     <listitem><para>Linux Security HOWTO - 
@@ -759,7 +759,7 @@ Annonceringer af fejl i flere af de kendte Linux-distributioner:
     </para></listitem>
   </itemizedlist>
 
-<para>Steder som ellers bør eller kan følges</para>
+<para>Steder som ellers bÃ¸r eller kan fÃ¸lges</para>
   <itemizedlist mark="bullet">
     <listitem><para> <ulink url="http://www.cert.org/"> Cert.org </ulink>
       er et center for internet sikkerheds-ekspertise, som drives
@@ -767,19 +767,19 @@ Annonceringer af fejl i flere af de kendte Linux-distributioner:
       url="http://www.us-cert.gov/cas/techalerts/index.html">
       alarm (eller alert) arkiv
       (http://www.us-cert.gov/cas/techalerts/index.html)
-      </ulink> viser nyeste såvel som
-      gamle sikkerhedshuller i gængse systemer.
+      </ulink> viser nyeste sÃ¥vel som
+      gamle sikkerhedshuller i gÃ¦ngse systemer.
     </para></listitem>
     <listitem><para>Bugtraq <ulink url="http://www.securityfocus.com">http://www.securityfocus.com</ulink>
-      bør du følge med på for at læse om de nyeste afsløringer af 
+      bÃ¸r du fÃ¸lge med pÃ¥ for at lÃ¦se om de nyeste afslÃ¸ringer af 
       sikkerhedsbrister (exploits).
     </para></listitem>
     <listitem><para>Root Shell <ulink url="http://ftp2.de.freebsd.org/pub/misc/www.rootshell.com/">http://www.rootshell.com</ulink>
       har alt indenfor diskussion af sikkerhed.
     </para></listitem>
     <listitem><para>Linux Today <ulink url="http://linuxtoday.com">http://linuxtoday.com</ulink> bringer
-      også sikkerhedsbrister frem sammen med andre nyheder. Det er muligt 
-      at tilpasse hvilke nyheder man får f.eks. nyheder om sikkerhed.
+      ogsÃ¥ sikkerhedsbrister frem sammen med andre nyheder. Det er muligt 
+      at tilpasse hvilke nyheder man fÃ¥r f.eks. nyheder om sikkerhed.
     </para></listitem>
     <listitem><para><ulink url="http://www.securityportal.com/">http://www.securityportal.com/</ulink>
       er et andet interessant sted for folk, som interesserer sig for sikkerhed.
@@ -800,7 +800,7 @@ Annonceringer af fejl i flere af de kendte Linux-distributioner:
     </para></listitem>
     <listitem><para>Munitions - <ulink url="http://munitions.polkaroo.net/">http://munitions.polkaroo.net/</ulink>
         - stor samling af viden og programmer om kryptering af data 
-          og netværkstrafik til Linux.
+          og netvÃ¦rkstrafik til Linux.
     </para></listitem>
   </itemizedlist>
 </sect1>

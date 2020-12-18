@@ -13,9 +13,9 @@
 
 <!--  Julekalenderspecifik tekst:
  <para>
-Lad mig starte med en indrømmelse: Jeg har aldrig forsøgt mig med Debian.
+Lad mig starte med en indrÃ¸mmelse: Jeg har aldrig forsÃ¸gt mig med Debian.
 Jeg bruger Mandrake til daglig og er godt tilfreds med det.
-Men nogle gange skal man prøve noget nyt, og hvad er en bedre grund end når man skal lave en julekalender til glæde for en masse mennesker :-)
+Men nogle gange skal man prÃ¸ve noget nyt, og hvad er en bedre grund end nÃ¥r man skal lave en julekalender til glÃ¦de for en masse mennesker :-)
 </para>
 -->
 
@@ -25,20 +25,20 @@ Men nogle gange skal man prøve noget nyt, og hvad er en bedre grund end når man 
  </figure>
 
  <sect1 id="distro-debian-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Debian</secondary>
   </indexterm>
 
   <para>
-   Mit umiddelbare gæt (før jeg har kastet mig over Debian) er at
-   Debians målgruppe er øvede Linuxbrugere.  Altså dem der har prøvet
-   at installere forskellige distributioner og er holdt op med at læse
-   alle hjælpeteksterne i Redhats grafiske installation. Men lad os
-   nu se når jeg selv har været igennem installationen og prøvet at
-   bevæge mig lidt i Debians verden :-)
+   Mit umiddelbare gÃ¦t (fÃ¸r jeg har kastet mig over Debian) er at
+   Debians mÃ¥lgruppe er Ã¸vede Linuxbrugere.  AltsÃ¥ dem der har prÃ¸vet
+   at installere forskellige distributioner og er holdt op med at lÃ¦se
+   alle hjÃ¦lpeteksterne i Redhats grafiske installation. Men lad os
+   nu se nÃ¥r jeg selv har vÃ¦ret igennem installationen og prÃ¸vet at
+   bevÃ¦ge mig lidt i Debians verden :-)
 </para>
 </sect1>
 
@@ -51,97 +51,97 @@ Men nogle gange skal man prøve noget nyt, og hvad er en bedre grund end når man 
   </indexterm>
 
 <para>
-Jeg hader cd-rom'er (især fordi de skal brændes) så jeg er stor tilhænger
-af net-installationer. Hvis man sidder på en lidt langsom netforbindelse,
-er det også rart ikke at skulle hente en hel distribution, men kan nøjes
-med de pakker man finder væsentlige.
+Jeg hader cd-rom'er (isÃ¦r fordi de skal brÃ¦ndes) sÃ¥ jeg er stor tilhÃ¦nger
+af net-installationer. Hvis man sidder pÃ¥ en lidt langsom netforbindelse,
+er det ogsÃ¥ rart ikke at skulle hente en hel distribution, men kan nÃ¸jes
+med de pakker man finder vÃ¦sentlige.
 </para>
 
 <sect2 id="distro-debian-netinstall">
-<title>Installation via netværk</title>
+<title>Installation via netvÃ¦rk</title>
 <para>
-Efter lidt søgen fandt jeg ud af, at man kan boote Debian på en
-rescue-diskette og så derfra installere via netværk. For at gøre dette
-skal man bruge rescue.bin og root.bin. Dem fandt jeg på <ulink
+Efter lidt sÃ¸gen fandt jeg ud af, at man kan boote Debian pÃ¥ en
+rescue-diskette og sÃ¥ derfra installere via netvÃ¦rk. For at gÃ¸re dette
+skal man bruge rescue.bin og root.bin. Dem fandt jeg pÃ¥ <ulink
 url="http://ftp.se.debian.org/debian/dists/woody/main/disks-i386/current/images-1.44/bf2.4/">
 http://ftp.se.debian.org/debian/dists/woody/main/disks-i386/current/images-1.44/bf2.4/</ulink>
-Først ind med rescue.bin og derefter blev jeg bedt om at putte root
-disketten i. Så startede installationen.
+FÃ¸rst ind med rescue.bin og derefter blev jeg bedt om at putte root
+disketten i. SÃ¥ startede installationen.
 </para>
 
 <para>
 Hvis man er vant til at installere Redhat, Mandrake eller en af de andre
-distributioner med et grafisk installations-interface, vil det være en
+distributioner med et grafisk installations-interface, vil det vÃ¦re en
 noget anderledes oplevelse at installere Debian. Det er et traditionelt
 ncurses-interface hvor man har en oversigt over de forskellige menuer
-man skal igennem og man så kan hoppe lidt mellem dem.
+man skal igennem og man sÃ¥ kan hoppe lidt mellem dem.
 </para>
 
 <para>
 Partitionering af disken er lidt af en udfordring hvis man er vant til
-de grafiske hjælpemidler. Der er ingen hjælp så man skal have styr på
+de grafiske hjÃ¦lpemidler. Der er ingen hjÃ¦lp sÃ¥ man skal have styr pÃ¥
 de forskellige partitionstyper. Efter at have valgt en swap-partition og
-en Linux-partition og få dem formateret, kom turen til kerne-moduler.
-Da jeg ikke er en haj ud i det, lod jeg det simpelthen være.
+en Linux-partition og fÃ¥ dem formateret, kom turen til kerne-moduler.
+Da jeg ikke er en haj ud i det, lod jeg det simpelthen vÃ¦re.
 </para>
 
 <para>
-Så kom turen til netkortet. Der er 2 PCMCIA-controllere at vælge mellem,
-så det er ikke så svært at prøve sig frem hvis man ikke lige har tjek på
-det. Efter at have fundet den rigtige og sat netværket op, er det bare
-igang med at installere base-systemet. Jeg valgte det foreslåede
-US-mirror, men det er lige til at ændre hvis man f.eks. har et lokalt
+SÃ¥ kom turen til netkortet. Der er 2 PCMCIA-controllere at vÃ¦lge mellem,
+sÃ¥ det er ikke sÃ¥ svÃ¦rt at prÃ¸ve sig frem hvis man ikke lige har tjek pÃ¥
+det. Efter at have fundet den rigtige og sat netvÃ¦rket op, er det bare
+igang med at installere base-systemet. Jeg valgte det foreslÃ¥ede
+US-mirror, men det er lige til at Ã¦ndre hvis man f.eks. har et lokalt
 Debian-mirror. Herefter installeres boot-loader og systemet genstartes.
 </para>
 </sect2>
 
   <sect2 id="distro-debian-aptsetup">
-   <title>Opsætning af apt</title>
+   <title>OpsÃ¦tning af apt</title>
 
    <indexterm>
-    <primary>opsætning</primary>
+    <primary>opsÃ¦tning</primary>
     <secondary>af Debian</secondary>
    </indexterm>
 
 <para>
 Apt er det pakkesystem Debian bruger. Det er lidt det samme princip som
-RPM-pakker, der er bare knap så meget rod med pakke-afhængigheder. For
-at kunne bruge apt skal man tilføje nogle apt-kilder. Dette kan være en
-HTTP-sti, en FTP-sti, et monteret drev eller en cd-rom. Første gang
-maskinen starter efter installationen, kører den en lille intro hvor man
-bl.a. sætter tidszone op og tilføjer brugere. Og så er det igang med at
-lege med apt. Først startede tasksel hvor man udvælger de
-"program-grupper" man vil have pakker fra, og til sidst kan man køre
-dselect. Her vælger man de enkelte pakker man vil have installeret.
+RPM-pakker, der er bare knap sÃ¥ meget rod med pakke-afhÃ¦ngigheder. For
+at kunne bruge apt skal man tilfÃ¸je nogle apt-kilder. Dette kan vÃ¦re en
+HTTP-sti, en FTP-sti, et monteret drev eller en cd-rom. FÃ¸rste gang
+maskinen starter efter installationen, kÃ¸rer den en lille intro hvor man
+bl.a. sÃ¦tter tidszone op og tilfÃ¸jer brugere. Og sÃ¥ er det igang med at
+lege med apt. FÃ¸rst startede tasksel hvor man udvÃ¦lger de
+"program-grupper" man vil have pakker fra, og til sidst kan man kÃ¸re
+dselect. Her vÃ¦lger man de enkelte pakker man vil have installeret.
 </para>
 </sect2>
 
   <sect2 id="distro-debian-xsetup">
-   <title>Opsætning af X</title>
+   <title>OpsÃ¦tning af X</title>
 
    <indexterm>
-    <primary>opsætning af X</primary>
+    <primary>opsÃ¦tning af X</primary>
     <secondary>under Debian</secondary>
    </indexterm>
 
 <para>
 Jeg valgte ikke at installere X under installationen, for at se
-hvorledes dette gøres på Debian. Man skal hente pakkerne discover,
-mdetect og read-edid. Dette gøres således:
+hvorledes dette gÃ¸res pÃ¥ Debian. Man skal hente pakkerne discover,
+mdetect og read-edid. Dette gÃ¸res sÃ¥ledes:
 
 <screen>
 <prompt>greenland:~#</prompt> <userinput>apt-get install discover mdetect read-edid</userinput>
 </screen>
 
-Så er det lettere at opsætte grafikkort, mus og skærm. Herefter installeres selve X med:
+SÃ¥ er det lettere at opsÃ¦tte grafikkort, mus og skÃ¦rm. Herefter installeres selve X med:
 
 <screen>
 <prompt>greenland:~#</prompt> <userinput>apt-get install x-window-system</userinput>
 </screen>
 
 Dette vil starte installationen af X. Der bliver hentet en masse pakker
-og under installationen vil der starte en lille guide hvor du kan sætte
-din X-server op. Når X er installeret er det nok en god ting at
+og under installationen vil der starte en lille guide hvor du kan sÃ¦tte
+din X-server op. NÃ¥r X er installeret er det nok en god ting at
 installere en window manager. For testes skyld installerede jeg icewm:
 
 <screen>
@@ -154,7 +154,7 @@ Ganske nemt og smertefrit - og det virkede!
 <prompt>greenland:~#</prompt> <userinput>startx</userinput>
 </screen>
 
-og du er kørende.
+og du er kÃ¸rende.
 </para>
 
 </sect2>
@@ -169,17 +169,17 @@ og du er kørende.
 
 
 <para>
-apt-get bruges også til at holde ens Debian-system sikkerhedsopdateret.
-Når Debians sikkerhedshold frigiver en pakke der løser et sikkerhedsfejl
-vil den være tilgængelig gennem en speciel apt-kilde. Man kan derfor
-holde sit system opdateret ved jævnligt at køre følgende to komandoer:
+apt-get bruges ogsÃ¥ til at holde ens Debian-system sikkerhedsopdateret.
+NÃ¥r Debians sikkerhedshold frigiver en pakke der lÃ¸ser et sikkerhedsfejl
+vil den vÃ¦re tilgÃ¦ngelig gennem en speciel apt-kilde. Man kan derfor
+holde sit system opdateret ved jÃ¦vnligt at kÃ¸re fÃ¸lgende to komandoer:
 
 <screen>
 <prompt>greenland:~#</prompt> <userinput>apt-get update</userinput>
 <prompt>greenland:~#</prompt> <userinput>apt-get upgrade</userinput>
 </screen>
 
-Den første kommando vil opdatere listen af pakker apt kender og den
+Den fÃ¸rste kommando vil opdatere listen af pakker apt kender og den
 anden kommando vil opgradere de pakker man har installeret.
 </para>
 </sect2>
@@ -193,11 +193,11 @@ anden kommando vil opgradere de pakker man har installeret.
 Debian Testing og Debian Unstable er to udviklingsversioner af Debian.
 Mange vil gerne bruge nyere versioner af nogle pakker end der er i den
 frigivne version af Debian og derfor bruger de en af disse. Man skal dog
-passe på med dette. I Debian Unstable har pakkerne kun fået en minimal
-afprøvning og afhængighederne kan ikke altid opfyldes for alle pakker. I
-Debian Testing burde pakker være afprøvet bedre og afhængiheder mellem
+passe pÃ¥ med dette. I Debian Unstable har pakkerne kun fÃ¥et en minimal
+afprÃ¸vning og afhÃ¦ngighederne kan ikke altid opfyldes for alle pakker. I
+Debian Testing burde pakker vÃ¦re afprÃ¸vet bedre og afhÃ¦ngiheder mellem
 pakker skulle virke, men der kommer ikke sikkerhedsopdateringer til
-Debian Testing, så man kan derfor have et sikkerhedshul i temmelig lang
+Debian Testing, sÃ¥ man kan derfor have et sikkerhedshul i temmelig lang
 tid hvis man bruger Testing.
 </para>
 
@@ -212,14 +212,14 @@ tid hvis man bruger Testing.
   </indexterm>
 
 <para>
-Der er ikke meget forskel på Debian og andre pakke-baserede
-Linux-distributioner, når man kigger på den daglige brug. Det afhænger
+Der er ikke meget forskel pÃ¥ Debian og andre pakke-baserede
+Linux-distributioner, nÃ¥r man kigger pÃ¥ den daglige brug. Det afhÃ¦nger
 af hvilke programmer man installerer. Men der hvor Debian virkelig er
-en stærk distribution, er dens apt pakkesystem. Her er det svært at
-ende i et afhængighedshelvede, da systemet holder pænt øje med hvad
-der er installeret på maskinen. Selvfølgelig kan man lave rod i den
+en stÃ¦rk distribution, er dens apt pakkesystem. Her er det svÃ¦rt at
+ende i et afhÃ¦ngighedshelvede, da systemet holder pÃ¦nt Ã¸je med hvad
+der er installeret pÃ¥ maskinen. SelvfÃ¸lgelig kan man lave rod i den
 hvis man begynder at installerer programmer fra source. Men holder man
-sig til apt er man virkelig godt på vej!
+sig til apt er man virkelig godt pÃ¥ vej!
 </para>
 </sect1>
 
@@ -227,36 +227,36 @@ sig til apt er man virkelig godt på vej!
 <sect1 id="distro-debian-vurdering">
 <title>Konklusion</title>
 <para>
-Den sværeste hurdle at komme over var installationen. Men når først den
-er overstået, er Debian et rigtigt lækkert system at bruge.
-Og det er værd at bemærke at i mange tilfælde er det kun nødvendigt at      
-installere Debian netop én gang, da installationen uden nogen særlig
+Den svÃ¦reste hurdle at komme over var installationen. Men nÃ¥r fÃ¸rst den
+er overstÃ¥et, er Debian et rigtigt lÃ¦kkert system at bruge.
+Og det er vÃ¦rd at bemÃ¦rke at i mange tilfÃ¦lde er det kun nÃ¸dvendigt at      
+installere Debian netop Ã©n gang, da installationen uden nogen sÃ¦rlig
 arbejdsindsats kan holdes opdateret i al evighed udfra den variant &ndash;
 stable, testing eller unstable &ndash; man har valgt.
 </para>
 
 <para>
-Man kan sågar opgradere fra stable til testing til unstable, hvis man har lyst.
-Det er blot et spørgsmål om at køre kommandoen <command>apt-get
+Man kan sÃ¥gar opgradere fra stable til testing til unstable, hvis man har lyst.
+Det er blot et spÃ¸rgsmÃ¥l om at kÃ¸re kommandoen <command>apt-get
 dist-upgrade</command> efter at man har rettet i hvor "apt-get" skal hente
 pakkerne henne.
 </para>
 
 <para>
 Det er ikke en distribution jeg vil anbefale til begyndere p.g.a. den
-svære installation. Desuden skal man vente rigtig længe på nye
+svÃ¦re installation. Desuden skal man vente rigtig lÃ¦nge pÃ¥ nye
 programmer hvis man holder sig til Stable-grenen. Og at lege med
 programmer fra de andre udviklingsgrene af Debian, kan man let ende i
-noget rod hvis man ikke har tjek på distributionen.
+noget rod hvis man ikke har tjek pÃ¥ distributionen.
 </para>
 
 <para>
-Skulle du få lyst til at lege med Debian, er der masser af hjælp at
-hente på <ulink url="http://debianguiden.dk">DebianGuiden</ulink>.
+Skulle du fÃ¥ lyst til at lege med Debian, er der masser af hjÃ¦lp at
+hente pÃ¥ <ulink url="http://debianguiden.dk">DebianGuiden</ulink>.
 </para>
 
 <para>
-Jeg er blevet så positivt overrasket over Debian, at jeg vil give min
+Jeg er blevet sÃ¥ positivt overrasket over Debian, at jeg vil give min
 maskine en distribution i julegave :-)
 </para>
 </sect1>

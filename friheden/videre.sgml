@@ -3,13 +3,13 @@
 <title>Hvordan kommer jeg videre?</title>
 
 <para>
-Vi er ved at være ved vejs ende. Vi håber at du er blevet inspireret
-til at komme i gang med Linux og har fået et overblik over, hvad du
+Vi er ved at vÃ¦re ved vejs ende. Vi hÃ¥ber at du er blevet inspireret
+til at komme i gang med Linux og har fÃ¥et et overblik over, hvad du
 har af muligheder. Hvad du konkret vil bruge dit Linux-system
-til, kommer meget an på, i hvilken retning dine interesser går. Tag fat på
-de ting, du synes kunne være sjove eller spændende at dykke ned i, og bliv
-klogere på dem. Husk frem for alt, at med Linux har princippet helt fra starten
-været, at det er lysten, der driver værket!
+til, kommer meget an pÃ¥, i hvilken retning dine interesser gÃ¥r. Tag fat pÃ¥
+de ting, du synes kunne vÃ¦re sjove eller spÃ¦ndende at dykke ned i, og bliv
+klogere pÃ¥ dem. Husk frem for alt, at med Linux har princippet helt fra starten
+vÃ¦ret, at det er lysten, der driver vÃ¦rket!
 </para>
 
 
@@ -21,18 +21,18 @@ været, at det er lysten, der driver værket!
 <para>
 Linux-verdenen har tidligt indset, at
 dokumentation er essentielt, hvis man vil have andre til at bruge
-Linux. Derfor er meget af den centrale software beskrevet i såkaldte
+Linux. Derfor er meget af den centrale software beskrevet i sÃ¥kaldte
 "HOWTO"-vejledninger (og mere kortfattede "mini-HOWTO"-vejledninger). 
 "HOWTO"-vejledninger findes muligvis i kataloget
-<filename>/usr/doc/HOWTO</filename> eller på internettet hos
+<filename>/usr/doc/HOWTO</filename> eller pÃ¥ internettet hos
 <filename>Linux Documentation Project</filename>, der findes som
-spejl (mirror - kopi) på
+spejl (mirror - kopi) pÃ¥
 <ulink url="http://sunsite.dk/ldp">http://sunsite.dk/ldp</ulink>. 
 <glossterm linkend="def-OSS">OSS</glossterm>-listerne
-(eng. FAQ - Frequently Asked Questions) indeholder ofte stillede spørgsmål 
+(eng. FAQ - Frequently Asked Questions) indeholder ofte stillede spÃ¸rgsmÃ¥l 
 (OSS)
 med svar. Mange Linux-relaterede OSS-lister finder du i
-<filename>/usr/doc/FAQ</filename>. Se også 
+<filename>/usr/doc/FAQ</filename>. Se ogsÃ¥ 
 <ulink 
 url="http://sunsite.dk/ldp/docs.html#howto">http://sunsite.dk/ldp/docs.html#howto</ulink>.
 </para>
@@ -48,17 +48,17 @@ url="http://sunsite.dk/ldp/docs.html#howto">http://sunsite.dk/ldp/docs.html#howt
 grupper</secondary></indexterm>
 
 <para>
-Det kan være spændende at gå og hygge sig med sin Linux-maskine på egen
-hånd, men vi synes, det bliver endnu sjovere og mere inspirerende, hvis
-man finder sammen med ligesindede - enten i den virkelige verden eller på
+Det kan vÃ¦re spÃ¦ndende at gÃ¥ og hygge sig med sin Linux-maskine pÃ¥ egen
+hÃ¥nd, men vi synes, det bliver endnu sjovere og mere inspirerende, hvis
+man finder sammen med ligesindede - enten i den virkelige verden eller pÃ¥
 internettet.
 </para>
 
 <para>
-Linux-brugere er generelt meget venlige og hjælpsomme mennesker. De
-hjælper gerne begynderen med at komme i gang. Vær derfor aldrig
-bange for at spørge, men husk at læse "HOWTO"-vejledninger, man-sider
-(manualsider) og OSS-lister, inden du spørger.
+Linux-brugere er generelt meget venlige og hjÃ¦lpsomme mennesker. De
+hjÃ¦lper gerne begynderen med at komme i gang. VÃ¦r derfor aldrig
+bange for at spÃ¸rge, men husk at lÃ¦se "HOWTO"-vejledninger, man-sider
+(manualsider) og OSS-lister, inden du spÃ¸rger.
 </para>
 
 <para>
@@ -68,11 +68,11 @@ Her er nogle af mulighederne for at komme i kontakt med andre:
 
 <para>
 En LUG er forkortelsen
-for en "Linux User Group" hvilket vi på dansk kalder en Linux-brugergruppe, 
+for en "Linux User Group" hvilket vi pÃ¥ dansk kalder en Linux-brugergruppe, 
 hvilket findes i meget stort antal verden
 over. Hos en LUG vil du ofte finde gratis teknisk support og (efter
-kort tid) venner, som fortæller om nye spændende ting, som andre må
-se. I Danmark er der nu flere LUG'er som er at findes på 
+kort tid) venner, som fortÃ¦ller om nye spÃ¦ndende ting, som andre mÃ¥
+se. I Danmark er der nu flere LUG'er som er at findes pÃ¥ 
 <ulink url="http://www.lug.dk">http://www.lug.dk</ulink>.
 </para>
 
@@ -85,22 +85,22 @@ se. I Danmark er der nu flere LUG'er som er at findes på
 <title>Post-lister</title>
 <indexterm><primary>Post lister om Linux</primary></indexterm>
 <para>
-Der er mange postlister rundt omkring. Når du har tilmeldt dig en
-liste, er det ofte klogt at følge med på listen en dag eller to for at
-se, hvilke typer spørgsmål der stilles. Derved stiller du ikke
-spørgsmål de forkerte steder, hvilket tit tages ilde op, med mindre du
-gør opmærksom på, at du er begynder (newbie). 
+Der er mange postlister rundt omkring. NÃ¥r du har tilmeldt dig en
+liste, er det ofte klogt at fÃ¸lge med pÃ¥ listen en dag eller to for at
+se, hvilke typer spÃ¸rgsmÃ¥l der stilles. Derved stiller du ikke
+spÃ¸rgsmÃ¥l de forkerte steder, hvilket tit tages ilde op, med mindre du
+gÃ¸r opmÃ¦rksom pÃ¥, at du er begynder (newbie). 
 </para>
 
 <para>
-SSLUG driver en række postlister. Du kan læse mere om dem på
+SSLUG driver en rÃ¦kke postlister. Du kan lÃ¦se mere om dem pÃ¥
 SSLUG's hjemmeside (<ulink
 url="http://www.sslug.dk">http://www.sslug.dk</ulink>).
 </para> 
 
 <para>
 Der er heldigvis en stribe andre Linux-brugergrupper med tilsvarende
-tilbud - støt den, du bor nærmest ved. Se på 
+tilbud - stÃ¸t den, du bor nÃ¦rmest ved. Se pÃ¥ 
 <ulink url="http://www.lug.dk">http://www.lug.dk</ulink>.
 </para>
 </sect1>
@@ -109,23 +109,23 @@ tilbud - støt den, du bor nærmest ved. Se på
 <title>Nyhedsgrupper</title>
 <indexterm><primary>Nyhedsgrupper</primary></indexterm>
 <para>
-I Danmark kan du følge <filename>dk.edb.system.unix</filename>, hvor man
-skriver på dansk. Gruppen er om Unix generelt, men langt de fleste
-indlæg handler om Linux. Alle SSLUG's postlister findes også som
-nyhedsgrupper, som kan læses fra nyhedsserveren
+I Danmark kan du fÃ¸lge <filename>dk.edb.system.unix</filename>, hvor man
+skriver pÃ¥ dansk. Gruppen er om Unix generelt, men langt de fleste
+indlÃ¦g handler om Linux. Alle SSLUG's postlister findes ogsÃ¥ som
+nyhedsgrupper, som kan lÃ¦ses fra nyhedsserveren
 <filename>news.sslug.dk</filename>.
 </para>
 </sect1>
 
 <sect1 id="Linuxhjemmesider">
 <title>Hjemmesider</title>
-<indexterm><primary>Søg på internet</primary></indexterm>
-<indexterm><primary>Linux</primary><secondary>information på 
+<indexterm><primary>SÃ¸g pÃ¥ internet</primary></indexterm>
+<indexterm><primary>Linux</primary><secondary>information pÃ¥ 
 internet</secondary></indexterm>
 <para>
-En række privatpersoner og organisationer har hjemmesider
+En rÃ¦kke privatpersoner og organisationer har hjemmesider
 om Linux. Det ville fylde det meste af denne bog at
-nævne dem alle, så vi må nøjes med et lille udvalg:
+nÃ¦vne dem alle, sÃ¥ vi mÃ¥ nÃ¸jes med et lille udvalg:
 </para>
 
 <para>
@@ -134,8 +134,8 @@ nævne dem alle, så vi må nøjes med et lille udvalg:
 <listitem>
 <para>
 <ulink url="http://&linuxbogurl;/">&linuxbogurl;</ulink>
-er denne bogs officielle hjemmeside. På siden finder du rettelser og
-tilføjelser til bogen samt mange henvisninger til Linux-relaterede
+er denne bogs officielle hjemmeside. PÃ¥ siden finder du rettelser og
+tilfÃ¸jelser til bogen samt mange henvisninger til Linux-relaterede
 hjemmesider.
 </para>
 </listitem>
@@ -151,7 +151,7 @@ andet bogprojekt om at bruge Linux i grundskolen.
 <para>
 <ulink url="http://debianguiden.dk">http://debianguiden.dk</ulink>. Et
 bogprojekt centeret omkring Debian. Projektet supplerer Friheden til at
-vælge meget fint på Debian-området.
+vÃ¦lge meget fint pÃ¥ Debian-omrÃ¥det.
 </para>
 </listitem>
 
@@ -159,16 +159,16 @@ vælge meget fint på Debian-området.
 <para>
 <ulink 
 url="http://www.sslug.dk/DanishHowto">http://www.sslug.dk/DanishHowto</ulink> -
-Howto-guide om opsætning af danske tegn til Linux.
+Howto-guide om opsÃ¦tning af danske tegn til Linux.
 </para>
 </listitem>
 
 <listitem>
 <para>
 <ulink url="http://counter.li.org/enter-person.php">http://counter.li.org/enter-person.php</ulink> -
-(eller gå bare til <ulink
+(eller gÃ¥ bare til <ulink
 url="http://counter.li.org/">counter.li.org</ulink>.
-Du bør som Linux-bruger registrere dig her.
+Du bÃ¸r som Linux-bruger registrere dig her.
 </para>
 </listitem>
 
@@ -194,7 +194,7 @@ Stor liste over videnskabelige Linux-applikationer.
 <ulink url="http://www.linux-on-laptops.com/">http://www.linux-on-laptops.com/</ulink>
 og <ulink 
 url="http://www.linux.org/hardware/laptop.html">http://www.linux.org/hardware/laptop.html/</ulink>
-- Skal du installere Linux på bærbar pc, så se altid her.
+- Skal du installere Linux pÃ¥ bÃ¦rbar pc, sÃ¥ se altid her.
 </para>
 </listitem>
 
@@ -209,14 +209,14 @@ url="http://linux.davecentral.com">http://linux.davecentral.com</ulink>
 <listitem>
 <para> 
 <ulink url="http://uni-c.linux.tucows.com/">http://uni-c.linux.tucows.com/</ulink> -
-Godt sted at starte jagten på nye Linux-programmer (mirror af <ulink url="http://www.linuxberg.com">http://www.linuxberg.com</ulink>).
+Godt sted at starte jagten pÃ¥ nye Linux-programmer (mirror af <ulink url="http://www.linuxberg.com">http://www.linuxberg.com</ulink>).
 </para>
 </listitem>
 
 <listitem>
 <para> 
 <ulink url="http://freshmeat.net">http://freshmeat.net</ulink> -
-Også et godt søgested for ny software .
+OgsÃ¥ et godt sÃ¸gested for ny software .
 </para>
 </listitem>
 
@@ -226,7 +226,7 @@ Også et godt søgested for ny software .
 <listitem>
 <para> 
 <ulink url="http://www.sourceforce.org">http://www.sourceforce.org</ulink> -
-Fælles udviklingssted for masser af Open Source projekter.
+FÃ¦lles udviklingssted for masser af Open Source projekter.
 </para>
 </listitem>
 
@@ -243,7 +243,7 @@ audio og video.
 <indexterm><primary>http://rpmfind.net</primary></indexterm>
 <para> 
 <ulink url="http://rpmfind.net">http://rpmfind.net</ulink> -
-Find direkte RPM-pakker på denne URL.
+Find direkte RPM-pakker pÃ¥ denne URL.
 </para>
 </listitem>
 
@@ -325,13 +325,13 @@ Daglig opdateret forum for Mandrakebrugere.
 </para>
 
 <para>
-Og så skal du selvfølgelig ikke glemme at blive talt med på
+Og sÃ¥ skal du selvfÃ¸lgelig ikke glemme at blive talt med pÃ¥
 "The Linux Counter"
 (<ulink url="http://counter.li.org/">http://counter.li.org/</ulink>).
 </para>
 
 <para>
-Har du problemer med hardware, så læs:
+Har du problemer med hardware, sÃ¥ lÃ¦s:
 </para>
 
 
@@ -365,7 +365,7 @@ kendte ord fra Linux-verdenen. Alternativ til <ulink url="http://www.dict.org">h
 </para>
 
 <sect2 id="Linux-paa-andre-platforme">
-<title>Linux på andre platforme</title>
+<title>Linux pÃ¥ andre platforme</title>
 <indexterm>
   <primary>platforme</primary>
   <secondary>ikke Intel</secondary>
@@ -384,12 +384,12 @@ kendte ord fra Linux-verdenen. Alternativ til <ulink url="http://www.dict.org">h
 <indexterm><primary>Opie</primary></indexterm>
  
 <para>
-Linux kører på mange platforme, her er en liste over nyttige links til
+Linux kÃ¸rer pÃ¥ mange platforme, her er en liste over nyttige links til
 hjemmesider om dette.
 </para>
 
 <para>
-Debian har en meget bred support af forskellig hardware - se mere på 
+Debian har en meget bred support af forskellig hardware - se mere pÃ¥ 
 <ulink url="http://www.debian.org/ports/">http://www.debian.org/ports/</ulink>
 </para>
 
@@ -439,8 +439,8 @@ url="http://www.linuxalpha.org">http://www.linuxalpha.org</ulink>
 <para>
 PDA'er som Compaq Ipaq og Sharp Zaurus: <ulink 
 url="http://www.handhelds.org">http://www.handhelds.org</ulink>.
-Distributionen "familiar" kan anbefales, og som miljø kan du bruge
-"opie". Begge dele nås fra handhelds hjemmesiden.
+Distributionen "familiar" kan anbefales, og som miljÃ¸ kan du bruge
+"opie". Begge dele nÃ¥s fra handhelds hjemmesiden.
 </para>
 </listitem>
 
@@ -470,19 +470,19 @@ url="http://www.ultralinux.org/">http://www.ultralinux.org/</ulink>
 
 <para>
 Se <ulink url="http://blind.linux.dk">http://blind.linux.dk</ulink>
-for aktivitet omkring at være blind Linux-bruger i Danmark.
+for aktivitet omkring at vÃ¦re blind Linux-bruger i Danmark.
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
 SuSE's distributioner leder under installationen efter et braille-display, 
-og anvender dette, hvis det findes. Se også 
+og anvender dette, hvis det findes. Se ogsÃ¥ 
 <ulink url="http://www.mielke.cc/brltty">http://www.mielke.cc/brltty</ulink>. 
 SuSE har endvidere Blinux,
-det er en slags daemon, der kører i baggrunden. Blinde kan bruge alle
-SuSE-programmer, der kører i teksttilstand, herunder selvfølgelig også
-kerneoversættelse. Se <ulink url=" 
+det er en slags daemon, der kÃ¸rer i baggrunden. Blinde kan bruge alle
+SuSE-programmer, der kÃ¸rer i teksttilstand, herunder selvfÃ¸lgelig ogsÃ¥
+kerneoversÃ¦ttelse. Se <ulink url=" 
 http://www.suse.de/en/news/hotnews/Blinux.html"> 
 http://www.suse.de/en/news/hotnews/Blinux.html</ulink>.
  
@@ -490,16 +490,16 @@ http://www.suse.de/en/news/hotnews/Blinux.html</ulink>.
 </listitem>
 <listitem> 
  <para> 
-Du kunne have interesse i at kigge på blynx (på <ulink
+Du kunne have interesse i at kigge pÃ¥ blynx (pÃ¥ <ulink
 url="http://leb.net/blinux/blynx/">http://leb.net/blinux/blynx/</ulink>,
 som er en udgave af Lynx til blinde og svagtseende.
 </para>
 
 <para>
-Du kan også tilmelde dig lynx-dev-postlisten for at stille
-spørgsmål der, da jeg tror at der en god ekspertise om emnet her.
+Du kan ogsÃ¥ tilmelde dig lynx-dev-postlisten for at stille
+spÃ¸rgsmÃ¥l der, da jeg tror at der en god ekspertise om emnet her.
 Uagtet at det er en dev(eloper)-liste er almindelige
-brugerspørgsmål også velkomne, da der ikke eksisterer en
+brugerspÃ¸rgsmÃ¥l ogsÃ¥ velkomne, da der ikke eksisterer en
 egentlig postliste for dette.
 </para>
 
@@ -513,7 +513,7 @@ lynx-dev</literal> i kroppen af et e-brev
 <listitem> 
  <para>
 <ulink url="http://www.brlspeak.net/">http://www.brlspeak.net/</ulink> er en ny 
-Debian GNU/Linux mini-distribution for blinde med Braille og tale-understøttelse.
+Debian GNU/Linux mini-distribution for blinde med Braille og tale-understÃ¸ttelse.
 </para>
 </listitem>
 
@@ -521,27 +521,27 @@ Debian GNU/Linux mini-distribution for blinde med Braille og tale-understøttelse
 
 <listitem> 
  <para>
-Vil du have en Linux-version med tale kan ZipSpeak være interessant:
+Vil du have en Linux-version med tale kan ZipSpeak vÃ¦re interessant:
 <ulink 
 url="http://www.linux-speakup.org/">http://www.linux-speakup.org/</ulink>
 </para>
 
 <para>
-ZipSpeak kræver 100 Mb harddisk-plads og en DOS- eller Windows-maskine
-er kravet for at køre ZipSpeak.
+ZipSpeak krÃ¦ver 100 Mb harddisk-plads og en DOS- eller Windows-maskine
+er kravet for at kÃ¸re ZipSpeak.
 Det smarte med ZipSlack/ZipSpeak er, at man ikke skal formatere eller
-repartitionere sin harddisk. Man mister altså ikke Windows, men vinder
+repartitionere sin harddisk. Man mister altsÃ¥ ikke Windows, men vinder
 Linux!
 </para>
 
 <para> 
-Når ZipSpeak er installeret har man et katalog som hedder
-<filename>c:\linux</filename> på sin DOS/Windows-maskine. Maskinen
-starter som normalt op i Windows, hvorefter man kører en bat-fil som
+NÃ¥r ZipSpeak er installeret har man et katalog som hedder
+<filename>c:\linux</filename> pÃ¥ sin DOS/Windows-maskine. Maskinen
+starter som normalt op i Windows, hvorefter man kÃ¸rer en bat-fil som
 genstarter maskinen i Linux.
 </para>
 
-<para> Installationen er vist 'bare' at unzippe én eller flere
+<para> Installationen er vist 'bare' at unzippe Ã©n eller flere
 zip-filer f.eks med WinZip og evt. rette i
 <filename>c:\linux\linux.bat</filename>-filen.
 </para>
@@ -554,10 +554,10 @@ zip-filer f.eks med WinZip og evt. rette i
 </sect1>
 
 <sect1 id="linux-boeger">
-<title>Papirbøger om Linux</title>
+<title>PapirbÃ¸ger om Linux</title>
 <para>
-<indexterm><primary>bøger om Linux</primary></indexterm>
-Vi kan også nævne, at du måske kan have glæde af nogle bøger om Linux generelt:
+<indexterm><primary>bÃ¸ger om Linux</primary></indexterm>
+Vi kan ogsÃ¥ nÃ¦vne, at du mÃ¥ske kan have glÃ¦de af nogle bÃ¸ger om Linux generelt:
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
@@ -589,7 +589,7 @@ Linux Secrets,
 <listitem>
 <para>
 Essential System Administration,
-<emphasis>Æleen Frisch</emphasis>,
+<emphasis>Ã†leen Frisch</emphasis>,
 O'Reilly & Associates, 2nd edition</para>
 </listitem>
 

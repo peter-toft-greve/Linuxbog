@@ -31,9 +31,9 @@
 <BODY BGCOLOR="#999999" TEXT=#000000 LINK=#0000FF VLINK=#660066 ALINK=#FF0000>
 <BR><BR><BR><BR>
 <CENTER>
-<H2>Hvilke oplysninger har vi registreret om den pågældende person</H2>
+<H2>Hvilke oplysninger har vi registreret om den pÃ¥gÃ¦ldende person</H2>
 <TABLE BORDER=1 BGCOLOR=#CCFFFF>
-<TH COLSPAN="2" BGCOLOR="YELLOW">Følgende er registreret om <? print "$bruger" ?></TH>
+<TH COLSPAN="2" BGCOLOR="YELLOW">FÃ¸lgende er registreret om <? print "$bruger" ?></TH>
 </TR>
 <TR>
         <TD>Navn</TD>

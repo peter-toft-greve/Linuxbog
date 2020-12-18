@@ -6,52 +6,52 @@
 
 <!--Intro sektion -->
 <para>
-Der findes grundlæggende to udgaver af SUSE, nemlig openSUSE og SUSE Linux Enterprise.
+Der findes grundlÃ¦ggende to udgaver af SUSE, nemlig openSUSE og SUSE Linux Enterprise.
 SUSE Linux Enterprise er et kommercielt produkt fra Novell.
 </para>
 
 <para>
-SUSE Linux laves af et tysk firma der hedder SUSE LINUX GmbH <ulink url="http://suse.com">http://suse.com</ulink>, som blev opkøbt af Novell i 2003. 
-I 2011 blev Novell og derved også SUSE en del af Attachmate.
+SUSE Linux laves af et tysk firma der hedder SUSE LINUX GmbH <ulink url="http://suse.com">http://suse.com</ulink>, som blev opkÃ¸bt af Novell i 2003. 
+I 2011 blev Novell og derved ogsÃ¥ SUSE en del af Attachmate.
 </para>
 
 <para>
-SUSE er velegnet til både skrivebordsbrug og til serveren. Ud fra om
-man SUSE det ene eller andet foretages en række valg. 
+SUSE er velegnet til bÃ¥de skrivebordsbrug og til serveren. Ud fra om
+man SUSE det ene eller andet foretages en rÃ¦kke valg. 
 </para>
 
 <para>
-SUSE er i dag tilgængelig til 32-bit (i586) og 64-bit computere (x86_64).
+SUSE er i dag tilgÃ¦ngelig til 32-bit (i586) og 64-bit computere (x86_64).
 </para>
 
 <!--SLE sektion -->
 <para>
-Novell. Her kan man købe support m.m. fra Novell, det er også Novell der står får at udgive sikkerhedsopdateringer m.m.
-Under SUSE Linux Enterprise mærket er der to under udgaver:
-<li>SUSE Linux Enterprise Desktop (SLED), som er specifikt til arbejdsstationer og bærbare computere.</li>
+Novell. Her kan man kÃ¸be support m.m. fra Novell, det er ogsÃ¥ Novell der stÃ¥r fÃ¥r at udgive sikkerhedsopdateringer m.m.
+Under SUSE Linux Enterprise mÃ¦rket er der to under udgaver:
+<li>SUSE Linux Enterprise Desktop (SLED), som er specifikt til arbejdsstationer og bÃ¦rbare computere.</li>
 <li>SUSE Linux Enterprise Server (SLES), som er specifikt til server brug. <li>
 </para>
 
 <!--openSUSE sektion -->
 <para>
-openSUSE er en uafhængig og selvstændigt distribution. Her er det ikke direkte et firma der er bag, men er ledet af en bestyrelse der vælges af dens brugere.
-Her vil den primære support komme fra andre brugere der også benytter sig af openSUSE. Projektet er dog støttet af bl.a. Novell.
+openSUSE er en uafhÃ¦ngig og selvstÃ¦ndigt distribution. Her er det ikke direkte et firma der er bag, men er ledet af en bestyrelse der vÃ¦lges af dens brugere.
+Her vil den primÃ¦re support komme fra andre brugere der ogsÃ¥ benytter sig af openSUSE. Projektet er dog stÃ¸ttet af bl.a. Novell.
 </para>
 
  <sect1 id="distro-suse-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for SUSE</secondary>
   </indexterm>
 
   <para>
-   SUSE henvender sig til brugere, der ønsker at få en
-   sammenhængende, let konfigurerbar distribution med et suverænt
-   administrationsværktøj (YaST). På trods af at SUSE er let at gå til er det
-   dog ikke nødvendigvis nogen "fast-lås" distribution. Der er mange muligheder for at få
-   de seneste versioner af mange programmer og skrivebordsmiljøer, samt at lave ændringer "under-the-hood". 
+   SUSE henvender sig til brugere, der Ã¸nsker at fÃ¥ en
+   sammenhÃ¦ngende, let konfigurerbar distribution med et suverÃ¦nt
+   administrationsvÃ¦rktÃ¸j (YaST). PÃ¥ trods af at SUSE er let at gÃ¥ til er det
+   dog ikke nÃ¸dvendigvis nogen "fast-lÃ¥s" distribution. Der er mange muligheder for at fÃ¥
+   de seneste versioner af mange programmer og skrivebordsmiljÃ¸er, samt at lave Ã¦ndringer "under-the-hood". 
   </para>
 
 <figure id="distro-suse-figname" float="1">
@@ -61,7 +61,7 @@ Her vil den primære support komme fra andre brugere der også benytter sig af ope
 
 
 </sect1>
-<!-- Forædet, derfor udkommenteret 
+<!-- ForÃ¦det, derfor udkommenteret 
  <sect1 id="distro-suse-installation">
   <title>Installation</title>
 
@@ -71,18 +71,18 @@ Her vil den primære support komme fra andre brugere der også benytter sig af ope
   </indexterm>
 
 <para>
-<h1> DENNE GUIDE ER FORÆLDET SE: <ulink url="http://opensuse-guide.org/installation.php">http://opensuse-guide.org/installation.php</ulink> </h1>
+<h1> DENNE GUIDE ER FORÃ†LDET SE: <ulink url="http://opensuse-guide.org/installation.php">http://opensuse-guide.org/installation.php</ulink> </h1>
 
-Beskrivelsen af netværksinstallation (<ulink url="ftp://ftp.suse.com/pub/suse/i386/8.2/README.FTP">ftp://ftp.suse.com/pub/suse/i386/8.2/README.FTP</ulink>) 
-er meget kort, og den procedure der beskrives der virker ikke helt, så her kommer en beskrivelse af hvordan man gør.  </para>
+Beskrivelsen af netvÃ¦rksinstallation (<ulink url="ftp://ftp.suse.com/pub/suse/i386/8.2/README.FTP">ftp://ftp.suse.com/pub/suse/i386/8.2/README.FTP</ulink>) 
+er meget kort, og den procedure der beskrives der virker ikke helt, sÃ¥ her kommer en beskrivelse af hvordan man gÃ¸r.  </para>
 
 <para>
-Hent følgende floppy images: bootdisk, modules1 samt modules3,
+Hent fÃ¸lgende floppy images: bootdisk, modules1 samt modules3,
 fra <ulink url="ftp://ftp.suse.com/pub/suse/i386/8.2/boot/">ftp://ftp.suse.com/pub/suse/i386/8.2/boot/</ulink>
 eller et af de mange mirrors (se <ulink
 url="http://www.suse.com/us/private/download/ftp/int_mirrors.html">http://www.suse.com/us/private/download/ftp/int_mirrors.html</ulink>).
-Eller hent boot.iso, hvis du foretrækker at starte fra CDROM. Notér samtidig
-ip-adressen samt stien til SuSE installationskataloget på
+Eller hent boot.iso, hvis du foretrÃ¦kker at starte fra CDROM. NotÃ©r samtidig
+ip-adressen samt stien til SuSE installationskataloget pÃ¥
 det mirror du vil installere fra.  </para>
 
 
@@ -93,38 +93,38 @@ Boot fra "bootdisk". Efter lidt tid kommer der en menu frem.
 </para>
 
 <para>
-Hvis skærmkortet tillader det vil starten ske i et grafisk
-skærmbillede med en bjælke der markerer forløbet. Et tryk på F2
-skifter over til den kendte tekst, der ruller ned over skærmen under
-boot. Denne opstart kan ændres i Yast, ligesom du her kan bestemme om
-du overhovedet vil køre grafisk autoomatisk ved start.  Yast findes
-også i en tekstbaseret udgave, som man i så fald kan arbejde med. Den
-er dog ikke så omfattende som den grafiske (Yast2).
+Hvis skÃ¦rmkortet tillader det vil starten ske i et grafisk
+skÃ¦rmbillede med en bjÃ¦lke der markerer forlÃ¸bet. Et tryk pÃ¥ F2
+skifter over til den kendte tekst, der ruller ned over skÃ¦rmen under
+boot. Denne opstart kan Ã¦ndres i Yast, ligesom du her kan bestemme om
+du overhovedet vil kÃ¸re grafisk autoomatisk ved start.  Yast findes
+ogsÃ¥ i en tekstbaseret udgave, som man i sÃ¥ fald kan arbejde med. Den
+er dog ikke sÃ¥ omfattende som den grafiske (Yast2).
 </para>
 
 <para>
-Metode 1: Vælg "Installation" med piletasterne. Tryk tabulator for at
-komme ned i feltet "Boot options". Man skal være hurtig for at nå
-det - start evt. med at trykke tabulator, så stopper "nedtællingen".
+Metode 1: VÃ¦lg "Installation" med piletasterne. Tryk tabulator for at
+komme ned i feltet "Boot options". Man skal vÃ¦re hurtig for at nÃ¥
+det - start evt. med at trykke tabulator, sÃ¥ stopper "nedtÃ¦llingen".
 I "Boot options" feltet tastes:
 <screen>
 install=ftp://ipadresse/directory
 </screen>
-hvor ipadresse er adressen på den ftp server du skrev ned før, og
+hvor ipadresse er adressen pÃ¥ den ftp server du skrev ned fÃ¸r, og
 directory er stien.
 F.eks. bliver ftp://ftp.uni-bremen.de/pub/mirrors/suse/current/ til
 <screen>
 install=ftp://134.102.228.70/pub/mirrors/suse/current/
 </screen>
-Bemærk at det skal være ip adresser, DNS virker tilsyneladende ikke
+BemÃ¦rk at det skal vÃ¦re ip adresser, DNS virker tilsyneladende ikke
 under installationen.
 </para>
 
 
 <para>
 Metode 2:
-Vælg "Installation" i den menu der kommer frem. Efter
-valg af sprog og keyboard får du nu en menu, der ser ca. sådan ud: 
+VÃ¦lg "Installation" i den menu der kommer frem. Efter
+valg af sprog og keyboard fÃ¥r du nu en menu, der ser ca. sÃ¥dan ud: 
 <screen>
 Settings
 System information
@@ -133,45 +133,45 @@ Start installation/system
 Exit/reboot
 Power off
 </screen>
-Her vælges "Kernel modules", og derefter "Load network modules". Nu
-beder systemet om modules3 disketten, som indsættes.
+Her vÃ¦lges "Kernel modules", og derefter "Load network modules". Nu
+beder systemet om modules3 disketten, som indsÃ¦ttes.
 </para>
 
 
 <para>
-Man kommer tilbage i den viste menu, og skal denne gang vælge "Start
-installation/system". Her får man mulighed for at vælge "Network" som
+Man kommer tilbage i den viste menu, og skal denne gang vÃ¦lge "Start
+installation/system". Her fÃ¥r man mulighed for at vÃ¦lge "Network" som
 installationsmedie. Jeg valgte ftp som protokol. Nu skal man indtaste
-ip-adressen på ftp-serveren, og derefter stien til den SuSE man vil
+ip-adressen pÃ¥ ftp-serveren, og derefter stien til den SuSE man vil
 installere, som i metode 1. 
-En liste over mirrors findes på
+En liste over mirrors findes pÃ¥
 <ulink
 url="http://www.suse.com/us/private/download/ftp/int_mirrors.html">http://www.suse.com/us/private/download/ftp/int_mirrors.html</ulink>
 
 </para>
 
 <para>
-Hvis man indtastede ftp stien fra begyndelsen spørger den selv om
+Hvis man indtastede ftp stien fra begyndelsen spÃ¸rger den selv om
 modules3 disketten. 
-Installationen forløber nu ret nemt. 
-Ved partitionering var jeg nødt til at vælge expert mode for at undgå at
-den overskrev den Red Hat, der lå på systemets primære harddisk, det
-kunne den måske godt selv have tilbudt.
+Installationen forlÃ¸ber nu ret nemt. 
+Ved partitionering var jeg nÃ¸dt til at vÃ¦lge expert mode for at undgÃ¥ at
+den overskrev den Red Hat, der lÃ¥ pÃ¥ systemets primÃ¦re harddisk, det
+kunne den mÃ¥ske godt selv have tilbudt.
 </para>
 
 <para>
-Husk at fjerne modules3 disken fra floppy-drevet, inden installationen er færdig og maskinen genstarter.
-Efter genstart bliver man spurgt om nogle få opsætnings-ting, såsom root
-password og netværksopsætning. Den tilbyder at teste ens
+Husk at fjerne modules3 disken fra floppy-drevet, inden installationen er fÃ¦rdig og maskinen genstarter.
+Efter genstart bliver man spurgt om nogle fÃ¥ opsÃ¦tnings-ting, sÃ¥som root
+password og netvÃ¦rksopsÃ¦tning. Den tilbyder at teste ens
 internet-forbindelse, og downloade de nyeste sikkerhedsopdateringer. Nu
-har den selv en mirror-liste, hvor man kan vælge hvilket mirror man vil
+har den selv en mirror-liste, hvor man kan vÃ¦lge hvilket mirror man vil
 hente dem fra.
 </para>
 
 <para>
-SuSE finder selv skærmkort, printer, lydkort, evt. tv-kort, og
-konfigurerer X. Der vil sikkert være maskiner hvor dette fejler, men det
-gik helt af sig selv på min. Herefter bliver man tilbudt at logge ind,
+SuSE finder selv skÃ¦rmkort, printer, lydkort, evt. tv-kort, og
+konfigurerer X. Der vil sikkert vÃ¦re maskiner hvor dette fejler, men det
+gik helt af sig selv pÃ¥ min. Herefter bliver man tilbudt at logge ind,
 uden yderligere genstart af maskinen.
 </para>
 
@@ -180,33 +180,33 @@ uden yderligere genstart af maskinen.
 <sect1 id="distro-suse-brug">
 <title>Brugen af SUSE</title>
 <para>
-Med SUSE har du muligheden for mange forskellige Skrivebordsmiljøer, herunder 
-KDE, Gnome, Xfce. Både KDE og Gnome er officelt understøttet af SUSE fællesskabet,
-hvilket vil sige at det er nogle skrivebordsmiljøer der bliver prioteret højt når det 
-drejer sig om opdateringer m.m. Med SLED er det dog Gnome der er det primære skrivebordsmiljø.
-Med standard installationen medfølger mange af de programmer du vil skulle bruge for at komme igang, 
+Med SUSE har du muligheden for mange forskellige SkrivebordsmiljÃ¸er, herunder 
+KDE, Gnome, Xfce. BÃ¥de KDE og Gnome er officelt understÃ¸ttet af SUSE fÃ¦llesskabet,
+hvilket vil sige at det er nogle skrivebordsmiljÃ¸er der bliver prioteret hÃ¸jt nÃ¥r det 
+drejer sig om opdateringer m.m. Med SLED er det dog Gnome der er det primÃ¦re skrivebordsmiljÃ¸.
+Med standard installationen medfÃ¸lger mange af de programmer du vil skulle bruge for at komme igang, 
 herunder en internetbrowser, kontorpakke og et musikafspillingsprogram. Disse programmer er oftes 
-gerne tilpasset således de passer bedst muligt ind i det skrivebordsmiljø du benytter dig af.
-Hvis der skulle være et program som skulle mangle kan det let installeres via pakkehåndteringen.
+gerne tilpasset sÃ¥ledes de passer bedst muligt ind i det skrivebordsmiljÃ¸ du benytter dig af.
+Hvis der skulle vÃ¦re et program som skulle mangle kan det let installeres via pakkehÃ¥ndteringen.
 </para>
 
 <para>
 Generelt set virker tastatur, indstillinger m.m. som det skal.
-SUSE konfigurer normalt ens hardware så det er lige til at gå i gang med.  
-SUSE arbejder med et sæt konfigurationsfiler i /etc/sysconfig, som danner udgangspunkt
-for ændringer i de enkelte programmers konfigurationsfiler,
+SUSE konfigurer normalt ens hardware sÃ¥ det er lige til at gÃ¥ i gang med.  
+SUSE arbejder med et sÃ¦t konfigurationsfiler i /etc/sysconfig, som danner udgangspunkt
+for Ã¦ndringer i de enkelte programmers konfigurationsfiler,
 typisk placeret under /etc.  
 </para>
 
 <para>
 SUSE er meget grafisk orienteret med grafisk opstartsbillede, grafisk
-billede når man lukker ned, og framebuffer konsol og virtual consoles.
-Der er ikke meget "rigtig" tekstmode at finde. Man kan dog få lov at se
-beskederne når SUSE lukker ned eller ved opstart, ved at trykke ESC.
+billede nÃ¥r man lukker ned, og framebuffer konsol og virtual consoles.
+Der er ikke meget "rigtig" tekstmode at finde. Man kan dog fÃ¥ lov at se
+beskederne nÃ¥r SUSE lukker ned eller ved opstart, ved at trykke ESC.
 </para>
 
 <para>
-Oversættelsen af SUSE til dansk er generel god, især pga. det store 
+OversÃ¦ttelsen af SUSE til dansk er generel god, isÃ¦r pga. det store 
 arbejde bl.a. Martin Schlander (cb400f) og hans hold har gjort i de senere
 udgivelser. 
 </para>
@@ -215,7 +215,7 @@ udgivelser.
 <sect1 id="distro-suse-pakker">
 <title>Installation af ekstra programmer</title>
 <para>
-SUSE bruger, ligesom Red Hat og Mandrake, RPM pakkesystemet. Det er således
+SUSE bruger, ligesom Red Hat og Mandrake, RPM pakkesystemet. Det er sÃ¥ledes
 muligt at installere pakker med rpm-kommandoerne, f.eks.
 <screen>
 rpm -i fil.rpm
@@ -225,15 +225,15 @@ Se <command>man rpm</command> for mere information.
 
 <para>
 Langt nemmere er det dog at bruge openSUSEs YaST-system til at installere
-nye pakker med. YaST findes både som X-program og som ncurses-program
-der kan køre i et terminal- eller konsolvindue. YaST kan selv finde ud
-af pakkeafhængigheder. Man kan starte YaST2 enten via de traditionelle programmenuer eller via kommandoen <command>yast2
---install &gt;pakkenavn</command>, så kommer YaST GUI'et op med pakken
+nye pakker med. YaST findes bÃ¥de som X-program og som ncurses-program
+der kan kÃ¸re i et terminal- eller konsolvindue. YaST kan selv finde ud
+af pakkeafhÃ¦ngigheder. Man kan starte YaST2 enten via de traditionelle programmenuer eller via kommandoen <command>yast2
+--install &gt;pakkenavn</command>, sÃ¥ kommer YaST GUI'et op med pakken
 tilvalgt. 
 </para>
 <para>
-Derud over har SUSE pakkehåndteringeringsværktøjet "zypper" som også kan bruges.
-Dette er dog udelukkende et terminalværktøj, som bl.a. kan installere og fjerne programmer.
+Derud over har SUSE pakkehÃ¥ndteringeringsvÃ¦rktÃ¸jet "zypper" som ogsÃ¥ kan bruges.
+Dette er dog udelukkende et terminalvÃ¦rktÃ¸j, som bl.a. kan installere og fjerne programmer.
 For at installere et program:
 <screen>zypper install &gt;pakkenavn</screen>
 eller
@@ -247,27 +247,27 @@ eller
 </para>
 
 <figure id="distro-suse-yast" float="1">
-<title>SUSE opsætningsværktøj YaST, her vises oversigten over moduler</title>
+<title>SUSE opsÃ¦tningsvÃ¦rktÃ¸j YaST, her vises oversigten over moduler</title>
 <graphic fileref="YaST2_small.&magic;" scale="100"></graphic>
 </figure>
 
 <para>
-Opsætningsfilerne er placeret efter seneste standard. YaST har dog
-sit eget sæt af filer, som bruges til de løbende ændringer der laves
-med YaST. Har du selv været inde og ændre direkte i en
-opsætningsfil, vil din udgave bliver gemt som en backup, hvorefter
-YaST erstatter den med sin egen version baseret på de valg du har
-foretaget i Yast. Med andre ord, du bør bruge YaST til at lave de
-ændringer du ønsker.
+OpsÃ¦tningsfilerne er placeret efter seneste standard. YaST har dog
+sit eget sÃ¦t af filer, som bruges til de lÃ¸bende Ã¦ndringer der laves
+med YaST. Har du selv vÃ¦ret inde og Ã¦ndre direkte i en
+opsÃ¦tningsfil, vil din udgave bliver gemt som en backup, hvorefter
+YaST erstatter den med sin egen version baseret pÃ¥ de valg du har
+foretaget i Yast. Med andre ord, du bÃ¸r bruge YaST til at lave de
+Ã¦ndringer du Ã¸nsker.
 </para>
 
 <para>
 SUSE har indbygget opdateringssystemet YOU (Yast Online Update),
-som enten kan køres manuelt eller konfigureres til automatisk
+som enten kan kÃ¸res manuelt eller konfigureres til automatisk
 daglig opdatering. Alle installerede pakker kan automatisk holdes
 opdateret med seneste rettelser.
 
-Derudover kan "zypper" også bruges ved at afvikle kommandoen
+Derudover kan "zypper" ogsÃ¥ bruges ved at afvikle kommandoen
 <screen>zypper update</screen>
 eller
 <screen>zypper up</screen>
@@ -289,27 +289,27 @@ eller
   </indexterm>
 
 <para>
-Tilgængelighed. SUSE er let at komme i gang med, nemt at konfigurere og
+TilgÃ¦ngelighed. SUSE er let at komme i gang med, nemt at konfigurere og
 veldokumenteret. Det finder selv hardware, og det er nemt at installere
 sikkerhedsopdateringer selv for en nybegynder.
 
 SUSE var meget tidligt ude med internationale versioner, god
-understøttelse af andre sprog mv. Dette skyldes nok at SUSE stammer fra
+understÃ¸ttelse af andre sprog mv. Dette skyldes nok at SUSE stammer fra
 et ikke engelsk-talende land.  </para>
 </sect1>
 
-<!-- Fjernet da det er en personlig mening, og ikke nødvendigvis længere relevant!
+<!-- Fjernet da det er en personlig mening, og ikke nÃ¸dvendigvis lÃ¦ngere relevant!
 
 <sect1 id="distro-suse-vurdering">
 <title>Samlet vurdering af SUSE</title>
 
 <para>
-SUSE kan anbefales til brugere, der ønsker en sammenhængende
-distribution med senere mulighed for automatisk at få opdateret med
+SUSE kan anbefales til brugere, der Ã¸nsker en sammenhÃ¦ngende
+distribution med senere mulighed for automatisk at fÃ¥ opdateret med
 seneste version af diverse sikkerhedsrettelser.  SUSE er lige velegnet
 til skrivebordet som til serveren, idet den indeholder alt hvad
-hjertet kan begære af pakker. Køber man den, får man både et antal
-CD'er og en DVD med, som så kan ligge permanent klar på serveren.
+hjertet kan begÃ¦re af pakker. KÃ¸ber man den, fÃ¥r man bÃ¥de et antal
+CD'er og en DVD med, som sÃ¥ kan ligge permanent klar pÃ¥ serveren.
 </para>
 </sect1>
 -->

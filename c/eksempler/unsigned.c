@@ -1,8 +1,8 @@
 /* Unsigned integer promotion.
  * Med 32 bit (std. for 386++ og mange andre CPUer ::
- * En unsigned integer kan være 0 - 4 mia.
- * En signed int kan være       -2mia - +2mia.
- * Hvad sker der, når man blander dem?
+ * En unsigned integer kan vÃ¦re 0 - 4 mia.
+ * En signed int kan vÃ¦re       -2mia - +2mia.
+ * Hvad sker der, nÃ¥r man blander dem?
  */
 
 main()
@@ -14,14 +14,14 @@ main()
     tal = 2;
 
     if (joke - tal > 42)
-        printf("Kan du forklare, hvorfor %d - %d er større end 42?\n"
-               "eller vil du hellere ned og købe en ny CPU?\n", joke, tal);
+        printf("Kan du forklare, hvorfor %d - %d er stÃ¸rre end 42?\n"
+               "eller vil du hellere ned og kÃ¸be en ny CPU?\n", joke, tal);
 
     tal = -2;
 
     if (tal + joke > 42)
-        printf("Det kan være svært at finde fejl\n"
-               "når man blander signed og unsigned!\n");
+        printf("Det kan vÃ¦re svÃ¦rt at finde fejl\n"
+               "nÃ¥r man blander signed og unsigned!\n");
 
     return 0;
 }

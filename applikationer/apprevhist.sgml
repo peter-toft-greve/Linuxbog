@@ -4,21 +4,21 @@
 <indexterm><primary>Revisionshistorie</primary></indexterm>
 
 <para>
-Igennem tiden er bogen "Linux - friheden til vælge programmer" udviklet sig
-meget. Vi frigiver ofte nye versioner, når der er kommer en del
+Igennem tiden er bogen "Linux - friheden til vÃ¦lge programmer" udviklet sig
+meget. Vi frigiver ofte nye versioner, nÃ¥r der er kommer en del
 rettelser ind, eller nye afsnit er blevet skrevet.  Kommentarer, ris
 og ros, og specielt fejl og mangler bedes sendt til <ulink
 url="mailto:linuxbog@sslug.dk">linuxbog@sslug.dk</ulink>, men er du
-medlem af SSLUG så skriv til 
+medlem af SSLUG sÃ¥ skriv til 
 <ulink url="mailto:sslug-bog@sslug.dk">sslug-bog@sslug.dk</ulink>. Her er en
-liste over, hvad der er ændret i bogen.
+liste over, hvad der er Ã¦ndret i bogen.
 </para>
 
 <para>
 Denne bog er skabt ud fra 
-version 3.9 af "Linux - friheden til at vælge", som blev splittet
+version 3.9 af "Linux - friheden til at vÃ¦lge", som blev splittet
 i mindre dele. Dette arbejde koordineres via SSLUG postlisten
-sslug-bog@sslug.dk. Alle kan bidrage - se mere om tilmelding på 
+sslug-bog@sslug.dk. Alle kan bidrage - se mere om tilmelding pÃ¥ 
 <ulink url="http://www.sslug.dk/tilmeld#bog">http://www.sslug.dk/tilmeld#bog</ulink>.
 </para>
 
@@ -29,9 +29,9 @@ Version 2.7.20040716 - 16. juli 2004:
 
 Jacob Sparre Andersen: Rettet sprog.
 
-Michael: Fanget skæv URL.
+Michael: Fanget skÃ¦v URL.
 Version 2.7.20060420 - 20. april 2006: Donald Axel, URL-rettelse.
-Version 2.7.20060826 - 26. august 2006: Hans Schou, tilføjet afsnit om Acidrip.
+Version 2.7.20060826 - 26. august 2006: Hans Schou, tilfÃ¸jet afsnit om Acidrip.
 
 </para></listitem>
 
@@ -40,61 +40,61 @@ Version 2.7 - 25. januar 2004:
 
 Donald Axel rettet URL for VNC.
 
-Mads Bondo Dydensborg har tilføjet et afsnit om Blender, skrevet af
+Mads Bondo Dydensborg har tilfÃ¸jet et afsnit om Blender, skrevet af
 Mads Sabroe.
 
 Jacob Sparre Andersen: Retter sprog.
 
-Mads Sabroe: Retter lidt småtterier og tilføjer nyt afsnit om Mupen64, en 
+Mads Sabroe: Retter lidt smÃ¥tterier og tilfÃ¸jer nyt afsnit om Mupen64, en 
 Nintendo64 emululator til Linux.
 
-Thomas Bernth: Tilføjer nyt afsnit om CAD-programmet Cycas.
+Thomas Bernth: TilfÃ¸jer nyt afsnit om CAD-programmet Cycas.
 
 </para></listitem>
 
 <listitem><para>
 Version 2.6 - 7. oktober 2003: 
 
-Mads Bondo Dydensborg har tilføjet et afsnit om MusixTeX, skrevet af
+Mads Bondo Dydensborg har tilfÃ¸jet et afsnit om MusixTeX, skrevet af
 Christian Mondrup og et afsnit om R, oprindeligt skrevet af Kasper
-Daniel Hansen. Desuden flyttet rundt på afsnittene om digitale
+Daniel Hansen. Desuden flyttet rundt pÃ¥ afsnittene om digitale
 billeder og delt tingene lidt anderledes op. Skrevet et afsnit om xli
 (billedviser). Skrevet lidt om typografi for tastetryk og
 manualsidereferencer og skrevet et afsnit om qiv
-(billedviser). Tilføjet et afsnit om GQview (billedbrowser). Skrevet
-lidt om tilslutning vha. ramkort og USB. Skrevet lidt om på GPhoto2
+(billedviser). TilfÃ¸jet et afsnit om GQview (billedbrowser). Skrevet
+lidt om tilslutning vha. ramkort og USB. Skrevet lidt om pÃ¥ GPhoto2
 afsnittet. Erstattet det gamle afsnit om mplayer med et nyt, skrevet
-af Mads Sabroe. Tilføjet et afsnit om gThumb (billedbrowser). Tilføjet
+af Mads Sabroe. TilfÃ¸jet et afsnit om gThumb (billedbrowser). TilfÃ¸jet
 et afsnit om Exif data og et om programmet jhead (som kan manipulere
-exif data). Tilføjet et afsnit om programmet exif og gexif. Rettet et
-link til xmms (Svend Erik Venstrup). Tilføjet et afsnit om
-panoramabilleder og PanoTools. Tilføjet et kort afsnit om Hugin (PT
-frontend). Tilføjet et afsnit om at fjerne redeye med gimp (og
-plugins). Tilføjet et afsnit om Bins (program til at lave statiske
-billedalbums med). Rykket rundt på et antal afsnit. Tilføjet et afsnit
-om RPM i indledningen. Tilføjet et afsnit om at installere fra
-kildetekst, med autotools, i indledningen. Tilføjet et kort afsnit om
-gallery (billede publicering via webserver). Tilføjet et kort afsnit
+exif data). TilfÃ¸jet et afsnit om programmet exif og gexif. Rettet et
+link til xmms (Svend Erik Venstrup). TilfÃ¸jet et afsnit om
+panoramabilleder og PanoTools. TilfÃ¸jet et kort afsnit om Hugin (PT
+frontend). TilfÃ¸jet et afsnit om at fjerne redeye med gimp (og
+plugins). TilfÃ¸jet et afsnit om Bins (program til at lave statiske
+billedalbums med). Rykket rundt pÃ¥ et antal afsnit. TilfÃ¸jet et afsnit
+om RPM i indledningen. TilfÃ¸jet et afsnit om at installere fra
+kildetekst, med autotools, i indledningen. TilfÃ¸jet et kort afsnit om
+gallery (billede publicering via webserver). TilfÃ¸jet et kort afsnit
 om installation under Mandrake. Omskrevet afsnit om StarOffice til
 OpenOffice.org + henvisning til kontorbogen. Opdateret afsnittet om
 Abiword en smule. Rettet lidt i afsnittene om MagicPoint og
 Pointless. Rettet i afsnittene om Latex og Lyx. Rettet lidt i resten
-af kontorkapitlet. Tilføjet et par linjer om QCad. Rettet
-billedestørrelser og tilføjet captions for Gtkam og Digikam. Rettet
+af kontorkapitlet. TilfÃ¸jet et par linjer om QCad. Rettet
+billedestÃ¸rrelser og tilfÃ¸jet captions for Gtkam og Digikam. Rettet
 lidt i omtalen af programmer til at afspille CD'er med, og i omtalen
 af Grip (5 screenshots => 3, MP3 => OGG). Rettet i resten af
-lyd.sgml. Tilføjet et afsnit om Enemy Territory, skrevet af Mads
-Sabroe Jensen. Rettet en del på billedestørrelser i spil afsnittet.
+lyd.sgml. TilfÃ¸jet et afsnit om Enemy Territory, skrevet af Mads
+Sabroe Jensen. Rettet en del pÃ¥ billedestÃ¸rrelser i spil afsnittet.
 
 Peter Makholm har skrevet et afsnit om DEB pakkesystemet.
 
-Anders Melchiorsen har opdateret afsnittet om cd-rom-brænding.
-Peter Toft har tilføjet afsnit om k3b til nem brænding af cd-rom'er.
+Anders Melchiorsen har opdateret afsnittet om cd-rom-brÃ¦nding.
+Peter Toft har tilfÃ¸jet afsnit om k3b til nem brÃ¦nding af cd-rom'er.
 
-Peter Toft og Ole Kofoed Hansen tilføjer om Instant messaging.
+Peter Toft og Ole Kofoed Hansen tilfÃ¸jer om Instant messaging.
 
 Jacob Sparre Andersen retter sproglige fejl.
-Mads Sabroe tilføjer lidt om AMSN.
+Mads Sabroe tilfÃ¸jer lidt om AMSN.
 
 Peter Toft sletter noget gammel information om StarOffice.
 
@@ -102,79 +102,79 @@ Peter Toft starter kapitel om digitale billeder og digitale kameraer.
 
 Mads Sabroe retter tekst om Zine.
 
-Christian Treldal fanger en død henvisning til KLyx (der i øvrigt ikke længere bliver vedligeholdt).
+Christian Treldal fanger en dÃ¸d henvisning til KLyx (der i Ã¸vrigt ikke lÃ¦ngere bliver vedligeholdt).
 
 Janus Sandsgaard skriver nyt afsnit om gtkam.
 
-Hans Schou har tilføjet noget om Ardour.
+Hans Schou har tilfÃ¸jet noget om Ardour.
 
-Jacob Weismann Poulsen tilføjer afsnit om Pointless, som er 
+Jacob Weismann Poulsen tilfÃ¸jer afsnit om Pointless, som er 
 en danskudviklet konkurrent til MagicPoint.
 </para></listitem>
 
 <listitem><para>
 Version 2.5 - 6. april 2003:
-Peter Toft inspireret af Poul-Erik Hansen; flere stikord, tilføjer noget
+Peter Toft inspireret af Poul-Erik Hansen; flere stikord, tilfÃ¸jer noget
 om IM generelt.
 Harmonisering af brugernavn. Flytter kapitel om window managers til 
-ny bog i serien "Linux - Friheden til at vælge window manager".
+ny bog i serien "Linux - Friheden til at vÃ¦lge window manager".
 </para></listitem>
 
 <listitem><para>
 Version 2.4 - 1. december 2002:
-Henrik Christian Grove har oversat Michael Nordströms nye afsnit om
+Henrik Christian Grove har oversat Michael NordstrÃ¶ms nye afsnit om
 Plucker. 
-Mads Sejersen har skrevet et afsnit om ee, afsnittet om xv er røget ud.
+Mads Sejersen har skrevet et afsnit om ee, afsnittet om xv er rÃ¸get ud.
 Ole Tange: Nyt afsnit om DVD::rip.
 Jacob Sparre Andersen: skriver om stavekontrol med aspell og ispell.
 Claus Boje opdaterer information om Abiword. Skriver lidt om 3D-spillet
 Return to Castle Wolfenstein.
-Peter Toft: Lidt om OCR til Linux, tilføjer et lille KDE-trick, et xmms-trick med wav-filer fra 
+Peter Toft: Lidt om OCR til Linux, tilfÃ¸jer et lille KDE-trick, et xmms-trick med wav-filer fra 
 Jacob Kolding. Rydder lidt op i teksten. Lidt om Mandrake og dvdrip.
-Lidt mere om betjening af xine tilføjet.
+Lidt mere om betjening af xine tilfÃ¸jet.
 Mads Sabroe Jensen skriver om emulering af Gameboy, Zinf til afspilning
 af MP3 og Ogg-filer, 3D spillene Unreal1, Unreal Tournament, Unreal
-Tournament 2003 og tilføjer billede
-til PSX-emulator. Christian Treldal og Anders Melchiorsen finder sprogbøffer.
+Tournament 2003 og tilfÃ¸jer billede
+til PSX-emulator. Christian Treldal og Anders Melchiorsen finder sprogbÃ¸ffer.
 </para></listitem>
 
 <listitem><para>
 Version 2.3 - 1. september 2002:
-Mads Bondo Dydensborg har tilføjet afsnit om sox, dap, snd, glame og audacity,
+Mads Bondo Dydensborg har tilfÃ¸jet afsnit om sox, dap, snd, glame og audacity,
 har opdateret afsnittet om kino, 
 opdateret beskrivelsen af Cinelerra og rettet lidt
 i videoredigeringsafsnittet.
-Anders Melchiorsen skriver kapitlet om cd-rom-brænding om.
+Anders Melchiorsen skriver kapitlet om cd-rom-brÃ¦nding om.
 Mads Sabroe Jensen har skrevet et nyt afsnit om emulering af Playstation spil.
-Jacob Sparre Andersen: Sørget for at vi ikke anbefaler folk at pakke kildetekst ud i "/usr/local". Rettet sproglige småfejl. 
+Jacob Sparre Andersen: SÃ¸rget for at vi ikke anbefaler folk at pakke kildetekst ud i "/usr/local". Rettet sproglige smÃ¥fejl. 
 Harmoniseret brugen af <command>tar</command>.
-Erik Søe Sørensen retter URL til DECSS-kit til xine og tilføjer god idé 
-til at få bedre afspilning af DVD'er.
-Peter Toft: Tilføjer link til http://valhalla.freshrpms.net/ og indsætter
-nye billeder til grip. Retter også lidt i teksten om VNC.
+Erik SÃ¸e SÃ¸rensen retter URL til DECSS-kit til xine og tilfÃ¸jer god idÃ© 
+til at fÃ¥ bedre afspilning af DVD'er.
+Peter Toft: TilfÃ¸jer link til http://valhalla.freshrpms.net/ og indsÃ¦tter
+nye billeder til grip. Retter ogsÃ¥ lidt i teksten om VNC.
 Laver to nye kapitler ud fra eksisterende tekst.
 Mads Sejersen har skrevet et afsnit om Lilypond (nodeudskrivning).
-Erik Søe Sørensen har rettet en del sproglige fejl.
-Atte André Jensen har tilføjet lidt til beskrivelsen af lilypond.
+Erik SÃ¸e SÃ¸rensen har rettet en del sproglige fejl.
+Atte AndrÃ© Jensen har tilfÃ¸jet lidt til beskrivelsen af lilypond.
 Claus Boje skriver om programmet Sketch.
 </para></listitem>
 
 <listitem><para>
 Version 2.2 - 14. juni 2002:
-Mads Bondo Dydensborg har tilføjet et stort nyt afsnit om Video CD'er,
+Mads Bondo Dydensborg har tilfÃ¸jet et stort nyt afsnit om Video CD'er,
 afsnittet om at redigere video, samt information fra Frank
-M.G. Jørgensen om kildeteksten til Broadcast 2000.
-Jesper Krogh har rettet afsnit om cd-rom-brænding op til mere nutidig
-information. Og han retter også en anden fejl.
+M.G. JÃ¸rgensen om kildeteksten til Broadcast 2000.
+Jesper Krogh har rettet afsnit om cd-rom-brÃ¦nding op til mere nutidig
+information. Og han retter ogsÃ¥ en anden fejl.
 Peter Toft har opdateret afsnit om KDE og slettet afsnit
 om fvwm. Ny vejledning i opgradering fra KDE2 til KDE3 under
 Mandrake 8.2. Nyt afsnit om kpf.
-Anders Melchiorsen har opdateret afsnit om at håndtere lyd-cd-rom'er.
-Søren Haagerup har skrevet nyt afsnit om slægtsforskning.
-Lars Kr. Lundin tilføjer at GRAMPS også findes på dansk, da han
+Anders Melchiorsen har opdateret afsnit om at hÃ¥ndtere lyd-cd-rom'er.
+SÃ¸ren Haagerup har skrevet nyt afsnit om slÃ¦gtsforskning.
+Lars Kr. Lundin tilfÃ¸jer at GRAMPS ogsÃ¥ findes pÃ¥ dansk, da han
 laver oversat dette.
 Michael Lerskov Munk Nielsen retter URL til Blackbox.
-Jacob Sparre Andersen: Rettet sproglige småfejl.
+Jacob Sparre Andersen: Rettet sproglige smÃ¥fejl.
 </para></listitem>
 
 <listitem><para>
@@ -186,11 +186,11 @@ Jacob Sparre Andersen - stikord.
 
 <listitem><para> 
 Version 2.0 - 29. december 2001:
-Michael Kristensen tilføjer om webcam.
-Jacob Sparre Andersen gør opmærksom på at LDGLite nu også 
-kører på Alpha-processorer.
+Michael Kristensen tilfÃ¸jer om webcam.
+Jacob Sparre Andersen gÃ¸r opmÃ¦rksom pÃ¥ at LDGLite nu ogsÃ¥ 
+kÃ¸rer pÃ¥ Alpha-processorer.
 Jesper Krogh skriver nyt afsnit om ogle, der 
-bruges til at afspille DVD under Linux samt tilføjelse om Wine-status.
+bruges til at afspille DVD under Linux samt tilfÃ¸jelse om Wine-status.
 Peter Toft: Lidt mere om GIMP + stikord.
 </para></listitem>
 
@@ -198,13 +198,13 @@ Peter Toft: Lidt mere om GIMP + stikord.
 Version 1.9 - 21. oktober 2001:
 Peter Toft: Link til artikel om realtids generering af MP3.
 Nyt afsnit om 3D modellering og rendering begyndt.
-Nyt om at løse problem med XMMS under KDE.
-Nyt om tekstværktøjer til at lave MP3/OGG-filer.
+Nyt om at lÃ¸se problem med XMMS under KDE.
+Nyt om tekstvÃ¦rktÃ¸jer til at lave MP3/OGG-filer.
 Jacob Sparre Andersen: Rettet enheder til (MHz = megahertz, Mbit = megabit,
 Mb = megabyte). Skrevet lidt om 3D modellering af LEGO-modeller.
 Donald Axel har bidraget med et nyt afsnit om Gnumeric.
 Har taget afsnittet om editorer ud og overflyttet dette til 
-"Linux - friheden til at lære Unix".
+"Linux - friheden til at lÃ¦re Unix".
 Lars K. Schunk har lavet mange hundrede sproglige rettelser.
 </para>
 </listitem>
@@ -214,41 +214,41 @@ Lars K. Schunk har lavet mange hundrede sproglige rettelser.
 Version 1.8 - 11. august 2001:
 Anders Bruun Olsen har skrevet et afsnit om 
 installationen af programmet MPlayer til at se bl.a. DivX-film.
-Peter Toft; Nyt trick fra Søren Holm 
+Peter Toft; Nyt trick fra SÃ¸ren Holm 
 til kombination af cdrecord og mkisofs via en fifo.
 Trick til at hakke dele af MP3-filer ud.
-Hjælp til at sætte grip op til at lave OGG-filer i stedet for
+HjÃ¦lp til at sÃ¦tte grip op til at lave OGG-filer i stedet for
 MP3-filer.
 Nyt om Quanta og Bluefish til at redigere HTML-sider med.
-Anders Bruun Olsen har skrevet nyt om af få Java til at virke med KDE2 
+Anders Bruun Olsen har skrevet nyt om af fÃ¥ Java til at virke med KDE2 
 Konqueror.
 Ole Tange kom med et godt trick til at 
 konvertere stereo til mono for wav-filer.
-Niels Mørch; trykfejl Kvivio-&gt;Kivio.
+Niels MÃ¸rch; trykfejl Kvivio-&gt;Kivio.
 </para>
 </listitem>
 
 <listitem><para> 
 Version 1.9a - 12. august 2001:
-Link til info om at få webcam til at virke.
+Link til info om at fÃ¥ webcam til at virke.
 </para>
 </listitem>
 
 
 <listitem><para> 
 Version 1.7 - 9. juli 2001:
-Erling Sjørlund har lavet nyt stort afsnit om VMware.
+Erling SjÃ¸rlund har lavet nyt stort afsnit om VMware.
 Peter Toft skriver om kVivio og dia, som anvendes til at tegne diagrammer med dynamisk
 skalering af forbindelser mellem enheder. Nyt afsnit om
 screen-shots. Nyt afsnit om anti-aliaserede skrifttyper i KDE2. Ny
 afsnit om DTP.
-Tilføjet lidt om ny bog i serien. Henvisninger til StarOffice bøger.
+TilfÃ¸jet lidt om ny bog i serien. Henvisninger til StarOffice bÃ¸ger.
 Svend Erik Venstrup har igen fundet en stribe fejl.
-Afsnit om "vi" er overflyttet fra "Linux - Friheden til at vælge".
-Mikkel Mastrup har skrevet et meget bedre og langt større afsnit om
+Afsnit om "vi" er overflyttet fra "Linux - Friheden til at vÃ¦lge".
+Mikkel Mastrup har skrevet et meget bedre og langt stÃ¸rre afsnit om
 WINE.
 Mads Dydensborg og Ole Tange har rettet et par fejl.
-Jesper Krogh tilføjer om Gimp User Group.
+Jesper Krogh tilfÃ¸jer om Gimp User Group.
 Ole Tange fangede en stribe format-fejl.
 </para></listitem>
 
@@ -259,13 +259,13 @@ Thomas Rosted Jensen har lavet et stort nyt afsnit om afspilning af DVD.
 Thue Janus Kristensen har lavet total omskrivning af afsnit om
 freeciv. Mindre rettelse fra Stig W. Jensen.
 Peter Toft skriver med om The GIMP, vsound, oggenc og loadlin sammen
-med cd-rom-brænder.
+med cd-rom-brÃ¦nder.
 </para>
 </listitem>
 
 <listitem><para> 
 Version 1.5 - 15. april 2001:
-Peter Toft: Lidt om Gnome evolution tilføjet.
+Peter Toft: Lidt om Gnome evolution tilfÃ¸jet.
 Rettelse til .emacs-filen af Jesper Harder
 Har rettet VNC-port - tak til Jasper.
 </para>
@@ -275,10 +275,10 @@ Har rettet VNC-port - tak til Jasper.
 <listitem><para> 
 Version 1.4 - 12. marts 2001: 
 Peter Toft: Ekstra stikord og mere om muligheder i Konqueror.
-Har overflyttet kapitel om at cd-rom-brænding fra admin-bogen til denne.
-Henrik Christian Grove fandt en dum trykfejl i oversigt over bøger.
+Har overflyttet kapitel om at cd-rom-brÃ¦nding fra admin-bogen til denne.
+Henrik Christian Grove fandt en dum trykfejl i oversigt over bÃ¸ger.
 Jesper Krogh har forbedret afsnittet om scsi-emulering.
-Mads Sejersen fandt en defekt URL i afsnit om Palm. Erling Sjørlund
+Mads Sejersen fandt en defekt URL i afsnit om Palm. Erling SjÃ¸rlund
 retter til.
 Jacob Sparre Andersen retter sproglige fejl.
 </para></listitem>
@@ -286,26 +286,26 @@ Jacob Sparre Andersen retter sproglige fejl.
 
 <listitem><para> 
 Version 1.3 - 4. februar 2001: 
-Peter Toft: Ny bog om Docbook nævnt i serien. Opdatering af DocBook
+Peter Toft: Ny bog om Docbook nÃ¦vnt i serien. Opdatering af DocBook
 afsnit og tilsvarende om Corel status. Kapitel om emulatorer
-flyttet fra admin-bogen til denne. Nye referencer til andre bøger.
-Tommy Mogensen fandt en sprogbøf.
-Har ud fra input fra Mogens Kjær skrevet om Windows emulatoren win4lin.
+flyttet fra admin-bogen til denne. Nye referencer til andre bÃ¸ger.
+Tommy Mogensen fandt en sprogbÃ¸f.
+Har ud fra input fra Mogens KjÃ¦r skrevet om Windows emulatoren win4lin.
 Jesper Krogh har lavet et nyt afsnit om KDE2 - Peter Toft leger
-med. Jørgen Ramskov lavede sproglige rettelser til dette.
+med. JÃ¸rgen Ramskov lavede sproglige rettelser til dette.
 Sune Rastad Bahn har revideret teksten om ispell/aspell.
 Jacob Sparre Andersen: Rettet et par sproglige fejl.
 Nyt afsnit om fjernstyring af Linux- og Windows-maskiner over nettet
 med VNC skrevet af Bent Pedersen, rettet til af Peter Toft, Jacob
-Sparre Andersen og gode bidrag fra Erling Sjørlund.
+Sparre Andersen og gode bidrag fra Erling SjÃ¸rlund.
 Lidt sproglige rettelser af Hans Schou og Ole Tange.
 </para></listitem>
 
 
 <listitem> <para> Version 1.2 - 29. december 2000: Peter Toft: Har
-lavet ny opdeling af bogen, så der er selvstændigt kapitel om spil og
+lavet ny opdeling af bogen, sÃ¥ der er selvstÃ¦ndigt kapitel om spil og
 tilsvarende om audio/video. Har skrevet mere om MP3 - dels at skabe og
-dels at afspille. Tilsvarende også om at spille film. Mere om vsound
+dels at afspille. Tilsvarende ogsÃ¥ om at spille film. Mere om vsound
 til at gemme real audio til disk.
 Link til den nye bog "Linux - friheden til at programmere i C".
 </para>
@@ -314,12 +314,12 @@ Link til den nye bog "Linux - friheden til at programmere i C".
 
 <listitem> <para> Version 1.1 - 7. november 2000:
 Martin Hansen (URL til Glide forkert).
-Erik Søe Sørensen og Morten Christensen retter forklaring om mcedit.
+Erik SÃ¸e SÃ¸rensen og Morten Christensen retter forklaring om mcedit.
 </para>
 </listitem>
 
 <listitem> <para> Version 1.0 - 26. oktober 2000:
-Denne bog var en stor del af "Linux - friheden til at vælge".
+Denne bog var en stor del af "Linux - friheden til at vÃ¦lge".
 Nu er de dele om de grafiske programmer samlet her.
 </para>
 </listitem>

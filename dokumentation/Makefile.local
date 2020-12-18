@@ -12,7 +12,7 @@ usedtags_now.sgml:	$(filter-out stikord.sgml,$(filter-out $(dokumentation_auto_s
 
 ################################################################################
 #
-# Alle bogens regler. Det er lidt sort det her - bemærk at vi hardcoder 
+# Alle bogens regler. Det er lidt sort det her - bemÃ¦rk at vi hardcoder 
 # katalognavnet.... Jeg er ikke helt tilfreds...
 
 # Regler som alle bogen skal bruge

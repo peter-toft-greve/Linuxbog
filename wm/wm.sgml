@@ -3,64 +3,64 @@
 <!-- Originalfil http://www.sslug.dk/julekalender/1.php3 -->
 
 <chapter id="wm-generelt">
- <title>Generelt om håndtering af window-managere</title>
+ <title>Generelt om hÃ¥ndtering af window-managere</title>
 
  <indexterm><primary>Windowmanager</primary><secondary>generelt</secondary></indexterm>
 
   <para>
 Hvis du kommer fra Windows verdenen, er du vant til at der kun findes
-én grafisk grænseflade, som definerer f.eks. hvordan vinduer ser ud,
+Ã©n grafisk grÃ¦nseflade, som definerer f.eks. hvordan vinduer ser ud,
 hvordan knapper ser ud, hvor forskellige "dimser" som f.eks. knapper
 til at lukke for et vindue sidder henne osv. Under Linux findes der
-flere muligheder (hvilket næsten altid er tilfældet og en af de ting
-der tiltaler de fleste Linux-brugere). En grundlæggende forståelse af
+flere muligheder (hvilket nÃ¦sten altid er tilfÃ¦ldet og en af de ting
+der tiltaler de fleste Linux-brugere). En grundlÃ¦ggende forstÃ¥else af
 de forskellige dele er en fordel, fordi det giver dig mulighed for at
-vælge hvordan dit system skal hænge sammen, se ud og opføre sig, så det
+vÃ¦lge hvordan dit system skal hÃ¦nge sammen, se ud og opfÃ¸re sig, sÃ¥ det
 passer dig.</para>
 
 <sect1>
 <title>Overblik</title>
-<para>Man kan vælge at installere sit system uden
-grafisk grænseflade overhovedet. Det vil man f.eks. ofte vælge at gøre
-når man anvender Linux som en server, idet man alligevel administrerer
-serveren over netværket. Men for en skrivebordsinstallation
+<para>Man kan vÃ¦lge at installere sit system uden
+grafisk grÃ¦nseflade overhovedet. Det vil man f.eks. ofte vÃ¦lge at gÃ¸re
+nÃ¥r man anvender Linux som en server, idet man alligevel administrerer
+serveren over netvÃ¦rket. Men for en skrivebordsinstallation
 vil man opleve at der bliver installeret et system kaldet "X" som er
 den grafiske komponent langt de fleste Unix- og Linux-systemer
 anvender.</para>
 
 <para>X-systemet anvendes kun til at give adgang til den grafikhardware
-(altså skærmkort) der findes i maskinen. Denne adgang er som
-udgangspunkt uafhængig af maskinens hardware som sådan. Fordelen ved
-det er blandt andet at man kan køre grafiske programmer over netværk
+(altsÃ¥ skÃ¦rmkort) der findes i maskinen. Denne adgang er som
+udgangspunkt uafhÃ¦ngig af maskinens hardware som sÃ¥dan. Fordelen ved
+det er blandt andet at man kan kÃ¸re grafiske programmer over netvÃ¦rk
 &ndash; for mange en ligegyldig ting, men for andre en utrolig
 fordel.</para>
 
-<para>Udover X skal man anvende det man kalder en "vindueshåndterer"
+<para>Udover X skal man anvende det man kalder en "vindueshÃ¥ndterer"
 (eng.: Window Manager). Det er et stykke software der, som navnet
-antyder, har til formål at styre vinduerne på din skærm. Herunder ting
-som hvordan de ser ud, hvordan de skal dukke op på din skærm, hvordan
-du kan ændre størrelse på dem, osv. Vindueshåndteringsprogrammer du
-vil støde på kan være f.eks. "twm", "fvwm", "kwm", "sawfish",
+antyder, har til formÃ¥l at styre vinduerne pÃ¥ din skÃ¦rm. Herunder ting
+som hvordan de ser ud, hvordan de skal dukke op pÃ¥ din skÃ¦rm, hvordan
+du kan Ã¦ndre stÃ¸rrelse pÃ¥ dem, osv. VindueshÃ¥ndteringsprogrammer du
+vil stÃ¸de pÃ¥ kan vÃ¦re f.eks. "twm", "fvwm", "kwm", "sawfish",
 "Enlightenment", "windowmaker", mv.</para>
 
-<para>I tilgift til en vindueshåndterer (ofte beskrevet som i stedet
+<para>I tilgift til en vindueshÃ¥ndterer (ofte beskrevet som i stedet
 for, men teknisk er det i tilgift til) kan man have noget man kalder
-et "skrivebordsmiljø". (Eng.: Desktop Environment). Grænsen mellem et
-skrivebordsmiljø og en vindueshåndterer kan diskuteres, men to du
-ihvertfald vil møde er "KDE" og "Gnome". Et skrivebordsmiljø håndterer
+et "skrivebordsmiljÃ¸". (Eng.: Desktop Environment). GrÃ¦nsen mellem et
+skrivebordsmiljÃ¸ og en vindueshÃ¥ndterer kan diskuteres, men to du
+ihvertfald vil mÃ¸de er "KDE" og "Gnome". Et skrivebordsmiljÃ¸ hÃ¥ndterer
 ting som et aktivt skrivebord, det vil sige ting som drag and drop, og
-generelt vil nogen applikationer være skrevet til dette specifikke
-miljø &ndash; hvilket dog ikke forhindrer én i at bruge programmer
-der er skrevet til et bestemt miljø under et andet miljø. Men hvis man
-ønsker at ens applikationer skal ligne hinanden så meget som muligt,
-bør man typisk forsøge at holde sig til applikationer fra ét
-skrivebordsmiljø.</para>
+generelt vil nogen applikationer vÃ¦re skrevet til dette specifikke
+miljÃ¸ &ndash; hvilket dog ikke forhindrer Ã©n i at bruge programmer
+der er skrevet til et bestemt miljÃ¸ under et andet miljÃ¸. Men hvis man
+Ã¸nsker at ens applikationer skal ligne hinanden sÃ¥ meget som muligt,
+bÃ¸r man typisk forsÃ¸ge at holde sig til applikationer fra Ã©t
+skrivebordsmiljÃ¸.</para>
 
-<para>Ovenstående lyder nok voldsomt kompliceret hvis du kommer fra et
-Windows-miljø (eller noget der minder om det). Men, i praksis er det
-ikke så vanskeligt. Til at starte med vil de fleste nok vælge hvad
-deres installation har valgt for dem. Så, hvis du har valgt at
-installere Red Hat, vil du nok opleve at dit skrivebordsmiljø er
+<para>OvenstÃ¥ende lyder nok voldsomt kompliceret hvis du kommer fra et
+Windows-miljÃ¸ (eller noget der minder om det). Men, i praksis er det
+ikke sÃ¥ vanskeligt. Til at starte med vil de fleste nok vÃ¦lge hvad
+deres installation har valgt for dem. SÃ¥, hvis du har valgt at
+installere Red Hat, vil du nok opleve at dit skrivebordsmiljÃ¸ er
 Gnome, har du valgt Mandrake er det KDE, osv. </para>
 </sect1>
 
@@ -68,87 +68,87 @@ Gnome, har du valgt Mandrake er det KDE, osv. </para>
  <title>Hvad er en windowmanager?</title>
 
  <para>
-  Som navnet siger er en windowmanager det program der håndterer ens
-  vinduer, men hvis man ser på de forskellige windowmanagere beskrevet
-  her i bogen, så er der stor forskel på hvilken funktionalitet de
-  tilbyder. Traditionelt udfører windowmanageren dog følgende opgaver:
+  Som navnet siger er en windowmanager det program der hÃ¥ndterer ens
+  vinduer, men hvis man ser pÃ¥ de forskellige windowmanagere beskrevet
+  her i bogen, sÃ¥ er der stor forskel pÃ¥ hvilken funktionalitet de
+  tilbyder. Traditionelt udfÃ¸rer windowmanageren dog fÃ¸lgende opgaver:
 
   <itemizedlist>
    <listitem>
     <para>
-     Tegne rammer om vinduerne og håndtere hvad der sker når brugeren
-     trykker med musen på rammerne.
+     Tegne rammer om vinduerne og hÃ¥ndtere hvad der sker nÃ¥r brugeren
+     trykker med musen pÃ¥ rammerne.
     </para>
    </listitem>
    <listitem>
     <para>
-     Håndtere hvilket vindue der er aktivt (hvilket vindue man skriver
+     HÃ¥ndtere hvilket vindue der er aktivt (hvilket vindue man skriver
      i med tastaturet).
     </para>
    </listitem>
    <listitem>
     <para>
-     Placering af nye vinduer og håndtering i hvilke vinduer der ligger
+     Placering af nye vinduer og hÃ¥ndtering i hvilke vinduer der ligger
      over eller under andre vinduer.
     </para>
    </listitem>
    <listitem>
     <para>
-     Mulighed for flere skriveborde (eng.: desktops) og arbejdsområder
+     Mulighed for flere skriveborde (eng.: desktops) og arbejdsomrÃ¥der
      (eng.: workspaces)
     </para>
    </listitem>
    <listitem>
     <para>
-     Menuer når man trykker med musen uden for andre vinduer
+     Menuer nÃ¥r man trykker med musen uden for andre vinduer
     </para>
    </listitem>
   </itemizedlist>
 
-  Ofte har en windowmanager også haft sin egen
+  Ofte har en windowmanager ogsÃ¥ haft sin egen
   <glossterm linkend="def-pager">pager</glossterm>, som viser et lille
   billede af ens vinduer eller en liste over ens vinduer. Det skyldes at
-  denne funktionalitet ikke har været helt standardiseret
+  denne funktionalitet ikke har vÃ¦ret helt standardiseret
  </para>
 
  <para>
-  Man kan lade andre programmer håndtere menuerne uden for vinduerne, se
-  for eksempel <link linkend="the-9wm">9wm</link>, men traditionelt er det windowmanageren der håndterer
-  dette. Nogle windowmanagere kan selv sætte en baggrundsfarve eller et
+  Man kan lade andre programmer hÃ¥ndtere menuerne uden for vinduerne, se
+  for eksempel <link linkend="the-9wm">9wm</link>, men traditionelt er det windowmanageren der hÃ¥ndterer
+  dette. Nogle windowmanagere kan selv sÃ¦tte en baggrundsfarve eller et
   billed i baggrunden, men dette er traditionelt ikke windowmanagerens 
   opgave.
  </para>
 </sect1>
 
 <sect1 id="wm-generelt-desktop">
- <title>Hvad er et skrivebordsmiljø</title>
+ <title>Hvad er et skrivebordsmiljÃ¸</title>
 
  <para>
-  Et skrivebordsmiljø er basalt set så alt det der kommer ovenpå. Mange
+  Et skrivebordsmiljÃ¸ er basalt set sÃ¥ alt det der kommer ovenpÃ¥. Mange
   windowmanagere
-  løser flere opgaver end beskrevet i det ovenstående, så grænsen mellem
-  en windowmanager og et egentligt skrivebordsmiljø er lettere flydende.
+  lÃ¸ser flere opgaver end beskrevet i det ovenstÃ¥ende, sÃ¥ grÃ¦nsen mellem
+  en windowmanager og et egentligt skrivebordsmiljÃ¸ er lettere flydende.
  </para>
 
  <para>
-  Opgaver der normalt forventes af et skrivebordsmiljø er følgende:
+  Opgaver der normalt forventes af et skrivebordsmiljÃ¸ er fÃ¸lgende:
 
   <itemizedlist>
    <listitem>
     <para>
      Et panel med menuer, en pager, et ur og andre indlejrede
-     småprogrammer (eng.: applets)
+     smÃ¥programmer (eng.: applets)
     </para>
    </listitem>
    <listitem>
     <para>
-     Ikoner for programmer og kataloger på skrivebordet
+     Ikoner for programmer og kataloger pÃ¥ skrivebordet
     </para>
    </listitem>
    <listitem>
     <para>
-     Et ensartet udseende og opsætning af programmer skrevet specielt til 
-     det enkelte skrivebordsmiljø
+     Et ensartet udseende og opsÃ¦tning af programmer skrevet specielt til 
+     det enkelte skrivebordsmiljÃ¸
     </para>
    </listitem>
   </itemizedlist>
@@ -163,9 +163,9 @@ Gnome, har du valgt Mandrake er det KDE, osv. </para>
  </indexterm>
 
  <para>
-  En displaymanager er den grafiske login-skærm der møder en når computeren
-  lige er startet. Den mest enkle <command>xdm</command> spørger bare om
-  brugernavn og kodeord og starter så brugerens <command>.xsession</command>.
+  En displaymanager er den grafiske login-skÃ¦rm der mÃ¸der en nÃ¥r computeren
+  lige er startet. Den mest enkle <command>xdm</command> spÃ¸rger bare om
+  brugernavn og kodeord og starter sÃ¥ brugerens <command>.xsession</command>.
   De mere avancerede kan vise billeder af brugerne, starte forskellige
   sessioner op og give mulighed for at brugeren kan lukke computeren ned.
  </para>

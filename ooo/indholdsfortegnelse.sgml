@@ -5,20 +5,20 @@
 <sect1 id="ooo-indholdsfortegnelse">
   <title>Indholdsfortegnelse</title>
 
-<para>Når du har formateret dine overskrifter med typografierne
-    <emphasis>Overskrift 1</emphasis>, <emphasis>Overskrift 2</emphasis>, osv. kan du få lavet en
+<para>NÃ¥r du har formateret dine overskrifter med typografierne
+    <emphasis>Overskrift 1</emphasis>, <emphasis>Overskrift 2</emphasis>, osv. kan du fÃ¥ lavet en
     indholdsfortegnelse automatisk:</para>
 
 <orderedlist>
       <listitem>
 
-<para>Placer markøren hvor indholdsfortegnelsen skal indsættes.</para>
+<para>Placer markÃ¸ren hvor indholdsfortegnelsen skal indsÃ¦ttes.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Vælg <emphasis>Indsæt/Indeks/Indeks</emphasis>.</para>
+<para>VÃ¦lg <emphasis>IndsÃ¦t/Indeks/Indeks</emphasis>.</para>
 
 </listitem>
 
@@ -31,46 +31,46 @@
 
       <listitem>
 
-<para>Klik <emphasis>OK</emphasis> for at indsætte indholdsfortegnelsen.</para>
+<para>Klik <emphasis>OK</emphasis> for at indsÃ¦tte indholdsfortegnelsen.</para>
 
 </listitem>
     </orderedlist>
 
-<para>Indholdsfortegnelsen starter automatisk på en ny side. Eksemplet viser
-    indholdsfortegnelsen svarende til overskrifterne vist ovenfor (den grå
-    baggrund kommer som sædvanligt ikke med på udskriften):</para>
+<para>Indholdsfortegnelsen starter automatisk pÃ¥ en ny side. Eksemplet viser
+    indholdsfortegnelsen svarende til overskrifterne vist ovenfor (den grÃ¥
+    baggrund kommer som sÃ¦dvanligt ikke med pÃ¥ udskriften):</para>
 
 <figure float="1" id="fig-ooo-indholdsfortegnelseskaerm">
-<title>Indholdsfortegnelse skærm</title>
+<title>Indholdsfortegnelse skÃ¦rm</title>
 <graphic fileref="indholdsfortegnelseskaerm.&magic;" scale="60"></graphic>
 </figure>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Indholdsfortegnelsen bliver ikke opdateret automatisk når du
-        ændrer overskrifterne. Højreklik på indholdsfortegnelsen og vælg
-        <emphasis>Opdater indeks</emphasis>. Du kan også vælge <emphasis>Funktioner/Opdater/Alle
+<para>Indholdsfortegnelsen bliver ikke opdateret automatisk nÃ¥r du
+        Ã¦ndrer overskrifterne. HÃ¸jreklik pÃ¥ indholdsfortegnelsen og vÃ¦lg
+        <emphasis>Opdater indeks</emphasis>. Du kan ogsÃ¥ vÃ¦lge <emphasis>Funktioner/Opdater/Alle
         indeks</emphasis>.</para>
 
 </listitem>
 
   <listitem>
 
-<para>Du kan slette en indholdsfortegnelse ved at højreklikke og vælge
+<para>Du kan slette en indholdsfortegnelse ved at hÃ¸jreklikke og vÃ¦lge
         <emphasis>Slet indeks</emphasis>.</para>
 
 </listitem>
 
   <listitem>
 
-<para> <emphasis>Tip</emphasis> : Formateringen af indholdsfortegnelsen kan ændres ved
-        at ændre afsnitstypografierne <emphasis>Indholdsfortegnelse overskrift</emphasis>
+<para> <emphasis>Tip</emphasis> : Formateringen af indholdsfortegnelsen kan Ã¦ndres ved
+        at Ã¦ndre afsnitstypografierne <emphasis>Indholdsfortegnelse overskrift</emphasis>
         og <emphasis>Indholdsfortegnelse 1</emphasis> til <emphasis>Indholdsfortegnelse
         10</emphasis>.</para>
 
 <para> <emphasis>Eksempel</emphasis> : Hvis du vil have kapiteloverskrifterne (svarende
-        til <emphasis>Overskrift 1</emphasis>) vist med fed skal du ændre typografien
+        til <emphasis>Overskrift 1</emphasis>) vist med fed skal du Ã¦ndre typografien
         <emphasis>Indholdsfortegnelse 1</emphasis> til at bruge fed skrift.</para>
 
 </listitem>

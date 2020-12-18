@@ -1,23 +1,23 @@
 <chapter id="web-med-konqueror">
-<title>Websurf og filhåndtering</title>
+<title>Websurf og filhÃ¥ndtering</title>
 
 <para>
-Næsten alle har brug for at surfe på internettet efter informationer
-eller for at læse post. Der er flere gode browsere, og vi har her
+NÃ¦sten alle har brug for at surfe pÃ¥ internettet efter informationer
+eller for at lÃ¦se post. Der er flere gode browsere, og vi har her
 valgt at beskrive den indbyggede KDE-browser Konqueror, da denne er
 hurtig og ikke bruger voldsomt mange systemressourcer. Samme program kan
-endda også håndtere filer, f.eks. kopiere og flytte meget enkelt. 
-Dette ser vi nærmere på i dette kapitel.
+endda ogsÃ¥ hÃ¥ndtere filer, f.eks. kopiere og flytte meget enkelt. 
+Dette ser vi nÃ¦rmere pÃ¥ i dette kapitel.
 </para>
 
 <sect1 id="KDE-Konqueror">
 <title>Konqueror</title>
 <indexterm><primary>Konqueror</primary><secondary>som web-browser</secondary></indexterm>
 <para>
-På figur <xref linkend="fig-kon1"/> er Konqueror vist som webbrowser, men
-den kan også bruges til at bladre i filer på din egen maskine. Blandt
-Konquerors fordele kan nævnes at den er hurtig samtidig med at den kan
-håndtere de nyeste standarder for sideopsætning og dynamiske sider (CSS2
+PÃ¥ figur <xref linkend="fig-kon1"/> er Konqueror vist som webbrowser, men
+den kan ogsÃ¥ bruges til at bladre i filer pÃ¥ din egen maskine. Blandt
+Konquerors fordele kan nÃ¦vnes at den er hurtig samtidig med at den kan
+hÃ¥ndtere de nyeste standarder for sideopsÃ¦tning og dynamiske sider (CSS2
 og JavaScript).
 </para>
 
@@ -27,10 +27,10 @@ og JavaScript).
 </figure>
 
 <para>
-Konqueror startes op via menupanelet i KDE nederst - se pilen på <xref
-linkend="fig-kon"/>. Du kan også starte Konqueror via KDE-ikonet i 
-nederste venstre hjørne "[Internet]-&gt;[Konqueror
-Netsøger]". KDE-ikonet kan ses i venstre side af <xref
+Konqueror startes op via menupanelet i KDE nederst - se pilen pÃ¥ <xref
+linkend="fig-kon"/>. Du kan ogsÃ¥ starte Konqueror via KDE-ikonet i 
+nederste venstre hjÃ¸rne "[Internet]-&gt;[Konqueror
+NetsÃ¸ger]". KDE-ikonet kan ses i venstre side af <xref
 linkend="fig-kon"/>.
 </para>
 
@@ -41,8 +41,8 @@ linkend="fig-kon"/>.
 
 
 <para>
-På <xref linkend="fig-kon2"/> er vist de vigtigste dele af knapperne,
-som vi skal se lidt nærmere på. Bogstaverne i det følgende er vist på
+PÃ¥ <xref linkend="fig-kon2"/> er vist de vigtigste dele af knapperne,
+som vi skal se lidt nÃ¦rmere pÃ¥. Bogstaverne i det fÃ¸lgende er vist pÃ¥
 figuren.
 </para>
 
@@ -58,37 +58,37 @@ figuren.
 <itemizedlist mark="bullet">
 <listitem>
 <para>
-A: Tryk her på den sorte knap for at slette indholdet af felt I.
+A: Tryk her pÃ¥ den sorte knap for at slette indholdet af felt I.
 </para>
 </listitem>
 
 <listitem> 
 <para>
-B: Her kan du få en filtræoversigt frem (eller gemme den). Du kan
+B: Her kan du fÃ¥ en filtrÃ¦oversigt frem (eller gemme den). Du kan
 sammenligne <xref linkend="fig-kon4"/> og <xref linkend="fig-kon5"/>
-og bemærke filtræet i venstre side.
+og bemÃ¦rke filtrÃ¦et i venstre side.
 </para>
 </listitem>
 
 <listitem> 
 <para>
 C: De tre knapper anvendes til at bladre frem og tilbage i de
-hjemmesider, som har været besøgt. Op-knappen bruges til at komme op i 
+hjemmesider, som har vÃ¦ret besÃ¸gt. Op-knappen bruges til at komme op i 
 katalog-niveau.
 </para>
 </listitem>
 
 <listitem> 
 <para>
-D: Brug denne knap hvis du vil søge efter filer på din harddisk (eller
-netværksdrev). 
+D: Brug denne knap hvis du vil sÃ¸ge efter filer pÃ¥ din harddisk (eller
+netvÃ¦rksdrev). 
 </para>
 </listitem>
 
 <listitem> 
 <para>
-E: Du kan lave horisontal eller vertikal split af skærmen - så du har
-to skærm-dele - med den sidste knap til højre kan du ophæve split af skærmen.
+E: Du kan lave horisontal eller vertikal split af skÃ¦rmen - sÃ¥ du har
+to skÃ¦rm-dele - med den sidste knap til hÃ¸jre kan du ophÃ¦ve split af skÃ¦rmen.
 </para>
 </listitem>
 
@@ -101,108 +101,108 @@ indholdet af dette (en filoversigt kommer frem).
 
 <listitem> 
 <para>
-G: Har du indlæst en hjemmeside kan du trykke på knap G for at
-genindlæse siden.
+G: Har du indlÃ¦st en hjemmeside kan du trykke pÃ¥ knap G for at
+genindlÃ¦se siden.
 </para>
 </listitem>
 
 <listitem> 
 <para>
-H: Er der problemer med at indlæse hjemmesiden (f.eks. fordi en server
-er nede), så tryk på knap H for at stoppe indlæsning af siden.
+H: Er der problemer med at indlÃ¦se hjemmesiden (f.eks. fordi en server
+er nede), sÃ¥ tryk pÃ¥ knap H for at stoppe indlÃ¦sning af siden.
 </para>
 </listitem>
 
 
 <listitem> 
 <para>
-I: Her kan man skrive en URL, dvs. adressen på den hjemmeside man
-ønsker indlæst. Man kan enten skrive
+I: Her kan man skrive en URL, dvs. adressen pÃ¥ den hjemmeside man
+Ã¸nsker indlÃ¦st. Man kan enten skrive
 <literal>http://www.ft.dk</literal> eller bare
-<literal>www.ft.dk</literal> for at få folketingets hjemmeside.
+<literal>www.ft.dk</literal> for at fÃ¥ folketingets hjemmeside.
 </para>
 
 <para>Skriver man et ord, f.eks. <literal>folketinget</literal> vil
-der automatisk blive søgt efter ordet i en af de største søgemaskiner
-på internettet (<ulink
+der automatisk blive sÃ¸gt efter ordet i en af de stÃ¸rste sÃ¸gemaskiner
+pÃ¥ internettet (<ulink
 url="http://www.google.com">http://www.google.com</ulink>). Man kan
-også fremtvinge en søgning ved at skrive <literal>?
+ogsÃ¥ fremtvinge en sÃ¸gning ved at skrive <literal>?
 folketinget</literal>. Brug knap A til at slette felt I.
 </para>
 </listitem>
 
 <listitem> 
 <para>
-J: Har man markeret tekst på hjemmesiden, kan man med de tre knapper
-med markering J klippe, kopiere og indsætte tekst. Funktionerne med at
-klippe og indsætte er ikke så relevante i praksis.
+J: Har man markeret tekst pÃ¥ hjemmesiden, kan man med de tre knapper
+med markering J klippe, kopiere og indsÃ¦tte tekst. Funktionerne med at
+klippe og indsÃ¦tte er ikke sÃ¥ relevante i praksis.
 </para>
 </listitem>
 
 <listitem> 
 <para>
-K: Skal du udskrive på printer så anvend den venstre knap. Lige til
-højre for er en anden knap, der anvendes til at udskrive en ramme (engelsk: "frame")
+K: Skal du udskrive pÃ¥ printer sÃ¥ anvend den venstre knap. Lige til
+hÃ¸jre for er en anden knap, der anvendes til at udskrive en ramme (engelsk: "frame")
 (ramme), hvis siden er ramme-opdelt.
 </para>
 </listitem>
 
 
 <listitem> 
-<indexterm><primary>Konqueror</primary><secondary>søgefunktion</secondary></indexterm>
+<indexterm><primary>Konqueror</primary><secondary>sÃ¸gefunktion</secondary></indexterm>
 <para>
-L: Dette er en søge-funktion,
-hvor man kan søge efter et enkelt ord på hjemmesiden.
+L: Dette er en sÃ¸ge-funktion,
+hvor man kan sÃ¸ge efter et enkelt ord pÃ¥ hjemmesiden.
 </para>
 </listitem>
 
 <listitem> 
 <para>
-M: Knappen med + forstørrer den skrifttype, der er anvendt, mens den
-med forstørrelsesglas og - tilsvarende giver en mindre skrifttype. I
+M: Knappen med + forstÃ¸rrer den skrifttype, der er anvendt, mens den
+med forstÃ¸rrelsesglas og - tilsvarende giver en mindre skrifttype. I
 dagligdagen er dette en rigtig god funktion, idet en del hjemmesider
 er lavet med alt for lille skrifttype. De fleste andre browsere har
-tilsvarende en mulighed for at tvinge en større skrifttype, men denne
-mulighed vil typisk være begravet i menuer gemt langt væk - I
+tilsvarende en mulighed for at tvinge en stÃ¸rre skrifttype, men denne
+mulighed vil typisk vÃ¦re begravet i menuer gemt langt vÃ¦k - I
 Konqueror er funktionen hevet helt frem.
 </para>
 </listitem>
 
 <listitem> 
 <para>
-N: Sikkerhed - her kan du se om siden er krypteret, dvs. en åben
-hængelås viser at der ikke anvendes krypteret adgang til hjemmesiden,
-og tilsvarende er en lukket hængelås tegn på at der krypteres med SSL
-(dvs. en sikker adgang). Dette er typisk et spørgsmål om du kan
-overføre f.eks. kreditkort-information - er der en åben hængelås så
-bør du <emphasis>aldrig</emphasis> overføre information om dig selv,
-såsom CPR-nummer, kreditkort-information eller sko-størrelse :-)
+N: Sikkerhed - her kan du se om siden er krypteret, dvs. en Ã¥ben
+hÃ¦ngelÃ¥s viser at der ikke anvendes krypteret adgang til hjemmesiden,
+og tilsvarende er en lukket hÃ¦ngelÃ¥s tegn pÃ¥ at der krypteres med SSL
+(dvs. en sikker adgang). Dette er typisk et spÃ¸rgsmÃ¥l om du kan
+overfÃ¸re f.eks. kreditkort-information - er der en Ã¥ben hÃ¦ngelÃ¥s sÃ¥
+bÃ¸r du <emphasis>aldrig</emphasis> overfÃ¸re information om dig selv,
+sÃ¥som CPR-nummer, kreditkort-information eller sko-stÃ¸rrelse :-)
 </para>
 </listitem>
 
 </itemizedlist>
 
 <sect2 id="konqueror-filer">
-<title>Konqueror viser også filer</title>
+<title>Konqueror viser ogsÃ¥ filer</title>
 
-<indexterm><primary>Konqueror</primary><secondary>fil-håndtering</secondary></indexterm>
+<indexterm><primary>Konqueror</primary><secondary>fil-hÃ¥ndtering</secondary></indexterm>
 
 <para>
-På <xref linkend="fig-kon3"/> er vist hvordan Konqueror ser ud, når man
+PÃ¥ <xref linkend="fig-kon3"/> er vist hvordan Konqueror ser ud, nÃ¥r man
 har indtastet et katalog <literal>file:/home/pto/in</literal> (eller
 blot <filename>/home/pto/in</filename>) som katalog (kataloget
 <filename>in</filename> hos brugeren pto). <literal>file:</literal> er
-således valgfrit, men bruges til at vise, at det er filer, man vil se.
-På figuren vises at der er fem filer i kataloget. Filer vises i
-modsætning til Microsoft Explorer med fil-endelser, og endelsen
+sÃ¥ledes valgfrit, men bruges til at vise, at det er filer, man vil se.
+PÃ¥ figuren vises at der er fem filer i kataloget. Filer vises i
+modsÃ¦tning til Microsoft Explorer med fil-endelser, og endelsen
 <filename>.zip</filename> og <filename>.tgz</filename> er pakkede
-arkiver, og vises med små bokse. 
+arkiver, og vises med smÃ¥ bokse. 
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> Du kan få vist et mikro-billede af
+<emphasis>Tip:</emphasis> Du kan fÃ¥ vist et mikro-billede af
 indholdet af billeder, HTML-filer og tekstfiler, hvis du i menuen
-"Vis"->"Forhåndsvisning" vælger HTML-filer, billeder og Tekstfiler til.
+"Vis"->"ForhÃ¥ndsvisning" vÃ¦lger HTML-filer, billeder og Tekstfiler til.
 </para>
 
 <figure id="fig-kon3" float="1">
@@ -211,8 +211,8 @@ indholdet af billeder, HTML-filer og tekstfiler, hvis du i menuen
 </figure>
 
 <para>
-På <xref linkend="fig-kon4"/> er vist brugerens hjemmekatalog - dette
-fås når der trykkes på knappen med huset.
+PÃ¥ <xref linkend="fig-kon4"/> er vist brugerens hjemmekatalog - dette
+fÃ¥s nÃ¥r der trykkes pÃ¥ knappen med huset.
 </para>
 
 <figure id="fig-kon4" float="1">
@@ -221,22 +221,22 @@ fås når der trykkes på knappen med huset.
 </figure>
 
 <para>
-Tilsvarende hvis der trykkes på knappen med filtræ, så viser <xref
-linkend="fig-kon5"/> til venstre filtræet og til højre de filer, som er
+Tilsvarende hvis der trykkes pÃ¥ knappen med filtrÃ¦, sÃ¥ viser <xref
+linkend="fig-kon5"/> til venstre filtrÃ¦et og til hÃ¸jre de filer, som er
 i det katalog, som vises i linjen med <literal>file:/home/pto</literal>.
 </para>
 
 
 <figure id="fig-kon5" float="1">
-<title>Konqueror med filtræ</title>
+<title>Konqueror med filtrÃ¦</title>
 <graphic fileref="kon5.&magic;"  scale="20"></graphic>
 </figure>
 
-<indexterm><primary>Konqueror</primary><secondary>filtræ</secondary></indexterm>
+<indexterm><primary>Konqueror</primary><secondary>filtrÃ¦</secondary></indexterm>
 
 <para>
-Man kan flytte rundt på menuerne med trykknapper - På <xref
-linkend="fig-kon6"/> er det indikeret at trykker man på de lodrette streger
+Man kan flytte rundt pÃ¥ menuerne med trykknapper - PÃ¥ <xref
+linkend="fig-kon6"/> er det indikeret at trykker man pÃ¥ de lodrette streger
 og holder venstre museknap nede kan man flytte linjen rundt efter behov.
 </para>
 
@@ -246,52 +246,52 @@ og holder venstre museknap nede kan man flytte linjen rundt efter behov.
 </figure>
 
 <para>
-Da vi skiftede over til at se på filer kom to nye knapper frem, vist
-indikeret på <xref linkend="fig-kon7"/>. Den venstre skal illustrere
-ikoner side ved side og til højre er fil- og katalog-oversigt med
-mere detaljeret information. Netop den højre knap er blevet trykket
-ned på billedet og man kan se ejerskab, størrelser og rettigheder.
+Da vi skiftede over til at se pÃ¥ filer kom to nye knapper frem, vist
+indikeret pÃ¥ <xref linkend="fig-kon7"/>. Den venstre skal illustrere
+ikoner side ved side og til hÃ¸jre er fil- og katalog-oversigt med
+mere detaljeret information. Netop den hÃ¸jre knap er blevet trykket
+ned pÃ¥ billedet og man kan se ejerskab, stÃ¸rrelser og rettigheder.
 </para>
 
 <figure id="fig-kon7" float="1">
-<title>Man kan vælge mellem at se ikoner eller fuld detalje </title>
+<title>Man kan vÃ¦lge mellem at se ikoner eller fuld detalje </title>
 <graphic fileref="kon7.&magic;"  scale="20"></graphic>
 </figure>
 </sect2>
 
 <sect2 id="konqueror-filnavne">
-<title>Konqueror kan gætte filnavne</title>
-<indexterm><primary>Konqueror</primary><secondary>gætte filnavne</secondary></indexterm>
+<title>Konqueror kan gÃ¦tte filnavne</title>
+<indexterm><primary>Konqueror</primary><secondary>gÃ¦tte filnavne</secondary></indexterm>
 
 <para>
-Det er i dagligdagen også smart, at Konqueror vil forsøge at hjælpe
-brugeren med at finde filer som vist på <xref
-linkend="fig-kon8"/>. Skriver man starten på stien til en fil, vil der
-komme en menu ned med mulige afslutninger på linjen. Det øverste punkt 
-på listen kan vælges med [tab], ellers anvend op/ned piletaster til at 
-finde det rigtige punkt - hvorefter det vælges med returtasten.
+Det er i dagligdagen ogsÃ¥ smart, at Konqueror vil forsÃ¸ge at hjÃ¦lpe
+brugeren med at finde filer som vist pÃ¥ <xref
+linkend="fig-kon8"/>. Skriver man starten pÃ¥ stien til en fil, vil der
+komme en menu ned med mulige afslutninger pÃ¥ linjen. Det Ã¸verste punkt 
+pÃ¥ listen kan vÃ¦lges med [tab], ellers anvend op/ned piletaster til at 
+finde det rigtige punkt - hvorefter det vÃ¦lges med returtasten.
 </para>
 
 <figure id="fig-kon8" float="1">
-<title>Konqueror prøver at hjælpe med mulige endelser</title>
+<title>Konqueror prÃ¸ver at hjÃ¦lpe med mulige endelser</title>
 <graphic fileref="kon8.&magic;"  scale="20"></graphic>
 </figure>
 
 <para>
 Konqueror er et rigtig godt program som man typisk vil bruge
-meget. P.t. er den eneste større begrænsning håndtering af Java. Der
-kan være for indviklet Java til at siden bliver vist rigtigt. Typisk
-kan der være f.eks. internetbanker, hvor man må ty til at bruge
+meget. P.t. er den eneste stÃ¸rre begrÃ¦nsning hÃ¥ndtering af Java. Der
+kan vÃ¦re for indviklet Java til at siden bliver vist rigtigt. Typisk
+kan der vÃ¦re f.eks. internetbanker, hvor man mÃ¥ ty til at bruge
 Netscape eller Mozilla i stedet.
 </para>
 
 <para>
 <emphasis>Tip:</emphasis> Hvis du gerne vil have et andet
-baggrundsbillede på dit skrivebord, så find filen med billedet
+baggrundsbillede pÃ¥ dit skrivebord, sÃ¥ find filen med billedet
 (f.eks. fra en hjemmeside) og hold venstre musetast nede, mens du
-er hen over billedet. Derefter trækker du musemarkøren ud på
+er hen over billedet. Derefter trÃ¦kker du musemarkÃ¸ren ud pÃ¥
 baggrunden og slipper venstre musetast. Der kommer en lille menu
-frem, hvor man vælger "Sæt som tapet". 
+frem, hvor man vÃ¦lger "SÃ¦t som tapet". 
 </para>
 </sect2>
 </sect1>

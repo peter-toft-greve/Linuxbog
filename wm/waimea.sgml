@@ -15,10 +15,10 @@
  </indexterm>
 
  <para>
-  Waimea er en forholdsvis ny windowmanager, der stiler efter at være
-  den mest effektive. Derfor har udviklerne valgt at gøre den ekstremt
-  fleksibel. De påstår på hjemmesiden at man kan få Waimea til at
-  opføre sig som enhver anden windowmanager.
+  Waimea er en forholdsvis ny windowmanager, der stiler efter at vÃ¦re
+  den mest effektive. Derfor har udviklerne valgt at gÃ¸re den ekstremt
+  fleksibel. De pÃ¥stÃ¥r pÃ¥ hjemmesiden at man kan fÃ¥ Waimea til at
+  opfÃ¸re sig som enhver anden windowmanager.
  </para>
 
  <sect2 id="wm-waimea-installation">
@@ -31,19 +31,19 @@
 
   <para>
    Der er vist endnu ingen distributioner der kommer med en
-   waimea-pakke, så man må hente kildeteksten fra <ulink
+   waimea-pakke, sÃ¥ man mÃ¥ hente kildeteksten fra <ulink
    url="http://www.waimea.org/">Waimeas hjemmeside</ulink> og
-   oversætte den. Proceduren for det er den sædvandlige
+   oversÃ¦tte den. Proceduren for det er den sÃ¦dvandlige
    <command>./configure && make && sudo make install</command> . Det
    oversatte program bliver som standard lagt i
    <filename>/usr/local/bin</filename>.
   </para>
 
   <para>
-   På hjemmesiden kan man også finde kildeteksten til en lille pager
+   PÃ¥ hjemmesiden kan man ogsÃ¥ finde kildeteksten til en lille pager
    kaldet wampager. Der er ikke noget
-   <command>configure</command>-script til den, så hvis du ikke vil
-   have den i <filename>/usr/local/bin</filename> , er du nødt til at
+   <command>configure</command>-script til den, sÃ¥ hvis du ikke vil
+   have den i <filename>/usr/local/bin</filename> , er du nÃ¸dt til at
    rette i (den meget lille) <filename>Makefile</filename>
    . Installationen er derefter blot <command>make && sudo make
    install</command> .
@@ -81,36 +81,36 @@
    <title>Standardfunktionalitet</title>
 
    <para>
-    Som standard følger fokus musen med mindre den bevæger sig ud af
+    Som standard fÃ¸lger fokus musen med mindre den bevÃ¦ger sig ud af
     alle vinduer (eng. "sloppy focus"). Dette er ikke kombineret med
-    at vinduerne automatisk hæves, det er to måder at gøre på, enten
+    at vinduerne automatisk hÃ¦ves, det er to mÃ¥der at gÃ¸re pÃ¥, enten
     kan man klikke med venstre museknap i vinduets titellinje eller
     man kan trykke Alt ned og klikke med venstre museknap et
-    vilkårligt sted i vinduet.  Alt+tab skifter vindue (og på den måde
-    bliver det nye vindue hævet).
+    vilkÃ¥rligt sted i vinduet.  Alt+tab skifter vindue (og pÃ¥ den mÃ¥de
+    bliver det nye vindue hÃ¦vet).
    </para>
 
    <para>
-    Man kan få en menu frem ved et tryk på højre museknap på
+    Man kan fÃ¥ en menu frem ved et tryk pÃ¥ hÃ¸jre museknap pÃ¥
     skrivebordet, eller med Ctrl+Esc. Hvis man trykker midterste
-    museknap ned et sted på skrivebordet kan man trække hele
+    museknap ned et sted pÃ¥ skrivebordet kan man trÃ¦kke hele
     skrivebordet rundt.
    </para>
   </sect3>    <!--   Standard funktionalitet -->
 
   <sect3 id="wm-waimea-opsaetning">
-   <title>Opsætning</title>
+   <title>OpsÃ¦tning</title>
 
    <para>
     Kort fortalt: Et helvede.
    </para>
 
    <para>
-    Prisen for de ekstreme opsætningsmuligheder er
-    uoverskuelighed. Hvordan windowmanageren opfører sig er overladt
+    Prisen for de ekstreme opsÃ¦tningsmuligheder er
+    uoverskuelighed. Hvordan windowmanageren opfÃ¸rer sig er overladt
     til et "action"-system
    </para>
-  </sect3>    <!--   Opsætning -->
+  </sect3>    <!--   OpsÃ¦tning -->
 
   <sect3 id="wm-waimea-fokus">
    <title>Fokus</title>
@@ -123,16 +123,16 @@
    <para>
     I standard-action-filen
     <filename>/usr/local/share/waimea/actions/action</filename> kan
-    jeg lige overskue hvordan fokus er sat til at følge
-    musen, men jeg kunne ikke regne ud hvordan jeg ændrede det. Det
-    eneste jeg opnåede var en opsætning hvor jeg ikke kunne ændre
-    fokus på andre måder end med Alt+Tab. Heldigvis er der i kataloget
+    jeg lige overskue hvordan fokus er sat til at fÃ¸lge
+    musen, men jeg kunne ikke regne ud hvordan jeg Ã¦ndrede det. Det
+    eneste jeg opnÃ¥ede var en opsÃ¦tning hvor jeg ikke kunne Ã¦ndre
+    fokus pÃ¥ andre mÃ¥der end med Alt+Tab. Heldigvis er der i kataloget
     <filename>/usr/local/share/waimea/actions</filename> flere
     action-filer, hvoraf en hedder
-    <filename>action.click-to-focus</filename> . Så man kan få
+    <filename>action.click-to-focus</filename> . SÃ¥ man kan fÃ¥
     click-to-focus ved at kopiere
     <filename>/usr/local/share/waimea/config</filename> til
-    <filename>.waimearc</filename> og så ændre linjen
+    <filename>.waimearc</filename> og sÃ¥ Ã¦ndre linjen
 
 <programlisting>
 screen0.actionFile:         /usr/local/share/waimea/actions/action
@@ -156,13 +156,13 @@ screen0.actionFile:         /usr/local/share/waimea/actions/action.click-to.focu
    </para>
 
    <para>
-    Waiconfig er nået til version 0.0.3, så det er endnu ikke den
-    store funktionalitet man får.
+    Waiconfig er nÃ¥et til version 0.0.3, sÃ¥ det er endnu ikke den
+    store funktionalitet man fÃ¥r.
    </para>
 
    <para>
-    Style-, menu- og action-filer skal man lave i hånden med sin
-    favoriteditor, men waiconfig kan bruges til at vælge mellem dem.
+    Style-, menu- og action-filer skal man lave i hÃ¥nden med sin
+    favoriteditor, men waiconfig kan bruges til at vÃ¦lge mellem dem.
    </para>
 
    <figure id="waimea-waiconfig-fig" float="1">
@@ -171,7 +171,7 @@ screen0.actionFile:         /usr/local/share/waimea/actions/action.click-to.focu
    </figure>
 
    <para>
-    Og af uransagelige årsager er der en import-linje i starten:
+    Og af uransagelige Ã¥rsager er der en import-linje i starten:
 
 <programlisting>
 import pygtk ; pygtk.require('2.0')
@@ -179,25 +179,25 @@ import pygtk ; pygtk.require('2.0')
    </para>
 
    <para>
-    En pythonkyndig påstår at det er en linje der ikke bruges i
-    scriptet, så den kan trygt udkommenteres, hvilket på Red Hat 8
-    også er nødvendigt for at waiconfig overhovedet kan starte.
+    En pythonkyndig pÃ¥stÃ¥r at det er en linje der ikke bruges i
+    scriptet, sÃ¥ den kan trygt udkommenteres, hvilket pÃ¥ Red Hat 8
+    ogsÃ¥ er nÃ¸dvendigt for at waiconfig overhovedet kan starte.
    </para>
 
    <para>
-    Installationsbeskrivelsen angiver fint hvordan man kan ændre hvor
-    waiconfig skal installeres. Men desværre slår ændringerne ikke
+    Installationsbeskrivelsen angiver fint hvordan man kan Ã¦ndre hvor
+    waiconfig skal installeres. Men desvÃ¦rre slÃ¥r Ã¦ndringerne ikke
     igennem. Og samtidig kan installationen ikke finde ud af hvor
     waimea er installeret.
    </para>
 
    <para>
     Jeg ville installere under <filename>/usr/local</filename> , men
-    den insisterede på at finde sine oplysninger under
+    den insisterede pÃ¥ at finde sine oplysninger under
     <filename>/usr/share</filename> fremfor under
     <filename>/usr/local/share</filename> . Waiconfig er dog et
-    python-script, så det er ganske let at lokalisere og rette dens
-    søgesti. Jeg rettede til
+    python-script, sÃ¥ det er ganske let at lokalisere og rette dens
+    sÃ¸gesti. Jeg rettede til
     <filename>/usr/local/share/waiconfig/</filename> i
     <filename>datadir</filename> -definitionen samt
     <filename>/usr/local/share/waimea</filename> i linjerne der
@@ -211,9 +211,9 @@ import pygtk ; pygtk.require('2.0')
   <title>Hvad er det fede med waimea</title>
 
   <para>
-   Efter min mening er standardopsætningen af waimea ikke alene
-   underlig men også ubrugelig, og opsætningssystemet er for
-   komplekst til at jeg kan få den til at opføre sig som jeg ønsker
+   Efter min mening er standardopsÃ¦tningen af waimea ikke alene
+   underlig men ogsÃ¥ ubrugelig, og opsÃ¦tningssystemet er for
+   komplekst til at jeg kan fÃ¥ den til at opfÃ¸re sig som jeg Ã¸nsker
    det.
   </para>
  </sect2>

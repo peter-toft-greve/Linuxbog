@@ -7,15 +7,15 @@
 <title>Hvad er DeLi Linux</title>
 
 <para>
-DeLi står for 'Desktop Light', og henviser til at DeLi Linux er en
-Linux variant der er specielt designet til at køre på små systemer. 
-I følge projektets <ulink
+DeLi stÃ¥r for 'Desktop Light', og henviser til at DeLi Linux er en
+Linux variant der er specielt designet til at kÃ¸re pÃ¥ smÃ¥ systemer. 
+I fÃ¸lge projektets <ulink
 url="http://delilinux.berlios.de">hjemmeside</ulink> er testmaskinen
-en bærbar 486 med 16 MB ram.
+en bÃ¦rbar 486 med 16 MB ram.
 </para>
 
 <para>
-For at få systemet til at køre på så små maskiner som målet er, har
+For at fÃ¥ systemet til at kÃ¸re pÃ¥ sÃ¥ smÃ¥ maskiner som mÃ¥let er, har
 man valgt programmer derefter. Det betyder bl.a. at DeLi Linux kommer
 med en 2.2.25 kerne og XFree86 version 3.3.6. Af kontorprogrammer
 er der <ulink url="http://siag.nu/">
@@ -23,9 +23,9 @@ Siag Office</ulink>, som browser er der Dillo.
 </para>
 
 <para>
-For de interesserede kan det oplyses at DeLi Linux er baseret på
-slackware 7.1, og en videreudvikling af et tidligere (nu dødt) projekt
-med samme mål.
+For de interesserede kan det oplyses at DeLi Linux er baseret pÃ¥
+slackware 7.1, og en videreudvikling af et tidligere (nu dÃ¸dt) projekt
+med samme mÃ¥l.
 </para>
 
 <para>
@@ -35,10 +35,10 @@ DeLi Linux eksisterer kun i en beta-udgave.
 </sect1>
 
  <sect1 id="distro-deli-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for DeLi Linux</secondary>
   </indexterm>
 
@@ -60,97 +60,97 @@ For at kunne installere DeLi Linux skal man hente to disketter.
 Herudover skal man som minimum hente filen
 <filename>delibase.tgz</filename>. Jeg vil anbefale at man derudover
 henter alt hvad der ligger i
-<filename>ftp://ftp.berlios.de/pub/delilinux/deli</filename> og lægger
-det katalog på en cd sammen med <filename>delibase.tgz</filename>.
+<filename>ftp://ftp.berlios.de/pub/delilinux/deli</filename> og lÃ¦gger
+det katalog pÃ¥ en cd sammen med <filename>delibase.tgz</filename>.
 </para>
 
 <para>
-Man booter med den første diskette i drevet, og skifter når man bliver
-bedt om det. Her stødte jeg på det første problem. Der var fejl på den
-diskette jeg havde brugt som root-disk, så jeg lavede en ny som en
-anden maskine, og skiftede diskette og trykkede så
+Man booter med den fÃ¸rste diskette i drevet, og skifter nÃ¥r man bliver
+bedt om det. Her stÃ¸dte jeg pÃ¥ det fÃ¸rste problem. Der var fejl pÃ¥ den
+diskette jeg havde brugt som root-disk, sÃ¥ jeg lavede en ny som en
+anden maskine, og skiftede diskette og trykkede sÃ¥
 <literal>ENTER</literal> som der stod. Det fik imidlertid kernen til
-at oops'e, så jeg var nødt til at begynde forfra.
+at oops'e, sÃ¥ jeg var nÃ¸dt til at begynde forfra.
 </para>
 
 <para>
-Når man har fået indlæst root-disken kommer der først en velkomstskærm
-med nogle oplysninger om hvad man skal gøre, og besked på at man skal
-logge ind som <literal>root</literal>, der er ingen adgangskode. Når
+NÃ¥r man har fÃ¥et indlÃ¦st root-disken kommer der fÃ¸rst en velkomstskÃ¦rm
+med nogle oplysninger om hvad man skal gÃ¸re, og besked pÃ¥ at man skal
+logge ind som <literal>root</literal>, der er ingen adgangskode. NÃ¥r
 man har gjort det har man en root-prompt.
 </para>
 
 <para>
-På skærmen bliver man så opfordret til at partionere sin disk med
-<command>cfdisk</command>, hvis man altså ikke har passende
-partitioner i forvejen. Hvis man (som jeg) foretrækker
+PÃ¥ skÃ¦rmen bliver man sÃ¥ opfordret til at partionere sin disk med
+<command>cfdisk</command>, hvis man altsÃ¥ ikke har passende
+partitioner i forvejen. Hvis man (som jeg) foretrÃ¦kker
 <command>fdisk</command> i stedet for <command>cfdisk</command> er den
-der (heldigvis) også.
+der (heldigvis) ogsÃ¥.
 </para>
 
 <para>
-Når man har partitioneret sin disk passende, skal man køre
-<command>deliinstall</command>. Det første spørgsmål man får stillet
-er hvilken tastaturopsætning man vil have indlæst. På listen over
-mulighed står der bl.a. <filename>dk-latin1.map.gz</filename>, men
-hvis man indtaster det, prøver den ganske vist også at indlæse det,
+NÃ¥r man har partitioneret sin disk passende, skal man kÃ¸re
+<command>deliinstall</command>. Det fÃ¸rste spÃ¸rgsmÃ¥l man fÃ¥r stillet
+er hvilken tastaturopsÃ¦tning man vil have indlÃ¦st. PÃ¥ listen over
+mulighed stÃ¥r der bl.a. <filename>dk-latin1.map.gz</filename>, men
+hvis man indtaster det, prÃ¸ver den ganske vist ogsÃ¥ at indlÃ¦se det,
 men der kommer hurtigt en <literal>parse error</literal>. Det lidt
-dårligere valg <filename>dk.map.gz</filename> virker heller ikke.
-Herefter får man at vide at installationsprogrammet er en
-alpha-udgave, og bliver spurgt om man vil fortsætte eller hellere
-prøve at installere manuelt, hvilket der er nogle få anvisninger om
-hvordan man gør.
+dÃ¥rligere valg <filename>dk.map.gz</filename> virker heller ikke.
+Herefter fÃ¥r man at vide at installationsprogrammet er en
+alpha-udgave, og bliver spurgt om man vil fortsÃ¦tte eller hellere
+prÃ¸ve at installere manuelt, hvilket der er nogle fÃ¥ anvisninger om
+hvordan man gÃ¸r.
 </para>
 
 <para>
-Hvis man vælger at prøve installationsprogrammet, bliver man først
-spurgt om hvilken partition man vil installere på, og når man har
-svaret på det, laver den et filsystem på partitionen.
+Hvis man vÃ¦lger at prÃ¸ve installationsprogrammet, bliver man fÃ¸rst
+spurgt om hvilken partition man vil installere pÃ¥, og nÃ¥r man har
+svaret pÃ¥ det, laver den et filsystem pÃ¥ partitionen.
 </para>
 
 <para>
-Når den er færdig med det, vil den have fat i
-<filename>delibase.tgz</filename>. Den skal ligge i rod-kataloget på
-en partition der på en eller anden måde er gjort tilgængelig. Det står
-der ikke noget om i installationsvejledningen på hjemmesiden! 
+NÃ¥r den er fÃ¦rdig med det, vil den have fat i
+<filename>delibase.tgz</filename>. Den skal ligge i rod-kataloget pÃ¥
+en partition der pÃ¥ en eller anden mÃ¥de er gjort tilgÃ¦ngelig. Det stÃ¥r
+der ikke noget om i installationsvejledningen pÃ¥ hjemmesiden! 
 Installationsprogramet tilbyder er at scanne efter cd-rom-drev, og i
-vejledningsteksen på skærmen står der noget om DOS-filsystemer, så jeg
-vil gætte på at mulighederne er filen på en cd (det er ikke en
-iso-fil!) eller i roden på en partition med enten Linux eller et
+vejledningsteksen pÃ¥ skÃ¦rmen stÃ¥r der noget om DOS-filsystemer, sÃ¥ jeg
+vil gÃ¦tte pÃ¥ at mulighederne er filen pÃ¥ en cd (det er ikke en
+iso-fil!) eller i roden pÃ¥ en partition med enten Linux eller et
 microsoft-system der benytter (v)fat.
 </para>
 
 <para>
-Når installationsprogrammet har fundet
+NÃ¥r installationsprogrammet har fundet
 <filename>delibase.tgz</filename> pakker det filen ud. Herefter kommer
-der farver på! Det første man skal vælge er hvilken partition man vil
+der farver pÃ¥! Det fÃ¸rste man skal vÃ¦lge er hvilken partition man vil
 bruge som root-partition. Hvis man har flere partitioner med type 83
-(heksadecimalt - Linux native) får man mulighed for også at
+(heksadecimalt - Linux native) fÃ¥r man mulighed for ogsÃ¥ at
 montere dem.
-Herefter får man at vide hvordan ens <filename>/etc/fstab</filename>
+Herefter fÃ¥r man at vide hvordan ens <filename>/etc/fstab</filename>
 vil komme til at se ud.
 </para>
 
 <para>
-Herefter skal man vælge hvilken partition man vil benytte til swap.
+Herefter skal man vÃ¦lge hvilken partition man vil benytte til swap.
 <!-- Tror jeg, jeg lavede ikke nogen swappartition -->
 </para>
 
 <para>
-Hvis man har (v)fat(32)- eller hpfs-partition på diskene får man
+Hvis man har (v)fat(32)- eller hpfs-partition pÃ¥ diskene fÃ¥r man
 mulighed for at montere dem.
 </para>
 
 <para>
-Dernæst får man igen mulighed for at vælge tastaturopsætning, denne
-gang kan man godt vælge <filename>dk-latin1</filename>.
-Valget har dog ingen betydning for resten af installationsforløbet.
+DernÃ¦st fÃ¥r man igen mulighed for at vÃ¦lge tastaturopsÃ¦tning, denne
+gang kan man godt vÃ¦lge <filename>dk-latin1</filename>.
+Valget har dog ingen betydning for resten af installationsforlÃ¸bet.
 </para>
 
 <para>
 Efter at have angivet en adgangskode for <literal>root</literal>, og
-sprog (via koder &ndash; vælg <literal>da</literal> for dansk), skal
-man sætte lilo op.
+sprog (via koder &ndash; vÃ¦lg <literal>da</literal> for dansk), skal
+man sÃ¦tte lilo op.
 </para>
 
 <para>
@@ -168,41 +168,41 @@ Herefter er installationen afsluttet.
   </indexterm>
 
 <para>
-Når man booter og logger ind som <literal>root</literal>, får man at
-vide at man kan bruge <command>delihelp</command> til at få hjælp til
+NÃ¥r man booter og logger ind som <literal>root</literal>, fÃ¥r man at
+vide at man kan bruge <command>delihelp</command> til at fÃ¥ hjÃ¦lp til
 at komme videre.
 </para>
 
 <para>
-Til opsætning af netværk er der en program der hedder
+Til opsÃ¦tning af netvÃ¦rk er der en program der hedder
 <command>netconfig</command>, det er ganske nemt at bruge, men det kan
 kun bruges til at konfigurere eth0.
-Netværksopsætningen bliver gemt i opstartskriptet
-<filename>/etc/rc.d/rc.inet1</filename>. Første gang du kører
-<command>netconfig</command>, kan dette skript køres for at
-aktivere netværket, hvis man efterfølgende bruger
-<command>netconfig</command> til at ændre opsætningen, skal man selv
-finde ud af at deaktivere netværket først.
+NetvÃ¦rksopsÃ¦tningen bliver gemt i opstartskriptet
+<filename>/etc/rc.d/rc.inet1</filename>. FÃ¸rste gang du kÃ¸rer
+<command>netconfig</command>, kan dette skript kÃ¸res for at
+aktivere netvÃ¦rket, hvis man efterfÃ¸lgende bruger
+<command>netconfig</command> til at Ã¦ndre opsÃ¦tningen, skal man selv
+finde ud af at deaktivere netvÃ¦rket fÃ¸rst.
 </para>
 
 <para>
-Udover den begrænsede mængde programmer der installeres som standard
+Udover den begrÃ¦nsede mÃ¦ngde programmer der installeres som standard
 ligger der nogle stykker i
 <filename>ftp://ftp.berlios.de/pub/delilinux/deli</filename>, som man
 kan hente med <command>ftp</command> eller <command>lynx</command>,
-hvis man altså ikke sørgede for at hente dem og lægge dem på en cd.
+hvis man altsÃ¥ ikke sÃ¸rgede for at hente dem og lÃ¦gge dem pÃ¥ en cd.
 </para>
 
 <para>
 Programmerne ligger i <filename>.tgz</filename>-filer og kan
 installeres med <command>tar</command>. Hver
-<filename>.tgz</filename>-fil har en tilhørende
+<filename>.tgz</filename>-fil har en tilhÃ¸rende
 <filename>.txt</filename>-fil der indeholder en kort beskrivelse. 
-Der er også programmet <command>pkgtool</command>, men det eneste jeg
-fik det til, var at tage pakkerne og en efter en spørge mig om jeg
+Der er ogsÃ¥ programmet <command>pkgtool</command>, men det eneste jeg
+fik det til, var at tage pakkerne og en efter en spÃ¸rge mig om jeg
 ville installere den. Uden at vise beskrivelsen og uden nogle mulighed
-for at vide om der var alternativer. Det værste er dog at der ikke er
-nogen afhængighedsstyring, det lykkedes mig således at installere
+for at vide om der var alternativer. Det vÃ¦rste er dog at der ikke er
+nogen afhÃ¦ngighedsstyring, det lykkedes mig sÃ¥ledes at installere
 <command>gtksee</command> under at have installeret
 <literal>GTK+</literal>. 
 </para>
@@ -210,23 +210,23 @@ nogen afhængighedsstyring, det lykkedes mig således at installere
 <para>
 Nogle programmer skal man efter installationen selv finde ud at
 konfigurere. Et eksempel er X, hvor man f.eks. kan benytte
-<command>xf86config</command>, et tekstbaseret værktøj der kræver at
+<command>xf86config</command>, et tekstbaseret vÃ¦rktÃ¸j der krÃ¦ver at
 man ved en del om sin hardware, eller <command>XF86Setup</command> et
-grafisk program der måske virker lidt lettere at gå til.
+grafisk program der mÃ¥ske virker lidt lettere at gÃ¥ til.
 </para>
 
 <para>
-Andre programmer såsom IceWM, viser sig at komme pænt konfigurerede
+Andre programmer sÃ¥som IceWM, viser sig at komme pÃ¦nt konfigurerede
 med en menu med hvor DeLi Linux' programmer er indsat.
 </para>
 
 <para>
 Som standard giver <command>startx</command> tre
-<command>xterm</command>'er og en xclock kørende under
-<command>twm</command>, hvis man vil ændre på det skal man lave sig en
+<command>xterm</command>'er og en xclock kÃ¸rende under
+<command>twm</command>, hvis man vil Ã¦ndre pÃ¥ det skal man lave sig en
 <filename>.xinitrc</filename>-fil der indeholder de kommandoer man vil
-have udført. Følgende kan f.eks. bruges til at starte en enkelt
-<command>xterm</command> placeret i øverste venstre hjørne af skærmen
+have udfÃ¸rt. FÃ¸lgende kan f.eks. bruges til at starte en enkelt
+<command>xterm</command> placeret i Ã¸verste venstre hjÃ¸rne af skÃ¦rmen
 og <command>IceWM</command>: 
 <programlisting>
 xterm -geometry +2+2 &
@@ -240,10 +240,10 @@ icewm
 <title>Irritationsmomenter</title>
 
 <para>
-Da jeg generelt foretrækker swapfiler fremfor swappartitioner og fordi
-jeg vurderede at jeg med 96MB ram i testmaskinen ikke ville få behov
-for swap,  valgte jeg at undlade at bruge diskplads på en
-swappartition. Alligevel får jeg under opstart følgende
+Da jeg generelt foretrÃ¦kker swapfiler fremfor swappartitioner og fordi
+jeg vurderede at jeg med 96MB ram i testmaskinen ikke ville fÃ¥ behov
+for swap,  valgte jeg at undlade at bruge diskplads pÃ¥ en
+swappartition. Alligevel fÃ¥r jeg under opstart fÃ¸lgende
 fejlmeddelelse:
 <screen>
 swapon: /dev/hdb2: Device not configured
@@ -251,7 +251,7 @@ swapon: /dev/hdb2: Device not configured
 </para>
 
 <para>
-En anden fejlmeddelse man får under opstarten er:
+En anden fejlmeddelse man fÃ¥r under opstarten er:
 <screen>
 /sbin/ldconfig: warning: can't open /usr/lib/liba2ps.so.1 (No such file or direc
 tory), skipping
@@ -264,38 +264,38 @@ tory), skipping
 <title>DeLi Linux i brug</title>
 
 <figure id="deli_dillo" float="1">
-<title>Dillo kørende under DeLi Linux</title>
+<title>Dillo kÃ¸rende under DeLi Linux</title>
 <graphic fileref="deli_dillo1.&magic;"  scale="60"></graphic>
 </figure>
 
 <para>
-Der er ikke mange programmer at vælge mellem, men dem der er passer
-godt til små maskiner. Dillo havde ingen problemer med de hjemmesider
-jeg prøvede at besøge. Siag office består af to programmer Pathetic
+Der er ikke mange programmer at vÃ¦lge mellem, men dem der er passer
+godt til smÃ¥ maskiner. Dillo havde ingen problemer med de hjemmesider
+jeg prÃ¸vede at besÃ¸ge. Siag office bestÃ¥r af to programmer Pathetic
 writer og siag spreadsheet (regneark). Begge dele kan
-det mest nødvendige, men virker lidt klodsede.
+det mest nÃ¸dvendige, men virker lidt klodsede.
 </para>
 
 <figure id="deli_siag" float="1">
-<title>Siag Office kørende under DeLi Linux</title>
+<title>Siag Office kÃ¸rende under DeLi Linux</title>
 <graphic fileref="deli_siag.&magic;"  scale="60"></graphic>
 </figure>
 
 <para>
-Der er flere ting der gør DeLi Linux til en blandet fornøjelse
+Der er flere ting der gÃ¸r DeLi Linux til en blandet fornÃ¸jelse
 fra en systemadministrators synspunkt.
 </para>
 
 <para>
 Runlevel-begrebet er sat stort set ud af kraft. Det er
-<emphasis>det</emphasis> (for der er kun ét) samme skript der bliver
-kørt i runlevel 2,3,4 og 5.
+<emphasis>det</emphasis> (for der er kun Ã©t) samme skript der bliver
+kÃ¸rt i runlevel 2,3,4 og 5.
 </para>
 
 <para>
-På en helt ren installation kan man af uransaglige årsager finder
-opsætningsfiler til samba, NIS, NFS og flere andre ting der ikke
-er installeret. Ikke en ting jeg finder særligt betryggende. 
+PÃ¥ en helt ren installation kan man af uransaglige Ã¥rsager finder
+opsÃ¦tningsfiler til samba, NIS, NFS og flere andre ting der ikke
+er installeret. Ikke en ting jeg finder sÃ¦rligt betryggende. 
 </para>
 
 </sect1>
@@ -304,18 +304,18 @@ er installeret. Ikke en ting jeg finder særligt betryggende.
 <title>Konklusion</title>
 
 <para>
-DeLi Linux er en glimrende idé, men det trænger til en meget kærlig
-hånd, specielt installationsvejledningen og -programmet.
+DeLi Linux er en glimrende idÃ©, men det trÃ¦nger til en meget kÃ¦rlig
+hÃ¥nd, specielt installationsvejledningen og -programmet.
 </para>
 
 <para>
-Hvis man ved nok om Linux og diverse programmer til at få installeret
-og konfigureret DeLi Linux, vil jeg gætte på at man på den halve tid
-kunne have installeret de samme programmer på næsten enhver anden
-distribution, og dermed have opnået et resultat der kører ligeså godt
-på en gammel maskine. Den eneste fordel DeLi Linux således har frem
-for så mange andre distributioner er en installationsprogram der
-kræver mindre hardware.
+Hvis man ved nok om Linux og diverse programmer til at fÃ¥ installeret
+og konfigureret DeLi Linux, vil jeg gÃ¦tte pÃ¥ at man pÃ¥ den halve tid
+kunne have installeret de samme programmer pÃ¥ nÃ¦sten enhver anden
+distribution, og dermed have opnÃ¥et et resultat der kÃ¸rer ligesÃ¥ godt
+pÃ¥ en gammel maskine. Den eneste fordel DeLi Linux sÃ¥ledes har frem
+for sÃ¥ mange andre distributioner er en installationsprogram der
+krÃ¦ver mindre hardware.
 </para>
 
 </sect1>

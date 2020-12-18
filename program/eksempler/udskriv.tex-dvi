@@ -3,13 +3,13 @@
 %
 % TeX med uddata i DVI
 %
-% Programmet svarer ikke fuldstændigt til specifikationerne:
-% - Filnavnet kan ikke angives på kommandolinien, men skal tastes ind
-%   (en begrænsning i TeX)  
+% Programmet svarer ikke fuldstÃ¦ndigt til specifikationerne:
+% - Filnavnet kan ikke angives pÃ¥ kommandolinien, men skal tastes ind
+%   (en begrÃ¦nsning i TeX)  
 % - Programmet virker ikke hvis der noget i filen der kan opfattes som
-%   TeX-kode (doven programmør)
-% - Programmet venter ikke på at brugeren taster 'q' eller 'n' til slut
-%   (programmøren synes dette var latterligt når uddata alligevel var et
+%   TeX-kode (doven programmÃ¸r)
+% - Programmet venter ikke pÃ¥ at brugeren taster 'q' eller 'n' til slut
+%   (programmÃ¸ren synes dette var latterligt nÃ¥r uddata alligevel var et
 %   andet sted)
 %
 % Afvikles med: tex udskriv.tex-dvi

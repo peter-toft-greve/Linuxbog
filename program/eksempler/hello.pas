@@ -3,7 +3,7 @@
   af Michael Rasmussen <mir@miras.org>
   $Id$
 
-  Oversæt med: gpc hello.pas -o hello
+  OversÃ¦t med: gpc hello.pas -o hello
 
   Afvikling: ./hello
 }

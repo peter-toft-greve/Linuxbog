@@ -1,8 +1,8 @@
 /* floating point version af bogpris1 */
-/* til alle praktiske formål den fornuftigste version! */
-/* til teoretiske formål kan det være generende, at vi */
+/* til alle praktiske formÃ¥l den fornuftigste version! */
+/* til teoretiske formÃ¥l kan det vÃ¦re generende, at vi */
 /* ikke ved, om der gemmer sig nogle betydende decimaler */
-/* efter de første 6 */
+/* efter de fÃ¸rste 6 */
 
 main()
 {

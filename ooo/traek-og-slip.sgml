@@ -2,26 +2,26 @@
 <!-- formerly "writer19.html" -->
 
   <sect1>
-   <title>Flytte og kopiere med træk og slip</title>
+   <title>Flytte og kopiere med trÃ¦k og slip</title>
 
    <para>
-    Du kan kopiere og flytte tekst ved at <emphasis>trække og
+    Du kan kopiere og flytte tekst ved at <emphasis>trÃ¦kke og
     slippe</emphasis> med musen:
 
     <itemizedlist mark="bullet">
      <listitem>
-      <para>Flytning: Marker den tekst, der skal flyttes og træk med
+      <para>Flytning: Marker den tekst, der skal flyttes og trÃ¦k med
       musen til den nye position (hold venstre museknap
-      nede). Musemarkøren skifter udseende når der trækkes.</para>
+      nede). MusemarkÃ¸ren skifter udseende nÃ¥r der trÃ¦kkes.</para>
      </listitem>
 
      <listitem>
-      <para>Kopiering: Samme fremgangsmåde som flytning; blot skal du
-      holde <emphasis>Ctrl</emphasis> tasten nede. (Slip musen før
-      <emphasis>Ctrl</emphasis>-tasten).  Musemarkøren får et lille +
-      i hjørnet når du kopierer på denne måde.</para>
+      <para>Kopiering: Samme fremgangsmÃ¥de som flytning; blot skal du
+      holde <emphasis>Ctrl</emphasis> tasten nede. (Slip musen fÃ¸r
+      <emphasis>Ctrl</emphasis>-tasten).  MusemarkÃ¸ren fÃ¥r et lille +
+      i hjÃ¸rnet nÃ¥r du kopierer pÃ¥ denne mÃ¥de.</para>
      </listitem>
     </itemizedlist>
    </para>
-  </sect1>    <!--   5.6. Flytte og kopiere med træk og slip -->
+  </sect1>    <!--   5.6. Flytte og kopiere med trÃ¦k og slip -->
 

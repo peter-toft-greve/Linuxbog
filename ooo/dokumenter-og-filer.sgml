@@ -5,23 +5,23 @@
 <chapter id="ooo-dokument-og-filer">
   <title>Dokumenter og filer</title>
 
-<para>Dette kapitel fortæller om, hvordan du administrerer dine dokumenter
-    på harddisken.</para>
+<para>Dette kapitel fortÃ¦ller om, hvordan du administrerer dine dokumenter
+    pÃ¥ harddisken.</para>
 
     
 <sect1 id="ooo-dokumenter-og-filer-nyt">
   <title>Starte et nyt dokument</title>
 
 <para>Du starter et nyt dokument med <emphasis>Filer/Ny(t)</emphasis>. I undermenuen skal
-    du vælge dokumentets type, f.eks. <emphasis>Tekstdokument, Regneark,
+    du vÃ¦lge dokumentets type, f.eks. <emphasis>Tekstdokument, Regneark,
     Presentation, Tegning</emphasis> eller <emphasis>HTML-dokument</emphasis>.</para>
 
-<para>Du kan have flere dokumenter åbne samtidigt, også af forskellige
+<para>Du kan have flere dokumenter Ã¥bne samtidigt, ogsÃ¥ af forskellige
     typer. Hvert dokument har en knap i windows proceslinje. For at skifte
-    til et dokument skal du blot trykke på den tilsvarende knap.</para>
+    til et dokument skal du blot trykke pÃ¥ den tilsvarende knap.</para>
 
-<para>Imens du arbejder med et dokument kan du åbne (lave) et nyt i writer
-    med <emphasis>Ctrl-N</emphasis> på tastaturet.</para>
+<para>Imens du arbejder med et dokument kan du Ã¥bne (lave) et nyt i writer
+    med <emphasis>Ctrl-N</emphasis> pÃ¥ tastaturet.</para>
 
  </sect1>    <!--   3.1. Starte et nyt dokument -->
 

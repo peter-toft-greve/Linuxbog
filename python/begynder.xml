@@ -14,43 +14,43 @@ udvikling af internet og webbaserede programmer.
 </para>
 
 <para>
-Dets udvikling begyndte  i det sene efterår i 1989. I foråret 1991 blev
-Python almindelig tilgængelig.
+Dets udvikling begyndte  i det sene efterÃ¥r i 1989. I forÃ¥ret 1991 blev
+Python almindelig tilgÃ¦ngelig.
 <!-- Wange:
-     Her ville det være rigtig lækkert med en reference til Pythons
-     list rodede historie der fortæller om bl.a. licensen der ikke
-     altid har været fri.
+     Her ville det vÃ¦re rigtig lÃ¦kkert med en reference til Pythons
+     list rodede historie der fortÃ¦ller om bl.a. licensen der ikke
+     altid har vÃ¦ret fri.
 -->
    
 </para>
 
 <para>
-Den første bog overhovedet om sproget udkom i begyndelsen af 1996.
-Herværende bog er mig bekendt den første på dansk og på de skandinaviske
-sprog i det hele taget. I 1999 regnede en ledende industriobservatør med
-at der var omkring 300.000, der brugte Python. Det tal må skønnes at
-være meget større i dag.
+Den fÃ¸rste bog overhovedet om sproget udkom i begyndelsen af 1996.
+HervÃ¦rende bog er mig bekendt den fÃ¸rste pÃ¥ dansk og pÃ¥ de skandinaviske
+sprog i det hele taget. I 1999 regnede en ledende industriobservatÃ¸r med
+at der var omkring 300.000, der brugte Python. Det tal mÃ¥ skÃ¸nnes at
+vÃ¦re meget stÃ¸rre i dag.
 </para>
 
 <para>
 Bl.a. er man meget hurtig til at frigive eventuelle rettelser, ligesom
-det er særdeles let at få besvaret spørgsmål, såfremt man mener at have
-konstateret fejl i sproget. Fejl der meget let kan vise sig at være
+det er sÃ¦rdeles let at fÃ¥ besvaret spÃ¸rgsmÃ¥l, sÃ¥fremt man mener at have
+konstateret fejl i sproget. Fejl der meget let kan vise sig at vÃ¦re
 reelle forbedringer i forbindelse med overgangen til bl.a. unicode (de
-større tegntabeller).
+stÃ¸rre tegntabeller).
 </para>
 
 <para>
-Jeg nævner dette allerede her, fordi der kan være meget stor forskel på,
-hvordan koden skulle skrives før version 2.2 og efter. Der kom nemlig en
+Jeg nÃ¦vner dette allerede her, fordi der kan vÃ¦re meget stor forskel pÃ¥,
+hvordan koden skulle skrives fÃ¸r version 2.2 og efter. Der kom nemlig en
 meget stor forbedring af sproget. I skrivende stund er det vist mere end
-svært at finde større fejl, selv behandlingen af de dansk/norske
-specialtegn er kommet næsten på plads.
+svÃ¦rt at finde stÃ¸rre fejl, selv behandlingen af de dansk/norske
+specialtegn er kommet nÃ¦sten pÃ¥ plads.
 </para>
 
 <para>
-Med version 2.3 skulle Python nu kunne håndtere 64 bits tegn - i den
-første ASCII tegntabel kunne et tegn, en karakters nummer være op til 8
+Med version 2.3 skulle Python nu kunne hÃ¥ndtere 64 bits tegn - i den
+fÃ¸rste ASCII tegntabel kunne et tegn, en karakters nummer vÃ¦re op til 8
 bit lang. Fra og med Python version 2.4 vil Python droppe 8 bits
 tegntabellen totalt.
 </para>
@@ -60,9 +60,9 @@ tegntabellen totalt.
 <title>Hvorfor bruge Python?</title>
 
 <para>
-Hvorfor i al verden skulle man interessere sig for Python, når der i
+Hvorfor i al verden skulle man interessere sig for Python, nÃ¥r der i
 forvejen er en lang stribe af rigtig gode gamle og velfungerende
-computersprog at gå til? Lad mig som eksempler nævne:
+computersprog at gÃ¥ til? Lad mig som eksempler nÃ¦vne:
 </para>
 
 <orderedlist>
@@ -82,23 +82,23 @@ Linux til Windows og omvendt.
 
 <listitem>
 <para>
-Er meget let at lære - også for begyndere indenfor brugen af
+Er meget let at lÃ¦re - ogsÃ¥ for begyndere indenfor brugen af
 computersprog i det hele taget.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Python kombinerer bemærkelsesværdig styrke med en meget klar syntaks
-(læs: måde at gøre tingene på).
+Python kombinerer bemÃ¦rkelsesvÃ¦rdig styrke med en meget klar syntaks
+(lÃ¦s: mÃ¥de at gÃ¸re tingene pÃ¥).
 </para>
 </listitem>
 
 <listitem>
 <para>
-I Python kan du lære objekt-orienteret programmering (programmering og
-anvendelse af vinduer, knapper og den slags) uden af forstå mange af de
-komplekse detaljer forinden. Senere kan du så om ønsket sætte dig ind i
+I Python kan du lÃ¦re objekt-orienteret programmering (programmering og
+anvendelse af vinduer, knapper og den slags) uden af forstÃ¥ mange af de
+komplekse detaljer forinden. Senere kan du sÃ¥ om Ã¸nsket sÃ¦tte dig ind i
 teknikken bag konstruktionen.
 </para>
 </listitem>
@@ -106,17 +106,17 @@ teknikken bag konstruktionen.
 <listitem>
 <para>
 <!-- Wange:
-     Jeg synes måske ikke vi skal have så store eksempler ind på så
+     Jeg synes mÃ¥ske ikke vi skal have sÃ¥ store eksempler ind pÃ¥ sÃ¥
      tidligt et tidspunkt ?
      Det er en lidt uoverskuelig punkt-liste der er kommet ud af det
      i hver fald.
 -->
 Python er et begyndervenligt computersprog, der automatisk styrer mange
-af de komplekse detalier, der foregår bag scenen. Det gør det muligt
-for dig at bruge kræfterne på de overordnede ting i dit projekt uden at
-skulle grave i dybden for hvert eneste skridt. Lad os også her foregribe
-begivenhederne lidt og se følgende eksempel, der nok også kan
-interessere den erfarne Java, C++ eller Delphi programmør.
+af de komplekse detalier, der foregÃ¥r bag scenen. Det gÃ¸r det muligt
+for dig at bruge krÃ¦fterne pÃ¥ de overordnede ting i dit projekt uden at
+skulle grave i dybden for hvert eneste skridt. Lad os ogsÃ¥ her foregribe
+begivenhederne lidt og se fÃ¸lgende eksempel, der nok ogsÃ¥ kan
+interessere den erfarne Java, C++ eller Delphi programmÃ¸r.
 </para>
 <para>
 <screen>
@@ -125,12 +125,12 @@ interessere den erfarne Java, C++ eller Delphi programmør.
 </screen>
 </para>
 <para>
-Egentlig burde der nok have været 1 programlinje mere i det viste
-eksempel. Den skulle i så fald hedde widget.pack()
-Funktionen pack() stiller objektets bestanddele på plads på
-udskriftsenheden (skærmen). Men i dette tilfælde er der ikke noget at
-stille på plads, så de 2 programlinjer er tilstrækkelige. Du kan lave
-nøjagtig samme vindue med:
+Egentlig burde der nok have vÃ¦ret 1 programlinje mere i det viste
+eksempel. Den skulle i sÃ¥ fald hedde widget.pack()
+Funktionen pack() stiller objektets bestanddele pÃ¥ plads pÃ¥
+udskriftsenheden (skÃ¦rmen). Men i dette tilfÃ¦lde er der ikke noget at
+stille pÃ¥ plads, sÃ¥ de 2 programlinjer er tilstrÃ¦kkelige. Du kan lave
+nÃ¸jagtig samme vindue med:
 </para>
 <para>
 med Entry:
@@ -139,7 +139,7 @@ med Entry:
 <prompt>>>></prompt> <userinput>barn = Entry()</userinput>
 <prompt>>>></prompt> <userinput>barn.pack()</userinput>
 </screen>
-eller med Text (og en lang række andre objekter):
+eller med Text (og en lang rÃ¦kke andre objekter):
 <screen>
 <prompt>>>></prompt> <userinput>from Tkinter import Text</userinput>
 <prompt>>>></prompt> <userinput>barn = Text()</userinput>
@@ -150,63 +150,63 @@ eller med Text (og en lang række andre objekter):
 </screen>
 </para>
 <para>
-Læg allerede her mærke til forskellen på 2 ting. 1: Det du formentlig
+LÃ¦g allerede her mÃ¦rke til forskellen pÃ¥ 2 ting. 1: Det du formentlig
 havde forventet from Tkinter import Frame er blevet til from Tkinter
-import * (her sker det for at kunne udnytte parameterværdierne i pack)
-og 2: funktionen barn.pack() er blevet flyttet til Frame() og har fået
+import * (her sker det for at kunne udnytte parametervÃ¦rdierne i pack)
+og 2: funktionen barn.pack() er blevet flyttet til Frame() og har fÃ¥et
 2 parametre (argumenter). Det sker for at give Frame arvingen barn
-mulighed for at kunne udvides (sker med expand = YES) og det i både
+mulighed for at kunne udvides (sker med expand = YES) og det i bÃ¥de
 vandret og lodret retning eller med andre ord til at kunne udfylde hele
-skærmen. Frame objektet er en kontainer, hvori alle andre grafiske
-objekter som tekstbokse, knapper, labels og mange andre kan indsættes.
-Dem er der jo ingen af i eksemplet her, så Frame().pack(expand = YES,
-fill = BOTH) virker helt på samme måde, som når du klikker på knappen
-længst til venstre i vinduets øverste højre hjørne. Den får vinduet til
-at klappe sammen til dets mindst mulige størrelse. expand = YES giver
+skÃ¦rmen. Frame objektet er en kontainer, hvori alle andre grafiske
+objekter som tekstbokse, knapper, labels og mange andre kan indsÃ¦ttes.
+Dem er der jo ingen af i eksemplet her, sÃ¥ Frame().pack(expand = YES,
+fill = BOTH) virker helt pÃ¥ samme mÃ¥de, som nÃ¥r du klikker pÃ¥ knappen
+lÃ¦ngst til venstre i vinduets Ã¸verste hÃ¸jre hjÃ¸rne. Den fÃ¥r vinduet til
+at klappe sammen til dets mindst mulige stÃ¸rrelse. expand = YES giver
 rammen (the frame - kontaineren)  mulighed for at kunne udvides efter
-behov, men her der ikke behov (der skal ikke sættes andre komponenter
-ind i kontaineren). Hvis der senere sættes et eller flere af den nævnte
+behov, men her der ikke behov (der skal ikke sÃ¦ttes andre komponenter
+ind i kontaineren). Hvis der senere sÃ¦ttes et eller flere af den nÃ¦vnte
 og tilsvarende objekter ind i rammen (the Frame), vil den blive udvidet
-efter behov lige så længe der er plads til objekterne i det givne
-skærmareal. Er der ikke det, vil objekterne ganske enkelt ikke blive
+efter behov lige sÃ¥ lÃ¦nge der er plads til objekterne i det givne
+skÃ¦rmareal. Er der ikke det, vil objekterne ganske enkelt ikke blive
 viste.
 </para>
 
 <figure id="vinduer-figur" float="1">
-<title>Eksempel på vinduer</title> 
+<title>Eksempel pÃ¥ vinduer</title> 
 <graphic fileref="vinduer.&magic;" scale="60"></graphic> 
 </figure>
 
 <para>
-Naturligvis har de to vinduer nøjagtig de samme åbne/lukke muligheder
+Naturligvis har de to vinduer nÃ¸jagtig de samme Ã¥bne/lukke muligheder
 m.v. som du kender dem fra f.eks. internet browsere i Windows. Det kan
-da kaldes objektorienteret programmering, så det forslår. Alle vinduer,
-knapper og andre normale objekter er forprogrammerede, så du direkte
-kan bruge dem og selvfølgelig tilpasse dem efter dit behov i det givne
-øjeblik. I C++ skal du skrive masser af programlinjer for at opnå det
-tilsvarende. Det er i øvrigt meget let at integrere Python og C++ i
+da kaldes objektorienteret programmering, sÃ¥ det forslÃ¥r. Alle vinduer,
+knapper og andre normale objekter er forprogrammerede, sÃ¥ du direkte
+kan bruge dem og selvfÃ¸lgelig tilpasse dem efter dit behov i det givne
+Ã¸jeblik. I C++ skal du skrive masser af programlinjer for at opnÃ¥ det
+tilsvarende. Det er i Ã¸vrigt meget let at integrere Python og C++ i
 hinanden.
 </para>
 <para>
 Noget af det fornemmeste ved OOP (objekt orienteret programmering) er
 genbrugen. Med de tre viste eksempler har du allerede set, at Python
-har fremragende egenskaber også på dette område, for naturligvis kan
-koden til et fuld færdigt vindue umuligt samles og udføres i de 2-3
-programlinjer, det enkelte eksempel indeholder. Der skal mange gange så
-megen koden til. Hvis ikke Python besad evnen til genbrug, så skulle det
-meget store program, der skal til for at oprette det fuldt færdige
-vindue udvikles hver eneste gang, vinduet skulle bruges - altså 3 gange
-alene til de viste eksempler. Det ville blive kæmpeprogrammer, der i
-virkeligheden ville være næsten uanvendelige grundet det enorme omfang.
-Koden til det viste eksempel og til en række andre er indeholdt i Widget
+har fremragende egenskaber ogsÃ¥ pÃ¥ dette omrÃ¥de, for naturligvis kan
+koden til et fuld fÃ¦rdigt vindue umuligt samles og udfÃ¸res i de 2-3
+programlinjer, det enkelte eksempel indeholder. Der skal mange gange sÃ¥
+megen koden til. Hvis ikke Python besad evnen til genbrug, sÃ¥ skulle det
+meget store program, der skal til for at oprette det fuldt fÃ¦rdige
+vindue udvikles hver eneste gang, vinduet skulle bruges - altsÃ¥ 3 gange
+alene til de viste eksempler. Det ville blive kÃ¦mpeprogrammer, der i
+virkeligheden ville vÃ¦re nÃ¦sten uanvendelige grundet det enorme omfang.
+Koden til det viste eksempel og til en rÃ¦kke andre er indeholdt i Widget
 klassen. Label, Entry, Text og Frame er alle subklasser i Widget.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Python er rygraden i Jython. Det betyder, at en større eller mindre
-del at et Jython program er og fortsat vil være Python. I Jython er det
+Python er rygraden i Jython. Det betyder, at en stÃ¸rre eller mindre
+del at et Jython program er og fortsat vil vÃ¦re Python. I Jython er det
 ofte lettere at udvikle eksempelvis Java applets end det er i selve
 Java. Applets kan bruges som integrerede dele af HTML, XHTML, XML
 sprogene til hjemmesider.
@@ -215,15 +215,15 @@ sprogene til hjemmesider.
 
 <listitem>
 <para>
-I Linux taler man ofte om hele programpakken med de førnævnte
+I Linux taler man ofte om hele programpakken med de fÃ¸rnÃ¦vnte
 programpakker som Linux. Det er forkert. Linux er kernen
-(centralenheden/det styrende program. I Python er der også en kerne.
-Den er lille, hvilket den også bør være. Til denne styrende enhed er der
-et meget stort bibliotek (library). Det betyder, at meget af det, du får
-brug for, allerede er udviklet og testet for dig. Din opgave vil være at
-skrive den kode, der kombinerer nævnte biblioteks komponenter og udvikle
-nye egenskaber efterhånden som der bliver brug for det, men du kan i høj
-grad også selv udvide Python med  dine egne funktioner (metoder),
+(centralenheden/det styrende program. I Python er der ogsÃ¥ en kerne.
+Den er lille, hvilket den ogsÃ¥ bÃ¸r vÃ¦re. Til denne styrende enhed er der
+et meget stort bibliotek (library). Det betyder, at meget af det, du fÃ¥r
+brug for, allerede er udviklet og testet for dig. Din opgave vil vÃ¦re at
+skrive den kode, der kombinerer nÃ¦vnte biblioteks komponenter og udvikle
+nye egenskaber efterhÃ¥nden som der bliver brug for det, men du kan i hÃ¸j
+grad ogsÃ¥ selv udvide Python med  dine egne funktioner (metoder),
 klasser, moduler m.v.
 </para>
 </listitem>
@@ -231,24 +231,24 @@ klasser, moduler m.v.
 </sect1>
 
 <sect1 id="pythonbog-pris">
-<title>Hvad koster Python, og hvor får jeg det fra?</title>
+<title>Hvad koster Python, og hvor fÃ¥r jeg det fra?</title>
 
 <para>
-Python er gratis og tilgængelig for langt de fleste styresystemer.
-Har du ikke den nyeste version, kan du altid hente den på 
+Python er gratis og tilgÃ¦ngelig for langt de fleste styresystemer.
+Har du ikke den nyeste version, kan du altid hente den pÃ¥ 
 <ulink url="http://www.python.org">http://www.python.org</ulink>.
-Det er særdeles let at installere Python, hvis sproget ikke allerede er
-installeret på din computer. Det er det dog normalt hvis du bruger SuSE,
+Det er sÃ¦rdeles let at installere Python, hvis sproget ikke allerede er
+installeret pÃ¥ din computer. Det er det dog normalt hvis du bruger SuSE,
 RedHat eller Mandrake.
 </para>
 
 <para>
-Der er en meget stor udvikling af Python i gang. Alene de ca. 3 måneder,
-det har taget mig at skrive herværende bog, er der kommet 2 fulde
+Der er en meget stor udvikling af Python i gang. Alene de ca. 3 mÃ¥neder,
+det har taget mig at skrive hervÃ¦rende bog, er der kommet 2 fulde
 opdateringer af sproget (de udkomne versioner er 2.2 og 2.3). Men ikke
-alene det, der kommer også opdateringer til sidstnævnte, uden at
-versionsnavnet ændres. Lige nu den 26. januar 2004 er version 2.3.3
-den aktuelle. I version 2.4 skulle der ske ret store ændringer, så
+alene det, der kommer ogsÃ¥ opdateringer til sidstnÃ¦vnte, uden at
+versionsnavnet Ã¦ndres. Lige nu den 26. januar 2004 er version 2.3.3
+den aktuelle. I version 2.4 skulle der ske ret store Ã¦ndringer, sÃ¥
 Python kan endnu mere (bl.a. behandle 64 bits karakterkode).
 </para>
 </sect1>
@@ -257,20 +257,20 @@ Python kan endnu mere (bl.a. behandle 64 bits karakterkode).
 <title>Guide til Python dokumentation</title>
 
 <para>
-Hvis man er helt ny udi programmering kan det være svært at forstå
+Hvis man er helt ny udi programmering kan det vÃ¦re svÃ¦rt at forstÃ¥
 hvordan dokumentationen af et programmeringssprog er skruet sammen. Men
-når man først kan gennemskue det, er det tit og ofte meget nemmere at
-hente hjælp i dokumentationen af sproget end at skulle spørge om hjælp
-til en specifik funktion på en mailing-liste.
+nÃ¥r man fÃ¸rst kan gennemskue det, er det tit og ofte meget nemmere at
+hente hjÃ¦lp i dokumentationen af sproget end at skulle spÃ¸rge om hjÃ¦lp
+til en specifik funktion pÃ¥ en mailing-liste.
 </para>
 
 <para>
-Dokumentation til python kan du finde online på adressen: <ulink
+Dokumentation til python kan du finde online pÃ¥ adressen: <ulink
 url="http://www.python.org/doc/">http://www.python.org/doc/</ulink>.
 Her kan du desuden finde guides og HowTo'er til diverse emner.
 Dokumentationen er delt op i 7 kategorier: Modul oversigt, tutorial,
 biblioteks reference, Macintosh reference, sprog reference, udvidelser
-af sproget og et Python/C API. Forklaring på kategorierne:
+af sproget og et Python/C API. Forklaring pÃ¥ kategorierne:
 </para>
 
 <itemizedlist mark="bullet">
@@ -285,7 +285,7 @@ desuden dokumentation af det.
 <listitem>
 <para>
 <command>Tutorial</command> - Her finder du en gennemgribende tutorial
-på den mest basale brug af Python. Et godt sted at starte hvis man i
+pÃ¥ den mest basale brug af Python. Et godt sted at starte hvis man i
 forvejen kan programmere, men bare ikke kender Python.
 </para>
 </listitem>
@@ -294,7 +294,7 @@ forvejen kan programmere, men bare ikke kender Python.
 <para>
 <command>Biblioteks reference (Library reference)</command> - En
 gennemgang af de mest brugte biblioteker i Python samt mere
-gennemgribende eksempler på brug end du finder i modul oversigten.
+gennemgribende eksempler pÃ¥ brug end du finder i modul oversigten.
 </para>
 </listitem>
 
@@ -323,7 +323,7 @@ andre applikationer m.m.
 <listitem>
 <para>
 <command>Python/C API</command> - En gennemgang af et C API til Python,
-der lader C programmører bruge Python i deres applikationer.
+der lader C programmÃ¸rer bruge Python i deres applikationer.
 </para>
 </listitem>
 </itemizedlist>

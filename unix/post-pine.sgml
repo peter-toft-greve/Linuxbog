@@ -15,24 +15,24 @@
 
   <para>
    Pine er et tekstbaseret postprogram.  Det er ikke rigtig Open Source, men
-   man kan få kildeteksten til programmet og det fungerer på de fleste
+   man kan fÃ¥ kildeteksten til programmet og det fungerer pÃ¥ de fleste
    <!-- alle? --> Unix-systemer.
    ...
   </para>
 
   <para>
-   Pine er et af de gode programmer til at læse og håndtere e-post.
-   Let håndtering af flere postkasser, en lille og god indbygget
-   teksteditor (<command>pico</command>), søgemuligheder, mulighed
+   Pine er et af de gode programmer til at lÃ¦se og hÃ¥ndtere e-post.
+   Let hÃ¥ndtering af flere postkasser, en lille og god indbygget
+   teksteditor (<command>pico</command>), sÃ¸gemuligheder, mulighed
    for at se HTML-formaterede breve og et utal af
-   opsætningsmuligheder gør Pine til et hit.
+   opsÃ¦tningsmuligheder gÃ¸r Pine til et hit.
   </para>
 
   <para>
    I den version af Pine som kommer med Red Hat er der endda
    muligheder for at definere roller (bl.a. med forskellige
-   email-signaturfiler) og farveopsætning. Som det ses på de følgende
-   billeder kan man få forskellige farver på hvert svar-niveau.
+   email-signaturfiler) og farveopsÃ¦tning. Som det ses pÃ¥ de fÃ¸lgende
+   billeder kan man fÃ¥ forskellige farver pÃ¥ hvert svar-niveau.
   </para>
 
   <figure id="pine2-fig" float="1">
@@ -41,7 +41,7 @@
   </figure>
 
   <para>
-   En egentlig vejledning til pine er at finde på <ulink
+   En egentlig vejledning til pine er at finde pÃ¥ <ulink
    url="http://www.washington.edu/pine/tutorial.4/index.html">http://www.washington.edu/pine/tutorial.4/index.html</ulink>
   </para>
 
@@ -61,19 +61,19 @@
     </indexterm>
 
     <para>
-     <emphasis>Tip:</emphasis> Når du er i gang med at redigere et
-     brev har du mulighed for at få det tjekket for stavefejl. Når du
+     <emphasis>Tip:</emphasis> NÃ¥r du er i gang med at redigere et
+     brev har du mulighed for at fÃ¥ det tjekket for stavefejl. NÃ¥r du
      taster <keysym>Ctrl-T</keysym> starter Pine det
      stavekontrolprogram det er sat op til at bruge. Normalt vil det
-     være Ispell med en engelsk ordbog. Hvis du skriver breve på flere
-     sprog kan det være lidt irriterende med Pines en-sprogede
+     vÃ¦re Ispell med en engelsk ordbog. Hvis du skriver breve pÃ¥ flere
+     sprog kan det vÃ¦re lidt irriterende med Pines en-sprogede
      stavekontrol. Programmet <ulink
      url="http://&linuxbogurl;/unix/eksempler/pine-spell"><command>pine-spell</command></ulink>,
-     der kommer med som et af bogens eksempler, er et forsøg på at
-     rette op på dette problem. Hvis du installerer det på dit
-     unix-system og sætter Pine til at bruge det, vil du få mulighed
-     for at vælge mellem alle de sprog der er ordlister til på
-     systemet, når du taster <keysym>Ctrl-T</keysym>. Du skal have
+     der kommer med som et af bogens eksempler, er et forsÃ¸g pÃ¥ at
+     rette op pÃ¥ dette problem. Hvis du installerer det pÃ¥ dit
+     unix-system og sÃ¦tter Pine til at bruge det, vil du fÃ¥ mulighed
+     for at vÃ¦lge mellem alle de sprog der er ordlister til pÃ¥
+     systemet, nÃ¥r du taster <keysym>Ctrl-T</keysym>. Du skal have
      installeret <filename>aspell-da-*.rpm</filename> ud over pine
      selv.
     </para>
@@ -90,56 +90,56 @@ O.k.
 <prompt>tyge@hven ~/&gt; </prompt><userinput>chmod a+x ~/bin/pine-spell</userinput>
 </screen>
 
-     Hvis der ikke kommer et "O.k." gik noget galt. Så bliver du nødt
-     til at køre kommandoen uden tilvalget <option>-q</option>, så der
+     Hvis der ikke kommer et "O.k." gik noget galt. SÃ¥ bliver du nÃ¸dt
+     til at kÃ¸re kommandoen uden tilvalget <option>-q</option>, sÃ¥ der
      kommer lidt information om hvad der sker.
     </para>
 
     <para>
-     Vi går nu ud fra at <command>pine-spell</command> er installeret
-     i dit eget programkatalog og du har startet Pine. For at sætte
-     Pine op skal du først ud i hovedmenuen. Hvis du ikke allerede er
-     der, så tast <keysym>M</keysym> for at komme der ud. Her taster
-     du så <keysym>S</keysym> efterfulgt af <keysym>C</keysym> for at
-     komme ind i opsætningen. Du skal finde feltet "speller" (prøv
+     Vi gÃ¥r nu ud fra at <command>pine-spell</command> er installeret
+     i dit eget programkatalog og du har startet Pine. For at sÃ¦tte
+     Pine op skal du fÃ¸rst ud i hovedmenuen. Hvis du ikke allerede er
+     der, sÃ¥ tast <keysym>M</keysym> for at komme der ud. Her taster
+     du sÃ¥ <keysym>S</keysym> efterfulgt af <keysym>C</keysym> for at
+     komme ind i opsÃ¦tningen. Du skal finde feltet "speller" (prÃ¸v
      <keysym>W</keysym> efterfulgt af "speller" og et linjeskift) og
-     ændre det til "<filename>~/bin/pine-spell</filename>". Når det er
+     Ã¦ndre det til "<filename>~/bin/pine-spell</filename>". NÃ¥r det er
      gjort taster du <keysym>E</keysym> efterfulgt af
-     <keysym>Y</keysym> for at gemme ændringen. Næste gang du har
-     skrevet et brev og vil undersøge om der er stavefejl i det, så
+     <keysym>Y</keysym> for at gemme Ã¦ndringen. NÃ¦ste gang du har
+     skrevet et brev og vil undersÃ¸ge om der er stavefejl i det, sÃ¥
      taster du blot <keysym>Ctrl-T</keysym> inden du sender det.
     </para>
    </sect2>
 
    <sect2 id="pine-soege">
-    <title>Søgning med Pine</title>
+    <title>SÃ¸gning med Pine</title>
 
     <indexterm>
-     <primary>søgning i Pine</primary>
+     <primary>sÃ¸gning i Pine</primary>
     </indexterm>
     <indexterm>
      <primary>Pine</primary>
-     <secondary>søgning i</secondary>
+     <secondary>sÃ¸gning i</secondary>
     </indexterm>
 
     <para>
-     Du kan lave meget avancerede søgninger i dine e-post-foldere. For
-     at få dette valgt, skal du fra hovedmenuen trykke <command>s c w
-     agg</command> og afslutte med retur-tasten. Du bør nu stå på et
-     af de mange felter i opsætningen, hvor der står
+     Du kan lave meget avancerede sÃ¸gninger i dine e-post-foldere. For
+     at fÃ¥ dette valgt, skal du fra hovedmenuen trykke <command>s c w
+     agg</command> og afslutte med retur-tasten. Du bÃ¸r nu stÃ¥ pÃ¥ et
+     af de mange felter i opsÃ¦tningen, hvor der stÃ¥r
      "enable-aggregate-command-set". Tryk <command>x</command> for at
-     vælge, <command>e</command> for exit og bekræft med
-     <command>y</command>.  Som et eksempel kan vi nu gå ned i en
-     e-post-folder og finde e-post, hvor ordet Andeby er nævnt et
-     vilkårligt sted. Når du er i e-post-folderen trykker du
+     vÃ¦lge, <command>e</command> for exit og bekrÃ¦ft med
+     <command>y</command>.  Som et eksempel kan vi nu gÃ¥ ned i en
+     e-post-folder og finde e-post, hvor ordet Andeby er nÃ¦vnt et
+     vilkÃ¥rligt sted. NÃ¥r du er i e-post-folderen trykker du
      <command>;</command>, derefter har du en del forskellige
-     valgmuligheder &ndash; vi vælger <command>t</command> for tekstsøgning.
-     Igen har vi en del muligheder og da vi vil søge i alle dele af
-     posten vælger vi <command>a</command>. Nu skrives søgestrengen
+     valgmuligheder &ndash; vi vÃ¦lger <command>t</command> for tekstsÃ¸gning.
+     Igen har vi en del muligheder og da vi vil sÃ¸ge i alle dele af
+     posten vÃ¦lger vi <command>a</command>. Nu skrives sÃ¸gestrengen
      <filename>Andeby</filename> ind og du kan nu med
      <command>z</command> skifte mellem alt post og kun dem, der netop
-     indeholder Andeby. Får man disse kommandoer lært kan man virkelig
-     søge hurtigt og effektivt.
+     indeholder Andeby. FÃ¥r man disse kommandoer lÃ¦rt kan man virkelig
+     sÃ¸ge hurtigt og effektivt.
     </para>
    </sect2>
 
@@ -159,20 +159,20 @@ O.k.
     </indexterm>
     <indexterm>
      <primary>Pine</primary>
-     <secondary>sætte afsenderadresse</secondary>
+     <secondary>sÃ¦tte afsenderadresse</secondary>
     </indexterm>
 
     <para>
-     Nogle personer sidder ikke på den maskine man ønsker e-post sendt
-     tilbage til, og man har derfor brug for at sætte sin
+     Nogle personer sidder ikke pÃ¥ den maskine man Ã¸nsker e-post sendt
+     tilbage til, og man har derfor brug for at sÃ¦tte sin
      afsender-e-post-adresse til eksakt det man vil have. Fra
      hovedmenuen kan vi trykke <command>s</command> (for setup),
      <command>c</command> (for config), <command>w
-     customized-hdrs</command> og afslutte med retur. Du er nu på
+     customized-hdrs</command> og afslutte med retur. Du er nu pÃ¥
      <filename>customized-hdrs</filename>-feltet. Skriv
      <filename>From: Tyge &lt;tyge@sslug.dk&gt;</filename>, hvis
-     e-post skal komme fra "Tyge &lt;tyge@sslug.dk&gt;". Du skal også
-     sætte <filename>feature-list=allow-changing-from</filename>
+     e-post skal komme fra "Tyge &lt;tyge@sslug.dk&gt;". Du skal ogsÃ¥
+     sÃ¦tte <filename>feature-list=allow-changing-from</filename>
      manuelt i <filename>~/.pinerc</filename>.
     </para>
 
@@ -180,24 +180,24 @@ O.k.
      En anden smart mulighed i Pine er muligheden for at definere
      roller &ndash; dvs. at man kan have en afsender-adresse og signatur-fil
      for hver identitet man har defineret &ndash; f.eks. en privat hhv. en
-     firma-identitet.  Vælg først
+     firma-identitet.  VÃ¦lg fÃ¸rst
 
-Vælg <emphasis>m</emphasis>(ain menu)
+VÃ¦lg <emphasis>m</emphasis>(ain menu)
 <emphasis>s</emphasis>(setup) <emphasis>c</emphasis>(config)
 <emphasis>w</emphasis>(word to find)
-<emphasis>confirm-role</emphasis>. Sæt kryds i
-<emphasis>confirm-role-even-for-default</emphasis> (med x) og vælg e
-og Yes. Vælg
+<emphasis>confirm-role</emphasis>. SÃ¦t kryds i
+<emphasis>confirm-role-even-for-default</emphasis> (med x) og vÃ¦lg e
+og Yes. VÃ¦lg
 <emphasis>s</emphasis>(setup) <emphasis>r</emphasis>(rules)
 <emphasis>r</emphasis>(roles) <emphasis>a</emphasis>(add). Derefter
-kommer man ind i en menu for en af roller man kan definere. Sæt følgende
+kommer man ind i en menu for en af roller man kan definere. SÃ¦t fÃ¸lgende
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
 Nickname : Skriv et navn her for den identitet man definerer &ndash; f.eks. fornavn, 
-loginnavn, privat, eller lignende. Det er dette "Nickname" man vælger for hver
+loginnavn, privat, eller lignende. Det er dette "Nickname" man vÃ¦lger for hver
 e-post der skal sendes.
  </para>
 </listitem>
@@ -215,28 +215,28 @@ Sender pattern : Skriv her din email-adresse &ndash; f.eks. tyge@sslug.dk
 <listitem> 
  <para>
 Set Signature : Her kan man skrive filnavnet som indeholder signaturfil for
-den nuværende identitet. Anføres ikke fuld sti vil filnavnet være i forhold
+den nuvÃ¦rende identitet. AnfÃ¸res ikke fuld sti vil filnavnet vÃ¦re i forhold
 til brugerens hjemmekatalog. F.eks. .signaturfil
  </para>
 </listitem>
 <listitem> 
  <para>
-Set From : Sættes som "From pattern" &ndash; f.eks. 
+Set From : SÃ¦ttes som "From pattern" &ndash; f.eks. 
 Tyge Brahe &lt;tyge@sslug.dk&gt;
  </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Tryk <emphasis>e</emphasis> (Exit Setup) når du er færdig og
+Tryk <emphasis>e</emphasis> (Exit Setup) nÃ¥r du er fÃ¦rdig og
 <emphasis>a</emphasis> for at addere hver af de roller du vil
 definere. Endelig trykkes <emphasis>e</emphasis> (Exit Setup) og
 <emphasis>y</emphasis> til at acceptere at der laves "Commit changes". 
 </para>
 
 <para>
-Når man derefter vil sende eller svare på e-post med
-<emphasis>c</emphasis> (compose) får man en ekstra menu i bunden af Pine:
+NÃ¥r man derefter vil sende eller svare pÃ¥ e-post med
+<emphasis>c</emphasis> (compose) fÃ¥r man en ekstra menu i bunden af Pine:
 </para>
 
 <programlisting>
@@ -246,20 +246,20 @@ Press Return to Compose using no role, or ^T to select a role
 </programlisting>
 
     <para>
-     Tryk Ctrl-t (eller Ctrl-T) for at vælge ^T. Gå ned på den rolle
-     du vil anvende og tryk på retur-tasten to gange. Nu skriver du
-     e-post i den valgte rolle. Bemærk at "From"-feltet nu skal være
-     sat svarende til den identitet du har valgt. Metoden virker også
-     ved svar på e-post.
+     Tryk Ctrl-t (eller Ctrl-T) for at vÃ¦lge ^T. GÃ¥ ned pÃ¥ den rolle
+     du vil anvende og tryk pÃ¥ retur-tasten to gange. Nu skriver du
+     e-post i den valgte rolle. BemÃ¦rk at "From"-feltet nu skal vÃ¦re
+     sat svarende til den identitet du har valgt. Metoden virker ogsÃ¥
+     ved svar pÃ¥ e-post.
     </para>
    </sect2>
 
    <sect2 id="smaa-pine-tips">
-    <title>Små nyttige tips til opsætning af Pine</title>
+    <title>SmÃ¥ nyttige tips til opsÃ¦tning af Pine</title>
 
     <para>
-     <emphasis>Tip:</emphasis> Under setup, skal du sætte
-     "character-set = UTF-8" for at få dansk tegnsæt til at
+     <emphasis>Tip:</emphasis> Under setup, skal du sÃ¦tte
+     "character-set = UTF-8" for at fÃ¥ dansk tegnsÃ¦t til at
      virke.
     </para>
 
@@ -278,13 +278,13 @@ Press Return to Compose using no role, or ^T to select a role
      til terminalen bit for bit.  Hvis man for eksempel modtager breve
      kodet med UTF-8 og ens terminal arbejder med UTF-8 kan det
      give problemer.  Man kan komme omkring det ved at lade Pine kalde
-     et tegntabelomkodningsprogram, når det skal vise et brev kodet
+     et tegntabelomkodningsprogram, nÃ¥r det skal vise et brev kodet
      med en anden kodning end den terminalen forventer.  Man kan for
-     eksempel installere programmet "yudit". På Mandrake 9.0 skrives
-     blot <command>urpmi yudit</command> som "root". På Red Hat 7.2 og
-     7.3 skal man køre kommandoen <command>rpm --upgrade
+     eksempel installere programmet "yudit". PÃ¥ Mandrake 9.0 skrives
+     blot <command>urpmi yudit</command> som "root". PÃ¥ Red Hat 7.2 og
+     7.3 skal man kÃ¸re kommandoen <command>rpm --upgrade
      ftp://rpmfind.net/linux/rhcontrib/7.2/i386/yudit-2.4-4.i386.rpm</command>
-     som "root".  Når Yudit er installeret skal følgende linje føjes
+     som "root".  NÃ¥r Yudit er installeret skal fÃ¸lgende linje fÃ¸jes
      til filen <filename>~/.pinerc</filename>:
 
 <programlisting>
@@ -294,15 +294,15 @@ display-filters=_CHARSET(UTF-8)_ /usr/bin/uniconv -encode iso-8859-1 -decode utf
 
     <para>
      <emphasis>Tip:</emphasis> Vil du se alle headere i din e-post,
-     skal du under setup sætte "enable-full-header-cmd". Tryk på h for
-     at se alle headere når du læser post.
+     skal du under setup sÃ¦tte "enable-full-header-cmd". Tryk pÃ¥ h for
+     at se alle headere nÃ¥r du lÃ¦ser post.
     </para>
 
     <para>
-     <emphasis>Tip:</emphasis> Pine kan farvekode beskederne når du
-     læser dem, så det er lettere at se, hvem der skriver hvad i en
-     diskussion. Fra hovedmenuen trykkes "s k", hvorefter farver på
-     oversigten, "quotelevels" og meget andet kan sættes op.
+     <emphasis>Tip:</emphasis> Pine kan farvekode beskederne nÃ¥r du
+     lÃ¦ser dem, sÃ¥ det er lettere at se, hvem der skriver hvad i en
+     diskussion. Fra hovedmenuen trykkes "s k", hvorefter farver pÃ¥
+     oversigten, "quotelevels" og meget andet kan sÃ¦ttes op.
     </para>
 
     <para>
@@ -320,21 +320,21 @@ display-filters=_CHARSET(UTF-8)_ /usr/bin/uniconv -encode iso-8859-1 -decode utf
       <secondary>udskrivning af tekst fra Pine</secondary>
      </indexterm>
      <indexterm>
-      <primary>udskrivning af tekst på printer fra Pine</primary>
+      <primary>udskrivning af tekst pÃ¥ printer fra Pine</primary>
      </indexterm>
      <indexterm>
       <primary>enscript</primary>
      </indexterm>
 
-     Vil du gerne have pæn udskrift på printeren af dine tekst-emails,
-     så kan du med fordel installere programmet
-     <command>enscript</command>, der følger med de fleste
+     Vil du gerne have pÃ¦n udskrift pÃ¥ printeren af dine tekst-emails,
+     sÃ¥ kan du med fordel installere programmet
+     <command>enscript</command>, der fÃ¸lger med de fleste
      Linux-distributioner (eller kan findes via <ulink
-     url="http://rpmfind.net">http://rpmfind.net</ulink>). Sæt din
-     udprintningskommando som følger: I hovedmenuen af Pine, tryk "s"
-     "p" "pil ned" "pil ned" "c". Sæt kommandoen til <command>enscript
-     -2rG --word-wrap</command>, så får du to kolonner og der deles
-     linjer ved ordgrænserne.
+     url="http://rpmfind.net">http://rpmfind.net</ulink>). SÃ¦t din
+     udprintningskommando som fÃ¸lger: I hovedmenuen af Pine, tryk "s"
+     "p" "pil ned" "pil ned" "c". SÃ¦t kommandoen til <command>enscript
+     -2rG --word-wrap</command>, sÃ¥ fÃ¥r du to kolonner og der deles
+     linjer ved ordgrÃ¦nserne.
     </para>
 
    <para>

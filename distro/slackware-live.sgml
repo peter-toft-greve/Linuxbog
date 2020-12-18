@@ -6,28 +6,28 @@
 <indexterm><primary>distribution</primary><secondary>Slackware-Live</secondary></indexterm>
 
  <indexterm>
-  <primary>kør-fra-cd-system</primary>
+  <primary>kÃ¸r-fra-cd-system</primary>
  </indexterm>
 
  <para>
-  »Slackware-Live« er et kør-fra-cd-system.  Som med andre
-  kør-fra-cd-systemer er der gjort en del ud af at genkende isenkram.
+  Â»Slackware-LiveÂ« er et kÃ¸r-fra-cd-system.  Som med andre
+  kÃ¸r-fra-cd-systemer er der gjort en del ud af at genkende isenkram.
  </para>
 
  <sect1 id="distro-slackware-live-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Slackware-Live</secondary>
   </indexterm>
 
   <para>
-   Det er lidt uklart hvem der er tænkt som målgruppe for
-   Slackware-Live, men det er højst sandsynligt primært
+   Det er lidt uklart hvem der er tÃ¦nkt som mÃ¥lgruppe for
+   Slackware-Live, men det er hÃ¸jst sandsynligt primÃ¦rt
    Slackware-brugere, der gerne vil have et Linux-system mage til det
-   der hjemme på en cd-rom i lommestørrelse (Slackware-Live kan være
-   på en 8 cm-cd-rom).
+   der hjemme pÃ¥ en cd-rom i lommestÃ¸rrelse (Slackware-Live kan vÃ¦re
+   pÃ¥ en 8Â cm-cd-rom).
   </para>
  </sect1>
 
@@ -40,13 +40,13 @@
   </indexterm>
 
   <para>
-   Man kan hente et brændklart ISO-cd-rom-billede fra <ulink
+   Man kan hente et brÃ¦ndklart ISO-cd-rom-billede fra <ulink
    url="http://www.slackware-live.org/download.php">Slackware-Live-hjemmesiden</ulink>.
-   Det fylder 186 Mb (version 2.9.0.22) og kan være på en af de små
-   8 cm-cd-rom'er.  Man brænder cd-rom-billedet på en mini-cd-rom (den almindelige størrelse kan også bruges) med sit foretrukne
-   værktøj (eller finder et i <ulink
-   url="http://www.linuxbog.dk/applikationer/bog/">»Linux - Friheden
-   til at vælge programmer«</ulink>).
+   Det fylder 186Â Mb (version 2.9.0.22) og kan vÃ¦re pÃ¥ en af de smÃ¥
+   8Â cm-cd-rom'er.  Man brÃ¦nder cd-rom-billedet pÃ¥ en mini-cd-rom (den almindelige stÃ¸rrelse kan ogsÃ¥ bruges) med sit foretrukne
+   vÃ¦rktÃ¸j (eller finder et i <ulink
+   url="http://www.linuxbog.dk/applikationer/bog/">Â»Linux - Friheden
+   til at vÃ¦lge programmerÂ«</ulink>).
   </para>
  </sect1>
 
@@ -55,24 +55,24 @@
 
   <indexterm>
    <primary>installation af ekstra programmel</primary>
-   <secondary>på Slackware-Live</secondary>
+   <secondary>pÃ¥ Slackware-Live</secondary>
   </indexterm>
 
   <para>
    Man kan bygge sin egen udgave af Slackware-Live med andre
-   programmer end dem der er på standard-cd-rom'en.  Man henter blot
+   programmer end dem der er pÃ¥ standard-cd-rom'en.  Man henter blot
    programmerne der blev brugt til at bygge cd-rom'en fra <ulink
    url="http://www.slackware-live.org/download.php">Slackware-Live-hjemmesiden</ulink>
-   og laver de ændringer man har behov for.
+   og laver de Ã¦ndringer man har behov for.
   </para>
 
   <para>
-   Den første ændring man nok som dansker ville lave, ville være at
-   tilføje understøttelse af dansk tastatur i KDE.  Og hvis der er
-   plads til det på cd-rom'en, kan man også tilføje den danske
-   oversættelse af KDE.
+   Den fÃ¸rste Ã¦ndring man nok som dansker ville lave, ville vÃ¦re at
+   tilfÃ¸je understÃ¸ttelse af dansk tastatur i KDE.  Og hvis der er
+   plads til det pÃ¥ cd-rom'en, kan man ogsÃ¥ tilfÃ¸je den danske
+   oversÃ¦ttelse af KDE.
 
-   <!--  skal jeg kigge nærmere på dette?  -->
+   <!--  skal jeg kigge nÃ¦rmere pÃ¥ dette?  -->
   </para>
  </sect1>
 
@@ -85,16 +85,16 @@
   </indexterm>
 
   <para>
-   Du får et køreklart KDE-system at arbejde fra på en 8 cm-cd-rom.
+   Du fÃ¥r et kÃ¸reklart KDE-system at arbejde fra pÃ¥ en 8Â cm-cd-rom.
   </para>
  </sect1>
 
  <sect1 id="distro-slackware-live-isenkram">
-  <title>Prøvekørsler med forskelligt isenkram</title>
+  <title>PrÃ¸vekÃ¸rsler med forskelligt isenkram</title>
 
   <para>
-   Dette er en oversigt over det tilfældige udvalg af isenkram, som jeg har
-   prøvekørt »Slackware-Live« med.
+   Dette er en oversigt over det tilfÃ¦ldige udvalg af isenkram, som jeg har
+   prÃ¸vekÃ¸rt Â»Slackware-LiveÂ« med.
   </para>
 
   <note>
@@ -110,9 +110,9 @@
 
    <para>
     Jeg var positivt overrasket over at min mus virkede som den skulle.  I
-    Debian og FreeBSD, kunne jeg ikke få den til at virke.  Den ser ikke ud
-    til at genkende det indbyggede modem (vist en slags winmodem), men både
-    det indbyggede netværkskort og mit trådløse netværkskort bliver genkendt
+    Debian og FreeBSD, kunne jeg ikke fÃ¥ den til at virke.  Den ser ikke ud
+    til at genkende det indbyggede modem (vist en slags winmodem), men bÃ¥de
+    det indbyggede netvÃ¦rkskort og mit trÃ¥dlÃ¸se netvÃ¦rkskort bliver genkendt
     og aktiveret.
    </para>
   </note>
@@ -130,17 +130,17 @@
   <title>Konklusion</title>
 
   <para>
-   Som »Slackware-Live« ser ud lige nu er den af meget begrænset nytte på en
-   maskine med dansk tastatur, men hvis man i forvejen er Slackware-fan, bør
-   man selvfølgelig bruge Slackware-Live og ikke de Debian-baserede
+   Som Â»Slackware-LiveÂ« ser ud lige nu er den af meget begrÃ¦nset nytte pÃ¥ en
+   maskine med dansk tastatur, men hvis man i forvejen er Slackware-fan, bÃ¸r
+   man selvfÃ¸lgelig bruge Slackware-Live og ikke de Debian-baserede
    konkurrenter som Dappix <!-- (se <xref linkend="distro-dappix"/>) -->
    og Knoppix.
   </para>
 
   <para>
-   Jeg var noget skuffet over at opdage at musen ikke virkede på min
-   gode gamle blærbare, men jeg synes på den anden side at det er en
-   fin idé at se på hvor meget man kan presse ind på en 8 cm-cd-rom.
+   Jeg var noget skuffet over at opdage at musen ikke virkede pÃ¥ min
+   gode gamle blÃ¦rbare, men jeg synes pÃ¥ den anden side at det er en
+   fin idÃ© at se pÃ¥ hvor meget man kan presse ind pÃ¥ en 8Â cm-cd-rom.
   </para>
  </sect1>
 </chapter>

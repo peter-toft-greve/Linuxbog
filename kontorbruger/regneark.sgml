@@ -6,12 +6,12 @@
 <para>
 Der er her valgt at anvende regnearksdelen af OpenOffice.org, som er 
 identisk med den man finder i StarOffice. Regnearket er godt, og 
-erfaringsmæssigt er der god kompatibilitet med Microsoft Excel-regnearket.
+erfaringsmÃ¦ssigt er der god kompatibilitet med Microsoft Excel-regnearket.
 </para>
 
 
 <para>
-Eksemplerne til dette afsnit kan hentes på bogens hjemmeside under eksempler.
+Eksemplerne til dette afsnit kan hentes pÃ¥ bogens hjemmeside under eksempler.
 </para>
 
 <sect1 id="OpenCalc-kafferegnskab">
@@ -21,27 +21,27 @@ Eksemplerne til dette afsnit kan hentes på bogens hjemmeside under eksempler.
 regneark</secondary></indexterm>
 
 <para>
-I OpenOffice.org-hovedmenuen vælger du "Nyt regneark", og i det 
-følgende gennemgås et eksempel hvor der skal regnes sammen hvor mange kr. de 
+I OpenOffice.org-hovedmenuen vÃ¦lger du "Nyt regneark", og i det 
+fÃ¸lgende gennemgÃ¥s et eksempel hvor der skal regnes sammen hvor mange kr. de 
 fire personer Jacob, Hans, Peter og Donald har betalt til kaffe-kassen.
-Eksemplet kunne lige så godt omhandle familiens budget, men for at holde det
-enkelt ses på opgørelsen kvartalsvis og udregner summer og gennemsnit.
+Eksemplet kunne lige sÃ¥ godt omhandle familiens budget, men for at holde det
+enkelt ses pÃ¥ opgÃ¸relsen kvartalsvis og udregner summer og gennemsnit.
 </para>
 
 <para>
-Først starter du med at trykke på feltet B1. Felterne er nummereret efter
-søjle (bogstaver) og række (nummer). Skriv nu teksten "Januar-Marts" og tryk
-på retur-tasten. Klik med musens venstretast på feltet C1 og indtast
-"April-Juni" osv. indtil du når feltet E1. Den grønne kasse på 
+FÃ¸rst starter du med at trykke pÃ¥ feltet B1. Felterne er nummereret efter
+sÃ¸jle (bogstaver) og rÃ¦kke (nummer). Skriv nu teksten "Januar-Marts" og tryk
+pÃ¥ retur-tasten. Klik med musens venstretast pÃ¥ feltet C1 og indtast
+"April-Juni" osv. indtil du nÃ¥r feltet E1. Den grÃ¸nne kasse pÃ¥ 
 <xref linkend="openoffice-regneark1-fig"/>
-viser de menu-dele, hvor man kan ændre forgrundsfarve, skrifttype og
-størrelse. Det første du nu kan prøve er at få en anden baggrundsfarve. Markér
-de felter, der skal ændres. Det gør du ved at finde det første felt (her
+viser de menu-dele, hvor man kan Ã¦ndre forgrundsfarve, skrifttype og
+stÃ¸rrelse. Det fÃ¸rste du nu kan prÃ¸ve er at fÃ¥ en anden baggrundsfarve. MarkÃ©r
+de felter, der skal Ã¦ndres. Det gÃ¸r du ved at finde det fÃ¸rste felt (her
 B1), trykke venstre musetast ned og holde den nede mens musen flyttes
 videre hen til sidste felt (her E1). Slip venstre musetast, og klik derefter
-på højre musetast. Den menu der er vist på 
-<xref linkend="openoffice-regneark1-fig"/> kommer nu frem. Vælg
-linjen "Formater celler" med pil ned, eller ved at klikke på den med
+pÃ¥ hÃ¸jre musetast. Den menu der er vist pÃ¥ 
+<xref linkend="openoffice-regneark1-fig"/> kommer nu frem. VÃ¦lg
+linjen "Formater celler" med pil ned, eller ved at klikke pÃ¥ den med
 venstremusen.
 </para>
 
@@ -51,13 +51,13 @@ venstremusen.
 </figure>
 
 <para>
-Under fanebladet "Baggrund" på <xref linkend="openoffice-regneark2-fig"/>
-kan du nu selv vælge den baggrundsfarve du er
+Under fanebladet "Baggrund" pÃ¥ <xref linkend="openoffice-regneark2-fig"/>
+kan du nu selv vÃ¦lge den baggrundsfarve du er
 er tilfreds med.
 </para>
 
 <figure id="openoffice-regneark2-fig" float="1">
-<title>Vælg baggrundsfarve for celler i OpenOffice.org-regneark</title>
+<title>VÃ¦lg baggrundsfarve for celler i OpenOffice.org-regneark</title>
 <graphic fileref="OOoCalc2.&magic;" scale="50"></graphic>
 </figure>
 
@@ -65,15 +65,15 @@ er tilfreds med.
 
 <para>
 Frem til <xref linkend="openoffice-regneark3-fig"/> er nu indtastet 
-navne i venstre kolonne (A-kolonnen), og de har fået anden baggrundsfarve 
+navne i venstre kolonne (A-kolonnen), og de har fÃ¥et anden baggrundsfarve 
 som vist ovenfor. Der er indtastet tal i felterne B2 og ned til E4.
-I feltet B6 startes på noget nyt. Du skal nu udregne summen af tallene for 
-"Januar->April" for de fire personer. Når man starter med at skrive 
-lighedstegn <literal>=</literal>, så viser dette at der kommer en 
+I feltet B6 startes pÃ¥ noget nyt. Du skal nu udregne summen af tallene for 
+"Januar->April" for de fire personer. NÃ¥r man starter med at skrive 
+lighedstegn <literal>=</literal>, sÃ¥ viser dette at der kommer en 
 formel, og med <literal>=sum(B2:B5)</literal>
-fås summen af tallene mellem B2 og B5, dvs. B2+B3+B4+B5. Der hvor regnearket
+fÃ¥s summen af tallene mellem B2 og B5, dvs. B2+B3+B4+B5. Der hvor regnearket
 har sin reelle funktion, er at feltet B6 automatisk opdateres hvis man 
-ændrer i en af felterne fra B2 til B5.
+Ã¦ndrer i en af felterne fra B2 til B5.
 </para>
 
 <figure id="openoffice-regneark3-fig" float="1">
@@ -82,21 +82,21 @@ har sin reelle funktion, er at feltet B6 automatisk opdateres hvis man
 </figure>
 
 <para>
-Lad os nu tilsvarende få udregnet summer for de andre kvartaler. Man kunne
+Lad os nu tilsvarende fÃ¥ udregnet summer for de andre kvartaler. Man kunne
 manuelt i C6 skrive <literal>=sum(C2:C5)</literal> osv., 
-men der er en lettere fremgangsmåde,
-idet man kan kopiere feltet B6 til C6, D6 og E6. Klik først på feltet B6 så
-det bliver markeret. Tryk derefter på CTRL+C (det betyder, at du skal holde
-tasten CTRL nede og trykke på C). Nu har du en kopi af feltet B6's indhold,
-som du kan lægge ud i felterne C6..E6 på denne måde: Markér felt C6 med
-venstremusen, og holde venstre museknap nede mens musen flyttes mod højre,
+men der er en lettere fremgangsmÃ¥de,
+idet man kan kopiere feltet B6 til C6, D6 og E6. Klik fÃ¸rst pÃ¥ feltet B6 sÃ¥
+det bliver markeret. Tryk derefter pÃ¥ CTRL+C (det betyder, at du skal holde
+tasten CTRL nede og trykke pÃ¥ C). Nu har du en kopi af feltet B6's indhold,
+som du kan lÃ¦gge ud i felterne C6..E6 pÃ¥ denne mÃ¥de: MarkÃ©r felt C6 med
+venstremusen, og holde venstre museknap nede mens musen flyttes mod hÃ¸jre,
 indtil du er henne i felt E6. Du skal nu have markeret tre felter - se figur
 <xref linkend="openoffice-regneark4-fig"/>. 
 Tryk derefter CTRL+V, og du har kopieret formlen til de markerede
 felter. Det er ikke en helt almindelig kopi, der er sket. De bogstaver der
-har med kolonnen (her B) at gøre er blevet rettet, så de rammer den nye
-kolonne. Klik på E6 og se i formelfeltet (den røde ramme i figur <xref linkend="openoffice-regneark1-fig"/>) at
-formlen er kopieret men ændret til <literal>=sum(E2:E5)</literal>.
+har med kolonnen (her B) at gÃ¸re er blevet rettet, sÃ¥ de rammer den nye
+kolonne. Klik pÃ¥ E6 og se i formelfeltet (den rÃ¸de ramme i figur <xref linkend="openoffice-regneark1-fig"/>) at
+formlen er kopieret men Ã¦ndret til <literal>=sum(E2:E5)</literal>.
 </para>
 
 <figure id="openoffice-regneark4-fig" float="1">
@@ -106,7 +106,7 @@ formlen er kopieret men ændret til <literal>=sum(E2:E5)</literal>.
 
 <para>
 Nu markeres felterne B6-E6 for at give den ny forgrundsfarve. 
-Tryk nu på knappen <xref linkend="openoffice-regneark5-fig"/> og en menu 
+Tryk nu pÃ¥ knappen <xref linkend="openoffice-regneark5-fig"/> og en menu 
 med forgrundsfarver kommer frem.
 </para>
 
@@ -118,50 +118,50 @@ med forgrundsfarver kommer frem.
 <indexterm><primary>Regneark</primary><secondary>Decimaler</secondary></indexterm>
 
 <para>
-Dernæst kan du prøve at få flere eller færre 
+DernÃ¦st kan du prÃ¸ve at fÃ¥ flere eller fÃ¦rre 
 decimaler i felterne B6-E6. 
 I eksemplet er der kun heltal, men for et regnskab er det 
-nødvendigt at kunne styre antal decimaler. Se 
+nÃ¸dvendigt at kunne styre antal decimaler. Se 
 <xref linkend="openoffice-regneark6-fig"/>. Enten kan du direkte ved
-den lille ellipse tilføje eller fjerne decimaler med de to viste 
-knapper, men du også få lidt mere kontrol over det ved at trykke
-på højre musetast (du skal stadig have markeret de fire felter) og tage 
-fanebladet "Tal" som vist på <xref linkend="openoffice-regneark6-fig"/> 
-ved den røde firkant. Under format midt i kassen vælges f.eks. 
+den lille ellipse tilfÃ¸je eller fjerne decimaler med de to viste 
+knapper, men du ogsÃ¥ fÃ¥ lidt mere kontrol over det ved at trykke
+pÃ¥ hÃ¸jre musetast (du skal stadig have markeret de fire felter) og tage 
+fanebladet "Tal" som vist pÃ¥ <xref linkend="openoffice-regneark6-fig"/> 
+ved den rÃ¸de firkant. Under format midt i kassen vÃ¦lges f.eks. 
 to decimaler eller heltal.
 </para>
 
 <figure id="openoffice-regneark6-fig" float="1">
-<title>Ændr talformat i OpenOffice.org</title>
+<title>Ã†ndr talformat i OpenOffice.org</title>
 <graphic fileref="OOoCalc6.&magic;" scale="50"></graphic>
 </figure>
 
 <indexterm><primary>Regneark</primary><secondary>Gennemsnit</secondary></indexterm>
-<indexterm><primary>Regneark</primary><secondary>Middelværdi</secondary></indexterm>
+<indexterm><primary>Regneark</primary><secondary>MiddelvÃ¦rdi</secondary></indexterm>
 
 
 <para>
-Nu skal du videre til at udregne gennemsnit (middelværdi) over de fire personer
+Nu skal du videre til at udregne gennemsnit (middelvÃ¦rdi) over de fire personer
 for hver af de fire kvartaler. Gennemsnit er som bekendt summen af tallene
 divideret med antallet af tal. I feltet B7 skriver du derfor
-<literal>=SUM(B2:B5)/RÆKKER(B2:B5)</literal>. 
-Funktionen <literal>RÆKKER</literal> giver antallet af rækker i
+<literal>=SUM(B2:B5)/RÃ†KKER(B2:B5)</literal>. 
+Funktionen <literal>RÃ†KKER</literal> giver antallet af rÃ¦kker i
 intervallet (B2:B5) (i den danske udgave kan du ikke skrive ROWS(B2:B5), 
 da det kun er muligt at indtaste formler i det sprog man har valgt. Dette 
-er dog ved at blive rettet, så engelsk altid kan bruges).
+er dog ved at blive rettet, sÃ¥ engelsk altid kan bruges).
 </para>
 
 <indexterm><primary>Regneark</primary><secondary>Formler</secondary></indexterm>
 <indexterm><primary>Formler</primary><secondary>Regneark</secondary></indexterm>
-<indexterm><primary>Formler</primary><secondary>Middelværdi</secondary></indexterm>
+<indexterm><primary>Formler</primary><secondary>MiddelvÃ¦rdi</secondary></indexterm>
 
 <para>
-Du kunne også direkte få en middelværdi med samme
+Du kunne ogsÃ¥ direkte fÃ¥ en middelvÃ¦rdi med samme
 resultat ved blot at skrive <literal>=MIDDEL(B2:B5)</literal> 
 (eng. <literal>=AVERAGE(B2:B5)</literal>), 
 men det er en anden sag. Der er
 mange formler i OpenOffice.org, som alle findes i menuen 
-"Indsæt"->"Funktion..." (CTRL+F2).
+"IndsÃ¦t"->"Funktion..." (CTRL+F2).
 </para>
 
 <figure id="openoffice-regneark7-fig" float="1">
@@ -174,8 +174,8 @@ af formler</secondary></indexterm>
 <indexterm><primary>Formler</primary><secondary>Kopiering</secondary></indexterm>
 
 <para>
-Endelig kopierer du formlen til de næste kvartaler ved at trykke CTRL+C 
-når feltet B7 er markeret og efter du har markeret C7-E7 kan 
+Endelig kopierer du formlen til de nÃ¦ste kvartaler ved at trykke CTRL+C 
+nÃ¥r feltet B7 er markeret og efter du har markeret C7-E7 kan 
 du trykke CTRL+V. 
 </para>
 
@@ -185,23 +185,23 @@ du trykke CTRL+V.
 </figure>
 
 <para>
-Sæt teksten "Samlet" ind i feltet A9, og klik derefter på feltet B9. Her
-indsætter du formlen <literal>=SUM(B6:E6)</literal>, 
-altså summen af de fire sumfelter i række
-6. Uanset hvilke af felterne i området B2 .. E5 du ændrer i, vil regnearket
-nu først beregne nye sum-værdier i række 6, og lægge disse resultater sammen
+SÃ¦t teksten "Samlet" ind i feltet A9, og klik derefter pÃ¥ feltet B9. Her
+indsÃ¦tter du formlen <literal>=SUM(B6:E6)</literal>, 
+altsÃ¥ summen af de fire sumfelter i rÃ¦kke
+6. Uanset hvilke af felterne i omrÃ¥det B2 .. E5 du Ã¦ndrer i, vil regnearket
+nu fÃ¸rst beregne nye sum-vÃ¦rdier i rÃ¦kke 6, og lÃ¦gge disse resultater sammen
 i feltet B9. 
 </para>
 
 <para>
-Med et regneark, kan man således have formler, der afhænger af
+Med et regneark, kan man sÃ¥ledes have formler, der afhÃ¦nger af
 resultatet af andre formler. Det er programmets opgave at finde ud af, i
-hvilken rækkefølge tingene skal beregnes. Havde det hele været rykket et par
+hvilken rÃ¦kkefÃ¸lge tingene skal beregnes. Havde det hele vÃ¦ret rykket et par
 linjer ned, kunne gennemsnitsfelterne og totalfeltet for den sags skyld have
-stået øverst i arket, da beregningerne ville give de samme resultater.
-Efterprøv ved at sætte formlen <literal>=SUM(B6:E6)</literal> 
-ind i feltet A1 (som så ikke
-længere skal være sort, men f.eks. rødt med hvid skrift).
+stÃ¥et Ã¸verst i arket, da beregningerne ville give de samme resultater.
+EfterprÃ¸v ved at sÃ¦tte formlen <literal>=SUM(B6:E6)</literal> 
+ind i feltet A1 (som sÃ¥ ikke
+lÃ¦ngere skal vÃ¦re sort, men f.eks. rÃ¸dt med hvid skrift).
 </para>
 
 <indexterm><primary>Formler</primary><secondary>Minimum</secondary></indexterm>
@@ -221,12 +221,12 @@ tilsvarende anvendes <literal>=MAKS()</literal>
 <indexterm><primary>Regneark</primary><secondary>Gem</secondary></indexterm>
 
 <para>
-Nu har du prøvet at opstille dit første regneark. Det skal nu gemmes. Tryk på 
+Nu har du prÃ¸vet at opstille dit fÃ¸rste regneark. Det skal nu gemmes. Tryk pÃ¥ 
 menuen "Filer"->"Gem som".
 </para>
 
 <para>
-I det næste vindue skal du nu under filnavn vælge et sigende navn, 
+I det nÃ¦ste vindue skal du nu under filnavn vÃ¦lge et sigende navn, 
 f.eks. <filename>kafferegnskab</filename>. 
 </para>
 
@@ -239,7 +239,7 @@ f.eks. <filename>kafferegnskab</filename>.
 <indexterm><primary>Afslut</primary><secondary>Regneark</secondary></indexterm>
 
 <para>
-Vil du afslutte nu kan du igen vælge menuen "Filer" og derefter tage
+Vil du afslutte nu kan du igen vÃ¦lge menuen "Filer" og derefter tage
 "Afslut".
 </para>
 </sect1>
@@ -250,49 +250,49 @@ Vil du afslutte nu kan du igen vælge menuen "Filer" og derefter tage
 <indexterm><primary>Regneark</primary><secondary>Ark</secondary></indexterm>
 
 <para>
-Regneark er en meget praktisk ting, og dette er et eksempel på praktisk
-brug deraf. Det kan nævnes at OpenOffice.org understøtter "Ark", som du kan se 
-på figurerne nede i billederne - se den røde markering på <xref linkend="openoffice-regneark12-fig"/>. 
+Regneark er en meget praktisk ting, og dette er et eksempel pÃ¥ praktisk
+brug deraf. Det kan nÃ¦vnes at OpenOffice.org understÃ¸tter "Ark", som du kan se 
+pÃ¥ figurerne nede i billederne - se den rÃ¸de markering pÃ¥ <xref linkend="openoffice-regneark12-fig"/>. 
 </para>
 
 <indexterm><primary>Regneark</primary><secondary>3D</secondary></indexterm>
 
 <para>
-Har du flere end ét aktivt ark kaldes dette
-et 3D-regneark. Der er en måde at have flere regneark koblet
-sammen i samme fil, f.eks. regnskab for forskellige år, personer eller konti. 
-Du klikker på Ark-nummeret for at få det frem og med højre musetast kan du 
-finde en omdøb-funktion så arket få et andet navn.
+Har du flere end Ã©t aktivt ark kaldes dette
+et 3D-regneark. Der er en mÃ¥de at have flere regneark koblet
+sammen i samme fil, f.eks. regnskab for forskellige Ã¥r, personer eller konti. 
+Du klikker pÃ¥ Ark-nummeret for at fÃ¥ det frem og med hÃ¸jre musetast kan du 
+finde en omdÃ¸b-funktion sÃ¥ arket fÃ¥ et andet navn.
 </para>
 
 <para>
-På <xref linkend="openoffice-regneark12-fig"/> er vist hvordan
-vores første regneark på "Ark 1" er blevet kaldt "År 1999" og på "Ark 2", 
-der nu er omdøbt til "År 2000" er der indsat et tilsvarende regneark, blot 
-med tal for år 2000. På ark 3, som er omdøbt "Total" kan vi nu regne videre 
-med tal fra de to foregående ark. 
+PÃ¥ <xref linkend="openoffice-regneark12-fig"/> er vist hvordan
+vores fÃ¸rste regneark pÃ¥ "Ark 1" er blevet kaldt "Ã…r 1999" og pÃ¥ "Ark 2", 
+der nu er omdÃ¸bt til "Ã…r 2000" er der indsat et tilsvarende regneark, blot 
+med tal for Ã¥r 2000. PÃ¥ ark 3, som er omdÃ¸bt "Total" kan vi nu regne videre 
+med tal fra de to foregÃ¥ende ark. 
 </para>
 
 <indexterm><primary>Regneark</primary><secondary>Brug flere
 ark</secondary></indexterm>
 
 <para>
-Skal du bruge felt B9 fra år 1999 skriver du <literal>='År 1999'.B9</literal>.
-Tilsvarende kan felt B9 (en tilsvarende sum) fra år 2000 hentes 
-på det andet ark
-som <literal>='År 2000'.B9</literal>. Grunden til at du skal have pinger 
+Skal du bruge felt B9 fra Ã¥r 1999 skriver du <literal>='Ã…r 1999'.B9</literal>.
+Tilsvarende kan felt B9 (en tilsvarende sum) fra Ã¥r 2000 hentes 
+pÃ¥ det andet ark
+som <literal>='Ã…r 2000'.B9</literal>. Grunden til at du skal have pinger 
 rundt om 
-ark-navnene <literal>År 1999</literal> og <literal>År 2000</literal> er at 
-OpenOffice.org skal hjælpes lidt når der anvendes mellemrum eller danske 
+ark-navnene <literal>Ã…r 1999</literal> og <literal>Ã…r 2000</literal> er at 
+OpenOffice.org skal hjÃ¦lpes lidt nÃ¥r der anvendes mellemrum eller danske 
 bogstaver.
 </para>
 
 <para> 
-Endelig skal det nævnes at du på det første ark kunne have
+Endelig skal det nÃ¦vnes at du pÃ¥ det fÃ¸rste ark kunne have
 <literal>Total</literal>-arket og det andet og tredje ark som hhv. 
-<literal>År1999</literal> og <literal>År 2000</literal>. Arkene kan have 
-referencer til hinanden på kryds og tværs uafhængig af rækkefølge, blot der 
-ikke er logiske fejl, hvor to felter afhænger af hinanden.
+<literal>Ã…r1999</literal> og <literal>Ã…r 2000</literal>. Arkene kan have 
+referencer til hinanden pÃ¥ kryds og tvÃ¦rs uafhÃ¦ngig af rÃ¦kkefÃ¸lge, blot der 
+ikke er logiske fejl, hvor to felter afhÃ¦nger af hinanden.
 </para>
 
 <figure id="openoffice-regneark12-fig" float="1">
@@ -309,13 +309,13 @@ ikke er logiske fejl, hvor to felter afhænger af hinanden.
 
 <para>
 Her skal det nu vises hvordan man fremstiller grafer af tal i regnearksdelen af
-OpenOffice.org. Eksemplet anvender tal fra arket <literal>År 2000</literal> 
-i forrige eksempel. Det første du skal gøre er at markere det område du
-vil have lavet en graf ud fra. Vælg feltet A1 og marker ned til E5. Du har nu
-de fire kvartaler for de fire personer samt navnene på personerne og 
+OpenOffice.org. Eksemplet anvender tal fra arket <literal>Ã…r 2000</literal> 
+i forrige eksempel. Det fÃ¸rste du skal gÃ¸re er at markere det omrÃ¥de du
+vil have lavet en graf ud fra. VÃ¦lg feltet A1 og marker ned til E5. Du har nu
+de fire kvartaler for de fire personer samt navnene pÃ¥ personerne og 
 kvartalsnavne. 
-Vælg som vist på <xref linkend="openoffice-regneark13-fig"/> 
-"Indsæt"->"Diagram...".
+VÃ¦lg som vist pÃ¥ <xref linkend="openoffice-regneark13-fig"/> 
+"IndsÃ¦t"->"Diagram...".
 </para>
 
 <figure id="openoffice-regneark13-fig" float="1">
@@ -325,14 +325,14 @@ Vælg som vist på <xref linkend="openoffice-regneark13-fig"/>
 
 
 <para>
-Som vist på <xref linkend="openoffice-regneark14-fig"/> er der i feltet
-"Område" allerede valgt et dataområde der skal laves grafer ud fra.
-Ser man nærmere på hvad der står kan man godt se at det er noget med arket 
-<literal>År 2000</literal> og felterne mellem A1 og E5. Bemærk afkrydsningen
-i felterne "Første række som etiket" og "Første kolonne som etiket", dvs. 
-at række 1 og kolonne A opfattes som tekster til akser. Du kan her trykke 
-"Næste" hvis du vil vælge graf-type eller hvis du vil have den første og bedste
-graf-type tryk blot "Udfør".
+Som vist pÃ¥ <xref linkend="openoffice-regneark14-fig"/> er der i feltet
+"OmrÃ¥de" allerede valgt et dataomrÃ¥de der skal laves grafer ud fra.
+Ser man nÃ¦rmere pÃ¥ hvad der stÃ¥r kan man godt se at det er noget med arket 
+<literal>Ã…r 2000</literal> og felterne mellem A1 og E5. BemÃ¦rk afkrydsningen
+i felterne "FÃ¸rste rÃ¦kke som etiket" og "FÃ¸rste kolonne som etiket", dvs. 
+at rÃ¦kke 1 og kolonne A opfattes som tekster til akser. Du kan her trykke 
+"NÃ¦ste" hvis du vil vÃ¦lge graf-type eller hvis du vil have den fÃ¸rste og bedste
+graf-type tryk blot "UdfÃ¸r".
 </para>
 
 <figure id="openoffice-regneark14-fig" float="1">
@@ -341,11 +341,11 @@ graf-type tryk blot "Udfør".
 </figure>
 
 <para>
-Grafen indsættes til højre for tallene i regnearket. På 
+Grafen indsÃ¦ttes til hÃ¸jre for tallene i regnearket. PÃ¥ 
 <xref linkend="openoffice-regneark14-fig"/> kan man se grafen
 i kolonne F og fremefter. Man kan se kvartals-inddelingerne og personernes
-tal grafisk på denne måde, og det fordelagtige er at grafen 
-automatisk opdateres, hvis nogle af tallene i felterne fra A1 til E5 ændres.
+tal grafisk pÃ¥ denne mÃ¥de, og det fordelagtige er at grafen 
+automatisk opdateres, hvis nogle af tallene i felterne fra A1 til E5 Ã¦ndres.
 </para>
 
 <figure id="openoffice-regneark15-fig" float="1">
@@ -356,40 +356,40 @@ automatisk opdateres, hvis nogle af tallene i felterne fra A1 til E5 ændres.
 </sect1>
 
 <sect1 id="diverse-openoffice-calc">
-<title>Diverse små smarte ting i regnearksdelen af OpenOffice.org</title>
+<title>Diverse smÃ¥ smarte ting i regnearksdelen af OpenOffice.org</title>
 <para>
-I dette afsnit kommer der et par gode råd om nyttige små-funktioner i 
+I dette afsnit kommer der et par gode rÃ¥d om nyttige smÃ¥-funktioner i 
 regnearksdelen af OpenOffice.org.
 </para>
 
 <sect2 id="openoffice-calc-skelne-felter">
-<title>Skelne værdier og formler</title>
+<title>Skelne vÃ¦rdier og formler</title>
 
 <para>
-En ting som nogen vil synes er irriterende, er at man ikke kan se forskel på 
-formler og værdier i et regneark. Hvis man lige kommer til at indskrive en
-værdi i et formel-felt kan ulykken være stor.
+En ting som nogen vil synes er irriterende, er at man ikke kan se forskel pÃ¥ 
+formler og vÃ¦rdier i et regneark. Hvis man lige kommer til at indskrive en
+vÃ¦rdi i et formel-felt kan ulykken vÃ¦re stor.
 </para>
 
-<indexterm><primary>Regneark</primary><secondary>Fremhæv
-værdier</secondary></indexterm>
+<indexterm><primary>Regneark</primary><secondary>FremhÃ¦v
+vÃ¦rdier</secondary></indexterm>
 
 <para>
-Dette problem kan klares ved at man vælger det område der skal farves svarende
-til indhold. Vælg derefter "Vis"->"Fremhæv værdier" (Ctrl+F8). Som vist på 
+Dette problem kan klares ved at man vÃ¦lger det omrÃ¥de der skal farves svarende
+til indhold. VÃ¦lg derefter "Vis"->"FremhÃ¦v vÃ¦rdier" (Ctrl+F8). Som vist pÃ¥ 
 <xref linkend="openoffice-regneark16-fig"/> 
 og
-<xref linkend="openoffice-regneark17-fig"/> bliver tal nu blå og formler 
-grønne. Dette kan være meget praktisk.
+<xref linkend="openoffice-regneark17-fig"/> bliver tal nu blÃ¥ og formler 
+grÃ¸nne. Dette kan vÃ¦re meget praktisk.
 </para>
 
 <figure id="openoffice-regneark16-fig" float="1">
-<title>Fremhæv værdier i OpenOffice.org-regneark</title>
+<title>FremhÃ¦v vÃ¦rdier i OpenOffice.org-regneark</title>
 <graphic fileref="OOoCalc16.&magic;" scale="50"></graphic>
 </figure>
 
 <figure id="openoffice-regneark17-fig" float="1">
-<title>Viser værdier fremhævet i OpenOffice.org-regneark</title>
+<title>Viser vÃ¦rdier fremhÃ¦vet i OpenOffice.org-regneark</title>
 <graphic fileref="OOoCalc17.&magic;" scale="50"></graphic>
 </figure>
 </sect2>
@@ -400,19 +400,19 @@ grønne. Dette kan være meget praktisk.
 <indexterm><primary>Regneark</primary><secondary>Noter</secondary></indexterm>
 
 <para>
-Det kan være meget rart at koble en lille note ind på et felt, så
-man husker en bemærkning, en begræsning i udregningen eller tilsvarende.
+Det kan vÃ¦re meget rart at koble en lille note ind pÃ¥ et felt, sÃ¥
+man husker en bemÃ¦rkning, en begrÃ¦sning i udregningen eller tilsvarende.
 </para>
 
 <para>
 Til dette har OpenOffice.org en note-funktion, der kaldes frem med
-"Indsæt"->"Note". 
-Selve teksten indskrives i det gule felt som vist på 
+"IndsÃ¦t"->"Note". 
+Selve teksten indskrives i det gule felt som vist pÃ¥ 
 <xref linkend="openoffice-regneark19-fig"/>. Selve feltet har nu et 
-diskret rødt mærke i øverste højre hjørne som tegn på at der er en note.
-Hvis musen bevæges hen over feltet vises noten midlertidigt - alternativt
-kan noten vises mere permanent ved at markere feltet og trykke højre musetast 
-ned og i menuen vælge fluebenet til på "Vis Note".
+diskret rÃ¸dt mÃ¦rke i Ã¸verste hÃ¸jre hjÃ¸rne som tegn pÃ¥ at der er en note.
+Hvis musen bevÃ¦ges hen over feltet vises noten midlertidigt - alternativt
+kan noten vises mere permanent ved at markere feltet og trykke hÃ¸jre musetast 
+ned og i menuen vÃ¦lge fluebenet til pÃ¥ "Vis Note".
 </para>
 
 
@@ -424,35 +424,35 @@ ned og i menuen vælge fluebenet til på "Vis Note".
 </sect2>
 
 <sect2 id="openoffice-calc-autonumre">
-<title>Nem liste af fortløbende numre</title>
+<title>Nem liste af fortlÃ¸bende numre</title>
 
-<indexterm><primary>Regneark</primary><secondary>Fortløbne
+<indexterm><primary>Regneark</primary><secondary>FortlÃ¸bne
 numre</secondary></indexterm>
 
 <para>
-En trist øvelse er at skulle skrive en række
-eller søjle af indeks-numre eller måneder.
-Hvis man f.eks. skal have en søjle med numrene
-fra 1 til 200, så skal der ikke meget til at man får
+En trist Ã¸velse er at skulle skrive en rÃ¦kke
+eller sÃ¸jle af indeks-numre eller mÃ¥neder.
+Hvis man f.eks. skal have en sÃ¸jle med numrene
+fra 1 til 200, sÃ¥ skal der ikke meget til at man fÃ¥r
 lavet en fejl. OpenOffice.org har en meget anvendelig funktion
-til at hjælpe. Skriv den første værdi i det første felt og 
-marker feltet. I nederste højre hjørne af feltet kommer en ekstra
-lille forhøjning frem, som man kan trække i - dette er vist på 
-<xref linkend="openoffice-regneark20-fig"/> ved pilen. Træk nu
-ned eller hen til det sidste felt er fremkommet, mens højre
+til at hjÃ¦lpe. Skriv den fÃ¸rste vÃ¦rdi i det fÃ¸rste felt og 
+marker feltet. I nederste hÃ¸jre hjÃ¸rne af feltet kommer en ekstra
+lille forhÃ¸jning frem, som man kan trÃ¦kke i - dette er vist pÃ¥ 
+<xref linkend="openoffice-regneark20-fig"/> ved pilen. TrÃ¦k nu
+ned eller hen til det sidste felt er fremkommet, mens hÃ¸jre
 musetast holdes nede. Der vises 
-løbende i et lille gult felt, hvad der er værdien af sidste felt.
-Slip nu musetasten og de forløbende numre vises.
+lÃ¸bende i et lille gult felt, hvad der er vÃ¦rdien af sidste felt.
+Slip nu musetasten og de forlÃ¸bende numre vises.
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> Samme trick virker også med at
+<emphasis>Tip:</emphasis> Samme trick virker ogsÃ¥ med at
 skrive f.eks. "Mandag" og hive resten af ugedagene. Tilsvarende
-med månedsnavne. Det er elegant!
+med mÃ¥nedsnavne. Det er elegant!
 </para>
 
 <figure id="openoffice-regneark20-fig" float="1">
-<title>Fortløbende numre i OpenOffice.org-regneark</title>
+<title>FortlÃ¸bende numre i OpenOffice.org-regneark</title>
 <graphic fileref="OOoCalc20.&magic;" scale="50"></graphic>
 </figure>
 </sect2>
@@ -462,7 +462,7 @@ med månedsnavne. Det er elegant!
 <title>Videre med OpenOffice.org regneark</title>
 <para>
 Hvis du vil vide mere om regnearksdelen af StarOffice/OpenOffice.org,
-så er der en del inspiration at hente i "StarOffice for alle" af Helle
+sÃ¥ er der en del inspiration at hente i "StarOffice for alle" af Helle
 Frederiksen, forlaget IDG.
 <!-- cHBs Henvisning ind til OpenOffice.org-bog af en jyde -->
 </para>

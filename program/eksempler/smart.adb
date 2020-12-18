@@ -3,14 +3,14 @@
 --  procedure Smart (body)
 --
 --  Ada er temmelig praktisk til at skrive programmer der skal lave flere ting
---  på en gang ("tasking"), og så kan det håndtere maskinnære ting som
---  bitmønstre på en abstrakt måde, så det er lettere at overskue hvad
+--  pÃ¥ en gang ("tasking"), og sÃ¥ kan det hÃ¥ndtere maskinnÃ¦re ting som
+--  bitmÃ¸nstre pÃ¥ en abstrakt mÃ¥de, sÃ¥ det er lettere at overskue hvad
 --  programmet laver.
 --
---  Programmet er afprøvet med GNAT (GNU Ada), men bør virke med alle
---  Ada-oversættere.
+--  Programmet er afprÃ¸vet med GNAT (GNU Ada), men bÃ¸r virke med alle
+--  Ada-oversÃ¦ttere.
 --
---  Oversættelse:
+--  OversÃ¦ttelse:
 --    gnatmake udskriv -cargs -gnatv -gnati1 -gnatf -gnato
 --
 --  Afvikling:
@@ -32,15 +32,15 @@ with Ada.Text_IO;
 procedure Smart is
 
    ---------------------------------------------------------------------------
-   --  task Hils_På_Verden
+   --  task Hils_PÃ¥_Verden
    --
-   --  En tråd der kører parallelt med resten af programmet.
-   --  For at det ikke skal gå alt for hurtigt udskriver den kun et tegn i
+   --  En trÃ¥d der kÃ¸rer parallelt med resten af programmet.
+   --  For at det ikke skal gÃ¥ alt for hurtigt udskriver den kun et tegn i
    --  sekundet.
 
-   task Hils_På_Verden;
+   task Hils_PÃ¥_Verden;
 
-   task body Hils_På_Verden is
+   task body Hils_PÃ¥_Verden is
       use Ada.Text_IO;
       Hilsen : constant String := "Hej Verden";
    begin
@@ -56,48 +56,48 @@ procedure Smart is
    --
    --  Vi har en 8-bit udgang:
    --    0-3 - ikke brugt
-   --    4   - grøn
+   --    4   - grÃ¸n
    --    5   - gul
-   --    6   - rød
+   --    6   - rÃ¸d
    --    7   - ikke brugt
 
    type Lyssignal_Lamper is
       record
-         Rød, Gul, Grøn : Boolean;
+         RÃ¸d, Gul, GrÃ¸n : Boolean;
       end record;
 
    for Lyssignal_Lamper use
       record
-         Rød  at 0 range 6 .. 6;
+         RÃ¸d  at 0 range 6 .. 6;
          Gul  at 0 range 5 .. 5;
-         Grøn at 0 range 4 .. 4;
+         GrÃ¸n at 0 range 4 .. 4;
       end record;
 
    for Lyssignal_Lamper'Size use 8;
 
    type Lyssignal is
       record
-         Tændt : Lyssignal_Lamper;
+         TÃ¦ndt : Lyssignal_Lamper;
          Tid   : Duration;
       end record;
 
    Tidsserie : array (1 .. 4) of Lyssignal :=
-                 (1 => (Tændt => (Rød =>  True, Gul => False, Grøn => False),
+                 (1 => (TÃ¦ndt => (RÃ¸d =>  True, Gul => False, GrÃ¸n => False),
                         Tid   => 3.0),
-                  2 => (Tændt => (Rød =>  True, Gul =>  True, Grøn => False),
+                  2 => (TÃ¦ndt => (RÃ¸d =>  True, Gul =>  True, GrÃ¸n => False),
                         Tid   => 0.5),
-                  3 => (Tændt => (Rød => False, Gul => False, Grøn =>  True),
+                  3 => (TÃ¦ndt => (RÃ¸d => False, Gul => False, GrÃ¸n =>  True),
                         Tid   => 3.0),
-                  4 => (Tændt => (Rød => False, Gul =>  True, Grøn => False),
+                  4 => (TÃ¦ndt => (RÃ¸d => False, Gul =>  True, GrÃ¸n => False),
                         Tid   => 0.5));
 
    ---------------------------------------------------------------------------
-   --  procedure Sæt_Port:
+   --  procedure SÃ¦t_Port:
    --
-   --  For at vi kan se hvad der sker, skriver vi bitmønsteret til skærmen i
-   --  stedet for at sende det ud på en port.
+   --  For at vi kan se hvad der sker, skriver vi bitmÃ¸nsteret til skÃ¦rmen i
+   --  stedet for at sende det ud pÃ¥ en port.
 
-   procedure Sæt_Port (Tændt : in     Lyssignal_Lamper) is
+   procedure SÃ¦t_Port (TÃ¦ndt : in     Lyssignal_Lamper) is
 
       type Byte is mod 2**8;
       for Byte'Size use 8;
@@ -107,24 +107,24 @@ procedure Smart is
       use Ada.Text_IO;
       use Byte_Text_IO;
 
-      Bitmønster : Byte;
-      for Bitmønster'Address use Tændt'Address;
+      BitmÃ¸nster : Byte;
+      for BitmÃ¸nster'Address use TÃ¦ndt'Address;
 
    begin
       New_Line;
-      Put (Item  => " -- Sætter porten til ");
-      Put (Item  => Bitmønster,
+      Put (Item  => " -- SÃ¦tter porten til ");
+      Put (Item  => BitmÃ¸nster,
            Base  => 2,
            Width => 11);
       Put (Item  => " -- ");
       New_Line;
-   end Sæt_Port;
+   end SÃ¦t_Port;
 
    ---------------------------------------------------------------------------
 
 begin
    for Indeks in Tidsserie'Range loop
-      Sæt_Port (Tændt => Tidsserie (Indeks).Tændt);
+      SÃ¦t_Port (TÃ¦ndt => Tidsserie (Indeks).TÃ¦ndt);
       delay Tidsserie (Indeks).Tid;
    end loop;
 end Smart;

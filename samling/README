@@ -1,7 +1,7 @@
 
-Samling-"bogen" er en samling af de individuelle bøger. Derfor skal de
-individuelle bøger bygges før samling. 
+Samling-"bogen" er en samling af de individuelle bÃ¸ger. Derfor skal de
+individuelle bÃ¸ger bygges fÃ¸r samling. 
 
-For at sikre dette bør make ikke kaldes fra kataloget samling/ (hvor
-denne fil ligger), men kun fra toplevel. Hvis du alligevel prøver vil du
-få en fejlmeddelelse.
+For at sikre dette bÃ¸r make ikke kaldes fra kataloget samling/ (hvor
+denne fil ligger), men kun fra toplevel. Hvis du alligevel prÃ¸ver vil du
+fÃ¥ en fejlmeddelelse.

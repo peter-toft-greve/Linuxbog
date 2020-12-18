@@ -66,7 +66,7 @@ AddToMenu Programmer
  + "&Netscape"    Exec netscape
  + "&Rejseplanen" Exec xterm -fn 7x13 -ls -sb -rw -aw -sl 256 +vb +mb -bg white -fg blue -T Rejseplanen -e lynx -useragent="Any Browser, HTML 4.01" -noreferer -pseudo_inlines +image_links http://www.rejseplanen.dk/servlet/rp.central.RPServlet/tekst_indtastning.htm
  + "&Filmlisten"  Exec xterm -fn 7x13 -ls -sb -rw -aw -sl 256 +vb +mb -bg white -fg blue -T Filmlisten -e lynx -useragent="Any Browser, HTML 4.01" -noreferer -pseudo_inlines +image_links 'http://www.worldscope.dk/bioliste.php?bioaktuelle=yes'
- + "Opdatér &palmepadde"  Exec xterm -fn 7x13 -ls -sb -rw -aw -sl 256 +vb +mb -bg white -fg blue -T 'Opdatér palmepadde' -e ssh garfield.nbi.dk synkronisér_palmepadde
+ + "OpdatÃ©r &palmepadde"  Exec xterm -fn 7x13 -ls -sb -rw -aw -sl 256 +vb +mb -bg white -fg blue -T 'OpdatÃ©r palmepadde' -e ssh garfield.nbi.dk synkronisÃ©r_palmepadde
 
 #-----------------------------------------------------------------------------
 #--  Menuen "Terminalvinduer":
@@ -100,7 +100,7 @@ AddToMenu Systemstyring
  + "Lang&som mus"    Exec xset m 0 10
  + ""                Nop
  + "&Genstart fvwm2" Restart fvwm2
- + "&Lås skærmen"    Exec xlock -bitmap ${HOME}/.skærmskåner.xpm -mode image
+ + "&LÃ¥s skÃ¦rmen"    Exec xlock -bitmap ${HOME}/.skÃ¦rmskÃ¥ner.xpm -mode image
  + "Indstillinger"   Popup Indstillinger
  + "Gentegn alt"     Refresh
  + ""                Nop

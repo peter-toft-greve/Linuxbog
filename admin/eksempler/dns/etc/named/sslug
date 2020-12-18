@@ -8,12 +8,12 @@
 
 
 ;
-; Dette domænes DNS-servere:
+; Dette domÃ¦nes DNS-servere:
 ;
 		IN	NS	ns.sslug.
 
 ;
-; Mailserveren for dette domæne:
+; Mailserveren for dette domÃ¦ne:
 ;
 		IN	MX	0	ns.sslug.
 
@@ -24,7 +24,7 @@ localhost	IN	A	127.0.0.1
 ns		IN	A	192.168.1.1
 
 ;
-; Øvrige hostnavne mappet til IP-adresser:
+; Ã˜vrige hostnavne mappet til IP-adresser:
 ;
 k6		IN	A	192.168.1.2
 

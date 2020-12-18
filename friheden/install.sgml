@@ -3,43 +3,43 @@
 <title>Linux-installation</title>
 <indexterm><primary>Installation</primary></indexterm>
 <para>
-Før vi installerer Linux, så er der nogle tanker og informationer
-der kan være gode at vide før du installerer.
+FÃ¸r vi installerer Linux, sÃ¥ er der nogle tanker og informationer
+der kan vÃ¦re gode at vide fÃ¸r du installerer.
 </para>
 
 <para>
-Vi antager i dette kapitel at du arbejder med en pc, men Linux kører
-også på andre maskintyper - og typisk skal der gøres lidt mere
-arbejde for at få alt til at køre, men det kan ofte lade sig gøre. Du
-kan få mere information i <xref linkend="Linux-paa-andre-platforme"/>.
+Vi antager i dette kapitel at du arbejder med en pc, men Linux kÃ¸rer
+ogsÃ¥ pÃ¥ andre maskintyper - og typisk skal der gÃ¸res lidt mere
+arbejde for at fÃ¥ alt til at kÃ¸re, men det kan ofte lade sig gÃ¸re. Du
+kan fÃ¥ mere information i <xref linkend="Linux-paa-andre-platforme"/>.
 </para>
 
-<!-- Køb af Linux-maskiner som er præ-installerede? -->
+<!-- KÃ¸b af Linux-maskiner som er prÃ¦-installerede? -->
 
 <para> 
-Der er i det følgende skrevet mest om Red Hat, men det er
-faktisk kun fordi SuSE-brugere også kan have glæde af at læse de
-mange generelle kommentarer, som i øjeblikket er skrevet under Red Hat
-installationen. SuSE og Mandrake har valgt at understøtte 
+Der er i det fÃ¸lgende skrevet mest om Red Hat, men det er
+faktisk kun fordi SuSE-brugere ogsÃ¥ kan have glÃ¦de af at lÃ¦se de
+mange generelle kommentarer, som i Ã¸jeblikket er skrevet under Red Hat
+installationen. SuSE og Mandrake har valgt at understÃ¸tte 
 <glossterm linkend="def-reiserfs">ReiserFS</glossterm> og flere andre 
 journaliserende filsystemet, hvilket er virkelig smart for 
 servere, hvor man hurtigt
-skal kunne komme op efter en strømafbrydelse eller lignende.  Red Hat
-satser på deres eget ext3 som tilføjer lignende funktionalitet.
+skal kunne komme op efter en strÃ¸mafbrydelse eller lignende.  Red Hat
+satser pÃ¥ deres eget ext3 som tilfÃ¸jer lignende funktionalitet.
 </para>
 
 <para>
 En anden distribution, som kan have din interesse, er <ulink
-url="http://www.debian.org/">Debian</ulink>, som ikke bør være den
-første, du starter med, men det er måske den, du ender med.
+url="http://www.debian.org/">Debian</ulink>, som ikke bÃ¸r vÃ¦re den
+fÃ¸rste, du starter med, men det er mÃ¥ske den, du ender med.
 </para>
 
 <para>
-Endelig kan det nævnes, at du også kan installere Linux via netværk,
+Endelig kan det nÃ¦vnes, at du ogsÃ¥ kan installere Linux via netvÃ¦rk,
 f.eks. via ftp. Har du problemer med at dit cd-rom-drev ikke er
-understøttet af Linux, så læs i <xref linkend="ftp-inst"/>, hvordan du
-kan komme videre.  Det kan ofte være nemmere og hurtigere end at hente
-installations-cd-rom'erne via nettet, brænde dem og installere fra
+understÃ¸ttet af Linux, sÃ¥ lÃ¦s i <xref linkend="ftp-inst"/>, hvordan du
+kan komme videre.  Det kan ofte vÃ¦re nemmere og hurtigere end at hente
+installations-cd-rom'erne via nettet, brÃ¦nde dem og installere fra
 cd'erne.  
 </para>
 
@@ -49,10 +49,10 @@ cd'erne.
 <title>Forberedelse til installation af Linux</title>
 
 <para>
-Installation er den del af Linux, som mange mener er mest besværlig.
-En del folk har gennem tiderne prøvet et par gange, før det hele
-spiller. Fortvivl ikke, gå bare i gang. Har du tekniske problemer, er
-der sikkert hjælp at hente i din nærmeste Linux-brugergruppe. Dette
+Installation er den del af Linux, som mange mener er mest besvÃ¦rlig.
+En del folk har gennem tiderne prÃ¸vet et par gange, fÃ¸r det hele
+spiller. Fortvivl ikke, gÃ¥ bare i gang. Har du tekniske problemer, er
+der sikkert hjÃ¦lp at hente i din nÃ¦rmeste Linux-brugergruppe. Dette
 kan du se mere om i <xref linkend="videre-paa-web"/>.
 </para>
 
@@ -60,29 +60,29 @@ kan du se mere om i <xref linkend="videre-paa-web"/>.
 <sect2 id="maskinelinux">
 <title>Kan min maskine bruges til Linux?</title>
 <para>
-Før du tænker på at installere, er det <emphasis>meget
-klogt</emphasis>, at du undersøger, om din hardware er understøttet i
+FÃ¸r du tÃ¦nker pÃ¥ at installere, er det <emphasis>meget
+klogt</emphasis>, at du undersÃ¸ger, om din hardware er understÃ¸ttet i
 Linux.  Du kan f.eks. i Windows bruge lidt tid under dit
 <command>kontrolpanel</command>-&gt;<command>system</command> og
-skrive ned, hvilke typer hardware-enheder du har på systemet og hvilke
+skrive ned, hvilke typer hardware-enheder du har pÃ¥ systemet og hvilke
 adresser, der bruges til netkort, grafikkort, lydkort og andet. Har du
 dette klar, bliver det nemmere at komme igennem installationen.
 </para>
 
 <para>
 Hvis du har aktiveret virusbeskyttelse i din 
-<glossterm linkend="def-BIOS">BIOS</glossterm> er det nødvendigt
-at slå dette fra mens du installerer Linux. Ellers kan Linux'
+<glossterm linkend="def-BIOS">BIOS</glossterm> er det nÃ¸dvendigt
+at slÃ¥ dette fra mens du installerer Linux. Ellers kan Linux'
 opstartsprogram, LILO, 
 ikke skrive i MBR (master boot record). Se desuden 
-"Linux - Friheden til at lære Unix".
+"Linux - Friheden til at lÃ¦re Unix".
 </para>
 
 <para>
-Generelt kan det være svært at få grafikkort, der er nyere end den
-Linux-distribution, man bruger, til at virke optimalt. Bærbare
-computere kan også være besværlige at installere, men ellers kan langt
-de fleste maskiner køre Linux med fuld udnyttelse af grafikkortet.
+Generelt kan det vÃ¦re svÃ¦rt at fÃ¥ grafikkort, der er nyere end den
+Linux-distribution, man bruger, til at virke optimalt. BÃ¦rbare
+computere kan ogsÃ¥ vÃ¦re besvÃ¦rlige at installere, men ellers kan langt
+de fleste maskiner kÃ¸re Linux med fuld udnyttelse af grafikkortet.
 </para>
 
 <sect3 id="kan-jeg-koere-linux">
@@ -94,7 +94,7 @@ de fleste maskiner køre Linux med fuld udnyttelse af grafikkortet.
 <listitem><para>
 <ulink url="http://hardwaredb.suse.de/index.php?lang=en_UK">http://hardwaredb.suse.de/index.php?lang=en_UK</ulink>
 - SuSE hardware kompatibilitets-database (kan i langt de fleste
-tilfælde også dække Red Hat).
+tilfÃ¦lde ogsÃ¥ dÃ¦kke Red Hat).
 </para></listitem>
 
 
@@ -104,66 +104,66 @@ url="http://hardware.redhat.com">http://hardware.redhat.com</ulink>
 </para></listitem>
 
 <listitem><para><ulink url="http://www.xfree86.org">http://www.xfree86.org</ulink>
-- Oversigt over, hvilke grafikkort der er understøttet af grafik til Linux.
+- Oversigt over, hvilke grafikkort der er understÃ¸ttet af grafik til Linux.
 </para></listitem>
 
 <listitem><para>
 <indexterm><primary>laptop og Linux</primary></indexterm>
 <ulink url="http://www.linux-on-laptops.com/">http://www.linux-on-laptops.com/</ulink>
 og <ulink url="http://www.linux.org/hardware/laptop.html">http://www.linux.org/hardware/laptop.html/</ulink>
-- Skal du installere Linux på en bærbar pc, så se altid disse steder.
+- Skal du installere Linux pÃ¥ en bÃ¦rbar pc, sÃ¥ se altid disse steder.
 </para></listitem>
 </itemizedlist>
 </sect3>
 </sect2>
 
 <sect2 id="klargoer">
-<title>Gør din pc klar og lav sikkerhedskopi</title>
+<title>GÃ¸r din pc klar og lav sikkerhedskopi</title>
 
 <para>
-Har du en anden harddisk, som kan bruges til at lægge Linux ind på -
-f.eks. en gammel 800 Mb eller måske 2 Gb disk, så brug denne, 
+Har du en anden harddisk, som kan bruges til at lÃ¦gge Linux ind pÃ¥ -
+f.eks. en gammel 800 Mb eller mÃ¥ske 2 Gb disk, sÃ¥ brug denne, 
 for det er en del nemmere end at skulle repartitionere harddisken.
 </para>
 
 <para>
 Hvis du starter med en Windows 95/98-maskine og skal have Linux
-installeret på den samme harddisk som Windows, skal du have delt
+installeret pÃ¥ den samme harddisk som Windows, skal du have delt
 harddisken op i to dele - en til hvert styresystem. 
 </para>
 
 <para>
-Har du Windows 2000 fyldt op på harddisken og kun én harddisk, så kan
-du få problemer med at lave nye partitioner til
+Har du Windows 2000 fyldt op pÃ¥ harddisken og kun Ã©n harddisk, sÃ¥ kan
+du fÃ¥ problemer med at lave nye partitioner til
 Linux hvis Windows 2000 bruger NTFS-filsystemet. Nyere
 Linux-distributioner - f.eks. Mandrake 7.2 - har et fint
-repartitioneringsprogram, som kan håndtere Windows 2000.
+repartitioneringsprogram, som kan hÃ¥ndtere Windows 2000.
 <indexterm><primary>Windows 2000</primary></indexterm>
 <indexterm><primary>Partitionering</primary><secondary>Windows 2000</secondary></indexterm>
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> Hvis du selv installerer Windows, så 
-vælg at installere det på en FAT-formateret harddisk og undgå
-NTFS-filsystemet. På den måde kan filer kopieres direkte fra
-Linux til Windows. Og du kan altid gøre Windows-partitionen
+<emphasis>Tip:</emphasis> Hvis du selv installerer Windows, sÃ¥ 
+vÃ¦lg at installere det pÃ¥ en FAT-formateret harddisk og undgÃ¥
+NTFS-filsystemet. PÃ¥ den mÃ¥de kan filer kopieres direkte fra
+Linux til Windows. Og du kan altid gÃ¸re Windows-partitionen
 mindre med DOS/Windows-programmet Fips. (Se <xref linkend="opdelharddisk"/>)
 </para>
 
 <para>
-I Windows er det klogt at køre en fejlsøgning på disken og derefter en
+I Windows er det klogt at kÃ¸re en fejlsÃ¸gning pÃ¥ disken og derefter en
 defragmentering. Dette finder du under egenskaber for disken under
-"Denne computer" (Windows på dansk). Evt. kan du skanne efter dårlige
-sektorer under DOS med ScanDisk. Finder du fejl på disken nu, er
-det måske tegn på, at du hellere bør købe en ny harddisk til Linux.
+"Denne computer" (Windows pÃ¥ dansk). Evt. kan du skanne efter dÃ¥rlige
+sektorer under DOS med ScanDisk. Finder du fejl pÃ¥ disken nu, er
+det mÃ¥ske tegn pÃ¥, at du hellere bÃ¸r kÃ¸be en ny harddisk til Linux.
 </para>
 
 <para>
-Før du går videre, vil det være en god idé at udskrive alle systemoplysninger
+FÃ¸r du gÃ¥r videre, vil det vÃ¦re en god idÃ© at udskrive alle systemoplysninger
 om computeren for at lette installation og
-evt. fejlfinding. Det gøres ved at gå ind i "Denne computer" og
-derefter trykke på Kontrolpanel. Dobbeltklik på System og vælg
-fanebladet "Enhedshåndtering". I bunden af vinduet vælges Udskriv. Det
+evt. fejlfinding. Det gÃ¸res ved at gÃ¥ ind i "Denne computer" og
+derefter trykke pÃ¥ Kontrolpanel. Dobbeltklik pÃ¥ System og vÃ¦lg
+fanebladet "EnhedshÃ¥ndtering". I bunden af vinduet vÃ¦lges Udskriv. Det
 kan anbefales at udskrive samtlige systemoplysninger.
 </para>
 
@@ -173,17 +173,17 @@ kan anbefales at udskrive samtlige systemoplysninger.
 </figure>
 
 <para>
-Det er nu, du bør tage en sikkerhedskopi af de vigtige data
-på din disk. Det bør ikke gå galt, hvis du læser videre og går
-forsigtigt frem. Fik vi nævnt, at du bør tage sikkerhedskopi ? :-)
+Det er nu, du bÃ¸r tage en sikkerhedskopi af de vigtige data
+pÃ¥ din disk. Det bÃ¸r ikke gÃ¥ galt, hvis du lÃ¦ser videre og gÃ¥r
+forsigtigt frem. Fik vi nÃ¦vnt, at du bÃ¸r tage sikkerhedskopi ? :-)
 </para>
 
 <para>
 <emphasis>Tip:</emphasis> Du skal bruge en diskette til installationen.
-På et tidspunkt bliver du spurgt om du vil lave en bootdiskette.
+PÃ¥ et tidspunkt bliver du spurgt om du vil lave en bootdiskette.
 Erfaringen siger at det godt kan betale sig at formatere en diskette
-i forvejen med tjek for dårlige sektorer. 
-Er disketten i stykker, så kan man erfaringsmæssigt blive noget sur den 
+i forvejen med tjek for dÃ¥rlige sektorer. 
+Er disketten i stykker, sÃ¥ kan man erfaringsmÃ¦ssigt blive noget sur den 
 dag man skal bruge disketten :-)
 </para>
 
@@ -193,47 +193,47 @@ dag man skal bruge disketten :-)
 <sect2 id="fdiskintro">
 <title>Hvad skal der ske?</title>
 <para>
-Kort fortalt: Før du installerer Linux, skal der være en partition til
-rådighed, der er stor nok til at rumme det hele (samt en
-swap-partition).  Hvor stor er et spørgsmål om, hvad du vil tage med i
-installationen - se <xref linkend="disklayout"/>.  I løbet af
-Linux-installationen vil der blive lejlighed til at repartitionere så
+Kort fortalt: FÃ¸r du installerer Linux, skal der vÃ¦re en partition til
+rÃ¥dighed, der er stor nok til at rumme det hele (samt en
+swap-partition).  Hvor stor er et spÃ¸rgsmÃ¥l om, hvad du vil tage med i
+installationen - se <xref linkend="disklayout"/>.  I lÃ¸bet af
+Linux-installationen vil der blive lejlighed til at repartitionere sÃ¥
 meget, du har behov for, inden for den plads, der nu er blevet til
-rådighed.
+rÃ¥dighed.
 </para>
 
 
 <para>
-Har du fri plads på din disk, eller har du en tom windowspartition, kan du
+Har du fri plads pÃ¥ din disk, eller har du en tom windowspartition, kan du
 med de fleste nyere Linux-distributioner blot installere fra cd-rom eller
-via nettet, og under installationen lave den eller de ønskede
+via nettet, og under installationen lave den eller de Ã¸nskede
 partitioner til filsystemer, samt swap-partitionen.
 </para>
 
 <para>
-Hvis du har Windows installeret, og ønsker at bevare det efter at
+Hvis du har Windows installeret, og Ã¸nsker at bevare det efter at
 Linux er blevet installeret, og du ikke har nok fri plads til at lave
-de ønskede Linux-partitioner, så se <xref linkend="opdelharddisk"/> for
-hvordan man kan lave Windows-partitionerne mindre, så der bliver nok
+de Ã¸nskede Linux-partitioner, sÃ¥ se <xref linkend="opdelharddisk"/> for
+hvordan man kan lave Windows-partitionerne mindre, sÃ¥ der bliver nok
 plads til Linux.
 </para>
 
 <para>
-Hvis du har Windows installeret, og ønsker at bevare det efter at Linux er
-blevet installeret, så kan du først køre
+Hvis du har Windows installeret, og Ã¸nsker at bevare det efter at Linux er
+blevet installeret, sÃ¥ kan du fÃ¸rst kÃ¸re
 <command>fdisk.exe</command> i DOS <command>Start->Luk->Genstart DOS</command> (ikke i 
 et DOS-vindue under Windows) til at slette en eller flere
-eksisterende DOS/Windows-partitioner, så der er plads til Linux.
-Linux installeres derefter bare ved siden af Windows på den fri partition.
+eksisterende DOS/Windows-partitioner, sÃ¥ der er plads til Linux.
+Linux installeres derefter bare ved siden af Windows pÃ¥ den fri partition.
 </para>
 
 <para>
-Skulle det i løbet af anstrengelserne blive nødvendigt at fjerne en
+Skulle det i lÃ¸bet af anstrengelserne blive nÃ¸dvendigt at fjerne en
 mislykket Linux-installation fra harddisken og begynde forfra med DOS,
-vil du få brug for at have en opstartsdiskette til DOS, som blandt andet skal
-indeholde DOS <command>fdisk.exe</command>.  Fdisk kan køre med en
+vil du fÃ¥ brug for at have en opstartsdiskette til DOS, som blandt andet skal
+indeholde DOS <command>fdisk.exe</command>.  Fdisk kan kÃ¸re med en
 (udokumenteret) option <command>fdisk /mbr</command>, som kan fjerne
-de registreringer, Linux måtte have lagt i diskens master boot record
+de registreringer, Linux mÃ¥tte have lagt i diskens master boot record
 (det vil vi minde dig om et par gange).
 </para>
 
@@ -245,46 +245,46 @@ de registreringer, Linux måtte have lagt i diskens master boot record
 <para>
 <indexterm><primary>Opdeling af harddisk</primary></indexterm>
 <indexterm><primary>fips</primary></indexterm>
-Harddisken skal nu deles mellem Linux og Windows. Det gøres ved, at
-du indsætter din Linux-cd-rom og finder DOS-programmet
+Harddisken skal nu deles mellem Linux og Windows. Det gÃ¸res ved, at
+du indsÃ¦tter din Linux-cd-rom og finder DOS-programmet
 <command>fips.exe</command>, som du skal starte under DOS - IKKE under
-Windows eller OS/2. Læs i øvrigt dokumentationen til Fips!  Har du to
-versioner af <command>fips.exe</command>, så brug den nyeste (fips20).
+Windows eller OS/2. LÃ¦s i Ã¸vrigt dokumentationen til Fips!  Har du to
+versioner af <command>fips.exe</command>, sÃ¥ brug den nyeste (fips20).
 </para>
 
 <para>
-Programmet <command>fips</command> vil vise dig, at du har én
+Programmet <command>fips</command> vil vise dig, at du har Ã©n
 partition med Windows (det er det mest normale). Tryk Enter for at
-komme til næste skærmbillede. Lav gerne en sikkerhedskopi til en formateret
+komme til nÃ¦ste skÃ¦rmbillede. Lav gerne en sikkerhedskopi til en formateret
 diskette ved at trykke <command>y</command> (for yes) to gange.
 </para>
 
 <para>
-Nu vil Fips foreslå, at dele disken i to partitioner,
-så du skal nu til at vurdere, hvor meget plads du vil bruge på hver af
-de to styresystemer. Brug venstre og højre pil til at ændre fordelingen,
-hvor 'Old partition' er størrelsen på din Windows-partition. Husk, at du
-bør lave noget fri plads til udvidelse af Windows-programmer,
+Nu vil Fips foreslÃ¥, at dele disken i to partitioner,
+sÃ¥ du skal nu til at vurdere, hvor meget plads du vil bruge pÃ¥ hver af
+de to styresystemer. Brug venstre og hÃ¸jre pil til at Ã¦ndre fordelingen,
+hvor 'Old partition' er stÃ¸rrelsen pÃ¥ din Windows-partition. Husk, at du
+bÃ¸r lave noget fri plads til udvidelse af Windows-programmer,
 selvom du nok senere hen vil mene, at du hellere vil have pladsen
 under Linux. Det er dit valg. Tryk derefter <command>c</command>
 for continue, og derefter genstartes maskinen med mindre plads under
 Windows. Din ekstra DOS-partition skal senere slettes for at give
-plads til mindst én Linux-partition og en Linux swap-partition.
+plads til mindst Ã©n Linux-partition og en Linux swap-partition.
 </para>
 
 <para>
-Vi kan lige nævne, at hvis du har en Windows 95 installeret, som er fra
-før 1996 (final beta release), så er der set problemer (for Windows 95), hvis
-Linux installeres på "extended partitions". Problemet
+Vi kan lige nÃ¦vne, at hvis du har en Windows 95 installeret, som er fra
+fÃ¸r 1996 (final beta release), sÃ¥ er der set problemer (for Windows 95), hvis
+Linux installeres pÃ¥ "extended partitions". Problemet
 eksisterer ikke med officielt udgivne Windows-versioner - det er kun
 final beta og tidligere, der har problemer.
 </para>
 
 <para>
-Mandrake kan krympe en DOS/VFAT-partition under installeringen, så du ikke
-skal bruge fips.exe først, men det vil være klogt at finde ud af hvor
+Mandrake kan krympe en DOS/VFAT-partition under installeringen, sÃ¥ du ikke
+skal bruge fips.exe fÃ¸rst, men det vil vÃ¦re klogt at finde ud af hvor
 meget plads du skal bruge til windows, og derfor hvor meget plads du kan
-bruge til Linux på disken.
+bruge til Linux pÃ¥ disken.
 </para>
 </sect2>
 </sect1>
@@ -293,32 +293,32 @@ bruge til Linux på disken.
 <title>Disk-partitioner</title>
 
 <para>
-Du er temmelig frit stillet med hensyn til antallet og størrelsen af
-partitionerne. Hvis du kører uden swap-partition, kan du simpelthen
-installere alt på en enkelt root-partition
+Du er temmelig frit stillet med hensyn til antallet og stÃ¸rrelsen af
+partitionerne. Hvis du kÃ¸rer uden swap-partition, kan du simpelthen
+installere alt pÃ¥ en enkelt root-partition
 (<filename>/</filename>). Mange bruger fire eller fem partitioner. Den
-følgende fordeling er ret udbredt og efter vor mening også både
+fÃ¸lgende fordeling er ret udbredt og efter vor mening ogsÃ¥ bÃ¥de
 fornuftig og fleksibel:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
- en swap-partition. Størrelsen kan diskuteres i det uendelige
- og afhænger meget af, hvad du har tænkt dig at bruge systemet
+ en swap-partition. StÃ¸rrelsen kan diskuteres i det uendelige
+ og afhÃ¦nger meget af, hvad du har tÃ¦nkt dig at bruge systemet
  til. Et eller andet sted mellem 16 Mb og 500 Mb. En
- tommelfingerregel siger, at swap-partitionens størrelse skal
- være det dobbelte af den fysiske hukommelse. Har du 32 Mb RAM
- og derover, kan du måske nøjes med en swap-størrelse, som
- svarer til RAM-størrelsen. Et råd til dig er, at 
- anvendelse af Linux uden desktop ikke kræver over 64 Mb, dvs. summen af
- fysisk hukommelse plus swap. Kører du Linux som desktop, (med
- for eksempel KDE eller Gnome) er det ikke tilrådeligt at have under 128
- Mb RAM, og 256 Mb RAM er ønskeligt. Du kan lave mange
- swap-partitioner, hvis du vil, og de kan laves på et senere
+ tommelfingerregel siger, at swap-partitionens stÃ¸rrelse skal
+ vÃ¦re det dobbelte af den fysiske hukommelse. Har du 32 Mb RAM
+ og derover, kan du mÃ¥ske nÃ¸jes med en swap-stÃ¸rrelse, som
+ svarer til RAM-stÃ¸rrelsen. Et rÃ¥d til dig er, at 
+ anvendelse af Linux uden desktop ikke krÃ¦ver over 64 Mb, dvs. summen af
+ fysisk hukommelse plus swap. KÃ¸rer du Linux som desktop, (med
+ for eksempel KDE eller Gnome) er det ikke tilrÃ¥deligt at have under 128
+ Mb RAM, og 256 Mb RAM er Ã¸nskeligt. Du kan lave mange
+ swap-partitioner, hvis du vil, og de kan laves pÃ¥ et senere
  tidspunkt, evt. bundet til en stor swapfil, som det kendes fra
- Windows. Du skal bemærke, at swap-partitioner ikke placeres i
- filtræet. Man kan således ikke gå et bestemt sted hen og se
+ Windows. Du skal bemÃ¦rke, at swap-partitioner ikke placeres i
+ filtrÃ¦et. Man kan sÃ¥ledes ikke gÃ¥ et bestemt sted hen og se
  swap-indholdet, men det er blot mere hukommelse for systemet
  (du kan med kommandoen free senere se, hvordan hukommelsen
  anvendes).
@@ -326,46 +326,46 @@ fornuftig og fleksibel:
 </listitem>
 <listitem>
  <para>
-  en partition på 50 Mb til <filename>/boot</filename>, som lægges før
-  cylinder 1024 på disken. Ældre BIOS-typer har en
-  fejl, som gør dette nødvendigt. Denne partition bør
-  du kun lave, hvis du vil køre LILO - læs mere i
-  "Linux - Friheden til at lære Unix".
+  en partition pÃ¥ 50 Mb til <filename>/boot</filename>, som lÃ¦gges fÃ¸r
+  cylinder 1024 pÃ¥ disken. Ã†ldre BIOS-typer har en
+  fejl, som gÃ¸r dette nÃ¸dvendigt. Denne partition bÃ¸r
+  du kun lave, hvis du vil kÃ¸re LILO - lÃ¦s mere i
+  "Linux - Friheden til at lÃ¦re Unix".
  </para>
 </listitem>
 <listitem>
  <para>
-  en partition på 1500-3000 Mb til
-  rodkataloget, dvs. <filename>/</filename>, afhængig af om du intallerer både
+  en partition pÃ¥ 1500-3000 Mb til
+  rodkataloget, dvs. <filename>/</filename>, afhÃ¦ngig af om du intallerer bÃ¥de
   KDE og Gnome, OpenOffice.org, og diverse serverprogrammel.
  </para>
 </listitem>
 <listitem> 
  <para>
  en partition til brugernes egne data <filename>/home</filename>,
- størrelse afhængig af antal brugere og deres behov.  Man kan her også
+ stÃ¸rrelse afhÃ¦ngig af antal brugere og deres behov.  Man kan her ogsÃ¥
  have liggende alt programmel der skal overleve en systemopgradering
  eller skift til anden distribution, f.eks. i diverse kataloger i
- <filename>/home</filename> for de enkelte applikationer, såsom
+ <filename>/home</filename> for de enkelte applikationer, sÃ¥som
  webserver, databaser, <filename>/usr/local</filename> mm.
  </para>
 </listitem>
 </itemizedlist>
 
 <sect2 id="navne-partitioner">
-<title>Navne på harddisk-partitioner</title>
+<title>Navne pÃ¥ harddisk-partitioner</title>
 
 <para>
 Harddisknummerering i Windows og Linux er forskellig.  I Linux kaldes
 alle systemenheder - som f.eks. harddiske - for enheder (eng. devices) og har
-fortløbende bogstavnavne. De ligger alle i kataloget
+fortlÃ¸bende bogstavnavne. De ligger alle i kataloget
 <filename>/dev</filename>
 </para>
 <indexterm><primary>IDE-diske</primary></indexterm>
 <indexterm><primary>SCSI-diske</primary></indexterm>
 
 <para>
-Første IDE-disk  = <filename>/dev/hda</filename>
+FÃ¸rste IDE-disk  = <filename>/dev/hda</filename>
 </para>
 <para>
 Anden IDE-disk  = <filename>/dev/hdb</filename>
@@ -377,12 +377,12 @@ Tredje IDE-disk = <filename>/dev/hdc</filename>
 Fjerde IDE-disk = <filename>/dev/hdd</filename>
 </para>
 <para>
-Første SCSI-disk = <filename>/dev/sda</filename> osv.
+FÃ¸rste SCSI-disk = <filename>/dev/sda</filename> osv.
 </para>
 
 <para>
-Partitioner på en disk har numre svarende til disken, f.eks. er
-<filename>/dev/hda2</filename> den anden partition på den første IDE-disk.
+Partitioner pÃ¥ en disk har numre svarende til disken, f.eks. er
+<filename>/dev/hda2</filename> den anden partition pÃ¥ den fÃ¸rste IDE-disk.
 </para>
 </sect2>
 </sect1>
@@ -396,7 +396,7 @@ Et par store forskelle mellem filsystemet i Linux og f.eks. Windows
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-I Linux betyder store og små bogstaver forskelligt - dvs. filerne
+I Linux betyder store og smÃ¥ bogstaver forskelligt - dvs. filerne
 <filename>hej.html</filename> og <filename>HEJ.html</filename> er
 to forskellige filer.
  </para>
@@ -404,11 +404,11 @@ to forskellige filer.
 
 <listitem> 
  <para>
-I Linux arbejder du ud fra et filtræ, som det kendes fra Windows og
+I Linux arbejder du ud fra et filtrÃ¦, som det kendes fra Windows og
 DOS. I Windows kan du have flere drev
 f.eks. <filename>C:\</filename>, <filename>D:\</filename> og
 <filename>E:\</filename> svarende til to harddisk-partitioner og et
-cd-rom-drev. I Linux findes der ikke drev, men kun et filtræ der
+cd-rom-drev. I Linux findes der ikke drev, men kun et filtrÃ¦ der
 starter i roden <filename>/</filename>, og her kan du oprette
 kataloger, der svarer til harddisk-partitioner,
 f.eks. <filename>/cdrev</filename> kunne svare til
@@ -419,31 +419,31 @@ til <filename>E:\</filename>.
 
 <listitem> 
  <para>
-I Windows adskiller man kataloger og filnavne med baglæns skåstreg
-(eng: backslash) og her anvender Linux ligesom UNIX-familien forlæns
-skråstreg (eng: slash). Dvs. der findes i Linux en fil
-<filename>/usr/bin/ls</filename>, når filen <filename>ls</filename>
+I Windows adskiller man kataloger og filnavne med baglÃ¦ns skÃ¥streg
+(eng: backslash) og her anvender Linux ligesom UNIX-familien forlÃ¦ns
+skrÃ¥streg (eng: slash). Dvs. der findes i Linux en fil
+<filename>/usr/bin/ls</filename>, nÃ¥r filen <filename>ls</filename>
 ligger i kataloget <filename>/usr/bin</filename>. 
  </para>
 </listitem>
 
 <listitem> 
  <para>
-  På et linuxsystem identificeres IDE-diske som <filename>/dev/hda</filename>
-  (den første harddisk i maskinen - master på det første IDE-kabel),
-  <filename>/dev/hdb</filename>, <filename>/dev/hdc</filename> og så videre.
+  PÃ¥ et linuxsystem identificeres IDE-diske som <filename>/dev/hda</filename>
+  (den fÃ¸rste harddisk i maskinen - master pÃ¥ det fÃ¸rste IDE-kabel),
+  <filename>/dev/hdb</filename>, <filename>/dev/hdc</filename> og sÃ¥ videre.
   SCSI-enheder identificeres tilsvarende som <filename>/dev/sda</filename>,
-  <filename>/dev/sdb</filename>, <filename>/dev/sdc</filename> og så videre.
+  <filename>/dev/sdb</filename>, <filename>/dev/sdc</filename> og sÃ¥ videre.
  </para>
 </listitem>
 
 <listitem> 
  <para>
-Partitioner på en harddisk under Linux nummereres som ud fra
-harddisk-nummer, så den første harddisk
+Partitioner pÃ¥ en harddisk under Linux nummereres som ud fra
+harddisk-nummer, sÃ¥ den fÃ¸rste harddisk
 (<filename>/dev/hda</filename>) har partitionerne
 <filename>/dev/hda1</filename>, <filename>/dev/hda2</filename>
-osv. svarende til den første partition, anden partition og så
+osv. svarende til den fÃ¸rste partition, anden partition og sÃ¥
 fremdeles.
  </para>
 </listitem>
@@ -451,39 +451,39 @@ fremdeles.
 
 <listitem> 
  <para>
-Katalogerne i et UNIX-system såsom Linux er normalt som følger:
+Katalogerne i et UNIX-system sÃ¥som Linux er normalt som fÃ¸lger:
  </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
- <filename>/bin/</filename> indeholder binære programmer til brugere og system.
+ <filename>/bin/</filename> indeholder binÃ¦re programmer til brugere og system.
  </para>
 </listitem>
 <listitem>
  <para>
-<filename>/boot/</filename> indeholder opsætning af opstart af LILO hhv. GRUB boot-loaderen.
+<filename>/boot/</filename> indeholder opsÃ¦tning af opstart af LILO hhv. GRUB boot-loaderen.
  </para>
 </listitem>
 <listitem> 
  <para>
 <filename>/dev/</filename> indeholder en serie af meget specielle filer, som hver 
-peger på en hardware-enhed (eng: device). Igennem disse enheder tilgås hardware.
+peger pÃ¥ en hardware-enhed (eng: device). Igennem disse enheder tilgÃ¥s hardware.
  </para>
 </listitem>
 
 <listitem>
 <indexterm><primary>/etc/</primary></indexterm>
  <para>
-<filename>/etc/</filename> indeholder opsætningsfiler for systemer - typisk
-tekst-filer, som kun systemadministratoren "root" kan ændre.
+<filename>/etc/</filename> indeholder opsÃ¦tningsfiler for systemer - typisk
+tekst-filer, som kun systemadministratoren "root" kan Ã¦ndre.
  </para>
 </listitem>
 
 <listitem> 
 <indexterm><primary>/home/</primary></indexterm>
  <para>
-<filename>/home/</filename> indeholder underkataloger for hver af brugerne, så brugeren 
+<filename>/home/</filename> indeholder underkataloger for hver af brugerne, sÃ¥ brugeren 
 "tyge" har hjemmekatalog <filename>/home/tyge</filename> osv.
  </para>
 </listitem>
@@ -500,7 +500,7 @@ det som skal til at drive systemet.
 <listitem>
 <indexterm><primary>/mnt/</primary></indexterm>
  <para>
-<filename>/mnt/</filename> her monterer man typisk ikke-stationære enheder ind, såsom
+<filename>/mnt/</filename> her monterer man typisk ikke-stationÃ¦re enheder ind, sÃ¥som
 cd-rom, floppy-drev og tilsvarende.
  </para>
 </listitem>
@@ -509,15 +509,15 @@ cd-rom, floppy-drev og tilsvarende.
  <para>
 <filename>/proc/</filename> er et virtuelt filsystem (lever i RAM),
 som indeholder en masse information om alle de processer,
-der kører samt alle de hardware-enheder systemer kommunikerer med. Dette
+der kÃ¸rer samt alle de hardware-enheder systemer kommunikerer med. Dette
 er beskrevet i bogen "Linux - Friheden til systemadministration".
  </para>
 </listitem>
 
 <listitem>
  <para>
-<filename>/sbin/</filename> indeholder binære system-programmer, som brugeren
-ikke skal køre.
+<filename>/sbin/</filename> indeholder binÃ¦re system-programmer, som brugeren
+ikke skal kÃ¸re.
  </para>
 </listitem>
 
@@ -548,7 +548,7 @@ nedlukning af maskinen.
 
 <listitem> 
  <para>
-<filename>/var/</filename> er til filer som ændrer sig over tiden f.eks. logfiler.
+<filename>/var/</filename> er til filer som Ã¦ndrer sig over tiden f.eks. logfiler.
  </para>
 </listitem>
 
@@ -563,26 +563,26 @@ nedlukning af maskinen.
 
 <para>
 I Windows ligger systemet ofte i <filename>c:\windows</filename> og
-der er en række faste kataloger i dette katalog, hvor man kan lægge
-skrifttyper, hjælpefiler, menuer og andet. På samme måde er navnet på
+der er en rÃ¦kke faste kataloger i dette katalog, hvor man kan lÃ¦gge
+skrifttyper, hjÃ¦lpefiler, menuer og andet. PÃ¥ samme mÃ¥de er navnet pÃ¥
 katalogerne i roden af et Linux-styresystem helt faste.  Brugere
 har kun adgang til at oprette kataloger i deres hjemmekatalog, der
-normalt findes i <filename>/home/mitbrugernavn</filename>, på den måde
-undgår man at brugere piller ved styresystemet og andre brugeres
-filer - det har kun administratoren lov til at gøre. Administratoren
+normalt findes i <filename>/home/mitbrugernavn</filename>, pÃ¥ den mÃ¥de
+undgÃ¥r man at brugere piller ved styresystemet og andre brugeres
+filer - det har kun administratoren lov til at gÃ¸re. Administratoren
 (root) har hjemmekatalog i <filename>/root</filename>..
 </para>
 
 <para>
 <emphasis>Tip:</emphasis> Du kan efter installationen med <command>man
-7 hier</command> læse mere om filtræet.
+7 hier</command> lÃ¦se mere om filtrÃ¦et.
 </para>
 
 <para>
-Der er mange andre dele man kunne gå nærmere ind på.
-FHS er beskrevet på i Filesystem Hierarchy Standard 
+Der er mange andre dele man kunne gÃ¥ nÃ¦rmere ind pÃ¥.
+FHS er beskrevet pÃ¥ i Filesystem Hierarchy Standard 
 <ulink url="http://www.pathname.com/fhs/">http://www.pathname.com/fhs/</ulink>
-og Red Hat's udførelse er beskrevet i 
+og Red Hat's udfÃ¸relse er beskrevet i 
 <ulink url="http://www.redhat.com/docs/manuals/linux/RHL-7.3-Manual/ref-guide/s1-filesystem-fhs.html">http://www.redhat.com/docs/manuals/linux/RHL-7.3-Manual/ref-guide/s1-filesystem-fhs.html</ulink>.
 </para>
 

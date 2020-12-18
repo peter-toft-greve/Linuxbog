@@ -3,63 +3,63 @@
 
     
 <sect1 id="oooo-typografi-aendre">
-  <title>Ændre en typografi</title>
+  <title>Ã†ndre en typografi</title>
 
-<para>Der er to måder at ændre indholdet af en typografi <emphasis>X</emphasis>. Den ene
+<para>Der er to mÃ¥der at Ã¦ndre indholdet af en typografi <emphasis>X</emphasis>. Den ene
     (og mest overskuelige) metode er:</para>
 
 <orderedlist>
       <listitem>
 
-<para>Åbn stylisten og klik på typografien <emphasis>X</emphasis>.</para>
+<para>Ã…bn stylisten og klik pÃ¥ typografien <emphasis>X</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Højreklik på stylisten og vælg <emphasis>Modificer</emphasis>.</para>
+<para>HÃ¸jreklik pÃ¥ stylisten og vÃ¦lg <emphasis>Modificer</emphasis>.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Lav så ændringerne på de relevante faneblade.</para>
+<para>Lav sÃ¥ Ã¦ndringerne pÃ¥ de relevante faneblade.</para>
 
 <para>Fanebladene er de samme som under <emphasis>Formater/Tegn</emphasis> og
-        <emphasis>Formater/Afsnit</emphasis>. I tillæg er der fanebladet <emphasis>Administrer</emphasis>
+        <emphasis>Formater/Afsnit</emphasis>. I tillÃ¦g er der fanebladet <emphasis>Administrer</emphasis>
         (se figuren nedenfor):</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para><emphasis>Navn</emphasis> er navnet på typografien (du kan ikke ændre navnet
-            på de indbyggede typografier).</para>
+<para><emphasis>Navn</emphasis> er navnet pÃ¥ typografien (du kan ikke Ã¦ndre navnet
+            pÃ¥ de indbyggede typografier).</para>
 
 </listitem>
 
   <listitem>
 
-<para><emphasis>Næste typografi</emphasis> er en typografi, som automatisk bliver
-            tildelt det næste afsnit, når du skifter afsnit ved at taste
-            <emphasis>Enter</emphasis>. På figuren kan du se, at efter en <emphasis>Overskrift
-            1</emphasis> følger automatisk en <emphasis>Brødtekst</emphasis>. Dette felt bruges
+<para><emphasis>NÃ¦ste typografi</emphasis> er en typografi, som automatisk bliver
+            tildelt det nÃ¦ste afsnit, nÃ¥r du skifter afsnit ved at taste
+            <emphasis>Enter</emphasis>. PÃ¥ figuren kan du se, at efter en <emphasis>Overskrift
+            1</emphasis> fÃ¸lger automatisk en <emphasis>BrÃ¸dtekst</emphasis>. Dette felt bruges
             kun i afsnitstypografier.</para>
 
 </listitem>
 
   <listitem>
 
-<para><emphasis>Kædet med</emphasis> angiver den typografi, som den aktuelle
-            typografi bygger på. På figuren kan du se, at <emphasis>Overskrift 1</emphasis>
-            bygger på <emphasis>Overskrift</emphasis>. Dvs. at indholdet i typografien
-            <emphasis>Overskrift</emphasis> også har betydning for typografien
+<para><emphasis>KÃ¦det med</emphasis> angiver den typografi, som den aktuelle
+            typografi bygger pÃ¥. PÃ¥ figuren kan du se, at <emphasis>Overskrift 1</emphasis>
+            bygger pÃ¥ <emphasis>Overskrift</emphasis>. Dvs. at indholdet i typografien
+            <emphasis>Overskrift</emphasis> ogsÃ¥ har betydning for typografien
             <emphasis>Overskrift 1</emphasis>; man siger at indholdet <emphasis>arves</emphasis> .</para>
 
 </listitem>
 
   <listitem>
 
-<para>Rammen med overskriften <emphasis>Indeholder</emphasis> giver et resumé af
+<para>Rammen med overskriften <emphasis>Indeholder</emphasis> giver et resumÃ© af
             formateringen i denne typografi. Du kan se, at <emphasis>Overskrift
             1</emphasis> indeholder skrifttypen Helmet i 32&nbsp;punkter, fed,
             kursiv. Du kan ikke se, hvad der eventuelt er arvet fra
@@ -76,25 +76,25 @@
 <graphic fileref="stylistadministrer.&magic;" scale="60"></graphic>
 </figure>
 
-<para>Den anden metode til at ændre en typografi er:</para>
+<para>Den anden metode til at Ã¦ndre en typografi er:</para>
 
 <orderedlist>
       <listitem>
 
-<para>Lav de ændringer, som ønskes, til et afsnit hhv. en tekst der er
-        formateret med typografien <emphasis>X</emphasis> med de sædvanlige redskaber.</para>
+<para>Lav de Ã¦ndringer, som Ã¸nskes, til et afsnit hhv. en tekst der er
+        formateret med typografien <emphasis>X</emphasis> med de sÃ¦dvanlige redskaber.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Placer markøren I afsnittet hhv. markér teksten.</para>
+<para>Placer markÃ¸ren I afsnittet hhv. markÃ©r teksten.</para>
 
 </listitem>
 
       <listitem>
 
-<para>Åbn stylisten, klik på den relevante knap
+<para>Ã…bn stylisten, klik pÃ¥ den relevante knap
 <figure float="1" id="fig-ooo-stylisttegntypografier-aendre">
 <title>Tegn typografier</title>
 <graphic fileref="stylisttegntypografier.&magic;" scale="60"></graphic>
@@ -109,7 +109,7 @@
 
       <listitem>
 
-<para>Klik på knappen <emphasis>Opdater typografi</emphasis> :
+<para>Klik pÃ¥ knappen <emphasis>Opdater typografi</emphasis> :
 <figure float="1" id="fig-ooo.stylistopdater">
 <title>Opdater stylist</title>
 <graphic fileref="stylistopdater.&magic;" scale="60"></graphic>
@@ -118,5 +118,5 @@
 
 </listitem>
     </orderedlist>
-</sect1>    <!--   8.6. Ændre en typografi -->
+</sect1>    <!--   8.6. Ã†ndre en typografi -->
 

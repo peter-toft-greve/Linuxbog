@@ -22,10 +22,10 @@
 
  <para>
   Ada er et sprog der er udviklet til store projekter hvor det er
-  vigtigt at der ikke er fejl i systemerne, men det kan også med
+  vigtigt at der ikke er fejl i systemerne, men det kan ogsÃ¥ med
   fordel bruges til mindre projekter.  Den nye GNU Visual Debugger er
-  et eksempel på et "mindre" Ada-projekt.  Blandt de større kan man
-  for eksempel nævne Boeing 777-serien eller det nye franske
+  et eksempel pÃ¥ et "mindre" Ada-projekt.  Blandt de stÃ¸rre kan man
+  for eksempel nÃ¦vne Boeing 777-serien eller det nye franske
   hangarskib "Charles de Gaulle".
  </para>
 
@@ -33,20 +33,20 @@
   <indexterm><primary>systemprogrammering</primary></indexterm>
 
   En af Adas styrker er systemprogrammering hvor man ofte har brug for at
-  implementere abstraktioner af systemspecifikke ting som bitmønstre og
-  portadresser på en effektiv måde.
+  implementere abstraktioner af systemspecifikke ting som bitmÃ¸nstre og
+  portadresser pÃ¥ en effektiv mÃ¥de.
  </para>
 
  <para>
   <indexterm><primary>flytbarhed</primary></indexterm>
-  <indexterm><primary>arkitekturuafhængighed</primary></indexterm>
+  <indexterm><primary>arkitekturuafhÃ¦ngighed</primary></indexterm>
 
-  I det omfang man ikke direkte gør sig umage med at skrive et
+  I det omfang man ikke direkte gÃ¸r sig umage med at skrive et
   Ada-program til en bestemt arkitektur (processor, andet isenkram og
-  eventuelt styresystem), kan man regne med at det fungerer ens på
-  alle systemer.  Dele af Ada er selvfølgelig nødt til at være
-  systemspecifikke &ndash; det gælder for eksempel hvor store heltal man kan
-  regne med &ndash; men enhver Ada-oversætter skal komme med dokumentation
+  eventuelt styresystem), kan man regne med at det fungerer ens pÃ¥
+  alle systemer.  Dele af Ada er selvfÃ¸lgelig nÃ¸dt til at vÃ¦re
+  systemspecifikke &ndash; det gÃ¦lder for eksempel hvor store heltal man kan
+  regne med &ndash; men enhver Ada-oversÃ¦tter skal komme med dokumentation
   af hvordan de systemspecifikke dele er lavet i den.
  </para>
 
@@ -70,8 +70,8 @@
   Ada har indbygget adgang til biblioteker skrevet i andre sprog.
   <ulink
   url="http://www.adaic.com/standards/ada95.html">Standarden</ulink>
-  beskriver grænsesnittet til Cobol, C og Fortran, men GNU Ada kommer
-  også med grænsesnit til Java og C++.  Du har således let adgang til
+  beskriver grÃ¦nsesnittet til Cobol, C og Fortran, men GNU Ada kommer
+  ogsÃ¥ med grÃ¦nsesnit til Java og C++.  Du har sÃ¥ledes let adgang til
   at genbruge gammel kode skrevet i andre sprog.
  </para>
 
@@ -83,16 +83,16 @@
    <secondary>Ada</secondary>
   </indexterm>
 
-  GNU Ada oversætteren (også kendt som GNAT) blev udviklet parallelt
+  GNU Ada oversÃ¦tteren (ogsÃ¥ kendt som GNAT) blev udviklet parallelt
   med den seneste ISO-standard for Ada (ISO/IEC 8652:1995) og var
   allerede da standarden udkom i februar 1995, overordentlig brugbar.
-  I dag er det en oversætter i en kvalitet der gør at mange store
-  firmaer vælger GNU Ada når de har brug for en Ada-oversætter.  GNU
-  Ada fås blandt andet til Linux, DOS, Digital Unix, AIX, OS/2 og
-  Windows. Udviklerne bag GNU Ada gør meget ud af at oversætteren
-  følger ISO-standarden for Ada.  &mdash;  Det at følge standarderne
-  er i det hele taget noget man går meget op i i Ada-miljøet.  Siden
-  GCC 3.1 har GNAT været integreret i den officielle GCC-distribution.
+  I dag er det en oversÃ¦tter i en kvalitet der gÃ¸r at mange store
+  firmaer vÃ¦lger GNU Ada nÃ¥r de har brug for en Ada-oversÃ¦tter.  GNU
+  Ada fÃ¥s blandt andet til Linux, DOS, Digital Unix, AIX, OS/2 og
+  Windows. Udviklerne bag GNU Ada gÃ¸r meget ud af at oversÃ¦tteren
+  fÃ¸lger ISO-standarden for Ada.  &mdash;  Det at fÃ¸lge standarderne
+  er i det hele taget noget man gÃ¥r meget op i i Ada-miljÃ¸et.  Siden
+  GCC 3.1 har GNAT vÃ¦ret integreret i den officielle GCC-distribution.
  </para>
 
 <!--
@@ -109,10 +109,10 @@
  </indexterm>
 
  <para>
-  Vi følger traditionen og begynder med "Hello World"-programmet, der ofte er
-  det eksempel man bruger, når man skal præsentere et programmeringssprog.
-  Programmet skriver en kort tekst, Hej SSLUG, ud på skærmen og afslutter.
-  Indtast følgende tekst (brug <command>emacs</command>,
+  Vi fÃ¸lger traditionen og begynder med "Hello World"-programmet, der ofte er
+  det eksempel man bruger, nÃ¥r man skal prÃ¦sentere et programmeringssprog.
+  Programmet skriver en kort tekst, Hej SSLUG, ud pÃ¥ skÃ¦rmen og afslutter.
+  Indtast fÃ¸lgende tekst (brug <command>emacs</command>,
   <command>pico</command> eller <command>vi</command>), og gem det som
   <filename>hej_sslug.adb</filename>.
  </para>
@@ -123,10 +123,10 @@
 
  <para>
   <indexterm>
-   <primary>oversætte</primary>
+   <primary>oversÃ¦tte</primary>
    <secondary>Ada-programmer</secondary>
   </indexterm>
-  I kataloget, hvor filen er gemt, kan programmet nu oversættes ved at skrive
+  I kataloget, hvor filen er gemt, kan programmet nu oversÃ¦ttes ved at skrive
 <screen>
 <prompt>hven% </prompt><userinput>gnatmake hej_sslug</userinput>
 </screen>
@@ -134,11 +134,11 @@
 
  <para>
   <indexterm><primary>gnatmake</primary></indexterm>
-  Ada-oversætteren kaldes med kommandoen <command>gnatmake</command>.
+  Ada-oversÃ¦tteren kaldes med kommandoen <command>gnatmake</command>.
  </para>
 
  <para>
-  Det oversatte Ada-program, <filename>hej_sslug</filename>, køres ved at
+  Det oversatte Ada-program, <filename>hej_sslug</filename>, kÃ¸res ved at
   skrive navnet i en <command>xterm</command> eller lignende:
  </para>
 
@@ -149,7 +149,7 @@ Hej SSLUG
 </screen>
 
  <para>
-  Punktummet og skråstregen foran programmets navn bruges til at fortælle
+  Punktummet og skrÃ¥stregen foran programmets navn bruges til at fortÃ¦lle
   systemet at programmet ligger i det aktuelle katalog og ikke et af de steder,
   hvor systemet forventer at finde programmer.
  </para>
@@ -165,17 +165,17 @@ Hej SSLUG
    <secondary>Ada</secondary>
   </indexterm>
 
-  Ada har, i modsætning til de fleste andre programmeringssprog,
+  Ada har, i modsÃ¦tning til de fleste andre programmeringssprog,
   indbygget mulighed for at skrive programmer hvor forskellige dele
-  af programmet kører parallelt med hinanden.  Man kan for eksempel
+  af programmet kÃ¸rer parallelt med hinanden.  Man kan for eksempel
   benytte parallelprogrammering hvis man vil lade sit program fordele
-  sig på alle computerens processorer, eller hvis forskellige dele af
-  programmet skal køre på forskellige maskiner.
+  sig pÃ¥ alle computerens processorer, eller hvis forskellige dele af
+  programmet skal kÃ¸re pÃ¥ forskellige maskiner.
  </para>
 
  <para>
   Du kan finde en installationsvejledning til GNU Ada i <xref
-  linkend="installation-ada"/> og henvisninger til bøger og websteder
+  linkend="installation-ada"/> og henvisninger til bÃ¸ger og websteder
   om Ada i <xref linkend="boeger-ada"/>.
  </para>
 
@@ -183,12 +183,12 @@ Hej SSLUG
  <!-- "Hej X"        - Gtkada og gettext -->
 
  <example id="sprog-ada-flaskesang">
-  <title>»99 bottles of beer on the wall«</title>
+  <title>Â»99 bottles of beer on the wallÂ«</title>
 
   <para>
-   Som et eksempel på hvordan man bruger forskellige kontrolstrukturer i Ada,
-   kan vi se på dette lille program der udskriver teksten til sangen
-   »99 bottles of beer on the wall«:
+   Som et eksempel pÃ¥ hvordan man bruger forskellige kontrolstrukturer i Ada,
+   kan vi se pÃ¥ dette lille program der udskriver teksten til sangen
+   Â»99 bottles of beer on the wallÂ«:
 <programlisting>
 &eksempler-flaskesang-ada;
 </programlisting>
@@ -197,7 +197,7 @@ Hej SSLUG
   <itemizedlist>
    <listitem>
     <para>
-     Den første linje i kildeteksten (<literal>with</literal> ...) importerer
+     Den fÃ¸rste linje i kildeteksten (<literal>with</literal> ...) importerer
      de pakker vi skal bruge i programmet.
     </para>
    </listitem>
@@ -213,10 +213,10 @@ Hej SSLUG
 
    <listitem>
     <para>
-     I dette tilfælde er der to deklarationer; en procedure til at skrive
-     antallet af flasker pænt med korrekte entals- og flertalsformer, og en
-     <literal>use</literal>-deklaration der gør de nævnte pakkers indhold
-     direkte synligt i resten af proceduren (så man ikke behøver at foranstille
+     I dette tilfÃ¦lde er der to deklarationer; en procedure til at skrive
+     antallet af flasker pÃ¦nt med korrekte entals- og flertalsformer, og en
+     <literal>use</literal>-deklaration der gÃ¸r de nÃ¦vnte pakkers indhold
+     direkte synligt i resten af proceduren (sÃ¥ man ikke behÃ¸ver at foranstille
      pakkernes navn).
     </para>
    </listitem>
@@ -225,13 +225,13 @@ Hej SSLUG
   <para>
    Hvis du gemmer <ulink
    url="http://&linuxbogurl;/program/eksempler/bottles.ada">programmets
-   kildetekst</ulink> i filen <filename>bottles.adb</filename> og i øvrigt
-   har installeret GCC's Ada-oversætter, så kan du oversætte det med
+   kildetekst</ulink> i filen <filename>bottles.adb</filename> og i Ã¸vrigt
+   har installeret GCC's Ada-oversÃ¦tter, sÃ¥ kan du oversÃ¦tte det med
    kommandoen:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>gnatmake bottles.ada -cargs -gnati1 -gnatf -gnato -fstack-check</userinput>
 </screen>
-   og dernæst udføre det med kommandoen:
+   og dernÃ¦st udfÃ¸re det med kommandoen:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>./bottles</userinput>
 99 bottles
@@ -246,27 +246,27 @@ No bottles of beer on the wall.
 
   <para>
    I eksemplet <xref linkend="sprog-ada-flaskesang"/> bruger vi kommandoen
-   <command>gnatmake</command> med en lang række tilvalg der er nødvendige
-   for at få GCC's Ada-oversætter til at opføre sig korrekt (som der står i
+   <command>gnatmake</command> med en lang rÃ¦kke tilvalg der er nÃ¸dvendige
+   for at fÃ¥ GCC's Ada-oversÃ¦tter til at opfÃ¸re sig korrekt (som der stÃ¥r i
    Ada-standarden).  Dem er der ikke nogen grund til selv at skulle skrive
-   hver gang man skal oversætte et program.  Hvis man indsætter koden:
+   hver gang man skal oversÃ¦tte et program.  Hvis man indsÃ¦tter koden:
 <programlisting>
 function gm () {
    gnatmake ${*} -cargs -gnati1 -gnatf -gnato -fstack-check
 }
 </programlisting>
-   i <filename>${HOME}/.zshrc</filename>, vil man i Zsh kunne nøjes med at
+   i <filename>${HOME}/.zshrc</filename>, vil man i Zsh kunne nÃ¸jes med at
    skrive:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>gm bottles.ada</userinput>
 </screen>
-   når man skal oversætte programmet fra eksemplet <xref
+   nÃ¥r man skal oversÃ¦tte programmet fra eksemplet <xref
    linkend="sprog-ada-flaskesang"/>.
   </para>
 
   <para>
-   Det kan være nyttigt med lidt mere detaljerede fejlmeddelelser end »der er
-   en fejl på linje 17«.  Derfor bør man udvide definitionen ovenfor med
+   Det kan vÃ¦re nyttigt med lidt mere detaljerede fejlmeddelelser end Â»der er
+   en fejl pÃ¥ linje 17Â«.  Derfor bÃ¸r man udvide definitionen ovenfor med
    tilvalget <literal>-gnatv</literal>:
 <programlisting>
 function gm () {

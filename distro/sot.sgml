@@ -1,14 +1,14 @@
 <!-- $Id$ -->
 <chapter id="distro-sot">
-<title>(Dødt projekt) SOT Linux</title>
+<title>(DÃ¸dt projekt) SOT Linux</title>
 <indexterm><primary>SOT Linux</primary></indexterm>
 <indexterm><primary>distribution</primary><secondary>SOT Linux</secondary></indexterm>
 <para>
 SOT er en Linux distribution, som har et par
-år på bagen. Det styres af et finsk firma, som
-tjener penge på at sælge Linux - og samtidig
+Ã¥r pÃ¥ bagen. Det styres af et finsk firma, som
+tjener penge pÃ¥ at sÃ¦lge Linux - og samtidig
 stiller SOT deres Linux distribution "SOT Linux" til
-rådighed via fri download på 
+rÃ¥dighed via fri download pÃ¥ 
 <ulink url="http://www.sotlinux.org/en/">http://www.sotlinux.org/en/</ulink>.
 </para>
 
@@ -18,20 +18,20 @@ rådighed via fri download på
 </figure>
 
  <sect1 id="distro-sot-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for SOT Linux</secondary>
   </indexterm>
 
   <para>
-   SOT Linux henvender sig til de engelske, finske og russiske sprogområder.
+   SOT Linux henvender sig til de engelske, finske og russiske sprogomrÃ¥der.
   </para>
 
 <para>
 Der er to varianter af SOT Linux, en desktop-version og
-en server-version. Her fokuseres på desktop-versionen i den engelske
+en server-version. Her fokuseres pÃ¥ desktop-versionen i den engelske
 variant.
 </para>
 
@@ -46,11 +46,11 @@ variant.
   </indexterm>
 
 <para>
-SOT Linux er ikke så svær at installere, (men heller ikke den
-nemmeste). Man føres igennem grafiske menuer under installationen. 
-Et minus er at det foregår
-på engelsk (finsk og russisk er også mulige).
-Først klikker man sig til egen tidszone.
+SOT Linux er ikke sÃ¥ svÃ¦r at installere, (men heller ikke den
+nemmeste). Man fÃ¸res igennem grafiske menuer under installationen. 
+Et minus er at det foregÃ¥r
+pÃ¥ engelsk (finsk og russisk er ogsÃ¥ mulige).
+FÃ¸rst klikker man sig til egen tidszone.
 </para>
 
 <figure id="distro-sotinstall-fig" float="1">
@@ -59,22 +59,22 @@ Først klikker man sig til egen tidszone.
 </figure>
 
 <para>
-Herefter vælger man i næste menu mus. 
+Herefter vÃ¦lger man i nÃ¦ste menu mus. 
 </para>
 
 <para>
-Dernæst kommer valg af kerne-moduler. Det bemærkes, at der er 
+DernÃ¦st kommer valg af kerne-moduler. Det bemÃ¦rkes, at der er 
 en drop-ned liste med andre moduler end de lyd-moduler som
-vises på skærmen. SOT Linux autodetekterede 
-alt den hardware jeg havde, så der var ikke brug for at hjælpe.
-Hvis man skal have andre moduler ind, så skal man kende Linux
-ret godt før man ved hvad de relevante moduler hedder.
+vises pÃ¥ skÃ¦rmen. SOT Linux autodetekterede 
+alt den hardware jeg havde, sÃ¥ der var ikke brug for at hjÃ¦lpe.
+Hvis man skal have andre moduler ind, sÃ¥ skal man kende Linux
+ret godt fÃ¸r man ved hvad de relevante moduler hedder.
 </para>
 
 
 <para>
-Sidenhen kommer opsætning af harddisk partitioner, root password og
-bruger-password, skærm, printer. Det følger den halvcirkel som ses på følgende 
+Sidenhen kommer opsÃ¦tning af harddisk partitioner, root password og
+bruger-password, skÃ¦rm, printer. Det fÃ¸lger den halvcirkel som ses pÃ¥ fÃ¸lgende 
 billede.
 </para>
 
@@ -93,9 +93,9 @@ Der var et par problemer ved installation
      <title>X</title>
 
      <para>
-      Det virkede ikke helt logisk hvordan man valgte grafisk opløsning. 
-      Der var ikke mulighed for at vælge over 1280x1024, og efter reboot
-      havde jeg åbenbart valgt 640x480. Det krævede en smule redigering af 
+      Det virkede ikke helt logisk hvordan man valgte grafisk oplÃ¸sning. 
+      Der var ikke mulighed for at vÃ¦lge over 1280x1024, og efter reboot
+      havde jeg Ã¥benbart valgt 640x480. Det krÃ¦vede en smule redigering af 
       <filename>/etc/X11/XF86Config</filename>. Her kom der en overraskelse
       i at editoren <command>vi</command> var erstattet (symlinket)  med 
       <command>pico</command>. Underligt valg...
@@ -108,8 +108,8 @@ Der var et par problemer ved installation
      <title>Printer</title>
 
      <para>
-      Jeg kunne fint vælge min HP PSC 750 printer, men ikke USB. Kun 
-      parallelport eller seriel porte kunne jeg vælge - ikke så godt,
+      Jeg kunne fint vÃ¦lge min HP PSC 750 printer, men ikke USB. Kun 
+      parallelport eller seriel porte kunne jeg vÃ¦lge - ikke sÃ¥ godt,
       da printeren kun har et USB-interface.
      </para>
     </note>
@@ -136,7 +136,7 @@ Der var et par problemer ved installation
 <para>
 SOT Linux kan installes alene med en cdrom - det er et plus. Denne indeholder
 alt for at KDE, Mozilla, SOT Office (som egentlig er OpenOffice.org).
-Man får lavet en god desktop maskine med en ret begrænset indsats.
+Man fÃ¥r lavet en god desktop maskine med en ret begrÃ¦nset indsats.
 </para>
 
 </sect1>
@@ -146,7 +146,7 @@ Man får lavet en god desktop maskine med en ret begrænset indsats.
 <title>Samlet vurdering af SOT Linux</title>
 <para>
 SOT Linux er god, men mangler lidt i forhold til f.eks. Mandrake, 
-Debian og Red Hat før at det rigtig er interessant.
+Debian og Red Hat fÃ¸r at det rigtig er interessant.
 </para>
 </sect1>
 

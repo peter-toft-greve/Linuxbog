@@ -2,35 +2,35 @@
 <chapter id="IT-STRATEGI">
 <title>It-strategi</title>
 <para>
-It-strategi er en del af virksomhedernes ressourceplanlægning.
-Målet er at støtte virksomhedens idegrundlag med anvendelse af så
-få ressourcer som muligt. 
+It-strategi er en del af virksomhedernes ressourceplanlÃ¦gning.
+MÃ¥let er at stÃ¸tte virksomhedens idegrundlag med anvendelse af sÃ¥
+fÃ¥ ressourcer som muligt. 
 </para>
 
 <para>
-De områder, som støtter virksomhedens grundlag bedst, skal have
-ressourcer, så de fungerer optimalt, mens andre områder, som ikke
-er kritiske for virksomhedens konkurrenceevne, må klare sig med,
+De omrÃ¥der, som stÃ¸tter virksomhedens grundlag bedst, skal have
+ressourcer, sÃ¥ de fungerer optimalt, mens andre omrÃ¥der, som ikke
+er kritiske for virksomhedens konkurrenceevne, mÃ¥ klare sig med,
 hvad der er tilovers.
 </para>
 
 <para>
 It-budgettet skal ses i dette perspektiv. Hvis det koster mere at
 sende en faktura, som er produceret af en stort computersystem,
-end det koster at skrive den med et lille computersystem, så
-vælger man det lille, forudsat at dette opfylder en række andre
-krav, såsom sikkerhed, betjeningsvenlighed mv.
+end det koster at skrive den med et lille computersystem, sÃ¥
+vÃ¦lger man det lille, forudsat at dette opfylder en rÃ¦kke andre
+krav, sÃ¥som sikkerhed, betjeningsvenlighed mv.
 </para>
 
 <para>
-Der er ofte en række skjulte faktorer i det regnestykke, som
+Der er ofte en rÃ¦kke skjulte faktorer i det regnestykke, som
 opstilles over anskaffelsesudgifterne til virksomsheds-it. De
 vigtigste af disse er:
 </para>
 
 <orderedlist>
 <listitem><para>
-Virksomhedens egen faglig kompetence (eller mangel på samme).
+Virksomhedens egen faglig kompetence (eller mangel pÃ¥ samme).
 </para>
 </listitem>
 
@@ -42,28 +42,28 @@ Muligheden for at tilkalde faglig kompetent assistance.
 
 <listitem><para>
 Muligheden for at skifte til nyere
-maskinel i tilfælde af problemer.
+maskinel i tilfÃ¦lde af problemer.
 </para>
 </listitem>
 
 <listitem><para>
-Fremtidssikring - at maskinellet kan kommunikere med næste
+Fremtidssikring - at maskinellet kan kommunikere med nÃ¦ste
 generation af programmel og maskineri, glidende overgang,
-samkøring, parallel drift.
+samkÃ¸ring, parallel drift.
 </para>
 </listitem>
 <listitem><para>
-Prestige eller reklameværdi - det er nyttigt at fremstå som en
-virksomhed, der har styr på administrative hjælpemidler.
+Prestige eller reklamevÃ¦rdi - det er nyttigt at fremstÃ¥ som en
+virksomhed, der har styr pÃ¥ administrative hjÃ¦lpemidler.
 </para>
 </listitem>
 
 </orderedlist>
 
 <para>
-I det følgende vises nogle tendenser indenfor it-strategi i
+I det fÃ¸lgende vises nogle tendenser indenfor it-strategi i
 almindelighed, der opstilles et system til vurdering af en
-strategi, og endelig gives forslag tilhvordan man kan opnå
+strategi, og endelig gives forslag tilhvordan man kan opnÃ¥
 besparelser med Linux.
 </para>
 
@@ -72,65 +72,65 @@ besparelser med Linux.
 <title>Kontorplatformens rolle i it-strategien</title>
 
 <para>
-It-strategien i vore virksomheder styres i dag mere af et ønske
-om funktionalitet end af pris på udstyr og software, fordi
-prisniveauet har nået et lavt leje i forhold til den tidlige
+It-strategien i vore virksomheder styres i dag mere af et Ã¸nske
+om funktionalitet end af pris pÃ¥ udstyr og software, fordi
+prisniveauet har nÃ¥et et lavt leje i forhold til den tidlige
 computerteknik. Computerhardware er blevet en forbrugsvare, som
-kan købes i åben konkurrence, og det forventes, at almindelig
-software kan køre på en almindelig computer, d.v.s. en
+kan kÃ¸bes i Ã¥ben konkurrence, og det forventes, at almindelig
+software kan kÃ¸re pÃ¥ en almindelig computer, d.v.s. en
 Intel-kompatibel computer har stort udvalg af Intel-kompatibel
 software. Der findes stadig specialiserede firmaer med
 egenproduceret hardware og software, og mange store sites har
-10 - 15 år gamle systemer kørende, fordi det er proprietære
-systemer som er besværlige eller umulige at flytte til nye
-platforme. Sådanne ad-hoc systemer kræver vedligeholdelse af
+10 - 15 Ã¥r gamle systemer kÃ¸rende, fordi det er proprietÃ¦re
+systemer som er besvÃ¦rlige eller umulige at flytte til nye
+platforme. SÃ¥danne ad-hoc systemer krÃ¦ver vedligeholdelse af
 kompetente fagfolk.
 </para>
 
 <para>
-En god it-strategi udstikker retningslinier, som er nyttige på
-lang sigt og som muliggør avanceret funktionalitet. Al strategi
-tager udgangspunkt i kontor-platformen, det er her, alle trådene
+En god it-strategi udstikker retningslinier, som er nyttige pÃ¥
+lang sigt og som muliggÃ¸r avanceret funktionalitet. Al strategi
+tager udgangspunkt i kontor-platformen, det er her, alle trÃ¥dene
 samles, det er her, data fra logistik eller transaktioner samles,
-præsenteres, læses.
+prÃ¦senteres, lÃ¦ses.
 </para>
 
 <para>
-I dag er der ingen, som ville drømme om at bruge et primitivt
-kontorsystem. Det er så afgørende, at administrationen fungerer
-gnidningsløst. Har man brug for for eksempel et tekstbehandlingssystem,
-som skal være specielt egnet til håndtering af fx.
-brugsanvisninger til rengøringsmidler, forventes det at standard
-software kan sættes op med en skabelon til at håndtere den slags
+I dag er der ingen, som ville drÃ¸mme om at bruge et primitivt
+kontorsystem. Det er sÃ¥ afgÃ¸rende, at administrationen fungerer
+gnidningslÃ¸st. Har man brug for for eksempel et tekstbehandlingssystem,
+som skal vÃ¦re specielt egnet til hÃ¥ndtering af fx.
+brugsanvisninger til rengÃ¸ringsmidler, forventes det at standard
+software kan sÃ¦ttes op med en skabelon til at hÃ¥ndtere den slags
 specialiserede dokumentationsopgaver.
 </para>
 
 <para>
-Til kontorbrug er der sjældent tvivl om, hvilket system, en
-virksomhed skal anskaffe. Microsoft har en markedsandel på
-omkring 90% af skrivebordene. Man må se denne leverandørs næsten
-enerådende tilstedeværelse på markedet som resultatet af en
+Til kontorbrug er der sjÃ¦ldent tvivl om, hvilket system, en
+virksomhed skal anskaffe. Microsoft har en markedsandel pÃ¥
+omkring 90% af skrivebordene. Man mÃ¥ se denne leverandÃ¸rs nÃ¦sten
+enerÃ¥dende tilstedevÃ¦relse pÃ¥ markedet som resultatet af en
 afbalanceret strategi imod stabilitet, brugervenlighed og
 integration af forskellige typer software.
 </para>
 
 <para>
 Der er nok en del, som stadig husker Word Perfect og nogen, der
-kender Adobe Pagemaker, Framemaker, WordStar, eller måske endda
+kender Adobe Pagemaker, Framemaker, WordStar, eller mÃ¥ske endda
 nroff og troff, men disse produkter spiller i dag ikke nogen
-væsentlig rolle på det egentlige marked, nemlig
+vÃ¦sentlig rolle pÃ¥ det egentlige marked, nemlig
 gennemsnitsskrivebordet i millioner af virksomheder og hjem.
 </para>
 
 <para>
-Kampen om computeren på skrivebordet har været kampen om at
+Kampen om computeren pÃ¥ skrivebordet har vÃ¦ret kampen om at
 kunne levere det mest stabile tekstbehandlingsprogram. 
-Heri indgår der i øvrigt en forbløffende lang række faktorer,
+Heri indgÃ¥r der i Ã¸vrigt en forblÃ¸ffende lang rÃ¦kke faktorer,
 det er ikke kun programstop eller computer genstart, som har
-voldt brugerne ærgrelser, også styring af tegnsæt, printer,
-udnyttelse af ny skærmteknik, bedre læselighed på en skærm m.v.
-har spillet en stor rolle. Og endelig har den ene leverandørs
-markedsdominans betydet, at udveksling af dokumenter har været
+voldt brugerne Ã¦rgrelser, ogsÃ¥ styring af tegnsÃ¦t, printer,
+udnyttelse af ny skÃ¦rmteknik, bedre lÃ¦selighed pÃ¥ en skÃ¦rm m.v.
+har spillet en stor rolle. Og endelig har den ene leverandÃ¸rs
+markedsdominans betydet, at udveksling af dokumenter har vÃ¦ret
 stort set problemfri.
 </para>
 
@@ -138,20 +138,20 @@ stort set problemfri.
 Kravene til en kontorplatform vokser med den stigende erkendelse
 af, at softwareteknik forholdsvis nemt kan hente og kombinere
 oplysninger, og at tidligere tiders problemer oftest skyldtes
-leverandørers manglende vilje til at levere kompatibilitet. Data
-fra virksomhedens produktionsregnskab forventes at kunne indgå i
-en rapport uden større brug af teknisk kunnen.
+leverandÃ¸rers manglende vilje til at levere kompatibilitet. Data
+fra virksomhedens produktionsregnskab forventes at kunne indgÃ¥ i
+en rapport uden stÃ¸rre brug af teknisk kunnen.
 </para>
 
 <para>
-Kompatibilitet har i mange år (15 - 25) været en konkurrenceparameter
-for databaser, men for dokumenthåndtering har brugerne stillet sig
-tilfredse med leverandørernes produkter, først og fremmest fordi
-den største spiller på markedet, Microsoft, igennem små 10 år har
-arbejdet målrettet på at integrere tekstbehandling, adressedatabase,
-regneark og tegneprogrammer på en sådan måde, at hæderlige tryksager
+Kompatibilitet har i mange Ã¥r (15 - 25) vÃ¦ret en konkurrenceparameter
+for databaser, men for dokumenthÃ¥ndtering har brugerne stillet sig
+tilfredse med leverandÃ¸rernes produkter, fÃ¸rst og fremmest fordi
+den stÃ¸rste spiller pÃ¥ markedet, Microsoft, igennem smÃ¥ 10 Ã¥r har
+arbejdet mÃ¥lrettet pÃ¥ at integrere tekstbehandling, adressedatabase,
+regneark og tegneprogrammer pÃ¥ en sÃ¥dan mÃ¥de, at hÃ¦derlige tryksager
 kunne fremstilles uden dyr uddannelse af en medarbejder. Derved har
-Microsoft dækket behovene. Det var kun fagfolk, som kunne se, at
+Microsoft dÃ¦kket behovene. Det var kun fagfolk, som kunne se, at
 kvaliteten var kritisabel - man havde jo aldrig haft noget bedre.
 Format og fremtidssikring af elektroniske dokumenter var heller
 ikke til diskussion endnu, selv om for eksempel Department of Defense (DoD,
@@ -160,22 +160,22 @@ af og krav til dokumentformater.
 </para>
 
 <para>
-De professionelle værktøjer, framemaker, TeX og troff, Agfa
-Phototypesetter m.v., var så kostbare og besværlige, at de ikke kom på
+De professionelle vÃ¦rktÃ¸jer, framemaker, TeX og troff, Agfa
+Phototypesetter m.v., var sÃ¥ kostbare og besvÃ¦rlige, at de ikke kom pÃ¥
 tale undtagen til fremstilling af meget store oplag; og det har de
-professionelle i den grafiske branche formentlig været glade for.
+professionelle i den grafiske branche formentlig vÃ¦ret glade for.
 </para>
 
 </sect1>
 
-<!-- TODO opdeling dax, nået til forklaring af model /-->
+<!-- TODO opdeling dax, nÃ¥et til forklaring af model /-->
 
 <sect1 id="itplatform-4-hovedparms">
 <title>De fire hovedparametre</title>
 
 <para>
-Ved større it-ændringer foretages strategiske overvejelser, som
-kan opdeles i afvejning af ændringens indflydelse på fire
+Ved stÃ¸rre it-Ã¦ndringer foretages strategiske overvejelser, som
+kan opdeles i afvejning af Ã¦ndringens indflydelse pÃ¥ fire
 parametre:
 </para>
 
@@ -184,7 +184,7 @@ parametre:
 Sikkerhed,
 </para></listitem>
 <listitem><para>
-økonomi,
+Ã¸konomi,
 </para></listitem>
 <listitem><para>
 effektivitet,
@@ -196,8 +196,8 @@ drift.
 
 <para>
 Alle har de betydning for virksomhedens overlevelse, men det er
-uafhængige størrelser, den ene kan godt ændre sig uden at den
-anden gør det:
+uafhÃ¦ngige stÃ¸rrelser, den ene kan godt Ã¦ndre sig uden at den
+anden gÃ¸r det:
 </para>
 
 
@@ -207,42 +207,42 @@ anden gør det:
 <emphasis>Sikkerhed:</emphasis> Garanti for tilgang til 
 virksomhedens operationelle data er en eksistensbetingelse.
 Virksomheden vil ikke kunne overleve tab af for eksempel debitordata.
-Disse data hører først og fremmest hører til i virksomhedens
-database, men dokumentation, korrespondance, og aftaler på
-elektronisk form er også i denne kategori og kommer dermed ind
+Disse data hÃ¸rer fÃ¸rst og fremmest hÃ¸rer til i virksomhedens
+database, men dokumentation, korrespondance, og aftaler pÃ¥
+elektronisk form er ogsÃ¥ i denne kategori og kommer dermed ind
 under it-ansvar og strategi.
 </para></listitem>
 
 <listitem><para>
-<emphasis>Økonomi:</emphasis>
-Ressourceforbruget må ikke true virksomhedens overlevelse, og
-anses af mange for at være <emphasis> den vigtigste parameter,
-</emphasis> men kan ressourceforbruget holdes på et acceptabelt
-plan kan små variationer alligevel vise sig at være en
-styringsparameter på linie med de andre tre.
+<emphasis>Ã˜konomi:</emphasis>
+Ressourceforbruget mÃ¥ ikke true virksomhedens overlevelse, og
+anses af mange for at vÃ¦re <emphasis> den vigtigste parameter,
+</emphasis> men kan ressourceforbruget holdes pÃ¥ et acceptabelt
+plan kan smÃ¥ variationer alligevel vise sig at vÃ¦re en
+styringsparameter pÃ¥ linie med de andre tre.
 </para></listitem>
 
 <listitem><para>
 <emphasis>Effektivitet:</emphasis>
-Kaldes også brugervenlighed eller betjeningsvenlighed. Hvis
+Kaldes ogsÃ¥ brugervenlighed eller betjeningsvenlighed. Hvis
 systemerne er vanskelige at betjene, er de ineffektive.
-Det er korttids-nytten af it-systemerne. Det må ikke tage 4 timer
+Det er korttids-nytten af it-systemerne. Det mÃ¥ ikke tage 4 timer
 at udskrive et brev. Brugervenlighed er et bedre udtryk for denne
-faktor: Et it-system skal være nemt at tilgå, når man blot har
+faktor: Et it-system skal vÃ¦re nemt at tilgÃ¥, nÃ¥r man blot har
 nogenlunde kendskab til principperne. Adgangen til kvalificeret
-personale hører ind under denne parameter.
+personale hÃ¸rer ind under denne parameter.
 </para></listitem>
 
 <listitem><para>
 <emphasis>Drift:</emphasis> 
-Løbende udgifter kan påvirkes af valg af systemer, dels ved
+LÃ¸bende udgifter kan pÃ¥virkes af valg af systemer, dels ved
 forrentning og afskrivning af investeringen, og dels ved
-reservedelspriser, prisniveauet på sideløbende, supplerende
-anskaffelser.  Vedligeholdelse af software udgjorde før i tiden
-mere end den samlede anskaffelse af systemer, så anvendelse
+reservedelspriser, prisniveauet pÃ¥ sidelÃ¸bende, supplerende
+anskaffelser.  Vedligeholdelse af software udgjorde fÃ¸r i tiden
+mere end den samlede anskaffelse af systemer, sÃ¥ anvendelse
 af standardsoftware giver store besparelsesmuligheder. I dag
-spiller licens på kontorsoftware igen en stor rolle, hvor op til
-70% af en it-afdelings budget kan gå til løbende licensbetalinger
+spiller licens pÃ¥ kontorsoftware igen en stor rolle, hvor op til
+70% af en it-afdelings budget kan gÃ¥ til lÃ¸bende licensbetalinger
 eller opdatering til nye office-pakke versioner.
 </para></listitem>
 
@@ -250,55 +250,55 @@ eller opdatering til nye office-pakke versioner.
 
 
 <para>
-It-ændringer har tidligere været benyttet som påskud til
-organisatoriske ændringer. I en situation, hvor man går fra
+It-Ã¦ndringer har tidligere vÃ¦ret benyttet som pÃ¥skud til
+organisatoriske Ã¦ndringer. I en situation, hvor man gÃ¥r fra
 kartoteksskabe til on-line adgang til databaser, er der tale
-om så stor funktionsændring, at det kan begrunde mindre
-organisatoriske omlægninger, såsom nedlæggelse af en
+om sÃ¥ stor funktionsÃ¦ndring, at det kan begrunde mindre
+organisatoriske omlÃ¦gninger, sÃ¥som nedlÃ¦ggelse af en
 kartoteksafdeling, administration af brugere med adgang til
-on-line service m.v.; så store ændringer forekommer knap så
-hyppigt i dag, selv om især produktionsstyring mange steder
-stadig foregår manuelt og semi-manuelt.
+on-line service m.v.; sÃ¥ store Ã¦ndringer forekommer knap sÃ¥
+hyppigt i dag, selv om isÃ¦r produktionsstyring mange steder
+stadig foregÃ¥r manuelt og semi-manuelt.
 </para>
 
 <para>
-Nye it-anskaffelser vil i dag oftest være til erstatning for
-ældre. I så tilfælde er det et krav, at en ændring i it-strategi
-ikke må kunne mærkes, at servicen ikke må påvirkes, med mindre
-der er specielle nye it-funktioner, som skal køres ind, eller
-andre, som skal udgå.
+Nye it-anskaffelser vil i dag oftest vÃ¦re til erstatning for
+Ã¦ldre. I sÃ¥ tilfÃ¦lde er det et krav, at en Ã¦ndring i it-strategi
+ikke mÃ¥ kunne mÃ¦rkes, at servicen ikke mÃ¥ pÃ¥virkes, med mindre
+der er specielle nye it-funktioner, som skal kÃ¸res ind, eller
+andre, som skal udgÃ¥.
 </para>
 
 <para>
-Når it-ændringer indføres i en virksomhed, vil det være en fordel
-for alle berørte parter, hvis ændringen foregår efter en nøje
-fastlagt plan, som tager hensyn til både virksomhedens
-organisation og forretningsgange. Til dette formål findes der en
-række ændringsstrategier, som man med fordel kan tage i
-anvendelse allerede på planlægningsstadiet.
+NÃ¥r it-Ã¦ndringer indfÃ¸res i en virksomhed, vil det vÃ¦re en fordel
+for alle berÃ¸rte parter, hvis Ã¦ndringen foregÃ¥r efter en nÃ¸je
+fastlagt plan, som tager hensyn til bÃ¥de virksomhedens
+organisation og forretningsgange. Til dette formÃ¥l findes der en
+rÃ¦kke Ã¦ndringsstrategier, som man med fordel kan tage i
+anvendelse allerede pÃ¥ planlÃ¦gningsstadiet.
 </para>
 </sect1>
 
 
 <sect1 id="MODEL">
-<title>En ændringsmodel</title>
+<title>En Ã¦ndringsmodel</title>
 
 <para>
-Ændringer i it-systemer kan have stor indflydelse på en
+Ã†ndringer i it-systemer kan have stor indflydelse pÃ¥ en
 organisation er beskrevet i mange rapporter og i organisatorisk
-forskning. J. H. Leavitt beskrev en åben organisationsmodel, som
+forskning. J. H. Leavitt beskrev en Ã¥ben organisationsmodel, som
 har dannet grundlag for mange rapporter og kurser (se for eksempel <ulink
 url="www.ils.unc.edu/classes/inls162_01_f03/25-Change.rtf">
 www.ils.unc.edu/classes/inls162_01_f03/25-Change.rtf</ulink>.)
-Åben skal her forstås som betegnelse for, at modellen ændres hele
-tiden, det er en dynamisk model, og når vi oftest ser
+Ã…ben skal her forstÃ¥s som betegnelse for, at modellen Ã¦ndres hele
+tiden, det er en dynamisk model, og nÃ¥r vi oftest ser
 organisation som noget stilstand, skyldes det, at man glemmer det
 lange perspektiv, og at organisationen over en kortere tid er i
 nogenlunde balance.
 </para>
 
 <para>
-Leavitts model blev første gang præsenteret i en artikel,
+Leavitts model blev fÃ¸rste gang prÃ¦senteret i en artikel,
 "Applied Organizational Change in Industry: Structural,
 Technological and Humanistic Approaches"<footnote><para> Leavitt,
 H. J. (1965). Applied Organizational Change in Industry:
@@ -308,12 +308,12 @@ Structural, Technological and Humanistic Approaches. In J. March
 </para>
 
 <para>
-En it-ændringsstrategi kan baseres på J. H. Leavitts model.
-I denne sammenhæng benyttes de ovenfor omtalte variable.
+En it-Ã¦ndringsstrategi kan baseres pÃ¥ J. H. Leavitts model.
+I denne sammenhÃ¦ng benyttes de ovenfor omtalte variable.
 </para>
 
 <para>
-Modellen kan vises grafisk på to måder:
+Modellen kan vises grafisk pÃ¥ to mÃ¥der:
 </para>
 
 
@@ -321,35 +321,35 @@ Modellen kan vises grafisk på to måder:
 </para></listitem>
 <listitem><para>Den traditionelle niveaudeling. Se <xref linkend="NIVEAU-FIG"/>
 </para></listitem></itemizedlist>
-<figure float="1" id="LEAVITT-FIG"><title>Ændringsstrategien i Leavittsstil</title>
+<figure float="1" id="LEAVITT-FIG"><title>Ã†ndringsstrategien i Leavittsstil</title>
 <graphic fileref="leavitt.&magic;" scale="60"></graphic></figure>
 
 
 <para>
-De tidligere nævnte variable kan og skal fortolkes ind i den
-dynamik, som styrer organisationen i retning af det fælles mål,
+De tidligere nÃ¦vnte variable kan og skal fortolkes ind i den
+dynamik, som styrer organisationen i retning af det fÃ¦lles mÃ¥l,
 virksomhedens idegrundlag. Variabelen skal operationaliseres,
-omsættes til handlinger, eller foreslåede handlinger, hvis
-konsekvenser analyseres. Denne øvelse overlades dog i det alt
-væsentlige til læseren <!-- TODO?! /-->
+omsÃ¦ttes til handlinger, eller foreslÃ¥ede handlinger, hvis
+konsekvenser analyseres. Denne Ã¸velse overlades dog i det alt
+vÃ¦sentlige til lÃ¦seren <!-- TODO?! /-->
 </para>
 
 
-<figure float="1" id="NIVEAU-FIG"><title>Ændringsstrategien i niveaudelingsstil</title>
+<figure float="1" id="NIVEAU-FIG"><title>Ã†ndringsstrategien i niveaudelingsstil</title>
 <graphic fileref="niveau.&magic;" scale="60"></graphic></figure>
 
 <para>
-Af ovenstående figur fremgår det, at analyseniveauet befinder
-sig på operationelt, taktisk niveau. De strategiske overvejelser
-omfatter påvirkning af konkurrenceevnen som følge af
-it-systemmæssige ændringer, men denne indflydelse er begrænset,
+Af ovenstÃ¥ende figur fremgÃ¥r det, at analyseniveauet befinder
+sig pÃ¥ operationelt, taktisk niveau. De strategiske overvejelser
+omfatter pÃ¥virkning af konkurrenceevnen som fÃ¸lge af
+it-systemmÃ¦ssige Ã¦ndringer, men denne indflydelse er begrÃ¦nset,
 eller omvendt kan man sige, at kravene til it-systemerne er,
-at de skal fungere perfekt uden at påvirke konkurrenceevnen i
-negativ retning. Et sådant perfektionskrav har været til stede
+at de skal fungere perfekt uden at pÃ¥virke konkurrenceevnen i
+negativ retning. Et sÃ¥dant perfektionskrav har vÃ¦ret til stede
 siden midten af 80'erne, da tekstbehandling begyndte at vinde
-over skrivemaskinen - det er i dag en naturlig forudsætning.
-En beslutning om kontorplatform kan, som tidligere nævnt,
-i dag næppe anses for en konkurrenceparameter.
+over skrivemaskinen - det er i dag en naturlig forudsÃ¦tning.
+En beslutning om kontorplatform kan, som tidligere nÃ¦vnt,
+i dag nÃ¦ppe anses for en konkurrenceparameter.
 </para>
 
 <para>
@@ -359,87 +359,87 @@ i dag næppe anses for en konkurrenceparameter.
 <!-- TODO, der skal rettes en hel del i efterflg. /-->
 
 <para>
-I analysen indgår de tidligere nævnte fire variable:
-Brugervenlighed, drift, sikkerhed og anskaffelsesøkonomi.
+I analysen indgÃ¥r de tidligere nÃ¦vnte fire variable:
+Brugervenlighed, drift, sikkerhed og anskaffelsesÃ¸konomi.
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
 <para>
-De fire variable påvirker hinanden, de er uafhængige variable som
-har indflydelse på de hinanden - F.eks. betyder dårlig sikkerhed, at
-driften bliver besværlig - mere overvågning betyder flere
-arbejdstimer, hvilket betyder større ressourceforbrug. Høj
-anskaffelsespris (hvis alt andet i øvrigt var lige) kan have en
-gunstig indvirkning på arbejdsmiljø, folk bliver glade for, at
-der er nogen, som bruger ressourcer - viser hensynsfuldhed - på
-deres arbejdssituation. Et umådeholdent forbrug på kontor-it kan
-dog opfattes som mangel på overordnede visioner og kan derfor
+De fire variable pÃ¥virker hinanden, de er uafhÃ¦ngige variable som
+har indflydelse pÃ¥ de hinanden - F.eks. betyder dÃ¥rlig sikkerhed, at
+driften bliver besvÃ¦rlig - mere overvÃ¥gning betyder flere
+arbejdstimer, hvilket betyder stÃ¸rre ressourceforbrug. HÃ¸j
+anskaffelsespris (hvis alt andet i Ã¸vrigt var lige) kan have en
+gunstig indvirkning pÃ¥ arbejdsmiljÃ¸, folk bliver glade for, at
+der er nogen, som bruger ressourcer - viser hensynsfuldhed - pÃ¥
+deres arbejdssituation. Et umÃ¥deholdent forbrug pÃ¥ kontor-it kan
+dog opfattes som mangel pÃ¥ overordnede visioner og kan derfor
 have den modsatte virkning, vrede over forkerte dispositioner som
-belaster virksomheden og truer den økonomiske sikkerhed - eller
-som burde bruges til lønforbedringer.
+belaster virksomheden og truer den Ã¸konomiske sikkerhed - eller
+som burde bruges til lÃ¸nforbedringer.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Det er en almindelig opfattelse, at højere pris modsvares af
-højere kvalitet, hvilket ikke altid er tilfældet indenfor
+Det er en almindelig opfattelse, at hÃ¸jere pris modsvares af
+hÃ¸jere kvalitet, hvilket ikke altid er tilfÃ¦ldet indenfor
 it-sektoren.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Idealet er, at der eksisterer en ligevægtstilstand imellem de
-fire faktorer, altså et rimeligt forhold mellem dem som svarer
-til den betydning, de har samlet set. (Som nævnt modsvares højere
+Idealet er, at der eksisterer en ligevÃ¦gtstilstand imellem de
+fire faktorer, altsÃ¥ et rimeligt forhold mellem dem som svarer
+til den betydning, de har samlet set. (Som nÃ¦vnt modsvares hÃ¸jere
 anskaffelsespris ikke altid af bedre funktionalitet).
 </para>
 </listitem>
 
 <listitem>
 <para>
-At analysere fo på det operationelle og taktiske niveau betyder,
-at det er kontorplatformens evne til at løse problemer på den
-mest effektive måde, der skal vurderes.
+At analysere fo pÃ¥ det operationelle og taktiske niveau betyder,
+at det er kontorplatformens evne til at lÃ¸se problemer pÃ¥ den
+mest effektive mÃ¥de, der skal vurderes.
 </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Den økonomiske belastning opgøres ofte uden de løbende udgifter,
-ud fra den tankegang, at når man har købt genstand X så er
-udgifter til pasning og pleje den samme som hvis man havde købt
-genstand Y. For it-udstyr og software er dette ikke tilfældet.
+Den Ã¸konomiske belastning opgÃ¸res ofte uden de lÃ¸bende udgifter,
+ud fra den tankegang, at nÃ¥r man har kÃ¸bt genstand X sÃ¥ er
+udgifter til pasning og pleje den samme som hvis man havde kÃ¸bt
+genstand Y. For it-udstyr og software er dette ikke tilfÃ¦ldet.
 </para>
 
 <para>
-Mange leverandører ønsker at binde kunden til deres produkter og
-begynder med et "slagtilbud", som får kunden indendørs. Derefter
-er der mulighed for at forlange større og større priser.
+Mange leverandÃ¸rer Ã¸nsker at binde kunden til deres produkter og
+begynder med et "slagtilbud", som fÃ¥r kunden indendÃ¸rs. Derefter
+er der mulighed for at forlange stÃ¸rre og stÃ¸rre priser.
 </para>
 
 <para>
-Et kendt eksempel er driftsudgifter til trykmidler (farvebånd
+Et kendt eksempel er driftsudgifter til trykmidler (farvebÃ¥nd
 eller tonerpulver) etc. som kan variere meget for hvert
 printerprodukt, og som kan betyde, at den billige printer ender
-med den højeste sidepris.
+med den hÃ¸jeste sidepris.
 </para>
 
 <para>
-Der kan, som tidligere nævnt, ligge skjulte udgifter i valget af
-en it-strategi, som ikke følger normen, hvilket Microsoft hævder
-er tilfældet, hvis man benytter Open Source-produkter. Derfor
-indføres en total sammentælling, Total Cost of Ownership (TCO),
+Der kan, som tidligere nÃ¦vnt, ligge skjulte udgifter i valget af
+en it-strategi, som ikke fÃ¸lger normen, hvilket Microsoft hÃ¦vder
+er tilfÃ¦ldet, hvis man benytter Open Source-produkter. Derfor
+indfÃ¸res en total sammentÃ¦lling, Total Cost of Ownership (TCO),
 som includerer anskaffelse, drift, uddannelse og
 skrotningsafgift.
 </para>
 
 <para>
 Tilsvarende kan man beregne en total omkostning pr. transaktion.
-Hvis et bedre it-system kunne medføre at man fik flere ordrer, så
-kunne det retfærdiggøre en mindre forøgelse ressourcer til
+Hvis et bedre it-system kunne medfÃ¸re at man fik flere ordrer, sÃ¥
+kunne det retfÃ¦rdiggÃ¸re en mindre forÃ¸gelse ressourcer til
 it-budgettet.
 </para>
 </sect1>
@@ -453,47 +453,47 @@ it-budgettet.
 
 
 <para>
-Ved sammenligning af sikkerhed, økonomi, effektivitet og drift må
-virksomhedens behov først vægtes for de enkelte områder. Dernæst
-må man, for at kunne bedømme for eksempel sikkerheden, have en teknisk
-baggrund eller en uafhængig fagmands bedømmelse. De findes, men
-er sjældne. Selv om denne lille vejledning er forholdsvis
-upartisk, er det jo også dens erklærede hensigt at føre læseren
-til en forståelse af Linux' fortrinligheder. Dens saglighed og
-forhåbentlig forståelighed er det, som kan øge troværdigheden.
+Ved sammenligning af sikkerhed, Ã¸konomi, effektivitet og drift mÃ¥
+virksomhedens behov fÃ¸rst vÃ¦gtes for de enkelte omrÃ¥der. DernÃ¦st
+mÃ¥ man, for at kunne bedÃ¸mme for eksempel sikkerheden, have en teknisk
+baggrund eller en uafhÃ¦ngig fagmands bedÃ¸mmelse. De findes, men
+er sjÃ¦ldne. Selv om denne lille vejledning er forholdsvis
+upartisk, er det jo ogsÃ¥ dens erklÃ¦rede hensigt at fÃ¸re lÃ¦seren
+til en forstÃ¥else af Linux' fortrinligheder. Dens saglighed og
+forhÃ¥bentlig forstÃ¥elighed er det, som kan Ã¸ge trovÃ¦rdigheden.
 </para>
 
 <para>
-De fleste systemadministratorer i dag har allerede hørt om Linux og
-Open Source Software (OSS), og har formentligt også gjort sig
-overvejelser vedrørende et skift til Linux.  Manglende viden og support
-har holdt dem tilbage.  Imidlertid er der nu efterhånden meget litteratur,
+De fleste systemadministratorer i dag har allerede hÃ¸rt om Linux og
+Open Source Software (OSS), og har formentligt ogsÃ¥ gjort sig
+overvejelser vedrÃ¸rende et skift til Linux.  Manglende viden og support
+har holdt dem tilbage.  Imidlertid er der nu efterhÃ¥nden meget litteratur,
 som specifikt handler om Linux (og OSS), internettet bugner med viden, og
-seriøse case-studies er kommet fra forskellige kanter. Support kan man få
-fra IBM, Compaq, Dell, Sun og Oracle, som aktivt støtter OSS. Det skal
-også nævnes, at det nye Apple-Computer concept, Mac OS-X, bygger på en
+seriÃ¸se case-studies er kommet fra forskellige kanter. Support kan man fÃ¥
+fra IBM, Compaq, Dell, Sun og Oracle, som aktivt stÃ¸tter OSS. Det skal
+ogsÃ¥ nÃ¦vnes, at det nye Apple-Computer concept, Mac OS-X, bygger pÃ¥ en
 Linux-kerne. 
 </para>
 
 <para>
 Virksomhedernes interesse for Free Open Source Software (FOSS) er
-begrænset, eftersom der hidtil ikke har været en væsentlig
+begrÃ¦nset, eftersom der hidtil ikke har vÃ¦ret en vÃ¦sentlig
 besparelse forbundet med FOSS. Licensbetingelserne fra Microsoft
 var, for at sige det mildt, vanskelige at implementere. Det har
-ændret sig, og den første lidt bredere interesse for Linux og
-FOSS har desværre været baseret på licensbesparelser, som jo dog
-også er interessant, men som kunne give indtryk af, at Linux ikke
-er noget særligt, eftersom man jo kan hente det gratis.
+Ã¦ndret sig, og den fÃ¸rste lidt bredere interesse for Linux og
+FOSS har desvÃ¦rre vÃ¦ret baseret pÃ¥ licensbesparelser, som jo dog
+ogsÃ¥ er interessant, men som kunne give indtryk af, at Linux ikke
+er noget sÃ¦rligt, eftersom man jo kan hente det gratis.
 </para>
 
 <para>
-Derfor bør det fremhæves, at Linux opstod som et alternativ,
-fordi der var et behov for seriøs software i videnskab og
+Derfor bÃ¸r det fremhÃ¦ves, at Linux opstod som et alternativ,
+fordi der var et behov for seriÃ¸s software i videnskab og
 forskning, og i telesektoren, som er storforbruger af
-computersystemer. Det gængse PC system fra Microsoft kunne ikke
-løse de opgaver, som skulle kunne løses. Resultatet blev, at
-mange ingeniører arbejdede på udbygning og afpudsning af Linux
-kernen og derved nåede frem til et stabilt system for
+computersystemer. Det gÃ¦ngse PC system fra Microsoft kunne ikke
+lÃ¸se de opgaver, som skulle kunne lÃ¸ses. Resultatet blev, at
+mange ingeniÃ¸rer arbejdede pÃ¥ udbygning og afpudsning af Linux
+kernen og derved nÃ¥ede frem til et stabilt system for
 professionelle.
 </para>
 
@@ -507,28 +507,28 @@ beslutningsgrundlag er forskelligt for hver af de fire faktorer.
 <title>Sikkerhed</title>
 
 <para>
-Når man nu ikke selv programmerer, ikke har en hærskare af
-programmører siddende i en it-afdeling, ikke har brug for de
-store systemer, så er mulighed for opdateringer både indenfor
-sikkerhed og hardware-kompatibilitet en nødvendighed.
+NÃ¥r man nu ikke selv programmerer, ikke har en hÃ¦rskare af
+programmÃ¸rer siddende i en it-afdeling, ikke har brug for de
+store systemer, sÃ¥ er mulighed for opdateringer bÃ¥de indenfor
+sikkerhed og hardware-kompatibilitet en nÃ¸dvendighed.
 </para>
 
 <para>
-Support af eksisterende systemer kan være kostbart, og en
-leverandør kan udnytte, at der ikke er alternativer. For at nævne
-de produkter, som bruges i langt de fleste installationer, så har
-de sidste par år vist, at leverandøren er i stand til at øge
-priserne, på trods af en væsentlig rationaliseringsfordel ved at
-så mange bruger systemet, at det kan distribueres via netværk
-(ingen bøger, ingen CD-Rommer). Det er en meget interessant
-situation, som ikke modsvares af rationaliseringsgevinster på
+Support af eksisterende systemer kan vÃ¦re kostbart, og en
+leverandÃ¸r kan udnytte, at der ikke er alternativer. For at nÃ¦vne
+de produkter, som bruges i langt de fleste installationer, sÃ¥ har
+de sidste par Ã¥r vist, at leverandÃ¸ren er i stand til at Ã¸ge
+priserne, pÃ¥ trods af en vÃ¦sentlig rationaliseringsfordel ved at
+sÃ¥ mange bruger systemet, at det kan distribueres via netvÃ¦rk
+(ingen bÃ¸ger, ingen CD-Rommer). Det er en meget interessant
+situation, som ikke modsvares af rationaliseringsgevinster pÃ¥
 andre markeder.
 </para>
 
 <para>
-Microsoft har officielt stoppet support på Windows 98, og vil
-følge denne strategi fremover; det er en forståelig, kontant
-overlevelsesstrategi. Fx. er det såkalde <emphasis> Microsoft
+Microsoft har officielt stoppet support pÃ¥ Windows 98, og vil
+fÃ¸lge denne strategi fremover; det er en forstÃ¥elig, kontant
+overlevelsesstrategi. Fx. er det sÃ¥kalde <emphasis> Microsoft
 Windows XP</emphasis> en Microsoft NT kerne, version 5.0 (med
 sikkerhedspatches) leveret sammen med et specielt klient-design
 (en klient er en maskine, som henter og afleverer data til
@@ -536,19 +536,19 @@ centrale systemer).
 </para>
 
 <para>
-På grund af en kompliceret opsætning, kontrollerende filer og
-indbyggede spærringer kan (og må) man ikke tage kerne NT-5.0 og
-køre over på en ældre platform med software, som en virksomhed
+PÃ¥ grund af en kompliceret opsÃ¦tning, kontrollerende filer og
+indbyggede spÃ¦rringer kan (og mÃ¥) man ikke tage kerne NT-5.0 og
+kÃ¸re over pÃ¥ en Ã¦ldre platform med software, som en virksomhed
 har brug for.
 </para>
 
 <para>
-Det kan man på et teknisk funderet system som Linux. Uden
+Det kan man pÃ¥ et teknisk funderet system som Linux. Uden
 problemer.
 </para>
 
 <para>
-En tankevækkende artikel der adresserer problemstilling for denne
+En tankevÃ¦kkende artikel der adresserer problemstilling for denne
 bog, findes her <ulink
 url="http://www.anandtech.com/printarticle.html?i=1527">
 http://www.anandtech.com/printarticle.html?i=1527</ulink>
@@ -558,23 +558,23 @@ http://www.anandtech.com/printarticle.html?i=1527</ulink>
 
 
 <sect2 id="itplatform-why2">
-<title>Anskaffelsesøkonomi</title>
+<title>AnskaffelsesÃ¸konomi</title>
 
 <para>
-Anskaffelsesprisen for Linux er forbløffende for de fleste. Man
-kan få produktet til den pris, det koster at fremstille medier,
-bøger og CD-Rommer. Der bliver naturligvis tilført ressourcer til
+Anskaffelsesprisen for Linux er forblÃ¸ffende for de fleste. Man
+kan fÃ¥ produktet til den pris, det koster at fremstille medier,
+bÃ¸ger og CD-Rommer. Der bliver naturligvis tilfÃ¸rt ressourcer til
 Linux kernen, applikationerne og driversystemerne fra mange,
 mange andre sider, og man er mere end velkommen til at betale,
-men har man brug for softwaren, kan man bruge den og oven i købet
-få tak for det.
+men har man brug for softwaren, kan man bruge den og oven i kÃ¸bet
+fÃ¥ tak for det.
 </para>
 
 <para>
 De ressourcer, der tilflyder Linux, kommer fra virksomheder, som
-ser en fordel i, at der er et standardiseret, markedsførende
+ser en fordel i, at der er et standardiseret, markedsfÃ¸rende
 it-system. Der kan de profilere sig, der kan de bygge videre, der
-kan den tekniske udvikling få frit løb.
+kan den tekniske udvikling fÃ¥ frit lÃ¸b.
 </para>
 
 </sect2>
@@ -583,9 +583,9 @@ kan den tekniske udvikling få frit løb.
 <title>Effektivitet</title>
 
 <para>
-Med udgivelsen af Open Office version 1.0.1 har der været adgang
-til en udmærket kontorplatform. Dette produkt behandles særskilt
-senere og andre steder i "Friheden til at vælge".
+Med udgivelsen af Open Office version 1.0.1 har der vÃ¦ret adgang
+til en udmÃ¦rket kontorplatform. Dette produkt behandles sÃ¦rskilt
+senere og andre steder i "Friheden til at vÃ¦lge".
 </para>
 
 </sect2>
@@ -595,15 +595,15 @@ senere og andre steder i "Friheden til at vælge".
 <title>Drift</title>
 
 <para>
-Drift, løbende udgifter til reparation, anskaffelse af
-supplerende udstyr må siges at være rimeligt nemt at administrere
-i dag, men igen kan det være en central faktor, at supplerende
+Drift, lÃ¸bende udgifter til reparation, anskaffelse af
+supplerende udstyr mÃ¥ siges at vÃ¦re rimeligt nemt at administrere
+i dag, men igen kan det vÃ¦re en central faktor, at supplerende
 licenser til kontorarbejdspladser ikke belaster budgettet.
 </para>
 
 <para>
 <!-- TODO mere om hardware-kompatibilitet /-->
-Nye netværksprotokoller, netværkstelefoni, netværkskonferencer,
+Nye netvÃ¦rksprotokoller, netvÃ¦rkstelefoni, netvÃ¦rkskonferencer,
 udnyttelse af eksisterende netkapacitet kan klares med Linux
 Router.
 </para>
@@ -613,42 +613,42 @@ Support anses som en del af driftsudgifterne.
 </para>
 
 <para>
-  De klienter, som de fleste bruger i dag (Microsoft Windows baseret på
+  De klienter, som de fleste bruger i dag (Microsoft Windows baseret pÃ¥
   NT-5), er i mange henseender gode, stabile systemer, som medarbejderne
-  har vænnet sig til. Mange Linux-programmer bruger et grafisk snit, der
-  er til at forstå for en Microsoft bruger, og kvaliteten af de nye office
-  pakker til Linux bliver bedre og bedre for hver måned. Uddannelse af
-  brugerne kan ellers godt gå hen og være den største omkostning, men det
-  argument holder ikke længere, hvilket de nyeste cases fastslår.
+  har vÃ¦nnet sig til. Mange Linux-programmer bruger et grafisk snit, der
+  er til at forstÃ¥ for en Microsoft bruger, og kvaliteten af de nye office
+  pakker til Linux bliver bedre og bedre for hver mÃ¥ned. Uddannelse af
+  brugerne kan ellers godt gÃ¥ hen og vÃ¦re den stÃ¸rste omkostning, men det
+  argument holder ikke lÃ¦ngere, hvilket de nyeste cases fastslÃ¥r.
 </para>
 
 </sect2>
 
 
 <sect2 id="itplatform-anskaf">
-<title> Spørgsmål for anskaffelsesøkonomien </title>
+<title> SpÃ¸rgsmÃ¥l for anskaffelsesÃ¸konomien </title>
 
 <itemizedlist mark="bullet">
 <listitem>
 <programlisting>
-Anskaffelsesøkonomi:
+AnskaffelsesÃ¸konomi:
    1. Hvad er omkostningerne, materiel, software, uddannelse,
    afskrivning, installation, reservedelslager, slitage
-   2. Hvilke installationsmæssige vanskeligheder er der, hvor
+   2. Hvilke installationsmÃ¦ssige vanskeligheder er der, hvor
       mange overraskelser kan man risikere, hvor er de
-      væsentligste forskelle?
+      vÃ¦sentligste forskelle?
 </programlisting>
 </listitem>
 
 <listitem>
 <programlisting>
-    Hvor vanskelig en opgave er det at sikre at systemerne kører
+    Hvor vanskelig en opgave er det at sikre at systemerne kÃ¸rer
          funktionelt tilfredsstillende?
     Integration med eksisterende software?
     Kvalificeret personale?
     Tekniske vanskeligheder?
 
-    TODO hvorfor er det nemmere på Linux?
+    TODO hvorfor er det nemmere pÃ¥ Linux?
     TODO Hardwaren er den samme som for MS/men alligevel ikke helt.
 </programlisting>
 </listitem>
@@ -656,27 +656,27 @@ Anskaffelsesøkonomi:
 <listitem>
 <programlisting>
     Tidsfaktorer omkring anskaffelse / etablering:
-        <!-- TODO: Afsnittet og spørgsmålene er alt for generelle:/-->
-        Hvor tidskrævende er opgaven?
+        <!-- TODO: Afsnittet og spÃ¸rgsmÃ¥lene er alt for generelle:/-->
+        Hvor tidskrÃ¦vende er opgaven?
         <!-- Det skal i hvert fald suppleres med flg. spm /-->
-        Hvilke operationer skal udføres før installation?
-        Hvor længe tager installation/udskiftning?
-        Når systemerne kører, hvordan og med hvilke omkostninger
-        får man da indlagt eksisterende informationer og historik?
+        Hvilke operationer skal udfÃ¸res fÃ¸r installation?
+        Hvor lÃ¦nge tager installation/udskiftning?
+        NÃ¥r systemerne kÃ¸rer, hvordan og med hvilke omkostninger
+        fÃ¥r man da indlagt eksisterende informationer og historik?
         Konvertering data: regnskab og adresseregistre? dokumenter? regneark?
 </programlisting>
 </listitem>
 </itemizedlist>
 
 <para>
-For en kontorplatform er svaret i dag, selvfølgelig, at det er
-nøjagtig samme procedure for stort set alle systemer,
-installation mellem 10 min - 1 time pr.  maskine (afhængig af
-maskinens kvaliteter), og så ellers bare i gang. Der er dog en
-del ting, som går hurtigere og nemmere med Linux distributioner
+For en kontorplatform er svaret i dag, selvfÃ¸lgelig, at det er
+nÃ¸jagtig samme procedure for stort set alle systemer,
+installation mellem 10 min - 1 time pr.  maskine (afhÃ¦ngig af
+maskinens kvaliteter), og sÃ¥ ellers bare i gang. Der er dog en
+del ting, som gÃ¥r hurtigere og nemmere med Linux distributioner
 som Mandrake og SuSE, idet der ikke er skjulte filer,
-netværksregistrering af licens og andre ting, som tager tid og
-kan give lange ventetider ved telefon eller netværk.
+netvÃ¦rksregistrering af licens og andre ting, som tager tid og
+kan give lange ventetider ved telefon eller netvÃ¦rk.
 </para>
 
 <para>
@@ -685,10 +685,10 @@ heller ikke noget problem.
 </para>
 
 <para>
-Det hænger sammen med, at de store kontorplatforme på Linux/BSD
-etc. har samme koncepter som det næsten enerådende "Office"
+Det hÃ¦nger sammen med, at de store kontorplatforme pÃ¥ Linux/BSD
+etc. har samme koncepter som det nÃ¦sten enerÃ¥dende "Office"
 system. Der er med andre ord kun tale om udskiftning af
-softwaresystem. TODO: Det vil være gavnligt at trække den
+softwaresystem. TODO: Det vil vÃ¦re gavnligt at trÃ¦kke den
 konklusion frem som skrive-grundlag/synsvinkel for et kapitel,
 som handler om FOSS-kontorplatformenes styrke/svagheder.
 </para>
@@ -696,50 +696,50 @@ som handler om FOSS-kontorplatformenes styrke/svagheder.
 <itemizedlist>
 <listitem>
 <para>
-Der er ikke noget i vejen for at køre et heterogent miljø,
-således at opgaver, som har væsentlig betydning for virksomheden
-(kritiske opgaver) kører videre, samtidigt med at man på
-forsøgsbasis installerer en eller flere Linux systemer som
+Der er ikke noget i vejen for at kÃ¸re et heterogent miljÃ¸,
+sÃ¥ledes at opgaver, som har vÃ¦sentlig betydning for virksomheden
+(kritiske opgaver) kÃ¸rer videre, samtidigt med at man pÃ¥
+forsÃ¸gsbasis installerer en eller flere Linux systemer som
 klienter (ikke-kritiske klienter) til de eksisterende servere.
-Det turde være fremgået, at en klient baseret på FOSS kan bygges
+Det turde vÃ¦re fremgÃ¥et, at en klient baseret pÃ¥ FOSS kan bygges
 for langt mindre omkostninger end tilsvarende systemer fra andre
-leverandører.
+leverandÃ¸rer.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Vanskelighederne afhænger af softwarens kvalitet. Eksisterende, portabel
-kode er set flyttet fra andre Unix-systemer i løbet af en dags tid, mens
-window-baseret software kræver eksperimenter med wxWindows eller andre
+Vanskelighederne afhÃ¦nger af softwarens kvalitet. Eksisterende, portabel
+kode er set flyttet fra andre Unix-systemer i lÃ¸bet af en dags tid, mens
+window-baseret software krÃ¦ver eksperimenter med wxWindows eller andre
 portable GUI-widget sets.
 </para>
 <para>
 Skal man implementere et nyt system vil de fleste udviklere opfatte Linux
-miljøet som mere solidt og stabilt, gennemdokumenteret og godt
-supporteret, idet alle gældende standarder er implementerede.
+miljÃ¸et som mere solidt og stabilt, gennemdokumenteret og godt
+supporteret, idet alle gÃ¦ldende standarder er implementerede.
 </para>
 </listitem>
 
 <listitem>
 <para>
 Tidsforbruget for etablering af Linux baserede systemer vil ofte
-være mindre end for gennemsnittet af andre systemer, herunder
-specielt Microsoft. Det afhænger i dag mere af, hvor meget tid
-man har lyst til at bruge på customisering af systemet. En Linux
-kan være oppe at køre på et par minutter med en dappix - CD.
+vÃ¦re mindre end for gennemsnittet af andre systemer, herunder
+specielt Microsoft. Det afhÃ¦nger i dag mere af, hvor meget tid
+man har lyst til at bruge pÃ¥ customisering af systemet. En Linux
+kan vÃ¦re oppe at kÃ¸re pÃ¥ et par minutter med en dappix - CD.
 </para>
 
 <para>
-Der er andre spørgsmål, som bedre kan belyse mulighederne med en Linux baseret
+Der er andre spÃ¸rgsmÃ¥l, som bedre kan belyse mulighederne med en Linux baseret
 it-platform: Metoder til installation, verifikation, system-kloning,
-drivere til interessant hardware samt endelig support i tilfælde af
-problemer med styresystem/hardware. Her må man betale prisen ligesom
-for andre systemer, hvis man ønsker høj kvalitet og ikke selv råder over
+drivere til interessant hardware samt endelig support i tilfÃ¦lde af
+problemer med styresystem/hardware. Her mÃ¥ man betale prisen ligesom
+for andre systemer, hvis man Ã¸nsker hÃ¸j kvalitet og ikke selv rÃ¥der over
 kvalificeret arbejdskraft. Det nye er, at software til disse funktioner
-findes og hele tiden forbedres, og at der er ved at opstå en international
-industri af konsulenter og hardwareudvidelser, som kan løse problemer med
-opbygning af endog særdeles kritiske systemer.  Ligeledes er der mange
+findes og hele tiden forbedres, og at der er ved at opstÃ¥ en international
+industri af konsulenter og hardwareudvidelser, som kan lÃ¸se problemer med
+opbygning af endog sÃ¦rdeles kritiske systemer.  Ligeledes er der mange
 dygtige konsulentfirmaer i Danmark, som tilbyder kvalificeret assistance,
 og dermed kan forbruget af virksomhedens egne interne ressourcer
 minimeres.
@@ -749,61 +749,61 @@ minimeres.
 
 
 <para>
-Det må konkluderes, at it-systemer ikke bør udskiftes samlet, men
-at man så vidt muligt skal arbejde med "øer" og "brobygning", som
+Det mÃ¥ konkluderes, at it-systemer ikke bÃ¸r udskiftes samlet, men
+at man sÃ¥ vidt muligt skal arbejde med "Ã¸er" og "brobygning", som
 kan foretages kontinuerligt. Der er undtagelser, som regel
-vedørende back-end databaseprogrammer, især hvor disse er fast
+vedÃ¸rende back-end databaseprogrammer, isÃ¦r hvor disse er fast
 koblede til andre typer software, og hvor der derfor ikke er
-modularitet. For samlede corporate databaser (som i øvrigt ikke
-skal behandles her) er det også en naturlig fordel hvis
-applikationerne er samlet i grupper ("øer"), således at back-end
+modularitet. For samlede corporate databaser (som i Ã¸vrigt ikke
+skal behandles her) er det ogsÃ¥ en naturlig fordel hvis
+applikationerne er samlet i grupper ("Ã¸er"), sÃ¥ledes at back-end
 databasen kan udskiftes. Portabilitet og modularisering er de
 vigtigste buzzwords her, og en god modularitet sikrer at
-virksomheden kan omlægge systemerne gradvist.
+virksomheden kan omlÃ¦gge systemerne gradvist.
 </para>
 
 <para>
-Med Linux har man alle værktøjer til at implementere
+Med Linux har man alle vÃ¦rktÃ¸jer til at implementere
 paralleldrift, portabilitet og modularitet, og support og
-kompetente programmører er allerede til stede i rigt mål.
-Man kan derfor få mest ud af de økonomiske ressourcer ved at
-indføre Linux systemer i virksomheden hver gang en udbygning
-eller ændring finder sted.
+kompetente programmÃ¸rer er allerede til stede i rigt mÃ¥l.
+Man kan derfor fÃ¥ mest ud af de Ã¸konomiske ressourcer ved at
+indfÃ¸re Linux systemer i virksomheden hver gang en udbygning
+eller Ã¦ndring finder sted.
 </para>
 
 <para>
-Den lave anskaffelsesomkostning, som jo oftest kun består i
+Den lave anskaffelsesomkostning, som jo oftest kun bestÃ¥r i
 omkostninger til medier, dokumentation og transport, er ren
-og skær sidegevinst. Den egentlige fordel ligger et helt andet
+og skÃ¦r sidegevinst. Den egentlige fordel ligger et helt andet
 sted.
 </para>
 
-<!-- Donald: Her stopper jeg. Jeg opgiver at føre den valgte
-     tråd eller disposition helt igennem.
+<!-- Donald: Her stopper jeg. Jeg opgiver at fÃ¸re den valgte
+     trÃ¥d eller disposition helt igennem.
      
-     Der er mange af argumenterne, som ikke er særligt relevante
-     mere. Hvis der er nogen, som vil overtage, så er jeg glad og
-     vil gerne mødes og tale tingene igennem, ellers stopper jeg
-     arbejdet på denne bog. Jeg vil måske forsøge noget lignende
-     i en anden sammenhæng, men så bliver det baseret på "case
+     Der er mange af argumenterne, som ikke er sÃ¦rligt relevante
+     mere. Hvis der er nogen, som vil overtage, sÃ¥ er jeg glad og
+     vil gerne mÃ¸des og tale tingene igennem, ellers stopper jeg
+     arbejdet pÃ¥ denne bog. Jeg vil mÃ¥ske forsÃ¸ge noget lignende
+     i en anden sammenhÃ¦ng, men sÃ¥ bliver det baseret pÃ¥ "case
      studies", standarder, professionalisme, sikkerhed og
-     fleksibilitet, ikke på besparelser og kontorplatform.
+     fleksibilitet, ikke pÃ¥ besparelser og kontorplatform.
 /-->
      
 
-<!-- Donald: De næste afsnit er gode! Den næste paragraf nedenfor
-             er Michaels stærke argument! /-->
+<!-- Donald: De nÃ¦ste afsnit er gode! Den nÃ¦ste paragraf nedenfor
+             er Michaels stÃ¦rke argument! /-->
 
 <para>
 Det mest attraktive ved at skifte til Linux er den frie software,
 som betyder, at penge investeret i udvikling og drift i dag ikke
-går til spilde. Ved videreudvikling og tilpasning af software vil
-virksomhedens investering være bedre beskyttet indenfor Open
-Source. Hvad gavn har man af investeringer og viden, når man
+gÃ¥r til spilde. Ved videreudvikling og tilpasning af software vil
+virksomhedens investering vÃ¦re bedre beskyttet indenfor Open
+Source. Hvad gavn har man af investeringer og viden, nÃ¥r man
 tvinges til at opgradere? Hvem beslutter, at disse investeringer
-er forældede og skal afskrives? Investeringer i Linux er en
+er forÃ¦ldede og skal afskrives? Investeringer i Linux er en
 investering langt ud i fremtiden, og det er virksomheden selv,
-der bestemmer, hvornår de skal afskrives.
+der bestemmer, hvornÃ¥r de skal afskrives.
 </para>
 </sect2>
 </sect1>
@@ -814,44 +814,44 @@ der bestemmer, hvornår de skal afskrives.
 <sect1 id="SERVER-SIDE">
 <title>Serversiden</title>
 <para>
-Opdelingen i en serverside og en klientside er ikke valgt arbitrær,
-men har sin begrundelse i, at den vil være to helt forskellige
-opgaver. Et skifte på serversiden behøver ikke at få nogen indflydelse
-på organisationen, og kan gennemføres transparent overfor brugerne,
-hvilket betyder, at det kan foregå i et passende tempo, og ikke kræver
-hastige og uovervejede beslutninger. For at gøre opgaven overskuelig
-kommer her et par råd:
+Opdelingen i en serverside og en klientside er ikke valgt arbitrÃ¦r,
+men har sin begrundelse i, at den vil vÃ¦re to helt forskellige
+opgaver. Et skifte pÃ¥ serversiden behÃ¸ver ikke at fÃ¥ nogen indflydelse
+pÃ¥ organisationen, og kan gennemfÃ¸res transparent overfor brugerne,
+hvilket betyder, at det kan foregÃ¥ i et passende tempo, og ikke krÃ¦ver
+hastige og uovervejede beslutninger. For at gÃ¸re opgaven overskuelig
+kommer her et par rÃ¥d:
 </para>
 
 <itemizedlist>
 <listitem>
 <para>
-Gør ikke det hele på en gang. Start på serversiden og vent med
-brugersiden til serverudskiftningen er gennemført
+GÃ¸r ikke det hele pÃ¥ en gang. Start pÃ¥ serversiden og vent med
+brugersiden til serverudskiftningen er gennemfÃ¸rt
 tilfredsstillende.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Undgå programudvikling.
+UndgÃ¥ programudvikling.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Lær Linux at kende; det kan mere end Windows, så det kan anbefales, at
-der bruges tid på at lære det at kende, da det næsten altid viser sig,
-at ting der før var vanskelige under Windows, kan gøres enklere og
-nemmere under Linux. Frigør dig fra Windows' begrænsninger, og tænk og
+LÃ¦r Linux at kende; det kan mere end Windows, sÃ¥ det kan anbefales, at
+der bruges tid pÃ¥ at lÃ¦re det at kende, da det nÃ¦sten altid viser sig,
+at ting der fÃ¸r var vanskelige under Windows, kan gÃ¸res enklere og
+nemmere under Linux. FrigÃ¸r dig fra Windows' begrÃ¦nsninger, og tÃ¦nk og
 arbejd Linux.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Brug flere, mere åbne protokoller. Jo flere protokoller på netværket,
-jo større vil opgaven blive at administrere det.
+Brug flere, mere Ã¥bne protokoller. Jo flere protokoller pÃ¥ netvÃ¦rket,
+jo stÃ¸rre vil opgaven blive at administrere det.
 </para>
 </listitem>
 </itemizedlist>
@@ -859,21 +859,21 @@ jo større vil opgaven blive at administrere det.
 <sect2 id="HOWTO-SERVER">
 <title>Platformsskift - hvordan</title>
 <para>
-I dette afsnit vil metoden for skiftet blive gennemgået nærmere, og
-den indeholder fire trin. De første tre giver dig et overblik over
+I dette afsnit vil metoden for skiftet blive gennemgÃ¥et nÃ¦rmere, og
+den indeholder fire trin. De fÃ¸rste tre giver dig et overblik over
 dine data, og hvordan adgangen til dem er i dag, mens det sidste trin
 indeholder udarbejdelsen af et diagram, der vil give dig et overblik
-over, hvordan server og klientløsningen skal udarbejdes.
+over, hvordan server og klientlÃ¸sningen skal udarbejdes.
 </para>
 
 <para>
-De fire trin er følgende:
+De fire trin er fÃ¸lgende:
 </para>
 
 <itemizedlist mark="number">
 <listitem>
 <para>
-Lav en liste over dine data, og hvor de befinder sig. Listen skal også
+Lav en liste over dine data, og hvor de befinder sig. Listen skal ogsÃ¥
 vise, hvem der har ansvaret for dataene - systemadministrationen eller
 brugerne.
 </para>
@@ -888,7 +888,7 @@ Lav en liste over de programmer, der benyttes i dag.
 <listitem>
 <para>
 Lav en liste over de anvendte protokoller, og hvordan kommunikationen
-foregår til data i dag.
+foregÃ¥r til data i dag.
 </para>
 </listitem>
 
@@ -901,10 +901,10 @@ Udarbejd diagrammet
 
 <para>
 Som man kan se, er trinene protokol og programstyret, hvilket giver
-mulighed for at få et overblik over de forskellige løsningsmodeller,
-der kan vælges, under hensyntagen til de bindinger forskellige
-programmer og protokoller medfører. Når man kender alle
-læsningsmodeller, har man mulighed for at vælge den løsning, der er
+mulighed for at fÃ¥ et overblik over de forskellige lÃ¸sningsmodeller,
+der kan vÃ¦lges, under hensyntagen til de bindinger forskellige
+programmer og protokoller medfÃ¸rer. NÃ¥r man kender alle
+lÃ¦sningsmodeller, har man mulighed for at vÃ¦lge den lÃ¸sning, der er
 mest optimal for virksomheden.
 </para>
 
@@ -912,117 +912,117 @@ mest optimal for virksomheden.
 <title>Listen over data</title>
 <para>
 Verden af i dag betyder, at alle mennesker har enorme datalagre
-liggende på deres computere. Nogen ligger placeret de officielle
-steder - i hjemmekataloget på serverne, mens andre er placeret
-uofficielt - lokalt på arbejdsstationerne, men ligegyldigt hvor de
-ligger placeret, er de væsentlige for medarbejdernes arbejdsindsats,
-og derfor skal vi have styr på, hvor de befinder sig. Typiske
-eksempler på disse vigtige data er:
+liggende pÃ¥ deres computere. Nogen ligger placeret de officielle
+steder - i hjemmekataloget pÃ¥ serverne, mens andre er placeret
+uofficielt - lokalt pÃ¥ arbejdsstationerne, men ligegyldigt hvor de
+ligger placeret, er de vÃ¦sentlige for medarbejdernes arbejdsindsats,
+og derfor skal vi have styr pÃ¥, hvor de befinder sig. Typiske
+eksempler pÃ¥ disse vigtige data er:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
 <para>
-E-post og adressebøger. Hvordan er data gemt? Hvilke mailservere og
+E-post og adressebÃ¸ger. Hvordan er data gemt? Hvilke mailservere og
 protokoller anvendes? Hvilken form for autorisation bruges?
 </para>
 </listitem>
 
 <listitem>
 <para>
-Kalendere og tidsplanlægningsprogrammer. Mailsystemer leveres ofte
-sammen med gruppebaserede tidsplanlægningsprogrammer (Microsoft
-Exchange, Lotus Domino etc.), og kræver ofte særlige forholdsregler,
-da de sjældent benytter åbne standarder.
+Kalendere og tidsplanlÃ¦gningsprogrammer. Mailsystemer leveres ofte
+sammen med gruppebaserede tidsplanlÃ¦gningsprogrammer (Microsoft
+Exchange, Lotus Domino etc.), og krÃ¦ver ofte sÃ¦rlige forholdsregler,
+da de sjÃ¦ldent benytter Ã¥bne standarder.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Filressourcer. Brugere har ofte store mængder af fælles
+Filressourcer. Brugere har ofte store mÃ¦ngder af fÃ¦lles
 officedokumenter liggende, som er vitale.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Databaser. På serversiden er det produkter som Oracle eller Microsoft
-SQL server, mens det på brugersiden typisk er Microsoft Access. Målet
-er, at bruger ikke mærker nogen ændringer i deres daglige brug af
+Databaser. PÃ¥ serversiden er det produkter som Oracle eller Microsoft
+SQL server, mens det pÃ¥ brugersiden typisk er Microsoft Access. MÃ¥let
+er, at bruger ikke mÃ¦rker nogen Ã¦ndringer i deres daglige brug af
 disse. Betyder ikke produkterne er ens, men kun at brugerinterface
-ikke ændres.
+ikke Ã¦ndres.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Webservere. Brugere som vedligeholder dem, skal ikke mærke nogen
-forskel; de skal stadigvæk kunne anvende de programmer, de
-vedligeholder dem med i dag. Data på websider kan også være hentet
-udefra, og derfor skal man have styr på, hvordan data lagres og deres
+Webservere. Brugere som vedligeholder dem, skal ikke mÃ¦rke nogen
+forskel; de skal stadigvÃ¦k kunne anvende de programmer, de
+vedligeholder dem med i dag. Data pÃ¥ websider kan ogsÃ¥ vÃ¦re hentet
+udefra, og derfor skal man have styr pÃ¥, hvordan data lagres og deres
 format samt hvilke bindinger der er - ActiveX, ASP etc.
 </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Der findes også vigtige data på serverne, som bliver administreret af
-systemadministrationen. Til disse henhøre blandt andet:
+Der findes ogsÃ¥ vigtige data pÃ¥ serverne, som bliver administreret af
+systemadministrationen. Til disse henhÃ¸re blandt andet:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
 <para>
 Brugerdatabaser. Indeholder en detaljeret beskrivelse af alle brugere
-på virksomhedens net, og hvilke rettigheder hver enkelt bruger har.
+pÃ¥ virksomhedens net, og hvilke rettigheder hver enkelt bruger har.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Grupper og rettigheder. Hvilke grupper findes på virksomhedens net?
-F.eks. er salgsafdelingen en typisk gruppe, der skal kunne tilgå
+Grupper og rettigheder. Hvilke grupper findes pÃ¥ virksomhedens net?
+F.eks. er salgsafdelingen en typisk gruppe, der skal kunne tilgÃ¥
 kundedatabasen.
 </para>
 
 <para>
 Backup arkiver. I windowsverdenen er det typisk tredjepartsprogrammer,
-der håndtere backup, så vi skal finde ud af, om det findes på til Linux.
+der hÃ¥ndtere backup, sÃ¥ vi skal finde ud af, om det findes pÃ¥ til Linux.
 </para>
 </listitem>
 
 <listitem>
 <para>
-Logfiler. Vigtige hvis noget går galt, eller som bevis i en retsag
-vedrærende hacking mv.
+Logfiler. Vigtige hvis noget gÃ¥r galt, eller som bevis i en retsag
+vedrÃ¦rende hacking mv.
 </para>
 </listitem>
 </itemizedlist>
 </sect3>
 
 <sect3 id="BRUGERAPPLIKATIONER">
-<title>Nuværende brugerprogrammer</title>
+<title>NuvÃ¦rende brugerprogrammer</title>
 <para>
 Selvom der findes et utal af programmer til Windows, kommer de fleste
-programmer fra højest 10 forskellige udbydere, så hvis man kan lave en
-samlet aftale med nogen få af dem, er de fleste problemer på
-klientsiden løst.
+programmer fra hÃ¸jest 10 forskellige udbydere, sÃ¥ hvis man kan lave en
+samlet aftale med nogen fÃ¥ af dem, er de fleste problemer pÃ¥
+klientsiden lÃ¸st.
 </para>
 
 <para>
-Manglen på erstatninger for nogle programmer på klientsiden knytter
+Manglen pÃ¥ erstatninger for nogle programmer pÃ¥ klientsiden knytter
 sig hovedsageligt til Microsoftprodukter, men da Linux er i stand til
 at servicere disse programmer, og da vi benytter en flertrinsraket,
-giver dette sjælden nogen problemer. De færeste begynder alligevel
-ikke på klientsiden først, da medarbejderne først skal have den
-nødvendig uddannelse.
+giver dette sjÃ¦lden nogen problemer. De fÃ¦reste begynder alligevel
+ikke pÃ¥ klientsiden fÃ¸rst, da medarbejderne fÃ¸rst skal have den
+nÃ¸dvendig uddannelse.
 </para>
 
 <para>
-Den nemmeste måde at starte planlægningen af systemskiftet på
+Den nemmeste mÃ¥de at starte planlÃ¦gningen af systemskiftet pÃ¥
 klientsiden er at udarbejde en tabel, der adresserer firmaets
-specifikke behov. Denne kunne foreksempel se ud på følgende
-måde:
+specifikke behov. Denne kunne foreksempel se ud pÃ¥ fÃ¸lgende
+mÃ¥de:
 </para>
 
 <table id="WINDOWSPROGRAMMER">
@@ -1033,9 +1033,9 @@ måde:
 <entry>Substitueres med</entry>
 <entry>Linux-version</entry></row></thead>
 <tbody><row><entry>MS Office</entry>
-<entry>Skrive og redigere dokumenter, regneark, præsentationer mv.</entry>
+<entry>Skrive og redigere dokumenter, regneark, prÃ¦sentationer mv.</entry>
 <entry>Ja, via Samba</entry>
-<entry>Få. WordPerfect, StarOffice og OpenOffice.org</entry>
+<entry>FÃ¥. WordPerfect, StarOffice og OpenOffice.org</entry>
 <entry>Ja, WordPerfect, StarOffice og OpenOffice.org</entry></row>
 <row><entry>Osv.</entry>
 <entry>Osv.</entry>
@@ -1047,20 +1047,20 @@ måde:
 <sect3 id="PROTOKOLLER">
 <title>Protokoller og kommunikation i dag</title>
 <para>
-Det følgende afsnit vedrører protokoller, og hvordan kommunikationen
-foregår. Læsten skal indeholde de protokoller, som firmaets
+Det fÃ¸lgende afsnit vedrÃ¸rer protokoller, og hvordan kommunikationen
+foregÃ¥r. LÃ¦sten skal indeholde de protokoller, som firmaets
 microsoftprogrammer benytter. Hvis man ikke er sikker, findes der
 forskellige programmer man kan bruge til at finde ud af det, forlad
-dig ikke udelukkende på dokumentationen. Disse programmer kaldes
-netværkssniffere.
+dig ikke udelukkende pÃ¥ dokumentationen. Disse programmer kaldes
+netvÃ¦rkssniffere.
 </para>
 
 <para>
-Det interessante her er, at næsten alle ikke standardteknologier fra
-Microsoft enten er baseret på på allerede eksisterende teknologier,
-eller er dokumenteret på et lavere niveau. Politikken her er helt
-klar: Hold dig til åbne standarder<footnote><para>Hvis en protokol er
-dokumenteret, betyder det i denne sammenhæng, at det er en åben
+Det interessante her er, at nÃ¦sten alle ikke standardteknologier fra
+Microsoft enten er baseret pÃ¥ pÃ¥ allerede eksisterende teknologier,
+eller er dokumenteret pÃ¥ et lavere niveau. Politikken her er helt
+klar: Hold dig til Ã¥bne standarder<footnote><para>Hvis en protokol er
+dokumenteret, betyder det i denne sammenhÃ¦ng, at det er en Ã¥ben
 standard
 </para></footnote>, da det giver frihed fra
 producenterne.
@@ -1068,13 +1068,13 @@ producenterne.
 
 <para>
 En anden pudsig ting er, at de fleste produkter fra Microsoft
-udemærket kan kommunikere over standardteknologier, men er opsat til
-at benytte Microsofts egne ikke standardiserede teknologier, så i de
-fleste tilfælde er det kun et spørgsmål om at omkonfigurere
+udemÃ¦rket kan kommunikere over standardteknologier, men er opsat til
+at benytte Microsofts egne ikke standardiserede teknologier, sÃ¥ i de
+fleste tilfÃ¦lde er det kun et spÃ¸rgsmÃ¥l om at omkonfigurere
 programmerne.
 </para>
 
-<para>Et eksempel på en tabel kommer her:
+<para>Et eksempel pÃ¥ en tabel kommer her:
 </para>
 <table id="WINDOWSPROTOKOLLER"><title>Protokoller foretrukket af Microsofts produkter</title>
 <tgroup cols="3" align="char"><thead><row><entry>Anvendelse</entry>
@@ -1082,14 +1082,14 @@ programmerne.
 <entry>Dokumenteret</entry></row></thead>
 <tbody><row><entry>MS Outlook til MS Exchange Server</entry>
 <entry>MAPI over DCE/RPC til e-post</entry>
-<entry>Krypteret på en udokumenteret måde</entry></row>
+<entry>Krypteret pÃ¥ en udokumenteret mÃ¥de</entry></row>
 <row><entry>Osv.</entry>
 <entry>Osv.</entry>
 <entry>Osv.</entry></row></tbody></tgroup></table>
 <table id="PROTOKOLERSTATNINGER"><title>Protokolerstatninger og implementationer</title>
 <tgroup cols="4" align="char"><thead><row><entry>Protokol</entry>
 <entry>Fri Implementation</entry>
-<entry>åben alternativ</entry>
+<entry>Ã¥ben alternativ</entry>
 <entry>Kommentarer</entry></row></thead>
 <tbody><row><entry>MAPI over DCE/RPC</entry>
 <entry>Nej</entry>
@@ -1106,8 +1106,8 @@ programmerne.
 
 
 <para>
-Her kan du læse mere om <ulink url="http://www.openmail.com">OpenMail</ulink><footnote>
-<para>Desværre er det langfra sikkert at HP fortsætter support,
+Her kan du lÃ¦se mere om <ulink url="http://www.openmail.com">OpenMail</ulink><footnote>
+<para>DesvÃ¦rre er det langfra sikkert at HP fortsÃ¦tter support,
 videreudvikling og i 2002 og fremover.
 </para>
 </footnote>
@@ -1117,42 +1117,42 @@ videreudvikling og i 2002 og fremover.
 <sect3>
 <title>Protokoldiagrammet</title>
 <para>
-På baggrund af de forrige tabeller skulle du være i stand til at lave
-nedenstående liste. Se <xref linkend="PROTOKOLDIAGRAM-FIG"/>
+PÃ¥ baggrund af de forrige tabeller skulle du vÃ¦re i stand til at lave
+nedenstÃ¥ende liste. Se <xref linkend="PROTOKOLDIAGRAM-FIG"/>
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
 <para>
 Kombinationen af protokoller/programmer der kan benyttes for at
-kommunikere med Linux-serveren - også kombinationer der ikke benyttes
-på nuværende tidspunkt, skal med.
+kommunikere med Linux-serveren - ogsÃ¥ kombinationer der ikke benyttes
+pÃ¥ nuvÃ¦rende tidspunkt, skal med.
 </para>
 </listitem>
 
 <listitem>
 <para>
-De protokoller som åben server software kan benytte til at servicere
+De protokoller som Ã¥ben server software kan benytte til at servicere
 eksisterende data.
 </para>
 </listitem>
 
 <listitem>
 <para>
-De protokoller åbne klientprogrammer kan benytte til at kommunikere
+De protokoller Ã¥bne klientprogrammer kan benytte til at kommunikere
 med eksisterende data
 </para>
 </listitem>
 </itemizedlist>
 
 <figure float="1" id="PROTOKOLDIAGRAM-FIG">
-<title>Eksempel på et protokoldiagram</title>
+<title>Eksempel pÃ¥ et protokoldiagram</title>
 <graphic fileref="protokoldiagram.&magic" scale="45"></graphic>
 </figure>
 
 <para>
-Vi har nu færdigbehandlet serversiden, og med denne gennemgang skulle
-du være rustet til at påbegynde din egen migrationsplan, men til slut
+Vi har nu fÃ¦rdigbehandlet serversiden, og med denne gennemgang skulle
+du vÃ¦re rustet til at pÃ¥begynde din egen migrationsplan, men til slut
 mangler jeg lige at pointere, at de enkelte programmer og deres
 forskellige protokoller vil blive behandlet i deres respektive
 afsnit.
@@ -1165,18 +1165,18 @@ afsnit.
 <title>Klientsiden</title>
 <para>
 I forrige afsnit behandlede jeg serversiden ved et platformsskift,
-mens emnet for dette kapitel vil være klientsiden. Som nævnt i kapitel
+mens emnet for dette kapitel vil vÃ¦re klientsiden. Som nÃ¦vnt i kapitel
 1 findes der flere forskellige alternative distributioner til Linux,
-men hvis jeg skal komme med et forslag til valg af distribution, må
-valget falde på enten Red Hat eller Suse, da de, efter min mening, har
-den bedste løsning, hvis anvendelsen er erhvervsorienteret. De har
+men hvis jeg skal komme med et forslag til valg af distribution, mÃ¥
+valget falde pÃ¥ enten Red Hat eller Suse, da de, efter min mening, har
+den bedste lÃ¸sning, hvis anvendelsen er erhvervsorienteret. De har
 begge glimrende standardvalgte installationsprocedurer, og hele
-processen gennemføres gennem et grafisk interface. Om valget falder på
-den ene eller anden distribution, vil jeg lade være helt op til dig
-selv at afgøre, blot kan nævnes, at Red Hat er en amerikansk
+processen gennemfÃ¸res gennem et grafisk interface. Om valget falder pÃ¥
+den ene eller anden distribution, vil jeg lade vÃ¦re helt op til dig
+selv at afgÃ¸re, blot kan nÃ¦vnes, at Red Hat er en amerikansk
 distribution, mens Suse bliver udviklet i Tyskland, men for begge
-distributioners vedkommende gælder, at der findes en særlig version
-til erhvervsbrug, og begge distributioner har også et omfattende
+distributioners vedkommende gÃ¦lder, at der findes en sÃ¦rlig version
+til erhvervsbrug, og begge distributioner har ogsÃ¥ et omfattende
 supportprogram til erhvervslivet. Find mere her:
 </para>
 
@@ -1195,14 +1195,14 @@ supportprogram til erhvervslivet. Find mere her:
 </itemizedlist>
 
 <para>
-Et ufravigelig regel må dog være, at du skal ikke vælge en
-distribution, du ikke kan få kvalificeret support til
+Et ufravigelig regel mÃ¥ dog vÃ¦re, at du skal ikke vÃ¦lge en
+distribution, du ikke kan fÃ¥ kvalificeret support til
 </para>
 
 <para>
-En anden fremgangsmåde kunne være, at vælge en leverandør der tilbyder
-prækonfigurerede maskiner og support til Linux. Af disse findes i dag
-følgende producenter:
+En anden fremgangsmÃ¥de kunne vÃ¦re, at vÃ¦lge en leverandÃ¸r der tilbyder
+prÃ¦konfigurerede maskiner og support til Linux. Af disse findes i dag
+fÃ¸lgende producenter:
 </para>
 
 <itemizedlist>
@@ -1240,25 +1240,25 @@ følgende producenter:
 <sect2 id="HOWTO-CLIENT">
 <title>Skifte skrivebordssystem - hvordan</title>
 <para>
-Inden man begynder at udskifte skrivebordssystemet, er det nødvendigt, at man
+Inden man begynder at udskifte skrivebordssystemet, er det nÃ¸dvendigt, at man
 danner sig et overblik over, hvilke programmer man anvender under
 Windows i dag, og om der eventuelt findes alternativer til Linux i
-dag. Alternativer kan i denne sammenhæng være identiske programmer
-skrevet til begge platforme - f.eks. findes Netscape både til Windows
+dag. Alternativer kan i denne sammenhÃ¦ng vÃ¦re identiske programmer
+skrevet til begge platforme - f.eks. findes Netscape bÃ¥de til Windows
 og Linux, eller om der skulle findes substituerende programmer -
 f.eks. kan Adobes Acrobat Reader erstattes med StarOffice 6.0 (giver
 mulighed for at gemme i pdf-format).
 </para>
 
 <para>
-Første trin er at opstille et applikationsskema, der giver et overblik
+FÃ¸rste trin er at opstille et applikationsskema, der giver et overblik
 over hvilken type programmer firmaet benytter i dag, og hvad den
 tilsvarende applikation hedder i Windows. Jeg vil her give et eksempel
-på standardskemaet, som naturligvis skal tilpasses den konkrete
-situation. Der vil uden tvivl være en del programmer, der ikke er
-standard, men disse programmer foreslår jeg, at man opstiller i et
-separat skema, da disse programmer uden tvivl bør have en nærmere
-analyse, og samtidig behøver de måske ikke at være standard på alle
+pÃ¥ standardskemaet, som naturligvis skal tilpasses den konkrete
+situation. Der vil uden tvivl vÃ¦re en del programmer, der ikke er
+standard, men disse programmer foreslÃ¥r jeg, at man opstiller i et
+separat skema, da disse programmer uden tvivl bÃ¸r have en nÃ¦rmere
+analyse, og samtidig behÃ¸ver de mÃ¥ske ikke at vÃ¦re standard pÃ¥ alle
 arbejdsstationer.
 </para>
 
@@ -1272,7 +1272,7 @@ arbejdsstationer.
 <row><entry>Sikkerhed</entry>
 <entry>Zone Alarm og et antivirusprogram (Norton, McAfee etc.)</entry></row>
 <row><entry>Publicering</entry>
-<entry>Adobe Acrobat og et cd-brænderprogram (Easy CD Creator, Nero Burning Rom etc.)</entry></row>
+<entry>Adobe Acrobat og et cd-brÃ¦nderprogram (Easy CD Creator, Nero Burning Rom etc.)</entry></row>
 <row><entry>Grafik</entry>
 <entry>Billedbehandlingsprogram (Adobe Photoshop, Microsoft Picture Publisher)</entry></row>
 <row><entry>Utilities</entry>
@@ -1285,33 +1285,33 @@ funktionalitet - Realplayer/Windows Media Player</entry>
 </table>
 
 <para>
-Det næste valg man skal træffe vedrører den grafiske
-brugergrænseflade. I Windows giver det sig selv, mens der til Linux
-findes utallige. Her er det vist på plads hurtigt at forklare
-forskellen mellem de to alternativer, og for at kunne det, skal vi gå
-nogen år tilbage, faktisk helt tilbage til den tid hvor Dos stadig var
+Det nÃ¦ste valg man skal trÃ¦ffe vedrÃ¸rer den grafiske
+brugergrÃ¦nseflade. I Windows giver det sig selv, mens der til Linux
+findes utallige. Her er det vist pÃ¥ plads hurtigt at forklare
+forskellen mellem de to alternativer, og for at kunne det, skal vi gÃ¥
+nogen Ã¥r tilbage, faktisk helt tilbage til den tid hvor Dos stadig var
 en del af computeren, og hvor man efter opstart af Dos skulle starte
-Windows op - kunne dog automatiseres. I dag er det sådan, at man ikke
-har dette valg mere, men springer opstarten af Dos op, og går direkte
+Windows op - kunne dog automatiseres. I dag er det sÃ¥dan, at man ikke
+har dette valg mere, men springer opstarten af Dos op, og gÃ¥r direkte
 til Windows. Under Linux er det som i gamle dage i windowsverdenen,
-men forskellen er blot den, at man i Linux-verdenen kan vælge mellem
-utallige grafiske brugergrænseflader - nogen mere veludviklede end
-andre. I dag er situationen den, at når man snakker grafisk
-brugergrænseflade, findes der to store spillere på markedet med hver
-deres bud på en grafisk tilgang til Linux. Groft sagt kan de faktisk
-opdeles i en udgave, der har Apples grafiske grænseflade som reference
-- Gnome, og en udgave der har windows grafiske grænseflade som
-reference - KDE. Da Windows er den mest benyttede grafiske grænseflade
-i Danmark, vil jeg anbefale, at man vælger KDE som grafisk
-brugergrænseflade.
+men forskellen er blot den, at man i Linux-verdenen kan vÃ¦lge mellem
+utallige grafiske brugergrÃ¦nseflader - nogen mere veludviklede end
+andre. I dag er situationen den, at nÃ¥r man snakker grafisk
+brugergrÃ¦nseflade, findes der to store spillere pÃ¥ markedet med hver
+deres bud pÃ¥ en grafisk tilgang til Linux. Groft sagt kan de faktisk
+opdeles i en udgave, der har Apples grafiske grÃ¦nseflade som reference
+- Gnome, og en udgave der har windows grafiske grÃ¦nseflade som
+reference - KDE. Da Windows er den mest benyttede grafiske grÃ¦nseflade
+i Danmark, vil jeg anbefale, at man vÃ¦lger KDE som grafisk
+brugergrÃ¦nseflade.
 </para>
 <!--
 <para>
 Inden vi afslutter dette kapitel, skal vi lige omkring Windows' og
-Linuxs krav til den anvendte hardware. De følgende observationer er
-gjort på en Pentium Celeron 400 MHz maskine med Linux (Red Hat
+Linuxs krav til den anvendte hardware. De fÃ¸lgende observationer er
+gjort pÃ¥ en Pentium Celeron 400 MHz maskine med Linux (Red Hat
 7.1) og Windows 2000 installeret. Som man kan se i tabellen, er der en
-signifikant forskel på ramforbrug under henholdsvis Windows og
+signifikant forskel pÃ¥ ramforbrug under henholdsvis Windows og
 Linux.
 </para>
 
@@ -1348,20 +1348,20 @@ Linux.
 </table>
 
 <para>
-Som det fremgår af ovenstående observationer, stiller Linux væsentlige
-mindre krav til værtsmaskinen end Windows. Linuxs er mere effektiv i
+Som det fremgÃ¥r af ovenstÃ¥ende observationer, stiller Linux vÃ¦sentlige
+mindre krav til vÃ¦rtsmaskinen end Windows. Linuxs er mere effektiv i
 dens udnyttelse af ram, og derfor kan man afvikle flere programmer
-udover StarOffice med 128 MB ram, uden at skulle gøre brug af
+udover StarOffice med 128 MB ram, uden at skulle gÃ¸re brug af
 swap. Konklusion: <emphasis>Linux kan afvikles med mindre end
-halvdelen af den ram, der kræves for at afvikle Windows 2000, hvilket
+halvdelen af den ram, der krÃ¦ves for at afvikle Windows 2000, hvilket
 betyder, at man ikke vil skulle opgradere sin hardware, som en
-tilsvarende opgradering til Windows 2000 vil kræve.</emphasis>
+tilsvarende opgradering til Windows 2000 vil krÃ¦ve.</emphasis>
 </para>
 -->
 <para>
-Hardware kompatibiliteten under Linux er dog ikke lige så stor, som
-det er tilfældet under Windows, men er computeren mindre end tre år
-gammel, skulle det næppe give nogen problemer. Se disse link for en
+Hardware kompatibiliteten under Linux er dog ikke lige sÃ¥ stor, som
+det er tilfÃ¦ldet under Windows, men er computeren mindre end tre Ã¥r
+gammel, skulle det nÃ¦ppe give nogen problemer. Se disse link for en
 detaljeret gennemgang
 </para>
 
@@ -1382,10 +1382,10 @@ detaljeret gennemgang
 </sect1>
 
 <sect1 id="ECONOMY">
-<title>Hvordan ser økonomien ud</title>
+<title>Hvordan ser Ã¸konomien ud</title>
 <para>
-Da økonomi er en specifik ting, har jeg gjort mig følgende
-forudsætninger for mine beregninger:
+Da Ã¸konomi er en specifik ting, har jeg gjort mig fÃ¸lgende
+forudsÃ¦tninger for mine beregninger:
 </para>
 
 <itemizedlist>
@@ -1410,16 +1410,16 @@ forudsætninger for mine beregninger:
 </itemizedlist>
 
 <para>
-Ovenstående er en minimuminstallation, men den kan let udvides til dit
+OvenstÃ¥ende er en minimuminstallation, men den kan let udvides til dit
 firmas specifikationer. For arbejdsstationernes vedkommende skal du
-blot gange op med antallet, mens det straks er lidt svære for
-serverens vedkommende, her må du få opgraderingsudgiften ved at bede
+blot gange op med antallet, mens det straks er lidt svÃ¦re for
+serverens vedkommende, her mÃ¥ du fÃ¥ opgraderingsudgiften ved at bede
 om et tilbud fra MicroSoft Danmark.
 </para>
 
 <para>
-Med ovenstående forudsætninger vil økonomien se ud på følgende
-måde<footnote><para>Eksemplet er baseret på Linux-distributionen Red Hat
+Med ovenstÃ¥ende forudsÃ¦tninger vil Ã¸konomien se ud pÃ¥ fÃ¸lgende
+mÃ¥de<footnote><para>Eksemplet er baseret pÃ¥ Linux-distributionen Red Hat
 Linux 7.1
 </para></footnote>:
 </para>
@@ -1462,9 +1462,9 @@ Linux 7.1
 </table>
 
 <para>
-Det skal bemærkes, at for Linux-alternativet vil TCO ikke ændre sig med
+Det skal bemÃ¦rkes, at for Linux-alternativet vil TCO ikke Ã¦ndre sig med
 antallet af installerede arbejdsstationer, mens TCO for windows
-vedkommende vil være proportionalt stigenden med antallet af
+vedkommende vil vÃ¦re proportionalt stigenden med antallet af
 arbejdsstationer.
 </para>
 </sect1>

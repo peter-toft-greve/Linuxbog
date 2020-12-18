@@ -1,31 +1,31 @@
 <!-- $Id$ -->
-<!-- Lav skærmskud med F2 og se i /root/DrakX-screenshots bagefter -->
+<!-- Lav skÃ¦rmskud med F2 og se i /root/DrakX-screenshots bagefter -->
 <!-- http://www.sslug.dk/emailarkiv/bog/2001_09/msg00060.html -->
 <chapter id="installmandrake">
 <title>Installation af Mandrake Linux 9.2</title>
 <para>
 <indexterm><primary>Mandrake</primary></indexterm>
 Version 9.2 er Mandrakes nyeste version. Den er meget let at 
-installere, både i forhold til tidligere og i forhold til andre 
+installere, bÃ¥de i forhold til tidligere og i forhold til andre 
 distributioner. Distributionen fra Mandrake udsprang i sin tid fra 
 Red Hat og begge anvender RPM-pakkeformat.
 </para>
 
 <para>
-Den gratis udgave af Mandrake man kan hente på nettet fylder tre cd-rom'er. 
-Find den på f.eks. <ulink url="http://sunsite.dk">http://sunsite.dk</ulink>, 
+Den gratis udgave af Mandrake man kan hente pÃ¥ nettet fylder tre cd-rom'er. 
+Find den pÃ¥ f.eks. <ulink url="http://sunsite.dk">http://sunsite.dk</ulink>, 
 <ulink url="http://www.klid.dk">http://www.klid.dk</ulink> eller
 <ulink url="ftp://ftp.sslug.dk/pub/mirror">ftp://ftp.sslug.dk/pub/mirror</ulink>.  Der er
-ca. 2500 pakker med (og hvis man installerer over netværk ca 5000), 
-og det er næsten helt uoverskueligt. Mandrake
-giver virkelig brugeren friheden til at vælge: Der er ofte to pakker,
+ca. 2500 pakker med (og hvis man installerer over netvÃ¦rk ca 5000), 
+og det er nÃ¦sten helt uoverskueligt. Mandrake
+giver virkelig brugeren friheden til at vÃ¦lge: Der er ofte to pakker,
 som giver samme funktionalitet, og det er op til brugeren selv at
-vælge.
+vÃ¦lge.
 </para>
 
 <para>
 Mandrake adskiller sig generelt fra de andre distributioner ved kun at
-understøtte Pentium eller senere.
+understÃ¸tte Pentium eller senere.
 </para>
 
  <indexterm>
@@ -34,44 +34,44 @@ understøtte Pentium eller senere.
  </indexterm>
 
 <para>
-Linux Mandrake var  den første
+Linux Mandrake var  den fÃ¸rste
 mainstream-distribution, som benytter GRUB som startprogram. GRUB er
-på mange måder LILO's afløser; hvilket vi er mange, der
-håber. Postsystemet Postfix følger også med, og det er fra denne
+pÃ¥ mange mÃ¥der LILO's aflÃ¸ser; hvilket vi er mange, der
+hÃ¥ber. Postsystemet Postfix fÃ¸lger ogsÃ¥ med, og det er fra denne
 bogs side anbefalet, at du installerer Postfix i stedet for
 Sendmail. 
 </para>
 
 <para>
-Distributionen bygger på Linux 2.4.22 kernen, men den indeholder
+Distributionen bygger pÃ¥ Linux 2.4.22 kernen, men den indeholder
 mange opdateringer i forhold til en standardkerne. F.eks. finder
-du understøttelse af Supermount. USB 2.0 er også
-understøttet.
+du understÃ¸ttelse af Supermount. USB 2.0 er ogsÃ¥
+understÃ¸ttet.
 </para>
 
 <para>
 En rigtig god ting Mandrake 9.2 har er DrakConf hvorfra man kan
-sætte de fleste systemting op.
+sÃ¦tte de fleste systemting op.
 </para>
 
 <para>
-Mange programmeringsværktøjer er understøttet, og det er ikke kun de 
-gængse som C, C++, Fortran, Perl og Python som følger med. Sprog
-som Haskell 98 er også med, ligesom databaserne MySQL og PostGreSQL følger 
+Mange programmeringsvÃ¦rktÃ¸jer er understÃ¸ttet, og det er ikke kun de 
+gÃ¦ngse som C, C++, Fortran, Perl og Python som fÃ¸lger med. Sprog
+som Haskell 98 er ogsÃ¥ med, ligesom databaserne MySQL og PostGreSQL fÃ¸lger 
 med.
 </para>
 
 <para>
-På den grafiske side er KDE 3.1.3 med og tilsvarende GNOME 2.4. Begge
+PÃ¥ den grafiske side er KDE 3.1.3 med og tilsvarende GNOME 2.4. Begge
 er rigtig gode.
 </para>
 
 <indexterm><primary>urpmi</primary></indexterm>
 <para>
 To geniale programmer, som kommer med Mandrake er rpmdrake og urpmi, som anvendes
-til at installere programmer med. Det sørger for at håndtere alle
-afhængigheder, så eventuelle manglende programpakker også installeres
-med den du vælger at installere eller opgradere.
+til at installere programmer med. Det sÃ¸rger for at hÃ¥ndtere alle
+afhÃ¦ngigheder, sÃ¥ eventuelle manglende programpakker ogsÃ¥ installeres
+med den du vÃ¦lger at installere eller opgradere.
 </para>
 
 <sect1 id="mandrake-cd-rom-install">
@@ -81,15 +81,15 @@ med den du vælger at installere eller opgradere.
 <para>
 Inden du gik i gang med installationen afsatte du plads til Linux. 
 Det er nu, at du skal angive hvordan denne plads skal bruges. I 
-<xref linkend="redhatpartitioner"/> kan du læse mere om hvilke
-partitioner, du skal have, og hvor meget plads du skal afsætte.
+<xref linkend="redhatpartitioner"/> kan du lÃ¦se mere om hvilke
+partitioner, du skal have, og hvor meget plads du skal afsÃ¦tte.
 </para>
 
 <para>
 I vores gennemgang af installationen af Mandrake vil vi antage, at
 du har tre cd-rom'er. Du kan hente iso-billeder af dem fra
 <ulink url="http://www.linuxiso.org">http://www.linuxiso.org</ulink>.
-De kan også købes fra f.eks. 
+De kan ogsÃ¥ kÃ¸bes fra f.eks. 
 <ulink url="http://www.linuxpusher.dk">http://www.linuxpusher.dk</ulink>.
 </para>
 
@@ -103,19 +103,19 @@ du endda nem mulighed for at lave en eventuel startdiskette.
 </sect1>
 
 <sect1 id="mandrake-install-net">
-<title>Installation over netværk</title>
+<title>Installation over netvÃ¦rk</title>
 <para>
-Man kan installere Mandrake over netværket. Det kan spare en
-del tid og kan være den eneste måde at gøre det på, hvis man ikke
-har et cd-rom-drev på maskinen. Se <xref linkend="installation-via-http"/> om
-installation over netværk og <xref linkend="mandrakeinstall"/> 
+Man kan installere Mandrake over netvÃ¦rket. Det kan spare en
+del tid og kan vÃ¦re den eneste mÃ¥de at gÃ¸re det pÃ¥, hvis man ikke
+har et cd-rom-drev pÃ¥ maskinen. Se <xref linkend="installation-via-http"/> om
+installation over netvÃ¦rk og <xref linkend="mandrakeinstall"/> 
 om Mandrake-installation, idet diskettefilen dog hedder "network.img" her. Denne diskette kan hentes fra
 <ulink url="http://www.klid.dk/sw/mandrake/9.2/images/network.img">http://www.klid.dk/sw/mandrake/9.2/images/network.img</ulink>.
-Man får en fuld grafisk installation, når den først er gået i gang,
+Man fÃ¥r en fuld grafisk installation, nÃ¥r den fÃ¸rst er gÃ¥et i gang,
 </para>
 
 <para>
-Danske steder der muliggør installation af Mandrake på i586 platform:
+Danske steder der muliggÃ¸r installation af Mandrake pÃ¥ i586 platform:
 </para>
 
 <screen>
@@ -128,31 +128,31 @@ Mandrake 9.2  network.img   HTTP     klid.dk            /sw/mandrake/9.2
 <sect1 id="mandrakeinstall">
 <title>Installation</title>
 <para>
-Er det din første Linux-installation bør du læse alle ledetekster med
-omhu. Tja, selv om du er en erfaren Linux-bruger, bør du tage dig
-tiden til at læse dem alligevel - det kan spare dig for mange 
+Er det din fÃ¸rste Linux-installation bÃ¸r du lÃ¦se alle ledetekster med
+omhu. Tja, selv om du er en erfaren Linux-bruger, bÃ¸r du tage dig
+tiden til at lÃ¦se dem alligevel - det kan spare dig for mange 
 frustrerende timer.
 </para>
 
 <para>
 Under den grafiske installation du skal igennem, er det altid muligt
-at komme over i konsollen ved at benytte Ctrl+Alt+F2, så man kan
-genstarte maskinen eller andet, hvis installationen kører af sporet.
-På de andre konsoller kan du se status for installationen.  Alt+F7
+at komme over i konsollen ved at benytte Ctrl+Alt+F2, sÃ¥ man kan
+genstarte maskinen eller andet, hvis installationen kÃ¸rer af sporet.
+PÃ¥ de andre konsoller kan du se status for installationen.  Alt+F7
 bringer dig tilbage til den grafiske installation.
 </para>
 
 <para>
-Når din computer starter vises et velkomstbillede til installationen  
-og du fortsætter ved at trykke 
-<command>Enter</command>. Selve installationen vil foregå grafisk, men
-du kan vælge at installere i tekstmodus. Hvis du intet foretager dig, går 
+NÃ¥r din computer starter vises et velkomstbillede til installationen  
+og du fortsÃ¦tter ved at trykke 
+<command>Enter</command>. Selve installationen vil foregÃ¥ grafisk, men
+du kan vÃ¦lge at installere i tekstmodus. Hvis du intet foretager dig, gÃ¥r 
 installationen automatisk i gang efter kort tid.
 </para>
 
 
 <para>
-Det første egentlige grafiske installationsbillede er <xref
+Det fÃ¸rste egentlige grafiske installationsbillede er <xref
 linkend="mandrake92-01-fig"/>.
 </para>
 
@@ -163,8 +163,8 @@ linkend="mandrake92-01-fig"/>.
 
 
 <para>
-Vælg sprog som vist på <xref linkend="mandrake92-01-fig"/>
-Vi vælger her "Europe" og så "Dansk".
+VÃ¦lg sprog som vist pÃ¥ <xref linkend="mandrake92-01-fig"/>
+Vi vÃ¦lger her "Europe" og sÃ¥ "Dansk".
 </para>
 
 <figure id="mandrake92-02-fig" float="1">
@@ -173,7 +173,7 @@ Vi vælger her "Europe" og så "Dansk".
 </figure>
 
 <para>
-Nu kommer en licensbeskrivelse - læs ... og sikkert acceptér!
+Nu kommer en licensbeskrivelse - lÃ¦s ... og sikkert acceptÃ©r!
 </para>
 
 
@@ -184,7 +184,7 @@ Nu kommer en licensbeskrivelse - læs ... og sikkert acceptér!
 
 
 <para>
-Vælg nu mus - du kan med fordel anvende en tre-knaps mus (evt. med
+VÃ¦lg nu mus - du kan med fordel anvende en tre-knaps mus (evt. med
 hjul).  
 </para>
 
@@ -195,13 +195,13 @@ hjul).
 
 
 <para>
-Vælg nu sikkerhedsniveau på maskinen. Standard eller Høj kan tilrådes. 
-Paranoid gør maskinen utålelig :-)
+VÃ¦lg nu sikkerhedsniveau pÃ¥ maskinen. Standard eller HÃ¸j kan tilrÃ¥des. 
+Paranoid gÃ¸r maskinen utÃ¥lelig :-)
 </para>
 
 <para>
-Man kan under "Systemadministratorer" vælge hvilke(n) brugere som skal
-modtage epost angående system-meddelelser.
+Man kan under "Systemadministratorer" vÃ¦lge hvilke(n) brugere som skal
+modtage epost angÃ¥ende system-meddelelser.
 </para>
 
 <figure id="mandrake92sikkerhed-fig" float="1">
@@ -210,38 +210,38 @@ modtage epost angående system-meddelelser.
 </figure>
 
 <para>
-Du bliver nu spurgt om hvordan Mandrake skal installere. Vi vælger
-"Brugerdefineret" for at få styr over hvad der sker. Har du kun en
-harddisk til Linux alene, så er "Slet hele disken" nemt :-) 
+Du bliver nu spurgt om hvordan Mandrake skal installere. Vi vÃ¦lger
+"Brugerdefineret" for at fÃ¥ styr over hvad der sker. Har du kun en
+harddisk til Linux alene, sÃ¥ er "Slet hele disken" nemt :-) 
 </para>
 
 
 <figure id="mandrake92insttype-fig" float="1">
-<title>Mandrake 9.2 Installation - diskudlægning</title>
+<title>Mandrake 9.2 Installation - diskudlÃ¦gning</title>
 <graphic fileref="Mandrake92_07.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
 Installationsprogrammet vil nu finde de harddiske, som er til stede i
-din computer. Både IDE- og SCSI-diske vil blive fundet, og
+din computer. BÃ¥de IDE- og SCSI-diske vil blive fundet, og
 evt. drivere vil blive aktiveret. Hvis du kun har IDE-harddiske vil du
-muligvis kun blive spurgt om du har SCSI-diske. Hvis du bliver mødt
-med at du kan installere Mandrake Linux på en eksisterende Windows
-partition, så betyder dette at Mandrake Linux vil forsøge at krympe en
+muligvis kun blive spurgt om du har SCSI-diske. Hvis du bliver mÃ¸dt
+med at du kan installere Mandrake Linux pÃ¥ en eksisterende Windows
+partition, sÃ¥ betyder dette at Mandrake Linux vil forsÃ¸ge at krympe en
 eksisterende Windows partition for at skabe plads til Linux. Dette
 virker med vfat-partitioner og (nu i version 9.2) NTFS (Windows 2000
 eller lign.).  Backup af din Windows partition er aldrig dumt :-)
 </para>
 
 <para>
-Klik på dine partitioner og vælg mindst én af dem som
-<filename>/</filename> - rod-kataloget. Vælg evt. en anden som
-<filename>/home</filename>.  Tryk på det hvide areal (som betyder tomt
-område) for at vælge det og lave en Linux-partition her. Du skal nu
-vælge størrelse for partitionen (målt i Mb) - sæt filtype til
+Klik pÃ¥ dine partitioner og vÃ¦lg mindst Ã©n af dem som
+<filename>/</filename> - rod-kataloget. VÃ¦lg evt. en anden som
+<filename>/home</filename>.  Tryk pÃ¥ det hvide areal (som betyder tomt
+omrÃ¥de) for at vÃ¦lge det og lave en Linux-partition her. Du skal nu
+vÃ¦lge stÃ¸rrelse for partitionen (mÃ¥lt i Mb) - sÃ¦t filtype til
 Journaliserende FS (ext3 eller ReiserFS), som er et nyt og smartere
-filsystem) og mountpoint til <filename>/</filename>. Du bør også
-afsætte f.eks. 256 Mb til swap (opret dette). Vælg til sidst "Færdig".
+filsystem) og mountpoint til <filename>/</filename>. Du bÃ¸r ogsÃ¥
+afsÃ¦tte f.eks. 256 Mb til swap (opret dette). VÃ¦lg til sidst "FÃ¦rdig".
 </para>
 
 
@@ -252,25 +252,25 @@ afsætte f.eks. 256 Mb til swap (opret dette). Vælg til sidst "Færdig".
 
 <para>
 Efter du har opdelt din harddisk og sat filsystemet op, vil dine 
-Linux-partitioner blive formateret. Hvis du opdaterer, kan det være 
+Linux-partitioner blive formateret. Hvis du opdaterer, kan det vÃ¦re 
 at der er enkelte partitioner, som skal formateres - f.eks. 
 <filename>/</filename>.
 </para>
 
 <figure id="mandrake92format-fig" float="1">
-<title>Mandrake 9.2 Installation - Vælg hvilke partitioner, der skal formatteres</title>
+<title>Mandrake 9.2 Installation - VÃ¦lg hvilke partitioner, der skal formatteres</title>
 <graphic fileref="Mandrake92_09.&magic;" scale="60"></graphic>
 </figure>
 
 
 <para>
-Det er nu tid til at vælge, hvilke pakker, som du ønsker
-installeret. Du kan overordnet vælge mellem følgende - flyt
-muse-markøren hen over et emne for at få mere beskrivelse.
+Det er nu tid til at vÃ¦lge, hvilke pakker, som du Ã¸nsker
+installeret. Du kan overordnet vÃ¦lge mellem fÃ¸lgende - flyt
+muse-markÃ¸ren hen over et emne for at fÃ¥ mere beskrivelse.
 </para>
 
 <figure id="mandrake92grupper-fig" float="1">
-  <title>Mandrake 9.2 Installation - Vælg grupper</title>
+  <title>Mandrake 9.2 Installation - VÃ¦lg grupper</title>
   <graphic fileref="Mandrake92_10.&magic;" scale="60"></graphic>
 </figure> 
 
@@ -278,7 +278,7 @@ muse-markøren hen over et emne for at få mere beskrivelse.
 <itemizedlist mark="bullet">
 <listitem> 
  <para>
-  Kontor-arbejdsstation - KWord, abiword, kspread, gnumeric, pdf-læsere
+  Kontor-arbejdsstation - KWord, abiword, kspread, gnumeric, pdf-lÃ¦sere
  </para>
 </listitem>
 <listitem> 
@@ -293,17 +293,17 @@ muse-markøren hen over et emne for at få mere beskrivelse.
 </listitem>
 <listitem>
  <para>
-  Internet-station - internetværktøjer til at læse post og den slags
+  Internet-station - internetvÃ¦rktÃ¸jer til at lÃ¦se post og den slags
  </para>
 </listitem>
 <listitem>
  <para>
-  Netværksmaskine - klienter til f.eks. sikker netkommunikation (ssh)
+  NetvÃ¦rksmaskine - klienter til f.eks. sikker netkommunikation (ssh)
  </para>
 </listitem>
 <listitem> 
  <para>
-  Opsætning - opsætningsværktøjer
+  OpsÃ¦tning - opsÃ¦tningsvÃ¦rktÃ¸jer
  </para>
 </listitem>
 <listitem> 
@@ -313,12 +313,12 @@ muse-markøren hen over et emne for at få mere beskrivelse.
 </listitem>
 <listitem> 
  <para>
- Konsolværktøjer - basale tekstværktøjer - tag den 
+ KonsolvÃ¦rktÃ¸jer - basale tekstvÃ¦rktÃ¸jer - tag den 
  </para>
 </listitem>
 <listitem> 
  <para>
-  Udvikling - C/C++ oversættere og biblioteker
+  Udvikling - C/C++ oversÃ¦ttere og biblioteker
  </para>
 </listitem>
 <listitem> 
@@ -329,7 +329,7 @@ muse-markøren hen over et emne for at få mere beskrivelse.
 <listitem> 
  <para>
   LSB - det er Linux Standard Base, dvs. en standard for placering af 
-  filer på fornuftige steder. Tag dette med :) 
+  filer pÃ¥ fornuftige steder. Tag dette med :) 
  </para>
 </listitem>
 <listitem> 
@@ -349,8 +349,8 @@ muse-markøren hen over et emne for at få mere beskrivelse.
 </listitem>
 <listitem> 
  <para>
-  Brandmur/router - skal du beskytte din maskine på nettet så er en
-  firewall en god idé at få med
+  Brandmur/router - skal du beskytte din maskine pÃ¥ nettet sÃ¥ er en
+  firewall en god idÃ© at fÃ¥ med
  </para>
 </listitem>
 <listitem> 
@@ -365,38 +365,38 @@ muse-markøren hen over et emne for at få mere beskrivelse.
 </listitem>
 <listitem>
  <para>
- KDE-arbejdsstation - vælg KDE og/eller GNOME - begge er gode
+ KDE-arbejdsstation - vÃ¦lg KDE og/eller GNOME - begge er gode
  </para>
 </listitem>
 <listitem>
  <para>
-  Gnome-arbejdsstation  - vælg KDE og/eller GNOME - begge er gode
+  Gnome-arbejdsstation  - vÃ¦lg KDE og/eller GNOME - begge er gode
  </para>
 </listitem>
 <listitem>
  <para>
-  Andre grafiske miljøer - IceWM, WindowMaker, Enlightenment, Fvwm
+  Andre grafiske miljÃ¸er - IceWM, WindowMaker, Enlightenment, Fvwm
  </para>
 </listitem>
 </itemizedlist>
 
 <para>
-Glemmer du en pakke, gør det ikke så meget; du kan altid
-installere den senere. Er du ny i Linux-verdenen, er det både
-spændende og overvældende at bladre i de ca. 1500 pakker, som følger
-med Mandrake 9.2, så du får et indtryk af, hvilke programmer du kan
+Glemmer du en pakke, gÃ¸r det ikke sÃ¥ meget; du kan altid
+installere den senere. Er du ny i Linux-verdenen, er det bÃ¥de
+spÃ¦ndende og overvÃ¦ldende at bladre i de ca. 1500 pakker, som fÃ¸lger
+med Mandrake 9.2, sÃ¥ du fÃ¥r et indtryk af, hvilke programmer du kan
 finde.
 </para>
 
 <para>
-Først vælger du overordnet, hvilke pakkegrupper der skal med i 
-dit system, hvis du vil udvælge detaljeret så vælg individuelle 
-pakker nederst på skærmbilledet.
+FÃ¸rst vÃ¦lger du overordnet, hvilke pakkegrupper der skal med i 
+dit system, hvis du vil udvÃ¦lge detaljeret sÃ¥ vÃ¦lg individuelle 
+pakker nederst pÃ¥ skÃ¦rmbilledet.
 </para>
 
 <para>
-Hvis du gør dette, så er der mulighed for at vælge meget frit. Det
-kræver nok at du kender Linux-systemer i forvejen for at du kan udnytte
+Hvis du gÃ¸r dette, sÃ¥ er der mulighed for at vÃ¦lge meget frit. Det
+krÃ¦ver nok at du kender Linux-systemer i forvejen for at du kan udnytte
 det detaljerings-niveau.
 </para>
 
@@ -407,10 +407,10 @@ det detaljerings-niveau.
 
 
 <para>
-Før selve installationen af programmer vil du blive advaret hvis der
-installeres servere. På billedet nedenfor er vist at webmin
+FÃ¸r selve installationen af programmer vil du blive advaret hvis der
+installeres servere. PÃ¥ billedet nedenfor er vist at webmin
 installeres. Den kan bruges til at administrere maskinen fra en anden 
-maskine via en browser. Det kræver at man går til port 10000 (f.eks.
+maskine via en browser. Det krÃ¦ver at man gÃ¥r til port 10000 (f.eks.
 http://localhost:10000).
 </para>
 
@@ -425,7 +425,7 @@ Tid til kaffe - nu installeres pakkerne.
 </para>
 
 <figure id="mandrake92-installation-fig" float="1">
-  <title>Mandrake 9.2 Installation - Nu kører installationen af pakker.</title>
+  <title>Mandrake 9.2 Installation - Nu kÃ¸rer installationen af pakker.</title>
   <graphic fileref="Mandrake92_13.&magic;" scale="60"></graphic>
 </figure> 
 
@@ -437,32 +437,32 @@ Tid til kaffe - nu installeres pakkerne.
 <title>Efterinstallation</title>
 
 <para>
-Efter måske 15 minutter vil
-du blive spurgt om at indsætte cd-rom nummer 2 (ext-skiven).
+Efter mÃ¥ske 15 minutter vil
+du blive spurgt om at indsÃ¦tte cd-rom nummer 2 (ext-skiven).
 </para>
 
 <para>
 Du vil blive spurgt om adgangskode for root (systemadministratoren) -
-sæt denne med mindre din maskine står et sikkert sted og der er en
-bruger på maskinen. Det er vigtigt at systemadministratorens (root)
-konto er godt beskyttet, og du skal derfor vælge en adgangskode
+sÃ¦t denne med mindre din maskine stÃ¥r et sikkert sted og der er en
+bruger pÃ¥ maskinen. Det er vigtigt at systemadministratorens (root)
+konto er godt beskyttet, og du skal derfor vÃ¦lge en adgangskode
 (eng. password) med omhu (og huske den). Se desuden <xref
 linkend="valg-af-password"/>.  </para>
 
 <figure id="mandrake92-rootpassword-fig" float="1">
-  <title>Mandrake 9.2 Installation - Sæt systemadminstrators password</title>
+  <title>Mandrake 9.2 Installation - SÃ¦t systemadminstrators password</title>
   <graphic fileref="Mandrake92_14.&magic;" scale="60"></graphic>
 </figure> 
 
 
 <para>
-Det er ingen god idé at gøre al arbejde som root, idet denne bruger
-kan alt (inkl. slette vitale systemfiler). Derfor bør du oprette
-mindst én konto til almindelig brug (en konto per bruger). Igen skal
-du vælge adgangskode med omhu. Du kan altid, mens Linux kører, oprette
-og nedlægge brugere. Se desuden <xref
-linkend="valg-af-password"/>. Bemærk at du kan give hver bruger eget
-pingvin-logo. Tryk "Næste" når alle brugere er oprettet.  
+Det er ingen god idÃ© at gÃ¸re al arbejde som root, idet denne bruger
+kan alt (inkl. slette vitale systemfiler). Derfor bÃ¸r du oprette
+mindst Ã©n konto til almindelig brug (en konto per bruger). Igen skal
+du vÃ¦lge adgangskode med omhu. Du kan altid, mens Linux kÃ¸rer, oprette
+og nedlÃ¦gge brugere. Se desuden <xref
+linkend="valg-af-password"/>. BemÃ¦rk at du kan give hver bruger eget
+pingvin-logo. Tryk "NÃ¦ste" nÃ¥r alle brugere er oprettet.  
 </para>
 
 <figure id="mandrake92-brugerkonto1-fig" float="1">
@@ -471,12 +471,12 @@ pingvin-logo. Tryk "Næste" når alle brugere er oprettet.
 </figure> 
 
 <para>
-Du vil nu blive spurgt om der skal lave en opstartsmenu på harddisken,
-så man under opstart kan vælge mellem f.eks. Windows og Linux. MBR er
-starten af disken - denne mulighed vælges hvis Mandrake automatisk skal
-kunne starte Linux (og en eventuel Windows) automatisk. Hvis du ikke "tør"
-dette, så kan du skrive opstartsprogrammet til en floppydiskette, hvor du
-så kan starte op fra.
+Du vil nu blive spurgt om der skal lave en opstartsmenu pÃ¥ harddisken,
+sÃ¥ man under opstart kan vÃ¦lge mellem f.eks. Windows og Linux. MBR er
+starten af disken - denne mulighed vÃ¦lges hvis Mandrake automatisk skal
+kunne starte Linux (og en eventuel Windows) automatisk. Hvis du ikke "tÃ¸r"
+dette, sÃ¥ kan du skrive opstartsprogrammet til en floppydiskette, hvor du
+sÃ¥ kan starte op fra.
 </para>
 
 <figure id="mandrake92-opstart-fig" float="1">
@@ -486,8 +486,8 @@ så kan starte op fra.
 
 <para>
 Nu kommer en oversigt over det som er konfigureret og de ting som
-måske ikke er konfigureret manuelt eller automatisk. Vælg de emner som
-ikke er sat op - i dette tilfælde en LCD-skærm.
+mÃ¥ske ikke er konfigureret manuelt eller automatisk. VÃ¦lg de emner som
+ikke er sat op - i dette tilfÃ¦lde en LCD-skÃ¦rm.
 </para>
 
 <figure id="mandrake92-config-fig" float="1">
@@ -497,29 +497,29 @@ ikke er sat op - i dette tilfælde en LCD-skærm.
 
 <para>
 Du bliver nu spurgt om du vil hente opdateringer til din Mandrake 9.2
-- gør ikke dette, det virker ikke altid.  Samme funktionalitet kan du
-få efter installationen.  Har du problemer med noget hardware som
-blokerer videre adgang til maskinen, så vælg dette og sats på at der
+- gÃ¸r ikke dette, det virker ikke altid.  Samme funktionalitet kan du
+fÃ¥ efter installationen.  Har du problemer med noget hardware som
+blokerer videre adgang til maskinen, sÃ¥ vÃ¦lg dette og sats pÃ¥ at der
 findes opdaterede pakker :-) 
 </para>
 
 
 <para>
-Du burde nu kunne genstarte din maskine og køre Mandrake Linux. Tillykke!
+Du burde nu kunne genstarte din maskine og kÃ¸re Mandrake Linux. Tillykke!
 </para>
 
 <figure id="mandrake92-yes-fig" float="1">
-  <title>Mandrake 9.2 Installation - Så er vi klar.</title>
+  <title>Mandrake 9.2 Installation - SÃ¥ er vi klar.</title>
   <graphic fileref="Mandrake92_18.&magic;" scale="60"></graphic>
 </figure> 
 
 
 <para>
-Vil du på et senere tidspunkt ændre systemopsætning, så prøv (som
+Vil du pÃ¥ et senere tidspunkt Ã¦ndre systemopsÃ¦tning, sÃ¥ prÃ¸v (som
 root) at starte <command>DrakConf</command> (se <xref
 linkend="system-vedligeholdelse-mandrake"/>). Fra dette program kan du
 styre alt med installation/afinstallation af programmer, printere,
-netværk og meget mere.
+netvÃ¦rk og meget mere.
 </para>
 
 </sect1>
@@ -531,16 +531,16 @@ netværk og meget mere.
 <indexterm><primary>Mandrake</primary><secondary>Ny hardware</secondary></indexterm>
 <indexterm><primary>Ny hardware</primary><secondary>Mandrake</secondary></indexterm>
 <para>
-Mandrake har en god håndtering af nye hardware-enheder, langt de
-fleste enheder vil blive fundet automatisk når disse kobles ind på
-systemet og maskinen genstartes. Der kan dog være problemer,
+Mandrake har en god hÃ¥ndtering af nye hardware-enheder, langt de
+fleste enheder vil blive fundet automatisk nÃ¥r disse kobles ind pÃ¥
+systemet og maskinen genstartes. Der kan dog vÃ¦re problemer,
 f.eks. med at finde en ny mus, hvilket er ret centralt i en grafisk
-bruger-grænseflade. Hvis man har det problem så kan man logge ind som
-root i tekstmodus og skrive <command>setup</command>. Vælg den mus du
+bruger-grÃ¦nseflade. Hvis man har det problem sÃ¥ kan man logge ind som
+root i tekstmodus og skrive <command>setup</command>. VÃ¦lg den mus du
 har og gem. Genstart maskinen og man er klar igen. Er det ikke lige
-musen eller grafikkortet der er udbyttet kan man også klare
-problemerne grafisk under Mandrake ved at køre
-<command>harddrake</command> som er en grafisk overbygning på
+musen eller grafikkortet der er udbyttet kan man ogsÃ¥ klare
+problemerne grafisk under Mandrake ved at kÃ¸re
+<command>harddrake</command> som er en grafisk overbygning pÃ¥
 <command>setup</command>.
 </para>
 </sect1>
@@ -548,24 +548,24 @@ problemerne grafisk under Mandrake ved at køre
 <sect1 id="videre-med-mandrake">
 <title>Videre med Mandrake 9.2</title>
 <para>
-Mandrake er efterhånden ved at være en meget omfattende distribution
-og det er meget usædvanligt ikke at kunne finde programmerne i
-mandrake-rpm format et eller andet sted på nettet. Det er muligt at
-tilføje nye kilder til Mandrake's pakke installations program.
+Mandrake er efterhÃ¥nden ved at vÃ¦re en meget omfattende distribution
+og det er meget usÃ¦dvanligt ikke at kunne finde programmerne i
+mandrake-rpm format et eller andet sted pÃ¥ nettet. Det er muligt at
+tilfÃ¸je nye kilder til Mandrake's pakke installations program.
 </para>
 <para>
 Den mest almindelige kilde at have er sikkerheds opdateringerne. Er
-den ikke blevet sat op under installationen så er det på høje tid at
-gøre det nu. Disse opdateringer dækker også over fejlrettelser i
-systemet. Derfor kan det spare mange ærgelser at spare disse få MB
-væk. Der kan ses en liste over opdateringer til 9.2 her: <ulink
+den ikke blevet sat op under installationen sÃ¥ er det pÃ¥ hÃ¸je tid at
+gÃ¸re det nu. Disse opdateringer dÃ¦kker ogsÃ¥ over fejlrettelser i
+systemet. Derfor kan det spare mange Ã¦rgelser at spare disse fÃ¥ MB
+vÃ¦k. Der kan ses en liste over opdateringer til 9.2 her: <ulink
 url="http://www.mandrakesecure.net/en/advisories/updates.php?dis=9.2">http://www.mandrakesecure.net/en/advisories/updates.php?dis=9.2</ulink>
-</para> <para> Af andre kilder til pakkehåndteringen er der nogle der
-har været så venlige at sætte en netside op som kan hjælpe meget til
-med konfigureringen. Denne findes på: <ulink
+</para> <para> Af andre kilder til pakkehÃ¥ndteringen er der nogle der
+har vÃ¦ret sÃ¥ venlige at sÃ¦tte en netside op som kan hjÃ¦lpe meget til
+med konfigureringen. Denne findes pÃ¥: <ulink
 url="http://plf.zarb.org/~nanardon/">Easy URPMI -
-http://plf.zarb.org/~nanardon/</ulink> F.eks. tilføjes Mandrake
-Contribution arkiv nemt ved at trykke på: ftp.dkuug.dk under Source
+http://plf.zarb.org/~nanardon/</ulink> F.eks. tilfÃ¸jes Mandrake
+Contribution arkiv nemt ved at trykke pÃ¥: ftp.dkuug.dk under Source
 Contrib og trykke "Send" nederst. Dette giver denne linje: 
 </para>
 
@@ -575,8 +575,8 @@ Contrib og trykke "Send" nederst. Dette giver denne linje:
 
 <para>
 Dette indtastes ( eller laver copy/paste ) ind i en terminal som
-superbruger/root på sit system.  Derefter er det muligt via Mandrake's
-pakkehåndtering at søge i dette arkiv og installere programmer fra det
+superbruger/root pÃ¥ sit system.  Derefter er det muligt via Mandrake's
+pakkehÃ¥ndtering at sÃ¸ge i dette arkiv og installere programmer fra det
 direkte over nettet.  
 </para> 
 </sect1>
@@ -584,14 +584,14 @@ direkte over nettet.
 <sect1 id="kendte-fejl-mandrake">
 <title>Kendte fejl med Mandrake 9.2</title>
 <para>
-Her er et par kendte fejl i Mandrake 9.2, som alle kan ses på
+Her er et par kendte fejl i Mandrake 9.2, som alle kan ses pÃ¥
 <ulink url="http://www.mandrakesecure.net/en/advisories/updates.php?dis=9.2">http://www.mandrakesecure.net/en/advisories/updates.php?dis=9.2</ulink>.
 </para>
 
 <para>
-Den suverænt største fejl ved den første udgave af Mandrake 9.2 er
-at <emphasis>nogle</emphasis> cdrom-drev fra LG kan "dræbes" ved installationen pga. en 
-fejl i firmwaren på drevet. Dette er beskrevet på 
+Den suverÃ¦nt stÃ¸rste fejl ved den fÃ¸rste udgave af Mandrake 9.2 er
+at <emphasis>nogle</emphasis> cdrom-drev fra LG kan "drÃ¦bes" ved installationen pga. en 
+fejl i firmwaren pÃ¥ drevet. Dette er beskrevet pÃ¥ 
 <ulink url="http://www.mandrakelinux.com/en/lgerrata.php3">http://www.mandrakelinux.com/en/lgerrata.php3</ulink>.
 </para>
 

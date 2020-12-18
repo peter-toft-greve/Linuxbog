@@ -34,38 +34,38 @@ Rekursion
 </itemizedlist>
 
 <para>
-Forudsættes ikke i resten af bogen.
+ForudsÃ¦ttes ikke i resten af bogen.
 </para>
 
 <para>
-Forudsætter <xref linkend="java-klasser" />, Definition af klasser.
+ForudsÃ¦tter <xref linkend="java-klasser" />, Definition af klasser.
 </para>
 
 <para>
-De variabler, vi er stødt på indtil nu, har enten
-været lokale variabler eller objektvariabler.
+De variabler, vi er stÃ¸dt pÃ¥ indtil nu, har enten
+vÃ¦ret lokale variabler eller objektvariabler.
 </para>
 
 <para>
-Objektvariabler hedder sådan, fordi de bliver oprettet for
+Objektvariabler hedder sÃ¥dan, fordi de bliver oprettet for
 hvert objekt.
 </para>
 
 <para>
-Der findes også variabler, der eksisterer &quot;i klassen&quot;,
-uafhængigt af om der bliver oprettet objekter. Disse kaldes
-klassevariable og erklæres med nøgleordet <emphasis>static</emphasis>,
-og de kaldes også statiske variabler.
+Der findes ogsÃ¥ variabler, der eksisterer &quot;i klassen&quot;,
+uafhÃ¦ngigt af om der bliver oprettet objekter. Disse kaldes
+klassevariable og erklÃ¦res med nÃ¸gleordet <emphasis>static</emphasis>,
+og de kaldes ogsÃ¥ statiske variabler.
 </para>
 
 <para>
-Herunder ses et eksempel på en klassevariabel og en
+Herunder ses et eksempel pÃ¥ en klassevariabel og en
 klassemetode (antalBokse).
 </para>
 
 <para>
 Klassevariabler og -metoder vises med understregning i
-UML-notationen (diagrammet til højre).
+UML-notationen (diagrammet til hÃ¸jre).
 </para>
 
 <figure id="java-lok-obj-klasse-var-fig">
@@ -77,21 +77,21 @@ UML-notationen (diagrammet til højre).
 <screen>
 public class Boks4 
 {
-  private double længde;              <emphasis>// objektvariabel</emphasis>
+  private double lÃ¦ngde;              <emphasis>// objektvariabel</emphasis>
   private double bredde;              <emphasis>// objektvariabel</emphasis>
-  private double højde;               <emphasis>// objektvariabel</emphasis>
+  private double hÃ¸jde;               <emphasis>// objektvariabel</emphasis>
 <emphasis>  private static int antalBokse;      </emphasis><emphasis>// klassevariabel</emphasis>
 
   public Boks4(double lgd, double b, double h)
   {
 <emphasis>    // lgd, b og h er lokale variabler</emphasis>
-    længde = lgd;
+    lÃ¦ngde = lgd;
     bredde = b;
-    højde  = h;
+    hÃ¸jde  = h;
     antalBokse = antalBokse + 1;
   }
 
-<emphasis>  public static int læsAntalBokse()   </emphasis><emphasis>// klassemetode</emphasis>
+<emphasis>  public static int lÃ¦sAntalBokse()   </emphasis><emphasis>// klassemetode</emphasis>
   {
     return antalBokse;
   }
@@ -100,7 +100,7 @@ public class Boks4
   {
 <emphasis>    // vol er en lokal variabel</emphasis>
     double vol;
-    vol = længde*bredde*højde;
+    vol = lÃ¦ngde*bredde*hÃ¸jde;
     return vol; 
   }
 }
@@ -109,7 +109,7 @@ public class Boks4
 
 <para>
 Variablen antalBokse er en klassevariabel, fordi den er
-erklæret med static-nøgleordet. Dette betyder, at
+erklÃ¦ret med static-nÃ¸gleordet. Dette betyder, at
 variablen er tilknyttet klassen, og at alle Boks-objekter deler den
 samme variabel. Der vil eksistere &eacute;n og kun &eacute;n
 antalBokse-variabel, uanset om der oprettes 0, 1, 2 eller 100
@@ -117,28 +117,28 @@ Boks-objekter.
 </para>
 
 <para>
-Variablerne bredde, højde og længde er
+Variablerne bredde, hÃ¸jde og lÃ¦ngde er
 objektvariabler, fordi hvert Boks-objekt har tilknyttet en af
 hver.
 </para>
 
 <para>
-Og for fuldstændighedens skyld: Variablen vol er
-en lokal variabel, fordi den er erklæret lokalt i
-volumen-metoden og altså kun eksisterer, når
-volumen-metoden udføres. Ligeledes med lgd, b og h: De
-eksisterer kun i Boks' konstruktør.
+Og for fuldstÃ¦ndighedens skyld: Variablen vol er
+en lokal variabel, fordi den er erklÃ¦ret lokalt i
+volumen-metoden og altsÃ¥ kun eksisterer, nÃ¥r
+volumen-metoden udfÃ¸res. Ligeledes med lgd, b og h: De
+eksisterer kun i Boks' konstruktÃ¸r.
 </para>
 
 <para>
-En klassemetode er en metode, der er erklæret static. Den
-arbejder på klasseniveau (uafhængigt af om der er
+En klassemetode er en metode, der er erklÃ¦ret static. Den
+arbejder pÃ¥ klasseniveau (uafhÃ¦ngigt af om der er
 skabt nogen objekter) og kan derfor ikke anvende objektvariabler
 eller -metoder.
 </para>
 
 <para>
-Vi kan afprøve Boks4 med:
+Vi kan afprÃ¸ve Boks4 med:
 </para>
 
 <screen>
@@ -146,18 +146,18 @@ public class BenytBoks4
 {
   public static void main(String args[])
   {
-    System.out.println(&quot;Antal bokse: &quot;+ <emphasis>Boks4.læsAntalBokse()</emphasis>);
+    System.out.println(&quot;Antal bokse: &quot;+ <emphasis>Boks4.lÃ¦sAntalBokse()</emphasis>);
 
     Boks4 boksen;
     boksen = new Boks4(2,5,10);
 
-    System.out.println(&quot;Antal bokse: &quot;+ <emphasis>Boks4.læsAntalBokse()</emphasis>);
+    System.out.println(&quot;Antal bokse: &quot;+ <emphasis>Boks4.lÃ¦sAntalBokse()</emphasis>);
 
     Boks4 enAndenBoks, enTredjeBoks;
     enAndenBoks = new Boks4(5,5,10);
     enTredjeBoks = new Boks4(7,5,10);
 
-    System.out.println(&quot;Antal bokse: &quot;+ <emphasis>Boks4.læsAntalBokse()</emphasis>);
+    System.out.println(&quot;Antal bokse: &quot;+ <emphasis>Boks4.lÃ¦sAntalBokse()</emphasis>);
   }
 }
 </screen>
@@ -173,7 +173,7 @@ Antal bokse: 3
 
 <para>
 Inde fra objektet bruges statiske variabler og metoder ligesom de
-almindelige variabler og metoder. Det ses f.eks. i Boks' konstruktør:
+almindelige variabler og metoder. Det ses f.eks. i Boks' konstruktÃ¸r:
 </para>
 
 <screen>
@@ -194,14 +194,14 @@ og variabler.
 
 <para>
 Der er mange klassevariabler<emphasis>
-</emphasis>i standardpakkerne. Af de oftest brugte kan nævnes
+</emphasis>i standardpakkerne. Af de oftest brugte kan nÃ¦vnes
 </para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
 <para>
-Math.PI - værdien af pi
+Math.PI - vÃ¦rdien af pi
   er en klassevariabel i Math-klassen (pakken java.lang).
 </para>
 
@@ -220,7 +220,7 @@ System.out - systemoutputtet er et PrintStream-objekt, der
   <listitem>
 
 <para>
-Color.black - et Color-objekt, der repræsenterer sort.
+Color.black - et Color-objekt, der reprÃ¦senterer sort.
   Objektet ligger som en klassevariabel i (selvsamme)
   Color-klasse (pakken java.awt).
 </para>
@@ -230,7 +230,7 @@ Color.black - et Color-objekt, der repræsenterer sort.
 
 <para>
 Som det ses, er klassevariabler nyttige til variabler, der er
-tilgængelige overalt. Det er det nærmeste man kommer
+tilgÃ¦ngelige overalt. Det er det nÃ¦rmeste man kommer
 globale variabler i Java, som det kendes fra andre
 programmeringssprog.
 </para>
@@ -241,7 +241,7 @@ programmeringssprog.
 
 <para>
 Af nyttige klassemetoder
-kan nævnes
+kan nÃ¦vnes
 </para>
 
 <itemizedlist mark="bullet">
@@ -263,7 +263,7 @@ Matematiske funktioner som Math.random(),
   <listitem>
 
 <para>
-Double.parseDouble(String s) returnerer værdien af <emphasis>s</emphasis>
+Double.parseDouble(String s) returnerer vÃ¦rdien af <emphasis>s</emphasis>
   som et kommatal. Nyttig til at fortolke brugerindtastede tal. F.eks.
   giver Double.parseDouble(&quot;3.553&quot;) tallet 3.553.
 </para>
@@ -274,7 +274,7 @@ Double.parseDouble(String s) returnerer værdien af <emphasis>s</emphasis>
 
 <para>
 Integer.parseInt(String s)
-  returnerer værdien af <emphasis>s</emphasis> som et heltal. F.eks. giver
+  returnerer vÃ¦rdien af <emphasis>s</emphasis> som et heltal. F.eks. giver
   Integer.parseInt(&quot;13&quot;) tallet 13.
 </para>
 
@@ -283,11 +283,11 @@ Integer.parseInt(String s)
   <listitem>
 
 <para>
-String.valueOf(double d) gør
+String.valueOf(double d) gÃ¸r
   det modsatte af Double.parseDouble, den returnerer nemlig en
-  streng, som repræsenterer et flydende kommatal.
-  String.valueOf(3.21) giver altså strengen &quot;3.21&quot;.
-  Findes også med int, byte, char etc. som parameter.
+  streng, som reprÃ¦senterer et flydende kommatal.
+  String.valueOf(3.21) giver altsÃ¥ strengen &quot;3.21&quot;.
+  Findes ogsÃ¥ med int, byte, char etc. som parameter.
 </para>
 
 </listitem>
@@ -296,11 +296,11 @@ String.valueOf(double d) gør
 
 <para>
 Character.isDigit(character
-  t) returnerer true eller false afhængigt af om tegnet <emphasis>t</emphasis>
+  t) returnerer true eller false afhÃ¦ngigt af om tegnet <emphasis>t</emphasis>
   er et ciffer. Ligeledes findes Character.isLetter(character t),
   Character.isLetterOrDigit(character t),
   Character.isLowerCase(character t), Character.isUpperCase(character
-  t) og Character.isWhitespace(character t). Den sidste undersøger
+  t) og Character.isWhitespace(character t). Den sidste undersÃ¸ger
   om t er et usynligt tegn, f.eks. mellemrum, linjeskift, tabulator.
 </para>
 
@@ -309,7 +309,7 @@ Character.isDigit(character
   <listitem>
 
 <para>
-System.exit() - stopper programudførelsen og afslutter
+System.exit() - stopper programudfÃ¸relsen og afslutter
   Java.
 </para>
 
@@ -318,10 +318,10 @@ System.exit() - stopper programudførelsen og afslutter
   <listitem>
 
 <para>
-main-metoden, som du selv erklærer, når du
-  skriver et program, f.eks. BenytBoks.main(). Når et program
-  startes, er det altid main, der kaldes. På dette tidspunkt
-  eksisterer der endnu ingen objekter, og main er da også en
+main-metoden, som du selv erklÃ¦rer, nÃ¥r du
+  skriver et program, f.eks. BenytBoks.main(). NÃ¥r et program
+  startes, er det altid main, der kaldes. PÃ¥ dette tidspunkt
+  eksisterer der endnu ingen objekter, og main er da ogsÃ¥ en
   klassemetode. Der oprettes aldrig nogen BenytBoks-objekter!
 </para>
 
@@ -334,19 +334,19 @@ main-metoden, som du selv erklærer, når du
   <title>Lokale variabler og parametre</title>
 
 <para>
-Når en metode kaldes, opretter systemet en &quot;omgivelse&quot;
+NÃ¥r en metode kaldes, opretter systemet en &quot;omgivelse&quot;
 for det metodekald. I denne omgivelse oprettes
 parametervariablerne og de lokale variabler.
 </para>
 
 <blockquote><para>En lokal variabel er kendt fra dens
-erklæring og ned til slutningen af den blok, der omslutter den</para></blockquote>
+erklÃ¦ring og ned til slutningen af den blok, der omslutter den</para></blockquote>
 <blockquote><para>Dette kaldes variablens virkefelt</para></blockquote>
 
 <para>
 Den lidt indviklede formulering skyldes, at man kan lave
 variabler, der er lokale for en hvilken som helst blok - ikke kun en
-metode-krop. Man kan altså skrive noget som:
+metode-krop. Man kan altsÃ¥ skrive noget som:
 </para>
 
 <screen>
@@ -354,7 +354,7 @@ metode-krop. Man kan altså skrive noget som:
   int a=10;
   while (a&gt;0)
   {
-    double b; <emphasis>// b erklæres lokalt i while-blokken</emphasis>
+    double b; <emphasis>// b erklÃ¦res lokalt i while-blokken</emphasis>
     b=math.Random();
     ...
     System.out.println(b);
@@ -368,15 +368,15 @@ metode-krop. Man kan altså skrive noget som:
 
 
 <para>
-Vi har desuden allerede set, at man i for-løkker kan
-erklære en variabel, der er lokal for løkkens krop:
+Vi har desuden allerede set, at man i for-lÃ¸kker kan
+erklÃ¦re en variabel, der er lokal for lÃ¸kkens krop:
 </para>
 
 <screen>
   for (int i=0;i&lt;10;i++) 
     System.out.print(i);
 
-  System.out.print(i); <emphasis>// fejl: i eksisterer ikke uden for løkken.</emphasis>
+  System.out.print(i); <emphasis>// fejl: i eksisterer ikke uden for lÃ¸kken.</emphasis>
 </screen>
 
 
@@ -384,15 +384,15 @@ erklære en variabel, der er lokal for løkkens krop:
   <title>Parametervariable</title>
 
 <para>
-Parametervariablerne får tildelt en <emphasis>kopi</emphasis> af den
-værdi, de blev kaldt med, og opfører sig i øvrigt
-fuldstændigt som lokale variabler. Man kan f.eks. godt tildele
-dem nye værdier:
+Parametervariablerne fÃ¥r tildelt en <emphasis>kopi</emphasis> af den
+vÃ¦rdi, de blev kaldt med, og opfÃ¸rer sig i Ã¸vrigt
+fuldstÃ¦ndigt som lokale variabler. Man kan f.eks. godt tildele
+dem nye vÃ¦rdier:
 </para>
 
 <screen>
   ...
-<emphasis>  // metode, der udskriver et bestemt antal stjerner på skærmen.</emphasis>
+<emphasis>  // metode, der udskriver et bestemt antal stjerner pÃ¥ skÃ¦rmen.</emphasis>
   public void udskrivStjerner(<emphasis>int antal</emphasis>)
   {
     while (antal&gt;0)
@@ -412,24 +412,24 @@ dem nye værdier:
 
 
 <para>
-Dette mærker kalderen intet til, netop fordi kalderens værdi
-blev kopieret. Her skal man være opmærksom på
+Dette mÃ¦rker kalderen intet til, netop fordi kalderens vÃ¦rdi
+blev kopieret. Her skal man vÃ¦re opmÃ¦rksom pÃ¥
 forskellen mellem variabler af primitiv type og variabler af
 objekt-type. Fordi det sidste er referencer, peger parametervariablen
-på samme objekt som kalderen, når den bliver
-kopieret. Ved at ændre i objektet, som parametervariablen
-refererer til, kan man derfor ændre på kalderens objekt.
+pÃ¥ samme objekt som kalderen, nÃ¥r den bliver
+kopieret. Ved at Ã¦ndre i objektet, som parametervariablen
+refererer til, kan man derfor Ã¦ndre pÃ¥ kalderens objekt.
 </para>
 
 <para>
-Derfor kan metoden herunder godt ændre på kalderens
+Derfor kan metoden herunder godt Ã¦ndre pÃ¥ kalderens
 punkt-objekt:
 </para>
 
 <screen>
   public void flyt(Point p, int dx, int dy)
   {
-    p.x=p.x+dx;  <emphasis>// OK, vi ændrer på kalderens objekt</emphasis>
+    p.x=p.x+dx;  <emphasis>// OK, vi Ã¦ndrer pÃ¥ kalderens objekt</emphasis>
     p.y=p.y+dy;
   }
 
@@ -443,8 +443,8 @@ punkt-objekt:
 
 
 <para>
-Men man kan stadig ikke ændre på kalderens reference.
-Dvs. p1's værdi:
+Men man kan stadig ikke Ã¦ndre pÃ¥ kalderens reference.
+Dvs. p1's vÃ¦rdi:
 </para>
 
 <screen>
@@ -464,17 +464,17 @@ Dvs. p1's værdi:
 
 
 <para>
-En lokal variabel oprettes, når man går ind i blokken,
-hvor den er defineret, og nedlægges igen, når man går
+En lokal variabel oprettes, nÃ¥r man gÃ¥r ind i blokken,
+hvor den er defineret, og nedlÃ¦gges igen, nÃ¥r man gÃ¥r
 ud af blokken. Der bliver oprettet en ny variabel, hver gang
-programudførelsen går ind i blokken.
+programudfÃ¸relsen gÃ¥r ind i blokken.
 </para>
 
 <para>
-Hvis en metode bliver kaldt to gange, eksisterer der altså
+Hvis en metode bliver kaldt to gange, eksisterer der altsÃ¥
 to versioner af den lokale variabel - &eacute;n i hver deres
-omgivelse. Det behøver man som regel ikke at tænke på,
-men det er rart at have vished for at en anden ikke bare kan ændre
+omgivelse. Det behÃ¸ver man som regel ikke at tÃ¦nke pÃ¥,
+men det er rart at have vished for at en anden ikke bare kan Ã¦ndre
 ens lokale variabler.
 </para>
 </sect2>    <!--   Parametervariable -->
@@ -489,17 +489,17 @@ En rekursiv metode er en metode, der kalder sig selv. F.eks.:
 </para>
 
 <screen>
-  void tælNed(int tæller)
+  void tÃ¦lNed(int tÃ¦ller)
   {
-    System.out.print(&#148;(&#148;+tæller+&#148; &#148;);
-    if (tæller&gt;=0) <emphasis>tælNed(tæller-1)</emphasis>; <emphasis>// tælNed kalder sig selv !!</emphasis>
-    System.out.print(&#148; &#148;+tæller+&#148;)&#148;);
+    System.out.print(&#148;(&#148;+tÃ¦ller+&#148; &#148;);
+    if (tÃ¦ller&gt;=0) <emphasis>tÃ¦lNed(tÃ¦ller-1)</emphasis>; <emphasis>// tÃ¦lNed kalder sig selv !!</emphasis>
+    System.out.print(&#148; &#148;+tÃ¦ller+&#148;)&#148;);
   }
 </screen>
 
 
 <para>
-Hvis man kalder tælNed(4), får man udskrevet følgende:
+Hvis man kalder tÃ¦lNed(4), fÃ¥r man udskrevet fÃ¸lgende:
 </para>
 
 <screen>
@@ -508,16 +508,16 @@ Hvis man kalder tælNed(4), får man udskrevet følgende:
 
 
 <para>
-Fidusen er, at parameteren tæller eksisterer &eacute;n gang
-for hver gang, tælNed() kalder sig selv. Så når
-tælNed() vender tilbage til kalderen, som også er
-tælNed(), er tællers værdi bevaret som før
+Fidusen er, at parameteren tÃ¦ller eksisterer &eacute;n gang
+for hver gang, tÃ¦lNed() kalder sig selv. SÃ¥ nÃ¥r
+tÃ¦lNed() vender tilbage til kalderen, som ogsÃ¥ er
+tÃ¦lNed(), er tÃ¦llers vÃ¦rdi bevaret som fÃ¸r
 kaldet.
 </para>
 
 <para>
-Visse problemstillinger kan løses meget elegant med
-rekursion, men vi vil ikke her komme yderligere ind på emnet.
+Visse problemstillinger kan lÃ¸ses meget elegant med
+rekursion, men vi vil ikke her komme yderligere ind pÃ¥ emnet.
 </para>
 </sect2>    <!--   Rekursion -->
 </sect1>    <!--   Lokale variabler og parametre -->

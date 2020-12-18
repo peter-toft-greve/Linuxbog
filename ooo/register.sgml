@@ -16,7 +16,7 @@
     <center>
       
 <chapter>
-  <title>Håndbog i tekstbehandling med OpenOffice
+  <title>HÃ¥ndbog i tekstbehandling med OpenOffice
       Writer</title>
 </center>
     <hr size="1" color="#800000">
@@ -39,7 +39,7 @@
 
 <sect2>
   <title>OpenOffice brugerfladen.</title>
-<xref linkend="ooo-brugerfladen"/>Elementer på skærmbilledet</ulink> <br>
+<xref linkend="ooo-brugerfladen"/>Elementer pÃ¥ skÃ¦rmbilledet</ulink> <br>
     <ulink url="writer06.html">Visning af tekstdokumenter</ulink> <br>
     <ulink url="writer07.html">Generelt om betjening af OpenOffice</ulink> <br>
     <br>
@@ -60,35 +60,35 @@
     <xref linkend="ooo-afsnit"/>Afsnit</ulink> <emphasis>Kapitel 7.</emphasis><br>
     <ulink url="writer20.html">Afsnit, flytte</ulink> <emphasis>5.7.</emphasis><br>
     <xref linkend="ooo-afsnit"/>Afsnit, (teori)</ulink> <emphasis>7.1.</emphasis><br>
-    <ulink url="writer28.html">Afsnitsformatering, ændre</ulink> <emphasis>7.2.</emphasis><br>
+    <ulink url="writer28.html">Afsnitsformatering, Ã¦ndre</ulink> <emphasis>7.2.</emphasis><br>
     <ulink url="writer29.html">Afsnitsformatering generelt</ulink> <emphasis>7.3.</emphasis><br>
     <xref linkend="ooo-typografier"/>Afsnitstypografi</ulink> <emphasis>8.1.</emphasis><br>
     <ulink url="writer34.html">Afsnitstypografi, anvende en</ulink> <emphasis>8.4.</emphasis><br>
     <ulink url="writer32.html">Afsnitstypografi, indbyggede</ulink> <emphasis>8.2.</emphasis><br>
     <ulink url="writer37.html">Afsnitstypografi, oprette</ulink><br>
     <ulink url="writer38.html">Afsnitstypografi, slette</ulink><br>
-    <ulink url="writer36.html">Afsnitstypografi, ændre</ulink><br>
+    <ulink url="writer36.html">Afsnitstypografi, Ã¦ndre</ulink><br>
     <ulink url="writer35.html">Anvende en tegntypografi</ulink> <emphasis>8.5.</emphasis> <ulink url="name=
     "b""><br>
     <emphasis>B</emphasis><br>
     </ulink> <ulink url="writer04.html">Begreber i tekstbehandling</ulink>
     <emphasis>1.3.</emphasis><br>
     <xref linkend="ooo-rammer"/>Billede</ulink><br>
-    <ulink url="writer68.html">Billede, beskære</ulink><br>
+    <ulink url="writer68.html">Billede, beskÃ¦re</ulink><br>
     <xref linkend="ooo-formattering-af-grafik"/>Billede, flytte</ulink><br>
     <xref linkend="ooo-rammer-fra-fil"/>Billede, fra fil</ulink><br>
     <ulink url="writer65.html">Billede, fra klippebord</ulink><br>
-    <xref linkend="ooo-formattering-af-grafik"/>Billede, størrelse</ulink><br>
+    <xref linkend="ooo-formattering-af-grafik"/>Billede, stÃ¸rrelse</ulink><br>
     <ulink url="writer69.html">Billede, typografi</ulink><br>
-    <ulink url="writer70.html">Billedtekst til grafik, Tilføj</ulink>
+    <ulink url="writer70.html">Billedtekst til grafik, TilfÃ¸j</ulink>
     <emphasis>16.8.</emphasis><br>
-    <ulink url="writer62.html">Billedtekst til tabel, Tilføj</ulink>
+    <ulink url="writer62.html">Billedtekst til tabel, TilfÃ¸j</ulink>
     <emphasis>15.4.</emphasis><br>
     <ulink url="writer15.html">Blokmarkering</ulink> <emphasis>5.2.</emphasis><br>
     <ulink url="writer72.html">Bruge en tekstramme</ulink> <emphasis>17.2.</emphasis><br>
     <xref linkend="ooo-brugerfladen"/>Brugerfladen, OpenOffice</ulink> <emphasis>Kapitel
     2.</emphasis><br>
-    <ulink url="writer32.html">Brødtekst</ulink> <ulink url="name="c""><br>
+    <ulink url="writer32.html">BrÃ¸dtekst</ulink> <ulink url="name="c""><br>
     <emphasis>C</emphasis><br>
     </ulink> <ulink url="writer28.html">Centrere afsnit</ulink> <ulink url="name="d""><br>
     <emphasis>D</emphasis><br>
@@ -97,10 +97,10 @@
     <ulink url="writer09.html">Dokument, Gemme et</ulink> <emphasis>3.2.</emphasis><br>
     <xref linkend="ooo-dokument-og-filer"/>Dokument, Starte et nyt</ulink> <emphasis>3.1.</emphasis><br>
     <ulink url="writer12.html">Dokument, Udskrive</ulink> <emphasis>4.1.</emphasis><br>
-    <ulink url="writer10.html">Dokument, Åbne et eksisterende</ulink> <emphasis>3.3.</emphasis> <ulink url="name="e""><br>
+    <ulink url="writer10.html">Dokument, Ã…bne et eksisterende</ulink> <emphasis>3.3.</emphasis> <ulink url="name="e""><br>
     <emphasis>E</emphasis><br>
     </ulink> <ulink url="writer11.html">Eksportere dokument</ulink> <emphasis>3.4.</emphasis><br>
-    <xref linkend="ooo-brugerfladen"/>Elementer på skærmbilledet</ulink> <emphasis>2.1.</emphasis><br>
+    <xref linkend="ooo-brugerfladen"/>Elementer pÃ¥ skÃ¦rmbilledet</ulink> <emphasis>2.1.</emphasis><br>
     <ulink url="writer22.html">Erstatte tekst</ulink> <ulink url="name="f""><br>
     <emphasis>F</emphasis><br>
     </ulink> <ulink url="writer25.html">Fed skrift</ulink><br>
@@ -114,9 +114,9 @@
     <ulink url="writer19.html">Flytte tekst (mus)</ulink><br>
     <ulink url="writer51.html">Fodnoter og slutnoter</ulink> <emphasis>Kapitel 12.</emphasis><br>
     <ulink url="writer52.html">Fodnote, hop til/fra</ulink><br>
-    <ulink url="writer51.html">Fodnote, indsætte</ulink><br>
+    <ulink url="writer51.html">Fodnote, indsÃ¦tte</ulink><br>
     <xref linkend="ooo-rammer"/>Forankring (af grafik)</ulink> <emphasis>16.1.</emphasis><br>
-    <ulink url="writer39.html">Formatér automatisk mens du skriver</ulink>
+    <ulink url="writer39.html">FormatÃ©r automatisk mens du skriver</ulink>
     <emphasis>8.9.</emphasis><br>
     <ulink url="writer68.html">Formatering af grafik generelt</ulink>
     <emphasis>16.6.</emphasis><br>
@@ -127,7 +127,7 @@
     <ulink url="writer61.html">Formatering af tabel</ulink> <emphasis>15.3.</emphasis><br>
     <ulink url="writer45.html">Formatering, side</ulink> <emphasis>10.2.</emphasis><br>
     <ulink url="writer21.html">Fortryde</ulink> <emphasis>5.8.</emphasis><br>
-    <xref linkend="ooo-brugerfladen"/>Fuld skærm</ulink><br>
+    <xref linkend="ooo-brugerfladen"/>Fuld skÃ¦rm</ulink><br>
     <xref linkend="ooo-brugerfladen"/>Funktionslinje</ulink> <ulink url="name="g""><br>
     <emphasis>G</emphasis><br>
     </ulink> <ulink url="writer09.html">Gemme dokument</ulink> <emphasis>3.2.</emphasis><br>
@@ -140,8 +140,8 @@
     16.</emphasis><br>
     <xref linkend="ooo-rammer"/>Grafik/billeder og rammer, Teori</ulink>
     <emphasis>16.1.</emphasis><br>
-    <ulink url="writer68.html">Grafik, beskære</ulink><br>
-    <ulink url="writer70.html">Grafik, billedtekst, tilføj</ulink> <emphasis>16.8.</emphasis><br>
+    <ulink url="writer68.html">Grafik, beskÃ¦re</ulink><br>
+    <ulink url="writer70.html">Grafik, billedtekst, tilfÃ¸j</ulink> <emphasis>16.8.</emphasis><br>
     <xref linkend="ooo-formattering-af-grafik"/>Grafik, formatering</ulink> <emphasis>16.5.</emphasis><br>
     <ulink url="writer68.html">Grafik, formatering, generelt</ulink>
     <emphasis>16.6.</emphasis><br>
@@ -149,14 +149,14 @@
     <ulink url="writer65.html">Grafik, fra klippebord</ulink> <emphasis>16.3.</emphasis><br>
     <ulink url="writer66.html">Grafik og tekst, Skifte mellem</ulink>
     <emphasis>16.4.</emphasis><br>
-    <xref linkend="ooo-formattering-af-grafik"/>Grafik, størrelse</ulink><br>
+    <xref linkend="ooo-formattering-af-grafik"/>Grafik, stÃ¸rrelse</ulink><br>
     <ulink url="writer69.html">Grafik, typografi</ulink> <ulink url="name="h""><br>
     <emphasis>H</emphasis><br>
     </ulink> <ulink url="writer11.html">HTML</ulink><br>
     <xref linkend="ooo-brugerfladen"/>Hyperlinklinje</ulink><br>
-    <ulink url="writer25.html">Hævet skrift</ulink><br>
-    <ulink url="writer28.html">Højrestille afsnit</ulink><br>
-    <xref linkend="ooo-typografier"/>Hård og blød formatering; typografier, Teori:</ulink>
+    <ulink url="writer25.html">HÃ¦vet skrift</ulink><br>
+    <ulink url="writer28.html">HÃ¸jrestille afsnit</ulink><br>
+    <xref linkend="ooo-typografier"/>HÃ¥rd og blÃ¸d formatering; typografier, Teori:</ulink>
     <emphasis>8.1.</emphasis> <ulink url="name="i""><br>
     <emphasis>I</emphasis><br>
     </ulink> <xref linkend="ooo-brugerfladen"/>Ikonlinjer</ulink><br>
@@ -168,13 +168,13 @@
     <ulink url="writer28.html">Indrykke afsnit</ulink><br>
     <ulink url="writer45.html">Indstilling af sideformatering</ulink>
     <emphasis>10.2.</emphasis><br>
-    <ulink url="writer79.html">Indsæt noter</ulink> <emphasis>20.1.</emphasis><br>
-    <ulink url="writer51.html">Indsætte en fodnote/slutnote</ulink> <emphasis>12.1.</emphasis><br>
-    <xref linkend="ooo-rammer-tekst"/>Indsætte en tekstramme</ulink> <emphasis>17.1.</emphasis><br>
-    <xref linkend="ooo-rammer-fra-fil"/>Indsætte grafik fra en fil</ulink> <emphasis>16.2.</emphasis><br>
-    <ulink url="writer65.html">Indsætte grafik fra windows klippebordet</ulink>
+    <ulink url="writer79.html">IndsÃ¦t noter</ulink> <emphasis>20.1.</emphasis><br>
+    <ulink url="writer51.html">IndsÃ¦tte en fodnote/slutnote</ulink> <emphasis>12.1.</emphasis><br>
+    <xref linkend="ooo-rammer-tekst"/>IndsÃ¦tte en tekstramme</ulink> <emphasis>17.1.</emphasis><br>
+    <xref linkend="ooo-rammer-fra-fil"/>IndsÃ¦tte grafik fra en fil</ulink> <emphasis>16.2.</emphasis><br>
+    <ulink url="writer65.html">IndsÃ¦tte grafik fra windows klippebordet</ulink>
     <emphasis>16.3.</emphasis><br>
-    <ulink url="writer18.html">Indsætte tekst</ulink><br>
+    <ulink url="writer18.html">IndsÃ¦tte tekst</ulink><br>
     <xref linkend="ooo-redigering"/>Indtaste tekst og specialtegn</ulink> <emphasis>5.1.</emphasis> <ulink url="name="j""><br>
     <emphasis>J</emphasis><br>
     </ulink> <ulink url="writer28.html">Juster afsnit</ulink> <ulink url="name="k""><br>
@@ -185,9 +185,9 @@
     <ulink url="writer18.html">Klippe tekst</ulink><br>
     <ulink url="writer18.html">Klippebordet</ulink><br>
     <ulink url="writer45.html">Kolonner, hele siden</ulink><br>
-    <xref linkend="ooo-spalter"/>Kolonner, område</ulink><br>
-    <ulink url="writer58.html">Kolonner, ophæve</ulink><br>
-    <ulink url="writer57.html">Kolonner, ændre</ulink><br>
+    <xref linkend="ooo-spalter"/>Kolonner, omrÃ¥de</ulink><br>
+    <ulink url="writer58.html">Kolonner, ophÃ¦ve</ulink><br>
+    <ulink url="writer57.html">Kolonner, Ã¦ndre</ulink><br>
     <ulink url="writer18.html">Kopiere tekst (klippebord)</ulink><br>
     <ulink url="writer19.html">Kopiere tekst (mus)</ulink><br>
     <ulink url="writer49.html">Krydshenvisninger (Felter)</ulink> <emphasis>11.3.</emphasis><br>
@@ -201,7 +201,7 @@
     <xref linkend="ooo-redigering"/>Linjeskift</ulink><br>
     <ulink url="writer53.html">Liste</ulink><br>
     <ulink url="writer54.html">Liste, formater</ulink><br>
-    <ulink url="writer79.html">Læse noter</ulink> <ulink url="name="m""><br>
+    <ulink url="writer79.html">LÃ¦se noter</ulink> <ulink url="name="m""><br>
     <emphasis>M</emphasis><br>
     </ulink> <ulink url="writer60.html">Manipulation med en tabel</ulink>
     <emphasis>15.2.</emphasis><br>
@@ -209,7 +209,7 @@
     <ulink url="writer15.html">Markere tekst</ulink><br>
     <xref linkend="ooo-brugerfladen"/>Menuer</ulink><br>
     <ulink url="writer11.html">Microsoft Word</ulink><br>
-    <ulink url="writer06.html">Målestok</ulink> <ulink url="name="n""><br>
+    <ulink url="writer06.html">MÃ¥lestok</ulink> <ulink url="name="n""><br>
     <emphasis>N</emphasis><br>
     </ulink> <xref linkend="ooo-navigatoeren"/>Navigation</ulink> <emphasis>19.1.</emphasis><br>
     <xref linkend="ooo-navigatoeren"/>Navigatoren</ulink> <emphasis>Kapitel 19.</emphasis><br>
@@ -218,7 +218,7 @@
     <ulink url="writer52.html">Navigere mellem teksten og fodnoten/slutnoten</ulink>
     <emphasis>12.2.</emphasis><br>
     <ulink url="writer79.html">Noter</ulink> <emphasis>Kapitel 20.</emphasis><br>
-    <ulink url="writer79.html">Noter, Indsæt</ulink> <emphasis>20.1.</emphasis><br>
+    <ulink url="writer79.html">Noter, IndsÃ¦t</ulink> <emphasis>20.1.</emphasis><br>
     <ulink url="writer42.html">Nummerer overskrifter</ulink><br>
     <ulink url="writer53.html">Nummereret liste</ulink><br>
     <ulink url="writer54.html">Nummereret liste, formater</ulink><br>
@@ -233,13 +233,13 @@
     <xref linkend="ooo-brugerfladen"/>OpenOffice brugerfladen</ulink> <emphasis>Kapitel 2.</emphasis><br>
     <ulink url="writer07.html">OpenOffice, Generelt om betjening af</ulink>
     <emphasis>2.3.</emphasis><br>
-    <ulink url="writer58.html">Ophæve et område med spalter</ulink> <emphasis>14.3.</emphasis><br>
+    <ulink url="writer58.html">OphÃ¦ve et omrÃ¥de med spalter</ulink> <emphasis>14.3.</emphasis><br>
     <ulink url="writer37.html">Oprette en ny typografi</ulink> <emphasis>8.7.</emphasis><br>
     <xref linkend="ooo-tabeller"/>Oprette en tabel</ulink> <emphasis>15.1.</emphasis><br>
     <ulink url="writer42.html">Oprette kapitelnummerering</ulink> <emphasis>9.2.</emphasis><br>
     <xref linkend="ooo-spalter"/>Oprette spalter</ulink> <emphasis>14.1.</emphasis><br>
     <xref linkend="ooo-orddeling"/>Orddeling</ulink> <emphasis>18.4.</emphasis><br>
-    <ulink url="writer23.html">Ordoptælling</ulink><br>
+    <ulink url="writer23.html">OrdoptÃ¦lling</ulink><br>
     <ulink url="writer80.html">Oversigter (genvejstaster)</ulink> <emphasis>Kapitel
     21.</emphasis><br>
     <ulink url="writer32.html">Overskrifter</ulink><br>
@@ -251,7 +251,7 @@
     <ulink url="writer53.html">Punktopstilling/Nummerering</ulink> <emphasis>Kapitel
     13.</emphasis><br>
     <ulink url="writer53.html">Punktopstilling, simpel</ulink> <emphasis>13.1.</emphasis><br>
-    <ulink url="writer54.html">Punktopstilling, formatér</ulink> <emphasis>13.2.</emphasis> <ulink url="name="q""><br>
+    <ulink url="writer54.html">Punktopstilling, formatÃ©r</ulink> <emphasis>13.2.</emphasis> <ulink url="name="q""><br>
     <emphasis>Q</emphasis></ulink> <ulink url="name="r""><br>
     <emphasis>R</emphasis><br>
     </ulink> <ulink url="writer69.html">Rammetypografier, grafik</ulink>
@@ -265,7 +265,7 @@
     <ulink url="writer45.html">Sideformatering, Indstilling af</ulink>
     <emphasis>10.2.</emphasis><br>
     <ulink url="writer45.html">Sidehoved</ulink> <emphasis>10.2.</emphasis><br>
-    <xref linkend="ooo-sideformatering"/>Sideopsætning, teori</ulink> <emphasis>10.1.</emphasis><br>
+    <xref linkend="ooo-sideformatering"/>SideopsÃ¦tning, teori</ulink> <emphasis>10.1.</emphasis><br>
     <xref linkend="ooo-sideformatering"/>Sider (teori)</ulink> <emphasis>10.1.</emphasis><br>
     <xref linkend="ooo-redigering"/>Sideskift</ulink><br>
     <xref linkend="ooo-felter"/>Sidetal (Felter)</ulink> <emphasis>11.1.</emphasis><br>
@@ -279,28 +279,28 @@
     <xref linkend="ooo-redigering"/>Skift side</ulink><br>
     <xref linkend="ooo-redigering"/>Skift spalte</ulink><br>
     <ulink url="writer25.html">Skrifttype</ulink><br>
-    <ulink url="writer25.html">Skriftstørrelse</ulink><br>
-    <xref linkend="ooo-brugerfladen"/>Skærmbilledet, Elementer på</ulink> <emphasis>2.1.</emphasis><br>
+    <ulink url="writer25.html">SkriftstÃ¸rrelse</ulink><br>
+    <xref linkend="ooo-brugerfladen"/>SkÃ¦rmbilledet, Elementer pÃ¥</ulink> <emphasis>2.1.</emphasis><br>
     <ulink url="writer38.html">Slette en typografi</ulink> <emphasis>8.8.</emphasis><br>
     <ulink url="writer16.html">Slette tekst</ulink> <emphasis>5.3.</emphasis><br>
     <ulink url="writer51.html">Slutnote</ulink><br>
     <ulink url="writer52.html">Slutnote, hop til/fra</ulink><br>
-    <ulink url="writer57.html">Spalteindstillinger, Ændre</ulink> <emphasis>14.2.</emphasis><br>
+    <ulink url="writer57.html">Spalteindstillinger, Ã†ndre</ulink> <emphasis>14.2.</emphasis><br>
     <xref linkend="ooo-spalter"/>Spalter/kolonner</ulink> <emphasis>Kapitel 14.</emphasis><br>
     <xref linkend="ooo-spalter"/>Spalter, hele siden (oprette)</ulink>
     <emphasis>14.1.</emphasis><br>
-    <ulink url="writer45.html">Spalter, område</ulink> <emphasis>10.2.</emphasis><br>
-    <ulink url="writer58.html">Spalter, ophæve</ulink> <emphasis>14.3.</emphasis><br>
+    <ulink url="writer45.html">Spalter, omrÃ¥de</ulink> <emphasis>10.2.</emphasis><br>
+    <ulink url="writer58.html">Spalter, ophÃ¦ve</ulink> <emphasis>14.3.</emphasis><br>
     <xref linkend="ooo-redigering"/>Specialtegn</ulink> <emphasis>5.1.</emphasis><br>
-    <ulink url="writer73.html">Sprogværktøjer</ulink> <emphasis>Kapitel 18.</emphasis><br>
-    <ulink url="writer73.html">Sprog, Sådan vælges et</ulink> <emphasis>18.1.</emphasis><br>
+    <ulink url="writer73.html">SprogvÃ¦rktÃ¸jer</ulink> <emphasis>Kapitel 18.</emphasis><br>
+    <ulink url="writer73.html">Sprog, SÃ¥dan vÃ¦lges et</ulink> <emphasis>18.1.</emphasis><br>
     <xref linkend="ooo-dokument-og-filer"/>Starte et nyt dokument</ulink> <emphasis>3.1.</emphasis><br>
-    <ulink url="writer23.html">Statistik (ordoptælling)</ulink> <emphasis>5.10.</emphasis><br>
+    <ulink url="writer23.html">Statistik (ordoptÃ¦lling)</ulink> <emphasis>5.10.</emphasis><br>
     <xref linkend="ooo-brugerfladen"/>Statuslinje</ulink><br>
     <ulink url="writer74.html">Stavekontrol</ulink> <emphasis>18.2.</emphasis><br>
     <ulink url="writer33.html">Stylisten</ulink> <emphasis>8.3.</emphasis><br>
-    <ulink url="writer25.html">Sænket skrift</ulink><br>
-    <ulink url="writer22.html">Søge tekst (erstat)</ulink> <emphasis>5.9.</emphasis> <ulink url="name=
+    <ulink url="writer25.html">SÃ¦nket skrift</ulink><br>
+    <ulink url="writer22.html">SÃ¸ge tekst (erstat)</ulink> <emphasis>5.9.</emphasis> <ulink url="name=
     "t""><br>
     <emphasis>T</emphasis><br>
     </ulink> <xref linkend="ooo-tabeller"/>Tabel, oprette</ulink> <emphasis>15.1.</emphasis><br>
@@ -314,24 +314,24 @@
     <ulink url="writer30.html">Tabulatorstop</ulink> <emphasis>7.4.</emphasis><br>
     <xref linkend="ooo-tegn-og-skriftsnit"/>Tegn og skrifttyper</ulink> <emphasis>Kapitel 6.</emphasis><br>
     <xref linkend="ooo-tegn-og-skriftsnit"/>Tegn og skrifttyper (teori)</ulink> <emphasis>6.1.</emphasis><br>
-    <ulink url="writer25.html">Tegnformatering, ændre</ulink> <emphasis>6.2.</emphasis><br>
+    <ulink url="writer25.html">Tegnformatering, Ã¦ndre</ulink> <emphasis>6.2.</emphasis><br>
     <ulink url="writer26.html">Tegnformatering, generelt</ulink> <emphasis>6.3.</emphasis><br>
     <ulink url="writer35.html">Tegntypografi, anvende</ulink> <emphasis>8.5.</emphasis><br>
     <ulink url="writer37.html">Tegntypografi, oprette</ulink> <emphasis>8.7.</emphasis><br>
     <ulink url="writer38.html">Tegntypografi, slette</ulink> <emphasis>8.8.</emphasis><br>
-    <ulink url="writer36.html">Tegntypografi, ændre</ulink> <emphasis>8.6.</emphasis><br>
+    <ulink url="writer36.html">Tegntypografi, Ã¦ndre</ulink> <emphasis>8.6.</emphasis><br>
     <ulink url="writer04.html">Tekstbehandling, Begreber i</ulink> <emphasis>1.3.</emphasis><br>
     <ulink url="writer03.html">Tekstbehandling, Om effektiv brug af</ulink>
     <emphasis>1.2.</emphasis><br>
     <ulink url="writer06.html">Tekstdokumenter, Visning af</ulink> <emphasis>2.2.</emphasis><br>
     <xref linkend="ooo-redigering"/>Tekst, Indtaste</ulink> <emphasis>5.1.</emphasis><br>
     <xref linkend="ooo-rammer-tekst"/>Tekstrammer</ulink> <emphasis>Kapitel 17.</emphasis><br>
-    <xref linkend="ooo-rammer-tekst"/>Tekstramme, Indsætte en</ulink> <emphasis>17.1.</emphasis><br>
+    <xref linkend="ooo-rammer-tekst"/>Tekstramme, IndsÃ¦tte en</ulink> <emphasis>17.1.</emphasis><br>
     <ulink url="writer72.html">Tekstramme, Bruge en (redigere)</ulink>
     <emphasis>17.2.</emphasis><br>
-    <ulink url="writer70.html">Tilføj billedtekst til grafik</ulink>
+    <ulink url="writer70.html">TilfÃ¸j billedtekst til grafik</ulink>
     <emphasis>16.8.</emphasis><br>
-    <ulink url="writer62.html">Tilføj billedtekst til tabel</ulink> <emphasis>15.4.</emphasis><br>
+    <ulink url="writer62.html">TilfÃ¸j billedtekst til tabel</ulink> <emphasis>15.4.</emphasis><br>
     <xref linkend="ooo-typografier"/>Typografier (teori)</ulink> <emphasis>8.1.</emphasis><br>
     <ulink url="writer40.html">Typografier, importere</ulink> <emphasis>8.10.</emphasis><br>
     <ulink url="writer46.html">Typografier, side</ulink> <emphasis>10.3.</emphasis><br>
@@ -345,21 +345,21 @@
     </ulink> <ulink url="writer28.html">Venstrestille afsnit</ulink><br>
     <xref linkend="ooo-udskrift-vis"/>Vise udskrift</ulink> <emphasis>4.2.</emphasis><br>
     <ulink url="writer06.html">Visning af tekstdokumenter</ulink> <emphasis>2.2.</emphasis><br>
-    <xref linkend="ooo-brugerfladen"/>Værktøjslinje</ulink> <ulink url="name="w""><br>
+    <xref linkend="ooo-brugerfladen"/>VÃ¦rktÃ¸jslinje</ulink> <ulink url="name="w""><br>
     <emphasis>W</emphasis><br>
     </ulink> <ulink url="writer18.html">Windows klippebordet</ulink> <emphasis>5.5.</emphasis><br>
-    <ulink url="writer65.html">Windows klippebordet, Indsætte grafik fra</ulink>
+    <ulink url="writer65.html">Windows klippebordet, IndsÃ¦tte grafik fra</ulink>
     <emphasis>16.3.</emphasis><br>
     <ulink url="writer11.html">Word</ulink> <ulink url="name="x""><br>
     <emphasis>X</emphasis></ulink> <ulink url="name="y""><br>
     <emphasis>Y</emphasis></ulink> <ulink url="name="z""><br>
     <emphasis>Z</emphasis></ulink> <ulink url="name="ae""><br>
-    <emphasis>Æ</emphasis><br>
-    </ulink> <ulink url="writer36.html">Ændre en typografi</ulink> <emphasis>8.6.</emphasis><br>
-    <ulink url="writer57.html">Ændre spalteindstillinger</ulink> <emphasis>14.2.</emphasis> <ulink url="name="oe""><br>
-    <emphasis>Ø</emphasis></ulink> <ulink url="name="aa""><br>
-    <emphasis>Å</emphasis><br>
-    </ulink> <ulink url="writer10.html">Åbne dokument</ulink> <emphasis>3.3.</emphasis></para>
+    <emphasis>Ã†</emphasis><br>
+    </ulink> <ulink url="writer36.html">Ã†ndre en typografi</ulink> <emphasis>8.6.</emphasis><br>
+    <ulink url="writer57.html">Ã†ndre spalteindstillinger</ulink> <emphasis>14.2.</emphasis> <ulink url="name="oe""><br>
+    <emphasis>Ã˜</emphasis></ulink> <ulink url="name="aa""><br>
+    <emphasis>Ã…</emphasis><br>
+    </ulink> <ulink url="writer10.html">Ã…bne dokument</ulink> <emphasis>3.3.</emphasis></para>
 
 <hr>
 
@@ -367,6 +367,6 @@
       <xref linkend="top">
     </center>
 </sect2>    <!--   Stikordsregister -->
-</chapter>    <!--   Håndbog i tekstbehandling med OpenOffice
+</chapter>    <!--   HÃ¥ndbog i tekstbehandling med OpenOffice
       Writer -->
 

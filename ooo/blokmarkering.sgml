@@ -5,13 +5,13 @@
 <sect1 id="ooo-blokmakering">
   <title>Blokmarkering</title>
 
-<para>Blokmarkering bruges hvis du vil gøre noget bestemt ved et stykke
+<para>Blokmarkering bruges hvis du vil gÃ¸re noget bestemt ved et stykke
     tekst, f.eks. slette det, flytte det, formatere det.</para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Du <emphasis>markerer</emphasis> en tekst ved at trække hen over teksten med
+<para>Du <emphasis>markerer</emphasis> en tekst ved at trÃ¦kke hen over teksten med
         musen (venstre musetast holdes nede) eller med <emphasis>Skift</emphasis> plus
         piletaster.</para>
 
@@ -19,14 +19,14 @@
 
   <listitem>
 
-<para>Du kan markere et ord ved at dobbeltklikke på det; du kan markere
+<para>Du kan markere et ord ved at dobbeltklikke pÃ¥ det; du kan markere
         en linje ved at klikke tre gange.</para>
 
 </listitem>
 </itemizedlist>
 
-<para>Du kan markere flere adskilte områder hvis du holder <emphasis>Ctrl</emphasis>
-    tasten nede og dobbeltklikker med venstre musetast på ordet (ordene):</para>
+<para>Du kan markere flere adskilte omrÃ¥der hvis du holder <emphasis>Ctrl</emphasis>
+    tasten nede og dobbeltklikker med venstre musetast pÃ¥ ordet (ordene):</para>
 
 <figure float="1" id="fig-ooo-markeringseksempel">
 <title>Markeringseksempel</title>

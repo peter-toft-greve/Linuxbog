@@ -4,52 +4,52 @@
  <title>Forord</title>
 
  <para>
-  Når man skal skrive bøger så kan man vælge mange forskellige måder.  I
-  denne bog vil vi gennemgå nogle af dem.  Hvis man er typen der vil
-  arbejde med teksten præcist som den kommer til at se ud på tryk, så
+  NÃ¥r man skal skrive bÃ¸ger sÃ¥ kan man vÃ¦lge mange forskellige mÃ¥der.  I
+  denne bog vil vi gennemgÃ¥ nogle af dem.  Hvis man er typen der vil
+  arbejde med teksten prÃ¦cist som den kommer til at se ud pÃ¥ tryk, sÃ¥
   skal man have fat i Abiword, KWord eller OpenOffice.org, der ikke
   bliver beskrevet i denne bog.  Vi vil beskrive systemene DocBook/XML,
-  HTML og LaTeX, samt nogle værktøjer der lettere at bruge dem.  Disse
-  tre systemer har til fælles at de bruger almindelige tekstfiler som
-  grundlæggende format. DocBook/XML er designet til at producere
+  HTML og LaTeX, samt nogle vÃ¦rktÃ¸jer der lettere at bruge dem.  Disse
+  tre systemer har til fÃ¦lles at de bruger almindelige tekstfiler som
+  grundlÃ¦ggende format. DocBook/XML er designet til at producere
   brugsanvisninger i mange forskellige slutformater (HTML, `info`,
-  `man`, PDF og Postscript). HTML er <emphasis>formatet</emphasis> på
+  `man`, PDF og Postscript). HTML er <emphasis>formatet</emphasis> pÃ¥
   WWW. Det er modsat de to andre formater vi omtaler her ikke beregnet
   til at blive konverteret til andre filformater.  LaTeX er designet til
-  at lave trykte bøger (via DVI-, PDF- og Postscript-formaterne), men
-  kan også oversættes til bl.a. HTML og RTF.  En anden ting der
+  at lave trykte bÃ¸ger (via DVI-, PDF- og Postscript-formaterne), men
+  kan ogsÃ¥ oversÃ¦ttes til bl.a. HTML og RTF.  En anden ting der
   kendetegner LaTeX er at det nok er det bedste system der findes til at
   skrive formler med<footnote><para>Blandt fysikere og matematikere er
-  det sågar udbredt at bruge LaTeX' notation, når man skriver formler i
+  det sÃ¥gar udbredt at bruge LaTeX' notation, nÃ¥r man skriver formler i
   e-post.</para></footnote>.
  </para>
 
  <para>
-  DocBook/XML har ca. 250 forskellige elementtyper og er primært
-  beregnet på at skrive om EDB-relaterede emner.  I DocBook/XML
+  DocBook/XML har ca. 250 forskellige elementtyper og er primÃ¦rt
+  beregnet pÃ¥ at skrive om EDB-relaterede emner.  I DocBook/XML
   definerer man ikke hvordan teksten skal se ud, men kun hvad teksten
-  er for en type.  Med DocBook/XML kan man oversætte til HTML,
+  er for en type.  Med DocBook/XML kan man oversÃ¦tte til HTML,
   Postscript, PDF og RTF.  Man skriver (som med LaTeX og HTML)
-  dokumentet i klar tekst med mærker der viser hvor elementer af
-  forskellig type starter og slutter.  Derefter oversætter man
-  dokumentet til det format man ønsker.  Når så DocBook-dokumentet
-  oversættes til for eksempel HTML, bliver teksten formateret på en
-  bestemt måde. En elementtype er for eksempel
+  dokumentet i klar tekst med mÃ¦rker der viser hvor elementer af
+  forskellig type starter og slutter.  Derefter oversÃ¦tter man
+  dokumentet til det format man Ã¸nsker.  NÃ¥r sÃ¥ DocBook-dokumentet
+  oversÃ¦ttes til for eksempel HTML, bliver teksten formateret pÃ¥ en
+  bestemt mÃ¥de. En elementtype er for eksempel
   "<literal>para</literal>", der bruges til at markere et afsnit
   tekst. Skal man angive en forfatters navn placerer man det i et
-  "<literal>author</literal>"-element.  Ved at al tekst står et
-  bestemt sted i et hierarki af elementer, kan man senere vælge, ikke
-  bare hvordan teksten skal se ud, men også hvilke dele skal med.
+  "<literal>author</literal>"-element.  Ved at al tekst stÃ¥r et
+  bestemt sted i et hierarki af elementer, kan man senere vÃ¦lge, ikke
+  bare hvordan teksten skal se ud, men ogsÃ¥ hvilke dele skal med.
  </para>
 
  <para>
   Fordelen med DocBook/XML er at det er ret nemt at skrive i, idet de
-  elementer man anvender i praksis er begrænset til måske 20, den
-  anden store fordel er, at man ret nemt kan oversætte både til HTML
-  og tilsvarende udskrift-formater såsom PDF og Postscript.  Den
-  tredje store fordel er at krydsreferencer og stikordsregister også
-  er ret nemme at administrere.  Til store bøger (uden formler) er
-  DocBook/XML et særdeles interessant system.
+  elementer man anvender i praksis er begrÃ¦nset til mÃ¥ske 20, den
+  anden store fordel er, at man ret nemt kan oversÃ¦tte bÃ¥de til HTML
+  og tilsvarende udskrift-formater sÃ¥som PDF og Postscript.  Den
+  tredje store fordel er at krydsreferencer og stikordsregister ogsÃ¥
+  er ret nemme at administrere.  Til store bÃ¸ger (uden formler) er
+  DocBook/XML et sÃ¦rdeles interessant system.
  </para>
 
  <para>
@@ -72,8 +72,8 @@
 </figure>
 
 <para>
-<command>Peter Toft</command> er civilingeniør og har en Ph.D.-grad
-fra DTU. Han har kørt Linux dagligt siden 1994. Aktiv Linuxforfatter og 
+<command>Peter Toft</command> er civilingeniÃ¸r og har en Ph.D.-grad
+fra DTU. Han har kÃ¸rt Linux dagligt siden 1994. Aktiv Linuxforfatter og 
 foredragsholder om Linux i Danmark og Sverige. Tidligere bestyrelsesformand for
 SSLUG.
 Medorganisator ved de danske Linux-konferencer (Linux98, Open
@@ -88,45 +88,45 @@ Hjemmeside <ulink url="http://pto.linux.dk">http://pto.linux.dk</ulink>
 
 <para>
 <command>Henrik Christian Grove</command> er uddannet som matematiker
-på Københavns Universitet. Har brugt Linux
-siden sommeren 1997 og har været aktiv deltager i de fleste af SSLUG's
-arrangementer siden Open Networks 99. Begyndte at bruge LaTeX i foråret
-1996 hvor han blev medredaktør på de matematikstuderendes fagblad
-Famøs. Siden da har han skrevet stort set alt i LaTeX.
+pÃ¥ KÃ¸benhavns Universitet. Har brugt Linux
+siden sommeren 1997 og har vÃ¦ret aktiv deltager i de fleste af SSLUG's
+arrangementer siden Open Networks 99. Begyndte at bruge LaTeX i forÃ¥ret
+1996 hvor han blev medredaktÃ¸r pÃ¥ de matematikstuderendes fagblad
+FamÃ¸s. Siden da har han skrevet stort set alt i LaTeX.
 </para>
 
 <para>
-<command>Kristian Sørensen</command> har bidraget med kapitlet om 
+<command>Kristian SÃ¸rensen</command> har bidraget med kapitlet om 
 LaTeX, som Henrik Christian Grove sidenhen har omskrevet dele af.
 </para>
 
 </sect1>
 
 <sect1 id="dokumentation-tak">
-<title>Vi siger tak for hjælpen</title>
+<title>Vi siger tak for hjÃ¦lpen</title>
 <para>
-Vi har haft stor glæde af mange SSLUG-medlemmers støtte, rettelser og
-forslag til forbedringer - bliv ved med dette. Specielt vil vi nævne:
+Vi har haft stor glÃ¦de af mange SSLUG-medlemmers stÃ¸tte, rettelser og
+forslag til forbedringer - bliv ved med dette. Specielt vil vi nÃ¦vne:
 </para>
 
 <itemizedlist  mark="bullet" spacing="compact">
 
 <listitem><para>
-Kristian Sørensen har skrevet det originale kapitel om LaTeX.
+Kristian SÃ¸rensen har skrevet det originale kapitel om LaTeX.
 </para></listitem>
 
 <listitem><para> 
 Andre bidragydere er:
 Anna Jonna Armannsdottir,
 Erik Martin,
-Erik Sørensen,
-Erling Sjørlund,
+Erik SÃ¸rensen,
+Erling SjÃ¸rlund,
 Harry Jensen,
 Henrik Skov Midtiby,
-Søren Ulrik, 
+SÃ¸ren Ulrik, 
 Mads Sejersen,
 Philip Heede,
-Jørgen Kristensen,
+JÃ¸rgen Kristensen,
 Jesper Laisen,
 Stig Jensen,
 Gunner Poulsen,
@@ -137,13 +137,13 @@ Simon-Shlomo Poil.
 
 <para>
 Du kan i <xref linkend="dokumentation-apprevhist"/> finde en liste over alle de
-revisioner, som bogen har været igennem. 
+revisioner, som bogen har vÃ¦ret igennem. 
 </para>
 
 <para>
-Hvis du har ord du ikke forstår, så kan <ulink
-url="http://www.whatis.com">http://www.whatis.com</ulink> være
-interessant. Her kan du slå mange computerord op dog kun på engelsk.
+Hvis du har ord du ikke forstÃ¥r, sÃ¥ kan <ulink
+url="http://www.whatis.com">http://www.whatis.com</ulink> vÃ¦re
+interessant. Her kan du slÃ¥ mange computerord op dog kun pÃ¥ engelsk.
 </para>
 
 </sect1>
@@ -151,16 +151,16 @@ interessant. Her kan du slå mange computerord op dog kun på engelsk.
 <sect1 id="dokumentation-typografi">
 <title>Typografi</title>
 <para>
-Vi vil afslutte indledningen med at nævne den anvendte typografi.
+Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
 </para>
 
 
 <itemizedlist mark="bullet" spacing="compact">
-<listitem><para>Navne på filer og kataloger skrives som
+<listitem><para>Navne pÃ¥ filer og kataloger skrives som
 <filename>foo.bar</filename></para>
 </listitem>
 
-<listitem><para>Kommandoer, du udfører ved at taste, skrives som
+<listitem><para>Kommandoer, du udfÃ¸rer ved at taste, skrives som
 <command>help</command></para>
 </listitem>
 

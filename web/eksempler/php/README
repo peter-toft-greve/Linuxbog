@@ -1,7 +1,7 @@
 Filerne i dette katalog er lavet af Michael Rasmussen <mir@miras.org>
-De har alle fået tilføjet endelsen "_source", da filerne også ligger 
-på internet hvor de netop ikke skal fortolkes. Du skal bare ændre
-filnavne til .php, så er du klar.
+De har alle fÃ¥et tilfÃ¸jet endelsen "_source", da filerne ogsÃ¥ ligger 
+pÃ¥ internet hvor de netop ikke skal fortolkes. Du skal bare Ã¦ndre
+filnavne til .php, sÃ¥ er du klar.
 
 Anvend "rename .php_source .php *.php_source" til dette.
 

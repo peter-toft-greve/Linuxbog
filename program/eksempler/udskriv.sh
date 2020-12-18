@@ -16,8 +16,8 @@ do
         echo "filen $1 findes ikke!"
         exit
     fi
-# For eksemplets skyld er listningen udført med shell-kommandoer
-# selvom det ville være lettere (og hurtigere) at lave fx:
+# For eksemplets skyld er listningen udfÃ¸rt med shell-kommandoer
+# selvom det ville vÃ¦re lettere (og hurtigere) at lave fx:
 #   awk '{lnr++; print lnr, $0}' $1
     lnr=1
     ( while read lin; res=$?; [ $res == "0" ] ; do echo -e $lnr"\t"$lin; lnr=`expr $lnr + 1`; done ) <$1

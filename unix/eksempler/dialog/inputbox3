@@ -2,10 +2,10 @@
 # Filnavn: inputbox3
 NAVN=""
 dialog --backtitle "Stor applikation" \
-	--ok-label "Sæt navn" \
+	--ok-label "SÃ¦t navn" \
 	--cancel-label "Afbryd" \
 	--help-button \
-	--help-label "Hjælp" \
+	--help-label "HjÃ¦lp" \
 	--begin 5 10 \
 	--inputbox "Dit navn" 8 40 "Tyge Brahe" 2>/tmp/svar
 case $? in

@@ -2,15 +2,15 @@
   <title>Definition af klasser</title>
 
 <para>
-Kapitlet forudsættes af resten af bogen.
+Kapitlet forudsÃ¦ttes af resten af bogen.
 </para>
 
 <para>
-Forudsætter <xref linkend="java-obj" />, Objekter.
+ForudsÃ¦tter <xref linkend="java-obj" />, Objekter.
 </para>
 
 <para>
-Er man i gang med et større program, vil man have brug for
+Er man i gang med et stÃ¸rre program, vil man have brug for
 at definere sine egne specialiserede klasser. Et
 regnskabsprogram kunne f.eks. definere en Konto-klasse. Ud fra
 Konto-klassen ville der blive skabt et antal konto-objekter
@@ -18,7 +18,7 @@ svarende til de konti, der skulle administreres.
 </para>
 
 <para>
-I dette kapitel ser vi på, hvordan man selv definerer sine
+I dette kapitel ser vi pÃ¥, hvordan man selv definerer sine
 egne klasser. Vi minder om, at
 </para>
 
@@ -30,16 +30,16 @@ metoder, der kendetegner objekterne</para></blockquote>
 (instans) af klassen</para></blockquote>
 
 <para>
-Når man programmerer objektorienteret, samler man data i
-selvstændige objekter og definerer metoder, som arbejder
-på disse data i objekterne.
+NÃ¥r man programmerer objektorienteret, samler man data i
+selvstÃ¦ndige objekter og definerer metoder, som arbejder
+pÃ¥ disse data i objekterne.
 </para>
 
 <sect1 id="java-klasser-boks">
   <title>En Boks-klasse</title>
 
 <para>
-Lad os tage et eksempel på en klassedefinition:
+Lad os tage et eksempel pÃ¥ en klassedefinition:
 </para>
 
 <figure id="java-klasser-klasse-def-fig">
@@ -50,22 +50,22 @@ Lad os tage et eksempel på en klassedefinition:
 
 <para>
 Vi definerer klassen Boks, som indeholder tre
-variabler, nemlig bredde, højde og længde. Derudover
-definerer vi metoden volumen(), som arbejder på disse data.
+variabler, nemlig bredde, hÃ¸jde og lÃ¦ngde. Derudover
+definerer vi metoden volumen(), som arbejder pÃ¥ disse data.
 Metoden returnerer en double og tager ingen parametre.
 </para>
 
 <screen>
 public class Boks
 {
-  double længde;
+  double lÃ¦ngde;
   double bredde;
-  double højde;
+  double hÃ¸jde;
 
   double volumen()
   {
     double vol;
-    vol = længde*bredde*højde;
+    vol = lÃ¦ngde*bredde*hÃ¸jde;
     return vol; 
   }
 }
@@ -75,11 +75,11 @@ public class Boks
   <title>Variabler</title>
 
 <para>
-Variablerne bredde, højde og længde kaldes også
+Variablerne bredde, hÃ¸jde og lÃ¦ngde kaldes ogsÃ¥
 objektvariabler, fordi hvert Boks-objekt har en af hver.
 </para>
 
-<blockquote><para>Objektvariabler erklæres direkte
+<blockquote><para>Objektvariabler erklÃ¦res direkte
 i klassen uden for metoderne</para></blockquote>
 
 <para>
@@ -93,23 +93,23 @@ Vi kan lave et Boks-objekt, boksobjekt med new:
 
 
 <para>
-Nu er der oprettet et Boks-objekt i lageret, der således har
-en højde-, en bredde- og en længde-variabel.
+Nu er der oprettet et Boks-objekt i lageret, der sÃ¥ledes har
+en hÃ¸jde-, en bredde- og en lÃ¦ngde-variabel.
 </para>
 
 <para>
-Variablen vol kaldes en lokal variabel, fordi den er erklæret
+Variablen vol kaldes en lokal variabel, fordi den er erklÃ¦ret
 lokalt i volumen-metoden.
 </para>
 
-<blockquote><para>En variabel erklæret inde i en
+<blockquote><para>En variabel erklÃ¦ret inde i en
 metode kaldes en lokal variabel</para></blockquote>
-<blockquote><para>Lokale variabler eksisterer kun, så
-længe metoden, hvori de er erklæret, udføres</para></blockquote>
+<blockquote><para>Lokale variabler eksisterer kun, sÃ¥
+lÃ¦nge metoden, hvori de er erklÃ¦ret, udfÃ¸res</para></blockquote>
 
 <para>
-Modsat højde, længde og bredde begynder vol-variabler
-altså ikke at eksistere, bare fordi vi har skabt en Boks.
+Modsat hÃ¸jde, lÃ¦ngde og bredde begynder vol-variabler
+altsÃ¥ ikke at eksistere, bare fordi vi har skabt en Boks.
 </para>
 </sect2>    <!--   Variabler -->
 
@@ -117,8 +117,8 @@ altså ikke at eksistere, bare fordi vi har skabt en Boks.
   <title>Brug af klassen</title>
 
 <para>
-Objekter af klassen Boks kan f.eks. benyttes på følgende
-måde:
+Objekter af klassen Boks kan f.eks. benyttes pÃ¥ fÃ¸lgende
+mÃ¥de:
 </para>
 
 <screen>
@@ -130,9 +130,9 @@ public class BenytBoks
 
 <emphasis>    Boks boksobjekt;</emphasis>
 <emphasis>    boksobjekt = new Boks();</emphasis>
-<emphasis>    boksobjekt.længde= 12.3;</emphasis>
+<emphasis>    boksobjekt.lÃ¦ngde= 12.3;</emphasis>
 <emphasis>    boksobjekt.bredde= 2.22;</emphasis>
-<emphasis>    boksobjekt.højde = 6.18;</emphasis>
+<emphasis>    boksobjekt.hÃ¸jde = 6.18;</emphasis>
 <emphasis>    rumfang = boksobjekt.volumen();</emphasis>
     System.out.println(&quot;Boksens volume: &quot;+ rumfang);
   }
@@ -147,26 +147,26 @@ Boksens volume: 168.75108
 
 <para>
 Som det ses, er det klassen BenytBoks, der indeholder
-main()-metoden. Der skal være &eacute;n og kun &eacute;n klasse
-med en main-metode i et program. En sådan &quot;main-klasse&quot;
+main()-metoden. Der skal vÃ¦re &eacute;n og kun &eacute;n klasse
+med en main-metode i et program. En sÃ¥dan &quot;main-klasse&quot;
 bruges ikke til at definere objekttyper med - kun til at angive, hvor
 programmet skal startes.
 </para>
 
 <para>
-I følgende sætninger (i klassen BenytBoks) sættes
+I fÃ¸lgende sÃ¦tninger (i klassen BenytBoks) sÃ¦ttes
 det nyoprettede Boks-objekts variabler:
 </para>
 
 <screen>
-  boksobjekt.længde= 12.3;
+  boksobjekt.lÃ¦ngde= 12.3;
   boksobjekt.bredde= 2.22;
-  boksobjekt.højde = 6.18;
+  boksobjekt.hÃ¸jde = 6.18;
 </screen>
 
 
 <para>
-I den efterfølgende sætning:
+I den efterfÃ¸lgende sÃ¦tning:
 </para>
 
 <screen>
@@ -176,8 +176,8 @@ I den efterfølgende sætning:
 
 <para>
 kaldes metoden volumen() i Boks-objektet, der udregner rumfanget
-ud fra variablerne, som er blevet tilført data i linjerne
-ovenfor. Metoden returnerer en double - denne lægges over i
+ud fra variablerne, som er blevet tilfÃ¸rt data i linjerne
+ovenfor. Metoden returnerer en double - denne lÃ¦gges over i
 rumfang-variablen, som udskrives.
 </para>
 </sect2>    <!--   Brug af klassen -->
@@ -186,13 +186,13 @@ rumfang-variablen, som udskrives.
   <title>Metodedefinition</title>
 
 <para>
-Når vi definerer en metode, giver vi den et hoved og en
+NÃ¥r vi definerer en metode, giver vi den et hoved og en
 krop.
 </para>
 
 <para>
-<emphasis>Hovedet</emphasis> ligner den måde vi tidligere har set metoder
-opremset på. Metodehovedet fortæller metodens navn,
+<emphasis>Hovedet</emphasis> ligner den mÃ¥de vi tidligere har set metoder
+opremset pÃ¥. Metodehovedet fortÃ¦ller metodens navn,
 returtype og hvilke parametre den eventuelt tager:
 </para>
 
@@ -208,50 +208,50 @@ returtype og hvilke parametre den eventuelt tager:
 <screen>
   {
     double vol;
-    vol = længde*bredde*højde;
+    vol = lÃ¦ngde*bredde*hÃ¸jde;
     return vol; 
   }
 </screen>
 
 
 <para>
-I kroppen står der, hvad der skal ske, når metoden
-kaldes. Her står altså, at når metoden volumen()
-kaldes, bliver der først oprettet en lokal variabel, vol.
-Denne bliver tildelt produktet af de tre variabler længde,
-bredde og højde. Den sidste linje i kroppen fortæller,
+I kroppen stÃ¥r der, hvad der skal ske, nÃ¥r metoden
+kaldes. Her stÃ¥r altsÃ¥, at nÃ¥r metoden volumen()
+kaldes, bliver der fÃ¸rst oprettet en lokal variabel, vol.
+Denne bliver tildelt produktet af de tre variabler lÃ¦ngde,
+bredde og hÃ¸jde. Den sidste linje i kroppen fortÃ¦ller,
 at resultatet af vol bliver givet tilbage (returneret) til der, hvor
 metoden blev kaldt.
 </para>
 
-<blockquote><para>En metodekrop udføres, når
+<blockquote><para>En metodekrop udfÃ¸res, nÃ¥r
 metoden kaldes</para></blockquote>
 
 <para>
-Variablerne længde, bredde og højde, som kroppen
+Variablerne lÃ¦ngde, bredde og hÃ¸jde, som kroppen
 bruger, er dem, der findes i netop det objekt, som
-volumen()-metoden blev kaldt på. Lad os kigge på en stump
+volumen()-metoden blev kaldt pÃ¥. Lad os kigge pÃ¥ en stump
 af BenytBoks:
 </para>
 
 <screen>
-    boksobjekt.længde= 12.3;
+    boksobjekt.lÃ¦ngde= 12.3;
     boksobjekt.bredde= 2.22;
-    boksobjekt.højde= 6.18;
+    boksobjekt.hÃ¸jde= 6.18;
     rumfang = boksobjekt.volumen();
 </screen>
 
 
 <para>
-Her får det Boks-objekt, som boksobjekt refererer til, sat
-sine variabler, og når metoden volumen() derefter kaldes på
-dette objekt, vil længde, bredde og højde have disse
-værdier. rumfang bliver sat til den værdi, vol har i
-return-linjen, og vol nedlægges (da den er en lokal variabel).
+Her fÃ¥r det Boks-objekt, som boksobjekt refererer til, sat
+sine variabler, og nÃ¥r metoden volumen() derefter kaldes pÃ¥
+dette objekt, vil lÃ¦ngde, bredde og hÃ¸jde have disse
+vÃ¦rdier. rumfang bliver sat til den vÃ¦rdi, vol har i
+return-linjen, og vol nedlÃ¦gges (da den er en lokal variabel).
 </para>
 
-<blockquote><para>En return-sætning afslutter
-udførelsen af metodekroppen og leverer en værdi tilbage
+<blockquote><para>En return-sÃ¦tning afslutter
+udfÃ¸relsen af metodekroppen og leverer en vÃ¦rdi tilbage
 til kalderen</para></blockquote>
 </sect2>    <!--   Metodedefinition -->
 
@@ -260,9 +260,9 @@ til kalderen</para></blockquote>
 
 <para>
 Herunder opretter vi to bokse og udregner deres forskel i rumfang.
-Hver boks er et aftryk af Boks-klassen forstået på den
-måde, at de hver indeholder deres egne sæt variabler.
-Variablen bredde kan således have forskellige værdier
+Hver boks er et aftryk af Boks-klassen forstÃ¥et pÃ¥ den
+mÃ¥de, at de hver indeholder deres egne sÃ¦t variabler.
+Variablen bredde kan sÃ¥ledes have forskellige vÃ¦rdier
 i hvert objekt.
 </para>
 
@@ -275,13 +275,13 @@ public class BenytBokse
 <emphasis>    boks1 = new Boks();</emphasis>
 <emphasis>    boks2 = new Boks();</emphasis>
 
-<emphasis>    boks1.længde= 12.3;</emphasis>
+<emphasis>    boks1.lÃ¦ngde= 12.3;</emphasis>
 <emphasis>    boks1.bredde= 2.22;</emphasis>
-<emphasis>    boks1.højde= 6.18;</emphasis>
+<emphasis>    boks1.hÃ¸jde= 6.18;</emphasis>
 
-<emphasis>    boks2.længde= 13.3;</emphasis>
+<emphasis>    boks2.lÃ¦ngde= 13.3;</emphasis>
 <emphasis>    boks2.bredde= 3.33;</emphasis>
-<emphasis>    boks2.højde= 7.18;</emphasis>
+<emphasis>    boks2.hÃ¸jde= 7.18;</emphasis>
 
     double v1, v2;
 
@@ -300,10 +300,10 @@ Volumenforskel: 149.24394
 
 
 <para>
-Når vi kalder volumen() på boks1 og boks2, er det
-således to forskellige sæt længde-, højde-
-og bredde-variabler, der bliver brugt til beregningen når
-volumen()'s krop udføres.
+NÃ¥r vi kalder volumen() pÃ¥ boks1 og boks2, er det
+sÃ¥ledes to forskellige sÃ¦t lÃ¦ngde-, hÃ¸jde-
+og bredde-variabler, der bliver brugt til beregningen nÃ¥r
+volumen()'s krop udfÃ¸res.
 </para>
 </sect2>    <!--   Flere objekter -->
 </sect1>    <!--   En Boks-klasse -->
@@ -314,8 +314,8 @@ volumen()'s krop udføres.
 <para>
 Indkapsling af data og metoder i objekter betyder, at man ikke
 lader andre bruge objekterne helt efter eget forgodtbefindende.
-Man gør visse dele af objekterne utilgængelige uden for
-klassens metoder. Herved sætter man nogle regler op for,
+Man gÃ¸r visse dele af objekterne utilgÃ¦ngelige uden for
+klassens metoder. Herved sÃ¦tter man nogle regler op for,
 hvordan man kan benytte objekterne.
 </para>
 
@@ -324,41 +324,41 @@ Hvorfor overhovedet indkapsle (skjule) variabler?
 </para>
 
 <para>
-Indkapsling i klasser er vigtig, når programmerne bliver
-store og komplekse. Hvis det er muligt at ændre data i en
-klasse, se eksemplet ovenfor, kan det føre til situationer,
+Indkapsling i klasser er vigtig, nÃ¥r programmerne bliver
+store og komplekse. Hvis det er muligt at Ã¦ndre data i en
+klasse, se eksemplet ovenfor, kan det fÃ¸re til situationer,
 som kommer ud af kontrol i store komplekse systemer.
 </para>
 
 <para>
-Ved at indkapsle data er den eneste måde at ændre data
-på brugen af metoder. I metoderne kan man sikre sig mod
-vanvittige overgreb på variabler ved at tilføre
+Ved at indkapsle data er den eneste mÃ¥de at Ã¦ndre data
+pÃ¥ brugen af metoder. I metoderne kan man sikre sig mod
+vanvittige overgreb pÃ¥ variabler ved at tilfÃ¸re
 logik, der sikrer, at variablerne er konsistente.
 </para>
 
 <para>
-I ovenstående eksempel kan man for eksempel sætte
-højden af en boks til et negativt tal. Spørger man
-derefter på volumen(), vil man få et negativt svar! Det
-kræver ikke meget fantasi at forestille sig, hvordan sådanne
-fejl kunne gøre et program ubrugeligt. Tænk for eksempel
-på pakkepost-omdeling, hvis et af Post Danmarks programmer
-påstod, at der nemt kunne være 10001 pakker på hver
-<emphasis>minus</emphasis> en kubikmeter og 10000 pakker på hver plus en
+I ovenstÃ¥ende eksempel kan man for eksempel sÃ¦tte
+hÃ¸jden af en boks til et negativt tal. SpÃ¸rger man
+derefter pÃ¥ volumen(), vil man fÃ¥ et negativt svar! Det
+krÃ¦ver ikke meget fantasi at forestille sig, hvordan sÃ¥danne
+fejl kunne gÃ¸re et program ubrugeligt. TÃ¦nk for eksempel
+pÃ¥ pakkepost-omdeling, hvis et af Post Danmarks programmer
+pÃ¥stod, at der nemt kunne vÃ¦re 10001 pakker pÃ¥ hver
+<emphasis>minus</emphasis> en kubikmeter og 10000 pakker pÃ¥ hver plus en
 kubikmeter i &eacute;n postvogn... endda med flere kubikmeter til
 overs til anden post!
 </para>
 
 <para>
-Med indkapsling opnår man at objekterne altid er
-konsistente, fordi objekterne selv sørger for at deres
-variabler har fornuftige værdier.
+Med indkapsling opnÃ¥r man at objekterne altid er
+konsistente, fordi objekterne selv sÃ¸rger for at deres
+variabler har fornuftige vÃ¦rdier.
 </para>
 
 <para>
 Man styrer &quot;synligheden&quot; af en variabel eller metode med
-nøgleordene public og private:
+nÃ¸gleordene public og private:
 </para>
 
 <blockquote><para>public betyder &quot;synlig for alle&quot;</para></blockquote>
@@ -367,35 +367,35 @@ klassen&quot;</para></blockquote>
 
 <para>
 Herunder ses en modificeret version af eksemplet med Boks- og
-BenytBoks-klassen, men nu er variablerne erklæret private.
+BenytBoks-klassen, men nu er variablerne erklÃ¦ret private.
 </para>
 
 <screen>
 public class Boks2
 {
-<emphasis>  private double længde;</emphasis>
+<emphasis>  private double lÃ¦ngde;</emphasis>
 <emphasis>  private double bredde;</emphasis>
-<emphasis>  private double højde;</emphasis>
+<emphasis>  private double hÃ¸jde;</emphasis>
 
-<emphasis>  public void sætMål(double lgd, double b, double h)</emphasis>
+<emphasis>  public void sÃ¦tMÃ¥l(double lgd, double b, double h)</emphasis>
   {
     if (lgd&lt;=0 || b&lt;=0 || h&lt;=0)
     {
-       System.out.println(&quot;Ugyldige mål. Bruger standardmål.&quot;);
-      længde = 10.0;
+       System.out.println(&quot;Ugyldige mÃ¥l. Bruger standardmÃ¥l.&quot;);
+      lÃ¦ngde = 10.0;
       bredde = 10.0;
-      højde  = 10.0;
+      hÃ¸jde  = 10.0;
     } else {
-      længde = lgd;
+      lÃ¦ngde = lgd;
       bredde = b;
-      højde  = h;
+      hÃ¸jde  = h;
     }
   }
 
 <emphasis>  public double volumen()</emphasis>
   {
     double vol;
-    vol = længde*bredde*højde;
+    vol = lÃ¦ngde*bredde*hÃ¸jde;
     return vol; 
   }
 }
@@ -403,8 +403,8 @@ public class Boks2
 
 
 <para>
-Klassen er illustreret med UML nedenfor. Bemærk, at
-variablerne er private, så de har et - foran, mens metoderne,
+Klassen er illustreret med UML nedenfor. BemÃ¦rk, at
+variablerne er private, sÃ¥ de har et - foran, mens metoderne,
 som kan ses udefra (public), har et + foran:
 </para>
 
@@ -415,17 +415,17 @@ som kan ses udefra (public), har et + foran:
 </figure>
 
 <para>
-Nu da variablerne bredde, højde og længde er erklæret
-private, er det ulovligt at ændre dem &quot;udefra&quot;, i
+Nu da variablerne bredde, hÃ¸jde og lÃ¦ngde er erklÃ¦ret
+private, er det ulovligt at Ã¦ndre dem &quot;udefra&quot;, i
 vores BenytBoks-program.
 </para>
 
 <para>
-Til gengæld har vi defineret metoden sætMål(),
-som man kan kalde for at sætte målene. Nu da den eneste
-måde at ændre data på er ved specifikt at kalde
-metoden sætMål(), kan vi indlægge en ønsket
-logik - for eksempel sikre os mod 0 (nul) eller negative værdier.
+Til gengÃ¦ld har vi defineret metoden sÃ¦tMÃ¥l(),
+som man kan kalde for at sÃ¦tte mÃ¥lene. Nu da den eneste
+mÃ¥de at Ã¦ndre data pÃ¥ er ved specifikt at kalde
+metoden sÃ¦tMÃ¥l(), kan vi indlÃ¦gge en Ã¸nsket
+logik - for eksempel sikre os mod 0 (nul) eller negative vÃ¦rdier.
 </para>
 
 <screen>
@@ -435,19 +435,19 @@ public class BenytBoks2
   {
     Boks2 <emphasis>enBoks = new Boks2()</emphasis>;
 
-<emphasis>    //ulovligt: enBoks.længde= 12.3;</emphasis>
+<emphasis>    //ulovligt: enBoks.lÃ¦ngde= 12.3;</emphasis>
 <emphasis>    //ulovligt: enBoks.bredde= 2.22;</emphasis>
-<emphasis>    //ulovligt: enBoks.højde= 6.18;</emphasis>
+<emphasis>    //ulovligt: enBoks.hÃ¸jde= 6.18;</emphasis>
 
-<emphasis>    enBoks.sætMål( 2.0, 2.5, 1.5);</emphasis>
-
-    System.out.println(&quot;Volumen er: &quot;+ enBoks.volumen());
-
-<emphasis>    enBoks.sætMål(-2.0, 0.0, 1.0);</emphasis>
+<emphasis>    enBoks.sÃ¦tMÃ¥l( 2.0, 2.5, 1.5);</emphasis>
 
     System.out.println(&quot;Volumen er: &quot;+ enBoks.volumen());
 
-<emphasis>    enBoks.sætMål( 2.0, 3.0 ,1.0);</emphasis>
+<emphasis>    enBoks.sÃ¦tMÃ¥l(-2.0, 0.0, 1.0);</emphasis>
+
+    System.out.println(&quot;Volumen er: &quot;+ enBoks.volumen());
+
+<emphasis>    enBoks.sÃ¦tMÃ¥l( 2.0, 3.0 ,1.0);</emphasis>
 
     System.out.println(&quot;Volumen er: &quot;+ enBoks.volumen());
   }
@@ -457,38 +457,38 @@ public class BenytBoks2
 
 <screen>
 Volumen er: 7.5
-Ugyldige mål. Bruger standardmål.
+Ugyldige mÃ¥l. Bruger standardmÃ¥l.
 Volumen er: 1000.0
 Volumen er: 6.0
 </screen>
 
 
 <para>
-En anden fordel ved indkapsling er, at man bliver uafhængig
-af repræsentationen. Man kunne f.eks. gemme volumen i
-Boks-klassen i stedet for højden og så lade højden
-være beregnet.
+En anden fordel ved indkapsling er, at man bliver uafhÃ¦ngig
+af reprÃ¦sentationen. Man kunne f.eks. gemme volumen i
+Boks-klassen i stedet for hÃ¸jden og sÃ¥ lade hÃ¸jden
+vÃ¦re beregnet.
 </para>
 </sect1>    <!--   Indkapsling -->
 
 <sect1 id="java-klasser-konst">
-  <title>Konstruktører</title>
+  <title>KonstruktÃ¸rer</title>
 
 <para>
-En konstruktør (eng.: constructor) er en speciel metode,
+En konstruktÃ¸r (eng.: constructor) er en speciel metode,
 der har samme navn som klassen. Den kaldes automatisk ved oprettelse
 af et objekt med 'new'-operatoren og benyttes oftest til at
 klare forskellige former for initialisering af det nye objekt.
 </para>
 
 <para>
-Som vi så i forrige kapitel (i tilfældet med
-Rectangle, Point og Date), kan man have flere konstruktører
+Som vi sÃ¥ i forrige kapitel (i tilfÃ¦ldet med
+Rectangle, Point og Date), kan man have flere konstruktÃ¸rer
 for en klasse, bare parameterlisterne er forskellige.
 </para>
 
 <para>
-Her kommer et eksempel med nogle konstruktører:
+Her kommer et eksempel med nogle konstruktÃ¸rer:
 </para>
 
 <figure id="java-klasser-konst-fig">
@@ -500,57 +500,57 @@ Her kommer et eksempel med nogle konstruktører:
 <screen>
 public class Boks3 
 {
-  private double længde;
+  private double lÃ¦ngde;
   private double bredde;
-  private double højde;
+  private double hÃ¸jde;
 
 <emphasis>  public Boks3()</emphasis>
   {
     System.out.println(&quot;Standardboks oprettes&quot;);
-    sætMål(10, 10, 10);
+    sÃ¦tMÃ¥l(10, 10, 10);
   }
 
-<emphasis>  // En anden konstruktør der tager bredde, højde og længde</emphasis>
+<emphasis>  // En anden konstruktÃ¸r der tager bredde, hÃ¸jde og lÃ¦ngde</emphasis>
 <emphasis>  public Boks3(double lgd, double b, double h)</emphasis>
   {
     System.out.println(&quot;Boks oprettes med lgd=&quot;+lgd+&quot; b=&quot;+b+&quot; h=&quot;+h);
-    sætMål(lgd,b,h);
+    sÃ¦tMÃ¥l(lgd,b,h);
   }
 
-  public void sætMål(double lgd, double b, double h)
+  public void sÃ¦tMÃ¥l(double lgd, double b, double h)
   {
     if (lgd&lt;=0 || b&lt;=0 || h&lt;=0) 
     {
-       System.out.println(&quot;Ugyldige mål. Bruger standardmål.&quot;);
-      længde = 10.0;
+       System.out.println(&quot;Ugyldige mÃ¥l. Bruger standardmÃ¥l.&quot;);
+      lÃ¦ngde = 10.0;
       bredde = 10.0;
-      højde  = 10.0;
+      hÃ¸jde  = 10.0;
     } else {
-      længde = lgd;
+      lÃ¦ngde = lgd;
       bredde = b;
-      højde  = h;
+      hÃ¸jde  = h;
     }
   }
 
   public double volumen()
   {
-    return længde*bredde*højde; 
+    return lÃ¦ngde*bredde*hÃ¸jde; 
   }
 }
 </screen>
 
 
 <para>
-Bemærk:
+BemÃ¦rk:
 </para>
 
-<blockquote><para>En konstruktør erklæres
+<blockquote><para>En konstruktÃ¸r erklÃ¦res
 som en metode med samme navn som klassen</para></blockquote>
-<blockquote><para>En konstruktør har ingen
+<blockquote><para>En konstruktÃ¸r har ingen
 returtype - ikke engang 'void'</para></blockquote>
 
 <para>
-I ovenstående eksempel er der defineret to konstruktører:
+I ovenstÃ¥ende eksempel er der defineret to konstruktÃ¸rer:
 </para>
 
 <screen>
@@ -560,7 +560,7 @@ I ovenstående eksempel er der defineret to konstruktører:
 
 
 <para>
-Vi prøver Boks3 med:
+Vi prÃ¸ver Boks3 med:
 </para>
 
 <screen>
@@ -569,13 +569,13 @@ public class BenytBoks3
   public static void main(String args[])
   {
     Boks3 enBoks;
-<emphasis>    // brug konstruktøren uden parametre</emphasis>
+<emphasis>    // brug konstruktÃ¸ren uden parametre</emphasis>
     enBoks = <emphasis>new Boks3()</emphasis>;
 
     System.out.println(&quot;Volumen er: &quot;+ enBoks.volumen());
 
     Boks3 enAndenBoks;
-<emphasis>    // brug den anden konstruktør</emphasis>
+<emphasis>    // brug den anden konstruktÃ¸r</emphasis>
     enAndenBoks = <emphasis>new Boks3(5,5,10)</emphasis>;
 
     System.out.println(&quot;Volumen er: &quot;+ enAndenBoks.volumen());
@@ -592,14 +592,14 @@ Volumen er: 250.0
 </screen>
 
 <sect2 id="java-klasser-konst-std">
-  <title>Standardkonstruktører</title>
+  <title>StandardkonstruktÃ¸rer</title>
 
 <para>
-Når vi i de foregående eksempler (f.eks. Boks2) ikke
-har benyttet en konstruktør, er det, fordi Java, hvis ikke en
-konstruktør er erklæret, selv erklærer en tom
-standardkonstruktør uden parametre. Dvs. Java i Boks2's
-tilfælde usynligt har defineret konstruktøren:
+NÃ¥r vi i de foregÃ¥ende eksempler (f.eks. Boks2) ikke
+har benyttet en konstruktÃ¸r, er det, fordi Java, hvis ikke en
+konstruktÃ¸r er erklÃ¦ret, selv erklÃ¦rer en tom
+standardkonstruktÃ¸r uden parametre. Dvs. Java i Boks2's
+tilfÃ¦lde usynligt har defineret konstruktÃ¸ren:
 </para>
 
 <screen>
@@ -610,32 +610,32 @@ public Boks2()
 
 
 <para>
-Denne konstruktør har vi kaldt, hver gang vi har oprettet
+Denne konstruktÃ¸r har vi kaldt, hver gang vi har oprettet
 et objekt med 'new'.
 </para>
 
-<blockquote><para>Der kaldes altid en konstruktør,
-når et objekt oprettes</para></blockquote>
-<blockquote><para>Standardkonstruktøren genereres
-automatisk, hvis der ikke er andre konstruktører i
+<blockquote><para>Der kaldes altid en konstruktÃ¸r,
+nÃ¥r et objekt oprettes</para></blockquote>
+<blockquote><para>StandardkonstruktÃ¸ren genereres
+automatisk, hvis der ikke er andre konstruktÃ¸rer i
 klassen</para></blockquote>
 
 <para>
-En standardkonstruktør genereres kun, hvis der ikke er
-andre konstruktører i klassen.
+En standardkonstruktÃ¸r genereres kun, hvis der ikke er
+andre konstruktÃ¸rer i klassen.
 </para>
 
 <para>
-Hvis vi ikke havde defineret en konstruktør uden parametre
-i Boks3, ville oversætteren i BenytBoks3 brokke sig over, at
-denne type konstruktør ikke fandtes:
+Hvis vi ikke havde defineret en konstruktÃ¸r uden parametre
+i Boks3, ville oversÃ¦tteren i BenytBoks3 brokke sig over, at
+denne type konstruktÃ¸r ikke fandtes:
 </para>
 
 <screen>
   BenytBoks3.java:7: No constructor matching Boks3() found in class Boks3.
                   enBoks = new Boks3();
 </screen>
-</sect2>    <!--   Standardkonstruktører -->
+</sect2>    <!--   StandardkonstruktÃ¸rer -->
 
 <sect2 id="java-klasser-konst-opg">
   <title>Opgaver</title>
@@ -645,9 +645,9 @@ denne type konstruktør ikke fandtes:
 <para>
 
 Defin&eacute;r klassen Pyramide. Objekterne skal have
-  variablerne <emphasis>side</emphasis> og <emphasis>højde</emphasis> (defin&eacute;r en
-  konstruktør) og en metode til at udregne volumen
-  (side*side*højde/4). Skriv en BenytPyramider, som
+  variablerne <emphasis>side</emphasis> og <emphasis>hÃ¸jde</emphasis> (defin&eacute;r en
+  konstruktÃ¸r) og en metode til at udregne volumen
+  (side*side*hÃ¸jde/4). Skriv en BenytPyramider, som
   opretter 3 pyramider og udregner volumen.
 </para>
 
@@ -656,26 +656,26 @@ Defin&eacute;r klassen Pyramide. Objekterne skal have
   <listitem>
 
 <para>
-Ret Boks3 til også at have variablen massefylde, og
-  defin&eacute;r en ekstra konstruktør der også tager
-  massefylden (den oprindelige konstruktør med lgd, b og h kan
-  sætte massefylden til 1). Lav også metoder til at
-  sætte massefylden, sætMassefylde(double m), og udregne
-  vægten, vægt(). Test din klasse med en ændret
+Ret Boks3 til ogsÃ¥ at have variablen massefylde, og
+  defin&eacute;r en ekstra konstruktÃ¸r der ogsÃ¥ tager
+  massefylden (den oprindelige konstruktÃ¸r med lgd, b og h kan
+  sÃ¦tte massefylden til 1). Lav ogsÃ¥ metoder til at
+  sÃ¦tte massefylden, sÃ¦tMassefylde(double m), og udregne
+  vÃ¦gten, vÃ¦gt(). Test din klasse med en Ã¦ndret
   udgave af BenytBoks3.
 </para>
 
 </listitem>
 </orderedlist>
 </sect2>    <!--   Opgaver -->
-</sect1>    <!--   Konstruktører -->
+</sect1>    <!--   KonstruktÃ¸rer -->
 
 <sect1 id="java-klasser-dice">
   <title>En Terning-klasse</title>
 
 <para>
 Lad os tage et andet eksempel, en terning. Den vigtigste egenskab
-ved en terning er dens værdi (dvs. antallet af øjne på
+ved en terning er dens vÃ¦rdi (dvs. antallet af Ã¸jne pÃ¥
 siden, der vender opad lige nu) mellem 1 og 6.
 </para>
 
@@ -690,26 +690,26 @@ siden, der vender opad lige nu) mellem 1 og 6.
 public class Terning
 {
   <emphasis>// den side der vender opad lige nu</emphasis>
-<emphasis>  int værdi;</emphasis>
+<emphasis>  int vÃ¦rdi;</emphasis>
 
-  <emphasis>// konstruktør</emphasis>
+  <emphasis>// konstruktÃ¸r</emphasis>
 <emphasis>  public Terning()</emphasis>
   {
-    kast(); <emphasis>// kald kast() der sætter værdi til noget fornuftigt</emphasis>
+    kast(); <emphasis>// kald kast() der sÃ¦tter vÃ¦rdi til noget fornuftigt</emphasis>
   }
 
   <emphasis>// metode til at kaste terningen</emphasis>
 <emphasis>  public void kast()</emphasis>
   {
-    <emphasis>// find en tilfældig side</emphasis>
-    double tilfældigtTal = Math.random();
-    værdi = (int) (tilfældigtTal * 6 + 1);
+    <emphasis>// find en tilfÃ¦ldig side</emphasis>
+    double tilfÃ¦ldigtTal = Math.random();
+    vÃ¦rdi = (int) (tilfÃ¦ldigtTal * 6 + 1);
   }
 
   <emphasis>// giver en beskrivelse af terningen som en streng</emphasis>
 <emphasis>  public String toString()</emphasis>
   {
-    String svar = &quot;&quot;+værdi;  <emphasis>// værdi som streng, f.eks. &quot;4&quot;</emphasis>
+    String svar = &quot;&quot;+vÃ¦rdi;  <emphasis>// vÃ¦rdi som streng, f.eks. &quot;4&quot;</emphasis>
     return svar;
   }
 }
@@ -717,8 +717,8 @@ public class Terning
 
 
 <para>
-Her er et program, der bruger et Terning-objekt til at slå
-med, indtil vi får en 6'er:
+Her er et program, der bruger et Terning-objekt til at slÃ¥
+med, indtil vi fÃ¥r en 6'er:
 </para>
 
 <screen>
@@ -729,7 +729,7 @@ public class BenytTerning
     Terning t;
     t = new Terning();  <emphasis>// opret terning</emphasis>
 
-<emphasis>    // Slå nu med terningen indtil vi får en sekser</emphasis>
+<emphasis>    // SlÃ¥ nu med terningen indtil vi fÃ¥r en sekser</emphasis>
     boolean sekser = false;
     int antalKast = 0;
 
@@ -737,8 +737,8 @@ public class BenytTerning
     {
       t.kast();
       antalKast = antalKast + 1;
-      System.out.println(&quot;kast &quot;+antalKast+&quot;: &quot;+t.værdi);
-      if (t.værdi == 6) sekser = true;
+      System.out.println(&quot;kast &quot;+antalKast+&quot;: &quot;+t.vÃ¦rdi);
+      if (t.vÃ¦rdi == 6) sekser = true;
     }
 
     System.out.println(&quot;Vi slog en 6'er efter &quot;+antalKast+&quot; slag.&quot;);
@@ -762,7 +762,7 @@ Vi slog en 6'er efter 3 slag.
 <para>
 
 Skriv et program, der rafler med to terning-objekter, indtil
-  der slås en 6'er.
+  der slÃ¥s en 6'er.
 </para>
 
 </listitem>
@@ -771,7 +771,7 @@ Skriv et program, der rafler med to terning-objekter, indtil
 
 <para>
 Skriv et program, der rafler med fire terninger, indtil der
-  slås tre eller fire 6'ere. Udskriv antal øjne for
+  slÃ¥s tre eller fire 6'ere. Udskriv antal Ã¸jne for
   hver terning.
 </para>
 
@@ -781,8 +781,8 @@ Skriv et program, der rafler med fire terninger, indtil der
 
 <para>
 Skriv et program, der rafler med 12 terninger, og hver gang
-  udskriver øjnene, summen af øjnene og hvor mange 6'ere
-  der kom. Brug Vector-klassen til at holde styr på
+  udskriver Ã¸jnene, summen af Ã¸jnene og hvor mange 6'ere
+  der kom. Brug Vector-klassen til at holde styr pÃ¥
   terningerne.
 </para>
 
@@ -791,10 +791,10 @@ Skriv et program, der rafler med 12 terninger, og hver gang
   <listitem>
 
 <para>
-Lav en Moent-klasse der repræsenterer en mønt
+Lav en Moent-klasse der reprÃ¦senterer en mÃ¸nt
   med 2 sider (du kan tage udgangspunkt i Terning.java). Lav
   metoden krone(), der returnerer true eller false. Lav et program,
-  der kaster en mønt 100 gange og tæller antal gange, det
+  der kaster en mÃ¸nt 100 gange og tÃ¦ller antal gange, det
   fik krone.
 </para>
 
@@ -808,44 +808,44 @@ Lav en Moent-klasse der repræsenterer en mønt
 
 <para>
 Indtil nu har alle vore objekter haft simple typer som variabler.
-Nu vil vi se på objekter der har andre objekter som variabler
+Nu vil vi se pÃ¥ objekter der har andre objekter som variabler
 (dvs. de har referencer til andre objekter).
 </para>
 
 <sect2 id="java-klasser-rela-rafle">
-  <title>En Raflebæger-klasse</title>
+  <title>En RaflebÃ¦ger-klasse</title>
 
 <para>
-Når man laver et større program, bliver det ofte
-nødvendigt at uddelegere nogle af opgaverne fra
-hovedprogrammet til andre dele af programmet. I vores tilfælde
+NÃ¥r man laver et stÃ¸rre program, bliver det ofte
+nÃ¸dvendigt at uddelegere nogle af opgaverne fra
+hovedprogrammet til andre dele af programmet. I vores tilfÃ¦lde
 kunne vi godt lave et lille terningspil direkte fra main(), men hvis
 vi skulle lave f.eks. et yatzy- eller matadorspil, ville det
-blive besværligt at skulle holde rede på hver enkelt
-terning (og alle de andre objekter) på den måde. Hver
-gang en spiller kaster med terningerne, skal man først kaste
+blive besvÃ¦rligt at skulle holde rede pÃ¥ hver enkelt
+terning (og alle de andre objekter) pÃ¥ den mÃ¥de. Hver
+gang en spiller kaster med terningerne, skal man fÃ¸rst kaste
 hver enkelt terning, hvorefter man skal udregne summen (eller i Yatzy
-undersøge antallet af par, tre ens osv.).
+undersÃ¸ge antallet af par, tre ens osv.).
 </para>
 
 <para>
-En løsning er at skabe andre, mere overordnede objekter,
+En lÃ¸sning er at skabe andre, mere overordnede objekter,
 som tager sig af detaljerne.
 </para>
 
 <para>
-I vores tilfælde kan man definere en Raflebæger-klasse,
+I vores tilfÃ¦lde kan man definere en RaflebÃ¦ger-klasse,
 der 'har' terningerne, og som er bekvem at bruge fra hovedprogrammet.
 Med 'har' menes, at referencerne til Terning-objekterne kendes
-af raflebægeret, men ikke nødvendigvis af
+af raflebÃ¦geret, men ikke nÃ¸dvendigvis af
 hovedprogrammet.
 </para>
 
 <para>
-Raflebægeret har metoderne ryst(), der kaster alle
-terningerne, sum(), der udregner summen af terningernes værdier
-og antalDerViser(), der fortæller hvor mange terninger, der har
-en given værdi (f.eks. hvor mange terninger der viser 6 øjne).
+RaflebÃ¦geret har metoderne ryst(), der kaster alle
+terningerne, sum(), der udregner summen af terningernes vÃ¦rdier
+og antalDerViser(), der fortÃ¦ller hvor mange terninger, der har
+en given vÃ¦rdi (f.eks. hvor mange terninger der viser 6 Ã¸jne).
 </para>
 
 <screen>
@@ -862,11 +862,11 @@ public class Raflebaeger
     {
       Terning t;
       t = new Terning();
-      tilføj(t);
+      tilfÃ¸j(t);
     }
   }
 
-  public void tilføj(Terning t)<emphasis>       </emphasis><emphasis>// Læg en terning i bægeret</emphasis>
+  public void tilfÃ¸j(Terning t)<emphasis>       </emphasis><emphasis>// LÃ¦g en terning i bÃ¦geret</emphasis>
   {
     terninger.addElement(t);
   }
@@ -881,7 +881,7 @@ public class Raflebaeger
     }
   }
 
-<emphasis>  public int sum()                   </emphasis><emphasis> // Summen af alle terningers værdier</emphasis>
+<emphasis>  public int sum()                   </emphasis><emphasis> // Summen af alle terningers vÃ¦rdier</emphasis>
   {
     int resultat;
     resultat=0;
@@ -889,12 +889,12 @@ public class Raflebaeger
     {
       Terning t;
       t = (Terning) terninger.elementAt(i);
-      resultat = resultat + t.værdi;
+      resultat = resultat + t.vÃ¦rdi;
     }
     return resultat;
   }
   
-<emphasis>  public int antalDerViser(int værdi)</emphasis><emphasis> // Antal terninger med en bestemt værdi</emphasis>
+<emphasis>  public int antalDerViser(int vÃ¦rdi)</emphasis><emphasis> // Antal terninger med en bestemt vÃ¦rdi</emphasis>
   {
     int resultat;
     resultat = 0;
@@ -902,7 +902,7 @@ public class Raflebaeger
     {
       Terning t;
       t = (Terning) terninger.elementAt(i);
-      if (t.værdi==værdi) 
+      if (t.vÃ¦rdi==vÃ¦rdi) 
       {
         resultat = resultat + 1;
       }
@@ -910,8 +910,8 @@ public class Raflebaeger
     return resultat;
   }
 
-  public String toString ()<emphasis>           </emphasis><emphasis>// Beskriv bægerets indhold</emphasis>
-  {<emphasis>// (vektorens toString() kalder toString() på hver terning)</emphasis>
+  public String toString ()<emphasis>           </emphasis><emphasis>// Beskriv bÃ¦gerets indhold</emphasis>
+  {<emphasis>// (vektorens toString() kalder toString() pÃ¥ hver terning)</emphasis>
     return terninger.toString();
   }
 }
@@ -920,7 +920,7 @@ public class Raflebaeger
 
 <para>
 Herunder er et lille program der spiller med tre terninger indtil
-man får netop to seksere:
+man fÃ¥r netop to seksere:
 </para>
 
 <screen>
@@ -928,39 +928,39 @@ public class ToSeksere
 {
   public static void main(String[] args)
   {  
-    Raflebaeger bæger;
+    Raflebaeger bÃ¦ger;
     boolean toSeksere;
-    int antalForsøg;
+    int antalForsÃ¸g;
 
-    <emphasis>bæger = new Raflebaeger(3)</emphasis>;<emphasis>   // opret et bæger med 3 terninger</emphasis>
+    <emphasis>bÃ¦ger = new Raflebaeger(3)</emphasis>;<emphasis>   // opret et bÃ¦ger med 3 terninger</emphasis>
     <emphasis>toseksere=false</emphasis>;
-    antalForsøg = 0;
+    antalForsÃ¸g = 0;
     <emphasis>while (toseksere==false)</emphasis>
     {
-      <emphasis>bæger.ryst()</emphasis>;              <emphasis>// kast alle terningerne</emphasis>
-      System.out.print(&quot;Bæger: &quot; + bæger + &quot; sum: &quot; + <emphasis>bæger.sum()</emphasis>);
-      System.out.println(&quot; Antal 6'ere: &quot;+bæger.antalDerViser(6)
-                       + &quot; antal 5'ere: &quot;+bæger.antalDerViser(5));
-<emphasis>      if (bæger.antalDerViser(6) == 2)</emphasis>
+      <emphasis>bÃ¦ger.ryst()</emphasis>;              <emphasis>// kast alle terningerne</emphasis>
+      System.out.print(&quot;BÃ¦ger: &quot; + bÃ¦ger + &quot; sum: &quot; + <emphasis>bÃ¦ger.sum()</emphasis>);
+      System.out.println(&quot; Antal 6'ere: &quot;+bÃ¦ger.antalDerViser(6)
+                       + &quot; antal 5'ere: &quot;+bÃ¦ger.antalDerViser(5));
+<emphasis>      if (bÃ¦ger.antalDerViser(6) == 2)</emphasis>
 <emphasis>      {</emphasis>
 <emphasis>        toSeksere = true;</emphasis>
 <emphasis>      }</emphasis>
-      antalForsøg++;
+      antalForsÃ¸g++;
     }
-    System.out.println(&quot;Du fik to seksere efter &quot;+ antalForsøg+&quot; forsøg.&quot;);
+    System.out.println(&quot;Du fik to seksere efter &quot;+ antalForsÃ¸g+&quot; forsÃ¸g.&quot;);
   }
 }
 </screen>
 
 
 <screen>
-Bæger: [4, 4, 4] sum: 12 Antal 6'ere: 0 antal 5'ere: 0
-Bæger: [5, 5, 6] sum: 16 Antal 6'ere: 1 antal 5'ere: 2
-Bæger: [2, 5, 6] sum: 13 Antal 6'ere: 1 antal 5'ere: 1
-Bæger: [4, 2, 4] sum: 10 Antal 6'ere: 0 antal 5'ere: 0
-Bæger: [6, 4, 1] sum: 11 Antal 6'ere: 1 antal 5'ere: 0
-Bæger: [6, 6, 4] sum: 16 Antal 6'ere: 2 antal 5'ere: 0
-Du fik to seksere efter 6 forsøg.
+BÃ¦ger: [4, 4, 4] sum: 12 Antal 6'ere: 0 antal 5'ere: 0
+BÃ¦ger: [5, 5, 6] sum: 16 Antal 6'ere: 1 antal 5'ere: 2
+BÃ¦ger: [2, 5, 6] sum: 13 Antal 6'ere: 1 antal 5'ere: 1
+BÃ¦ger: [4, 2, 4] sum: 10 Antal 6'ere: 0 antal 5'ere: 0
+BÃ¦ger: [6, 4, 1] sum: 11 Antal 6'ere: 1 antal 5'ere: 0
+BÃ¦ger: [6, 6, 4] sum: 16 Antal 6'ere: 2 antal 5'ere: 0
+Du fik to seksere efter 6 forsÃ¸g.
 </screen>
 
 
@@ -969,15 +969,15 @@ Linjen:
 </para>
 
 <screen>
-    bæger = new Raflebaeger(3);
+    bÃ¦ger = new Raflebaeger(3);
 </screen>
 
 
 <para>
 
-opretter et raflebæger med tre terninger i.
+opretter et raflebÃ¦ger med tre terninger i.
 </para>
-</sect2>    <!--   En Raflebæger-klasse -->
+</sect2>    <!--   En RaflebÃ¦ger-klasse -->
 
 <sect2 id="java-klasser-rela-opg">
   <title>Opgaver</title>
@@ -987,8 +987,8 @@ opretter et raflebæger med tre terninger i.
 <para>
 
 Skriv et program, der vha. et Raflebaeger rafler med fire
-  terninger, indtil der slås tre eller fire 6'ere. Udskriv antal
-  øjne for hver terning.
+  terninger, indtil der slÃ¥s tre eller fire 6'ere. Udskriv antal
+  Ã¸jne for hver terning.
 </para>
 
 </listitem>
@@ -997,8 +997,8 @@ Skriv et program, der vha. et Raflebaeger rafler med fire
 
 <para>
 Skriv et program, der vha. et Raflebaeger rafler med 12
-  terninger og udskriver terningernes værdier, summen af
-  værdierne og hvor mange 6'ere der kom.
+  terninger og udskriver terningernes vÃ¦rdier, summen af
+  vÃ¦rdierne og hvor mange 6'ere der kom.
 </para>
 
 </listitem>
@@ -1015,8 +1015,8 @@ Skriv et simpelt Yatzy-spil med fem terninger. Man kaster &eacute;n
 </orderedlist>
 
 <para>
-Udvid Raflebaeger så man kan
-spørge, om der er fire ens, ved at kalde en fireEns()-metode:
+Udvid Raflebaeger sÃ¥ man kan
+spÃ¸rge, om der er fire ens, ved at kalde en fireEns()-metode:
 </para>
 
 <screen>
@@ -1033,14 +1033,14 @@ Lav tilsvarende de andre metoder.
 </para>
 
 <para>
-Ret toString()-metoden, så den
-fortæller, om der var fem ens, hus eller lignende.
+Ret toString()-metoden, sÃ¥ den
+fortÃ¦ller, om der var fem ens, hus eller lignende.
 </para>
 
 <para>
 Lav et program (en klasse med en
 main()-metode), der rafler et Raflebaeger et par gange og skriver
-dets indhold ud. Her er et eksempel på, hvordan uddata kunne se
+dets indhold ud. Her er et eksempel pÃ¥, hvordan uddata kunne se
 ud:
 </para>
 
@@ -1058,11 +1058,11 @@ ud:
 </sect1>    <!--   Relationer mellem objekter -->
 
 <sect1 id="java-klasser-this">
-  <title>Nøgleordet this</title>
+  <title>NÃ¸gleordet this</title>
 
 <para>
 Nogle gange kan et objekt have brug for at referere til sig selv.
-Det gøres med <emphasis>this</emphasis>-nøgleordet, der ligner
+Det gÃ¸res med <emphasis>this</emphasis>-nÃ¸gleordet, der ligner
 (og bruges som) en variabel.
 </para>
 
@@ -1070,42 +1070,42 @@ Det gøres med <emphasis>this</emphasis>-nøgleordet, der ligner
 i</para></blockquote>
 
 <para>
-Læs igen definitionen af Boks2. I dens sætMål-metode
+LÃ¦s igen definitionen af Boks2. I dens sÃ¦tMÃ¥l-metode
 brugte vi andre variabelnavne for parametrene (nemlig lgd, b og h)
-end objektvariablerne (længde, bredde og højde). Vi kan
-altid få fat i objektets variabler med this, så vi kunne
-også have brugt de samme variabelnavne:
+end objektvariablerne (lÃ¦ngde, bredde og hÃ¸jde). Vi kan
+altid fÃ¥ fat i objektets variabler med this, sÃ¥ vi kunne
+ogsÃ¥ have brugt de samme variabelnavne:
 </para>
 
 <screen>
 import java.util.*;
 public class Boks2medThis
 {
-  private double længde;
+  private double lÃ¦ngde;
   private double bredde;
-  private double højde;
+  private double hÃ¸jde;
 
-  public void sætMål(double længde, double bredde, double højde)
+  public void sÃ¦tMÃ¥l(double lÃ¦ngde, double bredde, double hÃ¸jde)
   {
-    if (længde&lt;=0 || bredde&lt;=0 || højde&lt;=0) 
+    if (lÃ¦ngde&lt;=0 || bredde&lt;=0 || hÃ¸jde&lt;=0) 
     {
-       System.out.println(&quot;Ugyldige mål. Bruger standardmål.&quot;);
-      <emphasis>this</emphasis>.længde = 10.0;
+       System.out.println(&quot;Ugyldige mÃ¥l. Bruger standardmÃ¥l.&quot;);
+      <emphasis>this</emphasis>.lÃ¦ngde = 10.0;
       <emphasis>this</emphasis>.bredde = 10.0;
-      <emphasis>this</emphasis>.højde  = 10.0;
+      <emphasis>this</emphasis>.hÃ¸jde  = 10.0;
     } else {
-      <emphasis>this</emphasis>.længde = længde;
+      <emphasis>this</emphasis>.lÃ¦ngde = lÃ¦ngde;
       <emphasis>this</emphasis>.bredde = bredde;
-      <emphasis>this</emphasis>.højde  = højde;
+      <emphasis>this</emphasis>.hÃ¸jde  = hÃ¸jde;
     }
   }
 
   public double volumen()
   {
-    return bredde*højde*længde; 
+    return bredde*hÃ¸jde*lÃ¦ngde; 
   }
 
-  public void føjTilVektor(Vector v)
+  public void fÃ¸jTilVektor(Vector v)
   {
     v.addElement(<emphasis>this</emphasis>);
   }
@@ -1121,11 +1121,11 @@ public class Boks2medThis
 </figure>
 
 <para>
-I sætMål() er der nu to sæt variabler med samme
-navn. Da vælger Java altid den variabel, der er &quot;tættest
-på&quot;, dvs. f.eks. 'længde' svarer til
-parametervariablen længde. For at få fat i
-objektvariablen skal vi bruge this.længde.
+I sÃ¦tMÃ¥l() er der nu to sÃ¦t variabler med samme
+navn. Da vÃ¦lger Java altid den variabel, der er &quot;tÃ¦ttest
+pÃ¥&quot;, dvs. f.eks. 'lÃ¦ngde' svarer til
+parametervariablen lÃ¦ngde. For at fÃ¥ fat i
+objektvariablen skal vi bruge this.lÃ¦ngde.
 </para>
 
 <para>
@@ -1133,19 +1133,19 @@ Derfor skal vi skrive
 </para>
 
 <screen>
-      this.længde = længde;
+      this.lÃ¦ngde = lÃ¦ngde;
 </screen>
 
 
 <para>
 
-for at tildele objektets længde-variabel den nye værdi.
+for at tildele objektets lÃ¦ngde-variabel den nye vÃ¦rdi.
 </para>
 
 <para>
 En anden anvendelse af this er,
-når et objekt har brug for at give en reference til sig selv
-til et andet objekt. Normalt ville vi tilføje en boks til en
+nÃ¥r et objekt har brug for at give en reference til sig selv
+til et andet objekt. Normalt ville vi tilfÃ¸je en boks til en
 vektor med:
 </para>
 
@@ -1157,21 +1157,21 @@ vektor med:
 
 
 <para>
-Med metoden føjTilVektor() kan vi i stedet for bede b om at
-tilføje sig selv:
+Med metoden fÃ¸jTilVektor() kan vi i stedet for bede b om at
+tilfÃ¸je sig selv:
 </para>
 
 <screen>
-  b.føjTilVektor(v);
+  b.fÃ¸jTilVektor(v);
 </screen>
 
 
 <para>
 Vi vil senere (i Spiller-klassen i matadorspillet i kapitlet om
-nedarvning) se et eksempel på dette, hvor det er en fordel i
+nedarvning) se et eksempel pÃ¥ dette, hvor det er en fordel i
 praksis.
 </para>
-</sect1>    <!--   Nøgleordet this -->
+</sect1>    <!--   NÃ¸gleordet this -->
 
 <sect1 id="java-klasser-eks">
   <title>Ekstra eksempler</title>
@@ -1185,16 +1185,16 @@ kapitlet.
   <title>En n-sidet terning</title>
 
 <para>
-Det normale er en 6-sidet terning, men der findes også 4-,
+Det normale er en 6-sidet terning, men der findes ogsÃ¥ 4-,
 8- 12- og 20-sidede. Klassen nedenfor beskriver en generel n-sidet
 terning.
 </para>
 
 <para>
-Vi har ladet antallet af sider og værdien  være
-private, og lavet metoden hentVærdi(), som kan bruges udefra.
-Der er også en sætVærdi()-metode, mens antallet af
-sider ikke kan ændres udefra, når først terningen
+Vi har ladet antallet af sider og vÃ¦rdien  vÃ¦re
+private, og lavet metoden hentVÃ¦rdi(), som kan bruges udefra.
+Der er ogsÃ¥ en sÃ¦tVÃ¦rdi()-metode, mens antallet af
+sider ikke kan Ã¦ndres udefra, nÃ¥r fÃ¸rst terningen
 er skabt.
 </para>
 
@@ -1212,13 +1212,13 @@ public class NSidetTerning
 <emphasis>  private int sider;</emphasis>
 
 <emphasis>  // den side der vender opad lige nu</emphasis>
-<emphasis>  private int værdi;</emphasis>
+<emphasis>  private int vÃ¦rdi;</emphasis>
 
-<emphasis>  // konstruktør opretter normal terning med 6 sider</emphasis>
+<emphasis>  // konstruktÃ¸r opretter normal terning med 6 sider</emphasis>
 <emphasis>  public NSidetTerning ()</emphasis>
   {
     sider = 6;
-    kast(); // sæt værdi til noget
+    kast(); // sÃ¦t vÃ¦rdi til noget
   }
 
 <emphasis>  // opretter terning med et vist antal sider</emphasis>
@@ -1232,29 +1232,29 @@ public class NSidetTerning
 <emphasis>  // metode der kaster terningen</emphasis>
 <emphasis>  public void kast ()</emphasis>
   {
-<emphasis>    // find en tilfældig side</emphasis>
-    double tilfældigtTal = Math.random();
-    værdi = (int) (tilfældigtTal * sider + 1);
+<emphasis>    // find en tilfÃ¦ldig side</emphasis>
+    double tilfÃ¦ldigtTal = Math.random();
+    vÃ¦rdi = (int) (tilfÃ¦ldigtTal * sider + 1);
   }
 
-<emphasis>  // giver antallet af øjne på siden der vender opad</emphasis>
-<emphasis>  public int hentVærdi ()</emphasis>
+<emphasis>  // giver antallet af Ã¸jne pÃ¥ siden der vender opad</emphasis>
+<emphasis>  public int hentVÃ¦rdi ()</emphasis>
   {
-    return værdi;
+    return vÃ¦rdi;
   }
 
-<emphasis>  // sætter antallet af øjne der vender opad</emphasis>
-<emphasis>  public void sætVærdi (int nyVærdi)</emphasis>
+<emphasis>  // sÃ¦tter antallet af Ã¸jne der vender opad</emphasis>
+<emphasis>  public void sÃ¦tVÃ¦rdi (int nyVÃ¦rdi)</emphasis>
   {
-    if (nyVærdi &gt; 0 &amp;&amp; nyVærdi &lt;= sider) værdi = nyVærdi;
-    else System.out.println(&quot;Ugyldig værdi&quot;);
+    if (nyVÃ¦rdi &gt; 0 &amp;&amp; nyVÃ¦rdi &lt;= sider) vÃ¦rdi = nyVÃ¦rdi;
+    else System.out.println(&quot;Ugyldig vÃ¦rdi&quot;);
   }
 
-<emphasis>  // giver en strengrepræsentation af terningen</emphasis>
-  // hvis den ikke har 6 sider udskrives også antal af sider
+<emphasis>  // giver en strengreprÃ¦sentation af terningen</emphasis>
+  // hvis den ikke har 6 sider udskrives ogsÃ¥ antal af sider
 <emphasis>  public String toString ()</emphasis>
   {
-    String svar = &quot;&quot;+værdi;  <emphasis>// værdi som streng, f.eks. &quot;4&quot;</emphasis>
+    String svar = &quot;&quot;+vÃ¦rdi;  <emphasis>// vÃ¦rdi som streng, f.eks. &quot;4&quot;</emphasis>
     if (sider!= 6) svar= svar+&quot;(&quot;+sider+&quot;s)&quot;;
     return svar;
   }
@@ -1263,7 +1263,7 @@ public class NSidetTerning
 
 
 <para>
-Her er et program til at afprøve klassen med:
+Her er et program til at afprÃ¸ve klassen med:
 </para>
 
 <screen>
@@ -1273,7 +1273,7 @@ public class BenytNSidetTerning
   {
     NSidetTerning t = new NSidetTerning(); <emphasis>// sekssidet terning</emphasis>
 
-    System.out.println(&quot;t viser nu &quot;+t.hentVærdi()+&quot; øjne&quot;);
+    System.out.println(&quot;t viser nu &quot;+t.hentVÃ¦rdi()+&quot; Ã¸jne&quot;);
 
     NSidetTerning t6 = new NSidetTerning(6); <emphasis>// sekssidet terning</emphasis>
     NSidetTerning t4 = new NSidetTerning(4); <emphasis>// firesidet terning</emphasis>
@@ -1296,7 +1296,7 @@ public class BenytNSidetTerning
       t4.kast();
       t12.kast();
       System.out.println(&quot;kast &quot;+i+&quot;: &quot;+t+&quot; &quot;+t6+&quot; &quot;+t4+&quot; &quot;+t12);
-      if (t.hentVærdi() == t6.hentVærdi())
+      if (t.hentVÃ¦rdi() == t6.hentVÃ¦rdi())
       {
         System.out.println(&quot;t og t6 er ens!&quot;);
       }
@@ -1307,7 +1307,7 @@ public class BenytNSidetTerning
 
 
 <screen>
-t viser nu 6 øjne
+t viser nu 6 Ã¸jne
 t4 er 4(4s)
 t4 er nu 1(4s)
 terninger: 6 1 4(4s) 5(12s)
@@ -1325,31 +1325,31 @@ kast 4: 3 2 2(4s) 6(12s)
   <title>Personer</title>
 
 <para>
-Lad os lave en klasse til at repræsentere en person. Hvert
+Lad os lave en klasse til at reprÃ¦sentere en person. Hvert
 person-objekt skal have et fornavn, et efternavn og en alder.
-Når man opretter en ny Person, skal man angive disse data,
-f.eks.: new Person(&quot;Jacob&quot;,&quot;Nordfalk&quot;,30), så
-vi definerer en konstruktør med disse parametre.
+NÃ¥r man opretter en ny Person, skal man angive disse data,
+f.eks.: new Person(&quot;Jacob&quot;,&quot;Nordfalk&quot;,30), sÃ¥
+vi definerer en konstruktÃ¸r med disse parametre.
 </para>
 
 <para>
-Vi definerer også, at hver person har metoden toString(),
+Vi definerer ogsÃ¥, at hver person har metoden toString(),
 der returnerer en streng med personens oplysninger af formen &quot;Jacob
-Nordfalk (30 år)&quot;.
+Nordfalk (30 Ã¥r)&quot;.
 </para>
 
 <para>
-Desuden har vi metoden præsentation(), der skriver
-oplysningerne pænt ud til skærmen som &quot;Jeg
-hedder Jacob og jeg er 30 år&quot;. Denne metode returnerer
-ikke noget, men skriver i stedet hilsenen ud til skærmen
-(personer under 5 år siger bare &quot;agyyy!&quot;)
+Desuden har vi metoden prÃ¦sentation(), der skriver
+oplysningerne pÃ¦nt ud til skÃ¦rmen som &quot;Jeg
+hedder Jacob og jeg er 30 Ã¥r&quot;. Denne metode returnerer
+ikke noget, men skriver i stedet hilsenen ud til skÃ¦rmen
+(personer under 5 Ã¥r siger bare &quot;agyyy!&quot;)
 </para>
 
 <para>
-Til sidst kunne man forestille sig, at en person kan hilse på
-en anden person (metoden hils()). Det afhænger af alderen
-hvordan man hilser. En person på over 60 år vil hilse på
+Til sidst kunne man forestille sig, at en person kan hilse pÃ¥
+en anden person (metoden hils()). Det afhÃ¦nger af alderen
+hvordan man hilser. En person pÃ¥ over 60 Ã¥r vil hilse pÃ¥
 Jacob med &quot;Goddag hr Nordfalk&quot;, mens en yngre bare vil sige
 &quot;Hej Jacob&quot;.
 </para>
@@ -1373,13 +1373,13 @@ public class Person
 
 <emphasis>  public String toString()</emphasis>
   {
-    return fornavn+&quot; &quot;+efternavn+&quot; (&quot;+alder+&quot; år)&quot;;
+    return fornavn+&quot; &quot;+efternavn+&quot; (&quot;+alder+&quot; Ã¥r)&quot;;
   }
 
-<emphasis>  public void præsentation()</emphasis>
+<emphasis>  public void prÃ¦sentation()</emphasis>
   {
     if (alder &lt; 5) System.out.println(&quot;agyyy!&quot;);
-    else System.out.println(&quot;Jeg hedder &quot;+fornavn+&quot;, og jeg er &quot;+alder+&quot; år.&quot;);
+    else System.out.println(&quot;Jeg hedder &quot;+fornavn+&quot;, og jeg er &quot;+alder+&quot; Ã¥r.&quot;);
   }
 
 <emphasis>  public void hils(Person andenPerson)</emphasis>
@@ -1388,23 +1388,23 @@ public class Person
     else if (alder &lt; 60) System.out.print(&quot;Hej &quot;+<emphasis>andenPerson.fornavn</emphasis>+&quot;. &quot;);
     else  System.out.print(&quot;Goddag hr. &quot;+<emphasis>andenPerson.efternavn</emphasis>+&quot;. &quot;);
 
-    præsentation();
+    prÃ¦sentation();
   }
 }
 </screen>
 
 
 <para>
-Bemærk, at Person-objektet har to andre objekter, nemlig to
+BemÃ¦rk, at Person-objektet har to andre objekter, nemlig to
 strenge. Selvom man ikke plejer at tegne strenge med i
 klassediagrammer, har vi alligevel taget dem med for at illustrere,
-at der faktisk også eksisterer en <emphasis>har-en</emphasis>-relation mellem
+at der faktisk ogsÃ¥ eksisterer en <emphasis>har-en</emphasis>-relation mellem
 disse to klasser.
 </para>
 
 <figure id="java-klasser-strenge-fig">
 <title>En
-Person har to String-objekter. Disse er undtagelsesvist også
+Person har to String-objekter. Disse er undtagelsesvist ogsÃ¥
 vist</title>
 
 <graphic fileref="Nordfalk615391.&magic;" scale="60"></graphic>
@@ -1413,10 +1413,10 @@ vist</title>
 
 
 <para>
-Læg også mærke til, hvordan vi fra
-hils()-metoden kalder præsentation(). Lad os prøve at
-oprette tre personer og lade dem præsentere sig og derpå
-hilse på hinanden:
+LÃ¦g ogsÃ¥ mÃ¦rke til, hvordan vi fra
+hils()-metoden kalder prÃ¦sentation(). Lad os prÃ¸ve at
+oprette tre personer og lade dem prÃ¦sentere sig og derpÃ¥
+hilse pÃ¥ hinanden:
 </para>
 
 <screen>
@@ -1430,9 +1430,9 @@ public class BenytPerson
     z = new Person(&quot;Peter&quot;, &quot;Holm&quot;, 2);
 
     System.out.println(&quot;Vi har oprettet &quot;+x+&quot;, &quot;+y+&quot; og &quot;+z);
-    x.præsentation();
-    y.præsentation();
-    z.præsentation();
+    x.prÃ¦sentation();
+    y.prÃ¦sentation();
+    z.prÃ¦sentation();
     x.hils(y);
     y.hils(x);
     z.hils(x);
@@ -1442,12 +1442,12 @@ public class BenytPerson
 
 
 <screen>
-Vi har oprettet Jacob Nordfalk (30 år), Kai Lund (86 år) og Peter Holm (2 år)
-Jeg hedder Jacob, og jeg er 30 år.
-Jeg hedder Kai, og jeg er 86 år.
+Vi har oprettet Jacob Nordfalk (30 Ã¥r), Kai Lund (86 Ã¥r) og Peter Holm (2 Ã¥r)
+Jeg hedder Jacob, og jeg er 30 Ã¥r.
+Jeg hedder Kai, og jeg er 86 Ã¥r.
 agyyy!
-Hej Kai. Jeg hedder Jacob, og jeg er 30 år.
-Goddag hr. Nordfalk. Jeg hedder Kai, og jeg er 86 år.
+Hej Kai. Jeg hedder Jacob, og jeg er 30 Ã¥r.
+Goddag hr. Nordfalk. Jeg hedder Kai, og jeg er 86 Ã¥r.
 ma ma.. agyyy!
 </screen>
 
@@ -1463,7 +1463,7 @@ I linjen
 
 <para>
 
-er det x-variablens person (Jacob), der hilser på y-variablens
+er det x-variablens person (Jacob), der hilser pÃ¥ y-variablens
 person. Da x-variablens person er under 60, vil den uformelle hilsen
 &quot;Hej Kai&quot; blive brugt. I linjen under er det lige omvendt.
 </para>
@@ -1473,15 +1473,15 @@ person. Da x-variablens person er under 60, vil den uformelle hilsen
   <title>Bankkonti</title>
 
 <para>
-Lad os se nærmere på relationer mellem objekter i
+Lad os se nÃ¦rmere pÃ¥ relationer mellem objekter i
 bankverdenen. De vigtigste egenskaber ved en bankkonto er saldoen, og
-hvem der ejer den. Et Konto-objekt kunne altså have et
+hvem der ejer den. Et Konto-objekt kunne altsÃ¥ have et
 Person-objekt tilknyttet, en <emphasis>har-en</emphasis>-relation, og denne
-person bør være kendt, når kontoen oprettes.
-Det er derfor oplagt, at ejeren skal angives i Konto's konstruktør.
-Kontoen skal også sørge for at indsætte sig selv
-(her bruges nøgleordet this) i personens liste over konti,
-sådan at der er konsistens mellem data i Konto-objektet og data
+person bÃ¸r vÃ¦re kendt, nÃ¥r kontoen oprettes.
+Det er derfor oplagt, at ejeren skal angives i Konto's konstruktÃ¸r.
+Kontoen skal ogsÃ¥ sÃ¸rge for at indsÃ¦tte sig selv
+(her bruges nÃ¸gleordet this) i personens liste over konti,
+sÃ¥dan at der er konsistens mellem data i Konto-objektet og data
 i Person-objektet.
 </para>
 
@@ -1494,11 +1494,11 @@ public class Konto
 <emphasis>  public Konto(Person ejeren)</emphasis>
   {
     saldo = 0;
-<emphasis>    ejer = ejeren;              </emphasis> <emphasis>// Sæt kontoen til at referere til personen</emphasis>
+<emphasis>    ejer = ejeren;              </emphasis> <emphasis>// SÃ¦t kontoen til at referere til personen</emphasis>
 <emphasis>    ejer.konti.addElement(this);</emphasis> <emphasis>// ..og personen til at referere til kontoen</emphasis>
   }
 
-  public void overførsel(int kroner)
+  public void overfÃ¸rsel(int kroner)
   {
     saldo = saldo + kroner;
   }
@@ -1523,9 +1523,9 @@ Konto har altid en Person tilknyttet</emphasis>
 </para>
 
 <para>
-Dette er et eksempel på en <emphasis>har-en</emphasis>-relation begge
-veje. Læg mærke til, hvordan vi fra Konto-objektet får
-fat i listen af ejerens konti. Den tilføjer vi så
+Dette er et eksempel pÃ¥ en <emphasis>har-en</emphasis>-relation begge
+veje. LÃ¦g mÃ¦rke til, hvordan vi fra Konto-objektet fÃ¥r
+fat i listen af ejerens konti. Den tilfÃ¸jer vi sÃ¥
 kontoen selv - <emphasis>this</emphasis> - til:
 </para>
 
@@ -1539,7 +1539,7 @@ kontoen selv - <emphasis>this</emphasis> - til:
   <title>Opgaver</title>
 
 <para>
-Husk at lave små main()-programmer, der afprøver de
+Husk at lave smÃ¥ main()-programmer, der afprÃ¸ver de
 ting, du programmerer.
 </para>
 
@@ -1549,7 +1549,7 @@ ting, du programmerer.
 <para>
 
 Udbyg Person-klassen med metoden formue(), der skal returnere
-  summen af saldiene på personens konti. Lav en BenytKonto med
+  summen af saldiene pÃ¥ personens konti. Lav en BenytKonto med
   flere personer, der har flere konti.
 </para>
 
@@ -1558,11 +1558,11 @@ Udbyg Person-klassen med metoden formue(), der skal returnere
   <listitem>
 
 <para>
-Lav en klasse, der repræsenterer en Postering på
-  en bankkonto med tekst, indsat beløb (udtræk regnes
+Lav en klasse, der reprÃ¦senterer en Postering pÃ¥
+  en bankkonto med tekst, indsat belÃ¸b (udtrÃ¦k regnes
   negativt) og dato. Udvid Konto med en liste af posteringer, og
   metoden udskrivPosteringer(), der skal udskrive posteringerne og
-  løbende saldo på skærmen.
+  lÃ¸bende saldo pÃ¥ skÃ¦rmen.
 </para>
 
 </listitem>
@@ -1570,8 +1570,8 @@ Lav en klasse, der repræsenterer en Postering på
   <listitem>
 
 <para>
-Lav en klasse, der repræsenterer en bil. En bil har en
-  farve, et antal kørte kilometer og en (vurderet) pris.
+Lav en klasse, der reprÃ¦senterer en bil. En bil har en
+  farve, et antal kÃ¸rte kilometer og en (vurderet) pris.
 </para>
 
 </listitem>
@@ -1580,12 +1580,12 @@ Lav en klasse, der repræsenterer en bil. En bil har en
 
 <para>
 Udbyg Bil-klassen med en vektor, der husker, hvilke personer
-  der sidder i bilen lige nu. Defin&eacute;r følgende metoder
-  på Bil-klassen, og afprøv klassen.public void
-  enSætterSigInd(Person p) // kaldes, når en person sætter
+  der sidder i bilen lige nu. Defin&eacute;r fÃ¸lgende metoder
+  pÃ¥ Bil-klassen, og afprÃ¸v klassen.public void
+  enSÃ¦tterSigInd(Person p) // kaldes, nÃ¥r en person sÃ¦tter
   sig ind i bilen.public String hvemSidderIBilen() // giver en
   streng, der beskriver personerne i bilen.public void
-  alleStigerUd() // kaldes, når alle stiger ud af bilen.
+  alleStigerUd() // kaldes, nÃ¥r alle stiger ud af bilen.
 </para>
 
 </listitem>
@@ -1593,9 +1593,9 @@ Udbyg Bil-klassen med en vektor, der husker, hvilke personer
   <listitem>
 
 <para>
-Udbyg Person-klassen, så en person kan eje en bil.
-  Udbyg metoden formue(), sådan at den husker at indregne bilens
-  pris. Metoden skal virke både for personer med og uden bil
+Udbyg Person-klassen, sÃ¥ en person kan eje en bil.
+  Udbyg metoden formue(), sÃ¥dan at den husker at indregne bilens
+  pris. Metoden skal virke bÃ¥de for personer med og uden bil
   (Person-objekter uden bil kan have denne variabel sat til null).
 </para>
 
@@ -1611,7 +1611,7 @@ Udbyg Person-klassen, så en person kan eje en bil.
 <para>
 
 Der er 2 fejl i koden nedenfor. Find dem, og ret dem. Kig
-  eventuelt på afsnittene om formen af en klasse og formen
+  eventuelt pÃ¥ afsnittene om formen af en klasse og formen
   af en metode ovenfor.
 </para>
 
@@ -1770,7 +1770,7 @@ public class Fejlfinding5
 
 <para>
 
-Find så mange fejl du kan i koden nedenfor og ret dem.
+Find sÃ¥ mange fejl du kan i koden nedenfor og ret dem.
 </para>
 
 </listitem>

@@ -3,27 +3,27 @@
 
     
 <sect1 id="ooo-formatering-automatisk">
-  <title>Formatér automatisk mens du skriver</title>
+  <title>FormatÃ©r automatisk mens du skriver</title>
 
 <para>Hvis du bruger afsnitstypografier konsekvent kan du formatere teksten
-    (næsten) automatisk mens du skriver den. Det kræver blot, at du udnytter
-    indstillingen <emphasis>Næste typografi</emphasis> i afsnitstypografierne.</para>
+    (nÃ¦sten) automatisk mens du skriver den. Det krÃ¦ver blot, at du udnytter
+    indstillingen <emphasis>NÃ¦ste typografi</emphasis> i afsnitstypografierne.</para>
 
-<para> <emphasis>Eksempel</emphasis> : Det er almindeligt at lave indrykning i første linje
-    af et afsnit, undtaget lige efter en overskrift. For at opnå det
-    automatisk skal du blot ændre typografien <emphasis>Brødtekst</emphasis>, så der under
-    <emphasis>Næste typografi</emphasis> står <emphasis>Første linjes indrykning</emphasis>.</para>
+<para> <emphasis>Eksempel</emphasis> : Det er almindeligt at lave indrykning i fÃ¸rste linje
+    af et afsnit, undtaget lige efter en overskrift. For at opnÃ¥ det
+    automatisk skal du blot Ã¦ndre typografien <emphasis>BrÃ¸dtekst</emphasis>, sÃ¥ der under
+    <emphasis>NÃ¦ste typografi</emphasis> stÃ¥r <emphasis>FÃ¸rste linjes indrykning</emphasis>.</para>
 
-<para>Herefter behøver du blot vælge <emphasis>Overskrift 1</emphasis> for at skrive en
-    overskrift. Det næste afsnit bliver automatisk <emphasis>Brødtekst</emphasis> (uden
-    indrykning) og de næste afsnit bliver <emphasis>Første linjes indrykning</emphasis>
-    (med indrykning). Se nedenstående skærmbillede, hvor de skjulte tegn er
+<para>Herefter behÃ¸ver du blot vÃ¦lge <emphasis>Overskrift 1</emphasis> for at skrive en
+    overskrift. Det nÃ¦ste afsnit bliver automatisk <emphasis>BrÃ¸dtekst</emphasis> (uden
+    indrykning) og de nÃ¦ste afsnit bliver <emphasis>FÃ¸rste linjes indrykning</emphasis>
+    (med indrykning). Se nedenstÃ¥ende skÃ¦rmbillede, hvor de skjulte tegn er
     vist for tydelighedens skyld:</para>
 
 <figure float="1" id="fig-ooo-stylistnaestetypografi">
-<title>Næste typografi</title>
+<title>NÃ¦ste typografi</title>
 <graphic fileref="stylistnaestetypografi.&magic;" scale="60"></graphic>
 </figure>
 
-</sect1>    <!--   8.9. Formatér automatisk mens du skriver -->
+</sect1>    <!--   8.9. FormatÃ©r automatisk mens du skriver -->
 

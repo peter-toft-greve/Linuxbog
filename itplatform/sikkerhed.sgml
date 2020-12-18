@@ -1,8 +1,8 @@
 <chapter id="sikkerhedsrutiner">
 <title>Sikkerhed</title>
 <para>
-I dette kapitel ser vi nærmere på sikkerhed på et niveau, der ikke
-kræver matematik eller større teknisk indsigt.
+I dette kapitel ser vi nÃ¦rmere pÃ¥ sikkerhed pÃ¥ et niveau, der ikke
+krÃ¦ver matematik eller stÃ¸rre teknisk indsigt.
 </para>
 
 <sect1 id="whatis-sr">
@@ -13,74 +13,74 @@ kræver matematik eller større teknisk indsigt.
 </indexterm>
 
 <para>
-Først et par helt generelle betragninger. Der er et skel mellem den
-måde Open Source-programmer og proprietære programmer udvikles. For
+FÃ¸rst et par helt generelle betragninger. Der er et skel mellem den
+mÃ¥de Open Source-programmer og proprietÃ¦re programmer udvikles. For
 programmer, der anvendes til at kommunikere mere eller mindre sikkert
-over netværk er dette vigtigt. Man kan finde en del firmaer som laver
-proprietære "sikre" løsninger til at kommunikere over usikre netværk.
-I praksis er det dog kun et fåtal af dem som faktisk kan anses for at
-være sikre når man går dem efter. Nogle løsninger vil være baseret på
+over netvÃ¦rk er dette vigtigt. Man kan finde en del firmaer som laver
+proprietÃ¦re "sikre" lÃ¸sninger til at kommunikere over usikre netvÃ¦rk.
+I praksis er det dog kun et fÃ¥tal af dem som faktisk kan anses for at
+vÃ¦re sikre nÃ¥r man gÃ¥r dem efter. Nogle lÃ¸sninger vil vÃ¦re baseret pÃ¥
 en eller flere hemmeligheder, hvor sikkerheden er ikke-eksisterende
 hvis blot man kender hemmelighederne (f.eks. et krypteringspassword) -
-typisk har bl.a. Microsofts såkaldt sikre løsninger ligget i denne
-dårlige kategori. Der er desværre kun et mindretal af firmaer som
-faktisk kan lave sikre proprietære sikre netværksløsninger baseret på
+typisk har bl.a. Microsofts sÃ¥kaldt sikre lÃ¸sninger ligget i denne
+dÃ¥rlige kategori. Der er desvÃ¦rre kun et mindretal af firmaer som
+faktisk kan lave sikre proprietÃ¦re sikre netvÃ¦rkslÃ¸sninger baseret pÃ¥
 egne lukkede protokoller og hemmelige tricks - og det er ikke altid
 oplagt hvilke firmaer som faktisk kan dette.
 </para>
 
 <para>
-Som alternativ til proprietære sikre netværksløsninger er der været en
-hel del udvikling på internettet og gennem tekniske tidsskrifter og
-konferencer for at skabe sikre netværksløsninger gennem åbne
-protokoller og nøglesystemer, hvor sikkerheden ligger i den matematik
-der ligger bag. Man han bevidst diskuteret krypteringsmetoderne åbent,
-idet de skal kunne tåle dagens lys og "peer-review", dvs. den kritiske 
-analyse af eksperter på området. Flere af de systemer som er udviklet
-på denne åbne måde f.eks. 3DES og AES anses for at være meget sikre.
+Som alternativ til proprietÃ¦re sikre netvÃ¦rkslÃ¸sninger er der vÃ¦ret en
+hel del udvikling pÃ¥ internettet og gennem tekniske tidsskrifter og
+konferencer for at skabe sikre netvÃ¦rkslÃ¸sninger gennem Ã¥bne
+protokoller og nÃ¸glesystemer, hvor sikkerheden ligger i den matematik
+der ligger bag. Man han bevidst diskuteret krypteringsmetoderne Ã¥bent,
+idet de skal kunne tÃ¥le dagens lys og "peer-review", dvs. den kritiske 
+analyse af eksperter pÃ¥ omrÃ¥det. Flere af de systemer som er udviklet
+pÃ¥ denne Ã¥bne mÃ¥de f.eks. 3DES og AES anses for at vÃ¦re meget sikre.
 </para>
 
 <para>
-Flere løsninger findes tilgængelige og integreret i systemer til
-Linux. De fleste er baseret på nøgle-par hvor hver bruger har en
-personlig del (der ikke vises til andre) og en offentlig nøgle (som
+Flere lÃ¸sninger findes tilgÃ¦ngelige og integreret i systemer til
+Linux. De fleste er baseret pÃ¥ nÃ¸gle-par hvor hver bruger har en
+personlig del (der ikke vises til andre) og en offentlig nÃ¸gle (som
 man godt kan vise til andre). Ideen er typisk at man krypterer
-datatrafikken ud fra den offentlige nøgle og man kan kun dekryptere
-datatrafikken med den personlige nøgle. Dette system benyttes bla. af
+datatrafikken ud fra den offentlige nÃ¸gle og man kan kun dekryptere
+datatrafikken med den personlige nÃ¸gle. Dette system benyttes bla. af
 PGP, GnuPG og OpenSSH/SSH. 
 </para>
 
 </sect1>
 
 <sect1 id="economi-sr">
-<title>Økonomi</title>
+<title>Ã˜konomi</title>
 <para>
-Open Source-løsninger er generelt gratis - der skal ikke betales nogen
-"royalty", hvilket er meget økonomisk attraktivt hvis man har mange
+Open Source-lÃ¸sninger er generelt gratis - der skal ikke betales nogen
+"royalty", hvilket er meget Ã¸konomisk attraktivt hvis man har mange
 maskiner.
 </para>
 
 <para> 
-Der er flere glimrende systemværktøjer til Linux til at
-overvåge netværk, f.eks. Big Brother (se <xref linkend="bb-fig"/>), der
-på en enkel måde præsenterer en webside der for hver maskine viser
+Der er flere glimrende systemvÃ¦rktÃ¸jer til Linux til at
+overvÃ¥ge netvÃ¦rk, f.eks. Big Brother (se <xref linkend="bb-fig"/>), der
+pÃ¥ en enkel mÃ¥de prÃ¦senterer en webside der for hver maskine viser
 status for CPU-aktivitet, disk-forbrug, service-aktivitet. Er en
 server-service stoppet - f.eks. en web-server - da vil Big Brother
-web-serveren vise en gul eller rød baggrund og med et tilsvarende ikon
-vise hvor problemet er. Systemet kan endda sættes op til at alarmere
+web-serveren vise en gul eller rÃ¸d baggrund og med et tilsvarende ikon
+vise hvor problemet er. Systemet kan endda sÃ¦ttes op til at alarmere
 systemadministratoren hvis der er problemer.
 </para>
 
 <figure id="bb-fig" float="1">
-<title>Big Brother overvåger maskiner på netværket</title>
+<title>Big Brother overvÃ¥ger maskiner pÃ¥ netvÃ¦rket</title>
 <graphic fileref="bb.&magic;"  scale="40"></graphic>
 </figure>  
 
 <para>
-Hvis man skal implementere sikre netværksløsninger der det ofte ikke
-gratis, idet det er stærkt tilrådeligt at få enten konsulent-bistand
-eller hyre en kvalificeret person til det administrere sikkerheden på
-netværket. Det er aldrig nemt at lave et meget sikkert system - og man
+Hvis man skal implementere sikre netvÃ¦rkslÃ¸sninger der det ofte ikke
+gratis, idet det er stÃ¦rkt tilrÃ¥deligt at fÃ¥ enten konsulent-bistand
+eller hyre en kvalificeret person til det administrere sikkerheden pÃ¥
+netvÃ¦rket. Det er aldrig nemt at lave et meget sikkert system - og man
 kan af vanvare komme til at lave en fatal sikkerhedsfejl. Dette
 er en helt generel betragtning, som holder uanset system.
 </para>
@@ -93,7 +93,7 @@ er en helt generel betragtning, som holder uanset system.
 Sikkerhed er mange ting. Dels er der en diskussion om sikkerhed med
 hensyn til andres fysiske adgang til systemet (se 
 <xref linkend="sikkerhed-fysisk"/>), dels er der en emnet med
-netværkssikkerhed (se <xref linkend="sikkerhed-netvaerk"/>).
+netvÃ¦rkssikkerhed (se <xref linkend="sikkerhed-netvaerk"/>).
 </para>
 
 <indexterm><primary>Sikkerhed</primary><secondary>Fysisk adgang</secondary></indexterm>
@@ -102,13 +102,13 @@ netværkssikkerhed (se <xref linkend="sikkerhed-netvaerk"/>).
 <title>Fysisk adgang til maskinen</title>
 
 <para>
-Med hensyn til fysisk adgang til maskinen, så er der adgangskontrol på
+Med hensyn til fysisk adgang til maskinen, sÃ¥ er der adgangskontrol pÃ¥
 en Linux-maskine som der er kendt fra andre Unix-varianter eller
 Windows NT.  Dvs. man skal have et bruger-ID og et password for at
-kunne logge ind.  Dog kan den grafiske brugergrænseflade KDE sættes op
-til at man kan sætte systemet op til at man kan logge ind uden at
+kunne logge ind.  Dog kan den grafiske brugergrÃ¦nseflade KDE sÃ¦ttes op
+til at man kan sÃ¦tte systemet op til at man kan logge ind uden at
 blive konfronteret med bruger-ID og password (som det kendes fra
-f.eks. Windows 3.11 og 95). Dette kan kun sættes op af
+f.eks. Windows 3.11 og 95). Dette kan kun sÃ¦ttes op af
 systemadministratoren 
 (i KDE-&gt; Preferences-&gt; System-&gt; Login manager-&gt Convenience).
 </para>
@@ -116,102 +116,102 @@ systemadministratoren
 <para>
 Systemadministratoren (kaldet root) er den eneste system-konto, der
 kan anvendes til at oprette konti. For en korrekt opsat Linux-maskine
-er der i praksis ikke muligt at få adgang til en Linux-maskine uden
+er der i praksis ikke muligt at fÃ¥ adgang til en Linux-maskine uden
 man har bruger-ID og password.
 </para>
 
 <para>
-Der er typisk mulighed for at man kan sætte en Linux-harddisk i en
-anden maskine og derved kunne tilgå data på harddisken. Hvis man har
-meget sensitive data på harddisken kan denne dog krypteres (med ppdd)
+Der er typisk mulighed for at man kan sÃ¦tte en Linux-harddisk i en
+anden maskine og derved kunne tilgÃ¥ data pÃ¥ harddisken. Hvis man har
+meget sensitive data pÃ¥ harddisken kan denne dog krypteres (med ppdd)
 og derved har man en god datasikkerhed.
 </para>
 </sect2>
 
 <sect2 id="sikkerhed-netvaerk">
-<title>Adgang til maskinen via netværk</title>
-<indexterm><primary>Sikkerhed</primary><secondary>Netværksadgang</secondary></indexterm>
+<title>Adgang til maskinen via netvÃ¦rk</title>
+<indexterm><primary>Sikkerhed</primary><secondary>NetvÃ¦rksadgang</secondary></indexterm>
 <para>
-Det er en række måder hvorpå man kan få adgang til en 
-Linux-maskine over netværket - og det er op til systemadministratoren
+Det er en rÃ¦kke mÃ¥der hvorpÃ¥ man kan fÃ¥ adgang til en 
+Linux-maskine over netvÃ¦rket - og det er op til systemadministratoren
 til at definere hvad der er muligt.
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
- Telnet - Gennemtestet men sikkerhedsmæssig usikker protokol til at få
- en tekst-adgang til maskinen hvor man kan køre kommandoer fra ens
- egen maskine. Denne type service bør aldrig udbydes på andet end
- meget små netværk som ikke har nogen direkte eller indirekte tilgang
+ Telnet - Gennemtestet men sikkerhedsmÃ¦ssig usikker protokol til at fÃ¥
+ en tekst-adgang til maskinen hvor man kan kÃ¸re kommandoer fra ens
+ egen maskine. Denne type service bÃ¸r aldrig udbydes pÃ¥ andet end
+ meget smÃ¥ netvÃ¦rk som ikke har nogen direkte eller indirekte tilgang
  til internettet.
  </para>
 </listitem>
 <listitem>
  <para>
- Ftp - Gennemtestet men sikkerhedsmæssigt usikker protokol til at 
- overføre filer mellem ens egen maskine og den anden maskine på netværket.
+ Ftp - Gennemtestet men sikkerhedsmÃ¦ssigt usikker protokol til at 
+ overfÃ¸re filer mellem ens egen maskine og den anden maskine pÃ¥ netvÃ¦rket.
  </para>
 </listitem>
 <listitem>
  <para>
- SSH - også kaldet secure shell er en moderne og sikker måde at få
+ SSH - ogsÃ¥ kaldet secure shell er en moderne og sikker mÃ¥de at fÃ¥
  samme funktioner som telnet og ftp tilbyder - hvor al datatrafik
- mellem de to maskiner krypteres på en måde der kan anses for at være
- sikker. Der er endda mulighed for at få krypteret transport af grafiske
- programmer fra en maskine til en anden. Det er således muligt at
- fjernstyre en Linux-maskine over netværket fuldt ud.
+ mellem de to maskiner krypteres pÃ¥ en mÃ¥de der kan anses for at vÃ¦re
+ sikker. Der er endda mulighed for at fÃ¥ krypteret transport af grafiske
+ programmer fra en maskine til en anden. Det er sÃ¥ledes muligt at
+ fjernstyre en Linux-maskine over netvÃ¦rket fuldt ud.
  </para>
- <para>SSH kan evt. kombineres med SecurID kort, hvor man får en
- personlig adgangskode, der er tidsafhængig. SSH findes dels i en kommerciel
- version og en Open Source-variant OpenSSH, der er funktionsmæssigt og 
- udviklingsmæssigt fuldt på højde med den kommercielle variant.
+ <para>SSH kan evt. kombineres med SecurID kort, hvor man fÃ¥r en
+ personlig adgangskode, der er tidsafhÃ¦ngig. SSH findes dels i en kommerciel
+ version og en Open Source-variant OpenSSH, der er funktionsmÃ¦ssigt og 
+ udviklingsmÃ¦ssigt fuldt pÃ¥ hÃ¸jde med den kommercielle variant.
  </para>
 </listitem>
 <listitem>
  <para>
  SAMBA (SMB) - server-protokol til at tilbyde SMB-montering af
- netværksdrev og netværksprinter-server. Windows-maskiner vil
+ netvÃ¦rksdrev og netvÃ¦rksprinter-server. Windows-maskiner vil
  se en Linux-maskine med SAMBA som om det er en Windows-server.
- Det er en smart måde at integrere et heterogent netværk.
+ Det er en smart mÃ¥de at integrere et heterogent netvÃ¦rk.
  </para>
 </listitem>
 <listitem>
  <para>
  NFS - Gammel og velgennemtestet protokol til at montere
- netværksdiske mellem Unix-maskiner såsom Linux. Protokollen
- er ikke særlig sikker, på samme niveau som SMB. NFS anvendes
- typisk kun for stationære maskiner i netværket, så man kan
+ netvÃ¦rksdiske mellem Unix-maskiner sÃ¥som Linux. Protokollen
+ er ikke sÃ¦rlig sikker, pÃ¥ samme niveau som SMB. NFS anvendes
+ typisk kun for stationÃ¦re maskiner i netvÃ¦rket, sÃ¥ man kan
  kontrollere adgang til data via maskinernes navne/IP-adresser.
  </para>
 </listitem>
 <listitem> 
  <para>
- X-server - gennem dette kan man fra netværket få en grafisk login fra
- en anden maskine. På denne måde anvender man ens egen maskine som
- grafisk klient og al behandling af data udføres på serveren. Dette er
- meget atraktivt hvis man vil bygge centraliserede løsninger, hvor man
- anvender kraftige servere og tynde klienter. Dette er en løsning der
- kan være meget pris-effektiv dels per klient, men også
- vedligeholdelsesmæssigt.
+ X-server - gennem dette kan man fra netvÃ¦rket fÃ¥ en grafisk login fra
+ en anden maskine. PÃ¥ denne mÃ¥de anvender man ens egen maskine som
+ grafisk klient og al behandling af data udfÃ¸res pÃ¥ serveren. Dette er
+ meget atraktivt hvis man vil bygge centraliserede lÃ¸sninger, hvor man
+ anvender kraftige servere og tynde klienter. Dette er en lÃ¸sning der
+ kan vÃ¦re meget pris-effektiv dels per klient, men ogsÃ¥
+ vedligeholdelsesmÃ¦ssigt.
  </para>
 </listitem>
 <listitem> 
  <para>
- NIS - anvendes i Unix-netværk til at håndtere passwords for brugere centralt.
+ NIS - anvendes i Unix-netvÃ¦rk til at hÃ¥ndtere passwords for brugere centralt.
  </para>
 </listitem>
 <listitem> 
  <para>
- Apache - verdens mest anvendte webserver med ca. 60% markedsandel på
+ Apache - verdens mest anvendte webserver med ca. 60% markedsandel pÃ¥
  internettet.
  </para>
 </listitem>
 <listitem> 
  <para>
  Sendmail, Postfix, Exim eller Qmail anvendes hvis man vil kunne sende
- emails til ens maskine. Typisk er dette ikke nødvendigt på andet 
- end en maskine (mail-serveren) i et netværk.
+ emails til ens maskine. Typisk er dette ikke nÃ¸dvendigt pÃ¥ andet 
+ end en maskine (mail-serveren) i et netvÃ¦rk.
  </para>
 </listitem>
 
@@ -220,7 +220,7 @@ til at definere hvad der er muligt.
 <para>
 Generelt skal man ikke udbyde nogen af de mange server-programmer
 (kaldet services) hvis man ikke skal bruge dem og vil vedligeholde
-dem (ved at følge annonceringer om eventuelle sikkerhedsfejl i dem på 
+dem (ved at fÃ¸lge annonceringer om eventuelle sikkerhedsfejl i dem pÃ¥ 
 <ulink url="http://www.linuxtoday.com">http://www.linuxtoday.com</ulink>)
 eller de enkelte Linux-distributioners post-lister med
 sikkerheds-annonceringer. 
@@ -228,7 +228,7 @@ sikkerheds-annonceringer.
 
 <para>
 Der er en meget mere teknisk udredning for sikkerhedsaspekter i bogen
-"Linux - Friheden til sikkerhed på internettet", der kan findes på
+"Linux - Friheden til sikkerhed pÃ¥ internettet", der kan findes pÃ¥
 <ulink url="http://&linuxbogurl;/">&linuxbogurl;</ulink>.
 </para>
 
@@ -243,23 +243,23 @@ Der er en meget mere teknisk udredning for sikkerhedsaspekter i bogen
 <para>
 At drive en server koster tid og reelt penge, da man altid skal have
 en eller anden mulighed for at tilkalde en kvalificeret person hvis
-noget skulle gå galt. Dette er ikke anderledes end på andre
+noget skulle gÃ¥ galt. Dette er ikke anderledes end pÃ¥ andre
 platforme. Med Linux (generelt for Unix) er der gode muligheder for at
-effektivisere systemadministration til få centraliserede funktioner,
-hvilket kan gøres meget kost-effektivt. Fra flere sider peges der på
-at en Linux-systemadministrator kan håndtere mange gange flere
+effektivisere systemadministration til fÃ¥ centraliserede funktioner,
+hvilket kan gÃ¸res meget kost-effektivt. Fra flere sider peges der pÃ¥
+at en Linux-systemadministrator kan hÃ¥ndtere mange gange flere
 maskiner end en tilsvarende Windows NT-administrator. Det er
-bla. fordi systemadministratoren på et Linux-system ret let kan
+bla. fordi systemadministratoren pÃ¥ et Linux-system ret let kan
 distribuere program-opgraderinger og lave generel systemvedligehold
-over netværket. At Linux og tilhørende server-programmer er langt mere
-stabile end tilsvarende til Windows NT vil også gøre at drift-mæssigt
-vil der være store fordele i Linux.
+over netvÃ¦rket. At Linux og tilhÃ¸rende server-programmer er langt mere
+stabile end tilsvarende til Windows NT vil ogsÃ¥ gÃ¸re at drift-mÃ¦ssigt
+vil der vÃ¦re store fordele i Linux.
 </para>
 
 <para>
-IDC har i januar 2002 sammen med Red Hat lavet en undersøgelse af
-drift-økonomi (TCO - Tocal Cost of Ownership) hvor man sammenligner
-kommercielle Unix-løsninger med tilsvarende Linux-løsninger. Udfaldet
+IDC har i januar 2002 sammen med Red Hat lavet en undersÃ¸gelse af
+drift-Ã¸konomi (TCO - Tocal Cost of Ownership) hvor man sammenligner
+kommercielle Unix-lÃ¸sninger med tilsvarende Linux-lÃ¸sninger. Udfaldet
 er at Linux ligger 40-80% under i pris.
 </para>
 

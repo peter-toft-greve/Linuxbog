@@ -1,20 +1,20 @@
 <chapter id="java-interface">
-<title>Interfaces - grænseflader til objekter</title>
+<title>Interfaces - grÃ¦nseflader til objekter</title>
 
 <para>
-  Forudsættes af <xref linkend="java-events" />, Hændelser, <xref linkend="java-traade" />, Flertrådet programmering,
+  ForudsÃ¦ttes af <xref linkend="java-events" />, HÃ¦ndelser, <xref linkend="java-traade" />, FlertrÃ¥det programmering,
   <xref linkend="java-serialisering" />, Serialisering, <xref linkend="java-rmi" />, RMI og <xref linkend="java-indre-klasser" />, Indre klasser.
 </para>
 
 <para>
-  Forudsætter <xref linkend="java-arv" />, Nedarvning (og <xref linkend="java-applet" />, Appletter og grafik
-  for at forstå et eksempel).
+  ForudsÃ¦tter <xref linkend="java-arv" />, Nedarvning (og <xref linkend="java-applet" />, Appletter og grafik
+  for at forstÃ¥ et eksempel).
 </para>
 
 <para>
-  I generel sprogbrug er et interface (da.: grænseflade,
-  snitflade) en form for grænseflade, som man gør noget
-  gennem. F.eks. er en grafisk brugergrænseflade (eng.: Graphical
+  I generel sprogbrug er et interface (da.: grÃ¦nseflade,
+  snitflade) en form for grÃ¦nseflade, som man gÃ¸r noget
+  gennem. F.eks. er en grafisk brugergrÃ¦nseflade (eng.: Graphical
   User Interface - GUI) de vinduer med knapper, indtastningsfelter og
   kontroller, som brugeren har til interaktion med programmet.
 </para>
@@ -28,7 +28,7 @@
 <listitem>
 
 <para>
-  <emphasis>Grænsefladen</emphasis> - hvordan objekterne kan bruges udefra.Dette udgøres af navnene på metoderne, der kan ses udefra.
+  <emphasis>GrÃ¦nsefladen</emphasis> - hvordan objekterne kan bruges udefra.Dette udgÃ¸res af navnene pÃ¥ metoderne, der kan ses udefra.
 </para>
 
 </listitem>
@@ -36,7 +36,7 @@
 
 <para>
   <emphasis>Implementationen</emphasis> - hvordan objekterne virker
-  indeni.Dette udgøres af variabler og programkoden i
+  indeni.Dette udgÃ¸res af variabler og programkoden i
   metodekroppene.
 </para>
 
@@ -44,17 +44,17 @@
 </orderedlist>
 
 <para>
-  Et »interface« svarer til punkt 1): En definition af, hvordan
+  Et Â»interfaceÂ« svarer til punkt 1): En definition af, hvordan
   objekter bruges udefra. Man kan sige, at et interface er en &quot;halv&quot;
   klasse.
 </para>
 
-<blockquote><para>Et interface er en samling navne på metoder (uden krop)</para></blockquote>
+<blockquote><para>Et interface er en samling navne pÃ¥ metoder (uden krop)</para></blockquote>
 
 <para>
   Et interface kan implementeres af en klasse - det vil sige, at
   klassen definerer alle interfacets metoder sammen med
-  programkoden, der beskriver, hvad der skal ske, når metoderne
+  programkoden, der beskriver, hvad der skal ske, nÃ¥r metoderne
   kaldes.
 </para>
 
@@ -63,7 +63,7 @@
 
 <para>
   Lad os definere et interface kaldet Tegnbar, der beskriver nogle
-  metoder på objekter, der kan tegnes.
+  metoder pÃ¥ objekter, der kan tegnes.
 </para>
 
 <screen>
@@ -71,20 +71,20 @@ import java.awt.*;
 
 public <emphasis>interface Tegnbar</emphasis>
 {
-  public void sætPosition(int x, int y);
+  public void sÃ¦tPosition(int x, int y);
 
   public void tegn(Graphics g);
 }
 </screen>
 
 <para>
-  I stedet for &quot;class&quot; erklæres et interface med
+  I stedet for &quot;class&quot; erklÃ¦res et interface med
   &quot;interface&quot;.
 </para>
 
 <para>
-  Metoder i et interface har ingen krop, alle metodeerklæringerne
-  følges af et semikolon. Der kan ikke oprettes objekter ud fra
+  Metoder i et interface har ingen krop, alle metodeerklÃ¦ringerne
+  fÃ¸lges af et semikolon. Der kan ikke oprettes objekter ud fra
   et interface. Det kan opfattes som en &quot;tom skal&quot;, der skal
   &quot;fyldes ud&quot; af en rigtig klasse, der implementerer
   metoderne (dvs. definerer kroppene).
@@ -102,7 +102,7 @@ public <emphasis>interface Tegnbar</emphasis>
 <itemizedlist mark="bullet">
 <listitem>
 
-<para>har en metode til at sætte positionen på skærmen</para>
+<para>har en metode til at sÃ¦tte positionen pÃ¥ skÃ¦rmen</para>
 
 </listitem>
 <listitem>
@@ -115,9 +115,9 @@ har en metode til at tegne objektet.
 </itemizedlist>
 
 <para>
-I UML-notation (tegningen til højre) er Tegnbar-interfacet
+I UML-notation (tegningen til hÃ¸jre) er Tegnbar-interfacet
 tegnet med kursiv. Alle metoderne er abstrakte (= ikke
-implementerede) og er derfor også tegnet kursivt.
+implementerede) og er derfor ogsÃ¥ tegnet kursivt.
 </para>
 </sect1> 
 
@@ -129,14 +129,14 @@ implementerede) og er derfor også tegnet kursivt.
   Tegnbar-interfacet.
 </para>
 
-<blockquote><para>En klasse kan erklære, at den
-<emphasis>implementerer et interface</emphasis>, og så
+<blockquote><para>En klasse kan erklÃ¦re, at den
+<emphasis>implementerer et interface</emphasis>, og sÃ¥
 <emphasis>skal</emphasis> den definere alle metoderne i interfacet og
 give dem en metodekrop</para></blockquote>
 
 <para>
-Vi skal altså definere alle interfacets metoder sammen med
-programkoden, der beskriver hvad der skal ske, når metoderne
+Vi skal altsÃ¥ definere alle interfacets metoder sammen med
+programkoden, der beskriver hvad der skal ske, nÃ¥r metoderne
 kaldes.
 </para>
 
@@ -147,13 +147,13 @@ public class Stjerne <emphasis>implements Tegnbar</emphasis>
 {
   private int posX, posY;
 
-  public void sætPosition(int x, int y)  <emphasis>// kræves af Tegnbar</emphasis>
+  public void sÃ¦tPosition(int x, int y)  <emphasis>// krÃ¦ves af Tegnbar</emphasis>
   {
     posX = x;
     posY = y;
   }
 
-  public void tegn(Graphics g)          <emphasis>// kræves af Tegnbar</emphasis>
+  public void tegn(Graphics g)          <emphasis>// krÃ¦ves af Tegnbar</emphasis>
   {
     g.drawString(&quot;*&quot;,posX,posY);
   }
@@ -163,7 +163,7 @@ public class Stjerne <emphasis>implements Tegnbar</emphasis>
 <para>
 Her har klassen Stjerne &quot;udfyldt skallen&quot; for Tegnbar
 ved at skrive &quot;implements Tegnbar&quot; og definere
-sætPosition()- og tegn()-metoderne (vi har også variabler
+sÃ¦tPosition()- og tegn()-metoderne (vi har ogsÃ¥ variabler
 til at huske x og y).
 </para>
 
@@ -171,9 +171,9 @@ til at huske x og y).
 <title>Variabler af type Tegnbar</title>
 
 <para>
-Man kan erklære variabler af en interface-type. Disse kan
+Man kan erklÃ¦re variabler af en interface-type. Disse kan
 referere til alle slags objekter, der implementerer interfacet.
-Herunder erklærer vi en variabel af type Tegnbar og sætter
+Herunder erklÃ¦rer vi en variabel af type Tegnbar og sÃ¦tter
 den til at referere til et Stjerne-objekt.
 </para>
 
@@ -183,7 +183,7 @@ den til at referere til et Stjerne-objekt.
 </screen>
 
 <para>
-Stjerne-objekter er også af type Tegnbar. Ligesom ved
+Stjerne-objekter er ogsÃ¥ af type Tegnbar. Ligesom ved
 nedarvning siger man, at der er relationen Stjerne er-en
 Tegnbar, og at t er polymorf, da den kan referere til alle slags
 Tegnbare objekter.
@@ -192,7 +192,7 @@ Tegnbare objekter.
 <para>
 Man kan ikke oprette objekter ud fra et interface (der bare er en
 &quot;skal&quot; og intet siger om, hvordan metoderne er
-implementerede så hvordan skulle objektet reagere, hvis
+implementerede sÃ¥ hvordan skulle objektet reagere, hvis
 metoderne blev kaldt?).
 </para>
 
@@ -207,8 +207,8 @@ metoderne blev kaldt?).
 
 <para>
 Lad os udvide (arve fra) Terning til at implementere
-Tegnbar-interfacet. For at gøre koden kort har metoden
-tegn() en hjælpemetode ci(), der tegner en cirkel for et øje.
+Tegnbar-interfacet. For at gÃ¸re koden kort har metoden
+tegn() en hjÃ¦lpemetode ci(), der tegner en cirkel for et Ã¸je.
 </para>
 
 <screen>
@@ -217,7 +217,7 @@ public class GrafiskTerning <emphasis>extends Terning implements Tegnbar</emphas
 {
   int x, y;
 
-  public void sætPosition(int x, int y)
+  public void sÃ¦tPosition(int x, int y)
   {
     this.x = x;
     this.y = y;
@@ -230,41 +230,41 @@ public class GrafiskTerning <emphasis>extends Terning implements Tegnbar</emphas
 
   public void tegn(Graphics g)
   {
-    int ø = værdi;
+    int Ã¸ = vÃ¦rdi;
     g.drawRect(x,y,30,30);                         <emphasis>// Tegn kant</emphasis>
 
-    if (ø==1) ci(g,1,1);                           <emphasis>// Tegn 1-6 øjne</emphasis>
-    else if (ø==2) { ci(g,0,0); ci(g,2,2); }
-    else if (ø==3) { ci(g,0,0); ci(g,1,1); ci(g,2,2); }
-    else if (ø==4) { ci(g,0,0); ci(g,0,2); ci(g,2,0); ci(g,2,2); }
-    else if (ø==5) { ci(g,0,0); ci(g,0,2); ci(g,1,1); ci(g,2,0); ci(g,2,2); }
+    if (Ã¸==1) ci(g,1,1);                           <emphasis>// Tegn 1-6 Ã¸jne</emphasis>
+    else if (Ã¸==2) { ci(g,0,0); ci(g,2,2); }
+    else if (Ã¸==3) { ci(g,0,0); ci(g,1,1); ci(g,2,2); }
+    else if (Ã¸==4) { ci(g,0,0); ci(g,0,2); ci(g,2,0); ci(g,2,2); }
+    else if (Ã¸==5) { ci(g,0,0); ci(g,0,2); ci(g,1,1); ci(g,2,0); ci(g,2,2); }
     else { ci(g,0,0); ci(g,0,1); ci(g,0,2); ci(g,2,0); ci(g,2,1); ci(g,2,2); }
   }
 }
 </screen>
 
 <para>
-Bemærk:
+BemÃ¦rk:
 </para>
 
 <itemizedlist mark="bullet">
 
-<listitem><para>Man kan godt have flere metoder end specificeret i interfacet (i dette tilfælde ci()).</para></listitem>
+<listitem><para>Man kan godt have flere metoder end specificeret i interfacet (i dette tilfÃ¦lde ci()).</para></listitem>
 
 <listitem>
 <para>
   GrafiskTerning er-en Tegnbar og samtidig en Terning. Der kan
   kun arves fra &eacute;n klasse, men samtidigt kan der godt
-  implementeres et interface (faktisk også flere).
+  implementeres et interface (faktisk ogsÃ¥ flere).
 </para>
 </listitem>
 
 </itemizedlist>
 
 <para>
-Lad os gøre det samme med et raflebæger. For
-variationens skyld lader vi bægeret altid have den samme
-position, ved at lade sætPosition()'s krop være tom.
+Lad os gÃ¸re det samme med et raflebÃ¦ger. For
+variationens skyld lader vi bÃ¦geret altid have den samme
+position, ved at lade sÃ¦tPosition()'s krop vÃ¦re tom.
 </para>
 
 <screen>
@@ -276,7 +276,7 @@ public class GrafiskRaflebaeger extends Raflebaeger implements Tegnbar
     super(0);
   }
 
-  public void sætPosition(int x, int y) {  } <emphasis>// tom metodekrop</emphasis>
+  public void sÃ¦tPosition(int x, int y) {  } <emphasis>// tom metodekrop</emphasis>
 
   public void tegn(Graphics g)
   {
@@ -289,14 +289,14 @@ public class GrafiskRaflebaeger extends Raflebaeger implements Tegnbar
 </screen>
 
 <para>
-Kunne vi have udeladt sætPosition()-metoden, der alligevel
-ikke gør noget? Nej, vi har lovet at implementere begge
-metoder, om det så blot er med en tom krop, idet vi skrev
+Kunne vi have udeladt sÃ¦tPosition()-metoden, der alligevel
+ikke gÃ¸r noget? Nej, vi har lovet at implementere begge
+metoder, om det sÃ¥ blot er med en tom krop, idet vi skrev
 &quot;implements Tegnbar&quot;.
 </para>
 
 <para>
-<emphasis>En hvilken som helst klasse kan gøres til at være
+<emphasis>En hvilken som helst klasse kan gÃ¸res til at vÃ¦re
 Tegnbar</emphasis>. Her er et tegnbart rektangel:
 </para>
 
@@ -309,7 +309,7 @@ public class Rektangel extends Rectangle implements Tegnbar
     super(y1,x1,width1,height1);
   }
 
-  public void sætPosition(int x1, int y1)
+  public void sÃ¦tPosition(int x1, int y1)
   {
     x = x1;
     y = y1;
@@ -335,7 +335,7 @@ import java.util.*;
 public class TegnbareObjekter extends Applet
 {
 <emphasis>  Vector tegnbare = new Vector();</emphasis>
-  GrafiskRaflebaeger bæger = new GrafiskRaflebaeger();
+  GrafiskRaflebaeger bÃ¦ger = new GrafiskRaflebaeger();
 
   public void paint(Graphics g)
   {
@@ -346,13 +346,13 @@ public class TegnbareObjekter extends Applet
 <emphasis>    }</emphasis>
   }
 
-  public void sætPositioner()
+  public void sÃ¦tPositioner()
   {
     for (int n=0; n&lt;tegnbare.size(); n++) {
       Tegnbar t = (Tegnbar) tegnbare.elementAt(n);
       int x = (int) (Math.random()*200);
       int y = (int) (Math.random()*200);
-      t.sætPosition(x,y);
+      t.sÃ¦tPosition(x,y);
     }
   }
 
@@ -367,16 +367,16 @@ public class TegnbareObjekter extends Applet
     GrafiskTerning t;
 
     <emphasis>t = new GrafiskTerning()</emphasis>;
-    bæger.tilføj(t);
+    bÃ¦ger.tilfÃ¸j(t);
 <emphasis>    tegnbare.addElement(t);</emphasis>
 
 <emphasis>    t = new GrafiskTerning();</emphasis>
-    bæger.tilføj(t);
+    bÃ¦ger.tilfÃ¸j(t);
 <emphasis>    tegnbare.addElement(t);</emphasis>
 
-    tegnbare.addElement(bæger);
+    tegnbare.addElement(bÃ¦ger);
 
-    sætPositioner();
+    sÃ¦tPositioner();
 
 <emphasis>    // mere kode her</emphasis>
 <emphasis>    // ... </emphasis>
@@ -388,9 +388,9 @@ public class TegnbareObjekter extends Applet
 </screen>
 
 <para>
-Programmet holder styr på objekterne i tegnbare-vektoren. Da
-stjerner, rektangler, terningerne og raflebægeret alle er
-Tegnbare kan de behandles ens hvad angår tegning og
+Programmet holder styr pÃ¥ objekterne i tegnbare-vektoren. Da
+stjerner, rektangler, terningerne og raflebÃ¦geret alle er
+Tegnbare kan de behandles ens hvad angÃ¥r tegning og
 positionering.
 </para>
 </sect2>
@@ -400,15 +400,15 @@ positionering.
 <title>Polymorfi</title>
 
 <para>
-Det er meget kraftfuldt, at man kan erklære variabler af en
+Det er meget kraftfuldt, at man kan erklÃ¦re variabler af en
 interface-type. Disse kan referere til alle mulige slags
-objekter, der implementerer interfacet. Herefter kan vi f.eks. løbe
-en vektor igennem og arbejde på objekterne i den, selvom de er
+objekter, der implementerer interfacet. Herefter kan vi f.eks. lÃ¸be
+en vektor igennem og arbejde pÃ¥ objekterne i den, selvom de er
 af vidt forskellig type.
 </para>
 
 <para>
-Dette så vi i TegnbareObjekter-appletten:
+Dette sÃ¥ vi i TegnbareObjekter-appletten:
 </para>
 
 <screen>
@@ -422,16 +422,16 @@ Dette så vi i TegnbareObjekter-appletten:
 
 <para>
 Et interface som Tegnbar kan bruges til at etablere en
-fællesnævner mellem vidt forskellige objekter, som
-derefter kan behandles ens. Dette kaldes polymorfi. (græsk:
+fÃ¦llesnÃ¦vner mellem vidt forskellige objekter, som
+derefter kan behandles ens. Dette kaldes polymorfi. (grÃ¦sk:
 &quot;mange former&quot;).
 </para>
 
 <para>
-Fællesnævneren - nemlig at de alle implementerer det
+FÃ¦llesnÃ¦vneren - nemlig at de alle implementerer det
 samme interface - tillader os at arbejde med objekter <emphasis>uden
-at kende deres præcise type</emphasis>.
-Dette kan i mange tilfælde være en fordel, når
+at kende deres prÃ¦cise type</emphasis>.
+Dette kan i mange tilfÃ¦lde vÃ¦re en fordel, nÃ¥r
 vi arbejder med objekter, hvor vi ikke kender (eller ikke
 interesserer os for) den eksakte type.
 </para>
@@ -441,16 +441,16 @@ interesserer os for) den eksakte type.
 <title>Interfaces i standardbibliotekerne</title>
 
 <para>
-Interfaces bliver brugt i vid udstrækning i
+Interfaces bliver brugt i vid udstrÃ¦kning i
 standardbibliotekerne, og mange steder benyttes polymorfi til at
-gøre det muligt at lade systemet arbejde på
-programmørens egne klasser.
+gÃ¸re det muligt at lade systemet arbejde pÃ¥
+programmÃ¸rens egne klasser.
 </para>
 
 <para>
-I det følgende vil vi se nogle eksempler på at
-implementationen af et interface fra standardbiblioteket gør,
-at vores klasser passer ind i systemet på forskellig måde.
+I det fÃ¸lgende vil vi se nogle eksempler pÃ¥ at
+implementationen af et interface fra standardbiblioteket gÃ¸r,
+at vores klasser passer ind i systemet pÃ¥ forskellig mÃ¥de.
 </para>
 
 <sect2 id="java-interface-standard-bib-sort-og-compare">
@@ -484,13 +484,13 @@ public class Element <emphasis>implements Comparable</emphasis>
     return &quot;element&quot;+x;
   }
 
-<emphasis>  public int compareTo(Object obj)</emphasis>      <emphasis>// kræves af Comparable</emphasis>
+<emphasis>  public int compareTo(Object obj)</emphasis>      <emphasis>// krÃ¦ves af Comparable</emphasis>
   {
-    Element andetElement = (Element) obj;<emphasis>// typekonverter først til Element</emphasis>
+    Element andetElement = (Element) obj;<emphasis>// typekonverter fÃ¸rst til Element</emphasis>
 
     if (x == andetElement.x) return 0;  <emphasis>// dette elem. og obj har samme plads</emphasis>
     if (x  &gt; andetElement.x) return 1;  <emphasis>// dette element kommer efter obj</emphasis>
-    else return -1;                <emphasis>// dette element kommer før obj</emphasis>
+    else return -1;                <emphasis>// dette element kommer fÃ¸r obj</emphasis>
   }
 }
 </screen>
@@ -517,7 +517,7 @@ public class BrugElementer
     liste.addElement( new Element(13));
     liste.addElement( new Element(1));
 
-    System.out.println(&quot;før: &quot;+liste);
+    System.out.println(&quot;fÃ¸r: &quot;+liste);
 <emphasis>    Collections.sort(v);    </emphasis>
     System.out.println(&quot;efter: &quot;+liste);
   }
@@ -527,34 +527,34 @@ public class BrugElementer
 <para>Resultatet bliver:</para>
 
 <screen>
-før: [element5, element3, element13, element1]
+fÃ¸r: [element5, element3, element13, element1]
 efter: [element1, element3, element5, element13]
 </screen>
 
 <para>
-sort() vil kalde compareTo() på vores objekter for at ordne
-dem i rækkefølge. Havde vores objekter ikke
-implementeret Comparable, ville der opstå en køretidsfejl,
-da systemet så ikke havde nogen grænseflade, hvorigennem
-det kunne undersøge, hvordan elementerne skal ordnes.
+sort() vil kalde compareTo() pÃ¥ vores objekter for at ordne
+dem i rÃ¦kkefÃ¸lge. Havde vores objekter ikke
+implementeret Comparable, ville der opstÃ¥ en kÃ¸retidsfejl,
+da systemet sÃ¥ ikke havde nogen grÃ¦nseflade, hvorigennem
+det kunne undersÃ¸ge, hvordan elementerne skal ordnes.
 </para>
 </sect2>
 
 <sect2 id="java-interface-standard-bib-traade">
-<title>Flere tråde med Runnable</title>
+<title>Flere trÃ¥de med Runnable</title>
 
 <para>
-Hvis man vil bruge flere tråde (processer, der kører
-samtidigt i baggrunden) i sit program, kan dette opnås ved at
+Hvis man vil bruge flere trÃ¥de (processer, der kÃ¸rer
+samtidigt i baggrunden) i sit program, kan dette opnÃ¥s ved at
 implementere interfacet Runnable og definere metoden run(). Derefter
-opretter man et trådobjekt med new
-Thread(objektDerImplementererRunnable). Når tråden
-startes (med trådobjekt.start()), vil det begynde en parallel
-udførelse af run()-metoden i objektDerImplementererRunnable.
+opretter man et trÃ¥dobjekt med new
+Thread(objektDerImplementererRunnable). NÃ¥r trÃ¥den
+startes (med trÃ¥dobjekt.start()), vil det begynde en parallel
+udfÃ¸relse af run()-metoden i objektDerImplementererRunnable.
 </para>
 
 <para>
-Dette vil blive behandlet i <xref linkend="java-traade" />, Flertrådet programmering.
+Dette vil blive behandlet i <xref linkend="java-traade" />, FlertrÃ¥det programmering.
 </para>
 </sect2>
 
@@ -562,31 +562,31 @@ Dette vil blive behandlet i <xref linkend="java-traade" />, Flertrådet programme
 <title>Lytte til musen med MouseListener</title>
 
 <para>
-Når man programmerer grafiske brugergrænseflader, kan
-det være nyttigt at kunne få at vide, når der er
-sket en hændelse, f.eks. at musen er klikket et sted.
+NÃ¥r man programmerer grafiske brugergrÃ¦nseflader, kan
+det vÃ¦re nyttigt at kunne fÃ¥ at vide, nÃ¥r der er
+sket en hÃ¦ndelse, f.eks. at musen er klikket et sted.
 </para>
 
 <para>
 Dette sker ved, at man definerer et objekt (lytteren), der
 implementerer MouseListener-interfacet. Den har forskellige
-metoder, f.eks. mouseClicked(), der er beregnet på et
+metoder, f.eks. mouseClicked(), der er beregnet pÃ¥ et
 museklik.
 </para>
 
 <para>
 Lytteren skal registreres i en grafisk komponent, f.eks. en knap
-eller en applet. Det gøres ved at kalde komponentens
+eller en applet. Det gÃ¸res ved at kalde komponentens
 addMouseListener()-metode med en reference til lytteren. Derefter
-vil, hver gang brugeren klikker på komponenten, lytterens
+vil, hver gang brugeren klikker pÃ¥ komponenten, lytterens
 mouseClicked() blive kaldt.
 </para>
 
 <para>
-Analogt findes lyttere til tastatur, musebevægelser,
+Analogt findes lyttere til tastatur, musebevÃ¦gelser,
 tekstfelter, kontroller osv. I <xref linkend="java-gui" /> om grafiske
-brugergrænseflader og hændelser er disse ting beskrevet
-nærmere.
+brugergrÃ¦nseflader og hÃ¦ndelser er disse ting beskrevet
+nÃ¦rmere.
 </para>
 </sect2>
 </sect1>
@@ -596,7 +596,7 @@ nærmere.
 
 <orderedlist>
   <listitem>
-    <para>Lav klassen Hus, der skal implementere Tegnbar, føj den til TegnbareObjekter og prøv om det virker.</para>
+    <para>Lav klassen Hus, der skal implementere Tegnbar, fÃ¸j den til TegnbareObjekter og prÃ¸v om det virker.</para>
   </listitem>
 </orderedlist>
 

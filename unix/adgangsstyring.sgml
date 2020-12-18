@@ -7,48 +7,48 @@
 
  <para>
   I Unix har man mulighed for at styre hvilke brugere der har adgang
-  til at gøre bestemte ting og se bestemte data.  Brugerne er opdelt i
-  et hierarki med to niveauer.  Øverst er der systemadministratoren
-  (bruger nummer nul) der typisk, men ikke nødvendigvis, har
+  til at gÃ¸re bestemte ting og se bestemte data.  Brugerne er opdelt i
+  et hierarki med to niveauer.  Ã˜verst er der systemadministratoren
+  (bruger nummer nul) der typisk, men ikke nÃ¸dvendigvis, har
   brugernavnet "root".  Nederst er der alle de andre brugere
-  (brugernumre større end nul).  Systemadministratoren har adgang til
-  at gøre alt på systemet og kan dermed lave større ulykker end de
-  almindelige brugere.  Derfor er det vigtigt at man kun udfører
+  (brugernumre stÃ¸rre end nul).  Systemadministratoren har adgang til
+  at gÃ¸re alt pÃ¥ systemet og kan dermed lave stÃ¸rre ulykker end de
+  almindelige brugere.  Derfor er det vigtigt at man kun udfÃ¸rer
   programmer med systemadministratorrettigheder i det omfang det er
-  strengt nødvendigt.
+  strengt nÃ¸dvendigt.
  </para>
 
  <para>
-  Udover brugere arbejder Unix' adgangsstyring også med grupper.  Hver
+  Udover brugere arbejder Unix' adgangsstyring ogsÃ¥ med grupper.  Hver
   bruger er medlem af en eller flere grupper.  Ligesom man for en
-  enkelt bruger kan styre hvad han skal have adgang til, så kan man
-  også gøre det for en hel gruppe ad gangen.
+  enkelt bruger kan styre hvad han skal have adgang til, sÃ¥ kan man
+  ogsÃ¥ gÃ¸re det for en hel gruppe ad gangen.
  </para>
 
  <para>
-  Unix styrer adgangen til ressourcer på filniveau.  Det betyder at
-  den mest detaljerede opdeling af rettigheder som Unix kan håndtere
+  Unix styrer adgangen til ressourcer pÃ¥ filniveau.  Det betyder at
+  den mest detaljerede opdeling af rettigheder som Unix kan hÃ¥ndtere
   er enkelte dokumenter, kataloger eller eksterne enheder.  Hvis man
   har brug for en mere detaljeret opdeling af adgangen til data,
-  klarer man det typisk ved at køre et databasesystem ovenpå Unix.
+  klarer man det typisk ved at kÃ¸re et databasesystem ovenpÃ¥ Unix.
  </para>
 
  <para>
-  Hver ressource tilhører i Unix én bestemt bruger og én bestemt
-  gruppe.  Man styrer adgangen til ressourcen ved at sætte eller
+  Hver ressource tilhÃ¸rer i Unix Ã©n bestemt bruger og Ã©n bestemt
+  gruppe.  Man styrer adgangen til ressourcen ved at sÃ¦tte eller
   stryge ni flag.  De ni flag er delt ind i tre kategorier efter hvem
-  de gælder for:
+  de gÃ¦lder for:
 
   <itemizedlist>
    <listitem>
     <para>
-     brugeren som ressourcen tilhører (engelsk: "user")
+     brugeren som ressourcen tilhÃ¸rer (engelsk: "user")
     </para>
    </listitem>
 
    <listitem>
     <para>
-     gruppen som ressourcen tilhører (engelsk: "group")
+     gruppen som ressourcen tilhÃ¸rer (engelsk: "group")
     </para>
    </listitem>
 
@@ -64,7 +64,7 @@
   <itemizedlist>
    <listitem>
     <para>
-     læse fra ressourcen (engelsk: "read")
+     lÃ¦se fra ressourcen (engelsk: "read")
     </para>
    </listitem>
 
@@ -83,7 +83,7 @@
 
   <xref linkend="tabel-unix-adgangsstyringsflag"/> giver en
   oversigt over de ni almindelige flag, samt nogle specialflag man
-  også kan sætte eller stryge. Det skal nævnes at flagene kan kombineres
+  ogsÃ¥ kan sÃ¦tte eller stryge. Det skal nÃ¦vnes at flagene kan kombineres
   til at lave en meget fleksibel adgang til data.
  </para>
 
@@ -93,7 +93,7 @@
   <tgroup cols="3">
    <thead>
     <row>
-     <entry>Talværdi</entry>
+     <entry>TalvÃ¦rdi</entry>
      <entry>Symbol</entry>
      <entry>Betydning</entry>
     </row>
@@ -103,43 +103,43 @@
     <row>
      <entry>0400</entry>
      <entry>u+r</entry>
-     <entry>Brugeren som ressourcen tilhører har adgang til at læse fra ressourcen.</entry>
+     <entry>Brugeren som ressourcen tilhÃ¸rer har adgang til at lÃ¦se fra ressourcen.</entry>
     </row>
 
     <row>
      <entry>0200</entry>
      <entry>u+w</entry>
-     <entry>Brugeren som ressourcen tilhører har adgang til at skrive i ressourcen.</entry>
+     <entry>Brugeren som ressourcen tilhÃ¸rer har adgang til at skrive i ressourcen.</entry>
     </row>
 
     <row>
      <entry>0100</entry>
      <entry>u+x</entry>
-     <entry>Brugeren som ressourcen tilhører har adgang til at bruge ressourcen.</entry>
+     <entry>Brugeren som ressourcen tilhÃ¸rer har adgang til at bruge ressourcen.</entry>
     </row>
 
     <row>
      <entry>0040</entry>
      <entry>g+r</entry>
-     <entry>Gruppen som ressourcen tilhører har adgang til at læse fra ressourcen.</entry>
+     <entry>Gruppen som ressourcen tilhÃ¸rer har adgang til at lÃ¦se fra ressourcen.</entry>
     </row>
 
     <row>
      <entry>0020</entry>
      <entry>g+w</entry>
-     <entry>Gruppen som ressourcen tilhører har adgang til at skrive i ressourcen.</entry>
+     <entry>Gruppen som ressourcen tilhÃ¸rer har adgang til at skrive i ressourcen.</entry>
     </row>
 
     <row>
      <entry>0010</entry>
      <entry>g+x</entry>
-     <entry>Gruppen som ressourcen tilhører har adgang til at bruge ressourcen.</entry>
+     <entry>Gruppen som ressourcen tilhÃ¸rer har adgang til at bruge ressourcen.</entry>
     </row>
 
     <row>
      <entry>0004</entry>
      <entry>o+r</entry>
-     <entry>Andre har adgang til at læse fra ressourcen.</entry>
+     <entry>Andre har adgang til at lÃ¦se fra ressourcen.</entry>
     </row>
 
     <row>
@@ -159,8 +159,8 @@
 
      <entry>u+s</entry>
 
-     <entry>Hvis ressourcen er et program, så vil det blive kørt med
-     de rettigheder som brugeren det tilhører har.</entry>
+     <entry>Hvis ressourcen er et program, sÃ¥ vil det blive kÃ¸rt med
+     de rettigheder som brugeren det tilhÃ¸rer har.</entry>
     </row>
 
     <row>
@@ -168,10 +168,10 @@
 
      <entry>g+s</entry>
 
-     <entry>Hvis ressourcen er et program, så vil det blive kørt med
-     de rettigheder som gruppen det tilhører har.  Og hvis ressourcen
-     er et katalog, så vil filer oprettet i det katalog automatisk
-     tilhøre samme gruppe som kataloget tilhører.</entry>
+     <entry>Hvis ressourcen er et program, sÃ¥ vil det blive kÃ¸rt med
+     de rettigheder som gruppen det tilhÃ¸rer har.  Og hvis ressourcen
+     er et katalog, sÃ¥ vil filer oprettet i det katalog automatisk
+     tilhÃ¸re samme gruppe som kataloget tilhÃ¸rer.</entry>
     </row>
 
     <row>
@@ -179,8 +179,8 @@
 
      <entry>o+t</entry>
 
-     <entry>Hvis ressourcen er et program, så vil det blive kopieret
-     til "swap", så det kan starte hurtigere.</entry>
+     <entry>Hvis ressourcen er et program, sÃ¥ vil det blive kopieret
+     til "swap", sÃ¥ det kan starte hurtigere.</entry>
     </row>
    </tbody>
   </tgroup>
@@ -202,52 +202,52 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
 </screen>
 
    Der er en fil (<filename>index.html</filename>) markeret med et
-   <literal>-</literal> som første tegn på linjen og et underkatalog
+   <literal>-</literal> som fÃ¸rste tegn pÃ¥ linjen og et underkatalog
    (<filename>Artikler</filename>) markeret med et
-   <literal>d</literal> som første tegn på linjen.  Begge tilhører
+   <literal>d</literal> som fÃ¸rste tegn pÃ¥ linjen.  Begge tilhÃ¸rer
    brugeren <literal>tyge</literal> og gruppen
    <filename>brahe</filename>.
 
-   Brugeren <literal>tyge</literal> har tilladelse til både at læse og
+   Brugeren <literal>tyge</literal> har tilladelse til bÃ¥de at lÃ¦se og
    skrive i filen <filename>index.html</filename> mens brugere i
-   gruppen <literal>brahe</literal> samt andre brugere på systemet kun
-   har tilladelse til at læse i filen.
+   gruppen <literal>brahe</literal> samt andre brugere pÃ¥ systemet kun
+   har tilladelse til at lÃ¦se i filen.
 
-   Brugeren <literal>tyge</literal> har tilladelse til både at læse og
+   Brugeren <literal>tyge</literal> har tilladelse til bÃ¥de at lÃ¦se og
    skrive i kataloget <filename>Artikler</filename> mens brugere i
-   gruppen <literal>brahe</literal> samt andre brugere på systemet kun
-   har tilladelse til at læse i og bruge kataloget.
+   gruppen <literal>brahe</literal> samt andre brugere pÃ¥ systemet kun
+   har tilladelse til at lÃ¦se i og bruge kataloget.
   </para>
  </example>
 
  <example id="adgangsstyring-ingen-adgang">
-  <title>Hindre alle andre i at læse hjemmekataloget</title>
+  <title>Hindre alle andre i at lÃ¦se hjemmekataloget</title>
 
   <para>
-   Som en første praktisk øvelse i adgangsstyring kan man fratage alle andre
+   Som en fÃ¸rste praktisk Ã¸velse i adgangsstyring kan man fratage alle andre
    alle adgangstilladelser under sit hjemmekatalog med kommandoen:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>chmod -R go-rwx ~/</userinput>
 </screen>
 
-   Kommandoen <command>chmod</command> bruges til at sætte og stryge
-   adgangsstyringsflag.  Tilvalget "-R" betyder at vi ønsker at det
-   skal gøres rekursivt og inkludere alle filer og kataloger under det
+   Kommandoen <command>chmod</command> bruges til at sÃ¦tte og stryge
+   adgangsstyringsflag.  Tilvalget "-R" betyder at vi Ã¸nsker at det
+   skal gÃ¸res rekursivt og inkludere alle filer og kataloger under det
    katalog vi udpeger.  Tilvalget "go-rwx" betyder at vi vil fratage
-   ("-") gruppen og andre ("go") adgangen til at læse, skrive og bruge
-   ("rwx") kataloget (og p.g.a. tilvalget "-R" også de underliggende
+   ("-") gruppen og andre ("go") adgangen til at lÃ¦se, skrive og bruge
+   ("rwx") kataloget (og p.g.a. tilvalget "-R" ogsÃ¥ de underliggende
    filer og kataloger).  <filename>~/</filename>, hjemmekataloget, er
    det katalog hvis adgangsstyringsflag vi vil have
-   <command>chmod</command> til at ændre.
+   <command>chmod</command> til at Ã¦ndre.
   </para>
 
   <para>
-   Husk dog på at adgangsstyringen aldrig hindrer
-   systemadministratoren &mdash; eller programmer der kører med
-   systemadministratorrettigheder &mdash; i at læse, skrive og ændre i
-   dine filer. For netværksdrev er dette dog ikke nødvendigvis sandt.
-   Man kan fra en netværksserver hindre at lokale "root"-brugere får
+   Husk dog pÃ¥ at adgangsstyringen aldrig hindrer
+   systemadministratoren &mdash; eller programmer der kÃ¸rer med
+   systemadministratorrettigheder &mdash; i at lÃ¦se, skrive og Ã¦ndre i
+   dine filer. For netvÃ¦rksdrev er dette dog ikke nÃ¸dvendigvis sandt.
+   Man kan fra en netvÃ¦rksserver hindre at lokale "root"-brugere fÃ¥r
    fuld adgang til data (eng: root-squashing).
 <indexterm><primary>root</primary><secondary>squashing</secondary></indexterm>
   </para>
@@ -267,30 +267,30 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
 
   <indexterm>
    <primary>Kommandooversigt</primary>
-   <secondary>Grundlæggende kommandobeskrivelse</secondary>
+   <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
    <tertiary>umask</tertiary>
   </indexterm>
 
   <para>
    Med <command>umask</command> kan man styre de rettigheder som nye
-   filer får.  Man angiver et tre-cifret tal som anvendes
-   efterfølgende.  Skal det gemmes fra gang til gang man logger ind,
-   så kan man tilføje det til sin kommandofortolkers
-   opsætningsfil(er).  Argumentet til <command>umask</command> er et
+   filer fÃ¥r.  Man angiver et tre-cifret tal som anvendes
+   efterfÃ¸lgende.  Skal det gemmes fra gang til gang man logger ind,
+   sÃ¥ kan man tilfÃ¸je det til sin kommandofortolkers
+   opsÃ¦tningsfil(er).  Argumentet til <command>umask</command> er et
    tal (skrevet med grundtal 8) der definerer hvilke af de
-   grundlæggende ni adgangstilladelser der <emphasis>ikke</emphasis> skal gives til
-   nyoprettede filer.  Tallet dannes ved at lægge talværdierne fra
+   grundlÃ¦ggende ni adgangstilladelser der <emphasis>ikke</emphasis> skal gives til
+   nyoprettede filer.  Tallet dannes ved at lÃ¦gge talvÃ¦rdierne fra
    tabellen <xref linkend="tabel-unix-adgangsstyringsflag"/> for de
    adgangstilladelser der ikke skal gives sammen.
   </para>
 
   <para>
-   Hvis vi udelukkende vil begrænse adgangstilladelserne for
-   <emphasis>andre</emphasis> brugere, skal vi således bruge
-   talværdierne 0001 (ingen brugstilladelser til andre), 0002 (ingen
-   skrivetilladelser til andre) og 0004 (ingen læsetilladelser til
-   andre).  Det er kun de sidste tre cifre der betyder noget, så
-   kommandoen bliver således:
+   Hvis vi udelukkende vil begrÃ¦nse adgangstilladelserne for
+   <emphasis>andre</emphasis> brugere, skal vi sÃ¥ledes bruge
+   talvÃ¦rdierne 0001 (ingen brugstilladelser til andre), 0002 (ingen
+   skrivetilladelser til andre) og 0004 (ingen lÃ¦setilladelser til
+   andre).  Det er kun de sidste tre cifre der betyder noget, sÃ¥
+   kommandoen bliver sÃ¥ledes:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>umask 007</userinput>
@@ -315,7 +315,7 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
   </para>
 
   <para>
-   Til daglig er det nok mest hensigtsmæssigt at andre (også gruppen)
+   Til daglig er det nok mest hensigtsmÃ¦ssigt at andre (ogsÃ¥ gruppen)
    ikke har automatisk har adgang til en brugers filer, hvilket svarer
    til tilvalget <literal>077</literal> til <command>umask</command>:
 
@@ -343,17 +343,17 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
  </example>
 
  <example id="adgangsstyring-websted">
-  <title>Gøre hjemmesiden synlig for Apache</title>
+  <title>GÃ¸re hjemmesiden synlig for Apache</title>
 
   <para>
-   Hvis Apache skal kunne vise din hjemmeside, er det nødvendigt at
-   den bruger, hvis rettigheder Apache kører med, har adgang til at
-   læse både kataloget hjemmesiden ligger i og selve filen med
+   Hvis Apache skal kunne vise din hjemmeside, er det nÃ¸dvendigt at
+   den bruger, hvis rettigheder Apache kÃ¸rer med, har adgang til at
+   lÃ¦se bÃ¥de kataloget hjemmesiden ligger i og selve filen med
    hjemmesiden.  Men efter at vi i <xref
    linkend="adgangsstyring-ingen-adgang"/> har hindret al adgang til
    filerne under <filename>~/</filename> for alle andre end dig selv,
-   har Apache ikke længere adgang til det.  Først giver vi alle adgang
-   til at læse kataloget <filename>~/websted/</filename> og alt hvad
+   har Apache ikke lÃ¦ngere adgang til det.  FÃ¸rst giver vi alle adgang
+   til at lÃ¦se kataloget <filename>~/websted/</filename> og alt hvad
    der ligger i det og dets underkataloger:
 
 <screen>
@@ -363,12 +363,12 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
 
   <para>
    Men det alene er ikke nok, for for at komme til kataloget
-   <filename>~/websted/</filename>, skal Apache også kunne komme til
+   <filename>~/websted/</filename>, skal Apache ogsÃ¥ kunne komme til
    kataloget <filename>~/</filename> som vi stadig har frataget alle
    andre brugere alle adgangstilladelser til.  For at kunne komme til
    en fil eller et underkatalog i et katalog skal man have adgang til
-   at bruge kataloget, så vi sætter "x"-flaget for "andre brugere"
-   ("o") på katalogerne <filename>~/</filename> og
+   at bruge kataloget, sÃ¥ vi sÃ¦tter "x"-flaget for "andre brugere"
+   ("o") pÃ¥ katalogerne <filename>~/</filename> og
    <filename>~/websted/</filename>:
 
 <screen>
@@ -378,9 +378,9 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
 
   <para>
    Hvis <filename>~/websted/</filename> har nogle underkataloger som
-   Apache skal kunne læse filer fra, så bliver du også nødt til at
-   udføre kommandoen <command>chmod o+x</command> på dem.  Det kan for
-   eksempel gøres sådan her:
+   Apache skal kunne lÃ¦se filer fra, sÃ¥ bliver du ogsÃ¥ nÃ¸dt til at
+   udfÃ¸re kommandoen <command>chmod o+x</command> pÃ¥ dem.  Det kan for
+   eksempel gÃ¸res sÃ¥dan her:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>find ~/websted/ -type d -print0 | xargs -0 chmod o+x</userinput>
@@ -388,15 +388,15 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
   </para>
 
   <para>
-   Hvis du har grund til at gøre nogle data på dit websted synlige for
-   Apache, men ikke for alle brugere på maskinen, kan du bede din
-   systemadministrator om at sørge for at kataloget med dit websted
-   hører til den gruppe med hvis adgangstilladelser Apache kører med
-   og så sætte "x"-flaget på det katalog
+   Hvis du har grund til at gÃ¸re nogle data pÃ¥ dit websted synlige for
+   Apache, men ikke for alle brugere pÃ¥ maskinen, kan du bede din
+   systemadministrator om at sÃ¸rge for at kataloget med dit websted
+   hÃ¸rer til den gruppe med hvis adgangstilladelser Apache kÃ¸rer med
+   og sÃ¥ sÃ¦tte "x"-flaget pÃ¥ det katalog
    (<filename>~/websted/</filename> ovenfor) for gruppen i stedet for
-   for "andre brugere".  Dette vil i praksis kun være relevant, hvis
-   du har adgangskodebeskyttede oplysninger på webstedet, for ellers
-   vil de andre brugere på maskinen jo under alle omstændigheder kunne
+   for "andre brugere".  Dette vil i praksis kun vÃ¦re relevant, hvis
+   du har adgangskodebeskyttede oplysninger pÃ¥ webstedet, for ellers
+   vil de andre brugere pÃ¥ maskinen jo under alle omstÃ¦ndigheder kunne
    komme til dataene gennem Apache.
   </para>
  </example>
@@ -406,12 +406,12 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
 
   <para>
    Hvis vi skal sidde og bringe orden i familiebillederne, kan det
-   være praktisk, hvis resten af familien også kan komme med nye
+   vÃ¦re praktisk, hvis resten af familien ogsÃ¥ kan komme med nye
    billeder til samlingen.  Vi opretter derfor kataloget
    <filename>~/familiebilleder/</filename> som hele familien (gruppen
-   "brahe") skal kunne læse og kataloget
-   <filename>~/familiebilleder/nye/</filename>, hvor de også skal
-   kunne tilføje billeder:
+   "brahe") skal kunne lÃ¦se og kataloget
+   <filename>~/familiebilleder/nye/</filename>, hvor de ogsÃ¥ skal
+   kunne tilfÃ¸je billeder:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>mkdir ~/familiebilleder/</userinput>
@@ -421,10 +421,10 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
 <prompt>[tyge@hven ~]$ </prompt><userinput>chmod g+w ~/familiebilleder/nye/</userinput>
 </screen>
 
-   Bemærk at der desværre ikke findes en mulighed for at give
-   tilladelse til at tilføje data, der ikke også giver mulighed for at
+   BemÃ¦rk at der desvÃ¦rre ikke findes en mulighed for at give
+   tilladelse til at tilfÃ¸je data, der ikke ogsÃ¥ giver mulighed for at
    slette eller overskrive data.  Det betyder for eksempel at
-   medlemmerne af gruppen "brahe" nu både kan tilføje og slette
+   medlemmerne af gruppen "brahe" nu bÃ¥de kan tilfÃ¸je og slette
    billeder i kataloget <filename>~/familiebilleder/nye/</filename>.
   </para>
 
@@ -434,11 +434,11 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
   <title>Direkte styring af enheder</title>
 
   <para>
-   Hvis du har koblet et instrument på enheden
+   Hvis du har koblet et instrument pÃ¥ enheden
    <filename>/dev/astrolabrium</filename> som alle brugerne i gruppen
-   "astronomi" skal kunne styre, bliver du som root nødt til at give dem adgang
-   til at skrive til enheden (så de kan sende kommandoer til
-   instrumentet) og til at læse fra enheden (så de kan modtage data
+   "astronomi" skal kunne styre, bliver du som root nÃ¸dt til at give dem adgang
+   til at skrive til enheden (sÃ¥ de kan sende kommandoer til
+   instrumentet) og til at lÃ¦se fra enheden (sÃ¥ de kan modtage data
    fra instrumentet).
 
 <screen>
@@ -451,10 +451,10 @@ Password:
 brw-rw----    1 root     astronom   2,   0 apr 11  2002 /dev/astrolabrium
 </screen>
 
-   Da enheden er ejet af systemadministratoren, bliver vi først nødt
+   Da enheden er ejet af systemadministratoren, bliver vi fÃ¸rst nÃ¸dt
    til at skifte til systemadministratorkontoen med kommandoen
-   <command>su -</command>.  Bemærk også at kommandoen <command>ls
-   -l</command> kun viser de første otte bogstaver i navnet på en
+   <command>su -</command>.  BemÃ¦rk ogsÃ¥ at kommandoen <command>ls
+   -l</command> kun viser de fÃ¸rste otte bogstaver i navnet pÃ¥ en
    bruger eller en gruppe.
   </para>
  </example>
@@ -473,40 +473,40 @@ brw-rw----    1 root     astronom   2,   0 apr 11  2002 /dev/astrolabrium
 
   <indexterm>
    <primary>kommandooversigt</primary>
-   <secondary>grundlæggende kommandobeskrivelse</secondary>
+   <secondary>grundlÃ¦ggende kommandobeskrivelse</secondary>
    <tertiary>suid</tertiary>
   </indexterm>
 
   <para>
-   Normalt vil det være sådan, at når du starter et program op, f.eks.
-   kommandoen <command>ls</command>, vil Linux køre dette program som
-   den bruger, der startede programmet. Nogle gange kan det være
-   nødvendigt at give en bruger flere rettigheder uden at skulle give
-   brugeren systemadministratorrettigheder (på linje med
+   Normalt vil det vÃ¦re sÃ¥dan, at nÃ¥r du starter et program op, f.eks.
+   kommandoen <command>ls</command>, vil Linux kÃ¸re dette program som
+   den bruger, der startede programmet. Nogle gange kan det vÃ¦re
+   nÃ¸dvendigt at give en bruger flere rettigheder uden at skulle give
+   brugeren systemadministratorrettigheder (pÃ¥ linje med
    <literal>root</literal>).
   </para>
 
   <para>
    Suid (set user id) er et begreb (ikke et program), som giver mulighed for,
-   at du kan udføre et program, som om du var en anden
+   at du kan udfÃ¸re et program, som om du var en anden
    bruger. Det bruges normalt til at give almindelige brugere
-   rettigheder til at udføre programmer, som om de var superbrugeren
+   rettigheder til at udfÃ¸re programmer, som om de var superbrugeren
    (<literal>root</literal>).
 
 <screen>
 <prompt>[tyge@hven MitKatalog]$ </prompt><userinput>chmod +s FILNAVN</userinput>
 </screen>
 
-   Når kommandoen <command>FILNAVN</command> udføres, vil Linux-kernen
-   køre programmet med rettighederne for brugeren, der
+   NÃ¥r kommandoen <command>FILNAVN</command> udfÃ¸res, vil Linux-kernen
+   kÃ¸re programmet med rettighederne for brugeren, der
    <emphasis>ejer</emphasis> filen, og ikke som brugeren, der starter
    programmet.
   </para>
 
   <para>
    Dette kan f.eks. ses ved programmet <command>ping</command>, der skal
-   være "suid root". Det skyldes, at det kun er root, der kan åbne den
-   slags netværksforbindelse, som <command>ping</command> bruger.
+   vÃ¦re "suid root". Det skyldes, at det kun er root, der kan Ã¥bne den
+   slags netvÃ¦rksforbindelse, som <command>ping</command> bruger.
   </para>
 
 <screen>
@@ -515,13 +515,13 @@ brw-rw----    1 root     astronom   2,   0 apr 11  2002 /dev/astrolabrium
 </screen>
 
 <para>
-Suid er den største sikkerhedssynder på Unix-systemer. Det er f.eks. en
-dødssynd at sætte suid root for kommandofortolkerprogrammer, da det er
+Suid er den stÃ¸rste sikkerhedssynder pÃ¥ Unix-systemer. Det er f.eks. en
+dÃ¸dssynd at sÃ¦tte suid root for kommandofortolkerprogrammer, da det er
 muligt for en bruger at narre programmet til at efterlade en
-kommandofortolker med systemadministratorrettigheder. Jo færre
-suid filer du har på dit system jo bedre, men nogle ting er nødt til at
-være suid root for at fungere. Du kan se hvilke filer, der er suid root
-med følgende kommando:
+kommandofortolker med systemadministratorrettigheder. Jo fÃ¦rre
+suid filer du har pÃ¥ dit system jo bedre, men nogle ting er nÃ¸dt til at
+vÃ¦re suid root for at fungere. Du kan se hvilke filer, der er suid root
+med fÃ¸lgende kommando:
 </para>
 
 <screen>

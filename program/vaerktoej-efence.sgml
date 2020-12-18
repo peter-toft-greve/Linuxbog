@@ -8,15 +8,15 @@
  </indexterm>
 
  <indexterm>
-  <primary>bufferoverløb</primary>
+  <primary>bufferoverlÃ¸b</primary>
   <secondary>find</secondary>
  </indexterm>
 
  <para>
   Electric Fence er et bibliotek der er uvurderligt til hurtigt finde
-  bufferoverløb eller -underløb.  Et typisk problem i C og C++ (men
+  bufferoverlÃ¸b eller -underlÃ¸b.  Et typisk problem i C og C++ (men
   praktisk taget ikke i nogle andre sprog) er at man allokerer en tabel,
-  men forsøger at skrive efter tabellens slut eller før dens start. En
+  men forsÃ¸ger at skrive efter tabellens slut eller fÃ¸r dens start. En
   anden typisk fejl er at allokere en streng der er for lille, som i
   dette eksempel:
 
@@ -41,8 +41,8 @@ int main(void)
  </para>
 
  <para>
-  Oversættes dette program med <command>gcc -o test test.c</command>,
-  så kan der ske alt muligt når det køres, men typisk vil det skrive:
+  OversÃ¦ttes dette program med <command>gcc -o test test.c</command>,
+  sÃ¥ kan der ske alt muligt nÃ¥r det kÃ¸res, men typisk vil det skrive:
 <screen>
 q:low
 p:efence test buffer overflow
@@ -51,23 +51,23 @@ p:efence test buffer overflow
 
  <para>
   En streng kopieres til strengpegeren <literal>p</literal>, men
-  strengen er længere end den hukommelsesblok der er
+  strengen er lÃ¦ngere end den hukommelsesblok der er
   allokeret. Strcpy overskriver derfor delvist strengen q "efence
-  test". Et program kan sagtens køre videre efter et bufferoverløb,
-  men måske er dette bufferoverløb årsagen til at programmet fejler
-  katastrofalt en halv time senere. Det kan derfor være uhyre svært at
-  finde denne type fejl da de to ting tilsyneladende vil være helt
+  test". Et program kan sagtens kÃ¸re videre efter et bufferoverlÃ¸b,
+  men mÃ¥ske er dette bufferoverlÃ¸b Ã¥rsagen til at programmet fejler
+  katastrofalt en halv time senere. Det kan derfor vÃ¦re uhyre svÃ¦rt at
+  finde denne type fejl da de to ting tilsyneladende vil vÃ¦re helt
   urelaterede.
  </para>
 
  <para>
-  Oversættes programmet i stedet med <command>gcc -o test test.c -ggdb
+  OversÃ¦ttes programmet i stedet med <command>gcc -o test test.c -ggdb
   -lefence</command> vil programmet fejle og gemme en
-  <filename>core</filename>-fil når det udfører den anden strcpy()
-  linje.  Køres <command>ddd test core</command> så vil debuggeren
-  fortælle i hvilken linje bufferoverløbet skete. <command>man
+  <filename>core</filename>-fil nÃ¥r det udfÃ¸rer den anden strcpy()
+  linje.  KÃ¸res <command>ddd test core</command> sÃ¥ vil debuggeren
+  fortÃ¦lle i hvilken linje bufferoverlÃ¸bet skete. <command>man
   efence</command> giver en masse information om hvordan efence
-  virker, og hvordan det kan bruges til at teste for bufferunderløb og
+  virker, og hvordan det kan bruges til at teste for bufferunderlÃ¸b og
   meget andet.
  </para>
 </sect1>

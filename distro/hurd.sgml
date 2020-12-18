@@ -8,9 +8,9 @@ Hurd er GNU projektets sidste store mangel - en kerne til et GNU
 styresystem<footnote id="hurd-comment"><para>Richard Stallman
 kalder jo Linux for GNU/Linux -- med en vis
 ret.</para></footnote>.
-Efter GNU-projektet havde lavet GCC-oversætteren, Emacs, Glib-C, GDB og mange
-andre programmer indenfor <emphasis>fri software</emphasis>, så manglede
-der en stor brik for at GNU ville udgøre et komplet UNIX-kompatibelt 
+Efter GNU-projektet havde lavet GCC-oversÃ¦tteren, Emacs, Glib-C, GDB og mange
+andre programmer indenfor <emphasis>fri software</emphasis>, sÃ¥ manglede
+der en stor brik for at GNU ville udgÃ¸re et komplet UNIX-kompatibelt 
 styresystem som var under GPL-licensen. Imidlertid kom styresystemet Linux
 i starten af 1990'erne og lukkede cirklen.</para>
 
@@ -27,13 +27,13 @@ Torvalds - og ikke af Free Software Foundation (FSF).
 I slutningen af 1990'erne kom en konflikt mellem
 <emphasis>open source</emphasis>-begrebet (Linus Torvalds, Eric Raymond mv.) 
 og <emphasis>free software</emphasis> (Richard Stallman mv.). 
-Reelt var en diskussion om målet var at
+Reelt var en diskussion om mÃ¥let var at
 brugere <emphasis>bare skal bruge den fri software</emphasis> eller om
-det var vigtigt at huske på <emphasis>friheden</emphasis> i 
+det var vigtigt at huske pÃ¥ <emphasis>friheden</emphasis> i 
 <emphasis>free software</emphasis> og vigtigheden af GNU-projektet.
-Selvom dette gav mere fokus på GNU og FSF, så var det eneste synlige resultat
+Selvom dette gav mere fokus pÃ¥ GNU og FSF, sÃ¥ var det eneste synlige resultat
 at man nogle steder taler om <emphasis>FLOSS</emphasis> 
-(Free/Libre/Open Source Software) - en egentlig fornyet fokus på GNU og
+(Free/Libre/Open Source Software) - en egentlig fornyet fokus pÃ¥ GNU og
 Hurd kom aldrig.
 </para>
 
@@ -44,35 +44,35 @@ Hurd kom aldrig.
 
 
 <para>
-At Linux voksede så voldsomt betød at GNU projektets systemsystem "Hurd" altid
-har levet sit eget stille liv uden ret meget bevågenhed. Der har været arbejdet på projektet i 
-flere år og i slutningen af 2003 er man nået til version 0.2.
-Hurd står for "Hird of Unix-Replacing Daemons", men det virker ikke som om der er
+At Linux voksede sÃ¥ voldsomt betÃ¸d at GNU projektets systemsystem "Hurd" altid
+har levet sit eget stille liv uden ret meget bevÃ¥genhed. Der har vÃ¦ret arbejdet pÃ¥ projektet i 
+flere Ã¥r og i slutningen af 2003 er man nÃ¥et til version 0.2.
+Hurd stÃ¥r for "Hird of Unix-Replacing Daemons", men det virker ikke som om der er
 ret meget "Unix-Replacing" endsige ret af af en "hird"... der er kun lavet tre minimale
-ændringer i systemet i 2003.
+Ã¦ndringer i systemet i 2003.
 </para>
 
  <sect1 id="distro-hurd-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Hurd</secondary>
   </indexterm>
 
 <para>
 Hurd er ikke for den almindelige desktop-bruger. Der er ikke
-understøttelse for lydkort, og generelt er det svært at få drivere til
-hardware under GNU/Hurd. Debian-folkene har været aktive for at hjælpe
+understÃ¸ttelse for lydkort, og generelt er det svÃ¦rt at fÃ¥ drivere til
+hardware under GNU/Hurd. Debian-folkene har vÃ¦ret aktive for at hjÃ¦lpe
 Hurd. Man har lavet en specialudgave af Debian til i386 computere hvor Linux-kernen er
-erstattet med Hurd. Underligt nok, så er svært ved at finde Hurd cdrommer.
-Det eneste sted jeg fandt dem var på  <ulink
+erstattet med Hurd. Underligt nok, sÃ¥ er svÃ¦rt ved at finde Hurd cdrommer.
+Det eneste sted jeg fandt dem var pÃ¥  <ulink
 url="ftp://ftp.planetmirror.com/pub/debian-cd/unofficial/hurd">ftp://ftp.planetmirror.com/pub/debian-cd/unofficial/hurd</ulink>. Herfra hentes
 fire cd-rom'er.  
 </para>
 
 <para>
-Systemet er i praksis for meget trofaste GNU-tilhængere eller 
+Systemet er i praksis for meget trofaste GNU-tilhÃ¦ngere eller 
 styresystem-interesserede. 
 </para>
 
@@ -88,17 +88,17 @@ styresystem-interesserede.
 
 <para>
 Installationen var lidt af en katastrofe. Installationen bygger 
-på Debian GNU/Linux, så den skal man kende i forvejen. Man booter
-på cdrom nummer 1, hvor man guides igennem en tekstbaseret installation. Desværre er der ingen
-umiddelbar mulighed for at få installeret en boot-loader. Derfor kunne
-Hurd ikke startes op. Det er langt fra at være klar til almindelig brug...
+pÃ¥ Debian GNU/Linux, sÃ¥ den skal man kende i forvejen. Man booter
+pÃ¥ cdrom nummer 1, hvor man guides igennem en tekstbaseret installation. DesvÃ¦rre er der ingen
+umiddelbar mulighed for at fÃ¥ installeret en boot-loader. Derfor kunne
+Hurd ikke startes op. Det er langt fra at vÃ¦re klar til almindelig brug...
 </para>
 </sect1>
 
 <sect1 id="distro-hurd-brug">
 <title>Brugen af Hurd</title>
 <para>
-Tja, hvis bare installationen virkede, så kunne vi se om det
+Tja, hvis bare installationen virkede, sÃ¥ kunne vi se om det
 kunne bruges.
 </para>
 </sect1>
@@ -107,8 +107,8 @@ kunne bruges.
 <sect1 id="distro-hurd-vurdering">
 <title>Samlet vurdering af Hurd</title>
 <para>
-Vi venter på Hurd, har ventet længe på Hurd, og vi kommer til at vente 
-meget lang tid.... Det er vist ikke et aktivt projekt længere.
+Vi venter pÃ¥ Hurd, har ventet lÃ¦nge pÃ¥ Hurd, og vi kommer til at vente 
+meget lang tid.... Det er vist ikke et aktivt projekt lÃ¦ngere.
 </para>
 </sect1>
 

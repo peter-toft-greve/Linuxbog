@@ -7,12 +7,12 @@
 <sect1 id="ooo-udskrivningen">
   <title>Start udskrivning</title>
 
-<para>Du udskriver ved at vælge menupunktet <emphasis>Filer/Udskriv</emphasis> (tastatur:
-    <emphasis>Ctrl-P</emphasis>). Herved åbnes en dialogboks, hvor du kan angive hvilke
+<para>Du udskriver ved at vÃ¦lge menupunktet <emphasis>Filer/Udskriv</emphasis> (tastatur:
+    <emphasis>Ctrl-P</emphasis>). Herved Ã¥bnes en dialogboks, hvor du kan angive hvilke
     sider, der skal udskrives, antal eksemplarer osv.:</para>
 
 <para>
-I feltet <emphasis>Udskriftsområde</emphasis> kan du vælge:
+I feltet <emphasis>UdskriftsomrÃ¥de</emphasis> kan du vÃ¦lge:
 
 <itemizedlist mark="bullet">
   <listitem>
@@ -24,9 +24,9 @@ I feltet <emphasis>Udskriftsområde</emphasis> kan du vælge:
   <listitem>
 
 <para><emphasis>Sider</emphasis>, hvor du kan skrive hvilke sider du vil have.
-            Siderne adskilles af semikolon og du kan få et interval af sider
+            Siderne adskilles af semikolon og du kan fÃ¥ et interval af sider
             ved at skrive en bindestreg: Skriver du f.eks. <emphasis>2; 4; 7-10</emphasis>,
-            så udskrives siderne 2, 4, 7, 8, 9 og 10.</para>
+            sÃ¥ udskrives siderne 2, 4, 7, 8, 9 og 10.</para>
 
 </listitem>
       
@@ -40,7 +40,7 @@ I feltet <emphasis>Udskriftsområde</emphasis> kan du vælge:
       <listitem>
 
 <para>Knappen <emphasis>Flere</emphasis> giver mulighed for flere indstillinger, som
-        ikke gennemgås her.</para>
+        ikke gennemgÃ¥s her.</para>
 
 </listitem>
 

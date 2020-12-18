@@ -1,6 +1,6 @@
 <?xml encoding="UTF-8" ?>
 
-<!-- Oprindeligt skrevet af Atte André Jensen -->
+<!-- Oprindeligt skrevet af Atte AndrÃ© Jensen -->
 
 <sect1 id="xfce">
  <title>XFce</title>
@@ -15,10 +15,10 @@
  </indexterm>
 
  <para>
-  Xfce (udtales "X-face"") er en mellemstor vindueshåndtering. Den er
-  netop udvilket som reaktion på Gnome og KDE tendens til vokse sig
-  større og tungere.  Derfor er det en erklæret del af målsætningen at
-  den skal være hurtig samtidig med at være grafisk tiltalende og let at
+  Xfce (udtales "X-face"") er en mellemstor vindueshÃ¥ndtering. Den er
+  netop udvilket som reaktion pÃ¥ Gnome og KDE tendens til vokse sig
+  stÃ¸rre og tungere.  Derfor er det en erklÃ¦ret del af mÃ¥lsÃ¦tningen at
+  den skal vÃ¦re hurtig samtidig med at vÃ¦re grafisk tiltalende og let at
   bruge.
 
   <figure id="xfce-fig" float="1">
@@ -29,16 +29,16 @@
 
  <sect2 id="wm-xfce-instalation">
   <title>
-   Opsætning af XFce
+   OpsÃ¦tning af XFce
   </title>
 
   <para>
-   Opsætningen er, ihvertfald under debian yderst ligetil:
+   OpsÃ¦tningen er, ihvertfald under debian yderst ligetil:
 
    <orderedlist>
     <listitem>
      <para>
-      De fornødne pakker hentes med <command>apt-get install xfce4</command>
+      De fornÃ¸dne pakker hentes med <command>apt-get install xfce4</command>
      </para>
     </listitem>
 
@@ -54,13 +54,13 @@
   </para>
 
   <para>
-   Standardopsætningen er den flotteste standardopsætning jeg endnu
+   StandardopsÃ¦tningen er den flotteste standardopsÃ¦tning jeg endnu
    har set, med features som:
 
    <itemizedlist mark='bullet'>
     <listitem>
      <para>
-      Bygget på gtk2, hvilket betyder antialiased skriftsnit
+      Bygget pÃ¥ gtk2, hvilket betyder antialiased skriftsnit
      </para>
     </listitem>
     <listitem>
@@ -70,13 +70,13 @@
     </listitem>
     <listitem>
      <para>
-      Al den grundlæggende opsætning kan gøres ved at klikke sig
+      Al den grundlÃ¦ggende opsÃ¦tning kan gÃ¸res ved at klikke sig
       frem
      </para>
     </listitem>
     <listitem>
      <para>
-      Har sin egen glimrende filhåndtering
+      Har sin egen glimrende filhÃ¥ndtering
      </para>
     </listitem>
    </itemizedlist>
@@ -95,12 +95,12 @@
    <itemizedlist>
     <listitem>
      <para>
-      Brugerdefinerede menuer sættes op ved at rette i XML-filer
+      Brugerdefinerede menuer sÃ¦ttes op ved at rette i XML-filer
      </para>
     </listitem>
     <listitem>
      <para>
-      Hvis man vil have en batterimonitor må man indtil videre selv
+      Hvis man vil have en batterimonitor mÃ¥ man indtil videre selv
       kompilere den.
      </para>
     </listitem>
@@ -108,9 +108,9 @@
   </para>
 
   <para>
-   Alt i alt kan det klart anbefales at prøve XFce hvis man er træt af
-   de to store og gerne vil have noget lidt pænere at kikke på og lettere
-   at gå til end de mange små.
+   Alt i alt kan det klart anbefales at prÃ¸ve XFce hvis man er trÃ¦t af
+   de to store og gerne vil have noget lidt pÃ¦nere at kikke pÃ¥ og lettere
+   at gÃ¥ til end de mange smÃ¥.
   </para>
  </sect2>
 </sect1>

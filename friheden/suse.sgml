@@ -2,33 +2,33 @@
 <chapter id="suse">
 <title>Installation af SuSE 8.2</title>
 
-<!-- Skrevet af Erling Sjørlund og til dels Peter Toft -->
+<!-- Skrevet af Erling SjÃ¸rlund og til dels Peter Toft -->
 
 <indexterm><primary>SuSE</primary></indexterm>
 
 
 <para>
-SuSE Linux version 8.2 installeres og konfigureres ved hjælp af det
-medfølgende systemværktøj, YaST2 (Yet another System Tool - version 2).
-YaST2 overflødiggør i udstrakt grad nødvendigheden
-af tidligere tiders nøjagtige kendskab til alle mulige
-opsætningsværktøjer og -filer. Du slipper f.eks. for at skulle
+SuSE Linux version 8.2 installeres og konfigureres ved hjÃ¦lp af det
+medfÃ¸lgende systemvÃ¦rktÃ¸j, YaST2 (Yet another System Tool - version 2).
+YaST2 overflÃ¸diggÃ¸r i udstrakt grad nÃ¸dvendigheden
+af tidligere tiders nÃ¸jagtige kendskab til alle mulige
+opsÃ¦tningsvÃ¦rktÃ¸jer og -filer. Du slipper f.eks. for at skulle
 anvende fdisk til at skabe partitionerne, idet YaST2 har et fornuftigt
 brugerinterface til dette.
 </para>
 
 <para>
 SuSE Linux 8.2 findes i flere udgaver. En officiel "professional"
-købeversion med 7 cd-rom'er og en DVD og en "personal" købeversion.
-De to første købe-versioner indeholder over 1500 programpakker og en
-trykt engelsksproget manual på ca. 500 sider. Dette gør SuSE til den
-Linux-distribution, der har de fleste programmer og værktøjer med.
+kÃ¸beversion med 7 cd-rom'er og en DVD og en "personal" kÃ¸beversion.
+De to fÃ¸rste kÃ¸be-versioner indeholder over 1500 programpakker og en
+trykt engelsksproget manual pÃ¥ ca. 500 sider. Dette gÃ¸r SuSE til den
+Linux-distribution, der har de fleste programmer og vÃ¦rktÃ¸jer med.
 </para>
 
 <para>
-Der findes også en version, der kan installeres direkte over internettet.
-Denne kan findes på <ulink url="ftp://ftp.sunet.se/pub/Linux/distributions/suse/suse/i386/8.2">ftp://ftp.sunet.se/pub/Linux/distributions/suse/suse/i386/8.2</ulink>. Det kræver i praksis ADSL eller bedre før dette er tilrådeligt, da
-der skal hentes store mængder data.
+Der findes ogsÃ¥ en version, der kan installeres direkte over internettet.
+Denne kan findes pÃ¥ <ulink url="ftp://ftp.sunet.se/pub/Linux/distributions/suse/suse/i386/8.2">ftp://ftp.sunet.se/pub/Linux/distributions/suse/suse/i386/8.2</ulink>. Det krÃ¦ver i praksis ADSL eller bedre fÃ¸r dette er tilrÃ¥deligt, da
+der skal hentes store mÃ¦ngder data.
 </para>
 
 
@@ -36,13 +36,13 @@ der skal hentes store mængder data.
 <sect1 id="susehardware">
 <title>Hardwarekrav til SuSE 8.2</title>
 <para>
-SuSE Linux stiller følgende krav til hardware:
+SuSE Linux stiller fÃ¸lgende krav til hardware:
 </para>
 <itemizedlist mark="bullet" spacing="compact">
 <listitem>
  <para>
    En Intel 32 bit-kompatibel CPU (80386 eller senere). Der er
-   efterhånden god understøttelse af andre mærker end Intel,
+   efterhÃ¥nden god understÃ¸ttelse af andre mÃ¦rker end Intel,
    f.eks. AMD.
  </para>
 </listitem>
@@ -53,9 +53,9 @@ SuSE Linux stiller følgende krav til hardware:
 </listitem>
 <listitem>
  <para>
-   30 Mb fri diskplads, men vil du bruge det til noget reelt, bør du
+   30 Mb fri diskplads, men vil du bruge det til noget reelt, bÃ¸r du
    regne med 1.5 Gbyte. Det koster at installere alle de
-   programmer, og 1.5 Gbyte - 2.5 Gbyte er ikke et dårligt udgangspunkt.
+   programmer, og 1.5 Gbyte - 2.5 Gbyte er ikke et dÃ¥rligt udgangspunkt.
  </para>
 </listitem>
 </itemizedlist>
@@ -65,19 +65,19 @@ SuSE Linux stiller følgende krav til hardware:
 <sect1 id="Generelt"><title>Generelt om SuSE 8.2</title>
  <para>
  SuSE er med version 8.2 blevet endnu lettere at installere end
- tidligere. Du får en meget komplet samling velkonfigurerede
- programmer, og en installation, der langt hen ad vejen kører helt
+ tidligere. Du fÃ¥r en meget komplet samling velkonfigurerede
+ programmer, og en installation, der langt hen ad vejen kÃ¸rer helt
  automatisk.
 </para>
 
 <figure id="susestart" float="1">
- <title>Bootskærmen ved start fra cd-rom</title>
+ <title>BootskÃ¦rmen ved start fra cd-rom</title>
  <graphic fileref="SuSE_80_01.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-  Som det fremgår af skærmbilledet kan man bruge SuSE's cd 1 (eller
-  den medfølgende DVD) både til installation, redningssystem og simpel
+  Som det fremgÃ¥r af skÃ¦rmbilledet kan man bruge SuSE's cd 1 (eller
+  den medfÃ¸lgende DVD) bÃ¥de til installation, redningssystem og simpel
   start af et installeret system. Denne beskrivelse omhandler kun
   installationsdelen.
 </para>
@@ -88,11 +88,11 @@ SuSE Linux stiller følgende krav til hardware:
 </figure>
 
 <para>
-  Det første valg i installationen er hvilket sprog, der skal bruges
+  Det fÃ¸rste valg i installationen er hvilket sprog, der skal bruges
   undervejs. Hvor den danske udgave tidligere (i version 7.2) var
-  skæmmet af en del uoversættelser og misdannelser, er version 8
-  kommet meget fint med. Det kan derfor anbefales at vælge den danske
-  udgave. Fejlmeldinger på engelsk kan dog stadig forekomme.
+  skÃ¦mmet af en del uoversÃ¦ttelser og misdannelser, er version 8
+  kommet meget fint med. Det kan derfor anbefales at vÃ¦lge den danske
+  udgave. Fejlmeldinger pÃ¥ engelsk kan dog stadig forekomme.
 </para>
 
 <figure id="susestart2" float="1">
@@ -101,11 +101,11 @@ SuSE Linux stiller følgende krav til hardware:
 </figure>
  
 <para>
-  SuSE detekterer maskinens hardware. I mit tilfælde manglede den dog
-  at finde en Mylex raid-controller, faktisk den der bærer de
-  harddiske, der skal installeres på.  Løsningen på den slags
+  SuSE detekterer maskinens hardware. I mit tilfÃ¦lde manglede den dog
+  at finde en Mylex raid-controller, faktisk den der bÃ¦rer de
+  harddiske, der skal installeres pÃ¥.  LÃ¸sningen pÃ¥ den slags
   problemer er at afbryde installationen, hvorefter den gamle
-  tekstbaserede skærm dukker op. Denne giver adgang til at installere
+  tekstbaserede skÃ¦rm dukker op. Denne giver adgang til at installere
   diverse drivere, herunder en der giver adgang til netop min
   controller.  
 </para>
@@ -116,9 +116,9 @@ SuSE Linux stiller følgende krav til hardware:
 </figure>
 
 <para>
-  Når alle enheder er på plads får du en sidste advarsel om, 
-  at installationen nu går i
-  gang. Vælg "Ja, installer" og læn dig tilbage mens der arbejdes.
+  NÃ¥r alle enheder er pÃ¥ plads fÃ¥r du en sidste advarsel om, 
+  at installationen nu gÃ¥r i
+  gang. VÃ¦lg "Ja, installer" og lÃ¦n dig tilbage mens der arbejdes.
 </para>
  
 <para>
@@ -132,14 +132,14 @@ SuSE Linux stiller følgende krav til hardware:
 </figure>
  
 <para>
-  Du får mulighed for at ændre på partitioneringen af harddisken, men
-  har du ikke endog meget gode grunde til det, så lad være. SuSE
-  vælger som standard at lægge en swap-partition ud som er tilpasset
-  mængden af RAM i maskinen, hvorefter resten af disken bruges til
+  Du fÃ¥r mulighed for at Ã¦ndre pÃ¥ partitioneringen af harddisken, men
+  har du ikke endog meget gode grunde til det, sÃ¥ lad vÃ¦re. SuSE
+  vÃ¦lger som standard at lÃ¦gge en swap-partition ud som er tilpasset
+  mÃ¦ngden af RAM i maskinen, hvorefter resten af disken bruges til
   /. Hvis du ved hvad du leger med, gives der adgang til at oprette
-  både raid og LVM. Sidstnævnte er et system, som tillader en meget
+  bÃ¥de raid og LVM. SidstnÃ¦vnte er et system, som tillader en meget
   fleksibel brug af flere harddiske, en slags virtuel partitionering
-  på tværs af diskene. Som standard foreslår SuSE 8.2 at formattere /
+  pÃ¥ tvÃ¦rs af diskene. Som standard foreslÃ¥r SuSE 8.2 at formattere /
   med ReiserFS, og ikke som i billedet herover Ext3.
 </para>
 
@@ -149,13 +149,13 @@ SuSE Linux stiller følgende krav til hardware:
 </figure>
  
 <para>
-  Der skal naturligvis også vælges programmer. Her byder SuSE på fire
-  forslag, men der gives også en adgang til mere detaljerede
-  valg. Hvis det er en server du skal installere må du en tur ind over
+  Der skal naturligvis ogsÃ¥ vÃ¦lges programmer. Her byder SuSE pÃ¥ fire
+  forslag, men der gives ogsÃ¥ en adgang til mere detaljerede
+  valg. Hvis det er en server du skal installere mÃ¥ du en tur ind over
   den del, mens en almindelig arbejdsplads fint kan klares med et af
-  de fire standardvalg. Det skal bemærkes, at du senere kan installere
-  programmer ganske let med YaST2, så risikoen ved blot at tage en
-  standardløsning i første omgang er ikke stor.
+  de fire standardvalg. Det skal bemÃ¦rkes, at du senere kan installere
+  programmer ganske let med YaST2, sÃ¥ risikoen ved blot at tage en
+  standardlÃ¸sning i fÃ¸rste omgang er ikke stor.
 </para>
 
 <figure id="susestart6" float="1">
@@ -164,12 +164,12 @@ SuSE Linux stiller følgende krav til hardware:
 </figure>
  
 <para>
-  SuSE giver både en ny (den viste) og en gammel ("Vis pakkesæt")
+  SuSE giver bÃ¥de en ny (den viste) og en gammel ("Vis pakkesÃ¦t")
   opdeling af programmerne.  Begge dele er egentlig lige
-  uoverskuelige, men er du vant til SuSE kan det være en fordel at
-  kunne få den traditionelle opdeling vist.  Hertil kommer en meget
-  effektiv mulighed for at søge - noget man naturligvis først får
-  glæde af, når man ved, hvad man skal søge efter.
+  uoverskuelige, men er du vant til SuSE kan det vÃ¦re en fordel at
+  kunne fÃ¥ den traditionelle opdeling vist.  Hertil kommer en meget
+  effektiv mulighed for at sÃ¸ge - noget man naturligvis fÃ¸rst fÃ¥r
+  glÃ¦de af, nÃ¥r man ved, hvad man skal sÃ¸ge efter.
 </para>
 
 <figure id="susestart7" float="1">
@@ -178,20 +178,20 @@ SuSE Linux stiller følgende krav til hardware:
 </figure>
  
 <para>
-  Herover er der først søgt efter "postfix", hvorefter pakken er
-  blevet valgt. Dette udløser en advarsel om, at "Sendmail" (SuSE's
-  standard postprogram) og "Postfix" ikke kan leve særligt godt
-  sammen. Vil du alligevel installere, får du dels en liste hvor du kan
-  bortvælge Sendmail eller Postfix, og en liste med programmer, der
-  yderligere skal installeres for at få Postfix til at køre.
+  Herover er der fÃ¸rst sÃ¸gt efter "postfix", hvorefter pakken er
+  blevet valgt. Dette udlÃ¸ser en advarsel om, at "Sendmail" (SuSE's
+  standard postprogram) og "Postfix" ikke kan leve sÃ¦rligt godt
+  sammen. Vil du alligevel installere, fÃ¥r du dels en liste hvor du kan
+  bortvÃ¦lge Sendmail eller Postfix, og en liste med programmer, der
+  yderligere skal installeres for at fÃ¥ Postfix til at kÃ¸re.
 </para>
  
 <para>
-  Vælger du at slette en programpakke, kan der tilsvarende komme en
-  advarsel om, at et eller flere andre programmer kræver netop denne
-  pakke for at fungere. Her kunne man ønske sig en mulighed for på en
-  gang at slette alle de afhængige programmer - en idé til næste
-  udgave (hvis de skulle forstå dansk hos SuSE).
+  VÃ¦lger du at slette en programpakke, kan der tilsvarende komme en
+  advarsel om, at et eller flere andre programmer krÃ¦ver netop denne
+  pakke for at fungere. Her kunne man Ã¸nske sig en mulighed for pÃ¥ en
+  gang at slette alle de afhÃ¦ngige programmer - en idÃ© til nÃ¦ste
+  udgave (hvis de skulle forstÃ¥ dansk hos SuSE).
 </para>
 
 <figure id="susestart8" float="1">
@@ -200,28 +200,28 @@ SuSE Linux stiller følgende krav til hardware:
 </figure>
  
 <para>
-  Når pakkerne installeres vises forskellige reklamer for det produkt
-  du allerede har købt. Lidt for kitsch efter min smag, men der er dog
-  en adgang til at slå over på en skærm, der med grafik viser hvor
-  langt man er nået i forløbet. Herover vises installationen fra
+  NÃ¥r pakkerne installeres vises forskellige reklamer for det produkt
+  du allerede har kÃ¸bt. Lidt for kitsch efter min smag, men der er dog
+  en adgang til at slÃ¥ over pÃ¥ en skÃ¦rm, der med grafik viser hvor
+  langt man er nÃ¥et i forlÃ¸bet. Herover vises installationen fra
   cd'erne.
 </para>
  
 <para>
-  Når alt dette er på plads skrives en ny boot-sektor og din maskine
+  NÃ¥r alt dette er pÃ¥ plads skrives en ny boot-sektor og din maskine
   bliver genstartet med den nyinstallerede Linux.
 </para>
  
 <para>
   Du skal inden den videre installation give root en adgangskode,
-  ligesom SuSE ret fornuftigt insisterer på, at der oprettes mindst en
-  almindelig bruger. Du får også mulighed for at vælge, om Linux skal
-  startes i grafik- eller teksttilstand. Er du begynder så vælg den
+  ligesom SuSE ret fornuftigt insisterer pÃ¥, at der oprettes mindst en
+  almindelig bruger. Du fÃ¥r ogsÃ¥ mulighed for at vÃ¦lge, om Linux skal
+  startes i grafik- eller teksttilstand. Er du begynder sÃ¥ vÃ¦lg den
   grafiske (standard) - det er trods alt lettere at starte der, end at
-  skulle finde rundt i diverse opsætningsfiler. Den eneste
-  betingelse er, at installationsprogrammet kunne finde dit skærmkort
-  og skærm. Sker dette ikke, så vælg hellere at starte i teksttilstand,
-  indtil du har fået løst problemet.
+  skulle finde rundt i diverse opsÃ¦tningsfiler. Den eneste
+  betingelse er, at installationsprogrammet kunne finde dit skÃ¦rmkort
+  og skÃ¦rm. Sker dette ikke, sÃ¥ vÃ¦lg hellere at starte i teksttilstand,
+  indtil du har fÃ¥et lÃ¸st problemet.
 </para>
  </sect1>
 
@@ -229,7 +229,7 @@ SuSE Linux stiller følgende krav til hardware:
 <title>Mangler og Nyheder i SuSE 8.2</title>
  
 <para>
-  Tidszonehåndtering i SuSE 8.2 kan drille. Du må måske ind manuelt som 
+  TidszonehÃ¥ndtering i SuSE 8.2 kan drille. Du mÃ¥ mÃ¥ske ind manuelt som 
   root om rette <filename>/etc/sysconfig/clock</filename> til
 </para>
 
@@ -262,10 +262,10 @@ man har GMT-tid.
 
  <para>
   Hvis din maskine har flere harddiske har du et problem. 
-  Enten kan du vælge at dedikere hver enkelt til
-  et af de faste områder (/usr /opt osv), til et hjemmelavet mountpoint 
+  Enten kan du vÃ¦lge at dedikere hver enkelt til
+  et af de faste omrÃ¥der (/usr /opt osv), til et hjemmelavet mountpoint 
   (/hd2 /hd3 eller lignende) eller
-  du kan vælge at installere LVM (Logical Volume Manager) eller RAID. 
+  du kan vÃ¦lge at installere LVM (Logical Volume Manager) eller RAID. 
  </para>
 
 
@@ -287,10 +287,10 @@ man har GMT-tid.
  </figure>
 
  <para>
-  Før du kan anvende en disk til LVM skal der oprettes en partition af 
-  typen 0x8e. Dette skal gøres på
-alle de diske, der skal indgå i en LVM-gruppe. Derefter kan du klikke på 
- knappen "LVM", og nedenstående skærm
+  FÃ¸r du kan anvende en disk til LVM skal der oprettes en partition af 
+  typen 0x8e. Dette skal gÃ¸res pÃ¥
+alle de diske, der skal indgÃ¥ i en LVM-gruppe. Derefter kan du klikke pÃ¥ 
+ knappen "LVM", og nedenstÃ¥ende skÃ¦rm
 dukker op.
  </para>
 
@@ -300,11 +300,11 @@ dukker op.
  </figure>
 
  <para>
-  Her er der først oprettet en gruppe ved navn "vg", og de to diskes
-  LVM-partitioner er derefter tilknyttet gruppen vg. Skærmen viser kun
-  LVM-partitioner, så der er ikke noget at tage fejl af. En LVM-gruppe
+  Her er der fÃ¸rst oprettet en gruppe ved navn "vg", og de to diskes
+  LVM-partitioner er derefter tilknyttet gruppen vg. SkÃ¦rmen viser kun
+  LVM-partitioner, sÃ¥ der er ikke noget at tage fejl af. En LVM-gruppe
   er at opfatte som den harddisk, du ender med at kunne arbejde videre
-  med. Får du senere nye harddiske, kan du tilføje dem til en
+  med. FÃ¥r du senere nye harddiske, kan du tilfÃ¸je dem til en
   eksisterende gruppe, eller oprette en helt ny gruppe, som de derefter
   tilknyttes.  
  </para>
@@ -314,16 +314,16 @@ dukker op.
  <graphic fileref="SuSE_80_LVM_4.&magic;" scale="60"></graphic>
  </figure>
  <para>
-  En LVM-gruppe skal opdeles i en eller flere partitioner på samme måde som en fysisk harddisk. 
+  En LVM-gruppe skal opdeles i en eller flere partitioner pÃ¥ samme mÃ¥de som en fysisk harddisk. 
  </para>
 
  <para>
-  Fordelen ved at gå omvejen over LVM er primært, at du ikke er bundet
-  til de enkelte harddiskes størrelse. I eksemplet herover er begge
-  diske brugt samlet til /usr, som dermed kan blive dobbelt så stort som
-  de enkelte diske hver for sig. Jeg kunne have valgt, at lade /usr få
-  3G GB og for eksempel /opt 800 MB i stedet. Igen ville /usr så få mere plads,
-  end der er på nogen af diskene enkeltvis.  
+  Fordelen ved at gÃ¥ omvejen over LVM er primÃ¦rt, at du ikke er bundet
+  til de enkelte harddiskes stÃ¸rrelse. I eksemplet herover er begge
+  diske brugt samlet til /usr, som dermed kan blive dobbelt sÃ¥ stort som
+  de enkelte diske hver for sig. Jeg kunne have valgt, at lade /usr fÃ¥
+  3G GB og for eksempel /opt 800 MB i stedet. Igen ville /usr sÃ¥ fÃ¥ mere plads,
+  end der er pÃ¥ nogen af diskene enkeltvis.  
  </para>
 
  <figure id="lvm5" float="1">
@@ -332,11 +332,11 @@ dukker op.
  </figure>
 
  <para>
-  Som det fremgår af billedet, er der en række enheder som ikke 
+  Som det fremgÃ¥r af billedet, er der en rÃ¦kke enheder som ikke 
   anvendes direkte. I stedet for at have sdb1 og sdc1 til
-  rådighed, optræder /dev/vg/lvmusr (både "vg" og "lvmusr" er navne 
-  jeg har fundet på). Denne enhed har til gengæld
-  pladsen fra både sdb1 og sdc1 samlet i en stor partition.
+  rÃ¥dighed, optrÃ¦der /dev/vg/lvmusr (bÃ¥de "vg" og "lvmusr" er navne 
+  jeg har fundet pÃ¥). Denne enhed har til gengÃ¦ld
+  pladsen fra bÃ¥de sdb1 og sdc1 samlet i en stor partition.
  </para>
 
 <sect2 id="RAID"><title>SuSE 8.2 og RAID</title>
@@ -345,13 +345,13 @@ dukker op.
  <graphic fileref="SuSE_80_LVM_6.&magic;" scale="60"></graphic>
  </figure>
  <para>
-  Alternativet til at lade de enkelte diske optræde enkeltvist 
-  eller i en LVM opsætning kan være at oprette
-  et software raid. SuSE understøtter installationen af RAID 0/1/5. 
+  Alternativet til at lade de enkelte diske optrÃ¦de enkeltvist 
+  eller i en LVM opsÃ¦tning kan vÃ¦re at oprette
+  et software raid. SuSE understÃ¸tter installationen af RAID 0/1/5. 
   Har du kun to diske som her er valget let, de skal
-  køre RAID 0 (de lægges bare sammen til en stor disk, hvor data 
+  kÃ¸re RAID 0 (de lÃ¦gges bare sammen til en stor disk, hvor data 
   fordeles over begge diske). Har du tre eller flere
-  diske kan du vælge de mere sikre RAID 1/5 løsninger, hvor en del 
+  diske kan du vÃ¦lge de mere sikre RAID 1/5 lÃ¸sninger, hvor en del 
   af pladsen (typisk en disk) bruges til kontrolfunktioner.
  </para>
  <figure id="raid2" float="1">
@@ -372,14 +372,14 @@ Uret i KDE3.1 kan ikke stilles fra desktoppen. Fejl i angivelse af format,
 siger den. Ordnes i stedet med web-min.
 </para>
 <para>
-K3b cd-rom-brændeprogrammet er fyldt med fejl som det installeres, sektion 3 af 
-installationsproceduren er fjernet af SuSE. Det mefører at man manuelt skal 
-rette i rettighederne til cdrdao og cdrecord (køre <command>chmod +s</command>).
+K3b cd-rom-brÃ¦ndeprogrammet er fyldt med fejl som det installeres, sektion 3 af 
+installationsproceduren er fjernet af SuSE. Det mefÃ¸rer at man manuelt skal 
+rette i rettighederne til cdrdao og cdrecord (kÃ¸re <command>chmod +s</command>).
 </para>
 
 <para>
-Det er problemet med smbmnt som skal køre som suid root for at give adgang 
-til en SMB's sharede drev. Det gør den ikke som standard. Man skal køre
+Det er problemet med smbmnt som skal kÃ¸re som suid root for at give adgang 
+til en SMB's sharede drev. Det gÃ¸r den ikke som standard. Man skal kÃ¸re
 <command>chmod +s `which smbmnt`</command>.
 </para>
 

@@ -9,7 +9,7 @@
 
 <para>Evilwm er meget diskret. Det eneste visuelle der viser at man bruger
 en window manager er den tynde ramme der tegnes om alle vinduerne. Der
-er derfor ikke meget at se på dette skærmbillede:
+er derfor ikke meget at se pÃ¥ dette skÃ¦rmbillede:
 </para>
 
 <figure id="evilwm-fig" float="1">
@@ -22,8 +22,8 @@ er derfor ikke meget at se på dette skærmbillede:
   <title>Installation</title>
 
 <para>
-Evilwm findes måske allerede i ens distribution (den findes i Debian) ellers
-må man til at oversætte den selv. Evilwm kan hentes fra <ulink url="http://prdownloads.sourceforge.net/evilwm/evilwm_0.99.11.orig.tar.gz?download">http://prdownloads.sourceforge.net/evilwm/evilwm_0.99.11.orig.tar.gz?download</ulink>.
+Evilwm findes mÃ¥ske allerede i ens distribution (den findes i Debian) ellers
+mÃ¥ man til at oversÃ¦tte den selv. Evilwm kan hentes fra <ulink url="http://prdownloads.sourceforge.net/evilwm/evilwm_0.99.11.orig.tar.gz?download">http://prdownloads.sourceforge.net/evilwm/evilwm_0.99.11.orig.tar.gz?download</ulink>.
 Den installeres med:
 </para>
 
@@ -37,12 +37,12 @@ su -c "make install"
 </sect2>    <!--   Installation -->
 
 <sect2 id="wm-evilwm-opsaetning">
-  <title>Opsætning</title>
+  <title>OpsÃ¦tning</title>
 
 <para>
- Evilwm har ingen opsætningsfil. Al opsætning af programmet sker i form
+ Evilwm har ingen opsÃ¦tningsfil. Al opsÃ¦tning af programmet sker i form
  af kommandolinjeargumenter til <command>evilwm</command>, for eksempel
- når man starter den fra sin <filename>~/.xsession</filename>:
+ nÃ¥r man starter den fra sin <filename>~/.xsession</filename>:
 </para>
 
 <screen>
@@ -52,7 +52,7 @@ evilwm -bw 3 -term gnome-terminal
 
 
 <para>
-Det kan være en god idé at starte en xterm fra sin .xsession også:
+Det kan vÃ¦re en god idÃ© at starte en xterm fra sin .xsession ogsÃ¥:
 </para>
 
 <screen>
@@ -63,7 +63,7 @@ evilwm -bw 3 -term gnome-terminal
 
 
 <para>
-Opsætningsmulighederne er som følger:
+OpsÃ¦tningsmulighederne er som fÃ¸lger:
 </para>
 
 <itemizedlist mark="bullet">
@@ -83,19 +83,19 @@ normalt <literal>xterm</literal>.
 <listitem>
  <para>
 <literal>-fg &lt;farve&gt;</literal>
-Farven på rammen om et normalt aktivt vindue.
+Farven pÃ¥ rammen om et normalt aktivt vindue.
  </para>
 </listitem>
 <listitem> 
  <para>
 <literal>-bg &lt;farve&gt;</literal>
-Farven på rammen om et inaktivt vindue.
+Farven pÃ¥ rammen om et inaktivt vindue.
  </para>
 </listitem>
 <listitem>
  <para>
 <literal>-fc &lt;farve&gt;</literal>
-Farven på rammen om et aktivt "sticky" vindue.
+Farven pÃ¥ rammen om et aktivt "sticky" vindue.
  </para>
 </listitem>
 </itemizedlist>
@@ -110,15 +110,15 @@ navne X11 kender i forvejen.
 <sect3  id="wm-evilwm-musen">
   <title>Musen</title>
 
-<para>Evilwm bruger 'sloppy focus', hvor vinduer får fokus når musen
-bevæger sig ind i dem. Vinduer bliver <emphasis>ikke</emphasis> hævet til toppen nå
-det får fokus. Tro mod sit navn giver evilwm ingen mulighed for at ændre
-denne opførsel.
+<para>Evilwm bruger 'sloppy focus', hvor vinduer fÃ¥r fokus nÃ¥r musen
+bevÃ¦ger sig ind i dem. Vinduer bliver <emphasis>ikke</emphasis> hÃ¦vet til toppen nÃ¥
+det fÃ¥r fokus. Tro mod sit navn giver evilwm ingen mulighed for at Ã¦ndre
+denne opfÃ¸rsel.
 </para>
 
 <para>
 Desuden kan man med musens venstre knap flytte vinduer og midterste
-knap ændre størrelsen på vinduer ved enten at trykke på rammen eller ved
+knap Ã¦ndre stÃ¸rrelsen pÃ¥ vinduer ved enten at trykke pÃ¥ rammen eller ved
 at trykke inde i vinduet mens man holder Alt-tasten nede.
 </para>
 </sect3>    <!--   Musen -->
@@ -129,7 +129,7 @@ at trykke inde i vinduet mens man holder Alt-tasten nede.
 <para>
 Den store styrke ved Evilwm er at alt kan styres med tastaturet. Alle
 kommandoerne bruges ved at trykke Ctrl-Alt ned samtidigt med en tast. Der
-er følgende funktioner:
+er fÃ¸lgende funktioner:
 </para>
 
 
@@ -152,34 +152,34 @@ er følgende funktioner:
 </listitem>
 <listitem> 
  <para>
-<emphasis>H, J, K, L</emphasis> Flyt vinduet 16 pixels mod venstre, ned, op eller højre
+<emphasis>H, J, K, L</emphasis> Flyt vinduet 16 pixels mod venstre, ned, op eller hÃ¸jre
 (VI-taster). 
 </para>
 </listitem>
 <listitem>
  <para>
-<emphasis>Y, U, B, N</emphasis>Flyt vinduet til øverste vestre, øverste højre,
-nederste venstre eller nederste højre hjørne. 
+<emphasis>Y, U, B, N</emphasis>Flyt vinduet til Ã¸verste vestre, Ã¸verste hÃ¸jre,
+nederste venstre eller nederste hÃ¸jre hjÃ¸rne. 
 </para>
 </listitem>
 <listitem> 
  <para>
-<emphasis>I</emphasis> Vis størrelse på vinduet og placeringen af vinduet. 
+<emphasis>I</emphasis> Vis stÃ¸rrelse pÃ¥ vinduet og placeringen af vinduet. 
 </para>
 </listitem>
 <listitem>
  <para>
-<emphasis>=</emphasis> Maksimer vinduet vertikalt (eller sæt det tilbage til normal størrelse) 
+<emphasis>=</emphasis> Maksimer vinduet vertikalt (eller sÃ¦t det tilbage til normal stÃ¸rrelse) 
 </para>
 </listitem>
 <listitem> 
  <para>
-<emphasis>X</emphasis> Maksimer vinduet (eller sæt det tilbage til normal størrelse) 
+<emphasis>X</emphasis> Maksimer vinduet (eller sÃ¦t det tilbage til normal stÃ¸rrelse) 
 </para>
 </listitem>
 <listitem>
  <para>
-<emphasis>F</emphasis> Gør det aktuelle vindue "sticky"
+<emphasis>F</emphasis> GÃ¸r det aktuelle vindue "sticky"
 </para>
 </listitem>
 <listitem> 
@@ -197,7 +197,7 @@ nederste venstre eller nederste højre hjørne.
 <para>Der er ikke mere!</para>
 
 <para>Det eneste jeg egentligt savner er 'click-to-focus'. Bortset fra
-dette har evilwm alt hvad jeg ønsker mig af en window manager.
+dette har evilwm alt hvad jeg Ã¸nsker mig af en window manager.
 </para>
 </sect2>
 </sect1>    <!--   Evilwm -->

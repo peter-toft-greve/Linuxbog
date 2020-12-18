@@ -15,27 +15,27 @@
 
  <para>
   Arch Linux bruger <ulink
-  url="http://www.archlinux.org/pacman/">Pacman</ulink> til pakkehåndtering.
-  Det virker lidt på samme måde som Debians <command>apt-get</command>, men
+  url="http://www.archlinux.org/pacman/">Pacman</ulink> til pakkehÃ¥ndtering.
+  Det virker lidt pÃ¥ samme mÃ¥de som Debians <command>apt-get</command>, men
   jeg har ikke fundet noget der svarer til <command>apt-cache</command> endnu.
  </para>
 
  <sect1 id="distro-arch-linux-maalgruppe">
-  <title>Målgruppe</title>
+  <title>MÃ¥lgruppe</title>
 
   <indexterm>
-   <primary>målgruppe</primary>
+   <primary>mÃ¥lgruppe</primary>
    <secondary>for Arch Linux</secondary>
   </indexterm>
 
   <para>
-   Arch Linux' erklærede målgruppe er linuxbrugere (vel egentlig
+   Arch Linux' erklÃ¦rede mÃ¥lgruppe er linuxbrugere (vel egentlig
    systemadministratorer) der ikke er bange for kommandolinjen.
   </para>
 
   <para>
-   Dertil må man nok også lægge at, hvis man bruger nogle lidt
-   specielle ting, skal man være villig til selv at pakke dem til Arch
+   Dertil mÃ¥ man nok ogsÃ¥ lÃ¦gge at, hvis man bruger nogle lidt
+   specielle ting, skal man vÃ¦re villig til selv at pakke dem til Arch
    Linux, da der endnu ikke er et voldsomt stort udvalg af pakker.
   </para>
  </sect1>
@@ -49,34 +49,34 @@
   </indexterm>
 
   <para>
-   Man kan vælge mellem at installere fra cd-rom og over FTP.  Jeg har
-   afprøvet den FTP-baserede installation, og hvis man har <ulink
+   Man kan vÃ¦lge mellem at installere fra cd-rom og over FTP.  Jeg har
+   afprÃ¸vet den FTP-baserede installation, og hvis man har <ulink
    url="http://www.archlinux.org/docs/archdoc_us.html">installationsvejledningen</ulink>
-   ved hånden under installationen, er der ikke nogle problemer.
+   ved hÃ¥nden under installationen, er der ikke nogle problemer.
   </para>
 
   <note id="distro-arch-linux-installation-ej-modem">
    <title>Installation over modemopkobling</title>
 
    <para>
-    Man bør dog være opmærksom på at FTP-installationen ikke virker direkte
-    over en modemforbindelse, så man er nødt til at bruge en anden maskine som
-    gateway til internettet, hvis det er det man vil.  Så virker det til
-    gengæld også helt fint selvom det tager en del tid (ca. 10 timer på min
+    Man bÃ¸r dog vÃ¦re opmÃ¦rksom pÃ¥ at FTP-installationen ikke virker direkte
+    over en modemforbindelse, sÃ¥ man er nÃ¸dt til at bruge en anden maskine som
+    gateway til internettet, hvis det er det man vil.  SÃ¥ virker det til
+    gengÃ¦ld ogsÃ¥ helt fint selvom det tager en del tid (ca. 10 timer pÃ¥ min
     linje).
    </para>
   </note>
 
   <para>
-   Der var et par lækre detaljer ved installationsproceduren:
+   Der var et par lÃ¦kre detaljer ved installationsproceduren:
 
    <itemizedlist>
     <listitem>
      <para>
-      Man kan vælge automatisk opdeling og formatering af harddisken,
-      så man ikke behøver at bruge tid på at tænke så meget over hvordan man
+      Man kan vÃ¦lge automatisk opdeling og formatering af harddisken,
+      sÃ¥ man ikke behÃ¸ver at bruge tid pÃ¥ at tÃ¦nke sÃ¥ meget over hvordan man
       har lyst til at opdele sin harddisk (det er et fornuftigt valg).  Det
-      giver også den ekstra fordel at opsætningsfilen til GRUB tilsyneladende
+      giver ogsÃ¥ den ekstra fordel at opsÃ¦tningsfilen til GRUB tilsyneladende
       automatisk bliver genereret (men tjek for en sikkerheds skyld at den er
       i orden).
      </para>
@@ -85,7 +85,7 @@
     <listitem>
      <para>
       Man kan uden problemer afbryde installationen undervejs i nedhentningen
-      af filer og fortsætte senere (praktisk, hvis man pludselig står og skal
+      af filer og fortsÃ¦tte senere (praktisk, hvis man pludselig stÃ¥r og skal
       bruge telefonlinjen).
      </para>
     </listitem>
@@ -93,35 +93,35 @@
   </para>
 
   <note id="distro-arch-linux-installation-x">
-   <title>Opsætning af X</title>
+   <title>OpsÃ¦tning af X</title>
 
    <indexterm>
-    <primary>opsætning af X</primary>
+    <primary>opsÃ¦tning af X</primary>
     <secondary>under Arch Linux</secondary>
    </indexterm>
 
    <para>
-    Opsætningen af X er desværre en lille smule besværlig.  Først installerede
-    jeg FVWM (og dermed automatisk også XFree86) med:
+    OpsÃ¦tningen af X er desvÃ¦rre en lille smule besvÃ¦rlig.  FÃ¸rst installerede
+    jeg FVWM (og dermed automatisk ogsÃ¥ XFree86) med:
 <screen>
 <prompt>[root@hven root]# </prompt><userinput>pacman -Sy fvwm</userinput>
 </screen>
    </para>
 
    <para>
-    Så forsøgte jeg at få XFree86 til at sætte sig selv op med:
+    SÃ¥ forsÃ¸gte jeg at fÃ¥ XFree86 til at sÃ¦tte sig selv op med:
 <screen>
 <prompt>[root@hven root]# </prompt><userinput>XFree86 -configure</userinput>
 </screen>
-    men det virkede ikke helt, da XFree86s opsætningsrutine antager at
+    men det virkede ikke helt, da XFree86s opsÃ¦tningsrutine antager at
     musen kan findes som <filename>/dev/mouse</filename>.  Da det ikke
-    var tilfældet på mit system, måtte jeg rette
+    var tilfÃ¦ldet pÃ¥ mit system, mÃ¥tte jeg rette
     <filename>/dev/mouse</filename> til
-    <filename>/dev/psaux</filename> (PS/2-mus) i opsætningsfilen:
+    <filename>/dev/psaux</filename> (PS/2-mus) i opsÃ¦tningsfilen:
 <screen>
 <prompt>[root@hven root]# </prompt><userinput>sed -i 's:/dev/mouse:/dev/psaux:' XF86Config.new</userinput>
 </screen>
-    før jeg kunne afprøve opsætningen:
+    fÃ¸r jeg kunne afprÃ¸ve opsÃ¦tningen:
 <screen>
 <prompt>[root@hven root]# </prompt><userinput>XFree86 -xf86config XF86Config.new</userinput>
 </screen>
@@ -130,11 +130,11 @@
    </para>
 
    <para>
-    Det virkede, så jeg kunne flytte opsætningsfilen på plads:
+    Det virkede, sÃ¥ jeg kunne flytte opsÃ¦tningsfilen pÃ¥ plads:
 <screen>
 <prompt>[root@hven root]# </prompt><userinput>mv XF86Config.new /etc/X11/XF86Config</userinput>
 </screen>
-    og afprøve X endnu en gang:
+    og afprÃ¸ve X endnu en gang:
 <screen>
 <prompt>[root@hven root]# </prompt><userinput>startx</userinput>
 </screen>
@@ -143,7 +143,7 @@
    </para>
 
    <para>
-    Hvis man har et dansk tastatur, vil man nok også lige rette
+    Hvis man har et dansk tastatur, vil man nok ogsÃ¥ lige rette
     linjerne:
 <programlisting>
 Section "InputDevice"
@@ -163,32 +163,32 @@ EndSection
    </para>
 
    <para>
-    Jeg har kun kunnet få de to almindelige museknapper på min Compaq
+    Jeg har kun kunnet fÃ¥ de to almindelige museknapper pÃ¥ min Compaq
     Evo N1020v til at virke ordentligt.  Den runde joystick-lignende
     knap foran de almindelige museknapper har jeg ikke kunnet
-    få til at gøre noget fornuftigt.
+    fÃ¥ til at gÃ¸re noget fornuftigt.
    </para>
   </note>
 
   <note id="distro-arch-linux-installation-lyd">
-   <title>Opsætning af lyd</title>
+   <title>OpsÃ¦tning af lyd</title>
 
    <para>
-    Jeg har ikke kunnet få lyden til at køre på min Compaq
+    Jeg har ikke kunnet fÃ¥ lyden til at kÃ¸re pÃ¥ min Compaq
     Evo N1020v.  <command>lspci</command> viste mig at mit lydsystem
-    nok hed noget med <literal>5451</literal> og en eftersøgning med
+    nok hed noget med <literal>5451</literal> og en eftersÃ¸gning med
     <command>locate 5451</command> viste at der fandtes en lyddriver
     ved navn <literal>snd-ali5451</literal>.  Af en eller anden grund
     var det ikke nok at skrive <command>modprobe snd-ali5451</command>
-    for at få installeret driveren, men efter at jeg havde kørt
+    for at fÃ¥ installeret driveren, men efter at jeg havde kÃ¸rt
     <command>depmod -a</command> gik det.
    </para>
 
    <para>
-    Så skulle man tro at man bare kunne køre <command>aumix</command>
+    SÃ¥ skulle man tro at man bare kunne kÃ¸re <command>aumix</command>
     for at justere lydstyrken og spille en lydfil med
     <command>mplayer</command>, men begge programmer brokker sig over
-    at de ikke kan få fat i lydenheden.
+    at de ikke kan fÃ¥ fat i lydenheden.
    </para>
 
    <para>
@@ -203,12 +203,12 @@ EndSection
 
   <indexterm>
    <primary>installation af ekstra programmel</primary>
-   <secondary>på Arch Linux</secondary>
+   <secondary>pÃ¥ Arch Linux</secondary>
   </indexterm>
 
   <para>
    Installation af pakker er ganske enkel, hvis man ved hvilken pakke man vil
-   have.  Sådan installerede jeg for eksempel FVWM
+   have.  SÃ¥dan installerede jeg for eksempel FVWM
    <emphasis>og</emphasis> X:
 <screen>
 <prompt>[root@hven root]# </prompt><userinput>pacman -Sy fvwm</userinput>
@@ -217,11 +217,11 @@ EndSection
 
   <para>
    Det er dog overordentligt irriterende at den
-   eneste måde man kan finde pakker på, er gennem <ulink
-   url="http://www.archlinux.org/packages.php">pakkedatabasen på Arch
-   Linux-webstedet</ulink>.  Når man er blevet forvænt med Debians
-   <command>apt-cache</command>-kommando, så er det altså alt for besværligt
-   at skulle lede efter pakker i en webgrænseflade.
+   eneste mÃ¥de man kan finde pakker pÃ¥, er gennem <ulink
+   url="http://www.archlinux.org/packages.php">pakkedatabasen pÃ¥ Arch
+   Linux-webstedet</ulink>.  NÃ¥r man er blevet forvÃ¦nt med Debians
+   <command>apt-cache</command>-kommando, sÃ¥ er det altsÃ¥ alt for besvÃ¦rligt
+   at skulle lede efter pakker i en webgrÃ¦nseflade.
   </para>
  </sect1>
 
@@ -234,9 +234,9 @@ EndSection
   </indexterm>
 
   <para>
-   Som bruger vil man næppe opleve Arch Linux som anderledes end andre
-   distributioner.  Måske kører nogle af programmerne lidt hurtigere,
-   men det burde også være det hele.
+   Som bruger vil man nÃ¦ppe opleve Arch Linux som anderledes end andre
+   distributioner.  MÃ¥ske kÃ¸rer nogle af programmerne lidt hurtigere,
+   men det burde ogsÃ¥ vÃ¦re det hele.
   </para>
  </sect1>
 
@@ -244,18 +244,18 @@ EndSection
   <title>Samlet vurdering</title>
 
   <para>
-   Jeg må indrømme at jeg er positivt overrasket over Arch Linux.  Den
-   har grundlæggende været let at få op at køre.
+   Jeg mÃ¥ indrÃ¸mme at jeg er positivt overrasket over Arch Linux.  Den
+   har grundlÃ¦ggende vÃ¦ret let at fÃ¥ op at kÃ¸re.
   </para>
 
   <para>
-   Det eneste der har voldet mig problemer har været at få lyden til
-   at fungere på systemet.  Og så det par minutter det tog mig at
+   Det eneste der har voldet mig problemer har vÃ¦ret at fÃ¥ lyden til
+   at fungere pÃ¥ systemet.  Og sÃ¥ det par minutter det tog mig at
    finde ud af at jeg skulle erstatte <filename>/dev/mouse</filename>
    med <filename>/dev/psaux</filename> i
-   <filename>XF86Config</filename>.  DVD-drevet fungerer fint så jeg
-   kan <emphasis>se</emphasis> film fra DVD, men det ville jo være
-   lækkert med lyd til.
+   <filename>XF86Config</filename>.  DVD-drevet fungerer fint sÃ¥ jeg
+   kan <emphasis>se</emphasis> film fra DVD, men det ville jo vÃ¦re
+   lÃ¦kkert med lyd til.
   </para>
  </sect1>
 </chapter>

@@ -2,22 +2,22 @@
 <title>Enkle test af din server</title>
 
 <para>
-I dette kapitel vil vi beskrive en række enkle måder at teste server-funktioner
+I dette kapitel vil vi beskrive en rÃ¦kke enkle mÃ¥der at teste server-funktioner
 fra kommandolinien.
 </para>
 
 <para>
-!! HER SKAL DER VÆRE EN OVERSIGT OVER HVILKE SERVICES DER ANVENDER EN GIVEN PORT !!
+!! HER SKAL DER VÃ†RE EN OVERSIGT OVER HVILKE SERVICES DER ANVENDER EN GIVEN PORT !!
 </para>
 
 <sect1 id="test-mailserver">
 <title>Test af email-server</title>
 <para>
-Det kan være meget praksisk at kunne teste sin mail-server direkte.
-Mail-serveren kører på port 25 og man kan med telnet logge direkte ind
+Det kan vÃ¦re meget praksisk at kunne teste sin mail-server direkte.
+Mail-serveren kÃ¸rer pÃ¥ port 25 og man kan med telnet logge direkte ind
 og skrive sin email til serveren. I eksemplet nedenfor sender 
-&lt;chlor@sslug.dk&gt; en email til &lt;pto@linuxbog.dk&gt;. Bemærk at
-man først med "rcpt to:" anfører den rå email-adresse og tilsvarende
+&lt;chlor@sslug.dk&gt; en email til &lt;pto@linuxbog.dk&gt;. BemÃ¦rk at
+man fÃ¸rst med "rcpt to:" anfÃ¸rer den rÃ¥ email-adresse og tilsvarende
 med afsender. Med "data" starter man selve mailen &ndash; her kan komme
 den afsender og modtager information som modtager ser.
 </para>
@@ -44,7 +44,7 @@ hej med mig selv &ndash; denne tekst bliver til den reelle email.
 </screen>
 
 <para>
-Det kan også være meget praktisk at kende 
+Det kan ogsÃ¥ vÃ¦re meget praktisk at kende 
 <ulink url="http://freesbee.wheel.dk/mailtest.html">denne URL</ulink>
 hvor man kan teste mail-service.
 </para>
@@ -66,7 +66,7 @@ hvor man kan teste mail-service.
 <sect1 id="test-af-ssh">
 <title>Test af ssh</title>
 <para>
-Det kan være praktisk at kunne checke om der er en ssh-server på en given
+Det kan vÃ¦re praktisk at kunne checke om der er en ssh-server pÃ¥ en given
 maskine, og endda se hvilken version maskinen anvender.
 </para>
 
@@ -80,15 +80,15 @@ SSH-1.99-OpenSSH_3.6.1p2
 </screen>
 
 <para>
-Denne maskine anvender således version 3.6.12p af OpenSSH.
+Denne maskine anvender sÃ¥ledes version 3.6.12p af OpenSSH.
 </para>
 
 <para>
-Man kan komme ud ved at skrive en (næsten) vilkårligt bogstav og trykke retur.
+Man kan komme ud ved at skrive en (nÃ¦sten) vilkÃ¥rligt bogstav og trykke retur.
 </para>
 
 <para>
-Bemærk, at man kan også skrive portnummeret direkte <command>telnet 10.0.0.100 22</command>.
+BemÃ¦rk, at man kan ogsÃ¥ skrive portnummeret direkte <command>telnet 10.0.0.100 22</command>.
 Systemet laver selv opslag via <filename>/etc/services</filename> for at bestemme koblingen 
 mellem post-navn og port-nummer.
 </para>

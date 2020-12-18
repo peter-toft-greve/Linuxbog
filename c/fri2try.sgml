@@ -1,37 +1,37 @@
-<chapter id="c-intro"><title>Repræsentation og modeller</title>
-<sect1 id="c-prof-vaerksted"><title>Et professionelt værksted</title>
+<chapter id="c-intro"><title>ReprÃ¦sentation og modeller</title>
+<sect1 id="c-prof-vaerksted"><title>Et professionelt vÃ¦rksted</title>
 
 <para>
-Hvis du har en maskine med Linux i en af de større
+Hvis du har en maskine med Linux i en af de stÃ¸rre
 distributioner (fx. Red Hat eller Debian) har du samtidig en
-samling af de mest avancerede værktøjer til fremstilling af
+samling af de mest avancerede vÃ¦rktÃ¸jer til fremstilling af
 software.
 </para>
 
 <para>
  Det er ikke blot en "sandkasse", du sidder med, men et professionelt
- udviklingsmiljø. Der er optimerende oversætter, standardiserede biblioteker,
- supplerende biblioteker med et væld af funktionalitet, debugger, source
- management med alt, hvad dertil hører, og oven i det er Linux jo et
- professionelt afviklingsmiljø med automatisk jobstart, kommandofortolkere og
+ udviklingsmiljÃ¸. Der er optimerende oversÃ¦tter, standardiserede biblioteker,
+ supplerende biblioteker med et vÃ¦ld af funktionalitet, debugger, source
+ management med alt, hvad dertil hÃ¸rer, og oven i det er Linux jo et
+ professionelt afviklingsmiljÃ¸ med automatisk jobstart, kommandofortolkere og
  andre fortolkede sprog i mange varianter, serverfaciliteter, samt ikke mindst
- dørvogterfaciliteter (Firewall værktøjer eller TCP-IP filtrering).
+ dÃ¸rvogterfaciliteter (Firewall vÃ¦rktÃ¸jer eller TCP-IP filtrering).
 </para>
 
 <para>
-Det avancerede i denne her sammenhæng ligger ikke i et
+Det avancerede i denne her sammenhÃ¦ng ligger ikke i et
 smart peg - og - klik interface til en programgenerator. Just for
-the record: En programgenerator er et udmærket værktøj i visse
-sammenhæng. Med sådan et værktøj kan du kan vælge mellem et
-begrænset antal på forhånd programmerede moduler ved hjælp af en
-mus, klik og vupti, så har du et resultat bestående af objekter,
+the record: En programgenerator er et udmÃ¦rket vÃ¦rktÃ¸j i visse
+sammenhÃ¦ng. Med sÃ¥dan et vÃ¦rktÃ¸j kan du kan vÃ¦lge mellem et
+begrÃ¦nset antal pÃ¥ forhÃ¥nd programmerede moduler ved hjÃ¦lp af en
+mus, klik og vupti, sÃ¥ har du et resultat bestÃ¥ende af objekter,
 der er sat sammen (nogen kalder peg og klik - programmering for
 objektorienteret programmering, men det er en fordrejning af
 begreber).
 </para>
 
-<para><emphasis>Et sidespring:</emphasis> På Linux findes mindst
-én klik-og-peg generator, nemlig "glade", en GTK+ User Interface
+<para><emphasis>Et sidespring:</emphasis> PÃ¥ Linux findes mindst
+Ã©n klik-og-peg generator, nemlig "glade", en GTK+ User Interface
 Builder, skrevet af Damon Chaplin, http://glade.pn.org. Kan
 anbefales.
 </para>
@@ -47,61 +47,61 @@ anbefales.
 
 
 <para>
-Nej, det avancerede består i, at du kan styre genereringen
-af programkode fuldstændig professionelt. Hvis du for eksempel ønsker at
-skrive en ny og bedre database server, så værsgo', gå i gang. Den
-nødvendige dokumentation er til rådighed, og der findes desuden
-lærebøger som forklarer om low-level ting og high-performance
-problematikker på Linux.
+Nej, det avancerede bestÃ¥r i, at du kan styre genereringen
+af programkode fuldstÃ¦ndig professionelt. Hvis du for eksempel Ã¸nsker at
+skrive en ny og bedre database server, sÃ¥ vÃ¦rsgo', gÃ¥ i gang. Den
+nÃ¸dvendige dokumentation er til rÃ¥dighed, og der findes desuden
+lÃ¦rebÃ¸ger som forklarer om low-level ting og high-performance
+problematikker pÃ¥ Linux.
 </para>
 
 <para>
-Oven i alt dette får du den fordel, at dine Linux
-programmer i de fleste tilfælde kan anvendes uden ændringer på
-andre Linux-systemer, inclusive 64-bit systemer, og med få
-ændringer på mange andre Unix systemer som for eksempel Solaris, AIX,
+Oven i alt dette fÃ¥r du den fordel, at dine Linux
+programmer i de fleste tilfÃ¦lde kan anvendes uden Ã¦ndringer pÃ¥
+andre Linux-systemer, inclusive 64-bit systemer, og med fÃ¥
+Ã¦ndringer pÃ¥ mange andre Unix systemer som for eksempel Solaris, AIX,
 HP-UX.
 </para>
 
 <indexterm><primary>Cygwin</primary></indexterm>
 <para>
-Mere overraskende er det måske, at man også kan køre
-Linux-udviklede programmer på Microsoft NT ved hjælp af
+Mere overraskende er det mÃ¥ske, at man ogsÃ¥ kan kÃ¸re
+Linux-udviklede programmer pÃ¥ Microsoft NT ved hjÃ¦lp af
 Cygwin systemet fra Cygnus.
 </para>
 
 <para>
-Det er en væsentlig del af filosofien i GNU og C - sproget,
+Det er en vÃ¦sentlig del af filosofien i GNU og C - sproget,
 at man skal kunne genbruge sin kode, hvis hardwaren skal
-udskiftes; og det skal den før eller senere! Hardware forgår,
-brainware består. Sådan da.
+udskiftes; og det skal den fÃ¸r eller senere! Hardware forgÃ¥r,
+brainware bestÃ¥r. SÃ¥dan da.
 </para>
 
 <para>
-Udover C-oversætteren har du med Linux adgang til C++ og
+Udover C-oversÃ¦tteren har du med Linux adgang til C++ og
 mange andre sprog. 
 </para>
 
 <sect2 id="hvad-er-debugger">
 <title>Hvad er en debugger?</title>
 <para>
-Debuggeren er et værktøj, som kan vise, linje for linje,
-hvad der sker i et program. Selv om det hedder en debugger, så er
-det er ikke så godt at bruge den til at fjerne fejl <footnote id="C-bug">
+Debuggeren er et vÃ¦rktÃ¸j, som kan vise, linje for linje,
+hvad der sker i et program. Selv om det hedder en debugger, sÃ¥ er
+det er ikke sÃ¥ godt at bruge den til at fjerne fejl <footnote id="C-bug">
 <para> Det kaldes aflusning eller debugging, bug == insekt, - der
-skulle engang være opstået en fejl i en af de første computere
+skulle engang vÃ¦re opstÃ¥et en fejl i en af de fÃ¸rste computere
 p.g.a.  nogle insekter, som syntes, at der var varmt og rart at
-være oven på sådan nogen elektronik-komponenter.  </para>
+vÃ¦re oven pÃ¥ sÃ¥dan nogen elektronik-komponenter.  </para>
 </footnote>. 
 </para>
 
 <para>
-Hvis et program er så fejlbehæftet, at man overvejer at anvende
-en debugger, så bør man begynde forfra og reimplementere sine
+Hvis et program er sÃ¥ fejlbehÃ¦ftet, at man overvejer at anvende
+en debugger, sÃ¥ bÃ¸r man begynde forfra og reimplementere sine
 programmer med de nyvundne erfaringer. Ok, der er undtagelser,
 hvor man kan lokalisere en vanskelig, periodisk fejl ved at
 anvende en debugger med omtanke, men det er ikke noget, som man
-skal gøre til en fast vane!
+skal gÃ¸re til en fast vane!
 </para>
 </sect2>
 
@@ -109,212 +109,212 @@ skal gøre til en fast vane!
  <title>Biblioteker - et eksempel</title>
  <para>
   Det vigtigste er imidlertid, at der med de almindelige Linux-distributioner
-  er et stort arsenal af frie biblioteker til database, netværk, grafik
+  er et stort arsenal af frie biblioteker til database, netvÃ¦rk, grafik
   etc.
  </para>
 
  <para>
-  Som et eksempel kan det fremhæves, at der findes frie biblioteker til
-  netværksprogrammering. For eksempel <emphasis>Remote Procedure
-  Call</emphasis>, både til klient- og tjenersiden.  <!-- TCP/UDP/IP -->
-  Det er en teknik, som kan benyttes til at udføre en routine på en anden
-  computer (som selvfølgelig skal være forberedt til dette!) Dette er værd at
-  understrege, idet den meget udbredte PC-software har indført nogle økonomisk
-  betingede useriøse skel mellem server og klient programmer.
+  Som et eksempel kan det fremhÃ¦ves, at der findes frie biblioteker til
+  netvÃ¦rksprogrammering. For eksempel <emphasis>Remote Procedure
+  Call</emphasis>, bÃ¥de til klient- og tjenersiden.  <!-- TCP/UDP/IP -->
+  Det er en teknik, som kan benyttes til at udfÃ¸re en routine pÃ¥ en anden
+  computer (som selvfÃ¸lgelig skal vÃ¦re forberedt til dette!) Dette er vÃ¦rd at
+  understrege, idet den meget udbredte PC-software har indfÃ¸rt nogle Ã¸konomisk
+  betingede useriÃ¸se skel mellem server og klient programmer.
  </para>
 
 <para>
-Desuden har du adgang til mange gode eksempler på, hvordan
+Desuden har du adgang til mange gode eksempler pÃ¥, hvordan
 i hvert fald nogle af bibliotekerne anvendes. Kort sagt, hvis du
-går i gang, kan du satse på at nå et professionelt niveau på de
-områder, som du udvælger.
+gÃ¥r i gang, kan du satse pÃ¥ at nÃ¥ et professionelt niveau pÃ¥ de
+omrÃ¥der, som du udvÃ¦lger.
 </para>
 </sect2>
 <sect2 id="hvordan-i-gang">
 <title>Hvordan kommer man igang?</title>
 <para>
-Hvad gør man så for at komme igang?
+Hvad gÃ¸r man sÃ¥ for at komme igang?
 </para>
 
 <para>
-Hvis der skulle være et mirakel-ord, som er nøgle til
-forståelse af computerens magi, så er det ordet
-DATA-REPRÆSENTATION.
+Hvis der skulle vÃ¦re et mirakel-ord, som er nÃ¸gle til
+forstÃ¥else af computerens magi, sÃ¥ er det ordet
+DATA-REPRÃ†SENTATION.
 </para>
 
 <para>
-Godt nok følger computerens elektriske signaler de fysiske
+Godt nok fÃ¸lger computerens elektriske signaler de fysiske
 love, men computeren er et instrument til at manipulere store
-mængder af impulser ud fra nogle få regler valgt af programmøren.
-Med andre ord, vi kan tillægge elektriske signaler en betydning.
+mÃ¦ngder af impulser ud fra nogle fÃ¥ regler valgt af programmÃ¸ren.
+Med andre ord, vi kan tillÃ¦gge elektriske signaler en betydning.
 Et enkelt elektrisk signal kaldes oftest en bit, binary digit.
 Otte af dem kaldes en byte eller, mere officielt, en octet.
 </para>
 
 <para>
-En enkelt bit kan være en besked om at åbne sluserne
-for at undgå en oversvømmelse. Eller en prik på en billedskærm.
-Eller forskellen mellem et punktum og et komma (i en dårlig
-skrifttype! Anstrengende for øjnene!)
+En enkelt bit kan vÃ¦re en besked om at Ã¥bne sluserne
+for at undgÃ¥ en oversvÃ¸mmelse. Eller en prik pÃ¥ en billedskÃ¦rm.
+Eller forskellen mellem et punktum og et komma (i en dÃ¥rlig
+skrifttype! Anstrengende for Ã¸jnene!)
 </para>
 
 <para>
 Som regel bruger man flere bits til vigtige beskeder for
-at sikre, at man nu også har forstået hinanden rigtigt. Det
+at sikre, at man nu ogsÃ¥ har forstÃ¥et hinanden rigtigt. Det
 kaldes redundans.
 </para>
 
 <para>
-Bogstaver repræsenteres som regel ved en byte, men ved
-anvendelse af Unicode bruges 16 bit eller 2 bytes. Der er også
-systemer, som repræsenterer bogstaver ved hjælp af variabelt
-antal bytes. Kig for eksempel på en HTML-side.
+Bogstaver reprÃ¦senteres som regel ved en byte, men ved
+anvendelse af Unicode bruges 16 bit eller 2 bytes. Der er ogsÃ¥
+systemer, som reprÃ¦senterer bogstaver ved hjÃ¦lp af variabelt
+antal bytes. Kig for eksempel pÃ¥ en HTML-side.
 </para>
 </sect2>
 </sect1>
 
-<sect1 id="repraesentation-af-data"><title>Repræsentation af data</title>
+<sect1 id="repraesentation-af-data"><title>ReprÃ¦sentation af data</title>
 <para>
-Hvis du ved en masse om computere, så vil du nok finde
-dette afsnit overflødigt. Spring straks videre!
+Hvis du ved en masse om computere, sÃ¥ vil du nok finde
+dette afsnit overflÃ¸digt. Spring straks videre!
 </para>
 
 <para>
 En computer kan bruges til tekstbehandling, styring af
-produktionsmaskineri, til teleudstyr, og, selvfølgelig, til den
+produktionsmaskineri, til teleudstyr, og, selvfÃ¸lgelig, til den
 "klassiske" lommeregner. Hvor kommer denne fleksibilitet fra? Fra
-programmøren, eller mere korrekt: De forskellige applikationer af
-computerteknikken beror på muligheden for at repræsentere
-information af mange forskellige typer ved hjælp af elektriske
-spændinger.
+programmÃ¸ren, eller mere korrekt: De forskellige applikationer af
+computerteknikken beror pÃ¥ muligheden for at reprÃ¦sentere
+information af mange forskellige typer ved hjÃ¦lp af elektriske
+spÃ¦ndinger.
 </para>
 
 <para>
-Konstruktøren af en harddisk bestemmer f.x., at når man
-sætter strøm på ledning 77, så er det en besked til harddisken om,
+KonstruktÃ¸ren af en harddisk bestemmer f.x., at nÃ¥r man
+sÃ¦tter strÃ¸m pÃ¥ ledning 77, sÃ¥ er det en besked til harddisken om,
 at den skal begynde en read-operation.
 </para>
 
 <para>
 De, der konstruerer computeren, bestemmer, hvad de
-forskellige elektriske signaler skal få de forskellige dele af
-maskineriet til at udføre. Når han én gang har bestemt, at
+forskellige elektriske signaler skal fÃ¥ de forskellige dele af
+maskineriet til at udfÃ¸re. NÃ¥r han Ã©n gang har bestemt, at
 ledning 77 er read-request, og maskinen er bygget efter hans
-anvisninger, så er vi bundet af denne mening med signal 77, men
-det kan altså laves om - næste gang, vi konstruerer et harddisk
+anvisninger, sÃ¥ er vi bundet af denne mening med signal 77, men
+det kan altsÃ¥ laves om - nÃ¦ste gang, vi konstruerer et harddisk
 interface.
 </para>
 
 <para>
-Den ene dag repræsenterer bit nummer 1000017 en kerne i en
-tomat, næste sekund måske et punktum på en skærm, og næste dag
-kunne den være en del af en ordre til en harddisk.
+Den ene dag reprÃ¦senterer bit nummer 1000017 en kerne i en
+tomat, nÃ¦ste sekund mÃ¥ske et punktum pÃ¥ en skÃ¦rm, og nÃ¦ste dag
+kunne den vÃ¦re en del af en ordre til en harddisk.
 </para>
 
 <para>
-Hvis du vil i dybden med forståelse af computerens
-virkemåde og muligheder, kan du læse for eksempel Joseph Weizenbaum's
+Hvis du vil i dybden med forstÃ¥else af computerens
+virkemÃ¥de og muligheder, kan du lÃ¦se for eksempel Joseph Weizenbaum's
 "Computer Power and Human Reason".
 </para>
 
 <para>
-Datarepræsentation handler om teknikker til at
-repræsentere forskellige typer af objekter. For programmøren er
-det vigtigere at spørge, hvilke informationer, det egentlig er
-interessant at repræsentere. Det kan computeren ikke finde ud af
-uden kyndig vejledning fra programmører!
+DatareprÃ¦sentation handler om teknikker til at
+reprÃ¦sentere forskellige typer af objekter. For programmÃ¸ren er
+det vigtigere at spÃ¸rge, hvilke informationer, det egentlig er
+interessant at reprÃ¦sentere. Det kan computeren ikke finde ud af
+uden kyndig vejledning fra programmÃ¸rer!
 </para>
 
 <para>
-Hvordan vælger vi at repræsentere en tomat, hvad vælger vi
-at se? Er det prisen, der interesserer os?  Vægten? Udseendet?
-Surhed? Arvelige egenskaber? Vi vælger ud fra en idé om, hvad vi
+Hvordan vÃ¦lger vi at reprÃ¦sentere en tomat, hvad vÃ¦lger vi
+at se? Er det prisen, der interesserer os?  VÃ¦gten? Udseendet?
+Surhed? Arvelige egenskaber? Vi vÃ¦lger ud fra en idÃ© om, hvad vi
 vil med objektet.
 </para>
 </sect1>
 
-<sect1 id="repraesentation-af-tal"><title>Repræsentation af tal</title>
+<sect1 id="repraesentation-af-tal"><title>ReprÃ¦sentation af tal</title>
 <para>
-Lad os se på, hvordan computeren repræsenterer tal. Det er
-vel det, den er bedst til? Jo, måske nok, men alligevel, der er
-faktisk en hage eller to ved computerens måde at repræsentere tal
-på.
+Lad os se pÃ¥, hvordan computeren reprÃ¦senterer tal. Det er
+vel det, den er bedst til? Jo, mÃ¥ske nok, men alligevel, der er
+faktisk en hage eller to ved computerens mÃ¥de at reprÃ¦sentere tal
+pÃ¥.
 </para>
 
 <indexterm><primary>heltal</primary></indexterm>
 <para>
 Fx. taler vi om heltal, de naturlige tal, tallene fra 0 og
-opefter. Eller er det fra 1 og opefter ;-) Nå, i hvert fald så
-siger vi, at vi kan repræsentere heltallene med en computers
+opefter. Eller er det fra 1 og opefter ;-) NÃ¥, i hvert fald sÃ¥
+siger vi, at vi kan reprÃ¦sentere heltallene med en computers
 kalkulator register eller en memory celle. Men det er ikke helt
 rigtigt! Det er nemlig kun et udsnit af de naturlige tal, som vi
-kan repræsentere. Så ikke engang denne enkle opgave kan en
-computer klare så godt som en almindelig dødelig! Forklaring
-følger.
+kan reprÃ¦sentere. SÃ¥ ikke engang denne enkle opgave kan en
+computer klare sÃ¥ godt som en almindelig dÃ¸delig! Forklaring
+fÃ¸lger.
 </para>
 
 <para>
-Et register er en slags tælleværk, der i dag typisk består
-af 32 bits - binary digits. De enkelte digits er lavet ved hjælp
-af et transistor mønster, der kan være i to tilstande, 
-enten i en tilstand, hvor strømmen kan passere, eller også i en
-tilstand, hvor strømmen blokeres. Når der er 32 bits, kan de
-danne ca. 4 mia. mønstre eller kombinationer af on/off, 0 eller
-1. Det er maximum antal kombinationer. Hvis vi altså tæller fra
-0, kan vi komme op på 4 mia med et 32-bit register.
+Et register er en slags tÃ¦llevÃ¦rk, der i dag typisk bestÃ¥r
+af 32 bits - binary digits. De enkelte digits er lavet ved hjÃ¦lp
+af et transistor mÃ¸nster, der kan vÃ¦re i to tilstande, 
+enten i en tilstand, hvor strÃ¸mmen kan passere, eller ogsÃ¥ i en
+tilstand, hvor strÃ¸mmen blokeres. NÃ¥r der er 32 bits, kan de
+danne ca. 4 mia. mÃ¸nstre eller kombinationer af on/off, 0 eller
+1. Det er maximum antal kombinationer. Hvis vi altsÃ¥ tÃ¦ller fra
+0, kan vi komme op pÃ¥ 4 mia med et 32-bit register.
 </para>
 
 <para>
-Det er derfor, at der har været en grænse for filstørrelser
-på de almindeligst forekommende filsystemer. Siger 2 Gb grænsen
-dig noget? Det er den største fil på for eksempel Linux' ext2-filsystemer.
-Det kunne have været en 4 Gb grænse, men én af bit'ene er
-reserveret til et andet formål, nemlig til angivelse af, om
+Det er derfor, at der har vÃ¦ret en grÃ¦nse for filstÃ¸rrelser
+pÃ¥ de almindeligst forekommende filsystemer. Siger 2 Gb grÃ¦nsen
+dig noget? Det er den stÃ¸rste fil pÃ¥ for eksempel Linux' ext2-filsystemer.
+Det kunne have vÃ¦ret en 4 Gb grÃ¦nse, men Ã©n af bit'ene er
+reserveret til et andet formÃ¥l, nemlig til angivelse af, om
 systemet er i en fejltilstand efter en skrive- eller
-læseoperation.  En bit, on/off, svarer altså til en fordobling af
-kombinationsmulighederne, se nærmere nedenfor.
+lÃ¦seoperation.  En bit, on/off, svarer altsÃ¥ til en fordobling af
+kombinationsmulighederne, se nÃ¦rmere nedenfor.
 </para>
 
 <para>
-Bits er altså repræsenteret ved hjælp af elektriske
-kredsløb, der kan aflæses af andre kredsløb.
+Bits er altsÃ¥ reprÃ¦senteret ved hjÃ¦lp af elektriske
+kredslÃ¸b, der kan aflÃ¦ses af andre kredslÃ¸b.
 </para>
 
 <para>
-Kalkulator registeret, det vigtigste register på den
-traditionelt opbyggede CPU, er en slags tælleværk bestående af
-bits (i dag som regel 32), som en kilometertæller, som
-kan udføre forskellige regnestykker på det tal, den indeholder.
+Kalkulator registeret, det vigtigste register pÃ¥ den
+traditionelt opbyggede CPU, er en slags tÃ¦llevÃ¦rk bestÃ¥ende af
+bits (i dag som regel 32), som en kilometertÃ¦ller, som
+kan udfÃ¸re forskellige regnestykker pÃ¥ det tal, den indeholder.
 </para>
 
 <para>
 En CPU kan have mange kalkulator-registre. De har navne,
 ofte noget med R1 og R2, i Intel-arkitekturen (x86 - CPU'er)
 hedder de imidlertid EAX, EBX, ECX etc (hvilket er copyrighted!)
-Mange af dem kan udføre regnestykker. På Intel 386 arkitekturen
+Mange af dem kan udfÃ¸re regnestykker. PÃ¥ Intel 386 arkitekturen
 (og Pentium m.v.) kan man dog se en vis fortrinsstilling for EAX
 registeret. Men denne bog handler ikke om Intel. Hvis Intels
-CPU'er interesserer dig, så hent fra www.intel.com "Intel
-Architecture Software Developer's Manual" (det er 3 PDF-filer på
+CPU'er interesserer dig, sÃ¥ hent fra www.intel.com "Intel
+Architecture Software Developer's Manual" (det er 3 PDF-filer pÃ¥
 ialt omkring 15 Mb), eller find en bog om assemblerprogrammering,
-eller prøv at læse den Assembly-HOWTO, som følger med bl.a.
+eller prÃ¸v at lÃ¦se den Assembly-HOWTO, som fÃ¸lger med bl.a.
 Red Hat Linux.
 </para>
 
 <para>
-Hvis CPU-en har 32-bit registre, så kan man skrive tal fra
+Hvis CPU-en har 32-bit registre, sÃ¥ kan man skrive tal fra
 0 til 4 milliarder. Selv om det er mange, er det ikke ALLE de
-naturlige tal - de fortsætter jo opefter, mod uendelig, som man
+naturlige tal - de fortsÃ¦tter jo opefter, mod uendelig, som man
 siger. Selv om det heller ikke er muligt at finde noget i
-universet, som er uendeligt, man bliver om jeg så må sige træt
-inden man når dertil, er det alligevel en mere begrænset
-repræsentation af talsystemet, som vi får med en 32-bit computer
-<footnote id="C-tid"><para>En lidt mere seriøs beskrivelse af tid,
+universet, som er uendeligt, man bliver om jeg sÃ¥ mÃ¥ sige trÃ¦t
+inden man nÃ¥r dertil, er det alligevel en mere begrÃ¦nset
+reprÃ¦sentation af talsystemet, som vi fÃ¥r med en 32-bit computer
+<footnote id="C-tid"><para>En lidt mere seriÃ¸s beskrivelse af tid,
 uendelighed og rum kan man finde i Stephen Hawking's "Brief
 History Of Time", nej, ikke Stephen King!</para></footnote>
 
-Metoden til at tælle ved hjælp af bits, som du sikkert kender
-eller allerede har regnet ud, kan illustreres med følgende tabel
+Metoden til at tÃ¦lle ved hjÃ¦lp af bits, som du sikkert kender
+eller allerede har regnet ud, kan illustreres med fÃ¸lgende tabel
 (med kun 4 bit):
 </para>
 
@@ -327,7 +327,7 @@ eller allerede har regnet ud, kan illustreres med følgende tabel
     <entry>firere</entry>
     <entry>toere_</entry>
     <entry>enere_</entry>
-    <entry>værdi med almindeligt 10-talsystem</entry>
+    <entry>vÃ¦rdi med almindeligt 10-talsystem</entry>
   </row>
 </thead>
 <tbody>
@@ -388,38 +388,38 @@ eller allerede har regnet ud, kan illustreres med følgende tabel
 <para>
 Som man kan se kan kolonnerne kaldes ENERE, TOERE og FIRERE
 i analogi med vores ti-tal system, hvor vi siger, at kolonnerne
-repræsenterer enere, tiere og hundreder etc.
+reprÃ¦senterer enere, tiere og hundreder etc.
 </para>
 
 <para>
-Hvis vi har brug for mere, kan vi imidlertid godt sætte
-flere registre, eller flere memory celler, sammen, så vores tal
-kan blive større. Det er forholdsvis enkelt.
+Hvis vi har brug for mere, kan vi imidlertid godt sÃ¦tte
+flere registre, eller flere memory celler, sammen, sÃ¥ vores tal
+kan blive stÃ¸rre. Det er forholdsvis enkelt.
 </para>
 
 <para>
-De negative tal kunne vi repræsentere ved at markere med en
+De negative tal kunne vi reprÃ¦sentere ved at markere med en
 ekstra bit (eventuelt et helt andet sted) at vi skulle gange med
 -1. Nogle maskiner kan faktisk skelne mellem +0 og -0! Men det er
-ikke populært i dag. Man vælger som regel en anden metode.
+ikke populÃ¦rt i dag. Man vÃ¦lger som regel en anden metode.
 </para>
 
 <para>
-Man indretter CPU registrene sådan, at når man tæller op,
-så bliver 1...1111 til 0...0000 (for ikke at skrive alle 32 bit,
-skriver jeg 1...1111.) Det ligner lidt en kilometertæller, som
-når den har nået det største tal, den kan vise, går tilbage til
-0, altså for eksempel går fra 99999 til 00000. 
+Man indretter CPU registrene sÃ¥dan, at nÃ¥r man tÃ¦ller op,
+sÃ¥ bliver 1...1111 til 0...0000 (for ikke at skrive alle 32 bit,
+skriver jeg 1...1111.) Det ligner lidt en kilometertÃ¦ller, som
+nÃ¥r den har nÃ¥et det stÃ¸rste tal, den kan vise, gÃ¥r tilbage til
+0, altsÃ¥ for eksempel gÃ¥r fra 99999 til 00000. 
 </para>
 
 <para>
-Men altså, det skal forestille, at alle bit er tændt - det kalder
+Men altsÃ¥, det skal forestille, at alle bit er tÃ¦ndt - det kalder
 man, at de er sat. Hvis det er et 32-bit register, svarer det til
-ca. 4 milliarder. Når man så lægger 1 til, bliver resultatet 0!
-Det ligner ikke helt den verden, vi ønsker at repræsentere
-med vores computer programmer. Derfor bør man under programmering
-altid være opmærksom på grænserne for de tal, man arbejder med.
-Det er imidlertid ikke så slemt, som det lyder.
+ca. 4 milliarder. NÃ¥r man sÃ¥ lÃ¦gger 1 til, bliver resultatet 0!
+Det ligner ikke helt den verden, vi Ã¸nsker at reprÃ¦sentere
+med vores computer programmer. Derfor bÃ¸r man under programmering
+altid vÃ¦re opmÃ¦rksom pÃ¥ grÃ¦nserne for de tal, man arbejder med.
+Det er imidlertid ikke sÃ¥ slemt, som det lyder.
 </para>
 
 <informaltable frame="all">
@@ -465,16 +465,16 @@ Det er imidlertid ikke så slemt, som det lyder.
 
 <sidebar>
 <para>
-Ovenstående forestiller en kilometertæller som tæller med nuller
-og enere. Den er løbet fuld! Næste gang, den skal tælle opad,
+OvenstÃ¥ende forestiller en kilometertÃ¦ller som tÃ¦ller med nuller
+og enere. Den er lÃ¸bet fuld! NÃ¦ste gang, den skal tÃ¦lle opad,
 skifter alle cifre, ligesom 99.999km ville skifte til 00.000km.
 </para>
 </sidebar>
 
 <para>
-Altså, når alle bit er sat, og vi lægger en til, så slukker
-de alle sammen. Derfor kunne det være en god idé at lade 1...1111
-repræsentere det negative tal -1.
+AltsÃ¥, nÃ¥r alle bit er sat, og vi lÃ¦gger en til, sÃ¥ slukker
+de alle sammen. Derfor kunne det vÃ¦re en god idÃ© at lade 1...1111
+reprÃ¦sentere det negative tal -1.
 </para>
 
 <informaltable frame="all">
@@ -485,7 +485,7 @@ repræsentere det negative tal -1.
     <entry>_______</entry>
     <entry>_______</entry>
     <entry>_______</entry>
-    <entry>værdi med almindeligt 10-talsystem</entry>
+    <entry>vÃ¦rdi med almindeligt 10-talsystem</entry>
   </row>
 </thead>
 <tbody>
@@ -546,7 +546,7 @@ repræsentere det negative tal -1.
 <para>
 Som man kan se, nytter det ikke noget her at kalde
 kolonnerne for ENERE, TOERE og FIRERE. Hvis man skal give denne
-"konvertering af betydningen" et navn, så plejer man at kalde den
+"konvertering af betydningen" et navn, sÃ¥ plejer man at kalde den
 2's komplement. Men egentlig er det
 2<superscript>32</superscript>'s komplement, d.v.s.
 2<superscript>32</superscript>-tal.
@@ -554,9 +554,9 @@ kolonnerne for ENERE, TOERE og FIRERE. Hvis man skal give denne
 
 <para>
 Det er nok lettere at se det for sig med en illustration.
-Man repræsenterer f.x. 1 med en bit i den ene ende. Når man
-vender alle bits om, så 0'er bliver til 1 og omvent (inverterer),
-og lægger 1 til, så får man bitmønsteret til repræsentation af
+Man reprÃ¦senterer f.x. 1 med en bit i den ene ende. NÃ¥r man
+vender alle bits om, sÃ¥ 0'er bliver til 1 og omvent (inverterer),
+og lÃ¦gger 1 til, sÃ¥ fÃ¥r man bitmÃ¸nsteret til reprÃ¦sentation af
 -1.
 </para>
 
@@ -576,10 +576,10 @@ og lægger 1 til, så får man bitmønsteret til repræsentation af
 </example>
 
 <para>
-Når der er tale om 32 bit heltals repræsentation, er det lettere
+NÃ¥r der er tale om 32 bit heltals reprÃ¦sentation, er det lettere
 at benytte hexadecimal notation. Tallene fra 0-9 skrives som
-sædvanlig 0-9, men 10-15 skrives a-f. Det betyder, at man kan
-repræsentere 4 bit med ét 'ciffer', hvor ciffer skal forstås som
+sÃ¦dvanlig 0-9, men 10-15 skrives a-f. Det betyder, at man kan
+reprÃ¦sentere 4 bit med Ã©t 'ciffer', hvor ciffer skal forstÃ¥s som
 0-9a-f.
 </para>
 
@@ -599,13 +599,13 @@ Word: 00000007, Inverted: fffffff8, Complement: fffffff9
 </example>
 
 <para>
-Fortsætter man denne tankegang, så bliver det største tal
-med 32 - bit ca. 2 milliarder, og det er stadigvæk en pæn sjat.
+FortsÃ¦tter man denne tankegang, sÃ¥ bliver det stÃ¸rste tal
+med 32 - bit ca. 2 milliarder, og det er stadigvÃ¦k en pÃ¦n sjat.
 </para>
 
 <para>
- Grunden til, at Linux' ext2-filsystem ikke kan have filer, som er større end
- 2 Gb er forresten, at grænsesnittene der bruges til at læse og skrive filer
+ Grunden til, at Linux' ext2-filsystem ikke kan have filer, som er stÃ¸rre end
+ 2 Gb er forresten, at grÃ¦nsesnittene der bruges til at lÃ¦se og skrive filer
  arbejder med 32 bit heltal (hvoraf en bit bruges til fortegnet).
 </para>
 
@@ -616,195 +616,195 @@ linkend="outformat1"/>.
 </para>
 
 <para>
-Det er muligt at repræsentere tal på andre måder end 
+Det er muligt at reprÃ¦sentere tal pÃ¥ andre mÃ¥der end 
 den her viste. <!-- (TODO: henvisning!) --> Men vigtigere, det er
-muligt at repræsentere andet end tal. Bogstaver kan repræsenteres
-ved hjælp af tal, den simpleste løsning på en computer med
-mulighed for at repræsentere tekst er jo den kendte metode med en
-byte pr. bogstav. Det er ikke nok, hvis der også skal være plads
-til at repræsentere græske bogstaver, matematiske symboler, og
-slet ikke, hvis også forskellige grafiske symboler,
-skrifttypebeskrivelser etc. skal repræsenteres. Men det er en helt
+muligt at reprÃ¦sentere andet end tal. Bogstaver kan reprÃ¦senteres
+ved hjÃ¦lp af tal, den simpleste lÃ¸sning pÃ¥ en computer med
+mulighed for at reprÃ¦sentere tekst er jo den kendte metode med en
+byte pr. bogstav. Det er ikke nok, hvis der ogsÃ¥ skal vÃ¦re plads
+til at reprÃ¦sentere grÃ¦ske bogstaver, matematiske symboler, og
+slet ikke, hvis ogsÃ¥ forskellige grafiske symboler,
+skrifttypebeskrivelser etc. skal reprÃ¦senteres. Men det er en helt
 anden historie.
 </para>
 
 <para>
-Andre ting, som for eksempel grøntsager og frugt, må repræsenteres
-ved bits og bytes på samme måde som tal og bogstaver. Hvis du er
-ny i programmering, vil det klogeste være at afprøve nogle
-programmer nu, måske endda bruge 3 - 4 måneder på eksemplerne og
-øvelserne i <xref linkend="tour"/> kapitlet.
- Hvis du på den anden side kender lidt til programmering og
-gerne vil køre tanken om repræsentation til ende, så er der to
-begreber, som vi skal tygge lidt på: Simuleringer og modeller.
+Andre ting, som for eksempel grÃ¸ntsager og frugt, mÃ¥ reprÃ¦senteres
+ved bits og bytes pÃ¥ samme mÃ¥de som tal og bogstaver. Hvis du er
+ny i programmering, vil det klogeste vÃ¦re at afprÃ¸ve nogle
+programmer nu, mÃ¥ske endda bruge 3 - 4 mÃ¥neder pÃ¥ eksemplerne og
+Ã¸velserne i <xref linkend="tour"/> kapitlet.
+ Hvis du pÃ¥ den anden side kender lidt til programmering og
+gerne vil kÃ¸re tanken om reprÃ¦sentation til ende, sÃ¥ er der to
+begreber, som vi skal tygge lidt pÃ¥: Simuleringer og modeller.
 </para>
 </sect1>
 
 <sect1 id="simulering-modeller">
 <title>Simulering - Modeller</title>
 <para>
-For lige at få lidt mere 'real-life' perspektiv på
-datarepræsentation, så forestil dig et program, som skal simulere
-noget, der foregår i det virkelige liv, matador-spil,
-adventure-spil (som på visse punkter forventes at svare til ting,
+For lige at fÃ¥ lidt mere 'real-life' perspektiv pÃ¥
+datareprÃ¦sentation, sÃ¥ forestil dig et program, som skal simulere
+noget, der foregÃ¥r i det virkelige liv, matador-spil,
+adventure-spil (som pÃ¥ visse punkter forventes at svare til ting,
 vi kender fra dagligdagen), eller beregning af en vejrudsigt.
-Vind fra vest med lavtryk - hvor ligger grænsen (isobar linjen)
+Vind fra vest med lavtryk - hvor ligger grÃ¦nsen (isobar linjen)
 for 990 millibar etc.etc. Man kan for eksempel opdele luftrummet over
-Skandinavien i firkanter med hver deres vejr-målinger og beregne
+Skandinavien i firkanter med hver deres vejr-mÃ¥linger og beregne
 interaktionen mellem firkanterne efter de fysiske love for tryk
 udligning, temperaturudvidelser etc. - pyha, godt det ikke skal
-udregnes i hånden!
+udregnes i hÃ¥nden!
 </para>
 
 <para>
-Simuleringer er så forskellige. Man kan simulere
-reaktionerne på håndtag og visningen i instrumenter i et
-flycockpit for at give piloterne øvelse i at betjene
+Simuleringer er sÃ¥ forskellige. Man kan simulere
+reaktionerne pÃ¥ hÃ¥ndtag og visningen i instrumenter i et
+flycockpit for at give piloterne Ã¸velse i at betjene
 styremekanismerne; eller man kan simulere eller efteligne lydene
-fra et spillende symfoniorkester.  Simuleringerne svarer ikke på
-alle punkter til virkeligheden, men kan være nyttige og mere
-eller mindre tæt på virkeligheden.
+fra et spillende symfoniorkester.  Simuleringerne svarer ikke pÃ¥
+alle punkter til virkeligheden, men kan vÃ¦re nyttige og mere
+eller mindre tÃ¦t pÃ¥ virkeligheden.
 </para>
 
 <para>
-Hvis vi skulle beregne det mest rentable dyrkningsforløb for
-tomater i drivhus, hvad skulle vi så vide om dem? Jeg behøver
-ikke spørge, om vi kunne spise resultatet af simuleringen! Men en
+Hvis vi skulle beregne det mest rentable dyrkningsforlÃ¸b for
+tomater i drivhus, hvad skulle vi sÃ¥ vide om dem? Jeg behÃ¸ver
+ikke spÃ¸rge, om vi kunne spise resultatet af simuleringen! Men en
 ting er sikkert, der skulle mange oplysninger til, de fleste af
-dem skulle opsamles ved hjælp af grundige forsøg og målinger, som
-ville ende med nogle tal, der repræsenterede egenskaber ved
-forløbet.
+dem skulle opsamles ved hjÃ¦lp af grundige forsÃ¸g og mÃ¥linger, som
+ville ende med nogle tal, der reprÃ¦senterede egenskaber ved
+forlÃ¸bet.
 </para>
 
 <para>
-Derimod så ligner et investeringsspil og en investerings
-service for bankkunder hinanden så meget, at man kan bruge det
+Derimod sÃ¥ ligner et investeringsspil og en investerings
+service for bankkunder hinanden sÃ¥ meget, at man kan bruge det
 ene program som grundlag for den virkelige service. Her bliver
-der blot koblet betalingstransaktioner på spillet, med tilhørende
+der blot koblet betalingstransaktioner pÃ¥ spillet, med tilhÃ¸rende
 retsansvar.
 </para>
 
 <para>
-Kobler vi simuleringerne på virkelige objekter (med passende
-teknik, som i sig selv kan være komplicerede computersystemer) kan
-computeren anvendes som værktøj til at "styre virkeligheden",
-måske bedre, end vi kan gøre det, men til syvende og sidst blot
-som vores "forlængede arm".
+Kobler vi simuleringerne pÃ¥ virkelige objekter (med passende
+teknik, som i sig selv kan vÃ¦re komplicerede computersystemer) kan
+computeren anvendes som vÃ¦rktÃ¸j til at "styre virkeligheden",
+mÃ¥ske bedre, end vi kan gÃ¸re det, men til syvende og sidst blot
+som vores "forlÃ¦ngede arm".
 </para>
 
 <para>
-Simulerings- og styringsteknikker hviler på evnen til at
-repræsentere begreber og objekter ved hjælp af computerens bits.
-Som nævnt er denne repræsentation altid mangelfuld. Den
-opfattelse af verden, som måtte ligge til grundlag for
-simuleringerne, kaldes en model. Modellen er altså ikke kun
-repræsentationen af statiske, ubevægelige, egenskaber, som
-tingene har, men også af deres måde at bevæge sig og indgå
-forbindelser med hinanden, sådan som for eksempel de enkelte styrehåndtag
-i en flysimulator må reagere på og med hinanden.
+Simulerings- og styringsteknikker hviler pÃ¥ evnen til at
+reprÃ¦sentere begreber og objekter ved hjÃ¦lp af computerens bits.
+Som nÃ¦vnt er denne reprÃ¦sentation altid mangelfuld. Den
+opfattelse af verden, som mÃ¥tte ligge til grundlag for
+simuleringerne, kaldes en model. Modellen er altsÃ¥ ikke kun
+reprÃ¦sentationen af statiske, ubevÃ¦gelige, egenskaber, som
+tingene har, men ogsÃ¥ af deres mÃ¥de at bevÃ¦ge sig og indgÃ¥
+forbindelser med hinanden, sÃ¥dan som for eksempel de enkelte styrehÃ¥ndtag
+i en flysimulator mÃ¥ reagere pÃ¥ og med hinanden.
 </para>
 
 <para>
-Men ligesom talrepræsentationen er mangelfuld, så vil
-modeller også være mangelfulde. Ikke kun fordi der mangler den
-syvende decimal, men fordi der er grænser for, hvor
-meget programmøren kan forudse. Havarisituationer,
+Men ligesom talreprÃ¦sentationen er mangelfuld, sÃ¥ vil
+modeller ogsÃ¥ vÃ¦re mangelfulde. Ikke kun fordi der mangler den
+syvende decimal, men fordi der er grÃ¦nser for, hvor
+meget programmÃ¸ren kan forudse. Havarisituationer,
 vejrsituationer, forskellige former for landskabsforhindringer
-etc. kan kun i et begrænset antal være repræsenteret i en
-computer. På et eller andet tidspunkt kommer man (efter meget
+etc. kan kun i et begrÃ¦nset antal vÃ¦re reprÃ¦senteret i en
+computer. PÃ¥ et eller andet tidspunkt kommer man (efter meget
 arbejde) formentlig til en model, som tilfredsstiller brugerne af
-modellen så meget, at de opfatter modellen som en fuldt funktionel
+modellen sÃ¥ meget, at de opfatter modellen som en fuldt funktionel
 fremstilling af virkeligheden.
 </para>
 
 <para>
-Den slags tanker virker specielt tiltrækkende på børn og
-reklamefolk. Måske også på fabrikanter af computerspil. Ord som
-cybernetics, cyberspace og cyborg spiller på dette element af "en
+Den slags tanker virker specielt tiltrÃ¦kkende pÃ¥ bÃ¸rn og
+reklamefolk. MÃ¥ske ogsÃ¥ pÃ¥ fabrikanter af computerspil. Ord som
+cybernetics, cyberspace og cyborg spiller pÃ¥ dette element af "en
 verden inde i computeren".
 </para>
 
 <indexterm><primary>mapning</primary></indexterm>
 <para>
 Man kunne sige, at vi har "mappet", kortlagt, en del af den
-virkelige verden ved hjælp af vores computers bits og nogle
+virkelige verden ved hjÃ¦lp af vores computers bits og nogle
 programmer, som behandler dem i overensstemmelse med vores
 fortolkning.
 </para>
 
 <para>
-Denne teknik, at "mappe" en mængde af elementer, således at
-de repræsenteres af en anden mængde, er den grundlæggende disciplin
-for applikationsprogrammører. Alan Turing har omkring 1940-1950
-beskrevet det teoretiske grundlag for computerens virkemåde, og hans
-arbejde er stadig interessant for programmører, der vil forstå muligheder
-og grænser for computerens "indre univers".
+Denne teknik, at "mappe" en mÃ¦ngde af elementer, sÃ¥ledes at
+de reprÃ¦senteres af en anden mÃ¦ngde, er den grundlÃ¦ggende disciplin
+for applikationsprogrammÃ¸rer. Alan Turing har omkring 1940-1950
+beskrevet det teoretiske grundlag for computerens virkemÃ¥de, og hans
+arbejde er stadig interessant for programmÃ¸rer, der vil forstÃ¥ muligheder
+og grÃ¦nser for computerens "indre univers".
 </para>
 </sect1>
 
 <sect1 id="c-program-planlaegning">
-<title>Planlægning af et program</title>
+<title>PlanlÃ¦gning af et program</title>
 
 <para>
-For at omsætte teori til praksis er det bedst at begynde med
+For at omsÃ¦tte teori til praksis er det bedst at begynde med
 en opgavetype, som man kender lidt til i forvejen, og helst et
-område, som ikke involverer kompliceret teknik. I denne sammenhæng
+omrÃ¥de, som ikke involverer kompliceret teknik. I denne sammenhÃ¦ng
 er spil og simuleringer er gode.
 </para>
 
 <para>
-Det er vigtigt, at man ikke begynder for ambitiøst. Pas på ikke
-at gøre for meget ud af detaillerne i første omgang. Prøv for
-eksempel at skitsere, hvilke oplysninger, der bør være med i et
-CD kartotek. Når det viser sig, at denne opgave er af næsten
-uoverskuelig kompleksitet og involverer ansættelse af 10 erfarne
-bibliotekarer (jvf. Knuth [2]) så er man gået for langt.
+Det er vigtigt, at man ikke begynder for ambitiÃ¸st. Pas pÃ¥ ikke
+at gÃ¸re for meget ud af detaillerne i fÃ¸rste omgang. PrÃ¸v for
+eksempel at skitsere, hvilke oplysninger, der bÃ¸r vÃ¦re med i et
+CD kartotek. NÃ¥r det viser sig, at denne opgave er af nÃ¦sten
+uoverskuelig kompleksitet og involverer ansÃ¦ttelse af 10 erfarne
+bibliotekarer (jvf. Knuth [2]) sÃ¥ er man gÃ¥et for langt.
 </para>
 
 <para>
-For at repræsentere et medlem i et medlemskartotek er det
-indlysende, at der skal være navn og medlemsnummer (eller er
-medlemsnummer nok?), måske skal navnet deles i for/efternavn,
-formentlig skal vi have adressen med. Hvordan vi vil nedfælde
-adressen kommer an på meningen med kartoteket. Normalt skal der
-være forskellige måder at kontakte personen. Det kunne måske
-klares ved et telefonnummer eller en e-postadresse. Skal der være
+For at reprÃ¦sentere et medlem i et medlemskartotek er det
+indlysende, at der skal vÃ¦re navn og medlemsnummer (eller er
+medlemsnummer nok?), mÃ¥ske skal navnet deles i for/efternavn,
+formentlig skal vi have adressen med. Hvordan vi vil nedfÃ¦lde
+adressen kommer an pÃ¥ meningen med kartoteket. Normalt skal der
+vÃ¦re forskellige mÃ¥der at kontakte personen. Det kunne mÃ¥ske
+klares ved et telefonnummer eller en e-postadresse. Skal der vÃ¦re
 felter for indbetalt kontingent eller vil vi henvise til et
-kontonummer og dermed bevæge os ind på posteringsteknikker?
+kontonummer og dermed bevÃ¦ge os ind pÃ¥ posteringsteknikker?
 </para>
 
 <para>
-Det er rart at prøve det nogle gange. Det er også ganske
-underholdende, fordi man (forhåbentlig) opdager en masse om, hvad
+Det er rart at prÃ¸ve det nogle gange. Det er ogsÃ¥ ganske
+underholdende, fordi man (forhÃ¥bentlig) opdager en masse om, hvad
 man kan forvente af funktionalitet ud fra de data, man agter at
 registrere.
 </para>
 
 <para>
-Opgave: Prøv at tegne/skitsere en repræsentation af noget, du
+Opgave: PrÃ¸v at tegne/skitsere en reprÃ¦sentation af noget, du
 kender godt, f.eks. et medlemskartotek, og beskriv de
-operationer, du ønsker at kunne foretage. Hvis det bliver
-nødvendigt at ændre i datarepræsentationen, så gør det, og tjek,
-at de gamle operationer stadig kan fungere. Prøv at holde skitsen
-så simpel som muligt, således at man stort set kunne gøre de
-samme ting ved hjælp af en editor (tekstbehandling).
+operationer, du Ã¸nsker at kunne foretage. Hvis det bliver
+nÃ¸dvendigt at Ã¦ndre i datareprÃ¦sentationen, sÃ¥ gÃ¸r det, og tjek,
+at de gamle operationer stadig kan fungere. PrÃ¸v at holde skitsen
+sÃ¥ simpel som muligt, sÃ¥ledes at man stort set kunne gÃ¸re de
+samme ting ved hjÃ¦lp af en editor (tekstbehandling).
 </para>
 
 <para>
-Det er den samme fremgangsmåde som ved objektorienteret analyse
-og planlægning, med den lille undtagelse, at vi ikke hævder at
+Det er den samme fremgangsmÃ¥de som ved objektorienteret analyse
+og planlÃ¦gning, med den lille undtagelse, at vi ikke hÃ¦vder at
 afspejle den ydre verdens datastruktur i vores interne
-datarepræsentation.
+datareprÃ¦sentation.
 </para>
 
 <para>
-Man kan selvfølgelig også begynde med de <emphasis> operationer
-</emphasis>, som man ønsker at have til rådighed.  Derefter
-finder man ud af, hvilke data, som kræves for at kunne gøre det.
+Man kan selvfÃ¸lgelig ogsÃ¥ begynde med de <emphasis> operationer
+</emphasis>, som man Ã¸nsker at have til rÃ¥dighed.  Derefter
+finder man ud af, hvilke data, som krÃ¦ves for at kunne gÃ¸re det.
 </para>
 
 <para>
-Med denne metode skal man være mere opmærksom på, hvordan de
+Med denne metode skal man vÃ¦re mere opmÃ¦rksom pÃ¥, hvordan de
 forskellige data skal grupperes. Det sjove ved den
 "objektorienterede" analyse er jo, at man anvender sit
 forudfattede billede af den eksisterende opgave til at gruppere
@@ -812,21 +812,21 @@ sine data.
 </para>
 
 <para>
-Uanset hvilken indfaldsvinkel man foretrækker, så er det vigtigt
-at tegne og tale med kolleger, i nødsfald med sig selv, om
+Uanset hvilken indfaldsvinkel man foretrÃ¦kker, sÃ¥ er det vigtigt
+at tegne og tale med kolleger, i nÃ¸dsfald med sig selv, om
 hvordan man kunne gribe sagen an. Brug meget gerne
-pseudo-programmering, d.v.s. almindelige sætninger, som
+pseudo-programmering, d.v.s. almindelige sÃ¦tninger, som
 beskriver, hvordan programmet skal fungere. <!--TODO
 Henvisning--> Det kunne man kalde aktions-orienteret
 programmering ;-)
 </para>
 
 <para>
-Den her foreslåede fremgangsmåde er jo den samme procedure som
+Den her foreslÃ¥ede fremgangsmÃ¥de er jo den samme procedure som
 ved objektorienteret analyse til for eksempel programmering i C++, Det er
 ikke umuligt at skrive strukturerede, objektorienterede
-programmer ved hjælp af C sproget. Det er selvfølgelig nemmere at
-gøre det med C++ (eller bør være nemmere), men der er stadig
+programmer ved hjÃ¦lp af C sproget. Det er selvfÃ¸lgelig nemmere at
+gÃ¸re det med C++ (eller bÃ¸r vÃ¦re nemmere), men der er stadig
 nogle situationer, hvor C er mere effektivt.
 </para>
 

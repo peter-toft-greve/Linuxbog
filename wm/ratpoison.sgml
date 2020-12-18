@@ -7,24 +7,24 @@
 <indexterm><primary>Ratpoison</primary></indexterm>
 <indexterm><primary>Windowmanager</primary><secondary>Ratpoison</secondary></indexterm>
 
-<para>Ved første øjekast minder ratpoison om mange andre minimale
-window managere. Den præsenterer også sig selv som enhver anden minimal
-window manager uden tunge biblioteksafhængigheder og ingen unødvendig
+<para>Ved fÃ¸rste Ã¸jekast minder ratpoison om mange andre minimale
+window managere. Den prÃ¦senterer ogsÃ¥ sig selv som enhver anden minimal
+window manager uden tunge biblioteksafhÃ¦ngigheder og ingen unÃ¸dvendig
 grafik.
 </para>
 
 <para>Det der adskiller ratpoison fra 9wm og andre minimale window managere
-er at den ikke bare skærer ned på mulighederne og eventuelt laver nogle
+er at den ikke bare skÃ¦rer ned pÃ¥ mulighederne og eventuelt laver nogle
 flere genvejstaster. Ratpoison behandler vinduer radikalt anderledes end
-andre window managere jeg har set og det gør den interessant.
+andre window managere jeg har set og det gÃ¸r den interessant.
 </para>
 
-<para>Ratpoison ligner på mange måder screen i brugergrænsefladen og
+<para>Ratpoison ligner pÃ¥ mange mÃ¥der screen i brugergrÃ¦nsefladen og
 mulighederne. Der er dog ingen mulighed for at detache og reattache en
 session.
 </para>
 
-<para>Der er ikke meget at se, men I skal alligevel have et skærmbillede:
+<para>Der er ikke meget at se, men I skal alligevel have et skÃ¦rmbillede:
 </para>
 
 <figure id="ratpoison-fig" float="1">
@@ -35,17 +35,17 @@ session.
 <sect2 id="wm-ratpoison-kommandoer">
   <title>Tastaturkommandoer</title>
 
-<para>Alt foregår via tastaturet og alle kommandoer indledes med et præfiks,
-som kan vælges og selve kommandotasten. Som standard er præfikset
-Ctrl-t. Dette er valgt ud fra at det skulle være så lidt generende som
-overhovedet muligt når man bruger Screen og Emacs under ratpoison.
+<para>Alt foregÃ¥r via tastaturet og alle kommandoer indledes med et prÃ¦fiks,
+som kan vÃ¦lges og selve kommandotasten. Som standard er prÃ¦fikset
+Ctrl-t. Dette er valgt ud fra at det skulle vÃ¦re sÃ¥ lidt generende som
+overhovedet muligt nÃ¥r man bruger Screen og Emacs under ratpoison.
 </para>
 
-<para>Man skal være lidt påpasselig, da der er forskel på store og små
+<para>Man skal vÃ¦re lidt pÃ¥passelig, da der er forskel pÃ¥ store og smÃ¥
 bogstaver i kommandoer.
 </para>
 
-<para>Det er altid muligt at hente en hjælpeskærm frem med 'Ctrl-t ?'
+<para>Det er altid muligt at hente en hjÃ¦lpeskÃ¦rm frem med 'Ctrl-t ?'
 </para>
 
 </sect2>    <!--   Tastaturkommandoer -->
@@ -53,37 +53,37 @@ bogstaver i kommandoer.
 <sect2 id="wm-ratpoison-felter">
   <title>Felter</title>
 
-<para>I ratpoison kan man ikke placerer vinduet tilfældige steder på
-skærmen. Skærmen er i stedet delt op i en række felter der hver
-indenholder vinduerne maksimeret så de passer med feltets størelse. Nå
-man har et felt kan det deles op i to felter ved at dele det på mindten
+<para>I ratpoison kan man ikke placerer vinduet tilfÃ¦ldige steder pÃ¥
+skÃ¦rmen. SkÃ¦rmen er i stedet delt op i en rÃ¦kke felter der hver
+indenholder vinduerne maksimeret sÃ¥ de passer med feltets stÃ¸relse. NÃ¥
+man har et felt kan det deles op i to felter ved at dele det pÃ¥ mindten
 enten vertikalt eller horisontalt.
 </para>
 
-<para>Når man begynder ratpoison består skærmen af et stort felt og ens
-vinduer fylder derfor hele skærmen. I ovenstående skærmbilled har jeg
-først delt feltet op vertikalt og dernæst delt det ene felt op
+<para>NÃ¥r man begynder ratpoison bestÃ¥r skÃ¦rmen af et stort felt og ens
+vinduer fylder derfor hele skÃ¦rmen. I ovenstÃ¥ende skÃ¦rmbilled har jeg
+fÃ¸rst delt feltet op vertikalt og dernÃ¦st delt det ene felt op
 horisontalt, hvilken giver mig tre felter jeg kan have vinduer i.
 </para>
 
 <para>Hvert felt har et aktivt vindue der vises i feltet. Et af felterne er
 aktivt og det er det aktive vindue i dette felt der har fokus. Musen har
-ingen indvirkning på hvilket vindue der har fokus.
+ingen indvirkning pÃ¥ hvilket vindue der har fokus.
 </para>
 
 <para>
-Følgende kommandosekvenser virker på felter:
+FÃ¸lgende kommandosekvenser virker pÃ¥ felter:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-<emphasis>Ctrl-t s</emphasis> Splitter skærmen horisontalt.
+<emphasis>Ctrl-t s</emphasis> Splitter skÃ¦rmen horisontalt.
  </para>
 </listitem>
 <listitem> 
  <para>
-<emphasis>Ctrl-t S</emphasis> Splitter skærmen vertikalt.
+<emphasis>Ctrl-t S</emphasis> Splitter skÃ¦rmen vertikalt.
  </para>
 </listitem>
 <listitem>
@@ -94,12 +94,12 @@ Følgende kommandosekvenser virker på felter:
 <listitem> 
  <para>
 <emphasis>Ctrl-t R</emphasis> Fjerner det aktive felt. Pladsen bliver automatisk
-tilføjet et af de andre felter
+tilfÃ¸jet et af de andre felter
  </para>
 </listitem>
 <listitem>
  <para>
-<emphasis>Ctrl-t Q</emphasis> Fjerner alle felter undetagen det aktive, så man kun har
+<emphasis>Ctrl-t Q</emphasis> Fjerner alle felter undetagen det aktive, sÃ¥ man kun har
 et felt som da ratpoison startede.
  </para>
 </listitem>
@@ -115,12 +115,12 @@ et felt som da ratpoison startede.
   <title>Vinduer</title>
 
 <para>Hvert vindue vises maksimeret i et felt. Hvis vinduet ikke kan
-maksimeret placeres det i det ene hjørne af feltet. Hvilket hjørne det
-placeres i kan sættes op.
+maksimeret placeres det i det ene hjÃ¸rne af feltet. Hvilket hjÃ¸rne det
+placeres i kan sÃ¦ttes op.
 </para>
 
 <para>
-Følgende kommandosekvenser virker på vinduer (eller ligende)
+FÃ¸lgende kommandosekvenser virker pÃ¥ vinduer (eller ligende)
 </para>
 
 <itemizedlist mark="bullet">
@@ -131,13 +131,13 @@ Følgende kommandosekvenser virker på vinduer (eller ligende)
 </listitem>
 <listitem> 
  <para>
-<emphasis>Ctrl-t 0, Ctrl-t 1, ... Ctrl-t 9</emphasis> Gå til vinduet med det givne
+<emphasis>Ctrl-t 0, Ctrl-t 1, ... Ctrl-t 9</emphasis> GÃ¥ til vinduet med det givne
 nummer. Hvis vinduet findes i et andet felt skiftes aktivt felt.
  </para>
 </listitem>
 <listitem>
  <para>
-<emphasis>Ctrl-t Ctrl-t</emphasis> Gå tilbage til det sidste vindue.
+<emphasis>Ctrl-t Ctrl-t</emphasis> GÃ¥ tilbage til det sidste vindue.
  </para>
 </listitem>
 <listitem> 
@@ -164,17 +164,17 @@ vinduerne i det aktive felt.
   <title>Mere avanceret brug</title>
 
 <para>
-Ratpoison har en længere række komandoer der enten kan kaldes med 'Ctrl-t
-:' eller sættes ind i ens <filename>~/.ratpoisonrc</filename>. De vigtigste af disse
-kommandoer er nok <filename>exec</filename> der udfører en shell-kommando og
+Ratpoison har en lÃ¦ngere rÃ¦kke komandoer der enten kan kaldes med 'Ctrl-t
+:' eller sÃ¦ttes ind i ens <filename>~/.ratpoisonrc</filename>. De vigtigste af disse
+kommandoer er nok <filename>exec</filename> der udfÃ¸rer en shell-kommando og
 <filename>bind</filename> der binder en tast til en kommandosekvens.
 </para>
 
-<para>For eksempel kan man får <command>Ctrl-t e</command> til at starte Emacs med følgende
+<para>For eksempel kan man fÃ¥r <command>Ctrl-t e</command> til at starte Emacs med fÃ¸lgende
 kommando: <command>bind&nbsp;e&nbsp;exec&nbsp;emacs</command>.
 </para>
 
-<para>Læs dokumentationen, der er skrevet i info-format, for mere
+<para>LÃ¦s dokumentationen, der er skrevet i info-format, for mere
 information om kommandosproget.
 </para>
 </sect2>    <!--   Mere avanceret brug -->
@@ -182,32 +182,32 @@ information om kommandosproget.
 <sect2 id="wm-ratpoison-hente">
   <title>Mere information</title>
 
-<para>Hvis ratpoison ikke findes i ens distribution kan den hentes på <ulink url="http://ratpoison.sourceforge.net/">ratpoison.sorceforge.net</ulink>.
+<para>Hvis ratpoison ikke findes i ens distribution kan den hentes pÃ¥ <ulink url="http://ratpoison.sourceforge.net/">ratpoison.sorceforge.net</ulink>.
 </para>
 
-<para>På Freshmeat findes der en læseværdig <ulink url="http://freshmeat.net/articles/view/581/">artikel</ulink>
+<para>PÃ¥ Freshmeat findes der en lÃ¦sevÃ¦rdig <ulink url="http://freshmeat.net/articles/view/581/">artikel</ulink>
 om en der bruger Screen og Ratpoison til en meget effektiv og simpel
-desktop. Absolut værd at læse hvis man er til effektivitet frem for
+desktop. Absolut vÃ¦rd at lÃ¦se hvis man er til effektivitet frem for
 gejl.
 </para>
 </sect2>    <!--   Mere information -->
 
 
 <sect2 id="wm-ratpoison-fed">
-  <title>Er ratpoison det værd?</title>
+  <title>Er ratpoison det vÃ¦rd?</title>
 
 <para>
-Det er dejligt at se en window manager der har nogle selvstændige ideer og
-ikke bare gør på samme måde som alle andre. Dette gør det også ret svært
-at skifte til ratpoison. Jeg tror dog at man med noget øvelse kan opnå
-et ret effektivt brugsmønster.
+Det er dejligt at se en window manager der har nogle selvstÃ¦ndige ideer og
+ikke bare gÃ¸r pÃ¥ samme mÃ¥de som alle andre. Dette gÃ¸r det ogsÃ¥ ret svÃ¦rt
+at skifte til ratpoison. Jeg tror dog at man med noget Ã¸velse kan opnÃ¥
+et ret effektivt brugsmÃ¸nster.
 </para>
 
 <para>Jeg tror dog at jeg vil finde det meget generende at jeg ikke bare
-kan lave vinduerne den størelse jeg ønsker. For eksempel mener jeg at
-browservinduet i eksemplet er for smalt, men hele skærmbredden er for
+kan lave vinduerne den stÃ¸relse jeg Ã¸nsker. For eksempel mener jeg at
+browservinduet i eksemplet er for smalt, men hele skÃ¦rmbredden er for
 bredt.
 </para>
-</sect2>    <!--   Er ratpoison det værd? -->
+</sect2>    <!--   Er ratpoison det vÃ¦rd? -->
 
 </sect1>    <!--   Ratpoison -->

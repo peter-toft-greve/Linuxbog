@@ -8,10 +8,10 @@
 <!-- Originalfil http://www.sslug.dk/julekalender/14.php3 -->
 
 
-<para>amiwm er et forsøg på at efterligne vindues-systemet fra 
+<para>amiwm er et forsÃ¸g pÃ¥ at efterligne vindues-systemet fra 
 <ulink url="http://www.jargonfile.com/jargon/html/entry/amiga.html">Amiga
 computeren.</ulink>  
-Nogle eksempler på den oprindelige vare findes
+Nogle eksempler pÃ¥ den oprindelige vare findes
  <ulink url="http://www.amiga.org">her.</ulink></para>
 
  <sect2 id="wm-amiwm-installation">
@@ -38,21 +38,21 @@ Nogle eksempler på den oprindelige vare findes
   </para>
 
   <para>
-   Oversæt og installér programmet:
+   OversÃ¦t og installÃ©r programmet:
 
 <screen>
 <prompt>linux% </prompt><userinput>./configure &amp;&amp; make &amp;&amp; su -c 'make install'</userinput>
 </screen>
 
-   (du bliver bedt om "root"s adgangskode, når der skal
+   (du bliver bedt om "root"s adgangskode, nÃ¥r der skal
    installeres)
   </para>
 
   <para>
-   Hvis du foretrækker bare at hente en rpm-pakke, så findes der
+   Hvis du foretrÃ¦kker bare at hente en rpm-pakke, sÃ¥ findes der
    <ulink
-   url="http://rpmfind.net/linux/rpm2html/search.php?query=amiwm">færdige
-   rpm-pakker på rpmfind</ulink>.
+   url="http://rpmfind.net/linux/rpm2html/search.php?query=amiwm">fÃ¦rdige
+   rpm-pakker pÃ¥ rpmfind</ulink>.
   </para>
  </sect2> <!-- Installation  -->
 
@@ -66,17 +66,17 @@ Nogle eksempler på den oprindelige vare findes
 
   <para>
    For at bruge amiwm lagde jeg denne
-   <filename>.xsession</filename>-fil i mit hjemmekatalog og sørgede
-   for at den var kørbar (<command>chmod +x ~/.xsession)</command>.
+   <filename>.xsession</filename>-fil i mit hjemmekatalog og sÃ¸rgede
+   for at den var kÃ¸rbar (<command>chmod +x ~/.xsession)</command>.
    Filen bruger programmet ` <command>xv</command> ` og billederne
    14-colibri-1.gif og City_Xers_kassevogn.jpeg (billederne leder den
-   efter i hjemmekataloget).  Jeg skrev også opsætningsfilen
-   <filename>.amiwmrc</filename> for at få amiwm til at virke som jeg
+   efter i hjemmekataloget).  Jeg skrev ogsÃ¥ opsÃ¦tningsfilen
+   <filename>.amiwmrc</filename> for at fÃ¥ amiwm til at virke som jeg
    er vant til at en windowmanager virker.
   </para>
 
   <para>
-   Eksempel på en <filename>.xsession</filename>-fil:
+   Eksempel pÃ¥ en <filename>.xsession</filename>-fil:
 
 <programlisting>
 #! /bin/sh
@@ -90,10 +90,10 @@ exec amiwm
   </para>
 
   <para>
-   Eksempel på en <filename>.amiwmrc</filename>-fil:
+   Eksempel pÃ¥ en <filename>.amiwmrc</filename>-fil:
 
 <programlisting>
-Screen "Første"
+Screen "FÃ¸rste"
 Screen "Anden"
 Screen "Tredje"
 
@@ -104,7 +104,7 @@ Focus clicktotype
   </para>
 
   <para>
-   Sådan ser amiwm ud:
+   SÃ¥dan ser amiwm ud:
 
    <figure id="amiwm-fig" float="1">
     <title>amiwm</title>
@@ -114,9 +114,9 @@ Focus clicktotype
 
   <para>
    Amiwm har arvet en feature fra den originale Amiga - de virtuelle
-   skriveborde ligger &quot;bagved&quot; hinanden, så man kan få de
-   andre skriveborde frem ved at trække de aktuelle skrivebord
-   ned. Sådan her:
+   skriveborde ligger &quot;bagved&quot; hinanden, sÃ¥ man kan fÃ¥ de
+   andre skriveborde frem ved at trÃ¦kke de aktuelle skrivebord
+   ned. SÃ¥dan her:
 
    <figure id="amiwm-desk2-fig" float="1">
     <title>amiwm</title>
@@ -128,13 +128,13 @@ Focus clicktotype
    <title>Justering af hvordan amiwm virker</title>
 
    <indexterm>
-    <primary>opsætning af</primary>
+    <primary>opsÃ¦tning af</primary>
     <secondary>AmiWM</secondary>
    </indexterm>
 
    <para>
-    Når amiwm er installeret kan man få en grundig vejledning i
-    opsætningen af amiwm med kommandoen
+    NÃ¥r amiwm er installeret kan man fÃ¥ en grundig vejledning i
+    opsÃ¦tningen af amiwm med kommandoen
 
 <screen>
 <prompt>linux% </prompt><userinput>man amiwm</userinput>
@@ -151,7 +151,7 @@ Focus clicktotype
    </indexterm>
 
    <para>
-    Man kan vælge mellem "followsmouse", "sloppy" og "clicktotype" som
+    Man kan vÃ¦lge mellem "followsmouse", "sloppy" og "clicktotype" som
     politiker for hvordan amiwm skal tildele vinduer fokus. Jeg
     bruger:
 
@@ -162,19 +162,19 @@ Focus clicktotype
   </sect3>    <!--   Fokus -->
 
   <sect3 id="wm-amiwm-haeve-vinduer">
-   <title>Hæve vinduer</title>
+   <title>HÃ¦ve vinduer</title>
 
    <para>
-    Man kan vælge mellem at vinduer automatisk bliver hævet når de får
-    fokus eller at de først bliver hævet når man klikker på rammen.
-    Sammen med "clicktotype" foretrækker jeg at de automatisk bliver
-    hævet:
+    Man kan vÃ¦lge mellem at vinduer automatisk bliver hÃ¦vet nÃ¥r de fÃ¥r
+    fokus eller at de fÃ¸rst bliver hÃ¦vet nÃ¥r man klikker pÃ¥ rammen.
+    Sammen med "clicktotype" foretrÃ¦kker jeg at de automatisk bliver
+    hÃ¦vet:
 
 <programlisting>
 AutoRaise yes
 </programlisting>
    </para>
-  </sect3>    <!--   Hæve vinduer -->
+  </sect3>    <!--   HÃ¦ve vinduer -->
 
   <sect3 id="wm-amiwm-virtuelle-skriveborde">
    <title>Flere virtuelle skriveborde</title>
@@ -186,35 +186,35 @@ AutoRaise yes
 
    <para>
     Amigaens tilgang til flere virtuelle skriveborde er fascinerende.
-    Med de følgende linjer i ".amiwmrc" opretter jeg tre virtuelle
+    Med de fÃ¸lgende linjer i ".amiwmrc" opretter jeg tre virtuelle
     skriveborde:
 
 <programlisting>
-Screen "Første"
+Screen "FÃ¸rste"
 Screen "Anden"
 Screen "Tredje"
 </programlisting>
    </para>
 
    <para>
-    Når amiwm starter ser jeg bare "Første", men når jeg trækker
-    "Første"s titelbjælke ned viser det sig at der gemmer sig endnu et
-    skrivebord bagved.  Hvis jeg så gør et vindue til en ikon kan jeg
-    trække det over på et andet skrivebord.
+    NÃ¥r amiwm starter ser jeg bare "FÃ¸rste", men nÃ¥r jeg trÃ¦kker
+    "FÃ¸rste"s titelbjÃ¦lke ned viser det sig at der gemmer sig endnu et
+    skrivebord bagved.  Hvis jeg sÃ¥ gÃ¸r et vindue til en ikon kan jeg
+    trÃ¦kke det over pÃ¥ et andet skrivebord.
    </para>
 
    <para>
-    Ved at klikke på ikonen ude til højre på skrivebordenes
-    titelbjælker ændrer jeg på skrivebordenes rækkefølge, så et andet
-    skrivebord kommer øverst.
+    Ved at klikke pÃ¥ ikonen ude til hÃ¸jre pÃ¥ skrivebordenes
+    titelbjÃ¦lker Ã¦ndrer jeg pÃ¥ skrivebordenes rÃ¦kkefÃ¸lge, sÃ¥ et andet
+    skrivebord kommer Ã¸verst.
    </para>
   </sect3>    <!--   Flere virtuelle skriveborde -->
 
   <sect3 id="wm-amiwm-systemmenu">
   <title>Systemmenuen</title>
 
-<para>Man får systemmenuen frem ved at trykke højre musetast ned på et
-skrivebords titelbjælke.  
+<para>Man fÃ¥r systemmenuen frem ved at trykke hÃ¸jre musetast ned pÃ¥ et
+skrivebords titelbjÃ¦lke.  
 </para>
 
 </sect3>    <!--   Justering af hvordan amiwm virker -->
@@ -225,7 +225,7 @@ skrivebords titelbjælke.
 <para>
 Amiwm's forfatter har <ulink
 url="http://www.lysator.liu.se/~marcus/amiwm_gallery/">en samling
-skærmskud</ulink>.
+skÃ¦rmskud</ulink>.
 </para>
 </sect3>    <!--   Hvordan amiwm ellers kan se ud -->
 </sect2>
@@ -233,9 +233,9 @@ skærmskud</ulink>.
 <sect2 id="wm-amiwm-hvorfor">
   <title>Hvorfor bruge amiwm?</title>
 
-<para>Hvis din gamle Amiga endeligt har givet op og du er tilvænnet
-Amigaens brugergrænseflade er amiwm nok ikke et dårligt valg (jeg har aldrig
-selv for alvor nået at vænne mig til Amigaen).</para>
+<para>Hvis din gamle Amiga endeligt har givet op og du er tilvÃ¦nnet
+Amigaens brugergrÃ¦nseflade er amiwm nok ikke et dÃ¥rligt valg (jeg har aldrig
+selv for alvor nÃ¥et at vÃ¦nne mig til Amigaen).</para>
 </sect2>    <!--   Hvorfor bruge amiwm? -->
 </sect1>    <!--   amiwm -->
 

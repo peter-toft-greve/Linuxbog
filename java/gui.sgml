@@ -1,5 +1,5 @@
 <chapter id="java-gui">
-  <title>Grafiske brugergrænseflader</title>
+  <title>Grafiske brugergrÃ¦nseflader</title>
 
 <para>
 Indhold:
@@ -9,7 +9,7 @@ Indhold:
   <listitem>
 
 <para>
-Design af en grafisk brugergrænseflade med et værktøj
+Design af en grafisk brugergrÃ¦nseflade med et vÃ¦rktÃ¸j
 </para>
 
 </listitem>
@@ -33,43 +33,43 @@ Containere og layout-managers
   <listitem>
 
 <para>
-Større opgave: Matador-spillet som en applet
+StÃ¸rre opgave: Matador-spillet som en applet
 </para>
 
 </listitem>
 </itemizedlist>
 
 <para>
-Forudsættes af <xref linkend="java-events" />, Hændelser.
+ForudsÃ¦ttes af <xref linkend="java-events" />, HÃ¦ndelser.
 </para>
 
 <para>
-Kapitlet forudsætter <xref linkend="java-applet" />, Appletter og grafik, og at
-du har adgang til et værktøj, der kan udvikle grafiske
-brugergrænseflader (f.eks. Borland JBuilder, Oracle JDeveloper,
-Sun Forte eller WebSphere). Den større opgave
-forudsætter <xref linkend="java-arv" />, Nedarvning.
+Kapitlet forudsÃ¦tter <xref linkend="java-applet" />, Appletter og grafik, og at
+du har adgang til et vÃ¦rktÃ¸j, der kan udvikle grafiske
+brugergrÃ¦nseflader (f.eks. Borland JBuilder, Oracle JDeveloper,
+Sun Forte eller WebSphere). Den stÃ¸rre opgave
+forudsÃ¦tter <xref linkend="java-arv" />, Nedarvning.
 </para>
 
 <para>
-Når man skal lave en grafisk brugergrænseflade, gøres
+NÃ¥r man skal lave en grafisk brugergrÃ¦nseflade, gÃ¸res
 det ofte ved at anvende standardkomponenter. Vi vil starte med
-at se på, hvordan det gøres i praksis med et værktøj.
+at se pÃ¥, hvordan det gÃ¸res i praksis med et vÃ¦rktÃ¸j.
 </para>
 
 <sect1 id="java-gui-gen-tool">
-  <title>Generering med et værktøj</title>
+  <title>Generering med et vÃ¦rktÃ¸j</title>
 
 <para>
-Med moderne udviklingsværktøjer kan man udarbejde en
-grafisk brugergrænseflade ud fra standardkomponenter på
-ret kort tid. Herunder er beskrevet, hvordan man gør i
+Med moderne udviklingsvÃ¦rktÃ¸jer kan man udarbejde en
+grafisk brugergrÃ¦nseflade ud fra standardkomponenter pÃ¥
+ret kort tid. Herunder er beskrevet, hvordan man gÃ¸r i
 Borland JBuilder. JDeveloper har helt de samme muligheder og
-udseende. Hvis du bruger et andet værktøj, må
+udseende. Hvis du bruger et andet vÃ¦rktÃ¸j, mÃ¥
 
-du prøve dig lidt frem. Ideerne er de samme, og koden, der
-genereres, ligner også nogenlunde, men menuerne og knapperne
-varierer selvfølgelig noget.
+du prÃ¸ve dig lidt frem. Ideerne er de samme, og koden, der
+genereres, ligner ogsÃ¥ nogenlunde, men menuerne og knapperne
+varierer selvfÃ¸lgelig noget.
 </para>
 
 <figure id="java-gui-gen-tool-fig">
@@ -80,22 +80,22 @@ varierer selvfølgelig noget.
 
 <para>
 Tag en eksisterende applet, f.eks. MinApplet fra kapitlet om
-appletter, og føj den til et projekt. Hvis du i stedet vil
-oprette en ny, så vælg &quot;New..&quot; og Applet. Fjern
-pakkenavnet, skriv et navn på din klasse, vælg
+appletter, og fÃ¸j den til et projekt. Hvis du i stedet vil
+oprette en ny, sÃ¥ vÃ¦lg &quot;New..&quot; og Applet. Fjern
+pakkenavnet, skriv et navn pÃ¥ din klasse, vÃ¦lg
 superklasse (&quot;base class&quot;) Applet, og klik &quot;Finish&quot;.
 Defin&eacute;r evt. en paint()-metode, der tegner noget (hvis du
-bruger et andet værktøj end JBuilder, så find
-menuerne til at oprette en ny applet, og gør det).
+bruger et andet vÃ¦rktÃ¸j end JBuilder, sÃ¥ find
+menuerne til at oprette en ny applet, og gÃ¸r det).
 </para>
 
 <orderedlist>
   <listitem>
 
 <para>
-Gå over på Design-fanen (ved punkt 1 nederst).
-  Den er delt op i en del, hvor du designer din brugergrænseflade
-  til venstre, og en tabel af egenskaber til højre (punkt 2).
+GÃ¥ over pÃ¥ Design-fanen (ved punkt 1 nederst).
+  Den er delt op i en del, hvor du designer din brugergrÃ¦nseflade
+  til venstre, og en tabel af egenskaber til hÃ¸jre (punkt 2).
 </para>
 
 </listitem>
@@ -103,10 +103,10 @@ Gå over på Design-fanen (ved punkt 1 nederst).
   <listitem>
 
 <para>
-Her skal du først ændre layout fra &quot;&lt;default
-  layout&gt;&quot; til &quot;null&quot; (punkt 2 til højre;
-  måske skal du klikke på den grå flade i designeren
-  først).
+Her skal du fÃ¸rst Ã¦ndre layout fra &quot;&lt;default
+  layout&gt;&quot; til &quot;null&quot; (punkt 2 til hÃ¸jre;
+  mÃ¥ske skal du klikke pÃ¥ den grÃ¥ flade i designeren
+  fÃ¸rst).
 </para>
 
 </listitem>
@@ -114,8 +114,8 @@ Her skal du først ændre layout fra &quot;&lt;default
   <listitem>
 
 <para>
-Nu kan du gå i gang med at lægge komponenter ind
-  på grænsefladen. Vælg i første omgang
+Nu kan du gÃ¥ i gang med at lÃ¦gge komponenter ind
+  pÃ¥ grÃ¦nsefladen. VÃ¦lg i fÃ¸rste omgang
   at arbejde med AWT-komponenter (punkt 3).
 </para>
 
@@ -124,13 +124,13 @@ Nu kan du gå i gang med at lægge komponenter ind
   <listitem>
 
 <para>
-Vælg først en Label (det store A ved punkt 4),
-  og klik på grænsefladen. Der dukker en mærkat med
-  en tekst op. På egenskabstabellen til højre kan du
-  ændre dens variabelnavn (<emphasis>name</emphasis>
-  øverst) til f.eks. labelHvadErDitNavn. Længere nede
+VÃ¦lg fÃ¸rst en Label (det store A ved punkt 4),
+  og klik pÃ¥ grÃ¦nsefladen. Der dukker en mÃ¦rkat med
+  en tekst op. PÃ¥ egenskabstabellen til hÃ¸jre kan du
+  Ã¦ndre dens variabelnavn (<emphasis>name</emphasis>
+  Ã¸verst) til f.eks. labelHvadErDitNavn. LÃ¦ngere nede
   er egenskaben <emphasis>text</emphasis>,
-  der bestemmer, hvad der skal stå på mærkaten. Ret
+  der bestemmer, hvad der skal stÃ¥ pÃ¥ mÃ¦rkaten. Ret
   den til f.eks. &quot;Hvad er dit navn?&quot;.
 </para>
 
@@ -139,7 +139,7 @@ Vælg først en Label (det store A ved punkt 4),
   <listitem>
 
 <para>
-Indsæt derefter et TextField (et indtastningsfelt
+IndsÃ¦t derefter et TextField (et indtastningsfelt
   -punkt 5). Ret variabelnavnet til textFieldNavn og teksten til
   f.eks. &quot;Jacob&quot;.
 </para>
@@ -148,7 +148,7 @@ Indsæt derefter et TextField (et indtastningsfelt
 </orderedlist>
 
 <para>
-Gå tilbage til Source-fanen. Nu ser kildeteksten således
+GÃ¥ tilbage til Source-fanen. Nu ser kildeteksten sÃ¥ledes
 ud:
 </para>
 
@@ -195,8 +195,8 @@ public class MinApplet extends Applet
 
 
 <para>
-De to objekter, vi satte på i designeren, er erklæret
-og oprettet øverst uden for metoderne:
+De to objekter, vi satte pÃ¥ i designeren, er erklÃ¦ret
+og oprettet Ã¸verst uden for metoderne:
 </para>
 
 <screen>
@@ -206,18 +206,18 @@ og oprettet øverst uden for metoderne:
 
 
 <para>
-Nedenunder står vores gamle paint() uændret. Herunder
-er der oprettet en konstruktør, der kalder metoden jbInit().
+Nedenunder stÃ¥r vores gamle paint() uÃ¦ndret. Herunder
+er der oprettet en konstruktÃ¸r, der kalder metoden jbInit().
 Den andet kode, 'try{ ... } catch (Exception e) {...}', er beregnet
-til at håndtere undtagelser, og vil blive forklaret senere i
+til at hÃ¥ndtere undtagelser, og vil blive forklaret senere i
 <xref linkend="java-exception" />, Undtagelser.
 </para>
 
 <para>
-I metoden jbInit() nedenunder lægger JBuilder (og
-JDeveloper) al sin programkode. Man ser her, hvordan både Label
-og TextField har metoden setText(), og begge objekter får kaldt
-denne metode (svarende til, at vi ændrede egenskaben <emphasis>text</emphasis>).
+I metoden jbInit() nedenunder lÃ¦gger JBuilder (og
+JDeveloper) al sin programkode. Man ser her, hvordan bÃ¥de Label
+og TextField har metoden setText(), og begge objekter fÃ¥r kaldt
+denne metode (svarende til, at vi Ã¦ndrede egenskaben <emphasis>text</emphasis>).
 </para>
 
 <screen>
@@ -227,26 +227,26 @@ denne metode (svarende til, at vi ændrede egenskaben <emphasis>text</emphasis>).
 
 
 <para>
-De andre kommandoer i jbInit() sørger for at placere
-komponenterne korrekt på appletten.
+De andre kommandoer i jbInit() sÃ¸rger for at placere
+komponenterne korrekt pÃ¥ appletten.
 </para>
 
 <para>
 &quot;Design&quot;- og &quot;Source&quot;-fanen i JBuilder (og
-JDeveloper) er to måder at se programmet på, og man kan
-frit skifte mellem dem. Laver man en designændring, vil det
-blive afspejlet i koden og omvendt. Prøv selv.
+JDeveloper) er to mÃ¥der at se programmet pÃ¥, og man kan
+frit skifte mellem dem. Laver man en designÃ¦ndring, vil det
+blive afspejlet i koden og omvendt. PrÃ¸v selv.
 </para>
 
 <sect2 id="java-gui-gen-tool-inter-prg">
   <title>Interaktive programmer</title>
 
 <para>
-Lad os nu tilføje en knap og et indtastningsfelt på
+Lad os nu tilfÃ¸je en knap og et indtastningsfelt pÃ¥
 flere linjer (TextArea). Jeg kalder dem for buttonOpdater og
-textAreaHilsen. Knappen skal selvfølgelig gøre noget.
-Fra Design-fanen, dobbeltklik på knappen, og vupti! Der
-genereres automatisk en metode til at håndtere et klik:
+textAreaHilsen. Knappen skal selvfÃ¸lgelig gÃ¸re noget.
+Fra Design-fanen, dobbeltklik pÃ¥ knappen, og vupti! Der
+genereres automatisk en metode til at hÃ¥ndtere et klik:
 </para>
 
 <screen>
@@ -258,7 +258,7 @@ genereres automatisk en metode til at håndtere et klik:
 
 <para>
 Hvis du kigger i jbInit(), kan du se, at JBuilder har indsat
-følgende kode:
+fÃ¸lgende kode:
 </para>
 
 <screen>
@@ -271,15 +271,15 @@ følgende kode:
 
 
 <para>
-Det er disse linjer, der sørger for at &quot;lytte efter
-hændelser&quot; på knappen, sådan at når man
-klikker på buttonOpdater, så kaldes metoden
+Det er disse linjer, der sÃ¸rger for at &quot;lytte efter
+hÃ¦ndelser&quot; pÃ¥ knappen, sÃ¥dan at nÃ¥r man
+klikker pÃ¥ buttonOpdater, sÃ¥ kaldes metoden
 buttonOpdater_actionPerformed(). Det vil vi komme tilbage til i
-<xref linkend="java-events" />, Hændelser.
+<xref linkend="java-events" />, HÃ¦ndelser.
 </para>
 
 <para>
-Nu kan du indsætte kode, der udfører en handling.
+Nu kan du indsÃ¦tte kode, der udfÃ¸rer en handling.
 Skriv f.eks. noget ud til systemoutput:
 </para>
 
@@ -291,21 +291,21 @@ Skriv f.eks. noget ud til systemoutput:
 
 
 <para>
-Vi kunne også lave noget sjovere, f.eks. læse den
+Vi kunne ogsÃ¥ lave noget sjovere, f.eks. lÃ¦se den
 indtastede tekst fra textFieldNavn og skrive den i textAreaHilsen.
-JBuilder har lavet koden, der sætter teksterne for os, og ved
-at studere den kan man få en idé til, hvordan det skal gøres:
+JBuilder har lavet koden, der sÃ¦tter teksterne for os, og ved
+at studere den kan man fÃ¥ en idÃ© til, hvordan det skal gÃ¸res:
 </para>
 
 <screen>
-    String navn = textFieldNavn.getText();     // aflæs navnet
+    String navn = textFieldNavn.getText();     // aflÃ¦s navnet
 
-    textAreaHilsen.setText(&quot;Hej kære &quot;+navn);  // sæt navnet
+    textAreaHilsen.setText(&quot;Hej kÃ¦re &quot;+navn);  // sÃ¦t navnet
 </screen>
 
 
 <para>
-Her kommer det fulde eksempel. paint() er ændret til også
+Her kommer det fulde eksempel. paint() er Ã¦ndret til ogsÃ¥
 at tegne navnet 5 gange.
 </para>
 
@@ -366,7 +366,7 @@ public class MinAppletFaerdig extends Applet
   void buttonOpdater_actionPerformed(ActionEvent e) {
 <emphasis>    String navn = textFieldNavn.getText();</emphasis>
     System.out.println(&quot;Opdater! navn=&quot;+navn);
-<emphasis>    textAreaHilsen.setText(&quot;Hej kære &quot;+navn);</emphasis>
+<emphasis>    textAreaHilsen.setText(&quot;Hej kÃ¦re &quot;+navn);</emphasis>
 <emphasis>    repaint();</emphasis><emphasis> // gentegn appletten</emphasis>
   }
 }
@@ -374,7 +374,7 @@ public class MinAppletFaerdig extends Applet
 
 
 <para>
-Her har vi tastet &quot;Jacob Nordfalk&quot; ind og trykket på
+Her har vi tastet &quot;Jacob Nordfalk&quot; ind og trykket pÃ¥
 &quot;opdater!&quot;-knappen:
 </para>
 
@@ -385,14 +385,14 @@ Her har vi tastet &quot;Jacob Nordfalk&quot; ind og trykket på
 </figure>
 
 <para>
-Der er altså to måder at arbejde med grafik på:
+Der er altsÃ¥ to mÃ¥der at arbejde med grafik pÃ¥:
 </para>
 
 <itemizedlist mark="bullet">
   <listitem>
 
 <para>
-I paint() tegner man &quot;i hånden&quot; ved at give
+I paint() tegner man &quot;i hÃ¥nden&quot; ved at give
   kommandoer til et Graphics-objekt.
 </para>
 
@@ -414,35 +414,35 @@ Ved at bruge grafiske standardkomponenter.
 
 <para>
 Komponenter er objekter, der bruges som en synlig del
-af en grafisk brugergrænseflade, f.eks. knapper, valglister,
-indtastningsfelter, mærkater.
+af en grafisk brugergrÃ¦nseflade, f.eks. knapper, valglister,
+indtastningsfelter, mÃ¦rkater.
 </para>
 
 <para>
 Alle komponenter arver fra Component-klassen og har derfor dennes
-træk til fælles:
+trÃ¦k til fÃ¦lles:
 </para>
 
 <para>
-Metoderne setForeground(Color c) og setBackground(Color c) sætter
+Metoderne setForeground(Color c) og setBackground(Color c) sÃ¦tter
 farven hhv. baggrundsfarven for komponenten, svarende til
 egenskaberne <emphasis>foreground</emphasis> og <emphasis>background</emphasis>. Egenskaberne kan
-aflæses med getForeground() og getBackground().
+aflÃ¦ses med getForeground() og getBackground().
 </para>
 
 <para>
 En anden egenskab er <emphasis>font</emphasis>, der bestemmer skrifttypen. I
-tråd med de andre egenskaber sættes den med setFont(Font
-f) og aflæses med getFont().
+trÃ¥d med de andre egenskaber sÃ¦ttes den med setFont(Font
+f) og aflÃ¦ses med getFont().
 </para>
 
 <para>
 Dette kan sammenfattes i en tabel over egenskaber, der
-er fælles for alle komponenter.
+er fÃ¦lles for alle komponenter.
 </para>
 
 
-<!-- HJÆLP HER XXX -->
+<!-- HJÃ†LP HER XXX -->
 <table>
 <title>Java</title>
 <tgroup cols="4" align="char">
@@ -457,11 +457,11 @@ Type
 </entry>
 
 <entry>
-Sættes med
+SÃ¦ttes med
 </entry>
 
 <entry>
-Læses med
+LÃ¦ses med
 </entry>
 
 </row>
@@ -559,13 +559,13 @@ de nye egenskaber er beskrevet.
 
 <figure id="java-gui-komp-button-fig">
 <title>En
-trykknap. Egenskaben <emphasis>label</emphasis> angiver, hvad der står på
+trykknap. Egenskaben <emphasis>label</emphasis> angiver, hvad der stÃ¥r pÃ¥
 knappen.</title>
 
 <graphic fileref="Nordfalk1215422.&magic;" scale="60"></graphic>
 </figure>
 
-<!-- HJÆLP HER XXX -->
+<!-- HJÃ†LP HER XXX -->
 <table>
 <title>Java</title>
 <tgroup cols="4" align="char">
@@ -581,11 +581,11 @@ Type
 </entry> 
 
 <entry>
-Sættes med
+SÃ¦ttes med
 </entry>   
 
 <entry>
-Læses med
+LÃ¦ses med
 </entry>
 
 </row>
@@ -621,7 +621,7 @@ getLabel()
 
 <figure id="java-gui-komp-checkbox-fig">
 <title>Et
-afkrydsningsfelt. Kan både bruges til flueben og til
+afkrydsningsfelt. Kan bÃ¥de bruges til flueben og til
 radioknapper. Hvis man skal have radioknapper (der gensidigt
 udelukker hinanden), skal objekterne knyttes sammen af et
 CheckboxGroup-objekt.</title>
@@ -630,7 +630,7 @@ CheckboxGroup-objekt.</title>
 </figure>
 
 <para>
-<emphasis>label</emphasis> angiver, hvad der står ved feltet.
+<emphasis>label</emphasis> angiver, hvad der stÃ¥r ved feltet.
 <emphasis>state</emphasis> angiver, om feltet er afkrydset.
 </para>
 
@@ -648,11 +648,11 @@ Type
 </entry>
 
 <entry>
-Sættes med
+SÃ¦ttes med
 </entry>
 
 <entry>
-Læses med
+LÃ¦ses med
 </entry>
 
 </row>
@@ -707,14 +707,14 @@ getState()
 
 <figure id="java-gui-komp-choice-fig">
 <title>En
-valgliste. Brug metoden add(String elementnavn) til at tilføje
+valgliste. Brug metoden add(String elementnavn) til at tilfÃ¸je
 indgange.</title>
 
 <graphic fileref="Nordfalk1215424.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-Med getSelectedItem() undersøger man, hvad
+Med getSelectedItem() undersÃ¸ger man, hvad
 brugeren har valgt.
 </para>
 </sect2>
@@ -724,15 +724,15 @@ brugeren har valgt.
 
 <figure id="java-gui-komp-textfield-fig">
 <title>Et
-indtastningsfelt på en linje. Egenskaben <emphasis>text</emphasis> angiver,
-hvad der står i feltet.</title>
+indtastningsfelt pÃ¥ en linje. Egenskaben <emphasis>text</emphasis> angiver,
+hvad der stÃ¥r i feltet.</title>
 
 <graphic fileref="Nordfalk1215425.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
 Mindre brugt er: <emphasis>columns</emphasis> angiver, hvor bredt
-feltet skal være.
+feltet skal vÃ¦re.
 </para>
 
 <para>
@@ -746,7 +746,7 @@ indtastede, typisk adgangskoder.
 </para>
 
 <para>
-Sæt f.eks. <emphasis>echoChar</emphasis> til '*' for at få
+SÃ¦t f.eks. <emphasis>echoChar</emphasis> til '*' for at fÃ¥
 vist stjerner i stedet for det indtastede.
 </para>
 
@@ -764,11 +764,11 @@ Type
 </entry>
 
 <entry>
-Sættes med
+SÃ¦ttes med
 </entry>
 
 <entry>
-Læses med
+LÃ¦ses med
 </entry>
 
 </row>
@@ -860,15 +860,15 @@ getEchoChar()
 
 <figure id="java-gui-komp-textarea-fig">
 <title>Et
-indtastningsfelt på flere linjer.</title>
+indtastningsfelt pÃ¥ flere linjer.</title>
 
 <graphic fileref="Nordfalk1215426.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
 Egenskaberne <emphasis>text, rows</emphasis>
-og <emphasis>columns</emphasis> angiver, hvad der står i feltet, hhv.
-bredde og højde.
+og <emphasis>columns</emphasis> angiver, hvad der stÃ¥r i feltet, hhv.
+bredde og hÃ¸jde.
 </para>
 
 <table>
@@ -884,11 +884,11 @@ Type
 </entry> 
 
 <entry>
-Sættes med
+SÃ¦ttes med
 </entry> 
 
 <entry>
-Læses med
+LÃ¦ses med
 </entry>
 
 </row>
@@ -969,7 +969,7 @@ int
 
 
 <entry>
-setRows(int højde)
+setRows(int hÃ¸jde)
 </entry>
 
 
@@ -984,8 +984,8 @@ getRows()
 </table>
 
 <para>
-TextField og TextArea har en del egenskaber til fælles,
-og disse fællestræk ligger i superklassen
+TextField og TextArea har en del egenskaber til fÃ¦lles,
+og disse fÃ¦llestrÃ¦k ligger i superklassen
 TextComponent (se klassediagrammet).
 </para>
 </sect2>
@@ -995,13 +995,13 @@ TextComponent (se klassediagrammet).
 
 <figure id="java-gui-komp-label-fig">
 <title>En
-mærkat der viser en tekst (som brugeren ikke kan redigere i).</title>
+mÃ¦rkat der viser en tekst (som brugeren ikke kan redigere i).</title>
 
 <graphic fileref="Nordfalk1215427.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-Egenskaben <emphasis>text</emphasis> angiver, hvad der står i
+Egenskaben <emphasis>text</emphasis> angiver, hvad der stÃ¥r i
 feltet.
 </para>
 
@@ -1017,10 +1017,10 @@ Egenskab
 Type
 </entry>
 <entry>
-Sættes med
+SÃ¦ttes med
 </entry>
 <entry>
-Læses med
+LÃ¦ses med
 </entry>
 </row>
 </thead>
@@ -1057,21 +1057,21 @@ getText()
 <figure id="java-gui-komp-list-fig">
 <title>En
 menu, hvor flere af indgangene kan ses samtidigt, og hvor man kan
-vælge en eller flere elementer. Brug metoden add(String
-elementnavn) til at tilføje indgange.</title>
+vÃ¦lge en eller flere elementer. Brug metoden add(String
+elementnavn) til at tilfÃ¸je indgange.</title>
 
 <graphic fileref="Nordfalk1215428.&magic;" scale="60"></graphic>
 </figure>
 
 <para>
-Med isIndexSelected(int index) undersøger man,
+Med isIndexSelected(int index) undersÃ¸ger man,
 om en indgang er valgt.
 </para>
 
 <para>
 Egenskaberne <emphasis>rows</emphasis>
-og <emphasis>multipleMode</emphasis> angiver, hvad højden er, og om
-man kan vælge flere indgange samtidigt.
+og <emphasis>multipleMode</emphasis> angiver, hvad hÃ¸jden er, og om
+man kan vÃ¦lge flere indgange samtidigt.
 </para>
 
 <table>
@@ -1088,11 +1088,11 @@ Type
 </entry>
 
 <entry>
-Sættes med
+SÃ¦ttes med
 </entry>
 
 <entry>
-Læses med
+LÃ¦ses med
 </entry>
 
 </row>
@@ -1111,7 +1111,7 @@ int
 
 
 <entry>
-setRows(int højde)
+setRows(int hÃ¸jde)
 </entry>
 
 
@@ -1148,14 +1148,14 @@ getMultipleMode()
   <title>Canvas</title>
 
 <para>
-Et tegne-område. Canvas er lidt besværlig,
+Et tegne-omrÃ¥de. Canvas er lidt besvÃ¦rlig,
 idet man skal nedarve fra klassen og implementere paint(Graphics
 g) for at kunne tegne noget.
 </para>
 
 <para>
-En lettere (men ikke nødvendigvis altid
-smartere) måde er som sagt at definere paint()-metoden direkte
+En lettere (men ikke nÃ¸dvendigvis altid
+smartere) mÃ¥de er som sagt at definere paint()-metoden direkte
 i appletten/vinduet som vi har gjort tidligere.
 </para>
 </sect2>
@@ -1166,8 +1166,8 @@ i appletten/vinduet som vi har gjort tidligere.
 
 <para>
 Herunder et eksempel (genereret med JBuilder), der viser
-komponenterne omtalt i forrige afsnit. På billedet ses det
-resulterende skærmbillede under Windows (sidst i kapitlet ses,
+komponenterne omtalt i forrige afsnit. PÃ¥ billedet ses det
+resulterende skÃ¦rmbillede under Windows (sidst i kapitlet ses,
 hvordan det ser ud under Linux).
 </para>
 
@@ -1198,7 +1198,7 @@ public class GrafiskeKomponenter extends Applet
   Label label1 = new Label();
 
 <emphasis>  // JBuilder og JDeveloper definerer metoden jbInit() hvor de</emphasis>
-<emphasis>  // initialiserer komponenterne. Det kunne dog lige så godt</emphasis>
+<emphasis>  // initialiserer komponenterne. Det kunne dog lige sÃ¥ godt</emphasis>
 <emphasis>  // ligge direkte i init()</emphasis>
   public void init() {
     try {
@@ -1209,23 +1209,23 @@ public class GrafiskeKomponenter extends Applet
     }
   }
 
-<emphasis>  // initialisering af komponenterne med deres startværdier</emphasis>
+<emphasis>  // initialisering af komponenterne med deres startvÃ¦rdier</emphasis>
   private void jbInit() throws Exception {
     button1.setLabel(&quot;OK&quot;);
 
-    checkbox1.setLabel(&quot;En&quot;);     <emphasis>// Sæt afkrydsningsfelternes navne</emphasis>
+    checkbox1.setLabel(&quot;En&quot;);     <emphasis>// SÃ¦t afkrydsningsfelternes navne</emphasis>
     checkbox2.setLabel(&quot;To&quot;);
     checkbox3.setLabel(&quot;Tre&quot;);
 
-    checkbox4.setLabel(&quot;Radio1&quot;); <emphasis>// Sæt radioknappernes navne og</emphasis>
+    checkbox4.setLabel(&quot;Radio1&quot;); <emphasis>// SÃ¦t radioknappernes navne og</emphasis>
     checkbox5.setLabel(&quot;Radio2&quot;);
-    checkbox4.setCheckboxGroup(checkboxGroup1);<emphasis> // gruppen de tilhører</emphasis>
+    checkbox4.setCheckboxGroup(checkboxGroup1);<emphasis> // gruppen de tilhÃ¸rer</emphasis>
     checkbox5.setCheckboxGroup(checkboxGroup1);
     checkboxGroup1.setSelectedCheckbox(checkbox4);
 
-    choice1.add(&quot;Choice Rød&quot;);
-    choice1.add(&quot;Choice Grøn&quot;);
-    choice1.add(&quot;Choice Blå&quot;);
+    choice1.add(&quot;Choice RÃ¸d&quot;);
+    choice1.add(&quot;Choice GrÃ¸n&quot;);
+    choice1.add(&quot;Choice BlÃ¥&quot;);
 
     textField1.setColumns(10);
     textField1.setText(&quot;Et TextField&quot;);
@@ -1236,11 +1236,11 @@ public class GrafiskeKomponenter extends Applet
 
     label1.setText(&quot;En Label&quot;);
 
-    list1.add(&quot;List Rød&quot;);
-    list1.add(&quot;List Grøn&quot;);
-    list1.add(&quot;List Blå&quot;);
+    list1.add(&quot;List RÃ¸d&quot;);
+    list1.add(&quot;List GrÃ¸n&quot;);
+    list1.add(&quot;List BlÃ¥&quot;);
 
-    this.add(button1, null);    <emphasis>// til sidst skal komponenterne føjes</emphasis>
+    this.add(button1, null);    <emphasis>// til sidst skal komponenterne fÃ¸jes</emphasis>
     this.add(checkbox1, null);  <emphasis>// til containeren (se senere)</emphasis>
     this.add(checkbox2, null);
     this.add(checkbox3, null);
@@ -1261,16 +1261,16 @@ public class GrafiskeKomponenter extends Applet
 
 <para>
 En <emphasis>container</emphasis> er beregnet til at indeholde komponenter. De
-arver alle fra Container-klassen og har alle en såkaldt <emphasis>layout
+arver alle fra Container-klassen og har alle en sÃ¥kaldt <emphasis>layout
 manager</emphasis> tilknyttet, der
-bestemmer, hvor og med hvilken størrelse komponenterne
+bestemmer, hvor og med hvilken stÃ¸rrelse komponenterne
 skal vises i containeren.
 </para>
 
 <para>
-Før en komponent bliver vist, skal den tilføjes en
+FÃ¸r en komponent bliver vist, skal den tilfÃ¸jes en
 container. I eksemplet ovenfor er appletten den container,
-komponenterne bliver tilføjet, og derfor står der sidst
+komponenterne bliver tilfÃ¸jet, og derfor stÃ¥r der sidst
 i initialiseringen:
 </para>
 
@@ -1293,7 +1293,7 @@ layoutmanageren).
 
 <para>
 En applet er et udvidet panel, der er beregnet til at
-vise i en browser. Læs kapitlet om appletter for mere
+vise i en browser. LÃ¦s kapitlet om appletter for mere
 information.
 </para>
 </sect2>
@@ -1302,8 +1302,8 @@ information.
 <title>Window</title>
 
 <para>
-Window repræsenterer et vindue på skærmen.
-Det bruges meget sjældent direkte, man bruger i stedet
+Window reprÃ¦senterer et vindue pÃ¥ skÃ¦rmen.
+Det bruges meget sjÃ¦ldent direkte, man bruger i stedet
 arvningerne Frame og Dialog.
 </para>
 </sect2>
@@ -1312,7 +1312,7 @@ arvningerne Frame og Dialog.
 <title>Frame</title>
 
 <para>
-En Frame er den simpleste og oftest brugte måde
+En Frame er den simpleste og oftest brugte mÃ¥de
 at definere et &quot;normalt&quot; vindue med en titel.
 </para>
 </sect2>
@@ -1322,11 +1322,11 @@ at definere et &quot;normalt&quot; vindue med en titel.
 
 <para>
 Dialog bruges til dialog-bokse, vinduer, der dukker op
-med et eller andet spørgsmål, som skal besvares, før
-man kan gå videre. Egenskaben <emphasis>modal</emphasis> angiver, om
-dialog-boksen er modal, dvs. om man skal lukke den før man kan
-få adgang til ejer-vinduet. Den sættes med
-setModal(boolean m) og aflæses med isModal().
+med et eller andet spÃ¸rgsmÃ¥l, som skal besvares, fÃ¸r
+man kan gÃ¥ videre. Egenskaben <emphasis>modal</emphasis> angiver, om
+dialog-boksen er modal, dvs. om man skal lukke den fÃ¸r man kan
+fÃ¥ adgang til ejer-vinduet. Den sÃ¦ttes med
+setModal(boolean m) og aflÃ¦ses med isModal().
 </para>
 </sect2>
 </sect1>
@@ -1345,18 +1345,18 @@ Herunder ses klassediagrammet for nogle komponenter og containere.
 </figure>
 
 <para>
-De hule pile repræsenterer <emphasis>er-en</emphasis>-relationer
+De hule pile reprÃ¦senterer <emphasis>er-en</emphasis>-relationer
 (dvs. nedarvning).
 </para>
 
 <para>
-De andre pile repræsenterer <emphasis>har</emphasis>-relationer (dvs.
+De andre pile reprÃ¦senterer <emphasis>har</emphasis>-relationer (dvs.
 at et objekt har en reference til et andet objekt, evt. 'ejer'
 objektet).
 </para>
 
 <para>
-Bemærk, at Container selv arver fra Component, så
+BemÃ¦rk, at Container selv arver fra Component, sÃ¥
 en Container kan i sig selv bruges som en komponent. Det er relevant
 for Panel og ScrollPane, der er beregnet til at blive placeret inden
 i andre containere.
@@ -1368,19 +1368,19 @@ i andre containere.
 
 <para>
 En <emphasis>layout manager</emphasis>
-styrer layoutet af komponenterne på et Panel eller en anden
+styrer layoutet af komponenterne pÃ¥ et Panel eller en anden
 container. Alle containere har egenskaben <emphasis>layout</emphasis>, der kan
-sættes med metoden setLayout(Layout l).
+sÃ¦ttes med metoden setLayout(Layout l).
 </para>
 
 <para>
 Bruges et grafisk
-udviklingsværktøj, er det mest bekvemt at sætte
-layoutmanageren til null, der tillader udvikleren at sætte
-komponenterne, som han vil på en hvilken som helst
-(x,y)-position og med en hvilken som helst højde og bredde.
-Layoutet tager slet ikke højde for vinduets størrelse,
-så hvis vinduet bliver for lille, vil nogle af komponenterne
+udviklingsvÃ¦rktÃ¸j, er det mest bekvemt at sÃ¦tte
+layoutmanageren til null, der tillader udvikleren at sÃ¦tte
+komponenterne, som han vil pÃ¥ en hvilken som helst
+(x,y)-position og med en hvilken som helst hÃ¸jde og bredde.
+Layoutet tager slet ikke hÃ¸jde for vinduets stÃ¸rrelse,
+sÃ¥ hvis vinduet bliver for lille, vil nogle af komponenterne
 ikke blive vist.
 </para>
 
@@ -1389,8 +1389,8 @@ ikke blive vist.
 
 <para>
 FlowLayout placerer komponenterne ligesom bogstaver:
-&Oslash;verst fra venstre mod højre og på en ny linje
-nedenunder, når der ikke er mere plads.
+&Oslash;verst fra venstre mod hÃ¸jre og pÃ¥ en ny linje
+nedenunder, nÃ¥r der ikke er mere plads.
 </para>
 
 <figure id="java-gui-klasse-relationer-flowlayout-fig">
@@ -1409,9 +1409,9 @@ FlowLayout blive brugt.
   <title>BorderLayout</title>
 
 <para>
-BorderLayout tager højde for vinduets størrelse
-og tilpasser komponenternes størrelse efter den
-tilgængelige plads. Komponenterne kan placeres på 5
+BorderLayout tager hÃ¸jde for vinduets stÃ¸rrelse
+og tilpasser komponenternes stÃ¸rrelse efter den
+tilgÃ¦ngelige plads. Komponenterne kan placeres pÃ¥ 5
 mulige positioner, nemlig NORTH, SOUTH, EAST, WEST og CENTER.
 </para>
 
@@ -1422,11 +1422,11 @@ mulige positioner, nemlig NORTH, SOUTH, EAST, WEST og CENTER.
 </figure>
 
 <para>
-Den mest almindelige måde at lave det grafiske
-layout af et skærmbillede er med BorderLayout. I de
-områder, hvor man ønsker at placere flere komponenter,
-sætter man først et Panel, og komponenterne tilføjes
-så panelet.
+Den mest almindelige mÃ¥de at lave det grafiske
+layout af et skÃ¦rmbillede er med BorderLayout. I de
+omrÃ¥der, hvor man Ã¸nsker at placere flere komponenter,
+sÃ¦tter man fÃ¸rst et Panel, og komponenterne tilfÃ¸jes
+sÃ¥ panelet.
 </para>
 </sect2>
 
@@ -1434,7 +1434,7 @@ så panelet.
   <title>GridBagLayout</title>
 
 <para>
-GridBagLayout lægger komponenterne efter et
+GridBagLayout lÃ¦gger komponenterne efter et
 usynligt gitter.
 </para>
 
@@ -1453,22 +1453,22 @@ usynligt gitter.
   <title>Opgave: Matadorspillet grafisk</title>
 
 <para>
-Denne opgave kræver, at du har læst <xref linkend="java-arv" />, Nedarvning
+Denne opgave krÃ¦ver, at du har lÃ¦st <xref linkend="java-arv" />, Nedarvning
 og <xref linkend="java-applet" />, Appletter og grafik.
 </para>
 
 <para>
 Lav matadorspillet om til at kunne vises grafisk i en applet. Der
-skal som minimum være en knap, som spiller en omgang.
+skal som minimum vÃ¦re en knap, som spiller en omgang.
 </para>
 
 <sect2 id="java-gui-klasse-relationer-matador-vink">
   <title>Vink</title>
 
 <para>
-Når du skal programmere, så vær systematisk, og
-del opgaven op i små delopgaver. Løs en delopgave ad
-gangen, og afprøv, at det fungerer, før du går
+NÃ¥r du skal programmere, sÃ¥ vÃ¦r systematisk, og
+del opgaven op i smÃ¥ delopgaver. LÃ¸s en delopgave ad
+gangen, og afprÃ¸v, at det fungerer, fÃ¸r du gÃ¥r
 videre.
 </para>
 
@@ -1478,8 +1478,8 @@ videre.
 <para>
 Hent kildeteksten til matadorspillet (version 2: Felt.java,
   Gade2.java, Grund2.java, Helle.java, Rederi2.java, Start.java,
-  Spiller.java og SpilMatador.java ændret til at bruge Gade2 og
-  Rederi2), og prøv det.
+  Spiller.java og SpilMatador.java Ã¦ndret til at bruge Gade2 og
+  Rederi2), og prÃ¸v det.
 </para>
 
 </listitem>
@@ -1488,8 +1488,8 @@ Hent kildeteksten til matadorspillet (version 2: Felt.java,
 
 <para>
 Genbrug MinApplet ovenfor. Husk at initialisering skal ske i
-  init()-metoden eller i konstruktøren. De variabler der skal
-  deles mellem flere metoder, skal være objektvariabler
+  init()-metoden eller i konstruktÃ¸ren. De variabler der skal
+  deles mellem flere metoder, skal vÃ¦re objektvariabler
   (lokale eksisterer jo kun i den metode de er defineret i).
 </para>
 
@@ -1506,9 +1506,9 @@ Lav en tur-knap, som spiller en runde.
 <listitem>
 
 <para>
-Føj en metode til Felt, der tegner feltet. Hvert felt
-  skal også have en position (den er en del af initialiseringen,
-  så sæt  den fra init()-metoden).
+FÃ¸j en metode til Felt, der tegner feltet. Hvert felt
+  skal ogsÃ¥ have en position (den er en del af initialiseringen,
+  sÃ¥ sÃ¦t  den fra init()-metoden).
 </para>
 
 </listitem>
@@ -1516,7 +1516,7 @@ Føj en metode til Felt, der tegner feltet. Hvert felt
 <listitem>
 
 <para>
-Løb igennem alle felter, og tegn dem i paint().
+LÃ¸b igennem alle felter, og tegn dem i paint().
 </para>
 
 </listitem>
@@ -1541,20 +1541,20 @@ Udbyg derefter spillet efter egen smag.
 <title>Flere vink</title>
 
 <para>
-Det er bedst at du bruger hovedet og kun ser på dem hvis du
-er gået i stå.
+Det er bedst at du bruger hovedet og kun ser pÃ¥ dem hvis du
+er gÃ¥et i stÃ¥.
 </para>
 
 <orderedlist>
 <listitem>
 
 <para>
-Prøve programmetHar du ikke allerede i sidste
-  lektion prøvet matadorspillet, så prøv at køre
+PrÃ¸ve programmetHar du ikke allerede i sidste
+  lektion prÃ¸vet matadorspillet, sÃ¥ prÃ¸v at kÃ¸re
   programmet. Derefter er det naturligvis meget lettere at lave
   en grafisk udgave! Brug trinvis gennemgang (trace into/step over),
-  indtil du føler, du har forstået programkoden. Først
-  da er du klar til at prøve i en applet.
+  indtil du fÃ¸ler, du har forstÃ¥et programkoden. FÃ¸rst
+  da er du klar til at prÃ¸ve i en applet.
 </para>
 
 </listitem>
@@ -1564,10 +1564,10 @@ Prøve programmetHar du ikke allerede i sidste
 <para>
 Struktur i en appletOpret en applet, eller genbrug
   MinApplet ovenfor. Flyt initialiseringen fra SpilMatador.java
-  til init()-metoden eller konstruktøren. Husk at importere
-  java.util.* øverst for at få adgang til Vector-klassen.
-  Variablerne felter, sp1, sp2 skal nu være objektvariabler
-  (før var de lokale variabler), for at de kan ses i resten af
+  til init()-metoden eller konstruktÃ¸ren. Husk at importere
+  java.util.* Ã¸verst for at fÃ¥ adgang til Vector-klassen.
+  Variablerne felter, sp1, sp2 skal nu vÃ¦re objektvariabler
+  (fÃ¸r var de lokale variabler), for at de kan ses i resten af
   appletten:
 </para>
 
@@ -1581,7 +1581,7 @@ import java.util.*;
 public class MatadorApplet extends Applet  
 { 
 <emphasis>  // objektvariabler:</emphasis>
-  Spiller sp1=new Spiller(&quot;Søren&quot;,50000,Color.green); <emphasis>   // opret spiller 1 </emphasis>
+  Spiller sp1=new Spiller(&quot;SÃ¸ren&quot;,50000,Color.green); <emphasis>   // opret spiller 1 </emphasis>
   Spiller sp2=new Spiller(&quot;Gitte&quot;,50000,Color.yellow);<emphasis>   // opret spiller 2 </emphasis>
   Vector felter=new Vector(); 
   public MatadorApplet()<emphasis>                        // eller &quot;public void init()&quot; </emphasis>
@@ -1594,21 +1594,21 @@ public class MatadorApplet extends Applet
 
 
 <para>
-Husk, at appletten først tegner noget, når
-initialiseringen er færdig, så hvis du f.eks. kører
-20 runder i initialiseringen, tager det lang tid, førend
-systemet når til at kalde paint()!
+Husk, at appletten fÃ¸rst tegner noget, nÃ¥r
+initialiseringen er fÃ¦rdig, sÃ¥ hvis du f.eks. kÃ¸rer
+20 runder i initialiseringen, tager det lang tid, fÃ¸rend
+systemet nÃ¥r til at kalde paint()!
 </para>
 
 <orderedlist>
   <listitem>
 
 <para>
-Defin&eacute;r en tur-knapFor at få spillet til at
-  køre kan du lave en knap. Når brugeren trykker på
-  knappen, så  kald spillernes tur()-metode. (Alternativ:
+Defin&eacute;r en tur-knapFor at fÃ¥ spillet til at
+  kÃ¸re kan du lave en knap. NÃ¥r brugeren trykker pÃ¥
+  knappen, sÃ¥  kald spillernes tur()-metode. (Alternativ:
   kald spillernes tur()-metode inde i paint() og afslut paint() med:
-  repaint(1000); dette får systemet til at kalde paint() igen
+  repaint(1000); dette fÃ¥r systemet til at kalde paint() igen
   efter et sekund).
 </para>
 
@@ -1617,7 +1617,7 @@ Defin&eacute;r en tur-knapFor at få spillet til at
   <listitem>
 
 <para>
-Hvert felt skal have en position. Føj en position (af
+Hvert felt skal have en position. FÃ¸j en position (af
   typen Point) til Felt-klassen:
 </para>
 
@@ -1634,8 +1634,8 @@ public class Felt
 
 
 <para>
-  og defin&eacute;r metoden tegn(Graphics g) på Felt, der
-tegner feltets navn på positionen:
+  og defin&eacute;r metoden tegn(Graphics g) pÃ¥ Felt, der
+tegner feltets navn pÃ¥ positionen:
 </para>
 
 <screen>
@@ -1648,13 +1648,13 @@ tegner feltets navn på positionen:
 
 
 <para>
-Husk at importere java.awt.* øverst
-for at få adgang til Point- og Graphics-klassen.
+Husk at importere java.awt.* Ã¸verst
+for at fÃ¥ adgang til Point- og Graphics-klassen.
 </para>
 
 <para>
-Løb alle felterne igennem i
-init(), og sæt koordinaterne på felterne:
+LÃ¸b alle felterne igennem i
+init(), og sÃ¦t koordinaterne pÃ¥ felterne:
 </para>
 
 <screen>
@@ -1676,7 +1676,7 @@ init(), og sæt koordinaterne på felterne:
 
 <para>
 Defin&eacute;r applettens paint()-metode til at kalde
-  felternes tegn() for at tegne brættet:
+  felternes tegn() for at tegne brÃ¦ttet:
 </para>
 
 </listitem>
@@ -1694,9 +1694,9 @@ Defin&eacute;r applettens paint()-metode til at kalde
 
 
 <para>
-En grund skal også have tegnet ejeren nedenunder, så den
+En grund skal ogsÃ¥ have tegnet ejeren nedenunder, sÃ¥ den
 skal have en anderledes tegn(). Defin&eacute;r tegn() i Grund2. En
-gade skal også vise antallet af huse. Defin&eacute;r også
+gade skal ogsÃ¥ vise antallet af huse. Defin&eacute;r ogsÃ¥
 tegn() i Gade2.
 </para>
 
@@ -1704,7 +1704,7 @@ tegn() i Gade2.
   <listitem>
 
 <para>
-Find selv på flere ting:
+Find selv pÃ¥ flere ting:
 </para>
 
 </listitem>
@@ -1722,7 +1722,7 @@ Lav tekstfelter, der beskriver hver spillers beholdning.
   <listitem>
 
 <para>
-Tegn spillernes biler på skærmen .
+Tegn spillernes biler pÃ¥ skÃ¦rmen .
 </para>
 
 </listitem>
@@ -1731,7 +1731,7 @@ Tegn spillernes biler på skærmen .
 
 <para>
 Automatisk spil (vink: kald spillernes tur()-metode inde
-  i paint(). Start paint() med: repaint(1000); dette får
+  i paint(). Start paint() med: repaint(1000); dette fÃ¥r
   systemet til at kalde paint() igen efter et sekund).
 </para>
 

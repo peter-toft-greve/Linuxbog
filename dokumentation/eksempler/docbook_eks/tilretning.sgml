@@ -2,33 +2,33 @@
 <sect1>
 <title>RedHat 7.1 og 7.2</title>
 <para>
-   I RedHat kan pakkerne normalt bruges uden ændringer. For at
+   I RedHat kan pakkerne normalt bruges uden Ã¦ndringer. For at
 kunne bruge docbook - dokument-type-definitionerne (DocBook DTD),
-skal man imidlertid rette lidt på RedHat opsætningen.  Hvis du er
-utålmodig efter at komme i gang, så spring frem til afsnit
+skal man imidlertid rette lidt pÃ¥ RedHat opsÃ¦tningen.  Hvis du er
+utÃ¥lmodig efter at komme i gang, sÃ¥ spring frem til afsnit
 <xref linkend="s2-kommandoer">, hvor du kan se kommandoerne (og
-prøve dem af). Hvis du bagefter stadig har problemer, så læs
+prÃ¸ve dem af). Hvis du bagefter stadig har problemer, sÃ¥ lÃ¦s
 videre her.
 </para>
 
 <para>
-   Hvis du er en af dem, der ikke har kunnet få jw-kommandoen til
-at fungere direkte ud fra RedHat pakkerne, så er her en
-forklaring og en løsning. 
+   Hvis du er en af dem, der ikke har kunnet fÃ¥ jw-kommandoen til
+at fungere direkte ud fra RedHat pakkerne, sÃ¥ er her en
+forklaring og en lÃ¸sning. 
 </para>
 
 <para>
-   Der er nogle filer, som skal være til stede, selv om man ikke får
+   Der er nogle filer, som skal vÃ¦re til stede, selv om man ikke fÃ¥r
 sammen med docbook - pakkerne.
 </para>
 
 <para>
-   Det er ISO-Entity filerne. <tip><para>Historie bag disse er interessant, men er ikke til rådighed i skrivende stund. Det *er* filer fra ISO, Industri-Standard-Organisationen.</para></tip>
+   Det er ISO-Entity filerne. <tip><para>Historie bag disse er interessant, men er ikke til rÃ¥dighed i skrivende stund. Det *er* filer fra ISO, Industri-Standard-Organisationen.</para></tip>
 </para>
 
 <para>
-   De efterfølgende anvisninger er almene og kan måske også
-bruges, hvis der opstår "mærkelige" fejlmeddelelser på andre
+   De efterfÃ¸lgende anvisninger er almene og kan mÃ¥ske ogsÃ¥
+bruges, hvis der opstÃ¥r "mÃ¦rkelige" fejlmeddelelser pÃ¥ andre
 distributioner end RedHat 7.1-2
 </para>
 
@@ -36,14 +36,14 @@ distributioner end RedHat 7.1-2
 <title>Entity filer til DocBook.</title>
 <para>
    DocBook systemet er sammensat af mange elementer. De kommer
-forskellige steder fra, og derfor har forfatterne ikke ønsket at
-sætte dem sammen i én pakke.
+forskellige steder fra, og derfor har forfatterne ikke Ã¸nsket at
+sÃ¦tte dem sammen i Ã©n pakke.
 </para>
 
 <para>
    I RedHat 7.1 er entitets filerne en del af sgml-tools pakken.
-RedHat pakkerne gør normalt livet lettere, men her er entity-filerne
-blevet placeret på en sådan måde, at det ikke er muligt at få
+RedHat pakkerne gÃ¸r normalt livet lettere, men her er entity-filerne
+blevet placeret pÃ¥ en sÃ¥dan mÃ¥de, at det ikke er muligt at fÃ¥
 jadewrapper scriptet (jw - kommandoen) til at fungere uden at
 foretage et par rettelser. Disse beskrives (*link*)
 </para>
@@ -51,7 +51,7 @@ foretage et par rettelser. Disse beskrives (*link*)
 <para>
    Her er en fuld liste over alle de ting, som skal fungere
 sammen for at DocBook tekster kan omformateres (realiseres,
-oversættes).
+oversÃ¦ttes).
 </para>
 
 <itemizedlist mark="bullet">
@@ -59,7 +59,7 @@ oversættes).
 <para>
 Openjade, programmet, som foretager konverteringer af sgml
 dokumenter til andre formater. For at dette skal kunne lade sig
-gøre, er det nødvendigt med forskellige dokument-type
+gÃ¸re, er det nÃ¸dvendigt med forskellige dokument-type
 specifikationer, dtd'er.
 </para>
 </listitem>
@@ -84,20 +84,20 @@ tegn.
 DocBook DSSSL, Document Style Semantics and Specification
 Language (DSSSL) filer med endelsen .dsl specificerer hvordan
 openjade skal konvertere til html, rtf, tex med videre. Kaldes
-også back-end.
+ogsÃ¥ back-end.
 </para>
 </listitem>
    
 <listitem>
 <para>
-SGML-tools lite. Nogle konverteringer foregår i flere trin. Disse
-tools samler flere kommandoer til én kommando.
+SGML-tools lite. Nogle konverteringer foregÃ¥r i flere trin. Disse
+tools samler flere kommandoer til Ã©n kommando.
 </para>
 </listitem>
    
 <listitem>
 <para>
-HTMLdoc, er en af måderne til generering af bookmarks eller index
+HTMLdoc, er en af mÃ¥derne til generering af bookmarks eller index
 til PDF filer.
 </para>
 </listitem>
@@ -126,7 +126,7 @@ and Specification Language" (DSSSL). Den transformerer DocBook
 sgml kildefiler til html, tex, rtf, txt og andet. OpenJade er den
 essentielle maskine til konvertering af en DocBook fil til andre
 formater. TeX output formatet bruges mest som et mellemformat for
-at opnå dvi, pdf og postscript filer via TeX macro'er og dvi
+at opnÃ¥ dvi, pdf og postscript filer via TeX macro'er og dvi
 konverterings programmer.
 </para>
 </sect3>
@@ -135,21 +135,21 @@ konverterings programmer.
 <title>Dokument-type-definitioner</title>
 <para>
 DocBook SGML DTD, dokument-type-definitionen for den eller de
-docbook - versioner, som du ønsker at benytte. Der er ikke den
-store forskel mellem fx. version 4.0 og version 4.1, så man lærer
-hurtigt at rette i dokument-type-versions-specifikationen øverst
+docbook - versioner, som du Ã¸nsker at benytte. Der er ikke den
+store forskel mellem fx. version 4.0 og version 4.1, sÃ¥ man lÃ¦rer
+hurtigt at rette i dokument-type-versions-specifikationen Ã¸verst
 i kildeteksten til en eller anden sgml-pakke.
 </para>
 <para>
-DTD filerne for en DocBook version ligger i et directory, som på
+DTD filerne for en DocBook version ligger i et directory, som pÃ¥
 RedHat er /usr/share/sgml/docbook/&lt;dir-navn&gt;
-Disse filer definerer sammen med entity filerne et sæt regler
-(forhåbentlig gyldige) som skal anvendes af openjade, når den
-læser kildeteksten af en sgml-pakke.
+Disse filer definerer sammen med entity filerne et sÃ¦t regler
+(forhÃ¥bentlig gyldige) som skal anvendes af openjade, nÃ¥r den
+lÃ¦ser kildeteksten af en sgml-pakke.
 </para>
 <para>
 openjade skal have access til et directory for hver type
-dokument, som man forventer, at den skal kunne oversætte.
+dokument, som man forventer, at den skal kunne oversÃ¦tte.
 </para>
 
 </sect3>
@@ -157,7 +157,7 @@ dokument, som man forventer, at den skal kunne oversætte.
 <sect3>
 <title>ISO-entitets-SGML filer</title>
 <para>
-ISO8879 ENTITY SGML. Entiteter definerer repræsentation af specielle
+ISO8879 ENTITY SGML. Entiteter definerer reprÃ¦sentation af specielle
 tegn, som enten ikke har nogen keyboard-knap eller som har
 speciel funktion i SGML-kildeteksten. 
 Eksempel: "&amp;amp;" = '&amp;' og "&amp;lt;" = '&lt;'
@@ -170,9 +170,9 @@ Eksempel: "&amp;amp;" = '&amp;' og "&amp;lt;" = '&lt;'
 <para>
 DocBook DSSSL, Document Style Semantics and Specification
 Language (DSSSL) filerne med .dsl endelse, for hver af de
-forskellige typer output format, som man ønsker sig, html, rtf og
-så videre. En nærmere forklaring af disse står på ønskeseddelen.
-For nærværende må vi (jeg) henvise til <ulink
+forskellige typer output format, som man Ã¸nsker sig, html, rtf og
+sÃ¥ videre. En nÃ¦rmere forklaring af disse stÃ¥r pÃ¥ Ã¸nskeseddelen.
+For nÃ¦rvÃ¦rende mÃ¥ vi (jeg) henvise til <ulink
 url="http://www.linuxdoc.org/HOWTO/mini/DocBook-Install/">
 http://www.linuxdoc.org/HOWTO/mini/DocBook-Install/</ulink>
 </para>
@@ -183,19 +183,19 @@ http://www.linuxdoc.org/HOWTO/mini/DocBook-Install/</ulink>
 <title>Sgml-tools</title>
 <para>
 SgmlTools-lite hedder som RedHat pakke "sgml-tools". Det er
-forskellige wrappere for at forenkle antallet af nødvendige
+forskellige wrappere for at forenkle antallet af nÃ¸dvendige
 kommandoer og kommandolinjetilvalg. I pakken er bl.a. kommandoen
-sgml2latex.  I denne pakke ligger også de entitets-filer, som
+sgml2latex.  I denne pakke ligger ogsÃ¥ de entitets-filer, som
 <command>jw </command> - kommandoen ikke kan finde.
 (<command>jw</command> kommandoen ligger i docbook-utils).
 </para>
 
 <para>
 Konvertering af en docbook fil til postscript eller pdf er en to
-eller tre-trins proces. Openjade skriver en tex-fil, som så er
+eller tre-trins proces. Openjade skriver en tex-fil, som sÃ¥ er
 input for jadetex, som producerer en dvi, og pdfjadetex, som
-producerer en pdf-fil. Postscript opnås så ved at sende dvi filen
-igennem dvips. Sgml-tools har en enkelt kommando, som kan udføre
+producerer en pdf-fil. Postscript opnÃ¥s sÃ¥ ved at sende dvi filen
+igennem dvips. Sgml-tools har en enkelt kommando, som kan udfÃ¸re
 disse operationer.
 </para>
 
@@ -205,9 +205,9 @@ disse operationer.
 </sect3>
 
 <sect3>
-<title>HTMLdoc - et hjælpeprogram</title>
+<title>HTMLdoc - et hjÃ¦lpeprogram</title>
 <para>
-Mini-Howto'en for installering af DocBook pakker nævner dette som
+Mini-Howto'en for installering af DocBook pakker nÃ¦vner dette som
 et specielt system, men jeg har p.t. ikke nogen ide om, hvilke
 RedHat 7.1++ pakker dette svarer til.
 HTMLdoc er et frit program, som konverterer html filer til pdf
@@ -224,7 +224,7 @@ SGMLspm er et perl modul, som sammen med andre programmer
 modul, som behandler parsed output fra onsgmls (open new sgml -
 parser). SGMLSpm inkluderer en applikation, som hedder sgmlspl,
 for at kunne bruge SGMLSpm modul-library'et. Sgmlspl har brug for
-spec filer, som kan fås fra forskellige andre sites på
+spec filer, som kan fÃ¥s fra forskellige andre sites pÃ¥
 internettet, for hver type konvertering, som den skal foretage.
 DocBook2X er en pakke, som leverer spec-filer, der kan
 transformere docbook-filer til man-pages.
@@ -236,8 +236,8 @@ transformere docbook-filer til man-pages.
 <sect2 id="s2-kommandoer">
 <title>Tilretnings kommandoer</title>
 <para>
-I det følgende gives kommandoerne med kommentarer, så man bedre
-selv kan kontrollere, at tingene foregår som de skal.
+I det fÃ¸lgende gives kommandoerne med kommentarer, sÃ¥ man bedre
+selv kan kontrollere, at tingene foregÃ¥r som de skal.
 </para>
 
 <orderedlist>
@@ -247,7 +247,7 @@ selv kan kontrollere, at tingene foregår som de skal.
 <prompt>[mig@tux:/]#</prompt> <USERINPUT>cd /usr/share/sgml/docbook 
 </USERINPUT>
 </screen>
-Dette directory skal være installeret fra pakkerne med
+Dette directory skal vÃ¦re installeret fra pakkerne med
 docbook-dtd'er, fx. fra docbook-dtd31-sgml.
 </para>
 </listitem>
@@ -269,9 +269,9 @@ en del af de ting, der sker, og i givet fald kan man bedre finde fejl.
 <prompt>[mig@tux:/usr/share/sgml/docbook]#</prompt> <USERINPUT>cp -pRiv sgml-dtd-3.1/ sgml-dtd-3.1.bkup
 </USERINPUT>
 </screen>
-Det er ikke nødvendigt, men hvorfor ikke tage en kopi af hele
-directory'et, så man kan gå tilbage til startpunktet, hvis man
-kommer til at gøre fejl.
+Det er ikke nÃ¸dvendigt, men hvorfor ikke tage en kopi af hele
+directory'et, sÃ¥ man kan gÃ¥ tilbage til startpunktet, hvis man
+kommer til at gÃ¸re fejl.
 </para>
 </listitem>
 
@@ -282,7 +282,7 @@ kommer til at gøre fejl.
 </USERINPUT>
 </screen>
 Denne kommando creerer symbolske links til de entity filer, som
-RedHat lægger i /usr/lib/sgml/iso-entities-8879.1986
+RedHat lÃ¦gger i /usr/lib/sgml/iso-entities-8879.1986
 </para>
 </listitem>
 
@@ -292,8 +292,8 @@ RedHat lægger i /usr/lib/sgml/iso-entities-8879.1986
 <prompt>[mig@tux:/usr/share/sgml/docbook]#</prompt> <USERINPUT>ls -l --co ./sgml-dtd-3.1/
 </USERINPUT>
 </screen>
-Tjek at det er lykkedes. Hvis link-ene er sødt lyseblå, så er de
-ok. Hvis de er røde, er der fejl og de skal rettes.
+Tjek at det er lykkedes. Hvis link-ene er sÃ¸dt lyseblÃ¥, sÃ¥ er de
+ok. Hvis de er rÃ¸de, er der fejl og de skal rettes.
 </para>
 </listitem>
 
@@ -304,8 +304,8 @@ ok. Hvis de er røde, er der fejl og de skal rettes.
 </USERINPUT>
 </screen>
 Catalog - beskrivelsen fra entity-pakken appendes til den docbook
-catlog-fil, som anvendes, når man starter openjade op, og der
-står &lt;!doctype book PUBLIC "-//OASIS//DTD DocBook V3.1//EN"
+catlog-fil, som anvendes, nÃ¥r man starter openjade op, og der
+stÃ¥r &lt;!doctype book PUBLIC "-//OASIS//DTD DocBook V3.1//EN"
 [ <emphasis> ... alle lokale entity specifikationer ...
 </emphasis> ] &gt;
 </para>
@@ -319,10 +319,10 @@ står &lt;!doctype book PUBLIC "-//OASIS//DTD DocBook V3.1//EN"
 </screen>
 Husk forresten, at du kan bruge "set -o vi-tabcomplete" i pdksh eller 
 "set -o emacs" i bash, for at slippe fra at skulle taste lange
-filenavne. Så kan du bare taste tabulator, og se, om dit filenavn
-er entydigt. Hvis det ikke er det, så må man fortsætte med at
-skrive så mange tegn, at shellen kan finde ud af, hvad man mener
-og <emphasis>så</emphasis> må man taste tab igen.
+filenavne. SÃ¥ kan du bare taste tabulator, og se, om dit filenavn
+er entydigt. Hvis det ikke er det, sÃ¥ mÃ¥ man fortsÃ¦tte med at
+skrive sÃ¥ mange tegn, at shellen kan finde ud af, hvad man mener
+og <emphasis>sÃ¥</emphasis> mÃ¥ man taste tab igen.
 </para>
 </listitem>
 
@@ -332,7 +332,7 @@ og <emphasis>så</emphasis> må man taste tab igen.
 <prompt>[mig@tux:/usr/share/sgml/docbook]#</prompt> <USERINPUT>cd mitarbejds-dir
 </USERINPUT>
 </screen>
-Nu skal manøvrens succes afprøves.
+Nu skal manÃ¸vrens succes afprÃ¸ves.
 </para>
 </listitem>
 
@@ -343,10 +343,10 @@ Nu skal manøvrens succes afprøves.
 </USERINPUT>
 </screen>
 Uha. Det er jo ikke sikkert, at kildeteksten er uden fejl.
-Prøv derfor først med et minimal eksempel <emphasis> eller
+PrÃ¸v derfor fÃ¸rst med et minimal eksempel <emphasis> eller
 </emphasis> en af de sgml-pakker, som kommer fra sslug-linuxbog.
-Husk at der indtil videre er tale om docbook-3.1. For at få alle
-de andre DocBook specifikationer til at fungere, er du nødt til
+Husk at der indtil videre er tale om docbook-3.1. For at fÃ¥ alle
+de andre DocBook specifikationer til at fungere, er du nÃ¸dt til
 at gentage seancen for hvert af de andre
 sgml-dtd-&lt;versionsnummer&gt; directory'er.
 </para>
@@ -356,7 +356,7 @@ sgml-dtd-&lt;versionsnummer&gt; directory'er.
 
 <warning>
 <para>
-Man kan sikkert gøre det på en smartere måde.
+Man kan sikkert gÃ¸re det pÃ¥ en smartere mÃ¥de.
 </para>
 </warning>
 

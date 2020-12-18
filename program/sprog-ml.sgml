@@ -16,21 +16,21 @@
  </indexterm>
 
  <para>
-  ML er et funktionsprogrammeringssprog der har stærkt typetjek med
-  polymorfi, højereordensfunktioner, funktionsdefinition ved
-  mønstergenkendelse, håndterbare undtagelser (eng. exceptions),
+  ML er et funktionsprogrammeringssprog der har stÃ¦rkt typetjek med
+  polymorfi, hÃ¸jereordensfunktioner, funktionsdefinition ved
+  mÃ¸nstergenkendelse, hÃ¥ndterbare undtagelser (eng. exceptions),
   strikt evaluering og et avanceret modulsystem.  Det betyder at
-  rigtig mange programmeringsfejl bliver opdaget allerede når man
-  oversætter et program, ikke først når man kører det.  ML blev
+  rigtig mange programmeringsfejl bliver opdaget allerede nÃ¥r man
+  oversÃ¦tter et program, ikke fÃ¸rst nÃ¥r man kÃ¸rer det.  ML blev
   oprindelig (ca. 1974) udviklet som metasprog (meta-language) til
-  logiske bevissystemer, men sproget viste sig at være særdeles
-  velegnet til en lang række andre formål.
+  logiske bevissystemer, men sproget viste sig at vÃ¦re sÃ¦rdeles
+  velegnet til en lang rÃ¦kke andre formÃ¥l.
  </para>
 
  <para>
-  I dag (2001) findes der to væsentlige varianter af sproget ML:
+  I dag (2001) findes der to vÃ¦sentlige varianter af sproget ML:
   Standard ML (SML) og Objective Caml (OCaml).  Der findes ganske
-  omfattende biblioteker af nyttige funktioner til såvel Standard ML (se
+  omfattende biblioteker af nyttige funktioner til sÃ¥vel Standard ML (se
   <ulink url="http://www.dina.kvl.dk/~sestoft/sml/sml-std-basis.html">SML
   Basis Library</ulink>) som OCaml.  Desuden har de enkelte implementationer
   deres egne udvidelser til f.eks. databaseadgang, generering af
@@ -38,22 +38,22 @@
  </para>
 
  <para>
-  ML er især udbredt på universiteter og forskningsinstitutioner, og
-  benyttes i mindre grad i industriel sammenhæng.  I Danmark undervises
+  ML er isÃ¦r udbredt pÃ¥ universiteter og forskningsinstitutioner, og
+  benyttes i mindre grad i industriel sammenhÃ¦ng.  I Danmark undervises
   der i Standard ML ved blandt andet Danmarks Tekniske Universitet,
-  Københavns Universitet (DIKU), Aarhus Universitet, Aalborg Universitet
-  og IT-højskolen i København.
+  KÃ¸benhavns Universitet (DIKU), Aarhus Universitet, Aalborg Universitet
+  og IT-hÃ¸jskolen i KÃ¸benhavn.
  </para>
 
  <sect2 id='sprog-brug-af-ml'>
   <title>Brug af ML</title>
 
   <para>
-   Der findes flere implementationer af SML. Både SML of New Jersey og
-   MoscowML giver mulighed for at lege med SML ved en 'læs-beregn-udskriv
-   løkke' hvor man interagerer direkte med fortolkeren. Man 
+   Der findes flere implementationer af SML. BÃ¥de SML of New Jersey og
+   MoscowML giver mulighed for at lege med SML ved en 'lÃ¦s-beregn-udskriv
+   lÃ¸kke' hvor man interagerer direkte med fortolkeren. Man 
    skriver sine udtryk ind, fortolkerne beregner dem og skriver svaret ud.
-   En session med SML kunne derfor se således ud:
+   En session med SML kunne derfor se sÃ¥ledes ud:
   </para>
 
 <screen>
@@ -71,17 +71,17 @@ val res = 182 : int
  </sect2>
 
  <sect2 id='sprog-ml-eksempel'>
-  <title>Eksempel på SML</title>
+  <title>Eksempel pÃ¥ SML</title>
 
   <para>
-   Det følgende eksempel forsøger vise en række af de ting der er
+   Det fÃ¸lgende eksempel forsÃ¸ger vise en rÃ¦kke af de ting der er
    specielle for SML og andre funktionsorienterede sprog. SML udleder
    selv typer for funktioner, og de udledte typer er her indsat over
    funktionsdefinitionerne i kommentarer <literal>(* ... *)</literal>.
   </para>
 
   <para>
-   Først defineres en funktion <literal>map</literal>:
+   FÃ¸rst defineres en funktion <literal>map</literal>:
  
 <programlisting>
 (* Type: ('a -&gt; 'b) -&gt; 'a list -&gt; 'b list *)
@@ -91,12 +91,12 @@ fun map f nil = nil
   </para>
 
   <para>
-   Typen fortæller at funktionen <literal>map</literal> som argumenter
+   Typen fortÃ¦ller at funktionen <literal>map</literal> som argumenter
    tager en anden funktion der tager et argument af typen
-   <literal>'a</literal> og returnerer en værdi af typen
+   <literal>'a</literal> og returnerer en vÃ¦rdi af typen
    <literal>'b</literal>. Det andet argument til
    <literal>map</literal> er en liste hvor elementerne har typen
-   <literal>'a</literal> og så returnerer map en liste af elementer af
+   <literal>'a</literal> og sÃ¥ returnerer map en liste af elementer af
    typen <literal>'b</literal>. Men hvad er <literal>'a</literal> og
    <literal>'b</literal>?
   </para>
@@ -106,32 +106,32 @@ fun map f nil = nil
    <literal>map</literal> med en funktion der tager et heltal som
    argument vil <literal>'a</literal> blive bundet til typen
    <literal>int</literal>. Dette kaldes
-   typepolymorfi. <literal>map</literal> arbejder bare på lister og er
-   ligeglad med hvad funktionen <literal>f</literal> gør ved
+   typepolymorfi. <literal>map</literal> arbejder bare pÃ¥ lister og er
+   ligeglad med hvad funktionen <literal>f</literal> gÃ¸r ved
    elementerne.
  </para>
 
   <para>
-   Funktionen er defineret med mønstergenkendelse. Det vil sige at der
-   er listet en række tilfælde af definitionen op hvor SML så vil
-   vælge den første der passer. <literal>nil</literal> og
-   <literal>(x::xs)</literal> er mønstre som SML sammenligner med hvad
+   Funktionen er defineret med mÃ¸nstergenkendelse. Det vil sige at der
+   er listet en rÃ¦kke tilfÃ¦lde af definitionen op hvor SML sÃ¥ vil
+   vÃ¦lge den fÃ¸rste der passer. <literal>nil</literal> og
+   <literal>(x::xs)</literal> er mÃ¸nstre som SML sammenligner med hvad
    funktionen bliver kaldt med. <literal>nil</literal> er den tomme
-   liste og <literal>(x::xs)</literal> er en liste hvor det første
+   liste og <literal>(x::xs)</literal> er en liste hvor det fÃ¸rste
    element bliver bundet til variablen <literal>x</literal> og resten
    af listen bliver bundet til variablen <literal>xs</literal>.
   </para>
 
   <para>
    <literal>::</literal> er en infix-operator der laver
-   listesammensætning.  <literal>map</literal> tager altså en funktion
-   og en liste og udføre funktionen på alle elementerne i listen. Da
+   listesammensÃ¦tning.  <literal>map</literal> tager altsÃ¥ en funktion
+   og en liste og udfÃ¸re funktionen pÃ¥ alle elementerne i listen. Da
    <literal>map</literal> tager en anden funktion som argument kaldes
-   den en højereordensfunktion.
+   den en hÃ¸jereordensfunktion.
   </para>
 
   <para>
-   Følgende enkle funktion tager et heltal og ganger det med 2:
+   FÃ¸lgende enkle funktion tager et heltal og ganger det med 2:
 
 <programlisting>
 (* Type: int -&gt; int *)
@@ -144,7 +144,7 @@ fun double n = 2 * n;
   </para>
 
   <para>
-   Nu vil vi så anvende ovenstående to funktioner til at lave en
+   Nu vil vi sÃ¥ anvende ovenstÃ¥ende to funktioner til at lave en
    funktion der tager en liste af heltal og fordobler dem:
 
 <programlisting>
@@ -154,38 +154,38 @@ val doublelist = map double;
   </para>
 
   <para>
-   Bemærk at vi her bruger <literal>val</literal> og ikke
+   BemÃ¦rk at vi her bruger <literal>val</literal> og ikke
    <literal>fun</literal>. Det er fordi vi egentligt ikke laver en ny
-   funktion men tildeler navnet <literal>doublelist</literal> en værdi
-   (funktioner er nemlig lige så meget værdier som heltal er).
+   funktion men tildeler navnet <literal>doublelist</literal> en vÃ¦rdi
+   (funktioner er nemlig lige sÃ¥ meget vÃ¦rdier som heltal er).
   </para>
 
   <para>
-   Det næste man bemærker er at <literal>map</literal> kaldes med kun
+   Det nÃ¦ste man bemÃ¦rker er at <literal>map</literal> kaldes med kun
    et argument. Men <literal>map</literal> havde da to argumenter?
    Dette kaldes 'currying'. Vi kalder <literal>map</literal> med det
-   første argument, det returnerer en funktion der tager resten af
+   fÃ¸rste argument, det returnerer en funktion der tager resten af
    argumenterne.
   </para>
 
 <!--
 For pedanten:
 
-Det der egentligt foregår er at map er en funktion der tager ét argument (f)
-og returnerer en funktion der tager ét argument (nil/(x::xs)) og returnerer en
+Det der egentligt foregÃ¥r er at map er en funktion der tager Ã©t argument (f)
+og returnerer en funktion der tager Ã©t argument (nil/(x::xs)) og returnerer en
 liste.
 
-Alle funktioner i SML tager netop et argument, så kan man enten lade dette
-være et n-tupple eller også laver man modellen med en funktion der returnere en
-funktion der tager det næste som argument.
+Alle funktioner i SML tager netop et argument, sÃ¥ kan man enten lade dette
+vÃ¦re et n-tupple eller ogsÃ¥ laver man modellen med en funktion der returnere en
+funktion der tager det nÃ¦ste som argument.
 
-Det korte af det lange er at jeg tror at det er lidt for langthåret og subtilt
-til at det bør stå i bogen i klartekst. Det er allerede ret ambitiøst at tale
+Det korte af det lange er at jeg tror at det er lidt for langthÃ¥ret og subtilt
+til at det bÃ¸r stÃ¥ i bogen i klartekst. Det er allerede ret ambitiÃ¸st at tale
 om typepolymorfi.
 -->
 
   <para>
-   Vi kunne også have undladt at definere funktionen
+   Vi kunne ogsÃ¥ have undladt at definere funktionen
    <literal>double</literal> og bruge en anonym funktion:
 
 <programlisting>
@@ -208,15 +208,15 @@ val doublelist = map (fn x =&gt; 2 * x);
   </indexterm>
 
   <indexterm>
-   <primary>løkker</primary>
+   <primary>lÃ¸kker</primary>
    <secondary>i SML</secondary>
   </indexterm>
 
   <para>
-   SML indeholder ikke de løkkestrukturer man normalt bruger. <!-- i
+   SML indeholder ikke de lÃ¸kkestrukturer man normalt bruger. <!-- i
    procedurale sprog --> Skal man beregne noget iterativt bliver man
-   derfor nødt til selv at lave nogle funktioner der klarer det for
-   sig. Man kunne for eksempel bruge følgende funktion:
+   derfor nÃ¸dt til selv at lave nogle funktioner der klarer det for
+   sig. Man kunne for eksempel bruge fÃ¸lgende funktion:
 
 <programlisting>
 (* Type: ('a -&gt; 'a) -&gt; int -&gt; 'a -&gt; 'a *)
@@ -227,7 +227,7 @@ fun iterate f 0 x = x
 
   <para>
    <literal>iterate</literal> tager en funktion <literal>f</literal>
-   og udfører den et antal gange på værdien <literal>x</literal>.
+   og udfÃ¸rer den et antal gange pÃ¥ vÃ¦rdien <literal>x</literal>.
   </para>
  </sect2>
 </sect1>

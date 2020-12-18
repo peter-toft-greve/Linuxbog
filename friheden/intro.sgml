@@ -39,21 +39,21 @@ Xdenu, XTeamLinux, Yellow Dog Linux, ZipSlack, ZipSpeak.
 
 <para>
 Det kan godt virke forvirrende i begyndelsen, at du skal
-vælge. Fælles for alle distributionerne er, at de kører med den samme
+vÃ¦lge. FÃ¦lles for alle distributionerne er, at de kÃ¸rer med den samme
 stabile og fleksible Linux-kerne, som egentlig er det, der hedder
-Linux. Kernen er den centrale del af systemet, som håndterer
+Linux. Kernen er den centrale del af systemet, som hÃ¥ndterer
 processer, adgang til disk og meget andet.  Forskellene mellem de
-forskellige distributioner består i, at det er forskellige
-firmaer/organisationer, der står for udgivelsen. De vælger hvilke
-programmer der skal følge med og lægger det på en cd-rom.
+forskellige distributioner bestÃ¥r i, at det er forskellige
+firmaer/organisationer, der stÃ¥r for udgivelsen. De vÃ¦lger hvilke
+programmer der skal fÃ¸lge med og lÃ¦gger det pÃ¥ en cd-rom.
 </para>
 
 <para>
-En af forskellene er installationsprogrammet og sværhedsgraden
-af dette. En anden forskel er opsætningsværktøjerne og måden, man
-lettest installerer nye programmer på. Normalt kan de samme
-programmer dog køre på alle Linux-distributioner.
-<indexterm><primary>opsætningsværktøjerne</primary></indexterm></para>
+En af forskellene er installationsprogrammet og svÃ¦rhedsgraden
+af dette. En anden forskel er opsÃ¦tningsvÃ¦rktÃ¸jerne og mÃ¥den, man
+lettest installerer nye programmer pÃ¥. Normalt kan de samme
+programmer dog kÃ¸re pÃ¥ alle Linux-distributioner.
+<indexterm><primary>opsÃ¦tningsvÃ¦rktÃ¸jerne</primary></indexterm></para>
 
 <para>
 De mest kendte distributioner er:
@@ -63,18 +63,18 @@ De mest kendte distributioner er:
 
 <listitem> <para>Linux Mandrake<indexterm><primary>Mandrake</primary></indexterm>
 (<ulink url="http://www.mandrake.com/">http://www.mandrake.com/</ulink>):
-Spændende alternativ til Red Hat. Distributionen startede som en bedre
-Red Hat, men sidenhen har Mandrake kommet med nye glimrende værktøjer,
+SpÃ¦ndende alternativ til Red Hat. Distributionen startede som en bedre
+Red Hat, men sidenhen har Mandrake kommet med nye glimrende vÃ¦rktÃ¸jer,
 de selv har udviklet hos Mandrake. Desuden er det den distribution, som
-i øjeblikket har den bedste understøttelse af dansk.
+i Ã¸jeblikket har den bedste understÃ¸ttelse af dansk.
 </para></listitem>
 
 
 <listitem> <para>SuSE Linux<indexterm><primary>SuSE</primary></indexterm>
 (<ulink url="http://www.suse.com/">http://www.suse.com</ulink>):
-God for begyndere, mange skærmkort understøttet.
-Udgives af tysk firma, men kan køre med dansk eller engelsk sprog. KDE
-og Gnome er med. Man skal købe deres cd-rom'er - de kan ikke som sådan hentes 
+God for begyndere, mange skÃ¦rmkort understÃ¸ttet.
+Udgives af tysk firma, men kan kÃ¸re med dansk eller engelsk sprog. KDE
+og Gnome er med. Man skal kÃ¸be deres cd-rom'er - de kan ikke som sÃ¥dan hentes 
 fra internettet.
 </para></listitem>
 
@@ -88,17 +88,17 @@ God til servere, meget udbredt. Gnome og KDE er med.
 <listitem> <para>
 Debian GNU/Linux<indexterm><primary>Debian</primary></indexterm>
 (<ulink url="http://www.debian.org">http://www.debian.org</ulink>):
-Engelsk. Noget sværere at installere, men til gengæld er
-Debian i den ægte frie softwares ånd. Den udgives af en organisation og ikke
+Engelsk. Noget svÃ¦rere at installere, men til gengÃ¦ld er
+Debian i den Ã¦gte frie softwares Ã¥nd. Den udgives af en organisation og ikke
 et firma, og der er ikke kommercielle interesser involveret.
-Vil man have en god vejledning i Debian GNU/Linux så er det bedst at 
-start på <ulink url="http://www.debianguiden.dk">http://www.debianguiden.dk</ulink>. 
+Vil man have en god vejledning i Debian GNU/Linux sÃ¥ er det bedst at 
+start pÃ¥ <ulink url="http://www.debianguiden.dk">http://www.debianguiden.dk</ulink>. 
 </para></listitem>
 
 </itemizedlist>
 
 <para>
-Skal du sammenligne de forskellige distributioner, så er 
+Skal du sammenligne de forskellige distributioner, sÃ¥ er 
 <ulink
 url="http://www.distrowatch.com/">http://www.distrowatch.com/</ulink>
 gode steder at se hvad der er og ikke er med de 
@@ -109,22 +109,22 @@ forskellige distributioner.
 <indexterm><primary>cd-rom</primary><secondary>Linux live fra cd-rom - KNOPPIX</secondary></indexterm>
 
 <para>
-En mulighed er at køre Linux fra <emphasis>en</emphasis> cd-rom,
-hvor man end ikke installerer Linux. For førstegangsbrugeren er dette
-en oplagt nem måde at komme i gang på. Der findes flere muligheder - en af de bedste er KNOPPIX. En oversigtsartikel kan findes på <ulink url="http://www.ing.dk/apps/pbcs.dll/artikkel?searchid=7311333748660&amp;avis=IG&amp;dato=20020901&amp;kategori=IT&amp;lopenr=208290002&amp;ref=AR">denne URL</ulink>, mens en egentlig vejledning
-kan findes på <ulink url="http://www.gnuskole.dk/index.php?id=33">denne URL</ulink>. Find KNOPPIX på dansk på <ulink url="http://tyge.sslug.dk/knoppix/">http://tyge.sslug.dk/knoppix/</ulink>.
+En mulighed er at kÃ¸re Linux fra <emphasis>en</emphasis> cd-rom,
+hvor man end ikke installerer Linux. For fÃ¸rstegangsbrugeren er dette
+en oplagt nem mÃ¥de at komme i gang pÃ¥. Der findes flere muligheder - en af de bedste er KNOPPIX. En oversigtsartikel kan findes pÃ¥ <ulink url="http://www.ing.dk/apps/pbcs.dll/artikkel?searchid=7311333748660&amp;avis=IG&amp;dato=20020901&amp;kategori=IT&amp;lopenr=208290002&amp;ref=AR">denne URL</ulink>, mens en egentlig vejledning
+kan findes pÃ¥ <ulink url="http://www.gnuskole.dk/index.php?id=33">denne URL</ulink>. Find KNOPPIX pÃ¥ dansk pÃ¥ <ulink url="http://tyge.sslug.dk/knoppix/">http://tyge.sslug.dk/knoppix/</ulink>.
 </para>
 
 
 <sect1 id="koebeLinux">
-<title>Hvordan får jeg fat i en Linux-cd-rom?</title>
-<indexterm><primary>Købe Linux</primary></indexterm>
-<indexterm><primary>Få fat i Linux</primary></indexterm>
-<indexterm><primary>cd-rom, købe</primary></indexterm>
+<title>Hvordan fÃ¥r jeg fat i en Linux-cd-rom?</title>
+<indexterm><primary>KÃ¸be Linux</primary></indexterm>
+<indexterm><primary>FÃ¥ fat i Linux</primary></indexterm>
+<indexterm><primary>cd-rom, kÃ¸be</primary></indexterm>
 
 
 <para>
-Det kræver typisk at man har hentet tre Linux-cd-rom'er fra internettet
+Det krÃ¦ver typisk at man har hentet tre Linux-cd-rom'er fra internettet
 for at komme i gang.  Enten kan man hente fra de enkelte firmaers
 hjemmesider eller fra <ulink
 url="ftp://ftp.sunsite.dk">ftp://ftp.sunsite.dk</ulink>, eller fra
@@ -133,7 +133,7 @@ url="ftp://ftp.sunsite.dk">ftp://ftp.sunsite.dk</ulink>, eller fra
 
 
 <para>
-Du kan i Danmark købe
+Du kan i Danmark kÃ¸be
 SuSE fra <ulink url="http://www.suse.dk">http://www.suse.dk</ulink>,
 Red Hat fra f.eks. <ulink url="http://www.liga.dk">http://www.liga.dk</ulink>,
 eller du kan bestille en cd-rom billigt fra LinuXperten <ulink
@@ -143,10 +143,10 @@ Slackware og SuSE.
 </para>
 
 <para>
-En venlig sjæl i København driver Linuxpusher.dk. Her kan du købe en
-stribe forskellige distributioner på cd-rom. Prisen er 20 kr. pr. skive plus
-10 kr. for porto uanset størrelsen på bestillingen. Samme sted kan man i
-øvrigt købe Linux' maskot Tux som nuttet tøjdyr. <ulink 
+En venlig sjÃ¦l i KÃ¸benhavn driver Linuxpusher.dk. Her kan du kÃ¸be en
+stribe forskellige distributioner pÃ¥ cd-rom. Prisen er 20 kr. pr. skive plus
+10 kr. for porto uanset stÃ¸rrelsen pÃ¥ bestillingen. Samme sted kan man i
+Ã¸vrigt kÃ¸be Linux' maskot Tux som nuttet tÃ¸jdyr. <ulink 
 url="http://linuxpusher.dk/">http://linuxpusher.dk/</ulink>.
 </para>
 
@@ -158,65 +158,65 @@ url="http://linuxpusher.dk/">http://linuxpusher.dk/</ulink>.
 <indexterm><primary>Valg af hardware</primary></indexterm>
 Det er ikke al hardware, der fungerer under Linux. Det skyldes, at en
 del hardware-producenter ikke udvikler drivere til Linux, som de
-gør det til Windows. Ligesom spilproducenterne vil de først gøre det,
-når forbrugerne kræver det. Derfor er de fleste drivere til Linux udviklet
-af dygtige frivillige programmører ligesom Linux selv er det. Men
-det kan være svært eller umuligt at skrive en driver,
+gÃ¸r det til Windows. Ligesom spilproducenterne vil de fÃ¸rst gÃ¸re det,
+nÃ¥r forbrugerne krÃ¦ver det. Derfor er de fleste drivere til Linux udviklet
+af dygtige frivillige programmÃ¸rer ligesom Linux selv er det. Men
+det kan vÃ¦re svÃ¦rt eller umuligt at skrive en driver,
 hvis producenten hemmeligholder hvordan en driver kommunikerer med hardwaren.
 Desuden skriver folk som regel mest drivere til den hardware,
-de selv har adgang til. Derfor er det en god idé at kontrollere, om din
-hardware er understøttet, før du beslutter dig for at skifte til
-Linux. Oplysningerne kan som regel findes på internettet. Søg efter
-Linux og så navnet på din hardware.
+de selv har adgang til. Derfor er det en god idÃ© at kontrollere, om din
+hardware er understÃ¸ttet, fÃ¸r du beslutter dig for at skifte til
+Linux. Oplysningerne kan som regel findes pÃ¥ internettet. SÃ¸g efter
+Linux og sÃ¥ navnet pÃ¥ din hardware.
 </para>
 
 <para>
-Du kan ikke regne med, at de alle Win-modems og Win-printere kører
-under Linux. Om en printer er af en sådan type kan oftest ses på at
+Du kan ikke regne med, at de alle Win-modems og Win-printere kÃ¸rer
+under Linux. Om en printer er af en sÃ¥dan type kan oftest ses pÃ¥ at
 den ikke er DOS-kompatibel og ikke har nogen hukommelse. Typisk kan
-man søge på <ulink
+man sÃ¸ge pÃ¥ <ulink
 url="http://www.google.com">http://www.google.com</ulink> med
-søgestrengen "Linux" og navnet på den hardware du påtænker at købe.
-Der er også flere gode hjemmesider rettet mere specifikt mod hardware
+sÃ¸gestrengen "Linux" og navnet pÃ¥ den hardware du pÃ¥tÃ¦nker at kÃ¸be.
+Der er ogsÃ¥ flere gode hjemmesider rettet mere specifikt mod hardware
 - se mere i <xref linkend="videre-paa-web"></xref>.  
 </para>
 
 <para>
 Det kan ske, at en PC er ustabil med Linux, og langt de fleste 
-gange vil dette skyldes at der er ustabil hardware. En af de største
-problemer er defekt RAM, ser mere på <ulink url="http://www.sienet.hu/linux/sig11-FAQ.html">http://www.sienet.hu/linux/sig11-FAQ.html</ulink>.
+gange vil dette skyldes at der er ustabil hardware. En af de stÃ¸rste
+problemer er defekt RAM, ser mere pÃ¥ <ulink url="http://www.sienet.hu/linux/sig11-FAQ.html">http://www.sienet.hu/linux/sig11-FAQ.html</ulink>.
 </para>
 
 </sect1>
 
 <sect1 id="generelle-boeger">
-<title>Bøger og dokumentation</title>
+<title>BÃ¸ger og dokumentation</title>
 <para>
-Før du skal i gang med at installere,  vil vi nævne, at der på 
+FÃ¸r du skal i gang med at installere,  vil vi nÃ¦vne, at der pÃ¥ 
 installations-cd-rom'en ofte findes dokumentation omkring 
 installationen.
 </para>
 
 <para>
-På Red Hat's cd-rom findes filen
+PÃ¥ Red Hat's cd-rom findes filen
 <filename>/doc/rhmanual/manual/index.htm</filename>, der er en
-manual, hvor der står en masse om installation og drift af et Red Hat
-system. En bog "Red Hat - getting started" kan du finde på samme cd-rom
+manual, hvor der stÃ¥r en masse om installation og drift af et Red Hat
+system. En bog "Red Hat - getting started" kan du finde pÃ¥ samme cd-rom
 under <filename>/doc/rhgsg/gsg/index.htm</filename>.
 Generelt indeholder kataloget <filename>/doc/</filename>
 en masse nyttige informationer.
 </para>
 
 <para>
-På Mandrakes cd-rom ligger der en vejledning i filen  
+PÃ¥ Mandrakes cd-rom ligger der en vejledning i filen  
 <filename>install.htm</filename> og lidt mere om Mandrake generelt 
 i filen <filename>index.html</filename>.
 </para>
 
 <para>
-På <ulink url="http://www.gnuskole.dk">http://www.gnuskole.dk</ulink> 
-findes en stor dansk Linux-bog mange kan have glæde af - lige til at
-hente eller læse på nettet.
+PÃ¥ <ulink url="http://www.gnuskole.dk">http://www.gnuskole.dk</ulink> 
+findes en stor dansk Linux-bog mange kan have glÃ¦de af - lige til at
+hente eller lÃ¦se pÃ¥ nettet.
 </para>
 
 

@@ -11,7 +11,7 @@
 #define OUTTAG 258
 #define EXIT_FAILURE 255
 
-int nesting;                    /* hvilket tag niveau er vi på */
+int nesting;                    /* hvilket tag niveau er vi pÃ¥ */
 int eofile;			/* global end of file */
 
 #define MAXB 8000
@@ -66,21 +66,21 @@ int main()
                int parse_level(void) is the main loop
  ************************************************************************/
 /*
-   parse_level1() er over-løkken for programmet. Som navnet
-   antyder kunne der være flere levels. Det ville muliggøre
-   regler for, hvilke tags der må komme inde mellem andre tags.
-   Fx. i level1: Get_Chapter(); // eller dø!
+   parse_level1() er over-lÃ¸kken for programmet. Som navnet
+   antyder kunne der vÃ¦re flere levels. Det ville muliggÃ¸re
+   regler for, hvilke tags der mÃ¥ komme inde mellem andre tags.
+   Fx. i level1: Get_Chapter(); // eller dÃ¸!
 
-   Speciel tag-handling foregår i fx. comment(), som blot
-   formaterer output og fortsætter indtil kommentar - slut tegnet.
-   Kommentarer optræder jo ikke parvis som <tag> </tag>.
+   Speciel tag-handling foregÃ¥r i fx. comment(), som blot
+   formaterer output og fortsÃ¦tter indtil kommentar - slut tegnet.
+   Kommentarer optrÃ¦der jo ikke parvis som <tag> </tag>.
    
    blanks() call er placeret strategisk - jeg tror der er et par
-   af dem, som er overflødige. Det er defensiv programmering! De
+   af dem, som er overflÃ¸dige. Det er defensiv programmering! De
    skader ikke, hvis der er for mange, men det er fatalt, hvis
    der mangler et kald til blanks()!
-   nesting værdien styres her (og *kun* her). Den er desværre
-   nødvendig, fordi vi ellers ikke fanger manglende tags ved 
+   nesting vÃ¦rdien styres her (og *kun* her). Den er desvÃ¦rre
+   nÃ¸dvendig, fordi vi ellers ikke fanger manglende tags ved 
    end-of-file.
  */
 
@@ -150,7 +150,7 @@ int anytag(char *tagbuf)
 	blanks();
 	if (ch()!='<') 
 		return 0;
-	if (nch()=='/')         /* TODO: hvad hvis der er space før '/' */
+	if (nch()=='/')         /* TODO: hvad hvis der er space fÃ¸r '/' */
 		return 0;
 	gch();
 	blanks();
@@ -293,8 +293,8 @@ int gch()
 	if (nch() == 0) {
 		c = ch();
 		if (!fillbuf()) {
-			eofile = 1;	/* TODO burde ikke være synlig førend
-					   brugeren læser næste gang */
+			eofile = 1;	/* TODO burde ikke vÃ¦re synlig fÃ¸rend
+					   brugeren lÃ¦ser nÃ¦ste gang */
 		}
 		return c;
 	}
@@ -351,8 +351,8 @@ void outchar(int writeme)
 
 
 /* putword formaterer tekst-data, ganske primitivt, ved at
- * checke, om ordet vil gå ud over kolonne 78, når vi skriver
- * det. TODO: Hvis et ord er længere end maxkol tegn, så skal det
+ * checke, om ordet vil gÃ¥ ud over kolonne 78, nÃ¥r vi skriver
+ * det. TODO: Hvis et ord er lÃ¦ngere end maxkol tegn, sÃ¥ skal det
  * skrives alligevel!
  */
 
@@ -363,7 +363,7 @@ void putword()
 	if (column + w - wordbuffer + 1 > 78)   /* plads nok? */
 		margin();
 	else 
-		if (!ispunct(*u))               /* skriv mellemrum og så ordet */
+		if (!ispunct(*u))               /* skriv mellemrum og sÃ¥ ordet */
 			outchar(' ');
 	while (*u)
 		outchar(*u++);

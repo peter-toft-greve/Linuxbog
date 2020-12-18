@@ -6,7 +6,7 @@
 
  <para>
   Typografier styres med <emphasis>stylisten</emphasis> (typografier
-  kaldes <emphasis>styles</emphasis> på engelsk):
+  kaldes <emphasis>styles</emphasis> pÃ¥ engelsk):
  </para>
 
 <figure float="1" id="fig-ooo-stylist">
@@ -17,7 +17,7 @@
 <itemizedlist mark="bullet">
   <listitem>
 
-<para>Stylisten åbnes og lukkes med <emphasis>Formater/Stylist</emphasis> (Tastatur:
+<para>Stylisten Ã¥bnes og lukkes med <emphasis>Formater/Stylist</emphasis> (Tastatur:
         <emphasis>F11</emphasis>) eller med knappen <figure float="1"><title>(noget)</title>
 <graphic fileref="objektlinjestylist.&magic;" scale="60"></graphic>
 </figure>
@@ -29,16 +29,16 @@
   <listitem>
 
 
-<para>Du kan minimere/lukke stylisten med de to knapper i øverste højre
-        hjørne.</para>
+<para>Du kan minimere/lukke stylisten med de to knapper i Ã¸verste hÃ¸jre
+        hjÃ¸rne.</para>
 
 
 </listitem>
 </itemizedlist>
 
-<para> <emphasis>OBS</emphasis> : Alle ændringer vedrørende typografier vedrører kun det
+<para> <emphasis>OBS</emphasis> : Alle Ã¦ndringer vedrÃ¸rende typografier vedrÃ¸rer kun det
     aktuelle dokument! Hvis du vil bruge en typografi i flere dokumenter skal
-    du bruge <emphasis>skabeloner</emphasis> , som ikke omtales i denne håndbog, men se i
+    du bruge <emphasis>skabeloner</emphasis> , som ikke omtales i denne hÃ¥ndbog, men se i
     slutningen af dette kapitel hvordan du kan importere typografierne fra et
     andet dokument.</para>
 

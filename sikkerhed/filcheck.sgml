@@ -6,48 +6,48 @@
 
 <para>
 Selvom du er omhyggelig med, hvordan din Linux-maskine er sat op, og du
-håndterer adgangskoder med stor omhu, må du regne med at dit system
-aldrig er fuldstændig sikkert. Der kan stadig være en sikkerhedskritisk
+hÃ¥ndterer adgangskoder med stor omhu, mÃ¥ du regne med at dit system
+aldrig er fuldstÃ¦ndig sikkert. Der kan stadig vÃ¦re en sikkerhedskritisk
 fejl i et af de programmer du bruger. En adgangskode kan blive
-opsnappet. Eller du kan have overset noget kritisk i opsætningen af din
-maskine. Det kan også være, at du af funktionalitetshensyn har valgt at
+opsnappet. Eller du kan have overset noget kritisk i opsÃ¦tningen af din
+maskine. Det kan ogsÃ¥ vÃ¦re, at du af funktionalitetshensyn har valgt at
 benytte programmer med kendte fejl til trods for de sikkerhedsproblemer,
-det medfører. Derfor er det vigtigt, at du holder øje med, om der har
-været fremmede inde på dit system.
+det medfÃ¸rer. Derfor er det vigtigt, at du holder Ã¸je med, om der har
+vÃ¦ret fremmede inde pÃ¥ dit system.
 </para>
 
 <para>
-Lad os nu uden at tænke på hvordan antage, at en dygtig eller heldig
-cracker har fået root-adgang til din maskine. Denne cracker
-har med andre ord adgang til alt på din maskine, og har måske endda 
-installeret nye programmer med hemmelige bagdøre på maskinen, der gør
-det nemmere at komme ind næste gang.
+Lad os nu uden at tÃ¦nke pÃ¥ hvordan antage, at en dygtig eller heldig
+cracker har fÃ¥et root-adgang til din maskine. Denne cracker
+har med andre ord adgang til alt pÃ¥ din maskine, og har mÃ¥ske endda 
+installeret nye programmer med hemmelige bagdÃ¸re pÃ¥ maskinen, der gÃ¸r
+det nemmere at komme ind nÃ¦ste gang.
 </para>
 
 <para>
-En person, der trænger ind på andres computere, har ofte et formål 
-med det. Det kan være en som vil snuse rundt efter informationer,
+En person, der trÃ¦nger ind pÃ¥ andres computere, har ofte et formÃ¥l 
+med det. Det kan vÃ¦re en som vil snuse rundt efter informationer,
 eller en som alene skal bruge maskinen til at angribe andres
-maskiner. Ofte vil han samtidig forsøge at sløre sit eget spor. 
-Der er mange muligheder for adfærd for en cracker, som du skal kunne følge. 
-I denne situation er det crackeren, der vælger angrebstidspunkt og metode, 
-og du kan i praksis ikke overvåge alt 24 timer i døgnet på maskinen. Men 
-ligesom du kan opdage en indbrudstyv i dit hjem, kan du opdage ham på din 
-computer ved at lytte efter unormal adfærd og sætte tyverialarmer op, 
-som vækker dig ved indbrud. 
+maskiner. Ofte vil han samtidig forsÃ¸ge at slÃ¸re sit eget spor. 
+Der er mange muligheder for adfÃ¦rd for en cracker, som du skal kunne fÃ¸lge. 
+I denne situation er det crackeren, der vÃ¦lger angrebstidspunkt og metode, 
+og du kan i praksis ikke overvÃ¥ge alt 24 timer i dÃ¸gnet pÃ¥ maskinen. Men 
+ligesom du kan opdage en indbrudstyv i dit hjem, kan du opdage ham pÃ¥ din 
+computer ved at lytte efter unormal adfÃ¦rd og sÃ¦tte tyverialarmer op, 
+som vÃ¦kker dig ved indbrud. 
 </para>
 
 <para>
-Det, vi skal se nærmere på i dette kapitel, er den interne overvågning
-af din maskine. Vi vil se på, hvordan du som systemadministrator
-kan finde ud af, at der har været indbrud, og hvordan du kan se hvad 
-crackeren har lavet om på maskinen. Vi vil komme ind på de generelle 
-forholdsregler, du som systemadministrator kan tage, samt en række værktøjer, 
-som kan hjælpe dig. 
+Det, vi skal se nÃ¦rmere pÃ¥ i dette kapitel, er den interne overvÃ¥gning
+af din maskine. Vi vil se pÃ¥, hvordan du som systemadministrator
+kan finde ud af, at der har vÃ¦ret indbrud, og hvordan du kan se hvad 
+crackeren har lavet om pÃ¥ maskinen. Vi vil komme ind pÃ¥ de generelle 
+forholdsregler, du som systemadministrator kan tage, samt en rÃ¦kke vÃ¦rktÃ¸jer, 
+som kan hjÃ¦lpe dig. 
 </para>
 
 <para>
-En cracker kan finde på at installere skadelige programmer på din
+En cracker kan finde pÃ¥ at installere skadelige programmer pÃ¥ din
 computer. Her en stribe fra <ulink url="http://www.userfriendly.org/">User Friendly</ulink>
 </para>
 
@@ -64,23 +64,23 @@ computer. Her en stribe fra <ulink url="http://www.userfriendly.org/">User Frien
 
 
 <para>
-Pas på med tillid til logfilerne. Husk, at du ikke kan stole på
-din maskine, hvis der har været indbrud. Hvis dine logfiler ikke
-afslører et indbrud, kan der godt have været et, som er blevet
-skjult. Hvis logfilen viser, at der har været indbrud, så kan du
-som regel godt stole på den.
+Pas pÃ¥ med tillid til logfilerne. Husk, at du ikke kan stole pÃ¥
+din maskine, hvis der har vÃ¦ret indbrud. Hvis dine logfiler ikke
+afslÃ¸rer et indbrud, kan der godt have vÃ¦ret et, som er blevet
+skjult. Hvis logfilen viser, at der har vÃ¦ret indbrud, sÃ¥ kan du
+som regel godt stole pÃ¥ den.
 </para>
 
 <para>
-Det er en god idé at bruge de retningslinier for oprydning, som
-CERT/CC har angivet på hjemmesiden 
+Det er en god idÃ© at bruge de retningslinier for oprydning, som
+CERT/CC har angivet pÃ¥ hjemmesiden 
 <ulink url="http://www.cert.org/nav/recovering.html">
 http://www.cert.org/nav/recovering.html </ulink>
 </para>
 
 <para>
-En Linux-maskine gemmer løbende en masse information om, hvad der sker 
-på maskinen. Informationen gemmes i log-filer, som kan bl.a. bruges til 
+En Linux-maskine gemmer lÃ¸bende en masse information om, hvad der sker 
+pÃ¥ maskinen. Informationen gemmes i log-filer, som kan bl.a. bruges til 
 at spore unormal anvendelse.
 </para>
 
@@ -91,14 +91,14 @@ at spore unormal anvendelse.
 
 <para>
 Den vigtigste log-fil er <filename>/var/log/messages</filename>, hvor mange af de
-vigtige systeminformationer gemmes, såsom
+vigtige systeminformationer gemmes, sÃ¥som
 
 <itemizedlist mark="bullet">
- <listitem><para>hvem der loggede ind på maskinen hvornår</para></listitem>
+ <listitem><para>hvem der loggede ind pÃ¥ maskinen hvornÃ¥r</para></listitem>
  <listitem><para>hvem der skiftede identitet med su</para></listitem> 
- <listitem><para>hvornår maskinen blev genstartet</para></listitem>
+ <listitem><para>hvornÃ¥r maskinen blev genstartet</para></listitem>
  <listitem><para>internetopkoblinger med ppp</para></listitem>
- <listitem><para>start og stop af tjenester, såsom NFS</para></listitem>
+ <listitem><para>start og stop af tjenester, sÃ¥som NFS</para></listitem>
  <listitem><para>fejl i kernemoduler</para></listitem>
 </itemizedlist>
 
@@ -106,12 +106,12 @@ og meget andet.
 </para>
 
 <para>
-Lad os se på nogle eksempler som alle er brudstykker fra
-<filename>/var/log/messages</filename>. Vi ser, at det kræver lidt
-øvelse at overskue alt i messages-filen, men modsat er der mange
-nyttige informationer om systemets drift. Lad os først se på <xref
+Lad os se pÃ¥ nogle eksempler som alle er brudstykker fra
+<filename>/var/log/messages</filename>. Vi ser, at det krÃ¦ver lidt
+Ã¸velse at overskue alt i messages-filen, men modsat er der mange
+nyttige informationer om systemets drift. Lad os fÃ¸rst se pÃ¥ <xref
 linkend="var-log-messages-systemstart"/> nedenfor, som viser de linjer,
-der kommer i messages-filen, når systemet startes.
+der kommer i messages-filen, nÃ¥r systemet startes.
 </para>
 
 <example id="var-log-messages-systemstart">
@@ -149,18 +149,18 @@ Jun 30 20:17:47 hven kernel: Checking 'hlt' instruction... OK.
 
 <para>
 Ud fra den ottende linje kan vi se, at harddisk partitionen
-<filename>/dev/hdb1</filename> ikke har fornuftige læse/skriverettigheder. 
-Vi kan også se, et ISA lydkort ALS100 bliver
+<filename>/dev/hdb1</filename> ikke har fornuftige lÃ¦se/skriverettigheder. 
+Vi kan ogsÃ¥ se, et ISA lydkort ALS100 bliver
 detekteret af isapnp-pakken, men at det ikke er konfigureret
 rigtigt. Derefter en del information om selve maskin-typen,
-CPU-hastighed (det er fra en Pentium 120 MHz PC). Du bør lige 
+CPU-hastighed (det er fra en Pentium 120 MHz PC). Du bÃ¸r lige 
 tjekke fra tid til anden, at der ikke
-logges fejl, såsom problemet med forkerte læse/skrive rettigheder
-eller hardwareproblemer. I øvrigt kan den opmærksomme læser se, at nogle
+logges fejl, sÃ¥som problemet med forkerte lÃ¦se/skrive rettigheder
+eller hardwareproblemer. I Ã¸vrigt kan den opmÃ¦rksomme lÃ¦ser se, at nogle
 tidspunkter er kl. 22 og andre 20. Dette skyldes, at nogle dele af
-systemet kører med lokaltid og andre med GMT. 
-Vi kan også her nævne, at du med kommandoen "dmesg" kan se de
-fleste af de systemmeddelelser, som blev vist på skærmen under
+systemet kÃ¸rer med lokaltid og andre med GMT. 
+Vi kan ogsÃ¥ her nÃ¦vne, at du med kommandoen "dmesg" kan se de
+fleste af de systemmeddelelser, som blev vist pÃ¥ skÃ¦rmen under
 systemopstart. Tilsvarende information findes i <filename>/var/log/dmesg</filename>.
 </para>
 
@@ -169,7 +169,7 @@ systemopstart. Tilsvarende information findes i <filename>/var/log/dmesg</filena
 ftp og SSH logins gemmes i messages-filen.  Den 3. juli kl. 10.06
 kommer brugeren robin ind fra IP nummer 192.168.0.10 via secure shell
 (SSH). To minutter efter logges der ud igen.  Dagen efter er det en
-telnet login, som går igennem PAM-adgangskodetjek (PAM_pwdb).  Kun et
+telnet login, som gÃ¥r igennem PAM-adgangskodetjek (PAM_pwdb).  Kun et
 minut er robin inde. Endelig er brugeren tuck kommet ind via ftp
 (ftpd) den 4. juli og kun blevet fire sekunder.
 </para>
@@ -189,8 +189,8 @@ Jul  4 23:10:32 hven ftpd[24757]: FTP session closed
 </example>
 
 <para>
-Lad os dernæst se på en internetopkobling via modem (ppp). Vi kan i de
-følgende linjer fra messages-filen se, at brugeren har koblet op via
+Lad os dernÃ¦st se pÃ¥ en internetopkobling via modem (ppp). Vi kan i de
+fÃ¸lgende linjer fra messages-filen se, at brugeren har koblet op via
 "/dev/ppp0". De to linjer med identd skyldes secure
 shell. Der er lavet en SSH-login til www.sslug.dk under opkoblingen.
 De sidste linjer viser, at der er sendt 55395 bytes til maskinen
@@ -236,8 +236,8 @@ jul 26 22:15:41 hven PAM_pwdb[4220]: (su) session closed for user root
 
 <para>
 <filename>/var/log/messages</filename> kan blive meget stor. Da alle
-systemhændelser bliver logget i mellem hinanden, kan det således være
-svært umiddelbart at skelne de interessante beskeder i mængden.
+systemhÃ¦ndelser bliver logget i mellem hinanden, kan det sÃ¥ledes vÃ¦re
+svÃ¦rt umiddelbart at skelne de interessante beskeder i mÃ¦ngden.
 </para>
 
 </sect2>
@@ -251,10 +251,10 @@ svært umiddelbart at skelne de interessante beskeder i mængden.
 Du kan opleve at finde filer i <filename>/var/log</filename>, der
 f.eks. hedder <filename>messages.1</filename> og
 <filename>messages.2</filename>, eller
-<filename>messages.1.gz</filename>.  Dette skyldes, at man på
+<filename>messages.1.gz</filename>.  Dette skyldes, at man pÃ¥
 Linux-systemer ofte har et cron-job sat op til at rotere logfilerne,
-herunder messages-filen. Dette sker f.eks. en gang i døgnet eller en
-gang om ugen. I så fald indeholder
+herunder messages-filen. Dette sker f.eks. en gang i dÃ¸gnet eller en
+gang om ugen. I sÃ¥ fald indeholder
 <filename>/var/log/messages</filename> kun det nyeste log-information,
 som er sket siden sidste rotation.
 </para>
@@ -270,14 +270,14 @@ som konfigureres i filen <filename>/etc/logrotate.conf</filename>
 <indexterm><primary>/var/log/secure</primary></indexterm>
 <indexterm><primary>logfiler</primary><secondary>/var/log/secure</secondary></indexterm>
 <para>
-Fordi vigtig information så nemt kan drukne i anden information i
+Fordi vigtig information sÃ¥ nemt kan drukne i anden information i
 messages-filen, findes filen <filename>/var/log/secure</filename>, som
 kun indeholder sikkerhedsrelateret information. <xref
 linkend="var-log-secure"/> viser <filename>/var/log/secure</filename>
 filen. Brugerne robin og john logget ind via terminal tty1 nogle
 gange, og en telnet og en ftp login findes i bunden af
-filen. <filename>/var/log/secure</filename> kan være en meget vigtig
-fil at se igennem jævnligt.
+filen. <filename>/var/log/secure</filename> kan vÃ¦re en meget vigtig
+fil at se igennem jÃ¦vnligt.
 </para>
 
 <example id="var-log-secure">
@@ -309,7 +309,7 @@ En anden vigtig fil er <filename>/var/log/maillog</filename>, hvor
 information om post til og fra maskinen gemmes. Vi kan i 
 <xref linkend="var-log-secure"/> se, at robin sender en besked fra
 hven.galaxy.dk til &lt;sslug-teknik@sslug.dk&gt;.  Postloggen kan nemt
-blive ekstremt stor og svær at overskue.
+blive ekstremt stor og svÃ¦r at overskue.
 </para>
 
 <example id="var-log-maillog">
@@ -334,8 +334,8 @@ stat=Sent (ok 929739581 qp 27375)
 <indexterm><primary>logfiler</primary><secondary>rapportering</secondary></indexterm>
 
 <para>
-I stedet for at læse logfiler direkte kan man installere programmer,
-der kan sortere i logfilerne og fremhæve vigtige ting. Vi vil nu se nærmere på
+I stedet for at lÃ¦se logfiler direkte kan man installere programmer,
+der kan sortere i logfilerne og fremhÃ¦ve vigtige ting. Vi vil nu se nÃ¦rmere pÃ¥
 LogWatch, der kan hentes fra 
 <ulink url="http://www.kaybee.org/~kirk/html/linux.html">http://www.kaybee.org/~kirk/html/linux.html</ulink>.
 </para>
@@ -343,25 +343,25 @@ LogWatch, der kan hentes fra
 <indexterm><primary>logwatch</primary></indexterm>
 
 <para>
-LogWatch sættes normalt op til at køre en gang i døgnet via Linux
+LogWatch sÃ¦ttes normalt op til at kÃ¸re en gang i dÃ¸gnet via Linux
 maskinens crontab system. LogWatch skanner alle log-filerne og
 sender en samlet rapport til systemadministratoren som et e-brev. I
 filen <filename>/etc/log.d/logwatch.conf</filename> er det muligt at konfigurere
-LogWatch. Det kan f.eks. anbefales at sætte parameteren "Detail" fra
-"Low" til "High", så alle login og "su" hændelser rapporteres. 
+LogWatch. Det kan f.eks. anbefales at sÃ¦tte parameteren "Detail" fra
+"Low" til "High", sÃ¥ alle login og "su" hÃ¦ndelser rapporteres. 
 </para>
 
 <para>
-LogWatch kan f.eks. give følgende e-brev tilbage for en dags trafik
-for en maskine, der ikke kører telnet, men som tillader folk at hente filer
+LogWatch kan f.eks. give fÃ¸lgende e-brev tilbage for en dags trafik
+for en maskine, der ikke kÃ¸rer telnet, men som tillader folk at hente filer
 over FTP og at logge ind med
-SSH. Man kan se, at ftp dæmonen har overført 5&nbsp;Mb, og filerne er
-vist sammen med navnet på modtagermaskinen. På maskinen har der i
-PAM_pwdb (dvs. adgangskodehåndteringen) været en række skift af
+SSH. Man kan se, at ftp dÃ¦monen har overfÃ¸rt 5&nbsp;Mb, og filerne er
+vist sammen med navnet pÃ¥ modtagermaskinen. PÃ¥ maskinen har der i
+PAM_pwdb (dvs. adgangskodehÃ¥ndteringen) vÃ¦ret en rÃ¦kke skift af
 bruger-id. Desuden er alle SSH opkoblinger til maskinen vist, 
-derefter cron kørsler og endelig de problemer, som navneserveren har
+derefter cron kÃ¸rsler og endelig de problemer, som navneserveren har
 haft igennem dagen. Let og overskueligt at se igennem. Har man pludselig
-logins fra uventede domæner, er det noget, der skal kigges nærmere på.
+logins fra uventede domÃ¦ner, er det noget, der skal kigges nÃ¦rmere pÃ¥.
 </para>
 
 <example id="logwatch">
@@ -460,21 +460,21 @@ Commands Run:
 Et alternativ til LogWatch er <command>logcheck</command>, som kan hentes fra 
 <ulink url="http://sourceforge.net/projects/sentrytools/">
 http://sourceforge.net/projects/sentrytools/</ulink>
-Ideen er den samme, og virkemåden er umiddelbart også ens. Blot er
-formatteringen af log-rapporter ikke sorteret så elegant som
-med LogWatch. Prøv begge programmer, og vælg selv dit foretrukne.
+Ideen er den samme, og virkemÃ¥den er umiddelbart ogsÃ¥ ens. Blot er
+formatteringen af log-rapporter ikke sorteret sÃ¥ elegant som
+med LogWatch. PrÃ¸v begge programmer, og vÃ¦lg selv dit foretrukne.
 </para>
 
 
 <para>
 Problemet med programmer som LogWatch og <command>logcheck</command> er bl.a., at
-programmet normalt køres en gang per døgn (dette kan ændres). Ergo kan
-et eventuelt indbrud sløres, f.eks. ved at personen blot sletter
-linjer i log-filerne svarende til egen adfærd. Det eneste alternativ
-er nok, at væsentlig log-information skrives til en enhed som kun
-accepterer tilføjelser - ikke redigering af data. Nogle bruger
+programmet normalt kÃ¸res en gang per dÃ¸gn (dette kan Ã¦ndres). Ergo kan
+et eventuelt indbrud slÃ¸res, f.eks. ved at personen blot sletter
+linjer i log-filerne svarende til egen adfÃ¦rd. Det eneste alternativ
+er nok, at vÃ¦sentlig log-information skrives til en enhed som kun
+accepterer tilfÃ¸jelser - ikke redigering af data. Nogle bruger
 f.eks. en almindelig gammel linje-printer, som udskriver
-log-meddelelser straks efter hændelsen.
+log-meddelelser straks efter hÃ¦ndelsen.
 </para>
 </sect2>
 
@@ -483,13 +483,13 @@ log-meddelelser straks efter hændelsen.
 <indexterm><primary>alarmer</primary></indexterm>
 
 <para>
-Du kan lave dine egne hjemmelavede alarmer på dit Linux-system.
-Har du en maskine med meget få logins, kan det være interessant,
+Du kan lave dine egne hjemmelavede alarmer pÃ¥ dit Linux-system.
+Har du en maskine med meget fÃ¥ logins, kan det vÃ¦re interessant,
 at der afsendes et e-brev til en fast ekstern modtager, hver gang der
-laves login på din maskine. Brevet kan f.eks. sendes til en
-mobiltelefon eller pager, for at du med det samme kan få at vide, når der er
-gæster. Der er mange muligheder for, hvordan dette kan gøres. Den enkle
-måde er at tilføje følgende til filerne <filename>/etc/csh.login</filename> og 
+laves login pÃ¥ din maskine. Brevet kan f.eks. sendes til en
+mobiltelefon eller pager, for at du med det samme kan fÃ¥ at vide, nÃ¥r der er
+gÃ¦ster. Der er mange muligheder for, hvordan dette kan gÃ¸res. Den enkle
+mÃ¥de er at tilfÃ¸je fÃ¸lgende til filerne <filename>/etc/csh.login</filename> og 
 <filename>/etc/profile</filename>.
 </para>
 
@@ -498,101 +498,101 @@ mail < /dev/null > /dev/null -s "login at `date`" robin@hven.herne.dk
 </programlisting>
 
 <para>
-Derved får "robin@hven.herne.dk" en besked med tidspunkt for login,
+Derved fÃ¥r "robin@hven.herne.dk" en besked med tidspunkt for login,
 uden at den, der logger ind, kan se det. Personen kan dog bagefter selv
-læse <filename>/etc/csh.login</filename> og <filename>/etc/profile</filename> og se, at der er 
-lagt en fælde, og evt. vælge at forsvinde. En interessant beskrivelse af 
-indbrud, alarmer og fælder kan læses på <ulink url="http://www.ja.net/CERT/Cheswick/berferd.txt">http://www.ja.net/CERT/Cheswick/berferd.txt</ulink>
+lÃ¦se <filename>/etc/csh.login</filename> og <filename>/etc/profile</filename> og se, at der er 
+lagt en fÃ¦lde, og evt. vÃ¦lge at forsvinde. En interessant beskrivelse af 
+indbrud, alarmer og fÃ¦lder kan lÃ¦ses pÃ¥ <ulink url="http://www.ja.net/CERT/Cheswick/berferd.txt">http://www.ja.net/CERT/Cheswick/berferd.txt</ulink>
 </para>
 
 <para>
-En anden mulighed er at bruge en almindelig brugerkonto på systemet til at 
-have et crontab job, der køres hvert minut, og ser hvem der er logget 
+En anden mulighed er at bruge en almindelig brugerkonto pÃ¥ systemet til at 
+have et crontab job, der kÃ¸res hvert minut, og ser hvem der er logget 
 ind (via "who") og sender resultatet til din eksterne maskine, 
-hvis der er brugere logget ind. Man vælger selv hvordan den type og
-niveau af alarm der sættes op, alt efter hvor paranoid man er :-)
+hvis der er brugere logget ind. Man vÃ¦lger selv hvordan den type og
+niveau af alarm der sÃ¦ttes op, alt efter hvor paranoid man er :-)
 </para>
 
 <para>
-Man skal dog passe på, at de alarmsystemer, der sættes op, ikke åbner
-et nyt sikkerhedshul. Som eksempel kan det være, at du har ændret
-kildeteksten til <command>/bin/login</command>, så der logges mere
-information til f.eks. <filename>/var/log/messages</filename>, men du kom måske
-ved et uheld til at få en buffer overflow fejl, som efterfølgende
-udnyttes af en ihærdig cracker. Det er heldigvis sådan, at den person,
-som bryder ind på din maskine, ikke i forvejen ved, hvor du lægger
-fælder, og forhåbentlig ikke har en chance for at vide, hvordan de
-virker, før du har opdaget indbruddet.
+Man skal dog passe pÃ¥, at de alarmsystemer, der sÃ¦ttes op, ikke Ã¥bner
+et nyt sikkerhedshul. Som eksempel kan det vÃ¦re, at du har Ã¦ndret
+kildeteksten til <command>/bin/login</command>, sÃ¥ der logges mere
+information til f.eks. <filename>/var/log/messages</filename>, men du kom mÃ¥ske
+ved et uheld til at fÃ¥ en buffer overflow fejl, som efterfÃ¸lgende
+udnyttes af en ihÃ¦rdig cracker. Det er heldigvis sÃ¥dan, at den person,
+som bryder ind pÃ¥ din maskine, ikke i forvejen ved, hvor du lÃ¦gger
+fÃ¦lder, og forhÃ¥bentlig ikke har en chance for at vide, hvordan de
+virker, fÃ¸r du har opdaget indbruddet.
 </para>
 
 <para>
 <indexterm><primary>backup</primary></indexterm>
-Husk også de følgende tre ting: Backup, backup og backup. Lav jævnligt
-backup af din maskine. Har du haft besøg af en ondsindet cracker, kan
-du have mistet alt. Sørg også for at have ældre backups. Hvis dit system 
-har været inficeret igennem et stykke tid, er dine nyeste backups også
+Husk ogsÃ¥ de fÃ¸lgende tre ting: Backup, backup og backup. Lav jÃ¦vnligt
+backup af din maskine. Har du haft besÃ¸g af en ondsindet cracker, kan
+du have mistet alt. SÃ¸rg ogsÃ¥ for at have Ã¦ldre backups. Hvis dit system 
+har vÃ¦ret inficeret igennem et stykke tid, er dine nyeste backups ogsÃ¥
 inficerede. En sund strategi er, at have en system backup, som du laver
-før systemet sættes i drift - alle ændringer skrives ned, så de kan
-geninstalleres fra din sikre backup.  Derudover skal du lave jævnlige
+fÃ¸r systemet sÃ¦ttes i drift - alle Ã¦ndringer skrives ned, sÃ¥ de kan
+geninstalleres fra din sikre backup.  Derudover skal du lave jÃ¦vnlige
 separate backups af dine brugeres data.
 </para>
 </sect2>
 
 <sect2 id="aendret-filsystem">
-<title>Ændringer af filsystemet</title>
+<title>Ã†ndringer af filsystemet</title>
 <indexterm>
  <primary>filsystem</primary>
- <secondary>Følge ændringer</secondary>
+ <secondary>FÃ¸lge Ã¦ndringer</secondary>
 </indexterm>
 
 <para>
-Du bør holde øje med hvilke filer på dit system, der ændrer sig.
-Forestil dig, at en person er kommet ind på din maskine og har
+Du bÃ¸r holde Ã¸je med hvilke filer pÃ¥ dit system, der Ã¦ndrer sig.
+Forestil dig, at en person er kommet ind pÃ¥ din maskine og har
 haft held til at erstatte <command>passwd</command> kommandoen med en ny
-binær fil, som dels laver det den skal men samtidig sender
+binÃ¦r fil, som dels laver det den skal men samtidig sender
 login-navn og password til supercracker@passwordcracker.net. 
-Det er ikke urealistisk svært at lave sådan et program, idet alle har 
-adgang til kildeteksten til Linux-systemet, og dermed kan lave ændringerne 
-uden at behøve at skrive hele programmet forfra. Er crackeren først inde 
-på dit system, og har han lavet programændringerne på forhånd, skal han blot 
+Det er ikke urealistisk svÃ¦rt at lave sÃ¥dan et program, idet alle har 
+adgang til kildeteksten til Linux-systemet, og dermed kan lave Ã¦ndringerne 
+uden at behÃ¸ve at skrive hele programmet forfra. Er crackeren fÃ¸rst inde 
+pÃ¥ dit system, og har han lavet programÃ¦ndringerne pÃ¥ forhÃ¥nd, skal han blot 
 erstatte de rigtige programmer med de nye. 
-Det er normalt de binære filer i <filename>/usr/bin</filename>, 
+Det er normalt de binÃ¦re filer i <filename>/usr/bin</filename>, 
 <filename>/bin</filename>, <filename>/usr/sbin/</filename>, <filename>/usr/X11R6/bin</filename> og 
-<filename>/sbin</filename>, man skal passe på, samt biblioteker, som normalt findes 
+<filename>/sbin</filename>, man skal passe pÃ¥, samt biblioteker, som normalt findes 
 i <filename>/lib</filename>, <filename>/usr/X11R6/lib</filename> og <filename>/usr/lib</filename>.
 </para>
 
 <para>
-Generelt leder man efter ændringer af filsystemet ved at tjekke
+Generelt leder man efter Ã¦ndringer af filsystemet ved at tjekke
 fire ting:
 </para>
 
 <itemizedlist mark="bullet">
-<listitem><para>Om ejerskab/gruppeejerskab er ændret</para></listitem>
-<listitem><para>Om filens rettigheder (permissions) er ændret</para></listitem>
-<listitem><para>Om filstørrelse er ændret</para></listitem>
-<listitem><para>Om indholdet er ændret</para></listitem> 
+<listitem><para>Om ejerskab/gruppeejerskab er Ã¦ndret</para></listitem>
+<listitem><para>Om filens rettigheder (permissions) er Ã¦ndret</para></listitem>
+<listitem><para>Om filstÃ¸rrelse er Ã¦ndret</para></listitem>
+<listitem><para>Om indholdet er Ã¦ndret</para></listitem> 
 </itemizedlist>
 
 <para>
-Hvis vi kan stole på output af kommandoen "ls", så er de tre første nemme at
-undersøge. Man kan f.eks. sammenligne output fra "ls -l FILNAVN" før og
-efter ændringer.
+Hvis vi kan stole pÃ¥ output af kommandoen "ls", sÃ¥ er de tre fÃ¸rste nemme at
+undersÃ¸ge. Man kan f.eks. sammenligne output fra "ls -l FILNAVN" fÃ¸r og
+efter Ã¦ndringer.
 </para>
 
 <para>
-Det er dog straks sværere at tjekke, om indholdet af filen er
-intakt. For et filsystem med en stor mængde data er det ikke muligt at
+Det er dog straks svÃ¦rere at tjekke, om indholdet af filen er
+intakt. For et filsystem med en stor mÃ¦ngde data er det ikke muligt at
 have en kopi af hele filsystemet og tjekke byte for byte, om de er ens. Det
 tager for meget diskplads og alt for lang tid. Derfor er en del
-matematisk forskning gået på at udtænke metoder til at generere en
+matematisk forskning gÃ¥et pÃ¥ at udtÃ¦nke metoder til at generere en
 funktion, som tager f.eks. indholdet af en fil og ud fra dette
-genererer et langt tal, som i princippet skal være unikt. Denne
-hash-funktion må således kun give det samme tal for to filer, hvis de er 
-helt ens. Dermed kan man kontrollere, om en fil er ændret, blot ved at
+genererer et langt tal, som i princippet skal vÃ¦re unikt. Denne
+hash-funktion mÃ¥ sÃ¥ledes kun give det samme tal for to filer, hvis de er 
+helt ens. Dermed kan man kontrollere, om en fil er Ã¦ndret, blot ved at
 generere et tal for filen med hash-funktionen og sammenligne med
 det tal, filen gav sidste gang. Giver hash-funktionen 
-samme output, antager vi, at filen er urørt.
+samme output, antager vi, at filen er urÃ¸rt.
 </para>
 
 <para>
@@ -601,15 +601,15 @@ samme output, antager vi, at filen er urørt.
 <indexterm><primary>MD5</primary></indexterm>
 <indexterm><primary>md5sum</primary></indexterm>
 
-En simpel hashfunktion kunne være summen af alle de tal, som filen
-består af. Den er blot alt for nem at forfalske. I litteraturen vil
-man ofte støde på CRC-tjek, som er relativt nemme funktioner at
+En simpel hashfunktion kunne vÃ¦re summen af alle de tal, som filen
+bestÃ¥r af. Den er blot alt for nem at forfalske. I litteraturen vil
+man ofte stÃ¸de pÃ¥ CRC-tjek, som er relativt nemme funktioner at
 beregne. Mange komprimeringsprogrammer anvender CRC til at
 kontrollere, om det, der pakkes ud, er i orden. Til at opdage
-ændringer af filer med tanke på sikkerhed, er CRC-tjek ikke gode
+Ã¦ndringer af filer med tanke pÃ¥ sikkerhed, er CRC-tjek ikke gode
 nok. Et hyppigt anvendt alternativ er MD5, som genererer en 128 bit
-kode ud fra en fil. På de fleste Linux-systemer findes programmet
-<command>md5sum</command>, som køres med et filnavn som argument.
+kode ud fra en fil. PÃ¥ de fleste Linux-systemer findes programmet
+<command>md5sum</command>, som kÃ¸res med et filnavn som argument.
 </para>
 
 <screen>
@@ -618,13 +618,13 @@ dc2ac9d1c1658d5b4381ca2c280425ee  /bin/ls
 </screen>
 
 <para>
-Et karakteristisk træk ved MD5 algoritmen er at selv små
-ændringer i input giver radikale forskelle i checksummen. Det er
-en almindelig antagelse, at det er umuligt at ændre filen
-<command> /bin/ls </command> uden at det kan afsløres ved hjælp
+Et karakteristisk trÃ¦k ved MD5 algoritmen er at selv smÃ¥
+Ã¦ndringer i input giver radikale forskelle i checksummen. Det er
+en almindelig antagelse, at det er umuligt at Ã¦ndre filen
+<command> /bin/ls </command> uden at det kan afslÃ¸res ved hjÃ¦lp
 af MD5-sum af den oprindelige version.  Lad os lave et eksempel
-med en lille fil, der får indholdet ændret, men hvor man kan ikke
-se udefra, at den er ændret.
+med en lille fil, der fÃ¥r indholdet Ã¦ndret, men hvor man kan ikke
+se udefra, at den er Ã¦ndret.
 </para>
 
 <screen>
@@ -644,24 +644,24 @@ e829f144f6e43d55daa442baf1462544  testfil
 </screen>
 
 <para>
-Vi ser, at filen i de to tilfælde indeholder de samme bogstaver, har
-samme længde (14 tegn), har samme datostempel (efter lidt snyd
+Vi ser, at filen i de to tilfÃ¦lde indeholder de samme bogstaver, har
+samme lÃ¦ngde (14 tegn), har samme datostempel (efter lidt snyd
 med touch-kommandoen) - men MD5-tjeksummen er helt forskellig. Derfor
-ved vi, at indholdet ikke det samme. Prøv selv at eksperimentere med dette.
+ved vi, at indholdet ikke det samme. PrÃ¸v selv at eksperimentere med dette.
 </para>
 
 <para>
-Der er andre hash-funktioner end MD5, såsom MD4 og Snefru. 
-Det er ikke så vigtigt, hvilken algoritme man anvender (selv om
+Der er andre hash-funktioner end MD5, sÃ¥som MD4 og Snefru. 
+Det er ikke sÃ¥ vigtigt, hvilken algoritme man anvender (selv om
 en inkarneret kryptoanalytiker vil natuligvis protestere her!).
-Det vigtige er at kontrollere. Men selvfølgelig er MD5 den
+Det vigtige er at kontrollere. Men selvfÃ¸lgelig er MD5 den
 bedste, og nemmeste, da den jo kan kontrollere ud fra en
 tidligere genereret filliste.
 </para>
 
 <para>
-Vi vil nu omtale tre forskellige programmer til at hjælpe dig med at
-lave tjek af ændringer i filsystemet; RPM, Tripwire og Aide. 
+Vi vil nu omtale tre forskellige programmer til at hjÃ¦lpe dig med at
+lave tjek af Ã¦ndringer i filsystemet; RPM, Tripwire og Aide. 
 
 </para>
 </sect2>
@@ -673,36 +673,36 @@ lave tjek af ændringer i filsystemet; RPM, Tripwire og Aide.
 
 <para>
 Med Linux-distributionerne SuSE, Caldera Open Linux, Mandrake og
-Red Hat følger programmet "rpm", som er et pakkestyringsprogram. 
-Rpm holder styr på, hvad der er
-installeret. Samtidig er der mulighed for at holde styr på 
-ændringer af filerne. Du kan tjekke alle RPM-styrede filer med
-kommandoen "rpm -Va".  Denne kommando vil tjekke for følgende
-ændringer siden installation:
+Red Hat fÃ¸lger programmet "rpm", som er et pakkestyringsprogram. 
+Rpm holder styr pÃ¥, hvad der er
+installeret. Samtidig er der mulighed for at holde styr pÃ¥ 
+Ã¦ndringer af filerne. Du kan tjekke alle RPM-styrede filer med
+kommandoen "rpm -Va".  Denne kommando vil tjekke for fÃ¸lgende
+Ã¦ndringer siden installation:
 </para>
 
 <itemizedlist mark="bullet">
- <listitem><para>S - Ændringer af filstørrelse</para></listitem>
- <listitem><para>M - Mode - Ændringer i permissions og filtype</para></listitem>
+ <listitem><para>S - Ã†ndringer af filstÃ¸rrelse</para></listitem>
+ <listitem><para>M - Mode - Ã†ndringer i permissions og filtype</para></listitem>
  <listitem><para>5 - Tjek af MD5-sum</para></listitem>
- <listitem><para>? - Normalt problemer med at læse filen</para></listitem>
+ <listitem><para>? - Normalt problemer med at lÃ¦se filen</para></listitem>
  <listitem><para>L - Symlink</para></listitem>
- <listitem><para>D - Device ændringer</para></listitem>
- <listitem><para>U - User - Ændringer i ejerskab</para></listitem>
- <listitem><para>G - Group - Ændringer i gruppeejerskab</para></listitem>
+ <listitem><para>D - Device Ã¦ndringer</para></listitem>
+ <listitem><para>U - User - Ã†ndringer i ejerskab</para></listitem>
+ <listitem><para>G - Group - Ã†ndringer i gruppeejerskab</para></listitem>
  <listitem><para>T - Mtime - Modifikationstidspunkt</para></listitem>
  <listitem><para>missing - Hvis en fil er forsvundet</para></listitem>
- <listitem><para>c - Opsætningsfil.</para></listitem>
+ <listitem><para>c - OpsÃ¦tningsfil.</para></listitem>
  <listitem><para>. - Testen gik fint.</para></listitem>
 </itemizedlist>
 
 <para>
-Bogstaverne til venstre er dem, der vises på skærmen, når man kører
-<command>rpm -Va</command>. Alle de filer, der er ændret i siden
-installationen, bliver vist. Hver af de ændrede filer vises efter
+Bogstaverne til venstre er dem, der vises pÃ¥ skÃ¦rmen, nÃ¥r man kÃ¸rer
+<command>rpm -Va</command>. Alle de filer, der er Ã¦ndret i siden
+installationen, bliver vist. Hver af de Ã¦ndrede filer vises efter
 formatet "SM5?LDUGT c filnavn", hvor hver af bogstaverne er forklaret
 ovenfor. Hvis den enkelte test gik godt, vises et punktum, ellers
-vises det bogstav for testen, der gik galt. Et typisk output kan være
+vises det bogstav for testen, der gik galt. Et typisk output kan vÃ¦re
 (i forkortet form)
 </para>
 
@@ -732,18 +732,18 @@ S.5....T   /var/log/sendmail.st
 
 <para>
 Nu er det op til dig, som systemadministrator, at vurdere hvilke
-ændringer, der er i orden, og hvilke, der kan være farlige. Der vil
-altid være ændringer, siden pakkerne er installeret, men nogle af
-ændringerne må gerne være der.  Du ved forhåbentlig nogenlunde, hvad
-du selv har ændret. Ændringer, du ikke selv kan huske at have
+Ã¦ndringer, der er i orden, og hvilke, der kan vÃ¦re farlige. Der vil
+altid vÃ¦re Ã¦ndringer, siden pakkerne er installeret, men nogle af
+Ã¦ndringerne mÃ¥ gerne vÃ¦re der.  Du ved forhÃ¥bentlig nogenlunde, hvad
+du selv har Ã¦ndret. Ã†ndringer, du ikke selv kan huske at have
 foretaget, kan vurderes ud fra, hvor filerne ligger og hvilken type
 filer, det drejer sig om. F.eks. virker filerne i
-<filename>/usr/share/afterstep/</filename> ikke særlig farlige. Det er
-nok bare noget opsætning af Window manageren Afterstep. Tegnet "?"
-tyder på at problemet i skyldes, at brugeren, der har udført
-kommandoen, ikke har rettigheder til at læse
+<filename>/usr/share/afterstep/</filename> ikke sÃ¦rlig farlige. Det er
+nok bare noget opsÃ¦tning af Window manageren Afterstep. Tegnet "?"
+tyder pÃ¥ at problemet i skyldes, at brugeren, der har udfÃ¸rt
+kommandoen, ikke har rettigheder til at lÃ¦se
 <filename>/etc/securetty</filename> og de fire hlp-filer. Vi kan se,
-at dette faktisk er tilfældet
+at dette faktisk er tilfÃ¦ldet
 </para>
 
 <screen>
@@ -752,21 +752,21 @@ at dette faktisk er tilfældet
 </screen>
 
 <para>
-Om filerne faktisk er ændrede, kan vi således først se, hvis vi kører
-"rpm -Va" som root. Vi kan også se, at der åbenbart mangler to
+Om filerne faktisk er Ã¦ndrede, kan vi sÃ¥ledes fÃ¸rst se, hvis vi kÃ¸rer
+"rpm -Va" som root. Vi kan ogsÃ¥ se, at der Ã¥benbart mangler to
 xpm-filer (billeder) i "/usr/share/afterstep/ascp/icons". 
 </para>
 
 <para>
-Næste punkt er at kataloget <filename>/usr/local</filename> efter installation
-faktisk blev flyttet til en anden partition, så det er fint, at der er
+NÃ¦ste punkt er at kataloget <filename>/usr/local</filename> efter installation
+faktisk blev flyttet til en anden partition, sÃ¥ det er fint, at der er
 meldt fejl der. Filen <filename>/etc/localtime</filename> er 
 et symbolsk link og en
-opsætningsfil ("L" og det lille "c"). Da Linux blev installeret,
-skulle man vælge hvilken tidszone man var i - og så ændrede filen sig 
+opsÃ¦tningsfil ("L" og det lille "c"). Da Linux blev installeret,
+skulle man vÃ¦lge hvilken tidszone man var i - og sÃ¥ Ã¦ndrede filen sig 
 naturligvis.  Kun ved at se hvor linket peger hen, kan man se, at det nok 
-_nu_ er i orden. Bemærk, at linket senere kan ændres til at pege på 
-noget andet, måske noget "farligt", men vi vil stadig kun se samme 
+_nu_ er i orden. BemÃ¦rk, at linket senere kan Ã¦ndres til at pege pÃ¥ 
+noget andet, mÃ¥ske noget "farligt", men vi vil stadig kun se samme 
 fejl-meddelelse.
 </para>
 
@@ -775,24 +775,24 @@ lrwxrwxrwx  1 root  root  39 May 15 16:27 /etc/localtime -> ../usr/share/zoneinf
 </programlisting>
 
 <para>
-Det ses også, at en stribe sendmail-filer er blevet ændret. Det passer 
-med, hvad jeg som systemadministrator på maskinen ved, at der er lavet - 
-men bemærk dog, at der kan være senere ændringer af de samme filer. 
-På denne måde kan vi fortsætte. Viden om systemet er med andre
-ord nødvendig, men rpm er er godt sted at starte. 
+Det ses ogsÃ¥, at en stribe sendmail-filer er blevet Ã¦ndret. Det passer 
+med, hvad jeg som systemadministrator pÃ¥ maskinen ved, at der er lavet - 
+men bemÃ¦rk dog, at der kan vÃ¦re senere Ã¦ndringer af de samme filer. 
+PÃ¥ denne mÃ¥de kan vi fortsÃ¦tte. Viden om systemet er med andre
+ord nÃ¸dvendig, men rpm er er godt sted at starte. 
 </para>
 
 <para>
-Ovenstående gennemgang med "rpm -Va" afslørede et grimt problem. Efter
+OvenstÃ¥ende gennemgang med "rpm -Va" afslÃ¸rede et grimt problem. Efter
 systeminstallation og systemtilpasning er der allerede sket en del
-ændringer.  Man kan måske ikke overskue, hvad der er
-farlige ændringer, og hvilke der er banale. Et andet problem er, at "rpm
--Va" ikke kan kontrollere programmer på systemet, der er installeret 
-udenom rpm, såsom WordPerfect og StarOffice. Hvad værre er, så kan man
-teoretisk tænke sig, at en cracker afinstallerede en pakke, og
+Ã¦ndringer.  Man kan mÃ¥ske ikke overskue, hvad der er
+farlige Ã¦ndringer, og hvilke der er banale. Et andet problem er, at "rpm
+-Va" ikke kan kontrollere programmer pÃ¥ systemet, der er installeret 
+udenom rpm, sÃ¥som WordPerfect og StarOffice. Hvad vÃ¦rre er, sÃ¥ kan man
+teoretisk tÃ¦nke sig, at en cracker afinstallerede en pakke, og
 installerede en farlig rpm-pakke i stedet for, hvor alle tjek med
 rpm gik glat. Eller installerede en falsk udgave af selve rpm programmet! 
-Derfor er det ønskeligt at få et godt supplement til rpm.
+Derfor er det Ã¸nskeligt at fÃ¥ et godt supplement til rpm.
 </para>
 
 <para>
@@ -807,7 +807,7 @@ og Debian.
 
 <para>
 Tripwire fra 1992, skabt af Eugene Spafford og Gene Kim, og
-kildeteksten stod fra begyndelsen til rådighed for brugerne.
+kildeteksten stod fra begyndelsen til rÃ¥dighed for brugerne.
 Siden dengang har en kvart million brugere downloadet 
 <emphasis>Tripwire Academic Source.</emphasis>
 Siden da er der kommet en kommerciel version med lidt flere
@@ -816,72 +816,72 @@ url="http://www.tripwire.com">http://www.tripwire.com</ulink>).
 Til Linux findes der stadig en Open Source udgave, som er udgivet
 under GNU General Public Licence. Open Source udgaven kan hentes fra
 <ulink url="http://www.tripwire.org">http://www.tripwire.org</ulink>.
-Der er flere svar på den slags spørgsmål på <ulink
+Der er flere svar pÃ¥ den slags spÃ¸rgsmÃ¥l pÃ¥ <ulink
 url="http://www.tripwire.org/qanda/index.php"> dette
 site.</ulink>
 </para>
 
 <para>
-Tripwire er et program, der kan tjekke filsystemet for ændringer. Der
-genereres en database for alle filer i filtræet. For hver fil gemmes
-informationer om sidste ændringsdato, størrelse, indhold, ejer osv. Når
-først databasen er genereret, er det nemt at tjekke og opdatere for
-ændringer.
+Tripwire er et program, der kan tjekke filsystemet for Ã¦ndringer. Der
+genereres en database for alle filer i filtrÃ¦et. For hver fil gemmes
+informationer om sidste Ã¦ndringsdato, stÃ¸rrelse, indhold, ejer osv. NÃ¥r
+fÃ¸rst databasen er genereret, er det nemt at tjekke og opdatere for
+Ã¦ndringer.
 </para>
 
 <para>
-Den database, der genereres med Tripwire sker ud fra en opsætningsfil
+Den database, der genereres med Tripwire sker ud fra en opsÃ¦tningsfil
 <filename>/etc/tripwire/twpol.txt</filename>, som beskriver hvilke dele
-af filsystemet, som er med i overvågningen og den opførsel de enkelte filer
-må tillades. Til eksempel må filen <filename>/etc/shadow</filename> godt 
-ændre sig - da dette sker hver gang en bruger ændrer password. Modsat 
-så ville det være højst underligt hvis filen 
-<filename>/bin/ps</filename> har ændret sig over en nat. Det program bruges
-til at vise hvilke processer, der kører på systemet.
-Ergo skal opsætningen af overvågningen være skræddersyet til det enkelte 
-system. I praksis betyder det at den Red Hat-opsætningsfil, der kommer med 
-Tripwire skal sandsynligvis modificeres, hvis man vil køre med Debian eller 
+af filsystemet, som er med i overvÃ¥gningen og den opfÃ¸rsel de enkelte filer
+mÃ¥ tillades. Til eksempel mÃ¥ filen <filename>/etc/shadow</filename> godt 
+Ã¦ndre sig - da dette sker hver gang en bruger Ã¦ndrer password. Modsat 
+sÃ¥ ville det vÃ¦re hÃ¸jst underligt hvis filen 
+<filename>/bin/ps</filename> har Ã¦ndret sig over en nat. Det program bruges
+til at vise hvilke processer, der kÃ¸rer pÃ¥ systemet.
+Ergo skal opsÃ¦tningen af overvÃ¥gningen vÃ¦re skrÃ¦ddersyet til det enkelte 
+system. I praksis betyder det at den Red Hat-opsÃ¦tningsfil, der kommer med 
+Tripwire skal sandsynligvis modificeres, hvis man vil kÃ¸re med Debian eller 
 lign.
 </para>
 
 <para>
-Tankegangen med Tripwire er at man sætter programmet op 
-<emphasis>før</emphasis> maskinen kommer på netværket og før brugere
-kommer på - dvs. før maskinen er i risiko-zonen. På dette tidlige
+Tankegangen med Tripwire er at man sÃ¦tter programmet op 
+<emphasis>fÃ¸r</emphasis> maskinen kommer pÃ¥ netvÃ¦rket og fÃ¸r brugere
+kommer pÃ¥ - dvs. fÃ¸r maskinen er i risiko-zonen. PÃ¥ dette tidlige
 tidspunkt genereres en "snapshot" af hvordan det oprindelige system
-ser ud. For hver af de vigtige filer på systemet gemmes information 
-om fil-størrelse, ændringsdatoer og tjeksummer på filerne, så man
-kan afgøre om filerne er ændret. 
+ser ud. For hver af de vigtige filer pÃ¥ systemet gemmes information 
+om fil-stÃ¸rrelse, Ã¦ndringsdatoer og tjeksummer pÃ¥ filerne, sÃ¥ man
+kan afgÃ¸re om filerne er Ã¦ndret. 
 </para>
 
 <para>
-Når maskinen så kommer i drift skal man køre Tripwire hver dag, time
+NÃ¥r maskinen sÃ¥ kommer i drift skal man kÃ¸re Tripwire hver dag, time
 eller hvad der nu passer systemadministratoren bedst. Hver eneste gang
 genereres en rapport typisk per e-post til systemadministratoren over
 systemets status i forhold til systemets oprindelige "snapshot" - denne
-rapport skal der være tid til at læse roligt igennem!
+rapport skal der vÃ¦re tid til at lÃ¦se roligt igennem!
 </para>
 
 <para>
-Hvis rapporten viser at der er ændringer, så må systemadministratoren 
-tage stilling til om det er i orden eller om der er tegn på indbrud -
-hvis det sidste er tilfældet, bør maskinen tages af netværket med det samme. 
+Hvis rapporten viser at der er Ã¦ndringer, sÃ¥ mÃ¥ systemadministratoren 
+tage stilling til om det er i orden eller om der er tegn pÃ¥ indbrud -
+hvis det sidste er tilfÃ¦ldet, bÃ¸r maskinen tages af netvÃ¦rket med det samme. 
 </para>
 
 <para>
-Det kan også ske at der er ændringer på systemet, som er i orden. Hvis 
-man f.eks. installerer en ny RPM-pakke (fra en betroet kilde) så vil Tripwire
+Det kan ogsÃ¥ ske at der er Ã¦ndringer pÃ¥ systemet, som er i orden. Hvis 
+man f.eks. installerer en ny RPM-pakke (fra en betroet kilde) sÃ¥ vil Tripwire
 melde at der er nye programmer typisk i <filename>/usr/bin</filename>. 
-I dette tilfælde skal man så opdatere Tripwire-databasen med ens "snapshot".
+I dette tilfÃ¦lde skal man sÃ¥ opdatere Tripwire-databasen med ens "snapshot".
 </para>
 
 <sect2 id="twpol">
-<title>Tripwire installation og opsætning</title>
+<title>Tripwire installation og opsÃ¦tning</title>
 <para>
-Tripwire installeres på Red Hat ved at man henter en 
+Tripwire installeres pÃ¥ Red Hat ved at man henter en 
 <filename>.tar.gz</filename>-fil, der indeholder en RPM-pakke, som kan 
 installeres. Tjek at den fil du henter har den rigtige tjeksum - jfr.
-<ulink url="http://www.tripwire.org/downloads/index.php">http://www.tripwire.org/downloads/index.php</ulink>. Kør <command>md5sum</command> på 
+<ulink url="http://www.tripwire.org/downloads/index.php">http://www.tripwire.org/downloads/index.php</ulink>. KÃ¸r <command>md5sum</command> pÃ¥ 
 <filename>.tar.gz</filename>-filen:
 
 <screen>
@@ -893,37 +893,37 @@ installeres. Tjek at den fil du henter har den rigtige tjeksum - jfr.
 </para>
 
 <para>
-Derefter kommer der tekst på skærmen om hvad der skal gøres følgende:
-Først skal filen <filename>/etc/tripwire/twpol.txt</filename> ses
+Derefter kommer der tekst pÃ¥ skÃ¦rmen om hvad der skal gÃ¸res fÃ¸lgende:
+FÃ¸rst skal filen <filename>/etc/tripwire/twpol.txt</filename> ses
 igennem og rettes til. Det vigtigste at starte med i denne fil er
-følgende sektion (som startes med @@). Her er kommentarerne oversat til
+fÃ¸lgende sektion (som startes med @@). Her er kommentarerne oversat til
 dansk.
 </para>
 
 <programlisting>
 @@section FS
-SEC_CRIT      # Kritiske filer, der ikke må ændre sig
-SEC_SUID      # Binære SUID eller SGID-filer, der ikke må ændre sig
-SEC_BIN       # Binære filer, der ikke må ændre sig
-SEC_CONFIG    # Opsætningfiler, der tilgås ofte og ændres sjældent
-SEC_LOG       # Filer, der vokser i størrelse - ændrer ikke ejerskab
-SEC_INVARIANT # Kataloger, som aldrig ændrer ejerskab eller rettigheder
+SEC_CRIT      # Kritiske filer, der ikke mÃ¥ Ã¦ndre sig
+SEC_SUID      # BinÃ¦re SUID eller SGID-filer, der ikke mÃ¥ Ã¦ndre sig
+SEC_BIN       # BinÃ¦re filer, der ikke mÃ¥ Ã¦ndre sig
+SEC_CONFIG    # OpsÃ¦tningfiler, der tilgÃ¥s ofte og Ã¦ndres sjÃ¦ldent
+SEC_LOG       # Filer, der vokser i stÃ¸rrelse - Ã¦ndrer ikke ejerskab
+SEC_INVARIANT # Kataloger, som aldrig Ã¦ndrer ejerskab eller rettigheder
 </programlisting>
 
 <para>
-I slutningen af afsnittet er der også inddelinger efter 
+I slutningen af afsnittet er der ogsÃ¥ inddelinger efter 
 risiko-niveau. 
 </para>
 
 <programlisting>
 SIG_LOW       # Ikke-kritiske filer med lav sikkerheds-risiko
-SIG_MED       # Ikke-kritiske filer med væsentlig sikkerheds-risiko
-SIG_HI        # Kritiske filer med væsentlig sikkerheds-risiko
+SIG_MED       # Ikke-kritiske filer med vÃ¦sentlig sikkerheds-risiko
+SIG_HI        # Kritiske filer med vÃ¦sentlig sikkerheds-risiko
 </programlisting>
 
 <para>
-Ideen er at man kan betegne filer og kataloger med de ovennævnte risiko-niveau.
-Til eksempel kan vi fortsætte ned i opsætningsfilen til "OS-Utilities":
+Ideen er at man kan betegne filer og kataloger med de ovennÃ¦vnte risiko-niveau.
+Til eksempel kan vi fortsÃ¦tte ned i opsÃ¦tningsfilen til "OS-Utilities":
 </para>
 
 <programlisting>
@@ -948,18 +948,18 @@ Til eksempel kan vi fortsætte ned i opsætningsfilen til "OS-Utilities":
 
 
 <para>
-Afsnittet er forkortet her. Forståelsen er at filer såsom
-<filename>/bin/cat</filename> er meget kritiske og må aldrig
-ændre sig i indhold, ejerskab eller rettigheder. Den lille tekst box
+Afsnittet er forkortet her. ForstÃ¥elsen er at filer sÃ¥som
+<filename>/bin/cat</filename> er meget kritiske og mÃ¥ aldrig
+Ã¦ndre sig i indhold, ejerskab eller rettigheder. Den lille tekst box
 over "rulename" er kun til pynt.
 </para>
 
 <para>
-Opsætningsfilen <filename>/etc/tripwire/twpol.txt</filename> bør
-redigeres svarende til det enkelte system - dette kræver
-systemkendskab. Alternativet er at bruge den originale fil og måske
-opnå en falsk sikkerhed. Så tag lige tiden til at se filen igennem. Bemærk at
-der flere steder står anført linjer med hash-tegn foran, f.eks. 
+OpsÃ¦tningsfilen <filename>/etc/tripwire/twpol.txt</filename> bÃ¸r
+redigeres svarende til det enkelte system - dette krÃ¦ver
+systemkendskab. Alternativet er at bruge den originale fil og mÃ¥ske
+opnÃ¥ en falsk sikkerhed. SÃ¥ tag lige tiden til at se filen igennem. BemÃ¦rk at
+der flere steder stÃ¥r anfÃ¸rt linjer med hash-tegn foran, f.eks. 
 </para>
 
 <programlisting>
@@ -967,24 +967,24 @@ der flere steder står anført linjer med hash-tegn foran, f.eks.
 </programlisting>
 
 <para>
-Ideen er at man bør se disse linjer igennem specifikt for at se om du har
-de filer eller ej. Har man filen, så skal linjen typisk med ved at fjerne
+Ideen er at man bÃ¸r se disse linjer igennem specifikt for at se om du har
+de filer eller ej. Har man filen, sÃ¥ skal linjen typisk med ved at fjerne
 udkommenteringen.
 </para>
 
 <para>
-Filer såsom 
+Filer sÃ¥som 
 <filename>/proc/rtc</filename>, <filename>/proc/mdstat</filename> og 
-<filename>/usr/sbin/fixrmtab</filename> findes ikke på Red Hat 7.1 i
-standard installation - det er eksempler på filer, dermed linjer i
-opsætningsfilen som skal fjernes.
+<filename>/usr/sbin/fixrmtab</filename> findes ikke pÃ¥ Red Hat 7.1 i
+standard installation - det er eksempler pÃ¥ filer, dermed linjer i
+opsÃ¦tningsfilen som skal fjernes.
 </para>
 
 
 <sect3 id="twinstall">
 <title>Opstart af Tripwire databasen</title>
 <para>
-Efter opsætningsfilen er rettet til, så skal Tripwire opsætningen krypteres.
+Efter opsÃ¦tningsfilen er rettet til, sÃ¥ skal Tripwire opsÃ¦tningen krypteres.
 </para>
 
 <screen>
@@ -992,40 +992,40 @@ Efter opsætningsfilen er rettet til, så skal Tripwire opsætningen krypteres.
 </screen>
 
 <para>
-Det første der nu skal vælges er et løsen
+Det fÃ¸rste der nu skal vÃ¦lges er et lÃ¸sen
 (eng. "passphrase") som anvendes til at kryptere
-databasen så andre ikke kan ændre den.
+databasen sÃ¥ andre ikke kan Ã¦ndre den.
 </para>
 
 <para>
-Nu skal der vælges fire løsener.  De fire løsener bør
-principielt vælges forskellige, men en doven systemadministrator vil
-nok vælge dem ens (læs; dette er langt det nemmeste).  
-Først for ens <emphasis>site</emphasis>, dvs.  for
-hele maskin-parken. Dernæst for den enkelte maskine. Dernæst skal
-opsætningsfilen også signeres med et løsen &ndash; ideen er at man
-heller ikke skal have lov til at kunne ændre den opsætningfil, som
+Nu skal der vÃ¦lges fire lÃ¸sener.  De fire lÃ¸sener bÃ¸r
+principielt vÃ¦lges forskellige, men en doven systemadministrator vil
+nok vÃ¦lge dem ens (lÃ¦s; dette er langt det nemmeste).  
+FÃ¸rst for ens <emphasis>site</emphasis>, dvs.  for
+hele maskin-parken. DernÃ¦st for den enkelte maskine. DernÃ¦st skal
+opsÃ¦tningsfilen ogsÃ¥ signeres med et lÃ¸sen &ndash; ideen er at man
+heller ikke skal have lov til at kunne Ã¦ndre den opsÃ¦tningfil, som
 databasen er laves til <filename>/etc/tripwire/tw.cfg</filename>
-(Gemmes også i klar tekst i
-<filename>/etc/tripwire/twcfg.txt</filename>). Denne fil gemmer kun på
-systemparametre, såsom hvilet program der anvendes når
+(Gemmes ogsÃ¥ i klar tekst i
+<filename>/etc/tripwire/twcfg.txt</filename>). Denne fil gemmer kun pÃ¥
+systemparametre, sÃ¥som hvilet program der anvendes nÃ¥r
 tripwire-rapportering skal sendes til systemadministratoren.  Til slut
-skal der vælges et løsen for resten af opsætningen, dvs.
+skal der vÃ¦lges et lÃ¸sen for resten af opsÃ¦tningen, dvs.
 "policy"-delen, dvs. hvilke filer skal skannes og hvordan.  Filen der
-gemmes er <filename> /etc/tripwire/tw.pol</filename> (Gemmes også i
+gemmes er <filename> /etc/tripwire/tw.pol</filename> (Gemmes ogsÃ¥ i
 klar tekst under <filename>/etc/tripwire/twpol.txt</filename>).  De to
 filer i klar tekst, mens <filename>
 /etc/tripwire/tw.pol</filename> og
-<filename>/etc/tripwire/tw.cfg</filename> endelig ikke må ændres
-manuelt - de er binære og krypterede.
+<filename>/etc/tripwire/tw.cfg</filename> endelig ikke mÃ¥ Ã¦ndres
+manuelt - de er binÃ¦re og krypterede.
 </para>
 
 <para>
 For at resultater af skanning af filsystemet kan sendes til
-systemadministatoren per e-post så skal man indsætte e-postadressen
-for hver af de afsnit, der er defineret i filen. Bemærk at der er 
-et komma til at afslutte linjen før <literal>emailto = MODTAGERENS_ADRESSE</literal>. Hvis man har tænkt sig at køre tripwire tjek via crontab, så er
-dette ikke nødvendigt, da man får output i et brev alligevel.
+systemadministatoren per e-post sÃ¥ skal man indsÃ¦tte e-postadressen
+for hver af de afsnit, der er defineret i filen. BemÃ¦rk at der er 
+et komma til at afslutte linjen fÃ¸r <literal>emailto = MODTAGERENS_ADRESSE</literal>. Hvis man har tÃ¦nkt sig at kÃ¸re tripwire tjek via crontab, sÃ¥ er
+dette ikke nÃ¸dvendigt, da man fÃ¥r output i et brev alligevel.
 </para>
 
 
@@ -1045,8 +1045,8 @@ dette ikke nødvendigt, da man får output i et brev alligevel.
 </programlisting>
 
 <para>
-Nu skal Tripwire databasen genereres og du skal bruge dit løsen
-til den lokale maskine, som blev sat lige før dette. Det kan let tage 
+Nu skal Tripwire databasen genereres og du skal bruge dit lÃ¸sen
+til den lokale maskine, som blev sat lige fÃ¸r dette. Det kan let tage 
 5-10 minutter alt efter maskintype og diskkapacitet.
 </para>
 
@@ -1055,10 +1055,10 @@ til den lokale maskine, som blev sat lige før dette. Det kan let tage
 </screen>
 
 <para>
-Det mest sandsynlige er at man får ca. 50 fejl af filer, der ikke
-findes på systemet. De filer bør man nu udkommentere i
+Det mest sandsynlige er at man fÃ¥r ca. 50 fejl af filer, der ikke
+findes pÃ¥ systemet. De filer bÃ¸r man nu udkommentere i
 <filename>/etc/tripwire/twpol.txt</filename> og lave en ny database.
-Dette kunne man have undgået ved at gennemgå
+Dette kunne man have undgÃ¥et ved at gennemgÃ¥
 <filename>/etc/tripwire/twpol.txt</filename> meget forsigtigt.
 </para>
 
@@ -1078,8 +1078,8 @@ Generating the database...
 <sect3 id="tripwire-tjek">
 <title>Tjek af maskinen med Tripwire</title>
 <para>
-Nu er man klar til at tjeke maskinen - dette kan køres manuelt (dette
-kan man gøre uden brug af løsen - men man skal dog være root).
+Nu er man klar til at tjeke maskinen - dette kan kÃ¸res manuelt (dette
+kan man gÃ¸re uden brug af lÃ¸sen - men man skal dog vÃ¦re root).
 </para>
 
 <screen>
@@ -1087,9 +1087,9 @@ kan man gøre uden brug af løsen - men man skal dog være root).
 </screen>
 
 <para>
-Det er lidt bøvlet at se gamle tripwire rapporter, da disse også er
-krypterede. Kommandoen er som følger, hvor XX skal erstattes af det filnavn,
-man har på disken. De er navngivet efter maskinnavn og dato.
+Det er lidt bÃ¸vlet at se gamle tripwire rapporter, da disse ogsÃ¥ er
+krypterede. Kommandoen er som fÃ¸lger, hvor XX skal erstattes af det filnavn,
+man har pÃ¥ disken. De er navngivet efter maskinnavn og dato.
 </para>
 
 <screen>
@@ -1098,8 +1098,8 @@ man har på disken. De er navngivet efter maskinnavn og dato.
 
 
 <para>
-Lad os nu prøve at lave om på maskinen. Vi opgraderer procmail RPM-pakken og
-se hvad Tripwire finder. Bemærk de 5 modificerede "user binaries", som dernæst
+Lad os nu prÃ¸ve at lave om pÃ¥ maskinen. Vi opgraderer procmail RPM-pakken og
+se hvad Tripwire finder. BemÃ¦rk de 5 modificerede "user binaries", som dernÃ¦st
 vises nedenfor.
 </para>
 
@@ -1265,12 +1265,12 @@ All rights reserved.
 <title>Opdatering af Tripwire-databasen</title>
 
 <para>
-Nu er der selvfølgelig problemer - er det rimeligt at de filer at
-ændret?  I dette tilfælde er det, da filerne kommer fra den nye
-RPM-pakke.  Generelt skal man køre Tripwire-skanningen før man
-installerer en RPM-pakke for at være sikker på at der ikke er andre
-ændringer. Dernæst skal man så opdatere databasen med systemets
-snapshot, så man ikke længere ser de opgraderede pakker med i
+Nu er der selvfÃ¸lgelig problemer - er det rimeligt at de filer at
+Ã¦ndret?  I dette tilfÃ¦lde er det, da filerne kommer fra den nye
+RPM-pakke.  Generelt skal man kÃ¸re Tripwire-skanningen fÃ¸r man
+installerer en RPM-pakke for at vÃ¦re sikker pÃ¥ at der ikke er andre
+Ã¦ndringer. DernÃ¦st skal man sÃ¥ opdatere databasen med systemets
+snapshot, sÃ¥ man ikke lÃ¦ngere ser de opgraderede pakker med i
 listen. Igen skal XX erstattes med den seneste .twr-fil for maskinen.
 </para>
 
@@ -1280,7 +1280,7 @@ listen. Igen skal XX erstattes med den seneste .twr-fil for maskinen.
 
 <para>
 Op kommer en fil startet i <command>vi</command>-editoren, hvor en bid af den
-er som følger:
+er som fÃ¸lger:
 </para>
 
 <programlisting>
@@ -1296,17 +1296,17 @@ Modified:
 </programlisting>
 
 <para>
-Tripwire foreslår, at man opdaterer alle de
-ændrede filer, så Tripwire ikke brokke sig over dem igen.
-Hvis du ikke vil ændre så fjern det kryds (dvs. x) som er i tekst-boksen.
-Når du forlader editoren skal man igen angive løsen for at opdatere.
+Tripwire foreslÃ¥r, at man opdaterer alle de
+Ã¦ndrede filer, sÃ¥ Tripwire ikke brokke sig over dem igen.
+Hvis du ikke vil Ã¦ndre sÃ¥ fjern det kryds (dvs. x) som er i tekst-boksen.
+NÃ¥r du forlader editoren skal man igen angive lÃ¸sen for at opdatere.
 Herefter vil Tripwire ikke brokke sig over den opdaterede procmail pakke.
 </para>
 
 <para>
-Tripwire bør indsættes i <filename>/etc/cron.daily</filename>,
-dvs. det bliver kørt en gang hver dag.  Resultatet bliver sendt til
-root på maskinen per e-post.
+Tripwire bÃ¸r indsÃ¦ttes i <filename>/etc/cron.daily</filename>,
+dvs. det bliver kÃ¸rt en gang hver dag.  Resultatet bliver sendt til
+root pÃ¥ maskinen per e-post.
 </para>
 
 
@@ -1319,15 +1319,15 @@ root på maskinen per e-post.
 </screen>
 
 <para>
-Bemærk at det her ikke at valgt at kalde filen <filename>tripwire</filename>,
-som ville være naturligt. Men det giver jo kun en angriber nemmere ved at se
-at tripwire er sat op på maskinen.  Det er vigtigt at holde øje med at brevet
-fra tripwire kommer på ca. det tidspunkt som de <emphasis>bør</emphasis> komme
-på jfr. <filename>/etc/crontab</filename>.
+BemÃ¦rk at det her ikke at valgt at kalde filen <filename>tripwire</filename>,
+som ville vÃ¦re naturligt. Men det giver jo kun en angriber nemmere ved at se
+at tripwire er sat op pÃ¥ maskinen.  Det er vigtigt at holde Ã¸je med at brevet
+fra tripwire kommer pÃ¥ ca. det tidspunkt som de <emphasis>bÃ¸r</emphasis> komme
+pÃ¥ jfr. <filename>/etc/crontab</filename>.
 </para>
 
 <para>
-Du kan finde en anden vejledning til at installere og bruge Tripwire på
+Du kan finde en anden vejledning til at installere og bruge Tripwire pÃ¥
 <ulink url="http://www.net-security.org/text/articles/tripwire.shtml">http://www.net-security.org/text/articles/tripwire.shtml</ulink>.
 </para>
 </sect3>
@@ -1343,28 +1343,28 @@ Du kan finde en anden vejledning til at installere og bruge Tripwire på
 
 <para>
 Et interessant alternativ til Tripwire var Aide (Advanced Intrusion
-Detection Environment), der kan findes på <ulink
+Detection Environment), der kan findes pÃ¥ <ulink
 url="http://www.cs.tut.fi/~rammer/aide.html">http://www.cs.tut.fi/~rammer/aide.html</ulink>.
 Versionen er pr. oktober 2003 aide-0.9, hvilket indikerer, at
-Aide ikke er helt færdigt. Det ser ud som om Aide ikke har
+Aide ikke er helt fÃ¦rdigt. Det ser ud som om Aide ikke har
 udviklet sig meget siden Tripwire blev Open Source, nyeste file i
 aide-0.9 er fra Juni 2002.
 </para>
 
 <para>
 Aide er Open Source (udgivet under GPL), det vil sige, at det kommer med
-komplet kildetekst. Aide oversættes med <command>./configure</command> og
+komplet kildetekst. Aide oversÃ¦ttes med <command>./configure</command> og
 <command>make</command>, og installeres som systemadministrator (root) med
 <command>make install</command>.
 </para>
 
 <para>
-Efter oversættelsen og installationen ligger der en
-test-opsætningsfil i doc-kataloget under det katalog, hvor du
+Efter oversÃ¦ttelsen og installationen ligger der en
+test-opsÃ¦tningsfil i doc-kataloget under det katalog, hvor du
 oversatte aide. Du kan med <command>man aide.conf</command> se lidt om
-syntaksen i opsætningsfilen. Selv aide-programmet er installeret
-under <filename>/usr/local/bin</filename> (medmindre du har ændret i
-opsætningen).  For at generere en database over dine filer, skrives
+syntaksen i opsÃ¦tningsfilen. Selv aide-programmet er installeret
+under <filename>/usr/local/bin</filename> (medmindre du har Ã¦ndret i
+opsÃ¦tningen).  For at generere en database over dine filer, skrives
 </para>
 
 
@@ -1373,17 +1373,17 @@ opsætningen).  For at generere en database over dine filer, skrives
 </screen>
 
 <para>
-Hvor databasen kommer til at ligge, afgøres af opsætningsfilen, ligesom 
-den afgør hvilke filer, der skal med i databasen. Ligeledes er de
-regler, der afgør hvilke tjek, der skal udføres, defineret i aide.conf. 
-Som standard leder aide efter opsætningsfilen i det katalog, hvor
-du står, når du kører programmet. Opdatering af databasen sker med
+Hvor databasen kommer til at ligge, afgÃ¸res af opsÃ¦tningsfilen, ligesom 
+den afgÃ¸r hvilke filer, der skal med i databasen. Ligeledes er de
+regler, der afgÃ¸r hvilke tjek, der skal udfÃ¸res, defineret i aide.conf. 
+Som standard leder aide efter opsÃ¦tningsfilen i det katalog, hvor
+du stÃ¥r, nÃ¥r du kÃ¸rer programmet. Opdatering af databasen sker med
 
 <screen>
 <prompt>[root@hven /root]#</prompt> <userinput>aide --update</userinput>
 </screen>
 
-og tjek af ændringer med
+og tjek af Ã¦ndringer med
 
 <screen>
 <prompt>[root@hven /root]#</prompt> <userinput>aide --check</userinput>
@@ -1391,13 +1391,13 @@ og tjek af ændringer med
 </para>
 
 <para>
-Se i øvrigt <command>man aide</command>. 
+Se i Ã¸vrigt <command>man aide</command>. 
 </para>
 
 <para>
-Vi ville gerne anbefale dette lovende program, men det er ikke færdigt
-endnu, og hvis du bruger det, er det på eget ansvar. Vi tør imidlertid 
-godt spå en lysende fremtid for aide og vil opfordre til, at man følger 
+Vi ville gerne anbefale dette lovende program, men det er ikke fÃ¦rdigt
+endnu, og hvis du bruger det, er det pÃ¥ eget ansvar. Vi tÃ¸r imidlertid 
+godt spÃ¥ en lysende fremtid for aide og vil opfordre til, at man fÃ¸lger 
 med i udviklingen og evt.  bidrager til projektet.
 </para>
 
@@ -1411,7 +1411,7 @@ med i udviklingen og evt.  bidrager til projektet.
 
 
 <para>
-Ofte benyttede programmer til at skanne filsystemet kan findes på:
+Ofte benyttede programmer til at skanne filsystemet kan findes pÃ¥:
 </para>
 
 <itemizedlist mark="bullet">
@@ -1432,7 +1432,7 @@ F.I.R.E http://biatchux.dmzs.com/</ulink>.
 <para>
 <ulink url="http://www.knoppix.org/">
 http://www.knoppix.org/,
-</ulink> som jo kan bruges til at boote fra, så man er sikker på
+</ulink> som jo kan bruges til at boote fra, sÃ¥ man er sikker pÃ¥
 en kerne, der ikke er kompromitteret.
 </para>
 </listitem>
@@ -1441,7 +1441,7 @@ en kerne, der ikke er kompromitteret.
 <para>
 <ulink url="http://www.knoppix-std.org/tools.html">
 http://www.knoppix-std.org/tools.html
-</ulink>, Knoppix Security Tool Distribution, har mange værktøjer til sikkerhedscheck.
+</ulink>, Knoppix Security Tool Distribution, har mange vÃ¦rktÃ¸jer til sikkerhedscheck.
 </para>
 </listitem>
 
@@ -1458,13 +1458,13 @@ Radmind er en anden file-checker.
 
 
 <para>
-Når du skal tjekke filsystemet, bør du boote maskinen via
-en "sikker" Linux-kerne. Det kan være fra en diskette eller cd-rom.
-Ligeledes bør du bruge en cd-rom eller andet read only medie, til at
-gemme program og database over filsystem på. Ellers kan 
-du ikke tjekke filtræet mod
-tidligere skanninger og være sikker på, at du får de reelle forskelle,
-da en cracker så vil kunne ændre i din gemte database, filtjekprogrammet 
+NÃ¥r du skal tjekke filsystemet, bÃ¸r du boote maskinen via
+en "sikker" Linux-kerne. Det kan vÃ¦re fra en diskette eller cd-rom.
+Ligeledes bÃ¸r du bruge en cd-rom eller andet read only medie, til at
+gemme program og database over filsystem pÃ¥. Ellers kan 
+du ikke tjekke filtrÃ¦et mod
+tidligere skanninger og vÃ¦re sikker pÃ¥, at du fÃ¥r de reelle forskelle,
+da en cracker sÃ¥ vil kunne Ã¦ndre i din gemte database, filtjekprogrammet 
 eller i selve Linux-kernen.
 </para>
 

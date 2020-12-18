@@ -5,21 +5,21 @@
 
 <para>
 Alle Linux-systemer benytter sig af et pakkesystem,
-hvilket der har til formål at styre sammensætningen
-af programpakker på kørende system.
-Pakkesystemet holder rede på hvilke programmer der er
-installeret og hvilke programmer de igen er afhængige af.
-Ideelt vil et installeret system altid være konsistent (perfekt),
-ved at pakkesystemet sørger for at alle afhængigheder er iorden.
+hvilket der har til formÃ¥l at styre sammensÃ¦tningen
+af programpakker pÃ¥ kÃ¸rende system.
+Pakkesystemet holder rede pÃ¥ hvilke programmer der er
+installeret og hvilke programmer de igen er afhÃ¦ngige af.
+Ideelt vil et installeret system altid vÃ¦re konsistent (perfekt),
+ved at pakkesystemet sÃ¸rger for at alle afhÃ¦ngigheder er iorden.
 </para>
 
 <para>
-Alle pakkesystemer har samme formål, 
-men de håndteres lidt forskelligt.
-For dem alle gælder at de er lidt besværlige at
+Alle pakkesystemer har samme formÃ¥l, 
+men de hÃ¥ndteres lidt forskelligt.
+For dem alle gÃ¦lder at de er lidt besvÃ¦rlige at
 bruge til de daglige administrative ting,
-så de har alle fået en eller flere overbygninger,
-så de er til at holde ud at bruge.
+sÃ¥ de har alle fÃ¥et en eller flere overbygninger,
+sÃ¥ de er til at holde ud at bruge.
 </para>
 
 <para>
@@ -87,7 +87,7 @@ samt en liste over hvilke Linux-systemer der anvender dem.
 
 <para>
 For den indvigede der gerne vil hurtigt igang med et andet pakkesystem,
-er der en hal masse ting man gerne vil have svar på hurtigt.
+er der en hal masse ting man gerne vil have svar pÃ¥ hurtigt.
 </para>
 
 <itemizedlist>
@@ -98,13 +98,13 @@ er der en hal masse ting man gerne vil have svar på hurtigt.
 	Liste over pakker der kan installeres
 	</para></listitem>
 	<listitem><para>
-	Sådan installeres en pakke
+	SÃ¥dan installeres en pakke
 	</para></listitem>
 	<listitem><para>
-	Sådan fjernes en pakke
+	SÃ¥dan fjernes en pakke
 	</para></listitem>
 	<listitem><para>
-	Ændre hvor pakker downloades fra
+	Ã†ndre hvor pakker downloades fra
 	</para></listitem>
 	<listitem><para>
 	Alternative programmer for pakkeadministration
@@ -117,7 +117,7 @@ er der en hal masse ting man gerne vil have svar på hurtigt.
 <indexterm><primary>Gentoo</primary><secondary>Crash-kursus</secondary></indexterm>
 <indexterm><primary>Crash-kursus</primary><secondary>Gentoo</secondary></indexterm>
 <para>
-Gentoo har kun værktøjer til at blive styret fra kommandolinjen.
+Gentoo har kun vÃ¦rktÃ¸jer til at blive styret fra kommandolinjen.
 </para>
 <itemizedlist>
 	<listitem><para>
@@ -146,12 +146,12 @@ xauth-1.0.2
 </sect2><!-- pakkesystem-gentoo-harinst -->
 
 <sect2 id="pakkesystem-gentoo-kaninst">
-<title>Tilgængelige pakker</title>
-<indexterm><primary>Gentoo</primary><secondary>Tilgængelige pakker</secondary></indexterm>
-<indexterm><primary>Tilgængelige pakker</primary><secondary>Gentoo</secondary></indexterm>
-<indexterm><primary>Pakker</primary><secondary>Gentoo</secondary><tertiary>Tilgængelige</tertiary></indexterm>
+<title>TilgÃ¦ngelige pakker</title>
+<indexterm><primary>Gentoo</primary><secondary>TilgÃ¦ngelige pakker</secondary></indexterm>
+<indexterm><primary>TilgÃ¦ngelige pakker</primary><secondary>Gentoo</secondary></indexterm>
+<indexterm><primary>Pakker</primary><secondary>Gentoo</secondary><tertiary>TilgÃ¦ngelige</tertiary></indexterm>
 <para>
-Vis liste af tilgængelige pakker der kan installeres.
+Vis liste af tilgÃ¦ngelige pakker der kan installeres.
 Kommandoen er <command>emerge -s &lt;streng&gt;</command>.
 </para>
 <screen>
@@ -168,12 +168,12 @@ Kommandoen er <command>emerge -s &lt;streng&gt;</command>.
 </sect2><!-- pakkesystem-gentoo-kaninst -->
 
 <sect2 id="pakkesystem-gentoo-inst">
-<title>Installér en pakke</title>
-<indexterm><primary>Gentoo</primary><secondary>Installér en pakke</secondary></indexterm>
-<indexterm><primary>Installér en pakke</primary><secondary>Gentoo</secondary></indexterm>
-<indexterm><primary>Pakker</primary><secondary>Gentoo</secondary><tertiary>Installér</tertiary></indexterm>
+<title>InstallÃ©r en pakke</title>
+<indexterm><primary>Gentoo</primary><secondary>InstallÃ©r en pakke</secondary></indexterm>
+<indexterm><primary>InstallÃ©r en pakke</primary><secondary>Gentoo</secondary></indexterm>
+<indexterm><primary>Pakker</primary><secondary>Gentoo</secondary><tertiary>InstallÃ©r</tertiary></indexterm>
 <para>
-Download, kompilér og installér en pakke.
+Download, kompilÃ©r og installÃ©r en pakke.
 Kommandoen er <command>emerge &lt;streng&gt;</command>.
 </para>
 <screen>
@@ -187,31 +187,31 @@ Calculating dependencies... done!
 <prompt>[root@hven ~]# </prompt>
 </screen>
 <para>
-For nogle pakker kan det være en fordel først at se om der bliver
+For nogle pakker kan det vÃ¦re en fordel fÃ¸rst at se om der bliver
 mange yderligere pakker. 
 Optionen er <command>--ask</command> (-a) og kan med fordel kombineres med
 <command>--verbose</command> (-v).
-Det gøres med 
+Det gÃ¸res med 
 <command>emerge -av &lt;streng&gt;</command>
 </para>
 <para>
 Inden man installere en pakke,
-kan der være optioner man ønsker at ændre.
-De står nævnt under <command>USE</command>-variablen
+kan der vÃ¦re optioner man Ã¸nsker at Ã¦ndre.
+De stÃ¥r nÃ¦vnt under <command>USE</command>-variablen
 i <filename>/etc/make.conf</filename>,
 men styres nemmest ved brug af programmet <command>ufed</command>.
 </para>
 </sect2><!-- pakkesystem-gentoo-inst -->
 
 <sect2 id="pakkesystem-gentoo-opdat">
-<title>Opdatér alle installerede pakker</title>
-<indexterm><primary>Gentoo</primary><secondary>Opdatér alle installerede pakker</secondary></indexterm>
-<indexterm><primary>Opdatér alle installerede pakker</primary><secondary>Gentoo</secondary></indexterm>
-<indexterm><primary>Pakker</primary><secondary>Gentoo</secondary><tertiary>Opdatér alle</tertiary></indexterm>
+<title>OpdatÃ©r alle installerede pakker</title>
+<indexterm><primary>Gentoo</primary><secondary>OpdatÃ©r alle installerede pakker</secondary></indexterm>
+<indexterm><primary>OpdatÃ©r alle installerede pakker</primary><secondary>Gentoo</secondary></indexterm>
+<indexterm><primary>Pakker</primary><secondary>Gentoo</secondary><tertiary>OpdatÃ©r alle</tertiary></indexterm>
 <para>
-Download, kompilér og opdatér alle installerede pakker.
+Download, kompilÃ©r og opdatÃ©r alle installerede pakker.
 Kommandoen er <command>emerge --sync</command> for at opdatere listen af pakker
-og <command>emerge world</command> for at udføre opdateringen. 
+og <command>emerge world</command> for at udfÃ¸re opdateringen. 
 </para>
 <screen>
 <prompt>[root@hven ~]# </prompt><userinput>emerge --sync</userinput>
@@ -259,15 +259,15 @@ Kommandoen er <command>epm -qif &lt;filnavn&gt;</command>.
 sysvinit-2.86-r8
 </screen>
 <para>
-For mere information, tilføj <emphasis>i</emphasis>: <command>epm -qif &lt;filnavn&gt;</command>.
+For mere information, tilfÃ¸j <emphasis>i</emphasis>: <command>epm -qif &lt;filnavn&gt;</command>.
 </para>
 </sect2><!-- pakkesystem-gentoo-filpakke -->
 
 <sect2 id="pakkesystem-gentoo-down">
-<title>Ændre download-kilde</title>
-<indexterm><primary>Gentoo</primary><secondary>Ændre download-kilde</secondary></indexterm>
-<indexterm><primary>Ændre download-kilde</primary><secondary>Gentoo</secondary></indexterm>
-<indexterm><primary>Pakker</primary><secondary>Gentoo</secondary><tertiary>Ændre download-kilde</tertiary></indexterm>
+<title>Ã†ndre download-kilde</title>
+<indexterm><primary>Gentoo</primary><secondary>Ã†ndre download-kilde</secondary></indexterm>
+<indexterm><primary>Ã†ndre download-kilde</primary><secondary>Gentoo</secondary></indexterm>
+<indexterm><primary>Pakker</primary><secondary>Gentoo</secondary><tertiary>Ã†ndre download-kilde</tertiary></indexterm>
 <para>
 Kilden for download findes i filen
 <filename>/etc/make.conf</filename>.
@@ -287,7 +287,7 @@ GENTOO_MIRRORS="http://mirror.uni-c.dk/pub/gentoo/"
 <indexterm><primary>Pakker</primary><secondary>Gentoo</secondary><tertiary>Alternative programmer</tertiary></indexterm>
 <para>
 Gentoo benytter et forholdsvis nyt pakkesystem,
-så der er endnu ikke kommet så mange alternativer.
+sÃ¥ der er endnu ikke kommet sÃ¥ mange alternativer.
 </para>
 <itemizedlist mark="bullet">
   <listitem>
@@ -300,7 +300,7 @@ så der er endnu ikke kommet så mange alternativer.
     <para>
     <emphasis>epm</emphasis>
     er et alternativ der kan lidt mere,
-    og som forsøger at minde om RPM (Redhat Package Management).
+    og som forsÃ¸ger at minde om RPM (Redhat Package Management).
     Specielt velegnet for dem der kender RPM i forvejen.
     </para>
   </listitem>

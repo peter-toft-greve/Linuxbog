@@ -18,7 +18,7 @@
 
   <glossdef>
    <para>
-    Vinduer bliver kun aktive når man klikker i dem med musen
+    Vinduer bliver kun aktive nÃ¥r man klikker i dem med musen
    </para>
   </glossdef>
  </glossentry>
@@ -33,8 +33,8 @@
 
   <glossdef>
    <para>
-    Vinduer er aktive når musen befinder sig i dem. Hvis musen flyttes
-    ud af vinduet er det ikke længere aktivt. Se også
+    Vinduer er aktive nÃ¥r musen befinder sig i dem. Hvis musen flyttes
+    ud af vinduet er det ikke lÃ¦ngere aktivt. Se ogsÃ¥
     <glossterm linkend="def-sloppy-focus">sloppy focus</glossterm>
    </para>
   </glossdef>
@@ -50,8 +50,8 @@
 
   <glossdef>
    <para>
-   I sammenhæng med window managere er det en lille miniatureudgave af
-   ens skriveborde hvor man kan se hvilke skriveborde man har vinduer på
+   I sammenhÃ¦ng med window managere er det en lille miniatureudgave af
+   ens skriveborde hvor man kan se hvilke skriveborde man har vinduer pÃ¥
    </para>
   </glossdef>
  </glossentry>
@@ -66,7 +66,7 @@
 
   <glossdef>
    <para>
-   Når window manageren kun viser vinduets titellinje og ikke selve vinduet.
+   NÃ¥r window manageren kun viser vinduets titellinje og ikke selve vinduet.
    et alternativ til at ikonificere vinduet
    </para>
   </glossdef>
@@ -82,10 +82,10 @@
 
   <glossdef>
    <para>
-   Næsten det samme som <glossterm linkend="def-focus-follows-mouse">
+   NÃ¦sten det samme som <glossterm linkend="def-focus-follows-mouse">
    focus follows mouse</glossterm>, men vinduet forbliver aktivt selvom
-   man flytter musen ud på baggrunden. Første når musen flyttes ind i et
-   andet vindue holder det aktive vindue op med at være aktivt.
+   man flytter musen ud pÃ¥ baggrunden. FÃ¸rste nÃ¥r musen flyttes ind i et
+   andet vindue holder det aktive vindue op med at vÃ¦re aktivt.
    </para>
   </glossdef>
  </glossentry>
@@ -100,8 +100,8 @@
 
   <glossdef>
    <para>
-   Når et vindue vises på alle ens virtuelle skriveborde og ikke kun
-   på et enkelt skrivebord.
+   NÃ¥r et vindue vises pÃ¥ alle ens virtuelle skriveborde og ikke kun
+   pÃ¥ et enkelt skrivebord.
    </para>
   </glossdef>
  </glossentry>
@@ -116,10 +116,10 @@
 
   <glossdef>
    <para>
-   Program der håndterer placering af vinduer, rammer omkring vinduer
-   og hvilket vindue der er aktivt. Kan være mere eller mindre integreret
-   i en grafisk brugergrænseflade. Nogle vinduer håndterer også
-   baggrundsbilledet eller farve på baggrunden, men det er ikke nødvendigt
+   Program der hÃ¥ndterer placering af vinduer, rammer omkring vinduer
+   og hvilket vindue der er aktivt. Kan vÃ¦re mere eller mindre integreret
+   i en grafisk brugergrÃ¦nseflade. Nogle vinduer hÃ¥ndterer ogsÃ¥
+   baggrundsbilledet eller farve pÃ¥ baggrunden, men det er ikke nÃ¸dvendigt
    at dette sker i window manageren.
    </para>
   </glossdef>

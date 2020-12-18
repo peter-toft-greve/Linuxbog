@@ -1,4 +1,4 @@
-/* dirlist1.c læser alle filnavne i et directory */
+/* dirlist1.c lÃ¦ser alle filnavne i et directory */
 
 #include <stdio.h>
 #include <stdlib.h>

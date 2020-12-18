@@ -5,18 +5,18 @@
 
 <para>
 "Linux - friheden til programmere i Java" er en nystartet bog. 
-Vi frigiver ofte nye versioner, når der er kommer en del
+Vi frigiver ofte nye versioner, nÃ¥r der er kommer en del
 rettelser ind, eller nye afsnit er blevet skrevet.  Kommentarer, ris
 og ros, og specielt fejl og mangler bedes sendt til <ulink
 url="mailto:linuxbog@sslug.dk">linuxbog@sslug.dk</ulink>, men er du
-medlem af SSLUG, så skriv til 
+medlem af SSLUG, sÃ¥ skriv til 
 <ulink url="mailto:sslug-bog@sslug.dk">sslug-bog@sslug.dk</ulink>. 
-Alle kan bidrage - se om tilmelding se på 
+Alle kan bidrage - se om tilmelding se pÃ¥ 
 <ulink url="http://www.sslug.dk/tilmeld">http://www.sslug.dk/tilmeld</ulink>.
 </para>
 
 <para>
-Her er en liste over, hvad der er ændret i bogen.
+Her er en liste over, hvad der er Ã¦ndret i bogen.
 </para>
 
 <itemizedlist mark="bullet">
@@ -42,45 +42,45 @@ Jacob Sparre Andersen: Mindre sproglige rettelser.
 <listitem><para>
 Version 0.5 - 5. maj 2003:
 Janet Chemnitz har rettelse til kapitelet omkring arrays.
-Lasse Thernøe havde en præcisering til navngivning af java filer mht. store og små bogstaver.
+Lasse ThernÃ¸e havde en prÃ¦cisering til navngivning af java filer mht. store og smÃ¥ bogstaver.
 </para></listitem>
 
 <listitem><para>
 Version 0.4 - 1. september 2002:
-Claus Madsen har kommet med rettelser, samt mere om Ant til kapitelet "Udviklingsmiljø".
-Alfred Jensen har kommet med en række rettelser til 
+Claus Madsen har kommet med rettelser, samt mere om Ant til kapitelet "UdviklingsmiljÃ¸".
+Alfred Jensen har kommet med en rÃ¦kke rettelser til 
 kapitelet "Basal programmering"
 </para></listitem>
 
 <listitem><para>
 Version 0.3 - 14. juni 2002:
 Jacob Nordfalk og Christian Damsgaard har lavet en generel oprydning af bogen.
-Erik Søe Sørensen retter en masse trykfejl i historie-afsnittet.
-Jacob Sparre Andersen: Rettet sproglige småfejl.
+Erik SÃ¸e SÃ¸rensen retter en masse trykfejl i historie-afsnittet.
+Jacob Sparre Andersen: Rettet sproglige smÃ¥fejl.
 </para></listitem>
 
 <listitem><para>
 Version 0.2 - 10. marts 2002:
-Ny licens for bogen - Åben dokumentlicens.
-Jacob Nordfalk, Jonas Kongslund og Christian Damsgaard har fået
-opdateret materialet fra Jacob's bog, mht. id attributter på
-alle &lt;chapter&gt;, &lt;sect&gt; og &lt;figure&gt; så filerne
-i afsnittene får rigtige navnet, samt at det er muligt at krydsreferere
+Ny licens for bogen - Ã…ben dokumentlicens.
+Jacob Nordfalk, Jonas Kongslund og Christian Damsgaard har fÃ¥et
+opdateret materialet fra Jacob's bog, mht. id attributter pÃ¥
+alle &lt;chapter&gt;, &lt;sect&gt; og &lt;figure&gt; sÃ¥ filerne
+i afsnittene fÃ¥r rigtige navnet, samt at det er muligt at krydsreferere
 mellem de forskellige afsnit.
-Peter Toft har fået bogen til at oversætte med Jacob Nordfalks bog inde.
-Tilføjet indhold til sektionen Test. Tilføjet sektion om IDE'er
+Peter Toft har fÃ¥et bogen til at oversÃ¦tte med Jacob Nordfalks bog inde.
+TilfÃ¸jet indhold til sektionen Test. TilfÃ¸jet sektion om IDE'er
 Kapitlet om virtuelle maskiner er indlagt.
 </para></listitem>
 
 <listitem>
 <para>Version 0.1 - 29. december 2001: 
-Påbegyndt kapitler omhandlende historien 
-bag Java, udviklingsmiljøer og udvikling af sproguafhængige programmer. 
+PÃ¥begyndt kapitler omhandlende historien 
+bag Java, udviklingsmiljÃ¸er og udvikling af sproguafhÃ¦ngige programmer. 
 </para></listitem>  
 
 <listitem><para>
-Version 0.0 - 10. december 2001: Påbegyndt kapitler omhandlende historien bag 
-Java, udviklingsmiljøer og udvikling af sproguafhængige programmer. Første 
+Version 0.0 - 10. december 2001: PÃ¥begyndt kapitler omhandlende historien bag 
+Java, udviklingsmiljÃ¸er og udvikling af sproguafhÃ¦ngige programmer. FÃ¸rste 
 offentlige version.
 </para></listitem>
 </itemizedlist>
