@@ -221,7 +221,7 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
  </example>
 
  <example id="adgangsstyring-ingen-adgang">
-  <title>Hindre alle andre i at læse hjemmekataloget</title>
+  <title>Hindre alle andre i at l&aelig;se hjemmekataloget</title>
 
   <para>
    Som en første praktisk øvelse i adgangsstyring kan man fratage alle andre
@@ -343,7 +343,7 @@ drwxr-xr-x    3 tyge     brahe        4096 mar 30 16:09 Artikler
  </example>
 
  <example id="adgangsstyring-websted">
-  <title>Gøre hjemmesiden synlig for Apache</title>
+  <title>G&oslash;re hjemmesiden synlig for Apache</title>
 
   <para>
    Hvis Apache skal kunne vise din hjemmeside, er det nødvendigt at
