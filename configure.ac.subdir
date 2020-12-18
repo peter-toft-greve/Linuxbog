@@ -1,8 +1,9 @@
 dnl Linuxbog.dk - autoconf script til at lave lækre makefiler med (krydser fingre).
 dnl Version 0.01 - Mads Bondo Dydensborg, mads@dydensborg.dk
 
-AC_INIT(ophavsret.sgml)
-AM_INIT_AUTOMAKE(linuxbog,1)
+AC_INIT([linuxbog], [1.0])
+AC_CONFIG_SRCDIR([ophavsret.sgml])
+AM_INIT_AUTOMAKE
 
 dnl ======================================================================
 dnl Options
