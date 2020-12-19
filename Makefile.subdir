@@ -249,7 +249,7 @@ else !HAVE_PERL_IMAGE_SIZE
 	@echo "Du bør installere Perl-modulet Image:Size"
 endif !HAVE_PERL_IMAGE_SIZE
 if HAVE_TIDY
-	(cd $(targetshortname) ; tidy -f /dev/null --input-encoding latin1 --output-encoding utf8 --doctype html5 -qimu -w *.html)
+	(cd $(targetshortname) ; tidy -f /dev/null --input-encoding latin1 --output-encoding utf8 --doctype html5 -qimu -w *.html ; true)
 else !HAVE_TIDY
 	@echo "Du bør installere tidy"
 endif !HAVE_TIDY
