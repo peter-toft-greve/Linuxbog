@@ -246,7 +246,7 @@ Units = cylinders of 1008 * 512 bytes
   </para>
 
   <para>
-   Ældre udgaver af programmet <command>badblocks</command> skal have
+   &AElig;ldre udgaver af programmet <command>badblocks</command> skal have
    at vide hvor mange blokke der er på den partition der skal
    tjekkes. Den oplysning kan man få ved at bede
    <command>fdisk</command> om en liste med alle partitionerne på den

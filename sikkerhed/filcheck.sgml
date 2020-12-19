@@ -539,7 +539,7 @@ separate backups af dine brugeres data.
 </sect2>
 
 <sect2 id="aendret-filsystem">
-<title>Ændringer af filsystemet</title>
+<title>&AElig;ndringer af filsystemet</title>
 <indexterm>
  <primary>filsystem</primary>
  <secondary>Følge ændringer</secondary>
@@ -682,14 +682,14 @@ kommandoen "rpm -Va".  Denne kommando vil tjekke for følgende
 </para>
 
 <itemizedlist mark="bullet">
- <listitem><para>S - Ændringer af filstørrelse</para></listitem>
- <listitem><para>M - Mode - Ændringer i permissions og filtype</para></listitem>
+ <listitem><para>S - &AElig;ndringer af filstørrelse</para></listitem>
+ <listitem><para>M - Mode - &AElig;ndringer i permissions og filtype</para></listitem>
  <listitem><para>5 - Tjek af MD5-sum</para></listitem>
  <listitem><para>? - Normalt problemer med at læse filen</para></listitem>
  <listitem><para>L - Symlink</para></listitem>
  <listitem><para>D - Device ændringer</para></listitem>
- <listitem><para>U - User - Ændringer i ejerskab</para></listitem>
- <listitem><para>G - Group - Ændringer i gruppeejerskab</para></listitem>
+ <listitem><para>U - User - &AElig;ndringer i ejerskab</para></listitem>
+ <listitem><para>G - Group - &AElig;ndringer i gruppeejerskab</para></listitem>
  <listitem><para>T - Mtime - Modifikationstidspunkt</para></listitem>
  <listitem><para>missing - Hvis en fil er forsvundet</para></listitem>
  <listitem><para>c - Opsætningsfil.</para></listitem>
@@ -735,7 +735,7 @@ Nu er det op til dig, som systemadministrator, at vurdere hvilke
 ændringer, der er i orden, og hvilke, der kan være farlige. Der vil
 altid være ændringer, siden pakkerne er installeret, men nogle af
 ændringerne må gerne være der.  Du ved forhåbentlig nogenlunde, hvad
-du selv har ændret. Ændringer, du ikke selv kan huske at have
+du selv har ændret. &AElig;ndringer, du ikke selv kan huske at have
 foretaget, kan vurderes ud fra, hvor filerne ligger og hvilken type
 filer, det drejer sig om. F.eks. virker filerne i
 <filename>/usr/share/afterstep/</filename> ikke særlig farlige. Det er

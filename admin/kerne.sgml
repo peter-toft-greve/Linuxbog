@@ -848,7 +848,7 @@ har forbedret det
 lidt, ved at man kan specificere en enhed i
 <filename>/etc/sysconfig/gpm</filename>. Opstartsprogrammet
 <filename>/etc/rc.d/init/gpm</filename> indeholder dog en fejl som
-gør at enheden altid vil være <filename>/dev/mouse</filename>. Ændr
+gør at enheden altid vil være <filename>/dev/mouse</filename>. &AElig;ndr
 derfor følgende i <filename>/etc/rc.d/init/gpm</filename>:
 </para>
 

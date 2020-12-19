@@ -706,7 +706,7 @@ bliver opdateret, så man ved hvornår dette sker (brug
     Det kan være meget praktisk at kunne sætte et mærke på en fil for
     at man til hver en tid kan gå tilbage til netop den version af filen.
     For at sætte et mærke (engelsk "tag") kører man 
-    <command>cvs tag MÆRKE fil_liste</command> hvor <literal>MÆRKE</literal>
+    <command>cvs tag M&AElig;RKE fil_liste</command> hvor <literal>M&AElig;RKE</literal>
     er et navn (desværre må man ikke anvende mellemrum) a la 
     <literal>efter_indfletning_af_SSLUG_kode</literal> eller 
     <literal>foer_Peters_sommerferie</literal>.
@@ -714,7 +714,7 @@ bliver opdateret, så man ved hvornår dette sker (brug
 
    <para>
     Hvis man har brug for at gå tilbage til et givet mærke køres
-    <command>cvs update -r MÆRKE</command>. Samme teknik anvendes også 
+    <command>cvs update -r M&AElig;RKE</command>. Samme teknik anvendes også 
     til at håndtere forskellige grene af koden.
    </para>
   </sect3>

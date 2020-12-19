@@ -73,7 +73,7 @@ kerne (og evt. hvilken Windows-kerne) man ønsker at starte op.
 </para>
 
 <para>
-Der er mange flere muligheder. Ældre maskiner kan boote Linux fra
+Der er mange flere muligheder. &AElig;ldre maskiner kan boote Linux fra
 Windows 95/98 ved hjælp af et (ældre) program, som hedder loadlin
 (load Linux), men man kan selvfølgelig også bruge LILO eller GRUB
 på ældre maskiner.

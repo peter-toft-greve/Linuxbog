@@ -753,7 +753,7 @@ trykker "Ctrl-Alt-F1".
 
 <para>
 Du skal dog en gang for alle lave en ændring, så "Ctrl-Alt-Delete"
-kommer til at medføre at Linux lukkes ned. Ændres intet, genstarter
+kommer til at medføre at Linux lukkes ned. &AElig;ndres intet, genstarter
 systemet. For at få maskinen til at stoppe
 kaldes <command>/sbin/halt</command>, og du skal så ændre i
 <filename>/etc/inittab</filename>
@@ -1639,7 +1639,7 @@ indstilles som ovenfor, til at ignorere måle-punktet in1.
 </para>
 
 <para>
-Ændringer i filen <filename>/etc/sensors.conf</filename> må indlæses i
+&AElig;ndringer i filen <filename>/etc/sensors.conf</filename> må indlæses i
 modulerne, ved at køre følgende som root
 </para>
 
@@ -2818,7 +2818,7 @@ crw-rw-rw-    1 root     root       1,   3 jan 21 21:26 /dev/null
    med Red Hat-distributionen. De er en del af "Linux Documentation
    Project" (LDP). Red Hat's hjemmeside indeholder endvidere en række
    gode tricks og nyttige oplysninger. De bedste bøger om Unix
-   systemadministration er uden tvivl Æleen Frischs "Essential System
+   systemadministration er uden tvivl &AElig;leen Frischs "Essential System
    Administration" udgivet af O'Reilly, og "UNIX System Administration
    Handbook" (Evi Nemeth, Garth Snyder, Scott Seebass og Trent
    R. Hein) udgivet af Prentice Hall PTR.

@@ -1225,7 +1225,7 @@ anvendelse<footnote>
   håndfast uden at spørge.
   </para>
   <para>
-  Ældre versioner af Red Hats firewall-config bruger ipchains
+  &AElig;ldre versioner af Red Hats firewall-config bruger ipchains
   og forventer, at man har en modulariseret (distributions)kerne.
   Det gør ikke så meget, at den råber FEJL når man kører med
   optimeret non-modul kerne, hvis den i øvrigt bare fungerer.
@@ -1560,7 +1560,7 @@ se på hvordan man administrerer hele kæder.
 <command> -X </command>: Sletter en tom kæde.
 </para></listitem>
 <listitem><para>
-<command> -P </command>: Ændrer policy for en kæde.
+<command> -P </command>: &AElig;ndrer policy for en kæde.
 </para></listitem>
 <listitem><para>
 <command> -L </command>: Lister regler i en kæde.

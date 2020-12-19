@@ -1094,7 +1094,7 @@ er en storage specifikation. Læs videre!
 <sect1 id="sect-C-fundamentet">
 <title>Lager klassifikation, storage classes</title>
 
-<!--OBS! AL TEKST ER ÆNDRET RADIKALT:-->
+<!--OBS! AL TEKST ER &AElig;NDRET RADIKALT:-->
 
 <para>
 Emner:
@@ -1179,7 +1179,7 @@ Det skal vi se på senere i dette afsnit.
 <sect2 id="c-eksterne-variable">
 <title>Externe variable, funktioner og konstanter</title>
 
-<!--OBS! AL TEKST ER ÆNDRET RADIKALT:-->
+<!--OBS! AL TEKST ER &AElig;NDRET RADIKALT:-->
 
 <para>
 For helt at være klar til diskussion af eksterne variable skal

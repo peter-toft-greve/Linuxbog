@@ -285,7 +285,7 @@
     <ulink url="writer16.html">Slette tekst</ulink> <emphasis>5.3.</emphasis><br>
     <ulink url="writer51.html">Slutnote</ulink><br>
     <ulink url="writer52.html">Slutnote, hop til/fra</ulink><br>
-    <ulink url="writer57.html">Spalteindstillinger, Ændre</ulink> <emphasis>14.2.</emphasis><br>
+    <ulink url="writer57.html">Spalteindstillinger, &AElig;ndre</ulink> <emphasis>14.2.</emphasis><br>
     <xref linkend="ooo-spalter"/>Spalter/kolonner</ulink> <emphasis>Kapitel 14.</emphasis><br>
     <xref linkend="ooo-spalter"/>Spalter, hele siden (oprette)</ulink>
     <emphasis>14.1.</emphasis><br>
@@ -354,9 +354,9 @@
     <emphasis>X</emphasis></ulink> <ulink url="name="y""><br>
     <emphasis>Y</emphasis></ulink> <ulink url="name="z""><br>
     <emphasis>Z</emphasis></ulink> <ulink url="name="ae""><br>
-    <emphasis>Æ</emphasis><br>
-    </ulink> <ulink url="writer36.html">Ændre en typografi</ulink> <emphasis>8.6.</emphasis><br>
-    <ulink url="writer57.html">Ændre spalteindstillinger</ulink> <emphasis>14.2.</emphasis> <ulink url="name="oe""><br>
+    <emphasis>&AElig;</emphasis><br>
+    </ulink> <ulink url="writer36.html">&AElig;ndre en typografi</ulink> <emphasis>8.6.</emphasis><br>
+    <ulink url="writer57.html">&AElig;ndre spalteindstillinger</ulink> <emphasis>14.2.</emphasis> <ulink url="name="oe""><br>
     <emphasis>&Oslash;</emphasis></ulink> <ulink url="name="aa""><br>
     <emphasis>&Aring;</emphasis><br>
     </ulink> <ulink url="writer10.html">&Aring;bne dokument</ulink> <emphasis>3.3.</emphasis></para>

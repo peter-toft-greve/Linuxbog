@@ -132,7 +132,7 @@ to decimaler eller heltal.
 </para>
 
 <figure id="openoffice-regneark6-fig" float="1">
-<title>Ændr talformat i OpenOffice.org</title>
+<title>&AElig;ndr talformat i OpenOffice.org</title>
 <graphic fileref="OOoCalc6.&magic;" scale="50"></graphic>
 </figure>
 
@@ -144,8 +144,8 @@ to decimaler eller heltal.
 Nu skal du videre til at udregne gennemsnit (middelværdi) over de fire personer
 for hver af de fire kvartaler. Gennemsnit er som bekendt summen af tallene
 divideret med antallet af tal. I feltet B7 skriver du derfor
-<literal>=SUM(B2:B5)/RÆKKER(B2:B5)</literal>. 
-Funktionen <literal>RÆKKER</literal> giver antallet af rækker i
+<literal>=SUM(B2:B5)/R&AElig;KKER(B2:B5)</literal>. 
+Funktionen <literal>R&AElig;KKER</literal> giver antallet af rækker i
 intervallet (B2:B5) (i den danske udgave kan du ikke skrive ROWS(B2:B5), 
 da det kun er muligt at indtaste formler i det sprog man har valgt. Dette 
 er dog ved at blive rettet, så engelsk altid kan bruges).

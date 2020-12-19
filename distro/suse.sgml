@@ -71,7 +71,7 @@ Her vil den primære support komme fra andre brugere der også benytter sig af o
   </indexterm>
 
 <para>
-<h1> DENNE GUIDE ER FORÆLDET SE: <ulink url="http://opensuse-guide.org/installation.php">http://opensuse-guide.org/installation.php</ulink> </h1>
+<h1> DENNE GUIDE ER FOR&AElig;LDET SE: <ulink url="http://opensuse-guide.org/installation.php">http://opensuse-guide.org/installation.php</ulink> </h1>
 
 Beskrivelsen af netværksinstallation (<ulink url="ftp://ftp.suse.com/pub/suse/i386/8.2/README.FTP">ftp://ftp.suse.com/pub/suse/i386/8.2/README.FTP</ulink>) 
 er meget kort, og den procedure der beskrives der virker ikke helt, så her kommer en beskrivelse af hvordan man gør.  </para>

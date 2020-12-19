@@ -276,7 +276,7 @@ set_mod "Mod1"                          #
   </sect3>    <!--   Lukke vinduer og rammer -->
 
   <sect3 id="wm-ion-aendre-rammer">
-   <title>Ændre rammernes størrelser</title>
+   <title>&AElig;ndre rammernes størrelser</title>
 
    <para>
     Det kan også være nyttigt at kunne ændre rammernes størrelser.  I
@@ -307,7 +307,7 @@ set_mod "Mod1"                          #
         kpress "F8",     "resize_horiz"         #
 </programlisting>
    </para>
-  </sect3>    <!--   Ændre rammernes størrelser -->
+  </sect3>    <!--   &AElig;ndre rammernes størrelser -->
 
   <sect3 id="wm-ion-flytte-vinduer">
    <title>Flytte vinduer</title>

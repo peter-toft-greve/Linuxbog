@@ -507,8 +507,8 @@ så kan det gøres med:
 </sect2> <!-- nagios-konfiguration -->
 
 <sect2 id="nagios-aendre-konfiguration">
-<title>Ændre konfiguration</title>
-<indexterm><primary>Nagios</primary><secondary>Ændre konfiguration</secondary></indexterm>
+<title>&AElig;ndre konfiguration</title>
+<indexterm><primary>Nagios</primary><secondary>&AElig;ndre konfiguration</secondary></indexterm>
 
 <para>
 Inden du kaster dig over at tilrette konfigurationsfilerne manuelt med en editor,

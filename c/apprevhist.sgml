@@ -67,7 +67,7 @@ Struct gennemgang udvidet. Kortspil eksempler er opdateret.
 C++ version af kortspilsbunke (kræver gcc 3.0).
 Eksempel kort04.c, blanding af kort, tilføjet.
 Afsnit om sammensatte datatyper er forbedret. 
-Ændringer overskrifter og indledninger for at få emner og pointer
+&AElig;ndringer overskrifter og indledninger for at få emner og pointer
 tydeligere understreget.  Beskrivelse af den trinvise udvikling
 af sgml-formateringsprogrammet samt små illustrationer tegnet med
 xpaint. Eksempler bogpris1.c og bogpris2.cxx til afsnit om

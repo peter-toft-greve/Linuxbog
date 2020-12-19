@@ -284,7 +284,7 @@ anvendelse allerede på planlægningsstadiet.
 <title>En ændringsmodel</title>
 
 <para>
-Ændringer i it-systemer kan have stor indflydelse på en
+&AElig;ndringer i it-systemer kan have stor indflydelse på en
 organisation er beskrevet i mange rapporter og i organisatorisk
 forskning. J. H. Leavitt beskrev en åben organisationsmodel, som
 har dannet grundlag for mange rapporter og kurser (se for eksempel <ulink
@@ -321,7 +321,7 @@ Modellen kan vises grafisk på to måder:
 </para></listitem>
 <listitem><para>Den traditionelle niveaudeling. Se <xref linkend="NIVEAU-FIG"/>
 </para></listitem></itemizedlist>
-<figure float="1" id="LEAVITT-FIG"><title>Ændringsstrategien i Leavittsstil</title>
+<figure float="1" id="LEAVITT-FIG"><title>&AElig;ndringsstrategien i Leavittsstil</title>
 <graphic fileref="leavitt.&magic;" scale="60"></graphic></figure>
 
 
@@ -335,7 +335,7 @@ væsentlige til læseren <!-- TODO?! /-->
 </para>
 
 
-<figure float="1" id="NIVEAU-FIG"><title>Ændringsstrategien i niveaudelingsstil</title>
+<figure float="1" id="NIVEAU-FIG"><title>&AElig;ndringsstrategien i niveaudelingsstil</title>
 <graphic fileref="niveau.&magic;" scale="60"></graphic></figure>
 
 <para>

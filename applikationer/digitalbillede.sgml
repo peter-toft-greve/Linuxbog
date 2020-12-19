@@ -819,7 +819,7 @@ USB kommunikationen.</para>
 <indexterm><primary>USB Mass Storage</primary></indexterm>
 
 <para>Hvis du vælger/er nødt til at forbinde med et kabel, er det i
-dag typisk en USB port på PC'en du skal anvende. Ældre kameraer
+dag typisk en USB port på PC'en du skal anvende. &AElig;ldre kameraer
 tilsluttes nogle gange til en seriel port, men vi vil her nøjes med at
 med at omtale USB tilslutninger. Seriel er i vidt omfang understøttet
 af Gphoto2 dog. Tilsvarende for de enkelte kameraer der tilsluttes med

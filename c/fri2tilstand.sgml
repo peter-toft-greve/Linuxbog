@@ -655,7 +655,7 @@ gcc2_compiled.:
 .globl xyzzy
 	.type	 xyzzy,@function
 xyzzy:
-	movl $42,%eax  # <<=== OBS! HER ER OVERSÆTTELSEN!!!
+	movl $42,%eax  # <<=== OBS! HER ER OVERS&AElig;TTELSEN!!!
 	ret
 .Lfe1:
 	.size	 xyzzy,.Lfe1-xyzzy
@@ -712,7 +712,7 @@ xyzzy:
 	movl %esp,%ebp
 #{
 #    return 42;
-	movl $42,%eax     # <<=== OBS! HER ER OVERSÆTTELSEN!!!
+	movl $42,%eax     # <<=== OBS! HER ER OVERS&AElig;TTELSEN!!!
 	movl %ebp,%esp
 	popl %ebp
 	ret

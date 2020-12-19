@@ -122,7 +122,7 @@ domænekontroller.
 ; Hvis du vil have Windows klienter med æ,ø og å
    client code page = 850
    character set = ISO8859-1
-   valid chars = æ:Æ ø:&Oslash; å:&Aring;
+   valid chars = æ:&AElig; ø:&Oslash; å:&Aring;
 
 [homes]
    comment = Home Directories
@@ -689,7 +689,7 @@ Feltet "Rækkefølge" til søgning efter navneserver tilføjes 192.168.1.1
 
 
 <para>
-DOMÆNENAVN: Workgroup/domain-navn må ikke være sammenfaldende med
+DOM&AElig;NENAVN: Workgroup/domain-navn må ikke være sammenfaldende med
 host-navnet. Hvis samba, som i vores eksempel, kører på hosten
 test.domain.net, og har følgende stående i filen:
 <filename>/etc/hosts</filename>:

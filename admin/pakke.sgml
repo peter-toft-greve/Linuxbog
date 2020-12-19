@@ -104,7 +104,7 @@ er der en hal masse ting man gerne vil have svar på hurtigt.
 	Sådan fjernes en pakke
 	</para></listitem>
 	<listitem><para>
-	Ændre hvor pakker downloades fra
+	&AElig;ndre hvor pakker downloades fra
 	</para></listitem>
 	<listitem><para>
 	Alternative programmer for pakkeadministration
@@ -264,10 +264,10 @@ For mere information, tilføj <emphasis>i</emphasis>: <command>epm -qif &lt;filn
 </sect2><!-- pakkesystem-gentoo-filpakke -->
 
 <sect2 id="pakkesystem-gentoo-down">
-<title>Ændre download-kilde</title>
-<indexterm><primary>Gentoo</primary><secondary>Ændre download-kilde</secondary></indexterm>
-<indexterm><primary>Ændre download-kilde</primary><secondary>Gentoo</secondary></indexterm>
-<indexterm><primary>Pakker</primary><secondary>Gentoo</secondary><tertiary>Ændre download-kilde</tertiary></indexterm>
+<title>&AElig;ndre download-kilde</title>
+<indexterm><primary>Gentoo</primary><secondary>&AElig;ndre download-kilde</secondary></indexterm>
+<indexterm><primary>&AElig;ndre download-kilde</primary><secondary>Gentoo</secondary></indexterm>
+<indexterm><primary>Pakker</primary><secondary>Gentoo</secondary><tertiary>&AElig;ndre download-kilde</tertiary></indexterm>
 <para>
 Kilden for download findes i filen
 <filename>/etc/make.conf</filename>.

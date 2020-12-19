@@ -1757,7 +1757,7 @@ int main(int argc, char *argv[])
     conv[134] = 'å';              /* 134 er codepage850 for å */
     conv[143] = '&Aring;';              /* 143 er codepage850 for &Aring; */
     conv[145] = 'æ';
-    conv[146] = 'Æ';
+    conv[146] = '&AElig;';
     conv[155] = 'ø';
     conv[157] = '&Oslash;';
     conv[130] = 'é';

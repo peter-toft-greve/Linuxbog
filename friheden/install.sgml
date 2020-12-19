@@ -327,7 +327,7 @@ fornuftig og fleksibel:
 <listitem>
  <para>
   en partition på 50 Mb til <filename>/boot</filename>, som lægges før
-  cylinder 1024 på disken. Ældre BIOS-typer har en
+  cylinder 1024 på disken. &AElig;ldre BIOS-typer har en
   fejl, som gør dette nødvendigt. Denne partition bør
   du kun lave, hvis du vil køre LILO - læs mere i
   "Linux - Friheden til at lære Unix".
