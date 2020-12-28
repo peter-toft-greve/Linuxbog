@@ -1,5 +1,4 @@
 <?xml encoding="UTF-8" ?>
-<!-- $Id$ -->
 
 <sect1 id="vaerktoej-autoconf">
  <title>Autoconf og automake</title>
