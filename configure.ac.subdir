@@ -87,7 +87,6 @@ dnl ======================================================================
 AC_MSG_NOTICE([checker specifikke krav til de enkelte måder at lave bogen på])
 dnl Til at starte med antager vi at alt kan laves. Hep, man er vel optimist.
 TARGET_SGML=ja
-TARGET_PALM=ja
 TARGET_PDF=ja
 TARGET_HTML=ja
 TARGET_PAKHTML=ja
@@ -167,18 +166,6 @@ if test "xja" != "x$TAR" ; then
   TARGET_PDF=nej
   AC_MSG_WARN(tar ikke fundet - det er ikke muligt at lave PDF udgaven)
 fi
-dnl ======================================================================
-dnl Check krav til Palm udgaven
-dnl ======================================================================
-if test "xja" != "x$TARGET_HTML" ; then
-  TARGET_PALM=nej
-  AC_MSG_WARN(HTML ikke muligt - det er ikke muligt at lave PALM udgaven)
-fi
-AC_CHECK_PROG(PLUCKER, plucker-build, ja, nej - det er ikke muligt at lave PALM udgaven)
-if test "xja" != "x$PLUCKER"; then
-  TARGET_PALM=nej
-fi
-
 
 dnl ======================================================================
 dnl Lad brugeren vide lidt om hvad der foregår
@@ -195,7 +182,6 @@ fi
 AC_MSG_NOTICE([Oversigt over hvilke moduler der kan laves])
 
 AC_MSG_NOTICE([ Kan SGML bygges    : $TARGET_SGML ])
-AC_MSG_NOTICE([ Kan PALM bygges    : $TARGET_PALM ])
 AC_MSG_NOTICE([ Kan PDF bygges     : $TARGET_PDF ])
 AC_MSG_NOTICE([ Kan HTML bygges    : $TARGET_HTML ])
 AC_MSG_NOTICE([ Kan PAKHTML bygges : $TARGET_PAKHTML ])
@@ -220,7 +206,6 @@ fi
 
 
 AM_CONDITIONAL(BUILD_SGML,    test "x$TARGET_SGML"      = "xja")
-AM_CONDITIONAL(BUILD_PALM,    test "x$TARGET_PALM"      = "xja")
 AM_CONDITIONAL(BUILD_PDF,     test "x$TARGET_PDF"       = "xja")
 AM_CONDITIONAL(BUILD_HTML,    test "x$TARGET_HTML"      = "xja")
 AM_CONDITIONAL(BUILD_PAKHTML, test "x$TARGET_PAKHTML"   = "xja")

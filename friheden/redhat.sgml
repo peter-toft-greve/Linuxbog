@@ -1,4 +1,3 @@
-<!-- $Id$ -->
 <!-- mkdir /tmp/test; /usr/sbin/anaconda -m nfs://mnt/cdrom -r /tmp/test 
 for at lave screen-dumps af installation -->
 

@@ -123,8 +123,6 @@ for dir in $SUBDIRS ; do
     cp --update faelles-filer/addsubmitbox $dir
     chmod u+x $dir/addsubmitbox
     echo "<!ENTITY linuxbogurl \"$URL\">" > $dir/linuxbogurl.sgml || exit;
-    mkdir -p $dir/palm-faelles
-    cp --update misc/*.prc misc/*.pdb misc/gpl.txt misc/plucker.txt $dir/palm-faelles
 done
 if test "x$SAMLING" != "x" ; then
     echo "*** Installerer fælles filer i $SAMLING"
@@ -133,8 +131,6 @@ if test "x$SAMLING" != "x" ; then
 # configure.ac.subdir insisterer på at den skal være der
     cp --update faelles-filer/ophavsret.sgml $SAMLING
 #    echo "<!ENTITY linuxbogurl \"$URL\">" > $SAMLING/linuxbogurl.sgml || exit;
-    mkdir -p $SAMLING/palm-faelles
-    cp --update misc/*.prc misc/*.pdb misc/gpl.txt misc/plucker.txt $SAMLING/palm-faelles
 fi
 
 # Byggerelaterede filer
@@ -172,4 +168,4 @@ if test "x$SAMLING" != "x" ; then
     cd $SAMLING && ./configure $EXTRA_ARG && cd .. || exit ;
 fi
 
-echo "*** Du kan nu køre f.eks. make all, make dist eller make palmpilot"
+echo "*** Du kan nu køre f.eks. make all, make dist eller make html"

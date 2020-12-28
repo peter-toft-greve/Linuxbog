@@ -283,11 +283,6 @@ if (!file_exists("titleabstract.php")) {
       /* UNDTAGELSE: søg efter "samling" */
       last => ".pdf.gz"
     ),
-    "Palm Pilot" => array(
-      first => "linuxbog-",
-      form => "-palm-",
-      last => ".tar.gz"
-    ),
     "Eksempler" => array(
       first => "linuxbog-",
       form => "-eksempler-",
