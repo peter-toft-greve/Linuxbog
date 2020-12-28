@@ -115,7 +115,7 @@ stikord.sgml:	$(filter-out version.sgml stikord.sgml ,$(dep_sgml_filer))
 	make version.sgml
 	echo "<?xml version='1.0' encoding='UTF-8' ?>" > stikord.sgml && \
 	collateindex.pl  -s Symboler -t Stikordsregister -g -i stikord -N >> stikord.sgml && \
-	jw -V %use-id-as-filename% -V html-index -f docbook -b html -o StikordBuildDir bog.sgml && \
+	openjw -V %use-id-as-filename% -V html-index -f docbook -b html -o StikordBuildDir bog.sgml && \
 	echo "<?xml version='1.0' encoding='UTF-8' ?>" > stikord.sgml && \
 	collateindex.pl -s Symboler -t Stikordsregister -g -i stikord >> stikord.sgml StikordBuildDir/HTML.index
 
@@ -283,15 +283,9 @@ $(targetname)-pdf-$(version).pdf.gz: $(dep_sgml_filer) eksempler-sgml-PDF
 	make version.sgml
 	echo "For some reason we must pause here." ; sleep 2 ; ls -l version.sgml; test -f version.sgml || exit 109
 	@echo Opsætter PdfBuildDir
-#	@rm -rf PdfBuildDir stikord.sgml
 	@rm -rf PdfBuildDir
 	@mkdir PdfBuildDir
 	@cd PdfBuildDir && ln -sf ../*sgml ../*xml ../images/*png .
-#	@echo Bygger stikord.sgml
-#	@cd PdfBuildDir && collateindex.pl  -s Symboler -t Stikordsregister -g -i stikord -N -o stikord.sgml && \
-#	jw -V %use-id-as-filename% -V html-index -f docbook -b html -o bog bog.sgml && \
-#	collateindex.pl -s Symboler -t Stikordsregister -g -i stikord  -o stikord.sgml bog/HTML.index
-##	jw -V html-index -V nochunks -f docbook -b html -o bog bog.sgml && \
 	@echo Bygger PDF fil
 # Ideen er at hvis db2pdf fejler med en fejlkode 9, så køres db2pdf igen - for
 # vi ved ikke hvad fejlkode 9 betyder, men tilsyneladende vil det virke "alligevel".
