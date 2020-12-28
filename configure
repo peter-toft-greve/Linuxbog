@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Dette script bootstrapper/konfigurer det der skal til for at lave linuxbøgerne 
+# Dette script bootstrapper/konfigurer det der skal til for at lave linuxbøgerne
 
 # Af Mads Bondo Dydensborg, madsdyd@challenge.dk, september 2003.
 # Tilføjelser om samling-bogen af Henrik Christian Grove <grove@sslug.dk>
@@ -77,8 +77,8 @@ done
 
 # Opsaml ekstra argumenter til bøger
 EXTRA_ARG=
-for arg ; do 
-    EXTRA_ARG="$EXTRA_ARG $arg" ; 
+for arg ; do
+    EXTRA_ARG="$EXTRA_ARG $arg" ;
 done
 #echo "EXTRA_ARG: $EXTRA_ARG"
 echo '<?php' > configureoptions.php
@@ -89,7 +89,7 @@ echo '?>' >> configureoptions.php
 
 ################################################################################
 #
-# Check at Makefile.in findes. 
+# Check at Makefile.in findes.
 if test ! -e Makefile.in ; then
     echo "Fejl: Kunne ikke finde Makefile.in"
     echo "Vær venlig at køre dette script fra roden af Linux bøgernes kildetekst"
@@ -121,7 +121,7 @@ for dir in $SUBDIRS ; do
     cp --update faelles-filer/*.css $dir
     cp --update faelles-filer/*.sgml $dir
     cp --update faelles-filer/addsubmitbox $dir
-    chmod u+x $dir/addsubmitbox 
+    chmod u+x $dir/addsubmitbox
     echo "<!ENTITY linuxbogurl \"$URL\">" > $dir/linuxbogurl.sgml || exit;
     mkdir -p $dir/palm-faelles
     cp --update misc/*.prc misc/*.pdb misc/gpl.txt misc/plucker.txt $dir/palm-faelles
@@ -131,7 +131,7 @@ if test "x$SAMLING" != "x" ; then
 #    cp --update faelles-filer/*.sgml $SAMLING
 # Det her er smålamt, ophavsret.sgml skal ikke bruges til noget men
 # configure.ac.subdir insisterer på at den skal være der
-    cp --update faelles-filer/ophavsret.sgml $SAMLING 
+    cp --update faelles-filer/ophavsret.sgml $SAMLING
 #    echo "<!ENTITY linuxbogurl \"$URL\">" > $SAMLING/linuxbogurl.sgml || exit;
     mkdir -p $SAMLING/palm-faelles
     cp --update misc/*.prc misc/*.pdb misc/gpl.txt misc/plucker.txt $SAMLING/palm-faelles
@@ -162,7 +162,7 @@ if test "x$SAMLING" != "x" ; then
 #    cd $SAMLING && ./make.bog.2pdf.pl $SUBDIRS > bog.2pdf.sgml && cd .. || exit ;
 fi
 
-# Så køres ./configure i hvert subdir. 
+# Så køres ./configure i hvert subdir.
 for dir in $SUBDIRS; do
     echo "*** Kører configure i $dir"
     cd $dir && ./configure $EXTRA_ARG && cd .. || exit ;
