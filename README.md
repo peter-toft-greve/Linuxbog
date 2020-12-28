@@ -1,7 +1,7 @@
-Dette er README filen til bøgerne "Linux -- Friheden til at vælge". 
+Dette er README filen til bøgerne "Linux -- Friheden til at vælge".
 
 Indholdet er flyttet over i:
-http://www..linuxbog.dk/dokumentation/bog/ftav.html
+http://www.linuxbog.dk/dokumentation/bog/ftav.html
 (dokumentation/ftav.sgml)
 
 
