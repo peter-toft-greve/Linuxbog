@@ -37,10 +37,10 @@ if test "xja" != "x$PERL" ; then
 fi
 
 dnl Vi har i den grad brug for jade
-AC_CHECK_PROG(JADE, jade, ja, nej)
+AC_CHECK_PROG(JADE, openjade, ja, nej)
 if test "xja" != "x$JADE" ; then
-  FATALE_MANGLER="$FATALE_MANGLER jade/openjade"
-  AC_MSG_NOTICE([jade blev ikke fundet. jade eller openjade er krævet for at lave bøg
+  FATALE_MANGLER="$FATALE_MANGLER penjade"
+  AC_MSG_NOTICE([jade blev ikke fundet. openjade er krævet for at lave bøg
 erne og et af disse programmer skal installeres])
 fi
 
