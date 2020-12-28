@@ -216,7 +216,7 @@ endif !USE_SOFTLINKS
 if HAVE_PERL_IMAGE_SIZE
 	(cd $(targetshortname);perl ../misc/insertimagesize)
 else !HAVE_PERL_IMAGE_SIZE
-	@echo "Du bør installere Perl-modulet Image:Size"
+	@echo "Du bør installere Perl-modulet Image::Size - apt install libimage-size-perl"
 endif !HAVE_PERL_IMAGE_SIZE
 if HAVE_TIDY
 	(cd $(targetshortname) ; tidy -f /dev/null --input-encoding latin1 --output-encoding utf8 --doctype html5 -qimu -w *.html ; true)
