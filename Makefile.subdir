@@ -1,6 +1,6 @@
 # Makefile for underkataloger.
 # $Id$
-# Peter Toft <pto@sslug.dk> 
+# Peter Toft <pto@sslug.dk>
 # Mads Bondo Dydensborg <madsdyd@challenge.dk>
 
 
@@ -38,7 +38,7 @@ badsgmlfiles=dato.sgml magic.sgml bogoversigt.sgml ophavsret.sgml
 allesgmlfiles:=$(wildcard *.sgml) $(wildcard *.xml)
 
 # Her er en liste af sgml-filer der skal checkes
-sgmlfiler:=$(filter-out $(badsgmlfiles),$(allesgmlfiles)) 
+sgmlfiler:=$(filter-out $(badsgmlfiles),$(allesgmlfiles))
 
 # Og her sætter vi up til at inkludere auto. Bemærk =, ikke :=
 # dax: det er version.sgml som ødelægger dependencies. Kan ikke
@@ -72,7 +72,7 @@ all: start html pakhtml palmpilot pdf eksempelbackup online stop
 
 ################################################################################
 .PHONY : start
-start:	
+start:
 	@echo "-------------------------------------------"
 	@echo "Starter oversættelser af $(targetshortname)"
 	@echo "-------------------------------------------"
@@ -88,11 +88,11 @@ stop:
 	@echo "-------------------------------------------"
 	@echo "Slut på $(targetshortname) $(version)      "
 	@echo "-------------------------------------------"
-	@echo 
+	@echo
 
 
 ################################################################################
-.PHONY : version 
+.PHONY : version
 version:
 	@echo $(targetshortname) $(version)
 
@@ -119,7 +119,7 @@ stikord.sgml:	$(filter-out version.sgml stikord.sgml ,$(dep_sgml_filer))
 	echo "<?xml version='1.0' encoding='UTF-8' ?>" > stikord.sgml && \
 	collateindex.pl -s Symboler -t Stikordsregister -g -i stikord >> stikord.sgml StikordBuildDir/HTML.index
 
-stikord.sgml.clean:	
+stikord.sgml.clean:
 	rm -f stikord.sgml
 	rm -Rf StikordBuildDir/
 
@@ -136,7 +136,7 @@ version.sgml:	apprevhist.sgml
 	grep -A2 "<listitem>" apprevhist.sgml | head -n 2 |\
 	grep Version | sed 's/.*Version//' | cut -d' ' -f2 > version.sgml
 
-version.sgml.clean:	
+version.sgml.clean:
 	rm -f version.sgml
 
 
@@ -161,11 +161,11 @@ $(palmpilot_navn):	html
 #	zip $(palmpilot_navn) PalmBuildDir/*.prc PalmBuildDir/*.pdb PalmBuildDir/*txt
 	tar czf $(palmpilot_navn) PalmBuildDir/*.prc PalmBuildDir/*.pdb PalmBuildDir/*.txt
 else !BUILD_PALM
-palmpilot:	
+palmpilot:
 	@echo "Overspringer palmpilot"
 endif !BUILD_PALM
 
-palmpilot.clean:	
+palmpilot.clean:
 	rm -Rf $(targetname)-palm-*.tar.gz PalmBuildDir/
 
 
@@ -193,7 +193,7 @@ $(targetshortname)/$(targetname)-html-$(version).tar.gz: html
 # 	Tilsvarende for billeder.
 	mv images $(targetshortname)_images
 	(cd ..;tar hczf  $(targetshortname)/$(targetname)-png-$(version).tar.gz $(targetshortname)/$(targetshortname)_images/ )
-	mv $(targetshortname)_images images 
+	mv $(targetshortname)_images images
 	@@echo "Done HTML pakning (pakhtml)"
 	@echo ""
 	@echo ""
@@ -202,7 +202,7 @@ pakhtml:
 	@echo "Overspringer pakhtml"
 endif !BUILD_PAKHTML
 
-pakhtml.clean:	
+pakhtml.clean:
 	rm -f $(targetname)-html-*.tar.gz $(targetname)-htmlub-*.tar.gz $(targetname)-png-*.tar.gz # $(targetname)-html-*.zip
 
 
@@ -236,7 +236,7 @@ html.stamp: $(dep_sgml_filer) eksempler-sgml-HTML
 	sleep 2; ls -lo version.sgml ; test -f version.sgml || { echo "Fatal, cannot make version.sgml"; exit 105 ; } ;
 	@echo '<!ENTITY magic "png">' > magic.sgml
 	db2html -V %stylesheet%=linuxbog.css -V  %use-id-as-filename% -V  %chapter-autolabel% -V %section-autolabel% -o $(targetshortname) bog.sgml
-	cp linuxbog.css $(targetshortname)	
+	cp linuxbog.css $(targetshortname)
 	cp $(targetshortname)/$(targetshortname)-apprevhist.html $(targetshortname)/apprevhist.html
 if USE_SOFTLINKS
 	(cd $(targetshortname) && ln -sf ../images/*.png .)
@@ -261,11 +261,11 @@ endif !HAVE_TIDY
 	@echo "Done HTML (html)"
 	@echo ""
 else !BUILD_HTML
-html:	
+html:
 	@echo "Overspringer html"
 endif !BUILD_HTML
 
-html.clean:	
+html.clean:
 	rm -Rf $(targetshortname)/ bog/ html.stamp
 
 
@@ -320,7 +320,7 @@ $(targetname)-pdf-$(version).pdf.gz: $(dep_sgml_filer) eksempler-sgml-PDF
 	@echo ""
 endif BUILD_PDF
 
-pdf.clean:	
+pdf.clean:
 	rm -Rf PdfBuildDir sideantal.txt $(targetname)-*.pdf $(targetname)-*.pdf.gz
 
 
@@ -343,8 +343,8 @@ $(targetname)-eksempler-$(version).tar.gz : $(eksfiler)
 		echo "Bogen" $(targetname) "har ikke nogen eksempler"; \
 	fi
 
-eksempelbackup.clean:	
-	rm -f $(targetname)-eksempler-*.tar.gz 
+eksempelbackup.clean:
+	rm -f $(targetname)-eksempler-*.tar.gz
 
 
 ################################################################################
@@ -374,7 +374,7 @@ clean:	stikord.sgml.clean version.sgml.clean palmpilot.clean pakhtml.clean html.
 # Cleaner så det passer til en dist
 # TODO: Fixme
 distclean-local:	clean
-	rm -rf magic.sgml autom4te.cache $(auto_sgml_filer) config.log config.status 
+	rm -rf magic.sgml autom4te.cache $(auto_sgml_filer) config.log config.status
 
 ################################################################################
 # Alt fjernes, stort set ned til cvs
