@@ -250,7 +250,7 @@ else !HAVE_PERL_IMAGE_SIZE
 endif !HAVE_PERL_IMAGE_SIZE
 if HAVE_TIDY
 	(cd $(targetshortname) ; tidy -f /dev/null --input-encoding latin1 --output-encoding utf8 --doctype html5 -qimu -w *.html ; true)
-	(cd $(targetshortname) ; sed -i -e 's!<HEAD>!&<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">!' *.html )
+	(cd $(targetshortname) ; sed -i -e 's!<HEAD>!&<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">!' -e 's!^<HTML>!<HTML lang="da">!' *.html )
 else !HAVE_TIDY
 	@echo "Du bør installere tidy"
 endif !HAVE_TIDY
