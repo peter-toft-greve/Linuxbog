@@ -6,7 +6,7 @@ SUBDIRSSAMLING = @SUBDIRSSAMLING@
 version:=$(shell (cd ../friheden; grep -A2 "<listitem>" apprevhist.sgml | head -n 2 | tail -n 1 | cut -d' ' -f2 > ../samling/version.sgml; cat ../samling/version.sgml))
 
 # html er unødvendigt
-all: kun-fra-toplevel palmpilot ps pdf pakhtml 
+all: kun-fra-toplevel ps pdf pakhtml 
 
 ps: kun-fra-toplevel
 	echo "Vi bygger desværre ikke PostScript-bøger for tiden - ØV!"
@@ -22,14 +22,6 @@ pdf: kun-fra-toplevel
 		cp ../$$dir/linuxbog-$$dir-pdf-`cat ../$$dir/version.sgml`.pdf pdf-samling/ || /bin/true; \
 	done;
 	tar vczf linuxbog-samling-pdf-$(version).tar.gz pdf-samling/
-
-palmpilot: kun-fra-toplevel
-	mkdir -p palm-samling
-	cp palm-faelles/* palm-samling/
-	@for dir in $(SUBDIRSSAMLING); do \
-		cp ../$$dir/PalmBuildDir/linuxbog-$$dir.pdb palm-samling/ || /bin/true; \
-	done;
-	tar czf linuxbog-samling-palm-$(version).tar.gz palm-samling/
 
 html:
 	@echo 'html er et internt target - der ikke er nødvendigt at gennemføre for samling.'
@@ -73,7 +65,7 @@ kun-fra-toplevel:
 	@if [ ! -e toplevel-kald ]; then \
 		echo 'For at sikre at de individuelle bøger bliver bygget først,'; \
 		echo 'kan du ikke køre make med et bygge-target i samling/.'; \
-		echo 'Kør `make all/ps/pdf/palmpilot` fra toplevel.'; \
+		echo 'Kør `make all/ps/pdf` fra toplevel.'; \
 		exit 1; \
 	fi
 
@@ -82,7 +74,6 @@ kun-fra-toplevel:
 
 .PHONY: clean
 clean: 
-	rm -fr palm-samling
 # Skal ændres når vi engang begynder at bygge PostScript-versioner igen!
 #	rm -fr ps-samling
 	rm -fr pdf-samling
@@ -98,4 +89,4 @@ distclean-local: clean
 
 .PHONY: reallyclean
 reallyclean: distclean
-	rm -fr aclocal.m4 linuxbog.spec linuxbogurl.sgml bootstrap configure configure.ac install-sh Makefile.am Makefile.in missing mkinstalldirs ophavsret.sgml palm-faelles/
+	rm -fr aclocal.m4 linuxbog.spec linuxbogurl.sgml bootstrap configure configure.ac install-sh Makefile.am Makefile.in missing mkinstalldirs ophavsret.sgml

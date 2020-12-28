@@ -67,7 +67,7 @@ test:
 
 ################################################################################
 # her er det der skal laves
-all: start html pakhtml palmpilot pdf eksempelbackup online stop
+all: start html pakhtml pdf eksempelbackup online stop
 
 
 ################################################################################
@@ -138,36 +138,6 @@ version.sgml:	apprevhist.sgml
 
 version.sgml.clean:
 	rm -f version.sgml
-
-
-################################################################################
-# Byg Palm Pilot udgaven
-################################################################################
-# Laver en .tar.gz fil, kræver html target
-.PHONY : palmpilot
-if BUILD_PALM
-palmpilot_navn:=$(targetname)-palm-$(version).tar.gz
-palmpilot:	$(palmpilot_navn)
-$(palmpilot_navn):	html
-	@echo ".........................................."
-	@echo "Target $(targetshortname):palmpilot"
-	@echo ".........................................."
-	rm -f $(palmpilot_navn)
-	rm -Rf PalmBuildDir/
-	mkdir -p PalmBuildDir
-	cp palm/* PalmBuildDir || true
-	cp palm-faelles/* PalmBuildDir || true
-	(cd PalmBuildDir && plucker-build -V 0  -P . -f $(targetname) `pwd`/home.html)
-#	zip $(palmpilot_navn) PalmBuildDir/*.prc PalmBuildDir/*.pdb PalmBuildDir/*txt
-	tar czf $(palmpilot_navn) PalmBuildDir/*.prc PalmBuildDir/*.pdb PalmBuildDir/*.txt
-else !BUILD_PALM
-palmpilot:
-	@echo "Overspringer palmpilot"
-endif !BUILD_PALM
-
-palmpilot.clean:
-	rm -Rf $(targetname)-palm-*.tar.gz PalmBuildDir/
-
 
 ################################################################################
 # Pak HTML-filer ned
@@ -363,7 +333,7 @@ eksempelbackup.clean:
 ################################################################################
 # Target og diverse filer fjernes. Autogenererede filer beholdes
 .PHONY : clean
-clean:	stikord.sgml.clean version.sgml.clean palmpilot.clean pakhtml.clean html.clean pdf.clean eksempelbackup.clean
+clean:	stikord.sgml.clean version.sgml.clean pakhtml.clean html.clean pdf.clean eksempelbackup.clean
 	@echo clean $(targetshortname)
 	rm -rf bog.junk/ dato.sgml *~ .#*[0-9] bog/ $(targetshortname)/ $(targetname)-dist-*.tar.gz
 
@@ -380,7 +350,7 @@ distclean-local:	clean
 # Alt fjernes, stort set ned til cvs
 .PHONY : reallyclean
 reallyclean:	clean distclean
-	rm -Rf dato.sgml bogoversigt.sgml ophavsret.sgml linuxbog.css linuxbog.spec linuxbogurl.sgml misc aclocal.m4 bootstrap configure configure.ac install-sh Makefile.am Makefile.in missing mkinstalldirs palm-faelles/ addsubmitbox
+	rm -Rf dato.sgml bogoversigt.sgml ophavsret.sgml linuxbog.css linuxbog.spec linuxbogurl.sgml misc aclocal.m4 bootstrap configure configure.ac install-sh Makefile.am Makefile.in missing mkinstalldirs addsubmitbox
 
 #-----------------------------------------------------------------------------
 #--  Bygger SGML/XML-udgaver af alle filer i eksempler:
