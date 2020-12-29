@@ -231,7 +231,6 @@ endif !HAVE_TIDY
 	@echo "Done HTML (html)"
 	@echo ""
 else !BUILD_HTML
-html:
 	@echo "Overspringer html"
 endif !BUILD_HTML
 
