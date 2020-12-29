@@ -115,7 +115,7 @@ stikord.sgml:	$(filter-out version.sgml stikord.sgml ,$(dep_sgml_filer))
 	make version.sgml
 	echo "<?xml version='1.0' encoding='UTF-8' ?>" > stikord.sgml && \
 	collateindex.pl  -s Symboler -t Stikordsregister -g -i stikord -N >> stikord.sgml && \
-	openjw -V %use-id-as-filename% -V html-index -f docbook -b html -o StikordBuildDir bog.sgml && \
+	openjade -V %use-id-as-filename% -V html-index -f docbook -b html -o StikordBuildDir bog.sgml && \
 	echo "<?xml version='1.0' encoding='UTF-8' ?>" > stikord.sgml && \
 	collateindex.pl -s Symboler -t Stikordsregister -g -i stikord >> stikord.sgml StikordBuildDir/HTML.index
 
@@ -216,7 +216,7 @@ endif !USE_SOFTLINKS
 if HAVE_PERL_IMAGE_SIZE
 	(cd $(targetshortname);perl ../misc/insertimagesize)
 else !HAVE_PERL_IMAGE_SIZE
-	@echo "Du bør installere Perl-modulet Image:Size"
+	@echo "Du bør installere Perl-modulet Image::Size - apt install libimage-size-perl"
 endif !HAVE_PERL_IMAGE_SIZE
 if HAVE_TIDY
 	(cd $(targetshortname) ; tidy -f /dev/null --input-encoding latin1 --output-encoding utf8 --doctype html5 -qimu -w *.html ; true)
@@ -231,7 +231,6 @@ endif !HAVE_TIDY
 	@echo "Done HTML (html)"
 	@echo ""
 else !BUILD_HTML
-html:
 	@echo "Overspringer html"
 endif !BUILD_HTML
 
